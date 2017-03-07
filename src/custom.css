@@ -5,3 +5,20 @@
 .Header-banner > .Header-content {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
+
+.Bullets > li:before, .Header-navbar, .Share-revealIcon, .Share > ul > li, .u-background-50 {
+    background-color: #0066CC!important;
+}
+
+.Megamenu--default {
+    background-color: #0066CC!important;
+}
+
+.Badge {
+  font-size: 11px;
+  color: #0066CC;
+  background-color: #428FDB;
+  border-radius: 100px;
+  padding: 1px 8px;
+  vertical-align: middle;
+}
