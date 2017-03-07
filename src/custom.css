@@ -1,24 +1,31 @@
-.Header-banner, .Linklist-link.Linklist-link--lev1, .Linklist-link.Linklist-link--lev1:hover, .u-background-90 {
-  background-color: #0066CC!important;
+.Header-banner,
+.Linklist-link.Linklist-link--lev1,
+.Linklist-link.Linklist-link--lev1:hover,
+.u-background-90 {
+  background-color: #06c !important;
 }
 
 .Header-banner > .Header-content {
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.Bullets > li:before, .Header-navbar, .Share-revealIcon, .Share > ul > li, .u-background-50 {
-    background-color: #0066CC!important;
+.Bullets > li::before,
+.Header-navbar,
+.Share-revealIcon,
+.Share > ul > li,
+.u-background-50 {
+  background-color: #06c !important;
 }
 
 .Megamenu--default {
-    background-color: #0066CC!important;
+  background-color: #06c !important;
 }
 
 .Badge {
-  font-size: 11px;
-  color: #0066CC;
-  background-color: #428FDB;
+  background-color: #428fdb;
   border-radius: 100px;
+  color: #06c;
+  font-size: 11px;
   padding: 1px 8px;
   vertical-align: middle;
 }
