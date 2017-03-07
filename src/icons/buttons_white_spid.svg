@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="177px" height="48px" viewBox="0 0 177 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>buttons/white/spid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="177" height="48" rx="2"></rect>
+    </defs>
+    <g id="-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1024up---project---detail" transform="translate(-1158.000000, -8.000000)">
+            <g id="buttons/white/spid" transform="translate(1158.000000, 8.000000)">
+                <g id="bg" stroke-width="1" fill-rule="evenodd">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Palette/Blu-50" mask="url(#mask-2)" fill="#0066CC">
+                        <rect id="Rectangle-Copy-8" x="0" y="0" width="177" height="48"></rect>
+                    </g>
+                </g>
+                <text id="label" font-family="TitilliumWeb-SemiBold, Titillium Web" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="61" y="30">ACCEDI AI SERVIZI</tspan>
+                </text>
+                <g id="spid-ico-circle-bb" stroke-width="1" fill-rule="evenodd" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+                    <path d="M23.9836735,11.9918367 C23.9836735,18.6163265 18.6163265,23.9836735 11.9918367,23.9836735 C5.37142857,23.9836735 0,18.6163265 0,11.9918367 C0,5.36734694 5.37142857,0 11.9918367,0 C18.6163265,0 23.9836735,5.36734694 23.9836735,11.9918367 Z M12.0244898,13.0204082 C13.0204082,13.0204082 13.8244898,12.6857143 14.4489796,12.0285714 C15.0734694,11.3673469 15.3877551,10.5387755 15.3877551,9.54693878 C15.3877551,8.54693878 15.0734694,7.71428571 14.4489796,7.03673469 C13.8244898,6.35510204 13.0122449,6.02040816 12.0163265,6.02040816 C11.0163265,6.02040816 10.2,6.35102041 9.55918367,7.0122449 C8.91836735,7.67346939 8.59591837,8.50204082 8.59591837,9.50204082 C8.59591837,10.4979592 8.91836735,11.3346939 9.56326531,12.0081633 C10.2081633,12.6857143 11.0285714,13.0204082 12.0244898,13.0204082 Z M8.59591837,17.922449 L15.3877551,17.9673469 C15.3877551,16.9714286 15.0734694,16.1387755 14.4489796,15.4571429 C13.8285714,14.7755102 13.0163265,14.4408163 12.0204082,14.4408163 C11.0122449,14.4408163 10.1959184,14.7714286 9.55510204,15.4326531 C8.91836735,16.0938776 8.59591837,16.922449 8.59591837,17.922449 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                </g>
+                <path d="M49,13 L49,37" id="Line" stroke="#FFFFFF" stroke-width="1" stroke-linecap="square" opacity="0.200000003" transform="translate(49.000000, 25.000000) scale(-1, 1) translate(-49.000000, -25.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
