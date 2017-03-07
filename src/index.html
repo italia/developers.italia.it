@@ -10,7 +10,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- <link rel="preload" href="{{ '/build/IWT.min.js' | path }}" as="script"> -->
+  <!-- <link rel="preload" href="IWT.min.js" as="script"> -->
   <!--
     In alternativa a WebFontLoader è possibile caricare il font direttamente da Google
       <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,' rel='stylesheet' type='text/css' />
@@ -33,13 +33,13 @@
   </script>
 
   <!-- include html5shim per Explorer 8 -->
-  <script src="{{ '/build/vendor/modernizr.js' | path }}"></script>
+  <script src="vendor/modernizr.js"></script>
 
-  <link media="all" rel="stylesheet" href="{{ '/build/build.css' | path }}">
+  <link media="all" rel="stylesheet" href="build.css">
 
-  <script src="{{ '/build/vendor/jquery.min.js' | path }}"></script>
+  <script src="vendor/jquery.min.js"></script>
 
-  <title>Preview Layout</title>
+  <title>.it /developers</title>
 </head>
 
 <body class="t-Pac">
@@ -47,17 +47,17 @@
   {{ yield|safe }}
 
   <!--[if IE 8]>
-  <script src="{{ '/build/vendor/respond.min.js' | path }}"></script>
-  <script src="{{ '/build/vendor/rem.min.js' | path }}"></script>
-  <script src="{{ '/build/vendor/selectivizr.js' | path }}"></script>
-  <script src="{{ '/build/vendor/slice.js' | path }}"></script>
+  <script src="vendor/respond.min.js"></script>
+  <script src="vendor/rem.min.js"></script>
+  <script src="vendor/selectivizr.js"></script>
+  <script src="vendor/slice.js"></script>
   <![endif]-->
 
   <!--[if lte IE 9]>
-  <script src="{{ '/build/vendor/polyfill.min.js' | path }}"></script>
+  <script src="vendor/polyfill.min.js"></script>
   <![endif]-->
 
-  <script src="{{ '/build/IWT.min.js' | path }}"></script>
+  <script src="IWT.min.js"></script>
 
 </body>
 </html>
