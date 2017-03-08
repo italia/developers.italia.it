@@ -6,7 +6,7 @@
 }
 
 .Header-banner > .Header-content {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .Bullets > li::before,
@@ -28,4 +28,15 @@
   font-size: 11px;
   padding: 1px 8px;
   vertical-align: middle;
+}
+
+.Header-socialIcons img {
+  vertical-align: middle;
+}
+
+#cta,
+#newsletter {
+  background-color: #06c;
+  color: white;
+  text-align: center;
 }

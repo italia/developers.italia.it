@@ -57,40 +57,9 @@
 
     <header class="Header u-hiddenPrint">
       <div class="Header-banner Grid">
-        <div class="Header-content Grid-cell">
+        <div class="Header-content Grid-cell u-border-bottom-xxs">
           <div class="Header-owner Headroom-hideme">
             <a href=""><span>AgID - Agenzia per l'Italia Digitale</span></a>
-            <!--
-              <div class="Header-languages">
-                  <a class="Header-language is-active u-hidden u-md-inlineBlock u-lg-inlineBlock" href="" title="sito in italiano">
-                      <abbr title="Italiano">ITA</abbr>
-                  </a>
-                  <a class="Header-language u-hidden u-md-inlineBlock u-lg-inlineBlock" href="" title="website in english" lang="en">
-                      <abbr title="English">ENG</abbr>
-                  </a>
-                  <a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max is-active u-inlineBlock">
-                      <span class="u-hiddenVisually">lingua attiva:</span>
-                      <span class="u-md-hidden u-lg-hidden">ITA</span>
-                      <span class="Icon Icon-expand u-padding-left-xs u-md-hidden u-lg-hidden"></span>
-                      <span class="Icon Icon-more-actions u-padding-left-xxs u-padding-right-xxs u-hidden u-md-inlineBlock u-lg-inlineBlock"></span>
-                  </a>
-                  <div id="languages" data-menu class="Dropdown-menu Header-language-other u-jsDisplayNone u-nojsDisplayNone">
-                      <ul class="Linklist">
-                          <li><a href="#1" class="u-padding-r-all"><span lang="en">English</span></a></li>
-                          <li><a href="#1" class="u-padding-r-all"><span lang="ar">عربي</span></a></li>
-                          <li><a href="#2" class="u-padding-r-all"><span lang="ch">中文网</span></a></li>
-                          <li><a href="#3" class="u-padding-r-all"><span lang="de">Deutsch</span></a></li>
-                          <li><a href="#8" class="u-padding-r-all"><span lang="es">Español</span></a></li>
-                          <li><a href="#4" class="u-padding-r-all"><span lang="fr">Français</span></a></li>
-                          <li><a href="#5" class="u-padding-r-all"><span lang="ja">日本語</span></a></li>
-                          <li><a href="#6" class="u-padding-r-all"><span lang="pt">Portuguese</span></a></li>
-                          <li><a href="#7" class="u-padding-r-all"><span lang="ru">НА РУССКОМ</span></a></li>
-                          <li><a href="#10" class="u-padding-r-all"><span lang="uk">УКРАЇНСЬКA</span></a></li>
-                          <li><a href="#9" class="u-padding-r-all"><span lang="tr">TÜRKÇE</span></a></li>
-                      </ul>
-                  </div>
-              </div>
-              -->
           </div>
         </div>
       </div>
@@ -116,7 +85,7 @@
             /developers
             <span class="Badge">beta</span>
             <br>
-            <small>La community italiana degli sviluppatori di servizi pubblici</small>
+            <span class="u-textWeight-400 u-text-r-xs">La community italiana degli sviluppatori di servizi pubblici</span>
             </a>
           </h1>
         </div>
@@ -132,9 +101,9 @@
           <div class="Header-social Headroom-hideme">
             <p>Seguici su:</p>
             <ul class="Header-socialIcons">
-              <li><a href="" title="Facebook"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-              <li><a href="" title="Twitter"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-              <li><a href="" title="Youtube"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
+              <li><a href="" title="Facebook"><img src="icons/icons_white_facebook.png" alt=""><span class="u-hiddenVisually">Facebook</span></a></li>
+              <li><a href="" title="Github"><img src="icons/icons_white_github.png" alt=""><span class="u-hiddenVisually">Github</span></a></li>
+              <li><a href="" title="Twitter"><img src="icons/icons_white_twitter.png" alt=""><span class="u-hiddenVisually">Twitter</span></a></li>
             </ul>
           </div>
 
@@ -228,23 +197,35 @@
     </section>
 
     <div id="main">
-      <section>
-        <div class="Hero">
-          <div class="Hero-content">
-            <p class="u-padding-r-bottom u-padding-r-top u-text-r-xs">
-              <a href="#" class="u-textClean u-color-60 u-text-h4"><span class="Dot u-background-60"></span>categoria</a>
-            </p>
-            <h2 class="u-text-h2"><a href="#" class="u-color-95 u-textClean">quae qui et</a></h2>
-            <p class="u-padding-r-bottom u-padding-r-top u-text-p u-margin-r-bottom">Quasi tempora occaecati eum dolorem modi enim maiores et. Autem et magnam eos non qui ut dignissimos. Sit consequatur dolores voluptas nobis omnis consequatur. Quaerat explicabo autem quod dolores. Ab dolorem praesentium. Quo minus doloribus
-              ipsam officiis quia.
-            </p>
-            <a href="#news" class="js-scrollTo u-linkClean Button Button--info u-text-r-xs">notizie ed eventi
-            <span class="u-padding-r-left Icon Icon-expand"></span></a>
-          </div>
-          <a href="#servizi" class="Forward Forward--absolute js-scrollTo" aria-hidden="true">
-          <span class="Icon Icon-expand"></span>
-          </a>
+      <section class="Grid u-padding-all-xxl" id="cta">
+        <div class="Grid-cell--center u-size1of2 u-text-r-l">
+          La community degli sviluppatori che progettano<br>
+          e realizzano i servizi pubblici digitali in Italia
         </div>
+      </section>
+
+      <section id="newsletter">
+        <div class="Grid u-padding-top-xxl">
+          <div class="Grid-cell--center u-size1of2 u-text-r-m">
+            Iscriviti alla Newsletter
+          </div>
+        </div>
+
+        <div class="Grid u-padding-all-l">
+          <form class="Grid-cell--center u-size1of2 u-text-r-m">
+            <div class="Form-field--withPlaceholder">
+              <input class="Form-input u-padding-r-all" id="email" aria-required="true" required>
+              <label class="Form-label u-color-grey-40" for="email">indirizzo email</label>
+              <button class="Button Button--default u-color-white u-padding-all-s u-textNoWrap">Iscriviti</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="Grid u-padding-bottom-l">
+          <div class="Grid-cell--center u-size1of2 u-text-r-m u-color-grey-40">
+            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut<br>
+            labore et dolore magna aliqua.
+          </div>
       </section>
 
       <div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top">
