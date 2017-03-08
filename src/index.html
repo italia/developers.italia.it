@@ -4,69 +4,63 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html class="no-js" lang="it">
 <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="preload" href="IWT.min.js" as="script"> -->
+    <!--
+      In alternativa a WebFontLoader è possibile caricare il font direttamente da Google
+        <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,' rel='stylesheet' type='text/css' />
+      o dal repository locale (src/fonts)
+      -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {
+          families: ['Titillium+Web:400,600,700,400italic:latin']
+        }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+    <!-- include html5shim per Explorer 8 -->
+    <script src="vendor/modernizr.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="all" rel="stylesheet" href="build.css">
+    <link media="all" rel="stylesheet" href="custom.css">
 
-  <!-- <link rel="preload" href="IWT.min.js" as="script"> -->
-  <!--
-    In alternativa a WebFontLoader è possibile caricare il font direttamente da Google
-      <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,' rel='stylesheet' type='text/css' />
-    o dal repository locale (src/fonts)
-  -->
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: {
-        families: ['Titillium+Web:400,600,700,400italic:latin']
-      }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
+    <script src="vendor/jquery.min.js"></script>
+    <title>.it /developers</title>
+  </head>
 
-  <!-- include html5shim per Explorer 8 -->
-  <script src="vendor/modernizr.js"></script>
-
-  <link media="all" rel="stylesheet" href="build.css">
-  <link media="all" rel="stylesheet" href="custom.css">
-
-  <script src="vendor/jquery.min.js"></script>
-
-  <title>.it /developers</title>
-</head>
-
-<body class="t-Pac">
-
-  <div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
-    <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">Questo sito utilizza cookie tecnici, analytics e di terze parti.
+  <body class="t-Pac">
+    <div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
+      <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">Questo sito utilizza cookie tecnici, analytics e di terze parti.
         <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
-    </p>
-    <p>
+      </p>
+      <p>
         <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Accetto</button>
         <a href="" class="u-text-r-xs u-color-teal-50">Privacy policy</a>
-    </p>
-  </div>
+      </p>
+    </div>
 
-  <ul class="Skiplinks js-fr-bypasslinks u-hiddenPrint">
+    <ul class="Skiplinks js-fr-bypasslinks u-hiddenPrint">
       <li><a href="#main">Vai al Contenuto</a></li>
       <li><a class="js-fr-offcanvas-open" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">Vai alla navigazione del sito</a></li>
-  </ul>
+    </ul>
 
-  <header class="Header u-hiddenPrint">
-
+    <header class="Header u-hiddenPrint">
       <div class="Header-banner Grid">
         <div class="Header-content Grid-cell">
           <div class="Header-owner Headroom-hideme">
-              <a href=""><span>AgID - Agenzia per l'Italia Digitale</span></a>
-              <!--
+            <a href=""><span>AgID - Agenzia per l'Italia Digitale</span></a>
+            <!--
               <div class="Header-languages">
                   <a class="Header-language is-active u-hidden u-md-inlineBlock u-lg-inlineBlock" href="" title="sito in italiano">
                       <abbr title="Italiano">ITA</abbr>
@@ -96,589 +90,583 @@
                       </ul>
                   </div>
               </div>
-            -->
+              -->
           </div>
         </div>
       </div>
 
       <div class="Header-navbar Grid Grid--alignMiddle">
-          <div class="Header-toggle Grid-cell">
-              <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock
-          u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
-                  <span class="Hamburger-toggle" role="presentation"></span>
-                  <span class="Header-toggleText" role="presentation">Menu</span>
-              </a>
-          </div>
-
-          <div class="Header-logo Grid-cell" aria-hidden="true">
-              <a href="" tabindex="-1">
-                  <img src="icons/italia.it-logo.svg" alt="">
-              </a>
-          </div>
-
-          <div class="Header-title Grid-cell">
-              <h1 class="Header-titleLink">
-                  <a href="/">
-            /developers
-            <span class="Badge">beta</span><br>
-            <small>La community italiana degli sviluppatori di servizi pubblici</small>
+        <div class="Header-toggle Grid-cell">
+          <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock
+            u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
+          <span class="Hamburger-toggle" role="presentation"></span>
+          <span class="Header-toggleText" role="presentation">Menu</span>
           </a>
-              </h1>
+        </div>
+
+        <div class="Header-logo Grid-cell" aria-hidden="true">
+          <a href="" tabindex="-1">
+          <img src="icons/italia.it-logo.svg" alt="">
+          </a>
+        </div>
+
+        <div class="Header-title Grid-cell">
+          <h1 class="Header-titleLink">
+            <a href="/">
+            /developers
+            <span class="Badge">beta</span>
+            <br>
+            <small>La community italiana degli sviluppatori di servizi pubblici</small>
+            </a>
+          </h1>
+        </div>
+
+        <div class="Header-searchTrigger Grid-cell">
+          <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search" title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
+          </button>
+          <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden" title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
+          </button>
+        </div>
+
+        <div class="Header-utils Grid-cell">
+          <div class="Header-social Headroom-hideme">
+            <p>Seguici su:</p>
+            <ul class="Header-socialIcons">
+              <li><a href="" title="Facebook"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
+              <li><a href="" title="Twitter"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
+              <li><a href="" title="Youtube"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
+            </ul>
           </div>
 
-          <div class="Header-searchTrigger Grid-cell">
-              <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search" title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
-        </button>
-              <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden" title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
-        </button>
-          </div>
-
-          <div class="Header-utils Grid-cell">
-              <div class="Header-social Headroom-hideme">
-                  <p>Seguici su:</p>
-                  <ul class="Header-socialIcons">
-                      <li><a href="" title="Facebook"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                      <li><a href="" title="Twitter"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-                      <li><a href="" title="Youtube"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
-                  </ul>
+          <div class="Header-search" id="header-search">
+            <form class="Form">
+              <div class="Form-field Form-field--withPlaceholder Grid" role="search">
+                <input class="Form-input Grid-cell u-sizeFill u-text-r-s" required id="cerca">
+                <label class="Form-label" for="cerca">Cerca...</label>
+                <button class="Grid-cell u-sizeFit Icon-search u-background-60 u-color-white u-padding-all-s u-textWeight-700" title="Avvia la ricerca" aria-label="Avvia la ricerca">
+                </button>
               </div>
-              <div class="Header-search" id="header-search">
-                  <form class="Form">
-                      <div class="Form-field Form-field--withPlaceholder Grid" role="search">
-                          <input class="Form-input Grid-cell u-sizeFill u-text-r-s" required id="cerca">
-                          <label class="Form-label" for="cerca">Cerca...</label>
-                          <button class="Grid-cell u-sizeFit Icon-search u-background-60 u-color-white u-padding-all-s u-textWeight-700" title="Avvia la ricerca" aria-label="Avvia la ricerca">
-      </button>
-                      </div>
-                  </form>
-
-              </div>
+            </form>
           </div>
+        </div>
       </div>
+
       <!-- Header-navbar -->
-
       <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
-
-          <nav class="Megamenu Megamenu--default js-megamenu" data-rel=".Offcanvas .Treeview"></nav>
-
+        <nav class="Megamenu Megamenu--default js-megamenu" data-rel=".Offcanvas .Treeview"></nav>
       </div>
+    </header>
 
-  </header>
-
-  <section class="Offcanvas Offcanvas--left Offcanvas--modal js-fr-offcanvas u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="menu">
+    <section class="Offcanvas Offcanvas--left Offcanvas--modal js-fr-offcanvas u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="menu">
       <h2 class="u-hiddenVisually">Menu di navigazione</h2>
+
       <div class="Offcanvas-content u-background-white">
-          <div class="Offcanvas-toggleContainer u-background-70 u-jsHidden">
-              <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close" aria-controls="menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
-                  <span class="Hamburger-toggle is-active" aria-hidden="true"></span>
-              </a>
-          </div>
-          <nav>
-              <ul class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
-                  <li><a href="#">Servizi</a>
-                      <ul data-megamenu-class="u-md-size1of2">
-                          <li><a href="#">Per aree tematiche</a>
-                              <ul data-megamenu-class="u-columns-2">
-                                  <li><a href="page--servizi.html#ambiente">Ambiente</a></li>
-                                  <li><a href="page--servizi.html#casa">Casa</a></li>
-                                  <li><a href="page--servizi.html#certificati">Certificati e documenti</a></li>
-                                  <li><a href="page--servizi.html#cultura">Cultura e tempo libero</a></li>
-                                  <li><a href="page--servizi.html#denunce">Denunce</a></li>
-                                  <li><a href="page--servizi.html#elezioni">Elezioni</a></li>
-                                  <li><a href="page--servizi.html#famiglia">Famiglia</a></li>
-                                  <li><a href="page--servizi.html#imprese">Imprese</a></li>
-                                  <!-- <li><a href="page- -servizi.html#innovazione">Innovazione e smart city</a></li> -->
-                                  <li><a href="page--servizi.html#lavoro">Lavoro</a></li>
-                                  <li><a href="page--servizi.html#salute">Salute</a></li>
-                                  <li><a href="page--servizi.html#studio">Studio</a></li>
-                                  <li><a href="page--servizi.html#tributi">Tributi e sanzioni</a></li>
-                                  <li><a href="page--servizi.html#uffici">Uffici comunali</a></li>
-                                  <li><a href="page--servizi.html#volontariato">Volontariato</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Servizi online</a>
-                              <ul>
-                                  <li><a href="#">Segnalazioni</a></li>
-                                  <li><a href="#">Pagamenti</a></li>
-                                  <li><a href="#" data-megamenu-class="u-text-h4">tutti i servizi online
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li><a href="#">L'Amministrazione</a>
-                      <ul>
-                          <li><a href="#">Organizzazione <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a>
-                              <ul>
-                                  <li><a href="#">Il Sindaco</a></li>
-                                  <li><a href="#">Giunta comunale</a></li>
-                                  <!-- <li><a href="#">Organi di indirizzo politico-amministrativo</a></li>
-            <li><a href="#">Sanzioni per mancata comunicazione dei dati</a></li> -->
-                                  <li><a href="#">Articolazione degli uffici</a></li>
-                                  <li><a href="#">Telefono e posta elettronica</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                          <li><a href="#">Attività e procedimenti <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
-                              <ul>
-                                  <li><a href="#">Dichiarazioni sostitutive e acquisizione d'ufficio dei dati</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                          <li><a href="#">Bandi di concorso <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
-                              <ul>
-                                  <li><a href="#">Concorsi attivi</a></li>
-                                  <li><a href="#">Avvisi</a></li>
-                                  <li><a href="#">Esiti</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                          <li><a href="#">Personale <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
-                              <ul>
-                                  <li><a href="#">Incarichi amministrativi di vertice</a></li>
-                                  <li><a href="#">Dirigenti</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                          <li><a href="#">Bandi di gara e contratti <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
-                              <ul>
-                                  <li><a href="#">Gare e procedure in corso</a></li>
-                                  <li><a href="#">Avvisi di aggiudicazione, esiti e affidamenti</a></li>
-                                  <li><a href="#">Avvisi pubblici</a></li>
-                                  <li><a href="#">Delibere e Determine a contrarre</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                          <li><a href="#">Altre risorse <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
-                              <ul>
-                                  <li><a href="#">Enti controllati</a></li>
-                                  <li><a href="#">Provvedimenti</a></li>
-                                  <li><a href="#">Bilanci</a></li>
-                                  <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
-              <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Vivere il Comune</a>
-                      <ul>
-                          <li><a href="#">Informazioni utili</a>
-                              <ul>
-                                  <li><a href="#">Associazioni</a></li>
-                                  <li><a href="#">Cenni storici</a></li>
-                                  <li><a href="#">Come raggiungerci</a></li>
-                                  <li><a href="#">Numeri per Emergenze</a></li>
-                                  <li><a href="#">Scheda informativa</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Turismo e punti di interesse</a>
-                              <ul>
-                                  <li><a href="#">Cosa visitare</a></li>
-                                  <li><a href="#">Itinerari</a></li>
-                                  <li><a href="#">Mappa dei punti di interesse</a></li>
-                                  <li><a href="#">Paesaggi e Immagini</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Sul territorio</a>
-                              <ul>
-                                  <li><a href="#">Dove dormire</a></li>
-                                  <li><a href="#">Dove mangiare</a></li>
-                                  <li><a href="#">Mercati</a></li>
-                                  <li><a href="#">Sanità e farmacie</a></li>
-                                  <li><a href="#">Scuole / Asili</a></li>
-                                  <li><a href="#">Servizi commerciali</a></li>
-                                  <li><a href="#">Stabilimenti balneari e termali</a></li>
-                              </ul>
-                          </li>
-                      </ul>
-                  </li>
-                  <li><a href="#">Altro</a>
-                      <ul>
-                          <li><a href="#">Siti tematici</a>
-                              <ul>
-                                  <li><a href="#">sito tematico</a></li>
-                                  <li><a href="#">sito tematico</a></li>
-                                  <li><a href="#">sito tematico</a></li>
-                                  <li><a href="#">sito tematico</a></li>
-                                  <li><a href="#">sito tematico</a></li>
-                              </ul>
-                          </li>
-                          <li><a href="#">Servizi per</a>
-                              <ul data-megamenu-class="u-lg-columns-2">
-                                  <li><a href="#">Anziani</a></li>
-                                  <li><a href="#">Automobilisti</a></li>
-                                  <li><a href="#">Bambini</a></li>
-                                  <li><a href="#">Cittadini</a></li>
-                                  <li><a href="#">Consumatori</a></li>
-                                  <li><a href="#">Disabili</a></li>
-                                  <li><a href="#">Donne</a></li>
-                                  <li><a href="#">Elettori</a></li>
-                                  <li><a href="#">Famiglie</a></li>
-                                  <li><a href="#">Giovani</a></li>
-                                  <li><a href="#">Immigrati</a></li>
-                                  <li><a href="#">Imprenditori</a></li>
-                                  <li><a href="#">Italiani all'estero</a></li>
-                                  <li><a href="#">Lavoratori / In cerca di lavoro</a></li>
-                                  <li><a href="#">Persone con disagio sociale</a></li>
-                                  <li><a href="#">Studenti</a></li>
-                                  <li><a href="#">Turisti</a></li>
-                              </ul>
-                          </li>
-                          <!-- <li><a href="#">news</a></li>
-        <li><a href="#">eventi</a></li> -->
-                          <li><a href="#" data-megamenu-class="u-text-h4">mappa del sito
-          <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li>
-                  </li>
+        <div class="Offcanvas-toggleContainer u-background-70 u-jsHidden">
+          <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close" aria-controls="menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
+          <span class="Hamburger-toggle is-active" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <nav>
+          <ul class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
+            <li>
+              <a href="#">Servizi</a>
+              <ul data-megamenu-class="u-md-size1of2">
+                <li>
+                  <a href="#">Per aree tematiche</a>
+                  <ul data-megamenu-class="u-columns-2">
+                    <li><a href="page--servizi.html#ambiente">Ambiente</a></li>
+                    <li><a href="page--servizi.html#casa">Casa</a></li>
+                    <li><a href="page--servizi.html#certificati">Certificati e documenti</a></li>
+                    <li><a href="page--servizi.html#cultura">Cultura e tempo libero</a></li>
+                    <li><a href="page--servizi.html#denunce">Denunce</a></li>
+                    <li><a href="page--servizi.html#elezioni">Elezioni</a></li>
+                    <li><a href="page--servizi.html#famiglia">Famiglia</a></li>
+                    <li><a href="page--servizi.html#imprese">Imprese</a></li>
+                    <!-- <li><a href="page- -servizi.html#innovazione">Innovazione e smart city</a></li> -->
+                    <li><a href="page--servizi.html#lavoro">Lavoro</a></li>
+                    <li><a href="page--servizi.html#salute">Salute</a></li>
+                    <li><a href="page--servizi.html#studio">Studio</a></li>
+                    <li><a href="page--servizi.html#tributi">Tributi e sanzioni</a></li>
+                    <li><a href="page--servizi.html#uffici">Uffici comunali</a></li>
+                    <li><a href="page--servizi.html#volontariato">Volontariato</a></li>
                   </ul>
-                  </li>
-                  <li data-megamenu-class="Megamenu-area">
-                      <a data-megamenu-class="Button u-border-none u-color-95 u-background-compl u-text-r-xxs" href="#">Accedi</a>
-                  </li>
+                </li>
+                <li>
+                  <a href="#">Servizi online</a>
+                  <ul>
+                    <li><a href="#">Segnalazioni</a></li>
+                    <li><a href="#">Pagamenti</a></li>
+                    <li><a href="#" data-megamenu-class="u-text-h4">tutti i servizi online
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
-
-          </nav>
+            </li>
+            <li>
+              <a href="#">L'Amministrazione</a>
+              <ul>
+                <li>
+                  <a href="#">Organizzazione <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a>
+                  <ul>
+                    <li><a href="#">Il Sindaco</a></li>
+                    <li><a href="#">Giunta comunale</a></li>
+                    <!-- <li><a href="#">Organi di indirizzo politico-amministrativo</a></li>
+                      <li><a href="#">Sanzioni per mancata comunicazione dei dati</a></li> -->
+                    <li><a href="#">Articolazione degli uffici</a></li>
+                    <li><a href="#">Telefono e posta elettronica</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Attività e procedimenti <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
+                  <ul>
+                    <li><a href="#">Dichiarazioni sostitutive e acquisizione d'ufficio dei dati</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Bandi di concorso <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
+                  <ul>
+                    <li><a href="#">Concorsi attivi</a></li>
+                    <li><a href="#">Avvisi</a></li>
+                    <li><a href="#">Esiti</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Personale <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
+                  <ul>
+                    <li><a href="#">Incarichi amministrativi di vertice</a></li>
+                    <li><a href="#">Dirigenti</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Bandi di gara e contratti <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
+                  <ul>
+                    <li><a href="#">Gare e procedure in corso</a></li>
+                    <li><a href="#">Avvisi di aggiudicazione, esiti e affidamenti</a></li>
+                    <li><a href="#">Avvisi pubblici</a></li>
+                    <li><a href="#">Delibere e Determine a contrarre</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Altre risorse <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></a>
+                  <ul>
+                    <li><a href="#">Enti controllati</a></li>
+                    <li><a href="#">Provvedimenti</a></li>
+                    <li><a href="#">Bilanci</a></li>
+                    <!-- <li><a href="#" data-megamenu-class="u-text-h4">altro
+                      <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Vivere il Comune</a>
+              <ul>
+                <li>
+                  <a href="#">Informazioni utili</a>
+                  <ul>
+                    <li><a href="#">Associazioni</a></li>
+                    <li><a href="#">Cenni storici</a></li>
+                    <li><a href="#">Come raggiungerci</a></li>
+                    <li><a href="#">Numeri per Emergenze</a></li>
+                    <li><a href="#">Scheda informativa</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Turismo e punti di interesse</a>
+                  <ul>
+                    <li><a href="#">Cosa visitare</a></li>
+                    <li><a href="#">Itinerari</a></li>
+                    <li><a href="#">Mappa dei punti di interesse</a></li>
+                    <li><a href="#">Paesaggi e Immagini</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Sul territorio</a>
+                  <ul>
+                    <li><a href="#">Dove dormire</a></li>
+                    <li><a href="#">Dove mangiare</a></li>
+                    <li><a href="#">Mercati</a></li>
+                    <li><a href="#">Sanità e farmacie</a></li>
+                    <li><a href="#">Scuole / Asili</a></li>
+                    <li><a href="#">Servizi commerciali</a></li>
+                    <li><a href="#">Stabilimenti balneari e termali</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Altro</a>
+              <ul>
+                <li>
+                  <a href="#">Siti tematici</a>
+                  <ul>
+                    <li><a href="#">sito tematico</a></li>
+                    <li><a href="#">sito tematico</a></li>
+                    <li><a href="#">sito tematico</a></li>
+                    <li><a href="#">sito tematico</a></li>
+                    <li><a href="#">sito tematico</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Servizi per</a>
+                  <ul data-megamenu-class="u-lg-columns-2">
+                    <li><a href="#">Anziani</a></li>
+                    <li><a href="#">Automobilisti</a></li>
+                    <li><a href="#">Bambini</a></li>
+                    <li><a href="#">Cittadini</a></li>
+                    <li><a href="#">Consumatori</a></li>
+                    <li><a href="#">Disabili</a></li>
+                    <li><a href="#">Donne</a></li>
+                    <li><a href="#">Elettori</a></li>
+                    <li><a href="#">Famiglie</a></li>
+                    <li><a href="#">Giovani</a></li>
+                    <li><a href="#">Immigrati</a></li>
+                    <li><a href="#">Imprenditori</a></li>
+                    <li><a href="#">Italiani all'estero</a></li>
+                    <li><a href="#">Lavoratori / In cerca di lavoro</a></li>
+                    <li><a href="#">Persone con disagio sociale</a></li>
+                    <li><a href="#">Studenti</a></li>
+                    <li><a href="#">Turisti</a></li>
+                  </ul>
+                </li>
+                <!-- <li><a href="#">news</a></li>
+                  <li><a href="#">eventi</a></li> -->
+                <li><a href="#" data-megamenu-class="u-text-h4">mappa del sito
+                  <span data-megamenu-class="Icon Icon-chevron-right u-text-r-xxs"></span></a>
+                </li>
+                </li>
+              </ul>
+            </li>
+            <li data-megamenu-class="Megamenu-area">
+              <a data-megamenu-class="Button u-border-none u-color-95 u-background-compl u-text-r-xxs" href="#">Accedi</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-  </section>
+    </section>
 
-  <div id="main">
-
+    <div id="main">
       <section>
-          <div class="Hero">
-              <div class="Hero-content">
-                  <p class="u-padding-r-bottom u-padding-r-top u-text-r-xs">
-                      <a href="#" class="u-textClean u-color-60 u-text-h4"><span class="Dot u-background-60"></span>categoria</a>
-                  </p>
-                  <h2 class="u-text-h2"><a href="#" class="u-color-95 u-textClean">quae qui et</a></h2>
-                  <p class="u-padding-r-bottom u-padding-r-top u-text-p u-margin-r-bottom">Quasi tempora occaecati eum dolorem modi enim maiores et. Autem et magnam eos non qui ut dignissimos. Sit consequatur dolores voluptas nobis omnis consequatur. Quaerat explicabo autem quod dolores. Ab dolorem praesentium. Quo minus doloribus
-                      ipsam officiis quia.</p>
-                  <a href="#news" class="js-scrollTo u-linkClean Button Button--info u-text-r-xs">notizie ed eventi
-          <span class="u-padding-r-left Icon Icon-expand"></span></a>
-              </div>
-              <a href="#servizi" class="Forward Forward--absolute js-scrollTo" aria-hidden="true">
-                  <span class="Icon Icon-expand"></span>
-              </a>
+        <div class="Hero">
+          <div class="Hero-content">
+            <p class="u-padding-r-bottom u-padding-r-top u-text-r-xs">
+              <a href="#" class="u-textClean u-color-60 u-text-h4"><span class="Dot u-background-60"></span>categoria</a>
+            </p>
+            <h2 class="u-text-h2"><a href="#" class="u-color-95 u-textClean">quae qui et</a></h2>
+            <p class="u-padding-r-bottom u-padding-r-top u-text-p u-margin-r-bottom">Quasi tempora occaecati eum dolorem modi enim maiores et. Autem et magnam eos non qui ut dignissimos. Sit consequatur dolores voluptas nobis omnis consequatur. Quaerat explicabo autem quod dolores. Ab dolorem praesentium. Quo minus doloribus
+              ipsam officiis quia.
+            </p>
+            <a href="#news" class="js-scrollTo u-linkClean Button Button--info u-text-r-xs">notizie ed eventi
+            <span class="u-padding-r-left Icon Icon-expand"></span></a>
           </div>
+          <a href="#servizi" class="Forward Forward--absolute js-scrollTo" aria-hidden="true">
+          <span class="Icon Icon-expand"></span>
+          </a>
+        </div>
       </section>
 
       <div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top">
-
-          <div class="Grid Grid--equalHeight Grid--withGutterM" id="servizi">
-
-              <!-- <div class="Grid-cell u-sizeFull u-padding-r-bottom">
-        <h2 class="u-text-h2"><a class="u-color-black u-textClean u-text-h2" href="">In evidenza</a></h2>
-      </div> -->
-
-              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-                  <div class="u-sizeFull u-color-70 u-text-r-s">
-                      <h3 class="u-border-bottom-m">
-                          <a href="#" class="u-block u-text-h3 u-color-60 u-textClean">Servizi
-            <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
-            </a></h3>
-                      <ul class="Linklist Prose u-text-r-xs">
-                          <li><a href="">Modulistica</a></li>
-                          <li><a href="">SUAP</a></li>
-                          <li><a href="">Iscrizioni scolastiche</a></li>
-                          <li><a href="">Tributi e sanzioni</a></li>
-                          <li><a href="page--servizi" class="u-color-50 u-textClean">
-                  tutti i servizi <span class="Icon Icon-chevron-right"></span></a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-                  <div class="u-sizeFull u-color-compl-80 u-text-r-s">
-                      <h3 class="u-border-bottom-m">
-                          <a href="#" class="u-block u-text-h3 u-color-compl-80 u-textClean">L'Amministrazione
-            <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
-            </a></h3>
-                      <ul class="Linklist Prose">
-                          <li><a href=""><span class="u-text-r-xs u-color-compl-80">Bandi aperti</span></a></li>
-                          <li><a href=""><span class="u-text-r-xs u-color-compl-80">Avvisi</span></a></li>
-                          <li><a href=""><span class="u-text-r-xs u-color-compl-80">Ordinanze</span></a></li>
-                          <li><a href=""><span class="u-text-r-xs u-color-compl-80">Scadenze</span></a></li>
-                          <li><a href="#" class="u-textClean "><span class="u-color-compl-80 u-text-p">
-                  tutto dall'Amministrazione <span class="u-color-compl-80 Icon Icon-chevron-right"></span></span></a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <div class="Grid-cell  u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-                  <div class="u-sizeFull u-color-70 u-text-r-s">
-                      <h3 class="u-border-bottom-m">
-                          <a href="#" class="u-block u-text-h3 u-color-60 u-textClean">Vivere il comune
-              <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
-            </a></h3>
-                      <ul class="Linklist Prose u-text-r-xs">
-                          <li><a href="#">La storia</a></li>
-                          <li><a href="#">Galleria fotografica</a></li>
-                          <li><a href="#">Luoghi di interesse</a></li>
-                          <li><a href="#">Come raggiungerci</a></li>
-                          <li><a href="#" class="u-color-50 u-textClean">
-                  altro in Vivere il comune <span class="Icon Icon-chevron-right"></span></a></li>
-                      </ul>
-                  </div>
-              </div>
-
+        <div class="Grid Grid--equalHeight Grid--withGutterM" id="servizi">
+          <!-- <div class="Grid-cell u-sizeFull u-padding-r-bottom">
+            <h2 class="u-text-h2"><a class="u-color-black u-textClean u-text-h2" href="">In evidenza</a></h2>
+            </div> -->
+          <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+            <div class="u-sizeFull u-color-70 u-text-r-s">
+              <h3 class="u-border-bottom-m">
+                <a href="#" class="u-block u-text-h3 u-color-60 u-textClean">
+                  Servizi
+                  <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
+                </a>
+              </h3>
+              <ul class="Linklist Prose u-text-r-xs">
+                <li><a href="">Modulistica</a></li>
+                <li><a href="">SUAP</a></li>
+                <li><a href="">Iscrizioni scolastiche</a></li>
+                <li><a href="">Tributi e sanzioni</a></li>
+                <li><a href="page--servizi" class="u-color-50 u-textClean">
+                  tutti i servizi <span class="Icon Icon-chevron-right"></span></a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="Grid Grid--withGutter u-padding-r-top u-padding-r-bottom u-text-r-s">
-              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
-                  <div class="Entrypoint-item u-sizeFill u-background-compl-80">
-                      <p><a class="u-textClean u-text-h3 u-color-white" href="">Amministrazione trasparente</a></p>
-                  </div>
-              </div>
-              <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
-                  <div class="Entrypoint-item u-background-compl-80">
-                      <p><a class="u-textClean u-text-h3 u-color-white" href="">Albo pretorio</a></p>
-                  </div>
-                  <div class="Entrypoint-item u-background-compl-80">
-                      <p><a class="u-textClean u-text-h4 u-color-white" href="">Accesso civico</a></p>
-                  </div>
-              </div>
-              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
-                  <div class="Entrypoint-item u-sizeFill u-background-compl-80">
-                      <p><a class="u-textClean u-text-h3 u-color-white" href="">Ufficio Relazioni con il Pubblico</a></p>
-                  </div>
-              </div>
+          <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+            <div class="u-sizeFull u-color-compl-80 u-text-r-s">
+              <h3 class="u-border-bottom-m">
+                <a href="#" class="u-block u-text-h3 u-color-compl-80 u-textClean">
+                  L'Amministrazione
+                  <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
+                </a>
+              </h3>
+              <ul class="Linklist Prose">
+                <li><a href=""><span class="u-text-r-xs u-color-compl-80">Bandi aperti</span></a></li>
+                <li><a href=""><span class="u-text-r-xs u-color-compl-80">Avvisi</span></a></li>
+                <li><a href=""><span class="u-text-r-xs u-color-compl-80">Ordinanze</span></a></li>
+                <li><a href=""><span class="u-text-r-xs u-color-compl-80">Scadenze</span></a></li>
+                <li><a href="#" class="u-textClean "><span class="u-color-compl-80 u-text-p">
+                  tutto dall'Amministrazione <span class="u-color-compl-80 Icon Icon-chevron-right"></span></span></a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <a href="#news" class="Forward Forward--floating js-scrollTo u-color-compl-80" aria-hidden="true">
-              <span class="Icon Icon-expand"></span>
-          </a>
+          <div class="Grid-cell  u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+            <div class="u-sizeFull u-color-70 u-text-r-s">
+              <h3 class="u-border-bottom-m">
+                <a href="#" class="u-block u-text-h3 u-color-60 u-textClean">
+                  Vivere il comune
+                  <!-- <span class="u-text-r-s Icon Icon-chevron-right"></span> -->
+                </a>
+              </h3>
+              <ul class="Linklist Prose u-text-r-xs">
+                <li><a href="#">La storia</a></li>
+                <li><a href="#">Galleria fotografica</a></li>
+                <li><a href="#">Luoghi di interesse</a></li>
+                <li><a href="#">Come raggiungerci</a></li>
+                <li><a href="#" class="u-color-50 u-textClean">
+                  altro in Vivere il comune <span class="Icon Icon-chevron-right"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="Grid Grid--withGutter u-padding-r-top u-padding-r-bottom u-text-r-s">
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
+            <div class="Entrypoint-item u-sizeFill u-background-compl-80">
+              <p><a class="u-textClean u-text-h3 u-color-white" href="">Amministrazione trasparente</a></p>
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
+            <div class="Entrypoint-item u-background-compl-80">
+              <p><a class="u-textClean u-text-h3 u-color-white" href="">Albo pretorio</a></p>
+            </div>
+            <div class="Entrypoint-item u-background-compl-80">
+              <p><a class="u-textClean u-text-h4 u-color-white" href="">Accesso civico</a></p>
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
+            <div class="Entrypoint-item u-sizeFill u-background-compl-80">
+              <p><a class="u-textClean u-text-h3 u-color-white" href="">Ufficio Relazioni con il Pubblico</a></p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#news" class="Forward Forward--floating js-scrollTo u-color-compl-80" aria-hidden="true">
+        <span class="Icon Icon-expand"></span>
+        </a>
       </div>
 
       <div class=" u-background-compl-10 u-layout-centerContent u-padding-r-top">
-
-          <section class="u-layout-wide u-layout-r-withGutter u-text-r-s u-padding-r-top u-padding-r-bottom">
-
-              <h2 id="news" class="u-layout-centerLeft u-text-r-s">
-                  <a class="u-color-50 u-textClean u-text-h3 " href="">Notizie</a>
-              </h2>
-
-              <div class="Grid Grid--withGutterM">
-
-                  <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
-                      <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
-                          <div class="Card-image">
-                              <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
-                          </div>
-                          <div class="Card-content">
-                              <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
-                              <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
-                              <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
-                              <p class="Card-text">Quasi tempora occaecati eum dolorem modi enim maiores et. Autem et magnam eos non qui ut dignissimos. Sit consequatur dolores voluptas nobis omnis consequatur. Quaerat explicabo autem quod dolores. Ab dolorem praesentium. Quo
-                                  minus doloribus ipsam officiis quia.</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
-                      <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
-                          <div class="Card-image">
-                              <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
-                          </div>
-                          <div class="Card-content">
-                              <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
-                              <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
-                              <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
-                              <p class="Card-text">Voluptatem dolore dolores quo. Exercitationem quos sint repellat qui repellendus beatae expedita nobis illo. Enim unde non voluptatem voluptate ipsum consequuntur aspernatur. Eos aliquid et eum cum nihil. Voluptatum qui est
-                                  dignissimos vel sed et. Doloribus in quis at sapiente omnis et earum delectus excepturi.</p>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
-                      <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
-                          <div class="Card-image">
-                              <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
-                          </div>
-                          <div class="Card-content">
-                              <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
-                              <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
-                              <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
-                              <p class="Card-text">Voluptate quibusdam voluptas. Cupiditate et at. Pariatur magnam similique eaque iste deleniti asperiores eum. Voluptatum odit veritatis. Beatae molestiae optio.</p>
-                          </div>
-                      </div>
-                  </div>
-
+        <section class="u-layout-wide u-layout-r-withGutter u-text-r-s u-padding-r-top u-padding-r-bottom">
+          <h2 id="news" class="u-layout-centerLeft u-text-r-s">
+            <a class="u-color-50 u-textClean u-text-h3 " href="">Notizie</a>
+          </h2>
+          <div class="Grid Grid--withGutterM">
+            <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
+              <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
+                <div class="Card-image">
+                  <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
+                </div>
+                <div class="Card-content">
+                  <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
+                  <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
+                  <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
+                  <p class="Card-text">Quasi tempora occaecati eum dolorem modi enim maiores et. Autem et magnam eos non qui ut dignissimos. Sit consequatur dolores voluptas nobis omnis consequatur. Quaerat explicabo autem quod dolores. Ab dolorem praesentium. Quo
+                    minus doloribus ipsam officiis quia.
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <p class="u-textCenter u-text-md-right u-text-lg-right u-margin-r-top">
-                  <a href="#" class="u-color-50 u-textClean u-text-h4">
-          tutte le notizie <span class="Icon Icon-chevron-right"></a>
-              </p>
+            <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
+              <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
+                <div class="Card-image">
+                  <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
+                </div>
+                <div class="Card-content">
+                  <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
+                  <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
+                  <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
+                  <p class="Card-text">Voluptatem dolore dolores quo. Exercitationem quos sint repellat qui repellendus beatae expedita nobis illo. Enim unde non voluptatem voluptate ipsum consequuntur aspernatur. Eos aliquid et eum cum nihil. Voluptatum qui est
+                    dignissimos vel sed et. Doloribus in quis at sapiente omnis et earum delectus excepturi.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          </section>
+            <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex u-margin-r-bottom u-flexJustifyCenter">
+              <div class="Card Card--shadow Card--round u-text-r-xxs u-background-white u-flexAlignSelfStretch">
+                <div class="Card-image">
+                  <img src="//placehold.it/400x220?text=placeholder" class="u-sizeFull" alt="" />
+                </div>
+                <div class="Card-content">
+                  <p class="Card-extra"><a class="Card-extraLink u-color-60" href="">quae qui et</a></p>
+                  <h3 class="Card-title"><a class="Card-titleLink u-color-60" href="">Porro fugit voluptas.</a></h3>
+                  <p class="Card-text u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
+                  <p class="Card-text">Voluptate quibusdam voluptas. Cupiditate et at. Pariatur magnam similique eaque iste deleniti asperiores eum. Voluptatum odit veritatis. Beatae molestiae optio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <a href="#utilita" class="Forward Forward--floating js-scrollTo" aria-hidden="true">
-              <span class="Icon Icon-expand u-color-grey-40"></span>
-          </a>
+          <p class="u-textCenter u-text-md-right u-text-lg-right u-margin-r-top">
+            <a href="#" class="u-color-50 u-textClean u-text-h4">
+            tutte le notizie <span class="Icon Icon-chevron-right"></a>
+          </p>
+        </section>
 
+        <a href="#utilita" class="Forward Forward--floating js-scrollTo" aria-hidden="true">
+        <span class="Icon Icon-expand u-color-grey-40"></span>
+        </a>
       </div>
 
       <div class="u-background-white u-color-black u-text-xxl u-padding-r-top u-padding-r-bottom">
-          <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter" id="utilita">
-              <section class="u-padding-r-top u-padding-r-bottom">
-                  <h2 class="u-text-h3 u-layout-centerLeft">Utilità</h2>
-                  <ul class="Grid Grid--withGutter">
-
-                      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
-                          <a class="Leads-link u-color-black" href="">Open data</a>
-                      </li>
-
-                      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
-                          <a class="Leads-link u-color-black" href="">Comunicati stampa</a>
-                      </li>
-
-                  </ul>
-              </section>
-
-          </div>
+        <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter" id="utilita">
+          <section class="u-padding-r-top u-padding-r-bottom">
+            <h2 class="u-text-h3 u-layout-centerLeft">Utilità</h2>
+            <ul class="Grid Grid--withGutter">
+              <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+                <a class="Leads-link u-color-black" href="">Open data</a>
+              </li>
+              <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+                <a class="Leads-link u-color-black" href="">Comunicati stampa</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
 
       <div class="u-background-compl u-padding-all-xl u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
-          <p class="u-textCenter u-margin-top-m u-margin-bottom-m">
-              <a href="#" class="u-color-95 u-textClean u-text-h3">
-                  <span class="u-padding-r-right Icon Icon-comment">
-            </span> Valuta questo sito
-              </a>
-          </p>
+        <p class="u-textCenter u-margin-top-m u-margin-bottom-m">
+          <a href="#" class="u-color-95 u-textClean u-text-h3">
+          <span class="u-padding-r-right Icon Icon-comment">
+          </span> Valuta questo sito
+          </a>
+        </p>
       </div>
 
       <div class="u-background-grey-80 u-hiddenPrint">
-          <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
-              <footer class="Footer">
-
-                  <div class="u-cf">
-                      <img class="Footer-logo" src="//placehold.it/75x80?text=placeholder" alt="">
-                      <p class="Footer-siteName">
-                          Nome della pubblica amministrazione
-                      </p>
-                  </div>
-
-                  <div class="Grid Grid--withGutter">
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Argomento 1</h2>
-                          <ul>
-                              <li><a href="">laborum neque nemo</a></li>
-                              <li><a href="">qui nemo aut</a></li>
-                              <li><a href="">quo provident sint</a></li>
-                              <li><a href="">quisquam ea numquam</a></li>
-                          </ul>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Argomento 2</h2>
-                          <ul>
-                              <li><a href="">laborum neque nemo</a></li>
-                              <li><a href="">qui nemo aut</a></li>
-                              <li><a href="">quo provident sint</a></li>
-                              <li><a href="">quisquam ea numquam</a></li>
-                          </ul>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Argomento 3</h2>
-                          <ul>
-                              <li><a href="">laborum neque nemo</a></li>
-                              <li><a href="">qui nemo aut</a></li>
-                              <li><a href="">quo provident sint</a></li>
-                              <li><a href="">quisquam ea numquam</a></li>
-                          </ul>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Argomento 4</h2>
-                          <ul>
-                              <li><a href="">laborum neque nemo</a></li>
-                              <li><a href="">qui nemo aut</a></li>
-                              <li><a href="">quo provident sint</a></li>
-                              <li><a href="">quisquam ea numquam</a></li>
-                          </ul>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Contatti</h2>
-                          <div class="Footer-subBlock">
-                              <h3 class="Footer-subTitle">Recapiti</h3>
-                              <address>
-            Via quae qui et<br>
-            quae qui et<br>
-            Tel. (+00) 00.0000.0000
-          </address>
-                          </div>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Contatti</h2>
-                          <div class="Footer-subBlock">
-                              <h3 class="Footer-subTitle">Recapiti</h3>
-                              <address>
-            Via laborum neque nemo<br>
-            laborum neque nemo<br>
-            Tel. (+00) 00.0000.0000
-          </address>
-                          </div>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Contatti</h2>
-                          <div class="Footer-subBlock">
-                              <h3 class="Footer-subTitle">Indirizzo PEC</h3>
-                              <p><a href="">indirizzo.pec@gov.it</a></p>
-                          </div>
-                      </div>
-
-                      <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
-                          <h2 class="Footer-blockTitle">Seguici su</h2>
-                          <div class="Footer-subBlock">
-                              <ul class="Footer-socialIcons">
-                                  <li><a href=""><span class="Icon Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                                  <li><a href=""><span class="Icon Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-                                  <li><a href=""><span class="Icon Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
-                              </ul>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <ul class="Footer-links u-cf">
-                      <li><a href="" title="Privacy policy">Privacy</a></li>
-                      <li><a href="" title="Note legali">Note legali</a></li>
-                      <li><a href="" title="Dati monitoraggio sito">Contatti</a></li>
+        <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
+          <footer class="Footer">
+            <div class="u-cf">
+              <img class="Footer-logo" src="//placehold.it/75x80?text=placeholder" alt="">
+              <p class="Footer-siteName">
+                Nome della pubblica amministrazione
+              </p>
+            </div>
+            <div class="Grid Grid--withGutter">
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Argomento 1</h2>
+                <ul>
+                  <li><a href="">laborum neque nemo</a></li>
+                  <li><a href="">qui nemo aut</a></li>
+                  <li><a href="">quo provident sint</a></li>
+                  <li><a href="">quisquam ea numquam</a></li>
+                </ul>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Argomento 2</h2>
+                <ul>
+                  <li><a href="">laborum neque nemo</a></li>
+                  <li><a href="">qui nemo aut</a></li>
+                  <li><a href="">quo provident sint</a></li>
+                  <li><a href="">quisquam ea numquam</a></li>
+                </ul>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Argomento 3</h2>
+                <ul>
+                  <li><a href="">laborum neque nemo</a></li>
+                  <li><a href="">qui nemo aut</a></li>
+                  <li><a href="">quo provident sint</a></li>
+                  <li><a href="">quisquam ea numquam</a></li>
+                </ul>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Argomento 4</h2>
+                <ul>
+                  <li><a href="">laborum neque nemo</a></li>
+                  <li><a href="">qui nemo aut</a></li>
+                  <li><a href="">quo provident sint</a></li>
+                  <li><a href="">quisquam ea numquam</a></li>
+                </ul>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Contatti</h2>
+                <div class="Footer-subBlock">
+                  <h3 class="Footer-subTitle">Recapiti</h3>
+                  <address>
+                    Via quae qui et<br>
+                    quae qui et<br>
+                    Tel. (+00) 00.0000.0000
+                  </address>
+                </div>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Contatti</h2>
+                <div class="Footer-subBlock">
+                  <h3 class="Footer-subTitle">Recapiti</h3>
+                  <address>
+                    Via laborum neque nemo<br>
+                    laborum neque nemo<br>
+                    Tel. (+00) 00.0000.0000
+                  </address>
+                </div>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Contatti</h2>
+                <div class="Footer-subBlock">
+                  <h3 class="Footer-subTitle">Indirizzo PEC</h3>
+                  <p><a href="">indirizzo.pec@gov.it</a></p>
+                </div>
+              </div>
+              <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+                <h2 class="Footer-blockTitle">Seguici su</h2>
+                <div class="Footer-subBlock">
+                  <ul class="Footer-socialIcons">
+                    <li><a href=""><span class="Icon Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
+                    <li><a href=""><span class="Icon Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
+                    <li><a href=""><span class="Icon Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
                   </ul>
-
-              </footer>
-
-          </div>
+                </div>
+              </div>
+            </div>
+            <ul class="Footer-links u-cf">
+              <li><a href="" title="Privacy policy">Privacy</a></li>
+              <li><a href="" title="Note legali">Note legali</a></li>
+              <li><a href="" title="Dati monitoraggio sito">Contatti</a></li>
+            </ul>
+          </footer>
+        </div>
       </div>
 
       <a href="#" title="torna all'inizio del contenuto" class="ScrollTop js-scrollTop js-scrollTo">
-          <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
-          <span class="u-hiddenVisually">torna all'inizio del contenuto</span>
+      <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+      <span class="u-hiddenVisually">torna all'inizio del contenuto</span>
       </a>
-
-  </div>
-
-  <!--[if IE 8]>
-  <script src="vendor/respond.min.js"></script>
-  <script src="vendor/rem.min.js"></script>
-  <script src="vendor/selectivizr.js"></script>
-  <script src="vendor/slice.js"></script>
-  <![endif]-->
-
-  <!--[if lte IE 9]>
-  <script src="vendor/polyfill.min.js"></script>
-  <![endif]-->
-
-  <script src="IWT.min.js"></script>
-
-</body>
+    </div>
+    <!--[if IE 8]>
+    <script src="vendor/respond.min.js"></script>
+    <script src="vendor/rem.min.js"></script>
+    <script src="vendor/selectivizr.js"></script>
+    <script src="vendor/slice.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <script src="vendor/polyfill.min.js"></script>
+    <![endif]-->
+    <script src="IWT.min.js"></script>
+  </body>
 </html>
