@@ -41,8 +41,9 @@
 
   <body class="t-Pac">
     <div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
-      <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">Questo sito utilizza cookie tecnici, analytics e di terze parti.
-        <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+      <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">
+        Questo sito utilizza cookie tecnici, analytics e di terze parti.<br>
+        Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
       </p>
       <p>
         <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Accetto</button>
@@ -108,11 +109,11 @@
           </div>
 
           <div class="Header-search" id="header-search">
-            <form class="Form">
-              <div class="Form-field Form-field--withPlaceholder Grid" role="search">
-                <input class="Form-input Grid-cell u-sizeFill u-text-r-s" required id="cerca">
-                <label class="Form-label" for="cerca">Cerca...</label>
-                <button class="Grid-cell u-sizeFit Icon-search u-background-60 u-color-white u-padding-all-s u-textWeight-700" title="Avvia la ricerca" aria-label="Avvia la ricerca">
+            <form class="Form u-text-r-xxs">
+              <div class="Form-field--withPlaceholder" role="search">
+                <input class="Form-input" required id="cerca">
+                <label class="Form-label u-color-grey-40" for="cerca">cerca nel sito</label>
+                <button class="Grid-cell u-sizeFit Icon-search u-background-white u-color-teal-70 u-padding-all-s" title="Avvia la ricerca" aria-label="Avvia la ricerca">
                 </button>
               </div>
             </form>
@@ -142,14 +143,13 @@
               <a href="#">Progetti</a>
               <ul data-megamenu-class="u-md-size1of2">
                 <li>
-                  <p>Progetti in evidenza</p>
+                  <a href="#progetti">Progetti in evidenza</a>
                   <ul data-megamenu-class="u-columns-2">
                     <li><a href="#">ANPR</a></li>
                     <li><a href="#">Data Analytics Framework</a></li>
                     <li><a href="#">PagoPA</a></li>
                     <li><a href="#">SPID</a></li>
                     <li><a href="#">Toolkit Design Web</a></li>
-                    <li><a href="#">Tutti i progetti &gt;</a></li>
                   </ul>
                 </li>
                 <li>
@@ -162,7 +162,7 @@
             </li>
 
             <li>
-              <a href="#">Strumenti</a>
+              <a href="#strumenti">Strumenti</a>
               <ul>
                 <li>
                   <p>Dove partecipare</p>
@@ -177,7 +177,7 @@
             </li>
 
             <li>
-              <a href="#">Notizie</a>
+              <a href="#notizie">Notizie</a>
             </li>
 
             <li>
@@ -197,36 +197,118 @@
     </section>
 
     <div id="main">
-      <section class="Grid u-padding-all-xxl" id="cta">
-        <div class="Grid-cell--center u-size1of2 u-text-r-l">
-          La community degli sviluppatori che progettano<br>
-          e realizzano i servizi pubblici digitali in Italia
+      <!-- <section class="u-padding-all-xxl" id="cta">
+        <div class="Grid u-layoutCenter u-layout-wide">
+          <div class="Grid-cell--center u-size1of2 u-text-r-l">
+            La community degli sviluppatori che progettano<br>
+            e realizzano i servizi pubblici digitali in Italia
+          </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="newsletter">
-        <div class="Grid u-padding-top-xxl">
-          <div class="Grid-cell--center u-size1of2 u-text-r-m">
+        <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-top-xxl">
+          <div class="Grid-cell--center u-size1of2 u-text-r-l">
             Iscriviti alla Newsletter
           </div>
         </div>
 
-        <div class="Grid u-padding-all-l">
-          <form class="Grid-cell--center u-size1of2 u-text-r-m">
+        <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-all-l">
+          <form class="Grid-cell--center u-size1of2 u-borderShadow-m u-text-r-xxs">
             <div class="Form-field--withPlaceholder">
-              <input class="Form-input u-padding-r-all" id="email" aria-required="true" required>
-              <label class="Form-label u-color-grey-40" for="email">indirizzo email</label>
-              <button class="Button Button--default u-color-white u-padding-all-s u-textNoWrap">Iscriviti</button>
+              <input class="Form-input" required id="email">
+              <label class="Form-label u-color-grey-40" for="cerca">indirizzo email</label>
+              <button class="Button Button--default u-color-white u-padding-all-s" title="Iscriviti" aria-label="Iscriviti">
+                Iscriviti
+              </button>
             </div>
           </form>
         </div>
 
-        <div class="Grid u-padding-bottom-l">
-          <div class="Grid-cell--center u-size1of2 u-text-r-m u-color-grey-40">
-            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut<br>
+        <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-bottom-l">
+          <div class="Grid-cell--center u-size1of2 u-text-r-xs u-color-grey-40">
+            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut
             labore et dolore magna aliqua.
           </div>
       </section>
+
+      <section class="u-padding-top-l" id="progetti">
+        <div class="Grid Grid--withGutter Grid--equalHeight u-layoutCenter u-layout-wide">
+          <div class="Grid-cell u-size1of1 u-padding-r-all u-text-r-l">
+            Progetti in evidenza
+          </div>
+
+          <div class="Grid-cell u-size1of3">
+            <div class="Card Card--shadow u-borderRadius-s u-background-white">
+              <div class="Card-content u-padding-r-all">
+                <p class="Card-extra u-padding-top-l">
+                  <a class="Card-extraLink u-text-r-l" href="#">ANPR</a>
+                </p>
+                <h3 class="Card-title">
+                  <a class="Card-titleLink" href="">Anagrafe Nazionale Popolazione Residente</a>
+                </h3>
+                <p class="Card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+                </p>
+                <p class="Card-footer">
+                  <a class="u-textClean" href="#">
+                    per saperne di più
+                    <span class="Icon Icon-chevron-right u-text-r-xxs"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid-cell u-size1of3">
+            <div class="Card Card--shadow u-borderRadius-s u-background-white">
+              <div class="Card-content u-padding-r-all">
+                <p class="Card-extra u-padding-top-l">
+                  <a class="Card-extraLink u-text-r-l" href="#">Spid</a>
+                </p>
+                <h3 class="Card-title">
+                  <a class="Card-titleLink" href="">Sistema Pubblico di Identità Digitale</a>
+                </h3>
+                <p class="Card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </p>
+                <p class="Card-footer">
+                  <a class="u-textClean" href="#">
+                    per saperne di più
+                    <span class="Icon Icon-chevron-right u-text-r-xxs"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="Grid-cell u-size1of3">
+            <div class="Card Card--shadow u-borderRadius-s u-background-white">
+              <div class="Card-content u-padding-r-all">
+                <p class="Card-extra u-padding-top-l">
+                  <a class="Card-extraLink u-text-r-l" href="#">PagoPA</a>
+                </p>
+                <h3 class="Card-title">
+                  <a class="Card-titleLink" href="">Nodo dei Pagamenti verso la Pubblica Amministrazione</a>
+                </h3>
+                <p class="Card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.
+                </p>
+                <p class="Card-footer">
+                  <a class="u-textClean" href="#">
+                    per saperne di più
+                    <span class="Icon Icon-chevron-right u-text-r-xxs"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="notizie"></section>
+
+      <section id="strumenti"></section>
 
       <div class="u-layout-wide u-layoutCenter u-text-r-xl u-layout-r-withGutter u-padding-r-top">
         <div class="Grid Grid--equalHeight Grid--withGutterM" id="servizi">

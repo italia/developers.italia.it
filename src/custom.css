@@ -40,3 +40,16 @@
   color: white;
   text-align: center;
 }
+
+#newsletter {
+  background: linear-gradient(#06c, #f6f9fc);
+}
+
+#progetti {
+  background-color: #f6f9fc;
+}
+
+#progetti .u-text-r-l,
+#progetti a {
+  color: #06c;
+}
