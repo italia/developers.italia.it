@@ -29,20 +29,9 @@
 .Badge {
   background-color: #428fdb;
   border-radius: 100px;
-  color: #06c;
   font-size: 11px;
   padding: 1px 8px;
   vertical-align: middle;
-}
-
-.Header-socialIcons img {
-  vertical-align: middle;
-}
-
-#cta,
-#newsletter {
-  color: white;
-  text-align: center;
 }
 
 #newsletter {
