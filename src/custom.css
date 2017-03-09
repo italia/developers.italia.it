@@ -1,12 +1,18 @@
+header {
+  background-color: #06c !important;
+}
+
 .Header-banner,
 .Linklist-link.Linklist-link--lev1,
 .Linklist-link.Linklist-link--lev1:hover,
 .u-background-90 {
   background-color: #06c !important;
+  padding: 0 !important;
 }
 
-.Header-banner > .Header-content {
+.Header-banner > .Header-content > .Header-owner > a {
   border-color: rgba(255, 255, 255, 0.1) !important;
+  margin-left: 0 !important;
 }
 
 .Bullets > li::before,

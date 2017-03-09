@@ -57,30 +57,30 @@
     </ul>
 
     <header class="Header u-hiddenPrint">
-      <div class="Header-banner Grid">
-        <div class="Header-content Grid-cell u-border-bottom-xxs">
+      <div class="Header-banner Grid Grid--withGutter u-layout-wide">
+        <div class="Header-content Grid-cell">
           <div class="Header-owner Headroom-hideme">
-            <a href=""><span>AgID - Agenzia per l'Italia Digitale</span></a>
+            <a class="u-sizeFull u-border-bottom-xxs" href=""><span>AgID - Agenzia per l'Italia Digitale</span></a>
           </div>
         </div>
       </div>
 
-      <div class="Header-navbar Grid Grid--alignMiddle">
-        <div class="Header-toggle Grid-cell">
+      <div class="Header-navbar Grid Grid--withGutter u-layoutCenter u-layout-wide"><!-- Grid--alignMiddle-->
+        <!-- <div class="Header-toggle Grid-cell">
           <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock
             u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
           <span class="Hamburger-toggle" role="presentation"></span>
           <span class="Header-toggleText" role="presentation">Menu</span>
           </a>
-        </div>
+        </div> -->
 
-        <div class="Header-logo Grid-cell" aria-hidden="true">
+        <div class="Header-logo Grid-cell u-size1of12" aria-hidden="true">
           <a href="" tabindex="-1">
           <img src="icons/italia.it-logo.svg" alt="">
           </a>
         </div>
 
-        <div class="Header-title Grid-cell">
+        <div class="Header-title Grid-cell u-size4of12">
           <h1 class="Header-titleLink">
             <a href="/">
             /developers
@@ -91,20 +91,35 @@
           </h1>
         </div>
 
-        <div class="Header-searchTrigger Grid-cell">
+        <!-- <div class="Header-searchTrigger Grid-cell">
           <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search" title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
           </button>
           <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden" title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
           </button>
-        </div>
+        </div> -->
 
-        <div class="Header-utils Grid-cell">
+        <div class="Grid-cell u-before3of12 u-size3of12 u-textRight"><!-- no idea why it must be before3 instead of before4 -->
           <div class="Header-social Headroom-hideme">
             <p>Seguici su:</p>
             <ul class="Header-socialIcons">
-              <li><a href="" title="Facebook"><img src="icons/icons_white_facebook.png" alt=""><span class="u-hiddenVisually">Facebook</span></a></li>
-              <li><a href="" title="Github"><img src="icons/icons_white_github.png" alt=""><span class="u-hiddenVisually">Github</span></a></li>
-              <li><a href="" title="Twitter"><img src="icons/icons_white_twitter.png" alt=""><span class="u-hiddenVisually">Twitter</span></a></li>
+              <li>
+                <a href="" title="Facebook">
+                  <img src="icons/icons_white_facebook.png" alt="">
+                  <span class="u-hiddenVisually">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="Github">
+                  <img src="icons/icons_white_github.png" alt="">
+                  <span class="u-hiddenVisually">Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="Twitter">
+                  <img src="icons/icons_white_twitter.png" alt="">
+                  <span class="u-hiddenVisually">Twitter</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -112,7 +127,7 @@
             <form class="Form u-text-r-xxs">
               <div class="Form-field--withPlaceholder" role="search">
                 <input class="Form-input" required id="cerca">
-                <label class="Form-label u-color-grey-40" for="cerca">cerca nel sito</label>
+                <label class="Form-label u-color-grey-40" for="cerca">cerca un progetto</label>
                 <button class="Grid-cell u-sizeFit Icon-search u-background-white u-color-teal-70 u-padding-all-s" title="Avvia la ricerca" aria-label="Avvia la ricerca">
                 </button>
               </div>
@@ -197,14 +212,14 @@
     </section>
 
     <div id="main">
-      <!-- <section class="u-padding-all-xxl" id="cta">
+      <section class="u-padding-all-xxl" id="cta">
         <div class="Grid u-layoutCenter u-layout-wide">
           <div class="Grid-cell--center u-size1of2 u-text-r-l">
-            La community degli sviluppatori che progettano<br>
+            La community degli sviluppatori che progettano
             e realizzano i servizi pubblici digitali in Italia
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section id="newsletter">
         <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-top-xxl">
@@ -216,8 +231,9 @@
         <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-all-l">
           <form class="Grid-cell--center u-size1of2 u-borderShadow-m u-text-r-xxs">
             <div class="Form-field--withPlaceholder">
+              <img src="icons/Icons_Grey_Mail.svg" class="u-background-white" alt="">
               <input class="Form-input" required id="email">
-              <label class="Form-label u-color-grey-40" for="cerca">indirizzo email</label>
+              <label class="Form-label u-color-grey-40 u-before1of12" for="cerca">indirizzo email</label>
               <button class="Button Button--default u-color-white u-padding-all-s" title="Iscriviti" aria-label="Iscriviti">
                 Iscriviti
               </button>
