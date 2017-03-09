@@ -1,30 +1,29 @@
-header {
+.u-color-blue {
+  color: #06c !important;
+}
+
+.u-background-blue {
   background-color: #06c !important;
+}
+
+.u-color-lightgrey {
+  color: rgba(90, 103, 114, 0.5);
+}
+
+.u-background-lightgrey {
+  background-color: #f6f9fc;
 }
 
 .Header-banner,
 .Linklist-link.Linklist-link--lev1,
 .Linklist-link.Linklist-link--lev1:hover,
 .u-background-90 {
-  background-color: #06c !important;
   padding: 0 !important;
 }
 
 .Header-banner > .Header-content > .Header-owner > a {
   border-color: rgba(255, 255, 255, 0.1) !important;
   margin-left: 0 !important;
-}
-
-.Bullets > li::before,
-.Header-navbar,
-.Share-revealIcon,
-.Share > ul > li,
-.u-background-50 {
-  background-color: #06c !important;
-}
-
-.Megamenu--default {
-  background-color: #06c !important;
 }
 
 .Badge {
@@ -42,7 +41,6 @@ header {
 
 #cta,
 #newsletter {
-  background-color: #06c;
   color: white;
   text-align: center;
 }
@@ -51,11 +49,22 @@ header {
   background: linear-gradient(#06c, #f6f9fc);
 }
 
-#progetti {
-  background-color: #f6f9fc;
+#divisore-progetti-notizie {
+  background: linear-gradient(#f6f9fc, #fff);
 }
 
-#progetti .u-text-r-l,
-#progetti a {
-  color: #06c;
+#divisore-notizie-strumenti {
+  background: linear-gradient(#fff, #0360be);
+}
+
+.Card > .Card-content {
+  height: 100%;
+}
+
+.Card > .Card-content > .Card-footer {
+  bottom: 0;
+}
+
+#strumenti {
+  background: linear-gradient(134.04deg, #005bb6 0%, #0565c6 53.06%, #05509a 100%);
 }
