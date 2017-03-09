@@ -6,12 +6,16 @@
   background-color: #06c !important;
 }
 
-.u-color-lightgrey {
+.u-color-dimmedgrey {
   color: rgba(90, 103, 114, 0.5);
 }
 
 .u-background-lightgrey {
   background-color: #f6f9fc;
+}
+
+.u-color-dimmedwhite {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .Header-banner,
