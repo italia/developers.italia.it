@@ -228,12 +228,14 @@
         </div>
 
         <div class="Grid Grid--withGutter u-layoutCenter u-layout-wide u-padding-all-l">
-          <form class="Grid-cell--center u-size1of2 u-borderShadow-m u-text-r-xxs">
+          <form class="Grid-cell--center u-size1of2 u-borderShadow-m u-text-r-xxs" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="post">
             <div class="Form-field--withPlaceholder">
               <img src="icons/Icons_Grey_Mail.svg" class="u-background-white" alt="">
-              <input class="Form-input" required id="email">
+              <input type="email" name="email" class="Form-input" required size="60" maxlength="100" id="email">
+              <input type="hidden" name="list" value="1">
+              <input type="hidden" name="confirm" value="off">
               <label class="Form-label u-color-grey-40 u-before1of12" for="cerca">indirizzo email</label>
-              <button class="Button Button--default u-color-white u-padding-all-s" title="Iscriviti" aria-label="Iscriviti">
+              <button type="submit" class="Button Button--default u-color-white u-padding-all-s" title="Iscriviti" aria-label="Iscriviti">
                 Iscriviti
               </button>
             </div>
@@ -573,8 +575,8 @@
     <script src="IWT.min.js"></script>
 
     <!-- newsletter-related code -->
-    <script src="vendor/mailupclient.js"></script>
-    <script src="newsletter.js"></script>
-    <script src="newsletter.form.js"></script>
+    <!-- <script src="vendor/mailupclient.js"></script>
+    <script src="newsletter.js"></script> -->
+    <!-- <script src="newsletter.form.js"></script> -->
   </body>
 </html>
