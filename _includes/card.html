@@ -1,6 +1,8 @@
 <div class="u-nbfc u-color-grey-30 u-xs-padding-all-none
   u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white">
+  {% if include.hasImage != false %}
   <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
+  {% endif %}
   <div class="u-padding-r-all">
     <div class="u-padding-r-all u-xs-padding-all-none">
       <h3 class="u-padding-bottom-xs">
