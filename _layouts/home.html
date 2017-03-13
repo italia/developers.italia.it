@@ -41,9 +41,9 @@ lang: it
 
       <div class="Grid Grid--withGutter">
 
-      {% for project in projects %}
+      {% for project in projects limit: 3 %}
 
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
               title=project.title
               link='//example.com'
@@ -56,6 +56,33 @@ lang: it
               %}
           </div>
           {% endfor %}
+
+          {% for project in projects limit: 2 offset:3 %}
+
+              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+                {% include card.html
+                  title=project.title
+                  link='//example.com'
+                  subtitle=project.subtitle
+                  text=project.content
+                  socials=project.socials
+                  image='//placehold.it/400x220'
+                  alt=''
+                  hasImage=false
+                  hasMore=false
+                  hasSocial=false
+                  %}
+              </div>
+              {% endfor %}
+
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+            <div class="u-nbfc u-color-white u-padding-r-all u-xs-padding-all-none u-sizeFill u-flex u-flexAlignItemsCenter
+              u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
+
+              <h4 class="u-padding-r-all u-color-white u-text-r-l u-textWeight-600">{{ t.home_projects_others }}</h4>
+
+            </div>
+          </div>
 
       </div>
 

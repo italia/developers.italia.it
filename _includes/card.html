@@ -1,10 +1,11 @@
-<div class="u-nbfc u-color-grey-30 u-xs-padding-all-none
-  u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white">
+<div class="u-nbfc u-flex u-color-grey-30 u-xs-padding-all-none
+  u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">
   {% if include.hasImage != false %}
   <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
   {% endif %}
-  <div class="u-padding-r-all">
-    <div class="u-padding-r-all u-xs-padding-all-none">
+  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill u-padding-r-all">
+
+    <div class="u-sizeFull u-padding-r-all u-xs-padding-all-none">
       <h3 class="u-padding-bottom-xs">
         <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
           {{ include.title }}
@@ -13,19 +14,27 @@
       <h4 class="u-textWeight-400 u-lineHeight-l u-text-r-xs u-color-grey-60 u-padding-bottom-xs">
           {{ include.subtitle }}
       </h4>
-      <p class="u-text-p u-textSecondary u-margin-r-bottom u-padding-r-bottom">
-        {{ include.text }} </p>
 
-      <div class="Grid u-padding-r-top u-margin-r-top">
-
-        <p class="u-layout-centerLeft u-padding-r-bottom">
-          <a href="{{ include.link }}" class="u-color-50 u-text-r-xs u-textWeight-600 u-textClean">{{ t.home_projects_expand }}
-          <span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-md-hidden u-sm-hidden"></span>
-        </a>
+      {% if include.text != '' %}
+        <p class="u-text-p u-textSecondary u-margin-r-bottom u-padding-r-bottom">
+          {{ include.text }}
         </p>
-        <br class="u-sm-hidden u-md-hidden u-lg-hidden">
-        <p class="u-layout-centerRight u-padding-r-bottom">
+      {% endif %}
 
+    </div>
+
+    <div class="Grid u-sizeFull u-padding-r-top u-margin-r-left u-margin-r-right u-flexAlignSelfEnd">
+
+        {% if include.hasMore != false %}
+        <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
+          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-400 u-textClean">{{ t.home_projects_expand
+          }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
+          </a>
+        </p>
+        {% endif %}
+
+        {% if include.hasSocial != false %}
+        <p class="Grid-cell u-layout-centerRight u-padding-r-bottom">
           {% for social in include.socials %}
 
           <a href="{{ social.link }}" class="u-linkClean">
@@ -33,11 +42,10 @@
             u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">{{ social.name }}</span></a>
 
           {% endfor %}
-
         </p>
-
-      </div>
+        {% endif %}
 
     </div>
+
   </div>
 </div>
