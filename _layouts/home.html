@@ -37,7 +37,7 @@ lang: it
   <div class="u-layout-wide u-layoutCenter">
     <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
 
-      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort 'order' | reverse %}
 
       <div class="Grid Grid--withGutter">
 
@@ -84,6 +84,7 @@ lang: it
               socials=project.socials
               image='//placehold.it/400x220'
               alt=''
+              hasImage=false
               %}
           </div>
           {% endfor %}

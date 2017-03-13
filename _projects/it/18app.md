@@ -7,8 +7,8 @@ description: >
   con la piattaforma.
 lang: it
 order: 3
-highlight: yes
-comingsoon: yes
+highlight: false
+comingsoon: true
 layout: project
 socials:
   -

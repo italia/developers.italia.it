@@ -7,7 +7,7 @@ description: >
   software gestionali.
 lang: it
 order: 2
-highlight: yes
-comingsoon: yes
+highlight: true
+comingsoon: true
 layout: project
 ---

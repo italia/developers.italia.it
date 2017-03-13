@@ -7,7 +7,7 @@ description: >
   certificato SSL d'identità.
 lang: it
 order: 3
-highlight: yes
-comingsoon: yes
+highlight: true
+comingsoon: true
 layout: project
 ---
