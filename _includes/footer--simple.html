@@ -1,0 +1,41 @@
+<footer class="Footer">
+
+  <div class="Grid Grid--withGutter u-padding-top-xl">
+
+    <div class="Grid-cell u-layout-centerLeft u-padding-r-bottom">
+      <img class="Footer-logo u-xs-padding-right-none" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}"
+        alt="" style="height: 80px">
+      <p class="Footer-siteName">
+        {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
+      </p>
+    </div>
+
+    <div class="Grid-cell u-layout-centerRight u-padding-r-bottom u-flexAlignSelfEnd">
+      <h3 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
+        u-hidden u-margin-r-right u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
+      <ul class="Footer-socialIcons">
+        {% for social in site.data.social %}
+          <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
+            <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  <ul class="Footer-links u-cf u-color-80">
+    {% for link in site.data.footer_links %}
+      {% assign link_name = link[1].title %}
+      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+
+</footer>
+
+{% include scripts.html %}
+
+{% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
+
+</body>
+
+</html>

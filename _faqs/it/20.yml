@@ -1,0 +1,15 @@
+---
+title: Cosa si intenende per maintainer di un progetto?
+text: >
+  All'interno di questo sito, per *maintainer* intendiamo le persone che sono incaricate da una parte di produrre tutto il
+  codice, la documentazione e gli esempi a supporto dei progetti, dall'altra di interfacciarsi con la comunità di sviluppatori
+  fornendo loro supporto nell'adozione tecnologica. Nota che i maintainer su developers.italia.it possono essere volontari
+  o esterni alla tecnologia a supporto, e possono non essere in grado di influenzarne l'evoluzione a livello di programma.
+  Facendo un esempio, PagoPA è un progetto di AgID (una piattaforma di pagamento unica della Pubblica Amministrazione). È
+  AgID dunque che ne gestisce l'evoluzione e il programma di lungo termine, implementa la parte core a livello sofwate (il
+  vero nodo di pagamento) e prende decisione strategiche sulla sua adozione. I maintainer che troverai all'interno di
+  developers.italia.it sono invece incaricati di fornire supporto per l'adozione di PagoPA, e quindi di produrre e mantanere
+  i plugin per i principali CMS, le librerei di intefacciamento in Python o Ruby, e la documentazione delle API da usare.
+order: 3
+lang: it
+---

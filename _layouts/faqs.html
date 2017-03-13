@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+{% comment %}
+
+  {% include breadcrumbs.html %}
+  {% include share.html %}
+
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
+
+{% endcomment %}
+
+<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+    {{ page.title }}</h1>
+</div>
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
+
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="Grid">
+
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      {% assign faqs = site.faqs | where: 'lang', active_lang %}
+      {% for faq in faqs %}
+      <div class="Accordion Accordion--default fr-accordion js-fr-accordion" id="accordion-{{ forloop.index }}">
+        <h2 class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.index }}">
+          <span class="Accordion-link">{{ faq.title }}</span>
+        </h2>
+        <div id="accordion-panel-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
+          <p class="u-text-p u-padding-r-bottom u-textSecondary">{{ faq.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
+
+    {% include sideblock.html title=t.home_projects_expand content=pills %}
+
+  </div>
+</div>
+
+{{ content }}

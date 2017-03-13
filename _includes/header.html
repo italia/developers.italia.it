@@ -1,0 +1,77 @@
+<header class="Header u-hiddenPrint">
+
+  <div class="Header-banner u-background-50">
+    <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
+      <a href=""><span>{{ site.owner }} <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+        - {{ site.owner_desc }}</span></span></a> {% include lang_switch.html %}
+
+    </div>
+  </div>
+
+  <div class="Header-navbar u-background-50">
+    <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
+      <div class="Header-logo Grid-cell" aria-hidden="true">
+        <a href="{{ homepage_link | relative_url }}" tabindex="-1">
+          <img src="{{ site.logo | default: 'http://designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title Grid-cell">
+        <h1 class="Header-titleLink">
+          <a href="{{ homepage_link | relative_url }}">{{ t.site_title | default: site.title | escape }}
+            {% if site.pill %}
+              <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
+              <span class="u-color-20 u-text-xxs
+              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
+            {% endif %}
+            <br>
+            <small>{{ t.site_subtitle | default: site.subtitle | escape }}</small>
+          </a>
+        </h1>
+      </div>
+
+      {% if include.hasSearch %}
+      <div class="Header-searchTrigger Grid-cell">
+        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search u-background-50" title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
+        </button>
+        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden u-background-50" title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
+        </button>
+      </div>
+      {% endif %}
+
+      <div class="Header-utils Grid-cell">
+        <div class="Header-social Headroom-hideme">
+          <p>{{ t.follow_us | capitalize }}</p>
+          <ul class="Header-socialIcons">
+            {% for social in site.data.social %}
+            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
+                <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% if include.hasSearch %}
+        <div class="Header-search" id="header-search">
+          {% include search_form.html %}
+        </div>
+        {% endif %}
+
+        <div class="Header-toggle Grid-cell">
+          <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
+            <span class="Hamburger-toggle" role="presentation"></span>
+            <span class="Header-toggleText" role="presentation">Menu</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+
+  <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
+    <nav class="Megamenu Megamenu--default js-megamenu u-background-50" data-rel=".Offcanvas .Treeview"></nav>
+  </div>
+
+
+</header>

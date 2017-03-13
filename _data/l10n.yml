@@ -1,0 +1,117 @@
+it:
+  code: ita
+  name: italiano
+  t:
+    active_lang: lingua attiva
+    cookiebar_accept: Accetto
+    cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
+    cookiebar_privacy_policy: Privacy policy
+    follow_us: seguici su
+    footer_address: Indirizzo
+    footer_address_sub: ''
+    footer_contacts: Contatti
+    footer_contacts_sub: ''
+    footer_link_privacy_policy: privacy policy
+    footer_link_toc: note legali
+    footer_title: ' '
+    lang_on_site: sito in italiano
+    navigation_menu_label: Menu di navigazione
+    navigation_menu_esc: esci dalla navigazione
+    scrolltop_label: torna all'inizio dei contenuti
+    search_form_label: cerca
+    search_form_off: disattiva il form di ricerca
+    search_form_on: attiva il form di ricerca
+    search_form_start: avvia la ricerca
+    site_subtitle: La comunità italiana degli sviluppatori di servizi pubblici
+    site_title: /developers
+    share_msg: condividi
+    skiplink_goto_content: vai ai contenuti
+    skiplink_goto_navigation: vai alla navigazione del sito
+    toggle_menu_label: accedi al menu
+
+    home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
+    home_newsletter_title: Iscriviti alla Newsletter
+    home_newsletter_placeholder: indirizzo email
+    home_newsletter_button: Iscriviti
+    home_newsletter_footer: Rimani in contatto per essere informato via via che aggiungeremo nuovi progetti. Non ti assilleremo con troppe email, parola di collega sviluppatore.
+    home_projects_title: Progetti in evidenza
+    home_projects_expand: per saperne di più
+    home_projects_others: Tutti i progetti
+    home_projects_count: progetti in totale
+    home_news_title: Novità
+    home_news_expand: per saperne di più
+    home_tools_title: Strumenti
+    home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
+    home_tools_src_title: Codice sorgente
+    home_tools_src_subtitle: Sul nostro GitHub Italia, sviluppiamo con un processo aperto gli SDK e gli esempi di supporto dei progetti, e gestiamo anche le segnalazioni dei problemi.
+    home_tools_for_title: Forum
+    home_tools_for_subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
+    home_tools_doc_title: Documentazione
+    home_tools_doc_subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
+    home_tools_api_title: Sandbox per API
+    home_tools_api_subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
+
+    menu_item_projects: Progetti
+    menu_item_credits: Chi siamo
+    menu_item_tools: Strumenti
+    menu_item_faq: FAQ
+    menu_item_contacts: Contatti
+
+en:
+  code: eng
+  name: english
+  t:
+    active_lang: current language
+    cookiebar_accept: Accept
+    cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
+    cookiebar_privacy_policy: Privacy policy
+    follow_us: follow us
+    footer_address: Address
+    footer_address_sub: ''
+    footer_contacts: Contacts
+    footer_contacts_sub: ''
+    footer_link_privacy_policy: privacy policy
+    footer_link_toc: terms and conditions
+    footer_title: ' '
+    lang_on_site: website in english
+    navigation_menu_label: Navigation menu
+    navigation_menu_esc: exit navigation
+    scrolltop_label: back to contents
+    search_form_label: Search
+    search_form_off: exit search form
+    search_form_on: enter search form
+    search_form_start: start searching
+    site_subtitle: The Italian community of developers of public services
+    site_title: /developers
+    share_msg: share
+    skiplinks_goto_content: go to content
+    skiplinks_goto_navigation: go to site navigation
+    toggle_menu_label: go to navigation
+
+    home_hero: A community of developers that design and make Italian digital public services
+    home_newsletter_title: Subscribe to our Newlsetter
+    home_newsletter_placeholder: email address
+    home_newsletter_button: Subscribe
+    home_newsletter_footer: Stay in touch to be informed as we add more projects. We're not going to overflow you with too many e_mails; it's a dev_to_dev promise.
+    home_projects_title: Highlighted projects
+    home_projects_expand: read more
+    home_projects_others: All the projects
+    home_projects_count: total projects
+    home_news_title: News
+    home_news_expand: read more
+    home_tools_title: Tools
+    home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
+    home_tools_src_title: Source code
+    home_tools_src_subtitle: On our GitHub Italia, we develop SDK and examples to support our projects, with an open development process, and we also track existing issues.
+    home_tools_for_title: Forum
+    home_tools_for_subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
+    home_tools_doc_title: Docs
+    home_tools_doc_subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
+    home_tools_api_title: API Sandbox
+    home_tools_api_subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.
+
+    menu_item_projects: Projects
+    menu_item_credits: Credits
+    menu_item_tools: Tools
+    menu_item_faq: FAQ
+    menu_item_contacts: Contacts

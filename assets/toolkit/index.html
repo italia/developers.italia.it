@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie89 ie8" lang="it"><![endif]-->
+<!--[if IE 9]><html class="no-js ie89 ie9" lang="it"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="it">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="preload" href="{{ '/build/IWT.min.js' | path }}" as="script"> -->
+  <!--
+    In alternativa a WebFontLoader è possibile caricare il font direttamente da Google
+      <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,' rel='stylesheet' type='text/css' />
+    o dal repository locale (src/fonts)
+  -->
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: {
+        families: ['Titillium+Web:300,400,600,700,400italic:latin']
+      }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <!-- include html5shim per Explorer 8 -->
+  <script src="{{ '/build/vendor/modernizr.js' | path }}"></script>
+
+  <link media="all" rel="stylesheet" href="{{ '/build/build.css' | path }}">
+
+  <script src="{{ '/build/vendor/jquery.min.js' | path }}"></script>
+
+  <title>Preview Layout</title>
+</head>
+
+<body class="t-Pac">
+
+  {{ yield|safe }}
+
+  <!--[if IE 8]>
+  <script src="{{ '/build/vendor/respond.min.js' | path }}"></script>
+  <script src="{{ '/build/vendor/rem.min.js' | path }}"></script>
+  <script src="{{ '/build/vendor/selectivizr.js' | path }}"></script>
+  <script src="{{ '/build/vendor/slice.js' | path }}"></script>
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+  <script src="{{ '/build/vendor/polyfill.min.js' | path }}"></script>
+  <![endif]-->
+
+  <script src="{{ '/build/IWT.min.js' | path }}"></script>
+
+</body>
+</html>

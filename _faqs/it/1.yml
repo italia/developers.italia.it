@@ -1,0 +1,14 @@
+---
+title: Qual è l'obiettivo di questo sito?
+text: >
+  Aiutare tutti gli sviluppatori ad integrare ed utilizzare i principali progetti tecnologici centrali italiani. Fino
+  ad oggi, con rare eccezioni, la pubblica amministrazione centrale scriveva solo regole tecniche, in un linguaggio da
+  avvocati e non tecnico, lasciando chi deve implementare queste regole completamente abbandonati a se stessi. Pensate
+  per esempio a quanto è difficile ancora oggi trovare del semplice codice sorgente per produrre una fattura elettronica.
+  All'interno, troverete quindi un numero sempre crescente di progetti e API (come SPID, PagoPA, Fattura Elettronica, ecc.)
+  per i quali ci impegniamo a fare un lavoro di semplificazione per l'adozione: riscriveremo la documentazione in linguaggio
+  tecnico, forniremo ambienti di validazione, esempi, SDK già pronti per i principali linguaggi e framework. Forniremo loro
+  supporto diretto via forum e email, invece che tramite call-center telefonico.
+order: 1
+lang: it
+---

@@ -1,0 +1,28 @@
+{% assign items = include.items  %}
+
+{% if include._internal %}
+  <ul>
+{% else %}
+  <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif%}">
+{% endif %}
+
+  {% assign navurl = page.url | remove: 'index.html' %}
+  {% for item in items %}
+  	<li>
+      
+      {% if item.url == "#" %}
+        {% assign _url = item.url %}
+      {% else %}
+        {% assign _url = item.url | relative_url %}
+      {% endif %}
+
+  		<a href="{{ _url }}" {% if item.url == navurl %}class="is-current u-textWeight-700"{% endif %}>
+				{{ t[item.title] | default: item.title }}
+  		</a>
+      {% if item.subitems %}
+    		{% include linklist.html items=item.subitems _internal=true %}
+    	{% endif %}
+  	</li>
+  {% endfor %}
+
+</ul>

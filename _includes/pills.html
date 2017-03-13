@@ -1,0 +1,10 @@
+<ul>
+  {% for item in include.items %}
+  <li class="u-inlineBlock">
+    <a href="{{ item.link }}" class="Pill Pill--xs u-background-50 u-color-white u-textClean u-textWeight-600">
+      {{ item.title }}
+      <span class="Dot u-background-white u-margin-left-s"></span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+address:
+  value: Via Roma 1, Roma, 00100
+phone:
+  name: phone
+  value: +00 000 000 000
+email:
+  name: email
+  value: my@email.com
+pec:
+  name: pec
+  value: my@pec.com

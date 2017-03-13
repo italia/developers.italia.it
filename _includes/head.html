@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="{{ active_lang }}" class="no-js"><![endif]-->
+<!--[if IE 9]><html lang="{{ active_lang }}" class="no-js"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="{{ active_lang }}" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title>
+
+  {% seo %}
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
+
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: {
+        families: ['Titillium+Web:400,600,700,400italic:latin']
+      }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <!-- include html5shim per Explorer 8 -->
+  <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
+
+  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/vendor.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <script src="{{ '/assets/toolkit/vendor/jquery.min.js' | relative_url }}"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}" sizes="16x16">
+  <link rel="manifest" href="{{ '/assets/icons/manifest.json' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="{{ site.theme_color }}">
+  <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+  <meta name="application-name" content="{{ site.title }}">
+  <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+
+</head>
+<body class="{{ site.css_theme }}">

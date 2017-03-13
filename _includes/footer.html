@@ -1,0 +1,69 @@
+<footer class="Footer u-padding-all-s">
+  <div class="u-layout-medium u-layoutCenter">
+
+  <div class="u-cf">
+    <img class="Footer-logo" src="{{ site.logo }}" alt="">
+    <p class="Footer-siteName">
+      {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
+    </p>
+  </div>
+
+  <div class="Grid Grid--withGutter">
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">{{ t.footer_address | capitalize }}</h2>
+      <div class="Footer-subBlock">
+        <h3 class="Footer-subTitle">{{ t.footer_address_sub | capitalize }}</h3>
+        <address>
+          <span class="u-text-p">
+            {{ site.data.contacts.address.value | capitalize }}
+          </span>
+        </address>
+      </div>
+    </div>
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">{{ t.footer_contacts | capitalize }}</h2>
+      <div class="Footer-subBlock">
+        <h3 class="Footer-subTitle">{{ t.footer_contacts_sub | capitalize }}</h3>
+          {% for contact in site.data.contacts. %}
+            {% unless contact[0] == 'address' %}
+            <p class="u-color-grey-20 u-padding-bottom-xs">
+              {{ contact[1].name | capitalize }}: {{ contact[1].value }}
+            </p>
+            {% endunless %}
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+      <h2 class="Footer-blockTitle">{{ t.follow_us | capitalize }}</h2>
+      <div class="Footer-subBlock">
+        <ul class="Footer-socialIcons">
+          {% for social in site.data.social %}
+            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
+              <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <ul class="Footer-links u-cf">
+    {% for link in site.data.footer_links %}
+      {% assign link_name = link[1].title %}
+      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+    {% endfor %}
+  </ul>
+
+  </div>
+</footer>
+
+{% include scripts.html %}
+
+{% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{% include setlang.html %}
+
+{% include head.html %}
+{% include skiplinks.html %}
+
+{% include cookiebar.html %}
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    {% include header.html hasSearch=true %}
+    {% include offcanvas.html menu_items=site.data.menu_items %}
+
+    {{ content }}
+  </div>
+</div>
+
+{% include scrolltop.html %}
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    {% include footer--simple.html %}
+  </div>
+</div>

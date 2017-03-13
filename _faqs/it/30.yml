@@ -1,0 +1,14 @@
+---
+title: Come scegliete i maintainer dei progetti?
+text: >
+  Ci affidiamo a gare d'appalto (secondo il normale processo di procurement pubblico) per identificare persone con
+  con le giuste competenze tecniche, che possano svolgere questo lavoro. Cerchiamo di privilegiare importi di gara piccoli
+  (tra i €50K e i €200K), con un processo semplificato che possa essere alla portata anche di piccole aziende e startup che non
+  hanno esperienza pregressa di lavoro con la Pubblica Amministrazione, e non abbia quindi team di esperti di progettazione di
+  gare. Abbiamo scelto di fare gare secondo la formula della miglior rapporto qualità / prezzo, invece che al ribasso, perché
+  pensiamo che il costo orario non sia l'unico (né il principale) parametro per valutare la qualità di uno sviluppatore.
+  Cerchiamo sviluppatori con vasta esperienza nel mondo del software open source, con esperienza in maintenance di progetti,
+  e un background in più linguaggi di programmazione e framework.
+order: 4
+lang: it
+---

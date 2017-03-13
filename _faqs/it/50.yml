@@ -1,0 +1,9 @@
+---
+title: Posso contribuire ad un progetto?
+text: >
+  Certamente! Tutto il codice open-source, la documentazione e gli esempi sono rilasciati sotto una licenza Open Source
+  (normalmente la [licenza MIT](https://it.wikipedia.org/wiki/Licenza_MIT), ma potrebbero esserci delle variazioni in alcuni
+  casi). Per contribuire è sufficiente aprirci una pull request su GitHub.
+order: 6
+lang: it
+---
