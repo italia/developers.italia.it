@@ -1,11 +1,18 @@
 <div class="u-nbfc u-flex u-color-grey-30 u-xs-padding-all-none
-  u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">
+  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %} u-background-white u-sizeFill">
   {% if include.hasImage != false %}
   <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
   {% endif %}
-  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill u-padding-r-all">
+  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %}">
 
-    <div class="u-sizeFull u-padding-r-all u-xs-padding-all-none">
+    {% if include.date %}
+    <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished"
+      class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-50">
+        {{ include.date | date: "%b %-d, %Y" }}
+      </time>
+    {% endif %}
+
+    <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %}">
       <h3 class="u-padding-bottom-xs">
         <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
           {{ include.title }}
@@ -23,7 +30,8 @@
 
     </div>
 
-    <div class="Grid u-sizeFull u-padding-r-top u-margin-r-left u-margin-r-right u-flexAlignSelfEnd">
+    <div class="Grid u-sizeFull u-padding-r-top u-flexAlignSelfEnd
+      {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
 
         {% if include.hasMore != false %}
         <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">

@@ -66,8 +66,6 @@ lang: it
                   subtitle=project.subtitle
                   text=project.content
                   socials=project.socials
-                  image='//placehold.it/400x220'
-                  alt=''
                   hasImage=false
                   hasMore=false
                   hasSocial=false
@@ -79,7 +77,14 @@ lang: it
             <div class="u-nbfc u-color-white u-padding-r-all u-xs-padding-all-none u-sizeFill u-flex u-flexAlignItemsCenter
               u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
 
-              <h4 class="u-padding-r-all u-color-white u-text-r-l u-textWeight-600">{{ t.home_projects_others }}</h4>
+              <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
+                <a href="" class="u-color-white u-textClean">
+                  <span class="u-text-r-l">{{ t.home_projects_others }}</span>
+                <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
+                  u-textWeight-400">{{ site.projects | size }} {{ t.home_projects_count }}</span>
+                </a>
+              </h4>
+              <span class="Icon Icon-chevron-right u-flexJustifyRight u-textWeight-400 u-text-r-m"></span>
 
             </div>
           </div>
@@ -93,25 +98,26 @@ lang: it
 <hr class="Separator Separator--down u-background-white" />
 
 <section class="u-nbfc u-background-white u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
+
   <div class="u-layout-wide u-layoutCenter">
     <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_news_title }}</h2>
 
-      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+      {% assign posts = site.posts | where: 'lang', active_lang %}
 
-      <div class="Grid Grid--withGutter">
+      <div class="Grid Grid--withGutterL">
 
-      {% for project in projects %}
+      {% for post in site.posts %}
+
+        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
 
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
             {% include card.html
-              title=project.title
+              date=post.date
+              title=post.title
               link='//example.com'
-              subtitle=project.subtitle
-              text=project.content
-              socials=project.socials
-              image='//placehold.it/400x220'
-              alt=''
+              text=excerpt
               hasImage=false
+              flat=true
               %}
           </div>
           {% endfor %}
@@ -124,22 +130,21 @@ lang: it
 <hr class="Separator-room u-background-white" />
 <hr class="Separator Separator--up u-background-50" />
 
-<section class="u-background-50 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl">
+<section class="u-background-50 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
   <div class="u-layout-wide u-layoutCenter u-textCenter u-padding-bottom-xxl">
     <h2 class="u-text-r-l u-textWeight-300 u-color-white u-padding-r-bottom">{{ t.home_tools_title }}</h2>
-    <p class="u-text-r-xs u-color-5">{{ t.home_tools_subtitle }}</p>
+    <p class="u-text-r-xs u-color-5 u-layout-prose u-textCenter u-layoutCenter">{{ t.home_tools_subtitle }}</p>
     <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
 
-      {% for i in [1, 2, 3] %}
-      <span class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
-        <span class="Icon Icon-twitter u-text-r-xl"></span>
-      </span>
-      <span class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
-        <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ __WORDS__[1] | capitalize }}</h3>
-        <p class="u-textLeft">{{ __TEXTS__[1] }}</p>
-      </span>
+      {% for tool in site.data.tools[active_lang] %}
+        <span class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
+          <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
+        </span>
+        <span class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
+          <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
+          <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
+        </span>
       {% endfor %}
-
 
     </div>
   </div>
