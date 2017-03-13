@@ -7,7 +7,16 @@ description: >
   secondo lo standard SAML su siti pubblici ma anche privati.
 lang: it
 order: 1
-highlight: yes
-comingsoon: yes
+highlight: true
+comingsoon: true
 layout: project
+socials:
+  -
+    name: twitter
+    icon: twitter
+    link: //twitter.com
+  -
+    name: facebook
+    icon: facebook
+    link: //facebook.com
 ---

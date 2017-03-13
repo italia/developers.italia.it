@@ -1,0 +1,33 @@
+it:
+  -
+    title: Codice sorgente
+    subtitle: Sul nostro GitHub Italia, sviluppiamo con un processo aperto gli SDK e gli esempi di supporto dei progetti, e gestiamo anche le segnalazioni dei problemi.
+    icon: list
+  -
+    title: Forum
+    subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
+    icon: comment
+  -
+    title: Documentazione
+    subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
+  -
+    title: Sandbox per API
+    subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
+    icon: settings
+
+en:
+  -
+    title: Source code
+    subtitle: On our GitHub Italia, we develop SDK and examples to support our projects, with an open development process, and we also track existing issues.
+    icon: list
+  -
+    title: Forum
+    subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
+    icon: comment
+  -
+    title: Docs
+    subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
+  -
+    title: API Sandbox
+    subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.
+    icon: settings

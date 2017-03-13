@@ -1,0 +1,46 @@
+---
+layout: default
+lang: it
+---
+
+{% include setlang.html %}
+
+<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+             {{ page.title | capitalize }}</h1>
+  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
+    {{ t.home_hero }}
+  </p>
+</div>
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
+
+<hr class="Separator Separator--down u-background-grey-15">
+
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-cf">
+
+    <div class="js-Masonry-container" style="margin-top: -10em" data-columns>
+
+      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+
+      {% for project in projects %}
+
+      <div class="Masonry-item js-Masonry-item">
+        {% include card.html
+          title=project.title
+          link='//example.com'
+          subtitle=project.subtitle
+          text=project.content
+          socials=project.socials
+          image='//placehold.it/400x220'
+          alt=''
+          %}
+      </div>
+
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

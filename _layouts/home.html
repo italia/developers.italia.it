@@ -6,41 +6,146 @@ lang: it
 {% include setlang.html %}
 
 <div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-             {{ page.title | capitalize }}</h1>
-  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
-    {{ t.home_hero }}
-  </p>
+  <h2 class="u-layoutCenter u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l"
+    style="max-width: 20em">
+    {{ t.home_hero }}</h2>
+</div>
+
+<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter">
+  <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+    {{ t.home_newsletter_title }}</h3>
+  <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12 u-layoutCenter">
+    <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xxl">
+      <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
+        </button>
+      <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus "
+        required id="newsletter" />
+      <label class="Form-label u-color-grey-50 u-padding-left-xxl" for="cerca"><span class="u-hidden u-md-inline u-lg-inline">
+          {{t.home_newsletter_placeholder }}</span></label>
+      <button class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
+       {{ t.home_newsletter_button }}
+      </button>
+    </div>
+  </form>
+  <p class="u-textCenter u-layoutCenter u-padding-r-all u-text-r-xs u-color-10 u-layout-prose">{{ t.home_newsletter_footer }}</p>
 </div>
 
 <hr class="Separator-room u-background-50" />
 <hr class="Separator Separator--up u-background-grey-15" />
 
-<hr class="Separator Separator--down u-background-grey-15">
+<section class="u-nbfc u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
+  <div class="u-layout-wide u-layoutCenter">
+    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-cf">
+      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort 'order' | reverse %}
 
-    <div class="js-Masonry-container" style="margin-top: -10em" data-columns>
+      <div class="Grid Grid--withGutter">
 
-      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+      {% for project in projects limit: 3 %}
 
-      {% for project in projects %}
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+            {% include card.html
+              title=project.title
+              link='//example.com'
+              subtitle=project.subtitle
+              text=project.content
+              socials=project.socials
+              image='//placehold.it/400x220'
+              alt=''
+              hasImage=false
+              %}
+          </div>
+          {% endfor %}
 
-      <div class="Masonry-item js-Masonry-item">
-        {% include card.html
-          title=project.title
-          link='//example.com'
-          subtitle=project.subtitle
-          text=project.content
-          socials=project.socials
-          image='//placehold.it/400x220'
-          alt=''
-          %}
+          {% for project in projects limit: 2 offset:3 %}
+
+              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+                {% include card.html
+                  title=project.title
+                  link='//example.com'
+                  subtitle=project.subtitle
+                  text=project.content
+                  socials=project.socials
+                  hasImage=false
+                  hasMore=false
+                  hasSocial=false
+                  %}
+              </div>
+              {% endfor %}
+
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+            <div class="u-nbfc u-color-white u-padding-r-all u-xs-padding-all-none u-sizeFill u-flex u-flexAlignItemsCenter
+              u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
+
+              <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
+                <a href="" class="u-color-white u-textClean">
+                  <span class="u-text-r-l">{{ t.home_projects_others }}</span>
+                <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
+                  u-textWeight-400">{{ site.projects | size }} {{ t.home_projects_count }}</span>
+                </a>
+              </h4>
+              <span class="Icon Icon-chevron-right u-flexJustifyRight u-textWeight-400 u-text-r-m"></span>
+
+            </div>
+          </div>
+
       </div>
 
-      {% endfor %}
     </div>
+</section>
 
+<hr class="Separator-room u-background-grey-15" />
+<hr class="Separator Separator--down u-background-white" />
+
+<section class="u-nbfc u-background-white u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
+
+  <div class="u-layout-wide u-layoutCenter">
+    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_news_title }}</h2>
+
+      {% assign posts = site.posts | where: 'lang', active_lang %}
+
+      <div class="Grid Grid--withGutterL">
+
+      {% for post in site.posts %}
+
+        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
+
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+            {% include card.html
+              date=post.date
+              title=post.title
+              link='//example.com'
+              text=excerpt
+              hasImage=false
+              flat=true
+              %}
+          </div>
+          {% endfor %}
+
+      </div>
+
+    </div>
+</section>
+
+<hr class="Separator-room u-background-white" />
+<hr class="Separator Separator--up u-background-50" />
+
+<section class="u-background-50 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="u-layout-wide u-layoutCenter u-textCenter u-padding-bottom-xxl">
+    <h2 class="u-text-r-l u-textWeight-300 u-color-white u-padding-r-bottom">{{ t.home_tools_title }}</h2>
+    <p class="u-text-r-xs u-color-5 u-layout-prose u-textCenter u-layoutCenter">{{ t.home_tools_subtitle }}</p>
+    <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
+
+      {% for tool in site.data.tools[active_lang] %}
+        <span class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
+          <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
+        </span>
+        <span class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
+          <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
+          <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
+        </span>
+      {% endfor %}
+
+    </div>
   </div>
-</div>
+</section>

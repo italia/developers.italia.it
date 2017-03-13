@@ -40,16 +40,9 @@ it:
     home_projects_count: progetti in totale
     home_news_title: Novità
     home_news_expand: per saperne di più
+
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
-    home_tools_src_title: Codice sorgente
-    home_tools_src_subtitle: Sul nostro GitHub Italia, sviluppiamo con un processo aperto gli SDK e gli esempi di supporto dei progetti, e gestiamo anche le segnalazioni dei problemi.
-    home_tools_for_title: Forum
-    home_tools_for_subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
-    home_tools_doc_title: Documentazione
-    home_tools_doc_subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
-    home_tools_api_title: Sandbox per API
-    home_tools_api_subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
 
     menu_item_projects: Progetti
     menu_item_credits: Chi siamo
@@ -99,16 +92,9 @@ en:
     home_projects_count: total projects
     home_news_title: News
     home_news_expand: read more
+
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
-    home_tools_src_title: Source code
-    home_tools_src_subtitle: On our GitHub Italia, we develop SDK and examples to support our projects, with an open development process, and we also track existing issues.
-    home_tools_for_title: Forum
-    home_tools_for_subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
-    home_tools_doc_title: Docs
-    home_tools_doc_subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
-    home_tools_api_title: API Sandbox
-    home_tools_api_subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.
 
     menu_item_projects: Projects
     menu_item_credits: Credits
