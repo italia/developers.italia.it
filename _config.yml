@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-email: your-email@domain.com
-description: My site description (for SEO)
+email: teamdigitale@governo.it
+description: .it Developers - La comunità italiana degli sviluppatori di servizi pubblici
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://developers.italia.it"
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -41,7 +41,7 @@ css_theme: t-Pac
 owner: AgID
 owner_desc: Agenzia per l'Italia Digitale
 owner_link: http://www.agid.gov.it
-logo: http://designer.italia.it/images/loghi/logo-it.svg
+logo: /assets/icons/logo-it.svg
 owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
 pill: beta
 
