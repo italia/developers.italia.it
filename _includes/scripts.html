@@ -10,3 +10,11 @@
  <![endif]-->
 
  <script src="{{ '/assets/toolkit/IWT.min.js' | relative_url }}"></script>
+
+<script>
+ $(document).ready(function() {
+     $(document).on("mousedown", function(e) {
+       setTimeout(function () { $(':focus').css("outline", "none") }, 100)
+     });
+ });
+</script>

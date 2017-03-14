@@ -34,7 +34,7 @@ layout: default
           <span class="Accordion-link">{{ faq.title }}</span>
         </h2>
         <div id="accordion-panel-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
-          <p class="u-text-p u-padding-r-bottom u-textSecondary">{{ faq.text }}</p>
+          <p class="Prose u-text-p u-padding-r-bottom u-textSecondary">{{ faq.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
       </div>
       {% endfor %}
