@@ -46,7 +46,7 @@ lang: it
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
               title=project.title
-              link='//example.com'
+              link=project.url
               subtitle=project.subtitle
               text=project.content
               socials=project.socials
@@ -62,7 +62,7 @@ lang: it
               <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
                 {% include card.html
                   title=project.title
-                  link='//example.com'
+                  link=project.url
                   subtitle=project.subtitle
                   text=project.content
                   socials=project.socials
@@ -106,7 +106,7 @@ lang: it
 
       <div class="Grid Grid--withGutterL">
 
-      {% for post in site.posts %}
+      {% for post in posts limit: 3 %}
 
         {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
 
@@ -114,7 +114,7 @@ lang: it
             {% include card.html
               date=post.date
               title=post.title
-              link='//example.com'
+              link=post.url
               text=excerpt
               hasImage=false
               flat=true
