@@ -29,6 +29,10 @@ it:
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
 
+    by: di
+    on_: "su"
+    news_categories: argomenti
+
     home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
@@ -80,6 +84,10 @@ en:
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
+
+    by: by
+    on_: "on"
+    news_categories: tags
 
     home_hero: A community of developers that design and make Italian digital public services
     home_newsletter_title: Subscribe to our Newlsetter

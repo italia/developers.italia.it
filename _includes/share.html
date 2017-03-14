@@ -1,14 +1,15 @@
-<div class="Share">
-  <div class="Share-reveal js-Share">
-    <a href="#share-options" class="Share-revealText" data-menu-trigger="share-options">
-      <span class="Share-revealIcon Icon Icon-share"></span> {{ t.share_msg | capitalize }}
-    </a>
-  </div>
-  <ul id="share-options" class="Dropdown-menu" data-menu>
-    {% for social in site.data.social %}
-    <li><a href="{{ social[1].link }}" title=""><span class="Icon Icon-{{ social[0] }}"></span>
-        <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
-      </a></li>
-    {% endfor %}
-  </ul>
-</div>
+<p class="u-margin-r-bottom u-textWeight-300">{{ t.share_msg }} {{ t.on_ }}</p>
+<ul class="u-textCenter u-layoutCenter">
+  {% for social in site.data.social %}
+    {% if social[1].sharelink %}
+      {% assign shareurl = page.url | absolute_url | escape %}
+      <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
+        <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" title=""
+          class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
+          ><span class="Icon Icon-{{ social[0] }}"></span>
+          <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
+        </a>
+      </li>
+      {% endif %}
+  {% endfor %}
+</ul>

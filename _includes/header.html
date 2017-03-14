@@ -11,14 +11,14 @@
   <div class="Header-navbar u-background-50">
     <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
       <div class="Header-logo Grid-cell" aria-hidden="true">
-        <a href="{{ homepage_link | relative_url }}" tabindex="-1">
+        <a href="{{ '/' | relative_url }}" tabindex="-1">
           <img src="{{ site.logo | default: 'http://designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
         </a>
       </div>
 
       <div class="Header-title Grid-cell">
         <h1 class="Header-titleLink">
-          <a href="{{ homepage_link | relative_url }}">{{ t.site_title | default: site.title | escape }}
+          <a href="{{ '/' | relative_url }}">{{ t.site_title | default: site.title | escape }}
             {% if site.pill %}
               <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
               <span class="u-color-20 u-text-xxs

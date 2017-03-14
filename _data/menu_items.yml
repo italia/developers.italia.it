@@ -2,14 +2,18 @@ it:
   - title: Progetti
     url: '#'
     subitems:
-    - title: Progetti
+    - title: Progetti in evidenza
       url: /
       subitems:
-      - title: Link 2.1
+      - title: ANPR
         url: /
-      - title: Link 2.2
+      - title: Data Analytics Framework
         url: /
-      - title: Link 2.3
+      - title: pagoPA
+        url: /
+      - title: SPID
+        url: /
+      - title: Toolkit Design Web
         url: /
   - title: Strumenti
     url: '#'
@@ -34,14 +38,16 @@ en:
   - title: Projects
     url: '#'
     subitems:
-    - title: Projects
-      url: en
       subitems:
-      - title: Link 2.1
+      - title: ANPR
         url: /
-      - title: Link 2.2
+      - title: Data Analytics Framework
         url: /
-      - title: Link 2.3
+      - title: pagoPA
+        url: /
+      - title: SPID
+        url: /
+      - title: Toolkit Design Web
         url: /
   - title: Tools
     url: '#'
