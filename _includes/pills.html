@@ -2,7 +2,7 @@
   {% for item in include.items %}
   <li class="u-inlineBlock u-padding-r-right">
     <a href="{{ item.link }}" class="Pill {% if include.small != true %}Pill--xs{% else %}Pill--xxs{% endif %}
-      u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">
+      u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs u-margin-r-bottom">
         {{ item.title | default: item }}
         <span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span>
     </a>

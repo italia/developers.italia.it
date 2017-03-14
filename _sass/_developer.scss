@@ -1,0 +1,27 @@
+.u-pullUp {
+  margin-top: -120px;
+}
+
+.u-pullUp-10 {
+  margin-top: -10em;
+}
+
+.u-minHeight-250 {
+  min-height: 250px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .u-minHeight-250 {
+    min-height: 0;
+  }
+
+  .u-pullUp-10, .u-pullUp {
+    margin-top: 0;
+  }
+
+  .Separator-room, .Separator {
+    display: none !important;
+  }
+
+}

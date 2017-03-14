@@ -21,7 +21,7 @@ lang: it
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
   <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-cf">
 
-    <div class="js-Masonry-container" style="margin-top: -10em" data-columns>
+    <div class="js-Masonry-container u-pullUp-10" data-columns>
 
       {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
 
