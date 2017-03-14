@@ -40,6 +40,7 @@ theme_color: "#0066cc"
 css_theme: t-Pac
 owner: AgID
 owner_desc: Agenzia per l'Italia Digitale
+owner_link: http://www.agid.gov.it
 logo: http://designer.italia.it/images/loghi/logo-it.svg
 owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
 pill: beta
