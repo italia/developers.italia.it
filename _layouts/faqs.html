@@ -27,17 +27,18 @@ layout: default
 
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       {% assign faqs = site.faqs | where: 'lang', active_lang %}
-      {% for faq in faqs %}
-      <div class="Accordion Accordion--default fr-accordion js-fr-accordion" id="accordion-{{ forloop.index }}">
-        <h2 class="Accordion-header js-fr-accordion__header fr-accordion__header u-border-bottom-xxs"
+      <div class="Accordion Accordion--default fr-accordion js-fr-accordion" id="accordion-{{ forloop.index }}
+        u-color-grey-30 u-border-bottom-xxs">
+        {% for faq in faqs %}
+        <h2 class="Accordion-header js-fr-accordion__header fr-accordion__header"
           id="accordion-header-{{ forloop.index }}">
           <span class="Accordion-link">{{ faq.title }}</span>
         </h2>
         <div id="accordion-panel-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
           <p class="Prose u-text-p u-padding-r-bottom u-textSecondary">{{ faq.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
     {% capture pills %}{% include pills.html items=page.pills small=true %}{% endcapture %}

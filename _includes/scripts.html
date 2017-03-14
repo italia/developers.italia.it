@@ -12,9 +12,13 @@
  <script src="{{ '/assets/toolkit/IWT.min.js' | relative_url }}"></script>
 
 <script>
- $(document).ready(function() {
-     $(document).on("mousedown", function(e) {
-       setTimeout(function () { $(':focus').css("outline", "none") }, 100)
-     });
- });
+  $(document).on('keydown', function(e) {
+    if (e.keyCode === 9) {
+      $('body').removeClass('hide-focus');
+    }
+  })
+
+  $(document).on('click', function(e) {
+    $('body').addClass('hide-focus');
+  })
 </script>
