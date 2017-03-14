@@ -1,6 +1,6 @@
 <div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
   {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
-  {{ include.backgroundClass | default: 'u-background-white' }} u-sizeFill">
+  {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {% if include.hasImage != false %}
   <div class="u-sizeFull">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
@@ -23,7 +23,7 @@
       </h3>
 
       {% if include.author %}
-        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-padding-r-bottom">
           <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ include.author | capitalize }}</span>
         </div>
       {% endif %}
@@ -45,7 +45,7 @@
 
         {% if include.hasMore != false %}
         <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
-          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-400 u-textClean">{{ t.home_projects_expand
+          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
           }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
           </a>
         </p>
@@ -64,6 +64,13 @@
         {% endif %}
 
     </div>
+
+    {% if include.categories %}
+    <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter u-margin-top-l">
+      <p class="u-color-grey-50 u-margin-r-right">{{ t.news_categories }}</p>
+      {% include pills.html items=include.categories small=true %}
+    </div>
+    {% endif %}
 
   </div>
 </div>

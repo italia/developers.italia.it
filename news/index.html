@@ -21,7 +21,7 @@ lang: it
 
         {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
 
-        <div class="u-margin-bottom-xxl">
+        <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
         {% include card.html
           date=post.date
           author=post.author
@@ -29,8 +29,9 @@ lang: it
           link=post.url
           text=excerpt
           hasImage=false
+          categories=post.categories
           flat=true
-          backgroundClass='u-background-grey-15'
+          classes='u-background-grey-15'
           %}
         </div>
 
@@ -52,7 +53,13 @@ lang: it
 
     </div>
 
-    {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
+    {% capture categories %}
+      {% for category in site.categories %}{{ category[0] }}:{% endfor %}
+    {% endcapture %}
+
+    {% assign categories_ = categories | strip | split: ':' %}
+
+    {% capture pills %}{% include pills.html items=categories_ small=true %}{% endcapture %}
 
     {% include sideblock.html title=t.news_nav_title content=pills %}
 
