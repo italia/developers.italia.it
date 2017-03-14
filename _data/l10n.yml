@@ -32,6 +32,12 @@ it:
     by: di
     on_: "su"
     news_categories: argomenti
+    news_title: Novità
+    news_nav_title: Argomenti delle novità
+
+    paginator_previous_page: pagina precedente
+    paginator_next_page: pagina successiva
+    paginator_page: pagina
 
     home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
     home_newsletter_title: Iscriviti alla Newsletter
@@ -88,6 +94,12 @@ en:
     by: by
     on_: "on"
     news_categories: tags
+    news_title: News
+    news_nav_title: Categories    
+
+    paginator_previous_page: previous page
+    paginator_next_page: next page
+    paginator_page: page
 
     home_hero: A community of developers that design and make Italian digital public services
     home_newsletter_title: Subscribe to our Newlsetter

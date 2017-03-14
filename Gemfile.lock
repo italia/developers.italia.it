@@ -27,6 +27,7 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.9.1)
       jekyll (~> 3.3)
+    jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.12.1)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
@@ -60,6 +61,7 @@ DEPENDENCIES
   hawkins
   jekyll (= 3.4.1)
   jekyll-feed (~> 0.6)
+  jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
   minima (~> 2.0)

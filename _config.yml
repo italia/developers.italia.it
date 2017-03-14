@@ -27,9 +27,13 @@ gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+
+paginate: 10
+paginate_path: "/news/page:num/"
 
 # Custom vars
 theme_color: "#0066cc"

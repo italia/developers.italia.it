@@ -43,11 +43,13 @@ lang: it
 
       {% for project in projects limit: 3 %}
 
+        {% assign subtitle = project.subtitle | default: project.payoff %}
+
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
               title=project.title
               link=project.url
-              subtitle=project.subtitle
+              subtitle=subtitle
               text=project.description
               socials=project.socials
               image='//placehold.it/400x220'
@@ -59,12 +61,13 @@ lang: it
 
           {% for project in projects limit: 2 offset:3 %}
 
+            {% assign subtitle = project.subtitle | default: project.payoff %}
+
               <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
                 {% include card.html
                   title=project.title
                   link=project.url
-                  subtitle=project.subtitle
-                  text=project.description
+                  subtitle=subtitle
                   socials=project.socials
                   hasImage=false
                   hasMore=false
@@ -78,7 +81,7 @@ lang: it
               u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
 
               <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
-                <a href="" class="u-color-white u-textClean">
+                <a href="{{ active_lang | relative_url }}/projects/" class="u-color-white u-textClean">
                   <span class="u-text-r-l">{{ t.home_projects_others }}</span>
                 <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
                   u-textWeight-400">{{ site.projects | size }} {{ t.home_projects_count }}</span>

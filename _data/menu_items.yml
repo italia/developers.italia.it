@@ -27,6 +27,8 @@ it:
         url: /
       - title: Link 2.3
         url: /
+  - title: Notizie
+    url: it/notizie
   - title: Chi siamo
     url: it/chi-siamo
   - title: FAQ
@@ -61,6 +63,8 @@ en:
         url: /
       - title: Link 2.3
         url: /
+  - title: News
+    url: en/news
   - title: Credits
     url: en/credits
   - title: FAQ

@@ -2,5 +2,6 @@
 title: Progetti
 layout: projects
 lang: it
-permalink: /progetti
+redirect_from:
+  - /it/projects
 ---
