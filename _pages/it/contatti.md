@@ -1,5 +1,5 @@
 ---
-title: Chi siamo
+title: Contatti
 lang: it
 layout: page
 ---

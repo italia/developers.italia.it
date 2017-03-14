@@ -4,40 +4,68 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
+{% comment %}
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
+  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+  {% capture pills %}{% include pills.html items=page.categories  %}{% endcapture %}
+  {% include sideblock.html title=t.home_projects_expand content=pills %}
+{% endcomment %}
 
-  <div class="Grid Grid--withGutter">
-    <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
 
-      <article itemscope itemtype="http://schema.org/BlogPosting" class="u-layout-prose">
+<article itemscope itemtype="http://schema.org/BlogPosting">
 
-        <header class="Prose">
-          <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-          <p><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{%
-            endif %}</p>
-        </header>
+  <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+    <div class="Grid Grid--alignCenter">
 
-        <div itemprop="articleBody" class="Prose">
+      <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+
+        <div class="u-textCenter u-padding-bottom-xl">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
+            {{ page.date | date: "%b %-d, %Y" }}</time>
+
+            <h1 itemprop="name headline" class="u-textCenter u-textWeight-600 u-text-r-xl u-margin-bottom-s u-textWeight-300 u-color-50 u-margin-top-s u-lineHeight-l">
+              {{ page.title }}</h1>
+
+            {% if page.subtitle %}
+            <h2 class="u-layoutCenter u-textCenter u-color-grey-50 u-text-r-m u-textWeight-300 u-margin-bottom-s"
+              style="max-width:24em">{{ page.subtitle }}</h2>
+            {% endif %}
+
+            <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
+              style="max-width: 15em" />
+
+            {% if page.author %}
+              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
+                <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ page.author | capitalize }}</span>
+              </div>
+            {% endif %}
+        </div>
+
+        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
+          {% include share.html %}
+        </div>
+
+        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl">
           {{ content }}
         </div>
 
-        {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-      </article>
+        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
+          style="max-width: 15em" />
 
-    </div>
+        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
+          {% include share.html %}
+        </div>
 
-    <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
-      <div class="u-cf u-padding-bottom-xxl">
-        {% include share.html %}
-      </div>
-
-      <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
-
-        {% assign subnav = site.data[page.subnav] %}
-        {% include linklist.html items=subnav dynamic=true %}
+        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
+          <h2 class="u-text-r-xxs u-textSecondary u-textWeight-300 u-margin-r-bottom">{{ t.news_categories }}</h2>
+          {% include pills.html items=page.categories small=true %}
+        </div>
 
       </div>
+
     </div>
   </div>
-
-</div>
+</article>

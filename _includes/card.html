@@ -1,5 +1,6 @@
 <div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
-  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %} u-background-white u-sizeFill">
+  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
+  {{ include.backgroundClass | default: 'u-background-white' }} u-sizeFill">
   {% if include.hasImage != false %}
   <div class="u-sizeFull">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
@@ -20,12 +21,19 @@
           {{ include.title }}
         </a>
       </h3>
+
+      {% if include.author %}
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ include.author | capitalize }}</span>
+        </div>
+      {% endif %}
+
       <h4 class="u-textWeight-400 u-lineHeight-l u-text-r-xs u-color-grey-60 u-padding-bottom-xs">
           {{ include.subtitle }}
       </h4>
 
       {% if include.text != '' %}
-        <p class="u-text-p u-textSecondary u-margin-r-bottom u-padding-r-bottom">
+        <p class="u-text-p u-textSecondary u-padding-r-bottom">
           {{ include.text }}
         </p>
       {% endif %}

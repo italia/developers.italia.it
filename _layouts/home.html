@@ -43,12 +43,14 @@ lang: it
 
       {% for project in projects limit: 3 %}
 
+        {% assign subtitle = project.subtitle | default: project.payoff %}
+
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
               title=project.title
-              link='//example.com'
-              subtitle=project.subtitle
-              text=project.content
+              link=project.url
+              subtitle=subtitle
+              text=project.description
               socials=project.socials
               image='//placehold.it/400x220'
               alt=''
@@ -59,12 +61,13 @@ lang: it
 
           {% for project in projects limit: 2 offset:3 %}
 
+            {% assign subtitle = project.subtitle | default: project.payoff %}
+
               <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
                 {% include card.html
                   title=project.title
-                  link='//example.com'
-                  subtitle=project.subtitle
-                  text=project.content
+                  link=project.url
+                  subtitle=subtitle
                   socials=project.socials
                   hasImage=false
                   hasMore=false
@@ -78,7 +81,7 @@ lang: it
               u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
 
               <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
-                <a href="" class="u-color-white u-textClean">
+                <a href="{{ active_lang | relative_url }}/projects/" class="u-color-white u-textClean">
                   <span class="u-text-r-l">{{ t.home_projects_others }}</span>
                 <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
                   u-textWeight-400">{{ site.projects | size }} {{ t.home_projects_count }}</span>
@@ -106,7 +109,7 @@ lang: it
 
       <div class="Grid Grid--withGutterL">
 
-      {% for post in site.posts %}
+      {% for post in posts limit: 3 %}
 
         {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
 
@@ -114,7 +117,7 @@ lang: it
             {% include card.html
               date=post.date
               title=post.title
-              link='//example.com'
+              link=post.url
               text=excerpt
               hasImage=false
               flat=true

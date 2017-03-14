@@ -4,31 +4,29 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-padding-top-xxl u-layout-r-withGutter">
+<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+    <strong class="u-textWeight-600">{{ page.title }}</strong>{% if page.subtitle %} - {{ page.subtitle }} {% endif %}</h1>
+</div>
 
-  {% include breadcrumbs.html %}
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--down u-background-grey-15" />
 
-  <div class="Grid Grid--withGutter">
-    <div class="Grid-cell u-md-size8of12 u-lg-size8of12">
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="Grid">
 
-      <article class="Prose u-layout-prose">
-        <h1>{{ page.title | escape }}</h1> {{ content }}
-      </article>
-
-    </div>
-
-    <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12">
-      <div class="u-cf u-padding-bottom-xxl">
-        {% include share.html %}
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      <div class="u-layout-prose u-text-r-xs">
+      <h2 class="u-text-r-xxl u-color-50">{{ page.payoff }}</h2>
+      <p class="u-textWeight-300 u-text-r-m u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>
+      <div class="Prose">
+        {{ content }}
       </div>
-
-      <div class="u-sizeFull u-md-size11of12 u-lg-size11of12" id="subnav">
-
-        {% assign subnav = site.data[page.subnav] %}
-        {% include linklist.html items=subnav dynamic=true %}
-
       </div>
     </div>
+
+    {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
+    {% include sideblock.html title=page.subtitle content=pills %}
+
   </div>
-
 </div>
