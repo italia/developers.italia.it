@@ -140,9 +140,9 @@ lang: it
     <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
 
       {% for tool in site.data.tools[active_lang] %}
-        <span class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
+        <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
           <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
-        </span>
+        </div>
         <div class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
           <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
           <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
