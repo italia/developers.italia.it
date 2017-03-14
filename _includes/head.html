@@ -10,7 +10,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title>
+  <!-- <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title> -->
 
   {% seo %}
 
@@ -47,7 +47,7 @@
   <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32">
   <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}" sizes="16x16">
   <link rel="manifest" href="{{ '/assets/icons/manifest.json' | relative_url }}">
-  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}" color="{{ site.theme_color }}">
+  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}">
   <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
   <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
   <meta name="application-name" content="{{ site.title }}">

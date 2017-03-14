@@ -11,7 +11,7 @@
     </div>
 
     <div class="Grid-cell u-layout-centerRight u-padding-r-bottom u-flexAlignSelfEnd">
-      <h3 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
+      <h2 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
         u-hidden u-margin-r-right u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
       <ul class="Footer-socialIcons">
         {% for social in site.data.social %}
@@ -35,7 +35,3 @@
 {% include scripts.html %}
 
 {% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
-
-</body>
-
-</html>

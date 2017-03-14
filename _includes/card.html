@@ -9,7 +9,7 @@
   <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %}">
 
     {% if include.date %}
-    <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished"
+    <time datetime="{{ include.date | date_to_xmlschema }}"
       class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-50">
         {{ include.date | date: "%b %-d, %Y" }}
       </time>
@@ -28,9 +28,11 @@
         </div>
       {% endif %}
 
+      {% if include.subtitle %}
       <h4 class="u-textWeight-400 u-lineHeight-l u-text-r-xs u-color-grey-60 u-padding-bottom-xs">
           {{ include.subtitle }}
       </h4>
+      {% endif %}
 
       {% if include.text != '' %}
         <p class="u-text-p u-textSecondary u-padding-r-bottom">
