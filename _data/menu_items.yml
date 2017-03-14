@@ -6,13 +6,13 @@ it:
       url: /
       subitems:
       - title: ANPR
-        url: /
+        url: /it/anpr
       - title: Data Analytics Framework
         url: /
       - title: pagoPA
-        url: /
+        url: /it/pagopa
       - title: SPID
-        url: /
+        url: /it/spid
       - title: Toolkit Design Web
         url: /
   - title: Strumenti
