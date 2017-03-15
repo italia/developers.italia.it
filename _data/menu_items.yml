@@ -18,7 +18,7 @@ it:
   - title: Strumenti
     url: '#'
     subitems:
-    - title: Strumenti
+    - title: Dove partecipare
       url: '#'
       subitems:
       - title: Repository GitHub
@@ -29,6 +29,12 @@ it:
         url: /
       - title: API Sandbox
         url: /
+        markup_post: >
+          <div data-megamenu-class="u-nbfc u-block">
+            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs">
+              coming soon
+            </span>
+          </div>
   - title: Notizie
     url: news
   - title: Chi siamo
@@ -69,6 +75,12 @@ en:
         url: /
       - title: API Sandbox
         url: /
+        markup_post: >
+          <div data-megamenu-class="u-nbfc u-block">
+            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-50 u-color-white u-text-xxs">
+              coming soon
+            </span>
+          </div>
   - title: News
     url: news
   - title: Credits

@@ -9,7 +9,7 @@
   {% assign navurl = page.url | remove: 'index.html' %}
   {% for item in items %}
   	<li>
-      
+
       {% if item.url == "#" %}
         {% assign _url = item.url %}
       {% else %}
@@ -17,7 +17,9 @@
       {% endif %}
 
   		<a href="{{ _url }}" {% if item.url == navurl %}class="is-current u-textWeight-700"{% endif %}>
+        {{ item.markup_pre }}
 				{{ t[item.title] | default: item.title }}
+        {{ item.markup_post }}
   		</a>
       {% if item.subitems %}
     		{% include linklist.html items=item.subitems _internal=true %}
