@@ -15,6 +15,9 @@
   $(document).on('keydown', function(e) {
     if (e.keyCode === 9) {
       $('body').removeClass('hide-focus');
+    } else if (e.keyCode == 191) { // slash
+      $('#cerca').focus();
+      e.preventDefault();
     }
   })
 
