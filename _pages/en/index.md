@@ -1,6 +1,7 @@
 ---
 layout: home
 lang: en
-title: Projects
-permalink: en/
+title: Home
+permalink: /en/
+top_projects_link: /en/projects
 ---

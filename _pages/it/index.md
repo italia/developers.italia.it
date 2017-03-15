@@ -1,8 +1,9 @@
 ---
 layout: home
 lang: it
-title: Progetti
+title: Home
 permalink: /
+top_projects_link: /it/progetti
 redirect_from:
   - /it
   - /it/

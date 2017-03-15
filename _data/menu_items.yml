@@ -3,7 +3,7 @@ it:
     url: '#'
     subitems:
     - title: Progetti in evidenza
-      url: /
+      url: /it/progetti
       subitems:
       - title: ANPR
         url: /it/anpr
@@ -19,13 +19,15 @@ it:
     url: '#'
     subitems:
     - title: Strumenti
-      url: it/strumenti
+      url: '#'
       subitems:
-      - title: Link 2.1
+      - title: Repository GitHub
         url: /
-      - title: Link 2.2
+      - title: Forum
         url: /
-      - title: Link 2.3
+      - title: Docs
+        url: /
+      - title: API Sandbox
         url: /
   - title: Notizie
     url: news
@@ -40,6 +42,8 @@ en:
   - title: Projects
     url: '#'
     subitems:
+    - title: Top projects
+      url: /en/projects
       subitems:
       - title: ANPR
         url: /
@@ -55,13 +59,15 @@ en:
     url: '#'
     subitems:
     - title: Tools
-      url: en/tools
+      url: '#'
       subitems:
-      - title: Link 2.1
+      - title: Repository GitHub
         url: /
-      - title: Link 2.2
+      - title: Forum
         url: /
-      - title: Link 2.3
+      - title: Docs
+        url: /
+      - title: API Sandbox
         url: /
   - title: News
     url: news

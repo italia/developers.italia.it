@@ -54,12 +54,6 @@ it:
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
 
-    menu_item_projects: Progetti
-    menu_item_credits: Chi siamo
-    menu_item_tools: Strumenti
-    menu_item_faq: FAQ
-    menu_item_contacts: Contatti
-
 en:
   code: eng
   name: english
@@ -95,7 +89,7 @@ en:
     on_: "on"
     news_categories: tags
     news_title: News
-    news_nav_title: Categories    
+    news_nav_title: Categories
 
     paginator_previous_page: previous page
     paginator_next_page: next page
@@ -115,9 +109,3 @@ en:
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
-
-    menu_item_projects: Projects
-    menu_item_credits: Credits
-    menu_item_tools: Tools
-    menu_item_faq: FAQ
-    menu_item_contacts: Contacts
