@@ -22,11 +22,8 @@
             {% if site.pill %}
               <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
               <span class="u-color-20 u-text-xxs
-              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
-            {% endif %}
-            <br>
-            <small>{{ t.site_subtitle | default: site.subtitle | escape }}</small>
-          </a>
+              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>{%
+                endif %}<br><small>{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
         </h1>
       </div>
 
