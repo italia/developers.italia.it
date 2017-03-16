@@ -28,6 +28,37 @@
   text-transform: uppercase !important;
 }
 
+/* Credits
+   ======== */
+
+.Person {
+  width: 296px;
+  background-size: cover;
+  background-position: 50% 100%;
+  position: relative;
+  z-index: 30;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0,.1);
+}
+
+.u-round {
+  border-radius: 100% !important;
+}
+
+.Person:after {
+  padding-bottom: 100%;
+}
+
+@media screen and (min-width: 992px) {
+
+  .Person-container:nth-child(3n+2) {
+    margin-top: 3em;
+  }
+
+}
+
 /* Utilities
   ========== */
 

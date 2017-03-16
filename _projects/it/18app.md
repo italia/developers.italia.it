@@ -5,6 +5,7 @@ payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
   Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace
   con la piattaforma.
+maintainer: matteo
 lang: it
 order: 3
 highlight: false

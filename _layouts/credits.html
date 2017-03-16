@@ -1,0 +1,109 @@
+---
+layout: default
+lang: it
+---
+
+{% include setlang.html %}
+
+<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+             {{ page.title | capitalize }}</h1>
+  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
+    {{ page.subtitle }}
+  </p>
+</div>
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
+<hr class="Separator Separator--down u-background-grey-15" />
+
+<section class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top
+  u-padding-r-bottom u-posRelative u-zindex-30">
+
+  <h2 class="u-hiddenVisually">{{ page.title }}</h2>
+
+  <!-- phi = k^i -->
+  <div class="Grid Grid--alignMiddle Grid--withGutterL u-pullUp-10 Grid--fit">
+    {% for person in site.data.people %}
+    <div class="Person-container Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-textCenter u-margin-bottom-xl">
+      <div class="Person u-round u-cf u-flex" style="background-image: url({{ person[1].pic }})">
+        <div class="Person-content u-background-white u-flexAlignSelfEnd u-zindex-30 u-textCenter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" style="transform: translate(0, -100%)">
+            <path fill="#FFF" fill-rule="evenodd" d="M100 0c35.006 0 68.647 3.52 100 10H0C31.353 3.52 64.993 0 100 0z"/>
+          </svg>
+          <div class="Grid u-flex u-flexWrap u-flexJustifyCenter">
+            <h3 style="" class="Grid-cell u-sizeFull u-textCenter u-text-r-xs u-textWeight-600 u-margin-bottom-xxs">
+              {{ person[1].name }}</h3>
+
+            {% assign status = person[1].status %}
+            <h4 class="Grid-cell u-sizeFull u-textCenter
+              u-text-r-xxs u-textWeight-400 u-color-grey-50 u-margin-bottom-m">{{ t[status] | capitalize }}</h4>
+
+            <div class="Grid-cell u-sizeFull u-flexAlignSelfEnd u-margin-bottom-m">
+              <ul class="u-textCenter u-layoutCenter">
+                {% for contact in person[1].contacts %}
+                    <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
+                      <a href="{{ contact[1].link }}" title=""
+                        class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean
+                          u-borderRadius-circle u-alignMiddle"
+                        ><span class="Icon Icon-{{ contact[0] }}"></span>
+                        <span class="u-hiddenVisually">{{ contact[1].name }}</span>
+                      </a>
+                    </li>
+                {% endfor %}
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- <phi = k^i>  -->
+
+  <h2 class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
+    {{ t.credits_maintainer | capitalize }}</h2>
+
+  <div class="Grid Grid--alignMiddle Grid--withGutter u-margin-r-top Grid--fit">
+    {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+
+    {% for project in projects %}
+    {% assign person = site.data.people[project.maintainer] %}
+    {% if person %}
+    <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of4 u-textCenter u-margin-bottom-xl">
+      <div class="Person u-borderRadius-m u-cf u-flex" style="background-image: url({{ person.pic }})">
+        <div class="Person-content u-background-white u-flexAlignSelfEnd u-zindex-30 u-textCenter">
+          <div class="Grid u-flex u-flexWrap u-flexJustifyCenter u-padding-r-top">
+            <h3 style="" class="Grid-cell u-sizeFull u-textCenter u-text-r-xs u-textWeight-600 u-margin-bottom-xxs">
+              {{ person.name }}</h3>
+
+            <h4 class="Grid-cell u-sizeFull u-textCenter u-padding-r-top
+              u-text-r-xxs u-textWeight-400 u-color-grey-50 u-margin-bottom-m">
+              <a class="u-color-50 u-textClean" href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
+
+            <div class="Grid-cell u-sizeFull u-flexAlignSelfEnd u-margin-bottom-m">
+              <ul class="u-textCenter u-layoutCenter">
+                {% for contact in person.contacts %}
+                    <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
+                      <a href="{{ contact[1].link }}" title=""
+                        class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean
+                          u-borderRadius-circle u-alignMiddle"
+                        ><span class="Icon Icon-{{ contact[0] }}"></span>
+                        <span class="u-hiddenVisually">{{ contact.name }}</span>
+                      </a>
+                    </li>
+                {% endfor %}
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+  <!-- -<phi = k^i>  -->
+
+</section>

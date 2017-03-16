@@ -55,6 +55,11 @@ it:
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
 
+    credits_maintainer: maintainer dei progetti
+
+    status_member_of_board: membro della board
+    status_maintainer: maintainer
+
 en:
   code: eng
   name: english
@@ -111,3 +116,8 @@ en:
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
+
+    credits_maintainer: projects maintainers
+
+    status_member_of_board: member of board
+    status_maintainer: maintainer
