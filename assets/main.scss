@@ -5,3 +5,21 @@
 
 @import "highlight";
 @import "developer";
+
+#github-screenshot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+
+  /* handle short pages nicely */
+  max-height: 100%;
+  z-index: -1;
+
+  img {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(black 0%, transparent 100%);
+    transform: translate(10%, 0) rotate(0.1rad);
+    transform-origin: 0 100%;
+  }
+}
