@@ -18,7 +18,7 @@ it:
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
     scrolltop_label: torna all'inizio dei contenuti
-    search_form_label: cerca
+    search_form_label: Vai a progetto...
     search_form_off: disattiva il form di ricerca
     search_form_on: attiva il form di ricerca
     search_form_start: avvia la ricerca
@@ -80,7 +80,7 @@ en:
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
     scrolltop_label: back to contents
-    search_form_label: Search
+    search_form_label: Project quicksearch...
     search_form_off: exit search form
     search_form_on: enter search form
     search_form_start: start searching
