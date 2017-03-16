@@ -15,6 +15,9 @@ it:
         url: /it/spid
       - title: Toolkit Design Web
         url: /
+      - title: Tutti i progetti
+        url: /it/progetti
+        liClass: 'Megamenu-showAll'
   - title: Strumenti
     url: '#'
     subitems:
@@ -61,6 +64,8 @@ en:
         url: /
       - title: Toolkit Design Web
         url: /
+      - title: All projects
+        url: /en/projects
   - title: Tools
     url: '#'
     subitems:

@@ -8,8 +8,8 @@
           <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
           <ul class="Linklist">
             {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %} {% for project in projects %}
-            <li><a href="{{ project.url | relative_url }}" class="u-padding-r-all u-textLeft">
-              <span lang="{{ active_lang }}">{{ project.title }}</span></a></li>
+            <li><a href="{{ project.url | relative_url }}" class="u-padding-r-all u-textLeft"><span lang="{{ active_lang }}">{{
+              project.title }}</span></a></li>
             {% endfor %}
           </ul>
         </div>
