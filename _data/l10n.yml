@@ -31,6 +31,7 @@ it:
 
     by: di
     on_: "su"
+    coming_soon: in arrivo
     news_categories: argomenti
     news_title: Novità
     news_nav_title: Argomenti delle novità
@@ -87,6 +88,7 @@ en:
 
     by: by
     on_: "on"
+    coming_soon: coming soon
     news_categories: tags
     news_title: News
     news_nav_title: Categories

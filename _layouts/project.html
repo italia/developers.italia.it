@@ -6,7 +6,15 @@ layout: default
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    <strong class="u-textWeight-600">{{ page.title }}</strong>{% if page.subtitle %} - {{ page.subtitle }} {% endif %}</h1>
+    {% if page.comingsoon %}
+      <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+        u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
+      {{ t.coming_soon }}</span>
+    {% endif %}
+    <span class="u-cf">
+      <strong class="u-textWeight-600">{{ page.title }}</strong>{% if page.subtitle %} - {{ page.subtitle }} {% endif %}
+    </span>
+    </h1>
 </div>
 
 <hr class="Separator-room u-background-50" />
