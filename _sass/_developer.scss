@@ -14,6 +14,10 @@
   min-height: 250px;
 }
 
+.is-selected {
+  outline: 3px solid #06c;
+}
+
 @media screen and (max-width: 767px) {
 
   .u-minHeight-250 {
