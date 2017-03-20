@@ -2,9 +2,20 @@
 
   <div class="Header-banner u-background-50">
     <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
-      <a href="{{ site.owner_link }}"><span>{{ site.owner }} <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-        - {{ site.owner_desc }}</span></span></a> {% include lang_switch.html %}
-
+      <a href="{{ site.owner_link }}">
+        <span>
+          {{ site.owner }}
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+            - {{ site.owner_desc }}</span>
+          </span>
+        </a>
+        <span>&nbsp;|&nbsp;</span>
+        <a href="{{ site.partner_link }}">
+          <span>
+            {{ site.partner }}
+          </span>
+        </a>
+        {% include lang_switch.html %}
     </div>
   </div>
 

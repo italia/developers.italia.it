@@ -2,7 +2,7 @@
 
   <div class="Grid Grid--withGutter u-padding-top-xl">
 
-    <div class="Grid-cell u-layout-centerLeft u-padding-r-bottom">
+    <div class="Grid-cell u-lg-size5of12 u-padding-r-bottom">
       <img class="Footer-logo u-xs-padding-right-none" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}"
         alt="" style="height: 80px">
       <p class="Footer-siteName">
@@ -10,7 +10,21 @@
       </p>
     </div>
 
-    <div class="Grid-cell u-layout-centerRight u-padding-r-bottom u-flexAlignSelfEnd">
+    <div class="Grid-cell u-size1of2 u-lg-size1of3 u-padding-r-bottom td-footer">
+      <p class="u-padding-bottom-l" style="opacity: 0.5">In collaborazione con</p>
+      <div class="Grid">
+        <div class="u-inlineBlock">
+          <img class="u-padding-top-xxs u-padding-right-xs" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="" style="height: 4em">
+          <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="" style="height: 4em">
+        </div>
+        <div class="Grid-cell u-size1of12 u-padding-left-none team-bar"></div>
+        <p class="Grid-cell u-size5of12 Footer-siteName u-padding-left-xs u-text-r-xs">
+          {{ site.partner | upcase }}
+        </p>
+      </div>
+    </div>
+
+    <div class="Grid-cell u-lg-size1of4 u-textRight u-padding-r-bottom u-flexAlignSelfEnd">
       <h2 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
         u-hidden u-margin-r-right u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
       <ul class="Footer-socialIcons">
