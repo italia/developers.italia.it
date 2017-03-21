@@ -20,6 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: jekyllrb
 github_username:  jekyll
+piwik: teamdigitale
 
 # Build settings
 markdown: kramdown
