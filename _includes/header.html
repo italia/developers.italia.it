@@ -4,15 +4,20 @@
     <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
       <a href="{{ site.owner_link }}">
         <span>
-          {{ site.owner }}
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
+            {{ site.owner_short }}
+          </span>
           <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-            - {{ site.owner_desc }}</span>
+            {{ site.owner_full }}
           </span>
         </a>
         <span class="u-color-white">&nbsp;|&nbsp;</span>
         <a href="{{ site.partner_link }}">
-          <span>
-            {{ site.partner }}
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
+            {{ site.partner_short }}
+          </span>
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+            {{ site.partner_full }}
           </span>
         </a>
         {% include lang_switch.html %}

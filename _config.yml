@@ -38,12 +38,13 @@ paginate_path: "/news/page:num/"
 # Custom vars
 theme_color: "#0066cc"
 css_theme: t-Pac
-owner: AgID
-owner_desc: Agenzia per l'Italia Digitale
+owner_short: AgID
+owner_full: AgID - Agenzia per l'Italia Digitale
 owner_link: http://www.agid.gov.it
 logo: /assets/icons/logo-it.svg
 owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
-partner: Team per la Trasformazione Digitale
+partner_short: Team Digitale
+partner_full: Team per la Trasformazione Digitale
 partner_link: https://teamdigitale.governo.it
 gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
 partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
