@@ -1,18 +1,7 @@
-facebook:
-  name: facebook
-  link: https://facebook.com
-  sharelink: https://www.facebook.com/sharer/sharer.php?u=<url>
 twitter:
   name: twitter
-  link: https://twitter.com
+  link: https://twitter.com/teamdigitaleIT
   sharelink: https://twitter.com/intent/tweet?url=<url>
-googleplus:
-  name: google plus
-  link: https://google.com
-  sharelink: https://plus.google.com/share?url=<url>
-youtube:
-  name: youtube
-  link: https://youtube.com
-slideshare:
-  name: slideshare
-  link: https://slideshare.com
+medium:
+  name: medium
+  link: https://medium.com/team-per-la-trasformazione-digitale/
