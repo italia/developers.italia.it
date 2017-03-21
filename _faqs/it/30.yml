@@ -1,7 +1,12 @@
 ---
 title: Come scegliete i maintainer dei progetti?
 text: >
-  Ci affidiamo a gare d'appalto (secondo il normale processo di procurement pubblico) per identificare persone con
+  Come in tutte le comunità di software open-source, i maintainer di un progetto vengono individuate in base alla 
+  loro competenza tecnica e conoscenza del progetto in questione, oltre che alla disponibilità di tempo ed energie 
+  per contribuire al progetto stesso. Un maintainer infatti non deve solo supervisionare, ma deve essere il primo
+  per quantità e qualità delle contribuzioni. Il nostro obiettivo è fare in modo che tutti i progetti presenti in
+  Developers Italia abbiano sempre dei maintainer attivi che possano guidare la comunità. In alcuni casi,
+  ci affideremo a gare d'appalto (secondo il normale processo di procurement pubblico) per identificare persone con
   con le giuste competenze tecniche, che possano svolgere questo lavoro. Cerchiamo di privilegiare importi di gara piccoli
   (tra i €50K e i €200K), con un processo semplificato che possa essere alla portata anche di piccole aziende e startup che non
   hanno esperienza pregressa di lavoro con la Pubblica Amministrazione, e non abbia quindi team di esperti di progettazione di
