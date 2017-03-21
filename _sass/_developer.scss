@@ -28,6 +28,29 @@
   text-transform: uppercase !important;
 }
 
+.Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li,
+.Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li > ul > li {
+  width: initial;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+
+}
+
+.with-image {
+  .tool-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3.5em;
+  }
+}
+
+.tool-image {
+  display: block;
+  margin: auto;
+  width: 3.5em;
+}
+
 /* Credits
    ======== */
 
