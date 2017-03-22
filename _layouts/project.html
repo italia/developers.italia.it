@@ -27,14 +27,20 @@ layout: default
       <div class="u-layout-prose u-text-r-xs">
       <h2 class="u-text-r-xxl u-color-50">{{ page.payoff }}</h2>
       <p class="u-textWeight-300 u-text-r-m u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>
-      <div class="Prose">
+      <div class="Prose Project">
         {{ content }}
       </div>
       </div>
     </div>
 
-    {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
-    {% include sideblock.html title=page.subtitle content=pills %}
+    {% capture toc %}{{ content | toc_only }}{% endcapture %}
+    {% include sideblock.html title=page.subtitle content=toc %}
+
+    {% comment %}
+      {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
+      {% include sideblock.html title=page.subtitle content=pills %}
+    {% endcomment %}
+
 
   </div>
 

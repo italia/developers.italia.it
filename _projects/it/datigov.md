@@ -28,8 +28,8 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
 
  * Una roadmap di sviluppo agile e pubblica
  * Codice sorgente aperto fin dall’inizio
- * Un sistema di tracciamento degli errori pubblico 
- * Documentazione del codice e delle API chiaro 
+ * Un sistema di tracciamento degli errori pubblico
+ * Documentazione del codice e delle API chiaro
 
 ## Documentazione
 
@@ -60,4 +60,3 @@ un tracker pubblico su GitHub:
  * [Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
  * [Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues)
  * [Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects)
-

@@ -1,3 +1,17 @@
+/* Content style and TOC
+  ======================== */
+
+.section-nav a {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #06c;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
 /* Icons
   ======================== */
 
@@ -149,10 +163,30 @@
 /* Prose
    ======== */
 
+li a,
 p a:visited,
 p a {
   color: #06c !important;
   font-size: inherit !important;
+}
+
+.Project ul {
+  margin-bottom: 2em !important;
+}
+
+.Project a {
+  text-decoration: none !important;
+  font-size: 1.2em !important;
+}
+
+.Project a:after {
+  content:' \2192';
+}
+
+.Project h2 {
+  margin-top: 1em !important;
+  font-weight: 400 !important;
+  font-size: 1.5em !important;
 }
 
 /* Utilities

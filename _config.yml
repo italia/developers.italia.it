@@ -29,6 +29,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-toc
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -70,3 +71,8 @@ defaults:
       type: "pages"
     values:
       subnav: "subnav"
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "projects"
+    values:
+      toc: true
