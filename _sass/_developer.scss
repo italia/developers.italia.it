@@ -1,3 +1,22 @@
+/* Icons
+  ======================== */
+
+.Icon-medium:before {
+  content: "\4d";
+}
+
+.Icon-github:before {
+  content: "\67";
+}
+
+.Icon-youtube:before {
+  content: "\59";
+}
+
+.Icon-linkedin::before {
+  content: "\4c";
+}
+
 /* Project page background
   ======================== */
 
@@ -139,8 +158,10 @@ p a {
 /* Utilities
   ========== */
 
-.hide-focus :focus {
+.hide-focus :focus,
+.hide-focus :focus:focus {
   outline: none !important;
+  box-shadow: none !important;
 }
 
 .u-pullUp {
