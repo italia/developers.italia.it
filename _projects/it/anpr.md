@@ -1,6 +1,6 @@
 ---
 title: ANPR
-logo: anpr.svg
+logo: /assets/images/logo-anpr@2x.png
 subtitle: Anagrafe Nazionale della Popolazione Residente
 payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.

@@ -1,6 +1,6 @@
 ---
 title: 18App e Carta Docente
-logo: 18app.svg
+logo: /assets/images/logo-18app-cartadocente@2x.png
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
   Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace

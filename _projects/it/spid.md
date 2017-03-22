@@ -1,6 +1,6 @@
 ---
 title: SPID
-logo: spid.svg
+logo: /assets/images/logo-spid@2x.png
 payoff: Sistema Pubblico di Identità Digitale
 description: >
   Lo SPID è la carta d'identità digitale dei cittadini: una credenziale unica di accesso, con identità verificata, che può essere integrata
@@ -66,3 +66,11 @@ Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (
 [Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
 
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
+
+
+## Collaborazione
+
+[π]
+
+
+
