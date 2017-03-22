@@ -3,9 +3,9 @@ rasky:
   desc: Developer Relation, Team Digitale
   pic: https://pbs.twimg.com/profile_images/378800000333780998/1a0ab1d6b8a8bab44b810a7b05ad91a7.jpeg
   contacts:
-    facebook:
-      name: facebook
-      link: https://facebook.com/giovannibajo
+    github:
+      name: github
+      link: https://github.com/rasky
     twitter:
       name: twitter
       link: https://twitter.com/giovannibajo
@@ -54,3 +54,34 @@ umbros:
     linkedin:
       name: google plus
       link: https://www.linkedin.com/in/umbros/
+alessandro:
+  name: Alessandro Ercolani
+  desc: Data Engineer, Team Digitale
+  pic: https://teamdigitale.governo.it/images/team/alessandro-ercolani.jpg
+  contacts:
+    github:
+      name: github
+      link: https://github.com/giux78
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/alessandroercolani/
+    twitter:
+      name: twitter
+      link: https://twitter.com/giuxale
+fabiana:
+  name: Fabiana Lanotte
+  desc: Data Engineer, Team Digitale
+  pic: https://teamdigitale.governo.it/images/team/fabiana-lanotte.jpg
+  contacts:
+    github:
+      name: github
+      link: https://github.com/fabiana001
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/fabiana-lanotte-7970005a/
+    twitter:
+      name: twitter
+      link: https://twitter.com/FabianaLanotte
+
+
+

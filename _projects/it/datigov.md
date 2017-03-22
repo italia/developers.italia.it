@@ -9,6 +9,9 @@ order: 2
 highlight: true
 comingsoon: false
 layout: project
+maintainers:
+  - alessandro
+  - fabiana
 socials:
   -
     name: twitter
