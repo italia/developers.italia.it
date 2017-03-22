@@ -5,16 +5,14 @@ it:
     - title: Progetti in evidenza
       url: /it/progetti
       subitems:
-      - title: ANPR
-        url: /it/anpr
-      - title: Data Analytics Framework
-        url: /
-      - title: pagoPA
-        url: /it/pagopa
       - title: SPID
         url: /it/spid
-      - title: Toolkit Design Web
-        url: /
+      - title: dati.gov.it
+        url: /it/datigov
+      - title: ANPR
+        url: /it/anpr
+      - title: CIE
+        url: /it/cie
       - title: Tutti i progetti
         url: /it/progetti
         liClass: 'Megamenu-showAll'
@@ -56,16 +54,14 @@ en:
     - title: Top projects
       url: /en/projects
       subitems:
-      - title: ANPR
-        url: /
-      - title: Data Analytics Framework
-        url: /
-      - title: pagoPA
-        url: /
       - title: SPID
-        url: /
-      - title: Toolkit Design Web
-        url: /
+        url: /en/spid
+      - title: dati.gov.it
+        url: /en/datigov
+      - title: ANPR
+        url: /en/anpr
+      - title: CIE
+        url: /en/cie
       - title: All projects
         url: /en/projects
   - title: Tools
