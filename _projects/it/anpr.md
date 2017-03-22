@@ -11,16 +11,34 @@ comingsoon: true
 layout: project
 ---
 
-Labore nostrud irure irure consectetur anim do magna quis. Culpa aliqua sit aliqua ea occaecat velit non consectetur sit elit id fugiat aute cupidatat adipisicing. Dolore dolor qui dolore adipisicing aliquip enim elit do ex nisi fugiat aliquip elit ipsum cillum anim. Mollit culpa sint commodo amet consectetur nostrud magna eiusmod nulla reprehenderit.
+ANPR è un progetto storico: invece di avere più di 6000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una
+anagrafe centrale unica, operabile anche direttamente in self-service dal cittadino, che semplificherà tutti gli adempimenti. Pensate alla
+bellezza di poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare
+un certificato di stato di famiglia.
 
-<!--more-->
+Ma questo è solo l'inizio: avete mai pensato perché vi viene chiesto di andare a chiedere un certificato all'anagrafe? Semplice: come può una
+Pubblica Amministrazione (per esempio, l'INPS) integrarsi con tutte le anagarfi sul territorio per estrarre le informazioni di cui è bisogno?
+E' per questo che l'incombenza viene scaricata sul cittadino. Con ANPR, tutto cambia.
 
-Pariatur irure amet irure velit exercitation ut cillum dolor ad tempor ut ex ipsum est cupidatat proident. Pariatur anim deserunt non velit veniam cillum magna pariatur incididunt tempor sint velit exercitation sit amet sunt veniam. Irure qui dolore reprehenderit laborum sit ipsum qui labore. Aliquip commodo ad velit officia sint cupidatat ullamco nulla aliquip anim nisi labore sunt minim commodo.
+Ad oggi, l'accesso ad ANPR è riservato solo ai software delle anagrafi comunali, e dunque questa sezione è dedicata principalmente 
+alle in-house e software house che stanno supportando i comuni nell'aggiornamento. Se però vuoi aiutarci a realizzare questa visione, 
+c'è un sacco di lavoro da fare: entra in contatto con noi sul forum.
 
-### Comunicazione
 
-Ipsum id veniam occaecat commodo minim enim magna in incididunt. Irure mollit excepteur elit pariatur et irure pariatur id ut nulla. Culpa ad adipisicing irure do fugiat irure ullamco ipsum nisi elit. Non pariatur occaecat dolor in voluptate consectetur commodo id commodo qui aute laboris. Nisi anim et esse labore officia occaecat et enim eiusmod.
+### Documentazione
 
-Culpa sunt laborum mollit ipsum nostrud velit nisi ad consequat exercitation cillum proident. Ad amet cillum reprehenderit enim occaecat nostrud do amet. Fugiat commodo officia amet duis proident cillum in aliquip proident eu dolore id qui et. Deserunt commodo est laboris enim exercitation labore non magna consectetur sunt eiusmod. Elit pariatur et enim duis minim esse Lorem minim ea tempor elit nulla cupidatat.
+Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile
+tutte le tabelle e codici.
 
-Et minim nostrud sit cupidatat anim cupidatat eiusmod exercitation magna ex culpa nisi ullamco duis. Deserunt velit in fugiat qui dolor eiusmod esse quis cupidatat. Veniam est enim elit non esse irure et ullamco ipsum nisi mollit do tempor deserunt do eu occaecat. Fugiat nulla tempor tempor occaecat consequat amet ea mollit consequat exercitation amet ea id. Reprehenderit mollit sit voluptate quis consequat non dolor. Lorem magna duis ad eiusmod elit minim occaecat nisi est. Voluptate cillum tempor elit eiusmod exercitation non sint ullamco.
+[Documentazione tabelle e codici](http://anpr.readthedocs.io/en/latest/)
+
+
+### Collaborazione
+
+Abbiamo creato degli strumenti di collaborazione completamente aperti, cioè un issue tracker pubblico e un forum dedicato alla discussione
+delle problematiche tecniche di integrazione.
+
+[Issue tracker pubblico](https://github.com/italia/anpr/issues)
+
+[Forum di discussione tecnica](https://forum.developers.italia.it/c/anpr)
+
