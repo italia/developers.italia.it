@@ -39,7 +39,7 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
 
 In attesa di pubblicare altra documentazione relativa al progetto, qui per ora puoi trovare il documento architetturale:
 
-[Documento d'architettura dell'evoluzione di dati.gov.it](https://www.google.com)
+[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
 
 
 ## Codice sorgente
