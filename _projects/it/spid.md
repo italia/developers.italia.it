@@ -14,13 +14,9 @@ comingsoon: true
 layout: project
 socials:
   -
-    name: twitter
-    icon: twitter
-    link: //twitter.com
-  -
     name: facebook
     icon: facebook
-    link: //facebook.com
+    link: https://www.facebook.com/groups/agid.spid/
 ---
 
 SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai cittadini italiani di accedere a tutti i servizi online 
