@@ -38,24 +38,24 @@ lang: it
 
             {% assign desc = person[1].desc %}
             {% if desc %}
-            <h4 class="Grid-cell u-sizeFull u-textCenter
-              u-text-r-xxs u-textWeight-400 u-color-grey-50 u-margin-bottom-m">{{ desc }}</h4>
+            <h4 class="Grid-cell u-sizeFull u-textCenter u-margin-bottom-xxs
+              u-text-r-xxs u-textWeight-400 u-color-grey-50 ">{{ desc }}</h4>
             {% endif %}
 
 				    {% for project in projects %}
 					    {% if project.maintainers contains person[0] %}
-            <h4 class="Grid-cell u-sizeFull u-textCenter u-padding-r-top
-              u-text-r-xxs u-textWeight-400 u-color-grey-50 u-margin-bottom-m">
+            <h4 class="Grid-cell u-sizeFull u-textCenter u-margin-bottom-xxs
+              u-text-r-xxs u-textWeight-400 u-color-grey-50 ">
               <a class="u-color-50 u-textClean" href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
 					    {% endif %}
 					  {% endfor %}
 
-            <div class="Grid-cell u-sizeFull u-flexAlignSelfEnd u-margin-bottom-m">
+            <div class="Grid-cell u-sizeFull u-flexAlignSelfEnd u-margin-bottom-xs u-margin-bottom-s u-margin-top-xxs">
               <ul class="u-textCenter u-layoutCenter">
                 {% for contact in person[1].contacts %}
                     <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
                       <a href="{{ contact[1].link }}" title=""
-                        class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean
+                        class="u-padding-all-xs u-background-50 u-color-white u-inlineBlock u-linkClean
                           u-borderRadius-circle u-alignMiddle"
                         ><span class="Icon Icon-{{ contact[0] }}"></span>
                         <span class="u-hiddenVisually">{{ contact[1].name }}</span>
@@ -73,7 +73,7 @@ lang: it
   </div>
   <!-- <phi = k^i>  -->
 
-{% if false %} 
+{% if false %}
   <h2 class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
     {{ t.credits_contributors | capitalize }}</h2>
 
@@ -88,7 +88,7 @@ lang: it
             <h3 style="" class="Grid-cell u-sizeFull u-textCenter u-text-r-xs u-textWeight-600 u-margin-bottom-xxs">
               {{ person.name }}</h3>
 
-            <h4 class="Grid-cell u-sizeFull u-textCenter u-padding-r-top
+            <h4 class="Grid-cell u-sizeFull u-textCenter
               u-text-r-xxs u-textWeight-400 u-color-grey-50 u-margin-bottom-m">
               <a class="u-color-50 u-textClean" href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
 
