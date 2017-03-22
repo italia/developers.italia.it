@@ -37,7 +37,7 @@ layout: default
   <div class="u-layout-wide u-layoutCenter">
     <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
 
-      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort 'order' | reverse %}
+      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
 
       <div class="Grid Grid--withGutter">
 
