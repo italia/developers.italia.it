@@ -38,7 +38,7 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
 
 In attesa di pubblicare altra documentazione relativa al progetto, qui per ora puoi trovare il documento architetturale:
 
- * [Documento d'architettura dell'evoluzione di dati.gov.it](https://www.google.com)
+[Documento d'architettura dell'evoluzione di dati.gov.it](https://www.google.com)
 
 
 ## Codice sorgente
@@ -46,12 +46,13 @@ In attesa di pubblicare altra documentazione relativa al progetto, qui per ora p
 Qui puoi trovare l'attuale codice sorgente basato su DKAN (Drupal), e a breve pubblicheremo un documento per aiutarti a
 creare l'ambiente di sviluppo per contribuire:
 
- * [Repositorio GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
+[Repositorio GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
 
 Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da documento architetturale:
 
- * [Repositorio GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
- * [Nuovo frontend server](https://github.com/italia/dati-frontend)
+[Repositorio GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
+
+[Nuovo frontend server](https://github.com/italia/dati-frontend)
 
 
 ## Collaborazione
@@ -60,6 +61,8 @@ Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e open
 l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto
 un tracker pubblico su GitHub:
 
- * [Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
- * [Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues)
- * [Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects)
+[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+
+[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues)
+
+[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects)
