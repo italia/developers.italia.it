@@ -40,6 +40,14 @@ anche una serie di guide (vedi anche la roadmap qui sotto).
 
 [Regole tecniche](http://spid-regole-tecniche.readthedocs.io/en/latest/)
 
+## Collaborazione
+
+Abbiamo aperto un'area di discussione nel nostro forum, per risolvere le problematiche tecniche di integrazione,
+e a breve sarà disponibile anche un issue tracker pubblico.
+
+[Forum di discussione tecnica](https://forum.developers.italia.it/c/spid)
+
+
 ## Roadmap
 
 Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinvolgere la comunità:
@@ -66,11 +74,4 @@ Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (
 [Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
 
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
-
-
-## Collaborazione
-
-[π]
-
-
 
