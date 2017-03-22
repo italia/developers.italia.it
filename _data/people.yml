@@ -19,13 +19,13 @@ lorenzo:
   contacts:
     facebook:
       name: facebook
-      link: https://facebook.com
+      link: https://www.facebook.com/lorenzo.fabbri.334
     twitter:
       name: twitter
       link: https://twitter.com/lore77
     googleplus:
       name: google plus
-      link: https://google.com
+      link: https://plus.google.com/u/1/111352564816677762096
 matteo:
   name: Matteo De Santi
   desc: UX designer, Team Digitale
@@ -33,7 +33,7 @@ matteo:
   contacts:
     facebook:
       name: facebook
-      link: https://facebook.com
+      link: https://www.facebook.com/desantimatteo
     twitter:
       name: twitter
       link: https://twitter.com/matteo_desanti
