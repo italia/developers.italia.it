@@ -27,7 +27,7 @@ it:
       subitems:
       - title: Repository GitHub
         image: /assets/icons/tools/decorative_outlined_github.svg
-        url: https://github/italia
+        url: https://github.com/italia
       - title: Forum
         image: /assets/icons/tools/decorative_outlined_discourse.svg
         url: https://forum.developers.italia.it
