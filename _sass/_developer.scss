@@ -151,7 +151,10 @@
 .Person:after {
   padding-bottom: 100%;
 }
-
+.Person-social-link{
+  width:2em;
+  height: 2em;
+}
 @media screen and (min-width: 992px) {
 
   .Person-container:nth-child(3n+2) {
