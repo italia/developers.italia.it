@@ -1,7 +1,7 @@
 rasky:
   name: Giovanni Bajo
   desc: Developer Relation, Team Digitale
-  pic: https://pbs.twimg.com/profile_images/378800000333780998/1a0ab1d6b8a8bab44b810a7b05ad91a7.jpeg
+  pic: /assets/images/rasky.jpeg
   contacts:
     github:
       name: github
@@ -15,7 +15,7 @@ rasky:
 lorenzo:
   name: Lorenzo Fabbri
   desc: Content Designer, Team Digitale
-  pic: https://pbs.twimg.com/profile_images/779312477523828736/U1vxrM-g.jpg
+  pic: /assets/images/lorenzo.jpg
   contacts:
     facebook:
       name: facebook
@@ -29,7 +29,7 @@ lorenzo:
 matteo:
   name: Matteo De Santi
   desc: UX designer, Team Digitale
-  pic: https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAW0AAAAJDM1MGVhNmY4LTc1MDQtNDE5NS04ZTcxLWVkYzBhNTI0NGJhMQ.jpg
+  pic: /assets/images/matteo.jpg
   contacts:
     facebook:
       name: facebook
@@ -43,7 +43,7 @@ matteo:
 umbros:
   name: Umberto Rosini
   desc: IT Architect / Dev, AgID
-  pic: https://pbs.twimg.com/profile_images/785163352020553728/kmZ5qcCs_400x400.jpg
+  pic: /assets/images/umbros.jpg
   contacts:
     facebook:
       name: facebook
