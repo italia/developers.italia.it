@@ -11,9 +11,9 @@
   	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}Grid-cell u-size1of4 u-textCenter{% endif %}" class=" with-image">
 
       {% if item.url == "#" %}
-        {% assign _url = item.url | relative_url %}
-      {% else %}
         {% assign _url = item.url %}
+      {% else %}
+        {% assign _url = item.url | relative_url %}
       {% endif %}
 
   		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %}">
