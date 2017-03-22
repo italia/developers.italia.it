@@ -55,6 +55,7 @@ Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinv
 Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
 
 [Icone, loghi e grafiche SPID](https://github.com/italia/spid-graphics)
+
 [Bottone SPID (solo asset)](https://github.com/italia/spid-button)
 
 
@@ -63,8 +64,5 @@ Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
 Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (vedi roadmap):
 
 [Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
+
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
-
-
-
-
