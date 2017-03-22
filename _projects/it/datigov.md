@@ -12,6 +12,7 @@ layout: project
 maintainers:
   - alessandro
   - fabiana
+  - giorgia
 socials:
   -
     name: twitter

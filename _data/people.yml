@@ -82,6 +82,18 @@ fabiana:
     twitter:
       name: twitter
       link: https://twitter.com/FabianaLanotte
-
-
+giorgia:
+  name: Giorgia Lodi
+  desc: Data Engineer Consultant, AgID
+  pic: /assets/images/giorgia.jpg
+  contacts:
+    facebook:
+      name: facebook
+      link: https://www.facebook.com/giorgia.lodi.7
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/giorgia-lodi-4967444/
+    twitter:
+      name: twitter
+      link: https://twitter.com/GiorgiaLodi
 
