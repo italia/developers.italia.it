@@ -42,7 +42,7 @@
   <ul class="Footer-links u-cf u-color-80">
     {% for link in site.data.footer_links %}
       {% assign link_name = link[1].title %}
-      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+      <li><a href="/{{ active_lang }}{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
     {% endfor %}
   </ul>
 

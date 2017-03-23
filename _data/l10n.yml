@@ -12,7 +12,7 @@ it:
     footer_contacts: Contatti
     footer_contacts_sub: ''
     footer_link_privacy_policy: privacy policy
-    footer_link_toc: note legali
+    footer_link_legal_notes: note legali
     footer_title: ' '
     lang_on_site: sito in italiano
     navigation_menu_label: Menu di navigazione
@@ -74,7 +74,7 @@ en:
     footer_contacts: Contacts
     footer_contacts_sub: ''
     footer_link_privacy_policy: privacy policy
-    footer_link_toc: terms and conditions
+    footer_link_legal_notes: terms and conditions
     footer_title: ' '
     lang_on_site: website in english
     navigation_menu_label: Navigation menu
