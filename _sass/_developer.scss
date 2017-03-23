@@ -33,21 +33,47 @@
 
 .newsletter-wrapper {
   position:relative;
+  z-index: 0;
+  width: 100%;
+  margin: 0 auto;
 
-  .left-blue {
+  .newsletter-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 120%;
+    height: 158px;
 
-  }
+    &.blue {
+      z-index: -2;
+      transform: translateY(60px);
 
-  .right-blue {
+      .left {
+        transform: skewY(10deg);
+        transform-origin: 0 0;
+      }
 
-  }
+      .right {
+        transform: skewY(-10deg);
+        transform-origin: 100% 0;
+      }
+    }
 
-  .left-grey {
+    &.grey {
+      z-index: -1;
+      transform: translateY(60px);
 
-  }
+      .left {
+        transform: skewY(-8deg);
+        transform-origin: 100% 0;
+      }
 
-  .right-grey {
-    
+      .right {
+        transform: skewY(15deg);
+        transform-origin: 0 0;
+      }
+    }
   }
 }
 
