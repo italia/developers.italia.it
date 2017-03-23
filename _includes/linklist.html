@@ -16,11 +16,11 @@
         {% assign _url = item.url | relative_url %}
       {% endif %}
 
-  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %}">
-        {% if item.image %}
-        <img src="{{ item.image }}" data-megamenu-class="tool-image" class="tool-image" alt="{{ item.title }}" />
-        {% endif %}
+      {% if item.image %}
+        <img src="{{ item.image }}" data-megamenu-class="tool-image" class="tool-image" alt="" role="presentation" />
+      {% endif %}
 
+  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %}">
         {{ item.markup_pre }}
 				{{ t[item.title] | default: item.title }}
         {{ item.markup_post }}
