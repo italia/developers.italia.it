@@ -37,9 +37,9 @@ matteo:
     twitter:
       name: twitter
       link: https://twitter.com/matteo_desanti
-    googleplus:
-      name: google plus
-      link: https://google.com
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/matteodesanti
 umbros:
   name: Umberto Rosini
   desc: IT Architect / Dev, AgID
