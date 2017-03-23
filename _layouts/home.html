@@ -10,11 +10,11 @@ layout: default
     {{ t.home_hero }}</h2>
 </div>
 
-<div class="newsletter-wrapper">
+<!-- <div class="newsletter-wrapper">
   <div class="left-blue"></div>
   <div class="right-blue"></div>
   <div class="left-grey"></div>
-  <div class="right-grey"></div>
+  <div class="right-grey"></div> -->
   <div class="u-background-50 u-textCenter u-padding-r-all u-textCenter">
     <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
       {{ t.home_newsletter_title }}</h3>
@@ -32,14 +32,14 @@ layout: default
         </button>
       </div>
     </form>
+    <p class="u-textCenter u-layoutCenter u-padding-r-all u-text-r-xs u-color-10 u-layout-prose">{{ t.home_newsletter_footer }}</p>
   </div>
-</div>
+<!-- </div> -->
 
-<!-- <hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" /> -->
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
 
 <section class="u-nbfc u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-  <p class="u-textCenter u-layoutCenter u-padding-r-all u-text-r-xs u-color-grey-40 u-layout-prose">{{ t.home_newsletter_footer }}</p>
   <div class="u-layout-wide u-layoutCenter">
     <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
 
@@ -55,6 +55,7 @@ layout: default
             {% include card.html
               title=project.title
               link=project.url
+              comingsoon=project.comingsoon
               subtitle=subtitle
               text=project.description
               socials=project.socials

@@ -36,7 +36,8 @@ it:
         image: /assets/icons/tools/decorative_outlined_api.svg
         markup_post: >
           <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs">
+            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+              u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
               in arrivo
             </span>
           </div>

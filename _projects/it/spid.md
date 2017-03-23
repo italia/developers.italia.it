@@ -11,7 +11,7 @@ maintainers:
 lang: it
 order: 1
 highlight: true
-comingsoon: true
+comingsoon: false
 layout: project
 socials:
   -
@@ -21,7 +21,7 @@ socials:
 ---
 
 ## Intro
-SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai cittadini italiani di accedere a tutti i servizi online 
+SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai cittadini italiani di accedere a tutti i servizi online
 della Pubblica Amministrazione con un'unica Identità Digitale (username e password) utilizzabile da computer, tablet e smartphone.
 Il cittadino può ottenere SPID tramite una serie di aziende private convenzionate (dette Identity Provider); una volta completata
 la procedura di verifica (che certifica l'identità del richiedente), vengono rilasciate un set di credenziali che possono essere

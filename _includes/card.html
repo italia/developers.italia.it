@@ -19,6 +19,12 @@
       <h3 class="u-padding-bottom-xs">
         <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
           {{ include.title }}
+
+          {% if include.comingsoon %}
+          <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
+          {{ t.coming_soon }}</span>
+          {% endif %}
         </a>
       </h3>
 
