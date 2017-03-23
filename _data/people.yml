@@ -110,5 +110,24 @@ marcello:
     twitter:
       name: twitter
       link: https://twitter.com/marcelloverona
-  
+carlo:
+  name: Carlo Contavalli
+  desc: Software Architect, Team Digitale
+  pic: /assets/images/carlo.jpeg
+  contacts:
+    github:
+      name: github
+      link: https://github.com/ccontavalli
+    medium:
+      name: medium
+      link: https://medium.com/@ccontavalli  
+mirko:
+  name: Mirko Calvaresi
+  desc: Project Manager, Team Digitale
+  pic: /assets/images/mirko.jpeg
+  contacts:
+    github:
+      name: github
+      link: https://github.com/mccalv
+
 
