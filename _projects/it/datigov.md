@@ -57,7 +57,7 @@ Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da doc
 
 [Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
 
-[Nuovo frontend server](https://github.com/italia/dati-frontend)
+[Nuovo frontend server](https://github.com/italia/dati-frontendserver)
 
 
 ## Collaborazione
