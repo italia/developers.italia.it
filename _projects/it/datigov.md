@@ -26,7 +26,7 @@ socials:
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
 ---
 
-## Documentazione
+## Intro
 Trasparenza, riutilizzo, partecipazione sono alcune delle parole cardine che guidano il processo di apertura del dato e vengono ereditate dalla  comunità del software libero, che produce da anni un modello di sviluppo di codice software di alta qualità basato su principi di condivisione ed apertura.
 
 Il nostro obiettivo è quello di **evolvere l’attuale portale online** da catalogo dei dati aperti ad un sistema che offra strumenti e servizi sviluppati in condivisione con la comunità che quindi ne estenda le potenzialità.
