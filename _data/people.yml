@@ -96,4 +96,19 @@ giorgia:
     twitter:
       name: twitter
       link: https://twitter.com/GiorgiaLodi
+marcello:
+  name: Marcello Verona
+  desc: Developer Consultant, FormezPA
+  pic: /assets/images/marcello.jpeg
+  contacts:
+    github:
+      name: github
+      link: https://github.com/marciuz/
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/marcelloverona/
+    twitter:
+      name: twitter
+      link: https://twitter.com/marcelloverona
+  
 

@@ -13,6 +13,7 @@ maintainers:
   - alessandro
   - fabiana
   - giorgia
+  - marcello
 socials:
   -
     name: twitter
