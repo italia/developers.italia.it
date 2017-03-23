@@ -11,10 +11,8 @@ comingsoon: true
 layout: project
 ---
 
-ANPR è un progetto storico: invece di avere più di 6000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una
-anagrafe centrale unica, operabile anche direttamente in self-service dal cittadino, che semplificherà tutti gli adempimenti. Pensate alla
-bellezza di poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare
-un certificato di stato di famiglia.
+### Intro
+ANPR è un progetto storico: invece di avere più di 6000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, operabile anche direttamente in self-service dal cittadino, che semplificherà tutti gli adempimenti. Pensate alla bellezza di poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Ma questo è solo l'inizio: avete mai pensato perché vi viene chiesto di andare a chiedere un certificato all'anagrafe? Semplice: come può una
 Pubblica Amministrazione (per esempio, l'INPS) integrarsi con tutte le anagarfi sul territorio per estrarre le informazioni di cui è bisogno?
@@ -26,15 +24,15 @@ c'è un sacco di lavoro da fare: entra in contatto con noi sul forum.
 
 
 ### Documentazione
-
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile
 tutte le tabelle e codici.
 
 [Documentazione tabelle e codici](http://anpr.readthedocs.io/en/latest/)
 
+### Codice sorgente
+
 
 ### Collaborazione
-
 Abbiamo creato degli strumenti di collaborazione completamente aperti, cioè un issue tracker pubblico e un forum dedicato alla discussione
 delle problematiche tecniche di integrazione.
 
