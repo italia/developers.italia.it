@@ -4,7 +4,13 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl project-title-wrapper">
+  <div class="project-shadow2">
+    {{ page.title }}
+  </div>
+  <div class="project-shadow1">
+    {{ page.subtitle }}
+  </div>
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
     {% if page.comingsoon %}
       <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left

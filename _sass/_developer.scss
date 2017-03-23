@@ -60,6 +60,47 @@
   }
 }
 
+/* Project shadows
+  ======================== */
+#main {
+  overflow: hidden;
+
+  .project-title-wrapper {
+    position: relative;
+    z-index: 0;
+
+    .project-shadow1 {
+      color: #06c;
+      font-size: 112px;
+      line-height: 170px;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      text-overflow: clip;
+      text-shadow: 0 -30px 100px rgba(0, 0, 0, 0.2);
+      top: 5px;
+      left: 0;
+      white-space: nowrap;
+      z-index: -1;
+    }
+
+    .project-shadow2 {
+      color: #0059B3;
+      font-size: 120px;
+      font-weight: bold;
+      line-height: 183px;
+      position: absolute;
+      text-shadow: 0 20px 50px 0 rgba(0,0,0,0.1);
+      top: -0.2em;
+      z-index: -2;
+    }
+
+    .project-title {
+      // z-index: 1;
+    }
+  }
+}
+
 /* Footer
   ======================== */
 
