@@ -1,5 +1,6 @@
 ---
 title: 18App e Carta Docente
+subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
