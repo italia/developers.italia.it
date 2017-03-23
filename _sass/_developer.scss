@@ -86,15 +86,30 @@
     font-weight: bold;
     height: 100%;
     position: absolute;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    // margin: auto;
     text-align: center;
     text-shadow: 0 -30px 100px rgba(0, 0, 0, 0.2);
     width: 100%;
     z-index: -1;
+
+    @media screen and (max-width: 1350px) {
+      font-size: 25em;
+    }
+
+    @media screen and (max-width: 1225px) {
+      font-size: 20em;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 15em;
+    }
+
+    @media screen and (max-width: 688px) {
+      font-size: 10em;
+    }
+
+    @media screen and (max-width: 443px) {
+      font-size: 5em;
+    }
   }
 }
 
