@@ -166,10 +166,17 @@
 /* Prose
    ======== */
 
-li a,
-p a:visited,
-p a {
+.Content a,
+.Content a:visited,
+.Content li a,
+.Content p a:visited,
+.Content p a {
   color: #06c !important;
+  font-size: inherit !important;
+}
+
+.Content p em,
+.Content p strong {
   font-size: inherit !important;
 }
 

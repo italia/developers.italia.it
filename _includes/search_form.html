@@ -3,8 +3,7 @@
     <input data-menu-trigger="projects" class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus u-borderRadius-s" required id="cerca" autocomplete="off" value="" />
     <label class="Form-label u-color-grey-50 u-text-r-xxs" for="cerca">{{ t.search_form_label }}...</label>
 
-        <div id="projects" data-menu class="Dropdown-menu Header-language-other u-jsVisibilityHidden u-nojsDisplayNone u-sizeFull"
-          aria-live="polite">
+        <div id="projects" data-menu class="Dropdown-menu Header-language-other u-jsVisibilityHidden u-nojsDisplayNone u-sizeFull">
           <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
           <ul class="Linklist">
             {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %} {% for project in projects %}

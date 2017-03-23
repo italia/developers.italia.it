@@ -10,7 +10,7 @@
   {% for item in items %}
   	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}Grid-cell u-size1of4 u-textCenter{% endif %}" class=" with-image">
 
-      {% if item.url == "#" %}
+      {% if item.url == "#" or item.url contains '//' %}
         {% assign _url = item.url %}
       {% else %}
         {% assign _url = item.url | relative_url %}
