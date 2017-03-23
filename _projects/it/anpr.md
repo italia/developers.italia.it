@@ -10,7 +10,7 @@ maintainers:
   - carlo
   - mirko
 highlight: true
-comingsoon: true
+comingsoon: false
 layout: project
 ---
 
