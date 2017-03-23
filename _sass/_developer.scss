@@ -31,6 +31,47 @@
   content: "\4c";
 }
 
+.newsletter-wrapper {
+  position:relative;
+
+  .left-blue {
+
+  }
+
+  .right-blue {
+
+  }
+
+  .left-grey {
+
+  }
+
+  .right-grey {
+    
+  }
+}
+
+.tools-wrapper {
+  position: relative;
+
+  .tools-shadow {
+    color: #06c;
+    font-size: 30em;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // margin: auto;
+    text-align: center;
+    text-shadow: 0 -30px 100px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: -1;
+  }
+}
+
 /* Project page background
   ======================== */
 

@@ -10,30 +10,36 @@ layout: default
     {{ t.home_hero }}</h2>
 </div>
 
-<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter">
-  <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ t.home_newsletter_title }}</h3>
-  <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12 u-layoutCenter" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="post" target="_blank">
-    <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xxl">
-      <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
+<div class="newsletter-wrapper">
+  <div class="left-blue"></div>
+  <div class="right-blue"></div>
+  <div class="left-grey"></div>
+  <div class="right-grey"></div>
+  <div class="u-background-50 u-textCenter u-padding-r-all u-textCenter">
+    <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+      {{ t.home_newsletter_title }}</h3>
+    <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12 u-layoutCenter" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="post" target="_blank">
+      <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xxl">
+        <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
+          </button>
+        <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus "
+          required id="newsletter" name="email" />
+        <label class="Form-label u-color-grey-50 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
+            {{t.home_newsletter_placeholder }}</span></label>
+        <input type="hidden" name="list" value="1">
+        <button type="submit" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
+         {{ t.home_newsletter_button }}
         </button>
-      <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus "
-        required id="newsletter" name="email" />
-      <label class="Form-label u-color-grey-50 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
-          {{t.home_newsletter_placeholder }}</span></label>
-      <input type="hidden" name="list" value="1">
-      <button type="submit" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
-       {{ t.home_newsletter_button }}
-      </button>
-    </div>
-  </form>
-  <p class="u-textCenter u-layoutCenter u-padding-r-all u-text-r-xs u-color-10 u-layout-prose">{{ t.home_newsletter_footer }}</p>
+      </div>
+    </form>
+  </div>
 </div>
 
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
+<!-- <hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" /> -->
 
 <section class="u-nbfc u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
+  <p class="u-textCenter u-layoutCenter u-padding-r-all u-text-r-xs u-color-grey-40 u-layout-prose">{{ t.home_newsletter_footer }}</p>
   <div class="u-layout-wide u-layoutCenter">
     <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
 
@@ -133,21 +139,28 @@ layout: default
 <hr class="Separator Separator--up u-background-50" />
 
 <section class="u-background-50 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+
   <div class="u-layout-wide u-layoutCenter u-textCenter u-padding-bottom-xxl">
     <h2 class="u-text-r-l u-textWeight-300 u-color-white u-padding-r-bottom">{{ t.home_tools_title }}</h2>
     <p class="u-text-r-xs u-color-5 u-layout-prose u-textCenter u-layoutCenter">{{ t.home_tools_subtitle }}</p>
-    <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
+    <div class="tools-wrapper">
+      <div class="Grid tools-shadow">
+        <div class="u-layoutLeft">&lsaquo;</div>
+        <div class="u-layoutCenter"></div>
+        <div class="u-layoutRight">/&rang;</div>
+      </div>
 
-      {% for tool in site.data.tools[active_lang] %}
-        <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
-          <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
-        </div>
-        <div class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
-          <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
-          <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
-        </div>
-      {% endfor %}
-
+      <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
+        {% for tool in site.data.tools[active_lang] %}
+          <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
+            <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
+          </div>
+          <div class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
+            <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
+            <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
