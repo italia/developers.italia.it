@@ -32,6 +32,7 @@ potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una po
 
 
 **Roadmap**
+
 Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinvolgere la comunità:
 
  * Creazione di plugin per i principali CMS (Wordpress, Drupal, Joomla, ecc.)
@@ -41,8 +42,7 @@ Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinv
 
 
 ## Documentazione
-SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali. A breve pubblicheremo
-anche una serie di guide (vedi anche la roadmap qui sotto).
+SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali.
 
 [Regole tecniche](http://spid-regole-tecniche.readthedocs.io/en/latest/)
 
@@ -55,6 +55,7 @@ Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
 
 **Grafica**
+
 Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
 
 [Icone, loghi e grafiche SPID](https://github.com/italia/spid-graphics)
