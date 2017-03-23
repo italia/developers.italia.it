@@ -21,6 +21,7 @@ url: "https://developers.italia.it"
 twitter_username: developersITA
 github_username:  italia
 piwik: teamdigitale
+google_analytics: UA-96140462-1
 
 # Build settings
 markdown: kramdown
