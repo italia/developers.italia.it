@@ -2,6 +2,7 @@ rasky:
   name: Giovanni Bajo
   desc: Developer Relation, Team Digitale
   pic: /assets/images/rasky.jpeg
+  status: maintainer
   contacts:
     github:
       name: github
@@ -16,6 +17,7 @@ lorenzo:
   name: Lorenzo Fabbri
   desc: Content Designer, Team Digitale
   pic: /assets/images/lorenzo.jpg
+  status: maintainer
   contacts:
     facebook:
       name: facebook
@@ -30,6 +32,7 @@ matteo:
   name: Matteo De Santi
   desc: UX designer, Team Digitale
   pic: /assets/images/matteo.jpg
+  status: maintainer
   contacts:
     facebook:
       name: facebook
@@ -44,6 +47,7 @@ umbros:
   name: Umberto Rosini
   desc: IT Architect / Dev, AgID
   pic: /assets/images/umbros.jpg
+  status: maintainer
   contacts:
     facebook:
       name: facebook
@@ -58,6 +62,7 @@ alessandro:
   name: Alessandro Ercolani
   desc: Data Engineer, Team Digitale
   pic: https://teamdigitale.governo.it/images/team/alessandro-ercolani.jpg
+  status: maintainer
   contacts:
     github:
       name: github
@@ -72,6 +77,7 @@ fabiana:
   name: Fabiana Lanotte
   desc: Data Engineer, Team Digitale
   pic: https://teamdigitale.governo.it/images/team/fabiana-lanotte.jpg
+  status: maintainer
   contacts:
     github:
       name: github
@@ -86,6 +92,7 @@ giorgia:
   name: Giorgia Lodi
   desc: Data Engineer Consultant, AgID
   pic: /assets/images/giorgia.jpg
+  status: maintainer
   contacts:
     facebook:
       name: facebook
@@ -100,6 +107,7 @@ marcello:
   name: Marcello Verona
   desc: Data Architect & Dev
   pic: /assets/images/marcello.jpeg
+  status: maintainer
   contacts:
     github:
       name: github
@@ -114,20 +122,36 @@ carlo:
   name: Carlo Contavalli
   desc: Software Architect, Team Digitale
   pic: /assets/images/carlo.jpeg
+  status: maintainer
   contacts:
     github:
       name: github
       link: https://github.com/ccontavalli
     medium:
       name: medium
-      link: https://medium.com/@ccontavalli  
+      link: https://medium.com/@ccontavalli
 mirko:
   name: Mirko Calvaresi
   desc: Project Manager, Team Digitale
   pic: /assets/images/mirko.jpeg
+  status: maintainer
   contacts:
     github:
       name: github
       link: https://github.com/mccalv
 
-
+antony:
+  name: Matteo Antony Mistretta
+  desc: Software Engineer, Inglorious Coderz
+  pic: /assets/images/antony.jpg
+  status: contributor
+  contacts:
+    github:
+      name: github
+      link: https://github.com/IngloriousCoderz
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/antonymistretta
+    twitter:
+      name: twitter
+      link: https://twitter.com/antonymistretta
