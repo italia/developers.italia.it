@@ -18,8 +18,8 @@ email: teamdigitale@governo.it
 description: .it Developers - La comunità italiana degli sviluppatori di servizi pubblici
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: developersITA
+github_username:  italia
 piwik: teamdigitale
 
 # Build settings
