@@ -24,6 +24,7 @@ socials:
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
 ---
 
+## Documentazione
 Trasparenza, riutilizzo, partecipazione sono alcune delle parole cardine che guidano il processo di apertura del dato e vengono ereditate dalla  comunità del software libero, che produce da anni un modello di sviluppo di codice software di alta qualità basato su principi di condivisione ed apertura.
 
 Il nostro obiettivo è quello di **evolvere l’attuale portale online** da catalogo dei dati aperti ad un sistema che offra strumenti e servizi sviluppati in condivisione con la comunità che quindi ne estenda le potenzialità.
@@ -34,6 +35,7 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
  * Codice sorgente aperto fin dall’inizio
  * Un sistema di tracciamento degli errori pubblico
  * Documentazione del codice e delle API chiaro
+
 
 ## Documentazione
 
@@ -47,11 +49,12 @@ In attesa di pubblicare altra documentazione relativa al progetto, qui per ora p
 Qui puoi trovare l'attuale codice sorgente basato su DKAN (Drupal), e a breve pubblicheremo un documento per aiutarti a
 creare l'ambiente di sviluppo per contribuire:
 
-[Repositorio GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
+[Repo GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
+
 
 Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da documento architetturale:
 
-[Repositorio GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
+[Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
 
 [Nuovo frontend server](https://github.com/italia/dati-frontend)
 
