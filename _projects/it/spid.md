@@ -1,5 +1,6 @@
 ---
 title: SPID
+subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/logo-spid@2x.png
 payoff: Sistema Pubblico di Identità Digitale
 description: >

@@ -1,5 +1,6 @@
 ---
 title: dati.gov.it
+subtitle: I dati aperti della pubblica amministrazione
 logo: /assets/images/logo-dati.gov.it@2x.png
 payoff: I dati aperti della pubblica amministrazione
 description: >

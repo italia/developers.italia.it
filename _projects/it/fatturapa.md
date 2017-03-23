@@ -1,5 +1,6 @@
 ---
 title: FatturaPA
+subtitle: La fattura elettronica
 logo: /assets/images/logo-fatturapa@2x.png
 payoff: La fatturazione elettronica verso lo Stato e tra privati
 description: >
