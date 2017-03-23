@@ -15,31 +15,24 @@ layout: project
 ---
 
 ### Intro
-ANPR è un progetto storico: invece di avere più di 6000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, operabile anche direttamente in self-service dal cittadino, che semplificherà tutti gli adempimenti. Pensate alla bellezza di poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
+ANPR è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti. 
+In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
-Ma questo è solo l'inizio: avete mai pensato perché vi viene chiesto di andare a chiedere un certificato all'anagrafe? Semplice: come può una
-Pubblica Amministrazione (per esempio, l'INPS) integrarsi con tutte le anagarfi sul territorio per estrarre le informazioni di cui è bisogno?
-E' per questo che l'incombenza viene scaricata sul cittadino. Con ANPR, tutto cambia.
+Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con ANPR, tutto cambia.
 
-Ad oggi, l'accesso ad ANPR è riservato solo ai software delle anagrafi comunali, e dunque questa sezione è dedicata principalmente 
-alle in-house e software house che stanno supportando i comuni nell'aggiornamento. Se però vuoi aiutarci a realizzare questa visione, 
-c'è un sacco di lavoro da fare: entra in contatto con noi sul forum.
+Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante. 
 
 
 ### Documentazione
-Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile
-tutte le tabelle e codici.
+Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
 
 [Documentazione tabelle e codici](http://anpr.readthedocs.io/en/latest/)
 
-### Codice sorgente
-
 
 ### Collaborazione
-Abbiamo creato degli strumenti di collaborazione completamente aperti, cioè un issue tracker pubblico e un forum dedicato alla discussione
-delle problematiche tecniche di integrazione.
+Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un *issue tracker* e un forum dedicato alla discussione delle problematiche di integrazione.
 
-[Issue tracker pubblico](https://github.com/italia/anpr/issues)
+[Issue tracker](https://github.com/italia/anpr/issues)
 
-[Forum di discussione tecnica](https://forum.developers.italia.it/c/anpr)
+[Forum di discussione](https://forum.developers.italia.it/c/anpr)
 
