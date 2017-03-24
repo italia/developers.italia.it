@@ -1,0 +1,16 @@
+---
+title: Can I contribute to a project?
+text: >
+  Of course! Once  you have chosen the project, familiarise with it by reading the
+  [documentation](https://docs.developers.italia.it/) and chekc the roadmap to understand what are
+  the current and future goals. A that point open a thread on our
+  [forum](https://forum.developers.italia.it) to get in touch with the *maintainer* and the
+  community and describe to us what are your ideas.
+  Once you have broken the ice you can take the reins of the project: all the open source code, the
+  documentation, and the examples will be released under the Open Source license, usually the
+  [MIT license](https://en.wikipedia.org/wiki/MIT_License) but insome cases a different license
+  will be used instead.
+  To contribute just open a pull request on [GitHub](https://github.com/italia/developers.italia.it).
+order: 6
+lang: en
+---

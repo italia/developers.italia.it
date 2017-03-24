@@ -1,0 +1,16 @@
+---
+title: What the mmeaning of "project's maintainer"?
+text: >
+  In this website for "maintaner" we mean the people in charge of write the source code, the
+  documentation, and the examples of the projects, also they are in charge of interact with the
+  developers's community giving them support on adopting the technology.
+  Tipically the *maintaners* works in closely with the product owner of the project and with the
+  technical staff of the Public Administration. For example: PagoPA, the centralised payment system
+  of the Public Administration, it's project of the AgID (Agenzia per l'Italia Digitale); the
+  *maintainers* which you can see in Developers Italia will help AgID and will provide support to
+  the community to adopt PagoPA by thousand of people, building and maintaining the plugins for the
+  most common CMS, interface libraries for Python or Ruby, and documentation of the APIs in
+  technical language.
+order: 3
+lang: en
+---
