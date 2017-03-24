@@ -60,6 +60,8 @@ it:
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
 
+    in_collaboration_with: In collaborazione con
+
 en:
   code: eng
   name: english
@@ -121,3 +123,5 @@ en:
 
     status_member_of_board: member of board
     status_maintainer: maintainer
+
+    in_collaboration_with: In collaboration with
