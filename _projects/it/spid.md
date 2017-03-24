@@ -38,7 +38,7 @@ Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinv
 
  * Creazione di plugin per i principali CMS (Wordpress, Drupal, Joomla, ecc.)
  * Scheletri di integrazione in ambito mobile (iOS, Android)
- * Testsuite di validazione dell'integrazioen di SPID
+ * Testsuite di validazione dell'integrazione di SPID
  * Ambiente di testing e validazione di SPID
 
 
