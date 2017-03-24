@@ -5,7 +5,7 @@ layout: page
 ---
 
 ### Note Legali
-[http://developers.italia.it](http://developers.italia.it) è un sito che ha l’obiettivo di contribuire alla crescita e al coordinamento di una community di sviluppatori interessati allo sviluppo di codice strumentale al funzionamento dei servizi online della pubblica amministrazione.
+[https://developers.italia.it](https://developers.italia.it) è un sito che ha l’obiettivo di contribuire alla crescita e al coordinamento di una community di sviluppatori interessati allo sviluppo di codice strumentale al funzionamento dei servizi online della pubblica amministrazione.
 Il sito è gestito dall'Agenzia per l'Italia Digitale.
 
 In taluni casi (forum di discussione) per accedere ai contenuti e/o fruire dei Servizi potrebbe essere necessario utilizzare delle credenziali rilasciate dai gestori di altri servizi (es: github o google) o registrarsi, richiedendo l’attribuzione di nuove credenziali.
@@ -20,7 +20,7 @@ Le previsioni che precedono relative alla pubblicazione di contenuti attraverso 
 
 La titolarità di tutti i documenti e contenuti (testi, presentazioni, immagini, foto, video, ecc.) è dell'Agenzia per l'Italia Digitale.
 La visualizzazione, il download e qualunque utilizzo dei dati pubblicati sul Sito comporta accettazione delle presenti note legali e delle condizioni della licenza con cui sono pubblicati.
-Salvo ove diversamente indicato, i contenuti pubblicati sul presente sito sono messi a disposizione con licenza CC–BY 3.0, il cui testo integrale è disponibile al seguente indirizzo: [http://creativecommons.org/licenses/by/3.0/it/legalcode](http://creativecommons.org/licenses/by/3.0/it/legalcode).
+Salvo ove diversamente indicato, i contenuti pubblicati sul presente sito sono messi a disposizione con licenza CC–BY 3.0, il cui testo integrale è disponibile al seguente indirizzo: [https://creativecommons.org/licenses/by/3.0/it/legalcode](https://creativecommons.org/licenses/by/3.0/it/legalcode).
 Questo significa che, ove non diversamente specificato, i contenuti di questo sito sono liberamente distribuibili e riutilizzabili, a patto che sia sempre citata la fonte e – ove possibile – riportato l'indirizzo web della pagina originale.
 Il codice sorgente del Sito è invece disponibile qui sulla piattaforma Github e, pertanto, riutilizzabile nei limiti di cui alla relativa licenza.
 L'Agenzia per l'Italia Digitale si impegna costantemente per assicurare la qualità delle informazioni pubblicate sul sito, nonché la loro integrità, aggiornamento , completezza, tempestività , semplicità di consultazione e accessibilità.
