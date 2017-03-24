@@ -1,11 +1,11 @@
 ---
 title: FatturaPA
-subtitle: La fattura elettronica
+subtitle: The electronic invoice
 logo: /assets/images/logo-fatturapa@2x.png
-payoff: La fatturazione elettronica verso lo Stato e tra privati
+payoff: The electronic invoice between the Governemnt and the private sector
 description: >
-  Un formato XML per descrivere in modo non ambiguo una fattura: scopri come può essere utile, anche tra privati, e come integrarlo nei tuoi
-  software gestionali.
+  An XML format to describe without ambiguity an invoce: discover how this can be useful, even
+  between the businesses in the private sector, and how integrate this in your software.
 lang: en
 order: 5
 highlight: false

@@ -1,11 +1,11 @@
 ---
-title: 18App e Carta Docente
-subtitle: Bonus cultura e formazione
+title: 18App and Carta Docente
+subtitle: Bonus culture and education
 logo: /assets/images/logo-18app-cartadocente@2x.png
-payoff: La piattaforma dove spendere i bonus cultura e formazione
+payoff: The platform where to spend the culture and education's bonus
 description: >
-  Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace
-  con la piattaforma.
+  If you are a business owner and you want to integrate with the platform here you can find all the
+  detailed informations about how to integrate efficently with the platform
 lang: en
 order: 3
 highlight: false
@@ -24,4 +24,3 @@ socials:
 
 
 ## Coming soon...
-
