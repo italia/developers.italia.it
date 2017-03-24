@@ -161,7 +161,11 @@ layout: default
             <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
           </div>
           <div class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
-            <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">{{ tool.title | capitalize }}</h3>
+            <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">
+              <a href="{{ tool.url }}" class="u-color-white u-textClean">
+                {{ tool.title | capitalize }}
+              </a>
+            </h3>
             <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
           </div>
         {% endfor %}
