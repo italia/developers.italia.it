@@ -14,8 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+title: Developers Italia
+description: La comunità italiana degli sviluppatori di servizi pubblici
+author: Team Digitale e AgID
+twitter:
+  username: developersITA
+
 email: teamdigitale@governo.it
-description: .it Developers - La comunità italiana degli sviluppatori di servizi pubblici
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: developersITA

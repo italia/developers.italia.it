@@ -1,7 +1,8 @@
 ---
 layout: home
 lang: en
-title: Home
+title: Developers Italia
+description: The Italian community of developers of public services
 permalink: /en/
 top_projects_link: /en/projects
 ---
