@@ -164,6 +164,14 @@ layout: default
             <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">
               <a href="{{ tool.url }}" class="u-color-white u-textClean">
                 {{ tool.title | capitalize }}
+
+                {% if tool.comingsoon %}
+                <div class="u-inlineBlock u-padding-left-xs">
+                  <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+                    u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
+                  {{ t.coming_soon }}</span>
+                </div>
+                {% endif %}
               </a>
             </h3>
             <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>

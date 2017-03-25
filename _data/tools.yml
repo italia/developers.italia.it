@@ -16,6 +16,7 @@ it:
   -
     title: Sandbox per API
     subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
+    comingsoon: true
     icon: settings
 
 en:
