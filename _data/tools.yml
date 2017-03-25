@@ -37,4 +37,5 @@ en:
   -
     title: API Sandbox
     subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.
+    comingsoon: true
     icon: settings
