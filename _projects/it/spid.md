@@ -4,7 +4,7 @@ subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/logo-spid@2x.png
 payoff: Sistema Pubblico di Identità Digitale
 description: >
-  Lo SPID è la carta d'identità digitale dei cittadini: una credenziale unica di accesso, con identità verificata, che può essere integrata
+  Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata
   secondo lo standard SAML su siti pubblici ma anche privati.
 maintainers:
   - umbros
