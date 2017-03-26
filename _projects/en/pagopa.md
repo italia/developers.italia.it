@@ -1,9 +1,11 @@
 ---
 title: PagoPA
-subtitle: Nodo di pagamento verso la Pubblica Amministrazione 
+subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
-payoff: Nodo dei Pagamenti verso la Pubblica Amministrazione
-description: Un unico nodo di pagamento, con un'unica interfaccia verso il cittadino, per pagare dai tributi alla gita scolastica dei figli con carte di credito, bonifici o anche via app.
+payoff: Payment interface towards the Public Administration
+description: >
+  A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
+  event via an app.
 lang: en
 order: 4
 highlight: false

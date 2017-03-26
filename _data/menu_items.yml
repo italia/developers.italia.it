@@ -74,13 +74,13 @@ en:
       subitems:
       - title: Repository GitHub
         image: /assets/icons/tools/decorative_outlined_github.svg
-        url: /
+        url: https://github.com/italia
       - title: Forum
         image: /assets/icons/tools/decorative_outlined_discourse.svg
-        url: /
+        url: https://forum.developers.italia.it
       - title: Docs
         image: /assets/icons/tools/decorative_outlined_docs.svg
-        url: /
+        url: https://docs.developers.italia.it
       - title: API Sandbox
         image: /assets/icons/tools/decorative_outlined_api.svg
         url: /

@@ -29,7 +29,7 @@ At the moment, the integration of SPID is allowed only on the websites of the Pu
 
 We have scheduled for 2017 the following developments, for which we want to involve the community:
 
- * Creation of plugins for the main CMS (Wordpress, Drupal, Joomla, etc.)
+ * Creation of plugins for the main CMSes (Wordpress, Drupal, Joomla, etc.)
  * Integrations on mobiles (iOS, Android)
  * Testsuite of validation of the integration of SPID
  * Testing and validation of SPID

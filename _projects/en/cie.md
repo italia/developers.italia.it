@@ -1,11 +1,12 @@
 ---
 title: CIE
-subtitle: Carta d'Identità Elettronica
+subtitle: Electronic Identity Card
 logo: /assets/images/logo-cie@2x.png
-payoff: Carta d'Identità Elettronica
+payoff: Electronic Identity Card
 description: >
-  La nuova carta d'identità è molto più che un pezzo di plastica: puoi comunicarci via NFC, per usarla per varchi d'ingresso o come
-  certificato SSL d'identità.
+  The new electronic identity card is more than a simple piece of plastic: you can communicate with
+  us by NFC, use it to cross ticket barriers or to obtain an SSL certificate connected to your
+  identity
 lang: en
 order: 9
 highlight: true
