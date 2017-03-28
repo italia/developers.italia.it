@@ -51,6 +51,8 @@ Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (
 
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
 
+[Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook)
+
 **Grafica**
 
 Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:

@@ -155,3 +155,16 @@ antony:
     twitter:
       name: twitter
       link: https://twitter.com/antonymistretta
+
+federico:
+  name: Federico Feroldi
+  desc: Software Architect, Team Digitale
+  pic: /assets/images/federico.jpg
+  status: contributor
+  contacts:
+    github:
+      name: github
+      link: https://github.com/cloudify
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/feroldi
