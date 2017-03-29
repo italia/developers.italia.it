@@ -36,20 +36,24 @@ We have scheduled for 2017 the following developments, for which we want to invo
 
 
 
-## Documentazione
+## Documentation
+
 SPID uses an open protocol (SAML 2) that can be implemented by applying the official technical rules.
 
 [Technical rules](http://spid-regole-tecniche.readthedocs.io/en/latest/)
 
 
-## Codice sorgente
+## Source code
+
 The released code is still very little, we have big plans about it (see roadmap):
 
 [SPID button, with integrated IdP choice](https://github.com/italia/spid-sp-access-button)
 
 [Standard IdP layout](https://github.com/italia/spid-idp-login-layout)
 
-**Grafica**
+[Ansible playbook for SP](https://github.com/italia/spid-sp-playbook)
+
+**UI**
 
 We published some useful asset during the integration procedure:
 
@@ -58,7 +62,8 @@ We published some useful asset during the integration procedure:
 [SPID button (asset only)](https://github.com/italia/spid-button)
 
 
-## Collaborazione
+## Contributing
+
 We opened an area of discussion in our forum, to solve the technical problems of integration, and a public issue tracker will be soon available.
 
 [Forum for technical discussion](https://forum.developers.italia.it/c/spid)
