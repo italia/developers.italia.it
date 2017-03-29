@@ -25,7 +25,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.9.1)
+    jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.12.1)
@@ -65,7 +65,7 @@ PLATFORMS
 DEPENDENCIES
   hawkins
   jekyll (= 3.4.1)
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.9.2)
   jekyll-paginate
   jekyll-redirect-from
   jekyll-seo-tag
