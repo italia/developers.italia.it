@@ -51,6 +51,8 @@ Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (
 
 [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
 
+[Tool di firma metadata SAML SPID](https://github.com/italia/spid-metadata-signer)
+
 **Grafica**
 
 Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
