@@ -94,7 +94,7 @@ layout: default
                 <a href="{{ page.top_projects_link | relative_url }}" class="u-color-white u-textClean">
                   <span class="u-text-r-l">{{ t.home_projects_others }}</span>
                 <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
-                  u-textWeight-400">{{ site.projects | size }} {{ t.home_projects_count }}</span>
+                u-textWeight-400">{{ site.projects | where: 'lang', active_lang | size }} {{ t.home_projects_count }}</span>
                 </a>
               </h4>
               <span class="Icon Icon-chevron-right u-flexJustifyRight u-textWeight-400 u-text-r-m"></span>
