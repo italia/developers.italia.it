@@ -202,6 +202,10 @@
 /* Megamenu
   ========= */
 
+.Megamenu--default .Megamenu-subnavGroup > li {
+  width: auto !important;
+}
+
 .Megamenu--default .Megamenu-subnavGroup>li,
 .Megamenu--default .Megamenu-subnavGroup>li>ul>li {
   border-bottom: 1px solid #eee;
@@ -238,18 +242,26 @@
 
 }
 
-.with-image {
-  .tool-image {
-    display: inline-block;
-    vertical-align: middle;
-    width: 3.5em;
-  }
+.Megamenu--default .Megamenu-subnavGroup > .Linklist-link--unwrap > a {
+  font-size: 1em !important;
+  color: #666 !important;
+  font-weight: 600 !important;
 }
 
-.tool-image {
-  display: block;
-  margin: auto;
-  width: 3.5em;
+.Linklist-link {
+  background-size: 0 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .Linklist--withImage {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 3em;
+    display: inline-block;
+    height: 6em;
+    padding-top: 3em;
+    width: 5em;
+  }
 }
 
 /* Credits

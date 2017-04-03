@@ -4,6 +4,7 @@ it:
     subitems:
     - title: Progetti in evidenza
       url: /it/progetti
+      liClass: Linklist-link--unwrap js-Unwrap
       subitems:
       - title: SPID
         url: /it/spid
@@ -22,6 +23,7 @@ it:
     - title: Dove partecipare
       url: '#'
       layout: horizontal
+      liClass: Linklist-link--unwrap js-Unwrap
       subitems:
       - title: Repository GitHub
         image: /assets/icons/tools/decorative_outlined_github.svg
