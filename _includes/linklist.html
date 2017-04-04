@@ -1,14 +1,14 @@
 {% assign items = include.items  %}
 
 {% if include._internal %}
-  <ul data-megamenu-class="{% if include.layout == 'horizontal' %}Grid{% endif %}">
+  <ul>
 {% else %}
   <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
 {% endif %}
 
   {% assign navurl = page.url | remove: 'index.html' %}
   {% for item in items %}
-  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}Grid-cell u-size1of4 u-textCenter{% endif %}" class=" with-image">
+  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}">
 
       {% if item.url == "#" or item.url contains '//' %}
         {% assign _url = item.url %}
@@ -16,11 +16,10 @@
         {% assign _url = item.url | relative_url %}
       {% endif %}
 
-      {% if item.image %}
-        <img src="{{ item.image }}" data-megamenu-class="tool-image" class="tool-image" alt="" role="presentation" />
-      {% endif %}
-
-  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %}">
+  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %} Linklist-link"
+        {% if item.image %}data-megamenu-class="Linklist--withImage"{% endif %}
+        {% if item.image %}style="background-image: url({{ item.image }})"{% endif %}
+      >
         {{ item.markup_pre }}
 				{{ t[item.title] | default: item.title }}
         {{ item.markup_post }}
