@@ -28,16 +28,3 @@ $(function() {
     $('#projects > ul > li:first').trigger('mouseenter')
   })
 })
-
-
-$(function() {
-  // @FIXME: unwrap deep links in offcanvas menu
-
-  $('.js-fr-offcanvas [data-megamenu-class*=js-Unwrap] ul')
-    .each(function(i, el) {
-      $(el).find('li').appendTo($(el).parent().parent())
-    });
-
-  $('.js-fr-offcanvas [data-megamenu-class*=js-Unwrap]').remove();
-
-})

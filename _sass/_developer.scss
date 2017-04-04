@@ -206,6 +206,15 @@
   width: auto !important;
 }
 
+.Megamenu-item--vert .Megamenu-subnavGroup {
+  display: block !important;
+  border-bottom: 1px solid #eee;
+}
+
+.Megamenu-item--vert .Megamenu-subnavGroup:last-of-type {
+  border-bottom: none;
+}
+
 .Megamenu--default .Megamenu-subnavGroup>li,
 .Megamenu--default .Megamenu-subnavGroup>li>ul>li {
   border-bottom: 1px solid #eee;
@@ -223,16 +232,6 @@
   font-weight: 600 !important;
 }
 
-.Megamenu--default .Megamenu-subnavGroup > li > ul > li.Megamenu-showAll {
-  padding-top: 1.5em !important;
-  border-bottom: none !important;
-}
-
-.Megamenu--default .Megamenu-subnavGroup > li > ul > li.Megamenu-showAll > a {
-  color: #004a4d !important;
-  text-transform: uppercase !important;
-}
-
 .Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li,
 .Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li > ul > li {
   width: initial;
@@ -242,10 +241,17 @@
 
 }
 
-.Megamenu--default .Megamenu-subnavGroup > .Linklist-link--unwrap > a {
+.Megamenu--default .Megamenu-subnavGroup > li > a {
   font-size: 1em !important;
-  color: #666 !important;
+  color: #06c !important;
   font-weight: 600 !important;
+}
+
+.Megamenu--default .Megamenu-subnavGroup li.Megamenu-showAll > a {
+  padding-top: 1.5em !important;
+  border-bottom: none !important;
+  color: #004a4d !important;
+  text-transform: uppercase !important;
 }
 
 .Linklist-link {
