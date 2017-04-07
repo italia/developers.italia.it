@@ -4,7 +4,7 @@ subtitle: Public System for Digital Identity
 logo: /assets/images/logo-spid@2x.png
 payoff: Public System for Digital Identity
 description: >
-    SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public, but also privates websites according to the SAML standard.
+    SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public, but also private websites according to the SAML standard.
 maintainers:
   - umbros
 lang: en
@@ -20,7 +20,7 @@ socials:
 ---
 
 ## Intro
-SPID (Public System for Digital Identity) is the solution that allows the Italian citizens to access all online services of the Public Administration with a single Digital Identity (username and password) that can be used from computers, tablets and smartphones. Citizens can get SPID through a series of private companies  under agreements (known as Identity Provider); once the verification procedure is completed (which certifies the identity of the applicant), you are released a set of credentials that can be used on all the websites (called Service Provider).
+SPID (Public System for Digital Identity) is the solution that allows the Italian citizens to access all online services of the Public Administration with a single Digital Identity (username and password) that can be used from computers, tablets and smartphones. Citizens can get SPID through a series of private companies under agreements (known as Identity Provider); once the verification procedure is completed (which certifies the identity of the applicant), you are released a set of credentials that can be used on all the websites (called Service Provider).
 
 At the moment, the integration of SPID is allowed only on the websites of the Public Administration, but soon it will be disciplined and open also for the websites of private companies. The advantages of adopting SPID will be therefore so many: banks and insurance companies, for example, might recognize the citizen who wants to create an account or stipulate an insurance policy simply through the login.
 
