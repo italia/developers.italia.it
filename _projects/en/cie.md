@@ -4,8 +4,7 @@ subtitle: Electronic Identity Card
 logo: /assets/images/logo-cie@2x.png
 payoff: Electronic Identity Card
 description: >
-  The new electronic identity card is more than a simple piece of plastic: you can communicate with
-  us by NFC, use it to cross ticket barriers or to obtain an SSL certificate connected to your
+  The new electronic identity card is more than a simple piece of plastic: you can both connect and communicate via NFC, use it to cross ticket barriers or to obtain an SSL certificate connected to your
   identity
 lang: en
 order: 9
