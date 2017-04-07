@@ -45,6 +45,8 @@ In attesa di pubblicare altra documentazione relativa al progetto, qui per ora p
 
 [Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
 
+Inoltre, sono state pubblicate [Le linee guida tecniche per i cataloghi dati](http://linee-guida-cataloghi-dati-profilo-dcat-ap-it.readthedocs.io/it/latest/index.html) che forniscono (i) indicazioni puntuali sulla specifica del profilo di metadatazione DCAT-AP_IT, con note d'uso ed esempi pratici, (ii) i riferimenti all'ontologia OWL del profilo DCAT-AP_IT, (iii) mapping dei temi per i dati e dei sottotemi, nonché il mapping tra i temi per i dati e quelli INSPIRE relativi ai dati geospaziali e (iv) un primo elenco di vocabolari controllati usati nel profilo di metadatazione.
+
 
 ## Codice sorgente
 
