@@ -21,7 +21,7 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
 
 {::nomarkdown}
 <div class="">
-<form action="http://a0a5i2.mailupclient.com/frontend/subscribe.aspx">
+<form action="https://a0a5i2.mailupclient.com/frontend/subscribe.aspx">
 
 <label for="2" >Email*</label>
 <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required="required"
