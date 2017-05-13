@@ -28,6 +28,9 @@ github_username:  italia
 piwik: teamdigitale
 google_analytics: UA-96140462-1
 
+# iPress importer
+ipress_url: http://demo7085106.mockable.io/ipress
+
 # Build settings
 markdown: kramdown
 gems:

@@ -41,6 +41,8 @@ it:
     url: it/chi-siamo
   - title: FAQ
     url: it/faq
+  - title: Contatti
+    url: it/contatti
 
 en:
   - title: Projects
@@ -90,3 +92,5 @@ en:
     url: en/credits
   - title: FAQ
     url: en/faq
+  - title: Contacts
+    url: en/contacts
