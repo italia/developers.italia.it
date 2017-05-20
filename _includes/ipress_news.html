@@ -1,8 +1,10 @@
+{% assign posts = site.ipress_feed | where: "ipress_lang", page.lang %}
+
 <blockquote class="Prose-blockquote u-background-grey-10">
-  <h3>Ultimi comunicati stampa</h3>
+  <h3>{{ include.header }}</h3>
 
   <div id="ipress" style="min-height:100px;">
-    {% for news in (site.ipress_feed) limit:5 %}
+    {% for news in (posts) limit:3 %}
       <div class="row">
         <div class="col-md-4">
           <p class="team-item-title">

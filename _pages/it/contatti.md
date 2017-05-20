@@ -19,7 +19,7 @@ Newsletter
 ## Area media
 Area media
 
-{% include ipress_news.html %}
+{% include ipress_news.html header="Ultimi comunicati stampa" %}
 
 ## Eventi
 Eventi
