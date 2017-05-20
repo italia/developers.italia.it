@@ -11,7 +11,9 @@ toc: true
 Intro
 
 ## Social Media
-Social Media
+Developers Italia è su <a href="https://github.com/italia/developers.italia.it/" target="_blank">GitHub</a> e <a href="https://twitter.com/DevelopersIta" target="_blank">Twitter</a>
+
+{% include twitter.html %}
 
 ## Newsletter
 Newsletter
