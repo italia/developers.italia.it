@@ -1,0 +1,28 @@
+<section class="Network Offcanvas Offcanvas--left Offcanvas--modal js-fr-offcanvas fr-offcanvas--left u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="network">
+	<h2 class="u-hiddenVisually">{{ t.navigation_network_menu_label }}</h2>
+  <div class="Offcanvas-content u-background-white">
+    <div class="Offcanvas-toggleContainer u-background-50 u-jsHidden">
+      <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close"
+        aria-controls="network" aria-label="{{ t.navigation_menu_esc }}" title="{{ t.navigation_menu_esc }}" href="#">
+        <span class="Hamburger-toggle is-active" aria-hidden="true"></span>
+      </a>
+    </div>
+    <nav>
+      {% assign items = include.network_items  %}
+      <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs">
+      {% for item in items %}
+        <li class="{{ item[1].class }}">
+          {% assign _url = item[1].url %}
+          {% assign item_name = item[1].title %}
+          {{ item[1].li_markup_pre }}
+          <a href="{{ _url }}" class="Linklist-link">
+            {{ t[item_name] | default: item_name }}
+          </a>
+          {{ item[1].li_markup_post }}
+        </li>
+      {% endfor %}
+
+      </ul>
+    </nav>
+  </div>
+</section>

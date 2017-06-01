@@ -254,6 +254,9 @@
   text-transform: uppercase !important;
 }
 
+#languages .Linklist li {
+  display: block !important;
+}
 .Linklist-link {
   background-size: 0 !important;
 }
@@ -373,10 +376,6 @@
     font-size: 2rem !important;
   }
 
-  .Header-titleLink small {
-    display: inline-block !important;
-    font-size: 1.4rem !important;
-  }
 }
 
 .Header-slim a:hover {
@@ -415,47 +414,21 @@
 
 /** Header tweaks
     ===================== */
-.Hamburger-toggle,
-.Hamburger-toggle:after,
-.Hamburger-toggle:before {
-  background: #06c !important;
-}
 
-.Hamburger-toggle.is-active {
-  background: transparent !important;
-}
-
-.Hamburger-toggle.is-active:after,
-.Hamburger-toggle.is-active:before {
-  background: white !important;
-}
 
 .Header-owner {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
+  border-bottom: 1px solid #127ae2;
+  &__institutions a, &__institutions a:hover {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none !important;
+  }
 }
 
-/** Megamenu tweaks
-    ===================== */
-.Megamenu.js-megamenu {
-  margin-left: -3.2rem !important;
-}
 
-.Megamenu-item:first-child > a {
-  padding-left: 3.2rem !important;
-}
 
-.Megamenu--default {
-    padding-right: 0 !important;
-}
-
-.Megamenu--default .Megamenu-item > a {
-  color: #06c !important;
-}
-
-.Megamenu--default .Megamenu-item > a.is-current {
-  border-bottom: 2px solid #06c !important;
-}
 
 
 /* Utilities
