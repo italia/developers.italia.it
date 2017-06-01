@@ -1,7 +1,8 @@
 <header class="Header u-hiddenPrint">
 
   <div class="Header-banner u-background-50">
-    <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div>
       <a href="{{ site.owner_link }}">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
             {{ site.owner_short }}
@@ -10,7 +11,7 @@
             {{ site.owner_full }}
           </span>
         </a>
-        <span class="u-color-white">&nbsp;|&nbsp;</span>
+        <span class="u-color-white">&nbsp;+&nbsp;</span>
         <a href="{{ site.partner_link }}">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
             {{ site.partner_short }}
@@ -19,7 +20,8 @@
             {{ site.partner_full }}
           </span>
         </a>
-        {% include lang_switch.html %}
+    </div>
+    {% include slim_header.html %}
     </div>
   </div>
 
