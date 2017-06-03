@@ -1,0 +1,15 @@
+<div class="u-hidden u-md-block u-lg-block">
+<div class="Header-slim u-background-50">
+
+  <ul class="Header-links u-cf">
+    {% for link in site.data.network_links %} {% assign link_name = link[1].title %}
+    <li class="{{ link[1].class }}"><a class="u-color-white" href="{{ link[1].url }}">{{ t[link_name] | default: link_name }}</a></li>
+    {% endfor %}
+    {% include lang_switch.html %}
+  </ul>
+  
+
+</div>
+
+
+</div>

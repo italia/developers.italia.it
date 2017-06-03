@@ -1,7 +1,14 @@
 <header class="Header u-hiddenPrint">
 
   <div class="Header-banner u-background-50">
-    <div class="Header-owner Headroom-hideme u-border-bottom-xxs">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions">
+      <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
+          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
+            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
+              {% include slim_icon.html %}
+          </a>
+        </div>
       <a href="{{ site.owner_link }}">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
             {{ site.owner_short }}
@@ -10,7 +17,7 @@
             {{ site.owner_full }}
           </span>
         </a>
-        <span class="u-color-white">&nbsp;|&nbsp;</span>
+        <span class="u-color-white">&nbsp;+&nbsp;</span>
         <a href="{{ site.partner_link }}">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
             {{ site.partner_short }}
@@ -19,7 +26,8 @@
             {{ site.partner_full }}
           </span>
         </a>
-        {% include lang_switch.html %}
+    </div>
+    {% include slim_header.html %}
     </div>
   </div>
 

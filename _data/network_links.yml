@@ -1,0 +1,25 @@
+trasformazione_digitale:
+  title: header_link_trasformazione
+  url: 'https://pianotriennale-ict.italia.it'
+  class: delimiter
+  li_markup_pre: '<span class="u-block u-padding-all-s u-margin-top-xs u-color-grey-50 u-textUppercase">il programma</span>'
+developers:
+  title: header_link_developers
+  url: 'https://developers.italia.it/'
+  li_markup_pre: '<span class="u-block u-padding-all-s u-margin-top-xs u-color-grey-50 u-textUppercase">le community</span>'
+  class: current
+design:
+  title: header_link_design
+  url: 'http://designers.italia.it'
+  class: delimiter
+forum:
+  title: header_link_forum
+  url: 'https://forum.italia.it/'
+  li_markup_pre: '<span class="u-block u-padding-all-s u-margin-top-xs u-color-grey-50 u-textUppercase">gli strumenti</span>'
+docs:
+  title: header_link_docs
+  url: 'https://docs.developers.italia.it/'
+github:
+  title: header_link_github
+  url: 'https://github.com/italia/'
+  class: delimiter
