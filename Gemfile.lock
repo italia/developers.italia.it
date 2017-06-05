@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 GEM
+=======
+EM
+>>>>>>> 83609d0e5c8c0da847eec5167ce0f81ed64765d0
   remote: https://rubygems.org/
   specs:
     addressable (2.5.0)
