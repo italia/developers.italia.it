@@ -28,7 +28,7 @@ Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai soft
 ### Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
 
-[Documentazione tecnica e tabelle di riferimento](https://anpr.readthedocs.io)
+[Documentazione tecnica e tabelle di riferimento ](https://anpr.readthedocs.io)
 
 
 
@@ -40,7 +40,7 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
 
 {::nomarkdown}
 <div class="">
-<form action="https://a0a5i2.mailupclient.com/frontend/subscribe.aspx">
+<form action="https://a0x0b4.emailsp.com/frontend/subscribe.aspx">
 
 <label for="2" >Email*</label>
 <input type="email" name="email" id="email" placeholder="Inserisci la tua email" required="required"
@@ -56,6 +56,7 @@ class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-
 <option value="Comune">Comune</option><option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
 </select>
 </p>
+
 <p>
 <label for="4" >Privacy*</label>
 </p>
@@ -68,7 +69,8 @@ class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-
          Iscriviti
         </button>
 
-<input type="hidden" name="list" value="1">
+<input type="hidden" name="group" value="16" >
+<input type="hidden" name="list" value="3">
 </p>
 </form>
 </div>
