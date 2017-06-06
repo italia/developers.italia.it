@@ -62,6 +62,13 @@ it:
 
     in_collaboration_with: In collaborazione con
 
+    header_link_trasformazione: Piano Triennale
+    header_link_developers: Developers
+    header_link_design: Designers
+    header_link_forum: Forum
+    header_link_docs: Docs
+    header_link_github: Github
+
 en:
   code: eng
   name: english
@@ -125,3 +132,10 @@ en:
     status_maintainer: maintainer
 
     in_collaboration_with: In collaboration with
+
+    header_link_trasformazione: Piano Triennale
+    header_link_developers: Developers
+    header_link_design: Designers
+    header_link_forum: Forum
+    header_link_docs: Docs
+    header_link_github: Github

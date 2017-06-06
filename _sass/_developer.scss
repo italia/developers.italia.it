@@ -164,6 +164,7 @@
       left: 0;
       white-space: nowrap;
       z-index: -1;
+      user-select: none;
     }
 
     .project-shadow2 {
@@ -175,6 +176,7 @@
       text-shadow: 0 20px 50px 0 rgba(0,0,0,0.1);
       top: -0.2em;
       z-index: -2;
+      user-select: none;
     }
 
     .project-title {
@@ -254,6 +256,9 @@
   text-transform: uppercase !important;
 }
 
+#languages .Linklist li {
+  display: block !important;
+}
 .Linklist-link {
   background-size: 0 !important;
 }
@@ -342,6 +347,91 @@
   font-weight: 400 !important;
   font-size: 1.5em !important;
 }
+
+/** Header slim
+   ================ */
+.Header-banner {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+@media screen and (min-width: 992px) {
+  .Header-logo img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+.Header-socialIcons [class*=" Icon-"],
+.Header-socialIcons [class^=Icon-] {
+  padding: 0.4em !important;
+}
+
+.Header-owner > div > a,
+.Header-slim a {
+  text-decoration: none;
+  padding: 1.6rem 1.4rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+@media screen and (max-width: 991px) {
+  .Header-titleLink a {
+    font-size: 2rem !important;
+  }
+
+}
+
+.Header-slim a:hover {
+  text-decoration: none !important;
+}
+
+.Header-slim li {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin-bottom: 0.2rem;
+}
+
+.Header-slim li:hover {
+  border-bottom: 0.2rem solid white;
+  margin-bottom: 0;
+}
+
+.Header-slim li.current {
+  border-bottom: 0.2rem solid white;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.Header-slim li.delimiter a {
+  border-right: 0.1rem solid #127ae2;
+}
+
+.Header-slim-toggle a {
+  text-decoration: none !important;
+}
+
+.Network .current a {
+  font-size: 1.5em;
+  border-left: 1rem solid #0066cc !important;
+}
+
+/** Header tweaks
+    ===================== */
+
+
+.Header-owner {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  border-bottom: 1px solid #127ae2;
+  &__institutions a, &__institutions a:hover {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none !important;
+  }
+}
+
+
+
+
 
 /* Utilities
   ========== */
