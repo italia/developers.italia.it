@@ -41,6 +41,8 @@ it:
     url: it/chi-siamo
   - title: FAQ
     url: it/faq
+  - title: Manifesto
+    url: it/manifesto
 
 en:
   - title: Projects
