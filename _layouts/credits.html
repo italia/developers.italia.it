@@ -73,6 +73,13 @@ lang: it
       </div>
     </div>
     {% endif %}
+     {% if forloop.index==2 %}
+      <div class="Person-container Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-bottom-xl credits-text u-flexOrderFirst u-md-flexOrderNone u-lg-flexOrderNone">
+        <div class="u-borderRadius-m u-borderShadow-m u-padding-all-xl u-background-white u-textSmooth u-textWeight-400 u-text-r-xxs">
+        {{page.content}}
+        </div>
+      </div>
+    {% endif %}
     {% endfor %}
   </div>
   <!-- <phi = k^i>  -->
