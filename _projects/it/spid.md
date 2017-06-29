@@ -37,6 +37,9 @@ Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinv
  * Testsuite di validazione dell'integrazione di SPID
  * Ambiente di testing e validazione di SPID
 
+Una lista completa dei task può essere visualizzata nella nostra live roadmap:
+
+[Live roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)
 
 ## Documentazione
 SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali.
@@ -67,3 +70,9 @@ Abbiamo aperto un'area di discussione nel nostro forum, per risolvere le problem
 e a breve sarà disponibile anche un issue tracker pubblico.
 
 [Forum di discussione tecnica](https://forum.developers.italia.it/c/spid)
+
+Facciamo anche delle call settimanali su Jitsi, qui trovato le informazioni
+per partecipare. Chiunque sia interessato a seguire lo sviluppo può entrare:
+
+[Videocall settimanale](https://forum.italia.it/t/spid-weekly-meeting/276)
+

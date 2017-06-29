@@ -34,7 +34,9 @@ We have scheduled for 2017 the following developments, for which we want to invo
  * Testsuite of validation of the integration of SPID
  * Testing and validation of SPID
 
+A complete task list con be found in the actual live roadmap:
 
+[Live roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)
 
 ## Documentation
 
@@ -67,3 +69,10 @@ We published some useful asset during the integration procedure:
 We opened an area of discussion in our forum, to solve the technical problems of integration, and a public issue tracker will be soon available.
 
 [Forum for technical discussion](https://forum.developers.italia.it/c/spid)
+
+We also host weekly videocalls on Jitsi; here you can find all information
+to join. Feel free to join if you are interested in following the
+development.
+
+[Weekly videocall](https://forum.italia.it/t/spid-weekly-meeting/276)
+
