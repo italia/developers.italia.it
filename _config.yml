@@ -28,6 +28,11 @@ github_username:  italia
 piwik: teamdigitale
 google_analytics: UA-96140462-1
 
+# Github importer
+github_api_url: https://api.github.com
+github_folder: github
+github_access_token: b846daac261c27017f25600d1d702abef27a26d3
+
 # Build settings
 markdown: kramdown
 gems:
