@@ -17,6 +17,7 @@ layout: default
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
     {{ page.title }}</h1>
+    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
 </div>
 
 <hr class="Separator-room u-background-50" />
@@ -27,30 +28,18 @@ layout: default
 
     <div class="Grid-cell u-sizeFull u-md-size9of12 u-lg-size9of12">
 
+    <div class="u-text-r-xxs u-lineHeight-l u-margin-right-xl u-color-grey-50 ">
+    {{ content }}
+    </div>
 
-	<script>
-	$(document).ready(function() {
-	    $('#example').DataTable( {
-	        "ajax": {
-	        	"url":"/github/issues.json",
-	        	"dataSrc": ""
-	        },
-	        "columns": [
-	            { "data": "name" },
-	            { "data": "title", "render": function(data, type, row, meta ){
-	            	return "<a href='"+row.url+"'>"+data+"</a>";
-	            } 
-	        	},
-	            { "data": "labels" },
-	        ]
-	    } );
-	} );
-	</script>
-
-	<table id="example" class="display" cellspacing="0" width="100%">
+	<table id="issues_table" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
-                <th>Name</th>
+            	<th>Created</th>
+            	<th>Type</th>
+            	<th>Language</th>
+                <th>Progetto</th>
+                <th>Sotto-progetto</th>
                 <th>Title</th>
                 <th>Labels</th>
             </tr>
@@ -62,16 +51,118 @@ layout: default
 
 
     <div class="Grid-cell u-sizeFull u-md-size3of12 u-lg-size3of12">
-	  <div class="u-nbfc u-color-grey-30 u-xs-padding-all-none u-sizeFull u-margin-bottom-xl
+	  <div class="u-nbfc u-color-grey-60 u-xs-padding-all-none u-sizeFull u-margin-bottom-xl
 	            u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-pullUp">
 	    <div class="u-padding-r-all">
 	      <div class="u-padding-r-all u-xs-padding-all-none u-minHeight-250">
-	      xxxx
+            <div class="Form-field">
+            <label class="Form-label" for="github_projects_list">Progetti</label>
+	      	<select name="github_projects_list" id="github_projects_list" class="Form-input" >
+	      		<option value=""></option>
+	      	</select>
+            </div>
+
+            <div class="Form-field">
+            <label class="Form-label" for="github_languages_list">Tecnologie</label>
+	      	<select name="github_languages_list" id="github_languages_list" multiple="multiple" class="Form-input">
+	      		<option value=""></option>
+	      	</select>
+            </div>
+
+            <div class="Form-field">
+            <label class="Form-label" for="github_types_list">Tipologia</label>
+            <div id="github_types_list">
+               
+            </div>
+            </div>
+
 	      </div>
 	    </div>
 	  </div>
 	</div>
 
-
   </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+
+        var $github_projects_list = $('#github_projects_list');
+        var $github_types_list = $('#github_types_list');
+        var $github_languages_list = $('#github_languages_list');
+        $github_languages_list.select2();
+
+
+        var $issues_table = $('#issues_table').DataTable( {
+            "bLengthChange": false,
+            "bInfo" : false,
+            "ajax": {
+                "url":"/github/issues.json",
+                "dataSrc": ""
+            },
+            "order": [[ 0, "desc" ]],
+            "columns": [
+                { "data": "created_at" , "visible": false},
+                { "data": "type" , "visible": false, "name":"type"},
+                { "data": "language" , "visible": false, "name":"language"},
+                { "data": "project" , "name":"project"},
+                { "data": "subproject" },
+                { "data": "title", "render": function(data, type, row, meta ){
+                    return "<a target='_blank' href='"+row.url+"'>"+data+"</a>";
+                    } 
+                },
+                { "data": "labels", "render": function(data, type, row, meta ){
+                    var labelist = '';
+                    data.forEach( function (item){
+                         labelist = labelist + "<span class='labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs' >"+item+"</span>";
+                        });
+                    return labelist;
+                    } 
+                },
+            ],
+            initComplete: function () {
+            this.api().column('project:name').every( function () {
+                var column = this;
+                var select = $github_projects_list.on( 'change', function () {
+                        var val = $.fn.dataTable.util.escapeRegex(
+                            $(this).val()
+                        );
+                        column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                    } );
+ 
+                column.data().unique().sort().each( function ( d, j ) {
+                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                } );
+            } );
+            this.api().column('language:name').every( function () {
+                var column = this;
+                var select = $github_languages_list.on('change', function () {
+                    var val = $(this).val();
+                    if (val!=null) {
+                        column.search(val.join('|'), true, false, true).draw();
+                    } else {
+                        column.search('', true, false ).draw();
+                    }
+                } );
+                column.data().unique().sort().each( function ( d, j ) {
+                    if (d!=null && d!='') {
+                    select.append( '<option value="'+d+'">'+d+'</option>' );
+                    }
+                } );
+            } );
+            this.api().column('type:name').every( function () {
+                var column = this;
+                column.data().unique().sort().each( function ( d, j ) {
+                    if (d!=null && d!='') {
+                    $github_types_list.append( '<input type="checkbox" name="github_types_list[]" value="'+d+'"/> '+d );
+                    }
+                } );
+
+            } );
+
+
+        }
+        } );
+
+    } );
+</script>

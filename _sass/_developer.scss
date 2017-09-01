@@ -430,7 +430,59 @@
 }
 
 
+/** Datatables custom
+    ==================== */
+.dataTable {
+  .labelist {
+    font-size: 13px;
+    line-height: 15px;
+    display: inline-block;
+  }
+  a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #06D;
+  }
+}
 
+/** Select2 custom
+    ================ */
+.select2-selection--multiple {
+  border: 1px solid #ccc;
+  padding: 4px !important;
+  border-radius: 0 !important;
+}
+.select2-selection__choice {
+    background-color: #06D !important;
+    color: #fff;
+    border: none !important;
+    font-weight: normal;
+    padding: 4px !important;
+}
+.select2-selection__choice__remove {
+  color: #fff !important;
+}
+
+/* GITHUB ISSUES page 
+  ======================= */
+#issues_table_wrapper {
+  margin-right: 20px;
+
+  .paginate_button:hover {
+    background: transparent !important;
+    color: inherit !important;
+    border: 1px solid transparent;
+  }
+  thead th, table.dataTable.no-footer {
+    border-bottom: 2px solid #bbb;
+  }
+  tbody tr {
+    background-color: transparent !important;
+  }
+  #issues_table_previous, #issues_table_next {
+    display: none;
+  }
+}
 
 
 /* Utilities

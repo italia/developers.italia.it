@@ -8,9 +8,10 @@ class GithubImporter < Jekyll::Generator
 
 	def generate(site)
 		feed_url = site.config['github_api_url']
-		access_token = site.config['github_access_token']
+		projects_prefix = site.config['github_projects_prefix']
+		access_token = ENV['GITHUB_ACCESS_TOKEN']
 		site_folder = site.config['github_folder']
-
+		
 		# obtaining all the repos of Italia Github org.
 		repos_endpoint = feed_url + "/orgs/italia/repos"
 		repos_response = RestClient.get repos_endpoint,{params:{per_page: 100, access_token: access_token}}
@@ -42,6 +43,18 @@ class GithubImporter < Jekyll::Generator
 				# parent's data
 				issue_data[:name] = item['name']
 				issue_data[:language] = item['language']
+				# we've to analyze the name to obtain the projects and subproject
+				if issue_data[:name].start_with?(*projects_prefix)
+					issue_data[:project] = item['name'].partition('-').first
+					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+				elsif projects_prefix.include? item['name']+'-'
+					issue_data[:project] = item['name']
+					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+				else
+					issue_data[:project] = 'other'
+					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+				end
+
 				# issue's data
 				issue_data[:url] = issue['html_url']
 				issue_data[:title] = issue['title']
