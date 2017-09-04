@@ -11,14 +11,28 @@ class GithubImporter < Jekyll::Generator
 		projects_prefix = site.config['github_projects_prefix']
 		access_token = ENV['GITHUB_ACCESS_TOKEN']
 		site_folder = site.config['github_folder']
-		
+
+		rest_params = {per_page: 100}
+		if access_token!=nil
+			rest_params['access_token'] = access_token
+		end
 		# obtaining all the repos of Italia Github org.
 		repos_endpoint = feed_url + "/orgs/italia/repos"
-		repos_response = RestClient.get repos_endpoint,{params:{per_page: 100, access_token: access_token}}
+		begin
+			repos_response = RestClient.get repos_endpoint,{params: rest_params}
+		rescue RestClient::Unauthorized, RestClient::Forbidden => err
+			puts "*****************************************************"
+			puts("WARNING!!! Rate-limit problem with Github API provide a valid GITHUB_ACCESS_TOKEN in ENV variables")
+			puts err.response
+			return
+		else
+			puts "GITHUB API connection OK"
+		end
 
 		repos = JSON.parse(repos_response)
 
-		repos.size > 0 or die("No repos fetched")
+		repos.size > 0 or puts("No repos fetched")
+		repos.size > 0 or return
 
 		puts "++++++++++++++ Github Repos fetched: " + repos.size.to_s
 
@@ -35,7 +49,7 @@ class GithubImporter < Jekyll::Generator
 			
 			# obtaining all the issues for this repo
 			issues_endpoint = feed_url + "/repos/italia/"+ name +"/issues"
-			issues_response = RestClient.get issues_endpoint, {params:{per_page: 100, access_token: access_token}}
+			issues_response = RestClient.get issues_endpoint, {params: rest_params}
 			issues = JSON.parse(issues_response)
 
 			issues.each do |issue|

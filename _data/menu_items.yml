@@ -86,6 +86,8 @@ en:
               coming soon
             </span>
           </div>
+  - title: To do
+    url: en/to-do
   - title: News
     url: news
   - title: Credits

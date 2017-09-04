@@ -38,10 +38,10 @@ layout: default
             	<th>Created</th>
             	<th>Type</th>
             	<th>Language</th>
-                <th>Progetto</th>
-                <th>Sotto-progetto</th>
-                <th>Title</th>
-                <th>Labels</th>
+                <th>{{ t.todo_page_project }}</th>
+                <th>{{ t.todo_page_subproject }}</th>
+                <th>{{ t.todo_page_title }}</th>
+                <th>{{ t.todo_page_labels }}</th>
             </tr>
         </thead>
     </table>
@@ -50,33 +50,40 @@ layout: default
     </div>
 
 
-    <div class="Grid-cell u-sizeFull u-md-size3of12 u-lg-size3of12">
-	  <div class="u-nbfc u-color-grey-60 u-xs-padding-all-none u-sizeFull u-margin-bottom-xl
-	            u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-pullUp">
+    <div class="Grid-cell u-sizeFull u-md-size3of12 u-lg-size3of12" id="github_filter">
+	  <div class="u-nbfc u-color-grey-50 u-xs-padding-all-none u-sizeFull u-margin-bottom-xl
+	            u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-pullUp ">
 	    <div class="u-padding-r-all">
 	      <div class="u-padding-r-all u-xs-padding-all-none u-minHeight-250">
-            <div class="Form-field">
-            <label class="Form-label" for="github_projects_list">Progetti</label>
+
+            <h2 class="u-text-r-l u-textWeight-400 u-margin-bottom-m">{{ t.todo_page_filters }}</h2>
+
+            <div class="Form-field u-margin-bottom-xl">
+            <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs" for="github_projects_list">{{ t.todo_page_projects }}</label>
 	      	<select name="github_projects_list" id="github_projects_list" class="Form-input" >
 	      		<option value=""></option>
 	      	</select>
             </div>
 
-            <div class="Form-field">
-            <label class="Form-label" for="github_languages_list">Tecnologie</label>
+            <div class="Form-field u-margin-bottom-xl">
+            <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs" for="github_languages_list">{{ t.todo_page_tech }}</label>
 	      	<select name="github_languages_list" id="github_languages_list" multiple="multiple" class="Form-input">
 	      		<option value=""></option>
 	      	</select>
             </div>
 
-            <div class="Form-field">
-            <label class="Form-label" for="github_types_list">Tipologia</label>
-            <div id="github_types_list">
+            <div class="Form-field u-margin-bottom-xl">
+            <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs" for="github_types_list">{{ t.todo_page_types}}</label>
+            <div id="github_types_list" >
                
             </div>
             </div>
-
+            <button class="Button Button--default Button--round u-text-r-xs u-background-50 u-color-white" id="issues_table_clear">
+                {{ t.todo_page_clearfilter }}
+            </button>
 	      </div>
+
+
 	    </div>
 	  </div>
 	</div>
@@ -86,9 +93,15 @@ layout: default
 
 <script>
     $(document).ready(function() {
-
+        var datatables_language_url = {
+            "en" : "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json",
+            "it" : "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Italian.json"
+        };
+        var current_language = $('html').attr('lang');
+        var $issues_table_clear = $('#issues_table_clear');
         var $github_projects_list = $('#github_projects_list');
         var $github_types_list = $('#github_types_list');
+        var github_types_sel = [];
         var $github_languages_list = $('#github_languages_list');
         $github_languages_list.select2();
 
@@ -96,6 +109,9 @@ layout: default
         var $issues_table = $('#issues_table').DataTable( {
             "bLengthChange": false,
             "bInfo" : false,
+            "language": {
+                "url": datatables_language_url[current_language]
+            },
             "ajax": {
                 "url":"/github/issues.json",
                 "dataSrc": ""
@@ -105,7 +121,9 @@ layout: default
                 { "data": "created_at" , "visible": false},
                 { "data": "type" , "visible": false, "name":"type"},
                 { "data": "language" , "visible": false, "name":"language"},
-                { "data": "project" , "name":"project"},
+                { "data": "project" , "name":"project", "render": function(data, type, row, meta ) {
+                    return data.charAt(0).toUpperCase() + data.slice(1);
+                }},
                 { "data": "subproject" },
                 { "data": "title", "render": function(data, type, row, meta ){
                     return "<a target='_blank' href='"+row.url+"'>"+data+"</a>";
@@ -131,7 +149,8 @@ layout: default
                     } );
  
                 column.data().unique().sort().each( function ( d, j ) {
-                    select.append( '<option value="'+d+'">'+d+'</option>' )
+                    var title = d.charAt(0).toUpperCase() + d.slice(1);
+                    select.append( '<option value="'+d+'">'+title+'</option>' )
                 } );
             } );
             this.api().column('language:name').every( function () {
@@ -154,13 +173,36 @@ layout: default
                 var column = this;
                 column.data().unique().sort().each( function ( d, j ) {
                     if (d!=null && d!='') {
-                    $github_types_list.append( '<input type="checkbox" name="github_types_list[]" value="'+d+'"/> '+d );
+                    $github_types_list.append('<span><input type="checkbox" id="github_types_'+j+'" name="github_types_list[]" value="'+d+'"/> '+d+'</span>');
+                    $('#github_types_'+j).on('change', function() {
+                        var val = $(this).val();
+
+                        if (github_types_sel.indexOf(val) > -1) {
+                            github_types_sel.splice( github_types_sel.indexOf(val) ,1);
+                        }
+                        else {
+                            github_types_sel.push(val);
+                        }
+                        
+                        if (github_types_sel.length > 0) {
+                            column.search(github_types_sel.join('|'), true, false, true).draw();
+                        } else {
+                            column.search('', true, false ).draw();
+                        }
+                    });
+
                     }
                 } );
 
             } );
 
-
+            // reset all filters
+            $issues_table_clear.on('click', function (e){
+                $github_types_list.find('input:checked').removeAttr('checked');
+                $github_languages_list.val([]).trigger("change");
+                $github_projects_list.val('');
+                $issues_table.columns().search('', true, false).draw();
+            });
         }
         } );
 
