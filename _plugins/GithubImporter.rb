@@ -44,12 +44,21 @@ class GithubImporter < Jekyll::Generator
 			open_issues = Integer(item['open_issues_count'])
 			name = item['name']
 
-			# if this repo as no isseus we can skip to the next
-			next if open_issues == 0
+			# if this repo as no isseus or is blacklisted 
+			next if open_issues == 0 or site.config['github_blacklist_repos'].include? item['name']
 			
 			# obtaining all the issues for this repo
 			issues_endpoint = feed_url + "/repos/italia/"+ name +"/issues"
-			issues_response = RestClient.get issues_endpoint, {params: rest_params}
+
+			begin
+				issues_response = RestClient.get issues_endpoint,{params: rest_params}
+			rescue RestClient::Unauthorized, RestClient::Forbidden => err
+				puts "*****************************************************"
+				puts("WARNING!!! Rate-limit problem with Github API provide a valid GITHUB_ACCESS_TOKEN in ENV variables")
+				puts err.response
+				return
+			end
+
 			issues = JSON.parse(issues_response)
 
 			issues.each do |issue|
@@ -57,16 +66,18 @@ class GithubImporter < Jekyll::Generator
 				# parent's data
 				issue_data[:name] = item['name']
 				issue_data[:language] = item['language']
+				issue_data[:repository_url] = item['html_url']
+
 				# we've to analyze the name to obtain the projects and subproject
 				if issue_data[:name].start_with?(*projects_prefix)
 					issue_data[:project] = item['name'].partition('-').first
-					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+					issue_data[:subproject] = item['name']
 				elsif projects_prefix.include? item['name']+'-'
 					issue_data[:project] = item['name']
-					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+					issue_data[:subproject] = item['name']
 				else
 					issue_data[:project] = 'other'
-					issue_data[:subproject] = item['description']!='' ? item['description'] : item['name']
+					issue_data[:subproject] = item['name']
 				end
 
 				# issue's data

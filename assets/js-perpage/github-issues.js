@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 
         var $issues_table = $('#issues_table').DataTable( {
+            "pageLength": 20,
             "bLengthChange": false,
             "bInfo" : false,
             "language": {
@@ -28,9 +29,12 @@ $(document).ready(function() {
                 { "data": "type" , "visible": false, "name":"type"},
                 { "data": "language" , "visible": false, "name":"language"},
                 { "data": "project" , "name":"project", "render": function(data, type, row, meta ) {
-                    return data.charAt(0).toUpperCase() + data.slice(1);
+                    return data in projects_dictionary ? projects_dictionary[data] : data;
                 }},
-                { "data": "subproject" },
+                { "data": "subproject" , "render": function(data, type, row, meta ){
+                    return "<a target='_blank' href='"+row.repository_url+"'>"+data+"</a>";
+                    } 
+                },
                 { "data": "title", "render": function(data, type, row, meta ){
                     return "<a target='_blank' href='"+row.url+"'>"+data+"</a>";
                     } 
@@ -51,12 +55,12 @@ $(document).ready(function() {
                         var val = $.fn.dataTable.util.escapeRegex(
                             $(this).val()
                         );
-                        column.search( val ? '^'+val+'$' : '', true, false ).draw();
+                        column.search( val ? val : '', true, false ).draw();
                     } );
  
                 column.data().unique().sort().each( function ( d, j ) {
-                    var title = d.charAt(0).toUpperCase() + d.slice(1);
-                    select.append( '<option value="'+d+'">'+title+'</option>' )
+                    var title = d in projects_dictionary ? projects_dictionary[d] : d;
+                    select.append( '<option value="'+title+'">'+title+'</option>' )
                 } );
             } );
             this.api().column('language:name').every( function () {

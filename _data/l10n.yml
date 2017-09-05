@@ -77,6 +77,12 @@ it:
     todo_page_tech: Tecnologie
     todo_page_types: Tipi
     todo_page_filters: Filtra la lista
+    todo_projects_dict:
+        pianotriennale: Piano Triennale
+        anpr: Anagrafe Nazionale della Popolazione Residente
+        spid: Sistema Pubblico di Identità Digitale
+        other: Altro
+        
 
 en:
   code: eng
@@ -157,4 +163,9 @@ en:
     todo_page_tech: Technologies
     todo_page_types: Types
     todo_page_filters: Filter the list
+    todo_projects_dict:
+        pianotriennale: Three-year Plan
+        anpr: National Registry of Resident Population
+        spid: Public System for Digital Identity
+        other: Other
     

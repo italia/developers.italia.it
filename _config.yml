@@ -33,6 +33,7 @@ github_api_url: https://api.github.com
 github_folder: github
 github_projects_prefix: ['spid-','anpr-','pianotriennale-']
 github_access_token: ENV_GITHUB_ACCESS_TOKEN
+github_blacklist_repos: ['anpr']
 
 # Build settings
 markdown: kramdown
