@@ -121,7 +121,7 @@ layout: default
 
       {% for post in posts limit: 3 %}
 
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
+        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' %}
 
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
             {% include card.html
