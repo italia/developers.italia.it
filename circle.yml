@@ -1,0 +1,24 @@
+---
+machine:
+  ruby:
+    version: 2.2.3
+  node:
+    version: 5.0.0
+environment:
+  JEKYLL_ENV: production
+  NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+compile:
+  override:
+#   - gulp build
+    - bundle exec jekyll build
+test:
+  post:
+      - bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+#deployment:
+#  production:
+#    branch: master
+#    commands:
+#      - gulp publish-production
+general:
+  artifacts:
+    - "_site"
