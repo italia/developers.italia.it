@@ -23,7 +23,7 @@ lang: it
 
     <div class="js-Masonry-container u-pullUp-10" data-columns>
 
-      {% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+      {% assign projects = site.projects | where: 'lang', active_lang | sort: 'order' | reverse %}
 
       {% for project in projects %}
 

@@ -5,7 +5,7 @@ lang: it
 
 {% include setlang.html %}
 
-{% assign projects = site.projects | where: 'lang', active_lang | sort 'order' | reverse %}
+{% assign projects = site.projects | where: 'lang', active_lang | sort: 'order' | reverse %}
 
 <div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
