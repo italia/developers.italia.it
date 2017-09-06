@@ -81,6 +81,8 @@ it:
         pianotriennale: Piano Triennale
         anpr: Anagrafe Nazionale della Popolazione Residente
         spid: Sistema Pubblico di Identità Digitale
+        lg: Linee Guida
+        website: Siti web
         other: Altro
         
 
@@ -167,5 +169,7 @@ en:
         pianotriennale: Three-year Plan
         anpr: National Registry of Resident Population
         spid: Public System for Digital Identity
+        lg: Guidelines
+        website: Web sites
         other: Other
     

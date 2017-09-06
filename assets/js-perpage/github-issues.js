@@ -32,7 +32,7 @@ $(document).ready(function() {
                     return data in projects_dictionary ? projects_dictionary[data] : data;
                 }},
                 { "data": "subproject" , "render": function(data, type, row, meta ){
-                    return "<a target='_blank' href='"+row.repository_url+"'>"+data+"</a>";
+                    return "<a class='u-textWeight-400' target='_blank' href='"+row.repository_url+"'>"+data+"</a>";
                     } 
                 },
                 { "data": "title", "render": function(data, type, row, meta ){

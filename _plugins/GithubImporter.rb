@@ -62,6 +62,9 @@ class GithubImporter < Jekyll::Generator
 			issues = JSON.parse(issues_response)
 
 			issues.each do |issue|
+				# skip if the issues is also a PR
+				next if issue.key?("pull_request")
+
 				issue_data = {}
 				# parent's data
 				issue_data[:name] = item['name']
@@ -74,6 +77,9 @@ class GithubImporter < Jekyll::Generator
 					issue_data[:subproject] = item['name']
 				elsif projects_prefix.include? item['name']+'-'
 					issue_data[:project] = item['name']
+					issue_data[:subproject] = item['name']
+				elsif issue_data[:name].match(/.italia.it|\.gov.it/).to_s!=''
+					issue_data[:project] = 'website'
 					issue_data[:subproject] = item['name']
 				else
 					issue_data[:project] = 'other'
