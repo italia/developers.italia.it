@@ -32,16 +32,16 @@ layout: default
     {{ content }}
     </div>
 
-	<table id="issues_table" class="display" cellspacing="0" width="100%">
+	<table id="issues_table" class="display responsive" cellspacing="0" width="100%">
         <thead>
             <tr>
             	<th>Created</th>
             	<th>Type</th>
             	<th>Language</th>
-                <th>{{ t.todo_page_project }}</th>
-                <th>{{ t.todo_page_subproject }}</th>
-                <th>{{ t.todo_page_title }}</th>
-                <th>{{ t.todo_page_labels }}</th>
+                <th data-priority="2">{{ t.todo_page_project }}</th>
+                <th data-priority="1">{{ t.todo_page_subproject }}</th>
+                <th data-priority="0">{{ t.todo_page_title }}</th>
+                <th data-priority="10">{{ t.todo_page_labels }}</th>
             </tr>
         </thead>
     </table>
@@ -78,7 +78,7 @@ layout: default
                
             </div>
             </div>
-            <button class="Button Button--default Button--round u-text-r-xs u-background-50 u-color-white" id="issues_table_clear">
+            <button class="Button Button--default Button--round u-borderRadius-m u-text-r-xs u-background-50 u-color-white" id="issues_table_clear">
                 {{ t.todo_page_clearfilter }}
             </button>
 	      </div>

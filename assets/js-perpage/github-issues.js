@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 
         var $issues_table = $('#issues_table').DataTable( {
+            responsive: true,
             "pageLength": 20,
             "bLengthChange": false,
             "bInfo" : false,

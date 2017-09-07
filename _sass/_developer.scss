@@ -448,6 +448,12 @@
 
 /** Select2 custom
     ================ */
+
+body.layout-github-issues {
+  .Separator-room {
+     padding-bottom: 2rem;
+  }
+}
 .select2-selection--multiple {
   border: 1px solid #ccc;
   padding: 4px !important;
@@ -474,6 +480,7 @@
     text-decoration: none !important;
     color: #06D !important;
     }
+    
   }
   .paginate_button:hover {
     background: transparent !important;
@@ -526,6 +533,17 @@
     box-shadow: none;
     width: 100%;
     text-transform: none;
+    border: none;
+  }
+}
+
+
+@media screen and (max-width: 767px) { 
+  #issues_table_wrapper {
+    .paginate_button {
+      display: block;
+      float: left;
+    }
   }
 }
 
