@@ -4,6 +4,7 @@ title:  Nasce Hack.Developers, il più grande code sprint mai realizzato in Ital
 subtitle: Il 7 e 8 Ottobre, partecipa in più di 20 sedi nel territorio per costruire una PA a misura di cittadino
 date:   2017-07-27 17:00:00 +0100
 categories: hackathon eventi sviluppatori
+tags: hackathon eventi sviluppatori
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it

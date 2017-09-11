@@ -4,6 +4,7 @@ title:  Pubblicata la roadmap di SPID
 subtitle: Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo
 date:   2017-05-25 17:00:00 +0100
 categories: roadmap progetti
+tags: roadmap progetti
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it

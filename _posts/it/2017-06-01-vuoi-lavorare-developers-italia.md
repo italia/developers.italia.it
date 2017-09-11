@@ -4,6 +4,7 @@ title:  Vuoi lavorare per Developers Italia?
 subtitle: Al via una serie di gare per sviluppare codice 100% open-source
 date:   2017-06-01 17:00:00 +0100
 categories: progetti sviluppatori
+tags: progetti sviluppatori
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it

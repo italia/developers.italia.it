@@ -4,6 +4,7 @@ title:  Meetup su Hack.Developers, incontraci dall'11 al 19 Settembre
 subtitle: 6 incontri a giro per l'Italia, incontrando gli sviluppatori prima di Hack.Developers
 date:   2017-09-07 17:00:00 +0100
 categories: hackathon eventi sviluppatori
+tags: hackathon eventi sviluppatori
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it

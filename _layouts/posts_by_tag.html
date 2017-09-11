@@ -7,7 +7,11 @@ lang: it
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ t.news_title }}</h1>
+    {{ t.news_title }}
+    <span class="u-text-r-m u-color-20">&nbsp;/&nbsp;{{ page.tag }}</span>
+  </h1>
+  <h2 >
+    </h2>
 </div>
 
 <hr class="Separator-room reduced u-background-50" />
@@ -17,7 +21,7 @@ lang: it
   <div class="Grid">
 
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      {% for post in paginator.posts %}
+      {% for post in page.posts %}
 
         {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
 
@@ -37,20 +41,7 @@ lang: it
 
       {% endfor %}
 
-      <div>
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="u-color-50">{{ t.paginator_previous_page }}</a>
-        {% else %}
-          <span class="u-color-grey-20">{{ t.paginator_previous_page }}</span>
-        {% endif %}
-        <span>{{ t.paginator_page }}: {{ paginator.page }} {{ t.on_ }} {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="u-color-50">{{ t.paginator_next_page }}</a>
-        {% else %}
-          <span>{{ t.next_page }}</span>
-        {% endif %}
-      </div>
-
+      
     </div>
 
     {% capture categories %}
