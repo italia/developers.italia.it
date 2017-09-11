@@ -29,7 +29,7 @@ lang: it
           link=post.url
           text=excerpt
           hasImage=false
-          categories=post.categories
+          categories=post.tags
           flat=true
           classes='u-background-grey-15'
           %}
@@ -54,7 +54,7 @@ lang: it
     </div>
 
     {% capture categories %}
-      {% for category in site.categories %}{{ category[0] }}:{% endfor %}
+      {% for category in site.tags %}{{ category[0] }}:{% endfor %}
     {% endcapture %}
 
     {% assign categories_ = categories | strip | split: ':' %}
