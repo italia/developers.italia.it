@@ -24,3 +24,4 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 - [Architettura](https://pagopa-doc-architettura.readthedocs.io/)
 - Formato Messaggi XML (in arrivo)
 - Specifiche Attuative Pagamenti (in arrivo)
+- Specifiche Implementazione Web Services (in arrivo)
