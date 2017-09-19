@@ -9,7 +9,7 @@ description: >
 lang: en
 order: 4
 highlight: false
-comingsoon: true
+comingsoon: false
 layout: project
 ---
 
