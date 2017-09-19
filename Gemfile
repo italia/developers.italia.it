@@ -25,6 +25,7 @@ group :jekyll_plugins do
    gem 'jekyll-redirect-from'
    gem 'jekyll-paginate'
    gem 'jekyll-toc'
+   gem 'jekyll-tagging'
    gem 'hawkins'
 end
 

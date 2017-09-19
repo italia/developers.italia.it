@@ -75,10 +75,10 @@
 
     </div>
 
-    {% if include.categories %}
+    {% if include.tags %}
     <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter u-margin-top-l">
       <p class="u-color-grey-50 u-margin-r-right">{{ t.news_categories }}</p>
-      {% include pills.html items=include.categories small=true %}
+      {% include pills.html items=include.tags small=true %}
     </div>
     {% endif %}
 

@@ -3,10 +3,13 @@ layout: post
 title:  Pubblicata la roadmap di SPID
 subtitle: Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo
 date:   2017-05-25 17:00:00 +0100
-categories: roadmap progetti
+tags: roadmap progetti
+categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it
+redirect_from:
+  - /roadmap/progetti/2017/05/25/pubblicata-roadmap-spid.html
 ---
 
 Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la [roadmap di SPID](https://trello.com/b/PHF0ErvK/spid-roadmap). La abbiamo preparata in forma di bacheca di Trello.

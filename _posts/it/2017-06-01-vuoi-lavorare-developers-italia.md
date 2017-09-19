@@ -3,10 +3,13 @@ layout: post
 title:  Vuoi lavorare per Developers Italia?
 subtitle: Al via una serie di gare per sviluppare codice 100% open-source
 date:   2017-06-01 17:00:00 +0100
-categories: progetti sviluppatori
+tags: progetti sviluppatori
+categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it
+redirect_from:
+  - /progetti/sviluppatori/2017/06/01/vuoi-lavorare-developers-italia.html
 ---
 
 Vuoi lavorare per Developers Italia? Sei un'azienda specializzata in tecnologie e framework open source, e vuoi aiutare il tuo Paese a sviluppare servizi digitali innovativi? Allora stiamo cercando proprio te!
