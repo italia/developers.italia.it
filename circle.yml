@@ -1,0 +1,15 @@
+---
+machine:
+  ruby:
+    version: 2.2.3
+  environment:
+    NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
+compile:
+  override:
+    - bundle exec jekyll build
+test:
+  post:
+    - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external --alt-ignore '/.*/'
+general:
+  artifacts:
+    - "_site"

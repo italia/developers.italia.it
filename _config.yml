@@ -39,6 +39,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - circle.yml
+  - vendor
 
 paginate: 10
 paginate_path: "/news/page:num/"
