@@ -35,8 +35,8 @@ it:
             in arrivo
           </span>
         </div>
-  - title: Cosa fare
-    url: it/cosa-fare
+  # - title: Cosa fare
+  #   url: it/cosa-fare
   - title: Notizie
     url: news
   - title: Chi siamo
