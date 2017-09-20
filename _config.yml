@@ -28,6 +28,13 @@ github_username:  italia
 piwik: teamdigitale
 google_analytics: UA-96140462-1
 
+# Github importer
+github_api_url: https://api.github.com
+github_folder: github
+github_projects_prefix: ['spid-','anpr-','pianotriennale-','lg-']
+github_access_token: ENV_GITHUB_ACCESS_TOKEN
+github_blacklist_repos: ['anpr']
+
 # Build settings
 markdown: kramdown
 gems:

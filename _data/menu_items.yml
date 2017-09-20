@@ -35,6 +35,8 @@ it:
             in arrivo
           </span>
         </div>
+  - title: Cosa fare
+    url: it/cosa-fare
   - title: Notizie
     url: news
   - title: Chi siamo
@@ -84,6 +86,8 @@ en:
               coming soon
             </span>
           </div>
+  - title: To do
+    url: en/to-do
   - title: News
     url: news
   - title: Credits

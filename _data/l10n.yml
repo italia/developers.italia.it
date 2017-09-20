@@ -68,6 +68,23 @@ it:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: Github
+    todo_page_project: Progetto
+    todo_page_subproject: Sotto progetto
+    todo_page_title: Titolo
+    todo_page_labels: Etichette
+    todo_page_clearfilter: Pulisci filtri
+    todo_page_projects: Progetti
+    todo_page_tech: Tecnologie
+    todo_page_types: Tipi
+    todo_page_filters: Filtra la lista
+    todo_projects_dict:
+        pianotriennale: Piano Triennale
+        anpr: Anagrafe Nazionale della Popolazione Residente
+        spid: Sistema Pubblico di Identità Digitale
+        lg: Linee Guida
+        website: Siti web
+        other: Altro
+        
 
 en:
   code: eng
@@ -139,3 +156,20 @@ en:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: Github
+    todo_page_project: Project
+    todo_page_subproject: Sub-project
+    todo_page_title: Title
+    todo_page_labels: Labels
+    todo_page_clearfilter: Clear filters
+    todo_page_projects: Projects
+    todo_page_tech: Technologies
+    todo_page_types: Types
+    todo_page_filters: Filter the list
+    todo_projects_dict:
+        pianotriennale: Three-year Plan
+        anpr: National Registry of Resident Population
+        spid: Public System for Digital Identity
+        lg: Guidelines
+        website: Web sites
+        other: Other
+    
