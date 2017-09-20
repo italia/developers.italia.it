@@ -8,7 +8,7 @@ layout: default
   {% assign subnav = site.data[page.subnav] %}
   {% include linklist.html items=subnav dynamic=true %}
   {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-  {% capture pills %}{% include pills.html items=page.categories  %}{% endcapture %}
+  {% capture pills %}{% include pills.html items=page.tags  %}{% endcapture %}
   {% include sideblock.html title=t.home_projects_expand content=pills %}
 {% endcomment %}
 
@@ -61,7 +61,7 @@ layout: default
 
         <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
           <h2 class="u-text-r-xxs u-textSecondary u-textWeight-300 u-margin-r-bottom">{{ t.news_categories }}</h2>
-          {% include pills.html items=page.categories small=true %}
+          {% include pills.html items=page.tags small=true %}
         </div>
 
       </div>
