@@ -1,0 +1,26 @@
+{% assign posts = site.ipress_feed | where: "ipress_lang", page.lang %}
+
+<blockquote class="Prose-blockquote u-background-grey-10">
+  <h3>{{ include.header }}</h3>
+
+  <div id="ipress" style="min-height:100px;">
+    {% for news in (posts) limit:3 %}
+      <div class="row">
+        <div class="col-md-4">
+          <p class="team-item-title">
+            <a href="{{ news.ipress_link }}" target="_blank" style="text-decoration: none;">
+              {{ news.ipress_publishDate | date: "%d/%m/%Y" }}
+              {{ news.ipress_title }}
+            </a>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+
+    <p>
+      <a href="" target="_blank" style="text-decoration: none;">
+        Vedi tutti
+      </a>
+    </p>
+  </div>
+</blockquote>

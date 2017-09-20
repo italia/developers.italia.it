@@ -28,6 +28,9 @@ github_username:  italia
 piwik: teamdigitale
 google_analytics: UA-96140462-1
 
+# iPress importer
+ipress_url: https://api.ipresslive.com/v2/pressreleases/list/644fb114-0fa5-442c-8ed3-779384d7ac49
+
 # Build settings
 markdown: kramdown
 gems:

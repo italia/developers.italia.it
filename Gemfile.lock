@@ -4,6 +4,8 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -13,6 +15,8 @@ GEM
     hawkins (2.0.5)
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -34,7 +38,7 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.1.0)
       jekyll (~> 3.3)
-    jekyll-toc (0.2.0)
+    jekyll-toc (0.2.1)
       nokogiri (~> 1.6)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
@@ -44,10 +48,12 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    mime-types (2.99.3)
     mini_portile2 (2.1.0)
     minima (2.1.0)
       jekyll (~> 3.3)
-    nokogiri (1.7.1)
+    netrc (0.11.0)
+    nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
@@ -55,9 +61,16 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.23)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.4)
 
 PLATFORMS
   ruby
@@ -71,10 +84,11 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-toc
   minima (~> 2.0)
+  rest-client (~> 1.8)
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.4.0p0
 
 BUNDLED WITH
    1.14.6
