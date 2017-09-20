@@ -71,9 +71,9 @@ Il DAF si compone di:
 
 Qui puoi trovare la documentazione tecnica attualmente disponibile:
 
-[Documentazione tecnica architetturale](https://github.com/teamdigitale/daf/tree/master/docs-dev)
-
 [Piano di sviluppo](http://daf-piano-di-sviluppo.readthedocs.io/it/latest/)
+
+[Documentazione tecnica per sviluppatori](https://daf-docs.readthedocs.io/en/latest/)
 
 
 ## Codice sorgente
@@ -85,7 +85,7 @@ progressi possono essere seguiti direttamente sui vari repositori GitHub:
 
 [Data portal](https://github.com/teamdigitale/daf-dataportal)
 
-[Nuovo sito dati.gov.it](https://github.com/teamdigitale/daf-dataportal)
+[Nuovo sito dati.gov.it (opendata)](https://github.com/italia/daf-publicdata)
 
 
 ## Collaborazione
