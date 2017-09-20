@@ -81,9 +81,9 @@ Qui puoi trovare la documentazione tecnica attualmente disponibile:
 Attualmente, il DAF è in fase di pieno sviluppo, in tutti i suoi componenti, e i 
 progressi possono essere seguiti direttamente sui vari repositori GitHub:
 
-[DAF core (piattaforma big-data)](https://github.com/teamdigitale/daf)
+[DAF core (piattaforma big-data)](https://github.com/italia/daf)
 
-[Data portal](https://github.com/teamdigitale/daf-dataportal)
+[Data portal](https://github.com/italia/daf-dataportal)
 
 [Nuovo sito dati.gov.it (opendata)](https://github.com/italia/daf-publicdata)
 
