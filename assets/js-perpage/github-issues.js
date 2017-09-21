@@ -107,6 +107,9 @@ $(document).ready(function() {
 
             } );
 
+            // set the initial filter
+            $('input[value="help wanted"]').trigger('click');
+
             // reset all filters
             $issues_table_clear.on('click', function (e){
                 $github_types_list.find('input:checked').removeAttr('checked');

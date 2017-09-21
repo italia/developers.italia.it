@@ -101,6 +101,8 @@ class GithubImporter < Jekyll::Generator
 							issue_data[:type] = label['name'].partition(':').last
 						elsif label['name'].start_with?('diff:')
 							issue_data[:severity] = label['name'].partition(':').last
+						elsif label['name']=='help wanted'
+							issue_data[:type] = label['name']
 						else
 							issue_data[:labels].push(label['name'])
 						end
