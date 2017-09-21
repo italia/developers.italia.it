@@ -23,7 +23,7 @@ lang: it
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       {% for post in page.posts %}
 
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
+        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' %}
 
         <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
         {% include card.html
