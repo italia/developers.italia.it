@@ -1,6 +1,6 @@
 privacy:
   title: footer_link_privacy_policy
-  url: '/privacy-policy'
+  url: '/privacy-policy/'
 legal:
   title: footer_link_legal_notes
-  url: '/note-legali'
+  url: '/note-legali/'
