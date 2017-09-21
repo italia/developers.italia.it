@@ -13,7 +13,7 @@ compile:
     - bundle exec jekyll build
 test:
   post:
-      - bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      - bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 #deployment:
 #  production:
 #    branch: master
