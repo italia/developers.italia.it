@@ -1,3 +1,4 @@
+
 ---
 title: dati.gov.it
 subtitle: I dati aperti della pubblica amministrazione
@@ -7,7 +8,7 @@ description: >
   Dati.gov.it e’ il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l’obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.
 lang: it
 order: 4
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 maintainers:

@@ -7,7 +7,7 @@ description: >
   La vision del DAF è rendere i dati pubblici di facile accesso e comprensione da parte delle PA per supportarle nel proprio data driven decision making, e di facilitare l'accesso alle informazioni che possono essere rese pubbliche da parte di cittadini e imprese.
 lang: it
 order: 3
-highlight: false
+highlight: true
 comingsoon: false
 layout: project
 maintainers:
