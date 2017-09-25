@@ -96,6 +96,8 @@ class GithubImporter < Jekyll::Generator
 				issue_data[:severity] = ''
 				# lets optimize labels
 				if issue['labels'].any? == true
+					puts issue['labels'].is_a?(Hash)
+					puts '--------- -- -- - - --  -'
 					issue['labels'].each do |label|
 						if label['name'].start_with?('tipo:')
 							issue_data[:type] = label['name'].partition(':').last

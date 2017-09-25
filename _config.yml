@@ -34,6 +34,7 @@ github_folder: github
 github_projects_prefix: ['spid-','anpr-','pianotriennale-','lg-']
 github_access_token: ENV_GITHUB_ACCESS_TOKEN
 github_blacklist_repos: ['anpr']
+github_issues_types: ['bug','enhancement','new project']
 
 # Build settings
 markdown: kramdown
