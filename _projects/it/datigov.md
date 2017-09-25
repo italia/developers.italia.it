@@ -1,4 +1,3 @@
-
 ---
 title: dati.gov.it
 subtitle: I dati aperti della pubblica amministrazione
