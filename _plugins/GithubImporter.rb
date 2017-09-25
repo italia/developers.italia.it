@@ -1,6 +1,7 @@
 require 'rest_client'
 require 'json'
 require 'pathname'
+require 'parallel'
 
 class GithubImporter < Jekyll::Generator
 	safe true
@@ -40,7 +41,7 @@ class GithubImporter < Jekyll::Generator
 		github_issues = []
 		
 		# For every repos we need the issues
-		repos.each do |item|
+		Parallel.each(repos, in_threads: 16) { |item|
 
 			open_issues = Integer(item['open_issues_count'])
 			name = item['name']
@@ -104,7 +105,7 @@ class GithubImporter < Jekyll::Generator
 				github_issues.push(issue_data)
 			end
 
-		end
+		}
 		puts "++++++++++++++ Github issues fetched: " + github_issues.size.to_s
 
 		
