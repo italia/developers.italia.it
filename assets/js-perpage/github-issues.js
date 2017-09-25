@@ -27,7 +27,6 @@ $(document).ready(function() {
             "order": [[ 0, "desc" ]],
             "columns": [
                 { "data": "created_at" , "visible": false},
-                { "data": "type" , "visible": false, "name":"type"},
                 { "data": "language" , "visible": false, "name":"language"},
                 { "data": "project" , "name":"project", "render": function(data, type, row, meta ) {
                     return data in projects_dictionary ? projects_dictionary[data] : data;
@@ -40,6 +39,10 @@ $(document).ready(function() {
                     return "<a target='_blank' href='"+row.url+"'>"+data+"</a>";
                     } 
                 },
+                { "data": "type" ,  "orderable": false, "name":"type", "render": function(data, type, row, meta) {
+                    var classname = data.replace(' ','');
+                    return "<span hidden>"+data+"</span><span class='issue-"+classname+"' ></span>";
+                }},
                 { "data": "labels", "render": function(data, type, row, meta ){
                     var labelist = '';
                     data.forEach( function (item){
@@ -84,7 +87,8 @@ $(document).ready(function() {
                 var column = this;
                 column.data().unique().sort().each( function ( d, j ) {
                     if (d!=null && d!='') {
-                    $github_types_list.append('<span><input type="checkbox" id="github_types_'+j+'" name="github_types_list[]" value="'+d+'"/> '+d+'</span>');
+                    var classname = d.replace(' ','');
+                    $github_types_list.append('<span ><input type="checkbox" id="github_types_'+j+'" name="github_types_list[]" value="'+d+'"/> <i class="issue-'+classname+'"></i>'+d+'</span>');
                     $('#github_types_'+j).on('change', function() {
                         var val = $(this).val();
 
@@ -106,9 +110,6 @@ $(document).ready(function() {
                 } );
 
             } );
-
-            // set the initial filter
-            $('input[value="help wanted"]').trigger('click');
 
             // reset all filters
             $issues_table_clear.on('click', function (e){

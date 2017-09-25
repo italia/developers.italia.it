@@ -11,6 +11,7 @@ class GithubImporter < Jekyll::Generator
 		projects_prefix = site.config['github_projects_prefix']
 		access_token = ENV['GITHUB_ACCESS_TOKEN']
 		site_folder = site.config['github_folder']
+		issues_types = site.config['github_issues_types']
 
 		rest_params = {per_page: 100}
 		if access_token!=nil
@@ -71,6 +72,13 @@ class GithubImporter < Jekyll::Generator
 				issue_data[:language] = item['language']
 				issue_data[:repository_url] = item['html_url']
 
+				# labels
+				issue_data[:labels] = issue['labels'].collect{ |label| label['name']}
+				# for now we want only issues tagged as "help wanted"
+				next if not issue_data[:labels].include?('help wanted')
+				# for now, strip the "help wanted from the list"
+				issue_data[:labels].delete('help wanted')
+				
 				# we've to analyze the name to obtain the projects and subproject
 				if issue_data[:name].start_with?(*projects_prefix)
 					issue_data[:project] = item['name'].partition('-').first
@@ -86,30 +94,12 @@ class GithubImporter < Jekyll::Generator
 					issue_data[:subproject] = item['name']
 				end
 
-				# issue's data
 				issue_data[:url] = issue['html_url']
 				issue_data[:title] = issue['title']
 				issue_data[:created_at] = issue['created_at']
 				issue_data[:raw_labels] = issue['labels']
-				issue_data[:labels] = []
-				issue_data[:type] = ''
+				issue_data[:type] = (issue_data[:labels] & issues_types)[0]!=nil ? (issue_data[:labels] & issues_types)[0] : ''
 				issue_data[:severity] = ''
-				# lets optimize labels
-				if issue['labels'].any? == true
-					puts issue['labels'].is_a?(Hash)
-					puts '--------- -- -- - - --  -'
-					issue['labels'].each do |label|
-						if label['name'].start_with?('tipo:')
-							issue_data[:type] = label['name'].partition(':').last
-						elsif label['name'].start_with?('diff:')
-							issue_data[:severity] = label['name'].partition(':').last
-						elsif label['name']=='help wanted'
-							issue_data[:type] = label['name']
-						else
-							issue_data[:labels].push(label['name'])
-						end
-					end
-				end
 
 				github_issues.push(issue_data)
 			end

@@ -76,6 +76,7 @@ it:
     todo_page_projects: Progetti
     todo_page_tech: Tecnologie
     todo_page_types: Tipi
+    todo_page_type: Tipo
     todo_page_filters: Filtra la lista
     todo_projects_dict:
         pianotriennale: Piano Triennale
@@ -164,6 +165,7 @@ en:
     todo_page_projects: Projects
     todo_page_tech: Technologies
     todo_page_types: Types
+    todo_page_type: Type
     todo_page_filters: Filter the list
     todo_projects_dict:
         pianotriennale: Three-year Plan
