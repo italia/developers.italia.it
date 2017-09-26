@@ -85,6 +85,7 @@ it:
         lg: Linee Guida
         website: Siti web
         other: Altro
+        daf: Data & Analytics Framework
         
 
 en:
@@ -174,4 +175,5 @@ en:
         lg: Guidelines
         website: Web sites
         other: Other
+        daf: Data & Analytics Framework
     
