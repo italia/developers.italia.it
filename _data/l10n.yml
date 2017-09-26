@@ -80,12 +80,15 @@ it:
     todo_page_filters: Filtra la lista
     todo_projects_dict:
         pianotriennale: Piano Triennale
-        anpr: Anagrafe Nazionale della Popolazione Residente
-        spid: Sistema Pubblico di Identità Digitale
+        anpr: ANPR (Anagrafe Nazionale)
+        spid: SPID (Identità Digitale)
         lg: Linee Guida
         website: Siti web
         other: Altro
         daf: Data & Analytics Framework
+        design: Italia Design System
+        cie: Carta d'Identità Elettronica
+        security: Security
         
 
 en:
