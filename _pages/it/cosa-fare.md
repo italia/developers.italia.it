@@ -5,7 +5,13 @@ lang: it
 layout: github-issues
 ---
 
-Hai voglia di aiutare ma non sai da dove cominciare? Tutti gli sviluppi che facciamo sono su GitHub [@italia](https://github.com/italia "Italia su Github"), ma i progetti sono tanti e utilizzano tecnologie diverse. In questa pagina, raccogliamo tutte le issue aperte di tutti i progetti, e potrai quindi cercare un'attività con più facilità. Utilizza i filtri per orientarti più facilmente e trovare qualcosa a te più affine.
+Hai voglia di aiutare ma non sai da dove cominciare? Tutti gli sviluppi che facciamo sono su GitHub [@italia](https://github.com/italia "Italia su Github"), ma i progetti sono tanti e utilizzano tecnologie diverse. In questa pagina, raccogliamo tutte le issue aperte di tutti i progetti, e potrai quindi cercare un'attività con più facilità. Utilizza i filtri per orientarti più facilmente e trovare qualcosa a te più affine. 
+
+<br/>
+
+## Sei qui per l'hackathon?
+
+Benvenuto! Tutte le issue elencate in questa lista sono challenge per l'hackathon. **La lista è ancora in aggiornamento...**
 
 
 {:.u-textWeight-400 .u-margin-top-l }
