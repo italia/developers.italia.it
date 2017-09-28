@@ -13,6 +13,7 @@ class GithubImporter < Jekyll::Generator
 		access_token = ENV['GITHUB_ACCESS_TOKEN']
 		site_folder = site.config['github_folder']
 		issues_types = site.config['github_issues_types']
+		tech_list = site.config['github_tech_list']
 
 		rest_params = {per_page: 100}
 		if access_token!=nil
@@ -21,7 +22,7 @@ class GithubImporter < Jekyll::Generator
 		# obtaining all the repos of Italia Github org.
 		repos_endpoint = feed_url + "/orgs/italia/repos"
 		begin
-			repos_response = RestClient.get repos_endpoint,{params: rest_params}
+			repos_response = RestClient.get repos_endpoint,{params: rest_params, accept: 'application/vnd.github.mercy-preview+json'}
 		rescue RestClient::Unauthorized, RestClient::Forbidden => err
 			puts "*****************************************************"
 			puts("WARNING!!! Rate-limit problem with Github API provide a valid GITHUB_ACCESS_TOKEN in ENV variables")
@@ -70,7 +71,7 @@ class GithubImporter < Jekyll::Generator
 				issue_data = {}
 				# parent's data
 				issue_data[:name] = item['name']
-				issue_data[:language] = item['language']
+				issue_data[:language] = tech_list & item['topics']
 				issue_data[:repository_url] = item['html_url']
 
 				# labels
