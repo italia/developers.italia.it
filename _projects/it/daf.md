@@ -90,8 +90,15 @@ progressi possono essere seguiti direttamente sui vari repositori GitHub:
 
 ## Collaborazione
 
-Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
-l'archivio delle precedenti discussioni e iscriverti per partecipare. A breve, migreremo la mailing-list
-nel forum di Developers Italia.
+Utilizziamo una sezione del forum per discutere di dati, open data e DAF. In precedenza,
+avevamo aperto una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
+l'archivio delle precedenti discussioni e iscriverti per partecipare. A breve, migreremo l'archivio
+della mailing-list nel forum.
 
-[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+
+[Discussioni su DAF nel forum](https://forum.italia.it/c/daf)
+
+[Vecchia mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+
+
+

@@ -13,6 +13,7 @@ layout: default
   {% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
+{% assign github_tech_list = site.github_tech_list %}
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
@@ -69,6 +70,9 @@ layout: default
             <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs" for="github_languages_list">{{ t.todo_page_tech }}</label>
 	      	<select name="github_languages_list" id="github_languages_list" multiple="multiple" class="Form-input">
 	      		<option value=""></option>
+                {% for tech in github_tech_list %}
+                <option value="{{tech}}">{{tech}}</option>
+                {% endfor %}
 	      	</select>
             </div>
 
