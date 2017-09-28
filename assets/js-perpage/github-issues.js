@@ -77,11 +77,6 @@ $(document).ready(function() {
                         column.search('', true, false ).draw();
                     }
                 } );
-                column.data().unique().sort().each( function ( d, j ) {
-                    if (d!=null && d!='') {
-                    select.append( '<option value="'+d+'">'+d+'</option>' );
-                    }
-                } );
             } );
             this.api().column('type:name').every( function () {
                 var column = this;
