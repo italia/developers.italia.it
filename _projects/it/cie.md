@@ -15,9 +15,9 @@ layout: project
 ## Intro
 
 La Carta d'Identità Elettronica (CIE per gli amici) è giunta alla revisione
-3.0, e viene già distribuita potenzialmente a più del 50% dei cittadini
-italiani al momento del rinnovo; entro l'estate 2018, tutte le anagrafi
-italiane rilasceranno solo CIE.
+3.0, e viene già distribuita potenzialmente a circa il 50% dei cittadini
+italiani al momento del rinnovo; entro la fine dell'estate 2018, tutte le
+anagrafi italiane rilasceranno solo CIE.
 
 CIE non è solo un documento d'identità, ma una potente smartcard NFC, che può
 aprire la strada alla creazione di nuovi servizi, anche tramite smartphone.
