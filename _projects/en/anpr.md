@@ -39,7 +39,7 @@ We are working on a deep refactoring of all the documentation. For now we achive
 only the current documentation in a format more easy to read and query of all the table and error
 codes.
 
-[Table and error codes](http://anpr.readthedocs.io/en/sphinx/)
+[Table and error codes](http://anpr.readthedocs.io/it/latest/)
 
 
 ### Collaboration
