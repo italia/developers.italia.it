@@ -7,8 +7,8 @@ description: >
   La nuova carta d'identità è molto più che un pezzo di plastica: puoi comunicarci via NFC, per usarla per varchi d'ingresso o come certificato digitale d'identità (compatibile SSL).
 lang: it
 order: 9
-highlight: false
-comingsoon: true
+highlight: true
+comingsoon: false
 layout: project
 ---
 
@@ -50,9 +50,11 @@ necessari.
 Attualmente, la documentazione è disponibile in PDF ma la stiamo convertendo
 secondo lo standard di Developers Italia:
 
-[Progettazione di servizi basati su CIE]()
+[Sezione di informazioni tecniche sul sito ufficiale](http://www.cartaidentita.interno.gov.it/caratteristiche-del-documento/)
 
-[Documentazione del microprocessore]()
+[Specifiche del microprocessore](http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf)
+
+[Progettazione di servizi basati su CIE (in arrivo)]()
 
 
 ## Codice sorgente
