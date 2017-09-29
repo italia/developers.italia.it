@@ -30,7 +30,7 @@ I cookies non sono utilizzati per attività di profilazione dell’Utente.
 L’Utente può scegliere di abilitare o disabilitare i cookies intervenendo sulle impostazioni del proprio browser di navigazione secondo le istruzioni rese disponibili dai relativi fornitori ai link di seguito indicati.
 
   - [Chrome](https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=it)
-  - [Firefox](https://support.mozilla.org/t5/Cookies-and-cache/Gestione-dei-cookie/ta-p/14148)
+  - [Firefox](https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie)
   - [Safari](https://support.apple.com/kb/ph19214?locale=it_IT)
   - [Internet Explorer](https://support.microsoft.com/it-it/help/17442/windows-internet-explorer-delete-manage-cookies)
   - [Opera](http://help.opera.com/Windows/10.00/it/cookies.html)
