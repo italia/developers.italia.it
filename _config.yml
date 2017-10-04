@@ -31,7 +31,7 @@ google_analytics: UA-96140462-1
 # Github importer
 github_api_url: https://api.github.com
 github_folder: github
-github_projects_prefix: ['spid-','anpr-','daf-','dati-','pianotriennale-','lg-','design-','security-','cie-']
+github_projects_prefix: ['spid-', '18app', 'anpr-','daf-','dati-','pianotriennale-','lg-','design-','security-','cie-']
 github_access_token: ENV_GITHUB_ACCESS_TOKEN
 github_blacklist_repos: []
 github_issues_types: ['bug','enhancement','new project']
