@@ -89,6 +89,7 @@ it:
         design: Italia Design System
         cie: Carta d'Identità Elettronica
         security: Security
+        18app: 18App
         
 
 en:
@@ -180,4 +181,5 @@ en:
         other: Other
         daf: Data & Analytics Framework
         design: Italia Design System
-    
+        18app: 18App
+
