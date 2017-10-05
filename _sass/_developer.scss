@@ -10,6 +10,13 @@
   border-bottom: 1px solid #eee;
   text-decoration: none;
   font-size: 18px !important;
+
+
+}
+
+.section-nav .toc-h3 a{
+  padding-left: 1rem;
+  font-size: .9em!important;
 }
 
 /* Icons
@@ -443,7 +450,7 @@
     text-decoration: none;
     color: #06D;
   }
-  
+
 }
 
 /** Select2 custom
@@ -470,7 +477,7 @@ body.layout-github-issues {
   color: #fff !important;
 }
 
-/* GITHUB ISSUES page 
+/* GITHUB ISSUES page
   ======================= */
 .issue- {
   &bug:before {
@@ -497,7 +504,7 @@ body.layout-github-issues {
     text-decoration: none !important;
     color: #06D !important;
     }
-    
+
   }
   .paginate_button:hover {
     background: transparent !important;
@@ -517,7 +524,7 @@ body.layout-github-issues {
   table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > td.sorting:after {
     display: none !important;
   }
-  table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:after, table.dataTable thead > tr > th.sorting_desc:after, table.dataTable thead > tr > td.sorting:after, 
+  table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:after, table.dataTable thead > tr > th.sorting_desc:after, table.dataTable thead > tr > td.sorting:after,
   table.dataTable thead > tr > td.sorting_asc:after, table.dataTable thead > tr > td.sorting_desc:after {
     display: none !important;
   }
@@ -561,7 +568,7 @@ body.layout-github-issues {
 }
 
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
   #issues_table_wrapper {
     .paginate_button {
       display: block;
@@ -616,5 +623,3 @@ body.layout-github-issues {
   }
 
 }
-
-
