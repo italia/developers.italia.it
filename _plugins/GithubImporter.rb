@@ -15,25 +15,32 @@ class GithubImporter < Jekyll::Generator
 		issues_types = site.config['github_issues_types']
 		tech_list = site.config['github_tech_list']
 
-		rest_params = {per_page: 100}
+		rest_params = {'per_page' => 100, 'page' => 1}
 		if access_token!=nil
 			rest_params['access_token'] = access_token
 		end
 		# obtaining all the repos of Italia Github org.
 		repos_endpoint = feed_url + "/orgs/italia/repos"
-		begin
-			repos_response = RestClient.get repos_endpoint,{params: rest_params, accept: 'application/vnd.github.mercy-preview+json'}
-		rescue RestClient::Unauthorized, RestClient::Forbidden => err
-			puts "*****************************************************"
-			puts("WARNING!!! Rate-limit problem with Github API provide a valid GITHUB_ACCESS_TOKEN in ENV variables")
-			puts err.response
-			return
-		else
-			puts "GITHUB API connection OK"
-		end
-
-		repos = JSON.parse(repos_response)
-
+		
+		repos = []
+		loop do
+            begin
+                repos_response = RestClient.get repos_endpoint, \
+                    {params: rest_params.merge({type: 'public'}), accept: 'application/vnd.github.mercy-preview+json'}
+            rescue RestClient::Unauthorized, RestClient::Forbidden => err
+                puts "*****************************************************"
+                puts("WARNING!!! Rate-limit problem with Github API provide a valid GITHUB_ACCESS_TOKEN in ENV variables")
+                puts err.response
+                return
+            else
+                puts "GITHUB API connection OK"
+                page_repos = JSON.parse(repos_response)
+                repos += page_repos
+                break if page_repos.size != rest_params['per_page']
+                rest_params['page'] += 1
+            end
+        end
+        
 		repos.size > 0 or puts("No repos fetched")
 		repos.size > 0 or return
 
@@ -52,7 +59,9 @@ class GithubImporter < Jekyll::Generator
 			
 			# obtaining all the issues for this repo
 			issues_endpoint = feed_url + "/repos/italia/"+ name +"/issues"
-
+            rest_params['page'] = 0
+            
+            # TODO: iterate over pages
 			begin
 				issues_response = RestClient.get issues_endpoint,{params: rest_params}
 			rescue RestClient::Unauthorized, RestClient::Forbidden => err
