@@ -69,7 +69,7 @@ it:
     header_link_docs: Docs
     header_link_github: Github
     todo_page_project: Progetto
-    todo_page_subproject: Sotto progetto
+    todo_page_subproject: Repository
     todo_page_title: Titolo
     todo_page_labels: Etichette
     todo_page_clearfilter: Pulisci filtri
@@ -163,7 +163,7 @@ en:
     header_link_docs: Docs
     header_link_github: Github
     todo_page_project: Project
-    todo_page_subproject: Sub-project
+    todo_page_subproject: Repository
     todo_page_title: Title
     todo_page_labels: Labels
     todo_page_clearfilter: Clear filters
