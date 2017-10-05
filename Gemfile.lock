@@ -129,5 +129,8 @@ DEPENDENCIES
   rest-client (~> 2.0)
   tzinfo-data
 
+RUBY VERSION
+   ruby 2.4.2p198
+
 BUNDLED WITH
    1.15.4
