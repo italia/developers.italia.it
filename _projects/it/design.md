@@ -32,6 +32,16 @@ L'idea di fondo è fonire dei kit, in alcuni casi del software, che facciano ris
 Alcune di questi progetti sono già attivi o sono in via di attivazione, altri sono ancora in fase "esplorativa".
 Per restare aggiornati sull'evoluzione dei progetti consigliamo di seguire la [roadmap sull'Interface Design](https://designers.italia.it/user-interface/) e di iscriversi alla [newsletter di Designers Italia](https://designers.italia.it/)
 
+### Lo UI Kit
+La community dei designers svilupperà un UI Kit basato su Sketch e costruito in maniera aperta e collaborativa su github.
+La è utile anche per mappare i componenti che a tendere confluiranno nei vari kit che seguono. L'allineamento di Ui Kit e web toolkit è previsto entro fine 2017.
+
+Repo
+ [https://github.com/italia/design-ui-kit](https://github.com/italia/design-ui-kit)
+
+Roadmap su [Google Spreadsheet](https://docs.google.com/spreadsheets/d/183hI6EBJo3EeiEcQPGZIe3hNN7EerTU5Udk6SkrH2OU/edit?usp=sharing)
+
+Il progetto [su Behance](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia) 
 
 _Progetti attivi_
 
