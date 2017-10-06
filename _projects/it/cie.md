@@ -4,7 +4,7 @@ subtitle: Carta d'Identità Elettronica
 logo: /assets/images/logo-cie@2x.png
 payoff: Carta d'Identità Elettronica
 description: >
-  La nuova carta d'identità è molto più che un pezzo di plastica: puoi comunicarci via NFC, per usarla per varchi d'ingresso o come certificato digitale d'identità (compatibile SSL).
+  La nuova carta d'identità elettronica è molto più che un documento d'identità: puoi comunicarci via NFC, ed usarla per varchi d'ingresso o come certificato digitale d'identità (compatibile TLS).
 lang: it
 order: 9
 highlight: true
@@ -14,36 +14,39 @@ layout: project
 
 ## Intro
 
-La Carta d'Identità Elettronica (CIE per gli amici) è giunta alla revisione
-3.0, e viene già distribuita potenzialmente a circa il 50% dei cittadini
-italiani al momento del rinnovo; entro la fine dell'estate 2018, tutte le
-anagrafi italiane rilasceranno solo CIE.
+La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it)
+(CIE per gli amici) è giunta alla revisione 3.0, e viene già distribuita
+potenzialmente a circa il 50% dei cittadini italiani al momento del rinnovo.
+Entro l'estate 2018, tutte le anagrafi italiane rilasceranno solo CIE.
 
-CIE non è solo un documento d'identità, ma una potente smartcard NFC, che può
-aprire la strada alla creazione di nuovi servizi, anche tramite smartphone.
-Ogni italiano, infatti, entro 10 anni avrà nelle proprie tasche un token NFC
-unico e sicuro, che potrebbe essere utilizzato per tante applicazioni:
+CIE non è solo un documento d’identità, ma una tecnologia utile per la
+realizzazione di nuovi servizi offerti ai cittadini, fruibili anche tramite
+smartphone e tablet, grazie alla presenza di un microchip NFC. Se pensate che
+ogni italiano, entro 10 anni, avrà nelle proprie tasche un documento d'identità
+che è anche un token NFC unico e sicuro, è facile immaginare numerose applicazioni:
 
- * Identificazione a bassa sicurezza, come per esempio l'accesso alla palestra.
-   In questi casi, è sufficiente leggere via NFC l'ID univoco della carta,
-   che non richiede nessun immissione di PIN.
+ * Varchi elettronici a basso livello di sicurezza, come per esempio l'accesso alla palestra,
+   semplicemente avvicinando la carta ad un lettore.
 
- * Identificazione a media sicurezza, come tornelli di accesso per stadi o luoghi
-   sorvegliati, in cui è possibile associare alla scansione anche la scansione
-   del codice a barre che consente l'estrazione di un primo livello di dati
-   anagrafici.
+ * Attraversamento veloce e sicuro di varchi ad alto livello di sicurezza, 
+   come per esempio l'accesso agli stadi.
 
- * Utilizzo come accesso ad un portafoglio virtuale, per esempio per pagare 
-   i biglietti sui mezzi pubblici.
+ * Accesso al trasporto pubblico, magari associato ad un portafoglio virtuale
+   per pagare il biglietto.
 
- * Identificazione e trascrizione rapida di informazioni anagrafiche, per esempio
-   per fare rapidamente un check-in in un hotel senza bisogno di fare fotocopie.
+ * Conferma della presenza sul luogo di lavoro.
 
-Su Developers Italia, troverai tutte le informazioni tecniche e le librerie
+ * Check-in in un hotel, senza bisogno di fare fotocopie.
+
+Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
+e sicurezza contenute nel microprocessore, le cui specifiche sono
+aperte e disponibili sia sul portale ufficiale del Ministero degli Interni, 
+sia in questa pagina.
+
+Su Developers Italia, infatti, troverai tutte le informazioni tecniche e le librerie
 software per iniziare subito a sviluppare nuovi servizi. Sul forum, avrai anche
 accesso diretto ai progettisti della CIE per avere tutti i chiarimenti tecnici
 necessari.
-
 
 ## Documentazione
 
