@@ -15,9 +15,9 @@ layout: project
 ## Intro
 
 La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it)
-(CIE per gli amici) è giunta alla revisione 3.0, e viene già distribuita
-potenzialmente a circa il 50% dei cittadini italiani al momento del rinnovo.
-Entro l'estate 2018, tutte le anagrafi italiane rilasceranno solo CIE.
+(CIE) è giunta alla revisione 3.0, e viene già distribuita potenzialmente a
+circa il 50% dei cittadini italiani. Entro l'estate 2018, tutte i comuni
+italiani rilasceranno la CIE.
 
 CIE non è solo un documento d’identità, ma una tecnologia utile per la
 realizzazione di nuovi servizi offerti ai cittadini, fruibili anche tramite
