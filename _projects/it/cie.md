@@ -4,7 +4,7 @@ subtitle: Carta d'Identità Elettronica
 logo: /assets/images/logo-cie@2x.png
 payoff: Carta d'Identità Elettronica
 description: >
-  La nuova carta d'identità elettronica è molto più che un documento d'identità: puoi comunicarci via NFC, ed usarla per varchi d'ingresso o come certificato digitale d'identità (compatibile TLS).
+  La nuova CIE è molto più che un documento d'identità: grazie al microprocessore RF può essere letta da dispositivi NFC (es. smartphone), usata per accedere ai varchi e per creare connessioni sicure (TLS) verso i servizi in rete.
 lang: it
 order: 9
 highlight: true
