@@ -11,11 +11,7 @@ lang: it
 redirect_from:
    - 
 ---
-Ciao a tutti, 
-
-Abbiamo annunciato i primi due team vincitori di [Hack.Developers](https://hack.developers.italia.it/)! 
-
-Non è stato davvero facile scegliere tra **96 proposte** che in alcuni casi hanno persino superato le nostre migliori aspettative. Alla fine i mentor di tutta Italia hanno individuato [i due gruppi che si sono aggiudicati il premio Fast Rabbit](https://hack.developers.italia.it/premiazione-fast-rabbit/), avendo sottoposto le loro *pull request* **entro le 48 ore del code sprint** ([qui i criteri di selezione](https://hack.developers.italia.it/premi/)). 
+Abbiamo annunciato i primi due team vincitori di [Hack.Developers](https://hack.developers.italia.it/)! Non è stato davvero facile scegliere tra **96 proposte** che in alcuni casi hanno persino superato le nostre migliori aspettative. Alla fine i mentor di tutta Italia hanno individuato [i due gruppi che si sono aggiudicati il premio Fast Rabbit](https://hack.developers.italia.it/premiazione-fast-rabbit/), avendo sottoposto le loro *pull request* **entro le 48 ore del code sprint** ([qui i criteri di selezione](https://hack.developers.italia.it/premi/)). 
 
 I team i cui progetti hanno ottenuto i migliori punteggi sono:
 
@@ -27,7 +23,7 @@ I team i cui progetti hanno ottenuto i migliori punteggi sono:
 Sugli stessi toni il racconto di **Matteo Manchi**, portavoce della Community RomaJS: “Seduti insieme al tavolo, abbiamo deciso di approcciare alle challenge con lo spirito di un code-sprint: divertiamoci insieme, ma puntiamo su qualcosa su cui abbiamo l'esperienza tale da creare qualcosa di veramente utile in futuro. Abbiamo lavorato tutta la notte (su Roma credo fossimo l'unico team rimasto a fare nottata), concedendoci tre ore di sonno verso le cinque, e alla fine abbiamo consegnato un progetto che rispecchiava i nostri obiettivi”.
 Un grazie speciale da parte dell’organizzazione va anche a tutti i membri degli altri team del Fast Rabbit, che hanno contribuito in modo davvero valido a  tutte le challenge, da SPID a 18app, dal DAF all’ANPR ([qui le 30 migliori proposte](https://hack.developers.italia.it/premiazione-fast-rabbit/)). 
 
-# C'è tempo fino al 30 Ottobre per vincere un premio! #
+## C'è tempo fino al 30 Ottobre per vincere un premio!
 
 Come sapete **Hack.Developers non finisce qui**. Molti gruppi sono ancora al lavoro fino al 30 ottobre, per portare a termine i progetti candidati ai [premi Wise Turtle](https://hack.developers.italia.it/premi/), con i mentor che resteranno a disposizione sul canale Slack dell’Hackathon fino alla fine del mese. 
 
