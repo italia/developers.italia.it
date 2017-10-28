@@ -48,4 +48,4 @@ discuss all the problems on integrating ANPR.
 
 [Issue tracker](https://github.com/italia/anpr/issues)
 
-[Forum](https://forum.developers.italia.it/c/anpr)
+[Forum](https://forum.italia.it/c/anpr)

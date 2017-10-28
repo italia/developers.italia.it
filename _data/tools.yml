@@ -8,7 +8,7 @@ it:
     title: Forum
     subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
     icon: comment
-    url: https://forum.developers.italia.it
+    url: https://forum.italia.it
   -
     title: Documentazione
     subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
@@ -29,7 +29,7 @@ en:
     title: Forum
     subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
     icon: comment
-    url: https://forum.developers.italia.it
+    url: https://forum.italia.it
   -
     title: Docs
     subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs

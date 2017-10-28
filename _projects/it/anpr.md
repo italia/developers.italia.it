@@ -84,4 +84,4 @@ Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui 
 
 [Issue tracker](https://github.com/italia/anpr/issues)
 
-[Forum di discussione](https://forum.developers.italia.it/c/anpr)
+[Forum di discussione](https://forum.italia.it/c/anpr)

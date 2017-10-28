@@ -12,7 +12,7 @@ text: >
   documentation in a technical language, using as a publish platform the open source project *Read
   The Docs*. By providing development environments, examples, and SDKs for the most common
   languages and frameworks.
-  We'll provide a direct support via the [forum](https://forum.developers.italia.it/), build on
+  We'll provide a direct support via the [forum](https://forum.italia.it/), build on
   top of the open source project *Discourse* and already accessible online, instead of a helpdesk
   accessible only by phone.
 order: 1

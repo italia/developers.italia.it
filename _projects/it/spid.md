@@ -69,7 +69,7 @@ Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
 Abbiamo aperto un'area di discussione nel nostro forum, per risolvere le problematiche tecniche di integrazione,
 e a breve sarà disponibile anche un issue tracker pubblico.
 
-[Forum di discussione tecnica](https://forum.developers.italia.it/c/spid)
+[Forum di discussione tecnica](https://forum.italia.it/c/spid)
 
 Facciamo anche delle call settimanali su Jitsi, qui trovato le informazioni
 per partecipare. Chiunque sia interessato a seguire lo sviluppo può entrare:
