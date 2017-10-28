@@ -17,7 +17,7 @@ Ciao a tutti,
 
 I numeri già rendono un’idea di quello che abbiamo vissuto per 48 ore di fila: oltre 800 sviluppatori, 116 team, 80 community, 200 mentor, 26 città, ma soprattutto tante idee e intuizioni, concretizzate in **96 proposte open source già disponibili pubblicamente** su [GitHub di Developers Italia](https://github.com/italia/). Tante proposte, equamente distribuite tra i [vari progetti](https://hack.developers.italia.it/challenge/), che rappresentano un vero e proprio patrimonio per la costruzione del “**sistema operativo del Paese**”, verso l'obiettivo comune di sviluppare servizi digitali sempre più efficienti.
 
-[Guarda il video!](pic.twitter.com/7giCzAALnK)
+[Guarda il video!](https://twitter.com/teamdigitaleIT/status/917058075877629954/video/1)
 
 I mentor e gli esponenti del Team per la Trasformazione Digitale sono già al lavoro per valutare le proposte raccolte, anche in vista dell’[assegnazione dei premi](https://hack.developers.italia.it/premi/). Il **16 ottobre** saranno annunciati i due team vincitori del premio “Fast Rabbit” (progetti ultimati e caricati entro i due giorni dell’evento), mentre i progetti più complessi (in corsa per i 5 premi “Wise Turtle”) potranno essere ultimati **entro il 30 ottobre**.
 
