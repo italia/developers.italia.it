@@ -1,8 +1,8 @@
 rasky:
   name: Giovanni Bajo
-  desc: Developer Relation, Team Digitale
+  desc: Team Digitale
   pic: /assets/images/rasky.jpeg
-  status: maintainer
+  status: admin
   contacts:
     github:
       name: github
@@ -13,6 +13,36 @@ rasky:
     linkedin:
       name: google plus
       link: https://linkedin.com/in/giovannibajo
+ruphy:
+  name: Riccardo Iaconelli
+  desc: Team Digitale
+  pic: /assets/images/ruphy.jpg
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/ruphy
+    twitter:
+      name: twitter
+      link: https://twitter.com/ruphy
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/riccardoiaconelli/
+alranel:
+  name: Alessandro Ranellucci
+  desc: Team Digitale
+  pic: /assets/images/alranel.jpg
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/alexrj
+    twitter:
+      name: twitter
+      link: https://twitter.com/alranel
+    facebook:
+      name: facebook
+      link: https://www.facebook.com/alessandro.ranellucci
 lorenzo:
   name: Lorenzo Fabbri
   desc: Content Designer, Team Digitale

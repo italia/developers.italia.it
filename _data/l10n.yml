@@ -56,6 +56,7 @@ it:
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
 
     credits_contributors: "Hanno contribuito ai progetti:"
+    credits_maintainers: "Project leader e maintainer:"
 
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
@@ -149,7 +150,8 @@ en:
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
 
-    credits_contributors: Project contributors
+    credits_contributors: "Project contributors:"
+    credits_maintainers: "Projects leaders & maintainers:"
 
     status_member_of_board: member of board
     status_maintainer: maintainer
