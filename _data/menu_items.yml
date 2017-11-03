@@ -20,6 +20,9 @@ it:
     - title: Repository GitHub
       image: /assets/icons/tools/decorative_outlined_github.svg
       url: https://github.com/italia
+    - title: Slack
+      image: /assets/icons/tools/decorative_outlined_slack.svg
+      url: https://slackin-senazrjyfg.now.sh/
     - title: Forum
       image: /assets/icons/tools/decorative_outlined_discourse.svg
       url: https://forum.italia.it
