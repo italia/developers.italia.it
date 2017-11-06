@@ -36,5 +36,5 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 - [FAQ](https://pagopa-doc-faq.readthedocs.io/)
 - [Architettura](https://pagopa-doc-architettura.readthedocs.io/)
 - [Formato Messaggi XML](http://pagopa-docs-formatoxml.readthedocs.io/)
-- Specifiche Attuative Pagamenti (in arrivo)
-- Specifiche Implementazione Web Services (in arrivo)
+- [Specifiche Attuative Pagamenti](https://pagopa-doc-specattuative.readthedocs.io/)
+- [Specifiche Implementazione Web Services](https://pagopa-doc-specws.readthedocs.io/) (in arrivo)
