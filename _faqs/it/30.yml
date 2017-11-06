@@ -1,11 +1,7 @@
 ---
-title: Come scegliete i maintainer dei progetti?
+title: Come scegliete i maintainer?
 text: >
-  Come in tutte le comunità di software open-source, i *maintainer* di un progetto vengono individuati in base alla 
-  loro competenza tecnica, conoscenza del progetto in questione e al grado di partecipazione alla community, e spesso, nei progetti più grossi, vengono retribuiti perché a loro viene richiesta grande disponibilità di tempo ed energie 
-  per contribuire al progetto stesso. Un *maintainer* infatti non deve solo supervisionare, ma deve essere il primo
-  per quantità e qualità delle contribuzioni. Il nostro obiettivo è fare in modo che tutti i progetti presenti in
-  Developers Italia abbiano sempre dei maintainer attivi che possano guidare la comunità ed essere un punto di riferimento costante per gli sviluppatori 
-order: 4
+  Come in tutte le comunità di software open source, i *maintainer* vengono individuati in base alla loro competenza tecnica, conoscenza del progetto in questione e al grado di partecipazione alla community. Nei progetti più grossi possono venire retribuiti perché a loro viene richiesta grande disponibilità di tempo ed energie. Un maintainer infatti non deve solo supervisionare, ma deve essere il primo per quantità e qualità delle contribuzioni. Il nostro obiettivo è fare in modo che tutti i progetti presenti in Developers Italia abbiano sempre dei maintainer attivi che possano guidare la comunità ed essere un punto di riferimento costante per gli sviluppatori.
+order: 30
 lang: it
 ---

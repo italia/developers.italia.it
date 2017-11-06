@@ -1,9 +1,9 @@
 ---
-title: Cosa si intenende per maintainer di un progetto?
+title: Qual è il ruolo dei maintainer?
 text: >
-  All'interno di questo sito, per *maintainer* intendiamo le persone che sono incaricate da una parte di produrre tutto il
-  codice, la documentazione e gli esempi a supporto dei progetti, dall'altra di interfacciarsi con la comunità di sviluppatori fornendo loro supporto nell'adozione tecnologica. 
-  I *maintainer* tipicamente lavorano a stretto contatto con l'ente owner del progetto e con il personale tecnico dell'ente stesso. Facciamo un esempio: PagoPA (il sistema di pagamento centrale della Pubblica Amministrazione) è un progetto di AgID (Agenzia per l'Italia Digitale) che ne gestisce l'evoluzione; i *maintainer* che troverai all'interno di Developers Italia aiuteranno AgID e forniranno supporto alla community per l'adozione di PagoPA da parte di migliaia di soggetti di volta in volta interessati, e quindi produrranno e mantanerranno i plugin per i principali CMS, le librerie di intefacciamento in Python o Ruby, e la documentazione delle API in formato tecnico.
-order: 3
+  I maintainer sono le persone incaricate da una parte di produrre il codice, la documentazione e gli esempi di implementazione, e dall'altra di gestire le issue (segnalazioni di bug o suggerimenti di feature) e le cosiddette "pull request" (ovvero contributi di codice esterni). Tipicamente lavorano a stretto contatto con l'ente owner del progetto e con il personale tecnico dell'ente stesso, in particolare i *project leader* con cui concordano gli obiettivi.
+  Facciamo un esempio: [PagoPA](/it/pagopa/) è un progetto di [AgID](http://www.agid.gov.it/) che ne dirige l'evoluzione; i *maintainer* che si trovano all'interno di Developers Italia sono le persone che aiutano AgID nello sviluppo e nella manutenzione evolutiva dei plugin per i principali CMS, delle librerie di intefacciamento in Python o Ruby e della documentazione delle API.
+  I maintainer possono essere persone interne alla Pubblica Amministrazione oppure fornitori incaricati della maintainership oppure ancora volontari indipendenti che hanno manifestato la disponibilità a gestire un repository.
+order: 20
 lang: it
 ---

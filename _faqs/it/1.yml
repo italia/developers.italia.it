@@ -1,10 +1,10 @@
 ---
 title: Qual è l'obiettivo di questo sito?
 text: >
-  Il sito nasce per semplificare e migliorare il rapporto tra gli sviluppatori e la Pubblica Amministrazione, partendo da alcuni dei principali progetti tecnologici come ANPR, il progetto di creazione di un'Anagrafe Nazionale della Popolazione Residente, e come SPID - il sistema di gestione digitale della identità pubblica.
-  Fino ad oggi, con rare eccezioni, la Pubblica Amministrazione centrale si limitava a scrivere leggi e regole, in un linguaggio burocratico e non tecnico, senza strumenti e iniziative per supportare adeguatamente le persone che dovevano sviluppare e realizzare i progetti tecnologici. Developers Italia vuole colmare questa distanza, partendo da pochi progetti destinati ad aumentare nei prossimi mesi.
-  Su questi progetti vogliamo fare community, partendo dalle basi: riscriveremo la documentazione in linguaggio tecnico, utilizzando un ambiente costruito usando il progetto open source *Read The Docs*. Forniremo ambienti di validazione, esempi, SDK già pronti per i principali linguaggi e framework.
-  Forniremo supporto diretto via [forum](https://forum.italia.it/), costruito a partire dal progetto open source *Discourse* e già a vostra disposizione, invece che tramite call-center telefonico. 
+  Il sito nasce per semplificare e migliorare il rapporto tra gli sviluppatori e la Pubblica Amministrazione, stimolando lo sviluppo di servizi digitali moderni e integrati fra di loro.
+  Fino ad oggi, con rare eccezioni, la Pubblica Amministrazione centrale si limitava a scrivere leggi e regole, in un linguaggio burocratico e non tecnico, senza strumenti e iniziative per supportare adeguatamente le persone che devono sviluppare e realizzare i progetti tecnologici. Developers Italia vuole colmare questa distanza, proponendo un approccio più tecnico e meno burocratico.
+  Sui progetti ospitati in Developers Italia fare community, partendo dalle basi: riscrivere la documentazione in linguaggio chiaro e tecnico (utilizzando un ambiente costruito usando il progetto open source [Read The Docs](https://readthedocs.org/)); fornire ambienti di validazione, esempi, SDK già pronti per i principali linguaggi e framework; rendere disponibile un [forum](https://forum.italia.it/) come canale di supporto diretto.
+  L'open source è un elemento chiave di Developers Italia, per incentivare la collaborazione, il riuso, l'evoluzione continua.
 order: 1
 lang: it
 ---
