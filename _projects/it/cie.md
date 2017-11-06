@@ -28,7 +28,7 @@ che è anche un token NFC unico e sicuro, è facile immaginare numerose applicaz
  * Varchi elettronici a basso livello di sicurezza, come per esempio l'accesso alla palestra,
    semplicemente avvicinando la carta ad un lettore.
 
- * Attraversamento veloce e sicuro di varchi ad alto livello di sicurezza, 
+ * Attraversamento veloce e sicuro di varchi ad alto livello di sicurezza,
    come per esempio l'accesso agli stadi.
 
  * Accesso al trasporto pubblico, magari associato ad un portafoglio virtuale
@@ -40,7 +40,7 @@ che è anche un token NFC unico e sicuro, è facile immaginare numerose applicaz
 
 Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
 e sicurezza contenute nel microprocessore, le cui specifiche sono
-aperte e disponibili sia sul portale ufficiale del Ministero degli Interni, 
+aperte e disponibili sia sul portale ufficiale del Ministero degli Interni,
 sia in questa pagina.
 
 Su Developers Italia, infatti, troverai tutte le informazioni tecniche e le librerie
@@ -77,3 +77,5 @@ nel canale dedicato alla CIE.
 
 [Sezione CIE sul Forum](https://forum.italia.it/c/cie)
 
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/cie)

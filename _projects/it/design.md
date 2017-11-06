@@ -41,7 +41,7 @@ Repo
 
 Roadmap su [Google Spreadsheet](https://docs.google.com/spreadsheets/d/183hI6EBJo3EeiEcQPGZIe3hNN7EerTU5Udk6SkrH2OU/edit?usp=sharing)
 
-Il progetto [su Behance](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia) 
+Il progetto [su Behance](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia)
 
 _Progetti attivi_
 
@@ -115,3 +115,6 @@ Repo [https://github.com/italia/design-wordpress-theme](https://github.com/itali
 
 ### Tema Jekyll secondo linee guida
 [https://github.com/italia/design-jekyll-theme](https://github.com/italia/design-jekyll-theme)
+
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/design)

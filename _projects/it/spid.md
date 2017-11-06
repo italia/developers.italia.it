@@ -76,3 +76,5 @@ per partecipare. Chiunque sia interessato a seguire lo sviluppo può entrare:
 
 [Videocall settimanale](https://forum.italia.it/t/spid-weekly-meeting/276)
 
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/spid)

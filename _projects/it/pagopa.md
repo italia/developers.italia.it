@@ -38,3 +38,6 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 - [Formato Messaggi XML](http://pagopa-docs-formatoxml.readthedocs.io/)
 - [Specifiche Attuative Pagamenti](https://pagopa-doc-specattuative.readthedocs.io/)
 - [Specifiche Implementazione Web Services](https://pagopa-doc-specws.readthedocs.io/)
+
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/pagopa)

@@ -4,7 +4,7 @@ subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
-  Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace con la piattaforma. 
+  Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace con la piattaforma.
 lang: it
 order: 3
 highlight: false
@@ -64,3 +64,5 @@ da poter avere un canale di supporto tecnico diretto.
 
 [Sezione del forum su 18app a Carta Docente](https://forum.italia.it/c/18app-carta-docente)
 
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/18app)

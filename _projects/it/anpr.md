@@ -85,3 +85,7 @@ Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui 
 [Issue tracker](https://github.com/italia/anpr/issues)
 
 [Forum di discussione](https://forum.italia.it/c/anpr)
+
+
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/anpr)

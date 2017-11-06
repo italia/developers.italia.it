@@ -47,7 +47,7 @@ Il DAF si compone di:
       self-service agli utilizzatori del DAF;
  * Un **Dataportal**, che rappresenta l'interfaccia utente per l'utilizzo delle
    funzionalità implementate nel DAF. In particolare, il dataportal si compone
-   di: 
+   di:
     * un catalogo dei dataset basato su CKAN, che gestisce i metadati relativi
       sia ai dati contenuti nel DAF che agli open data harvestati dai siti
       delle PA;
@@ -78,7 +78,7 @@ Qui puoi trovare la documentazione tecnica attualmente disponibile:
 
 ## Codice sorgente
 
-Attualmente, il DAF è in fase di pieno sviluppo, in tutti i suoi componenti, e i 
+Attualmente, il DAF è in fase di pieno sviluppo, in tutti i suoi componenti, e i
 progressi possono essere seguiti direttamente sui vari repositori GitHub:
 
 [DAF core (piattaforma big-data)](https://github.com/italia/daf)
@@ -102,3 +102,5 @@ della mailing-list nel forum.
 
 
 
+### I project leader di questo progetto
+- [Il team di project leader su Github](https://github.com/orgs/italia/teams/daf)
