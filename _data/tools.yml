@@ -8,7 +8,7 @@ it:
     title: Slack
     subtitle: Puoi trovare tutti i maintainer e gli altri sviluppatori sullo Slack di Developers Italia. Partecipa!
     icon: comment
-    url: https://slackin-senazrjyfg.now.sh/
+    url: https://slack.developers.italia.it/
   -
     title: Forum
     subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
@@ -34,7 +34,7 @@ en:
     title: Slack
     subtitle: You can find all the maintainers and developers of Developers Italia on our Slack channels. Join us!
     icon: comment
-    url: https://slackin-senazrjyfg.now.sh/
+    url: https://slack.developers.italia.it/
   -
     title: Forum
     subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
