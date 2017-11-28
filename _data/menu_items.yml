@@ -22,7 +22,7 @@ it:
       url: https://github.com/italia
     - title: Slack
       image: /assets/icons/tools/decorative_outlined_slack.svg
-      url: https://slackin-senazrjyfg.now.sh/
+      url: https://slack.developers.italia.it/
     - title: Forum
       image: /assets/icons/tools/decorative_outlined_discourse.svg
       url: https://forum.italia.it
