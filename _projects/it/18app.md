@@ -52,8 +52,6 @@ Qui potete trovare la documentazione tecnica di accesso alle API per gli esercen
 che si devono integrare con la piattaforma, e il mockup della nuova mobile app
 il cui sviluppo deve ancora cominciare.
 
-[Documentazione su ReadTheDocs](http://18app.readthedocs.io/it/latest)
-
 [Documentazione dei webservice per esercenti](http://guida-18app.readthedocs.io/it/latest/)
 
 [Mockup della mobile app nativa](https://invis.io/RSDORU6E2)
