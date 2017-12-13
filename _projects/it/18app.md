@@ -10,6 +10,7 @@ order: 3
 highlight: false
 comingsoon: true
 layout: project
+github_team: 18app
 ---
 
 ## Intro
@@ -64,5 +65,4 @@ da poter avere un canale di supporto tecnico diretto.
 
 [Sezione del forum su 18app a Carta Docente](https://forum.italia.it/c/18app-carta-docente)
 
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/18app)
+
