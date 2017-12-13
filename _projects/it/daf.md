@@ -10,6 +10,7 @@ order: 3
 highlight: true
 comingsoon: false
 layout: project
+github_team: daf
 maintainers:
   - alessandro
   - fabiana
@@ -100,7 +101,3 @@ della mailing-list nel forum.
 
 [Vecchia mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
 
-
-
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/daf)

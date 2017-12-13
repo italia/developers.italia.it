@@ -8,6 +8,11 @@
         {% endif %}
         {{ include.content }}
       </div>
+      {% if page.github_team %}
+        <div class="u-padding-r-all u-xs-padding-all-none ">
+        {% include github_team_members.html %}
+        </div>
+        {% endif %}
     </div>
   </div>
 </div>

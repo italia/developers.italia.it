@@ -40,6 +40,8 @@ it:
     paginator_next_page: pagina successiva
     paginator_page: pagina
 
+    project_leader: I project leader
+
     home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
@@ -134,6 +136,8 @@ en:
     paginator_previous_page: previous page
     paginator_next_page: next page
     paginator_page: page
+
+    project_leader: Project leaders
 
     home_hero: A community of developers who design and make Italian digital public services
     home_newsletter_title: Subscribe to our Newlsetter

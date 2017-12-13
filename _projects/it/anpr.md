@@ -12,9 +12,10 @@ maintainers:
 highlight: true
 comingsoon: false
 layout: project
+github_team: anpr
 ---
 
-### Intro
+## Intro
 **Vuoi avere aggiornamenti su ANPR? Iscriviti alla nostra [newsletter](#newsletter)**
 
 ANPR è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
@@ -25,14 +26,14 @@ Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei
 Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante.
 
 
-### Documentazione
+## Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
 
 [Documentazione tecnica e tabelle di riferimento](https://anpr.readthedocs.io)
 
 
 
-### Collaborazione
+## Collaborazione
 Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità.
 
  <a name="newsletter"></a>
@@ -85,7 +86,3 @@ Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui 
 [Issue tracker](https://github.com/italia/anpr/issues)
 
 [Forum di discussione](https://forum.italia.it/c/anpr)
-
-
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/anpr)

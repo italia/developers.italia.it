@@ -10,6 +10,7 @@ order: 9
 highlight: true
 comingsoon: false
 layout: project
+github_team: cie
 ---
 
 ## Intro
@@ -77,5 +78,4 @@ nel canale dedicato alla CIE.
 
 [Sezione CIE sul Forum](https://forum.italia.it/c/cie)
 
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/cie)
+
