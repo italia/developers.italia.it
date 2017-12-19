@@ -1,14 +1,17 @@
 {% assign team = site.data.github_teams | where: "slug", page.github_team %}
 {% assign team_members = team.first.members %}
 
-<h2 class="u-textWeight-400 u-text-r-xs u-color-grey-80 u-margin-r-bottom">
-	{{  t.project_leader }}
+<h2 class="u-textWeight-400 u-text-r-xs u-color-grey-80 u-margin-r-bottom u-margin-r-top">
+	<span class="u-text-r-xs Icon Icon-github"></span> {{  t.project_leader }} 
 </h2>
-<ul>
+<ul class="projectleaders">
 {% for member in team_members %}
 	<li class="u-text-r-xs u-margin-r-bottom">
-	<a href="{{member.html_url}}" title="{{member.login}}" target="_blank" class="u-textClean u-color-50">
-		{{member.name | default: member.login}} <span class="u-text-r-xs Icon Icon-github"></span></a>
+	<img src="{{member.avatar_url}}" class="projectleaders__img"  >
+	<div class="projectleaders__name">
+		<a href="{{member.html_url}}" title="{{member.login}}" target="_blank" class="u-textClean u-color-50 u-text-r-xs">
+		{{member.name | default: member.login}} </a>
+	</div>
 	</li>
 
 {% endfor %}

@@ -16,7 +16,9 @@ class GithubImporter < Jekyll::Generator
 
 	def generate(site)
 		# test if we don't want download data from github
-		if ENV['JEKYLL_NO_GITHUB']!= nil
+		if ENV['JEKYLL_NO_GITHUB']!= nil and site.data['github_teams']
+			puts "*****************************************************"
+                puts("WARNING! GitHub api disabled")
 			return
 		end
 
