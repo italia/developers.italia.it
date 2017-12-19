@@ -39,5 +39,9 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 - [Specifiche Attuative Pagamenti](https://pagopa-docs-specattuative.readthedocs.io/)
 - [Specifiche Implementazione Web Services](https://pagopa-docs-specws.readthedocs.io/)
 
+### Per i Comuni
+Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
+- [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
+
 ### I project leader di questo progetto
 - [Il team di project leader su Github](https://github.com/orgs/italia/teams/pagopa)
