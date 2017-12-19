@@ -623,3 +623,21 @@ body.layout-github-issues {
   }
 
 }
+
+/* Prroject leaders include 
+============================ */
+.projectleaders {
+  &__img {
+    max-width: 2.5em;
+    border-radius: 2.5em;
+    float: left;
+  }
+  &__name {
+    display: inline-block;
+    margin-top: 0.7em;
+    padding: 0 0.5em;
+  }
+  li {
+    clear: left;
+  }
+}

@@ -2,3 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 /github/issues.json
+/_data/github_teams.json

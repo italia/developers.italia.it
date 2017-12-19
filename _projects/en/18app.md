@@ -11,6 +11,7 @@ order: 3
 highlight: false
 comingsoon: true
 layout: project
+github_team: 18app
 socials:
   -
     name: twitter

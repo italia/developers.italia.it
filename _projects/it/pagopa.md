@@ -9,9 +9,10 @@ order: 2
 highlight: true
 comingsoon: false
 layout: project
+github_team: pagopa
 ---
 
-### Intro
+## Intro
 PagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
 
 Integrare PagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
@@ -29,7 +30,7 @@ In particolare l’evoluzione più importante riguarda la UI (User Interface) e 
 
 Trovate maggiori informazioni sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/).
 
-### Documentazione
+## Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile i primi documenti che potete leggere di seguito.
 
 - [Overview](http://pagopa-docs-overview2.readthedocs.io/)
@@ -43,5 +44,4 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
 - [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
 
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/pagopa)
+

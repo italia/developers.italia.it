@@ -41,11 +41,13 @@ layout: default
 
     {% capture toc %}{{ content | toc_only }}{% endcapture %}
     {% include sideblock.html title=page.subtitle content=toc %}
-
+    
     {% comment %}
       {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
       {% include sideblock.html title=page.subtitle content=pills %}
     {% endcomment %}
+
+    
 
 
   </div>

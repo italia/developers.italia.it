@@ -10,6 +10,7 @@ order: 4
 highlight: true
 comingsoon: false
 layout: project
+github_team: design
 maintainers:
   - matteo
   - lorenzo
@@ -116,5 +117,3 @@ Repo [https://github.com/italia/design-wordpress-theme](https://github.com/itali
 ### Tema Jekyll secondo linee guida
 [https://github.com/italia/design-jekyll-theme](https://github.com/italia/design-jekyll-theme)
 
-### I project leader di questo progetto
-- [Il team di project leader su Github](https://github.com/orgs/italia/teams/design)

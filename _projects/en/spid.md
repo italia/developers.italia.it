@@ -12,6 +12,7 @@ order: 1
 highlight: true
 comingsoon: false
 layout: project
+github_team: spid
 socials:
   -
     name: facebook

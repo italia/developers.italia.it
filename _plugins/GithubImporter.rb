@@ -7,7 +7,21 @@ class GithubImporter < Jekyll::Generator
 	safe true
 	priority :high
 
+	def writeJson(folder, filename, content)
+		File.open(File.join(folder, filename), 'w') do |f|
+			f.write(content)
+			f.close
+		end
+	end
+
 	def generate(site)
+		# test if we don't want download data from github
+		if ENV['JEKYLL_NO_GITHUB']!= nil and site.data['github_teams']
+			puts "*****************************************************"
+                puts("WARNING! GitHub api disabled")
+			return
+		end
+
 		feed_url = site.config['github_api_url']
 		projects_prefix = site.config['github_projects_prefix']
 		access_token = ENV['GITHUB_ACCESS_TOKEN']
@@ -118,15 +132,50 @@ class GithubImporter < Jekyll::Generator
 		}
 		puts "++++++++++++++ Github issues fetched: " + github_issues.size.to_s
 
+		# FETCH TEAMS and MEMBERS
+		teams_endpoint = feed_url + "/orgs/italia/teams"
+		github_teams = []
+
+		begin
+			teams_response = RestClient.get teams_endpoint,{params: rest_params}
+		end
+		teams = JSON.parse(teams_response)
 		
+		# for every team we need the members
+		# unfortunately github api doesn't expose the full name of a member
+		Parallel.each(teams, in_threads: 16) { |team|
+
+			team['members'] = []
+
+			# for every team we ask for members
+			begin 
+				members_endpoint = team['url'] + '/members'
+				members_response = RestClient.get members_endpoint,{params: rest_params}
+			end
+			members = JSON.parse(members_response)
+
+			Parallel.each(members, in_threads: 4) { |member|
+				begin 
+					singlemember_response = RestClient.get member['url'],{params: rest_params}
+				end
+				team['members'].push( JSON.parse(singlemember_response) ) 
+			}
+
+			github_teams.push(team)
+			
+		}
+		puts "++++++++++++++ Github teams fetched: " + teams.size.to_s
+
+		
+		
+		# Repos&issues json must be in a specific folder cause we need a client parsing on the "cosa fare" page
 		unless File.directory?(site_folder)
 			p = Pathname.new(site_folder)
 			p.mkdir
 		end
 
-		File.open(File.join(site_folder, 'issues.json'), 'w') do |f|
-			f.write(github_issues.to_json)
-			f.close
-		end
+		writeJson(site_folder, 'issues.json', github_issues.to_json)
+		writeJson('_data', 'github_teams.json', github_teams.to_json)
+		
 	end
 end
