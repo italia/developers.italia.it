@@ -37,46 +37,44 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità.
 
  <a name="newsletter"></a>
-**Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione**
 
 {::nomarkdown}
-<div class="">
-<form action="https://a0x0b4.emailsp.com/frontend/subscribe.aspx">
 
+<form class="Form Form--spaced u-padding-all-l u-background-grey-10 u-text-r-xs u-layout-prose u-margin-bottom-xl"
+      action="https://a0x0b4.emailsp.com/frontend/subscribe.aspx">
 
-<label for="2" >Email*</label>
-<input type="email" name="email" id="email" placeholder="Inserisci la tua email" required="required"
+        <div class="Form-field">
+            <label class="Form-label is-required" for="email" >Email *</label>
+            <input class="Form-input" id="email" type="email" name="email" aria-required="true" required placeholder="Inserisci la tua e-mail">
+        </div>
+        <div class="Form-field">
+            <label class="Form-label is-required" for="campo3">Gruppo</label>
+            <select class="Form-input u-text-r-s u-borderRadius-m" 
+            		id="campo3" name="campo3" aria-required="true" >
+            <option disabled selected></option>
+            <option value=""></option>
+			<option value="Comune">Comune</option>
+			<option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
+          </select>
+       	</div>
+        <fieldset class="Form-field Form-field--choose Grid-cell">
+        	<legend class="Form-legend is-required">Privacy *</legend>
+        	<label class="Form-label is-required" for="privacy">
+        	<input type="checkbox" class="Form-input" id="privacy" name="privacy" aria-required="true" required>
+        	<span class="Form-fieldIcon" role="presentation"></span>
+        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy </a>
+        	</label>
+        </fieldset>
+    	<div class="Form-field Grid-cell">
+    		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
+        	<button type="button" class="Button Button--default u-text-xs">Iscriviti</button>
+    	</div>
 
-class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus u-borderRadius-s">
-<p >
-
-
-<label for="3" >Gruppo</label>
-<select name="campo3" id="campo3"
-class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus u-borderRadius-s">
-<option value=""></option>
-<option value="Comune">Comune</option><option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
-</select>
-</p>
-
-<p>
-<label for="4" >Privacy*</label>
-</p>
-<p> <input type="checkbox" name="privacy" required="required"> Accetto la
-<a target="_blank" href="https://developers.italia.it/it/privacy-policy"> Privacy</a>
-</p>
-
-<p>
-<button type="submit"   name="submit" value="true" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
-         Iscriviti
-        </button>
-
-<input type="hidden" name="group" value="16" >
-<input type="hidden" name="list" value="3">
-
-</p>
+    <input type="hidden" name="group" value="16" >
+	<input type="hidden" name="list" value="3">
 </form>
-</div>
+
+
 {:/}
 
 
