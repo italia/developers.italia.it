@@ -49,7 +49,7 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
         </div>
         <div class="Form-field">
             <label class="Form-label is-required" for="campo3">Gruppo</label>
-            <select class="Form-input u-text-r-s u-borderRadius-m" 
+            <select class="Form-input u-text-r-s u-borderRadius-m"
             		id="campo3" name="campo3" aria-required="true" >
             <option disabled selected></option>
             <option value=""></option>
@@ -62,7 +62,7 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
         	<label class="Form-label is-required" for="privacy">
         	<input type="checkbox" class="Form-input" id="privacy" name="privacy" aria-required="true" required>
         	<span class="Form-fieldIcon" role="presentation"></span>
-        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy </a>
+        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a>
         	</label>
         </fieldset>
     	<div class="Form-field Grid-cell">
