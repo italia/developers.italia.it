@@ -67,7 +67,7 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
         </fieldset>
     	<div class="Form-field Grid-cell">
     		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
-        	<button type="button" class="Button Button--default u-text-xs">Iscriviti</button>
+        	<button type="submit" class="Button Button--default u-text-xs">Iscriviti</button>
     	</div>
 
     <input type="hidden" name="group" value="16" >
