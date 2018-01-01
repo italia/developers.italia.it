@@ -70,7 +70,7 @@ it:
     header_link_design: Designers
     header_link_forum: Forum
     header_link_docs: Docs
-    header_link_github: Github
+    header_link_github: GitHub
     todo_page_project: Progetto
     todo_page_subproject: Repository
     todo_page_title: Titolo
@@ -167,7 +167,7 @@ en:
     header_link_design: Designers
     header_link_forum: Forum
     header_link_docs: Docs
-    header_link_github: Github
+    header_link_github: GitHub
     todo_page_project: Project
     todo_page_subproject: Repository
     todo_page_title: Title
