@@ -16,179 +16,149 @@ When writing your proposal or asking for help from the general community of Deve
 If there is no specific contact given you can ask questions on our [Slack](https://slack.developers.italia.it/). You can get an invite [here](https://slack.developers.italia.it/). If you don't know who your point of contact should be, don't be shy, there is a channel called [#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) just for this!
 
 ## Open ideas
+
+Well prepared proposals from capable students have an outstanding chance of getting selected. We consider proposals for all skill levels ranging from simple to crazy hard and everything in between. Introduce yourself, and we'll help you plan one right for you.
+
+Remember that project descriptions are just initial ideas. You must expand with considerably more detail. Change the goals to fit your experience and interests.
+
 Note for the community: each project on the Ideas list should include: a) a project title/description b) more detailed description of the project (2-5 sentences) c) expected outcomes d) skills required/preferred e) possible mentors. And if possible, an easy, medium or hard rating of each project.
-
 <table id="issues_table" class="display responsive dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;">
-        <thead>
+    <thead>
         <tr role="row">
-      <th data-priority="2" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 40px;">Project</th>
-      <th data-priority="0" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 400px;">Brief description</th>
-      <th data-priority="11" class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Difficulty</th>
-      <th data-priority="10" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 64px;">Contact</th>
-      </tr>
-        </thead>
+            <th data-priority="2" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 40px;">Project</th>
+            <th data-priority="0" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 400px;">Brief description</th>
+            <th data-priority="11" class="sorting_disabled" rowspan="1" colspan="1" style="width: 30px;">Difficulty</th>
+            <th data-priority="10" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 64px;">Contact</th>
+        </tr>
+    </thead>
 
 
-        <tbody>
-    <tr role="row" class="odd">
-        <td tabindex="0">DAF</td>
-        <td>
-        <b>Create a new pipeline for ingesting data into DAF </b><br />
-        Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
-        Find an interesting data source (with a certain platform) and convert it so it's usable within DAF. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful.
-        <br />  
-        <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
-        <br />  
-        <b>Expected outcome:</b>
-        A working pipeline to ingest data into DAF
-        <br />  
-        <b>Required skills:</b>
-        <ul>
-          <li>- Scala</li>
-          <li>- Data management</li>
-          <li>- (preferred) Kylo</li>
-        </ul>
-        <br />
-        Full description on the issue:
-        <a href="https://github.com/italia/daf/issues/215">#215</a></td>
-        <td>Medium</td>
-        <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
-    </tr>
+    <tbody>
+        <tr role="row" class="odd">
+            <td tabindex="0">DAF</td>
+            <td>
+                <b>Create a new pipeline for ingesting data into DAF </b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. Find an interesting
+                data source (with a certain platform) and convert it so it's usable within DAF. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful.
+                <br />
+                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
+                <br />
+                <b>Expected outcome:</b> A working pipeline to ingest data into DAF
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Scala</li>
+                    <li>- Data management</li>
+                    <li>- (preferred) Kylo</li>
+                </ul>
+                <br /> Full description on the issue:
+                <a href="https://github.com/italia/daf/issues/215">#215</a></td>
+            <td>Hard</td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">DAF</td>
+            <td>
+                <b>Create a data product based on a DAF dataset</b><br /> Create an application based on a DAF dataset You can choose any technology you want, but you should be creating an interesting dashboard, visualization, or useful program which
+                exploits the possibilities of the DAF framework. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful. We have several mentors available, with
+                different expertises, so make sure you discuss with your mentor which kind of application would be useful.
+                <br />
+                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
+                <br />
+                <b>Expected outcome:</b> An application (web or otherwise) which makes use of DAF datasets
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- (preferred) Data visualization</li>
+                    <li>- Data management</li>
+                </ul>
+                <br /> Full description on the issue:
+                <a href="https://github.com/italia/daf/issues/214">#214</a></td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+        </tr>
+        <tr role="row" class="odd">
 
-
-    <tr role="row" class="even">
-        <td tabindex="0">DAF</td>
-        <td>
-        <b>Create a data product based on a DAF dataset</b><br />
-        Create an application based on a DAF dataset
-
-        You can choose any technology you want, but you should be creating an interesting dashboard, visualization, or useful program which exploits the possibilities of the DAF framework. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful.
-        We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful.
-        <br />  
-        <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
-        <br />  
-        <b>Expected outcome:</b>
-        An application (web or otherwise) which makes use of DAF datasets
-        <br />  
-        <b>Required skills:</b>
-        <ul>
-          <li>- (preferred) Data visualization</li>
-          <li>- Data management</li>
-        </ul>
-        <br />
-        Full description on the issue:
-        <a href="https://github.com/italia/daf/issues/214">#214</a></td>
-        <td>Medium</td>
-        <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a>
-        <a href="https://github.com/italia/bootstrap-italia/issues/28">Area Componenti: rilevatore di scroll (scrollspy)</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/27">Area Componenti: Barre di menù di navigazione</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/24">Area Componenti: Listati</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/23">Area Componenti: Menù di navigazione</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/22">Area Componenti: Tooltips e popovers</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/21">Area Componenti: Forms e gruppi di input</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/20">Area Componenti: Carosello e "Jumbotron"</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/19">Area Componenti: Card</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/18">Area Componenti: Bottoni e gruppi di bottoni, Dropdown</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/17">Area Componenti: Modale e Utilità bottone di chiusura</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/16">Area Componenti: Alert</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/15">Area Utilità: Utilità di posizionamento, allineamento e spaziatura</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/14">Area Utilità: Contenuti testuali, oggetti "embedded", screen readers</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/13">Area Utilità: Flex</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/12">Area Utilità: Colori</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/11">Area Layout: Griglie</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="odd">
-        <td tabindex="0">Altro</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/bootstrap-italia">bootstrap-italia</a> <a href="https://github.com/italia/bootstrap-italia/issues/10">Area Layout: introduzione, oggetti "media", utilità</a></td>
-        <td><span hidden=""></span><span class="issue-"></span></td>
-        <td></td>
-    </tr>
-    <tr role="row" class="even">
-        <td tabindex="0">Carta d'Identità Elettronica</td>
-        <td><a class="u-textWeight-400" href="https://github.com/italia/cie-ideaapp">cie-ideaapp</a> <a href="https://github.com/italia/cie-ideaapp/issues/10">Verifica di autenticità</a></td>
-        <td><span hidden="">enhancement</span><span class="issue-enhancement"></span></td>
-        <td><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">enhancement</span><span class="labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs">question</span></td>
-    </tr>
-</tbody>
+            <td tabindex="0">OpenFisca</td>
+            <td>
+                <b>Adapt OpenFisca to the Italian Fiscal system</b><br />
+                <a href="http://openfisca.org/doc/index.html">OpenFisca</a> is an open source project created by the French government<br /><br /> It supports multiple countries. Implement an "Italia" country which implements the Italian fiscal laws.
+                This task is interesting to students with a background in
+                <br />
+                <b>Mentor:</b> You will have two mentors from the Digital Transformation Team: one for the python code and an expert of the tax system. Ask on #welcome and you will find them.
+                <br />
+                <b>Expected outcome:</b> A working implementation of Italy in the OpenFisca system.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Python</li>
+                    <li>- A general understanding of taxation systems</li>
+                </ul>
+                <br /> Full description on the issue:
+                <a href="https://github.com/italia/developers.italia.it/issues/105">#105</a></td>
+            <td>Easy</td>
+            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. Do include the design web toolkit as a dependency, and make sure you write your code
+                in a way which is generic enough so that, later on, it be replaced by another toolkit (e.g. bootstrap) without too much effort.
+                <br />
+                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team
+                <br />
+                <b>Expected outcome:</b> A working implementation of the Italia Design System as a Joomla theme.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- Joomla</li>
+                </ul>
+                <br /> Full description on the issue:
+                <a href="https://github.com/italia/design-joomla-theme/issues/1">#1</a></td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
+                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+        </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. Do include the design web toolkit as a dependency, and make sure you write your code
+                in a way which is generic enough so that, later on, it be replaced by another toolkit (e.g. bootstrap) without too much effort.
+                <br />
+                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team
+                <br />
+                <b>Expected outcome:</b> A working implementation of the Italia Design System as a Drupal theme.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- Drupal</li>
+                </ul>
+                <br /> Full description on the issue:
+                <a href="https://github.com/italia/design-drupal-theme/issues/1">#1</a></td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
+                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">General</td>
+            <td>
+                <b>Your own idea!!</b><br /> Something that you're totally excited about!<br />Do you have an awesome idea you want to work on with Developers Italia but that is not among the ideas below? That's cool. We love that! But please do us a
+                favor: Get in touch with a mentor early on and make sure your project is realistic and within the scope of Developers Italia. That will spare you and us a lot of frustration.
+                <br />
+                <b>Mentor:</b> Propose your idea and ask who in Developers Italia is interested in what you want to work on and approach them. If you are unsure you can always ask in <a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>.
+                <br />
+                <b>Expected outcome:</b> To be discussed with your mentor...
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Up to you :-)</li>
+                </ul>
+                <br />
+                <td>Up to you</td>
+                <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+        </tr>
+    </tbody>
 </table>
