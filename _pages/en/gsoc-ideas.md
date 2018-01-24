@@ -22,6 +22,7 @@ Well prepared proposals from capable students have an outstanding chance of gett
 Remember that project descriptions are just initial ideas. You must expand with considerably more detail. Change the goals to fit your experience and interests.
 
 Note for the community: each project on the Ideas list should include: a) a project title/description b) more detailed description of the project (2-5 sentences) c) expected outcomes d) skills required/preferred e) possible mentors. And if possible, an easy, medium or hard rating of each project.
+
 <table id="issues_table" class="display responsive dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;">
     <thead>
         <tr role="row">
@@ -156,7 +157,7 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 <ul>
                     <li>- Up to you :-)</li>
                 </ul>
-                <br />
+                </td>
                 <td>Up to you</td>
                 <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
