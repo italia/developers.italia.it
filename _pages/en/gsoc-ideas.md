@@ -85,7 +85,7 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 <a href="http://openfisca.org/doc/index.html">OpenFisca</a> is an open source project created by the French government<br /><br /> It supports multiple countries. Implement an "Italia" country which implements the Italian fiscal laws.
                 This task is interesting to students with a background in
                 <br />
-                <b>Mentor:</b> You will have two mentors from the Digital Transformation Team: one for the python code and an expert of the tax system. Ask on #welcome and you will find them.
+                <b>Mentor:</b> You will have two mentors from the Digital Transformation Team: one for the python code and an expert of the tax system. Find them on #welcome.
                 <br />
                 <b>Expected outcome:</b> A working implementation of Italy in the OpenFisca system.
                 <br />
@@ -160,6 +160,40 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 </td>
                 <td>Up to you</td>
                 <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+        </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">DAF</td>
+            <td>
+                <b>CI and Automation for DAF</b><br /> DAF is currently organized as a number of microservices with a complex deploy structure. It is not the most developer-friendly environment to set-up. Write a series of CI/CD pipelines to automate the testing and development phases, and complement it with some ansible sugar to configure hacking and production environments.
+                <br />
+                <b>Mentor:</b> Our dev-ops are always hanging on the #daf channel. Fabio Fumarola or Alessandro Ercolani will help you get started.
+                <br />
+                <b>Expected outcome:</b> A set of pipelines to create a more structured DAF infrastructure.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- A CI/CD system</li>
+                    <li>- Ansible</li>
+                </ul></td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">DAF</td>
+            <td>
+                <b>Data science - datastories</b><br /> DAF offers Jupiter notebooks for data scientists to explore public datasets. The whole environment is set up in a way so that you can create your "data stories", combining notebooks, Metabase plots and other visualization from Superset. Use the platform to create new dashboards useful to citizens and journalists.
+                <br />
+                <b>Mentor:</b> Data science team #daf channel. Fabiana Lanotte.
+                <br />
+                <b>Expected outcome:</b> A set of datastories that create insights on public data.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Python</li>
+                    <li>- Data Science</li>
+                </ul></td>
+            <td>Easy</td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
     </tbody>
 </table>
