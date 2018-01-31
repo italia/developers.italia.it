@@ -9,7 +9,7 @@ In questa pagina si descrivono le modalità e le condizioni del trattamento dei 
 L'informativa è resa ai sensi dell'art. 13 del D. Lgs. n. 196/2003 - Codice in materia di protezione dei dati personali a tutti gli Utenti che, interagendo con il Sito, forniscono al gestore dello stesso i propri dati personali.
 La validità dell’informativa contenuta nella presente pagina è limitata al solo Sito e non si estende ad altri siti web eventualmente consultabili mediante collegamento ipertestuale.
 
-Il Titolare del trattamento per i dati raccolti attraverso il Sito è AgID - Agenzia per l'Italia Digitale, con sede in via Liszt 21 - 00144 Roma, indirizzo email [info@agid.gov.it](mailto:info@agid.gov.it).
+Il Titolare del trattamento per i dati raccolti attraverso il Sito è AgID - Agenzia per l'Italia Digitale, con sede in via Liszt 21 - 00144 Roma, indirizzo email [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it).
 Eventuali soggetti terzi ai quali i dati potrebbero essere comunicati per l’esecuzione di operazioni di trattamento connesse con le finalità specificate nella presente informativa, saranno preventivamente designati dal Titolare quali Responsabili del trattamento ai sensi dell’art. 29 del Codice in materia di protezione dei dati personali.
 I dati personali degli utenti diversi da quelli che l’utente pubblicherà direttamente sul sito nell’apposita area di discussione non formeranno oggetto di discussione.
 
@@ -17,7 +17,7 @@ Tutti i dati personali forniti attraverso il Sito saranno trattati in modo lecit
 
 I dati personali sono trattati con strumenti automatizzati per il tempo strettamente necessario a conseguire gli scopi per cui sono stati raccolti secondo quanto previsto dall’art. 11, lett. e) del Codice privacy. L’Agenzia adotta tutte le misure di sicurezza previste dal Codice privacy per proteggere i dati raccolti, al fine di scongiurare i rischi di perdita o furto dei dati, accessi non autorizzati, usi illeciti e non corretti.
 Gli Utenti possono esercitare in qualsiasi momento i diritti previsti dall’art. 7 del Codice privacy, al fine di ottenere la conferma dell'esistenza o meno dei loro dati personali e di conoscerne il contenuto e l'origine, verificarne l'esattezza o chiederne l'integrazione o l'aggiornamento, oppure la rettificazione. Ai sensi della medesima disposizione l’Utente potrà inoltre chiedere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, nonché opporsi in ogni caso, per motivi legittimi, al loro trattamento.
-Le richieste vanno inviate al seguente indirizzo: [info@agid.gov.it](mailto:info@agid.gov.it). Attraverso il medesimo indirizzo, l’Utente potrà chiedere inoltre la lista aggiornata di tutti i Responsabili del trattamento nominati dal Titolare.
+Le richieste vanno inviate al seguente indirizzo: [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it). Attraverso il medesimo indirizzo, l’Utente potrà chiedere inoltre la lista aggiornata di tutti i Responsabili del trattamento nominati dal Titolare.
 La presente Privacy Policy è soggetta ad aggiornamenti; gli Utenti sono pertanto invitati a verificarne periodicamente il contenuto.
 
 ### Cookies policy
