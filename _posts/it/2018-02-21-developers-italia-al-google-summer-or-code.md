@@ -12,9 +12,9 @@ redirect_from:
    - 
 ---
 
-Ciao a tutti,
+Ciao a tutti!
 
-Vi scriviamo per condividere con voi la bella notizia che la community [Developers Italia](https://developers.italia.it/) rientra tra **le organizzazioni e i progetti open source** che prenderanno parte al [Google Summer of Code 2018](https://summerofcode.withgoogle.com/). Grazie a questa opportunità, studenti e giovani sviluppatori da tutto il mondo potranno seguire i progetti open source sviluppati nella comunità di Developers Italia, affiancati da un mentor, durante i **tre mesi del summer camp** organizzato ogni anno da Google.
+La community [Developers Italia](https://developers.italia.it/) rientra tra **le organizzazioni e i progetti open source** che prenderanno parte al [Google Summer of Code 2018](https://summerofcode.withgoogle.com/). Grazie a questa opportunità, studenti e giovani sviluppatori da tutto il mondo potranno seguire i progetti open source sviluppati nella comunità di Developers Italia, affiancati da un mentor, durante i **tre mesi del summer camp** organizzato ogni anno da Google.
 
 ## Google Summer of Code, di che si tratta
 
