@@ -1,7 +1,7 @@
 ---
 title: DAF
 subtitle: Data & Analytics Framework
-logo: /assets/images/logo-dati.gov.it@2x.png
+logo: /assets/images/logo-daf-temp.png
 payoff: Valorizziamo il patrimonio informativo pubblico nazionale
 description: >
   La vision del DAF è rendere i dati pubblici di facile accesso e comprensione da parte delle PA per supportarle nel proprio data driven decision making, e di facilitare l'accesso alle informazioni che possono essere rese pubbliche da parte di cittadini e imprese.
@@ -100,4 +100,3 @@ della mailing-list nel forum.
 [Discussioni su DAF nel forum](https://forum.italia.it/c/daf)
 
 [Vecchia mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
-

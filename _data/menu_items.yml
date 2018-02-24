@@ -3,14 +3,16 @@ it:
     url: '#'
     liClass: 'Megamenu-item Megamenu-item--vert'
     subitems:
-    - title: SPID
+    - title: Identità digitale (SPID)
       url: /it/spid
-    - title: dati.gov.it
-      url: /it/datigov
-    - title: ANPR
+    - title: Data & Analytics Framework
+      url: /it/daf
+    - title: Anagrafe Nazionale (ANPR)
       url: /it/anpr
-    - title: CIE
+    - title: Carta di Identità (CIE)
       url: /it/cie
+    - title: PagoPA
+      url: /it/pagopa
     - title: Tutti i progetti
       url: /it/progetti
       liClass: 'Megamenu-showAll'
@@ -56,8 +58,8 @@ en:
       subitems:
       - title: SPID
         url: /en/spid
-      - title: dati.gov.it
-        url: /en/datigov
+      - title: DAF
+        url: /en/daf
       - title: ANPR
         url: /en/anpr
       - title: CIE
