@@ -8,7 +8,7 @@ jobs:
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
   # how to reach the production site.
-  deploy-production:
+  build:
     docker:
       - image: circleci/ruby:2.5.0-node
     environment:
@@ -28,7 +28,7 @@ workflows:
   version: 2
   continuous-deploy:
     jobs:
-      - deploy-production:
+      - build:
           filters:
             branches:
               only:
