@@ -21,18 +21,14 @@ jobs:
       - run: bundle exec jekyll build
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       
-      - persist_to_workspace:
-          root: /home/circleci/project
-          paths:
-            - _site
   deploy-production:
     docker:
       - image: circleci/ruby:2.5.0-node
     steps:
-      - attach_workspace:
-          at: /home/circleci/project
+      - run: bundle install
+      - run: bundle exec jekyll build
       - run: mkdir -p ~/.ssh
-      - run: echo $SSH_KNOWN_HOSTS | base64 -d > ~/.ssh/known_hosts
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --dry-run --exclude '*.git' -avP --rsync-path="sudo -u www-data rsync" ./_site circleci@developers.italia.it:/data/www/developers.italia.it/web/
       
