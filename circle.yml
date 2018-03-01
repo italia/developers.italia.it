@@ -25,6 +25,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.5.0-node
     steps:
+      - checkout
       - run: bundle install
       - run: bundle exec jekyll build
       - run: mkdir -p ~/.ssh
