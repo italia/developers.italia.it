@@ -1,7 +1,7 @@
 ---
 machine:
   ruby:
-    version: 2.2.3
+    version: 2.2.5
   node:
     version: 5.0.0
 environment:
