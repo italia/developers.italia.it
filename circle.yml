@@ -17,6 +17,7 @@ jobs:
       
     steps:
       - checkout
+      - run: bundle install
       - run: bundle exec jekyll build
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       
