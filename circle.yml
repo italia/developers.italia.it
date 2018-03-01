@@ -1,24 +1,55 @@
----
-machine:
-  ruby:
-    version: 2.5.0
-  node:
-    version: 5.0.0
-environment:
-  JEKYLL_ENV: production
-  NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
-compile:
-  override:
-#   - gulp build
-    - bundle exec jekyll build
-test:
-  post:
-      - bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-#deployment:
-#  production:
-#    branch: master
-#    commands:
-#      - gulp publish-production
-general:
-  artifacts:
-    - "_site"
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ for more details
+#
+
+version: 2
+jobs:
+  # Deploy to production site
+  # Note that we need a custom SSH config to let rsync know
+  # how to reach the production site.
+  build:
+    docker:
+      - image: circleci/ruby:2.5.0-node
+    environment:
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+      
+    steps:
+      - checkout
+      - run: bundle exec jekyll build
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      
+      - persist_to_workspace:
+          root: /home/ubuntu
+          paths:
+            - developers.italia.it
+  deploy-production:
+    docker:
+      - image: circleci/ruby:2.5.0-node
+    steps:
+      - attach_workspace:
+          at: /home/ubuntu
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d > ~/.ssh/known_hosts
+      - run: which rsync || sudo apt-get install rsync
+      - run: rsync --dry-run --exclude '*.git' -avP --rsync-path="sudo -u www-data rsync" ./ circleci@developers.italia.it:/data/www/docs.developers.italia.it/web/
+      
+workflows:
+  version: 2
+  build-test-and-approval-deploy:
+    jobs:
+      - build
+      - hold:
+          type: approval
+          filters:
+            branches:
+              only:
+                - master
+      - deploy-production:
+          requires:
+            - hold
+          filters:
+            branches:
+              only:
+                - master
