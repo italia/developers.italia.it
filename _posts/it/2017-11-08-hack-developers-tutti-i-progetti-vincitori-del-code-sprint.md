@@ -2,7 +2,7 @@
 layout: post
 title:  Hack.Developers, tutti i progetti vincitori del code-sprint
 subtitle: Annunciati i progetti vincitori del premio Wise Turtle, sviluppati entro 30 giorni dalla fine di Hack.Developers
-date:   2017-10-23 17:00:00 +0100
+date:   2017-11-08 10:00:00 +0100
 tags: hackathon eventi sviluppatori
 categories: news
 author: Giovanni Bajo
