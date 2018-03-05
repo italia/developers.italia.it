@@ -18,6 +18,7 @@ jobs:
       - checkout
       - run: bundle install
       - run: bundle exec jekyll build
+      - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
