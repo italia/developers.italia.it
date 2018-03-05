@@ -91,7 +91,7 @@ umbros:
 alessandro:
   name: Alessandro Ercolani
   desc: Data Engineer, Team Digitale
-  pic: https://teamdigitale.governo.it/images/team/alessandro-ercolani.jpg
+  pic: /assets/images/alessandro-ercolani.jpg
   status: maintainer
   contacts:
     github:
@@ -152,7 +152,7 @@ carlo:
   name: Carlo Contavalli
   desc: Software Architect, Team Digitale
   pic: /assets/images/carlo.jpeg
-  status: maintainer
+  status: contributor
   contacts:
     github:
       name: github
