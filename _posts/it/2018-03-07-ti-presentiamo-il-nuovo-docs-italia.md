@@ -2,7 +2,7 @@
 layout: post
 title:  Ti presentiamo il nuovo Docs Italia!
 subtitle: Un sito unico dove pubblicare i documenti tecnici e amministrativi della Pubblica Amministrazione
-date:   2017-03-07 16:00:00 +0100
+date:   2018-03-07 16:00:00 +0100
 tags: developers docsitala
 categories: news
 author: Francesco De Augustinis
@@ -11,8 +11,6 @@ lang: it
 redirect_from:
    - 
 ---
-
-Ciao a tutti!
 
 Abbiamo pubblicato [una nuova release di Docs Italia](https://docs.developers.italia.it/), la piattaforma per pubblicare **i documenti tecnici e amministrativi** della Pubblica Amministrazione in Italia. Un unico sito dove pubblicare documentazione tecnica, linee guida, leggi, circolari e qualsiasi tipo di documento legato ai servizi pubblici o ai progetti digitali della Pubblica Amministrazione.
 

@@ -12,9 +12,7 @@ redirect_from:
    - 
 ---
 
-Ciao a tutti,
-
-finalmente abbiamo la lista completa dei progetti di [Hack.Developers](https://hack.developers.italia.it/) che si sono aggiudicati un premio! Ai [due team primi classificati nella sezione Fast Rabbit](https://developers.italia.it/news/2017/10/23/hack-developers-ecco-i-vincitori-fast-rabbit.html) si sono aggiunti i nomi dei **sei team vincitori della categoria Wise Turtle**, dedicata ai progetti sviluppati entro la fine del mese successivo alle 48 ore di code-sprint.
+Finalmente abbiamo la lista completa dei progetti di [Hack.Developers](https://hack.developers.italia.it/) che si sono aggiudicati un premio! Ai [due team primi classificati nella sezione Fast Rabbit](https://developers.italia.it/news/2017/10/23/hack-developers-ecco-i-vincitori-fast-rabbit.html) si sono aggiunti i nomi dei **sei team vincitori della categoria Wise Turtle**, dedicata ai progetti sviluppati entro la fine del mese successivo alle 48 ore di code-sprint.
 
 Ecco i contributi premiati:
 
