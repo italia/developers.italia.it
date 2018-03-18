@@ -14,14 +14,14 @@ redirect_from:
 
 In occasione della [Milano Digital Week](https://milanodigitalweek.com/), il 16 marzo 2018 si terrà “**Code hands-on: Laboratori aperti sui progetti di Developers Italia**”. 
 
-L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/). 
+L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](http://www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/). 
 
 ## Un laboratorio aperto a tutti
 
 I progetti al centro della giornata saranno:
 
 * [DAF](https://teamdigitale.governo.it/it/projects/daf.htm) - La piattaforma nazionale per Data Science e Open Data
-* [SPID](www.spid.gov.it) - Sistema Pubblico di Identità Digitale
+* [SPID](https://www.spid.gov.it) - Sistema Pubblico di Identità Digitale
 * [PagoPA](https://teamdigitale.governo.it/it/projects/pagamenti-digitali.htm) - Nodo di pagamento verso la Pubblica Amministrazione
 * [CIE](https://developers.italia.it/it/cie/) - Carta d'Identità Elettronica
 * [18App](https://developers.italia.it/it/18app/) - La piattaforma per la gestione del bonus economico
