@@ -3,7 +3,7 @@ layout: post
 title:  Ti presentiamo il nuovo Docs Italia!
 subtitle: Un sito unico dove pubblicare i documenti tecnici e amministrativi della Pubblica Amministrazione
 date:   2018-03-07 16:00:00 +0100
-tags: developers docsitala
+tags: developers docsitalia
 categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
