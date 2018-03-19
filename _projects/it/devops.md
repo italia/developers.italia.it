@@ -60,14 +60,12 @@ Per iniziare a contribuire alla comunità e creare la rete che ci siamo prefissi
 
 -   [Sezione Forum](https://forum.italia.it/c/piano-triennale/data-center-e-cloud)
 -   [Progetti GitHub](https://github.com/italia/cloud-pa)
--   [Canale Slack]()
+-   [Canale Slack](https://developersitalia.slack.com)
 
 
 ## Documentazione
 
 [Codice di condotta](https://codicecondotta-cloudPA.readthedocs.io)
-
-[Tools di collaborazione](https://tools-cloudPA.readthedocs.io)
 
 
 ## Motto
