@@ -58,14 +58,15 @@ Potresti essere interessato a partecipare alla comunità se:
 
 Per iniziare a contribuire alla comunità e creare la rete che ci siamo prefissi di creare puoi unirti a noi utilizzando i seguenti canali:
 
--   [Sezione Forum] (https://forum.italia.it/c/piano-triennale/data-center-e-cloud)
--   [Progetti GitHub] (https://github.com/italia/cloud-pa)
--   [Canale Slack] ()
+-   [Sezione Forum](https://forum.italia.it/c/piano-triennale/data-center-e-cloud)
+-   [Progetti GitHub](https://github.com/italia/cloud-pa)
+-   [Canale Slack]()
 
 
 ## Documentazione
 
 [Codice di condotta](https://codicecondotta-cloudPA.readthedocs.io)
+
 [Tools di collaborazione](https://tools-cloudPA.readthedocs.io)
 
 
