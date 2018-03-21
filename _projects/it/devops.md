@@ -56,11 +56,9 @@ Potresti essere interessato a partecipare alla comunità se:
 
 ### Come contribuire
 
-Per iniziare a contribuire alla comunità e creare la rete che ci siamo prefissi di creare puoi unirti a noi utilizzando i seguenti canali:
+Utilizziamo la [Sezione Cloud e Data Center del forum](https://forum.italia.it/c/piano-triennale/data-center-e-cloud) per discutere e condividere informazioni. Github invece è dedicato alla raccolta di codice, documentazione e blueprints legati allo sviluppo del Cloud della PA.
 
--   [Sezione Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud)
--   [Progetti GitHub](https://github.com/italia/cloud-pa)
--   [Canale Slack #devops](https://developersitalia.slack.com/messages/C9TCMU07R/) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
+Per tutti i System Administrator, Network Architect, DevOps, Site Reliability Engineering, Operations Manager è  aperto il [Canale Slack #devops](https://developersitalia.slack.com/messages/C9TCMU07R/) su [Slack di Developers Italia](https://slack.developers.italia.it)
 
 
 
