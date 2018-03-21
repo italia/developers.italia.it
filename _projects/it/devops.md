@@ -33,7 +33,6 @@ La Pubblica Amministrazione (PA) italiana ha avviato un importante processo di t
 
 Da queste necessità nasce la comunità DevOps dei servizi digitali che avrà il compito di costruire, condividere, promuovere e consolidare le nuove competenze tecnologiche nel settore pubblico per guidare e sostenere la trasformazione digitale del Paese.
 
-### Principi
 
 La comunità è aperta a tutte e tutti i lavoratori, professionisti, esperti, cultori e promotori di tecnologie nel settore IT che vogliano contribuire al mantenimento ed allo sviluppo armonico dell’insieme dei servizi digitali pubblici.
 
