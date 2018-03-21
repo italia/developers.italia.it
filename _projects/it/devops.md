@@ -1,9 +1,9 @@
 ---
 title: Devops Italia
-subtitle: 
-logo: 
-payoff: 
-description: 
+subtitle: Comunità DevOps per il Cloud della PA
+logo: /assets/images/logo-devops@2x.png
+payoff: Comunità DevOps della PA
+description: DevOps Italia è il punto di riferimento per lo sviluppo delle pratiche di DevOps e del Cloud della pubblica amministrazione - linee guida, strumenti e un forum per favorire la collaborazione e promuovere il paradigma del Cloud nello sviluppo dei servizi pubblici.
 
 lang: it
 order: 4
