@@ -33,7 +33,6 @@ La Pubblica Amministrazione (PA) italiana ha avviato un importante processo di t
 
 Da queste necessità nasce la comunità DevOps dei servizi digitali che avrà il compito di costruire, condividere, promuovere e consolidare le nuove competenze tecnologiche nel settore pubblico per guidare e sostenere la trasformazione digitale del Paese.
 
-
 La comunità è aperta a tutte e tutti i lavoratori, professionisti, esperti, cultori e promotori di tecnologie nel settore IT che vogliano contribuire al mantenimento ed allo sviluppo armonico dell’insieme dei servizi digitali pubblici.
 
 I partecipanti si propongono di:
@@ -57,4 +56,4 @@ Potresti essere interessato a partecipare alla comunità se:
 
 La [sezione Cloud e Data Center del forum](https://forum.italia.it/c/piano-triennale/data-center-e-cloud), aperta a tutti, è dedicata a discutere e condividere informazioni sul Cloud della PA, mentre [Github](https://github.com/italia) è dedicato alla raccolta di codice, documentazione e blueprints per lo sviluppo delle infrastrutture Cloud e del processo di Cloud Enablement della PA.
 
-Per tutti i System Administrator, Network Architect, DevOps, Site Reliability Engineering, Operations Manager è aperto il [Canale Slack #devops](https://developersitalia.slack.com/messages/C9TCMU07R/) su [Slack di Developers Italia](https://slack.developers.italia.it).
+Per tutti i System Administrator, Network Architect, DevOps, Site Reliability Engineering e Operations Manager è aperto il [canale Slack #devops](https://developersitalia.slack.com/messages/C9TCMU07R/) sullo [Slack di Developers Italia](https://slack.developers.italia.it).
