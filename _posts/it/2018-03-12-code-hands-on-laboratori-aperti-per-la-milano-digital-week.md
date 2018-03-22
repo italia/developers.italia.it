@@ -43,7 +43,7 @@ Ecco il programma della giornata:
 
 **h18:15** Inizio laboratorio Sviluppo Software con supporto del Team Digitale
 
-**20:00** Aperitivo
+**20:00** Aperitivo 
 
 Networking & Free Hacking fino alle **21:00**
 
