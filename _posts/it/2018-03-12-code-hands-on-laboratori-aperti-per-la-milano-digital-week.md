@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Code hands-on: laboratori aperti con Developers Italia per la Milano Digital Week
+title:  Code hands-on&#58; laboratori aperti con Developers Italia per la Milano Digital Week
 subtitle: Appuntamento il 16 marzo a Milano
 date:   2018-03-12 10:00:00 +0100
 tags: developers digitalweek
