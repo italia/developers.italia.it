@@ -9,12 +9,12 @@ author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 lang: it
 redirect_from:
-   -
+   - 
 ---
 
-In occasione della [Milano Digital Week](https://milanodigitalweek.com/), il 16 marzo 2018 si terrà “**Code hands-on: Laboratori aperti sui progetti di Developers Italia**”.
+In occasione della [Milano Digital Week](https://milanodigitalweek.com/), il 16 marzo 2018 si terrà “**Code hands-on: Laboratori aperti sui progetti di Developers Italia**”. 
 
-L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](https://www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/).
+L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](https://www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/). 
 
 ## Un laboratorio aperto a tutti
 
