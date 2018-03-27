@@ -195,5 +195,27 @@ Note for the community: each project on the Ideas list should include: a) a proj
             <td>Easy</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">General</td>
+            <td>
+                <b>Plan and develop a novel <i>electronic class register</i> for the hospital school</b><br /> The italian <i>hospital schools</i> need a specialized class register with features slightly different from the traditional registers. Together with the ad-hoc team of our university, the candidate will analyze the current solutions in the FOSS panorama, design the novel architecture, plan the work in an AGILE fashion, develop the code and define a deployment strategy. The starting point of the project will be the working solution already deployed by the team several years ago (that needs restyling).
+                <br />
+                <b>Mentor:</b> The Open Education team at Politecnico di Torino
+                <br />
+                <b>Expected outcome:</b> A working alpha release.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Python</li>
+                    <li>- Django</li>
+                    <li>- PostgreSQL</li>
+                    <li>- GNU/Linux</li>
+                    <li>- Web development/deployment techniques</li>
+                </ul>
+                <br /> Full description on the issue:
+                Meet me on Slack in the #welcome channel.</td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+        </tr>
     </tbody>
 </table>
