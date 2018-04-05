@@ -26,21 +26,17 @@ SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai ci
 Il cittadino può ottenere SPID tramite i Gestori di Identità (detti Identity Provider); una volta completata
 la procedura di verifica (che certifica l'identità del richiedente), vengono rilasciate un set di credenziali che possono essere utilizzate su tutti i siti (chiamati Service Provider).
 
-Al momento, l'integrazione di SPID è consentita solo nei siti della Pubblica Amministrazione, ma presto verrà disciplinata e aperta anche per i siti e servizi online dei privati. I vantaggi nell'adottare SPID saranno quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
+L'integrazione di SPID è consentita sia per i siti Pubblica Amministrazione, sia per i siti e servizi online dei privati. I vantaggi nell'adottare SPID sono quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
 
 
 **Roadmap**
 
-Abbiamo in programma per il 2017 i seguenti sviluppi, per i quali vogliamo coinvolgere la comunità:
+Sono in seguenti sviluppi che coinvolgono anche la community:
 
  * Creazione di plugin per i principali CMS (Wordpress, Drupal, Joomla, ecc.)
  * Scheletri di integrazione in ambito mobile (iOS, Android)
  * Testsuite di validazione dell'integrazione di SPID
  * Ambiente di testing e validazione di SPID
-
-Una lista completa dei task può essere visualizzata nella nostra live roadmap:
-
-[Live roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)
 
 ## Documentazione
 SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali.
