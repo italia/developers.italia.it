@@ -2,15 +2,17 @@
 layout: post
 title:  Developers Italia al Google Summer of Code 2018
 subtitle: Studenti da tutto il mondo potranno partecipare ai progetti open source di Developers Italia. Scopri come partecipare
-date:   2018-02-21 10:00:00 +0100
+date:   2018-02-21 17:00:00 +0100
 tags: developers daf gsoc
 categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 lang: it
 redirect_from:
-   - 
+   -
 ---
+
+Ciao a tutti!
 
 La community [Developers Italia](https://developers.italia.it/) rientra tra **le organizzazioni e i progetti open source** che prenderanno parte al [Google Summer of Code 2018](https://summerofcode.withgoogle.com/). Grazie a questa opportunità, studenti e giovani sviluppatori da tutto il mondo potranno seguire i progetti open source sviluppati nella comunità di Developers Italia, affiancati da un mentor, durante i **tre mesi del summer camp** organizzato ogni anno da Google.
 
