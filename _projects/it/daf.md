@@ -99,4 +99,5 @@ della mailing-list nel forum.
 
 [Discussioni su DAF nel forum](https://forum.italia.it/c/daf)
 
-[Vecchia mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+Per gli sviluppatori è aperto il canale [#daf](https://developersitalia.slack.com/messages/C760XQX9Q) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
+

@@ -45,3 +45,33 @@ Di seguito il link al questionario da completare per comunicare lo stato di avan
 - [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
 
 
+## Newsletter
+
+{::nomarkdown}
+
+<form class="Form Form--spaced u-padding-all-l u-background-grey-10 u-text-r-xs u-layout-prose u-margin-bottom-xl"
+      action="http://a0x0b4.emailsp.com/frontend/subscribe.aspx">
+
+        <div class="Form-field">
+            <label class="Form-label is-required" for="email" >Email *</label>
+            <input class="Form-input" id="email" type="email" name="email" aria-required="true" required placeholder="Inserisci la tua e-mail">
+        </div>
+        <fieldset class="Form-field Form-field--choose Grid-cell">
+        	<legend class="Form-legend is-required">Privacy *</legend>
+        	<label class="Form-label is-required" for="privacy">
+        	<input type="checkbox" class="Form-input" id="privacy" name="privacy" aria-required="true" required>
+        	<span class="Form-fieldIcon" role="presentation"></span>
+        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a>
+        	</label>
+        </fieldset>
+    	<div class="Form-field Grid-cell">
+    		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
+        	<button type="submit" class="Button Button--default u-text-xs" value="true">Iscriviti</button>
+    	</div>
+
+    <input type="hidden" name="list" value="5">
+</form>
+
+
+{:/}
+

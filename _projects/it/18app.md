@@ -8,7 +8,7 @@ description: >
 lang: it
 order: 3
 highlight: false
-comingsoon: true
+comingsoon: false
 layout: project
 github_team: 18app
 ---
