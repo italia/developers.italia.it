@@ -5,6 +5,19 @@
 
 version: 2
 jobs:
+  test:
+    docker:
+      - image: circleci/ruby:2.5.0-node
+    environment:
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+    steps:
+      - checkout
+      - run: bundle install
+      - run: bundle exec jekyll build
+      - run: cp -r ./github ./_site/
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
   # how to reach the production site.
@@ -33,4 +46,11 @@ workflows:
           filters:
             branches:
               only:
+                - master
+  do-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
                 - master
