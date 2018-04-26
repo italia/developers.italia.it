@@ -131,7 +131,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-toc
-  minima (~> 2.0)
+  minima (~> 2.5)
   parallel
   rest-client (~> 2.0)
   tzinfo-data
