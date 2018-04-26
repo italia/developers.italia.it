@@ -18,7 +18,7 @@ maintainers:
 ## Intro
 
 io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
-E’ un progetto open source che crescerà di giorno in giorno, coinvolgendo enti e servizi diversi.
+È un progetto Open Source che crescerà di giorno in giorno, coinvolgendo enti e servizi diversi.
 
 L’iniziativa di Cittadinanza digitale mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali più efficaci e migliorare la comunicazione tra i cittadini e la PA.
 
