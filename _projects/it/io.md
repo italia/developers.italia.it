@@ -36,3 +36,5 @@ Le API di comunicazione forniscono un unico canale che la Pubblica Amministrazio
 
 * [Utilizzo delle API](https://teamdigitale.github.io/digital-citizenship/)
 * [Repository GitHub](https://github.com/teamdigitale/digital-citizenship-functions)
+
+Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
