@@ -83,7 +83,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.10.3)
     netrc (0.11.0)
-    nokogiri (1.8.1)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     nuggets (1.5.0)
     parallel (1.12.1)
