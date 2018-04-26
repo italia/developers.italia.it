@@ -7,7 +7,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/ruby:2.5.0-node
+      - image: circleci/ruby:2.5.1-node-browsers
     environment:
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
