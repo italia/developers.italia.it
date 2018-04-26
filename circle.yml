@@ -23,7 +23,7 @@ jobs:
   # how to reach the production site.
   build:
     docker:
-      - image: circleci/ruby:2.5.0-node
+      - image: circleci/ruby:2.5.1-node-browsers
     environment:
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
