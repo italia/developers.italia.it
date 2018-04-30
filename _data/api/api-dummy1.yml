@@ -1,0 +1,594 @@
+openapi: 3.0.0
+info:
+  version: "0.0.1"
+  cover: http://placehold.it/600x300
+  title: |
+    Core Vocabularies API
+  description: |
+    Dictionaries are versioned key-value store that you can
+      retrieve via API. For each dictionary you can:
+      - get metadata infos
+      - retrieve a paged subset
+      - get a single entry via an unique key
+      - find entries by a given key (which could not be unique)
+
+      Dictionary structure is the following:
+      - Dictionary: has a single name and many versions
+        - Table: it's a specific version of a dictionary. May
+            expire
+            - Entry: it's the actual data contained in a table.
+
+    Despite http://zalando.github.io/restful-api-guidelines/index.html#160
+        we use pagination as it's more intuitive for this use case.
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: robipolli@gmail.com
+    name: Roberto Polli
+    url: https://twitter.com/ioggstream
+  x-audience: |
+    Definire qui l'audience delle API
+  x-api-id: b9ec7026-5da5-4db6-a959-fce72db5de64
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: admins
+    description: Create and update dictionaries
+    externalDocs:
+      url: http://docs.my-api.com/pet-operations.htm
+  - name: public
+    description: Retrieve dictionaries
+    externalDocs:
+      url: http://docs.my-api.com/pet-operations.htm
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/robipolli/core-vocabularies/0.0.1
+
+paths:
+  /dictionaries:
+    get:
+      summary: Get informations about provided dictionaries.
+      description: |
+        Shows a list of supported dictionaries.
+      operationId: getDictionaries
+      tags:
+      - public
+      parameters:
+      - $ref: '#/components/parameters/name'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/offset'
+      - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: |
+            A list of Dictionaries.
+            Headers secondo http://zalando.github.io/restful-api-guidelines/index.html#132
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionaries'
+  /dictionaries/{dictionary_name}:
+    get:
+      summary: Get informations about a dictionary.
+      description: |
+        Retrieve available dictionary version and URI.
+      operationId: getDictionary
+      tags:
+      - public
+      parameters:
+        - $ref: "#/components/parameters/dictionary_name_path"
+      responses:
+        '200':
+          description: |
+            Retrieve information from a dictionary.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionary'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        default:
+          $ref: '#/components/responses/default'
+
+    post:
+      tags:
+      - admins
+      summary: |
+        Upload a new (version of a) dictionary eventually creating
+        a new dictionary. The passed csv file contains a trailing
+        line with the expected line count. If the schema does not match
+        previous version, an error is returned.
+      operationId: uploadDictionary
+      requestBody:
+        description: |-
+          Use MarkDown here!
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TableData'
+      responses:
+        '201':
+          description: |
+            A new version of the table have been created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Table'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        default:
+          $ref: '#/components/responses/default'
+  /dictionaries/{dictionary_name}/meta:
+    get:
+      summary: Get meta informations about a dictionary.
+      description: |
+        Retrieve available dictionary version and URI:
+        foo bar
+      operationId: getDictionaryMeta
+      tags:
+      - public
+      parameters:
+        - $ref: "#/components/parameters/dictionary_name_path"
+      responses:
+        '200':
+          description: |
+            Retrieve information from a dictionary.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Dictionary'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        default:
+          $ref: '#/components/responses/default'
+  /dictionaries/{dictionary_name}/{version}:
+    get:
+      summary: Get entries from a dictionary.
+      description: |
+        Retrieve paged entries from a Table.
+      operationId: getDictionary
+      tags:
+      - public
+      parameters:
+      - $ref: "#/components/parameters/dictionary_name_path"
+      - $ref: "#/components/parameters/version_path"
+      - $ref: '#/components/parameters/name'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/offset'
+      - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: |
+            Retrieve dictionary metadata
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entry'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        default:
+          $ref: '#/components/responses/default'
+  /dictionaries/{dictionary_name}/{version}/{entry_key}:
+    get:
+      summary: Get a Table entry
+      operationId: getEntry
+      description: |-
+        Retrieve an entry from a Table.
+      tags:
+        - public
+      parameters:
+      - $ref: '#/components/parameters/dictionary_name_path'
+      - $ref: '#/components/parameters/version_path'
+      - $ref: '#/components/parameters/entry_key_path'
+      responses:
+        '200':
+          description: |
+            Returns the given entry.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entries'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        '429':
+          $ref: '#/components/responses/429TooManyRequests'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'
+        default:
+          $ref: '#/components/responses/default'
+  /tables:
+    get:
+      summary: Get informations about exiting tables.
+      description: |
+        Shows a list of supported tables matching the given name.
+      operationId: getTables
+      tags:
+      - public
+      parameters:
+      - $ref: '#/components/parameters/dictionary_name'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/offset'
+      - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: |
+            A list of Tables.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tables'
+  /table/{table_uuid}/:
+    get:
+      summary: Get entries from a given table.
+      description: |
+        Retrieve paged entries from a Table.
+      operationId: getTableEntries
+      tags:
+      - public
+      parameters:
+      - $ref: "#/components/parameters/table_uuid_path"
+      - $ref: '#/components/parameters/name'
+      - $ref: '#/components/parameters/limit'
+      - $ref: '#/components/parameters/offset'
+      - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: |
+            Retrieve table data
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entries'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        default:
+          $ref: '#/components/responses/default'
+  /table/{table_uuid}/{entry_key}:
+    get:
+      summary: Get a Table entry
+      operationId: getEntryByTable
+      description: |-
+        Retrieve an entry from a Table.
+      tags:
+        - public
+      parameters:
+      - $ref: "#/components/parameters/table_uuid_path"
+      - $ref: "#/components/parameters/entry_key_path"
+      responses:
+        '200':
+          description: |
+            Returns the given entry.
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entries'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        '429':
+          $ref: '#/components/responses/429TooManyRequests'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'
+        default:
+          $ref: '#/components/responses/default'
+
+
+components:
+  parameters:
+    limit:
+      $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/limit'
+    offset:
+      $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/offset'
+    sort:
+      $ref: 'https://teamdigitale.github.io/openapi/parameters/v3.yaml#/sort'
+    name:
+      name: name
+      in: query
+      description: The indexed key to search with.
+      required: false
+      example: Latina
+      schema:
+        type: string
+    dictionary_name_path:
+      name: dictionary_name
+      in: path
+      required: true
+      description: The name of the dictionary
+      example: cities
+      schema:
+        type: string
+    dictionary_name:
+      name: dictionary_name
+      in: query
+      description: The name of the dictionary
+      example: cities
+      schema:
+        type: string
+    entry_key_path:
+      name: entry_key
+      in: path
+      required: true
+      description: The entry key
+      example: E472-2007
+      schema:
+        type: string
+    table_uuid_path:
+      name: table_uuid
+      in: path
+      required: true
+      description: The table uuid
+      example: 2b356821-868e-4274-9c8e-ca119dd097df
+      schema:
+        type: string
+    version_path:
+      name: version
+      in: path
+      required: true
+      description: A specific version of a dictionary.
+      example: 137
+      schema:
+        type: integer
+
+  headers:
+    # Headers conform to http://zalando.github.io/restful-api-guidelines/index.html#132
+    X-RateLimit-Limit:
+      $ref: 'https://teamdigitale.github.io/openapi/headers/v3.yaml#/X-RateLimit-Limit'
+    X-RateLimit-Remaining:
+      $ref: 'https://teamdigitale.github.io/openapi/headers/v3.yaml#/X-RateLimit-Remaining'
+    X-RateLimit-Reset:
+      $ref: 'https://teamdigitale.github.io/openapi/headers/v3.yaml#/X-RateLimit-Reset'
+
+  responses:
+    # Predefined error codes for this API
+    400BadRequest:
+      $ref: 'https://teamdigitale.github.io/openapi/responses/v3.yaml#/400BadRequest'
+    404NotFound:
+      $ref: 'https://teamdigitale.github.io/openapi/responses/v3.yaml#/404NotFound'
+    429TooManyRequests:
+      $ref: 'https://teamdigitale.github.io/openapi/responses/v3.yaml#/429TooManyRequests'
+    503ServiceUnavailable:
+      $ref: 'https://teamdigitale.github.io/openapi/responses/v3.yaml#/503ServiceUnavailable'
+    default:
+      $ref: 'https://teamdigitale.github.io/openapi/responses/v3.yaml#/default'
+
+  schemas:
+
+    Problem:
+      $ref: 'https://teamdigitale.github.io/openapi/schemas/problem.yaml#Problem'
+
+    Dictionaries:
+      required:
+      - items
+      - offset
+      - offset_next
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/Dictionary'
+        offset:
+          type: integer
+          format: int32
+          example: 5
+        offset_next:
+          type: integer
+          format: int32
+          example: 10
+
+    Dictionary:
+      description: |
+        Reference to a dictionary, that is a multi-versioned table.
+      required:
+        - name
+        - description
+        - last_version
+        - uri
+      properties:
+        name:
+          type: string
+          example: cities
+        description:
+          type: string
+          example: |-
+            Which data is contained in the dictionary? Cities? Foreign countries?
+            Healtcare codes?
+        last_version:
+          type: integer
+          example: 134
+        uri:
+          type: string
+          format: uri
+          example: http://dictionaries-beta.api.example.com/dictionaries/cities
+
+    Table:
+      description: |
+        Versioned dictionary.
+      required:
+        - name
+        - version
+        - uri
+        - uuid
+        - ttl
+      properties:
+        name:
+          type: string
+          example: cities
+        version:
+          type: integer
+          example: 137
+        uuid:
+          type: string
+          format: uuid
+          example: 2b356821-868e-4274-9c8e-ca119dd097df
+        table_uri:
+          type: string
+          format: uri
+          example: http://dictionaries-beta.api.example.com/table/2b356821-868e-4274-9c8e-ca119dd097df
+        uri:
+          type: string
+          format: uri
+          example: http://dictionaries-beta.api.example.com/dictionaries/cities/137
+        ttl:
+          type: integer
+          format: int32
+          description: Seconds to the invalidation of the API.
+
+    Tables:
+      required:
+      - items
+      - offset
+      - offset_next
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/Table'
+        offset:
+          type: integer
+          format: int32
+          example: 5
+        offset_next:
+          type: integer
+          format: int32
+          example: 10
+
+    TableData:
+      description: |
+        Dictionary data, freely inspired by  https://github.com/italia/daf-ontologie-vocabolari-controllati/
+      required:
+        - name
+        - ttl
+        - data
+      properties:
+        name:
+          type: string
+          example: cities
+        ttl:
+          type: integer
+          format: int32
+          description: Seconds to the invalidation of the API.
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Entry'
+
+    Entry:
+      required:
+      - key
+      - data
+      properties:
+        key:
+          type: string
+          description: |-
+            An unique ID for the entry in the given table. This may have
+              a semantic meaning or could be just an UUID.
+          example: E472-2007
+        data:
+          type: object
+          example: { 'codice_catastale': 'E472', 'provincia': 'LT', 'nome': 'Latina', 'nome_traslitterato': 'LATINA', 'codice_istat': '059011'}
+        name:
+          type: string
+          example: Latina
+          description: Searchable string.
+        # backref:
+        #   type: string
+        #   format: uri
+        #   description: |-
+        #     XXX Reference to parent dictionary. Do we need it?
+        #   example: http://dictionaries-beta.api.example.com/dictionaries/cities/137
+    Entries:
+      required:
+      - items
+      - offset
+      - offset_next
+      properties:
+        item:
+          type: array
+          items:
+            $ref: '#/components/schemas/Entry'
+        table_uri:
+          type: string
+          format: uri
+          example: http://dictionaries-beta.api.example.com/table/2b356821-868e-4274-9c8e-ca119dd097df
+        offset:
+          type: integer
+          format: int32
+          description: |-
+            Current offset (eg. entries 50 to 99)
+          example: 50
+        offset_next:
+          type: integer
+          format: int32
+          description: |-
+            Offset for the next page (eg. entries from 100 to 149).
+            This could be a link too in HATEOAS.
+          example: 100

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+{% comment %}
+
+  {% include breadcrumbs.html %}
+  {% include share.html %}
+
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
+
+{% endcomment %}
+{% assign apis = site.data.api %}
+
+<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+    {{ page.title }}</h1>
+    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
+</div>
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator Separator--up u-background-grey-15" />
+
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+
+
+        <div class="Grid Grid--equalHeight">
+        {% for api in apis %}
+            {% assign api_json = api[1] %}
+            
+                <div class="u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4">
+                    
+                    <div class="u-nbfc u-border-all-xxs u-color-grey-30 u-background-white">
+                            <a href="#"><img src="{{api_json.info.cover}}" class="u-sizeFull" alt="{{api_json.info.title}}" /></a>
+                            <div class="u-text-r-l u-padding-r-all u-layout-prose">
+                                <p class="u-text-h6 u-margin-bottom-l"><span class="u-color-50 u-textClean" >{{api_json.info.license.name}}</span></p>
+                                <h3 class="u-text-h4 u-margin-r-bottom"><a class="u-text-r-m u-color-black u-textWeight-400 u-textClean" href="#">{{api_json.info.title}}</a></h3>
+                                <p class="u-text-r-xs u-textSecondary">{{api_json.info.description | truncate: 80}}</p>
+                            </div>
+                        </div>
+                </div>
+              
+        {% endfor %}
+        </div>
+
+
+</div>
