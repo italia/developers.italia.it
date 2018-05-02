@@ -20,7 +20,7 @@ maintainers:
 io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
 È un progetto Open Source che crescerà di giorno in giorno, coinvolgendo enti e servizi diversi.
 
-L’iniziativa di Cittadinanza digitale mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali più efficaci e migliorare la comunicazione tra i cittadini e la PA.
+io mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali più efficaci e migliorare la comunicazione tra i cittadini e la PA.
 
 I componenti vengono riutilizzati dalle amministrazioni che erogano servizi digitali al fine di garantire un’esperienza utente coerente nonché risparmiare sull’effort richiesto da un’implementazione tout-court di tali tecnologie trasversali.
 
@@ -36,5 +36,6 @@ Le API di comunicazione forniscono un unico canale che la Pubblica Amministrazio
 
 * [Utilizzo delle API](https://teamdigitale.github.io/digital-citizenship/)
 * [Repository GitHub](https://github.com/teamdigitale/digital-citizenship-functions)
+* [Come contribuire](https://github.com/teamdigitale/digital-citizenship/blob/master/CONTRIBUTING.it.md)
 
 Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
