@@ -44,6 +44,8 @@ it:
     url: it/cosa-fare
   - title: Notizie
     url: news
+  - title: API
+    url: it/api
   - title: Chi siamo
     url: it/chi-siamo
   - title: FAQ

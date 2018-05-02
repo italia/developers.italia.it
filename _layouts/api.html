@@ -27,21 +27,23 @@ layout: default
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
 
 
-        <div class="Grid Grid--equalHeight">
+        <div class="Grid Grid--equalHeight Grid--withGutter">
         {% for api in apis %}
             {% assign api_json = api[1] %}
+            {% assign api_desc = api_json.info.description | truncate:150 %}
             
-                <div class="u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4">
-                    
-                    <div class="u-nbfc u-border-all-xxs u-color-grey-30 u-background-white">
-                            <a href="#"><img src="{{api_json.info.cover}}" class="u-sizeFull" alt="{{api_json.info.title}}" /></a>
-                            <div class="u-text-r-l u-padding-r-all u-layout-prose">
-                                <p class="u-text-h6 u-margin-bottom-l"><span class="u-color-50 u-textClean" >{{api_json.info.license.name}}</span></p>
-                                <h3 class="u-text-h4 u-margin-r-bottom"><a class="u-text-r-m u-color-black u-textWeight-400 u-textClean" href="#">{{api_json.info.title}}</a></h3>
-                                <p class="u-text-r-xs u-textSecondary">{{api_json.info.description | truncate: 80}}</p>
-                            </div>
-                        </div>
-                </div>
+            <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+                {% include card.html
+                  title=api_json.info.title
+                  link=api_json.url
+                  comingsoon=api_json.comingsoon
+                  subtitle=''
+                  text=api_desc
+                  socials=api_json.socials
+                  alt=''
+                  hasImage=false
+                  %}
+              </div>
               
         {% endfor %}
         </div>
