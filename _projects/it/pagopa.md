@@ -33,12 +33,8 @@ Trovate maggiori informazioni sulla piattaforma [Designers Italia](https://desig
 ## Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile i primi documenti che potete leggere di seguito.
 
-- [Overview](http://pagopa-docs-overview2.readthedocs.io/)
+- [Specifiche Attuative del Nodo dei Pagamenti-SPC](https://pagopa-specifichepagamenti.readthedocs.io)
 - [FAQ](http://pagopa-docs-faq.readthedocs.io)
-- [Architettura](https://pagopa-docs-architettura.readthedocs.io/)
-- [Formato Messaggi XML](http://pagopa-docs-formatoxml2.readthedocs.io/)
-- [Specifiche Attuative Pagamenti](https://pagopa-docs-specattuative.readthedocs.io/)
-- [Specifiche Implementazione Web Services](https://pagopa-docs-specws.readthedocs.io/)
 
 ### Per i Comuni
 Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
