@@ -64,8 +64,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-tagging (1.1.0)
       nuggets
-    jekyll-toc (0.5.2)
-      nokogiri (~> 1.6)
+    jekyll-toc (0.6.0)
+      nokogiri (~> 1.7)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
     kramdown (1.16.2)
