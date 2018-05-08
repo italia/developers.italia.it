@@ -115,11 +115,11 @@ page_gen:
     data: apis
     template: api-details
     dir: it/api
-    filter_condition: "record['lang'].include? 'it'"
+    filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
     name: name
     data: apis
     template: api-details
     dir: en/api
-    filter_condition: "record['lang'].include? 'en'"
+    filter_condition: "record['language'].include? 'en'"

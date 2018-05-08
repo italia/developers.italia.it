@@ -13,21 +13,8 @@ layout: default
   {% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
-{% assign apis = site.data.apis %}
-
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title }}</h1>
-    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
-</div>
 
 <hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
+<hr class="Separator-room u-background-50" />
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-
-  <div class="Grid Grid--equalHeight Grid--withGutter">
-    {{ page.openapi }}
-  </div>
-
-</div>
+{% include swagger.html swaggerUrl=page.openapi %}
