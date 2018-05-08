@@ -26,24 +26,8 @@ layout: default
 
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
 
-
-        <div class="Grid Grid--equalHeight Grid--withGutter">
-        {% for api in apis %}
-          {% assign url = api.name | datapage_url: "." %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include card.html
-              image=api.logo
-              title=api.name
-              text=api.abstract
-              link=url
-              subtitle=''
-              alt=''
-            %}
-          </div>
-
-        {% endfor %}
-        </div>
-
+  <div class="Grid Grid--equalHeight Grid--withGutter">
+    {{ page.openapi }}
+  </div>
 
 </div>
