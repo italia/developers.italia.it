@@ -37,7 +37,7 @@ class CustomLayout extends React.Component {
 
     return (
       <div className="u-posRelative u-background-grey-15">
-        <div className="u-posRelative u-layout-r-withGutter u-sizeFull head-card">
+        <div className="u-posRelative u-layout-r-withGutter u-sizeFull swagger--head-card">
           <div className="Grid Grid--alignCenter">
             <div className="Grid-cell u-md-size12of12 u-lg-size12of12">
               <div className="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">

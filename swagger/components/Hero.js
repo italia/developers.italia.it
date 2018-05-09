@@ -25,10 +25,10 @@ class Hero extends Component {
     const tos = info.get("termsOfService");
 
     return (
-      <div className="u-color-grey-50 hero">
+      <div className="u-color-grey-50 swagger--hero">
         <h1 className="u-text-r-xl u-color-black u-padding-bottom-s">
           {title}
-          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 hero-pill">
+          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 swagger--hero-pill">
             {version}
           </span>
         </h1>

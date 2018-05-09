@@ -1,10 +1,10 @@
-.hero ol,
-.hero ul {
+.swagger--hero ol,
+.swagger--hero ul {
     list-style: disc;
     padding-left: 20px;
 }
 
-.hero-pill {
+.swagger--hero-pill {
     font-size: 1rem;
     vertical-align: super;
     padding: 0.4rem 0.8em !important;
