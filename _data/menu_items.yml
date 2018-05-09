@@ -44,12 +44,13 @@ it:
     url: it/cosa-fare
   - title: Notizie
     url: news
-  - title: API
-    url: it/api
   - title: Chi siamo
     url: it/chi-siamo
   - title: FAQ
     url: it/faq
+  - title: API in primo piano
+    liClass: 'Megamenu-item Megamenu-item--new no-underline'
+    url: it/api
 
 en:
   - title: Projects
@@ -104,3 +105,6 @@ en:
     url: en/credits
   - title: FAQ
     url: en/faq
+  - title: API in primo piano
+    liClass: 'Megamenu-item Megamenu-item--new no-underline'
+    url: en/api
