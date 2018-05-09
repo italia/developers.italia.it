@@ -1,3 +1,9 @@
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml
+  name: RNDT geodati.gov.it REST API
+  abstract: REST search interface for the National Catalog for Spatial Data -  RNDT.
+  logo: http://placehold.it/600x300
+  tags: []
+  language: [it, en]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/fatture-e-corrispettivi.yaml
   name: API REST Dispositivi
   abstract: API per l'utilizzo dei servizi di gestione e trasmissione dei Corrispettivi.
