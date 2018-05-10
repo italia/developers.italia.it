@@ -26,7 +26,7 @@ class Hero extends Component {
 
     return (
       <div className="u-color-grey-50 u-posRelative swagger--hero">
-        <h1 className="u-text-h2 u-color-black u-padding-bottom-s">
+        <h1 className="u-text-h2 u-color-black u-padding-bottom-xs">
           {title}
           <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 swagger--hero-pill">
             {version}

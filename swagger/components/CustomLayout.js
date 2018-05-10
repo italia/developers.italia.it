@@ -1,6 +1,7 @@
 import React from "react";
 
 import Hero from "./Hero";
+import AuthorizeBtn from "./AuthorizeBtn";
 
 import "./CustomLayout.css";
 
@@ -38,7 +39,6 @@ class CustomLayout extends React.Component {
     }
 
     const securityDefinitions = specSelectors.securityDefinitions();
-    const AuthorizeBtn = getComponent("authorizeBtn", true);
 
     const Operations = getComponent("operations", true);
 
@@ -63,7 +63,15 @@ class CustomLayout extends React.Component {
 
         <div className="u-background-grey-15 u-layout-r-withGutter u-padding-bottom-xxl">
           <div className="swagger-ui u-padding-bottom-xs">
-            <div>{securityDefinitions ? <AuthorizeBtn /> : null}</div>
+            <div>
+              {securityDefinitions ? (
+                <AuthorizeBtn
+                  getComponent={getComponent}
+                  authActions={authActions}
+                  authSelectors={authSelectors}
+                />
+              ) : null}
+            </div>
 
             <Operations />
           </div>
