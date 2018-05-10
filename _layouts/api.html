@@ -13,7 +13,7 @@ layout: default
   {% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
-{% assign apis = site.data.apis %}
+{% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">

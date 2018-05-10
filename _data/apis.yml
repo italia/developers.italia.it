@@ -3,7 +3,7 @@
   abstract: REST search interface for the National Catalog for Spatial Data -  RNDT.
   logo: http://placehold.it/600x300
   tags: []
-  language: [it, en]
+  language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/fatture-e-corrispettivi.yaml
   name: API REST Dispositivi
   abstract: API per l'utilizzo dei servizi di gestione e trasmissione dei Corrispettivi.
@@ -15,10 +15,4 @@
   abstract: Dictionaries are versioned key-value store that you can retrieve via API.
   logo: http://placehold.it/600x300
   tags: []
-  language: [en, it]
-- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/ckan-v3-stubs/openapi-v2/api.daf.teamdigitale.it.yml
-  name: DAF CKAN API
-  abstract: Simple API to manage open data sets in api.daf.teamdigitale.it.
-  logo: http://placehold.it/600x300
-  tags: []
-  language: [en, it]
+  language: [it]
