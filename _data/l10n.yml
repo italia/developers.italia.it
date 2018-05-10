@@ -93,7 +93,14 @@ it:
         cie: Carta d'Identità Elettronica
         security: Security
         18app: 18App
-        
+
+    swagger:
+      url: "Base url"
+      intro: "Intro"
+      developer: "Erogatore"
+      license: "Licenza"
+      authorize: "Autorizza"
+      tos: "Termini di utilizzo"
 
 en:
   code: eng
@@ -189,3 +196,10 @@ en:
         design: Italia Design System
         18app: 18App
 
+    swagger:
+      url: "Base url"
+      intro: "Intro"
+      developer: "Developer"
+      license: "License"
+      authorize: "Authorize"
+      tos: "Terms of service"

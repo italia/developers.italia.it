@@ -35,13 +35,15 @@ class Hero extends Component {
         <p className="u-padding-bottom-xxl u-text-r-xxs">
           {servers &&
             servers.size && (
-              <span>[ Base url: {servers.first().get("url")} ]</span>
+              <span>
+                [ {`${window.i10n.swagger.url}`}: {servers.first().get("url")} ]
+              </span>
             )}
         </p>
 
         <p className="u-padding-bottom-xs">
           <strong className="u-color-black u-textUppercase u-text-r-xxs">
-            Intro
+            {`${window.i10n.swagger.intro}`}
           </strong>
         </p>
         <div className="u-padding-bottom-xl u-text-r-xxs u-lineHeight-l">
@@ -50,9 +52,11 @@ class Hero extends Component {
 
         <div className="Grid u-padding-bottom-xs">
           <div className="Grid-cell u-md-size6of12 u-lg-size4of12">
-            Developer
+            {`${window.i10n.swagger.developer}`}
           </div>
-          <div className="Grid-cell u-md-size6of12 u-lg-size4of12">Licenza</div>
+          <div className="Grid-cell u-md-size6of12 u-lg-size4of12">{`${
+            window.i10n.swagger.license
+          }`}</div>
         </div>
         <div className="Grid">
           <div className="Grid-cell u-md-size6of12 u-lg-size4of12">
@@ -61,7 +65,7 @@ class Hero extends Component {
           <div className="Grid-cell u-md-size6of12 u-lg-size4of12">
             {tos && (
               <a href={sanitizeUrl(tos)} target="_blank">
-                Terms of service
+                {`${window.i10n.swagger.tos}`}
               </a>
             )}
           </div>

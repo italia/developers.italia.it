@@ -1,8 +1,10 @@
 <div id="index" />
 
 <script>
-  // Populated with _includes
+  // These vars are populated with Jekyll's _includes
   var swaggerUrl = "{{ include.swaggerUrl }}";
+  var safeI10n = "{{ site.data.l10n.[active_lang].t | jsonify | escape }}";
+  var i10n = JSON.parse(safeI10n.replace(/&quot;/g, '"'));
 </script>
 
 <script src="index.js"></script>
