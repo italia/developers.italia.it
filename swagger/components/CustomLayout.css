@@ -1,7 +1,14 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #06c;
+}
+
 .swagger-ui .loading-container {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .swagger--head-card {
-    top: -120px;
+  top: -120px;
 }

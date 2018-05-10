@@ -60,7 +60,8 @@ exclude:
   - gulpfile.js
   - package.json
   - yarn.lock
-  - .cache
+  - swagger/.cache
+  - swagger/dist
 
 paginate: 10
 paginate_path: "/news/page:num/"

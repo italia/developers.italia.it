@@ -16,3 +16,9 @@
   logo: http://placehold.it/600x300
   tags: []
   language: [it]
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
+  name: API SIOPE
+  abstract: Regole tecniche per di colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE
+  logo: http://placehold.it/600x300
+  tags: []
+  language: [it]

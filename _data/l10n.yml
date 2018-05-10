@@ -95,6 +95,7 @@ it:
         18app: 18App
 
     swagger:
+      download: "Scarica"
       url: "Base url"
       intro: "Intro"
       developer: "Erogatore"
@@ -197,6 +198,7 @@ en:
         18app: 18App
 
     swagger:
+      download: "Download"
       url: "Base url"
       intro: "Intro"
       developer: "Developer"

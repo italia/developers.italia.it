@@ -7,7 +7,14 @@ import "./CustomLayout.css";
 // Create the layout component
 class CustomLayout extends React.Component {
   render() {
-    const { specSelectors, getComponent } = this.props;
+    const {
+      specSelectors,
+      getComponent,
+      authActions,
+      authSelectors
+    } = this.props;
+
+    const { download } = window.i10n.swagger;
 
     const isSpecEmpty = !specSelectors.specStr();
     const isLoading = specSelectors.loadingStatus() === "loading";

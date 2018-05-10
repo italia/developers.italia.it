@@ -4,4 +4,5 @@ _site
 /github/issues.json
 /_data/github_teams.json
 node_modules
-.cache
+swagger/.cache
+swagger/dist
