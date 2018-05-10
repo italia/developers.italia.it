@@ -62,6 +62,7 @@ exclude:
   - yarn.lock
   - swagger/.cache
   - swagger/dist
+  - swagger/node_modules
 
 paginate: 10
 paginate_path: "/news/page:num/"
