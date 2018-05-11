@@ -44,7 +44,7 @@ class Hero extends Component {
         <p className="u-padding-bottom-xxl u-text-r-xxs">
           {servers && servers.size ? (
             <span>
-              [ {`${url}`}: {servers.first().get("url")}} ]
+              [ {`${url}`}: {servers.first().get("url")} ]
             </span>
           ) : (
             "-"
