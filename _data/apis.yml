@@ -1,10 +1,9 @@
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml
   name: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
-  erogatore: AgID
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
   logo: http://geodati.gov.it/geoportale/templates/rndt/images/logo.png
   contact:
-    name: "Agenzia per l'Italia Digitale"
+    name: AgID
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/fatture-e-corrispettivi.yaml
@@ -17,28 +16,25 @@
   comingsoon: true
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/api.daf.teamdigitale.it.yaml
   name: Data & Analytics Framework CKAN API
-  erogatore: Team Digitale
   abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
   logo: https://teamdigitale.governo.it/images/loghi/demo.png
   contact:
-    name: Data Analytics Framework
+    name: Team Digitale
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
   name: SIOPE+
-  erogatore: Banca d'Italia
   abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+
   logo: http://www.bancaditalia.it/dotAsset/c8d68128-885c-42c9-b0aa-c9149a5e53b5
   contact:
-    name: Banca d'Italia - SIOPEPLUS
+    name: Banca d'Italia
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/muoversi2015.e015.servizirl.it.yaml
   name: Muoversi in Lombardia
-  erogatore: Regione Lombardia
   abstract: Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia
   logo: 
   contact:
-    name: Banca d'Italia - SIOPEPLUS
+    name: Regione Lombardia
   tags: []
   language: [it]
