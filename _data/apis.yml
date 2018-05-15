@@ -1,6 +1,6 @@
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml
-  name: RNDT geodati.gov.it REST API
-  abstract: REST search interface for the National Catalog for Spatial Data -  RNDT.
+  name: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
+  abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
   logo: http://placehold.it/600x300
   tags: []
   language: [it]
@@ -17,8 +17,8 @@
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
-  name: API SIOPE
-  abstract: Regole tecniche per di colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE
+  name: SIOPE+
+  abstract: Regole tecniche per di colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+
   logo: http://placehold.it/600x300
   tags: []
   language: [it]
