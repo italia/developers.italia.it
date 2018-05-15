@@ -10,9 +10,9 @@
   logo: http://placehold.it/600x300
   tags: []
   language: [it]
-- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/core-vocabularies-ref.yaml
-  name: Core Vocabularies API
-  abstract: Dictionaries are versioned key-value store that you can retrieve via API.
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/api.daf.teamdigitale.it.yaml
+  name: Data & Analytics Framework CKAN API
+  abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
   logo: http://placehold.it/600x300
   tags: []
   language: [it]
