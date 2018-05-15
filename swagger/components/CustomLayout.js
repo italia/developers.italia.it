@@ -5,6 +5,8 @@ import AuthorizeBtn from "./AuthorizeBtn";
 
 import "./CustomLayout.css";
 
+const isDev = () => process.env.NODE_ENV === "development";
+
 // Create the layout component
 class CustomLayout extends React.Component {
   render() {
@@ -42,9 +44,12 @@ class CustomLayout extends React.Component {
 
     const Operations = getComponent("operations", true);
 
+    // Won't be positioned while in development
+    const styles = isDev() ? "swagger--head-card" : "";
+
     return (
       <div className="u-posRelative u-background-grey-15">
-        <div className="u-posRelative u-layout-r-withGutter u-sizeFull swagger--head-card">
+        <div className={`u-layout-r-withGutter u-sizeFull ${styles}`}>
           <div className="Grid Grid--alignCenter">
             <div className="Grid-cell u-md-size12of12 u-lg-size12of12">
               <div className="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">

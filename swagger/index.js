@@ -5,13 +5,13 @@ import CustomLayoutPlugin from "./plugins/CustomLayoutPlugin";
 
 import "swagger-ui/dist/swagger-ui.css";
 
-// window.swaggerUrl is populated by Jekyll
+// window.swaggerUrl/window.i10n are populated by Jekyll
 let swaggerUrl = window.swaggerUrl;
 if (process.env.NODE_ENV === "development") {
   // Assign defaults while in "development"
   window.i10n = {
     swagger: {
-      download: "Scarica",
+      download: "Scarica OpenAPI",
       url: "Base url",
       intro: "Intro",
       developer: "Erogatore",
@@ -21,7 +21,28 @@ if (process.env.NODE_ENV === "development") {
     }
   };
   swaggerUrl =
-    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/core-vocabularies-ref.yaml";
+    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
+
+  const appendStyle = href => {
+    const link = document.createElement("link");
+    link.href = href;
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(link);
+  };
+
+  // Create a "seamless" iframe in order to ease development
+  const script = document.createElement("script");
+
+  script.onload = () => {
+    const child = window.seamless.connect({});
+
+    child.receive(function(data, event) {
+      data.css.map(href => appendStyle(href));
+    });
+  };
+  script.src = "https://unpkg.com/seamless@1.3.0/build/seamless.child.min.js";
+  document.body.appendChild(script);
 }
 
 SwaggerUI({
