@@ -40,6 +40,12 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
 - [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
 
+## App di esempio
+
+Ci sono due app di esempio, già perfettamente funzionanti, che contengono anche gli SDK utili agli sviluppatori che volessero realizzare le loro applicazioni per PagoPA.
+
+* [App di esempio iOS](https://github.com/italia/pagopa-ios-example)
+* [App di esempio Android](https://github.com/italia/pagopa-android-example)
 
 ## Newsletter
 
