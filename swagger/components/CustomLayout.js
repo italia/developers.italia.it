@@ -46,11 +46,13 @@ class CustomLayout extends React.Component {
     const Models = getComponent("Models", true);
 
     // Won't be positioned while in development
-    const styles = isDev() ? "swagger--head-card" : "";
+    const styles = isDev() ? "" : "swagger--head-card";
 
     return (
-      <div className="u-posRelative u-background-grey-15">
-        <div className={`u-layout-r-withGutter u-sizeFull ${styles}`}>
+      <div className="u-background-grey-15">
+        <div
+          className={`u-posRelative u-layout-r-withGutter u-sizeFull ${styles}`}
+        >
           <div className="Grid Grid--alignCenter">
             <div className="Grid-cell u-md-size12of12 u-lg-size12of12">
               <div className="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">
