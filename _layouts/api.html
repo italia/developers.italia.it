@@ -29,7 +29,10 @@ layout: default
 
         <div class="Grid Grid--equalHeight Grid--withGutter">
         {% for api in apis %}
-          {% assign url = api.name | datapage_url: "." %}
+          {% assign url = '' %}
+          {% if api.comingsoon != true %}
+            {% assign url = api.name | datapage_url: "." %}
+          {% endif %}
 
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
@@ -37,9 +40,10 @@ layout: default
               title=api.name
               text=api.abstract
               link=url
-              subtitle=''
-              alt=''
-              hasImage=false
+              subtitle=api.contact.name
+              alt=api.name
+              hasImage=api.logo
+              comingsoon=api.comingsoon
             %}
           </div>
 

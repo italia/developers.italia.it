@@ -15,15 +15,13 @@ export default class AuthorizeBtn extends React.Component {
     let showPopup = !!authSelectors.shownDefinitions();
     let isAuthorized = !!authSelectors.authorized().size;
 
-    const { authorize } = window.i10n.swagger;
-
     return (
       <div className="auth-wrapper">
         <button
           className="Button Button--round u-borderRadius-m u-text-r-xxs u-background-white u-color-50"
           onClick={this.onClick.bind(this)}
         >
-          {authorize} {" "}
+          {"Authorize "}
           <span
             className={`u-text-r-xxs Icon Icon-${
               isAuthorized ? "lock" : "unlock"

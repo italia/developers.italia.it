@@ -97,11 +97,8 @@ it:
     swagger:
       download: "Scarica OpenAPI"
       url: "Server"
-      intro: "Intro"
       developer: "Erogatore"
-      license: "Licenza"
-      authorize: "Autorizza"
-      tos: "Termini di utilizzo"
+      tos: "Condizioni di utilizzo"
 
 en:
   code: eng
@@ -200,8 +197,5 @@ en:
     swagger:
       download: "Download OpenAPI"
       url: "Server"
-      intro: "Intro"
       developer: "Developer"
-      license: "License"
-      authorize: "Authorize"
       tos: "Terms of service"

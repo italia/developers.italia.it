@@ -15,11 +15,8 @@ if (process.env.NODE_ENV === "development") {
     swagger: {
       download: "Scarica OpenAPI",
       url: "Server",
-      intro: "Intro",
       developer: "Erogatore",
-      license: "Licenza",
-      authorize: "Autorizza",
-      tos: "Termini di utilizzo"
+      tos: "Condizioni di utilizzo"
     }
   };
 
