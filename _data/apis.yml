@@ -33,3 +33,12 @@
     name: Banca d'Italia - SIOPEPLUS
   tags: []
   language: [it]
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/muoversi2015.e015.servizirl.it.yaml
+  name: Muoversi in Lombardia
+  erogatore: Regione Lombardia
+  abstract: Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia
+  logo: 
+  contact:
+    name: Banca d'Italia - SIOPEPLUS
+  tags: []
+  language: [it]
