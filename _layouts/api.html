@@ -34,6 +34,11 @@ layout: default
             {% assign url = api.name | datapage_url: "." %}
           {% endif %}
 
+          {% assign hasImage = false %}
+          {% if api.logo %}
+            {% assign hasImage = true %}
+          {% endif %}
+
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
             {% include card.html
               image=api.logo
@@ -42,7 +47,7 @@ layout: default
               link=url
               subtitle=api.contact.name
               alt=api.name
-              hasImage=api.logo
+              hasImage=hasImage
               comingsoon=api.comingsoon
             %}
           </div>
