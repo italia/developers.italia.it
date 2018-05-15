@@ -1,24 +1,21 @@
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml
   name: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
+  erogatore: AgID
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
-  logo: http://placehold.it/600x300
-  tags: []
-  language: [it]
-- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/fatture-e-corrispettivi.yaml
-  name: API REST Dispositivi
-  abstract: API per l'utilizzo dei servizi di gestione e trasmissione dei Corrispettivi.
-  logo: http://placehold.it/600x300
+  logo: http://geodati.gov.it/geoportale/templates/rndt/images/logo.png
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/api.daf.teamdigitale.it.yaml
   name: Data & Analytics Framework CKAN API
+  erogatore: Team Digitale
   abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
-  logo: http://placehold.it/600x300
+  logo: https://teamdigitale.governo.it/images/loghi/demo.png
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
   name: SIOPE+
+  erogatore: Banca d'Italia
   abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+
-  logo: http://placehold.it/600x300
+  logo: http://www.bancaditalia.it/dotAsset/c8d68128-885c-42c9-b0aa-c9149a5e53b5
   tags: []
   language: [it]
