@@ -1,7 +1,11 @@
+.swagger--hero .swagger--hero-header {
+  margin-right: 18rem;
+}
+
 .swagger--hero .Button {
   font-weight: bold;
   text-transform: initial;
-  top: 14px;
+  top: 1.4rem;
   right: 0;
 }
 
@@ -11,8 +15,17 @@
   padding: 0.4rem 0.8em !important;
 }
 
-.swagger--hero ol,
-.swagger--hero ul {
+.swagger--hero .renderedMarkdown h1,
+.swagger--hero .renderedMarkdown h2,
+.swagger--hero .renderedMarkdown h3,
+.swagger--hero .renderedMarkdown h4,
+.swagger--hero .renderedMarkdown h5,
+.swagger--hero .renderedMarkdown h6 {
+  margin-top: 2.4rem;
+}
+
+.swagger--hero .markdown ol,
+.swagger--hero .markdown ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 2.0rem;
 }

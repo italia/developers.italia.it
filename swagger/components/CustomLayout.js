@@ -43,6 +43,7 @@ class CustomLayout extends React.Component {
     const securityDefinitions = specSelectors.securityDefinitions();
 
     const Operations = getComponent("operations", true);
+    const Models = getComponent("Models", true);
 
     // Won't be positioned while in development
     const styles = isDev() ? "swagger--head-card" : "";
@@ -79,6 +80,8 @@ class CustomLayout extends React.Component {
             </div>
 
             <Operations />
+
+            <Models />
           </div>
         </div>
       </div>

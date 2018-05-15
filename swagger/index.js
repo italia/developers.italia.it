@@ -6,13 +6,15 @@ import CustomLayoutPlugin from "./plugins/CustomLayoutPlugin";
 import "swagger-ui/dist/swagger-ui.css";
 
 // window.swaggerUrl/window.i10n are populated by Jekyll
-let swaggerUrl = window.swaggerUrl;
 if (process.env.NODE_ENV === "development") {
   // Assign defaults while in "development"
+  window.swaggerUrl =
+    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
+
   window.i10n = {
     swagger: {
       download: "Scarica OpenAPI",
-      url: "Base url",
+      url: "Server",
       intro: "Intro",
       developer: "Erogatore",
       license: "Licenza",
@@ -20,8 +22,6 @@ if (process.env.NODE_ENV === "development") {
       tos: "Termini di utilizzo"
     }
   };
-  swaggerUrl =
-    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
 
   const appendStyle = href => {
     const link = document.createElement("link");
@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === "development") {
 
 SwaggerUI({
   dom_id: "#index",
-  url: swaggerUrl,
+  url: window.swaggerUrl,
   plugins: [CustomLayoutPlugin],
   layout: "CustomLayout"
 });

@@ -96,7 +96,7 @@ it:
 
     swagger:
       download: "Scarica OpenAPI"
-      url: "Base url"
+      url: "Server"
       intro: "Intro"
       developer: "Erogatore"
       license: "Licenza"
@@ -199,7 +199,7 @@ en:
 
     swagger:
       download: "Download OpenAPI"
-      url: "Base url"
+      url: "Server"
       intro: "Intro"
       developer: "Developer"
       license: "License"
