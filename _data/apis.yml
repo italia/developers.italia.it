@@ -3,13 +3,25 @@
   erogatore: AgID
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
   logo: http://geodati.gov.it/geoportale/templates/rndt/images/logo.png
+  contact:
+    name: "Agenzia per l'Italia Digitale"
   tags: []
   language: [it]
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/fatture-e-corrispettivi.yaml
+  name: API REST Dispositivi
+  abstract: API per l'utilizzo dei servizi di gestione e trasmissione dei Corrispettivi.
+  contact:
+    name:
+  tags: []
+  language: [it]
+  comingsoon: true
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/api.daf.teamdigitale.it.yaml
   name: Data & Analytics Framework CKAN API
   erogatore: Team Digitale
   abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
   logo: https://teamdigitale.governo.it/images/loghi/demo.png
+  contact:
+    name: Data Analytics Framework
   tags: []
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
@@ -17,5 +29,7 @@
   erogatore: Banca d'Italia
   abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+
   logo: http://www.bancaditalia.it/dotAsset/c8d68128-885c-42c9-b0aa-c9149a5e53b5
+  contact:
+    name: Banca d'Italia - SIOPEPLUS
   tags: []
   language: [it]
