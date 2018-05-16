@@ -24,7 +24,14 @@ class Hero extends Component {
 
     const terms = info.get("termsOfService");
 
-    const { download, url, intro, developer, tos } = window.i10n.swagger;
+    const {
+      download,
+      url,
+      intro,
+      channel,
+      developer,
+      tos
+    } = window.i10n.swagger;
 
     return (
       <div className="u-color-grey-50 u-posRelative swagger--hero">
@@ -58,29 +65,43 @@ class Hero extends Component {
         </div>
 
         <div className="Grid u-padding-bottom-m">
-          <div className="Grid-cell u-md-size6of12 u-lg-size5of12">
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             {`${developer}`}
           </div>
-          <div className="Grid-cell u-md-size6of12 u-lg-size5of12">
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
+            {`${channel}`}
+          </div>
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             {`${tos}`}
           </div>
         </div>
+
         <div className="Grid">
-          <div className="Grid-cell u-md-size6of12 u-lg-size5of12">
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             <div>
               {contactUrl ? (
                 <a href={sanitizeUrl(contactUrl)} target="_blank">
-                  {name}
+                  <img
+                    className="swagger--hero-contact-logo"
+                    src={window.contactLogo}
+                    alt={name}
+                  />
                 </a>
               ) : (
-                `${name}`
+                  <img className="swagger--hero-contact-logo" src={window.contactLogo} alt={name} />
               )}
             </div>
+          </div>
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             <div>
-              {email ? <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a> : ""}
+              {email ? (
+                <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a>
+              ) : (
+                ""
+              )}
             </div>
           </div>
-          <div className="Grid-cell u-md-size6of12 u-lg-size5of12">
+          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             {terms ? (
               <a href={sanitizeUrl(terms)} target="_blank">
                 {terms}

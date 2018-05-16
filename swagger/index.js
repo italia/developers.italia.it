@@ -10,12 +10,13 @@ if (process.env.NODE_ENV === "development") {
   // Assign defaults while in "development"
   window.swaggerUrl =
     "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
-
+  window.contactLogo = "https://i.imgur.com/OTNbMVs.png";
   window.i10n = {
     swagger: {
       download: "Scarica OpenAPI",
       url: "Server",
       developer: "Erogatore",
+      channel: "Contatto",
       tos: "Condizioni di utilizzo"
     }
   };

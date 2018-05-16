@@ -98,6 +98,7 @@ it:
       download: "Scarica OpenAPI"
       url: "Server"
       developer: "Erogatore"
+      channel: "Contatto"
       tos: "Condizioni di utilizzo"
 
 en:
@@ -197,5 +198,5 @@ en:
     swagger:
       download: "Download OpenAPI"
       url: "Server"
-      developer: "Developer"
+      channel: "Contact"
       tos: "Terms of service"

@@ -35,13 +35,13 @@ layout: default
           {% endif %}
 
           {% assign hasImage = false %}
-          {% if api.logo %}
+          {% if api.contact.logo %}
             {% assign hasImage = true %}
           {% endif %}
 
           <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include card.html
-              image=api.logo
+            {% include api-card.html
+              image=api.contact.logo
               title=api.name
               text=api.abstract
               link=url
