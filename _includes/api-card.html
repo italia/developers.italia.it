@@ -2,7 +2,7 @@
   {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {% if include.hasImage != false %}
-  <div class="u-sizeFull u-margin-top-s u-margin-right-xs u-margin-bottom-none u-margin-left-xl">
+  <div class="u-sizeFull u-margin-top-xl u-margin-right-xs u-margin-bottom-none u-margin-left-xl">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="" alt="{{ include.alt }}" />
   </div>
   {% endif %}
@@ -17,8 +17,14 @@
 
     <div class="u-sizeFull {% if include.flat != true %}u-padding-r-left u-padding-r-right{% endif %}">
       <h3 class="u-padding-bottom-xs">
-        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
+        {% if include.comingsoon != true %}
+          <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
           {{ include.title }}
+        {% else %}
+          <span class="u-textWeight-600 u-text-r-l u-color-grey-90">
+            {{ include.title }}
+          </span>
+        {% endif %}
 
           {% if include.comingsoon %}
           <div class="u-inlineBlock u-padding-left-xs">
@@ -27,7 +33,7 @@
             {{ t.coming_soon }}</span>
           </div>
           {% endif %}
-        </a>
+        {% if include.comingsoon != true %}</a>{% endif %}
       </h3>
 
       {% if include.author %}
@@ -53,10 +59,11 @@
     <div class="Grid u-sizeFull u-padding-r-top u-flexAlignSelfEnd
       {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
 
-        {% if include.hasMore != false %}
+        {% if include.hasMore != false and include.comingsoon != true %}
         <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
-          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
-          }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
+          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">
+            {{ t.home_projects_expand}}&nbsp;
+            <span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
           </a>
         </p>
         {% endif %}

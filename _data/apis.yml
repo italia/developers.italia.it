@@ -16,7 +16,7 @@
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siope/v1/siope.yaml
   name: SIOPE+
-  abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+
+  abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+.
   contact:
     name: Banca d'Italia
     logo: https://i.imgur.com/gX8UWPV.png
@@ -24,10 +24,10 @@
   language: [it]
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/muoversi2015.e015.servizirl.it.yaml
   name: Muoversi in Lombardia
-  abstract: Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia
+  abstract: Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia.
   contact:
     name: Regione Lombardia
-    logo: https://i.imgur.com/pGort7e.png
+    logo: https://i.imgur.com/Udl4aUj.png
   tags: []
   language: [it]
   comingsoon: true

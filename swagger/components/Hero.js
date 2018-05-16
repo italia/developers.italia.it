@@ -52,9 +52,9 @@ class Hero extends Component {
 
         <p className="u-padding-bottom-xxl u-text-r-xxs">
           {servers && servers.size ? (
-            <span>
+            <code>
               [ {`${url}`}: {servers.first().get("url")} ]
-            </span>
+            </code>
           ) : (
             "-"
           )}
@@ -64,7 +64,7 @@ class Hero extends Component {
           {description ? <Markdown source={description} /> : "-"}
         </div>
 
-        <div className="Grid u-padding-bottom-m">
+        <div className="Grid u-padding-bottom-m u-padding-top-xxl">
           <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
             {`${developer}`}
           </div>
@@ -88,7 +88,11 @@ class Hero extends Component {
                   />
                 </a>
               ) : (
-                  <img className="swagger--hero-contact-logo" src={window.contactLogo} alt={name} />
+                <img
+                  className="swagger--hero-contact-logo"
+                  src={window.contactLogo}
+                  alt={name}
+                />
               )}
             </div>
           </div>
