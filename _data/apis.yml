@@ -30,4 +30,12 @@
     logo: https://i.imgur.com/Udl4aUj.png
   tags: []
   language: [it]
+- openapi:
+  name: Opendata Trasporti
+  abstract: Portale di OpenData del Ministero delle Infrastrutture e dei Trasporti.
+  contact:
+    name: Ministero delle Infrastrutture e dei Trasporti
+    logo: 
+  tags: []
+  language: [it]
   comingsoon: true
