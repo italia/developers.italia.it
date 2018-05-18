@@ -37,7 +37,7 @@ class Hero extends Component {
       <div className="u-color-grey-50 u-posRelative swagger--hero">
         <h1 className="u-text-h2 u-color-black u-padding-bottom-xs swagger--hero-header">
           {title}
-          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 swagger--hero-pill">
+          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 u-margin-left-xs swagger--hero-pill">
             {version}
           </span>
         </h1>
