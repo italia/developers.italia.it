@@ -78,7 +78,7 @@ owner_short: AgID
 owner_full: AgID
 owner_link: http://www.agid.gov.it
 logo: /assets/icons/logo-it.png
-owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
+owner_logo: /assets/images/agid-logo-bb.svg
 partner_short: Team Digitale
 partner_full: Team per la Trasformazione Digitale
 partner_link: https://teamdigitale.governo.it
