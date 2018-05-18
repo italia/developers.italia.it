@@ -1,0 +1,21 @@
+---
+layout: default
+lang: it
+---
+
+{% include setlang.html %}
+
+{% comment %}
+
+  {% include breadcrumbs.html %}
+  {% include share.html %}
+
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
+
+{% endcomment %}
+
+<hr class="Separator-room u-background-50" />
+<hr class="Separator-room u-background-50" />
+
+{% include swagger.html swaggerUrl=page.openapi logo=page.contact.logo %}

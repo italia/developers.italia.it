@@ -1,0 +1,20 @@
+{
+  "name": "swagger-custom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
+    "start": "parcel swagger.html",
+    "build": "npx parcel build swagger.html --public-url /assets/swagger --out-dir ../_includes --no-source-maps",
+    "prebuild": "npm run prestart",
+    "postbuild": "rsync --remove-source-files --exclude='*.html' --exclude='node_modules' ../_includes/swagger.* ../assets/swagger"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@braintree/sanitize-url": "^2.1.0",
+    "react": "^15.6.2",
+    "swagger-ui": "^3.14.0"
+  }
+}

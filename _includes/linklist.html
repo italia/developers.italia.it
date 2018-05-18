@@ -8,7 +8,7 @@
 
   {% assign navurl = page.url | remove: 'index.html' %}
   {% for item in items %}
-  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}">
+  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}" >
 
       {% if item.url == "#" or item.url contains '//' %}
         {% assign _url = item.url %}

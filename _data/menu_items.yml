@@ -48,6 +48,9 @@ it:
     url: it/chi-siamo
   - title: FAQ
     url: it/faq
+  # - title: API
+  #   liClass: 'Megamenu-item Megamenu-item--new no-underline'
+  #   url: it/api
 
 en:
   - title: Projects
@@ -102,3 +105,6 @@ en:
     url: en/credits
   - title: FAQ
     url: en/faq
+  # - title: API
+  #   liClass: 'Megamenu-item Megamenu-item--new no-underline'
+  #   url: en/api

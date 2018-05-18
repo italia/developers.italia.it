@@ -37,7 +37,7 @@ github_blacklist_repos: []
 github_issues_types: ['bug','enhancement','new project']
 github_tech_list: [
   'angular', 'react', 'design', 'html', 'arduino', 'bootstrap', 'frontend',
-  'perl','python', 'cpp', 'scala', 'php', 'csharp', 'java', 'android', 'ios', 'dotnet', 
+  'perl','python', 'cpp', 'scala', 'php', 'csharp', 'java', 'android', 'ios', 'dotnet',
   'wordpress', 'metabase', 'ansible', 'docker', 'magento', 'joomla', 'django']
 
 # Build settings
@@ -60,6 +60,9 @@ exclude:
   - gulpfile.js
   - package.json
   - yarn.lock
+  - swagger/.cache
+  - swagger/dist
+  - swagger/node_modules
 
 paginate: 10
 paginate_path: "/news/page:num/"
@@ -108,3 +111,18 @@ defaults:
       type: "projects"
     values:
       toc: true
+
+page_gen:
+  - index_files: false
+    name: name
+    data: apis
+    template: api-details
+    dir: it/api
+    filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: name
+    data: apis
+    template: api-details
+    dir: en/api
+    filter_condition: "record['language'].include? 'en'"

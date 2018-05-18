@@ -1,0 +1,19 @@
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl">
+  <!-- Create a "seamless" iframe in order to ease development -->
+  <iframe id="swagger" src="http://localhost:1234/"></iframe>
+</div>
+
+<script src="https://unpkg.com/seamless@1.3.0/build/seamless.parent.min.js"></script>
+<script>
+  window.onload = function () {
+    // Turns the iframe into a seamless iframe.
+    var parent = window.seamless(document.getElementById('swagger'), {
+      loading: "Per utilizzare questa sezione segui le istruzioni contenute in `swagger/README.md`"
+    });
+    var css = Array.from(document.querySelectorAll("link[rel='stylesheet']")).map(el => el.href)
+
+    parent.send({
+      css: css
+    });
+  };
+</script>

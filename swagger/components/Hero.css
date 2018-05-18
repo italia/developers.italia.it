@@ -1,0 +1,41 @@
+.swagger--hero .swagger--hero-header {
+  margin-right: 18rem;
+}
+
+.swagger--hero .Button {
+  font-weight: bold;
+  text-transform: initial;
+  top: 1.4rem;
+  right: 0;
+}
+
+.swagger--hero-pill {
+  font-size: 1rem;
+  vertical-align: super;
+  padding: 0.4rem 0.8em !important;
+}
+
+.swagger--hero .renderedMarkdown h1,
+.swagger--hero .renderedMarkdown h2,
+.swagger--hero .renderedMarkdown h3,
+.swagger--hero .renderedMarkdown h4,
+.swagger--hero .renderedMarkdown h5,
+.swagger--hero .renderedMarkdown h6 {
+  margin-top: 2.4rem;
+  color: black;
+}
+
+.swagger--hero .renderedMarkdown ol,
+.swagger--hero .renderedMarkdown ul {
+  list-style: disc;
+  padding-left: 2.0rem;
+}
+
+.swagger--hero .swagger--hero-contact-logo {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+}
+.swagger--hero .swagger--hero-contact-logo:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
