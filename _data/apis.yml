@@ -39,3 +39,11 @@
   tags: []
   language: [it]
   comingsoon: true
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/cercaareeprotette.e015.servizirl.it.yaml
+  name: Aree Protette Lombardia
+  abstract: Informazioni sui Parchi, riserve e monumenti naturali della Regione Lombardia.
+  contact:
+    name: Regione Lombardia
+    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/cercaareeprotette.e015.servizirl.it.png
+  tags: []
+  language: [it]
