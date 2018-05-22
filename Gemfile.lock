@@ -24,7 +24,7 @@ GEM
     hawkins (2.0.5)
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
-    html-proofer (3.8.0)
+    html-proofer (3.9.0)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
       colorize (~> 0.8)
