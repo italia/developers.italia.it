@@ -31,15 +31,9 @@ it:
     - title: Docs
       image: /assets/icons/tools/decorative_outlined_docs.svg
       url: https://docs.developers.italia.it
-    - title: API Sandbox
+    - title: API
       image: /assets/icons/tools/decorative_outlined_api.svg
-      markup_post: >
-        <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-          <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-            in arrivo
-          </span>
-        </div>
+      url: it/api
   - title: Cosa fare
     url: it/cosa-fare
   - title: Notizie
@@ -88,15 +82,9 @@ en:
       - title: Docs
         image: /assets/icons/tools/decorative_outlined_docs.svg
         url: https://docs.developers.italia.it
-      - title: API Sandbox
+      - title: API
         image: /assets/icons/tools/decorative_outlined_api.svg
-        url: /
-        markup_post: >
-          <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-50 u-color-white u-text-xxs">
-              coming soon
-            </span>
-          </div>
+        url: it/api
   - title: To do
     url: en/to-do
   - title: News
@@ -107,4 +95,4 @@ en:
     url: en/faq
   - title: API
     liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: en/api/
+    url: it/api/
