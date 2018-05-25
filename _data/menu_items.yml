@@ -50,7 +50,7 @@ it:
     url: it/faq
   - title: API
     liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: it/api/
+    url: it/api
 
 en:
   - title: Projects
@@ -107,4 +107,4 @@ en:
     url: en/faq
   - title: API
     liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: en/api/
+    url: en/api
