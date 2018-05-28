@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "bootstrap-italia": "*",
+        "jquery": "^3.3.1",
+        "pickadate": "^3.5.6",
+        "popper.js": "^1.14.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/italia/developers.italia.it"
+    },
+    "license": "See license in LICENSE file"
+}
