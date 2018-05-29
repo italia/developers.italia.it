@@ -1,3 +1,4 @@
+{% assign buildTime =  site.time | date: '%Y%m%d%H%M' %}
 <!DOCTYPE html>
 <!--[if IE 8]><html lang="{{ active_lang }}" class="no-js ie89 ie8"><![endif]-->
 <!--[if IE 9]><html lang="{{ active_lang }}" class="no-js ie89 ie9"><![endif]-->
@@ -17,8 +18,6 @@
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
-
   <script type="text/javascript">
     WebFontConfig = {
       google: {
@@ -35,12 +34,8 @@
     })();
   </script>
 
-  <!-- include html5shim per Explorer 8 -->
-  <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
 
-  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/vendor.css' | relative_url }}">
-  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build.css' | relative_url }}">
-  <link media="all" rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link href="{{ site.baseurl }}/assets/main.css?{{ buildTime }}" rel="stylesheet">
 
   <script src="{{ '/assets/toolkit/vendor/jquery.min.js' | relative_url }}"></script>
 
@@ -56,4 +51,4 @@
   <meta name="theme-color" content="{{ site.theme_color }}">
 
 </head>
-<body class="{{ site.css_theme }} layout-{{ page.layout }}">
+<body class="layout-{{ page.layout }}">

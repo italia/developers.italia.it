@@ -1,37 +1,37 @@
-<header class="Header u-hiddenPrint">
-
-  <div class="Header-banner u-background-50">
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 p-2">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
-      <div class="Header-owner__institutions">
-      <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
+      <div class="Header-owner__institutions container">
+      <div class="d-inline-block d-md-none d-lg-none">
           <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
             aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
               {% include slim_icon.html %}
           </a>
-        </div>
-      <a href="{{ site.owner_link }}">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
+      </div>
+      
+        <a href="{{ site.partner_link }}">
+          <span class="d-inline-block d-md-none d-lg-none  white-color">
+            {{ site.partner_short }}
+          </span>
+          <span class="d-sm-none d-md-inline-block white-color">
+            {{ site.partner_short }}
+          </span>
+        </a>
+        <span class="white-color">&nbsp;+&nbsp;</span>
+        <a href="{{ site.owner_link }}">
+          <span class="d-inline-block d-md-none d-lg-none white-color">
             {{ site.owner_short }}
           </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+          <span class="d-sm-none d-md-inline-block white-color">
             {{ site.owner_full }}
           </span>
         </a>
-        <span class="u-color-white">&nbsp;+&nbsp;</span>
-        <a href="{{ site.partner_link }}">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
-            {{ site.partner_short }}
-          </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-            {{ site.partner_short }}
-          </span>
-        </a>
     </div>
-    {% include slim_header.html %}
+    
     </div>
   </div>
 
-  <div class="Header-navbar u-background-50">
+  <div class="Header-navbar container">
     <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
       <div class="Header-logo Grid-cell" aria-hidden="true">
         <a href="{{ '/' | relative_url }}" tabindex="-1">

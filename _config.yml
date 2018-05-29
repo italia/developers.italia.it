@@ -126,3 +126,9 @@ page_gen:
     template: api-details
     dir: en/api
     filter_condition: "record['language'].include? 'en'"
+
+sass:
+    load_paths:
+      - _sass
+      - node_modules
+    sass_dir: /
