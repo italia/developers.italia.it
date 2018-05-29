@@ -13,6 +13,7 @@ jobs:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
+      - run: npm install .
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
       - run: ./_buildscripts/build-swagger.sh
@@ -31,6 +32,7 @@ jobs:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
+      - run: npm install .
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
       - run: ./_buildscripts/build-swagger.sh
