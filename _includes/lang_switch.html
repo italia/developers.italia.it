@@ -1,15 +1,15 @@
 {% if site.data.l10n.size > 1 %}
-<li>
-<a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max u-inlineBlock">
-    <span class="u-hiddenVisually">{{ t.active_lang }}:</span>
+<div class="Header-lang_switch float-right">
+<span>
+<a href="#languages" data-menu-trigger="languages" class="Header-language d-inline-block text-white">
+    <span class="sr-only">{{ t.active_lang }}:</span>
+    <span class="icon it-expand"></span>
     <span class="">{{ site.data.l10n[active_lang].code | upcase }}</span>
-    <span class="Icon Icon-expand u-padding-left-xs"></span>
   </a>
-</li>
+</span>
 
-  <div id="languages" data-menu class="Dropdown-menu Header-language-other u-jsVisibilityHidden u-nojsDisplayNone">
-    <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
-    <ul class="Linklist">
+  <div id="languages" class="">
+    <ul class="list-unstyled">
       {% for lang in site.data.l10n %}
       <li><a href="{{ '/' | append: lang[0] | relative_url }}"
         class="u-padding-r-all"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span></a></li>
@@ -17,5 +17,5 @@
     </ul>
   </div>
 
-
+</div>
 {% endif %}
