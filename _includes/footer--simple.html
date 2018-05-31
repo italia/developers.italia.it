@@ -32,7 +32,7 @@
       <ul class="Footer-socialIcons">
         {% for social in site.data.social %}
           <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-            <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+            <span class="sr-only">{{ social[1].name | capitalize }}</span></a></li>
         {% endfor %}
       </ul>
     </div>
