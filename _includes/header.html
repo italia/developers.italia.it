@@ -1,5 +1,5 @@
 <header class="primary-bg">
-  <div class="Header-banner primary-bg-a7 p-2">
+  <div class="Header-banner primary-bg-a7">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
       <div class="Header-owner__institutions container">
       <div class="d-inline-block d-md-none d-lg-none">
@@ -26,32 +26,33 @@
             {{ site.owner_full }}
           </span>
         </a>
+        {% include lang_switch.html %}
     </div>
     
     </div>
   </div>
 
-  <div class="Header-navbar container">
-    <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
-      <div class="Header-logo Grid-cell" aria-hidden="true">
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-logo mr-3" aria-hidden="true">
         <a href="{{ '/' | relative_url }}" tabindex="-1">
           <img src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
         </a>
       </div>
 
-      <div class="Header-title Grid-cell">
+      <div class="Header-title mr-auto">
         <h1 class="Header-titleLink">
           <a href="{{ '/' | relative_url }}">{{ t.site_title | default: site.title | escape }}
             {% if site.pill %}
-              <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
-              <span class="u-color-20 u-text-xxs
-              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>{%
-                endif %}<br><small>{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
+              <span class="badge badge-pill badge-primary primary-bg-a7">{{ site.pill }}</span>{%
+                endif %}
+            <span class="d-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
+          </a>
         </h1>
       </div>
 
       {% if include.hasSearch %}
-      <div class="Header-searchTrigger Grid-cell">
+      <div class="Header-searchTrigger d-inline-block d-md-none">
         <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search u-background-50" title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
         </button>
         <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden u-background-50" title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
@@ -59,26 +60,23 @@
       </div>
       {% endif %}
 
-      <div class="Header-utils Grid-cell">
-        <div class="Header-social Headroom-hideme">
-          <p>{{ t.follow_us | capitalize }}</p>
-          <ul class="Header-socialIcons">
+      <div class="Header-utils mr-2 mr-md-4">
+        <div class="Header-social ">
+          <span class="text-white mr-3">{{ t.follow_us | capitalize }}</span>
+          <ul class="Header-socialIcons d-inline-block list-inline mb-0">
             {% for social in site.data.social %}
-            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-                <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+            <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="it-{{ social[0] }} icon"></span></a></li>
             {% endfor %}
           </ul>
         </div>
-
-        {% if include.hasSearch %}
-        <div class="Header-search" id="header-search">
+      </div>
+      {% if include.hasSearch %}
+        <div class="Header-search ml-4 mb-0" id="header-search">
           {% include search_form.html %}
         </div>
-        {% endif %}
+      {% endif %}
 
-      </div>
-
-      <div class="Header-toggle Grid-cell">
+      <div class="Header-toggle d-inline-block d-md-none">
         <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
           <span class="Hamburger-toggle" role="presentation"></span>
           <span class="Header-toggleText" role="presentation">Menu</span>

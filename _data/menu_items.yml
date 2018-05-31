@@ -1,56 +1,20 @@
 it:
-  - title: Progetti
+  - title: Piattaforme
     url: '#'
-    liClass: 'Megamenu-item Megamenu-item--vert'
-    subitems:
-    - title: Identità digitale (SPID)
-      url: /it/spid
-    - title: Data & Analytics Framework
-      url: /it/daf
-    - title: Anagrafe Nazionale (ANPR)
-      url: /it/anpr
-    - title: Carta di Identità (CIE)
-      url: /it/cie
-    - title: PagoPA
-      url: /it/pagopa
-    - title: Tutti i progetti
-      url: /it/progetti
-      liClass: 'Megamenu-showAll'
-  - title: Strumenti
+  - title: Software
     url: '#'
-    subitems:
-    - title: GitHub
-      image: /assets/icons/tools/decorative_outlined_github.svg
-      url: https://github.com/italia
-    - title: Slack
-      image: /assets/icons/tools/decorative_outlined_slack.svg
-      url: https://slack.developers.italia.it/
-    - title: Forum
-      image: /assets/icons/tools/decorative_outlined_discourse.svg
-      url: https://forum.italia.it
-    - title: Docs
-      image: /assets/icons/tools/decorative_outlined_docs.svg
-      url: https://docs.developers.italia.it
-    - title: API Sandbox
-      image: /assets/icons/tools/decorative_outlined_api.svg
-      markup_post: >
-        <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-          <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-            in arrivo
-          </span>
-        </div>
-  - title: Cosa fare
-    url: it/cosa-fare
-  - title: Notizie
-    url: news
+  - title: API
+    url: it/api
   - title: Chi siamo
     url: it/chi-siamo
-  - title: FAQ
-    url: it/faq
-  - title: API
-    liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: it/api
+  - title: Come lo uso
+    url: '#'
+  - title: Come partecipo
+    url: '#'
+  - title: News
+    url: news
+  - title: Contatti
+    url: '#'
 
 en:
   - title: Projects

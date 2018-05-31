@@ -7,7 +7,7 @@
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" title=""
           class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
           ><span class="Icon Icon-{{ social[0] }}"></span>
-          <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
+          <span class="sr-only">{{ social[1].name | capitalize }}</span>
         </a>
       </li>
       {% endif %}

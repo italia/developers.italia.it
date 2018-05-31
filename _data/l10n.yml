@@ -18,12 +18,12 @@ it:
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
     scrolltop_label: torna all'inizio dei contenuti
-    search_form_label: Vai a progetto...
+    search_form_label: Cerca
     search_form_off: disattiva il form di ricerca
     search_form_on: attiva il form di ricerca
     search_form_start: avvia la ricerca
-    site_subtitle: La comunità italiana degli sviluppatori di servizi pubblici
-    site_title: /developers
+    site_subtitle: Sviluppiamo i servizi pubblici
+    site_title: Developers Italia
     share_msg: condividi
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
@@ -121,12 +121,12 @@ en:
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
     scrolltop_label: back to contents
-    search_form_label: Project quicksearch...
+    search_form_label: Search
     search_form_off: exit search form
     search_form_on: enter search form
     search_form_start: start searching
-    site_subtitle: The Italian community of developers of public services
-    site_title: /developers
+    site_subtitle: We develop public services
+    site_title: Developers Italia
     share_msg: share
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation

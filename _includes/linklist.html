@@ -3,12 +3,12 @@
 {% if include._internal %}
   <ul>
 {% else %}
-  <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
+  <ul class="Linklist Linklist--padded-top d-flex flex-row list-unstyled {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
 {% endif %}
 
   {% assign navurl = page.url | remove: 'index.html' %}
   {% for item in items %}
-  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}" >
+  	<li class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}" >
 
       {% if item.url == "#" or item.url contains '//' %}
         {% assign _url = item.url %}
