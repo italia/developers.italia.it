@@ -131,4 +131,5 @@ sass:
     load_paths:
       - _sass
       - node_modules
+      - assets
     sass_dir: /
