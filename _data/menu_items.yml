@@ -17,58 +17,19 @@ it:
     url: '#'
 
 en:
-  - title: Projects
+  - title: Platforms
     url: '#'
-    subitems:
-    - title: Top projects
-      url: /en/projects
-      subitems:
-      - title: SPID
-        url: /en/spid
-      - title: DAF
-        url: /en/daf
-      - title: ANPR
-        url: /en/anpr
-      - title: CIE
-        url: /en/cie
-      - title: All projects
-        url: /en/projects
-  - title: Tools
+  - title: Softwares
     url: '#'
-    subitems:
-    - title: Tools
-      url: '#'
-      layout: horizontal
-      subitems:
-      - title: GitHub
-        image: /assets/icons/tools/decorative_outlined_github.svg
-        url: https://github.com/italia
-      - title: Slack
-        image: /assets/icons/tools/decorative_outlined_slack.svg
-        url: https://slack.developers.italia.it/
-      - title: Forum
-        image: /assets/icons/tools/decorative_outlined_discourse.svg
-        url: https://forum.italia.it
-      - title: Docs
-        image: /assets/icons/tools/decorative_outlined_docs.svg
-        url: https://docs.developers.italia.it
-      - title: API Sandbox
-        image: /assets/icons/tools/decorative_outlined_api.svg
-        url: /
-        markup_post: >
-          <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-50 u-color-white u-text-xxs">
-              coming soon
-            </span>
-          </div>
-  - title: To do
-    url: en/to-do
-  - title: News
-    url: news
-  - title: Credits
-    url: en/credits
-  - title: FAQ
-    url: en/faq
   - title: API
-    liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: en/api
+    url: it/api
+  - title: Who we are
+    url: '#'
+  - title: How use it
+    url: '#'
+  - title: How get involved
+    url: '#'
+  - title: News
+    url: '/en/news'
+  - title: Contacts
+    url: '#'
