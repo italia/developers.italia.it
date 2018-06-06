@@ -171,8 +171,8 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="relatedSoftwares">
-    <h2> {{ t.software.related_softwares }} </h2>
+  <div class="interestRelatedSoftwares">
+    <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row justify-content-sm-center">
       {% for item in page.relatedSoftwares limit : 4 %}
         <div class="col-sm-3 relate">
@@ -197,8 +197,6 @@ layout: default
 <div class="detail-sheet">
   <div class="container sheet">
     <div class="top">
-      <div class="horizontal"></div>
-      <div class="angle"></div>
     </div>
     <div class="content-sheet">
       <div class="row justify-content-sm-center ">
@@ -370,7 +368,7 @@ layout: default
               <p class="title">{{ t.software.extende_description }}</p>
               <p>{{ page.description[active_lang_extended].longDescription }}</p>
               <hr>
-              <div class="software-relate">
+              <div class="relatedSoftwares">
                 <p>
                   <span class="label">{{ t.software.related_software }}</span>
                   {% for item in page.softwareType.isRelatedTo %}
