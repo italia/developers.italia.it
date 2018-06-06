@@ -1,2 +1,3 @@
 {% assign active_lang = page.lang | default: layout.lang | default: site.lang | default: "en" %}
 {% assign t = site.data.l10n[active_lang].t %}
+{% assign active_lang_extended = site.data.l10n[active_lang].code %}

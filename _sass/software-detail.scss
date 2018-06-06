@@ -1,0 +1,231 @@
+.page-software-detail {
+  margin-top: 5rem;
+  .intro-name {
+    img {
+      margin-right: 1em;
+      @extend .align-baseline;
+    }
+    h1 {
+      @extend .align-baseline;
+      .badge {
+        font-size: 0.7rem;
+        font-weight: 300;
+        @extend .align-top;
+      }
+    }
+    .abstract-software {
+      h2 {
+        font-weight: 300;
+      }
+      h3 {
+        font-weight: 300;
+        font-family: serif;
+        color: gray;
+      }
+      .tag {
+        margin: 2em 0 3em;
+      }
+      .legal-main-info {
+        .label {
+          color: gray;
+          @extend .d-block;
+        }
+      }
+    }
+  }
+  .drops-details {
+    @include media-breakpoint-up(sm) {
+      border-left: 0.5em solid #e8f1fa;
+      padding-left: 2em;
+      margin-top: 2em;
+    }
+    .vitality-score {
+      .score {
+        color: $primary;
+        font-size: 2.4em;
+        line-height: 1em;
+        font-weight: 500;
+        margin-bottom: 0;
+        @extend .d-inline-block;
+        @extend .align-middle;
+      }
+      #chart_div {
+        @extend .align-middle;
+        @extend .d-inline-block;
+      }
+      .status-developement {
+        margin-top: 1.5em;
+        .status {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+    .goto {
+      margin-top: 3em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+.media-gallery {
+  overflow-x: scroll;
+  @extend .d-block;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  .card {
+    img {
+      @extend .img-fluid;
+      @extend .w-100;
+      overflow: hidden;
+      max-height: 570px;
+    }
+  }
+}
+.functionality {
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .variant {
+    h4 {
+      text-transform: uppercase;
+    }
+    .function-list {
+       @include media-breakpoint-up(sm) {
+        border-left: 0.2em solid #e8f1fa;
+        padding-left: 2em;
+        margin-top: 2em;
+      }
+    }
+  }
+}
+.relatedSoftwares {
+  margin: 2em 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .relate-body {
+    margin: 1em 0;
+    font-weight: 700;
+  }
+  .relate-title {
+    font-size: 1.5em;
+  }
+  .relate-link {
+    text-transform: uppercase;
+  }
+}
+.tags-relate {
+  a {
+    margin: 0 0 0 0.8em;
+  }
+}
+.detail-sheet {
+  margin-top: 3em;
+  padding-top: 3em;
+  background: -moz-linear-gradient(top, #1e5799 26%, #ffffff 26%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1e5799 26%,#ffffff 26%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1e5799 26%,#ffffff 26%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  .sheet {
+    .top {
+      background: white;
+      position: relative;
+      padding-top: 110px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top: 110px solid #1e5799;
+        border-left: 110px solid #eee;
+      }
+      // z-index: -1;
+      // font-size: 0;
+      // .horizontal {
+      //   width: 90%;
+      //   z-index: -2;
+      //   background: white;
+      //   height: 162px;
+      //   display: inline-block;
+      // }
+      // .angle {
+      //   width: 10%;
+      //   transform: skewY(45deg);
+      //   transform-origin: 0 0;
+      //   background: #eee;
+      //   height: 162px;
+      //   display: inline-block;
+      // }
+    }
+    .content-sheet{
+      // transform: translateY(-48px);
+      box-shadow: 0px 1px 40px rgba(0,0,0, 0.3);
+      width: 100%;
+      background: #fff;
+    }
+  }
+  .heading-title {
+    p {
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+    .title {
+      margin-bottom: 2em;
+      h2 {
+        font-weight: 300;
+        &.h1 {
+          font-weight: 700;
+          .badge {
+            font-size: 0.7rem;
+            font-weight: 300;
+            @extend .align-top;
+          }
+        }
+      }
+    }
+  }
+  .heading-maintenance,
+  .heading-legal-dependencies {
+    border-top: 1px solid #dee2e6;
+    padding: 2em 0;
+    p {
+      .label {
+        color: gray;
+        @extend .d-block;
+      }
+      .contact, a {
+        @extend .d-block;
+      }
+    }
+  }
+  .main {
+    border-top: 1px solid #dee2e6;
+    padding: 4em 0 2em;
+    p {
+      &.title {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    hr {
+      border-top: 1px solid #dee2e6;
+      width: 30%;
+      margin: 4em 0;
+    }
+    .other-detail,
+    .software-relate {
+      padding-bottom: 2em;
+      p {
+        .label {
+          color: gray;
+          @extend .d-block;
+        }
+        .contact, a {
+          @extend .d-block;
+        }
+      }
+    }
+  }
+}

@@ -101,6 +101,45 @@ it:
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
 
+    software:
+      variant_by: Variante di
+      published_by: Pubblicato da
+      software_maintained_by: Software mantenuto da
+      technical_contact: Contatto tecnico
+      technical_detail: Dettagli tecnici
+      vitality: Vitalità
+      development_status: Stato di sviluppo
+      goToDocumentation: Vai alla documentazione
+      goToCode: Vai al codice
+      goToRoadmap: Vai alla roadmap
+      functionality: Funzionalità del software
+      functinality_this_variant: Funzionalità di questa variante
+      functinality_other_variant: Funzionalità di altre varianti
+      used_by: Usata da
+      administration: amministrazione
+      administrations: amministrazioni
+      variants_present: varianti presenti
+      variant_present: variante presente
+      show_all: Mostra tutte
+      interest_related_softwares: Altri software che potrebbero interessarti
+      read_more: leggi di più
+      detailed_info: Informazioni di dettaglio
+      maintainance_type: Tipo di manutenzione
+      contract_with: Contratto con
+      last_release: Ultimo rilascio
+      license: Licenza
+      platforms: Piattaforme
+      dependencies_list: Lista dipendenze
+      enabling_platforms: Piattaforme abilitanti
+      services_on: Servizi su
+      until: fino al
+      extende_description: Descrizione estesa
+      related_software: Software correlati
+      main_audience: Audience principale
+      supported_languages: Lingue supportate
+      awards: Premi
+      api_documentation: Documentazione API
+
 en:
   code: eng
   name: english
@@ -200,3 +239,42 @@ en:
       url: "Server"
       channel: "Contact"
       tos: "Terms of service"
+
+    software:
+      variant_by: Variant of
+      published_by: Published by
+      software_maintained_by: Software maintained by
+      technical_contact: Technical contact
+      technical_detail: Technical detail
+      vitality: Vitality
+      goToDocumentation: Go to the documentation
+      goToCode: Go to the code
+      goToRoadmap: Go to the roadmap
+      functionality: Software functionality
+      functinality_this_variant: Functionality of this variant
+      functinality_other_variant: Functionality of others variants
+      used_by: Used by
+      development_status: Development status
+      administration: administration
+      administrations: aadministrations
+      variants_present: variants present
+      variant_present: variant present
+      show_all: Show all
+      interest_related_softwares: Other software that may interest you
+      read_more: read more
+      detailed_info: detailed information
+      maintainance_type: Type of maintenance
+      contract_with: Contract with
+      last_release: Last release
+      license: License
+      platforms: Platforms
+      dependencies_list: List of dependencies
+      enabling_platforms: Enabling platforms
+      services_on: Services on
+      until: until the
+      extende_description: Extended description
+      related_softwares: Related softwares
+      main_audience: Main audience
+      supported_languages: Supported languages
+      awards: Awards
+      api_documentation: Api documentation
