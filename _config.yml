@@ -127,6 +127,22 @@ page_gen:
     dir: en/api
     filter_condition: "record['language'].include? 'en'"
 
+  - index_files: false
+    name: name
+    data: softwares
+    template: software-details
+    lang: it
+    dir: it/software
+    # filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: name
+    data: softwares
+    template: software-details
+    lang: en
+    dir: en/software
+    # filter_condition: "record['language'].include? 'en'"
+
 sass:
     load_paths:
       - _sass

@@ -1,0 +1,4 @@
+{% assign label_tags = include.label %}
+{% assign software_tags = site.data.software_tags[label_tags] %}
+
+<a href="#" class="btn btn-outline-primary"> {% if software_tags[active_lang] != nil %}{{ software_tags[active_lang] }} {% else %} {{ software_tags.en }} {% endif %}</a>

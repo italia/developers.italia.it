@@ -1,0 +1,195 @@
+3dgraphics:
+  en: 3dgraphics
+  it: 
+accessibility:
+  en: ccessibility
+  it: 
+accounting:
+  en: ccounting
+  it: 
+amusement:
+  en: musement
+  it: 
+archiving:
+  en: rchiving
+  it: 
+art:
+  en: art
+  it:
+artificial-intelligence:
+  en: artificial intelligence
+  it:
+backend:
+  en: backend
+  it:
+calculator:
+  en: calculator
+  it:
+calendar:
+  en: calendar
+  it:
+chat:
+  en: chat
+  it:
+classroom-management:
+  en: classroom management
+  it:
+clock:
+  en: clock
+  it:
+content-management:
+  en: content management
+  it:
+compression:
+  en: compression
+  it:
+construction:
+  en: construction
+  it:
+contact-management:
+  en: contact management
+  it:
+database:
+  en: database
+  it:
+debugger:
+  en: debugger
+  it:
+dictionary:
+  en: dictionary
+  it:
+documentation:
+  en: documentation
+  it:
+electronics:
+  en: electronics
+  it:
+email:
+  en: email
+  it:
+emulator:
+  en: emulator
+  it:
+engineering:
+  en: engineering
+  it:
+file-manager:
+  en: file manager
+  it:
+file-transfer:
+  en: file-transfer
+  it:
+finance:
+  en: finance
+  it:
+flowchart:
+  en: flowchart
+  it:
+gui-designer:
+  en: gui designer
+  it:
+identity:
+  en: identity
+  it:
+instant-messaging:
+  en: instant messaging 
+  it:
+library:
+  en: library
+  it:
+medical:
+  en: medical
+  it:
+monitor:
+  en: monitor
+  it:
+museum:
+  en: museum
+  it:
+music:
+  en: musical
+  it:
+news:
+  en: news
+  it:
+ocr:
+  en: ocr
+  it:
+parallel-computing:
+  en: parallel computing
+  it:
+photography:
+  en: photography
+  it:
+presentation:
+  en: presentation
+  it:
+printing:
+  en: printing
+  it:
+procurement:
+  en: procurement
+  it:
+project-management:
+  en: project management
+  it:
+publishing:
+  en: publishing
+  it:
+raster-graphics:
+  en: raster graphics
+  it:
+remote-access:
+  en: remote access
+  it:
+revision-control:
+  en: revision-control
+  it:
+robotics:
+  en: robotics
+  it:
+scanning:
+  en: scanning
+  it:
+security:
+  en: security
+  it:
+sports:
+  en: sports
+  it:
+spreadsheet:
+  en: spreadsheet
+  it:
+telephony:
+  en: telephony
+  it:
+terminal-emulator:
+  en: terminal emulator
+  it:
+texteditor:
+  en: text editor
+  it:
+texttools:
+  en: text tools
+  it:
+translation:
+  en: translation
+  it:
+vector-graphics:
+  en: vector graphics
+  it:
+video-conference:
+  en: video conference
+  it:
+viewer:
+  en: viewer
+  it:
+web-browser:
+  en: web browser
+  it:
+whistleblowing:
+  en: whistleblowing
+  it:
+word-processor:
+  en: word processor
+  it:
