@@ -17,29 +17,19 @@ layout: default
 {% assign software = site.data.softwares | where_exp:"software", "software.language contains active_lang" %}
 {% assign root = '/' | append: active_lang | append: '/software' %}
 
-
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
     {{ page.title }}</h1>
     <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
 </div>
 
-
 <div class="container">
-
-
-        <div class="row">
-        {% for software in softwares %}
-          <div class="col">
-            {% assign url = '' %}
-            ..........
-          </div>
-
-          
-
-
-        {% endfor %} 
-        </div>
-
-
+  <div class="row">
+  {% for software in softwares %}
+    <div class="col">
+      {% assign url = '' %}
+      ..........
+    </div>
+  {% endfor %} 
+  </div>
 </div>
