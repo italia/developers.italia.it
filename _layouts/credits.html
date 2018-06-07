@@ -7,57 +7,73 @@ lang: it
 
 {% assign projects = site.projects | where: 'lang', active_lang | sort: 'order' | reverse %}
 
-<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title | capitalize }}
-  </h1>
-  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
-    {{ page.subtitle }}
-  </p>
+<div class="credits-main-image text-center">
+  <img src="{{page.image}}" class="img-fluid">
 </div>
-
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
-<hr class="Separator Separator--down u-background-grey-15" />
-
-<section class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top
-  u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <h2 class="u-hiddenVisually">{{ page.title }}</h2>
-  
-  <div class="Grid Grid--withGutterL u-pullUp-10">
-    {% for person in site.data.people %}
-    {% if person[1].status == 'admin' %}
-       {% include person.html %}
-    {% endif %}
-    {% endfor %}
+<div class="credits-first-part">
+<div class="container">
+    <article class="mw-md-85 ml-auto mr-auto credits-main-text">
+      <h1>{{page.title}}</h1>
+      <div class="credits-main-content">{{page.content}}</div>
+    </article>
+</div>
+</div>
+<section class="credits-mantainers pt-2 pb-2">
+  <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
+      <h1 class="text-center">{{t.credits_maintainers}}</h1>
+      <div class="row mw-md-85 ml-auto mr-auto">
+      {% for person in site.data.people %}
+        {% if person[1].status == 'admin' %}
+        <div class="col-sm-4">
+          {% include person.html %}
+        </div>
+        {% endif %}
+        
+      {% endfor %}
+      </div>
   </div>
-  
-  <h2 class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
-    {{ t.credits_maintainers | capitalize }}
-  </h2>
-  
-  <!-- phi = k^i -->
-  <div class="Grid Grid--alignMiddle Grid--withGutter u-margin-r-top u-flexJustifyCenter">
-    {% for person in site.data.people %}
-    {% if person[1].status == 'maintainer' %}
-       {% include person.html %}
-    {% endif %}
-    {% endfor %}
+</section>
+<hr class="container credits-hr"/>
+<section class="credits-people pt-2 pb-2">
+    <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
+        <div class="row mw-md-85 ml-auto mr-auto">
+            {% for person in site.data.people %}
+                  {% if person[1].status == 'maintainer' %}
+                  <div class="col-sm-4 mt-2 mt-md-4 mb-2 mb-md-4">
+                    {% include person.html %}
+                  </div>
+                  {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="credits-contributors pt-2 pb-2">
+    <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
+        <h1 class="text-center">{{t.credits_contributors}}</h1>
+        <div class="row mw-md-85 ml-auto mr-auto">
+        {% for person in site.data.people %}
+          {% if person[1].status == 'contributor' %}
+          <div class="col-sm-4">
+            {% include person.html %}
+          </div>
+          {% endif %}
+          
+        {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="credits-joinus pt-2 pb-2 pt-md-5 pb-md-5">
+  <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
+    <div class="d-md-flex align-items-center">
+      <div class="position-relative">
+        <img src="{{'/assets/images/join-window.svg' | relative_url}}" class="credits-joinus-window">
+        <h2>{{t.credits_joinus_h2}}</h2>
+        <h1>{{t.credits_joinus_h1}}</h1>
+      </div>
+      <div class="ml-auto">
+        <a href="https://github.com/italia/developers.italia.it" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vieni su GitHub <span class="icon it-github"></span></a>
+      </div>
+    </div>
+
   </div>
-  <!-- <phi = k^i>  -->
-
-  <h2 class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
-    {{ t.credits_contributors | capitalize }}
-  </h2>
-
-  <div class="Grid Grid--alignMiddle Grid--withGutter u-margin-r-top u-flexJustifyCenter">
-    {% for person in site.data.people %}
-    {% if person[1].status == 'contributor' %}
-      {% include person.html %}
-    {% endif %}
-    {% endfor %}
-  </div>
-  <!-- -<phi = k^i>  -->
-
 </section>

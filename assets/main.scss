@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
 @charset "utf-8";
 @import "bootstrap-italia/src/scss/bootstrap-italia";
 @import 'footer';
@@ -9,6 +10,25 @@
 //@import "developer";
 //@import "datatables";
 //@import "select2";
+
+$font-family-serif: 'Lora', 'Georgia', Serif;
+
+.font-serif {
+    font-family: $font-family-serif;
+}
+.font-base {
+    font-family: $font-family-base;
+}
+.mw-85 {
+    max-width: 85%;
+}
+.mw-md-85 {
+    max-width: none;
+
+    @include media-breakpoint-up(md) {
+        max-width: 85%;
+      }
+}
 
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
@@ -122,6 +142,7 @@ html, body {
     &--padded-top {
         padding-top: 0.4rem;
         position: relative;
+        margin: 0;
 
         li {
             display: block;
@@ -172,3 +193,149 @@ html, body {
     }
 }
 
+.credits {
+    &-main-image {
+    background-color: #eee;
+    }  
+    &-first-part {
+        background-color: #FAFBFD;
+        background-image: url(/assets/images/credits-background-first.svg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    &-main-text {
+        position: relative;
+        margin-top: -6rem;
+        padding: 4rem;
+        background-color: #fff;
+        z-index: 10;
+        box-shadow: 0 10px 80px 0 rgba(90,103,114,0.1);
+
+        h1 {
+            font-size: 3.5rem;
+            color: #17324D;
+            margin-bottom: 2rem;
+        }
+
+    }
+    &-main-content {
+        font-family: $font-family-serif;
+        font-size: 1.1rem;
+        color: $gray-600;
+    }
+    &-mantainers {
+        h1 {
+        color: #17324D;
+        margin: 3rem 0;
+        }
+    }
+    &-contributors {
+        background-color: #F7F9FA;
+        background-image: url(/assets/images/credits-background-contributors.svg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+
+        h1 {
+            color: #17324D;
+            margin: 3rem 0;
+            }
+    }
+    &-hr {
+        border-top: 1px solid #455B71;
+        opacity: 0.5;
+    }
+    &-person-name {
+        color: #17324D;
+        text-align: center;
+        margin-top: 2rem;
+        letter-spacing: 0;
+        font-size: 2rem;
+    }
+    &-person-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    &-person-role {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        color: #455B71;
+        font-size: 1.2rem;
+    }
+    &-person-desc {
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &-person-socials {
+        text-align: center;
+        margin-top: 1rem;
+
+        .icon {
+            color: #fff;
+            display: inline-block;
+            font-size: 1rem;
+            position: relative;
+            line-height: 0;
+            width: 2rem;
+            height: 2rem;
+            background-color: $italia;
+            padding: 0.5rem;
+            border-radius: 2rem;
+        }
+    }
+    &-joinus {
+        background-color: #004D99;
+        background-image: url(/assets/images/credits-background-join.svg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+
+        h2 {
+            font-size: 0.9rem;
+            line-height: 1.2;
+            color: #17324D;
+            font-weight: 300;
+            letter-spacing: 0;
+            @include media-breakpoint-up(md) {
+                font-size: 1.5rem;
+            }
+        }
+        h1 {
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #17324D;
+            @include media-breakpoint-up(md) {
+                font-size: 2.5rem;
+            }
+        }
+        &-window {
+            display: none;
+            position: absolute;
+            top: -6.5rem;
+            left: -5.5rem;
+            @include media-breakpoint-up(sm) {
+                display: block;
+            }
+        }
+        .icon {
+            color: $primary;
+            display: inline-block;
+            font-size: 1rem;
+            position: relative;
+            line-height: 0;
+            width: 2rem;
+            height: 2rem;
+            background-color: #fff;
+            padding: 0.5rem;
+            border-radius: 2rem;
+            margin-left: 0.5rem;
+        }
+    }
+}
