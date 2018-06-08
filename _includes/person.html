@@ -1,43 +1,29 @@
-<div class="Person-container Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-textCenter u-margin-bottom-xl">
-  <div class="Person u-round u-cf u-flex" style="background-image: url({{ person[1].pic }})">
-    <div class="Person-content u-background-white u-flexAlignSelfEnd u-zindex-30 u-textCenter">
-      <div style="position: absolute; width: 100%">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10" style="transform: translate(0, -100%)">
-        <path fill="#FFF" fill-rule="evenodd" d="M100 0c35.006 0 68.647 3.52 100 10H0C31.353 3.52 64.993 0 100 0z"/>
-      </svg>
-      </div>
-      <div class="Grid u-flex u-flexWrap u-flexJustifyCenter">
-        <h3 style="" class="Grid-cell u-sizeFull u-textCenter u-text-r-xs u-textWeight-600 u-margin-bottom-xxs">
-          {{ person[1].name }}
-        </h3>
-
-        {% assign desc = person[1].desc %}
-        {% if desc %}
-        <h4 class="Grid-cell u-sizeFull u-textCenter u-margin-bottom-xxs
-          u-text-r-xxs u-textWeight-400 u-color-grey-50 ">{{ desc }}</h4>
-        {% endif %}
-
-        {% for project in projects %}
-        {% if project.maintainers contains person[0] %}
-        <h4 class="Grid-cell u-sizeFull u-textCenter u-margin-bottom-xxs
-          u-text-r-xxs u-textWeight-400 u-color-grey-50 ">
-          <a class="u-color-50 u-textClean" href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
-        {% endif %}
-        {% endfor %}
-
-        <div class="Grid-cell u-sizeFull u-flexAlignSelfEnd u-margin-bottom-xs u-margin-bottom-s u-margin-top-xxs">
-          <ul class="u-textCenter u-layoutCenter">
-            {% for contact in person[1].contacts %}
-            <li class="u-inlineBlock u-padding-right-xxs u-padding-left-xxs">
-              <a href="{{ contact[1].link }}" title="" class="Person-social-link u-padding-all-xs u-background-50 u-color-white u-inlineBlock u-linkClean
-                      u-borderRadius-circle u-alignMiddle"><span class="Icon Icon-{{ contact[0] }}"></span>
-                    <span class="sr-only">{{ contact[1].name }}</span>
-                  </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+{% assign desc = person[1].desc %}
+<div class="credits-person">
+  <div class="text-center credits-person-img">
+    <img src="{{ person[1].pic }}" width="200" class="img-fluid">
   </div>
-</div>
+  <div class="credits-person-name h2">
+    {{ person[1].name }}
+  </div>
+  <div class="credits-person-role">
+    {{ person[1].role }}
+  </div>
+  {% if desc %}
+  <div class="credits-person-desc">{{ desc }}</div>
+  {% endif %}
+
+  <div class="credits-person-socials">
+  <ul class="list-inline ">
+  {% for contact in person[1].contacts %}
+    <li class="list-inline-item">
+    <a href="{{ contact[1].link }}" >
+      <span class="icon it-{{ contact[0] }}"></span>
+      <span class="sr-only">{{ contact[1].name }}</span>
+    </a>
+  </li>
+  {% endfor %}
+  </ul>
+  </div>
+
+</div><!--/credits-person-->
