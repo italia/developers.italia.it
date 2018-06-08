@@ -9,6 +9,10 @@
 
 <script src="{{ '/assets/scripts/bootstrap-italia.min.js' | relative_url }}"></script>
 
+<script src="{{ '/assets/scripts/moment.js' | relative_url }}"></script>
+
+<script src="{{ '/assets/scripts/Chart.min.js' | relative_url }}"></script>
+
 <script>
   $(document).on('keydown', function(e) {
     if (e.keyCode === 9) {
@@ -22,4 +26,48 @@
   $(document).on('click', function(e) {
     $('body').addClass('hide-focus');
   })
+
+  var ctx = document.getElementById("vitalityChart").getContext("2d");
+  var myLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['j', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'],
+      datasets: [{
+        fill: false,
+        lineTension: 0.1,
+        data: {{ page.vitalityDataChart | jsonify }},
+        borderWidth: 1,
+        borderColor: '#06c'
+       }]
+     },
+    options: {
+      scales: {
+        xAxes: [{
+          display: false,
+          stacked: true
+        }],
+        yAxes: [{
+          display: false,
+          stacked: true,
+          ticks: {
+            beginAtZero:true
+          }
+        }]
+      },
+      legend: {
+        display: false,
+      },
+      layout: {
+        padding: {
+          left: 5,
+          right: 5,
+          top: 5,
+          bottom: 5
+        }
+      },
+      tooltips: {
+        enabled: false
+      }
+    }
+  });
 </script>
