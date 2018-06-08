@@ -36,6 +36,14 @@
   roadmap: https://example.com/italia/medusa/roadmap
   developmentStatus: development
   vitalityScore: 55
+  vitalityDataChart:
+    - 12
+    - 19
+    - 3
+    - 17
+    - 6
+    - 3
+    - 7
   softwareType:
     type: standalone
     isRelatedTo:

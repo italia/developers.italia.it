@@ -49,9 +49,13 @@
         @extend .d-inline-block;
         @extend .align-middle;
       }
-      #chart_div {
+      #softwareChart {
         @extend .align-middle;
         @extend .d-inline-block;
+        position: relative;
+        margin: auto;
+        height:  120px;
+        width: 230px;
       }
       .status-developement {
         margin-top: 1.5em;
