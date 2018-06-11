@@ -20,16 +20,6 @@ $font-family-serif: 'Lora', 'Georgia', Serif;
 .font-base {
     font-family: $font-family-base;
 }
-.mw-85 {
-    max-width: 85%;
-}
-.mw-md-85 {
-    max-width: none;
-
-    @include media-breakpoint-up(md) {
-        max-width: 85%;
-      }
-}
 
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
@@ -291,52 +281,53 @@ html, body {
             border-radius: 2rem;
         }
     }
-    &-joinus {
-        background-color: #004D99;
-        background-image: url(/assets/images/credits-background-join.svg);
-        background-position-x: center;
-        background-position-y: center;
-        background-repeat: no-repeat;
+    
+}
+.banner-joinus {
+    background-color: #004D99;
+    background-image: url(/assets/images/credits-background-join.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
 
-        h2 {
-            font-size: 0.9rem;
-            line-height: 1.2;
-            color: #17324D;
-            font-weight: 300;
-            letter-spacing: 0;
-            @include media-breakpoint-up(md) {
-                font-size: 1.5rem;
-            }
+    h2 {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        color: #17324D;
+        font-weight: 300;
+        letter-spacing: 0;
+        @include media-breakpoint-up(md) {
+            font-size: 1.5rem;
         }
-        h1 {
-            font-size: 2rem;
-            line-height: 1.2;
-            color: #17324D;
-            @include media-breakpoint-up(md) {
-                font-size: 2.5rem;
-            }
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        color: #17324D;
+        @include media-breakpoint-up(md) {
+            font-size: 2.5rem;
         }
-        &-window {
-            display: none;
-            position: absolute;
-            top: -6.5rem;
-            left: -5.5rem;
-            @include media-breakpoint-up(sm) {
-                display: block;
-            }
+    }
+    &-window {
+        display: none;
+        position: absolute;
+        top: -6.5rem;
+        left: -5.5rem;
+        @include media-breakpoint-up(sm) {
+            display: block;
         }
-        .icon {
-            color: $primary;
-            display: inline-block;
-            font-size: 1rem;
-            position: relative;
-            line-height: 0;
-            width: 2rem;
-            height: 2rem;
-            background-color: #fff;
-            padding: 0.5rem;
-            border-radius: 2rem;
-            margin-left: 0.5rem;
-        }
+    }
+    .icon {
+        color: $primary;
+        display: inline-block;
+        font-size: 1rem;
+        position: relative;
+        line-height: 0;
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        margin-left: 0.5rem;
     }
 }
