@@ -11,69 +11,61 @@ lang: it
   <img src="{{page.image}}" class="img-fluid">
 </div>
 <div class="credits-first-part">
-<div class="container">
-    <article class="mw-md-85 ml-auto mr-auto credits-main-text">
+<div class="container d-flex justify-content-center">
+    <article class="col-sm-10 credits-main-text">
       <h1>{{page.title}}</h1>
       <div class="credits-main-content">{{page.content}}</div>
     </article>
 </div>
 </div>
 <section class="credits-mantainers pt-2 pb-2">
-  <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
+  <div class="container d-flex justify-content-center mt-2 mt-md-5 mb-2 mb-md-5">
+      <div class="col-sm-10">
       <h1 class="text-center">{{t.credits_maintainers}}</h1>
-      <div class="row mw-md-85 ml-auto mr-auto">
+      <div class="row">
       {% for person in site.data.people %}
         {% if person[1].status == 'admin' %}
-        <div class="col-sm-4">
+        <div class="col-sm-6 col-md-4">
           {% include person.html %}
         </div>
         {% endif %}
         
       {% endfor %}
       </div>
+      </div>
   </div>
 </section>
 <hr class="container credits-hr"/>
 <section class="credits-people pt-2 pb-2">
-    <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
-        <div class="row mw-md-85 ml-auto mr-auto">
+    <div class="container  d-flex justify-content-center mt-2 mt-md-5 mb-2 mb-md-5">
+      <div class="col-sm-10">
+        <div class="row ">
             {% for person in site.data.people %}
                   {% if person[1].status == 'maintainer' %}
-                  <div class="col-sm-4 mt-2 mt-md-4 mb-2 mb-md-4">
+                  <div class="col-sm-6 col-md-4 mt-2 mt-md-4 mb-2 mb-md-4">
                     {% include person.html %}
                   </div>
                   {% endif %}
             {% endfor %}
         </div>
+        </div>
     </div>
 </section>
 <section class="credits-contributors pt-2 pb-2">
-    <div class="container mt-2 mt-md-5 mb-2 mb-md-5">
+    <div class="container d-flex justify-content-center mt-2 mt-md-5 mb-2 mb-md-5">
+      <div class="col-sm-10">
         <h1 class="text-center">{{t.credits_contributors}}</h1>
-        <div class="row mw-md-85 ml-auto mr-auto">
+        <div class="row">
         {% for person in site.data.people %}
           {% if person[1].status == 'contributor' %}
-          <div class="col-sm-4">
+          <div class="col-sm-6 col-md-4">
             {% include person.html %}
           </div>
           {% endif %}
           
         {% endfor %}
         </div>
+        </div>
     </div>
 </section>
-<section class="credits-joinus pt-2 pb-2 pt-md-5 pb-md-5">
-  <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
-    <div class="d-md-flex align-items-center">
-      <div class="position-relative">
-        <img src="{{'/assets/images/join-window.svg' | relative_url}}" class="credits-joinus-window">
-        <h2>{{t.credits_joinus_h2}}</h2>
-        <h1>{{t.credits_joinus_h1}}</h1>
-      </div>
-      <div class="ml-auto">
-        <a href="https://github.com/italia/developers.italia.it" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">Vieni su GitHub <span class="icon it-github"></span></a>
-      </div>
-    </div>
-
-  </div>
-</section>
+{% include banner-joinus.html %}
