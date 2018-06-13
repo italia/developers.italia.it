@@ -142,6 +142,7 @@ it:
       supported_languages: Lingue supportate
       awards: Premi
       api_documentation: Documentazione API
+      additional_features: Funzionalità aggiuntive
 
 en:
   code: eng
@@ -284,3 +285,4 @@ en:
       supported_languages: Supported languages
       awards: Awards
       api_documentation: Api documentation
+      additional_features: Additional features
