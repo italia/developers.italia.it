@@ -59,8 +59,9 @@ it:
 
     credits_contributors: "Hanno contribuito ai progetti:"
     credits_maintainers: Mantainer
-    credits_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
-    credits_joinus_h1: Unisciti alla nostra community!
+    banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
+    banner_joinus_h1: Unisciti alla nostra community!
+    banner_joinus_action: Vieni su GitHub
 
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
@@ -204,8 +205,9 @@ en:
 
     credits_contributors: "Project contributors:"
     credits_maintainers: "Projects leaders & maintainers:"
-    credits_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
-    credits_joinus_h1: Unisciti alla nostra community!
+    banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
+    banner_joinus_h1: Unisciti alla nostra community!
+    banner_joinus_action: Vieni su GitHub
 
     status_member_of_board: member of board
     status_maintainer: maintainer
