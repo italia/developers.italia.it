@@ -63,6 +63,7 @@
   description:
     eng:
       localisedName: MedusaEN
+      genericName: Categoria di appartenenzaEN
       shortDescription: A really interesting software.
       longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -88,6 +89,7 @@
          - 1st Price Software of the year
     ita:
       localisedName: Medusa
+      genericName: Categoria di appartenenza
       shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
       longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -106,42 +108,91 @@
       awards:
          - Software del anno
   oldVariant:
-    eng:
-      localisedName: 
-         - Blablabalbalabla
-         - Bho
-         - Wow
-      featureList:
+    - name: Buru
+      eng:
+        url: 
+           - htpp://repubblica.it
+        features:
+           - The title attribute
+           - The href attribute
+           - The width and height attributes
+           - The href attribute
+           - Solves all the problems of the world
+           - The title attribute
+           - The href attribute
+      ita:
+        url:  
+           - htpp://repubblica.it 
+        features:
+         - The width and height attributes
+         - The title attribute
+         - The href attribute
+         - Solves all the problems of the world
+         - The title attribute
+         - The href attribute
+      vitalityScore: 55
+      legal:
+        repoOwner: Lorem ipsum
+    - name: Bla bla
+      eng:
+        localisedName: 
+           - Bla bla
+        url: 
+           - htpp://repubblica.it
+        features:
+           - The title attribute
+           - The href attribute
+           - The width and height attributes
+           - The href attribute
+           - Solves all the problems of the world
+           - The title attribute
+           - The href attribute
+      ita:
+        localisedName: 
+           - Bla bla
+        url:  
+           - htpp://repubblica.it 
+        features:
+           - The width and height attributes
+           - The title attribute
+           - The href attribute
+           - Solves all the problems of the world
+           - The title attribute
+           - The href attribute
+      vitalityScore: 43
+      legal:
+        repoOwner: Dolor sit ame
+  oldFeatureList:
+      eng:
+         - Lorem ipsum dolor sit amet 
+         - Suscipit lobortis nisl ut aliquip 
+         - Duis autem vel eum iriure
          - The title attribute
          - The href attribute
          - The width and height attributes
-         - The alt attribute
-         - Attribute without quotes
-         - Attribute without quotes does not work
-         - Solves all the problems of the world
-         - The title attribute
          - The href attribute
          - Solves all the problems of the world
-         - The title attribute
+         - Accumsan et iusto od
+         - Luptatum zzril delenit augu
          - The href attribute
-    ita:
-      localisedName: 
-         - Blablabalbalabla
-         - Bho
-         - Wow
-      featureList:
+         - Velit esse moles
+         - Ut wisi enim ad 
+         - Tation ullamcorper
+      ita:
+         - Lorem ipsum dolor sit amet 
+         - Suscipit lobortis nisl ut aliquip 
+         - Duis autem vel eum iriure
          - The title attribute
          - The href attribute
          - The width and height attributes
-         - The alt attribute
-         - Attribute without quotes
-         - Attribute without quotes does not work
-         - Solves all the problems of the world
-         - The title attribute
          - The href attribute
          - Solves all the problems of the world
-         - The title attribute
+         - Accumsan et iusto od
+         - Luptatum zzril delenit augu
          - The href attribute
+         - Velit esse moles
+         - Ut wisi enim ad 
+         - Tation ullamcorper
   tagsRelate:
     - content-management
     - artificial-intelligence
@@ -239,7 +290,7 @@
       seo: no
       ui: yes
       web: yes
-- name: BLABLA
+- name: BLA BLA
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
