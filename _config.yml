@@ -49,6 +49,7 @@ plugins:
   - jekyll-paginate
   - jekyll-toc
   - jekyll-sitemap
+#  - searchyll
 exclude:
   - vendor
   - README.md
@@ -149,3 +150,10 @@ sass:
       - node_modules
       - assets
     sass_dir: /
+
+#elasticsearch:
+#  url: "http://elastic:elastic@elasticsearch:9200/"
+#  number_of_shards: 5
+#  number_of_replicas: 1
+#  index_name: "jekyll"
+#  default_type: "post"
