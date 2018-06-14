@@ -91,7 +91,7 @@ layout: default
     <div class="card-columns">
       {% for video in page.description[active_lang_extended].videos %} 
       <div class="card">
-        <iframe width="420" height="315" src="{{ video }}" frameborder="0" ></iframe>
+        <div data-oembed-video="{{ video }}"></div>
       </div>
       {% endfor %}
 
@@ -140,7 +140,7 @@ layout: default
             </a>
             <div class="collapse" id="by-amministration">
               {% for item in page.usedBy %} 
-                <a href="#"> {{ item }} </a>
+                <p> {{ item }} </p>
               {% endfor %}
             </div>
           </div>
