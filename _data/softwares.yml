@@ -84,7 +84,7 @@
          - http://via.placeholder.com/350x590
          - http://via.placeholder.com/800x500
       videos:
-         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+         - https://www.youtube.com/oembed?url=http%3A//youtube.com/watch%3Fv%Hhpe1CHtLmI
       awards:
          - 1st Price Software of the year
     ita:
