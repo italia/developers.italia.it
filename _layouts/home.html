@@ -4,6 +4,59 @@ layout: default
 
 {% include setlang.html %}
 
+<section class="container homelayout__first">
+  <div class="row d-flex align-items-stretch ">
+    <article class="col-md-6 homelayout__first__sx d-flex  align-items-center pr-md-3">
+      <div class="d-block homelayout__first__hero pr-md-5">
+       <h1>{{ t.home_hero }}</h1>
+       <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
+      </div>
+    </article>
+    <article class="col-md-6 homelayout__first__dx d-flex align-items-center pl-md-3" >
+        <div class="d-block pl-md-5" >
+          <div class="homelayout__first__latnews">
+            <h2>{{t.home_news_title}}</h2>
+            <h1>Titolo dell'ultima news pubblicata. Lorem ipsum sic</h1>
+            <a href="#">{{t.software.read_more}} &rarr;</a>
+          </div>
+          <div class="homelayout__first__newsletter mt-2 mt-md-5">
+              <h2>Newsletter</h2>
+              <form action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
+
+                <div class="form-row align-items-center">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-white input-icon it-mail"></span>
+                      </div>
+                      <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
+                      <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email" placeholder="{{t.home_newsletter_placeholder }}">
+                      <input type="hidden" name="list" value="2">
+                      <div class="input-group-append">
+                        <button type="submit" class="input-group-text bg-primary input-submit">{{ t.home_newsletter_button }}</button>
+                      </div>
+                    </div>
+                    <p class="mt-2 mt-md-4 primary-color-a11">{{t.home_newsletter_footer}}</p>
+                  </div>
+              </form>
+          </div>
+        </div>
+        
+    </article>
+
+  </div>
+
+</section>
+{% include banner-joinus.html extraclass="pt-2 pt-md-5 " %}
+
+{% include home-listing-items.html source='apis' title='Piattaforme abilitanti' captiontitle='Come lo uso' captionurl='#' %}
+
+{% include home-listing-items.html source='apis' title='Altre piattaforme' captiontitle='Come lo uso' captionurl='#' %}
+
+{% include home-listing-items.html source='apis' title='Software open source' captiontitle='Come lo uso' captionurl='#' %}
+
+
+******
+
 <div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
   <h2 class="u-layoutCenter u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l"
     style="max-width: 20em">

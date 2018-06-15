@@ -1,0 +1,42 @@
+{% comment %}
+=============
+THIS IS A SEMI DUMMY FILE, IT'S A WIP IMPLEMENTATION
+=============
+{% endcomment %}
+
+{% assign items = site.data[include.source] %}
+{% assign limititems = include.limit | default:4 %}
+{% assign title = include.title %}
+{% assign captiontitle = include.captiontitle %}
+{% assign captionurl = include.captionurl %}
+
+
+<section class="home-listing-items source-{{include.source}} ">
+
+    <div class="container">
+        <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
+            <h1>{{title}}</h1>
+            {% if captiontitle!=nill %}
+            <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
+            {% endif %}
+        </div>
+        <div class="row row-eq-height">
+            {% for item in items limit: limititems %}
+                <div class="col">
+                    <article class="d-flex flex-column align-items-start h-100" >
+                        <img class="img-fluid home-listing-item__img" src="http://placehold.it/272x176">
+                        <h1 class="home-listing-item__title">{{item.name}}</h1>
+                        <a class="home-listing-item__url mt-auto" href="#">Leggi di più &rarr;</a>
+                    </article>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row pb-3 mt-3 mb-3 mt-md-5">
+            <a class="btn btn-primary mx-auto" href="#">Vedi tutto</a>
+        </div>
+
+    </div>
+
+</section>
+
+
