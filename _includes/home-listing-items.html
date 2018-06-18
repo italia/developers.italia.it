@@ -9,9 +9,11 @@ THIS IS A SEMI DUMMY FILE, IT'S A WIP IMPLEMENTATION
 {% assign title = include.title %}
 {% assign captiontitle = include.captiontitle %}
 {% assign captionurl = include.captionurl %}
+{% assign withimages = include.withimages | default: false %}
+{% assign itemdescription = include.itemdescription %}
 
 
-<section class="home-listing-items source-{{include.source}} ">
+<section class="home-listing-items source-{{include.source}} {{include.additionalclass}}">
 
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
@@ -23,9 +25,14 @@ THIS IS A SEMI DUMMY FILE, IT'S A WIP IMPLEMENTATION
         <div class="row row-eq-height">
             {% for item in items limit: limititems %}
                 <div class="col">
-                    <article class="d-flex flex-column align-items-start h-100" >
-                        <img class="img-fluid home-listing-item__img" src="http://placehold.it/272x176">
+                    <article class="d-flex flex-column align-items-start h-100 {% if withimages!=true %}withshadow{%endif%}" >
+                        {% if withimages==true %}
+                        <img class="w-100 home-listing-item__img" src="http://placehold.it/272x176">
+                        {% endif %}
                         <h1 class="home-listing-item__title">{{item.name}}</h1>
+                        {% if itemdescription %}
+                            <p>{{item[itemdescription]}}</p>
+                        {% endif %}
                         <a class="home-listing-item__url mt-auto" href="#">Leggi di più &rarr;</a>
                     </article>
                 </div>

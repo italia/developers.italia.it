@@ -55,6 +55,7 @@ it:
     home_projects_count: progetti in totale
     home_news_title: Novità
     home_news_expand: per saperne di più
+    home_tags: Cerca per argomento
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -203,6 +204,7 @@ en:
     home_projects_count: total projects
     home_news_title: News
     home_news_expand: read more
+    home_tags: Browse by tag
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need

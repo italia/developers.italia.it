@@ -32,6 +32,10 @@ html, body {
 }
 
 // STILE DEVELOPERS
+.grayline {
+    border-top: 2px solid #D8D8D8;
+    margin: 1rem 0;
+}
 .Header {
 
     &-banner {
@@ -290,6 +294,7 @@ html, body {
             position: relative;
             z-index: 1;
             padding: 2rem 0;
+            overflow-x: hidden;
 
             @include media-breakpoint-up(md) {
                 padding: 6rem 0;
@@ -414,8 +419,50 @@ html, body {
         }
     }
 }
+.home-discuss {
+    background-color: #2079D4;
+    background-image: url(/assets/images/home-discuss-background.svg);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0;
+    @include media-breakpoint-up(md) {
+        padding: 6rem 0;
+    }
+
+    h1 {
+        color: #fff;
+        
+    }
+    .titlewrapper {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .more {
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: #fff;
+    }
+    article {
+        border-radius: 0.5rem;
+
+        figure {
+            height: 45px;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        color: #455B71;
+        margin-top: 0.6rem;
+    }
+}
+
 .home-listing-items {
     padding: 2rem 0;
+    @include media-breakpoint-up(md) {
+        padding: 6rem 0;
+    }
 
     .more {
         font-weight: 600;
@@ -436,6 +483,15 @@ html, body {
         img {
             box-shadow: 0 10px 58px 0 rgba(90,103,114, 0.2);
         }
+        &.withshadow {
+            box-shadow: 0 10px 58px 0 rgba(90,103,114, 0.2);
+            padding: 1rem;
+
+            @include media-breakpoint-up(md) {
+                padding: 1.5rem;
+            }
+            
+        }
     }
     .home-listing-item {
         &__url {
@@ -443,6 +499,42 @@ html, body {
             font-weight: 600;
             font-size: 0.8rem;
             text-transform: uppercase;
+        }
+    }
+
+    &.light {
+        background-color: #FAFBFD;
+    }
+}
+
+.home-software-tags {
+    padding: 2rem 0;
+
+
+    h1 {
+        color: #17324D;
+        margin: 1rem 0;
+        @include media-breakpoint-up(md) {
+            margin: 3.5rem 0;
+        }
+    }
+    &__extra {
+        font-weight: 600;
+        color: #fff;
+        background-color: #5C6F82;
+        padding: 0.3rem 1rem;
+        border-radius: 0.25rem;
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-bottom: 1.5rem;
+        a {
+            border: 2px solid $primary;
+            padding: 0.2rem 0.5rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            line-height: 1;
         }
     }
 }
