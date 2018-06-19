@@ -30,6 +30,9 @@
           color: gray;
           @extend .d-block;
         }
+        a{
+          @extend .d-block;
+        }
       }
     }
   }
@@ -104,6 +107,39 @@
     }
   }
 }
+#usedBy {
+  margin-bottom: 3em;
+  a{
+    display: block;
+    &.count {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 3em 0 2em;
+    }
+  }
+}
+#oldVariant {
+  margin-bottom: 3em;
+  a{
+    display: block;
+    &.count {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 3em 0 2em;
+    }
+  }
+  #listVariant{
+    .variantDetail {
+      margin-bottom: 2em;
+      p {
+        color: gray;
+        .label {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
 .interestRelatedSoftwares {
   margin: 2em 0;
   h2 {
@@ -173,6 +209,7 @@
     }
   }
   .heading-maintenance,
+  .heading-maintenance-contact,
   .heading-legal-dependencies {
     border-top: 1px solid #dee2e6;
     padding: 2em 0;
@@ -181,8 +218,11 @@
         color: gray;
         @extend .d-block;
       }
-      .contact, a {
+      a {
         @extend .d-block;
+        &.until {
+          @extend .d-inline;
+        }
       }
     }
   }

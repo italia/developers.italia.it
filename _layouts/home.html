@@ -4,180 +4,111 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
-  <h2 class="u-layoutCenter u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l"
-    style="max-width: 20em">
-    {{ t.home_hero }}</h2>
-</div>
-
-<div class="u-background-50 newsletter-wrapper">
-  <div class="Grid newsletter-background blue">
-    <div class="Grid-cell u-size1of2 left u-background-60"></div>
-    <div class="Grid-cell u-size1of2 right u-background-60"></div>
-  </div>
-  <div class="Grid newsletter-background grey">
-    <div class="Grid-cell u-size9of12 left u-background-grey-15"></div>
-    <div class="Grid-cell u-size3of12 right u-background-grey-15"></div>
-  </div>
-
-  <div class="u-textCenter u-padding-r-all u-textCenter">
-    <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-      {{ t.home_newsletter_title }}</h3>
-    <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12 u-layoutCenter" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
-      <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xxl">
-        <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
-          </button>
-        <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus "
-          required id="newsletter" name="email" />
-        <label class="Form-label u-color-grey-50 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
-            {{t.home_newsletter_placeholder }}</span></label>
-        <input type="hidden" name="list" value="1">
-        <button type="submit" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
-         {{ t.home_newsletter_button }}
-        </button>
+<section class="homelayout__first">
+  <div class="container">
+  <div class="row d-flex align-items-stretch ">
+    <article class="col-md-6 homelayout__first__sx d-flex  align-items-center pr-md-3">
+      <div class="d-block homelayout__first__hero pr-md-5">
+       <h1>{{ t.home_hero }}</h1>
+       <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
       </div>
-    </form>
-  </div>
-  <p class="u-textCenter u-layoutCenter u-text-r-xs u-color-grey-40 u-layout-prose">{{ t.home_newsletter_footer }}</p>
-</div>
-
-<section class="u-nbfc u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
-
-      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
-
-      <div class="Grid Grid--withGutter">
-
-      {% for project in projects limit: 3 %}
-
-        {% assign subtitle = project.subtitle | default: project.payoff %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include card.html
-              title=project.title
-              link=project.url
-              comingsoon=project.comingsoon
-              subtitle=subtitle
-              text=project.description
-              socials=project.socials
-              image='//placehold.it/400x220'
-              alt=''
-              hasImage=false
-              %}
+    </article>
+    <article class="col-md-6 homelayout__first__dx d-flex align-items-center pl-md-3" >
+        <div class="d-block pl-md-5" >
+          <div class="homelayout__first__latnews">
+            <h2>{{t.home_news_title}}</h2>
+            <h1>Titolo dell'ultima news pubblicata. Lorem ipsum sic</h1>
+            <a href="#">{{t.software.read_more}} &rarr;</a>
           </div>
-          {% endfor %}
+          <div class="homelayout__first__newsletter mt-2 mt-md-5">
+              <h2>Newsletter</h2>
+              <form action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
 
-          {% for project in projects limit: 2 offset:3 %}
-
-            {% assign subtitle = project.subtitle | default: project.payoff %}
-
-              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-                {% include card.html
-                  title=project.title
-                  link=project.url
-                  comingsoon=project.comingsoon
-                  subtitle=subtitle
-                  socials=project.socials
-                  hasImage=false
-                  hasSocial=false
-                  %}
-              </div>
-              {% endfor %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            <div class="u-nbfc u-color-white u-padding-r-all u-xs-padding-all-none u-sizeFill u-flex u-flexAlignItemsCenter
-              u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
-
-              <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
-                <a href="{{ page.top_projects_link | relative_url }}" class="u-color-white u-textClean">
-                  <span class="u-text-r-l">{{ t.home_projects_others }}</span>
-                <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
-                u-textWeight-400">{{ site.projects | where: 'lang', active_lang | size }} {{ t.home_projects_count }}</span>
-                </a>
-              </h4>
-              <span class="Icon Icon-chevron-right u-flexJustifyRight u-textWeight-400 u-text-r-m"></span>
-
-            </div>
+                <div class="form-row align-items-center">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-white input-icon it-mail"></span>
+                      </div>
+                      <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
+                      <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email" placeholder="{{t.home_newsletter_placeholder }}">
+                      <input type="hidden" name="list" value="2">
+                      <div class="input-group-append">
+                        <button type="submit" class="input-group-text bg-primary input-submit">{{ t.home_newsletter_button }}</button>
+                      </div>
+                    </div>
+                    <p class="mt-2 mt-md-4 primary-color-a11">{{t.home_newsletter_footer}}</p>
+                  </div>
+              </form>
           </div>
-
-      </div>
-
-    </div>
-</section>
-
-<hr class="Separator-room u-background-grey-15" />
-<hr class="Separator Separator--down u-background-white" />
-
-<section class="u-nbfc u-background-white u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_news_title }}</h2>
-
-      {% assign posts = site.posts | where: 'lang', active_lang %}
-
-      <div class="Grid Grid--withGutterL">
-
-      {% for post in posts limit: 3 %}
-
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-            {% include card.html
-              date=post.date
-              title=post.title
-              link=post.url
-              text=excerpt
-              hasImage=false
-              flat=true
-              %}
-          </div>
-          {% endfor %}
-
-      </div>
-
-    </div>
-</section>
-
-<hr class="Separator-room u-background-white" />
-<hr class="Separator Separator--up u-background-50" />
-
-<section class="u-background-50 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter u-textCenter u-padding-bottom-xxl">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-white u-padding-r-bottom">{{ t.home_tools_title }}</h2>
-    <p class="u-text-r-xs u-color-5 u-layout-prose u-textCenter u-layoutCenter">{{ t.home_tools_subtitle }}</p>
-    <div class="tools-wrapper">
-      <div class="Grid tools-shadow">
-        <div class="u-layoutLeft">&#10092;</div>
-        <div class="u-layoutCenter"></div>
-        <div class="u-layoutRight">/&#10093;</div>
-      </div>
-
-      <div class="Grid Grid--withGutter u-layout-prose u-layoutCenter u-padding-top-xl u-color-white">
-        {% for tool in site.data.tools[active_lang] %}
-          <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-r-bottom u-margin-r-top">
-            <span class="Icon Icon-{{ tool.icon | default: 'file' }} u-text-r-xl"></span>
-          </div>
-          <div class="Grid-cell u-md-size9of12 u-lg-size9of12 u-margin-r-bottom u-margin-r-top">
-            <h3 class="u-text-r-m u-textWeight-600 u-textLeft u-padding-bottom-xs">
-              <a href="{{ tool.url }}" class="u-color-white u-textClean">
-                {{ tool.title | capitalize }}
-
-                {% if tool.comingsoon %}
-                <div class="u-inlineBlock u-padding-left-xs">
-                  <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-                    u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-                  {{ t.coming_soon }}</span>
-                </div>
-                {% endif %}
-              </a>
-            </h3>
-            <p class="u-textLeft u-lineHeight-l">{{ tool.subtitle }}</p>
-          </div>
-        {% endfor %}
-      </div>
+        </div>
+        
+    </article>
     </div>
   </div>
+
 </section>
+{% include banner-joinus.html extraclass="pt-2 pt-md-5 " %}
+
+{% include home-listing-items.html source='apis' title='Piattaforme abilitanti' withimages=true captiontitle='Come lo uso' captionurl='#' %}
+
+{% include home-listing-items.html source='apis' title='Altre piattaforme' withimages=true captiontitle='Come lo uso' captionurl='#' %}
+
+{% include home-listing-items.html source='apis' title='Software open source' withimages=true captiontitle='Come lo uso' captionurl='#' %}
+
+<hr class="grayline"/>
+
+{% include home-software-tags.html %}
+
+{% include home-listing-items.html 
+  additionalclass='light'
+  source='apis' 
+  title='API di piattaforme' 
+  limit=3 
+  itemdescription='abstract' 
+  captiontitle='Come lo uso' 
+  captionurl='#' %}
+
+<section class="home-discuss">
+  <div class="container">
+
+      <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
+          <h1>Partecipa</h1>
+          <a href="#" class="ml-auto more">Come lo uso &rarr;</a>
+      </div>
+      <div class="row row-eq-height">
+          <div class="col">
+              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
+                <figure class="d-flex w-100 align-items-center">
+                <img src="{{ '/assets/images/home-logo-forum.png' | relative_url}}">
+                </figure>
+                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
+              </article>
+          </div>
+          <div class="col">
+              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
+                <figure class="d-flex w-100 align-items-center">
+                <img src="{{ '/assets/images/home-logo-github.png' | relative_url}}">
+                </figure>
+                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
+              </article>
+          </div>
+          <div class="col">
+              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
+                <figure class="d-flex w-100 align-items-center">
+                <img src="{{ '/assets/images/home-logo-docs.png' | relative_url}}">
+                </figure>
+                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
+              </article>
+          </div>
+          <div class="col">
+              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
+                <figure class="d-flex w-100 align-items-center">
+                <img src="{{ '/assets/images/home-logo-slack.png' | relative_url}}">
+                </figure>
+                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
+              </article>
+          </div>
+      </div>
+  </div>
+</section>
+

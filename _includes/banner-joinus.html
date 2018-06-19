@@ -1,4 +1,5 @@
-<section class="banner-joinus pt-2 pb-2 pt-md-5 pb-md-5">
+{% assign extraclass = include.extraclass | default:'pt-2 pb-2 pt-md-5 pb-md-5' %}
+<section class="banner-joinus {{extraclass}}">
     <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
       <div class="d-md-flex align-items-center">
         <div class="position-relative">
@@ -12,5 +13,4 @@
       </div>
   
     </div>
-  </section>
-
+</section>

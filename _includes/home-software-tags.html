@@ -1,0 +1,17 @@
+{% assign software-tags = "Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit|Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit|Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit" | split:"|" %}
+
+<section class="home-software-tags">
+    <div class="container">
+    <h1 class="text-center">{{t.home_tags}}</h1>
+    <ul class="home-software-tags__list list-inline text-center">
+        {% for tag in software-tags %}
+        <li class="home-software-tags__item">
+            <a href="#">{{tag}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="text-center mt-2 mt-md-4 mb-2 mb-md-5 ">
+        <a href="#" class="home-software-tags__extra">Altri filtri</a>
+    </div>
+    </div>
+</section>

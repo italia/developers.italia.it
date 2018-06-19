@@ -23,7 +23,7 @@ layout: default
         <h1 class="d-inline-block">
           {{ page.description[active_lang_extended].localisedName|capitalize }} <span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span></h1>
         <div class="abstract-software">
-          <h2>Subtitle??? 
+          <h2>{{ page.description[active_lang_extended].genericName}}
             {% if page.isBasedOn != nil %}
             <br>
             {{ t.software.variant_by }} {{ page.legal.repoOwner }}
@@ -52,6 +52,7 @@ layout: default
               <p><span class="label">{{ t.software.technical_contact }} </span>
                 {% for contact in page.maintenance.contacts limit: 1 %}
                   <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
+                  {{ contact.phone }}
                 {% endfor %}
               </p>
             </div>           
@@ -90,7 +91,7 @@ layout: default
     <div class="card-columns">
       {% for video in page.description[active_lang_extended].videos %} 
       <div class="card">
-        <iframe width="420" height="315" src="{{ video }}" frameborder="0" ></iframe>
+        <div data-oembed-video="{{ video }}"></div>
       </div>
       {% endfor %}
 
@@ -108,16 +109,6 @@ layout: default
     <div class="row">
       <div class="col-sm-6 variant">
         <h4> {{ t.software.functinality_this_variant }} </h4>
-        <p> 
-          <a href="#">
-            {{ t.software.used_by}} {{ page.usedBy | size }}
-            {% if page.usedBy.size >= 1 %}
-              {{ t.software.administrations }}
-            {% else %}
-              {{ t.software.administration }}
-            {% endif %}
-          </a>
-        </p>
         <div class="function-list">
           {% if page.description[active_lang_extended].featureList.size > 10 %}
             {% for feature in page.description[active_lang_extended].featureList limit: 10 %}
@@ -137,39 +128,65 @@ layout: default
             {% endfor %}
           {% endif%}
         </div>
-      </div>
-      <div class="col-sm-6 variant">
-        <h4> {{ t.software.functinality_other_variant }} </h4>
-        <p>
-          <a href="#">
-            {{ page.oldVariant[active_lang_extended].localisedName | size }}
-            {% if page.oldVariant[active_lang_extended].localisedName.size > 1 %}
-              {{ t.software.variants_present }}
-            {% else %}
-              {{ t.software.variant_present }}
-            {% endif %}
-          </a>
-        </p>
-        <div class="function-list">
-          {% if page.oldVariant[active_lang_extended].featureList.size > 10 %}
-            {% for feature in page.oldVariant[active_lang_extended].featureList limit: 10 %}
-            <p> {{ feature }} </p>
-            {% endfor %}
-            <p>
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
-            </p>
-            <div class="collapse" id="otherFeature">
-              {% for feature in page.oldVariant[active_lang_extended].featureList offset: 10 %}
-              <p> {{ feature }} </p>
-              {% endfor %} 
+        {% if page.usedBy.size != nil %}
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false" aria-controls="by-amministration" class="count">
+              {{ t.software.used_by}} {{ page.usedBy | size }}
+              {% if page.usedBy.size >= 1 %}
+                {{ t.software.administrations }}
+              {% else %}
+                {{ t.software.administration }}
+              {% endif %}
+            </a>
+            <div class="collapse" id="by-amministration">
+              {% for item in page.usedBy %} 
+                <p> {{ item }} </p>
+              {% endfor %}
             </div>
-          {% else %}
-            {% for feature in page.oldVariant[active_lang_extended].featureList  %}
-            <p> {{ feature }} </p>
-            {% endfor %}
-          {% endif%}
-        </div>
+          </div>
+        {% endif %}
       </div>
+      {% if page.oldVariant.size != nil %}
+        <div class="col-sm-6 variant">
+          <h4> {{ t.software.functinality_other_variant }} </h4>
+          <div class="function-list">
+            {% if page.oldFeatureList[active_lang_extended].size > 10 %}
+              {% for feature in page.oldFeatureList[active_lang_extended] limit: 10 %}
+              <p> {{ feature }} </p>
+              {% endfor %}
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
+              <div class="collapse" id="otherFeature">
+                {% for feature in page.oldFeatureList[active_lang_extended] offset: 10 %}
+                <p> {{ feature }} </p>
+                {% endfor %} 
+              </div>
+            {% else %}
+              {% for feature in page.oldVariant[active_lang_extended]  %}
+              <p> {{ feature }} </p>
+              {% endfor %}
+            {% endif%}
+          </div>
+          <div id="oldVariant">
+            <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant" class="count">
+                {{ page.oldVariant | size }}
+                {% if page.oldVariant.size > 1 %}
+                  {{ t.software.variants_present }}
+                {% else %}
+                  {{ t.software.variant_present }}
+                {% endif %}
+            </a>
+            <div class="collapse" id="listVariant">
+              {% for variant in page.oldVariant  %}
+              <div class="variantDetail">
+               <a href="{{ variant[active_lang_extended].url }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
+               <p><span class="label">{{ t.software.additional_features }}</span>: {{ variant[active_lang_extended].features }}</p>
+               <p><span class="label">{{ t.software.vitality }}: {{ variant.vitalityScore }}%</span></p>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}  
     </div>
   </div>
   <div class="interestRelatedSoftwares">
@@ -206,12 +223,18 @@ layout: default
             <p>{{ t.software.detailed_info }} </p>
             <div class="title">
               <h2 class="h1"> {{ page.description[active_lang_extended].localisedName}} <span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span></h2>
-              <h2>Subtitle???</h2>
+              <h2>{{ page.description[active_lang_extended].genericName}} </h2>
             </div>
           </div>
           <div class="heading-maintenance">
             <div class="row">
-              <div class="col-md">
+              <div class="col-md-2">
+                <p>
+                  <span class="label">{{ t.software.last_release }}</span>
+                  {{ page.releaseDate }}
+                </p>
+              </div>
+              <div class="col-md-3">
                 <p>
                   <span class="label">{{ t.software.maintainance_type }}</span>
                   {{ page.maintenance.type }}
@@ -221,26 +244,24 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.contract_with }}</span>
                   {% for contractor in page.maintenance.contractors %}
-                    <a href="{{ contractor.website }}">{{ contractor.name }}</a> {{ t.software.until }} {{ contractor.until}}
+                    <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{ contractor.until}}
                   {% endfor %}
                 </p>
               </div>
+            </div>
+          </div>
+          <div class="heading-maintenance-contact">
+            <p>
+              <span class="label">{{ t.software.technical_contact }}</span>
+            </p>
+            <div class="row">
+              {% for contact in page.maintenance.contacts %}
               <div class="col-md">
                 <p>
-                  <span class="label">{{ t.software.technical_contact }}</span>
-                  {% for contact in page.maintenance.contacts %}
-                    <span class="contact">
-                      <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>  {{ contact.phone }}
-                    </span>
-                  {% endfor %}
+                  <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>  {{ contact.phone }}
                 </p>
               </div>
-              <div class="col-md">
-                <p>
-                  <span class="label">{{ t.software.last_release }}</span>
-                  {{ page.releaseDate }}
-                </p>
-              </div>
+              {% endfor %}
             </div>
           </div>
           <div class="heading-legal-dependencies">

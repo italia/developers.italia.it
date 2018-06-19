@@ -1,0 +1,43 @@
+{% assign blocks = include.blocks %}
+
+{% for block in blocks %}
+{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% assign coldim = 'col-sm-6' %}
+{% assign colorder = 'order-1|order-2' | split:'|' %}
+{% if thecycle == 'even' %}
+    {% assign colorder = 'order-2|order-1' | split:'|' %}
+{% endif %}
+<section class="alternateblock">
+    <div class="container position-relative">
+        <div class="row d-flex align-items-center pt-2 pb-2 pt-md-5 pb-md-5">
+            
+            {% if block.image %}
+            <div class="{{coldim}} {{colorder[0]}} text-center" >
+                <img src="{{block.image | relative_url}}" alt="{{block.title}}" class="img-fluid">
+            </div>
+            {% else %}
+                {%capture coldim %}col{% endcapture %}
+            {% endif %}
+            <div class="{{coldim}} {{colorder[1]}}" >
+                <h1 {% if thecycle == 'even' %}class="text-right"{% endif %}>{{block.title}}</h1>
+                {% if block.text!=nill %}
+                    <div class="font-serif mt-md-3 mb-md-3 alternateblock__text {% if thecycle == 'even' %}text-right{% endif %}">{{block.text | markdownify }}</div>                    
+                {% endif %}
+                {% if block.buttons!=nill %}
+                    <div class="mt-2 mt-md-4 mb-2 {% if thecycle == 'even' %}text-right{% endif %}">
+                        {% for button in block.buttons %}
+                            <a href="{{button.url}}" class="{{button.class}} mr-2 mt-2">{{button.label}}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="vertical-line d-none d-md-block"></div>
+        <div class="vertical-line left-25 d-none d-md-block"></div>
+        <div class="vertical-line left-50 d-none d-md-block"></div>
+        <div class="vertical-line left-75 d-none d-md-block"></div>
+        <div class="vertical-line left-100 d-none d-md-block"></div>
+    </div>
+</section>
+{% endfor %}
+
