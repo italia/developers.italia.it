@@ -42,17 +42,20 @@ it:
 
     project_leader: Project leader
 
-    home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
+    home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
+    home_hero_button: Scopri di più
+    home_hero_buttonurl: '#'
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
-    home_newsletter_footer: Rimani in contatto per essere informato via via che aggiungeremo nuovi progetti. Non ti assilleremo con troppe email, parola di sviluppatore.
+    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatore.
     home_projects_title: Progetti in evidenza
     home_projects_expand: per saperne di più
     home_projects_others: Tutti i progetti
     home_projects_count: progetti in totale
     home_news_title: Novità
     home_news_expand: per saperne di più
+    home_tags: Cerca per argomento
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -189,7 +192,9 @@ en:
     project_leader: Project leaders
 
     home_hero: A community of developers who design and make Italian digital public services
-    home_newsletter_title: Subscribe to our Newlsetter
+    home_hero_button: Scopri di più
+    home_hero_buttonurl: '#'
+    home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
     home_newsletter_footer: Stay in touch to be informed as we add more projects. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
@@ -199,6 +204,7 @@ en:
     home_projects_count: total projects
     home_news_title: News
     home_news_expand: read more
+    home_tags: Browse by tag
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
