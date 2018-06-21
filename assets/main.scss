@@ -147,7 +147,12 @@ html, body {
                 display: block;
                 font-size: 1.15rem;
                 font-weight: 600;
+                
             }
+            &.active {
+                border-bottom: 4px solid $primary !important;
+            }
+            
         }
         & li:nth-child(-n+3) {
             background-color: #fff;
@@ -677,4 +682,186 @@ html, body {
         }
     }
 }
+.project {
+    &__first-part {
+        background-color: #F0F6FC;
+        padding: 2rem 0;
+        position: relative;
+        overflow-y: hidden;
+        z-index: 0;
 
+        @include media-breakpoint-up(md) {
+            padding: 4rem 0 5rem 0;
+          }
+
+        h1,h2, h6 {
+            color: #17324D;
+            
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 3.5rem;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 3rem;
+            margin-left: 0.5rem;
+        }
+        h6 {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    &__desc {
+        color: #455B71;
+    }
+    &__heroback {
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: inline;
+            position: absolute;
+            z-index: -1;
+            font-size: 10rem;
+            font-weight: 800;
+            line-height: 8rem;
+            letter-spacing: -0.5rem;
+            bottom: 0;
+            color: #EAEEF2;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-transform: uppercase;
+        }
+    }
+    &__actors {
+        li {
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__leaders {
+        background-color: #fff;
+        box-shadow: 0 0 80 0 rgba(0,43,85,0.1);
+        padding: 2rem;
+        border-radius: 0.5rem;
+
+        &__item {
+            img {
+                border-radius: 100%;
+            }
+        }
+    }
+    &__content {
+        background-color: #FAFBFD;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1rem;
+        &:after {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: block;
+                content: ' ';
+                width: 100%;
+                position: absolute;
+                height: 4rem;
+                background-color: #fff;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+        }
+
+    }
+    &__maincontent {
+        background-color: #fff;
+        color: #455b71;
+        padding: 2rem 1rem;
+        box-shadow: 0 10px 58px 0 rgba(90,103,114, 0.2);
+        margin: 1rem 0;
+        position: relative;
+        z-index: 10;
+
+        @include media-breakpoint-up(md) {
+            padding: 4rem;
+            margin: 1rem 0 6rem 0;
+        }
+    }
+    &__resources {
+        h1 {
+            color: #17324D;
+            margin:1rem 0;
+            @include media-breakpoint-up(md) {
+                margin: 4rem 0 3rem 0;
+            }
+        }
+        &-list {
+            margin: 1rem;
+            @include media-breakpoint-up(md) {
+                margin: 3rem 2rem;
+            }
+            li {
+                margin-left: 2.2rem;
+                position: relative;
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 2rem; 
+                }
+                p {
+                    color: #455B71;
+                    
+                }
+            }
+        }
+        &-itemtitle {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        &-icon {
+            left: 0;
+            position: absolute;
+            margin-left: -2.6rem;
+            color: #fff;
+            background-color: $primary;
+            line-height: 1;
+            padding: 0.4rem;
+            border-radius: 100%;
+            font-size: 0.8rem;
+        }
+    }
+    &__apis {
+        background-color: #FAFBFD;
+        padding: 2rem 0;
+        h1 {
+            color: #17324D;
+            padding:1rem 0;
+            @include media-breakpoint-up(md) {
+                padding: 2rem 0 1.5rem 0;
+            }
+        }
+        article {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 10px 58px 0 rgba(90,103,114, 0.2);
+
+            @include media-breakpoint-up(md) {
+                padding: 2rem;
+            }
+            h1 {
+                color: #333333;
+                font-size: 1.2rem;
+                letter-spacing: 0;
+                margin: 0.5rem 0;
+                padding: 0;
+            }
+            p {
+                color: #455B71
+            }
+            .more {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}

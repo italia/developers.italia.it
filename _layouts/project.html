@@ -1,59 +1,78 @@
 ---
 layout: default
 ---
+{% comment %}
+This is a partial restyling.
+Still to-do:
+- DocsIta integration
+- Forum integration
+- New timeline
+{% endcomment %}
 
 {% include setlang.html %}
-
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl project-title-wrapper">
-  <div class="project-shadow2">
-    {{ page.title }}
-  </div>
-  <div class="project-shadow1">
-    {{ page.subtitle }}
-  </div>
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {% if page.comingsoon %}
-      <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-        u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-      {{ t.coming_soon }}</span>
-    {% endif %}
-    <span class="u-cf">
-      <strong class="u-textWeight-600">{{ page.title }}</strong>{% if page.subtitle %} - {{ page.subtitle }} {% endif %}
-    </span>
-    </h1>
-</div>
-
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--down u-background-grey-15" />
-
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
-
-    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      <div class="u-layout-prose u-text-r-xs">
-      <h2 class="u-text-r-xxl u-color-50">{{ page.payoff }}</h2>
-      <p class="u-textWeight-300 u-text-r-m u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>
-      <div class="Prose Project">
-        {{ content }}
+{% assign actors = site.data.actors %}
+<div class="project__first-part">
+  <div class="container">
+    <div class="d-flex">
+      {% if page.abilitante %}
+      <h6 class="mb-2 mb-md-4">{{t.project_abilitante}}</h6>
+      {% endif %}
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="project__header">
+          <h1 class="d-inline h1">{{ page.title }}</h1>
+          <h2 class="d-inline h1">{{ page.subtitle }}</h2>
+          {% if page.description %}
+          <p class="lead pt-3 pb-3 project__desc">
+            {{page.description}}
+          </p>
+          {% endif %}
+        </div>
+        <div class="project__actors row">
+          {% if page.owners %}
+            <div class="col-4">
+              <span class="d-block">{{t.project_owner}}</span>
+              <ul class="list-unstyled">
+                {% for actor in page.owners %}
+                <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          {% if page.managers %}
+            <div class="col-4">
+              <span class="d-block">{{t.project_manager}}</span>
+              <ul class="list-unstyled">
+                {% for actor in page.managers %}
+                <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </div>
       </div>
+      <div class="col-md-3">
+        {% include github_team_members.html %}
       </div>
     </div>
-
-    {% capture toc %}{{ content | toc_only }}{% endcapture %}
-    {% include sideblock.html title=page.subtitle content=toc %}
-    
-    {% comment %}
-      {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
-      {% include sideblock.html title=page.subtitle content=pills %}
-    {% endcomment %}
-
-    
-
-
+    <div class="project__heroback">
+       {{ page.title }}
+    </div>
   </div>
-
-  <div id="github-screenshot" role="presentation">
-    <img src="/assets/images/github.png" alt="">
-  </div>
-
 </div>
+{% if page.resources %}
+  {% include project-resources.html %}
+{% endif %}
+
+<section class="project__content">
+  <div class="container d-flex justify-content-center">
+
+    <div class="project__maincontent col-md-10">
+      {{page.content}}
+    </div>
+
+  </div>
+</section>
+
+{% include project-apis.html %}
