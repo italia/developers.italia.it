@@ -49,11 +49,9 @@ layout: default
 </section>
 {% include banner-joinus.html extraclass="pt-2 pt-md-5 " %}
 
-{% include home-listing-items.html source='apis' title='Piattaforme abilitanti' withimages=true captiontitle='Come lo uso' captionurl='#' %}
+{% include home-listing-items.html source='type:projects' limit=4 title='Piattaforme' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' %}
 
-{% include home-listing-items.html source='apis' title='Altre piattaforme' withimages=true captiontitle='Come lo uso' captionurl='#' %}
-
-{% include home-listing-items.html source='apis' title='Software open source' withimages=true captiontitle='Come lo uso' captionurl='#' %}
+{% include home-listing-items.html source='data:apis' title='Software open source' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' %}
 
 <hr class="grayline"/>
 
@@ -61,12 +59,12 @@ layout: default
 
 {% include home-listing-items.html 
   additionalclass='light'
-  source='apis' 
+  source='data:apis' 
   title='API di piattaforme' 
   limit=3 
   itemdescription='abstract' 
   captiontitle='Come lo uso' 
-  captionurl='#' %}
+  captionurl='/it/come-lo-uso' %}
 
 <section class="home-discuss">
   <div class="container">

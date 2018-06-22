@@ -4,44 +4,32 @@ lang: it
 ---
 
 {% include setlang.html %}
+{% assign projects = site.projects | where:"lang",active_lang %}
 
-<div class="u-background-50 u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-             {{ page.title | capitalize }}</h1>
-  <p class="u-text-r-xs u-padding-r-all u-color-10 u-layout-prose u-layoutCenter u-padding-bottom-xxl u-margin-bottom-xxl">
-    {{ t.home_hero }}
-  </p>
-</div>
-
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
-
-<hr class="Separator Separator--down u-background-grey-15">
-
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-cf">
-
-    <div class="js-Masonry-container u-pullUp-10" data-columns>
-
-      {% assign projects = site.projects | where: 'lang', active_lang | sort: 'order' | reverse %}
-
-      {% for project in projects %}
-
-      <div class="Masonry-item js-Masonry-item">
-        {% include card.html
-          title=project.title
-          link=project.url
-          comingsoon=project.comingsoon
-          subtitle=project.subtitle
-          text=project.description
-          socials=project.socials
-          image=project.logo
-          alt=''
-          %}
+<div class="projectslist">
+  <div class="container">
+  <section class="projectslist__content mt-2 mt-md-5 mb-2 mb-md-5 pt-2 pt-md-4 pb-2">
+    <h1>{{ page.title | capitalize }}</h1>
+    <div class="font-serif color-content mt-2 mt-md-4 mb-2 mb-md-4">{{page.content}}</div>
+    <div class="projectslist__listing pt-2 pt-md-4 pb-2 pb-md-4">
+      <div class="row row-eq-height">
+        {% for proj in projects %}
+        <div class="col-md-4 p-2 p-md-3">
+          <article class="d-flex flex-column align-items-start h-100 mb-md-2">
+              {% if proj.logo %}
+              <figure>
+              <img class="w-100" src="{{proj.logo | relative_url}}">
+              </figure>
+              {% endif %}
+              <h1 class="projectslist__listing__title">{{proj.title}}</h1>
+              <a class="projectslist__listing__url mt-auto" href="#">{{t.software.read_more}} &rarr;</a>
+          </article>
+        </div>
+        {% endfor %}
       </div>
-
-      {% endfor %}
     </div>
-
+  </section>
   </div>
 </div>
+
+
