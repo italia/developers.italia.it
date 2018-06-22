@@ -20,6 +20,9 @@ $font-family-serif: 'Lora', 'Georgia', Serif;
 .font-base {
     font-family: $font-family-base;
 }
+.color-content {
+    color: #455B71;
+}
 
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
@@ -467,7 +470,7 @@ html, body {
 .home-listing-items {
     padding: 2rem 0;
     @include media-breakpoint-up(md) {
-        padding: 6rem 0;
+        padding: 3rem 0;
     }
 
     .more {
@@ -865,3 +868,42 @@ html, body {
         }
     }
 }
+
+.projectslist {
+    &__content {
+        h1 {
+            color: #17324D;
+            font-size: 3.5rem;
+        }
+        
+    }
+    &__listing {
+        article {
+            figure {
+                background-color: #fff;
+                @include media-breakpoint-up(md) {
+                    min-height: 191px;
+                }
+            }
+            img {
+                @include media-breakpoint-up(md) {
+                    box-shadow: 0 10px 58px 0 rgba(90,103,114,0.2);
+                }
+            }
+
+            h1 {
+                color: #333333;
+                font-size: 1.2rem;
+                margin-top:1rem;
+                letter-spacing: 0;
+            }
+            
+        }
+        &__url {
+            font-weight: 600;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+

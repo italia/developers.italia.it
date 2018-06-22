@@ -1,20 +1,24 @@
-{% comment %}
-=============
-THIS IS A SEMI DUMMY FILE, IT'S A WIP IMPLEMENTATION
-=============
-{% endcomment %}
-
-{% assign items = site.data[include.source] %}
 {% assign limititems = include.limit | default:4 %}
 {% assign title = include.title %}
 {% assign captiontitle = include.captiontitle %}
 {% assign captionurl = include.captionurl %}
 {% assign withimages = include.withimages | default: false %}
 {% assign itemdescription = include.itemdescription %}
-
+{% assign sourceconfig = include.source | split:':' %}
 
 <section class="home-listing-items source-{{include.source}} {{include.additionalclass}}">
-
+    {% if sourceconfig[0]=='layout' %}
+        {% assign target = sourceconfig[1] %}
+        {% assign sourcepages = site.pages | where:"layout", target %}
+        {% assign items = sourcepages | where:"lang", active_lang %}
+    {% elsif sourceconfig[0]=='type'  %}
+        {% assign target = sourceconfig[1] %}
+        {% assign sourcepages = site[target] | where:"lang", active_lang %}
+        {% assign items = sourcepages %}
+    {% elsif sourceconfig[0]=='data'  %}
+        {% assign target = sourceconfig[1] %}  
+        {% assign items = site.data[target] %}
+    {% endif %}
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
             <h1>{{title}}</h1>
@@ -27,13 +31,13 @@ THIS IS A SEMI DUMMY FILE, IT'S A WIP IMPLEMENTATION
                 <div class="col">
                     <article class="d-flex flex-column align-items-start h-100 {% if withimages!=true %}withshadow{%endif%}" >
                         {% if withimages==true %}
-                        <img class="w-100 home-listing-item__img" src="http://placehold.it/272x176">
+                        <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
                         {% endif %}
-                        <h1 class="home-listing-item__title">{{item.name}}</h1>
+                        <h1 class="home-listing-item__title ">{{item.name | default:item.title}}</h1>
                         {% if itemdescription %}
                             <p>{{item[itemdescription]}}</p>
                         {% endif %}
-                        <a class="home-listing-item__url mt-auto" href="#">Leggi di più &rarr;</a>
+                        <a class="home-listing-item__url mt-auto" href="#">{{t.software.read_more}} &rarr;</a>
                     </article>
                 </div>
             {% endfor %}
