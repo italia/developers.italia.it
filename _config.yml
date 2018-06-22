@@ -46,7 +46,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - jekyll-paginate
   - jekyll-toc
   - jekyll-sitemap
 exclude:
@@ -64,8 +63,7 @@ exclude:
   - swagger/dist
   - swagger/node_modules
 
-paginate: 10
-paginate_path: "/news/page:num/"
+
 
 # tag pages
 tag_page_layout: posts_by_tag
@@ -149,3 +147,4 @@ sass:
       - node_modules
       - assets
     sass_dir: /
+
