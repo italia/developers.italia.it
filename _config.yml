@@ -46,7 +46,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-toc
   - jekyll-sitemap
 exclude:
@@ -64,12 +64,16 @@ exclude:
   - swagger/dist
   - swagger/node_modules
 
-paginate: 10
-paginate_path: "/news/page:num/"
+#paginate: 10
+#paginate_path: "/news/page:num/"
+pagination:
+  per_page: 10
+  path: "/news/page:num/"
+  
 
-# tag pages
-tag_page_layout: posts_by_tag
-tag_page_dir: news
+# tag pages DEPRECATED --- TO-DO
+#tag_page_layout: posts_by_tag
+#tag_page_dir: news
 
 # Custom vars
 theme_color: "#0066cc"

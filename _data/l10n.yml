@@ -40,7 +40,7 @@ it:
     paginator_next_page: pagina successiva
     paginator_page: pagina
 
-    project_leader: Project leader
+    project_leader: Community leader
 
     home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
     home_hero_button: Scopri di più
@@ -99,6 +99,10 @@ it:
         cie: Carta d'Identità Elettronica
         security: Security
         18app: 18App
+    project_abilitante: Piattaforma abilitante
+    project_owner: Proprietario
+    project_manager: Gestore
+    project_risorse: Tutte le risorse
 
     swagger:
       download: "Scarica OpenAPI"
@@ -106,6 +110,7 @@ it:
       developer: "Erogatore"
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
+      goToCard: Vai alla scheda
 
     software:
       variant_by: Variante di
@@ -189,7 +194,7 @@ en:
     paginator_next_page: next page
     paginator_page: page
 
-    project_leader: Project leaders
+    project_leader: Community leaders
 
     home_hero: A community of developers who design and make Italian digital public services
     home_hero_button: Scopri di più
@@ -246,12 +251,17 @@ en:
         daf: Data & Analytics Framework
         design: Italia Design System
         18app: 18App
+    project_abilitante: Piattaforma abilitante
+    project_owner: Owner
+    project_manager: Manager
+    project_risorse: Resources
 
     swagger:
       download: "Download OpenAPI"
       url: "Server"
       channel: "Contact"
       tos: "Terms of service"
+      goToCard: Vai alla scheda
 
     software:
       variant_by: Variant of

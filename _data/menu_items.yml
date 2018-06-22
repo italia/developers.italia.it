@@ -1,6 +1,7 @@
 it:
   - title: Piattaforme
-    url: '#'
+    url: '/it/piattaforme/'
+    active_by_layout: 'project'
   - title: Software
     url: '#'
   - title: API

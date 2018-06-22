@@ -1,5 +1,5 @@
 ---
-title: Progetti
+title: Piattaforme
 layout: projects
 lang: it
 redirect_from:
