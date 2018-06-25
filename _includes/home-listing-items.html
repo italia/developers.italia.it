@@ -37,7 +37,7 @@
                         {% if itemdescription %}
                             <p>{{item[itemdescription]}}</p>
                         {% endif %}
-                        <a class="home-listing-item__url mt-auto" href="#">{{t.software.read_more}} &rarr;</a>
+                        <a class="home-listing-item__url mt-auto" href="{{item.url}}">{{t.software.read_more}} &rarr;</a>
                     </article>
                 </div>
             {% endfor %}
