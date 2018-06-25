@@ -12,24 +12,59 @@ layout: default
   {% assign subnav = site.data[page.subnav] %}
   {% include linklist.html items=subnav dynamic=true %}
 
-{% endcomment %}
+{% endcomment %} 
 
-{% assign software = site.data.softwares | where_exp:"software", "software.language contains active_lang" %}
 {% assign root = '/' | append: active_lang | append: '/software' %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title }}</h1>
-    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
-</div>
-
-<div class="container">
-  <div class="row">
-  {% for software in softwares %}
-    <div class="col">
-      {% assign url = '' %}
-      ..........
+<div class="container page-softwares-list">
+ <div class="intro">
+    <h1>{{ page.title }}</h1>
+    <p class="subtitle">{{ page.subtitle }}</p>
+  </div>      
+  <div class="container list-item-sorting">
+    <div class="software_macro_category_title row">
+      <div class="col-md-7">
+        <h2>{{ t.software.software_open }}</h2>
+      </div>
+       <div class="col-md-5 how">
+        <a href="#">Come lo uso &rarr;</a>
+      </div>
     </div>
-  {% endfor %} 
+    <div class="row row-eq-height">
+    {% for software in site.data.softwares limit: 6 %}
+      {% if software.it.riuso.codiceIPA == nill %}
+      <div class="col-sm col-md-4 item">
+        <div class="main-image" style=" background: url({{ software.description[active_lang_extended].screenshots | first }}) no-repeat center center;">
+        </div>
+        <p class="name">{{ software.description[active_lang_extended].localisedName }}</p>
+        <a href="/{{active_lang}}/software/{{ software.name | replace: ' ', '-' }}"> {{ t.software.read_more }} &rarr;</a>
+      </div>
+      {% endif %}
+    {% endfor %} 
+    </div>
+    {% include internal-link.html target="opensource" %} 
+  </div>
+  <div class="container list-item-sorting">
+    <div class="software_macro_category_title row">
+      <div class="col-md-7">
+        <h2>{{ t.software.reuse_software }}</h2>
+      </div>
+      <div class="col-md-5 how">
+        <a href="#">Come lo uso &rarr;</a>
+      </div>
+    </div>
+    <div class="row row-eq-height">
+    {% for software in site.data.softwares limit: 6 %}
+      {% if software.it.riuso.codiceIPA != nill %}
+      <div class="col-sm col-md-4 item">
+        <div class="main-image" style=" background: url({{ software.description[active_lang_extended].screenshots | first }}) no-repeat center center;">
+        </div>
+        <p class="name">{{ software.description[active_lang_extended].localisedName }}</p>
+        <a href="{{ software.name | replace: ' ', '-' }}"> {{ t.software.read_more }} &rarr;</a>
+      </div>
+      {% endif %}
+    {% endfor %} 
+    </div>
+    {% include internal-link.html target="softwareriuso" %} 
   </div>
 </div>
