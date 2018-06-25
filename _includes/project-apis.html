@@ -1,0 +1,29 @@
+{% assign allapis = site.data.apis | where_exp:"item","item.projects contains page.ref"  %}
+{% assign apis = allapis | where_exp:"item","item.language contains 'page.lang'"  %}
+
+{% if apis.size==0 %}
+    {% assign apis = site.data.apis | where_exp:"item","item.projects contains page.ref"  %}
+{% endif %}
+
+
+{% if apis.size > 0 %}
+<section class="project__apis">
+    
+    <div class="container">
+            <h1 class="text-center" >API</h1>
+        <div class="mb-2 mb-md-4 row row-eq-height">
+            {% for api in apis limit:3 %}
+            <div class="col-sm-4">
+                <article class="d-flex flex-column align-items-start h-100 ">
+                    <h1>{{api.name}}</h1>
+                    <p>{{api.abstract}}</p>
+                    <a class="more mt-auto" href="#">{{t.software.goToCard}} &rarr;</a>
+                </article>
+            </div>
+            {% endfor %}
+           
+        </div>
+    </div>
+</section>
+{% endif %}
+

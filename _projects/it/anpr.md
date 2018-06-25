@@ -6,6 +6,7 @@ payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.
 lang: it
 order: 4
+ref: anpr-project
 maintainers:
   - carlo
   - mirko
@@ -13,6 +14,52 @@ highlight: true
 comingsoon: false
 layout: project
 github_team: anpr
+abilitante: true
+owners:
+    - mininterno
+managers:
+    - sogei
+resources:
+    - In primo piano:
+        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+    - SDK:
+        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+    - Risorse grafiche:
+        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          icon: github
+          url: '#'
+          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
+            
 ---
 
 ## Intro
@@ -40,39 +87,33 @@ Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: 
 
 {::nomarkdown}
 
-<form class="Form Form--spaced u-padding-all-l u-background-grey-10 u-text-r-xs u-layout-prose u-margin-bottom-xl"
-      action="https://a0x0b4.emailsp.com/frontend/subscribe.aspx">
-
-        <div class="Form-field">
-            <label class="Form-label is-required" for="email" >Email *</label>
-            <input class="Form-input" id="email" type="email" name="email" aria-required="true" required placeholder="Inserisci la tua e-mail">
-        </div>
-        <div class="Form-field">
-            <label class="Form-label is-required" for="campo3">Gruppo</label>
-            <select class="Form-input u-text-r-s u-borderRadius-m"
-            		id="campo3" name="campo3" aria-required="true" >
-            <option disabled selected></option>
-            <option value=""></option>
+<form class="border border-light lightgrey-bg-c1 p-2 p-md-3 mt-2 mb-2">
+  <div class="form-group">
+    <span class="d-block small font-weight-bold">Email *</span>
+    <input type="email" class="form-control" id="email" placeholder="Inserisci la tua e-mail" required>
+    <label for="email" class="sr-only">Email *</label>
+  </div>
+  <div class="form-group">
+    <span class="d-block small font-weight-bold">Gruppo *</span>
+    <select id="campo3" name="campo3" required>
+      <option disabled selected></option>
+      <option value=""></option>
 			<option value="Comune">Comune</option>
 			<option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
-          </select>
-       	</div>
-        <fieldset class="Form-field Form-field--choose Grid-cell">
-        	<legend class="Form-legend is-required">Privacy *</legend>
-        	<label class="Form-label is-required" for="privacy">
-        	<input type="checkbox" class="Form-input" id="privacy" name="privacy" aria-required="true" required>
-        	<span class="Form-fieldIcon" role="presentation"></span>
-        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a>
-        	</label>
-        </fieldset>
-    	<div class="Form-field Grid-cell">
-    		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
-        	<button type="submit" class="Button Button--default u-text-xs">Iscriviti</button>
-    	</div>
-
-    <input type="hidden" name="group" value="16" >
+    </select>
+    <label for="campo3" class="sr-only">Gruppo</label>
+  </div>
+  <div class="form-check pl-0">
+    <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+    <label class="d-block " for="privacy">Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a></label>
+  </div>
+  <p class="small" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
+  <button type="submit" class="btn btn-primary">Iscriviti</button>
+  <input type="hidden" name="group" value="16" >
 	<input type="hidden" name="list" value="3">
+
 </form>
+
 
 
 {:/}

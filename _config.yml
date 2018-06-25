@@ -64,10 +64,9 @@ exclude:
   - swagger/node_modules
 
 
-
-# tag pages
-tag_page_layout: posts_by_tag
-tag_page_dir: news
+# tag pages DEPRECATED --- TO-DO
+#tag_page_layout: posts_by_tag
+#tag_page_dir: news
 
 # Custom vars
 theme_color: "#0066cc"
