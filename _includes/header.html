@@ -1,34 +1,42 @@
+{% assign network_links = site.data.network_links %}
+
 <header class="primary-bg">
-  <div class="Header-banner primary-bg-a7">
+  <div class="Header-banner primary-bg-a7 position-relative">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
-      <div class="Header-owner__institutions container">
-      <div class="d-inline-block d-md-none d-lg-none">
-          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
-            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
-              {% include slim_icon.html %}
-          </a>
-      </div>
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
       
-        <a href="{{ site.partner_link }}">
-          <span class="d-inline-block d-md-none d-lg-none  white-color">
-            {{ site.partner_short }}
-          </span>
-          <span class="d-sm-none d-md-inline-block white-color">
-            {{ site.partner_short }}
-          </span>
-        </a>
-        <span class="white-color">&nbsp;+&nbsp;</span>
-        <a href="{{ site.owner_link }}">
+        <div class="d-block">
+        <a href="{{ site.owner_link }}" class="py-2 d-inline-block">
           <span class="d-inline-block d-md-none d-lg-none white-color">
             {{ site.owner_short }}
           </span>
-          <span class="d-sm-none d-md-inline-block white-color">
+          <span class="d-none d-md-inline-block white-color">
             {{ site.owner_full }}
           </span>
         </a>
+        <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+        <a href="{{ site.partner_link }}" class="py-2 d-inline-block">
+          <span class="d-inline-block d-md-none d-lg-none  white-color">
+            {{ site.partner_short }}
+          </span>
+          <span class="d-none d-md-inline-block white-color">
+            {{ site.partner_short }}
+          </span>
+        </a>
+        <a href="#" class="d-inline-block d-lg-none py-2 text-white" id="slimDropdown" role="button" data-activate-element >
+          <span class="icon it-expand px-2"></span>
+        </a>
+        </div>
+        
+        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-block'
+           liclass='list-inline-item m-0 py-2 px-3'  %}
+
         {% include lang_switch.html %}
     </div>
-    
+    </div>
+    <div class="dropdown-menu  Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+         data-activatedby="slimDropdown">
+    {% include network-links-menu.html class='Header-external--mobile container' %}
     </div>
   </div>
 
@@ -46,21 +54,12 @@
             {% if site.pill %}
               <span class="badge badge-pill badge-primary primary-bg-a7">{{ site.pill }}</span>{%
                 endif %}
-            <span class="d-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
+            <span class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
           </a>
         </h1>
       </div>
 
-      {% if include.hasSearch %}
-      <div class="Header-searchTrigger d-inline-block d-md-none">
-        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search u-background-50" title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
-        </button>
-        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden u-background-50" title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
-        </button>
-      </div>
-      {% endif %}
-
-      <div class="Header-utils mr-2 mr-md-4">
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
         <div class="Header-social ">
           <span class="text-white mr-3">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons d-inline-block list-inline mb-0">
@@ -76,21 +75,8 @@
         </div>
       {% endif %}
 
-      <div class="Header-toggle d-inline-block d-md-none">
-        <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
-          <span class="Hamburger-toggle" role="presentation"></span>
-          <span class="Header-toggleText" role="presentation">Menu</span>
-        </a>
-      </div>
-
     </div>
   </div>
   <!-- Header-navbar -->
-
-
-  <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
-    <nav class="Megamenu Megamenu--default js-megamenu u-background-50" data-rel=".Offcanvas .Treeview"></nav>
-  </div>
-
 
 </header>

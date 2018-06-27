@@ -1,10 +1,10 @@
 {% if site.data.l10n.size > 1 %}
-<div class="Header-lang_switch dropdown float-right">
-  <a href="#" id="languagesDropButton" role="button" class="Header-language d-inline-block text-white"
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-inline-block text-white py-2 pl-0 pl-md-3"
    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">{{ t.active_lang }}:</span>
-    <span class="icon it-expand"></span>
     <span class="">{{ site.data.l10n[active_lang].code | upcase }}</span>
+    <span class="sr-only">{{ t.active_lang }}:</span>
+    <span class="icon it-expand px-2"></span>
   </a>
 
  

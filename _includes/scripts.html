@@ -27,6 +27,13 @@
     $('body').addClass('hide-focus');
   })
 
+  $('*[data-activate-element]').on('click',function(e){
+    var genid = $(this).attr('id');
+    var $targetelement = $('*[data-activatedby="'+genid+'"]');
+    $targetelement.toggleClass('deactive');
+    
+  });
+
   var ctx = document.getElementById("vitalityChart").getContext("2d");
   var myLineChart = new Chart(ctx, {
     type: 'line',

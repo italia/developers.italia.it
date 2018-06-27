@@ -24,6 +24,15 @@ $font-family-serif: 'Lora', 'Georgia', Serif;
 .color-content {
     color: #455B71;
 }
+.z-10 {
+    z-index: 10;
+}
+.h-100vh {
+    height: 100vh;
+}
+.w-100vw {
+    width: 100vw;
+}
 
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
@@ -42,13 +51,90 @@ html, body {
 }
 .Header {
 
-    &-banner {
-        padding: 1rem ;
-    }
-
     &-language {
         .icon {
             font-size: 0.8rem;
+        }
+    }
+    &-external-wrapper {
+        border-top: 1px solid rgba(255,255,255,0.2);
+        &.deactive {
+            display: none !important;
+        }
+    }
+    &-external {
+        a {
+            color: #fff;
+            display: inline-block;
+        }
+        .delimiter {
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+        .first-delimiter {
+            border-left: 1px solid rgba(255,255,255,0.2);
+        }
+        .current {
+            border-bottom: 2px solid #fff;
+
+            a {
+            font-weight: 600;
+            }
+        }
+        .label {
+            display: none;
+        }
+    }
+    &-external--mobile {
+        width: 100%;
+        padding-top: 1rem;
+        li {
+            display: block;
+            padding: 0.5rem 1rem;
+
+            a {
+                font-size: 1.2rem;
+                color: #fff;
+                padding: 0.5rem 0;
+                display: block;
+            }
+            &.current {
+                background-color: rgba(255,255,255,0.1);
+                position: relative;
+                font-weight: 600;
+                &:before {
+                    content: '';
+                    width: 4px;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-color: #fff;
+                    position: absolute;
+                }
+            }
+            &.delimiter {
+                position: relative;
+                margin-bottom: 1rem;
+                
+                &:after {
+                    content: ' ';
+                    width: 64px;
+                    height: 1px;
+                    border-top: 1px solid rgba(255,255,255,0.2);
+                    position: absolute;
+                    bottom: -0.5rem;
+                    left: 1rem;
+                }
+            }
+            &.label {
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 600;
+                font-size: 0.9rem;
+                span {
+                    padding: 0.5rem 0;
+                    display: block;
+                }
+            }
         }
     }
 
@@ -103,15 +189,20 @@ html, body {
         width: 280px;
     }
     .icon {
-        font-size: 1rem;
-        background-color: #fff;
+        font-size: 1.5rem;
+        background-color: transparent;
         padding: 0.8rem;
         border: 0;
-        color: #0073e6;
+        color: #fff;
         border-radius: 100%;
         line-height: 0;
         height: 2.6rem;
         width: 2.6rem;
+        @include media-breakpoint-up(lg) {
+            color: #0073e6;
+            background-color: #fff;
+            font-size: 1rem;
+        }
         
     }
 

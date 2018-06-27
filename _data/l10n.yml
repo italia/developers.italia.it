@@ -77,6 +77,8 @@ it:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Le community
+    header_link_strumenti: GLi strumenti
     todo_page_project: Progetto
     todo_page_subproject: Repository
     todo_page_title: Titolo
@@ -238,6 +240,8 @@ en:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Communities
+    header_link_strumenti: Tools
     todo_page_project: Project
     todo_page_subproject: Repository
     todo_page_title: Title
