@@ -123,6 +123,7 @@ it:
       published_by: Pubblicato da
       software_maintained_by: Software mantenuto da
       technical_contact: Contatto tecnico
+      technical_contacts: Contatti tecnici
       technical_detail: Dettagli tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
@@ -158,6 +159,7 @@ it:
       api_documentation: Documentazione API
       additional_features: Funzionalità aggiuntive
       see_more: Vedi tutto
+      others_info: Altre informazioni
 
 en:
   code: eng
@@ -281,6 +283,7 @@ en:
       published_by: Published by
       software_maintained_by: Software maintained by
       technical_contact: Technical contact
+      technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
       goToDocumentation: Go to the documentation
@@ -316,3 +319,4 @@ en:
       api_documentation: Api documentation
       additional_features: Additional features
       see_more: See all
+      others_info: Others information

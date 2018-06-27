@@ -101,52 +101,48 @@
          - hac habitasse platea
       screenshots:
          - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/350x590
-         - http://via.placeholder.com/800x500
-      videos:
-         - https://youtube.com/watch?v=Hhpe1CHtLmI
       awards:
          - Software del anno
   oldVariant:
     - name: Buru
       eng:
         url: 
-           - htpp://repubblica.it
+          - htpp://repubblica.it
         features:
-           - The title attribute
-           - The href attribute
-           - The width and height attributes
-           - The href attribute
-           - Solves all the problems of the world
-           - The title attribute
-           - The href attribute
+          - The title attribute
+          - The href attribute
+          - The width and height attributes
+          - The href attribute
+          - Solves all the problems of the world
+          - The title attribute
+          - The href attribute
       ita:
         url:  
-           - htpp://repubblica.it 
+          - htpp://repubblica.it 
         features:
-         - The width and height attributes
-         - The title attribute
-         - The href attribute
-         - Solves all the problems of the world
-         - The title attribute
-         - The href attribute
+        - The width and height attributes
+        - The title attribute
+        - The href attribute
+        - Solves all the problems of the world
+        - The title attribute
+        - The href attribute
       vitalityScore: 55
       legal:
         repoOwner: Lorem ipsum
     - name: Bla bla
       eng:
         localisedName: 
-           - Bla bla
+          - Bla bla
         url: 
-           - htpp://repubblica.it
+          - htpp://repubblica.it
         features:
-           - The title attribute
-           - The href attribute
-           - The width and height attributes
-           - The href attribute
-           - Solves all the problems of the world
-           - The title attribute
-           - The href attribute
+          - The title attribute
+          - The href attribute
+          - The width and height attributes
+          - The href attribute
+          - Solves all the problems of the world
+          - The title attribute
+          - The href attribute
       ita:
         localisedName: 
            - Bla bla
@@ -204,7 +200,7 @@
         localisedName: Burueng
         url: /en/software/via.placeholder.com/#####
       ita:
-        localisedName: Burueit
+        localisedName: 
         url: /it/software/via.placeholder.com/#####
     - name: Sole
       image: http://via.placeholder.com/800x500
@@ -336,6 +332,7 @@
   description:
     eng:
       localisedName: Bla bla en
+      genericName: Software category
       shortDescription: A really interesting software.
       longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -346,8 +343,6 @@
          - Has zero bugs
          - Solves all the problems of the world
       screenshots:
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/350x150
          - http://via.placeholder.com/800x500
       videos:
          - https://www.youtube.com/watch?v=Hhpe1CHtLmI
@@ -355,6 +350,7 @@
          - 1st Price Software of the year
     ita:
       localisedName: Bla bla it
+      genericName: Categoria del Software
       shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
       longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -366,8 +362,6 @@
          - hac habitasse platea
       screenshots:
          - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/800x500
       videos:
          - https://youtube.com/watch?v=Hhpe1CHtLmI
       awards:
@@ -478,6 +472,7 @@
   description:
     eng:
       localisedName: Medusa2 en
+      genericName: Software category
       shortDescription: A really interesting software.
       longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -488,15 +483,14 @@
          - Has zero bugs
          - Solves all the problems of the world
       screenshots:
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/800x500
+         - http://via.placeholder.com/750x800
       videos:
          - https://www.youtube.com/watch?v=Hhpe1CHtLmI
       awards:
          - 1st Price Software of the year
     ita:
       localisedName: Medusa2 it
+      genericName: Categoria software
       shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
       longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -508,8 +502,6 @@
          - hac habitasse platea
       screenshots:
          - http://via.placeholder.com/750x800
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/800x500
       videos:
          - https://youtube.com/watch?v=Hhpe1CHtLmI
       awards:
@@ -578,7 +570,7 @@
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
-  isBasedOn: https://github.com/italia/otello.git
+  isBasedOn: 
   softwareVersion: 1.0
   releaseDate: 2017-04-15
   logo: http://via.placeholder.com/50x50
@@ -618,8 +610,9 @@
     unsupportedCountries:
       - us
   description:
-    eng:
+    fra:
       localisedName: Opensource en
+      genericName: Categ bnhahahhaha
       shortDescription: A really interesting software.
       longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -630,15 +623,32 @@
          - Has zero bugs
          - Solves all the problems of the world
       screenshots:
-         - http://via.placeholder.com/350x150
-         - http://via.placeholder.com/350x150
+         - http://via.placeholder.com/800x500
+      videos:
+         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    eng:
+      localisedName: Opensource en
+      genericName: 
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+      screenshots:
          - http://via.placeholder.com/800x500
       videos:
          - https://www.youtube.com/watch?v=Hhpe1CHtLmI
       awards:
          - 1st Price Software of the year
     ita:
-      localisedName: Opensource it
+      localisedName: 
+      genericName: 
       shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
       longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
       documentation: https://read.the.documentation/medusa/v1.0
@@ -649,8 +659,6 @@
          - In finibus fermentum
          - hac habitasse platea
       screenshots:
-         - http://via.placeholder.com/750x800
-         - http://via.placeholder.com/350x150
          - http://via.placeholder.com/800x500
       videos:
          - https://youtube.com/watch?v=Hhpe1CHtLmI
@@ -672,14 +680,6 @@
         email: francesco.rossi@comune.reggioemilia.it
         affiliation: Comune di Reggio Emilia
         phone: +39 231 13215112
-      - name: Dario Bianchi
-        email: dario.bianchi@fornitore.it
-        affiliation: Fornitore Privato S.P.A.
-        phone: +39 16 24231322
-      - name: Giancarlo Verdi
-        email: dario.bianchi@fornitore.it
-        affiliation: Fornitore Privato S.P.A.
-        phone: +39 16 24231322
   localisation:
     localisationReady: yes
     availableLanguages:
