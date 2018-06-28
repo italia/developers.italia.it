@@ -3,9 +3,11 @@ it:
     url: '/it/piattaforme/'
     active_by_layout: 'project'
   - title: Software
-    url: '#'
+    url: '/it/software/'
+    active_by_firstlevel: 'software'
   - title: API
-    url: it/api
+    url: '/it/api/'
+    active_by_firstlevel: 'api'
   - title: Chi siamo
     url: it/chi-siamo
   - title: Come lo uso
