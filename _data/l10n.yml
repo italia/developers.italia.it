@@ -28,6 +28,7 @@ it:
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
+    popular_searches: ricerche frequenti
 
     by: di
     on_: "su"
@@ -162,6 +163,7 @@ it:
       additional_features: Funzionalità aggiuntive
       see_more: Vedi tutto
       others_info: Altre informazioni
+      software_type: tipologia software
 
 en:
   code: eng
@@ -193,6 +195,7 @@ en:
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
+    popular_searches: popular searches
 
     by: by
     on_: "on"
@@ -324,3 +327,4 @@ en:
       additional_features: Additional features
       see_more: See all
       others_info: Others information
+      software_type: software type

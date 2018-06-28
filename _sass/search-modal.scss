@@ -1,0 +1,76 @@
+#searchModal {
+  top: 36px;
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    .modal-content{
+      height: 100vh;
+      .modal-header {
+        margin-top: 3em;
+        .close {
+          font-size: 3rem;
+          font-weight: 100;
+        }
+      }
+      .modal-body {
+        .autocomplete {
+          &:before {
+            content: '\e831';
+            font-size: 3rem;
+            color: $primary;
+            font-family: "italia-icon-font";
+            -ms-transform: rotate(270deg); /* IE 9 */
+            -webkit-transform: rotate(270deg); /* Safari 3-8 */
+            transform: rotate(270deg);
+            position: absolute;
+            top: 0;
+            z-index: 500;
+          }
+          input {
+            position: relative;
+            padding-left: 4rem;
+            font-size: 3rem;
+            font-weight: 100;
+            line-height: 1.3em;
+            height: auto;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 2rem;
+          }
+        }
+        .popularSearches {
+          margin-top: 6rem;
+          h5 {
+            font-weight: 600;
+            margin-bottom: 1em;
+          }
+          a {
+            display: block;
+            font-size: 1.5rem;
+            color: gray;
+            text-decoration: none;
+            .trends{
+              margin-right: 0.5em;
+            }
+            .category {
+              font-size: 0.6em;
+              font-weight: 600;
+              opacity: 0.4;
+            }
+            &:hover, 
+            &:focus {
+              color: $primary;
+              .trends{
+                text-decoration: underline;
+              }
+              .category {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
