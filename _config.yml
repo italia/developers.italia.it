@@ -64,6 +64,7 @@ exclude:
   - swagger/node_modules
 
 
+
 # tag pages DEPRECATED --- TO-DO
 #tag_page_layout: posts_by_tag
 #tag_page_dir: news
@@ -146,4 +147,3 @@ sass:
       - node_modules
       - assets
     sass_dir: /
-
