@@ -394,7 +394,7 @@ html, body {
                 
             }
             &.active {
-                border-bottom: 4px solid $primary !important;
+                border-bottom: 4px solid #fff ;
             }
             
         }
@@ -410,6 +410,9 @@ html, body {
                 color: #455B71;
                 padding: 1.5rem 1.2rem;
                 
+            }
+            &.active {
+                border-bottom: 4px solid $primary !important;
             }
         }
         & li:nth-child(4) {
@@ -923,6 +926,57 @@ html, body {
         }
         &.left-100 {
             left: 100%;
+        }
+    }
+}
+
+.pairblock {
+    h1 {
+        font-size: 1.8rem;
+        color: #17324D;
+        @include media-breakpoint-up(md) {
+            font-size: 2.5rem;
+        }
+    }
+    &__text {
+        color: #455B71;
+    }
+    article {
+        position: relative;
+        z-index: 1;
+        &.odd {
+            
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: ' ';
+                background-color: #FAFBFD;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                @include media-breakpoint-up(md) {
+                    width: 50vw;
+                }
+            }
+            
+        }
+        &.even {
+            
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: ' ';
+                background-color: #E5F1FC;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                @include media-breakpoint-up(md) {
+                    width: 50vw;
+                }
+            }
+            
         }
     }
 }

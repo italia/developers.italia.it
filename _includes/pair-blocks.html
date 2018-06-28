@@ -1,0 +1,33 @@
+{% assign blocks = include.blocks %}
+
+
+<section class="pairblock">
+    <div class="container position-relative">
+        <div class="row row-eq-height ">
+            {% for block in blocks %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <article class="col-md-6 py-2 py-md-5 d-flex flex-column {{thecycle}}" >
+                {% if block.image %}
+                <div class="text-center py-4 px-3" >
+                    <img src="{{block.image | relative_url}}" alt="{{block.title}}" class="img-fluid">
+                </div>
+                {% endif %}
+                <h1 class="text-center px-2 px-md-4 mt-auto">{{block.title}}</h1>
+                {% if block.text!=nill %}
+                <div class="font-serif mt-1 mb-1 alternateblock__text text-center px-2 px-md-4">{{block.text | markdownify }}</div>                    
+                {% endif %}
+                {% if block.buttons!=nill %}
+                    <div class="mt-1 mt-md-2 mb-1 px-2 px-md-4 text-center">
+                        {% for button in block.buttons %}
+                            <a href="{{button.url}}" class="{{button.class}} mr-2 mt-2">{{button.label}}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                </article>
+            {% endfor %}
+        </div>
+        
+    </div>
+</section>
+
+
