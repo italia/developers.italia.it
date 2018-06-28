@@ -33,6 +33,12 @@ $font-family-serif: 'Lora', 'Georgia', Serif;
 .w-100vw {
     width: 100vw;
 }
+.stopScrolling--vertical {
+    overflow-y: hidden;
+}
+.deactive {
+    display: none !important;
+}
 
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
@@ -49,11 +55,120 @@ html, body {
     border-top: 2px solid #D8D8D8;
     margin: 1rem 0;
 }
+.Offcanvas-menu {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &__inner {
+        width: 80%;
+        background-color: #fff;
+        height: 100vh;
+    }
+    &__extra {
+        width: 20%;
+        height: 100vh;
+    }
+    &__logo {
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    &__header {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+
+    ul {
+        padding: 0.5rem 0 0 0;
+        margin: 0;
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0.5rem 1rem;
+
+            a {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                display: block;
+
+            }
+        }
+        li:nth-child(-n+3) {
+
+            a {
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+        }
+        li:nth-child(1) {
+            position: relative;
+            &:before {
+                content: '';
+                width: 64px;
+                height: 1px;
+                left: 2rem;
+                border-top: 1px solid rgba(0,102,204,0.2);
+                position: absolute;
+                top: 0;
+
+            }
+        }
+        li:nth-child(3) {
+            position: relative;
+            &:before {
+                content: '';
+                width: 64px;
+                height: 1px;
+                left: 2rem;
+                bottom: 0;
+                border-top: 1px solid rgba(0,102,204,0.2);
+                position: absolute;
+                
+
+            }
+        }
+        li:nth-child(4) {
+            margin-top: 0.5rem;
+        }
+        li.active {
+            border-left: 0.2rem solid $primary;
+            padding-left: 0.8rem;
+            background-color: rgba(0,115,230,0.1);
+            a {
+                font-weight: 600;
+            }
+        }
+
+    }
+}
 .Header {
 
     &-language {
         .icon {
             font-size: 0.8rem;
+        }
+    }
+    &-lang_switch.show {
+        @include media-breakpoint-down(md) {
+            &:before {
+                content: '';
+                width: 100vw;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.5);
+                z-index: 999;
+            }
         }
     }
     &-external-wrapper {
@@ -63,6 +178,8 @@ html, body {
         }
     }
     &-external {
+        
+        
         a {
             color: #fff;
             display: inline-block;
@@ -137,10 +254,15 @@ html, body {
             }
         }
     }
-
+    &-hamb__icon {
+        height: 1.2rem;
+    }
     &-logo {
         img {
-            width: 72px;
+            width: 2.5rem;
+            @include media-breakpoint-up(md) {
+                width: 4.5rem;
+            }
         }
     }
     &-socialIcons {
@@ -154,7 +276,11 @@ html, body {
         }
     }
     &-title {
-        margin: 2rem 0;
+        margin: 1rem 0;
+        @include media-breakpoint-up(md) {
+            margin: 2rem 0;
+        }
+
     }
     &-utils {
         margin-top: 0.5rem;
@@ -164,8 +290,12 @@ html, body {
         a {
             color: #fff;
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 1.6rem;
             letter-spacing: 0;
+            width: 3.5rem;
+             @include media-breakpoint-up(md) {
+                font-size: 2rem;
+             }
             .Header-subtitle {
                 font-size: 1rem;
                 font-weight: 300;
@@ -220,11 +350,30 @@ html, body {
     li {
         padding: 0.5rem;
         border-bottom: 1px solid $gray-100;
+
+        a {
+            text-transform: capitalize;
+        }
+        &.active a {
+            font-weight: 600;
+        }
     }
 
     li:last-child {
         border-bottom: none;
     }
+
+    @include media-breakpoint-down(md) {
+        position: fixed !important;
+        z-index: 1001 !important;
+        top: calc(50% - 80px) !important;
+        left: calc(50% - 80px) !important;
+        transform: none !important;
+        &:before {
+            display: none;
+        }
+    }
+
 
 }
 

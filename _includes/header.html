@@ -23,7 +23,7 @@
             {{ site.partner_short }}
           </span>
         </a>
-        <a href="#" class="d-inline-block d-lg-none py-2 text-white" id="slimDropdown" role="button" data-activate-element >
+        <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button" data-activate-element >
           <span class="icon it-expand px-2"></span>
         </a>
         </div>
@@ -34,7 +34,7 @@
         {% include lang_switch.html %}
     </div>
     </div>
-    <div class="dropdown-menu  Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+    <div class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
          data-activatedby="slimDropdown">
     {% include network-links-menu.html class='Header-external--mobile container' %}
     </div>
@@ -42,7 +42,10 @@
 
   <div class="Header-navbar ">
     <div class="container d-flex align-items-center">
-      <div class="Header-logo mr-3" aria-hidden="true">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activeid="offcanvasMenu"><img class="Header-hamb__icon" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="{{ '/' | relative_url }}" tabindex="-1">
           <img src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
         </a>
@@ -52,7 +55,7 @@
         <h1 class="Header-titleLink">
           <a href="{{ '/' | relative_url }}">{{ t.site_title | default: site.title | escape }}
             {% if site.pill %}
-              <span class="badge badge-pill badge-primary primary-bg-a7">{{ site.pill }}</span>{%
+              <span class="badge badge-pill badge-primary primary-bg-a7 d-none d-sm-inline-block">{{ site.pill }}</span>{%
                 endif %}
             <span class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
           </a>

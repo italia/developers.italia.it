@@ -28,10 +28,11 @@
   })
 
   $('*[data-activate-element]').on('click',function(e){
-    var genid = $(this).attr('id');
+    e.preventDefault();
+    var genid = $(this).data('activeid');
     var $targetelement = $('*[data-activatedby="'+genid+'"]');
     $targetelement.toggleClass('deactive');
-    
+    $('body').toggleClass('stopScrolling--vertical');
   });
 
   var ctx = document.getElementById("vitalityChart").getContext("2d");
