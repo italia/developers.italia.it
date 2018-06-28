@@ -19,6 +19,9 @@ layout: default
 {% if page.alternate-blocks!=nill %}
     {% include alternate-blocks.html blocks=page.alternate-blocks %}
 {% endif %}
+{% if page.pair-blocks!=nill %}
+    {% include pair-blocks.html blocks=page.pair-blocks %}
+{% endif %}
 
 {% include banner-joinus.html %}
 

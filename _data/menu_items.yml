@@ -9,11 +9,14 @@ it:
     url: '/it/api/'
     active_by_firstlevel: 'api'
   - title: Chi siamo
-    url: it/chi-siamo
+    url: '/it/chi-siamo'
+    active_by_firstlevel: 'chi-siamo'
   - title: Come lo uso
-    url: it/come-lo-uso
+    url: '/it/come-lo-uso'
+    active_by_firstlevel: 'come-lo-uso'
   - title: Come partecipo
-    url: '#'
+    url: '/it/come-partecipo'
+    active_by_firstlevel: 'come-partecipo'
   - title: News
     url: news
   - title: Contatti
