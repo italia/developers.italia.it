@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-es-search
 ---
 
 {% include setlang.html %}
@@ -80,21 +80,12 @@ layout: default
         <h1>{{ page.title }}</h1>
         <div class="abstract-sorting row d-none d-md-block">
           <div class="results-number col-md-6">
-            <p>{{ site.data.softwares | size }} {{ t.software.results }}</p>
           </div>
         </div>
       </div>
 
       <div class="container list-item-sorting">
         <div class="row row-eq-height">
-        {% for software in site.data.softwares %}
-          <div class="col-sm-6 col-md-4 item">
-            <div class="main-image" style=" background: url({{ software.description[active_lang_extended].screenshots | first }}) no-repeat center center;">
-            </div>
-            <p class="name">{{ software.description[active_lang_extended].localisedName }}</p>
-            <a href="/{{active_lang}}/software/{{ software.name | replace: ' ', '-' }}"> {{ t.software.read_more }}</a>
-          </div>
-        {% endfor %} 
         </div>
       </div>
     </div>
