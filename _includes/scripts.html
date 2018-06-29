@@ -13,6 +13,10 @@
 
 <script src="{{ '/assets/scripts/Chart.min.js' | relative_url }}"></script>
 
+<script src="{{ '/assets/scripts/jquery.mousewheel.min.js' | relative_url }}"></script>
+
+<script src="{{ '/assets/scripts/owl.carousel.min.js' | relative_url }}"></script>
+
 <script>
   $(document).on('keydown', function(e) {
     if (e.keyCode === 9) {
@@ -26,6 +30,14 @@
   $(document).on('click', function(e) {
     $('body').addClass('hide-focus');
   })
+
+  $('*[data-activate-element]').on('click',function(e){
+    e.preventDefault();
+    var genid = $(this).data('activeid');
+    var $targetelement = $('*[data-activatedby="'+genid+'"]');
+    $targetelement.toggleClass('deactive');
+    $('body').toggleClass('stopScrolling--vertical');
+  });
 
   var ctx = document.getElementById("vitalityChart").getContext("2d");
   var myLineChart = new Chart(ctx, {
@@ -70,4 +82,31 @@
       }
     }
   });
+  
+  $(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 4,
+      loop: true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        960:{
+          items:4
+        }
+      }
+    });
+    owl.on('mousewheel', '.owl-stage', function(e) {
+      if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+      } else {
+        owl.trigger('prev.owl');
+      }
+      e.preventDefault();
+    });
+  })
 </script>

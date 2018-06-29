@@ -54,7 +54,6 @@ GEM
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
-    jekyll-paginate-v2 (1.9.4)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.13.0)
       jekyll (~> 3.3)
@@ -128,7 +127,6 @@ DEPENDENCIES
   jekyll (= 3.8.2)
   jekyll-feed (~> 0.9.2)
   jekyll-paginate
-  jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap

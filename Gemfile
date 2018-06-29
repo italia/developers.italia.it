@@ -31,7 +31,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.9.2"
    gem 'jekyll-seo-tag'
    gem 'jekyll-redirect-from'
-   gem 'jekyll-paginate-v2'
+   gem 'jekyll-paginate'
    gem 'jekyll-toc'
    gem 'jekyll-sitemap'
    gem 'jekyll-tagging'

@@ -1,11 +1,9 @@
-<form  id="search-form">
-  <div class="form-inline" role="search">
+<a id="search-form" data-toggle="modal" data-backdrop="false" data-target="#searchModal">
+  <div class="form-inline pr-2 pr-lg-0" role="search">
     <div class="form-group position-relative">
-      <!--
-      <input data-menu-trigger="projects" class="form-text text-muted" required id="cerca" autocomplete="off" value="" placeholder="{{ t.search_form_label }}" />
-      -->
-      <span class="text-white mr-3">{{ t.search_form_label }}</span>
-      <button type="submit" class="icon"><span class="it-search"></span></button>
+      <span class="text-white mr-3 d-none d-lg-inline">{{ t.search_form_label }}</span>
+      <div class="icon"><span class="it-search"></span></div>
     </div>
   </div>
-</form>
+</a>
+{% include search-modal.html %}

@@ -28,6 +28,7 @@ it:
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
+    popular_searches: ricerche frequenti
 
     by: di
     on_: "su"
@@ -77,6 +78,8 @@ it:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Le community
+    header_link_strumenti: GLi strumenti
     todo_page_project: Progetto
     todo_page_subproject: Repository
     todo_page_title: Titolo
@@ -123,6 +126,7 @@ it:
       published_by: Pubblicato da
       software_maintained_by: Software mantenuto da
       technical_contact: Contatto tecnico
+      technical_contacts: Contatti tecnici
       technical_detail: Dettagli tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
@@ -158,6 +162,8 @@ it:
       api_documentation: Documentazione API
       additional_features: Funzionalità aggiuntive
       see_more: Vedi tutto
+      others_info: Altre informazioni
+      software_type: tipologia software
 
 en:
   code: eng
@@ -189,6 +195,7 @@ en:
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
+    popular_searches: popular searches
 
     by: by
     on_: "on"
@@ -238,6 +245,8 @@ en:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Communities
+    header_link_strumenti: Tools
     todo_page_project: Project
     todo_page_subproject: Repository
     todo_page_title: Title
@@ -281,6 +290,7 @@ en:
       published_by: Published by
       software_maintained_by: Software maintained by
       technical_contact: Technical contact
+      technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
       goToDocumentation: Go to the documentation
@@ -316,3 +326,5 @@ en:
       api_documentation: Api documentation
       additional_features: Additional features
       see_more: See all
+      others_info: Others information
+      software_type: software type
