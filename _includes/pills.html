@@ -1,12 +1,15 @@
-<ul>
+<section class="Pills">
+{% if include.header %}
+  <h1 class="text-center">{{t.news_categories}}</h1>
+{% endif %}
+<ul class="list-inline text-center">
   {% for item in include.items %}
   {% assign default_url = '/news/' | append: item %}
-  <li class="u-inlineBlock u-padding-r-right u-margin-r-bottom u-margin-r-top">
-    <a href="{{ item.link | default: default_url }}" class="Pill {% if include.small != true %}Pill--xs{% else %}Pill--xxs{% endif %}
-      u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">
+  <li class="list-inline-item">
+    <a href="{{ item.link | default: default_url }}" class="Pill {% if include.small  %}small{% endif %}">
         {{ item.title | default: item }} 
-        <span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span>
     </a>
   </li>
   {% endfor %}
 </ul>
+</section>
