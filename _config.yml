@@ -64,10 +64,12 @@ exclude:
   - swagger/node_modules
 
 
+paginate: 10
+paginate_path: "/news/page:num/"
 
-# tag pages DEPRECATED --- TO-DO
-#tag_page_layout: posts_by_tag
-#tag_page_dir: news
+# tag pages
+tag_page_layout: posts_by_tag
+tag_page_dir: news
 
 # Custom vars
 theme_color: "#0066cc"
