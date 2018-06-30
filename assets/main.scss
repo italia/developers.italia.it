@@ -1,13 +1,14 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 @charset "utf-8";
 @import "bootstrap-italia/src/scss/bootstrap-italia";
 @import 'footer';
 @import 'softwares';
 @import 'software-detail';
 @import 'search-modal';
+@import 'search-page';
 
 //@import "highlight";
 //@import "developer";
@@ -1202,4 +1203,106 @@ html, body {
         }
     }
 }
+.postarticle {
+    &__header {
+        background-color: rgba(142,190,237,0.2);
+        min-height: 200px;
+        background-image: url(/assets/images/postarticle-background.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include media-breakpoint-up(md) { 
+            min-height: 420px;
+            background-size: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #17324D;
+            @include media-breakpoint-up(md) { 
+                font-size: 3.5rem;
+            }
+        }
+        h2 {
+            text-align: center;
+            color: #17324D;
+            font-family: $font-family-serif;;
+            font-style: italic;
+            font-size: 1.5rem;
+    
+            @include media-breakpoint-up(md) { 
+                font-size: 2rem;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #17324D;
+            text-align: center;
+        }
+    }
+    &__author {
+        span {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: $primary;
+            display: block;
+        }
+        time {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #17324D;
+            font-weight: 600;
+        }
+    }
+    &__socials {
+        .icon-wrapper {
+            display: inline-block;
+            padding-left: 0.5rem;
+            padding-right: 0.3rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-radius: 100%;
+            line-height: 0;
+            background-color: $primary;
+        }
+        .icon {
+            line-height: 0;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    }
+    &__text {
+        font-size: 1.2rem;
+        line-height: 2;
+        color: #17324D;
+
+        h5,h6 {
+            text-transform: uppercase;
+            font-family: $font-family-base;
+            margin-top: 1.8rem;
+
+        }
+    }
+    
+}
+.Pills {
+    h1 {
+        text-transform: uppercase;
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #17324D;
+    }
+    .Pill {
+        display: inline-block;
+        padding: 0.5rem 0.8rem;
+        border: 2px solid $primary;
+        border-radius: 0.8rem;
+        line-height: 1;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
+
 
