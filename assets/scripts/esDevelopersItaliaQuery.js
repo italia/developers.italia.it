@@ -348,7 +348,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   }
 
   var data = {
-    'name': software.name.split(' ').join('-'),
+    'name': software.name.toLowerCase().split(' ').join('-'),
     'localisedName': localisedName,
     'language': this.config['language'],
     'screenshot': screenshot,
@@ -364,7 +364,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   var language = this.config['language'];
 
   var data = {
-    'name': post.title.split(' ').join('-'),
+    'name': post.title.toLowerCase().split(' ').join('-'),
     'localisedName': localisedName,
     'language': language,
     'screenshot': screenshot,
