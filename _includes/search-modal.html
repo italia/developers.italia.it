@@ -13,9 +13,9 @@
         <div class="container">
           <form autocomplete="off" action="">
             <div class="form-group">
-              <div class="autocomplete" style="position: relative;">
+              <div class="autocomplete">
                 <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software, API {% if active_lang == 'it' %} o enti{% else %} or agencies {% endif %}">
-                <div id="suggestions" style="position: absolute; background-color: white"></div>
+                <div id="suggestions"></div>
               </div>
               <a class="btn btn-outline-primary all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
               <a class="btn btn-outline-primary platforms" data="platforms">{{ t.software.platforms | capitalize }}</a>
