@@ -70,6 +70,9 @@ $( document ).ready(function() {
         params['type'].push(searchObjectId);
       }
 
+      // reset pager.
+      params['page'].pop();
+
       // create query object if needed.
       if (typeof searchObject[searchObjectId] == 'undefined') {
         searchObject[searchObjectId] = getSearchObject(searchObjectId, pagesQueryconfig, params);
