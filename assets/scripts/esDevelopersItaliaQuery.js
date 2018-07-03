@@ -167,7 +167,7 @@ esDevelopersItaliaQuery.prototype.esSearchErrorCallback = function(error){
 };
 
 esDevelopersItaliaQuery.prototype.getQuery = function() {
-  var value = this.params['keyword'].pop();
+  var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
 
   var query = {
@@ -265,6 +265,11 @@ esDevelopersItaliaQuery.prototype.getFiltersUrl = function() {
     }
   }
 
+  var type = this.params['type'].slice(0).pop();
+  if (typeof type != 'undefined' && type.length > 0) {
+    filters.push('type='+type);
+  }
+
   return filters.join('&');
 };
 
@@ -286,7 +291,7 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   var url = window.location.pathname;
   var queryString = this.getFiltersUrl();
   var size = this.config['size'];
-  var page = this.params['page'].pop();
+  var page = this.params['page'].slice(0).pop();
   var totPages = Math.ceil(tot/size);
   var pages = [];
   if ( typeof page == 'undefined') {
@@ -383,7 +388,7 @@ function esDevelopersItaliaPlatformsQuery(config, params) {
 
 esDevelopersItaliaPlatformsQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
-  var value = this.params['keyword'].pop();
+  var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
 
   var query = {
@@ -429,7 +434,7 @@ function esDevelopersItaliaOpenSourceQuery(config, params) {
 
 esDevelopersItaliaOpenSourceQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
-  var value = this.params['keyword'].pop();
+  var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
 
   var query = {
@@ -473,7 +478,7 @@ function esDevelopersItaliaReuseQuery(config, params) {
 
 esDevelopersItaliaReuseQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
-  var value = this.params['keyword'].pop();
+  var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
 
   var query = {
@@ -518,14 +523,14 @@ function esDevelopersItaliaPaQuery(config, params) {
 
 esDevelopersItaliaPaQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaPaQuery.prototype.getQuery = function() {
-  var value = this.params['keyword'].pop();
+  var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
 
   var query = {
     'query': {
       'bool': {
         'must': [
-          { 'term': { 'legal-mainCopyrightOwner': decodeURIComponent(this.params['mainCopyrightOwner'].pop()) }}
+          { 'term': { 'legal-mainCopyrightOwner': decodeURIComponent(this.params['mainCopyrightOwner'].slice(0).pop()) }}
         ]
       }
     }

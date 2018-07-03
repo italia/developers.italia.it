@@ -31,7 +31,7 @@ $( document ).ready(function() {
     var searchObject = {};
     var searchObjectId = pageId;
     if (pageId == 'search') {
-      searchObjectId = (params['type'].length == 0) ? 'all' : params['type'].pop();
+      searchObjectId = (params['type'].length == 0) ? 'all' : params['type'].slice(0).pop();
     }
 
     // populate filters in page.
