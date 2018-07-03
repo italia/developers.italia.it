@@ -8,6 +8,7 @@
   .intro-name {
     img {
       margin-right: 1em;
+      max-width: 60px;
       @extend .align-baseline;
     }
     h1 {
@@ -328,8 +329,7 @@ hr {
       }
     }
   }
-  #maintenanceContact,
-  #mainOthersInfo {
+  #maintenanceContact{
     @include media-breakpoint-up(md) {
       &.collapse{
         &.dont-collapse-md {
@@ -342,7 +342,6 @@ hr {
   }
   .main {
     border-top: 1px solid #dee2e6;
-
     padding: 4em 0 2em;
     p {
       &.title {
@@ -374,6 +373,17 @@ hr {
     .controls[aria-expanded="true"] {
       .or {
         display: none;
+      }
+    }
+    #mainOthersInfo {
+      @include media-breakpoint-up(md) {
+        &.collapse{
+          &.dont-collapse-md {
+            display: block;
+            height: auto !important;
+            visibility: visible;
+          }
+        }
       }
     }
     .other-detail,

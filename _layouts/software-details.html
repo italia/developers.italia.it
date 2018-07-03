@@ -111,12 +111,22 @@ layout: default
             <p>{{ t.software.development_status }}:  {% include software_development_status.html label=page.developmentStatus %} </p>
           </div>
         </div>
-        <div class="goto doc">
-          <p><a href=" {{ page.description[active_lang_extended].documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
-        </div>
-        <div class="goto code">
-          <p><a href=" {% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
-        </div>
+        {% if page.description[active_lang_extended].documentation != nil %}
+          <div class="goto doc">
+            <p><a href=" {{ page.description[active_lang_extended].documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+          </div>
+        {% elsif page.description.eng.documentation != nil  %}
+          <div class="goto doc">
+            <p><a href=" {{ page.description.eng.documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+          </div>
+        {% elsif page.description.eng.documentation == nil  %}
+          <div class="goto doc">
+            <p><a href=" {{ description['documentation'] }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+          </div>
+        {% endif %}
+          <div class="goto code">
+            <p><a href=" {% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
+          </div>
         {% if page.roadmap != nil %}
         <div class="goto road">
           <p><a href=" {{ page.roadmap }} "><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
@@ -493,7 +503,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.platforms %}
-                    <a href="#">{{ platform }}</a>
+                    {{ platform }}
                   {% endfor %}
                 </p>
               </div>
@@ -501,17 +511,30 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% for dependence in page.dependencies.open %}
-                    <a href="#">{{ dependence.name }}
-                      {% if dependence.version != nil %}
+                    {{ dependence.name }}
+
+                    {% if dependence.version != nil %}
                       {{ dependence.version}}
-                      {% endif %}
                       {% if dependence.versionMin != nil %}
-                      {{ dependence.versionMin}}
+                        / {{ dependence.versionMin}}
                         {% if dependence.versionMax != nil %}
                          - {{ dependence.versionMax}}
                         {% endif %}
                       {% endif %}
-                    </a> 
+                    {% elsif dependence.version == nill %}
+                      {% if dependence.versionMin != nil %}
+                        {% if dependence.versionMax != nil %}
+                          {{ dependence.versionMin}} - {{ dependence.versionMax}}
+                        {% elsif dependence.versionMax == nill %}
+                          > {{ dependence.versionMin}}
+                        {% endif %}
+                      {% else %}
+                        {% if dependence.versionMax != nil %}
+                         > {{ dependence.versionMax}}
+                        {% endif %}
+                      {% endif %}
+                    {% endif %}
+                      
                   {% endfor %}
                   {% for dependence in page.dependencies.proprietary %}
                     <a href="#">{{ dependence.name }}
@@ -574,14 +597,16 @@ layout: default
               <span class="or">&or;</span>
               <span class="and">&and;</span>
             </a>
-            <div id="mainOthersInfo" class="collapse col-md-3">
-              <div class="other-detail">
-                <p><span class="label">{{ t.software.main_audience }}</span>
-                  {% for audience in page.intendedAudience.onlyFor %}
-                    {% include set-audience.html label=audience %}
-                  {% endfor %}
-                </p>
-              </div>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              {% if page.intendedAudience.onlyFor != nil %}
+                <div class="other-detail">
+                  <p><span class="label">{{ t.software.main_audience }}</span>
+                    {% for audience in page.intendedAudience.onlyFor %}
+                      {% include set-audience.html label=audience %}
+                    {% endfor %}
+                  </p>
+                </div>
+              {% endif %}
               {% if page.localisation.localisationReady == true %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.supported_languages }}</span>
@@ -592,34 +617,65 @@ layout: default
               </div>
               {% endif %}
               {% if page.description[active_lang_extended].awards == true %}
-              <div class="other-detail">
-                <p><span class="label">{{ t.software.awards }}</span>
-                 {% for award in page.description[active_lang_extended].awards %}
-                    <a href="#">{{ award }}</a>
-                  {% endfor %}
-                </p>
-              </div>
+                <div class="other-detail">
+                  <p><span class="label">{{ t.software.awards }}</span>
+                   {% for award in page.description[active_lang_extended].awards %}
+                      <a href="#">{{ award }}</a>
+                    {% endfor %}
+                  </p>
+                </div>
+              {% elsif page.description.eng.awards == true  %}
+                <div class="other-detail">
+                  <p><span class="label">{{ t.software.awards }}</span>
+                    {% for award in page.description.eng.awards %}
+                      <a href="#">{{ award }}</a>
+                    {% endfor %}
+                  </p>
+                </div>
+              {% elsif page.description.eng.awards == false  %}
+                {% if description['awards'] != nil %}
+                  <div class="other-detail">
+                    <p><span class="label">{{ t.software.awards }}</span>
+                      {% for award in description['awards'] %}
+                        <a href="#">{{ award }}</a>
+                      {% endfor %}
+                    </p>
+                  </div>
+                {% endif %}
               {% endif %}
               {% if page.description[active_lang_extended].apiDocumentation != nil %}
-              <div class="other-detail">
-                <p><span class="label">{{ t.software.api_documentation }}</span>
-                 <a href="{{ page.description[active_lang_extended].apiDocumentation }}">{{ page.description[active_lang_extended].localisedName }} API</a>
-                </p>
-              </div>
+                <div class="other-detail">
+                  <p><span class="label">{{ t.software.api_documentation }}</span>
+                   <a href="{{ page.description[active_lang_extended].apiDocumentation }}">{% if page.description[active_lang_extended].localisedName != nil %}{{ page.description[active_lang_extended].localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                  </p>
+                </div>
+              {% elsif page.description.eng.apiDocumentation != nil  %}
+                <div class="other-detail">
+                  <p><span class="label">{{ t.software.api_documentation }}</span>
+                   <a href="{{ page.description.eng.apiDocumentation }}">{% if page.description.eng.localisedName != nil %}{{ page.description.eng.localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                  </p>
+                </div>
+              {% elsif page.description.eng.apiDocumentation == nil %}
+                {% if description['apiDocumentation'] != nil %}
+                  <div class="other-detail">
+                    <p><span class="label">{{ t.software.api_documentation }}</span>
+                     <a href="{{  description['apiDocumentation'] }}">{% if description['localisedName'] != nil %}{{ description['localisedName'] }} {% else %} {{ page.title }} {% endif %} API</a>
+                    </p>
+                  </div>
+                {% endif %}
               {% endif %}
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
-              <p>{{ page.description[active_lang_extended].longDescription }}</p>
-              <hr>
-              <div class="relatedSoftwares">
-                <p>
-                  <span class="label">{{ t.software.related_software }}</span>
-                  {% for item in page.softwareType.isRelatedTo %}
-                    <a href="{{ item }}" class="relate-link"> {{ item }}</a>                  
-                  {% endfor %}
-                </p>
-              </div>
+              <p>
+                {% if page.description[active_lang_extended].longDescription != nil %}
+                  {{ page.description[active_lang_extended].longDescription }}
+                {% elsif page.description.eng.longDescription != nil  %}
+                  {{ page.description.eng.longDescription }}
+                {% elsif page.description.eng.longDescription == nil %}
+                  {{ description['longDescription'] }}
+                {% endif %}
+              </p>
             </div>
           </div>
         </div>

@@ -1,0 +1,6 @@
+- name: ROMA CAPITALE
+  url: https://github.com/gith002/euriale.git
+  codiceipa: c_h501
+- name: Comune di Romagnano Sesia
+  url: https://github.com/gith003/publiccode-org3.git
+  codiceipa: c_h502
