@@ -7,6 +7,7 @@ function esDevelopersItaliaQuery(config, params) {
     // css selector
     'inputSelector': '',
     'totalSelector': '.results-number',
+    'pagerSelector': '#paginator',
     'totalText': {
       'it': 'risultati',
       'en': 'results'
@@ -96,6 +97,9 @@ esDevelopersItaliaQuery.prototype.clickOnFilterCallback = function(event) {
     });
   }
   
+  // reset url page in params.
+  this.params['page'].pop();
+
   // execute Query.
   this.executeESQuery();
 };
@@ -128,7 +132,8 @@ esDevelopersItaliaQuery.prototype.getDocumentTypeQuery = function(response){
 };
 
 esDevelopersItaliaQuery.prototype.getFromQuery = function(response){
-  return (typeof this.config['page'] == 'undefined') ? 0 : this.config['page'] * this.config['size'];
+  var page = this.params['page'].slice(0).pop();
+  return (typeof page == 'undefined') ? 0 : page * this.config['size'];
 };
 
 esDevelopersItaliaQuery.prototype.getSizeQuery = function(response){
@@ -153,7 +158,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
       }
       $(this.config['pageContent']).append(html);
     }
-    // this.renderPager(response.hits.total);
+    this.renderPager(response.hits.total);
   }
 };
 
@@ -255,8 +260,8 @@ esDevelopersItaliaQuery.prototype.getFiltersUrl = function() {
   for(var p in this.config['filterKeys']) {
     var value = this.params[p];
 
-    for (var i = 0; i < values.length; i++) {
-      filters.push(p +'['+i+']='+values[i]);
+    for (var i = 0; i < value.length; i++) {
+      filters.push(p +'['+i+']='+value[i]);
     }
   }
 
@@ -276,41 +281,57 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
     return;
   }
 
+  $(this.config['pagerSelector']).text('');
   var start = 0;
-  var url = this.getFiltersUrl();
+  var url = window.location.pathname;
+  var queryString = this.getFiltersUrl();
   var size = this.config['size'];
   var page = this.params['page'].pop();
   var totPages = Math.ceil(tot/size);
-  if (page == 'undefined') {
+  var pages = [];
+  if ( typeof page == 'undefined') {
     page = 0;
   }
 
+  page = parseInt(page);
   if (page > 4) {
     start = page - 4;
   }
 
-  var pages = [{
-    'title': '<',
-    'enabled': page > 0,
-    'url': url + '&page=' + (page-1)
-  }];
-
-  for (var i = start; i <= totPages || i < 9; i++) {
+  for (var i = start; (i < start+9); i++) {
+    
+    if (i >= totPages) {
+      break;
+    }
+    
     pages.push({
-      'title': '<',
-      'enabled': true,
-      'current': page == i, 
-      'url': url + '&page=' + (i-1)
+      'title': i+1,
+      'classes': (i == page) ? ' active ' : '',
+      'current': page == i,
+      'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (i),
+      'page': i,
     });
   }
 
-  var pages = [{
-    'title': '>',
-    'enabled': i < totPages,
-    'url': url + '&page=' + (page-1)
-  }];
+  var prev = {
+    'title': '<',
+    'classes': (page == start) ? ' disabled ' : '',
+    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page-1),
+    'page': (page-1)
+  };
 
-  this.templates.pager(pages);
+  var next = {
+    'title': '>',
+    'classes': (page == totPages) ? ' disabled ' : '',
+    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page+1),
+    'page': (page+1)
+  };
+
+  $(this.config['pagerSelector']).append(this.templates.pager({
+    'pages': pages, 
+    'prev': prev,
+    'next': next
+  }));
 };
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
