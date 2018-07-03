@@ -55,6 +55,11 @@ function esDevelopersItaliaQuery(config, params) {
   this.client = new elasticsearch.Client(this.config['elasticsearch_connection']);
 };
 
+esDevelopersItaliaQuery.prototype.setTypeQuery = function(type) {
+  this.params['type'].pop();
+  this.params['type'].push(type);
+};
+
 esDevelopersItaliaQuery.prototype.popupateFiltersFromUrl = function() {
   for(var p in this.config['filterKeys']) {
     var value = this.params[p];
@@ -282,11 +287,11 @@ esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
 };
 
 esDevelopersItaliaQuery.prototype.renderPager = function(tot){
+  $(this.config['pagerSelector']).text('');
   if (tot < this.config['size']){
     return;
   }
 
-  $(this.config['pagerSelector']).text('');
   var start = 0;
   var url = window.location.pathname;
   var queryString = this.getFiltersUrl();

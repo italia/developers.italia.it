@@ -62,6 +62,14 @@ $( document ).ready(function() {
         searchObjectId = 'all';
       }
 
+      if (params['type'].length == 0) {
+        params['type'].push(searchObjectId);
+      }
+      else {
+        params['type'].pop();
+        params['type'].push(searchObjectId);
+      }
+
       // create query object if needed.
       if (typeof searchObject[searchObjectId] == 'undefined') {
         searchObject[searchObjectId] = getSearchObject(searchObjectId, pagesQueryconfig, params);
@@ -181,7 +189,12 @@ $( document ).ready(function() {
   function executeAutoCompleteESQuery(event) {
     var queryType = $('#searchModal form a.btn-outline-primary.active').attr('data');
     var esAutocompleteQuery;
-    // var autocompleteQueryconfig = event.data['autocompleteQueryconfig']
+    if (event.target.value.length > 0) {
+      $('#suggestions').removeClass('d-none');
+    }
+    else {
+      $('#suggestions').addClass('d-none');
+    }
 
     switch(queryType) {
       case 'all':
