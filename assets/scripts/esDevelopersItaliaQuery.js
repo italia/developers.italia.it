@@ -639,6 +639,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
 };
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function(software) {
+  var value = $(this.config['inputSelector']).val();
   var name = software.name;
   var language_alpha_3 = this.languages[this.config['language']];
   if ( typeof software.description[language_alpha_3] != 'undefined' && software.description[language_alpha_3].localisedName != 'undefined') {
@@ -655,6 +656,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
     );
   }
 
+  value = value.split(' ');
+  for (let i = 0; i < value.length; i++) {
+    name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
+  }
+
   return {
     'name': name,
     'language': this.config['language'],
@@ -663,7 +669,9 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
 };
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = function(post) {
-  
+  var value = $(this.config['inputSelector']).val();
+  var name = post.title;
+
   var queryString = [
     'keyword=' + post.title.split(' ').join('+') 
   ];
@@ -674,8 +682,13 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
     );
   }
 
+  value = value.split(' ');
+  for (let i = 0; i < value.length; i++) {
+    name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
+  }
+
   return {
-    'name': post.title,
+    'name': name,
     'language': this.config['language'],
     'path': '/search?' + queryString.join('&')
   };
@@ -905,8 +918,16 @@ esDevelopersItaliaAutocompletePAQuery.prototype.esSearchSuccessCallback = functi
 };
 
 esDevelopersItaliaAutocompletePAQuery.prototype.getSuggestionSuggestionPost = function(suggestion) {
+  var value = $(this.config['inputSelector']).val();
+  var name = suggestion.agency.title;
+  
+  value = value.split(' ');
+  for (let i = 0; i < value.length; i++) {
+    name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
+  }
+
   return {
-    'name': suggestion.agency.title,
+    'name': name,
     'language': this.config['language'],
     'path': '/search'
   };
