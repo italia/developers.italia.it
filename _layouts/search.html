@@ -109,6 +109,20 @@ layout: default
         <h1>{{ page.title }}</h1>
         <div class="abstract-sorting row d-none d-md-block">
           <div class="results-number col-md-6">
+
+          </div>
+          <div class="sortingBy col-md-6">
+            <form class="d-flex justify-content-end">
+              <p>{{ t.software.sort_by }}</p>
+              <div class="form-group">
+                <select class="form-control">
+                  <option class="active">Popolarità <i class="it-check"></i></option>>
+                  <option>Emergenti</option>>
+                  <option>A/Z</option>>
+                  <option>Z/A</option>>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>

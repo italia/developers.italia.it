@@ -67,6 +67,19 @@
     }
   }
 }
+.intro {
+  .abstract-sorting {
+    .sortingBy {
+      p {
+        margin-top: 0.7rem;
+        margin-right: 1rem;
+      }
+      .form-group {
+        margin-top: 0;
+      }
+    }
+  }
+}
 .list-item-sorting {
   .item {
     .category {
