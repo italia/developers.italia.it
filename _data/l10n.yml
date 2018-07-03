@@ -165,6 +165,7 @@ it:
       others_info: Altre informazioni
       software_type: tipologia software
       public_entities: Enti
+      go_to_detail: vai al dettaglio
 
 en:
   code: eng
@@ -330,3 +331,4 @@ en:
       others_info: Others information
       software_type: software type
       public_entities: public entities
+      go_to_detail: go to detail
