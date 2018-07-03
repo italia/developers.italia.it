@@ -4,6 +4,7 @@ layout: default
 
 {% include setlang.html %}
 
+{% assign description = page.description|first|last %}
 {% comment %}
 
   {% include breadcrumbs.html %}
@@ -22,27 +23,46 @@ layout: default
     <p class="subtitle">{{ page.subtitle }}</p>
   </div>      
   <div class="container list-item-sorting">
-    <div class="software_macro_category_title row">
-      <div class="col-md-7">
-        <h2>{{ t.software.software_open }}</h2>
-      </div>
-       <div class="col-md-5 how">
-        <a href="#">Come lo uso &rarr;</a>
-      </div>
-    </div>
+    {% for software in site.data.softwares limit: 6 %}
+      {% if software.it.riuso.codiceIPA == nill %}
+        {% if foorloop.lenght != 0 %}
+          <div class="software_macro_category_title row">
+            <div class="col-md-7">
+              <h2>{{ t.software.software_open }}</h2>
+            </div>
+             <div class="col-md-5 how">
+              <a href="#">Come lo uso &rarr;</a>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %} 
+    
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA == nill %}
       <div class="col-sm col-md-4 item">
-        <div class="main-image" style=" background: url({{ software.description[active_lang_extended].screenshots | first }}) no-repeat center center;">
+        <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
         </div>
-        <p class="name">{{ software.description[active_lang_extended].localisedName }}</p>
+        <p class="name">
+          {% if software.description[active_lang_extended].localisedName != nil %}
+            {{ software.description[active_lang_extended].localisedName }}
+          {% else %}
+            {{ software.name }}
+          {% endif %}
+        </p>
         <a href="/{{active_lang}}/software/{{ software.name | replace: ' ', '-' }}"> {{ t.software.read_more }} &rarr;</a>
       </div>
       {% endif %}
     {% endfor %} 
     </div>
-    {% include internal-link.html target="opensource" %} 
+    {% for software in site.data.softwares limit: 6 %}
+      {% if software.it.riuso.codiceIPA == nill %}
+        {% if foorloop.lenght != 0 %}
+         {% include internal-link.html target="opensource" %} 
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   </div>
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
@@ -57,9 +77,15 @@ layout: default
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA != nill %}
       <div class="col-sm col-md-4 item">
-        <div class="main-image" style=" background: url({{ software.description[active_lang_extended].screenshots | first }}) no-repeat center center;">
+        <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
         </div>
-        <p class="name">{{ software.description[active_lang_extended].localisedName }}</p>
+        <p class="name">
+          {% if software.description[active_lang_extended].localisedName != nil %}
+            {{ software.description[active_lang_extended].localisedName }}
+          {% else %}
+            {{ software.name }}
+          {% endif %}
+        </p>
         <a href="{{ software.name | replace: ' ', '-' }}"> {{ t.software.read_more }} &rarr;</a>
       </div>
       {% endif %}
