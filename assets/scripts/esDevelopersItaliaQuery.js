@@ -448,8 +448,9 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'title',
-            'subtitle',
+            'name',
+            'description.' + this.config['language'] + '.localizedName',
+            'description.' + this.config['language'] + '.longDescription',
           ]
         }
       }
@@ -479,7 +480,8 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
     'query': {
       'bool': {
         'must': [
-          {'exists': { 'field': 'it-riuso-codiceIPA' }}
+          {'exists': { 'field': 'it-riuso-codiceIPA' }},
+          {'term': { '_type': 'software' }}
         ]
       }
     }
@@ -783,7 +785,8 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
-          }
+          },
+          {'term': { '_type': 'software' }}
         ],
         'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
       }
@@ -814,7 +817,8 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
-          }
+          },
+          {'term': { '_type': 'software' }}
         ],
         'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
       }
