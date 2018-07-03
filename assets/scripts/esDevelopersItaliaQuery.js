@@ -132,7 +132,7 @@ esDevelopersItaliaQuery.prototype.getDocumentTypeQuery = function(response){
 };
 
 esDevelopersItaliaQuery.prototype.getFromQuery = function(response){
-  var page = (typeof this.params != 'undefined' && typeof this.params['page'] == 'undefined') ? this.params['page'].slice(0).pop() : 0;
+  var page = (typeof this.params != 'undefined' && typeof this.params['page'] != 'undefined') ? this.params['page'].slice(0).pop() : 0;
   return (typeof page == 'undefined') ? 0 : page * this.config['size'];
 };
 
