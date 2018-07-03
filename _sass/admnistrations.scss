@@ -1,0 +1,31 @@
+.page-administrations-list{
+  margin-top: 5em;
+  margin-bottom: 5em;
+  .arguments {
+    margin-top: 4em;
+  }
+}
+.publicEntities {
+  .head {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #list-status {
+    .form-check-label {
+      position: relative;
+      input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px; 
+        margin: 0;
+      }
+      span { 
+        padding-left: 24px;
+        margin-left: 0.5em;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

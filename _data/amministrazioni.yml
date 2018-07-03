@@ -1,0 +1,6 @@
+- name: Medusa
+  url: https://github.com/italia/developers.italia.it.git
+  codiceipa: c_h501
+- name: MedusaGith003
+  url: https://github.com/gith003/publiccode-org3.git
+  codiceipa: c_h502

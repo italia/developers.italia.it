@@ -1,195 +1,195 @@
 3dgraphics:
   en: 3dgraphics
-  it: 
+  it: grafica 3d
 accessibility:
-  en: ccessibility
-  it: 
+  en: accessibility
+  it: accessibilità
 accounting:
-  en: ccounting
-  it: 
+  en: accounting
+  it: amministrazione
 amusement:
-  en: musement
-  it: 
+  en: amusement
+  it: divertimento
 archiving:
   en: archiving
-  it: 
+  it: archiviazione
 art:
   en: art
-  it:
+  it: arte
 artificial-intelligence:
   en: artificial intelligence
-  it:
+  it: intelligenza artificiale
 backend:
   en: backend
-  it:
+  it: backend
 calculator:
   en: calculator
-  it:
+  it: calcolatrice
 calendar:
   en: calendar
-  it:
+  it: calendario
 chat:
   en: chat
-  it:
+  it: chat
 classroom-management:
   en: classroom management
-  it:
+  it: gestione della classe
 clock:
   en: clock
-  it:
+  it: orologio
 content-management:
   en: content management
-  it:
+  it: gestione dei contenuti
 compression:
   en: compression
-  it:
+  it: compressione
 construction:
   en: construction
-  it:
+  it: costruzione
 contact-management:
   en: contact management
-  it:
+  it: gestione dei contatti
 database:
   en: database
-  it:
+  it: database
 debugger:
   en: debugger
-  it:
+  it: debugger
 dictionary:
   en: dictionary
-  it:
+  it: dizionario
 documentation:
   en: documentation
-  it:
+  it: documentazione
 electronics:
   en: electronics
-  it:
+  it: elettronica
 email:
   en: email
-  it:
+  it: email
 emulator:
   en: emulator
-  it:
+  it: emulatore
 engineering:
   en: engineering
-  it:
+  it: progettazione
 file-manager:
   en: file manager
-  it:
+  it: gestione file
 file-transfer:
   en: file-transfer
-  it:
+  it: trasferimento-file
 finance:
   en: finance
-  it:
+  it: finanza
 flowchart:
   en: flowchart
-  it:
+  it: diagramma di flusso
 gui-designer:
   en: gui designer
-  it:
+  it: progettazione dell'interfaccia grafica
 identity:
   en: identity
-  it:
+  it: identità
 instant-messaging:
-  en: instant messaging 
-  it:
+  en: instant messaging
+  it: messaggistica istantanea
 library:
   en: library
-  it:
+  it: libreria
 medical:
   en: medical
-  it:
+  it: medico
 monitor:
   en: monitor
-  it:
+  it: schermo
 museum:
   en: museum
-  it:
+  it: museo
 music:
   en: musical
-  it:
+  it: musicale
 news:
   en: news
-  it:
+  it: notizie
 ocr:
   en: ocr
-  it:
+  it: ocr
 parallel-computing:
   en: parallel computing
-  it:
+  it: calcolo pararallelo
 photography:
   en: photography
-  it:
+  it: fotografia
 presentation:
   en: presentation
-  it:
+  it: presentazione
 printing:
   en: printing
-  it:
+  it: stampa
 procurement:
   en: procurement
-  it:
+  it: gestione dell'approvvigionamento
 project-management:
   en: project management
-  it:
+  it: gestione del progetto
 publishing:
   en: publishing
-  it:
+  it: publicazione
 raster-graphics:
   en: raster graphics
-  it:
+  it: grafica raster
 remote-access:
   en: remote access
-  it:
+  it: accesso remoto
 revision-control:
   en: revision-control
-  it:
+  it: revisione-controllo
 robotics:
   en: robotics
-  it:
+  it: robotica
 scanning:
   en: scanning
-  it:
+  it: scansione
 security:
   en: security
-  it:
+  it: sicurezza
 sports:
   en: sports
-  it:
+  it: sport
 spreadsheet:
   en: spreadsheet
-  it:
+  it: foglio elettronico
 telephony:
   en: telephony
-  it:
+  it: telefonia
 terminal-emulator:
   en: terminal emulator
-  it:
+  it: emulatore del terminale
 texteditor:
   en: text editor
-  it:
+  it: editor di testo
 texttools:
   en: text tools
-  it:
+  it: strumenti di testo
 translation:
   en: translation
-  it:
+  it: traduzione
 vector-graphics:
   en: vector graphics
-  it:
+  it: grafica vettoriale
 video-conference:
   en: video conference
-  it:
+  it: video conferenza
 viewer:
   en: viewer
-  it:
+  it: visualizzatore
 web-browser:
   en: web browser
-  it:
+  it: browser web
 whistleblowing:
   en: whistleblowing
-  it:
+  it: informatore
 word-processor:
   en: word processor
-  it:
+  it: elaboratore di testi

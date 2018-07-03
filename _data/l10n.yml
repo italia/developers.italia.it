@@ -164,6 +164,7 @@ it:
       see_more: Vedi tutto
       others_info: Altre informazioni
       software_type: tipologia software
+      public_entities: Enti
 
 en:
   code: eng
@@ -328,3 +329,4 @@ en:
       see_more: See all
       others_info: Others information
       software_type: software type
+      public_entities: public entities
