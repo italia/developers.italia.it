@@ -181,50 +181,32 @@ $( document ).ready(function() {
   function executeAutoCompleteESQuery(event) {
     var queryType = $('#searchModal form a.btn-outline-primary.active').attr('data');
     var esAutocompleteQuery;
+    // var autocompleteQueryconfig = event.data['autocompleteQueryconfig']
 
     switch(queryType) {
       case 'all':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompleteAllQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9
-        });
+        autocompleteQueryconfig['all']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompleteAllQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['all'])));
         break;
       case 'platforms':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompletePlatformsQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9
-        });
+        autocompleteQueryconfig['platforms']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompletePlatformsQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['platforms'])));
         break;
       case 'software_open':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9
-        });
+        autocompleteQueryconfig['software_open']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['software_open'])));
         break;
       case 'reuse_software':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9
-        });
+        autocompleteQueryconfig['reuse_software']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['reuse_software'])));
         break;
       case 'api':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompleteAPIQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9
-        });
+        autocompleteQueryconfig['api']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompleteAPIQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['api'])));
         break;
       case 'administrations':
-        esAutocompleteQuery = new esDevelopersItaliaAutocompletePAQuery({
-          'language': language,
-          'inputSelector': 'form .autocomplete input',
-          'size': 9,
-          'index': 'suggestions',
-        });
+        autocompleteQueryconfig['administrations']['language'] = language;
+        esAutocompleteQuery = new esDevelopersItaliaAutocompletePAQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['administrations'])));
         break;
     }
 
