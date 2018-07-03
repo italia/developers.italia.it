@@ -67,6 +67,19 @@
     }
   }
 }
+.list-item-sorting {
+  .item {
+    .category {
+      img {
+        dispaly: inline;
+      }
+      p {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}
 #paginator {
   margin-top: 3rem;
   margin-bottom: 3rem;
