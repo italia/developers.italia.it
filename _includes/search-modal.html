@@ -15,13 +15,14 @@
             <div class="form-group">
               <div class="autocomplete">
                 <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software, API {% if active_lang == 'it' %} o enti{% else %} or agencies {% endif %}">
+                <div id="suggestions"></div>
               </div>
-              <a class="btn btn-outline-primary all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
-              <a class="btn btn-outline-primary platforms">{{ t.software.platforms | capitalize }}</a>
-              <a class="btn btn-outline-primary software_open">{{ t.software.software_open | capitalize }}</a>
-              <a class="btn btn-outline-primary reuse_software">{{ t.software.reuse_software | capitalize }}</a>
-              <a class="btn btn-outline-primary api">API</a>
-              <a class="btn btn-outline-primary administrations">{{ t.software.administrations | capitalize }}</a>
+              <a class="btn btn-outline-primary all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
+              <a class="btn btn-outline-primary platforms" data="platforms">{{ t.software.platforms | capitalize }}</a>
+              <a class="btn btn-outline-primary software_open" data="software_open">{{ t.software.software_open | capitalize }}</a>
+              <a class="btn btn-outline-primary reuse_software" data="reuse_software">{{ t.software.reuse_software | capitalize }}</a>
+              <a class="btn btn-outline-primary api" data="api">API</a>
+              <a class="btn btn-outline-primary administrations" data="administrations">{{ t.software.administrations | capitalize }}</a>
             </div>
           </form>
           <div class="popularSearches">

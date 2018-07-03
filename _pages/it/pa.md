@@ -1,7 +1,7 @@
 ---
-title: Software a riuso
+title: Amministrazioni
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 lang: it
-ref: reuse_software
+ref: pa
 layout: software-sub-category
 ---

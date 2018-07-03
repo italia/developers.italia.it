@@ -16,6 +16,7 @@
       }
       .modal-body {
         .autocomplete {
+          position: relative;
           &:before {
             content: '\e831';
             font-size: 3rem;
@@ -37,6 +38,57 @@
             height: auto;
             border-bottom: 1px solid #dee2e6;
             margin-bottom: 2rem;
+          }
+          #suggestions {
+            position: absolute; 
+            background-color: white;
+            width: 100%;
+            z-index: 600;
+            height: 80vh;
+            a {
+              display: block;
+              font-size: 1.5rem;
+              color: gray;
+              text-decoration: none;
+              line-height: 2rem;;
+              .category {
+                font-size: 0.6em;
+                font-weight: 600;
+                opacity: 0.4;
+              }
+              &:hover, 
+              &:focus {
+                color: $primary;
+                .results{
+                  text-decoration: underline;
+                }
+                .category {
+                  opacity: 1;
+                }
+              }
+              &:last-child {
+                color: $primary;
+                text-transform: uppercase;
+                position: relative;
+                font-weight: 600;
+                padding-left: 1.5rem;
+                margin-top: 2rem;
+                &:before {
+                  content: '\e831';
+                  font-size: 1rem;
+                  color: $primary;
+                  font-family: "italia-icon-font";
+                  -ms-transform: rotate(270deg); /* IE 9 */
+                  -webkit-transform: rotate(270deg); /* Safari 3-8 */
+                  transform: rotate(270deg);
+                  position: absolute;
+                  top: 0;
+                  z-index: 1000;
+                  left: 0;
+                  font-weight: 600;
+                }
+              }
+            }
           }
         }
         .popularSearches {
