@@ -1,7 +1,8 @@
 import React from "react";
 
 import Hero from "./Hero";
-import AuthorizeBtn from "./AuthorizeBtn";
+import Description from "./Description";
+import Authorize from "./Authorize";
 
 import "./CustomLayout.css";
 
@@ -32,10 +33,8 @@ class CustomLayout extends React.Component {
       }
 
       return (
-        <div className="u-posRelative u-background-grey-15">
-          <div className="swagger-ui">
-            <div className="loading-container">{loadingMessage}</div>
-          </div>
+        <div className="swagger-ui">
+          <div className="loading-container">{loadingMessage}</div>
         </div>
       );
     }
@@ -45,48 +44,47 @@ class CustomLayout extends React.Component {
     const Operations = getComponent("operations", true);
     const Models = getComponent("Models", true);
 
-    // Won't be positioned while in development
-    const styles = isDev() ? "" : "swagger--head-card";
-
     return (
-      <div className="u-background-grey-15">
-        <div
-          className={`u-posRelative u-layout-r-withGutter u-sizeFull ${styles}`}
-        >
-          <div className="Grid Grid--alignCenter">
-            <div className="Grid-cell u-md-size12of12 u-lg-size12of12">
-              <div className="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-sizeFill">
-                <div className="u-layout-r-withGutter u-sizeFull u-padding-top-xxl u-padding-bottom-xxl">
-                  <div className="u-padding-top-xxl u-padding-bottom-xxl">
-                    <Hero
-                      specSelectors={specSelectors}
-                      getComponent={getComponent}
-                    />
-                  </div>
+      <section className="custom-layout">
+        <div className="container custom-layout--hero">
+          <Hero specSelectors={specSelectors} getComponent={getComponent} />
+        </div>
+
+        <section className="swagger-ui">
+          <section className="custom-layout--swagger--description">
+            <div className="container">
+              <div className="position-relative rounded shadow-lg bg-white p-5 custom-layout--description">
+                <div className="p-5">
+                  <Description
+                    specSelectors={specSelectors}
+                    getComponent={getComponent}
+                  />
                 </div>
               </div>
+
+              <div>
+                {securityDefinitions ? (
+                  <div className="pb-3">
+                    <Authorize
+                      getComponent={getComponent}
+                      authActions={authActions}
+                      authSelectors={authSelectors}
+                    />
+                  </div>
+                ) : null}
+              </div>
             </div>
-          </div>
-        </div>
+          </section>
 
-        <div className="u-background-grey-15 u-layout-r-withGutter u-padding-bottom-xxl">
-          <div className="swagger-ui u-padding-bottom-xs">
-            <div>
-              {securityDefinitions ? (
-                <AuthorizeBtn
-                  getComponent={getComponent}
-                  authActions={authActions}
-                  authSelectors={authSelectors}
-                />
-              ) : null}
+          <section className="mt-5 mb-5 custom-layout--swagger--operations">
+            <div className="container">
+              <Operations />
+
+              <Models />
             </div>
-
-            <Operations />
-
-            <Models />
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </section>
     );
   }
 }

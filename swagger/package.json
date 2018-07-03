@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "if [ ! -d node_modules ]; then npm install; fi",
-    "start": "parcel swagger.html",
+    "start": "npx parcel swagger.html",
     "build": "npx parcel build swagger.html --public-url /assets/swagger --out-dir ../_includes --no-source-maps",
     "prebuild": "npm run prestart",
     "postbuild": "rsync --remove-source-files --exclude='*.html' --exclude='node_modules' ../_includes/swagger.* ../assets/swagger"

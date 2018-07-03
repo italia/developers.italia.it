@@ -4,18 +4,23 @@ import { sanitizeUrl } from "@braintree/sanitize-url";
 
 import "./Hero.css";
 
+const copyToClipboard = text => {
+  const field = document.createElement("textarea");
+  field.innerText = text;
+  document.body.appendChild(field);
+  field.select();
+  document.execCommand("copy");
+  field.remove();
+};
+
 class Hero extends Component {
   render() {
     const { specSelectors, getComponent } = this.props;
-
-    const Markdown = getComponent("Markdown", true);
 
     const info = specSelectors.info();
     const title = info.get("title");
     const version = info.get("version");
     const servers = specSelectors.servers();
-
-    const description = info.get("description");
 
     const contact = info.get("contact");
     const name = contact && contact.get("name");
@@ -26,6 +31,7 @@ class Hero extends Component {
 
     const {
       download,
+      server,
       url,
       intro,
       channel,
@@ -34,88 +40,96 @@ class Hero extends Component {
     } = window.i10n.swagger;
 
     return (
-      <div className="u-color-grey-50 u-posRelative swagger--hero">
-        <h1 className="u-text-h2 u-color-black u-padding-bottom-xs swagger--hero-header">
-          {title}
-          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 u-margin-left-xs swagger--hero-pill">
-            {version}
-          </span>
-        </h1>
-
-        <a
-          href={window.swaggerUrl}
-          className="Button Button--round u-borderRadius-m u-text-r-xxs u-background-white u-color-50 u-posAbsolute"
-          target="_blank"
-        >
-          {download}
-        </a>
-
-        <p className="u-padding-bottom-xxl u-text-r-xxs">
-          {servers && servers.size ? (
-            <code>
-              [ {`${url}`}: {servers.first().get("url")} ]
-            </code>
-          ) : (
-            "-"
-          )}
-        </p>
-
-        <div className="u-padding-bottom-xl u-lineHeight-xl u-text-r-xs">
-          {description ? <Markdown source={description} /> : "-"}
-        </div>
-
-        <div className="Grid u-padding-bottom-m u-padding-top-xxl">
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${developer}`}
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${channel}`}
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${tos}`}
-          </div>
-        </div>
-
-        <div className="Grid">
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
+      <section className="swagger--hero">
+        <div className="row">
+          <div className="col-7">
+            {" "}
+            <h1 className="display-1 mb-4">
+              {title}
+              <span className="badge badge-pill badge-primary swagger--hero-pill ml-2">
+                {version}
+              </span>
+            </h1>
+            <blockquote className="blockquote" />
+            <section className="mb-5">
+              <div className="row">
+                <div className="col-4">{`${developer}`}</div>
+                <div className="col-4">{`${channel}`}</div>
+                <div className="col-4">{`${tos}`}</div>
+              </div>
+              <div className="row">
+                <div className="col-4">
+                  {contactUrl ? (
+                    <a href={sanitizeUrl(contactUrl)} target="_blank">
+                      {name}
+                    </a>
+                  ) : (
+                    <span>{name}</span>
+                  )}
+                </div>
+                <div className="col-4">
+                  {email ? (
+                    <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <div className="col-4">
+                  {terms ? (
+                    <a href={sanitizeUrl(terms)} target="_blank">
+                      {terms}
+                    </a>
+                  ) : (
+                    "-"
+                  )}
+                </div>
+              </div>
+            </section>
             <div>
-              {contactUrl ? (
-                <a href={sanitizeUrl(contactUrl)} target="_blank">
-                  <img
-                    className="swagger--hero-contact-logo"
-                    src={window.contactLogo}
-                    alt={name}
-                  />
-                </a>
-              ) : (
-                <img
-                  className="swagger--hero-contact-logo"
-                  src={window.contactLogo}
-                  alt={name}
-                />
-              )}
-            </div>
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            <div>
-              {email ? (
-                <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {terms ? (
-              <a href={sanitizeUrl(terms)} target="_blank">
-                {terms}
+              <a
+                href={window.swaggerUrl}
+                role="button"
+                className="btn btn-primary mr-3"
+                target="_blank"
+              >
+                {download}
               </a>
-            ) : (
-              "-"
-            )}
+              <a
+                href={servers && servers.size && servers.first().get("url")}
+                role="button"
+                className="btn btn-outline-primary mr-3"
+                onClick={e => {
+                  e.preventDefault();
+                  try {
+                    const url =
+                      servers && servers.size && servers.first().get("url");
+                    copyToClipboard(url);
+                  } catch (e) {
+                    // not supported
+                  }
+                }}
+              >
+                {server}
+              </a>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card rounded border border-primary swagger--hero--card">
+              <div className="card-body">
+                <div className="position-absolute text-uppercase swagger--hero--card--legend">
+                  PIATTAFORMA DI RIFERIMENTO
+                </div>
+
+                <h3 className="card-title">Titolo esempio Card</h3>
+                <blockquote className="blockquote card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

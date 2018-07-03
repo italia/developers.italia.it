@@ -1,18 +1,20 @@
-.swagger--hero .swagger--hero-header {
-  margin-right: 18rem;
+.swagger--hero .Button
+{
+    font-weight: bold;
+
+    top: 1.4rem;
+    right: 0;
+
+    text-transform: initial;
 }
 
-.swagger--hero .Button {
-  font-weight: bold;
-  text-transform: initial;
-  top: 1.4rem;
-  right: 0;
-}
+.swagger--hero-pill
+{
+    font-size: 0.7rem !important;
 
-.swagger--hero-pill {
-  font-size: 1rem;
-  vertical-align: super;
-  padding: 0.4rem 0.8em !important;
+    padding: 0.1rem 0.6em !important;
+
+    vertical-align: super !important;
 }
 
 .swagger--hero .renderedMarkdown h1,
@@ -20,22 +22,33 @@
 .swagger--hero .renderedMarkdown h3,
 .swagger--hero .renderedMarkdown h4,
 .swagger--hero .renderedMarkdown h5,
-.swagger--hero .renderedMarkdown h6 {
-  margin-top: 2.4rem;
-  color: black;
+.swagger--hero .renderedMarkdown h6
+{
+    margin-top: 2.4rem;
+
+    color: black;
 }
 
 .swagger--hero .renderedMarkdown ol,
-.swagger--hero .renderedMarkdown ul {
-  list-style: disc;
-  padding-left: 2.0rem;
+.swagger--hero .renderedMarkdown ul
+{
+    padding-left: 2.0rem;
+
+    list-style: disc;
 }
 
-.swagger--hero .swagger--hero-contact-logo {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%);
-}
-.swagger--hero .swagger--hero-contact-logo:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
+.swagger--hero .swagger--hero--card--legend
+{
+    font-size: 20px;
+    line-height: 20px;
+
+    top: -13px;
+    left: 13px;
+
+    padding: 0 20px;
+
+    letter-spacing: 1.11px;
+
+    color: #17324d;
+    background-color: fff;
 }

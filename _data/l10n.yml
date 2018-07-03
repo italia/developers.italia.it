@@ -112,11 +112,13 @@ it:
     project_risorse: Tutte le risorse
 
     swagger:
-      download: "Scarica OpenAPI"
+      download: "Scarica specifica"
+      server: "Copia link del server"
       url: "Server"
       developer: "Erogatore"
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
+      authorize: "Autorizza"
       goToCard: Vai alla scheda
 
     software:
@@ -285,9 +287,11 @@ en:
 
     swagger:
       download: "Download OpenAPI"
+      server: "Copy server link"
       url: "Server"
       channel: "Contact"
       tos: "Terms of service"
+      authorize: "Authorize"
       goToCard: Vai alla scheda
 
     software:

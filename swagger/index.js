@@ -9,15 +9,17 @@ import "swagger-ui/dist/swagger-ui.css";
 if (process.env.NODE_ENV === "development") {
   // Assign defaults while in "development"
   window.swaggerUrl =
-    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
+    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/api.daf.teamdigitale.it.yaml";
   window.contactLogo = "https://i.imgur.com/OTNbMVs.png";
   window.i10n = {
     swagger: {
       download: "Scarica OpenAPI",
+      server: "Copia link del server",
       url: "Server",
       developer: "Erogatore",
       channel: "Contatto",
-      tos: "Condizioni di utilizzo"
+      tos: "Condizioni di utilizzo",
+      authorize: "Autorizza"
     }
   };
 
@@ -44,7 +46,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 SwaggerUI({
-  dom_id: "#index",
+  dom_id: "#swagger",
   url: window.swaggerUrl,
   plugins: [CustomLayoutPlugin],
   layout: "CustomLayout"
