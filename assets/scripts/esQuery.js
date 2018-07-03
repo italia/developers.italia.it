@@ -198,7 +198,7 @@ $( document ).ready(function() {
         break;
       case 'reuse_software':
         autocompleteQueryconfig['reuse_software']['language'] = language;
-        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['reuse_software'])));
+        esAutocompleteQuery = new esDevelopersItaliaAutocompleteSoftwareRiusoQuery(JSON.parse(JSON.stringify(autocompleteQueryconfig['reuse_software'])));
         break;
       case 'api':
         autocompleteQueryconfig['api']['language'] = language;
