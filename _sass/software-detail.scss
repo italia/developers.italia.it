@@ -308,6 +308,9 @@ hr {
           @extend .d-inline;
         }
       }
+      &.platforms {
+        margin-bottom: 0;
+      }
     }
     a{
       &.controls{
