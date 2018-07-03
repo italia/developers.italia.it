@@ -1,0 +1,101 @@
+var paramKeys = [
+  'tags',
+  'developmentStatus',
+  'keyword',
+  'page',
+  'mainCopyrightOwner',
+  'categoryCode',
+  'categoryName',
+  'type'
+];
+
+// page query config.
+var pagesQueryconfig = {
+  'software_open': {
+    'type': ['software'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'reuse_software': {
+    'type': ['software'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'pa': {
+    'type': ['software'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'category': {
+    'type': ['software'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'all': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'platforms': {
+    'type': ['post'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  },
+  'api': {
+    'type': ['post'],
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+  }
+};
+
+var autocompleteQueryconfig = {
+  'all': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9
+  },
+  'platforms': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9
+  },
+  'software_open': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9
+  },
+  'reuse_software': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9
+  },
+  'api': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9
+  },
+  'administrations': {
+    'elasticsearch_connection': {
+      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+    },
+    'inputSelector': 'form .autocomplete input',
+    'size': 9,
+    'index': 'suggestions',
+  },
+}
