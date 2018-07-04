@@ -38,6 +38,30 @@ function esDevelopersItaliaQuery(config, params) {
     'filterKeys': {
       'tags': 'list-tags',
       'developmentStatus': 'list-status'
+    },
+    'category': {
+      'it': {
+        'missing': 'Tipologia Software',
+        'software_open': 'Software Open Source',
+        'reuse_software': 'Software a Riuso',
+        'projects': 'Piattaforme',
+        'api': 'API',
+        'faqs': 'Faqs',
+        'pages': 'Tipologia Software',
+        'posts': 'News',
+        'projects': 'Piattaforma',
+      },
+      'en': {
+        'missing': 'Software Type',
+        'software_open': 'Software Open Source',
+        'reuse_software': 'Re-use Software',
+        'projects': 'Platforms',
+        'api': 'API',
+        'faqs': 'Faqs',
+        'pages': 'Software Type',
+        'posts': 'News',
+        'projects': 'Platforms',
+      }
     }
   };
   this.config = $.extend(defaultConfig, config);
@@ -151,6 +175,19 @@ esDevelopersItaliaQuery.prototype.getFromQuery = function(response){
 
 esDevelopersItaliaQuery.prototype.getSizeQuery = function(response){
   return this.config['size'];
+};
+
+esDevelopersItaliaQuery.prototype.getSortQuery = function() {
+  var sort = [];
+
+  // Sort
+  // if ($('input[name=sort-by-date]:checked').val() !== undefined) {
+  //   sort.push({
+  //     'release-date' : {'order' : $('input[name=sort-by-date]:checked').val() }
+  //   });
+  // }
+
+  return sort;
 };
 
 esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
@@ -401,10 +438,10 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
     'language': language,
     'screenshot': screenshot,
     'readMore': this.readMore[language],
-    'path': 'post/' + post.title.toLowerCase().split(' ').join('-')
+    'path': post.url
   };
 
-  return this.templates.post(data);
+  return this.templates.software(data);
 }
 
 /**
@@ -704,11 +741,19 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
   var query = this.getQuery();
   var object = this;
 
+  // Sort
+  if ($('input[name=sort-by-date]:checked').val() !== undefined) {
+    sort.push({
+      'release-date' : {'order' : $('input[name=sort-by-date]:checked').val() }
+    });
+  }
+
   var params = {
     'index': index,
     'body': query,
     'from': this.getFromQuery(),
-    'size': this.getSizeQuery()
+    'size': this.getSizeQuery(),
+    'sort': this.getSortQuery()
   };
 
   if(type.length > 0) {
@@ -724,6 +769,31 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
     }
   );
 };
+
+esDevelopersItaliaAutocompleteAllQuery.prototype.getSoftwareType = function(software) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof softwar['it-riuso-codiceIPA'] == 'undefined'){
+    category = this.config['category'][language]['software_open'];
+  }
+  else {
+    category = this.config['category'][language]['reuse_software'];
+  }
+
+  return category.toUpperCase();
+}
+
+esDevelopersItaliaAutocompleteAllQuery.prototype.getPostType = function(post) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof post.type != 'undefined'){
+    category = this.config['category'][language][post.type];
+  }
+
+  return category.toUpperCase();
+}
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function(software) {
   var value = $(this.config['inputSelector']).val();
@@ -741,7 +811,8 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
   return {
     'name': name,
     'language': this.config['language'],
-    'path': '/software/' + software.name.toLowerCase().split(' ').join('-')
+    'category': this.getSoftwareType(software),
+    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 };
 
@@ -757,11 +828,13 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   return {
     'name': name,
     'language': this.config['language'],
-    'path': '/platforms/' + post.title.toLowerCase().split(' ').join('-')
+    'category': this.getPostType(post),
+    'path': post.url,
   };
 };
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = function(response) {
+  var language = this.config['language'];
   var $suggestions = $('#suggestions');
   $suggestions.text('');
 
@@ -789,9 +862,9 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
     ];
 
     $suggestions.append(this.templates.suggestion({
-      'name': this.config['autocomplete_all_text'][this.config['language']],
+      'name': this.config['autocomplete_all_text'][language],
       'language': this.config['language'],
-      'path': '/search?' + queryString.join('&')
+      'path': '/' + language + '/search?' + queryString.join('&')
     }));
   }
 }
