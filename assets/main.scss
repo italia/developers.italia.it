@@ -1286,6 +1286,171 @@ html, body {
     }
     
 }
+.postslisting {
+    &__headerbkg {
+        background-color: rgba(142,190,237,0.2);
+        height: 420px;
+        background-image: url(/assets/images/postslisting-background.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        @include media-breakpoint-up(md) { 
+            
+            background-size: auto;
+            padding-top: 4rem;
+        }
+    }
+    &__tags {
+        padding: 1rem 2rem;
+
+        @include media-breakpoint-up(md) { 
+            padding: 2rem 10rem;
+        }
+
+        .Pills {
+            li {
+                line-height: 1.5;
+                margin-bottom: 1rem;
+                a {
+                    border: none;
+                    background-color: #fff;
+                    font-size: 1rem;
+                    &:hover {
+                        background-color: $primary;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &__seltag {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        background-color: $primary;
+        border-radius: 0.8rem;
+        line-height: 1;
+        text-transform: capitalize !important;
+        font-weight: 600;
+        color: #fff !important;
+        .icon {
+            font-size: 0.6rem;
+            margin-left: 0.5em;
+            margin-top: 0.2rem;
+        }
+        
+    }
+    &__filtertag {
+        
+        a {
+            text-decoration: none !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            .it-collapse {
+                display: none;
+            }
+            &.active .it-collapse {
+                display: inline-block;
+            }
+            &.active .it-expand {
+                display: none;
+            }
+        }
+    }
+    &__header {        
+        padding-top: 1rem;
+        @include media-breakpoint-up(md) { 
+
+            padding-top: 4rem;
+        }
+
+       
+        h1 {
+            text-align: left;
+            color: #17324D;
+            @include media-breakpoint-up(md) { 
+                font-size: 3.5rem;
+            }
+        }
+        h2 {
+            color: #17324D;
+            font-family: $font-family-serif;;
+            font-style: italic;
+            font-size: 1.5rem;
+    
+            @include media-breakpoint-up(md) { 
+                font-size: 2rem;
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #17324D;
+            text-align: center;
+        }
+    }
+    &__hr {
+        border-top: 2px solid rgba(90, 103, 114, 0.25);
+        margin: 3rem 0;
+    }
+    
+}
+.newscard {
+    h1 {
+        letter-spacing: 0;
+        line-height: 1.1;
+        font-size: 1.75rem;
+        margin: 1rem 0;
+
+        a {
+            
+            color: #1C2024;
+
+        }
+    }
+    &__top {
+        color: #455B71;
+        text-transform: uppercase;
+    }
+    main {
+        color: #455B71;
+        padding: 0.5rem 0;
+    }
+    &__author {
+        font-style: italic;
+        font-weight: 600;
+        color: #455B71;
+    }
+    &__more {
+        a {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+    }
+    &--w-shadow {
+        box-shadow: 0 5px 50px 0 rgba(69,91,113,0.1);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        background-color: #fff;
+    }
+    &__cta {
+        a {
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 2px solid $primary;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+    }
+}
+
 .Pills {
     h1 {
         text-transform: uppercase;

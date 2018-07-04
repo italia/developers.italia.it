@@ -1,6 +1,5 @@
 ---
 layout: default
-lang: it
 ---
 
 {% include setlang.html %}
@@ -20,10 +19,9 @@ lang: it
   <div class="postslisting__header ">
     
     <div class="container pt-4 d-flex w-100">
-      <h1 >{{ t.news_title }}</h1>
+      <h1 >{{ page.title }}</h1>
       <div class="postslisting__filtertag ml-auto d-flex">
         <a href="#" class="align-self-center d-flex" data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
-        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4">{{ page.tag }} <span class="icon it-close"></span></a>
       </div>
     </div>
     <div class="container postslisting__tags deactive" data-activatedby="filterTags">
@@ -40,7 +38,7 @@ lang: it
   <div class="postslisting__content my-2 my-md-4">
     <div class="container postlisting__sticky my-2 ">
       <div class="row row-eq-height">
-        {% for post in page.posts limit:2 %}
+        {% for post in paginator.posts limit:2 %}
           <div class="col-md-6 mb-4 {%if forloop.first%}pr-md-3{%endif%} {%if forloop.last%}pl-md-3{%endif%}">
           {% include card.html
             date=post.date
@@ -61,7 +59,7 @@ lang: it
     </div>
     <div class="container my-3 my-md-5">
         <div class="row row-eq-height">
-        {% for post in page.posts offset:2 %}
+        {% for post in paginator.posts offset:2 %}
             {% assign division_by_3 = forloop.index | modulo:3 %}
 
             <div class="col-md-4">
@@ -92,6 +90,4 @@ lang: it
 </div>
 
 {% include banner-joinus.html %}
-
-
 
