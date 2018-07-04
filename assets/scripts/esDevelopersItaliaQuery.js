@@ -23,6 +23,14 @@ function esDevelopersItaliaQuery(config, params) {
     'elasticsearch_connection': {
       'host': 'http://elasticsearch.developers.loc'
     },
+    'intro': {
+      'it': 'Hai cercato',
+      'en': 'You have searched for'
+    },
+    'autocomplete_all_text': {
+      'it': 'Cerca in tutto il sito',
+      'en': 'Search all over the site'
+    },
     // css selector
     'pageContent': '.list-item-sorting > div',
      
@@ -152,6 +160,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
     typeof this.throbber != 'undefined' ? this.throbber.stop() : '';
     $(this.config['pageContent']).text('');
     this.renderResultCount(response.hits.total);
+    this.renderIntro();
     for (var i = 0; i < response.hits.hits.length; i++) {
       switch (response.hits.hits[i]._type) {
         case 'software':
@@ -206,11 +215,12 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': typeof value == 'undefined' ? '' : value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name?3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
-            'title',
-            'subtitle',
+            'title^3',
+            'subtitle^2',
           ]
         }
       }
@@ -277,6 +287,17 @@ esDevelopersItaliaQuery.prototype.getFiltersUrl = function() {
 
   return filters.join('&');
 };
+
+esDevelopersItaliaQuery.prototype.renderIntro  = function(tot) {
+  var keyword = this.params['keyword'].slice(0).pop();
+  var language = this.config['language'];
+  var $intro = $('.intro > h1');
+
+  if (typeof keyword != 'undefined') {
+    $intro.text('');
+    $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
+  }
+}
 
 esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
   var language = this.config['language'];
@@ -358,11 +379,12 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   }
 
   var data = {
-    'name': software.name.toLowerCase().split(' ').join('-'),
+    'name': name,
     'localisedName': localisedName,
     'language': this.config['language'],
     'screenshot': screenshot,
-    'readMore': this.readMore[language]
+    'readMore': this.readMore[language],
+    'path': 'software/' + software.name.toLowerCase().split(' ').join('-')
   };
 
   return this.templates.software(data);
@@ -374,14 +396,15 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   var language = this.config['language'];
 
   var data = {
-    'name': post.title.toLowerCase().split(' ').join('-'),
+    'name': post.title,
     'localisedName': localisedName,
     'language': language,
     'screenshot': screenshot,
-    'readMore': this.readMore[language]
+    'readMore': this.readMore[language],
+    'path': 'post/' + post.title.toLowerCase().split(' ').join('-')
   };
 
-  return this.templates.software(data);
+  return this.templates.post(data);
 }
 
 /**
@@ -415,8 +438,8 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'title',
-            'subtitle',
+            'title^3',
+            'subtitle^2',
           ]
         }
       }
@@ -458,8 +481,9 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -504,8 +528,9 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -519,8 +544,56 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
 
   return query;
 };
+
 /**
- * PA query
+ * API query.
+ */
+
+function esDevelopersItaliaApiQuery(config, params) {
+  esDevelopersItaliaQuery.call(this, config, params);
+}
+
+esDevelopersItaliaApiQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
+esDevelopersItaliaApiQuery.prototype.getQuery = function() {
+  var value = this.params['keyword'].slice(0).pop();
+  var filter = this.getFilterInQuery();
+
+  var query = {
+    'query': {
+      'bool': {
+        'must': [],
+        'filter': [
+          {'term': {'type': 'api'}},
+          {'term': { 'lang': this.config['language'] }}
+        ]
+      }
+    }
+  };
+
+  if (typeof value != 'undefined'){
+    value = value.split('+').join(' ');
+    query['query']['bool']['must'].push(
+      {
+        'multi_match': {
+          'query': value,
+          'fields': [
+            'title^3',
+            'subtitle^2'
+          ]
+        }
+      }
+    );
+  }
+
+  if (filter.length > 0) {
+    query['query']['bool']['filter'] = filter;
+  }
+
+  return query;
+};
+
+/**
+ * PA query.
  */
 function esDevelopersItaliaPaQuery(config, params) {
   esDevelopersItaliaQuery.call(this, config, params);
@@ -548,8 +621,9 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -592,11 +666,12 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           },
@@ -658,17 +733,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
     name = software.description[language_alpha_3].localisedName;
   }
 
-  var queryString = [
-    'keyword=' + name.split(' ').join('+') 
-  ];
-
-  if (typeof this.searchObjectId != 'undefined') {
-    queryString.push(
-      'type=' + this.searchObjectId
-    );
-  }
-
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
@@ -676,7 +741,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
   return {
     'name': name,
     'language': this.config['language'],
-    'path': '/search?' + queryString.join('&')
+    'path': '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 };
 
@@ -684,17 +749,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   var value = $(this.config['inputSelector']).val();
   var name = post.title;
 
-  var queryString = [
-    'keyword=' + post.title.split(' ').join('+') 
-  ];
-
-  if (typeof this.searchObjectId != 'undefined') {
-    queryString.push(
-      'type=' + this.searchObjectId
-    );
-  }
-
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
@@ -702,7 +757,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   return {
     'name': name,
     'language': this.config['language'],
-    'path': '/search?' + queryString.join('&')
+    'path': '/platforms/' + post.title.toLowerCase().split(' ').join('-')
   };
 };
 
@@ -730,11 +785,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
     }
 
     var queryString = [
-      'keyword=' + value.split(' ').join('+')
+      'keyword=' + value.trim().split(' ').join('+')
     ];
 
     $suggestions.append(this.templates.suggestion({
-      'name': this.config['language'] == 'it' ? 'Tutti' : 'All',
+      'name': this.config['autocomplete_all_text'][this.config['language']],
       'language': this.config['language'],
       'path': '/search?' + queryString.join('&')
     }));
@@ -757,8 +812,8 @@ esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           }
@@ -790,8 +845,9 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
@@ -822,15 +878,16 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
           },
-          {'term': { '_type': 'software' }}
-        ],
-        'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
+          {'term': { '_type': 'software' }},
+          {'exists': { 'field': 'it-riuso-codiceIPA' }}
+        ]
       }
     }
   };
@@ -854,8 +911,8 @@ esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           }
@@ -880,13 +937,18 @@ esDevelopersItaliaAutocompletePAQuery.prototype = Object.create(esDevelopersItal
 esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
   var value = $(this.config['inputSelector']).val();
   var query = {
-    'suggest': {
-      'search_string': {
-        'prefix': value,
-        'completion': {
-          'field' :  this.config['language'] + '.' + 'suggest-agencies',
-          'size': 10
-        }
+    'query': {
+      'bool': {
+        'must': [
+          {
+            'prefix': {
+              'it-riuso-codiceIPA': {
+                'value': value.trim(),
+                'boost': 2.0
+              }
+            }
+          }
+        ]
       }
     }
   };
@@ -894,48 +956,11 @@ esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
   return query;
 };
 
-esDevelopersItaliaAutocompletePAQuery.prototype.esSearchSuccessCallback = function(response) {
-  var $suggestions = $('#suggestions');
-  $suggestions.text('');
-
-  var value = $(this.config['inputSelector']).val();
-  if (value.length == 0){
-    return;
-  }
-
-  if ((typeof response.suggest != 'undefined') && (typeof response.suggest.search_string != 'undefined') && Array.isArray(response.suggest.search_string)) {
-    var options, search_string = response.suggest.search_string.slice(0);
-    options = search_string.pop(); options = options.options;
-    for (var i = 0; i < options.length; i++) {
-
-      var data;
-      if(options[i]['_type'] == 'software') {
-        data = this.getSuggestionDataSoftware(options[i]['_source']);
-      }
-
-      if(options[i]['_type'] == 'post') {
-        data = this.getSuggestionDataPost(options[i]['_source']);
-      }
-
-      if(options[i]['_type'] == 'suggestion') {
-        data = this.getSuggestionSuggestionPost(options[i]['_source']);
-      }
-
-      $suggestions.append(this.templates.suggestion(data));
-    }
-    $suggestions.append(this.templates.suggestion({
-      'name': this.config['language'] == 'it' ? 'Tutti' : 'All',
-      'language': this.config['language'],
-      'path': '/'
-    }));
-  }
-};
-
-esDevelopersItaliaAutocompletePAQuery.prototype.getSuggestionSuggestionPost = function(suggestion) {
+esDevelopersItaliaAutocompletePAQuery.prototype.getSuggestionDataSuggestion = function(suggestion) {
   var value = $(this.config['inputSelector']).val();
   var name = suggestion.agency.title;
   
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }

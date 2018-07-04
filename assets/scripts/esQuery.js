@@ -153,6 +153,7 @@ $( document ).ready(function() {
 
   function getSearchObject(searchObjectId, pagesQueryconfig, params) {
     var searchObject;
+    pagesQueryconfig[searchObjectId]['language'] = language;
     switch (searchObjectId) {
       case 'all':
         searchObject = new esDevelopersItaliaQuery(pagesQueryconfig[searchObjectId], params);
@@ -171,7 +172,7 @@ $( document ).ready(function() {
         break;
 
       case 'api':
-        searchObject = new esDevelopersItaliaAutocompleteAPIQuery(pagesQueryconfig[searchObjectId], params);
+        searchObject = new esDevelopersItaliaApiQuery(pagesQueryconfig[searchObjectId], params);
         break;
 
       case 'category':
