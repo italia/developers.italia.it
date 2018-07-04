@@ -134,8 +134,8 @@ it:
       goToCode: Vai al codice
       goToRoadmap: Vai alla roadmap
       functionality: Funzionalità del software
-      functinality_this_variant: Funzionalità di questa variante
-      functinality_other_variant: Funzionalità di altre varianti
+      functionality_this_variant: Funzionalità di questa variante
+      functinoality_other_variant: Funzionalità di altre varianti
       used_by: Usata da
       administration: amministrazione
       administrations: amministrazioni
@@ -299,8 +299,8 @@ en:
       goToCode: Go to the code
       goToRoadmap: Go to the roadmap
       functionality: Software functionality
-      functinality_this_variant: Functionality of this variant
-      functinality_other_variant: Functionality of others variants
+      functionality_this_variant: Functionality of this variant
+      functionality_other_variant: Functionality of others variants
       used_by: Used by
       development_status: Development status
       administration: administration

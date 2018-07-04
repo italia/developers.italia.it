@@ -68,6 +68,10 @@
         margin: auto;
         height:  120px;
         width: 230px;
+        max-height: 38px !important;
+        #vitalityChart {
+          max-height: 38px !important;
+        }
       }
       .status-developement {
         margin-top: 1.5em;
@@ -150,6 +154,37 @@ hr {
     }
     @include media-breakpoint-down(sm) {
       padding-left: 2em;
+    }
+  }
+  .first{
+    h2 {
+      text-align: left;
+      padding-top: 1em;
+    }
+    .software-ill {
+      background: url("images/illu_software.png") center center no-repeat;
+      background-size: cover;
+      background-color: #8ebeed;
+      min-height: 350px;
+      @include media-breakpoint-up(sm) {
+        min-height: 500px;
+      }
+      @include media-breakpoint-up(md) {
+        min-height: 350px;
+      }
+      @include media-breakpoint-up(lg) {
+        min-height: 500px;
+      }
+      @include media-breakpoint-up(xl) {
+        min-height: 700px;
+      }
+    }
+    .function-list {
+      padding-left: 0em;
+      border-left: 0;
+    }
+    .variant {
+      padding-left:2em;
     }
   }
 }
