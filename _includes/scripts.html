@@ -59,7 +59,7 @@
         fill: false,
         lineTension: 0.1,
         data: {{ page.vitalityDataChart | jsonify }},
-        borderWidth: 1,
+        borderWidth: 2,
         borderColor: '#06c'
        }]
      },
@@ -79,6 +79,11 @@
       },
       legend: {
         display: false,
+      },
+      elements: {
+        point: { 
+          radius: 0 
+        } 
       },
       layout: {
         padding: {
