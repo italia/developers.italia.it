@@ -137,13 +137,22 @@ layout: default
 	</div>
 </div>
 <hr class="divider">
-<div class="container">
+
+<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
-    <h2> {{ t.software.functionality }} </h2>
-    <div class="row">
+    {% if page.oldVariant.size != nil %}
+      <h2> {{ t.software.functionality }} </h2>
+    {% endif %}
+    <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
+      {% if page.oldVariant.size == nil %}
+        <div class="col-md-6 software-ill">
+        </div>
+      {% endif %}
       {% if page.isBasedOn != nil %}
         <div class="col-md-6 variant">
-          <h4> {{ t.software.functinality_this_variant }} </h4>
+          {% if page.oldVariant.size == nil %}
+            <h2> {{ t.software.functionality }} </h2>
+          {% endif %}
           <div class="function-list">
             {% if page.description[active_lang_extended].featureList != nil %}
               {% if page.description[active_lang_extended].featureList.size > 10 %}
@@ -223,7 +232,7 @@ layout: default
         </div>
         {% if page.oldVariant.size != nil %}
           <div class="col-md-6 variant">
-            <h4> {{ t.software.functinality_other_variant }} </h4>
+            <h4> {{ t.software.functionality_other_variant }} </h4>
             <div class="function-list">
               {% if page.oldFeatureList[active_lang_extended] != nil %}
                 {% if page.oldFeatureList[active_lang_extended].size > 10 %}
@@ -237,27 +246,29 @@ layout: default
                     {% endfor %} 
                   </div>
                 {% else %}
-                  {% for feature in page.oldVariant[active_lang_extended]  %}
-                  <p> {{ feature }} </p>
-                  {% endfor %}
-                {% endif%}
-              {% else %}
+                  {% if page.oldFeatureList[active_lang_extended].size <= 10 %}
+                    {% for feature in page.oldFeatureList[active_lang_extended]  %}
+                      <p> {{ feature }} </p>
+                    {% endfor %}
+                  {% endif %}
+                {% endif %}
+              {% elsif page.oldFeatureList.eng != nil  %}
                 {% if page.oldFeatureList.eng.size > 10 %}
                   {% for feature in page.oldFeatureList.eng limit: 10 %}
-                  <p> {{ feature }} </p>
+                    <p> {{ feature }} </p>
                   {% endfor %}
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                   <div class="collapse" id="otherFeature">
                     {% for feature in page.oldFeatureList.eng offset: 10 %}
-                    <p> {{ feature }} </p>
+                      <p> {{ feature }} </p>
                     {% endfor %} 
                   </div>
                 {% else %}
                   {% for feature in page.oldVariant.eng  %}
-                  <p> {{ feature }} </p>
+                    <p> {{ feature }} </p>
                   {% endfor %}
-                {% endif%}
-              {% endif%}
+                {% endif %}
+              {% endif %}
             </div>
             <div id="oldVariant">
               <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant" class="count">
