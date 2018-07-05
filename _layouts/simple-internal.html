@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+<div class="simplelayout-main-image text-center">
+  <img src="{{page.image}}" class="img-fluid">
+</div>
+<div class="simplelayout-first-part">
+<div class="container d-flex justify-content-center">
+    <article class="col-sm-10 simplelayout-main-text">
+      <h1>{{page.title}}</h1>
+      <div class="simplelayout-main-content">{{page.content}}</div>
+    </article>
+</div>
+</div>
+
+{% if page.alternate-blocks!=nill %}
+    {% include alternate-blocks.html blocks=page.alternate-blocks %}
+{% endif %}
+{% if page.pair-blocks!=nill %}
+    {% include pair-blocks.html blocks=page.pair-blocks %}
+{% endif %}
+
+{% include banner-joinus.html %}
+

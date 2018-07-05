@@ -28,31 +28,37 @@ it:
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
+    popular_searches: ricerche frequenti
+    print_the_page: Stampa la pagina
 
     by: di
     on_: "su"
     coming_soon: in arrivo
     news_categories: argomenti
-    news_title: Novità
+    news_title: News
     news_nav_title: Argomenti delle novità
+    news_filter: Filtra per argomento
 
     paginator_previous_page: pagina precedente
     paginator_next_page: pagina successiva
     paginator_page: pagina
 
-    project_leader: Project leader
+    project_leader: Community leader
 
-    home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
+    home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
+    home_hero_button: Scopri di più
+    home_hero_buttonurl: '#'
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
-    home_newsletter_footer: Rimani in contatto per essere informato via via che aggiungeremo nuovi progetti. Non ti assilleremo con troppe email, parola di sviluppatore.
+    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatore.
     home_projects_title: Progetti in evidenza
     home_projects_expand: per saperne di più
     home_projects_others: Tutti i progetti
     home_projects_count: progetti in totale
-    home_news_title: Novità
+    home_news_title: News
     home_news_expand: per saperne di più
+    home_tags: Cerca per argomento
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -74,6 +80,8 @@ it:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Le community
+    header_link_strumenti: GLi strumenti
     todo_page_project: Progetto
     todo_page_subproject: Repository
     todo_page_title: Titolo
@@ -96,6 +104,10 @@ it:
         cie: Carta d'Identità Elettronica
         security: Security
         18app: 18App
+    project_abilitante: Piattaforma abilitante
+    project_owner: Proprietario
+    project_manager: Gestore
+    project_risorse: Tutte le risorse
 
     swagger:
       download: "Scarica OpenAPI"
@@ -103,12 +115,20 @@ it:
       developer: "Erogatore"
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
+      goToCard: Vai alla scheda
 
     software:
+      software_open: Software open source
+      reuse_software: Software a riuso
+      filters: Filtri
+      sort_by: Ordina per
+      arguments: argomenti
+      results: risultati
       variant_by: Variante di
       published_by: Pubblicato da
       software_maintained_by: Software mantenuto da
       technical_contact: Contatto tecnico
+      technical_contacts: Contatti tecnici
       technical_detail: Dettagli tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
@@ -116,8 +136,8 @@ it:
       goToCode: Vai al codice
       goToRoadmap: Vai alla roadmap
       functionality: Funzionalità del software
-      functinality_this_variant: Funzionalità di questa variante
-      functinality_other_variant: Funzionalità di altre varianti
+      functionality_this_variant: Funzionalità di questa variante
+      functinoality_other_variant: Funzionalità di altre varianti
       used_by: Usata da
       administration: amministrazione
       administrations: amministrazioni
@@ -142,6 +162,13 @@ it:
       supported_languages: Lingue supportate
       awards: Premi
       api_documentation: Documentazione API
+      additional_features: Funzionalità aggiuntive
+      see_more: Vedi tutto
+      others_info: Altre informazioni
+      software_type: tipologia software
+      public_entities: Enti
+      go_to_detail: vai al dettaglio
+      view_all_photos: Guarda tutte le foto
 
 en:
   code: eng
@@ -173,6 +200,8 @@ en:
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
+    popular_searches: popular searches
+    print_the_page: Print the page
 
     by: by
     on_: "on"
@@ -180,15 +209,18 @@ en:
     news_categories: tags
     news_title: News
     news_nav_title: Categories
+    news_filter: Filtra per argomento
 
     paginator_previous_page: previous page
     paginator_next_page: next page
     paginator_page: page
 
-    project_leader: Project leaders
+    project_leader: Community leaders
 
     home_hero: A community of developers who design and make Italian digital public services
-    home_newsletter_title: Subscribe to our Newlsetter
+    home_hero_button: Scopri di più
+    home_hero_buttonurl: '#'
+    home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
     home_newsletter_footer: Stay in touch to be informed as we add more projects. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
@@ -198,6 +230,7 @@ en:
     home_projects_count: total projects
     home_news_title: News
     home_news_expand: read more
+    home_tags: Browse by tag
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
@@ -219,6 +252,8 @@ en:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Communities
+    header_link_strumenti: Tools
     todo_page_project: Project
     todo_page_subproject: Repository
     todo_page_title: Title
@@ -239,30 +274,42 @@ en:
         daf: Data & Analytics Framework
         design: Italia Design System
         18app: 18App
+    project_abilitante: Piattaforma abilitante
+    project_owner: Owner
+    project_manager: Manager
+    project_risorse: Resources
 
     swagger:
       download: "Download OpenAPI"
       url: "Server"
       channel: "Contact"
       tos: "Terms of service"
+      goToCard: Vai alla scheda
 
     software:
+      software_open: Software open source
+      reuse_software: Re-use software
+      sort_by: Sort by
+      filters: Filters
+      arguments: arguments
+      results: results
       variant_by: Variant of
       published_by: Published by
       software_maintained_by: Software maintained by
       technical_contact: Technical contact
+      technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
       goToDocumentation: Go to the documentation
       goToCode: Go to the code
       goToRoadmap: Go to the roadmap
       functionality: Software functionality
-      functinality_this_variant: Functionality of this variant
-      functinality_other_variant: Functionality of others variants
+      functionality_this_variant: Functionality of this variant
+      functionality_other_variant: Functionality of others variants
       used_by: Used by
       development_status: Development status
       administration: administration
-      administrations: aadministrations
+      administrations: administrations
       variants_present: variants present
       variant_present: variant present
       show_all: Show all
@@ -284,3 +331,10 @@ en:
       supported_languages: Supported languages
       awards: Awards
       api_documentation: Api documentation
+      additional_features: Additional features
+      see_more: See all
+      others_info: Others information
+      software_type: software type
+      public_entities: public entities
+      go_to_detail: go to detail
+      view_all_photos: View all the photos

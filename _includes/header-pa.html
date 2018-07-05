@@ -1,0 +1,78 @@
+{% assign network_links = site.data.network_links %}
+
+<header>
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+        <div class="d-block">
+          <a href="{{ site.owner_link }}" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              {{ site.owner_short }}
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              {{ site.owner_full }}
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="{{ site.partner_link }}" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none  white-color">
+              {{ site.partner_short }}
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              {{ site.partner_short }}
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button" data-activate-element >
+            <span class="icon it-expand px-2"></span>
+          </a>
+        </div>
+
+        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-block'
+           liclass='list-inline-item m-0 py-2 px-3'  %}
+
+        {% include lang_switch.html %}
+    </div>
+    </div>
+    <div class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+         data-activatedby="slimDropdown">
+    {% include network-links-menu.html class='Header-external--mobile container' %}
+    </div>
+  </div>
+
+  <div class="Header-navbar Header-navbar--pa">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activeid="offcanvasMenu">
+          <img class="Header-hamb__icon" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}">
+        </a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+          <img src="{{ page.publicAuthority.emblem }}" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink Header-titleLink--pa">
+          <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+            {{ page.publicAuthority.styledName }}
+          </a>
+          <a class="text-primary" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+            <span class="d-none d-lg-block Header-subtitle">
+              {{ page.publicAuthority.websiteText }}
+            </span>
+          </a>
+        </h1>
+      </div>
+
+      {% if include.hasSearch %}
+        <div class="Header-search ml-4 mb-0" id="header-search">
+          {% include search_form.html textColor="primary" %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
