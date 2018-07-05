@@ -65,18 +65,6 @@
         </h1>
       </div>
 
-      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
-        <div class="Header-social ">
-          <span class="mr-3 text-primary">{{ t.follow_us | capitalize }}</span>
-          <ul class="Header-socialIcons d-inline-block list-inline mb-0">
-            {% for social in site.data.social %}
-            <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}">
-              <span class="it-{{ social[0] }} icon text-primary"></span>
-            </a></li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
       {% if include.hasSearch %}
         <div class="Header-search ml-4 mb-0" id="header-search">
           {% include search_form.html textColor="primary" %}
