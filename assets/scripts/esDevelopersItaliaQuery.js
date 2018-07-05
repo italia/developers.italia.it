@@ -8,6 +8,7 @@ function esDevelopersItaliaQuery(config, params) {
     'inputSelector': '',
     'totalSelector': '.results-number',
     'pagerSelector': '#paginator',
+    'sortSelector': '.sortingBy form select',
     'totalText': {
       'it': 'risultati',
       'en': 'results'
@@ -78,8 +79,6 @@ function esDevelopersItaliaQuery(config, params) {
     'en': 'read more'
   };
 
-  this.pageFilterKeys = {};
-
   this.params = params;
 
   this.templates = Handlebars.templates;
@@ -105,6 +104,13 @@ esDevelopersItaliaQuery.prototype.popupateFiltersFromUrl = function() {
       $('#' + id + ' input[value="'+value[i]+'"]').prop('checked', true);
     }
   }
+
+  // Sort
+  var sort = this.params['sort'].slice().pop();
+  if (typeof sort == 'undefined') {
+    sort = 'az';
+  }
+  $(this.config['sortSelector']).val(sort);
 };
 
 esDevelopersItaliaQuery.prototype.registerFiltersListeners = function() {
@@ -114,18 +120,28 @@ esDevelopersItaliaQuery.prototype.registerFiltersListeners = function() {
       object.clickOnFilterCallback.call(object, event);
     });
   }
+
+  // when change sort order, execute query.
+  $(this.config['sortSelector']).on('change', function(event){
+    object.executeESQuery.call(object);
+  });
 };
 
 esDevelopersItaliaQuery.prototype.removeFiltersListeners = function() {
   for(var p in this.config['filterKeys']) {
     $('#' + this.config['filterKeys'][p] + ' input[type="checkbox"]').off('change');
   }
+
+  $(this.config['sortSelector']).off('change');
 };
 
 esDevelopersItaliaQuery.prototype.clickOnFilterCallback = function(event) {
   
+  /**
+   * NOTE: query type filter in handled on esQuery.js file (row 65).
+   */
+
   if (event.target.checked) {
-    // There is only one type of query at time.
     this.params[event.data['p']].push(event.target.value);
   }
   else {
@@ -179,15 +195,70 @@ esDevelopersItaliaQuery.prototype.getSizeQuery = function(response){
 
 esDevelopersItaliaQuery.prototype.getSortQuery = function() {
   var sort = [];
+  var value = $(this.config['sortSelector']).val();
 
-  // Sort
-  // if ($('input[name=sort-by-date]:checked').val() !== undefined) {
-  //   sort.push({
-  //     'release-date' : {'order' : $('input[name=sort-by-date]:checked').val() }
-  //   });
-  // }
+  switch (value) {
+    case 'az':
+      sort.push({
+        'name.sort': {'order': 'asc'}
+      });
+      break;
+
+    case 'za':
+      sort.push({
+        'name.sort': {'order': 'desc'}
+      });
+      break;
+
+    case 'popularity':
+      sort.push({
+        'vitality-score': {'order': 'desc'}
+      });
+      break;
+
+    case 'emerging':
+      sort.push({
+        'releaseDate': {'order': 'desc'}
+      });
+      break;
+
+    default:
+      break;
+  }
 
   return sort;
+};
+
+esDevelopersItaliaQuery.prototype.updateSearchUrl = function() {
+  var queryString = [];
+
+  // first adds search filters.
+  for(var p in this.config['filterKeys']) {
+    var value = this.params[p];
+
+    for (var i = 0; i < value.length; i++) {
+      queryString.push(p +'['+i+']='+value[i]);
+    }
+  }
+
+  // query type filter.
+  var type = this.params['type'].slice(0).pop();
+  if (typeof type == 'string' && type != 'all') {
+    queryString.push('type=' + type);
+  }
+
+  // then adds page.
+  var page = this.params['page'].slice(0).pop();
+  if (typeof page == 'undefined') {
+    page = 0;
+  }
+  queryString.push('page='+page);
+
+  // last adds sort.
+  queryString.push('sort='+$(this.config['sortSelector']).val());
+
+  // update browser history.
+  history.pushState({}, '', window.location.pathname + '?' + queryString.join('&'));
 };
 
 esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
@@ -210,6 +281,8 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
       $(this.config['pageContent']).append(html);
     }
     this.renderPager(response.hits.total);
+
+    // if the query is riggered by pager, must be scoll on page top.
   }
 };
 
@@ -258,6 +331,7 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
             'description.' + this.config['language'] + '.longDescription',
             'title^3',
             'subtitle^2',
+            'it-riuso-codiceIPA-label^4',
           ]
         }
       }
@@ -272,6 +346,10 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
 };
 
 esDevelopersItaliaQuery.prototype.executeESQuery = function() {
+  // update url.
+  this.updateSearchUrl();
+
+  // remove old results and start throbber.
   $(this.config['pageContent']).text('');
   this.throbber = Throbber({
     color: 'black',
@@ -286,6 +364,8 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
   var query = this.getQuery();
   var object = this;
 
+  query.sort = this.getSortQuery();
+
   var params = {
     'index': index,
     'body': query,
@@ -297,32 +377,17 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
     params['type'] = type;
   }
 
+  console.log("QUERY: ", params);
+
   this.client.search(params).then(
     function successSearchCallback(response){
+      console.log("RESPONSE: ", response);
       object.esSearchSuccessCallback.call(object, response);
     },
     function successSearchCallback(error){
       object.esSearchErrorCallback.call(object, error);
     }
   );
-};
-
-esDevelopersItaliaQuery.prototype.getFiltersUrl = function() {
-  var filters = [];
-  for(var p in this.config['filterKeys']) {
-    var value = this.params[p];
-
-    for (var i = 0; i < value.length; i++) {
-      filters.push(p +'['+i+']='+value[i]);
-    }
-  }
-
-  var type = this.params['type'].slice(0).pop();
-  if (typeof type != 'undefined' && type.length > 0) {
-    filters.push('type='+type);
-  }
-
-  return filters.join('&');
 };
 
 esDevelopersItaliaQuery.prototype.renderIntro  = function(tot) {
@@ -345,14 +410,14 @@ esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
 };
 
 esDevelopersItaliaQuery.prototype.renderPager = function(tot){
+  // unregister all page listeners.
+  $(this.config['pagerSelector'] + ' ul li a').off('click');
   $(this.config['pagerSelector']).text('');
   if (tot < this.config['size']){
     return;
   }
 
   var start = 0;
-  var url = window.location.pathname;
-  var queryString = this.getFiltersUrl();
   var size = this.config['size'];
   var page = this.params['page'].slice(0).pop();
   var totPages = Math.ceil(tot/size);
@@ -376,7 +441,6 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
       'title': i+1,
       'classes': (i == page) ? ' active ' : '',
       'current': page == i,
-      'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (i),
       'page': i,
     });
   }
@@ -384,14 +448,14 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   var prev = {
     'title': '<',
     'classes': (page == start) ? ' disabled ' : '',
-    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page-1),
+    'current': false,
     'page': (page-1)
   };
 
   var next = {
     'title': '>',
-    'classes': (page == totPages) ? ' disabled ' : '',
-    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page+1),
+    'classes': (page == (totPages-1)) ? ' disabled ' : '',
+    'current': false,
     'page': (page+1)
   };
 
@@ -400,6 +464,20 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
     'prev': prev,
     'next': next
   }));
+
+  // after draw pager, attach event listeners.
+  var object = this;
+  $(this.config['pagerSelector'] + ' ul li a').on('click', function(event) {
+    event.preventDefault();
+    var page = event.delegateTarget.getAttribute('page');
+
+    // Set correct page value.
+    object.params['page'].pop();
+    object.params['page'].push(page);
+
+    // Execute query.
+    object.executeESQuery.call(object);
+  });
 };
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
@@ -417,7 +495,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
 
   var data = {
     'name': name,
-    'localisedName': localisedName,
+    'localisedName': decodeHtmlEntity(localisedName),
     'language': this.config['language'],
     'screenshot': screenshot,
     'readMore': this.readMore[language],
@@ -434,7 +512,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
 
   var data = {
     'name': post.title,
-    'localisedName': localisedName,
+    'localisedName': decodeHtmlEntity(localisedName),
     'language': language,
     'screenshot': screenshot,
     'readMore': this.readMore[language],
@@ -644,9 +722,7 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
   var query = {
     'query': {
       'bool': {
-        'must': [
-          { 'term': { 'legal-mainCopyrightOwner': decodeURIComponent(this.params['mainCopyrightOwner'].slice(0).pop()) }}
-        ]
+        'must': []
       }
     }
   };
@@ -752,8 +828,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
     'index': index,
     'body': query,
     'from': this.getFromQuery(),
-    'size': this.getSizeQuery(),
-    'sort': this.getSortQuery()
+    'size': this.getSizeQuery()
   };
 
   if(type.length > 0) {
@@ -774,7 +849,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSoftwareType = function(soft
   var language = this.config['language'];
   var category = this.config['category'][language]['missing'];
 
-  if (typeof softwar['it-riuso-codiceIPA'] == 'undefined'){
+  if (typeof software['it-riuso-codiceIPA'] == 'undefined'){
     category = this.config['category'][language]['software_open'];
   }
   else {
@@ -797,8 +872,9 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getPostType = function(post) {
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function(software) {
   var value = $(this.config['inputSelector']).val();
+  var language = this.config['language'];
   var name = software.name;
-  var language_alpha_3 = this.languages[this.config['language']];
+  var language_alpha_3 = this.languages[language];
   if ( typeof software.description[language_alpha_3] != 'undefined' && software.description[language_alpha_3].localisedName != 'undefined') {
     name = software.description[language_alpha_3].localisedName;
   }
@@ -810,7 +886,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
 
   return {
     'name': name,
-    'language': this.config['language'],
+    'language': language,
     'category': this.getSoftwareType(software),
     'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
@@ -1014,13 +1090,14 @@ esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
       'bool': {
         'must': [
           {
-            'prefix': {
-              'it-riuso-codiceIPA': {
-                'value': value.trim(),
-                'boost': 2.0
-              }
+            'multi_match': {
+              'query': value,
+              'fields': [
+                'it-riuso-codiceIPA-label.ngram',
+              ]
             }
-          }
+          },
+          {'term': { '_type': 'software' }}
         ]
       }
     }

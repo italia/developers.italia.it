@@ -6,7 +6,8 @@ var paramKeys = [
   'mainCopyrightOwner',
   'categoryCode',
   'categoryName',
-  'type'
+  'type',
+  'sort'
 ];
 
 // page query config.
@@ -23,7 +24,7 @@ var pagesQueryconfig = {
       'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
     },
   },
-  'pa': {
+  'administrations': {
     'type': ['software'],
     'elasticsearch_connection': {
       'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
