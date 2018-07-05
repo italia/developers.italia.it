@@ -45,6 +45,31 @@
     bottom: .5rem;
     right: .5rem;
   }
+  position: relative;
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  &:after {
+    align-items: center;
+    background: url() rgba($primary, .88);
+    color: #fff;
+    content: '\e831';
+    display: flex;
+    font-family: italia-icon-font;
+    font-size: 2rem;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
   img {
     max-width: 100vw;
