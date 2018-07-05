@@ -1,6 +1,6 @@
 .tiled-gallery {
   margin: {
-    bottom: 4rem;
+    bottom: 1rem;
     top: 6rem;
   }
   padding-bottom: 2rem;
@@ -92,5 +92,10 @@
       }
     }
   }
+}
+
+.tiled-gallery-btn {
+  margin-bottom: 5rem;
+  text-align: center;
 }
 

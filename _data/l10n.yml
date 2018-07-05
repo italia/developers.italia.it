@@ -120,7 +120,7 @@ it:
       software_open: Software open source
       reuse_software: Software a riuso
       filters: Filtri
-      sort_by: Ordina per 
+      sort_by: Ordina per
       arguments: argomenti
       results: risultati
       variant_by: Variante di
@@ -167,6 +167,7 @@ it:
       software_type: tipologia software
       public_entities: Enti
       go_to_detail: vai al dettaglio
+      view_all_photos: Guarda tutte le foto
 
 en:
   code: eng
@@ -286,7 +287,7 @@ en:
     software:
       software_open: Software open source
       reuse_software: Re-use software
-      sort_by: Sort by 
+      sort_by: Sort by
       filters: Filters
       arguments: arguments
       results: results
@@ -334,3 +335,4 @@ en:
       software_type: software type
       public_entities: public entities
       go_to_detail: go to detail
+      view_all_photos: View all the photos
