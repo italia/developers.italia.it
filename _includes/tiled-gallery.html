@@ -13,7 +13,7 @@
           </a>
         {% else %}
           <div class="tiled-items-container">
-            {% for tiledItem in item.tiled limit 2 %}
+            {% for tiledItem in item.tiled limit: 2 %}
               <a
                 class="tiled-item"
                 href="{{ tiledItem.full }}"

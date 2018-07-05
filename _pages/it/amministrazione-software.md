@@ -96,7 +96,7 @@ legal:
 
 vitalityScore: 55
 
-relatedSoftwares:
+interestRelatedSoftwares:
   - name: Twee eiusmod fanny pack typewriter locavore
     image: http://placehold.it/272x176
   - name: Fam wayfarers tilde cray, officia gochujang
@@ -139,6 +139,12 @@ localisation:
     - ita
     - eng
     - deu
+
+relatedSoftwares:
+  - name: Selfies ennui knausgaard
+  - name: Tofu post-ironic dolor
+  - name: Twee excepteur exercitation
+  - name: Live-edge in roof party
 
 tiledGallery:
   - thumb: http://placehold.it/517x360

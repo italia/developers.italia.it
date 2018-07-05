@@ -386,7 +386,7 @@ layout: default-pa
     <h2>{{ t.software.interest_related_softwares }}</h2>
     <div class="row">
       <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
-        {% for item in page.relatedSoftwares limit : 4 %}
+        {% for item in page.interestRelatedSoftwares limit: 4 %}
           <div class="col-11 relate">
             <img
               class="img-fluid"
@@ -738,6 +738,18 @@ layout: default-pa
               <p>
                 {{ content }}
               </p>
+
+              {% unless page.relatedSoftwares == nil %}
+                <hr class="divider-narrow">
+                <p>
+                  <span class="label">{{ t.software.related_software }}</span>
+                  {% for software in page.relatedSoftwares %}
+                    <a class="d-block" href="{{ software.website }}">
+                      {{ software.name }}
+                    </a>
+                  {% endfor %}
+                </p>
+              {% endunless %}
             </div>
           </div>
         </div>
