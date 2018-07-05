@@ -286,10 +286,14 @@ layout: default
                 <div class="variantDetail">
                   <a href="{{ variant[active_lang_extended].url }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
                   <p><span class="label">{{ t.software.additional_features }}</span>:
-                    {% if variant[active_lang_extended] != nil %}
-                      {{ variant[active_lang_extended].features }}
+                    {% if variant[active_lang_extended] != nil and variant[active_lang_extended].size != 0 %}
+                      {% for feature in variant[active_lang_extended].features %}
+                        {{ feature}}{% unless forloop.last %},{% endunless %}
+                      {% endfor %}
                     {% else %}
-                      {{ variant.eng.features }}
+                      {% for feature in variant.eng.features %}
+                        {{ feature}}{% unless forloop.last %},{% endunless %}
+                      {% endfor %}
                     {% endif %}
                   </p>
                   <p><span class="label">{{ t.software.vitality }}:
