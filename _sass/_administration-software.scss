@@ -18,8 +18,16 @@
     vertical-align: baseline;
   }
 
+  h1 {
+    @include media-breakpoint-up(lg) {
+      font-size: 3.5rem;
+    }
+  }
+
   h2 {
-    font-size: 2.5rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
   }
 
   h3 {
