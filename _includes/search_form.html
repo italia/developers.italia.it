@@ -1,8 +1,18 @@
+{% if include.textColor == nil %}
+  {% assign textColor = "white" %}
+{% else %}
+  {% assign textColor = include.textColor %}
+{% endif %}
+
 <a id="search-form" data-toggle="modal" data-backdrop="false" data-target="#searchModal">
   <div class="form-inline pr-2 pr-lg-0" role="search">
     <div class="form-group position-relative">
-      <span class="text-white mr-3 d-none d-lg-inline">{{ t.search_form_label }}</span>
-      <div class="icon"><span class="it-search"></span></div>
+      <span class="text-{{ textColor }} mr-3 d-none d-lg-inline">
+        {{ t.search_form_label }}
+      </span>
+      <div class="icon icon--{{ textColor }}">
+        <span class="it-search"></span>
+      </div>
     </div>
   </div>
 </a>

@@ -29,6 +29,7 @@ it:
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
     popular_searches: ricerche frequenti
+    print_the_page: Stampa la pagina
 
     by: di
     on_: "su"
@@ -120,7 +121,7 @@ it:
       software_open: Software open source
       reuse_software: Software a riuso
       filters: Filtri
-      sort_by: Ordina per 
+      sort_by: Ordina per
       arguments: argomenti
       results: risultati
       variant_by: Variante di
@@ -167,6 +168,7 @@ it:
       software_type: tipologia software
       public_entities: Enti
       go_to_detail: vai al dettaglio
+      view_all_photos: Guarda tutte le foto
 
 en:
   code: eng
@@ -199,6 +201,7 @@ en:
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
     popular_searches: popular searches
+    print_the_page: Print the page
 
     by: by
     on_: "on"
@@ -286,7 +289,7 @@ en:
     software:
       software_open: Software open source
       reuse_software: Re-use software
-      sort_by: Sort by 
+      sort_by: Sort by
       filters: Filters
       arguments: arguments
       results: results
@@ -334,3 +337,4 @@ en:
       software_type: software type
       public_entities: public entities
       go_to_detail: go to detail
+      view_all_photos: View all the photos

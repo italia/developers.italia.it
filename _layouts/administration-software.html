@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-pa
 ---
 
 {% include setlang.html %}
@@ -17,195 +17,188 @@ layout: default
 {% endcomment %}
 {{ page.countries}}
 
-<div class="container page-software-detail">
+{% include subheader.html %}
+
+<div class="container page-administration-software">
 	<div class="row intro">
     <div class="col-md-7">
       <div class="intro-name">
-        <img src="{{ page.logo}}" class="d-inline-block">
-        <h1 class="d-inline-block">
+        <img class="intro__img" src="http://placehold.it/48x48" class="d-inline-block">
+        <h1 class="software-title">
           {% if page.description[active_lang_extended].localisedName != nil %}
-            {{ page.description[active_lang_extended].localisedName|capitalize }}
+            {{ page.description[active_lang_extended].localisedName }}
           {% else %}
             {{ page.title }}
-          {% endif%}<span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
+          {% endif%}
+          <span class="badge badge-pill badge-pill--sup badge-primary">
+            {{ page.softwareVersion }}
+          </span>
         </h1>
-        <div class="abstract-software">
+        <h2 class="font-weight-normal">
           {% if page.description[active_lang_extended].genericName != nil %}
-          <h2>
             {{ page.description[active_lang_extended].genericName}}
-            {% if page.isBasedOn != nil %}
-              <br>
-              {{ t.software.variant_by }} {{ page.legal.repoOwner }}
-            {% endif %}
-          </h2>
           {% elsif page.description.eng.genericName != nil %}
-            <h2>
-              {{ page.description.eng.genericName }}
-              {% if page.isBasedOn != nil %}
-                <br>
-                {{ t.software.variant_by }} {{ page.legal.repoOwner }}
-              {% endif %}
-            </h2>
-          {% elsif page.description.eng.genericName == nill %}
-            <h2>
-              {{ description['genericName'] }}
-              {% if page.isBasedOn != nil %}
-                <br>
-                {{ t.software.variant_by }} {{ page.legal.repoOwner }}
-              {% endif %}
-            </h2>
-          {% endif %}
-          <h3>
-            {% if page.description[active_lang_extended].shortDescription != nil %}
-              {{ page.description[active_lang_extended].shortDescription }}
-            {% elsif page.description.eng.shortDescription != nil  %}
-              {{ page.description.eng.shortDescription }}
-            {% elsif page.description.eng.shortDescription == nil %}
-              {{ description['shortDescription'] }}
-            {% endif %}
-          </h3>
-          <div class="tag">
-            {% for tag in page.popularTags limit: 3 %}
-              {% include set-tag.html label=tag %}
-            {% endfor %}
+            {{ page.description.eng.genericName }}
+          {% elsif page.description.eng.genericName == nil %}
+            {{ description['genericName'] }}
+          {% endif %}<br />
+          {{ t.software.variant_by }}: {{ page.legal.repoOwner }}
+        </h2>
+        <h3 class="font-weight-normal color-content font-serif">
+          {{ page.description.shortDescription }}
+        </h3>
+        <div class="mt-4 mb-5">
+          {% for tag in page.popularTags limit: 3 %}
+            {% include set-tag.html label=tag %}
+          {% endfor %}
+        </div>
+        <div class="row legal-main-info">
+          <div class="col-sm">
+            <p><span class="label">{{ t.software.published_by }} </span>
+              <a class="d-block" href="#">{{ page.legal.repoOwner }}</a>
+            </p>
           </div>
-          <div class="row legal-main-info">
-            <div class="col-sm">
-              <p><span class="label">{{ t.software.published_by }} </span>
-                <a href="#">{{ page.legal.repoOwner }}</a>
-              </p>
-            </div>
-            {% if page.maintenance.type == "contract" %}
-              {% if page.maintenance.contractors[0].name != nil %}
-              <div class="col-sm">
-                <p><span class="label">{{ t.software.software_maintained_by }} </span>
-                  {% for contractor in page.maintenance.contractors %}
-                    <a href="{{ contractor.website }}">{{ contractor.name }}</a>
-                  {% endfor %}
-                </p>
-              </div>
-              {% endif %}
-            {% endif %}
-            <div class="col-sm">
-              <p><span class="label">{{ t.software.technical_contact }} </span>
-                {% for contact in page.maintenance.contacts limit: 1 %}
-                  <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
-                  {{ contact.phone }}
-                {% endfor %}
-              </p>
-            </div>
+          <div class="col-sm">
+            <p><span class="label">{{ t.software.software_maintained_by }} </span>
+              {% for contractor in page.maintenance.contractors %}
+                <a class="d-block" href="{{ contractor.website }}">{{ contractor.name }}</a>
+              {% endfor %}
+            </p>
+          </div>
+          <div class="col-sm">
+            <p><span class="label">{{ t.software.technical_contact }} </span>
+              {% for contact in page.maintenance.contacts limit: 1 %}
+                <a class="d-block" href="mailto:{{ contact.email }}">{{ contact.name }}</a>
+                <span class="d-block">{{ contact.phone }}</span>
+              {% endfor %}
+            </p>
           </div>
         </div>
       </div>
     </div>
-		<div class="offset-md-1 col-md-4 ">
+    <div class="offset-md-1 col-md-4 ">
       <p class="h4 text-uppercase">{{ t.software.technical_detail }}</p>
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}</p>
-          <div id="softwareChart">
-            <canvas id="vitalityChart"></canvas>
-          </div>
-          <div class="status-developement">
-            <p>{{ t.software.development_status }}:  {% include software_development_status.html label=page.developmentStatus %} </p>
-          </div>
+          <p class="score d-inline-block">
+            {{ page.vitalityScore }}% <img src="/assets/images/vitality-placeholder.png" style="vertical-align:baseline" />
+          </p>
+          <p class="mt-3">
+            {{ t.software.development_status }}: {% include software_development_status.html label=page.developmentStatus %}
+          </p>
         </div>
         {% if page.description[active_lang_extended].documentation != nil %}
           <div class="goto doc">
-            <p><a href=" {{ page.description[active_lang_extended].documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p>
+              <a href="{{ page.description[active_lang_extended].documentation }}">
+                <img src="/assets/icons/software_icons/it-documentazione.svg" />
+                {{ t.software.goToDocumentation }} &rarr;
+              </a>
+            </p>
           </div>
         {% elsif page.description.eng.documentation != nil  %}
           <div class="goto doc">
-            <p><a href=" {{ page.description.eng.documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p>
+              <a href="{{ page.description.eng.documentation }}">
+                <img src="/assets/icons/software_icons/it-documentazione.svg" />
+                {{ t.software.goToDocumentation }} &rarr;
+              </a>
+            </p>
           </div>
         {% elsif page.description.eng.documentation == nil  %}
           <div class="goto doc">
-            <p><a href=" {{ description['documentation'] }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p>
+              <a href="{{ description['documentation'] }}">
+                <img src="/assets/icons/software_icons/it-documentazione.svg" />
+                {{ t.software.goToDocumentation }} &rarr;
+              </a>
+            </p>
           </div>
         {% endif %}
           <div class="goto code">
-            <p><a href=" {% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
+            <p>
+              <a href="{% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}">
+                <img src="/assets/icons/software_icons/it-codice.svg" />
+                {{ t.software.goToCode }} &rarr;
+              </a>
+            </p>
           </div>
         {% if page.roadmap != nil %}
-        <div class="goto road">
-          <p><a href=" {{ page.roadmap }} "><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
-        </div>
+          <div class="goto road">
+            <p>
+              <a href="{{ page.roadmap }}">
+                <img src="/assets/icons/software_icons/it-roadmap.svg" />
+                  {{ t.software.goToRoadmap }} &rarr;
+              </a>
+            </p>
+          </div>
         {% endif %}
       </div>
 		</div>
 	</div>
 </div>
-<hr class="divider">
-
-<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
+{% include tiled-gallery.html %}
+<div class="container">
   <div class="functionality">
-    {% if page.oldVariant.size != nil %}
-      <h2> {{ t.software.functionality }} </h2>
-    {% endif %}
-    <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
-      {% if page.oldVariant.size == nil %}
-        <div class="col-md-6 software-ill">
-        </div>
-      {% endif %}
+    <h2>{{ t.software.functionality }}</h2>
+    <div class="row">
       {% if page.isBasedOn != nil %}
         <div class="col-md-6 variant">
-          {% if page.oldVariant.size == nil %}
-            <h2> {{ t.software.functionality }} </h2>
-          {% endif %}
+          <h4>{{ t.software.functionality_this_variant }}</h4>
           <div class="function-list">
             {% if page.description[active_lang_extended].featureList != nil %}
               {% if page.description[active_lang_extended].featureList.size > 10 %}
                 {% for feature in page.description[active_lang_extended].featureList limit: 10 %}
-                <p> {{ feature }} </p>
+                <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description[active_lang_extended].featureList offset: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in page.description[active_lang_extended].featureList  %}
-                <p> {{ feature }} </p>
+                {% for feature in page.description[active_lang_extended].featureList %}
+                <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
             {% elsif page.description.eng.featureList != nil %}
               {% if page.description.eng.featureList.size > 10 %}
                 {% for feature in page.description.eng.featureList limit: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description.eng.featureList offset: 10 %}
-                    <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in page.description.eng.featureList  %}
-                  <p> {{ feature }} </p>
+                {% for feature in page.description.eng.featureList %}
+                  <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
-            {% elsif page.description.eng.featureList == nil  %}
+            {% elsif page.description.eng.featureList == nil %}
               {% if description['featureList'].size > 10 %}
                 {% for feature in description['featureList'] limit: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in description['featureList'] offset: 10 %}
-                    <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in description['featureList']  %}
-                  <p> {{ feature }} </p>
+                {% for feature in description['featureList'] %}
+                  <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
             {% endif %}
@@ -232,68 +225,70 @@ layout: default
         </div>
         {% if page.oldVariant.size != nil %}
           <div class="col-md-6 variant">
-            <h4> {{ t.software.functionality_other_variant }} </h4>
+            <h4>{{ t.software.functinoality_other_variant }}</h4>
             <div class="function-list">
               {% if page.oldFeatureList[active_lang_extended] != nil %}
                 {% if page.oldFeatureList[active_lang_extended].size > 10 %}
                   {% for feature in page.oldFeatureList[active_lang_extended] limit: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                   {% endfor %}
-                  <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
-                  <div class="collapse" id="otherFeature">
+                  <p>
+                    <a data-toggle="collapse" href="#otherOldFeature" role="button" aria-expanded="false" aria-controls="otherOldFeature">
+                      {{ t.software.show_all }}
+                    </a>
+                  </p>
+                  <div class="collapse" id="otherOldFeature">
                     {% for feature in page.oldFeatureList[active_lang_extended] offset: 10 %}
-                    <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                     {% endfor %}
                   </div>
                 {% else %}
-                  {% if page.oldFeatureList[active_lang_extended].size <= 10 %}
-                    {% for feature in page.oldFeatureList[active_lang_extended]  %}
-                      <p> {{ feature }} </p>
-                    {% endfor %}
-                  {% endif %}
-                {% endif %}
-              {% elsif page.oldFeatureList.eng != nil  %}
+                  {% for feature in page.oldFeatureList[active_lang_extended] %}
+                  <p>{{ feature }}</p>
+                  {% endfor %}
+                {% endif%}
+              {% else %}
                 {% if page.oldFeatureList.eng.size > 10 %}
                   {% for feature in page.oldFeatureList.eng limit: 10 %}
-                    <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                   {% endfor %}
-                  <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
-                  <div class="collapse" id="otherFeature">
+                  <p>
+                    <a data-toggle="collapse" href="#otherOldFeature" role="button" aria-expanded="false" aria-controls="otherOldFeature">
+                      {{ t.software.show_all }}
+                    </a>
+                  </p>
+                  <div class="collapse" id="otherOldFeature">
                     {% for feature in page.oldFeatureList.eng offset: 10 %}
-                      <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                     {% endfor %}
                   </div>
                 {% else %}
-                  {% for feature in page.oldFeatureList.eng  %}
-                    <p> {{ feature }} </p>
+                  {% for feature in page.oldFeatureList.eng %}
+                  <p>{{ feature }}</p>
                   {% endfor %}
-                {% endif %}
-              {% endif %}
+                {% endif%}
+              {% endif%}
             </div>
             <div id="oldVariant">
               <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant" class="count">
-                  {{ page.oldVariant | size }}
-                  {% if page.oldVariant.size > 1 %}
-                    {{ t.software.variants_present }}
-                  {% else %}
-                    {{ t.software.variant_present }}
-                  {% endif %}
-                  <span class="or">&or;</span>
-                  <span class="and">&and;</span>
+                {{ page.oldVariant | size }}
+                {% if page.oldVariant.size > 1 %}
+                  {{ t.software.variants_present }}
+                {% else %}
+                  {{ t.software.variant_present }}
+                {% endif %}
+                <span class="or">&or;</span>
+                <span class="and">&and;</span>
               </a>
               <div class="collapse" id="listVariant">
-                {% for variant in page.oldVariant  %}
+                {% for variant in page.oldVariant %}
                 <div class="variantDetail">
                   <a href="{{ variant[active_lang_extended].url }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
                   <p><span class="label">{{ t.software.additional_features }}</span>:
-                    {% if variant[active_lang_extended] != nil and variant[active_lang_extended].size != 0 %}
-                      {% for feature in variant[active_lang_extended].features %}
-                        {{ feature}}{% unless forloop.last %},{% endunless %}
-                      {% endfor %}
+                    {% if variant[active_lang_extended] != nil %}
+                      {{ variant[active_lang_extended].features }}
                     {% else %}
-                      {% for feature in variant.eng.features %}
-                        {{ feature}}{% unless forloop.last %},{% endunless %}
-                      {% endfor %}
+                      {{ variant.eng.features }}
                     {% endif %}
                   </p>
                   <p><span class="label">{{ t.software.vitality }}:
@@ -311,55 +306,55 @@ layout: default
             {% if page.description[active_lang_extended].featureList != nil %}
               {% if page.description[active_lang_extended].featureList.size > 10 %}
                 {% for feature in page.description[active_lang_extended].featureList limit: 10 %}
-                <p> {{ feature }} </p>
+                <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description[active_lang_extended].featureList offset: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in page.description[active_lang_extended].featureList  %}
-                <p> {{ feature }} </p>
+                {% for feature in page.description[active_lang_extended].featureList %}
+                <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
             {% elsif page.description.eng.featureList != nil %}
               {% if page.description.eng.featureList.size > 10 %}
                 {% for feature in page.description.eng.featureList limit: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description.eng.featureList offset: 10 %}
-                    <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in page.description.eng.featureList  %}
-                  <p> {{ feature }} </p>
+                {% for feature in page.description.eng.featureList %}
+                  <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
-            {% elsif page.description.eng.featureList == nil  %}
+            {% elsif page.description.eng.featureList == nil %}
               {% if description['featureList'].size > 10 %}
                 {% for feature in description['featureList'] limit: 10 %}
-                  <p> {{ feature }} </p>
+                  <p>{{ feature }}</p>
                 {% endfor %}
                 <p>
                   <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false" aria-controls="otherFeature">{{ t.software.show_all }}</a>
                 </p>
                 <div class="collapse" id="otherFeature">
                   {% for feature in description['featureList'] offset: 10 %}
-                    <p> {{ feature }} </p>
+                    <p>{{ feature }}</p>
                   {% endfor %}
                 </div>
               {% else %}
-                {% for feature in description['featureList']  %}
-                  <p> {{ feature }} </p>
+                {% for feature in description['featureList'] %}
+                  <p>{{ feature }}</p>
                 {% endfor %}
               {% endif %}
             {% endif %}
@@ -388,12 +383,16 @@ layout: default
     </div>
   </div>
   <div class="interestRelatedSoftwares">
-    <h2> {{ t.software.interest_related_softwares }} </h2>
+    <h2>{{ t.software.interest_related_softwares }}</h2>
     <div class="row">
       <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
-        {% for item in page.relatedSoftwares limit : 4 %}
+        {% for item in page.interestRelatedSoftwares limit: 4 %}
           <div class="col-11 relate">
-            <img class="img-fluid" src="{{ item.image }}" alt="{% if item[active_lang_extended].localisedName != nil %}{{ item[active_lang_extended].localisedName }}{% else %}{{ item.name }}{% endif %}">
+            <img
+              class="img-fluid"
+              src="{{ item.image }}"
+              alt="{% if item[active_lang_extended].localisedName != nil %}{{ item[active_lang_extended].localisedName }}{% else %}{{ item.name }}{% endif %}"
+            />
             <div class="relate-body">
               <p class="relate-title">
                 {% if item[active_lang_extended].localisedName != nil %}
@@ -402,7 +401,9 @@ layout: default
                   {{ item.name }}
                 {% endif %}
               </p>
-              <a href="{{ item[active_lang_extended].url }}" class="relate-link"> {{ t.software.read_more }}</a>
+              <a href="{{ item[active_lang_extended].url }}" class="relate-link">
+                {{ t.software.read_more }} &rarr;
+              </a>
             </div>
           </div>
         {% endfor %}
@@ -410,25 +411,24 @@ layout: default
     </div>
   </div>
   <div class="tags-relate text-center">
-  <p>
-    <strong>TAG</strong>
-    {% for tag in page.shareTags limit: 3 %}
-      {% include set-tag.html label=tag %}
-    {% endfor %}
-  </p>
+    <p>
+      <strong>TAG</strong>
+      {% for tag in page.shareTags limit: 3 %}
+        {% include set-tag.html label=tag %}
+      {% endfor %}
+    </p>
   </div>
 </div>
 <div class="detail-sheet">
   <div class="container sheet">
-    <div class="top">
-    </div>
+    <div class="top"></div>
     <div class="content-sheet">
       <div class="row justify-content-center ">
         <div class="col-10 col-sm-10">
           <div class="heading-title">
-            <p>{{ t.software.detailed_info }} </p>
+            <p>{{ t.software.detailed_info }}</p>
             <div class="title">
-              <h2 class="h1">
+              <h2 class="h1 software-title">
                 {% if page.description[active_lang_extended].localisedName != nil %}
                   {{ page.description[active_lang_extended].localisedName|capitalize }}
                 {% else %}
@@ -467,7 +467,9 @@ layout: default
                   <p>
                     <span class="label">{{ t.software.contract_with }}</span>
                     {% for contractor in page.maintenance.contractors %}
-                      <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{ contractor.until}}
+                      <a href="{{ contractor.website }}" class="until">
+                        {{ contractor.name }}
+                      </a> {{ t.software.until }} {{ contractor.until}}
                     {% endfor %}
                   </p>
                 </div>
@@ -486,7 +488,7 @@ layout: default
               </span>
             </p>
             <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false" aria-controls="maintenanceContact" class="d-block d-md-none controls">
-               {% if page.maintenance.contacts.size == 1 %}
+                {% if page.maintenance.contacts.size == 1 %}
                 {{ t.software.technical_contact }}
               {% else %}
                 {{ t.software.technical_contacts }}
@@ -499,7 +501,9 @@ layout: default
                 {% for contact in page.maintenance.contacts %}
                 <div class="col-md">
                   <p>
-                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>  {{ contact.phone }}
+                    <a href="mailto:{{ contact.email }}">
+                      {{ contact.name }}
+                    </a> {{ contact.phone }}
                   </p>
                 </div>
                 {% endfor %}
@@ -536,7 +540,7 @@ layout: default
                         {% if dependence.versionMin != nil %}
                           / {{ dependence.versionMin}}
                           {% if dependence.versionMax != nil %}
-                           - {{ dependence.versionMax}}
+                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% elsif dependence.version == nill %}
@@ -548,7 +552,7 @@ layout: default
                           {% endif %}
                         {% else %}
                           {% if dependence.versionMax != nil %}
-                           > {{ dependence.versionMax}}
+                            > {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% endif %}
@@ -563,7 +567,7 @@ layout: default
                         {% if dependence.versionMin != nil %}
                           / {{ dependence.versionMin}}
                           {% if dependence.versionMax != nil %}
-                           - {{ dependence.versionMax}}
+                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% elsif dependence.version == nill %}
@@ -575,7 +579,7 @@ layout: default
                           {% endif %}
                         {% else %}
                           {% if dependence.versionMax != nil %}
-                           > {{ dependence.versionMax}}
+                            > {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% endif %}
@@ -590,7 +594,7 @@ layout: default
                         {% if dependence.versionMin != nil %}
                           / {{ dependence.versionMin}}
                           {% if dependence.versionMax != nil %}
-                           - {{ dependence.versionMax}}
+                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% elsif dependence.version == nill %}
@@ -602,7 +606,7 @@ layout: default
                           {% endif %}
                         {% else %}
                           {% if dependence.versionMax != nil %}
-                           > {{ dependence.versionMax}}
+                            > {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
                       {% endif %}
@@ -639,7 +643,7 @@ layout: default
           </div>
           <div class="main row">
             <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false" aria-controls="mainOthersInfo" class="d-block d-md-none controls">
-               {{ t.software.others_info }}
+              {{ t.software.others_info }}
               <span class="or">&or;</span>
               <span class="and">&and;</span>
             </a>
@@ -656,21 +660,21 @@ layout: default
               {% if page.localisation.localisationReady == true %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.supported_languages }}</span>
-                 {% for language in page.localisation.availableLanguages %}
+                  {% for language in page.localisation.availableLanguages %}
                     {% include set-language-supported.html label=language %}
                   {% endfor %}
                 </p>
               </div>
               {% endif %}
-              {% if page.description[active_lang_extended].awards == true %}
+              {% if page.description[active_lang_extended].awards != nil %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.awards }}</span>
-                   {% for award in page.description[active_lang_extended].awards %}
+                    {% for award in page.description[active_lang_extended].awards %}
                       <a href="#">{{ award }}</a>
                     {% endfor %}
                   </p>
                 </div>
-              {% elsif page.description.eng.awards == true  %}
+              {% elsif page.description.eng.awards != nil  %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.awards }}</span>
                     {% for award in page.description.eng.awards %}
@@ -678,7 +682,7 @@ layout: default
                     {% endfor %}
                   </p>
                 </div>
-              {% elsif page.description.eng.awards == false  %}
+              {% elsif page.description.eng.awards == nil  %}
                 {% if description['awards'] != nil %}
                   <div class="other-detail">
                     <p><span class="label">{{ t.software.awards }}</span>
@@ -692,20 +696,38 @@ layout: default
               {% if page.description[active_lang_extended].apiDocumentation != nil %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.api_documentation }}</span>
-                   <a href="{{ page.description[active_lang_extended].apiDocumentation }}">{% if page.description[active_lang_extended].localisedName != nil %}{{ page.description[active_lang_extended].localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                    <a href="{{ page.description[active_lang_extended].apiDocumentation }}">
+                      {% if page.description[active_lang_extended].localisedName != nil %}
+                        {{ page.description[active_lang_extended].localisedName }}
+                      {% else %}
+                        {{ page.title }}
+                      {% endif %} API
+                    </a>
                   </p>
                 </div>
               {% elsif page.description.eng.apiDocumentation != nil  %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.api_documentation }}</span>
-                   <a href="{{ page.description.eng.apiDocumentation }}">{% if page.description.eng.localisedName != nil %}{{ page.description.eng.localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                    <a href="{{ page.description.eng.apiDocumentation }}">
+                      {% if page.description.eng.localisedName != nil %}
+                        {{ page.description.eng.localisedName }}
+                      {% else %}
+                        {{ page.title }}
+                      {% endif %} API
+                    </a>
                   </p>
                 </div>
               {% elsif page.description.eng.apiDocumentation == nil %}
                 {% if description['apiDocumentation'] != nil %}
                   <div class="other-detail">
                     <p><span class="label">{{ t.software.api_documentation }}</span>
-                     <a href="{{  description['apiDocumentation'] }}">{% if description['localisedName'] != nil %}{{ description['localisedName'] }} {% else %} {{ page.title }} {% endif %} API</a>
+                      <a href="{{ description['apiDocumentation'] }}">
+                        {% if description['localisedName'] != nil %}
+                          {{ description['localisedName'] }}
+                        {% else %}
+                          {{ page.title }}
+                        {% endif %} API
+                      </a>
                     </p>
                   </div>
                 {% endif %}
@@ -714,14 +736,20 @@ layout: default
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
               <p>
-                {% if page.description[active_lang_extended].longDescription != nil %}
-                  {{ page.description[active_lang_extended].longDescription }}
-                {% elsif page.description.eng.longDescription != nil  %}
-                  {{ page.description.eng.longDescription }}
-                {% elsif page.description.eng.longDescription == nil %}
-                  {{ description['longDescription'] }}
-                {% endif %}
+                {{ content }}
               </p>
+
+              {% unless page.relatedSoftwares == nil %}
+                <hr class="divider-narrow">
+                <p>
+                  <span class="label">{{ t.software.related_software }}</span>
+                  {% for software in page.relatedSoftwares %}
+                    <a class="d-block" href="{{ software.website }}">
+                      {{ software.name }}
+                    </a>
+                  {% endfor %}
+                </p>
+              {% endunless %}
             </div>
           </div>
         </div>
@@ -729,3 +757,5 @@ layout: default
     </div>
   </div>
 </div>
+
+{% include photoswipe-ui.html %}
