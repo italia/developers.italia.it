@@ -137,28 +137,58 @@ localisation:
 tiledGallery:
   - thumb: http://placehold.it/517x360
     full: http://placehold.it/1600x1200
+    size:
+      height: 1200
+      width: 1600
   - tiled:
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
   - tiled:
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
   - thumb: http://placehold.it/517x360
     full: http://placehold.it/1600x1200
+    size:
+      height: 1200
+      width: 1600
   - tiled:
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
   - tiled:
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
       - thumb: http://placehold.it/517x360
         full: http://placehold.it/1600x1200
+        size:
+          height: 1200
+          width: 1600
 
 ---
 
