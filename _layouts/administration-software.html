@@ -402,7 +402,7 @@ layout: default-pa
                 {% endif %}
               </p>
               <a href="{{ item[active_lang_extended].url }}" class="relate-link">
-                {{ t.software.read_more }}
+                {{ t.software.read_more }} &rarr;
               </a>
             </div>
           </div>
@@ -434,7 +434,7 @@ layout: default-pa
                 {% else %}
                   {{ page.title }}
                 {% endif%}
-                <span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span>
+                <span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
               </h2>
               <h2>
                 {% if page.description[active_lang_extended].genericName != nil %}
