@@ -15,7 +15,7 @@ layout: default
 
 
 {% endcomment %}
-{{ page.countries}} 
+{{ page.countries}}
 
 <div class="container page-software-detail">
 	<div class="row intro">
@@ -24,12 +24,12 @@ layout: default
         <img src="{{ page.logo}}" class="d-inline-block">
         <h1 class="d-inline-block">
           {% if page.description[active_lang_extended].localisedName != nil %}
-            {{ page.description[active_lang_extended].localisedName|capitalize }} 
+            {{ page.description[active_lang_extended].localisedName|capitalize }}
           {% else %}
             {{ page.title }}
           {% endif%}<span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span>
         </h1>
-        <div class="abstract-software">           
+        <div class="abstract-software">
           {% if page.description[active_lang_extended].genericName != nil %}
           <h2>
             {{ page.description[active_lang_extended].genericName}}
@@ -66,7 +66,7 @@ layout: default
           </h3>
           <div class="tag">
             {% for tag in page.popularTags limit: 3 %}
-              {% include set-tag.html label=tag %} 
+              {% include set-tag.html label=tag %}
             {% endfor %}
           </div>
           <div class="row legal-main-info">
@@ -93,7 +93,7 @@ layout: default
                   {{ contact.phone }}
                 {% endfor %}
               </p>
-            </div>           
+            </div>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description[active_lang_extended].featureList offset: 10 %}
                   <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in page.description[active_lang_extended].featureList  %}
@@ -183,7 +183,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description.eng.featureList offset: 10 %}
                     <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in page.description.eng.featureList  %}
@@ -201,7 +201,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in description['featureList'] offset: 10 %}
                     <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in description['featureList']  %}
@@ -223,7 +223,7 @@ layout: default
                 <span class="and">&and;</span>
               </a>
               <div class="collapse" id="by-amministration">
-                {% for item in page.usedBy %} 
+                {% for item in page.usedBy %}
                   <p> {{ item }} </p>
                 {% endfor %}
               </div>
@@ -243,7 +243,7 @@ layout: default
                   <div class="collapse" id="otherFeature">
                     {% for feature in page.oldFeatureList[active_lang_extended] offset: 10 %}
                     <p> {{ feature }} </p>
-                    {% endfor %} 
+                    {% endfor %}
                   </div>
                 {% else %}
                   {% if page.oldFeatureList[active_lang_extended].size <= 10 %}
@@ -261,10 +261,10 @@ layout: default
                   <div class="collapse" id="otherFeature">
                     {% for feature in page.oldFeatureList.eng offset: 10 %}
                       <p> {{ feature }} </p>
-                    {% endfor %} 
+                    {% endfor %}
                   </div>
                 {% else %}
-                  {% for feature in page.oldVariant.eng  %}
+                  {% for feature in page.oldFeatureList.eng  %}
                     <p> {{ feature }} </p>
                   {% endfor %}
                 {% endif %}
@@ -285,14 +285,14 @@ layout: default
                 {% for variant in page.oldVariant  %}
                 <div class="variantDetail">
                   <a href="{{ variant[active_lang_extended].url }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
-                  <p><span class="label">{{ t.software.additional_features }}</span>: 
+                  <p><span class="label">{{ t.software.additional_features }}</span>:
                     {% if variant[active_lang_extended] != nil %}
                       {{ variant[active_lang_extended].features }}
                     {% else %}
                       {{ variant.eng.features }}
                     {% endif %}
                   </p>
-                  <p><span class="label">{{ t.software.vitality }}: 
+                  <p><span class="label">{{ t.software.vitality }}:
                     {{ variant.vitalityScore }}%</span>
                   </p>
                 </div>
@@ -301,7 +301,7 @@ layout: default
             </div>
           </div>
         {% endif %}
-      {% else %}  
+      {% else %}
         <div class="col">
           <div class="function-list">
             {% if page.description[active_lang_extended].featureList != nil %}
@@ -315,7 +315,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description[active_lang_extended].featureList offset: 10 %}
                   <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in page.description[active_lang_extended].featureList  %}
@@ -333,7 +333,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in page.description.eng.featureList offset: 10 %}
                     <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in page.description.eng.featureList  %}
@@ -351,7 +351,7 @@ layout: default
                 <div class="collapse" id="otherFeature">
                   {% for feature in description['featureList'] offset: 10 %}
                     <p> {{ feature }} </p>
-                  {% endfor %} 
+                  {% endfor %}
                 </div>
               {% else %}
                 {% for feature in description['featureList']  %}
@@ -373,7 +373,7 @@ layout: default
                 <span class="and">&and;</span>
               </a>
               <div class="collapse" id="by-amministration">
-                {% for item in page.usedBy %} 
+                {% for item in page.usedBy %}
                   <p> {{ item }} </p>
                 {% endfor %}
               </div>
@@ -407,11 +407,11 @@ layout: default
   </div>
   <div class="tags-relate text-center">
   <p>
-    <strong>TAG</strong> 
+    <strong>TAG</strong>
     {% for tag in page.shareTags limit: 3 %}
-      {% include set-tag.html label=tag %} 
+      {% include set-tag.html label=tag %}
     {% endfor %}
-  </p>    
+  </p>
   </div>
 </div>
 <div class="detail-sheet">
@@ -424,9 +424,9 @@ layout: default
           <div class="heading-title">
             <p>{{ t.software.detailed_info }} </p>
             <div class="title">
-              <h2 class="h1"> 
+              <h2 class="h1">
                 {% if page.description[active_lang_extended].localisedName != nil %}
-                  {{ page.description[active_lang_extended].localisedName|capitalize }} 
+                  {{ page.description[active_lang_extended].localisedName|capitalize }}
                 {% else %}
                   {{ page.title }}
                 {% endif%}
@@ -602,7 +602,7 @@ layout: default
                           {% endif %}
                         {% endif %}
                       {% endif %}
-                    </p> 
+                    </p>
                   {% endfor %}
                 </p>
               </div>
