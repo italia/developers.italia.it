@@ -34,8 +34,9 @@ it:
     on_: "su"
     coming_soon: in arrivo
     news_categories: argomenti
-    news_title: Novità
+    news_title: News
     news_nav_title: Argomenti delle novità
+    news_filter: Filtra per argomento
 
     paginator_previous_page: pagina precedente
     paginator_next_page: pagina successiva
@@ -54,7 +55,7 @@ it:
     home_projects_expand: per saperne di più
     home_projects_others: Tutti i progetti
     home_projects_count: progetti in totale
-    home_news_title: Novità
+    home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per argomento
 
@@ -205,6 +206,7 @@ en:
     news_categories: tags
     news_title: News
     news_nav_title: Categories
+    news_filter: Filtra per argomento
 
     paginator_previous_page: previous page
     paginator_next_page: next page

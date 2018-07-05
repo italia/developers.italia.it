@@ -64,7 +64,7 @@ exclude:
   - swagger/node_modules
 
 
-paginate: 10
+paginate: 20
 paginate_path: "/news/page:num/"
 
 # tag pages

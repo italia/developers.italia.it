@@ -45,9 +45,13 @@
   $('*[data-activate-element]').on('click',function(e){
     e.preventDefault();
     var genid = $(this).data('activeid');
+    var noscroll = $(this).data('activate-noscroll') ? true : false;
     var $targetelement = $('*[data-activatedby="'+genid+'"]');
     $targetelement.toggleClass('deactive');
-    $('body').toggleClass('stopScrolling--vertical');
+    $(this).toggleClass('active');
+    if (noscroll==true) {
+      $('body').toggleClass('stopScrolling--vertical');
+    }
   });
 
   var ctx = document.getElementById("vitalityChart").getContext("2d");
