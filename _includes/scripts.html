@@ -217,4 +217,13 @@
   };
 
   initPhotoSwipeFromDOM('.tiled-gallery-inner');
+
+  var printPage = function() {
+    window.print()
+  }
+
+  var printBtns = [].slice.call(document.getElementsByClassName('js-print-page'))
+  printBtns.forEach(function(btn) {
+    btn.addEventListener('click', printPage)
+  })
 </script>

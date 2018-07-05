@@ -1521,7 +1521,32 @@ html, body {
 }
 
 .badge-pill--sup {
+  @extend .align-top;
+
   font-size: 0.7rem;
   font-weight: 300;
-  @extend .align-top;
+}
+
+.subheader {
+  margin: {
+    bottom: 3rem;
+    top: 3rem;
+  }
+}
+
+.btn-link {
+  padding: 0;
+}
+
+.text-divider {
+  margin: 0 1em;
+
+  &:before {
+    background-color: rgba(#979797, .5);
+    content: '';
+    display: inline-block;
+    height: 1.25em;
+    vertical-align: -.3em;
+    width: 2px;
+  }
 }
