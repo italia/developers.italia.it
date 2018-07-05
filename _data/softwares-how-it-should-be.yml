@@ -1,0 +1,714 @@
+- name: Medusa
+  applicationSuite: MegaProductivitySuite
+  url: https://example.com/italia/medusa.git
+  landingURL: https://example.com/italia/medusa
+  isBasedOn: https://github.com/italia/otello.git
+  softwareVersion: 1.0
+  releaseDate: 2017-04-15
+  logo: http://via.placeholder.com/50x50
+  monochromeLogo: http://via.placeholder.com/50x50
+  platforms:
+    - android
+    - ios
+  tags:
+    - content-management
+    - artificial-intelligence
+    - museum
+    - emulator
+    - compression
+    - dictionary
+  freeTags:
+    eng:
+      - english-free-tag
+    ita:
+      - tag-libero-italiano
+  popularTags:
+    - content-management
+    - artificial-intelligence
+    - museum
+  shareTags:
+    - compression
+    - emulator
+    - dictionary
+  usedBy:
+    - Comune di Firenze
+    - Comune di Roma
+  roadmap: https://example.com/italia/medusa/roadmap
+  developmentStatus: development
+  vitalityScore: 55
+  vitalityDataChart:
+    - 12
+    - 19
+    - 3
+    - 17
+    - 6
+    - 3
+    - 7
+  softwareType:
+    type: standalone
+    isRelatedTo:
+      - https://example.com/italia/software1.git
+      - https://example.com/italia/software2.git
+      - https://example.com/italia/software3.git
+  intendedAudience:
+    onlyFor:
+      - cities
+      - health-services
+      - it-ag-agricolo
+    countries:
+      - it
+      - de
+    unsupportedCountries:
+      - us
+  description:
+    eng:
+      localisedName: MedusaEN
+      genericName: Categoria di appartenenzaEN
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+         - The title attribute
+         - The href attribute
+         - The width and height attributes
+         - The alt attribute
+         - Attribute without quotes
+         - Attribute without quotes does not work
+      screenshots:
+      videos:
+         - https://www.youtube.com/oembed?url=http%3A//youtube.com/watch%3Fv%Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    ita:
+      localisedName:
+      genericName: Categoria di appartenenza
+      shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
+      longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Lorem ipsum dolor
+         - Consectetur adipiscing elit
+         - In finibus fermentum
+         - hac habitasse platea
+      screenshots:
+      awards:
+         - Software del anno
+  oldVariant:
+    - name: Buru
+      eng:
+        url:
+          - htpp://repubblica.it
+        features:
+          - The title attribute
+          - The href attribute
+          - The width and height attributes
+          - The href attribute
+          - Solves all the problems of the world
+          - The title attribute
+          - The href attribute
+      ita:
+        url:
+          - htpp://repubblica.it
+        features:
+        - The width and height attributes
+        - The title attribute
+        - The href attribute
+        - Solves all the problems of the world
+        - The title attribute
+        - The href attribute
+      vitalityScore: 55
+      legal:
+        repoOwner: Lorem ipsum
+    - name: Bla bla
+      eng:
+        localisedName:
+          - Bla bla
+        url:
+          - htpp://repubblica.it
+        features:
+          - The title attribute
+          - The href attribute
+          - The width and height attributes
+          - The href attribute
+          - Solves all the problems of the world
+          - The title attribute
+          - The href attribute
+      ita:
+        localisedName:
+           - Bla bla
+        url:
+           - htpp://repubblica.it
+        features:
+           - The width and height attributes
+           - The title attribute
+           - The href attribute
+           - Solves all the problems of the world
+           - The title attribute
+           - The href attribute
+      vitalityScore: 43
+      legal:
+        repoOwner: Dolor sit ame
+  oldFeatureList:
+      eng:
+         - Lorem ipsum dolor sit amet
+         - Suscipit lobortis nisl ut aliquip
+         - Duis autem vel eum iriure
+         - The title attribute
+         - The href attribute
+         - The width and height attributes
+         - The href attribute
+         - Solves all the problems of the world
+         - Accumsan et iusto od
+         - Luptatum zzril delenit augu
+         - The href attribute
+         - Velit esse moles
+         - Ut wisi enim ad
+         - Tation ullamcorper
+      ita:
+         - Lorem ipsum dolor sit amet
+         - Suscipit lobortis nisl ut aliquip
+         - Duis autem vel eum iriure
+         - The title attribute
+         - The href attribute
+         - The width and height attributes
+         - The href attribute
+         - Solves all the problems of the world
+         - Accumsan et iusto od
+         - Luptatum zzril delenit augu
+         - The href attribute
+         - Velit esse moles
+         - Ut wisi enim ad
+         - Tation ullamcorper
+  tagsRelate:
+    - content-management
+    - artificial-intelligence
+    - museum
+  relatedSoftwares:
+    - name: Buru
+      image: http://via.placeholder.com/800x500
+      eng:
+        localisedName: Burueng
+        url: /en/software/via.placeholder.com/#####
+      ita:
+        localisedName:
+        url: /it/software/via.placeholder.com/#####
+    - name: Sole
+      image: http://via.placeholder.com/800x500
+      eng:
+        localisedName: Soleeng
+        url: /en/software/via.placeholder.com/#####
+      ita:
+        localisedName: Soleit
+        url: /it/software/via.placeholder.com/#####
+    - name: Nero
+      image: http://via.placeholder.com/800x500
+      eng:
+        localisedName: Neroeng
+        url: /en/software/via.placeholder.com/#####
+      ita:
+        localisedName: Neroit
+        url: /it/software/via.placeholder.com/#####
+    - name: Blabla
+      image: http://via.placeholder.com/800x500
+      eng:
+        localisedName: Blablaeng
+        url: /en/software/via.placeholder.com/#####
+      ita:
+        localisedName: Blablait
+        url: /it/software/via.placeholder.com/#####
+  legal:
+    license: AGPL-3.0-or-later        # SPDX expression of license
+    mainCopyrightOwner: City of Chicago
+    repoOwner: City of Chicago
+    authorsFile: AUTHORS
+  maintenance:
+    type: contract
+    contractors:
+      - name: Fornitore Privato SPA
+        website: https://privatecompany.com
+        until: 2019-01-01
+    contacts:
+      - name: Francesco Rossi
+        email: francesco.rossi@comune.reggioemilia.it
+        affiliation: Comune di Reggio Emilia
+        phone: +39 231 13215112
+      - name: Dario Bianchi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+      - name: Giancarlo Verdi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+  localisation:
+    localisationReady: yes
+    availableLanguages:
+      - eng
+      - ita
+      - fra
+      - deu
+  dependencies:
+    open:
+      - name: MySQL
+        versionMin: 1.1
+        versionMax: 1.3
+        optional: yes
+      - name: PostgreSQL
+        version: 3.2
+        optional: yes
+    proprietary:
+      - name: Oracle
+        versionMin: 11.4
+      - name: IBM SoftLayer
+    hardware:
+      - name: NFC Reader
+        optional: yes
+  it:
+    accessibile: yes
+    interoperabile: yes
+    riuso:
+      codiceIPA: c_h501
+    spid: yes
+    pagopa: yes
+    cie: yes
+    anpr: yes
+    designKit:
+      seo: no
+      ui: yes
+      web: yes
+- name: BLA BLA
+  applicationSuite: MegaProductivitySuite
+  url: https://example.com/italia/medusa.git
+  landingURL: https://example.com/italia/medusa
+  isBasedOn: https://github.com/italia/otello.git
+  softwareVersion: 1.0
+  releaseDate: 2017-04-15
+  logo: http://via.placeholder.com/50x50
+  monochromeLogo: http://via.placeholder.com/50x50
+  platforms:
+    - android
+    - ios
+  tags:
+    - content-management
+    - artificial-intelligence
+    - museum
+  freeTags:
+    eng:
+      - english-free-tag
+    ita:
+      - tag-libero-italiano
+  usedBy:
+    - Comune di Firenze
+    - Comune di Roma
+  roadmap: https://example.com/italia/medusa/roadmap
+  developmentStatus: development
+  vitalityScore: 55
+  softwareType:
+    type: standalone
+    isRelatedTo:
+      - https://example.com/italia/software1.git
+      - https://example.com/italia/software2.git
+      - https://example.com/italia/software3.git
+  intendedAudience:
+    onlyFor:
+      - cities
+      - health-services
+      - it-ag-agricolo
+    countries:
+      - it
+      - de
+    unsupportedCountries:
+      - us
+  description:
+    eng:
+      localisedName: Bla bla en
+      genericName: Software category
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+      screenshots:
+         - http://via.placeholder.com/800x500
+      videos:
+         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    ita:
+      localisedName: Bla bla it
+      genericName: Categoria del Software
+      shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
+      longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Lorem ipsum dolor
+         - Consectetur adipiscing elit
+         - In finibus fermentum
+         - hac habitasse platea
+      screenshots:
+         - http://via.placeholder.com/350x150
+      videos:
+         - https://youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - Software del anno
+  legal:
+    license: AGPL-3.0-or-later        # SPDX expression of license
+    mainCopyrightOwner: City of Chicago
+    repoOwner: City of Chicago
+    authorsFile: AUTHORS
+  maintenance:
+    type: contract
+    contractors:
+      - name: Fornitore Privato SPA
+        website: https://privatecompany.com
+        until: 2019-01-01
+    contacts:
+      - name: Francesco Rossi
+        email: francesco.rossi@comune.reggioemilia.it
+        affiliation: Comune di Reggio Emilia
+        phone: +39 231 13215112
+      - name: Dario Bianchi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+      - name: Giancarlo Verdi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+  localisation:
+    localisationReady: yes
+    availableLanguages:
+      - eng
+      - ita
+      - fra
+      - deu
+  dependencies:
+    open:
+      - name: MySQL
+        versionMin: 1.1
+        versionMax: 1.3
+        optional: yes
+      - name: PostgreSQL
+        version: 3.2
+        optional: yes
+    proprietary:
+      - name: Oracle
+        versionMin: 11.4
+      - name: IBM SoftLayer
+    hardware:
+      - name: NFC Reader
+        optional: yes
+  it:
+    accessibile: yes
+    interoperabile: yes
+    riuso:
+      codiceIPA: c_h501
+    spid: yes
+    pagopa: yes
+    cie: yes
+    anpr: yes
+    designKit:
+      seo: no
+      ui: yes
+      web: yes
+- name: Medusa2
+  applicationSuite: MegaProductivitySuite
+  url: https://example.com/italia/medusa.git
+  landingURL: https://example.com/italia/medusa
+  isBasedOn: https://github.com/italia/otello.git
+  softwareVersion: 1.0
+  releaseDate: 2017-04-15
+  logo: http://via.placeholder.com/50x50
+  monochromeLogo: http://via.placeholder.com/50x50
+  platforms:
+    - android
+    - ios
+  tags:
+    - content-management
+    - artificial-intelligence
+    - museum
+  freeTags:
+    eng:
+      - english-free-tag
+    ita:
+      - tag-libero-italiano
+  usedBy:
+    - Comune di Firenze
+    - Comune di Roma
+  roadmap: https://example.com/italia/medusa/roadmap
+  developmentStatus: development
+  vitalityScore: 55
+  softwareType:
+    type: standalone
+    isRelatedTo:
+      - https://example.com/italia/software1.git
+      - https://example.com/italia/software2.git
+      - https://example.com/italia/software3.git
+  intendedAudience:
+    onlyFor:
+      - cities
+      - health-services
+      - it-ag-agricolo
+    countries:
+      - it
+      - de
+    unsupportedCountries:
+      - us
+  description:
+    eng:
+      localisedName: Medusa2 en
+      genericName: Software category
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+      screenshots:
+         - http://via.placeholder.com/750x800
+      videos:
+         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    ita:
+      localisedName: Medusa2 it
+      genericName: Categoria software
+      shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
+      longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Lorem ipsum dolor
+         - Consectetur adipiscing elit
+         - In finibus fermentum
+         - hac habitasse platea
+      screenshots:
+         - http://via.placeholder.com/750x800
+      videos:
+         - https://youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - Software del anno
+  legal:
+    license: AGPL-3.0-or-later        # SPDX expression of license
+    mainCopyrightOwner: City of Chicago
+    repoOwner: City of Chicago
+    authorsFile: AUTHORS
+  maintenance:
+    type: contract
+    contractors:
+      - name: Fornitore Privato SPA
+        website: https://privatecompany.com
+        until: 2019-01-01
+    contacts:
+      - name: Francesco Rossi
+        email: francesco.rossi@comune.reggioemilia.it
+        affiliation: Comune di Reggio Emilia
+        phone: +39 231 13215112
+      - name: Dario Bianchi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+      - name: Giancarlo Verdi
+        email: dario.bianchi@fornitore.it
+        affiliation: Fornitore Privato S.P.A.
+        phone: +39 16 24231322
+  localisation:
+    localisationReady: yes
+    availableLanguages:
+      - eng
+      - ita
+      - fra
+      - deu
+  dependencies:
+    open:
+      - name: MySQL
+        versionMin: 1.1
+        versionMax: 1.3
+        optional: yes
+      - name: PostgreSQL
+        version: 3.2
+        optional: yes
+    proprietary:
+      - name: Oracle
+        versionMin: 11.4
+      - name: IBM SoftLayer
+    hardware:
+      - name: NFC Reader
+        optional: yes
+  it:
+    accessibile: yes
+    interoperabile: yes
+    riuso:
+      codiceIPA: c_h501
+    spid: yes
+    pagopa: yes
+    cie: yes
+    anpr: yes
+    designKit:
+      seo: no
+      ui: yes
+      web: yes
+- name: Opensource MANNAGGIA
+  applicationSuite: MegaProductivitySuite
+  url: https://example.com/italia/medusa.git
+  landingURL: https://example.com/italia/medusa
+  isBasedOn:
+  softwareVersion: 1.0
+  releaseDate: 2017-04-15
+  logo: http://via.placeholder.com/50x50
+  monochromeLogo: http://via.placeholder.com/50x50
+  platforms:
+    - android
+    - ios
+  tags:
+    - content-management
+    - artificial-intelligence
+    - museum
+  freeTags:
+    eng:
+      - english-free-tag
+    ita:
+      - tag-libero-italiano
+  usedBy:
+    - Comune di Firenze
+    - Comune di Roma
+  roadmap: https://example.com/italia/medusa/roadmap
+  developmentStatus: development
+  vitalityScore: 55
+  softwareType:
+    type: standalone
+    isRelatedTo:
+      - https://example.com/italia/software1.git
+      - https://example.com/italia/software2.git
+      - https://example.com/italia/software3.git
+  intendedAudience:
+    onlyFor:
+      - cities
+      - health-services
+      - it-ag-agricolo
+    countries:
+      - it
+      - de
+    unsupportedCountries:
+      - us
+  description:
+    fra:
+      localisedName: Opensource en
+      genericName: Categ bnhahahhaha
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+      screenshots:
+         - http://via.placeholder.com/800x500
+      videos:
+         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    eng:
+      localisedName: Opensource en
+      genericName:
+      shortDescription: A really interesting software.
+      longDescription: Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Very important feature
+         - Will run without a problem
+         - Has zero bugs
+         - Solves all the problems of the world
+      screenshots:
+         - http://via.placeholder.com/800x500
+      videos:
+         - https://www.youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - 1st Price Software of the year
+    ita:
+      localisedName:
+      genericName:
+      shortDescription: Descrizione breve 150 caratteri. Lorem ipsum dolot sit amet.
+      longDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus fermentum ipsum nec auctor. In hac habitasse platea dictumst. Vestibulum nibh justo, tincidunt in magna id, dictum maximus nisi. Donec mollis interdum turpis, nec bibendum mi convallis nec. Cras in sem tincidunt, hendrerit ex aliquam, blandit purus. Mauris eget enim gravida, rhoncus nisi a, facilisis massa. Etiam ultricies non orci eget venenatis.Ut dapibus malesuada augue quis vulputate. Integer nec scelerisque nulla. Aliquam erat volutpat. Sed vitae nunc ac erat dapibus sollicitudin quis ut velit. Ut quis rhoncus tortor. Cras placerat rhoncus ante, non ullamcorper lectus scelerisque in. Nullam et quam iaculis tortor tristique vehicula. Aliquam aliquet nisl urna, ac egestas felis imperdiet et. Integer ac quam dictum, ultricies lectus eget, elementum lorem. Donec ultrices erat eros. Nulla egestas consequat venenatis. Nunc vulputate erat lacus, in interdum metus dignissim eu. Vestibulum ac commodo ligula. Praesent ut nibh ullamcorper, porttitor mauris auctor, sagittis nisl. Cras at est tortor. Aliquam ut tempor lectus, tempor vulputate mauris. Sed porttitor, mi eu hendrerit varius, quam risus rutrum orci, sollicitudin maximus nisi ipsum ac sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed convallis ornare erat, id pretium elit aliquet lacinia. Donec vitae efficitur lorem.Pellentesque leo libero, posuere nec vehicula sit amet, convallis sit amet metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus consequat est et imperdiet. Sed condimentum elit orci, a feugiat nisl hendrerit nec. Integer malesuada, quam sed ornare hendrerit, lorem arcu convallis libero, id hendrerit libero justo eu urna. Donec iaculis scelerisque tellus id egestas. In quis est justo. Vivamus non tristique ipsum, at interdum mauris. Nulla eget egestas velit. Cras ullamcorper velit vitae quam mattis mollis. Etiam commodo justo dapibus diam pharetra, quis posuere neque pretium. Sed aliquam nunc id pulvinar mattis.
+      documentation: https://read.the.documentation/medusa/v1.0
+      apiDocumentation: https://read.the.api.doc/medusa/v1.0
+      featureList:
+         - Lorem ipsum dolor
+         - Consectetur adipiscing elit
+         - In finibus fermentum
+         - hac habitasse platea
+      screenshots:
+         - http://via.placeholder.com/800x500
+      videos:
+         - https://youtube.com/watch?v=Hhpe1CHtLmI
+      awards:
+         - Software del anno
+  legal:
+    license: AGPL-3.0-or-later        # SPDX expression of license
+    mainCopyrightOwner: City of Chicago
+    repoOwner: City of Chicago
+    authorsFile: AUTHORS
+  maintenance:
+    type: contract
+    contractors:
+      - name: Fornitore Privato SPA
+        website: https://privatecompany.com
+        until: 2019-01-01
+    contacts:
+      - name: Francesco Rossi
+        email: francesco.rossi@comune.reggioemilia.it
+        affiliation: Comune di Reggio Emilia
+        phone: +39 231 13215112
+  localisation:
+    localisationReady: yes
+    availableLanguages:
+      - eng
+      - ita
+      - fra
+      - deu
+  dependencies:
+    open:
+      - name: MySQL
+        versionMin: 1.1
+        versionMax: 1.3
+        optional: yes
+      - name: PostgreSQL
+        version: 3.2
+        optional: yes
+    proprietary:
+      - name: Oracle
+        versionMin: 11.4
+      - name: IBM SoftLayer
+    hardware:
+      - name: NFC Reader
+        optional: yes
+  it:
+    accessibile: yes
+    interoperabile: yes
+    riuso:
+      codiceIPA: c_h501
+    spid: yes
+    pagopa: yes
+    cie: yes
+    anpr: yes
+    designKit:
+      seo: no
+      ui: yes
+      web: yes
