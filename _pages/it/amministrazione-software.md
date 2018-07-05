@@ -55,6 +55,11 @@ oldFeatureList:
     - Nuova modalità di connessione al Wi-Fi
     - Lorem ipsum sit dolor est
 
+publicAuthority:
+  styledName: <span class="font-weight-light">Comune di</span> Bagnacavallo
+  website: http://www.comune.bagnacavallo.ra.it
+  websiteText: www.comune.bagnacavallo.ra.it
+
 isBasedOn: true
 usedBy:
   - lorem hipsum

@@ -47,19 +47,19 @@
         </a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
-        <a href="http://www.comune.bagnacavallo.ra.it" target="_blank" rel="noopener noreferrer" tabindex="-1">
+        <a href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
           <img src="https://placehold.it/86x112" alt="">
         </a>
       </div>
 
       <div class="Header-title mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
-          <a class="text-900" href="http://www.comune.bagnacavallo.ra.it" target="_blank" rel="noopener noreferrer">
-            <span class="font-weight-light">Comune di</span> Bagnacavallo
+          <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+            {{ page.publicAuthority.styledName }}
           </a>
-          <a class="text-primary" href="http://www.comune.bagnacavallo.ra.it" target="_blank" rel="noopener noreferrer">
+          <a class="text-primary" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
             <span class="d-none d-lg-block Header-subtitle">
-              www.comune.bagnacavallo.ra.it
+              {{ page.publicAuthority.websiteText }}
             </span>
           </a>
         </h1>
