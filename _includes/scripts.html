@@ -141,16 +141,13 @@
     var parseThumbnailElements = function(el) {
       var linkElements = el.getElementsByTagName('a')
       var items = []
-      var linkEl
-      var size
-      var item
 
       for (var i = 0; i < linkElements.length; i++) {
-        linkEl = linkElements[i];
-        size = linkEl.dataset.size.split('x');
+        var linkEl = linkElements[i];
+        var size = linkEl.dataset.size.split('x');
 
         // create slide object
-        item = {
+        var item = {
           src: linkEl.getAttribute('href'),
           w: Number(size[0]),
           h: Number(size[1]),
@@ -173,7 +170,7 @@
 
       if (clickedListItem.tagName !== 'A') return;
 
-      var clickedGallery = clickedListItem.parentNode
+      var clickedGallery = $(clickedListItem).closest('.tiled-gallery-inner')[0]
       var index = Number(clickedListItem.dataset.index)
 
       if (index >= 0) {
