@@ -27,7 +27,7 @@ layout: default
             {{ page.description[active_lang_extended].localisedName|capitalize }}
           {% else %}
             {{ page.title }}
-          {% endif%}<span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span>
+          {% endif%}<span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
         </h1>
         <div class="abstract-software">
           {% if page.description[active_lang_extended].genericName != nil %}
@@ -434,7 +434,7 @@ layout: default
                 {% else %}
                   {{ page.title }}
                 {% endif%}
-                <span class="badge badge-pill badge-primary">{{ page.softwareVersion }}</span>
+                <span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
               </h2>
               <h2>
                 {% if page.description[active_lang_extended].genericName != nil %}

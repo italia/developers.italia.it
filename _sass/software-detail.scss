@@ -13,11 +13,6 @@
     }
     h1 {
       @extend .align-baseline;
-      .badge {
-        font-size: 0.7rem;
-        font-weight: 300;
-        @extend .align-top;
-      }
     }
     .abstract-software {
       h2 {
@@ -43,7 +38,7 @@
     }
     @include media-breakpoint-down(sm){
       margin-bottom: 3em;
-    }   
+    }
   }
   .drops-details {
     @include media-breakpoint-up(sm) {
@@ -318,11 +313,6 @@ hr {
         font-weight: 300;
         &.h1 {
           font-weight: 700;
-          .badge {
-            font-size: 0.7rem;
-            font-weight: 300;
-            @extend .align-top;
-          }
         }
       }
     }
@@ -352,7 +342,7 @@ hr {
         font-weight: 600;
         span {
           float: right;
-          margin-right: 0.5em;   
+          margin-right: 0.5em;
         }
       }
     }
@@ -399,7 +389,7 @@ hr {
         padding-bottom: 2em;
         span {
           float: right;
-          margin-right: 0.5em;   
+          margin-right: 0.5em;
         }
       }
     }
