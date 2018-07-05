@@ -29,6 +29,7 @@ it:
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
     popular_searches: ricerche frequenti
+    print_the_page: Stampa la pagina
 
     by: di
     on_: "su"
@@ -200,6 +201,7 @@ en:
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
     popular_searches: popular searches
+    print_the_page: Print the page
 
     by: by
     on_: "on"
