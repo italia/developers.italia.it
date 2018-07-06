@@ -8,6 +8,7 @@ function esDevelopersItaliaQuery(config, params) {
     'inputSelector': '',
     'totalSelector': '.results-number',
     'pagerSelector': '#paginator',
+    'sortSelector': '.sortingBy form select',
     'totalText': {
       'it': 'risultati',
       'en': 'results'
@@ -23,6 +24,14 @@ function esDevelopersItaliaQuery(config, params) {
     'elasticsearch_connection': {
       'host': 'http://elasticsearch.developers.loc'
     },
+    'intro': {
+      'it': 'Hai cercato',
+      'en': 'You have searched for'
+    },
+    'autocomplete_all_text': {
+      'it': 'Cerca in tutto il sito',
+      'en': 'Search all over the site'
+    },
     // css selector
     'pageContent': '.list-item-sorting > div',
      
@@ -30,6 +39,30 @@ function esDevelopersItaliaQuery(config, params) {
     'filterKeys': {
       'tags': 'list-tags',
       'developmentStatus': 'list-status'
+    },
+    'category': {
+      'it': {
+        'missing': 'Tipologia Software',
+        'software_open': 'Software Open Source',
+        'reuse_software': 'Software a Riuso',
+        'projects': 'Piattaforme',
+        'api': 'API',
+        'faqs': 'Faqs',
+        'pages': 'Tipologia Software',
+        'posts': 'News',
+        'projects': 'Piattaforma',
+      },
+      'en': {
+        'missing': 'Software Type',
+        'software_open': 'Software Open Source',
+        'reuse_software': 'Re-use Software',
+        'projects': 'Platforms',
+        'api': 'API',
+        'faqs': 'Faqs',
+        'pages': 'Software Type',
+        'posts': 'News',
+        'projects': 'Platforms',
+      }
     }
   };
   this.config = $.extend(defaultConfig, config);
@@ -45,8 +78,6 @@ function esDevelopersItaliaQuery(config, params) {
     'it': 'Leggi di più',
     'en': 'read more'
   };
-
-  this.pageFilterKeys = {};
 
   this.params = params;
 
@@ -73,6 +104,13 @@ esDevelopersItaliaQuery.prototype.popupateFiltersFromUrl = function() {
       $('#' + id + ' input[value="'+value[i]+'"]').prop('checked', true);
     }
   }
+
+  // Sort
+  var sort = this.params['sort'].slice().pop();
+  if (typeof sort == 'undefined') {
+    sort = 'az';
+  }
+  $(this.config['sortSelector']).val(sort);
 };
 
 esDevelopersItaliaQuery.prototype.registerFiltersListeners = function() {
@@ -82,18 +120,37 @@ esDevelopersItaliaQuery.prototype.registerFiltersListeners = function() {
       object.clickOnFilterCallback.call(object, event);
     });
   }
+
+  // when change sort order, execute query.
+  $(this.config['sortSelector']).on('change', function(event){
+    object.executeESQuery.call(object);
+  });
 };
 
 esDevelopersItaliaQuery.prototype.removeFiltersListeners = function() {
   for(var p in this.config['filterKeys']) {
     $('#' + this.config['filterKeys'][p] + ' input[type="checkbox"]').off('change');
   }
+
+  $(this.config['sortSelector']).off('change');
+};
+
+esDevelopersItaliaQuery.prototype.registerMobileFiltersListeners = function() {
+  var object = this;
+
+  // Execute query
+  $('#filters .modal-dialog .modal-header a.save').on('click', function(event){
+
+  });
 };
 
 esDevelopersItaliaQuery.prototype.clickOnFilterCallback = function(event) {
   
+  /**
+   * NOTE: query type filter in handled on esQuery.js file (row 65).
+   */
+
   if (event.target.checked) {
-    // There is only one type of query at time.
     this.params[event.data['p']].push(event.target.value);
   }
   else {
@@ -125,6 +182,16 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
     }
   }
   
+  // it-riuso-codiceIPA
+  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  if (typeof codiceIPA != 'undefined') {
+    filter.push({
+      'term': {
+        'it-riuso-codiceIPA': codiceIPA
+      }
+    });
+  }
+
   return filter;
 };
 
@@ -145,6 +212,80 @@ esDevelopersItaliaQuery.prototype.getSizeQuery = function(response){
   return this.config['size'];
 };
 
+esDevelopersItaliaQuery.prototype.getSortQuery = function() {
+  var sort = [];
+  var value = $(this.config['sortSelector']).val();
+
+  switch (value) {
+    case 'az':
+      sort.push({
+        'name.sort': {'order': 'asc'}
+      });
+      break;
+
+    case 'za':
+      sort.push({
+        'name.sort': {'order': 'desc'}
+      });
+      break;
+
+    case 'popularity':
+      sort.push({
+        'vitality-score': {'order': 'desc'}
+      });
+      break;
+
+    case 'emerging':
+      sort.push({
+        'releaseDate': {'order': 'desc'}
+      });
+      break;
+
+    default:
+      break;
+  }
+
+  return sort;
+};
+
+esDevelopersItaliaQuery.prototype.updateSearchUrl = function() {
+  var queryString = [];
+
+  // first adds search filters.
+  for(var p in this.config['filterKeys']) {
+    var value = this.params[p];
+
+    for (var i = 0; i < value.length; i++) {
+      queryString.push(p +'['+i+']='+value[i]);
+    }
+  }
+
+  // adds it-riuso-codiceIPA filter if present.
+  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  if (typeof codiceIPA != 'undefined') {
+    queryString.push('it-riuso-codiceIPA=' + codiceIPA);
+  }
+
+  // query type filter.
+  var type = this.params['type'].slice(0).pop();
+  if (typeof type == 'string' && type != 'all') {
+    queryString.push('type=' + type);
+  }
+
+  // then adds page.
+  var page = this.params['page'].slice(0).pop();
+  if (typeof page == 'undefined') {
+    page = 0;
+  }
+  queryString.push('page='+page);
+
+  // last adds sort.
+  queryString.push('sort='+$(this.config['sortSelector']).val());
+
+  // update browser history.
+  history.pushState({}, '', window.location.pathname + '?' + queryString.join('&'));
+};
+
 esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
   var html = '';
 
@@ -152,6 +293,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
     typeof this.throbber != 'undefined' ? this.throbber.stop() : '';
     $(this.config['pageContent']).text('');
     this.renderResultCount(response.hits.total);
+    this.renderIntro();
     for (var i = 0; i < response.hits.hits.length; i++) {
       switch (response.hits.hits[i]._type) {
         case 'software':
@@ -164,6 +306,8 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
       $(this.config['pageContent']).append(html);
     }
     this.renderPager(response.hits.total);
+
+    // if the query is riggered by pager, must be scoll on page top.
   }
 };
 
@@ -206,11 +350,13 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': typeof value == 'undefined' ? '' : value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name?3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
-            'title',
-            'subtitle',
+            'title^3',
+            'subtitle^2',
+            'it-riuso-codiceIPA-label^4',
           ]
         }
       }
@@ -225,6 +371,10 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
 };
 
 esDevelopersItaliaQuery.prototype.executeESQuery = function() {
+  // update url.
+  this.updateSearchUrl();
+
+  // remove old results and start throbber.
   $(this.config['pageContent']).text('');
   this.throbber = Throbber({
     color: 'black',
@@ -239,6 +389,8 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
   var query = this.getQuery();
   var object = this;
 
+  query.sort = this.getSortQuery();
+
   var params = {
     'index': index,
     'body': query,
@@ -250,8 +402,11 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
     params['type'] = type;
   }
 
+  console.log("QUERY: ", params);
+
   this.client.search(params).then(
     function successSearchCallback(response){
+      console.log("RESPONSE: ", response);
       object.esSearchSuccessCallback.call(object, response);
     },
     function successSearchCallback(error){
@@ -260,23 +415,16 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
   );
 };
 
-esDevelopersItaliaQuery.prototype.getFiltersUrl = function() {
-  var filters = [];
-  for(var p in this.config['filterKeys']) {
-    var value = this.params[p];
+esDevelopersItaliaQuery.prototype.renderIntro  = function(tot) {
+  var keyword = this.params['keyword'].slice(0).pop();
+  var language = this.config['language'];
+  var $intro = $('.intro > h1');
 
-    for (var i = 0; i < value.length; i++) {
-      filters.push(p +'['+i+']='+value[i]);
-    }
+  if (typeof keyword != 'undefined') {
+    $intro.text('');
+    $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
   }
-
-  var type = this.params['type'].slice(0).pop();
-  if (typeof type != 'undefined' && type.length > 0) {
-    filters.push('type='+type);
-  }
-
-  return filters.join('&');
-};
+}
 
 esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
   var language = this.config['language'];
@@ -287,14 +435,14 @@ esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
 };
 
 esDevelopersItaliaQuery.prototype.renderPager = function(tot){
+  // unregister all page listeners.
+  $(this.config['pagerSelector'] + ' ul li a').off('click');
   $(this.config['pagerSelector']).text('');
   if (tot < this.config['size']){
     return;
   }
 
   var start = 0;
-  var url = window.location.pathname;
-  var queryString = this.getFiltersUrl();
   var size = this.config['size'];
   var page = this.params['page'].slice(0).pop();
   var totPages = Math.ceil(tot/size);
@@ -318,7 +466,6 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
       'title': i+1,
       'classes': (i == page) ? ' active ' : '',
       'current': page == i,
-      'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (i),
       'page': i,
     });
   }
@@ -326,14 +473,14 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   var prev = {
     'title': '<',
     'classes': (page == start) ? ' disabled ' : '',
-    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page-1),
+    'current': false,
     'page': (page-1)
   };
 
   var next = {
     'title': '>',
-    'classes': (page == totPages) ? ' disabled ' : '',
-    'url': ((queryString.length == 0) ? '?' : '?'+queryString+'&') + 'page=' + (page+1),
+    'classes': (page == (totPages-1)) ? ' disabled ' : '',
+    'current': false,
     'page': (page+1)
   };
 
@@ -342,6 +489,20 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
     'prev': prev,
     'next': next
   }));
+
+  // after draw pager, attach event listeners.
+  var object = this;
+  $(this.config['pagerSelector'] + ' ul li a').on('click', function(event) {
+    event.preventDefault();
+    var page = event.delegateTarget.getAttribute('page');
+
+    // Set correct page value.
+    object.params['page'].pop();
+    object.params['page'].push(page);
+
+    // Execute query.
+    object.executeESQuery.call(object);
+  });
 };
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
@@ -358,11 +519,13 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   }
 
   var data = {
-    'name': software.name.toLowerCase().split(' ').join('-'),
-    'localisedName': localisedName,
+    'name': name,
+    'localisedName': decodeHtmlEntity(localisedName),
     'language': this.config['language'],
     'screenshot': screenshot,
-    'readMore': this.readMore[language]
+    'readMore': this.readMore[language],
+    'category': this.getSoftwareType(software),
+    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 
   return this.templates.software(data);
@@ -374,14 +537,41 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   var language = this.config['language'];
 
   var data = {
-    'name': post.title.toLowerCase().split(' ').join('-'),
-    'localisedName': localisedName,
+    'name': post.title,
+    'localisedName': decodeHtmlEntity(localisedName),
     'language': language,
     'screenshot': screenshot,
-    'readMore': this.readMore[language]
+    'readMore': this.readMore[language],
+    'category': this.getPostType(post),
+    'path': post.url
   };
 
   return this.templates.software(data);
+}
+
+esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof software['it-riuso-codiceIPA'] == 'undefined'){
+    category = this.config['category'][language]['software_open'];
+  }
+  else {
+    category = this.config['category'][language]['reuse_software'];
+  }
+
+  return category.toUpperCase();
+}
+
+esDevelopersItaliaQuery.prototype.getPostType = function(post) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof post.type != 'undefined'){
+    category = this.config['category'][language][post.type];
+  }
+
+  return category.toUpperCase();
 }
 
 /**
@@ -415,8 +605,8 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'title',
-            'subtitle',
+            'title^3',
+            'subtitle^2',
           ]
         }
       }
@@ -458,8 +648,9 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -504,8 +695,9 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -519,8 +711,56 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
 
   return query;
 };
+
 /**
- * PA query
+ * API query.
+ */
+
+function esDevelopersItaliaApiQuery(config, params) {
+  esDevelopersItaliaQuery.call(this, config, params);
+}
+
+esDevelopersItaliaApiQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
+esDevelopersItaliaApiQuery.prototype.getQuery = function() {
+  var value = this.params['keyword'].slice(0).pop();
+  var filter = this.getFilterInQuery();
+
+  var query = {
+    'query': {
+      'bool': {
+        'must': [],
+        'filter': [
+          {'term': {'type': 'api'}},
+          {'term': { 'lang': this.config['language'] }}
+        ]
+      }
+    }
+  };
+
+  if (typeof value != 'undefined'){
+    value = value.split('+').join(' ');
+    query['query']['bool']['must'].push(
+      {
+        'multi_match': {
+          'query': value,
+          'fields': [
+            'title^3',
+            'subtitle^2'
+          ]
+        }
+      }
+    );
+  }
+
+  if (filter.length > 0) {
+    query['query']['bool']['filter'] = filter;
+  }
+
+  return query;
+};
+
+/**
+ * PA query.
  */
 function esDevelopersItaliaPaQuery(config, params) {
   esDevelopersItaliaQuery.call(this, config, params);
@@ -534,9 +774,7 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
   var query = {
     'query': {
       'bool': {
-        'must': [
-          { 'term': { 'legal-mainCopyrightOwner': decodeURIComponent(this.params['mainCopyrightOwner'].slice(0).pop()) }}
-        ]
+        'must': []
       }
     }
   };
@@ -548,8 +786,9 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
         'multi_match': {
           'query': value,
           'fields': [
-            'name',
-            'description.' + this.config['language'] + '.localizedName',
+            'name^3',
+            'description.' + this.config['language'] + '.localizedName^3',
+            'description.' + this.config['language'] + '.shortDescription^2',
             'description.' + this.config['language'] + '.longDescription',
           ]
         }
@@ -592,11 +831,12 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           },
@@ -629,6 +869,13 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
   var query = this.getQuery();
   var object = this;
 
+  // Sort
+  if ($('input[name=sort-by-date]:checked').val() !== undefined) {
+    sort.push({
+      'release-date' : {'order' : $('input[name=sort-by-date]:checked').val() }
+    });
+  }
+
   var params = {
     'index': index,
     'body': query,
@@ -652,31 +899,23 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function(software) {
   var value = $(this.config['inputSelector']).val();
+  var language = this.config['language'];
   var name = software.name;
-  var language_alpha_3 = this.languages[this.config['language']];
+  var language_alpha_3 = this.languages[language];
   if ( typeof software.description[language_alpha_3] != 'undefined' && software.description[language_alpha_3].localisedName != 'undefined') {
     name = software.description[language_alpha_3].localisedName;
   }
 
-  var queryString = [
-    'keyword=' + name.split(' ').join('+') 
-  ];
-
-  if (typeof this.searchObjectId != 'undefined') {
-    queryString.push(
-      'type=' + this.searchObjectId
-    );
-  }
-
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
 
   return {
     'name': name,
-    'language': this.config['language'],
-    'path': '/search?' + queryString.join('&')
+    'language': language,
+    'category': this.getSoftwareType(software),
+    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 };
 
@@ -684,17 +923,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   var value = $(this.config['inputSelector']).val();
   var name = post.title;
 
-  var queryString = [
-    'keyword=' + post.title.split(' ').join('+') 
-  ];
-
-  if (typeof this.searchObjectId != 'undefined') {
-    queryString.push(
-      'type=' + this.searchObjectId
-    );
-  }
-
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
@@ -702,11 +931,13 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   return {
     'name': name,
     'language': this.config['language'],
-    'path': '/search?' + queryString.join('&')
+    'category': this.getPostType(post),
+    'path': post.url,
   };
 };
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = function(response) {
+  var language = this.config['language'];
   var $suggestions = $('#suggestions');
   $suggestions.text('');
 
@@ -730,13 +961,13 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
     }
 
     var queryString = [
-      'keyword=' + value.split(' ').join('+')
+      'keyword=' + value.trim().split(' ').join('+')
     ];
 
     $suggestions.append(this.templates.suggestion({
-      'name': this.config['language'] == 'it' ? 'Tutti' : 'All',
+      'name': this.config['autocomplete_all_text'][language],
       'language': this.config['language'],
-      'path': '/search?' + queryString.join('&')
+      'path': '/' + language + '/search?' + queryString.join('&')
     }));
   }
 }
@@ -757,8 +988,8 @@ esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           }
@@ -790,8 +1021,9 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
@@ -822,15 +1054,16 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram',
-                'description.' + this.config['language'] + '.localizedName.ngram',
+                'name.ngram^3',
+                'description.' + this.config['language'] + '.localizedName.ngram^3',
+                'description.' + this.config['language'] + '.shortDescription.ngram^2',
                 'description.' + this.config['language'] + '.longDescription.ngram',
               ]
             }
           },
-          {'term': { '_type': 'software' }}
-        ],
-        'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
+          {'term': { '_type': 'software' }},
+          {'exists': { 'field': 'it-riuso-codiceIPA' }}
+        ]
       }
     }
   };
@@ -854,8 +1087,8 @@ esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram',
-                'subtitle.ngram',
+                'title.ngram^3',
+                'subtitle.ngram^2',
               ]
             }
           }
@@ -880,13 +1113,19 @@ esDevelopersItaliaAutocompletePAQuery.prototype = Object.create(esDevelopersItal
 esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
   var value = $(this.config['inputSelector']).val();
   var query = {
-    'suggest': {
-      'search_string': {
-        'prefix': value,
-        'completion': {
-          'field' :  this.config['language'] + '.' + 'suggest-agencies',
-          'size': 10
-        }
+    'query': {
+      'bool': {
+        'must': [
+          {
+            'multi_match': {
+              'query': value,
+              'fields': [
+                'it-riuso-codiceIPA-label.ngram',
+              ]
+            }
+          },
+          {'term': { '_type': 'software' }}
+        ]
       }
     }
   };
@@ -894,48 +1133,11 @@ esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
   return query;
 };
 
-esDevelopersItaliaAutocompletePAQuery.prototype.esSearchSuccessCallback = function(response) {
-  var $suggestions = $('#suggestions');
-  $suggestions.text('');
-
-  var value = $(this.config['inputSelector']).val();
-  if (value.length == 0){
-    return;
-  }
-
-  if ((typeof response.suggest != 'undefined') && (typeof response.suggest.search_string != 'undefined') && Array.isArray(response.suggest.search_string)) {
-    var options, search_string = response.suggest.search_string.slice(0);
-    options = search_string.pop(); options = options.options;
-    for (var i = 0; i < options.length; i++) {
-
-      var data;
-      if(options[i]['_type'] == 'software') {
-        data = this.getSuggestionDataSoftware(options[i]['_source']);
-      }
-
-      if(options[i]['_type'] == 'post') {
-        data = this.getSuggestionDataPost(options[i]['_source']);
-      }
-
-      if(options[i]['_type'] == 'suggestion') {
-        data = this.getSuggestionSuggestionPost(options[i]['_source']);
-      }
-
-      $suggestions.append(this.templates.suggestion(data));
-    }
-    $suggestions.append(this.templates.suggestion({
-      'name': this.config['language'] == 'it' ? 'Tutti' : 'All',
-      'language': this.config['language'],
-      'path': '/'
-    }));
-  }
-};
-
-esDevelopersItaliaAutocompletePAQuery.prototype.getSuggestionSuggestionPost = function(suggestion) {
+esDevelopersItaliaAutocompletePAQuery.prototype.getSuggestionDataSuggestion = function(suggestion) {
   var value = $(this.config['inputSelector']).val();
   var name = suggestion.agency.title;
   
-  value = value.split(' ');
+  value = value.trim().split(' ');
   for (let i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }

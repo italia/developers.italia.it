@@ -79,7 +79,19 @@ layout: default
       <div class="intro">
         <h1>{{ page.title }}</h1>
         <div class="abstract-sorting row d-none d-md-block">
-          <div class="results-number col-md-6">
+          <div class="results-number col-md-6"></div>
+          <div class="sortingBy col-md-6">
+            <form class="d-flex justify-content-end">
+              <p>{{ t.software.sort_by }}</p>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="az" class="active">A/Z <i class="it-check"></i></option>
+                  <option value="za">Z/A</option>
+                  <option value="popularity">Popolarità</option>
+                  <option value="emerging">Emergenti</option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -146,10 +158,8 @@ layout: default
           <h5 class="modal-title" id="exampleModalLabel">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" class="active">Popolarità <i class="it-check"></i></a>
-          <a href="">Emergenti</a>
-          <a href="">A/Z</a>
-          <a href="">Z/A</a>
+          <a href="" sort="az">A/Z</a>
+          <a href="" sort="za">Z/A</a>
         </div>
       </div>
     </div>
