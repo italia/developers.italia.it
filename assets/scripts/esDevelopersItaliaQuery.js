@@ -135,6 +135,15 @@ esDevelopersItaliaQuery.prototype.removeFiltersListeners = function() {
   $(this.config['sortSelector']).off('change');
 };
 
+esDevelopersItaliaQuery.prototype.registerMobileFiltersListeners = function() {
+  var object = this;
+
+  // Execute query
+  $('#filters .modal-dialog .modal-header a.save').on('click', function(event){
+
+  });
+};
+
 esDevelopersItaliaQuery.prototype.clickOnFilterCallback = function(event) {
   
   /**
@@ -515,6 +524,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
     'language': this.config['language'],
     'screenshot': screenshot,
     'readMore': this.readMore[language],
+    'category': this.getSoftwareType(software),
     'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 
@@ -532,10 +542,36 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
     'language': language,
     'screenshot': screenshot,
     'readMore': this.readMore[language],
+    'category': this.getPostType(post),
     'path': post.url
   };
 
   return this.templates.software(data);
+}
+
+esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof software['it-riuso-codiceIPA'] == 'undefined'){
+    category = this.config['category'][language]['software_open'];
+  }
+  else {
+    category = this.config['category'][language]['reuse_software'];
+  }
+
+  return category.toUpperCase();
+}
+
+esDevelopersItaliaQuery.prototype.getPostType = function(post) {
+  var language = this.config['language'];
+  var category = this.config['category'][language]['missing'];
+
+  if (typeof post.type != 'undefined'){
+    category = this.config['category'][language][post.type];
+  }
+
+  return category.toUpperCase();
 }
 
 /**
@@ -860,31 +896,6 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
     }
   );
 };
-
-esDevelopersItaliaAutocompleteAllQuery.prototype.getSoftwareType = function(software) {
-  var language = this.config['language'];
-  var category = this.config['category'][language]['missing'];
-
-  if (typeof software['it-riuso-codiceIPA'] == 'undefined'){
-    category = this.config['category'][language]['software_open'];
-  }
-  else {
-    category = this.config['category'][language]['reuse_software'];
-  }
-
-  return category.toUpperCase();
-}
-
-esDevelopersItaliaAutocompleteAllQuery.prototype.getPostType = function(post) {
-  var language = this.config['language'];
-  var category = this.config['category'][language]['missing'];
-
-  if (typeof post.type != 'undefined'){
-    category = this.config['category'][language][post.type];
-  }
-
-  return category.toUpperCase();
-}
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function(software) {
   var value = $(this.config['inputSelector']).val();

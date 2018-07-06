@@ -7,7 +7,8 @@ var paramKeys = [
   'categoryCode',
   'categoryName',
   'type',
-  'sort'
+  'sort',
+  'it-riuso-codiceIPA' 
 ];
 
 // page query config.
@@ -96,7 +97,6 @@ var autocompleteQueryconfig = {
       'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
     },
     'inputSelector': 'form .autocomplete input',
-    'size': 9,
-    'index': 'suggestions',
+    'size': 9
   },
 }
