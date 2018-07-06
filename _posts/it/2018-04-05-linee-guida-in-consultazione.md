@@ -2,7 +2,7 @@
 layout: post
 title: Consultazione pubblica sulle linee guida per lo sviluppo e l'acquisizione del software
 subtitle: Pubblicate in consultazione le linee guida in attuazione dell'art. 68 e 69 del CAD
-date: 2017-04-05 17:00:00 +0100
+date: 2018-04-05 17:00:00 +0100
 tags: developers daf gsoc
 categories: news
 author: Riccardo Iaconelli
