@@ -1,10 +1,14 @@
 $( document ).ready(function() {
   'use strict';
 
-  // get first element in path.
+  // to guess language, get first element in path.
   var language = location.pathname.substr(1).split('/')[0];
+  var languages = ['it', 'en'];
+  // if page does not have a language, take italian as default.
+  if (languages.indexOf(language) == -1) {
+    language = 'it';
+  }
   var getParams = parseSearchParameters(paramKeys);
-  // var pageId = 'open-source';
   var pageId = $('#searchPageId').attr('data');
 
   // listener for modal window search.
@@ -14,7 +18,7 @@ $( document ).ready(function() {
     $inputText.on('input', executeAutoCompleteESQuery);
     $('#searchModal form a.btn-outline-primary').on('click', function(event){
       event.preventDefault();
-      $('#searchModal .autocomplete input').val(''); $('#suggestions').text('');
+      $inputText.val(''); $('#suggestions').text('');
       if($(event.target).hasClass('active')) {
         return;
       }
@@ -23,6 +27,17 @@ $( document ).ready(function() {
       $(event.target).addClass('active');
     });
 
+  });
+
+  // listener on search form submit.
+  $('#searchModal form').on('submit', function(event){
+    // prevent form submit.
+    event.preventDefault();
+
+    // redirect to search page.
+    var path = '/' + language + '/search';
+    var queryString = "keyword=" + $('#searchModal .autocomplete input').val().trim().split(' ').join('+');
+    window.location = path + '?' + queryString;
   });
 
   if(typeof pageId != 'undefined') {
@@ -34,7 +49,7 @@ $( document ).ready(function() {
       searchObjectId = (params['type'].length == 0) ? 'all' : params['type'].slice(0).pop();
     }
 
-    // populate filters in page.
+    // populate query type filter.
     $.each({'type': 'list-type'}, function(k,id) {
       var value = getParams(k);
 
@@ -129,30 +144,9 @@ $( document ).ready(function() {
     return getParams;
   }
 
-  function generatePageSearchQueryString(filterKeys, getParams, direction) {
-    var filters = [];
-    for (var p in filterKeys) {
-      var values = getParams(p);
-      for (var i = 0; i < values.length; i++) {
-        filters.push(p +'['+i+']='+values[i]);
-      }
-
-      if(p == 'page') {
-        if(direction == 'next') {
-          filter.push('page='+(page.pop()+1));
-        }
-
-        if(direction == 'prev') {
-          filter.push('page='+(page.pop()-1));
-        }
-      }
-    }
-
-    return filters.join('&');;
-  }
-
   function getSearchObject(searchObjectId, pagesQueryconfig, params) {
     var searchObject;
+    pagesQueryconfig[searchObjectId]['language'] = language;
     switch (searchObjectId) {
       case 'all':
         searchObject = new esDevelopersItaliaQuery(pagesQueryconfig[searchObjectId], params);
@@ -171,14 +165,14 @@ $( document ).ready(function() {
         break;
 
       case 'api':
-        searchObject = new esDevelopersItaliaAutocompleteAPIQuery(pagesQueryconfig[searchObjectId], params);
+        searchObject = new esDevelopersItaliaApiQuery(pagesQueryconfig[searchObjectId], params);
         break;
 
       case 'category':
         searchObject = new esDevelopersItaliaCategoryQuery(pagesQueryconfig[searchObjectId], params);
         break;
 
-      case 'pa':
+      case 'administrations':
         searchObject = new esDevelopersItaliaPaQuery(pagesQueryconfig[searchObjectId], params);
         break;
 
@@ -230,3 +224,10 @@ $( document ).ready(function() {
   }
 
 });
+
+// encode(decode) html text into html entity
+var decodeHtmlEntity = function(str) {
+  return str.replace(/&#(\d+);/g, function(match, dec) {
+    return String.fromCharCode(dec);
+  });
+};
