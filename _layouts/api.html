@@ -17,18 +17,15 @@ layout: default
 {% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
 {% assign root = '/' | append: active_lang | append: '/api' %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title }}</h1>
-    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
-</div>
 
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-
-        <div class="Grid Grid--equalHeight Grid--withGutter">
+<div class="apilist">
+  <div class="container">
+  <section class="apilist__content mt-2 mt-md-5 mb-2 mb-md-5 pt-2 pt-md-4 pb-2">
+    <h1>{{ page.title | capitalize }}</h1>
+    <div class="font-serif color-content mt-2 mt-md-4 mb-2 mb-md-4">{{page.content}}</div>
+    <div class="apilist__listing pt-2 pt-md-4 pb-2 pb-md-4">
+      <div class="row row-eq-height">
         {% for api in apis %}
           {% assign url = '' %}
           {% if api.comingsoon != true %}
@@ -39,22 +36,25 @@ layout: default
           {% if api.contact.logo %}
             {% assign hasImage = true %}
           {% endif %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include api-card.html
-              image=api.contact.logo
-              title=api.name
-              text=api.abstract
-              link=url
-              subtitle=api.contact.name
-              alt=api.name
-              hasImage=hasImage
-              comingsoon=api.comingsoon
-            %}
-          </div>
-
-        {% endfor %}
+        <div class="col-md-4 p-2 p-md-3 mb-2 mb-md-4">
+          <article class="d-flex flex-column align-items-start h-100 mb-md-2">
+              {% if hasImage %}
+              <figure>
+              <img class="w-100" src="{{api.contact.logo | relative_url}}">
+              </figure>
+              {% endif %}
+              <h1 class="apilist__listing__title">{{api.name}}
+                  {% if api.comingsoon %}<span class="badge badge-pill badge-secondary apilist__listing__soon">{{ t.coming_soon }}</span>{%endif%}
+              </h1>
+              {% if api.comingsoon != true %}
+              <a class="apilist__listing__url mt-auto" href="{{url}}">{{t.software.read_more}} &rarr;</a>
+              {% endif %}
+          </article>
         </div>
-
-
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  </div>
 </div>
+
