@@ -272,6 +272,12 @@ esDevelopersItaliaQuery.prototype.updateSearchUrl = function() {
     queryString.push('type=' + type);
   }
 
+  // query type filter.
+  var keyword = this.params['keyword'].slice(0).pop();
+  if (typeof keyword != 'undefined') {
+    queryString.push('keyword=' + keyword.split(' ').join('+'));
+  }
+
   // then adds page.
   var page = this.params['page'].slice(0).pop();
   if (typeof page == 'undefined') {
