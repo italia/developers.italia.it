@@ -3,6 +3,8 @@ layout: default
 ---
 
 {% include setlang.html %}
+{% assign news = site.posts | where: 'lang',active_lang | sort: 'date' | reverse | first %}
+
 
 <section class="homelayout__first">
   <div class="container">
@@ -17,8 +19,8 @@ layout: default
         <div class="d-block pl-md-5" >
           <div class="homelayout__first__latnews">
             <h2>{{t.home_news_title}}</h2>
-            <h1>Titolo dell'ultima news pubblicata. Lorem ipsum sic</h1>
-            <a href="#">{{t.software.read_more}} &rarr;</a>
+            <h1>{{news.title}}</h1>
+            <a href="{{news.url}}" title="{{news.title}}">{{t.software.read_more}} &rarr;</a>
           </div>
           <div class="homelayout__first__newsletter mt-2 mt-md-5">
               <h2>Newsletter</h2>
