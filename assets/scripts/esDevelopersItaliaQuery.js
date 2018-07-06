@@ -173,6 +173,16 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
     }
   }
   
+  // it-riuso-codiceIPA
+  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  if (typeof codiceIPA != 'undefined') {
+    filter.push({
+      'term': {
+        'it-riuso-codiceIPA': codiceIPA
+      }
+    });
+  }
+
   return filter;
 };
 
@@ -239,6 +249,12 @@ esDevelopersItaliaQuery.prototype.updateSearchUrl = function() {
     for (var i = 0; i < value.length; i++) {
       queryString.push(p +'['+i+']='+value[i]);
     }
+  }
+
+  // adds it-riuso-codiceIPA filter if present.
+  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  if (typeof codiceIPA != 'undefined') {
+    queryString.push('it-riuso-codiceIPA=' + codiceIPA);
   }
 
   // query type filter.
@@ -499,7 +515,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
     'language': this.config['language'],
     'screenshot': screenshot,
     'readMore': this.readMore[language],
-    'path': 'software/' + software.name.toLowerCase().split(' ').join('-')
+    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
   };
 
   return this.templates.software(data);
