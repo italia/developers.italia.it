@@ -44,67 +44,12 @@ $( document ).ready(function() {
     // ############# SEARCH ####################
     var params = getParams();
     var searchObject = {};
-    var searchObjectId = pageId;
+    var queryType = pageId;
     if (pageId == 'search') {
-      searchObjectId = (params['type'].length == 0) ? 'all' : params['type'].slice(0).pop();
+      queryType = (params['type'].length == 0) ? 'all' : params['type'].slice(0).pop();
     }
 
-    // populate query type filter.
-    $.each({'type': 'list-type'}, function(k,id) {
-      var value = getParams(k);
-
-      if(value.length == 0){
-        return;
-      }
-
-      for (var i = 0; i < value.length; i++) {
-        $('#' + id + ' input[value="'+value[i]+'"]').prop('checked', true);
-      }
-    });
-
-    // on change query type.
-    $('#list-type input[type="checkbox"]').on('change', function(event){
-      // select query type.
-      if (event.target.checked) {
-        $('#list-type input[type="checkbox"]:checked').each(function(i, e){
-          if (event.target.value != e.value) {
-            $(e).prop('checked', false);
-          }
-        });
-        searchObjectId = event.target.value;
-      }
-      else {
-        searchObjectId = 'all';
-      }
-
-      if (params['type'].length == 0) {
-        params['type'].push(searchObjectId);
-      }
-      else {
-        params['type'].pop();
-        params['type'].push(searchObjectId);
-      }
-
-      // reset pager.
-      params['page'].pop();
-
-      // create query object if needed.
-      if (typeof searchObject[searchObjectId] == 'undefined') {
-        searchObject[searchObjectId] = getSearchObject(searchObjectId, pagesQueryconfig, params);
-      }
-
-      searchObject[searchObjectId].removeFiltersListeners();
-      searchObject[searchObjectId].registerFiltersListeners();
-      searchObject[searchObjectId].executeESQuery();
-    });
-
-    if (typeof searchObject[searchObjectId] == 'undefined') {
-      searchObject[searchObjectId] = getSearchObject(searchObjectId, pagesQueryconfig, params);
-    }
-
-    searchObject[searchObjectId].popupateFiltersFromUrl();
-    searchObject[searchObjectId].registerFiltersListeners();
-    searchObject[searchObjectId].executeESQuery();
+    var queryManager = new esDevelopersItaliaManager(queryType, {}, pagesQueryconfig, params);
   }
 
   /**
@@ -142,45 +87,6 @@ $( document ).ready(function() {
     }
 
     return getParams;
-  }
-
-  function getSearchObject(searchObjectId, pagesQueryconfig, params) {
-    var searchObject;
-    pagesQueryconfig[searchObjectId]['language'] = language;
-    switch (searchObjectId) {
-      case 'all':
-        searchObject = new esDevelopersItaliaQuery(pagesQueryconfig[searchObjectId], params);
-        break;
-  
-      case 'platforms':
-        searchObject = new esDevelopersItaliaPlatformsQuery(pagesQueryconfig[searchObjectId], params);
-        break;
-
-      case 'software_open':
-        searchObject = new esDevelopersItaliaOpenSourceQuery(pagesQueryconfig[searchObjectId], params);                
-        break;
-
-      case 'reuse_software':
-        searchObject = new esDevelopersItaliaReuseQuery(pagesQueryconfig[searchObjectId], params);        
-        break;
-
-      case 'api':
-        searchObject = new esDevelopersItaliaApiQuery(pagesQueryconfig[searchObjectId], params);
-        break;
-
-      case 'category':
-        searchObject = new esDevelopersItaliaCategoryQuery(pagesQueryconfig[searchObjectId], params);
-        break;
-
-      case 'administrations':
-        searchObject = new esDevelopersItaliaPaQuery(pagesQueryconfig[searchObjectId], params);
-        break;
-
-      default:
-        break;
-    }
-
-    return searchObject;
   }
 
   function executeAutoCompleteESQuery(event) {

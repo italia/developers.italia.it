@@ -176,13 +176,13 @@ layout: default
             </div> 
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ t.software.software_open }}">
+                <input class="form-check-input" type="checkbox" value="software_open">
                <span> {{ t.software.software_open | capitalize }} </span>
               </label>
             </div> 
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ t.software.reuse_software }}">
+                <input class="form-check-input" type="checkbox" value="reuse_software">
                <span> {{ t.software.reuse_software | capitalize }} </span>
               </label>
             </div> 
@@ -215,7 +215,7 @@ layout: default
           <h5 class="modal-title" id="exampleModalLabel">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" sort="az">A/Z</a>
+          <a href="" sort="az">A/Z <i class="it-check"></i></a>
           <a href="" sort="za">Z/A</a>
         </div>
       </div>
