@@ -2,7 +2,7 @@
 title: Come lo uso
 lang: it
 layout: simple-internal
-image: 'http://placehold.it/1400x500'
+image: /assets/images/comelouso-temp-img.jpg
 alternate-blocks:
     - title: Voglio integrare nel mio servizio le piattaforme abilitanti
       text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, **sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat**, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.

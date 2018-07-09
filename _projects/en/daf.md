@@ -1,7 +1,7 @@
 ---
 title: DAF
 subtitle: Data & Analytics Framework
-logo: /assets/images/logo-daf-temp.png
+logo: /assets/images/logo-daf.jpg
 payoff: Mine the value of public datasets
 description: >
   DAF's vision is to make public data easy to access and understand by PAs to support them in their data driven decision making, and to facilitate access to information that can be made public by citizens and businesses.

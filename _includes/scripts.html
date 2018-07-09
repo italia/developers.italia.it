@@ -59,6 +59,12 @@
     }
   });
 
+  $('#moreTags').on('click', function(e) {
+    e.preventDefault();
+    $('.home-software-tags__list').children().removeClass('deactive');
+    $(this).hide();
+  })
+
   {% if page.vitalityDataChart != nil %}
     var ctx = document.getElementById("vitalityChart").getContext("2d");
     var myLineChart = new Chart(ctx, {
