@@ -20,10 +20,10 @@
             {% endif %}
             <div class="{{coldim}} {{colorder[1]}}" >
                 <h1 {% if thecycle == 'even' %}class="text-right"{% endif %}>{{block.title}}</h1>
-                {% if block.text!=nill %}
+                {% if block.text!=nil%}
                     <div class="font-serif mt-md-3 mb-md-3 alternateblock__text {% if thecycle == 'even' %}text-right{% endif %}">{{block.text | markdownify }}</div>                    
                 {% endif %}
-                {% if block.buttons!=nill %}
+                {% if block.buttons!=nil%}
                     <div class="mt-2 mt-md-4 mb-2 {% if thecycle == 'even' %}text-right{% endif %}">
                         {% for button in block.buttons %}
                             <a href="{{button.url}}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
