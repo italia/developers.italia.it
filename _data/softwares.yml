@@ -1,3 +1,226 @@
+- applicationSuite: LoremIpsum
+  dependencies:
+    hardware:
+    - name: Oracle
+      optional: false
+      version: ""
+      versionMax: ""
+      versionMin: "11.4"
+    - name: IBM SoftLayer
+      optional: false
+      version: ""
+      versionMax: ""
+      versionMin: ""
+    open:
+    - name: MySQL
+      optional: true
+      version: ""
+      versionMax: "1.3"
+      versionMin: "1.1"
+    - name: PostgreSQL
+      optional: true
+      version: "3.2"
+      versionMax: ""
+      versionMin: ""
+    proprietary:
+    - name: Oracle
+      optional: false
+      version: ""
+      versionMax: ""
+      versionMin: "11.4"
+    - name: IBM SoftLayer
+      optional: false
+      version: ""
+      versionMax: ""
+      versionMin: ""
+  description:
+    eng:
+      apiDocumentation: https://developers.italia.it/it/api
+      awards:
+      - 1st Price Software of the year
+      documentation: https://docs.developers.italia.it
+      featureList:
+      - Not important feature
+      - Will run with problems
+      - Has one thousand bugs
+      - Solves no problems of the world
+      genericName: Text Editor
+      localisedName: Steno no varianti
+      longDescription: |
+        Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 158 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 316 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 474 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 632 characters.
+      screenshots:
+      - https://raw.githubusercontent.com/gith002/Steno/master/img/sshot1.png
+      - https://raw.githubusercontent.com/gith002/Steno/master/img/sshot2.png
+      - https://raw.githubusercontent.com/gith002/Steno/master/img/sshot3.png
+      shortDescription: "Steno is a software gorgon. \U0001F43B"
+      videos:
+      - https://www.youtube.com/watch?v=RaHmGbBOP84
+  developmentStatus: development
+  freeTags:
+    eng:
+    - english-free-tag-steno
+    ita:
+    - tag-libero-italiano-steno
+  intendedAudience:
+    countries:
+    - it
+    onlyFor:
+    - health-services
+    unsupportedCountries:
+    - de
+  isBasedOn:
+  - https://github.com/gith002/euriale.git
+  it:
+    accessibile: true
+    anpr: true
+    cie: true
+    designKit:
+      ui: true
+      web: true
+    interoperabile: true
+    pagopa: true
+    riuso:
+      codiceIPA: c_a547
+    spid: true
+  landingURL: https://designers.italia.it
+  legal:
+    authorsFile: https://raw.githubusercontent.com/gith002/Steno/master/AUTHORS
+    license: AGPL-3.0-or-later
+    mainCopyrightOwner: City of Chicago
+    repoOwner: City of Chicago
+  localisation:
+    availableLanguages:
+    - eng
+    - ita
+    - fra
+    - deu
+    localisationReady: true
+  logo: https://raw.githubusercontent.com/gith002/Steno/master/img/logo.png
+  maintenance:
+    contacts:
+    - affiliation: Comune di Reggio Emilia
+      email: francesco.rossi@comune.reggioemilia.it
+      name: Francesco Rossi
+      phone: +39 231 13215112
+    - affiliation: Fornitore Privato S.P.A.
+      email: dario.bianchi@fornitore.it
+      name: Dario Bianchi
+      phone: +39 16 24231322
+    - affiliation: Fornitore Privato S.P.A.
+      email: dario.bianchi@fornitore.it
+      name: Giancarlo Verdi
+      phone: +39 16 24231322
+    contractors:
+    - name: Fornitore Privato SPA
+      until: "2019-01-01"
+      website: https://developers.italia.it
+    type: contract
+  monochromeLogo: https://raw.githubusercontent.com/gith002/Steno/master/img/logo-mono.svg
+  name: Steno no varianti
+  oldFeatureList:
+    eng:
+    - Very important feature
+    - Will run without a problem
+    - Has zero bugs
+    - Solves all the problems of the world
+  platforms:
+  - android
+  popularTags:
+  - security
+  - sports
+  relatedSoftwares:
+  - eng:
+      localisedName: Medusa
+      url: https://github.com/gith003/publiccode-org3.git
+    image: https://raw.githubusercontent.com/gith003/publiccode-org3/master/img/logo.png
+    ita: {}
+    name: MedusaGith003
+  - eng:
+      localisedName: Medusa
+      url: https://github.com/gith002/medusa.git
+    image: https://raw.githubusercontent.com/gith002/Medusa/master/img/logo.png
+    ita: {}
+    name: Medusa
+  releaseDate: "2018-06-29"
+  roadmap: https://designers.italia.it/roadmap/
+  shareTags:
+  - security
+  - sports
+  softwareType:
+    type: standalone
+  softwareVersion: "2.0"
+  tags:
+  - security
+  - sports
+  tagsRelate:
+  - security
+  - sports
+  url: https://github.com/gith002/steno.git
+  usedBy:
+  - Comune di Modena
+  - Comune di Cesano Maderno
+  vitalityDataChart:
+  - 27
+  - 77
+  - 87
+  - 27
+  - 17
+  - 19
+  - 51
+  - 21
+  - 42
+  - 17
+  - 38
+  - 11
+  - 89
+  - 58
+  - 45
+  - 55
+  - 57
+  - 68
+  - 79
+  - 65
+  - 67
+  - 12
+  - 0
+  - 15
+  - 18
+  - 26
+  - 27
+  - 28
+  - 49
+  - 75
+  - 12
+  - 15
+  - 68
+  - 72
+  - 73
+  - 77
+  - 81
+  - 56
+  - 89
+  - 28
+  - 13
+  - 15
+  - 18
+  - 26
+  - 27
+  - 28
+  - 49
+  - 75
+  - 12
+  - 15
+  - 68
+  - 15
+  - 32
+  - 33
+  - 13
+  - 27
+  - 77
+  - 87
+  - 27
+  - 17
+  vitalityScore: 27
 - applicationSuite: GorgonProductivitySuite
   dependencies:
     hardware:

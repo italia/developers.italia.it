@@ -5,11 +5,11 @@
 - name: Steno
   logo: https://raw.githubusercontent.com/gith002/Steno/master/img/logo.png
   url: https://github.com/gith002/steno.git
-  codiceipa: c_a547
+  codiceipa: c_a548
 - name: Medusa
   logo: https://raw.githubusercontent.com/gith002/Medusa/master/img/logo.png
   url: https://github.com/gith002/medusa.git
-  codiceipa: c_a547
+  codiceipa: c_a549
 - name: MedusaGith003
   logo: https://raw.githubusercontent.com/gith003/publiccode-org3/master/img/logo.png
   url: https://github.com/gith003/publiccode-org3.git
