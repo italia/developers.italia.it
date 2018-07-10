@@ -24,9 +24,14 @@
 <script src="{{ '/assets/templates/tot.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/templates/suggestion.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/templates/pager.tpl.js' | relative_url }}"></script>
+<script src="{{ '/assets/templates/message.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/esDevelopersItaliaQuery.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/esQuery.config.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/esQuery.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/perfect-scrollbar.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/photoswipe.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/photoswipe-ui-default.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/misc.js' | relative_url }}"></script>
 
 <script>
   $(document).on('keydown', function(e) {
@@ -54,55 +59,53 @@
     }
   });
 
-  var ctx = document.getElementById("vitalityChart").getContext("2d");
-  var myLineChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ['j', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'],
-      datasets: [{
-        fill: false,
-        lineTension: 0.1,
-        data: {{ page.vitalityDataChart | jsonify }},
-        borderWidth: 2,
-        borderColor: '#06c'
-       }]
-     },
-    options: {
-      scales: {
-        xAxes: [{
-          display: false,
-          stacked: true
-        }],
-        yAxes: [{
-          display: false,
-          stacked: true,
-          ticks: {
-            beginAtZero:true
-          }
+  {% if page.vitalityDataChart != nil %}
+    var ctx = document.getElementById("vitalityChart").getContext("2d");
+    var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['j', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'],
+        datasets: [{
+          fill: false,
+          lineTension: 0.1,
+          data: {{ page.vitalityDataChart | jsonify }},
+          borderWidth: 2,
+          borderColor: '#06c'
         }]
       },
-      legend: {
-        display: false,
-      },
-      elements: {
-        point: { 
-          radius: 0 
-        } 
-      },
-      layout: {
-        padding: {
-          left: 5,
-          right: 5,
-          top: 5,
-          bottom: 5
+      options: {
+        scales: {
+          xAxes: [{
+            display: false,
+            stacked: true
+          }],
+          yAxes: [{
+            display: false,
+            stacked: true,
+            ticks: {
+              beginAtZero:true
+            }
+          }]
+        },
+        legend: {
+          display: false,
+        },
+        elements: {
+          point: {
+            radius: 0
+          }
+        },
+        layout: {
+          padding: {
+            left: 5,
+            right: 5,
+            top: 5,
+            bottom: 5
+          }
         }
-      },
-      tooltips: {
-        enabled: false
-      }
-    }
-  });
-  
+    });
+  {% endif %}
+
   $(document).ready(function(){
     var owl = $('.owl-carousel');
     owl.owlCarousel({

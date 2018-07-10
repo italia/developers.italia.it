@@ -1,4 +1,4 @@
-{% assign software-tags = "Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit|Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit|Gestione della conoscenza|Gestione contratti di lavoro|Registri|Lorem ipsum sit" | split:"|" %}
+{% assign software-tags = site.data.software_tags %}
 
 <section class="home-software-tags">
     <div class="container">
@@ -6,12 +6,10 @@
     <ul class="home-software-tags__list list-inline text-center">
         {% for tag in software-tags %}
         <li class="home-software-tags__item">
-            <a href="#">{{tag}}</a>
+            <a href="/{{active_lang}}/categorie{%if active_lang=='en'%}s{%endif%}/?tags[0]={{tag[0]}}">{{tag[1][active_lang]}}</a>
         </li>
         {% endfor %}
     </ul>
-    <div class="text-center mt-2 mt-md-4 mb-2 mb-md-5 ">
-        <a href="#" class="home-software-tags__extra">Altri filtri</a>
-    </div>
+   
     </div>
 </section>
