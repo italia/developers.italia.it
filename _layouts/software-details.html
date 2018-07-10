@@ -48,7 +48,7 @@ layout: default
                 <span class="abstract-software__variant"></span>{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
               {% endif %}
             </h2>
-          {% elsif page.description.eng.genericName == nil%}
+          {% elsif page.description.eng.genericName == nil %}
             <h2>
               {{ description['genericName'] }}
               {% if page.isBasedOn != nil %}
@@ -76,7 +76,7 @@ layout: default
           <div class="row legal-main-info">
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
-                <a href="#">{{ page.legal.repoOwner }}</a>
+                {{ page.legal.repoOwner }}
               </p>
             </div>
             {% if page.maintenance.type == "contract" %}
@@ -107,7 +107,7 @@ layout: default
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
+          <p class="score d-inline-block"> {{ page.vitalityScore }}</p>
           <div id="softwareChart">
             <canvas id="vitalityChart"></canvas>
           </div>
@@ -301,7 +301,7 @@ layout: default
                     {% endif %}
                   </p>
                   <p><span class="label">{{ t.software.vitality }}:
-                    {{ variant.vitalityScore }}%</span>
+                    {{ variant.vitalityScore }}</span>
                   </p>
                 </div>
                 {% endfor %}
@@ -391,6 +391,9 @@ layout: default
       {% endif %}
     </div>
   </div>
+</div>
+<div class="container">
+  {% if page.relatedSoftwares %}
   <div class="interestRelatedSoftwares">
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
@@ -413,6 +416,8 @@ layout: default
       </div>
     </div>
   </div>
+  {% endif %}
+  {% if page.shareTags %}
   <div class="tags-relate text-center">
   <p>
     <strong>TAG</strong>
@@ -421,6 +426,7 @@ layout: default
     {% endfor %}
   </p>
   </div>
+  {% endif %}
 </div>
 <div class="detail-sheet">
   <div class="container sheet">
@@ -445,7 +451,7 @@ layout: default
                   {{ page.description[active_lang_extended].genericName}}
                 {% elsif page.description.eng.genericName != nil %}
                   {{ page.description.eng.genericName }}
-                {% elsif page.description.eng.genericName == nil%}
+                {% elsif page.description.eng.genericName == nil %}
                   {{ description['genericName'] }}
                 {% endif %}
               </h2>
@@ -543,11 +549,11 @@ layout: default
                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nil%}
+                      {% elsif dependence.version == nil %}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nil%}
+                          {% elsif dependence.versionMax == nil %}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}
@@ -570,11 +576,11 @@ layout: default
                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nil%}
+                      {% elsif dependence.version == nil %}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nil%}
+                          {% elsif dependence.versionMax == nil %}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}
@@ -597,11 +603,11 @@ layout: default
                            - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nil%}
+                      {% elsif dependence.version == nil %}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nil%}
+                          {% elsif dependence.versionMax == nil %}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}
@@ -618,22 +624,22 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
                   {% if page.it.pagopa == true %}
-                  <a href="#" class="enabling_platforms">
+                  <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
                     PagoPA
                   </a>
                   {% endif %}
                   {% if page.it.spid == true %}
-                  <a href="#" class="enabling_platforms">
+                  <a href="/{{ active_lang }}/spid" class="enabling_platforms">
                     Spid
                   </a>
                   {% endif %}
                   {% if page.it.cie == true %}
-                  <a href="#" class="enabling_platforms">
+                  <a href="/{{ active_lang }}/cie" class="enabling_platforms">
                     Cie
                   </a>
                   {% endif %}
                   {% if page.it.anpr == true %}
-                  <a href="#" class="enabling_platforms">
+                  <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
                     Anpr
                   </a>
                   {% endif %}
