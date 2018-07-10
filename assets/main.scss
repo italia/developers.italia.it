@@ -2,6 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
+$font-family-serif: 'Lora', 'Georgia', Serif;
+
+
 @charset "utf-8";
 @import "bootstrap-italia/src/scss/bootstrap-italia";
 @import 'footer';
@@ -21,7 +26,25 @@
 //@import "datatables";
 //@import "select2";
 
-$font-family-serif: 'Lora', 'Georgia', Serif;
+
+h1, .h1 {
+    color: #17324D;
+    letter-spacing: 0;
+    @include media-breakpoint-up(sm) {
+      font-size: 3.5rem;
+      letter-spacing: 0;
+      line-height: 1.25;
+    }
+}
+h2, .h2 {
+    color: #17324D;
+    letter-spacing: 0;
+    @include media-breakpoint-up(sm) {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+  }
 
 .font-serif {
     font-family: $font-family-serif;
@@ -1063,15 +1086,16 @@ html, body {
             position: absolute;
             z-index: -1;
             font-size: 10rem;
-            font-weight: 800;
+            font-weight: 900;
             line-height: 8rem;
             letter-spacing: -0.5rem;
             bottom: 0;
-            color: #EAEEF2;
+            color: #66A5E3 ;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
             text-transform: uppercase;
+            opacity: 0.05;
         }
     }
     &__actors {
@@ -1086,11 +1110,43 @@ html, body {
         box-shadow: 0 0 80 0 rgba(0,43,85,0.1);
         padding: 2rem;
         border-radius: 0.5rem;
+        
 
         &__item {
             img {
                 border-radius: 100%;
             }
+        }
+        .carousel {
+            padding: 0;
+            background-color: #fff;
+            height: 220px;
+        }
+        .carousel-indicators {
+            margin: 0;
+            position: relative;
+            bottom: auto;
+            left: auto;
+            right: auto;
+
+            li {
+                width: 0.75rem;
+                height: 0.75rem;
+                border-radius: 100%;
+            }
+        }
+        .carousel-control-prev, .carousel-control-next {
+            position: relative;
+            display: inline-block;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.5rem;
         }
     }
     &__content {
