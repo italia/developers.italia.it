@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
   'use strict';
 
   // to guess language, get first element in path.

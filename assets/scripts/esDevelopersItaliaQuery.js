@@ -709,7 +709,7 @@ esDevelopersItaliaQuery.prototype.executeESQuery = function() {
   var type = this.getDocumentTypeQuery();
   var query = this.getQuery();
 
-  // query.sort = this.getSortQuery();
+  query.sort = this.getSortQuery();
 
   var params = {
     'index': index,
