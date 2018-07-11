@@ -15,4 +15,4 @@ Etiam pharetra, orci ut venenatis accumsan, nulla mi euismod dui, et tincidunt t
 
 
 
-[Come lo uso](http://google.it){: .btn .btn-primary .font-base .pl-5 .pr-5 .mr-3}  [Come partecipo](http://google.it){: .btn .btn-outline-primary .font-base .pl-5 .pr-5}
+[Come lo uso](http://google.it){: .btn .btn-primary .font-base .px-5 .my-2 .mr-md-3 .w-100 .d-md-inline}  [Come partecipo](http://google.it){: .btn .btn-outline-primary .font-base .px-5 .my-2 .w-100 .d-md-inline}

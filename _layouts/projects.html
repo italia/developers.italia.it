@@ -18,7 +18,9 @@ lang: it
           <article class="d-flex flex-column align-items-start h-100 mb-md-2">
               {% if proj.logo %}
               <figure>
-              <img class="w-100" src="{{proj.logo | relative_url}}">
+                <a href="{{proj.url}}" title="{{proj.title}}">
+                  <img class="w-100" src="{{proj.logo | relative_url}}">
+                </a>
               </figure>
               {% endif %}
               <h1 class="projectslist__listing__title"><a class="decoration-none color-inherit" href="{{proj.url}}">{{proj.title}}</a></h1>

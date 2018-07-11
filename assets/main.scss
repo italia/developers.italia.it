@@ -503,8 +503,8 @@ html, body {
     }
     &-main-text {
         position: relative;
-        margin-top: -6rem;
-        padding: 4rem;
+        margin-top: -3rem;
+        padding: 1rem;
         background-color: #fff;
         z-index: 10;
         box-shadow: 0 10px 80px 0 rgba(90,103,114,0.1);
@@ -512,7 +512,16 @@ html, body {
         h1 {
             font-size: 3.5rem;
             color: #17324D;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: -6rem;
+            padding: 4rem;
         }
 
     }
@@ -699,13 +708,21 @@ html, body {
                 z-index: -1;
                 right: 0;
                 top: 0;
-                width: 50vw;
+                width: 100%;
                 height: 100%;
                 background-color: #F7F9FA;
                 background-image: url(/assets/images/home-first-sx.svg) ;
-                background-position-x: 80%;
+                background-position-x: center;
                 background-position-y: center;
                 background-repeat: no-repeat;
+                background-size: contain;
+
+                @include media-breakpoint-up(md) {
+                    width: 50vw;
+                    background-size: inherit;
+                    background-position-x: 80%;
+                    background-position-y: center;
+                }
             }
         }
         &__dx {
@@ -714,14 +731,21 @@ html, body {
                 content: '';
                 z-index: -1;
                 top: 0;
-                width: 50vw;
+                width: 100%;
                 height: 100%;
                 left: 0;
                 background-color: #CCE6FF;
                 background-image: url(/assets/images/home-first-dx.svg) ;
-                background-position-x: 60%;
+                background-position-x: center;
                 background-position-y: center;
                 background-repeat: no-repeat;
+                background-size: contain;
+                @include media-breakpoint-up(md) {
+                    width: 50vw;
+                    background-size: inherit;
+                    background-position-x: 60%;
+                    background-position-y: center;
+                }
             }
         }
     }
@@ -925,8 +949,8 @@ html, body {
     }
     &-main-text {
         position: relative;
-        margin-top: -6rem;
-        padding: 4rem;
+        margin-top: -3rem;
+        padding: 1rem;
         background-color: #fff;
         z-index: 10;
         box-shadow: 0 10px 80px 0 rgba(90,103,114,0.1);
@@ -934,7 +958,10 @@ html, body {
         h1 {
             font-size: 3.5rem;
             color: #17324D;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 2rem;
+            }
         }
         &:before {
             position: absolute;
@@ -947,6 +974,10 @@ html, body {
             height: calc(100% - 3rem);
             content: '';
             opacity: 0.5;
+        }
+        @include media-breakpoint-up(md) {
+            padding: 4rem;
+            margin-top: -6rem;
         }
 
     }

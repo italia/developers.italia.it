@@ -9,7 +9,9 @@
   </div>
   {% if include.hasImage != false %}
     <figure class="img-fluid">
+      <a href="{{ include.link }}" title="{{ include.title }}">
       <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
+      </a>
     </figure>
   {% endif %}
   <h1 class="pr-0 pr-md-2"><a href="{{ include.link }}">{{ include.title }}</a>

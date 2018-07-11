@@ -37,7 +37,7 @@ layout: default
   </div>
   <div class="postslisting__content my-2 my-md-4">
     <div class="container postlisting__sticky my-2 ">
-      <div class="row row-eq-height">
+      <div class="row row-eq-height ">
         {% for post in paginator.posts limit:2 %}
           <div class="col-md-6 mb-4 {%if forloop.first%}pr-md-3{%endif%} {%if forloop.last%}pl-md-3{%endif%}">
           {% include card.html
@@ -58,7 +58,7 @@ layout: default
       </div>
     </div>
     <div class="container my-3 my-md-5">
-        <div class="row row-eq-height">
+        <div class="row row-eq-height px-2 px-md-0">
         {% for post in paginator.posts offset:2 %}
             {% assign division_by_3 = forloop.index | modulo:3 %}
 
