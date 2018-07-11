@@ -21,8 +21,8 @@ lang: it
               <img class="w-100" src="{{proj.logo | relative_url}}">
               </figure>
               {% endif %}
-              <h1 class="projectslist__listing__title">{{proj.title}}</h1>
-              <a class="projectslist__listing__url mt-auto" href="{{proj.url}}">{{t.software.read_more}} &rarr;</a>
+              <h1 class="projectslist__listing__title"><a class="decoration-none color-inherit" href="{{proj.url}}">{{proj.title}}</a></h1>
+              <a class="projectslist__listing__url mt-auto decoration-none" href="{{proj.url}}">{{t.software.read_more}} &rarr;</a>
           </article>
         </div>
         {% endfor %}

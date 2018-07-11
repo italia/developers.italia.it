@@ -1,4 +1,4 @@
 {% assign label_audiences = include.label %}
 {% assign software_audiences = site.data.software_pa_types[label_audiences] %}
 
-<a href="#"> {% if software_audiences[active_lang] != nil %}{{ software_audiences[active_lang] }} {% else %} {{ software_audiences.en }} {% endif %}</a>
+{% if software_audiences[active_lang] != nil %}{{ software_audiences[active_lang] }} {% else %} {{ software_audiences.en }} {% endif %}

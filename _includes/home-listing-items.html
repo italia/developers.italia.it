@@ -22,14 +22,14 @@
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
             <h1>{{title}}</h1>
-            {% if captiontitle!=nill %}
+            {% if captiontitle!=nil%}
             <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
             {% endif %}
         </div>
         <div class="row row-eq-height">
             {% for item in items limit: limititems %}
                 <div class="col">
-                    <article class="d-flex flex-column align-items-start h-100 {% if withimages!=true %}withshadow{%endif%}" >
+                    <article class="d-flex flex-column align-items-start h-100 px-3 {% if withimages!=true %}withshadow{%endif%} " >
                         {% if withimages==true %}
                         <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
                         {% endif %}
@@ -42,9 +42,11 @@
                 </div>
             {% endfor %}
         </div>
+        {% if include.viewalltitle %}
         <div class="row pb-3 mt-3 mb-3 mt-md-5">
-            <a class="btn btn-primary mx-auto" href="#">Vedi tutto</a>
+            <a class="btn btn-primary mx-auto" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
         </div>
+        {% endif %}
 
     </div>
 

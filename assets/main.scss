@@ -2,6 +2,11 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+
+$font-family-serif: 'Lora', 'Georgia', Serif;
+
+
 @charset "utf-8";
 @import "bootstrap-italia/src/scss/bootstrap-italia";
 @import 'footer';
@@ -21,7 +26,25 @@
 //@import "datatables";
 //@import "select2";
 
-$font-family-serif: 'Lora', 'Georgia', Serif;
+
+h1, .h1 {
+    color: #17324D;
+    letter-spacing: 0;
+    @include media-breakpoint-up(sm) {
+      font-size: 3.5rem;
+      letter-spacing: 0;
+      line-height: 1.25;
+    }
+}
+h2, .h2 {
+    color: #17324D;
+    letter-spacing: 0;
+    @include media-breakpoint-up(sm) {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+  }
 
 .font-serif {
     font-family: $font-family-serif;
@@ -47,7 +70,12 @@ $font-family-serif: 'Lora', 'Georgia', Serif;
 .deactive {
     display: none !important;
 }
-
+.decoration-none {
+    text-decoration: none !important;
+}
+.color-inherit {
+    color: inherit;
+}
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
     font-size: 16px;
@@ -314,6 +342,7 @@ html, body {
             font-size: 0.75rem;
             font-weight: 300;
         }
+
     }
 }
 #search-form {
@@ -421,7 +450,7 @@ html, body {
             background-color: #fff;
             border-right: 1px solid #ddd;
             text-align: center;
-            width: 9rem;
+            width: 10rem;
             position: relative;
             top: 0.8rem;
             z-index: 2;
@@ -432,6 +461,8 @@ html, body {
             }
             &.active {
                 border-bottom: 4px solid $primary !important;
+                border-bottom-right-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
             }
         }
         & li:nth-child(4) {
@@ -447,7 +478,7 @@ html, body {
             border-right: none;
         }
         &:after {
-            width: 27rem; //width of li:nth-child(-n+3) *3
+            width: 30rem; //width of li:nth-child(-n+3) *3
             content: '';
             height: 4.6rem;
             background: transparent;
@@ -562,6 +593,10 @@ html, body {
 .homelayout {
     &__first {
         overflow-x: hidden;
+        a {
+            text-decoration: none !important;
+        }
+
         article {
             position: relative;
             z-index: 1;
@@ -668,7 +703,7 @@ html, body {
                 height: 100%;
                 background-color: #F7F9FA;
                 background-image: url(/assets/images/home-first-sx.svg) ;
-                background-position-x: right;
+                background-position-x: 80%;
                 background-position-y: center;
                 background-repeat: no-repeat;
             }
@@ -735,6 +770,9 @@ html, body {
     @include media-breakpoint-up(md) {
         padding: 3rem 0;
     }
+    a {
+        text-decoration: none !important;
+    }
 
     .more {
         font-weight: 600;
@@ -796,6 +834,10 @@ html, body {
         background-color: #5C6F82;
         padding: 0.3rem 1rem;
         border-radius: 0.25rem;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
     }
     &__item {
         display: inline-block;
@@ -803,10 +845,15 @@ html, body {
         margin-bottom: 1.5rem;
         a {
             border: 2px solid $primary;
-            padding: 0.2rem 0.5rem;
+            padding: 0.2rem 0.8rem;
             border-radius: 1rem;
             font-weight: 600;
             line-height: 1;
+            text-decoration: none !important;
+            &:hover {
+                background-color: $primary;
+                color: #fff;
+            }
         }
     }
 }
@@ -1040,15 +1087,16 @@ html, body {
             position: absolute;
             z-index: -1;
             font-size: 10rem;
-            font-weight: 800;
+            font-weight: 900;
             line-height: 8rem;
             letter-spacing: -0.5rem;
             bottom: 0;
-            color: #EAEEF2;
+            color: #66A5E3 ;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
             text-transform: uppercase;
+            opacity: 0.05;
         }
     }
     &__actors {
@@ -1063,11 +1111,43 @@ html, body {
         box-shadow: 0 0 80 0 rgba(0,43,85,0.1);
         padding: 2rem;
         border-radius: 0.5rem;
+        
 
         &__item {
             img {
                 border-radius: 100%;
             }
+        }
+        .carousel {
+            padding: 0;
+            background-color: #fff;
+            height: 220px;
+        }
+        .carousel-indicators {
+            margin: 0;
+            position: relative;
+            bottom: auto;
+            left: auto;
+            right: auto;
+
+            li {
+                width: 0.75rem;
+                height: 0.75rem;
+                border-radius: 100%;
+            }
+        }
+        .carousel-control-prev, .carousel-control-next {
+            position: relative;
+            display: inline-block;
+            top: auto;
+            left: auto;
+            right: auto;
+            bottom: auto;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 0.5rem;
         }
     }
     &__content {
@@ -1415,9 +1495,20 @@ html, body {
         border-top: 2px solid rgba(90, 103, 114, 0.25);
         margin: 3rem 0;
     }
+    &--by-tag {
+        .postslisting__headerbkg {
+            height: 120px ;
+            @include media-breakpoint-up(md) {
+                height: 210px ;
+            }
+        }
+    }
 
 }
 .newscard {
+    a {
+        text-decoration: none;
+    }
     h1 {
         letter-spacing: 0;
         line-height: 1.1;
@@ -1425,9 +1516,8 @@ html, body {
         margin: 1rem 0;
 
         a {
-
+           
             color: #1C2024;
-
         }
     }
     &__top {
@@ -1496,12 +1586,15 @@ html, body {
 
     }
     &__listing {
+        a {
+            text-decoration: none !important;
+        }
         article {
 
             h1 {
                 color: #333333;
                 font-size: 1.2rem;
-                margin-top:1rem;
+                margin-top: 0.2rem;
                 letter-spacing: 0;
             }
 

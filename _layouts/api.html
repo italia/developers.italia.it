@@ -43,7 +43,7 @@ layout: default
               <img class="w-100" src="{{api.contact.logo | relative_url}}">
               </figure>
               {% endif %}
-              <h1 class="apilist__listing__title">{{api.name}}
+              <h1 class="apilist__listing__title"><a class="color-inherit decoration-none" href="{{url}}">{{api.name}}</a>
                   {% if api.comingsoon %}<span class="badge badge-pill badge-secondary apilist__listing__soon">{{ t.coming_soon }}</span>{%endif%}
               </h1>
               {% if api.comingsoon != true %}
