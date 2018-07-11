@@ -1,4 +1,4 @@
 {% assign label_languages = include.label %}
 {% assign software_supported_languages = site.data.software_supported_languages[label_languages] %}
 
-<a href="#"> {% if software_supported_languages[active_lang] != nil %}{{ software_supported_languages[active_lang] }} {% else %} {{ software_supported_languages.en }} {% endif %}</a>
+{% if software_supported_languages[active_lang] != nil %}{{ software_supported_languages[active_lang] }} {% else %} {{ software_supported_languages.en }} {% endif %}<br/>
