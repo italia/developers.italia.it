@@ -21,7 +21,9 @@ layout: default
 	<div class="row intro">
     <div class="col-md-7">
       <div class="intro-name">
-        <img src="{{ page.logo}}" class="d-inline-block">
+        {% if page.logo %}
+        <img src="{{ page.logo}}" class="d-inline-block" width="48" height="48">
+        {% endif %}
         <h1 class="d-inline-block">
           {% if page.description[active_lang_extended].localisedName != nil %}
             {{ page.description[active_lang_extended].localisedName|capitalize }}
@@ -35,7 +37,7 @@ layout: default
             {{ page.description[active_lang_extended].genericName}}
             {% if page.isBasedOn != nil %}
               <br>
-              {{ t.software.variant_by }} {{ page.legal.repoOwner }}
+              <span class="abstract-software__variant">{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
             {% endif %}
           </h2>
           {% elsif page.description.eng.genericName != nil %}
@@ -43,7 +45,7 @@ layout: default
               {{ page.description.eng.genericName }}
               {% if page.isBasedOn != nil %}
                 <br>
-                {{ t.software.variant_by }} {{ page.legal.repoOwner }}
+                <span class="abstract-software__variant"></span>{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
               {% endif %}
             </h2>
           {% elsif page.description.eng.genericName == nil %}
@@ -51,11 +53,11 @@ layout: default
               {{ description['genericName'] }}
               {% if page.isBasedOn != nil %}
                 <br>
-                {{ t.software.variant_by }} {{ page.legal.repoOwner }}
+                <span class="abstract-software__variant"></span>{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
               {% endif %}
             </h2>
           {% endif %}
-          <h3>
+          <h3 class="color-content font-serif my-3">
             {% if page.description[active_lang_extended].shortDescription != nil %}
               {{ page.description[active_lang_extended].shortDescription }}
             {% elsif page.description.eng.shortDescription != nil  %}
@@ -64,10 +66,12 @@ layout: default
               {{ description['shortDescription'] }}
             {% endif %}
           </h3>
-          <div class="tag">
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
             {% for tag in page.popularTags limit: 3 %}
-              {% include set-tag.html label=tag %}
+              {% include set-tag.html label=tag tag=tag %}
             {% endfor %}
+          </ul>
           </div>
           <div class="row legal-main-info">
             <div class="col-sm">
@@ -719,7 +723,7 @@ layout: default
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
-              <p>
+              <p class="font-serif page-detail__text">
                 {% if page.description[active_lang_extended].longDescription != nil %}
                   {{ page.description[active_lang_extended].longDescription }}
                 {% elsif page.description.eng.longDescription != nil  %}

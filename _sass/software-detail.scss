@@ -20,8 +20,7 @@
       }
       h3 {
         font-weight: 300;
-        font-family: serif;
-        color: gray;
+        font-size: 1.5rem;
       }
       .tag {
         margin: 2em 0 3em;
@@ -34,6 +33,9 @@
         a {
           @extend .d-block;
         }
+      }
+      &__variant {
+        letter-spacing: -0.6px;
       }
     }
     @include media-breakpoint-down(sm) {
@@ -463,6 +465,9 @@ hr {
       @include media-breakpoint-down(md) {
         border-top: 1px solid #dee2e6;
         padding-top: 2em;
+      }
+      &__text {
+        color: #455B71;
       }
     }
     @include media-breakpoint-down(md) {

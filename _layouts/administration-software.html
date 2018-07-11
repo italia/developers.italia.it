@@ -441,7 +441,7 @@ layout: default-pa
                   {{ page.description[active_lang_extended].genericName}}
                 {% elsif page.description.eng.genericName != nil %}
                   {{ page.description.eng.genericName }}
-                {% elsif page.description.eng.genericName == nill %}
+                {% elsif page.description.eng.genericName == nil%}
                   {{ description['genericName'] }}
                 {% endif %}
               </h2>
@@ -543,11 +543,11 @@ layout: default-pa
                             - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nill %}
+                      {% elsif dependence.version == nil%}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nill %}
+                          {% elsif dependence.versionMax == nil%}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}
@@ -570,11 +570,11 @@ layout: default-pa
                             - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nill %}
+                      {% elsif dependence.version == nil%}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nill %}
+                          {% elsif dependence.versionMax == nil%}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}
@@ -597,11 +597,11 @@ layout: default-pa
                             - {{ dependence.versionMax}}
                           {% endif %}
                         {% endif %}
-                      {% elsif dependence.version == nill %}
+                      {% elsif dependence.version == nil%}
                         {% if dependence.versionMin != nil %}
                           {% if dependence.versionMax != nil %}
                             {{ dependence.versionMin}} - {{ dependence.versionMax}}
-                          {% elsif dependence.versionMax == nill %}
+                          {% elsif dependence.versionMax == nil%}
                             > {{ dependence.versionMin}}
                           {% endif %}
                         {% else %}

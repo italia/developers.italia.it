@@ -59,6 +59,13 @@
     }
   });
 
+  $('#moreTags').on('click', function(e) {
+    e.preventDefault();
+    $('.home-software-tags__list').children().removeClass('deactive');
+    $(this).hide();
+  })
+
+  {% if page.vitalityDataChart != nil %}
   if (document.getElementById("vitalityChart")) {
     var ctx = document.getElementById("vitalityChart").getContext("2d");
     ctx.canvas.width = 230;
@@ -114,6 +121,7 @@
       }
     });
   }
+  {% endif %}
 
   $(document).ready(function(){
     var owl = $('.owl-carousel');
