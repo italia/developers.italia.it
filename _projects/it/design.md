@@ -35,7 +35,7 @@ Per restare aggiornati sull'evoluzione dei progetti consigliamo di seguire la [r
 
 ### Lo UI Kit
 La community dei designers svilupperà un UI Kit basato su Sketch e costruito in maniera aperta e collaborativa su github.
-La è utile anche per mappare i componenti che a tendere confluiranno nei vari kit che seguono. L'allineamento di Ui Kit e web toolkit è previsto entro fine 2017.
+La è utile anche per mappare i componenti che a tendere confluiranno nei vari kit che seguono.
 
 Repo
  [https://github.com/italia/design-ui-kit](https://github.com/italia/design-ui-kit)
@@ -64,7 +64,7 @@ Qui la descrizione completa delle [tecnologie utilizate](https://italia.github.i
 ## designers.italia.it
 Il sito [designers.italia.it](https://designers.italia.it/) è lo strumento a supporto della comunità italiana dei Designers.
 Il sito costituisce un importante complemento alle linee guida di design. In esso verranno progressivamente pubblicati blog-post, altri kit non basati sul software, dettagli sui progetti specifici, etc.
-Il sito è basato su (Jekyll)[https://github.com/jekyll/jekyll] ed è basato su [questo repository](https://github.com/italia/designers.italia.it), ovviamente pubblico.
+Il sito è basato su [Jekyll](https://github.com/jekyll/jekyll) ed è basato su [questo repository](https://github.com/italia/designers.italia.it), ovviamente pubblico.
 
 _Progetti in fase di avvio_
 
