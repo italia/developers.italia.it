@@ -155,7 +155,7 @@
   tagsRelate:
   - security
   - sports
-  url: https://github.com/gith002/steno.git
+  repoUrl: https://github.com/gith002/steno.git
   usedBy:
   - Comune di Modena
   - Comune di Cesano Maderno
@@ -391,7 +391,7 @@
   tagsRelate:
   - security
   - sports
-  url: https://github.com/gith002/steno.git
+  repoUrl: https://github.com/gith002/steno.git
   usedBy:
   - Comune di Modena
   - Comune di Cesano Maderno
@@ -651,7 +651,7 @@
   tagsRelate:
   - calendar
   - chat
-  url: https://github.com/gith002/euriale.git
+  repoUrl: https://github.com/gith002/euriale.git
   usedBy:
   - Comune di Meda
   - Comune di Bovisio Masciago
@@ -887,7 +887,7 @@
   tagsRelate:
   - robotics
   - security
-  url: https://github.com/gith002/medusa.git
+  repoUrl: https://github.com/gith002/medusa.git
   usedBy:
   - Comune di Milano
   - Comune di Cagliari
@@ -1139,7 +1139,7 @@
   - robotics
   - security
   - sports
-  url: https://github.com/gith003/publiccode-org3.git
+  repoUrl: https://github.com/gith003/publiccode-org3.git
   usedBy:
   - Comune di Bagnacavallo
   - Comune di Roma
