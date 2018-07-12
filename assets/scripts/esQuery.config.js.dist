@@ -8,7 +8,8 @@ var paramKeys = [
   'categoryName',
   'type',
   'sort',
-  'it-riuso-codiceIPA' 
+  'it-riuso-codiceIPA',
+  'it-riuso-codiceIPA-label'
 ];
 
 // page query config.

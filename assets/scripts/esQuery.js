@@ -29,6 +29,12 @@ $(document).ready(function () {
 
   });
 
+  // When close modal window search, clean input text.
+  $('#searchModal .modal-header button').on('click', function(event){
+    $('#searchModal .modal-body form .autocomplete input').val('');
+    $('#suggestions').text('').addClass('d-none');
+  });
+
   // listener on search form submit.
   $('#searchModal form').on('submit', function(event){
     // prevent form submit.
@@ -43,7 +49,6 @@ $(document).ready(function () {
   if(typeof pageId != 'undefined') {
     // ############# SEARCH ####################
     var params = getParams();
-    var searchObject = {};
     var queryType = pageId;
     if (pageId == 'search') {
       queryType = (params['type'].length == 0) ? 'all' : params['type'].slice(0).pop();
