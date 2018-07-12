@@ -129,7 +129,7 @@ layout: default
           </div>
         {% endif %}
           <div class="goto code">
-            <p><a href=" {% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
+            <p><a href=" {{ page.repoUrl }} "> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
           </div>
         {% if page.roadmap != nil %}
         <div class="goto road">
