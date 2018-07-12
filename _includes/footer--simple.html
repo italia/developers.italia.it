@@ -1,7 +1,7 @@
 <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
 
     <div class="container">
-      <div class="row">
+      <div class="row d-none d-md-flex">
         <div class="col-md-4">
 
         </div>
@@ -12,8 +12,8 @@
 
         </div>
       </div>
-      <div class="row">
-      <div class="footer-team d-flex align-items-center col-md-4 ">
+      <div class="row mt-4 mt-md-0">
+      <div class="footer-team d-flex align-items-center col-md-4 py-2 px-3 p-md-0">
           <div class="">
             <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
             <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
@@ -22,14 +22,15 @@
               {{ site.partner_full | upcase }}
           </div>
       </div>
-      <div class="footer-collaboration d-flex col-md-4">
+      <div class="footer-collaboration col-md-4 py-2 px-3 p-md-0">
+          <p class="d-block d-md-none mt-2 footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
           <div >
             <img class="" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
           </div>
       </div>
-      <div class="footer-social col-md-4 text-md-right">
-          <span class="text-white small mr-3">{{ t.follow_us | capitalize }}</span>
-          <ul class="d-inline-block footer-social-icons list-inline mt-0 mt-md-3">
+      <div class="footer-social col-md-4 text-right">
+          <span class="text-white small mr-3 ">{{ t.follow_us | capitalize }}</span>
+          <ul class="d-inline-block footer-social-icons list-inline mt-2 mt-md-3">
               {% for social in site.data.social %}
                 <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}" class="text-white"><span class="it-{{ social[0] }}"></span>
                   <span class="sr-only">{{ social[1].name | capitalize }}</span></a></li>
