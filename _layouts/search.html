@@ -56,12 +56,6 @@ layout: default
              <span> {{ t.software.reuse_software | capitalize }} </span>
             </label>
           </div> 
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="api">
-             <span> API </span>
-            </label>
-          </div>          
         </div>
       </div>
       <div class="arguments">
@@ -114,7 +108,8 @@ layout: default
               <p>{{ t.software.sort_by }}</p>
               <div class="form-group">
                 <select class="form-control">
-                  <option value="az" class="active">A/Z</option>>
+                  <option value="relevance" class="active">Relevance</option>>
+                  <option value="az">A/Z</option>>
                   <option value="za">Z/A</option>>
                 </select>
               </div>
@@ -185,14 +180,8 @@ layout: default
                 <input class="form-check-input" type="checkbox" value="reuse_software">
                <span> {{ t.software.reuse_software | capitalize }} </span>
               </label>
-            </div> 
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="api">
-               <span> API </span>
-              </label>
-            </div> 
-           </div>
+            </div>
+          </div> 
            <div class="tab-pane fade" id="pills-development_status" role="tabpanel" aria-labelledby="pills-development_status-tab">
             {% for item in site.data.development_status %}
             <div class="form-check">
@@ -215,7 +204,8 @@ layout: default
           <h5 class="modal-title" id="exampleModalLabel">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" sort="az">A/Z <i class="it-check"></i></a>
+          <a href="" sort="relevance">Relevance <i class="it-check"></i></a>
+          <a href="" sort="az">A/Z</a>
           <a href="" sort="za">Z/A</a>
         </div>
       </div>
