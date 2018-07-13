@@ -19,8 +19,10 @@ it:
     active_by_firstlevel: 'come-partecipo'
   - title: News
     url: news
+    active_by_firstlevel: 'news'
   - title: Contatti
-    url: '#'
+    url: '/it/contatti'
+    active_by_firstlevel: 'contatti'
 
 en:
   - title: Platforms
