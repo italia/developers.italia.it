@@ -14,6 +14,32 @@ highlight: true
 comingsoon: false
 layout: project
 github_team: anpr
+newsletterdata:
+    text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."
+    placeholdertext: mario.rossi@dev.software.it
+    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
+    inputs:
+        - 
+          type: hidden
+          name: group
+          value: 16
+        - 
+          type: hidden
+          name: list
+          value: 3
+    selects:
+        -
+          name: campo3
+          options:
+            - 
+              value: Cittadino
+              valueid: Cittadino
+            - 
+              value: Comune
+              valueid: Comune
+            - 
+              value: Software House
+              valueid: SW_House
 abilitante: true
 owners:
     - mininterno
@@ -76,47 +102,7 @@ Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai soft
 ## Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
 
-[Documentazione tecnica e tabelle di riferimento](https://anpr.readthedocs.io)
 
-
-
-## Collaborazione
-Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità.
-
- <a name="newsletter"></a>
-
-{::nomarkdown}
-
-<form class="border border-light lightgrey-bg-c1 p-2 p-md-3 mt-2 mb-2">
-  <div class="form-group">
-    <span class="d-block small font-weight-bold">Email *</span>
-    <input type="email" class="form-control" id="email" placeholder="Inserisci la tua e-mail" required>
-    <label for="email" class="sr-only">Email *</label>
-  </div>
-  <div class="form-group">
-    <span class="d-block small font-weight-bold">Gruppo *</span>
-    <select id="campo3" name="campo3" required>
-      <option disabled selected></option>
-      <option value=""></option>
-			<option value="Comune">Comune</option>
-			<option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
-    </select>
-    <label for="campo3" class="sr-only">Gruppo</label>
-  </div>
-  <div class="form-check pl-0">
-    <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
-    <label class="d-block " for="privacy">Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a></label>
-  </div>
-  <p class="small" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
-  <button type="submit" class="btn btn-primary">Iscriviti</button>
-  <input type="hidden" name="group" value="16" >
-	<input type="hidden" name="list" value="3">
-
-</form>
-
-
-
-{:/}
 
 
 
