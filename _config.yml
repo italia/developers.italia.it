@@ -48,7 +48,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-toc
   - jekyll-sitemap
-#  - searchyll
+  - searchyll
 exclude:
   - vendor
   - README.md
@@ -156,4 +156,5 @@ elasticsearch:
   number_of_shards: 5
   number_of_replicas: 1
   index_name: "jekyll"
+  alias_name: "publiccode"
   default_type: "post"
