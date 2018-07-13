@@ -11,6 +11,7 @@ services:
       - JEKYLL_NO_GITHUB=true
       - JEKYLL_ENV=dev
       - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+      - ELASTICSEARCH_URL=https://example.com
     networks:
       - web
 
