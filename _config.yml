@@ -151,9 +151,9 @@ sass:
       - assets
     sass_dir: /
 
-#elasticsearch:
-#  url: "http://elastic:elastic@elasticsearch:9200/"
-#  number_of_shards: 5
-#  number_of_replicas: 1
-#  index_name: "jekyll"
-#  default_type: "post"
+elasticsearch:
+  url: ENV_ELASTICSEARCH_URL
+  number_of_shards: 5
+  number_of_replicas: 1
+  index_name: "jekyll"
+  default_type: "post"
