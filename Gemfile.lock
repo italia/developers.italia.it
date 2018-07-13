@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/wellnet/searchyll.git
-  revision: 5ea391ffdbe15b75f9fae2b605789a93d94d5e68
+  revision: d8e78ee30e4687e844ea190ec26c177362c438f6
   specs:
     searchyll (0.10.0)
       elasticsearch-ruby
