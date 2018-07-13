@@ -46,7 +46,7 @@ layout: default
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-              <span>{% if tag[active_lang] != nil %}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+              <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
             </label>
           </div>
           {% endfor %} 
@@ -58,7 +58,7 @@ layout: default
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                <span>{% if tag[active_lang] != nil%}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+                <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
               </label>
             </div>
             {% endfor %} 
@@ -115,7 +115,7 @@ layout: default
              <div class="form-check">
                <label class="form-check-label">
                  <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                 <span>{% if tag[active_lang] != nil %}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+                 <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
                </label>
              </div>
              {% endfor %} 
