@@ -164,15 +164,19 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function() {
   }
 
   // adds it-riuso-codiceIPA filter if present.
-  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
-  if (typeof codiceIPA != 'undefined') {
-    queryString.push('it-riuso-codiceIPA=' + codiceIPA);
+  if (this.params['it-riuso-codiceIPA']) {
+    var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+    if (typeof codiceIPA != 'undefined') {
+      queryString.push('it-riuso-codiceIPA=' + codiceIPA);
+    }
   }
 
   // adds it-riuso-codiceIPA filter if present.
-  var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
-  if (typeof codiceIPALabel != 'undefined') {
-    queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
+  if (this.params['it-riuso-codiceIPA-label']) {
+    var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
+    if (typeof codiceIPALabel != 'undefined') {
+      queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
+    }
   }
 
   // query type filter.
@@ -1196,14 +1200,16 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
 };
 
 esDevelopersItaliaPaQuery.prototype.renderIntro  = function(tot) {
-  var itRiusoCodiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
   var $intro = $('.intro > h1');
 
-  if (typeof itRiusoCodiceIPALabel != 'undefined') {
-    $intro.text('');
-    $intro.html(decodeURI(itRiusoCodiceIPALabel));
+  if (this.params['it-riuso-codiceIPA-label']) {
+    var itRiusoCodiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
+    if (typeof itRiusoCodiceIPALabel != 'undefined') {
+      $intro.text('');
+      $intro.html(decodeURI(itRiusoCodiceIPALabel));
+    }
   }
-}
+};
 
 /**
  * Category query.
