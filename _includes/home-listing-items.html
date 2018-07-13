@@ -22,29 +22,35 @@
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
             <h1>{{title}}</h1>
-            {% if captiontitle!=nill %}
+            {% if captiontitle!=nil%}
             <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
             {% endif %}
         </div>
         <div class="row row-eq-height">
             {% for item in items limit: limititems %}
-                <div class="col">
-                    <article class="d-flex flex-column align-items-start h-100 {% if withimages!=true %}withshadow{%endif%}" >
+                <div class="col-sm ">
+                    <article class="d-flex flex-column align-items-start h-sm-100 px-3 mb-4 mb-sm-0 {% if withimages!=true %}withshadow{%endif%} " >
                         {% if withimages==true %}
+                        <a title="{{item.name | default:item.title}}" href="{{item.url}}">
                         <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
+                        </a>
                         {% endif %}
-                        <h1 class="home-listing-item__title ">{{item.name | default:item.title}}</h1>
+                        <h1 class="home-listing-item__title ">
+                            <a title="{{item.name | default:item.title}}" href="{{item.url}}" class="color-inherit">{{item.name | default:item.title}}</a>
+                        </h1>
                         {% if itemdescription %}
                             <p>{{item[itemdescription]}}</p>
                         {% endif %}
-                        <a class="home-listing-item__url mt-auto" href="{{item.url}}">{{t.software.read_more}} &rarr;</a>
+                        <a title="{{item.name | default:item.title}}" class="home-listing-item__url mt-sm-auto" href="{{item.url}}">{{t.software.read_more}} &rarr;</a>
                     </article>
                 </div>
             {% endfor %}
         </div>
+        {% if include.viewalltitle %}
         <div class="row pb-3 mt-3 mb-3 mt-md-5">
-            <a class="btn btn-primary mx-auto" href="#">Vedi tutto</a>
+            <a class="btn btn-primary mx-auto" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
         </div>
+        {% endif %}
 
     </div>
 

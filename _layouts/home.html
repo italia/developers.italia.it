@@ -3,25 +3,27 @@ layout: default
 ---
 
 {% include setlang.html %}
+{% assign news = site.posts | where: 'lang',active_lang | sort: 'date' | reverse | first %}
+
 
 <section class="homelayout__first">
   <div class="container">
   <div class="row d-flex align-items-stretch ">
-    <article class="col-md-6 homelayout__first__sx d-flex  align-items-center pr-md-3">
+    <article class="col-md-6 homelayout__first__sx d-flex  align-items-center px-3 pl-md-0 pr-md-3">
       <div class="d-block homelayout__first__hero pr-md-5">
        <h1>{{ t.home_hero }}</h1>
        <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
       </div>
     </article>
-    <article class="col-md-6 homelayout__first__dx d-flex align-items-center pl-md-3" >
+    <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-3 pr-md-0 pl-md-3" >
         <div class="d-block pl-md-5" >
           <div class="homelayout__first__latnews">
             <h2>{{t.home_news_title}}</h2>
-            <h1>Titolo dell'ultima news pubblicata. Lorem ipsum sic</h1>
-            <a href="#">{{t.software.read_more}} &rarr;</a>
+            <h1>{{news.title}}</h1>
+            <a href="{{news.url}}" title="{{news.title}}">{{t.software.read_more}} &rarr;</a>
           </div>
           <div class="homelayout__first__newsletter mt-2 mt-md-5">
-              <h2>Newsletter</h2>
+              <h2 class="mt-5 mt-md-3" >Newsletter</h2>
               <form action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
 
                 <div class="form-row align-items-center">
@@ -47,11 +49,11 @@ layout: default
   </div>
 
 </section>
-{% include banner-joinus.html extraclass="pt-2 pt-md-5 " %}
+{% include banner-joinus.html extraclass="pt-2 pt-md-5 pb-2 pb-md-0" %}
 
-{% include home-listing-items.html source='type:projects' limit=4 title='Piattaforme' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' %}
+{% include home-listing-items.html source='type:projects' limit=4 title='Piattaforme' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' viewalltitle='Vedi tutto' viewallurl='/it/piattaforme/' %}
 
-{% include home-listing-items.html source='data:apis' title='Software open source' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' %}
+{% include home-listing-items.html source='data:apis' title='Software open source' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' viewalltitle='Vedi tutto' viewallurl='/it/api/' %}
 
 <hr class="grayline"/>
 
@@ -74,38 +76,18 @@ layout: default
           <a href="#" class="ml-auto more">Come lo uso &rarr;</a>
       </div>
       <div class="row row-eq-height">
-          <div class="col">
-              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
+        {% for tool in site.data.tools[active_lang] %}
+          <div class="col-sm my-3 my-md-0 px-3">
+              <a  target="_blank" href="{{tool.url}}" class="decoration-none" title="{{tool.url}}">
+              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4 " >
                 <figure class="d-flex w-100 align-items-center">
-                <img src="{{ '/assets/images/home-logo-forum.png' | relative_url}}">
+                <img src="{{ tool.img | relative_url}}">
                 </figure>
-                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
+                <p class="decoration-none">{{tool.subtitle}}</p>
               </article>
+              </a>
           </div>
-          <div class="col">
-              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
-                <figure class="d-flex w-100 align-items-center">
-                <img src="{{ '/assets/images/home-logo-github.png' | relative_url}}">
-                </figure>
-                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
-              </article>
-          </div>
-          <div class="col">
-              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
-                <figure class="d-flex w-100 align-items-center">
-                <img src="{{ '/assets/images/home-logo-docs.png' | relative_url}}">
-                </figure>
-                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
-              </article>
-          </div>
-          <div class="col">
-              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4" >
-                <figure class="d-flex w-100 align-items-center">
-                <img src="{{ '/assets/images/home-logo-slack.png' | relative_url}}">
-                </figure>
-                <p>Descrizione breve, lorem ipsum dolor sit amet, consect aliqua adipisici sed eiusmod.</p>
-              </article>
-          </div>
+         {% endfor %}
       </div>
   </div>
 </section>

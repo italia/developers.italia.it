@@ -56,12 +56,6 @@ layout: default
              <span> {{ t.software.reuse_software | capitalize }} </span>
             </label>
           </div> 
-          <div class="form-check">
-            <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="api">
-             <span> API </span>
-            </label>
-          </div>          
         </div>
       </div>
       <div class="arguments">
@@ -71,7 +65,7 @@ layout: default
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-              <span>{% if tag[active_lang] != nil %}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+              <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
             </label>
           </div>
           {% endfor %} 
@@ -83,7 +77,7 @@ layout: default
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                <span>{% if tag[active_lang] != nill %}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+                <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
               </label>
             </div>
             {% endfor %} 
@@ -97,7 +91,7 @@ layout: default
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ item |first }}">
-             <span>{% if item[1][active_lang] != nill %}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
+             <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
             </label>
           </div>
           {% endfor %}          
@@ -108,18 +102,15 @@ layout: default
       <div class="intro">
         <h1>{{ page.title }}</h1>
         <div class="abstract-sorting row d-none d-md-block">
-          <div class="results-number col-md-6">
-
-          </div>
+          <div class="results-number col-md-6"></div>
           <div class="sortingBy col-md-6">
             <form class="d-flex justify-content-end">
               <p>{{ t.software.sort_by }}</p>
               <div class="form-group">
                 <select class="form-control">
-                  <option class="active">Popolarità <i class="it-check"></i></option>>
-                  <option>Emergenti</option>>
-                  <option>A/Z</option>>
-                  <option>Z/A</option>>
+                  <option value="relevance" class="active">Relevance</option>>
+                  <option value="az">A/Z</option>>
+                  <option value="za">Z/A</option>>
                 </select>
               </div>
             </form>
@@ -166,7 +157,7 @@ layout: default
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                <span>{% if tag[active_lang] != nil %}{{ tag[active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+                <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
               </label>
             </div>
             {% endfor %} 
@@ -180,29 +171,23 @@ layout: default
             </div> 
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ t.software.software_open }}">
+                <input class="form-check-input" type="checkbox" value="software_open">
                <span> {{ t.software.software_open | capitalize }} </span>
               </label>
             </div> 
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ t.software.reuse_software }}">
+                <input class="form-check-input" type="checkbox" value="reuse_software">
                <span> {{ t.software.reuse_software | capitalize }} </span>
               </label>
-            </div> 
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="api">
-               <span> API </span>
-              </label>
-            </div> 
-           </div>
+            </div>
+          </div> 
            <div class="tab-pane fade" id="pills-development_status" role="tabpanel" aria-labelledby="pills-development_status-tab">
             {% for item in site.data.development_status %}
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" value="{{ item |first }}">
-               <span>{% if item[1][active_lang] != nill %}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
+               <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
               </label>
             </div>
             {% endfor %}  
@@ -219,10 +204,9 @@ layout: default
           <h5 class="modal-title" id="exampleModalLabel">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" class="active">Popolarità <i class="it-check"></i></a>
-          <a href="">Emergenti</a>
-          <a href="">A/Z</a>
-          <a href="">Z/A</a>
+          <a href="" sort="relevance">Relevance <i class="it-check"></i></a>
+          <a href="" sort="az">A/Z</a>
+          <a href="" sort="za">Z/A</a>
         </div>
       </div>
     </div>

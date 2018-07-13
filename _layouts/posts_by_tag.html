@@ -15,15 +15,15 @@ lang: it
 
 
 <div >
-  <section class="postlisting position-relative">
+  <section class="postslisting postslisting--by-tag position-relative">
   <div class="postslisting__headerbkg "></div>
   <div class="postslisting__header ">
     
     <div class="container pt-4 d-flex w-100">
       <h1 >{{ t.news_title }}</h1>
-      <div class="postslisting__filtertag ml-auto d-flex">
-        <a href="#" class="align-self-center d-flex" data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
-        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4">{{ page.tag }} <span class="icon it-close"></span></a>
+      <div class="postslisting__filtertag ml-auto d-flex flex-column flex-md-row">
+        <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
+        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">{{ page.tag }} <span class="icon it-close"></span></a>
       </div>
     </div>
     <div class="container postslisting__tags deactive" data-activatedby="filterTags">
@@ -37,31 +37,10 @@ lang: it
 
     </div>
   </div>
-  <div class="postslisting__content my-2 my-md-4">
-    <div class="container postlisting__sticky my-2 ">
-      <div class="row row-eq-height">
-        {% for post in page.posts limit:2 %}
-          <div class="col-md-6 mb-4 {%if forloop.first%}pr-md-3{%endif%} {%if forloop.last%}pl-md-3{%endif%}">
-          {% include card.html
-            date=post.date
-            cta=post.cta
-            author=post.author
-            title=post.title
-            link=post.url
-            text=post.subtitle
-            hasImage=false
-            categories=post.tags
-            hasMore=false
-            flat=false
-            classes='h-100 d-flex align-items-start flex-column'
-            %}
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+  <div class="postslisting__content my-2 my-md-4 py-2">
     <div class="container my-3 my-md-5">
-        <div class="row row-eq-height">
-        {% for post in page.posts offset:2 %}
+        <div class="row row-eq-height px-2 px-md-0">
+        {% for post in page.posts  %}
             {% assign division_by_3 = forloop.index | modulo:3 %}
 
             <div class="col-md-4">

@@ -40,10 +40,12 @@ layout: default
           <article class="d-flex flex-column align-items-start h-100 mb-md-2">
               {% if hasImage %}
               <figure>
-              <img class="w-100" src="{{api.contact.logo | relative_url}}">
+                <a title="{{api.name}}" href="{{url}}">
+                  <img class="w-100" src="{{api.contact.logo | relative_url}}">
+                </a>
               </figure>
               {% endif %}
-              <h1 class="apilist__listing__title">{{api.name}}
+              <h1 class="apilist__listing__title"><a title="{{api.name}}" class="color-inherit decoration-none" href="{{url}}">{{api.name}}</a>
                   {% if api.comingsoon %}<span class="badge badge-pill badge-secondary apilist__listing__soon">{{ t.coming_soon }}</span>{%endif%}
               </h1>
               {% if api.comingsoon != true %}

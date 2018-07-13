@@ -20,13 +20,14 @@
 <script src="{{ '/assets/scripts/elasticsearch.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/throbber.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/handlebars.runtime.js' | relative_url }}"></script>
-<script src="{{ '/assets/templates/software.tpl.js' | relative_url }}"></script>
+<script src="{{ '/assets/templates/search.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/templates/tot.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/templates/suggestion.tpl.js' | relative_url }}"></script>
 <script src="{{ '/assets/templates/pager.tpl.js' | relative_url }}"></script>
-<script src="{{ '/assets/scripts/esDevelopersItaliaQuery.js' | relative_url }}"></script>
+<script src="{{ '/assets/templates/message.tpl.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/esDevelopersItaliaQuery.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/esQuery.config.js' | relative_url }}"></script>
-<script src="{{ '/assets/scripts/esQuery.js' | relative_url }}"></script>
+<script src="{{ '/assets/scripts/esQuery.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/perfect-scrollbar.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/photoswipe.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/scripts/photoswipe-ui-default.min.js' | relative_url }}"></script>
@@ -58,19 +59,29 @@
     }
   });
 
+  $('#moreTags').on('click', function(e) {
+    e.preventDefault();
+    $('.home-software-tags__list').children().removeClass('deactive');
+    $(this).hide();
+  })
+
   {% if page.vitalityDataChart != nil %}
+  if (document.getElementById("vitalityChart")) {
     var ctx = document.getElementById("vitalityChart").getContext("2d");
+    ctx.canvas.width = 230;
+    ctx.canvas.height = 38;
     var myLineChart = new Chart(ctx, {
+      responsive: false,
       type: 'line',
       data: {
-        labels: ['j', 'f', 'm', 'a', 'm', 'j', 'j', 'a', 's', 'o', 'n', 'd'],
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59'],
         datasets: [{
           fill: false,
           lineTension: 0.1,
-          data: {{ page.vitalityDataChart | jsonify }},
+          data: {{page.vitalityDataChart | reverse | jsonify}},
           borderWidth: 2,
           borderColor: '#06c'
-        }]
+          }]
       },
       options: {
         scales: {
@@ -82,16 +93,18 @@
             display: false,
             stacked: true,
             ticks: {
-              beginAtZero:true
+              beginAtZero: true
             }
           }]
         },
         legend: {
-          display: false,
+          display: false
         },
         elements: {
           point: {
-            radius: 0
+            radius: 0,
+            hoverRadius: 0,
+            hoverBorderWidth: 0
           }
         },
         layout: {
@@ -101,8 +114,13 @@
             top: 5,
             bottom: 5
           }
+        },
+        tooltips: {
+          enabled: false
         }
+      }
     });
+  }
   {% endif %}
 
   $(document).ready(function(){

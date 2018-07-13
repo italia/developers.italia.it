@@ -6,7 +6,10 @@ var paramKeys = [
   'mainCopyrightOwner',
   'categoryCode',
   'categoryName',
-  'type'
+  'type',
+  'sort',
+  'it-riuso-codiceIPA',
+  'it-riuso-codiceIPA-label'
 ];
 
 // page query config.
@@ -14,42 +17,42 @@ var pagesQueryconfig = {
   'software_open': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
   'reuse_software': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
-  'pa': {
+  'administrations': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
   'category': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
   'all': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
   'platforms': {
     'type': ['post'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   },
   'api': {
     'type': ['post'],
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
   }
 };
@@ -57,45 +60,44 @@ var pagesQueryconfig = {
 var autocompleteQueryconfig = {
   'all': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'platforms': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'software_open': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'reuse_software': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'api': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'administrations': {
     'elasticsearch_connection': {
-      'host': 'https://search-seoai-hodsstqw4oq35xlixnj4qd55nu.eu-west-1.es.amazonaws.com'
+      'host': 'https://xxx.yyy.www.zzz'
     },
     'inputSelector': 'form .autocomplete input',
-    'size': 9,
-    'index': 'suggestions',
+    'size': 9
   },
 }

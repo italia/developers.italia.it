@@ -20,11 +20,11 @@ layout: default
 <div class="container page-softwares-list">
  <div class="intro">
     <h1>{{ page.title }}</h1>
-    <p class="subtitle">{{ page.subtitle }}</p>
+    <p class="subtitle font-serif color-content my-2 my-md-4">{{ page.subtitle }}</p>
   </div>      
   <div class="container list-item-sorting">
     {% for software in site.data.softwares limit: 6 %}
-      {% if software.it.riuso.codiceIPA == nill %}
+      {% if software.it.riuso.codiceIPA == nil %}
         {% if foorloop.lenght != 0 %}
           <div class="software_macro_category_title row">
             <div class="col-md-7">
@@ -40,7 +40,7 @@ layout: default
     
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
-      {% if software.it.riuso.codiceIPA == nill %}
+      {% if software.it.riuso.codiceIPA == nil %}
       <div class="col-sm col-md-4 item">
         <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
         </div>
@@ -57,7 +57,7 @@ layout: default
     {% endfor %} 
     </div>
     {% for software in site.data.softwares limit: 6 %}
-      {% if software.it.riuso.codiceIPA == nill %}
+      {% if software.it.riuso.codiceIPA == nil %}
         {% if foorloop.lenght != 0 %}
          {% include internal-link.html target="software_open" %} 
         {% endif %}
@@ -75,7 +75,7 @@ layout: default
     </div>
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
-      {% if software.it.riuso.codiceIPA != nill %}
+      {% if software.it.riuso.codiceIPA != nil %}
       <div class="col-sm col-md-4 item">
         <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
         </div>

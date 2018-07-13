@@ -3,7 +3,7 @@ title: Chi siamo
 lang: it
 layout: credits
 subtitle: 
-image: 'http://placehold.it/1400x500'
+image: /assets/images/chisiamo-temp-img.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quam arcu, pharetra sit amet sollicitudin vitae, mattis ac leo. Quisque eu arcu sed dui sagittis tristique eu porttitor lectus. Donec dignissim nisl turpis, ut eleifend diam porta et. Curabitur sagittis fringilla nisl varius malesuada. Vivamus dapibus consectetur urna id faucibus. Donec ac magna at turpis consectetur pellentesque ut in nibh. Aliquam convallis elementum suscipit. Nullam egestas dictum metus ut aliquet. Fusce laoreet hendrerit massa. Proin gravida neque ut neque blandit blandit. Curabitur posuere vehicula nibh, nec ultricies dolor eleifend non. Ut pulvinar purus ante, in interdum sapien auctor id. Maecenas elementum dictum facilisis.
@@ -15,4 +15,4 @@ Etiam pharetra, orci ut venenatis accumsan, nulla mi euismod dui, et tincidunt t
 
 
 
-[Come lo uso](http://google.it){: .btn .btn-primary .font-base .pl-5 .pr-5}  [Come partecipo](http://google.it){: .btn .btn-outline-primary .font-base .pl-5 .pr-5}
+[Come lo uso](http://google.it){: .btn .btn-primary .font-base .px-5 .my-2 .mr-md-3 .w-100 .d-md-inline}  [Come partecipo](http://google.it){: .btn .btn-outline-primary .font-base .px-5 .my-2 .w-100 .d-md-inline}
