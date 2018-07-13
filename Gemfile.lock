@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/wellnet/searchyll.git
-  revision: b38658c12079220c2a819108d4bfb4f70b845140
+  revision: 660095cf1560f25b803503940c047063408b2042
   specs:
     searchyll (0.10.0)
       elasticsearch-ruby
@@ -66,8 +66,7 @@ GEM
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
-      jekyll (~> 3.0)
-    jekyll-redirect-from (0.13.0)
+    jekyll-redirect-from (0.14.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -100,7 +99,7 @@ GEM
     netrc (0.11.0)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
-    nuggets (1.5.0)
+    nuggets (1.6.0)
     parallel (1.12.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
