@@ -12,13 +12,34 @@
                 <input type="{{input.type}}" name="{{input.name}}" value="{{input.value}}">
             {% endfor %}
             <div class="py-1 py-md-2">
-            <div class="form-group mw-md-50 mb-2 mb-md-4">
-                <i class="ico-prefix it-mail"></i>
-                <input required type="email" name="email" id="email" class="form-control" placeholder="{{newsletterdata.placeholdertext}}" >
+                <div class="form-group mw-md-50 mb-2 mb-md-4">
+                    <i class="ico-prefix it-mail"></i>
+                    <input required type="email" name="email" id="email" class="form-control" placeholder="{{newsletterdata.placeholdertext}}" >
+                </div>
+                <div class="row mw-md-50">
+                    {% if newsletterdata.selects %}
+                    <div class="col-md ">
+                        {% for select in newsletterdata.selects %}
+                        <div class="banner-newsletter__select">
+                        <select id="{{select.name}}" name="{{select.name}}" required >
+                            <option disabled="" selected=""></option>
+                            <option value=""></option>
+                            {% for option in select.options %}
+                                <option value="{{option.valueid}}">{{option.value}}</option>
+                            {% endfor %}
+                        </select>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <div class="col-md">
+                            <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
+                            <label class="d-block " for="privacy">{{t.newsletter_privacy}}<a target="_blank" class="ml-1" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a></label>
+                    </div>
+                </div>
+            
             </div>
-            <input type="checkbox" class="form-check-input" id="privacy" name="privacy" required>
-            <label class="d-block " for="privacy">{{t.newsletter_privacy}}<a target="_blank" class="ml-1" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a></label>
-            </div>
+
             <div class="my-2 my-md-4">
                 <button type="submit" class="btn btn-primary btn-lg banner-newsletter__submit">{{t.newsletter_submit}}</button>
             </div>

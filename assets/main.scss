@@ -975,13 +975,13 @@ html, body {
         }
         &:before {
             position: absolute;
-            top: 6rem;
+            top: calc(100% - 17rem); // 17 = 20rem - (-margin parent / 2)
             left: -3rem;
             border-left: 3rem solid #D6DEE8;
             border-bottom: 3rem solid #D6DEE8;
             z-index: -1;
-            width: 50%;
-            height: calc(100% - 3rem);
+            width: 20rem;
+            height: 20rem;
             content: '';
             opacity: 0.5;
         }
@@ -1699,6 +1699,7 @@ html, body {
 }
 .banner-newsletter {
     background-color: #004D99;
+    overflow-y: hidden;
     
     color: #fff;
     padding: 2rem 0;
@@ -1729,6 +1730,19 @@ html, body {
     a {
         color: #65DDE0;
         borer-bottom: 1px solid currentColor;
+    }
+    &__select {
+        border: none;
+        border-radius: 0.2rem;
+        background-color: #fff;
+        display: inline-block;
+        padding: 0.25rem;
+
+        select {
+            border: none;
+            background-color: transparent !important;
+            color: $primary !important;
+        }
     }
     input {
         background-color: #fff;
