@@ -48,6 +48,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-toc
   - jekyll-sitemap
+#  - searchyll
 exclude:
   - vendor
   - README.md
@@ -149,3 +150,10 @@ sass:
       - node_modules
       - assets
     sass_dir: /
+
+elasticsearch:
+  url: ENV_ELASTICSEARCH_URL
+  number_of_shards: 5
+  number_of_replicas: 1
+  index_name: "jekyll"
+  default_type: "post"
