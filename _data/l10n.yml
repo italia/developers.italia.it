@@ -59,6 +59,8 @@ it:
     home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per argomento
+    newsletter_privacy: Accetto la 
+    newsletter_submit: Iscriviti
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -231,6 +233,8 @@ en:
     home_news_title: News
     home_news_expand: read more
     home_tags: Browse by tag
+    newsletter_privacy: Accetto la 
+    newsletter_submit: Iscriviti
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well_known tools to give you all information, source code and support that you need
