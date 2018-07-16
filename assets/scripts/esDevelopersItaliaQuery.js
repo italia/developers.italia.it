@@ -26,7 +26,7 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     },
     // css selector
     'pageContent': '.list-item-sorting > div',
-     
+
     // filterKeys
     'filterKeys': {
       'tags': 'list-tags',
@@ -58,7 +58,7 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
 esDevelopersItaliaManager.prototype.executeCurrentQuery = function(){
   var object = this;
   this.updateSearchUrl();
-  
+
   this.currentQueryObject().executeESQuery().then(
     function successSearchCallback(response){
       object.currentQueryObject().esSearchSuccessCallback.call(object.currentQueryObject(), response);
@@ -74,7 +74,7 @@ esDevelopersItaliaManager.prototype.executeCurrentQuery = function(){
 
 esDevelopersItaliaManager.prototype.pagerCallback = function(event) {
   event.preventDefault();
-  
+
   var page = event.delegateTarget.getAttribute('page');
 
   // Set correct page value.
@@ -99,7 +99,7 @@ esDevelopersItaliaManager.prototype.setCurrentLanguage = function() {
 
 esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function() {
   var object = this;
-  
+
   // Populate query type filter.
   var o = {'type': 'list-type'};
   for(var p in o) {
@@ -116,7 +116,7 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function() {
       $('#pills-types input[value="'+value[i]+'"]').prop('checked', true);
     }
   }
-  
+
   // Query filters.
   for(var p in this.config['filterKeys']) {
     var value = this.params[p];
@@ -164,19 +164,15 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function() {
   }
 
   // adds it-riuso-codiceIPA filter if present.
-  if (this.params['it-riuso-codiceIPA']) {
-    var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
-    if (typeof codiceIPA != 'undefined') {
-      queryString.push('it-riuso-codiceIPA=' + codiceIPA);
-    }
+  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  if (typeof codiceIPA != 'undefined') {
+    queryString.push('it-riuso-codiceIPA=' + codiceIPA);
   }
 
   // adds it-riuso-codiceIPA filter if present.
-  if (this.params['it-riuso-codiceIPA-label']) {
-    var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
-    if (typeof codiceIPALabel != 'undefined') {
-      queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
-    }
+  var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
+  if (typeof codiceIPALabel != 'undefined') {
+    queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
   }
 
   // query type filter.
@@ -207,7 +203,7 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function() {
 
 esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
   var object = this;
-  
+
   $('#list-type input[type="checkbox"]').on('change', function(event){
     if (event.target.checked) {
       $('#list-type input[type="checkbox"]:checked').each(function(i, e){
@@ -223,7 +219,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
           $($mobile[i]).prop('checked', false);
         }
         else {
-          $($mobile[i]).prop('checked', true);          
+          $($mobile[i]).prop('checked', true);
         }
       }
 
@@ -250,7 +246,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
     // Execute Current query.
     object.executeCurrentQuery();
   });
-  
+
   // TypeQuery Mobile only one selected.
   $('#pills-types input[type="checkbox"]').on('change', function(event){
     if (event.target.checked) {
@@ -288,7 +284,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
     object.executeCurrentQuery();
   });
 
-  
+
 
   $('#filters .modal-dialog .modal-header a.save').on('click', function(event){
 
@@ -345,7 +341,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
         object.config['sortMobileTitle'][object.language][$sortMobileActive.attr('sort')]
       );
       $sortMobileActive.removeClass('active');
-      
+
       $(event.target).html(object.config['sortMobileTitle'][object.language][$(event.target).attr('sort')] + ' <i class="it-check"></i>');
       $(event.target).addClass('active');
     }
@@ -366,7 +362,7 @@ esDevelopersItaliaManager.prototype.removeFiltersListeners = function() {
 };
 
 esDevelopersItaliaManager.prototype.clickOnFilterCallback = function(event) {
-  
+
   /**
    * NOTE: query type filter in handled on esQuery.js file (row 65).
    */
@@ -381,7 +377,7 @@ esDevelopersItaliaManager.prototype.clickOnFilterCallback = function(event) {
     });
     $('#' + this.config['filterKeysMobileSelectors'][event.data['p']] + ' input[value="'+event.target.value+'"]').prop('checked', false);
   }
-  
+
   // reset url page in params.
   this.params['page'].pop();
 
@@ -401,44 +397,44 @@ esDevelopersItaliaManager.prototype.currentQueryObject = function() {
 esDevelopersItaliaManager.prototype.createQueryObject = function(queryType) {
   var queryObject;
   var queryconfig = $.extend({}, this.objectConfig[queryType]);
-  
+
   // adds current language.
   queryconfig['language'] = this.language;
 
-    switch (queryType) {
-      case 'all':
-        queryObject = new esDevelopersItaliaQuery(queryconfig, this.params);
-        break;
-  
-      case 'platforms':
-        queryObject = new esDevelopersItaliaPlatformsQuery(queryconfig, this.params);
-        break;
+  switch (queryType) {
+    case 'all':
+      queryObject = new esDevelopersItaliaQuery(queryconfig, this.params);
+      break;
 
-      case 'software_open':
-        queryObject = new esDevelopersItaliaOpenSourceQuery(queryconfig, this.params);                
-        break;
+    case 'platforms':
+      queryObject = new esDevelopersItaliaPlatformsQuery(queryconfig, this.params);
+      break;
 
-      case 'reuse_software':
-        queryObject = new esDevelopersItaliaReuseQuery(queryconfig, this.params);        
-        break;
+    case 'software_open':
+      queryObject = new esDevelopersItaliaOpenSourceQuery(queryconfig, this.params);
+      break;
 
-      case 'api':
-        queryObject = new esDevelopersItaliaApiQuery(queryconfig, this.params);
-        break;
+    case 'reuse_software':
+      queryObject = new esDevelopersItaliaReuseQuery(queryconfig, this.params);
+      break;
 
-      case 'category':
-        queryObject = new esDevelopersItaliaCategoryQuery(queryconfig, this.params);
-        break;
+    case 'api':
+      queryObject = new esDevelopersItaliaApiQuery(queryconfig, this.params);
+      break;
 
-      case 'administrations':
-        queryObject = new esDevelopersItaliaPaQuery(queryconfig, this.params);
-        break;
+    case 'category':
+      queryObject = new esDevelopersItaliaCategoryQuery(queryconfig, this.params);
+      break;
 
-      default:
-        break;
-    }
+    case 'administrations':
+      queryObject = new esDevelopersItaliaPaQuery(queryconfig, this.params);
+      break;
 
-    return queryObject;
+    default:
+      break;
+  }
+
+  return queryObject;
 };
 
 /**
@@ -478,7 +474,7 @@ function esDevelopersItaliaQuery(config, params) {
     },
     // css selector
     'pageContent': '.list-item-sorting > div',
-     
+
     // filterKeys
     'filterKeys': {
       'tags': 'list-tags',
@@ -486,49 +482,49 @@ function esDevelopersItaliaQuery(config, params) {
     },
     'category': {
       'it': {
-        'missing': { 
+        'missing': {
           'label': 'Tipologia Software',
           'id': 'missing'
         },
-        'administrations': { 
+        'administrations': {
           'label': 'Amministrazione',
           'id': 'administrations'
         },
-        'software_open': { 
+        'software_open': {
           'label': 'Software Open Source',
-           'id': 'software-open'
-          },
-        'reuse_software': { 
+          'id': 'software-open'
+        },
+        'reuse_software': {
           'label': 'Software a Riuso',
-           'id': 'software-reuse'
-          },
-        'projects': { 
+          'id': 'software-reuse'
+        },
+        'projects': {
           'label': 'Piattaforme',
-           'id': 'projects'
-          },
-        'api': { 
+          'id': 'projects'
+        },
+        'api': {
           'label': 'API',
-           'id': 'api'
-          },
-        'faqs': { 
+          'id': 'api'
+        },
+        'faqs': {
           'label': 'Faqs',
-           'id': 'faqs'
-          },
-        'pages': { 
+          'id': 'faqs'
+        },
+        'pages': {
           'label': 'Tipologia Software',
-           'id': 'pages'
-          },
-        'posts': { 
+          'id': 'pages'
+        },
+        'posts': {
           'label': 'News',
-           'id': 'news'
-          },
+          'id': 'news'
+        },
       },
       'en': {
         'missing': {
           'label': 'Software Type',
           'id': 'missing',
         },
-        'administrations': { 
+        'administrations': {
           'label': 'Administration',
           'id': 'administrations'
         },
@@ -599,7 +595,7 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
       filter.push(term);
     }
   }
-  
+
   // it-riuso-codiceIPA
   var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
   if (typeof codiceIPA != 'undefined') {
@@ -846,11 +842,11 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   }
 
   for (var i = start; (i < start+9); i++) {
-    
+
     if (i >= totPages) {
       break;
     }
-    
+
     pages.push({
       'title': i+1,
       'classes': (i == page) ? ' active ' : '',
@@ -874,7 +870,7 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   };
 
   $(this.config['pagerSelector']).append(this.templates.pager({
-    'pages': pages, 
+    'pages': pages,
     'prev': prev,
     'next': next
   }));
@@ -1212,16 +1208,14 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
 };
 
 esDevelopersItaliaPaQuery.prototype.renderIntro  = function(tot) {
+  var itRiusoCodiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
   var $intro = $('.intro > h1');
 
-  if (this.params['it-riuso-codiceIPA-label']) {
-    var itRiusoCodiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
-    if (typeof itRiusoCodiceIPALabel != 'undefined') {
-      $intro.text('');
-      $intro.html(decodeURI(itRiusoCodiceIPALabel));
-    }
+  if (typeof itRiusoCodiceIPALabel != 'undefined') {
+    $intro.text('');
+    $intro.html(decodeURI(itRiusoCodiceIPALabel));
   }
-};
+}
 
 /**
  * Category query.
