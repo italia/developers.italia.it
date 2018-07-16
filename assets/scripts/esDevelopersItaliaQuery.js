@@ -14,14 +14,14 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
         'az': 'A/Z',
         'za': 'Z/A',
         'popularity': 'Popolarità',
-        'emerging': 'Emergenti',
+        'emerging': 'Emergenti'
       },
       'en': {
         'relevance': 'Relevance',
         'az': 'A/Z',
         'za': 'Z/A',
         'popularity': 'Popularity',
-        'emerging': 'Emerging',
+        'emerging': 'Emerging'
       }
     },
     // css selector
@@ -35,7 +35,7 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     'filterKeysMobileSelectors': {
       'tags': 'pills-arguments',
       'developmentStatus': 'pills-development_status'
-    },
+    }
   };
   this.config = $.extend(defaultConfig, config);
 
@@ -90,7 +90,7 @@ esDevelopersItaliaManager.prototype.setCurrentLanguage = function() {
   var language = location.pathname.substr(1).split('/')[0];
   var languages = ['it', 'en'];
   // if page does not have a language, take italian as default.
-  if (languages.indexOf(language) == -1) {
+  if (languages.indexOf(language) === -1) {
     language = 'it';
   }
 
@@ -106,7 +106,7 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function() {
     var value = this.params[p];
     var id = o[p];
 
-    if(value.length == 0){
+    if(value.length === 0){
       continue;
     }
 
@@ -123,7 +123,7 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function() {
     var id = this.config['filterKeys'][p];
     var idm = this.config['filterKeysMobileSelectors'][p];
 
-    if(value.length == 0){
+    if(value.length === 0){
       continue;
     }
 
@@ -135,12 +135,12 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function() {
 
   // Query Sort.
   var sort = this.params['sort'].slice().pop();
-  if (typeof sort == 'undefined') {
+  if (typeof sort === 'undefined') {
     sort = 'relevance';
   }
   $(this.config['sortSelector']).val(sort);
   $(this.config['sortMobileSelector']).each(function(i, e){
-    if ($(e).attr('sort') == sort) {
+    if ($(e).attr('sort') === sort) {
       $(e).addClass('active');
       $(e).html(object.config['sortMobileTitle'][object.language][$(e).attr('sort')] + ' <i class="it-check"></i>');
     }
@@ -165,31 +165,31 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function() {
 
   // adds it-riuso-codiceIPA filter if present.
   var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
-  if (typeof codiceIPA != 'undefined') {
+  if (typeof codiceIPA !== 'undefined') {
     queryString.push('it-riuso-codiceIPA=' + codiceIPA);
   }
 
   // adds it-riuso-codiceIPA filter if present.
   var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
-  if (typeof codiceIPALabel != 'undefined') {
+  if (typeof codiceIPALabel !== 'undefined') {
     queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
   }
 
   // query type filter.
   var queryType = this.params['type'].slice(0).pop();
-  if (typeof queryType == 'string' && queryType != 'all') {
+  if (typeof queryType === 'string' && queryType !== 'all') {
     queryString.push('type=' + queryType);
   }
 
   // full text query keyword.
   var keyword = this.params['keyword'].slice(0).pop();
-  if (typeof keyword != 'undefined') {
+  if (typeof keyword !== 'undefined') {
     queryString.push('keyword=' + keyword.split(' ').join('+'));
   }
 
   // then adds page.
   var page = this.params['page'].slice(0).pop();
-  if (typeof page == 'undefined') {
+  if (typeof page === 'undefined') {
     page = 0;
   }
   queryString.push('page='+page);
@@ -207,19 +207,19 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
   $('#list-type input[type="checkbox"]').on('change', function(event){
     if (event.target.checked) {
       $('#list-type input[type="checkbox"]:checked').each(function(i, e){
-        if (event.target.value != e.value) {
+        if (event.target.value !== e.value) {
           $(e).prop('checked', false);
         }
       });
 
       // update mobile selection
-      var $mobile = $('#pills-types input[type="checkbox"]');
-      for (var i = 0; i < $mobile.length; i++) {
-        if (event.target.value != $mobile[i].value) {
-          $($mobile[i]).prop('checked', false);
+      var mobile = $('#pills-types input[type="checkbox"]');
+      for (var i = 0; i < mobile.length; i++) {
+        if (event.target.value !== mobile[i].value) {
+          $(mobile[i]).prop('checked', false);
         }
         else {
-          $($mobile[i]).prop('checked', true);
+          $(mobile[i]).prop('checked', true);
         }
       }
 
@@ -227,15 +227,15 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
     }
     else {
       // update mobile selection
-      var $mobile = $('#pills-types input[type="checkbox"]');
-      for (var i = 0; i < $mobile.length; i++) {
-        $($mobile[i]).prop('checked', false);
+      var mobile = $('#pills-types input[type="checkbox"]');
+      for (var i = 0; i < mobile.length; i++) {
+        $(mobile[i]).prop('checked', false);
       }
       object.queryType = ['all'];
     }
 
     // params contains actual filters value for build the elasticsearch query.
-    if (object.params['type'].length == 0) {
+    if (object.params['type'].length === 0) {
       object.params['type'].push(object.queryType.slice(0).pop());
     }
     else {
@@ -251,7 +251,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
   $('#pills-types input[type="checkbox"]').on('change', function(event){
     if (event.target.checked) {
       $('#pills-types input[type="checkbox"]:checked').each(function(i, e){
-        if (event.target.value != e.value) {
+        if (event.target.value !== e.value) {
           $(e).prop('checked', false);
         }
       });
@@ -274,7 +274,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
     );
     $sortMobileActive.removeClass('active');
     $(object.config['sortMobileSelector']).each(function(i, e){
-      if ($(e).attr('sort') == event.target.value) {
+      if ($(e).attr('sort') === event.target.value) {
         $(e).addClass('active');
         $(e).html(object.config['sortMobileTitle'][object.language][$(e).attr('sort')] + ' <i class="it-check"></i>');
       }
@@ -283,8 +283,6 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
     // Execute Current query.
     object.executeCurrentQuery();
   });
-
-
 
   $('#filters .modal-dialog .modal-header a.save').on('click', function(event){
 
@@ -295,7 +293,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
       var $inputMobile = $('#' + idm + ' input[type="checkbox"]');
       for (var i = 0; i < $inputMobile.length; i++) {
         // if new selected.
-        if ($inputMobile[i].checked && (object.params[p].indexOf($inputMobile[i].value) == -1)) {
+        if ($inputMobile[i].checked && (object.params[p].indexOf($inputMobile[i].value) === -1)) {
           object.params[p].push($inputMobile[i].value);
           // update desktop filter.
           $('#' + object.config['filterKeys'][p] + ' input[value="'+$inputMobile[i].value+'"]').prop('checked', true);
@@ -303,7 +301,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function() {
 
         // if removed.
         var index = object.params[p].indexOf($inputMobile[i].value);
-        if (!$inputMobile[i].checked && (index != -1)) {
+        if (!$inputMobile[i].checked && (index !== -1)) {
           object.params[p].splice(index, 1);
           // update desktop filter.
           $('#' + object.config['filterKeys'][p] + ' input[value="'+$inputMobile[i].value+'"]').prop('checked', false);
@@ -373,7 +371,7 @@ esDevelopersItaliaManager.prototype.clickOnFilterCallback = function(event) {
   }
   else {
     this.params[event.data['p']] = this.params[event.data['p']].filter(function(e, i){
-      return e != event.target.value;
+      return e !== event.target.value;
     });
     $('#' + this.config['filterKeysMobileSelectors'][event.data['p']] + ' input[value="'+event.target.value+'"]').prop('checked', false);
   }
@@ -387,7 +385,7 @@ esDevelopersItaliaManager.prototype.clickOnFilterCallback = function(event) {
 
 esDevelopersItaliaManager.prototype.currentQueryObject = function() {
   var queryType = this.queryType.slice(0).pop();
-  if (typeof this.queryObjects[queryType] == 'undefined') {
+  if (typeof this.queryObjects[queryType] === 'undefined') {
     this.queryObjects[queryType] = this.createQueryObject(queryType);
   }
 
@@ -462,7 +460,7 @@ function esDevelopersItaliaQuery(config, params) {
     },
     'queryErrorMessage': {
       'it': "C'è stato un problema nel recuperare i rsultati della ricerca, riprova più tardi",
-      'en': 'There was a problem finding the search results, please try again later',
+      'en': 'There was a problem finding the search results, please try again later'
     },
     'intro': {
       'it': 'Hai cercato',
@@ -517,12 +515,12 @@ function esDevelopersItaliaQuery(config, params) {
         'posts': {
           'label': 'News',
           'id': 'news'
-        },
+        }
       },
       'en': {
         'missing': {
           'label': 'Software Type',
-          'id': 'missing',
+          'id': 'missing'
         },
         'administrations': {
           'label': 'Administration',
@@ -530,32 +528,32 @@ function esDevelopersItaliaQuery(config, params) {
         },
         'software_open': {
           'label': 'Software Open Source',
-          'id': 'software-open',
+          'id': 'software-open'
         },
         'reuse_software': {
           'label': 'Re-use Software',
-          'id': 'software-reuse',
+          'id': 'software-reuse'
         },
         'projects': {
           'label': 'Platforms',
-          'id': 'projects',
+          'id': 'projects'
         },
         'api': {
           'label': 'API',
-          'id': 'api',
+          'id': 'api'
         },
         'faqs': {
           'label': 'Faqs',
-          'id': 'faqs',
+          'id': 'faqs'
         },
         'pages': {
           'label': 'Software Type',
-          'id': 'pages',
+          'id': 'pages'
         },
         'posts': {
           'label': 'News',
-          'id': 'news',
-        },
+          'id': 'news'
+        }
       }
     }
   };
@@ -578,14 +576,14 @@ function esDevelopersItaliaQuery(config, params) {
   this.templates = Handlebars.templates;
 
   this.client = new elasticsearch.Client(this.config['elasticsearch_connection']);
-};
+}
 
 esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
   var filter = [];
   for(var p in this.config['filterKeys']) {
     var value = this.params[p];
 
-    if(value.length == 0){
+    if(value.length === 0){
       continue;
     }
 
@@ -598,7 +596,7 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
 
   // it-riuso-codiceIPA
   var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
-  if (typeof codiceIPA != 'undefined') {
+  if (typeof codiceIPA !== 'undefined') {
     filter.push({
       'term': {
         'it-riuso-codiceIPA': codiceIPA
@@ -618,8 +616,8 @@ esDevelopersItaliaQuery.prototype.getDocumentTypeQuery = function(response){
 };
 
 esDevelopersItaliaQuery.prototype.getFromQuery = function(response){
-  var page = (typeof this.params != 'undefined' && typeof this.params['page'] != 'undefined') ? this.params['page'].slice(0).pop() : 0;
-  return (typeof page == 'undefined') ? 0 : page * this.config['size'];
+  var page = (typeof this.params !== 'undefined' && typeof this.params['page'] !== 'undefined') ? this.params['page'].slice(0).pop() : 0;
+  return (typeof page === 'undefined') ? 0 : page * this.config['size'];
 };
 
 esDevelopersItaliaQuery.prototype.getSizeQuery = function(response){
@@ -666,8 +664,8 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function() {
 esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
   var html = '';
 
-  if ((typeof response.hits != 'undefined') && (typeof response.hits.hits != 'undefined') && Array.isArray(response.hits.hits)) {
-    typeof this.throbber != 'undefined' ? this.throbber.stop() : '';
+  if ((typeof response.hits !== 'undefined') && (typeof response.hits.hits !== 'undefined') && Array.isArray(response.hits.hits)) {
+    typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
     $(this.config['pageContent']).text('');
     this.renderResultCount(response.hits.total);
     for (var i = 0; i < response.hits.hits.length; i++) {
@@ -688,7 +686,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
 };
 
 esDevelopersItaliaQuery.prototype.esSearchErrorCallback = function(error){
-  typeof this.throbber != 'undefined' ? this.throbber.stop() : '';
+  typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
   this.renderErrorMessage();
 };
 
@@ -714,7 +712,8 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
                     ]
                   }
                 },
-                {'term': { '_type': 'software' }}
+                {'term': { '_type': 'software' }},
+                {'term': { '_type': 'administration' }}
               ]
             }
           }
@@ -723,12 +722,12 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
         'multi_match': {
-          'query': typeof value == 'undefined' ? '' : value,
+          'query': typeof value === 'undefined' ? '' : value,
           'fields': [
             'name?6',
             'description.' + language_alpha_3 + '.localizedName^6',
@@ -738,13 +737,13 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
             'subtitle^5',
             'html^4',
             'it-riuso-codiceIPA-label^6',
-            'name.ngram^3',
-            'description.' + language_alpha_3 + '.localizedName.ngram^3',
-            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-            'description.' + language_alpha_3 + '.longDescription.ngram',
-            'title.ngram^3',
-            'subtitle.ngram^2',
-            'html.ngram',
+            'name^3',
+            'description.' + language_alpha_3 + '.localizedName^3',
+            'description.' + language_alpha_3 + '.shortDescription^2',
+            'description.' + language_alpha_3 + '.longDescription',
+            'title^3',
+            'subtitle^2',
+            'html'
           ]
         }
       }
@@ -805,11 +804,11 @@ esDevelopersItaliaQuery.prototype.renderIntro  = function(tot) {
   var language = this.config['language'];
   var $intro = $('.intro > h1');
 
-  if (typeof keyword != 'undefined') {
+  if (typeof keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
   }
-}
+};
 
 esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
   var language = this.config['language'];
@@ -832,7 +831,7 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   var page = this.params['page'].slice(0).pop();
   var totPages = Math.ceil(tot/size);
   var pages = [];
-  if ( typeof page == 'undefined') {
+  if ( typeof page === 'undefined') {
     page = 0;
   }
 
@@ -849,22 +848,22 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
 
     pages.push({
       'title': i+1,
-      'classes': (i == page) ? ' active ' : '',
-      'current': page == i,
-      'page': i,
+      'classes': (i === page) ? ' active ' : '',
+      'current': page === i,
+      'page': i
     });
   }
 
   var prev = {
     'title': '<',
-    'classes': (page == start) ? ' disabled ' : '',
+    'classes': (page === start) ? ' disabled ' : '',
     'current': false,
     'page': (page-1)
   };
 
   var next = {
     'title': '>',
-    'classes': (page == (totPages-1)) ? ' disabled ' : '',
+    'classes': (page === (totPages-1)) ? ' disabled ' : '',
     'current': false,
     'page': (page+1)
   };
@@ -882,11 +881,11 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   var language = this.config['language'];
   var category = this.getSoftwareType(software);
 
-  if (typeof software.description[this.languages[language]].screenshots != 'undefined' && software.description[this.languages[language]].screenshots.length > 0) {
+  if (typeof software.description[this.languages[language]].screenshots !== 'undefined' && software.description[this.languages[language]].screenshots.length > 0) {
     screenshot = software.description[this.languages[language]].screenshots.slice(0).pop();
   }
 
-  if (typeof software.description[this.languages[language]].localisedName != 'undefined') {
+  if (typeof software.description[this.languages[language]].localisedName !== 'undefined') {
     localisedName = software.description[this.languages[language]].localisedName;
   }
 
@@ -902,7 +901,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   };
 
   return this.templates.search(data);
-}
+};
 
 esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   var screenshot = 'http://via.placeholder.com/350x150';
@@ -910,7 +909,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   var language = this.config['language'];
   var category = this.getPostType(post);
 
-  if (typeof post.logo != 'undefined' || post.logo != null) {
+  if (typeof post.logo !== 'undefined' || post.logo !== null) {
     screenshot = post.logo;
   }
 
@@ -926,7 +925,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   };
 
   return this.templates.search(data);
-}
+};
 
 esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
   var language = this.config['language'];
@@ -940,18 +939,18 @@ esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
   }
 
   return category;
-}
+};
 
 esDevelopersItaliaQuery.prototype.getPostType = function(post) {
   var language = this.config['language'];
   var category = this.config['category'][language]['missing'];
 
-  if (typeof post.type != 'undefined'){
+  if (typeof post.type !== 'undefined'){
     category = this.config['category'][language][post.type];
   }
 
   return category;
-}
+};
 
 /**
  * Platforms query
@@ -977,7 +976,7 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
@@ -986,9 +985,9 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
           'fields': [
             'title^6',
             'subtitle^5',
-            'title.ngram^3',
-            'subtitle.ngram^2',
-            'html.ngram',
+            'title^3',
+            'subtitle^2',
+            'html',
           ]
         }
       }
@@ -1025,7 +1024,7 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
@@ -1036,10 +1035,10 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
             'description.' + language_alpha_3 + '.localizedName^6',
             'description.' + language_alpha_3 + '.shortDescription^5',
             'description.' + language_alpha_3 + '.longDescription^4',
-            'name.ngram^3',
-            'description.' + language_alpha_3 + '.localizedName.ngram^3',
-            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-            'description.' + language_alpha_3 + '.longDescription.ngram',
+            'name^3',
+            'description.' + language_alpha_3 + '.localizedName^3',
+            'description.' + language_alpha_3 + '.shortDescription^2',
+            'description.' + language_alpha_3 + '.longDescription'
           ]
         }
       }
@@ -1078,7 +1077,7 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
@@ -1090,10 +1089,10 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
             'description.' + language_alpha_3 + '.shortDescription^5',
             'description.' + language_alpha_3 + '.longDescription^4',
             'it-riuso-codiceIPA-label^6',
-            'name.ngram^3',
-            'description.' + language_alpha_3 + '.localizedName.ngram^3',
-            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-            'description.' + language_alpha_3 + '.longDescription.ngram',
+            'name^3',
+            'description.' + language_alpha_3 + '.localizedName^3',
+            'description.' + language_alpha_3 + '.shortDescription^2',
+            'description.' + language_alpha_3 + '.longDescription',
           ]
         }
       }
@@ -1132,7 +1131,7 @@ esDevelopersItaliaApiQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
@@ -1141,9 +1140,9 @@ esDevelopersItaliaApiQuery.prototype.getQuery = function() {
           'fields': [
             'title^6',
             'subtitle^5',
-            'title.ngram^3',
-            'subtitle.ngram^2',
-            'html.ngram',
+            'title^3',
+            'subtitle^2',
+            'html',
           ]
         }
       }
@@ -1179,7 +1178,7 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
     }
   };
 
-  if (typeof value != 'undefined'){
+  if (typeof value !== 'undefined'){
     value = value.split('+').join(' ');
     query['query']['bool']['must'].push(
       {
@@ -1190,10 +1189,10 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
             'description.' + language_alpha_3 + '.localizedName^6',
             'description.' + language_alpha_3 + '.shortDescription^5',
             'description.' + language_alpha_3 + '.longDescription^4',
-            'name.ngram^3',
-            'description.' + language_alpha_3 + '.localizedName.ngram^3',
-            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-            'description.' + language_alpha_3 + '.longDescription.ngram',
+            'name^3',
+            'description.' + language_alpha_3 + '.localizedName^3',
+            'description.' + language_alpha_3 + '.shortDescription^2',
+            'description.' + language_alpha_3 + '.longDescription',
           ]
         }
       }
@@ -1207,15 +1206,15 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
   return query;
 };
 
-esDevelopersItaliaPaQuery.prototype.renderIntro  = function(tot) {
+esDevelopersItaliaPaQuery.prototype.renderIntro = function(tot) {
   var itRiusoCodiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
   var $intro = $('.intro > h1');
 
-  if (typeof itRiusoCodiceIPALabel != 'undefined') {
+  if (typeof itRiusoCodiceIPALabel !== 'undefined') {
     $intro.text('');
     $intro.html(decodeURI(itRiusoCodiceIPALabel));
   }
-}
+};
 
 /**
  * Category query.
@@ -1240,7 +1239,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
   var language_alpha_3 = this.languages[language];
 
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1248,13 +1247,14 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram^3',
-                'description.' + language_alpha_3 + '.localizedName.ngram^3',
-                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-                'description.' + language_alpha_3 + '.longDescription.ngram',
-                'title.ngram^3',
-                'subtitle.ngram^2',
-                'html.ngram',
+                'name^3',
+                'it-riuso-codiceIPA-label^3',
+                'title^3',
+                'subtitle^2',
+                'description.' + language_alpha_3 + '.localizedName^3',
+                'description.' + language_alpha_3 + '.shortDescription^2',
+                'description.' + language_alpha_3 + '.longDescription',
+                'html'
               ]
             }
           },
@@ -1270,7 +1270,8 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
                     ]
                   }
                 },
-                {'term': { '_type': 'software' }}
+                {'term': { '_type': 'software' }},
+                {'term': { '_type': 'administration' }}
               ]
             }
           }
@@ -1278,8 +1279,6 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
       }
     }
   };
-
-  return query;
 };
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function() {
@@ -1315,12 +1314,12 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
   var name = software.name;
   var language_alpha_3 = this.languages[language];
   var category = this.getSoftwareType(software);
-  if ( typeof software.description[language_alpha_3] != 'undefined' && software.description[language_alpha_3].localisedName != 'undefined') {
+  if ( typeof software.description[language_alpha_3] !== 'undefined' && software.description[language_alpha_3].localisedName !== 'undefined') {
     name = software.description[language_alpha_3].localisedName;
   }
 
   value = value.trim().split(' ');
-  for (let i = 0; i < value.length; i++) {
+  for (var i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
 
@@ -1339,7 +1338,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
   var category = this.getPostType(post);
 
   value = value.trim().split(' ');
-  for (let i = 0; i < value.length; i++) {
+  for (var i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
 
@@ -1348,7 +1347,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
     'language': this.config['language'],
     'category': category['label'].toUpperCase(),
     'categoryClass': ['category', 'icon', 'icon-type-'+category['id']].join(' '),
-    'path': post.url,
+    'path': post.url
   };
 };
 
@@ -1359,11 +1358,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
   var path = '/' + language;
 
   value = value.trim().split(' ');
-  for (let i = 0; i < value.length; i++) {
+  for (var i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
 
-  if (language == 'it') {
+  if (language === 'it') {
     path += '/amministrazioni';
   }
   else {
@@ -1377,7 +1376,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
     'language': language,
     'category': this.config['category'][language]['administrations']['label'],
     'categoryClass': ['category', 'icon', 'icon-type-'+this.config['category'][language]['administrations']['id']].join(' '),
-    'path': path,
+    'path': path
   };
 };
 
@@ -1387,22 +1386,22 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
   $suggestions.text('');
 
   var value = $(this.config['inputSelector']).val();
-  if (value.length == 0){
+  if (value.length === 0){
     return;
   }
 
-  if ((typeof response.hits != 'undefined') && (typeof response.hits.hits != 'undefined') && Array.isArray(response.hits.hits)) {
+  if ((typeof response.hits !== 'undefined') && (typeof response.hits.hits !== 'undefined') && Array.isArray(response.hits.hits)) {
     for (var i = 0; i < response.hits.hits.length; i++) {
       var data;
-      if(response.hits.hits[i]['_type'] == 'software') {
+      if(response.hits.hits[i]['_type'] === 'software') {
         data = this.getSuggestionDataSoftware(response.hits.hits[i]['_source']);
       }
 
-      if(response.hits.hits[i]['_type'] == 'post') {
+      if(response.hits.hits[i]['_type'] === 'post') {
         data = this.getSuggestionDataPost(response.hits.hits[i]['_source']);
       }
 
-      if(response.hits.hits[i]['_type'] == 'administration') {
+      if(response.hits.hits[i]['_type'] === 'administration') {
         data = this.getSuggestionDataAdministration(response.hits.hits[i]['_source']);
       }
 
@@ -1419,7 +1418,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
       'path': '/' + language + '/search?' + queryString.join('&')
     }));
   }
-}
+};
 
 function esDevelopersItaliaAutocompletePlatformsQuery(config, getParams) {
   esDevelopersItaliaQuery.call(this, config, getParams);
@@ -1429,7 +1428,7 @@ function esDevelopersItaliaAutocompletePlatformsQuery(config, getParams) {
 esDevelopersItaliaAutocompletePlatformsQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1437,9 +1436,9 @@ esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram^3',
-                'subtitle.ngram^2',
-                'html.ngram',
+                'title^3',
+                'subtitle^2',
+                'html'
               ]
             }
           }
@@ -1451,8 +1450,6 @@ esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
       }
     }
   };
-
-  return query;
 };
 
 function esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(config, getParams) {
@@ -1466,7 +1463,7 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
   var language_alpha_3 = this.languages[language];
 
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1474,10 +1471,10 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram^3',
-                'description.' + language_alpha_3 + '.localizedName.ngram^3',
-                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-                'description.' + language_alpha_3 + '.longDescription.ngram',
+                'name^3',
+                'description.' + language_alpha_3 + '.localizedName^3',
+                'description.' + language_alpha_3 + '.shortDescription^2',
+                'description.' + language_alpha_3 + '.longDescription'
               ]
             }
           },
@@ -1487,8 +1484,6 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
       }
     }
   };
-
-  return query;
 };
 
 function esDevelopersItaliaAutocompleteSoftwareRiusoQuery(config, getParams) {
@@ -1502,7 +1497,7 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
   var language_alpha_3 = this.languages[language];
 
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1510,10 +1505,10 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
             'multi_match': {
               'query': value,
               'fields': [
-                'name.ngram^3',
-                'description.' + language_alpha_3 + '.localizedName.ngram^3',
-                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
-                'description.' + language_alpha_3 + '.longDescription.ngram',
+                'name^3',
+                'description.' + language_alpha_3 + '.localizedName^3',
+                'description.' + language_alpha_3 + '.shortDescription^2',
+                'description.' + language_alpha_3 + '.longDescription'
               ]
             }
           },
@@ -1523,8 +1518,6 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
       }
     }
   };
-
-  return query;
 };
 
 function esDevelopersItaliaAutocompleteAPIQuery(config, getParams) {
@@ -1535,7 +1528,7 @@ function esDevelopersItaliaAutocompleteAPIQuery(config, getParams) {
 esDevelopersItaliaAutocompleteAPIQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1543,9 +1536,9 @@ esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'title.ngram^3',
-                'subtitle.ngram^2',
-                'html.ngram',
+                'title^3',
+                'subtitle^2',
+                'html'
               ]
             }
           }
@@ -1557,8 +1550,6 @@ esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
       }
     }
   };
-
-  return query;
 };
 
 function esDevelopersItaliaAutocompletePAQuery(config, getParams) {
@@ -1569,7 +1560,7 @@ function esDevelopersItaliaAutocompletePAQuery(config, getParams) {
 esDevelopersItaliaAutocompletePAQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
   var value = $(this.config['inputSelector']).val();
-  var query = {
+  return {
     'query': {
       'bool': {
         'must': [
@@ -1577,7 +1568,7 @@ esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
             'multi_match': {
               'query': value,
               'fields': [
-                'it-riuso-codiceIPA-label.ngram',
+                'it-riuso-codiceIPA-label'
               ]
             }
           },
@@ -1586,6 +1577,4 @@ esDevelopersItaliaAutocompletePAQuery.prototype.getQuery = function() {
       }
     }
   };
-
-  return query;
 };
