@@ -695,6 +695,8 @@ esDevelopersItaliaQuery.prototype.esSearchErrorCallback = function(error){
 esDevelopersItaliaQuery.prototype.getQuery = function() {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
 
   var query = {
     'query': {
@@ -708,7 +710,7 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
                     'must': [
                       {'term': { '_type': 'post' }},
                       {'terms': { 'type': ['projects'] }},
-                      {'term': { 'lang': this.config['language'] }}
+                      {'term': { 'lang': language }}
                     ]
                   }
                 },
@@ -729,18 +731,20 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
           'query': typeof value == 'undefined' ? '' : value,
           'fields': [
             'name?6',
-            'description.' + this.config['language'] + '.localizedName^6',
-            'description.' + this.config['language'] + '.shortDescription^5',
-            'description.' + this.config['language'] + '.longDescription^4',
+            'description.' + language_alpha_3 + '.localizedName^6',
+            'description.' + language_alpha_3 + '.shortDescription^5',
+            'description.' + language_alpha_3 + '.longDescription^4',
             'title^6',
             'subtitle^5',
+            'html^4',
             'it-riuso-codiceIPA-label^6',
             'name.ngram^3',
-            'description.' + this.config['language'] + '.localizedName.ngram^3',
-            'description.' + this.config['language'] + '.shortDescription.ngram^2',
-            'description.' + this.config['language'] + '.longDescription.ngram',
+            'description.' + language_alpha_3 + '.localizedName.ngram^3',
+            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+            'description.' + language_alpha_3 + '.longDescription.ngram',
             'title.ngram^3',
             'subtitle.ngram^2',
+            'html.ngram',
           ]
         }
       }
@@ -984,6 +988,7 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
             'subtitle^5',
             'title.ngram^3',
             'subtitle.ngram^2',
+            'html.ngram',
           ]
         }
       }
@@ -1008,6 +1013,8 @@ esDevelopersItaliaOpenSourceQuery.prototype = Object.create(esDevelopersItaliaQu
 esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
 
   var query = {
     'query': {
@@ -1026,13 +1033,13 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
           'query': value,
           'fields': [
             'name?6',
-            'description.' + this.config['language'] + '.localizedName^6',
-            'description.' + this.config['language'] + '.shortDescription^5',
-            'description.' + this.config['language'] + '.longDescription^4',
+            'description.' + language_alpha_3 + '.localizedName^6',
+            'description.' + language_alpha_3 + '.shortDescription^5',
+            'description.' + language_alpha_3 + '.longDescription^4',
             'name.ngram^3',
-            'description.' + this.config['language'] + '.localizedName.ngram^3',
-            'description.' + this.config['language'] + '.shortDescription.ngram^2',
-            'description.' + this.config['language'] + '.longDescription.ngram',
+            'description.' + language_alpha_3 + '.localizedName.ngram^3',
+            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+            'description.' + language_alpha_3 + '.longDescription.ngram',
           ]
         }
       }
@@ -1057,6 +1064,8 @@ esDevelopersItaliaReuseQuery.prototype = Object.create(esDevelopersItaliaQuery.p
 esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
 
   var query = {
     'query': {
@@ -1077,14 +1086,14 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
           'query': value,
           'fields': [
             'name?6',
-            'description.' + this.config['language'] + '.localizedName^6',
-            'description.' + this.config['language'] + '.shortDescription^5',
-            'description.' + this.config['language'] + '.longDescription^4',
+            'description.' + language_alpha_3 + '.localizedName^6',
+            'description.' + language_alpha_3 + '.shortDescription^5',
+            'description.' + language_alpha_3 + '.longDescription^4',
             'it-riuso-codiceIPA-label^6',
             'name.ngram^3',
-            'description.' + this.config['language'] + '.localizedName.ngram^3',
-            'description.' + this.config['language'] + '.shortDescription.ngram^2',
-            'description.' + this.config['language'] + '.longDescription.ngram',
+            'description.' + language_alpha_3 + '.localizedName.ngram^3',
+            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+            'description.' + language_alpha_3 + '.longDescription.ngram',
           ]
         }
       }
@@ -1134,6 +1143,7 @@ esDevelopersItaliaApiQuery.prototype.getQuery = function() {
             'subtitle^5',
             'title.ngram^3',
             'subtitle.ngram^2',
+            'html.ngram',
           ]
         }
       }
@@ -1158,6 +1168,8 @@ esDevelopersItaliaPaQuery.prototype = Object.create(esDevelopersItaliaQuery.prot
 esDevelopersItaliaPaQuery.prototype.getQuery = function() {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
 
   var query = {
     'query': {
@@ -1175,13 +1187,13 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
           'query': value,
           'fields': [
             'name?6',
-            'description.' + this.config['language'] + '.localizedName^6',
-            'description.' + this.config['language'] + '.shortDescription^5',
-            'description.' + this.config['language'] + '.longDescription^4',
+            'description.' + language_alpha_3 + '.localizedName^6',
+            'description.' + language_alpha_3 + '.shortDescription^5',
+            'description.' + language_alpha_3 + '.longDescription^4',
             'name.ngram^3',
-            'description.' + this.config['language'] + '.localizedName.ngram^3',
-            'description.' + this.config['language'] + '.shortDescription.ngram^2',
-            'description.' + this.config['language'] + '.longDescription.ngram',
+            'description.' + language_alpha_3 + '.localizedName.ngram^3',
+            'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+            'description.' + language_alpha_3 + '.longDescription.ngram',
           ]
         }
       }
@@ -1224,6 +1236,9 @@ function esDevelopersItaliaAutocompleteAllQuery(config, getParams) {
 
 esDevelopersItaliaAutocompleteAllQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
+
   var value = $(this.config['inputSelector']).val();
   var query = {
     'query': {
@@ -1234,11 +1249,12 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
               'query': value,
               'fields': [
                 'name.ngram^3',
-                'description.' + this.config['language'] + '.localizedName.ngram^3',
-                'description.' + this.config['language'] + '.shortDescription.ngram^2',
-                'description.' + this.config['language'] + '.longDescription.ngram',
+                'description.' + language_alpha_3 + '.localizedName.ngram^3',
+                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+                'description.' + language_alpha_3 + '.longDescription.ngram',
                 'title.ngram^3',
                 'subtitle.ngram^2',
+                'html.ngram',
               ]
             }
           },
@@ -1249,8 +1265,8 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
                   'bool': {
                     'must': [
                       {'term': { '_type': 'post' }},
-                      {'terms': { 'type': ['projects'] }},
-                      {'term': { 'lang': this.config['language'] }}
+                      {'terms': { 'type': ['projects', 'posts'] }},
+                      {'term': { 'lang': language }}
                     ]
                   }
                 },
@@ -1423,6 +1439,7 @@ esDevelopersItaliaAutocompletePlatformsQuery.prototype.getQuery = function() {
               'fields': [
                 'title.ngram^3',
                 'subtitle.ngram^2',
+                'html.ngram',
               ]
             }
           }
@@ -1445,6 +1462,9 @@ function esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(config, getParams
 
 esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = function() {
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
+
   var value = $(this.config['inputSelector']).val();
   var query = {
     'query': {
@@ -1455,9 +1475,9 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
               'query': value,
               'fields': [
                 'name.ngram^3',
-                'description.' + this.config['language'] + '.localizedName.ngram^3',
-                'description.' + this.config['language'] + '.shortDescription.ngram^2',
-                'description.' + this.config['language'] + '.longDescription.ngram',
+                'description.' + language_alpha_3 + '.localizedName.ngram^3',
+                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+                'description.' + language_alpha_3 + '.longDescription.ngram',
               ]
             }
           },
@@ -1478,6 +1498,9 @@ function esDevelopersItaliaAutocompleteSoftwareRiusoQuery(config, getParams) {
 
 esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function() {
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
+
   var value = $(this.config['inputSelector']).val();
   var query = {
     'query': {
@@ -1488,9 +1511,9 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function()
               'query': value,
               'fields': [
                 'name.ngram^3',
-                'description.' + this.config['language'] + '.localizedName.ngram^3',
-                'description.' + this.config['language'] + '.shortDescription.ngram^2',
-                'description.' + this.config['language'] + '.longDescription.ngram',
+                'description.' + language_alpha_3 + '.localizedName.ngram^3',
+                'description.' + language_alpha_3 + '.shortDescription.ngram^2',
+                'description.' + language_alpha_3 + '.longDescription.ngram',
               ]
             }
           },
@@ -1522,6 +1545,7 @@ esDevelopersItaliaAutocompleteAPIQuery.prototype.getQuery = function() {
               'fields': [
                 'title.ngram^3',
                 'subtitle.ngram^2',
+                'html.ngram',
               ]
             }
           }
