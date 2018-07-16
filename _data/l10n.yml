@@ -75,6 +75,7 @@ it:
     status_maintainer: maintainer
 
     in_collaboration_with: In collaborazione con
+    project_of: Progetto di
 
     header_link_trasformazione: Piano Triennale
     header_link_developers: Developers
@@ -249,6 +250,7 @@ en:
     status_maintainer: maintainer
 
     in_collaboration_with: In collaboration with
+    project_of: Project of
 
     header_link_trasformazione: Piano Triennale
     header_link_developers: Developers

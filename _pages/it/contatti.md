@@ -3,7 +3,7 @@ title: Contatti
 subtitle: Social, e-mail, stampa e media
 lang: it
 layout: simple-internal
-image: /assets/images/comepartecipo-temp-img.jpg
+image: /assets/images/contatti-img.jpg
 newsletterdata:
     text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."
     placeholdertext: mario.rossi@dev.software.it
