@@ -57,7 +57,7 @@ layout: default
               {% endif %}
             </h2>
           {% endif %}
-          <h3 class="color-content font-serif my-3">
+          <h3 class="color-content font-serif my-2 my-md-4">
             {% if page.description[active_lang_extended].shortDescription != nil %}
               {{ page.description[active_lang_extended].shortDescription }}
             {% elsif page.description.eng.shortDescription != nil  %}
@@ -107,7 +107,7 @@ layout: default
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}</p>
+          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
           <div id="softwareChart">
             <canvas id="vitalityChart"></canvas>
           </div>
@@ -140,7 +140,7 @@ layout: default
 		</div>
 	</div>
 </div>
-<hr class="divider">
+<hr class="divider mb-0">
 
 <div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
@@ -301,7 +301,7 @@ layout: default
                     {% endif %}
                   </p>
                   <p><span class="label">{{ t.software.vitality }}:
-                    {{ variant.vitalityScore }}</span>
+                    {{ variant.vitalityScore }}%</span>
                   </p>
                 </div>
                 {% endfor %}

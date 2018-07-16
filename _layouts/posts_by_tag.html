@@ -16,12 +16,13 @@ lang: it
 
 <div >
   <section class="postslisting postslisting--by-tag position-relative">
-  <div class="postslisting__headerbkg "></div>
-  <div class="postslisting__header ">
+  
+  <div class="postslisting__header position-relative">
+    <div class="postslisting__headerbkg "></div>
     
     <div class="container pt-4 d-flex w-100">
       <h1 >{{ t.news_title }}</h1>
-      <div class="postslisting__filtertag ml-auto d-flex flex-column flex-md-row">
+      <div class="postslisting__filtertag ml-auto mb-2 d-flex flex-column flex-md-row">
         <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
         <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">{{ page.tag }} <span class="icon it-close"></span></a>
       </div>

@@ -22,8 +22,15 @@ layout: default
 <div class="apilist">
   <div class="container">
   <section class="apilist__content mt-2 mt-md-5 mb-2 mb-md-5 pt-2 pt-md-4 pb-2">
-    <h1>{{ page.title | capitalize }}</h1>
-    <div class="font-serif color-content mt-2 mt-md-4 mb-2 mb-md-4">{{page.content}}</div>
+    <h1>{{ page.title }}</h1>
+    <div class="row mb-2 mb-md-4">
+      <div class="col-md-6">
+      <h2>{{ page.subtitle }}</h2>
+      </div>
+      <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0 apilist__disclaimer">
+        {{page.content}}
+      </div>
+    </div>
     <div class="apilist__listing pt-2 pt-md-4 pb-2 pb-md-4">
       <div class="row row-eq-height">
         {% for api in apis %}
@@ -46,11 +53,17 @@ layout: default
               </figure>
               {% endif %}
               <h1 class="apilist__listing__title"><a title="{{api.name}}" class="color-inherit decoration-none" href="{{url}}">{{api.name}}</a>
-                  {% if api.comingsoon %}<span class="badge badge-pill badge-secondary apilist__listing__soon">{{ t.coming_soon }}</span>{%endif%}
+                  
               </h1>
+              {% if api.contact %}
+              <h2>{{api.contact.name}}</h2>
+              {% endif %}
+              <p class="mt-md-2">{{api.abstract}}</p>
               {% if api.comingsoon != true %}
               <a class="apilist__listing__url mt-auto" href="{{url}}">{{t.software.read_more}} &rarr;</a>
-              {% endif %}
+              {% else %}
+              <span class="badge badge-pill badge-secondary apilist__listing__soon mx-0">{{ t.coming_soon }}</span>
+              {%endif%}
           </article>
         </div>
         {% endfor %}
