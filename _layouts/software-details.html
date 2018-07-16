@@ -107,7 +107,7 @@ layout: default
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}</p>
+          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
           <div id="softwareChart">
             <canvas id="vitalityChart"></canvas>
           </div>
@@ -301,7 +301,7 @@ layout: default
                     {% endif %}
                   </p>
                   <p><span class="label">{{ t.software.vitality }}:
-                    {{ variant.vitalityScore }}</span>
+                    {{ variant.vitalityScore }}%</span>
                   </p>
                 </div>
                 {% endfor %}
