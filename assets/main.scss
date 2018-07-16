@@ -98,7 +98,7 @@ html, body {
 
 // STILE DEVELOPERS
 .grayline {
-    border-top: 2px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
     margin: 1rem 0;
 }
 .Offcanvas-menu {
@@ -567,7 +567,7 @@ html, body {
         text-align: center;
         margin-top: 2rem;
         letter-spacing: 0;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     &-person-img {
         width: 200px;
@@ -581,7 +581,7 @@ html, body {
         text-align: center;
         font-weight: 300;
         color: #455B71;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     &-person-desc {
         font-weight: 300;
@@ -753,7 +753,7 @@ html, body {
                 @include media-breakpoint-up(md) {
                     width: 50vw;
                     background-size: inherit;
-                    background-position-x: 60%;
+                    background-position-x: 75%;
                     background-position-y: center;
                 }
             }
@@ -817,6 +817,10 @@ html, body {
     .titlewrapper {
         border-bottom: 1px solid rgba(69,91,113,0.2);
     }
+    .row {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
     article {
         h1 {
             font-size: 1.4rem;
@@ -844,16 +848,23 @@ html, body {
             font-size: 0.8rem;
             text-transform: uppercase;
         }
+        
     }
 
     &.light {
         background-color: #FAFBFD;
+
+        .home-listing-item__url {
+            @extend .mt-sm-auto;
+        }
     }
 }
 
 .home-software-tags {
     padding: 2rem 0;
-
+    @include media-breakpoint-up(md) {
+        padding: 3rem 0;
+    }
 
     h1 {
         color: #17324D;
@@ -1028,7 +1039,7 @@ html, body {
         content:'';
         width: 1px;
         height: 100%;
-        background-color: #D6DEE8;
+        background-color: rgba(214,222,232,0.5);
         position: absolute;
         left: 0;
         top: 0;
@@ -1143,13 +1154,18 @@ html, body {
             font-weight: 900;
             line-height: 8rem;
             letter-spacing: -0.5rem;
-            bottom: 0;
+            bottom: -0.5rem;
             color: #66A5E3 ;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
             text-transform: uppercase;
             opacity: 0.05;
+        }
+    }
+    &__header {
+        @include media-breakpoint-up(md) {
+            padding-right: 4rem;
         }
     }
     &__actors {
@@ -1187,6 +1203,10 @@ html, body {
                 width: 0.75rem;
                 height: 0.75rem;
                 border-radius: 100%;
+                background-color: $primary;
+                &.active {
+                    opacity: 0.5;
+                }
             }
         }
         .carousel-control-prev, .carousel-control-next {
@@ -1201,6 +1221,8 @@ html, body {
             width: 1rem;
             height: 1rem;
             margin-right: 0.5rem;
+            background-image: none;
+            color: $primary;
         }
     }
     &__content {
@@ -1208,6 +1230,10 @@ html, body {
         position: relative;
         z-index: 1;
         margin-bottom: 1rem;
+        
+
+    }
+    &__content.with-resources {
         &:after {
             display: none;
 
@@ -1223,7 +1249,6 @@ html, body {
                 z-index: 0;
             }
         }
-
     }
     &__maincontent {
         background-color: #fff;
@@ -1236,9 +1261,17 @@ html, body {
 
         @include media-breakpoint-up(md) {
             padding: 4rem;
-            margin: 1rem 0 6rem 0;
+            margin: 6rem 0 6rem 0;
+        }
+        .with-resources & {
+            @include media-breakpoint-up(md) {
+                padding: 4rem;
+                margin: 1rem 0 6rem 0;
+            }
         }
     }
+    
+
     &__resources {
         h1 {
             color: #17324D;
@@ -1328,8 +1361,11 @@ html, body {
         article {
             figure {
                 background-color: #fff;
-                @include media-breakpoint-up(md) {
+                margin: 0;
+                min-height: auto;
+                @include media-breakpoint-up(lg) {
                     min-height: 191px;
+                    margin-bottom: 1rem;
                 }
             }
             img {
@@ -1439,9 +1475,9 @@ html, body {
 .postslisting {
     &__headerbkg {
         background-color: rgba(142,190,237,0.2);
-        height: 420px;
+        min-height: 420px;
         background-image: url(/assets/images/postslisting-background.svg);
-        background-position: center center;
+        background-position: top center;
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
@@ -1450,10 +1486,16 @@ html, body {
         z-index: -1;
 
         @include media-breakpoint-up(md) {
-
             background-size: auto;
             padding-top: 4rem;
         }
+    }
+    &--by-tag {
+        .postslisting__headerbkg {
+            min-height: auto;
+            height: 100%;
+        }
+
     }
     &__tags {
         padding: 1rem 2rem;
@@ -1514,8 +1556,10 @@ html, body {
     }
     &__header {
         padding-top: 1rem;
-        @include media-breakpoint-up(md) {
+        min-height: auto;
 
+        @include media-breakpoint-up(md) {
+            min-height: 210px;
             padding-top: 4rem;
         }
 
@@ -1545,17 +1589,10 @@ html, body {
         }
     }
     &__hr {
-        border-top: 2px solid rgba(90, 103, 114, 0.25);
+        border-top: 1px solid rgba(90, 103, 114, 0.25);
         margin: 3rem 0;
     }
-    &--by-tag {
-        .postslisting__headerbkg {
-            height: 120px ;
-            @include media-breakpoint-up(md) {
-                height: 210px ;
-            }
-        }
-    }
+    
 
 }
 .newscard {
@@ -1636,7 +1673,32 @@ html, body {
             color: #17324D;
             font-size: 3.5rem;
         }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #17324D;
+            line-height: 1.4;
 
+            @include media-breakpoint-up(md) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+    &__disclaimer {
+        border-top: 1px solid #D8D8D8;
+        border-bottom: 1px solid #D8D8D8;
+        @include media-breakpoint-up(md) {
+            border: none;
+        }
+        
+        h2,h3 {
+           color: #17324D;
+           font-weight: 600;
+           letter-spacing: 0;
+           font-size: 1.3rem;
+           text-transform: uppercase;
+        }
     }
     &__listing {
         a {
@@ -1649,6 +1711,12 @@ html, body {
                 font-size: 1.2rem;
                 margin-top: 0.2rem;
                 letter-spacing: 0;
+            }
+            h2 {
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 1rem;
+                letter-spacing: 1px;
             }
 
         }

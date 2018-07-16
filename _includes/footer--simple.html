@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row d-none d-md-flex">
         <div class="col-md-4">
-
+            <p class="footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.project_of }}</p>
         </div>
         <div class="col-md-4">
             <p class="footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
@@ -13,20 +13,24 @@
         </div>
       </div>
       <div class="row mt-4 mt-md-0">
-      <div class="footer-team d-flex align-items-center col-md-4 py-2 px-3 p-md-0">
-          <div class="">
-            <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
-            <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
-          </div>
-          <div class="px-2 border-white border-left footer-team-text text-white">
-              {{ site.partner_full | upcase }}
-          </div>
-      </div>
+      
       <div class="footer-collaboration col-md-4 py-2 px-3 p-md-0">
-          <p class="d-block d-md-none mt-2 footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
+          <p class="d-block d-md-none mt-2 footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.project_of }}</p>
           <div >
             <img class="" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
           </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+            <p class="d-block d-md-none mt-2 footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
+            <div class="d-flex">
+                <div class="d-flex">
+                <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+                <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+                </div>
+                <div class="px-2 border-white border-left footer-team-text text-white">
+                    {{ site.partner_full | upcase }}
+                </div>
+            </div>
       </div>
       <div class="footer-social col-md-4 text-right">
           <span class="text-white small mr-3 ">{{ t.follow_us | capitalize }}</span>

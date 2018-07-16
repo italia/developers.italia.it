@@ -507,10 +507,6 @@
       localisedName: Euriale
       longDescription: |
         Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 158 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 316 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 474 characters. Very long description of this software, also split on multiple rows. You should note what the software is and why one should need it. This is 632 characters.
-      screenshots:
-      - https://raw.githubusercontent.com/gith002/Euriale/master/img/sshot1.png
-      - https://raw.githubusercontent.com/gith002/Euriale/master/img/sshot2.png
-      - https://raw.githubusercontent.com/gith002/Euriale/master/img/sshot3.png
       shortDescription: "Euriale is ASG (Another Software Gorgon). \U0001F43C"
       videos:
       - https://www.youtube.com/watch?v=RaHmGbBOP84

@@ -41,8 +41,14 @@ layout: default
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA == nil %}
+      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+      {% if software.description[active_lang_extended].screenshots != nil %}
+        {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+      {% elsif software.description.eng.screenshots != nil %}
+        {% assign mainImage = software.description.eng.screenshots | first %}
+      {% endif %}
       <div class="col-sm col-md-4 item">
-        <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
+        <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
         <p class="name">
           {% if software.description[active_lang_extended].localisedName != nil %}
@@ -77,7 +83,14 @@ layout: default
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA != nil %}
       <div class="col-sm col-md-4 item">
-        <div class="main-image" style=" background: url({% if software.description[active_lang_extended].screenshots != nil %}{{software.description[active_lang_extended].screenshots | first}}{% elsif software.description.eng.screenshots != nil %}{{ software.description.eng.screenshots | first }}{% elsif software.description.eng.screenshots == nil %}'http://via.placeholder.com/350x150'{% endif %}) no-repeat center center;">
+        {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+        {% if software.description[active_lang_extended].screenshots != nil %}
+          {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+        {% elsif software.description.eng.screenshots != nil %}
+          {% assign mainImage = software.description.eng.screenshots | first %}
+        {% endif %}
+
+        <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
         <p class="name">
           {% if software.description[active_lang_extended].localisedName != nil %}
