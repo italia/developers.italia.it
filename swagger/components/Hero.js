@@ -4,6 +4,8 @@ import { sanitizeUrl } from "@braintree/sanitize-url";
 
 import "./Hero.css";
 
+import platformIcon from "../assets/platform.png";
+
 const copyToClipboard = text => {
   const field = document.createElement("textarea");
   field.innerText = text;
@@ -153,6 +155,7 @@ class Hero extends Component {
                           className="text-uppercase swagger--hero--card-platform-link"
                           href={`/${lang}/${id}`}
                         >
+                          <img className="mr-2" src={platformIcon} alt={goToPlatform} />
                           {goToPlatform} →
                         </a>
                       </div>
