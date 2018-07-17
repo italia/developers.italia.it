@@ -3,17 +3,19 @@
     padding-top: 92px;
 }
 
-.custom-layout--hero {
-  padding-bottom: 210px;
+.custom-layout--hero
+{
+    padding-bottom: 210px;
 }
 
-.custom-layout--description {
-  top: -130px;
+.custom-layout--description
+{
+    top: -130px;
 }
 
 .custom-layout--swagger--description
 {
-	background: #f5f7fa;
+    background: #f5f7fa;
 }
 
 .swagger-ui .loading-container

@@ -17,7 +17,7 @@ export default class Authorize extends React.Component {
     let showPopup = !!authSelectors.shownDefinitions();
     let isAuthorized = !!authSelectors.authorized().size;
 
-    const { authorize } = window.i10n.swagger;
+    const { authorize } = window.l10n.swagger;
 
     return (
       <div className="swagger--auth auth-wrapper">

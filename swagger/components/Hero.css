@@ -8,13 +8,28 @@
     text-transform: initial;
 }
 
-.swagger--hero-pill
+.swagger--hero .swagger--hero-pill
 {
-    font-size: 0.7rem !important;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 11px;
 
-    padding: 0.1rem 0.6em !important;
+    min-width: 24px;
+    height: 16px;
+    margin-top: 20px;
 
-    vertical-align: super !important;
+    text-align: center;
+    vertical-align: top;
+}
+
+.swagger--hero .swagger--hero-summary
+{
+    color: #455b71;
+}
+
+.swagger--hero .text-overflow-wrap
+{
+    overflow-wrap: break-word;
 }
 
 .swagger--hero .renderedMarkdown h1,
@@ -37,7 +52,7 @@
     list-style: disc;
 }
 
-.swagger--hero .swagger--hero--card--legend
+.swagger--hero .swagger--hero--card-legend
 {
     font-size: 20px;
     line-height: 20px;
@@ -50,5 +65,20 @@
     letter-spacing: 1.11px;
 
     color: #17324d;
-    background-color: fff;
+    background-color: #fff;
+}
+
+.swagger--hero .swagger--hero--card-description {
+	color: #455B71;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.swagger--hero .swagger--hero--card-platform-link {
+	height: 27px;
+	color: #0073E6;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.29px;
+	line-height: 27px;
 }

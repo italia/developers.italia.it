@@ -5,14 +5,25 @@ lang: it
 
 {% include setlang.html %}
 
-{% comment %}
+{%
+  assign l10n = site.data.l10n[active_lang].t | jsonify | escape
+%}
 
-  {% include breadcrumbs.html %}
-  {% include share.html %}
+{% assign projects = site.projects | where: 'lang', active_lang %}
+{% assign filteredProjects = '' | split: '' %}
+{% for project in projects %}
+  {% assign id = "" | append: "id:" | append: project.id %}
+  {% assign filteredProjects = filteredProjects | push: id %}
+  {% assign description = "" | append: "description:" | append: project.description %}
+  {% assign filteredProjects = filteredProjects | push: description %}
+  {% assign title = "" | append: "title:" | append: project.title %}
+  {% assign filteredProjects = filteredProjects | push: title %}
+  {% assign subtitle = "" | append: "subtitle:" | append: project.subtitle %}
+  {% assign filteredProjects = filteredProjects | push: subtitle %}
+  {% assign payoff = "" | append: "payoff:" | append: project.payoff %}
+  {% assign filteredProjects = filteredProjects | push: payoff %}
+{% endfor %}
 
-  {% assign subnav = site.data[page.subnav] %}
-  {% include linklist.html items=subnav dynamic=true %}
+{% assign swaggerProjects = filteredProjects | jsonify | escape %}
 
-{% endcomment %}
-
-{% include swagger.html swaggerUrl=page.openapi logo=page.contact.logo %}
+{% include swagger.html swaggerUrl=page.openapi logo=page.contact.logo lang=active_lang l10n=l10n swaggerProjects=swaggerProjects %}

@@ -9,11 +9,50 @@
 <script>
   // These vars are populated with Jekyll's _includes
   var swaggerUrl = "{{ include.swaggerUrl }}";
-  var contactLogo = "{{ include.logo }}";
-  var safeI10n = "{{ site.data.l10n.[active_lang].t | jsonify | escape }}";
-  var i10n;
+  var lang = "{{ include.lang }}";
+
+  var safeL10n = "{{ include.l10n }}";
+  var l10n;
   try {
-    i10n = JSON.parse(safeI10n.replace(/&quot;/g, '"'));
+    l10n = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
+  } catch (error) {
+    // It is safe for this to fail while in development
+  }
+
+  var safeProjects = "{{ include.swaggerProjects }}";
+  var projects = [];
+  try {
+    safeProjects = safeProjects.replace(/&quot;/g, '"');
+    safeProjects = safeProjects.replace(/\n/g, '<br />');
+    safeProjects = JSON.parse(safeProjects);
+
+    // Shape of this array now is
+    // [
+    //   "description:Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace con la piattaforma. <br />",
+    //   "subtitle:Bonus cultura e formazione",
+    //   "payoff:La piattaforma dove spendere i bonus cultura e formazione",
+    // ]
+
+    var chunks = [];
+    var chunk_size = 5;
+    while (safeProjects.length > 0) {
+      chunks.push(safeProjects.splice(0, chunk_size));
+    }
+
+    for (const chunk of chunks) {
+      var project = {};
+      for (const field of chunk) {
+        var key = field.split(":").splice(0, 1)[0];
+        var value = field.split(":").splice(1).join("");
+
+        if (key === "id") {
+          // i.e. "/it/18app"
+          value = value.split("/")[2];
+        }
+        project[key] = value;
+      }
+      projects.push(project);
+    }
   } catch (error) {
     // It is safe for this to fail while in development
   }

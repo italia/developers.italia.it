@@ -18,7 +18,7 @@ class CustomLayout extends React.Component {
       authSelectors
     } = this.props;
 
-    const { download } = window.i10n.swagger;
+    const { download } = window.l10n.swagger;
 
     const isSpecEmpty = !specSelectors.specStr();
     const isLoading = specSelectors.loadingStatus() === "loading";
