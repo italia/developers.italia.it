@@ -1849,4 +1849,50 @@ html, body {
     }
 
 }
+*[class*='icon-type'] {
+    color: #00264D;
+    font-size: 0.9rem;
+
+    &:before {
+        content:'';
+        font-size: inherit;
+        line-height: 0;
+        top: 0.25rem;
+        margin-right: 0.5rem;
+        position: relative;
+    }
+}
+.icon-type- {
+    &api {
+        &:before {
+            content: url('/assets/images/icon-type-api.svg');
+        }
+    }
+    &administrations {
+        &:before {
+            content: url('/assets/images/icon-type-administrations.svg');
+        }
+    }
+    &projects {
+        &:before {
+            content: url('/assets/images/icon-type-projects.svg');
+        }
+    }
+    &software-reuse {
+        &:before {
+            content: url('/assets/images/icon-type-software-reuse.svg');
+        }
+    }
+    &software-open {
+        &:before {
+            content: url('/assets/images/icon-type-software-reuse.svg');
+        }
+    }
+    &news{
+        &:before {
+            content: url('/assets/images/icon-type-news.svg');
+        }
+    }
+  }
+  
 
