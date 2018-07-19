@@ -83,7 +83,7 @@ esDevelopersItaliaManager.prototype.pagerCallback = function(event) {
 
   // Execute Current query.
   this.executeCurrentQuery();
-}
+};
 
 esDevelopersItaliaManager.prototype.setCurrentLanguage = function() {
   // to guess language, get first element in path.
@@ -559,8 +559,6 @@ function esDevelopersItaliaQuery(config, params) {
   };
   this.config = $.extend(defaultConfig, config);
 
-  this.throbber;
-
   this.languages = {
     'it': 'ita',
     'en': 'eng'
@@ -675,6 +673,9 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
           break;
         case 'post':
           html = this.renderPost(response.hits.hits[i]._source);
+          break;
+        case 'administration':
+          html = this.renderAdministration(response.hits.hits[i]._source);
           break;
       }
       $(this.config['pageContent']).append(html);
@@ -876,7 +877,7 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
 };
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
-  var screenshot = 'http://via.placeholder.com/350x150';
+  var screenshot = this.getSoftwareScreenshot(software);
   var localisedName = software.name;
   var language = this.config['language'];
   var category = this.getSoftwareType(software);
@@ -904,7 +905,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
 };
 
 esDevelopersItaliaQuery.prototype.renderPost = function(post) {
-  var screenshot = 'http://via.placeholder.com/350x150';
+  var screenshot = this.getPostScreenshot(post);
   var localisedName = post.title;
   var language = this.config['language'];
   var category = this.getPostType(post);
@@ -927,6 +928,24 @@ esDevelopersItaliaQuery.prototype.renderPost = function(post) {
   return this.templates.search(data);
 };
 
+esDevelopersItaliaQuery.prototype.renderAdministration = function(administration) {
+  var screenshot = '/assets/images/cover_amministrazioni.png';
+  var language = this.config['language'];
+
+  var data = {
+    'name': administration["it-riuso-codiceIPA-label"],
+    'localisedName': administration["it-riuso-codiceIPA-label"],
+    'language': language,
+    'screenshot': screenshot,
+    'readMore': this.readMore[language],
+    'category':  'administration',
+    'categoryClass': ['icon', 'icon-type-administration'].join(' '),
+    'path': '/' + language + '/amministrazioni?it-riuso-codiceIPA=' + administration["it-riuso-codiceIPA"] + '&it-riuso-codiceIPA-label=' + administration["it-riuso-codiceIPA-label"]
+  };
+
+  return this.templates.search(data);
+};
+
 esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
   var language = this.config['language'];
   var category = this.config['category'][language]['missing'];
@@ -941,6 +960,19 @@ esDevelopersItaliaQuery.prototype.getSoftwareType = function(software) {
   return category;
 };
 
+esDevelopersItaliaQuery.prototype.getSoftwareScreenshot = function(software) {
+  var screenshot = 'http://via.placeholder.com/350x150';
+
+  if (software['it-riuso-codiceIPA'] == null){
+    screenshot = '/assets/images/cover_softwareriuso.png';
+  }
+  else {
+    screenshot = '/assets/images/cover_software opensource.png';
+  }
+
+  return screenshot;
+};
+
 esDevelopersItaliaQuery.prototype.getPostType = function(post) {
   var language = this.config['language'];
   var category = this.config['category'][language]['missing'];
@@ -950,6 +982,18 @@ esDevelopersItaliaQuery.prototype.getPostType = function(post) {
   }
 
   return category;
+};
+
+esDevelopersItaliaQuery.prototype.getPostScreenshot = function(post) {
+  var screenshot = 'http://via.placeholder.com/350x150';
+
+  switch (post.type) {
+    case 'projects':
+      screenshot = '/assets/images/cover_piattaforme.png';
+      break;
+  }
+
+  return screenshot;
 };
 
 /**
@@ -987,7 +1031,7 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
             'subtitle^5',
             'title^3',
             'subtitle^2',
-            'html',
+            'html'
           ]
         }
       }
@@ -1092,7 +1136,7 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
             'name^3',
             'description.' + language_alpha_3 + '.localizedName^3',
             'description.' + language_alpha_3 + '.shortDescription^2',
-            'description.' + language_alpha_3 + '.longDescription',
+            'description.' + language_alpha_3 + '.longDescription'
           ]
         }
       }
@@ -1142,7 +1186,7 @@ esDevelopersItaliaApiQuery.prototype.getQuery = function() {
             'subtitle^5',
             'title^3',
             'subtitle^2',
-            'html',
+            'html'
           ]
         }
       }
@@ -1192,7 +1236,7 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function() {
             'name^3',
             'description.' + language_alpha_3 + '.localizedName^3',
             'description.' + language_alpha_3 + '.shortDescription^2',
-            'description.' + language_alpha_3 + '.longDescription',
+            'description.' + language_alpha_3 + '.longDescription'
           ]
         }
       }
@@ -1230,7 +1274,6 @@ esDevelopersItaliaCategoryQuery.prototype = Object.create(esDevelopersItaliaQuer
  */
 function esDevelopersItaliaAutocompleteAllQuery(config, getParams) {
   esDevelopersItaliaQuery.call(this, config, getParams);
-  this.searchObjectId;
 }
 
 esDevelopersItaliaAutocompleteAllQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/wellnet/searchyll.git
-  revision: d8e78ee30e4687e844ea190ec26c177362c438f6
+  revision: 9c5be834cd37230ec39b721286447d9a9208147a
   specs:
     searchyll (0.10.0)
       elasticsearch-ruby
@@ -114,7 +114,7 @@ GEM
     rouge (3.1.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
-    sass (3.5.6)
+    sass (3.5.7)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
