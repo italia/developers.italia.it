@@ -1850,10 +1850,9 @@ html, body {
 
 }
 *[class*='icon-type'] {
-    color: #00264D;
-    font-size: 0.9rem;
 
     &:before {
+        color: #00264D;
         content:'';
         font-size: inherit;
         line-height: 0;
@@ -1894,5 +1893,24 @@ html, body {
         }
     }
   }
-  
+.list-item-sorting *[class*='icon-type'] {
+    font-size: 0.9rem;
+    color: #00264D;
+}
+
+#suggestions {
+    *[class*='icon-type'] {
+        &:before {
+            top: 0;
+        }
+    }
+    .results {
+        font-size: 1.25rem;
+    }
+    .results + span {
+        text-transform: uppercase;
+        margin-left: 1rem;
+    }
+}
+
 
