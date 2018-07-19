@@ -1,6 +1,8 @@
 import React from "react";
 
-export default class AuthorizeBtn extends React.Component {
+import "./Authorize.css";
+
+export default class Authorize extends React.Component {
   onClick() {
     let { authActions, authSelectors } = this.props;
     let definitions = authSelectors.definitionsToAuthorize();
@@ -15,19 +17,22 @@ export default class AuthorizeBtn extends React.Component {
     let showPopup = !!authSelectors.shownDefinitions();
     let isAuthorized = !!authSelectors.authorized().size;
 
+    const { authorize } = window.l10n.swagger;
+
     return (
-      <div className="auth-wrapper">
-        <button
-          className="Button Button--round u-borderRadius-m u-text-r-xxs u-background-white u-color-50"
-          onClick={this.onClick.bind(this)}
-        >
-          {"Authorize "}
-          <span
-            className={`u-text-r-xxs Icon Icon-${
-              isAuthorized ? "lock" : "unlock"
-            }`}
-          />
-        </button>
+      <div className="swagger--auth auth-wrapper">
+        <div className="toggles">
+          <label htmlFor="swagger-authorize">
+            {authorize}
+            <input
+              type="checkbox"
+              id="swagger-authorize"
+              onChange={this.onClick.bind(this)}
+              value={isAuthorized}
+            />
+            <span className="lever" />
+          </label>
+        </div>
         {showPopup && <AuthorizationPopup />}
       </div>
     );

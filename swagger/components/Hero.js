@@ -4,18 +4,25 @@ import { sanitizeUrl } from "@braintree/sanitize-url";
 
 import "./Hero.css";
 
+import platformIcon from "../assets/platform.png";
+
+const copyToClipboard = text => {
+  const field = document.createElement("textarea");
+  field.innerText = text;
+  document.body.appendChild(field);
+  field.select();
+  document.execCommand("copy");
+  field.remove();
+};
+
 class Hero extends Component {
   render() {
     const { specSelectors, getComponent } = this.props;
-
-    const Markdown = getComponent("Markdown", true);
 
     const info = specSelectors.info();
     const title = info.get("title");
     const version = info.get("version");
     const servers = specSelectors.servers();
-
-    const description = info.get("description");
 
     const contact = info.get("contact");
     const name = contact && contact.get("name");
@@ -23,99 +30,143 @@ class Hero extends Component {
     const email = contact && contact.get("email");
 
     const terms = info.get("termsOfService");
+    const summary = info.get("summary");
+    const project = info.get("project");
+
+    const reference = projects.filter(proj => proj.id === project)[0];
 
     const {
       download,
+      server,
       url,
       intro,
       channel,
       developer,
-      tos
-    } = window.i10n.swagger;
+      tos,
+      platform,
+      goToPlatform
+    } = window.l10n.swagger;
 
     return (
-      <div className="u-color-grey-50 u-posRelative swagger--hero">
-        <h1 className="u-text-h2 u-color-black u-padding-bottom-xs swagger--hero-header">
-          {title}
-          <span className="Pill Pill--xxs u-background-50 u-color-white u-textWeight-600 u-margin-left-xs swagger--hero-pill">
-            {version}
-          </span>
-        </h1>
-
-        <a
-          href={window.swaggerUrl}
-          className="Button Button--round u-borderRadius-m u-text-r-xxs u-background-white u-color-50 u-posAbsolute"
-          target="_blank"
-        >
-          {download}
-        </a>
-
-        <p className="u-padding-bottom-xxl u-text-r-xxs">
-          {servers && servers.size ? (
-            <code>
-              [ {`${url}`}: {servers.first().get("url")} ]
-            </code>
-          ) : (
-            "-"
-          )}
-        </p>
-
-        <div className="u-padding-bottom-xl u-lineHeight-xl u-text-r-xs">
-          {description ? <Markdown source={description} /> : "-"}
-        </div>
-
-        <div className="Grid u-padding-bottom-m u-padding-top-xxl">
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${developer}`}
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${channel}`}
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {`${tos}`}
-          </div>
-        </div>
-
-        <div className="Grid">
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            <div>
-              {contactUrl ? (
-                <a href={sanitizeUrl(contactUrl)} target="_blank">
-                  <img
-                    className="swagger--hero-contact-logo"
-                    src={window.contactLogo}
-                    alt={name}
-                  />
+      <section className="swagger--hero">
+        <div className="row">
+          <div className="col-7">
+            <div className="mr-5">
+              <h1 className="display-1 mb-4">
+                {title}
+                <span className="badge badge-pill badge-primary swagger--hero-pill ml-2">
+                  {version}
+                </span>
+              </h1>
+              <section className="mb-5">
+                <div className="row">
+                  <div className="col">
+                    {(() => {
+                      if (summary) {
+                        return (
+                          <blockquote className="mb-5 blockquote swagger--hero-summary">
+                            {summary}
+                          </blockquote>
+                        );
+                      }
+                    })()}
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-4">{`${developer}`}</div>
+                  <div className="col-4">{`${channel}`}</div>
+                  <div className="col-4">{`${tos}`}</div>
+                </div>
+                <div className="row">
+                  <div className="col-4 text-overflow-wrap">
+                    {contactUrl ? (
+                      <a href={sanitizeUrl(contactUrl)} target="_blank">
+                        {name}
+                      </a>
+                    ) : (
+                      <span>{name}</span>
+                    )}
+                  </div>
+                  <div className="col-4 text-overflow-wrap">
+                    {email ? (
+                      <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                  <div className="col-4 text-overflow-wrap">
+                    {terms ? (
+                      <a href={sanitizeUrl(terms)} target="_blank">
+                        {terms}
+                      </a>
+                    ) : (
+                      "-"
+                    )}
+                  </div>
+                </div>
+              </section>
+              <div>
+                <a
+                  href={window.swaggerUrl}
+                  role="button"
+                  className="btn btn-primary mr-3"
+                  target="_blank"
+                >
+                  {download}
                 </a>
-              ) : (
-                <img
-                  className="swagger--hero-contact-logo"
-                  src={window.contactLogo}
-                  alt={name}
-                />
-              )}
+                <a
+                  href={servers && servers.size && servers.first().get("url")}
+                  role="button"
+                  className="btn btn-outline-primary mr-3"
+                  onClick={e => {
+                    e.preventDefault();
+                    try {
+                      const url =
+                        servers && servers.size && servers.first().get("url");
+                      copyToClipboard(url);
+                    } catch (e) {
+                      // not supported
+                    }
+                  }}
+                >
+                  {server}
+                </a>
+              </div>
             </div>
           </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            <div>
-              {email ? (
-                <a href={sanitizeUrl(`mailto:${email}`)}>{email}</a>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
-          <div className="Grid-cell u-md-size4of12 u-lg-size4of12">
-            {terms ? (
-              <a href={sanitizeUrl(terms)} target="_blank">
-                {terms}
-              </a>
-            ) : (
-              "-"
-            )}
+          <div className="col">
+            {(() => {
+              if (project) {
+                const { id, title, description } = reference;
+                return (
+                  <div className="card rounded border border-primary mt-5 swagger--hero--card">
+                    <div className="card-body">
+                      <div className="position-absolute text-uppercase swagger--hero--card-legend">
+                        {platform}
+                      </div>
+
+                      <h3 className="card-title">{title}</h3>
+                      <blockquote
+                        className="blockquote card-text swagger--hero--card-description"
+                        dangerouslySetInnerHTML={{ __html: description }}
+                      />
+                      <div>
+                        <a
+                          className="text-uppercase swagger--hero--card-platform-link"
+                          href={`/${lang}/${id}`}
+                        >
+                          <img className="mr-2" src={platformIcon} alt={goToPlatform} />
+                          {goToPlatform} →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+            })()}
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

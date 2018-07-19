@@ -26,7 +26,21 @@ npm start
 
 La fase di installazione delle dipendenze è inclusa nello script `prestart`.
 
+In fase di sviluppo il file `index.js` gestisce tramite `window.swaggerUrl` quale specifica Swagger visualizzare (in produzione questo verrà iniettato da Jekyll).
+
+Alcune delle specifiche da poter testare sono presenti su
+- https://github.com/teamdigitale/api-openapi-samples/tree/master/openapi-v3
+- https://github.com/teamdigitale/api-openapi-samples/tree/master/external-apis
+
 ### Jekyll
 
-Il server di sviluppo è stato incluso tramite `iframe` anche in `jekyll serve` per semplificare l'integrazione della parte JavaScript.
+Il server di sviluppo è stato incluso tramite `iframe` (che punta al server di sviluppo su http://localhost:1234/) anche in `jekyll serve` per semplificare l'integrazione della parte JavaScript.
 Per lo styling è ancora opportuno fare affidamento al risultato della `build`.
+
+In alternativa è possibile includere manualmente gli stili in `swagger.html`
+```html
+<link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+<link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/dist/css/italia-icon-font.css">
+
+```
+ed utilizzare solo il server di sviluppo http://localhost:1234/ notando che gli stili eventualmente ereditati da Jekyll andranno così persi.

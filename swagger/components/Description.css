@@ -1,0 +1,38 @@
+.swagger--description
+{
+    font-family: Lora;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #5a6772;
+}
+
+.swagger-ui .swagger--description h1,
+.swagger-ui .swagger--description h2,
+.swagger-ui .swagger--description h3,
+.swagger-ui .swagger--description h4,
+.swagger-ui .swagger--description h4:first-of-type,
+.swagger-ui .swagger--description h5,
+.swagger-ui .swagger--description h6,
+.swagger-ui .swagger--description header
+{
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 31px;
+
+    height: 31px;
+
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    color: #17324d;
+}
+
+.swagger-ui .swagger--description h4,
+.swagger-ui .swagger--description h5,
+.swagger-ui .swagger--description h6
+{
+    font-size: 18px;
+    line-height: 24px;
+}

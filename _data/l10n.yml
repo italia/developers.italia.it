@@ -59,7 +59,7 @@ it:
     home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per argomento
-    newsletter_privacy: Accetto la 
+    newsletter_privacy: Accetto la
     newsletter_submit: Iscriviti
 
     home_tools_title: Strumenti
@@ -113,12 +113,16 @@ it:
     project_risorse: Tutte le risorse
 
     swagger:
-      download: "Scarica OpenAPI"
+      download: "Scarica specifica"
+      server: "Copia link del server"
       url: "Server"
       developer: "Erogatore"
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
+      authorize: "Autorizza"
       goToCard: Vai alla scheda
+      platform: "Piattaforma di riferimento"
+      goToPlatform: "Vai alla piattaforma"
 
     software:
       software_open: Software open source
@@ -234,7 +238,7 @@ en:
     home_news_title: News
     home_news_expand: read more
     home_tags: Browse by tag
-    newsletter_privacy: Accetto la 
+    newsletter_privacy: Accetto la
     newsletter_submit: Iscriviti
 
     home_tools_title: Tools
@@ -287,10 +291,15 @@ en:
 
     swagger:
       download: "Download OpenAPI"
+      server: "Copy server link"
       url: "Server"
+      developer: "Developer"
       channel: "Contact"
       tos: "Terms of service"
+      authorize: "Authorize"
       goToCard: Vai alla scheda
+      platform: "Reference platform"
+      goToPlatform: "Go to platform"
 
     software:
       software_open: Software open source

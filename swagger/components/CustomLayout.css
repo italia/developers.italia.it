@@ -1,15 +1,24 @@
-.swagger-ui .loading-container {
-  margin-top: 0 !important;
+.custom-layout
+{
+    padding-top: 92px;
 }
 
-.swagger--head-card {
-  top: -120px;
-  margin-bottom: -36px;
+.custom-layout--hero
+{
+    padding-bottom: 210px;
 }
 
-.swagger--head-card a:link,
-.swagger--head-card a:visited,
-.swagger--head-card a:hover,
-.swagger--head-card a:active {
-  color: #06c;
+.custom-layout--description
+{
+    top: -130px;
+}
+
+.custom-layout--swagger--description
+{
+    background: #f5f7fa;
+}
+
+.swagger-ui .loading-container
+{
+    margin-top: 0 !important;
 }
