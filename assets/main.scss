@@ -1849,4 +1849,68 @@ html, body {
     }
 
 }
+*[class*='icon-type'] {
+
+    &:before {
+        color: #00264D;
+        content:'';
+        font-size: inherit;
+        line-height: 0;
+        top: 0.25rem;
+        margin-right: 0.5rem;
+        position: relative;
+    }
+}
+.icon-type- {
+    &api {
+        &:before {
+            content: url('/assets/images/icon-type-api.svg');
+        }
+    }
+    &administrations {
+        &:before {
+            content: url('/assets/images/icon-type-administrations.svg');
+        }
+    }
+    &projects {
+        &:before {
+            content: url('/assets/images/icon-type-projects.svg');
+        }
+    }
+    &software-reuse {
+        &:before {
+            content: url('/assets/images/icon-type-software-reuse.svg');
+        }
+    }
+    &software-open {
+        &:before {
+            content: url('/assets/images/icon-type-software-reuse.svg');
+        }
+    }
+    &news{
+        &:before {
+            content: url('/assets/images/icon-type-news.svg');
+        }
+    }
+  }
+.list-item-sorting *[class*='icon-type'] {
+    font-size: 0.9rem;
+    color: #00264D;
+}
+
+#suggestions {
+    *[class*='icon-type'] {
+        &:before {
+            top: 0;
+        }
+    }
+    .results {
+        font-size: 1.25rem;
+    }
+    .results + span {
+        text-transform: uppercase;
+        margin-left: 1rem;
+    }
+}
+
 

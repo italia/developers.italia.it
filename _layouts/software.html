@@ -82,14 +82,14 @@ layout: default
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA != nil %}
-      <div class="col-sm col-md-4 item">
+      <div class="col-sm col-md-3 item">
         {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
         {% if software.description[active_lang_extended].screenshots != nil %}
           {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
         {% elsif software.description.eng.screenshots != nil %}
           {% assign mainImage = software.description.eng.screenshots | first %}
         {% endif %}
-
+        <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
         <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
         <p class="name">
