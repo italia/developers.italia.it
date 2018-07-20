@@ -22,7 +22,7 @@ lang: it
   <div class="container d-flex justify-content-center mt-2 mt-md-5 mb-2 mb-md-5">
       <div class="col-sm-10">
       <h1 class="text-center">{{t.credits_maintainers}}</h1>
-      <div class="row">
+      <div class="row justify-content-center">
       {% for person in site.data.people %}
         {% if person[1].status == 'admin' %}
         <div class="col-sm-6 col-md-4">
@@ -35,11 +35,11 @@ lang: it
       </div>
   </div>
 </section>
-<hr class="container credits-hr"/>
+<hr class="credits-hr"/>
 <section class="credits-people pt-2 pb-2">
     <div class="container  d-flex justify-content-center mt-2 mt-md-5 mb-2 mb-md-5">
       <div class="col-sm-10">
-        <div class="row ">
+        <div class="row justify-content-center">
             {% for person in site.data.people %}
                   {% if person[1].status == 'maintainer' %}
                   <div class="col-sm-6 col-md-4 mt-2 mt-md-4 mb-2 mb-md-4">

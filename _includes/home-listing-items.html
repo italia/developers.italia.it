@@ -33,10 +33,13 @@
                     {% assign itemUrlName = item.name | replace: ' ', '-' | downcase %}
                     {% assign itemUrl = include.destinationfolder | append: itemUrlName %}
                 {% endif %}
-                <div class="col-md ">
-                    <article class="d-flex flex-column align-items-start h-100 px-3 mb-4 mb-sm-0 {% if withimages!=true %}withshadow{%endif%} " >
+                <div class="col-md {% if withimages!=true %}px-3{%endif%}">
+                    <article class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} " >
                         {% if withimages==true %}
-                        <a title="{{item.name | default:item.title}}" href="{{itemUrl}}">
+                        <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="home-listing-item__imgwrapper">
+                        {% if include.additionalclass contains 'crop' %}
+                            <img src="{{'/assets/images/transparent-mask.png' | relative_url}}" class="home-listing-item__mask w-100">
+                        {% endif %}
                         <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
                         </a>
                         {% endif %}

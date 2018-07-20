@@ -2,11 +2,12 @@
 
 
 <section class="pairblock overflow-x-hidden">
-    <div class="container position-relative">
+    <div class="position-relative">
         <div class="row row-eq-height ">
             {% for block in blocks %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
             <article class="col-md-6 py-2 py-md-5 d-flex flex-column {{thecycle}}" >
+                <div class="pairblock__inner">
                 {% if block.image %}
                 <div class="text-center py-4 px-3" >
                     <img src="{{block.image | relative_url}}" alt="{{block.title}}" class="img-fluid">
@@ -23,6 +24,7 @@
                         {% endfor %}
                     </div>
                 {% endif %}
+                </div>
                 </article>
             {% endfor %}
         </div>

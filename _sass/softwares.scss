@@ -121,11 +121,14 @@
       background-size: cover !important;
     }
     .name {
-      font-size: 1.25em;
-      margin-top: 1em;
+      font-size: 1.2em;
+      margin: 1rem 0;
+      font-weight: 700;
+      color: #333333;
     }
-    a {
+    .item-more {
       text-transform: uppercase;
+      color: $primary;
     }
   }
 }

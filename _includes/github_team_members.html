@@ -4,7 +4,7 @@
 
 <div class="project__leaders">
 	<h6 class="mb-3">{{  t.project_leader }} </h6>
-	<div id="projectLeadersIndicator" class="carousel slide d-flex flex-column" data-ride="carousel">
+	<div id="projectLeadersIndicator" class="carousel slide d-flex flex-column {% if team_members.size < 3 %}no-height{%endif%}" data-ride="carousel">
 		<div class="carousel-inner">
 			{% for member in team_members %}
 				{% assign division3index0 = forloop.index0 | modulo:3 %}
@@ -29,17 +29,8 @@
 		</div>
 		{% if team_members.size > 3 %}
 		<div class="carousel-footer mt-auto d-flex">
-			<div class="carousel-arrows">
-			<a class="carousel-control-prev" href="#projectLeadersIndicator" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"><i class="it-chevron-left "></i></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#projectLeadersIndicator" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"><i class="it-chevron-right "></i></span>
-				<span class="sr-only">Next</span>
-			</a>
-			</div>
-			<ol class="carousel-indicators align-self-center ml-auto">
+
+			<ol class="carousel-indicators align-self-center">
 				{% assign indicators = team_members.size | modulo: 3 %}
 				{% assign checkIndicators = indicators | times: 3 %}
 				

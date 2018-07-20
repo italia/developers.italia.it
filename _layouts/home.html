@@ -53,9 +53,17 @@ layout: default
 
 {% include home-listing-items.html source='type:projects' limit=4 title='Piattaforme' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' viewalltitle='Vedi tutto' viewallurl='/it/piattaforme/' %}
 
-{% include home-listing-items.html source='data:softwares' destinationfolder='/it/software/' title='Software a riuso' withimages=true captiontitle='Come lo uso' captionurl='/it/come-lo-uso' viewalltitle='Vedi tutto' viewallurl='/it/software/' %}
+{% include home-listing-items.html source='data:softwares'
+  additionalclass='crop'
+  destinationfolder='/it/software/' 
+  title='Software a riuso' 
+  withimages=true 
+  captiontitle='Come lo uso' 
+  captionurl='/it/come-lo-uso' 
+  viewalltitle='Vedi tutto' 
+  viewallurl='/it/software/' %}
 
-<hr class="grayline"/>
+<hr class="grayline my-2 my-md-0"/>
 
 {% include home-software-tags.html %}
 

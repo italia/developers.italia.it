@@ -21,7 +21,7 @@ layout: default
 
 <div class="apilist">
   <div class="container">
-  <section class="apilist__content mt-2 mt-md-5 mb-2 mb-md-5 pt-2 pt-md-4 pb-2">
+  <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
     <h1>{{ page.title }}</h1>
     <div class="row mb-2 mb-md-4">
       <div class="col-md-6">
@@ -31,7 +31,7 @@ layout: default
         {{page.content}}
       </div>
     </div>
-    <div class="apilist__listing pt-2 pt-md-4 pb-2 pb-md-4">
+    <div class="apilist__listing">
       <div class="row row-eq-height">
         {% for api in apis %}
           {% assign url = '' %}
@@ -43,8 +43,8 @@ layout: default
           {% if api.contact.logo %}
             {% assign hasImage = true %}
           {% endif %}
-        <div class="col-md-4 p-2 p-md-3 mb-2 mb-md-4">
-          <article class="d-flex flex-column align-items-start h-100 mb-md-2">
+        <div class="col-md-4 p-2">
+          <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
               {% if hasImage %}
               <figure>
                 <a title="{{api.name}}" href="{{url}}">
