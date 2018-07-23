@@ -145,7 +145,7 @@ layout: default
 <div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
     {% if page.oldVariant.size != nil %}
-      <h2> {{ t.software.functionality }} </h2>
+      <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
     {% endif %}
     <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
       {% if page.oldVariant.size == nil %}
@@ -154,6 +154,7 @@ layout: default
       {% endif %}
       {% if page.isBasedOn != nil %}
         <div class="col-md-6 variant">
+          <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
           {% if page.oldVariant.size == nil %}
             <h2> {{ t.software.functionality }} </h2>
           {% endif %}
@@ -223,8 +224,8 @@ layout: default
                 {% else %}
                   {{ t.software.administration }}
                 {% endif %}
-                <span class="or">&or;</span>
-                <span class="and">&and;</span>
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
               </a>
               <div class="collapse" id="by-amministration">
                 {% for item in page.usedBy %}
@@ -233,6 +234,7 @@ layout: default
               </div>
             </div>
           {% endif %}
+          </div>
         </div>
         {% if page.oldVariant.size != nil %}
           <div class="col-md-6 variant">
@@ -282,8 +284,8 @@ layout: default
                   {% else %}
                     {{ t.software.variant_present }}
                   {% endif %}
-                  <span class="or">&or;</span>
-                  <span class="and">&and;</span>
+                  <span class="or it-expand"></span>
+                  <span class="and it-collapse"></span>
               </a>
               <div class="collapse" id="listVariant">
                 {% for variant in page.oldVariant  %}
@@ -377,8 +379,8 @@ layout: default
                 {% else %}
                   {{ t.software.administration }}
                 {% endif %}
-                <span class="or">&or;</span>
-                <span class="and">&and;</span>
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
               </a>
               <div class="collapse" id="by-amministration">
                 {% for item in page.usedBy %}
@@ -392,6 +394,9 @@ layout: default
     </div>
   </div>
 </div>
+
+<hr class="divider {% if page.oldVariant.size == nil %}mt-0{% endif %}">
+
 <div class="container">
   {% if page.relatedSoftwares %}
   <div class="interestRelatedSoftwares">
@@ -409,7 +414,7 @@ layout: default
                   {{ item.name }}
                 {% endif %}
               </p>
-              <a href="{{ item[active_lang_extended].url }}" class="relate-link"> {{ t.software.read_more }}</a>
+              <a href="{{ item[active_lang_extended].url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
             </div>
           </div>
         {% endfor %}
@@ -501,8 +506,8 @@ layout: default
               {% else %}
                 {{ t.software.technical_contacts }}
               {% endif %}
-              <span class="or">&or;</span>
-              <span class="and">&and;</span>
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
             </a>
             <div id="maintenanceContact" class="collapse dont-collapse-md">
               <div class="row">
@@ -650,8 +655,8 @@ layout: default
           <div class="main row">
             <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false" aria-controls="mainOthersInfo" class="d-block d-md-none controls">
                {{ t.software.others_info }}
-              <span class="or">&or;</span>
-              <span class="and">&and;</span>
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
             </a>
             <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
               {% if page.intendedAudience.onlyFor != nil %}

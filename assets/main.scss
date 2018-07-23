@@ -1937,30 +1937,48 @@ html, body {
         &:before {
             content: url('/assets/images/icon-type-api.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-api--gray.svg');
+        }
     }
     &administrations {
         &:before {
             content: url('/assets/images/icon-type-administrations.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-administrations--gray.svg');
         }
     }
     &projects {
         &:before {
             content: url('/assets/images/icon-type-projects.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-projects--gray.svg');
+        }
     }
     &software-reuse {
         &:before {
             content: url('/assets/images/icon-type-software-reuse.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-software-reuse--gray.svg');
+        }
     }
     &software-open {
         &:before {
-            content: url('/assets/images/icon-type-software-reuse.svg');
+            content: url('/assets/images/icon-type-software-open.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-software-open--gray.svg');
         }
     }
     &news{
         &:before {
             content: url('/assets/images/icon-type-news.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-news--gray.svg');
         }
     }
   }
