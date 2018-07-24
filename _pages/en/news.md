@@ -5,5 +5,3 @@ title: News
 redirect_to:
   - "news"
 ---
-
-{% include setlang.html %}
