@@ -9,17 +9,19 @@ jobs:
     docker:
       - image: circleci/ruby:2.5.1-node-browsers
     environment:
+      - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
       - run: npm install .
+      - run: sed -e '/.*searchyll/ s/^#*/#/' -i _config.yml # Disable searchyll for test.
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: cp -r ./github ./_site/
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      #- run: cp -r ./github ./_site/ # Copy github folder into ./site.
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know

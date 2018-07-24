@@ -1,12 +1,12 @@
 {% assign newsletterdata = include.newsletterdata %}
 <section class="banner-newsletter ">
-   
+
     <div class="banner-newsletter__inner container d-flex justify-content-center position-relative">
         <div class="banner-newsletter__bkg">
             <img src="{{'/assets/images/banner-newsletter-image.svg' | relative_url}}">
         </div>
         <form class="col-sm-10 " action="{{newsletterdata.action}}">
-            <h1 class="mb-2 mb-md-4">Newsletter</h1>
+            <h1 class="mb-2 mb-md-4" name="newsletter">Newsletter</h1>
             <p class="banner-newsletter__text white-text font-serif mb-2 mb-md-4 w-100 mw-md-50">{{newsletterdata.text}}</p>
             {% for input in newsletterdata.inputs %}
                 <input type="{{input.type}}" name="{{input.name}}" value="{{input.value}}">
@@ -37,16 +37,16 @@
                             <label class="d-block " for="privacy">{{t.newsletter_privacy}}<a target="_blank" class="ml-1" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a></label>
                     </div>
                 </div>
-            
+
             </div>
 
             <div class="my-2 my-md-4">
                 <button type="submit" class="btn btn-primary btn-lg banner-newsletter__submit">{{t.newsletter_submit}}</button>
             </div>
-            
+
         </form>
-        
+
     </div>
-    
+
 
 </section>

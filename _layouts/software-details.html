@@ -45,7 +45,7 @@ layout: default
               {{ page.description.eng.genericName }}
               {% if page.isBasedOn != nil %}
                 <br>
-                <span class="abstract-software__variant"></span>{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
+                <span class="abstract-software__variant">{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
               {% endif %}
             </h2>
           {% elsif page.description.eng.genericName == nil %}
@@ -53,7 +53,7 @@ layout: default
               {{ description['genericName'] }}
               {% if page.isBasedOn != nil %}
                 <br>
-                <span class="abstract-software__variant"></span>{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
+                <span class="abstract-software__variant">{{ t.software.variant_by }} {{ page.legal.repoOwner }}</span>
               {% endif %}
             </h2>
           {% endif %}
@@ -117,23 +117,23 @@ layout: default
         </div>
         {% if page.description[active_lang_extended].documentation != nil %}
           <div class="goto doc">
-            <p><a href=" {{ page.description[active_lang_extended].documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ page.description[active_lang_extended].documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% elsif page.description.eng.documentation != nil  %}
           <div class="goto doc">
-            <p><a href=" {{ page.description.eng.documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ page.description.eng.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% elsif page.description.eng.documentation == nil  %}
           <div class="goto doc">
-            <p><a href=" {{ description['documentation'] }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ description['documentation'] }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% endif %}
           <div class="goto code">
-            <p><a href=" {{ page.repoUrl }} "> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
+            <p><a href="{{ page.repoUrl }}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
           </div>
         {% if page.roadmap != nil %}
         <div class="goto road">
-          <p><a href=" {{ page.roadmap }} "><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
+          <p><a href="{{ page.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
         </div>
         {% endif %}
       </div>
@@ -419,12 +419,10 @@ layout: default
   {% endif %}
   {% if page.shareTags %}
   <div class="tags-relate text-center">
-  <p>
     <strong>TAG</strong>
     {% for tag in page.shareTags limit: 3 %}
       {% include set-tag.html label=tag %}
     {% endfor %}
-  </p>
   </div>
   {% endif %}
 </div>
@@ -535,7 +533,6 @@ layout: default
                   {% endfor %}
               </div>
               <div class="col-md">
-                <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% for dependence in page.dependencies.open %}
                     <p class="platforms">
@@ -618,7 +615,6 @@ layout: default
                       {% endif %}
                     </p>
                   {% endfor %}
-                </p>
               </div>
               <div class="col-md">
                 <p>
