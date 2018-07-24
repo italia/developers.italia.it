@@ -117,23 +117,23 @@ layout: default
         </div>
         {% if page.description[active_lang_extended].documentation != nil %}
           <div class="goto doc">
-            <p><a href=" {{ page.description[active_lang_extended].documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ page.description[active_lang_extended].documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% elsif page.description.eng.documentation != nil  %}
           <div class="goto doc">
-            <p><a href=" {{ page.description.eng.documentation }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ page.description.eng.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% elsif page.description.eng.documentation == nil  %}
           <div class="goto doc">
-            <p><a href=" {{ description['documentation'] }} "><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
+            <p><a href="{{ description['documentation'] }}"><img src="/assets/icons/software_icons/it-documentazione.svg" >{{ t.software.goToDocumentation }} &rarr;</a></p>
           </div>
         {% endif %}
           <div class="goto code">
-            <p><a href=" {{ page.repoUrl }} "> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
+            <p><a href="{{ page.repoUrl }}"> <img src="/assets/icons/software_icons/it-codice.svg" >{{ t.software.goToCode }} &rarr;</a></p>
           </div>
         {% if page.roadmap != nil %}
         <div class="goto road">
-          <p><a href=" {{ page.roadmap }} "><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
+          <p><a href="{{ page.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg" >{{ t.software.goToRoadmap }} &rarr;</a></p>
         </div>
         {% endif %}
       </div>
