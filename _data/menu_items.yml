@@ -32,12 +32,12 @@ en:
   - title: API
     url: it/api
   - title: Who we are
-    url: '#'
+    url: '/en/credits'
   - title: How use it
     url: '#'
   - title: How get involved
     url: '#'
   - title: News
-    url: '/en/news'
+    url: 'en/news'
   - title: Contacts
     url: '#'

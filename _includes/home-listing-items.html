@@ -16,7 +16,7 @@
         {% assign sourcepages = site[target] | where:"lang", active_lang %}
         {% assign items = sourcepages %}
     {% elsif sourceconfig[0]=='data'  %}
-        {% assign target = sourceconfig[1] %}  
+        {% assign target = sourceconfig[1] %}
         {% assign items = site.data[target] %}
     {% endif %}
     <div class="container">
@@ -30,7 +30,7 @@
             {% for item in items limit: limititems %}
                 {% assign itemUrl = item.url %}
                 {% if sourceconfig[0]=='data' %}
-                    {% assign itemUrlName = item.name | replace: ' ', '-' | downcase %}
+                    {% assign itemUrlName = item.name | replace: ' ', '-' | replace: '+', '' | replace: '&', '' | downcase %}
                     {% assign itemUrl = include.destinationfolder | append: itemUrlName %}
                 {% endif %}
                 <div class="col-md ">
@@ -47,7 +47,7 @@
                             <p>{{item[itemdescription]}}</p>
                         {% endif %}
                         <a title="{{item.name | default:item.title}}" class="home-listing-item__url" href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
-                        
+
                     </article>
                 </div>
             {% endfor %}
@@ -61,5 +61,3 @@
     </div>
 
 </section>
-
-
