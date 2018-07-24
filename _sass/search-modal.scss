@@ -80,10 +80,12 @@
               color: gray;
               text-decoration: none;
               line-height: 2rem;;
-              .category {
-                font-size: 0.6em;
-                font-weight: 600;
+              .category+span {
                 opacity: 0.4;
+                font-size: 0.6em;
+                position: relative;
+                top: 0.2em;
+                text-transform: uppercase;
               }
               &:hover, 
               &:focus {
