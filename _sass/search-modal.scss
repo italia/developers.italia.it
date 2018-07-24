@@ -76,7 +76,7 @@
             height: 80vh;
             a {
               display: block;
-              font-size: 1.5rem;
+              font-size: 1.25rem;
               color: gray;
               text-decoration: none;
               line-height: 2rem;;
@@ -102,9 +102,11 @@
                 font-weight: 600;
                 padding-left: 1.5rem;
                 margin-top: 2rem;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
                 &:before {
                   content: '\e831';
-                  font-size: 1rem;
+                  font-size: 0.9rem;
                   color: $primary;
                   font-family: "italia-icon-font";
                   -ms-transform: rotate(270deg); /* IE 9 */

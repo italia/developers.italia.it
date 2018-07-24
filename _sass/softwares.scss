@@ -57,12 +57,12 @@
   }
 }
 .abstract-sorting {
-  padding-bottom: 2em;
+  padding-top: 2em;
   border-bottom: 1px solid #dee2e6;
   .results-number {
     font-weight: 600;
     p {
-      margin-bottom: 0;
+      margin-top: auto;
     }
   }
 }
@@ -125,6 +125,10 @@
       margin: 1rem 0;
       font-weight: 700;
       color: #333333;
+    }
+    .name+a {
+      text-transform: uppercase;
+      color: $primary;
     }
     .item-more {
       text-transform: uppercase;
