@@ -21,7 +21,7 @@ jobs:
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       #- run: cp -r ./github ./_site/ # Copy github folder into ./site.
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
