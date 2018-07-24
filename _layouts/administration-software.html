@@ -23,7 +23,7 @@ layout: default-pa
 	<div class="row intro">
     <div class="col-md-7">
       <div class="intro-name">
-        <img class="intro__img" src="http://placehold.it/48x48" class="d-inline-block">
+        <img class="intro__img d-inline-block" src="http://placehold.it/48x48">
         <h1 class="software-title">
           {% if page.description[active_lang_extended].localisedName != nil %}
             {{ page.description[active_lang_extended].localisedName }}
@@ -118,7 +118,7 @@ layout: default-pa
         {% endif %}
           <div class="goto code">
             <p>
-              <a href="{% if page.landingUrl != nil %}{{ page.landingUrl }} {% else %} {{ page.url }}  {% endif %}">
+              <a href="{% if page.landingUrl != nil %}{{ page.landingUrl }}{% else %}{{ page.url }}{% endif %}">
                 <img src="/assets/icons/software_icons/it-codice.svg" />
                 {{ t.software.goToCode }} &rarr;
               </a>
@@ -411,12 +411,10 @@ layout: default-pa
     </div>
   </div>
   <div class="tags-relate text-center">
-    <p>
       <strong>TAG</strong>
       {% for tag in page.shareTags limit: 3 %}
         {% include set-tag.html label=tag %}
       {% endfor %}
-    </p>
   </div>
 </div>
 <div class="detail-sheet">
@@ -529,7 +527,6 @@ layout: default-pa
                   {% endfor %}
               </div>
               <div class="col-md">
-                <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% for dependence in page.dependencies.open %}
                     <p class="platforms">
@@ -612,7 +609,7 @@ layout: default-pa
                       {% endif %}
                     </p>
                   {% endfor %}
-                </p>
+
               </div>
               <div class="col-md">
                 <p>
@@ -735,9 +732,7 @@ layout: default-pa
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
-              <p>
                 {{ content }}
-              </p>
 
               {% unless page.relatedSoftwares == nil %}
                 <hr class="divider-narrow">

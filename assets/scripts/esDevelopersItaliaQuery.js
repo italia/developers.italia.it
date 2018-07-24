@@ -470,6 +470,18 @@ function esDevelopersItaliaQuery(config, params) {
       'it': 'Cerca in tutto il sito',
       'en': 'Search all over the site'
     },
+    'emptySerp': {
+      'it': {
+        'title': 'Nessun risultato trovato',
+        'message': 'La parola "{keyword}" non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
+        'cta': 'Prova una nuova ricerca'
+      },
+      'en': {
+        'title': 'No results found',
+        'message': 'The word "{keyword}" has not produced any results. Try another search key.',
+        'cta': 'Try a new search'
+      }
+    },
     // css selector
     'pageContent': '.list-item-sorting > div',
 
@@ -665,6 +677,13 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
   if ((typeof response.hits !== 'undefined') && (typeof response.hits.hits !== 'undefined') && Array.isArray(response.hits.hits)) {
     typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
     $(this.config['pageContent']).text('');
+
+    if (response.hits.total === 0 ) {
+      var keyword = this.params['keyword'].slice(0).pop();
+      this.renderEmptyResults(keyword);
+      return;
+    }
+
     this.renderResultCount(response.hits.total);
     for (var i = 0; i < response.hits.hits.length; i++) {
       switch (response.hits.hits[i]._type) {
@@ -682,7 +701,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function(response){
     }
     this.renderPager(response.hits.total);
 
-    // if the query is riggered by pager, must be scoll on page top.
+    // if the query is triggered by pager, must be scoll on page top.
   }
 };
 
@@ -816,6 +835,18 @@ esDevelopersItaliaQuery.prototype.renderResultCount = function(tot) {
   $(this.config['totalSelector']).html(this.templates.tot({
     'tot': tot,
     'text': this.config['totalText'][language]
+  }));
+};
+
+esDevelopersItaliaQuery.prototype.renderEmptyResults = function(keyword) {
+  var object = this;
+  var language = object.config['language'];
+  var $intro = $('.intro');
+
+  $intro.html(this.templates.empty({
+    'title': object.config['emptySerp'][language].title,
+    'message': object.config['emptySerp'][language].message.replace("{keyword}", keyword),
+    'cta': object.config['emptySerp'][language].cta
   }));
 };
 
