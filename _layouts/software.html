@@ -20,7 +20,11 @@ layout: default
 <div class="container page-softwares-list">
  <div class="intro">
     <h1>{{ page.title }}</h1>
-    <p class="subtitle font-serif color-content my-2 my-md-4">{{ page.subtitle }}</p>
+    <div class="row">
+      <div class="col-md-7">
+        <p class="subtitle font-serif color-content my-2 my-md-4">{{ page.subtitle }}</p>
+      </div>
+    </div>
   </div>      
   <div class="container list-item-sorting">
     {% for software in site.data.softwares limit: 6 %}
@@ -31,7 +35,7 @@ layout: default
               <h2>{{ t.software.software_open }}</h2>
             </div>
              <div class="col-md-5 how">
-              <a href="#">Come lo uso &rarr;</a>
+              <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
             </div>
           </div>
         {% endif %}
@@ -47,17 +51,19 @@ layout: default
       {% elsif software.description.eng.screenshots != nil %}
         {% assign mainImage = software.description.eng.screenshots | first %}
       {% endif %}
-      <div class="col-sm col-md-4 item">
+      <div class="col-sm col-md-4 item mb-2 mb-md-5 p-2 p-md-3">
+        <a href="/{{active_lang}}/software/{{ software.name | replace: ' ', '-'  | downcase }}" class="d-block decoration-none " >
         <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
-        <p class="name">
+        <p class="name color-inherit">
           {% if software.description[active_lang_extended].localisedName != nil %}
             {{ software.description[active_lang_extended].localisedName }}
           {% else %}
             {{ software.name }}
           {% endif %}
         </p>
-        <a href="/{{active_lang}}/software/{{ software.name | replace: ' ', '-'  | downcase }}"> {{ t.software.read_more }} &rarr;</a>
+        <span class="item-more" > {{ t.software.read_more }} &rarr;</span>
+        </a>
       </div>
       {% endif %}
     {% endfor %} 
@@ -76,13 +82,14 @@ layout: default
         <h2>{{ t.software.reuse_software }}</h2>
       </div>
       <div class="col-md-5 how">
-        <a href="#">Come lo uso &rarr;</a>
+        <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
       </div>
     </div>
     <div class="row row-eq-height">
     {% for software in site.data.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA != nil %}
-      <div class="col-sm col-md-3 item">
+      <div class="col-sm col-md-3 item mb-2 mb-md-5 p-2 p-md-3">
+        <a href="{{ software.name | replace: ' ', '-' | downcase }}" class="d-block decoration-none ">
         {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
         {% if software.description[active_lang_extended].screenshots != nil %}
           {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
@@ -92,18 +99,19 @@ layout: default
         <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
         <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
-        <p class="name">
+        <p class="name color-inherit">
           {% if software.description[active_lang_extended].localisedName != nil %}
             {{ software.description[active_lang_extended].localisedName }}
           {% else %}
             {{ software.name }}
           {% endif %}
         </p>
-        <a href="{{ software.name | replace: ' ', '-' | downcase }}"> {{ t.software.read_more }} &rarr;</a>
+        <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+        </a>
       </div>
       {% endif %}
     {% endfor %} 
     </div>
-    {% include internal-link.html target="reuse_software" %} 
+    
   </div>
 </div>

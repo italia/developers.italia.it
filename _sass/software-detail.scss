@@ -5,6 +5,10 @@
       padding-left: 1em;
     }
   }
+  .h4 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
   .intro-name {
     img {
       margin-right: 1em;
@@ -14,13 +18,15 @@
     h1 {
       @extend .align-baseline;
     }
+    
     .abstract-software {
       h2 {
         font-weight: 300;
       }
       h3 {
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        line-height: 1.4;
       }
       .tag {
         margin: 2em 0 3em;
@@ -246,7 +252,7 @@ hr {
   }
 }
 .interestRelatedSoftwares {
-  margin: 2em 0;
+  margin: 5em 0;
   h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -260,6 +266,7 @@ hr {
   }
   .relate-link {
     text-transform: uppercase;
+    font-weight: 600;
   }
 }
 .tags-relate {
@@ -269,7 +276,7 @@ hr {
 }
 .detail-sheet {
   margin-top: 3em;
-  padding-top: 3em;
+  padding-top: 5em;
   background: -moz-linear-gradient(
     top,
     #1e5799 26%,
@@ -312,7 +319,7 @@ hr {
     .top {
       background: white;
       position: relative;
-      padding-top: 110px;
+      padding-top: 90px;
       &:before {
         content: "";
         position: absolute;

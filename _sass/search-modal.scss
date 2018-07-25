@@ -1,5 +1,20 @@
 #searchModal {
   top: 36px;
+  .icon {
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.5rem; 
+  }
+  .btn {
+    border: 1px solid #5A6772;
+    color: #5A6772;
+
+    &.active {
+      background-color: $primary;
+      color: #fff;
+      border: 1px solid $primary;
+    }
+  }
   .modal-dialog {
     margin: 0;
     width: 100%;
@@ -19,7 +34,8 @@
           position: relative;
           &:before {
             content: '\e831';
-            font-size: 3rem;
+            font-size: 2.6rem;
+            top: 0.2rem;
             color: $primary;
             font-family: "italia-icon-font";
             -ms-transform: rotate(270deg); /* IE 9 */
@@ -38,6 +54,19 @@
             height: auto;
             border-bottom: 1px solid #dee2e6;
             margin-bottom: 2rem;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              opacity: 0.5;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              opacity: 0.5;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              opacity: 0.5;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              opacity: 0.5;
+            }
           }
           #suggestions {
             position: absolute; 
@@ -47,14 +76,16 @@
             height: 80vh;
             a {
               display: block;
-              font-size: 1.5rem;
+              font-size: 1.25rem;
               color: gray;
               text-decoration: none;
               line-height: 2rem;;
-              .category {
-                font-size: 0.6em;
-                font-weight: 600;
+              .category+span {
                 opacity: 0.4;
+                font-size: 0.6em;
+                position: relative;
+                top: 0.2em;
+                text-transform: uppercase;
               }
               &:hover, 
               &:focus {
@@ -73,9 +104,11 @@
                 font-weight: 600;
                 padding-left: 1.5rem;
                 margin-top: 2rem;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
                 &:before {
                   content: '\e831';
-                  font-size: 1rem;
+                  font-size: 0.9rem;
                   color: $primary;
                   font-family: "italia-icon-font";
                   -ms-transform: rotate(270deg); /* IE 9 */

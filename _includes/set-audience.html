@@ -1,4 +1,10 @@
 {% assign label_audiences = include.label %}
 {% assign software_audiences = site.data.software_pa_types[label_audiences] %}
 
-{% if software_audiences[active_lang] != nil %}{{ software_audiences[active_lang] }} {% else %} {{ software_audiences.en }} {% endif %}
+{% if software_audiences[active_lang] != nil %}
+    {{ software_audiences[active_lang] }}
+{% elsif software_audiences.en != nil  %}
+    {{ software_audiences.en }}
+{% else %}
+    {{include.label}}
+{% endif %}

@@ -17,11 +17,11 @@
                 <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software{% if active_lang == 'it' %} o amministrazioni{% else %} or administrations{% endif %}">
                 <div id="suggestions" class="d-none"></div>
               </div>
-              <a class="btn btn-outline-primary all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
-              <a class="btn btn-outline-primary platforms" data="platforms">{{ t.software.platforms | capitalize }}</a>
-              <a class="btn btn-outline-primary software_open" data="software_open">{{ t.software.software_open | capitalize }}</a>
-              <a class="btn btn-outline-primary reuse_software" data="reuse_software">{{ t.software.reuse_software | capitalize }}</a>
-              <a class="btn btn-outline-primary administrations" data="administrations">{{ t.software.administrations | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-projects--gray"></span>{{ t.software.platforms | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-software-open--gray"></span>{{ t.software.software_open | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-software-reuse--gray"></span>{{ t.software.reuse_software | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administrations--gray"></span>{{ t.software.administrations | capitalize }}</a>
             </div>
           </form>
         </div>

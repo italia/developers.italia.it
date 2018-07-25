@@ -16,14 +16,14 @@ $(document).ready(function () {
     var $inputText = $('#searchModal .autocomplete input');
     
     $inputText.on('input', executeAutoCompleteESQuery);
-    $('#searchModal form a.btn-outline-primary').on('click', function(event){
+    $('#searchModal form a.btn-filter').on('click', function(event){
       event.preventDefault();
       $inputText.val(''); $('#suggestions').text('');
       if($(event.target).hasClass('active')) {
         return;
       }
 
-      $('#searchModal form a.btn-outline-primary.active').removeClass('active')
+      $('#searchModal form a.btn-filter.active').removeClass('active')
       $(event.target).addClass('active');
     });
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
   }
 
   function executeAutoCompleteESQuery(event) {
-    var queryType = $('#searchModal form a.btn-outline-primary.active').attr('data');
+    var queryType = $('#searchModal form a.btn-filter.active').attr('data');
     var esAutocompleteQuery;
     if (event.target.value.length > 0) {
       $('#suggestions').removeClass('d-none');

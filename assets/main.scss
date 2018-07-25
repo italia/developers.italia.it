@@ -86,6 +86,11 @@ h2, .h2 {
 .color-inherit {
     color: inherit;
 }
+.primary-on-hover {
+    &:hover {
+        color: $primary;
+    }
+}
 // Ridefinizione della misura base del testo, come da mockup
 html, body {
     font-size: 16px;
@@ -541,9 +546,17 @@ html, body {
         color: $gray-600;
     }
     &-mantainers {
+        position: relative;
+
         h1 {
         color: #17324D;
         margin: 3rem 0;
+        }
+        &:before {
+            content: url(/assets/images/chisiamo-bkg.svg);
+            position: absolute;
+            z-index: 0;
+
         }
     }
     &-contributors {
@@ -560,7 +573,7 @@ html, body {
     }
     &-hr {
         border-top: 1px solid #455B71;
-        opacity: 0.5;
+        opacity: 0.2;
     }
     &-person-name {
         color: #17324D;
@@ -768,7 +781,7 @@ html, body {
     background-repeat: no-repeat;
     padding: 2rem 0;
     @include media-breakpoint-up(md) {
-        padding: 6rem 0;
+        padding: 5rem 0;
     }
 
     h1 {
@@ -802,7 +815,15 @@ html, body {
 .home-listing-items {
     padding: 2rem 0;
     @include media-breakpoint-up(md) {
-        padding: 3rem 0;
+        padding: 5rem 0;
+    }
+
+    h1 {
+        font-size: 2 rem;
+        @include media-breakpoint-up(md) {
+            font-size: 2.5rem;
+        }
+
     }
     a {
         text-decoration: none !important;
@@ -840,6 +861,7 @@ html, body {
             }
 
         }
+        
     }
     .home-listing-item {
         &__url {
@@ -849,6 +871,20 @@ html, body {
             text-transform: uppercase;
         }
         
+        
+    }
+    &.crop {
+        .home-listing-item__imgwrapper {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+        }
+        .home-listing-item__img {
+            position: absolute;
+            z-index: 0;
+            top: 0;
+        }
     }
 
     &.light {
@@ -863,7 +899,7 @@ html, body {
 .home-software-tags {
     padding: 2rem 0;
     @include media-breakpoint-up(md) {
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
 
     h1 {
@@ -932,6 +968,8 @@ html, body {
         position: absolute;
         top: -6.5rem;
         left: -5.5rem;
+        z-index: 100;
+
         @include media-breakpoint-up(sm) {
             display: block;
         }
@@ -1071,6 +1109,14 @@ html, body {
     &__text {
         color: #455B71;
     }
+    &__inner {
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            width: 30vw;
+            margin: 0 auto;
+        }
+
+    }
     article {
         position: relative;
         z-index: 1;
@@ -1153,7 +1199,7 @@ html, body {
             font-size: 10rem;
             font-weight: 900;
             line-height: 8rem;
-            letter-spacing: -0.5rem;
+            letter-spacing: -0.3rem;
             bottom: -0.5rem;
             color: #66A5E3 ;
             -moz-user-select: none;
@@ -1191,6 +1237,9 @@ html, body {
             padding: 0;
             background-color: #fff;
             height: 220px;
+            &.no-height {
+                height: auto !important;
+            }
         }
         .carousel-indicators {
             margin: 0;
@@ -1200,12 +1249,13 @@ html, body {
             right: auto;
 
             li {
-                width: 0.75rem;
-                height: 0.75rem;
+                width: 0.55rem;
+                height: 0.55rem;
                 border-radius: 100%;
-                background-color: $primary;
+                background-color: #0073e6;
+                opacity: 0.5;
                 &.active {
-                    opacity: 0.5;
+                    opacity: 1;
                 }
             }
         }
@@ -1268,6 +1318,10 @@ html, body {
                 padding: 4rem;
                 margin: 1rem 0 6rem 0;
             }
+        }
+        h2,h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
         }
     }
     
@@ -1362,10 +1416,8 @@ html, body {
             figure {
                 background-color: #fff;
                 margin: 0;
-                min-height: auto;
                 @include media-breakpoint-up(lg) {
-                    min-height: 191px;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.2rem;
                 }
             }
             img {
@@ -1668,6 +1720,8 @@ html, body {
 }
 
 .apilist {
+    overflow-x: hidden;
+
     &__content {
         h1 {
             color: #17324D;
@@ -1701,10 +1755,27 @@ html, body {
         }
     }
     &__listing {
+        position: relative;
+        padding: 2rem 0;
+        @include media-breakpoint-up(md) {
+            padding: 5rem 0;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 200vw;
+            left: -50vw;
+            top: 0;
+            height: 100%;
+            background-color: #F7F9FA;
+        }
         a {
             text-decoration: none !important;
         }
         article {
+            background-color: #fff;
+            box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
 
             h1 {
                 color: #333333;
@@ -1866,30 +1937,48 @@ html, body {
         &:before {
             content: url('/assets/images/icon-type-api.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-api--gray.svg');
+        }
     }
     &administrations {
         &:before {
             content: url('/assets/images/icon-type-administrations.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-administrations--gray.svg');
         }
     }
     &projects {
         &:before {
             content: url('/assets/images/icon-type-projects.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-projects--gray.svg');
+        }
     }
     &software-reuse {
         &:before {
             content: url('/assets/images/icon-type-software-reuse.svg');
         }
+        &--gray {
+            content: url('/assets/images/icon-type-software-reuse--gray.svg');
+        }
     }
     &software-open {
         &:before {
-            content: url('/assets/images/icon-type-software-reuse.svg');
+            content: url('/assets/images/icon-type-software-open.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-software-open--gray.svg');
         }
     }
     &news{
         &:before {
             content: url('/assets/images/icon-type-news.svg');
+        }
+        &--gray {
+            content: url('/assets/images/icon-type-news--gray.svg');
         }
     }
   }

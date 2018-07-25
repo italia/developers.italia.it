@@ -65,7 +65,7 @@ it:
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
 
-    credits_contributors: "Hanno contribuito ai progetti:"
+    credits_contributors: "Contributor:"
     credits_maintainers: Mantainer
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
@@ -150,7 +150,7 @@ it:
       administrations: amministrazioni
       variants_present: varianti presenti
       variant_present: variante presente
-      show_all: Mostra tutte
+      show_all: Mostra tutto
       interest_related_softwares: Altri software che potrebbero interessarti
       read_more: leggi di più
       detailed_info: Informazioni di dettaglio
