@@ -290,7 +290,7 @@ layout: default
               <div class="collapse" id="listVariant">
                 {% for variant in page.oldVariant  %}
                 <div class="variantDetail">
-                  <a href="{{ variant[active_lang_extended].url }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
+                  <a href="/{{active_lang}}/software/{{ variant.name | replace: ' ', '-'  | downcase }}">{{ t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
                   <p><span class="label">{{ t.software.additional_features }}</span>:
                     {% if variant[active_lang_extended] != nil and variant[active_lang_extended].size != 0 %}
                       {% for feature in variant[active_lang_extended].features %}
