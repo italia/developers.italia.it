@@ -2002,4 +2002,24 @@ html, body {
     }
 }
 
+.layout-brand-pa {
+    .nav-pills {
+        background-color: $primary;
+        padding: 0.3rem;
+        border-radius: 0.4rem;
+        display: inline-block;
+    }
+    .nav-link {
+        padding: 0.5rem 2.5rem;
+        background-color: $primary;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        &.active {
+            background-color: #fff;
+            color: $primary;
+        }
+    }
+}
+
 
