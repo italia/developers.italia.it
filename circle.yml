@@ -43,7 +43,7 @@ jobs:
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/data/www/developers.italia.it/web/
+      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/data2tb/developers.italia.it/
 
 workflows:
   version: 2
@@ -53,7 +53,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - new-version-master
   do-test:
     jobs:
       - test:
