@@ -2021,5 +2021,60 @@ html, body {
         }
     }
 }
+.info-block {
+    position: relative;
+    &__icon {
+        padding: 0.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 100%;
+        line-height: 1;
+        display: inline-block;
+        width: 2rem;
+        text-align: center;
+    }
+    &__msg {
+        display: none;
+        font-size: 0.8rem;
+        position: absolute;
+        padding: 1.2rem;
+        border-radius: 0.4rem;
+        border-bottom-right-radius: 0;
+        box-shadow: 0 5px 50px 0 rgba(69,91,113,0.25);
+        background: #fff;
+        bottom: 3rem;
+        right: 1rem;
+        min-width: 300px;
+        z-index: 900;
+        &:hover {
+            display: block;
+        }
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -0.8rem;
+            right: 0;
+            box-shadow: 0 5px 50px 0 rgba(69,91,113,0.25);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 1rem 1rem 0;
+            border-color: transparent #fff transparent transparent;
+
+        }
+        ul {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+    }
+    &__icon:hover + &__msg {
+        display: block;
+    }
+
+}
 
 

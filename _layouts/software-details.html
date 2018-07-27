@@ -111,6 +111,12 @@ layout: default
           <div id="softwareChart">
             <canvas id="vitalityChart"></canvas>
           </div>
+          <div class="info-block d-inline-block">
+            <span class="info-block__icon">i</span>
+            <div class="info-block__msg font-serif">
+              {{t.software.tooltip | markdownify}}
+            </div>
+          </div>
           <div class="status-developement">
             <p>{{ t.software.development_status }}:  {% include software_development_status.html label=page.developmentStatus %} </p>
           </div>
