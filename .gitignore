@@ -9,4 +9,3 @@ node_modules
 swagger/.cache
 swagger/dist
 yarn-error.log
-esQuery.config.js
