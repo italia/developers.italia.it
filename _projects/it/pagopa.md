@@ -35,6 +35,9 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 
 - [Specifiche Attuative del Nodo dei Pagamenti-SPC](https://pagopa-specifichepagamenti.readthedocs.io)
 - [FAQ](http://pagopa-docs-faq.readthedocs.io)
+- [Specifiche attuative dei codici identificativi di versamento, riversamento e rendicondazione](https://pagopa-codici.readthedocs.io/it/latest/)
+- [Linee guida pagamenti elettronici a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi](http://lg-pagopa.readthedocs.io/it/latest/)
+- [Guida tecnica avviso analogico](http://pagopa-avvisoanalogico.readthedocs.io/it/latest/)
 
 ### Per i Comuni
 Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
