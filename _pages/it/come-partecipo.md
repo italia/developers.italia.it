@@ -8,16 +8,16 @@ alternate-blocks:
       text: "Le piattaforme abilitanti e il codice sorgente necessario a integrarle in prodotti servizi e di terze parti sono sviluppate su GitHub Italia. Tutto Il lavoro è organizzato seguendo i principi dell’open governance: Ciò significa che chiunque può contribuire e addirittura diventare maintainer di alcuni di questi componenti. Hai sviluppato in nuove integrazioni o connettori per nuove tecnologie? Rilasciali alla comunità e contribuisci a creare servizi migliori per tutti."
       image: /assets/images/come-partecipo-3.svg
       buttons:
-        - label: Scopri di più
+        - label: Visita GitHub Italia
           class: btn btn-primary
-          url: '/'
+          url: 'https://github.com/italia'
     - title: "Partecipa allo sviluppo di software open source"
       text: "Secondo le linee guida per lo sviluppo e riuso del software, ogni software rilasciato dalla pubblica amministrazione deve essere pubblicato su una piattaforma collaborativa. Come tale è possibile inviare in ogni momento segnalazioni, proposte di migliorie o correzione di problemi che, se di buona qualità, saranno presi in carico dal responsabile della manutenzione del software. Allo stesso modo è possibile scrivere e pubblicare del nuovo software open source che, una volta nel catalogo, potrà essere utilizzato da tutti i soggetti pubblici che ne avessero bisogno. Partecipa alla trasformazione digitale del tuo paese!"
       image: /assets/images/come-partecipo-3.svg
       buttons:
         - label: Scopri di più
           class: btn btn-primary
-          url: '/'
+          url: 'https://opensource.guide/'
     - title: "Leggi e commenta le linee guida per il software open source"
       text: "Le “Linee guida per lo sviluppo e il riuso del software” di AgID disciplinano i processi con i quali le pubbliche amministrazioni devono acquisire software, e rilasciare in open source tutto il software di loro proprietà, in adempimento agli articolo 68 e 69 del CAD. Developers Italia è la piattaforma che aiuta le amministrazioni ad adempiere alle linee guida."
       image: /assets/images/come-partecipo-4.svg
