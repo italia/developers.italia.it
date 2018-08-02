@@ -26,8 +26,7 @@ alternate-blocks:
           class: btn btn-primary
           url: '/it/api'
     - title: Voglio informazioni su come pubblicare il software della mia Amministrazione in modalità open source
-      text: Pubblicare il software della propria amministrazione in modalità Open Source consente di adempiere all'articolo 69 del codice dell'amministrazione digitale. Le linee guida ufficiali includono degli allegati che dettagliano tecnicamente come effettuare il rilascio nel modo corretto. È necessario scegliere una licenza per il software, pubblicarlo su una piattaforma di code hosting collaborativa e metadatarlo secondo lo standard PublicCode.yml.
-Per semplificare la lettura abbiamo preparato un riassunto delle linee guida contenente gli adempimenti tecnici e un riassunto contenente gli adempimenti a carico delle amministrazioni.
+      text: Pubblicare il software della propria amministrazione in modalità Open Source consente di adempiere all'articolo 69 del codice dell'amministrazione digitale. Le linee guida ufficiali includono degli allegati che dettagliano tecnicamente come effettuare il rilascio nel modo corretto. È necessario scegliere una licenza per il software, pubblicarlo su una piattaforma di code hosting collaborativa e metadatarlo secondo lo standard PublicCode.yml. Per semplificare la lettura abbiamo preparato un riassunto delle linee guida contenente gli adempimenti tecnici e un riassunto contenente gli adempimenti a carico delle amministrazioni.
       image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: Scopri di più
