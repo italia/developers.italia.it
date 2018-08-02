@@ -29,12 +29,12 @@ alternate-blocks:
       text: "Pubblicare il software della propria amministrazione in modalità Open Source consente di adempiere all'articolo 69 del codice dell'amministrazione digitale. Le linee guida ufficiali includono degli allegati che dettagliano tecnicamente come effettuare il rilascio nel modo corretto. È necessario scegliere una licenza per il software, pubblicarlo su una piattaforma di code hosting collaborativa e metadatarlo secondo lo standard PublicCode.yml. Per semplificare la lettura abbiamo preparato un riassunto delle linee guida contenente gli adempimenti tecnici e un riassunto contenente gli adempimenti a carico delle amministrazioni."
       image: /assets/images/come-lo-uso-4.svg
       buttons:
-        - label: "Scopri di più"
+        - label: "Public Code Editor"
           class: btn btn-primary
-          url: '/'
-        - label: "Scopri di più"
+          url: 'https://publiccode.surge.sh'
+        - label: "Leggi le Linee Guida"
           class: btn btn-primary
-          url: '/'
+          url: "https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/"
 ---
 
 Su Developers Italia puoi trovare gli strumenti per sviluppare, integrare e valutare soluzioni software open source per la pubblica amministrazione. Il catalogo è costruito in maniera automatica e decentralizzata a partire dal codice sorgente dei vari applicativi e vuole essere il punto di ingresso principale per chiunque si occupi di software in un ente pubblico: sia tecnici che cerchino semilavorati per interfacciarsi alle piattaforme abilitanti sia dirigenti pubblici alla ricerca della soluzione più efficace per risolvere un problema. È inoltre il punto di accesso principale per trovare soluzioni software open source in fase di valutazione comparativa, così come indicato dall'articolo 68 del CAD. Anche questo portale è costruito attraverso logiche Open Source: aperto a contributi e miglioramenti da parte di tutti: trovi qui il codice sorgente.
