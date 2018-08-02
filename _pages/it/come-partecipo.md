@@ -19,7 +19,7 @@ alternate-blocks:
           class: btn btn-primary
           url: 'https://opensource.guide/'
     - title: "Leggi e commenta le linee guida per il software open source"
-      text: "Le “Linee guida per lo sviluppo e il riuso del software” di AgID disciplinano i processi con i quali le pubbliche amministrazioni devono acquisire software, e rilasciare in open source tutto il software di loro proprietà, in adempimento agli articolo 68 e 69 del CAD. Developers Italia è la piattaforma che aiuta le amministrazioni ad adempiere alle linee guida."
+      text: "Le “Linee guida per l'acquisizione e il riuso del software” di AgID disciplinano i processi con i quali le pubbliche amministrazioni devono acquisire software, e rilasciare in open source tutto il software di loro proprietà, in adempimento agli articolo 68 e 69 del CAD. Developers Italia è la piattaforma che aiuta le amministrazioni ad adempiere alle linee guida."
       image: /assets/images/come-partecipo-4.svg
       buttons:
         - label: Scopri le Linee Guida
