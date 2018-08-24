@@ -18,7 +18,7 @@ layout: default
 <div class="container-fluid  d-block d-md-none">
   <div class="abstract-sorting-mobile row">
     <div class="results-number col-4">
-      <p>{{ site.data.softwares | size }} {{ t.software.results }}</p>
+      <p>{{ site.data.crawler.softwares | size }} {{ t.software.results }}</p>
     </div>
     <div class="filters col-4">
       <a href="" data-toggle="modal" data-target="#filters">
@@ -171,5 +171,5 @@ layout: default
 </div>
 <div style="display: none" id="searchPageId" data="{{ page.ref }}"></div>
 <!-- 
-{{ site.data.softwares | inspect }}
+{{ site.data.crawler.softwares | inspect }}
  -->

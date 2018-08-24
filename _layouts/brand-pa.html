@@ -130,7 +130,7 @@ layout: default-pa
             <div class="tab-content" id="pills-tabContentResults">
                 <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel" aria-labelledby="pills-tab1a-tab">
                     <div class="row row-eq-height">
-                    {% for software in site.data.softwares limit: 5 %}
+                    {% for software in site.data.crawler.softwares limit: 5 %}
                     {% if software.it.riuso.codiceIPA != nil %}
                     <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                       <a href="/it/amministrazione-software" class="d-block decoration-none ">
@@ -155,7 +155,7 @@ layout: default-pa
                     </div>
                     {% endif %}
                   {% endfor %} 
-                  {% for software in site.data.softwares limit: 5 %}
+                  {% for software in site.data.crawler.softwares limit: 5 %}
                     {% if software.it.riuso.codiceIPA != nil %}
                     <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                       <a href="/it/amministrazione-software" class="d-block decoration-none ">
@@ -184,7 +184,7 @@ layout: default-pa
                 </div>
                 <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab">
                     <div class="row row-eq-height">
-                    {% for software in site.data.softwares limit: 5 %}
+                    {% for software in site.data.crawler.softwares limit: 5 %}
                     {% if software.it.riuso.codiceIPA != nil %}
                     <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                       <a href="/it/amministrazione-software" class="d-block decoration-none ">
@@ -209,7 +209,7 @@ layout: default-pa
                     </div>
                     {% endif %}
                   {% endfor %} 
-                  {% for software in site.data.softwares limit: 5 %}
+                  {% for software in site.data.crawler.softwares limit: 5 %}
                     {% if software.it.riuso.codiceIPA != nil %}
                     <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                       <a href="/it/amministrazione-software" class="d-block decoration-none ">
