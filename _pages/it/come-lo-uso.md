@@ -37,5 +37,7 @@ alternate-blocks:
           url: "https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/"
 ---
 
+Se sei una Pubblica Amministrazione, o un fornitore che lavora con la Pubblica Amministrazione, puoi trovare in Developers Italia le
+
 Su Developers Italia puoi trovare gli strumenti per sviluppare, integrare e valutare soluzioni software open source per la pubblica amministrazione. Il catalogo è costruito in maniera automatica e decentralizzata a partire dal codice sorgente dei vari applicativi e vuole essere il punto di ingresso principale per chiunque si occupi di software in un ente pubblico: sia tecnici che cerchino semilavorati per interfacciarsi alle piattaforme abilitanti sia dirigenti pubblici alla ricerca della soluzione più efficace per risolvere un problema. È inoltre il punto di accesso principale per trovare soluzioni software open source in fase di valutazione comparativa, così come indicato dall'articolo 68 del CAD. Anche questo portale è costruito attraverso logiche Open Source: aperto a contributi e miglioramenti da parte di tutti: trovi qui il codice sorgente.
 

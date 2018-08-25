@@ -2,15 +2,18 @@
 title: Chi siamo
 lang: it
 layout: credits
-subtitle: 
+subtitle:
 image: /assets/images/chisiamo-img.jpg
 ---
 
-Developers Italia è la community di sviluppatori di riferimento per lo sviluppo del software pubblico in Italia. Su questo portale puoi trovare il codice sorgente di riferimento per integrarsi con le piattaforme abilitanti oltre che un catalogo di software open source pensato per la pubblica amministrazione. Sui canali di comunicazione, come Slack o il Forum, puoi trovare altri sviluppatori che si occupano di lavorare con la (o nella) pubblica amministrazione.
+Developers Italia è la community degli sviluppatori dei servizi pubblici in Italia, che nasce con l'obiettivo di incentivare lo sviluppo di servizi digitali moderni ed integrati.
 
-Vogliamo promuovere le metodologie tipiche dello sviluppo Open Source, che aiutano ad ottenere elevati standard di qualità e sicurezza e garantire un mercato aperto, per lo sviluppo del software pubblico. Scopo del nostro lavoro è fornire soluzioni pratiche ed applicativi per risolvere i problemi dei cittadini nel modo più efficiente possibile, facendo emergere le best practices già presenti sul territorio. Vogliamo altresì favorire la collaborazione tra pubbliche amministrazioni nello sviluppo di soluzioni informatiche comuni.
+**Open source.** Tutto il software presente in Developers Italia è rilasciato sotto licenze aperte approvate da [OSI](https://opensource.org/) ed è sviluppato secondo le best practice dello sviluppo collaborativo, al fine di garantire qualità e sicurezza.
 
-Developers Italia è un progetto realizzato in collaborazione tra AgID e il Team per la Trasformazione Digitale. È inoltre la piattaforma di riferimento indicata da AgID per la valutazione e la messa a riuso del software ai sensi degli artt. 68 e 69 del CAD.
+**Community.** Amministrazioni, fornitori, sviluppatori, studenti: tutti possono partecipare liberamente alla community attraverso [Slack](https://slack.developers.italia.it/), il [forum](https://forum.italia.it/) e [GitHub Italia](https://github.com/italia). Collaboriamo per sviluppare nuovo software o per migliorare quello già presente in Developers Italia.
 
+**Riuso.** Developers Italia è la piattaforma di riferimento indicata dall'AgID per la valutazione e la messa a riuso del software ai sensi degli articoli [68](https://cad.readthedocs.io/it/v2017-12-13/_rst/capo6_art68.html) e [69](https://cad.readthedocs.io/it/v2017-12-13/_rst/capo6_art69.html) del Codice dell'Amministrazione Digitale. Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato, e di cercare in Developers Italia soluzioni già esistenti prima di poterne commissionare una nuova.
+
+Developers Italia è un progetto realizzato in collaborazione tra l'AgID e il Team per la Trasformazione Digitale.
 
 [Come lo uso](/it/come-lo-uso){: .btn .btn-primary .font-base .px-5 .my-2 .mr-md-3 .w-100 .d-md-inline}  [Come partecipo](/it/come-partecipo){: .btn .btn-outline-primary .font-base .px-5 .my-2 .w-100 .d-md-inline}

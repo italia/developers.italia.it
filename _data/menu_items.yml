@@ -18,7 +18,7 @@ it:
     url: '/it/come-partecipo'
     active_by_firstlevel: 'come-partecipo'
   - title: News
-    url: news
+    url: '/news'
     active_by_firstlevel: 'news'
   - title: Contatti
     url: '/it/contatti'
@@ -26,18 +26,18 @@ it:
 
 en:
   - title: Platforms
-    url: '#'
-  - title: Softwares
-    url: '#'
+    url: '/en/platforms'
+  - title: Software
+    url: '/en/software'
   - title: API
-    url: it/api
+    url: '/en/api'
   - title: Who we are
-    url: '/en/credits'
-  - title: How use it
-    url: '#'
+    url: '/en/about'
+  - title: How to use it
+    url: '/en/how'
   - title: How get involved
-    url: '#'
+    url: '/en/get-involved'
   - title: News
-    url: 'en/news'
+    url: '/en/news'
   - title: Contacts
-    url: '#'
+    url: '/en/contacts'

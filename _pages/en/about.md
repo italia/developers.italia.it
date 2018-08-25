@@ -1,7 +1,7 @@
 ---
-title: Credits
+title: About
 lang: en
-layout: credits
+layout: about
 subtitle:
 image: /assets/images/chisiamo-temp-img.jpg
 ---
