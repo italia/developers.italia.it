@@ -19,7 +19,7 @@ GEM
     ethon (0.11.0)
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
-    ffi (1.9.23)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     hawkins (2.0.5)
       em-websocket (~> 0.5)
