@@ -78,7 +78,7 @@ layout: default
 
       <div class="container list-item-sorting">
         <div class="row row-eq-height">
-        {% for admin in site.data.amministrazioni %}
+        {% for admin in site.data.crawler.amministrazioni %}
           <div class="col-sm col-md-4 item">
             <p class="name">{{ admin.name }}</p>
             <a href="#"> {{ t.software.go_to_detail }} &rarr;</a>
