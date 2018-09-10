@@ -28,7 +28,7 @@ gem "rest-client", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.9.2"
+   gem "jekyll-feed", "~> 0.11.0"
    gem 'jekyll-seo-tag'
    gem 'jekyll-redirect-from'
    gem 'jekyll-paginate'
