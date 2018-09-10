@@ -30,8 +30,8 @@ class Hero extends Component {
     const email = contact && contact.get("email");
 
     const terms = info.get("termsOfService");
-    const summary = info.get("summary");
-    const project = info.get("project");
+    const summary = info.get("x-summary");
+    const project = info.get("x-project");
 
     const reference = projects.filter(proj => proj.id === project)[0];
 
