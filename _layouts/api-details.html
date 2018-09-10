@@ -6,7 +6,7 @@ lang: it
 {% include setlang.html %}
 
 {%
-  assign l10n = site.data.l10n[active_lang].t | jsonify | escape
+  assign l10n = site.data.l10n[active_lang].t.swagger | jsonify | escape
 %}
 
 {% assign projects = site.projects | where: 'lang', active_lang %}

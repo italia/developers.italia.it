@@ -12,9 +12,12 @@
   var lang = "{{ include.lang }}";
 
   var safeL10n = "{{ include.l10n }}";
-  var l10n;
+  var l10n = {
+    "swagger": undefined
+  };
+
   try {
-    l10n = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
+    l10n.swagger = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
   } catch (error) {
     // It is safe for this to fail while in development
   }
