@@ -17,6 +17,7 @@ jobs:
       - run: npm install .
       - run: sed -e '/.*searchyll/ s/^#*/#/' -i _config.yml # Disable searchyll for test.
       - run: bundle install
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
@@ -37,6 +38,7 @@ jobs:
       - checkout
       - run: npm install .
       - run: bundle install
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
@@ -44,7 +46,6 @@ jobs:
       - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       - run: mkdir -p ~/.ssh
-      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/data2tb/developers.italia.it/
 
 workflows:
