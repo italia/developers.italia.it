@@ -18,6 +18,7 @@ jobs:
       - run: sed -e '/.*searchyll/ s/^#*/#/' -i _config.yml # Disable searchyll for test.
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       #- run: cp -r ./github ./_site/ # Copy github folder into ./site.
@@ -37,6 +38,7 @@ jobs:
       - run: npm install .
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: cp -r ./github ./_site/
