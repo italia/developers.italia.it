@@ -48,7 +48,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-toc
   - jekyll-sitemap
-  # - searchyll
+  - searchyll
 exclude:
   - vendor
   - README.md
