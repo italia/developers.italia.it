@@ -1,4 +1,5 @@
 - name: Medusa
+  uuid: pq98w3c4r7bwptv
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
@@ -283,6 +284,7 @@
       ui: yes
       web: yes
 - name: BLA BLA
+  uuid: hg32i3c4r7hiead
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
@@ -423,6 +425,7 @@
       ui: yes
       web: yes
 - name: Medusa2
+  uuid: ls83w3k5r2kjzkv
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
@@ -563,6 +566,7 @@
       ui: yes
       web: yes
 - name: Opensource MANNAGGIA
+  uuid: uq19m1p2f5olnvs
   applicationSuite: MegaProductivitySuite
   url: https://example.com/italia/medusa.git
   landingURL: https://example.com/italia/medusa
