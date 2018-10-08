@@ -129,7 +129,7 @@ page_gen:
     filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
-    name:  uuid
+    name:  id
     data: crawler.softwares
     template: software-details
     lang: it
@@ -137,7 +137,7 @@ page_gen:
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name:  uuid
+    name:  id
     data: crawler.softwares
     template: software-details
     lang: en
