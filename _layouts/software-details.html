@@ -108,9 +108,11 @@ layout: default
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
           <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
-          <div id="softwareChart">
-            <canvas id="vitalityChart"></canvas>
-          </div>
+          {% if page.vitalityDataChart != nil %}
+            <div id="softwareChart">
+              <canvas id="vitalityChart"></canvas>
+            </div>
+          {% endif %}
           <div class="info-block d-inline-block">
             <span class="info-block__icon">i</span>
             <div class="info-block__msg font-serif">
