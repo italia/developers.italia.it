@@ -12,9 +12,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title>
+  <title>  
+    {% if page.title %}
 
-  {% seo %}
+      {% if page.description[active_lang_extended].localisedName != nil %}
+      {{ page.description[active_lang_extended].localisedName|capitalize }}          
+    {% elsif page.description.eng.localisedName != nil %}
+    {{ page.description.eng.localisedName }} 
+    {% elsif page.description.ita.localisedName != nil %}
+    {{ page.description.ita.localisedName }} 
+    {% else %}
+      {{ page.title | escape }}
+    {% endif%}
+
+
+    {% else %}
+      {{ t.site_title | default: site.title | escape }}
+    {% endif %}
+  </title>
+  
+    {% seo %}
+
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 

@@ -26,7 +26,11 @@ layout: default
         {% endif %}
         <h1 class="d-inline-block">
           {% if page.description[active_lang_extended].localisedName != nil %}
-            {{ page.description[active_lang_extended].localisedName|capitalize }}
+            {{ page.description[active_lang_extended].localisedName|capitalize }}          
+          {% elsif page.description.eng.localisedName != nil %}
+          {{ page.description.eng.localisedName }} 
+          {% elsif page.description.ita.localisedName != nil %}
+          {{ page.description.ita.localisedName }} 
           {% else %}
             {{ page.title }}
           {% endif%}<span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
@@ -422,7 +426,7 @@ layout: default
                   {{ item.name }}
                 {% endif %}
               </p>
-              <a href="{{ item[active_lang_extended].url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
+              <a href="{% if item[active_lang_extended].url != nil %}{{item[active_lang_extended].url}} {%else%}{{ item.eng.url }} {%endif%}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
             </div>
           </div>
         {% endfor %}
@@ -450,8 +454,12 @@ layout: default
             <p>{{ t.software.detailed_info }} </p>
             <div class="title">
               <h2 class="h1">
-                {% if page.description[active_lang_extended].localisedName != nil %}
-                  {{ page.description[active_lang_extended].localisedName|capitalize }}
+                  {% if page.description[active_lang_extended].localisedName != nil %}
+                  {{ page.description[active_lang_extended].localisedName|capitalize }}          
+                {% elsif page.description.eng.localisedName != nil %}
+                {{ page.description.eng.localisedName }} 
+                {% elsif page.description.ita.localisedName != nil %}
+                {{ page.description.ita.localisedName }} 
                 {% else %}
                   {{ page.title }}
                 {% endif%}
