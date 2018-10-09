@@ -1152,9 +1152,9 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
       'bool': {
         'must': [
           {'exists': { 'field': 'it-riuso-codiceIPA' }},
-          {'term': { '_type': 'software' }},
-          {'match': { 'intended-audience-unsupported-countries': 'it' }}
-        ]
+          {'term': { '_type': 'software' }}
+        ],
+       'must_not': {'match': { 'intended-audience-unsupported-countries': 'it' }},
       }
     }
   };
