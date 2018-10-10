@@ -729,7 +729,8 @@ esDevelopersItaliaQuery.prototype.getQuery = function() {
                       {'term': { '_type': 'post' }},
                       {'terms': { 'type': ['projects'] }},
                       {'term': { 'lang': language }}
-                    ]
+                    ],
+                    'must_not': {'match': { 'intended-audience-unsupported-countries': 'it' }}
                   }
                 },
                 {'term': { '_type': 'software' }},
@@ -910,6 +911,7 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   var screenshot = this.getSoftwareScreenshot(software);
   var localisedName = software.name;
+  var id = software.id
   var language = this.config['language'];
   var category = this.getSoftwareType(software);
 
@@ -929,7 +931,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
     'readMore': this.readMore[language],
     'category': category['label'].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-'+category['id']].join(' '),
-    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
+    'path': '/' + language + '/software/' + id + '/' + software.name.toLowerCase().split(' ').join('-')
   };
 
   return this.templates.search(data);
@@ -1043,6 +1045,7 @@ esDevelopersItaliaPlatformsQuery.prototype.getQuery = function() {
     'query': {
       'bool': {
         'must': [],
+        'must_not': {'match': { 'intended-audience-unsupported-countries': 'it' }},
         'filter': [
           {'term': {'type': 'projects'}},
           {'term': { 'lang': this.config['language'] }}
@@ -1094,7 +1097,10 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function() {
     'query': {
       'bool': {
         'must': [],
-        'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
+        'must_not': [
+          {'exists': { 'field': 'it-riuso-codiceIPA' }},
+          {'match': { 'intended-audience-unsupported-countries': 'it' }}
+      ]
       }
     }
   };
@@ -1147,7 +1153,8 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function() {
         'must': [
           {'exists': { 'field': 'it-riuso-codiceIPA' }},
           {'term': { '_type': 'software' }}
-        ]
+        ],
+       'must_not': {'match': { 'intended-audience-unsupported-countries': 'it' }},
       }
     }
   };
@@ -1349,8 +1356,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function() {
               ]
             }
           }
-        ]
-      }
+        ],
+        'must_not': [
+          {'match': { 'intended-audience-unsupported-countries': 'it' }}
+      ]
+    }
     }
   };
 };
@@ -1386,6 +1396,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
   var value = $(this.config['inputSelector']).val();
   var language = this.config['language'];
   var name = software.name;
+  var id = software.id
   var language_alpha_3 = this.languages[language];
   var category = this.getSoftwareType(software);
   if ( typeof software.description[language_alpha_3] !== 'undefined' && software.description[language_alpha_3].localisedName !== 'undefined') {
@@ -1402,7 +1413,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
     'language': language,
     'category': category['label'].toUpperCase(),
     'categoryClass': ['category', 'icon', 'icon-type-'+category['id']].join(' '),
-    'path': '/' + language + '/software/' + software.name.toLowerCase().split(' ').join('-')
+    'path': '/' + language + '/software/' + id + '/' + software.name.toLowerCase().split(' ').join('-')
   };
 };
 
@@ -1554,7 +1565,10 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
           },
           {'term': { '_type': 'software' }}
         ],
-        'must_not': {'exists': { 'field': 'it-riuso-codiceIPA' }}
+        'must_not': [
+          {'exists': { 'field': 'it-riuso-codiceIPA' }},
+          {'match': { 'intended-audience-unsupported-countries': 'it' }}
+      ]
       }
     }
   };
