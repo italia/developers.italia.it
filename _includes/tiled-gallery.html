@@ -1,31 +1,12 @@
 <div class="tiled-gallery">
   <div class="tiled-gallery-inner">
     {% assign tiledItemIndex = 0 %}
-    {% for item in page.tiledGallery %}
-      {% if item.tiled == nil %}
-        <a
-          class="tiled-item"
-          href="{{ item.full }}"
-          data-index="{% increment tiledItemIndex %}"
-          data-size="{{ item.size.width }}x{{ item.size.height }}"
-        >
-          <img src="{{ item.thumb }}">
-        </a>
-      {% else %}
-        <div class="tiled-items-container">
-          {% for tiledItem in item.tiled limit: 2 %}
-            <a
-              class="tiled-item"
-              href="{{ tiledItem.full }}"
-              data-index="{% increment tiledItemIndex %}"
-              data-size="{{ tiledItem.size.width }}x{{ tiledItem.size.height }}"
-            >
-              <img src="{{ tiledItem.thumb }}" />
-            </a>
-          {% endfor %}
-        </div>
-      {% endif %}
+    {% for item in page.description["eng"].screenshots %}
+      <img src="{{ item }}" />
     {% endfor %}
+      {% for item in page.description["eng"].videos %}
+        {{ item }}
+      {% endfor %}
   </div>
 </div>
 
