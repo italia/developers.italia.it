@@ -609,7 +609,7 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function() {
   if (typeof codiceIPA !== 'undefined') {
     filter.push({
       'term': {
-        'it-riuso-codiceIPA': codiceIPA
+        'it-riuso-codice-ipa': codiceIPA
       }
     });
   }
@@ -908,6 +908,16 @@ esDevelopersItaliaQuery.prototype.renderPager = function(tot){
   }));
 };
 
+esDevelopersItaliaQuery.prototype.languageFallback = function(element) {
+  var currentLanguage = this.config['language'];
+
+  if (element.hasOwnProperty(currentLanguage)) {
+    return element[this.languages[language]]
+  } else {
+    return element['eng']
+  }
+}
+
 esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   var screenshot = this.getSoftwareScreenshot(software);
   var localisedName = software.name;
@@ -915,12 +925,13 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function(software) {
   var language = this.config['language'];
   var category = this.getSoftwareType(software);
 
-  if (typeof software.description[this.languages[language]].screenshots !== 'undefined' && software.description[this.languages[language]].screenshots.length > 0) {
-    screenshot = software.description[this.languages[language]].screenshots.slice(0).pop();
+  var description = this.languageFallback(software.description);
+  if (typeof description.screenshots !== 'undefined' && description.screenshots.length > 0) {
+    screenshot = description.screenshots.slice(0).pop();
   }
 
-  if (typeof software.description[this.languages[language]].localisedName !== 'undefined') {
-    localisedName = software.description[this.languages[language]].localisedName;
+  if (typeof description.localisedName !== 'undefined') {
+    localisedName = description.localisedName;
   }
 
   var data = {
