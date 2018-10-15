@@ -152,9 +152,14 @@ layout: default
 		</div>
 	</div>
 </div>
-<hr class="divider mb-0">
 
-{% include tiled-gallery.html %}
+{% if page.description[active_lang_extended].screenshots == nill %}
+  <hr class="divider mb-0">
+{% endif %}
+
+{% if page.description[active_lang_extended].screenshots != nill or  page.description[active_lang_extended].videos != nill %}
+  {% include tiled-gallery.html %}
+{% endif %}
 
 <div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
