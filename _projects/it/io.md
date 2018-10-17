@@ -8,7 +8,7 @@ description: io è l’applicazione del Governo italiano che permetterà a tutti
 lang: it
 order: 4
 highlight: true
-comingsoon: true
+comingsoon: false
 layout: project
 github_team: io
 maintainers:

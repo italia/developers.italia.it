@@ -9,7 +9,7 @@ order: 4
 maintainers:
   - carlo
   - mirko
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 github_team: anpr
