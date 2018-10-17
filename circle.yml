@@ -19,7 +19,7 @@ jobs:
       - run: bundle install
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       #- run: cp -r ./github ./_site/ # Copy github folder into ./site.
@@ -40,13 +40,13 @@ jobs:
       - run: bundle install
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2tb/crawler/ ./_data/crawler/
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data2/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       - run: mkdir -p ~/.ssh
-      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/data2tb/developers.italia.it/
+      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/pre.developers.italia.it/web/
 
 workflows:
   version: 2
