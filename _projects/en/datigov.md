@@ -7,7 +7,7 @@ description: >
     Dati.gov.it is the national list of the open data of the Italian Public Administrations.  It has been created with the aim to aggregate in a single portal most of the open data displayed by the various administrations both local and national.
 lang: en
 order: 2
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 maintainers:

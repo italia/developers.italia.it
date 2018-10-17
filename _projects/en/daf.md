@@ -7,7 +7,7 @@ description: >
   DAF's vision is to make public data easy to access and understand by PAs to support them in their data driven decision making, and to facilitate access to information that can be made public by citizens and businesses.
 lang: en
 order: 3
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 github_team: daf
