@@ -32,7 +32,7 @@ layout: default
           {% elsif page.description.ita.localisedName != nil %}
           {{ page.description.ita.localisedName }} 
           {% else %}
-            {{ page.title }}
+            {{ page.name }}
           {% endif%}<span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
         </h1>
         <div class="abstract-software">
@@ -468,7 +468,7 @@ layout: default
                 {% elsif page.description.ita.localisedName != nil %}
                 {{ page.description.ita.localisedName }} 
                 {% else %}
-                  {{ page.title }}
+                  {{ page.name }}
                 {% endif%}
                 <span class="badge badge-pill badge-pill--sup badge-primary">{{ page.softwareVersion }}</span>
               </h2>
@@ -726,20 +726,20 @@ layout: default
               {% if page.description[active_lang_extended].apiDocumentation != nil %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.api_documentation }}</span>
-                   <a href="{{ page.description[active_lang_extended].apiDocumentation }}">{% if page.description[active_lang_extended].localisedName != nil %}{{ page.description[active_lang_extended].localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                   <a href="{{ page.description[active_lang_extended].apiDocumentation }}">{% if page.description[active_lang_extended].localisedName != nil %}{{ page.description[active_lang_extended].localisedName }} {% else %} {{ page.name }} {% endif %} API</a>
                   </p>
                 </div>
               {% elsif page.description.eng.apiDocumentation != nil  %}
                 <div class="other-detail">
                   <p><span class="label">{{ t.software.api_documentation }}</span>
-                   <a href="{{ page.description.eng.apiDocumentation }}">{% if page.description.eng.localisedName != nil %}{{ page.description.eng.localisedName }} {% else %} {{ page.title }} {% endif %} API</a>
+                   <a href="{{ page.description.eng.apiDocumentation }}">{% if page.description.eng.localisedName != nil %}{{ page.description.eng.localisedName }} {% else %} {{ page.name }} {% endif %} API</a>
                   </p>
                 </div>
               {% elsif page.description.eng.apiDocumentation == nil %}
                 {% if description['apiDocumentation'] != nil %}
                   <div class="other-detail">
                     <p><span class="label">{{ t.software.api_documentation }}</span>
-                     <a href="{{  description['apiDocumentation'] }}">{% if description['localisedName'] != nil %}{{ description['localisedName'] }} {% else %} {{ page.title }} {% endif %} API</a>
+                     <a href="{{  description['apiDocumentation'] }}">{% if description['localisedName'] != nil %}{{ description['localisedName'] }} {% else %} {{ page.name }} {% endif %} API</a>
                     </p>
                   </div>
                 {% endif %}
