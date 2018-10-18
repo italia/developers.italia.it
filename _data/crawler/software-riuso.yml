@@ -1,1 +1,18 @@
-[]
+- name: Euriale
+  id: 0e7f29233e4373407faa0e15c5f4d10f5ca106f0
+  crawltime: 2018-10-09 12:17:57.004382104 +0000 UTC m=+8.038339809
+  logo: https://raw.githubusercontent.com/gith002/Euriale/master/img/logo.png
+  url: https://github.com/gith002/euriale.git
+  codiceipa: c_a547
+- name: Steno
+  id: 7a423bce471c983c33ae47de9f3573f4f8659e5e
+  crawltime: 2018-10-09 12:17:57.136541286 +0000 UTC m=+8.170499001
+  logo: https://raw.githubusercontent.com/gith002/Steno/master/img/logo.png
+  url: https://github.com/gith002/steno.git
+  codiceipa: c_a547
+- name: Medusa
+  id: d858d4feabf900035e01a18b88c4b5dc8818ed97
+  crawltime: 2018-10-09 12:17:57.288817204 +0000 UTC m=+8.322774883
+  logo: https://raw.githubusercontent.com/gith002/Medusa/master/img/logo.png
+  url: https://github.com/gith002/medusa.git
+  codiceipa: c_a547
