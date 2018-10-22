@@ -14,7 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@braintree/sanitize-url": "^2.1.0",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "1.10.1",
     "react": "^15.6.2",
     "swagger-ui": "^3.14.0"
   }
