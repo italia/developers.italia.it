@@ -1,13 +1,13 @@
-<div id="index" />
+<div id="index"></div>
 
 <script>
   // These vars are populated with Jekyll's _includes
-  var swaggerUrl = "{{ include.swaggerUrl }}";
-  var contactLogo = "{{ include.logo }}";
+  window.swaggerUrl = "{{ include.swaggerUrl }}";
+  window.contactLogo = "{{ include.logo }}";
+  window.i10n;
   var safeI10n = "{{ site.data.l10n.[active_lang].t | jsonify | escape }}";
-  var i10n;
   try {
-    i10n = JSON.parse(safeI10n.replace(/&quot;/g, '"'));
+    window.i10n = JSON.parse(safeI10n.replace(/&quot;/g, '"'));
   } catch (error) {
     // It is safe for this to fail while in development
   }
