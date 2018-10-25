@@ -4,20 +4,20 @@
   <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/dist/css/italia-icon-font.css">
 -->
 
-<div id="swagger" />
+<div id="swagger"></div>
 
 <script>
   // These vars are populated with Jekyll's _includes
-  var swaggerUrl = "{{ include.swaggerUrl }}";
-  var lang = "{{ include.lang }}";
-
-  var safeL10n = "{{ include.l10n }}";
-  var l10n = {
+  window.lang = "{{ include.lang }}";
+  window.swaggerUrl = "{{ include.swaggerUrl }}";
+  window.l10n = {
     "swagger": undefined
   };
 
+  var safeL10n = "{{ include.l10n }}";
+
   try {
-    l10n.swagger = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
+    window.l10n.swagger = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
   } catch (error) {
     // It is safe for this to fail while in development
   }
@@ -56,6 +56,8 @@
       }
       projects.push(project);
     }
+
+    window.projects = projects;
   } catch (error) {
     // It is safe for this to fail while in development
   }

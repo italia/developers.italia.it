@@ -4,7 +4,8 @@ import { sanitizeUrl } from "@braintree/sanitize-url";
 
 import "./Hero.css";
 
-import platformIcon from "../assets/platform.png";
+const platformIcon =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABj9JREFUeNrM2n1sE2UcB/Bfe+31dYy9dCwsKUw2NqZzKDpEGcIcEkLUQDYXXmJCDJIoCwqJAYlE/yBGDSYGAuJChEHExAjhRZmLYpSXsY4RpuyFMIa8DHAbsI3rurv2Wn/P1m4dtKPt3fNsl/zS7sm110/vuee+z9NpfD4fMNrisQqx1mBJWNuxTmC5WBxcwwDaD3S5fdsab7vTfrvsAp0WoGiqCaal8pd4DtazANOEDgKb7rjTKs4JcLTBBT3iwPESjBpYkmuGpTMsTMA0oI8AjyGwWwx9HFZgNaFRAVmD1YBGDOTx2nx5igFEGaD6XxHcXnZgJdCogHMQuHqWFfLSDCDjMS/clGDnGYEZOBZorMArCWbtBmz+C0uPNafTKX+J4DQW4GigagDbH9o1jRU4EigNILAGjwRlAVQMXobg7FS+BcHvjwQOBR0NoCLwYgQvfww4GGrFmj/KQLXBf2IJwdAc0eM73nDbbR8jQFXAWRN4h0EHJdh8nUBzbnV7jm/9o8d++OKYAyoCE2xZQZwj0cKVEOi2/bXCmg+OdIV850XZRliZb4GnRxc4Irj8rAAnWsSQO+4qToAleZYtWtJt23rksO/4eq4JnkjWAyL34J+NYwBJtjasi8kWriLDpoeF2aawO97s8pCHXHJG0zsFuXVReTu03gsNnmbTwSrstqT7TkrUf4xNB/3o0dhysZa23vVs/P2SC76rdcLlTk/oz52ih92liZCZoi8IDEb5rZ3umsqmPthTK8DV+xGBP8KmwwzBEQOzknXw9kwrvDLVCPZEXQE2nQq+veRjrWvpcJdWNffBXhx9RzrD7yC4gA04auDcTAOkJ+l3+5drLoQLDLOw1o4BsBLgt1iOSCPgaIFVBUYT6pWAD2E1jyYwlmla1GAyaNkfD6YKVDLxVgvMBBgKavNXi3+BWTVwNoJXD4HJfdhMGchjZfiDRXcwNF0QvWd6+rypE8bpGjnNYPJXHbzqBSvgBIIWkESkQo8XdrQ/8NgTzJzLpNeQ+2hdfzLqEOQzW6q6U2uuS1CYYYClz/ZPdep0WtgYK5jMgq6EAGuwwl0sSoGSDFub7khZFQ4BTmPYz53Iw6aica7JSQPJqObTyq787aeFwVelWLRQnGeGN6ebyVSHCpgG8ECdEw7+0wv3+4a+yg2FcbB+XnylDp/LnHb4q9udeO5xCvRjfS+U5JlnYFVFcYarSWHY/hpr7avZxrBgmsDANsHKkYeWgVDvlJs3HO3ijzW6QA7Rr2x4hhHbX8q6tAt++tsFWvxilz1joQrU4zEW4hTz89cS5GQrlxkYjDLaBbmh7obI78Qu7MBrlRJ43X8P5GINXqgpVo4acNZkA7z7khWmp/FykoXLxOarwbcXMhwvxg/yxfmbIlAEZ/gfWygCAYFl2HyELKOECwyswEyAkSSjYeBvTjuh5rpIG6w6MJoIyAJMDRhL1o0VfAHBH4YBUwcqCfURg5PNBGzC4GF5GMyxAoaC5vhDPZkwd1AEgxf3QSBQBJLl0HRyW/EH+6GV+rYuT4Mg+WBiPAdxBu1KbKvEukMDLGGWpwS0k6XoLpcXQ70MKXEcjDdpBxfH7Hed8rW39ndCc4cH8u08vIcHyZ1ogHiTMrDjhggeb2RdSw3gvV55R32bBNtOClB/S4KZkwzwyYJ4mOpf7ry27tA9+77zvYOvMuIVNC/DiJNmC3WwmsBdmM9PtoogBR2rbLYVNi8Y7yDQH3aeelC6+dfuR95FbXBwl6YNDGwHViRBUZapzD8f9VSUVwuzy886gVyntMCYpeH7ut5+5IrnLVSB4w0aWPSkCTbNH9dms+oGV+rTeyVfRcNtafbeWgF+buqjBS52y/AZCfV4q6EGfOMpEyx/zgo5qXybQQcFD4d68kv3fATvQnAimT/+guAeUXUwCQlyhPEwVuBVBAZ++RbCBYZEGPhpf8fFW5KNIpgJMJJk1H+GA+B95wa6NGWw6sBoImBU4LlTjLD6xajB1ICxZF0aYOpAJaFeDTDPCqgE+ggYR2lbRW3kYPJPj6yAakBjApNBS8J4xAqoJjRqcKiNFpAGNCYwbSBNaFjw0cahaMkKyAIacpSubHaBntPAgmwTEyBL6DAwWa3359yvWAAD2/8CDADDtMdrtdKF6gAAAABJRU5ErkJggg==";
 
 const copyToClipboard = text => {
   const field = document.createElement("textarea");
@@ -155,7 +156,11 @@ class Hero extends Component {
                           className="text-uppercase swagger--hero--card-platform-link"
                           href={`/${lang}/${id}`}
                         >
-                          <img className="mr-2" src={platformIcon} alt={goToPlatform} />
+                          <img
+                            className="mr-2"
+                            src={platformIcon}
+                            alt={goToPlatform}
+                          />
                           {goToPlatform} →
                         </a>
                       </div>

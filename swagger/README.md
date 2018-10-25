@@ -1,10 +1,12 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Customizzazione della Swagger UI](#customizzazione-della-swagger-ui)
   - [Generazione degli asset per l'inclusione in Jekyll](#generazione-degli-asset-per-linclusione-in-jekyll)
   - [Fase di sviluppo](#fase-di-sviluppo)
     - [Jekyll](#jekyll)
+      - [Struttura del progetto](#struttura-del-progetto)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,3 +46,11 @@ In alternativa è possibile includere manualmente gli stili in `swagger.html`
 
 ```
 ed utilizzare solo il server di sviluppo http://localhost:1234/ notando che gli stili eventualmente ereditati da Jekyll andranno così persi.
+
+#### Struttura del progetto
+
+`_includes/swagger.html` è utilizzato, così come versionato, durante la fase di sviluppo (`npm start`).
+
+In fase di build (`npm build`) il suo contenuto del file `_includes/swagger.html` verrà sostituito con l'output del comando, gli assets inclusi in questa pagina saranno invece spostati, nella medesima fase, in `assets/swagger`.
+In fase di build Jekyll (`bundle exec jekyll build`) la pagina sopra (`_includes/swagger.html`) verrà inclusa in ogni template generato che utilizza il layout `_layouts/api-details.html` (es: `_site/it/api`).
+Gli assets verranno invece spostati in, e serviti da, `_site/assets/swagger`.
