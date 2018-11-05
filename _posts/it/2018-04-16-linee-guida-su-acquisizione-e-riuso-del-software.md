@@ -9,12 +9,12 @@ author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 lang: it
 redirect_from:
-   - 
+   -
 ---
 
-Dal **5 aprile al 5 maggio** su [Docs Italia](https://docs.developers.italia.it/) è possibile partecipare ad una consultazione pubblica sulle nuove “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](http://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/)”. 
+Dal **5 aprile al 5 maggio** su [Docs Italia](https://docs.italia.it/) è stato possibile partecipare ad una consultazione pubblica sulle nuove “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](http://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/)”.
 
-Il testo stabilisce regole e modalità di **acquisizione** e di **condivisione** del software tra tutti i soggetti pubblici. La consultazione è aperta a tutti, in particolare **i fornitori e le pubbliche amministrazioni**. 
+Il testo stabilisce regole e modalità di **acquisizione** e di **condivisione** del software tra tutti i soggetti pubblici. La consultazione è aperta a tutti, in particolare **i fornitori e le pubbliche amministrazioni**.
 
 ## Le nuove linee guida sul software, di che si tratta
 

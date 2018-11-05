@@ -14,6 +14,7 @@ github_team: design
 maintainers:
   - matteo
   - lorenzo
+  - francesco
   - danilo
   - davide
 socials:
@@ -28,13 +29,20 @@ socials:
 ---
 
 ## Intro
-Il progetto Designers Italia ha anche l'obiettivo  di fornire una serie di strumenti operativi che possano aiutare le pubbliche amministrazioni ad applicare le [Linee Guida di Design](https://design-italia.readthedocs.io/it/stable/) dei servizi pubblici digitali.
+Il progetto Designers Italia ha anche l'obiettivo di fornire una serie di strumenti operativi che possano aiutare le pubbliche amministrazioni ad applicare le [Linee Guida di Design](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/) dei servizi pubblici digitali.
 L'idea di fondo è fonire dei kit, in alcuni casi del software, che facciano risparmiare tempo e denaro alle PA e che costuiscano una solida base di partenza per lo sviluppo di app (web e mobile) e siti internet.
 Alcune di questi progetti sono già attivi o sono in via di attivazione, altri sono ancora in fase "esplorativa".
 Per restare aggiornati sull'evoluzione dei progetti consigliamo di seguire la [roadmap sull'Interface Design](https://designers.italia.it/user-interface/) e di iscriversi alla [newsletter di Designers Italia](https://designers.italia.it/)
 
+## designers.italia.it
+Il sito [designers.italia.it](https://designers.italia.it/) è lo strumento a supporto della comunità italiana dei Designers.
+Il sito costituisce un importante complemento alle linee guida di design. In esso verranno progressivamente pubblicati blog-post, altri kit non basati sul software, dettagli sui progetti specifici, etc.
+Il sito è basato su [Jekyll](https://github.com/jekyll/jekyll) ed è basato su [questo repository](https://github.com/italia/designers.italia.it), ovviamente pubblico.
+
+_Progetti attivi_
+
 ### Lo UI Kit
-La community dei designers svilupperà un UI Kit basato su Sketch e costruito in maniera aperta e collaborativa su github.
+La community dei designers svilupperà un UI Kit basato su Sketch e costruito in maniera aperta e collaborativa su GitHub.
 La è utile anche per mappare i componenti che a tendere confluiranno nei vari kit che seguono.
 
 Repo
@@ -43,8 +51,6 @@ Repo
 Roadmap su [Google Spreadsheet](https://docs.google.com/spreadsheets/d/183hI6EBJo3EeiEcQPGZIe3hNN7EerTU5Udk6SkrH2OU/edit?usp=sharing)
 
 Il progetto [su Behance](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia)
-
-_Progetti attivi_
 
 ## Italia Web Toolkit
 Il toolkit rappresenta l'implementazione di riferimento delle linee guida di design della PA.
@@ -61,24 +67,23 @@ Per chi vuole utilizzare il toolkit o contribuire allo sviluppo è disponibile l
 
 Qui la descrizione completa delle [tecnologie utilizate](https://italia.github.io/design-web-toolkit/docs/tecnologie.html)
 
-## designers.italia.it
-Il sito [designers.italia.it](https://designers.italia.it/) è lo strumento a supporto della comunità italiana dei Designers.
-Il sito costituisce un importante complemento alle linee guida di design. In esso verranno progressivamente pubblicati blog-post, altri kit non basati sul software, dettagli sui progetti specifici, etc.
-Il sito è basato su [Jekyll](https://github.com/jekyll/jekyll) ed è basato su [questo repository](https://github.com/italia/designers.italia.it), ovviamente pubblico.
+## Bootstrap Italia Toolkit
+Il progetto ha come obiettivo quello di portare tutti i componenti e gli elementi di interfaccia presenti nell'_Italia Web Toolkit_ in un kit che abbia [Bootstrap 4](https://github.com/twbs/bootstrap) come base, al fine di renderlo ancora più semplice da usare.
+Lo scopo principale è mettere a disposizione della comunità di sviluppatori, coerentemente con le [Linee Guida di Design](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/), la sintassi, i tool, il parco di plugin e le convenzioni tipiche di uno stumento da molti già conosciuto ed utilizzato, quale appunto Bootstrap.
 
-_Progetti in fase di avvio_
+Repo [https://github.com/italia/bootstrap-italia](https://github.com/italia/bootstrap-italia)
 
-## Italia React Toolkit
-Il progetto, ancora in fase di definizione della roadmap, ha come obiettivo quello d costruire un set di componenti ed un layer di presentazione comune  basato su [React](https://github.com/facebook/react/) e coerente con le [Linee Guida di Design](https://design-italia.readthedocs.io/it/stable/).
+## Design React Toolkit
+Il progetto ha come obiettivo quello di costruire un set di componenti ed un layer di presentazione comune basato su [React](https://github.com/facebook/react/) e coerente con le [Linee Guida di Design](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/).
 Il focus del progetto saranno, almeno in una fase iniziale, le web app e/o le applicazione mobile ibride basate su [React Native](https://facebook.github.io/react-native/).
 I pattern di interazione da sviluppare/portare in questo primo tempo saranno appunto quelli tipici di questi casi d'uso.
-E' ancora in fase di valutazione la possibilità di utilizzare come base o come esempio i progetti [Ant Design](https://github.com/ant-design/ant-design/) o [UI Material](https://github.com/callemall/material-ui/tree/v1-beta)
 
-## Italia Bootstrap 4 Toolkit
-Il progetto, ancora nella fase di definizione della roadmap, ha come obiettivo quello di portare tutti i componenti e gli elementi di interfaccia presenti nell'_Italia Web Toolkit_ in un kit che abbia [Bootstrap4](https://github.com/twbs/bootstrap) come base, da poco entrato in beta.
-Lo scopo principale è mettere a disposizione della comunità di sviluppatori, coerentemente con le [Linee Guida di Design](https://design-italia.readthedocs.io/it/stable/), la sintassi, i tool, il parco di plugin e le convenzioni tipiche di uno stumento da molti già consosciuto ed utilizzato, quale appunto Bootstrap.
+Repo [https://github.com/italia/design-react-kit](https://github.com/italia/design-react-kit)
 
-Il repository di questo progetto è [https://github.com/italia/design-bootstrap4](https://github.com/italia/design-bootstrap4)
+### Design Angular Toolkit
+Affiancando il kit per React, mettiamo a disposizione un toolkit per lo sviluppo di web app basato su Angular.
+
+Repo [https://github.com/italia/design-angular-kit](https://github.com/italia/design-angular-kit)
 
 
 ## I progetti futuri
@@ -89,10 +94,7 @@ Per questo ogni contributo è benvenuto, sia anche semplicemente un suggerimento
 
 _Progetti in fase di valutazione_
 
-### Italia Angular Toolkit
-Ovviamente accanto a react saremmo felicid i mettere a disposizione un toolkit per lo sviluppo di web app basate su Angular. Non sono ancora state prese decisioni circa la versione, l'impostazione generale nè l'eventuale (e forse auspicata) compatibilità con il framework [ionic](https://github.com/ionic-team/ionic)
 
-Repo [https://github.com/italia/design-angular](https://github.com/italia/design-angular)
 
 ### Template base per CMS
 

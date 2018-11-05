@@ -18,7 +18,7 @@ maintainers:
 
 ## Intro
 
-The [Data & Analytics Framework (DAF)](http://pianotriennale-ict.readthedocs.io/en/latest/doc/09_data-analytics-framework.html) is part of the activities aimed
+The [Data & Analytics Framework (DAF)](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc-en/en/bozza/doc/09_data-analytics-framework.html) is part of the activities aimed
 at enhancing the national public information heritage. DAF aims to
 develop and simplify the interoperability of public data between PAs,
 standardize and promote the dissemination of *open data*, optimize data
@@ -46,7 +46,7 @@ functionality to third-party applications.
 
 ## Documentation and source code
 
-* [Technical documentation of DAF](https://daf-docs.readthedocs.io/en/latest/)
+* [Technical documentation of DAF](https://docs.italia.it/italia/daf/daf-docs/)
 * [All DAF repositories](https://github.com/italia?q=daf)
 * [Data Portal](https://dataportal.daf.teamdigitale.it/)
 

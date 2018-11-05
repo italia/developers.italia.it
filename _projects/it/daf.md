@@ -18,7 +18,7 @@ maintainers:
 
 ## Intro
 
-Il [Data & Analytics Framework (DAF)](https://pianotriennale-ict.readthedocs.io/it/latest/doc/09_data-analytics-framework.html) è una delle
+Il [Data & Analytics Framework (DAF)](https://docs.italia.it/italia/pianotriennale-ict/pianotriennale-ict-doc/it/bozza/doc/09_data-analytics-framework.html) è una delle
 attività atte a valorizzare il patrimonio informativo pubblico nazionale
 approvata dal Governo italiano nell'ambito del [Piano Triennale per
 l'Informatica nella PA (2017-2019)](https://pianotriennale-ict.italia.it/). La
@@ -72,9 +72,9 @@ Il DAF si compone di:
 
 Qui puoi trovare la documentazione tecnica attualmente disponibile:
 
-[Piano di sviluppo](http://daf-piano-di-sviluppo.readthedocs.io/it/latest/)
+[Piano di sviluppo](https://docs.italia.it/italia/daf/daf-piano-di-sviluppo/)
 
-[Documentazione tecnica per sviluppatori](https://daf-docs.readthedocs.io/en/latest/)
+[Documentazione tecnica per sviluppatori](https://docs.italia.it/italia/daf/daf-docs/)
 
 
 ## Codice sorgente
