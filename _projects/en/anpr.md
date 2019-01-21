@@ -11,7 +11,7 @@ order: 4
 maintainers:
   - carlo
   - mirko
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 github_team: anpr
@@ -40,7 +40,7 @@ We are working on a deep refactoring of all the documentation. For now we achive
 only the current documentation in a format more easy to read and query of all the table and error
 codes.
 
-[Table and error codes](http://anpr.readthedocs.io/it/latest/)
+[Table and error codes](https://docs.italia.it/italia/anpr/anpr/)
 
 
 ### Collaboration

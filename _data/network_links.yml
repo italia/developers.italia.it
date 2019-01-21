@@ -18,7 +18,7 @@ forum:
   li_markup_pre: '<span class="u-block u-padding-all-s u-margin-top-xs u-color-grey-50 u-textUppercase">gli strumenti</span>'
 docs:
   title: header_link_docs
-  url: 'https://docs.developers.italia.it/'
+  url: 'https://docs.italia.it/'
 github:
   title: header_link_github
   url: 'https://github.com/italia/'

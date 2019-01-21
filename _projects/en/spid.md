@@ -43,7 +43,7 @@ A complete task list con be found in the actual live roadmap:
 
 SPID uses an open protocol (SAML 2) that can be implemented by applying the official technical rules.
 
-[Technical rules](http://spid-regole-tecniche.readthedocs.io/en/latest/)
+[Technical rules](https://docs.italia.it/italia/spid/spid-regole-tecniche/)
 
 
 ## Source code

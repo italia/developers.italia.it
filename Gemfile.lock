@@ -19,12 +19,12 @@ GEM
     ethon (0.11.0)
       ffi (>= 1.3.0)
     eventmachine (1.2.7)
-    ffi (1.9.23)
+    ffi (1.9.25)
     forwardable-extended (2.6.0)
     hawkins (2.0.5)
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
-    html-proofer (3.9.0)
+    html-proofer (3.9.1)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
       colorize (~> 0.8)
@@ -85,7 +85,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
     netrc (0.11.0)
-    nokogiri (1.8.2)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     nuggets (1.5.0)
     parallel (1.12.1)
@@ -137,7 +137,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.1
+   1.16.6

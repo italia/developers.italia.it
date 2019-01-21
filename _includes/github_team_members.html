@@ -1,6 +1,8 @@
 {% assign team = site.data.github_teams | where: "slug", page.github_team %}
 {% assign team_members = team.first.members %}
 
+{% if team_members.size > 0 %}
+
 <h2 class="u-textWeight-400 u-text-r-xs u-color-grey-80 u-margin-r-bottom u-margin-r-top">
 	<span class="u-text-r-xs Icon Icon-github"></span> {{  t.project_leader }} 
 </h2>
@@ -16,3 +18,5 @@
 
 {% endfor %}
 </ul>
+
+{% endif %}

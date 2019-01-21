@@ -8,8 +8,9 @@ import "swagger-ui/dist/swagger-ui.css";
 // window.swaggerUrl/window.i10n are populated by Jekyll
 if (process.env.NODE_ENV === "development") {
   // Assign defaults while in "development"
-  window.swaggerUrl =
-    "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/openapi-v3/geodati.gov.it.yaml";
+  const openapis = require("./openapis");
+
+  window.swaggerUrl = openapis[0];
   window.contactLogo = "https://i.imgur.com/OTNbMVs.png";
   window.i10n = {
     swagger: {

@@ -9,7 +9,7 @@ order: 4
 maintainers:
   - carlo
   - mirko
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 github_team: anpr
@@ -29,7 +29,7 @@ Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai soft
 ## Documentazione
 Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
 
-[Documentazione tecnica e tabelle di riferimento](https://anpr.readthedocs.io)
+[Documentazione tecnica e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/)
 
 
 

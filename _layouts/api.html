@@ -13,7 +13,9 @@ layout: default
   {% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
+
 {% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
+{% assign root = '/' | append: active_lang | append: '/api' %}
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
@@ -26,12 +28,11 @@ layout: default
 
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
 
-
         <div class="Grid Grid--equalHeight Grid--withGutter">
         {% for api in apis %}
           {% assign url = '' %}
           {% if api.comingsoon != true %}
-            {% assign url = api.name | datapage_url: "." %}
+            {% assign url = api.name | datapage_url: root %}
           {% endif %}
 
           {% assign hasImage = false %}
