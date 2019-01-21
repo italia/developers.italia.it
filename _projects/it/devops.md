@@ -7,7 +7,7 @@ description: DevOps Italia è il punto di riferimento per lo sviluppo delle prat
 
 lang: it
 order: 4
-highlight: true
+highlight: false
 comingsoon: false
 layout: project
 github_team: devops

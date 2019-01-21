@@ -45,7 +45,7 @@ Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul docum
 
 [Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
 
-[Le linee guida tecniche per i cataloghi dati](http://linee-guida-cataloghi-dati-profilo-dcat-ap-it.readthedocs.io)
+[Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/)
 
 
 ## Codice sorgente

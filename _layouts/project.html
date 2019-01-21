@@ -31,7 +31,7 @@ layout: default
 
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-layout-prose u-text-r-xs">
-      <h2 class="u-text-r-xxl u-color-50">{{ page.payoff }}</h2>
+      <h2 class="u-text-r-xxl u-color-50">{{ page.title }}</h2>
       <p class="u-textWeight-300 u-text-r-m u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>
       <div class="Prose Project">
         {{ content }}
@@ -40,7 +40,7 @@ layout: default
     </div>
 
     {% capture toc %}{{ content | toc_only }}{% endcapture %}
-    {% include sideblock.html title=page.subtitle content=toc %}
+    {% include sideblock.html title=page.subtitle image=page.logo content=toc %}
     
     {% comment %}
       {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}

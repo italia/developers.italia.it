@@ -2,8 +2,8 @@
 title: Posso contribuire ad un progetto?
 text: >
   Certamente! Il contributo volontario ai progetti di Developers Italia, secondo il più genuino spirito open source, è sempre benvenuto. Ai contributori più attivi viene riconosciuta l'appartenenza all'organizzazione "Italia" su GitHub ed eventualmente offerta la maintainership del progetto a cui hanno lavorato.
-  Una volta che hai scelto un progetto, prendi familiarità leggendo la [documentazione](https://docs.developers.italia.it/) e consulta la
-  roadmap per capire quali sono le evoluzioni in corso e quelle previste. A questo punto, apri un thread sul nostro [forum](https://forum.italia.it) per entrare in contatto con i *maintainer* e il resto della comunità, e raccontaci quello che vorresti fare. 
+  Una volta che hai scelto un progetto, prendi familiarità leggendo la [documentazione](https://docs.italia.it/) e consulta la
+  roadmap per capire quali sono le evoluzioni in corso e quelle previste. A questo punto, apri un thread sul nostro [forum](https://forum.italia.it) per entrare in contatto con i *maintainer* e il resto della comunità, e raccontaci quello che vorresti fare.
   Oppure se ti senti lanciato, puoi andare anche direttamente al sodo: tutto il codice, la documentazione e gli esempi sono rilasciati sotto una licenza open source specificata nel singolo repository; per contribuire è sufficiente [aprire una pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
 order: 50
 lang: it
