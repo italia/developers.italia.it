@@ -47,7 +47,7 @@ it:
 
     home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
     home_hero_button: Scopri di più
-    home_hero_buttonurl: '#'
+    home_hero_buttonurl: '/it/chi-siamo'
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
@@ -69,7 +69,7 @@ it:
     credits_maintainers: Mantainer
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
-    banner_joinus_action: Vieni su GitHub
+    banner_joinus_action: Vieni su Slack
 
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
@@ -178,13 +178,13 @@ it:
       view_all_photos: Guarda tutte le foto
       tooltip: "
         [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
-        
+
         * **Code activity**: the daily number of commits and merges;
-        
+
         * **Release history**: the daily number of releases;
-        
+
         * **User community**: the number of unique authors;
-        
+
         * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-reanges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
 
 en:
@@ -240,7 +240,7 @@ en:
     home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
-    home_newsletter_footer: Stay in touch to be informed as we add more projects. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
+    home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     home_projects_title: Highlighted projects
     home_projects_expand: read more
     home_projects_others: All the projects
@@ -258,7 +258,7 @@ en:
     credits_maintainers: "Projects leaders & maintainers:"
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
-    banner_joinus_action: Vieni su GitHub
+    banner_joinus_action: Join our Slack
 
     status_member_of_board: member of board
     status_maintainer: maintainer

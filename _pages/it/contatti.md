@@ -5,7 +5,7 @@ lang: it
 layout: simple-internal
 image: /assets/images/contatti-img.jpg
 newsletterdata:
-    text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."
+    text: "Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) ma ti aiuterà a rimanere in contatto con noi."
     placeholdertext: mario.rossi@dev.software.it
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
@@ -23,7 +23,7 @@ pair-blocks:
       La tua posizione non è attualmente aperta, ma vorresti aiutare in futuro? Scrivici a [risorse@teamdigitale.gov.it](mailto:risorse@teamdigitale.gov.it)"
       image: /assets/images/contatti-lavora.svg
       buttons:
-        - label: Scopri di più
+        - label: Posizioni aperte
           class: btn btn-primary
           url: 'https://teamdigitale.governo.it/it/36-content.htm'
     - title: "Invia un feedback"
@@ -36,4 +36,5 @@ E se vuoi segnalare un bug puoi aprire una issue su [GitHub](https://github.com/
           url: 'https://forum.italia.it/'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in nisi a nunc accumsan tristique a ut eros. Donec eget lorem vel nibh malesuada fringilla. Vivamus dictum suscipit nibh, vitae placerat tellus ultrices sed. Mauris suscipit fringilla libero sed ullamcorper. Aliquam tristique purus sit amet facilisis commodo. Morbi sagittis tempor odio eget consequat. Proin non tempor mi. Vivamus aliquet lacus in ex lobortis scelerisque.
+Developers Italia è una community che si fonda sui principi della collaborazione e dell'apertura, finalizzata a condividere risorse tecniche e conoscenza. Per questo motivo preferiamo che i contatti avvengano attraverso canali pubblici ([Slack](https://slack.developers.italia.it/), [forum](https://forum.italia.it/), [GitHub](https://github.com/italia)) in modo che tutti possano beneficiare delle risposte e delle interazioni.
+Per comunicazioni più riservate potete comunque contattarci ai recapiti diretti che trovate nella sezione [Chi siamo](/it/chi-siamo).

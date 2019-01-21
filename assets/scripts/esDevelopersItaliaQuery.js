@@ -459,8 +459,8 @@ function esDevelopersItaliaQuery(config, params) {
       'host': 'http://elasticsearch.developers.loc'
     },
     'queryErrorMessage': {
-      'it': "C'è stato un problema nel recuperare i rsultati della ricerca, riprova più tardi",
-      'en': 'There was a problem finding the search results, please try again later'
+      'it': "La ricerca è temporaneamente non disponibile: riprova più tardi.",
+      'en': 'Could not retrieve the search results: please try again later.'
     },
     'intro': {
       'it': 'Hai cercato',
@@ -478,7 +478,7 @@ function esDevelopersItaliaQuery(config, params) {
       },
       'en': {
         'title': 'No results found',
-        'message': 'The word "{keyword}" has not produced any results. Try another search key.',
+        'message': 'The word "{keyword}" did not find any results. Try another search key.',
         'cta': 'Try a new search'
       }
     },
