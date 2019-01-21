@@ -1,5 +1,5 @@
 ---
-title: PagoPA
+title: pagoPA
 subtitle: Nodo di pagamento verso la Pubblica Amministrazione
 logo: /assets/images/logo-pagopa@2x.png
 payoff: Nodo dei Pagamenti verso la Pubblica Amministrazione
@@ -13,11 +13,11 @@ github_team: pagopa
 ---
 
 ## Intro
-PagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
+pagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
 
-Integrare PagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
+Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
 
-Per un cittadino, PagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione. È possibile pagare tramite:
+Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione. È possibile pagare tramite:
 
 - carta di credito
 - addebito in conto
@@ -42,7 +42,7 @@ Di seguito il link al questionario da completare per comunicare lo stato di avan
 
 ## App di esempio
 
-Ci sono due app di esempio, già perfettamente funzionanti, che contengono anche gli SDK utili agli sviluppatori che volessero realizzare le loro applicazioni per PagoPA.
+Ci sono due app di esempio, già perfettamente funzionanti, che contengono anche gli SDK utili agli sviluppatori che volessero realizzare le loro applicazioni per pagoPA.
 
 * [App di esempio iOS](https://github.com/italia/pagopa-ios-example)
 * [App di esempio Android](https://github.com/italia/pagopa-android-example)
