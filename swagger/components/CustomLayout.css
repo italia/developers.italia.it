@@ -13,3 +13,9 @@
 .swagger--head-card a:active {
   color: #06c;
 }
+
+@media screen and (max-width: 767px) {
+  .swagger--head-card {
+    top: 0;
+  }
+}

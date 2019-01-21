@@ -31,13 +31,14 @@ it:
     - title: Docs
       image: /assets/icons/tools/decorative_outlined_docs.svg
       url: https://docs.italia.it
-    - title: API Sandbox
+    - title: API
       image: /assets/icons/tools/decorative_outlined_api.svg
+      url: it/api
       markup_post: >
         <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-          <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-grey-20 u-color-grey-50 u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-            in arrivo
+          <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-m u-background-80 u-color-white u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+            u-borderRadius-m u-background-80 u-color-white u-text-xxs">
+            New
           </span>
         </div>
   - title: Cosa fare
@@ -88,13 +89,14 @@ en:
       - title: Docs
         image: /assets/icons/tools/decorative_outlined_docs.svg
         url: https://docs.italia.it
-      - title: API Sandbox
+      - title: API
         image: /assets/icons/tools/decorative_outlined_api.svg
-        url: /
+        url: it/api
         markup_post: >
           <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-xl u-background-50 u-color-white u-text-xxs">
-              coming soon
+            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-m u-background-80 u-color-white u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+              u-borderRadius-m u-background-80 u-color-white u-text-xxs">
+              New
             </span>
           </div>
   - title: To do
@@ -107,4 +109,5 @@ en:
     url: en/faq
   - title: API
     liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: en/api
+    url: it/api/
+
