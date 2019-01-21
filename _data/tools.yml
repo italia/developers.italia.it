@@ -16,7 +16,7 @@ it:
     url: https://forum.italia.it
   -
     title: Documentazione
-    subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
+    subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, ed ospitata da Docs Italia.
     url: https://docs.italia.it
   -
     title: Sandbox per API

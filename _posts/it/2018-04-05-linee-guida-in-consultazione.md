@@ -13,7 +13,7 @@ redirect_from:
 ---
 
 Ciao a tutti!
-Inizia oggi (fino al 5 Maggio 2018) la consultazione sulle [Linee Guida sul Riuso e Acquisizione del Software nelle Pubbliche Amministrazioni](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/) che coprono due temi:
+Inizia oggi (fino al 5 Maggio 2018) la consultazione sulle [Linee Guida sul Riuso e Acquisizione del Software nelle Pubbliche Amministrazioni](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/) che coprono due temi:
 
 * Il processo di pubblicazione in open source di tutto il software di cui le Pubbliche Amministrazioni abbiano titolarità (realizzato in passato o in futuro), come vuole l’[Art 69 del CAD](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html). In particolare, descriviamo come scegliere una licenza, come effettuare un rilascio ai fini del riuso, come prendere a riuso un software open source e come modificarlo, utilizzano [Developers Italia](https://developers.italia.it/) come piattaforma di riferimento.
 * Il processo che le amministrazioni dovranno seguire prima di acquisire un software di qualunque tipo, descrivendo quando indicato nell’[Art 68 del CAD](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html). Qui abbiamo cercato di indicare in modo chiaro le fasi del processo decisionale che comincia dal chiarire le proprie necessità e verificare la presenza di soluzioni open-source a riuso disponibili, valutando la loro maturità e le personalizzazioni necessarie.
