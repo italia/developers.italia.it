@@ -17,7 +17,7 @@ it:
   -
     title: Documentazione
     subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
-    url: https://docs.developers.italia.it
+    url: https://docs.italia.it
   -
     title: Sandbox per API
     subtitle: Gioca direttamente con le API dei progetti, in un ambiente di testing che ti aiuterà ad esplorare e sistemare la tua implementazione.
@@ -43,7 +43,7 @@ en:
   -
     title: Docs
     subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
-    url: https://docs.developers.italia.it
+    url: https://docs.italia.it
   -
     title: API Sandbox
     subtitle: Play with all the APIs exposed by the projects, in a testing environment that will help you exploring and fixing your implementation.

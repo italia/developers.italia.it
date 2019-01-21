@@ -41,7 +41,7 @@ Sono in seguenti sviluppi che coinvolgono anche la community:
 ## Documentazione
 SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali.
 
-[Regole tecniche](http://spid-regole-tecniche.readthedocs.io/en/latest/)
+[Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/)
 
 
 ## Codice sorgente

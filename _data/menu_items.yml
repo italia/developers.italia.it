@@ -30,7 +30,7 @@ it:
       url: https://forum.italia.it
     - title: Docs
       image: /assets/icons/tools/decorative_outlined_docs.svg
-      url: https://docs.developers.italia.it
+      url: https://docs.italia.it
     - title: API Sandbox
       image: /assets/icons/tools/decorative_outlined_api.svg
       markup_post: >
@@ -87,7 +87,7 @@ en:
         url: https://forum.italia.it
       - title: Docs
         image: /assets/icons/tools/decorative_outlined_docs.svg
-        url: https://docs.developers.italia.it
+        url: https://docs.italia.it
       - title: API Sandbox
         image: /assets/icons/tools/decorative_outlined_api.svg
         url: /
