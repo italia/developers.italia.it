@@ -18,7 +18,14 @@ class GithubImporter < Jekyll::Generator
 		# test if we don't want download data from github
 		if ENV['JEKYLL_NO_GITHUB']!= nil and site.data['github_teams']
 			puts "*****************************************************"
-                puts("WARNING! GitHub api disabled")
+            puts("WARNING! GitHub API disabled")
+			puts "*****************************************************"
+			return
+		end
+		if ENV['GITHUB_ACCESS_TOKEN'] == nil
+			puts "*****************************************************"
+            puts("WARNING! No GITHUB_ACCESS_TOKEN: skipping GitHub API calls")
+			puts "*****************************************************"
 			return
 		end
 
