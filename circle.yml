@@ -7,7 +7,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/ruby:2.5.1-node-browsers
+      - image: circleci/ruby:2.6.0-node-browsers
     environment:
       - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
       - JEKYLL_ENV: "production"
@@ -16,6 +16,7 @@ jobs:
     steps:
       - checkout
       - run: npm install .
+      - run: bundle update --bundler
       - run: bundle install
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
@@ -37,6 +38,7 @@ jobs:
     steps:
       - checkout
       - run: npm install .
+      - run: bundle update --bundler
       - run: bundle install
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
