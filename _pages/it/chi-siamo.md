@@ -1,7 +1,7 @@
 ---
 title: Chi siamo
 lang: it
-layout: credits
+layout: simple-internal
 subtitle:
 image: /assets/images/chisiamo-img.jpg
 ---

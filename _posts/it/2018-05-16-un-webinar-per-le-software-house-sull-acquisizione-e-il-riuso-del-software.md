@@ -12,7 +12,7 @@ redirect_from:
    - 
 ---
 
-**Mercoledì 23 maggio alle 16** si terrà un webinar a cura del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/) rivolto alle software house, per presentare le nuove [Linee guida sull’acquisizione e il riuso di software per la Pubblica Amministrazione](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/) che **aprono nuovi scenari e nuove opportunità** per il mercato dei fornitori di software.
+**Mercoledì 23 maggio alle 16** si terrà un webinar a cura del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/) rivolto alle software house, per presentare le nuove [Linee guida sull’acquisizione e il riuso di software per la Pubblica Amministrazione](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/) che **aprono nuovi scenari e nuove opportunità** per il mercato dei fornitori di software.
 
 In particolare, il modello adottato, che è incentrato sulle licenze *open source* e su un catalogo dettagliato, incentiverà la domanda per attività di:
 

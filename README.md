@@ -5,6 +5,7 @@ Questo repositorio contiene il codice sorgente di developers.italia.it.
 
 Il sito è sviluppato con Jekyll. Per configurare un ambiente di sviluppo è sufficiente eseguire i seguenti comandi:
 
+    $ export ELASTICSEARCH_URL=""
     $ npm install
     $ bundle install
     $ bundle exec jekyll serve
