@@ -16,14 +16,14 @@ jobs:
     steps:
       - checkout
       - run: npm install .
-      - run: bundle update --bundler
+      - run: gem install bundler
       - run: bundle install
+      - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      #- run: cp -r ./github ./_site/ # Copy github folder into ./site.
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # Deploy to production site
@@ -38,16 +38,15 @@ jobs:
     steps:
       - checkout
       - run: npm install .
-      - run: bundle update --bundler
+      - run: gem install bundler
       - run: bundle install
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-      - run: mkdir -p ~/.ssh
-      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/pre.developers.italia.it/web/
 
 workflows:
@@ -58,6 +57,7 @@ workflows:
           filters:
             branches:
               only:
+                - master
                 - new-version-master
   do-test:
     jobs:
