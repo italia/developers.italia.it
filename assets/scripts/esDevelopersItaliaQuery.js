@@ -456,7 +456,7 @@ function esDevelopersItaliaQuery(config, params) {
     'page': 0,
     'size': 12,
     'elasticsearch_connection': {
-      'host': '/elasticsearch/'
+      'host': 'http://elasticsearch.developers.loc'
     },
     'queryErrorMessage': {
       'it': "La ricerca è temporaneamente non disponibile: riprova più tardi.",

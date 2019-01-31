@@ -21,7 +21,7 @@ jobs:
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/output/ ./_data/crawler/
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
@@ -43,7 +43,7 @@ jobs:
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/output/ ./_data/crawler/
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
