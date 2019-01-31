@@ -46,12 +46,12 @@ jobs:
       - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/output/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      #- run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/pre.developers.italia.it/web/
 
 workflows:
   version: 2
-  continuous-deploy:
+  build-and-deploy:
     jobs:
       - build:
           filters:
@@ -59,7 +59,7 @@ workflows:
               only:
                 - master
                 - new-version-master
-  do-test:
+  test:
     jobs:
       - test:
           filters:
