@@ -451,7 +451,7 @@ function esDevelopersItaliaQuery(config, params) {
       'it': 'risultati',
       'en': 'results'
     },
-    'index': 'publiccode',
+    'index': 'jekyll',
     'type': [],
     'page': 0,
     'size': 12,
