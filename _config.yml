@@ -157,3 +157,5 @@ elasticsearch:
   number_of_replicas: 1
   index_name: "jekyll"
   default_type: "post"
+  custom_settings: _es_settings.yml
+  custom_mappings: _es_mappings.yml

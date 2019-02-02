@@ -1,0 +1,73 @@
+properties:
+  author:
+    type: text
+    fields:
+      keyword:
+        type: keyword
+        ignore_above: 256
+  categories:
+    type: text
+    fields:
+      keyword:
+        type: keyword
+        ignore_above: 256
+  description:
+    type: text
+    analyzer: autocomplete
+    search_analyzer: autocomplete_search
+  draft:
+    type: boolean
+  excerpt:
+    type: text
+  html:
+    type: text
+    analyzer: autocomplete
+    search_analyzer: autocomplete_search
+  id:
+    type: text
+    fields:
+      keyword:
+        type: keyword
+        ignore_above: 256
+  image:
+    type: text
+    index: false
+  lang:
+    type: keyword
+  layout:
+    type: text
+    fields:
+      keyword:
+        type: keyword
+        ignore_above: 256
+  permalink:
+    type: text
+    index: false
+  redirect_from:
+    type: text
+    index: false
+  slug:
+    type: keyword
+  tags:
+    type: keyword
+  text:
+    type: text
+  title:
+    type: text
+    analyzer: autocomplete
+    search_analyzer: autocomplete_search
+  name:
+    type: text
+    analyzer: autocomplete
+    search_analyzer: autocomplete_search
+  toc:
+    type: boolean
+  top_projects_link:
+    type: text
+    index: false
+  type:
+    type: keyword
+  url:
+    type: text
+    index: false
+
