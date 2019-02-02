@@ -9,7 +9,7 @@ lang: it
 order: 3
 highlight: false
 comingsoon: true
-layout: project
+layout: platform
 ---
 
 ## Intro

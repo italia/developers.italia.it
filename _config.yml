@@ -93,10 +93,10 @@ collections:
      output: true
      permalink: /:path/
      layout: page
-   projects:
+   platforms:
      output: true
      permalink: /:path/
-     layout: project
+     layout: platform
    faqs:
      output: false
 

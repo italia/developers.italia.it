@@ -52,10 +52,7 @@ it:
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
     home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori.
-    home_projects_title: Progetti in evidenza
-    home_projects_expand: per saperne di più
-    home_projects_others: Tutti i progetti
-    home_projects_count: progetti in totale
+    home_platforms_title: Piattaforme
     home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per argomento
@@ -241,10 +238,7 @@ en:
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
     home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
-    home_projects_title: Highlighted projects
-    home_projects_expand: read more
-    home_projects_others: All the projects
-    home_projects_count: total projects
+    home_platforms_title: Platforms
     home_news_title: News
     home_news_expand: read more
     home_tags: Browse by tag

@@ -1,6 +1,6 @@
 ---
 title: Piattaforme
-layout: projects
+layout: platforms
 lang: it
 redirect_from:
   - /it/projects

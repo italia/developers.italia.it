@@ -5,8 +5,6 @@ lang: it
 
 {% include setlang.html %}
 
-{% assign projects = site.projects | where: 'lang', active_lang | sort: 'order' | reverse %}
-
 <div class="credits-main-image text-center">
   <img src="{{page.image}}" class="img-fluid">
 </div>

@@ -13,7 +13,7 @@ maintainers:
   - mirko
 highlight: false
 comingsoon: false
-layout: project
+layout: platform
 github_team: anpr
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Projects
-layout: projects
+title: Platforms
+layout: platforms
 lang: en
 redirect_from:
   - /en/projects

@@ -12,7 +12,7 @@ maintainers:
   - mirko
 highlight: false
 comingsoon: false
-layout: project
+layout: platform
 github_team: anpr
 newsletterdata:
     text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."

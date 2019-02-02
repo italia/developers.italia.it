@@ -9,7 +9,7 @@ lang: it
 order: 4
 highlight: false
 comingsoon: false
-layout: project
+layout: platform
 github_team: devops
 maintainers:
   - paolo

@@ -4,7 +4,7 @@ lang: it
 ---
 
 {% include setlang.html %}
-{% assign projects = site.projects | where:"lang",active_lang %}
+{% assign platforms = site.platforms | where:"lang",active_lang %}
 
 <div class="projectslist">
   <div class="container">
@@ -15,16 +15,16 @@ lang: it
     </div>
     <div class="projectslist__listing pt-2 pt-md-4 pb-2 pb-md-4">
       <div class="row row-eq-height">
-        {% for proj in projects %}
+        {% for platform in platforms %}
         <div class="col-md-3 p-2 p-md-3">
           <article class="d-flex flex-column align-items-start mb-2 mb-md-5">
-              <a href="{{proj.url}}" title="{{proj.title}}" class="d-block decoration-none ">
-              {% if proj.logo %}
+              <a href="{{platform.url}}" title="{{platform.title}}" class="d-block decoration-none ">
+              {% if platform.logo %}
               <figure>
-                  <img class="w-100" src="{{proj.logo | relative_url}}">
+                  <img class="w-100" src="{{platform.logo | relative_url}}">
               </figure>
               {% endif %}
-              <h1 class="projectslist__listing__title">{{proj.title}}</h1>
+              <h1 class="projectslist__listing__title">{{platform.title}}</h1>
               <span class="projectslist__listing__url" >{{t.software.read_more}} &rarr;</span>
               </a>
           </article>

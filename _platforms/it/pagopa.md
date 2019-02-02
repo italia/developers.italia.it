@@ -8,7 +8,7 @@ lang: it
 order: 2
 highlight: true
 comingsoon: false
-layout: project
+layout: platform
 github_team: pagopa
 ---
 

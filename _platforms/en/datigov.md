@@ -9,7 +9,7 @@ lang: en
 order: 2
 highlight: false
 comingsoon: false
-layout: project
+layout: platform
 maintainers:
   - alessandro
   - fabiana

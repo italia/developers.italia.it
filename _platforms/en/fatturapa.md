@@ -10,7 +10,7 @@ lang: en
 order: 5
 highlight: false
 comingsoon: true
-layout: project
+layout: platform
 ---
 
 ## Coming soon...

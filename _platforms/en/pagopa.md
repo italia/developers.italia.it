@@ -10,7 +10,7 @@ lang: en
 order: 4
 highlight: false
 comingsoon: false
-layout: project
+layout: platform
 github_team: pagopa
 ---
 

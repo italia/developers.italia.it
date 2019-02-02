@@ -10,7 +10,7 @@ lang: en
 order: 9
 highlight: true
 comingsoon: true
-layout: project
+layout: platform
 github_team: cie
 ---
 

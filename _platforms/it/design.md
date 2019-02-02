@@ -9,7 +9,7 @@ lang: it
 order: 4
 highlight: true
 comingsoon: false
-layout: project
+layout: platform
 github_team: design
 maintainers:
   - matteo

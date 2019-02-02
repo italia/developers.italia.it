@@ -12,7 +12,7 @@ lang: it
 order: 1
 highlight: true
 comingsoon: false
-layout: project
+layout: platform
 github_team: spid
 socials:
   -
