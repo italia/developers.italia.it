@@ -1,20 +1,22 @@
 ---
 title: What's the goal of this website?
 text: >
-  The website was created to simplify and improve the interaction between the developers and the
-  Public Administration, starting from some important projects like the ANPR, the National Registry
-  of the Resident Population, or the SPID, the digital management system of the public identity.
-  Until now except some rare exceptions the central Public Administration limited itself on
-  drawfting laws and regulations in a non-technical bureaucratic language without any tool or
-  initiatives to support the developers involved in build and integrate software. Developers Italia
-  wants to fill this gap starting from an handful of projects which will grow in the next months.
-  Around these projects we want to build a community starting from the basics: re-writing the
-  documentation in a technical language, using as a publish platform the open source project *Read
-  The Docs*. By providing development environments, examples, and SDKs for the most common
-  languages and frameworks.
-  We'll provide a direct support via the [forum](https://forum.italia.it/), build on
-  top of the open source project *Discourse* and already accessible online, instead of a helpdesk
-  accessible only by phone.
+  The website was created to simplify and improve the interaction between the
+  developers and the Public Administration, starting from some important
+  projects like ANPR, the National Registry of the Resident Population, or
+  SPID, the digital management system of the public identity. Until now,
+  apart some rare exceptions, the central Public Administration limited itself
+  on drafting laws and regulations in a non-technical bureaucratic language
+  without any tool or initiatives to support the developers involved in building
+  and integrating software. Developers Italia wants to fill this gap starting from
+  a handful of projects which will grow in the next months. Around these
+  projects we want to build a community starting from the basics: re-writing the
+  documentation in a technical language, using as a publish platform the open
+  source project *Read The Docs*. Moreover, we will provide development environments,
+  examples, and SDKs for the most common languages and frameworks. Instead of
+  using a helpdesk accessible only by phone, we will 
+  provide a direct support via our [forum](https://forum.italia.it/), built on
+  top of the open source project *Discourse* and already accessible online. 
 order: 1
 lang: en
 ---
