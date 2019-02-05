@@ -4,24 +4,53 @@ subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
 lang: en
 layout: page
 ---
+
 # Information for Students
 First of all, welcome!
 
-These ideas were contributed by our developers and users. They are sometimes vague or incomplete. If you wish to submit a proposal based on these ideas, you may wish to contact the developers and find out more about the particular suggestion you're looking at.
+These ideas were contributed by our developers and users. They are sometimes
+vague or incomplete. If you wish to submit a proposal based on these ideas, you
+may wish to contact the developers and find out more about the particular
+suggestion you're looking at.
 
-Being accepted as a Google Summer of Code student is quite competitive. Accepted students typically have thoroughly researched the technologies of their proposed project and have been in frequent contact with potential mentors. Simply copying and pasting an idea here will not work. On the other hand, creating a completely new idea without first consulting potential mentors is unlikely to work out.
+Being accepted as a Google Summer of Code student is quite competitive.
+Accepted students typically have thoroughly researched the technologies of
+their proposed project and have been in frequent contact with potential
+mentors. Simply copying and pasting an idea here will not work. On the other
+hand, creating a completely new idea without first consulting potential mentors
+is unlikely to work out.
 
-When writing your proposal or asking for help from the general community of Developers Italia, and don't assume everyone is familiar with the ideas here.
+When writing your proposal or asking for help from the general community of
+Developers Italia don't assume everyone is familiar with the ideas here.
 
-If there is no specific contact given you can ask questions on our [Slack](https://slack.developers.italia.it/). You can get an invite [here](https://slack.developers.italia.it/). If you don't know who your point of contact should be, don't be shy, there is a channel called [#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) just for this!
+If there is no specific contact given you can ask questions on our
+[Slack](https://slack.developers.italia.it/). You can get an invite
+[here](https://slack.developers.italia.it/). If you don't know who your point
+of contact should be, don't be shy, there is a channel called
+[#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) just for
+this!
 
 ## Open ideas
 
-Well prepared proposals from capable students have an outstanding chance of getting selected. We consider proposals for all skill levels ranging from simple to crazy hard and everything in between. Introduce yourself, and we'll help you plan one right for you.
+Well prepared proposals from capable students have an outstanding chance of
+getting selected. We consider proposals for all skill levels ranging from
+simple to crazy hard and everything in between. Introduce yourself, and we'll
+help you plan one right for you.
 
-Remember that project descriptions are just initial ideas. You must expand with considerably more detail. Change the goals to fit your experience and interests.
+Remember that project descriptions are just initial ideas. You must expand with
+considerably more detail. Change the goals to fit your experience and
+interests.
 
-Note for the community: each project on the Ideas list should include: a) a project title/description b) more detailed description of the project (2-5 sentences) c) expected outcomes d) skills required/preferred e) possible mentors. And if possible, an easy, medium or hard rating of each project.
+**Note for the community**.
+Each project on the Ideas list should include: 
+1. a project title/description
+2. more detailed description of the project (2-5 sentences) 
+3. expected outcomes 
+4. skills required/preferred 
+5. possible mentors. 
+
+And, if possible, an *easy, medium or hard* rating of each project.
+
 
 <table id="issues_table" class="display responsive dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;">
     <thead>
