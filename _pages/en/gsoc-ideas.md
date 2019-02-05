@@ -33,50 +33,66 @@ Note for the community: each project on the Ideas list should include: a) a proj
         </tr>
     </thead>
 
-
     <tbody>
         <tr role="row" class="odd">
             <td tabindex="0">DAF</td>
             <td>
-                <b>Create a new pipeline for ingesting data into DAF </b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. Find an interesting
-                data source (with a certain platform) and convert it so it's usable within DAF. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful.
+                <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
+                By leveraging the `daf-dataset-toolbar-search` capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
-                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
+                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> A working pipeline to ingest data into DAF
+                <b>Expected outcome:</b> An output of the analysis.  
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- Scala</li>
+                    <li>- Open data knowledge</li>
                     <li>- Data management</li>
-                    <li>- (preferred) Kylo</li>
                 </ul>
-                <br /> Full description on the issue:
-                <a href="https://github.com/italia/daf/issues/215">#215</a></td>
-            <td>Hard</td>
+                </td>
+            <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">DAF</td>
             <td>
-                <b>Create a data product based on a DAF dataset</b><br /> Create an application based on a DAF dataset You can choose any technology you want, but you should be creating an interesting dashboard, visualization, or useful program which
-                exploits the possibilities of the DAF framework. We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application would be useful. We have several mentors available, with
-                different expertises, so make sure you discuss with your mentor which kind of application would be useful.
+                <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
+                This project consists in creating a tool to export some visualizations made using a visualization framework (e.g., Semiotic) from the notebooks in order to render them inside DAF. 
+                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approaches may be useful. 
                 <br />
-                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea
+                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> An application (web or otherwise) which makes use of DAF datasets
+                <b>Expected outcome:</b> A working tool together with tests,
+                documentation and deployment information. 
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- (preferred) Data visualization</li>
+                    <li>- Web development</li>
+                    <li>- Data visualization</li>
                     <li>- Data management</li>
                 </ul>
-                <br /> Full description on the issue:
-                <a href="https://github.com/italia/daf/issues/214">#214</a></td>
-            <td>Medium</td>
+            <td>Hard</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">DAF</td>
+            <td>
+                <b>Create a tool to create plots</b><br /> The project
+                involves the evolution or the creation of a tool to create
+                plots using the DAF APIs or graphql on DAF data.   
+                <br />
+                <b>Mentor:</b> Data science team #daf channel.
+                <br />
+                <b>Expected outcome:</b> A set of datastories that create insights on public data.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Python</li>
+                    <li>- Data Science</li>
+                </ul></td>
+            <td>Easy</td>
+        </tr>
+
         <tr role="row" class="odd">
 
             <td tabindex="0">OpenFisca</td>
@@ -161,60 +177,5 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 <td>Up to you</td>
                 <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
-        <tr role="row" class="odd">
-            <td tabindex="0">DAF</td>
-            <td>
-                <b>CI and Automation for DAF</b><br /> DAF is currently organized as a number of microservices with a complex deploy structure. It is not the most developer-friendly environment to set-up. Write a series of CI/CD pipelines to automate the testing and development phases, and complement it with some ansible sugar to configure hacking and production environments.
-                <br />
-                <b>Mentor:</b> Our dev-ops are always hanging on the #daf channel. Fabio Fumarola or Alessandro Ercolani will help you get started.
-                <br />
-                <b>Expected outcome:</b> A set of pipelines to create a more structured DAF infrastructure.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- A CI/CD system</li>
-                    <li>- Ansible</li>
-                </ul></td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
-        </tr>
-        <tr role="row" class="even">
-            <td tabindex="0">DAF</td>
-            <td>
-                <b>Data science - datastories</b><br /> DAF offers Jupiter notebooks for data scientists to explore public datasets. The whole environment is set up in a way so that you can create your "data stories", combining notebooks, Metabase plots and other visualization from Superset. Use the platform to create new dashboards useful to citizens and journalists.
-                <br />
-                <b>Mentor:</b> Data science team #daf channel. Fabiana Lanotte.
-                <br />
-                <b>Expected outcome:</b> A set of datastories that create insights on public data.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Python</li>
-                    <li>- Data Science</li>
-                </ul></td>
-            <td>Easy</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
-        </tr>
-        <tr role="row" class="odd">
-            <td tabindex="0">General</td>
-            <td>
-                <b>Plan and develop a novel <i>electronic class register</i> for the hospital school</b><br /> The Italian <i>hospital schools</i> need a specialized class register with features slightly different from the traditional registers. Together with an ad-hoc team of the Polytechnic University of Turin, you should analyze the current solutions in the FOSS panorama, design the novel architecture, develop the code and define a deployment strategy. The starting point of the project will be the working solution already deployed by the team several years ago (that needs restyling).
-                <br />
-                <b>Mentor:</b> The Open Education team at Politecnico di Torino
-                <br />
-                <b>Expected outcome:</b> A working alpha release.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Python</li>
-                    <li>- Django</li>
-                    <li>- PostgreSQL</li>
-                    <li>- GNU/Linux</li>
-                    <li>- Web development/deployment techniques</li>
-                </ul>
-                Meet me on Slack in the #welcome channel.</td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
-        </tr>
-    </tbody>
+        </tbody>
 </table>
