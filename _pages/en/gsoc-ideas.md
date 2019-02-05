@@ -49,7 +49,7 @@ Note for the community: each project on the Ideas list should include: a) a proj
                     <li>- Open data knowledge</li>
                     <li>- Data management</li>
                 </ul>
-                </td>
+            </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
@@ -71,6 +71,7 @@ Note for the community: each project on the Ideas list should include: a) a proj
                     <li>- Data visualization</li>
                     <li>- Data management</li>
                 </ul>
+            </td>
             <td>Hard</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
@@ -89,12 +90,11 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 <ul>
                     <li>- Python</li>
                     <li>- Data Science</li>
-                </ul></td>
+                </ul>
+            </td>
             <td>Easy</td>
         </tr>
-
         <tr role="row" class="odd">
-
             <td tabindex="0">OpenFisca</td>
             <td>
                 <b>Adapt OpenFisca to the Italian Fiscal system</b><br />
@@ -111,7 +111,8 @@ Note for the community: each project on the Ideas list should include: a) a proj
                     <li>- A general understanding of taxation systems</li>
                 </ul>
                 <br /> Full description on the issue:
-                <a href="https://github.com/italia/developers.italia.it/issues/105">#105</a></td>
+                <a href="https://github.com/italia/developers.italia.it/issues/105">#105</a>
+            </td>
             <td>Easy</td>
             <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
@@ -132,7 +133,8 @@ Note for the community: each project on the Ideas list should include: a) a proj
                     <li>- Joomla</li>
                 </ul>
                 <br /> Full description on the issue:
-                <a href="https://github.com/italia/design-joomla-theme/issues/1">#1</a></td>
+                <a href="https://github.com/italia/design-joomla-theme/issues/1">#1</a>
+            </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
                 <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
@@ -154,7 +156,8 @@ Note for the community: each project on the Ideas list should include: a) a proj
                     <li>- Drupal</li>
                 </ul>
                 <br /> Full description on the issue:
-                <a href="https://github.com/italia/design-drupal-theme/issues/1">#1</a></td>
+                <a href="https://github.com/italia/design-drupal-theme/issues/1">#1</a>
+            </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
                 <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
@@ -175,7 +178,8 @@ Note for the community: each project on the Ideas list should include: a) a proj
                 </ul>
                 </td>
                 <td>Up to you</td>
-                <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+                <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>
+            </td>
         </tr>
         </tbody>
 </table>
