@@ -55,7 +55,7 @@ Lo UI Kit è un set di componenti visive già pronte per assemblare l’interfac
 
 Molti progetti della Pubblica Amministrazione stanno già utilizzando lo UI Kit per definire le proprie interfacce, tra cui i modelli per i [siti dei comuni](https://github.com/italia/design-comuni-prototipi) e i [siti delle scuole](https://github.com/italia/design-scuole-prototipi).
 
-Per domande e discussioni sullo UI Kit, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile e aperto a tutti il canale [#design-ui](https://developersitalia.slack.com/messages/C9N62GX8E/)
+Per domande e discussioni sullo UI Kit, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile e aperto a tutti il canale [#design-ui](https://developersitalia.slack.com/messages/C9N62GX8E/).
 
 ## Web Development Kit
 I [Web Development Kit](https://designers.italia.it/kit/web-development-kit/) sono un insieme di strumenti per lo sviluppo front end di siti e applicazioni web. Sono librerie HTML, CSS e Javascript che permettono di realizzare siti conformi alle Linee Guida di Design e realizzano in codice quanto previsto dallo UI Kit. Allo stato attuale, il kit per lo sviluppo web più stabile, aggiornato e maturo è Bootstrap Italia, basato sulla libreria open-source Bootstrap 4.
@@ -99,11 +99,11 @@ Il progetto ha come obiettivo quello di costruire un set di componenti ed un lay
 
 Le contribuzioni sui kit sono molto importanti, per cui se pensi di poter dare una mano con feedback, informazioni utili, segnalazioni di bug o codice, fatti avanti!
 
-Per domande e discussioni sui Web Development Kit, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile il canale [#design-devel](https://developersitalia.slack.com/messages/C7VPAUVB3/)
+Per domande e discussioni sui Web Development Kit, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile il canale [#design-devel](https://developersitalia.slack.com/messages/C7VPAUVB3/).
 
 ## Altri kit utili per la progettazione
 
 Lo sviluppo web è soltanto parte del ciclo di lavorazione di un servizio secondo le Linee Guida di Design. Designers Italia mette a disposizione Kit che coprono tutto il ciclo di progettazione di un servizio, dalla ricerca all'architettura dell'informazione, passando per i test con gli utenti. Per maggiori informazioni, puoi iniziare dalla pagina dei [Kit sul sito di Designers Italia](https://designers.italia.it/kit/).
 
-Per domande e discussioni su questi kit di design, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile il canale [#design-service](https://developersitalia.slack.com/messages/C9HKFKU9J/)
+Per domande e discussioni su questi kit di design, sullo [Slack di Developers Italia](https://slack.developers.italia.it/) è disponibile il canale [#design-service](https://developersitalia.slack.com/messages/C9HKFKU9J/).
 
