@@ -52,7 +52,7 @@ layout: default
         {% assign mainImage = software.description.eng.screenshots | first %}
       {% endif %}
       <div class="col-sm col-md-4 item mb-2 mb-md-5 p-2 p-md-3">
-        <a href="/{{active_lang}}/software/{{software.id}}/{{ software.name | replace: ' ', '-'  | downcase }}" class="d-block decoration-none " >
+        <a href="/{{active_lang}}/software/{{software.id}}" class="d-block decoration-none " >
         <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
         <p class="name color-inherit">
@@ -76,6 +76,8 @@ layout: default
       {% endif %}
     {% endfor %}
   </div>
+
+  
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
       <div class="col-md-7">
@@ -89,14 +91,14 @@ layout: default
     {% for software in site.data.crawler.softwares limit: 6 %}
       {% if software.it.riuso.codiceIPA != nil %}
       <div class="col-sm col-md-3 item mb-2 mb-md-5 p-2 p-md-3">
-        <a href="{{software.id}}/{{ software.name | replace: ' ', '-' | downcase }}" class="d-block decoration-none ">
+        <a href="{{software.id}}" class="d-block decoration-none ">
         {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
         {% if software.description[active_lang_extended].screenshots != nil %}
           {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
         {% elsif software.description.eng.screenshots != nil %}
           {% assign mainImage = software.description.eng.screenshots | first %}
         {% endif %}
-        <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
+        <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
         <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
         </div>
         <p class="name color-inherit">

@@ -4,21 +4,8 @@
 {% assign captionurl = include.captionurl %}
 {% assign withimages = include.withimages | default: false %}
 {% assign itemdescription = include.itemdescription %}
-{% assign sourceconfig = include.source | split:':' %}
 
 <section class="home-listing-items source-{{include.source}} {{include.additionalclass}}">
-    {% if sourceconfig[0]=='layout' %}
-        {% assign target = sourceconfig[1] %}
-        {% assign sourcepages = site.pages | where:"layout", target %}
-        {% assign items = sourcepages | where:"lang", active_lang %}
-    {% elsif sourceconfig[0]=='type'  %}
-        {% assign target = sourceconfig[1] %}
-        {% assign sourcepages = site[target] | where:"lang", active_lang %}
-        {% assign items = sourcepages %}
-    {% elsif sourceconfig[0]=='data'  %}
-        {% assign target = sourceconfig[1] %}
-        {% assign items = site.data[target] %}
-    {% endif %}
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
             <h1>{{title}}</h1>
@@ -27,21 +14,17 @@
             {% endif %}
         </div>
         <div class="row row-eq-height">
-            {% for item in items limit: limititems %}
+            {% for item in include.items limit: limititems %}
                 {% assign itemUrl = item.url %}
-                {% if sourceconfig[0]=='data' %}
-                    {% assign itemUrlName = item.name | replace: ' ', '-' | replace: '+', '' | replace: '&', '' | downcase %}
-                    {% assign itemUrl = include.destinationfolder | append: itemUrlName %}
-                {% endif %}
+                {% if itemUrl == nil && page._type == "software" %}
+                    {% assign itemUrl = '/' | append: active_lang | append: '/software/' | append: item.id %}
+                {% endif%}
                 <div class="col-md {% if withimages!=true %}px-3{%endif%}">
                     <article class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} " >
                         {% if withimages==true %}
-                        <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="home-listing-item__imgwrapper">
-                        {% if include.additionalclass contains 'crop' %}
-                            <img src="{{'/assets/images/transparent-mask.png' | relative_url}}" class="home-listing-item__mask w-100">
-                        {% endif %}
-                        <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
-                        </a>
+                            <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="home-listing-item__imgwrapper">
+                                <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
+                            </a>
                         {% endif %}
                         <h1 class="home-listing-item__title ">
                             <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="color-inherit">{{item.name | default:item.title}}</a>
