@@ -41,8 +41,7 @@ Per lo styling è ancora opportuno fare affidamento al risultato della `build`.
 
 In alternativa è possibile includere manualmente gli stili in `swagger.html`
 ```html
-<link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/dist/css/bootstrap-italia.min.css">
-<link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/dist/css/italia-icon-font.css">
+<link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@1.0.0/dist/css/bootstrap-italia.min.css">">
 
 ```
 ed utilizzare solo il server di sviluppo http://localhost:1234/ notando che gli stili eventualmente ereditati da Jekyll andranno così persi.
