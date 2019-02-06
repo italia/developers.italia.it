@@ -96,10 +96,10 @@ collections:
    platforms:
      output: true
      permalink: /:path/
-     layout: platform
    faqs:
      output: false
 
+# Here we assign a "type" string to each page. This is needed for the search engine.
 defaults:
   -
     scope:
@@ -107,17 +107,27 @@ defaults:
       type: "pages"
     values:
       subnav: "subnav"
+  -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "projects"
+      type: "platforms"
     values:
       toc: true
+      layout: platform
+      type: platform
+  -
+    scope:
+      path: "_posts"
+    values:
+      type: news
 
 page_gen:
   - index_files: false
     name: name
     data: apis
     template: api-details
+    defaults:
+      type: api
     dir: it/api
     filter_condition: "record['language'].include? 'it'"
 
@@ -125,6 +135,8 @@ page_gen:
     name: name
     data: apis
     template: api-details
+    defaults:
+      type: api
     dir: en/api
     filter_condition: "record['language'].include? 'en'"
 
@@ -132,7 +144,8 @@ page_gen:
     name: id
     data: crawler.softwares
     template: software-details
-    lang: it
+    defaults:
+      lang: it
     dir: it/software
     # filter_condition: "record['language'].include? 'it'"
 
@@ -140,7 +153,8 @@ page_gen:
     name: id
     data: crawler.softwares
     template: software-details
-    lang: en
+    defaults:
+      lang: en
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
 
@@ -159,3 +173,8 @@ elasticsearch:
   default_type: "post"
   custom_settings: _es_settings.yml
   custom_mappings: _es_mappings.yml
+  ignore:
+    - /it/software/*
+    - /en/software/*
+    - /it/bagnacavallo/
+

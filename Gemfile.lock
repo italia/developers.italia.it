@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/omc/searchyll
-  revision: e601fea641979982d12e8210aea6699434b31840
+  remote: https://github.com/italia/developers-italia-searchyll
+  revision: b84fb14ce0ded1751fc55ed98d829859d0fdb892
   specs:
     searchyll (0.10.2)
       jekyll (>= 3.0)

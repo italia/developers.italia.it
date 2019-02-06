@@ -1941,7 +1941,7 @@ html, body {
             content: url('/assets/images/icon-type-api--gray.svg');
         }
     }
-    &administrations {
+    &administration {
         &:before {
             content: url('/assets/images/icon-type-administrations.svg');
         }
@@ -1949,7 +1949,7 @@ html, body {
             content: url('/assets/images/icon-type-administrations--gray.svg');
         }
     }
-    &projects {
+    &platform {
         &:before {
             content: url('/assets/images/icon-type-projects.svg');
         }
@@ -1957,7 +1957,7 @@ html, body {
             content: url('/assets/images/icon-type-projects--gray.svg');
         }
     }
-    &software-reuse {
+    &public-sw {
         &:before {
             content: url('/assets/images/icon-type-software-reuse.svg');
         }
@@ -1965,7 +1965,7 @@ html, body {
             content: url('/assets/images/icon-type-software-reuse--gray.svg');
         }
     }
-    &software-open {
+    &generic-sw {
         &:before {
             content: url('/assets/images/icon-type-software-open.svg');
         }
