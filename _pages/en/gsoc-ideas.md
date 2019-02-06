@@ -130,7 +130,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>
                 <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team.
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A working implementation of the Italia Design System as a Joomla theme.
                 <br />
@@ -144,15 +144,14 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <a href="https://github.com/italia/design-joomla-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
         <tr role="row" class="odd">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team.
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A working implementation of the Italia Design System as a Drupal theme.
                 <br />
@@ -166,8 +165,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <a href="https://github.com/italia/design-drupal-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">Design</td>
@@ -177,10 +175,10 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 created by members of the Italian Digital Transformation Team
                 and the community.  
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team. 
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A complete implementation of the Web
-                Toolkit for React.  
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for React.  
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -193,8 +191,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 Repo</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="odd">
             <td tabindex="0">Design</td>
@@ -204,10 +201,10 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 created by members of the Italian Digital Transformation Team
                 and the community.  
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team. 
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A complete implementation of the Web
-                Toolkit for Angular.  
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for Angular.  
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -220,24 +217,23 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 Repo</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the Vue.js Web Toolkit </b><br /> This project
                 involves the creation of the Vue.js Web Toolkit following the
-                directives of the <a href="https://github.com/italia/design-ui-kit">UI Toolkit</a>
+                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
                 and 
                 <a href="https://github.com/italia/bootstrap-italia">Bootstrap
                 Italia</a> created by
                 the Italian Digital Transformation Team.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team. 
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A complete implementation of the Web
-                Toolkit for Vue.js.  
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for Vue.js.  
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -247,36 +243,34 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 </ul>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="odd">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the NativeBase Web Toolkit </b><br /> This project
                 involves the creation of the React Native toolkit following the
-                directives of the <a href="https://github.com/italia/design-ui-kit"> UI Toolkit</a>
+                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
                  and 
                 <a href="https://github.com/italia/bootstrap-italia">Bootstrap
                 Italia</a> created by
                 the Italian Digital Transformation Team.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team. 
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A working theme similar to the ones
-                published in some popular marketplace e.g., https://market.nativebase.io.
+                published in some popular marketplace, e.g. <a href="https://market.nativebase.io">NativeBase</a>.
                 <br />
                 <b>Required skills:</b>
                 <ul>
                     <li>- HTML/JS/CSS</li>
                     <li>- Frontend development</li>
                     <li>- React Native</li>
-                    <li>- Theming</li>
+                    <li>- Theming Native Base</li>
                 </ul>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">General</td>
