@@ -43,10 +43,10 @@ interests.
 
 **Note for the community**.
 Each project on the Ideas list should include: 
-1. a project title/description
-2. more detailed description of the project (2-5 sentences) 
-3. expected outcomes 
-4. skills required/preferred 
+1. a project title/description;
+2. more detailed description of the project (2-5 sentences);
+3. expected outcomes;
+4. skills required/preferred;
 5. possible mentors. 
 
 And, if possible, an *easy, medium or hard* rating of each project.
@@ -67,7 +67,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td tabindex="0">DAF</td>
             <td>
                 <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
-                By leveraging the [daf-dataset-toolbar-search](https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search) capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
+                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
@@ -123,36 +123,14 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 </ul>
             </td>
             <td>Easy</td>
-        </tr>
-        <tr role="row" class="odd">
-            <td tabindex="0">OpenFisca</td>
-            <td>
-                <b>Adapt OpenFisca to the Italian Fiscal system</b><br />
-                <a href="http://openfisca.org/doc/index.html">OpenFisca</a> is an open source project created by the French government<br /><br /> It supports multiple countries. Implement an "Italia" country which implements the Italian fiscal laws.
-                This task is interesting to students with a background in
-                <br />
-                <b>Mentor:</b> You will have two mentors from the Digital Transformation Team: one for the python code and an expert of the tax system. Find them on #welcome.
-                <br />
-                <b>Expected outcome:</b> A working implementation of Italy in the OpenFisca system.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Python</li>
-                    <li>- A general understanding of taxation systems</li>
-                </ul>
-                <br /> Full description on the issue:
-                <a href="https://github.com/italia/developers.italia.it/issues/105">#105</a>
-            </td>
-            <td>Easy</td>
-            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">Design</td>
             <td>
-                <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. Do include the design web toolkit as a dependency, and make sure you write your code
-                in a way which is generic enough so that, later on, it be replaced by another toolkit (e.g. bootstrap) without too much effort.
+                <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A working implementation of the Italia Design System as a Joomla theme.
                 <br />
@@ -162,20 +140,18 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- Frontend development</li>
                     <li>- Joomla</li>
                 </ul>
-                <br /> Full description on the issue:
-                <a href="https://github.com/italia/design-joomla-theme/issues/1">#1</a>
+                <br /> Full idea description:
+                <a href="https://github.com/italia/design-joomla-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
         <tr role="row" class="odd">
             <td tabindex="0">Design</td>
             <td>
-                <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. Do include the design web toolkit as a dependency, and make sure you write your code
-                in a way which is generic enough so that, later on, it be replaced by another toolkit (e.g. bootstrap) without too much effort.
+                <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
                 <br />
-                <b>Mentor:</b> Francesco Zaia, with the help of others in the #design team
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A working implementation of the Italia Design System as a Drupal theme.
                 <br />
@@ -185,12 +161,116 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- Frontend development</li>
                     <li>- Drupal</li>
                 </ul>
-                <br /> Full description on the issue:
-                <a href="https://github.com/italia/design-drupal-theme/issues/1">#1</a>
+                <br /> Full idea description:
+                <a href="https://github.com/italia/design-drupal-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7658JRJR">#design</a>
-                <a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-js</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Complete the React Web Toolkit </b><br /> This project
+                involves the completion of the React Web Toolkit already
+                created by members of the Italian Digital Transformation Team
+                and the community.  
+                <br />
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
+                <br />
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for React.  
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- HTML/JS/CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- React</li>
+                </ul>
+                <br /> <b>Repository reference:</b>
+                <a href="https://github.com/italia/design-react-kit">GitHub
+                Repo</a>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
+        </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Complete the Angular Web Toolkit </b><br /> This project
+                involves the completion of the Angular Web Toolkit already
+                created by members of the Italian Digital Transformation Team
+                and the community.  
+                <br />
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
+                <br />
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for Angular.  
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- HTML/JS/CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- Angular</li>
+                </ul>
+                <br /> <b>Repository reference:</b>
+                <a href="https://github.com/italia/design-angular-kit">GitHub
+                Repo</a>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
+        </tr>
+        <tr role="row" class="even">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Create the Vue.js Web Toolkit </b><br /> This project
+                involves the creation of the Vue.js Web Toolkit following the
+                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
+                and 
+                <a href="https://github.com/italia/bootstrap-italia">Bootstrap
+                Italia</a> created by
+                the Italian Digital Transformation Team.
+                <br />
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
+                <br />
+                <b>Expected outcome:</b> A complete implementation of the UI Kit
+                 for Vue.js.  
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- HTML/JS/CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- Vue.js</li>
+                </ul>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
+        </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">Design</td>
+            <td>
+                <b>Create the NativeBase Web Toolkit </b><br /> This project
+                involves the creation of the React Native toolkit following the
+                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
+                 and 
+                <a href="https://github.com/italia/bootstrap-italia">Bootstrap
+                Italia</a> created by
+                the Italian Digital Transformation Team.
+                <br />
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.
+                <br />
+                <b>Expected outcome:</b> A working theme similar to the ones
+                published in some popular marketplace, e.g. <a href="https://market.nativebase.io">NativeBase</a>.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- HTML/JS/CSS</li>
+                    <li>- Frontend development</li>
+                    <li>- React Native</li>
+                    <li>- Theming Native Base</li>
+                </ul>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="even">
             <td tabindex="0">General</td>
@@ -206,10 +286,9 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <ul>
                     <li>- Up to you :-)</li>
                 </ul>
-                </td>
-                <td>Up to you</td>
-                <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>
             </td>
+            <td>Up to you</td>
+            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
-        </tbody>
+    </tbody>
 </table>
