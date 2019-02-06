@@ -4,13 +4,11 @@ subtitle: The Design System for the Italian Public Administration
 logo: /assets/images/logo-design@2x.png
 payoff: Designers on the side of citizens
 description: "Designers Italia is the main source for design of Public Administration services: guidelines, tools, a design system and a community of designers to foster collaboration and promote the role of human-centered design during the development of public services."
-
-
 lang: en
 order: 4
 highlight: true
 comingsoon: false
-layout: project
+layout: platform
 github_team: design
 maintainers:
   - matteo

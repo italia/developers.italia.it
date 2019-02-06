@@ -4,13 +4,11 @@ subtitle: Il Design System della Pubblica Amministrazione Italiana
 logo: /assets/images/logo-design@2x.png
 payoff: Designers dalla parte dei cittadini
 description: "Designers Italia è il punto di riferimento per la progettazione dei servizi della Pubblica Amministrazione: linee guida, strumenti, un design system e una community di designer per favorire la collaborazione e promuovere il ruolo dello human-centered design nello sviluppo dei servizi pubblici."
-
-
 lang: it
 order: 4
 highlight: true
 comingsoon: false
-layout: project
+layout: platform
 github_team: design
 maintainers:
   - matteo
