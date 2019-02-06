@@ -67,7 +67,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td tabindex="0">DAF</td>
             <td>
                 <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
-                By leveraging the `daf-dataset-toolbar-search` capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
+                By leveraging the [daf-dataset-toolbar-search](https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search) capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
@@ -87,7 +87,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>
                 <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
                 This project consists in creating a tool to export some visualizations made using a visualization framework (e.g., Semiotic) from the notebooks in order to render them inside DAF. 
-                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approaches may be useful. 
+                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approach may be useful. 
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
@@ -109,11 +109,12 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>
                 <b>Create a tool to create plots</b><br /> The project
                 involves the evolution or the creation of a tool to create
-                plots using the DAF APIs or graphql on DAF data.   
+                plots using the DAF APIs or graphql based on DAF data.   
                 <br />
                 <b>Mentor:</b> Data science team #daf channel.
                 <br />
-                <b>Expected outcome:</b> A set of datastories that create insights on public data.
+                <b>Expected outcome:</b> A working tool together with tests,
+                documentation and deployment information. 
                 <br />
                 <b>Required skills:</b>
                 <ul>
