@@ -375,10 +375,14 @@
   content:' \2192';
 }
 
-.Project h2,
+.Project h2 {
+  margin-top: 1em !important;
+  font-weight: 700 !important;
+  font-size: 2em !important;
+}
 .Project h3 {
   margin-top: 1em !important;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   font-size: 1.5em !important;
 }
 
@@ -657,7 +661,7 @@ body.layout-github-issues {
 
 }
 
-/* Prroject leaders include 
+/* Project leaders include
 ============================ */
 .projectleaders {
   &__img {
