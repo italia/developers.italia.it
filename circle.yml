@@ -17,7 +17,6 @@ jobs:
       - run: which rsync || sudo apt-get install rsync
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 
   # Deploy to production site
@@ -35,7 +34,6 @@ jobs:
       - run: which rsync || sudo apt-get install rsync
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: cp -r ./github ./_site/
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
