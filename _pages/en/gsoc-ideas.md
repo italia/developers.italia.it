@@ -298,7 +298,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CD9805QUU">#design-analytics</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="odd">
             <td tabindex="0">General</td>
             <td>
                 <b>Your own idea!!</b><br /> Something that you're totally excited about!<br />Do you have an awesome idea you want to work on with Developers Italia but that is not among the ideas below? That's cool. We love that! But please do us a
