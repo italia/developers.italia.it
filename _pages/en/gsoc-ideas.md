@@ -42,12 +42,12 @@ considerably more detail. Change the goals to fit your experience and
 interests.
 
 **Note for the community**.
-Each project on the Ideas list should include: 
+Each project on the Ideas list should include:
 1. a project title/description;
 2. more detailed description of the project (2-5 sentences);
 3. expected outcomes;
 4. skills required/preferred;
-5. possible mentors. 
+5. possible mentors.
 
 And, if possible, an *easy, medium or hard* rating of each project.
 
@@ -66,12 +66,12 @@ And, if possible, an *easy, medium or hard* rating of each project.
         <tr role="row" class="odd">
             <td tabindex="0">DAF</td>
             <td>
-                <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
+                <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
                 By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> An output of the analysis.  
+                <b>Expected outcome:</b> An output of the analysis.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -85,14 +85,14 @@ And, if possible, an *easy, medium or hard* rating of each project.
         <tr role="row" class="even">
             <td tabindex="0">DAF</td>
             <td>
-                <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources. 
-                This project consists in creating a tool to export some visualizations made using a visualization framework (e.g., Semiotic) from the notebooks in order to render them inside DAF. 
-                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approach may be useful. 
+                <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
+                This project consists in creating a tool to export some visualizations made using a visualization framework (e.g., Semiotic) from the notebooks in order to render them inside DAF.
+                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approach may be useful.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
                 <b>Expected outcome:</b> A working tool together with tests,
-                documentation and deployment information. 
+                documentation and deployment information.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -109,12 +109,12 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>
                 <b>Create a tool to create plots</b><br /> The project
                 involves the evolution or the creation of a tool to create
-                plots using the DAF APIs or graphql based on DAF data.   
+                plots using the DAF APIs or graphql based on DAF data.
                 <br />
                 <b>Mentor:</b> Data science team #daf channel.
                 <br />
                 <b>Expected outcome:</b> A working tool together with tests,
-                documentation and deployment information. 
+                documentation and deployment information.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -173,12 +173,12 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <b>Complete the React Web Toolkit </b><br /> This project
                 involves the completion of the React Web Toolkit already
                 created by members of the Italian Digital Transformation Team
-                and the community.  
+                and the community.
                 <br />
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for React.  
+                 for React.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -199,12 +199,12 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <b>Complete the Angular Web Toolkit </b><br /> This project
                 involves the completion of the Angular Web Toolkit already
                 created by members of the Italian Digital Transformation Team
-                and the community.  
+                and the community.
                 <br />
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for Angular.  
+                 for Angular.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -225,7 +225,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <b>Create the Vue.js Web Toolkit </b><br /> This project
                 involves the creation of the Vue.js Web Toolkit following the
                 directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
-                and 
+                and
                 <a href="https://github.com/italia/bootstrap-italia">Bootstrap
                 Italia</a> created by
                 the Italian Digital Transformation Team.
@@ -233,7 +233,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
                 <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for Vue.js.  
+                 for Vue.js.
                 <br />
                 <b>Required skills:</b>
                 <ul>
@@ -251,7 +251,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <b>Create the NativeBase Web Toolkit </b><br /> This project
                 involves the creation of the React Native toolkit following the
                 directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
-                 and 
+                 and
                 <a href="https://github.com/italia/bootstrap-italia">Bootstrap
                 Italia</a> created by
                 the Italian Digital Transformation Team.
@@ -273,6 +273,32 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
         <tr role="row" class="even">
+            <td tabindex="0">Web Analytics Italia</td>
+            <td>
+                <b>Create a new plugin for Matomo</b><br />This project
+                involves the creation of a new plugin for the web analytics software Matomo,
+                to be used in the
+                <a href="https://designers.italia.it/progetti/web-analytics/">Web Analytics Italia project</a>.
+                Not all the skills listed below are stricly required because they cover a wide variety of plugins.
+                Ask your mentor about what kind of plugin you can develop for Web Analytics Italia.
+                <br />
+                <b>Mentor:</b> Designers or developers from the Web Analytics Italia team.
+                <br />
+                <b>Expected outcome:</b> A working plugin for <a href="https://matomo.org/">Matomo</a>.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- PHP</li>
+                    <li>- SQL</li>
+                    <li>- HTML/JS/CSS</li>
+                    <li>- Angular</li>
+                    <li>- Frontend development</li>
+                </ul>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/CD9805QUU">#design-analytics</a></td>
+        </tr>
+        <tr role="row" class="odd">
             <td tabindex="0">General</td>
             <td>
                 <b>Your own idea!!</b><br /> Something that you're totally excited about!<br />Do you have an awesome idea you want to work on with Developers Italia but that is not among the ideas below? That's cool. We love that! But please do us a
