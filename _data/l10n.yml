@@ -182,7 +182,7 @@ it:
 
         * **User community**: the number of unique authors;
 
-        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-reanges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
 
 en:
   code: eng
