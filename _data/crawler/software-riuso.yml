@@ -1,24 +1,9 @@
-- name: Euriale
-  id: 0e7f29233e4373407faa0e15c5f4d10f5ca106f0
-  crawltime: 2019-02-01 11:39:31.999066528 +0000 UTC m=+20.977950429
-  logo: https://raw.githubusercontent.com/gith002/Euriale/master/img/logo.png
-  url: https://github.com/gith002/euriale.git
-  codiceipa: c_a547
-- name: Steno
-  id: 7a423bce471c983c33ae47de9f3573f4f8659e5e
-  crawltime: 2019-02-01 11:39:28.667129506 +0000 UTC m=+17.646013427
-  logo: https://raw.githubusercontent.com/gith002/Steno/master/img/logo.png
-  url: https://github.com/gith002/steno.git
-  codiceipa: c_a547
-- name: Medusa
-  id: d858d4feabf900035e01a18b88c4b5dc8818ed97
-  crawltime: 2019-02-01 11:39:35.266479746 +0000 UTC m=+24.245363802
-  logo: https://raw.githubusercontent.com/gith002/Medusa/master/img/logo.png
-  url: https://github.com/gith002/medusa.git
-  codiceipa: c_a547
-- name: MedusaGith003
-  id: 304eb2443ac2324470d54b017eaa2e4fb418529a
-  crawltime: 2019-02-01 11:39:20.948439974 +0000 UTC m=+9.927323852
-  logo: https://raw.githubusercontent.com/gith003/publiccode-org3/master/img/logo.png
-  url: https://github.com/gith003/publiccode-org3.git
-  codiceipa: c_h502
+- crawltime: 2019-02-11 19:05:27.34948 +0100 CET m=+6.565869357
+  id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
+  publiccode:
+    it:
+      riuso:
+        codiceIPA: m_bac
+    logo: https://raw.githubusercontent.com/italia/18app/master/src/Italia.DiciottoApp.iOS/Assets.xcassets/AppIcon.appiconset/Icon120.png
+    name: 18app (app nativa)
+    url: https://github.com/italia/18app

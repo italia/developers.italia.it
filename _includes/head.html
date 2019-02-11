@@ -1,4 +1,4 @@
-{% assign buildTime =  site.time | date: '%Y%m%d%H%M' %}
+{% assign buildTime = site.time | date: '%Y%m%d%H%M' %}
 <!DOCTYPE html>
 <!--[if IE 8]><html lang="{{ active_lang }}" class="no-js ie89 ie8"><![endif]-->
 <!--[if IE 9]><html lang="{{ active_lang }}" class="no-js ie89 ie9"><![endif]-->
@@ -12,26 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
 
-  <title>  
-    {% if page.title %}
-
-      {% if page.description[active_lang_extended].localisedName != nil %}
-      {{ page.description[active_lang_extended].localisedName|capitalize }}          
-    {% elsif page.description.eng.localisedName != nil %}
-    {{ page.description.eng.localisedName }} 
-    {% elsif page.description.ita.localisedName != nil %}
-    {{ page.description.ita.localisedName }} 
-    {% else %}
-      {{ page.title | escape }}
-    {% endif%}
-
-
-    {% else %}
-      {{ t.site_title | default: site.title | escape }}
-    {% endif %}
+  <title>
+    {{ page.publiccode.name | default: page.title | default: page.name | default: t.site_title | default: site.title |
+    escape }}
   </title>
-  
-    {% seo %}
+
+  {% seo %}
 
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -42,7 +28,7 @@
         families: ['Titillium+Web:300,400,600,700,400italic:latin']
       }
     };
-    (function() {
+    (function () {
       var wf = document.createElement('script');
       wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
       wf.type = 'text/javascript';
@@ -55,8 +41,10 @@
   <link href="{{ site.baseurl }}/assets/fonts.css?{{ buildTime }}" rel="stylesheet">
   <link href="{{ site.baseurl }}/assets/main.css?{{ buildTime }}" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32">
@@ -70,4 +58,5 @@
   <meta name="theme-color" content="{{ site.theme_color }}">
 
 </head>
+
 <body class="layout-{{ page.layout }}">

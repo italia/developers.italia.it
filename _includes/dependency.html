@@ -1,0 +1,23 @@
+{{ include.dependency.name }}
+
+{% if include.dependency.version != nil %}
+    {{ include.dependency.version}}
+{% if include.dependency.versionMin != nil %}
+    / {{ include.dependency.versionMin}}
+    {% if include.dependency.versionMax != nil %}
+    - {{ include.dependency.versionMax}}
+    {% endif %}
+{% endif %}
+{% elsif include.dependency.version == nil %}
+{% if include.dependency.versionMin != nil %}
+    {% if include.dependency.versionMax != nil %}
+    {{ include.dependency.versionMin}} - {{ include.dependency.versionMax}}
+    {% elsif include.dependency.versionMax == nil %}
+    > {{ include.dependency.versionMin}}
+    {% endif %}
+{% else %}
+    {% if include.dependency.versionMax != nil %}
+    > {{ include.dependency.versionMax}}
+    {% endif %}
+{% endif %}
+{% endif %}
