@@ -35,7 +35,7 @@ layout: default
         <div class="abstract-software">
           <h2>
             {{ description.genericName }}
-            {% if page.publiccode.isBasedOn %}
+            {% if page.publiccode.isBasedOn.size > 0 %}
             <br>
             <span class="abstract-software__variant">{{ t.software.variant_by }} {{ page.publiccode.legal.repoOwner }}</span>
             {% endif %}
@@ -147,6 +147,7 @@ layout: default
           {% if page.oldVariant.size == nil %}
           <h2> {{ t.software.functionality }} </h2>
           {% endif %}
+          {% if description.features.size > 0 %}
           <div class="function-list">
             {% if description.features.size > 10 %}
             {% for feature in description.features limit: 10 %}
@@ -167,7 +168,8 @@ layout: default
             {% endfor %}
             {% endif %}
           </div>
-          {% if page.publiccode.usedBy.size != nil %}
+          {% endif %}
+          {% if page.publiccode.usedBy.size > 0 %}
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false" aria-controls="by-amministration"
               class="count">
@@ -488,7 +490,7 @@ layout: default
               <span class="and it-collapse"></span>
             </a>
             <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
-              {% if page.publiccode.intendedAudience.onlyFor != nil %}
+              {% if page.publiccode.intendedAudience.onlyFor.size > 0 %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.main_audience }}</span>
                   {% for audience in page.publiccode.intendedAudience.onlyFor %}
@@ -506,7 +508,7 @@ layout: default
                 </p>
               </div>
               {% endif %}
-              {% if description.awards %}
+              {% if description.awards.size > 0 %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.awards }}</span>
                   {% for award in description.awards %}

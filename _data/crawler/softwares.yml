@@ -1,4 +1,4 @@
-- crawltime: 2019-02-11 19:05:27.34948 +0100 CET m=+6.565869357
+- crawltime: "2019-02-11T23:24:51+01:00"
   fileRawURL: https://raw.githubusercontent.com/italia/18app/master/publiccode.yml
   id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
   it-riuso-codiceIPA-label: Ministero per i beni e le attivita' culturali
@@ -20,7 +20,14 @@
         apiDocumentation: ""
         awards: []
         documentation: ""
-        features: []
+        features:
+        - login con SPID
+        - registrazione nuovi utenti
+        - visualizzazione credito disponibile
+        - creazione buoni
+        - annullamento buoni
+        - visualizzazione buoni creati e spesi
+        - elenco esercenti e mappa
         freeTags:
         - mobile app
         genericName: mobile app
@@ -53,7 +60,7 @@
       designKit:
         content: false
         seo: false
-        ui: false
+        ui: true
         web: false
       ecosistemi:
       - beni-culturali-turismo
@@ -76,7 +83,7 @@
       contacts: []
       contractors:
       - name: Sogei
-        until: "2020-03-21T00:00:00Z"
+        until: "2020-03-21"
         website: http://www.sogei.it/
       type: contract
     monochromeLogo: ""
@@ -86,7 +93,7 @@
     - ios
     - android
     publiccodeYmlVersion: "0.1"
-    releaseDate: "2019-02-05T00:00:00Z"
+    releaseDate: "2019-02-05"
     roadmap: ""
     softwareType: standalone
     softwareVersion: ""
@@ -94,21 +101,7 @@
     - amusement
     url: https://github.com/italia/18app
     usedBy: []
-  relatedSoftwares:
-  - id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
-    publiccode:
-      description:
-        ita:
-          features: []
-          genericName: mobile app
-          localisedName: ""
-      isBasedOn: []
-      legal:
-        repoOwner: MIBAC
-      name: 18app (app nativa)
-      tags:
-      - amusement
-      url: https://github.com/italia/18app
+  relatedSoftwares: null
   vitalityDataChart:
   - 64
   - 64
