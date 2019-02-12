@@ -1,0 +1,55 @@
+{% include setlang.html %}
+
+{% assign limititems = include.limit | default:4 %}
+{% assign title = include.title %}
+{% assign captiontitle = include.captiontitle %}
+{% assign captionurl = include.captionurl %}
+{% assign withimages = include.withimages | default: false %}
+
+<section class="home-listing-items crop source-{{include.source}} {{include.additionalclass}}">
+    <div class="container">
+        <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
+            <h1>{{title}}</h1>
+            {% if captiontitle!=nil%}
+            <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
+            {% endif %}
+        </div>
+        <div class="row row-eq-height">
+            {% for item in site.data.crawler.softwares limit: limititems %}
+
+            {% assign description = item.publiccode.description[active_lang_extended]
+            | default: item.publiccode.description.eng
+            | default: item.publiccode.description.ita %}
+
+            {% assign sw_name = description.localisedName | default: item.publiccode.name %}
+
+            {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: item.id %}
+
+            <div class="col-md {% if withimages!=true %}px-3{%endif%}">
+                <article
+                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
+                    {% if withimages == true %}
+                    <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper">
+                        <img class="w-100 home-listing-item__img"
+                            src="{{ description.screenshots | first | default:'/assets/images/placeholder-software-riuso.jpg'}}">
+                    </a>
+                    {% endif %}
+                    <h1 class="home-listing-item__title ">
+                        <a title="{{ sw_name }}" href="{{ sw_url }}" class="color-inherit">{{sw_name}}</a>
+                    </h1>
+                    <a title="{{ sw_name }}" class="home-listing-item__url" href="{{ sw_url }}">{{t.software.read_more}}
+                        &rarr;</a>
+
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+        {% if include.viewalltitle %}
+        <div class="row pb-3 mt-3 mb-3 mt-md-5">
+            <a class="btn btn-primary mx-auto" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
+        </div>
+        {% endif %}
+
+    </div>
+
+</section>

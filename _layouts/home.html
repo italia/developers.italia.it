@@ -8,43 +8,45 @@ layout: default
 
 <section class="homelayout__first">
   <div class="container">
-  <div class="row d-flex align-items-stretch ">
-    <article class="col-md-6 homelayout__first__sx d-flex  align-items-center px-3 pl-md-0 pr-md-3">
-      <div class="d-block homelayout__first__hero pr-md-5">
-       <h1>{{ t.home_hero }}</h1>
-       <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
-      </div>
-    </article>
-    <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-3 pr-md-0 pl-md-3" >
-        <div class="d-block pl-md-5" >
+    <div class="row d-flex align-items-stretch ">
+      <article class="col-md-6 homelayout__first__sx d-flex  align-items-center px-3 pl-md-0 pr-md-3">
+        <div class="d-block homelayout__first__hero pr-md-5">
+          <h1>{{ t.home_hero }}</h1>
+          <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
+        </div>
+      </article>
+      <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-3 pr-md-0 pl-md-3">
+        <div class="d-block pl-md-5">
           <div class="homelayout__first__latnews">
             <h2>{{t.home_news_title}}</h2>
             <h1>{{news.title}}</h1>
             <a href="{{news.url}}" title="{{news.title}}">{{t.software.read_more}} &rarr;</a>
           </div>
           <div class="homelayout__first__newsletter mt-2 mt-md-5">
-              <h2 class="mt-5 mt-md-3" >Newsletter</h2>
-              <form action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
+            <h2 class="mt-5 mt-md-3">Newsletter</h2>
+            <form action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
 
-                <div class="form-row align-items-center">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text bg-white input-icon it-mail"></span>
-                      </div>
-                      <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
-                      <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email" placeholder="{{t.home_newsletter_placeholder }}">
-                      <input type="hidden" name="list" value="2">
-                      <div class="input-group-append">
-                        <button type="submit" class="input-group-text bg-primary input-submit">{{ t.home_newsletter_button }}</button>
-                      </div>
-                    </div>
-                    <p class="mt-2 mt-md-4 primary-color-a11">{{t.home_newsletter_footer}}</p>
+              <div class="form-row align-items-center">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white input-icon it-mail"></span>
                   </div>
-              </form>
+                  <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
+                  <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email"
+                    placeholder="{{t.home_newsletter_placeholder }}">
+                  <input type="hidden" name="list" value="2">
+                  <div class="input-group-append">
+                    <button type="submit" class="input-group-text bg-primary input-submit">{{ t.home_newsletter_button
+                      }}</button>
+                  </div>
+                </div>
+                <p class="mt-2 mt-md-4 primary-color-a11">{{t.home_newsletter_footer}}</p>
+              </div>
+            </form>
           </div>
         </div>
-        
-    </article>
+
+      </article>
     </div>
   </div>
 
@@ -53,62 +55,63 @@ layout: default
 
 {% assign items = site.platforms | where:"lang", active_lang %}
 {% include home-listing-items.html
-  items=items
-  limit=4
-  title=t.home_platforms_title
-  withimages=true
-  captiontitle='Come lo uso'
-  captionurl='/it/come-lo-uso'
-  viewalltitle='Vedi tutto'
-  viewallurl='/it/piattaforme/'
-  %}
+items=items
+limit=4
+title=t.home_platforms_title
+withimages=true
+captiontitle='Come lo uso'
+captionurl='/it/come-lo-uso'
+viewalltitle='Vedi tutto'
+viewallurl='/it/piattaforme/'
+%}
 
-{% include home-listing-items.html
-  items=site.data.crawler.softwares
-  destinationfolder='/it/software/' 
-  title='Software a riuso' 
-  withimages=true 
-  captiontitle='Come lo uso' 
-  captionurl='/it/come-lo-uso' 
-  viewalltitle='Vedi tutto' 
-  viewallurl='/it/software/'
-  %}
+{% include home-listing-sw.html
+destinationfolder='/it/software/'
+title='Software a riuso ed open source'
+withimages=true
+captiontitle='Come lo uso'
+captionurl='/it/come-lo-uso'
+viewalltitle='Vedi tutto'
+viewallurl='/it/software/'
+%}
 
-<hr class="grayline my-2 my-md-0"/>
+<hr class="grayline my-2 my-md-0" />
 
 {% include home-software-tags.html %}
 
-{% include home-listing-items.html 
-  additionalclass='light'
-  items=site.data.apis
-  destinationfolder='/it/api/'
-  title='API di piattaforme' 
-  limit=3 
-  itemdescription='abstract' 
-  captiontitle='Come lo uso' 
-  captionurl='/it/come-lo-uso' %}
+{% include home-listing-items.html
+additionalclass='light'
+items=site.data.apis
+destinationfolder='/it/api/'
+title='API di piattaforme'
+limit=3
+itemdescription='abstract'
+captiontitle='Come lo uso'
+captionurl='/it/come-lo-uso'
+viewalltitle='Vedi tutte'
+viewallurl='/it/api/'
+%}
 
 <section class="home-discuss">
   <div class="container">
 
-      <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
-          <h1>Partecipa</h1>
-          <a href="#" class="ml-auto more">Come lo uso &rarr;</a>
+    <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
+      <h1>Partecipa</h1>
+      <a href="#" class="ml-auto more">Come lo uso &rarr;</a>
+    </div>
+    <div class="row row-eq-height">
+      {% for tool in site.data.tools[active_lang] %}
+      <div class="col-sm my-3 my-md-0 px-3">
+        <a target="_blank" href="{{tool.url}}" class="decoration-none" title="{{tool.url}}">
+          <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4 ">
+            <figure class="d-flex w-100 align-items-center">
+              <img src="{{ tool.img | relative_url}}">
+            </figure>
+            <p class="decoration-none">{{tool.subtitle}}</p>
+          </article>
+        </a>
       </div>
-      <div class="row row-eq-height">
-        {% for tool in site.data.tools[active_lang] %}
-          <div class="col-sm my-3 my-md-0 px-3">
-              <a  target="_blank" href="{{tool.url}}" class="decoration-none" title="{{tool.url}}">
-              <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4 " >
-                <figure class="d-flex w-100 align-items-center">
-                <img src="{{ tool.img | relative_url}}">
-                </figure>
-                <p class="decoration-none">{{tool.subtitle}}</p>
-              </article>
-              </a>
-          </div>
-         {% endfor %}
-      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
-

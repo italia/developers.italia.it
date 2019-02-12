@@ -99,8 +99,7 @@ layout: default
           {% assign mainImage = software.publiccode.description.eng.screenshots | first %}
           {% endif %}
           <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
-          <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;">
-          </div>
+          <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;"></div>
           <p class="name color-inherit">
             {% if software.publiccode.description[active_lang_extended] and
             software.publiccode.description[active_lang_extended].localisedName != "" %}

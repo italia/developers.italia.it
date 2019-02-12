@@ -4,11 +4,11 @@ layout: default
 
 {% include setlang.html %}
 
-{% assign sw_name = description.localisedName | default: page.publiccode.name %}
-
 {% assign description = page.publiccode.description[active_lang_extended]
 | default: page.publiccode.description.eng
 | default: page.publiccode.description.ita %}
+
+{% assign sw_name = description.localisedName | default: page.publiccode.name %}
 
 {% assign oldFeatures = page.oldFeatures[active_lang_extended]
 | default: page.oldFeatures.eng
