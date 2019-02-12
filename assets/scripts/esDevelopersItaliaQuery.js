@@ -878,12 +878,12 @@ esDevelopersItaliaQuery.prototype.languageFallback = function (element) {
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var screenshot = this.getSoftwareScreenshot(software);
-  var localisedName = software.name;
+  var localisedName = software.publiccode.name;
   var id = software.id
   var language = this.config['language'];
   var category_id = this.getSoftwareType(software);
 
-  var description = this.languageFallback(software.description);
+  var description = this.languageFallback(software.publiccode.description);
   if (Array.isArray(description.screenshots) && description.screenshots.length > 0) {
     screenshot = description.screenshots.slice(0).pop();
   }
@@ -949,7 +949,7 @@ esDevelopersItaliaQuery.prototype.renderAdministration = function (administratio
 };
 
 esDevelopersItaliaQuery.prototype.getSoftwareType = function (software) {
-  return software['it-riuso-codiceIPA'] == null
+  return software.publiccode.it.riuso.codiceIPA == null
     ? 'generic-sw'
     : 'public-sw';
 };
@@ -957,7 +957,7 @@ esDevelopersItaliaQuery.prototype.getSoftwareType = function (software) {
 esDevelopersItaliaQuery.prototype.getSoftwareScreenshot = function (software) {
   var screenshot = 'http://via.placeholder.com/350x150';
 
-  if (software['it-riuso-codiceIPA'] == null) {
+  if (software.publiccode.it.riuso.codiceIPA == null) {
     screenshot = '/assets/images/cover_softwareriuso.png';
   }
   else {
@@ -1046,8 +1046,8 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function () {
       'bool': {
         'must': [],
         'must_not': [
-          { 'exists': { 'field': 'it-riuso-codiceIPA' } },
-          { 'match': { 'intended-audience-unsupported-countries': 'it' } }
+          { 'exists': { 'field': 'publiccode.it.riuso.codiceIPA' } },
+          { 'match': { 'publiccode.indendedAudience.unsupportedCountries': 'it' } }
         ]
       }
     }
