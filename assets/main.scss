@@ -3,7 +3,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
-$font-family-serif: Lora Georgia serif;
+$font-family-serif: Lora, Georgia, serif;
 @import "bootstrap-italia/src/scss/bootstrap-italia";
 @import 'footer';
 @import 'softwares';
