@@ -630,37 +630,44 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function () {
 };
 
 esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) {
-  var html = '';
-
-  if ((typeof response.hits !== 'undefined') && (typeof response.hits.hits !== 'undefined') && Array.isArray(response.hits.hits)) {
-    typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
-    $(this.config['pageContent']).text('');
-
-    if (response.hits.total === 0) {
-      var keyword = this.params['keyword'].slice(0).pop();
-      this.renderEmptyResults(keyword);
-      return;
-    }
-
-    this.renderResultCount(response.hits.total);
-    for (var i = 0; i < response.hits.hits.length; i++) {
-      switch (response.hits.hits[i]._type) {
-        case 'software':
-          html = this.renderSoftware(response.hits.hits[i]._source);
-          break;
-        case 'post':
-          html = this.renderPost(response.hits.hits[i]._source);
-          break;
-        case 'administration':
-          html = this.renderAdministration(response.hits.hits[i]._source);
-          break;
-      }
-      $(this.config['pageContent']).append(html);
-    }
-    this.renderPager(response.hits.total);
-
-    // if the query is triggered by pager, must be scoll on page top.
+  if (typeof response.hits === 'undefined' || typeof response.hits.hits === 'undefined' || !Array.isArray(response.hits.hits)) {
+    return;
   }
+  typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
+  $(this.config['pageContent']).text('');
+  $('.intro').html('');
+
+  if (response.hits.total === 0) {
+    var keyword = this.params['keyword'].slice(0).pop();
+    var language = this.config['language'];
+
+    $('.intro').html(this.templates.empty({
+      'title': this.config['emptySerp'][language].title,
+      'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
+      'cta': this.config['emptySerp'][language].cta
+    }));
+    return;
+  }
+
+  this.renderResultCount(response.hits.total);
+  var html = '';
+  for (var i = 0; i < response.hits.hits.length; i++) {
+    switch (response.hits.hits[i]._type) {
+      case 'software':
+        html = this.renderSoftware(response.hits.hits[i]._source);
+        break;
+      case 'post':
+        html = this.renderPost(response.hits.hits[i]._source);
+        break;
+      case 'administration':
+        html = this.renderAdministration(response.hits.hits[i]._source);
+        break;
+    }
+    $(this.config['pageContent']).append(html);
+  }
+  this.renderPager(response.hits.total);
+
+  // if the query is triggered by pager, must be scoll on page top.
 };
 
 esDevelopersItaliaQuery.prototype.esSearchErrorCallback = function (error) {
@@ -797,18 +804,6 @@ esDevelopersItaliaQuery.prototype.renderResultCount = function (tot) {
   }));
 };
 
-esDevelopersItaliaQuery.prototype.renderEmptyResults = function (keyword) {
-  var object = this;
-  var language = object.config['language'];
-  var $intro = $('.intro');
-
-  $intro.html(this.templates.empty({
-    'title': object.config['emptySerp'][language].title,
-    'message': object.config['emptySerp'][language].message.replace("{keyword}", keyword),
-    'cta': object.config['emptySerp'][language].cta
-  }));
-};
-
 esDevelopersItaliaQuery.prototype.renderPager = function (tot) {
   // unregister all page listeners.
   $(this.config['pagerSelector'] + ' ul li a').off('click');
@@ -867,40 +862,46 @@ esDevelopersItaliaQuery.prototype.renderPager = function (tot) {
 };
 
 esDevelopersItaliaQuery.prototype.languageFallback = function (element) {
-  var currentLanguage = this.config['language'];
+  var lang = this.config['language'];
 
-  if (element.hasOwnProperty(currentLanguage)) {
-    return element[this.languages[language]]
+  // convert language to 3 letters code
+  lang = this.languages[lang]
+
+  if (element.hasOwnProperty(lang)) {
+    return element[lang]
   } else {
     return element['eng']
   }
 }
 
 esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
-  var screenshot = this.getSoftwareScreenshot(software);
-  var localisedName = software.publiccode.name;
-  var id = software.id
-  var language = this.config['language'];
-  var category_id = this.getSoftwareType(software);
-
+  var category_id = this.getSoftwareType(software);  // generic-sw vs public-sw
   var description = this.languageFallback(software.publiccode.description);
+
+  var screenshot;
   if (Array.isArray(description.screenshots) && description.screenshots.length > 0) {
-    screenshot = description.screenshots.slice(0).pop();
+    screenshot = description.screenshots[0];
+  } else if (category_id == 'public-sw') {
+    screenshot = '/assets/images/cover_softwareriuso.png';
+  } else {
+    screenshot = '/assets/images/cover_software opensource.png';
   }
 
-  if (typeof description.localisedName !== 'undefined') {
+  var localisedName = software.publiccode.name;
+  if (description.localisedName) {
     localisedName = description.localisedName;
   }
 
+  var language = this.config['language'];
   var data = {
-    'name': name,
+    'name': localisedName,
     'localisedName': decodeHtmlEntity(localisedName),
     'language': this.config['language'],
     'screenshot': screenshot,
     'readMore': this.readMore[language],
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + id
+    'path': '/' + language + '/software/' + software.id
   };
 
   return this.templates.search(data);
@@ -952,19 +953,6 @@ esDevelopersItaliaQuery.prototype.getSoftwareType = function (software) {
   return software.publiccode.it.riuso.codiceIPA == null
     ? 'generic-sw'
     : 'public-sw';
-};
-
-esDevelopersItaliaQuery.prototype.getSoftwareScreenshot = function (software) {
-  var screenshot = 'http://via.placeholder.com/350x150';
-
-  if (software.publiccode.it.riuso.codiceIPA == null) {
-    screenshot = '/assets/images/cover_softwareriuso.png';
-  }
-  else {
-    screenshot = '/assets/images/cover_software opensource.png';
-  }
-
-  return screenshot;
 };
 
 esDevelopersItaliaQuery.prototype.getPostScreenshot = function (post) {
@@ -1341,13 +1329,15 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function () {
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function (software) {
   var value = $(this.config['inputSelector']).val();
-  var language = this.config['language'];
-  var name = software.name;
   var id = software.id
-  var language_alpha_3 = this.languages[language];
   var category_id = this.getSoftwareType(software);
-  if (typeof software.description[language_alpha_3] !== 'undefined' && software.description[language_alpha_3].localisedName !== 'undefined') {
-    name = software.description[language_alpha_3].localisedName;
+
+  var language = this.config['language'];
+  var language_alpha_3 = this.languages[language];
+
+  var name = software.publiccode.name;
+  if (typeof software.publiccode.description[language_alpha_3] !== 'undefined' && software.publiccode.description[language_alpha_3].localisedName) {
+    name = software.publiccode.description[language_alpha_3].localisedName;
   }
 
   value = value.trim().split(' ');
