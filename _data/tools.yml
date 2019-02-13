@@ -42,7 +42,7 @@ en:
     url: https://forum.italia.it
   -
     title: Docs
-    subtitle: Here you will find the technical documentation of all the projcets, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and RedTheDocs
+    subtitle: Here you will find the technical documentation of all the projects, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and ReadTheDocs.
     url: https://docs.italia.it
   -
     title: API Sandbox
