@@ -16,8 +16,6 @@ maintainers:
   - matteo
   - lorenzo
   - francesco
-  - danilo
-  - davide
 socials:
   -
     name: twitter

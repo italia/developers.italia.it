@@ -11,8 +11,6 @@ layout: project
 github_team: docs
 maintainers:
   - francesco
-  - alessandro
-  - davide
   - lorenzo
     
 redirect_from:
