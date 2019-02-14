@@ -272,13 +272,76 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
+       <tr role="row" class="even">
+            <td tabindex="0">API</td>
+            <td>
+                <b>Port the <i>gen-api-models</i> tool to OpenAPI v3</b><br /> 
+                The <i>gen-api-models</i> tool allows to generate TypeScript
+                definitions of OpenAPI specs. 
+                As such, this proposal requires adapting the existing tool to
+                support the newer OpenAPI v3 specifications and prepare it for
+                the forthcoming releases (e.g., OAS v3.1).
+                <br />
+                <b>Mentor:</b> Developers and API experts of the Developers
+                Italia team.
+                <br />
+                <b>Expected outcome:</b>  
+                the practical work will consist in writing software, tests and
+                documentation in order to reach a stable and usable release of
+                the tool.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Typescript</li>
+                    <li>- REST API Design / OpenAPI v3</li>
+                    <li>- Web Development</li>
+                </ul>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
+        </tr>
+        <tr role="row" class="odd">
+            <td tabindex="0">API</td>
+            <td>
+                <b>Interoperability Model</b><br /> 
+                This project is focused on the new Interoperability Guidelines
+                which are based on the OpenAPI v3 specifications. 
+                As such, the work will consist in the implementation of such
+                guidelines inside some existing popular open source API GW. 
+                For example, some novel features like e.g., standardized
+                throttling headers and problem+json based errors, will have to
+                be implemented in tools like e.g., <i>Kong, WSO2</i>.
+                <br />
+                <b>Mentor:</b> Developers and API experts of the Developers
+                Italia team.
+                <br />
+                <b>Expected outcome:</b>  
+                Patches merged upstream together with solid tests and documentations. 
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Backend Development (e.g., Java, Python, Go)</li>
+                    <li>- REST API Design / OpenAPI v3</li>
+                </ul>
+            </td>
+            <td>Medium</td>
+            <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
+        </tr>
         <tr role="row" class="even">
             <td tabindex="0">General</td>
             <td>
-                <b>Your own idea!!</b><br /> Something that you're totally excited about!<br />Do you have an awesome idea you want to work on with Developers Italia but that is not among the ideas below? That's cool. We love that! But please do us a
-                favor: Get in touch with a mentor early on and make sure your project is realistic and within the scope of Developers Italia. That will spare you and us a lot of frustration.
+                <b>Your own idea!!</b><br /> Something that you're totally
+                excited about!<br />Do you have an awesome idea you want to
+                work on with Developers Italia but that is not among the ideas
+                below? That's cool. We love that! But please do us a
+                favor: Get in touch with a mentor early on and make sure your
+                project is realistic and within the scope of Developers Italia.
+                That will spare you and us a lot of frustration.
                 <br />
-                <b>Mentor:</b> Propose your idea and ask who in Developers Italia is interested in what you want to work on and approach them. If you are unsure you can always ask in <a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>.
+                <b>Mentor:</b> Propose your idea and ask who in Developers
+                Italia is interested in what you want to work on and approach
+                them. If you are unsure you can always ask in <a
+                href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>.
                 <br />
                 <b>Expected outcome:</b> To be discussed with your mentor...
                 <br />
@@ -290,5 +353,6 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Up to you</td>
             <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
+ 
     </tbody>
 </table>
