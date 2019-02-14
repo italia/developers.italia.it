@@ -42,6 +42,16 @@ h2,
     }
 }
 
+h2.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #17324D;
+    line-height: 1.4;
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+}
+
 .font-serif {
     font-family: $font-family-serif;
 }
@@ -1645,15 +1655,6 @@ body {
         h1 {
             color: #17324D;
             font-size: 3.5rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: #17324D;
-            line-height: 1.4;
-            @include media-breakpoint-up(md) {
-                font-size: 2rem;
-            }
         }
     }
     &__disclaimer {

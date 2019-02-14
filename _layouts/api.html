@@ -6,11 +6,11 @@ layout: default
 
 {% comment %}
 
-  {% include breadcrumbs.html %}
-  {% include share.html %}
+{% include breadcrumbs.html %}
+{% include share.html %}
 
-  {% assign subnav = site.data[page.subnav] %}
-  {% include linklist.html items=subnav dynamic=true %}
+{% assign subnav = site.data[page.subnav] %}
+{% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
 
@@ -21,30 +21,30 @@ layout: default
 
 <div class="apilist">
   <div class="container">
-  <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
-    <h1>{{ page.title }}</h1>
-    <div class="row mb-2 mb-md-4">
-      <div class="col-md-6">
-      <h2>{{ page.subtitle }}</h2>
+    <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
+      <h1>{{ page.title }}</h1>
+      <div class="row mb-2 mb-md-4">
+        <div class="col-md-6">
+          <h2 class="subtitle">{{ page.subtitle }}</h2>
+        </div>
+        <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0 apilist__disclaimer">
+          {{page.content}}
+        </div>
       </div>
-      <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0 apilist__disclaimer">
-        {{page.content}}
-      </div>
-    </div>
-    <div class="apilist__listing">
-      <div class="row row-eq-height">
-        {% for api in apis %}
+      <div class="apilist__listing">
+        <div class="row row-eq-height">
+          {% for api in apis %}
           {% assign url = '' %}
           {% if api.comingsoon != true %}
-            {% assign url = api.name | datapage_url: root %}
+          {% assign url = api.name | datapage_url: root %}
           {% endif %}
 
           {% assign hasImage = false %}
           {% if api.contact.logo %}
-            {% assign hasImage = true %}
+          {% assign hasImage = true %}
           {% endif %}
-        <div class="col-md-4 p-2">
-          <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
+          <div class="col-md-4 p-2">
+            <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
               {% if hasImage %}
               <figure>
                 <a title="{{api.name}}" href="{{url}}">
@@ -52,7 +52,8 @@ layout: default
                 </a>
               </figure>
               {% endif %}
-              <h1 class="apilist__listing__title"><a title="{{api.name}}" class="color-inherit decoration-none" href="{{url}}">{{api.name}}</a>
+              <h1 class="apilist__listing__title"><a title="{{api.name}}" class="color-inherit decoration-none"
+                  href="{{url}}">{{api.name}}</a>
 
               </h1>
               {% if api.contact %}
@@ -64,11 +65,11 @@ layout: default
               {% else %}
               <span class="badge badge-pill badge-secondary apilist__listing__soon mx-0">{{ t.coming_soon }}</span>
               {%endif%}
-          </article>
+            </article>
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
-    </div>
-  </section>
+    </section>
   </div>
 </div>

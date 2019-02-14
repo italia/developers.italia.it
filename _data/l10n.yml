@@ -122,7 +122,7 @@ it:
       goToPlatform: "Vai alla piattaforma"
 
     software:
-      software_open: Software open source
+      software_open: Software open source di terze parti
       reuse_software: Software a riuso
       filters: Filtri
       sort_by: Ordina per
