@@ -37,7 +37,7 @@ Queste sono le principali attività che stiamo ipotizzando per il prossimo futur
 * Miglioramento dell'**interfaccia frontend** del sito, coerentemente con i [layout previsti](https://invis.io/AQMX2Y2GTH2).
 * Semplificazione del processo di onboarding e del backoffice di amministrazione/pubblicazione.
 * Consolidamento dell'**infrastruttura** e della gestione dei log, miglioramento delle strategie per il ripristino in caso di incidenti.
-* Gestione degli Enti in "whitelabel": dare la possibilità ad ogni Ente presente su Docs Italia di personalizzare la propria pagina ed usare **domini esterni con URL personalizzati** e **widget embeddabili** sul proprio sito.
+* Gestione degli Enti in modalità "whitelabel": vogliamo dare la possibilità ad ogni Ente presente su Docs Italia di personalizzare la propria pagina ed usare **domini esterni con URL personalizzati** e fornire la possibilità di **includere contenuti** di Docs Italia sul proprio sito.
  
 Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, [contattaci sul canale #docs-italia](https://developersitalia.slack.com/messages/C9T4ELD4G/) di Slack oppure [scrivi sul Forum](https://forum.italia.it/). Chiunque può contribuire!
 
