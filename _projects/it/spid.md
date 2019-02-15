@@ -31,7 +31,7 @@ L'integrazione di SPID è consentita sia per i siti Pubblica Amministrazione, si
 
 **Roadmap**
 
-Sono in seguenti sviluppi che coinvolgono anche la community:
+Sono in programma i seguenti sviluppi che coinvolgono anche la community:
 
  * Creazione di plugin per i principali CMS (Wordpress, Drupal, Joomla, ecc.)
  * Scheletri di integrazione in ambito mobile (iOS, Android)
