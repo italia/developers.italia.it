@@ -2,7 +2,7 @@
 title: Contatti
 subtitle: Social, e-mail, stampa e media
 lang: it
-layout: simple-internal
+layout: internal-simple
 image: /assets/images/contatti-img.jpg
 newsletterdata:
     text: "Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) ma ti aiuterà a rimanere in contatto con noi."

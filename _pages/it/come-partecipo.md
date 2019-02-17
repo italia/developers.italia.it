@@ -1,7 +1,7 @@
 ---
 title: Come partecipo
 lang: it
-layout: simple-internal
+layout: internal-simple
 image: /assets/images/comepartecipo-temp-img.jpg
 alternate-blocks:
     - title: "Contribuisci alle piattaforme abilitanti: il sistema operativo del Paese"

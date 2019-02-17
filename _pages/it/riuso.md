@@ -1,7 +1,7 @@
 ---
 title: Acquisizione e riuso di software per la Pubblica Amministrazione
 lang: it
-layout: simple-internal
+layout: internal-simple
 subtitle:
 image: /assets/images/comelouso-temp-img.jpg
 ---

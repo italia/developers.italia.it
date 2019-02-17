@@ -1,7 +1,7 @@
 ---
 title: Come lo uso
 lang: it
-layout: simple-internal
+layout: internal-simple
 image: /assets/images/comelouso-temp-img.jpg
 alternate-blocks:
     - title: "Voglio integrare nel mio servizio le piattaforme abilitanti"
