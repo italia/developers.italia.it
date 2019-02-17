@@ -14,7 +14,19 @@ layout: default
             {%endif%}
 
             {{page.content}}
+
+            {% if page.see_also.size > 0 %}
+            <div class="mt-4">
+                {% for button in page.see_also %}
+                <a href="{{button.url}}" class="btn btn-outline-primary mr-3 mt-2">{{button.label}}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
 
     </div>
 </section>
+
+{% if page.pair-blocks!=nil%}
+{% include pair-blocks.html blocks=page.pair-blocks %}
+{% endif %}

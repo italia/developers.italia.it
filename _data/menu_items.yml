@@ -4,7 +4,9 @@ it:
     active_by_layout: 'project'
   - title: Software
     url: '/it/software/'
-    active_by_firstlevel: 'software'
+    active_by_firstlevel:
+      - 'software'
+      - 'riuso'
   - title: API
     url: '/it/api/'
     active_by_firstlevel: 'api'
