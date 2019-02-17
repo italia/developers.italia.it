@@ -12,29 +12,29 @@ alternate-blocks:
           class: btn btn-primary
           url: '/it/piattaforme'
     - title: "Voglio cercare software già in uso in altre Amministrazioni"
-      text: "Il motore di ricerca di Developers Italia permette agli amministratori pubblici di trovare tutto il software messo a riuso dalle altre pubbliche amministrazioni e il software open source creato da terze parti specificatamente per la pubblica amministrazione. È possibile effettuare una ricerca inserendo il nome dell'applicativo, cercando per funzionalità o per amministrazione proprietaria o semplicemente navigando per parole chiave."
+      text: "Il motore di ricerca di Developers Italia permette di trovare tutto il software messo a riuso da altre Amministrazioni e il software open source creato da terze parti per la Pubblica Amministrazione."
       image: /assets/images/come-lo-uso-2.svg
       buttons:
         - label: "Scopri il software pubblico"
           class: btn btn-primary
           url: '/it/software'
+        - label: "Leggi di più sul riuso"
+          class: btn btn-outline-primary
+          url: '/it/riuso'
     - title: "Voglio integrarmi con un servizio pubblico tramite API"
-      text: "Il catalogo delle API contiene la raccolta dei servizi pubblici accessibili mediante interoperabilità, con la relativa documentazione e le descrizioni OpenAPI. L'integrazione applicativa via API permette la creazione di servizi pubblici digitali moderni e la nascita di servizi privati a valore aggiunto."
+      text: "Il catalogo delle API contiene la raccolta dei servizi pubblici accessibili mediante interoperabilità, con la relativa documentazione e le descrizioni OpenAPI, per permetterti di costruire servizi pubblici digitali moderni."
       image: /assets/images/come-lo-uso-3.svg
       buttons:
         - label: "Scopri le API pubbliche"
           class: btn btn-primary
           url: '/it/api'
     - title: "Voglio pubblicare il software della mia Amministrazione in open source"
-      text: "Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato. Le [Linee Guida](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/) spiegano dettagliatamente il processo ed includono degli allegati tecnici che le amministrazioni possono includere nei contratti con i propri fornitori al fine di accertarsi di adempiere all'obbligo in modo corretto e di seguire le best practice dell'open source. Affinché il software rilasciato venga indicizzato nel motore di ricerca di Developers Italia (catalogo del riuso) è necessario includere nel repository un file di metadati secondo lo standard publiccode.yml."
+      text: "Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato. Le [Linee Guida](/it/riuso/pubblicazione) spiegano dettagliatamente il processo ed includono degli allegati tecnici che le amministrazioni possono includere nei contratti con i propri fornitori al fine di accertarsi di adempiere all'obbligo in modo corretto e di seguire le best practice dell'open source."
       image: /assets/images/come-lo-uso-4.svg
       buttons:
-        - label: "Public Code Editor"
+        - label: "Scopri di più"
           class: btn btn-primary
-          url: 'https://publiccode.surge.sh'
-        - label: "Leggi le Linee Guida"
-          class: btn btn-primary
-          url: "https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/"
+          url: "/it/riuso/pubblicazione"
 ---
 
-Se sei una Pubblica Amministrazione, o un fornitore che lavora con la Pubblica Amministrazione, puoi trovare in Developers Italia le risorse utili e la community per lo sviluppo dei tuoi servizi digitali.
+Se sei una Pubblica Amministrazione, o un fornitore che lavora con la Pubblica Amministrazione, puoi trovare in Developers Italia le risorse utili e la community per lo sviluppo dei tuoi servizi digitali nonché il catalogo del software pubblico.

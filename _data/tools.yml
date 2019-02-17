@@ -1,27 +1,27 @@
 it:
   -
     title: Forum
-    subtitle: Utilizziamo Discourse come forum per aiutare la comunità a discutere sui progetti, scambiarsi trucchi e consigli, e parlare con i maintainer delle evoluzioni future.
+    subtitle: "In **forum.italia.it** si discute dei servizi pubblici digitali: piattaforme, API, software, sicurezza ed altro. Unisciti alla discussione!"
     icon: mail
-    url: https://forum.italia.it
+    url: https://forum.italia.it/
     img: /assets/images/home-logo-forum.png
   -
+    title: Slack
+    subtitle: "**Dialoga e collabora in tempo reale** con i maintainer e gli altri sviluppatori sullo Slack di Developers Italia."
+    icon: comment
+    url: https://slack.developers.italia.it/
+    img: /assets/images/home-logo-slack.png
+  -
     title: Codice sorgente
-    subtitle: Sul nostro GitHub Italia, sviluppiamo con un processo aperto gli SDK e gli esempi di supporto dei progetti, e gestiamo anche le segnalazioni dei problemi.
+    subtitle: "In **github.com/italia** sviluppiamo (insieme) gli SDK e gli esempi di supporto delle piattaforme nazionali."
     icon: list
     url: https://github.com/italia
     img: /assets/images/home-logo-github.png
   -
     title: Documentazione
-    subtitle: Qui trovi la documentazione tecnica dei progetti, scritta principalmente in Markdown and ReStructured Text, e compilata con Sphinx e ReadTheDocs
-    url: https://docs.italia.it
+    subtitle: "**Docs Italia** è la piattaforma per la pubblicazione di documenti tecnici ed amministrativi, basata su git e ReadTheDocs."
+    url: https://docs.italia.it/
     img: /assets/images/home-logo-docs.png
-  -
-    title: Slack
-    subtitle: Puoi trovare tutti i maintainer e gli altri sviluppatori sullo Slack di Developers Italia. Partecipa!
-    icon: comment
-    url: https://slack.developers.italia.it/
-    img: /assets/images/home-logo-slack.png
   
 
 en:
