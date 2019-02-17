@@ -10,9 +10,6 @@ it:
   - title: API
     url: '/it/api/'
     active_by_firstlevel: 'api'
-  - title: Chi siamo
-    url: '/it/chi-siamo'
-    active_by_firstlevel: 'chi-siamo'
   - title: Come lo uso
     url: '/it/come-lo-uso'
     active_by_firstlevel: 'come-lo-uso'

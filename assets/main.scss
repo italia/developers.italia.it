@@ -559,46 +559,50 @@ body {
         border-top: 1px solid #455B71;
         opacity: 0.2;
     }
+    &-person {
+        clear: both;
+        margin-bottom: 1rem;
+    }
     &-person-name {
         color: #17324D;
-        text-align: center;
-        margin-top: 2rem;
         letter-spacing: 0;
-        font-size: 1.6rem;
+        font-weight: bold;
     }
     &-person-img {
-        width: 200px;
-        height: 200px;
+        display: inline-block;
+        float: left;
+        width: 100px;
+        height: 100px;
         border-radius: 100%;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 0 1rem 0 0;
+    }
+    &-person-info {
+        padding-top: 0.2rem;
     }
     &-person-role {
         text-transform: uppercase;
-        text-align: center;
         font-weight: 300;
         color: #455B71;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     &-person-desc {
         font-weight: 300;
         font-size: 1.1rem;
-        text-align: center;
         margin-top: 1rem;
     }
     &-person-socials {
-        text-align: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         .icon {
             color: #fff;
             display: inline-block;
             font-size: 1rem;
             position: relative;
             line-height: 0;
-            width: 2rem;
-            height: 2rem;
+            width: 1.8rem;
+            height: 1.8rem;
             background-color: $italia;
-            padding: 0.5rem;
+            padding: 0.4rem;
             border-radius: 2rem;
         }
     }
@@ -1014,6 +1018,10 @@ body {
             @include media-breakpoint-up(md) {
                 font-size: 1.5rem;
             }
+        }
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     }
     &-main-content {

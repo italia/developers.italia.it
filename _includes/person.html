@@ -1,29 +1,37 @@
-{% assign desc = person[1].desc %}
-<div class="credits-person">
-  <div class="text-center credits-person-img">
-    <img src="{{ person[1].pic }}" width="200" class="img-fluid">
-  </div>
-  <div class="credits-person-name h2">
-    {{ person[1].name }}
-  </div>
-  <div class="credits-person-role">
-    {{ person[1].role }}
-  </div>
-  {% if desc %}
-  <div class="credits-person-desc">{{ desc }}</div>
-  {% endif %}
+{% if include.person.first == nil %}
+{% assign p = site.data.people[include.person] %}
+{% else %}
+{% assign p = include.person[1] %}
+{% endif %}
 
-  <div class="credits-person-socials">
-  <ul class="list-inline ">
-  {% for contact in person[1].contacts %}
-    <li class="list-inline-item">
-    <a href="{{ contact[1].link }}" >
-      <span class="icon it-{{ contact[0] }}"></span>
-      <span class="sr-only">{{ contact[1].name }}</span>
-    </a>
-  </li>
-  {% endfor %}
-  </ul>
+<div class="credits-person col-sm-6">
+  <div class="credits-person-img">
+    <img src="{{ p.pic }}" width="200" class="img-fluid">
+  </div>
+  <div class="credits-person-info">
+    <div class="credits-person-name">
+      {{ p.name }}
+    </div>
+    <div class="credits-person-role">
+      {{ p.role }}
+    </div>
+    {% if p.desc %}
+    <div class="credits-person-desc">{{ p.desc }}</div>
+    {% endif %}
+
+    <div class="credits-person-socials">
+      <ul class="list-inline ">
+        {% for contact in p.contacts %}
+        <li class="list-inline-item">
+          <a href="{{ contact[1].link }}">
+            <span class="icon it-{{ contact[0] }}"></span>
+            <span class="sr-only">{{ contact[1].name }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 
-</div><!--/credits-person-->
+</div>
+<!--/credits-person-->

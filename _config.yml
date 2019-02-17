@@ -88,6 +88,16 @@ gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
 partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
 pill: beta
 url_lineeguidariuso: https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/
+newsletterdata:
+    placeholdertext: mario.rossi@devsoftware.it
+    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
+    hidden-inputs:
+        -
+          name: group
+          value: 16
+        -
+          name: list
+          value: 3
 
 collections:
    pages:
