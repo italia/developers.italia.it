@@ -3,7 +3,7 @@ title: Acquisizione e riuso di software per la Pubblica Amministrazione
 lang: it
 layout: simple-internal
 subtitle:
-image: /assets/images/cover_softwareriuso.jpg
+image: /assets/images/comelouso-temp-img.jpg
 ---
 
 Gli articoli [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html) e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html) del Codice dell'Amministrazione Digitale disciplinano le modalità con cui una Pubblica Amministrazione può acquisire software e sanciscono l'obbligo di rilasciare con licenza aperta il software da essa sviluppato o commissionato.
@@ -13,7 +13,7 @@ Le [Linee Guida](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acqui
 ### Quando si sviluppa/commissiona software:
 
 - L'amministrazione deve ottenerne sempre la piena titolarità.
-- L'amministrazione può includere nel contratto/capitolato gli allegati tecnici delle Linee Guida, che disciplinano come un fornitore può 
+- L'amministrazione può includere nel contratto/capitolato gli allegati tecnici delle Linee Guida, che disciplinano le (semplici) attività che il fornitore può eseguire per ottemperare al rilascio e per svolgere il ruolo di *maintainer*.
 - Il software deve essere pubblicato in un repositorio pubblico (ad es. GitHub, GitLab, BitBucket ecc., anche on-premises purché pubblicamente accessibile)
 - Al software deve essere applicata una delle [licenze approvate da Open Source Initiative](https://opensource.org/licenses)
 - Nel repositorio deve essere incluso il file `publiccode.yml` che ne descrive le caratteristiche e consente di popolare il [catalogo](/it/software) di Developers Italia.
