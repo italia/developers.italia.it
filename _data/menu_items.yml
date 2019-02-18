@@ -1,7 +1,7 @@
 it:
   - title: Piattaforme
     url: '/it/piattaforme/'
-    active_by_layout: 'project'
+    active_by_layout: 'platform'
   - title: Software
     url: '/it/software/'
     active_by_firstlevel:
