@@ -2,7 +2,7 @@
 title: Google Summer of Code - Ideas list
 subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
 lang: en
-layout: page
+layout: internal-long
 ---
 
 # Information for Students
