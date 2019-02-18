@@ -15,27 +15,32 @@
         </div>
         <div class="row row-eq-height">
             {% for item in include.items limit: limititems %}
-                {% assign itemUrl = item.url %}
-                {% if itemUrl == nil && page._type == "software" %}
-                    {% assign itemUrl = '/' | append: active_lang | append: '/software/' | append: item.id %}
-                {% endif%}
-                <div class="col-md {% if withimages!=true %}px-3{%endif%}">
-                    <article class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} " >
-                        {% if withimages==true %}
-                            <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="home-listing-item__imgwrapper">
-                                <img class="w-100 home-listing-item__img" src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
-                            </a>
-                        {% endif %}
-                        <h1 class="home-listing-item__title ">
-                            <a title="{{item.name | default:item.title}}" href="{{itemUrl}}" class="color-inherit">{{item.name | default:item.title}}</a>
-                        </h1>
-                        {% if itemdescription %}
-                            <p>{{item[itemdescription]}}</p>
-                        {% endif %}
-                        <a title="{{item.name | default:item.title}}" class="home-listing-item__url" href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
+            {% assign itemUrl = item.url %}
+            {% if include.type == 'api' %}
+            {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug %}
+            {% endif %}
+            <div class="col-md {% if withimages!=true %}px-3{%endif%}">
+                <article
+                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
+                    {% if withimages==true %}
+                    <a title="{{item.name | default:item.title}}" href="{{itemUrl}}"
+                        class="home-listing-item__imgwrapper">
+                        <img class="w-100 home-listing-item__img"
+                            src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
+                    </a>
+                    {% endif %}
+                    <h1 class="home-listing-item__title ">
+                        <a title="{{item.name | default:item.title}}" href="{{itemUrl}}"
+                            class="color-inherit">{{item.name | default:item.title}}</a>
+                    </h1>
+                    {% if itemdescription %}
+                    <p>{{item[itemdescription]}}</p>
+                    {% endif %}
+                    <a title="{{item.name | default:item.title}}" class="home-listing-item__url"
+                        href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
 
-                    </article>
-                </div>
+                </article>
+            </div>
             {% endfor %}
         </div>
         {% if include.viewalltitle %}

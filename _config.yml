@@ -134,7 +134,7 @@ defaults:
 
 page_gen:
   - index_files: false
-    name: name
+    name: slug
     data: apis
     template: api-details
     defaults:
@@ -143,7 +143,7 @@ page_gen:
     filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: name
+    name: slug
     data: apis
     template: api-details
     defaults:

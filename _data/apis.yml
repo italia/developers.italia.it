@@ -1,37 +1,41 @@
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml
-  name: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
+  title: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
   contact:
     name: AgID
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/geodati.gov.it.png
   tags: []
   language: [it]
+  slug: geodati
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/api.daf.teamdigitale.it.yaml
-  name: Data & Analytics Framework CKAN API
+  title: Data & Analytics Framework CKAN API
   abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
   contact:
     name: Team Digitale
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
   tags: []
   language: [it]
+  slug: daf-ckan
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siopeplus.yaml
-  name: SIOPE+
+  title: SIOPE+
   abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+.
   contact:
     name: Banca d'Italia
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/siopeplus.png
   tags: []
   language: [it]
+  slug: siope
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/muoversi2015.e015.servizirl.it.yaml
-  name: Muoversi in Lombardia
+  title: Muoversi in Lombardia
   abstract: Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia.
   contact:
     name: Regione Lombardia
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/muoversi2015.e015.servizirl.it.png
   tags: []
   language: [it]
+  slug: muoversi-in-lombardia
 - openapi:
-  name: Opendata Trasporti
+  title: Opendata Trasporti
   abstract: Portale di OpenData del Ministero delle Infrastrutture e dei Trasporti.
   contact:
     name: Ministero delle Infrastrutture e dei Trasporti
@@ -39,11 +43,13 @@
   tags: []
   language: [it]
   comingsoon: true
+  slug: trasporti-opendata
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/cercaareeprotette.e015.servizirl.it.yaml
-  name: Aree Protette Lombardia
+  title: Aree Protette Lombardia
   abstract: Informazioni sui Parchi, riserve e monumenti naturali della Regione Lombardia.
   contact:
     name: Regione Lombardia
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/cercaareeprotette.e015.servizirl.it.png
   tags: []
   language: [it]
+  slug: aree-protette-lombardia
