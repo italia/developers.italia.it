@@ -6,13 +6,13 @@ layout: default-pa
 
 {% comment %}
 
-  {% include breadcrumbs.html %}
-  {% include share.html %}
+{% include breadcrumbs.html %}
+{% include share.html %}
 
-  {% assign subnav = site.data[page.subnav] %}
-  {% include linklist.html items=subnav dynamic=true %}
+{% assign subnav = site.data[page.subnav] %}
+{% include linklist.html items=subnav dynamic=true %}
 
-{% endcomment %} 
+{% endcomment %}
 
 {% assign root = '/' | append: active_lang  %}
 <div class="container-fluid search-landing-page d-block d-md-none">
@@ -35,7 +35,7 @@ layout: default-pa
 <div class="container page-searched-list">
   <div class="row">
     <div class="col-md-3 d-none d-md-block">
-       <div class="type">
+      <div class="type">
         <p class="head">{% if active_lang == 'it' %} Tipologia {% else %} Typology {% endif %}</p>
         <div id="list-type">
           <div class="form-check">
@@ -43,47 +43,50 @@ layout: default-pa
               <input class="form-check-input" type="checkbox" value="platforms">
               <span><i class="icon icon-type-projects"></i> {{ t.software.platforms | capitalize }} </span>
             </label>
-          </div> 
+          </div>
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="software_open">
-             <span><i class="icon icon-type-software-open"></i> {{ t.software.software_open | capitalize }} </span>
+              <span><i class="icon icon-type-software-open"></i> {{ t.software.software_open | capitalize }} </span>
             </label>
-          </div> 
+          </div>
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="reuse_software">
-             <span><i class="icon icon-type-software-reuse"></i> {{ t.software.reuse_software | capitalize }} </span>
+              <span><i class="icon icon-type-software-reuse"></i> {{ t.software.reuse_software | capitalize }} </span>
             </label>
-          </div> 
+          </div>
         </div>
       </div>
       <div class="arguments">
         <p class="head">{{ t.software.arguments }}</p>
         <div id="list-tags">
-          {% for tag in site.data.crawler.software_tags limit: 10 %}
+          {% for tag in site.data.software_tags limit: 10 %}
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-              <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
+              <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }}
+                {% endif %}</span>
             </label>
           </div>
           {% endfor %}
 
-          {% if site.data.crawler.software_tags.size > 10 %}
-            <div class="collapse" id="otherArguments">
-              {% for tag in site.data.crawler.software_tags offset:10 %}
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                  <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
-                </label>
-              </div>
-              {% endfor %}
+          {% if site.data.software_tags.size > 10 %}
+          <div class="collapse" id="otherArguments">
+            {% for tag in site.data.software_tags offset:10 %}
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
+                <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }}
+                  {% endif %}</span>
+              </label>
             </div>
-            <p class="show_all">
-              <a data-toggle="collapse" href="#otherArguments" role="button" aria-expanded="false" aria-controls="otherArguments">{{ t.software.show_all }}</a>
-            </p>
+            {% endfor %}
+          </div>
+          <p class="show_all">
+            <a data-toggle="collapse" href="#otherArguments" role="button" aria-expanded="false"
+              aria-controls="otherArguments">{{ t.software.show_all }}</a>
+          </p>
           {% endif %}
         </div>
       </div>
@@ -94,10 +97,11 @@ layout: default-pa
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ item |first }}">
-             <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
+              <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }}
+                {% endif %}</span>
             </label>
           </div>
-          {% endfor %}          
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -105,12 +109,16 @@ layout: default-pa
       <div class="intro">
         <h1 class="color:#1C2024">Software e piattaforme</h1>
         <ul class="nav nav-pills my-3 list-inline" id="pills-tabComune" role="tablist">
-          <li class="nav-item list-inline-item"><a class="nav-link active" id="pills-tab1a-tab" data-toggle="tab" href="#pills-tab1" role="tab" aria-controls="pills-tab1" aria-selected="true">Prodotto dal comune</a></li>
-          <li class="nav-item list-inline-item"><a class="nav-link" id="pills-tab2-tab" data-toggle="tab" href="#pills-tab2" role="tab" aria-controls="pills-tab2" aria-selected="false">Usato dal comune</a></li>
-  
+          <li class="nav-item list-inline-item"><a class="nav-link active" id="pills-tab1a-tab" data-toggle="tab"
+              href="#pills-tab1" role="tab" aria-controls="pills-tab1" aria-selected="true">Prodotto dal comune</a></li>
+          <li class="nav-item list-inline-item"><a class="nav-link" id="pills-tab2-tab" data-toggle="tab"
+              href="#pills-tab2" role="tab" aria-controls="pills-tab2" aria-selected="false">Usato dal comune</a></li>
+
         </ul>
         <div class="abstract-sorting row row-eq-height d-none d-md-flex">
-          <div class="results-number col-md-6 d-flex"><p>10 risultati</p></div>
+          <div class="results-number col-md-6 d-flex">
+            <p>10 risultati</p>
+          </div>
           <div class="sortingBy col-md-6">
             <form class="d-flex justify-content-end">
               <p>{{ t.software.sort_by }}</p>
@@ -128,131 +136,133 @@ layout: default-pa
 
 
       <div class="container list-item-sorting">
-        
-            <div class="tab-content" id="pills-tabContentResults">
-                <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel" aria-labelledby="pills-tab1a-tab">
-                    <div class="row row-eq-height">
-                    {% for software in site.data.crawler.softwares limit: 5 %}
-                    {% if software.it.riuso.codiceIPA != nil %}
-                    <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-                      <a href="/it/amministrazione-software" class="d-block decoration-none ">
-                      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-                      {% if software.description[active_lang_extended].screenshots != nil %}
-                        {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
-                      {% elsif software.description.eng.screenshots != nil %}
-                        {% assign mainImage = software.description.eng.screenshots | first %}
-                      {% endif %}
-                      <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
-                      <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
-                      </div>
-                      <p class="name color-inherit">
-                        {% if software.description[active_lang_extended].localisedName != nil %}
-                          {{ software.description[active_lang_extended].localisedName }}
-                        {% else %}
-                          {{ software.name }}
-                        {% endif %}
-                      </p>
-                      <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-                      </a>
-                    </div>
-                    {% endif %}
-                  {% endfor %} 
-                  {% for software in site.data.crawler.softwares limit: 5 %}
-                    {% if software.it.riuso.codiceIPA != nil %}
-                    <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-                      <a href="/it/amministrazione-software" class="d-block decoration-none ">
-                      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-                      {% if software.description[active_lang_extended].screenshots != nil %}
-                        {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
-                      {% elsif software.description.eng.screenshots != nil %}
-                        {% assign mainImage = software.description.eng.screenshots | first %}
-                      {% endif %}
-                      <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
-                      <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
-                      </div>
-                      <p class="name color-inherit">
-                        {% if software.description[active_lang_extended].localisedName != nil %}
-                          {{ software.description[active_lang_extended].localisedName }}
-                        {% else %}
-                          {{ software.name }}
-                        {% endif %}
-                      </p>
-                      <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-                      </a>
-                    </div>
-                    {% endif %}
-                  {% endfor %} 
-                </div>
-                </div>
-                <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab">
-                    <div class="row row-eq-height">
-                    {% for software in site.data.crawler.softwares limit: 5 %}
-                    {% if software.it.riuso.codiceIPA != nil %}
-                    <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-                      <a href="/it/amministrazione-software" class="d-block decoration-none ">
-                      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-                      {% if software.description[active_lang_extended].screenshots != nil %}
-                        {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
-                      {% elsif software.description.eng.screenshots != nil %}
-                        {% assign mainImage = software.description.eng.screenshots | first %}
-                      {% endif %}
-                      <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
-                      <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
-                      </div>
-                      <p class="name color-inherit">
-                        {% if software.description[active_lang_extended].localisedName != nil %}
-                          {{ software.description[active_lang_extended].localisedName }}
-                        {% else %}
-                          {{ software.name }}
-                        {% endif %}
-                      </p>
-                      <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-                      </a>
-                    </div>
-                    {% endif %}
-                  {% endfor %} 
-                  {% for software in site.data.crawler.softwares limit: 5 %}
-                    {% if software.it.riuso.codiceIPA != nil %}
-                    <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-                      <a href="/it/amministrazione-software" class="d-block decoration-none ">
-                      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-                      {% if software.description[active_lang_extended].screenshots != nil %}
-                        {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
-                      {% elsif software.description.eng.screenshots != nil %}
-                        {% assign mainImage = software.description.eng.screenshots | first %}
-                      {% endif %}
-                      <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
-                      <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
-                      </div>
-                      <p class="name color-inherit">
-                        {% if software.description[active_lang_extended].localisedName != nil %}
-                          {{ software.description[active_lang_extended].localisedName }}
-                        {% else %}
-                          {{ software.name }}
-                        {% endif %}
-                      </p>
-                      <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-                      </a>
-                    </div>
-                    {% endif %}
-                  {% endfor %} 
+
+        <div class="tab-content" id="pills-tabContentResults">
+          <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel" aria-labelledby="pills-tab1a-tab">
+            <div class="row row-eq-height">
+              {% for software in site.data.crawler.softwares limit: 5 %}
+              {% if software.it.riuso.codiceIPA != nil %}
+              <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
+                <a href="/it/amministrazione-software" class="d-block decoration-none ">
+                  {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+                  {% if software.description[active_lang_extended].screenshots != nil %}
+                  {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+                  {% elsif software.description.eng.screenshots != nil %}
+                  {% assign mainImage = software.description.eng.screenshots | first %}
+                  {% endif %}
+                  <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
+                  <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
                   </div>
-                </div>
-        
+                  <p class="name color-inherit">
+                    {% if software.description[active_lang_extended].localisedName != nil %}
+                    {{ software.description[active_lang_extended].localisedName }}
+                    {% else %}
+                    {{ software.name }}
+                    {% endif %}
+                  </p>
+                  <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+                </a>
+              </div>
+              {% endif %}
+              {% endfor %}
+              {% for software in site.data.crawler.softwares limit: 5 %}
+              {% if software.it.riuso.codiceIPA != nil %}
+              <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
+                <a href="/it/amministrazione-software" class="d-block decoration-none ">
+                  {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+                  {% if software.description[active_lang_extended].screenshots != nil %}
+                  {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+                  {% elsif software.description.eng.screenshots != nil %}
+                  {% assign mainImage = software.description.eng.screenshots | first %}
+                  {% endif %}
+                  <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
+                  <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
+                  </div>
+                  <p class="name color-inherit">
+                    {% if software.description[active_lang_extended].localisedName != nil %}
+                    {{ software.description[active_lang_extended].localisedName }}
+                    {% else %}
+                    {{ software.name }}
+                    {% endif %}
+                  </p>
+                  <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+                </a>
+              </div>
+              {% endif %}
+              {% endfor %}
             </div>
-          
+          </div>
+          <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab">
+            <div class="row row-eq-height">
+              {% for software in site.data.crawler.softwares limit: 5 %}
+              {% if software.it.riuso.codiceIPA != nil %}
+              <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
+                <a href="/it/amministrazione-software" class="d-block decoration-none ">
+                  {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+                  {% if software.description[active_lang_extended].screenshots != nil %}
+                  {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+                  {% elsif software.description.eng.screenshots != nil %}
+                  {% assign mainImage = software.description.eng.screenshots | first %}
+                  {% endif %}
+                  <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
+                  <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
+                  </div>
+                  <p class="name color-inherit">
+                    {% if software.description[active_lang_extended].localisedName != nil %}
+                    {{ software.description[active_lang_extended].localisedName }}
+                    {% else %}
+                    {{ software.name }}
+                    {% endif %}
+                  </p>
+                  <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+                </a>
+              </div>
+              {% endif %}
+              {% endfor %}
+              {% for software in site.data.crawler.softwares limit: 5 %}
+              {% if software.it.riuso.codiceIPA != nil %}
+              <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
+                <a href="/it/amministrazione-software" class="d-block decoration-none ">
+                  {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
+                  {% if software.description[active_lang_extended].screenshots != nil %}
+                  {% assign mainImage = software.description[active_lang_extended].screenshots | first %}
+                  {% elsif software.description.eng.screenshots != nil %}
+                  {% assign mainImage = software.description.eng.screenshots | first %}
+                  {% endif %}
+                  <p class="icon icon-type-software-reuse">SOFTWARE A RIUSO</p>
+                  <div class="main-image" style=" background: url({{mainImage}}) no-repeat center center;">
+                  </div>
+                  <p class="name color-inherit">
+                    {% if software.description[active_lang_extended].localisedName != nil %}
+                    {{ software.description[active_lang_extended].localisedName }}
+                    {% else %}
+                    {{ software.name }}
+                    {% endif %}
+                  </p>
+                  <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+                </a>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+
         <nav id="paginator"></nav>
 
       </div>
     </div>
   </div>
 
-  
-  <div id="filters" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <div id="filters" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><span class="back" data-dismiss="modal"><i class="it-arrow-left"></i></span>{{ t.software.filters }}</h5>
+          <h5 class="modal-title" id="exampleModalLabel"><span class="back" data-dismiss="modal"><i
+                class="it-arrow-left"></i></span>{{ t.software.filters }}</h5>
           <a class="save" href="" data-dismiss="modal">
             conferma
           </a>
@@ -261,65 +271,75 @@ layout: default-pa
           <div class="pill-filters row">
             <ul class="nav nav-pills  w-100" id="pills-tab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="pills-arguments-tab" data-toggle="pill" href="#pills-arguments" role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.arguments }}</a>
+                <a class="nav-link active" id="pills-arguments-tab" data-toggle="pill" href="#pills-arguments"
+                  role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.arguments }}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="pills-types-tab" data-toggle="pill" href="#pills-types" role="tab" aria-controls="pills-types" aria-selected="true">{% if active_lang == 'it' %} Tipologia {% else %} Typology {% endif %}</a>
+                <a class="nav-link" id="pills-types-tab" data-toggle="pill" href="#pills-types" role="tab"
+                  aria-controls="pills-types" aria-selected="true">{% if active_lang == 'it' %} Tipologia {% else %}
+                  Typology {% endif %}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="pills-development_status-tab" data-toggle="pill" href="#pills-development_status" role="tab" aria-controls="pills-development_status" aria-selected="false">{{t.software.development_status}}</a>
+                <a class="nav-link" id="pills-development_status-tab" data-toggle="pill"
+                  href="#pills-development_status" role="tab" aria-controls="pills-development_status"
+                  aria-selected="false">{{t.software.development_status}}</a>
               </li>
-           </ul>
+            </ul>
           </div>
         </div>
         <div class="modal-body">
-         <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-arguments" role="tabpanel" aria-labelledby="pills-arguments-tab">
-            {% for tag in site.data.crawler.software_tags %}
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }} {% endif %}</span>
-              </label>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-arguments" role="tabpanel"
+              aria-labelledby="pills-arguments-tab">
+              {% for tag in site.data.software_tags %}
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
+                  <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }}
+                    {% endif %}</span>
+                </label>
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %} 
+            <div class="tab-pane fade" id="pills-types" role="tabpanel" aria-labelledby="pills-types-tab">
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="platforms">
+                  <span> {{ t.software.platforms | capitalize }} </span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="software_open">
+                  <span> {{ t.software.software_open | capitalize }} </span>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="reuse_software">
+                  <span> {{ t.software.reuse_software | capitalize }} </span>
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-development_status" role="tabpanel"
+              aria-labelledby="pills-development_status-tab">
+              {% for item in site.data.development_status %}
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="{{ item |first }}">
+                  <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }}
+                    {% endif %}</span>
+                </label>
+              </div>
+              {% endfor %}
+            </div>
           </div>
-           <div class="tab-pane fade" id="pills-types" role="tabpanel" aria-labelledby="pills-types-tab">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="platforms">
-               <span> {{ t.software.platforms | capitalize }} </span>
-              </label>
-            </div> 
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="software_open">
-               <span> {{ t.software.software_open | capitalize }} </span>
-              </label>
-            </div> 
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="reuse_software">
-               <span> {{ t.software.reuse_software | capitalize }} </span>
-              </label>
-            </div>
-          </div> 
-           <div class="tab-pane fade" id="pills-development_status" role="tabpanel" aria-labelledby="pills-development_status-tab">
-            {% for item in site.data.development_status %}
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ item |first }}">
-               <span>{% if item[1][active_lang] != nil%}{{ item[1][active_lang] }} {% else %} {{ item | first }} {% endif %}</span>
-              </label>
-            </div>
-            {% endfor %}  
-           </div>
-         </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="sortBy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelSort" aria-hidden="true">
+  <div id="sortBy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelSort"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
