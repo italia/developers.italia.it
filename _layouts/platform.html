@@ -31,24 +31,24 @@ Still to-do:
         </div>
         <div class="project__actors row">
           {% if page.owners %}
-            <div class="col-4">
-              <span class="d-block">{{t.project_owner}}</span>
-              <ul class="list-unstyled">
-                {% for actor in page.owners %}
-                <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
+          <div class="col-4">
+            <span class="d-block">{{t.project_owner}}</span>
+            <ul class="list-unstyled">
+              {% for actor in page.owners %}
+              <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
           {% endif %}
           {% if page.managers %}
-            <div class="col-4">
-              <span class="d-block">{{t.project_manager}}</span>
-              <ul class="list-unstyled">
-                {% for actor in page.managers %}
-                <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
+          <div class="col-4">
+            <span class="d-block">{{t.project_manager}}</span>
+            <ul class="list-unstyled">
+              {% for actor in page.managers %}
+              <li><a href="{{actors[actor].url}}">{{actors[actor].t[page.lang] | default:actor}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
           {% endif %}
         </div>
       </div>
@@ -57,12 +57,12 @@ Still to-do:
       </div>
     </div>
     <div class="project__heroback">
-       {{ page.title }}
+      {{ page.title }}
     </div>
   </div>
 </div>
 {% if page.resources %}
-  {% include project-resources.html %}
+{% include project-resources.html %}
 {% endif %}
 
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
@@ -72,9 +72,11 @@ Still to-do:
       {{page.content}}
     </div>
 
+    {% capture toc %}{{ content | toc_only }}{% endcapture %}
+    {% include sideblock.html image=page.logo content=toc %}
+
   </div>
 </section>
 
 {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
 {% include project-apis.html %}
-

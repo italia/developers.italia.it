@@ -2099,3 +2099,38 @@ body {
       }
     }
   }
+
+  /* SIDEBLOCK */
+  .sideblock-wrapper {
+      margin-top: 8rem;
+      margin-left: -50px;
+      z-index: 200;
+
+      .sideblock {
+        background-color: white;
+        box-shadow: 0 8px 24px 0 rgba(50,50,50,.15)!important;
+        padding: 20px;
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-nav a {
+            display: block;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            color: #06c;
+            font-weight: 600;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            font-size: 18px !important;
+        }
+
+        .section-nav .toc-h3 a {
+            padding-left: 1rem;
+            font-size: 0.9em !important;
+        }
+      }
+  }
