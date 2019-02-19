@@ -11,8 +11,6 @@ highlight: true
 comingsoon: false
 layout: platform
 github_team: io
-maintainers:
-  - matteo
 ---
 
 ## Intro

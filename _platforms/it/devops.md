@@ -11,9 +11,6 @@ highlight: false
 comingsoon: false
 layout: platform
 github_team: devops
-maintainers:
-  - paolo
-  - giuseppe
 socials:
   -
     name: twitter

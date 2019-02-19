@@ -10,11 +10,6 @@ order: 2
 highlight: false
 comingsoon: false
 layout: platform
-maintainers:
-  - alessandro
-  - fabiana
-  - giorgia
-  - marcello
 socials:
   -
     name: twitter

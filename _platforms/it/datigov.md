@@ -10,11 +10,7 @@ order: 4
 highlight: false
 comingsoon: false
 layout: platform
-maintainers:
-  - alessandro
-  - fabiana
-  - giorgia
-  - marcello
+github_team: datigov
 socials:
   -
     name: twitter

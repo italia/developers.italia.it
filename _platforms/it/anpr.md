@@ -7,9 +7,6 @@ description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantie
 lang: it
 order: 4
 ref: anpr-project
-maintainers:
-  - carlo
-  - mirko
 highlight: false
 comingsoon: false
 layout: platform

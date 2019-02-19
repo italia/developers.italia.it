@@ -10,12 +10,6 @@ highlight: true
 comingsoon: false
 layout: platform
 github_team: design
-maintainers:
-  - matteo
-  - lorenzo
-  - francesco
-  - danilo
-  - davide
 socials:
   -
     name: twitter

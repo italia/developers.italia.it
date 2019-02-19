@@ -8,9 +8,6 @@ description: >
   about address, civil state, etc.
 lang: en
 order: 4
-maintainers:
-  - carlo
-  - mirko
 highlight: false
 comingsoon: false
 layout: platform
