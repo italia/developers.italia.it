@@ -71,7 +71,9 @@ Still to-do:
     <div class="project__maincontent col-md-10">
       {{page.content}}
 
+      {% if page.newsletterdata %}
       {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
+      {% endif %}
     </div>
 
     {% capture toc %}
