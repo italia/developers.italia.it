@@ -10,10 +10,67 @@ highlight: true
 comingsoon: false
 layout: platform
 github_team: pagopa
+abilitante: true
+newsletterdata:
+    text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su pagoPA."
+    placeholdertext: mario.rossi@dev.software.it
+    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
+    inputs:
+        - 
+          type: hidden
+          name: list
+          value: 5
+owners:
+    - name: Presidenza del Consiglio dei Ministri
+      url: http://www.governo.it/
+managers:
+    - name: Team per la Trasformazione Digitale
+      url: https://teamdigitale.governo.it/
+    - name: SIA SpA
+      url: https://www.sia.eu/
+resources:
+    - Documentazione:
+      - title: Specifiche Attuative del Nodo dei Pagamenti-SPC
+        icon: file
+        url: https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/
+        desc: 
+      - title: FAQ
+        icon: file
+        url: https://docs.italia.it/italia/pagopa/pagopa-docs-faq/
+        desc: 
+      - title: Specifiche attuative dei codici identificativi di versamento, riversamento e rendicondazione
+        icon: file
+        url: https://docs.italia.it/italia/pagopa/pagopa-codici-docs/
+        desc: 
+      - title: Linee guida pagamenti elettronici a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi
+        icon: file
+        url: https://docs.italia.it/italia/pagopa/lg-pagopa-docs/
+        desc: 
+      - title: Guida tecnica avviso analogico
+        icon: file
+        url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/
+      - title: Questionario per i Comuni
+        icon: pencil
+        url: https://goo.gl/forms/fv0cde8rAFoDNG433
+        desc: Questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
+    - SDK:
+      - title: App di esempio iOS
+        icon: github
+        url: https://github.com/italia/pagopa-ios-example
+        desc: Applicazione mobile per iOS, comprensiva di SDK
+      - title: App di esempio Android
+        icon: github
+        url: https://github.com/italia/pagopa-android-example
+        desc: Applicazione mobile per Android, comprensiva di SDK
+      - title: SDK per Ruby
+        icon: github
+        url: https://github.com/italia/pagopa-soap-ruby
+        desc: Libreria Ruby per accesso alle API SOAP
+
 ---
 
 ## Intro
-pagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
+pagoPA è il nodo di pagamento della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
 
 Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
 
@@ -26,59 +83,4 @@ Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i dive
 
 Stiamo facendo evolvere il sistema in una ottica di mercato integrando canali di pagamento innovativi ed evolvendo l’interfaccia utente e le funzionalità del sistema verso gli standard consolidati sul mercato.
 
-In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che entro la fine dell’anno risulteranno pesantemente rinnovate e molto più usabili per il cttadino.
-
-Trovate maggiori informazioni sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/).
-
-## Documentazione
-
-Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile i primi documenti che potete leggere di seguito.
-
-- [Specifiche Attuative del Nodo dei Pagamenti-SPC](https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/)
-- [FAQ](https://docs.italia.it/italia/pagopa/pagopa-docs-faq/)
-- [Specifiche attuative dei codici identificativi di versamento, riversamento e rendicondazione](https://pagopa-codici.readthedocs.io/it/latest/)
-- [Linee guida pagamenti elettronici a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi](http://lg-pagopa.readthedocs.io/it/latest/)
-- [Guida tecnica avviso analogico](http://pagopa-avvisoanalogico.readthedocs.io/it/latest/)
-
-### Per i Comuni
-
-Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
-
-- [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
-
-## App di esempio
-
-Ci sono due app di esempio, già perfettamente funzionanti, che contengono anche gli SDK utili agli sviluppatori che volessero realizzare le loro applicazioni per pagoPA.
-
-- [App di esempio iOS](https://github.com/italia/pagopa-ios-example)
-- [App di esempio Android](https://github.com/italia/pagopa-android-example)
-
-## Newsletter
-
-{::nomarkdown}
-
-<form class="Form Form--spaced u-padding-all-l u-background-grey-10 u-text-r-xs u-layout-prose u-margin-bottom-xl"
-      action="http://a0x0b4.emailsp.com/frontend/subscribe.aspx">
-
-        <div class="Form-field">
-            <label class="Form-label is-required" for="email" >Email *</label>
-            <input class="Form-input" id="emailNewsletter" type="email" name="email" aria-required="true" required placeholder="Inserisci la tua e-mail">
-        </div>
-        <fieldset class="Form-field Form-field--choose Grid-cell">
-        	<legend class="Form-legend is-required">Privacy *</legend>
-        	<label class="Form-label is-required" for="privacy">
-        	<input type="checkbox" class="Form-input" id="privacyNewsletter" name="privacy" aria-required="true" required>
-        	<span class="Form-fieldIcon" role="presentation"></span>
-        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a>
-        	</label>
-        </fieldset>
-    	<div class="Form-field Grid-cell">
-    		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
-        	<button type="submit" class="Button Button--default u-text-xs" value="true">Iscriviti</button>
-    	</div>
-
-    <input type="hidden" name="list" value="5">
-
-</form>
-
-{:/}
+In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che è stata pesantemente rinnovata e resa molto più usabile per il cttadino (maggiori informazioni a questo proposito sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/)).
