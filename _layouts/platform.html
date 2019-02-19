@@ -70,6 +70,8 @@ Still to-do:
 
     <div class="project__maincontent col-md-10">
       {{page.content}}
+
+      {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
     </div>
 
     {% capture toc %}
@@ -81,11 +83,15 @@ Still to-do:
     </ul>
     {% endif %}
     {% endcomment %}
+    {% if page.newsletterdata %}
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#newsletter">Newsletter</a></li>
+    </ul>
+    {% endif %}
     {% endcapture %}
     {% include sideblock.html image=page.logo content=toc %}
 
   </div>
 </section>
 
-{% include banner-newsletter.html newsletterdata=page.newsletterdata %}
 {% include platform-apis.html %}

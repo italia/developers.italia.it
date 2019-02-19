@@ -1,27 +1,30 @@
-<section class="banner-newsletter ">
+{% include setlang.html %}
+{% assign newsletterdata = include.newsletterdata | default: newsletterdata %}
+
+<section id="newsletter" class="banner-newsletter ">
 
     <div class="banner-newsletter__inner container d-flex justify-content-center position-relative">
         <div class="banner-newsletter__bkg">
             <img src="{{'/assets/images/banner-newsletter-image.svg' | relative_url}}">
         </div>
-        <form class="col-sm-10 " action="{{site.newsletterdata.action}}">
+        <form class="col-sm-10 " action="{{newsletterdata.action}}">
             <h1 class="mb-2 mb-md-4" name="newsletter">Newsletter</h1>
-            <p class="banner-newsletter__text white-text font-serif mb-2 mb-md-4 w-100 mw-md-50">Iscriviti alla
-                newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) ma ti
-                aiuterà a rimanere in contatto con noi.</p>
-            {% for input in site.newsletterdata.hidden-inputs %}
+            <p class="banner-newsletter__text white-text font-serif mb-2 mb-md-4 w-100 mw-md-50">
+                {{ newsletterdata.text | default: t.newsletter_text }}
+            </p>
+            {% for input in newsletterdata.hidden-inputs %}
             <input type="hidden" name="{{input.name}}" value="{{input.value}}">
             {% endfor %}
             <div class="py-1 py-md-2">
                 <div class="form-group mw-md-50 mb-2 mb-md-4">
                     <i class="ico-prefix it-mail"></i>
                     <input required type="email" name="email" id="email" class="form-control"
-                        placeholder="{{site.newsletterdata.placeholdertext}}">
+                        placeholder="{{newsletterdata.placeholdertext}}">
                 </div>
                 <div class="row mw-md-50">
-                    {% if site.newsletterdata.selects %}
+                    {% if newsletterdata.selects %}
                     <div class="col-md ">
-                        {% for select in site.newsletterdata.selects %}
+                        {% for select in newsletterdata.selects %}
                         <div class="banner-newsletter__select">
                             <select id="{{select.name}}" name="{{select.name}}" required>
                                 <option disabled="" selected=""></option>

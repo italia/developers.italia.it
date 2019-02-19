@@ -45,69 +45,27 @@ managers:
     - name: Sogei
       url: http://www.sogei.it/
 resources:
-    - In primo piano:
-        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-    - SDK:
-        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-    - Risorse grafiche:
-        - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Pulvinar dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-        - title: Consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          icon: github
-          url: '#'
-          desc: Morbi sit amet pulvinar dolor, id sagittis dolor. Mauris cursus gravida nunc, sit amet laoreet ex. Curabitur sed eleifend diam. Fusce vehicula, turpis a cursus feugiat, orci sapien efficitur velit
-            
+    - Documentazione:
+        - title: Documentazione tecnica e tabelle di riferimento
+          icon: file
+          url: https://docs.italia.it/italia/anpr/anpr/
+          desc:    
 ---
 
 ## Intro
-**Vuoi avere aggiornamenti su ANPR? Iscriviti alla nostra [newsletter](#newsletter)**
+
+**Vuoi avere aggiornamenti su ANPR? Iscriviti alla nostra [newsletter](#newsletter).**
 
 ANPR è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con ANPR, tutto cambia.
 
-Ad oggi, l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante.
+Ad oggi l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante.
 
-
-## Documentazione
-Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo riusciti a pubblicare in formato più facilmente consultabile tutte le tabelle e codici.
-
-[Documentazione tecnica e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/)
-
-
-
+## Canali
 
 Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un *issue tracker* e un forum dedicato alla discussione delle problematiche di integrazione.
 
-[Issue tracker](https://github.com/italia/anpr/issues)
-
-[Forum di discussione](https://forum.italia.it/c/anpr)
+<a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><i class="it-github" /> Issue tracker</a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><i class="it-horn" /> Entra nel forum</a>
