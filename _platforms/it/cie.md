@@ -12,6 +12,12 @@ comingsoon: false
 layout: platform
 github_team: cie
 abilitante: true
+owners:
+    - name: Ministero dell'Interno
+      url: http://www.interno.gov.it/
+managers:
+    - name: Istituto Poligrafico e Zecca dello Stato
+      url: https://www.ipzs.it/
 resources:
   - Documentazione:
     - title: Caratteristiche tecniche della carta
