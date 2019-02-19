@@ -11,6 +11,29 @@ highlight: false
 comingsoon: false
 layout: platform
 github_team: daf
+resources:
+  - Documentazione:
+    - title: Piano di sviluppo
+      icon: file
+      url: https://docs.italia.it/italia/daf/daf-piano-di-sviluppo/
+      desc: 
+    - title: Documentazione tecnica per sviluppatori
+      icon: file
+      url: https://docs.italia.it/italia/daf/daf-docs/
+      desc: 
+  - Repository:
+    - title: DAF core (piattaforma big data)
+      icon: github
+      url: https://github.com/italia/daf
+      desc: 
+    - title: Data Portal
+      icon: github
+      url: https://github.com/italia/daf-dataportal
+      desc: 
+    - title: Nuovo sito dati.gov.it (open data)
+      icon: github
+      url: https://github.com/italia/daf-publicdata
+      desc: 
 ---
 
 ## Intro
@@ -64,37 +87,5 @@ Il DAF si compone di:
    all'incentivazione della ricerca scientifica su tematiche di interesse per
    la PA.
 
-
-## Documentazione
-
-Qui puoi trovare la documentazione tecnica attualmente disponibile:
-
-[Piano di sviluppo](https://docs.italia.it/italia/daf/daf-piano-di-sviluppo/)
-
-[Documentazione tecnica per sviluppatori](https://docs.italia.it/italia/daf/daf-docs/)
-
-
-## Codice sorgente
-
-Attualmente, il DAF è in fase di pieno sviluppo, in tutti i suoi componenti, e i
-progressi possono essere seguiti direttamente sui vari repositori GitHub:
-
-[DAF core (piattaforma big-data)](https://github.com/italia/daf)
-
-[Data portal](https://github.com/italia/daf-dataportal)
-
-[Nuovo sito dati.gov.it (opendata)](https://github.com/italia/daf-publicdata)
-
-
-## Collaborazione
-
-Utilizziamo una sezione del forum per discutere di dati, open data e DAF. In precedenza,
-avevamo aperto una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
-l'archivio delle precedenti discussioni e iscriverti per partecipare. A breve, migreremo l'archivio
-della mailing-list nel forum.
-
-
-[Discussioni su DAF nel forum](https://forum.italia.it/c/daf)
-
-Per gli sviluppatori è aperto il canale [#daf](https://developersitalia.slack.com/messages/C760XQX9Q) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
-
+<a class="btn btn-primary" href="https://forum.italia.it/c/daf"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C760XQX9Q"><i class="it-comment" /> Dialoga su Slack (#daf)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
