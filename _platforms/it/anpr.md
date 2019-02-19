@@ -49,14 +49,19 @@ resources:
         - title: Documentazione tecnica e tabelle di riferimento
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
-          desc:    
+          desc: 
+    - SDK:
+        - title: Client Java di esempio
+          icon: github
+          url: https://github.com/italia/anpr-client-example
+          desc: Client per il test della connessione ad ANPR
 ---
 
 ## Intro
 
 **Vuoi avere aggiornamenti su ANPR? Iscriviti alla nostra [newsletter](#newsletter).**
 
-ANPR è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
+[ANPR](https://anpr.interno.it/) è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con ANPR, tutto cambia.
