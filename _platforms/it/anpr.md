@@ -42,9 +42,11 @@ newsletterdata:
               valueid: SW_House
 abilitante: true
 owners:
-    - mininterno
+    - name: Ministero dell'Interno
+      url: http://www.interno.gov.it/
 managers:
-    - sogei
+    - name: Sogei
+      url: http://www.sogei.it/
 resources:
     - In primo piano:
         - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
