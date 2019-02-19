@@ -60,8 +60,9 @@ Still to-do:
     </div>
   </div>
 </div>
+
 {% if page.resources %}
-{% include project-resources.html %}
+{% include platform-resources.html %}
 {% endif %}
 
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
@@ -71,11 +72,20 @@ Still to-do:
       {{page.content}}
     </div>
 
-    {% capture toc %}{{ content | toc_only }}{% endcapture %}
+    {% capture toc %}
+    {{ content | toc_only }}
+    {% comment %}
+    {% if page.resources %}
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>
+    </ul>
+    {% endif %}
+    {% endcomment %}
+    {% endcapture %}
     {% include sideblock.html image=page.logo content=toc %}
 
   </div>
 </section>
 
 {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
-{% include project-apis.html %}
+{% include platform-apis.html %}

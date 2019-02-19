@@ -4,20 +4,48 @@ subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
-  Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace con la piattaforma.
+  Se sei un esercente e vuoi integrarti con la piattaforma via API per validare i coupon, puoi trovare qui documentazione e SDK.
 lang: it
 order: 3
 highlight: false
 comingsoon: false
 layout: platform
 github_team: 18app
+owners:
+    - name: Ministero per i Beni e le Attività Culturali
+      url: http://www.beniculturali.it/
+managers:
+    - name: Sogei
+      url: http://www.sogei.it/
+resources:
+    - Documentazione:
+        - title: Guida per gli esercenti
+          icon: file
+          url: https://docs.italia.it/italia/18app/18app-esercenti-docs/
+          desc: Documentazione per gli esercenti interessati ad integrarsi con le API per la verifica dei coupon
+    - SDK:
+        - title: SDK per Java
+          icon: github
+          url: https://github.com/italia/18app-java-sdk
+        - title: SDK per PHP
+          icon: github
+          url: https://github.com/italia/18app-php-sdk
+        - title: SDK per .NET
+          icon: github
+          url: https://github.com/italia/18app-dotnet-sdk
+        - title: SDK per C++
+          icon: github
+          url: https://github.com/italia/18app-cpp-sdk
+        - title: SDK per Magento (TODO)
+          icon: github
+          url: https://github.com/italia/18app-magento-sdk
 ---
 
 ## Intro
 
 18App e Carta Docente sono due programmi previsti dalla legge con i quali
 viene assegnato un bonus economico (€500) a determinate categorie di persone
-dette beneficiari (rispettivamente, tutti i 18enni e i docenti di ruolo) da
+(rispettivamente, tutti i 18enni e i docenti di ruolo) da
 spendere con specifici vincoli (in cultura e formazione) presso esercenti
 accreditati.
 
@@ -33,36 +61,17 @@ Per validare un coupon, l'esercente può collegarsi via API al sistema di
 backend, effettuando quindi una integrazione con il proprio sistema di cassa,
 oppure manualmente tramite una semplice web form.
 
-Il sistema di backend e l'attuale web application sono gestiti da SOGEI come
-fornitore di servizio del Ministero dei Beni Culturali e del Ministero
-dell'Istruzione. Il lavoro su Developers Italia si concentra in due direzioni:
+<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
 
- * Fornire documentazione, codice e supporto per gli **esercenti che vogliono
-   integrarsi sulla piattaforma**. Tutta la documentazione tecnica è presente
-   infatti in questa sezione, e tramite il forum è possibile avere risposta
-   alle problematiche tecniche di integrazione.
+Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza. Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
 
- * Sviluppo di una **nuova mobile app nativa**, sotto licenza open-source, che
-   potrà essere utilizza dai beneficiari per utilizzare il servizio. Al momento
-   lo sviluppo non è ancora iniziato, ma è possibile intanto visionare il mockup
-   interattivo e fornire commenti.
+- [18app](https://www.18app.italia.it/)
+- [Carta Docente](https://cartadeldocente.istruzione.it/)
 
-## Documentazione
+## App nativa
 
-Qui potete trovare la documentazione tecnica di accesso alle API per gli esercenti
-che si devono integrare con la piattaforma, e il mockup della nuova mobile app
-il cui sviluppo deve ancora cominciare.
+In Developers Italia è in corso lo sviluppo di una app nativa per 18app, che nella primavera 2019 diventerà la app ufficiale.
 
-[Documentazione dei webservice per esercenti](https://docs.italia.it/italia/18app/18app-esercenti-docs/)
-
-[Mockup della mobile app nativa](https://invis.io/RSDORU6E2)
-
-
-## Collaborazione
-
-Abbiamo aperto un'area dedicata a 18app e Carta Docente sul nostro forum, in modo
-da poter avere un canale di supporto tecnico diretto.
-
-[Sezione del forum su 18app a Carta Docente](https://forum.italia.it/c/18app-carta-docente)
-
-
+- [Scheda nel catalogo del software](/it/software/bb340c5c46b60cec11b756abb0b46ddabe7f58e7)
+- [Repository GitHub](https://github.com/italia/18app)
