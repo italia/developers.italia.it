@@ -51,7 +51,7 @@ resources:
         url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/
       - title: Questionario per i Comuni
         icon: pencil
-        url: https://goo.gl/forms/fv0cde8rAFoDNG433
+        url: https://docs.google.com/forms/d/e/1FAIpQLScPXF6InyTF_vDVdGg_MphgWpVUf1DfViYKgG0ZBFe40TTgbQ/viewform
         desc: Questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
     - SDK:
       - title: App di esempio iOS
