@@ -41,7 +41,7 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 
 ### Per i Comuni
 Di seguito il link al questionario da completare per comunicare lo stato di avanzamento relativo al progetto pagoPA e i piani di attivazione dei vari servizi
-- [Link al questionario per i Comuni](https://goo.gl/forms/fv0cde8rAFoDNG433)
+- [Link al questionario per i Comuni](https://docs.google.com/forms/d/e/1FAIpQLScPXF6InyTF_vDVdGg_MphgWpVUf1DfViYKgG0ZBFe40TTgbQ/viewform)
 
 ## App di esempio
 
