@@ -21,6 +21,10 @@ resources:
       icon: github
       url: https://github.com/italia/fatturapa-php-sdk
       desc: SDK non ufficiale (mantenuta dalla community) per l'invio di fatture elettroniche da applicazioni PHP
+    - title: Tool per Python
+      icon: github
+      url: https://github.com/italia/fatturapa-python
+      desc: Tool non ufficiale (mantenuto dalla community) per l'invio di fatture elettroniche in Python
     - title: Applicazione PHP di esempio
       icon: github
       url: https://github.com/italia/fatturapa-webapp
