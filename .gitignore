@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+.DS_Store
 /github/issues.json
 /_data/github_teams.json
 node_modules
