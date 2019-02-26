@@ -4,71 +4,196 @@ subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/logo-spid@2x.png
 payoff: Sistema Pubblico di Identità Digitale
 description: >
-  Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata
-  secondo lo standard SAML su siti pubblici ma anche privati.
+  Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.
 lang: it
 order: 1
 highlight: true
 comingsoon: false
+abilitante: true
 layout: platform
 github_team: spid
 socials:
-  -
-    name: facebook
+  - name: facebook
     icon: facebook
     link: https://www.facebook.com/groups/agid.spid/
+owners:
+    - name: Agenzia per l'Italia Digitale
+      url: https://www.agid.gov.it/
+resources:
+  - Documentazione:
+    - title: Regole Tecniche consolidate
+      url: https://docs.italia.it/italia/spid/spid-regole-tecniche/it/stabile/
+      icon: file
+      desc: Le regole tecniche di SPID con applicati tutti gli avvisi e le correzioni ai refusi, consultabili comodamente su Docs Italia
+    - title: Roadmap SDK
+      url: https://trello.com/b/PHF0ErvK/spid-roadmap
+      icon: file
+      desc: Quadro d'insieme delle SDK per SPID sviluppate e mantenute dalla community di Developers Italia
+    - title: Metadata degli Identity Provider
+      url: https://github.com/italia/spid-registry-idp
+      icon: github
+      desc: Metadata degli Identity Provider, che i Service Provider devono mantenere aggiornati
+    - title: Modulistica, circolari e deliberazioni
+      url: https://www.agid.gov.it/it/piattaforme/spid
+      icon: file
+      desc: Sito di AGID contenente la modulistica, i listini, le convenzioni e le deliberazioni che riguardano SPID
+  - SDK:
+    - title: SDK per .NET
+      icon: github
+      url: https://github.com/italia/spid-dotnet-sdk
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET
+    - title: SDK per Django
+      icon: github
+      url: https://github.com/italia/spid-django
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)
+    - title: SDK per Passport
+      icon: github
+      url: https://github.com/italia/spid-passport
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Javascript)
+    - title: SDK per Spring
+      icon: github
+      url: https://github.com/italia/spid-spring
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Java Spring
+    - title: SDK per Ruby
+      icon: github
+      url: https://github.com/italia/spid-ruby
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Ruby
+    - title: SDK per Ruby on Rails
+      icon: github
+      url: https://github.com/italia/spid-rails
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Ruby on Rails
+    - title: SDK per Sinatra
+      icon: github
+      url: https://github.com/italia/spid-sinatra
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Sinatra (Ruby)
+    - title: SDK per Android
+      icon: github
+      url: https://github.com/italia/spid-android-sdk
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile Android (Java)
+    - title: SDK per iOS
+      icon: github
+      url: https://github.com/italia/spid-ios-sdk
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile iOS
+    - title: SDK per PHP
+      icon: github
+      url: https://github.com/italia/spid-php-lib
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
+    - title: SDK per Wordpress
+      icon: github
+      url: https://github.com/italia/spid-wordpress
+      desc: Plugin nativo per l'integrazione del login con SPID in siti Wordpress (PHP)
+    - title: SDK per Laravel
+      icon: github
+      url: https://github.com/italia/spid-laravel
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Laravel (PHP)
+    - title: SDK per Symfony
+      icon: github
+      url: https://github.com/italia/spid-symfony-bundle
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Symfony (PHP)
+    - title: SDK per Drupal
+      icon: github
+      url: https://github.com/italia/spid-drupal-module
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Drupal (PHP)
+    - title: SDK per concrete5
+      icon: github
+      url: https://github.com/italia/spid-concrete5
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni concrete5 (PHP)
+    - title: SDK per PHP (basata su SimpleSAMLphp)
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp
+    - title: SDK per Perl
+      icon: github
+      url: https://github.com/italia/spid-perl
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Perl
+    - title: SDK per Dancer2
+      icon: github
+      url: https://github.com/italia/spid-perl-dancer2
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Dancer2 (Perl)
+    - title: SDK per Go
+      icon: github
+      url: https://github.com/italia/spid-go
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Golang
+    - title: Plugin per Limesurvey
+      icon: github
+      url: https://github.com/italia/spid-limesurvey-plugin
+      desc: Plugin nativo per l'integrazione di SPID in Limesurvey
+    - title: Proxy con Shibboleth
+      icon: github
+      url: https://github.com/italia/spid-shibboleth-proxy-docker
+      desc: Immagine Docker per creare un proxy basato su Apache2 e Shibboleth
+    - title: Esempio con Shibboleth, Nginx e Ansible
+      url: https://github.com/italia/spid-ansible-shibboleth-example
+      icon: github
+      title: Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible
+    - title: IAM in Python
+      url: https://github.com/italia/spid-sp-sapspid
+      icon: github
+      desc: Applicativo di Identity Access Management compatibile con SPID sviluppato in Python
+  - Risorse grafiche:
+    - title: Bottone "Entra con SPID"
+      icon: github
+      url: https://github.com/italia/spid-sp-access-button
+      desc: Il bottone da inserire nel sito del Service Provider, con integrata la scelta dell'Identity Provider
+    - title: Interfacce grafiche per Identity Provider
+      icon: github
+      url: https://github.com/italia/spid-idp-login-layout
+      desc: Modelli in HTML statico per le interfacce degli Identity Provider
+    - title: Icone, loghi e materiali grafici
+      icon: github
+      url: https://github.com/italia/spid-graphics
+      desc: Questo repository contiene il logo di SPID, i loghi degli Identity Provider ed altri materiali grafici
+    - title: Bottone "Entra con SPID" (versione smart)
+      icon: github
+      url: https://github.com/italia/spid-smart-button
+      desc: Nuova versione (non ancora ufficiale) del bottone "Entra con SPID", con integrata la scelta dell'Identity Provider
+  - Tool:
+    - title: Identity Provider di test
+      url: https://github.com/italia/spid-testenv2
+      icon: github
+      desc: Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale
 ---
 
 ## Intro
+
 SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai cittadini italiani di accedere a tutti i servizi online della Pubblica Amministrazione con un'unica Identità Digitale utilizzabile da computer, tablet e smartphone.
-Il cittadino può ottenere SPID tramite i Gestori di Identità (detti Identity Provider); una volta completata
-la procedura di verifica (che certifica l'identità del richiedente), vengono rilasciate un set di credenziali che possono essere utilizzate su tutti i siti (chiamati Service Provider).
+Il cittadino può ottenere SPID tramite i Gestori di Identità (detti *Identity Provider*); una volta completata la procedura di verifica, che certifica l'identità del richiedente, vengono rilasciate delle credenziali che consentono l'accesso ai Fornitori di Servizi (detti *Service Provider*).
 
-L'integrazione di SPID è consentita sia per i siti Pubblica Amministrazione, sia per i siti e servizi online dei privati. I vantaggi nell'adottare SPID sono quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
+**Vantaggi per il cittadino:**
 
+- Una unica credenziale per tutti i siti pubblici (e privati), sicura e facile da ricordare
+- Il processo di riconoscimento e rilascio si effettua una volta sola e vale per sempre
+- SPID è gratuito
 
-**Roadmap**
+**Vantaggi per il Service Provider:**
 
-Sono in seguenti sviluppi che coinvolgono anche la community:
+- Certezza dell'identità dell'utente
+- Nessuna necessità di gestire un processo di registrazione/riconoscimento, con risparmio dei relativi costi
+- Attributi qualificati (data/luogo di nascita, sesso, e-mail, telefono ecc.)
+- Altri attributi già popolati dall'utente (indirizzo di residenza ecc.)
 
- * Creazione di plugin per i principali CMS (Wordpress, Drupal, Joomla, ecc.)
- * Scheletri di integrazione in ambito mobile (iOS, Android)
- * Testsuite di validazione dell'integrazione di SPID
- * Ambiente di testing e validazione di SPID
+L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazione (che ne beneficiano gratuitamente), sia per i siti e servizi online dei privati (che pagano il servizio). I vantaggi nell'adottare SPID sono quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
 
-## Documentazione
-SPID utilizza un protocollo aperto (SAML 2) che può essere implementato applicando le regole tecniche ufficiali.
+## Come diventare Service Provider
 
-[Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/)
+1. Leggi la documentazione tecnica ed usa i componenti open source che trovi in Developers Italia.
+2. Usa l'[Identity Provider di test](https://github.com/italia/spid-testenv2) per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
+3. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/).
+4. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid).
 
+SPID è basato sul protocollo SAML2, quindi l'integrazione può avvenire con molteplici soluzioni:
 
-## Codice sorgente
-Ancora il codice pubblicato è molto poco, ma abbiamo grandi piani al riguardo (vedi roadmap):
+- integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in Developers Italia;
+- applicando al web server un middleware come Shibboleth;
+- aggiungendo un componente esterno di Identity Access Management.
 
-[Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
+In aggiunta, è necessario integrare nel sito il bottone ufficiale "Entra con SPID", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una AuthnRequest che viene poi inviata all'Identity Provider attraverso un redirect del browser.
 
-[Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
+Il Service Provider deve aggiornare i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
 
-[Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook)
+<a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Dialoga su Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
 
-**Grafica**
+In aggiunta, è disponibile un [issue tracker pubblico](https://github.com/italia/spid/issues).
 
-Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
-
-[Icone, loghi e grafiche SPID](https://github.com/italia/spid-graphics)
-
-[Bottone SPID (solo asset)](https://github.com/italia/spid-button)
-
-
-## Collaborazione
-Abbiamo aperto un'area di discussione nel nostro forum, per risolvere le problematiche tecniche di integrazione,
-e a breve sarà disponibile anche un issue tracker pubblico.
-
-[Forum di discussione tecnica](https://forum.italia.it/c/spid)
-
-Facciamo anche delle call settimanali su Jitsi, qui trovato le informazioni
-per partecipare. Chiunque sia interessato a seguire lo sviluppo può entrare:
-
-[Videocall settimanale](https://forum.italia.it/t/spid-weekly-meeting/276)
-
-
+**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi (vedi la [roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)).
