@@ -4,8 +4,8 @@
   it-riuso-codiceIPA-label: Ministero per i beni e le attivita' culturali
   oEmbedHTML: {}
   oldFeatures:
-    eng: null
-    ita: null
+    en: null
+    it: null
   oldVariant: null
   popularTags:
   - amusement
@@ -16,7 +16,7 @@
       open: []
       proprietary: []
     description:
-      ita:
+      it:
         apiDocumentation: ""
         awards: []
         documentation: ""
