@@ -4,15 +4,15 @@ layout: default
 
 {% include setlang.html %}
 
-{% assign description = page.publiccode.description[active_lang_extended]
-| default: page.publiccode.description.eng
-| default: page.publiccode.description.ita %}
+{% assign description = page.publiccode.description[active_lang]
+| default: page.publiccode.description.en
+| default: page.publiccode.description.it %}
 
 {% assign sw_name = description.localisedName | default: page.publiccode.name %}
 
-{% assign oldFeatures = page.oldFeatures[active_lang_extended]
-| default: page.oldFeatures.eng
-| default: page.oldFeatures.ita %}
+{% assign oldFeatures = page.oldFeatures[active_lang]
+| default: page.oldFeatures.en
+| default: page.oldFeatures.it %}
 
 {% comment %}
 {% include breadcrumbs.html %}
@@ -231,9 +231,9 @@ layout: default
           </a>
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
-            {% assign variant_description = variant.publiccode.description[active_lang_extended]
-            | default: variant.publiccode.description.eng
-            | default: variant.publiccode.description.ita %}
+            {% assign variant_description = variant.publiccode.description[active_lang]
+            | default: variant.publiccode.description.en
+            | default: variant.publiccode.description.it %}
             <div class="variantDetail">
               <a href="/{{active_lang}}/software/{{ variant.name | replace: ' ', '-'  | downcase }}">{{
                 t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
@@ -309,9 +309,9 @@ layout: default
     <div class="row">
       <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
         {% for relsw in page.relatedSoftwares limit: 4 %}
-        {% assign relsw_description = relsw.publiccode.description[active_lang_extended]
-        | default: relsw.publiccode.description.eng
-        | default: relsw.publiccode.description.ita %}
+        {% assign relsw_description = relsw.publiccode.description[active_lang]
+        | default: relsw.publiccode.description.en
+        | default: relsw.publiccode.description.it %}
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
         <div class="col-11 relate">
           <img class="img-fluid"

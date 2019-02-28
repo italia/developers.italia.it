@@ -17,9 +17,9 @@
         <div class="row row-eq-height">
             {% for item in site.data.crawler.softwares limit: limititems %}
 
-            {% assign description = item.publiccode.description[active_lang_extended]
-            | default: item.publiccode.description.eng
-            | default: item.publiccode.description.ita %}
+            {% assign description = item.publiccode.description[active_lang]
+            | default: item.publiccode.description.en
+            | default: item.publiccode.description.it %}
 
             {% assign sw_name = description.localisedName | default: item.publiccode.name %}
 

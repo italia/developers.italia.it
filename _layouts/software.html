@@ -51,18 +51,18 @@ layout: default
       {% for software in site.data.crawler.softwares limit: 6 %}
       {% if software.publiccode.it.riuso.codiceIPA == blank %}
       {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-      {% if software.publiccode.description[active_lang_extended].screenshots != nil %}
-      {% assign mainImage = software.publiccode.description[active_lang_extended].screenshots | first %}
-      {% elsif software.publiccode.description.eng.screenshots != nil %}
-      {% assign mainImage = software.publiccode.description.eng.screenshots | first %}
+      {% if software.publiccode.description[active_lang].screenshots != nil %}
+      {% assign mainImage = software.publiccode.description[active_lang].screenshots | first %}
+      {% elsif software.publiccode.description.en.screenshots != nil %}
+      {% assign mainImage = software.publiccode.description.en.screenshots | first %}
       {% endif %}
       <div class="col-sm col-md-4 item mb-2 mb-md-5 p-2 p-md-3">
         <a href="/{{active_lang}}/software/{{software.id}}" class="d-block decoration-none ">
           <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;">
           </div>
           <p class="name color-inherit">
-            {% if software.publiccode.description[active_lang_extended].localisedName != nil %}
-            {{ software.publiccode.description[active_lang_extended].localisedName }}
+            {% if software.publiccode.description[active_lang].localisedName != nil %}
+            {{ software.publiccode.description[active_lang].localisedName }}
             {% else %}
             {{ software.publiccode.name }}
             {% endif %}
@@ -100,17 +100,17 @@ layout: default
       <div class="col-sm col-md-3 item mb-2 mb-md-5 p-2 p-md-3">
         <a href="{{software.id}}" class="d-block decoration-none ">
           {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-          {% if software.publiccode.description[active_lang_extended].screenshots != nil %}
-          {% assign mainImage = software.publiccode.description[active_lang_extended].screenshots | first %}
-          {% elsif software.publiccode.description.eng.screenshots != nil %}
-          {% assign mainImage = software.publiccode.description.eng.screenshots | first %}
+          {% if software.publiccode.description[active_lang].screenshots != nil %}
+          {% assign mainImage = software.publiccode.description[active_lang].screenshots | first %}
+          {% elsif software.publiccode.description.en.screenshots != nil %}
+          {% assign mainImage = software.publiccode.description.en.screenshots | first %}
           {% endif %}
           <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
           <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;"></div>
           <p class="name color-inherit">
-            {% if software.publiccode.description[active_lang_extended] and
-            software.publiccode.description[active_lang_extended].localisedName != "" %}
-            {{ software.publiccode.description[active_lang_extended].localisedName }}
+            {% if software.publiccode.description[active_lang] and
+            software.publiccode.description[active_lang].localisedName != "" %}
+            {{ software.publiccode.description[active_lang].localisedName }}
             {% else %}
             {{ software.publiccode.name }}
             {% endif %}
