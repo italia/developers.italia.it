@@ -168,30 +168,30 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
         <tr role="row" class="even">
-            <td tabindex="0">Design</td>
-            <td>
-                <b>Complete the Angular Web Toolkit </b><br /> This project
-                involves the completion of the Angular Web Toolkit already
-                created by members of the Italian Digital Transformation Team
-                and the community.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for Angular.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- Angular</li>
-                </ul>
-                <br /> <b>Repository reference:</b>
-                <a href="https://github.com/italia/design-angular-kit">GitHub
-                Repo</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
+            <td tabindex="0">Design</td>	
+            <td>	
+                <b>Complete the React Web Toolkit </b><br /> This project	
+                involves the completion of the React Web Toolkit already	
+                created by members of the Italian Digital Transformation Team	
+                and the community.	
+                <br />	
+                <b>Mentor:</b> Designers or developers from the Designers Italia team.	
+                <br />	
+                <b>Expected outcome:</b> A complete implementation of the UI Kit	
+                 for React.	
+                <br />	
+                <b>Required skills:</b>	
+                <ul>	
+                    <li>- HTML/JS/CSS</li>	
+                    <li>- Frontend development</li>	
+                    <li>- React</li>	
+                </ul>	
+                <br /> <b>Repository reference:</b>	
+                <a href="https://github.com/italia/design-react-kit">GitHub	
+                Repo</a>	
+            </td>	
+            <td>Medium</td>	
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>	
         </tr>
         <tr role="row" class="odd">
             <td tabindex="0">Design</td>
