@@ -170,32 +170,6 @@ And, if possible, an *easy, medium or hard* rating of each project.
         <tr role="row" class="even">
             <td tabindex="0">Design</td>
             <td>
-                <b>Complete the React Web Toolkit </b><br /> This project
-                involves the completion of the React Web Toolkit already
-                created by members of the Italian Digital Transformation Team
-                and the community.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for React.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- React</li>
-                </ul>
-                <br /> <b>Repository reference:</b>
-                <a href="https://github.com/italia/design-react-kit">GitHub
-                Repo</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
-        </tr>
-        <tr role="row" class="odd">
-            <td tabindex="0">Design</td>
-            <td>
                 <b>Complete the Angular Web Toolkit </b><br /> This project
                 involves the completion of the Angular Web Toolkit already
                 created by members of the Italian Digital Transformation Team
@@ -219,7 +193,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="odd">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the Vue.js Web Toolkit </b><br /> This project
@@ -245,7 +219,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the NativeBase Web Toolkit </b><br /> This project
@@ -272,7 +246,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-       <tr role="row" class="even">
+       <tr role="row" class="odd">
             <td tabindex="0">API</td>
             <td>
                 <b>Port the <i>gen-api-models</i> tool to OpenAPI v3</b><br /> 
@@ -300,7 +274,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even">
             <td tabindex="0">API</td>
             <td>
                 <b>Interoperability Model</b><br /> 
@@ -327,7 +301,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="odd">
             <td tabindex="0">Web Analytics Italia</td>
             <td>
                 <b>Create a new plugin for Matomo</b><br />This project
@@ -353,7 +327,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CD9805QUU">#design-analytics</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even">
             <td tabindex="0">General</td>
             <td>
                 <b>Your own idea!!</b><br /> Something that you're totally
