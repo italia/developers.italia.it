@@ -5,7 +5,6 @@ subtitle: Developers Italia partecipa al programma estivo di Google per studenti
 date:   2019-03-07 12:00:00 +0100
 tags: developers daf gsoc
 categories: news
-author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 lang: it
 redirect_from:
