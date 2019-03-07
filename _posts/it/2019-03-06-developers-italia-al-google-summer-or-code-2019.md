@@ -2,7 +2,7 @@
 layout: post
 title:  Developers Italia al Google Summer of Code 2019
 subtitle: Developers Italia partecipa al programma estivo di Google per studenti che hanno idee e voglia di mettersi in gioco. Ecco come candidarsi
-date:   2019-03-06 17:00:00 +0100
+date:   2019-03-07 12:00:00 +0100
 tags: developers daf gsoc
 categories: news
 author: Francesco De Augustinis
