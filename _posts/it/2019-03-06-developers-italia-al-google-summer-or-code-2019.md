@@ -16,7 +16,7 @@ redirect_from:
 
 ## Google Summer of Code, di che si tratta
 
-Il **Google Summer of Code** non è uno stage, ma un programma estivo rivolto a studenti universitari in tutto il mondo. Il programma permette agli studenti ammessi di lavorare per tre mesi su dei progetti di sviluppo open source di una delle 651 organizzazioni aderenti al progetto, tra cui [la community di Developers Italia](https://summerofcode.withgoogle.com/organizations/5088529877565440/).
+Il **Google Summer of Code** non è uno stage, ma un programma estivo rivolto a studenti universitari in tutto il mondo. Il programma permette agli studenti ammessi di lavorare per tre mesi su dei progetti di sviluppo open source di una delle 206 organizzazioni aderenti al progetto, tra cui [la community di Developers Italia](https://summerofcode.withgoogle.com/organizations/5088529877565440/).
 
 Agli studenti selezionati sarà riconosciuta **una borsa di studio** e **l’affiancamento di un mentor** per tutto il periodo. L’obiettivo è quello di migliorare le proprie competenze nello sviluppo open source e di prendere parte alle attività della community di riferimento e - nel nostro caso - di **contribuire con le proprie idee** a… migliorare la vita dei cittadini!
 
