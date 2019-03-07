@@ -32,7 +32,7 @@ Se vuoi partecipare al programma quest’anno puoi:
 - preparare la candidatura, anche chiedendo aiuto ai nostri mentor tramite [il canale slack di Developers Italia](https://slack.developers.italia.it/);
 - inviare la propria candidatura al programma GSoC 2019 **entro il 9 aprile 2019**. 
 
-Per portare a termine delle candidature di successo e davvero utili, ti consigliamo di essere proattivo, proporre delle soluzione a dei problemi, di scrivendo della documentazione e soprattutto… di mettere in mostra le tue capacità!
+Per portare a termine delle candidature di successo e davvero utili, ti consigliamo di essere proattivo, proporre delle soluzione a dei problemi, di scrivere della documentazione e soprattutto… di mettere in mostra le tue capacità!
 
 Aspettiamo le tue proposte,
 
