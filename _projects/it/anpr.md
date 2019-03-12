@@ -34,50 +34,7 @@ Stiamo lavorando ad una revisione profonda della documentazione. Per ora, siamo 
 
 
 ## Collaborazione
-Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità.
-
- <a name="newsletter"></a>
-
-{::nomarkdown}
-
-<form class="Form Form--spaced u-padding-all-l u-background-grey-10 u-text-r-xs u-layout-prose u-margin-bottom-xl"
-      action="https://a0x0b4.emailsp.com/frontend/subscribe.aspx">
-
-        <div class="Form-field">
-            <label class="Form-label is-required" for="email" >Email *</label>
-            <input class="Form-input" id="email" type="email" name="email" aria-required="true" required placeholder="Inserisci la tua e-mail">
-        </div>
-        <div class="Form-field">
-            <label class="Form-label is-required" for="campo3">Gruppo</label>
-            <select class="Form-input u-text-r-s u-borderRadius-m"
-            		id="campo3" name="campo3" aria-required="true" >
-            <option disabled selected></option>
-            <option value=""></option>
-			<option value="Comune">Comune</option>
-			<option value="SW_House">Software House</option><option value="Cittadino">Cittadino</option>
-          </select>
-       	</div>
-        <fieldset class="Form-field Form-field--choose Grid-cell">
-        	<legend class="Form-legend is-required">Privacy *</legend>
-        	<label class="Form-label is-required" for="privacy">
-        	<input type="checkbox" class="Form-input" id="privacy" name="privacy" aria-required="true" required>
-        	<span class="Form-fieldIcon" role="presentation"></span>
-        	Accetto la <a target="_blank" href="https://developers.italia.it/it/privacy-policy">Privacy Policy</a>
-        	</label>
-        </fieldset>
-    	<div class="Form-field Grid-cell">
-    		<p class="u-text-r-xxs u-margin-bottom-m" >Quando invii il modulo, controlla la tua inbox per confermare l'iscrizione</p>
-        	<button type="submit" class="Button Button--default u-text-xs">Iscriviti</button>
-    	</div>
-
-    <input type="hidden" name="group" value="16" >
-	<input type="hidden" name="list" value="3">
-</form>
-
-
-{:/}
-
-
+[Iscriviti alla newsletter](https://teamdigitale.governo.it/it/projects/anpr.htm#newsletter) di ANPR se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità.
 
 Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un *issue tracker* e un forum dedicato alla discussione delle problematiche di integrazione.
 
