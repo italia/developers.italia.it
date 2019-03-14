@@ -270,6 +270,9 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- REST API Design / OpenAPI v3</li>
                     <li>- Web Development</li>
                 </ul>
+                <br /> <b>Repository reference:</b>
+                <a href="https://github.com/teamdigitale/io-utils#gen-api-models">GitHub
+                Repo</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
@@ -297,6 +300,9 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- Backend Development (e.g., Java, Python, Go)</li>
                     <li>- REST API Design / OpenAPI v3</li>
                 </ul>
+                <br /> <b>Reference article:</b>
+                <a href="https://forum.italia.it/t/standardized-headers-for-a-reliable-api-ecosystem/7195">GitHub
+                Repo</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
