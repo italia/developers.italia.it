@@ -301,8 +301,9 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- REST API Design / OpenAPI v3</li>
                 </ul>
                 <br /> <b>Reference article:</b>
-                <a href="https://forum.italia.it/t/standardized-headers-for-a-reliable-api-ecosystem/7195">GitHub
-                Repo</a>
+                <a
+                href="https://forum.italia.it/t/standardized-headers-for-a-reliable-api-ecosystem/7195">Forum
+                Article</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
