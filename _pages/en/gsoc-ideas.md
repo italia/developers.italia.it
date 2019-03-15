@@ -67,7 +67,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td tabindex="0">DAF</td>
             <td>
                 <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
-                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
+                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/daf-develop">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
