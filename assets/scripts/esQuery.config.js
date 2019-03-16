@@ -1,5 +1,5 @@
 var paramKeys = [
-  'tags',
+  'categories',
   'developmentStatus',
   'keyword',
   'page',

@@ -48,7 +48,7 @@ layout: default-pa
           {{ page.description.shortDescription }}
         </h3>
         <div class="mt-4 mb-5">
-          {% for tag in page.popularTags limit: 3 %}
+          {% for tag in page.popularCategories limit: 3 %}
           {% include set-tag.html label=tag %}
           {% endfor %}
         </div>

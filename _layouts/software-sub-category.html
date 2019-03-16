@@ -38,7 +38,7 @@ layout: default
       <div class="arguments">
         <p class="head">{{ t.software.arguments }}</p>
         <div id="list-tags">
-          {% for tag in site.data.software_tags limit: 10 %}
+          {% for tag in site.data.software_categories limit: 10 %}
           <div class="form-check">
             <label class="form-check-label">
               <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
@@ -48,9 +48,9 @@ layout: default
           </div>
           {% endfor %}
 
-          {% if site.data.software_tags.size > 10 %}
+          {% if site.data.software_categories.size > 10 %}
           <div class="collapse" id="otherArguments">
-            {% for tag in site.data.software_tags offset:10 %}
+            {% for tag in site.data.software_categories offset:10 %}
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
@@ -141,7 +141,7 @@ layout: default
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-arguments" role="tabpanel"
               aria-labelledby="pills-arguments-tab">
-              {% for tag in site.data.software_tags %}
+              {% for tag in site.data.software_categories %}
               <div class="form-check">
                 <label class="form-check-label">
                   <input class="form-check-input" type="checkbox" value="{{ tag |first }}">

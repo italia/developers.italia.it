@@ -2,7 +2,7 @@
     <div class="container">
         <h1 class="text-center mt-0">{{t.home_tags}}</h1>
         <ul class="home-software-tags__list list-inline text-center">
-            {% for tag in site.data.software_tags %}
+            {% for tag in site.data.software_categories %}
             {% assign division5 = forloop.index | modulo:5 %}
             <li class="home-software-tags__item {%if forloop.index>15%}deactive{%endif%}">
                 <a

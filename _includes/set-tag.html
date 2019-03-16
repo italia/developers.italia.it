@@ -1,7 +1,7 @@
-{% assign labels = site.data.software_tags[include.label] %}
+{% assign labels = site.data.software_categories[include.label] %}
 {% assign label = labels[active_lang] | default labels.en %}
 
 <li class="home-software-tags__item ">
-    <a href="{% if active_lang == 'en'%}/en/categories{% else %}/it/categorie{%endif%}/?tags[0]={{ label }}" > {{ label }}</a>
+    <a href="{% if active_lang == 'en'%}/en/categories{% else %}/it/categorie{%endif%}/?tags[0]={{ label }}">
+        {{ label }}</a>
 </li>
-

@@ -46,7 +46,7 @@ layout: default
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
-              {% for tag in page.popularTags limit: 3 %}
+              {% for tag in page.popularCategories limit: 3 %}
               {% include set-tag.html label=tag tag=tag %}
               {% endfor %}
             </ul>
@@ -329,10 +329,10 @@ layout: default
     </div>
   </div>
   {% endif %}
-  {% if page.publiccode.tags %}
+  {% if page.publiccode.categories %}
   <div class="tags-relate text-center">
     <strong>TAG</strong>
-    {% for tag in page.publiccode.tags limit: 3 %}
+    {% for tag in page.publiccode.categories limit: 3 %}
     {% include set-tag.html label=tag %}
     {% endfor %}
   </div>

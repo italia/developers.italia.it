@@ -64,11 +64,11 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
 
     // filterKeys
     'filterKeys': {
-      'tags': 'list-tags',
+      'categories': 'list-tags',
       'developmentStatus': 'list-status'
     },
     'filterKeysMobileSelectors': {
-      'tags': 'pills-arguments',
+      'categories': 'pills-arguments',
       'developmentStatus': 'pills-development_status'
     }
   };
@@ -522,7 +522,7 @@ function esDevelopersItaliaQuery(config, params) {
 
     // filterKeys
     'filterKeys': {
-      'tags': 'list-tags',
+      'categories': 'list-tags',
       'developmentStatus': 'list-status'
     },
     'category': DISE.categories
