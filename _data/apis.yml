@@ -47,3 +47,11 @@
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/cercaareeprotette.e015.servizirl.it.png
   tags: []
   language: [it]
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/umbria/api.regione.umbria.it-elenco-professionisti.yaml
+  name: Elenco Professionisti Umbria
+  abstract: Elenco dei Professionisti della Regione Umbria.
+  contact:
+    name: Regione Lombardia
+    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.regione.umbria.it-elencoprofessionisti.png
+  tags: []
+  language: [it]
