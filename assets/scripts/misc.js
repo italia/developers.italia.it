@@ -86,7 +86,8 @@ $(function () {
       })
     };
 
-    initPhotoSwipeFromDOM('.tiled-gallery-inner');
+    ///Temporarily disabled on 2019-03-19 because it doesn't work properly.
+    ///initPhotoSwipeFromDOM('.tiled-gallery-inner');
 
     var printPage = function () {
       window.print()
