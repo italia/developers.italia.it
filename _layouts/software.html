@@ -4,18 +4,16 @@ layout: default
 
 {% include setlang.html %}
 
-{% assign description = page.description|first|last %}
 {% comment %}
-
 {% include breadcrumbs.html %}
 {% include share.html %}
-
 {% assign subnav = site.data[page.subnav] %}
 {% include linklist.html items=subnav dynamic=true %}
-
 {% endcomment %}
 
-{% assign root = '/' | append: active_lang | append: '/software' %}
+{% assign reuse_sw   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | slice: 0, 60 %}
+{% assign generic_sw = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA == nil" | slice: 0, 60 %}
+
 
 <div class="container page-softwares-list">
   <div class="intro">
@@ -28,58 +26,6 @@ layout: default
         {{ page.content }}
       </div>
     </div>
-  </div>
-  <div class="container list-item-sorting">
-    {% for software in site.data.crawler.softwares limit: 6 %}
-    {% if software.publiccode.it.riuso.codiceIPA == blank %}
-    {% if foorloop.lenght != 0 %}
-    <div class="software_macro_category_title row">
-      <div class="col-md-7">
-        <h2>{{ t.software.software_open }}</h2>
-      </div>
-      <!--
-      <div class="col-md-5 how">
-        <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
-      </div>
-      -->
-    </div>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-
-    <div class="row row-eq-height">
-      {% for software in site.data.crawler.softwares limit: 6 %}
-      {% if software.publiccode.it.riuso.codiceIPA == blank %}
-      {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-      {% if software.publiccode.description[active_lang].screenshots != nil %}
-      {% assign mainImage = software.publiccode.description[active_lang].screenshots | first %}
-      {% elsif software.publiccode.description.en.screenshots != nil %}
-      {% assign mainImage = software.publiccode.description.en.screenshots | first %}
-      {% endif %}
-      <div class="col-sm col-md-4 item mb-2 mb-md-5 p-2 p-md-3">
-        <a href="/{{active_lang}}/software/{{software.id}}" class="d-block decoration-none ">
-          <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;">
-          </div>
-          <p class="name color-inherit">
-            {% if software.publiccode.description[active_lang].localisedName != nil %}
-            {{ software.publiccode.description[active_lang].localisedName }}
-            {% else %}
-            {{ software.publiccode.name }}
-            {% endif %}
-          </p>
-          <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-        </a>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% for software in site.data.crawler.softwares limit: 6 %}
-    {% if software.publiccode.it.riuso.codiceIPA == blank %}
-    {% if foorloop.lenght != 0 %}
-    {% include internal-link.html target="software_open" %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
   </div>
 
 
@@ -95,32 +41,37 @@ layout: default
       -->
     </div>
     <div class="row row-eq-height">
-      {% for software in site.data.crawler.softwares limit: 6 %}
-      {% if software.publiccode.it.riuso.codiceIPA != blank %}
-      <div class="col-sm col-md-3 item mb-2 mb-md-5 p-2 p-md-3">
-        <a href="{{software.id}}" class="d-block decoration-none ">
-          {% assign mainImage = '/assets/images/placeholder-software-riuso.jpg' %}
-          {% if software.publiccode.description[active_lang].screenshots != nil %}
-          {% assign mainImage = software.publiccode.description[active_lang].screenshots | first %}
-          {% elsif software.publiccode.description.en.screenshots != nil %}
-          {% assign mainImage = software.publiccode.description.en.screenshots | first %}
-          {% endif %}
-          <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
-          <div class="main-image" style=" background: url({{mainImage}}) no-repeat top center;"></div>
-          <p class="name color-inherit">
-            {% if software.publiccode.description[active_lang] and
-            software.publiccode.description[active_lang].localisedName != "" %}
-            {{ software.publiccode.description[active_lang].localisedName }}
-            {% else %}
-            {{ software.publiccode.name }}
-            {% endif %}
-          </p>
-          <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-        </a>
-      </div>
-      {% endif %}
-      {% endfor %}
+
+      {% include software-listing.html
+      items=reuse_sw
+      show_type=false
+      %}
+
     </div>
 
   </div>
+</div>
+
+
+<div class="container list-item-sorting">
+  <div class="software_macro_category_title row">
+    <div class="col-md-9">
+      <h2>{{ t.software.software_open }}</h2>
+    </div>
+    <!--
+      <div class="col-md-3 how">
+        <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
+      </div>
+      -->
+  </div>
+  <div class="row row-eq-height">
+
+    {% include software-listing.html
+    items=generic_sw
+    show_type=false
+    %}
+
+  </div>
+
+</div>
 </div>

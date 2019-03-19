@@ -1,0 +1,29 @@
+{% include setlang.html %}
+
+{% for software in include.items %}
+
+{% assign description = software.publiccode.description[active_lang]
+        | default: software.publiccode.description.en
+        | default: software.publiccode.description.it %}
+
+{% assign sw_name = description.localisedName | default: software.publiccode.name %}
+
+<div class="col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
+    <a href="{{software.id}}" class="d-block decoration-none ">
+        {% if include.show_type %}
+        {% if software.publiccode.it.riuso.codiceIPA != nil %}
+        <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
+        {% else %}
+        <p class="icon-type-generic-sw">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
+        {% endif %}
+        {% endif %}
+        <div class="main-image"
+            style=" background: url({{ description.screenshots | first | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
+        </div>
+        <p class="name color-inherit">
+            {{ sw_name }}
+        </p>
+        <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+    </a>
+</div>
+{% endfor %}

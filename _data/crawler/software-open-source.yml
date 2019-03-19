@@ -1,1 +1,9 @@
-null
+- crawltime: "2019-03-18T15:50:46Z"
+  id: 0ca54275dbb2d194a8c2ead4b44bdda4aead66ec
+  publiccode:
+    it:
+      riuso:
+        codiceIPA: ""
+    logo: ""
+    name: Agave CMS
+    url: https://github.com/italia/agavecms

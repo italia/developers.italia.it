@@ -1,4 +1,164 @@
-- crawltime: "2019-02-11T23:24:51+01:00"
+- crawltime: "2019-03-18T15:50:46Z"
+  fileRawURL: https://raw.githubusercontent.com/italia/agavecms/master/publiccode.yml
+  id: 0ca54275dbb2d194a8c2ead4b44bdda4aead66ec
+  it-riuso-codiceIPA-label: ""
+  oEmbedHTML: {}
+  oldFeatures:
+    en: null
+    it: null
+  oldVariant: null
+  popularCategories:
+  - content-management
+  - website-builder
+  publiccode:
+    categories:
+    - content-management
+    - website-builder
+    description:
+      it:
+        documentation: https://github.com/italia/agavecms/blob/master/docs/AgaveGeneralDocumentation.md
+        features:
+        - editor HTML
+        - gestione SEO
+        - gestione modelli dei dati
+        - gestione menu di navigazione
+        - gestione utenti e ruoli
+        - backup dei dati
+        genericName: Content Management System
+        longDescription: |-
+          Agave è un software open-source composto da una serie di strumenti interconnessi che cooperano tra loro per la generazione di un sito statico.
+          Lo scopo è fornire una soluzione avanzata che permetta di realizzare e mantenere un sito statico, mettendo a disposizione gli automatismi per publicare contenuti ed estendere le sezioni del sito tramite un'interfaccia usabile e immediata.
+          Agave è composto dai seguenti blocchi logici:
+          * Un'**area amministrativa** (CMS) * Un **sito web statico** (Jekyll) contenente un **template** Jekyll  * Un **ambiente di produzione** per la generazione e la pubblicazione del sito e della parte di amministrazione (ambiente Docker).
+        shortDescription: Agave è un software open source composto da una serie di
+          strumenti interconnessi che cooperano tra loro per la generazione di un
+          sito statico
+    developmentStatus: stable
+    intendedAudience: {}
+    it:
+      conforme:
+        gdpr: true
+        lineeGuidaDesign: false
+        misureMinimeSicurezza: true
+        modelloInteroperabilita: false
+      countryExtensionVersion: "0.2"
+      piattaforme:
+        anpr: false
+        cie: false
+        pagopa: false
+        spid: false
+      riuso: {}
+    legal:
+      license: AGPL-3.0
+      repoOwner: Developers Italia
+    localisation:
+      availableLanguages:
+      - it
+      - en
+      localisationReady: true
+    maintenance:
+      contacts:
+      - affiliation: ""
+        email: info@cantierecreativo.net
+        name: Cantiere Creativo
+        phone: ""
+      type: community
+    name: Agave CMS
+    platforms:
+    - web
+    - windows
+    - mac
+    - linux
+    publiccodeYmlVersion: "0.2"
+    releaseDate: "2018-12-17"
+    softwareType: standalone/web
+    softwareVersion: 1.0.0
+    url: https://github.com/italia/agavecms
+  relatedSoftwares:
+  - id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
+    publiccode:
+      categories:
+      - mobile-payment
+      description:
+        it:
+          features:
+          - login con SPID
+          - registrazione nuovi utenti
+          - visualizzazione credito disponibile
+          - creazione buoni
+          - annullamento buoni
+          - visualizzazione buoni creati e spesi
+          - elenco esercenti e mappa
+          genericName: mobile app
+          localisedName: ""
+      isBasedOn: null
+      legal:
+        repoOwner: MIBAC
+      name: 18app (app nativa)
+      url: https://github.com/italia/18app
+  vitalityDataChart:
+  - 58
+  - 58
+  - 58
+  - 58
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  - 54
+  vitalityScore: 54
+- crawltime: "2019-03-18T15:44:37Z"
   fileRawURL: https://raw.githubusercontent.com/italia/18app/master/publiccode.yml
   id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
   it-riuso-codiceIPA-label: Ministero per i beni e le attivita' culturali
@@ -7,19 +167,13 @@
     en: null
     it: null
   oldVariant: null
-  popularTags:
-  - amusement
+  popularCategories:
+  - mobile-payment
   publiccode:
-    applicationSuite: ""
-    dependsOn:
-      hardware: []
-      open: []
-      proprietary: []
+    categories:
+    - mobile-payment
     description:
       it:
-        apiDocumentation: ""
-        awards: []
-        documentation: ""
         features:
         - login con SPID
         - registrazione nuovi utenti
@@ -28,10 +182,7 @@
         - annullamento buoni
         - visualizzazione buoni creati e spesi
         - elenco esercenti e mappa
-        freeTags:
-        - mobile app
         genericName: mobile app
-        localisedName: ""
         longDescription: |-
           App nativa per consentire la fruizione del Bonus Cultura 18app anche da dispositivi mobili. Questa app è stata progettata e realizzata tra il 2018 e il 2019 come aggiunta al frontend web già disponibile sin dalla prima edizione. Dopo il login con SPID e l'accettazione delle condizioni di servizio e la visualizzazione dell'informativa privacy (solo al primo accesso), la app consente all'utente di verificare la disponibilità del proprio credito derivante dal beneficio. Può inoltre creare dei buoni da spendere e visualizzare quelli creati e quelli già spesi. I buoni sono visualizzati anche in forma di codice a barre e QR code, per una più immediata lettura da parte dell'esercente direttamente dal dispositivo mobile. La lista degli esercenti è consultabile anche in modalità mappa, con la ricerca per prossimità rispetto alla posizione dell'utente.
           La app è sviluppata in tecnologia Xamarin e supporta iOS ed Android. La app dialoga con il backend di Sogei e pertanto funge da front end per le API già utilizzate per l'applicazione web.
@@ -40,69 +191,107 @@
         - https://raw.githubusercontent.com/italia/18app/master/screenshots/cover.png
         - https://raw.githubusercontent.com/italia/18app/master/screenshots/home.png
         shortDescription: App nativa ufficiale per il Bonus Cultura 18app
-        videos: []
-    developmentStatus: stable
-    inputTypes: []
+    developmentStatus: beta
     intendedAudience:
       countries:
       - it
-      onlyFor: []
-      unsupportedCountries: []
-    isBasedOn: []
+      scope:
+      - culture
     it:
-      anpr: false
-      cie: false
       conforme:
-        accessibile: false
-        interoperabile: false
-        privacy: false
-        sicuro: false
-      designKit:
-        content: false
-        seo: false
-        ui: true
-        web: false
-      ecosistemi:
-      - beni-culturali-turismo
-      pagopa: false
+        gdpr: false
+        lineeGuidaDesign: false
+        misureMinimeSicurezza: false
+        modelloInteroperabilita: false
+      countryExtensionVersion: "0.2"
+      piattaforme:
+        anpr: false
+        cie: false
+        pagopa: false
+        spid: true
       riuso:
         codiceIPA: m_bac
-      spid: true
-    landingURL: ""
     legal:
-      authorsFile: ""
       license: GPL-3.0
       mainCopyrightOwner: MIBAC
       repoOwner: MIBAC
     localisation:
       availableLanguages:
-      - ita
+      - it
       localisationReady: false
     logo: https://raw.githubusercontent.com/italia/18app/master/src/Italia.DiciottoApp.iOS/Assets.xcassets/AppIcon.appiconset/Icon120.png
     maintenance:
-      contacts: []
       contractors:
       - name: Sogei
         until: "2020-03-21"
         website: http://www.sogei.it/
       type: contract
-    monochromeLogo: ""
     name: 18app (app nativa)
-    outputTypes: []
     platforms:
     - ios
     - android
-    publiccodeYmlVersion: "0.1"
+    publiccodeYmlVersion: "0.2"
     releaseDate: "2019-02-05"
-    roadmap: ""
-    softwareType: standalone
-    softwareVersion: ""
-    tags:
-    - amusement
+    softwareType: standalone/mobile
     url: https://github.com/italia/18app
-    usedBy: []
-  relatedSoftwares: null
+  relatedSoftwares:
+  - id: 0ca54275dbb2d194a8c2ead4b44bdda4aead66ec
+    publiccode:
+      categories:
+      - content-management
+      - website-builder
+      description:
+        it:
+          features:
+          - editor HTML
+          - gestione SEO
+          - gestione modelli dei dati
+          - gestione menu di navigazione
+          - gestione utenti e ruoli
+          - backup dei dati
+          genericName: Content Management System
+          localisedName: ""
+      isBasedOn: null
+      legal:
+        repoOwner: Developers Italia
+      name: Agave CMS
+      url: https://github.com/italia/agavecms
   vitalityDataChart:
+  - 76
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
+  - 64
   - 64
   - 64
   - 64
@@ -128,39 +317,4 @@
   - 82
   - 64
   - 64
-  - 64
-  - 64
-  - 76
-  - 64
-  - 76
-  - 70
-  - 64
-  - 64
-  - 64
-  - 64
-  - 82
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 64
-  - 94
-  - 64
-  - 64
-  - 64
-  - 82
-  - 64
-  vitalityScore: 66
+  vitalityScore: 65

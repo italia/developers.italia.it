@@ -47,7 +47,7 @@ layout: default
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
               {% for tag in page.popularCategories limit: 3 %}
-              {% include set-tag.html label=tag tag=tag %}
+              {% include set-tag.html tag=tag %}
               {% endfor %}
             </ul>
           </div>
@@ -308,7 +308,7 @@ layout: default
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
       <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
-        {% for relsw in page.relatedSoftwares limit: 4 %}
+        {% for relsw in page.relatedSoftwares %}
         {% assign relsw_description = relsw.publiccode.description[active_lang]
         | default: relsw.publiccode.description.en
         | default: relsw.publiccode.description.it %}
@@ -333,7 +333,7 @@ layout: default
   <div class="tags-relate text-center">
     <strong>TAG</strong>
     {% for tag in page.publiccode.categories limit: 3 %}
-    {% include set-tag.html label=tag %}
+    {% include set-tag.html tag=tag %}
     {% endfor %}
   </div>
   {% endif %}
@@ -364,6 +364,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.last_release }}</span>
                   {{ page.publiccode.releaseDate }}
+                  ({{ page.publiccode.softwareVersion }})
                 </p>
               </div>
               <div class="col-7 col-sm-7 col-md-3">
@@ -431,6 +432,7 @@ layout: default
                   {{ page.publiccode.legal.license }}
                 </p>
               </div>
+              {% if page.publiccode.platforms.size > 0 %}
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
@@ -441,6 +443,7 @@ layout: default
                 </p>
                 {% endfor %}
               </div>
+              {% endif %}
               <div class="col-md">
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
@@ -464,22 +467,22 @@ layout: default
               <div class="col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% if page.publiccode.it.pagopa == true %}
+                  {% if page.publiccode.it.piattaforme.pagopa == true %}
                   <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
                     PagoPA
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.spid == true %}
+                  {% if page.publiccode.it.piattaforme.spid == true %}
                   <a href="/{{ active_lang }}/spid" class="enabling_platforms">
                     SPID
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.cie == true %}
+                  {% if page.publiccode.it.piattaforme.cie == true %}
                   <a href="/{{ active_lang }}/cie" class="enabling_platforms">
                     CIE
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.anpr == true %}
+                  {% if page.publiccode.it.piattaforme.anpr == true %}
                   <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
                     ANPR
                   </a>
