@@ -63,11 +63,11 @@ And, if possible, an *easy, medium or hard* rating of each project.
     </thead>
 
     <tbody>
-        <tr role="row" class="odd">
+        <tr role="row" class="odd" id="daf1">
             <td tabindex="0">DAF</td>
             <td>
                 <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
-                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/feature/daf-dataset-toolbar-search">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
+                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/daf-develop">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
                 <br />
                 <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
                 <br />
@@ -82,7 +82,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="even" id="daf2">
             <td tabindex="0">DAF</td>
             <td>
                 <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
@@ -104,7 +104,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Hard</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="odd" id="daf3">
             <td tabindex="0">DAF</td>
             <td>
                 <b>Create a tool to create plots</b><br /> The project
@@ -125,7 +125,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Easy</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="even" id="des1">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
@@ -146,7 +146,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="odd" id="des2">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
@@ -167,7 +167,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="even" id="des3">
             <td tabindex="0">Design</td>
             <td>
                 <b>Complete the React Web Toolkit </b><br /> This project
@@ -193,33 +193,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-        <tr role="row" class="odd">
-            <td tabindex="0">Design</td>
-            <td>
-                <b>Complete the Angular Web Toolkit </b><br /> This project
-                involves the completion of the Angular Web Toolkit already
-                created by members of the Italian Digital Transformation Team
-                and the community.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for Angular.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- Angular</li>
-                </ul>
-                <br /> <b>Repository reference:</b>
-                <a href="https://github.com/italia/design-angular-kit">GitHub
-                Repo</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
-        </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="odd" id="des4">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the Vue.js Web Toolkit </b><br /> This project
@@ -245,7 +219,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even" id="des5">
             <td tabindex="0">Design</td>
             <td>
                 <b>Create the NativeBase Web Toolkit </b><br /> This project
@@ -272,7 +246,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
         </tr>
-       <tr role="row" class="even">
+       <tr role="row" class="odd" id="api1">
             <td tabindex="0">API</td>
             <td>
                 <b>Port the <i>gen-api-models</i> tool to OpenAPI v3</b><br /> 
@@ -296,11 +270,14 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- REST API Design / OpenAPI v3</li>
                     <li>- Web Development</li>
                 </ul>
+                <br /> <b>Repository reference:</b>
+                <a href="https://github.com/teamdigitale/io-utils#gen-api-models">GitHub
+                Repo</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even" id="api2">
             <td tabindex="0">API</td>
             <td>
                 <b>Interoperability Model</b><br /> 
@@ -323,11 +300,15 @@ And, if possible, an *easy, medium or hard* rating of each project.
                     <li>- Backend Development (e.g., Java, Python, Go)</li>
                     <li>- REST API Design / OpenAPI v3</li>
                 </ul>
+                <br /> <b>Reference article:</b>
+                <a
+                href="https://forum.italia.it/t/standardized-headers-for-a-reliable-api-ecosystem/7195">Forum
+                Article</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
         </tr>
-        <tr role="row" class="even">
+        <tr role="row" class="odd" id="wai1">
             <td tabindex="0">Web Analytics Italia</td>
             <td>
                 <b>Create a new plugin for Matomo</b><br />This project
@@ -353,7 +334,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/CD9805QUU">#design-analytics</a></td>
         </tr>
-        <tr role="row" class="odd">
+        <tr role="row" class="even" id="general">
             <td tabindex="0">General</td>
             <td>
                 <b>Your own idea!!</b><br /> Something that you're totally
@@ -379,6 +360,5 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Up to you</td>
             <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
- 
     </tbody>
 </table>

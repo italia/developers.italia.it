@@ -42,6 +42,21 @@ alranel:
     facebook:
       name: facebook
       link: https://www.facebook.com/alessandro.ranellucci
+francesco:
+  name: Francesco Zaia
+  desc: UX/UI Developer, Team Digitale
+  pic: /assets/images/francesco.jpg
+  status: maintainer
+  contacts:
+    github:
+      name: github
+      link: https://github.com/francescozaia
+    twitter:
+      name: twitter
+      link: https://twitter.com/francescozaia
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/francescozaia
 lorenzo:
   name: Lorenzo Fabbri
   role: Content Designer
@@ -176,7 +191,6 @@ mirko:
     github:
       name: github
       link: https://github.com/mccalv
-
 antony:
   name: Matteo Antony Mistretta
   role: Software Engineer
@@ -193,7 +207,6 @@ antony:
     twitter:
       name: twitter
       link: https://twitter.com/antonymistretta
-
 federico:
   name: Federico Feroldi
   role: Software Architect
