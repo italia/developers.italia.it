@@ -1,16 +1,18 @@
 {% assign extraclass = include.extraclass | default:'pt-2 pb-2 pt-md-5 pb-md-5' %}
 <section class="banner-joinus {{extraclass}}">
-    <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
-      <div class="d-md-flex align-items-center">
-        <div class="position-relative">
-          <img src="{{'/assets/images/join-window.svg' | relative_url}}" class="banner-joinus-window">
-          <h2>{{t.banner_joinus_h2}}</h2>
-          <h1>{{t.banner_joinus_h1}}</h1>
-        </div>
-        <div class="ml-auto">
-          <a href="https://slack.developers.italia.it/" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">{{t.banner_joinus_action}} <span class="icon it-slack"></span></a>
-        </div>
+  <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
+    <div class="d-md-flex align-items-center">
+      <div class="position-relative">
+        <img src="{{'/assets/images/join-window.svg' | relative_url}}" class="banner-joinus-window">
+        <h2>{{t.banner_joinus_h2}}</h2>
+        <h1>{{t.banner_joinus_h1}}</h1>
       </div>
-
+      <div class="ml-auto">
+        <a href="https://slack.developers.italia.it/"
+          class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">{{t.banner_joinus_action}} <span
+            class="icon it-comment"></span></a>
+      </div>
     </div>
+
+  </div>
 </section>
