@@ -529,11 +529,6 @@ function esDevelopersItaliaQuery(config, params) {
   };
   this.config = $.extend(defaultConfig, config);
 
-  this.languages = {
-    'it': 'ita',
-    'en': 'eng'
-  };
-
   this.readMore = {
     'it': 'Leggi di più',
     'en': 'read more'
@@ -679,7 +674,7 @@ esDevelopersItaliaQuery.prototype.getQuery = function () {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var query = {
     'query': {
@@ -716,17 +711,17 @@ esDevelopersItaliaQuery.prototype.getQuery = function () {
           'query': typeof value === 'undefined' ? '' : value,
           'fields': [
             'publiccode.name?6',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^6',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^5',
-            'publiccode.description.' + language_alpha_3 + '.longDescription^4',
+            'publiccode.description.' + language_alpha_2 + '.localizedName^6',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^5',
+            'publiccode.description.' + language_alpha_2 + '.longDescription^4',
             'title^6',
             'subtitle^5',
             'html^4',
             'it-riuso-codiceIPA-label^6',
             'name^3',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-            'publiccode.description.' + language_alpha_3 + '.longDescription',
+            'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+            'publiccode.description.' + language_alpha_2 + '.longDescription',
             'title^3',
             'subtitle^2',
             'html'
@@ -864,13 +859,10 @@ esDevelopersItaliaQuery.prototype.renderPager = function (tot) {
 esDevelopersItaliaQuery.prototype.languageFallback = function (element) {
   var lang = this.config['language'];
 
-  // convert language to 3 letters code
-  lang = this.languages[lang]
-
   if (element.hasOwnProperty(lang)) {
     return element[lang]
   } else {
-    return element['eng']
+    return element['en']
   }
 }
 
@@ -1027,7 +1019,7 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function () {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var query = {
     'query': {
@@ -1049,13 +1041,13 @@ esDevelopersItaliaOpenSourceQuery.prototype.getQuery = function () {
           'query': value,
           'fields': [
             'publiccode.name?6',
-            'publiccode..' + language_alpha_3 + '.localizedName^6',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^5',
-            'publiccode.description.' + language_alpha_3 + '.longDescription^4',
+            'publiccode..' + language_alpha_2 + '.localizedName^6',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^5',
+            'publiccode.description.' + language_alpha_2 + '.longDescription^4',
             'publiccode.name^3',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-            'publiccode.description.' + language_alpha_3 + '.longDescription'
+            'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+            'publiccode.description.' + language_alpha_2 + '.longDescription'
           ]
         }
       }
@@ -1081,7 +1073,7 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function () {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var query = {
     'query': {
@@ -1103,14 +1095,14 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function () {
           'query': value,
           'fields': [
             'publiccode.name?6',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^6',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^5',
-            'publiccode.description.' + language_alpha_3 + '.longDescription^4',
+            'publiccode.description.' + language_alpha_2 + '.localizedName^6',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^5',
+            'publiccode.description.' + language_alpha_2 + '.longDescription^4',
             'it-riuso-codiceIPA-label^6',
             'publiccode.name^3',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-            'publiccode.description.' + language_alpha_3 + '.longDescription'
+            'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+            'publiccode.description.' + language_alpha_2 + '.longDescription'
           ]
         }
       }
@@ -1186,7 +1178,7 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function () {
   var value = this.params['keyword'].slice(0).pop();
   var filter = this.getFilterInQuery();
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var query = {
     'query': {
@@ -1204,13 +1196,13 @@ esDevelopersItaliaPaQuery.prototype.getQuery = function () {
           'query': value,
           'fields': [
             'publiccode.name?6',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^6',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^5',
-            'publiccode.description.' + language_alpha_3 + '.longDescription^4',
+            'publiccode.description.' + language_alpha_2 + '.localizedName^6',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^5',
+            'publiccode.description.' + language_alpha_2 + '.longDescription^4',
             'publiccode.name^3',
-            'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-            'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-            'publiccode.description.' + language_alpha_3 + '.longDescription'
+            'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+            'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+            'publiccode.description.' + language_alpha_2 + '.longDescription'
           ]
         }
       }
@@ -1253,7 +1245,7 @@ function esDevelopersItaliaAutocompleteAllQuery(config, getParams) {
 esDevelopersItaliaAutocompleteAllQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function () {
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var value = $(this.config['inputSelector']).val();
   return {
@@ -1268,9 +1260,9 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getQuery = function () {
                 'it-riuso-codiceIPA-label^3',
                 'title^3',
                 'subtitle^2',
-                'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-                'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-                'publiccode.description.' + language_alpha_3 + '.longDescription',
+                'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+                'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+                'publiccode.description.' + language_alpha_2 + '.longDescription',
                 'html'
               ]
             }
@@ -1333,11 +1325,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
   var category_id = this.getSoftwareType(software);
 
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var name = software.publiccode.name;
-  if (typeof software.publiccode.description[language_alpha_3] !== 'undefined' && software.publiccode.description[language_alpha_3].localisedName) {
-    name = software.publiccode.description[language_alpha_3].localisedName;
+  if (typeof software.publiccode.description[language_alpha_2] !== 'undefined' && software.publiccode.description[language_alpha_2].localisedName) {
+    name = software.publiccode.description[language_alpha_2].localisedName;
   }
 
   value = value.trim().split(' ');
@@ -1482,7 +1474,7 @@ function esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery(config, getParams
 esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = function () {
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var value = $(this.config['inputSelector']).val();
   return {
@@ -1494,9 +1486,9 @@ esDevelopersItaliaAutocompleteSoftwareOpenSourceQuery.prototype.getQuery = funct
               'query': value,
               'fields': [
                 'publiccode.name^3',
-                'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-                'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-                'publiccode.description.' + language_alpha_3 + '.longDescription'
+                'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+                'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+                'publiccode.description.' + language_alpha_2 + '.longDescription'
               ]
             }
           },
@@ -1519,7 +1511,7 @@ function esDevelopersItaliaAutocompleteSoftwareRiusoQuery(config, getParams) {
 esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype = Object.create(esDevelopersItaliaAutocompleteAllQuery.prototype);
 esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function () {
   var language = this.config['language'];
-  var language_alpha_3 = this.languages[language];
+  var language_alpha_2 = language;
 
   var value = $(this.config['inputSelector']).val();
   return {
@@ -1531,9 +1523,9 @@ esDevelopersItaliaAutocompleteSoftwareRiusoQuery.prototype.getQuery = function (
               'query': value,
               'fields': [
                 'publiccode.name^3',
-                'publiccode.description.' + language_alpha_3 + '.localizedName^3',
-                'publiccode.description.' + language_alpha_3 + '.shortDescription^2',
-                'publiccode.description.' + language_alpha_3 + '.longDescription'
+                'publiccode.description.' + language_alpha_2 + '.localizedName^3',
+                'publiccode.description.' + language_alpha_2 + '.shortDescription^2',
+                'publiccode.description.' + language_alpha_2 + '.longDescription'
               ]
             }
           },
