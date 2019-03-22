@@ -127,7 +127,7 @@ it:
       reuse_software: Software a riuso
       filters: Filtri
       sort_by: Ordina per
-      arguments: argomenti
+      topics: argomenti
       results: risultati
       variant_by: Variante di
       published_by: Pubblicato da
@@ -312,7 +312,7 @@ en:
       reuse_software: Re-use software
       sort_by: Sort by
       filters: Filters
-      arguments: arguments
+      topics: Topics
       results: results
       variant_by: Variant of
       published_by: Published by
