@@ -41,7 +41,7 @@ layout: default
         </div>
       </div>
       <div class="arguments">
-        <p class="head">{{ t.software.topics }}</p>
+        <p class="head">{{ t.software.categories }}</p>
         <div id="list-tags">
           {% for tag in site.data.software_categories limit: 10 %}
           <div class="form-check">
@@ -115,7 +115,7 @@ layout: default
               </li>
               <li class="nav-item">
                 <a class="nav-link active" id="pills-arguments-tab" data-toggle="pill" href="#pills-arguments"
-                  role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.topics }}</a>
+                  role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.categories }}</a>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 var paramKeys = [
-  'categories',
-  'developmentStatus',
+  'publiccode.categories',
+  'publiccode.developmentStatus',
   'keyword',
   'page',
   'mainCopyrightOwner',
@@ -8,7 +8,7 @@ var paramKeys = [
   'categoryName',
   'type',
   'sort',
-  'it-riuso-codiceIPA',
+  'publiccode.it.riuso.codiceIPA',
   'it-riuso-codiceIPA-label'
 ];
 

@@ -59,24 +59,28 @@ layout: default
         </div>
       </div>
       <div class="arguments">
-        <p class="head">{{ t.software.topics }}</p>
+        <p class="head">{{ t.software.categories }}</p>
         <div id="list-tags">
-          {% for tag in site.data.software_categories limit: 10 %}
+          {% for tag in site.data.crawler.software_categories limit: 10 %}
+          {% assign tag_labels = site.data.software_categories[tag] %}
+          {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="{{ tag[0] }}">
-              <span>{{ tag[1][active_lang] }}</span>
+              <input class="form-check-input" type="checkbox" value="{{ tag }}">
+              <span>{{ tag_label }}</span>
             </label>
           </div>
           {% endfor %}
 
-          {% if site.data.software_categories.size > 10 %}
+          {% if site.data.crawler.software_categories.size > 10 %}
           <div class="collapse" id="otherArguments">
-            {% for tag in site.data.software_categories offset:10 %}
+            {% for tag in site.data.crawler.software_categories offset:10 %}
+            {% assign tag_labels = site.data.software_categories[tag] %}
+            {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
             <div class="form-check">
               <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" value="{{ tag[0] }}">
-                <span>{{ tag[1][active_lang] }}</span>
+                <input class="form-check-input" type="checkbox" value="{{ tag }}">
+                <span>{{ tag_label }}</span>
               </label>
             </div>
             {% endfor %}
@@ -147,12 +151,12 @@ layout: default
             <ul class="nav nav-pills  w-100" id="pills-tab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="pills-arguments-tab" data-toggle="pill" href="#pills-arguments"
-                  role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.topics }}</a>
+                  role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.categories }}</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="pills-types-tab" data-toggle="pill" href="#pills-types" role="tab"
                   aria-controls="pills-types" aria-selected="true">{% if active_lang == 'it' %} Tipologia {% else %}
-                  Typology {% endif %}</a>
+                  Type {% endif %}</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="pills-development_status-tab" data-toggle="pill"
@@ -166,12 +170,13 @@ layout: default
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-arguments" role="tabpanel"
               aria-labelledby="pills-arguments-tab">
-              {% for tag in site.data.software_categories %}
+              {% for tag in site.data.crawler.software_categories %}
+              {% assign tag_labels = site.data.software_categories[tag] %}
+              {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="{{ tag |first }}">
-                  <span>{% if tag[1][active_lang] != nil %}{{ tag[1][active_lang] }} {% else %} {{ tag | first }}
-                    {% endif %}</span>
+                  <input class="form-check-input" type="checkbox" value="{{ tag }}">
+                  <span>{{ tag_label }}</span>
                 </label>
               </div>
               {% endfor %}

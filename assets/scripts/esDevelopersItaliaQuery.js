@@ -62,14 +62,14 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     // css selector
     'pageContent': '.list-item-sorting > div',
 
-    // filterKeys
+    // IDs of DOM elements containing input checkboxes to use
     'filterKeys': {
-      'categories': 'list-tags',
-      'developmentStatus': 'list-status'
+      'publiccode.categories': 'list-tags',
+      'publiccode.developmentStatus': 'list-status'
     },
     'filterKeysMobileSelectors': {
-      'categories': 'pills-arguments',
-      'developmentStatus': 'pills-development_status'
+      'publiccode.categories': 'pills-arguments',
+      'publiccode.developmentStatus': 'pills-development_status'
     }
   };
   this.config = $.extend(defaultConfig, config);
@@ -198,13 +198,13 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function () {
     }
   }
 
-  // adds it-riuso-codiceIPA filter if present.
-  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  // adds publiccode.it.riuso.codiceIPA filter if present.
+  var codiceIPA = this.params['publiccode.it.riuso.codiceIPA'].slice(0).pop();
   if (typeof codiceIPA !== 'undefined') {
-    queryString.push('it-riuso-codiceIPA=' + codiceIPA);
+    queryString.push('publiccode.it.riuso.codiceIPA=' + codiceIPA);
   }
 
-  // adds it-riuso-codiceIPA filter if present.
+  // adds publiccode.it.riuso.codiceIPA filter if present.
   var codiceIPALabel = this.params['it-riuso-codiceIPA-label'].slice(0).pop();
   if (typeof codiceIPALabel !== 'undefined') {
     queryString.push('it-riuso-codiceIPA-label=' + codiceIPALabel);
@@ -522,8 +522,8 @@ function esDevelopersItaliaQuery(config, params) {
 
     // filterKeys
     'filterKeys': {
-      'categories': 'list-tags',
-      'developmentStatus': 'list-status'
+      'publiccode.categories': 'list-tags',
+      'publiccode.developmentStatus': 'list-status'
     },
     'category': DISE.categories
   };
@@ -557,8 +557,8 @@ esDevelopersItaliaQuery.prototype.getFilterInQuery = function () {
     }
   }
 
-  // it-riuso-codiceIPA
-  var codiceIPA = this.params['it-riuso-codiceIPA'].slice(0).pop();
+  // publiccode.it.riuso.codiceIPA
+  var codiceIPA = this.params['publiccode.it.riuso.codiceIPA'].slice(0).pop();
   if (typeof codiceIPA !== 'undefined') {
     filter.push({
       'term': {
@@ -689,8 +689,7 @@ esDevelopersItaliaQuery.prototype.getQuery = function () {
                       { 'term': { '_type': 'post' } },
                       { 'terms': { 'type': ['platform'] } },
                       { 'term': { 'lang': language } }
-                    ],
-                    'must_not': { 'match': { 'intended-audience-unsupported-countries': 'it' } }
+                    ]
                   }
                 },
                 { 'term': { '_type': 'software' } },
@@ -935,7 +934,7 @@ esDevelopersItaliaQuery.prototype.renderAdministration = function (administratio
     'readMore': this.readMore[language],
     'category': 'administration',
     'categoryClass': ['icon', 'icon-type-administration'].join(' '),
-    'path': '/' + language + '/amministrazioni?it-riuso-codiceIPA=' + administration["it-riuso-codiceIPA"] + '&it-riuso-codiceIPA-label=' + administration["it-riuso-codiceIPA-label"]
+    'path': '/' + language + '/amministrazioni?publiccode.it.riuso.codiceIPA=' + administration["publiccode.it.riuso.codiceIPA"] + '&it-riuso-codiceIPA-label=' + administration["it-riuso-codiceIPA-label"]
   };
 
   return this.templates.search(data);
@@ -1081,8 +1080,7 @@ esDevelopersItaliaReuseQuery.prototype.getQuery = function () {
         'must': [
           { 'exists': { 'field': 'publiccode.it.riuso.codiceIPA' } },
           { 'term': { '_type': 'software' } }
-        ],
-        'must_not': { 'match': { 'publiccode.intendedAudience.unsupportedCountries': 'it' } },
+        ]
       }
     }
   };
@@ -1383,7 +1381,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
     path += '/administrations';
   }
 
-  path += '?' + ['it-riuso-codiceIPA=' + administration['it-riuso-codiceIPA'], 'it-riuso-codiceIPA-label=' + administration['it-riuso-codiceIPA-label']].join('&');
+  path += '?' + ['publiccode.it.riuso.codiceIPA=' + administration['publiccode.it.riuso.codiceIPA'], 'it-riuso-codiceIPA-label=' + administration['it-riuso-codiceIPA-label']].join('&');
 
   return {
     'name': name,
