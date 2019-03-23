@@ -350,8 +350,10 @@ layout: default
             <div class="title">
               <h2 class="h1">
                 {{ sw_name }}
+                {% if page.publiccode.softwareVersion %}
                 <span
                   class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
+                {% endif %}
               </h2>
               <h2>
                 {{ description.genericName }}
@@ -364,7 +366,9 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.last_release }}</span>
                   {{ page.publiccode.releaseDate }}
+                  {% if page.publiccode.softwareVersion %}
                   ({{ page.publiccode.softwareVersion }})
+                  {% endif %}
                 </p>
               </div>
               <div class="col-7 col-sm-7 col-md-3">
