@@ -303,7 +303,7 @@ layout: default
 <hr class="divider {% if page.oldVariant.size == nil %}mt-0{% endif %}">
 
 <div class="container">
-  {% if page.relatedSoftwares %}
+  {% if page.relatedSoftwares.size >= 4 %}
   <div class="interestRelatedSoftwares">
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
