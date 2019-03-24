@@ -24,7 +24,15 @@ E se vuoi segnalare un bug su questo sito, puoi aprire una issue su [GitHub](htt
           url: 'https://forum.italia.it/'
 ---
 
-Developers Italia è un progetto dell'[Agenzia per l'Italia Digitale](https://www.agid.gov.it/) realizzato in collaborazione con il [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/).
+Developers Italia è un progetto in collaborazione tra [AGID](https://www.agid.gov.it/) e il [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/) che lo gestisce.
+
+Il sito nasce per semplificare e migliorare il rapporto tra gli sviluppatori e la Pubblica Amministrazione, stimolando lo sviluppo di servizi digitali moderni e integrati fra di loro.
+Fino ad oggi, con rare eccezioni, la Pubblica Amministrazione centrale si limitava a scrivere leggi e regole, in un linguaggio burocratico e non tecnico, senza strumenti e iniziative per supportare adeguatamente le persone che devono sviluppare e realizzare i progetti tecnologici. Developers Italia colma questa distanza, proponendo un approccio più tecnico e meno burocratico.
+L'open source è un elemento chiave di Developers Italia, per incentivare la collaborazione, il riuso, l'evoluzione continua.
+
+Maggiori informazioni sugli obiettivi del progetto si possono leggere nel [post Medium di lancio](https://medium.com/team-per-la-trasformazione-digitale/developers-italia-comunita-sviluppatori-servizi-pubblici-digitali-pubblica-amministrazione-57b0cfab4c00).
+
+### Contatti
 
 Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizzo [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
 
