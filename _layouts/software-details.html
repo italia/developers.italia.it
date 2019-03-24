@@ -38,7 +38,7 @@ layout: default
             {% if page.publiccode.isBasedOn.size > 0 %}
             <br>
             <span class="abstract-software__variant">{{ t.software.variant_by }}
-              {{ page.publiccode.legal.repoOwner }}</span>
+              {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}</span>
             {% endif %}
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
@@ -54,7 +54,7 @@ layout: default
           <div class="row legal-main-info">
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
-                {{ page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
               </p>
             </div>
             {% if page.publiccode.maintenance.type == "contract" %}
