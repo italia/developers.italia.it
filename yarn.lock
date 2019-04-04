@@ -2,71 +2,84 @@
 # yarn lockfile v1
 
 
-bootstrap-italia@*:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-0.9.1.tgz#33a6111c2f05f8b88d11cb17c9c39d07ebf1c13e"
+bootstrap-italia@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-italia/-/bootstrap-italia-1.2.4.tgz#af8a1a7e491e541eaef6b23c0063c51525dfa1f9"
+  integrity sha512-7eNPlS+EiES2aLfnSygv3WTNV89ExnahoLQ6EyKSSh0mn5ELmsGNT4Lk3wLLMS+6/59GOgOweB9BnrPRXfl++g==
   dependencies:
-    bootstrap "^4.1.1"
-    jquery "^3.3.1"
-    pickadate "^3.5.6"
-    popper.js "^1.14.3"
+    bootstrap "4.3.1"
+    bootstrap-select "1.13.5"
+    jquery "3.3.1"
+    owl.carousel "2.3.4"
+    popper.js "1.14.7"
+    svgxuse "1.2.6"
 
-bootstrap@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
+bootstrap-select@1.13.5:
+  version "1.13.5"
+  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.13.5.tgz#12f000b25a95ed642fe371ae9e311d3afbb8c53f"
+  integrity sha512-1uYsYLB4FvGdwM6qzIfTxp6sP5gDqjPgWNHJztBfYUTIo1GUYG5zzmMVWiJvdxJlsvBXZ9AObmeZdzi0eg2jaA==
+
+bootstrap@4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
+  integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
 
 chart.js@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.7.2.tgz#3c9fde4dc5b95608211bdefeda7e5d33dffa5714"
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-2.8.0.tgz#b703b10d0f4ec5079eaefdcd6ca32dc8f826e0e9"
+  integrity sha512-Di3wUL4BFvqI5FB5K26aQ+hvWh8wnP9A3DWGvXHVkO13D3DSnaSsdZx29cXlEsYKVkn1E2az+ZYFS4t0zi8x0w==
   dependencies:
     chartjs-color "^2.1.0"
     moment "^2.10.2"
 
-chartjs-color-string@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/chartjs-color-string/-/chartjs-color-string-0.5.0.tgz#8d3752d8581d86687c35bfe2cb80ac5213ceb8c1"
+chartjs-color-string@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/chartjs-color-string/-/chartjs-color-string-0.6.0.tgz#1df096621c0e70720a64f4135ea171d051402f71"
+  integrity sha512-TIB5OKn1hPJvO7JcteW4WY/63v6KwEdt6udfnDE9iCAZgy+V4SrbSxoIbTw/xkUIapjEI4ExGtD0+6D3KyFd7A==
   dependencies:
     color-name "^1.0.0"
 
 chartjs-color@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/chartjs-color/-/chartjs-color-2.2.0.tgz#84a2fb755787ed85c39dd6dd8c7b1d88429baeae"
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/chartjs-color/-/chartjs-color-2.3.0.tgz#0e7e1e8dba37eae8415fd3db38bf572007dd958f"
+  integrity sha512-hEvVheqczsoHD+fZ+tfPUE+1+RbV6b+eksp2LwAhwRTVXEjCSEavvk+Hg3H6SZfGlPh/UfmWKGIvZbtobOEm3g==
   dependencies:
-    chartjs-color-string "^0.5.0"
+    chartjs-color-string "^0.6.0"
     color-convert "^0.5.3"
 
 color-convert@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-0.5.3.tgz#bdb6c69ce660fadffe0b0007cc447e1b9f7282bd"
+  integrity sha1-vbbGnOZg+t/+CwAHzER+G59ygr0=
 
 color-name@^1.0.0:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
+  integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-jekyll@^3.0.0-beta1:
-  version "3.0.0-beta1"
-  resolved "https://registry.yarnpkg.com/jekyll/-/jekyll-3.0.0-beta1.tgz#32749f03004cff217bf29988f6e4420606479ff9"
-
-jquery@>=1.7, jquery@>=1.8.3, jquery@^3.3.1:
+jquery@3.3.1, jquery@>=1.8.3:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
 
 moment@^2.10.2:
-  version "2.22.2"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
-owl.carousel@^2.3.4:
+owl.carousel@2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+  integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
   dependencies:
     jquery ">=1.8.3"
 
-pickadate@^3.5.6:
-  version "3.5.6"
-  resolved "https://registry.yarnpkg.com/pickadate/-/pickadate-3.5.6.tgz#c998302343b79a19954fc49c45cc708347602806"
-  dependencies:
-    jquery ">=1.7"
+popper.js@1.14.7:
+  version "1.14.7"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.7.tgz#e31ec06cfac6a97a53280c3e55e4e0c860e7738e"
+  integrity sha512-4q1hNvoUre/8srWsH7hnoSJ5xVmIL4qgz+s4qf2TnJIMyZFUFMGH+9vE7mXynAlHSZ/NdTmmow86muD0myUkVQ==
 
-popper.js@^1.14.3:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
+svgxuse@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/svgxuse/-/svgxuse-1.2.6.tgz#d6251edd07a75cb28618e0c23e8d4db64936d6be"
+  integrity sha512-0KC0I24LDskC2vaVjUQfFmdtKJk8wFwMYOjCci0HlhBRSc0F86dZRqNBHf6BoS5bibQ7chgnBQWyJCTYkzVuSA==
