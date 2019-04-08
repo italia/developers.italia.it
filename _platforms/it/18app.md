@@ -1,5 +1,5 @@
 ---
-title: 18App e Carta Docente
+title: 18app e Carta Docente
 subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
 payoff: La piattaforma dove spendere i bonus cultura e formazione
@@ -43,13 +43,13 @@ resources:
 
 ## Intro
 
-18App e Carta Docente sono due programmi previsti dalla legge con i quali
+18app e Carta Docente sono due programmi previsti dalla legge con i quali
 viene assegnato un bonus economico (€500) a determinate categorie di persone
 (rispettivamente, tutti i 18enni e i docenti di ruolo) da
 spendere con specifici vincoli (in cultura e formazione) presso esercenti
 accreditati.
 
-I beneficiari si identificano tramite SPID, e possono poi utilizzare una
+I beneficiari si identificano tramite [SPID](/it/spid), e possono poi utilizzare una
 responsive web application (quindi anche da smartphone) per spendere il
 proprio portafoglio virtuale creandosi dei buoni sconto (QRCode e codice
 alfanumerico), utilizzabili presso gli esercenti convenzionati, che rientrano

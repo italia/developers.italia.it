@@ -109,7 +109,7 @@ it:
     project_abilitante: Piattaforma abilitante
     project_owner: Proprietario
     project_manager: Gestore
-    project_risorse: Tutte le risorse
+    project_risorse: Risorse
 
     swagger:
       download: "Scarica specifica"
