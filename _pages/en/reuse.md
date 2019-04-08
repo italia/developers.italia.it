@@ -31,6 +31,6 @@ Articles [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministr
 
 The [Guidelines]({{ site.url_lineeguidariuso }}) issued by the *Agenzia per
 l'Italia Digitale* (currently being published in Gazzetta Ufficiale) describe
-in details such a process.
+ such process in detail.
 
 

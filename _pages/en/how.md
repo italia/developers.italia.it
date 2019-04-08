@@ -28,7 +28,7 @@ alternate-blocks:
           url: '/en/software'
         - label: "Read more about reuse"
           class: btn btn-outline-primary
-          url: '/en/riuso'
+          url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
       text: "The API catalog contains a collection of public services
       accessible throughout interoperability, together with the relative documentation
@@ -46,7 +46,6 @@ alternate-blocks:
       include some technical attachments which the administrations can
       include in their contracts with their suppliers to guarantee the
       fulfilment of such guidelines."
-      "
       image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: "Discover more"
