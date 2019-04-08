@@ -45,7 +45,7 @@ Italy but it is in the process of being adopted internationally.
 - [Editor](https://publiccode-editor.developers.italia.it/): compilation and
   validation tool 
 
-## Catalog publication 
+## Catalogue publication 
 
 The catalogue publication, as well as the updates transposition, is **automatic**
 since Developers Italia, through a *crawler*, will periodically find and import
