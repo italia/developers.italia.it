@@ -30,6 +30,7 @@ it:
     toggle_menu_label: accedi al menu
     popular_searches: ricerche frequenti
     print_the_page: Stampa la pagina
+    participate: Partecipa
 
     by: di
     on_: "su"
@@ -217,6 +218,7 @@ en:
     toggle_menu_label: go to navigation
     popular_searches: popular searches
     print_the_page: Print the page
+    participate: Participate
 
     by: by
     on_: "on"
@@ -245,16 +247,16 @@ en:
     home_tags: Browse by tag
     newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     newsletter_privacy: Accetto la
-    newsletter_submit: Iscriviti
+    newsletter_submit: Subscribe
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need
 
     credits_contributors: "Project contributors:"
     credits_maintainers: "Projects leaders & maintainers:"
-    banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
-    banner_joinus_h1: Unisciti alla nostra community!
-    banner_joinus_action: Join our Slack
+    banner_joinus_h2: Are you a developer, a coder or a geek?
+    banner_joinus_h1: Join our community!
+    banner_joinus_action: Chat on Slack now
 
     status_member_of_board: member of board
     status_maintainer: maintainer
