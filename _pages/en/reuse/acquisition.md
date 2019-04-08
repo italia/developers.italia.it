@@ -14,7 +14,7 @@ following the process described by the [Guidelines]({{ site.url_lineeguidariuso 
 Such a process privileges open source software (in reuse or third party one)
 with respect to the acquisition of software covered by end user license
 agreements, as mandated by the Codice dell'Amministrazione Digitale, indicating
-the [Developers Italia catalog](/en/software) as the reference platform to run
+the [Developers Italia catalogue](/en/software) as the reference platform to run
 the search.
 
 In case of reuse, it is not necessary to contact the holding administration

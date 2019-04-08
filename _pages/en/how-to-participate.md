@@ -24,19 +24,19 @@ alternate-blocks:
           class: btn btn-outline-primary
           url: 'https://slack.developers.italia.it/'
     - title: "Participate to the public software development"
-      text: "The Developers Italia catalog includes the open source software
+      text: "The Developers Italia catalogue includes the open source software
       used or released by the Public Administration. Everyone can contribute:
       find bugs and security issues, or propose improvements and new features.
       Starting from today, the digital public services can count also on your
       help"
       image: /assets/images/come-partecipo-4.svg
       buttons:
-        - label: Explore the catalog 
+        - label: Explore the catalogue 
           class: btn btn-primary
           url: '/en/software'
 pair-blocks:
-    - title: "Add public code to the catalog"
-      text: "Help populate the [catalog](/en/software) finding software
+    - title: "Add public code to the catalogue"
+      text: "Help populate the [catalogue](/en/software) finding software
       released as open source by Public Administrations, or third party open
       source software designed for the public sector: helping the maintainers
       to insert a `publiccode.yml` file in their repository you will allow the
@@ -48,7 +48,7 @@ pair-blocks:
           url: '/en/reuse/publication'
     - title: "Report new available APIs"
       text: "Many public services expose interoperability interfaces. The
-      Developers Italia [catalog](/en/api) has the objective to show all of
+      Developers Italia [catalogue](/en/api) has the objective to show all of
       them to the developers who would like to imagine new integrated
       services. If you know some APIs which are not present, or you are
       creating them, send us a report!"
