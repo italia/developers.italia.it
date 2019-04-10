@@ -32,22 +32,22 @@ The process brief:
   some in particular, in order to allow maximum reusability).
 - The repository must contain the file `publiccode.yml` which describes the
   software characteristics and allows to populate the Developers Italia
-  [catalog](/en/software).
+  [catalogue](/en/software).
 
 ## publiccode.yml
 
 Every public software repository must contain a file named `publiccode.yml`
 containing all the information useful to populate the Developers Italia
-[catalog](/en/software). publiccode.yml is a standard originally created in
+[catalogue](/en/software). publiccode.yml is a standard originally created in
 Italy but it is in the process of being adopted internationally. 
 
 - [publiccode.yml documentation](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/): specifications and compilation instructions 
 - [Editor](https://publiccode-editor.developers.italia.it/): compilation and
   validation tool 
 
-## Catalog publication 
+## Catalogue publication 
 
-The catalog publication, as well as the updates transposition, is **automatic**
+The catalogue publication, as well as the updates transposition, is **automatic**
 since Developers Italia, through a *crawler*, will periodically find and import
 all the repositories containing a `publiccode.yml` file.
 
@@ -65,7 +65,7 @@ is a one-off operation.
 
 The third party open source software, such as those which are not put into
 reuse by the Public Administration but are potentially interesting for the
-public sector, can be included in the Developers Italia catalog. As such, it is
+public sector, can be included in the Developers Italia catalogue. As such, it is
 necessary to:
 
 1. fill and include a `publiccode.yml` file in the repository (leaving the `codiceIPA` key empty);

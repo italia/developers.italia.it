@@ -1,6 +1,6 @@
 ---
 title: Platforms
-subtitle: "The catalog for the national and local enabling platforms: the
+subtitle: "The catalogue for the national and local enabling platforms: the
 country's operating system"
 layout: platforms
 lang: en

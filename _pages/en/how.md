@@ -30,7 +30,7 @@ alternate-blocks:
           class: btn btn-outline-primary
           url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
-      text: "The API catalog contains a collection of public services
+      text: "The API catalogue contains a collection of public services
       accessible throughout interoperability, together with the relative documentation
       and the OpenAPI descriptions, in order to allow building modern digital
       public services."
@@ -56,4 +56,4 @@ alternate-blocks:
 If you are a Public Administration, or a supplier who works with the Public
 Administration, in Developers Italia you can find the community and the
 useful resources to develop your digital services. Furthermore, you can find
-the public software catalog.
+the public software catalogue.
