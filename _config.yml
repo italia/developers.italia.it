@@ -138,7 +138,7 @@ page_gen:
     defaults:
       type: api
     dir: it/api
-    filter_condition: "record['language'].include? 'it'"
+    #filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
     name: slug
@@ -147,7 +147,7 @@ page_gen:
     defaults:
       type: api
     dir: en/api
-    filter_condition: "record['language'].include? 'en'"
+    #filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
     name: id
