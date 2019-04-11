@@ -192,7 +192,7 @@ In aggiunta, è necessario integrare nel sito il bottone ufficiale "Entra con SP
 Il Service Provider deve aggiornare i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Dialoga su Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
 
 In aggiunta, è disponibile un [issue tracker pubblico](https://github.com/italia/spid/issues).
 

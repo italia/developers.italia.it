@@ -11,6 +11,29 @@ highlight: false
 comingsoon: false
 layout: platform
 github_team: daf
+resources:
+  - Documentation:
+    - title: Development roadmap
+      icon: file
+      url: https://docs.italia.it/italia/daf/daf-piano-di-sviluppo/
+      desc: 
+    - title: Technical documentation for developers
+      icon: file
+      url: https://docs.italia.it/italia/daf/daf-docs/
+      desc: 
+  - Repository:
+    - title: DAF core (big data platform)
+      icon: github
+      url: https://github.com/italia/daf
+      desc: 
+    - title: Data Portal
+      icon: github
+      url: https://github.com/italia/daf-dataportal
+      desc: 
+    - title: New dati.gov.it website (open data)
+      icon: github
+      url: https://github.com/italia/daf-publicdata
+      desc: 
 ---
 
 ## Intro
@@ -41,16 +64,5 @@ Lastly, data communication tools are useful in favouring the use of data
 processed by stakeholders, including through APIs that display data and
 functionality to third-party applications.
 
-## Documentation and source code
-
-* [Technical documentation of DAF](https://docs.italia.it/italia/daf/daf-docs/)
-* [All DAF repositories](https://github.com/italia?q=daf)
-* [Data Portal](https://dataportal.daf.teamdigitale.it/)
-
-## Get in touch!
-
-There are two ways you can get in touch with our team. The first one, for all generic enquiries, is the forum:
-
-* [DAF on Forum Italia](https://forum.italia.it/c/daf)
-
-The second one, for development, is the Slack chat. Just join the [#daf](https://developersitalia.slack.com/messages/C760XQX9Q) channel on [Developers Italia's Slack](https://slack.developers.italia.it)
+<a class="btn btn-primary" href="https://forum.italia.it/c/daf"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C760XQX9Q"><i class="it-comment" /> Chat on Slack (#daf)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
