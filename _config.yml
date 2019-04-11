@@ -107,8 +107,6 @@ collections:
    platforms:
      output: true
      permalink: /:path/
-   faqs:
-     output: false
 
 # Here we assign a "type" string to each page. This is needed for the search engine.
 defaults:
