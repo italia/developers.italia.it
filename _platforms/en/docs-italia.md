@@ -7,7 +7,7 @@ description: "Docs Italia is the tool for publishing technical and legal documen
 lang: it
 highlight: false
 layout: platform
-github_team: docs
+github_team: docs-italia
 ---
 
 ## Intro

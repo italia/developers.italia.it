@@ -7,7 +7,7 @@ description: "Docs Italia è lo strumento per la pubblicazione di documenti tecn
 lang: it
 highlight: false
 layout: platform
-github_team: docs
+github_team: docs-italia
 ---
 
 ## Intro
