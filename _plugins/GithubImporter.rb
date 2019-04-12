@@ -184,5 +184,7 @@ class GithubImporter < Jekyll::Generator
 		writeJson(site_folder, 'issues.json', github_issues.to_json)
 		writeJson('_data', 'github_teams.json', github_teams.to_json)
 
+		# _data/* files are read before this plugin is run, so we need to inject data manually into site.data
+		site.data['github_teams'] = github_teams
 	end
 end
