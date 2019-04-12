@@ -14,7 +14,7 @@ layout: default
 
 {% endcomment %}
 
-{% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
+{% assign apis = site.data.apis %}
 {% assign root = '/' | append: active_lang | append: '/api' %}
 
 

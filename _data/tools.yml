@@ -31,24 +31,25 @@ it:
 en:
   -
     title: Forum
-    subtitle: Discourse is our forum of choice, to help the community discuss about the projects, exchange tips and tricks, and discuss with maintainers on the roadmap.
+    subtitle: "Enter **forum.italia.it** to discuss the public digital services: platforms, API, software, security and more. Join the discussion!"
     icon: mail
     url: https://forum.italia.it
     img: /assets/images/home-logo-forum.png
   -
-    title: Source code
-    subtitle: On our GitHub Italia, we develop SDK and examples to support our projects, with an open development process, and we also track existing issues.
+    title: Slack
+    subtitle: "**Chat and collaborate in real time** with the maintainers and the other developers in the Slack of Developers Italia."
+    icon: comment
+    url: https://slack.developers.italia.it/
+    img: /assets/images/home-logo-slack.png
+  -
+    title: Source Code
+    subtitle: "In **github.com/italia** we develop (together) SDKs and examples for national platforms."
     icon: list
     url: https://github.com/italia
     img: /assets/images/home-logo-github.png
   -
     title: Docs
-    subtitle: Here you will find the technical documentation of all the projects, mainly written in Markdown and ReStructured Text, and compiled with Sphinx and ReadTheDocs.
-    url: https://docs.italia.it
+    subtitle: "**Docs Italia** is the platform for publishing technical and legal documents, based on git and ReadTheDocs."
+    url: https://docs.italia.it/
     img: /assets/images/home-logo-docs.png
-  -
-    title: Slack
-    subtitle: You can find all the maintainers and developers of Developers Italia on our Slack channels. Join us!
-    icon: comment
-    url: https://slack.developers.italia.it/
-    img: /assets/images/home-logo-slack.png
+

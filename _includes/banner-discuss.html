@@ -1,7 +1,9 @@
+{% include setlang.html %}
+
 <section class="home-discuss">
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
-            <h1>Partecipa</h1>
+            <h1>{{t.participate}}</h1>
             <!--
             <a href="/it/come-partecipo" class="ml-auto more">Come partecipo &rarr;</a>
             -->
@@ -14,7 +16,7 @@
                         <figure class="d-flex w-100 align-items-center">
                             <img src="{{ tool.img | relative_url}}" alt="{{ tool.alt }}" height="32">
                         </figure>
-                        <p class="decoration-none">{{tool.subtitle | markdownify}}</p>
+                        <div class="decoration-none">{{tool.subtitle | markdownify}}</div>
                     </article>
                 </a>
             </div>

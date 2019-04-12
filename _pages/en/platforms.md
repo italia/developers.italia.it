@@ -1,11 +1,18 @@
 ---
 title: Platforms
+subtitle: "The catalogue for the national and local enabling platforms: the
+country's operating system"
 layout: platforms
 lang: en
 redirect_from:
   - /en/projects
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula tristique sem, gravida pellentesque nunc tincidunt non. Donec elementum commodo sem. In hac habitasse platea dictumst. Donec et porta diam. In egestas sodales ipsum quis vestibulum. Donec consequat elit iaculis suscipit hendrerit. Proin tincidunt leo a vehicula pharetra.
+This page is the entry point for developers interested in integrating their
+services in the national and local enabling platforms.
 
-Pellentesque molestie ante euismod sem eleifend congue. Aliquam sagittis, purus tempor volutpat laoreet, lacus magna bibendum nibh, sed auctor orci ex at ligula. Curabitur facilisis leo nibh, et suscipit sem condimentum in. Nulla et euismod leo. Aenean dolor tortor, elementum pellentesque augue eu, feugiat porta tortor. Mauris mattis arcu et nunc placerat euismod. Quisque vulputate neque tellus, id fringilla nisl ultricies in.
+The resources here presented are managed in collaboration with the institutions
+which administer the platforms but they are maintained by the Developers Italia
+community: everyone can participate in the construction of a wealth of common
+resources (SDK, documentation, tools).
+

@@ -1,8 +1,0 @@
----
-title: Chi gestisce i progetti ospitati in Developers Italia?
-text: >
-  Ciascun progetto appartiene ad un'Amministrazione titolare, ed è gestito dai *project leader* indicati nelle relative pagine. I project leader curano la roadmap, definiscono gli obiettivi, il calendario dei rilasci, e guidano in senso generale l'evoluzione del progetto.
-  Ad ogni progetto tipicamente corrispondono uno o più repository su [github.com/italia](https://github.com/italia), che contengono ad esempio le SDK per vari linguaggi e framework, la documentazione eccetera. I singoli repository sono gestiti direttamente dai project leader oppure da maintainer da essi delegati.
-order: 11
-lang: it
----
