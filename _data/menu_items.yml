@@ -26,17 +26,21 @@ it:
 en:
   - title: Platforms
     url: '/en/platforms'
+    active_by_layout: 'platform'
   - title: Software
     url: '/en/software'
   - title: API
     url: '/en/api'
-  - title: Who we are
-    url: '/en/about'
+    active_by_firstlevel: 'api'
   - title: How to use it
     url: '/en/how'
-  - title: How get involved
+    active_by_firstlevel: 'how'
+  - title: Get involved
     url: '/en/get-involved'
+    active_by_firstlevel: 'get-involved'
   - title: News
-    url: '/en/news'
+    url: '/news'
+    active_by_firstlevel: 'news'
   - title: Contacts
     url: '/en/contacts'
+    active_by_firstlevel: 'contacts'

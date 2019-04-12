@@ -1,9 +1,9 @@
-- crawltime: "2019-03-18T15:50:46Z"
-  id: 0ca54275dbb2d194a8c2ead4b44bdda4aead66ec
+- crawltime: "2019-04-04T18:13:19+02:00"
+  id: 8b1b26ee77002bc73902480215b38eabcf20393b
   publiccode:
     it:
       riuso:
         codiceIPA: ""
     logo: ""
-    name: Agave CMS
-    url: https://github.com/italia/agavecms
+    name: django-ldap-academia-ou-manager
+    url: https://github.com/UniversitaDellaCalabria/django-ldap-academia-ou-manager
