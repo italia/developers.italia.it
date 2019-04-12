@@ -4,25 +4,29 @@ it:
     subtitle: "In **forum.italia.it** si discute dei servizi pubblici digitali: piattaforme, API, software, sicurezza ed altro. Unisciti alla discussione!"
     icon: mail
     url: https://forum.italia.it/
-    img: /assets/images/home-logo-forum.png
+    alt: Logo Forum Italia
+    img: /assets/images/tools/Forum_Logo.svg
   -
     title: Slack
     subtitle: "**Dialoga e collabora in tempo reale** con i maintainer e gli altri sviluppatori sullo Slack di Developers Italia."
     icon: comment
     url: https://slack.developers.italia.it/
-    img: /assets/images/home-logo-slack.png
+    alt: Logo Slack
+    img: /assets/images/tools/Slack_Logo.svg
   -
     title: Codice sorgente
     subtitle: "In **github.com/italia** sviluppiamo (insieme) gli SDK e gli esempi di supporto delle piattaforme nazionali."
     icon: list
     url: https://github.com/italia
-    img: /assets/images/home-logo-github.png
+    alt: Logo GitHub
+    img: /assets/images/tools/GitHub_Logo.svg
   -
     title: Documentazione
     subtitle: "**Docs Italia** è la piattaforma per la pubblicazione di documenti tecnici ed amministrativi, basata su git e ReadTheDocs."
     url: https://docs.italia.it/
-    img: /assets/images/home-logo-docs.png
-  
+    alt: Logo Docs Italia
+    img: /assets/images/tools/Docs_Logo.svg
+
 
 en:
   -
