@@ -1,3 +1,8 @@
+{% comment %}Fonts path @see https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/#fonts{% endcomment %}
+<script>window.__PUBLIC_PATH__ = "{{ '/assets/bootstrap-italia/dist/fonts' | relative_url }}"</script>
+
+{% comment %}Bootstrap Italia bundle has to be loaded first as it contains various libraries like jQuery, Popper.js{% endcomment %}
+<script src="{{ '/assets/scripts/bootstrap-italia.bundle.min.js' | relative_url }}"></script>
 
 <script src="{{ '/assets/scripts/jquery.dataTables.min.js' | relative_url }}"></script>
 
@@ -6,8 +11,6 @@
 <script src="{{ '/assets/scripts/dataTables.uikit.js' | relative_url }}"></script>
 
 <script src="{{ '/assets/scripts/select2.min.js' | relative_url }}"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@1.0.0/dist/js/bootstrap-italia.bundle.min.js"></script>
 
 <script src="{{ '/assets/scripts/moment.js' | relative_url }}"></script>
 
