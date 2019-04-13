@@ -39,6 +39,7 @@ it:
     news_title: News
     news_nav_title: Argomenti delle novità
     news_filter: Filtra per argomento
+    see_also: "Vedi anche:"
 
     paginator_previous_page: pagina precedente
     paginator_next_page: pagina successiva
@@ -236,7 +237,8 @@ en:
     news_categories: tags
     news_title: News
     news_nav_title: Categories
-    news_filter: Filtra per argomento
+    news_filter: Filter by topic
+    see_also: "See also:"
 
     paginator_previous_page: previous page
     paginator_next_page: next page
@@ -245,7 +247,7 @@ en:
     project_leader: Community leaders
 
     home_hero: A community of developers who design and code Italian digital public services
-    home_hero_button: Scopri di più
+    home_hero_button: Learn more
     home_hero_buttonurl: '#'
     home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address

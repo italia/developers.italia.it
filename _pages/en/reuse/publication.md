@@ -41,9 +41,8 @@ containing all the information useful to populate the Developers Italia
 [catalogue](/en/software). publiccode.yml is a standard originally created in
 Italy but it is in the process of being adopted internationally. 
 
-- [publiccode.yml documentation](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/): specifications and compilation instructions 
-- [Editor](https://publiccode-editor.developers.italia.it/): compilation and
-  validation tool 
+<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/"><i class="it-file" /> publiccode.yml specifications</a>
+<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use></svg> Editor/validator</a>
 
 ## Catalogue publication 
 
@@ -53,13 +52,11 @@ all the repositories containing a `publiccode.yml` file.
 
 
 **Please note:** to allow the Developers Italia crawler to find its own
-repositories, each administration must **declare the code hosting instrument**
-used to publish all its projects (e.g., the organization's GitHub). This
-is a one-off operation.
+repositories, each administration must **register the code hosting account**
+used to publish all its projects (e.g., the organization's GitHub account). This
+is a one-off operation. See the [guidelines](https://docs.italia.it/developers-italia/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) for more information.
 
-- [Find the code hosting instrument](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting): process explained in the technical attachment of the Guidelines 
-- [Onboarding](https://onboarding.developers.italia.it/): online procedure to
-  declare the code hosting instrument 
+<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Code hosting account registration form</a>
 
 ## Third party open source software 
 

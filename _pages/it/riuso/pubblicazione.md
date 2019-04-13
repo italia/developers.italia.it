@@ -23,17 +23,16 @@ Il processo in sintesi:
 
 Tutti i repositori di software pubblico devono contenere un file denominato `publiccode.yml` che contiene tutte le informazioni utili al popolamento del [catalogo](/it/software) di Developers Italia. publiccode.yml è uno standard nato in Italia ma in corso di adozione internazionale.
 
-- [Documentazione di publiccode.yml](https://docs.italia.it/italia/developers-italia/publiccodeyml/it/master/): specifiche e istruzioni per la compilazione
-- [Editor](https://publiccode-editor.developers.italia.it/): strumento per la compilazione guidata e la validazione
+<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml/it/master/"><i class="it-file" /> Specifiche formato publiccode.yml</a>
+<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use></svg> Editor/validatore</a>
 
 ## Pubblicazione nel catalogo
 
 La pubblicazione nel catalogo, così come il recepimento degli aggiornamenti, è **automatica** poiché mediante un *crawler* sarà Developers Italia a trovare ed importare periodicamente tutti i repositori contenenti un file publiccode.yml.
 
-**Nota bene:** per consentire al catalogo di Developers Italia di trovare i propri repositori, ciascuna amministrazione deve eseguire un'**operazione una tantum per dichiarare lo strumento di code hosting** da essa prescelto per pubblicare tutti i propri progetti (ad es. la propria organizzazione GitHub).
+**Nota bene:** per consentire al catalogo di Developers Italia di trovare i propri repositori, ciascuna amministrazione deve eseguire un'**operazione una tantum per dichiarare lo strumento di code hosting** da essa prescelto per pubblicare tutti i propri progetti (ad es. la propria organizzazione GitHub). Si vedano le [linee guida](https://docs.italia.it/developers-italia/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) per maggiori dettagli.
 
-- [Individuazione dello strumento di code hosting](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting): il processo spiegato nell'allegato tecnico alle Linee Guida
-- [Onboarding](https://onboarding.developers.italia.it/): procedura online per dichiarare il proprio strumento di code hosting
+<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Modulo per dichiarare lo strumento di code hosting</a>
 
 ## Software open source di terze parti
 
