@@ -54,6 +54,15 @@ it:
     home_newsletter_button: Iscriviti
     home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori.
     home_platforms_title: Piattaforme
+    home_platforms_viewall: Vedi tutte
+    home_platforms_viewallurl: '/it/piattaforme'
+    home_software_title: Software a riuso ed open source
+    home_software_captionurl: '/it/riuso'
+    home_software_viewall: Vedi tutti
+    home_software_viewallurl: '/it/software'
+    home_api_title: API
+    home_api_viewall: Vedi tutte
+    home_api_viewallurl: '/it/api'
     home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per categoria
@@ -69,6 +78,7 @@ it:
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
     banner_joinus_action: Vieni su Slack
+    how_to_use: Come lo uso
 
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
@@ -242,6 +252,15 @@ en:
     home_newsletter_button: Subscribe
     home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     home_platforms_title: Platforms
+    home_platforms_viewall: View all
+    home_platforms_viewallurl: '/en/platforms'
+    home_software_title: Open Source Software
+    home_software_captionurl: '/en/reuse'
+    home_software_viewall: View all
+    home_software_viewallurl: '/en/software'
+    home_api_title: API
+    home_api_viewall: View all
+    home_api_viewallurl: '/en/api'
     home_news_title: News
     home_news_expand: read more
     home_tags: Browse by tag
@@ -257,6 +276,7 @@ en:
     banner_joinus_h2: Are you a developer, a coder or a geek?
     banner_joinus_h1: Join our community!
     banner_joinus_action: Chat on Slack now
+    how_to_use: How do I use it
 
     status_member_of_board: member of board
     status_maintainer: maintainer
