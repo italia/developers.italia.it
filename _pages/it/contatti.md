@@ -43,4 +43,5 @@ Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizz
 ### Hanno collaborato
 
 {% include people.html status='ex' %}
+{% include people.html status='contributor' %}
 

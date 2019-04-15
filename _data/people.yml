@@ -1,6 +1,7 @@
 rasky:
   name: Giovanni Bajo
   pic: /assets/images/rasky.jpeg
+  role: Team Digitale
   status: ex
   contacts:
     github:
@@ -15,6 +16,7 @@ rasky:
 ruphy:
   name: Riccardo Iaconelli
   pic: /assets/images/ruphy.jpg
+  role: Team Digitale
   status: ex
   contacts:
     github:
@@ -30,7 +32,7 @@ alranel:
   name: Alessandro Ranellucci
   desc: 
   pic: /assets/images/alranel.jpg
-  role: Team Digitale - Developer Relations
+  role: Team Digitale
   status: admin
   contacts:
     github:
@@ -91,7 +93,7 @@ matteo:
       link: https://www.linkedin.com/in/matteodesanti
 umbros:
   name: Umberto Rosini
-  role: 
+  role: AGID
   desc: 
   pic: /assets/images/umbros.jpg
   status: ex
@@ -170,8 +172,8 @@ marcello:
       link: https://twitter.com/marcelloverona
 carlo:
   name: Carlo Contavalli
-  role: Software Architect
-  desc: Team Digitale
+  role: Team Digitale
+  desc: 
   pic: /assets/images/carlo.jpeg
   status: contributor
   contacts:
@@ -193,8 +195,8 @@ mirko:
       link: https://github.com/mccalv
 antony:
   name: Matteo Antony Mistretta
-  role: Software Engineer
-  desc: Inglorious Coderz
+  role: 
+  desc: 
   pic: /assets/images/antony.jpg
   status: contributor
   contacts:
@@ -212,7 +214,7 @@ federico:
   role: Software Architect
   desc: Team Digitale
   pic: /assets/images/federico.jpg
-  status: contributor
+  status: maintainer
   contacts:
     github:
       name: github
