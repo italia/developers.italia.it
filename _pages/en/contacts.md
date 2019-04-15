@@ -45,11 +45,19 @@ Further information about the project goals may be found in the [launch Medium p
 
 We are reachable via [Slack](https://slack.developers.italia.it/) or at the address [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
 
-### Responsibles
+### Team
 
 {% include people.html status='admin' %}
 
-### Former Contributors
+### Former Team Members & Contributors
 
 {% include people.html status='ex' %}
+{% include people.html status='contributor' %}
 
+### Community Leaders
+
+{% include community-leaders.html %}
+
+### Maintainers & Contributors
+
+{% include community.html %}

@@ -1,5 +1,6 @@
 require 'rest_client'
 require 'json'
+require 'octokit'
 require 'pathname'
 require 'parallel'
 
@@ -16,13 +17,13 @@ class GithubImporter < Jekyll::Generator
 
 	def generate(site)
 		# test if we don't want download data from github
-		if ENV['JEKYLL_NO_GITHUB'] != nil
+		if ENV['JEKYLL_NO_GITHUB'] == "1"
 			puts "*****************************************************"
             puts("WARNING! GitHub API disabled")
 			puts "*****************************************************"
 			return
 		end
-		if ENV['GITHUB_ACCESS_TOKEN'] == nil
+		if ENV['GITHUB_ACCESS_TOKEN'] == "" || ENV['GITHUB_ACCESS_TOKEN'] == nil
 			puts "*****************************************************"
             puts("WARNING! No GITHUB_ACCESS_TOKEN: skipping GitHub API calls")
 			puts "*****************************************************"
@@ -173,7 +174,11 @@ class GithubImporter < Jekyll::Generator
 		}
 		puts "++++++++++++++ Github teams fetched: " + teams.size.to_s
 
-
+		# FETCH ORG MEMBERS
+		client = Octokit::Client.new(:access_token => access_token)
+		Octokit.auto_paginate = true
+		github_members = client.organization_public_members('italia').map {|x| x.to_hash}
+		puts "++++++++++++++ Github members fetched: " + github_members.size.to_s
 
 		# Repos&issues json must be in a specific folder cause we need a client parsing on the "cosa fare" page
 		unless File.directory?(site_folder)
@@ -183,8 +188,10 @@ class GithubImporter < Jekyll::Generator
 
 		writeJson(site_folder, 'issues.json', github_issues.to_json)
 		writeJson('_data', 'github_teams.json', github_teams.to_json)
+		writeJson('_data', 'github_members.json', github_members.to_json)
 
 		# _data/* files are read before this plugin is run, so we need to inject data manually into site.data
 		site.data['github_teams'] = github_teams
+		site.data['github_members'] = github_members
 	end
 end

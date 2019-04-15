@@ -78,7 +78,7 @@ Still to-do:
     </div>
 
     {% capture toc %}
-    {{ content | toc_only }}
+    {% toc %}
     {% if page.resources %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>

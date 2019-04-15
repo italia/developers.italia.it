@@ -1,6 +1,7 @@
 rasky:
   name: Giovanni Bajo
   pic: /assets/images/rasky.jpeg
+  role: Team Digitale
   status: ex
   contacts:
     github:
@@ -15,6 +16,7 @@ rasky:
 ruphy:
   name: Riccardo Iaconelli
   pic: /assets/images/ruphy.jpg
+  role: Team Digitale
   status: ex
   contacts:
     github:
@@ -30,7 +32,7 @@ alranel:
   name: Alessandro Ranellucci
   desc: 
   pic: /assets/images/alranel.jpg
-  role: Team Digitale - Developer Relations
+  role: Team Digitale
   status: admin
   contacts:
     github:
@@ -42,56 +44,9 @@ alranel:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/alessandro-ranellucci/
-francesco:
-  name: Francesco Zaia
-  desc: UX/UI Developer, Team Digitale
-  pic: /assets/images/francesco.jpg
-  status: maintainer
-  contacts:
-    github:
-      name: github
-      link: https://github.com/francescozaia
-    twitter:
-      name: twitter
-      link: https://twitter.com/francescozaia
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/francescozaia
-lorenzo:
-  name: Lorenzo Fabbri
-  role: Content Designer
-  desc: Team Digitale
-  pic: /assets/images/lorenzo.jpg
-  status: maintainer
-  contacts:
-    facebook:
-      name: facebook
-      link: https://www.facebook.com/lorenzo.fabbri.334
-    twitter:
-      name: twitter
-      link: https://twitter.com/lore77
-    googleplus:
-      name: google plus
-      link: https://plus.google.com/u/1/111352564816677762096
-matteo:
-  name: Matteo De Santi
-  role: UX designer
-  desc: Team Digitale
-  pic: /assets/images/matteo.jpg
-  status: maintainer
-  contacts:
-    facebook:
-      name: facebook
-      link: https://www.facebook.com/desantimatteo
-    twitter:
-      name: twitter
-      link: https://twitter.com/matteo_desanti
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/matteodesanti
 umbros:
   name: Umberto Rosini
-  role: 
+  role: AGID
   desc: 
   pic: /assets/images/umbros.jpg
   status: ex
@@ -105,73 +60,10 @@ umbros:
     linkedin:
       name: google plus
       link: https://www.linkedin.com/in/umbros/
-alessandro:
-  name: Alessandro Ercolani
-  role: Data Engineer
-  desc: Team Digitale
-  pic: /assets/images/alessandro-ercolani.jpg
-  status: maintainer
-  contacts:
-    github:
-      name: github
-      link: https://github.com/giux78
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/alessandroercolani/
-    twitter:
-      name: twitter
-      link: https://twitter.com/giuxale
-fabiana:
-  name: Fabiana Lanotte
-  role: Data Engineer
-  desc: Team Digitale
-  pic: https://teamdigitale.governo.it/images/team/fabiana-lanotte.jpg
-  status: maintainer
-  contacts:
-    github:
-      name: github
-      link: https://github.com/fabiana001
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/fabiana-lanotte-7970005a/
-    twitter:
-      name: twitter
-      link: https://twitter.com/FabianaLanotte
-giorgia:
-  name: Giorgia Lodi
-  role: Data Engineer Consultant
-  desc: AgID
-  pic: /assets/images/giorgia.jpg
-  status: maintainer
-  contacts:
-    facebook:
-      name: facebook
-      link: https://www.facebook.com/giorgia.lodi.7
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/giorgia-lodi-4967444/
-    twitter:
-      name: twitter
-      link: https://twitter.com/GiorgiaLodi
-marcello:
-  name: Marcello Verona
-  role: Data Architect & Dev
-  pic: /assets/images/marcello.jpeg
-  status: maintainer
-  contacts:
-    github:
-      name: github
-      link: https://github.com/marciuz/
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/marcelloverona/
-    twitter:
-      name: twitter
-      link: https://twitter.com/marcelloverona
 carlo:
   name: Carlo Contavalli
-  role: Software Architect
-  desc: Team Digitale
+  role: Team Digitale
+  desc: 
   pic: /assets/images/carlo.jpeg
   status: contributor
   contacts:
@@ -181,20 +73,10 @@ carlo:
     medium:
       name: medium
       link: https://medium.com/@ccontavalli
-mirko:
-  name: Mirko Calvaresi
-  role: Project Manager
-  desc: Team Digitale
-  pic: /assets/images/mirko.jpeg
-  status: maintainer
-  contacts:
-    github:
-      name: github
-      link: https://github.com/mccalv
 antony:
   name: Matteo Antony Mistretta
-  role: Software Engineer
-  desc: Inglorious Coderz
+  role: 
+  desc: 
   pic: /assets/images/antony.jpg
   status: contributor
   contacts:
@@ -207,19 +89,6 @@ antony:
     twitter:
       name: twitter
       link: https://twitter.com/antonymistretta
-federico:
-  name: Federico Feroldi
-  role: Software Architect
-  desc: Team Digitale
-  pic: /assets/images/federico.jpg
-  status: contributor
-  contacts:
-    github:
-      name: github
-      link: https://github.com/cloudify
-    linkedin:
-      name: linkedin
-      link: https://www.linkedin.com/in/feroldi
 roberto:
   name: Roberto Polli
   desc:
@@ -236,3 +105,4 @@ roberto:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/rpolli
+
