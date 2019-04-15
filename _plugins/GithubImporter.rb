@@ -17,7 +17,7 @@ class GithubImporter < Jekyll::Generator
 
 	def generate(site)
 		# test if we don't want download data from github
-		if ENV['JEKYLL_NO_GITHUB'] == "1"
+		if ENV['JEKYLL_NO_GITHUB'] == "1" || ENV['JEKYLL_NO_GITHUB'] == "true"
 			puts "*****************************************************"
             puts("WARNING! GitHub API disabled")
 			puts "*****************************************************"
@@ -176,7 +176,7 @@ class GithubImporter < Jekyll::Generator
 
 		# FETCH ORG MEMBERS
 		client = Octokit::Client.new(:access_token => access_token)
-		Octokit.auto_paginate = true
+		client.auto_paginate = true
 		github_members = client.organization_public_members('italia').map {|x| x.to_hash}
 		puts "++++++++++++++ Github members fetched: " + github_members.size.to_s
 
@@ -192,6 +192,6 @@ class GithubImporter < Jekyll::Generator
 
 		# _data/* files are read before this plugin is run, so we need to inject data manually into site.data
 		site.data['github_teams'] = github_teams
-		site.data['github_members'] = github_members
+		site.data['github_members'] = JSON.parse(github_members.to_json) # stringify keys (Jekyll templates do not recognize symbols)
 	end
 end
