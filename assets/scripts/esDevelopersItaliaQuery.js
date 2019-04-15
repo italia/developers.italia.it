@@ -892,7 +892,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
     'readMore': this.readMore[language],
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + software.id
+    'path': '/' + language + '/software/' + software.slug
   };
 
   return this.templates.search(data);
@@ -1319,7 +1319,6 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.executeESQuery = function () {
 
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = function (software) {
   var value = $(this.config['inputSelector']).val();
-  var id = software.id
   var category_id = this.getSoftwareType(software);
 
   var language = this.config['language'];
@@ -1340,7 +1339,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
     'language': language,
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['category', 'icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + id
+    'path': '/' + language + '/software/' + software.slug
   };
 };
 

@@ -150,7 +150,7 @@ page_gen:
     #filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
-    name: id
+    name: slug
     data: crawler.softwares
     template: software-details
     defaults:
@@ -159,7 +159,7 @@ page_gen:
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: id
+    name: slug
     data: crawler.softwares
     template: software-details
     defaults:

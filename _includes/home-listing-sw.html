@@ -23,7 +23,7 @@
 
             {% assign sw_name = description.localisedName | default: item.publiccode.name %}
 
-            {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: item.id %}
+            {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: item.slug %}
 
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
                 <article
