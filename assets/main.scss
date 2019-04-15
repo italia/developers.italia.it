@@ -556,32 +556,50 @@ body {
         border-top: 1px solid #455B71;
         opacity: 0.2;
     }
-    &-person {
+    &-person, &-communityleader {
         clear: both;
         margin-bottom: 1rem;
     }
-    &-person-name {
+    &-person-name, &-communityleader-name {
         color: #17324D;
         letter-spacing: 0;
         font-weight: bold;
     }
-    &-person-img {
+    &-communityleader-name {
+        font-size: 85%;
+    }
+    &-person-img, &-communityleader-img {
         display: inline-block;
         float: left;
-        width: 100px;
-        height: 100px;
         border-radius: 100%;
         overflow: hidden;
         margin: 0 1rem 0 0;
     }
+    &-person-img {
+        width: 100px;
+        height: 100px;
+    }
+    &-communityleader-img {
+        width: 50px;
+        height: 50px;
+    }
     &-person-info {
         padding-top: 0.2rem;
     }
-    &-person-role {
+    &-communityleader-info {
+        padding-top: 0.1rem;
+    }
+    &-person-role, &-communityleader-role {
         text-transform: uppercase;
         font-weight: 300;
         color: #455B71;
         font-size: 0.9rem;
+    }
+    &-person-role {
+        font-size: 0.9rem;
+    }
+    &-communityleader-role {
+        font-size: 0.7rem;
     }
     &-person-desc {
         font-weight: 300;

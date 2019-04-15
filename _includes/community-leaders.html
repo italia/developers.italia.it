@@ -1,0 +1,29 @@
+{% assign exclude = site.data.people | values | map: "name" %}
+
+<div class="row">
+    {% assign teams = site.data.github_teams | sort: "name" %}
+    {% for team in teams %}
+
+    {% assign members = team.members | sort: "name" %}
+    {% for member in members %}
+
+    {% if exclude contains member.name %}
+    {% continue %}
+    {% endif %}
+
+    <div class="credits-communityleader col-sm-4">
+        <div class="credits-communityleader-img">
+            <img src="{{ member.avatar_url }}" width="130" class="img-fluid">
+        </div>
+        <div class="credits-communityleader-info">
+            <div class="credits-communityleader-name">
+                {{ member.name | default: member.login }}
+            </div>
+            <div class="credits-communityleader-role">
+                {{ team.name }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>

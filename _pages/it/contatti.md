@@ -45,3 +45,6 @@ Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizz
 {% include people.html status='ex' %}
 {% include people.html status='contributor' %}
 
+### Community Leaders
+
+{% include community-leaders.html %}

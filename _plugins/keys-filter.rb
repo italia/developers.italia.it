@@ -3,6 +3,9 @@ module Jekyll
     def keys(input)
       input.keys
     end
+    def values(input)
+      input.values
+    end
     def objects_keys(input)
       # Given an array of objects, it returns the keys of such objects
       (input.map { |item| item.keys }).flatten

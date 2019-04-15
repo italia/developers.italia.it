@@ -54,3 +54,6 @@ We are reachable via [Slack](https://slack.developers.italia.it/) or at the addr
 {% include people.html status='ex' %}
 {% include people.html status='contributor' %}
 
+### Community Leaders
+
+{% include community-leaders.html %}
