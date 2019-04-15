@@ -89,3 +89,20 @@ antony:
     twitter:
       name: twitter
       link: https://twitter.com/antonymistretta
+roberto:
+  name: Roberto Polli
+  desc:
+  pic: /assets/images/ioggstream.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/ioggstream
+    twitter:
+      name: twitter
+      link: https://twitter.com/ioggstream
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/rpolli
+
