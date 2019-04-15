@@ -9,11 +9,11 @@
     {% assign navurl = page.url | remove: 'index.html' %}
     {% for item in items %}
     {% assign isActive = false %}
-    {% if item.active_by_layout==page.layout %}
+    {% if item.active_by_layout == page.layout or item.active_by_layout contains page.layout %}
     {% assign isActive = true %}
     {% elsif item.active_by_firstlevel %}
     {% assign pathArray = page.url | split:'/' %}
-    {% if item.active_by_firstlevel contains pathArray[2] %}
+    {% if item.active_by_firstlevel contains pathArray[1] or item.active_by_firstlevel contains pathArray[2] %}
     {% assign isActive = true %}
     {%endif%}
     {% elsif page.url==item.url %}

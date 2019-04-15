@@ -1,7 +1,9 @@
 it:
   - title: Piattaforme
     url: '/it/piattaforme/'
-    active_by_layout: 'platform'
+    active_by_layout:
+      - 'platform'
+      - 'platforms'
   - title: Software
     url: '/it/software/'
     active_by_firstlevel:
@@ -26,9 +28,14 @@ it:
 en:
   - title: Platforms
     url: '/en/platforms'
-    active_by_layout: 'platform'
+    active_by_layout:
+      - 'platform'
+      - 'platforms'
   - title: Software
     url: '/en/software'
+    active_by_firstlevel:
+      - 'software'
+      - 'reuse'
   - title: API
     url: '/en/api'
     active_by_firstlevel: 'api'
