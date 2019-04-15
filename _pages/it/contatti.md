@@ -48,3 +48,7 @@ Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizz
 ### Community Leaders
 
 {% include community-leaders.html %}
+
+### Maintainers & Contributors
+
+{% include community.html %}

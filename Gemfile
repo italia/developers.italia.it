@@ -42,3 +42,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'searchyll', :git => 'https://github.com/italia/developers-italia-searchyll'
+
+gem "octokit", "~> 4.0"
