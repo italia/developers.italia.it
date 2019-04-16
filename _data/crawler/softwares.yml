@@ -1,4 +1,4 @@
-- crawltime: "2019-04-15T10:57:21+02:00"
+- crawltime: "2019-04-16T13:26:49Z"
   fileRawURL: https://raw.githubusercontent.com/vvfosprojects/vvfgeofleet/master/publiccode.yml
   id: 71dc97ddb83597db9cc8d28008ec0139578f9d72
   it-riuso-codiceIPA-label: Ministero dell'Interno
@@ -254,6 +254,7 @@
   - 64
   - 64
   - 64
+  - 64
   - 76
   - 64
   - 64
@@ -294,9 +295,8 @@
   - 64
   - 64
   - 64
-  - 64
   vitalityScore: 64
-- crawltime: "2019-04-15T10:57:13+02:00"
+- crawltime: "2019-04-16T13:26:45Z"
   fileRawURL: https://raw.githubusercontent.com/vvfosprojects/sovvf/master/publiccode.yml
   id: 2ed8e07469a5b9dcdb6ff83dd01c415b6a0cd4be
   it-riuso-codiceIPA-label: Ministero dell'Interno
@@ -469,6 +469,7 @@
   slug: m_it-vvfosprojects-sovvf
   vitalityDataChart:
   - 81
+  - 87
   - 81
   - 81
   - 93
@@ -523,13 +524,12 @@
   - 81
   - 81
   - 93
-  - 81
   - 81
   - 81
   - 81
   - 81
   vitalityScore: 86
-- crawltime: "2019-04-15T10:57:28+02:00"
+- crawltime: "2019-04-16T13:26:57Z"
   fileRawURL: https://raw.githubusercontent.com/UniversitaDellaCalabria/PEO/master/publiccode.yml
   id: 48367ef70aa3a70750a50383bbf460eeee5eddb6
   it-riuso-codiceIPA-label: UNIVERSITA' DELLA CALABRIA
@@ -737,7 +737,7 @@
   - 50
   - 50
   - 50
-  - 46
+  - 50
   - 46
   - 46
   - 46
@@ -774,7 +774,7 @@
   - 46
   - 46
   vitalityScore: 47
-- crawltime: "2019-04-15T10:57:14+02:00"
+- crawltime: "2019-04-16T13:26:40Z"
   fileRawURL: https://raw.githubusercontent.com/italia/agavecms/master/publiccode.yml
   id: 0ca54275dbb2d194a8c2ead4b44bdda4aead66ec
   it-riuso-codiceIPA-label: Presidenza del Consiglio dei Ministri
@@ -937,8 +937,9 @@
       legal: {}
       name: pyWSArchiPRO
       url: https://github.com/UniversitaDellaCalabria/pyWSArchiPRO
-  slug: italia-agavecms-0ca542
+  slug: PCM-italia-agavecms
   vitalityDataChart:
+  - 58
   - 58
   - 58
   - 58
@@ -998,9 +999,8 @@
   - 54
   - 54
   - 54
-  - 54
   vitalityScore: 56
-- crawltime: "2019-04-15T10:57:25+02:00"
+- crawltime: "2019-04-16T13:26:54Z"
   fileRawURL: https://raw.githubusercontent.com/UniversitaDellaCalabria/pyWSArchiPRO/master/publiccode.yml
   id: 9da7cfac41602c02d31f8fb24ed19f20a6fa5709
   it-riuso-codiceIPA-label: UNIVERSITA' DELLA CALABRIA
@@ -1184,8 +1184,8 @@
   - 50
   - 50
   - 50
-  - 46
-  - 46
+  - 50
+  - 50
   - 46
   - 46
   - 46
@@ -1234,7 +1234,7 @@
   - 46
   - 46
   vitalityScore: 46
-- crawltime: "2019-04-15T10:57:10+02:00"
+- crawltime: "2019-04-16T13:26:34Z"
   fileRawURL: https://raw.githubusercontent.com/italia/18app/master/publiccode.yml
   id: bb340c5c46b60cec11b756abb0b46ddabe7f58e7
   it-riuso-codiceIPA-label: Ministero per i beni e le attivita' culturali
@@ -1404,8 +1404,9 @@
           dei Ministri
       name: Agave CMS
       url: https://github.com/italia/agavecms
-  slug: italia-18app-bb340c
+  slug: m_bac-italia-18app
   vitalityDataChart:
+  - 64
   - 64
   - 64
   - 64
@@ -1465,9 +1466,8 @@
   - 64
   - 64
   - 64
-  - 64
   vitalityScore: 64
-- crawltime: "2019-04-15T10:57:27+02:00"
+- crawltime: "2019-04-16T13:26:54Z"
   fileRawURL: https://raw.githubusercontent.com/vvfosprojects/pca/master/publiccode.yml
   id: 0c6a4d16dea260da7446d03d5610bdffe2143f5d
   it-riuso-codiceIPA-label: Ministero dell'Interno
@@ -1663,7 +1663,7 @@
   - 58
   - 58
   - 58
-  - 54
+  - 58
   - 54
   - 54
   - 54
