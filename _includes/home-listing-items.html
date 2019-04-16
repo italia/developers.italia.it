@@ -17,7 +17,7 @@
             {% for item in include.items limit: limititems %}
             {% assign itemUrl = item.url %}
             {% if include.type == 'api' %}
-            {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug %}
+            {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug | downcase %}
             {% endif %}
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
                 <article

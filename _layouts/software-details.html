@@ -321,7 +321,7 @@ layout: default
             <p class="relate-title">
               {{ relsw_name }}
             </p>
-            {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug %}
+            {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
             <a href="{{ relsw_url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
           </div>
         </div>

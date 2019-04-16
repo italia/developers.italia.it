@@ -892,7 +892,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
     'readMore': this.readMore[language],
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + software.slug
+    'path': '/' + language + '/software/' + software.slug.toLowerCase()
   };
 
   return this.templates.search(data);
@@ -1339,7 +1339,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
     'language': language,
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['category', 'icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + software.slug
+    'path': '/' + language + '/software/' + software.slug.toLowerCase()
   };
 };
 
