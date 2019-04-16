@@ -34,7 +34,7 @@ layout: default
       <div class="apilist__listing">
         <div class="row row-eq-height">
           {% for api in apis %}
-          {% assign url = '/' | append: active_lang | append: '/api/' | append: api.slug %}
+          {% assign url = '/' | append: active_lang | append: '/api/' | append: api.slug | downcase %}
 
           <div class="col-md-4 p-2">
             <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
