@@ -4,8 +4,9 @@ subtitle: Public documents, made digital
 logo: /assets/images/logo-docs-italia.png
 payoff: Public documents, made digital
 description: "Docs Italia is the tool for publishing technical and legal documents, offering to citizens the ability to read and comment easily"
-lang: it
-highlight: false
+lang: en
+highlight: true
+order: 5
 layout: platform
 github_team: docs-italia
 ---
