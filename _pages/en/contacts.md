@@ -61,3 +61,5 @@ We are reachable via [Slack](https://slack.developers.italia.it/) or at the addr
 ### Maintainers & Contributors
 
 {% include community.html %}
+
+<small>(This section lists only those people whose membership to github.com/italia is [set to public](https://github.com/orgs/italia/people).)</small>

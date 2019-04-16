@@ -1,8 +1,16 @@
+{% include setlang.html %}
+
 {% assign exclude = site.data.people | values | map: "name" %}
 
 <div class="row">
-    {% assign teams = site.data.github_teams | sort: "name" %}
-    {% for team in teams %}
+    {% assign platforms = site.platforms | where: 'lang', active_lang | sort: 'title' %}
+    {% for platform in platforms %}
+    {% assign teams = site.data.github_teams | where: "slug", platform.github_team %}
+    {% assign team = teams.first %}
+
+    {% if team == nil %}
+    {% continue %}
+    {% endif %}
 
     {% assign members = team.members | sort: "name" %}
     {% for member in members %}
