@@ -1,6 +1,8 @@
 {% include setlang.html %}
 
-{% assign limititems = include.limit | default:4 %}
+{% assign limititems = include.limit | default: 4 %}
+{% assign items = site.data.crawler.softwares | sort: "vitalityScore" | reverse %}
+
 {% assign title = include.title %}
 {% assign captiontitle = include.captiontitle %}
 {% assign captionurl = include.captionurl %}
@@ -15,7 +17,7 @@
             {% endif %}
         </div>
         <div class="row row-eq-height">
-            {% for item in site.data.crawler.softwares limit: limititems %}
+            {% for item in items limit: limititems %}
 
             {% assign description = item.publiccode.description[active_lang]
             | default: item.publiccode.description.en
