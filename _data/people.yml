@@ -89,6 +89,19 @@ antony:
     twitter:
       name: twitter
       link: https://twitter.com/antonymistretta
+leo:
+  name: Leonardo Favario
+  desc:
+  pic: /assets/images/leo.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/libremente
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/favario
 roberto:
   name: Roberto Polli
   desc:
@@ -105,4 +118,3 @@ roberto:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/rpolli
-

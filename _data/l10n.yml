@@ -187,15 +187,15 @@ it:
       go_to_detail: vai al dettaglio
       view_all_photos: Guarda tutte le foto
       tooltip: "
-        [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
+        [Vitality è un indice](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calcolato prendendo in considerazione le seguenti quattro categorie: 
 
-        * **Code activity**: the daily number of commits and merges;
+        * **Code activity**: il numero di commit e merge giornalieri; 
 
-        * **Release history**: the daily number of releases;
+        * **Release history**: il numero di release giornaliere; 
 
-        * **User community**: the number of unique authors;
+        * **User community**: il numero di autori unici; 
 
-        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+        * **Longevity**: l'età del progetto. I range di ogni misura possono essere trovati nel file *vitality-ranges.yml* in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
 
 en:
   code: eng
@@ -383,3 +383,15 @@ en:
       public_entities: public entities
       go_to_detail: go to detail
       view_all_photos: View all the photos
+      tooltip: "
+        [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
+
+        * **Code activity**: the daily number of commits and merges;
+
+        * **Release history**: the daily number of releases;
+
+        * **User community**: the number of unique authors;
+
+        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+
+
