@@ -7,6 +7,11 @@
     {% for platform in platforms %}
     {% assign teams = site.data.github_teams | where: "slug", platform.github_team %}
     {% assign team = teams.first %}
+
+    {% if team == nil %}
+    {% continue %}
+    {% endif %}
+
     {% assign members = team.members | sort: "name" %}
     {% for member in members %}
 
