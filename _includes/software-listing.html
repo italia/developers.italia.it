@@ -9,7 +9,7 @@
 {% assign sw_name = description.localisedName | default: software.publiccode.name %}
 
 <div class="col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
-    {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug %}
+    {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
     <a href="{{sw_url}}" class="d-block decoration-none ">
         {% if include.show_type %}
         {% if software.publiccode.it.riuso.codiceIPA != nil %}
