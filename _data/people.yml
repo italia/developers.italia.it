@@ -105,4 +105,16 @@ roberto:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/rpolli
-
+leo:
+  name: Leonardo Favario
+  desc:
+  pic: /assets/images/leo.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/libremente
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/favario
