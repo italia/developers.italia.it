@@ -5,6 +5,11 @@
 <div class="row">
     {% assign platforms = site.platforms | where: 'lang', active_lang | sort: 'title' %}
     {% for platform in platforms %}
+
+    {% if platform.github_team == nil or platform.github_team == "" %}
+    {% continue %}
+    {% endif %}
+
     {% assign teams = site.data.github_teams | where: "slug", platform.github_team %}
     {% assign team = teams.first %}
 
