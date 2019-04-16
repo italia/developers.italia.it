@@ -66,8 +66,8 @@
                     <g id="Group-22" transform="translate(0.000000, 178.000000)">
                         <polygon id="Rectangle-14-Copy-3" fill="#EDEFF2" opacity="0.5" points="9.09494702e-13 0 161.5 0 183 22.5 183 73 9.09494702e-13 73"></polygon>
                         <polygon id="Rectangle-17-Copy-2" fill="#DDDFE6" points="161 0 183 22 161 22"></polygon>
-                        <text id="PagoPA" font-family="TitilliumWeb-Light, Titillium Web" font-size="32" font-weight="300" line-spacing="20" fill="#00264D">
-                            <tspan x="19.5" y="62.5">PagoPA</tspan>
+                        <text id="pagoPA" font-family="TitilliumWeb-Light, Titillium Web" font-size="32" font-weight="300" line-spacing="20" fill="#00264D">
+                            <tspan x="19.5" y="62.5">pagoPA</tspan>
                         </text>
                     </g>
                     <g id="Group-21">

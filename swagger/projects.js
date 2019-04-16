@@ -69,7 +69,7 @@ module.exports = [
     id: "pagopa",
     description:
       "Un unico nodo di pagamento, con un&#39;unica interfaccia verso il cittadino, per pagare dai tributi alla gita scolastica dei figli con carte di credito, bonifici o anche via app.",
-    title: "PagoPA",
+    title: "pagoPA",
     subtitle: "Nodo di pagamento verso la Pubblica Amministrazione",
     payoff: "Nodo dei Pagamenti verso la Pubblica Amministrazione"
   },

@@ -1,5 +1,5 @@
 ---
-title: PagoPA
+title: pagoPA
 subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
 payoff: Payment interface towards the Public Administration
