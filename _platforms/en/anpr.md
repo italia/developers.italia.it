@@ -16,6 +16,7 @@ github_team: anpr
 newsletterdata:
     text: "Subscribe to this newsletter if you want to receive news about ANPR: migration updates, new documentation, facts."
     placeholdertext: john.smith@dev.software.it
+    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
         - 
@@ -39,6 +40,9 @@ newsletterdata:
             - 
               value: Software House
               valueid: SW_House
+            - 
+              value: Other
+              valueid: ""
 abilitante: true
 owners:
     - name: Ministry of the Interior

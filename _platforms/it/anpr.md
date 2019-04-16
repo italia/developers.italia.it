@@ -14,6 +14,7 @@ github_team: anpr
 newsletterdata:
     text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."
     placeholdertext: mario.rossi@dev.software.it
+    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
         - 
@@ -37,6 +38,9 @@ newsletterdata:
             - 
               value: Software House
               valueid: SW_House
+            - 
+              value: Altro
+              valueid: ""
 abilitante: true
 owners:
     - name: Ministero dell'Interno

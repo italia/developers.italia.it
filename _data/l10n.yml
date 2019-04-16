@@ -53,7 +53,7 @@ it:
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
-    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori.
+    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
     home_platforms_title: Piattaforme
     home_platforms_viewall: Vedi tutte
     home_platforms_viewallurl: '/it/piattaforme'
@@ -252,7 +252,7 @@ en:
     home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
-    home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
+    home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
     home_platforms_title: Platforms
     home_platforms_viewall: View all
     home_platforms_viewallurl: '/en/platforms'

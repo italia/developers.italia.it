@@ -16,6 +16,7 @@ abilitante: true
 newsletterdata:
     text: "Subscribe to this newsletter if you want to receive news and updates about pagoPA."
     placeholdertext: mario.rossi@dev.software.it
+    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-pagoPA.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
         - 
