@@ -52,3 +52,5 @@ Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizz
 ### Maintainers & Contributors
 
 {% include community.html %}
+
+<small>(In questa sezione compaiono solo coloro che hanno [reso pubblica](https://github.com/orgs/italia/people) la propria appartenenza a github.com/italia.)</small>
