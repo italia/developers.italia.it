@@ -1342,13 +1342,8 @@ body {
         &-icon {
             left: 0;
             position: absolute;
-            margin-left: -2.6rem;
+            margin-left: -2.5rem;
             color: #fff;
-            background-color: $primary;
-            line-height: 1;
-            padding: 0.4rem;
-            border-radius: 100%;
-            font-size: 0.8rem;
         }
     }
     &__apis {
