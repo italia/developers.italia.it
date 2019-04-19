@@ -109,5 +109,23 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Hard</td>
             <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q">#daf</a></td>
         </tr>
+        <tr role="row" class="even" id="pdnd-dataportal-tutorial">
+            <td tabindex="0">PDND Dataportal Tutorial</td>
+            <td>
+                The <b>PDND</b> (formerly Data and Analytics Framework) has a <a href="https://dataportal.daf.teamdigitale.it/#/">frontend website</a> for general users who search for open data from public administrations. It needs documentation and tutorials to ease the user journey from general question to the proper dataset.
+                <br />
+                <b>Mentor:</b> developers involved in PDND Dataportal development, you can start asking in slack <a
+                href="https://developersitalia.slack.com/messages/C9W38TN3H">#daf-dataportal</a> channel.
+                <br />
+                <b>Expected outcome:</b> An approachable user documentation with tutorials (ie. text with images, infographics, comics, and so on).
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Graphic skills are valued</li>
+                </ul>
+            </td>
+            <td>Hard</td>
+            <td><a href="https://developersitalia.slack.com/messages/C9W38TN3H">#daf-dataportal</a></td>
+        </tr>
 </tbody>
 </table>
