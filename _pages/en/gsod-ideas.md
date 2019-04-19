@@ -89,5 +89,25 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Up to you</td>
             <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
+        <tr role="row" class="even" id="pdnd-general-docs">
+            <td tabindex="0">PDND Technical Documentation</td>
+            <td>
+                The <b>PDND</b> (formerly Data and Analytics Framework) is under active development,
+                and the <a href="https://docs.italia.it/italia/daf/daf-docs/">original technical documentation</a> is now outdated and needs a review.
+                <br />
+                <b>Mentor:</b> developers and devops involved in PDND development, you can start asking in slack <a
+                href="https://developersitalia.slack.com/messages/C760XQX9Q">#daf</a> channel.
+                <br />
+                <b>Expected outcome:</b> An upgraded version of <a href="https://docs.italia.it/italia/daf/daf-docs/">https://docs.italia.it/italia/daf/daf-docs/</a>.
+                <br />
+                <b>Required skills:</b>
+                <ul>
+                    <li>- Micro services architecture</li>
+                    <li>- Docker, Kubernetes, Terraform</li>
+                </ul>
+            </td>
+            <td>Hard</td>
+            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q">#daf</a></td>
+        </tr>
 </tbody>
 </table>
