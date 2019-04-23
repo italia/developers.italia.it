@@ -25,7 +25,11 @@
                     {% for item in resourceslist %}
                     <li>
                         {% if item.icon %}
-                        <span class="it-{{item.icon}} project__resources-icon"></span>
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="{{ '/assets/bootstrap-italia/dist/svg/sprite.svg#it-' | relative_url }}{{item.icon}}"></use>
+                           </svg>
+                        </span>
                         {% endif %}
                         <a href="{{item.url}}" class="d-block project__resources-itemtitle">{{item.title}}</a>
                         <p>{{item.desc}}</p>
