@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "bootstrap-italia": "^1.2.4",
+        "bootstrap-italia": "^1.2.6",
         "chart.js": "^2.7.2"
     },
     "repository": {

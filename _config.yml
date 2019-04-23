@@ -59,6 +59,7 @@ exclude:
   - circle.yml
   - gulpfile.js
   - package.json
+  - package-lock.json
   - yarn.lock
   - swagger/.cache
   - swagger/dist

@@ -1,46 +1,44 @@
-
 <article class="newscard {{include.classes}} {% if include.flat != true %}newscard--w-shadow{% endif %}">
   <div class="d-flex newscard__top py-2 ">
-      {% if include.date %}
-      <time datetime="{{ include.date | date_to_xmlschema }}" class="ml-auto">
-          {{ include.date | date: "%b %-d, %Y" }}
-        </time>
-      {% endif %}
+    {% if include.date %}
+    <time datetime="{{ include.date | date_to_xmlschema }}" class="ml-auto">
+      {{ include.date | date: "%b %-d, %Y" }}
+    </time>
+    {% endif %}
   </div>
   {% if include.hasImage != false %}
-    <figure class="img-fluid">
-      <a href="{{ include.link }}" title="{{ include.title }}">
+  <figure class="img-fluid">
+    <a href="{{ include.link }}" title="{{ include.title }}">
       <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
-      </a>
-    </figure>
+    </a>
+  </figure>
   {% endif %}
   <h1 class="pr-0 pr-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
     {% if include.comingsoon %}
-    <span  class="badge badge-secondary">{{ t.coming_soon }}</span>
+    <span class="badge badge-secondary">{{ t.coming_soon }}</span>
     {% endif %}
   </h1>
   <main class="font-serif">
-      {% if include.text != '' %}
-        {{ include.text }}
-      {% endif %}
+    {% if include.text != '' %}
+    {{ include.text }}
+    {% endif %}
   </main>
   <div class="py-2 mt-auto d-flex w-100">
-  {% if include.author %}
+    {% if include.author %}
     <div class="newscard__author font-serif ">
-     <span >{{ t.by }} {{ include.author }}</span>
+      <span>{{ t.by }} {{ include.author }}</span>
     </div>
-  {% endif %}
-  {% if include.cta %} 
-  <div class="newscard__cta ml-auto ">
-    <a href="{{include.cta.url}}" title="{{include.cta.label}}">{{include.cta.label}}</a>
-  </div>
-  {% endif %}
+    {% endif %}
+    {% if include.cta %}
+    <div class="newscard__cta ml-auto ">
+      <a href="{{include.cta.url}}" title="{{include.cta.label}}">{{include.cta.label}}</a>
+    </div>
+    {% endif %}
   </div>
   {% if include.hasMore != false %}
   <div class="newscard__more py-1 ">
-      <a href="{{ include.link }}">{{ t.home_projects_expand}} &rarr;</a>
+    <a href="{{ include.link }}">{{ t.software.read_more}} &rarr;</a>
   </div>
   {% endif %}
 
 </article>
-
