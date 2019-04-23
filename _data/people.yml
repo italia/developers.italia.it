@@ -118,3 +118,19 @@ roberto:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/rpolli
+sebbalex:
+  name: Alessandro Sebastiani
+  desc:
+  pic: /assets/images/sebbalex.png
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/sebbalex
+    twitter:
+      name: twitter
+      link: https://twitter.com/sebbalex
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/alessandrosebastiani
