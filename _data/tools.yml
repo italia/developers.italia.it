@@ -34,22 +34,22 @@ en:
     subtitle: "Enter **forum.italia.it** to discuss the public digital services: platforms, API, software, security and more. Join the discussion!"
     icon: mail
     url: https://forum.italia.it
-    img: /assets/images/home-logo-forum.png
+    img: /assets/images/tools/Forum_Logo.svg
   -
     title: Slack
     subtitle: "**Chat and collaborate in real time** with the maintainers and the other developers in the Slack of Developers Italia."
     icon: comment
     url: https://slack.developers.italia.it/
-    img: /assets/images/home-logo-slack.png
+    img: /assets/images/tools/Slack_Logo.svg
   -
     title: Source Code
     subtitle: "In **github.com/italia** we develop (together) SDKs and examples for national platforms."
     icon: list
     url: https://github.com/italia
-    img: /assets/images/home-logo-github.png
+    img: /assets/images/tools/GitHub_Logo.svg
   -
     title: Docs
     subtitle: "**Docs Italia** is the platform for publishing technical and legal documents, based on git and ReadTheDocs."
     url: https://docs.italia.it/
-    img: /assets/images/home-logo-docs.png
+    img: /assets/images/tools/Docs_Logo.svg
 
