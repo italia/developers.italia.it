@@ -26,7 +26,7 @@ If you want to file a bug related to this website, you can open an issue on [Git
           url: 'https://forum.italia.it/'
 ---
 
-Developers Italia is a project in collaboration between [AGID](https://www.agid.gov.it/en) and the [Digital Transformation Team](https://teamdigitale.governo.it/en) which administers it.
+Developers Italia is a project developed in collaboration between [AGID](https://www.agid.gov.it/en) and the [Digital Transformation Team](https://teamdigitale.governo.it/en) which administers it.
 
 This website was born in order to improve and simplify the relationship between
  developers and the Public Administration, fostering the development of
@@ -43,7 +43,7 @@ Further information about the project goals may be found in the [launch Medium p
 
 ### Contacts 
 
-We are reachable via [Slack](https://slack.developers.italia.it/) or at the address [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
+We are reachable via [Slack](https://slack.developers.italia.it/) or through the [contatti@developers.italia.it](mailto:contatti@developers.italia.it) address.
 
 ### Team
 
