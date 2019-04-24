@@ -13,14 +13,15 @@ $(function () {
         var items = [];
 
         for (var i = 0; i < linkElements.length; i++) {
+          var imgElement = el.getElementsByTagName('img').item(i);
           var linkEl = linkElements[i];
           var size = linkEl.dataset.size.split('x');
 
           // create slide object
           var item = {
             src: linkEl.getAttribute('href'),
-            w: Number(size[0]),
-            h: Number(size[1]),
+            w: Number(size[0]) || imgElement.width || 1980,
+            h: Number(size[1]) || imgElement.height || 1020,
             msrc: linkEl.children[0].src
           };
 
@@ -87,7 +88,7 @@ $(function () {
     };
 
     ///Temporarily disabled on 2019-03-19 because it doesn't work properly.
-    ///initPhotoSwipeFromDOM('.tiled-gallery-inner');
+    initPhotoSwipeFromDOM('.tiled-gallery-inner');
 
     var printPage = function () {
       window.print()
