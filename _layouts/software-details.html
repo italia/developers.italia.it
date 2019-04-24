@@ -300,45 +300,17 @@ layout: default
   </div>
 </div>
 
-<hr class="divider {% if page.oldVariant.size == nil %}mt-0{% endif %}">
-
+{% if page.publiccode.categories %}
 <div class="container">
-  {% if page.relatedSoftwares.size >= 4 %}
-  <div class="interestRelatedSoftwares">
-    <h2> {{ t.software.interest_related_softwares }} </h2>
-    <div class="row">
-      <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
-        {% for relsw in page.relatedSoftwares %}
-        {% assign relsw_description = relsw.publiccode.description[active_lang]
-        | default: relsw.publiccode.description.en
-        | default: relsw.publiccode.description.it %}
-        {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
-        <div class="col-11 relate">
-          <img class="img-fluid"
-            src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-            alt="{{ relsw_name }}">
-          <div class="relate-body">
-            <p class="relate-title">
-              {{ relsw_name }}
-            </p>
-            {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
-            <a href="{{ relsw_url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% if page.publiccode.categories %}
   <div class="tags-relate text-center">
-    <strong>TAG</strong>
+    <strong>{{ t.software.categories | upcase }}</strong>
     {% for tag in page.publiccode.categories limit: 3 %}
     {% include set-tag.html tag=tag %}
     {% endfor %}
   </div>
-  {% endif %}
 </div>
+{% endif %}
+
 <div class="detail-sheet">
   <div class="container sheet">
     <div class="top">
@@ -551,5 +523,35 @@ layout: default
     </div>
   </div>
 </div>
+
+{% if page.relatedSoftwares.size >= 4 %}
+<div class="container">
+  <div class="interestRelatedSoftwares">
+    <h2> {{ t.software.interest_related_softwares }} </h2>
+    <div class="row">
+      <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
+        {% for relsw in page.relatedSoftwares %}
+        {% assign relsw_description = relsw.publiccode.description[active_lang]
+        | default: relsw.publiccode.description.en
+        | default: relsw.publiccode.description.it %}
+        {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
+        <div class="col-11 relate">
+          {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
+          <a href="{{ relsw_url }}"><img class="img-fluid"
+              src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+              alt="{{ relsw_name }}"></a>
+          <div class="relate-body">
+            <p class="relate-title">
+              {{ relsw_name }}
+            </p>
+            <a href="{{ relsw_url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {% include photoswipe-ui.html %}
