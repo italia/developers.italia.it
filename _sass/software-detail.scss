@@ -251,11 +251,26 @@ hr {
     padding-left: 2em;
   }
 }
+.owl-carousel .owl-item img{
+  width: unset !important;
+}
 .interestRelatedSoftwares {
   margin: 5em 0;
   h2 {
     text-align: center;
     margin-bottom: 1em;
+  }
+  .img-container{
+    display: block;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    .img-fluid{
+      position: absolute;
+      left: -56px;
+      top: -13px;
+      max-width: unset !important;
+    }
   }
   .relate-body {
     margin: 1em 0;

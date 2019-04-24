@@ -535,11 +535,15 @@ layout: default
         | default: relsw.publiccode.description.en
         | default: relsw.publiccode.description.it %}
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
-        <div class="col-11 relate">
+        <div class="col-12 relate">
           {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
-          <a href="{{ relsw_url }}"><img class="img-fluid"
-              src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-              alt="{{ relsw_name }}"></a>
+
+          <div class="img-container">
+            <a href="{{ relsw_url }}">
+              <img class="img-fluid"
+                   src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                   alt="{{ relsw_name }}"></a>
+          </div>
           <div class="relate-body">
             <p class="relate-title">
               {{ relsw_name }}
