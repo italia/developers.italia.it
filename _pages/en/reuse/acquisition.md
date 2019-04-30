@@ -8,7 +8,7 @@ see_also:
     url: /en/reuse/publication
 ---
 
-When acquiring software it is necessary to run a comparative evaluation
+When acquiring software, public entities shall run a comparative evaluation
 following the process described by the [Guidelines]({{ site.url_lineeguidariuso }}).
 
 Such a process privileges open source software (in reuse or third party one)

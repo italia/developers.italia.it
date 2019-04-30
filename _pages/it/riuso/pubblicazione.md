@@ -10,14 +10,14 @@ see_also:
 
 Quando una Pubblica Amministrazione italiana sviluppa o commissiona software è tenuta, ai sensi dell'[art. 69 del Codice dell'Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html), a pubblicarlo in repertorio pubblico con licenza aperta al fine di consentirne il riuso da parte di altre amministrazioni.
 
-Questo processo è dettagliatamente descritto nelle [Linee Guida]({{ site.url_lineeguidariuso }}) emesse dall'Agenzia per l'Italia Digitale. Gli allegati tecnici delle Linee Guida sono formulati in modo da poter essere direttamente inclusi nei contratti e nei capitolati relativi allo sviluppo di software, alla modifica di software esistente e alla manutenzione di software, al fine di ottemperare all'obbligo di rilascio.
+Questo processo è dettagliatamente descritto nelle [linee guida per l'Acquisizione e il riuso di software]({{ site.url_lineeguidariuso }}) emesse dall'Agenzia per l'Italia Digitale. Gli [allegati tecnici](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html) delle linee guida sono formulati in modo da poter essere direttamente inclusi nei contratti e nei capitolati relativi allo sviluppo di software, alla modifica di software esistente e alla manutenzione di software, al fine di ottemperare all'obbligo di rilascio.
 
 Il processo in sintesi:
 
 - L'amministrazione deve ottenerne sempre la **piena titolarità**.
 - Il software deve essere pubblicato in un **repositorio pubblico** (ad es. GitHub, GitLab, BitBucket ecc., anche on-premises purché **pubblicamente accessibile**).
 - Al software deve essere applicata una delle **[licenze approvate da Open Source Initiative](https://opensource.org/licenses)** (le Linee Guida ne suggeriscono alcune in particolare, per consentire la massima riusabilità).
-- Nel repositorio deve essere incluso il file `publiccode.yml` che ne descrive le caratteristiche e consente di popolare il [catalogo](/it/software) di Developers Italia.
+- Nel repositorio deve essere incluso il file `publiccode.yml` che ne descrive le caratteristiche e consente di popolare il [catalogo del software di Developers Italia](/it/software).
 
 ## publiccode.yml
 
