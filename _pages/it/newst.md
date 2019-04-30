@@ -1,10 +1,10 @@
 ---
 layout: posts
-lang: en
-title: News EN
+lang: it
+title: News IT
 pagination: 
   enabled: true
-  permalink: /en/news/:num
+  permalink: /it/news/:num
 ---
 
 {% include setlang.html %}

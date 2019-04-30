@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  Developers Italia al Google Summer of Code 2019
-subtitle: Developers Italia partecipa al programma estivo di Google per studenti che hanno idee e voglia di mettersi in gioco. Ecco come candidarsi
+title:  EN - Developers Italia at Google Summer of Code 2019
+subtitle: Developers Italia partecipate at summer program of Google per studenti che hanno idee e voglia di mettersi in gioco. Ecco come candidarsi
 date:   2019-03-07 12:00:00 +0100
 tags: developers daf gsoc
 categories: news
 image: /assets/icons/logo-it.svg
-lang: it
-locale: it_IT
+lang: en
+locale: en_US
 redirect_from:
    -
 ---
-
-[Developers Italia](https://developers.italia.it/) è stata selezionata anche quest’anno come organizzazione aderente all’[edizione 2019 del Google Summer of Code](https://summerofcode.withgoogle.com/). Grazie al **summer camp promosso da Google**, studenti da tutto il mondo potranno contribuire allo sviluppo dei progetti open source del team di Developers Italia, affiancati da un gruppo di mentor. 
+ENG
+[Developers Italia](https://developers.italia.it/) has been selected anche quest’anno come organizzazione aderente all’[edizione 2019 del Google Summer of Code](https://summerofcode.withgoogle.com/). Grazie al **summer camp promosso da Google**, studenti da tutto il mondo potranno contribuire allo sviluppo dei progetti open source del team di Developers Italia, affiancati da un gruppo di mentor. 
 
 ## Google Summer of Code, di che si tratta
 
