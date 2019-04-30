@@ -413,12 +413,10 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
+                  {% for platform in page.publiccode.platforms %}
+                  {{ platform }}<br />
+                  {% endfor %}
                 </p>
-                {% for platform in page.publiccode.platforms %}
-                <p class="platforms">
-                  {{ platform }}
-                </p>
-                {% endfor %}
               </div>
               {% endif %}
               <div class="col-md">
@@ -541,8 +539,8 @@ layout: default
           <div class="img-container">
             <a href="{{ relsw_url }}">
               <img class="img-fluid"
-                   src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-                   alt="{{ relsw_name }}"></a>
+                src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                alt="{{ relsw_name }}"></a>
           </div>
           <div class="relate-body">
             <p class="relate-title">
