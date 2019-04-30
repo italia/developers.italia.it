@@ -487,7 +487,7 @@ layout: default
               <div class="other-detail">
                 <p><span class="label">{{ t.software.supported_languages }}</span>
                   {% for language in page.publiccode.localisation.availableLanguages %}
-                  {% include set-language-supported.html label=language %}
+                  {% include set-language-supported.html lang=language %}
                   {% endfor %}
                 </p>
               </div>

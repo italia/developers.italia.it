@@ -1,4 +1,3 @@
-{% assign label_languages = include.label %}
-{% assign software_supported_languages = site.data.software_supported_languages[label_languages] %}
+{% assign labels = site.data.languages[include.lang] %}
 
-{% if software_supported_languages[active_lang] != nil %}{{ software_supported_languages[active_lang] }} {% else %} {{ software_supported_languages.en }} {% endif %}<br/>
+{{ labels[active_lang] | default: labels.en | default: include.lang }}<br />
