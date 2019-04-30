@@ -64,11 +64,7 @@ exclude:
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
-  - .idea/
 
-
-#paginate: 20
-#paginate_path: "/it/news/page:num/"
 
 pagination:
   enabled: true
