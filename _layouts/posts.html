@@ -21,9 +21,11 @@ layout: default
       <div class="container pt-4 d-flex w-100">
         <h1>{{ page.title }}</h1>
         <div class="postslisting__filtertag ml-auto d-flex">
+          {% if active_lang=='it' %}
           <a href="#" class="align-self-center d-flex" data-activate-element
             data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span
               class="ml-3 it-collapse"></span></a>
+          {% endif %}
         </div>
       </div>
       <div class="container postslisting__tags deactive" data-activatedby="filterTags">

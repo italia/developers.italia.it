@@ -8,6 +8,7 @@ categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
 lang: it
+locale: it_IT
 redirect_from:
    - 
 ---

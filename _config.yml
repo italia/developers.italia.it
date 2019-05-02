@@ -78,7 +78,7 @@ pagination:
 
 # tag pages
 tag_page_layout: posts_by_tag
-tag_page_dir: news
+tag_page_dir: it/news
 tag_page_data:
   langs:
     - it
