@@ -1,3 +1,5 @@
+var elasticHost = 'https://elasticsearch.developers.italia.it';
+
 var paramKeys = [
   'publiccode.categories',
   'publiccode.developmentStatus',
@@ -17,42 +19,42 @@ var pagesQueryconfig = {
   'software_open': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'reuse_software': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'administrations': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'category': {
     'type': ['software'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'all': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'platforms': {
     'type': ['post'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   },
   'api': {
     'type': ['post'],
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     }
   }
 };
@@ -60,42 +62,42 @@ var pagesQueryconfig = {
 var autocompleteQueryconfig = {
   'all': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'platforms': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'software_open': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'reuse_software': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'api': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9
   },
   'administrations': {
     'elasticsearch_connection': {
-      'host': 'https://elasticsearch.developers.italia.it'
+      'host': elasticHost
     },
     'inputSelector': 'form .autocomplete input',
     'size': 9

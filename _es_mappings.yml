@@ -60,6 +60,9 @@ properties:
     type: text
     analyzer: autocomplete
     search_analyzer: autocomplete_search
+    fields:
+      raw:
+        type: keyword
   toc:
     type: boolean
   top_projects_link:
