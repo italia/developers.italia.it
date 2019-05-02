@@ -7,7 +7,7 @@ tags: developers daf api designers gsoc
 categories: news
 author: Leonardo Favario
 image: /assets/icons/logo-it.svg
-lang: en
+locale: en_US
 redirect_from:
    -
 ---
