@@ -20,13 +20,14 @@ layout: default
 
       <div class="container pt-4 d-flex w-100">
         <h1>{{ page.title }}</h1>
+        {% if active_lang=='it' %}
         <div class="postslisting__filtertag ml-auto d-flex">
-          {% if active_lang=='it' %}
-          <a href="#" class="align-self-center d-flex" data-activate-element
+        <a href="#" class="align-self-center d-flex" data-activate-element
             data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span
               class="ml-3 it-collapse"></span></a>
-          {% endif %}
+
         </div>
+        {% endif %}
       </div>
       <div class="container postslisting__tags deactive" data-activatedby="filterTags">
         {% capture categories %}
@@ -35,10 +36,12 @@ layout: default
 
         {% assign categories_ = categories | strip | split: ':' %}
 
-        {% include pills.html items=categories_ small=true %}
-
+        {% if active_lang=='it' %}
+          {% include pills.html items=categories_ small=true %}
+        {% endif %}
       </div>
     </div>
+
     <div class="postslisting__content my-2 my-md-4">
       <div class="container postlisting__sticky my-2 ">
         <div class="row row-eq-height ">
