@@ -594,13 +594,13 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function () {
   switch (value) {
     case 'az':
       sort.push({
-        'name': { 'order': 'asc' }
+        'name.raw': { 'order': 'asc' }
       });
       break;
 
     case 'za':
       sort.push({
-        'name': { 'order': 'desc' }
+        'name.raw': { 'order': 'desc' }
       });
       break;
 
@@ -630,7 +630,9 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   }
   typeof this.throbber !== 'undefined' ? this.throbber.stop() : '';
   $(this.config['pageContent']).text('');
-  $('.intro').html('');
+
+  // enable-disable sort selectbox
+  // $('.intro').html('');
 
   if (response.hits.total === 0) {
     var keyword = this.params['keyword'].slice(0).pop();
