@@ -6,7 +6,6 @@ date:   2019-03-07 12:00:00 +0100
 tags: developers daf gsoc
 categories: news
 image: /assets/icons/logo-it.svg
-lang: en
 locale: en_US
 redirect_from:
    -

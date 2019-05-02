@@ -7,7 +7,6 @@ tags: developers software opensource
 categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
-lang: it
 locale: it_IT
 redirect_from:
    - 
