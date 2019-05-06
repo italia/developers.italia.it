@@ -22,5 +22,18 @@
       font-weight: 300;
     }
 
+    &-links {
+      list-style-type: none;
+      margin-top: 2em;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        margin-right: 1em;
+        a {
+          color: white;
+        }
+      }
+    }
+
 
   }
