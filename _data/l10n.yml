@@ -22,7 +22,7 @@ it:
     search_form_off: disattiva il form di ricerca
     search_form_on: attiva il form di ricerca
     search_form_start: avvia la ricerca
-    site_subtitle: Sviluppiamo i servizi pubblici
+    site_subtitle: Sviluppiamo i servizi pubblici, insieme
     site_title: Developers Italia
     share_msg: condividi
     skiplink_goto_content: vai ai contenuti
@@ -221,7 +221,7 @@ en:
     search_form_off: exit search form
     search_form_on: enter search form
     search_form_start: start searching
-    site_subtitle: We develop public services
+    site_subtitle: We develop public services, together
     site_title: Developers Italia
     share_msg: share
     skiplinks_goto_content: go to content
