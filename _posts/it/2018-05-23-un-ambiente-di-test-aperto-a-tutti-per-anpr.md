@@ -8,7 +8,7 @@ tags: developers open-source anpr
 categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
    - 
 ---
