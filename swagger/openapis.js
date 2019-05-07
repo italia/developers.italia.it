@@ -1,5 +1,5 @@
-// Original content is passed down from
-// https://raw.githubusercontent.com/italia/developers.italia.it/master/_data/apis.yml
+// Original content is passed down from `_data/apis.yml` through
+// {% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
 module.exports = [
   "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml",
   "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/api.daf.teamdigitale.it.yaml",

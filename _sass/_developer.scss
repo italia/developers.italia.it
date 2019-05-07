@@ -552,6 +552,10 @@ body.layout-github-issues {
     content: '• • •';
   }
 
+  #issues_table td {
+    border: 1px solid black;
+    padding: 4px;
+  }
   table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > td.sorting:after {
     display: none !important;
   }

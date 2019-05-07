@@ -6,55 +6,63 @@ layout: default
 
 {% comment %}
 
-  {% include breadcrumbs.html %}
-  {% include share.html %}
+{% include breadcrumbs.html %}
+{% include share.html %}
 
-  {% assign subnav = site.data[page.subnav] %}
-  {% include linklist.html items=subnav dynamic=true %}
+{% assign subnav = site.data[page.subnav] %}
+{% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
 
-{% assign apis = site.data.apis | where_exp:"api", "api.language contains active_lang" %}
+{% assign apis = site.data.apis %}
 {% assign root = '/' | append: active_lang | append: '/api' %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title }}</h1>
-    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
-</div>
 
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-
-        <div class="Grid Grid--equalHeight Grid--withGutter">
-        {% for api in apis %}
-          {% assign url = '' %}
-          {% if api.comingsoon != true %}
-            {% assign url = api.name | datapage_url: root %}
-          {% endif %}
-
-          {% assign hasImage = false %}
-          {% if api.contact.logo %}
-            {% assign hasImage = true %}
-          {% endif %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include api-card.html
-              image=api.contact.logo
-              title=api.name
-              text=api.abstract
-              link=url
-              subtitle=api.contact.name
-              alt=api.name
-              hasImage=hasImage
-              comingsoon=api.comingsoon
-            %}
-          </div>
-
-        {% endfor %}
+<div class="apilist">
+  <div class="container">
+    <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
+      <h1>{{ page.title }}</h1>
+      <div class="row mb-2 mb-md-4">
+        <div class="col-md-6">
+          <h2 class="subtitle">{{ page.subtitle }}</h2>
         </div>
+        <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0 apilist__disclaimer">
+          {{page.content}}
+        </div>
+      </div>
+      <div class="apilist__listing">
+        <div class="row row-eq-height">
+          {% for api in apis %}
+          {% assign url = '/' | append: active_lang | append: '/api/' | append: api.slug | downcase %}
 
+          <div class="col-md-4 p-2">
+            <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
+              {% if api.contact.logo %}
+              <figure>
+                <a title="{{api.name}}" href="{{url}}">
+                  <img class="w-100" src="{{api.contact.logo | relative_url}}">
+                </a>
+              </figure>
+              {% endif %}
+              <h1 class="apilist__listing__title"><a title="{{api.title}}" class="color-inherit decoration-none"
+                  href="{{url}}">{{api.title}}</a>
 
+              </h1>
+              {% if api.contact %}
+              <h2>{{api.contact.name}}</h2>
+              {% endif %}
+              <p class="mt-md-2">{{api.abstract}}</p>
+              {% if api.comingsoon != true %}
+              <a class="apilist__listing__url mt-auto" href="{{url}}">{{t.software.read_more}} &rarr;</a>
+              {% else %}
+              <span class="badge badge-pill badge-secondary apilist__listing__soon mx-0">{{ t.coming_soon }}</span>
+              {%endif%}
+            </article>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
 </div>

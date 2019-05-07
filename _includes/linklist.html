@@ -1,33 +1,42 @@
 {% assign items = include.items  %}
 
 {% if include._internal %}
-  <ul>
-{% else %}
-  <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
-{% endif %}
-
-  {% assign navurl = page.url | remove: 'index.html' %}
-  {% for item in items %}
-  	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}" >
+<ul>
+  {% else %}
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
+    {% endif %}
+    {% assign navurl = page.url | remove: 'index.html' %}
+    {% for item in items %}
+    {% assign isActive = false %}
+    {% if item.active_by_layout == page.layout or item.active_by_layout contains page.layout %}
+    {% assign isActive = true %}
+    {% elsif item.active_by_firstlevel %}
+    {% assign pathArray = page.url | split:'/' %}
+    {% if item.active_by_firstlevel contains pathArray[1] or item.active_by_firstlevel contains pathArray[2] %}
+    {% assign isActive = true %}
+    {%endif%}
+    {% elsif page.url==item.url %}
+    {% assign isActive = true %}
+    {% endif %}
+    <li class="{{ item.liClass }} {% if isActive%}active{%endif%}">
 
       {% if item.url == "#" or item.url contains '//' %}
-        {% assign _url = item.url %}
+      {% assign _url = item.url %}
       {% else %}
-        {% assign _url = item.url | relative_url %}
+      {% assign _url = item.url | relative_url %}
       {% endif %}
 
-  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %} Linklist-link"
-        {% if item.image %}data-megamenu-class="Linklist--withImage"{% endif %}
-        {% if item.image %}style="background-image: url({{ item.image }})"{% endif %}
-      >
+      <a href="{{ _url }}" class="Linklist-link " {% if item.image %}data-megamenu-class="Linklist--withImage"
+        {% endif %} {% if item.image %}style="background-image: url({{ item.image }})" {% endif %}>
         {{ item.markup_pre }}
-				{{ t[item.title] | default: item.title }}
+        {{ t[item.title] | default: item.title }}
         {{ item.markup_post }}
-  		</a>
+      </a>
       {% if item.subitems %}
-    		{% include linklist.html layout=item.layout items=item.subitems _internal=true %}
-    	{% endif %}
-  	</li>
-  {% endfor %}
+      {% include linklist.html layout=item.layout items=item.subitems _internal=true %}
+      {% endif %}
+    </li>
+    {% endfor %}
 
-</ul>
+  </ul>

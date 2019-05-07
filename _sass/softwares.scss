@@ -1,0 +1,226 @@
+.page-softwares-list{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.arguments {
+  .head {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #list-tags {
+    max-height: 90vh;
+    overflow-y: scroll;
+    .form-check-label {
+      position: relative;
+      input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px; 
+        margin: 0;
+      }
+      span { 
+        padding-left: 24px;
+        margin-left: 0.5em;
+        text-transform: capitalize;
+      }
+    } 
+    .show_all {
+      margin-top: 2em;
+    }
+  }
+}
+.status {
+  margin-top: 4em;
+  .head {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #list-status {
+    .form-check-label {
+      position: relative;
+      input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px; 
+        margin: 0;
+      }
+      span { 
+        padding-left: 24px;
+        margin-left: 0.5em;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.abstract-sorting {
+  padding-top: 2em;
+  border-bottom: 1px solid #dee2e6;
+  .results-number {
+    font-weight: 600;
+    p {
+      margin-top: auto;
+    }
+  }
+}
+.abstract-sorting-mobile {
+  text-align: center;
+  padding: 1em  0;  
+  border-bottom: 1px solid #dee2e6;
+  div {
+    padding-top: 0.5em ;
+    padding-bottom: 0.5em ;
+    &.filters {
+      border-right: 1px solid #dee2e6;
+      border-left: 1px solid #dee2e6;
+      .active-numbers {
+        background: $primary;
+        border-radius: 0.8em;
+        color: white;
+        padding: 0 0.5em;
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.list-item-sorting {
+  margin-top: 3em;
+  .software_macro_category_title{
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1em;   
+    h2 {
+    }
+    .how{
+      text-align: right;
+      padding-top: 0.8em;
+    }
+    a {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .item {
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    .main-image {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 175px;
+      background-size: cover !important;
+    }
+    .name {
+      font-size: 1.2em;
+      margin: 1rem 0;
+      font-weight: 700;
+      color: #333333;
+    }
+    .name+a {
+      text-transform: uppercase;
+      color: $primary;
+    }
+    .item-more {
+      text-transform: uppercase;
+      color: $primary;
+    }
+  }
+}
+
+#filters {
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content,
+  .modal-body {
+    height: 100vh;
+  }
+  .modal-header{
+    .modal-title {
+      span {
+        color: $primary;
+        margin-right: 1em;
+      }
+    }
+    .save {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+  .pill-filters {
+    text-transform: uppercase;
+    .nav-pills {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .nav-link {
+        color: #5A6772;
+        font-weight: 600;
+        &.active {
+          color: $primary;
+          background: white;
+          border-bottom: 2px solid  $primary;
+          border-radius: 0;
+        }      
+      }
+    }
+  }
+  .modal-body {
+    background: rgba(222,226,230,0.2);
+    padding-top: 0;
+    overflow-y: scroll;
+    .form-check {
+      padding: 1em;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .form-check-label {
+      position: relative;
+      input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px; 
+        margin: 0;
+      }
+      span { 
+        padding-left: 24px;
+        margin-left: 0.5em;
+        text-transform: capitalize;
+      }
+    } 
+  }
+}
+
+#sortBy {
+  padding-top: 25vh;
+  .modal-content {
+    border-radius: 0.6em;
+  }
+  .modal-header {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .modal-body {
+    a {
+      display: block;
+      margin-bottom: 1em;
+      color: #5A6772;
+      &.active {
+        color: $primary;
+        font-weight: 600;
+        i {
+          float: right;
+        }
+      }
+    }
+  }
+}

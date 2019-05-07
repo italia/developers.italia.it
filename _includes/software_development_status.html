@@ -1,0 +1,4 @@
+{% assign label_status = include.label %}
+{% assign software_status = site.data.development_status[label_status] %}
+
+<span class="status"> {% if software_status[active_lang] != nil %}{{ software_status[active_lang] }} {% else %} {{ software_status.en }} {% endif %}</span> 

@@ -46,9 +46,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
-  - jekyll-paginate
   - jekyll-toc
   - jekyll-sitemap
+  - searchyll
 exclude:
   - vendor
   - README.md
@@ -59,12 +59,14 @@ exclude:
   - circle.yml
   - gulpfile.js
   - package.json
+  - package-lock.json
   - yarn.lock
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
 
-paginate: 10
+
+paginate: 20
 paginate_path: "/news/page:num/"
 
 # tag pages
@@ -82,23 +84,32 @@ owner_logo: /assets/images/agid-logo-bb.svg
 partner_short: Team Digitale
 partner_full: Team per la Trasformazione Digitale
 partner_link: https://teamdigitale.governo.it
-privacy_link: https://developers.italia.it/it/privacy-policy
+privacy_link: /it/privacy-policy
 gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
 partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
-pill: beta
+pill: ""
+url_lineeguidariuso: https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/
+newsletterdata:
+    placeholdertext: mario.rossi@devsoftware.it
+    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
+    hidden-inputs:
+        -
+          name: group
+          value: 16
+        -
+          name: list
+          value: 3
 
 collections:
    pages:
      output: true
      permalink: /:path/
      layout: page
-   projects:
+   platforms:
      output: true
      permalink: /:path/
-     layout: project
-   faqs:
-     output: false
 
+# Here we assign a "type" string to each page. This is needed for the search engine.
 defaults:
   -
     scope:
@@ -106,23 +117,73 @@ defaults:
       type: "pages"
     values:
       subnav: "subnav"
+  -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "projects"
+      type: "platforms"
     values:
       toc: true
+      layout: platform
+      type: platform
+  -
+    scope:
+      path: "_posts"
+    values:
+      type: news
 
 page_gen:
   - index_files: false
-    name: name
+    name: slug
     data: apis
     template: api-details
+    defaults:
+      type: api
     dir: it/api
-    filter_condition: "record['language'].include? 'it'"
+    #filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: name
+    name: slug
     data: apis
     template: api-details
+    defaults:
+      type: api
     dir: en/api
-    filter_condition: "record['language'].include? 'en'"
+    #filter_condition: "record['language'].include? 'en'"
+
+  - index_files: false
+    name: slug
+    data: crawler.softwares
+    template: software-details
+    defaults:
+      lang: it
+    dir: it/software
+    # filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: slug
+    data: crawler.softwares
+    template: software-details
+    defaults:
+      lang: en
+    dir: en/software
+    # filter_condition: "record['language'].include? 'en'"
+
+sass:
+    load_paths:
+      - _sass
+      - node_modules
+      - assets
+    sass_dir: /
+
+elasticsearch:
+  url: ENV_ELASTICSEARCH_URL
+  number_of_shards: 5
+  number_of_replicas: 1
+  index_name: "jekyll"
+  default_type: "post"
+  custom_settings: _es_settings.yml
+  custom_mappings: _es_mappings.yml
+  ignore:
+    - /it/software/*
+    - /en/software/*
+    - /it/bagnacavallo/

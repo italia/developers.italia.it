@@ -18,52 +18,74 @@ it:
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
     scrolltop_label: torna all'inizio dei contenuti
-    search_form_label: Vai a progetto...
+    search_form_label: Cerca
     search_form_off: disattiva il form di ricerca
     search_form_on: attiva il form di ricerca
     search_form_start: avvia la ricerca
-    site_subtitle: La comunità italiana degli sviluppatori di servizi pubblici
-    site_title: /developers
+    site_subtitle: Sviluppiamo i servizi pubblici, insieme
+    site_title: Developers Italia
     share_msg: condividi
     skiplink_goto_content: vai ai contenuti
     skiplink_goto_navigation: vai alla navigazione del sito
     toggle_menu_label: accedi al menu
+    popular_searches: ricerche frequenti
+    print_the_page: Stampa la pagina
+    participate: Partecipa
 
     by: di
     on_: "su"
     coming_soon: in arrivo
     news_categories: argomenti
-    news_title: Novità
+    news_title: News
     news_nav_title: Argomenti delle novità
+    news_filter: Filtra per argomento
+    see_also: "Vedi anche:"
 
     paginator_previous_page: pagina precedente
     paginator_next_page: pagina successiva
     paginator_page: pagina
 
-    project_leader: Project leader
+    project_leader: Community leader
 
-    home_hero: La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
+    home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
+    home_hero_button: Scopri di più
+    home_hero_buttonurl: '/it/come-lo-uso'
     home_newsletter_title: Iscriviti alla Newsletter
     home_newsletter_placeholder: indirizzo email
     home_newsletter_button: Iscriviti
-    home_newsletter_footer: Rimani in contatto per essere informato via via che aggiungeremo nuovi progetti. Non ti assilleremo con troppe email, parola di sviluppatore.
-    home_projects_title: Progetti in evidenza
-    home_projects_expand: per saperne di più
-    home_projects_others: Tutti i progetti
-    home_projects_count: progetti in totale
-    home_news_title: Novità
+    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
+    home_platforms_title: Piattaforme
+    home_platforms_viewall: Vedi tutte
+    home_platforms_viewallurl: '/it/piattaforme'
+    home_software_title: Software a riuso ed open source
+    home_software_captionurl: '/it/riuso'
+    home_software_viewall: Vedi tutti
+    home_software_viewallurl: '/it/software'
+    home_api_title: API
+    home_api_viewall: Vedi tutte
+    home_api_viewallurl: '/it/api'
+    home_news_title: News
     home_news_expand: per saperne di più
+    home_tags: Cerca per categoria
+    newsletter_text: Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) che ti aiuterà a rimanere in contatto con noi.
+    newsletter_privacy: Accetto la
+    newsletter_submit: Iscriviti
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
 
-    credits_contributors: "Hanno contribuito ai progetti:"
-    credits_maintainers: "Project leader e maintainer:"
+    credits_contributors: "Contributor:"
+    credits_maintainers: Mantainer
+    banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
+    banner_joinus_h1: Unisciti alla nostra community!
+    banner_joinus_action: Vieni su Slack
+    how_to_use: Come lo uso
 
     status_maintainer: Developer Relation, Team Digitale
     status_maintainer: maintainer
 
     in_collaboration_with: In collaborazione con
+    project_of: Progetto di
 
     header_link_trasformazione: Piano Triennale
     header_link_developers: Developers
@@ -71,6 +93,8 @@ it:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Le community
+    header_link_strumenti: GLi strumenti
     todo_page_project: Progetto
     todo_page_subproject: Repository
     todo_page_title: Titolo
@@ -93,13 +117,85 @@ it:
         cie: Carta d'Identità Elettronica
         security: Security
         18app: 18App
+    project_abilitante: Piattaforma abilitante
+    project_owner: Proprietario
+    project_manager: Gestore
+    project_risorse: Risorse
 
     swagger:
-      download: "Scarica OpenAPI"
+      download: "Scarica specifica"
+      server: "Copia link del server"
       url: "Server"
       developer: "Erogatore"
       channel: "Contatto"
       tos: "Condizioni di utilizzo"
+      authorize: "Autorizza"
+      goToCard: Vai alla scheda
+      platform: "Piattaforma di riferimento"
+      goToPlatform: "Vai alla piattaforma"
+
+    software:
+      software_open: Software open source di terze parti
+      reuse_software: Software a riuso
+      filters: Filtri
+      sort_by: Ordina per
+      categories: Categorie
+      results: risultati
+      variant_by: Variante di
+      published_by: Pubblicato da
+      software_maintained_by: Software mantenuto da
+      technical_contact: Contatto tecnico
+      technical_contacts: Contatti tecnici
+      technical_detail: Dettagli tecnici
+      vitality: Vitalità
+      development_status: Stato di sviluppo
+      goToDocumentation: Vai alla documentazione
+      goToCode: Vai al codice
+      goToRoadmap: Vai alla roadmap
+      functionality: Funzionalità del software
+      functionality_this_variant: Funzionalità di questa variante
+      functinoality_other_variant: Funzionalità di altre varianti
+      used_by: Usata da
+      administration: amministrazione
+      administrations: amministrazioni
+      variants_present: varianti presenti
+      variant_present: variante presente
+      show_all: Mostra tutto
+      interest_related_softwares: Altri software che potrebbero interessarti
+      read_more: leggi di più
+      detailed_info: Informazioni di dettaglio
+      maintainance_type: Tipo di manutenzione
+      contract_with: Contratto con
+      last_release: Ultimo rilascio
+      license: Licenza
+      platforms: Piattaforme
+      dependencies_list: Lista dipendenze
+      enabling_platforms: Piattaforme abilitanti
+      services_on: Servizi su
+      until: fino al
+      extende_description: Descrizione estesa
+      related_software: Software correlati
+      main_audience: Audience principale
+      supported_languages: Lingue supportate
+      awards: Premi
+      api_documentation: Documentazione API
+      additional_features: Funzionalità aggiuntive
+      see_more: Vedi tutto
+      others_info: Altre informazioni
+      software_type: tipologia software
+      public_entities: Enti
+      go_to_detail: vai al dettaglio
+      view_all_photos: Guarda tutte le foto
+      tooltip: "
+        [Vitality è un indice](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calcolato prendendo in considerazione le seguenti quattro categorie: 
+
+        * **Code activity**: il numero di commit e merge giornalieri; 
+
+        * **Release history**: il numero di release giornaliere; 
+
+        * **User community**: il numero di autori unici; 
+
+        * **Longevity**: l'età del progetto. I range di ogni misura possono essere trovati nel file *vitality-ranges.yml* in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
 
 en:
   code: eng
@@ -121,16 +217,19 @@ en:
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
     scrolltop_label: back to contents
-    search_form_label: Project quicksearch...
+    search_form_label: Search
     search_form_off: exit search form
     search_form_on: enter search form
     search_form_start: start searching
-    site_subtitle: The Italian community of developers of public services
-    site_title: /developers
+    site_subtitle: We develop public services, together
+    site_title: Developers Italia
     share_msg: share
     skiplinks_goto_content: go to content
     skiplinks_goto_navigation: go to site navigation
     toggle_menu_label: go to navigation
+    popular_searches: popular searches
+    print_the_page: Print the page
+    participate: Participate
 
     by: by
     on_: "on"
@@ -138,35 +237,54 @@ en:
     news_categories: tags
     news_title: News
     news_nav_title: Categories
+    news_filter: Filter by topic
+    see_also: "See also:"
 
     paginator_previous_page: previous page
     paginator_next_page: next page
     paginator_page: page
 
-    project_leader: Project leaders
+    project_leader: Community leaders
 
-    home_hero: A community of developers who design and make Italian digital public services
-    home_newsletter_title: Subscribe to our Newlsetter
+    home_hero: A community of developers who design and code Italian digital public services
+    home_hero_button: Learn more
+    home_hero_buttonurl: '#'
+    home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
-    home_newsletter_footer: Stay in touch to be informed as we add more projects. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
-    home_projects_title: Highlighted projects
-    home_projects_expand: read more
-    home_projects_others: All the projects
-    home_projects_count: total projects
+    home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
+    home_platforms_title: Platforms
+    home_platforms_viewall: View all
+    home_platforms_viewallurl: '/en/platforms'
+    home_software_title: Open Source Software
+    home_software_captionurl: '/en/reuse'
+    home_software_viewall: View all
+    home_software_viewallurl: '/en/software'
+    home_api_title: API
+    home_api_viewall: View all
+    home_api_viewallurl: '/en/api'
     home_news_title: News
     home_news_expand: read more
+    home_tags: Browse by tag
+    newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
+    newsletter_privacy: Accetto la
+    newsletter_submit: Subscribe
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need
 
     credits_contributors: "Project contributors:"
     credits_maintainers: "Projects leaders & maintainers:"
+    banner_joinus_h2: Are you a developer, a coder or a geek?
+    banner_joinus_h1: Join our community!
+    banner_joinus_action: Chat on Slack now
+    how_to_use: How do I use it
 
     status_member_of_board: member of board
     status_maintainer: maintainer
 
     in_collaboration_with: In collaboration with
+    project_of: Project of
 
     header_link_trasformazione: Piano Triennale
     header_link_developers: Developers
@@ -174,6 +292,8 @@ en:
     header_link_forum: Forum
     header_link_docs: Docs
     header_link_github: GitHub
+    header_link_community: Communities
+    header_link_strumenti: Tools
     todo_page_project: Project
     todo_page_subproject: Repository
     todo_page_title: Title
@@ -194,9 +314,84 @@ en:
         daf: Data & Analytics Framework
         design: Italia Design System
         18app: 18App
+    project_abilitante: Enabling Platform
+    project_owner: Owner
+    project_manager: Manager
+    project_risorse: Resources
 
     swagger:
       download: "Download OpenAPI"
+      server: "Copy server link"
       url: "Server"
+      developer: "Developer"
       channel: "Contact"
       tos: "Terms of service"
+      authorize: "Authorize"
+      goToCard: Vai alla scheda
+      platform: "Reference platform"
+      goToPlatform: "Go to platform"
+
+    software:
+      software_open: Software open source
+      reuse_software: Reuse software
+      sort_by: Sort by
+      filters: Filters
+      categories: Categories
+      results: results
+      variant_by: Variant of
+      published_by: Published by
+      software_maintained_by: Software maintained by
+      technical_contact: Technical contact
+      technical_contacts: Technical contacts
+      technical_detail: Technical detail
+      vitality: Vitality
+      goToDocumentation: Go to the documentation
+      goToCode: Go to the code
+      goToRoadmap: Go to the roadmap
+      functionality: Software functionality
+      functionality_this_variant: Functionality of this variant
+      functionality_other_variant: Functionality of others variants
+      used_by: Used by
+      development_status: Development status
+      administration: administration
+      administrations: administrations
+      variants_present: variants present
+      variant_present: variant present
+      show_all: Show all
+      interest_related_softwares: Other software that may interest you
+      read_more: read more
+      detailed_info: detailed information
+      maintainance_type: Type of maintenance
+      contract_with: Contract with
+      last_release: Last release
+      license: License
+      platforms: Platforms
+      dependencies_list: List of dependencies
+      enabling_platforms: Enabling platforms
+      services_on: Services on
+      until: until the
+      extende_description: Extended description
+      related_software: Related softwares
+      main_audience: Main audience
+      supported_languages: Supported languages
+      awards: Awards
+      api_documentation: Api documentation
+      additional_features: Additional features
+      see_more: See all
+      others_info: Others information
+      software_type: software type
+      public_entities: public entities
+      go_to_detail: go to detail
+      view_all_photos: View all the photos
+      tooltip: "
+        [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
+
+        * **Code activity**: the daily number of commits and merges;
+
+        * **Release history**: the daily number of releases;
+
+        * **User community**: the number of unique authors;
+
+        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+
+

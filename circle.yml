@@ -7,53 +7,74 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/ruby:2.5.1-node-browsers
+      - image: circleci/ruby:2.6.0-node-browsers
     environment:
+      - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
     steps:
       - checkout
+      - run: npm install .
+      - run: gem install bundler
       - run: bundle install
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/output/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
-      - run: cp -r ./github ./_site/
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
   # how to reach the production site.
   build:
     docker:
-      - image: circleci/ruby:2.5.1-node-browsers
+      - image: circleci/ruby:2.6.0-node-browsers
     environment:
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
+      - run: npm install .
+      - run: gem install bundler
       - run: bundle install
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
+      - run: rsync --delete -avP --rsync-path="sudo -u www-data rsync" circleci@developers.italia.it:/data/crawler/output/ ./_data/crawler/
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: cp -r ./github ./_site/
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-      - run: mkdir -p ~/.ssh
-      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
+      - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/pre.developers.italia.it/web/
 
 workflows:
   version: 2
-  continuous-deploy:
+  daily-build-and-deploy:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - new-version-master
+    jobs:
+      - build
+  on-commit-build-and-deploy:
     jobs:
       - build:
           filters:
             branches:
               only:
                 - master
-  do-test:
+                - new-version-master
+  on-commit-test:
     jobs:
       - test:
           filters:
             branches:
               ignore:
                 - master
+                - new-version-master

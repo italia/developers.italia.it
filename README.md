@@ -1,14 +1,26 @@
 # Sorgenti di developers.italia.it
+
 ## La comunità degli sviluppatori che progettano e realizzano i servizi pubblici digitali in Italia
 
 Questo repositorio contiene il codice sorgente di developers.italia.it.
 
 Il sito è sviluppato con Jekyll. Per configurare un ambiente di sviluppo è sufficiente eseguire i seguenti comandi:
 
-    $ bundle install
-    $ bundle exec jekyll serve
+```bash
+export ELASTICSEARCH_URL=""
+npm install
+bundle install
+bundle exec jekyll serve
+```
 
 Se vuoi contribuire una modifica, è sufficiente aprire una pull-request.
+
+### Environment variables
+
+Le seguenti variabili d'ambiente devono essere configurate (ad es. in CircleCI):
+
+* `ELASTICSEARCH_URL`: URL di Elasticsearch completo di credenziali dell'utente con permessi cluster:monitor (ad es. l'utente "elastic")
+* `GITHUB_ACCESS_TOKEN`: token per l'accesso illimitato alle API di GitHub
 
 ## Licenza
 

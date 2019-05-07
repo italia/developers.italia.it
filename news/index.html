@@ -1,67 +1,8 @@
 ---
-layout: default
+layout: posts
 lang: it
+title: News
 ---
 
 {% include setlang.html %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ t.news_title }}</h1>
-</div>
-
-<hr class="Separator-room reduced u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
-
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
-
-    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      {% for post in paginator.posts %}
-
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' %}
-
-        <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
-        {% include card.html
-          date=post.date
-          author=post.author
-          title=post.title
-          link=post.url
-          text=excerpt
-          hasImage=false
-          categories=post.tags
-          flat=true
-          classes='u-background-grey-15'
-          %}
-        </div>
-
-      {% endfor %}
-
-      <div>
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="u-color-50">{{ t.paginator_previous_page }}</a>
-        {% else %}
-          <span class="u-color-grey-20">{{ t.paginator_previous_page }}</span>
-        {% endif %}
-        <span>{{ t.paginator_page }}: {{ paginator.page }} {{ t.on_ }} {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="u-color-50">{{ t.paginator_next_page }}</a>
-        {% else %}
-          <span>{{ t.next_page }}</span>
-        {% endif %}
-      </div>
-
-    </div>
-
-    {% capture categories %}
-      {% for category in site.tags %}{{ category[0] }}:{% endfor %}
-    {% endcapture %}
-
-    {% assign categories_ = categories | strip | split: ':' %}
-
-    {% capture pills %}{% include pills.html items=categories_ small=true %}{% endcapture %}
-
-    {% include sideblock.html title=t.news_nav_title content=pills %}
-
-  </div>
-</div>

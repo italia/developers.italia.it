@@ -1,113 +1,53 @@
 it:
-  - title: Progetti
-    url: '#'
-    liClass: 'Megamenu-item Megamenu-item--vert'
-    subitems:
-    - title: Identità digitale (SPID)
-      url: /it/spid
-    - title: Data & Analytics Framework
-      url: /it/daf
-    - title: IO
-      url: /it/io
-    - title: Carta di Identità (CIE)
-      url: /it/cie
-    - title: PagoPA
-      url: /it/pagopa
-    - title: Tutti i progetti
-      url: /it/progetti
-      liClass: 'Megamenu-showAll'
-  - title: Strumenti
-    url: '#'
-    subitems:
-    - title: GitHub
-      image: /assets/icons/tools/decorative_outlined_github.svg
-      url: https://github.com/italia
-    - title: Slack
-      image: /assets/icons/tools/decorative_outlined_slack.svg
-      url: https://slack.developers.italia.it/
-    - title: Forum
-      image: /assets/icons/tools/decorative_outlined_discourse.svg
-      url: https://forum.italia.it
-    - title: Docs
-      image: /assets/icons/tools/decorative_outlined_docs.svg
-      url: https://docs.italia.it
-    - title: API
-      image: /assets/icons/tools/decorative_outlined_api.svg
-      url: it/api
-      markup_post: >
-        <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-          <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-m u-background-80 u-color-white u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-            u-borderRadius-m u-background-80 u-color-white u-text-xxs">
-            New
-          </span>
-        </div>
-  - title: Cosa fare
-    url: it/cosa-fare
-  - title: Notizie
-    url: news
-  - title: Chi siamo
-    url: it/chi-siamo
-  - title: FAQ
-    url: it/faq
+  - title: Piattaforme
+    url: '/it/piattaforme/'
+    active_by_layout:
+      - 'platform'
+      - 'platforms'
+  - title: Software
+    url: '/it/software/'
+    active_by_firstlevel:
+      - 'software'
+      - 'riuso'
   - title: API
-    liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: it/api
+    url: '/it/api/'
+    active_by_firstlevel: 'api'
+  - title: Come lo uso
+    url: '/it/come-lo-uso'
+    active_by_firstlevel: 'come-lo-uso'
+  - title: Come partecipo
+    url: '/it/come-partecipo'
+    active_by_firstlevel: 'come-partecipo'
+  - title: News
+    url: '/news'
+    active_by_firstlevel: 'news'
+  - title: Contatti
+    url: '/it/contatti'
+    active_by_firstlevel: 'contatti'
 
 en:
-  - title: Projects
-    url: '#'
-    subitems:
-    - title: Top projects
-      url: /en/projects
-      subitems:
-      - title: SPID
-        url: /en/spid
-      - title: DAF
-        url: /en/daf
-      - title: ANPR
-        url: /en/anpr
-      - title: CIE
-        url: /en/cie
-      - title: All projects
-        url: /en/projects
-  - title: Tools
-    url: '#'
-    subitems:
-    - title: Tools
-      url: '#'
-      layout: horizontal
-      subitems:
-      - title: GitHub
-        image: /assets/icons/tools/decorative_outlined_github.svg
-        url: https://github.com/italia
-      - title: Slack
-        image: /assets/icons/tools/decorative_outlined_slack.svg
-        url: https://slack.developers.italia.it/
-      - title: Forum
-        image: /assets/icons/tools/decorative_outlined_discourse.svg
-        url: https://forum.italia.it
-      - title: Docs
-        image: /assets/icons/tools/decorative_outlined_docs.svg
-        url: https://docs.italia.it
-      - title: API
-        image: /assets/icons/tools/decorative_outlined_api.svg
-        url: it/api
-        markup_post: >
-          <div data-megamenu-class="u-nbfc u-block" class="u-inlineBlock u-padding-left-xs">
-            <span data-megamenu-class="u-inlineBlock u-padding-all-xxs u-borderRadius-m u-background-80 u-color-white u-text-xxs" class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-              u-borderRadius-m u-background-80 u-color-white u-text-xxs">
-              New
-            </span>
-          </div>
-  - title: To do
-    url: en/to-do
-  - title: News
-    url: news
-  - title: Credits
-    url: en/credits
-  - title: FAQ
-    url: en/faq
+  - title: Platforms
+    url: '/en/platforms'
+    active_by_layout:
+      - 'platform'
+      - 'platforms'
+  - title: Software
+    url: '/en/software'
+    active_by_firstlevel:
+      - 'software'
+      - 'reuse'
   - title: API
-    liClass: 'Megamenu-item Megamenu-item--new no-underline'
-    url: it/api/
-
+    url: '/en/api'
+    active_by_firstlevel: 'api'
+  - title: How to use it
+    url: '/en/how'
+    active_by_firstlevel: 'how'
+  - title: Get involved
+    url: '/en/get-involved'
+    active_by_firstlevel: 'get-involved'
+  - title: News
+    url: '/news'
+    active_by_firstlevel: 'news'
+  - title: Contacts
+    url: '/en/contacts'
+    active_by_firstlevel: 'contacts'

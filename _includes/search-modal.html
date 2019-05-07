@@ -1,0 +1,31 @@
+<div id="searchModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container">
+          <p class="h1 modal-title d-inline"> {{ t.search_form_label | capitalize }}</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form autocomplete="off" action="">
+            <div class="form-group">
+              <div class="autocomplete">
+                <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software{% if active_lang == 'it' %} o amministrazioni{% else %} or administrations{% endif %}">
+                <div id="suggestions" class="d-none"></div>
+              </div>
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>{{ t.software.platforms | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>{{ t.software.software_open | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>{{ t.software.reuse_software | capitalize }}</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>{{ t.software.administrations | capitalize }}</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

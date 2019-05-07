@@ -1,0 +1,5 @@
+<div class="community-members">
+    {% for member in site.data.github_members | sort: "login" %}
+    <a href="{{ member.html_url }}"><img src="{{ member.avatar_url }}" /></a>
+    {% endfor %}
+</div>

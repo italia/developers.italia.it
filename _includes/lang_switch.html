@@ -1,21 +1,25 @@
 {% if site.data.l10n.size > 1 %}
-<li>
-<a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max u-inlineBlock">
-    <span class="u-hiddenVisually">{{ t.active_lang }}:</span>
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-inline-block text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="">{{ site.data.l10n[active_lang].code | upcase }}</span>
-    <span class="Icon Icon-expand u-padding-left-xs"></span>
+    <span class="sr-only">{{ t.active_lang }}:</span>
+    <span class="icon it-expand px-2 d-none d-lg-inline-block"></span>
   </a>
-</li>
 
-  <div id="languages" data-menu class="Dropdown-menu Header-language-other u-jsVisibilityHidden u-nojsDisplayNone">
-    <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
-    <ul class="Linklist">
+ 
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
       {% for lang in site.data.l10n %}
-      <li><a href="{{ '/' | append: lang[0] | relative_url }}"
-        class="u-padding-r-all"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span></a></li>
+      <li class="{% if lang[0]==active_lang %}active{%endif%}">
+        <a href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {% if lang[0]==active_lang %}
+        <span class="icon it-check float-right"></span>
+        {%endif%}
+        </a>
+      </li>
       {% endfor %}
-    </ul>
-  </div>
+  </ul>
 
+</div>
 
 {% endif %}

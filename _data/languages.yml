@@ -1,0 +1,552 @@
+aa:
+  en: Afar
+  it: Afar
+ab:
+  en: Abkhazian
+  it: Abkhazian
+ae:
+  en: Avestan
+  it: Avestan
+af:
+  en: Afrikaans
+  it: Afrikaans
+ak:
+  en: Akan
+  it: Akan
+am:
+  en: Amharic
+  it: Amharic
+an:
+  en: Aragonese
+  it: Aragonese
+ar:
+  en: Arabic
+  it: Arabic
+as:
+  en: Assamese
+  it: Assamese
+av:
+  en: Avaric
+  it: Avaric
+ay:
+  en: Aymara
+  it: Aymara
+az:
+  en: Azerbaijani
+  it: Azerbaijani
+ba:
+  en: Bashkir
+  it: Bashkir
+be:
+  en: Belarusian
+  it: Belarusian
+bg:
+  en: Bulgarian
+  it: Bulgarian
+bh:
+  en: Bihari languages
+  it: Bihari languages
+bi:
+  en: Bislama
+  it: Bislama
+bm:
+  en: Bambara
+  it: Bambara
+bn:
+  en: Bengali
+  it: Bengali
+bo:
+  en: Tibetan
+  it: Tibetan
+br:
+  en: Breton
+  it: Breton
+bs:
+  en: Bosnian
+  it: Bosnian
+ca:
+  en: Catalan
+  it: Catalan
+ce:
+  en: Chechen
+  it: Chechen
+ch:
+  en: Chamorro
+  it: Chamorro
+co:
+  en: Corsican
+  it: Corsican
+cr:
+  en: Cree
+  it: Cree
+cs:
+  en: Czech
+  it: Czech
+cu:
+  en: Church Slavic
+  it: Church Slavic
+cv:
+  en: Chuvash
+  it: Chuvash
+cy:
+  en: Welsh
+  it: Welsh
+da:
+  en: Danish
+  it: Danish
+de:
+  en: German
+  it: Tedesco
+dv:
+  en: Divehi
+  it: Divehi
+dz:
+  en: Dzongkha
+  it: Dzongkha
+ee:
+  en: Ewe
+  it: Ewe
+el:
+  en: "Greek, Modern (1453-)"
+  it: "Greek, Modern (1453-)"
+en:
+  en: English
+  it: Inglese
+eo:
+  en: Esperanto
+  it: Esperanto
+es:
+  en: Spanish
+  it: Spagnolo
+et:
+  en: Estonian
+  it: Estone
+eu:
+  en: Basque
+  it: Basque
+fa:
+  en: Persian
+  it: Persian
+ff:
+  en: Fulah
+  it: Fulah
+fi:
+  en: Finnish
+  it: Finnish
+fj:
+  en: Fijian
+  it: Fijian
+fo:
+  en: Faroese
+  it: Faroese
+fr:
+  en: French
+  it: Francese
+fy:
+  en: Western Frisian
+  it: Western Frisian
+ga:
+  en: Irish
+  it: Irish
+gd:
+  en: Gaelic
+  it: Gaelic
+gl:
+  en: Galician
+  it: Galician
+gn:
+  en: Guarani
+  it: Guarani
+gu:
+  en: Gujarati
+  it: Gujarati
+gv:
+  en: Manx
+  it: Manx
+ha:
+  en: Hausa
+  it: Hausa
+he:
+  en: Hebrew
+  it: Hebrew
+hi:
+  en: Hindi
+  it: Hindi
+ho:
+  en: Hiri Motu
+  it: Hiri Motu
+hr:
+  en: Croatian
+  it: Croatian
+ht:
+  en: Haitian
+  it: Haitian
+hu:
+  en: Hungarian
+  it: Hungarian
+hy:
+  en: Armenian
+  it: Armenian
+hz:
+  en: Herero
+  it: Herero
+ia:
+  en: Interlingua
+  it: Interlingua
+id:
+  en: Indonesian
+  it: Indonesian
+ie:
+  en: Interlingue
+  it: Interlingue
+ig:
+  en: Igbo
+  it: Igbo
+ii:
+  en: Sichuan Yi
+  it: Sichuan Yi
+ik:
+  en: Inupiaq
+  it: Inupiaq
+io:
+  en: Ido
+  it: Ido
+is:
+  en: Icelandic
+  it: Icelandic
+it:
+  en: Italian
+  it: Italiano
+iu:
+  en: Inuktitut
+  it: Inuktitut
+ja:
+  en: Japanese
+  it: Japanese
+jv:
+  en: Javanese
+  it: Javanese
+ka:
+  en: Georgian
+  it: Georgian
+kg:
+  en: Kongo
+  it: Kongo
+ki:
+  en: Kikuyu
+  it: Kikuyu
+kj:
+  en: Kuanyama
+  it: Kuanyama
+kk:
+  en: Kazakh
+  it: Kazakh
+kl:
+  en: Kalaallisut
+  it: Kalaallisut
+km:
+  en: Central Khmer
+  it: Central Khmer
+kn:
+  en: Kannada
+  it: Kannada
+ko:
+  en: Korean
+  it: Korean
+kr:
+  en: Kanuri
+  it: Kanuri
+ks:
+  en: Kashmiri
+  it: Kashmiri
+ku:
+  en: Kurdish
+  it: Kurdish
+kv:
+  en: Komi
+  it: Komi
+kw:
+  en: Cornish
+  it: Cornish
+ky:
+  en: Kirghiz
+  it: Kirghiz
+la:
+  en: Latin
+  it: Latin
+lb:
+  en: Luxembourgish
+  it: Luxembourgish
+lg:
+  en: Ganda
+  it: Ganda
+li:
+  en: Limburgan
+  it: Limburgan
+ln:
+  en: Lingala
+  it: Lingala
+lo:
+  en: Lao
+  it: Lao
+lt:
+  en: Lithuanian
+  it: Lithuanian
+lu:
+  en: Luba-Katanga
+  it: Luba-Katanga
+lv:
+  en: Latvian
+  it: Latvian
+mg:
+  en: Malagasy
+  it: Malagasy
+mh:
+  en: Marshallese
+  it: Marshallese
+mi:
+  en: Maori
+  it: Maori
+mk:
+  en: Macedonian
+  it: Macedonian
+ml:
+  en: Malayalam
+  it: Malayalam
+mn:
+  en: Mongolian
+  it: Mongolian
+mr:
+  en: Marathi
+  it: Marathi
+ms:
+  en: Malay
+  it: Malay
+mt:
+  en: Maltese
+  it: Maltese
+my:
+  en: Burmese
+  it: Burmese
+na:
+  en: Nauru
+  it: Nauru
+nb:
+  en: "Bokmaal, Norwegian"
+  it: "Bokmaal, Norwegian"
+nd:
+  en: "Ndebele, North"
+  it: "Ndebele, North"
+ne:
+  en: Nepali
+  it: Nepali
+ng:
+  en: Ndonga
+  it: Ndonga
+nl:
+  en: Dutch
+  it: Dutch
+nn:
+  en: "Norwegian Nynorsk"
+  it: "Norwegian Nynorsk"
+no:
+  en: Norwegian
+  it: Norwegian
+nr:
+  en: "Ndebele, South"
+  it: "Ndebele, South"
+nv:
+  en: Navajo
+  it: Navajo
+ny:
+  en: Chichewa
+  it: Chichewa
+oc:
+  en: Occitan (post 1500)
+  it: Occitan (post 1500)
+oj:
+  en: Ojibwa
+  it: Ojibwa
+om:
+  en: Oromo
+  it: Oromo
+or:
+  en: Oriya
+  it: Oriya
+os:
+  en: Ossetian
+  it: Ossetian
+pa:
+  en: Panjabi
+  it: Panjabi
+pi:
+  en: Pali
+  it: Pali
+pl:
+  en: Polish
+  it: Polish
+ps:
+  en: Pushto
+  it: Pushto
+pt:
+  en: Portuguese
+  it: Portoghese
+qu:
+  en: Quechua
+  it: Quechua
+rm:
+  en: Romansh
+  it: Romansh
+rn:
+  en: Rundi
+  it: Rundi
+ro:
+  en: Romanian
+  it: Romanian
+ru:
+  en: Russian
+  it: Russo
+rw:
+  en: Kinyarwanda
+  it: Kinyarwanda
+sa:
+  en: Sanskrit
+  it: Sanskrit
+sc:
+  en: Sardinian
+  it: Sardinian
+sd:
+  en: Sindhi
+  it: Sindhi
+se:
+  en: Northern Sami
+  it: Northern Sami
+sg:
+  en: Sango
+  it: Sango
+si:
+  en: Sinhala
+  it: Sinhala
+sk:
+  en: Slovak
+  it: Slovak
+sl:
+  en: Slovenian
+  it: Slovenian
+sm:
+  en: Samoan
+  it: Samoan
+sn:
+  en: Shona
+  it: Shona
+so:
+  en: Somali
+  it: Somali
+sq:
+  en: Albanian
+  it: Albanian
+sr:
+  en: Serbian
+  it: Serbo
+ss:
+  en: Swati
+  it: Swati
+st:
+  en: "Sotho, Southern"
+  it: "Sotho, Southern"
+su:
+  en: Sundanese
+  it: Sundanese
+sv:
+  en: Swedish
+  it: Svedese
+sw:
+  en: Swahili
+  it: Swahili
+ta:
+  en: Tamil
+  it: Tamil
+te:
+  en: Telugu
+  it: Telugu
+tg:
+  en: Tajik
+  it: Tajik
+th:
+  en: Thai
+  it: Thai
+ti:
+  en: Tigrinya
+  it: Tigrinya
+tk:
+  en: Turkmen
+  it: Turkmen
+tl:
+  en: Tagalog
+  it: Tagalog
+tn:
+  en: Tswana
+  it: Tswana
+to:
+  en: Tonga
+  it: Tonga
+tr:
+  en: Turkish
+  it: Turkish
+ts:
+  en: Tsonga
+  it: Tsonga
+tt:
+  en: Tatar
+  it: Tatar
+tw:
+  en: Twi
+  it: Twi
+ty:
+  en: Tahitian
+  it: Tahitian
+ug:
+  en: Uighur
+  it: Uighur
+uk:
+  en: Ukrainian
+  it: Ukrainian
+ur:
+  en: Urdu
+  it: Urdu
+uz:
+  en: Uzbek
+  it: Uzbek
+ve:
+  en: Venda
+  it: Venda
+vi:
+  en: Vietnamese
+  it: Vietnamese
+vo:
+  en: VolapÃ¼k
+  it: VolapÃ¼k
+wa:
+  en: Walloon
+  it: Walloon
+wo:
+  en: Wolof
+  it: Wolof
+xh:
+  en: Xhosa
+  it: Xhosa
+yi:
+  en: Yiddish
+  it: Yiddish
+yo:
+  en: Yoruba
+  it: Yoruba
+za:
+  en: Zhuang
+  it: Zhuang
+zh:
+  en: Chinese
+  it: Cinese
+zu:
+  en: Zulu
+  it: Zulu

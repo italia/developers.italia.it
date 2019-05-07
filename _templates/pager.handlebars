@@ -1,0 +1,19 @@
+<ul class="pagination pagination-lg">
+  <li class="page-item {{ prev.classes }}">
+    <a class="page-link" href="#" aria-label="Previous" tabindex="-1" page="{{ prev.page }}">
+      <span aria-hidden="true">&lt;</span>
+      <span class="sr-only">Previous</span>
+    </a>
+  </li>
+{{#each pages }}
+  <li class="page-item {{ classes }}">
+    <a class="page-link" href="#" page="{{ page }}">{{ title }}</a>
+  </li>
+{{/each}}
+  <li class="page-item {{ next.classes }} ">
+    <a class="page-link" href="#" aria-label="Previous" tabindex="-1" page="{{ next.page }}">
+      <span aria-hidden="true">&gt;</span>
+      <span class="sr-only">Next</span>
+    </a>
+  </li>
+</ul>

@@ -1,86 +1,44 @@
-<div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
-  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
-  {{ include.classes | default: 'u-background-white' }} u-sizeFill">
+<article class="newscard {{include.classes}} {% if include.flat != true %}newscard--w-shadow{% endif %}">
+  <div class="d-flex newscard__top py-2 ">
+    {% if include.date %}
+    <time datetime="{{ include.date | date_to_xmlschema }}" class="ml-auto">
+      {{ include.date | date: "%b %-d, %Y" }}
+    </time>
+    {% endif %}
+  </div>
   {% if include.hasImage != false %}
-  <div class="u-sizeFull">
-    <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
+  <figure class="img-fluid">
+    <a href="{{ include.link }}" title="{{ include.title }}">
+      <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" />
+    </a>
+  </figure>
+  {% endif %}
+  <h1 class="pr-0 pr-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
+    {% if include.comingsoon %}
+    <span class="badge badge-secondary">{{ t.coming_soon }}</span>
+    {% endif %}
+  </h1>
+  <main class="font-serif">
+    {% if include.text != '' %}
+    {{ include.text }}
+    {% endif %}
+  </main>
+  <div class="py-2 mt-auto d-flex w-100">
+    {% if include.author %}
+    <div class="newscard__author font-serif ">
+      <span>{{ t.by }} {{ include.author }}</span>
+    </div>
+    {% endif %}
+    {% if include.cta %}
+    <div class="newscard__cta ml-auto ">
+      <a href="{{include.cta.url}}" title="{{include.cta.label}}">{{include.cta.label}}</a>
+    </div>
+    {% endif %}
+  </div>
+  {% if include.hasMore != false %}
+  <div class="newscard__more py-1 ">
+    <a href="{{ include.link }}">{{ t.software.read_more}} &rarr;</a>
   </div>
   {% endif %}
-  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %}">
 
-    {% if include.date %}
-    <time datetime="{{ include.date | date_to_xmlschema }}"
-      class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-50">
-        {{ include.date | date: "%b %-d, %Y" }}
-      </time>
-    {% endif %}
-
-    <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %}">
-      <h3 class="u-padding-bottom-xs">
-        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
-          {{ include.title }}
-
-          {% if include.comingsoon %}
-          <div class="u-inlineBlock u-padding-left-xs">
-            <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-              u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-            {{ t.coming_soon }}</span>
-          </div>
-          {% endif %}
-        </a>
-      </h3>
-
-      {% if include.author %}
-        <div class="u-padding-r-bottom">
-          <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ include.author | capitalize }}</span>
-        </div>
-      {% endif %}
-
-      {% if include.subtitle %}
-      <h4 class="u-textWeight-400 u-lineHeight-l u-text-r-xs u-color-grey-60 u-padding-bottom-xs">
-          {{ include.subtitle }}
-      </h4>
-      {% endif %}
-
-      {% if include.text != '' %}
-        <p class="Content u-text-p u-textSecondary u-padding-r-bottom">
-          {{ include.text }}
-        </p>
-      {% endif %}
-
-    </div>
-
-    <div class="Grid u-sizeFull u-padding-r-top u-flexAlignSelfEnd
-      {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
-
-        {% if include.hasMore != false %}
-        <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
-          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
-          }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
-          </a>
-        </p>
-        {% endif %}
-
-        {% if include.hasSocial != false %}
-        <p class="Grid-cell u-layout-centerRight u-padding-r-bottom">
-          {% for social in include.socials %}
-
-          <a href="{{ social.link }}" class="u-linkClean">
-            <span class="Icon Icon-{{ social.icon }} u-inlineBlock u-text-r-xs u-padding-all-xxs u-borderRadius-circle
-            u-background-50 u-color-white u-margin-right-xs"></span><span class="u-hiddenVisually">{{ social.name }}</span></a>
-
-          {% endfor %}
-        </p>
-        {% endif %}
-
-    </div>
-
-    {% if include.tags %}
-    <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter u-margin-top-l">
-      <p class="u-color-grey-50 u-margin-r-right">{{ t.news_categories }}</p>
-      {% include pills.html items=include.tags small=true %}
-    </div>
-    {% endif %}
-
-  </div>
-</div>
+</article>

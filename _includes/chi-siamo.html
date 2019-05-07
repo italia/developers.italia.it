@@ -1,0 +1,45 @@
+{% include setlang.html %}
+
+{% assign projects = site.platforms | where: 'lang', active_lang | sort: 'order' | reverse %}
+
+<section class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top
+  u-padding-r-bottom u-posRelative u-zindex-30">
+
+    <div class="Grid Grid--withGutterL u-pullUp-10">
+        {% for person in site.data.people %}
+        {% if person[1].status == 'admin' %}
+        {% include person.html person=person %}
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2
+        class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
+        {{ t.credits_maintainers | capitalize }}
+    </h2>
+
+    <!-- phi = k^i -->
+    <div class="Grid Grid--alignMiddle Grid--withGutter u-margin-r-top u-flexJustifyCenter">
+        {% for person in site.data.people %}
+        {% if person[1].status == 'maintainer' %}
+        {% include person.html %}
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- <phi = k^i>  -->
+
+    <h2
+        class="u-cf u-sizeFull u-margin-top-xxl u-textCenter u-textWeight-300 u-text-r-m u-padding-bottom-xxl u-padding-top-xxl">
+        {{ t.credits_contributors | capitalize }}
+    </h2>
+
+    <div class="Grid Grid--alignMiddle Grid--withGutter u-margin-r-top u-flexJustifyCenter">
+        {% for person in site.data.people %}
+        {% if person[1].status == 'contributor' %}
+        {% include person.html %}
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- -<phi = k^i>  -->
+
+</section>

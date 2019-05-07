@@ -1,9 +1,12 @@
 _site
 .sass-cache
 .jekyll-metadata
+.idea
 .DS_Store
 /github/issues.json
+/_data/github_members.json
 /_data/github_teams.json
 node_modules
 swagger/.cache
 swagger/dist
+yarn-error.log

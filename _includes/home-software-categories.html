@@ -1,0 +1,26 @@
+<section class="home-software-tags">
+    <div class="container">
+        <h1 class="text-center mt-0">{{t.home_tags}}</h1>
+        <ul class="home-software-tags__list list-inline text-center">
+            {% assign deactive = false %}
+            {% for tag in site.data.crawler.software_categories %}
+            {% if forloop.index > 15 %}
+            {% assign deactive = true %}
+            {% endif %}
+            {% include set-tag.html tag=tag deactive=deactive %}
+
+
+            {% assign division5 = forloop.index | modulo:5 %}
+            {% if division5==0 %}
+            <div class="w-100"></div>
+            {% endif %}
+            {% endfor %}
+        </ul>
+
+        {% if site.data.crawler.software_categories.size > 15 %}
+        <div class="text-center mb-2 mb-md-4">
+            <a href="#" id="moreTags" class="home-software-tags__extra">Altri filtri</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
