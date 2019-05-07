@@ -1,10 +1,9 @@
 ---
 title: Note Legali
 lang: it
-layout: page
+layout: internal-long
 ---
 
-### Note Legali
 [https://developers.italia.it](https://developers.italia.it) è un sito che ha l’obiettivo di contribuire alla crescita e al coordinamento di una community di sviluppatori interessati allo sviluppo di codice strumentale al funzionamento dei servizi online della pubblica amministrazione.
 Il sito è gestito dall'Agenzia per l'Italia Digitale.
 
