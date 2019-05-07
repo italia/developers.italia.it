@@ -7,7 +7,7 @@ tags: progetti sviluppatori
 categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
   - /progetti/sviluppatori/2017/06/01/vuoi-lavorare-developers-italia.html
 ---

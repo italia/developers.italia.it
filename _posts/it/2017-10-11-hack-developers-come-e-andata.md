@@ -7,7 +7,7 @@ tags: hackathon eventi sviluppatori
 categories: news
 author: Team Developers Italia
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
   - 
 ---

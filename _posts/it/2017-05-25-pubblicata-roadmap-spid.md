@@ -7,7 +7,7 @@ tags: roadmap progetti
 categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
   - /roadmap/progetti/2017/05/25/pubblicata-roadmap-spid.html
 ---

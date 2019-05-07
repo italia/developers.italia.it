@@ -7,7 +7,7 @@ tags: hackathon eventi sviluppatori
 categories: news
 author: Giovanni Bajo
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
   - /hackathon/eventi/sviluppatori/2017/09/07/hack-developers-meetup.html
 ---

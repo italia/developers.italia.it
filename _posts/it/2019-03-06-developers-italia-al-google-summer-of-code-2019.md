@@ -7,7 +7,7 @@ tags: developers daf gsoc
 categories: news
 author: Leonardo Favario
 image: /assets/icons/logo-it.svg
-locale: it_IT
+locale: it
 redirect_from:
    -
 ---
