@@ -1,0 +1,42 @@
+---
+layout: default
+lang: it
+---
+
+{% include setlang.html %}
+{% assign platforms = site.platforms | where:"lang",active_lang %}
+
+<div class="projectslist">
+  <div class="container">
+    <section class="projectslist__content mt-2 mt-md-5 mb-2 mb-md-5 pt-2 pt-md-4 pb-2">
+      <h1>{{ page.title | capitalize }}</h1>
+      <div class="row mb-2 mb-md-4">
+        <div class="col-md-6">
+          <h2 class="subtitle">{{ page.subtitle }}</h2>
+        </div>
+        <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0">
+          {{ page.content }}
+        </div>
+      </div>
+      <div class="projectslist__listing pt-2 pt-md-4 pb-2 pb-md-4">
+        <div class="row row-eq-height">
+          {% for platform in platforms %}
+          <div class="col-md-3 p-2 p-md-3">
+            <article class="d-flex flex-column align-items-start mb-2 mb-md-5">
+              <a href="{{platform.url}}" title="{{platform.title}}" class="d-block decoration-none ">
+                {% if platform.logo %}
+                <figure>
+                  <img class="w-100" src="{{platform.logo | relative_url}}">
+                </figure>
+                {% endif %}
+                <h1 class="projectslist__listing__title">{{platform.title}}</h1>
+                <span class="projectslist__listing__url">{{t.software.read_more}} &rarr;</span>
+              </a>
+            </article>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

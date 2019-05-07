@@ -1,9 +1,0 @@
----
-title: Qual è il ruolo dei maintainer?
-text: >
-  I maintainer sono le persone incaricate da una parte di produrre il codice, la documentazione e gli esempi di implementazione, e dall'altra di gestire le issue (segnalazioni di bug o suggerimenti di feature) e le cosiddette "pull request" (ovvero contributi di codice esterni). Tipicamente lavorano a stretto contatto con l'ente owner del progetto e con il personale tecnico dell'ente stesso, in particolare i *project leader* con cui concordano gli obiettivi.
-  Facciamo un esempio: [PagoPA](/it/pagopa/) è un progetto di [AgID](http://www.agid.gov.it/) che ne dirige l'evoluzione; i *maintainer* che si trovano all'interno di Developers Italia sono le persone che aiutano AgID nello sviluppo e nella manutenzione evolutiva dei plugin per i principali CMS, delle librerie di intefacciamento in Python o Ruby e della documentazione delle API.
-  I maintainer possono essere persone interne alla Pubblica Amministrazione oppure fornitori incaricati della maintainership oppure ancora volontari indipendenti che hanno manifestato la disponibilità a gestire un repository.
-order: 20
-lang: it
----

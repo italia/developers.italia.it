@@ -1,0 +1,559 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+{% assign description = page.publiccode.description[active_lang]
+| default: page.publiccode.description.en
+| default: page.publiccode.description.it %}
+
+{% assign sw_name = description.localisedName | default: page.publiccode.name %}
+
+{% assign oldFeatures = page.oldFeatures[active_lang]
+| default: page.oldFeatures.en
+| default: page.oldFeatures.it %}
+
+{% comment %}
+{% include breadcrumbs.html %}
+{% include share.html %}
+{% assign subnav = site.data[page.subnav] %}
+{% include linklist.html items=subnav dynamic=true %}
+{% endcomment %}
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        {% if page.logo %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" width="48" height="48">
+        {% endif %}
+        <h1 class="d-inline-block">
+          {{ sw_name }}
+          <span class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            {{ description.genericName }}
+            {% if page.publiccode.isBasedOn.size > 0 %}
+            <br>
+            <span class="abstract-software__variant">{{ t.software.variant_by }}
+              {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}</span>
+            {% endif %}
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            {{ description.shortDescription }}
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              {% for tag in page.popularCategories limit: 3 %}
+              {% include set-tag.html tag=tag %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="row legal-main-info">
+            <div class="col-sm">
+              <p><span class="label">{{ t.software.published_by }} </span>
+                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+              </p>
+            </div>
+            {% if page.publiccode.maintenance.type == "contract" %}
+            {% if page.publiccode.maintenance.contractors.size > 0 %}
+            <div class="col-sm">
+              <p><span class="label">{{ t.software.software_maintained_by }} </span>
+                {% for contractor in page.publiccode.maintenance.contractors %}
+                <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                {% endfor %}
+              </p>
+            </div>
+            {% endif %}
+            {% endif %}
+
+            {% if page.publiccode.maintenance.contacts.size > 0 %}
+            <div class="col-sm">
+              <p><span class="label">{{ t.software.technical_contact }} </span>
+                {% for contact in page.publiccode.maintenance.contacts limit: 1 %}
+                <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
+                {{ contact.phone }}
+                {% endfor %}
+              </p>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <p class="h4 text-uppercase">{{ t.software.technical_detail }}</p>
+      <div class="drops-details">
+        <div class="vitality-score">
+          <p>{{ t.software.vitality }}:</p>
+          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
+          {% if page.vitalityDataChart != nil %}
+          <div id="softwareChart">
+            <canvas id="vitalityChart"></canvas>
+          </div>
+          {% endif %}
+          <div class="info-block d-inline-block">
+            <span class="info-block__icon">i</span>
+            <div class="info-block__msg font-serif">
+              {{t.software.tooltip | markdownify}}
+            </div>
+          </div>
+          <div class="status-developement">
+            <p>{{ t.software.development_status }}: {% include software_development_status.html
+              label=page.publiccode.developmentStatus %} </p>
+          </div>
+        </div>
+        {% if description.documentation != null and description.documentation != "" %}
+        <div class="goto doc">
+          <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
+              t.software.goToDocumentation }} &rarr;</a></p>
+        </div>
+        {% endif %}
+        <div class="goto code">
+          <p><a href="{{ page.publiccode.url }}"> <img src="/assets/icons/software_icons/it-codice.svg">{{
+              t.software.goToCode }} &rarr;</a></p>
+        </div>
+        {% if page.publiccode.roadmap != null and page.publiccode.roadmap != "" %}
+        <div class="goto road">
+          <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
+              t.software.goToRoadmap }} &rarr;</a></p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if description.screenshots.size > 0 or description.videos > 0 %}
+{% include tiled-gallery.html screenshots=description.screenshots videos=description.videos oembed=page.oEmbedHTML %}
+{% else %}
+<hr class="divider mb-0">
+{% endif %}
+
+<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
+  <div class="functionality">
+    {% if page.oldVariant.size != nil %}
+    <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
+    {% endif %}
+    <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
+      {% if page.oldVariant.size == nil %}
+      <div class="col-md-6 software-ill">
+      </div>
+      {% endif %}
+      {% if page.publiccode.isBasedOn != nil %}
+      <div class="col-md-6 variant">
+        <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
+          {% if page.oldVariant.size == nil %}
+          <h2> {{ t.software.functionality }} </h2>
+          {% endif %}
+          {% if description.features.size > 0 %}
+          <div class="function-list">
+            {% if description.features.size > 10 %}
+            {% for feature in description.features limit: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+            <p>
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature">{{
+                t.software.show_all }}</a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              {% for feature in description.features offset: 10 %}
+              <p> {{ feature }} </p>
+              {% endfor %}
+            </div>
+            {% else %}
+            {% for feature in description.features %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+            {% endif %}
+          </div>
+          {% endif %}
+          {% if page.publiccode.usedBy.size > 0 %}
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
+              {% if page.publiccode.usedBy.size >= 1 %}
+              {{ t.software.administrations }}
+              {% else %}
+              {{ t.software.administration }}
+              {% endif %}
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              {% for item in page.publiccode.usedBy %}
+              <p> {{ item }} </p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% if page.oldVariant.size != nil %}
+      <div class="col-md-6 variant">
+        <h4> {{ t.software.functionality_other_variant }} </h4>
+        <div class="function-list">
+          {% if oldFeatures %}
+          {% if oldFeatures.size > 10 %}
+          {% for feature in oldFeatures limit: 10 %}
+          <p> {{ feature }} </p>
+          {% endfor %}
+          <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+            aria-controls="otherFeature">{{
+            t.software.show_all }}</a>
+          <div class="collapse" id="otherFeature">
+            {% for feature in oldFeatures offset: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+          </div>
+          {% else %}
+          {% if oldFeatures.size <= 10 %} {% for feature in oldFeatures %} <p> {{ feature }} </p>
+          {% endfor %}
+          {% endif %}
+          {% endif %}
+          {% endif %}
+        </div>
+        <div id="oldVariant">
+          <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
+            class="count">
+            {{ page.oldVariant | size }}
+            {% if page.oldVariant.size > 1 %}
+            {{ t.software.variants_present }}
+            {% else %}
+            {{ t.software.variant_present }}
+            {% endif %}
+            <span class="or it-expand"></span>
+            <span class="and it-collapse"></span>
+          </a>
+          <div class="collapse" id="listVariant">
+            {% for variant in page.oldVariant %}
+            {% assign variant_description = variant.publiccode.description[active_lang]
+            | default: variant.publiccode.description.en
+            | default: variant.publiccode.description.it %}
+            <div class="variantDetail">
+              <a href="/{{active_lang}}/software/{{ variant.name | replace: ' ', '-'  | downcase }}">{{
+                t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
+              <p><span class="label">{{ t.software.additional_features }}</span>:
+                {% for feature in variant_description.features %}
+                {{ feature}}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              </p>
+              <p><span class="label">{{ t.software.vitality }}:
+                  {{ variant.vitalityScore }}%</span>
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      {% else %}
+      <div class="col">
+        <div class="function-list">
+          {% if description.features.size > 10 %}
+          {% for feature in description.features limit: 10 %}
+          <p> {{ feature }} </p>
+          {% endfor %}
+          <p>
+            <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+              aria-controls="otherFeature">{{
+              t.software.show_all }}</a>
+          </p>
+          <div class="collapse" id="otherFeature">
+            {% for feature in description.features offset: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+          </div>
+          {% else %}
+          {% for feature in description.features %}
+          <p> {{ feature }} </p>
+          {% endfor %}
+          {% endif %}
+        </div>
+        {% if page.publiccode.usedBy.size != nil %}
+        <div id="usedBy">
+          <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+            aria-controls="by-amministration" class="count">
+            {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
+            {% if page.publiccode.usedBy.size >= 1 %}
+            {{ t.software.administrations }}
+            {% else %}
+            {{ t.software.administration }}
+            {% endif %}
+            <span class="or it-expand"></span>
+            <span class="and it-collapse"></span>
+          </a>
+          <div class="collapse" id="by-amministration">
+            {% for item in page.publiccode.usedBy %}
+            <p> {{ item }} </p>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if page.publiccode.categories %}
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>{{ t.software.categories | upcase }}</strong>
+    {% for tag in page.publiccode.categories limit: 3 %}
+    {% include set-tag.html tag=tag %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>{{ t.software.detailed_info }} </p>
+            <div class="title">
+              <h2 class="h1">
+                {{ sw_name }}
+                {% if page.publiccode.softwareVersion %}
+                <span
+                  class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
+                {% endif %}
+              </h2>
+              <h2>
+                {{ description.genericName }}
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">{{ t.software.last_release }}</span>
+                  {{ page.publiccode.releaseDate }}
+                  {% if page.publiccode.softwareVersion %}
+                  ({{ page.publiccode.softwareVersion }})
+                  {% endif %}
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">{{ t.software.maintainance_type }}</span>
+                  {{ page.publiccode.maintenance.type }}
+                </p>
+              </div>
+              {% if page.publiccode.maintenance.type == "contract" %}
+              {% if page.publiccode.maintenance.contractors[0].name != nil %}
+              <div class="col-sm-12 col-md">
+                <p>
+                  <span class="label">{{ t.software.contract_with }}</span>
+                  {% for contractor in page.publiccode.maintenance.contractors %}
+                  <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{
+                  contractor.until}}
+                  {% endfor %}
+                </p>
+              </div>
+              {% endif %}
+              {% endif %}
+            </div>
+          </div>
+
+          {% if page.publiccode.maintenance.contacts.size > 0 %}
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                {% if page.publiccode.maintenance.contacts.size == 1 %}
+                {{ t.software.technical_contact }}
+                {% else %}
+                {{ t.software.technical_contacts }}
+                {% endif %}
+              </span>
+            </p>
+            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              {% if page.publiccode.maintenance.contacts.size == 1 %}
+              {{ t.software.technical_contact }}
+              {% else %}
+              {{ t.software.technical_contacts }}
+              {% endif %}
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                {% for contact in page.publiccode.maintenance.contacts %}
+                <div class="col-md">
+                  <p>
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> {{ contact.phone }}
+                  </p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">{{ t.software.license }}</span>
+                  {{ page.publiccode.legal.license }}
+                </p>
+              </div>
+              {% if page.publiccode.platforms.size > 0 %}
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">{{ t.software.platforms }}</span>
+                  {% for platform in page.publiccode.platforms %}
+                  {{ platform }}<br />
+                  {% endfor %}
+                </p>
+              </div>
+              {% endif %}
+              <div class="col-md">
+                <p>
+                  <span class="label">{{ t.software.dependencies_list }}</span>
+                  {% for dep in page.publiccode.dependencies.open %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
+                  {% for dep in page.publiccode.dependencies.proprietary %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
+                  {% for dep in page.publiccode.dependencies.hardware %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
+                </p>
+              </div>
+              <div class="col-md">
+                <p>
+                  <span class="label">{{ t.software.enabling_platforms }}</span>
+                  {% if page.publiccode.it.piattaforme.pagopa == true %}
+                  <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
+                    pagoPA
+                  </a>
+                  {% endif %}
+                  {% if page.publiccode.it.piattaforme.spid == true %}
+                  <a href="/{{ active_lang }}/spid" class="enabling_platforms">
+                    SPID
+                  </a>
+                  {% endif %}
+                  {% if page.publiccode.it.piattaforme.cie == true %}
+                  <a href="/{{ active_lang }}/cie" class="enabling_platforms">
+                    CIE
+                  </a>
+                  {% endif %}
+                  {% if page.publiccode.it.piattaforme.anpr == true %}
+                  <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
+                    ANPR
+                  </a>
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              {{ t.software.others_info }}
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              {% if page.publiccode.intendedAudience.onlyFor.size > 0 %}
+              <div class="other-detail">
+                <p><span class="label">{{ t.software.main_audience }}</span>
+                  {% for audience in page.publiccode.intendedAudience.onlyFor %}
+                  {% include set-audience.html label=audience %}
+                  {% endfor %}
+                </p>
+              </div>
+              {% endif %}
+              {% if page.publiccode.localisation.localisationReady == true %}
+              <div class="other-detail">
+                <p><span class="label">{{ t.software.supported_languages }}</span>
+                  {% for language in page.publiccode.localisation.availableLanguages %}
+                  {% include set-language-supported.html lang=language %}
+                  {% endfor %}
+                </p>
+              </div>
+              {% endif %}
+              {% if description.awards.size > 0 %}
+              <div class="other-detail">
+                <p><span class="label">{{ t.software.awards }}</span>
+                  {% for award in description.awards %}
+                  <a href="#">{{ award }}</a>
+                  {% endfor %}
+                </p>
+              </div>
+              {% endif %}
+              {% if description.apiDocumentation != nil and description.apiDocumentation != "" %}
+              <div class="other-detail">
+                <p><span class="label">{{ t.software.api_documentation }}</span>
+                  <a href="{{ description.apiDocumentation }}">{{ sw_name }} API</a>
+                </p>
+              </div>
+              {% endif %}
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">{{ t.software.extende_description }}</p>
+              <div class="font-serif page-detail__text">
+                {{ description.longDescription | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if page.relatedSoftwares.size >= 4 %}
+<div class="container">
+  <div class="interestRelatedSoftwares">
+    <h2> {{ t.software.interest_related_softwares }} </h2>
+    <div class="row">
+      <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
+        {% for relsw in page.relatedSoftwares %}
+        {% assign relsw_description = relsw.publiccode.description[active_lang]
+        | default: relsw.publiccode.description.en
+        | default: relsw.publiccode.description.it %}
+        {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
+        <div class="col-12 relate">
+          {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
+
+          <div class="img-container">
+            <a href="{{ relsw_url }}">
+              <img class="img-fluid"
+                src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                alt="{{ relsw_name }}"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              {{ relsw_name }}
+            </p>
+            <a href="{{ relsw_url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% include photoswipe-ui.html %}

@@ -1,0 +1,16 @@
+concept:
+  en: concept
+  it: concept
+development:
+  en: development
+  it: in sviluppo
+beta:
+  en: beta
+  it: beta
+stable:
+  en: stable
+  it: stabile
+obsolete:
+  en: obsolete
+  it: obsoleto
+

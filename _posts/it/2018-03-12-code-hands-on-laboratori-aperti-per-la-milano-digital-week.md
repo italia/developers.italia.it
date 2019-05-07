@@ -22,7 +22,7 @@ I progetti al centro della giornata saranno:
 
 * [DAF](https://teamdigitale.governo.it/it/projects/daf.htm) - La piattaforma nazionale per Data Science e Open Data
 * [SPID](https://www.spid.gov.it) - Sistema Pubblico di Identità Digitale
-* [PagoPA](https://teamdigitale.governo.it/it/projects/pagamenti-digitali.htm) - Nodo di pagamento verso la Pubblica Amministrazione
+* [pagoPA](https://teamdigitale.governo.it/it/projects/pagamenti-digitali.htm) - Nodo di pagamento verso la Pubblica Amministrazione
 * [CIE](https://developers.italia.it/it/cie/) - Carta d'Identità Elettronica
 * [18App](https://developers.italia.it/it/18app/) - La piattaforma per la gestione del bonus economico
 * I [toolkit](https://italia.github.io/design-web-toolkit/) per il design web dei siti della Pubblica Amministrazione

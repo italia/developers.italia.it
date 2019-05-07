@@ -1,5 +1,6 @@
 require 'rest_client'
 require 'json'
+require 'octokit'
 require 'pathname'
 require 'parallel'
 
@@ -16,13 +17,13 @@ class GithubImporter < Jekyll::Generator
 
 	def generate(site)
 		# test if we don't want download data from github
-		if ENV['JEKYLL_NO_GITHUB']!= nil and site.data['github_teams']
+		if ENV['JEKYLL_NO_GITHUB'] == "1" || ENV['JEKYLL_NO_GITHUB'] == "true"
 			puts "*****************************************************"
             puts("WARNING! GitHub API disabled")
 			puts "*****************************************************"
 			return
 		end
-		if ENV['GITHUB_ACCESS_TOKEN'] == nil
+		if ENV['GITHUB_ACCESS_TOKEN'] == "" || ENV['GITHUB_ACCESS_TOKEN'] == nil
 			puts "*****************************************************"
             puts("WARNING! No GITHUB_ACCESS_TOKEN: skipping GitHub API calls")
 			puts "*****************************************************"
@@ -42,7 +43,7 @@ class GithubImporter < Jekyll::Generator
 		end
 		# obtaining all the repos of Italia Github org.
 		repos_endpoint = feed_url + "/orgs/italia/repos"
-		
+
 		repos = []
 		loop do
             begin
@@ -61,27 +62,27 @@ class GithubImporter < Jekyll::Generator
                 rest_params['page'] += 1
             end
         end
-        
+
 		repos.size > 0 or puts("No repos fetched")
 		repos.size > 0 or return
 
 		puts "++++++++++++++ Github Repos fetched: " + repos.size.to_s
 
 		github_issues = []
-		
+
 		# For every repos we need the issues
 		Parallel.each(repos, in_threads: 16) { |item|
 
 			open_issues = Integer(item['open_issues_count'])
 			name = item['name']
 
-			# if this repo as no isseus or is blacklisted 
+			# if this repo as no isseus or is blacklisted
 			next if open_issues == 0 or site.config['github_blacklist_repos'].include? item['name']
-			
+
 			# obtaining all the issues for this repo
 			issues_endpoint = feed_url + "/repos/italia/"+ name +"/issues"
             rest_params['page'] = 0
-            
+
             # TODO: iterate over pages
 			begin
 				issues_response = RestClient.get issues_endpoint,{params: rest_params}
@@ -110,7 +111,7 @@ class GithubImporter < Jekyll::Generator
 				next if not issue_data[:labels].include?('help wanted')
 				# for now, strip the "help wanted from the list"
 				issue_data[:labels].delete('help wanted')
-				
+
 				# we've to analyze the name to obtain the projects and subproject
 				if issue_data[:name].start_with?(*projects_prefix)
 					issue_data[:project] = item['name'].partition('-').first
@@ -147,7 +148,7 @@ class GithubImporter < Jekyll::Generator
 			teams_response = RestClient.get teams_endpoint,{params: rest_params}
 		end
 		teams = JSON.parse(teams_response)
-		
+
 		# for every team we need the members
 		# unfortunately github api doesn't expose the full name of a member
 		Parallel.each(teams, in_threads: 16) { |team|
@@ -155,26 +156,30 @@ class GithubImporter < Jekyll::Generator
 			team['members'] = []
 
 			# for every team we ask for members
-			begin 
+			begin
 				members_endpoint = team['url'] + '/members'
 				members_response = RestClient.get members_endpoint,{params: rest_params}
 			end
 			members = JSON.parse(members_response)
 
 			Parallel.each(members, in_threads: 4) { |member|
-				begin 
+				begin
 					singlemember_response = RestClient.get member['url'],{params: rest_params}
 				end
-				team['members'].push( JSON.parse(singlemember_response) ) 
+				team['members'].push( JSON.parse(singlemember_response) )
 			}
 
 			github_teams.push(team)
-			
+
 		}
 		puts "++++++++++++++ Github teams fetched: " + teams.size.to_s
 
-		
-		
+		# FETCH ORG MEMBERS
+		client = Octokit::Client.new(:access_token => access_token)
+		client.auto_paginate = true
+		github_members = client.organization_public_members('italia').map {|x| x.to_hash}
+		puts "++++++++++++++ Github members fetched: " + github_members.size.to_s
+
 		# Repos&issues json must be in a specific folder cause we need a client parsing on the "cosa fare" page
 		unless File.directory?(site_folder)
 			p = Pathname.new(site_folder)
@@ -183,6 +188,10 @@ class GithubImporter < Jekyll::Generator
 
 		writeJson(site_folder, 'issues.json', github_issues.to_json)
 		writeJson('_data', 'github_teams.json', github_teams.to_json)
-		
+		writeJson('_data', 'github_members.json', github_members.to_json)
+
+		# _data/* files are read before this plugin is run, so we need to inject data manually into site.data
+		site.data['github_teams'] = github_teams
+		site.data['github_members'] = JSON.parse(github_members.to_json) # stringify keys (Jekyll templates do not recognize symbols)
 	end
 end

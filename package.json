@@ -1,0 +1,11 @@
+{
+    "dependencies": {
+        "bootstrap-italia": "^1.2.6",
+        "chart.js": "^2.7.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/italia/developers.italia.it"
+    },
+    "license": "BSD-3-Clause"
+}

@@ -2,7 +2,7 @@
 title: Google Summer of Code - Ideas list
 subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
 lang: en
-layout: page
+layout: internal-long
 ---
 
 # Information for Students
@@ -360,6 +360,5 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Up to you</td>
             <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
-
     </tbody>
 </table>

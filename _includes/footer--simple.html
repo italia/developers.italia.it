@@ -1,50 +1,62 @@
-<footer class="Footer">
+<footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
 
-  <div class="Grid Grid--withGutter u-padding-top-xl">
+  <div class="container">
+    <div class="row d-none d-md-flex">
+      <div class="col-md-4">
+        <p class="footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.project_of }}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="footer-collaboration-with small">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
+      </div>
+      <div class="col-md-4">
 
-    <div class="Grid-cell u-md-size1of2 u-lg-size5of12 u-padding-r-bottom">
-      <img class="Footer-logo u-xs-padding-right-none" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}"
-        alt="" style="height: 80px; max-width: 100%">
-      <p class="Footer-siteName">
-        {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
-      </p>
+      </div>
     </div>
+    <div class="row mt-4 mt-md-0">
 
-    <div class="Grid-cell u-md-size1of2 u-lg-size1of3 u-padding-r-bottom td-footer">
-      <p class="u-padding-bottom-l" style="opacity: 0.5">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
-      <div class="Grid">
-        <div class="u-inlineBlock">
-          <img class="u-padding-top-xxs u-padding-right-xs" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt=""
-            style="height: 4em; max-width: 100%">
-          <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt=""
-            style="height: 4em; max-width: 100%">
+      <div class="footer-collaboration col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          {{ site.data.l10n.[active_lang].t.project_of }}</p>
+        <div>
+          <a href="https://www.agid.gov.it/"><img class=""
+              src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="AgID"></a>
         </div>
-        <div class="Grid-cell u-size1of12 u-padding-left-none team-bar"></div>
-        <p class="Grid-cell u-size5of12 Footer-siteName u-padding-left-xs u-text-r-xs">
-          {{ site.partner_full | upcase }}
-        </p>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          {{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
+        <a href="https://teamdigitale.governo.it/">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+              <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+            </div>
+            <div class="px-2 border-white border-left footer-team-text text-white">
+              {{ site.partner_full | upcase }}
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social col-md-4 text-right">
+        <span class="text-white small mr-3 ">{{ t.follow_us | capitalize }}</span>
+        <ul class="d-inline-block footer-social-icons list-inline mt-2 mt-md-3">
+          {% for social in site.data.social %}
+          <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"
+              class="text-white"><span class="it-{{ social[0] }}"></span>
+              <span class="sr-only">{{ social[1].name | capitalize }}</span></a></li>
+          {% endfor %}
+        </ul>
+
       </div>
     </div>
 
-    <div class="Grid-cell u-lg-size1of4 u-textRight u-padding-r-bottom u-flexAlignSelfEnd">
-      <h2 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
-        u-hidden u-margin-r-right u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
-      <ul class="Footer-socialIcons">
-        {% for social in site.data.social %}
-          <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-            <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
-        {% endfor %}
-      </ul>
-    </div>
-
-  </div>
-
-  <ul class="Footer-links u-cf u-color-80">
-    {% for link in site.data.footer_links %}
+    <ul class="footer-links">
+      {% for link in site.data.footer_links %}
       {% assign link_name = link[1].title %}
-      <li><a href="/{{ active_lang }}{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
-    {% endfor %}
-  </ul>
+      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
 </footer>
 

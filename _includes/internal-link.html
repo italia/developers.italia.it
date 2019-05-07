@@ -1,0 +1,5 @@
+{% assign target = include.target %}
+{% assign target_pages = site.pages | where: "ref", target %} 
+{% assign target_page = target_pages | where: "lang", active_lang | first %}
+
+<a href="{{target_page.url}}" class="btn btn-primary">{{ t.software.see_more }}</a>

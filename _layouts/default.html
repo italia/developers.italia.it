@@ -1,7 +1,7 @@
 {% include setlang.html %}
 
 {% include head.html %}
-{% include skiplinks.html %}
+
 
 {% include cookiebar.html %}
 
@@ -9,7 +9,10 @@
   <div id="main" class="u-layout-wide u-layoutCenter">
     {% include header.html hasSearch=true %}
     {% include offcanvas.html menu_items=site.data.menu_items %}
+    {% comment %}
+    <!-- NOT FOR NOW-->
     {% include network.html network_items=site.data.network_links %}
+    {% endcomment %}
     {{ content }}
   </div>
 </div>

@@ -1,8 +1,10 @@
 ---
 title: API
-subtitle: Presentiamo qui una selezione di API della Pubblica Amministrazione su cui Developers Italia è al lavoro, in vista della creazione del catalogo delle API previsto dal Piano Triennale.
+subtitle: Il catalogo delle API REST italiane a disposizione degli sviluppatori.
 lang: it
 layout: api
 ---
 
-{:.u-textWeight-400 .u-margin-top-l }
+### Sei una PA?
+
+Esponi le tue API REST secondo il [Modello di Interoperabilità previsto dal Piano Triennale](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/stabile/doc/05_modello-di-interoperabilita.html?highlight=api) e contattaci per includerle in questo catalogo.

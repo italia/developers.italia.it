@@ -5,54 +5,73 @@ lang: it
 
 {% include setlang.html %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ t.news_title }}
-    <span class="u-text-r-m u-color-20">&nbsp;/&nbsp;{{ page.tag }}</span>
-  </h1>
-  <h2 >
-    </h2>
-</div>
+{% comment %}
+  {% assign subnav = site.data[page.subnav] %}
+  {% include linklist.html items=subnav dynamic=true %}
+  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+  {% capture pills %}{% include pills.html items=page.tags  %}{% endcapture %}
+  {% include sideblock.html title=t.home_projects_expand content=pills %}
+{% endcomment %}
 
-<hr class="Separator-room reduced u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
-
-    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      {% for post in page.posts %}
-
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' %}
-
-        <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
-        {% include card.html
-          date=post.date
-          author=post.author
-          title=post.title
-          link=post.url
-          text=excerpt
-          hasImage=false
-          categories=post.tags
-          flat=true
-          classes='u-background-grey-15'
-          %}
-        </div>
-
-      {% endfor %}
-
-      
+<div >
+  <section class="postslisting postslisting--by-tag position-relative">
+  
+  <div class="postslisting__header position-relative">
+    <div class="postslisting__headerbkg "></div>
+    
+    <div class="container pt-4 d-flex w-100">
+      <h1 >{{ t.news_title }}</h1>
+      <div class="postslisting__filtertag ml-auto mb-2 d-flex flex-column flex-md-row">
+        <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
+        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">{{ page.tag }} <span class="icon it-close"></span></a>
+      </div>
     </div>
-
+    <div class="container postslisting__tags deactive" data-activatedby="filterTags">
     {% capture categories %}
-      {% for category in site.tags %}{{ category[0] }}:{% endfor %}
+    {% for category in site.tags %}{{ category[0] }}:{% endfor %}
     {% endcapture %}
 
     {% assign categories_ = categories | strip | split: ':' %}
 
-    {% capture pills %}{% include pills.html items=categories_ small=true %}{% endcapture %}
+    {% include pills.html items=categories_ small=true %}
 
-    {% include sideblock.html title=t.news_nav_title content=pills %}
-
+    </div>
   </div>
+  <div class="postslisting__content my-2 my-md-4 py-2">
+    <div class="container my-3 my-md-5">
+        <div class="row row-eq-height px-2 px-md-0">
+        {% for post in page.posts  %}
+            {% assign division_by_3 = forloop.index | modulo:3 %}
+
+            <div class="col-md-4">
+            {% include card.html
+                date=post.date
+                author=post.author
+                title=post.title
+                link=post.url
+                text=post.subtitle
+                hasImage=false
+                categories=post.tags
+                flat=true
+                cta=post.cta
+                classes='h-100 d-flex align-items-start flex-column'
+                %}
+            </div>
+            {% if division_by_3==0 %}
+                <div class="w-100 d-none d-md-block postslisting__hr"></div>
+                
+            {% endif %}
+            
+        {% endfor %}
+        </div>
+    </div>
+  </div>
+
+</section>
 </div>
+
+{% include banner-joinus.html %}
+
+
+

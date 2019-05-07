@@ -1,0 +1,42 @@
+{% include setlang.html %}
+
+{% assign exclude = site.data.people | values | map: "name" %}
+
+<div class="row">
+    {% assign platforms = site.platforms | where: 'lang', active_lang | sort: 'title' %}
+    {% for platform in platforms %}
+
+    {% if platform.github_team == nil or platform.github_team == "" %}
+    {% continue %}
+    {% endif %}
+
+    {% assign teams = site.data.github_teams | where: "slug", platform.github_team %}
+    {% assign team = teams.first %}
+
+    {% if team == nil %}
+    {% continue %}
+    {% endif %}
+
+    {% assign members = team.members | sort: "name" %}
+    {% for member in members %}
+
+    {% if exclude contains member.name %}
+    {% continue %}
+    {% endif %}
+
+    <div class="credits-communityleader col-sm-4">
+        <div class="credits-communityleader-img">
+            <a href="{{ member.html_url }}"><img src="{{ member.avatar_url }}" width="130" class="img-fluid"></a>
+        </div>
+        <div class="credits-communityleader-info">
+            <div class="credits-communityleader-name">
+                {{ member.name | default: member.login }}
+            </div>
+            <div class="credits-communityleader-role">
+                {{ team.name }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endfor %}
+</div>

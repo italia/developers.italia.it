@@ -5,22 +5,29 @@ import CustomLayoutPlugin from "./plugins/CustomLayoutPlugin";
 
 import "swagger-ui/dist/swagger-ui.css";
 
-// window.swaggerUrl/window.i10n are populated by Jekyll
+// window.swaggerUrl/window.l10n... are populated by Jekyll
 if (process.env.NODE_ENV === "development") {
-  // Assign defaults while in "development"
-  const openapis = require("./openapis");
-
-  window.swaggerUrl = openapis[0];
-  window.contactLogo = "https://i.imgur.com/OTNbMVs.png";
-  window.i10n = {
-    swagger: {
-      download: "Scarica OpenAPI",
-      url: "Server",
-      developer: "Erogatore",
-      channel: "Contatto",
-      tos: "Condizioni di utilizzo"
-    }
+  const L10N = {
+    download: "Scarica OpenAPI",
+    server: "Copia link del server",
+    url: "Server",
+    developer: "Erogatore",
+    channel: "Contatto",
+    tos: "Condizioni di utilizzo",
+    authorize: "Autorizza",
+    platform: "Piattaforma di riferimento",
+    goToPlatform: "Vai alla piattaforma"
   };
+
+  const PROJECTS = require("./projects");
+  const OPENAPIS = require("./openapis");
+  // Assign defaults while in "development"
+  window.lang = "it";
+  window.swaggerUrl = OPENAPIS[0];
+  window.l10n = {
+    swagger: L10N
+  };
+  window.projects = PROJECTS;
 
   const appendStyle = href => {
     const link = document.createElement("link");
@@ -45,7 +52,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 SwaggerUI({
-  dom_id: "#index",
+  dom_id: "#swagger",
   url: window.swaggerUrl,
   plugins: [CustomLayoutPlugin],
   layout: "CustomLayout"
