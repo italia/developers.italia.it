@@ -59,7 +59,7 @@ workflows:
           filters:
             branches:
               only:
-                - new-version-master
+                - master
     jobs:
       - build
   on-commit-build-and-deploy:
@@ -69,7 +69,6 @@ workflows:
             branches:
               only:
                 - master
-                - new-version-master
   on-commit-test:
     jobs:
       - test:
@@ -77,4 +76,3 @@ workflows:
             branches:
               ignore:
                 - master
-                - new-version-master
