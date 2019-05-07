@@ -66,12 +66,19 @@ exclude:
   - swagger/node_modules
 
 
-paginate: 20
-paginate_path: "/news/page:num/"
+pagination:
+  enabled: true
+  debug: true
+  per_page: 20
+  sort_reverse: true
 
 # tag pages
 tag_page_layout: posts_by_tag
-tag_page_dir: news
+tag_page_dir: it/news
+tag_page_data:
+  langs:
+    - it
+    - en
 
 # Custom vars
 theme_color: "#0066cc"
@@ -127,8 +134,18 @@ defaults:
       type: platform
   -
     scope:
-      path: "_posts"
+      path: "_posts/it"
     values:
+      permalink: "it/news/:year/:month/:day/:title"
+      lang: "it"
+      type: news
+    dir: it/news
+
+  - scope:
+      path: "_posts/en"
+    values:
+      permalink: "en/news/:year/:month/:day/:title"
+      lang: "en"
       type: news
 
 page_gen:

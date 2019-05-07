@@ -1,10 +1,11 @@
 <section class="Pills">
 {% if include.header %}
+{% include setlang.html %}
   <h1 class="text-center">{{include.header}}</h1>
 {% endif %}
 <ul class="list-inline text-center">
   {% for item in include.items %}
-  {% assign default_url = '/news/' | append: item %}
+  {% assign default_url = '/' | append: active_lang | append: '/news/' | append: item %}
   <li class="list-inline-item">
     <a href="{{ item.link | default: default_url }}" class="Pill {% if include.small  %}small{% endif %}">
         {{ item.title | default: item }} 

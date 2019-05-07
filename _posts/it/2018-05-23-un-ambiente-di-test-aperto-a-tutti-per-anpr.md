@@ -4,11 +4,11 @@ title:  Un ambiente di test aperto a tutti per ANPR
 subtitle: Da oggi chiunque può sviluppare dei client che si interfacciano all'anagrafe nazionale
 project_ref: ANPR - Anagrafe Nazionale Popolazione Residente
 date:   2018-05-23 10:00:00 +0100
-tags: developers opensource anpr
+tags: developers open-source anpr
 categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
-lang: it
+locale: it_IT
 redirect_from:
    - 
 ---

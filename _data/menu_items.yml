@@ -19,7 +19,7 @@ it:
     url: '/it/come-partecipo'
     active_by_firstlevel: 'come-partecipo'
   - title: News
-    url: '/news'
+    url: '/it/news'
     active_by_firstlevel: 'news'
   - title: Contatti
     url: '/it/contatti'
@@ -46,7 +46,7 @@ en:
     url: '/en/get-involved'
     active_by_firstlevel: 'get-involved'
   - title: News
-    url: '/news'
+    url: '/en/news'
     active_by_firstlevel: 'news'
   - title: Contacts
     url: '/en/contacts'

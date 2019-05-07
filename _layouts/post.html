@@ -46,9 +46,10 @@ layout: default
           {{ content }}
       </div>
 
-      <hr class="pb-2 pb-md-5">
-
-      {% include pills.html items=page.tags header=t.news_categories %}
+      {% if active_lang=='it' %}
+        <hr class="pb-2 pb-md-5">
+        {% include pills.html items=page.tags header=t.news_categories %}
+      {% endif %}
 
       </div>
     </div>
