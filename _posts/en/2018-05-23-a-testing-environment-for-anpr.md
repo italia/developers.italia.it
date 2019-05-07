@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  A open testing environment for ANPR
+title:  An open testing environment for ANPR
 subtitle: From now on everyone can develop clients interfacing with the national registry
 project_ref: ANPR - Anagrafe Nazionale Popolazione Residente
 date:   2018-05-23 10:00:00 +0100
@@ -22,7 +22,7 @@ since it allows every developer to work independently on the ANPR integration,
 even without requiring municipality credentials.
 
 In fact, from this moment [a page](https://anpr-test.bobuild.com/request) where
-to request ANPR test credentials is made available.  Thanks to these
+to request ANPR test credentials is made available. Thanks to these
 credentials and the [sharing of a test client source
 code](https://github.com/italia/anpr-client-example), starting today anyone may
 develop a client which interfaces with ANPR, using a **fictional test
