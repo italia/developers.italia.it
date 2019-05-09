@@ -20,8 +20,8 @@ $(function () {
           // create slide object
           var item = {
             src: linkEl.getAttribute('href'),
-            w: Number(size[0]) || imgElement.width || 1980,
-            h: Number(size[1]) || imgElement.height || 1020,
+            w: Number(size[0]) || imgElement.naturalWidth || 1980,
+            h: Number(size[1]) || imgElement.naturalHeight || 1020,
             msrc: linkEl.children[0].src
           };
 
