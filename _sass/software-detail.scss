@@ -103,6 +103,7 @@
 hr {
   &.divider {
     margin: 4em 0;
+    margin-bottom: -1px !important;
   }
 }
 
@@ -136,9 +137,21 @@ hr {
     text-align: center;
     margin-bottom: 1em;
   }
+  .sw-separator-arrows {
+    background: url("images/funzionalita-software.svg") center center no-repeat;
+    height: 80px;
+    margin-bottom: 2em;
+  }
   .variant {
     h4 {
       text-transform: uppercase;
+      width: 353px;
+      color: #17324D;
+      font-family: "Titillium Web";
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1.11px;
+      line-height: 20px;
       @include media-breakpoint-down(sm) {
         border-left: 6px solid $primary;
         padding-left: 1em;
