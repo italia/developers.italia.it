@@ -1,7 +1,7 @@
 <div class="tiled-gallery">
   <div class="tiled-gallery-inner">
     {% assign tiledItemIndex = 0 %}
-    {% assign onError = 'onerror="this.src=' | append: "'/assets/images/placeholder-software-riuso.jpg'; " | append: 'this.parentElement.parentElement.removeChild(this.parentElement);"' %}
+    {% assign onError = 'onerror="' | append: 'this.parentElement.parentElement.removeChild(this.parentElement);"' %}
     {% if include.screenshots.size <= 3 %} {% for item in include.screenshots %}
 
     <a class="tiled-item" href="{{ item }}"  data-index="{% increment tiledItemIndex %}"
