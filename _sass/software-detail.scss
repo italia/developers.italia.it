@@ -164,6 +164,24 @@ hr {
     }
   }
   .function-list {
+    a {
+      display: block;
+      &.count {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 3em 0 2em;
+      }
+      &.count[aria-expanded="false"] {
+        .and {
+          display: none;
+        }
+      }
+      &.count[aria-expanded="true"] {
+        .or {
+          display: none;
+        }
+      }
+    }
     @include media-breakpoint-up(sm) {
       border-left: 0.2em solid #e8f1fa;
       padding-left: 2em;

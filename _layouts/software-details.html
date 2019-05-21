@@ -157,7 +157,10 @@ layout: default
               {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature">{{t.software.show_all }}</a>
+                 aria-controls="otherFeature" class="count">{{t.software.show_all }}
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
@@ -205,8 +208,11 @@ layout: default
                 <p> {{ feature }} </p>
               {% endfor %}
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature">{{
-                t.software.show_all }}</a>
+                 aria-controls="otherFeature" class="count">{{
+                t.software.show_all }}
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
               <div class="collapse" id="otherFeature">
                 {% for feature in oldFeatures offset: 10 %}
                 <p> {{ feature }} </p>
@@ -272,8 +278,11 @@ layout: default
               {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature">{{
-                t.software.show_all }}</a>
+                 aria-controls="otherFeature" class="count">{{
+                t.software.show_all }}
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
