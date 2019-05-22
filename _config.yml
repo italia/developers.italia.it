@@ -173,6 +173,7 @@ page_gen:
     template: software-details
     defaults:
       lang: it
+      title_suffix: 'Developers Italia'
     dir: it/software
     # filter_condition: "record['language'].include? 'it'"
 
@@ -182,6 +183,7 @@ page_gen:
     template: software-details
     defaults:
       lang: en
+      title_suffix: 'Developers Italia'
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
 

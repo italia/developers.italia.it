@@ -50,7 +50,16 @@ module Jekyll
 
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), template + ".html")
-        self.data['title'] = data[name]
+
+        # original method to set page title to data[name]
+        # self.data['title'] = data[name]
+
+        if data['publiccode'] && data['publiccode']['name']
+          self.data['title'] = data['publiccode']['name'] + ' - ' + defaults['title_suffix']
+        else
+          self.data['title'] = data[name]
+        end
+
         self.data.merge!(defaults)
         # add all the information defined in _data for the current record to the
         # current page (so that we can access it with liquid tags)
