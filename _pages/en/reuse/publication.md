@@ -54,7 +54,7 @@ all the repositories containing a `publiccode.yml` file.
 **Please note:** to allow the Developers Italia crawler to find its own
 repositories, each administration must **register the code hosting account**
 used to publish all its projects (e.g., the organization's GitHub account). This
-is a one-off operation. See the [guidelines](https://docs.italia.it/developers-italia/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) for more information.
+is a one-off operation. See the [guidelines](https://docs.italia.it/developers-italia/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) for more information.
 
 <a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Code hosting account registration form</a>
 
