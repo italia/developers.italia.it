@@ -19,6 +19,11 @@ Il processo in sintesi:
 - Al software deve essere applicata una delle **[licenze approvate da Open Source Initiative](https://opensource.org/licenses)** (le Linee Guida ne suggeriscono alcune in particolare, per consentire la massima riusabilità).
 - Nel repositorio deve essere incluso il file `publiccode.yml` che ne descrive le caratteristiche e consente di popolare il [catalogo del software di Developers Italia](/it/software).
 
+
+<a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><i class="it-comment" /> Dialoga su Slack (#reuse)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+
+
 ## publiccode.yml
 
 Tutti i repositori di software pubblico devono contenere un file denominato `publiccode.yml` che contiene tutte le informazioni utili al popolamento del [catalogo](/it/software) di Developers Italia. publiccode.yml è uno standard nato in Italia ma in corso di adozione internazionale.
