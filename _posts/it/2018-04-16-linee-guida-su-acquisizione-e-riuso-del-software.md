@@ -12,13 +12,13 @@ redirect_from:
    -
 ---
 
-Dal **5 aprile al 5 maggio** su [Docs Italia](https://docs.italia.it/) è stato possibile partecipare ad una consultazione pubblica sulle nuove “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/)”.
+Dal **5 aprile al 5 maggio** su [Docs Italia](https://docs.italia.it/) è stato possibile partecipare ad una consultazione pubblica sulle nuove “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/)”.
 
 Il testo stabilisce regole e modalità di **acquisizione** e di **condivisione** del software tra tutti i soggetti pubblici. La consultazione è aperta a tutti, in particolare **i fornitori e le pubbliche amministrazioni**.
 
 ## Le nuove linee guida sul software: di che si tratta
 
-Le “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/)” sono espressamente previste dal [Codice dell’amministrazione digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6.html) (CAD). Servono per:
+Le “[Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/)” sono espressamente previste dal [Codice dell’amministrazione digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6.html) (CAD). Servono per:
 
 * Definire in che modo una pubblica amministrazione deve effettuare la **valutazione comparativa** obbligatoria per acquisire un software, preferendo il software open source all’acquisizione di software tramite licenza.
 
@@ -26,9 +26,9 @@ Le “[Linee guida sull’acquisizione e il riuso di software per le pubbliche a
 
 ## Partecipa alla consultazione!
 
-Puoi prendere parte alla consultazione direttamente su [Docs Italia](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/), cliccando l’apposito link in fondo ad ogni sezione delle linee guida ed aprendo la discussione. Tutti i contributi saranno presi in considerazione dall’[Agenzia per l’Italia Digitale](http://www.agid.gov.it/) e dal [Team per la trasformazione digitale](https://teamdigitale.governo.it/) per la redazione del testo definitivo.
+Puoi prendere parte alla consultazione direttamente su [Docs Italia](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/), cliccando l’apposito link in fondo ad ogni sezione delle linee guida ed aprendo la discussione. Tutti i contributi saranno presi in considerazione dall’[Agenzia per l’Italia Digitale](http://www.agid.gov.it/) e dal [Team per la trasformazione digitale](https://teamdigitale.governo.it/) per la redazione del testo definitivo.
 
-[Partecipa subito alla consultazione!](https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/)
+[Partecipa subito alla consultazione!](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/)
 
 A presto!
 
