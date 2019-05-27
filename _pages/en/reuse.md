@@ -30,7 +30,8 @@ pair-blocks:
 Articles [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html) and [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html) of the Italian *Codice dell'Amministrazione Digitale* discipline how a Public Administration can acquire software and establish the obligation to release the software developed or commissioned with an open license.
 
 The [Guidelines for Sotware Acquisition and Reuse]({{ site.url_lineeguidariuso }}) issued by the *Agenzia per
-l'Italia Digitale* (currently being published in Gazzetta Ufficiale) describe
+l'Italia Digitale*
+([published](https://www.gazzettaufficiale.it/eli/id/2019/05/23/19A03233/sg) in Gazzetta Ufficiale) describe
  such process in detail.
 
 Below you'll find instructions for acquiring software and for publishing the software developed by your organization.

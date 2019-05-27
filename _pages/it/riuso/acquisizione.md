@@ -14,4 +14,7 @@ Tale processo privilegia il software open source (_a riuso_ o _di terze parti_) 
 
 In caso di riuso di un software, non è necessario contattare l'amministrazione titolare perché l'applicativo è già pubblicamente disponibile e la licenza open source regola le condizioni di riutilizzo.
 
-Un'amministrazione che riusa un software ed esegue delle **modifiche o personalizzazioni** è tenuta a sua volta a rilasciarle in open source. Questo si può fare assicurandosi che vengano recepite nel progetto originale oppure [ripubblicando il software](/it/riuso/pubblicazione) integralmente. In questo caso la nuova versione del software sarà apparirà in Developers Italia come "variante" del software originale.
+Un'amministrazione che riusa un software ed esegue delle **modifiche o personalizzazioni** è tenuta a sua volta a rilasciarle in open source. Questo si può fare assicurandosi che vengano recepite nel progetto originale oppure [ripubblicando il software](/it/riuso/pubblicazione) integralmente. In questo caso la nuova versione del software apparirà in Developers Italia come "variante" del software originale.
+
+<a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><i class="it-comment" /> Dialoga su Slack (#reuse)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
