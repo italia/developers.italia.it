@@ -25,8 +25,8 @@ layout: default
   <div class="row intro">
     <div class="col-md-7">
       <div class="intro-name">
-        {% if page.logo %}
-        <img src="{{ page.publiccode.logo }}" class="d-inline-block" width="48" height="48">
+        {% if page.publiccode.logo %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -134,62 +134,62 @@ layout: default
 <div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
     {% if page.oldVariant.size != nil %}
-      <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
-      <div class="sw-separator-arrows d-none d-md-block"></div>
+    <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
+    <div class="sw-separator-arrows d-none d-md-block"></div>
     {% endif %}
     <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
       {% if page.oldVariant.size == nil %}
-        <div class="col-md-6 software-ill"></div>
+      <div class="col-md-6 software-ill"></div>
       {% endif %}
       {% if page.publiccode.isBasedOn != nil %}
       <div class="col-xs-5 col-md-5 col-lg-4 variant">
         <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
           {% if page.oldVariant.size == nil %}
-            <h2> {{ t.software.functionality }} </h2>
+          <h2> {{ t.software.functionality }} </h2>
           {% else %}
-            <h4> {{ t.software.functionality_this_variant }} </h4>
+          <h4> {{ t.software.functionality_this_variant }} </h4>
           {% endif %}
           {% if description.features.size > 0 %}
           <div class="function-list">
             {% if description.features.size > 10 %}
-              {% for feature in description.features limit: 10 %}
-                <p> {{ feature }} </p>
-              {% endfor %}
+            {% for feature in description.features limit: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature" class="count">{{t.software.show_all }}
+                aria-controls="otherFeature" class="count">{{t.software.show_all }}
                 <span class="or it-expand"></span>
                 <span class="and it-collapse"></span>
               </a>
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
-                <p> {{ feature }} </p>
+              <p> {{ feature }} </p>
               {% endfor %}
             </div>
             {% else %}
-              {% for feature in description.features %}
-                <p> {{ feature }} </p>
-              {% endfor %}
+            {% for feature in description.features %}
+            <p> {{ feature }} </p>
+            {% endfor %}
             {% endif %}
           </div>
           {% endif %}
           {% if page.publiccode.usedBy.size > 0 %}
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
-               aria-controls="by-amministration" class="count">
+              aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
-                {{ t.software.administrations }}
+              {{ t.software.administrations }}
               {% else %}
-                {{ t.software.administration }}
+              {{ t.software.administration }}
               {% endif %}
               <span class="or it-expand"></span>
               <span class="and it-collapse"></span>
             </a>
             <div class="collapse" id="by-amministration">
               {% for item in page.publiccode.usedBy %}
-                <p> {{ item }} </p>
+              <p> {{ item }} </p>
               {% endfor %}
             </div>
           </div>
@@ -203,38 +203,38 @@ layout: default
         <h4> {{ t.software.functionality_other_variant }} </h4>
         <div class="function-list">
           {% if oldFeatures %}
-            {% if oldFeatures.size > 10 %}
-              {% for feature in oldFeatures limit: 10 %}
-                <p> {{ feature }} </p>
-              {% endfor %}
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature" class="count">{{
+          {% if oldFeatures.size > 10 %}
+          {% for feature in oldFeatures limit: 10 %}
+          <p> {{ feature }} </p>
+          {% endfor %}
+          <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+            aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
-                <span class="or it-expand"></span>
-                <span class="and it-collapse"></span>
-              </a>
-              <div class="collapse" id="otherFeature">
-                {% for feature in oldFeatures offset: 10 %}
-                <p> {{ feature }} </p>
-                {% endfor %}
-              </div>
-            {% else %}
-              {% if oldFeatures.size <= 10 %}
-                {% for feature in oldFeatures %}
-                  <p> {{ feature }} </p>
-                {% endfor %}
-              {% endif %}
-            {% endif %}
+            <span class="or it-expand"></span>
+            <span class="and it-collapse"></span>
+          </a>
+          <div class="collapse" id="otherFeature">
+            {% for feature in oldFeatures offset: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+          </div>
+          {% else %}
+          {% if oldFeatures.size <= 10 %}
+          {% for feature in oldFeatures %}
+          <p> {{ feature }} </p>
+          {% endfor %}
+          {% endif %}
+          {% endif %}
           {% endif %}
         </div>
         <div id="oldVariant">
           <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
-             class="count">
+            class="count">
             {{ page.oldVariant | size }}
             {% if page.oldVariant.size > 1 %}
-              {{ t.software.variants_present }}
+            {{ t.software.variants_present }}
             {% else %}
-              {{ t.software.variant_present }}
+            {{ t.software.variant_present }}
             {% endif %}
             <span class="or it-expand"></span>
             <span class="and it-collapse"></span>
@@ -249,11 +249,11 @@ layout: default
                 t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
               <p><span class="label">{{ t.software.additional_features }}</span>:
                 {% for feature in variant_description.features %}
-                  {{ feature}}{% unless forloop.last %},{% endunless %}
+                {{ feature}}{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               </p>
               <p><span class="label">{{ t.software.vitality }}:
-                    {{ variant.vitalityScore }}%</span>
+                  {{ variant.vitalityScore }}%</span>
               </p>
             </div>
             {% endfor %}
@@ -267,18 +267,18 @@ layout: default
       <div class="col-md-6 variant">
         <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
           {% if page.oldVariant.size != nil %}
-            <h2> {{ t.software.functionality_this_variant }} </h2>
+          <h2> {{ t.software.functionality_this_variant }} </h2>
           {% else %}
-            <h2> {{ t.software.functionality }} </h2>
+          <h2> {{ t.software.functionality }} </h2>
           {% endif %}
           <div class="function-list">
             {% if description.features.size > 10 %}
-              {% for feature in description.features limit: 10 %}
-                <p> {{ feature }} </p>
-              {% endfor %}
+            {% for feature in description.features limit: 10 %}
+            <p> {{ feature }} </p>
+            {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                 aria-controls="otherFeature" class="count">{{
+                aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
                 <span class="or it-expand"></span>
                 <span class="and it-collapse"></span>
@@ -286,31 +286,31 @@ layout: default
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
-                <p> {{ feature }} </p>
+              <p> {{ feature }} </p>
               {% endfor %}
             </div>
             {% else %}
-              {% for feature in description.features %}
-                <p> {{ feature }} </p>
-              {% endfor %}
+            {% for feature in description.features %}
+            <p> {{ feature }} </p>
+            {% endfor %}
             {% endif %}
           </div>
           {% if page.publiccode.usedBy.size != nil %}
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
-               aria-controls="by-amministration" class="count">
+              aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
-                {{ t.software.administrations }}
+              {{ t.software.administrations }}
               {% else %}
-                {{ t.software.administration }}
+              {{ t.software.administration }}
               {% endif %}
               <span class="or it-expand"></span>
               <span class="and it-collapse"></span>
             </a>
             <div class="collapse" id="by-amministration">
               {% for item in page.publiccode.usedBy %}
-                <p> {{ item }} </p>
+              <p> {{ item }} </p>
               {% endfor %}
             </div>
           </div>
@@ -400,7 +400,7 @@ layout: default
               </span>
             </p>
             <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
-               aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
               {% if page.publiccode.maintenance.contacts.size == 1 %}
               {{ t.software.technical_contact }}
               {% else %}
@@ -436,7 +436,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.publiccode.platforms %}
-                  {{ platform }}<br/>
+                  {{ platform }}<br />
                   {% endfor %}
                 </p>
               </div>
@@ -445,20 +445,20 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% for dep in page.publiccode.dependencies.open %}
-                <p class="platforms">
-                  {% include dependency.html dependency=dep %}
-                </p>
-                {% endfor %}
-                {% for dep in page.publiccode.dependencies.proprietary %}
-                <p class="platforms">
-                  {% include dependency.html dependency=dep %}
-                </p>
-                {% endfor %}
-                {% for dep in page.publiccode.dependencies.hardware %}
-                <p class="platforms">
-                  {% include dependency.html dependency=dep %}
-                </p>
-                {% endfor %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
+                  {% for dep in page.publiccode.dependencies.proprietary %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
+                  {% for dep in page.publiccode.dependencies.hardware %}
+                  <p class="platforms">
+                    {% include dependency.html dependency=dep %}
+                  </p>
+                  {% endfor %}
                 </p>
               </div>
               <div class="col-md">
@@ -490,7 +490,7 @@ layout: default
           </div>
           <div class="main row">
             <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
-               aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
               {{ t.software.others_info }}
               <span class="or it-expand"></span>
               <span class="and it-collapse"></span>
@@ -561,8 +561,8 @@ layout: default
           <div class="img-container">
             <a href="{{ relsw_url }}">
               <img class="img-fluid"
-                   src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-                   alt="{{ relsw_name }}"></a>
+                src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                alt="{{ relsw_name }}"></a>
           </div>
           <div class="relate-body">
             <p class="relate-title">
