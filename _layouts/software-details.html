@@ -561,7 +561,7 @@ layout: default
           <div class="img-container">
             <a href="{{ relsw_url }}">
               <img class="img-fluid"
-                src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                src="{{ relsw_description.screenshots | first | default: relsw.publiccode.logo | default: '/assets/images/placeholder-software-riuso.jpg' }}"
                 alt="{{ relsw_name }}"></a>
           </div>
           <div class="relate-body">

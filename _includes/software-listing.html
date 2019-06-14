@@ -19,7 +19,7 @@
         {% endif %}
         {% endif %}
         <div class="main-image"
-            style=" background: url({{ description.screenshots | first | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
+            style=" background: url({{ description.screenshots | first | default: software.publiccode.logo | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
         </div>
         <p class="name color-inherit">
             {{ sw_name }}
