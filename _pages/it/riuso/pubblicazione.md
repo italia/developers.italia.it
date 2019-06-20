@@ -44,5 +44,5 @@ La pubblicazione nel catalogo, così come il recepimento degli aggiornamenti, è
 I software open source di terze parti, ovvero non messi a riuso dalla Pubblica Amministrazione ma di potenziale interesse per il settore pubblico, possono essere inclusi nel catalogo di Developers Italia. È necessario a tal fine:
 
 1. compilare ed includere il file `publiccode.yml` nel repositorio (lasciando vuoto il campo `codiceIPA`);
-2. aprire una [issue su GitHub](https://github.com/italia/developers-italia-backend/issues) per segnalarci l'URL del repositorio in modo da includerlo nel crawler.
+2. aggiungere l'URL del repositorio nella [lista](https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml) aprendo una pull request su GitHub.
 
