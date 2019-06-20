@@ -1,0 +1,15 @@
+# This file lists the repositories of third-party open source software indexed by
+# Developers Italia.
+
+- name: "GlobaLeaks"
+  repos:
+    - "https://github.com/globaleaks/GlobaLeaks"
+
+- name: "Truelite"
+  repos:
+    - "https://github.com/Truelite/python-a38"
+
+- name: "Libreoffice"
+  repos:
+    - "https://github.com/tdf/libreoffice-metadata"
+ 
