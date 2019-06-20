@@ -64,6 +64,7 @@ exclude:
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
+  - node_modules
 
 
 pagination:
