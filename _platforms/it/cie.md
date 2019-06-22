@@ -51,7 +51,7 @@ resources:
       icon: telephone
       url: https://github.com/italia/cie-ideaapp
       desc: Sorgenti della app IDEA per Android che consente di leggere e visualizzare i dati della carta con uno smartphone
-    - title: SDK per Python (MRTD)
+    - title: SDK per .NET (MRTD)
       icon: github
       url: https://github.com/italia/cie-mrtd-dotnet-sdk
       desc: Libreria .NET per leggere le informazioni MRTD/ICAO
