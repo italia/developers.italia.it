@@ -247,7 +247,7 @@ layout: default
             | default: variant.publiccode.description.en
             | default: variant.publiccode.description.it %}
             <div class="variantDetail">
-              <a href="/{{active_lang}}/software/{{ variant.slug }}"> 
+              <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}"> 
               {{ variant.publiccode.name }} 
               </a>
               {{ t.software.variant_by }} {{ variant.publiccode.legal.repoOwner }}
