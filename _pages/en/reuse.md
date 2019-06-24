@@ -2,6 +2,8 @@
 title: Acquisition and reuse of software for the Public Administration 
 subtitle: 
 lang: en
+ref:
+  it: /it/riuso
 layout: internal-simple
 image: /assets/images/comelouso-temp-img.jpg
 

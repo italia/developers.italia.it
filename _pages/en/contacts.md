@@ -2,6 +2,8 @@
 title: Contacts 
 subtitle: 
 lang: en
+ref:
+  it: /it/contatti
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /en/who-we-are

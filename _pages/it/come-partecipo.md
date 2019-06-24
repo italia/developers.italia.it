@@ -1,6 +1,8 @@
 ---
 title: Come partecipo
 lang: it
+ref:
+  en: /en/get-involved
 layout: internal-simple
 image: /assets/images/comepartecipo-temp-img.jpg
 include-discuss: true

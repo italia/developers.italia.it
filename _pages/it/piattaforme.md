@@ -3,6 +3,8 @@ title: Piattaforme
 subtitle: "Il catalogo delle piattaforme abilitanti nazionali e locali: il sistema operativo del Paese."
 layout: platforms
 lang: it
+ref:
+  en: /en/platforms
 redirect_from:
   - /it/projects
 ---

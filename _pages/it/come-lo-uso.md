@@ -1,6 +1,8 @@
 ---
 title: Come lo uso
 lang: it
+ref:
+  en: /en/how
 layout: internal-simple
 image: /assets/images/comelouso-temp-img.jpg
 alternate-blocks:

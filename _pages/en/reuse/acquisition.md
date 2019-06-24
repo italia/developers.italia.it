@@ -1,6 +1,8 @@
 ---
 title: Software acquisition for Public Administrations 
 lang: en
+ref:
+  it: /it/riuso/acquisizione
 layout: internal-long
 subtitle:
 see_also:

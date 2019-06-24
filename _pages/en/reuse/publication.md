@@ -1,6 +1,8 @@
 ---
 title: Publish software for Public Administration 
 lang: en
+ref:
+  it: /it/riuso/pubblicazione
 layout: internal-long
 subtitle:
 see_also:
