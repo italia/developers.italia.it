@@ -6,6 +6,8 @@ payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
   Se sei un esercente e vuoi integrarti con la piattaforma via API per validare i coupon, puoi trovare qui documentazione e SDK.
 lang: it
+ref:
+  en: /en/18app
 order: 3
 highlight: false
 comingsoon: false

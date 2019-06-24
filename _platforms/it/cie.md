@@ -6,6 +6,8 @@ payoff: Carta d'Identità Elettronica
 description: >
   La nuova CIE è molto più che un documento d'identità: grazie al microprocessore RF può essere letta da dispositivi NFC (es. smartphone) e usata per accedere ai varchi o per creare connessioni sicure (TLS) verso i servizi in rete.
 lang: it
+ref:
+  en: /en/cie
 order: 1
 highlight: true
 comingsoon: false

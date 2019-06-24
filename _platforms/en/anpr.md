@@ -7,6 +7,8 @@ description: >
   A single centralised registry, accessible by an API, which holds the up-to-date information
   about address, civil state, etc.
 lang: en
+ref:
+  it: /it/anpr
 order: 4
 ref: anpr-project
 highlight: false

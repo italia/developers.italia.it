@@ -6,6 +6,8 @@ payoff: The platform where to spend the culture and education's bonus
 description: >
   If you are a business owner and want to integrate with the platform for validating the coupons, here you can find documentation and SDKs.
 lang: en
+ref:
+  it: /it/18app
 order: 3
 highlight: false
 comingsoon: false
