@@ -247,13 +247,17 @@ layout: default
             | default: variant.publiccode.description.en
             | default: variant.publiccode.description.it %}
             <div class="variantDetail">
-              <a href="/{{active_lang}}/software/{{ variant.slug }}">{{
-                t.software.variant_by }} {{ variant.publiccode.legal.repoOwner }} </a>
+              <a href="/{{active_lang}}/software/{{ variant.slug }}"> 
+              {{ variant.publiccode.name }} 
+              </a>
+              {{ t.software.variant_by }} {{ variant.publiccode.legal.repoOwner }}
+              <!--
               <p><span class="label">{{ t.software.additional_features }}</span>:
                 {% for feature in variant_description.features %}
                 {{ feature}}{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               </p>
+              -->
               <p><span class="label">{{ t.software.vitality }}:
                   {{ variant_sw.vitalityScore }}%</span>
               </p>
