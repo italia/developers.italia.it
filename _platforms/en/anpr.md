@@ -8,7 +8,7 @@ description: >
   about address, civil state, etc.
 lang: en
 ref:
-  value: anpr-project
+  val: anpr-project
   it: /it/anpr
 order: 4
 highlight: false
