@@ -7,11 +7,26 @@
     <span class="icon it-expand px-2 d-none d-lg-inline-block"></span>
   </a>
 
- 
   <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
       {% for lang in site.data.l10n %}
-      <li class="{% if lang[0]==active_lang %}active{%endif%}">
+      <li class="{% if lang[0]==active_lang %}active{%endif%}">        
+        {% if page.url contains "/software/" or  page.url contains "/api/" %}
+        <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {% elsif page.ref %}
+        
+        <!-- take ref from page when lang is not actual
+        otherwise taking from env
+         -->
+        {% if page.ref[lang.first] %}
+        {% assign newUrl = page.ref[lang.first] %}
+        {% else %}
+        {% assign newUrl = page.url %}
+        {% endif %}
+        
+        <a href="{{ newUrl }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {% else %}
         <a href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {%endif%}
         {% if lang[0]==active_lang %}
         <span class="icon it-check float-right"></span>
         {%endif%}

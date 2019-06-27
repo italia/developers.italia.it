@@ -6,6 +6,8 @@ payoff: Eletronic invoicing between private entities and towards the Public Admi
 description: >
   An XML format to describe without ambiguity an invoice: discover how to integrate it in your software.
 lang: en
+ref:
+  it: /it/fatturapa
 order: 5
 highlight: false
 layout: platform

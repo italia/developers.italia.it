@@ -4,6 +4,8 @@ subtitle: "The catalogue for the national and local enabling platforms: the
 country's operating system"
 layout: platforms
 lang: en
+ref:
+  it: /it/piattaforme
 redirect_from:
   - /en/projects
 ---

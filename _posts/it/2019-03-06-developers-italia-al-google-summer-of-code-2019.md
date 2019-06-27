@@ -8,6 +8,8 @@ categories: news
 author: Leonardo Favario
 image: /assets/icons/logo-it.svg
 locale: it
+ref:
+  en: /en/news/2019/03/07/developers-italia-at-google-summer-of-code-2019
 redirect_from:
    -
 ---

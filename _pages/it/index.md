@@ -1,6 +1,8 @@
 ---
 layout: home
 lang: it
+ref:
+  en: /en
 title: Developers Italia
 description: Sviluppiamo i servizi pubblici, insieme
 permalink: /

@@ -6,6 +6,8 @@ payoff: Electronic Identity Card
 description: >
   The new electronic identity card is more than a simple piece of plastic: thanks to it RF microprocessor it can be read by NFC devices (such as a smartphone) and used for granting access to facilities or for creating secure connections (TLS) to network services.
 lang: en
+ref:
+  it: /it/cie
 order: 1
 highlight: true
 comingsoon: false

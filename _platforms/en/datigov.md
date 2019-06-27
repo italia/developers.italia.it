@@ -6,6 +6,8 @@ payoff: The open data of the Public Administration
 description: >
     Dati.gov.it is the national list of the open data of the Italian Public Administrations.  It has been created with the aim to aggregate in a single portal most of the open data displayed by the various administrations both local and national.
 lang: en
+ref:
+  it: /it/datigov
 order: 2
 highlight: false
 comingsoon: false

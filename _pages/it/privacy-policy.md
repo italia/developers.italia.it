@@ -1,6 +1,8 @@
 ---
 title: Privacy Policy
 lang: it
+ref:
+  en: /en/privacy-policy
 layout: internal-long
 ---
 

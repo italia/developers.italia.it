@@ -6,6 +6,8 @@ payoff: La fatturazione elettronica verso lo Stato e tra privati
 description: >
   Un formato XML per descrivere una fattura: scopri come integrarlo nei tuoi software gestionali.
 lang: it
+ref:
+  en: /en/fatturapa
 order: 5
 highlight: false
 layout: platform

@@ -1,6 +1,8 @@
 ---
 title: Pubblicazione di software per la Pubblica Amministrazione
 lang: it
+ref:
+  en: /en/reuse/publication
 layout: internal-long
 subtitle:
 see_also:

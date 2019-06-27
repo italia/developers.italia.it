@@ -9,6 +9,8 @@ categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 locale: en
+ref:
+  it: /it/news/2018/05/23/un-ambiente-di-test-aperto-a-tutti-per-anpr
 redirect_from:
    - 
 ---

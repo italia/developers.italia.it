@@ -1,6 +1,8 @@
 ---
 title: Acquisizione di software per la Pubblica Amministrazione
 lang: it
+ref:
+  en: /en/reuse/acquisition
 layout: internal-long
 subtitle:
 see_also:

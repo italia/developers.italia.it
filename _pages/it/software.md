@@ -2,6 +2,8 @@
 title: Software
 subtitle: Il catalogo del software open source a disposizione della Pubblica Amministrazione.
 lang: it
+ref:
+  en: /en/software
 layout: software
 ---
 

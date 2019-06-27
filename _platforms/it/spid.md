@@ -6,6 +6,8 @@ payoff: Sistema Pubblico di Identità Digitale
 description: >
   Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.
 lang: it
+ref:
+  en: /en/spid
 order: 2
 highlight: true
 comingsoon: false
