@@ -14,3 +14,6 @@
   repos:
     - "https://github.com/tdf/libreoffice-metadata"
  
+- name: "Idra"
+  repos:
+    - "https://github.com/OPSILab/Idra"
