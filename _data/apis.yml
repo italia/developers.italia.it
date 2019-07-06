@@ -44,6 +44,16 @@
   language: [it]
   comingsoon: true
   slug: trasporti-opendata
+- openapi: https://ingv.github.io/openapi/fdsnws/event/0.0.1/event.yaml
+  title: INGV Earthquake event - ONT FDSNWS 
+  abstract: The fdsnws-event API returns event (earthquake) information from catalogs originating from the INGV data center.
+  contact:
+    name: Istituto Nazionale di Geofisica e Vulcanologia
+    logo: http://webservices.ingv.it/ingv_logo_text_two_lines.png
+  tags: []
+  language: [en]
+  comingsoon: true
+  slug: terremoti-opendata
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/cercaareeprotette.e015.servizirl.it.yaml
   title: Aree Protette Lombardia
   abstract: Informazioni sui Parchi, riserve e monumenti naturali della Regione Lombardia.
