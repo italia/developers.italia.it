@@ -17,6 +17,7 @@ jobs:
       - checkout
       - run: npm install .
       - run: gem install bundler
+      - run: which rsync || sudo apt-get install rsync
       - run: bundle install
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
