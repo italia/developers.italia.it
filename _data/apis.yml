@@ -1,3 +1,4 @@
+# Test change file and rebuild
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml
   title: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
