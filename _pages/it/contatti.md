@@ -7,7 +7,7 @@ ref:
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /it/chi-siamo
-include-newsletter: true
+include-developers-newsletter: true
 pair-blocks:
     - title: "Lavora con noi"
       text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://teamdigitale.governo.it/it/36-content.htm) del Team per la Trasformazione Digitale."

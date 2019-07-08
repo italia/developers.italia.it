@@ -102,11 +102,8 @@ newsletterdata:
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     hidden-inputs:
         -
-          name: group
-          value: 16
-        -
           name: list
-          value: 3
+          value: 1
 
 collections:
    pages:
