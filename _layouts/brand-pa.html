@@ -43,7 +43,7 @@ layout: default-pa
           <p>{{ t.software.sort_by }}</p>
           <div class="form-group">
             <select class="form-control">
-              <option value="relevance" class="active">Relevance</option>
+              <option value="relevance" class="active">{{ t.software.sort_by_relevance }}</option>
               <option value="az">A/Z</option>
               <option value="za">Z/A</option>
             </select>
@@ -315,7 +315,7 @@ layout: default-pa
           <h5 class="modal-title" id="exampleModalLabelSort">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" sort="relevance">Relevance <i class="it-check"></i></a>
+          <a href="" sort="relevance">{{ t.software.sort_by_relevance }} <i class="it-check"></i></a>
           <a href="" sort="az">A/Z</a>
           <a href="" sort="za">Z/A</a>
         </div>
