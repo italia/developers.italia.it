@@ -186,6 +186,16 @@ page_gen:
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
 
+  - index_files: false
+    name: ipa
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: it
+      title_suffix: 'Developers Italia'
+    dir: it/pa
+    # filter_condition: "record['language'].include? 'it'"
+
 sass:
     load_paths:
       - _sass
