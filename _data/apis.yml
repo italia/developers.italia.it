@@ -49,7 +49,7 @@
   abstract: The fdsnws-event API returns event (earthquake) information from catalogs originating from the INGV data center.
   contact:
     name: Istituto Nazionale di Geofisica e Vulcanologia
-    logo: http://webservices.ingv.it/ingv_logo_text_two_lines.png
+    logo: https://webservices.ingv.it/ingv_logo_text_two_lines.png
   tags: []
   language: [en]
   comingsoon: true
