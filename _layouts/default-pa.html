@@ -35,7 +35,11 @@
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
           <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
-            {{ page.publicAuthority.styledName }}
+            {% if page.data.styledName %}
+            {{ page.data.styledName }}
+            {% else %}
+            {{ page.data.name }}
+            {% endif %}
           </a>
           <a class="text-primary" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
             <span class="d-none d-lg-block Header-subtitle">
@@ -45,10 +49,8 @@
         </h1>
       </div>
       <div class="Header-title col-12 col-md-3">
-        <p>Questo è il catalogo previsto dalle
-          <a href="/it/riuso">Linee Guida per l’Acquisizione e il Riuso del Software</a>,
-          che include le soluzioni messe a riuso dalla Pubblica Amministrazione ai
-          sensi dell’art. 69 e il software open source di terze parti destinato alla PA.
+        <p>
+          {{ t.pa.top_right_text }}
         </p>
       </div>
     </div>
