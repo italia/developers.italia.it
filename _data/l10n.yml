@@ -202,6 +202,10 @@ it:
 
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
+      title: AMMINISTRAZIONI
+      more_details: Leggi di più
+      reuse_sw: SOFTWARE A RIUSO
+      third_party_sw: SOFTWARE OPEN-SOURCE DI TERZE PARTI
 
 en:
   code: eng
@@ -404,6 +408,10 @@ en:
         * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Digital Administration Code.
+      title: ADMINISTRATIONS
+      more_details: Read more
+      reuse_sw: REUSE SOFTWARE
+      third_party_sw: THIRD PARTY OPEN-SOURCE SOFTWARE
 
 
 

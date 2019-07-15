@@ -12,6 +12,10 @@
       <li class="{% if lang[0]==active_lang %}active{%endif%}">        
         {% if page.url contains "/software/" or  page.url contains "/api/" %}
         <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {% elsif page.url contains "/amministrazioni/" %}
+        <a href="{{ page.url | replace_first: active_lang, lang.first | replace_first: 'amministrazioni', 'administrations' }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+        {% elsif page.url contains "/administrations/" %}
+        <a href="{{ page.url | replace_first: active_lang, lang.first | replace_first: 'administrations', 'amministrazioni' }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
         {% elsif page.ref %}
         
         <!-- take ref from page when lang is not actual

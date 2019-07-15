@@ -4,6 +4,6 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod te
 lang: it
 ref:
   en: /en/administrations
-ref: administrations
-layout: software-sub-category
+  route: amministrazioni
+layout: software-subcat-pa
 ---
