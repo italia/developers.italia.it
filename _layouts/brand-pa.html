@@ -53,9 +53,9 @@ layout: default-pa
                 <a href="{{sw_url}}" class="d-block decoration-none ">
                   
                   {% if software.publiccode.it.riuso.codiceIPA != nil %}
-                  <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
+                  <p class="icon-type-public-sw">{{ t.pa.reuse_sw }}</p>
                   {% else %}
-                  <p class="icon-type-generic-sw">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
+                  <p class="icon-type-generic-sw">{{ t.pa.third_party_sw }}</p>
                   {% endif %}
                   <div class="main-image"
                     style=" background: url({{ description.screenshots | first | default: software.publiccode.logo | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
@@ -63,7 +63,7 @@ layout: default-pa
                   <p class="name color-inherit">
                     {{ sw_name }}
                   </p>
-                  <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+                  <span class="item-more"> {{ t.pa.more_details }} &rarr;</span>
                 </a>
               </div>
               {% endif %}
