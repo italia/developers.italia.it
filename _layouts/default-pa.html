@@ -20,8 +20,6 @@
       {% include search_form.html textColor="primary" %}
     </div>
     {% endif %}
-
-
   </div>
 
   <div class="container">
@@ -37,6 +35,9 @@
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
           <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+            <!-- Nobody is ever going to provide a styledName... 
+            We could make this in the Jekyll template with a few heuristics, 
+            like stripping "Comune di", "Regione di", "Ministero del " etc. -->
             {% if page.publicAuthority.styledName %}
             {{ page.publicAuthority.styledName }}
             {% else %}

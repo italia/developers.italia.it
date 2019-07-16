@@ -31,7 +31,6 @@ layout: default
         <h1 style="font-size: 3rem">{{ page.title }}</h1>
         <div class="abstract-sorting row row-eq-height d-none d-md-flex">
           <div class="results-number col-md-6 d-flex"></div>
-          
         </div>
       </div>
 
@@ -45,7 +44,7 @@ layout: default
           <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
             <a href="{{pa_url}}" class="d-block decoration-none ">
               
-              <p class="icon-type-administration">{{ t.pa.title }}</p>
+              <p class="icon-type-administration">{{ t.software.administrations | upcase}}</p>
 
               {% assign img_url = pa.publicAuthority.emblem | default:'/assets/images/cover_amministrazioni.png' %}
               <div class="main-image"
