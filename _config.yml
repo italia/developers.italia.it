@@ -193,7 +193,7 @@ page_gen:
     defaults:
       lang: it
       title_suffix: 'Developers Italia'
-    dir: it/amministrazioni
+    dir: it/pa
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
@@ -203,7 +203,7 @@ page_gen:
     defaults:
       lang: en
       title_suffix: 'Developers Italia'
-    dir: en/administrations
+    dir: en/pa
     # filter_condition: "record['language'].include? 'it'"
 
 sass:
