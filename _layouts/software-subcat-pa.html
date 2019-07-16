@@ -47,7 +47,7 @@ layout: default
               
               <p class="icon-type-administration">{{ t.pa.title }}</p>
 
-              {% assign img_url = pa.data.emblem | default:'/assets/images/cover_amministrazioni.png' %}
+              {% assign img_url = pa.publicAuthority.emblem | default:'/assets/images/cover_amministrazioni.png' %}
               <div class="main-image"
                 style=" background: url({{ img_url }}) no-repeat top center;">
               </div>

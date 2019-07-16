@@ -35,10 +35,10 @@
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
           <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
-            {% if page.data.styledName %}
-            {{ page.data.styledName }}
+            {% if page.publicAuthority.styledName %}
+            {{ page.publicAuthority.styledName }}
             {% else %}
-            {{ page.data.name }}
+            {{ page.publicAuthority.name }}
             {% endif %}
           </a>
           <a class="text-primary" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
