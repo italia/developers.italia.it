@@ -28,7 +28,9 @@
     <div class="row">
       <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
         <a href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+          {% if page.publicAuthority.emblem %}
           <img src="{{ page.publicAuthority.emblem }}" alt="">
+          {% endif %}
         </a>
       </div>
 
