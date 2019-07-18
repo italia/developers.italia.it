@@ -39,7 +39,7 @@ $(document).ready(function() {
                     return "<a target='_blank' href='"+row.url+"'>"+data+"</a>";
                     } 
                 },
-                { "data": "type" ,  "orderable": false, "name":"type", "render": function(data, type, row, meta) {
+                { "data": "type" ,  className: "text-center" ,"orderable": false, "name":"type", "render": function(data, type, row, meta) {
                     var classname = data.replace(' ','');
                     return "<span hidden>"+data+"</span><span class='issue-"+classname+"' ></span>";
                 }},
