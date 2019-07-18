@@ -10,6 +10,7 @@ Il sito è sviluppato con Jekyll. Per configurare un ambiente di sviluppo è suf
 export ELASTICSEARCH_URL=""
 npm install
 bundle install
+make include-npm-deps
 bundle exec jekyll serve
 ```
 
