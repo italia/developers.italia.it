@@ -1,7 +1,8 @@
 {
     "dependencies": {
         "bootstrap-italia": "^1.2.6",
-        "chart.js": "^2.7.2"
+        "chart.js": "^2.7.2",
+        "jquery": "^3.4.1"
     },
     "repository": {
         "type": "git",

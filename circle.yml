@@ -18,7 +18,7 @@ jobs:
       - run: npm install .
       - run: gem install bundler
       - run: bundle install
-      - run: which rsync || sudo apt-get install rsync
+      - run: make include-npm-deps
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
@@ -37,6 +37,7 @@ jobs:
       - run: npm install .
       - run: gem install bundler
       - run: bundle install
+      - run: make include-npm-deps
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
