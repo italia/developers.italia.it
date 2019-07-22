@@ -16,6 +16,6 @@
     "@braintree/sanitize-url": "^2.1.0",
     "parcel-bundler": "^1.10.3",
     "react": "^15.6.2",
-    "swagger-ui": "^3.14.0"
+    "swagger-ui": "^3.18.0"
   }
 }
