@@ -34,4 +34,4 @@ L’Utente può scegliere di abilitare o disabilitare i cookies intervenendo sul
   - [Firefox](https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie)
   - [Safari](https://support.apple.com/en-us/HT201265)
   - [Internet Explorer](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies)
-  - [Opera](http://help.opera.com/Windows/10.00/en/cookies.html)
+  - [Opera](https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/)
