@@ -53,7 +53,7 @@ Potresti essere interessato a partecipare alla comunità se:
 
 La [sezione Cloud e Data Center del forum](https://forum.italia.it/c/piano-triennale/data-center-e-cloud), aperta a tutti, è dedicata a discutere e condividere informazioni sul Cloud della PA, mentre [Github](https://github.com/italia) è dedicato alla raccolta di codice, documentazione e blueprints per lo sviluppo delle infrastrutture Cloud e del processo di Cloud Enablement della PA.
 
-Per tutti i System Administrator, Network Architect, DevOps, Site Reliability Engineering e Operations Manager è aperto il [canale Slack #devops](https://developersitalia.slack.com/messages/C9TCMU07R/).
+Per tutti i System Administrator, Network Architect, DevOps, Site Reliability Engineering e Operations Manager è aperto il [canale Slack #cloud](https://developersitalia.slack.com/messages/C9TCMU07R/).
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Dialoga su Slack (#devops)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
