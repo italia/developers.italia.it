@@ -25,28 +25,28 @@
   <div class="container">
     <div class="row">
       <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
-        <a href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
-          {% if page.publicAuthority.emblem %}
-          <img src="{{ page.publicAuthority.emblem }}" alt="">
+        <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+          {% if page.emblem %}
+          <img src="{{ page.emblem }}" alt="">
           {% endif %}
         </a>
       </div>
 
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
-          <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+          <a class="text-900" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
             <!-- Nobody is ever going to provide a styledName... 
             We could make this in the Jekyll template with a few heuristics, 
             like stripping "Comune di", "Regione di", "Ministero del " etc. -->
-            {% if page.publicAuthority.styledName %}
-            {{ page.publicAuthority.styledName }}
+            {% if page.styledName %}
+            {{ page.styledName }}
             {% else %}
-            {{ page.publicAuthority.name }}
+            {{ page.entityName }}
             {% endif %}
           </a>
-          <a class="text-primary" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
+          <a class="text-primary" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
             <span class="d-none d-lg-block Header-subtitle">
-              {{ page.publicAuthority.websiteText }}
+              {{ page.websiteText }}
             </span>
           </a>
         </h1>

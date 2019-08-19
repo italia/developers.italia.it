@@ -188,21 +188,21 @@ page_gen:
 
   - index_files: false
     name: ipa
+    title: entityName
     data: crawler.amministrazioni
     template: brand-pa
     defaults:
       lang: it
-      title_suffix: 'Developers Italia'
     dir: it/pa
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
     name: ipa
+    title: entityName
     data: crawler.amministrazioni
     template: brand-pa
     defaults:
       lang: en
-      title_suffix: 'Developers Italia'
     dir: en/pa
     # filter_condition: "record['language'].include? 'it'"
 
