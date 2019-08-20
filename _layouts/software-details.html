@@ -73,8 +73,12 @@ layout: default
             <div class="col-sm">
               <p><span class="label">{{ t.software.technical_contact }} </span>
                 {% for contact in page.publiccode.maintenance.contacts limit: 1 %}
-                <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
-                {{ contact.phone }}
+                    {% if contact.email != nil and contact.email != "" %}
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
+                    {% else %}
+                    {{ contact.name }}
+                    {% endif %}
+                    {{ contact.phone }}
                 {% endfor %}
               </p>
             </div>
@@ -420,7 +424,12 @@ layout: default
                 {% for contact in page.publiccode.maintenance.contacts %}
                 <div class="col-md">
                   <p>
-                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> {{ contact.phone }}
+                    {% if contact.email != nil and contact.email != "" %}
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> 
+                    {% else %}
+                    {{ contact.name }}
+                    {% endif %}
+                    {{ contact.phone }}
                   </p>
                 </div>
                 {% endfor %}
