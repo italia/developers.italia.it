@@ -28,3 +28,7 @@
     top: 0;
   }
 }
+
+tr > *.col{
+    width: auto;
+}
