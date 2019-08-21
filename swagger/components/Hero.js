@@ -18,8 +18,9 @@ const copyToClipboard = text => {
 
 class Hero extends Component {
   render() {
+    const projects = require("../projects.js");
     const { specSelectors, getComponent } = this.props;
-
+      
     const info = specSelectors.info();
     const title = info.get("title");
     const version = info.get("version");
@@ -34,6 +35,7 @@ class Hero extends Component {
     const summary = info.get("x-summary");
     const project = info.get("x-project");
 
+    // Check if project exists in the projects list.
     const reference = projects.filter(proj => proj.id === project)[0];
 
     const {
