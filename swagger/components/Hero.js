@@ -23,7 +23,7 @@ class Hero extends Component {
     */
     const projects = require("../projects.js");
     const { specSelectors, getComponent } = this.props;
-      
+
     const info = specSelectors.info();
     const title = info.get("title");
     const version = info.get("version");
