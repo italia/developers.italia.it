@@ -1,5 +1,5 @@
 ---
-layout: internal-long 
+layout: internal-long
 ---
 
 {% include setlang.html %}
@@ -14,83 +14,51 @@ layout: internal-long
 
 {% endcomment %}
 {% assign github_tech_list = site.github_tech_list %}
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/datatables/jquery.dataTables.min.css">
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
-    {{ page.title }}</h1>
-  <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">{{ page.subtitle }}</h2>
+
+
+<div class="row">
+  <div class="col-12">
+    <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+      {{ page.title }}
+    </h1>
+    <h2 class="u-text-r-m u-textWeight-300 u-color-20  u-lineHeight-m">
+      {{ page.subtitle }}
+    </h2>
+  </div>
 </div>
 
 <hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
 
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
-    <div class="Grid-cell u-sizeFull u-md-size9of12 u-lg-size9of12">
-      <div class="u-text-r-xxs u-lineHeight-l u-margin-right-xl u-color-grey-50 ">
-        {{ content }}
-      </div>
-
-      <table id="issues_table" class="display responsive" cellspacing="0" width="100%">
-        <thead>
-          <tr>
-            <th>Created</th>
-            <th>Language</th>
-            <th data-priority="2">{{ t.todo_page_project }}</th>
-            <th data-priority="1">{{ t.todo_page_subproject }}</th>
-            <th data-priority="0">{{ t.todo_page_title }}</th>
-            <th data-priority="11">{{ t.todo_page_type }}</th>
-            <th data-priority="10">{{ t.todo_page_labels }}</th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-
-    <div class="Grid-cell u-sizeFull u-md-size3of12 u-lg-size3of12" id="github_filter">
-      <div class="u-nbfc u-color-grey-50 u-xs-padding-all-none u-sizeFull u-margin-bottom-xl
-	            u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-white u-pullUp ">
-        <div class="u-padding-r-all">
-          <div class="u-padding-r-all u-xs-padding-all-none u-minHeight-250">
-            <h2 class="u-text-r-l u-textWeight-400 u-margin-bottom-m">{{ t.todo_page_filters }}</h2>
-            <div class="Form-field u-margin-bottom-xl">
-              <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs"
-                for="github_projects_list">{{ t.todo_page_projects }}</label>
-              <select name="github_projects_list" id="github_projects_list" class="Form-input">
-                <option value=""></option>
-              </select>
-            </div>
-
-            <div class="Form-field u-margin-bottom-xl">
-              <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs"
-                for="github_languages_list">{{ t.todo_page_tech }}</label>
-              <select name="github_languages_list" id="github_languages_list" multiple="multiple" class="Form-input">
-                <option value=""></option>
-                {% for tech in github_tech_list %}
-                <option value="{{ tech }}">{{tech}}</option>
-                {% endfor %}
-              </select>
-            </div>
-
-            <div class="Form-field u-margin-bottom-xl">
-              <label class="Form-label u-text-r-xs u-textWeight-400 u-margin-bottom-xs"
-                for="github_types_list">{{ t.todo_page_types}}</label>
-              <div id="github_types_list">
-              </div>
-            </div>
-            <button 
-              class="Button Button--default Button--round u-borderRadius-m u-text-r-xs u-background-50 u-color-white"
-              id="issues_table_clear">
-              {{ t.todo_page_clearfilter }}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="row">
+  <div class="col-12">
+    {{ content }}
   </div>
 </div>
+
+
+<div class="row">
+  <div class="col-12">
+    <table id="issues_table" class="display responsive" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th>Created</th>
+          <th>Language</th>
+          <th data-priority="2">{{ t.todo_page_project }}</th>
+          <th data-priority="1">{{ t.todo_page_subproject }}</th>
+          <th data-priority="0">{{ t.todo_page_title }}</th>
+          <th data-priority="11">{{ t.todo_page_type }}</th>
+          <th data-priority="10">{{ t.todo_page_labels }}</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>
+
 <script>
-    // dictionary of projects
-    var projects_dictionary = {{ t.todo_projects_dict | jsonify }};
+  // dictionary of projects
+  var projects_dictionary = {{ t.todo_projects_dict | jsonify }};
 </script>
 <!-- Load jquery -->
 <script src="/assets/vendor/jquery.min.js"></script>

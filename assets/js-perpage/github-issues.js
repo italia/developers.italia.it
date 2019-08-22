@@ -17,6 +17,9 @@ $(document).ready(function() {
             "pageLength": 20,
             "bLengthChange": false,
             "bInfo" : false,
+            "sDom": "<'row' B><'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+                "<'row'tr>" +
+                "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
             "language": {
                 "url": datatables_language_url[current_language]
             },
