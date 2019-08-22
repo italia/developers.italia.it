@@ -18,6 +18,9 @@ const copyToClipboard = text => {
 
 class Hero extends Component {
   render() {
+    /* project.js provides support for processing 
+       the x-project OAS field used to reference teamdigitale's projects
+    */
     const projects = require("../projects.js");
     const { specSelectors, getComponent } = this.props;
       
