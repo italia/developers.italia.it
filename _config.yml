@@ -64,6 +64,7 @@ exclude:
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
+  - node_modules
 
 
 pagination:
@@ -184,6 +185,26 @@ page_gen:
       title_suffix: 'Developers Italia'
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: it
+    dir: it/pa
+    # filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: en
+    dir: en/pa
+    # filter_condition: "record['language'].include? 'it'"
 
 sass:
     load_paths:
