@@ -877,7 +877,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   } else if (category_id == 'public-sw') {
     screenshot = '/assets/images/cover_softwareriuso.png';
   } else {
-    screenshot = '/assets/images/cover_software opensource.png';
+    screenshot = '/assets/images/cover_software_opensource.png';
   }
 
   var localisedName = software.publiccode.name;
