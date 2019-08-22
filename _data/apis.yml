@@ -15,7 +15,6 @@
     logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
   tags: []
   language: [it]
-  comingsoon: false 
   slug: daf-ckan
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siopeplus.yaml
   title: SIOPE+
