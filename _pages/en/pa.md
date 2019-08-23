@@ -4,5 +4,6 @@ subtitle: Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod te
 lang: en
 ref:
   it: /it/pa
-layout: administrations
+  route: pa
+layout: software-subcat-pa
 ---

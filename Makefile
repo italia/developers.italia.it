@@ -1,6 +1,8 @@
 VENDOR_DIR = assets/vendor/
 
 .PHONY: deploy
+test:
+	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 local:
 	JEKYLL_NO_GITHUB=true bundle exec jekyll serve
 deploy:
