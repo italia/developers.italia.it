@@ -9,8 +9,9 @@
 
   <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
       {% for lang in site.data.l10n %}
-      <li class="{% if lang[0]==active_lang %}active{%endif%}">        
-        {% if page.url contains "/software/" or  page.url contains "/api/" %}
+      <li class="{% if lang[0]==active_lang %}active{%endif%}">
+        <!-- pages generated with page_gen plugins  -->
+        {% if page.url contains "/software/" or  page.url contains "/api/" or  page.url contains "/pa/" %}
         <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
         {% elsif page.ref %}
         

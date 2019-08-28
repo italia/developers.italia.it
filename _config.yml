@@ -64,6 +64,7 @@ exclude:
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
+  - node_modules
 
 
 pagination:
@@ -86,7 +87,7 @@ css_theme: t-Pac
 owner_short: AgID
 owner_full: AgID
 owner_link: http://www.agid.gov.it
-logo: /assets/icons/logo-it.png
+logo: /assets/icons/logo-it.svg
 owner_logo: /assets/images/agid-logo-bb.svg
 partner_short: Team Digitale
 partner_full: Team per la Trasformazione Digitale
@@ -184,6 +185,26 @@ page_gen:
       title_suffix: 'Developers Italia'
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: it
+    dir: it/pa
+    # filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: en
+    dir: en/pa
+    # filter_condition: "record['language'].include? 'it'"
 
 sass:
     load_paths:

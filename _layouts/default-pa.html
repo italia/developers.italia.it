@@ -7,10 +7,60 @@
 
 <div class="u-background-95">
   <div id="main" class="u-layout-wide u-layoutCenter">
-    {% include header-pa.html hasSearch=true %}
+    {% include header.html hasSearch=true %}
+    {% include offcanvas.html menu_items=site.data.menu_items %}
+    {% comment %}
+    <!-- NOT FOR NOW-->
+    {% include network.html network_items=site.data.network_links %}
+    {% endcomment %}
 
-    {{ content }}
+
+    {% if include.hasSearch %}
+    <div class="Header-search ml-4 mb-0" id="header-search">
+      {% include search_form.html textColor="primary" %}
+    </div>
+    {% endif %}
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
+        <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+          {% if page.emblem %}
+          <img src="{{ page.emblem }}" alt="">
+          {% endif %}
+        </a>
+      </div>
+
+      <div class="Header-title col-md-7 col-9 mr-auto">
+        <h1 class="Header-titleLink Header-titleLink--pa">
+          <a class="text-900" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
+            <!-- Nobody is ever going to provide a styledName... 
+            We could make this in the Jekyll template with a few heuristics, 
+            like stripping "Comune di", "Regione di", "Ministero del " etc. -->
+            {% if page.styledName %}
+            {{ page.styledName }}
+            {% else %}
+            {{ page.entityName }}
+            {% endif %}
+          </a>
+          <a class="text-primary" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
+            <span class="d-none d-lg-block Header-subtitle">
+              {{ page.websiteText }}
+            </span>
+          </a>
+        </h1>
+      </div>
+      <div class="Header-title col-12 col-md-3">
+        <p>
+          {{ t.pa.top_right_text }}
+        </p>
+      </div>
+    </div>
+    <!-- Header-navbar -->
+
+  </div>
+  {{ content }}
 </div>
 
 {% include scrolltop.html %}

@@ -105,6 +105,7 @@ it:
     todo_page_types: Tipi
     todo_page_type: Tipo
     todo_page_filters: Filtra la lista
+    todo_page_pick_option: Scegli una opzione
     todo_projects_dict:
         pianotriennale: Piano Triennale
         anpr: ANPR (Anagrafe Nazionale)
@@ -139,6 +140,9 @@ it:
       reuse_software: Software a riuso
       filters: Filtri
       sort_by: Ordina per
+      sort_by_relevance: Rilevanza
+      sort_by_emerging: Emergenti
+      sort_by_popularity: Popolarità
       categories: Categorie
       results: risultati
       variant_by: Variante di
@@ -196,6 +200,10 @@ it:
         * **User community**: il numero di autori unici; 
 
         * **Longevity**: l'età del progetto. I range di ogni misura possono essere trovati nel file *vitality-ranges.yml* in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+
+    pa:
+      top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
+      more_details: Esplora
 
 en:
   code: eng
@@ -304,6 +312,7 @@ en:
     todo_page_types: Types
     todo_page_type: Type
     todo_page_filters: Filter the list
+    todo_page_pick_option: Pick an option
     todo_projects_dict:
         pianotriennale: Three-year Plan
         anpr: National Registry of Resident Population
@@ -335,6 +344,9 @@ en:
       software_open: Software open source
       reuse_software: Reuse software
       sort_by: Sort by
+      sort_by_relevance: Relevance
+      sort_by_emerging: Emerging
+      sort_by_popularity: Popularity
       filters: Filters
       categories: Categories
       results: results
@@ -393,5 +405,9 @@ en:
         * **User community**: the number of unique authors;
 
         * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+    pa:
+      top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
+      more_details: Read more
+
 
 
