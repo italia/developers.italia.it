@@ -11,8 +11,8 @@ layout: default
 {% include linklist.html items=subnav dynamic=true %}
 {% endcomment %}
 
-{% assign reuse_sw   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | slice: 0, 60 %}
-{% assign generic_sw = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA == nil" | slice: 0, 60 %}
+{% assign recent_sw   = site.data.crawler.softwares | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
+{% assign active_sw   = site.data.crawler.softwares | sort: "vitalityScore" | reverse | slice: 0, 4 %}
 
 
 <div class="container page-softwares-list">
@@ -28,42 +28,55 @@ layout: default
     </div>
   </div>
 
-  {% if reuse_sw.size > 0 %}
+  <div class="row py-2">
+    <div class="col-3"></div>
+    <div class="col-3 text-right">
+      <a href="/{{ active_lang }}/search?type=reuse_software&page=0&sort=relevance" target="_blank"
+        class="btn btn-secondary mt-2">{{ t.software.reuse_software }}</a>
+    </div>
+    <div class="col-4">
+      <a href="/{{ active_lang }}/search?type=software_open&page=0&sort=relevance" target="_blank"
+        class="btn btn-primary mt-2">{{ t.software.software_open }}</a>
+    </div>
+    <div class="col-2"></div>
+  </div>
+
+  {% if recent_sw.size > 0 %}
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
       <div class="col-md-7">
-        <h2>{{ t.software.reuse_software }}</h2>
+        <h2>{{ t.software.recent_software }}</h2>
       </div>
-      <!--
+
       <div class="col-md-5 how">
-        <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
+        <a href="{{ t.home_hero_buttonurl }}">{{ t.how_to_use }} &rarr;</a>
       </div>
-      -->
+
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
-      items=reuse_sw
+      items=recent_sw
       show_type=false
       %}
     </div>
   </div>
   {% endif %}
 
-  {% if generic_sw.size > 0 %}
+  {% if active_sw.size > 0 %}
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
       <div class="col-md-9">
-        <h2>{{ t.software.software_open }}</h2>
+        <h2>{{ t.software.active_software }}</h2>
       </div>
-      <!--
-        <div class="col-md-3 how">
-          <a href="/it/come-lo-uso">Come lo uso &rarr;</a>
-        </div>
-        -->
+
+      <div class="col-md-3 how">
+        <a href="{{ t.home_hero_buttonurl }}">{{ t.how_to_use }} &rarr;</a>
+      </div>
+
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
-      items=generic_sw
+      items=active_sw
       show_type=false
       %}
     </div>

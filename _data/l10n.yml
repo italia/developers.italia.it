@@ -138,6 +138,8 @@ it:
     software:
       software_open: Software open source di terze parti
       reuse_software: Software a riuso
+      recent_software: Software più recenti
+      active_software: Software più attivi
       filters: Filtri
       sort_by: Ordina per
       sort_by_relevance: Rilevanza
@@ -256,7 +258,7 @@ en:
 
     home_hero: A community of developers who design and code Italian digital public services
     home_hero_button: Learn more
-    home_hero_buttonurl: '#'
+    home_hero_buttonurl: '/en/how'
     home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
@@ -343,6 +345,8 @@ en:
     software:
       software_open: Software open source
       reuse_software: Reuse software
+      recent_software: Software most recent
+      active_software: Software most active
       sort_by: Sort by
       sort_by_relevance: Relevance
       sort_by_emerging: Emerging
