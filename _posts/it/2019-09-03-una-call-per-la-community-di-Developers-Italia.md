@@ -38,4 +38,4 @@ L’appuntamento del 18 settembre è solo l’inizio: torneremo a sentirci **ogn
 
 Ti aspettiamo!
 
-il Team Developers Italia
+Il Team Developers Italia
