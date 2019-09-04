@@ -140,6 +140,7 @@ it:
       reuse_software: Software a riuso
       recent_software: Software più recenti
       active_software: Software più attivi
+      pa_most_active: Amministrazioni più virtuose
       filters: Filtri
       sort_by: Ordina per
       sort_by_relevance: Rilevanza
@@ -345,8 +346,9 @@ en:
     software:
       software_open: Software open source
       reuse_software: Reuse software
-      recent_software: Software most recent
-      active_software: Software most active
+      recent_software: Most recent software
+      active_software: Most active software
+      pa_most_active: Most virtuos administration
       sort_by: Sort by
       sort_by_relevance: Relevance
       sort_by_emerging: Emerging

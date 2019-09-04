@@ -13,7 +13,7 @@ layout: default
 
 {% assign recent_sw   = site.data.crawler.softwares | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
 {% assign active_sw   = site.data.crawler.softwares | sort: "vitalityScore" | reverse | slice: 0, 4 %}
-
+{% assign efficient_pas   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
 
 <div class="container page-softwares-list">
   <div class="intro">
@@ -28,7 +28,11 @@ layout: default
     </div>
   </div>
 
-  <div class="row py-2">
+  {% if page.pair-blocks!=nil%}
+  {% include pair-blocks.html blocks=page.pair-blocks %}
+  {% endif %}
+
+  <!-- <div class="row py-2">
     <div class="col-3"></div>
     <div class="col-3 text-right">
       <a href="/{{ active_lang }}/search?type=reuse_software&page=0&sort=relevance" target="_blank"
@@ -39,7 +43,7 @@ layout: default
         class="btn btn-primary mt-2">{{ t.software.software_open }}</a>
     </div>
     <div class="col-2"></div>
-  </div>
+  </div> -->
 
   {% if recent_sw.size > 0 %}
   <div class="container list-item-sorting">
@@ -48,9 +52,9 @@ layout: default
         <h2>{{ t.software.recent_software }}</h2>
       </div>
 
-      <div class="col-md-5 how">
+      <!-- <div class="col-md-5 how">
         <a href="{{ t.home_hero_buttonurl }}">{{ t.how_to_use }} &rarr;</a>
-      </div>
+      </div> -->
 
     </div>
     <div class="row row-eq-height">
@@ -58,6 +62,9 @@ layout: default
       items=recent_sw
       show_type=false
       %}
+    </div>
+    <div class="row">
+      <a href="/{{ active_lang }}/pa" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
     </div>
   </div>
   {% endif %}
@@ -69,16 +76,35 @@ layout: default
         <h2>{{ t.software.active_software }}</h2>
       </div>
 
-      <div class="col-md-3 how">
-        <a href="{{ t.home_hero_buttonurl }}">{{ t.how_to_use }} &rarr;</a>
-      </div>
-
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
       items=active_sw
       show_type=false
       %}
+    </div>
+    <div class="row">
+      <a href="/{{ active_lang }}/pa" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if efficient_pas.size > 0 %}
+  <div class="container list-item-sorting">
+    <div class="software_macro_category_title row">
+      <div class="col-md-9">
+        <h2>{{ t.software.pa_most_active }}</h2>
+      </div>
+
+    </div>
+    <div class="row row-eq-height">
+      {% include pa-listing.html
+      items=efficient_pas
+      show_type=false
+      %}
+    </div>
+    <div class="row">
+      <a href="/{{ active_lang }}/pa" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
     </div>
   </div>
   {% endif %}
