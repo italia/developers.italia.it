@@ -54,7 +54,13 @@ layout: default
           <div class="row legal-main-info">
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
+                {% if page.publiccode.it.riuso.codiceIPA %}
+                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA }}">
                 {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                </a>
+                {%else%}
+                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {%endif%}
               </p>
             </div>
             {% if page.publiccode.maintenance.type == "contract" %}
