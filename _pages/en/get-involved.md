@@ -20,6 +20,9 @@ alternate-blocks:
         - label: Chat on Slack
           class: btn btn-outline-primary
           url: 'https://slack.developers.italia.it/'
+        - label: Contribute!
+          class: btn btn-primary
+          url: '/en/to-do'
     - title: "Participate in development of public software"
       text: "The catalogue of Developers Italia includes the open source software used or released by the Public Administration. Everyone can contribute: find bugs and security issues, or propose improvements and new features. Public digital services can now benefit from your contribution too."
       image: /assets/images/come-partecipo-4.svg
