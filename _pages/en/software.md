@@ -27,7 +27,5 @@ pair-blocks:
           url: '/en/search?type=software_open&page=0&sort=relevance'
 ---
 
-This is the catalogue envisaged by the [Guidelines for Software Acquisition and Reuse](/en/reuse), which includes the solutions put into reuse by the Public Administration in accordance with the art. 69 and the third party open source software meant for PAs. 
-
-<a href="/en/reuse" class="btn btn-primary mt-2">More information on
+This is the catalogue envisaged by the [Guidelines for Software Acquisition and Reuse](/en/reuse), which includes the solutions put into reuse by the Public Administration in accordance with the art. 69 and the third party open source software meant for PAs. In deep: <a href="/en/reuse" class="mt-2">More information on
 acquisition and reuse</a>

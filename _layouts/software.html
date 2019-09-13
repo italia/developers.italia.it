@@ -44,17 +44,20 @@ layout: default
     </div>
     <div class="col-2"></div>
   </div> -->
+  {% assign reuse_sw_url = "/" | append: active_lang | append: "/search?type=reuse_software&page=0&sort=relevance" | escape %}
+  {% assign open_sw_url = "/" | append: active_lang | append: "/search?type=software_open&page=0&sort=relevance" | escape %}
 
   {% if recent_sw.size > 0 %}
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
-      <div class="col-md-7">
+      <div class="col-md-9">
         <h2>{{ t.software.recent_software }}</h2>
       </div>
 
-      <!-- <div class="col-md-5 how">
-        <a href="{{ t.home_hero_buttonurl }}">{{ t.how_to_use }} &rarr;</a>
-      </div> -->
+      <div class="col-md-3 how">
+        <a href="{{ reuse_sw_url }}">{{ t.software.show_all }}
+          &rarr;</a>
+      </div>
 
     </div>
     <div class="row row-eq-height">
@@ -62,9 +65,6 @@ layout: default
       items=recent_sw
       show_type=false
       %}
-    </div>
-    <div class="row">
-      <a href="/{{ active_lang }}/search?type=reuse_software&page=0&sort=relevance" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
     </div>
   </div>
   {% endif %}
@@ -76,15 +76,16 @@ layout: default
         <h2>{{ t.software.active_software }}</h2>
       </div>
 
+      <div class="col-md-3 how">
+        <a href="{{ reuse_sw_url }}">{{ t.software.show_all }}
+          &rarr;</a>
+      </div>
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
       items=active_sw
       show_type=false
       %}
-    </div>
-    <div class="row">
-      <a href="/{{ active_lang }}/search?type=reuse_software&page=0&sort=relevance" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
     </div>
   </div>
   {% endif %}
@@ -96,15 +97,16 @@ layout: default
         <h2>{{ t.software.pa_most_active }}</h2>
       </div>
 
+      <div class="col-md-3 how">
+        <a href="/{{ active_lang }}/pa">{{ t.software.show_all }}
+          &rarr;</a>
+      </div>
     </div>
     <div class="row row-eq-height">
       {% include pa-listing.html
       items=efficient_pas
       show_type=false
       %}
-    </div>
-    <div class="row">
-      <a href="/{{ active_lang }}/pa" target="_blank" class="btn btn-primary m-auto">{{ t.software.show_all }}</a>
     </div>
   </div>
   {% endif %}
