@@ -54,7 +54,7 @@ resources:
       icon: file
       desc: I vari dataset pubblicati sono consultabili alla pagina Dataset.
     - title: Endpoint
-      url: http://sparql-noipa.mef.gov.it/sparql
+      url: https://sparql-noipa.mef.gov.it/sparql
       icon: file
       desc: Accedi all'applicativo Virtuoso SPARQL Query Editor, che ti permetterà di interrogare i Linked Open Data NOIPA e di scaricare i dati richiesti.
 ---
