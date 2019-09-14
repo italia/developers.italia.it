@@ -86,5 +86,5 @@ Se sei un ente di ricerca o una università interessata a collaborare con NoiPA 
 di livello nazionale e internazionale puoi collaborare con NoiPA.
 
 <a class="btn btn-primary" href="https://noipa.mef.gov.it/"><i class="it-pa" />Visita il portale NoiPA</a>
-<a class="btn btn-primary" href="https://www.cloudifynoipa.it"><i class="it-code-circle" />Conosci il programma Clodify NoiPA</a>
+<a class="btn btn-primary" href="https://www.cloudifynoipa.it"><i class="it-code-circle" />Conosci il programma Cloudify NoiPA</a>
 
