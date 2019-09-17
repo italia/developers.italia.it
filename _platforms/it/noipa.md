@@ -24,7 +24,7 @@ resources:
       icon: file
       desc: Cloudify NoiPA HL Design. Sintesi del documento di progettazione di alto livello del programma di trasformazione digitale "Cloudify NoiPA".
     - title: Business Process Management (BPM)
-      url: https://www.cloudifynoipa.it/documents/20143/672653/Business-Process-Management-(BPM)/79bf3bbc-49ee-0eb5-31cc-4b481201b379?version=1.0
+      url: https://www.cloudifynoipa.it/documents/20143/672653/Business-Process-Management-(BPM)/29137b74-d05a-842e-178f-b6b54eaf54e8?version=1.0
       icon: file
       desc: Linee guida per la progettazione del Business Process Management (BPM). Descrizione dei servizi e definizione degli strumenti di configurazione e personalizzazione dei processi di business.
     - title: Linee Guida Technical Stories
