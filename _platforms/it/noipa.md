@@ -1,9 +1,9 @@
 ---
 title: NoiPA
-subtitle: servizi PA a Persone PA
+subtitle: Servizi per il personale delle Pubbliche Amministrazioni
 logo: /assets/images/logo-noipa.png
 payoff: NoiPA, servizi PA a Persone PA
-description: Il nuovo NoiPA costituirà il sistema unico di gestione del personale di tutta la Pubblica Amministrazione Italiana, che permetterà di accrescere la quantità e la tipologia dei servizi erogati dall’attuale applicazione, innovandone il modello di erogazione e favorendo un percorso di trasformazione digitale che utilizzi i nuovi paradigmi del cloud e dei big data.
+description: NoiPA è la piattaforma realizzata dal Dipartimento dell'Amministrazione Generale del personale e dei servizi (DAG) del Ministero dell'Economia e delle Finanze (MEF) per la gestione del personale della PA. Il sistema lavora ogni giorno per essere al fianco delle Pubbliche Amministrazioni, seguendo passo dopo passo tutti gli aspetti legati alla gestione del personale.
 lang: it
 order: 4
 highlight: true
@@ -14,27 +14,19 @@ resources:
     - title: Il Portale Open Data
       url: https://dati-noipa.mef.gov.it/cl/web/open-data
       icon: file
-      desc: Portale in cui vi è la pubblicazione dei dati in formato aperto, fruibili e riutilizzabili da tutti i cittadini che ne abbiano interesse.
-    - title: Linee Guida User Interface del sistema
-      url: https://www.cloudifynoipa.it/documents/20143/672653/Linee-Guida-User-Interface-del-sistema/3d52e886-9622-6411-7936-0546880388a3?version=1.0
-      icon: file
-      desc: Linee guida per la progettazione e realizzazione delle pagine del nuovo sistema NoiPA.
+      desc: Portale in cui vi è la pubblicazione dei dati in formato aperto, fruibili e riutilizzabili da tutti gli sviluppatori che ne abbiano interesse.
     - title: Executive Summary
-      url: https://www.cloudifynoipa.it/documents/20143/672653/Executive-Summary---Cloudify-NoiPA-HL-Design/6e7c9a63-fa47-64d5-7f83-5be2128d4102?version=1.0
+      url: https://www.cloudifynoipa.it/documents/20143/672653/Executive-Summary---Cloudify-NoiPA-HL-Design/3f7324a5-d8da-00be-abc5-84bc7bfd405a?version=1.0
       icon: file
-      desc: Cloudify NoiPA HL Design. Sintesi del documento di progettazione di alto livello del programma di trasformazione digitale "Cloudify NoiPA".
+      desc: Cloudify NoiPA high level design. Sintesi del documento di progettazione di alto livello del programma di trasformazione digitale "Cloudify NoiPA".
     - title: Business Process Management (BPM)
       url: https://www.cloudifynoipa.it/documents/20143/672653/Business-Process-Management-(BPM)/29137b74-d05a-842e-178f-b6b54eaf54e8?version=1.0
       icon: file
       desc: Linee guida per la progettazione del Business Process Management (BPM). Descrizione dei servizi e definizione degli strumenti di configurazione e personalizzazione dei processi di business.
-    - title: Linee Guida Technical Stories
-      url: https://www.cloudifynoipa.it/documents/20143/672653/Linee-Guida-Technical-Stories/92d24668-361c-ddac-4814-d738e14374d4?version=1.0
-      icon: file
-      desc: Definizione delle linee guida delle Technical Stories quale supporto dell’attività di inserimento delle stesse nel sistema di gestione requisiti adottato.
     - title: Linee guida progettazione metodologia Agile
       url: https://www.cloudifynoipa.it/documents/20143/672653/Linee-guida-progettazione-metodologia-Agile/ecd4f47e-582d-9ed2-c5f3-c189bb760c5f?version=1.0
       icon: file
-      desc: Descrizione delle modalità per le quali si caratterizza la metodologia di sviluppo Agile all'interno del contesto di Cloudify NoiPA.
+      desc: Descrizione delle modalità di sviluppo Agile del progetto Cloudify NoiPA.
   - Collaborazione:
     - title: Prototipi
       url: https://www.cloudifynoipa.it/prototipi
@@ -60,26 +52,25 @@ resources:
 ---
 
 ## Intro
-Il nuovo sistema sarà il luogo dove risiederanno tutte le informazioni relative ad ogni dipendente pubblico italiano,
+NoiPA è il luogo dove risiederanno tutte le informazioni relative ad ogni dipendente pubblico italiano,
 rappresentando il nuovo corso di modernizzazione di uno Stato capace di creare servizi digitali innovativi volti a
 semplificare la vita ai dipendenti pubblici e alle amministrazioni servite.
 
-Seguendo le linee guida dell’AgID, il nuovo NoiPA verrà strutturato usando il paradigma del cloud computing, sempre più
+Da questa piattaforma è possibile ottenere delle informazioni circa il ruolo e l'ufficio di appartenenza dei
+dipendenti di molte delle pubbliche amminstrazioni. Integrandosi con questo sistema, quindi, è possibile ottenere
+nei propri programmi queste informazioni sugli utenti, in modo automatico e certificato.
+
+Seguendo le linee guida dell’AgID, il nuovo NoiPA è strutturato usando il paradigma del cloud computing, sempre più
 oggetto di attenzione da parte delle Amministrazioni Pubbliche perché, migliorando l’efficienza operativa, consente il
 raggiungimento di significative economie di scala.
 
-Il sistema sarà progettato intorno all’utente, garantendo una piena flessibilità e personalizzazione dell’operatività.
-
-Il coinvolgimento di utenti, amministrati, partner e stakeholder nelle diverse fasi della progettazione consentirà di 
-analizzare le esigenze degli utenti e di produrre rapidamente servizi in grado di soddisfarle.
-
-Lo sviluppo del nuovo sistema farà leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle 
+Lo sviluppo del nuovo sistema ha fatto leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle 
 competenze acquisite attraverso la gestione di una parte rilevante del personale della PA, sulla pre-esistenza di sistemi 
-conoscitivi evoluti.
-
-La creazione di un sistema unico centralizzato di gestione del personale determinerà una riduzione dei costi per 
+conoscitivi evoluti. La creazione di un sistema unico centralizzato di gestione del personale ha determinato una riduzione dei costi per 
 l’erogazione del servizio, anche grazie alle economie di scala generate dall’ampliamento del numero delle amministrazioni 
 servite.
+
+Il sistema è progettato intorno all’utente, garantendo una piena flessibilità e personalizzazione dell’operatività.
 
 NoiPA è sempre più aperto alla collaborazione con chi fa della ricerca e dell’innovazione il suo obiettivo.
 Se sei un ente di ricerca o una università interessata a collaborare con NoiPA per la realizzazione di progetti innovativi
