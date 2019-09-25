@@ -5,6 +5,8 @@ logo: /assets/images/logo-docs-italia.png
 payoff: Documenti pubblici, digitali
 description: "Docs Italia è lo strumento per la pubblicazione di documenti tecnici e amministrativi, che offre ai cittadini la possibilità di leggere e commentare in modo semplice ed accessibile."
 lang: it
+ref:
+  en: /en/docs-italia
 highlight: false
 layout: platform
 github_team: docs-italia

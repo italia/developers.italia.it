@@ -7,6 +7,8 @@ description: >
   A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
   even via an app.
 lang: en
+ref:
+  it: /it/pagopa
 order: 3
 highlight: true
 comingsoon: false

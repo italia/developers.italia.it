@@ -64,6 +64,7 @@ exclude:
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
+  - node_modules
 
 
 pagination:
@@ -86,7 +87,7 @@ css_theme: t-Pac
 owner_short: AgID
 owner_full: AgID
 owner_link: http://www.agid.gov.it
-logo: /assets/icons/logo-it.png
+logo: /assets/icons/logo-it.svg
 owner_logo: /assets/images/agid-logo-bb.svg
 partner_short: Team Digitale
 partner_full: Team per la Trasformazione Digitale
@@ -95,17 +96,15 @@ privacy_link: /it/privacy-policy
 gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
 partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
 pill: ""
-url_lineeguidariuso: https://docs.italia.it/AgID/linee-guida-riuso-software/lg-acquisizione-e-riuso-software-per-pa-docs/it/bozza/
+url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/ 
+url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
 newsletterdata:
     placeholdertext: mario.rossi@devsoftware.it
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     hidden-inputs:
         -
-          name: group
-          value: 16
-        -
           name: list
-          value: 3
+          value: 1
 
 collections:
    pages:
@@ -173,6 +172,7 @@ page_gen:
     template: software-details
     defaults:
       lang: it
+      title_suffix: 'Developers Italia'
     dir: it/software
     # filter_condition: "record['language'].include? 'it'"
 
@@ -182,8 +182,29 @@ page_gen:
     template: software-details
     defaults:
       lang: en
+      title_suffix: 'Developers Italia'
     dir: en/software
     # filter_condition: "record['language'].include? 'en'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: it
+    dir: it/pa
+    # filter_condition: "record['language'].include? 'it'"
+
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: en
+    dir: en/pa
+    # filter_condition: "record['language'].include? 'it'"
 
 sass:
     load_paths:

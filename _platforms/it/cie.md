@@ -6,6 +6,8 @@ payoff: Carta d'Identità Elettronica
 description: >
   La nuova CIE è molto più che un documento d'identità: grazie al microprocessore RF può essere letta da dispositivi NFC (es. smartphone) e usata per accedere ai varchi o per creare connessioni sicure (TLS) verso i servizi in rete.
 lang: it
+ref:
+  en: /en/cie
 order: 1
 highlight: true
 comingsoon: false
@@ -51,7 +53,7 @@ resources:
       icon: telephone
       url: https://github.com/italia/cie-ideaapp
       desc: Sorgenti della app IDEA per Android che consente di leggere e visualizzare i dati della carta con uno smartphone
-    - title: SDK per Python (MRTD)
+    - title: SDK per .NET (MRTD)
       icon: github
       url: https://github.com/italia/cie-mrtd-dotnet-sdk
       desc: Libreria .NET per leggere le informazioni MRTD/ICAO

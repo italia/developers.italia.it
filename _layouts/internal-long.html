@@ -6,14 +6,9 @@ layout: default
 
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
     <div class="container d-flex justify-content-center">
-
         <div class="project__maincontent col-md-10">
-            <h1>{{page.title}}</h1>
-            {% if page.subtitle %}
-            <h2>{{page.subtitle}}</h2>
-            {%endif%}
 
-            {{page.content}}
+            {{ content }}
 
             {% if page.see_also.size > 0 %}
             <h4 class="mt-4">{{t.see_also}}</h4>
@@ -24,7 +19,6 @@ layout: default
             </ul>
             {% endif %}
         </div>
-
     </div>
 </section>
 

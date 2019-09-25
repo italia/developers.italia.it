@@ -1,6 +1,8 @@
 ---
 title: Note Legali
 lang: it
+ref:
+  en: /en/note-legali
 layout: internal-long
 ---
 

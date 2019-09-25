@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+{% comment %}
+
+{% include breadcrumbs.html %}
+{% include share.html %}
+
+{% assign subnav = site.data[page.subnav] %}
+{% include linklist.html items=subnav dynamic=true %}
+
+{% endcomment %}
+
+{% assign pa_list = site.data.crawler.amministrazioni %}
+
+{% assign root = '/' | append: active_lang | append: '/software-open-source' %}
+<div class="container-fluid  d-block d-md-none">
+  <div class="abstract-sorting-mobile row">
+    <div class="results-number col-4">
+      <p>{{ pa_list | size }} {{ t.software.results }}</p>
+    </div>
+  </div>
+</div>
+<div class="container page-softwares-list">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="intro">
+        <h1 style="font-size: 3rem">{{ page.title }}</h1>
+        <div class="abstract-sorting row row-eq-height d-none d-md-flex">
+          <div class="results-number col-md-6 d-flex"></div>
+        </div>
+      </div>
+
+      <div class="container list-item-sorting">
+        <div class="row row-eq-height">
+        {% for pa in pa_list limit: 60 %}
+        
+        {% assign pa_name = pa.entityName | default: pa.ipa %}
+
+        {% assign pa_url = '/' | append: active_lang | append: '/' | append: page.ref.route | append: '/' | append: pa.ipa | downcase %}
+          <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
+            <a href="{{pa_url}}" class="d-block decoration-none ">
+              
+              <p class="icon-type-administration">{{ t.software.administrations | upcase}}</p>
+
+              {% assign img_url = pa.emblem | default:'/assets/images/cover_amministrazioni.png' %}
+              <div class="main-image"
+                style=" background: url({{ img_url }}) no-repeat top center;">
+              </div>
+              <p class="name color-inherit">
+                {{ pa_name }}
+              </p>
+              <span class="item-more"> {{ t.pa.more_details }} &rarr;</span>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,8 @@
 title: Software
 subtitle: The open source catalogue at the Public Administrations disposal.
 lang: en
+ref:
+  it: /it/software
 layout: software
 ---
 

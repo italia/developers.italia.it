@@ -25,8 +25,8 @@ layout: default
   <div class="row intro">
     <div class="col-md-7">
       <div class="intro-name">
-        {% if page.logo %}
-        <img src="{{ page.publiccode.logo }}" class="d-inline-block" width="48" height="48">
+        {% if page.publiccode.logo %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -73,8 +73,12 @@ layout: default
             <div class="col-sm">
               <p><span class="label">{{ t.software.technical_contact }} </span>
                 {% for contact in page.publiccode.maintenance.contacts limit: 1 %}
-                <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
-                {{ contact.phone }}
+                    {% if contact.email != nil and contact.email != "" %}
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
+                    {% else %}
+                    {{ contact.name }}
+                    {% endif %}
+                    {{ contact.phone }}
                 {% endfor %}
               </p>
             </div>
@@ -108,17 +112,17 @@ layout: default
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
           <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
-              t.software.goToDocumentation }} &rarr;</a></p>
+            t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
         <div class="goto code">
           <p><a href="{{ page.publiccode.url }}"> <img src="/assets/icons/software_icons/it-codice.svg">{{
-              t.software.goToCode }} &rarr;</a></p>
+            t.software.goToCode }} &rarr;</a></p>
         </div>
         {% if page.publiccode.roadmap != null and page.publiccode.roadmap != "" %}
         <div class="goto road">
           <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
-              t.software.goToRoadmap }} &rarr;</a></p>
+            t.software.goToRoadmap }} &rarr;</a></p>
         </div>
         {% endif %}
       </div>
@@ -128,25 +132,26 @@ layout: default
 
 {% if description.screenshots.size > 0 or description.videos > 0 %}
 {% include tiled-gallery.html screenshots=description.screenshots videos=description.videos oembed=page.oEmbedHTML %}
-{% else %}
-<hr class="divider mb-0">
 {% endif %}
+<hr class="divider mb-0">
 
 <div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
   <div class="functionality">
     {% if page.oldVariant.size != nil %}
     <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
+    <div class="sw-separator-arrows d-none d-md-block"></div>
     {% endif %}
     <div class="row {% if page.oldVariant.size == nil %} first {% endif %}">
       {% if page.oldVariant.size == nil %}
-      <div class="col-md-6 software-ill">
-      </div>
+      <div class="col-md-6 software-ill"></div>
       {% endif %}
       {% if page.publiccode.isBasedOn != nil %}
-      <div class="col-md-6 variant">
+      <div class="col-xs-5 col-md-5 col-lg-4 variant">
         <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
           {% if page.oldVariant.size == nil %}
           <h2> {{ t.software.functionality }} </h2>
+          {% else %}
+          <h4> {{ t.software.functionality_this_variant }} </h4>
           {% endif %}
           {% if description.features.size > 0 %}
           <div class="function-list">
@@ -156,8 +161,10 @@ layout: default
             {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-                aria-controls="otherFeature">{{
-                t.software.show_all }}</a>
+                aria-controls="otherFeature" class="count">{{t.software.show_all }}
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
@@ -193,8 +200,10 @@ layout: default
           {% endif %}
         </div>
       </div>
+
       {% if page.oldVariant.size != nil %}
-      <div class="col-md-6 variant">
+      <div class="col-xs-2 col-md-2 col-lg-4"></div>
+      <div class="col-xs-5 col-md-5 col-lg-4 variant">
         <h4> {{ t.software.functionality_other_variant }} </h4>
         <div class="function-list">
           {% if oldFeatures %}
@@ -203,15 +212,20 @@ layout: default
           <p> {{ feature }} </p>
           {% endfor %}
           <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-            aria-controls="otherFeature">{{
-            t.software.show_all }}</a>
+            aria-controls="otherFeature" class="count">{{
+                t.software.show_all }}
+            <span class="or it-expand"></span>
+            <span class="and it-collapse"></span>
+          </a>
           <div class="collapse" id="otherFeature">
             {% for feature in oldFeatures offset: 10 %}
             <p> {{ feature }} </p>
             {% endfor %}
           </div>
           {% else %}
-          {% if oldFeatures.size <= 10 %} {% for feature in oldFeatures %} <p> {{ feature }} </p>
+          {% if oldFeatures.size <= 10 %}
+          {% for feature in oldFeatures %}
+          <p> {{ feature }} </p>
           {% endfor %}
           {% endif %}
           {% endif %}
@@ -231,19 +245,25 @@ layout: default
           </a>
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
+            {% assign variant_sw = site.data.crawler.softwares | where: "id", variant.id | first %}
             {% assign variant_description = variant.publiccode.description[active_lang]
+
             | default: variant.publiccode.description.en
             | default: variant.publiccode.description.it %}
             <div class="variantDetail">
-              <a href="/{{active_lang}}/software/{{ variant.name | replace: ' ', '-'  | downcase }}">{{
-                t.software.variant_by }} {{ variant.legal.repoOwner }} </a>
+              <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}"> 
+              {{ variant.publiccode.name }} 
+              </a>
+              {{ t.software.variant_by }} {{ variant.publiccode.legal.repoOwner }}
+              <!--
               <p><span class="label">{{ t.software.additional_features }}</span>:
                 {% for feature in variant_description.features %}
                 {{ feature}}{% unless forloop.last %},{% endunless %}
                 {% endfor %}
               </p>
+              -->
               <p><span class="label">{{ t.software.vitality }}:
-                  {{ variant.vitalityScore }}%</span>
+                  {{ variant_sw.vitalityScore }}%</span>
               </p>
             </div>
             {% endfor %}
@@ -252,48 +272,60 @@ layout: default
       </div>
       {% endif %}
       {% else %}
-      <div class="col">
-        <div class="function-list">
-          {% if description.features.size > 10 %}
-          {% for feature in description.features limit: 10 %}
-          <p> {{ feature }} </p>
-          {% endfor %}
-          <p>
-            <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
-              aria-controls="otherFeature">{{
-              t.software.show_all }}</a>
-          </p>
-          <div class="collapse" id="otherFeature">
-            {% for feature in description.features offset: 10 %}
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="{% if page.oldVariant.size == nil %}mx-md-4 px-md-4 my-2 my-md-4{%endif%}">
+          {% if page.oldVariant.size != nil %}
+          <h2> {{ t.software.functionality_this_variant }} </h2>
+          {% else %}
+          <h2> {{ t.software.functionality }} </h2>
+          {% endif %}
+          <div class="function-list">
+            {% if description.features.size > 10 %}
+            {% for feature in description.features limit: 10 %}
             <p> {{ feature }} </p>
             {% endfor %}
+            <p>
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature" class="count">{{
+                t.software.show_all }}
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              {% for feature in description.features offset: 10 %}
+              <p> {{ feature }} </p>
+              {% endfor %}
+            </div>
+            {% else %}
+            {% for feature in description.features %}
+            <p> {{ feature }} </p>
+            {% endfor %}
+            {% endif %}
           </div>
-          {% else %}
-          {% for feature in description.features %}
-          <p> {{ feature }} </p>
-          {% endfor %}
+          {% if page.publiccode.usedBy.size != nil %}
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
+              {% if page.publiccode.usedBy.size >= 1 %}
+              {{ t.software.administrations }}
+              {% else %}
+              {{ t.software.administration }}
+              {% endif %}
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              {% for item in page.publiccode.usedBy %}
+              <p> {{ item }} </p>
+              {% endfor %}
+            </div>
+          </div>
           {% endif %}
         </div>
-        {% if page.publiccode.usedBy.size != nil %}
-        <div id="usedBy">
-          <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
-            aria-controls="by-amministration" class="count">
-            {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
-            {% if page.publiccode.usedBy.size >= 1 %}
-            {{ t.software.administrations }}
-            {% else %}
-            {{ t.software.administration }}
-            {% endif %}
-            <span class="or it-expand"></span>
-            <span class="and it-collapse"></span>
-          </a>
-          <div class="collapse" id="by-amministration">
-            {% for item in page.publiccode.usedBy %}
-            <p> {{ item }} </p>
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
       </div>
       {% endif %}
     </div>
@@ -392,7 +424,12 @@ layout: default
                 {% for contact in page.publiccode.maintenance.contacts %}
                 <div class="col-md">
                   <p>
-                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> {{ contact.phone }}
+                    {% if contact.email != nil and contact.email != "" %}
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> 
+                    {% else %}
+                    {{ contact.name }}
+                    {% endif %}
+                    {{ contact.phone }}
                   </p>
                 </div>
                 {% endfor %}
@@ -539,7 +576,7 @@ layout: default
           <div class="img-container">
             <a href="{{ relsw_url }}">
               <img class="img-fluid"
-                src="{{ relsw_description.screenshots | first | default: '/assets/images/placeholder-software-riuso.jpg' }}"
+                src="{{ relsw_description.screenshots | first | default: relsw.publiccode.logo | default: '/assets/images/placeholder-software-riuso.jpg' }}"
                 alt="{{ relsw_name }}"></a>
           </div>
           <div class="relate-body">

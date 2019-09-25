@@ -9,6 +9,8 @@ categories: news
 author: Francesco De Augustinis
 image: /assets/icons/logo-it.svg
 locale: it
+ref:
+  en: /en/news/2018/05/23/a-testing-environment-for-anpr
 redirect_from:
    - 
 ---

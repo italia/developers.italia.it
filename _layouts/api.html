@@ -18,7 +18,6 @@ layout: default
 {% assign root = '/' | append: active_lang | append: '/api' %}
 
 
-
 <div class="apilist">
   <div class="container">
     <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
@@ -40,15 +39,23 @@ layout: default
             <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
               {% if api.contact.logo %}
               <figure>
+                {% if api.comingsoon != true %}
                 <a title="{{api.name}}" href="{{url}}">
                   <img class="w-100" src="{{api.contact.logo | relative_url}}">
                 </a>
+                {% else %}
+                  <img class="w-100" src="{{api.contact.logo | relative_url}}">
+                {% endif %}
               </figure>
               {% endif %}
-              <h1 class="apilist__listing__title"><a title="{{api.title}}" class="color-inherit decoration-none"
-                  href="{{url}}">{{api.title}}</a>
-
+              {% if api.comingsoon != true %}
+              <h1 class="apilist__listing__title">
+                  <a title="{{api.title}}" class="color-inherit decoration-none" href="{{url}}">{{api.title}}</a>
               </h1>
+              {% else %}
+              <h1 class="apilist__listing__title">{{api.title}}</h1>
+              {% endif %}
+
               {% if api.contact %}
               <h2>{{api.contact.name}}</h2>
               {% endif %}

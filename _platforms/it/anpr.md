@@ -5,8 +5,10 @@ subtitle: Anagrafe Nazionale della Popolazione Residente
 payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.
 lang: it
+ref:
+  val: anpr-project
+  en: /en/anpr
 order: 4
-ref: anpr-project
 highlight: false
 comingsoon: false
 layout: platform

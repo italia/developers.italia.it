@@ -2,6 +2,8 @@
 title: Cosa fare
 subtitle: Le attività aperte nei repo di Developers Italia
 lang: it
+ref:
+  en: /en/to-do
 layout: github-issues
 ---
 

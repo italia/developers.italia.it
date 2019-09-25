@@ -1,6 +1,8 @@
 ---
 title: Come partecipo
 lang: it
+ref:
+  en: /en/get-involved
 layout: internal-simple
 image: /assets/images/comepartecipo-temp-img.jpg
 include-discuss: true
@@ -18,6 +20,9 @@ alternate-blocks:
         - label: Dialoga su Slack
           class: btn btn-outline-primary
           url: 'https://slack.developers.italia.it/'
+        - label: Contribuisci
+          class: btn btn-primary
+          url: '/it/cosa-fare'
     - title: "Partecipa allo sviluppo del software pubblico"
       text: "Il catalogo di Developers Italia include il software open source usato o rilasciato dalla Pubblica Amministrazione. Tutti possono contribuire: scopri bug e problemi di sicurezza, o proponi miglioramenti e nuove funzioni. Da oggi i servizi pubblici digitali possono contare anche sul tuo aiuto."
       image: /assets/images/come-partecipo-4.svg

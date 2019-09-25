@@ -2,10 +2,12 @@
 title: Contacts 
 subtitle: 
 lang: en
+ref:
+  it: /it/contatti
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /en/who-we-are
-include-newsletter: true
+include-developers-newsletter: true
 pair-blocks:
     - title: "Work with us"
       text: "You may find the open positions (when they are available) in the

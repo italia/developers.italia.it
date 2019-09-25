@@ -6,6 +6,8 @@ payoff: Electronic Identity Card
 description: >
   The new electronic identity card is more than a simple piece of plastic: thanks to it RF microprocessor it can be read by NFC devices (such as a smartphone) and used for granting access to facilities or for creating secure connections (TLS) to network services.
 lang: en
+ref:
+  it: /it/cie
 order: 1
 highlight: true
 comingsoon: false
@@ -51,7 +53,7 @@ resources:
       icon: telephone
       url: https://github.com/italia/cie-ideaapp
       desc: Source code of the IDEA app for Android which allows to read and view card contents with a smartphone
-    - title: SDK for Python (MRTD)
+    - title: SDK for .NET (MRTD)
       icon: github
       url: https://github.com/italia/cie-mrtd-dotnet-sdk
       desc: .NET library for reading the MRTD/ICAO information

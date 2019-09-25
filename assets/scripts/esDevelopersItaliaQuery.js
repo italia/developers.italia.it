@@ -877,7 +877,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   } else if (category_id == 'public-sw') {
     screenshot = '/assets/images/cover_softwareriuso.png';
   } else {
-    screenshot = '/assets/images/cover_software opensource.png';
+    screenshot = '/assets/images/cover_software_opensource.png';
   }
 
   var localisedName = software.publiccode.name;
@@ -936,7 +936,7 @@ esDevelopersItaliaQuery.prototype.renderAdministration = function (administratio
     'readMore': this.readMore[language],
     'category': 'administration',
     'categoryClass': ['icon', 'icon-type-administration'].join(' '),
-    'path': '/' + language + '/amministrazioni?publiccode.it.riuso.codiceIPA=' + administration["publiccode.it.riuso.codiceIPA"] + '&it-riuso-codiceIPA-label=' + administration["it-riuso-codiceIPA-label"]
+    'path': '/' + language + '/pa/' + administration["it-riuso-codiceIPA"]
   };
 
   return this.templates.search(data);
@@ -1374,16 +1374,8 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
   for (var i = 0; i < value.length; i++) {
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
-
-  if (language === 'it') {
-    path += '/amministrazioni';
-  }
-  else {
-    path += '/administrations';
-  }
-
-  path += '?' + ['publiccode.it.riuso.codiceIPA=' + administration['publiccode.it.riuso.codiceIPA'], 'it-riuso-codiceIPA-label=' + administration['it-riuso-codiceIPA-label']].join('&');
-
+  path = '/' + language + '/pa/' + administration["it-riuso-codiceIPA"]
+  
   return {
     'name': name,
     'language': language,

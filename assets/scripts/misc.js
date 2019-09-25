@@ -1,3 +1,4 @@
+var g;
 $(function () {
 
   if ($('.tiled-gallery').length > 0) {
@@ -20,8 +21,8 @@ $(function () {
           // create slide object
           var item = {
             src: linkEl.getAttribute('href'),
-            w: Number(size[0]) || imgElement.width || 1980,
-            h: Number(size[1]) || imgElement.height || 1020,
+            w: Number(size[0]) || imgElement.naturalWidth || 1980,
+            h: Number(size[1]) || imgElement.naturalHeight || 1020,
             msrc: linkEl.children[0].src
           };
 
@@ -40,8 +41,8 @@ $(function () {
         var clickedListItem = e.target.parentNode;
 
         if (clickedListItem.tagName !== 'A') return;
-
         var clickedGallery = $(clickedListItem).closest('.tiled-gallery-inner')[0];
+
         var index = Number(clickedListItem.dataset.index);
 
         if (index >= 0) {
@@ -84,7 +85,25 @@ $(function () {
       galleryElements.forEach(function (galleryEl, i) {
         galleryEl.setAttribute('data-pswp-uid', i + 1);
         galleryEl.onclick = onThumbnailsClick;
-      })
+
+        //each gallery has an "all pics" button next to it
+        //adding a listener to show the gallery
+        let btnNextGallery = $(galleryEl)
+          .parent()
+          .parent()
+          .find('.tiled-gallery-btn');
+        if (btnNextGallery.length > 0)
+          btnNextGallery[0].addEventListener('click', e => {
+            openPhotoSwipe(0, galleryEl)
+          });
+
+        //if empty gallery removing div and button
+        if($(galleryEl).find('img').length==0) {
+          $(galleryEl).parent().remove();
+          btnNextGallery.remove();
+        }
+      });
+
     };
 
     ///Temporarily disabled on 2019-03-19 because it doesn't work properly.

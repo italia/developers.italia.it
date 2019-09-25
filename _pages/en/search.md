@@ -1,6 +1,8 @@
 ---
 title: You have searched for
 lang: en
-ref: search
+ref:
+  val: search
+  it: /it/search
 layout: search
 ---

@@ -6,6 +6,8 @@ payoff: Public System for Digital Identity
 description: >
     SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.
 lang: en
+ref:
+  it: /it/spid
 order: 2
 highlight: true
 comingsoon: false

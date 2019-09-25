@@ -1,6 +1,8 @@
 ---
 title: Privacy Policy
 lang: it
+ref:
+  en: /en/privacy-policy
 layout: internal-long
 ---
 
@@ -32,4 +34,4 @@ L’Utente può scegliere di abilitare o disabilitare i cookies intervenendo sul
   - [Firefox](https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie)
   - [Safari](https://support.apple.com/kb/ph19214?locale=it_IT)
   - [Internet Explorer](https://support.microsoft.com/it-it/help/17442/windows-internet-explorer-delete-manage-cookies)
-  - [Opera](http://help.opera.com/Windows/10.00/it/cookies.html)
+  - [Opera](https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/)

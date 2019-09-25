@@ -4,7 +4,7 @@ layout: default
 
 {% include setlang.html %}
 {% assign news = site.posts | where: 'locale', active_lang | sort: 'date' | reverse | first %}
-
+{% assign newsletterdata = site.newsletterdata %}
 
 <section class="homelayout__first">
   <div class="container">
@@ -24,7 +24,7 @@ layout: default
           </div>
           <div class="homelayout__first__newsletter mt-2 mt-md-5">
             <h2 class="mt-5 mt-md-3">Newsletter</h2>
-            <form action="{{site.newsletterdata.action}}" method="post" target="_blank">
+            <form action="{{newsletterdata.action}}" method="post" target="_blank">
 
               <div class="form-row align-items-center">
                 <div class="input-group">
@@ -34,7 +34,7 @@ layout: default
                   <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
                   <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email"
                     placeholder="{{t.home_newsletter_placeholder }}">
-                  {% for input in site.newsletterdata.hidden-inputs %}
+                  {% for input in newsletterdata.hidden-inputs %}
                   <input type="hidden" name="{{input.name}}" value="{{input.value}}">
                   {% endfor %}
                   <div class="input-group-append">

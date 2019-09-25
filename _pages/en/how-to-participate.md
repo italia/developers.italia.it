@@ -1,6 +1,8 @@
 ---
 title: How to participate 
 lang: en 
+ref:
+  it: /it/come-partecipo
 layout: internal-simple
 image: /assets/images/comepartecipo-temp-img.jpg
 include-discuss: true
