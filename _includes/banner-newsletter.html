@@ -12,7 +12,7 @@
             <p class="banner-newsletter__text white-text font-serif mb-2 mb-md-4 w-100 mw-md-50">
                 {{ newsletterdata.text | default: t.newsletter_text }}
             </p>
-            {% for input in newsletterdata.inputs %}
+            {% for input in newsletterdata.hidden-inputs %}
             <input type="hidden" name="{{input.name}}" value="{{input.value}}">
             {% endfor %}
             <div class="py-1 py-md-2">
