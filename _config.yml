@@ -34,7 +34,7 @@ github_folder: github
 github_projects_prefix: ['spid-', '18app', 'anpr-','daf-','dati-','pianotriennale-','lg-','design-','security-','cie-']
 github_access_token: ENV_GITHUB_ACCESS_TOKEN
 github_blacklist_repos: []
-github_issues_types: ['bug','enhancement','new project']
+github_issues_types: ['bug','enhancement','new project', 'Hacktoberfest']
 github_tech_list: [
   'angular', 'react', 'design', 'html', 'arduino', 'bootstrap', 'frontend',
   'perl','python', 'cpp', 'scala', 'php', 'csharp', 'java', 'android', 'ios', 'dotnet',
