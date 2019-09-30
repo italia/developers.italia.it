@@ -20,7 +20,7 @@ socials:
 
 ### Intro
 
-The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ict.italia.it/en/) called for the elaboration of a national strategy for the adoption of cloud computing in the digital infrastructures of the Italian public sector. The strategy has been published on the dedicated website [cloud.italia.it](https://cloud.italia.it) where the documents and tools related to its implementation are presented: informative content, operating instructions and official communications, with legal advertisement value, as referred from AgID circulars.
+The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ict.italia.it/en/) called for the elaboration of a national strategy for the adoption of cloud computing in the digital infrastructures of the Italian public sector. The strategy has been published on the dedicated website ([cloud.italia.it](https://cloud.italia.it)) where the documents and tools related to its implementation are presented: informative content, operating instructions and official communications, with legal advertisement value, as referred from AgID circulars.
 
 #### How to contribute
 
