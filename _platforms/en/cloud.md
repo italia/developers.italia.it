@@ -24,4 +24,4 @@ The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ic
 
 #### How to contribute
 
-Active participation in the development of the cloud for the italian Public Administration is possible by contributing with opinions, questions and discussions in the [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) channel on Slack and in the[Data Center e Cloud section on Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
+Active participation in the development of the cloud for the italian Public Administration is possible by contributing with opinions, questions and discussions in the [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) channel on Slack and in the [Data Center e Cloud section on Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
