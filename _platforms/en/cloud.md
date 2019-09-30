@@ -3,7 +3,7 @@ title: Cloud Italia
 subtitle: The Cloud of the Italian Public Administration
 logo: /assets/images/logo-cloud-italia.png
 payoff: The Cloud of the Italian Public Administration
-description: Cloud Italia is the main source for the development of cloud computing in the digital infrastructures of the italian public sector.
+description: Cloud Italia is the main source for the development of cloud computing in the digital infrastructures of the Italian public sector.
 
 lang: en
 order: 4
