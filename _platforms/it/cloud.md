@@ -25,4 +25,4 @@ Il [Piano Triennale per l’informatica nella Pubblica Amministrazione](https://
 
 ### Come contribuire
 
-E' possibile partecipare attivamente allo sviluppo del cloud nella pubblica amministrazione contribuendo con informazioni, opinioni e domande alle discussioni nel canale [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) su Slack e nella [sezione Data Center e Cloud su Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
+E' possibile partecipare attivamente allo sviluppo del cloud nella Pubblica Amministrazione contribuendo con informazioni, opinioni e domande alle discussioni nel canale [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) su Slack e nella [sezione Data Center e Cloud su Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
