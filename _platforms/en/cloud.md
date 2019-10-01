@@ -51,7 +51,7 @@ resources:
     - title: Cloud Enablement Manual
       icon: file
       url: https://docs.italia.it/italia/manuale-di-abilitazione-al-cloud/manuale-di-abilitazione-al-cloud-docs/it/bozza/
-      desc: The main component of the Cloud Enablement Kit, an hands-on manual to migrate the PA digital services in the cloud.
+      desc: The main component of the Cloud Enablement Kit, a hands-on manual to migrate the PA digital services in the cloud.
 ---
 
 ## Intro
