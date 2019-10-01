@@ -10,7 +10,7 @@ order: 4
 highlight: false
 comingsoon: false
 layout: platform
-github_team: Cloud
+github_team: cloud
 socials:
  -
     name: medium

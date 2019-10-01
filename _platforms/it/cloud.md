@@ -11,7 +11,7 @@ order: 4
 highlight: false
 comingsoon: false
 layout: platform
-github_team: Cloud
+github_team: cloud
 socials:
  -
     name: medium
@@ -67,5 +67,5 @@ Il [Piano Triennale per l’informatica nella Pubblica Amministrazione](https://
 E' possibile partecipare attivamente allo sviluppo del cloud nella Pubblica Amministrazione contribuendo con informazioni, opinioni e domande alle discussioni nel canale [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) su Slack e nella [sezione Data Center e Cloud su Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
 
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Dialoga su Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Chat on Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
