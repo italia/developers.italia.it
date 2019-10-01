@@ -25,7 +25,7 @@ resources:
     - title: The PA cloud model
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-docs/it/latest/
-      desc: Strategy and model of the cloud infrastructure for the italian public sector.
+      desc: Strategy and model of the cloud infrastructure for the Italian public sector.
   - Marketplace:
     - title: Cloud Marketplace
       icon: link
