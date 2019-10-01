@@ -42,16 +42,16 @@ resources:
     - title: Cloud Service Provider
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/CSP/
-      desc: Certification requiriments for Cloud Service Provider.
+      desc: Certification requiriments for Cloud Service Providers.
   - Kit:
     - title: Cloud Enablement Program & Kit
       icon: link
       url: https://cloud.italia.it/it/cloud-enablement/
-      desc: An introduction to italian the national Cloud enablement Program and to the Cloud Enablement Kit (methodologies, good practices and tools).
+      desc: An introduction to italian the national Cloud Enablement Program and to the Cloud Enablement Kit (methodologies, good practices and tools).
     - title: Cloud Enablement Manual
       icon: file
       url: https://docs.italia.it/italia/manuale-di-abilitazione-al-cloud/manuale-di-abilitazione-al-cloud-docs/it/bozza/
-      desc: The main component of the Cloud Enablement Kit, an hands-on manual for eveveryone is interested in the design and managing of the PA digital services.
+      desc: The main component of the Cloud Enablement Kit, an hands-on manual to migrate the PA digital services in the cloud.
 ---
 
 ## Intro
@@ -63,5 +63,5 @@ The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ic
 Active participation in the development of the cloud for the italian Public Administration is possible by contributing with opinions, questions and discussions in the [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) channel on Slack and in the [Data Center e Cloud section on Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Dialoga su Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Chat on Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
 
