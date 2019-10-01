@@ -38,7 +38,7 @@ resources:
     - title: SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
-      desc: Certification requirimentes for Saas.
+      desc: Certification requirements for Saas.
     - title: Cloud Service Provider
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/CSP/
