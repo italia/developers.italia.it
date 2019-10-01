@@ -42,7 +42,7 @@ resources:
     - title: Cloud Service Provider
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/CSP/
-      desc: Certification requiriments for Cloud Service Providers.
+      desc: Certification requirements for Cloud Service Providers.
   - Kit:
     - title: Cloud Enablement Program & Kit
       icon: link
