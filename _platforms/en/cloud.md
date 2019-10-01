@@ -47,7 +47,7 @@ resources:
     - title: Cloud Enablement Program & Kit
       icon: link
       url: https://cloud.italia.it/it/cloud-enablement/
-      desc: An introduction to italian the national Cloud Enablement Program and to the Cloud Enablement Kit (methodologies, good practices and tools).
+      desc: An introduction to the Italian national Cloud Enablement Program and to the Cloud Enablement Kit (methodologies, good practices and tools).
     - title: Cloud Enablement Manual
       icon: file
       url: https://docs.italia.it/italia/manuale-di-abilitazione-al-cloud/manuale-di-abilitazione-al-cloud-docs/it/bozza/
