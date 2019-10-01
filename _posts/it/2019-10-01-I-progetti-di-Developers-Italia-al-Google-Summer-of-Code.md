@@ -2,7 +2,7 @@
 layout: post
 title:  I progetti di Developers Italia al Google Summer of Code
 subtitle: Completati tre progetti open source, a disposizione della community
-date:   2019-09-03 12:00:00 +0100
+date:   2019-10-01 12:00:00 +0100
 tags: developers gsoc
 categories: news
 author: Francesco De Augustinis
