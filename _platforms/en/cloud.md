@@ -24,7 +24,7 @@ resources:
       desc: cloud.italia.it website, the main source for everything related to the cloud of the Italian Public Administration (PA).
     - title: The PA cloud model
       icon: file
-      url: https://cloud.italia.it/projects/cloud-italia-docs/it/latest/
+      url: https://docs.italia.it/italia/piano-triennale-ict/cloud-docs
       desc: Strategy and model of the cloud infrastructure for the Italian public sector.
   - Marketplace:
     - title: Cloud Marketplace

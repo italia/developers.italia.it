@@ -25,7 +25,7 @@ resources:
       desc: Il sito tematico cloud.italia.it, punto di riferimento per il cloud della PA italiana.
     - title: Il modello di Cloud della PA
       icon: file
-      url: https://cloud.italia.it/projects/cloud-italia-docs/it/latest/
+      url: https://docs.italia.it/italia/piano-triennale-ict/cloud-docs/
       desc: La strategia e il modello Cloud della PA.
   - Marketplace:
     - title: Cloud Marketplace
