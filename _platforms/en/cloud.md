@@ -21,7 +21,7 @@ resources:
     - title: Cloud Italia
       icon: link
       url: https://cloud.italia.it
-      desc: Cloud.italia.it website, the main source for everything related to the cloud of the Italian Public Administration (PA).
+      desc: cloud.italia.it website, the main source for everything related to the cloud of the Italian Public Administration (PA).
     - title: The PA cloud model
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-docs/it/latest/
