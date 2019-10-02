@@ -18,33 +18,22 @@ resources:
     - title: Documentazione
       url: https://indicepa.gov.it/documentale/n-documentazione.php
       icon: file
-      desc: Documentazione alla piattaforma.
+      desc: Documentazione alla piattaforma. La documentazione include sia documenti utente che documentazione più tecnica
+      per l'utlizzo dei webservices e l'integrazione da linguaggio di programmazione con la piattaforma.
   - Consulta i dati:
     - title: Open Data
       url: https://www.indicepa.gov.it/documentale/n-opendata.php
       icon: file
-      desc: Accesso ai dati in formato Open Data
+      desc: Accesso ai dati della piattaforma in formato Open Data. L'iPA aderisce alla filosofia dell'open data e avvia un percorso basato sull'accesso ai dati pubblici senza restrizioni. I dati sono organizzati in formati elettronici standard e aperti, accessibili qui.
     - title: Web Services
       url: https://www.indicepa.gov.it/documentale/n-webservices.php
       icon: file
-      desc: Accesso ai dati tramite web services.
+      desc: Accesso ai dati tramite web services. I web services pubblicati su iPA ti consentono di fruire in modalità applicativa di alcuni contenuti presenti sul sito. A questo link è possibile trovare la documentazione e le procedure per accedere ai servizi web della piattaforma.
     - title: Protocollo LDAP
       url: https://www.indicepa.gov.it/documentale/n-gestioneutenti-ldap.php
       icon: file
-      desc: Accesso ai dati tramite protocollo LDAP.
-  - Metadati:
-    - title: RDF/Turtle
-      url: https://docs.italia.it/italia/daf/pianotri-schede-bdin/it/stabile/_downloads/metadatiDCATAPIT_IPA.ttl
-      icon: file
-      desc: Metadati nel formato Resource Description Format, Terse RDF Triple Language (RDF/Turtle).
-    - title: RDF/XML
-      url: https://docs.italia.it/italia/daf/pianotri-schede-bdin/it/stabile/_downloads/metadatiDCATAPIT_IPA.rdf
-      icon: file
-      desc: Metadati nel formato Resource Description Format, eXtensible Markup Language (RDF/XML).
-    - title: JSON-LD
-      url: https://docs.italia.it/italia/daf/pianotri-schede-bdin/it/stabile/_downloads/metadatiDCATAPIT_IPA.jsonld
-      icon: file
-      desc: Metadati nel formato JavaScript Object Notation for Linking Data
+      desc: Accesso ai dati tramite protocollo LDAP. A questo link sono disponibili le guide e i processi per ottenere l'accesso
+      ai dati della piattaforma tramite LDAP.
 ---
 
 ## Intro
