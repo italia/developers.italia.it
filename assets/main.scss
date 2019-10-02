@@ -24,7 +24,7 @@ h1,
     @include media-breakpoint-up(sm) {
         font-size: 3.5rem;
         letter-spacing: 0;
-        line-height: 1.25;
+        line-height: 1.26;
     }
 }
 
@@ -43,7 +43,7 @@ h2.subtitle {
     font-size: 1.5rem;
     font-weight: 400;
     color: #17324D;
-    line-height: 1.4;
+    line-height: 1.5;
     @include media-breakpoint-up(md) {
         font-size: 2rem;
     }
@@ -226,7 +226,7 @@ body {
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, 0.5);
-                z-index: 999;
+                z-index:1;
             }
         }
     }
