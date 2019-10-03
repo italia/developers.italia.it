@@ -143,7 +143,6 @@ DEPENDENCIES
   hawkins
   html-proofer
   jekyll (= 3.9.0)
-  jekyll-feed (~> 0.15.0)
   jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-seo-tag
