@@ -10,6 +10,8 @@ see_also:
     url: /it/riuso/pubblicazione
 ---
 
+## Acquisizione di software per la Pubblica Amministrazione
+ 
 Quando si acquisisce software le Pubbliche Amministrazioni devono effettuare una valutazione comparativa secondo il processo descritto dalle [Linee Guida]({{ site.url_lineeguidariuso }}).
 
 Tale processo privilegia il software open source (_a riuso_ o _di terze parti_) rispetto all'acquisizione di software in licenza d'uso, come previsto dal [Codice dell'Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html). Le linee guida indicano espressamente il [catalogo di Developers Italia](/it/software) come piattaforma ove svolgere la ricerca.
