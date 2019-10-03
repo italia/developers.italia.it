@@ -15,8 +15,13 @@
 @import 'photoswipe-default-skin';
 //@import "highlight";
 //@import "developer";
-// @import "datatables";
-// @import "select2";
+//@import "datatables";
+//@import "select2";
+
+a {
+    text-decoration: none
+}
+
 h1,
 .h1 {
     color: #17324D;
