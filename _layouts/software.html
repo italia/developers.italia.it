@@ -15,8 +15,8 @@ layout: default
 {% assign active_sw   = site.data.crawler.softwares | sort: "vitalityScore" | reverse | slice: 0, 4 %}
 {% assign efficient_pas   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
 
-<div class="container page-softwares-list">
-  <div class="intro">
+<div class="container">
+  <div class="intro mt-5">
     <h1>{{ page.title }}</h1>
     <div class="row mb-2 mb-md-4">
       <div class="col-md-6">
@@ -27,11 +27,13 @@ layout: default
       </div>
     </div>
   </div>
+</div>
 
-  {% if page.pair-blocks!=nil%}
-  {% include pair-blocks.html blocks=page.pair-blocks %}
-  {% endif %}
+{% if page.pair-blocks!=nil%}
+{% include sw-pair-blocks.html blocks=page.pair-blocks %}
+{% endif %}
 
+<div class="container page-softwares-list">
   <!-- <div class="row py-2">
     <div class="col-3"></div>
     <div class="col-3 text-right">
