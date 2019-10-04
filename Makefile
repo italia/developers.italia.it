@@ -11,3 +11,4 @@ deploy:
 include-npm-deps:
 	mkdir -p $(VENDOR_DIR)
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
+
