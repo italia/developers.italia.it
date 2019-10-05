@@ -3,13 +3,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ page.locale }}">
   <id>{{ page.url | absolute_url | xml_escape }}</id>
-  <title>{{ site.title | xml_escape }}</title>
+  <title>{{ site.data.l10n[page.locale].t.site_title | xml_escape }}</title>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
 
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml"/>
   <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html"/>
-  <subtitle>{{ site.description | xml_escape  }}</subtitle>
+  <subtitle>{{ site.data.l10n[page.locale].t.site_subtitle | xml_escape }}</subtitle>
   <icon>{{ site.feed.icon }}</icon>
   <logo>{{ site.feed.logo }}</logo>
 
