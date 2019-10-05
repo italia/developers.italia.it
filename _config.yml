@@ -80,6 +80,12 @@ tag_page_data:
     - it
     - en
 
+# Atom feed configuration.
+feed:
+  limit: 10 # Number of posts for each feed.
+  icon: /assets/icons/favicon.ico
+  logo: /assets/icons/logo-it.svg
+
 # Custom vars
 theme_color: "#0066cc"
 css_theme: t-Pac
