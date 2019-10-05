@@ -69,6 +69,14 @@ resources:
         icon: github
         url: https://github.com/italia/pagopa-soap-ruby
         desc: Libreria Ruby per accesso alle API SOAP
+      - title: SDK per iOS
+        icon: github
+        url: https://github.com/italia/pagopa-ios-sdk
+        desc: Libreria nativa per accesso alle API SOAP in applicazioni mobile iOS
+      - title: SDK per Android
+        icon: github
+        url: https://github.com/italia/pagopa-android-sdk
+        desc: Libreria nativa per accesso alle API SOAP in applicazioni mobile Android
 
 ---
 
