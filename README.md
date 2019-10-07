@@ -14,6 +14,15 @@ make include-npm-deps
 bundle exec jekyll serve
 ```
 
+Alternativamente è possibile configurare l'ambiente di sviluppo tramite docker utilizzando i seguenti comandi:
+
+```bash
+docker-compose up -d
+```
+Una volta che il container sarà partito ti potrai connettere al sito web all'indirizzo `http://localhost:4000/`
+
+**NOTA:** Le variabili d'ambiente sono definite all'interno del file `docker-compose.yml`, assicurati che siano impostate con i valori corretti prima di avviare il container. 
+
 Se vuoi contribuire una modifica, è sufficiente aprire una pull-request.
 
 ### Environment variables

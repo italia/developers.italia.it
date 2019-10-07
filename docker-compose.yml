@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   developers.italia.it:
+    container_name: developers-italia-it
     build: .
     ports:
       - "4000:4000"

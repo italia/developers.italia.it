@@ -1,11 +1,12 @@
-FROM ruby:2.5.1-alpine
+FROM ruby:2.5-alpine
 
 # Add files
 WORKDIR /usr/src/developers.italia.it
 ADD . .
 
 # Install dependencies
-RUN apk add --no-cache --virtual .build-deps git build-base ruby-dev nodejs=8.9.3-r1
-RUN bundle install
+RUN apk add --no-cache --virtual .build-deps git build-base ruby-dev nodejs=10.16.3-r0 npm && \
+    gem install bundler -v 2.0.1
+RUN npm install && bundle install
 
 ENTRYPOINT ["/usr/src/developers.italia.it/start.sh"]
