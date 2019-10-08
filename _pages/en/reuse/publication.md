@@ -1,5 +1,5 @@
 ---
-title: Publish software for Public Administration 
+title: Publish software for Public Administrations
 lang: en
 ref:
   it: /it/riuso/pubblicazione
