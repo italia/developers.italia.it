@@ -74,10 +74,7 @@ layout: default
               <p><span class="label">{{ t.software.technical_contact }} </span>
                 {% for contact in page.publiccode.maintenance.contacts limit: 1 %}
                     {% if contact.email != nil and contact.email != "" %}
-                    <a href="mailto:{{ contact.email }}">
-                      <span class="icon it-mail d-inline-block"></span>
-                      {{ contact.name }}
-                    </a>
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
                     {% else %}
                     {{ contact.name }}
                     {% endif %}
@@ -391,7 +388,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.contract_with }}</span>
                   {% for contractor in page.publiccode.maintenance.contractors %}
-                    {% if contractor.website %}
+                    {% if contractor.website != nil and contractor.website != "" %}
                     <a href="{{ contractor.website }}" class="until">
                       <span class="icon it-external-link d-inline-block"></span>
                       {{ contractor.name }}
