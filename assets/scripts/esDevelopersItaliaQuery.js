@@ -643,6 +643,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
       'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
       'cta': this.config['emptySerp'][language].cta
     }));
+    this.renderPager(0);
     return;
   }
 
