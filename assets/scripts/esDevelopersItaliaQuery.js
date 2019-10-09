@@ -508,7 +508,7 @@ function esDevelopersItaliaQuery(config, params) {
     'emptySerp': {
       'it': {
         'title': 'Nessun risultato trovato',
-        'message': 'La parola "{keyword}" non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
+        'message': 'La parola cercata non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
         'cta': 'Prova una nuova ricerca'
       },
       'en': {
