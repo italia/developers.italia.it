@@ -1,5 +1,5 @@
 ---
-title: Publish software for Public Administration 
+title: Publish software for Public Administrations
 lang: en
 ref:
   it: /it/riuso/pubblicazione
@@ -9,6 +9,8 @@ see_also:
   - label: Software acquisition 
     url: /en/reuse/acquisition
 ---
+
+## Publish software for Public Administration 
 
 When an Italian Public Administation develops or commissions software it must
 comply with the [art. 69 of the Codice dell'Amministrazione
