@@ -513,7 +513,7 @@ function esDevelopersItaliaQuery(config, params) {
       },
       'en': {
         'title': 'No results found',
-        'message': 'The searched terms did not match any results. Try searching other terms.',
+        'message': 'The search did not match any results. Try searching other terms.',
         'cta': 'Try a new search'
       }
     },
