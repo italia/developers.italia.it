@@ -389,11 +389,8 @@ layout: default
                   <span class="label">{{ t.software.contract_with }}</span>
                   {% for contractor in page.publiccode.maintenance.contractors %}
                     {% if contractor.website != nil and contractor.website != "" %}
-                    <a href="{{ contractor.website }}" class="until">
-                      <span class="icon it-external-link d-inline-block"></span>
-                      {{ contractor.name }}
-                    </a>
-                    {{ t.software.until }} {{contractor.until}}
+                    <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{
+                    contractor.until}}
                     {% else %}
                     {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
                     {% endif %}
