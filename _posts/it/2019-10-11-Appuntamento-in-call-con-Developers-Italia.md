@@ -27,7 +27,7 @@ Nella prossima call, come sempre, avremo modo di ricevere uno stimolo dal raccon
 
 Dopo gli interventi avremo modo di intavolare una discussione in cui vi daremo spazio per poter parlare e confrontarvi sulle esperienze che state avendo, e aiutarci a capire come possiamo proseguire insieme.
 
-Tutte le edizioni delle community call sono registrate e **pubblicate in video su Forum Italia**, allo scopo permetterne la fruizione anche a chi non può partecipare in diretta. Vi chiediamo di disattivare la webcam durante la partecipazione alla chiamatase non desiderate apparire nella call.
+Tutte le edizioni delle community call sono registrate e **pubblicate in video su Forum Italia**, allo scopo permetterne la fruizione anche a chi non può partecipare in diretta. Vi chiediamo di disattivare la webcam durante la partecipazione alla chiamata se non desiderate apparire nella call.
 
 Vi aspettiamo numerosi sulla piattaforma Zoom per un momento di condivisione delle nostre attività ed esperienze:
 
