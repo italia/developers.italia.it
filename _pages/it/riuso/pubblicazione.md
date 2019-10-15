@@ -10,6 +10,8 @@ see_also:
     url: /it/riuso/acquisizione
 ---
 
+## Pubblicazione di software per la Pubblica Amministrazione
+
 Quando una Pubblica Amministrazione italiana sviluppa o commissiona software è tenuta, ai sensi dell'[art. 69 del Codice dell'Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html), a pubblicarlo in repertorio pubblico con licenza aperta al fine di consentirne il riuso da parte di altre amministrazioni.
 
 Questo processo è dettagliatamente descritto nelle [linee guida per l'Acquisizione e il riuso di software]({{ site.url_lineeguidariuso }}) emesse dall'Agenzia per l'Italia Digitale. Gli [allegati tecnici](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/attachments/allegato-b-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html) delle linee guida sono formulati in modo da poter essere direttamente inclusi nei contratti e nei capitolati relativi allo sviluppo di software, alla modifica di software esistente e alla manutenzione di software, al fine di ottemperare all'obbligo di rilascio.

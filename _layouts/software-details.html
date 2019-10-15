@@ -157,7 +157,7 @@ layout: default
           <div class="function-list">
             {% if description.features.size > 10 %}
             {% for feature in description.features limit: 10 %}
-            <p> {{ feature }} </p>
+            <p> {{ feature | escape}} </p>
             {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -168,12 +168,12 @@ layout: default
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
-              <p> {{ feature }} </p>
+              <p> {{ feature | escape}} </p>
               {% endfor %}
             </div>
             {% else %}
             {% for feature in description.features %}
-            <p> {{ feature }} </p>
+            <p> {{ feature | escape }} </p>
             {% endfor %}
             {% endif %}
           </div>
@@ -193,7 +193,7 @@ layout: default
             </a>
             <div class="collapse" id="by-amministration">
               {% for item in page.publiccode.usedBy %}
-              <p> {{ item }} </p>
+              <p> {{ item | escape}} </p>
               {% endfor %}
             </div>
           </div>
@@ -209,7 +209,7 @@ layout: default
           {% if oldFeatures %}
           {% if oldFeatures.size > 10 %}
           {% for feature in oldFeatures limit: 10 %}
-          <p> {{ feature }} </p>
+          <p> {{ feature | escape}} </p>
           {% endfor %}
           <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
             aria-controls="otherFeature" class="count">{{
@@ -219,13 +219,13 @@ layout: default
           </a>
           <div class="collapse" id="otherFeature">
             {% for feature in oldFeatures offset: 10 %}
-            <p> {{ feature }} </p>
+            <p> {{ feature | escape }} </p>
             {% endfor %}
           </div>
           {% else %}
           {% if oldFeatures.size <= 10 %}
           {% for feature in oldFeatures %}
-          <p> {{ feature }} </p>
+          <p> {{ feature | escape }} </p>
           {% endfor %}
           {% endif %}
           {% endif %}
@@ -251,8 +251,8 @@ layout: default
             | default: variant.publiccode.description.en
             | default: variant.publiccode.description.it %}
             <div class="variantDetail">
-              <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}"> 
-              {{ variant.publiccode.name }} 
+              <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}">
+              {{ variant.publiccode.name }}
               </a>
               {{ t.software.variant_by }} {{ variant.publiccode.legal.repoOwner }}
               <!--
@@ -284,7 +284,7 @@ layout: default
           <div class="function-list">
             {% if description.features.size > 10 %}
             {% for feature in description.features limit: 10 %}
-            <p> {{ feature }} </p>
+            <p> {{ feature | escape }} </p>
             {% endfor %}
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -296,12 +296,12 @@ layout: default
             </p>
             <div class="collapse" id="otherFeature">
               {% for feature in description.features offset: 10 %}
-              <p> {{ feature }} </p>
+              <p> {{ feature | escape }} </p>
               {% endfor %}
             </div>
             {% else %}
             {% for feature in description.features %}
-            <p> {{ feature }} </p>
+            <p> {{ feature | escape }} </p>
             {% endfor %}
             {% endif %}
           </div>
@@ -320,7 +320,7 @@ layout: default
             </a>
             <div class="collapse" id="by-amministration">
               {% for item in page.publiccode.usedBy %}
-              <p> {{ item }} </p>
+              <p> {{ item | escape }} </p>
               {% endfor %}
             </div>
           </div>
@@ -354,14 +354,14 @@ layout: default
             <p>{{ t.software.detailed_info }} </p>
             <div class="title">
               <h2 class="h1">
-                {{ sw_name }}
+                {{ sw_name | escape }}
                 {% if page.publiccode.softwareVersion %}
                 <span
                   class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
                 {% endif %}
               </h2>
               <h2>
-                {{ description.genericName }}
+                {{ description.genericName | escape }}
               </h2>
             </div>
           </div>
@@ -388,8 +388,12 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.contract_with }}</span>
                   {% for contractor in page.publiccode.maintenance.contractors %}
-                  <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{
-                  contractor.until}}
+                    {% if contractor.website != nil and contractor.website != "" %}
+                    <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{
+                    contractor.until}}
+                    {% else %}
+                    {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
+                    {% endif %}
                   {% endfor %}
                 </p>
               </div>
@@ -425,9 +429,9 @@ layout: default
                 <div class="col-md">
                   <p>
                     {% if contact.email != nil and contact.email != "" %}
-                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a> 
+                    <a href="mailto:{{ contact.email }}">{{ contact.name }}</a>
                     {% else %}
-                    {{ contact.name }}
+                    {{ contact.name | escape }}
                     {% endif %}
                     {{ contact.phone }}
                   </p>
@@ -443,7 +447,7 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.license }}</span>
-                  {{ page.publiccode.legal.license }}
+                  {{ page.publiccode.legal.license | escape }}
                 </p>
               </div>
               {% if page.publiccode.platforms.size > 0 %}
@@ -451,7 +455,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.publiccode.platforms %}
-                  {{ platform }}<br />
+                  {{ platform | escape }}<br />
                   {% endfor %}
                 </p>
               </div>

@@ -10,6 +10,8 @@ see_also:
     url: /en/reuse/publication
 ---
 
+## Software acquisition for Public Administrations 
+
 When acquiring software, public entities shall run a comparative evaluation
 following the process described by the [Guidelines]({{ site.url_lineeguidariuso }}).
 

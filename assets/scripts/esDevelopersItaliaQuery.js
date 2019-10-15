@@ -508,12 +508,12 @@ function esDevelopersItaliaQuery(config, params) {
     'emptySerp': {
       'it': {
         'title': 'Nessun risultato trovato',
-        'message': 'La parola "{keyword}" non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
+        'message': 'La ricerca non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
         'cta': 'Prova una nuova ricerca'
       },
       'en': {
         'title': 'No results found',
-        'message': 'The word "{keyword}" did not find any results. Try another search key.',
+        'message': 'The search did not match any results. Try searching other terms.',
         'cta': 'Try a new search'
       }
     },
@@ -635,7 +635,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   // $('.intro').html('');
 
   if (response.hits.total === 0) {
-    var keyword = this.params['keyword'].slice(0).pop();
+    var keyword = decodeURI(this.params['keyword'].slice(0).pop());
     var language = this.config['language'];
 
     $('.intro').html(this.templates.empty({
@@ -783,7 +783,7 @@ esDevelopersItaliaQuery.prototype.renderErrorMessage = function () {
 };
 
 esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
-  var keyword = this.params['keyword'].slice(0).pop();
+  var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
   var $intro = $('.intro > h1');
 
