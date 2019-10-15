@@ -39,3 +39,6 @@ L’appuntamento del 18 settembre è solo l’inizio: torneremo a sentirci **ogn
 Ti aspettiamo!
 
 Il Team Developers Italia
+
+
+[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall/).
