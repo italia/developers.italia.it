@@ -1,10 +1,12 @@
 ---
 title: Informativa privacy
-subtitle: Informativa privacy - Newsletter Designers Italia e Developers Italia
+subtitle: Informativa privacy - Community Call Developers Italia
 lang: it
-layout: internal-simple
+layout: internal-long
 ---
-# Informativa privacy - Newsletter Designers Italia e Developers Italia
+
+<h1> Informativa privacy </h1>
+<h2>Community Call Developers Italia</h2>
 La presente informativa viene resa ai sensi dell’art. 13 del Regolamento 2016/679 (GDPR) ed è relativa ai dati personali trattati nell’ambito delle
 Community Call di Developers Italia.
 
