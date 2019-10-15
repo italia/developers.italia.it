@@ -55,7 +55,7 @@ layout: default
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
                 {% if page.publiccode.it.riuso.codiceIPA %}
-                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA }}">
+                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
                 {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
                 </a>
                 {%else%}
