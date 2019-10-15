@@ -34,3 +34,7 @@ Vi aspettiamo numerosi sulla piattaforma Zoom per un momento di condivisione del
 [Partecipa alla call utilizzando questo link](https://zoom.us/j/980887806).
 
 Ciao e vi aspettiamo mercoledì in call!
+
+
+
+[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall/).
