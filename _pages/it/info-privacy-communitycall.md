@@ -8,13 +8,13 @@ layout: internal-long
 <h1> Informativa privacy </h1>
 <h2>Community Call Developers Italia</h2>
 La presente informativa viene resa ai sensi dell’art. 13 del Regolamento 2016/679 (GDPR) ed è relativa ai dati personali trattati nell’ambito delle
-Community Call di Developers Italia.
+community call di Developers Italia.
 
-Le community call avvengono tramite mezzi di video coferenza e sono annunciate sul sito [https://developers.italia.it/](https://developers.italia.it/)
+Le community call avvengono tramite mezzi di video conferenza e sono annunciate sul sito [https://developers.italia.it/](https://developers.italia.it/)
 (Developers Italia), [https://forum.italia.it/](https://forum.italia.it/) (il Forum di Developers Italia) e sui canali di Slack di Developers Italia.
 
 I dati gestiti per la fornitura del servizio sono:
-* nome e cognome dei partecipanti alla call (se dichiarati al momento della connesione alla VC)
+* nome e cognome dei partecipanti alla call (se dichiarati al momento della connessione alla VC)
 * statistiche anonime di partecipazione alla videoconferenza
 * immagini video ed audio di quanto condiviso durante la partecipazione alla videoconferenza.
  
