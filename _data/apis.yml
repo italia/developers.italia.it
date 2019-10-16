@@ -63,7 +63,7 @@
     logo: https://telematici.agenziaentrate.gov.it/resources/img/AgenziaEntrate_logo_152.png
   tags: []
   language: [it]
-  slug: dispositivi-corrispettivi
+  slug: agenzia-entrate-corrispettivi-dispos
   
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/cercaareeprotette.e015.servizirl.it.yaml
   title: Aree Protette Lombardia
