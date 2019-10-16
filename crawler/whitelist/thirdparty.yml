@@ -17,3 +17,7 @@
 - name: "Idra"
   repos:
     - "https://github.com/OPSILab/Idra"
+
+- name: "Libreoffice powered by CIB"
+  repos:
+    - "https://github.com/cibsoftware/LibreOfficePoweredByCIB-metadata"
