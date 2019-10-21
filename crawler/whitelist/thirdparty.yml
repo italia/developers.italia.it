@@ -21,3 +21,7 @@
 - name: "Libreoffice powered by CIB"
   repos:
     - "https://github.com/cibsoftware/LibreOfficePoweredByCIB-metadata"
+    
+- name: "Seedoo Community"
+  repos:
+    - "https://github.com/seedoo/seedoo-core"
