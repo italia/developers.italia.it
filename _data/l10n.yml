@@ -139,7 +139,7 @@ it:
       software_open: Software open source di terze parti
       reuse_software: Software a riuso
       recent_software: Software più recenti
-      active_software: Software più attivi
+      active_software: Progetti più attivi
       pa_most_active: Amministrazioni più virtuose
       filters: Filtri
       sort_by: Ordina per
@@ -347,7 +347,7 @@ en:
       software_open: Software open source
       reuse_software: Reuse software
       recent_software: Most recent software
-      active_software: Most active software
+      active_software: Most active projects
       pa_most_active: Most virtuos administration
       sort_by: Sort by
       sort_by_relevance: Relevance

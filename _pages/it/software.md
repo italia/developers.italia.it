@@ -7,14 +7,14 @@ ref:
 layout: software
 pair-blocks:
     - title: "Software a riuso"
-      text: "Il catalogo del software open source per la pubblica amministrazione."
+      text: "Soluzioni e programmi informatici di titolarità di una Pubblica Amministrazione"
       # image: /assets/images/come-lo-uso-2.svg
       buttons:
         - label: Esplora
           class: btn btn-primary
           url: '/it/search?type=reuse_software&page=0&sort=relevance'
-    - title: "Open source terze parti"
-      text: "Il catalogo di software open source di terze parti per la pubblica amministrazione."
+    - title: "Open source di terze parti"
+      text: "Selezione di software open source di interesse per una Pubblica Amministrazione"
       # image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: Esplora
