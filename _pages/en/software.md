@@ -7,14 +7,14 @@ ref:
 layout: software
 pair-blocks:
     - title: "Software Reuse"
-      text: "Solutions and computer programs owned by an Italian Public Administration"
+      text: "Solutions and computer programs shared by Italian Public Administrations"
       # image: /assets/images/come-lo-uso-2.svg
       buttons:
         - label: Explore
           class: btn btn-primary
           url: '/en/search?type=reuse_software&page=0&sort=relevance'
     - title: "Third party open source"
-      text: "A selection of open source software of interest for a Public Administration"
+      text: "Open source software of interest for Public Administrations"
       # image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: Explore
