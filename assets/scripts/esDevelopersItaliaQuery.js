@@ -46,17 +46,17 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     'sortMobileTitle': {
       'it': {
         'relevance': 'Rilevanza',
-        'az': 'A/Z',
+        'az': 'Alfabetico',
         'za': 'Z/A',
-        'popularity': 'Popolarità',
-        'emerging': 'Emergenti'
+        'vitality': 'Più attivi',
+        'releasedate': 'Più recenti'
       },
       'en': {
         'relevance': 'Relevance',
-        'az': 'A/Z',
+        'az': 'Alphabetical',
         'za': 'Z/A',
-        'popularity': 'Popularity',
-        'emerging': 'Emerging'
+        'vitality': 'Most active',
+        'releasedate': 'Most recent'
       }
     },
     // css selector
@@ -149,6 +149,8 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function () {
       $('#' + id + ' input[value="' + value[i] + '"]').prop('checked', true);
       // type query filter for mobile.
       $('#pills-types input[value="' + value[i] + '"]').prop('checked', true);
+      // filtering sort criteria for selected type
+      filterSortBy(object, true, value[i]);
     }
   }
 
@@ -173,6 +175,7 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function () {
   if (typeof sort === 'undefined') {
     sort = 'relevance';
   }
+
   $(this.config['sortSelector']).val(sort);
   $(this.config['sortMobileSelector']).each(function (i, e) {
     if ($(e).attr('sort') === sort) {
@@ -236,10 +239,22 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function () {
   history.pushState({}, '', window.location.pathname + '?' + queryString.join('&'));
 };
 
+// Filtering sortBy select based on selected content typology 
+function filterSortBy(object, checked, element) {
+  if(element == "platforms" && checked) {
+    // when changing type resetting sortBy to common one
+    $(object.config['sortSelector']).val('relevance');
+    $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').hide();
+  } else {
+    $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').show();
+  }
+}
+
 esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
   var object = this;
 
   $('#list-type input[type="checkbox"]').on('change', function (event) {
+    filterSortBy(object, event.target.checked, event.target.value);
     if (event.target.checked) {
       $('#list-type input[type="checkbox"]:checked').each(function (i, e) {
         if (event.target.value !== e.value) {
@@ -277,6 +292,9 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
       object.params['type'].pop();
       object.params['type'].push(object.queryType.slice(0).pop());
     }
+
+    // // when changing type resetting sortBy to common one
+    // $(object.config['sortSelector']).val('relevance');
 
     // Execute Current query.
     object.executeCurrentQuery();
@@ -604,15 +622,15 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function () {
       });
       break;
 
-    case 'popularity':
+    case 'vitality':
       sort.push({
-        'vitality-score': { 'order': 'desc' }
+        'vitalityScore': { 'order': 'desc' }
       });
       break;
 
-    case 'emerging':
+    case 'releasedate':
       sort.push({
-        'releaseDate': { 'order': 'desc' }
+        'publiccode.releaseDate': { 'order': 'desc' }
       });
       break;
 

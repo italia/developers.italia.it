@@ -144,8 +144,9 @@ it:
       filters: Filtri
       sort_by: Ordina per
       sort_by_relevance: Rilevanza
-      sort_by_emerging: Emergenti
-      sort_by_popularity: Popolarità
+      sort_by_release_date: Più recenti
+      sort_by_vitality: Più attivi
+      sort_by_alphabetic: Alfabetico
       categories: Categorie
       results: risultati
       variant_by: Variante di
@@ -351,8 +352,9 @@ en:
       pa_most_active: Most virtuos administration
       sort_by: Sort by
       sort_by_relevance: Relevance
-      sort_by_emerging: Emerging
-      sort_by_popularity: Popularity
+      sort_by_release_date: Most recent
+      sort_by_vitality: Most active
+      sort_by_alphabetic: Alphabetical
       filters: Filters
       categories: Categories
       results: results
