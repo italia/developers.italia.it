@@ -810,7 +810,7 @@ esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
   var language = this.config['language'];
   var $intro = $('.intro > h1');
 
-  if (typeof keyword !== 'undefined') {
+  if (keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
   }
