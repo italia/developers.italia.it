@@ -29,3 +29,7 @@
 - name: "OpenWISP 2 Controller"
   repos:
     - "https://github.com/openwisp/openwisp-controller"
+    
+- name: "Jaffree"
+  repos:
+    - "https://github.com/kokorin/Jaffree"
