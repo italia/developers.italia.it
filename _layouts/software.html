@@ -34,20 +34,8 @@ layout: default
 {% endif %}
 
 <div class="container page-softwares-list">
-  <!-- <div class="row py-2">
-    <div class="col-3"></div>
-    <div class="col-3 text-right">
-      <a href="/{{ active_lang }}/search?type=reuse_software&page=0&sort=relevance" target="_blank"
-        class="btn btn-secondary mt-2">{{ t.software.reuse_software }}</a>
-    </div>
-    <div class="col-4">
-      <a href="/{{ active_lang }}/search?type=software_open&page=0&sort=relevance" target="_blank"
-        class="btn btn-primary mt-2">{{ t.software.software_open }}</a>
-    </div>
-    <div class="col-2"></div>
-  </div> -->
-  {% assign reuse_sw_url = "/" | append: active_lang | append: "/search?type=reuse_software&page=0&sort=relevance" | escape %}
-  {% assign open_sw_url = "/" | append: active_lang | append: "/search?type=software_open&page=0&sort=relevance" | escape %}
+  {% assign vitality_sw_url = "/" | append: active_lang | append: "/search?page=0&sort=vitality" | escape %}
+  {% assign recent_sw_url = "/" | append: active_lang | append: "/search?page=0&sort=releasedate" | escape %}
 
   {% if recent_sw.size > 0 %}
   <div class="container list-item-sorting">
@@ -57,7 +45,7 @@ layout: default
       </div>
 
       <div class="col-md-3 how">
-        <a href="{{ reuse_sw_url }}">{{ t.software.show_all }}
+        <a href="{{ recent_sw_url }}">{{ t.software.show_all }}
           &rarr;</a>
       </div>
 
@@ -79,7 +67,7 @@ layout: default
       </div>
 
       <div class="col-md-3 how">
-        <a href="{{ reuse_sw_url }}">{{ t.software.show_all }}
+        <a href="{{ vitality_sw_url }}">{{ t.software.show_all }}
           &rarr;</a>
       </div>
     </div>
