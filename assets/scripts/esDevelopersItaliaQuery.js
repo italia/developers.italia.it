@@ -244,9 +244,13 @@ function filterSortBy(object, checked, element) {
   if(element == "platforms" && checked) {
     // when changing type resetting sortBy to common one
     $(object.config['sortSelector']).val('relevance');
+    // desktop hiding elements
     $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').hide();
+    // mobile higing elements
+    $(object.config['sortMobileSelector'] + '[sort="vitality"],[sort="releasedate"]').hide();
   } else {
     $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').show();
+    $(object.config['sortMobileSelector'] + '[sort="vitality"],[sort="releasedate"]').show();
   }
 }
 
@@ -302,6 +306,7 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
 
   // TypeQuery Mobile only one selected.
   $('#pills-types input[type="checkbox"]').on('change', function (event) {
+    filterSortBy(object, event.target.checked, event.target.value);
     if (event.target.checked) {
       $('#pills-types input[type="checkbox"]:checked').each(function (i, e) {
         if (event.target.value !== e.value) {
