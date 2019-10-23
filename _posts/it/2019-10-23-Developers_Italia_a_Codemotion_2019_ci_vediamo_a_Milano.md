@@ -18,7 +18,7 @@ Ciao a tutti!
 
 Il 24 e 25 ottobre si terrà a Milano (Superstudio, Via Tortona 27) [Codemotion 2019](https://events.codemotion.com/conferences/milan/2019/), la più grande conferenza tecnica per sviluppatori d’Italia.
 
-Come nelle precedenti edizioni, [Developers Italia](https://developers.italia.it/) parteciperà anche a quest’anno! Saremo presenti con un *booth* entrambe le giornate. Durante l’evento avremo modo di descrivere il lavoro che stiamo facendo per **supportare la trasformazione digitale  all’interno della Pubblica Amministrazione italiana** e per favorire la diffusione di software *open source*, in particolare con le attività legate al [Catalogo del Software](https://developers.italia.it/it/software/) e le [Linee Guida per l’Acquisizione e il Riuso del Software](https://developers.italia.it/it/riuso).
+Anche quest'anno [Developers Italia](https://developers.italia.it/) farà parte dell'evento. Saremo presenti con un *booth* entrambe le giornate. Durante l’evento avremo modo di descrivere il lavoro che stiamo facendo per **supportare la trasformazione digitale  all’interno della Pubblica Amministrazione italiana** e per favorire la diffusione di software *open source*, in particolare con le attività legate al [Catalogo del Software](https://developers.italia.it/it/software/) e le [Linee Guida per l’Acquisizione e il Riuso del Software](https://developers.italia.it/it/riuso).
 
 Developers Italia organizzerà anche un *meetup* nella sera di giovedì 24, presso la sede dell’evento. Durante l’incontro, presenteremo la community e gli strumenti a suo supporto e descriveremo le nostre modalità di lavoro, partendo dalle esperienze fatte su alcuni progetti.
 
