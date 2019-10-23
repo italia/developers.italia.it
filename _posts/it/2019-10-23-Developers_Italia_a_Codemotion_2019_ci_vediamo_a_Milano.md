@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Developers Italia a Codemotion 2019: ci vediamo a Milano!
+title:  Developers Italia a Codemotion 2019, ci vediamo a Milano!
 subtitle: Un booth e un meetup il 24 e 25 ottobre
 date:   2019-10-23 12:00:00 +0100
 tags: developers call
