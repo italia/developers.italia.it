@@ -1,0 +1,20 @@
+{% include setlang.html %}
+
+{% for pa in include.items %}
+{% assign pa_name = pa.name | default: 'no name specified' %}
+{% assign pa_full = site.data.crawler.amministrazioni | where: "ipa", pa_name | first %}
+
+<div class="col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
+    {% assign pa_url = '/' | append: active_lang | append: '/pa/' | append: pa.name | downcase %}
+    <a href="{{pa_url}}" class="d-block decoration-none ">
+        {% assign img_url = pa_full.emblem | default:'/assets/images/cover_amministrazioni.png' %}
+        <div class="main-image"
+            style=" background: url({{ img_url }}) no-repeat top center;">
+        </div>
+        <p class="name color-inherit">
+            {{ pa_full.entityName | default: pa_name }}
+        </p>
+        <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
+    </a>
+</div>
+{% endfor %}

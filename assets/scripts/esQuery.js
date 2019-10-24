@@ -14,7 +14,7 @@ $(document).ready(function () {
   // listener for modal window search.
   $('#search-form').on('click', function(){
     var $inputText = $('#searchModal .autocomplete input');
-    
+
     $inputText.on('input', executeAutoCompleteESQuery);
     $('#searchModal form a.btn-filter').on('click', function(event){
       event.preventDefault();
@@ -23,7 +23,7 @@ $(document).ready(function () {
         return;
       }
 
-      $('#searchModal form a.btn-filter.active').removeClass('active')
+      $('#searchModal form a.btn-filter.active').removeClass('active');
       $(event.target).addClass('active');
     });
 
@@ -42,8 +42,9 @@ $(document).ready(function () {
 
     // redirect to search page.
     var path = '/' + language + '/search';
+    var queryType = "type=" + $('#searchModal form a.btn-filter.active').attr('data');
     var queryString = "keyword=" + $('#searchModal .autocomplete input').val().trim().split(' ').join('+');
-    window.location = path + '?' + queryString;
+    window.location = path + '?' + queryString + '&' + queryType;
   });
 
   if(typeof pageId != 'undefined') {
@@ -59,7 +60,7 @@ $(document).ready(function () {
 
   /**
    * Parse location search to find parameters in keys array and returns a function closure.
-   * 
+   *
    * @param array keys
    */
   function parseSearchParameters(keys) {
@@ -78,8 +79,8 @@ $(document).ready(function () {
 
     /**
      * Get value for k location search parameter.
-     * 
-     * @param k 
+     *
+     * @param k
      */
     function getParams(k) {
 
