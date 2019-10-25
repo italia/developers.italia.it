@@ -58,9 +58,9 @@ layout: default
                 <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
                 {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
                 </a>
-                {%else%}
+                {% else %}
                 {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
-                {%endif%}
+                {% endif %}
               </p>
             </div>
             {% if page.publiccode.maintenance.type == "contract" %}
@@ -68,7 +68,11 @@ layout: default
             <div class="col-sm">
               <p><span class="label">{{ t.software.software_maintained_by }} </span>
                 {% for contractor in page.publiccode.maintenance.contractors %}
-                <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                    {% if contractor.website != nil and contractor.website != "" %}
+                        <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                    {% else %}
+                        {{ contractor.name}}
+                    {% endif %}
                 {% endfor %}
               </p>
             </div>
