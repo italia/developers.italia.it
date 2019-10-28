@@ -473,17 +473,17 @@ layout: default
               <div class="col-md">
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
-                  {% for dep in page.publiccode.dependencies.open %}
+                  {% for dep in page.publiccode.dependsOn.open %}
                   <p class="platforms">
                     {% include dependency.html dependency=dep %}
                   </p>
                   {% endfor %}
-                  {% for dep in page.publiccode.dependencies.proprietary %}
+                  {% for dep in page.publiccode.dependsOn.proprietary %}
                   <p class="platforms">
                     {% include dependency.html dependency=dep %}
                   </p>
                   {% endfor %}
-                  {% for dep in page.publiccode.dependencies.hardware %}
+                  {% for dep in page.publiccode.dependsOn.hardware %}
                   <p class="platforms">
                     {% include dependency.html dependency=dep %}
                   </p>
