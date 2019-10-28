@@ -95,7 +95,7 @@ GEM
     nuggets (1.6.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    parallel (1.17.0)
+    parallel (1.18.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.1)
