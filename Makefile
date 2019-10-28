@@ -23,5 +23,7 @@ include-npm-deps:
 	mkdir -p $(VENDOR_DIR)
 	npm install
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
+	cp -r node_modules/chart.js $(VENDOR_DIR)
+	cp -r node_modules/bootstrap-italia $(VENDOR_DIR)
 build: | include-npm-deps download-data build-swagger jekyll-build
 build-test: | build test

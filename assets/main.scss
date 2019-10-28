@@ -1,7 +1,7 @@
 ---
 ---
 @charset "utf-8";
-@import 'bootstrap-italia/src/scss/bootstrap-italia';
+@import 'vendor/bootstrap-italia/src/scss/bootstrap-italia';
 @import 'footer';
 @import 'softwares';
 @import 'software-detail';
@@ -15,8 +15,13 @@
 @import 'photoswipe-default-skin';
 //@import "highlight";
 //@import "developer";
-// @import "datatables";
-// @import "select2";
+//@import "datatables";
+//@import "select2";
+
+a {
+    text-decoration: none
+}
+
 h1,
 .h1 {
     color: #17324D;
@@ -616,7 +621,7 @@ body {
             line-height: 0;
             width: 1.8rem;
             height: 1.8rem;
-            background-color: $italia;
+            background-color: $primary;
             padding: 0.4rem;
             border-radius: 2rem;
         }
