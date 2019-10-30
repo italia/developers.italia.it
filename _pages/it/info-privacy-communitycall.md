@@ -33,7 +33,7 @@ e Developers Italia, gestiti in collaborazione, per rendere più efficienti i se
 
 Tutti i dati raccolti saranno trattati esclusivamente dal personale e dai collaboratori del Team digitale autorizzati a tale scopo o delle imprese
 espressamente nominate come responsabili del trattamento (ad es. per esigenze di manutenzione tecnologica del servizio di invio).
-Le registrazioni video saranno pubblicati online per la loro fruizione pubblica.
+Le registrazioni video saranno pubblicate online per la loro fruizione pubblica.
 
 I partecipanti alla community call hanno il diritto di ottenere, nei casi previsti, l’accesso ai dati personali, la rettifica e la cancellazione degli stessi,
 la limitazione del trattamento o di opporsi al trattamento (articoli 15 e successivi del Regolamento UE 2016/679). L’apposita istanza deve essere presentata
