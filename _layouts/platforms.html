@@ -21,12 +21,13 @@ lang: it
       <div class="projectslist__listing pt-2 pt-md-4 pb-2 pb-md-4">
         <div class="row row-eq-height">
           {% for platform in platforms %}
-          <div class="col-md-3 p-2 p-md-3">
+          <div class="col-sm-12 col-md-6 col-lg-3 p-2 p-md-3">
             <article class="d-flex flex-column align-items-start mb-2 mb-md-5">
               <a href="{{platform.url}}" title="{{platform.title}}" class="d-block decoration-none ">
                 {% if platform.logo %}
                 <figure>
-                  <img class="w-100" src="{{platform.logo | relative_url}}">
+                  <div class="main-image" style='background: url("{{platform.logo | relative_url}}") no-repeat top center;'>
+                  </div>
                 </figure>
                 {% endif %}
                 <h1 class="projectslist__listing__title">{{platform.title}}</h1>

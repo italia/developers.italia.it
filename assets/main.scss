@@ -1395,6 +1395,9 @@ body {
     }
     &__listing {
         article {
+            a {
+                width: 100%;
+            }
             figure {
                 background-color: #fff;
                 margin: 0;
@@ -1402,9 +1405,17 @@ body {
                     margin-bottom: 0.2rem;
                 }
             }
-            img {
+            .main-image {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 175px;
+                background-size: cover !important;
                 @include media-breakpoint-up(md) {
                     box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+                }
+                @include media-breakpoint-down(md) {
+                    height: 280px;
                 }
             }
             h1 {
