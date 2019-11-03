@@ -1,8 +1,8 @@
 - ipa: m_it
-  name: Ministero dell'Interno
+  entityName: Ministero dell'Interno
 - ipa: unical
-  name: UNIVERSITA' DELLA CALABRIA
-- ipa: PCM
-  name: Presidenza del Consiglio dei Ministri
+  entityName: UNIVERSITA' DELLA CALABRIA
+- ipa: pcm
+  entityName: Presidenza del Consiglio dei Ministri
 - ipa: m_bac
-  name: Ministero per i beni e le attivita' culturali
+  entityName: Ministero per i beni e le attivita' culturali

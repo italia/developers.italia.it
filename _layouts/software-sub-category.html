@@ -93,10 +93,10 @@ layout: default
               <div class="form-group">
                 <select class="form-control">
                   <option value="relevance" class="active">{{ t.software.sort_by_relevance }}</option>
-                  <option value="az">A/Z</option>
-                  <option value="za">Z/A</option>
-                  <option value="emerging">{{ t.software.sort_by_emerging }}</option>
-                  <option value="popularity">{{ t.software.sort_by_popularity }}</option>
+                  <option value="az">{{ t.software.sort_by_alphabetic }}</option>
+                  <!-- <option value="za">Z/A</option> -->
+                  <option value="releasedate">{{ t.software.sort_by_release_date }}</option>
+                  <option value="vitality">{{ t.software.sort_by_vitality }}</option>
                 </select>
               </div>
             </form>
@@ -176,10 +176,11 @@ layout: default
           <h5 class="modal-title" id="exampleModalLabelSort">{{ t.software.sort_by }}</h5>
         </div>
         <div class="modal-body">
-          <a href="" sort="az">A/Z</a>
-          <a href="" sort="za">Z/A</a>
-          <a href="" sort="popularity">Popolarità</a>
-          <a href="" sort="emerging">Emergenti</a>
+          <a href="" sort="relevance">{{ t.software.sort_by_relevance }}</a>
+          <a href="" sort="az">{{ t.software.sort_by_alphabetic }}</a>
+          <!-- <a href="" sort="za">Z/A</a> -->
+          <a href="" sort="vitality">{{ t.software.sort_by_vitality }}</a>
+          <a href="" sort="releasedate">{{ t.software.sort_by_release_date }}</a>
         </div>
       </div>
     </div>
