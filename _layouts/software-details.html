@@ -474,15 +474,15 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% if page.publiccode.dependsOn.open.size > 0 %}
-                  <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span></br>
+                  <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span>
                       {% for dep in page.publiccode.dependsOn.open %}
-                        {% include dependency.html dependency=dep %}</br>
+                        {% include dependency.html dependency=dep %}
                       {% endfor %}
                   {% endif %}
                   {% if page.publiccode.dependsOn.proprietary.size > 0 %}
-                  <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span></br>
+                  <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span>
                       {% for dep in page.publiccode.dependsOn.proprietary %}
-                        {% include dependency.html dependency=dep %}</br>
+                        {% include dependency.html dependency=dep %}
                       {% endfor %}
                   {% endif %}
                   {% for dep in page.publiccode.dependsOn.hardware %}
