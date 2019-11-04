@@ -1,23 +1,10 @@
-{{ include.dependency.name }}
+{% comment  %}
+We want to show dependencies marking their nature (FOSS / Proprietary). 
+Also, we want to show when such dependencies are not mandatory.
+{% endcomment %}
 
-{% if include.dependency.version != nil %}
-    {{ include.dependency.version}}
-{% if include.dependency.versionMin != nil %}
-    / {{ include.dependency.versionMin}}
-    {% if include.dependency.versionMax != nil %}
-    - {{ include.dependency.versionMax}}
-    {% endif %}
-{% endif %}
-{% elsif include.dependency.version == nil %}
-{% if include.dependency.versionMin != nil %}
-    {% if include.dependency.versionMax != nil %}
-    {{ include.dependency.versionMin}} - {{ include.dependency.versionMax}}
-    {% elsif include.dependency.versionMax == nil %}
-    > {{ include.dependency.versionMin}}
-    {% endif %}
+{% if include.dependency.optional != nil and include.dependency.optional == true %}
+    {{ include.dependency.name }} ({{ t.software.dependencies_optional }})
 {% else %}
-    {% if include.dependency.versionMax != nil %}
-    > {{ include.dependency.versionMax}}
-    {% endif %}
-{% endif %}
+    {{ include.dependency.name }} 
 {% endif %}
