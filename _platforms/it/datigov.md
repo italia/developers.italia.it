@@ -14,14 +14,32 @@ comingsoon: false
 layout: platform
 github_team: datigov
 socials:
-  -
-    name: twitter
+  - name: twitter
     icon: twitter
     link: //twitter.com/datigovit
-  -
-    name: youtube
+  - name: youtube
     icon: youtube
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
+resources:
+  - Documentazione:
+    - title: Panoramica e segnalazioni
+      icon: file
+      url: https://github.com/italia/dati.gov.it
+      desc: 
+  - Repository:
+    - title: Codice sorgente
+      icon: github
+      url: https://github.com/FormezPA/dkan
+      desc: 
+  - Linee guida:
+    - title: Valorizzazione del Patrimonio Informativo Pubblico
+      icon: pdf
+      url: https://www.dati.gov.it/sites/default/files/LG2016_0.pdf
+      desc: 
+    - title: Cataloghi Dati
+      icon: file
+      url: https://www.dati.gov.it/sites/default/files/LG2016_0.pdf
+      desc: https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/
 ---
 
 ## Introduzione
@@ -46,15 +64,11 @@ I metadati che descrivono ogni dataset seguono il [profilo ufficiale DCAT-AP_IT]
 
 Tutte le informazioni sui dataset indicizzati dal catalogo nazionale possono essere ricercate mediante il [motore di ricerca interno](https://www.dati.gov.it/search/type/dataset) oppure mediante [Application Programming Interface](https://www.dati.gov.it/content/sviluppatori) (API).
 
-### Documentazione
+### Ulteriori risorse
 
-Il catalogo nazionale è una distribuzione personalizzata del software open-source [DKAN](https://getdkan.org/), basato sul [CMS Drupal](https://www.drupal.org/) e compatibile con [CKAN](https://ckan.org/).
+Il catalogo nazionale è una distribuzione personalizzata del software open-source [DKAN](https://getdkan.org/), basato sul [CMS Drupal](https://www.drupal.org/) e compatibile con [CKAN](https://ckan.org/). Attualmente il codice sorgente del catalogo nazionale è gentilmente ospitato da FormezPA su Github: [FormezPA/dkan](https://github.com/FormezPA/dkan).
 
 Ulteriori informazioni sono reperibili su Github nel repository [italia/dati.gov.it](https://github.com/italia/dati.gov.it).
-
-### Codice sorgente
-
-Attualmente il codice sorgente del catalogo nazionale è gentilmente ospitato da FormezPA su Github: [FormezPA/dkan](https://github.com/FormezPA/dkan).
 
 ## FAQ
 
