@@ -4,7 +4,7 @@ subtitle: I dati aperti della pubblica amministrazione
 logo: /assets/images/logo-dati.gov.it@2x.png
 payoff: I dati aperti della pubblica amministrazione
 description: >
-  Dati.gov.it e’ il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l’obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.
+  Dati.gov.it è il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l'obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.
 lang: it
 ref:
   en: /en/datigov
@@ -24,51 +24,56 @@ socials:
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
 ---
 
-## Intro
-Trasparenza, riutilizzo, partecipazione sono alcune delle parole cardine che guidano il processo di apertura del dato e vengono ereditate dalla  comunità del software libero, che produce da anni un modello di sviluppo di codice software di alta qualità basato su principi di condivisione ed apertura.
+## Introduzione
 
-Il nostro obiettivo è quello di **evolvere l’attuale portale online** da catalogo dei dati aperti ad un sistema che offra strumenti e servizi sviluppati in condivisione con la comunità che quindi ne estenda le potenzialità.
+Le ["Linee Guida Nazionali per la Valorizzazione del Patrimonio Informativo Pubblico"](https://www.dati.gov.it/sites/default/files/LG2016_0.pdf) costituiscono le fondamenta per ogni azione di apertura dei dati da parte delle Pubbliche Amministrazioni italiane, mentre le ["Linee guida per i cataloghi dati"](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/) chiariscono gli aspetti implementativi per l'alimentazione e la gestione di cataloghi dati istituzionali secondo il [profilo nazionale di metadatazione DCAT-AP_IT](https://www.dati.gov.it/content/dcat-ap-it-v10-profilo-italiano-dcat-ap-0).
 
-Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue un modello di sviluppo basato su un **processo collaborativo** tipico delle comunità degli sviluppatori. Gli strumenti che vogliamo utilizzare per strutturare il processo di sviluppo sono:
+La piattaforma Dati.gov.it è il [catalogo nazionale ufficiale dei dati aperti delle Pubbliche Amministrazioni italiane](https://www.dati.gov.it/) e nasce con l'obiettivo di aggregare in un unico portale potenzialmente tutti i dati aperti esposti dalle varie amministrazioni sia locali che nazionali: al momento più di 25 mila dataset pubblicati da più di 400 istituzioni.
 
- * Una roadmap di sviluppo agile e pubblica
- * Codice sorgente aperto fin dall’inizio
- * Un sistema di tracciamento degli errori pubblico
- * Documentazione del codice e delle API chiaro
+I metadati raccolti ed esposti dal catalogo nazionale confluiscono nel catalogo del [Portale Europeo dei Dati](https://www.europeandataportal.eu/it/homepage).
 
+### I portali dei dati aperti
 
-## Documentazione
+Ogni Pubblica Amministrazione è libera di scegliere lo strumento che preferisce per pubblicare i propri dati aperti. Ci sono però dei vincoli o delle raccomandazioni sulle modalità di pubblicazione di questi dati, per esempio l'esposizione di metadati che soddisfino le richieste del profilo DCAT-AP_IT.
 
-Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul documento architetturale, sia sulle linee guida tecniche per i cataloghi dati che includono la specifica DCAT-AP_IT:
+Tra i software a riuso è disponibile uno strumento *chiavi in mano* che semplifica la costruzione di un catalogo dati *a norma* e indicizzabile dal catalogo nazionale: [CKAN-IT](https://developers.italia.it/it/software/pcm-italia-ckan-it).
 
-[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
+## Come funziona
 
-[Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/)
+Il catalogo nazionale monitora automaticamente [tutti i cataloghi registrati](https://www.dati.gov.it/elenco-harvest-sources) ed espone i metadati di tutti i loro dataset, così da costituire il [motore di ricerca unico](https://www.dati.gov.it/search/type/dataset) dei dati aperti della Pubblica Amministrazione italiana.
 
+I metadati che descrivono ogni dataset seguono il [profilo ufficiale DCAT-AP_IT](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/profilo-overview.html), uno standard internazionale che specifica tutte le informazioni richieste o suggerite.
 
-## Codice sorgente
+Tutte le informazioni sui dataset indicizzati dal catalogo nazionale possono essere ricercate mediante il [motore di ricerca interno](https://www.dati.gov.it/search/type/dataset) oppure mediante [Application Programming Interface](https://www.dati.gov.it/content/sviluppatori) (API).
 
-Qui puoi trovare l'attuale codice sorgente basato su DKAN (Drupal), e a breve pubblicheremo un documento per aiutarti a
-creare l'ambiente di sviluppo per contribuire:
+### Documentazione
 
-[Repo GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
+Il catalogo nazionale è una distribuzione personalizzata del software open-source [DKAN](https://getdkan.org/), basato sul [CMS Drupal](https://www.drupal.org/) e compatibile con [CKAN](https://ckan.org/).
 
+Ulteriori informazioni sono reperibili su Github nel repository [italia/dati.gov.it](https://github.com/italia/dati.gov.it).
 
-Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da documento architetturale:
+### Codice sorgente
 
-[Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
+Attualmente il codice sorgente del catalogo nazionale è gentilmente ospitato da FormezPA su Github: [FormezPA/dkan](https://github.com/FormezPA/dkan).
 
-[Nuovo frontend server](https://github.com/italia/dati-frontendserver)
+## FAQ
 
+**Perché non trovo i dati della mia pubblica amministrazione?**
 
-## Collaborazione
+Ci sono delle precise specifiche tecniche che i portali devono soddisfare per essere federati dal catalogo nazionale. [Qui tutti i dettagli.](https://www.dati.gov.it/content/come-federare-proprio-catalogo-datigovit)
 
-Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
-l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto
-un tracker pubblico su GitHub:
+**Ho trovato un errore nelle informazioni di un dataset, come posso segnalarlo?**
 
-[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+...
 
-[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues)
+**Non trovo i dati che mi interessano, cosa posso fare?**
 
-[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects)
+...
+
+**Sono una Pubblica Amministrazione con un portale dati, come posso inserirlo nel catalogo nazionale?**
+
+...
+
+**Sono una Pubblica Amministrazione che vuole pubblicare un portale dati, da dove posso iniziare?**
+
+...
