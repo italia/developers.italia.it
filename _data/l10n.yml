@@ -178,6 +178,9 @@ it:
       license: Licenza
       platforms: Piattaforme
       dependencies_list: Lista dipendenze
+      dependencies_oss: OSS 
+      dependencies_proprietary: Proprietario 
+      dependencies_optional: Opzionale 
       enabling_platforms: Piattaforme abilitanti
       services_on: Servizi su
       until: fino al
@@ -387,6 +390,9 @@ en:
       license: License
       platforms: Platforms
       dependencies_list: List of dependencies
+      dependencies_oss: OSS 
+      dependencies_proprietary: Proprietary 
+      dependencies_optional: Optional 
       enabling_platforms: Enabling platforms
       services_on: Services on
       until: until the
