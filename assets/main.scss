@@ -1414,9 +1414,6 @@ body {
                 @include media-breakpoint-up(md) {
                     box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
                 }
-                @include media-breakpoint-down(md) {
-                    height: 280px;
-                }
             }
             h1 {
                 color: #333333;
