@@ -473,20 +473,20 @@ layout: default
               <div class="col-md">
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
-                  {% for dep in page.publiccode.dependsOn.open %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
-                  {% for dep in page.publiccode.dependsOn.proprietary %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
+                  {% if page.publiccode.dependsOn.open.size > 0 %}
+                  <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span></br>
+                      {% for dep in page.publiccode.dependsOn.open %}
+                        {% include dependency.html dependency=dep %}</br>
+                      {% endfor %}
+                  {% endif %}
+                  {% if page.publiccode.dependsOn.proprietary.size > 0 %}
+                  <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span></br>
+                      {% for dep in page.publiccode.dependsOn.proprietary %}
+                        {% include dependency.html dependency=dep %}</br>
+                      {% endfor %}
+                  {% endif %}
                   {% for dep in page.publiccode.dependsOn.hardware %}
-                  <p class="platforms">
                     {% include dependency.html dependency=dep %}
-                  </p>
                   {% endfor %}
                 </p>
               </div>
