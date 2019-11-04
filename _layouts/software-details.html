@@ -465,7 +465,7 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.publiccode.platforms %}
-                  {{ platform | escape }}<br />
+                      {{ platform | escape }}<br />
                   {% endfor %}
                 </p>
               </div>
@@ -474,20 +474,23 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% if page.publiccode.dependsOn.open.size > 0 %}
-                  <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span>
+                      <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
                       {% for dep in page.publiccode.dependsOn.open %}
-                        {% include dependency.html dependency=dep %}
+                          {% include dependency.html dependency=dep %}<br />
                       {% endfor %}
                   {% endif %}
                   {% if page.publiccode.dependsOn.proprietary.size > 0 %}
-                  <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span>
+                      <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
                       {% for dep in page.publiccode.dependsOn.proprietary %}
+                          {% include dependency.html dependency=dep %}<br />
+                      {% endfor %}
+                  {% endif %}
+                  {% if page.publiccode.dependsOn.hardware.size > 0 %}
+                      <span class="badge badge-pill badge-secondary">Hardware</span><br />
+                      {% for dep in page.publiccode.dependsOn.hardware %}
                         {% include dependency.html dependency=dep %}
                       {% endfor %}
                   {% endif %}
-                  {% for dep in page.publiccode.dependsOn.hardware %}
-                    {% include dependency.html dependency=dep %}
-                  {% endfor %}
                 </p>
               </div>
               <div class="col-md">
