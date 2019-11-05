@@ -14,7 +14,7 @@ build-swagger:
 test:
 	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 local:
-	JEKYLL_NO_GITHUB=true bundle exec jekyll serve
+	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 deploy:
