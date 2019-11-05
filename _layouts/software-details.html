@@ -500,26 +500,30 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% if page.publiccode.it.piattaforme.pagopa == true %}
-                  <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
-                    pagoPA
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.spid == true %}
-                  <a href="/{{ active_lang }}/spid" class="enabling_platforms">
-                    SPID
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.cie == true %}
-                  <a href="/{{ active_lang }}/cie" class="enabling_platforms">
-                    CIE
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.anpr == true %}
-                  <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
-                    ANPR
-                  </a>
-                  {% endif %}
+                  {% if page.publiccode.it.piattaforme == nil or page.publiccode.it.piattaforme.size == 0 %}
+                      Nessuna
+                  {% else %}
+                      {% if page.publiccode.it.piattaforme.pagopa == true %}
+                      <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
+                        pagoPA
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.spid == true %}
+                      <a href="/{{ active_lang }}/spid" class="enabling_platforms">
+                        SPID
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.cie == true %}
+                      <a href="/{{ active_lang }}/cie" class="enabling_platforms">
+                        CIE
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.anpr == true %}
+                      <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
+                        ANPR
+                      </a>
+                      {% endif %}
+                   {% endif %}
                 </p>
               </div>
             </div>
