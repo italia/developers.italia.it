@@ -479,24 +479,24 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
                   {% if page.publiccode.dependsOn == nil or page.publiccode.dependsOn.size == 0 %}
-                    {{ t.software.dependencies_none }}
+                  {{ t.software.dependencies_none }}
                   {% else %}
                       {% if page.publiccode.dependsOn.open.size > 0 %}
                           <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
                           {% for dep in page.publiccode.dependsOn.open %}
-                              {% include dependency.html dependency=dep %}<br />
+                          {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
                       {% endif %}
                       {% if page.publiccode.dependsOn.proprietary.size > 0 %}
                           <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
                           {% for dep in page.publiccode.dependsOn.proprietary %}
-                              {% include dependency.html dependency=dep %}<br />
+                          {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
                       {% endif %}
                       {% if page.publiccode.dependsOn.hardware.size > 0 %}
                           <span class="badge badge-pill badge-secondary">Hardware</span><br />
                           {% for dep in page.publiccode.dependsOn.hardware %}
-                              {% include dependency.html dependency=dep %}<br />
+                          {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
                       {% endif %}
                    {% endif %}
@@ -505,30 +505,75 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% if page.publiccode.it.piattaforme == nil or page.publiccode.it.piattaforme.size == 0 %}
-                      Nessuna
+                  {% assign p = page.publiccode.it.piattaforme %}
+                  {% assign all_false = true %}
+                  {% for key in p %}
+                  {% if key[1] == true %}
+                  {% assign all_false = false %}
+                  {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if all_false %} 
+                      {{ t.software.dependencies_none }}
                   {% else %}
-                      {% if page.publiccode.it.piattaforme.pagopa == true %}
+                      {% if p.pagopa == true %}
                       <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
                         pagoPA
                       </a>
                       {% endif %}
-                      {% if page.publiccode.it.piattaforme.spid == true %}
+                      {% if p.spid == true %}
                       <a href="/{{ active_lang }}/spid" class="enabling_platforms">
                         SPID
                       </a>
                       {% endif %}
-                      {% if page.publiccode.it.piattaforme.cie == true %}
+                      {% if p.cie == true %}
                       <a href="/{{ active_lang }}/cie" class="enabling_platforms">
                         CIE
                       </a>
                       {% endif %}
-                      {% if page.publiccode.it.piattaforme.anpr == true %}
+                      {% if p.anpr == true %}
                       <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
                         ANPR
                       </a>
                       {% endif %}
                    {% endif %}
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">{{ t.software.compliance }}</span>
+                  {% assign p = page.publiccode.it.conforme %}
+                  {% assign all_false = true %}
+                  {% for key in p %}
+                  {% if key[1] == true %}
+                  {% assign all_false = false %}
+                  {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if all_false %} 
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                  {% if p.gdpr == true %}
+                  <a href="{{ t.software.gdpr_url }}" class="enabling_platforms">
+                    GDPR 
+                  </a>
+                  {% endif %}
+                  {% if p.lineeGuidaDesign == true %}
+                  <a href="{{ t.software.design_guidelines_url }}" class="enabling_platforms">
+                    {{ t.software.design_guidelines }} 
+                  </a>
+                  {% endif %}
+                  {% if p.misureMinimeSicurezza == true %}
+                  <a href="{{ t.software.security_guidelines_url }}" class="enabling_platforms">
+                    {{ t.software.security_guidelines }}
+                  </a>
+                  {% endif %}
+                  {% if p.modelloInteroperabilita == true %}
+                  <a href="{{ t.software.interoperability_model_url }}" class="enabling_platforms">
+                    {{ t.software.interoperability_model }} 
+                  </a>
+                  {% endif %}
+                  {% endif %}
                 </p>
               </div>
             </div>
