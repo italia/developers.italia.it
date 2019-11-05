@@ -23,8 +23,12 @@ socials:
 resources:
   - Documentazione:
     - title: Panoramica e segnalazioni
-      icon: file
+      icon: github
       url: https://github.com/italia/dati.gov.it
+      desc: 
+    - title: Profilo DCAT-AP_IT
+      icon: link
+      url: https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html
       desc: 
   - Repository:
     - title: Codice sorgente
@@ -32,6 +36,10 @@ resources:
       url: https://github.com/FormezPA/dkan
       desc: 
   - Linee guida:
+    - title: Piano Triennale per l'informatica nella Pubblica Amministrazione 2019-2021
+      icon: link
+      url: https://pianotriennale-ict.italia.it/
+      desc: 
     - title: Valorizzazione del Patrimonio Informativo Pubblico
       icon: pdf
       url: https://www.dati.gov.it/sites/default/files/LG2016_0.pdf
@@ -46,7 +54,7 @@ resources:
 
 Le ["Linee Guida Nazionali per la Valorizzazione del Patrimonio Informativo Pubblico"](https://www.dati.gov.it/sites/default/files/LG2016_0.pdf) costituiscono le fondamenta per ogni azione di apertura dei dati da parte delle Pubbliche Amministrazioni italiane, mentre le ["Linee guida per i cataloghi dati"](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/) chiariscono gli aspetti implementativi per l'alimentazione e la gestione di cataloghi dati istituzionali secondo il [profilo nazionale di metadatazione DCAT-AP_IT](https://www.dati.gov.it/content/dcat-ap-it-v10-profilo-italiano-dcat-ap-0).
 
-La piattaforma Dati.gov.it è il [catalogo nazionale ufficiale dei dati aperti delle Pubbliche Amministrazioni italiane](https://www.dati.gov.it/) e nasce con l'obiettivo di aggregare in un unico portale potenzialmente tutti i dati aperti esposti dalle varie amministrazioni sia locali che nazionali: al momento più di 25 mila dataset pubblicati da più di 400 istituzioni.
+La piattaforma Dati.gov.it è il [catalogo nazionale ufficiale dei dati aperti delle Pubbliche Amministrazioni italiane](https://www.dati.gov.it/) previsto dal ["Piano Triennale per l'informatica nella Pubblica Amministrazione"](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2019-2021/05_dati-della-pubblica-amministrazione.html#basi-di-dati-di-interesse-nazionale) e nasce con l'obiettivo di aggregare in un unico portale potenzialmente tutti i dati aperti esposti dalle varie amministrazioni sia locali che nazionali: al momento più di 25 mila dataset pubblicati da più di 400 istituzioni.
 
 I metadati raccolti ed esposti dal catalogo nazionale confluiscono nel catalogo del [Portale Europeo dei Dati](https://www.europeandataportal.eu/it/homepage).
 
