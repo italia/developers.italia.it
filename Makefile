@@ -9,6 +9,8 @@ download-data:
 	wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
 	wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+build-bundle:
+	bundle install --path vendor/
 build-swagger:
 	./_buildscripts/build-swagger.sh
 test:
