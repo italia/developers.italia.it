@@ -1408,11 +1408,15 @@ body {
             .main-image {
                 position: relative;
                 overflow: hidden;
-                width: 100%;
-                height: 175px;
-                background-size: cover !important;
-                @include media-breakpoint-up(md) {
+                width: 100%;;
+                @include media-breakpoint-up(md) {    
+                    height: 145px;
+                    object-fit: cover;
                     box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    height: unset;
                 }
             }
             h1 {
