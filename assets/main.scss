@@ -1401,6 +1401,9 @@ body {
     }
     &__listing {
         article {
+            a {
+                width: 100%;
+            }
             figure {
                 background-color: #fff;
                 margin: 0;
@@ -1408,9 +1411,18 @@ body {
                     margin-bottom: 0.2rem;
                 }
             }
-            img {
-                @include media-breakpoint-up(md) {
+            .main-image {
+                position: relative;
+                overflow: hidden;
+                width: 100%;;
+                @include media-breakpoint-up(md) {    
+                    height: 145px;
+                    object-fit: cover;
                     box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    height: unset;
                 }
             }
             h1 {
