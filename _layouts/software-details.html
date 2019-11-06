@@ -26,7 +26,12 @@ layout: default
     <div class="col-md-7">
       <div class="intro-name">
         {% if page.publiccode.logo %}
+        {% if page.publiccode.logo contains 'github' and page.publiccode.logo contains '.svg' %}
+        {% assign logo = page.publiccode.logo | append: '?sanitize=true' %}
+        <img src="{{ logo }}" class="d-inline-block" />
+        {% else %}
         <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
