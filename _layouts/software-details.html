@@ -465,54 +465,65 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.publiccode.platforms %}
-                  {{ platform | escape }}<br />
+                      {{ platform | escape }}<br />
                   {% endfor %}
                 </p>
               </div>
               {% endif %}
-              <div class="col-md">
+              <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
-                  {% for dep in page.publiccode.dependencies.open %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
-                  {% for dep in page.publiccode.dependencies.proprietary %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
-                  {% for dep in page.publiccode.dependencies.hardware %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
+                  {% if page.publiccode.dependsOn == nil or page.publiccode.dependsOn.size == 0 %}
+                    {{ t.software.dependencies_none }}
+                  {% else %}
+                      {% if page.publiccode.dependsOn.open.size > 0 %}
+                          <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.open %}
+                              {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.proprietary.size > 0 %}
+                          <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.proprietary %}
+                              {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.hardware.size > 0 %}
+                          <span class="badge badge-pill badge-secondary">Hardware</span><br />
+                          {% for dep in page.publiccode.dependsOn.hardware %}
+                              {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                   {% endif %}
                 </p>
               </div>
-              <div class="col-md">
+              <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% if page.publiccode.it.piattaforme.pagopa == true %}
-                  <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
-                    pagoPA
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.spid == true %}
-                  <a href="/{{ active_lang }}/spid" class="enabling_platforms">
-                    SPID
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.cie == true %}
-                  <a href="/{{ active_lang }}/cie" class="enabling_platforms">
-                    CIE
-                  </a>
-                  {% endif %}
-                  {% if page.publiccode.it.piattaforme.anpr == true %}
-                  <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
-                    ANPR
-                  </a>
-                  {% endif %}
+                  {% if page.publiccode.it.piattaforme == nil or page.publiccode.it.piattaforme.size == 0 %}
+                      Nessuna
+                  {% else %}
+                      {% if page.publiccode.it.piattaforme.pagopa == true %}
+                      <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
+                        pagoPA
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.spid == true %}
+                      <a href="/{{ active_lang }}/spid" class="enabling_platforms">
+                        SPID
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.cie == true %}
+                      <a href="/{{ active_lang }}/cie" class="enabling_platforms">
+                        CIE
+                      </a>
+                      {% endif %}
+                      {% if page.publiccode.it.piattaforme.anpr == true %}
+                      <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
+                        ANPR
+                      </a>
+                      {% endif %}
+                   {% endif %}
                 </p>
               </div>
             </div>

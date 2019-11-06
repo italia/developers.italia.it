@@ -25,7 +25,7 @@ Una vera e propria apertura, che potrà accelerare il processo di diffusione del
 
 ###### Approfondimenti:
 - [Tutti i numeri di ANPR](https://teamdigitale.governo.it/it/projects/anpr.htm)
-- [La guida per i Comuni ad ANPR](https://anpr.interno.it/guida-anpr)
+- [La guida per i Comuni ad ANPR](https://anpr.interno.it/portale/guida-anpr)
 
 A presto!
 
