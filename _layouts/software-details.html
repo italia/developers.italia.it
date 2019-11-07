@@ -508,7 +508,7 @@ layout: default
                   {% assign p = page.publiccode.it.piattaforme %}
                   {% assign all_false = true %}
                   {% for key in p %}
-                  {% if key[1] == true %}
+                  {% if key.last == true %}
                   {% assign all_false = false %}
                   {% break %}
                   {% endif %}
@@ -545,7 +545,7 @@ layout: default
                   {% assign p = page.publiccode.it.conforme %}
                   {% assign all_false = true %}
                   {% for key in p %}
-                  {% if key[1] == true %}
+                  {% if key.last == true %}
                   {% assign all_false = false %}
                   {% break %}
                   {% endif %}
