@@ -15,21 +15,10 @@ jobs:
       - ELASTICSEARCH_URL: "" # Disable searchyll for test.
     steps:
       - checkout
-      - run: npm install .
-      - run: gem install bundler
-      - run: bundle install
       - run: which rsync || sudo apt-get install rsync # rsync is needed for swagger build, keep it
-      - run: make include-npm-deps
-      - run: ./_buildscripts/build-swagger.sh
-      - run: wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
-      - run: wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-      - run: wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
-      - run: wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
-      - run: wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
-      - run: wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
-      - run: wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
-      - run: bundle exec jekyll build
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
+      - run: gem install bundler
+      - run: make build 
+      - run: make test
 
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
@@ -49,13 +38,7 @@ jobs:
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
-      - run: wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
-      - run: wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-      - run: wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
-      - run: wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
-      - run: wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
-      - run: wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
-      - run: wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+      - run: make download-data
       - run: ./_buildscripts/build-swagger.sh
       - run: bundle exec jekyll build
       - run: cp -r ./github ./_site/
