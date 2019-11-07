@@ -17,7 +17,11 @@ jobs:
       - checkout
       - run: which rsync || sudo apt-get install rsync # rsync is needed for swagger build, keep it
       - run: gem install bundler
-      - run: make build 
+      - run: make build-bundle
+      - run: make include-npm-deps
+      - run: make download-data
+      - run: make build-swagger
+      - run: jekyll-build
       - run: make test
 
   # Deploy to production site
