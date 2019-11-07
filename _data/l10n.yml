@@ -184,7 +184,6 @@ it:
       dependencies_none: Nessuna 
       enabling_platforms: Piattaforme abilitanti
       compliance: Conformità
-      gdpr_url: https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:32016R0679
       design_guidelines: Linee Guida Design 
       design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/
       security_guidelines: Misure Minime Sicurezza 
@@ -405,7 +404,6 @@ en:
       dependencies_none: None 
       enabling_platforms: Enabling platforms
       compliance: Compliance
-      gdpr_url: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=IT
       design_guidelines: Design Guidelines
       design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/       
       security_guidelines: Security Guidelines
