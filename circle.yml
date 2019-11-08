@@ -47,6 +47,7 @@ jobs:
       - run: make build-swagger
       - run: make jekyll-build
       - run: cp -r ./github ./_site/
+      - run: cp -r ./.well-known ./_site/
       - run: make test
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
 
