@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Call Developers Italia, il programma di abilitazione al cloud
-subtitle: Focus sugli strumenti e le strategie cloud nella Community Call del 13 dicembre
+subtitle: Focus sugli strumenti e le strategie cloud nella Community Call del 13 novembre
 date:   2019-11-11 14:00:00 +0100
 tags: developers call cloud
 categories: news
