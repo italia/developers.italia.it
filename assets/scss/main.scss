@@ -1172,8 +1172,8 @@ body {
                 left: 0;
                 content: ' ';
                 background-color: #E5F1FC;
-                z-index: -1;
                 width: 100%;
+                z-index: -1;
                 height: 100%;
                 @include bootstrap.media-breakpoint-up(md) {
                     width: 50vw;
@@ -1414,6 +1414,48 @@ body {
                 text-transform: uppercase;
                 font-weight: 600;
             }
+        }
+    }
+}
+.list-item-sorting {
+    article {
+        a {
+            width: 100%;
+        }
+        figure {
+            background-color: #fff;
+            margin: 0;
+            @include bootstrap.media-breakpoint-up(lg) {
+                margin-bottom: 0.2rem;
+            }
+        }
+        .main-image {
+            position: relative;
+            margin-top: 5px;
+            overflow: hidden;
+            width: 100%;;
+            @include bootstrap.media-breakpoint-up(md) {    
+                height: 145px;
+                object-fit: cover;
+                box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+            }
+
+            @include bootstrap.media-breakpoint-down(sm) {
+                height: unset;
+            }
+        }
+        h1 {
+            color: #333333;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            letter-spacing: 0;
+        }
+        h3 {
+            color: #00264D;
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-top: 1rem;
+            letter-spacing: 0;
         }
     }
 }

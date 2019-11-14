@@ -985,10 +985,18 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
     localisedName = description.localisedName;
   }
 
+  var shortDescription = '';
+  if(description.shortDescription) {
+    shortDescription = decodeHtmlEntity(description.shortDescription).length >= 100 ? 
+      decodeHtmlEntity(description.shortDescription).substr(0,100).concat('...') :
+      decodeHtmlEntity(description.shortDescription);
+  }
+
   var language = this.config['language'];
   var data = {
     'name': localisedName,
     'localisedName': decodeHtmlEntity(localisedName),
+    'shortDescription': shortDescription,
     'language': this.config['language'],
     'screenshot': screenshot,
     'readMore': this.readMore[language],
