@@ -11,3 +11,4 @@ swagger/.cache
 swagger/dist
 yarn-error.log
 assets/vendor
+*.swp

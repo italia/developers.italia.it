@@ -898,11 +898,18 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var screenshot;
   if (Array.isArray(description.screenshots) && description.screenshots.length > 0) {
     screenshot = description.screenshots[0];
+  } else if (software.publiccode.logo) {
+    screenshot = software.publiccode.logo;
   } else if (category_id == 'public-sw') {
     screenshot = '/assets/images/cover_softwareriuso.png';
   } else {
     screenshot = '/assets/images/cover_software_opensource.png';
   }
+
+  // workaround for SVG logo/screens in Github #461
+  if((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+    screenshot += '?sanitize=true';
+
 
   var localisedName = software.publiccode.name;
   if (description.localisedName) {
