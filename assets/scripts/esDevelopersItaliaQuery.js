@@ -46,17 +46,17 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     'sortMobileTitle': {
       'it': {
         'relevance': 'Rilevanza',
-        'az': 'A/Z',
+        'az': 'Alfabetico',
         'za': 'Z/A',
-        'popularity': 'Popolarità',
-        'emerging': 'Emergenti'
+        'vitality': 'Più attivi',
+        'releasedate': 'Più recenti'
       },
       'en': {
         'relevance': 'Relevance',
-        'az': 'A/Z',
+        'az': 'Alphabetical',
         'za': 'Z/A',
-        'popularity': 'Popularity',
-        'emerging': 'Emerging'
+        'vitality': 'Most active',
+        'releasedate': 'Most recent'
       }
     },
     // css selector
@@ -149,6 +149,8 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function () {
       $('#' + id + ' input[value="' + value[i] + '"]').prop('checked', true);
       // type query filter for mobile.
       $('#pills-types input[value="' + value[i] + '"]').prop('checked', true);
+      // filtering sort criteria for selected type
+      filterSortBy(object, true, value[i]);
     }
   }
 
@@ -173,6 +175,7 @@ esDevelopersItaliaManager.prototype.popupateFiltersFromUrl = function () {
   if (typeof sort === 'undefined') {
     sort = 'relevance';
   }
+
   $(this.config['sortSelector']).val(sort);
   $(this.config['sortMobileSelector']).each(function (i, e) {
     if ($(e).attr('sort') === sort) {
@@ -236,10 +239,26 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function () {
   history.pushState({}, '', window.location.pathname + '?' + queryString.join('&'));
 };
 
+// Filtering sortBy select based on selected content typology 
+function filterSortBy(object, checked, element) {
+  if(element == "platforms" && checked) {
+    // when changing type resetting sortBy to common one
+    $(object.config['sortSelector']).val('relevance');
+    // desktop hiding elements
+    $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').hide();
+    // mobile higing elements
+    $(object.config['sortMobileSelector'] + '[sort="vitality"],[sort="releasedate"]').hide();
+  } else {
+    $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').show();
+    $(object.config['sortMobileSelector'] + '[sort="vitality"],[sort="releasedate"]').show();
+  }
+}
+
 esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
   var object = this;
 
   $('#list-type input[type="checkbox"]').on('change', function (event) {
+    filterSortBy(object, event.target.checked, event.target.value);
     if (event.target.checked) {
       $('#list-type input[type="checkbox"]:checked').each(function (i, e) {
         if (event.target.value !== e.value) {
@@ -278,12 +297,16 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
       object.params['type'].push(object.queryType.slice(0).pop());
     }
 
+    // // when changing type resetting sortBy to common one
+    // $(object.config['sortSelector']).val('relevance');
+
     // Execute Current query.
     object.executeCurrentQuery();
   });
 
   // TypeQuery Mobile only one selected.
   $('#pills-types input[type="checkbox"]').on('change', function (event) {
+    filterSortBy(object, event.target.checked, event.target.value);
     if (event.target.checked) {
       $('#pills-types input[type="checkbox"]:checked').each(function (i, e) {
         if (event.target.value !== e.value) {
@@ -508,12 +531,12 @@ function esDevelopersItaliaQuery(config, params) {
     'emptySerp': {
       'it': {
         'title': 'Nessun risultato trovato',
-        'message': 'La parola "{keyword}" non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
+        'message': 'La ricerca non ha prodotto nessun risultato. Prova un\'altra chiave di ricerca.',
         'cta': 'Prova una nuova ricerca'
       },
       'en': {
         'title': 'No results found',
-        'message': 'The word "{keyword}" did not find any results. Try another search key.',
+        'message': 'The search did not match any results. Try searching other terms.',
         'cta': 'Try a new search'
       }
     },
@@ -604,15 +627,15 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function () {
       });
       break;
 
-    case 'popularity':
+    case 'vitality':
       sort.push({
-        'vitality-score': { 'order': 'desc' }
+        'vitalityScore': { 'order': 'desc' }
       });
       break;
 
-    case 'emerging':
+    case 'releasedate':
       sort.push({
-        'releaseDate': { 'order': 'desc' }
+        'publiccode.releaseDate': { 'order': 'desc' }
       });
       break;
 
@@ -635,7 +658,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   // $('.intro').html('');
 
   if (response.hits.total === 0) {
-    var keyword = this.params['keyword'].slice(0).pop();
+    var keyword = decodeURI(this.params['keyword'].slice(0).pop());
     var language = this.config['language'];
 
     $('.intro').html(this.templates.empty({
@@ -643,6 +666,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
       'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
       'cta': this.config['emptySerp'][language].cta
     }));
+    this.renderPager(0);
     return;
   }
 
@@ -782,11 +806,11 @@ esDevelopersItaliaQuery.prototype.renderErrorMessage = function () {
 };
 
 esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
-  var keyword = this.params['keyword'].slice(0).pop();
+  var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
   var $intro = $('.intro > h1');
 
-  if (typeof keyword !== 'undefined') {
+  if (keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
   }
@@ -874,11 +898,18 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var screenshot;
   if (Array.isArray(description.screenshots) && description.screenshots.length > 0) {
     screenshot = description.screenshots[0];
+  } else if (software.publiccode.logo) {
+    screenshot = software.publiccode.logo;
   } else if (category_id == 'public-sw') {
     screenshot = '/assets/images/cover_softwareriuso.png';
   } else {
     screenshot = '/assets/images/cover_software_opensource.png';
   }
+
+  // workaround for SVG logo/screens in Github #461
+  if((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+    screenshot += '?sanitize=true';
+
 
   var localisedName = software.publiccode.name;
   if (description.localisedName) {
