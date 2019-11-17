@@ -90,7 +90,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     multipart-post (2.1.1)
     netrc (0.11.0)
-    nokogiri (1.10.4)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     nuggets (1.6.0)
     octokit (4.14.0)
