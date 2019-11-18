@@ -183,6 +183,13 @@ it:
       dependencies_optional: Opzionale 
       dependencies_none: Nessuna 
       enabling_platforms: Piattaforme abilitanti
+      compliance: Conformità
+      design_guidelines: Linee Guida Design 
+      design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/
+      security_guidelines: Misure Minime Sicurezza 
+      security_guidelines_url: https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict
+      interoperability_model: Modello Interoperabilità
+      interoperability_model_url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html
       services_on: Servizi su
       until: fino al
       extende_description: Descrizione estesa
@@ -396,6 +403,13 @@ en:
       dependencies_optional: Optional 
       dependencies_none: None 
       enabling_platforms: Enabling platforms
+      compliance: Compliance
+      design_guidelines: Design Guidelines
+      design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/       
+      security_guidelines: Security Guidelines
+      security_guidelines_url: https://www.agid.gov.it/index.php/en/security/Minimum-ICT-security-measures-for-public-administrations 
+      interoperability_model: Interoperability Model
+      interoperability_model_url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/ 
       services_on: Services on
       until: until the
       extende_description: Extended description
