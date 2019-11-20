@@ -4,7 +4,7 @@
   <div class="Header-banner primary-bg-a7 position-relative">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
       <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
-        <div class="d-block">
+        <div class="d-flex align-items-center">
           <a href="{{ site.owner_link }}" class="py-2 d-inline-block">
             <span class="d-inline-block d-md-none d-lg-none white-color">
               {{ site.owner_short }}
@@ -27,8 +27,8 @@
           </a>
         </div>
 
-        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-block'
-           liclass='list-inline-item m-0 py-2 px-3'  %}
+        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex'
+           liclass='list-inline-item m-0 py-2 px-3 d-flex align-items-center'  %}
 
         {% include lang_switch.html %}
     </div>
