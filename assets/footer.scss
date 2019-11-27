@@ -3,8 +3,11 @@
     color: #fff;
     &-team {
       img {
-        height: 3rem;
+        height: 2.5rem;
         margin-right: 0.5rem;
+        @include media-breakpoint-up(lg) {
+          height: 3rem;
+        }
       }
       &-text {
         width: 10rem;
@@ -14,7 +17,10 @@
 
     &-collaboration {
       img {
-        height: 3rem;
+        height: 2.5rem;
+        @include media-breakpoint-up(lg) {
+          height: 3rem;
+        }
       }
     }
     &-collaboration-with {
