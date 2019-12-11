@@ -38,6 +38,6 @@
   repos:
     - "https://github.com/FastReports/FastReport"
     
- - name: "WikiToLearn"
+- name: "WikiToLearn"
   repos:
     - "https://github.com/WikiToLearn/WikiToLearn"
