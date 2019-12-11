@@ -896,7 +896,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var description = this.languageFallback(software.publiccode.description);
 
   var screenshot;
-  if (Array.isArray(description.screenshots) && description.screenshots.length > 0) {
+  if (description && Array.isArray(description.screenshots) && description.screenshots.length > 0) {
     screenshot = description.screenshots[0];
   } else if (software.publiccode.logo) {
     screenshot = software.publiccode.logo;
@@ -912,7 +912,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
 
 
   var localisedName = software.publiccode.name;
-  if (description.localisedName) {
+  if (description && description.localisedName) {
     localisedName = description.localisedName;
   }
 
