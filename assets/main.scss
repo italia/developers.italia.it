@@ -222,18 +222,24 @@ body {
             font-size: 0.8rem;
         }
     }
-    &-lang_switch.show {
-        @include media-breakpoint-down(md) {
-            &:before {
-                content: '';
-                width: 100vw;
-                height: 100%;
-                position: fixed;
-                top: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.5);
-                z-index: 999;
+    &-lang_switch {
+        &.show {
+            @include media-breakpoint-down(md) {
+                &:before {
+                    content: '';
+                    width: 100vw;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 999;
+                }
             }
+        }
+
+        #languagesDropButton .icon {
+            line-height: 32px;
         }
     }
     &-external-wrapper {
@@ -260,7 +266,7 @@ body {
             }
         }
         .label {
-            display: none;
+            display: none !important;
         }
     }
     &-external--mobile {
@@ -1405,6 +1411,9 @@ body {
     }
     &__listing {
         article {
+            a {
+                width: 100%;
+            }
             figure {
                 background-color: #fff;
                 margin: 0;
@@ -1412,9 +1421,18 @@ body {
                     margin-bottom: 0.2rem;
                 }
             }
-            img {
-                @include media-breakpoint-up(md) {
+            .main-image {
+                position: relative;
+                overflow: hidden;
+                width: 100%;;
+                @include media-breakpoint-up(md) {    
+                    height: 145px;
+                    object-fit: cover;
                     box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
+                }
+
+                @include media-breakpoint-down(sm) {
+                    height: unset;
                 }
             }
             h1 {
@@ -1769,7 +1787,6 @@ body {
 
 .badge-pill--sup {
     @extend .align-top;
-    background-color: $primary;
     font-size: 0.8125rem;
     font-weight: 300;
 }

@@ -36,7 +36,7 @@ registry and the services that integrate with it on the national territory.
 
 ###### Insights: 
 - [All the ANPR numbers](https://teamdigitale.governo.it/en/projects/anpr.htm)
-- [Municipality guide to ANPR](https://anpr.interno.it/guida-anpr)
+- [Municipality guide to ANPR](https://anpr.interno.it/portale/guida-anpr)
 
 See you soon!
 
