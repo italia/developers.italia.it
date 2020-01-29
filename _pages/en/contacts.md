@@ -7,7 +7,7 @@ ref:
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /en/who-we-are
-include-developers-newsletter: true
+include-developers-newsletter: false
 pair-blocks:
     - title: "Work with us"
       text: "You may find the open positions (when they are available) in the
