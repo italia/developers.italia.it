@@ -30,12 +30,12 @@ resources:
   - Marketplace:
     - title: Cloud Marketplace
       icon: link
-      url: https://cloud.italia.it/marketplace/supplier/market/index.html
+      url: https://cloud.italia.it/marketplace/
       desc: Il catalogo dei servizi Cloud per la PA qualificati da AgID. 
-    - title: Ottenere le qualificazioni Cloud
+    - title: Come ottenere le qualificazioni Cloud
       icon: link
-      url: https://cloud.italia.it/marketplace/supplier/landing/landing_page.html
-      desc: Istruzioni e punto d'accesso alle procedure di qualificazione dei servizi cloud. 
+      url: https://cloud.italia.it/marketplace/info
+      desc: Istruzioni e puntatori per le procedure di qualificazione dei servizi cloud. 
     - title: Servizi cloud SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
