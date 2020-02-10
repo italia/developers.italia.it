@@ -41,3 +41,8 @@
 - name: "WikiToLearn"
   repos:
     - "https://github.com/WikiToLearn/WikiToLearn"
+    
+- name "Opencontent"
+  repos:
+    - "https://gitlab.com/opencontent/stanzadelcittadino"
+    - "https://gitlab.com/opencontent/openagenda-translate"
