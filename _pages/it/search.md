@@ -1,5 +1,5 @@
 ---
-title: Hai cercato
+title: Catalogo
 lang: it
 ref:
   val: search
