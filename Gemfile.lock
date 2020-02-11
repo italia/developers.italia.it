@@ -59,7 +59,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate-v2 (2.0.0)
       jekyll (~> 3.0)
-    jekyll-redirect-from (0.15.0)
+    jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
