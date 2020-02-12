@@ -526,7 +526,7 @@ function esDevelopersItaliaQuery(config, params) {
     },
     'intro_empty': {
       'it': 'Catalogo',
-      'en': 'Catalog'
+      'en': 'Catalogue'
     },
     'autocomplete_all_text': {
       'it': 'Cerca in tutto il sito',
