@@ -524,6 +524,10 @@ function esDevelopersItaliaQuery(config, params) {
       'it': 'Hai cercato',
       'en': 'You have searched for'
     },
+    'intro_empty': {
+      'it': 'Catalogo',
+      'en': 'Catalogue'
+    },
     'autocomplete_all_text': {
       'it': 'Cerca in tutto il sito',
       'en': 'Search all over the site'
@@ -809,10 +813,13 @@ esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
   var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
   var $intro = $('.intro > h1');
-
+  
   if (keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
+  } else {
+    $intro.text('');
+    $intro.html(this.config['intro_empty'][language]);
   }
 };
 
