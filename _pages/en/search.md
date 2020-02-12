@@ -1,5 +1,5 @@
 ---
-title: Catalog
+title: Catalogue
 lang: en
 ref:
   val: search
