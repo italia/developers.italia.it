@@ -56,7 +56,7 @@ class Hero extends Component {
     return (
       <section className="swagger--hero">
         <div className="row">
-          <div className="col-7">
+          <div className="col-lg-7">
             <div className="mr-5">
               <h1 className="display-1 mb-4">
                 {title}
@@ -140,7 +140,7 @@ class Hero extends Component {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-lg">
             {(() => {
               if (project) {
                 const { id, title, description } = reference;
