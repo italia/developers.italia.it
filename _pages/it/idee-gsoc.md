@@ -1,11 +1,13 @@
 ---
-title: Lista di idee - Google Summer of Code 
-subtitle: Vuoi partecipare al programma Google Summer of Code? Qui di seguito trovi alcune idee
-lang: it 
-layout: internal-long
+title: "Google Summer of Code: informazioni per gli studenti"
+subtitle: Vuoi partecipare al programma? Qui di seguito trovi alcune idee
+lang: it
+ref:
+  en: /en/gsoc-ideas
+layout: internal-simple
+image: /assets/images/comelouso-temp-img.jpg
 ---
 
-# Google Summer of Code: informazioni per gli studenti 
 Innanzitutto, benvenuti!
 
 Le idee che seguono sono state presentate dai nostri sviluppatori e utenti
