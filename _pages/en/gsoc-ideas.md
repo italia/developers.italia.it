@@ -3,7 +3,7 @@ title: "Google Summer of Code: information for students"
 subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
 lang: en 
 ref:
-  en: /it/idee-gsoc
+  it: /it/idee-gsoc
 layout: internal-simple
 image: /assets/images/comelouso-temp-img.jpg
 ---
