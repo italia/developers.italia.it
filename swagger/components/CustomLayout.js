@@ -54,7 +54,7 @@ class CustomLayout extends React.Component {
           <section className="custom-layout--swagger--description">
             <div className="container">
               <div className="position-relative rounded shadow-lg bg-white p-5 custom-layout--description">
-                <div className="p-5">
+                <div className="p-0">
                   <Description
                     specSelectors={specSelectors}
                     getComponent={getComponent}
