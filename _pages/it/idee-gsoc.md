@@ -10,7 +10,7 @@ image: /assets/images/comelouso-temp-img.jpg
 
 Innanzitutto, benvenuti!
 
-La partecipazione al [Google Summer of Code](summerofcode.withgoogle.com/)
+La partecipazione al [Google Summer of Code](https://summerofcode.withgoogle.com/)
 prevede la presentazione di proposte progettuali, da parte degli studenti
 interessati a partecipare, inerenti i progetti sviluppati dall'organizzazione
 Developers Italia. Queste proposte verranno valutate sia dagli organizzatori
