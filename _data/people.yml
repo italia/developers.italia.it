@@ -138,7 +138,7 @@ biancio:
   name: Andrea Biancini
   pic: /assets/images/biancio.png
   role: Team Digitale
-  status: admin
+  status: contributor 
   contacts:
     github:
       name: github
