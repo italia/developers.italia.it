@@ -241,7 +241,7 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function () {
 
 // Filtering sortBy select based on selected content typology 
 function filterSortBy(object, checked, element) {
-  if(element == "platforms" && checked) {
+  if (element == "platforms" && checked) {
     // when changing type resetting sortBy to common one
     $(object.config['sortSelector']).val('relevance');
     // desktop hiding elements
@@ -661,8 +661,8 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   // enable-disable sort selectbox
   // $('.intro').html('');
 
+  var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   if (response.hits.total === 0) {
-    var keyword = decodeURI(this.params['keyword'].slice(0).pop());
     var language = this.config['language'];
 
     $('.intro').html(this.templates.empty({
@@ -672,6 +672,13 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
     }));
     this.renderPager(0);
     return;
+  } else if (keyword !== 'undefined') {
+    var language = this.config['language'];
+    var $intro = $('.intro');
+    $intro.html('');
+    $intro.html('<h1>' +
+      this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"' +
+      '</h1>');
   }
 
   this.renderResultCount(response.hits.total);
@@ -812,8 +819,9 @@ esDevelopersItaliaQuery.prototype.renderErrorMessage = function () {
 esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
   var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
+  $('.intro').html('<h1></h1>');
   var $intro = $('.intro > h1');
-  
+
   if (keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
@@ -914,7 +922,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   }
 
   // workaround for SVG logo/screens in Github #461
-  if((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+  if ((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
     screenshot += '?sanitize=true';
 
 
@@ -1413,7 +1421,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
   path = '/' + language + '/pa/' + administration["it-riuso-codiceIPA"]
-  
+
   return {
     'name': name,
     'language': language,
