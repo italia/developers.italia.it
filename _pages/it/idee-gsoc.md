@@ -10,12 +10,19 @@ image: /assets/images/comelouso-temp-img.jpg
 
 Innanzitutto, benvenuti!
 
-Le idee che seguono sono state presentate dai nostri sviluppatori e utenti
-e sono pensate per essere sviluppate all'interno del progetto *Google Summer of
-Code 2020 (GSoC)*. A volte
-potrebbero essere vaghe o incomplete. Se vuoi sottomettere una proposta basata
-su queste idee ti consigliamo di contattare direttamente il responsabile del
-progetto per conoscerne i dettagli e capire come procedere. 
+La partecipazione al [Google Summer of Code](summerofcode.withgoogle.com/)
+prevede la presentazione di proposte progettuali, da parte degli studenti
+interessati a partecipare, inerenti i progetti sviluppati dall'organizzazione
+Developers Italia. Queste proposte verranno valutate sia dagli organizzatori
+che dai responsabili di Developers Italia per verificarne l'adeguatezza e la
+fattibilità nel periodo previsto dal programma.  Per facilitare questa fase,
+alcuni sviluppatori e membri della community di Developers Italia hanno messo
+a disposizione alcune idee consultabili nella tabella sottostante. 
+
+**Nota bene**: a volte le idee presenti in questa lista potrebbero essere vaghe
+o incomplete. Se vuoi sottomettere una proposta basata su queste idee ti
+consigliamo di contattare direttamente il responsabile del progetto per
+conoscerne i dettagli e capire come procedere. 
 
 La selezione per l'iniziativa *Google Summer of Code* è molto competitiva.
 Normalmente gli studenti accettati hanno studiato a fondo le tecnologie che
@@ -36,15 +43,14 @@ eventuali puntatori a risorse.
 
 ## Idee 
 
-Le proposte ben preparate e presentate da studenti capaci hanno molte possibilità
+Le proposte ben preparate e presentate da studenti volenterosi hanno molte possibilità
 di essere selezionate. Saranno considerate proposte per tutti i livelli di
-competenza, da semplici a molto complesse. Presentati e ti aiuteremo
+difficoltà, da semplici a molto complesse. Presentati e ti aiuteremo
 a costruire una proposta adeguata. 
 
 Ricorda che le descrizioni dei progetti che trovi qui sotto sono solo idee
 iniziali. Per questo motivo saranno da espandere in dettaglio e da
-personalizzare in base
-alla tua esperienza e ai tuoi interessi. 
+personalizzare in base alla tua esperienza e ai tuoi interessi. 
 
 **Note per la community**.
 Ogni progetto nella lista delle idee deve includere:
@@ -55,7 +61,7 @@ Ogni progetto nella lista delle idee deve includere:
 5. possibile mentor.
 
 E, se possibile, un'indicazione del livello di difficoltà del progetto
-(*facile, medio, difficile*). 
+(*facile, media, difficile*). 
 
 
 <table id="issues_table" class="table table-striped table-bordered" cellspacing="0" width="100%" role="grid" style="width: 100%;">
@@ -129,7 +135,8 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
                 <br />
                 <b>Competenze richieste:</b>
                 <ul>
-                    <li> Golang, JS, Python, Java, C depending on the target platform</li>
+                    <li> Golang, JS, Python, Java, C a seconda della
+                    piattaforma</li>
                     <li> Basic Linux knowledge</li>
                     <li> Docker e tecnologie di CI/CD</li>
                 </ul>
@@ -140,16 +147,16 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
         <tr role="row" class="odd" id="api2">
             <td tabindex="0">API</td>
             <td>
-                <b>Implementazione delle configurazioni in alcuni API Gateway</b><br /> 
+                <b>Configurazione di alcuni API Gateway</b><br /> 
                 Questo progetto mira ad impostare degli API gateway in grado di
                 supportare un set di caratteristiche chiave per
                 l'interoperabilità quali:
                 <ul>
-                    <li> esposizione di API tramite specifiche OpenAPI3 ;</li>
-                    <li> returning RateLimit header fields;</li>
+                    <li> esposizione di API tramite specifiche OpenAPI3;</li>
+                    <li> ritorno di RateLimit header fields;</li>
                     <li> ritorno di errori in modo conforme all'RFC7807 (Problem Details for HTTP APIs).</li>
                 </ul>
-                Gli studenti studeranno, installeranno e configureranno degli
+                Gli studenti studieranno, installeranno e configureranno degli
                 API gateway e reverse proxy come Kong, 3scale, Nginx, WSO2
                 assicurandosi che le feature sopra elencate siano
                 presenti e funzionanti. 
@@ -166,7 +173,7 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
                 <b>Risultati attesi:</b> 
                 Il risultato atteso è un docker-compose o un helm chart in
                 grado di fornire un setup ridondato di un'infrastruttura
-                gateway API che serve a esporre API descritte da una specifica
+                gateway per esporre API descritte da una specifica
                 OAS3.
                 <br />
                 <b>Competenze richieste:</b>
@@ -184,12 +191,12 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
             <td tabindex="0">Design</td>
             <td>
                 <b>Design system kit per React</b><br /> 
-                Completamento del <a href="https://github.com/italia/design-react-kit/">Design Kit React di Designers Italia </a> tramite l'aggiornamento delle sue dipendenze e l'aggiunta o la correzione di componenti ad oggi mancanti. Aggiornamento dello <a href="https://storybook.js.org/">Storybook</a> e miglioramento della documentazione in modo da rendere l'esperienza più semplice per l'utente. Su un repository separato, implementazione di un template <a href="https://www.gatsbyjs.org/">Gatsby</a> per facilitare l'adozione del kit all'interno delle pubbliche amministrazioni ed aumentare il suo riuso..
+                Completamento del <a href="https://github.com/italia/design-react-kit/">Design Kit React di Designers Italia </a> tramite l'aggiornamento delle sue dipendenze e l'aggiunta o la correzione di componenti ad oggi mancanti. Inoltre, sarà necessario aggiornare lo <a href="https://storybook.js.org/">Storybook</a> e migliorare la documentazione in modo da rendere l'esperienza più semplice per l'utente. Su un repository separato, dovrà essere implementato un template <a href="https://www.gatsbyjs.org/">Gatsby</a> per facilitare l'adozione del kit all'interno delle pubbliche amministrazioni ed aumentarne il riuso.
                 <br />
                 <b>Mentor:</b> Designers o sviluppatori del team di Designers Italia.
                 <br />
                 <b>Risultati attesi:</b> 
-                Una versione stabile del <a href="https://github.com/italia/design-react-kit/">Design React Kit</a> che contenga la maggior parte dei componenti di  the Bootstrap Italia, e un template Gatsby facile da usare e conforme con le regole sull'accessibilità.
+                Una versione stabile del <a href="https://github.com/italia/design-react-kit/">Design React Kit</a> che contenga la maggior parte dei componenti di Bootstrap Italia e un template Gatsby facile da usare e conforme con le regole sull'accessibilità.
                 Questo progetto può essere usato come solida base di partenza:
                 <ul>
                     <li> <a href="https://github.com/dej611/gatsby-bootstrap-italia-starter">Gatsby Bootstrap Italia Starter</a> (dettagli aggiuntivi possono essere consultati all'interno del thread su Forum Italia).</li>
@@ -208,7 +215,7 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
             <td tabindex="0">Design</td>
             <td>
                 <b>Un tema Wordpress per i comuni</b><br /> 
-                Creare un tema Wordpress per i comuni basato su design system italiano. 
+                Creare un tema Wordpress per i comuni basato sul design system italiano. 
                 Il codice sarà costruito basandosi su <a
                 href="https://italia.github.io/bootstrap-italia/">Bootstrap
                 Italia</a> in modo da garantire l'adesione ai <a
@@ -216,7 +223,7 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
                 HTML</a> che sono già forniti da Designers Italia. I content
                 type e la tassonomia dovranno essere consistenti con le linee
                 guida presenti all'interno del documento sull'<a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">
-                architettura dell'informazione </a>.
+                architettura dell'informazione</a>.
                 La community di Designers Italia ha già creato due temi Wordpress:
                 <ul>
                     <li> <a href="https://github.com/italia/design-wordpress-theme">https://github.com/italia/design-wordpress-theme</a></li>
@@ -228,7 +235,7 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
                 degli aggiornamenti. Potrebbero comunque servire come punto di
                 partenza per il progetto qui descritto. 
                 <br />
-                <b>Mentor:</b> Designers o sviluppatori del team di Designers Italia team.
+                <b>Mentor:</b> Designers o sviluppatori del team di Designers Italia.
                 <br />
                 <b>Risultati attesi:</b> 
                 Un tema Wordpress funzionante per i comuni basato sul design
@@ -253,19 +260,20 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
             <td tabindex="0">Design</td>
             <td>
                 <b>Un tema Drupal per i comuni</b><br /> 
-                Creare un tema Drupal per i comuni basato su design system italiano. 
+                Creare un tema Drupal per i comuni basato sul design system italiano. 
                 Il codice sarà costruito basandosi su <a
                 href="https://italia.github.io/bootstrap-italia/">Bootstrap
                 Italia</a> in modo da garantire l'adesione ai <a
                 href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html">template
                 HTML</a> che sono già forniti da Designers Italia. I content
                 type e la tassonomia dovranno essere consistenti con le linee
-                guida presenti all'interno del documento sull'<a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">
-                architettura dell'informazione </a>.
+                guida presenti all'interno del documento sull'<a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">architettura dell'informazione</a>.
  
                 Esiste già un tema Drupal per siti web general purpose che può
                 servire come punto di partenza per il tema dei comuni:
-                <a href="https://www.drupal.org/project/bootstrap_italia">https://www.drupal.org/project/bootstrap_italia</a>.
+                <ul>
+                <li><a href="https://www.drupal.org/project/bootstrap_italia">https://www.drupal.org/project/bootstrap_italia</a>.</li>
+                </ul>
                 <br />
                 <b>Mentor:</b> Designers o sviluppatori del team di Designers Italia.
                 <br />
@@ -290,11 +298,11 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
         <tr role="row" class="even" id="general">
             <td tabindex="0">Generale</td>
             <td>
-                <b>La tua idea!!</b><br /> Qualche che ti piacerebbe molto
+                <b>La tua idea!!</b><br /> Qualcosa che ti piacerebbe molto
                 fare!
-                <br />Hai un'idea brillante che vorresti sviluppare insieme
-                a Developers Italia ma non è presente in questa lista?
-                Nessun problema, ci piace!
+                <br />Hai un'idea brillante da sviluppare insieme
+                a Developers Italia ma che non è presente in questa lista?
+                Nessun problema!
                 Per cortesia, però, facci un favore:
                 mettiti in contatto con un mentor al più presto per assicurarti
                 che il progetto sia realizzabile e compreso nello scopo di
