@@ -252,6 +252,8 @@ function filterSortBy(object, checked, element) {
     $(object.config['sortSelector']).children('option[value="vitality"],[value="releasedate"]').show();
     $(object.config['sortMobileSelector'] + '[sort="vitality"],[sort="releasedate"]').show();
   }
+  // reset url page in params.
+  object.params['page'].pop();
 }
 
 esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
