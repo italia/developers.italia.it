@@ -28,7 +28,7 @@ gem "rest-client", "~> 2.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.12.1"
+   gem "jekyll-feed", "~> 0.13.0"
    gem 'jekyll-seo-tag'
    gem 'jekyll-redirect-from'
    gem 'jekyll-paginate-v2'
@@ -43,4 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'searchyll', :git => 'https://github.com/italia/developers-italia-searchyll'
 
-gem "octokit", "~> 4.0"
+gem "octokit", "~> 4.16"

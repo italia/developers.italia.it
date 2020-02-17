@@ -67,7 +67,7 @@ resources:
 
 ## Intro
 
-**Do you want to stay up-to-date? Subscribe to the ANPR [newsletter](#newsletter).**
+<!-- **Do you want to stay up-to-date? Subscribe to the ANPR [newsletter](#newsletter).** -->
 
 ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire
 national territory (in evey municipality), Italy will have finally a single centralised registry

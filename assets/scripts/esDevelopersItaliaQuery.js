@@ -241,7 +241,7 @@ esDevelopersItaliaManager.prototype.updateSearchUrl = function () {
 
 // Filtering sortBy select based on selected content typology 
 function filterSortBy(object, checked, element) {
-  if(element == "platforms" && checked) {
+  if (element == "platforms" && checked) {
     // when changing type resetting sortBy to common one
     $(object.config['sortSelector']).val('relevance');
     // desktop hiding elements
@@ -524,6 +524,10 @@ function esDevelopersItaliaQuery(config, params) {
       'it': 'Hai cercato',
       'en': 'You have searched for'
     },
+    'intro_empty': {
+      'it': 'Catalogo',
+      'en': 'Catalogue'
+    },
     'autocomplete_all_text': {
       'it': 'Cerca in tutto il sito',
       'en': 'Search all over the site'
@@ -657,19 +661,39 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   // enable-disable sort selectbox
   // $('.intro').html('');
 
+  var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   if (response.hits.total === 0) {
-    var keyword = decodeURI(this.params['keyword'].slice(0).pop());
     var language = this.config['language'];
+    
+    // hide intro
+    var $intro = $('.intro > h1');
+    $intro.html('');
 
-    $('.intro').html(this.templates.empty({
+    // hide sort by and results hits
+    $('.intro > .abstract-sorting').removeClass("d-md-flex");
+    $('.intro > .abstract-sorting').removeClass("d-none");
+    $('.intro > .abstract-sorting').hide();
+
+    // recreate empty template
+    $('.intro > .intro-empty').html(this.templates.empty({
       'title': this.config['emptySerp'][language].title,
       'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
       'cta': this.config['emptySerp'][language].cta
     }));
     this.renderPager(0);
     return;
+  } else if (keyword !== 'undefined') {
+    var language = this.config['language'];
+    var $intro = $('.intro > h1');
+    // $intro.html('');
+    $intro.html(
+      // '<h1>' +
+      this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"' 
+      // + '</h1>'
+      );
   }
 
+  $('.intro > .abstract-sorting').show();
   this.renderResultCount(response.hits.total);
   var html = '';
   for (var i = 0; i < response.hits.hits.length; i++) {
@@ -809,10 +833,18 @@ esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
   var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
   var $intro = $('.intro > h1');
+  $intro.html('');
+
+  // removing empty div element from dom
+  var $introEmpty = $('.intro > .intro-empty');
+  $introEmpty.html('');
 
   if (keyword !== 'undefined') {
     $intro.text('');
     $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
+  } else {
+    $intro.text('');
+    $intro.html(this.config['intro_empty'][language]);
   }
 };
 
@@ -907,7 +939,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   }
 
   // workaround for SVG logo/screens in Github #461
-  if((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+  if ((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
     screenshot += '?sanitize=true';
 
 
@@ -1406,7 +1438,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataAdministration
     name = name.replace(new RegExp(value[i], 'ig'), '<b>$&</b>');
   }
   path = '/' + language + '/pa/' + administration["it-riuso-codiceIPA"]
-  
+
   return {
     'name': name,
     'language': language,

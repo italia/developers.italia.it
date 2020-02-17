@@ -7,7 +7,7 @@ ref:
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /it/chi-siamo
-include-developers-newsletter: true
+include-developers-newsletter: false
 pair-blocks:
     - title: "Lavora con noi"
       text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://teamdigitale.governo.it/it/36-content.htm) del Team per la Trasformazione Digitale."
@@ -15,7 +15,7 @@ pair-blocks:
       buttons:
         - label: Posizioni aperte
           class: btn btn-primary
-          url: 'https://teamdigitale.governo.it/it/36-content.htm'
+          url: 'https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/'
     - title: "Invia un feedback"
       text: "Vuoi proporre idee oppure dare un feedback sulla community? C'è un'apposita sezione nel [forum](https://forum.italia.it/c/community-feedback).<br>
 E se vuoi segnalare un bug su questo sito, puoi aprire una issue su [GitHub](https://github.com/italia/developers.italia.it)."
