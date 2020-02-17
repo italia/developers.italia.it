@@ -664,8 +664,18 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   if (response.hits.total === 0) {
     var language = this.config['language'];
+    
+    // hide intro
+    var $intro = $('.intro > h1');
+    $intro.html('');
 
-    $('.intro').html(this.templates.empty({
+    // hide sort by and results hits
+    $('.intro > .abstract-sorting').removeClass("d-md-flex");
+    $('.intro > .abstract-sorting').removeClass("d-none");
+    $('.intro > .abstract-sorting').hide();
+
+    // recreate empty template
+    $('.intro > .intro-empty').html(this.templates.empty({
       'title': this.config['emptySerp'][language].title,
       'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
       'cta': this.config['emptySerp'][language].cta
@@ -674,13 +684,16 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
     return;
   } else if (keyword !== 'undefined') {
     var language = this.config['language'];
-    var $intro = $('.intro');
-    $intro.html('');
-    $intro.html('<h1>' +
-      this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"' +
-      '</h1>');
+    var $intro = $('.intro > h1');
+    // $intro.html('');
+    $intro.html(
+      // '<h1>' +
+      this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"' 
+      // + '</h1>'
+      );
   }
 
+  $('.intro > .abstract-sorting').show();
   this.renderResultCount(response.hits.total);
   var html = '';
   for (var i = 0; i < response.hits.hits.length; i++) {
@@ -819,8 +832,12 @@ esDevelopersItaliaQuery.prototype.renderErrorMessage = function () {
 esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
   var keyword = decodeURI(this.params['keyword'].slice(0).pop());
   var language = this.config['language'];
-  $('.intro').html('<h1></h1>');
   var $intro = $('.intro > h1');
+  $intro.html('');
+
+  // removing empty div element from dom
+  var $introEmpty = $('.intro > .intro-empty');
+  $introEmpty.html('');
 
   if (keyword !== 'undefined') {
     $intro.text('');
