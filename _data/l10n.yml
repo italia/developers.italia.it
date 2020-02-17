@@ -219,6 +219,11 @@ it:
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
+    errors:
+      page_not_found: Pagina non trovata!
+      internal_error: Errore interno
+      forbidden: Accesso negato!
+
 
 en:
   code: eng
@@ -438,6 +443,8 @@ en:
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
-
-
+    errors:
+      page_not_found: Page not found!
+      internal_error: Internal Server Error
+      forbidden: Forbidden!
 

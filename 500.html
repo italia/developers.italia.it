@@ -1,9 +1,10 @@
 ---
 layout: default
 title: 500 - Internal Server Error
-lang: en
-permalink: /en/500.html
+lang: it
+permalink: /500.html
 ---
+{% include setlang.html %}
 
 <div class="container h-100">
   <div class="row h-100 justify-content-center align-items-center">
@@ -11,7 +12,7 @@ permalink: /en/500.html
       <div class="error text-center">
         <!-- Error title -->
         <h2 class="error-code">500</h2>
-        <p class="lead font-weight-bold">Internal Server Error</p>
+        <p class="lead font-weight-bold">{{ t.errors.internal_error }}</p>
         <a href="/" class="btn btn-primary mt-5">Home</a>
       </div> <!-- /error -->
     </div>
