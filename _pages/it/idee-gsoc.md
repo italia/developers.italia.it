@@ -199,7 +199,7 @@ E, se possibile, un'indicazione del livello di difficoltà del progetto
                 Una versione stabile del <a href="https://github.com/italia/design-react-kit/">Design React Kit</a> che contenga la maggior parte dei componenti di Bootstrap Italia e un template Gatsby facile da usare e conforme con le regole sull'accessibilità.
                 Questo progetto può essere usato come solida base di partenza:
                 <ul>
-                    <li> <a href="https://github.com/dej611/gatsby-bootstrap-italia-starter">Gatsby Bootstrap Italia Starter</a> (dettagli aggiuntivi possono essere consultati all'interno del thread su Forum Italia).</li>
+                    <li> <a href="https://github.com/italia/design-italia-gatsby-starterkit">Design Italia Gatsby Starter Kit</a> (dettagli aggiuntivi possono essere consultati all'interno del thread su Forum Italia).</li>
                 </ul>
                 <b>Competenze richieste:</b>
                 <ul>

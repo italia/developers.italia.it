@@ -147,7 +147,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 A new stable version of the <a href="https://github.com/italia/design-react-kit/">Design React Kit</a>, implementing most of the components from Bootstrap Italia, and a Gatsby template that is easy to use and fully compliant with accessibility rules.
                 This project can be used as a solid starting point:
                 <ul>
-                    <li> <a href="https://github.com/dej611/gatsby-bootstrap-italia-starter">Gatsby Bootstrap Italia Starter</a> (additional details can be found on its thread on Forum Italia).</li>
+                    <li> <a href="https://github.com/italia/design-italia-gatsby-starterkit">Design Italia Gatsby Starter Kit</a> (additional details can be found on its thread on Forum Italia).</li>
                 </ul>
                 <b>Required skills:</b>
                 <ul>
