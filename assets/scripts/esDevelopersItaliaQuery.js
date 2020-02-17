@@ -568,6 +568,20 @@ function esDevelopersItaliaQuery(config, params) {
   this.client = new elasticsearch.Client(this.config['elasticsearch_connection']);
 }
 
+function hideSortingResultsDiv(hide) {
+  // hide/show sort by and results hits
+  // and manage display mode for mobile views
+  if (hide) {
+    $('.intro > .abstract-sorting').removeClass("d-md-flex");
+    $('.intro > .abstract-sorting').removeClass("d-none");
+    $('.intro > .abstract-sorting').hide();
+  } else {
+    $('.intro > .abstract-sorting').addClass("d-md-flex");
+    $('.intro > .abstract-sorting').addClass("d-none");
+    $('.intro > .abstract-sorting').show();
+  }
+}
+
 esDevelopersItaliaQuery.prototype.getFilterInQuery = function () {
   var filter = [];
   for (var p in this.config['filterKeys']) {
@@ -670,9 +684,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
     $intro.html('');
 
     // hide sort by and results hits
-    $('.intro > .abstract-sorting').removeClass("d-md-flex");
-    $('.intro > .abstract-sorting').removeClass("d-none");
-    $('.intro > .abstract-sorting').hide();
+    hideSortingResultsDiv(true);
 
     // recreate empty template
     $('.intro > .intro-empty').html(this.templates.empty({
@@ -680,7 +692,10 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
       'message': this.config['emptySerp'][language].message.replace("{keyword}", keyword),
       'cta': this.config['emptySerp'][language].cta
     }));
+    // render 0 pages
     this.renderPager(0);
+    // render 0 results
+    this.renderResultCount(0);
     return;
   } else if (keyword !== 'undefined') {
     var language = this.config['language'];
@@ -693,7 +708,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
       );
   }
 
-  $('.intro > .abstract-sorting').show();
+  hideSortingResultsDiv(false);
   this.renderResultCount(response.hits.total);
   var html = '';
   for (var i = 0; i < response.hits.hits.length; i++) {
