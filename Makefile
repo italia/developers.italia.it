@@ -9,12 +9,14 @@ download-data:
 	wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
 	wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+build-bundle:
+	bundle install --path vendor/
 build-swagger:
 	./_buildscripts/build-swagger.sh
 test:
 	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 local:
-	JEKYLL_NO_GITHUB=true bundle exec jekyll serve
+	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 deploy:
@@ -23,5 +25,7 @@ include-npm-deps:
 	mkdir -p $(VENDOR_DIR)
 	npm install
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
+	cp -r node_modules/chart.js $(VENDOR_DIR)
+	cp -r node_modules/bootstrap-italia $(VENDOR_DIR)
 build: | include-npm-deps download-data build-swagger jekyll-build
 build-test: | build test

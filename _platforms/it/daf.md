@@ -40,7 +40,7 @@ resources:
 
 ## Intro
 
-Il [Data & Analytics Framework (DAF)](https://docs.italia.it/italia/pianotriennale-ict/pianotriennale-ict-doc/it/bozza/doc/09_data-analytics-framework.html) è una delle
+Il [Data & Analytics Framework (DAF)](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2017-2019/doc/09_data-analytics-framework.html) è una delle
 attività atte a valorizzare il patrimonio informativo pubblico nazionale
 approvata dal Governo italiano nell'ambito del [Piano Triennale per
 l'Informatica nella PA (2017-2019)](https://pianotriennale-ict.italia.it/). La

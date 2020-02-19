@@ -65,7 +65,7 @@ resources:
 
 ## Intro
 
-**Vuoi avere aggiornamenti su ANPR? Iscriviti alla [newsletter di ANPR](#newsletter).**
+<!-- **Vuoi avere aggiornamenti su ANPR? Iscriviti alla [newsletter di ANPR](#newsletter).** -->
 
 [ANPR](https://anpr.interno.it/) è un progetto storico: invece di avere più di 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.

@@ -20,7 +20,7 @@
                 {% if block.buttons!=nil%}
                     <div class="mt-1 mt-md-2 mb-1 px-2 px-md-4 text-center">
                         {% for button in block.buttons %}
-                            <a href="{{button.url}}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
+                            <a href="{{button.url | escape }}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
                         {% endfor %}
                     </div>
                 {% endif %}

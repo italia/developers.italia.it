@@ -26,7 +26,12 @@ layout: default
     <div class="col-md-7">
       <div class="intro-name">
         {% if page.publiccode.logo %}
+        {% if page.publiccode.logo contains 'github' and page.publiccode.logo contains '.svg' %}
+        {% assign logo = page.publiccode.logo | append: '?sanitize=true' %}
+        <img src="{{ logo }}" class="d-inline-block" />
+        {% else %}
         <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -54,7 +59,13 @@ layout: default
           <div class="row legal-main-info">
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
+                {% if page.publiccode.it.riuso.codiceIPA %}
+                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
                 {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                </a>
+                {% else %}
+                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {% endif %}
               </p>
             </div>
             {% if page.publiccode.maintenance.type == "contract" %}
@@ -62,7 +73,11 @@ layout: default
             <div class="col-sm">
               <p><span class="label">{{ t.software.software_maintained_by }} </span>
                 {% for contractor in page.publiccode.maintenance.contractors %}
-                <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                    {% if contractor.website != nil and contractor.website != "" %}
+                        <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                    {% else %}
+                        {{ contractor.name}}
+                    {% endif %}
                 {% endfor %}
               </p>
             </div>
@@ -455,53 +470,107 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.platforms }}</span>
                   {% for platform in page.publiccode.platforms %}
-                  {{ platform | escape }}<br />
+                      {{ platform | escape }}<br />
                   {% endfor %}
                 </p>
               </div>
               {% endif %}
-              <div class="col-md">
+              <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.dependencies_list }}</span>
-                  {% for dep in page.publiccode.dependencies.open %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
-                  {% for dep in page.publiccode.dependencies.proprietary %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
-                  {% for dep in page.publiccode.dependencies.hardware %}
-                  <p class="platforms">
-                    {% include dependency.html dependency=dep %}
-                  </p>
-                  {% endfor %}
+                  {% if page.publiccode.dependsOn == nil or page.publiccode.dependsOn.size == 0 %}
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                      {% if page.publiccode.dependsOn.open.size > 0 %}
+                          <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.open %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.proprietary.size > 0 %}
+                          <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.proprietary %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.hardware.size > 0 %}
+                          <span class="badge badge-pill badge-secondary">Hardware</span><br />
+                          {% for dep in page.publiccode.dependsOn.hardware %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                   {% endif %}
                 </p>
               </div>
-              <div class="col-md">
+              <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% if page.publiccode.it.piattaforme.pagopa == true %}
-                  <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
-                    pagoPA
+                  {% assign p = page.publiccode.it.piattaforme %}
+                  {% assign all_false = true %}
+                  {% for key in p %}
+                  {% if key.last == true %}
+                  {% assign all_false = false %}
+                  {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if all_false %} 
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                      {% if p.pagopa == true %}
+                      <a href="/{{ active_lang }}/pagopa" class="enabling_platforms">
+                        pagoPA
+                      </a>
+                      {% endif %}
+                      {% if p.spid == true %}
+                      <a href="/{{ active_lang }}/spid" class="enabling_platforms">
+                        SPID
+                      </a>
+                      {% endif %}
+                      {% if p.cie == true %}
+                      <a href="/{{ active_lang }}/cie" class="enabling_platforms">
+                        CIE
+                      </a>
+                      {% endif %}
+                      {% if p.anpr == true %}
+                      <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
+                        ANPR
+                      </a>
+                      {% endif %}
+                   {% endif %}
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">{{ t.software.compliance }}</span>
+                  {% assign p = page.publiccode.it.conforme %}
+                  {% assign all_false = true %}
+                  {% for key in p %}
+                  {% if key.last == true %}
+                  {% assign all_false = false %}
+                  {% break %}
+                  {% endif %}
+                  {% endfor %}
+                  {% if all_false %} 
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                  {% if p.gdpr == true %}
+                    GDPR 
+                  {% endif %}
+                  {% if p.lineeGuidaDesign == true %}
+                  <a href="{{ t.software.design_guidelines_url }}" class="enabling_platforms">
+                    {{ t.software.design_guidelines }} 
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.piattaforme.spid == true %}
-                  <a href="/{{ active_lang }}/spid" class="enabling_platforms">
-                    SPID
+                  {% if p.misureMinimeSicurezza == true %}
+                  <a href="{{ t.software.security_guidelines_url }}" class="enabling_platforms">
+                    {{ t.software.security_guidelines }}
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.piattaforme.cie == true %}
-                  <a href="/{{ active_lang }}/cie" class="enabling_platforms">
-                    CIE
+                  {% if p.modelloInteroperabilita == true %}
+                  <a href="{{ t.software.interoperability_model_url }}" class="enabling_platforms">
+                    {{ t.software.interoperability_model }} 
                   </a>
                   {% endif %}
-                  {% if page.publiccode.it.piattaforme.anpr == true %}
-                  <a href="/{{ active_lang }}/anpr" class="enabling_platforms">
-                    ANPR
-                  </a>
                   {% endif %}
                 </p>
               </div>
