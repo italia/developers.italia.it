@@ -11,7 +11,8 @@ include-developers-newsletter: false
 pair-blocks:
     - title: "Work with us"
       text: "You may find the open positions (when they are available) in the
-      section [Work with us](https://teamdigitale.governo.it/it/36-content.htm) of the Digital Transformation Team website."
+      section [Work with
+      us](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/) of the Digital Transformation Department website."
       image: /assets/images/contatti-lavora.svg
       buttons:
         - label: Open Positions 
@@ -28,7 +29,7 @@ If you want to file a bug related to this website, you can open an issue on [Git
           url: 'https://forum.italia.it/'
 ---
 
-Developers Italia is a project developed in collaboration between [AGID](https://www.agid.gov.it/en) and the [Digital Transformation Team](https://teamdigitale.governo.it/en) which administers it.
+Developers Italia is a project developed in collaboration between [AGID](https://www.agid.gov.it/en) and the [Digital Transformation Department](https://innovazione.gov.it/it/chi-siamo/dipartimento/) which administers it.
 
 This website was born in order to improve and simplify the relationship between
  developers and the Public Administration, fostering the development of
