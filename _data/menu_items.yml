@@ -21,9 +21,6 @@ it:
   - title: News
     url: '/it/news'
     active_by_firstlevel: 'news'
-  - title: GSoC 
-    url: '/it/idee-gsoc'
-    active_by_firstlevel: 'GSoC'
   - title: Contatti
     url: '/it/contatti'
     active_by_firstlevel: 'contatti'
@@ -51,9 +48,6 @@ en:
   - title: News
     url: '/en/news'
     active_by_firstlevel: 'news'
-  - title: GSoC 
-    url: '/en/gsoc-ideas'
-    active_by_firstlevel: 'GSoC'
   - title: Contacts
     url: '/en/contacts'
     active_by_firstlevel: 'contacts'
