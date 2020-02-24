@@ -10,7 +10,7 @@ redirect_from: /it/chi-siamo
 include-developers-newsletter: false
 pair-blocks:
     - title: "Lavora con noi"
-      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://teamdigitale.governo.it/it/36-content.htm) del Team per la Trasformazione Digitale."
+      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/) del sito del Ministero per l'innovazione tecnologica e la digitalizzazione."
       image: /assets/images/contatti-lavora.svg
       buttons:
         - label: Posizioni aperte
@@ -18,7 +18,7 @@ pair-blocks:
           url: 'https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/'
     - title: "Invia un feedback"
       text: "Vuoi proporre idee oppure dare un feedback sulla community? C'è un'apposita sezione nel [forum](https://forum.italia.it/c/community-feedback).<br>
-E se vuoi segnalare un bug su questo sito, puoi aprire una issue su [GitHub](https://github.com/italia/developers.italia.it)."
+      E se vuoi segnalare un bug su questo sito, puoi aprire una issue su [GitHub](https://github.com/italia/developers.italia.it)."
       image: /assets/images/contatti-bug.svg
       buttons:
         - label: Entra nel forum
@@ -26,7 +26,7 @@ E se vuoi segnalare un bug su questo sito, puoi aprire una issue su [GitHub](htt
           url: 'https://forum.italia.it/'
 ---
 
-Developers Italia è un progetto in collaborazione tra [AGID](https://www.agid.gov.it/) e il [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/) che lo gestisce.
+Developers Italia è un progetto in collaborazione tra [AGID](https://www.agid.gov.it/) e il [Dipartimento per la Trasformazione Digitale](https://innovazione.gov.it/it/chi-siamo/dipartimento/) che lo gestisce.
 
 Il sito nasce per semplificare e migliorare il rapporto tra gli sviluppatori e la Pubblica Amministrazione, stimolando lo sviluppo di servizi digitali moderni e integrati fra di loro.
 Fino ad oggi, con rare eccezioni, la Pubblica Amministrazione centrale si limitava a scrivere leggi e regole, in un linguaggio burocratico e non tecnico, senza strumenti e iniziative per supportare adeguatamente le persone che devono sviluppare e realizzare i progetti tecnologici. Developers Italia colma questa distanza, proponendo un approccio più tecnico e meno burocratico.
