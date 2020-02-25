@@ -16,13 +16,11 @@ jobs:
     steps:
       - checkout
       - run: which rsync || sudo apt-get install rsync # rsync is needed for swagger build, keep it
-      - run: gem install bundler
       - run: make build-bundle
       - run: make include-npm-deps
       - run: make download-data
       - run: make build-swagger
       - run: make jekyll-build
-      - run: cp -r ./.well-known ./_site/
       - run: make test
 
   # Deploy to production site
@@ -36,19 +34,17 @@ jobs:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
-      - run: npm install .
-      - run: gem install bundler
-      - run: bundle install
-      - run: make include-npm-deps
+      - run: which rsync || sudo apt-get install rsync
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: which rsync || sudo apt-get install rsync
+      - run: make build-bundle 
+      - run: make include-npm-deps
       - run: make download-data
       - run: make build-swagger
       - run: make jekyll-build
+      - run: make test
       - run: cp -r ./github ./_site/
       - run: cp -r ./.well-known ./_site/
-      - run: make test
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
 
 workflows:
