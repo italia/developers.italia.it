@@ -10,9 +10,10 @@ download-data:
 	wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
 build-bundle:
+	gem install bundler
 	bundle install --path vendor/
 build-swagger:
-	./_buildscripts/build-swagger.sh
+	cd swagger && npm run build
 test:
 	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 local:
