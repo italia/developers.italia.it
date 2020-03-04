@@ -46,3 +46,7 @@
   repos:
     - "https://gitlab.com/opencontent/stanzadelcittadino"
     - "https://gitlab.com/opencontent/openagenda-translate"
+    
+- name: "Link.it"
+  repos:
+    - "https://github.com/link-it/govpay"
