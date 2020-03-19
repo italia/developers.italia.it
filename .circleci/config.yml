@@ -1,0 +1,136 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ for more details
+
+references:
+  working_directory: /tmp/gh-pages
+
+  load_image: &load_image
+    docker:
+      - image: circleci/ruby:2.6.0-node-browsers
+
+  env_vars_dev: &env_vars_dev:
+    environment:
+      - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
+
+  env_vars_prod: &env_vars_prod:
+    environment:
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+
+  install_dependencies: &install_dependencies
+    run:
+      name: install-dependencies
+      command: |
+        npm install .
+        gem install bundler
+        bundle install
+        which rsync || sudo apt-get install rsync
+        make include-npm-deps
+
+  setup_ssh: &setup_ssh
+    add_ssh_keys:
+      fingerprints:
+        # gh-pages deployment key from circle-ci config
+        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+
+    # To be soon removed when moving to gh-pages
+    run:
+      name: setup-ssh
+      command: |
+        mkdir -p ~/.ssh
+        echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
+
+  get_crawler_yml_files: &get_crawler_yml_files
+    run:
+      name: get-crawler-yml-files
+      command: |
+        wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
+        wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
+        wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
+        wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
+        wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
+        wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
+        wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+
+  build_bundle_jekyll: &build_bundle_jekyll
+    run:
+      name: build-bundle-jekyll
+      command: |
+        ./_buildscripts/build-swagger.sh
+        bundle exec jekyll build
+        cp -r ./github ./_site/
+        bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
+
+  publish_changes: &publish_changes
+    run:
+      name: publish_changes
+      command: |
+        # Publish to VM - to be removed soon
+        rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
+
+        # Publish to GitHub pages - under test
+        mkdir gh-pages
+        cp -r site/* gh-pages/
+        echo "developers.italia.it" > gh-pages/CNAME
+
+        git config --global user.email no-reply@teamdigitale.governo.it
+        git config --global user.name "Deploy Bot"
+        git add gh-pages
+        git commit gh-pages -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" || echo "."
+        git push origin $CIRCLE_BRANCH
+
+version: 2
+jobs:
+  test:
+    <<: *load_image
+    <<: *env_vars_dev
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+
+  # Deploy to production site
+  # Note that we need a custom SSH config to let rsync know
+  # how to reach the production site.
+  build:
+    <<: *load_image
+    <<: *env_vars_prod
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *setup_ssh
+      - << : *publish_changes
+
+workflows:
+  version: 2
+  daily-build-and-deploy:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
+  on-commit-build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+  on-commit-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
+                - master
