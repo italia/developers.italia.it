@@ -9,14 +9,14 @@ references:
     docker:
       - image: circleci/ruby:2.6.0-node-browsers
 
-  env_vars_test: &env_vars_test:
+  env_vars_test: &env_vars_test
     environment:
       - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
       - ELASTICSEARCH_URL: "" # Disable searchyll for test.
 
-  env_vars_prod: &env_vars_prod:
+  env_vars_prod: &env_vars_prod
     environment:
       - JEKYLL_ENV: "production"
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
@@ -49,7 +49,7 @@ references:
       command: |
         ./_buildscripts/build-swagger.sh
         bundle exec jekyll build
-        cp -r ./github ./_site/
+        cp -r github _site
         bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # To be soon removed when moving to gh-pages
@@ -73,7 +73,7 @@ references:
       command: |
         rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
 
-  publish_changes_vm: &publish_changes_gh_pages
+  publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
       command: |
@@ -138,9 +138,16 @@ workflows:
                 - master
     jobs:
       - build_and_deploy_vm
+  on-commit-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
+                - master
   on-commit-build-and-deploy-vm:
     jobs:
-      - build:
+      - build_and_deploy_vm:
           filters:
             branches:
               only:
@@ -149,15 +156,8 @@ workflows:
   # once the migration to gh-pages is complete
   on-commit-build-and-deploy-gh-pages-test:
     jobs:
-      - build:
+      - build_and_deploy_gh_pages:
           filters:
             branches:
               only:
                 - 522-circle-ci-ref-gh-pages
-  on-commit-test:
-    jobs:
-      - test:
-          filters:
-            branches:
-              ignore:
-                - master
