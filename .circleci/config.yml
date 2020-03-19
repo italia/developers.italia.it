@@ -9,7 +9,7 @@ references:
     docker:
       - image: circleci/ruby:2.6.0-node-browsers
 
-  env_vars_dev: &env_vars_dev:
+  env_vars_test: &env_vars_test:
     environment:
       - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
       - JEKYLL_ENV: "production"
@@ -30,19 +30,6 @@ references:
         bundle install
         which rsync || sudo apt-get install rsync
         make include-npm-deps
-
-  setup_ssh: &setup_ssh
-    add_ssh_keys:
-      fingerprints:
-        # gh-pages deployment key from circle-ci config
-        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
-
-    # To be soon removed when moving to gh-pages
-    run:
-      name: setup-ssh
-      command: |
-        mkdir -p ~/.ssh
-        echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
 
   get_crawler_yml_files: &get_crawler_yml_files
     run:
@@ -65,14 +52,31 @@ references:
         cp -r ./github ./_site/
         bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
-  publish_changes: &publish_changes
+  # To be soon removed when moving to gh-pages
+  setup_ssh_vm: &setup_ssh_vm
     run:
-      name: publish_changes
+      name: setup-ssh-vm
       command: |
-        # Publish to VM - to be removed soon
+        mkdir -p ~/.ssh
+        echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
+
+  setup_ssh_gh_pages: &setup_ssh_gh_pages
+    add_ssh_keys:
+      fingerprints:
+        # gh-pages deployment key from circle-ci config
+        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+
+  # To be removed once migration to gh-pages is complete
+  publish_changes_vm: &publish_changes_vm
+    run:
+      name: publish_changes_vm
+      command: |
         rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
 
-        # Publish to GitHub pages - under test
+  publish_changes_vm: &publish_changes_gh_pages
+    run:
+      name: publish_changes_gh_pages
+      command: |
         mkdir gh-pages
         cp -r site/* gh-pages/
         echo "developers.italia.it" > gh-pages/CNAME
@@ -87,17 +91,17 @@ version: 2
 jobs:
   test:
     <<: *load_image
-    <<: *env_vars_dev
+    <<: *env_vars_test
     steps:
       - checkout
       - << : *install_dependencies
       - << : *get_crawler_yml_files
       - << : *build_bundle_jekyll
 
-  # Deploy to production site
+  # Deploy to production site running on VMs.
   # Note that we need a custom SSH config to let rsync know
   # how to reach the production site.
-  build:
+  build_and_deploy_vm:
     <<: *load_image
     <<: *env_vars_prod
     steps:
@@ -105,8 +109,22 @@ jobs:
       - << : *install_dependencies
       - << : *get_crawler_yml_files
       - << : *build_bundle_jekyll
-      - << : *setup_ssh
-      - << : *publish_changes
+      - << : *setup_ssh_vm
+      - << : *publish_changes_vm
+
+  # Deploy to production site running on VMs.
+  # Note that we need a custom SSH config to let rsync know
+  # how to reach the production site.
+  build_and_deploy_gh_pages:
+    <<: *load_image
+    <<: *env_vars_prod
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *setup_ssh_gh_pages
+      - << : *publish_changes_gh_pages
 
 workflows:
   version: 2
@@ -119,14 +137,23 @@ workflows:
               only:
                 - master
     jobs:
-      - build
-  on-commit-build-and-deploy:
+      - build_and_deploy_vm
+  on-commit-build-and-deploy-vm:
     jobs:
       - build:
           filters:
             branches:
               only:
                 - master
+  # To be consolidated with the previous snippet,
+  # once the migration to gh-pages is complete
+  on-commit-build-and-deploy-gh-pages-test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - 522-circle-ci-ref-gh-pages
   on-commit-test:
     jobs:
       - test:
