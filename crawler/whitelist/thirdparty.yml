@@ -50,3 +50,7 @@
 - name: "Link.it"
   repos:
     - "https://github.com/link-it/govpay"
+
+- name: "Knowage"
+  repos:
+    - "https://github.com/KnowageLabs/Knowage-Server"
