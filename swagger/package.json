@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
+    "prestart": "rm -rf .cache node_modules && npm install .",
     "start": "npx parcel swagger.html",
     "prebuild": "npm run prestart",
     "build": "npx parcel build swagger.html --public-url /assets/swagger --out-dir ../_includes --no-source-maps",
