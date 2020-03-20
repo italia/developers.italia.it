@@ -72,7 +72,7 @@ references:
         cp -r github _site
 
         mkdir gh-pages
-        cp -r site/* gh-pages/
+        cp -r _site gh-pages
         echo "developers.italia.it" > gh-pages/CNAME
 
         git config --global user.email no-reply@teamdigitale.governo.it
