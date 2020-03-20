@@ -10,11 +10,12 @@ download-data:
 	wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
 build-bundle:
+	gem install bundler
 	bundle install --path vendor/
 build-swagger:
-	./_buildscripts/build-swagger.sh
+	cd swagger && npm run build
 test:
-	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 local:
 	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
 jekyll-build:
@@ -27,5 +28,5 @@ include-npm-deps:
 	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
 	cp -r node_modules/chart.js $(VENDOR_DIR)
 	cp -r node_modules/bootstrap-italia $(VENDOR_DIR)
-build: | include-npm-deps download-data build-swagger jekyll-build
+build: | build-bundle include-npm-deps download-data build-swagger jekyll-build
 build-test: | build test
