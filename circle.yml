@@ -15,13 +15,21 @@ jobs:
       - ELASTICSEARCH_URL: "" # Disable searchyll for test.
     steps:
       - checkout
+      - run: npm install .
+      - run: gem install bundler
+      - run: bundle install
       - run: which rsync || sudo apt-get install rsync # rsync is needed for swagger build, keep it
-      - run: make build-bundle
       - run: make include-npm-deps
-      - run: make download-data
-      - run: make build-swagger
-      - run: make jekyll-build
-      - run: make test
+      - run: ./_buildscripts/build-swagger.sh
+      - run: wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
+      - run: wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
+      - run: wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
+      - run: wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
+      - run: wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
+      - run: wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
+      - run: wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+      - run: bundle exec jekyll build
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 
   # Deploy to production site
   # Note that we need a custom SSH config to let rsync know
@@ -34,17 +42,24 @@ jobs:
       - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
     steps:
       - checkout
-      - run: which rsync || sudo apt-get install rsync
+      - run: npm install .
+      - run: gem install bundler
+      - run: bundle install
+      - run: make include-npm-deps
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: make build-bundle 
-      - run: make include-npm-deps
-      - run: make download-data
-      - run: make build-swagger
-      - run: make jekyll-build
-      - run: make test
+      - run: which rsync || sudo apt-get install rsync
+      - run: wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
+      - run: wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
+      - run: wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
+      - run: wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
+      - run: wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
+      - run: wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
+      - run: wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+      - run: ./_buildscripts/build-swagger.sh
+      - run: bundle exec jekyll build
       - run: cp -r ./github ./_site/
-      - run: cp -r ./.well-known ./_site/
+      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
       - run: rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
 
 workflows:
