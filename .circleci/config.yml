@@ -25,32 +25,23 @@ references:
     run:
       name: install-dependencies
       command: |
-        npm install .
-        gem install bundler
-        bundle install
-        which rsync || sudo apt-get install rsync
         make include-npm-deps
+        make build-bundle
+        which rsync || sudo apt-get install rsync
 
   get_crawler_yml_files: &get_crawler_yml_files
     run:
       name: get-crawler-yml-files
       command: |
-        wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
-        wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-        wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
-        wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
-        wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
-        wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
-        wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+        make download-data
 
   build_bundle_jekyll: &build_bundle_jekyll
     run:
       name: build-bundle-jekyll
       command: |
-        ./_buildscripts/build-swagger.sh
-        bundle exec jekyll build
-        cp -r github _site
-        bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
+        make build-swagger
+        make jekyll-build
+        make test
 
   # To be soon removed when moving to gh-pages
   setup_ssh_vm: &setup_ssh_vm
@@ -71,12 +62,15 @@ references:
     run:
       name: publish_changes_vm
       command: |
-        rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" ./_site/ circleci@developers.italia.it:/apps/www/developers.italia.it/web/
+        cp -r github _site
+        make deploy-vm
 
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
       command: |
+        cp -r github _site
+
         mkdir gh-pages
         cp -r site/* gh-pages/
         echo "developers.italia.it" > gh-pages/CNAME
