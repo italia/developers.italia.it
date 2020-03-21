@@ -62,23 +62,25 @@ references:
     run:
       name: publish_changes_vm
       command: |
-        cp -r github _site
+        cp -r github _site/
+
         make deploy-vm
 
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
       command: |
-        cp -r github _site
+        cp -r github _site/
 
-        mkdir gh-pages
-        cp -r _site gh-pages
+        rm -rf gh-pages
+        mv _site gh-pages
+
         echo "developers.italia.it" > gh-pages/CNAME
 
         git config --global user.email no-reply@teamdigitale.governo.it
         git config --global user.name "Deploy Bot"
         git add gh-pages
-        git commit gh-pages -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" || echo "."
+        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}"
         git push origin $CIRCLE_BRANCH
 
 version: 2
