@@ -43,7 +43,7 @@ references:
         make jekyll-build
         make test
 
-  # To be soon removed when moving to gh-pages
+  # To be removed once migration to gh-pages is complete
   setup_ssh_vm: &setup_ssh_vm
     run:
       name: setup-ssh-vm
@@ -66,6 +66,9 @@ references:
 
         make deploy-vm
 
+  # Renames the Jekyll output folder (_site) to gh-pages and
+  # commits it the master branch.
+  # [skip-ci] has been added to avoid loops with CircleCI triggers
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
@@ -95,8 +98,7 @@ jobs:
       - << : *build_bundle_jekyll
 
   # Deploy to production site running on VMs.
-  # Note that we need a custom SSH config to let rsync know
-  # how to reach the production site.
+  # To be removed once gh-pages deployment is fully functional
   build_and_deploy_vm:
     <<: *load_image
     <<: *env_vars_prod
@@ -108,9 +110,6 @@ jobs:
       - << : *setup_ssh_vm
       - << : *publish_changes_vm
 
-  # Deploy to production site running on VMs.
-  # Note that we need a custom SSH config to let rsync know
-  # how to reach the production site.
   build_and_deploy_gh_pages:
     <<: *load_image
     <<: *env_vars_prod
@@ -124,6 +123,8 @@ jobs:
 
 workflows:
   version: 2
+  # Every night, deploy to VMs and to gh-pages
+  # to make sure latest data are shown
   daily-build-and-deploy:
     triggers:
       - schedule:
@@ -135,6 +136,8 @@ workflows:
     jobs:
       - build_and_deploy_vm
       - build_and_deploy_gh_pages
+  # For any branch other than master,
+  # run CI tests at each commit
   on-commit-test:
     jobs:
       - test:
@@ -142,6 +145,8 @@ workflows:
             branches:
               ignore:
                 - master
+  # For each commit on the master branch
+  # deploy to VMs and to gh-pages
   on-commit-build-and-deploy:
     jobs:
       - build_and_deploy_vm:
