@@ -80,7 +80,7 @@ references:
         git config --global user.email no-reply@teamdigitale.governo.it
         git config --global user.name "Deploy Bot"
         git add gh-pages
-        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}"
+        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci-skip]"
         git push origin $CIRCLE_BRANCH
 
 version: 2
@@ -134,6 +134,7 @@ workflows:
                 - master
     jobs:
       - build_and_deploy_vm
+      - build_and_deploy_gh_pages
   on-commit-test:
     jobs:
       - test:
@@ -141,19 +142,15 @@ workflows:
             branches:
               ignore:
                 - master
-  on-commit-build-and-deploy-vm:
+  on-commit-build-and-deploy:
     jobs:
       - build_and_deploy_vm:
           filters:
             branches:
               only:
                 - master
-  # To be consolidated with the previous snippet,
-  # once the migration to gh-pages is complete
-  on-commit-build-and-deploy-gh-pages-test:
-    jobs:
       - build_and_deploy_gh_pages:
           filters:
             branches:
               only:
-                - 522-circle-ci-ref-gh-pages
+                - master
