@@ -1,0 +1,163 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/ for more details
+
+references:
+  working_directory: /tmp/gh-pages
+
+  load_image: &load_image
+    docker:
+      - image: circleci/ruby:2.6.0-node-browsers
+
+  env_vars_test: &env_vars_test
+    environment:
+      - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
+
+  env_vars_prod: &env_vars_prod
+    environment:
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+
+  install_dependencies: &install_dependencies
+    run:
+      name: install-dependencies
+      command: |
+        make include-npm-deps
+        make build-bundle
+        which rsync || sudo apt-get install rsync
+
+  get_crawler_yml_files: &get_crawler_yml_files
+    run:
+      name: get-crawler-yml-files
+      command: |
+        make download-data
+
+  build_bundle_jekyll: &build_bundle_jekyll
+    run:
+      name: build-bundle-jekyll
+      command: |
+        make build-swagger
+        make jekyll-build
+        make test
+
+  # To be removed once migration to gh-pages is complete
+  setup_ssh_vm: &setup_ssh_vm
+    run:
+      name: setup-ssh-vm
+      command: |
+        mkdir -p ~/.ssh
+        echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
+
+  setup_ssh_gh_pages: &setup_ssh_gh_pages
+    add_ssh_keys:
+      fingerprints:
+        # gh-pages deployment key from circle-ci config
+        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+
+  # To be removed once migration to gh-pages is complete
+  publish_changes_vm: &publish_changes_vm
+    run:
+      name: publish_changes_vm
+      command: |
+        cp -r .well-known _site/
+        cp -r github _site/
+
+        make deploy-vm
+
+  # Renames the Jekyll output folder (_site) to gh-pages and
+  # commits it the master branch.
+  # [ci skip] has been added to avoid loops with CircleCI triggers
+  publish_changes_gh_pages: &publish_changes_gh_pages
+    run:
+      name: publish_changes_gh_pages
+      command: |
+        cp -r .well-known _site/
+        cp -r github _site/
+
+        rm -rf docs
+        mv _site docs
+
+        echo "developers.italia.it" > docs/CNAME
+
+        git config --global user.email no-reply@teamdigitale.governo.it
+        git config --global user.name "Deploy Bot"
+        git add docs
+        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]"
+        git push origin $CIRCLE_BRANCH
+
+version: 2
+jobs:
+  test:
+    <<: *load_image
+    <<: *env_vars_test
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+
+  # Deploy to production site running on VMs.
+  # To be removed once gh-pages deployment is fully functional
+  build_and_deploy_vm:
+    <<: *load_image
+    <<: *env_vars_prod
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *setup_ssh_vm
+      - << : *publish_changes_vm
+
+  build_and_deploy_gh_pages:
+    <<: *load_image
+    <<: *env_vars_prod
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *setup_ssh_gh_pages
+      - << : *publish_changes_gh_pages
+
+workflows:
+  version: 2
+  # Every night, deploy to VMs and to gh-pages
+  # to make sure latest data are shown
+  daily-build-and-deploy:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build_and_deploy_vm
+      - build_and_deploy_gh_pages
+  # For any branch other than master,
+  # run CI tests at each commit
+  on-commit-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
+                - master
+  # For each commit on the master branch
+  # deploy to VMs and to gh-pages
+  on-commit-build-and-deploy:
+    jobs:
+      - build_and_deploy_vm:
+          filters:
+            branches:
+              only:
+                - master
+      - build_and_deploy_gh_pages:
+          filters:
+            branches:
+              only:
+                - master
