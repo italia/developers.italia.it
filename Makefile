@@ -20,8 +20,8 @@ local:
 	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
-deploy:
-	rsync -avP --rsync-path="sudo -u www-data rsync" _site/ developers.italia.it:/data/www/developers.italia.it/web/
+deploy-vm:
+	rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" _site/ developers.italia.it:/apps/www/developers.italia.it/web/
 include-npm-deps:
 	mkdir -p $(VENDOR_DIR)
 	npm install

@@ -50,22 +50,23 @@ plugins:
   - jekyll-sitemap
   - searchyll
 exclude:
-  - vendor
-  - README.md
-  - LICENSE
+  - .circleci
+  - AUTHORS
+  - docker-compose.yml
+  - Dockerfile
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - circle.yml
   - gulpfile.js
+  - LICENSE
+  - Makefile
+  - node_modules
   - package.json
   - package-lock.json
-  - yarn.lock
+  - README.md
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
-  - node_modules
-
+  - vendor
 
 pagination:
   enabled: true
