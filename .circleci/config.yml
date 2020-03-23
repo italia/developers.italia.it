@@ -62,6 +62,7 @@ references:
     run:
       name: publish_changes_vm
       command: |
+        cp -r .well-known _site/
         cp -r github _site/
 
         make deploy-vm
@@ -73,6 +74,7 @@ references:
     run:
       name: publish_changes_gh_pages
       command: |
+        cp -r .well-known _site/
         cp -r github _site/
 
         rm -rf gh-pages
