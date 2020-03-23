@@ -1,0 +1,49 @@
+.custom-layout
+{
+    padding-top: 92px;
+}
+
+.custom-layout--hero
+{
+    padding-bottom: 210px;
+}
+
+.custom-layout--description
+{
+    top: -130px;
+}
+
+.custom-layout--swagger--description
+{
+    background: #f5f7fa;
+}
+
+.swagger-ui .loading-container
+{
+    margin-top: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .swagger--head-card {
+    top: 0;
+  }
+}
+
+/* tr > *.col{
+    /* width: auto; */
+    /* width: 100%; */
+    /* display: block; */
+/* } */
+
+
+/* table tr {
+    display: -webkit-box;
+} */
+
+
+td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
