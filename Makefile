@@ -15,11 +15,11 @@ build-bundle:
 build-swagger:
 	cd swagger && npm run build
 test:
-	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
+	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 local:
-	bundle exec jekyll serve --incremental
+	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
 jekyll-build:
-	bundle exec jekyll build
+	JEKYLL_ENV=production bundle exec jekyll build
 deploy-vm:
 	rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" _site/ developers.italia.it:/data/www/developers.italia.it/web/
 include-npm-deps:
