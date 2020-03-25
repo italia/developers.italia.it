@@ -95,7 +95,7 @@ GEM
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
     nuggets (1.6.0)
-    octokit (4.16.0)
+    octokit (4.17.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.19.1)
@@ -143,7 +143,7 @@ DEPENDENCIES
   jekyll-tagging
   jekyll-toc
   minima (~> 2.5)
-  octokit (~> 4.16)
+  octokit (~> 4.17)
   parallel
   rest-client (~> 2.1)
   searchyll!
