@@ -54,6 +54,7 @@ exclude:
   - AUTHORS
   - docker-compose.yml
   - Dockerfile
+  - docs
   - Gemfile
   - Gemfile.lock
   - gulpfile.js
