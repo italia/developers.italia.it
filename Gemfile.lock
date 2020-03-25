@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/italia/developers-italia-searchyll
-  revision: 745157cefdc9524cea52cbf30d053caf7cde4836
+  revision: c76a1b3e4f14c3825045dfcdcf7fdf49ccbe800b
   specs:
     searchyll (0.10.2)
       jekyll (>= 3.0)
@@ -90,7 +90,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     multipart-post (2.1.1)
     netrc (0.11.0)
-    nokogiri (1.10.7)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -111,7 +111,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rouge (3.15.0)
+    rouge (3.17.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
