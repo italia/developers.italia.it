@@ -31,10 +31,19 @@
                 <article
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
                     {% if withimages == true %}
+
+                    {% if item.publiccode.logo contains 'github' and item.publiccode.logo contains '.svg' %}
+                    {% assign logo = item.publiccode.logo | append: '?sanitize=true' %}
+                    {% else %}
+                    {% assign logo = item.publiccode.logo %}
+                    {% endif %}
                     <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
-                            src="{{ description.screenshots | first | default: item.publiccode.logo | default:'/assets/images/placeholder-software-riuso.jpg'}}">
-                    </a>
+                        <img 
+                          class="w-100 home-listing-item__img"
+                          src="{{ description.screenshots | first | default: logo | default:'/assets/images/placeholder-software-riuso.jpg'}}"
+                          onerror="this.src='/assets/images/placeholder-software-riuso.jpg'"
+                        >
+                    </a>                    
                     {% endif %}
                     <h1 class="home-listing-item__title ">
                         <a title="{{ sw_name }}" href="{{ sw_url }}" class="color-inherit">{{sw_name}}</a>

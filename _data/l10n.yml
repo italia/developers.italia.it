@@ -138,11 +138,15 @@ it:
     software:
       software_open: Software open source di terze parti
       reuse_software: Software a riuso
+      recent_software: Software più recenti
+      active_software: Progetti più attivi
+      pa_most_active: Amministrazioni più virtuose
       filters: Filtri
       sort_by: Ordina per
       sort_by_relevance: Rilevanza
-      sort_by_emerging: Emergenti
-      sort_by_popularity: Popolarità
+      sort_by_release_date: Più recenti
+      sort_by_vitality: Più attivi
+      sort_by_alphabetic: Alfabetico
       categories: Categorie
       results: risultati
       variant_by: Variante di
@@ -174,7 +178,18 @@ it:
       license: Licenza
       platforms: Piattaforme
       dependencies_list: Lista dipendenze
+      dependencies_oss: OSS 
+      dependencies_proprietary: Proprietaria
+      dependencies_optional: Opzionale 
+      dependencies_none: Nessuna 
       enabling_platforms: Piattaforme abilitanti
+      compliance: Conformità
+      design_guidelines: Linee Guida Design 
+      design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/
+      security_guidelines: Misure Minime Sicurezza 
+      security_guidelines_url: https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict
+      interoperability_model: Modello Interoperabilità
+      interoperability_model_url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html
       services_on: Servizi su
       until: fino al
       extende_description: Descrizione estesa
@@ -189,9 +204,9 @@ it:
       software_type: tipologia software
       public_entities: Enti
       go_to_detail: vai al dettaglio
-      view_all_photos: Guarda tutte le foto
+      view_all_photos: Guarda tutte le immagini
       tooltip: "
-        [Vitality è un indice](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calcolato prendendo in considerazione le seguenti quattro categorie: 
+        [Vitality è un indice](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calcolato prendendo in considerazione le seguenti quattro categorie:
 
         * **Code activity**: il numero di commit e merge giornalieri; 
 
@@ -204,6 +219,11 @@ it:
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
+    errors:
+      page_not_found: Pagina non trovata!
+      internal_error: Errore interno
+      forbidden: Accesso negato!
+
 
 en:
   code: eng
@@ -256,7 +276,7 @@ en:
 
     home_hero: A community of developers who design and code Italian digital public services
     home_hero_button: Learn more
-    home_hero_buttonurl: '#'
+    home_hero_buttonurl: '/en/how'
     home_newsletter_title: Subscribe to our Newsletter
     home_newsletter_placeholder: email address
     home_newsletter_button: Subscribe
@@ -343,10 +363,14 @@ en:
     software:
       software_open: Software open source
       reuse_software: Reuse software
+      recent_software: Most recent software
+      active_software: Most active projects
+      pa_most_active: Most virtuous administration
       sort_by: Sort by
       sort_by_relevance: Relevance
-      sort_by_emerging: Emerging
-      sort_by_popularity: Popularity
+      sort_by_release_date: Most recent
+      sort_by_vitality: Most active
+      sort_by_alphabetic: Alphabetical
       filters: Filters
       categories: Categories
       results: results
@@ -379,7 +403,18 @@ en:
       license: License
       platforms: Platforms
       dependencies_list: List of dependencies
+      dependencies_oss: OSS 
+      dependencies_proprietary: Proprietary 
+      dependencies_optional: Optional 
+      dependencies_none: None 
       enabling_platforms: Enabling platforms
+      compliance: Compliance
+      design_guidelines: Design Guidelines
+      design_guidelines_url: https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/       
+      security_guidelines: Security Guidelines
+      security_guidelines_url: https://www.agid.gov.it/index.php/en/security/Minimum-ICT-security-measures-for-public-administrations 
+      interoperability_model: Interoperability Model
+      interoperability_model_url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/ 
       services_on: Services on
       until: until the
       extende_description: Extended description
@@ -394,7 +429,7 @@ en:
       software_type: software type
       public_entities: public entities
       go_to_detail: go to detail
-      view_all_photos: View all the photos
+      view_all_photos: View all the images
       tooltip: "
         [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
 
@@ -408,6 +443,8 @@ en:
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
-
-
+    errors:
+      page_not_found: Page not found!
+      internal_error: Internal Server Error
+      forbidden: Forbidden!
 
