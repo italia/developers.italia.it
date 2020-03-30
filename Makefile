@@ -2,13 +2,13 @@ VENDOR_DIR = assets/vendor/
 
 .PHONY: build deploy
 download-data:
-	wget https://developers.italia.it/crawler/softwares.yml -O _data/crawler/softwares.yml
-	wget https://developers.italia.it/crawler/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-	wget https://developers.italia.it/crawler/software_categories.yml -O _data/crawler/software_categories.yml
-	wget https://developers.italia.it/crawler/software-open-source.yml -O _data/crawler/software-open-source.yml
-	wget https://developers.italia.it/crawler/software-riuso.yml -O _data/crawler/software-riuso.yml
-	wget https://developers.italia.it/crawler/software_scopes.yml -O _data/crawler/software_scopes.yml
-	wget https://developers.italia.it/crawler/software_tags.yml -O _data/crawler/software_tags.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/software_categories.yml -O _data/crawler/software_categories.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/software-open-source.yml -O _data/crawler/software-open-source.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/software-riuso.yml -O _data/crawler/software-riuso.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
+	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
 build-bundle:
 	gem install bundler
 	bundle install --path vendor/
