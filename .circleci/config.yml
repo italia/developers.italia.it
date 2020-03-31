@@ -43,29 +43,11 @@ references:
         make jekyll-build
         make test
 
-  # To be removed once migration to gh-pages is complete
-  setup_ssh_vm: &setup_ssh_vm
-    run:
-      name: setup-ssh-vm
-      command: |
-        mkdir -p ~/.ssh
-        echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-
   setup_ssh_gh_pages: &setup_ssh_gh_pages
     add_ssh_keys:
       fingerprints:
         # gh-pages deployment key from circle-ci config
         - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
-
-  # To be removed once migration to gh-pages is complete
-  publish_changes_vm: &publish_changes_vm
-    run:
-      name: publish_changes_vm
-      command: |
-        cp -r .well-known _site/
-        cp -r github _site/
-
-        make deploy-vm
 
   # Renames the Jekyll output folder (_site) to gh-pages and
   # commits it the master branch.
@@ -99,19 +81,6 @@ jobs:
       - << : *get_crawler_yml_files
       - << : *build_bundle_jekyll
 
-  # Deploy to production site running on VMs.
-  # To be removed once gh-pages deployment is fully functional
-  build_and_deploy_vm:
-    <<: *load_image
-    <<: *env_vars_prod
-    steps:
-      - checkout
-      - << : *install_dependencies
-      - << : *get_crawler_yml_files
-      - << : *build_bundle_jekyll
-      - << : *setup_ssh_vm
-      - << : *publish_changes_vm
-
   build_and_deploy_gh_pages:
     <<: *load_image
     <<: *env_vars_prod
@@ -136,7 +105,6 @@ workflows:
               only:
                 - master
     jobs:
-      - build_and_deploy_vm
       - build_and_deploy_gh_pages
   # For any branch other than master,
   # run CI tests at each commit
@@ -151,11 +119,6 @@ workflows:
   # deploy to VMs and to gh-pages
   on-commit-build-and-deploy:
     jobs:
-      - build_and_deploy_vm:
-          filters:
-            branches:
-              only:
-                - master
       - build_and_deploy_gh_pages:
           filters:
             branches:
