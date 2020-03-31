@@ -17,7 +17,7 @@ build-swagger:
 test:
 	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external --url_ignore "/esQuery\.config\.js/"
 local:
-	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental
+	JEKYLL_NO_GITHUB=true bundle exec jekyll serve --incremental --host=0.0.0.0
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 deploy-vm:
