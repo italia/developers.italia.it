@@ -1,19 +1,29 @@
-version: "3.3"
+version: '3.3'
 
 services:
-  developers.italia.it:
-    build: .
+
+  devita_website:
+    image: italia/developers.italia.it
+    container_name: devita_website
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
     ports:
-      - "4000:4000"
+      - 4000:4000
+    # By default, we mount all the working dir to
+    # facilitate local development. Then, we exclude
+    # folders which content changes through a build:
+    # assets, _data, node_modules, vendor
     volumes:
       - .:/usr/src/developers.italia.it
-    environment:
-      - JEKYLL_NO_GITHUB=true
-      - JEKYLL_ENV=dev
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-      - ELASTICSEARCH_URL=https://example.com
+      - /usr/src/developers.italia.it/assets
+      - /usr/src/developers.italia.it/_data
+      - /usr/src/developers.italia.it/node_modules
+      - /usr/src/developers.italia.it/vendor
     networks:
-      - web
+      - overlay
 
 networks:
-  web:
+  overlay:
