@@ -40,8 +40,8 @@
 
   <link rel="alternate" type="application/rss+xml" title="Developers Italia" href="/feed.xml">
 
-  <link href="/assets/fonts.css?202004011646" rel="stylesheet">
-  <link href="/assets/main.css?202004011646" rel="stylesheet">
+  <link href="/assets/fonts.css?202004020602" rel="stylesheet">
+  <link href="/assets/main.css?202004020602" rel="stylesheet">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -628,12 +628,13 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/link-it/govpay/master/docs/_images/gpay_logo_catalogoriuso.png" class="d-inline-block" />
+        
+        <img src="https://raw.githubusercontent.com/link-it/govpay/master/docs/_images/gpay_logo.svg?sanitize=true" class="d-inline-block" />
         
         
         <h1 class="d-inline-block">
           GovPay
-          <span class="badge badge-pill badge-pill--sup badge-primary">3.2</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">3.2.1</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -695,7 +696,7 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitalità:</p>
-          <p class="score d-inline-block"> 79%</p>
+          <p class="score d-inline-block"> 80%</p>
           
           <div id="softwareChart">
             <canvas id="vitalityChart"></canvas>
@@ -728,11 +729,7 @@
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/link-it/govpay"> <img src="/assets/icons/software_icons/it-codice.svg">Vai al codice &rarr;</a></p>
-        </div>
-        
-        <div class="goto road">
-          <p><a href="https://github.com/link-it/govpay/milestones"><img src="/assets/icons/software_icons/it-roadmap.svg">Vai alla roadmap &rarr;</a></p>
+          <p><a href=""> <img src="/assets/icons/software_icons/it-codice.svg">Vai al codice &rarr;</a></p>
         </div>
         
       </div>
@@ -847,7 +844,7 @@
                 GovPay
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">3.2</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">3.2.1</span>
                 
               </h2>
               <h2>
@@ -860,9 +857,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2020-02-18
+                  2020-04-01
                   
-                  (3.2)
+                  (3.2.1)
                   
                 </p>
               </div>
@@ -1042,7 +1039,48 @@ Italiano<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
               <div class="font-serif page-detail__text">
-                <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o spontanei, sia ad iniziativa Ente (modelli 1 e 2) che ad iniziativa PSP (modello 3) nonché alla loro riconciliazione in tesoreria. Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo Operativo” descritti dalle specifiche AgID utilizzabile dagli operatori per monitorare il corretto funzionamento della piattaforma e degli applicativi ad essa collegati oltre a fornire i report necessari ai servizi di supporto di primo e secondo livello. GovPay mette a disposizione una suite completa di API REST per l’integrazione degli applicativi esistenti (portali di pagamento, gestionali di posizioni debitorie, applicativi di contabilità, …). Le API coprono tutte le funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in attesa (APA) ed emissione dell’avviso di pagamento, fino alla riconciliazione contabile in tesoreria delle riscossioni effettuate. Le stesse operazioni sono comunque disponibili anche sul cruscotto di gestione per gli operatori, tramite compilazione di form o file upload di tracciati record. ### Conformità alle specifiche pagoPA - Specifiche Attuative dei Codici di Versamento, riversamento e rendicontazione (SACIV), v1.3.1  - Specifiche Attuative del Nodo dei Pagamenti-SPC (SANP), v2.2.5   - Wizard Interattivo per la Scelta dei PSP (WISP), v2.0 - Avviso di pagamento analogico nel sistema pagoPA, v2.2.1 ### Configurabilità - Supporto per tutte le modalità di adesione: diretta, intermediario tecnologico e partner tecnologico - Multitentant: Possibilità di ospitare più domini, intermediari e partner sulla stessa installazione - Servizi di integrazione per la realizzazione di un archivio di pagamenti in attesa distribuito - Integrazione utenze e ruoli da Sistemi esterni di Identity Management ### API REST per l’integrazione applicativa - API orientata ai portali per l’attivazione dei pagamenti - API orientata ai verticali per la gestione delle posizioni debitorie - API orientata agli uffici contabili per le operazioni di riconciliazione - API di backoffice per lo sviluppo di cruscotti di gestione personalizzati ### Cruscotto di gestione e monitoraggio dei pagamenti - Implementazione delle funzionalità di Tavolo Operativo richieste dalla specifica AgID - Profilazione degli utenti della console, per l’autorizzazione puntuale su operazioni, domini e tipologie di pagamento di competenza - Gestione archivio pagamenti in attesa (APA) - Consultazione delle posizioni debitorie e dei pagamenti eseguiti - Gestione della riconciliazione - Reportistica nei formati PDF e CSV - Registrazione e consultazione del Giornale degli Eventi</p>
+                <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o spontanei, sia ad iniziativa Ente (modelli 1 e 2) che ad iniziativa PSP (modello 3) nonché alla loro riconciliazione in tesoreria. Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo Operativo” descritti dalle specifiche AgID utilizzabile dagli operatori per monitorare il corretto funzionamento della piattaforma e degli applicativi ad essa collegati oltre a fornire i report necessari ai servizi di supporto di primo e secondo livello.</p>
+
+<p>GovPay mette a disposizione una suite completa di API REST per l’integrazione degli applicativi esistenti (portali di pagamento, gestionali di posizioni debitorie, applicativi di contabilità, …). Le API coprono tutte le funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in attesa (APA) ed emissione dell’avviso di pagamento, fino alla riconciliazione contabile in tesoreria delle riscossioni effettuate. Le stesse operazioni sono comunque disponibili anche sul cruscotto di gestione per gli operatori, tramite compilazione di form o file upload di tracciati record.</p>
+
+<h2 id="conformità-alle-specifiche-pagopa">Conformità alle specifiche pagoPA</h2>
+
+<ul>
+  <li>Specifiche Attuative dei Codici di Versamento, riversamento e rendicontazione (SACIV), v1.3.1</li>
+  <li>Specifiche Attuative del Nodo dei Pagamenti-SPC (SANP), v2.2.5</li>
+  <li>Wizard Interattivo per la Scelta dei PSP (WISP), v2.0</li>
+  <li>Avviso di pagamento analogico nel sistema pagoPA, v2.2.1</li>
+</ul>
+
+<h2 id="configurabilità">Configurabilità</h2>
+
+<ul>
+  <li>Supporto per tutte le modalità di adesione: diretta, intermediario tecnologico e partner tecnologico</li>
+  <li>Multitentant: Possibilità di ospitare più domini, intermediari e partner sulla stessa installazione</li>
+  <li>Servizi di integrazione per la realizzazione di un archivio di pagamenti in attesa distribuito</li>
+  <li>Integrazione utenze e ruoli da Sistemi esterni di Identity Management</li>
+</ul>
+
+<h2 id="api-rest-per-lintegrazione-applicativa">API REST per l’integrazione applicativa</h2>
+
+<ul>
+  <li>API orientata ai portali per l’attivazione dei pagamenti</li>
+  <li>API orientata ai verticali per la gestione delle posizioni debitorie</li>
+  <li>API orientata agli uffici contabili per le operazioni di riconciliazione</li>
+  <li>API di backoffice per lo sviluppo di cruscotti di gestione personalizzati</li>
+</ul>
+
+<h2 id="cruscotto-di-gestione-e-monitoraggio-dei-pagamenti">Cruscotto di gestione e monitoraggio dei pagamenti</h2>
+
+<ul>
+  <li>Implementazione delle funzionalità di Tavolo Operativo richieste dalla specifica AgID</li>
+  <li>Profilazione degli utenti della console, per l’autorizzazione puntuale su operazioni, domini e tipologie di pagamento di competenza</li>
+  <li>Gestione archivio pagamenti in attesa (APA)</li>
+  <li>Consultazione delle posizioni debitorie e dei pagamenti eseguiti</li>
+  <li>Gestione della riconciliazione</li>
+  <li>Reportistica nei formati PDF e CSV</li>
+  <li>Registrazione e consultazione del Giornale degli Eventi</li>
+</ul>
 
               </div>
             </div>
@@ -1085,25 +1123,6 @@ Italiano<br />
           
 
           <div class="img-container">
-            <a href="/it/software/m_it-vvfosprojects-mipiace">
-              <img class="img-fluid"
-                src="https://raw.githubusercontent.com/vvfosprojects/miPiace/master/docs/images/mainScreen.JPG"
-                alt="MiPiace"></a>
-          </div>
-          <div class="relate-body">
-            <p class="relate-title">
-              MiPiace
-            </p>
-            <a href="/it/software/m_it-vvfosprojects-mipiace" class="relate-link"> leggi di più &rarr;</a>
-          </div>
-        </div>
-        
-        
-        
-        <div class="col-12 relate">
-          
-
-          <div class="img-container">
             <a href="/it/software/ingv-ingv-hyp2000-ws">
               <img class="img-fluid"
                 src="/assets/images/placeholder-software-riuso.jpg"
@@ -1133,6 +1152,25 @@ Italiano<br />
               PAT - Portale Amministrazione Trasparente
             </p>
             <a href="/it/software/agid-agid-pat" class="relate-link"> leggi di più &rarr;</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+          <div class="img-container">
+            <a href="/it/software/unical-universitadellacalabria-uniauth">
+              <img class="img-fluid"
+                src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.png"
+                alt="uniAuth"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              uniAuth
+            </p>
+            <a href="/it/software/unical-universitadellacalabria-uniauth" class="relate-link"> leggi di più &rarr;</a>
           </div>
         </div>
         
@@ -1322,7 +1360,7 @@ Italiano<br />
         datasets: [{
           fill: false,
           lineTension: 0.1,
-          data: [89,83,100,77,77,77,89,77,77,89,89,77,77,89,89,83,83,77,77,77,87,77,77,77,77,77,77,83,77,83,83,77,77,77,77,95,77,83,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77,77],
+          data: [89,77,77,89,89,77,77,89,89,83,83,77,77,77,87,77,77,77,77,77,77,83,77,89,83,77,77,77,77,95,77,83,77,77,77,77,77,95,77,77,77,77,77,95,77,77,77,77,77,77,77,77,100,77,77,77,77,83,83,77],
           borderWidth: 2,
           borderColor: '#06c'
           }]
