@@ -71,3 +71,12 @@
   tags: []
   language: [it]
   slug: anpr-dashboard
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/covid19-regione.umbria.it.yaml
+  title: API sui dati del COVID-19 della Regione Umbria
+  abstract: Dati sull'emergenza COVID-19 della Regione Umbria
+  contact:
+    name: Regione Umbria
+    logo: https://raw.githubusercontent.com/RegioneUmbria/ecosistema-openapi/master/icon.png
+  tags: []
+  language: [it]
+  slug: covid19-umbria
