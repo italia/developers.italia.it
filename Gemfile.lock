@@ -28,7 +28,7 @@ GEM
     hawkins (2.0.5)
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
-    html-proofer (3.15.1)
+    html-proofer (3.15.2)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -101,7 +101,7 @@ GEM
     parallel (1.19.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.3)
+    public_suffix (4.0.4)
     rainbow (3.0.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
@@ -126,7 +126,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    yell (2.2.1)
+    yell (2.2.2)
 
 PLATFORMS
   ruby
