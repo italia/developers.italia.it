@@ -1,5 +1,7 @@
 # Developers Italia website (https://developers.italia.it)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92a97b26-4e6c-4408-9270-9603f951eccf/deploy-status)](https://app.netlify.com/sites/developers-italia/deploys) [![CircleCI](https://circleci.com/gh/italia/developers.italia.it.svg?style=svg)](https://circleci.com/gh/italia/developers.italia.it)
+
 The website of the developer community designing and developing public digital services in Italy.
 
 The website is developed using [Jekyll](https://jekyllrb.com/) and it's currently served through [GitHub pages](https://pages.github.com/).
@@ -34,6 +36,13 @@ docker-compose down
 
 Wait until the Docker logs explicitly say that the website is served on *0.0.0.0:4000*. Then, open a browser and navigate to http://localhost:4000 to preview the website.
 
+### Recompile handlebars templates
+Within folder `_templates` live some handlebars templates that operate in various areas.
+Once they get modified it is necessary recompile them. To do that we can use `npx` utility as follow:
+
+`npx handlebars@4.0.0 _templates/search.handlebars -f assets/templates/search.tpl.js`
+
+
 ## Makefile
 
 Both the [CircleCI build](.circleci/config.yml) and the [Docker files](docker-compose.yml) leverage a [Makefile](Makefile), facilitating the execution of more complex routines.
@@ -54,6 +63,7 @@ Some environment variables change the behavior of different aspects of your buil
 * **JEKYLL_ENV**: can be set either to *development* (default) or *production*. The latter minifies and optimizes the build artifacts
 
 * **NOKOGIRI_USE_SYSTEM_LIBRARIES**: can be either set to *true* or *false*. You usually want to set this to *true* (default). The [Nokogiri documentation](https://nokogiri.org/tutorials/installing_nokogiri.html#install-with-system-libraries) mentions that this allows to use the OS *libxml2* and *libxslt* libraries, instead of using the Nokogiri ones
+
 
 ## License
 
