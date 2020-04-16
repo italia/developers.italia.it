@@ -45,6 +45,10 @@ resources:
       url: https://github.com/italia/cie-middleware-linux
       desc: The middleware package allows to use the card for accessing web services protected by client authentication.
   - SDK:
+    - title: SDK for Android - Entra con CIE
+      icon: github
+      url: https://github.com/italia/cieid-android-sdk
+      desc: SDK for Android for the "Login with CIE" authentication method
     - title: CIE/CNS Apache Docker
       icon: settings
       url: https://github.com/italia/cie-cns-apache-docker
