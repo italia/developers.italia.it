@@ -28,7 +28,7 @@ GEM
     hawkins (2.0.5)
       em-websocket (~> 0.5)
       jekyll (~> 3.1)
-    html-proofer (3.15.2)
+    html-proofer (3.15.3)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
