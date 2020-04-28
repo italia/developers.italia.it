@@ -80,3 +80,12 @@
   tags: []
   language: [it]
   slug: covid19-umbria
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/istat-sdmx-rest.yaml
+  title: ISTAT SDMX RESTful API
+  abstract: Accesso ai dati ISTAT tramite interfaccia REST SDMX
+  contact:
+    name: ISTAT
+    logo: https://www.istat.it/img/logo.png
+  tags: [data]
+  language: [it]
+  slug: istat-sdmx-rest
