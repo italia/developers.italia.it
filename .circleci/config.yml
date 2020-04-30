@@ -93,14 +93,16 @@ jobs:
       - << : *setup_ssh_gh_pages
       - << : *publish_changes_gh_pages
 
+# In order to use this, the integration needs to be
+# setup first under CircleCI app directory and a
+# SLACK_WEBOOK environment variable needs to be set
+# in the project settings
 commands:
   notify-on-failure:
     steps:
     - status:
         fail_only: true
         only_for_branches: master
-# In order to use this, the integration needs to be
-# setup first under CircleCI app directory
 orbs:
   slack: circleci/slack@3.4.2
 
