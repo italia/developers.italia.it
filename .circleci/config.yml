@@ -2,6 +2,8 @@
 #
 # Check https://circleci.com/docs/2.0/ for more details
 
+version: 2.1
+
 references:
   working_directory: /tmp/gh-pages
 
@@ -70,7 +72,6 @@ references:
         git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]"
         git push origin $CIRCLE_BRANCH
 
-version: 2
 jobs:
   test:
     <<: *load_image
@@ -92,8 +93,18 @@ jobs:
       - << : *setup_ssh_gh_pages
       - << : *publish_changes_gh_pages
 
+commands:
+  notify-on-failure:
+    steps:
+    - status:
+        fail_only: true
+        only_for_branches: master
+# In order to use this, the integration needs to be
+# setup first under CircleCI app directory
+orbs:
+  slack: circleci/slack@3.4.2
+
 workflows:
-  version: 2
   # Every night, deploy to VMs and to gh-pages
   # to make sure latest data are shown
   daily-build-and-deploy:
