@@ -125,45 +125,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C75U26411/">#cie</a></td>
         </tr>
-        <tr role="row" class="even" id="pdnd-general-docs">
-            <td tabindex="0">PDND</td>
-            <td>
-                The <b>PDND</b> (formerly Data and Analytics Framework) is under active development,
-                and the <a href="https://docs.italia.it/italia/daf/daf-docs/">original technical documentation</a> is now outdated and needs a review.
-                <br />
-                <b>Mentor:</b> developers and devops involved in PDND development, you can start asking in slack <a
-                href="https://developersitalia.slack.com/messages/C760XQX9Q">#daf</a> channel.
-                <br />
-                <b>Expected outcome:</b> an upgraded version of <a href="https://docs.italia.it/italia/daf/daf-docs/">the docs</a>.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Micro services architecture</li>
-                    <li>- Docker, Kubernetes, Terraform</li>
-                </ul>
-            </td>
-            <td>Hard</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q">#daf</a></td>
-        </tr>
-        <tr role="row" class="odd" id="pdnd-dataportal-tutorial">
-            <td tabindex="0">PDND</td>
-            <td>
-                The <b>PDND</b> (formerly Data and Analytics Framework) has a <a href="https://dataportal.daf.teamdigitale.it/#/">frontend website</a> for general users who search for open data from public administrations. It needs documentation and tutorials to ease the user journey from general question to the proper dataset.
-                <br />
-                <b>Mentor:</b> developers involved in PDND Dataportal development, you can start asking in slack <a
-                href="https://developersitalia.slack.com/messages/C9W38TN3H">#daf-dataportal</a> channel.
-                <br />
-                <b>Expected outcome:</b> An approachable user documentation with tutorials (ie. text with images, infographics, comics, and so on).
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Graphic skills are valued</li>
-                </ul>
-            </td>
-            <td>Hard</td>
-            <td><a href="https://developersitalia.slack.com/messages/C9W38TN3H">#daf-dataportal</a></td>
-        </tr>
-        <tr role="row" class="even" id="general">
+       <tr role="row" class="even" id="general">
             <td tabindex="0">General</td>
             <td>
                 <b>Your own idea!!</b><br /> Something that you're totally
