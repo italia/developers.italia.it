@@ -53,7 +53,7 @@ Each project on the Ideas list should include:
 And, if possible, an *easy, medium or hard* rating of each project.
 
 
-<table id="issues_table" class="display responsive dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;">
+<table id="issues_table" class="table table-striped table-bordered" cellspacing="0" width="100%" role="grid" style="width: 100%;">
     <thead>
         <tr role="row">
             <th data-priority="2" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 40px;">Project</th>
