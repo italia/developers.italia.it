@@ -2,7 +2,8 @@
 title: Google Season of Docs - Ideas list
 subtitle: Want to get involved with Google Season of Docs? Here are a few ideas
 lang: en
-layout: page
+layout: internal-simple
+image: /assets/images/comelouso-temp-img.jpg
 ---
 
 # Information for Tech Writers 
