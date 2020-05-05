@@ -1771,6 +1771,11 @@ body {
                 letter-spacing: 1px;
             }
         }
+        figure {
+          img {
+            max-height: 40px;
+          }
+        }
         &__url {
             font-weight: 600;
             letter-spacing: 0;
