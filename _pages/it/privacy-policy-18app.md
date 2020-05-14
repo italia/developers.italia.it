@@ -1,12 +1,9 @@
 ---
-title: Privacy Policy sperimentazione 18app
+title: Informativa sul trattamento dei dati personali per la sperimentazione dell’applicazione mobile 18app
+subtitle: art. 13 del Regolamento UE n. 2016/679
 lang: it
 layout: internal-long
 ---
-
-# Informativa sul trattamento dei dati personali per la sperimentazione dell’applicazione mobile 18app
-
-_(art. 13 del Regolamento UE n. 2016/679)_
 
 Il Team per la Trasformazione Digitale presso la Presidenza del Consiglio dei Ministri (di seguito “Team”), ha sviluppato di concerto con il Ministero per i Beni e le Attività Culturali e per il Turismo (nel seguito “MIBACT”), l’applicazione mobile 18app.
 Prima di rendere disponibile a tutti i cittadini l’App, si ritiene utile effettuare una sperimentazione, coinvolgendo un numero limitato di volontari residenti a Roma e provincia al fine di raccogliere indicazioni e suggerimenti sull’utilizzo dell’applicazione. La sperimentazione dell’App comporta il consumo reale del bonus cultura dei partecipanti, quindi potranno essere effettuati acquisti reali online ed offline.
