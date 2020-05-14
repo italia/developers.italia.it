@@ -11,8 +11,10 @@ layout: default
             {% if page.subtitle %}
             <h2>{{page.subtitle}}</h2>
             {%endif%}
-
+            
+            <div class="simplelayout-main-content my-2 my-md-5">
             {{ page.content }}
+            </div>
 
             {% if page.see_also.size > 0 %}
             <h4 class="mt-4">{{t.see_also}}</h4>
