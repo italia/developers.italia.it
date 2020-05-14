@@ -1,0 +1,1485 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+    DAE RespondER
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="DAE RespondER - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/en/software/asl_bo-azienda-usl-di-bologna-dae-responder.html" />
+<meta property="og:url" content="https://developers.italia.it/en/software/asl_bo-azienda-usl-di-bologna-dae-responder.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="DAE RespondER - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"description":"Sviluppiamo i servizi pubblici, insieme","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"@type":"WebPage","url":"https://developers.italia.it/en/software/asl_bo-azienda-usl-di-bologna-dae-responder.html","headline":"DAE RespondER - Developers Italia","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" title="Developers Italia" href="/feed.xml">
+
+  <link href="/assets/fonts.css?202005140602" rel="stylesheet">
+  <link href="/assets/main.css?202005140602" rel="stylesheet">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/icons/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+</head>
+
+<body class="layout-default">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accept</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="http://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              AgID
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none  white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <span class="icon it-expand px-2"></span>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Communities</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Tools</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ENG</span>
+    <span class="sr-only">current language:</span>
+    <span class="icon it-expand px-2 d-none d-lg-inline-block"></span>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it/software/asl_bo-azienda-usl-di-bologna-dae-responder.html"><span lang="it">italiano</span>
+        
+        
+        </a>
+      </li>
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en/software/asl_bo-azienda-usl-di-bologna-dae-responder.html"><span lang="en">english</span>
+        
+        
+        <span class="icon it-check float-right"></span>
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Communities</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Tools</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+            <span
+              class="d-none d-lg-block Header-subtitle">We develop public services, together</span>
+          </a>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3">Follow us</span>
+          <ul class="Header-socialIcons d-inline-block list-inline mb-0">
+            
+            <li class="list-inline-item"><a href="https://twitter.com/developersITA" title="twitter"><span
+                  class="it-twitter icon"></span></a></li>
+            
+            <li class="list-inline-item"><a href="https://medium.com/team-per-la-trasformazione-digitale/developers-italia/home" title="medium"><span
+                  class="it-medium icon"></span></a></li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        
+
+<a id="search-form" data-toggle="modal" data-backdrop="false" data-target="#searchModal">
+  <div class="form-inline pr-2 pr-lg-0" role="search">
+    <div class="form-group position-relative">
+      <span class="text-white mr-3 d-none d-lg-inline">
+        Search
+      </span>
+      <div class="icon icon--white">
+        <span class="it-search"></span>
+      </div>
+    </div>
+  </div>
+</a>
+<div id="searchModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="container">
+          <p class="h1 modal-title d-inline"> Search</p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form autocomplete="off" action="">
+            <div class="form-group">
+              <div class="autocomplete">
+                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
+                <div id="suggestions" class="d-none"></div>
+              </div>
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>Administrations</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Navigation menu</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/platforms" class="Linklist-link "  >
+        
+        Platforms
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/en/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/how" class="Linklist-link "  >
+        
+        How to use it
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/get-involved" class="Linklist-link "  >
+        
+        Get involved
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/contacts" class="Linklist-link "  >
+        
+        Contacts
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/platforms" class="Linklist-link "  >
+        
+        Platforms
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/en/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/how" class="Linklist-link "  >
+        
+        How to use it
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/get-involved" class="Linklist-link "  >
+        
+        Get involved
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/contacts" class="Linklist-link "  >
+        
+        Contacts
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        
+        <img src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_logo.PNG" class="d-inline-block" />
+        
+        
+        <h1 class="d-inline-block">
+          DAE RespondER
+          <span class="badge badge-pill badge-pill--sup badge-primary">1.6.6</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            Registro DAE,allertamento responder
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            Sistema software modulare, in supporto alla gestione dell'arresto  cardiaco-respiratorio (ACR) extra ospedaliero
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search/?publiccode.categories[0]=digital-citizenship">digital citizenship</a>
+</li>
+              
+            </ul>
+          </div>
+          <div class="row legal-main-info">
+            <div class="col-sm">
+              <p><span class="label">Published by </span>
+                
+                <a href="/en/pa/asl_bo">
+                Azienda USL di Bologna
+                </a>
+                
+              </p>
+            </div>
+            
+            
+            <div class="col-sm">
+              <p><span class="label">Software maintained by </span>
+                
+                    
+                        <a href="https://www.eng.it">Engineering Ingegneria Informatica S.p.A.</a>
+                    
+                
+              </p>
+            </div>
+            
+            
+
+            
+            <div class="col-sm">
+              <p><span class="label">Technical contact </span>
+                
+                    
+                    <a href="mailto:d.delgiudice@118er.it">Donatella Del Giudice</a>
+                    
+                    +390514135200
+                
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <p class="h4 text-uppercase">Technical detail</p>
+      <div class="drops-details">
+        <div class="vitality-score">
+          <p>Vitality:</p>
+          <p class="score d-inline-block"> 50%</p>
+          
+          <div id="softwareChart">
+            <canvas id="vitalityChart"></canvas>
+          </div>
+          
+          <div class="info-block d-inline-block">
+            <span class="info-block__icon">i</span>
+            <div class="info-block__msg font-serif">
+              <p><a href="https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa">Vitality is an index</a> calculated following the four main categories of the document:</p>
+<ul>
+  <li><strong>Code activity</strong>: the daily number of commits and merges;</li>
+  <li><strong>Release history</strong>: the daily number of releases;</li>
+  <li><strong>User community</strong>: the number of unique authors;</li>
+  <li><strong>Longevity</strong>: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in <a href="https://github.com/italia/developers-italia-backend">https://github.com/italia/developers-italia-backend</a></li>
+</ul>
+
+            </div>
+          </div>
+          <div class="status-developement">
+            <p>Development status: 
+
+
+<span class="status"> stable </span> 
+ </p>
+          </div>
+        </div>
+        
+        <div class="goto code">
+          <p><a href="https://github.com/Azienda-USL-di-Bologna/DAE-RespondER"> <img src="/assets/icons/software_icons/it-codice.svg">Go to the code &rarr;</a></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="tiled-gallery">
+  <div class="tiled-gallery-inner">
+    
+    
+    
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_chiama.png" data-index="264"
+      data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_chiama.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_chiama.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_chiama.png" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_home.png" data-index="265"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_home.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_home.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_home.png" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_localizzazione.png" data-index="266"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_localizzazione.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_localizzazione.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_localizzazione.png" />
+      </a>
+      
+    </div>
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_Login.png" data-index="267"
+      data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_Login.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_Login.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_Login.png" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_men%C3%B9.png" data-index="268"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_men%C3%B9.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_men%C3%B9.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_men%C3%B9.png" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_nuovo.png" data-index="269"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_nuovo.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_nuovo.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_nuovo.png" />
+      </a>
+      
+    </div>
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_profilo_utente.png" data-index="270"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_profilo_utente.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_profilo_utente.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_profilo_utente.png" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_1.png" data-index="271"
+        data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_1.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_1.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_1.png" />
+      </a>
+      
+    </div>
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_2.png" data-index="272"
+      data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_2.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_2.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_2.png" />
+    </a>
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_3.png" data-index="273"
+      data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_3.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_3.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_3.png" />
+    </a>
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_4.png" data-index="274"
+      data-size="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_4.pngxhttps://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_4.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/Azienda-USL-di-Bologna/DAE-RespondER/master/DAE_richiesta_di_intervento_4.png" />
+    </a>
+    
+    
+
+    
+
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-link tiled-gallery-btn" type="button">
+    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="/assets/icons/camera.png">&nbsp;
+    View all the images
+  </button>
+</div>
+
+
+<hr class="divider mb-0">
+
+<div class=" container-fluid ">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Software functionality </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> App per allertamento </p>
+            
+            <p> Modulo per gestione dei DAE </p>
+            
+            <p> Censimento e gestione dei responder </p>
+            
+            <p> Mappatura DAE </p>
+            
+            <p> Segnalazione DAE guasti </p>
+            
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Used by 1
+              
+              administrations
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Centrali 118 Emilia Romagna </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>CATEGORIES</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search/?publiccode.categories[0]=digital-citizenship">digital citizenship</a>
+</li>
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>detailed information </p>
+            <div class="title">
+              <h2 class="h1">
+                DAE RespondER
+                
+                <span
+                  class="badge badge-pill badge-pill--sup badge-primary">1.6.6</span>
+                
+              </h2>
+              <h2>
+                Registro DAE,allertamento responder
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Last release</span>
+                  2019-09-30
+                  
+                  (1.6.6)
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Type of maintenance</span>
+                  contract
+                </p>
+              </div>
+              
+              
+              <div class="col-sm-12 col-md">
+                <p>
+                  <span class="label">Contract with</span>
+                  
+                    
+                    <a href="https://www.eng.it" class="until">Engineering Ingegneria Informatica S.p.A.</a> until the 2020-06-30
+                    
+                  
+                </p>
+              </div>
+              
+              
+            </div>
+          </div>
+
+          
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                
+                Technical contact
+                
+              </span>
+            </p>
+            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              
+              Technical contact
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                
+                <div class="col-md">
+                  <p>
+                    
+                    <a href="mailto:d.delgiudice@118er.it">Donatella Del Giudice</a>
+                    
+                    +390514135200
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">License</span>
+                  EUPL-1.2
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Platforms</span>
+                  
+                      android<br />
+                  
+                      ios<br />
+                  
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">List of dependencies</span>
+                  
+                  None
+                  
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Enabling platforms</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                      
+                      
+                      <a href="/en/spid" class="enabling_platforms">
+                        SPID
+                      </a>
+                      
+                      
+                      
+                   
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Compliance</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    GDPR 
+                  
+                  
+                  <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/" class="enabling_platforms">
+                    Design Guidelines 
+                  </a>
+                  
+                  
+                  <a href="https://www.agid.gov.it/index.php/en/security/Minimum-ICT-security-measures-for-public-administrations" class="enabling_platforms">
+                    Security Guidelines
+                  </a>
+                  
+                  
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Others information
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+              <div class="other-detail">
+                <p><span class="label">Supported languages</span>
+                  
+                  
+
+Italian<br />
+                  
+                </p>
+              </div>
+              
+              
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Extended description</p>
+              <div class="font-serif page-detail__text">
+                <p>L’obiettivo principale di questo progetto, è quello di utilizzare le tecnologie oggi a disposizione per allertare immediatamente ed in automatico il  personale laico formato all’uso dei DAE, nel momento stesso della attivazione dei mezzi  di  soccorso da parte della   Centrale  Operativa  118,  riducendo   così  il  tempo  di  applicazione della defibrillazione delle vittime di ACR. L’app,  sviluppata dal Sistema 118 della Regione Emilia Romagna nell’ambito  di quanto stabilito dal Decreto del Ministero della Salute del 18 marzo 2011, è stata  quindi progettata  e  realizzata  al  fine  di  promuovere e rendere più efficiente  l’utilizzo dei  DAE  presenti  sul territorio da parte delle persone laiche abilitate  ( Firts responder - BLSD ). L’ app è completamente integrata con  le   CENTRALI OPERATIVE 118  della Regione Emilia Romagna e consente di allertare  gli utenti registrate,  che  si  trovano  nelle  vicinanze  dei  un evento  di Arresto Cardiaco ( ACR ), nel momento stesso in cui la Centrale Operativa 118 lo registra. Chi riceve l’allertamento può quindi rendersi disponibili ad intervenire per effettuare le manovre di rianimazione e per portare un DAE. L’app mostra sulla mappa i DAE censiti e disponibili, in funzione dell’orario di consultazione, ed  il luogo dell’evento su cui intervenire.  L’app  prevede  inoltre,  in  ottica  collaborativa,  la  possibilità di partecipare al sistema al censimento dei DAE presenti sul territorio con le funzioni : “segnala un nuovo DAE” e “segnala un problema”. Per ogni DAE, oltre alla ubicazione, è possibile  definire  la  disponibilità ( giorni, orari ) per  renderne più efficace la localizzazione in caso di  emergenza, ed  anche  gestire le informazioni relative alle scadenze  di  manutenzioni,  con  l’obiettivo futuro di rendere sempre più efficace il monitoraggio della presenza dei DAE sul territorio. Infine è possibile effettuare  una  chiamata telefonica al servizio 118, con  invio  automatico  delle  coordinate per una precisa localizzazione.   L’app  presenta  infine  una sezione documentale nelle quali  sono riportati link di interesse, FAQ, Procedure ecc. Per la corretta funzionalità dei  moduli  pubblicati occorre creare una infrastruttura “server”  che  possa  ospitare  la  componente database  e la  componente web server e  realizzare l’integrazione con il software delle Centrali  Operative 118.  In particolare,  l’oggetto  offerto  in riuso  è  un Sistema software modulare (Mobile Application e Web Application), composto da una componente in APP,  per l allertamento degli  utenti  registrati e  la  localizzazione  dei  dispositivi DAE - Defibrillatore  Automatico Esterno, e  da  una  componente  desktop  per  l’integrale gestione dei DAE  mappati (DAE Manager).  L’applicazione si  integra  al sistema  informatico  verticale della Centrale Operativa 118.
+L’oggetto è stato ideato e progettato dal Sistema 118 Emilia Romagna. La AUSL  Bologna è detentrice dei diritti di sfruttamento industriale (titolarità)  sul codice sorgente e rende disponibile il software alle Amministrazioni che intendono   integrarlo  nella propria realtà. Tale software andrà configurato ed  integrato in funzione della realtà organizzativa e tecnica.
+Il 118  Emilia  Romagna,  si  rende  disponibile  a  farsi  carico della  manutenzione correttiva ed  evolutiva  del  software,  intesa  come sviluppi  e  implementazioni di interesse comune alle amministrazioni riceventi, così da promuovere  economie di scala derivanti dall’impiego di una soluzione unica a livello nazionale. Nel contempo il 118 Emilia Romagna  intende  coordinare  la gestione  evolutiva del  software, intesa come sviluppi  ed  implementazioni personalizzate per le singole realtà, così da favorire e  mantenere l’uniformità funzionale del sistema nel rispetto delle diverse esigenze.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="interestRelatedSoftwares">
+    <h2> Other software that may interest you </h2>
+    <div class="row">
+      <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+          <div class="img-container">
+            <a href="/en/software/agid-agid-pat">
+              <img class="img-fluid"
+                src="/assets/images/placeholder-software-riuso.jpg"
+                alt="PAT - Portale Amministrazione Trasparente"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              PAT - Portale Amministrazione Trasparente
+            </p>
+            <a href="/en/software/agid-agid-pat" class="relate-link"> read more &rarr;</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+          <div class="img-container">
+            <a href="/en/software/unical-universitadellacalabria-uniauth">
+              <img class="img-fluid"
+                src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.png"
+                alt="uniAuth"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              uniAuth
+            </p>
+            <a href="/en/software/unical-universitadellacalabria-uniauth" class="relate-link"> read more &rarr;</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+          <div class="img-container">
+            <a href="/en/software/esrsris-agenziaentrateriscossione-docway-fca">
+              <img class="img-fluid"
+                src="/assets/images/placeholder-software-riuso.jpg"
+                alt="DocWay - FCA"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              DocWay - FCA
+            </p>
+            <a href="/en/software/esrsris-agenziaentrateriscossione-docway-fca" class="relate-link"> read more &rarr;</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+          <div class="img-container">
+            <a href="/en/software/esrsris-agenziaentrateriscossione-auditconsole">
+              <img class="img-fluid"
+                src="/assets/images/placeholder-software-riuso.jpg"
+                alt="DocWay - Audit"></a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              DocWay - Audit
+            </p>
+            <a href="/en/software/esrsris-agenziaentrateriscossione-auditconsole" class="relate-link"> read more &rarr;</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<a href="#" title="back to contents" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">back to contents</span>
+</a>
+
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Project of</p>
+        <div>
+          <a href="https://www.agid.gov.it/">
+            <img class="" src="/assets/images/agid-logo-bb.svg" alt="AgID">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaboration with</p>
+        <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img class="" src="https://teamdigitale.governo.it/images/loghi/governo.svg" alt="">
+              <img class="" src="/assets/icons/logo-mid-white.svg" alt="">
+            </div>
+            <div class="px-2 border-white border-left footer-team-text text-white">
+              DIPARTIMENTO PER LA TRASFORMAZIONE DIGITALE
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social col-md-3 col-lg-4 text-right">
+        <span class="text-white small mr-3 ">Follow us</span>
+        <ul class="d-inline-block footer-social-icons list-inline mt-2 mt-md-3">
+          
+          <li class="list-inline-item"><a href="https://twitter.com/developersITA" title="twitter"
+              class="text-white"><span class="it-twitter"></span>
+              <span class="sr-only">Twitter</span></a></li>
+          
+          <li class="list-inline-item"><a href="https://medium.com/team-per-la-trasformazione-digitale/developers-italia/home" title="medium"
+              class="text-white"><span class="it-medium"></span>
+              <span class="sr-only">Medium</span></a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <ul class="footer-links">
+      
+      
+      <li><a href="/it/privacy-policy/">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali/">Terms and conditions</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script>window.__PUBLIC_PATH__ = "/assets/vendor/bootstrap-italia/dist/fonts"</script>
+
+
+<script src="/assets/vendor/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+
+<script src="/assets/scripts/jquery.dataTables.min.js"></script>
+
+<script src="/assets/scripts/dataTables.responsive.min.js"></script>
+
+<script src="/assets/scripts/moment.js"></script>
+
+<script src="/assets/vendor/chart.js/dist/Chart.min.js"></script>
+
+<script src="/assets/scripts/jquery.mousewheel.min.js"></script>
+
+<script src="/assets/scripts/elasticsearch.min.js"></script>
+<script src="/assets/scripts/throbber.js"></script>
+<script src="/assets/scripts/handlebars.runtime.js"></script>
+<script src="/assets/templates/search.tpl.js"></script>
+<script src="/assets/templates/tot.tpl.js"></script>
+<script src="/assets/templates/suggestion.tpl.js"></script>
+<script src="/assets/templates/pager.tpl.js"></script>
+<script src="/assets/templates/message.tpl.js"></script>
+<script src="/assets/templates/empty.tpl.js"></script>
+<script src="/assets/scripts/esDevelopersItaliaQuery.js"></script>
+<script src="/assets/scripts/esQuery.config.js"></script>
+<script src="/assets/scripts/esQuery.js"></script>
+<script src="/assets/scripts/perfect-scrollbar.min.js"></script>
+<script src="/assets/scripts/photoswipe.min.js"></script>
+<script src="/assets/scripts/photoswipe-ui-default.min.js"></script>
+<script src="/assets/scripts/misc.js"></script>
+
+<script>
+  $(document).on('keydown', function(e) {
+    if (e.keyCode === 9) {
+      $('body').removeClass('hide-focus');
+    } else if (e.keyCode == 191) { // slash
+      $('#cerca').focus();
+      e.preventDefault();
+    }
+  })
+
+  $(document).on('click', function(e) {
+    $('body').addClass('hide-focus');
+  })
+
+  $('*[data-activate-element]').on('click',function(e){
+    e.preventDefault();
+    var genid = $(this).data('activeid');
+    var noscroll = $(this).data('activate-noscroll') ? true : false;
+    var $targetelement = $('*[data-activatedby="'+genid+'"]');
+    $targetelement.toggleClass('deactive');
+    $(this).toggleClass('active');
+    if (noscroll==true) {
+      $('body').toggleClass('stopScrolling--vertical');
+    }
+  });
+
+  $('#moreTags').on('click', function(e) {
+    e.preventDefault();
+    $('.home-software-tags__list').children().removeClass('deactive');
+    $(this).hide();
+  })
+
+  
+  if (document.getElementById("vitalityChart")) {
+    var ctx = document.getElementById("vitalityChart").getContext("2d");
+    ctx.canvas.width = 230;
+    ctx.canvas.height = 38;
+    var myLineChart = new Chart(ctx, {
+      responsive: false,
+      type: 'line',
+      data: {
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59'],
+        datasets: [{
+          fill: false,
+          lineTension: 0.1,
+          data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50],
+          borderWidth: 2,
+          borderColor: '#06c'
+          }]
+      },
+      options: {
+        scales: {
+          xAxes: [{
+            display: false,
+            stacked: true
+          }],
+          yAxes: [{
+            display: false,
+            stacked: true,
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        },
+        legend: {
+          display: false
+        },
+        elements: {
+          point: {
+            radius: 0,
+            hoverRadius: 0,
+            hoverBorderWidth: 0
+          }
+        },
+        layout: {
+          padding: {
+            left: 5,
+            right: 5,
+            top: 5,
+            bottom: 5
+          }
+        },
+        tooltips: {
+          enabled: false
+        }
+      }
+    });
+  }
+  
+
+  $(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 4,
+      loop: true,
+      autoWidth:false,
+      autoHeight:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        960:{
+          items:4
+        }
+      }
+    });
+    owl.on('mousewheel', '.owl-stage', function(e) {
+      if (e.deltaY > 0) {
+        owl.trigger('next.owl');
+      } else {
+        owl.trigger('prev.owl');
+      }
+      e.preventDefault();
+    });
+  })
+</script>
+
+
+ <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-96140462-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+ 
+
+
+  </div>
+</div>
+
+</body>
+</html>

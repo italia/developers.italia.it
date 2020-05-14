@@ -1,11 +1,13 @@
 ---
-title: Google Summer of Code - Ideas list
+title: "Google Summer of Code: information for students"
 subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
-lang: en
-layout: internal-long
+lang: en 
+ref:
+  it: /it/idee-gsoc
+layout: internal-simple
+image: /assets/images/comelouso-temp-img.jpg
 ---
 
-# Information for Students
 First of all, welcome!
 
 These ideas were contributed by our developers and users. They are sometimes
@@ -52,7 +54,7 @@ Each project on the Ideas list should include:
 And, if possible, an *easy, medium or hard* rating of each project.
 
 
-<table id="issues_table" class="display responsive dataTable no-footer dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;">
+<table id="issues_table" class="table table-striped table-bordered" cellspacing="0" width="100%" role="grid" style="width: 100%;">
     <thead>
         <tr role="row">
             <th data-priority="2" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 40px;">Project</th>
@@ -61,108 +63,126 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <th data-priority="10" tabindex="0" aria-controls="issues_table" rowspan="1" colspan="1" style="width: 64px;">Contact</th>
         </tr>
     </thead>
-
     <tbody>
-        <tr role="row" class="odd" id="daf1">
-            <td tabindex="0">DAF</td>
+        <tr role="row" class="odd" id="agave">
+            <td tabindex="0">Developers</td>
             <td>
-                <b>Create an analysis based on open data</b><br /> Data & Analytics Framework (DAF in short) is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
-                By leveraging the <a href="https://github.com/teamdigitale/nteract/tree/daf-develop">daf-dataset-toolbar-search</a> capabilities, the student should ingest some dataset, elaborate it and extract a reasonable output. We have several mentors available, with different expertises, so make sure you discuss with your mentor.
+                <b>Agave CMS</b><br /> 
+                Agave is a free and open source static website generator. The Agave project is currently active and some major milestones have already been reached. As such, this GSoC project will be focused on consolidating the application in order to be considered production ready. Activities will span fullstack from the consolidation of the infrastructure technologies (i.e., prepare the easy deployment) to the templating side, where some work is needed in order to produce solid final templates.
                 <br />
-                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
+                <b>Mentor:</b> Ask on the #design-dev channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> An output of the analysis.
+                <b>Expected outcome:</b> 
+                On the infrastructure side, desired outcomes involve a robust, tested and production ready dockerized environment. For what concerns the templating end, the complete implementation of the Bootstrap Italia directives has to be achieved so that the websites created by using Agave end up being 100% compatible with the Italian design guidelines.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- Open data knowledge</li>
-                    <li>- Data management</li>
+                    <li> React</li>
+                    <li> Ruby on Rails </li>
+                    <li> Docker and CI/CD technologies </li>
                 </ul>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+            <td><a href="https://app.slack.com/client/T6C27AXE0/C7VPAUVB3">#design-dev</a></td>
         </tr>
-        <tr role="row" class="even" id="daf2">
-            <td tabindex="0">DAF</td>
+        <tr role="row" class="even" id="api1">
+            <td tabindex="0">API</td>
             <td>
-                <b>Implement a tool to export visualizations from notebooks and import into DAF</b><br /> The Data & Analytics Framework is an infrastructure to consume and distribute many different kind of datasets coming from many different sources.
-                This project consists in creating a tool to export some visualizations made using a visualization framework (e.g., Semiotic) from the notebooks in order to render them inside DAF.
-                We have several mentors available, with different expertises, so make sure you discuss with your mentor which kind of application and approach may be useful.
+                <b>Implementation of several rate-limit header fields for HTTP inside renowned software products</b> <br />
+                The aim of this project is to work on the new <a href="https://tools.ietf.org/id/draft-polli-ratelimit-headers-01.html">rate-limit header fields for HTTP</a> internet draft. In practice, such novelty has to be implemented in the form of plugins inside world known products, such as traefik, nginx, envoy-proxy and 3scale. As such, it will also be important to interact with the already existing communities built around those tools to ensure the code gets merged.
                 <br />
-                <b>Mentor:</b> Ask on the #daf channel on our slack once you start having a basic idea.
+                <b>Mentor:</b> Ask on the #api channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> A working tool together with tests,
-                documentation and deployment information.
+                <b>Expected outcome:</b>
+                Working plugins for traefik, nginx, envoy-proxy et al. implementing the rate-limit headers. The student should provide a working environment for testing the implementations. 
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- Web development</li>
-                    <li>- Data visualization</li>
-                    <li>- Data management</li>
+                    <li> Golang, JS, Python, Java, C depending on the target platform</li>
+                    <li> Basic Linux knowledge</li>
+                    <li> Docker and CI/CD related technologies</li>
                 </ul>
             </td>
             <td>Hard</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+            <td><a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></td>
         </tr>
-        <tr role="row" class="odd" id="daf3">
-            <td tabindex="0">DAF</td>
+        <tr role="row" class="odd" id="api2">
+            <td tabindex="0">API</td>
             <td>
-                <b>Create a tool to create plots</b><br /> The project
-                involves the evolution or the creation of a tool to create
-                plots using the DAF APIs or graphql based on DAF data.
+                <b>Implement conf API Gateway</b><br /> 
+                This project aims at setting up full fledged API Gateways capable of supporting a set of interoperability technologies like:
+                <ul>
+                    <li> exposing APIs via  OpenAPI3 specifications;</li>
+                    <li> returning  RateLimit header fields;</li>
+                    <li> return errors conformant to RFC7807 (Problem Details for HTTP APIs).</li>
+                </ul>
+                Students will study, install and setup opensource API gateways and reverse proxies like Kong, 3scale, Nginx, WSO2 ensuring that the exposed features are implemented in the more standard way.
+                Where those features require implementing plugins, filters or integration components, students should do it previously contacting the gateway communities. For the ratelimit part, they will interact with students working on <a href="#api1">proposal#2</a>. 
                 <br />
-                <b>Mentor:</b> Data science team #daf channel.
+                <b>Mentor:</b> Ask on the #api channel on our slack once you start having a basic idea.
                 <br />
-                <b>Expected outcome:</b> A working tool together with tests,
-                documentation and deployment information.
+                <b>Expected outcome:</b> 
+                The outcome is a docker-compose or helm chart providing a redundant setup of an API Gateway infrastructure, useful to expose APIs descibed by OAS3 specification files.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- Python</li>
-                    <li>- Data Science</li>
+                    <li> Docker and CI/CD related technologies</li>
+                    <li> HTTP protocol</li>
+                    <li> Python, Java, C depending on the target platforms. </li>
+                    <li> Optional: Kubernetes </li>
                 </ul>
             </td>
-            <td>Easy</td>
-            <td><a href="https://developersitalia.slack.com/messages/C760XQX9Q/">#daf</a></td>
+            <td>Hard</td>
+            <td><a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></td>
         </tr>
         <tr role="row" class="even" id="des1">
             <td tabindex="0">Design</td>
             <td>
-                <b>Create a Joomla theme that implements the Italia Design Guidelines</b><br /> Create a theme for Joomla based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
+                <b>Design system kit for React</b><br /> 
+                Complete the <a href="https://github.com/italia/design-react-kit/">Designers Italia Design React Kit</a> by updating its dependencies and add/fix any missing components. Update the <a href="https://storybook.js.org/">Storybook</a> and improve documentation to make things easier for users. On a separate repository, implement a <a href="https://www.gatsbyjs.org/">Gatsby</a> template in order to ease the adoption of the kit within the public administration and spread its usage.
                 <br />
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A working implementation of the Italia Design System as a Joomla theme.
-                <br />
+                <b>Expected outcome:</b> 
+                A new stable version of the <a href="https://github.com/italia/design-react-kit/">Design React Kit</a>, implementing most of the components from Bootstrap Italia, and a Gatsby template that is easy to use and fully compliant with accessibility rules.
+                This project can be used as a solid starting point:
+                <ul>
+                    <li> <a href="https://github.com/italia/design-italia-gatsby-starterkit">Design Italia Gatsby Starter Kit</a> (additional details can be found on its thread on Forum Italia).</li>
+                </ul>
                 <b>Required skills:</b>
                 <ul>
-                    <li>- CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- Joomla</li>
+                    <li> Design systems</li>
+                    <li> Javascript/ES/React</li>
+                    <li> Basic understanding of StorybookJS and GatsbyJS</li>
                 </ul>
-                <br /> Full idea description:
-                <a href="https://github.com/italia/design-joomla-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
+            <td><a href="https://app.slack.com/client/T6C27AXE0/C7VPAUVB3">#design-dev</a></td>
         </tr>
         <tr role="row" class="odd" id="des2">
             <td tabindex="0">Design</td>
             <td>
-                <b>Create a Drupal theme that implements the Italia Design Guidelines</b><br /> Create a theme for Drupal based on the User Interface design guidelines. The theme has to be created using <a href="https://github.com/italia/bootstrap-italia"> Bootstrap Italia</a> as a dependency.
+                <b>A Wordpress theme for municipalities</b><br /> 
+                Create a Wordpress theme for municipalities based on the Italian design system.
+                The code will be crafted upon <a href="https://italia.github.io/bootstrap-italia/">Bootstrap Italia</a> in order to adhere to the <a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html">HTML templates</a> that are already provided by Designers Italia. Wordpress content types and taxonomy will be consistent with the guidelines available on the <a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">information architecture for municipalities</a> websites document.
+                The Designers Italia community already created two Wordpress themes:
+                <ul>
+                    <li> <a href="https://github.com/italia/design-wordpress-theme">https://github.com/italia/design-wordpress-theme</a></li>
+                    <li> <a href="https://github.com/italia/design-wordpress-theme-wt">https://github.com/italia/design-wordpress-theme-wt</a></li>
+                </ul>
+                These themes are built for general purpose public websites and they may not be entirely validated in terms of accessibility or fully up-to-date. Nevertheless, they can serve as a starting point for the municipalities theme.
                 <br />
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A working implementation of the Italia Design System as a Drupal theme.
+                <b>Expected outcome:</b> 
+                A working Wordpress theme for municipalities based on the Italian design system and ready to be used by any municipality for their own website, with a clear documentation and licensing. The project outcome should aim to the quality of Designers Italia's <a href="https://github.com/italia/design-scuole-wordpress-theme">Wordpress theme for schools</a>.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- Drupal</li>
+                    <li> Design systems and web development</li>
+                    <li> Wordpress plugins and theming best-practices</li>
+                    <li> Understanding of information architecture</li>
                 </ul>
-                <br /> Full idea description:
-                <a href="https://github.com/italia/design-drupal-theme/issues/2">#2</a>
             </td>
             <td>Medium</td>
             <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
@@ -170,169 +190,25 @@ And, if possible, an *easy, medium or hard* rating of each project.
         <tr role="row" class="even" id="des3">
             <td tabindex="0">Design</td>
             <td>
-                <b>Complete the React Web Toolkit </b><br /> This project
-                involves the completion of the React Web Toolkit already
-                created by members of the Italian Digital Transformation Team
-                and the community.
+                <b>A Drupal theme for municipalities</b><br /> 
+                Create a Drupal theme for municipalities based on the Italian design system.
+                The code will be crafted upon <a href="https://italia.github.io/bootstrap-italia/">Bootstrap Italia</a> in order to adhere to the <a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html">HTML templates</a> that are already provided by Designers Italia. Drupal content types and taxonomy will be consistent with the guidelines available on the <a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">information architecture for municipalities</a> websites document.
+                There is already a Drupal theme for general purpose public websites that can serve as a starting point for the municipalities theme:
+                <a href="https://www.drupal.org/project/bootstrap_italia">https://www.drupal.org/project/bootstrap_italia</a>.
                 <br />
                 <b>Mentor:</b> Designers or developers from the Designers Italia team.
                 <br />
-                <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for React.
+                <b>Expected outcome:</b> A working Drupal theme for municipalities based on the Italian design system and ready to be used by any municipality for their own website, with a clear documentation and licensing. The project outcome should aim to the quality of Designers Italia's <a href="https://github.com/italia/design-scuole-wordpress-theme">Wordpress theme for schools</a>.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- React</li>
-                </ul>
-                <br /> <b>Repository reference:</b>
-                <a href="https://github.com/italia/design-react-kit">GitHub
-                Repo</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
-        </tr>
-        <tr role="row" class="odd" id="des4">
-            <td tabindex="0">Design</td>
-            <td>
-                <b>Create the Vue.js Web Toolkit </b><br /> This project
-                involves the creation of the Vue.js Web Toolkit following the
-                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
-                and
-                <a href="https://github.com/italia/bootstrap-italia">Bootstrap
-                Italia</a> created by
-                the Italian Digital Transformation Team.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A complete implementation of the UI Kit
-                 for Vue.js.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- Vue.js</li>
+                    <li> Design systems and web development</li>
+                    <li> Drupal plugins and theming best-practices</li>
+                    <li> Understanding of information architecture</li>
                 </ul>
             </td>
             <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
-        </tr>
-        <tr role="row" class="even" id="des5">
-            <td tabindex="0">Design</td>
-            <td>
-                <b>Create the NativeBase Web Toolkit </b><br /> This project
-                involves the creation of the React Native toolkit following the
-                directives of the <a href="https://github.com/italia/design-ui-kit">UI Kit</a>
-                 and
-                <a href="https://github.com/italia/bootstrap-italia">Bootstrap
-                Italia</a> created by
-                the Italian Digital Transformation Team.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A working theme similar to the ones
-                published in some popular marketplace, e.g. <a href="https://market.nativebase.io">NativeBase</a>.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Frontend development</li>
-                    <li>- React Native</li>
-                    <li>- Theming Native Base</li>
-                </ul>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-devel</a></td>
-        </tr>
-       <tr role="row" class="odd" id="api1">
-            <td tabindex="0">API</td>
-            <td>
-                <b>Port the <i>gen-api-models</i> tool to OpenAPI v3</b><br /> 
-                The <i>gen-api-models</i> tool allows to generate TypeScript
-                definitions of OpenAPI specs. 
-                As such, this proposal requires adapting the existing tool to
-                support the newer OpenAPI v3 specifications and prepare it for
-                the forthcoming releases (e.g., OAS v3.1).
-                <br />
-                <b>Mentor:</b> Developers and API experts of the Developers
-                Italia team.
-                <br />
-                <b>Expected outcome:</b>  
-                the practical work will consist in writing software, tests and
-                documentation in order to reach a stable and usable release of
-                the tool.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Typescript</li>
-                    <li>- REST API Design / OpenAPI v3</li>
-                    <li>- Web Development</li>
-                </ul>
-                <br /> <b>Repository reference:</b>
-                <a href="https://github.com/teamdigitale/io-utils#gen-api-models">GitHub
-                Repo</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
-        </tr>
-        <tr role="row" class="even" id="api2">
-            <td tabindex="0">API</td>
-            <td>
-                <b>Interoperability Model</b><br /> 
-                This project is focused on the new Interoperability Guidelines
-                which are based on the OpenAPI v3 specifications. 
-                As such, the work will consist in the implementation of such
-                guidelines inside some existing popular open source API GW. 
-                For example, some novel features like e.g., standardized
-                throttling headers and problem+json based errors, will have to
-                be implemented in tools like e.g., <i>Kong, WSO2</i>.
-                <br />
-                <b>Mentor:</b> Developers and API experts of the Developers
-                Italia team.
-                <br />
-                <b>Expected outcome:</b>  
-                Patches merged upstream together with solid tests and documentations. 
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- Backend Development (e.g., Java, Python, Go)</li>
-                    <li>- REST API Design / OpenAPI v3</li>
-                </ul>
-                <br /> <b>Reference article:</b>
-                <a
-                href="https://forum.italia.it/t/standardized-headers-for-a-reliable-api-ecosystem/7195">Forum
-                Article</a>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/CDKBYTG74">#api</a></td>
-        </tr>
-        <tr role="row" class="odd" id="wai1">
-            <td tabindex="0">Web Analytics Italia</td>
-            <td>
-                <b>Create a new plugin for Matomo</b><br />This project
-                involves the creation of a new plugin for the web analytics software Matomo,
-                to be used in the
-                <a href="https://designers.italia.it/progetti/web-analytics/">Web Analytics Italia project</a>.
-                Not all the skills listed below are stricly required because they cover a wide variety of plugins.
-                Ask your mentor about what kind of plugin you can develop for Web Analytics Italia.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Web Analytics Italia team.
-                <br />
-                <b>Expected outcome:</b> A working plugin for <a href="https://matomo.org/">Matomo</a>.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li>- PHP</li>
-                    <li>- SQL</li>
-                    <li>- HTML/JS/CSS</li>
-                    <li>- Angular</li>
-                    <li>- Frontend development</li>
-                </ul>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/CD9805QUU">#design-analytics</a></td>
+            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-dev</a></td>
         </tr>
         <tr role="row" class="even" id="general">
             <td tabindex="0">General</td>
@@ -354,7 +230,7 @@ And, if possible, an *easy, medium or hard* rating of each project.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li>- Up to you :-)</li>
+                    <li> Up to you :-)</li>
                 </ul>
             </td>
             <td>Up to you</td>

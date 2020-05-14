@@ -1,5 +1,5 @@
 ---
-title: Publish software for Public Administration 
+title: Publish software for Public Administrations
 lang: en
 ref:
   it: /it/riuso/pubblicazione
@@ -9,6 +9,8 @@ see_also:
   - label: Software acquisition 
     url: /en/reuse/acquisition
 ---
+
+## Publish software for Public Administration 
 
 When an Italian Public Administation develops or commissions software it must
 comply with the [art. 69 of the Codice dell'Amministrazione
@@ -58,6 +60,7 @@ repositories, each administration must **register the code hosting account**
 used to publish all its projects (e.g., the organization's GitHub account). This
 is a one-off operation. See the [guidelines](https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/attachments/annex-A-Guide-to-publishing-software-as-open-source.html#identifying-the-code-hosting-tool) for more information.
 
+<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><i class="it-file" /> Rules of the software catalog</a>
 <a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Code hosting account registration form</a>
 
 ## Third party open source software 

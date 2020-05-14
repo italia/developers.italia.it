@@ -1,0 +1,12 @@
+<ul class="Grid">
+{% for i in icons -%}
+
+  <li class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of6">
+    <div class="u-padding-r-all">
+      <span class="u-text-r-l Icon Icon-{{ i }}"></span>
+      <p>Icon-{{ i }}</p>
+    </div>
+  </li>
+
+{% endfor %}
+</ul>

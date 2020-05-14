@@ -16,7 +16,7 @@
 
 title: Developers Italia
 description: Sviluppiamo i servizi pubblici, insieme
-author: Team Digitale e AgID
+author: Dipartimento per la Trasformazione Digitale e AgID
 twitter:
   username: developersITA
 
@@ -50,22 +50,24 @@ plugins:
   - jekyll-sitemap
   - searchyll
 exclude:
-  - vendor
-  - README.md
-  - LICENSE
+  - .circleci
+  - AUTHORS
+  - docker-compose.yml
+  - Dockerfile
+  - docs
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - circle.yml
   - gulpfile.js
+  - LICENSE
+  - Makefile
+  - node_modules
   - package.json
   - package-lock.json
-  - yarn.lock
+  - README.md
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
-  - node_modules
-
+  - vendor
 
 pagination:
   enabled: true
@@ -89,12 +91,12 @@ owner_full: AgID
 owner_link: http://www.agid.gov.it
 logo: /assets/icons/logo-it.svg
 owner_logo: /assets/images/agid-logo-bb.svg
-partner_short: Team Digitale
-partner_full: Team per la Trasformazione Digitale
-partner_link: https://teamdigitale.governo.it
+partner_short: Dipartimento per la Trasformazione Digitale
+partner_full: Dipartimento per la Trasformazione Digitale
+partner_link: https://innovazione.gov.it/it/chi-siamo/dipartimento/ 
 privacy_link: /it/privacy-policy
 gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
-partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
+partner_logo: /assets/icons/logo-mid-white.svg 
 pill: ""
 url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/ 
 url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
@@ -153,6 +155,7 @@ page_gen:
     data: apis
     template: api-details
     defaults:
+      lang: it
       type: api
     dir: it/api
     #filter_condition: "record['language'].include? 'it'"
@@ -162,6 +165,7 @@ page_gen:
     data: apis
     template: api-details
     defaults:
+      lang: en
       type: api
     dir: en/api
     #filter_condition: "record['language'].include? 'en'"

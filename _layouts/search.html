@@ -108,7 +108,7 @@ layout: default
       </div>
     </div>
     <div class="col-md-9">
-      <div class="intro">
+      <div class="intro text-center">
         <h1 style="font-size: 3rem">{{ page.title }}</h1>
         <div class="abstract-sorting row row-eq-height d-none d-md-flex">
           <div class="results-number col-md-6 d-flex"></div>
@@ -118,13 +118,16 @@ layout: default
               <div class="form-group">
                 <select class="form-control">
                   <option value="relevance" class="active">{{ t.software.sort_by_relevance }}</option>
-                  <option value="az">A/Z</option>
-                  <option value="za">Z/A</option>
+                  <option value="releasedate">{{ t.software.sort_by_release_date }}</option>
+                  <option value="vitality">{{ t.software.sort_by_vitality }}</option>
+                  <option value="az">{{ t.software.sort_by_alphabetic }}</option>
+                  <!-- <option value="za">Z/A</option> -->
                 </select>
               </div>
             </form>
           </div>
         </div>
+        <div class="intro-empty"></div>
       </div>
 
       <div class="container list-item-sorting">
@@ -227,8 +230,10 @@ layout: default
         </div>
         <div class="modal-body">
           <a href="" sort="relevance">{{ t.software.sort_by_relevance }} <i class="it-check"></i></a>
-          <a href="" sort="az">A/Z</a>
-          <a href="" sort="za">Z/A</a>
+          <a href="" sort="vitality">{{ t.software.sort_by_vitality }}</a>
+          <a href="" sort="releasedate">{{ t.software.sort_by_release_date }}</a>
+          <a href="" sort="az">{{ t.software.sort_by_alphabetic }}</a>
+          <!-- <a href="" sort="za">Z/A</a> -->
         </div>
       </div>
     </div>
