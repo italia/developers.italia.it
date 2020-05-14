@@ -4,6 +4,7 @@
 .idea
 .jekyll-metadata
 .sass-cache
+.bundle
 _data/github_members.json
 _data/github_teams.json
 _site
