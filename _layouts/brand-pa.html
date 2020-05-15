@@ -57,9 +57,9 @@ layout: default-pa
                   {% else %}
                   <p class="icon-type-generic-sw">{{ t.software.software_open | upcase }}</p>
                   {% endif %}
-                  <div class="main-image"
-                    style=" background: url({{ description.screenshots | first | default: software.publiccode.logo | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
-                  </div>
+
+                  {% include display-logo.html logo = software.publiccode.logo screenshots = description.screenshots %}
+
                   <p class="name color-inherit">
                     {{ sw_name }}
                   </p>

@@ -28,10 +28,10 @@ layout: default
         {% if page.publiccode.logo %}
         {% if page.publiccode.logo contains 'github' and page.publiccode.logo contains '.svg' %}
         {% assign logo = page.publiccode.logo | append: '?sanitize=true' %}
-        <img src="{{ logo }}" class="d-inline-block" />
         {% else %}
-        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
+        {% assign logo = page.publiccode.logo %}
         {% endif %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -646,11 +646,11 @@ layout: default
         <div class="col-12 relate">
           {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
+
           <div class="img-container">
             <a href="{{ relsw_url }}">
-              <img class="img-fluid"
-                src="{{ relsw_description.screenshots | first | default: relsw.publiccode.logo | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-                alt="{{ relsw_name }}"></a>
+              {% include display-logo.html logo = relsw.publiccode.logo screenshots = relsw_description.screenshots %}
+            </a>
           </div>
           <div class="relate-body">
             <p class="relate-title">
