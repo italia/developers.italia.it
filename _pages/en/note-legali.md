@@ -6,6 +6,7 @@ ref:
 layout: internal-long
 ---
 
+
 [https://developers.italia.it](https://developers.italia.it) is a site that
 aims to contribute to the growth and coordination of a community of developers
 interested in developing instrumental code for the operation of online public
