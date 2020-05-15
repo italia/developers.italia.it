@@ -33,10 +33,11 @@
                     {% if withimages == true %}
 
                     <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper w-100">
+                    {% capture homeClasses %} home-listing-item__img w-100 {% endcapture %}
                     {% include display-logo.html 
-                        itemLogo=item.publiccode.logo 
-                        screenshots=description.screenshots
-                        homePage=true
+                        itemLogo = item.publiccode.logo 
+                        screenshots = description.screenshots
+                        classes = homeClasses
                     %}
                     </a>
                     {% endif %}

@@ -649,7 +649,12 @@ layout: default
 
           <div class="img-container">
             <a href="{{ relsw_url }}">
-              {% include display-logo.html logo = relsw.publiccode.logo screenshots = relsw_description.screenshots %}
+              {% assign swClasses = "d-inline-block" %}
+              {% include display-logo.html 
+                logo = relsw.publiccode.logo 
+                screenshots = relsw_description.screenshots
+                classes = swClasses
+              %}
             </a>
           </div>
           <div class="relate-body">

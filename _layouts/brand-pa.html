@@ -58,7 +58,12 @@ layout: default-pa
                   <p class="icon-type-generic-sw">{{ t.software.software_open | upcase }}</p>
                   {% endif %}
 
-                  {% include display-logo.html logo = software.publiccode.logo screenshots = description.screenshots %}
+                  {% assign paClasses = "main-image" %}
+                  {% include display-logo.html 
+                    logo = software.publiccode.logo 
+                    screenshots = description.screenshots
+                    classes = paClasses
+                  %}
 
                   <p class="name color-inherit">
                     {{ sw_name }}

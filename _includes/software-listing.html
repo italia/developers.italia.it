@@ -19,7 +19,12 @@
         {% endif %}
         {% endif %}
 
-        {% include display-logo.html logo=item.publiccode.logo screenshots=description.screenshots %}
+        {% assign swClasses = "main-image" %}
+        {% include display-logo.html 
+            logo = item.publiccode.logo 
+            screenshots = description.screenshots 
+            classes = swClasses
+        %}
         
         <p class="name color-inherit">
             {{ sw_name }}

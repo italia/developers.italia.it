@@ -1,7 +1,7 @@
 <!-- Workaround for correctly resolving SVG images served by GitHub -->
 {% assign itemLogo = include.itemLogo %}
 {% assign screenshots = include.screenshots %}
-{% assign homePage = include.homePage %}
+{% assign classes = include.classes %}
 {% if itemLogo contains 'github' and itemLogo contains '.svg' %}
   {% assign logo=itemLogo | append: '?sanitize=true' %}
 {% else %}
@@ -13,6 +13,6 @@
 3. Default logo
 4. If everything else fails, defaults to placeholder
  -->
-  <div class="main-image {% if homePage == true %}home-listing-item__img{% endif %} w-100"
-    style="background: url({{ description.screenshots | first | default: logo | default:'/assets/images/placeholder-software-riuso.jpg'}}), url('/assets/images/placeholder-software-riuso.jpg') no-repeat top center;">
+  <div class="{{ classes }}"
+    style="background: url({{ screenshots | first | default: logo | default:'/assets/images/placeholder-software-riuso.jpg'}}), url('/assets/images/placeholder-software-riuso.jpg') no-repeat top center;">
   </div>
