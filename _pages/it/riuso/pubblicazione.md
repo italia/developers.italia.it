@@ -31,7 +31,12 @@ Il processo in sintesi:
 Tutti i repositori di software pubblico devono contenere un file denominato `publiccode.yml` che contiene tutte le informazioni utili al popolamento del [catalogo](/it/software) di Developers Italia. publiccode.yml è uno standard nato in Italia ma in corso di adozione internazionale.
 
 <a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml/it/master/"><i class="it-file" /> Specifiche formato publiccode.yml</a>
-<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use></svg> Editor/validatore</a>
+<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/">
+	<svg class="icon icon-sm icon-white">
+		<use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use>
+	</svg> 
+	Editor/validatore
+</a>
 
 ## Pubblicazione nel catalogo
 
@@ -40,7 +45,7 @@ La pubblicazione nel catalogo, così come il recepimento degli aggiornamenti, è
 **Nota bene:** per consentire al catalogo di Developers Italia di trovare i propri repositori, ciascuna amministrazione deve eseguire un'**operazione una tantum per dichiarare lo strumento di code hosting** da essa prescelto per pubblicare tutti i propri progetti (ad es. la propria organizzazione GitHub). Si vedano le [linee guida](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/attachments/allegato-a-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) per maggiori dettagli.
 
 <a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><i class="it-file" /> Regolamento del catalogo software</a>
-<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Modulo per dichiarare lo strumento di code hosting</a>
+<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Modulo per dichiarare lo strumento di code hosting</a>
 
 ## Software open source di terze parti
 
