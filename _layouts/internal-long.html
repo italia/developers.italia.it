@@ -7,8 +7,14 @@ layout: default
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
     <div class="container d-flex justify-content-center">
         <div class="project__maincontent col-md-10">
-
-            {{ content }}
+            <h1>{{page.title}}</h1>
+            {% if page.subtitle %}
+            <h2>{{page.subtitle}}</h2>
+            {%endif%}
+            
+            <div class="simplelayout-main-content my-2 my-md-5">
+            {{ page.content }}
+            </div>
 
             {% if page.see_also.size > 0 %}
             <h4 class="mt-4">{{t.see_also}}</h4>

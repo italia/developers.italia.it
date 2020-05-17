@@ -10,8 +10,6 @@ see_also:
     url: /en/reuse/acquisition
 ---
 
-## Publish software for Public Administration 
-
 When an Italian Public Administation develops or commissions software it must
 comply with the [art. 69 of the Codice dell'Amministrazione
 Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html)
