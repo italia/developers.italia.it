@@ -39,8 +39,8 @@
 
     <ul class="footer-links">
       {% for link in site.data.footer_links %}
-      {% assign link_name = link[1].title %}
-      <li><a href="{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+      {% assign link_content = link[1].[active_lang] %}
+      <li><a href="{{ link_content.url }}">{{ t[link_content.title ] | default: link_content.title | capitalize }}</a></li>
       {% endfor %}
     </ul>
   </div>
