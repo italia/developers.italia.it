@@ -48,6 +48,7 @@ plugins:
   - jekyll-toc
   - jekyll-sitemap
   - searchyll
+  - liquid-nested-sort
 exclude:
   - .circleci
   - AUTHORS
