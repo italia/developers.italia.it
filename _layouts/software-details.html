@@ -649,11 +649,12 @@ layout: default
 
           <div class="img-container">
             <a href="{{ relsw_url }}">
-              {% assign swClasses = "d-inline-block" %}
+              {% capture swClasses %} w-100 {% endcapture %}
               {% include display-logo.html 
                 logo = relsw.publiccode.logo 
                 screenshots = relsw_description.screenshots
                 classes = swClasses
+                codiceIPA = relsw.publiccode.it.riuso.codiceIPA
               %}
             </a>
           </div>
