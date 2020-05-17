@@ -2,7 +2,7 @@
 title: Note Legali
 lang: it
 ref:
-  en: /en/note-legali
+  en: /en/legal-notice
 layout: internal-long
 ---
 
