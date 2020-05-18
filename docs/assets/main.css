@@ -22991,6 +22991,8 @@ body {
         font-weight: 400;
         font-size: 1rem;
         letter-spacing: 1px; }
+    .apilist__listing figure img {
+      max-height: 40px; }
     .apilist__listing__url {
       font-weight: 600;
       letter-spacing: 0;
