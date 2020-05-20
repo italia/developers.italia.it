@@ -56,3 +56,6 @@
   repos:
     - "https://github.com/KnowageLabs/Knowage-Server"
 
+- name: "Faunalia"
+  repos:
+    - "https://github.com/ghtmtt/DataPlotly"
