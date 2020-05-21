@@ -11,7 +11,8 @@ download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
 build-bundle:
 	gem install bundler
-	bundle install --path vendor/
+	bundle config set path vendor/
+	bundle install
 build-swagger:
 	cd swagger && npm run build
 test:
