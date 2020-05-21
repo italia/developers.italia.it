@@ -9,13 +9,13 @@ Before proceeding further, please review our [Code of Conduct](CODE_OF_CONDUCT.m
 
 # Index
 [Bugs](#bugs)  
-[Issue](#issue)
-[Gitflow](#gitflow) 
-[Releases](#releases)
-[Pull Request](#pull-request)
-[Commits](#commits)
-[Labels](#labels)
-[Community](#community)  
+[Issue](#issue)  
+[Gitflow](#gitflow)  
+[Releases](#releases)  
+[Pull Request](#pull-request)  
+[Commits](#commits)  
+[Labels](#labels)  
+[Community](#community)   
 
 
 # Bugs
