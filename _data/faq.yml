@@ -1,0 +1,20 @@
+it:
+  item1:
+    question: "Prima domanda"
+    answer: "b"
+  item2:
+    question: "Seconda domanda"
+    answer: "d"
+  item3:
+    question: "Terza domanda"
+    answer: "f"
+en:
+  item1:
+    question: "First Question"
+    answer: "b"
+  item2:
+    question: "Second Question"
+    answer: "d"
+  item3:
+    question: "Third Question"
+    answer: "f"
