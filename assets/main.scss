@@ -3,6 +3,7 @@
 @charset "utf-8";
 @import 'vendor/bootstrap-italia/src/scss/bootstrap-italia';
 @import 'footer';
+@import 'errors';
 @import 'softwares';
 @import 'software-detail';
 @import 'search-modal';
@@ -666,9 +667,12 @@ body {
                 margin-bottom: 1rem;
                 word-wrap: break-word;
                 @include media-breakpoint-up(md) {
-                    font-size: 3.5rem;
+                    font-size: 2.7rem;
                     line-height: 1.1;
                     margin-bottom: 2rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 3.5rem;
                 }
             }
         }
@@ -680,6 +684,9 @@ body {
                 @include media-breakpoint-up(md) {
                     margin: 1rem 0;
                 }
+                @include media-breakpoint-up(lg) {
+                    font-size: 2rem;
+                }
             }
             h2 {
                 text-transform: uppercase;
@@ -687,6 +694,9 @@ body {
                 font-weight: 700;
                 letter-spacing: 0;
                 color: #17324D;
+                @include media-breakpoint-up(lg) {
+                    font-size: 1.5rem;
+                }
             }
             a {
                 text-transform: uppercase;
@@ -1761,6 +1771,11 @@ body {
                 letter-spacing: 1px;
             }
         }
+        figure {
+          img {
+            max-height: 40px;
+          }
+        }
         &__url {
             font-weight: 600;
             letter-spacing: 0;
@@ -2068,13 +2083,13 @@ body {
   }
 //   #issues_table_wrapper {
 //     margin-right: 20px;
-  
+
 //     .paginate_button {
 //       a {
 //       text-decoration: none !important;
 //       color: #06D !important;
 //       }
-  
+
 //     }
 //     .paginate_button:hover {
 //       background: transparent !important;
@@ -2090,8 +2105,8 @@ body {
 //     #issues_table_ellipsis:after {
 //       content: '• • •';
 //     }
-  
-    
+
+
 //     table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > td.sorting:after {
 //       display: none !important;
 //     }
@@ -2099,7 +2114,7 @@ body {
 //     table.dataTable thead > tr > td.sorting_asc:after, table.dataTable thead > tr > td.sorting_desc:after {
 //       display: none !important;
 //     }
-  
+
 //     #issues_table_filter {
 //       color: #444e57;
 //       input {
@@ -2112,7 +2127,7 @@ body {
 //     border: 1px solid #999;
 //     padding: 4px;
 //   }
-  
+
 //   #github_filter {
 //     .select2-container {
 //       width: 100% !important;
@@ -2132,7 +2147,7 @@ body {
 //         margin-left: 0.5em;
 //       }
 //     }
-  
+
 //     #issues_table_clear {
 //       box-shadow: none;
 //       width: 100%;
@@ -2140,8 +2155,8 @@ body {
 //       border: none;
 //     }
 //   }
-  
-  
+
+
 //   @media screen and (max-width: 767px) {
 //     #issues_table_wrapper {
 //       .paginate_button {
@@ -2161,7 +2176,7 @@ body {
         background-color: white;
         box-shadow: 0 8px 24px 0 rgba(50,50,50,.15)!important;
         padding: 20px;
-        
+
         ul {
             list-style-type: none;
             margin: 0;

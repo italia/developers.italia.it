@@ -206,7 +206,7 @@ it:
       go_to_detail: vai al dettaglio
       view_all_photos: Guarda tutte le immagini
       tooltip: "
-        [Vitality è un indice](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calcolato prendendo in considerazione le seguenti quattro categorie:
+        [L'indice di vitalità](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa), così come previsto nelle linee guida sull'acquisizione e riuso di software per la PA, è calcolato prendendo in considerazione le seguenti quattro categorie:
 
         * **Code activity**: il numero di commit e merge giornalieri; 
 
@@ -214,11 +214,19 @@ it:
 
         * **User community**: il numero di autori unici; 
 
-        * **Longevity**: l'età del progetto. I range di ogni misura possono essere trovati nel file *vitality-ranges.yml* in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+        * **Longevity**: l'età del progetto.
+        
+
+I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml)."
 
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
+    errors:
+      page_not_found: Pagina non trovata!
+      internal_error: Errore interno
+      forbidden: Accesso negato!
+
 
 en:
   code: eng
@@ -426,7 +434,7 @@ en:
       go_to_detail: go to detail
       view_all_photos: View all the images
       tooltip: "
-        [Vitality is an index](https://lg-acquisizione-e-riuso-software-per-la-pa.readthedocs.io/it/latest/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa) calculated following the four main categories of the document:
+      [The vitality index](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa), as explicited in the guidelines for the acquisition and reuse of software for Italian PA, is calculated according to the following four main categories:
 
         * **Code activity**: the daily number of commits and merges;
 
@@ -434,10 +442,15 @@ en:
 
         * **User community**: the number of unique authors;
 
-        * **Longevity**: the age of the project. The ranges of every measure can be found in the vitality-ranges.yml file in [https://github.com/italia/developers-italia-backend](https://github.com/italia/developers-italia-backend)"
+        * **Longevity**: the age of the project.
+
+
+The ranges of every measure can be found in the [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml) file."
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
-
-
+    errors:
+      page_not_found: Page not found!
+      internal_error: Internal Server Error
+      forbidden: Forbidden!
 

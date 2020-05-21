@@ -45,6 +45,10 @@ resources:
       url: https://github.com/italia/cie-middleware-linux
       desc: Il middleware consente di usare la carta come strumento di accesso per i servizi web.
   - SDK:
+    - title: SDK per Android - Entra con CIE
+      icon: github
+      url: https://github.com/italia/cieid-android-sdk
+      desc: SDK per Android per l'integrazione del sistema di autenticazione Entra con CIE
     - title: CIE/CNS Apache Docker
       icon: settings
       url: https://github.com/italia/cie-cns-apache-docker

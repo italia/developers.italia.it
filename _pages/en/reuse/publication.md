@@ -10,8 +10,6 @@ see_also:
     url: /en/reuse/acquisition
 ---
 
-## Publish software for Public Administration 
-
 When an Italian Public Administation develops or commissions software it must
 comply with the [art. 69 of the Codice dell'Amministrazione
 Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html)
@@ -45,8 +43,8 @@ containing all the information useful to populate the Developers Italia
 [catalogue](/en/software). publiccode.yml is a standard originally created in
 Italy but it is in the process of being adopted internationally. 
 
-<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/"><i class="it-file" /> publiccode.yml specifications</a>
-<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use></svg> Editor/validator</a>
+<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-file"></use></svg> publiccode.yml specifications</a>
+<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use></svg> Editor/validator</a>
 
 ## Catalogue publication 
 
@@ -60,8 +58,8 @@ repositories, each administration must **register the code hosting account**
 used to publish all its projects (e.g., the organization's GitHub account). This
 is a one-off operation. See the [guidelines](https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/attachments/annex-A-Guide-to-publishing-software-as-open-source.html#identifying-the-code-hosting-tool) for more information.
 
-<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><i class="it-file" /> Rules of the software catalog</a>
-<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Code hosting account registration form</a>
+<a class="btn btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-file"></use></svg> Rules of the software catalog</a>
+<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/vendor/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use></svg> Code hosting account registration form</a>
 
 ## Third party open source software 
 

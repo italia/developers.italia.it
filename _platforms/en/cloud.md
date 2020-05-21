@@ -29,12 +29,12 @@ resources:
   - Marketplace:
     - title: Cloud Marketplace
       icon: link
-      url: https://cloud.italia.it/marketplace/supplier/market/index.html
+      url: https://cloud.italia.it/marketplace/
       desc: Cloud services for the PA certified by AgID. 
-    - title: Cloud certification How-to
+    - title: Cloud certification how-to
       icon: link
-      url: https://cloud.italia.it/marketplace/supplier/landing/landing_page.html
-      desc: How-to and access point to the AgID cloud services certifications. 
+      url: https://cloud.italia.it/marketplace/info
+      desc: AgID cloud services certification how-to and links. 
     - title: SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
