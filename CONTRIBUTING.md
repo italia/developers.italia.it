@@ -9,10 +9,10 @@ Before proceeding further, please review our [Code of Conduct](CODE_OF_CONDUCT.m
 
 # Index
 [Bugs](#bugs)  
-[Issue](#issue)  
+[Issues](#issues)  
 [Gitflow](#gitflow)  
 [Releases](#releases)  
-[Pull Request](#pull-request)  
+[Pull Requests](#pull-request)  
 [Commits](#commits)  
 [Labels](#labels)  
 [Community](#community)   
@@ -24,7 +24,7 @@ When you encounter a bug or an issue with the [Developers Italia](https://develo
 about (and we really appreciate it! :rocket:).
 Please read on if you want to understand how to efficiently contribute.
 
-## Issue
+## Issues
 
 1. Browse the [issue section](https://github.com/italia/developers.italia.it/issues) and use the search functionality to look if the
    issue you encountered has already been filed. 
@@ -76,7 +76,7 @@ To see which are the next ones, please check our [Milestones](https://github.com
 The maintainers try to keep the milestones updated in order to show what will be fixed soon and, when possible, they also try to set a consistent end date for such a milestone to be hit.
 
 
-## Pull Request
+## Pull Requests
 
 After opening an issue, you may want to further help the developers. If the issue has been triaged and there is endorsement from the maintainers, you may want to propose a solution for such an issue. That's great and always appreciated! :rocket:
 As such, the tool you need to use for this use case is the `Pull Request` one.
