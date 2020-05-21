@@ -10,7 +10,11 @@ Before proceeding further, please review our [Code of Conduct](CODE_OF_CONDUCT.m
 # Index
 [Bugs](#bugs)  
 [Issue](#issue)
-[Gitflow](#gitflow)  
+[Gitflow](#gitflow) 
+[Releases](#releases)
+[Pull Request](#pull-request)
+[Commits](#commits)
+[Labels](#labels)
 [Community](#community)  
 
 
