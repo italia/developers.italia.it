@@ -1,31 +1,31 @@
 {
   "_args": [
     [
-      "bootstrap-italia@1.3.9",
+      "bootstrap-italia@1.3.10",
       "/home/circleci/project"
     ]
   ],
-  "_from": "bootstrap-italia@1.3.9",
-  "_id": "bootstrap-italia@1.3.9",
+  "_from": "bootstrap-italia@1.3.10",
+  "_id": "bootstrap-italia@1.3.10",
   "_inBundle": false,
-  "_integrity": "sha512-wwdoLigj8xi0UiASvnegRSf1FHMDLpIhkbBKhqpCtejHo+S4FQz8niev/5f7iHP2FgLIG6IB1sCGXcbJlhTG9Q==",
+  "_integrity": "sha512-AxbFkxXiyQVMofKqI0vq+z3bld0Bbs70ebxWzt3JUPt7vByYvBKo5oqQMYFtv7upfwMQgRUIddWhsejeMmALHg==",
   "_location": "/bootstrap-italia",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "bootstrap-italia@1.3.9",
+    "raw": "bootstrap-italia@1.3.10",
     "name": "bootstrap-italia",
     "escapedName": "bootstrap-italia",
-    "rawSpec": "1.3.9",
+    "rawSpec": "1.3.10",
     "saveSpec": null,
-    "fetchSpec": "1.3.9"
+    "fetchSpec": "1.3.10"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-1.3.9.tgz",
-  "_spec": "1.3.9",
+  "_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-1.3.10.tgz",
+  "_spec": "1.3.10",
   "_where": "/home/circleci/project",
   "author": {
     "name": "Presidenza del Consiglio dei Ministri"
@@ -69,7 +69,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-touch-cmd": "0.0.1",
     "gulp-uglify": "^3.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "prettier": "1.16.1",
     "replace-in-file": "^3.4.0"
   },
@@ -113,5 +113,5 @@
     "version": "node scripts/config-sync && git add _config.yml"
   },
   "style": "dist/css/bootstrap-italia.min.css",
-  "version": "1.3.9"
+  "version": "1.3.10"
 }
