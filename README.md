@@ -10,7 +10,7 @@ A [CircleCI job](.circleci/config.yml) builds the sources and commits the result
 
 ## Development 
 
-A development environment can be both brought up directly on the developer machine and in form of a Docker container.
+A development environment can be both brought up directly on the developer machine and in form of a Docker container. 
 
 The same commands -run in the [Dockerfile](Dockerfile)- can also be run directly on the developer machine.
 
