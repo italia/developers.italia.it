@@ -1,12 +1,14 @@
 {
+    "name": "developers-italia-it",
+    "version": "2.4.0",
+    "license": "BSD-3-Clause",
     "dependencies": {
-        "bootstrap-italia": "^1.3.9",
+        "bootstrap-italia": "^1.3.10",
         "chart.js": "^2.9.3",
         "jquery": "^3.4.1"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/italia/developers.italia.it"
-    },
-    "license": "BSD-3-Clause"
+    }
 }

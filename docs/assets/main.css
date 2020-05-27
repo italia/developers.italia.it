@@ -13419,7 +13419,7 @@ nav.pagination-wrapper {
     border: none;
     border-bottom: 2px solid transparent;
     padding: 0.778rem 1.333em;
-    flex: 1 0 1;
+    flex: 1 0 auto;
     white-space: nowrap;
     line-height: 1em;
     display: flex;
@@ -13848,7 +13848,7 @@ nav.pagination-wrapper {
   .back-to-top.back-to-top-show {
     visibility: visible;
     opacity: 1;
-    transition: all 0.2s ease-in-out, transform 0.05s ease-out, visibility 0 linear 0, opacity 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out, transform 0.05s ease-out, visibility 0s linear, opacity 0.1s ease-in-out;
     transform: scale(1); }
   .back-to-top:hover {
     background: #004d99;
@@ -15645,7 +15645,7 @@ _:-ms-fullscreen,
         padding: 12px 24px; }
   .modal.alert-modal .modal-dialog .modal-content .modal-header {
     justify-content: left;
-    align-items: top; }
+    align-items: start; }
     .modal.alert-modal .modal-dialog .modal-content .modal-header .icon {
       fill: #0066cc;
       margin-right: 16px;
@@ -15663,10 +15663,6 @@ _:-ms-fullscreen,
   .modal.it-dialog-link-list .modal-dialog .modal-content .modal-body .link-list-wrapper .link-list {
     margin-bottom: 0;
     padding-bottom: 24px; }
-    .modal.it-dialog-link-list .modal-dialog .modal-content .modal-body .link-list-wrapper .link-list li a {
-      padding: 0; }
-      .modal.it-dialog-link-list .modal-dialog .modal-content .modal-body .link-list-wrapper .link-list li a svg {
-        margin-right: 8px; }
   .modal.popconfirm-modal .modal-dialog {
     max-width: 300px;
     margin-right: auto;
