@@ -68,9 +68,12 @@ references:
 
         git config --global user.email no-reply@teamdigitale.governo.it
         git config --global user.name "Deploy Bot"
-        git add docs
-        git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]"
-        git push origin $CIRCLE_BRANCH
+
+        if [[ $(git status -s | wc -l | awk '{print $1}') -gt 0 ]]; then
+          git add docs
+          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]"
+          git push origin $CIRCLE_BRANCH
+        fi
 
   # In order to use this, the integration needs to be
   # setup first under CircleCI app directory and a
