@@ -45,6 +45,7 @@
 - name: "Opencontent"
   repos:
     - "https://gitlab.com/opencontent/stanzadelcittadino"
+    - "https://gitlab.com/opencontent/opensegnalazioni"
     - "https://gitlab.com/opencontent/openagenda-translate"
     
 - name: "Link.it"
