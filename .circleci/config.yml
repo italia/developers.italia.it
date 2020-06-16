@@ -140,6 +140,7 @@ workflows:
             branches:
               ignore:
                 - master
+                - gh-pages
   # For each commit on the master branch
   # deploy to VMs and to gh-pages
   on-commit-build-and-deploy:
