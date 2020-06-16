@@ -5,7 +5,7 @@
 version: 2.1
 
 references:
-  working_directory: /tmp/gh-pages
+  working_directory: /tmp/developers
 
   load_image: &load_image
     docker:
@@ -51,9 +51,8 @@ references:
         # gh-pages deployment key from circle-ci config
         - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
 
-  # Renames the Jekyll output folder (_site) to gh-pages and
-  # commits it the master branch.
-  # [ci skip] has been added to avoid loops with CircleCI triggers
+  # Store artifacts in a temporary folder, switch branch to
+  # gh-pages and commit changes if any.
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
@@ -61,18 +60,27 @@ references:
         cp -r .well-known _site/
         cp -r github _site/
 
-        rm -rf docs
-        mv _site docs
+        # Copy artifacts to a temporary location
+        cp -a _site /tmp/gh-pages
 
-        echo "developers.italia.it" > docs/CNAME
+        # Hard reset to master to avoid conflicts.
+        # Then, switch branch to gh-pages
+        git reset --hard origin/master
+        git clean -f -d
+        git checkout gh-pages
+
+        # Set the shopt dotglob bit to copy hidden files and directories
+        shopt -s dotglob
+        cp -a /tmp/gh-pages/* .
 
         git config --global user.email no-reply@teamdigitale.governo.it
         git config --global user.name "Deploy Bot"
 
+        # Proceed only if there are changes to commit
         if [[ $(git status -s | wc -l | awk '{print $1}') -gt 0 ]]; then
-          git add docs
-          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]"
-          git push origin $CIRCLE_BRANCH
+          git add .
+          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}"
+          git push origin gh-pages
         fi
 
   # In order to use this, the integration needs to be
