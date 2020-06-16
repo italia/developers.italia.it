@@ -1,2 +1,0 @@
-Contact: contatti@developers.italia.it
-Preferred-Languages: en, it, es
