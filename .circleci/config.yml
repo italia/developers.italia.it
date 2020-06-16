@@ -1,0 +1,152 @@
+# Javascript Node CircleCI 2.1 configuration file
+#
+# Check https://circleci.com/docs/reference-2-1/#section=configuration for more details
+
+version: 2.1
+
+references:
+  working_directory: /tmp/developers
+
+  load_image: &load_image
+    docker:
+      - image: circleci/ruby:2.6.0-node-browsers
+
+  env_vars_test: &env_vars_test
+    environment:
+      - JEKYLL_NO_GITHUB: "true" # Remove Github API integration.
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
+
+  env_vars_prod: &env_vars_prod
+    environment:
+      - JEKYLL_ENV: "production"
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+
+  install_dependencies: &install_dependencies
+    run:
+      name: install-dependencies
+      command: |
+        make include-npm-deps
+        make build-bundle
+        which rsync || sudo apt-get install rsync
+
+  get_crawler_yml_files: &get_crawler_yml_files
+    run:
+      name: get-crawler-yml-files
+      command: |
+        make download-data
+
+  build_bundle_jekyll: &build_bundle_jekyll
+    run:
+      name: build-bundle-jekyll
+      command: |
+        make build-swagger
+        make jekyll-build
+        make test
+
+  setup_ssh_gh_pages: &setup_ssh_gh_pages
+    add_ssh_keys:
+      fingerprints:
+        # gh-pages deployment key from circle-ci config
+        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+
+  # Store artifacts in a temporary folder, switch branch to
+  # gh-pages and commit changes if any.
+  publish_changes_gh_pages: &publish_changes_gh_pages
+    run:
+      name: publish_changes_gh_pages
+      command: |
+        cp -r .well-known _site/
+        cp -r github _site/
+
+        # Move artifacts to a temporary location
+        mv _site /tmp/gh-pages
+
+        # Hard reset to master to avoid conflicts.
+        # Then, switch branch to gh-pages
+        git reset --hard origin/master
+        git clean -f -d
+        git checkout gh-pages
+
+        # Set the shopt dotglob bit to copy hidden files and directories
+        shopt -s dotglob
+        cp -a /tmp/gh-pages/* .
+
+        git config --global user.email no-reply@teamdigitale.governo.it
+        git config --global user.name "Deploy Bot"
+
+        # Proceed only if there are changes to commit
+        if [[ $(git status -s | wc -l | awk '{print $1}') -gt 0 ]]; then
+          git add .
+          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}"
+          git push origin gh-pages
+        fi
+
+  # In order to use this, the integration needs to be
+  # setup first under CircleCI app directory and a
+  # SLACK_WEBOOK environment variable needs to be set
+  # in the project settings
+  notify_on_failure: &notify_on_failure
+    slack/status:
+      fail_only: true
+      only_for_branches: master
+
+jobs:
+  test:
+    <<: *load_image
+    <<: *env_vars_test
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *notify_on_failure
+
+  build_and_deploy_gh_pages:
+    <<: *load_image
+    <<: *env_vars_prod
+    steps:
+      - checkout
+      - << : *install_dependencies
+      - << : *get_crawler_yml_files
+      - << : *build_bundle_jekyll
+      - << : *setup_ssh_gh_pages
+      - << : *publish_changes_gh_pages
+      - << : *notify_on_failure
+
+orbs:
+  slack: circleci/slack@3.4.2
+
+workflows:
+  # Every night, deploy to VMs and to gh-pages
+  # to make sure latest data are shown
+  daily-build-and-deploy:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build_and_deploy_gh_pages
+  # For any branch other than master,
+  # run CI tests at each commit
+  on-commit-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore:
+                - master
+                - gh-pages
+  # For each commit on the master branch
+  # deploy to VMs and to gh-pages
+  on-commit-build-and-deploy:
+    jobs:
+      - build_and_deploy_gh_pages:
+          filters:
+            branches:
+              only:
+                - master
