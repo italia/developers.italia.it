@@ -60,8 +60,8 @@ references:
         cp -r .well-known _site/
         cp -r github _site/
 
-        # Copy artifacts to a temporary location
-        cp -a _site /tmp/gh-pages
+        # Move artifacts to a temporary location
+        mv _site /tmp/gh-pages
 
         # Hard reset to master to avoid conflicts.
         # Then, switch branch to gh-pages
@@ -140,6 +140,7 @@ workflows:
             branches:
               ignore:
                 - master
+                - gh-pages
   # For each commit on the master branch
   # deploy to VMs and to gh-pages
   on-commit-build-and-deploy:
