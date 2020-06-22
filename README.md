@@ -6,7 +6,7 @@ The website of the developer community designing and developing public digital s
 
 The website is developed using [Jekyll](https://jekyllrb.com/) and it's currently served through [GitHub pages](https://pages.github.com/).
 
-A [CircleCI job](.circleci/config.yml) builds the sources and commits the resulting artifacts to GitHub, in the [docs folder](docs). The [same job](.circleci/config.yml) is also triggered every night to get the most updated data feeding the website.
+A [CircleCI job](.circleci/config.yml) builds the sources and commits the resulting artifacts to GitHub, in the [gh-pages branch](https://github.com/italia/developers.italia.it/tree/gh-pages). The [same job](.circleci/config.yml) is also triggered every night to get the most updated data feeding the website.
 
 ## Development 
 
