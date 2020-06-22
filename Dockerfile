@@ -47,6 +47,9 @@ RUN adduser --home ${HOME} --shell /bin/bash --disabled-password ${USER}
 # Set user ownership on workdir and subdirectories
 RUN chown -R ${USER}.${USER} ${HOME}
 
+# Fix permissions for Linux users
+chmod a+rwx -R .
+
 # Set running user
 USER ${USER}
 
