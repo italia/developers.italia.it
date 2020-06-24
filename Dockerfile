@@ -48,7 +48,7 @@ RUN adduser --home ${HOME} --shell /bin/bash --disabled-password ${USER}
 RUN chown -R ${USER}.${USER} ${HOME}
 
 # Fix permissions for Linux users
-chmod a+rwx -R .
+RUN chmod a+rwx -R .
 
 # Set running user
 USER ${USER}
