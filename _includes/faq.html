@@ -1,5 +1,9 @@
 
 {% assign list = site.data.faq[page.lang] %}
+{% assign listSize = list | size %}
+{% if listSize < 1 %}
+{{ site.data.l10n.[page.lang].t.faq.empty }}
+{% endif %}
 {% assign counter = 1 %}
 {% for item in list %}
 <div id="collapseDiv{{ counter }}" class="collapse-div" role="tablist">
