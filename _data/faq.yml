@@ -1,46 +1,110 @@
 it:
   item1:
-    question: Gli artt. 68 e 69 del CAD si applicano alle scuole pubbliche per l'acquisizione ed il riuso di un programma informatico sia esso software per la didattica che software per scopi amministrativi?
+    question: Gli artt. 68 e 69 del CAD si applicano alle scuole pubbliche per
+      l'acquisizione ed il riuso di un programma informatico sia esso software
+      per la didattica che software per scopi amministrativi?
     answer: |
-      I soggetti destinatari delle disposizioni degli artt. 68 e 69 del CAD sono le pubbliche amministrazioni di cui all’art. 1, comma 2, del decreto legislativo 30 marzo 2001, n. 165, nel rispetto del riparto di competenza di cui all’art. 117 della Costituzione; tra queste, si annoverano gli istituti e scuole di ogni ordine e grado e le istituzioni educative.
-      Il combinato disposto degli artt. 68 e 69 del CAD non opera alcuna distinzione circa la tipologia di scopo di un software. L’oggetto dell’obbligo sancito dalle richiamate disposizioni è il software di titolarità della pubblica amministrazione.
+      I soggetti destinatari delle disposizioni degli artt. 68 e 69 del CAD
+      sono le pubbliche amministrazioni di cui all’art. 1, comma 2, del decreto
+      legislativo 30 marzo 2001, n. 165, nel rispetto del riparto di competenza
+      di cui all’art. 117 della Costituzione; tra queste, si annoverano gli
+      istituti e scuole di ogni ordine e grado e le istituzioni educative.
+      Il combinato disposto degli artt. 68 e 69 del CAD non opera alcuna
+      distinzione circa la tipologia di scopo di un software. L’oggetto
+      dell’obbligo sancito dalle richiamate disposizioni è il software di
+      titolarità della pubblica amministrazione.
   item2:
     question: In quali casi la PA è considerata titolare di un software?
     answer: |
-      L’amministrazione deve considerarsi titolare di un software realizzato su proprie specifiche indicazioni ogni qual volta che:  
+      L’amministrazione deve considerarsi titolare di un software realizzato su
+      proprie specifiche indicazioni ogni qual volta che:  
       <ul>
-      <li>abbia commissionato la soluzione, attraverso un contratto di appalto o altra fattispecie negoziale, e il contratto preveda l’acquisizione in capo ad essa di tutti i diritti di proprietà intellettuale e industriale sul software sviluppato su sua committenza o comunque non attribuisca tale titolarità in capo all’appaltatore o a terzi;</li>
+      <li>abbia commissionato la soluzione, attraverso un contratto di appalto
+      o altra fattispecie negoziale, e il contratto preveda l’acquisizione in
+      capo ad essa di tutti i diritti di proprietà intellettuale e industriale
+      sul software sviluppato su sua committenza o comunque non attribuisca
+      tale titolarità in capo all’appaltatore o a terzi;</li>
       <li>il software sia stato realizzato da risorse interne all’amministrazione.</li>
       </ul>
   item3:
     question: Gli artt. 68 e 69 del CAD si applicano prima di ogni procurement di software?
     answer: |
-      Gli artt. 68 e 69 del CAD si applicano in ogni caso di acquisizione da parte delle PA di soluzioni, programmi informatici o parti di esso indipendentemente dal tipo di procedura. 
-      Per ulteriori informazioni in merito al CAD si veda <a href="https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html">questo link</a>.
+      Gli artt. 68 e 69 del CAD si applicano in ogni caso di acquisizione da
+      parte delle PA di soluzioni, programmi informatici o parti di esso
+      indipendentemente dal tipo di procedura. 
+      Per ulteriori informazioni in merito al CAD si veda <a
+      href="https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html">questo
+      link</a>.
   item4:
     question: Il software non open source di titolarità di una PA può essere messo a Riuso?
     answer: |
-      È necessario distinguere tra software sviluppato specificamente su richiesta della Pubblica Amministrazione (o sviluppato al suo interno) e software di natura commerciale di cui un’amministrazione abbia invece acquisito una licenza d’uso. Solo il software appartenente alla prima categoria è soggetto all’art. 69 del CAD in materia di riuso: per tali soluzioni le amministrazioni devono obbligatoriamente acquisire la piena titolarità del codice sorgente e devono procedere con il rilascio in open source. Il software commerciale acquisito invece mediante licenza d’uso non può essere messo a riuso.
+      È necessario distinguere tra software sviluppato specificamente su
+      richiesta della Pubblica Amministrazione (o sviluppato al suo interno)
+      e software di natura commerciale di cui un’amministrazione abbia invece
+      acquisito una licenza d’uso. Solo il software appartenente alla prima categoria
+      è soggetto all’art. 69 del CAD in materia di riuso: per tali soluzioni le
+      amministrazioni devono obbligatoriamente acquisire la piena titolarità del
+      codice sorgente e devono procedere con il rilascio in open source. Il software
+      commerciale acquisito invece mediante licenza d’uso non può essere messo
+      a riuso.
   item5:
-    question: Quali indicazioni sono previste ai fini dell’adempimento dell’art. 69 relativamente alla scelta della licenza?
+    question: Quali indicazioni sono previste ai fini dell’adempimento
+      dell’art. 69 relativamente alla scelta della licenza?
     answer: |
-      Le “Linee guida su acquisizione e riuso di software per le pubbliche amministrazioni”, adottate dall’AgID in attuazione dagli articoli 68 e 69 del CAD, prevedono che la scelta della licenza da parte di una PA sia effettuata scegliendo una licenza tra quelle certificate da Open Source Iniziative. Per ulteriori informazioni in merito alle licenza si veda <a href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/riuso-software/licenze-aperte-e-scelta-di-una-licenza.html">questa risorsa</a>.
+      Le “Linee guida su acquisizione e riuso di software per le pubbliche
+      amministrazioni”, adottate dall’AgID in attuazione dagli articoli 68 e 69
+      del CAD, prevedono che la scelta della licenza da parte di una PA sia
+      effettuata scegliendo una licenza tra quelle certificate da Open Source
+      Iniziative. Per ulteriori informazioni in merito alle licenza si veda <a
+      href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/riuso-software/licenze-aperte-e-scelta-di-una-licenza.html">questa
+      risorsa</a>.
   item6:
-    question: E’ possibile nell’ambito del processo di Riuso di una soluzione applicare, in virtù del principio di compatibilità delle licenze, all’opera derivata una licenza diversa da quella apposta all’opera originaria?
+    question: E’ possibile nell’ambito del processo di Riuso di una soluzione
+      applicare, in virtù del principio di compatibilità delle licenze, all’opera
+      derivata una licenza diversa da quella apposta all’opera originaria?
     answer: |
-      Le “Linee guida su acquisizione e riuso di software per le pubbliche amministrazioni”, adottate dall’AgID in attuazione dagli articoli 68 e 69 del CAD, definiscono, al paragrafo 3.5.3, l’albero decisionale per la scelta di una licenza aperta; in particolare, se il rilascio del software si riferisce ad una modifica di software open source esistente (quindi preso a riuso da altre amministrazioni o di proprietà di terze parti) l’amministrazione utilizzerà la stessa licenza con la quale è stato originariamente distribuito il software, per favorirne la massima interoperabilità e riuso con altri utilizzatori del medesimo software.
+      Le “Linee guida su acquisizione e riuso di software per le pubbliche
+      amministrazioni”, adottate dall’AgID in attuazione dagli articoli 68 e 69
+      del CAD, definiscono, al paragrafo 3.5.3, l’albero decisionale per la
+      scelta di una licenza aperta; in particolare, se il rilascio del software
+      si riferisce ad una modifica di software open source esistente (quindi
+      preso a riuso da altre amministrazioni o di proprietà di terze parti)
+      l’amministrazione utilizzerà la stessa licenza con la quale è stato
+      originariamente distribuito il software, per favorirne la massima
+      interoperabilità e riuso con altri utilizzatori del medesimo software.
   item7:
-    question: A quali organi/autorità competenti è possibile segnalare la mancata applicazione degli artt. 68 e 69 del CAD da parte di una PA? 
+    question: A quali organi/autorità competenti è possibile segnalare la
+      mancata applicazione degli artt. 68 e 69 del CAD da parte di una PA? 
     answer: |
-      Ai sensi dell’art. 17, comma 1-quater è istituito presso l’AgID l’Ufficio del Difensore civico per il digitale che ha il compito di raccogliere tutte le segnalazioni relative alle presunte violazioni del Codice dell’Amministrazione Digitale, o di ogni altra norma in materia di digitalizzazione ed innovazione, a garanzia dei diritti digitali dei cittadini e delle imprese.
-      Chiunque può segnalare presunte violazioni delle disposizioni del CAD, tra cui quelle ex artt. 68 e 69, accedendo all’apposita <a href="https://difensorecivicodigitale.gov.it/index.php?a=add">area dedicata</a> presente sul sito dell’AgID
+      Ai sensi dell’art. 17, comma 1-quater è istituito presso l’AgID l’Ufficio
+      del Difensore civico per il digitale che ha il compito di raccogliere
+      tutte le segnalazioni relative alle presunte violazioni del Codice
+      dell’Amministrazione Digitale, o di ogni altra norma in materia di
+      digitalizzazione ed innovazione, a garanzia dei diritti digitali dei
+      cittadini e delle imprese.
+      Chiunque può segnalare presunte violazioni delle disposizioni del CAD,
+      tra cui quelle ex artt. 68 e 69, accedendo all’apposita <a
+      href="https://difensorecivicodigitale.gov.it/index.php?a=add">area
+      dedicata</a> presente sul sito dell’AgID
   item8:
-    question: Quali sanzioni potrebbero essere comminate ad una PA qualora acquisisca soluzioni, programmi informatici senza effettuare la valutazione comparativa di tipo tecnico ed economico? 
+    question: Quali sanzioni potrebbero essere comminate ad una PA qualora
+      acquisisca soluzioni, programmi informatici senza effettuare la valutazione
+      comparativa di tipo tecnico ed economico? 
     answer: |
-      Il CAD non prevede sanzioni dirette; tuttavia, qualora una PA disattenda alle disposizioni concernenti le modalità di acquisizione di un software potrebbero configurarsi profili di responsabilità dirigenziale e disciplinare fermo restando l’eventuale responsabilità per danno erariale.
+      Il CAD non prevede sanzioni dirette; tuttavia, qualora una PA disattenda
+      alle disposizioni concernenti le modalità di acquisizione di un software
+      potrebbero configurarsi profili di responsabilità dirigenziale
+      e disciplinare fermo restando l’eventuale responsabilità per danno
+      erariale.
   item9:
-    question: Quali sanzioni potrebbero essere comminate ad una PA qualora non proceda al rilascio in open source del software da essa sviluppato o commissionato? 
+    question: Quali sanzioni potrebbero essere comminate ad una PA qualora non
+      proceda al rilascio in open source del software da essa sviluppato
+      o commissionato? 
     answer: |
-      Il CAD non prevede sanzioni dirette; tuttavia, fermi restando eventuali profili di responsabilità dirigenziale e disciplinare, il mancato rilascio in riuso delle soluzioni software impedisce ad altre amministrazioni di procedere alla relativa valutazione ed acquisizione in riuso, configurando così una possibile responsabilità per danno erariale.
+      Il CAD non prevede sanzioni dirette; tuttavia, fermi restando eventuali
+      profili di responsabilità dirigenziale e disciplinare, il mancato
+      rilascio in riuso delle soluzioni software impedisce ad altre
+      amministrazioni di procedere alla relativa valutazione ed acquisizione in
+      riuso, configurando così una possibile responsabilità per danno erariale.
 
 en:
