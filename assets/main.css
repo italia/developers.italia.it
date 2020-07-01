@@ -23236,3 +23236,6 @@ body {
     .sideblock-wrapper .sideblock .section-nav .toc-h3 a {
       padding-left: 1rem;
       font-size: 0.9em !important; }
+
+.faq {
+  width: 45%; }
