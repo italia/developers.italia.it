@@ -38,3 +38,4 @@ l'Italia Digitale*
 
 Below you'll find instructions for acquiring software and for publishing the software developed by your organization.
 
+Furthermore, to clarify any other doubts, it is possible to consult the [Frequently Asked Questions](/en/faq) section.

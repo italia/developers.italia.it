@@ -28,3 +28,5 @@ Gli articoli [68](https://docs.italia.it/italia/piano-triennale-ict/codice-ammin
 Le [linee guida per l'Acquisizione e il riuso di software per la Pubblica Amministrazione]({{ site.url_lineeguidariuso }}) emesse dall'*Agenzia per l'Italia Digitale* ([pubblicate](https://www.gazzettaufficiale.it/eli/id/2019/05/23/19A03233/sg) in Gazzetta Ufficiale) descrivono in dettaglio questo processo.
 
 Qui trovi le indicazioni operative per utilizzare software di altre amministrazioni e per pubblicare il software della tua amministrazione.
+
+Per chiarire ulteriori dubbi è anche possibile consultare la sezione [Domande Frequenti](/it/faq).
