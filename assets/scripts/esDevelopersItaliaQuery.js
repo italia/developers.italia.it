@@ -702,11 +702,9 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
   } else if (keyword !== 'undefined') {
     var language = this.config['language'];
     var $intro = $('.intro > h1');
-    // $intro.html('');
+    var sanitized = $(keyword.split('+').join(' ')).text();
     $intro.html(
-      // '<h1>' +
-      this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"' 
-      // + '</h1>'
+      this.config['intro'][language] + ' "' + sanitized + '"' 
       );
   }
 
@@ -858,7 +856,8 @@ esDevelopersItaliaQuery.prototype.renderIntro = function (tot) {
 
   if (keyword !== 'undefined') {
     $intro.text('');
-    $intro.html(this.config['intro'][language] + ' "' + keyword.split('+').join(' ') + '"');
+    var sanitized = $(keyword.split('+').join(' ')).text();
+    $intro.html(this.config['intro'][language] + ' "' + sanitized + '"');
   } else {
     $intro.text('');
     $intro.html(this.config['intro_empty'][language]);
