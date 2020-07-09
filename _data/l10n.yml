@@ -6,6 +6,8 @@ it:
     cookiebar_accept: Accetto
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
     cookiebar_privacy_policy: Privacy policy
+    faq:
+      empty: Attualmente non ci sono Domande Frequenti visualizzabili
     follow_us: seguici su
     footer_address: Indirizzo
     footer_address_sub: ''
@@ -236,6 +238,8 @@ en:
     cookiebar_accept: Accept
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
     cookiebar_privacy_policy: Privacy policy
+    faq:
+      empty: Currently there are no Frequently Asked Questions to display
     follow_us: follow us
     footer_address: Address
     footer_address_sub: ''
