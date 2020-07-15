@@ -60,3 +60,7 @@
 - name: "Faunalia"
   repos:
     - "https://github.com/ghtmtt/DataPlotly"
+ 
+ - name: "PEC Parser"
+   repos:
+    - "https://github.com/biagioT/java-pec-parser"
