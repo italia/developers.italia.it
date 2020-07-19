@@ -6,7 +6,7 @@
       <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
 
         <div class="d-flex align-items-center">
-          <a href="{{ site.owner_link }}" class="py-2 d-inline-block">
+          <a href="{{ site.owner_link }}" target="_blank" rel="noopener noreferrer" class="py-2 d-inline-block">
             <span class="d-inline-block d-md-none d-lg-none white-color">
               {{ site.owner_short }}
             </span>
@@ -15,7 +15,7 @@
             </span>
           </a>
           <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
-          <a href="{{ site.partner_link }}" class="py-2 d-inline-block">
+          <a href="{{ site.partner_link }}" target="_blank" rel="noopener noreferrer" class="py-2 d-inline-block">
             <span class="d-inline-block d-md-none d-lg-none  white-color">
               {{ site.partner_short }}
             </span>
@@ -71,7 +71,7 @@
           <span class="text-white mr-3">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons d-inline-block list-inline mb-0">
             {% for social in site.data.social %}
-            <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span
+            <li class="list-inline-item"><a href="{{ social[1].link }}" target="_blank" rel="noopener noreferrer" title="{{ social[1].name }}"><span
                   class="it-{{ social[0] }} icon"></span></a></li>
             {% endfor %}
           </ul>

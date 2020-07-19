@@ -5,15 +5,14 @@
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.project_of }}</p>
         <div>
-          <a href="https://www.agid.gov.it/">
-            <img class="" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="AgID">
-          </a>
+          <a href="https://www.agid.gov.it/" target="_blank" rel="noopener noreferrer"><img class=""
+              src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="AgID"></a>
         </div>
       </div>
       <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
-        <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/">
+        <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/" target="_blank" rel="noopener noreferrer">
           <div class="d-flex">
             <div class="d-flex">
               <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
@@ -29,7 +28,8 @@
         <span class="text-white small mr-3 ">{{ t.follow_us | capitalize }}</span>
         <ul class="d-inline-block footer-social-icons list-inline mt-2 mt-md-3">
           {% for social in site.data.social %}
-          <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"
+          <li class="list-inline-item"><a href="{{ social[1].link }}" target="_blank" rel="noopener noreferrer"
+             title="{{ social[1].name }}"
               class="text-white"><span class="it-{{ social[0] }}"></span>
               <span class="sr-only">{{ social[1].name | capitalize }}</span></a></li>
           {% endfor %}

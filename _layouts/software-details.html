@@ -126,17 +126,17 @@ layout: default
         </div>
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
-          <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
+          <p><a href="{{ description.documentation }}" target="_blank" rel="noopener noreferrer"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
             t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
         <div class="goto code">
-          <p><a href="{{ page.publiccode.url }}"> <img src="/assets/icons/software_icons/it-codice.svg">{{
+          <p><a href="{{ page.publiccode.url }}" target="_blank" rel="noopener noreferrer"> <img src="/assets/icons/software_icons/it-codice.svg">{{
             t.software.goToCode }} &rarr;</a></p>
         </div>
         {% if page.publiccode.roadmap != null and page.publiccode.roadmap != "" %}
         <div class="goto road">
-          <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
+          <p><a href="{{ page.publiccode.roadmap }}" target="_blank" rel="noopener noreferrer"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
             t.software.goToRoadmap }} &rarr;</a></p>
         </div>
         {% endif %}
@@ -522,7 +522,7 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
-                  {% if all_false %} 
+                  {% if all_false %}
                   {{ t.software.dependencies_none }}
                   {% else %}
                       {% if p.pagopa == true %}
@@ -559,25 +559,25 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
-                  {% if all_false %} 
+                  {% if all_false %}
                   {{ t.software.dependencies_none }}
                   {% else %}
                   {% if p.gdpr == true %}
-                    GDPR 
+                    GDPR
                   {% endif %}
                   {% if p.lineeGuidaDesign == true %}
-                  <a href="{{ t.software.design_guidelines_url }}" class="enabling_platforms">
-                    {{ t.software.design_guidelines }} 
+                  <a href="{{ t.software.design_guidelines_url }}" target="_blank" rel="noopener noreferrer" class="enabling_platforms">
+                    {{ t.software.design_guidelines }}
                   </a>
                   {% endif %}
                   {% if p.misureMinimeSicurezza == true %}
-                  <a href="{{ t.software.security_guidelines_url }}" class="enabling_platforms">
+                  <a href="{{ t.software.security_guidelines_url }}" target="_blank" rel="noopener noreferrer" class="enabling_platforms">
                     {{ t.software.security_guidelines }}
                   </a>
                   {% endif %}
                   {% if p.modelloInteroperabilita == true %}
-                  <a href="{{ t.software.interoperability_model_url }}" class="enabling_platforms">
-                    {{ t.software.interoperability_model }} 
+                  <a href="{{ t.software.interoperability_model_url }}" target="_blank" rel="noopener noreferrer" class="enabling_platforms">
+                    {{ t.software.interoperability_model }}
                   </a>
                   {% endif %}
                   {% endif %}
@@ -646,7 +646,7 @@ layout: default
               {% if description.apiDocumentation != nil and description.apiDocumentation != "" %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.api_documentation }}</span>
-                  <a href="{{ description.apiDocumentation }}">{{ sw_name }} API</a>
+                  <a href="{{ description.apiDocumentation }}" target="_blank" rel="noopener noreferrer">{{ sw_name }} API</a>
                 </p>
               </div>
               {% endif %}

@@ -39,7 +39,8 @@
                 </div>
                 <div class="row mw-md-50">
                     {% assign privacy_policy_url = newsletterdata.privacy_policy | default: "https://developers.italia.it/it/privacy-policy" %}
-                    <a target="_blank" class="ml-1 text-white font-weight-bold" href="{{ privacy_policy_url }}">Privacy
+                    <a href="{{ privacy_policy_url }}" target="_blank" rel="noopener noreferrer"
+                      class="ml-1 text-white font-weight-bold">Privacy
                         Policy</a>
                 </div>
 

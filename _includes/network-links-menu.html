@@ -8,7 +8,7 @@
     {% assign link = item | last%}
     <li class="{{liclass}} {{link.class}} {% if forloop.first %}first-delimiter{%endif%}" >
         {% if link.url %}
-        <a target="_blank" href="{{link.url}}">{{t[link.title]}}</a>
+        <a href="{{link.url}}" target="_blank" rel="noopener noreferrer">{{t[link.title]}}</a>
         {% else %}
         <span>{{t[link.title]}}</span>
         {% endif %}

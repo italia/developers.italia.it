@@ -31,7 +31,8 @@
                            </svg>
                         </span>
                         {% endif %}
-                        <a href="{{item.url}}" class="d-block project__resources-itemtitle">{{item.title}}</a>
+                        <a href="{{item.url}}" target="_blank"
+                          rel="noopener noreferrer" class="d-block project__resources-itemtitle">{{item.title}}</a>
                         <p>{{item.desc}}</p>
                     </li>
                     {% endfor %}

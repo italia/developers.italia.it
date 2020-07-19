@@ -17,11 +17,11 @@
 					{% endif %}
 
 					<li class="d-flex project__leaders__item mb-3">
-						<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"><img width="50"
-								src="{{member.avatar_url}}"></a>
+						<a href="{{member.html_url}}" title="{{member.login}}" target="_blank" rel="noopener noreferrer">
+							<img width="50" src="{{member.avatar_url}}">
+						</a>
 						<div class="ml-2 d-flex">
-							<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"
-								class="align-self-center">{{member.name | default: member.login}}</a>
+							<a href="{{member.html_url}}" title="{{member.login}}" target="_blank" rel="noopener noreferrer" class="align-self-center">{{member.name | default: member.login}}</a>
 						</div>
 					</li>
 
