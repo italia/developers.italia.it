@@ -1,6 +1,9 @@
-# This file lists the repositories of third-party open source software indexed by
-# Developers Italia. If you want your software to be listed in the Developers italia
-# catalog, please add its repository to this file by opening a pull request.
+# This file lists the repositories of third-party open source software
+# indexed by Developers Italia. If you want your software to be listed
+# in the Developers italia catalog, please add its repository to
+# this file by opening a pull request.
+
+---
 
 - name: "GlobaLeaks"
   repos:
@@ -17,19 +20,19 @@
 - name: "Idra"
   repos:
     - "https://github.com/OPSILab/Idra"
-    
+
 - name: "Libreoffice powered by CIB"
   repos:
     - "https://github.com/cibsoftware/LibreOfficePoweredByCIB-metadata"
-    
+
 - name: "Seedoo Community"
   repos:
     - "https://github.com/seedoo/seedoo-core"
-    
+
 - name: "OpenWISP 2 Controller"
   repos:
     - "https://github.com/openwisp/openwisp-controller"
-    
+
 - name: "Jaffree"
   repos:
     - "https://github.com/kokorin/Jaffree"
@@ -37,17 +40,17 @@
 - name: "FastReport"
   repos:
     - "https://github.com/FastReports/FastReport"
-    
+
 - name: "WikiToLearn"
   repos:
     - "https://github.com/WikiToLearn/WikiToLearn"
-    
+
 - name: "Opencontent"
   repos:
     - "https://gitlab.com/opencontent/stanzadelcittadino"
     - "https://gitlab.com/opencontent/opensegnalazioni"
     - "https://gitlab.com/opencontent/openagenda-translate"
-    
+
 - name: "Link.it"
   repos:
     - "https://github.com/link-it/govpay"
@@ -60,7 +63,7 @@
 - name: "Faunalia"
   repos:
     - "https://github.com/ghtmtt/DataPlotly"
- 
+
 - name: "PEC Parser"
   repos:
     - "https://github.com/biagioT/java-pec-parser"
