@@ -21,7 +21,8 @@
 
         {% assign swClasses = "main-image" %}
         {% include display-logo.html 
-            logo = software.publiccode.logo 
+            logo = software.publiccode.logo
+            id = software.id
             codiceIPA = software.publiccode.it.riuso.codiceIPA
             screenshots = description.screenshots 
             classes = swClasses

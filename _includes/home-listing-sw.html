@@ -35,7 +35,8 @@
                     <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper w-100">
                     {% capture homeClasses %} home-listing-item__img w-100 {% endcapture %}
                     {% include display-logo.html 
-                        itemLogo = item.publiccode.logo 
+                        logo = item.publiccode.logo 
+                        id = item.id 
                         screenshots = description.screenshots
                         classes = homeClasses
                         codiceIPA = item.publiccode.it.riuso.codiceIPA

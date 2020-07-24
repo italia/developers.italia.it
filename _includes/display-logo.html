@@ -4,6 +4,7 @@ Logo and screenshots handler.
 
 {% assign itemLogo = include.itemLogo %}
 {% assign screenshots = include.screenshots %}
+{% assign id = include.id %}
 {% assign classes = include.classes %}
 {% assign codiceIPA = include.codiceIPA | default: "false" %}
 
@@ -19,18 +20,47 @@ Logo and screenshots handler.
 {% assign placeholderScreen = "/assets/images/cover_software_opensource.png" %}
 {% endif %}
 
+{% assign picture = screenshots | first | default: logo | default: placeholderScreen %}
+
 {% comment %}
 Show images: 
 1. Screenshot
+2. Software ID
 2. Logo
 3. Default placeholder
 4. If everything else fails, defaults to placeholder (second "url")
 {% endcomment %}
+<div class="sw-{{id}}"></div>
+<script>
+  // these functions are in charge to check
+  // whether software logo exists using
+  // onerror event for img tag.
+  // If it is not exists or other kind of error
+  // are returned from request it will replace
+  // with a simple placeholder.
+  function checkImage (src, good, bad) {
+      var img = new Image();
+      img.onload = good; 
+      img.onerror = bad;
+      img.src = src;
+  }
 
-  <div class="{{ classes }}"
-    style="background-image: url({{ screenshots | first | default: logo | default: placeholderScreen }}), url('{{ placeholderScreen }}');
-      background-position: top center;
-      background-repeat: no-repeat; 
-      background-size: cover;
-      height:150px; ">
-  </div>
+  function setImage(src, rootEl) {
+    const el = `<div class="{{ classes }}"
+      style="
+        background-position: top center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        height:150px; ">
+    </div>`;
+    $el = $(el);
+    $el.css('background-image', 'url(' + src + ')');
+    $(rootEl).html($el);
+  }
+
+  checkImage(
+    "{{ picture }}", 
+    function(){ setImage(this.src, ".sw-{{id}}"); },
+    function(){ setImage("{{ placeholderScreen }}", ".sw-{{id}}"); } 
+  );
+  </script>
