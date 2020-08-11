@@ -594,11 +594,34 @@ layout: default
               </div>
               {% endif %}
               {% if page.publiccode.localisation.localisationReady == true %}
+
               <div class="other-detail">
                 <p><span class="label">{{ t.software.supported_languages }}</span>
-                  {% for language in page.publiccode.localisation.availableLanguages %}
+                  {% if page.publiccode.localisation.availableLanguages.size > 10 %}
+                  {% for language in page.publiccode.localisation.availableLanguages limit: 10 %}
                   {% include set-language-supported.html lang=language %}
                   {% endfor %}
+                </p>
+                <p>
+                  <a data-toggle="collapse" href="#otherLanguage" 
+                    role="button" aria-expanded="false"
+                    class="count" aria-controls="otherLanguage">
+                    {{ t.langs.show_all }}
+                    <span class="or it-expand"></span>
+                    <span class="and it-collapse"></span>
+                  </a>
+                </p>
+                <div class="collapse" id="otherLanguage">
+                  {% for language in page.publiccode.localisation.availableLanguages offset: 10 %}
+                  {% include set-language-supported.html lang=language %}
+                  {% endfor %}
+                </div>
+
+                {% else %}
+                {% for language in page.publiccode.localisation.availableLanguages %}
+                {% include set-language-supported.html lang=language %}
+                {% endfor %}
+                {% endif %}
                 </p>
               </div>
               {% endif %}
