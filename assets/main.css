@@ -20463,6 +20463,20 @@ hr.divider {
     .detail-sheet .main .other-detail,
     .detail-sheet .main .relatedSoftwares {
       padding-bottom: 2em; }
+      .detail-sheet .main .other-detail a,
+      .detail-sheet .main .relatedSoftwares a {
+        display: block; }
+        .detail-sheet .main .other-detail a.count,
+        .detail-sheet .main .relatedSoftwares a.count {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 3em 0 2em; }
+        .detail-sheet .main .other-detail a.count[aria-expanded="false"] .and,
+        .detail-sheet .main .relatedSoftwares a.count[aria-expanded="false"] .and {
+          display: none; }
+        .detail-sheet .main .other-detail a.count[aria-expanded="true"] .or,
+        .detail-sheet .main .relatedSoftwares a.count[aria-expanded="true"] .or {
+          display: none; }
       .detail-sheet .main .other-detail p .label,
       .detail-sheet .main .relatedSoftwares p .label {
         color: gray; }
