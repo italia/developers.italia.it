@@ -38,8 +38,10 @@ COPY package.json .
 # Temporarily set user to root
 USER root
 
-# Install required software
-RUN which rsync || sudo apt-get install rsync
+# rsync is needed by Swagger
+RUN apt-get install -y --no-install-recommends rsync \
+  && apt-get clean \
+  && rm -fr /var/lib/apt/lists/*
 
 # Run as unprivileged user
 RUN adduser --home ${HOME} --shell /bin/bash --disabled-password ${USER}
