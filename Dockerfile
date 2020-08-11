@@ -1,12 +1,17 @@
 FROM circleci/ruby:2.6.0-node-browsers
 
-# Env variables definition
-ENV USER developers
-ENV HOME /usr/src/developers.italia.it
 ENV PORT 4000
 
-# Set the work directory
-WORKDIR ${HOME}
+WORKDIR /usr/src/developers.italia.it
+
+USER root
+
+# rsync is needed by Swagger
+RUN apt-get install -y --no-install-recommends rsync \
+  && apt-get clean \
+  && rm -fr /var/lib/apt/lists/*
+
+USER ${RUNAS}
 
 # Copy useful files inside the workdir
 COPY .well-known .well-known
@@ -35,31 +40,11 @@ COPY Makefile .
 COPY package-lock.json .
 COPY package.json .
 
-# Temporarily set user to root
-USER root
-
-# rsync is needed by Swagger
-RUN apt-get install -y --no-install-recommends rsync \
-  && apt-get clean \
-  && rm -fr /var/lib/apt/lists/*
-
-# Run as unprivileged user
-RUN adduser --home ${HOME} --shell /bin/bash --disabled-password ${USER}
-
-# Set user ownership on workdir and subdirectories
-RUN chown -R ${USER}.${USER} ${HOME}
-
-# Fix permissions for Linux users
-RUN chmod a+rwx -R .
-
-# Set running user
-USER ${USER}
-
 RUN make include-npm-deps
 RUN make build-bundle
 RUN make download-data
 RUN make build-swagger
 
-EXPOSE ${PORT}
+EXPOSE 4000
 
 CMD ["make", "local"]

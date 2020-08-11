@@ -8,6 +8,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    user: "${RUNAS?Try $ echo RUNAS=$(id -u):$(id -g) >> .env}"
     env_file:
       - .env
     ports:
