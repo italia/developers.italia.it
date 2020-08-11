@@ -596,6 +596,27 @@ hr {
 
         .other-detail,
         .relatedSoftwares {
+            a {
+                display: block;
+    
+                &.count {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin: 3em 0 2em;
+                }
+    
+                &.count[aria-expanded="false"] {
+                    .and {
+                        display: none;
+                    }
+                }
+    
+                &.count[aria-expanded="true"] {
+                    .or {
+                        display: none;
+                    }
+                }
+            }
             padding-bottom: 2em;
 
             p {
