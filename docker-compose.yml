@@ -2,6 +2,15 @@ version: '3.3'
 
 services:
 
+  elasticsearch:
+    image: 'bitnami/elasticsearch:latest'
+    volumes:
+      - ./elasticsearch.dev.yml:/opt/bitnami/elasticsearch/config/elasticsearch.yml
+    ports:
+      - 9200:9200
+    networks:
+      - overlay
+
   devita_website:
     image: italia/developers.italia.it
     container_name: devita_website
@@ -22,6 +31,9 @@ services:
       - /usr/src/developers.italia.it/_data/crawler
       - /usr/src/developers.italia.it/node_modules
       - /usr/src/developers.italia.it/vendor
+    depends_on:
+      - elasticsearch
+    command: ["wait-for-it", "elasticsearch:9200", "--timeout=60", "--", "make", "local"]
     networks:
       - overlay
 
