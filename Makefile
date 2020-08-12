@@ -1,5 +1,3 @@
-VENDOR_DIR = assets/vendor/
-
 .PHONY: build deploy
 download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
@@ -24,10 +22,6 @@ jekyll-build:
 deploy-vm:
 	rsync --delete -avP --exclude "Makefile" --rsync-path="sudo -u www-data rsync" _site/ developers.italia.it:/apps/www/developers.italia.it/web/
 include-npm-deps:
-	mkdir -p $(VENDOR_DIR)
 	npm install
-	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
-	cp -r node_modules/chart.js $(VENDOR_DIR)
-	cp -r node_modules/bootstrap-italia $(VENDOR_DIR)
 build: | build-bundle include-npm-deps download-data build-swagger jekyll-build
 build-test: | build test
