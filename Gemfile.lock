@@ -76,6 +76,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.3.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     liquid (4.0.3)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -148,6 +150,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-toc
+  kramdown-parser-gfm
   minima (~> 2.5)
   octokit (~> 4.18)
   parallel
