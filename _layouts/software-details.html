@@ -28,10 +28,10 @@ layout: default
         {% if page.publiccode.logo %}
         {% if page.publiccode.logo contains 'github' and page.publiccode.logo contains '.svg' %}
         {% assign logo = page.publiccode.logo | append: '?sanitize=true' %}
-        <img src="{{ logo }}" class="d-inline-block" />
         {% else %}
-        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
+        {% assign logo = page.publiccode.logo %}
         {% endif %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -594,11 +594,34 @@ layout: default
               </div>
               {% endif %}
               {% if page.publiccode.localisation.localisationReady == true %}
+
               <div class="other-detail">
                 <p><span class="label">{{ t.software.supported_languages }}</span>
-                  {% for language in page.publiccode.localisation.availableLanguages %}
+                  {% if page.publiccode.localisation.availableLanguages.size > 10 %}
+                  {% for language in page.publiccode.localisation.availableLanguages limit: 10 %}
                   {% include set-language-supported.html lang=language %}
                   {% endfor %}
+                </p>
+                <p>
+                  <a data-toggle="collapse" href="#otherLanguage" 
+                    role="button" aria-expanded="false"
+                    class="count" aria-controls="otherLanguage">
+                    {{ t.langs.show_all }}
+                    <span class="or it-expand"></span>
+                    <span class="and it-collapse"></span>
+                  </a>
+                </p>
+                <div class="collapse" id="otherLanguage">
+                  {% for language in page.publiccode.localisation.availableLanguages offset: 10 %}
+                  {% include set-language-supported.html lang=language %}
+                  {% endfor %}
+                </div>
+
+                {% else %}
+                {% for language in page.publiccode.localisation.availableLanguages %}
+                {% include set-language-supported.html lang=language %}
+                {% endfor %}
+                {% endif %}
                 </p>
               </div>
               {% endif %}
@@ -646,11 +669,18 @@ layout: default
         <div class="col-12 relate">
           {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
+
           <div class="img-container">
             <a href="{{ relsw_url }}">
-              <img class="img-fluid"
-                src="{{ relsw_description.screenshots | first | default: relsw.publiccode.logo | default: '/assets/images/placeholder-software-riuso.jpg' }}"
-                alt="{{ relsw_name }}"></a>
+              {% capture swClasses %} w-100 {% endcapture %}
+              {% include display-logo.html 
+                logo = relsw.publiccode.logo 
+                id = relsw.id 
+                screenshots = relsw_description.screenshots
+                classes = swClasses
+                codiceIPA = relsw.publiccode.it.riuso.codiceIPA
+              %}
+            </a>
           </div>
           <div class="relate-body">
             <p class="relate-title">

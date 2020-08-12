@@ -18,8 +18,7 @@ services:
     # assets, _data, node_modules, vendor
     volumes:
       - .:/usr/src/developers.italia.it
-      - /usr/src/developers.italia.it/assets
-      - /usr/src/developers.italia.it/_data
+      - /usr/src/developers.italia.it/_data/crawler
       - /usr/src/developers.italia.it/node_modules
       - /usr/src/developers.italia.it/vendor
     networks:

@@ -1,0 +1,42 @@
+{% comment %}
+Logo and screenshots handler.
+{% endcomment %}
+
+{% assign itemLogo = include.itemLogo %}
+{% assign screenshots = include.screenshots %}
+{% assign id = include.id %}
+{% assign classes = include.classes %}
+{% assign codiceIPA = include.codiceIPA | default: "false" %}
+
+{% if itemLogo contains 'github' and itemLogo contains '.svg' %}
+  {% assign logo=itemLogo | append: '?sanitize=true' %}
+{% else %}
+  {% assign logo=itemLogo %}
+{% endif %}
+
+{% if codiceIPA != "false" %}
+{% assign placeholderScreen = "/assets/images/placeholder-software-riuso.jpg" %}
+{% else %}
+{% assign placeholderScreen = "/assets/images/cover_software_opensource.png" %}
+{% endif %}
+
+{% assign picture = screenshots | first | default: logo | default: placeholderScreen %}
+
+{% comment %}
+Show images: 
+1. Screenshot
+2. Software ID
+2. Logo
+3. Default placeholder
+4. If everything else fails, defaults to placeholder (second "url")
+
+Utility functions are located in assets/js/logos.js and loaded by head.html
+{% endcomment %}
+<div class="sw-{{id}}"></div>
+<script>
+  checkImage(
+    "{{ picture }}", 
+    function(){ setImage(this.src, ".sw-{{id}}"); },
+    function(){ setImage("{{ placeholderScreen }}", ".sw-{{id}}"); } 
+  );
+</script>
