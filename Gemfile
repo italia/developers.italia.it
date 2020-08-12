@@ -17,6 +17,9 @@ gem "minima", "~> 2.5"
 # install html-proofer
 gem "html-proofer"
 
+# install kramdown-parser-gfm (from kramdown version 2 this is needed)
+gem "kramdown-parser-gfm"
+
 # speed up parallel github fetches
 gem "parallel"
 
