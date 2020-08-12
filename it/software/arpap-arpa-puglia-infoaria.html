@@ -20,7 +20,7 @@
   </title>
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v3.8.7" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="InfoAria Arpa Puglia - Developers Italia" />
 <meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
 <meta property="og:locale" content="it" />
@@ -34,14 +34,14 @@
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","url":"https://developers.italia.it/it/software/arpap-arpa-puglia-infoaria.html","headline":"InfoAria Arpa Puglia - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/it/software/arpap-arpa-puglia-infoaria.html","headline":"InfoAria Arpa Puglia - Developers Italia","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   <link rel="alternate" type="application/rss+xml" title="Developers Italia" href="/feed.xml">
 
-  <link href="/assets/fonts.css?202008121048" rel="stylesheet">
-  <link href="/assets/main.css?202008121048" rel="stylesheet">
+  <link href="/assets/fonts.css?202008121435" rel="stylesheet">
+  <link href="/assets/main.css?202008121435" rel="stylesheet">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1019,13 +1019,13 @@ A partire dal file di configurazione InfoAria-centraline.yml viene
 generato il file D_output.xml eseguendo lo script D_test.pl.<br />
 I percorsi di questi file si trovano all’interno del file D.pm nelle variabili:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my $CONFIG_CENTRALINE_FILE = 'InfoAria-Centraline.yml';
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my $CONFIG_CENTRALINE_FILE = 'InfoAria-Centraline.yml';
 my $D_FILE_NAME = "D_output.xml";  
 </code></pre></div></div>
 
 <p>All’interno del file D_test.pl va modificato l’anno:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>InfoAria::D::generaXml(2018);   
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>InfoAria::D::generaXml(2018);   
 </code></pre></div></div>
 
 <p>Lo script è stato testato su Windows 7 con ActivePerl 5.24 [build 2402

@@ -20,7 +20,7 @@
   </title>
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v3.8.7" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="PEC Parser - Developers Italia" />
 <meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
 <meta property="og:locale" content="en" />
@@ -34,14 +34,14 @@
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","url":"https://developers.italia.it/en/software/biagiot-java-pec-parser-09abab.html","headline":"PEC Parser - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/en/software/biagiot-java-pec-parser-09abab.html","headline":"PEC Parser - Developers Italia","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
   <link rel="alternate" type="application/rss+xml" title="Developers Italia" href="/feed.xml">
 
-  <link href="/assets/fonts.css?202008121048" rel="stylesheet">
-  <link href="/assets/main.css?202008121048" rel="stylesheet">
+  <link href="/assets/fonts.css?202008121435" rel="stylesheet">
+  <link href="/assets/main.css?202008121435" rel="stylesheet">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -979,21 +979,21 @@
 <p><strong>Esempio di utilizzo</strong>:</p>
 
 <blockquote>
-  <p><code class="highlighter-rouge">MimeMessage mimeMessage = ...; Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);</code></p>
+  <p><code class="language-plaintext highlighter-rouge">MimeMessage mimeMessage = ...; Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);</code></p>
 </blockquote>
 
 <p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un oggetto MimeMessage, rappresentante un messaggio PEC:</p>
 
 <ul>
-  <li>Busta di trasporto (<code class="highlighter-rouge">Busta</code>)</li>
-  <li>Eventuale messaggio di Posta Elettronica Certificata (<code class="highlighter-rouge">PEC</code>)</li>
-  <li>Eventuale ricevuta (<code class="highlighter-rouge">RicevutaPEC</code>)</li>
+  <li>Busta di trasporto (<code class="language-plaintext highlighter-rouge">Busta</code>)</li>
+  <li>Eventuale messaggio di Posta Elettronica Certificata (<code class="language-plaintext highlighter-rouge">PEC</code>)</li>
+  <li>Eventuale ricevuta (<code class="language-plaintext highlighter-rouge">RicevutaPEC</code>)</li>
 </ul>
 
 <p>Il messaggio viene elaborato anche se non PEC:</p>
 
 <ul>
-  <li>Messaggio ricevuto su una casella di Posta Elettronica Certificata: l’oggetto <code class="highlighter-rouge">PEC</code> conterrà le informazioni del messaggio normale in quanto comunque incapsulato in una busta</li>
+  <li>Messaggio ricevuto su una casella di Posta Elettronica Certificata: l’oggetto <code class="language-plaintext highlighter-rouge">PEC</code> conterrà le informazioni del messaggio normale in quanto comunque incapsulato in una busta</li>
   <li>Messaggio ricevuto su una casella di posta ordinaria: in questo caso la Busta rappresenta il messaggio normale</li>
 </ul>
 
