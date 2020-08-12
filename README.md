@@ -8,9 +8,9 @@ The website is developed using [Jekyll](https://jekyllrb.com/) and it's currentl
 
 A [CircleCI job](.circleci/config.yml) builds the sources and commits the resulting artifacts to GitHub, in the [gh-pages branch](https://github.com/italia/developers.italia.it/tree/gh-pages). The [same job](.circleci/config.yml) is also triggered every night to get the most updated data feeding the website.
 
-## Development 
+## Development
 
-A development environment can be both brought up directly on the developer machine and in form of a Docker container. 
+A development environment can be both brought up directly on the developer machine and in form of a Docker container.
 
 The same commands -run in the [Dockerfile](Dockerfile)- can also be run directly on the developer machine.
 
