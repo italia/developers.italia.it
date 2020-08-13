@@ -4,5 +4,5 @@
 
 <li class="home-software-tags__item  {% if include.deactive %}deactive{% endif %}">
         <a
-                href="{% if active_lang == 'en'%}/en/search{% else %}/it/search{%endif%}/?{{ field }}={{ include.tag }}">{{ label }}</a>
+                href="{% if active_lang == 'en'%}/en/search{% else %}/it/search{%endif%}?{{ field }}={{ include.tag }}">{{ label }}</a>
 </li>
