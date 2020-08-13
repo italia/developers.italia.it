@@ -64,10 +64,12 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
 
     // IDs of DOM elements containing input checkboxes to use
     'filterKeys': {
+      'publiccode.intendedAudience.scope': 'list-tags',
       'publiccode.categories': 'list-tags',
       'publiccode.developmentStatus': 'list-status'
     },
     'filterKeysMobileSelectors': {
+      'publiccode.intendedAudience.scope  ': 'pills-arguments',
       'publiccode.categories': 'pills-arguments',
       'publiccode.developmentStatus': 'pills-development_status'
     }
@@ -551,6 +553,7 @@ function esDevelopersItaliaQuery(config, params) {
 
     // filterKeys
     'filterKeys': {
+      'publiccode.intendedAudience.scope': 'list-tags',
       'publiccode.categories': 'list-tags',
       'publiccode.developmentStatus': 'list-status'
     },
