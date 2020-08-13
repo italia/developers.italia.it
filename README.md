@@ -62,8 +62,6 @@ Some environment variables change the behavior of different aspects of your buil
 
 * **JEKYLL_ENV**: can be set either to *development* (default) or *production*. The latter minifies and optimizes the build artifacts
 
-* **NOKOGIRI_USE_SYSTEM_LIBRARIES**: can be either set to *true* or *false*. You usually want to set this to *true* (default). The [Nokogiri documentation](https://nokogiri.org/tutorials/installing_nokogiri.html#install-with-system-libraries) mentions that this allows to use the OS *libxml2* and *libxslt* libraries, instead of using the Nokogiri ones
-
 
 ## License
 
