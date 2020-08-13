@@ -347,12 +347,21 @@ layout: default
   </div>
 </div>
 
-{% if page.publiccode.categories %}
+{% if page.publiccode.intendedAudience.scope %}
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>{{ t.software.itendend_audience | upcase }}</strong>
+    {% for tag in page.publiccode.intendedAudience.scope limit: 3 %}
+    {% include set-tag.html tag=tag field="publiccode.intendedAudience.scope[0]" %}
+    {% endfor %}
+  </div>
+</div>
+{% elsif page.publiccode.categories %}
 <div class="container">
   <div class="tags-relate text-center">
     <strong>{{ t.software.categories | upcase }}</strong>
     {% for tag in page.publiccode.categories limit: 3 %}
-    {% include set-tag.html tag=tag %}
+    {% include set-tag.html tag=tag field="publiccode.categories[0]" %}
     {% endfor %}
   </div>
 </div>
