@@ -151,6 +151,7 @@ it:
       sort_by_vitality: Più attivi
       sort_by_alphabetic: Alfabetico
       categories: Categorie
+      itendend_audience: Ambito di applicazione
       results: risultati
       variant_by: Variante di
       published_by: Pubblicato da
@@ -383,6 +384,7 @@ en:
       sort_by_alphabetic: Alphabetical
       filters: Filters
       categories: Categories
+      itendend_audience: Intended Audience
       results: results
       variant_by: Variant of
       published_by: Published by
