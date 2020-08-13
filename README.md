@@ -14,7 +14,10 @@ A development environment can be both brought up directly on the developer machi
 
 The same commands -run in the [Dockerfile](Dockerfile)- can also be run directly on the developer machine.
 
-The [docker-compose.yml](docker-compose.yml) file leverages some environment variables that should be declared in an *.env* file, located in the root of this repository. A [.env.example](.env.example) file has some exemplar values. Before proceeding, copy the [.env.example](.env.example) into *.env* and modify the environment variables as needed.
+The [docker-compose.yml](docker-compose.yml) file uses environment variables declared in the file `.env` file, in the root directory.
+Please refer to [`.env.example`](.env.example) for the detailed description of those variables.
+
+Before proceeding, copy the [`.env.example`](.env.example) into `.env` and modify the environment variables as needed.
 
 Then, build the container, running:
 
@@ -47,21 +50,6 @@ Once they get modified it is necessary recompile them. To do that we can use `np
 
 Both the [CircleCI build](.circleci/config.yml) and the [Docker files](docker-compose.yml) leverage a [Makefile](Makefile), facilitating the execution of more complex routines.
 You can have a look at the [Makefile](Makefile) to know more about the exact commands used to build the website.
-
-## Environment variables
-
-Some environment variables change the behavior of different aspects of your build/execution:
-
-* **ELASTICSEARCH_URL**: the full Elasticsearch URL prefixed by the HTTP schema (http:// - https://). This is optional. If not set, Jekyll will exclude the [Searchyll integration](https://github.com/italia/developers-italia-searchyll) from the build. The variable is left empty by default in the [.env.example file](.env.example)
-
-* **ELASTICSEARCH_USER**: the Elasticsearch username. This is optional and not set by default, as not all Elasticsearch servers authenticate users
-
-* **ELASTICSEARCH_PASS**: the Elasticsearch password. This is optional and not set by default, as not all Elasticsearch servers authenticate users
-
-* **GITHUB_ACCESS_TOKEN**: the optional GitHub access token to gain unlimited access GitHub API. Access tokens are associated with the Italia GitHub account.
-
-* **JEKYLL_ENV**: can be set either to *development* (default) or *production*. The latter minifies and optimizes the build artifacts
-
 
 ## License
 
