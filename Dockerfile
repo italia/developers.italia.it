@@ -1,6 +1,7 @@
 FROM circleci/ruby:2.6.0-node-browsers
 
 ENV PORT 4000
+ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
 
 WORKDIR /usr/src/developers.italia.it
 
