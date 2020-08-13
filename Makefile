@@ -7,10 +7,17 @@ download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/software-riuso.yml -O _data/crawler/software-riuso.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
-build-bundle:
-	gem install bundler
+
+bundle-setup:
+	gem install bundler:2.1.4
 	bundle config set path vendor/
+
+bundle-install: bundle-setup
 	bundle install
+
+bundle-install-deployment: bundle-setup
+	bundle install --deployment
+
 build-swagger:
 	cd swagger && npm run build
 test:
@@ -21,5 +28,5 @@ jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 include-npm-deps:
 	npm install
-build: | build-bundle include-npm-deps download-data build-swagger jekyll-build
+build: | build-bundle-deployment include-npm-deps download-data build-swagger jekyll-build
 build-test: | build test
