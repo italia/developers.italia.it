@@ -28,7 +28,7 @@ references:
       name: install-dependencies
       command: |
         make include-npm-deps
-        make build-bundle
+        make bundle-install-deployment
         which rsync || sudo apt-get install rsync
 
   get_crawler_yml_files: &get_crawler_yml_files

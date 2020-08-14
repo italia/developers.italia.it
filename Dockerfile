@@ -42,7 +42,7 @@ COPY package-lock.json .
 COPY package.json .
 
 RUN make include-npm-deps
-RUN make build-bundle
+RUN make bundle-install
 RUN make download-data
 RUN make build-swagger
 
