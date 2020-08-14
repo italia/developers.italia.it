@@ -20665,6 +20665,29 @@ hr.divider {
           text-transform: capitalize; }
       .page-searched-list .arguments #list-tags .show_all {
         margin-top: 2em; }
+  .page-searched-list .scopes {
+    margin-top: 4em; }
+    .page-searched-list .scopes .head {
+      text-transform: uppercase;
+      font-weight: 600; }
+    .page-searched-list .scopes #list-scopes {
+      max-height: 90vh;
+      overflow-y: scroll; }
+      .page-searched-list .scopes #list-scopes .form-check-label {
+        position: relative; }
+        .page-searched-list .scopes #list-scopes .form-check-label input[type="checkbox"] {
+          position: absolute;
+          left: 0;
+          padding: 0;
+          width: 24px;
+          height: 24px;
+          margin: 0; }
+        .page-searched-list .scopes #list-scopes .form-check-label span {
+          padding-left: 24px;
+          margin-left: 0.5em;
+          text-transform: capitalize; }
+      .page-searched-list .scopes #list-scopes .show_all {
+        margin-top: 2em; }
   @media (max-width: 767.98px) {
     .page-searched-list #filters .pill-filters .nav-pills {
       font-size: 0.8em;
