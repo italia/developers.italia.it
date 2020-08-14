@@ -41,6 +41,12 @@ var pagesQueryconfig = {
       'host': elasticHost
     }
   },
+  'scope': {
+    'type': ['software'],
+    'elasticsearch_connection': {
+      'host': elasticHost
+    }
+  },
   'all': {
     'elasticsearch_connection': {
       'host': elasticHost

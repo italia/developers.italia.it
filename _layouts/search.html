@@ -92,6 +92,40 @@ layout: default
           {% endif %}
         </div>
       </div>
+      <div class="scopes">
+        <p class="head">{{ t.software.intended_audience }}</p>
+        <div id="list-scopes">
+          {% for tag in site.data.crawler.software_scopes limit: 10 %}
+          {% assign tag_labels = site.data.software_scopes[tag] %}
+          {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" value="{{ tag }}">
+              <span>{{ tag_label }}</span>
+            </label>
+          </div>
+          {% endfor %}
+
+          {% if site.data.crawler.software_scopes.size > 10 %}
+          <div class="collapse" id="otherScopes">
+            {% for tag in site.data.crawler.software_scopes offset:10 %}
+            {% assign tag_labels = site.data.software_scopes[tag] %}
+            {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="{{ tag }}">
+                <span>{{ tag_label }}</span>
+              </label>
+            </div>
+            {% endfor %}
+          </div>
+          <p class="show_all">
+            <a data-toggle="collapse" href="#otherScopes" role="button" aria-expanded="false"
+              aria-controls="otherScopes">{{ t.software.show_all }}</a>
+          </p>
+          {% endif %}
+        </div>
+      </div>
       <div class="status">
         <p class="head">{{ t.software.development_status }}</p>
         <div id="list-status">
@@ -157,6 +191,10 @@ layout: default
                   role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.categories }}</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="pills-scopes-tab" data-toggle="pill" href="#pills-scopes"
+                  role="tab" aria-controls="pills-scopes" aria-selected="true">{{ t.software.intended_audience }}</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="pills-types-tab" data-toggle="pill" href="#pills-types" role="tab"
                   aria-controls="pills-types" aria-selected="true">{% if active_lang == 'it' %} Tipologia {% else %}
                   Type {% endif %}</a>
@@ -175,6 +213,19 @@ layout: default
               aria-labelledby="pills-arguments-tab">
               {% for tag in site.data.crawler.software_categories %}
               {% assign tag_labels = site.data.software_categories[tag] %}
+              {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="{{ tag }}">
+                  <span>{{ tag_label }}</span>
+                </label>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="tab-pane fade show" id="pills-scopes" role="tabpanel"
+              aria-labelledby="pills-scopes-tab">
+              {% for tag in site.data.crawler.software_scopes %}
+              {% assign tag_labels = site.data.software_scopes[tag] %}
               {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
               <div class="form-check">
                 <label class="form-check-label">
