@@ -69,7 +69,7 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
       'publiccode.developmentStatus': 'list-status'
     },
     'filterKeysMobileSelectors': {
-      'publiccode.intendedAudience.scope': 'pills-scope',
+      'publiccode.intendedAudience.scope': 'pills-scopes',
       'publiccode.categories': 'pills-arguments',
       'publiccode.developmentStatus': 'pills-development_status'
     }

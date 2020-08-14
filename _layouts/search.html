@@ -191,6 +191,10 @@ layout: default
                   role="tab" aria-controls="pills-arguments" aria-selected="true">{{ t.software.categories }}</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="pills-scopes-tab" data-toggle="pill" href="#pills-scopes"
+                  role="tab" aria-controls="pills-scopes" aria-selected="true">{{ t.software.intended_audience }}</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="pills-types-tab" data-toggle="pill" href="#pills-types" role="tab"
                   aria-controls="pills-types" aria-selected="true">{% if active_lang == 'it' %} Tipologia {% else %}
                   Type {% endif %}</a>
@@ -209,6 +213,19 @@ layout: default
               aria-labelledby="pills-arguments-tab">
               {% for tag in site.data.crawler.software_categories %}
               {% assign tag_labels = site.data.software_categories[tag] %}
+              {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="{{ tag }}">
+                  <span>{{ tag_label }}</span>
+                </label>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="tab-pane fade show" id="pills-scopes" role="tabpanel"
+              aria-labelledby="pills-scopes-tab">
+              {% for tag in site.data.crawler.software_scopes %}
+              {% assign tag_labels = site.data.software_scopes[tag] %}
               {% assign tag_label = tag_labels[active_lang] | default: tag_labels.en | default: tag %}
               <div class="form-check">
                 <label class="form-check-label">
