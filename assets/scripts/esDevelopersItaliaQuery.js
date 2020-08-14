@@ -64,12 +64,12 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
 
     // IDs of DOM elements containing input checkboxes to use
     'filterKeys': {
-      'publiccode.intendedAudience.scope': 'list-tags',
+      'publiccode.intendedAudience.scope': 'list-scopes',
       'publiccode.categories': 'list-tags',
       'publiccode.developmentStatus': 'list-status'
     },
     'filterKeysMobileSelectors': {
-      'publiccode.intendedAudience.scope': 'pills-arguments',
+      'publiccode.intendedAudience.scope': 'pills-scope',
       'publiccode.categories': 'pills-arguments',
       'publiccode.developmentStatus': 'pills-development_status'
     }
@@ -486,6 +486,10 @@ esDevelopersItaliaManager.prototype.createQueryObject = function (queryType) {
       queryObject = new esDevelopersItaliaCategoryQuery(queryconfig, this.params);
       break;
 
+    case 'scope':
+      queryObject = new esDevelopersItaliaScopeQuery(queryconfig, this.params);
+      break;
+
     case 'administrations':
       queryObject = new esDevelopersItaliaPaQuery(queryconfig, this.params);
       break;
@@ -553,7 +557,7 @@ function esDevelopersItaliaQuery(config, params) {
 
     // filterKeys
     'filterKeys': {
-      'publiccode.intendedAudience.scope': 'list-tags',
+      'publiccode.intendedAudience.scope': 'list-scopes',
       'publiccode.categories': 'list-tags',
       'publiccode.developmentStatus': 'list-status'
     },
@@ -1316,6 +1320,12 @@ function esDevelopersItaliaCategoryQuery(config, getParams) {
 }
 
 esDevelopersItaliaCategoryQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
+
+function esDevelopersItaliaScopeQuery(config, getParams) {
+  esDevelopersItaliaQuery.call(this, config, getParams);
+}
+
+esDevelopersItaliaScopeQuery.prototype = Object.create(esDevelopersItaliaQuery.prototype);
 
 /**
  * AUTOCOMPLETE

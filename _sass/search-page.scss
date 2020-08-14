@@ -56,6 +56,37 @@
     }
   }
 
+  .scopes {
+    margin-top: 4em;
+    .head {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    #list-scopes {
+      max-height: 90vh;
+      overflow-y: scroll;
+      .form-check-label {
+        position: relative;
+        input[type="checkbox"] {
+          position: absolute;
+          left: 0;
+          padding: 0;
+          width: 24px;
+          height: 24px; 
+          margin: 0;
+        }
+        span { 
+          padding-left: 24px;
+          margin-left: 0.5em;
+          text-transform: capitalize;
+        }
+      } 
+      .show_all {
+        margin-top: 2em;
+      }
+    }
+  }
+
   #filters {
     .pill-filters {
       .nav-pills {
