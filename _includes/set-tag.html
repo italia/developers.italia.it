@@ -1,7 +1,8 @@
 {% assign labels = site.data.software_categories[include.tag] %}
 {% assign label = labels[active_lang] | default: labels.en | default: include.tag %}
+{% assign field = include.field | default: "publiccode.categories[0]" %}
 
 <li class="home-software-tags__item  {% if include.deactive %}deactive{% endif %}">
         <a
-                href="{% if active_lang == 'en'%}/en/search{% else %}/it/search{%endif%}/?publiccode.categories[0]={{ include.tag }}">{{ label }}</a>
+                href="{% if active_lang == 'en'%}/en/search{% else %}/it/search{%endif%}/?{{ field }}={{ include.tag }}">{{ label }}</a>
 </li>

@@ -2,6 +2,7 @@ var elasticHost = 'https://elasticsearch.developers.italia.it';
 
 var paramKeys = [
   'publiccode.categories',
+  'publiccode.intendedAudience.scope',
   'publiccode.developmentStatus',
   'keyword',
   'page',
