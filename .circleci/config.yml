@@ -1,47 +1,15 @@
-# Javascript Node CircleCI 2.1 configuration file
-#
-# Check https://circleci.com/docs/reference-2-1/#section=configuration for more details
-
 version: 2.1
 
 references:
-  working_directory: /tmp/developers
+  # image_name: &image_name italia/developers.italia.it
+  image:
+    name: &image_name "italia/developers.italia.it"
+    name_latest: &image_name_latest "italia/developers.italia.it:latest"
+    name_with_tag: &image_name_with_tag "italia/developers.italia.it:${CIRCLE_SHA1}"
 
-  load_image: &load_image
+  docker_image: &docker_image
     docker:
-      - image: circleci/ruby:2.6.0-node-browsers
-
-  env_vars_test: &env_vars_test
-    environment:
-      - JEKYLL_ENV: "production"
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
-      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
-
-  env_vars_prod: &env_vars_prod
-    environment:
-      - JEKYLL_ENV: "production"
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
-
-  install_dependencies: &install_dependencies
-    run:
-      name: install-dependencies
-      command: |
-        make include-npm-deps
-        make bundle-install-deployment
-        which rsync || sudo apt-get install rsync
-
-  get_crawler_yml_files: &get_crawler_yml_files
-    run:
-      name: get-crawler-yml-files
-      command: |
-        make download-data
-
-  build_bundle_jekyll: &build_bundle_jekyll
-    run:
-      name: build-bundle-jekyll
-      command: |
-        make jekyll-build
-        make test
+      - image: *image_name_with_tag
 
   setup_ssh_gh_pages: &setup_ssh_gh_pages
     add_ssh_keys:
@@ -60,7 +28,45 @@ references:
         touch _site/.nojekyll
 
         echo developers.italia.it > _site/CNAME
-        npm run deploy -- --dotfiles -m "Automated deployment: ${CIRCLE_SHA1} [ci skip]"
+        npm run deploy -- --dotfiles --repo git@github.com:italia/developers.italia.it.git -m "Automated deployment: ${CIRCLE_SHA1} [ci skip]"
+
+  only_master: &only_master
+    filters:
+      branches:
+        only:
+          - master
+
+  build_test_deploy_workflow: &build_test_deploy_workflow
+    jobs:
+      - docker/hadolint
+      - docker/publish:
+          name: build_image
+          image: *image_name
+          cache_from: *image_name_latest
+      - test:
+          requires:
+            - build_image
+            - docker/hadolint
+      - build:
+          requires:
+            - build_image
+            - docker/hadolint
+
+      # On commit to the master branch, deploy to gh-pages
+      # and tag the Docker image with "latest".
+      - deploy_gh_pages:
+          requires:
+            - test
+            - build
+          <<: *only_master
+      - docker/publish:
+          image: *image_name
+          tag: latest
+          cache_from: *image_name_with_tag
+          requires:
+            - test
+            - build
+          <<: *only_master
 
   # In order to use this, the integration needs to be
   # setup first under CircleCI app directory and a
@@ -72,36 +78,43 @@ references:
       only_for_branches: master
 
 jobs:
-  test:
-    <<: *load_image
-    <<: *env_vars_test
+  build:
+    <<: *docker_image
+    working_directory: /usr/src/developers.italia.it
     steps:
-      - checkout
-      - << : *install_dependencies
-      - << : *get_crawler_yml_files
-      - run: make github-import
-      - << : *build_bundle_jekyll
+      - run: make build
+      - persist_to_workspace:
+          root: /usr/src/developers.italia.it
+          paths:
+            - _site/
       - << : *notify_on_failure
 
-  build_and_deploy_gh_pages:
-    <<: *load_image
-    <<: *env_vars_prod
+  test:
+    <<: *docker_image
+    working_directory: /usr/src/developers.italia.it
     steps:
-      - checkout
-      - << : *install_dependencies
-      - << : *get_crawler_yml_files
-      - run: make github-import
-      - << : *build_bundle_jekyll
+      - run: make test
+      - << : *notify_on_failure
+
+  deploy_gh_pages:
+    <<: *docker_image
+    working_directory: /usr/src/developers.italia.it
+    steps:
+      - attach_workspace:
+          at: _site/
+      - run: mkdir ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
       - << : *setup_ssh_gh_pages
       - << : *publish_changes_gh_pages
       - << : *notify_on_failure
+      - store_artifacts:
+          path: _site/
 
 orbs:
+  docker: circleci/docker@1.4.0
   slack: circleci/slack@3.4.2
 
 workflows:
-  # Every night, deploy to VMs and to gh-pages
-  # to make sure latest data are shown
+  # Every night, rebuild and deploy to gh-pages to make sure latest data are shown
   daily-build-and-deploy:
     triggers:
       - schedule:
@@ -110,24 +123,7 @@ workflows:
             branches:
               only:
                 - master
-    jobs:
-      - build_and_deploy_gh_pages
-  # For any branch other than master,
-  # run CI tests at each commit
-  on-commit-test:
-    jobs:
-      - test:
-          filters:
-            branches:
-              ignore:
-                - master
-                - gh-pages
-  # For each commit on the master branch
-  # deploy to VMs and to gh-pages
-  on-commit-build-and-deploy:
-    jobs:
-      - build_and_deploy_gh_pages:
-          filters:
-            branches:
-              only:
-                - master
+    <<: *build_test_deploy_workflow
+
+  build-test-deploy:
+    <<: *build_test_deploy_workflow

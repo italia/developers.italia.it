@@ -1,6 +1,5 @@
-FROM circleci/ruby:2.6.0-node-browsers
+FROM circleci/ruby:2.6.0-node
 
-ENV PORT 4000
 ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
 
 WORKDIR /usr/src/developers.italia.it
@@ -8,39 +7,17 @@ WORKDIR /usr/src/developers.italia.it
 USER root
 
 RUN apt-get update \
-    && apt-get install -y wait-for-it \
+    && apt-get install -y --no-install-recommends wait-for-it=0.0~git20160501-1 \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    \
+    && gem install bundler:2.1.4 \
+    && chown circleci:circleci .
 
-USER ${RUNAS}
+USER circleci
 
-# Copy useful files inside the workdir
-COPY .well-known .well-known
-COPY _data _data
-COPY _includes _includes
-COPY _layouts _layouts
-COPY _platforms _platforms
-COPY _plugins _plugins
-COPY _posts _posts
-COPY assets assets
-COPY en en
-COPY it it
-COPY 403.html .
-COPY 404.html .
-COPY 500.html .
-COPY _config.yml .
-COPY favicon.ico .
-COPY Gemfile .
-COPY Gemfile.lock .
-COPY LICENSE .
-COPY Makefile .
-COPY package-lock.json .
-COPY package.json .
+COPY --chown=circleci . .
 
-RUN make include-npm-deps
-RUN make bundle-install
-RUN make download-data
-
-EXPOSE 4000 8080 35729
-
-CMD ["make", "local"]
+RUN bundle config set deployment 'true' \
+    && bundle install \
+    && make setup

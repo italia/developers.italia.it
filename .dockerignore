@@ -1,0 +1,15 @@
+*.swp
+.DS_Store
+.env
+.idea
+.jekyll-metadata
+.sass-cache
+.bundle
+_data/github_members.yml
+_data/github_teams.yml
+_data/github_tech_list.yml
+_site
+node_modules
+vendor
+yarn-error.log
+.git
