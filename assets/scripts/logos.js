@@ -11,11 +11,11 @@ function checkImage(src, good, bad) {
   img.src = src;
 }
 
-function setImage(src, rootEl) {
-  const el = `<div class="{{ classes }}"
+function setImage(src, rootEl, classes) {
+  const el = `<div class="${classes}"
     style="
       background-position: top center;
-      background-repeat: no-repeat; 
+      background-repeat: no-repeat;
       background-size: cover;
       height:150px; ">
   </div>`;
