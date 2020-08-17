@@ -2,10 +2,10 @@
 Logo and screenshots handler.
 {% endcomment %}
 
-{% assign itemLogo = include.itemLogo %}
+{% assign itemLogo = include.logo %}
 {% assign screenshots = include.screenshots %}
 {% assign id = include.id %}
-{% assign classes = include.classes %}
+{% assign classes = include.classes | default: "" %}
 {% assign codiceIPA = include.codiceIPA | default: "false" %}
 
 {% if itemLogo contains 'github' and itemLogo contains '.svg' %}
@@ -23,7 +23,7 @@ Logo and screenshots handler.
 {% assign picture = screenshots | first | default: logo | default: placeholderScreen %}
 
 {% comment %}
-Show images: 
+Show images:
 1. Screenshot
 2. Software ID
 2. Logo
@@ -35,8 +35,8 @@ Utility functions are located in assets/js/logos.js and loaded by head.html
 <div class="sw-{{id}}"></div>
 <script>
   checkImage(
-    "{{ picture }}", 
-    function(){ setImage(this.src, ".sw-{{id}}"); },
-    function(){ setImage("{{ placeholderScreen }}", ".sw-{{id}}"); } 
+    "{{ picture }}",
+    function(){ setImage(this.src, ".sw-{{id}}", "{{ classes }}"); },
+    function(){ setImage("{{ placeholderScreen }}", ".sw-{{id}}", "{{ classes }}"); }
   );
 </script>
