@@ -109,10 +109,6 @@ newsletterdata:
           value: 1
 
 collections:
-   pages:
-     output: true
-     permalink: /:path/
-     layout: page
    platforms:
      output: true
      permalink: /:path/

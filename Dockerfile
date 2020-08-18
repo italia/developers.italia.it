@@ -19,7 +19,6 @@ COPY .well-known .well-known
 COPY _data _data
 COPY _includes _includes
 COPY _layouts _layouts
-COPY _pages _pages
 COPY _platforms _platforms
 COPY _plugins _plugins
 COPY _posts _posts

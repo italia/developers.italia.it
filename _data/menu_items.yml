@@ -1,16 +1,16 @@
 it:
   - title: Piattaforme
-    url: '/it/piattaforme/'
+    url: '/it/piattaforme'
     active_by_layout:
       - 'platform'
       - 'platforms'
   - title: Software
-    url: '/it/software/'
+    url: '/it/software'
     active_by_firstlevel:
       - 'software'
       - 'riuso'
   - title: API
-    url: '/it/api/'
+    url: '/it/api'
     active_by_firstlevel: 'api'
   - title: Come lo uso
     url: '/it/come-lo-uso'
