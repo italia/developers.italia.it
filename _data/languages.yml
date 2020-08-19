@@ -1,552 +1,2453 @@
 aa:
   en: Afar
   it: Afar
-ab:
-  en: Abkhazian
-  it: Abkhazian
-ae:
-  en: Avestan
-  it: Avestan
+aa-DJ:
+  en: 'Afar (Djibouti)'
+  it: 'Afar (Gibuti)'
+aa-ER:
+  en: 'Afar (Eritrea)'
+  it: 'Afar (Eritrea)'
+aa-ET:
+  en: 'Afar (Ethiopia)'
+  it: 'Afar (Etiopia)'
 af:
   en: Afrikaans
   it: Afrikaans
+af-NA:
+  en: 'Afrikaans (Namibia)'
+  it: 'Afrikaans (Namibia)'
+af-ZA:
+  en: 'Afrikaans (South Africa)'
+  it: 'Afrikaans (Sudafrica)'
+agq:
+  en: Aghem
+  it: Aghem
+agq-CM:
+  en: 'Aghem (Cameroon)'
+  it: 'Aghem (Camerun)'
 ak:
   en: Akan
   it: Akan
+ak-GH:
+  en: 'Akan (Ghana)'
+  it: 'Akan (Ghana)'
 am:
   en: Amharic
-  it: Amharic
-an:
-  en: Aragonese
-  it: Aragonese
+  it: Amarico
+am-ET:
+  en: 'Amharic (Ethiopia)'
+  it: 'Amarico (Etiopia)'
 ar:
   en: Arabic
-  it: Arabic
+  it: Arabo
+ar-001:
+  en: 'Arabic (World)'
+  it: 'Arabo (Mondo)'
+ar-AE:
+  en: 'Arabic (United Arab Emirates)'
+  it: 'Arabo (Emirati Arabi Uniti)'
+ar-BH:
+  en: 'Arabic (Bahrain)'
+  it: 'Arabo (Bahrein)'
+ar-DJ:
+  en: 'Arabic (Djibouti)'
+  it: 'Arabo (Gibuti)'
+ar-DZ:
+  en: 'Arabic (Algeria)'
+  it: 'Arabo (Algeria)'
+ar-EG:
+  en: 'Arabic (Egypt)'
+  it: 'Arabo (Egitto)'
+ar-ER:
+  en: 'Arabic (Eritrea)'
+  it: 'Arabo (Eritrea)'
+ar-IL:
+  en: 'Arabic (Israel)'
+  it: 'Arabo (Israele)'
+ar-IQ:
+  en: 'Arabic (Iraq)'
+  it: 'Arabo (Iraq)'
+ar-JO:
+  en: 'Arabic (Jordan)'
+  it: 'Arabo (Giordania)'
+ar-KM:
+  en: 'Arabic (Comoros)'
+  it: 'Arabo (Comore)'
+ar-KW:
+  en: 'Arabic (Kuwait)'
+  it: 'Arabo (Kuwait)'
+ar-LB:
+  en: 'Arabic (Lebanon)'
+  it: 'Arabo (Libano)'
+ar-LY:
+  en: 'Arabic (Libya)'
+  it: 'Arabo (Libia)'
+ar-MA:
+  en: 'Arabic (Morocco)'
+  it: 'Arabo (Marocco)'
+ar-MR:
+  en: 'Arabic (Mauritania)'
+  it: 'Arabo (Mauritania)'
+ar-OM:
+  en: 'Arabic (Oman)'
+  it: 'Arabo (Oman)'
+ar-PS:
+  en: 'Arabic (Palestinian Territories)'
+  it: 'Arabo (Territori palestinesi)'
+ar-QA:
+  en: 'Arabic (Qatar)'
+  it: 'Arabo (Qatar)'
+ar-SA:
+  en: 'Arabic (Saudi Arabia)'
+  it: 'Arabo (Arabia Saudita)'
+ar-SD:
+  en: 'Arabic (Sudan)'
+  it: 'Arabo (Sudan)'
+ar-SO:
+  en: 'Arabic (Somalia)'
+  it: 'Arabo (Somalia)'
+ar-SS:
+  en: 'Arabic (South Sudan)'
+  it: 'Arabo (Sud Sudan)'
+ar-SY:
+  en: 'Arabic (Syria)'
+  it: 'Arabo (Siria)'
+ar-TD:
+  en: 'Arabic (Chad)'
+  it: 'Arabo (Ciad)'
+ar-TN:
+  en: 'Arabic (Tunisia)'
+  it: 'Arabo (Tunisia)'
+ar-YE:
+  en: 'Arabic (Yemen)'
+  it: 'Arabo (Yemen)'
+arn:
+  en: Mapuche
+  it: Mapudungun
+arn-CL:
+  en: 'Mapuche (Chile)'
+  it: 'Mapudungun (Cile)'
 as:
   en: Assamese
   it: Assamese
-av:
-  en: Avaric
-  it: Avaric
-ay:
-  en: Aymara
-  it: Aymara
+as-IN:
+  en: 'Assamese (India)'
+  it: 'Assamese (India)'
+asa:
+  en: Asu
+  it: Asu
+asa-TZ:
+  en: 'Asu (Tanzania)'
+  it: 'Asu (Tanzania)'
+ast:
+  en: Asturian
+  it: Asturiano
+ast-ES:
+  en: 'Asturian (Spain)'
+  it: 'Asturiano (Spagna)'
 az:
   en: Azerbaijani
-  it: Azerbaijani
+  it: Azerbaigiano
+az-Cyrl:
+  en: Azerbaijani
+  it: Azerbaigiano
+az-Cyrl-AZ:
+  en: 'Azerbaijani (Azerbaijan)'
+  it: 'Azerbaigiano (Azerbaigian)'
+az-Latn:
+  en: Azerbaijani
+  it: Azerbaigiano
+az-Latn-AZ:
+  en: 'Azerbaijani (Azerbaijan)'
+  it: 'Azerbaigiano (Azerbaigian)'
 ba:
   en: Bashkir
-  it: Bashkir
+  it: Baschiro
+ba-RU:
+  en: 'Bashkir (Russia)'
+  it: 'Baschiro (Russia)'
+bas:
+  en: Basaa
+  it: Basa
+bas-CM:
+  en: 'Basaa (Cameroon)'
+  it: 'Basa (Camerun)'
 be:
   en: Belarusian
-  it: Belarusian
+  it: Bielorusso
+be-BY:
+  en: 'Belarusian (Belarus)'
+  it: 'Bielorusso (Bielorussia)'
+bem:
+  en: Bemba
+  it: Wemba
+bem-ZM:
+  en: 'Bemba (Zambia)'
+  it: 'Wemba (Zambia)'
+bez:
+  en: Bena
+  it: Bena
+bez-TZ:
+  en: 'Bena (Tanzania)'
+  it: 'Bena (Tanzania)'
 bg:
   en: Bulgarian
-  it: Bulgarian
-bh:
-  en: Bihari languages
-  it: Bihari languages
-bi:
-  en: Bislama
-  it: Bislama
+  it: Bulgaro
+bg-BG:
+  en: 'Bulgarian (Bulgaria)'
+  it: 'Bulgaro (Bulgaria)'
 bm:
   en: Bambara
   it: Bambara
+bm-Latn-ML:
+  en: 'Bambara (Mali)'
+  it: 'Bambara (Mali)'
 bn:
-  en: Bengali
-  it: Bengali
+  en: Bangla
+  it: Bengalese
+bn-BD:
+  en: 'Bangla (Bangladesh)'
+  it: 'Bengalese (Bangladesh)'
+bn-IN:
+  en: 'Bangla (India)'
+  it: 'Bengalese (India)'
 bo:
   en: Tibetan
-  it: Tibetan
+  it: Tibetano
+bo-CN:
+  en: 'Tibetan (China)'
+  it: 'Tibetano (Cina)'
+bo-IN:
+  en: 'Tibetan (India)'
+  it: 'Tibetano (India)'
 br:
   en: Breton
-  it: Breton
+  it: Bretone
+br-FR:
+  en: 'Breton (France)'
+  it: 'Bretone (Francia)'
+brx:
+  en: Bodo
+  it: Bodo
+brx-IN:
+  en: 'Bodo (India)'
+  it: 'Bodo (India)'
 bs:
   en: Bosnian
-  it: Bosnian
+  it: Bosniaco
+bs-Cyrl:
+  en: Bosnian
+  it: Bosniaco
+bs-Cyrl-BA:
+  en: 'Bosnian (Bosnia & Herzegovina)'
+  it: 'Bosniaco (Bosnia ed Erzegovina)'
+bs-Latn:
+  en: Bosnian
+  it: Bosniaco
+bs-Latn-BA:
+  en: 'Bosnian (Bosnia & Herzegovina)'
+  it: 'Bosniaco (Bosnia ed Erzegovina)'
+byn:
+  en: Blin
+  it: Blin
+byn-ER:
+  en: 'Blin (Eritrea)'
+  it: 'Blin (Eritrea)'
 ca:
   en: Catalan
-  it: Catalan
-ce:
-  en: Chechen
-  it: Chechen
-ch:
-  en: Chamorro
-  it: Chamorro
+  it: Catalano
+ca-AD:
+  en: 'Catalan (Andorra)'
+  it: 'Catalano (Andorra)'
+ca-ES:
+  en: 'Catalan (Spain)'
+  it: 'Catalano (Spagna)'
+ca-ES-valencia:
+  en: 'Catalan (Spain)'
+ca-FR:
+  en: 'Catalan (France)'
+  it: 'Catalano (Francia)'
+ca-IT:
+  en: 'Catalan (Italy)'
+  it: 'Catalano (Italia)'
+cd-RU:
+  en: 'Cd (Russia)'
+  it: 'Cd (Russia)'
+cgg:
+  en: Chiga
+  it: Chiga
+cgg-UG:
+  en: 'Chiga (Uganda)'
+  it: 'Chiga (Uganda)'
+chr:
+  en: Cherokee
+  it: Cherokee
+chr-Cher:
+  en: Cherokee
+  it: Cherokee
+chr-Cher-US:
+  en: 'Cherokee (United States)'
+  it: 'Cherokee (Stati Uniti)'
 co:
   en: Corsican
-  it: Corsican
-cr:
-  en: Cree
-  it: Cree
+  it: Corso
+co-FR:
+  en: 'Corsican (France)'
+  it: 'Corso (Francia)'
 cs:
   en: Czech
-  it: Czech
-cu:
-  en: Church Slavic
-  it: Church Slavic
-cv:
-  en: Chuvash
-  it: Chuvash
+  it: Ceco
+cs-CZ:
+  en: 'Czech (Czechia)'
+  it: 'Ceco (Cechia)'
+cu-RU:
+  en: 'Church slavic (Russia)'
+  it: 'Slavo della chiesa (Russia)'
 cy:
   en: Welsh
-  it: Welsh
+  it: Gallese
+cy-GB:
+  en: 'Welsh (United Kingdom)'
+  it: 'Gallese (Regno Unito)'
 da:
   en: Danish
-  it: Danish
+  it: Danese
+da-DK:
+  en: 'Danish (Denmark)'
+  it: 'Danese (Danimarca)'
+da-GL:
+  en: 'Danish (Greenland)'
+  it: 'Danese (Groenlandia)'
+dav:
+  en: Taita
+  it: Taita
+dav-KE:
+  en: 'Taita (Kenya)'
+  it: 'Taita (Kenya)'
 de:
   en: German
   it: Tedesco
+de-AT:
+  en: 'German (Austria)'
+  it: 'Tedesco (Austria)'
+de-BE:
+  en: 'German (Belgium)'
+  it: 'Tedesco (Belgio)'
+de-CH:
+  en: 'German (Switzerland)'
+  it: 'Tedesco (Svizzera)'
+de-DE:
+  en: 'German (Germany)'
+  it: 'Tedesco (Germania)'
+de-IT:
+  en: 'German (Italy)'
+  it: 'Tedesco (Italia)'
+de-LI:
+  en: 'German (Liechtenstein)'
+  it: 'Tedesco (Liechtenstein)'
+de-LU:
+  en: 'German (Luxembourg)'
+  it: 'Tedesco (Lussemburgo)'
+dje:
+  en: Zarma
+  it: Zarma
+dje-NE:
+  en: 'Zarma (Niger)'
+  it: 'Zarma (Niger)'
+dsb:
+  en: 'Lower sorbian'
+  it: 'Basso sorabo'
+dsb-DE:
+  en: 'Lower sorbian (Germany)'
+  it: 'Basso sorabo (Germania)'
+dua:
+  en: Duala
+  it: Duala
+dua-CM:
+  en: 'Duala (Cameroon)'
+  it: 'Duala (Camerun)'
 dv:
   en: Divehi
   it: Divehi
+dv-MV:
+  en: 'Divehi (Maldives)'
+  it: 'Divehi (Maldive)'
+dyo:
+  en: Jola-fonyi
+  it: Jola-fony
+dyo-SN:
+  en: 'Jola-fonyi (Senegal)'
+  it: 'Jola-fony (Senegal)'
 dz:
   en: Dzongkha
   it: Dzongkha
+dz-BT:
+  en: 'Dzongkha (Bhutan)'
+  it: 'Dzongkha (Bhutan)'
+ebu:
+  en: Embu
+  it: Embu
+ebu-KE:
+  en: 'Embu (Kenya)'
+  it: 'Embu (Kenya)'
 ee:
   en: Ewe
   it: Ewe
+ee-GH:
+  en: 'Ewe (Ghana)'
+  it: 'Ewe (Ghana)'
+ee-TG:
+  en: 'Ewe (Togo)'
+  it: 'Ewe (Togo)'
 el:
-  en: "Greek, Modern (1453-)"
-  it: "Greek, Modern (1453-)"
+  en: Greek
+  it: Greco
+el-CY:
+  en: 'Greek (Cyprus)'
+  it: 'Greco (Cipro)'
+el-GR:
+  en: 'Greek (Greece)'
+  it: 'Greco (Grecia)'
 en:
   en: English
   it: Inglese
+en-001:
+  en: 'English (World)'
+  it: 'Inglese (Mondo)'
+en-029:
+  en: 'English (Caribbean)'
+  it: 'Inglese (Caraibi)'
+en-150:
+  en: 'English (Europe)'
+  it: 'Inglese (Europa)'
+en-AG:
+  en: 'English (Antigua & Barbuda)'
+  it: 'Inglese (Antigua e Barbuda)'
+en-AI:
+  en: 'English (Anguilla)'
+  it: 'Inglese (Anguilla)'
+en-AS:
+  en: 'English (American Samoa)'
+  it: 'Inglese (Samoa americane)'
+en-AT:
+  en: 'English (Austria)'
+  it: 'Inglese (Austria)'
+en-AU:
+  en: 'English (Australia)'
+  it: 'Inglese (Australia)'
+en-BB:
+  en: 'English (Barbados)'
+  it: 'Inglese (Barbados)'
+en-BE:
+  en: 'English (Belgium)'
+  it: 'Inglese (Belgio)'
+en-BI:
+  en: 'English (Burundi)'
+  it: 'Inglese (Burundi)'
+en-BM:
+  en: 'English (Bermuda)'
+  it: 'Inglese (Bermuda)'
+en-BS:
+  en: 'English (Bahamas)'
+  it: 'Inglese (Bahamas)'
+en-BW:
+  en: 'English (Botswana)'
+  it: 'Inglese (Botswana)'
+en-BZ:
+  en: 'English (Belize)'
+  it: 'Inglese (Belize)'
+en-CA:
+  en: 'English (Canada)'
+  it: 'Inglese (Canada)'
+en-CC:
+  en: 'English (Cocos (Keeling) Islands)'
+  it: 'Inglese (Isole Cocos (Keeling))'
+en-CH:
+  en: 'English (Switzerland)'
+  it: 'Inglese (Svizzera)'
+en-CK:
+  en: 'English (Cook Islands)'
+  it: 'Inglese (Isole Cook)'
+en-CM:
+  en: 'English (Cameroon)'
+  it: 'Inglese (Camerun)'
+en-CX:
+  en: 'English (Christmas Island)'
+  it: 'Inglese (Isola Christmas)'
+en-CY:
+  en: 'English (Cyprus)'
+  it: 'Inglese (Cipro)'
+en-DE:
+  en: 'English (Germany)'
+  it: 'Inglese (Germania)'
+en-DK:
+  en: 'English (Denmark)'
+  it: 'Inglese (Danimarca)'
+en-DM:
+  en: 'English (Dominica)'
+  it: 'Inglese (Dominica)'
+en-ER:
+  en: 'English (Eritrea)'
+  it: 'Inglese (Eritrea)'
+en-FI:
+  en: 'English (Finland)'
+  it: 'Inglese (Finlandia)'
+en-FJ:
+  en: 'English (Fiji)'
+  it: 'Inglese (Figi)'
+en-FK:
+  en: 'English (Falkland Islands)'
+  it: 'Inglese (Isole Falkland)'
+en-FM:
+  en: 'English (Micronesia)'
+  it: 'Inglese (Micronesia)'
+en-GB:
+  en: 'English (United Kingdom)'
+  it: 'Inglese (Regno Unito)'
+en-GD:
+  en: 'English (Grenada)'
+  it: 'Inglese (Grenada)'
+en-GG:
+  en: 'English (Guernsey)'
+  it: 'Inglese (Guernsey)'
+en-GH:
+  en: 'English (Ghana)'
+  it: 'Inglese (Ghana)'
+en-GI:
+  en: 'English (Gibraltar)'
+  it: 'Inglese (Gibilterra)'
+en-GM:
+  en: 'English (Gambia)'
+  it: 'Inglese (Gambia)'
+en-GU:
+  en: 'English (Guam)'
+  it: 'Inglese (Guam)'
+en-GY:
+  en: 'English (Guyana)'
+  it: 'Inglese (Guyana)'
+en-HK:
+  en: 'English (Hong Kong SAR China)'
+  it: 'Inglese (RAS di Hong Kong)'
+en-IE:
+  en: 'English (Ireland)'
+  it: 'Inglese (Irlanda)'
+en-IL:
+  en: 'English (Israel)'
+  it: 'Inglese (Israele)'
+en-IM:
+  en: 'English (Isle of Man)'
+  it: 'Inglese (Isola di Man)'
+en-IN:
+  en: 'English (India)'
+  it: 'Inglese (India)'
+en-IO:
+  en: 'English (British Indian Ocean Territory)'
+  it: 'Inglese (Territorio britannico dell’Oceano Indiano)'
+en-JE:
+  en: 'English (Jersey)'
+  it: 'Inglese (Jersey)'
+en-JM:
+  en: 'English (Jamaica)'
+  it: 'Inglese (Giamaica)'
+en-KE:
+  en: 'English (Kenya)'
+  it: 'Inglese (Kenya)'
+en-KI:
+  en: 'English (Kiribati)'
+  it: 'Inglese (Kiribati)'
+en-KN:
+  en: 'English (St. Kitts & Nevis)'
+  it: 'Inglese (Saint Kitts e Nevis)'
+en-KY:
+  en: 'English (Cayman Islands)'
+  it: 'Inglese (Isole Cayman)'
+en-LC:
+  en: 'English (St. Lucia)'
+  it: 'Inglese (Saint Lucia)'
+en-LR:
+  en: 'English (Liberia)'
+  it: 'Inglese (Liberia)'
+en-LS:
+  en: 'English (Lesotho)'
+  it: 'Inglese (Lesotho)'
+en-MG:
+  en: 'English (Madagascar)'
+  it: 'Inglese (Madagascar)'
+en-MH:
+  en: 'English (Marshall Islands)'
+  it: 'Inglese (Isole Marshall)'
+en-MO:
+  en: 'English (Macao SAR China)'
+  it: 'Inglese (RAS di Macao)'
+en-MP:
+  en: 'English (Northern Mariana Islands)'
+  it: 'Inglese (Isole Marianne settentrionali)'
+en-MS:
+  en: 'English (Montserrat)'
+  it: 'Inglese (Montserrat)'
+en-MT:
+  en: 'English (Malta)'
+  it: 'Inglese (Malta)'
+en-MU:
+  en: 'English (Mauritius)'
+  it: 'Inglese (Mauritius)'
+en-MW:
+  en: 'English (Malawi)'
+  it: 'Inglese (Malawi)'
+en-MY:
+  en: 'English (Malaysia)'
+  it: 'Inglese (Malaysia)'
+en-NA:
+  en: 'English (Namibia)'
+  it: 'Inglese (Namibia)'
+en-NF:
+  en: 'English (Norfolk Island)'
+  it: 'Inglese (Isola Norfolk)'
+en-NG:
+  en: 'English (Nigeria)'
+  it: 'Inglese (Nigeria)'
+en-NL:
+  en: 'English (Netherlands)'
+  it: 'Inglese (Paesi Bassi)'
+en-NR:
+  en: 'English (Nauru)'
+  it: 'Inglese (Nauru)'
+en-NU:
+  en: 'English (Niue)'
+  it: 'Inglese (Niue)'
+en-NZ:
+  en: 'English (New Zealand)'
+  it: 'Inglese (Nuova Zelanda)'
+en-PG:
+  en: 'English (Papua New Guinea)'
+  it: 'Inglese (Papua Nuova Guinea)'
+en-PH:
+  en: 'English (Philippines)'
+  it: 'Inglese (Filippine)'
+en-PK:
+  en: 'English (Pakistan)'
+  it: 'Inglese (Pakistan)'
+en-PN:
+  en: 'English (Pitcairn Islands)'
+  it: 'Inglese (Isole Pitcairn)'
+en-PR:
+  en: 'English (Puerto Rico)'
+  it: 'Inglese (Portorico)'
+en-PW:
+  en: 'English (Palau)'
+  it: 'Inglese (Palau)'
+en-RW:
+  en: 'English (Rwanda)'
+  it: 'Inglese (Ruanda)'
+en-SB:
+  en: 'English (Solomon Islands)'
+  it: 'Inglese (Isole Salomone)'
+en-SC:
+  en: 'English (Seychelles)'
+  it: 'Inglese (Seychelles)'
+en-SD:
+  en: 'English (Sudan)'
+  it: 'Inglese (Sudan)'
+en-SE:
+  en: 'English (Sweden)'
+  it: 'Inglese (Svezia)'
+en-SG:
+  en: 'English (Singapore)'
+  it: 'Inglese (Singapore)'
+en-SH:
+  en: 'English (St. Helena)'
+  it: 'Inglese (Sant’Elena)'
+en-SI:
+  en: 'English (Slovenia)'
+  it: 'Inglese (Slovenia)'
+en-SL:
+  en: 'English (Sierra Leone)'
+  it: 'Inglese (Sierra Leone)'
+en-SS:
+  en: 'English (South Sudan)'
+  it: 'Inglese (Sud Sudan)'
+en-SX:
+  en: 'English (Sint Maarten)'
+  it: 'Inglese (Sint Maarten)'
+en-SZ:
+  en: 'English (Eswatini)'
+  it: 'Inglese (Swaziland)'
+en-TC:
+  en: 'English (Turks & Caicos Islands)'
+  it: 'Inglese (Isole Turks e Caicos)'
+en-TK:
+  en: 'English (Tokelau)'
+  it: 'Inglese (Tokelau)'
+en-TO:
+  en: 'English (Tonga)'
+  it: 'Inglese (Tonga)'
+en-TT:
+  en: 'English (Trinidad & Tobago)'
+  it: 'Inglese (Trinidad e Tobago)'
+en-TV:
+  en: 'English (Tuvalu)'
+  it: 'Inglese (Tuvalu)'
+en-TZ:
+  en: 'English (Tanzania)'
+  it: 'Inglese (Tanzania)'
+en-UG:
+  en: 'English (Uganda)'
+  it: 'Inglese (Uganda)'
+en-UM:
+  en: 'English (U.S. Outlying Islands)'
+  it: 'Inglese (Altre isole americane del Pacifico)'
+en-US:
+  en: 'English (United States)'
+  it: 'Inglese (Stati Uniti)'
+en-VC:
+  en: 'English (St. Vincent & Grenadines)'
+  it: 'Inglese (Saint Vincent e Grenadine)'
+en-VG:
+  en: 'English (British Virgin Islands)'
+  it: 'Inglese (Isole Vergini Britanniche)'
+en-VI:
+  en: 'English (U.S. Virgin Islands)'
+  it: 'Inglese (Isole Vergini Americane)'
+en-VU:
+  en: 'English (Vanuatu)'
+  it: 'Inglese (Vanuatu)'
+en-WS:
+  en: 'English (Samoa)'
+  it: 'Inglese (Samoa)'
+en-ZA:
+  en: 'English (South Africa)'
+  it: 'Inglese (Sudafrica)'
+en-ZM:
+  en: 'English (Zambia)'
+  it: 'Inglese (Zambia)'
+en-ZW:
+  en: 'English (Zimbabwe)'
+  it: 'Inglese (Zimbabwe)'
 eo:
   en: Esperanto
   it: Esperanto
+eo-001:
+  en: 'Esperanto (World)'
+  it: 'Esperanto (Mondo)'
 es:
   en: Spanish
   it: Spagnolo
+es-419:
+  en: 'Spanish (Latin America)'
+  it: 'Spagnolo (America Latina)'
+es-AR:
+  en: 'Spanish (Argentina)'
+  it: 'Spagnolo (Argentina)'
+es-BO:
+  en: 'Spanish (Bolivia)'
+  it: 'Spagnolo (Bolivia)'
+es-BR:
+  en: 'Spanish (Brazil)'
+  it: 'Spagnolo (Brasile)'
+es-BZ:
+  en: 'Spanish (Belize)'
+  it: 'Spagnolo (Belize)'
+es-CL:
+  en: 'Spanish (Chile)'
+  it: 'Spagnolo (Cile)'
+es-CO:
+  en: 'Spanish (Colombia)'
+  it: 'Spagnolo (Colombia)'
+es-CR:
+  en: 'Spanish (Costa Rica)'
+  it: 'Spagnolo (Costa Rica)'
+es-CU:
+  en: 'Spanish (Cuba)'
+  it: 'Spagnolo (Cuba)'
+es-DO:
+  en: 'Spanish (Dominican Republic)'
+  it: 'Spagnolo (Repubblica Dominicana)'
+es-EC:
+  en: 'Spanish (Ecuador)'
+  it: 'Spagnolo (Ecuador)'
+es-ES:
+  en: 'Spanish (Spain)'
+  it: 'Spagnolo (Spagna)'
+es-ES_tradnl: {}
+es-GQ:
+  en: 'Spanish (Equatorial Guinea)'
+  it: 'Spagnolo (Guinea Equatoriale)'
+es-GT:
+  en: 'Spanish (Guatemala)'
+  it: 'Spagnolo (Guatemala)'
+es-HN:
+  en: 'Spanish (Honduras)'
+  it: 'Spagnolo (Honduras)'
+es-MX:
+  en: 'Spanish (Mexico)'
+  it: 'Spagnolo (Messico)'
+es-NI:
+  en: 'Spanish (Nicaragua)'
+  it: 'Spagnolo (Nicaragua)'
+es-PA:
+  en: 'Spanish (Panama)'
+  it: 'Spagnolo (Panamá)'
+es-PE:
+  en: 'Spanish (Peru)'
+  it: 'Spagnolo (Perù)'
+es-PH:
+  en: 'Spanish (Philippines)'
+  it: 'Spagnolo (Filippine)'
+es-PR:
+  en: 'Spanish (Puerto Rico)'
+  it: 'Spagnolo (Portorico)'
+es-PY:
+  en: 'Spanish (Paraguay)'
+  it: 'Spagnolo (Paraguay)'
+es-SV:
+  en: 'Spanish (El Salvador)'
+  it: 'Spagnolo (El Salvador)'
+es-US:
+  en: 'Spanish (United States)'
+  it: 'Spagnolo (Stati Uniti)'
+es-UY:
+  en: 'Spanish (Uruguay)'
+  it: 'Spagnolo (Uruguay)'
+es-VE:
+  en: 'Spanish (Venezuela)'
+  it: 'Spagnolo (Venezuela)'
 et:
   en: Estonian
   it: Estone
+et-EE:
+  en: 'Estonian (Estonia)'
+  it: 'Estone (Estonia)'
 eu:
   en: Basque
-  it: Basque
+  it: Basco
+eu-ES:
+  en: 'Basque (Spain)'
+  it: 'Basco (Spagna)'
+ewo:
+  en: Ewondo
+  it: Ewondo
+ewo-CM:
+  en: 'Ewondo (Cameroon)'
+  it: 'Ewondo (Camerun)'
 fa:
   en: Persian
-  it: Persian
+  it: Persiano
+fa-AF:
+  en: 'Persian (Afghanistan)'
+  it: 'Persiano (Afghanistan)'
+fa-IR:
+  en: 'Persian (Iran)'
+  it: 'Persiano (Iran)'
 ff:
   en: Fulah
   it: Fulah
+ff-CM:
+  en: 'Fulah (Cameroon)'
+  it: 'Fulah (Camerun)'
+ff-GN:
+  en: 'Fulah (Guinea)'
+  it: 'Fulah (Guinea)'
+ff-Latn:
+  en: Fulah
+  it: Fulah
+ff-Latn-BF:
+  en: 'Fulah (Burkina Faso)'
+  it: 'Fulah (Burkina Faso)'
+ff-Latn-CM:
+  en: 'Fulah (Cameroon)'
+  it: 'Fulah (Camerun)'
+ff-Latn-GH:
+  en: 'Fulah (Ghana)'
+  it: 'Fulah (Ghana)'
+ff-Latn-GM:
+  en: 'Fulah (Gambia)'
+  it: 'Fulah (Gambia)'
+ff-Latn-GN:
+  en: 'Fulah (Guinea)'
+  it: 'Fulah (Guinea)'
+ff-Latn-GW:
+  en: 'Fulah (Guinea-Bissau)'
+  it: 'Fulah (Guinea-Bissau)'
+ff-Latn-LR:
+  en: 'Fulah (Liberia)'
+  it: 'Fulah (Liberia)'
+ff-Latn-MR:
+  en: 'Fulah (Mauritania)'
+  it: 'Fulah (Mauritania)'
+ff-Latn-NE:
+  en: 'Fulah (Niger)'
+  it: 'Fulah (Niger)'
+ff-Latn-NG:
+  en: 'Fulah (Nigeria)'
+  it: 'Fulah (Nigeria)'
+ff-Latn-SL:
+  en: 'Fulah (Sierra Leone)'
+  it: 'Fulah (Sierra Leone)'
+ff-Latn-SN:
+  en: 'Fulah (Senegal)'
+  it: 'Fulah (Senegal)'
+ff-MR:
+  en: 'Fulah (Mauritania)'
+  it: 'Fulah (Mauritania)'
+ff-NG:
+  en: 'Fulah (Nigeria)'
+  it: 'Fulah (Nigeria)'
 fi:
   en: Finnish
-  it: Finnish
-fj:
-  en: Fijian
-  it: Fijian
+  it: Finlandese
+fi-FI:
+  en: 'Finnish (Finland)'
+  it: 'Finlandese (Finlandia)'
+fil:
+  en: Filipino
+  it: Filippino
+fil-PH:
+  en: 'Filipino (Philippines)'
+  it: 'Filippino (Filippine)'
 fo:
   en: Faroese
   it: Faroese
+fo-DK:
+  en: 'Faroese (Denmark)'
+  it: 'Faroese (Danimarca)'
+fo-FO:
+  en: 'Faroese (Faroe Islands)'
+  it: 'Faroese (Isole Fær Øer)'
 fr:
   en: French
   it: Francese
+fr-BE:
+  en: 'French (Belgium)'
+  it: 'Francese (Belgio)'
+fr-BF:
+  en: 'French (Burkina Faso)'
+  it: 'Francese (Burkina Faso)'
+fr-BI:
+  en: 'French (Burundi)'
+  it: 'Francese (Burundi)'
+fr-BJ:
+  en: 'French (Benin)'
+  it: 'Francese (Benin)'
+fr-BL:
+  en: 'French (St. Barthélemy)'
+  it: 'Francese (Saint-Barthélemy)'
+fr-CA:
+  en: 'French (Canada)'
+  it: 'Francese (Canada)'
+fr-CD:
+  en: 'French (Congo - Kinshasa)'
+  it: 'Francese (Congo - Kinshasa)'
+fr-CF:
+  en: 'French (Central African Republic)'
+  it: 'Francese (Repubblica Centrafricana)'
+fr-CG:
+  en: 'French (Congo - Brazzaville)'
+  it: 'Francese (Congo-Brazzaville)'
+fr-CH:
+  en: 'French (Switzerland)'
+  it: 'Francese (Svizzera)'
+fr-CI:
+  en: 'French (Côte d’Ivoire)'
+  it: 'Francese (Costa d’Avorio)'
+fr-CM:
+  en: 'French (Cameroon)'
+  it: 'Francese (Camerun)'
+fr-DJ:
+  en: 'French (Djibouti)'
+  it: 'Francese (Gibuti)'
+fr-DZ:
+  en: 'French (Algeria)'
+  it: 'Francese (Algeria)'
+fr-FR:
+  en: 'French (France)'
+  it: 'Francese (Francia)'
+fr-GA:
+  en: 'French (Gabon)'
+  it: 'Francese (Gabon)'
+fr-GF:
+  en: 'French (French Guiana)'
+  it: 'Francese (Guyana francese)'
+fr-GN:
+  en: 'French (Guinea)'
+  it: 'Francese (Guinea)'
+fr-GP:
+  en: 'French (Guadeloupe)'
+  it: 'Francese (Guadalupa)'
+fr-GQ:
+  en: 'French (Equatorial Guinea)'
+  it: 'Francese (Guinea Equatoriale)'
+fr-HT:
+  en: 'French (Haiti)'
+  it: 'Francese (Haiti)'
+fr-KM:
+  en: 'French (Comoros)'
+  it: 'Francese (Comore)'
+fr-LU:
+  en: 'French (Luxembourg)'
+  it: 'Francese (Lussemburgo)'
+fr-MA:
+  en: 'French (Morocco)'
+  it: 'Francese (Marocco)'
+fr-MC:
+  en: 'French (Monaco)'
+  it: 'Francese (Monaco)'
+fr-MF:
+  en: 'French (St. Martin)'
+  it: 'Francese (Saint Martin)'
+fr-MG:
+  en: 'French (Madagascar)'
+  it: 'Francese (Madagascar)'
+fr-ML:
+  en: 'French (Mali)'
+  it: 'Francese (Mali)'
+fr-MQ:
+  en: 'French (Martinique)'
+  it: 'Francese (Martinica)'
+fr-MR:
+  en: 'French (Mauritania)'
+  it: 'Francese (Mauritania)'
+fr-MU:
+  en: 'French (Mauritius)'
+  it: 'Francese (Mauritius)'
+fr-NC:
+  en: 'French (New Caledonia)'
+  it: 'Francese (Nuova Caledonia)'
+fr-NE:
+  en: 'French (Niger)'
+  it: 'Francese (Niger)'
+fr-PF:
+  en: 'French (French Polynesia)'
+  it: 'Francese (Polinesia francese)'
+fr-PM:
+  en: 'French (St. Pierre & Miquelon)'
+  it: 'Francese (Saint-Pierre e Miquelon)'
+fr-RE:
+  en: 'French (Réunion)'
+  it: 'Francese (Riunione)'
+fr-RW:
+  en: 'French (Rwanda)'
+  it: 'Francese (Ruanda)'
+fr-SC:
+  en: 'French (Seychelles)'
+  it: 'Francese (Seychelles)'
+fr-SN:
+  en: 'French (Senegal)'
+  it: 'Francese (Senegal)'
+fr-SY:
+  en: 'French (Syria)'
+  it: 'Francese (Siria)'
+fr-TD:
+  en: 'French (Chad)'
+  it: 'Francese (Ciad)'
+fr-TG:
+  en: 'French (Togo)'
+  it: 'Francese (Togo)'
+fr-TN:
+  en: 'French (Tunisia)'
+  it: 'Francese (Tunisia)'
+fr-VU:
+  en: 'French (Vanuatu)'
+  it: 'Francese (Vanuatu)'
+fr-WF:
+  en: 'French (Wallis & Futuna)'
+  it: 'Francese (Wallis e Futuna)'
+fr-YT:
+  en: 'French (Mayotte)'
+  it: 'Francese (Mayotte)'
+fur:
+  en: Friulian
+  it: Friulano
+fur-IT:
+  en: 'Friulian (Italy)'
+  it: 'Friulano (Italia)'
 fy:
-  en: Western Frisian
-  it: Western Frisian
+  en: 'Western frisian'
+  it: 'Frisone occidentale'
+fy-NL:
+  en: 'Western frisian (Netherlands)'
+  it: 'Frisone occidentale (Paesi Bassi)'
 ga:
   en: Irish
-  it: Irish
+  it: Irlandese
+ga-IE:
+  en: 'Irish (Ireland)'
+  it: 'Irlandese (Irlanda)'
 gd:
-  en: Gaelic
-  it: Gaelic
+  en: 'Scottish gaelic'
+  it: 'Gaelico scozzese'
+gd-GB:
+  en: 'Scottish gaelic (United Kingdom)'
+  it: 'Gaelico scozzese (Regno Unito)'
 gl:
   en: Galician
-  it: Galician
+  it: Galiziano
+gl-ES:
+  en: 'Galician (Spain)'
+  it: 'Galiziano (Spagna)'
 gn:
   en: Guarani
-  it: Guarani
+  it: Guaraní
+gn-PY:
+  en: 'Guarani (Paraguay)'
+  it: 'Guaraní (Paraguay)'
+gsw:
+  en: 'Swiss german'
+  it: 'Tedesco svizzero'
+gsw-CH:
+  en: 'Swiss german (Switzerland)'
+  it: 'Tedesco svizzero (Svizzera)'
+gsw-FR:
+  en: 'Swiss german (France)'
+  it: 'Tedesco svizzero (Francia)'
+gsw-LI:
+  en: 'Swiss german (Liechtenstein)'
+  it: 'Tedesco svizzero (Liechtenstein)'
 gu:
   en: Gujarati
   it: Gujarati
+gu-IN:
+  en: 'Gujarati (India)'
+  it: 'Gujarati (India)'
+guz:
+  en: Gusii
+  it: Gusii
+guz-KE:
+  en: 'Gusii (Kenya)'
+  it: 'Gusii (Kenya)'
 gv:
   en: Manx
-  it: Manx
+  it: Mannese
+gv-IM:
+  en: 'Manx (Isle of Man)'
+  it: 'Mannese (Isola di Man)'
 ha:
   en: Hausa
   it: Hausa
+ha-Latn:
+  en: Hausa
+  it: Hausa
+ha-Latn-GH:
+  en: 'Hausa (Ghana)'
+  it: 'Hausa (Ghana)'
+ha-Latn-NE:
+  en: 'Hausa (Niger)'
+  it: 'Hausa (Niger)'
+ha-Latn-NG:
+  en: 'Hausa (Nigeria)'
+  it: 'Hausa (Nigeria)'
+haw:
+  en: Hawaiian
+  it: Hawaiano
+haw-US:
+  en: 'Hawaiian (United States)'
+  it: 'Hawaiano (Stati Uniti)'
 he:
   en: Hebrew
-  it: Hebrew
+  it: Ebraico
+he-IL:
+  en: 'Hebrew (Israel)'
+  it: 'Ebraico (Israele)'
 hi:
   en: Hindi
   it: Hindi
-ho:
-  en: Hiri Motu
-  it: Hiri Motu
-hr:
-  en: Croatian
-  it: Croatian
-ht:
-  en: Haitian
-  it: Haitian
+hi-IN:
+  en: 'Hindi (India)'
+  it: 'Hindi (India)'
+hr,:
+  en: Hr,
+  it: Hr,
+hr-BA:
+  en: 'Croatian (Bosnia & Herzegovina)'
+  it: 'Croato (Bosnia ed Erzegovina)'
+hr-HR:
+  en: 'Croatian (Croatia)'
+  it: 'Croato (Croazia)'
+hsb:
+  en: 'Upper sorbian'
+  it: 'Alto sorabo'
+hsb-DE:
+  en: 'Upper sorbian (Germany)'
+  it: 'Alto sorabo (Germania)'
 hu:
   en: Hungarian
-  it: Hungarian
+  it: Ungherese
+hu-HU:
+  en: 'Hungarian (Hungary)'
+  it: 'Ungherese (Ungheria)'
 hy:
   en: Armenian
-  it: Armenian
-hz:
-  en: Herero
-  it: Herero
+  it: Armeno
+hy-AM:
+  en: 'Armenian (Armenia)'
+  it: 'Armeno (Armenia)'
 ia:
   en: Interlingua
   it: Interlingua
+ia-001:
+  en: 'Interlingua (World)'
+  it: 'Interlingua (Mondo)'
+ia-FR:
+  en: 'Interlingua (France)'
+  it: 'Interlingua (Francia)'
 id:
   en: Indonesian
-  it: Indonesian
-ie:
-  en: Interlingue
-  it: Interlingue
+  it: Indonesiano
+id-ID:
+  en: 'Indonesian (Indonesia)'
+  it: 'Indonesiano (Indonesia)'
 ig:
   en: Igbo
   it: Igbo
+ig-NG:
+  en: 'Igbo (Nigeria)'
+  it: 'Igbo (Nigeria)'
 ii:
-  en: Sichuan Yi
-  it: Sichuan Yi
-ik:
-  en: Inupiaq
-  it: Inupiaq
-io:
-  en: Ido
-  it: Ido
+  en: 'Sichuan yi'
+  it: 'Sichuan yi'
+ii-CN:
+  en: 'Sichuan yi (China)'
+  it: 'Sichuan yi (Cina)'
 is:
   en: Icelandic
-  it: Icelandic
+  it: Islandese
+is-IS:
+  en: 'Icelandic (Iceland)'
+  it: 'Islandese (Islanda)'
 it:
   en: Italian
   it: Italiano
+it-CH:
+  en: 'Italian (Switzerland)'
+  it: 'Italiano (Svizzera)'
+it-IT:
+  en: 'Italian (Italy)'
+  it: 'Italiano (Italia)'
+it-SM:
+  en: 'Italian (San Marino)'
+  it: 'Italiano (San Marino)'
+it-VA:
+  en: 'Italian (Vatican City)'
+  it: 'Italiano (Città del Vaticano)'
 iu:
   en: Inuktitut
   it: Inuktitut
+iu-Cans:
+  en: Inuktitut
+  it: Inuktitut
+iu-Cans-CA:
+  en: 'Inuktitut (Canada)'
+  it: 'Inuktitut (Canada)'
+iu-Latn:
+  en: Inuktitut
+  it: Inuktitut
+iu-Latn-CA:
+  en: 'Inuktitut (Canada)'
+  it: 'Inuktitut (Canada)'
 ja:
   en: Japanese
-  it: Japanese
+  it: Giapponese
+ja-JP:
+  en: 'Japanese (Japan)'
+  it: 'Giapponese (Giappone)'
+jgo:
+  en: Ngomba
+  it: Ngamambo
+jgo-CM:
+  en: 'Ngomba (Cameroon)'
+  it: 'Ngamambo (Camerun)'
+jmc:
+  en: Machame
+  it: Machame
+jmc-TZ:
+  en: 'Machame (Tanzania)'
+  it: 'Machame (Tanzania)'
 jv:
   en: Javanese
-  it: Javanese
+  it: Giavanese
+jv-Latn:
+  en: Javanese
+  it: Giavanese
+jv-Latn-ID:
+  en: 'Javanese (Indonesia)'
+  it: 'Giavanese (Indonesia)'
 ka:
   en: Georgian
-  it: Georgian
-kg:
-  en: Kongo
-  it: Kongo
+  it: Georgiano
+ka-GE:
+  en: 'Georgian (Georgia)'
+  it: 'Georgiano (Georgia)'
+kab:
+  en: Kabyle
+  it: Cabilo
+kab-DZ:
+  en: 'Kabyle (Algeria)'
+  it: 'Cabilo (Algeria)'
+kam:
+  en: Kamba
+  it: Kamba
+kam-KE:
+  en: 'Kamba (Kenya)'
+  it: 'Kamba (Kenya)'
+kde:
+  en: Makonde
+  it: Makonde
+kde-TZ:
+  en: 'Makonde (Tanzania)'
+  it: 'Makonde (Tanzania)'
+kea:
+  en: Kabuverdianu
+  it: Capoverdiano
+kea-CV:
+  en: 'Kabuverdianu (Cape Verde)'
+  it: 'Capoverdiano (Capo Verde)'
+khq:
+  en: 'Koyra chiini'
+  it: 'Koyra chiini'
+khq-ML:
+  en: 'Koyra chiini (Mali)'
+  it: 'Koyra chiini (Mali)'
 ki:
   en: Kikuyu
   it: Kikuyu
-kj:
-  en: Kuanyama
-  it: Kuanyama
+ki-KE:
+  en: 'Kikuyu (Kenya)'
+  it: 'Kikuyu (Kenya)'
 kk:
   en: Kazakh
-  it: Kazakh
+  it: Kazako
+kk-KZ:
+  en: 'Kazakh (Kazakhstan)'
+  it: 'Kazako (Kazakistan)'
+kkj:
+  en: Kako
+  it: Kako
+kkj-CM:
+  en: 'Kako (Cameroon)'
+  it: 'Kako (Camerun)'
 kl:
   en: Kalaallisut
-  it: Kalaallisut
+  it: Groenlandese
+kl-GL:
+  en: 'Kalaallisut (Greenland)'
+  it: 'Groenlandese (Groenlandia)'
+kln:
+  en: Kalenjin
+  it: Kalenjin
+kln-KE:
+  en: 'Kalenjin (Kenya)'
+  it: 'Kalenjin (Kenya)'
 km:
-  en: Central Khmer
-  it: Central Khmer
+  en: Khmer
+  it: Khmer
+km-KH:
+  en: 'Khmer (Cambodia)'
+  it: 'Khmer (Cambogia)'
 kn:
   en: Kannada
   it: Kannada
+kn-IN:
+  en: 'Kannada (India)'
+  it: 'Kannada (India)'
 ko:
   en: Korean
-  it: Korean
-kr:
-  en: Kanuri
-  it: Kanuri
+  it: Coreano
+ko-KP:
+  en: 'Korean (North Korea)'
+  it: 'Coreano (Corea del Nord)'
+ko-KR:
+  en: 'Korean (South Korea)'
+  it: 'Coreano (Corea del Sud)'
+kok:
+  en: Konkani
+  it: Konkani
+kok-IN:
+  en: 'Konkani (India)'
+  it: 'Konkani (India)'
 ks:
   en: Kashmiri
   it: Kashmiri
+ks-Arab:
+  en: Kashmiri
+  it: Kashmiri
+ks-Arab-IN:
+  en: 'Kashmiri (India)'
+  it: 'Kashmiri (India)'
+ksb:
+  en: Shambala
+  it: Shambala
+ksb-TZ:
+  en: 'Shambala (Tanzania)'
+  it: 'Shambala (Tanzania)'
+ksf:
+  en: Bafia
+  it: Bafia
+ksf-CM:
+  en: 'Bafia (Cameroon)'
+  it: 'Bafia (Camerun)'
+ksh:
+  en: Colognian
+  it: Coloniese
+ksh-DE:
+  en: 'Colognian (Germany)'
+  it: 'Coloniese (Germania)'
 ku:
   en: Kurdish
-  it: Kurdish
-kv:
-  en: Komi
-  it: Komi
+  it: Curdo
+ku-Arab:
+  en: Kurdish
+  it: Curdo
+ku-Arab-IQ:
+  en: 'Kurdish (Iraq)'
+  it: 'Curdo (Iraq)'
+ku-Arab-IR:
+  en: 'Kurdish (Iran)'
+  it: 'Curdo (Iran)'
 kw:
   en: Cornish
-  it: Cornish
+  it: Cornico
+kw-GB:
+  en: 'Cornish (United Kingdom)'
+  it: 'Cornico (Regno Unito)'
 ky:
-  en: Kirghiz
-  it: Kirghiz
-la:
-  en: Latin
-  it: Latin
+  en: Kyrgyz
+  it: Kirghiso
+ky-KG:
+  en: 'Kyrgyz (Kyrgyzstan)'
+  it: 'Kirghiso (Kirghizistan)'
+lag:
+  en: Langi
+  it: Langi
+lag-TZ:
+  en: 'Langi (Tanzania)'
+  it: 'Langi (Tanzania)'
 lb:
   en: Luxembourgish
-  it: Luxembourgish
+  it: Lussemburghese
+lb-LU:
+  en: 'Luxembourgish (Luxembourg)'
+  it: 'Lussemburghese (Lussemburgo)'
 lg:
   en: Ganda
   it: Ganda
-li:
-  en: Limburgan
-  it: Limburgan
+lg-UG:
+  en: 'Ganda (Uganda)'
+  it: 'Ganda (Uganda)'
+lkt:
+  en: Lakota
+  it: Lakota
+lkt-US:
+  en: 'Lakota (United States)'
+  it: 'Lakota (Stati Uniti)'
 ln:
   en: Lingala
   it: Lingala
+ln-AO:
+  en: 'Lingala (Angola)'
+  it: 'Lingala (Angola)'
+ln-CD:
+  en: 'Lingala (Congo - Kinshasa)'
+  it: 'Lingala (Congo - Kinshasa)'
+ln-CF:
+  en: 'Lingala (Central African Republic)'
+  it: 'Lingala (Repubblica Centrafricana)'
+ln-CG:
+  en: 'Lingala (Congo - Brazzaville)'
+  it: 'Lingala (Congo-Brazzaville)'
 lo:
   en: Lao
   it: Lao
+lo-LA:
+  en: 'Lao (Laos)'
+  it: 'Lao (Laos)'
+lrc-IQ:
+  en: 'Northern luri (Iraq)'
+  it: 'Luri settentrionale (Iraq)'
+lrc-IR:
+  en: 'Northern luri (Iran)'
+  it: 'Luri settentrionale (Iran)'
 lt:
   en: Lithuanian
-  it: Lithuanian
+  it: Lituano
+lt-LT:
+  en: 'Lithuanian (Lithuania)'
+  it: 'Lituano (Lituania)'
 lu:
-  en: Luba-Katanga
-  it: Luba-Katanga
+  en: Luba-katanga
+  it: Luba-katanga
+lu-CD:
+  en: 'Luba-katanga (Congo - Kinshasa)'
+  it: 'Luba-katanga (Congo - Kinshasa)'
+luo:
+  en: 'Luo (kenya and tanzania)'
+  it: Luo
+luo-KE:
+  en: 'Luo (kenya and tanzania) (Kenya)'
+  it: 'Luo (Kenya)'
+luy:
+  en: Luyia
+  it: Luyia
+luy-KE:
+  en: 'Luyia (Kenya)'
+  it: 'Luyia (Kenya)'
 lv:
   en: Latvian
-  it: Latvian
+  it: Lettone
+lv-LV:
+  en: 'Latvian (Latvia)'
+  it: 'Lettone (Lettonia)'
+mas:
+  en: Masai
+  it: Masai
+mas-KE:
+  en: 'Masai (Kenya)'
+  it: 'Masai (Kenya)'
+mas-TZ:
+  en: 'Masai (Tanzania)'
+  it: 'Masai (Tanzania)'
+mer:
+  en: Meru
+  it: Meru
+mer-KE:
+  en: 'Meru (Kenya)'
+  it: 'Meru (Kenya)'
+mfe:
+  en: Morisyen
+  it: 'Creolo mauriziano'
+mfe-MU:
+  en: 'Morisyen (Mauritius)'
+  it: 'Creolo mauriziano (Mauritius)'
 mg:
   en: Malagasy
-  it: Malagasy
-mh:
-  en: Marshallese
-  it: Marshallese
+  it: Malgascio
+mg-MG:
+  en: 'Malagasy (Madagascar)'
+  it: 'Malgascio (Madagascar)'
+mgh:
+  en: Makhuwa-meetto
+  it: Makhuwa-meetto
+mgh-MZ:
+  en: 'Makhuwa-meetto (Mozambique)'
+  it: 'Makhuwa-meetto (Mozambico)'
+mgo:
+  en: Metaʼ
+  it: Meta’
+mgo-CM:
+  en: 'Metaʼ (Cameroon)'
+  it: 'Meta’ (Camerun)'
 mi:
   en: Maori
   it: Maori
+mi-NZ:
+  en: 'Maori (New Zealand)'
+  it: 'Maori (Nuova Zelanda)'
 mk:
   en: Macedonian
-  it: Macedonian
+  it: Macedone
+mk-MK:
+  en: 'Macedonian (North Macedonia)'
+  it: 'Macedone (Macedonia del Nord)'
 ml:
   en: Malayalam
   it: Malayalam
+ml-IN:
+  en: 'Malayalam (India)'
+  it: 'Malayalam (India)'
 mn:
   en: Mongolian
-  it: Mongolian
+  it: Mongolo
+mn-Cyrl:
+  en: Mongolian
+  it: Mongolo
+mn-MN:
+  en: 'Mongolian (Mongolia)'
+  it: 'Mongolo (Mongolia)'
+mn-Mong:
+  en: Mongolian
+  it: Mongolo
+mn-Mong-CN:
+  en: 'Mongolian (China)'
+  it: 'Mongolo (Cina)'
+mn-Mong-MN:
+  en: 'Mongolian (Mongolia)'
+  it: 'Mongolo (Mongolia)'
+moh:
+  en: Mohawk
+  it: Mohawk
+moh-CA:
+  en: 'Mohawk (Canada)'
+  it: 'Mohawk (Canada)'
 mr:
   en: Marathi
   it: Marathi
+mr-IN:
+  en: 'Marathi (India)'
+  it: 'Marathi (India)'
 ms:
   en: Malay
-  it: Malay
+  it: Malese
+ms-BN:
+  en: 'Malay (Brunei)'
+  it: 'Malese (Brunei)'
+ms-MY:
+  en: 'Malay (Malaysia)'
+  it: 'Malese (Malaysia)'
 mt:
   en: Maltese
   it: Maltese
+mt-MT:
+  en: 'Maltese (Malta)'
+  it: 'Maltese (Malta)'
+mua:
+  en: Mundang
+  it: Mundang
+mua-CM:
+  en: 'Mundang (Cameroon)'
+  it: 'Mundang (Camerun)'
 my:
   en: Burmese
-  it: Burmese
-na:
-  en: Nauru
-  it: Nauru
+  it: Birmano
+my-MM:
+  en: 'Burmese (Myanmar (Burma))'
+  it: 'Birmano (Myanmar (Birmania))'
+mzn-IR:
+  en: 'Mazanderani (Iran)'
+  it: 'Mazandarani (Iran)'
+naq:
+  en: Nama
+  it: Nama
+naq-NA:
+  en: 'Nama (Namibia)'
+  it: 'Nama (Namibia)'
 nb:
-  en: "Bokmaal, Norwegian"
-  it: "Bokmaal, Norwegian"
+  en: 'Norwegian bokmål'
+  it: 'Norvegese bokmål'
+nb-NO:
+  en: 'Norwegian bokmål (Norway)'
+  it: 'Norvegese bokmål (Norvegia)'
+nb-SJ:
+  en: 'Norwegian bokmål (Svalbard & Jan Mayen)'
+  it: 'Norvegese bokmål (Svalbard e Jan Mayen)'
 nd:
-  en: "Ndebele, North"
-  it: "Ndebele, North"
+  en: 'North ndebele'
+  it: 'Ndebele del nord'
+nd-ZW:
+  en: 'North ndebele (Zimbabwe)'
+  it: 'Ndebele del nord (Zimbabwe)'
+nds:
+  en: 'Low german'
+  it: 'Basso tedesco'
+nds-DE:
+  en: 'Low german (Germany)'
+  it: 'Basso tedesco (Germania)'
+nds-NL:
+  en: 'Low german (Netherlands)'
+  it: 'Basso tedesco (Paesi Bassi)'
 ne:
   en: Nepali
-  it: Nepali
-ng:
-  en: Ndonga
-  it: Ndonga
+  it: Nepalese
+ne-IN:
+  en: 'Nepali (India)'
+  it: 'Nepalese (India)'
+ne-NP:
+  en: 'Nepali (Nepal)'
+  it: 'Nepalese (Nepal)'
 nl:
   en: Dutch
-  it: Dutch
+  it: Olandese
+nl-AW:
+  en: 'Dutch (Aruba)'
+  it: 'Olandese (Aruba)'
+nl-BE:
+  en: 'Dutch (Belgium)'
+  it: 'Olandese (Belgio)'
+nl-BQ:
+  en: 'Dutch (Caribbean Netherlands)'
+  it: 'Olandese (Caraibi olandesi)'
+nl-CW:
+  en: 'Dutch (Curaçao)'
+  it: 'Olandese (Curaçao)'
+nl-NL:
+  en: 'Dutch (Netherlands)'
+  it: 'Olandese (Paesi Bassi)'
+nl-SR:
+  en: 'Dutch (Suriname)'
+  it: 'Olandese (Suriname)'
+nl-SX:
+  en: 'Dutch (Sint Maarten)'
+  it: 'Olandese (Sint Maarten)'
+nmg:
+  en: Kwasio
+  it: Kwasio
+nmg-CM:
+  en: 'Kwasio (Cameroon)'
+  it: 'Kwasio (Camerun)'
 nn:
-  en: "Norwegian Nynorsk"
-  it: "Norwegian Nynorsk"
+  en: 'Norwegian nynorsk'
+  it: 'Norvegese nynorsk'
+nn-NO:
+  en: 'Norwegian nynorsk (Norway)'
+  it: 'Norvegese nynorsk (Norvegia)'
+nnh:
+  en: Ngiemboon
+  it: Ngiemboon
+nnh-CM:
+  en: 'Ngiemboon (Cameroon)'
+  it: 'Ngiemboon (Camerun)'
 no:
-  en: Norwegian
-  it: Norwegian
+  en: 'Norwegian bokmål'
+  it: 'Norvegese bokmål'
+nqo:
+  en: N’ko
+  it: N’ko
+nqo-GN:
+  en: 'N’ko (Guinea)'
+  it: 'N’ko (Guinea)'
 nr:
-  en: "Ndebele, South"
-  it: "Ndebele, South"
-nv:
-  en: Navajo
-  it: Navajo
-ny:
-  en: Chichewa
-  it: Chichewa
+  en: 'South ndebele'
+  it: 'Ndebele del sud'
+nr-ZA:
+  en: 'South ndebele (South Africa)'
+  it: 'Ndebele del sud (Sudafrica)'
+nso:
+  en: 'Northern sotho'
+  it: 'Sotho del nord'
+nso-ZA:
+  en: 'Northern sotho (South Africa)'
+  it: 'Sotho del nord (Sudafrica)'
+nus:
+  en: Nuer
+  it: Nuer
+nus-SD:
+  en: 'Nuer (Sudan)'
+  it: 'Nuer (Sudan)'
+nus-SS:
+  en: 'Nuer (South Sudan)'
+  it: 'Nuer (Sud Sudan)'
+nyn:
+  en: Nyankole
+  it: Nyankole
+nyn-UG:
+  en: 'Nyankole (Uganda)'
+  it: 'Nyankole (Uganda)'
 oc:
-  en: Occitan (post 1500)
-  it: Occitan (post 1500)
-oj:
-  en: Ojibwa
-  it: Ojibwa
+  en: Occitan
+  it: Occitano
+oc-FR:
+  en: 'Occitan (France)'
+  it: 'Occitano (Francia)'
 om:
   en: Oromo
   it: Oromo
+om-ET:
+  en: 'Oromo (Ethiopia)'
+  it: 'Oromo (Etiopia)'
+om-KE:
+  en: 'Oromo (Kenya)'
+  it: 'Oromo (Kenya)'
 or:
-  en: Oriya
-  it: Oriya
+  en: Odia
+  it: Odia
+or-IN:
+  en: 'Odia (India)'
+  it: 'Odia (India)'
 os:
-  en: Ossetian
-  it: Ossetian
+  en: Ossetic
+  it: Ossetico
+os-GE:
+  en: 'Ossetic (Georgia)'
+  it: 'Ossetico (Georgia)'
+os-RU:
+  en: 'Ossetic (Russia)'
+  it: 'Ossetico (Russia)'
 pa:
-  en: Panjabi
-  it: Panjabi
-pi:
-  en: Pali
-  it: Pali
+  en: Punjabi
+  it: Punjabi
+pa-Arab:
+  en: Punjabi
+  it: Punjabi
+pa-Arab-PK:
+  en: 'Punjabi (Pakistan)'
+  it: 'Punjabi (Pakistan)'
+pa-IN:
+  en: 'Punjabi (India)'
+  it: 'Punjabi (India)'
 pl:
   en: Polish
-  it: Polish
+  it: Polacco
+pl-PL:
+  en: 'Polish (Poland)'
+  it: 'Polacco (Polonia)'
+prg-001:
+  en: 'Prussian (World)'
+  it: 'Prussiano (Mondo)'
+prs:
+  en: 'Persian (Afghanistan)'
+  it: 'Persiano (Afghanistan)'
+prs-AF:
+  en: 'Persian (Afghanistan)'
+  it: 'Persiano (Afghanistan)'
 ps:
-  en: Pushto
-  it: Pushto
+  en: Pashto
+  it: Pashto
+ps-AF:
+  en: 'Pashto (Afghanistan)'
+  it: 'Pashto (Afghanistan)'
 pt:
   en: Portuguese
   it: Portoghese
-qu:
-  en: Quechua
-  it: Quechua
+pt-AO:
+  en: 'Portuguese (Angola)'
+  it: 'Portoghese (Angola)'
+pt-BR:
+  en: 'Portuguese (Brazil)'
+  it: 'Portoghese (Brasile)'
+pt-CH:
+  en: 'Portuguese (Switzerland)'
+  it: 'Portoghese (Svizzera)'
+pt-CV:
+  en: 'Portuguese (Cape Verde)'
+  it: 'Portoghese (Capo Verde)'
+pt-GQ:
+  en: 'Portuguese (Equatorial Guinea)'
+  it: 'Portoghese (Guinea Equatoriale)'
+pt-GW:
+  en: 'Portuguese (Guinea-Bissau)'
+  it: 'Portoghese (Guinea-Bissau)'
+pt-LU:
+  en: 'Portuguese (Luxembourg)'
+  it: 'Portoghese (Lussemburgo)'
+pt-MO:
+  en: 'Portuguese (Macao SAR China)'
+  it: 'Portoghese (RAS di Macao)'
+pt-MZ:
+  en: 'Portuguese (Mozambique)'
+  it: 'Portoghese (Mozambico)'
+pt-PT:
+  en: 'Portuguese (Portugal)'
+  it: 'Portoghese (Portogallo)'
+pt-ST:
+  en: 'Portuguese (São Tomé & Príncipe)'
+  it: 'Portoghese (São Tomé e Príncipe)'
+pt-TL:
+  en: 'Portuguese (Timor-Leste)'
+  it: 'Portoghese (Timor Est)'
+qps-ploc:
+  en: Qps
+  it: Qps
+qps-ploca: {}
+qps-plocm: {}
+quc:
+  en: Kʼicheʼ
+  it: K’iche’
+quc-Latn-GT:
+  en: 'Kʼicheʼ (Guatemala)'
+  it: 'K’iche’ (Guatemala)'
+quz:
+  en: 'Cusco quechua'
+  it: Quz
+quz-BO:
+  en: 'Cusco quechua (Bolivia)'
+  it: 'Quz (Bolivia)'
+quz-EC:
+  en: 'Cusco quechua (Ecuador)'
+  it: 'Quz (Ecuador)'
+quz-PE:
+  en: 'Cusco quechua (Peru)'
+  it: 'Quz (Perù)'
 rm:
   en: Romansh
-  it: Romansh
+  it: Romancio
+rm-CH:
+  en: 'Romansh (Switzerland)'
+  it: 'Romancio (Svizzera)'
 rn:
   en: Rundi
   it: Rundi
+rn-BI:
+  en: 'Rundi (Burundi)'
+  it: 'Rundi (Burundi)'
 ro:
   en: Romanian
-  it: Romanian
+  it: Rumeno
+ro-MD:
+  en: 'Romanian (Moldova)'
+  it: 'Rumeno (Moldavia)'
+ro-RO:
+  en: 'Romanian (Romania)'
+  it: 'Rumeno (Romania)'
+rof:
+  en: Rombo
+  it: Rombo
+rof-TZ:
+  en: 'Rombo (Tanzania)'
+  it: 'Rombo (Tanzania)'
 ru:
   en: Russian
   it: Russo
+ru-BY:
+  en: 'Russian (Belarus)'
+  it: 'Russo (Bielorussia)'
+ru-KG:
+  en: 'Russian (Kyrgyzstan)'
+  it: 'Russo (Kirghizistan)'
+ru-KZ:
+  en: 'Russian (Kazakhstan)'
+  it: 'Russo (Kazakistan)'
+ru-MD:
+  en: 'Russian (Moldova)'
+  it: 'Russo (Moldavia)'
+ru-RU:
+  en: 'Russian (Russia)'
+  it: 'Russo (Russia)'
+ru-UA:
+  en: 'Russian (Ukraine)'
+  it: 'Russo (Ucraina)'
 rw:
   en: Kinyarwanda
   it: Kinyarwanda
+rw-RW:
+  en: 'Kinyarwanda (Rwanda)'
+  it: 'Kinyarwanda (Ruanda)'
+rwk:
+  en: Rwa
+  it: Rwa
+rwk-TZ:
+  en: 'Rwa (Tanzania)'
+  it: 'Rwa (Tanzania)'
 sa:
   en: Sanskrit
-  it: Sanskrit
-sc:
-  en: Sardinian
-  it: Sardinian
+  it: Sanscrito
+sa-IN:
+  en: 'Sanskrit (India)'
+  it: 'Sanscrito (India)'
+sah:
+  en: Sakha
+  it: Yakut
+sah-RU:
+  en: 'Sakha (Russia)'
+  it: 'Yakut (Russia)'
+saq:
+  en: Samburu
+  it: Samburu
+saq-KE:
+  en: 'Samburu (Kenya)'
+  it: 'Samburu (Kenya)'
+sbp:
+  en: Sangu
+  it: Sangu
+sbp-TZ:
+  en: 'Sangu (Tanzania)'
+  it: 'Sangu (Tanzania)'
 sd:
   en: Sindhi
   it: Sindhi
+sd-Arab:
+  en: Sindhi
+  it: Sindhi
+sd-Arab-PK:
+  en: 'Sindhi (Pakistan)'
+  it: 'Sindhi (Pakistan)'
 se:
-  en: Northern Sami
-  it: Northern Sami
+  en: 'Northern sami'
+  it: 'Sami del nord'
+se-FI:
+  en: 'Northern sami (Finland)'
+  it: 'Sami del nord (Finlandia)'
+se-NO:
+  en: 'Northern sami (Norway)'
+  it: 'Sami del nord (Norvegia)'
+se-SE:
+  en: 'Northern sami (Sweden)'
+  it: 'Sami del nord (Svezia)'
+seh:
+  en: Sena
+  it: Sena
+seh-MZ:
+  en: 'Sena (Mozambique)'
+  it: 'Sena (Mozambico)'
+ses:
+  en: 'Koyraboro senni'
+  it: 'Koyraboro senni'
+ses-ML:
+  en: 'Koyraboro senni (Mali)'
+  it: 'Koyraboro senni (Mali)'
 sg:
   en: Sango
   it: Sango
+sg-CF:
+  en: 'Sango (Central African Republic)'
+  it: 'Sango (Repubblica Centrafricana)'
+shi:
+  en: Tachelhit
+  it: Tashelhit
+shi-Latn:
+  en: Tachelhit
+  it: Tashelhit
+shi-Latn-MA:
+  en: 'Tachelhit (Morocco)'
+  it: 'Tashelhit (Marocco)'
+shi-Tfng:
+  en: Tachelhit
+  it: Tashelhit
+shi-Tfng-MA:
+  en: 'Tachelhit (Morocco)'
+  it: 'Tashelhit (Marocco)'
 si:
   en: Sinhala
-  it: Sinhala
+  it: Singalese
+si-LK:
+  en: 'Sinhala (Sri Lanka)'
+  it: 'Singalese (Sri Lanka)'
 sk:
   en: Slovak
-  it: Slovak
+  it: Slovacco
+sk-SK:
+  en: 'Slovak (Slovakia)'
+  it: 'Slovacco (Slovacchia)'
 sl:
   en: Slovenian
-  it: Slovenian
-sm:
-  en: Samoan
-  it: Samoan
+  it: Sloveno
+sl-SI:
+  en: 'Slovenian (Slovenia)'
+  it: 'Sloveno (Slovenia)'
+sma:
+  en: 'Southern sami'
+  it: 'Sami del sud'
+sma-NO:
+  en: 'Southern sami (Norway)'
+  it: 'Sami del sud (Norvegia)'
+sma-SE:
+  en: 'Southern sami (Sweden)'
+  it: 'Sami del sud (Svezia)'
+smj:
+  en: 'Lule sami'
+  it: 'Sami di lule'
+smj-NO:
+  en: 'Lule sami (Norway)'
+  it: 'Sami di lule (Norvegia)'
+smj-SE:
+  en: 'Lule sami (Sweden)'
+  it: 'Sami di lule (Svezia)'
+smn:
+  en: 'Inari sami'
+  it: 'Sami di inari'
+smn-FI:
+  en: 'Inari sami (Finland)'
+  it: 'Sami di inari (Finlandia)'
+sms:
+  en: 'Skolt sami'
+  it: 'Sami skolt'
+sms-FI:
+  en: 'Skolt sami (Finland)'
+  it: 'Sami skolt (Finlandia)'
 sn:
   en: Shona
   it: Shona
+sn-Latn:
+  en: Shona
+  it: Shona
+sn-Latn-ZW:
+  en: 'Shona (Zimbabwe)'
+  it: 'Shona (Zimbabwe)'
 so:
   en: Somali
-  it: Somali
+  it: Somalo
+so-DJ:
+  en: 'Somali (Djibouti)'
+  it: 'Somalo (Gibuti)'
+so-ET:
+  en: 'Somali (Ethiopia)'
+  it: 'Somalo (Etiopia)'
+so-KE:
+  en: 'Somali (Kenya)'
+  it: 'Somalo (Kenya)'
+so-SO:
+  en: 'Somali (Somalia)'
+  it: 'Somalo (Somalia)'
 sq:
   en: Albanian
-  it: Albanian
+  it: Albanese
+sq-AL:
+  en: 'Albanian (Albania)'
+  it: 'Albanese (Albania)'
+sq-MK:
+  en: 'Albanian (North Macedonia)'
+  it: 'Albanese (Macedonia del Nord)'
 sr:
   en: Serbian
   it: Serbo
+sr-Cyrl:
+  en: Serbian
+  it: Serbo
+sr-Cyrl-BA:
+  en: 'Serbian (Bosnia & Herzegovina)'
+  it: 'Serbo (Bosnia ed Erzegovina)'
+sr-Cyrl-CS:
+  en: 'Serbian (Serbia)'
+  it: 'Serbo (Serbia)'
+sr-Cyrl-ME:
+  en: 'Serbian (Montenegro)'
+  it: 'Serbo (Montenegro)'
+sr-Cyrl-RS:
+  en: 'Serbian (Serbia)'
+  it: 'Serbo (Serbia)'
+sr-Latn:
+  en: Serbian
+  it: Serbo
+sr-Latn-BA:
+  en: 'Serbian (Bosnia & Herzegovina)'
+  it: 'Serbo (Bosnia ed Erzegovina)'
+sr-Latn-CS:
+  en: 'Serbian (Serbia)'
+  it: 'Serbo (Serbia)'
+sr-Latn-ME:
+  en: 'Serbian (Montenegro)'
+  it: 'Serbo (Montenegro)'
+sr-Latn-RS:
+  en: 'Serbian (Serbia)'
+  it: 'Serbo (Serbia)'
 ss:
   en: Swati
   it: Swati
+ss-SZ:
+  en: 'Swati (Eswatini)'
+  it: 'Swati (Swaziland)'
+ss-ZA:
+  en: 'Swati (South Africa)'
+  it: 'Swati (Sudafrica)'
+ssy:
+  en: Saho
+  it: Saho
+ssy-ER:
+  en: 'Saho (Eritrea)'
+  it: 'Saho (Eritrea)'
 st:
-  en: "Sotho, Southern"
-  it: "Sotho, Southern"
-su:
-  en: Sundanese
-  it: Sundanese
+  en: 'Southern sotho'
+  it: 'Sotho del sud'
+st-LS:
+  en: 'Southern sotho (Lesotho)'
+  it: 'Sotho del sud (Lesotho)'
+st-ZA:
+  en: 'Southern sotho (South Africa)'
+  it: 'Sotho del sud (Sudafrica)'
 sv:
   en: Swedish
   it: Svedese
+sv-AX:
+  en: 'Swedish (Åland Islands)'
+  it: 'Svedese (Isole Åland)'
+sv-FI:
+  en: 'Swedish (Finland)'
+  it: 'Svedese (Finlandia)'
+sv-SE:
+  en: 'Swedish (Sweden)'
+  it: 'Svedese (Svezia)'
 sw:
   en: Swahili
   it: Swahili
+sw-KE:
+  en: 'Swahili (Kenya)'
+  it: 'Swahili (Kenya)'
+sw-TZ:
+  en: 'Swahili (Tanzania)'
+  it: 'Swahili (Tanzania)'
+sw-UG:
+  en: 'Swahili (Uganda)'
+  it: 'Swahili (Uganda)'
+swc:
+  en: 'Swahili (Congo - Kinshasa)'
+  it: 'Swahili (Congo - Kinshasa)'
+swc-CD:
+  en: 'Swahili (Congo - Kinshasa)'
+  it: 'Swahili (Congo - Kinshasa)'
+syr:
+  en: Syriac
+  it: Siriaco
+syr-SY:
+  en: 'Syriac (Syria)'
+  it: 'Siriaco (Siria)'
 ta:
   en: Tamil
   it: Tamil
+ta-IN:
+  en: 'Tamil (India)'
+  it: 'Tamil (India)'
+ta-LK:
+  en: 'Tamil (Sri Lanka)'
+  it: 'Tamil (Sri Lanka)'
+ta-MY:
+  en: 'Tamil (Malaysia)'
+  it: 'Tamil (Malaysia)'
+ta-SG:
+  en: 'Tamil (Singapore)'
+  it: 'Tamil (Singapore)'
 te:
   en: Telugu
   it: Telugu
+te-IN:
+  en: 'Telugu (India)'
+  it: 'Telugu (India)'
+teo:
+  en: Teso
+  it: Teso
+teo-KE:
+  en: 'Teso (Kenya)'
+  it: 'Teso (Kenya)'
+teo-UG:
+  en: 'Teso (Uganda)'
+  it: 'Teso (Uganda)'
 tg:
   en: Tajik
-  it: Tajik
+  it: Tagico
+tg-Cyrl:
+  en: Tajik
+  it: Tagico
+tg-Cyrl-TJ:
+  en: 'Tajik (Tajikistan)'
+  it: 'Tagico (Tagikistan)'
 th:
   en: Thai
   it: Thai
+th-TH:
+  en: 'Thai (Thailand)'
+  it: 'Thai (Thailandia)'
 ti:
   en: Tigrinya
-  it: Tigrinya
+  it: Tigrino
+ti-ER:
+  en: 'Tigrinya (Eritrea)'
+  it: 'Tigrino (Eritrea)'
+ti-ET:
+  en: 'Tigrinya (Ethiopia)'
+  it: 'Tigrino (Etiopia)'
+tig:
+  en: Tigre
+  it: Tigre
+tig-ER:
+  en: 'Tigre (Eritrea)'
+  it: 'Tigre (Eritrea)'
 tk:
   en: Turkmen
-  it: Turkmen
-tl:
-  en: Tagalog
-  it: Tagalog
+  it: Turcomanno
+tk-TM:
+  en: 'Turkmen (Turkmenistan)'
+  it: 'Turcomanno (Turkmenistan)'
 tn:
   en: Tswana
   it: Tswana
+tn-BW:
+  en: 'Tswana (Botswana)'
+  it: 'Tswana (Botswana)'
+tn-ZA:
+  en: 'Tswana (South Africa)'
+  it: 'Tswana (Sudafrica)'
 to:
-  en: Tonga
-  it: Tonga
+  en: Tongan
+  it: Tongano
+to-TO:
+  en: 'Tongan (Tonga)'
+  it: 'Tongano (Tonga)'
 tr:
   en: Turkish
-  it: Turkish
+  it: Turco
+tr-CY:
+  en: 'Turkish (Cyprus)'
+  it: 'Turco (Cipro)'
+tr-TR:
+  en: 'Turkish (Turkey)'
+  it: 'Turco (Turchia)'
 ts:
   en: Tsonga
   it: Tsonga
+ts-ZA:
+  en: 'Tsonga (South Africa)'
+  it: 'Tsonga (Sudafrica)'
 tt:
   en: Tatar
-  it: Tatar
-tw:
-  en: Twi
-  it: Twi
-ty:
-  en: Tahitian
-  it: Tahitian
+  it: Tataro
+tt-RU:
+  en: 'Tatar (Russia)'
+  it: 'Tataro (Russia)'
+twq:
+  en: Tasawaq
+  it: Tasawaq
+twq-NE:
+  en: 'Tasawaq (Niger)'
+  it: 'Tasawaq (Niger)'
+tzm:
+  en: 'Central atlas tamazight'
+  it: Tamazight
+tzm-Latn:
+  en: 'Central atlas tamazight'
+  it: Tamazight
+tzm-Latn-DZ:
+  en: 'Central atlas tamazight (Algeria)'
+  it: 'Tamazight (Algeria)'
+tzm-Latn-MA:
+  en: 'Central atlas tamazight (Morocco)'
+  it: 'Tamazight (Marocco)'
 ug:
-  en: Uighur
-  it: Uighur
+  en: Uyghur
+  it: Uiguro
+ug-CN:
+  en: 'Uyghur (China)'
+  it: 'Uiguro (Cina)'
 uk:
   en: Ukrainian
-  it: Ukrainian
+  it: Ucraino
+uk-UA:
+  en: 'Ukrainian (Ukraine)'
+  it: 'Ucraino (Ucraina)'
 ur:
   en: Urdu
   it: Urdu
+ur-IN:
+  en: 'Urdu (India)'
+  it: 'Urdu (India)'
+ur-PK:
+  en: 'Urdu (Pakistan)'
+  it: 'Urdu (Pakistan)'
 uz:
   en: Uzbek
-  it: Uzbek
+  it: Uzbeco
+uz-Arab:
+  en: Uzbek
+  it: Uzbeco
+uz-Arab-AF:
+  en: 'Uzbek (Afghanistan)'
+  it: 'Uzbeco (Afghanistan)'
+uz-Cyrl:
+  en: Uzbek
+  it: Uzbeco
+uz-Cyrl-UZ:
+  en: 'Uzbek (Uzbekistan)'
+  it: 'Uzbeco (Uzbekistan)'
+uz-Latn:
+  en: Uzbek
+  it: Uzbeco
+uz-Latn-UZ:
+  en: 'Uzbek (Uzbekistan)'
+  it: 'Uzbeco (Uzbekistan)'
+vai:
+  en: Vai
+  it: Vai
+vai-Latn:
+  en: Vai
+  it: Vai
+vai-Latn-LR:
+  en: 'Vai (Liberia)'
+  it: 'Vai (Liberia)'
+vai-Vaii:
+  en: Vai
+  it: Vai
+vai-Vaii-LR:
+  en: 'Vai (Liberia)'
+  it: 'Vai (Liberia)'
 ve:
   en: Venda
   it: Venda
+ve-ZA:
+  en: 'Venda (South Africa)'
+  it: 'Venda (Sudafrica)'
 vi:
   en: Vietnamese
-  it: Vietnamese
+  it: Vietnamita
+vi-VN:
+  en: 'Vietnamese (Vietnam)'
+  it: 'Vietnamita (Vietnam)'
 vo:
-  en: VolapÃ¼k
-  it: VolapÃ¼k
-wa:
-  en: Walloon
-  it: Walloon
+  en: Volapük
+  it: Volapük
+vo-001:
+  en: 'Volapük (World)'
+  it: 'Volapük (Mondo)'
+vun:
+  en: Vunjo
+  it: Vunjo
+vun-TZ:
+  en: 'Vunjo (Tanzania)'
+  it: 'Vunjo (Tanzania)'
+wae:
+  en: Walser
+  it: Walser
+wae-CH:
+  en: 'Walser (Switzerland)'
+  it: 'Walser (Svizzera)'
+wal:
+  en: Wolaytta
+  it: Walamo
+wal-ET:
+  en: 'Wolaytta (Ethiopia)'
+  it: 'Walamo (Etiopia)'
 wo:
   en: Wolof
   it: Wolof
+wo-SN:
+  en: 'Wolof (Senegal)'
+  it: 'Wolof (Senegal)'
 xh:
   en: Xhosa
   it: Xhosa
-yi:
-  en: Yiddish
-  it: Yiddish
+xh-ZA:
+  en: 'Xhosa (South Africa)'
+  it: 'Xhosa (Sudafrica)'
+xog:
+  en: Soga
+  it: Soga
+xog-UG:
+  en: 'Soga (Uganda)'
+  it: 'Soga (Uganda)'
+yav:
+  en: Yangben
+  it: Yangben
+yav-CM:
+  en: 'Yangben (Cameroon)'
+  it: 'Yangben (Camerun)'
 yo:
   en: Yoruba
   it: Yoruba
-za:
-  en: Zhuang
-  it: Zhuang
+yo-BJ:
+  en: 'Yoruba (Benin)'
+  it: 'Yoruba (Benin)'
+yo-NG:
+  en: 'Yoruba (Nigeria)'
+  it: 'Yoruba (Nigeria)'
+zgh:
+  en: 'Standard moroccan tamazight'
+  it: 'Tamazight del marocco standard'
+zgh-Tfng:
+  en: 'Standard moroccan tamazight'
+  it: 'Tamazight del marocco standard'
+zgh-Tfng-MA:
+  en: 'Standard moroccan tamazight (Morocco)'
+  it: 'Tamazight del marocco standard (Marocco)'
 zh:
   en: Chinese
   it: Cinese
+zh-CN:
+  en: 'Chinese (China)'
+  it: 'Cinese (Cina)'
+zh-HK:
+  en: 'Chinese (Hong Kong SAR China)'
+  it: 'Cinese (RAS di Hong Kong)'
+zh-Hans:
+  en: Chinese
+  it: Cinese
+zh-Hant:
+  en: Chinese
+  it: Cinese
+zh-MO:
+  en: 'Chinese (Macao SAR China)'
+  it: 'Cinese (RAS di Macao)'
+zh-SG:
+  en: 'Chinese (Singapore)'
+  it: 'Cinese (Singapore)'
+zh-TW:
+  en: 'Chinese (Taiwan)'
+  it: 'Cinese (Taiwan)'
 zu:
   en: Zulu
   it: Zulu
+zu-ZA:
+  en: 'Zulu (South Africa)'
+  it: 'Zulu (Sudafrica)'
