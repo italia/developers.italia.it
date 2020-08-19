@@ -99,16 +99,6 @@ Wait until the Docker logs explicitly say that the website is served on
 *0.0.0.0:4000*. Then, open a browser and navigate to http://localhost:4000 to
 preview the website.
 
-### Recompile handlebars templates
-
-Within folder `_templates` live some handlebars templates that operate in
-various areas.  Once they get modified it is necessary recompile them. To do
-that we can use `npx` utility as follow:
-
-`npx handlebars@4.0.0 _templates/search.handlebars -f
-assets/templates/search.tpl.js`
-
-
 ## Makefile
 
 Both the [CircleCI build](.circleci/config.yml) and the [Docker

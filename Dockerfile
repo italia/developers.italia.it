@@ -22,8 +22,6 @@ COPY _layouts _layouts
 COPY _platforms _platforms
 COPY _plugins _plugins
 COPY _posts _posts
-COPY _sass _sass
-COPY _templates _templates
 COPY assets assets
 COPY en en
 COPY it it
@@ -45,6 +43,6 @@ RUN make bundle-install
 RUN make download-data
 RUN make build-swagger
 
-EXPOSE 4000
+EXPOSE 4000 8080 35729
 
 CMD ["make", "local"]

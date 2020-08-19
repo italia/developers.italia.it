@@ -14,10 +14,15 @@ layout: default
 
 {% endcomment %}
 {% assign github_tech_list = site.github_tech_list %}
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/datatables/jquery.dataTables.min.css">
 
+{% capture projects_escaped_json %}
+{{ t.todo_projects_dict | jsonify | replace: "'", "&apos;" }}
+{% endcapture %}
 
-<section class="project__content {% if page.resources %}with-resources{%endif%}">
+<section
+  class="project__content {% if page.resources %}with-resources{%endif%}"
+  data-projects-dictionary='{{ projects_escaped_json }}'
+>
   <div class="container d-flex justify-content-center">
     <div class="project__maincontent col-md-10">
 
@@ -84,8 +89,8 @@ layout: default
               <label>{{ t.todo_page_tech }}</label>
               <select id="github_languages_list" multiple="true" data-multiple-separator="" title="{{ t.todo_page_pick_option }}">
                 {% for tech in github_tech_list %}
-                <option value="{{ tech }}"
-                  data-content="<span class='select-pill'><span class='select-pill-text'>{{ tech }}</span></span>">
+                <option value="{{ tech }}">
+                  {{ tech }}
                 </option>
                 {% endfor %}
               </select>
@@ -112,11 +117,3 @@ layout: default
     </div>
   </div>
 </section>
-
-<script>
-  // dictionary of projects
-  var projects_dictionary = {{ t.todo_projects_dict | jsonify }};
-</script>
-<!-- Load jquery -->
-<script src="/assets/vendor/jquery/jquery.min.js"></script>
-<script src="/assets/js-perpage/github-issues.min.js"></script>

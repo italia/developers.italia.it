@@ -16,16 +16,16 @@ Probabilmente sarete pronti a partire per le vacanze, ma prima segnate in agenda
 
 Durante quel weekend tutte le tech community italiane e gli sviluppatori potranno partecipare alla maratona di programmazione organizzata **in contemporanea in oltre 20 città** su tutto il territorio nazionale. L'obiettivo è costruire insieme una Pubblica Amministrazione a misura di cittadino, rendendo i servizi pubblici più accessibili, semplici ed efficaci.
 
-![Developers](/assets/posts/hackdevelopers.png)
- 
+![Developers](/assets/images/posts/hackdevelopers.png)
+
 All'hackathon si può partecipare in due modi:
- 
+
  * [iscrivendosi come partecipante](http://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&id=32376a094a)
 
 oppure
 
  * [candidandosi come host per una sede locale su territorio](https://hack.developers.italia.it/call-4-hosts/)
- 
+
 
 Le challenge saranno pubblicate nel corso dei [prossimi mesi](https://hack.developers.italia.it/roadmap/), ma per una prima indicazione dei contenuti tecnologici abbiamo creato una [pagina dedicata](https://hack.developers.italia.it/challenge/). Le [sedi](https://hack.developers.italia.it/#text-7) dirette organizzate da Codemotion saranno Torino, Milano, Firenze, Roma e Bari. Per le altre sedi è aperta da oggi una [Call 4 Hosts](https://hack.developers.italia.it/call-4-hosts/).
 

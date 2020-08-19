@@ -25,7 +25,9 @@
           </a>
           <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
             data-activate-element>
-            <span class="icon it-expand px-2"></span>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
           </a>
         </div>
 
@@ -68,16 +70,23 @@
 
       <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
         <div class="Header-social ">
-          <span class="text-white mr-3">{{ t.follow_us | capitalize }}</span>
+          <span class="text-white mr-3 float-left">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons d-inline-block list-inline mb-0">
             <li class="list-inline-item">
               <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed">
-                <img src="{{ '/assets/icons/feed.svg' | relative_url }}">
+                <svg class="icon icon-white">
+                  <use xlink:href="/assets/icons/feed.svg#rss"></use>
+                </svg>
               </a>
             </li>
             {% for social in site.data.social %}
-            <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span
-                  class="it-{{ social[0] }} icon"></span></a></li>
+            <li class="list-inline-item">
+              <a href="{{ social[1].link }}" title="{{ social[1].name }}">
+                <svg class="icon icon-white">
+                  <use xlink:href="/assets/svg/sprite.svg#it-{{ social[0] }}"></use>
+                </svg>
+              </a>
+            </li>
             {% endfor %}
           </ul>
         </div>
