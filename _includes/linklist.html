@@ -13,10 +13,14 @@
     {% assign isActive = true %}
     {% elsif item.active_by_firstlevel %}
     {% assign pathArray = page.url | split:'/' %}
-    {% if item.active_by_firstlevel contains pathArray[1] or item.active_by_firstlevel contains pathArray[2] %}
+    {% if pathArray.size > 0 %}
+    {% capture path_1 %}{{ pathArray[1] | remove: '.html' }}{% endcapture %}
+    {% capture path_2 %}{{ pathArray[2] | remove: '.html' }}{% endcapture %}
+    {% if item.active_by_firstlevel contains path_1 or item.active_by_firstlevel contains path_2 %}
     {% assign isActive = true %}
-    {%endif%}
-    {% elsif page.url==item.url %}
+    {% endif %}
+    {% endif %}
+    {% elsif page.url == item.url %}
     {% assign isActive = true %}
     {% endif %}
     <li class="{{ item.liClass }} {% if isActive%}active{%endif%}">
