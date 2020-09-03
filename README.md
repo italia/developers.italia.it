@@ -33,11 +33,11 @@
     <a href="https://developers.italia.it/en/software">
       Reuse Catalog
     </a>
-    <span> | </span> 
+    <span> | </span>
     <a href="https://github.com/italia/publiccode.yml">
       publiccode.yml
     </a>
-    <span> | </span>  
+    <span> | </span>
     <a href="CONTRIBUTING.md">
       Contributing
     </a>
@@ -62,7 +62,7 @@
 Developers Italia is the reference point for the community of developers
 creating the next generation of digital public services in Italy.
 
-This repository contains the sources of the website. 
+This repository contains the sources of the website.
 The website is developed using [Jekyll](https://jekyllrb.com/) and it's
 currently served through [GitHub pages](https://pages.github.com/).
 
@@ -73,7 +73,7 @@ branch](https://github.com/italia/developers.italia.it/tree/gh-pages). The
 updated data feeding the website.
 
 # Documentation
-## Development 
+## Development
 
 A development environment can be both brought up directly on the developer
 machine and in form of a Docker container.
@@ -132,7 +132,7 @@ commands used to build the website.
 
 ## Code of Conduct
 Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a great
-collaboration with the rest of the community. 
+collaboration with the rest of the community.
 
 ## Contributing
 Developers Italia exists also thanks to your contributions!
@@ -143,8 +143,11 @@ Here is a list of users who already contributed to this repository:
   />
 </a>
 
+This list is also displayed in the [Developers Italia
+website](https://developers.italia.it/en/contacts).
+
 Every contribution is welcome! However, before proceeding further please take
-a look at our [contributing guidelines](CONTRIBUTING.md). 
+a look at our [contributing guidelines](CONTRIBUTING.md).
 
 # License
 Copyright (c) 2018-2020 - Presidenza del Consiglio dei Ministri
