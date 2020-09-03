@@ -45,18 +45,7 @@
   </h3>
 </div>
 
-# Index
-
-- [Description](#description)
-- [Documentation](#documentation)
-- [Community](#community)
-- [License](#license)
-
 # Description
-
-<div align="center">
-  <img alt="Developers Italia Homepage" src=".github/screenshot.png" />
-</div>
 
 Developers Italia is the reference point for the community of developers
 creating the next generation of digital public services in Italy.
