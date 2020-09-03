@@ -2,8 +2,7 @@
 
 <div align="center">
 <img src=".github/logo.png" width="200">
-</div>
-<div align="center">
+<br />
 <i> We develop public services, together </i>
 </div>
 
@@ -11,17 +10,19 @@
 
  <!-- Badges -->
 <div align="center">
-    <!-- CircleCI-->
-	<a href="https://circleci.com/gh/italia/developers.italia.it"><img src="https://circleci.com/gh/italia/developers.italia.it.svg?style=shield"></a>
-    <a href="https://app.netlify.com/sites/developers-italia/deploys">
+  <!-- CircleCI-->
+  <a href="https://circleci.com/gh/italia/developers.italia.it">
+    <img alt="CircleCI" src="https://circleci.com/gh/italia/developers.italia.it.svg?style=shield">
+  </a>
+  <a href="https://app.netlify.com/sites/developers-italia/deploys">
     <img alt="Netlify" src="https://img.shields.io/netlify/92a97b26-4e6c-4408-9270-9603f951eccf">
-    </a>
-    <a href="https://github.com/italia/developers.italia.it/releases">
-      <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
-    </a>
-	<a href="LICENSE.md">
-      <img alt="GitHub" src="https://img.shields.io/github/license/italia/developers.italia.it">
-    </a>
+  </a>
+  <a href="https://github.com/italia/developers.italia.it/releases">
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
+  </a>
+  <a href="LICENSE.md">
+    <img alt="LICENSE" src="https://img.shields.io/github/license/italia/developers.italia.it">
+  </a>
 </div>
 
 <div align="center">
@@ -44,7 +45,6 @@
   </h3>
 </div>
 
-
 # Index
 
 - [Description](#description)
@@ -52,11 +52,10 @@
 - [Community](#community)
 - [License](#license)
 
-
 # Description
 
 <div align="center">
-	<img alt="Developers Italia Homepage" src=".github/screenshot.png" />
+  <img alt="Developers Italia Homepage" src=".github/screenshot.png" />
 </div>
 
 Developers Italia is the reference point for the community of developers
@@ -112,6 +111,7 @@ Wait until the Docker logs explicitly say that the website is served on
 preview the website.
 
 ### Recompile handlebars templates
+
 Within folder `_templates` live some handlebars templates that operate in
 various areas.  Once they get modified it is necessary recompile them. To do
 that we can use `npx` utility as follow:
@@ -131,10 +131,12 @@ commands used to build the website.
 # Community
 
 ## Code of Conduct
+
 Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a great
 collaboration with the rest of the community.
 
 ## Contributing
+
 Developers Italia exists also thanks to your contributions!
 Here is a list of users who already contributed to this repository:
 <a href="https://github.com/italia/developers.italia.it/graphs/contributors">
@@ -150,6 +152,7 @@ Every contribution is welcome! However, before proceeding further please take
 a look at our [contributing guidelines](CONTRIBUTING.md).
 
 # License
+
 Copyright (c) 2018-2020 - Presidenza del Consiglio dei Ministri
 
 The source code is released under the BSD license (code SPDX: *BSD-3-Clause*)
