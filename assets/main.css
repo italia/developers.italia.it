@@ -21893,13 +21893,19 @@ body {
   @media (min-width: 768px) {
     .Header-logo img {
       width: 4.5rem; } }
-.Header-socialIcons .icon {
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.1rem;
-  border-radius: 2rem;
-  display: block;
-  padding-left: 0.2rem; }
+.Header-socialIcons {
+  /* XXX: Remove when the icon theme will provide an RSS feed icon */ }
+  .Header-socialIcons .icon {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.1rem;
+    border-radius: 2rem;
+    display: block;
+    padding-left: 0.2rem; }
+  .Header-socialIcons .feed {
+    display: inline-grid; }
+    .Header-socialIcons .feed img {
+      margin-top: 4px; }
 .Header-title {
   margin: 1rem 0; }
   @media (min-width: 768px) {

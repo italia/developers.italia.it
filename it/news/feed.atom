@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
+  <id>https://developers.italia.it/it/news/feed.atom</id>
+  <title>Developers Italia</title>
+  <updated>2020-09-03T16:23:23+00:00</updated>
+
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
+  <link href="https://developers.italia.it/" rel="alternate" type="text/html"/>
+  <subtitle>Sviluppiamo i servizi pubblici, insieme</subtitle>
+  <icon>/assets/icons/favicon.ico</icon>
+  <logo>/assets/icons/logo-it.svg</logo>
+
+  <author>
+    <name>Dipartimento per la Trasformazione Digitale e AgID</name>
+  </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/11/14/terminato-hacktoberfest-tiriamo-le-somme</id>
+    <title>Terminato l’Hacktoberfest 2019, tiriamo le somme</title>
+    <updated>2019-11-14T11:00:00+00:00</updated>
+
+    <summary>Un ottobre ricco di contributi ai progetti open source di Developers Italia </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/11/14/terminato-hacktoberfest-tiriamo-le-somme">&lt;p&gt;Developers Italia, la community degli sviluppatori dei servizi pubblici
+italiani, &lt;strong&gt;ha partecipato con alcuni progetti &lt;em&gt;open source&lt;/em&gt; all’edizione 2019
+dell’&lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt;&lt;/strong&gt;. Si tratta di
+un’iniziativa internazionale che ha lo scopo
+di favorire lo sviluppo di progetti software &lt;em&gt;open source&lt;/em&gt; attraverso una serie
+di sfide, da completare nel mese di ottobre.&lt;/p&gt;
+
+&lt;p&gt;Nelle settimane antecedenti l’evento, &lt;strong&gt;i manutentori dei software hanno aperto
+44 issue&lt;/strong&gt; nei repository legati ai progetti di Developers Italia
+(&lt;a href=&quot;https://github.com/italia&quot;&gt;github.com/italia&lt;/a&gt;). In ogni issue, hanno incluso
+istruzioni dettagliate, in
+modo da facilitare il processo di familiarizzazione con il progetto
+e &lt;strong&gt;permettere agli interessati di contribuire attivamente&lt;/strong&gt;. Le attività incluse
+nelle issue avevano diversi livelli di complessità: alcune erano adatte a chi
+si avvicinava per la prima volta allo sviluppo con modalità open (i cosiddetti
+“&lt;em&gt;first time contributors&lt;/em&gt;”), altre più complesse miravano a consolidare alcune
+funzionalità in progetti chiave che sono già rodati e funzionanti.&lt;/p&gt;
+
+&lt;p&gt;Durante il mese di ottobre, molte di queste issue sono state convertite in
+codice funzionante da diversi contributori italiani e internazionali e sono
+state successivamente presentate ai manutentori sotto forma di pull request.
+&lt;strong&gt;Ventuno PR&lt;/strong&gt; sono già state consolidate all’interno dei rispettivi &lt;em&gt;codebase&lt;/em&gt;
+e sono &lt;strong&gt;attualmente in uso nei sistemi di produzione&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;L’iniziativa è terminata ma ci sono ancora molte pull request &lt;strong&gt;in fase di review&lt;/strong&gt;
+che saranno consolidate nelle prossime settimane.&lt;/p&gt;
+
+&lt;p&gt;Grazie a tutti voi per per l’ottima riuscita del progetto! Ma non finisce qui:
+&lt;strong&gt;vi invitiamo ancora a partecipare attivamente ai nostri progetti di sviluppo di
+codice sorgente &lt;em&gt;open source&lt;/em&gt;&lt;/strong&gt;. Le issue aperte possono essere trovate nella
+pagina &lt;a href=&quot;https://developers.italia.it/it/cosa-fare&quot;&gt;cosa fare&lt;/a&gt; e i manutentori
+dei software possono essere contattati
+all’interno dei canali di &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo numerosi per costruire insieme i servizi pubblici del Paese!&lt;/p&gt;</content>
+    <published>2019-11-14T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="hacktoberfest" />
+    
+    <category term="community" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/11/11/Call-Developers-Italia-il-programma-di-abilitazione-al-cloud</id>
+    <title>Call Developers Italia, il programma di abilitazione al cloud</title>
+    <updated>2019-11-11T13:00:00+00:00</updated>
+
+    <summary>Focus sugli strumenti e le strategie cloud nella Community Call del 13 novembre </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/11/11/Call-Developers-Italia-il-programma-di-abilitazione-al-cloud">&lt;p&gt;Ciao a tutti!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mercoledì 13 novembre alle 15&lt;/strong&gt; si terrà un nuovo appuntamento con &lt;a href=&quot;https://developers.italia.it/it/news/2019/09/03/una-call-per-la-community-di-Developers-Italia&quot;&gt;la Community Call bisettimanale&lt;/a&gt; di Developers Italia.&lt;/p&gt;
+
+&lt;p&gt;Visto l’interesse mostrato da alcuni di voi su &lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum Italia&lt;/a&gt;, durante questa call inizieremo a trattare alcuni temi relativi al &lt;strong&gt;Cloud Computing&lt;/strong&gt;. Nel dettaglio, il programma prevede:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un’introduzione sul &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale/migrazione-in-cloud-servizi-pubblica-amministrazione-vantaggi-rischi-strategie-44ec2439bebf&quot;&gt;programma di abilitazione al cloud&lt;/a&gt; e sul kit di &lt;a href=&quot;https://cloud.italia.it/&quot;&gt;cloud.italia.it&lt;/a&gt;, che propone un metodo per &lt;strong&gt;l’assessment dei servizi&lt;/strong&gt; e la scelta di una strategia di migrazione per portare le applicazioni nel cloud. Intervento a cura di &lt;a href=&quot;https://teamdigitale.governo.it/it/people/paolo-de-rosa.html&quot;&gt;Paolo De Rosa&lt;/a&gt; e &lt;a href=&quot;https://teamdigitale.governo.it/it/people/lucio-pileggi.html&quot;&gt;Lucio Pileggi&lt;/a&gt;, rispettivamente CTO e Technical Project Manager del Team per la Trasformazione Digitale.&lt;/li&gt;
+  &lt;li&gt;L’intervento di &lt;a href=&quot;https://teamdigitale.governo.it/it/people/michele-melchionda&quot;&gt;Michele Melchionda&lt;/a&gt;, CIO del Team per la Trasformazione Digitale, che racconterà &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale/club-digitali-virtuosi-corte-dei-conti-idea-pa-cloud-connettivita-spc2-92771ae81428&quot;&gt;l’esperienza virtuosa della Corte dei Conti&lt;/a&gt; nell’adozione del paradigma del Cloud Computing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dopo gli interventi avremo la possibilità di confrontarci su questi temi con tutti i partecipanti, invitando ognuno a condividere esperienze, preoccupazioni e casi di successo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zoom.us/j/980887806&quot;&gt;Partecipa alla call utilizzando questo link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo numerosi,&lt;/p&gt;
+
+&lt;p&gt;a mercoledì!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2019-11-11T13:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="call" />
+    
+    <category term="cloud" />
+    
+
+    <author>
+      <name>Andrea Biancini</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/10/28/Call-Developers-Italia-parliamo-di-design-dei-servizi-pubblici</id>
+    <title>Call Developers Italia, parliamo di design dei servizi pubblici</title>
+    <updated>2019-10-28T11:00:00+00:00</updated>
+
+    <summary>Il team di Designers Italia ospite della Community Call del 30 novembre </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/10/28/Call-Developers-Italia-parliamo-di-design-dei-servizi-pubblici">&lt;p&gt;Ciao a tutti!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mercoledì 30 ottobre alle ore 15&lt;/strong&gt; è in programma un nuovo appuntamento con la &lt;a href=&quot;https://developers.italia.it/it/news/2019/09/03/una-call-per-la-community-di-Developers-Italia&quot;&gt;Community Call bisettimanale&lt;/a&gt; di Developers Italia.
+Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10/11/Appuntamento-in-call-con-Developers-Italia&quot;&gt;nella scorsa call&lt;/a&gt; di &lt;strong&gt;ecosistemi, piattaforme e API&lt;/strong&gt;, in questo nuovo appuntamento parleremo di un’altro importante tema per lo sviluppo di servizi pubblici sempre più efficienti: &lt;strong&gt;il design!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Valorizzando le esperienze e il lavoro fatto nella nostra community, durante la call discuteremo dello stato dell’arte del design nei prodotti e servizi per la Pubblica Amministrazione:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teamdigitale.governo.it/it/people/francesco-zaia.htm&quot;&gt;Francesco Zaia&lt;/a&gt;, del Team per la Trasformazione Digitale, ci parlerà dal lavoro e dei risultati raggiunti da parte di &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;ascolteremo l’esperienza del Consorzio dei comuni trentini nell’utilizzare &lt;a href=&quot;https://designers.italia.it/kit/comuni/&quot;&gt;il kit per i comuni di Designers Italia&lt;/a&gt; per &lt;strong&gt;progettare il sito web di un Comune&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vi aspettiamo numerosi sulla piattaforma Zoom per un momento di condivisione delle nostre attività ed esperienze:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zoom.us/j/980887806&quot;&gt;Partecipa alla call utilizzando questo link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A mercoledì!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2019-10-28T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="call" />
+    
+
+    <author>
+      <name>Andrea Biancini</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/10/23/Developers_Italia_a_Codemotion_2019_ci_vediamo_a_Milano</id>
+    <title>Developers Italia a Codemotion 2019, ci vediamo a Milano!</title>
+    <updated>2019-10-23T11:00:00+00:00</updated>
+
+    <summary>Un booth e un meetup il 24 e 25 ottobre </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/10/23/Developers_Italia_a_Codemotion_2019_ci_vediamo_a_Milano">&lt;p&gt;Ciao a tutti!&lt;/p&gt;
+
+&lt;p&gt;Il 24 e 25 ottobre si terrà a Milano (Superstudio, Via Tortona 27) &lt;a href=&quot;https://events.codemotion.com/conferences/milan/2019/&quot;&gt;Codemotion 2019&lt;/a&gt;, la più grande conferenza tecnica per sviluppatori d’Italia.&lt;/p&gt;
+
+&lt;p&gt;Anche quest’anno &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; farà parte dell’evento. Saremo presenti con un &lt;em&gt;booth&lt;/em&gt; entrambe le giornate. Durante l’evento avremo modo di descrivere il lavoro che stiamo facendo per &lt;strong&gt;supportare la trasformazione digitale  all’interno della Pubblica Amministrazione italiana&lt;/strong&gt; e per favorire la diffusione di software &lt;em&gt;open source&lt;/em&gt;, in particolare con le attività legate al &lt;a href=&quot;https://developers.italia.it/it/software/&quot;&gt;Catalogo del Software&lt;/a&gt; e le &lt;a href=&quot;https://developers.italia.it/it/riuso&quot;&gt;Linee Guida per l’Acquisizione e il Riuso del Software&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Developers Italia organizzerà anche un &lt;em&gt;meetup&lt;/em&gt; nella sera di giovedì 24, presso la sede dell’evento. Durante l’incontro, presenteremo la community e gli strumenti a suo supporto e descriveremo le nostre modalità di lavoro, partendo dalle esperienze fatte su alcuni progetti.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://events.codemotion.com/conferences/milan/2019/agenda&quot;&gt;Guarda l’agenda della giornata!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Speriamo di vedervi in tanti al &lt;em&gt;meetup&lt;/em&gt; e vi aspettiamo a Milano al &lt;em&gt;booth&lt;/em&gt; di Developers Italia!&lt;/p&gt;</content>
+    <published>2019-10-23T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="call" />
+    
+
+    <author>
+      <name>Andrea Biancini</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/10/11/Appuntamento-in-call-con-Developers-Italia</id>
+    <title>Appuntamento in call con Developers Italia!</title>
+    <updated>2019-10-11T11:00:00+00:00</updated>
+
+    <summary>Un momento di incontro con la community di Developers Italia </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/10/11/Appuntamento-in-call-con-Developers-Italia">&lt;p&gt;Ciao a tutti!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mercoledì 16 ottobre alle ore 15&lt;/strong&gt; si terrà un nuovo appuntamento con la &lt;a href=&quot;https://developers.italia.it/it/news/2019/09/03/una-call-per-la-community-di-Developers-Italia&quot;&gt;Community Call bisettimanale di Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Durante la scorsa call, abbiamo avviato alcune interessanti discussioni su &lt;strong&gt;come favorire la nascita di un ecosistema più territoriale sull’open source&lt;/strong&gt;. La community è uno degli elementi chiave per dare vitalità a un ecosistema di questo tipo e per questo speriamo di vederci numerosi mercoledì, anche per continuare questi confronti aperti tra noi!&lt;/p&gt;
+
+&lt;p&gt;Nella prossima call, come sempre, avremo modo di ricevere uno stimolo dal racconto di alcuni membri della nostra community. In particolare:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Roberto Polli&lt;/strong&gt;, del Team per la Trasformazione Digitale, ci racconterà la sua esperienza in tema di &lt;a href=&quot;https://teamdigitale.governo.it/it/projects/api.htm&quot;&gt;API ed interoperabilità&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Valentino Lauciani&lt;/strong&gt; ci presenterà l’esperienza in merito dell’Istituto Nazionale di Geofisica e Vulcanologia.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dopo gli interventi avremo modo di intavolare una discussione in cui vi daremo spazio per poter parlare e confrontarvi sulle esperienze che state avendo, e aiutarci a capire come possiamo proseguire insieme.&lt;/p&gt;
+
+&lt;p&gt;Tutte le edizioni delle community call sono registrate e &lt;strong&gt;pubblicate in video su Forum Italia&lt;/strong&gt;, allo scopo permetterne la fruizione anche a chi non può partecipare in diretta. Vi chiediamo di disattivare la webcam durante la partecipazione alla chiamata se non desiderate apparire nella call.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo numerosi sulla piattaforma Zoom per un momento di condivisione delle nostre attività ed esperienze:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zoom.us/j/980887806&quot;&gt;Partecipa alla call utilizzando questo link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ciao e vi aspettiamo mercoledì in call!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2019-10-11T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="call" />
+    
+
+    <author>
+      <name>Andrea Biancini</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/10/01/I-progetti-di-Developers-Italia-al-Google-Summer-of-Code</id>
+    <title>I progetti di Developers Italia al Google Summer of Code</title>
+    <updated>2019-10-01T11:00:00+00:00</updated>
+
+    <summary>Completati tre progetti open source, a disposizione della community </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/10/01/I-progetti-di-Developers-Italia-al-Google-Summer-of-Code">&lt;p&gt;Anche quest’anno &lt;a href=&quot;https://developers.italia.it/it/news/2019/03/07/developers-italia-al-google-summer-of-code-2019&quot;&gt;Developers Italia ha partecipato al Google Summer of Code&lt;/a&gt; (GSoC 2019), il &lt;em&gt;summer camp&lt;/em&gt; di Google che permette a studenti e sviluppatori provenienti da tutto il mondo di partecipare a progetti &lt;em&gt;open source&lt;/em&gt;, affiancati da un gruppo di mentor.&lt;/p&gt;
+
+&lt;p&gt;L’esperienza di quest’anno è stato un vero successo, con &lt;strong&gt;tre progetti selezionati che sono stati completati in questi giorni&lt;/strong&gt;. Gli autori dei progetti hanno raccontato il loro lavoro in tre post che vi condividiamo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Alessandro Vannoni (con i mentor Alessandro Ercolani e Alessio Cimarelli) ha lavorato con la Piattaforma Digitale Nazionale Dati (PDND) per costruire dei notebook usando &lt;a href=&quot;https://github.com/teamdigitale/daf-nteract&quot;&gt;il tool PDND nteract&lt;/a&gt;.&lt;br /&gt;
+  &lt;strong&gt;Per saperne di più&lt;/strong&gt;:&lt;br /&gt;
+  &lt;a href=&quot;https://medium.com/@alessandro.vannoni/my-gsoc-2019-with-developers-italia-50568a8fe2f5&quot;&gt;Leggi il post su Medium.&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://github.com/teamdigitale/pdnd-open-notebooks&quot;&gt;Guarda il repository su cui sono stati pubblicati i risultati con le istruzioni dettagliate.&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Aymen Naghmouchi (con il mentor Roberto Polli) ha lavorato sul modello di interoperabilità implementando le direttive OpenAPI3. In dettaglio, il lavoro è stato focalizzato sul software io-utils, parte del &lt;a href=&quot;https://io.italia.it/&quot;&gt;progetto IO&lt;/a&gt;.&lt;br /&gt;
+  &lt;strong&gt;Per saperne di più:&lt;/strong&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://medium.com/@aymennaghmouchi/my-experience-about-google-summer-of-code-2019-d73907a5d55b&quot;&gt;Leggi il post su Medium.&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://github.com/teamdigitale/pdnd-open-notebooks&quot;&gt;Guarda il repository su cui sono stati pubblicati i risultati&lt;/a&gt; con le istruzioni dettagliate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sanyam Dogra (con il mentor Francesco Zaia) ha lavorato al Design React kit che è un set di componenti React che implementa &lt;a href=&quot;https://italia.github.io/bootstrap-italia/&quot;&gt;Bootstrap Italia&lt;/a&gt; e gli stili presenti su &lt;a href=&quot;https://github.com/italia/design-ui-kit&quot;&gt;Design UI Kit&lt;/a&gt;.&lt;br /&gt;
+  &lt;strong&gt;Per saperne di più:&lt;/strong&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://sanyam.me/blog/GSoC-Submission&quot;&gt;Leggi il post sul blog di Sanyam.&lt;/a&gt;&lt;br /&gt;
+  Guarda &lt;a href=&quot;https://github.com/italia/design-react-kit/&quot;&gt;il repository su cui sono stati pubblicati i risultati&lt;/a&gt; con le istruzioni dettagliate.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dal 17 al 20 ottobre come Developers Italia saremo a Monaco per presentare i tre progetti all’&lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;evento di chiusura del GSoC 2019&lt;/a&gt;. Ma il percorso dei progetti legati a Developers Italia non finisce certo qui:  pubblicati in open source, sono già utilizzabili e sono a disposizione della Community di Developers Italia per crescere ancora. Gli stessi autori dei progetti continueranno a lavorare sullo sviluppo, come membri della community e &lt;strong&gt;mettendo a disposizione degli altri sviluppatori il proprio know how&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per discutere di questi progetti, è possibile utilizzare &lt;a href=&quot;https://forum.italia.it/&quot;&gt;il Forum&lt;/a&gt; o &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;i canali Slack&lt;/a&gt; di Developers Italia.&lt;/p&gt;</content>
+    <published>2019-10-01T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="gsoc" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/09/03/una-call-per-la-community-di-Developers-Italia</id>
+    <title>Una call per la community di Developers Italia</title>
+    <updated>2019-09-03T11:00:00+00:00</updated>
+
+    <summary>Un appuntamento aperto a tutti per discutere i progetti, le novità e la roadmap di Developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/09/03/una-call-per-la-community-di-Developers-Italia">&lt;p&gt;Ve lo avevamo anticipato nelle scorse settimane, oggi siamo felici di annunciarvi la data: il 18 settembre si terrà la prima “community call” di &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Si tratta di un’occasione aperta a tutti per discutere insieme del &lt;a href=&quot;https://developers.italia.it/it/software/&quot;&gt;catalogo del software per la PA&lt;/a&gt; (a riuso e non) e di tutti gli altri progetti di sviluppo open source legati a Developers Italia. Ma soprattutto sarà &lt;strong&gt;un momento di networking, per conoscerci, raccontarci a vicenda su cosa stiamo lavorando&lt;/strong&gt;, scambiarci idee, decidere da che parte andare nelle prossime settimane e nei prossimi mesi.&lt;/p&gt;
+
+&lt;h2 id=&quot;il-programma&quot;&gt;Il programma&lt;/h2&gt;
+
+&lt;p&gt;La prima community call di Developers Italia si terrà &lt;strong&gt;il 18 settembre alle ore 15&lt;/strong&gt; &lt;a href=&quot;https://zoom.us/j/980887806&quot;&gt;sulla piattaforma Zoom&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ecco il programma:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Introduzione sugli &lt;strong&gt;obiettivi della community call&lt;/strong&gt;. (5’)&lt;/li&gt;
+  &lt;li&gt;Cos’è Developers Italia? (10’)&lt;/li&gt;
+  &lt;li&gt;Dove siamo arrivati e dove vogliamo andare: &lt;strong&gt;discussione aperta sulla nostra roadmap&lt;/strong&gt;. (5’)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Case study 1&lt;/strong&gt;: l’Università della Calabria racconta in che modo sta dando il suo contributo al Catalogo del Riuso. (10’)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Case study 2&lt;/strong&gt;: Alessandro Vannoni racconta la sua esperienza al Google Summer of Code 2019 con Developers Italia. (10’)&lt;/li&gt;
+  &lt;li&gt;I prossimi passi: concordiamo &lt;strong&gt;gli obiettivi da dare alla nostra community&lt;/strong&gt;. (10’)&lt;/li&gt;
+  &lt;li&gt;Proposta degli argomenti per la prossima community call. (5’)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;L’appuntamento del 18 settembre è solo l’inizio: torneremo a sentirci &lt;strong&gt;ogni due settimane&lt;/strong&gt;. Se hai un &lt;em&gt;case study&lt;/em&gt; da raccontarci e condividere o vuoi proporre un argomento, &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;contattaci sui nostri canali Slack&lt;/a&gt; o proponi la tua idea durante la prossima call.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zoom.us/j/980887806&quot;&gt;Partecipa alla call utilizzando questo link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo!&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2019-09-03T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="community" />
+    
+    <category term="call" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2019/03/07/developers-italia-al-google-summer-of-code-2019</id>
+    <title>Developers Italia al Google Summer of Code 2019</title>
+    <updated>2019-03-07T11:00:00+00:00</updated>
+
+    <summary>Developers Italia partecipa al programma estivo di Google per studenti che hanno idee e voglia di mettersi in gioco. Ecco come candidarsi </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2019/03/07/developers-italia-al-google-summer-of-code-2019">&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; è stata selezionata anche quest’anno come organizzazione aderente all’&lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;edizione 2019 del Google Summer of Code&lt;/a&gt;. Grazie al &lt;strong&gt;summer camp promosso da Google&lt;/strong&gt;, studenti da tutto il mondo potranno contribuire allo sviluppo dei progetti open source del team di Developers Italia, affiancati da un gruppo di mentor.&lt;/p&gt;
+
+&lt;h2 id=&quot;google-summer-of-code-di-che-si-tratta&quot;&gt;Google Summer of Code, di che si tratta&lt;/h2&gt;
+
+&lt;p&gt;Il &lt;strong&gt;Google Summer of Code&lt;/strong&gt; non è uno stage, ma un programma estivo rivolto a studenti universitari in tutto il mondo. Il programma permette agli studenti ammessi di lavorare per tre mesi su dei progetti di sviluppo open source di una delle 206 organizzazioni aderenti al progetto, tra cui &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/5088529877565440/&quot;&gt;la community di Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agli studenti selezionati sarà riconosciuta &lt;strong&gt;una borsa di studio&lt;/strong&gt; e &lt;strong&gt;l’affiancamento di un mentor&lt;/strong&gt; per tutto il periodo. L’obiettivo è quello di migliorare le proprie competenze nello sviluppo open source e di prendere parte alle attività della community di riferimento e - nel nostro caso - di &lt;strong&gt;contribuire con le proprie idee&lt;/strong&gt; a… migliorare la vita dei cittadini!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Leggi:&lt;/strong&gt; &lt;a href=&quot;https://summerofcode.withgoogle.com/get-started/&quot;&gt;I requisiti per essere ammessi al programma&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;come-partecipare&quot;&gt;Come partecipare&lt;/h2&gt;
+
+&lt;p&gt;Grazie al programma GSoC già lo scorso anno due studenti, Lorenzo Soligo e Rugantio Costa, hanno potuto contribuire ad alcuni dei &lt;strong&gt;progetti aperti di Developers Italia&lt;/strong&gt;, lavorando in particolare al &lt;a href=&quot;https://teamdigitale.governo.it/it/projects/daf.htm&quot;&gt;Data &amp;amp; Analytics Framework&lt;/a&gt;, il progetto del Team Digitale per lo sviluppo di un portale dedicato agli open data pubblici in Italia.&lt;/p&gt;
+
+&lt;p&gt;Se vuoi partecipare al programma quest’anno puoi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;trovare un progetto su cui lavorare, scegliendo dalla &lt;a href=&quot;https://developers.italia.it/en/gsoc-ideas/&quot;&gt;lista di idee che abbiamo proposto&lt;/a&gt; su Developers Italia o proponendo &lt;strong&gt;una tua idea di sviluppo&lt;/strong&gt; (l’ultimo punto della lista);&lt;/li&gt;
+  &lt;li&gt;preparare la candidatura, anche chiedendo aiuto ai nostri mentor tramite &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;il canale slack di Developers Italia&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;inviare la propria candidatura al programma GSoC 2019 &lt;strong&gt;entro il 9 aprile 2019&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Per portare a termine delle candidature di successo e davvero utili, ti consigliamo di essere proattivo, proporre delle soluzione a dei problemi, di scrivere della documentazione e soprattutto… di mettere in mostra le tue capacità!&lt;/p&gt;
+
+&lt;p&gt;Aspettiamo le tue proposte,&lt;/p&gt;
+
+&lt;p&gt;il Team Developers Italia&lt;/p&gt;</content>
+    <published>2019-03-07T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="daf" />
+    
+    <category term="gsoc" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/05/23/un-ambiente-di-test-aperto-a-tutti-per-anpr</id>
+    <title>Un ambiente di test aperto a tutti per ANPR</title>
+    <updated>2018-05-23T09:00:00+00:00</updated>
+
+    <summary>Da oggi chiunque può sviluppare dei client che si interfacciano all'anagrafe nazionale </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/05/23/un-ambiente-di-test-aperto-a-tutti-per-anpr">&lt;p&gt;Abbiamo rilasciato &lt;strong&gt;il codice e le credenziali&lt;/strong&gt; per poter accedere all’ambiente di test dell’Anagrafe nazionale della popolazione residente (&lt;a href=&quot;https://teamdigitale.governo.it/it/projects/anpr.htm&quot;&gt;ANPR&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Si tratta di un passaggio molto importante per lo sviluppo dell’&lt;strong&gt;anagrafe nazionale&lt;/strong&gt;, perché permette a qualsiasi sviluppatore di lavorare più liberamente all’integrazione con ANPR, anche senza disporre delle credenziali di un comune.&lt;/p&gt;
+
+&lt;p&gt;Da questo momento infatti è disponibile &lt;a href=&quot;https://anpr-test.bobuild.com/request&quot;&gt;una pagina&lt;/a&gt; dove richiedere le credenziali per accedere all’ambiente di test di ANPR. Grazie a queste credenziali e &lt;a href=&quot;https://github.com/italia/anpr-client-example&quot;&gt;alla condivisione del codice sorgente di un client&lt;/a&gt;, da oggi chiunque potrà sviluppare un proprio client che si interfacci ad ANPR, utilizzando &lt;strong&gt;un Comune di test fittizio&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una vera e propria apertura, che potrà accelerare il processo di diffusione dell’anagrafe e di servizi che si integrano con essa su tutto il territorio nazionale.&lt;/p&gt;
+
+&lt;h6 id=&quot;approfondimenti&quot;&gt;Approfondimenti:&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teamdigitale.governo.it/it/projects/anpr.htm&quot;&gt;Tutti i numeri di ANPR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://anpr.interno.it/portale/guida-anpr&quot;&gt;La guida per i Comuni ad ANPR&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A presto!&lt;/p&gt;
+
+&lt;p&gt;Il team Developers Italia&lt;/p&gt;</content>
+    <published>2018-05-23T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="open-source" />
+    
+    <category term="anpr" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/05/16/un-webinar-per-le-software-house-sull-acquisizione-e-il-riuso-del-software</id>
+    <title>Un webinar per le software house sull’acquisizione e il riuso del software</title>
+    <updated>2018-05-16T09:00:00+00:00</updated>
+
+    <summary>Appuntamento mercoledì 23 maggio alle ore 16 </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/05/16/un-webinar-per-le-software-house-sull-acquisizione-e-il-riuso-del-software">&lt;p&gt;&lt;strong&gt;Mercoledì 23 maggio alle 16&lt;/strong&gt; si terrà un webinar a cura del &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt; rivolto alle software house, per presentare le nuove &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Linee guida sull’acquisizione e il riuso di software per la Pubblica Amministrazione&lt;/a&gt; che &lt;strong&gt;aprono nuovi scenari e nuove opportunità&lt;/strong&gt; per il mercato dei fornitori di software.&lt;/p&gt;
+
+&lt;p&gt;In particolare, il modello adottato, che è incentrato sulle licenze &lt;em&gt;open source&lt;/em&gt; e su un catalogo dettagliato, incentiverà la domanda per attività di:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;modifica&lt;/li&gt;
+  &lt;li&gt;personalizzazione&lt;/li&gt;
+  &lt;li&gt;evoluzione&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;di soluzioni già esistenti, spingendo verso il &lt;strong&gt;consolidamento delle soluzioni&lt;/strong&gt; e l’&lt;strong&gt;innalzamento della qualità&lt;/strong&gt;; il modello inoltre creerà spazio per gli operatori che non lavorano già con le PA ma hanno soluzioni &lt;em&gt;open source&lt;/em&gt; da proporre.&lt;/p&gt;
+
+&lt;p&gt;Raccomandiamo a tutte le software house che lavorano con la PA o interessate a farlo, e a tutte quelle che lavorano nell’open source, di partecipare al webinar.&lt;/p&gt;
+
+&lt;p&gt;Sarà possibile interagire, porre domande e fornire feedback. La partecipazione è gratuita ma &lt;a href=&quot;https://www.eventbrite.it/e/registrazione-le-nuove-linee-guida-per-lacquisizione-e-il-riuso-di-software-nella-pa-45845227309&quot;&gt;è necessaria l’iscrizione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo, a presto!&lt;/p&gt;
+
+&lt;p&gt;Il team Developers Italia&lt;/p&gt;</content>
+    <published>2018-05-16T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="software" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/04/16/linee-guida-su-acquisizione-e-riuso-del-software</id>
+    <title>Linee guida sull’acquisizione e il riuso del software, aperta la consultazione</title>
+    <updated>2018-04-16T09:00:00+00:00</updated>
+
+    <summary>La consultazione aperta dal 5 aprile al 5 maggio 2018 </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/04/16/linee-guida-su-acquisizione-e-riuso-del-software">&lt;p&gt;Dal &lt;strong&gt;5 aprile al 5 maggio&lt;/strong&gt; su &lt;a href=&quot;https://docs.italia.it/&quot;&gt;Docs Italia&lt;/a&gt; è stato possibile partecipare ad una consultazione pubblica sulle nuove “&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;p&gt;Il testo stabilisce regole e modalità di &lt;strong&gt;acquisizione&lt;/strong&gt; e di &lt;strong&gt;condivisione&lt;/strong&gt; del software tra tutti i soggetti pubblici. La consultazione è aperta a tutti, in particolare &lt;strong&gt;i fornitori e le pubbliche amministrazioni&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;le-nuove-linee-guida-sul-software-di-che-si-tratta&quot;&gt;Le nuove linee guida sul software: di che si tratta&lt;/h2&gt;
+
+&lt;p&gt;Le “&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Linee guida sull’acquisizione e il riuso di software per le pubbliche amministrazioni&lt;/a&gt;” sono espressamente previste dal &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6.html&quot;&gt;Codice dell’amministrazione digitale&lt;/a&gt; (CAD). Servono per:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Definire in che modo una pubblica amministrazione deve effettuare la &lt;strong&gt;valutazione comparativa&lt;/strong&gt; obbligatoria per acquisire un software, preferendo il software open source all’acquisizione di software tramite licenza.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Indicare in che modo le pubbliche amministrazioni possono condividere e riutilizzare il software sotto licenza aperta e i requisiti che le piattaforme per la pubblicazione e la condivisione (come &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt; e &lt;a href=&quot;https://about.gitlab.com/&quot;&gt;GitLab&lt;/a&gt;) devono avere.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;partecipa-alla-consultazione&quot;&gt;Partecipa alla consultazione!&lt;/h2&gt;
+
+&lt;p&gt;Puoi prendere parte alla consultazione direttamente su &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Docs Italia&lt;/a&gt;, cliccando l’apposito link in fondo ad ogni sezione delle linee guida ed aprendo la discussione. Tutti i contributi saranno presi in considerazione dall’&lt;a href=&quot;http://www.agid.gov.it/&quot;&gt;Agenzia per l’Italia Digitale&lt;/a&gt; e dal &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team per la trasformazione digitale&lt;/a&gt; per la redazione del testo definitivo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Partecipa subito alla consultazione!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A presto!&lt;/p&gt;
+
+&lt;p&gt;Il team di Developers Italia&lt;/p&gt;</content>
+    <published>2018-04-16T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="software" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/04/05/linee-guida-in-consultazione</id>
+    <title>Consultazione pubblica sulle linee guida per lo sviluppo e l’acquisizione del software</title>
+    <updated>2018-04-05T16:00:00+00:00</updated>
+
+    <summary>Pubblicate in consultazione le linee guida in attuazione dell'art. 68 e 69 del CAD </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/04/05/linee-guida-in-consultazione">&lt;p&gt;Ciao a tutti!
+Inizia oggi (fino al 5 Maggio 2018) la consultazione sulle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Linee Guida sul Riuso e Acquisizione del Software nelle Pubbliche Amministrazioni&lt;/a&gt; che coprono due temi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Il processo di pubblicazione in open source di tutto il software di cui le Pubbliche Amministrazioni abbiano titolarità (realizzato in passato o in futuro), come vuole l’&lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html&quot;&gt;Art 69 del CAD&lt;/a&gt;. In particolare, descriviamo come scegliere una licenza, come effettuare un rilascio ai fini del riuso, come prendere a riuso un software open source e come modificarlo, utilizzano &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; come piattaforma di riferimento.&lt;/li&gt;
+  &lt;li&gt;Il processo che le amministrazioni dovranno seguire prima di acquisire un software di qualunque tipo, descrivendo quando indicato nell’&lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html&quot;&gt;Art 68 del CAD&lt;/a&gt;. Qui abbiamo cercato di indicare in modo chiaro le fasi del processo decisionale che comincia dal chiarire le proprie necessità e verificare la presenza di soluzioni open-source a riuso disponibili, valutando la loro maturità e le personalizzazioni necessarie.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Essendo il tema molto tecnico, abbiamo preparato una serie di guide pratiche, da considerarsi allegati alle linee guida ma che seguiranno un processo di evoluzione potenzialmente più rapido, con l’aggiornarsi della tecnologia. Le guide sono pensate per essere usate anche come allegati a gare d’appalto, così da indicare al fornitore il processo corretto da seguire per mettere a riuso o prendere a riuso un software, semplificando quindi l’adempimento.&lt;/p&gt;
+
+&lt;p&gt;Queste Linee Guida sono frutto di un lavoro congiunto del Team Digitale e AgID. Riteniamo che possa rappresentare un punto di svolta sulla condivisione del software dentro la Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;p&gt;Per partecipare alla consultazione, potete inviare i vostri commenti nella &lt;a href=&quot;https://forum.italia.it/c/documenti-in-consultazione/lg-acquisizione-e-riuso-di-software-per-la-pa&quot;&gt;sezione dedicata del forum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2018-04-05T16:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="daf" />
+    
+    <category term="gsoc" />
+    
+
+    <author>
+      <name>Riccardo Iaconelli</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/03/12/code-hands-on-laboratori-aperti-per-la-milano-digital-week</id>
+    <title>Code hands-on: laboratori aperti con Developers Italia per la Milano Digital Week</title>
+    <updated>2018-03-12T09:00:00+00:00</updated>
+
+    <summary>Appuntamento il 16 marzo a Milano </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/03/12/code-hands-on-laboratori-aperti-per-la-milano-digital-week">&lt;p&gt;In occasione della &lt;a href=&quot;https://milanodigitalweek.com/&quot;&gt;Milano Digital Week&lt;/a&gt;, il 16 marzo 2018 si terrà “&lt;strong&gt;Code hands-on: Laboratori aperti sui progetti di Developers Italia&lt;/strong&gt;”.&lt;/p&gt;
+
+&lt;p&gt;L’intero pomeriggio il &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team Digitale&lt;/a&gt;, insieme a &lt;a href=&quot;https://codemotionworld.com/&quot;&gt;Codemotion&lt;/a&gt; e &lt;a href=&quot;https://www.agid.gov.it/&quot;&gt;Agid&lt;/a&gt;, sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un’occasione da non perdere, per prendere confidenza con &lt;strong&gt;le attività del Team&lt;/strong&gt; e i tanti progetti portati avanti dalla community di &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-laboratorio-aperto-a-tutti&quot;&gt;Un laboratorio aperto a tutti&lt;/h2&gt;
+
+&lt;p&gt;I progetti al centro della giornata saranno:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teamdigitale.governo.it/it/projects/daf.htm&quot;&gt;DAF&lt;/a&gt; - La piattaforma nazionale per Data Science e Open Data&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.spid.gov.it&quot;&gt;SPID&lt;/a&gt; - Sistema Pubblico di Identità Digitale&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teamdigitale.governo.it/it/projects/pagamenti-digitali.htm&quot;&gt;pagoPA&lt;/a&gt; - Nodo di pagamento verso la Pubblica Amministrazione&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.italia.it/it/cie/&quot;&gt;CIE&lt;/a&gt; - Carta d’Identità Elettronica&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.italia.it/it/18app/&quot;&gt;18App&lt;/a&gt; - La piattaforma per la gestione del bonus economico&lt;/li&gt;
+  &lt;li&gt;I &lt;a href=&quot;https://italia.github.io/design-web-toolkit/&quot;&gt;toolkit&lt;/a&gt; per il design web dei siti della Pubblica Amministrazione&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I laboratori sono aperti a tutti e &lt;strong&gt;la partecipazione è gratuita&lt;/strong&gt;: basta solo un portatile e &lt;a href=&quot;https://www.eventbrite.it/e/biglietti-code-hands-on-laboratori-aperti-sui-progetti-di-developers-italia-43749135843&quot;&gt;la registrazione tramite il portale Eventbrite&lt;/a&gt;. L’evento si terrà presso la sede di TIM Wcap, in via Magolfa, 9, Milano.&lt;/p&gt;
+
+&lt;p&gt;Ecco il programma della giornata:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h14:45 - 15:00&lt;/strong&gt; Presentazione del Team Digitale, del Piano Triennale e di Developers Italia e dei progetti di Data Science&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h15:00 - 15:30&lt;/strong&gt; Presentazione dettagliata/tecnica DAF (La piattaforma nazionale per Data Science e Open Data), dei vari strumenti per Data Science, e descrizione di una serie di challenge / esercizi / first good issues&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h15:30&lt;/strong&gt; Inizio laboratorio Data Science con supporto del Team Digitale&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h17:30 - 17:45&lt;/strong&gt; Presentazione del Team Digitale, del Piano Triennale e di Developers Italia e dei progetti rivolti agli sviluppatori&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h 17:45 - 18:15&lt;/strong&gt; Presentazione dettagliata/tecnica progetti Sviluppo Software e dei vari strumenti software, e descrizione di una serie di challenge / esercizi / first good issues&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;h18:15&lt;/strong&gt; Inizio laboratorio Sviluppo Software con supporto del Team Digitale&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;20:00&lt;/strong&gt; Aperitivo&lt;/p&gt;
+
+&lt;p&gt;Networking &amp;amp; Free Hacking fino alle &lt;strong&gt;21:00&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ti-aspettiamo-a-code-hands-on&quot;&gt;Ti aspettiamo a Code hands-on!&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.eventbrite.it/e/biglietti-code-hands-on-laboratori-aperti-sui-progetti-di-developers-italia-43749135843&quot;&gt;Registrati subito&lt;/a&gt;, ci vediamo il 16 marzo a Milano.&lt;/p&gt;
+
+&lt;p&gt;A presto!&lt;/p&gt;
+
+&lt;p&gt;Il team Developers Italia&lt;/p&gt;</content>
+    <published>2018-03-12T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="digitalweek" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/03/07/ti-presentiamo-il-nuovo-docs-italia</id>
+    <title>Ti presentiamo il nuovo Docs Italia!</title>
+    <updated>2018-03-07T15:00:00+00:00</updated>
+
+    <summary>Un sito unico dove pubblicare i documenti tecnici e amministrativi della Pubblica Amministrazione </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/03/07/ti-presentiamo-il-nuovo-docs-italia">&lt;p&gt;Abbiamo pubblicato &lt;a href=&quot;https://docs.italia.it/&quot;&gt;una nuova release di Docs Italia&lt;/a&gt;, la piattaforma per pubblicare &lt;strong&gt;i documenti tecnici e amministrativi&lt;/strong&gt; della Pubblica Amministrazione in Italia. Un unico sito dove pubblicare documentazione tecnica, linee guida, leggi, circolari e qualsiasi tipo di documento legato ai servizi pubblici o ai progetti digitali della Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;h2 id=&quot;scopri-il-nuovo-docs-italia&quot;&gt;Scopri il nuovo Docs Italia&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Come funziona Docs Italia&lt;/strong&gt;
+Nella &lt;a href=&quot;https://docs.italia.it/italia/docs-italia/docs-italia-guide/&quot;&gt;Guida a Docs Italia&lt;/a&gt; puoi scoprire come funziona la piattaforma e quali sono &lt;strong&gt;i vantaggi e le novità&lt;/strong&gt;, come &lt;a href=&quot;https://docs.italia.it/italia/docs-italia/docs-italia-guide/it/bozza/appendice-1.html&quot;&gt;il sistema di versionamento&lt;/a&gt; o &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione3_art18.html?highlight=consultazione%20pubblica&quot;&gt;il processo di consultazione pubblica&lt;/a&gt; per i documenti amministrativi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Per vedere il nuovo Docs Italia&lt;/strong&gt;
+Il modo migliore per scoprire il nuovo Docs Italia è avventurarsi nella &lt;a href=&quot;https://docs.italia.it/&quot;&gt;homepage&lt;/a&gt; ed esplorare la &lt;strong&gt;documentazione già pubblicata&lt;/strong&gt;, come &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/&quot;&gt;il Codice per l’amministrazione digitale&lt;/a&gt; o &lt;a href=&quot;https://docs.italia.it/italia/anpr/anpr/&quot;&gt;la documentazione tecnica di ANPR&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Partecipa&lt;/strong&gt;
+Docs Italia aspetta il tuo contributo! Per iniziare a pubblicare i tuoi documenti su Docs Italia puoi leggere &lt;a href=&quot;https://forum.italia.it/t/nuova-style-guide-per-documenti-tecnici-e-amministrativi/2608&quot;&gt;la &lt;em&gt;style guide&lt;/em&gt;&lt;/a&gt;, che spiega in che formato realizzare i documenti tecnici e amministrativi, e &lt;a href=&quot;https://docs.italia.it/italia/docs-italia/docs-italia-guide/&quot;&gt;la guida per iniziare a pubblicare&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Perché Docs Italia? L’inizio di una rivoluzione&lt;/strong&gt;
+Su &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale/docs-italia-open-government-collaborazione-pubblica-amministrazione-progetti-linguaggio-b89ff330e21b&quot;&gt;un post su Medium&lt;/a&gt; vi raccontiamo perché è nato il nuovo Docs Italia: un progetto per &lt;strong&gt;cambiare il linguaggio&lt;/strong&gt; dei progetti della Pubblica Amministrazione e renderli più efficaci e trasparenti.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;inizia-subito-a-pubblicare&quot;&gt;Inizia subito a pubblicare!&lt;/h2&gt;
+
+&lt;p&gt;Le amministrazioni che vogliono iniziare a pubblicare i propri documenti su Docs Italia possono consultare &lt;a href=&quot;https://docs.italia.it/italia/docs-italia/docs-italia-guide/it/bozza/come-partecipare.html&quot;&gt;la guida alla pubblicazione&lt;/a&gt;. &lt;a href=&quot;mailto:contatti@docs.italia.it&quot;&gt;Scrivici per qualsiasi dubbio&lt;/a&gt; o… inizia a pubblicare i tuoi documenti!&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo su &lt;a href=&quot;https://docs.italia.it/&quot;&gt;Docs Italia&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;a presto!&lt;/p&gt;
+
+&lt;p&gt;Il team di Developers Italia&lt;/p&gt;</content>
+    <published>2018-03-07T15:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="docsitalia" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2018/02/21/developers-italia-al-google-summer-or-code</id>
+    <title>Developers Italia al Google Summer of Code 2018</title>
+    <updated>2018-02-21T16:00:00+00:00</updated>
+
+    <summary>Studenti da tutto il mondo potranno partecipare ai progetti open source di Developers Italia. Scopri come partecipare </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2018/02/21/developers-italia-al-google-summer-or-code">&lt;p&gt;Ciao a tutti!&lt;/p&gt;
+
+&lt;p&gt;La community &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; rientra tra &lt;strong&gt;le organizzazioni e i progetti open source&lt;/strong&gt; che prenderanno parte al &lt;a href=&quot;https://summerofcode.withgoogle.com/&quot;&gt;Google Summer of Code 2018&lt;/a&gt;. Grazie a questa opportunità, studenti e giovani sviluppatori da tutto il mondo potranno seguire i progetti open source sviluppati nella comunità di Developers Italia, affiancati da un mentor, durante i &lt;strong&gt;tre mesi del summer camp&lt;/strong&gt; organizzato ogni anno da Google.&lt;/p&gt;
+
+&lt;h2 id=&quot;google-summer-of-code-di-che-si-tratta&quot;&gt;Google Summer of Code, di che si tratta&lt;/h2&gt;
+
+&lt;p&gt;Il &lt;strong&gt;Google Summer of Code&lt;/strong&gt; è un programma estivo di Google rivolto a studenti universitari in tutto il mondo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Leggi&lt;/strong&gt;: &lt;a href=&quot;https://summerofcode.withgoogle.com/terms/student&quot;&gt;I requisiti per essere ammessi al programma&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Il programma permette agli studenti ammessi di lavorare per tre mesi su dei progetti di sviluppo open source di una delle 212 organizzazioni aderenti al progetto, tra cui &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/6723597649838080/&quot;&gt;la community di Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Agli studenti selezionati sarà riconosciuta una borsa di studio, oltre all’&lt;strong&gt;affiancamento di un mentor&lt;/strong&gt; per tutto il periodo. L’obiettivo è quello di migliorare le proprie competenze nello sviluppo open source e di prendere parte alle attività della community di riferimento e -nel nostro caso- di &lt;strong&gt;contribuire con le proprie idee&lt;/strong&gt; a… migliorare la vita dei cittadini italiani.&lt;/p&gt;
+
+&lt;h2 id=&quot;invia-la-tua-candidatura&quot;&gt;Invia la tua candidatura!&lt;/h2&gt;
+
+&lt;p&gt;Il bando del Google Summer of Code 2018 è aperto a tutti gli studenti che abbiano superato i 18 anni di età. Le candidature possono essere inviate &lt;strong&gt;dal 12 al 27 marzo 2018&lt;/strong&gt;. Sul sito del programma è possibile leggere l’elenco di &lt;a href=&quot;https://summerofcode.withgoogle.com/organizations/&quot;&gt;tutte le 212 organizzazioni aderenti&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per partecipare ad un progetto legato a Developers Italia, le candidature dovranno includere &lt;strong&gt;un progetto di sviluppo&lt;/strong&gt; sulla base della &lt;a href=&quot;https://developers.italia.it/en/gsoc-ideas/&quot;&gt;lista di idee che abbiamo pubblicato&lt;/a&gt; (ma siamo aperti anche a concordare altre idee di &lt;em&gt;civic hacking&lt;/em&gt;). Per saperne di più, puoi metterti in contatto con noi attraverso &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;il canale Slack di Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aspettiamo le tue proposte!&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2018-02-21T16:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="daf" />
+    
+    <category term="gsoc" />
+    
+
+    <author>
+      <name>Francesco De Augustinis</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/11/08/hack-developers-tutti-i-progetti-vincitori-del-code-sprint</id>
+    <title>Hack.Developers, tutti i progetti vincitori del code-sprint</title>
+    <updated>2017-11-08T09:00:00+00:00</updated>
+
+    <summary>Annunciati i progetti vincitori del premio Wise Turtle, sviluppati entro 30 giorni dalla fine di Hack.Developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/11/08/hack-developers-tutti-i-progetti-vincitori-del-code-sprint">&lt;p&gt;Finalmente abbiamo la lista completa dei progetti di &lt;a href=&quot;https://hack.developers.italia.it/&quot;&gt;Hack.Developers&lt;/a&gt; che si sono aggiudicati un premio! Ai &lt;a href=&quot;https://developers.italia.it/it/news/2017/10/23/hack-developers-ecco-i-vincitori-fast-rabbit.html&quot;&gt;due team primi classificati nella sezione Fast Rabbit&lt;/a&gt; si sono aggiunti i nomi dei &lt;strong&gt;sei team vincitori della categoria Wise Turtle&lt;/strong&gt;, dedicata ai progetti sviluppati entro la fine del mese successivo alle 48 ore di code-sprint.&lt;/p&gt;
+
+&lt;p&gt;Ecco i contributi premiati:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;AloneInTheDark&lt;/strong&gt;, dalla sede di San Francisco, ha sviluppato un &lt;a href=&quot;https://github.com/italia/daf-cacher/pull/2&quot;&gt;microservizio per velocizzare la visualizzazione dei grafici prodotti&lt;/a&gt; dal Data &amp;amp; Analytics Framework (progetto: &lt;a href=&quot;https://github.com/italia/daf-cacher&quot;&gt;daf-cacher&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;HAL 0x9000&lt;/strong&gt;, dalla sede di Camerino, ha sviluppato &lt;a href=&quot;https://github.com/italia/cie-PN532/pull/2&quot;&gt;una libreria per leggere e visualizzare il codice univoco&lt;/a&gt; di una Carta d’Identità Elettronica con Arduino, che consente a chiunque di sviluppare prodotti fisici e servizi che si basano sull’identificazione personale (progetto: &lt;a href=&quot;https://github.com/italia/cie-PN532&quot;&gt;cie-PN532&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TPCWare&lt;/strong&gt;, dalla sede di Roma, ha sviluppato &lt;a href=&quot;https://github.com/italia/spid-dotnet-sdk/pull/6&quot;&gt;un plugin&lt;/a&gt; per consentire agli sviluppatori di applicazioni web basate su .NET una facile integrazione del login con il sistema di identità digitale SPID (progetto: &lt;a href=&quot;https://github.com/italia/spid-dotnet-sdk&quot;&gt;spid-dotnet-sdk&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Microdevelopers&lt;/strong&gt;, dalla sede di Milano, ha sviluppato &lt;a href=&quot;https://github.com/italia/daf-replicate-ingestion/pull/8&quot;&gt;un servizio per l’acquisizione di dati&lt;/a&gt; di Km4City/Replicate (piattaforma SmartCity del Comune di Firenze) all’interno del Data &amp;amp; Analytics Framework (progetto: &lt;a href=&quot;https://github.com/italia/daf-replicate-ingestion&quot;&gt;daf-replicate-ingestion&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fervento&lt;/strong&gt;, dalla sede di Napoli, ha sviluppato &lt;a href=&quot;https://github.com/italia/anpr-github-metrics/pull/2&quot;&gt;strumenti per consentire la verifica di SLA&lt;/a&gt; utilizzando GitHub come strumento gratuito di ticketing (progetto: &lt;a href=&quot;https://github.com/italia/anpr-github-metrics&quot;&gt;anpr-github-metrics&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;I 3 ignoti&lt;/strong&gt;, dalla sede di Roma, hanno creato &lt;a href=&quot;https://github.com/italia/anpr-github-metrics&quot;&gt;un prototipo di applicazione&lt;/a&gt; per visualizzare dati del Data &amp;amp; Analytics Framework usando la libreria grafica D3.js (progetto: &lt;a href=&quot;https://github.com/italia/daf-dataportal-public&quot;&gt;daf-dataportal-public&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;“&lt;em&gt;Il codice prodotto è tanto e di alta qualità, ed è stato difficile scegliere sei pull request da riconoscere in particolare&lt;/em&gt;”, racconta sul canale Slack dell’Hackathon Riccardo Iaconelli, uno dei mentor del Team Digitale che ha preso parte alla &lt;a href=&quot;https://hack.developers.italia.it/premi/&quot;&gt;selezione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per questo anche gli altri lavori (qui trovi &lt;a href=&quot;https://hack.developers.italia.it/vincitori-premio-wise-turtle/&quot;&gt;i dieci migliori&lt;/a&gt;) saranno valorizzati: “&lt;em&gt;Ricordo che l’avventura continua per tutti! Faremo un merge di ogni contributo di valore nei prossimi giorni, chi ci ha lavorato sarà invitato nell’organizzazione GitHub Italia, e sarà dato accesso in scrittura ai developer che hanno fatto partire nuovi software, con la visibilità e le opportunità che ovviamente questo ruolo comporta. Ci saranno altri eventi per la comunità e molte altre occasioni per ritrovarsi e condividere idee e progetti&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;h2 id=&quot;ti-aspettiamo-a-roma-e-su-slack&quot;&gt;Ti aspettiamo a Roma e… su Slack!&lt;/h2&gt;
+
+&lt;p&gt;L’avventura dell’Hackathon, infatti, è &lt;strong&gt;tutt’altro che finita&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il primo appuntamento è a Roma, il 21 novembre, quando &lt;a href=&quot;https://hack.developers.italia.it/cerimonia-di-chiusura/&quot;&gt;tutti i team vincitori saranno premiati&lt;/a&gt; &lt;strong&gt;alla presenza di Diego Piacentini&lt;/strong&gt;, il Commissario straordinario per l’attuazione dell’Agenda Digitale.&lt;/p&gt;
+
+&lt;p&gt;Nel frattempo la community di sviluppatori nata con Hack.Developers continua a vivere: &lt;strong&gt;tutto il lavoro ricevuto tramite pull request&lt;/strong&gt; sarà riconosciuto e &lt;strong&gt;tutto il contributo futuro&lt;/strong&gt; verrà incoraggiato e valorizzato, con le regole classiche di una comunità di sviluppo open. Per questo lo Slack e gli altri strumenti di sviluppo utilizzati nell’hackathon rimarranno aperti e a disposizione della comunità, per diventare sempre di più un punto di riferimento per &lt;strong&gt;tutti coloro che vogliono contribuire alla digitalizzazione della PA&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un grazie speciale a tutti quelli che hanno partecipato a Hack.Developers,&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2017-11-08T09:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/10/23/hack-developers-ecco-i-vincitori-fast-rabbit</id>
+    <title>Hack.Developers, ecco i vincitori della categoria Fast Rabbit</title>
+    <updated>2017-10-23T16:00:00+00:00</updated>
+
+    <summary>Da Roma e Trento i due progetti vincitori, le interviste con i membri dei team </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/10/23/hack-developers-ecco-i-vincitori-fast-rabbit">&lt;p&gt;Abbiamo annunciato i primi due team vincitori di &lt;a href=&quot;https://hack.developers.italia.it/&quot;&gt;Hack.Developers&lt;/a&gt;! Non è stato davvero facile scegliere tra &lt;strong&gt;96 proposte&lt;/strong&gt; che in alcuni casi hanno persino superato le nostre migliori aspettative. Alla fine i mentor di tutta Italia hanno individuato &lt;a href=&quot;https://hack.developers.italia.it/premiazione-fast-rabbit/&quot;&gt;i due gruppi che si sono aggiudicati il premio Fast Rabbit&lt;/a&gt;, avendo sottoposto le loro &lt;em&gt;pull request&lt;/em&gt; &lt;strong&gt;entro le 48 ore del code sprint&lt;/strong&gt; (&lt;a href=&quot;https://hack.developers.italia.it/premi/&quot;&gt;qui i criteri di selezione&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I team i cui progetti hanno ottenuto i migliori punteggi sono:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Stacks out for Haramble&lt;/strong&gt;, che ha sviluppato &lt;a href=&quot;https://github.com/italia/cie-nis-sdk/pull/3&quot;&gt;una libreria di Python&lt;/a&gt; per inviare comandi di basso livello a una Carta di Identità Elettronica (challenge: &lt;a href=&quot;https://github.com/italia/cie-nis-sdk&quot;&gt;cie-nis-sdk&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RomaJS&lt;/strong&gt; che ha sviluppato &lt;a href=&quot;https://github.com/italia/design-react/pull/4&quot;&gt;un prototipo di toolkit per React&lt;/a&gt; per aggiornare il framework CSS di riferimento per le linee guida di design della PA (challenge: &lt;a href=&quot;https://github.com/italia/design-react/issues/1&quot;&gt;design-react&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;“Questo è stato il nostro primo hackathon in assoluto, avevamo già fatto gare insieme ma mai così lunghe!”, ci racconta &lt;strong&gt;Alekos Filini&lt;/strong&gt;, membro del team Stacks out for Haramble insieme a &lt;strong&gt;Daniela Brozzoni&lt;/strong&gt;, entrambi studenti a Trento. “Possiamo dire di aver imparato come gestire una situazione del genere, che effettivamente non è banale come cosa: bisogna pianificare bene quante ore di sonno fare e bisogna anche imparare a dividersi bene il lavoro ed essere ‘sincronizzati’. Sul lato pratico, possiamo dire di aver aumentato le nostre conoscenze nell’ambito della tecnologia NFC, basti pensare che una buona parte della gara è stata passata su GitHub o altri siti cercando di capire come funzionasse…”&lt;/p&gt;
+
+&lt;p&gt;Sugli stessi toni il racconto di &lt;strong&gt;Matteo Manchi&lt;/strong&gt;, portavoce della Community RomaJS: “Seduti insieme al tavolo, abbiamo deciso di approcciare alle challenge con lo spirito di un code-sprint: divertiamoci insieme, ma puntiamo su qualcosa su cui abbiamo l’esperienza tale da creare qualcosa di veramente utile in futuro. Abbiamo lavorato tutta la notte (su Roma credo fossimo l’unico team rimasto a fare nottata), concedendoci tre ore di sonno verso le cinque, e alla fine abbiamo consegnato un progetto che rispecchiava i nostri obiettivi”.
+Un grazie speciale da parte dell’organizzazione va anche a tutti i membri degli altri team del Fast Rabbit, che hanno contribuito in modo davvero valido a  tutte le challenge, da SPID a 18app, dal DAF all’ANPR (&lt;a href=&quot;https://hack.developers.italia.it/premiazione-fast-rabbit/&quot;&gt;qui le 30 migliori proposte&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;cè-tempo-fino-al-30-ottobre-per-vincere-un-premio&quot;&gt;C’è tempo fino al 30 Ottobre per vincere un premio!&lt;/h2&gt;
+
+&lt;p&gt;Come sapete &lt;strong&gt;Hack.Developers non finisce qui&lt;/strong&gt;. Molti gruppi sono ancora al lavoro fino al 30 ottobre, per portare a termine i progetti candidati ai &lt;a href=&quot;https://hack.developers.italia.it/premi/&quot;&gt;premi Wise Turtle&lt;/a&gt;, con i mentor che resteranno a disposizione sul canale Slack dell’Hackathon fino alla fine del mese.&lt;/p&gt;
+
+&lt;p&gt;I cinque team vincitori saranno annunciati entro metà Novembre, quando avverrà la premiazione anche dei due team vincitori del &lt;em&gt;Fast Rabbit&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A presto!&lt;/p&gt;</content>
+    <published>2017-10-23T16:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/10/11/hack-developers-come-e-andata</id>
+    <title>Hack.Developers, ecco come è andata</title>
+    <updated>2017-10-11T14:00:00+00:00</updated>
+
+    <summary>800 sviluppatori e 96 proposte open source già disponibili pubblicamente. I numeri di Hack.Developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/10/11/hack-developers-come-e-andata">&lt;p&gt;Ciao a tutti,&lt;/p&gt;
+
+&lt;p&gt;È con grande piacere che vi raccontiamo la bellissima esperienza di &lt;a href=&quot;https://hack.developers.italia.it&quot;&gt;Hack.Developers&lt;/a&gt;, il più grande &lt;em&gt;code sprint&lt;/em&gt; mai realizzato in Italia, organizzato dal &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt;, in collaborazione con &lt;a href=&quot;https://www.codemotionworld.com&quot;&gt;Codemotion&lt;/a&gt;, che si è tenuto il 7 e l’8 ottobre in 25 città italiane + San Francisco.&lt;/p&gt;
+
+&lt;p&gt;I numeri già rendono un’idea di quello che abbiamo vissuto per 48 ore di fila: oltre 800 sviluppatori, 116 team, 80 community, 200 mentor, 26 città, ma soprattutto tante idee e intuizioni, concretizzate in &lt;strong&gt;96 proposte open source già disponibili pubblicamente&lt;/strong&gt; su &lt;a href=&quot;https://github.com/italia/&quot;&gt;GitHub di Developers Italia&lt;/a&gt;. Tante proposte, equamente distribuite tra i &lt;a href=&quot;https://hack.developers.italia.it/challenge/&quot;&gt;vari progetti&lt;/a&gt;, che rappresentano un vero e proprio patrimonio per la costruzione del “&lt;strong&gt;sistema operativo del Paese&lt;/strong&gt;”, verso l’obiettivo comune di sviluppare servizi digitali sempre più efficienti.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/teamdigitaleIT/status/917058075877629954/video/1&quot;&gt;Guarda il video!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I mentor e gli esponenti del Team per la Trasformazione Digitale sono già al lavoro per valutare le proposte raccolte, anche in vista dell’&lt;a href=&quot;https://hack.developers.italia.it/premi/&quot;&gt;assegnazione dei premi&lt;/a&gt;. Il &lt;strong&gt;16 ottobre&lt;/strong&gt; saranno annunciati i due team vincitori del premio “Fast Rabbit” (progetti ultimati e caricati entro i due giorni dell’evento), mentre i progetti più complessi (in corsa per i 5 premi “Wise Turtle”) potranno essere ultimati &lt;strong&gt;entro il 30 ottobre&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A presto!&lt;/p&gt;</content>
+    <published>2017-10-11T14:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Team Developers Italia</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/10/03/hack-developers-ti-aspettiamo</id>
+    <title>Hack.Developers, ti aspettiamo tra pochi giorni</title>
+    <updated>2017-10-03T16:00:00+00:00</updated>
+
+    <summary>Sabato e domenica appuntamento in 26 città con Hack.Developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/10/03/hack-developers-ti-aspettiamo">&lt;p&gt;Ciao a tutti,&lt;/p&gt;
+
+&lt;p&gt;Ci siamo! Tra pochi giorni, il &lt;strong&gt;7 e l’8 ottobre 2017&lt;/strong&gt;, in venticinque città italiane (e nella “sede estera” di San Francisco) avrà inizio l’atteso &lt;a href=&quot;https://hack.developers.italia.it&quot;&gt;Hack.Developers&lt;/a&gt;, il più grande &lt;em&gt;code sprint&lt;/em&gt; mai realizzato in Italia, organizzato dal Team per la Trasformazione Digitale, in collaborazione con &lt;a href=&quot;https://www.codemotionworld.com&quot;&gt;Codemotion&lt;/a&gt;. Due giorni per un solo obiettivo: costruire &lt;strong&gt;una Pubblica Amministrazione a misura di cittadino&lt;/strong&gt;, che offra servizi più accessibili, più semplici e più efficaci.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;80 community tecnologiche e oltre 800 sviluppatori&lt;/strong&gt; si sfideranno nello sviluppo di un ecosistema di codice open-source, &lt;a href=&quot;https://hack.developers.italia.it/cose/&quot;&gt;destinato a diventare il motore per la digitalizzazione del Paese&lt;/a&gt;. Se sei un programmatore, un professionista o uno studente dell’IT e &lt;strong&gt;non ti sei ancora iscritto&lt;/strong&gt;, non perdere questa occasione: &lt;a href=&quot;https://hack.developers.italia.it/#sedi-registrazioni&quot;&gt;trova la sede più vicina a te&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo!&lt;/p&gt;</content>
+    <published>2017-10-03T16:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Team Developers Italia</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/09/07/hack-developers-meetup</id>
+    <title>Meetup su Hack.Developers, incontraci dall’11 al 19 Settembre</title>
+    <updated>2017-09-07T16:00:00+00:00</updated>
+
+    <summary>6 incontri a giro per l'Italia, incontrando gli sviluppatori prima di Hack.Developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/09/07/hack-developers-meetup">&lt;p&gt;Ciao a tutti,&lt;/p&gt;
+
+&lt;p&gt;come già comunicato, il 7 e l’8 ottobre 2017 si terrà &lt;a href=&quot;https://hack.developers.italia.it&quot;&gt;Hack.Developers&lt;/a&gt;, il più grande code sprint mai realizzato in Italia, organizzato dal &lt;a href=&quot;https://teamdigitale.governo.it&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt;, in collaborazione con &lt;a href=&quot;https://www.codemotionworld.com&quot;&gt;Codemotion&lt;/a&gt;. Un evento che coinvolgerà &lt;strong&gt;20 città in contemporanea&lt;/strong&gt; e circa &lt;strong&gt;80 community tech e di sviluppatori&lt;/strong&gt; su tutto il territorio nazionale.&lt;/p&gt;
+
+&lt;p&gt;In vista di questo evento, il nostro Team sarà presente nelle principali città italiane per incontrare e conoscere gli sviluppatori nel corso di Meetup di presentazione dell’hackathon, e coinvolgerli così nel progetto di trasformazione digitale del Paese.&lt;/p&gt;
+
+&lt;p&gt;Ecco gli appuntamenti dei meetup e i link per registrarsi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Milano - 11 settembre, presso Mikamai/LinkMe Srl &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2gPNLbe&quot;&gt;Registrati a Milano&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Napoli - 12 settembre, presso Hub Banco di Napoli - Intesa Sanpaolo &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2w2NuDS&quot;&gt;Registrati a Napoli&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Torino - 14 settembre, presso Toolbox Coworking &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2iZ9caB&quot;&gt;Registrati a Torino&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Firenze 15 settembre, presso Impact Hub &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2vI9eda&quot;&gt;Registrati a Firenze&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Bari 18 settembre, presso Impact Hub &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2gBXL4k&quot;&gt;Registrati a Bari&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Roma 19 settembre, presso LUISS ENLABS &lt;br /&gt; &lt;a href=&quot;http://bit.ly/2wCn67A&quot;&gt;Registrati a Roma&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vi aspettiamo!&lt;/p&gt;</content>
+    <published>2017-09-07T16:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/07/27/hack-developers-hackathon-per-pubblica-amministrazione</id>
+    <title>Nasce Hack.Developers, il più grande code sprint mai realizzato in Italia</title>
+    <updated>2017-07-27T16:00:00+00:00</updated>
+
+    <summary>Il 7 e 8 Ottobre, partecipa in più di 20 sedi nel territorio per costruire una PA a misura di cittadino </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/07/27/hack-developers-hackathon-per-pubblica-amministrazione">&lt;p&gt;Probabilmente sarete pronti a partire per le vacanze, ma prima segnate in agenda le date del &lt;strong&gt;7 e 8 ottobre 2017&lt;/strong&gt; perché il &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt;, in collaborazione con &lt;a href=&quot;https://codemotionworld.com/&quot;&gt;Codemotion&lt;/a&gt;, organizza &lt;a href=&quot;https://hack.developers.italia.it&quot;&gt;Hack Developers Italia&lt;/a&gt;, il più grande code sprint mai realizzato in Italia.&lt;/p&gt;
+
+&lt;p&gt;Durante quel weekend tutte le tech community italiane e gli sviluppatori potranno partecipare alla maratona di programmazione organizzata &lt;strong&gt;in contemporanea in oltre 20 città&lt;/strong&gt; su tutto il territorio nazionale. L’obiettivo è costruire insieme una Pubblica Amministrazione a misura di cittadino, rendendo i servizi pubblici più accessibili, semplici ed efficaci.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/hackdevelopers.png&quot; alt=&quot;Developers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All’hackathon si può partecipare in due modi:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&amp;amp;id=32376a094a&quot;&gt;iscrivendosi come partecipante&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;oppure&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hack.developers.italia.it/call-4-hosts/&quot;&gt;candidandosi come host per una sede locale su territorio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Le challenge saranno pubblicate nel corso dei &lt;a href=&quot;https://hack.developers.italia.it/roadmap/&quot;&gt;prossimi mesi&lt;/a&gt;, ma per una prima indicazione dei contenuti tecnologici abbiamo creato una &lt;a href=&quot;https://hack.developers.italia.it/challenge/&quot;&gt;pagina dedicata&lt;/a&gt;. Le &lt;a href=&quot;https://hack.developers.italia.it/#text-7&quot;&gt;sedi&lt;/a&gt; dirette organizzate da Codemotion saranno Torino, Milano, Firenze, Roma e Bari. Per le altre sedi è aperta da oggi una &lt;a href=&quot;https://hack.developers.italia.it/call-4-hosts/&quot;&gt;Call 4 Hosts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per qualsiasi altra informazione, abbiamo creato una pagina di &lt;a href=&quot;https://hack.developers.italia.it/faq/&quot;&gt;FAQ&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;UPDATE&lt;/em&gt;: c’è anche un &lt;a href=&quot;https://forum.italia.it/t/hack-developers-lhackathon-di-developers-italia/1135/4&quot;&gt;thread nel forum&lt;/a&gt; per avere maggiori informazioni.&lt;/p&gt;</content>
+    <published>2017-07-27T16:00:00+00:00</published>
+
+    
+    <category term="hackathon" />
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/06/01/vuoi-lavorare-developers-italia</id>
+    <title>Vuoi lavorare per Developers Italia?</title>
+    <updated>2017-06-01T16:00:00+00:00</updated>
+
+    <summary>Al via una serie di gare per sviluppare codice 100% open-source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/06/01/vuoi-lavorare-developers-italia">&lt;p&gt;Vuoi lavorare per Developers Italia? Sei un’azienda specializzata in tecnologie e framework open source, e vuoi aiutare il tuo Paese a sviluppare servizi digitali innovativi? Allora stiamo cercando proprio te!&lt;/p&gt;
+
+&lt;p&gt;Perché la comunità di Developers Italia possa crescere, il Team per la Trasformazione Digitale ha stanziato un budget di un milione di euro da investire nello sviluppo di codice 100% open source, tramite alcune gare rivolte a piccole aziende e startup con una forte componente tecnologica e con lo sviluppo open source nel proprio DNA.&lt;/p&gt;
+
+&lt;p&gt;Per aiutarci a selezionare le aziende specializzate in queste tecnologie nell’ampio panorama digitale italiano, abbiamo chiesto l’aiuto alle numerose community tecnologiche presenti sul territorio.&lt;/p&gt;
+
+&lt;p&gt;In questo &lt;a href=&quot;https://forum.italia.it/t/vuoi-lavorare-per-developers-italia-questo-e-il-tuo-momento/311&quot;&gt;post sul forum&lt;/a&gt; troverete tutti i dettagli.&lt;/p&gt;</content>
+    <published>2017-06-01T16:00:00+00:00</published>
+
+    
+    <category term="progetti" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/05/25/pubblicata-roadmap-spid</id>
+    <title>Pubblicata la roadmap di SPID</title>
+    <updated>2017-05-25T16:00:00+00:00</updated>
+
+    <summary>Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/05/25/pubblicata-roadmap-spid">&lt;p&gt;Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la &lt;a href=&quot;https://trello.com/b/PHF0ErvK/spid-roadmap&quot;&gt;roadmap di SPID&lt;/a&gt;. La abbiamo preparata in forma di bacheca di Trello.&lt;/p&gt;
+
+&lt;p&gt;Contiamo di aggiornarla regolarmente via via che gli sviluppi procedono. Ovviamente le card che non sono già assegnate a qualcuno sono… libere :) Per le card in corso, pubblichiamo direttamente il link al repository GitHub dove si svolge lo sviluppo del task, in modo che chi vuole può dare un’occhiata e contribuire. Inoltre, a breve vorrei catalogare per ciascun repository le issue che sono più facili da svolgere per chi si avvicina al progetto, e filtrarle e pubblicarle live sul sito principale (developers.italia.it).&lt;/p&gt;
+
+&lt;p&gt;La roadmap è lo strumento principe che ci consente di dichiarare apertamente quali sono i piani di sviluppo del progetto e quali sono le componenti dell’ecosistema software che pensiamo essere importanti. Ovviamente la roadmap è aperta a commenti e proposte da parte di tutti che valuteremo se accogliere nel piano ufficiale di sviluppo, cercando di canalizzare così le contribuzioni (fermo restando che se volete realizzare qualcosa anche fuori roadmap, non saremo certo noi a bloccarvi!).&lt;/p&gt;
+
+&lt;p&gt;Penso sia la prima software roadmap della pubblica amministrazione in Italia, e tutti i viaggi cominciano con piccoli passi. Spero che ci sarà molto da camminare insieme :)&lt;/p&gt;</content>
+    <published>2017-05-25T16:00:00+00:00</published>
+
+    
+    <category term="roadmap" />
+    
+    <category term="progetti" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2017/02/24/lancio</id>
+    <title>Benvenuti in Developers Italia!</title>
+    <updated>2017-02-24T10:00:00+00:00</updated>
+
+    <summary>Apre in beta la community italiana degli sviluppatori dei servizi pubblici digitali </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2017/02/24/lancio">&lt;p&gt;Developers Italia, creata in collaborazione tra &lt;a href=&quot;http://agid.gov.it&quot;&gt;AgID&lt;/a&gt; e il &lt;a href=&quot;https://teamdigitale.governo.it&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt;, è la community italiana di sviluppatori di servizi pubblici, una piattaforma tecnologica dove ospitare tutti i principali progetti tecnologici di Paese che prevede:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;uno spazio su GitHub per ospitare il codice sorgente e librerie open-source pronte all’uso e all’integrazione;&lt;/li&gt;
+  &lt;li&gt;un’area basata su ReadTheDocs (Docs Italia) per riscrivere la documentazione finalmente in formato moderno, pensata e scritta per la fruizione da tecnico a tecnico;&lt;/li&gt;
+  &lt;li&gt;una newsletter e uno spazio per le news, per essere avvertiti quando esce una nuova versione (invece che doverlo scoprire per sbaglio, magari a progetto finito…);&lt;/li&gt;
+  &lt;li&gt;un forum aperto basato su Discourse, dove poter liberamente discutere con colleghi in tutta Italia.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://developers.italia.it/assets/images/independent-developer.jpg&quot; alt=&quot;Developers&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://unsplash.com/photos/6g0KJWnBhxg&quot;&gt;©Negative space via Unsplash CCBY&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Stiamo anche valutando un ambiente di sandboxing per le API, per avere una reference chiara e semplice, testare la connessione alle API direttamente dal browser, e scaricare “scheletri di client” già pronti.&lt;/p&gt;
+
+&lt;p&gt;Crediamo che le iniziative tecnologiche non avranno mai successo perché imposte per legge, ma solo se utili per i cittadini, moderne, facili da integrare per gli sviluppatori. A tal fine vogliamo quindi creare un ambiente aperto dove offrire strumenti e documentazione, ricevere commenti e contributi, interagire con gli sviluppatori del settore pubblico e del settore privato, aumentare la qualità e la semplicità.&lt;/p&gt;
+
+&lt;p&gt;La piattaforma oggi è un guscio da riempire e abbiamo bisogno del contributo di tutti. Entrate in Developers Italia e aiutateci a costruire le fondamenta dei nuovi servizi pubblici italiani.&lt;/p&gt;
+
+&lt;p&gt;Per ulteriori approfondimenti, leggi anche il nostro &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale&quot;&gt;post su Medium&lt;/a&gt;&lt;/p&gt;</content>
+    <published>2017-02-24T10:00:00+00:00</published>
+
+    
+    <category term="eventi" />
+    
+    <category term="sviluppatori" />
+    
+
+    <author>
+      <name>Giovanni Bajo</name>
+    </author>
+  </entry>
+  
+</feed>
