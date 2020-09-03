@@ -43,7 +43,6 @@ github_tech_list: [
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-toc
@@ -82,6 +81,12 @@ tag_page_data:
   langs:
     - it
     - en
+
+# Atom feed configuration.
+feed:
+  limit: 10 # Number of posts for each feed.
+  icon: /assets/icons/favicon.ico
+  logo: /assets/icons/logo-it.svg
 
 # Custom vars
 theme_color: "#0066cc"

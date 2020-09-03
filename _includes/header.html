@@ -70,6 +70,11 @@
         <div class="Header-social ">
           <span class="text-white mr-3">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons d-inline-block list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed">
+                <img src="{{ '/assets/icons/feed.svg' | relative_url }}">
+              </a>
+            </li>
             {% for social in site.data.social %}
             <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span
                   class="it-{{ social[0] }} icon"></span></a></li>

@@ -340,6 +340,14 @@ body {
             display: block;
             padding-left: 0.2rem;
         }
+        /* XXX: Remove when the icon theme will provide an RSS feed icon */
+        .feed {
+            display: inline-grid;
+
+            img {
+                margin-top: 4px;
+            }
+        }
     }
     &-title {
         margin: 1rem 0;
