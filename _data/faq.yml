@@ -115,16 +115,10 @@ it:
       href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa">
       linee guida su acquisizione e riuso di software per le pubbliche
       amministrazioni</a> indica il grado di attività svolta nell'ultimo arco
-      temporale su ogni repository indicizzato in catalogo.  I parametri
-      trattati sono elencati in <a
-      href="https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml">
-      questo file </a> e rappresentano il numero degli autori unici, la
-      frequenza delle modifiche, la longevità del progetto e la frequenza dei
-      rilasci. Questo indice è calcolato ogni notte e, attualmente, la
+      temporale su ogni repository indicizzato in catalogo. Una spiegazione approfondita dei parametri
+      utilizzati per effettuare il calcolo è presente in <a
+      href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndexItaliano.md">
+      questa pagina</a>. Questo indice è calcolato ogni notte e, attualmente, la
       finestra temporale considerata è di 60 giorni.
       
-       
-
-
-
 en:
