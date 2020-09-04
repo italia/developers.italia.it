@@ -1,7 +1,7 @@
 {% include setlang.html %}
 
 {% assign limititems = include.limit | default: 4 %}
-{% assign items = site.data.crawler.softwares | sort: "vitalityScore" | reverse %}
+{% assign items = site.data.crawler.softwares | sample: 4 %}
 
 {% assign title = include.title %}
 {% assign captiontitle = include.captiontitle %}
@@ -34,9 +34,9 @@
 
                     <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper w-100">
                     {% capture homeClasses %} home-listing-item__img w-100 {% endcapture %}
-                    {% include display-logo.html 
-                        logo = item.publiccode.logo 
-                        id = item.id 
+                    {% include display-logo.html
+                        logo = item.publiccode.logo
+                        id = item.id
                         screenshots = description.screenshots
                         classes = homeClasses
                         codiceIPA = item.publiccode.it.riuso.codiceIPA
