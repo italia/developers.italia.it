@@ -38,7 +38,7 @@ group :jekyll_plugins do
    gem 'jekyll-sitemap'
    gem 'jekyll-tagging'
    gem 'hawkins'
-   gem 'liquid-nested-sort', '~> 0.1.4'
+   gem 'liquid-nested-sort', '~> 0.1.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
