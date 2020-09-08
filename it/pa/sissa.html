@@ -41,8 +41,9 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
-  <link href="/assets/fonts.css?202009080851" rel="stylesheet">
-  <link href="/assets/main.css?202009080851" rel="stylesheet">
+  
+  <link href="/dist/main.css?202009081556" rel="stylesheet">
+  
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
@@ -54,8 +55,6 @@
   <meta name="application-name" content="Developers Italia">
   <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
   <meta name="theme-color" content="#0066cc">
-
-  <script src="/assets/scripts/logos.js"></script>
 </head>
 
 <body class="layout-default-pa">
@@ -100,7 +99,9 @@
           </a>
           <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
             data-activate-element>
-            <span class="icon it-expand px-2"></span>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
           </a>
         </div>
 
@@ -177,7 +178,9 @@
    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="">ITA</span>
     <span class="sr-only">lingua attiva:</span>
-    <span class="icon it-expand px-2 d-none d-lg-inline-block"></span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
   </a>
 
   <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
@@ -188,7 +191,9 @@
         <a href="/it/pa/sissa.html"><span lang="it">italiano</span>
         
         
-        <span class="icon it-check float-right"></span>
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
         
         </a>
       </li>
@@ -306,19 +311,31 @@
 
       <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
         <div class="Header-social ">
-          <span class="text-white mr-3">Seguici su</span>
+          <span class="text-white mr-3 float-left">Seguici su</span>
           <ul class="Header-socialIcons d-inline-block list-inline mb-0">
             <li class="list-inline-item">
               <a class="icon feed" href="/it/news/feed.atom" title="feed">
-                <img src="/assets/icons/feed.svg">
+                <svg class="icon icon-white">
+                  <use xlink:href="/assets/icons/feed.svg#rss"></use>
+                </svg>
               </a>
             </li>
             
-            <li class="list-inline-item"><a href="https://twitter.com/developersITA" title="twitter"><span
-                  class="it-twitter icon"></span></a></li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/developersITA" title="twitter">
+                <svg class="icon icon-white">
+                  <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+                </svg>
+              </a>
+            </li>
             
-            <li class="list-inline-item"><a href="https://medium.com/team-per-la-trasformazione-digitale/developers-italia/home" title="medium"><span
-                  class="it-medium icon"></span></a></li>
+            <li class="list-inline-item">
+              <a href="https://medium.com/team-per-la-trasformazione-digitale/developers-italia/home" title="medium">
+                <svg class="icon icon-white">
+                  <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+                </svg>
+              </a>
+            </li>
             
           </ul>
         </div>
@@ -333,9 +350,9 @@
       <span class="text-white mr-3 d-none d-lg-inline">
         Cerca
       </span>
-      <div class="icon icon--white">
-        <span class="it-search"></span>
-      </div>
+      <svg class="icon">
+        <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+      </svg>
     </div>
   </div>
 </a>
@@ -355,6 +372,9 @@
           <form autocomplete="off" action="">
             <div class="form-group">
               <div class="autocomplete">
+                <svg class="icon icon-lg">
+                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+                </svg>
                 <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
                 <div id="suggestions" class="d-none"></div>
               </div>
@@ -721,14 +741,21 @@
 
 
 
-<div class="sw-fd89ed1e57678af09afb27ea56d4c1d02a1a3cb9"></div>
-<script>
-  checkImage(
-    "/assets/images/placeholder-software-riuso.jpg",
-    function(){ setImage(this.src, ".sw-fd89ed1e57678af09afb27ea56d4c1d02a1a3cb9", "main-image"); },
-    function(){ setImage("/assets/images/placeholder-software-riuso.jpg", ".sw-fd89ed1e57678af09afb27ea56d4c1d02a1a3cb9", "main-image"); }
-  );
-</script>
+<div
+  data-display-logo-id="sw-fd89ed1e57678af09afb27ea56d4c1d02a1a3cb9"
+  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
+  data-display-logo-classes="main-image"
+>
+  <div
+    style="
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:150px;
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
+    "
+  ></div>
+</div>
 
 
                   <p class="name color-inherit">
@@ -768,14 +795,21 @@
 
 
 
-<div class="sw-0bd29da6dd54bb3ef45fc72eac481cccafa0b310"></div>
-<script>
-  checkImage(
-    "/assets/images/placeholder-software-riuso.jpg",
-    function(){ setImage(this.src, ".sw-0bd29da6dd54bb3ef45fc72eac481cccafa0b310", "main-image"); },
-    function(){ setImage("/assets/images/placeholder-software-riuso.jpg", ".sw-0bd29da6dd54bb3ef45fc72eac481cccafa0b310", "main-image"); }
-  );
-</script>
+<div
+  data-display-logo-id="sw-0bd29da6dd54bb3ef45fc72eac481cccafa0b310"
+  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
+  data-display-logo-classes="main-image"
+>
+  <div
+    style="
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:150px;
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
+    "
+  ></div>
+</div>
 
 
                   <p class="name color-inherit">
@@ -870,101 +904,7 @@
 </footer>
 
 
-<script>window.__PUBLIC_PATH__ = "/assets/vendor/bootstrap-italia/dist/fonts"</script>
-
-
-<script src="/assets/vendor/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
-
-<script src="/assets/scripts/jquery.dataTables.min.js"></script>
-
-<script src="/assets/scripts/dataTables.responsive.min.js"></script>
-
-<script src="/assets/scripts/moment.js"></script>
-
-<script src="/assets/vendor/chart.js/dist/Chart.min.js"></script>
-
-<script src="/assets/scripts/jquery.mousewheel.min.js"></script>
-
-<script src="/assets/scripts/elasticsearch.min.js"></script>
-<script src="/assets/scripts/throbber.js"></script>
-<script src="/assets/scripts/handlebars.runtime.js"></script>
-<script src="/assets/templates/search.tpl.js"></script>
-<script src="/assets/templates/tot.tpl.js"></script>
-<script src="/assets/templates/suggestion.tpl.js"></script>
-<script src="/assets/templates/pager.tpl.js"></script>
-<script src="/assets/templates/message.tpl.js"></script>
-<script src="/assets/templates/empty.tpl.js"></script>
-<script src="/assets/scripts/esDevelopersItaliaQuery.js"></script>
-<script src="/assets/scripts/esQuery.config.js"></script>
-<script src="/assets/scripts/esQuery.js"></script>
-<script src="/assets/scripts/perfect-scrollbar.min.js"></script>
-<script src="/assets/scripts/photoswipe.min.js"></script>
-<script src="/assets/scripts/photoswipe-ui-default.min.js"></script>
-<script src="/assets/scripts/misc.js"></script>
-
-<script>
-  $(document).on('keydown', function(e) {
-    if (e.keyCode === 9) {
-      $('body').removeClass('hide-focus');
-    } else if (e.keyCode == 191) { // slash
-      $('#cerca').focus();
-      e.preventDefault();
-    }
-  })
-
-  $(document).on('click', function(e) {
-    $('body').addClass('hide-focus');
-  })
-
-  $('*[data-activate-element]').on('click',function(e){
-    e.preventDefault();
-    var genid = $(this).data('activeid');
-    var noscroll = $(this).data('activate-noscroll') ? true : false;
-    var $targetelement = $('*[data-activatedby="'+genid+'"]');
-    $targetelement.toggleClass('deactive');
-    $(this).toggleClass('active');
-    if (noscroll==true) {
-      $('body').toggleClass('stopScrolling--vertical');
-    }
-  });
-
-  $('#moreTags').on('click', function(e) {
-    e.preventDefault();
-    $('.home-software-tags__list').children().removeClass('deactive');
-    $(this).hide();
-  })
-
-  
-
-  $(document).ready(function(){
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      margin: 4,
-      loop: true,
-      autoWidth:false,
-      autoHeight:true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:3
-        },
-        960:{
-          items:4
-        }
-      }
-    });
-    owl.on('mousewheel', '.owl-stage', function(e) {
-      if (e.deltaY > 0) {
-        owl.trigger('next.owl');
-      } else {
-        owl.trigger('prev.owl');
-      }
-      e.preventDefault();
-    });
-  })
-</script>
+<script src="/dist/bundle.js"></script>
 
 
  <script>

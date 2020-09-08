@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-09-08T08:51:58+00:00</updated>
+  <updated>2020-09-08T15:56:25+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -886,7 +886,7 @@ Un grazie speciale da parte dell’organizzazione va anche a tutti i membri degl
 
 &lt;p&gt;Durante quel weekend tutte le tech community italiane e gli sviluppatori potranno partecipare alla maratona di programmazione organizzata &lt;strong&gt;in contemporanea in oltre 20 città&lt;/strong&gt; su tutto il territorio nazionale. L’obiettivo è costruire insieme una Pubblica Amministrazione a misura di cittadino, rendendo i servizi pubblici più accessibili, semplici ed efficaci.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/hackdevelopers.png&quot; alt=&quot;Developers&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/hackdevelopers.png&quot; alt=&quot;Developers&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All’hackathon si può partecipare in due modi:&lt;/p&gt;
 

@@ -1,3 +1,6 @@
+---
+# keep this !
+---
 {
     "name": "it",
     "icons": [
@@ -12,7 +15,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#0066cc",
-    "background_color": "#0066cc",
+    "theme_color": "{{ site.theme_color }}",
+    "background_color": "{{ site.theme_color }}",
     "display": "standalone"
 }
