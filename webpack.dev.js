@@ -5,7 +5,6 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    /// XXX
     headers: {
       "Access-Control-Allow-Origin": "http://localhost:4000",
     },
