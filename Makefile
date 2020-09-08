@@ -18,10 +18,18 @@ bundle-install: bundle-setup
 bundle-install-deployment: bundle-setup
 	bundle install --deployment
 
+# Get issues (/assets/issues.js) and contributors (_data/github_*.yml) from GitHub
+github-import: bundle-install
+	bundle exec scripts/github_importer.rb
+
+build-swagger:
+	cd swagger && npm run build
+
 test:
-	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-local:
-	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | JEKYLL_NO_GITHUB=true bundle exec jekyll serve --livereload --incremental --host=0.0.0.0
+	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+local: build-swagger
+	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0
+
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 	NODE_ENV=production npm run build

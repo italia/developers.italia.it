@@ -13,7 +13,7 @@ layout: default
 {% include linklist.html items=subnav dynamic=true %}
 
 {% endcomment %}
-{% assign github_tech_list = site.github_tech_list %}
+{% assign github_tech_list = site.data.github_tech_list %}
 
 {% capture projects_escaped_json %}
 {{ t.todo_projects_dict | jsonify | replace: "'", "&apos;" }}
