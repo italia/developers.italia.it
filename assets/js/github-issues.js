@@ -37,7 +37,7 @@ $(document).ready(function () {
             "url": datatables_language_url[current_language]
         },
         "ajax": {
-            "url": "/github/issues.json",
+            "url": "/assets/github_issues.json",
             "dataSrc": ""
         },
         "order": [[0, "desc"]],

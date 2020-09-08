@@ -18,15 +18,8 @@ services:
       - 35729:35729
       # webpack-dev-server
       - 8080:8080
-    # By default, we mount all the working dir to
-    # facilitate local development. Then, we exclude
-    # folders which content changes through a build:
-    # assets, _data, node_modules, vendor
     volumes:
       - .:/usr/src/developers.italia.it
-      - /usr/src/developers.italia.it/_data/crawler
-      - /usr/src/developers.italia.it/node_modules
-      - /usr/src/developers.italia.it/vendor
     command: ["make", "local"]
     networks:
       - overlay
