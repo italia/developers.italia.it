@@ -30,6 +30,13 @@
         }
       }
       .modal-body {
+        #search-buttons {
+          a {
+            svg {
+              fill: #5a6772
+            }
+          }
+        }
         .autocomplete {
           position: relative;
           & > .icon {
