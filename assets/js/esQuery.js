@@ -47,6 +47,7 @@ $(document).ready(function () {
   $('#searchModal .modal-header button').on('click', function(event){
     $('#searchModal .modal-body form .autocomplete input').val('');
     $('#suggestions').text('').addClass('d-none');
+    $('#search-buttons').removeClass('d-none');
   });
 
   // listener on search form submit.
@@ -114,8 +115,10 @@ $(document).ready(function () {
     var esAutocompleteQuery;
     if (event.target.value.length > 0) {
       $('#suggestions').removeClass('d-none');
+      $('#search-buttons').addClass('d-none');
     }
     else {
+      $('#search-buttons').removeClass('d-none');
       $('#suggestions').addClass('d-none');
     }
 
