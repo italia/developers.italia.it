@@ -8,6 +8,7 @@
 _data/github_members.yml
 _data/github_teams.yml
 _data/github_tech_list.yml
+_data/crawler
 _site
 node_modules
 vendor
