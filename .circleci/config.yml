@@ -11,38 +11,11 @@ references:
     docker:
       - image: circleci/ruby:2.6.0-node-browsers
 
-  env_vars_test: &env_vars_test
-    environment:
-      - JEKYLL_ENV: "production"
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
-      - ELASTICSEARCH_URL: "" # Disable searchyll for test.
-
-  env_vars_prod: &env_vars_prod
-    environment:
-      - JEKYLL_ENV: "production"
-      - NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
-
   install_dependencies: &install_dependencies
     run:
       name: install-dependencies
       command: |
-        make include-npm-deps
-        make bundle-install-deployment
         which rsync || sudo apt-get install rsync
-
-  get_crawler_yml_files: &get_crawler_yml_files
-    run:
-      name: get-crawler-yml-files
-      command: |
-        make download-data
-
-  build_bundle_jekyll: &build_bundle_jekyll
-    run:
-      name: build-bundle-jekyll
-      command: |
-        make build-swagger
-        make jekyll-build
-        make test
 
   setup_ssh_gh_pages: &setup_ssh_gh_pages
     add_ssh_keys:
@@ -93,23 +66,18 @@ references:
 jobs:
   test:
     <<: *load_image
-    <<: *env_vars_test
     steps:
       - checkout
       - << : *install_dependencies
-      - << : *get_crawler_yml_files
-      - << : *build_bundle_jekyll
+      - run: make build
       - << : *notify_on_failure
 
   build_and_deploy_gh_pages:
     <<: *load_image
-    <<: *env_vars_prod
     steps:
       - checkout
       - << : *install_dependencies
-      - << : *get_crawler_yml_files
-      - run: make github-import
-      - << : *build_bundle_jekyll
+      - run: make test
       - << : *setup_ssh_gh_pages
       - << : *publish_changes_gh_pages
       - << : *notify_on_failure
