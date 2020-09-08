@@ -28,18 +28,6 @@ github_username:  italia
 #piwik: teamdigitale
 google_analytics: UA-96140462-1
 
-# Github importer
-github_api_url: https://api.github.com
-github_folder: github
-github_projects_prefix: ['spid-', '18app', 'anpr-','daf-','dati-','pianotriennale-','lg-','design-','security-','cie-']
-github_access_token: ENV_GITHUB_ACCESS_TOKEN
-github_blacklist_repos: []
-github_issues_types: ['bug','enhancement','new project', 'Hacktoberfest']
-github_tech_list: [
-  'angular', 'react', 'design', 'html', 'arduino', 'bootstrap', 'frontend',
-  'perl','python', 'cpp', 'scala', 'php', 'csharp', 'java', 'android', 'ios', 'dotnet',
-  'wordpress', 'metabase', 'ansible', 'docker', 'magento', 'joomla', 'django']
-
 # Build settings
 markdown: kramdown
 plugins:
@@ -65,6 +53,7 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
+  - scripts
   - swagger/.cache
   - swagger/dist
   - swagger/node_modules
