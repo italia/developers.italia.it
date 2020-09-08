@@ -12,7 +12,12 @@ services:
     env_file:
       - .env
     ports:
+      # Jekyll serve
       - 4000:4000
+      # Webpack live reload
+      - 35729:35729
+      # webpack-dev-server
+      - 8080:8080
     # By default, we mount all the working dir to
     # facilitate local development. Then, we exclude
     # folders which content changes through a build:
@@ -22,6 +27,7 @@ services:
       - /usr/src/developers.italia.it/_data/crawler
       - /usr/src/developers.italia.it/node_modules
       - /usr/src/developers.italia.it/vendor
+    command: ["make", "local"]
     networks:
       - overlay
 

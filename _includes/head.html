@@ -22,8 +22,11 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }} (it)" href="{{ site.baseurl }}/it/news/feed.atom">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }} (en)" href="{{ site.baseurl }}/en/news/feed.atom">
 
-  <link href="{{ site.baseurl }}/assets/fonts.css?{{ buildTime }}" rel="stylesheet">
-  <link href="{{ site.baseurl }}/assets/main.css?{{ buildTime }}" rel="stylesheet">
+  {% if jekyll.environment == "production" %}
+  <link href="{{ site.baseurl }}/dist/main.css?{{ buildTime }}" rel="stylesheet">
+  {% else %}
+  <link href="//localhost:8080/main.css" rel="stylesheet">
+  {% endif %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32">
@@ -35,8 +38,6 @@
   <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
   <meta name="theme-color" content="{{ site.theme_color }}">
-
-  <script src="{{ '/assets/scripts/logos.js' | relative_url }}"></script>
 </head>
 
 <body class="layout-{{ page.layout }}">

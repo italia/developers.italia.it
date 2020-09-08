@@ -33,7 +33,9 @@
         {% for contact in p.contacts %}
         <li class="list-inline-item">
           <a href="{{ contact[1].link }}">
-            <span class="icon it-{{ contact[0] }}"></span>
+            <svg class="icon icon-white">
+              <use xlink:href="/assets/svg/sprite.svg#it-{{ contact[0] }}"></use>
+            </svg>
             <span class="sr-only">{{ contact[1].name }}</span>
           </a>
         </li>

@@ -1,0 +1,45 @@
+@use "bootstrap";
+
+.footer {
+    background-color: #00264D;
+    color: #fff;
+    &-team {
+      img {
+        height: 2.5rem;
+        margin-right: 0.5rem;
+        @include bootstrap.media-breakpoint-up(lg) {
+          height: 3rem;
+        }
+      }
+      &-text {
+        width: 11rem;
+        line-height: 1;
+      }
+    }
+
+    &-collaboration {
+      img {
+        height: 2.5rem;
+        @include bootstrap.media-breakpoint-up(lg) {
+          height: 3rem;
+        }
+      }
+    }
+    &-collaboration-with {
+      opacity: .5;
+      font-weight: 300;
+    }
+
+    &-links {
+      list-style-type: none;
+      margin-top: 2em;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        margin-right: 1em;
+        a {
+          color: white;
+        }
+      }
+    }
+}

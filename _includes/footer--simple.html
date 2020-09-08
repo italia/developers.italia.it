@@ -53,7 +53,11 @@
 
 </footer>
 
-{% include scripts.html %}
+{% if jekyll.environment == "production" %}
+<script src="{{ '/dist/bundle.js' | relative_url }}"></script>
+{% else %}
+<script src="//localhost:8080/bundle.js"></script>
+{% endif %}
 
 {% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
 {% if jekyll.environment == 'production' and site.piwik %} {% include piwik.html %} {% endif %}

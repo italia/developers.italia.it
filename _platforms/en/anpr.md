@@ -21,11 +21,11 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     hidden-inputs:
-        - 
+        -
           type: hidden
           name: group
           value: 16
-        - 
+        -
           type: hidden
           name: list
           value: 3
@@ -33,16 +33,16 @@ newsletterdata:
         -
           name: campo3
           options:
-            - 
+            -
               value: Cittadino
               valueid: Cittadino
-            - 
+            -
               value: Comune
               valueid: Comune
-            - 
+            -
               value: Software House
               valueid: SW_House
-            - 
+            -
               value: Other
               valueid: ""
 abilitante: true
@@ -57,7 +57,7 @@ resources:
         - title: Technical documentation and reference tables
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
-          desc: 
+          desc:
     - SDK:
         - title: Example Java client
           icon: github
@@ -90,5 +90,5 @@ community is important.
 We built some collaboration tools for you including an *issue tracker* and a forum dedicated to
 discuss all the problems on integrating ANPR.
 
-<a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><i class="it-github" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a>

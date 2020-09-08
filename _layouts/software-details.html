@@ -109,7 +109,7 @@ layout: default
           <p>{{ t.software.vitality }}:</p>
           <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
           {% if page.vitalityDataChart != nil %}
-          <div id="softwareChart">
+          <div id="softwareChart" data-vitality='{{page.vitalityDataChart | reverse | jsonify}}'>
             <canvas id="vitalityChart"></canvas>
           </div>
           {% endif %}
@@ -522,7 +522,7 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
-                  {% if all_false %} 
+                  {% if all_false %}
                   {{ t.software.dependencies_none }}
                   {% else %}
                       {% if p.pagopa == true %}
@@ -559,15 +559,15 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
-                  {% if all_false %} 
+                  {% if all_false %}
                   {{ t.software.dependencies_none }}
                   {% else %}
                   {% if p.gdpr == true %}
-                    GDPR 
+                    GDPR
                   {% endif %}
                   {% if p.lineeGuidaDesign == true %}
                   <a href="{{ t.software.design_guidelines_url }}" class="enabling_platforms">
-                    {{ t.software.design_guidelines }} 
+                    {{ t.software.design_guidelines }}
                   </a>
                   {% endif %}
                   {% if p.misureMinimeSicurezza == true %}
@@ -577,7 +577,7 @@ layout: default
                   {% endif %}
                   {% if p.modelloInteroperabilita == true %}
                   <a href="{{ t.software.interoperability_model_url }}" class="enabling_platforms">
-                    {{ t.software.interoperability_model }} 
+                    {{ t.software.interoperability_model }}
                   </a>
                   {% endif %}
                   {% endif %}
@@ -612,7 +612,7 @@ layout: default
                   {% endfor %}
                 </p>
                 <p>
-                  <a data-toggle="collapse" href="#otherLanguage" 
+                  <a data-toggle="collapse" href="#otherLanguage"
                     role="button" aria-expanded="false"
                     class="count" aria-controls="otherLanguage">
                     {{ t.langs.show_all }}
@@ -682,9 +682,9 @@ layout: default
           <div class="img-container">
             <a href="{{ relsw_url }}">
               {% capture swClasses %} w-100 {% endcapture %}
-              {% include display-logo.html 
-                logo = relsw.publiccode.logo 
-                id = relsw.id 
+              {% include display-logo.html
+                logo = relsw.publiccode.logo
+                id = relsw.id
                 screenshots = relsw_description.screenshots
                 classes = swClasses
                 codiceIPA = relsw.publiccode.it.riuso.codiceIPA

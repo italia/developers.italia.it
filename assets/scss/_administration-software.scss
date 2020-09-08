@@ -1,0 +1,80 @@
+@use 'bootstrap';
+
+.Header-navbar--pa {
+  box-shadow: 0 5px 30px 0 rgba(#000, 0.06);
+}
+
+.Header-titleLink--pa.Header-titleLink--pa {
+  a {
+    @include bootstrap.media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.page-administration-software {
+  margin-top: 5rem;
+
+  .intro__img {
+    margin-right: 1em;
+    vertical-align: baseline;
+  }
+
+  h2 {
+    @include bootstrap.media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .drops-details {
+    @include bootstrap.media-breakpoint-up(sm) {
+      border-left: 0.5em solid #e8f1fa;
+      padding-left: 2em;
+      margin-top: 2em;
+    }
+  }
+
+  .score {
+    @extend .d-inline-block;
+    @extend .align-middle;
+
+    color: $primary;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .status {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-top: 0;
+  }
+
+  .goto {
+    margin-top: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    p {
+      position: relative;
+
+      img {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+.software-title {
+  display: inline-block;
+
+  @include bootstrap.media-breakpoint-up(lg) {
+    font-size: 3.5rem;
+  }
+}

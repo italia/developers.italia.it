@@ -51,6 +51,7 @@ plugins:
   - liquid-nested-sort
 exclude:
   - .circleci
+  - assets
   - AUTHORS
   - docker-compose.yml
   - Dockerfile
@@ -68,6 +69,12 @@ exclude:
   - swagger/dist
   - swagger/node_modules
   - vendor
+
+keep_files:
+  # Have Jekyll not remove these directories when generating _site because
+  # webpack writes its output there.
+  - dist
+  - assets
 
 pagination:
   enabled: true
@@ -99,12 +106,12 @@ logo: /assets/icons/logo-it.svg
 owner_logo: /assets/images/agid-logo-bb.svg
 partner_short: Dipartimento per la Trasformazione Digitale
 partner_full: Dipartimento per la Trasformazione Digitale
-partner_link: https://innovazione.gov.it/it/chi-siamo/dipartimento/ 
+partner_link: https://innovazione.gov.it/it/chi-siamo/dipartimento/
 privacy_link: /it/privacy-policy
 gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
-partner_logo: /assets/icons/logo-mid-white.svg 
+partner_logo: /assets/icons/logo-mid-white.svg
 pill: ""
-url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/ 
+url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/
 url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
 newsletterdata:
     placeholdertext: mario.rossi@devsoftware.it

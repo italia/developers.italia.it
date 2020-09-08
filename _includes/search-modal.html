@@ -14,6 +14,9 @@
           <form autocomplete="off" action="">
             <div class="form-group">
               <div class="autocomplete">
+                <svg class="icon icon-lg">
+                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+                </svg>
                 <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software{% if active_lang == 'it' %} o amministrazioni{% else %} or administrations{% endif %}">
                 <div id="suggestions" class="d-none"></div>
               </div>

@@ -28,15 +28,21 @@ Show images:
 2. Software ID
 2. Logo
 3. Default placeholder
-4. If everything else fails, defaults to placeholder (second "url")
 
-Utility functions are located in assets/js/logos.js and loaded by head.html
+Utility functions are located in assets/scripts/logos.js.
 {% endcomment %}
-<div class="sw-{{id}}"></div>
-<script>
-  checkImage(
-    "{{ picture }}",
-    function(){ setImage(this.src, ".sw-{{id}}", "{{ classes }}"); },
-    function(){ setImage("{{ placeholderScreen }}", ".sw-{{id}}", "{{ classes }}"); }
-  );
-</script>
+<div
+  data-display-logo-id="sw-{{ id }}"
+  data-display-logo-src="{{ picture }}"
+  data-display-logo-classes="{{ classes }}"
+>
+  <div
+    style="
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:150px;
+      background-image: url('{{ placeholderScreen}}');
+    "
+  ></div>
+</div>
