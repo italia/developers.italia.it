@@ -105,7 +105,7 @@ partner_short: Dipartimento per la Trasformazione Digitale
 partner_full: Dipartimento per la Trasformazione Digitale
 partner_link: https://innovazione.gov.it/it/chi-siamo/dipartimento/
 privacy_link: /it/privacy-policy
-gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
+gov_logo: /assets/images/governo.svg
 partner_logo: /assets/icons/logo-mid-white.svg
 pill: ""
 url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/
