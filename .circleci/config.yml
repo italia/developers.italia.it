@@ -41,7 +41,6 @@ references:
     run:
       name: build-bundle-jekyll
       command: |
-        make build-swagger
         make jekyll-build
         make test
 

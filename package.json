@@ -14,7 +14,9 @@
         "owl.carousel": "^2.3.4",
         "perfect-scrollbar": "^1.5.0",
         "photoswipe": "^4.1.3",
-        "select2": "^4.0.3"
+        "react": "^16.13.1",
+        "select2": "^4.0.3",
+        "swagger-ui": "^3.32.5"
     },
     "repository": {
         "type": "git",
@@ -25,6 +27,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.11.1",
+        "@babel/plugin-transform-react-jsx": "^7.10.4",
         "@babel/preset-env": "^7.11.0",
         "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",

@@ -18,17 +18,14 @@ bundle-install: bundle-setup
 bundle-install-deployment: bundle-setup
 	bundle install --deployment
 
-build-swagger:
-	cd swagger && npm run build
-
 test:
 	JEKYLL_NO_GITHUB=true bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-local: build-swagger
+local:
 	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | JEKYLL_NO_GITHUB=true bundle exec jekyll serve --livereload --incremental --host=0.0.0.0
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 	NODE_ENV=production npm run build
 include-npm-deps:
 	npm ci
-build: | build-bundle-deployment include-npm-deps download-data build-swagger jekyll-build
+build: | build-bundle-deployment include-npm-deps download-data jekyll-build
 build-test: | build test

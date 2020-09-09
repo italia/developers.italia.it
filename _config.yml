@@ -65,9 +65,6 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
-  - swagger/.cache
-  - swagger/dist
-  - swagger/node_modules
   - vendor
 
 keep_files:

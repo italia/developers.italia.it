@@ -7,11 +7,6 @@ WORKDIR /usr/src/developers.italia.it
 
 USER root
 
-# rsync is needed by Swagger
-RUN apt-get install -y --no-install-recommends rsync \
-  && apt-get clean \
-  && rm -fr /var/lib/apt/lists/*
-
 USER ${RUNAS}
 
 # Copy useful files inside the workdir
@@ -41,7 +36,6 @@ COPY package.json .
 RUN make include-npm-deps
 RUN make bundle-install
 RUN make download-data
-RUN make build-swagger
 
 EXPOSE 4000 8080 35729
 
