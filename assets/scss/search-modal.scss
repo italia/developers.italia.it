@@ -13,6 +13,12 @@
       background-color: $primary;
       color: #fff;
       border: 1px solid $primary;
+      svg {
+        fill: #fff !important;
+      }
+      span {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(296deg) brightness(200%) contrast(100%);
+      }
     }
   }
   .modal-dialog {
@@ -33,7 +39,7 @@
         #search-buttons {
           a {
             svg {
-              fill: #5a6772
+              fill: #5a6772;
             }
           }
         }
