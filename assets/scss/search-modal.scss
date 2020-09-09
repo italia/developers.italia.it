@@ -6,8 +6,8 @@
     margin-right: 0.5rem;
   }
   .btn {
-    border: 1px solid #5A6772;
-    color: #5A6772;
+    border: 1px solid $gray-600;
+    color: $gray-600;
 
     &.active {
       background-color: $primary;
@@ -39,7 +39,7 @@
         #search-buttons {
           a {
             svg {
-              fill: #5a6772;
+              fill: $gray-600;
             }
           }
         }
