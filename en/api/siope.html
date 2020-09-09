@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202009091231" rel="stylesheet">
+  <link href="/dist/main.css?202009091310" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -651,7 +651,65 @@
 
 
 
-<link rel="stylesheet" href="/assets/swagger/swagger.d1894e30.css"><div id="swagger"></div><script>window.lang="en",window.swaggerUrl="https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siopeplus.yaml",window.l10n={swagger:void 0};var r="{&quot;download&quot;:&quot;Download OpenAPI&quot;,&quot;server&quot;:&quot;Copy server link&quot;,&quot;url&quot;:&quot;Server&quot;,&quot;developer&quot;:&quot;Developer&quot;,&quot;channel&quot;:&quot;Contact&quot;,&quot;tos&quot;:&quot;Terms of service&quot;,&quot;authorize&quot;:&quot;Authorize&quot;,&quot;goToCard&quot;:&quot;Vai alla scheda&quot;,&quot;platform&quot;:&quot;Reference platform&quot;,&quot;goToPlatform&quot;:&quot;Go to platform&quot;}";try{window.l10n.swagger=JSON.parse(r.replace(/&quot;/g,'"'))}catch(y){}var e="[]",l=[];try{e=(e=e.replace(/&quot;/g,'"')).replace(/\n/g,"<br />"),e=JSON.parse(e);for(var a=[],n=5;e.length>0;)a.push(e.splice(0,n));for(var i=0,t=a;i<t.length;i++){var o=t[i],c={},g=!0,s=!1,w=void 0;try{for(var p,d=o[Symbol.iterator]();!(g=(p=d.next()).done);g=!0){var u=p.value,v=u.split(":").splice(0,1)[0],h=u.split(":").splice(1).join("");"id"===v&&(h=h.split("/")[2]),c[v]=h}}catch(f){s=!0,w=f}finally{try{g||null==d.return||d.return()}finally{if(s)throw w}}l.push(c)}window.projects=l}catch(y){}</script><script src="/assets/swagger/swagger.c3c5aae0.js"></script>
+<div id="swagger"></div>
+
+<script>
+  // These vars are populated with Jekyll's _includes
+  window.lang = "en";
+  window.swaggerUrl = "https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siopeplus.yaml";
+  window.l10n = {
+    "swagger": undefined
+  };
+
+  var safeL10n = "{&quot;download&quot;:&quot;Download OpenAPI&quot;,&quot;server&quot;:&quot;Copy server link&quot;,&quot;url&quot;:&quot;Server&quot;,&quot;developer&quot;:&quot;Developer&quot;,&quot;channel&quot;:&quot;Contact&quot;,&quot;tos&quot;:&quot;Terms of service&quot;,&quot;authorize&quot;:&quot;Authorize&quot;,&quot;goToCard&quot;:&quot;Vai alla scheda&quot;,&quot;platform&quot;:&quot;Reference platform&quot;,&quot;goToPlatform&quot;:&quot;Go to platform&quot;}";
+
+  try {
+    window.l10n.swagger = JSON.parse(safeL10n.replace(/&quot;/g, '"'));
+  } catch (error) {
+    // It is safe for this to fail while in development
+  }
+
+  var safeProjects = "[]";
+  var projects = [];
+  try {
+    safeProjects = safeProjects.replace(/&quot;/g, '"');
+    safeProjects = safeProjects.replace(/\n/g, '<br />');
+    safeProjects = JSON.parse(safeProjects);
+
+    // Shape of this array now is
+    // [
+    //   "description:Se sei un esercente e vuoi integrarti con la piattaforma, qui puoi trovare le informazioni dettagliate per come integrarsi in modo efficace con la piattaforma. <br />",
+    //   "subtitle:Bonus cultura e formazione",
+    //   "payoff:La piattaforma dove spendere i bonus cultura e formazione",
+    // ]
+
+    var chunks = [];
+    var chunk_size = 5;
+    while (safeProjects.length > 0) {
+      chunks.push(safeProjects.splice(0, chunk_size));
+    }
+
+    for (const chunk of chunks) {
+      var project = {};
+      for (const field of chunk) {
+        var key = field.split(":").splice(0, 1)[0];
+        var value = field.split(":").splice(1).join("");
+
+        if (key === "id") {
+          // i.e. "/it/18app"
+          value = value.split("/")[2];
+        }
+        project[key] = value;
+      }
+      projects.push(project);
+    }
+
+    window.projects = projects;
+  } catch (error) {
+    // It is safe for this to fail while in development
+  }
+</script>
+
 
   </div>
 </div>
