@@ -22,12 +22,9 @@ bundle-install-deployment: bundle-setup
 github-import: bundle-install
 	bundle exec scripts/github_importer.rb
 
-build-swagger:
-	cd swagger && npm run build
-
 test:
 	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
-local: build-swagger
+local:
 	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0
 
 jekyll-build:
