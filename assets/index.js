@@ -13,4 +13,6 @@ import './js/main';
 import './js/misc';
 import './js/github-issues';
 
+import './js/swagger-custom';
+
 import './scss/main.scss'

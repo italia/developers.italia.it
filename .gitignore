@@ -9,7 +9,5 @@ _data/github_members.json
 _data/github_teams.json
 _site
 node_modules
-swagger/.cache
-swagger/dist
 vendor
 yarn-error.log
