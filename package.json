@@ -24,7 +24,8 @@
     },
     "scripts": {
         "build": "webpack --config webpack.prod.js",
-        "lint": "npx eslint _site/ --ext .json"
+        "lint": "npx eslint _site/ --ext .json",
+        "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
     },
     "devDependencies": {
         "@babel/core": "^7.11.1",
@@ -38,6 +39,7 @@
         "eslint": "^7.8.1",
         "eslint-plugin-json": "^2.1.2",
         "file-loader": "^6.0.0",
+        "gh-pages": "^3.1.0",
         "mini-css-extract-plugin": "^0.11.0",
         "postcss": "^7.0.32",
         "postcss-import": "^12.0.1",
