@@ -1502,6 +1502,12 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
   }
 
   if ((typeof response.hits !== 'undefined') && (typeof response.hits.hits !== 'undefined') && Array.isArray(response.hits.hits)) {
+    if (response.hits.hits.length == 0) {
+      $suggestions.append(this.templates.suggestion({
+        'name': this.config['emptySerp'][language]['title'],
+        'language': this.config['language']
+      }));
+    }
     for (var i = 0; i < response.hits.hits.length; i++) {
       var data;
       if (response.hits.hits[i]['_type'] === 'software') {
@@ -1527,6 +1533,11 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.esSearchSuccessCallback = funct
       'name': this.config['autocomplete_all_text'][language],
       'language': this.config['language'],
       'path': '/' + language + '/search?' + queryString.join('&')
+    }));
+  } else {
+    $suggestions.append(this.templates.suggestion({
+      'name': this.config['queryErrorMessage'][language],
+      'language': this.config['language']
     }));
   }
 };

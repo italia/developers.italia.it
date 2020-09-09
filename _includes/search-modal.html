@@ -20,11 +20,13 @@
                 <input type="text" class="form-control" placeholder="{{ t.search_form_label | capitalize }} {{ t.software.platforms }}, software{% if active_lang == 'it' %} o amministrazioni{% else %} or administrations{% endif %}">
                 <div id="suggestions" class="d-none"></div>
               </div>
-              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all">{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>{{ t.software.platforms | capitalize }}</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>{{ t.software.software_open | capitalize }}</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>{{ t.software.reuse_software | capitalize }}</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>{{ t.software.administrations | capitalize }}</a>
+              <div id="search-buttons">
+                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg>{% if active_lang == 'it' %} Tutto {% else %} All {% endif %}</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>{{ t.software.platforms | capitalize }}</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>{{ t.software.software_open | capitalize }}</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>{{ t.software.reuse_software | capitalize }}</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>{{ t.software.administrations | capitalize }}</a>
+              </div>
             </div>
           </form>
         </div>

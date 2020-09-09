@@ -6,13 +6,19 @@
     margin-right: 0.5rem;
   }
   .btn {
-    border: 1px solid #5A6772;
-    color: #5A6772;
+    border: 1px solid $gray-600;
+    color: $gray-600;
 
     &.active {
       background-color: $primary;
       color: #fff;
       border: 1px solid $primary;
+      svg {
+        fill: #fff !important;
+      }
+      span {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(296deg) brightness(200%) contrast(100%);
+      }
     }
   }
   .modal-dialog {
@@ -30,6 +36,13 @@
         }
       }
       .modal-body {
+        #search-buttons {
+          a {
+            svg {
+              fill: $gray-600;
+            }
+          }
+        }
         .autocomplete {
           position: relative;
           & > .icon {
