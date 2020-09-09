@@ -176,6 +176,9 @@ end
 
 File.open("#{site_folder}/github_issues.json", 'w') {|f| f.write(github_issues.to_json) }
 
-File.open("_data/github_teams.yml", 'w') {|f| f.write(github_issues.to_yaml) }
-File.open("_data/github_members.yml", 'w') {|f| f.write(github_issues.to_yaml) }
+github_teams.map!{ |team| Hash[team.map{ |k, v| [k.to_s, v] }] }
+github_members.map!{ |member| Hash[member.map{ |k, v| [k.to_s, v] }] }
+
+File.open("_data/github_teams.yml", 'w') {|f| f.write(github_teams.to_yaml) }
+File.open("_data/github_members.yml", 'w') {|f| f.write(github_members.to_yaml) }
 File.open("_data/github_tech_list.yml", 'w') {|f| f.write(tech_list.to_yaml) }
