@@ -97,6 +97,7 @@ jobs:
       - checkout
       - << : *install_dependencies
       - << : *get_crawler_yml_files
+      - run: make github-import
       - << : *build_bundle_jekyll
       - << : *notify_on_failure
 
