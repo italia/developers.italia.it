@@ -23,7 +23,9 @@ github-import: bundle-install
 	bundle exec scripts/github_importer.rb
 
 test:
+	npm run lint
 	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+
 local:
 	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0
 
