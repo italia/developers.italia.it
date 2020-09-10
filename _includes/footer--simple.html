@@ -25,21 +25,8 @@
           </div>
         </a>
       </div>
-      <div class="footer-social col-md-3 col-lg-4 text-right">
-        <span class="text-white small mr-3 ">{{ t.follow_us | capitalize }}</span>
-        <ul class="d-inline-block footer-social-icons list-inline mt-2 mt-md-3">
-          <li class="list-inline-item">
-            <a href="/{{ active_lang }}/news/feed.atom" title="feed" class="icon text-white">
-              <img src="{{ '/assets/icons/feed.svg' | relative_url }}">
-              <span class="sr-only">Feed</span>
-            </a>
-          </li>
-          {% for social in site.data.social %}
-          <li class="list-inline-item"><a href="{{ social[1].link }}" title="{{ social[1].name }}"
-              class="text-white"><span class="it-{{ social[0] }}"></span>
-              <span class="sr-only">{{ social[1].name | capitalize }}</span></a></li>
-          {% endfor %}
-        </ul>
+      <div class="footer-social text-right">
+        {% include social-icons.html social_items=site.data.social follow_us_text=t.follow_us %}
       </div>
     </div>
 
