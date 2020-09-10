@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","headline":"Divo - Developers Italia","url":"https://developers.italia.it/it/software/c_d612-comunefi-divo.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Sviluppiamo i servizi pubblici, insieme","headline":"Divo - Developers Italia","@type":"WebPage","url":"https://developers.italia.it/it/software/c_d612-comunefi-divo.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -42,13 +42,13 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202009091339" rel="stylesheet">
+  <link href="/dist/main.css?202009100806" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/assets/icons/manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
   <link rel="shortcut icon" href="/assets/icons/favicon.ico">
   <meta name="apple-mobile-web-app-title" content="Developers Italia">
@@ -378,11 +378,13 @@
                 <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
                 <div id="suggestions" class="d-none"></div>
               </div>
-              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"> Tutto </a>
-              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>Amministrazioni</a>
+              <div id="search-buttons">
+                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+              </div>
             </div>
           </form>
         </div>
@@ -658,7 +660,7 @@
         
         <h1 class="d-inline-block">
           Divo
-          <span class="badge badge-pill badge-pill--sup badge-primary">1.3.9</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">1.4.1</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -726,9 +728,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitalità:</p>
-          <p class="score d-inline-block"> 56%</p>
+          <p class="score d-inline-block"> 57%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,70,98,86,50,50,84,86,50,62,50,50,50,50,56,50,50,50,50,50,50,100,68,100,62,50,50,68,50,86,86,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,68,50]'>
+          <div id="softwareChart" data-vitality='[46,46,70,98,86,50,50,84,86,50,62,50,50,50,50,56,50,50,50,50,50,50,100,68,100,62,50,50,68,50,86,86,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,78,62,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -776,26 +778,26 @@
     
     
     
-    <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.png" data-index="167"
+    <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.png" data-index="182"
       data-size="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.pngxhttps://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.png">
       <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.png" />
     </a>
     
     <div class="tiled-items-container">
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/config-steps.png" data-index="168"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/config-steps.png" data-index="183"
         data-size="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/config-steps.pngxhttps://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/config-steps.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/config-steps.png" />
       </a>
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log.png" data-index="169"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log.png" data-index="184"
         data-size="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log.pngxhttps://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log.png" />
       </a>
       
     </div>
     
-    <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log-details.png" data-index="170"
+    <a class="tiled-item" href="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log-details.png" data-index="185"
       data-size="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log-details.pngxhttps://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log-details.png">
       <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/log-details.png" />
     </a>
@@ -849,7 +851,7 @@
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
-              Usata da 3
+              Usata da 4
               
               amministrazioni
               
@@ -863,6 +865,8 @@
               <p> Comune di Firenze </p>
               
               <p> Comune di Pistoia </p>
+              
+              <p> Comune di San Giuliano Terme </p>
               
             </div>
           </div>
@@ -907,7 +911,7 @@
                 Divo
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">1.3.9</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">1.4.1</span>
                 
               </h2>
               <h2>
@@ -922,7 +926,7 @@
                   <span class="label">Ultimo rilascio</span>
                   2020-07-07
                   
-                  (1.3.9)
+                  (1.4.1)
                   
                 </p>
               </div>

@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","headline":"PAT - Portale Amministrazione Trasparente - Developers Italia","url":"https://developers.italia.it/it/software/agid-agid-pat.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Sviluppiamo i servizi pubblici, insieme","headline":"PAT - Portale Amministrazione Trasparente - Developers Italia","@type":"WebPage","url":"https://developers.italia.it/it/software/agid-agid-pat.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -42,13 +42,13 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202009091339" rel="stylesheet">
+  <link href="/dist/main.css?202009100806" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/assets/icons/manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
   <link rel="shortcut icon" href="/assets/icons/favicon.ico">
   <meta name="apple-mobile-web-app-title" content="Developers Italia">
@@ -378,11 +378,13 @@
                 <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
                 <div id="suggestions" class="d-none"></div>
               </div>
-              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"> Tutto </a>
-              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>Amministrazioni</a>
+              <div id="search-buttons">
+                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+              </div>
             </div>
           </form>
         </div>
@@ -1249,56 +1251,6 @@
 
 
           <div class="img-container">
-            <a href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi">
-              
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div
-  data-display-logo-id="sw-82dba1b26b3d605b9f2f9a32553e38f32d677862"
-  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
-  data-display-logo-classes=" w-100 "
->
-  <div
-    style="
-      background-position: top center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height:150px;
-      background-image: url('/assets/images/placeholder-software-riuso.jpg');
-    "
-  ></div>
-</div>
-
-            </a>
-          </div>
-          <div class="relate-body">
-            <p class="relate-title">
-              Provvedimenti Amministrativi
-            </p>
-            <a href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi" class="relate-link"> leggi di più &rarr;</a>
-          </div>
-        </div>
-        
-        
-        
-        <div class="col-12 relate">
-          
-
-
-          <div class="img-container">
             <a href="/it/software/r_umbria-regioneumbria-vbg">
               
               
@@ -1339,6 +1291,56 @@
               VBG (Virtual Business Gate)
             </p>
             <a href="/it/software/r_umbria-regioneumbria-vbg" class="relate-link"> leggi di più &rarr;</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-12 relate">
+          
+
+
+          <div class="img-container">
+            <a href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi">
+              
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  data-display-logo-id="sw-82dba1b26b3d605b9f2f9a32553e38f32d677862"
+  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
+  data-display-logo-classes=" w-100 "
+>
+  <div
+    style="
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:150px;
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
+    "
+  ></div>
+</div>
+
+            </a>
+          </div>
+          <div class="relate-body">
+            <p class="relate-title">
+              Provvedimenti Amministrativi
+            </p>
+            <a href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi" class="relate-link"> leggi di più &rarr;</a>
           </div>
         </div>
         

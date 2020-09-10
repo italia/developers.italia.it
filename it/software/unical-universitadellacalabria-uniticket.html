@@ -34,7 +34,7 @@
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Sviluppiamo i servizi pubblici, insieme","@type":"WebPage","headline":"uniTicket - Developers Italia","url":"https://developers.italia.it/it/software/unical-universitadellacalabria-uniticket.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Sviluppiamo i servizi pubblici, insieme","headline":"uniTicket - Developers Italia","@type":"WebPage","url":"https://developers.italia.it/it/software/unical-universitadellacalabria-uniticket.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -42,13 +42,13 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202009091339" rel="stylesheet">
+  <link href="/dist/main.css?202009100806" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/assets/icons/manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
   <link rel="shortcut icon" href="/assets/icons/favicon.ico">
   <meta name="apple-mobile-web-app-title" content="Developers Italia">
@@ -378,11 +378,13 @@
                 <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
                 <div id="suggestions" class="d-none"></div>
               </div>
-              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"> Tutto </a>
-              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><span class="icon icon-type-administration--gray"></span>Amministrazioni</a>
+              <div id="search-buttons">
+                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+              </div>
             </div>
           </form>
         </div>
@@ -706,9 +708,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitalità:</p>
-          <p class="score d-inline-block"> 67%</p>
+          <p class="score d-inline-block"> 68%</p>
           
-          <div id="softwareChart" data-vitality='[64,64,64,64,76,64,74,64,64,68,68,74,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,74,68,68,68,68,68]'>
+          <div id="softwareChart" data-vitality='[64,64,64,76,64,74,64,64,68,68,74,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,74,68,68,68,68,68,68]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -760,38 +762,38 @@
     
     
     
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/uniticket.png" data-index="107"
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/uniticket.png" data-index="83"
       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/uniticket.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/uniticket.png">
       <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/uniticket.png" />
     </a>
     
     <div class="tiled-items-container">
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/dashboard1.png" data-index="108"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/dashboard1.png" data-index="84"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/dashboard1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/dashboard1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/dashboard1.png" />
       </a>
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/operator_takes_ticket1.png" data-index="109"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/operator_takes_ticket1.png" data-index="85"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/operator_takes_ticket1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/operator_takes_ticket1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/operator_takes_ticket1.png" />
       </a>
       
     </div>
     
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/manager_dashboard1.png" data-index="110"
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/manager_dashboard1.png" data-index="86"
       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/manager_dashboard1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/manager_dashboard1.png">
       <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/manager_dashboard1.png" />
     </a>
     
     <div class="tiled-items-container">
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_competence1.png" data-index="111"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_competence1.png" data-index="87"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_competence1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_competence1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_competence1.png" />
       </a>
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_dependence1.png" data-index="112"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_dependence1.png" data-index="88"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_dependence1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_dependence1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/ticket_dependence1.png" />
       </a>
@@ -799,19 +801,19 @@
     </div>
     <div class="tiled-items-container">
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_new1.png" data-index="113"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_new1.png" data-index="89"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_new1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_new1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_new1.png" />
       </a>
       
-      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_detail1.png" data-index="114"
+      <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_detail1.png" data-index="90"
         data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_detail1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_detail1.png">
         <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_detail1.png" />
       </a>
       
     </div>
     
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_input_module_detail1.png" data-index="115"
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_input_module_detail1.png" data-index="91"
       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_input_module_detail1.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_input_module_detail1.png">
       <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniTicket/master/data/gallery/category_input_module_detail1.png" />
     </a>
