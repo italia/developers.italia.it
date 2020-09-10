@@ -27,6 +27,14 @@ module.exports = {
       PerfectScrollbar: 'perfect-scrollbar',
     }),
 
+    // Pass down environment variables to process.env.
+    //
+    // If a variable is set, its value takes precedence over
+    // the default value defined here.
+    new webpack.EnvironmentPlugin({
+      ELASTICSEARCH_FRONTEND_URL: 'https://elasticsearch.developers.italia.it',
+    }),
+
     // Just copy images and icons we reference directly in the HTML, we
     // don't need to bundle those.
     new CopyWebpackPlugin({

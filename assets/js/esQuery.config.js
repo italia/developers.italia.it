@@ -1,4 +1,4 @@
-var elasticHost = 'https://elasticsearch.developers.italia.it';
+const elasticHost = process.env.ELASTICSEARCH_FRONTEND_URL;
 
 var paramKeys = [
   'publiccode.categories',
