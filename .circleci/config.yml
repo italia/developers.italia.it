@@ -49,36 +49,14 @@ references:
         # gh-pages deployment key from circle-ci config
         - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
 
-  # Store artifacts in a temporary folder, switch branch to
-  # gh-pages and commit changes if any.
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
       name: publish_changes_gh_pages
       command: |
         cp -r .well-known _site/
 
-        # Move artifacts to a temporary location
-        mv _site /tmp/gh-pages
-
-        # Hard reset to master to avoid conflicts.
-        # Then, switch branch to gh-pages
-        git reset --hard origin/master
-        git clean -f -d
-        git checkout gh-pages
-
-        # Set the shopt dotglob bit to copy hidden files and directories
-        shopt -s dotglob
-        cp -a /tmp/gh-pages/* .
-
-        git config --global user.email no-reply@teamdigitale.governo.it
-        git config --global user.name "Deploy Bot"
-
-        # Proceed only if there are changes to commit
-        if [[ $(git status -s | wc -l | awk '{print $1}') -gt 0 ]]; then
-          git add .
-          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}"
-          git push origin gh-pages
-        fi
+        echo developers.italia.it > _site/CNAME
+        npm run deploy -- -m "Automated deployment: ${CIRCLE_SHA1} [ci skip]"
 
   # In order to use this, the integration needs to be
   # setup first under CircleCI app directory and a
