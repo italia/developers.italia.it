@@ -20,14 +20,9 @@ gem "html-proofer"
 # install kramdown-parser-gfm (from kramdown version 2 this is needed)
 gem "kramdown-parser-gfm"
 
-# speed up parallel github fetches
-gem "parallel"
-
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
-
-gem "rest-client", "~> 2.1"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -46,4 +41,6 @@ gem 'tzinfo-data'
 
 gem 'searchyll', :git => 'https://github.com/italia/developers-italia-searchyll'
 
+# github_importer.rb dependencies
 gem "octokit", "~> 4.18"
+gem "rest-client", "~> 2.1"
