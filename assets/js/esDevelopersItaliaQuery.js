@@ -1027,6 +1027,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function (post) {
 esDevelopersItaliaQuery.prototype.renderAdministration = function (administration) {
   var screenshot = '/assets/images/cover_amministrazioni.png';
   var language = this.config['language'];
+  var category = DISE.categories["administration"];
 
   var data = {
     'name': administration["it-riuso-codiceIPA-label"],
@@ -1034,7 +1035,7 @@ esDevelopersItaliaQuery.prototype.renderAdministration = function (administratio
     'language': language,
     'screenshot': screenshot,
     'readMore': this.readMore[language],
-    'category': 'administration',
+    'category': category[language].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-administration'].join(' '),
     'path': '/' + language + '/pa/' + administration["it-riuso-codiceIPA"]
   };
