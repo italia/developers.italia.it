@@ -155,7 +155,6 @@ DEPENDENCIES
   liquid-nested-sort (~> 0.1.5)
   minima (~> 2.5)
   octokit (~> 4.18)
-  parallel
   rest-client (~> 2.1)
   searchyll!
   tzinfo-data

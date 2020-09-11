@@ -69,7 +69,7 @@ $(document).ready(function () {
                 "data": "labels", "render": function (data, type, row, meta) {
                     var labelist = '';
                     data.forEach(function (item) {
-                        labelist = labelist + "<span class='labelist u-color-white u-background-40 u-borderRadius-l u-padding-all-xxs u-margin-right-xxs u-margin-left-xxs u-margin-bottom-xxs' >" + item + " </span>";
+                        labelist = labelist + "<span class='badge badge-secondary mr-1' >" + item + " </span>";
                     });
                     return labelist;
                 }
