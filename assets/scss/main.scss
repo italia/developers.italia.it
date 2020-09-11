@@ -1501,6 +1501,8 @@ body {
             }
         }
         &__url {
+            position: absolute;
+            bottom: 10px;
             font-weight: 600;
             letter-spacing: 0;
             text-transform: uppercase;
