@@ -986,7 +986,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   }
 
   var shortDescription = '';
-  if(description.shortDescription) {
+  if (description.shortDescription) {
     shortDescription = decodeHtmlEntity(description.shortDescription).length >= 100 ? 
       decodeHtmlEntity(description.shortDescription).substr(0,100).concat('...') :
       decodeHtmlEntity(description.shortDescription);
@@ -1018,9 +1018,17 @@ esDevelopersItaliaQuery.prototype.renderPost = function (post) {
     screenshot = post.logo;
   }
 
+  var shortDescription = '';
+  if (post.description) {
+    shortDescription = decodeHtmlEntity(post.description).length >= 100 ? 
+      decodeHtmlEntity(post.description).substr(0,100).concat('...') :
+      decodeHtmlEntity(post.description);
+  }
+
   var data = {
     'name': post.title,
     'localisedName': decodeHtmlEntity(localisedName),
+    'shortDescription': shortDescription,
     'language': language,
     'screenshot': screenshot,
     'readMore': this.readMore[language],

@@ -1172,8 +1172,8 @@ body {
                 left: 0;
                 content: ' ';
                 background-color: #E5F1FC;
-                width: 100%;
                 z-index: -1;
+                width: 100%;
                 height: 100%;
                 @include bootstrap.media-breakpoint-up(md) {
                     width: 50vw;
@@ -1502,7 +1502,7 @@ body {
         }
         &__url {
             position: absolute;
-            bottom: 10px;
+            bottom: 40px;
             font-weight: 600;
             letter-spacing: 0;
             text-transform: uppercase;
