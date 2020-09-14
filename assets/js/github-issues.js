@@ -25,6 +25,10 @@ $(document).ready(function () {
               </div>`;
     }
 
+    function encodeHTML(s) {
+        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    }
+
     var $issues_table = $('#issues_table').DataTable({
         responsive: true,
         "pageLength": 20,
@@ -133,11 +137,22 @@ $(document).ready(function () {
                                 column.search('', true, false).draw();
                             }
                         });
-
                     }
                 });
-
             });
+
+            // Get type from query param (useful to share links)
+            const urlParams = new URLSearchParams(window.location.search);
+            const typeParam = encodeHTML(urlParams.get('type'));
+            let out = [];
+            $github_types_list.find('input').each((n, i) => {
+                out.push(i.value);
+              });
+            if(typeParam && out.includes(typeParam)) {
+                $check = $('#github_types_' + (out.indexOf(typeParam) +1 ));
+                $check.attr('checked', true);
+                $check.trigger('change');
+            }
 
             // reset all filters
             $issues_table_clear.on('click', function (e) {
