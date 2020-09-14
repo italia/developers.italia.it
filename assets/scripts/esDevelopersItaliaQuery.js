@@ -962,7 +962,11 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   }
 
   // workaround for SVG logo/screens in Github #461
+<<<<<<< HEAD
   if ((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+=======
+  if((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
     screenshot += '?sanitize=true';
 
 

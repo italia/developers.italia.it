@@ -28,10 +28,17 @@ layout: default
         {% if page.publiccode.logo %}
         {% if page.publiccode.logo contains 'github' and page.publiccode.logo contains '.svg' %}
         {% assign logo = page.publiccode.logo | append: '?sanitize=true' %}
+<<<<<<< HEAD
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
         <img src="{{ logo }}" class="d-inline-block" />
+=======
+        <img src="{{ logo }}" class="d-inline-block" />
+        {% else %}
+        <img src="{{ page.publiccode.logo }}" class="d-inline-block" />
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -522,7 +529,11 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
+<<<<<<< HEAD
                   {% if all_false %}
+=======
+                  {% if all_false %} 
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
                   {{ t.software.dependencies_none }}
                   {% else %}
                       {% if p.pagopa == true %}
@@ -559,6 +570,7 @@ layout: default
                   {% break %}
                   {% endif %}
                   {% endfor %}
+<<<<<<< HEAD
                   {% if all_false %}
                   {{ t.software.dependencies_none }}
                   {% else %}
@@ -572,12 +584,32 @@ layout: default
                   {% endif %}
                   {% if p.misureMinimeSicurezza == true %}
                   <a href="{{ t.software.security_guidelines_url }}" target="_blank" rel="noopener noreferrer" class="enabling_platforms">
+=======
+                  {% if all_false %} 
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                  {% if p.gdpr == true %}
+                    GDPR 
+                  {% endif %}
+                  {% if p.lineeGuidaDesign == true %}
+                  <a href="{{ t.software.design_guidelines_url }}" class="enabling_platforms">
+                    {{ t.software.design_guidelines }} 
+                  </a>
+                  {% endif %}
+                  {% if p.misureMinimeSicurezza == true %}
+                  <a href="{{ t.software.security_guidelines_url }}" class="enabling_platforms">
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
                     {{ t.software.security_guidelines }}
                   </a>
                   {% endif %}
                   {% if p.modelloInteroperabilita == true %}
+<<<<<<< HEAD
                   <a href="{{ t.software.interoperability_model_url }}" target="_blank" rel="noopener noreferrer" class="enabling_platforms">
                     {{ t.software.interoperability_model }}
+=======
+                  <a href="{{ t.software.interoperability_model_url }}" class="enabling_platforms">
+                    {{ t.software.interoperability_model }} 
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
                   </a>
                   {% endif %}
                   {% endif %}

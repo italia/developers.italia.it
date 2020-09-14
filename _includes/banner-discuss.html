@@ -11,8 +11,12 @@
         <div class="row row-eq-height">
             {% for tool in site.data.tools[active_lang] %}
             <div class="col-sm col-md-6 col-lg-3 my-3 mb-md-4 my-md-0 px-3">
+<<<<<<< HEAD
                 <a href="{{ tool.url }}" target="_blank" rel="noopener noreferrer" class="decoration-none"
                   title="{{ tool.title }}">
+=======
+                <a target="_blank" href="{{ tool.url }}" class="decoration-none" title="{{ tool.title }}">
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
                     <article class="d-flex flex-column align-items-start h-100 bg-white p-2 p-4 ">
                         <figure class="d-flex w-100 align-items-center">
                             <img src="{{ tool.img | relative_url}}" alt="{{ tool.alt }}" height="32">

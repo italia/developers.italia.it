@@ -18,6 +18,7 @@
         <p class="icon-type-generic-sw">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
         {% endif %}
         {% endif %}
+<<<<<<< HEAD
 
         {% assign swClasses = "main-image" %}
         {% include display-logo.html 
@@ -28,6 +29,19 @@
             classes = swClasses
         %}
         
+=======
+        
+        {% if software.publiccode.logo contains 'github' and software.publiccode.logo contains '.svg' %}
+        {% assign logo = software.publiccode.logo | append: '?sanitize=true' %}
+        <div class="main-image"
+            style=" background: url({{ logo }}) no-repeat top center;">
+        </div>
+        {% else %}
+        <div class="main-image"
+            style=" background: url({{ description.screenshots | first | default: software.publiccode.logo | default:'/assets/images/placeholder-software-riuso.jpg'}}) no-repeat top center;">
+        </div>
+        {% endif %}
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
         <p class="name color-inherit">
             {{ sw_name }}
         </p>

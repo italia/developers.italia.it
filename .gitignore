@@ -13,3 +13,8 @@ swagger/.cache
 swagger/dist
 vendor
 yarn-error.log
+<<<<<<< HEAD
+=======
+assets/vendor
+*.swp
+>>>>>>> 25fcdaa2bacb6ece218a440b877f026d635f5292
