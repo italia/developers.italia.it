@@ -1,3 +1,5 @@
+<!-- markdownlint-disable no-inline-html -->
+
 <h1 align="center">Developers Italia</h1>
 
 <div align="center">
@@ -61,43 +63,36 @@ branch](https://github.com/italia/developers.italia.it/tree/gh-pages). The
 updated data feeding the website.
 
 # Documentation
+
 ## Development
 
-A development environment can be both brought up directly on the developer
-machine and in form of a Docker container.
+We use Docker and docker-compose to bring up the developer environment, just clone
+the repo and
 
-The same commands -run in the [Dockerfile](Dockerfile)- can also be run
-directly on the developer machine.
+1. Copy the [`.env.example`](.env.example) file into `.env` and modify the
+   environment variables as it suits you.
+   [`.env.example`](.env.example) holds the detailed description of each variable.
 
-The [docker-compose.yml](docker-compose.yml) file uses environment variables
-declared in the file `.env` file, in the root directory.
-Please refer to [`.env.example`](.env.example) for the detailed description of
-those variables.
+   ```shell
+   cp .env.example .env
+   ```
 
-Before proceeding, copy the [`.env.example`](.env.example) into `.env` and
-modify the environment variables as needed.
+2. Build the container:
 
-Then, build the container, running:
+   ```shell
+   docker-compose up
+   ```
 
-```shell
-docker-compose up [-d] [--build]
-```
+Wait until the Docker logs explicitly say that the website is served at
+`0.0.0.0:4000` and navigate to `http://localhost:4000` to preview the website.
 
-where:
+Jekyll will pick up changes to the Markdown files and recompile them on the fly.
 
-* *-d* execute the containers in background
-
-* *--build* forces the containers build
-
-To destroy the containers, use:
+If you change the `Gemfile` or `package.json`, you'll need to rebuild the image with:
 
 ```shell
-docker-compose down
+docker-compose up --build
 ```
-
-Wait until the Docker logs explicitly say that the website is served on
-*0.0.0.0:4000*. Then, open a browser and navigate to http://localhost:4000 to
-preview the website.
 
 ## Makefile
 
@@ -134,6 +129,7 @@ a look at our [contributing guidelines](CONTRIBUTING.md).
 
 Copyright (c) 2018-2020 - Presidenza del Consiglio dei Ministri
 
-The source code is released under the BSD license (code SPDX: *BSD-3-Clause*)
-and it's distributed with this license since May 30th 2018. The previous code
-has been released under under the MIT license.
+The source code is released under the BSD license (SPDX code: `BSD-3-Clause`)
+and it's distributed with this license since May 30th 2018.
+
+The previous code has been released under under the MIT license.
