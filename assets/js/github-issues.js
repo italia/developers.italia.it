@@ -18,9 +18,9 @@ $(document).ready(function () {
     var github_types_sel = [];
     var $github_languages_list = $('#github_languages_list');
 
-    function createTypeCheckboxes(j, d, className) {
+    function createTypeCheckboxes(j, d, className, checked) {
         return `<div class="form-check">
-                <input id="github_types_${j}" name="github_types_list[]" value="${d}" type="checkbox">
+                <input id="github_types_${j}" name="github_types_list[]" value="${d}" type="checkbox" ${checked ? 'checked': ''}>
                 <label for="github_types_${j}"><i class="issue-${className}"></i> ${d}</label>
               </div>`;
     }
@@ -111,16 +111,19 @@ $(document).ready(function () {
                 });
             });
             this.api().column('type:name').every(function () {
-                var column = this;
+                const column = this;
+                // Get type from query param (useful to share links)
+                const urlParams = new URLSearchParams(window.location.search);
+                const typeParam = urlParams.get('type');
                 column.data().unique().sort().each(function (d, j) {
                     if (d != null && d != '') {
-                        var classname = d.replace(' ', '');
-                        // $github_types_list.append('<span ><input type="checkbox" id="github_types_' + j + '" name="github_types_list[]" value="' + d + '"/> <i class="issue-' + classname + '"></i>' + d + '</span>');
-                        $github_types_list.append(createTypeCheckboxes(j, d, classname));
+                        const checked = d == typeParam;
+                        const classname = d.replace(' ', '');
+                        $github_types_list.append(createTypeCheckboxes(j, d, classname, checked));
                         $('#github_types_' + j).on('change', function () {
-                            var val = $(this).val();
+                            const val = $(this).val();
 
-                            if (github_types_sel.indexOf(val) > -1) {
+                            if (github_types_sel.indexOf(val) > -1){
                                 github_types_sel.splice(github_types_sel.indexOf(val), 1);
                             }
                             else {
@@ -133,22 +136,12 @@ $(document).ready(function () {
                                 column.search('', true, false).draw();
                             }
                         });
+                        if (checked) {
+                            $('#github_types_' + j).trigger('change');
+                        }
                     }
                 });
             });
-
-            // Get type from query param (useful to share links)
-            const urlParams = new URLSearchParams(window.location.search);
-            const typeParam = urlParams.get('type');
-            let out = [];
-            $github_types_list.find('input').each((n, i) => {
-                out.push(i.value);
-              });
-            if(typeParam && out.includes(typeParam)) {
-                $check = $('#github_types_' + (out.indexOf(typeParam) +1 ));
-                $check.attr('checked', true);
-                $check.trigger('change');
-            }
 
             // reset all filters
             $issues_table_clear.on('click', function (e) {
