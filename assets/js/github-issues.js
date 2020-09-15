@@ -25,10 +25,6 @@ $(document).ready(function () {
               </div>`;
     }
 
-    function encodeHTML(s) {
-        return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    }
-
     var $issues_table = $('#issues_table').DataTable({
         responsive: true,
         "pageLength": 20,
@@ -143,7 +139,7 @@ $(document).ready(function () {
 
             // Get type from query param (useful to share links)
             const urlParams = new URLSearchParams(window.location.search);
-            const typeParam = encodeHTML(urlParams.get('type'));
+            const typeParam = urlParams.get('type');
             let out = [];
             $github_types_list.find('input').each((n, i) => {
                 out.push(i.value);
