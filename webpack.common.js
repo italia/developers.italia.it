@@ -14,6 +14,11 @@ module.exports = {
     filename: 'bundle.js'
   },
 
+  resolve: {
+    alias: {
+      'jquery': require.resolve('jquery'),
+    },
+  },
   plugins: [
     // Provide global symbols for legacy plugins.
     new webpack.ProvidePlugin({
