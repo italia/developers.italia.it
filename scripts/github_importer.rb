@@ -17,9 +17,9 @@ PROJECS_PREFIX = %w[spid- 18app anpr- daf- dati- pianotriennale- lg- design- sec
 # List of technologies shown in the UI
 TECH_LIST = %w[
   angular react design html arduino bootstrap frontend
-  perlpython cpp scala php csharp java android ios dotnet
+  perl python cpp scala php csharp java android ios dotnet
   wordpress metabase ansible docker magento joomla django
-].freeze
+].sort.freeze
 
 # Import issues with at least one of these labels
 ONLY_WITH_LABEL = ['help wanted', 'Hacktoberfest'].freeze

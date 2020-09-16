@@ -89,7 +89,7 @@ layout: default
               <label>{{ t.todo_page_tech }}</label>
               <select id="github_languages_list" multiple="true" data-multiple-separator="" title="{{ t.todo_page_pick_option }}">
                 {% for tech in github_tech_list %}
-                <option value="{{ tech }}">
+                <option value="{{ tech }}" data-content="<span class='select-pill'><span class='select-pill-text'>{{ tech }}</span></span>">
                   {{ tech }}
                 </option>
                 {% endfor %}
