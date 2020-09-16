@@ -90,14 +90,7 @@ $(document).ready(function () {
                     var title = d in projects_dictionary ? projects_dictionary[d] : d;
                     apps.push({ text: title, value: title });
                 });
-                apps.forEach(function(x) {
-                  $github_projects_list.find('select').append(
-                    $('<option>', {
-                      value: x.value,
-                      text: x.text,
-                    })
-                  )
-                })
+                $github_projects_list.setOptionsToSelect(apps);
             });
             this.api().column('language:name').every(function () {
                 var column = this;
