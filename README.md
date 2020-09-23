@@ -77,7 +77,13 @@ the repo and
    cp .env.example .env
    ```
 
-2. Build the container:
+2. Set the `RUNAS` variable to your user:
+
+   ```shell
+   echo RUNAS=$(id -u):$(id -g) >> .env
+   ```
+
+3. Build the container:
 
    ```shell
    docker-compose up
