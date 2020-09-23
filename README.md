@@ -44,6 +44,10 @@
     <a href="CONTRIBUTING.md">
       Contributing
     </a>
+    <span> | </span>
+    <a href="https://slack.developers.italia.it">
+      Meet us on Slack
+    </a>
   </h3>
 </div>
 
