@@ -1045,7 +1045,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         margin: 0;
-        @include bootstrap.media-breakpoint-up(lg) {
+        @media (min-width: 1600px) {
             margin: 0 15%;
         }
     }
