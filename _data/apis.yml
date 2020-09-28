@@ -89,3 +89,13 @@
   tags: [data]
   language: [it]
   slug: istat-sdmx-rest
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/c56d1394ca5cb84ec0738f903ba154ed7a615c24/external-apis/carburanti.mise.gov.it-OssPrezziSearch.yaml.src
+  title: OsservaPrezzi API
+  abstract: Consultare in tempo reale i prezzi di vendita dei carburanti.
+  contact:
+    name: Portale dell'Osservatorio Carburanti
+    logo: https://digitalhub.belluno.it/wp-content/uploads/2018/06/MISE-1208x700-1140x641.jpg
+  tags: []
+  language: [it]
+  slug: osservaprezzi
+
