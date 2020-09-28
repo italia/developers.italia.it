@@ -94,8 +94,7 @@
   abstract: Consultare in tempo reale i prezzi di vendita dei carburanti.
   contact:
     name: Portale dell'Osservatorio Carburanti
-    logo: https://digitalhub.belluno.it/wp-content/uploads/2018/06/MISE-1208x700-1140x641.jpg
+    logo: https://www.incentivi.gov.it/images/enti/mise-new.jpg
   tags: []
   language: [it]
   slug: osservaprezzi
-
