@@ -24,10 +24,10 @@ L’iniziativa ha lo scopo di favorire la crescita di progetti di software liber
 attraverso una serie di sfide da completare a ottobre. Nel corso del mese sarà
 quindi possibile contribuire anche ai progetti software ospitati all’interno
 delle organizzazioni Github [/italia](https://github.com/italia)
-e [/teamdigitale](https://github.com/teamdigitale).  Sarà l’occasione per
-chiunque di dare il proprio contributo allo sviluppo dei servizi pubblici
-digitali, e quindi al miglioramento del rapporto tra cittadini e Pubblica
-amministrazione.
+e [/teamdigitale](https://github.com/teamdigitale). 
+Sarà l’occasione per chiunque di dare il proprio contributo allo sviluppo dei
+servizi pubblici digitali, e quindi al miglioramento del rapporto tra cittadini
+e Pubblica amministrazione.
 
 Attualmente vi sono più di **cento “problemi”** (_issue_) aperti che spaziano
 su diversi livelli di complessità: dalla semplice traduzione di un testo, fino
