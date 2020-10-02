@@ -9,7 +9,7 @@
     {% if social[1].sharelink %}
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="list-inline-item">
-        <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" class="icon-wrapper" title="Share on {{ social[0] }}"><span class="icon it-{{ social[0] }}"></span>
+        <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" class="icon-wrapper" title="{{ t.postarticle_socials_icon_title_prefix }} {{ social[0] }}"><span class="icon it-{{ social[0] }}"></span>
           <span class="sr-only">{{ social[1].name | capitalize }}</span>
         </a>
       </li>
