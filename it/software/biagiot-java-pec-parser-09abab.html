@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202010011345" rel="stylesheet">
+  <link href="/dist/main.css?202010020603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -700,7 +700,7 @@
             <div class="col-sm">
               <p><span class="label">Pubblicato da </span>
                 
-                
+                Biagio Placido Tozzi
                 
               </p>
             </div>
@@ -729,7 +729,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 50%</p>
           
-          <div id="softwareChart" data-vitality='[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,60,50,50,50,50,50,50,50]'>
+          <div id="softwareChart" data-vitality='[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,60,50,50,50,50,50,50,50,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -788,6 +788,8 @@
             
             
             <p> Elaborazione di messaggi di posta elettronica certificata (PEC) </p>
+            
+            <p> Elaborazione di messaggi di posta elettronica ordinaria </p>
             
             
           </div>
@@ -1011,32 +1013,54 @@
               <div class="font-serif page-detail__text">
                 <p>Libreria JAVA per l’elaborazione di messaggi di Posta Elettronica Certificata (e messaggi di posta ordinaria).</p>
 
+<p>​</p>
+
 <p><strong>Specifiche</strong>:</p>
 
-<p>Regole tecniche del servizio di trasmissione di documenti informatici mediante posta el ettronica certificata: <a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">pec_regole_tecniche_dm_2-nov-2005.pdf</a></p>
+<p><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici mediante posta elettronica certificata</a>.</p>
+
+<p>​</p>
 
 <p><strong>Esempio di utilizzo</strong>:</p>
 
-<blockquote>
-  <p><code class="language-plaintext highlighter-rouge">MimeMessage mimeMessage = ...; Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);</code></p>
-</blockquote>
+<p>Standard:</p>
 
-<p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un oggetto MimeMessage, rappresentante un messaggio PEC:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MimeMessage mimeMessage = ...; Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);
+</code></pre></div></div>
+
+<p>Con proprietà custom per l’elaborazione del MimeMessage (nella modalità standard vengono utilizzate le properties di sistema: <em>System.getProperties()</em>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MimeMessage mimeMessage = ... ; Properties properties = ... ; Messaggio messaggio = PECMessageParser.getInstance(properties).parse(mimeMessage);
+</code></pre></div></div>
+
+<p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un oggetto <em>javax.mail.internet.MimeMessage</em>, rappresentante un messaggio PEC:</p>
 
 <ul>
-  <li>Busta di trasporto (<code class="language-plaintext highlighter-rouge">Busta</code>)</li>
-  <li>Eventuale messaggio di Posta Elettronica Certificata (<code class="language-plaintext highlighter-rouge">PEC</code>)</li>
-  <li>Eventuale ricevuta (<code class="language-plaintext highlighter-rouge">RicevutaPEC</code>)</li>
+  <li>Busta di trasporto (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/Busta.java">Busta</a>)</li>
+  <li>Eventuale messaggio di Posta Elettronica Certificata (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/PEC.java">PEC</a>)</li>
+  <li>Eventuale ricevuta (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/RicevutaPEC.java">RicevutaPEC</a>)</li>
 </ul>
 
-<p>Il messaggio viene elaborato anche se non PEC:</p>
+<p>Attraverso i metodi di utility offerti dalla classe <a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/util/MessageUtils.java">MessageUtils</a> è possibile risalire al tipo di messaggio:</p>
 
 <ul>
-  <li>Messaggio ricevuto su una casella di Posta Elettronica Certificata: l’oggetto <code class="language-plaintext highlighter-rouge">PEC</code> conterrà le informazioni del messaggio normale in quanto comunque incapsulato in una busta</li>
+  <li>PEC (<em>MessageUtils.isPec(…)</em>)</li>
+  <li>Ricevuta PEC (<em>MessageUtils.isRicevutaPEC(…)</em>)</li>
+  <li>Posta Ordinaria (<em>MessageUtils.isEmailNormale(…)</em>)</li>
+</ul>
+
+<p>Il messaggio infatti viene elaborato anche se non PEC:</p>
+
+<ul>
+  <li>Messaggio ricevuto su una casella di Posta Elettronica Certificata: l’oggetto PEC conterrà le informazioni del messaggio normale in quanto comunque incapsulato in una busta</li>
   <li>Messaggio ricevuto su una casella di posta ordinaria: in questo caso la Busta rappresenta il messaggio normale</li>
 </ul>
 
 <p>​</p>
+
+<p><strong>Altro</strong></p>
+
+<p>La libreria supporta l’elaborazione di messaggi di posta ordinaria con codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
 
               </div>
             </div>
@@ -1161,7 +1185,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/opencontent-opensegnalazioni-bd5f42">
+            <a href="/it/software/c_a116-comune-di-ala-openagenda">
               
               
 
@@ -1179,8 +1203,8 @@
 
 
 <div
-  data-display-logo-id="sw-bd5f4201143feece27775675aa056949db09f6d1"
-  data-display-logo-src="https://gitlab.com/opencontent/opensegnalazioni/raw/master/images/1.png"
+  data-display-logo-id="sw-b365e3536123299a17d692e823d5fcd20ec09529"
+  data-display-logo-src="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
   data-display-logo-classes=" w-100 "
 >
   <div
@@ -1189,7 +1213,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       height:150px;
-      background-image: url('/assets/images/cover_software_opensource.png');
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
     "
   ></div>
 </div>
@@ -1198,9 +1222,9 @@
           </div>
           <div class="relate-body">
             <p class="relate-title">
-              OpenSegnalazioni
+              OpenAgenda
             </p>
-            <a href="/it/software/opencontent-opensegnalazioni-bd5f42" class="relate-link"> leggi di più &rarr;</a>
+            <a href="/it/software/c_a116-comune-di-ala-openagenda" class="relate-link"> leggi di più &rarr;</a>
           </div>
         </div>
         
@@ -1211,7 +1235,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/c_a182-comunedialessandria-portale">
+            <a href="/it/software/udsm_me-mdslab-s4t-lightning-rod">
               
               
 
@@ -1229,7 +1253,7 @@
 
 
 <div
-  data-display-logo-id="sw-7ee59f3d8829aa23a8f5d263b15a2964556d03ea"
+  data-display-logo-id="sw-5e0138adbd6de4b8412bdd500c79a1d9bf905f9f"
   data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
   data-display-logo-classes=" w-100 "
 >
@@ -1248,9 +1272,9 @@
           </div>
           <div class="relate-body">
             <p class="relate-title">
-              Portale appuntamenti, comunicazioni e modulistica
+              S4T-LR
             </p>
-            <a href="/it/software/c_a182-comunedialessandria-portale" class="relate-link"> leggi di più &rarr;</a>
+            <a href="/it/software/udsm_me-mdslab-s4t-lightning-rod" class="relate-link"> leggi di più &rarr;</a>
           </div>
         </div>
         
