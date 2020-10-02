@@ -2,11 +2,20 @@
   <span class="{{ categoryClass }}">{{ category }}</span>
   <article class="d-flex flex-column align-items-start mb-2 mb-md-5">
     <a href="{{ path }}" title="{{ localisedName }}" class="d-block decoration-none ">
-      
-      <figure>
-        <img class="main-image" src="{{ screenshot }}" alt="{{ localisedName }}">
-      </figure>
-      
+      <div
+        data-display-logo-id="sw-{{ id }}"
+        data-display-logo-src="{{ screenshot }}"
+      >
+        <div
+          style="
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height:150px;
+          background-image: url('{{ placeholder }}');
+          "
+        ></div>
+      </div>
       <h1 class="projectslist__listing__title">{{ localisedName }}</h1>
       <h3 class="projectslist__listing">{{ shortDescription }}</h3>
       <span class="projectslist__listing__url">{{ readMore }} →</span>
