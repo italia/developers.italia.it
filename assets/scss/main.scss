@@ -240,6 +240,14 @@ body {
     top: 2px;
   }
 }
+
+// Class for alignment of Counter - Intuitive Arrow Icons in the header
+@include bootstrap.media-breakpoint-down(sm) {
+  .header--icon {
+    font-soze: 0.7rem;
+  }
+}
+
 .Header {
     &-language {
         .icon {
