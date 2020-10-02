@@ -1,6 +1,7 @@
 import elasticsearch from 'elasticsearch';
 
 import { decodeHtmlEntity } from './esQuery';
+import { setDisplayLogos } from './logos';
 
 'use strict';
 
@@ -742,6 +743,7 @@ esDevelopersItaliaQuery.prototype.esSearchSuccessCallback = function (response) 
         html = this.renderAdministration(response.hits.hits[i]._source);
         break;
     }
+    setDisplayLogos();
     $(this.config['pageContent']).append(html);
   }
   this.renderPager(response.hits.total);
@@ -964,21 +966,22 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var category_id = this.getSoftwareType(software);  // generic-sw vs public-sw
   var description = this.languageFallback(software.publiccode.description);
 
+  const placeholder = (category_id == 'public-sw')
+    ? '/assets/images/cover_softwareriuso.png'
+    : '/assets/images/cover_software_opensource.png';
+
   var screenshot;
   if (description && Array.isArray(description.screenshots) && description.screenshots.length > 0) {
     screenshot = description.screenshots[0];
   } else if (software.publiccode.logo) {
     screenshot = software.publiccode.logo;
-  } else if (category_id == 'public-sw') {
-    screenshot = '/assets/images/cover_softwareriuso.png';
   } else {
-    screenshot = '/assets/images/cover_software_opensource.png';
+    screenshot = placeholder;
   }
 
   // workaround for SVG logo/screens in Github #461
   if ((/github/.test(screenshot)) && (/\.svg$/.test(screenshot)))
     screenshot += '?sanitize=true';
-
 
   var localisedName = software.publiccode.name;
   if (description && description.localisedName) {
@@ -987,7 +990,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
 
   var shortDescription = '';
   if (description.shortDescription) {
-    shortDescription = decodeHtmlEntity(description.shortDescription).length >= 100 ? 
+    shortDescription = decodeHtmlEntity(description.shortDescription).length >= 100 ?
       decodeHtmlEntity(description.shortDescription).substr(0,100).concat('...') :
       decodeHtmlEntity(description.shortDescription);
   }
@@ -1002,7 +1005,9 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
     'readMore': this.readMore[language],
     'category': DISE.categories[category_id][language].toUpperCase(),
     'categoryClass': ['icon', 'icon-type-' + category_id].join(' '),
-    'path': '/' + language + '/software/' + software.slug.toLowerCase()
+    'path': '/' + language + '/software/' + software.slug.toLowerCase(),
+    placeholder,
+    id: software.id,
   };
 
   return this.templates.search(data);
@@ -1020,7 +1025,7 @@ esDevelopersItaliaQuery.prototype.renderPost = function (post) {
 
   var shortDescription = '';
   if (post.description) {
-    shortDescription = decodeHtmlEntity(post.description).length >= 100 ? 
+    shortDescription = decodeHtmlEntity(post.description).length >= 100 ?
       decodeHtmlEntity(post.description).substr(0,100).concat('...') :
       decodeHtmlEntity(post.description);
   }
