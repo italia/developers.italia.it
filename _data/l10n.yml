@@ -78,8 +78,6 @@ it:
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
     
-    postarticle_socials_icon_title_prefix: Condividi su
-    
     credits_contributors: "Contributor:"
     credits_maintainers: Mantainer
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
@@ -313,8 +311,6 @@ en:
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need
-    
-    postarticle_socials_icon_title_prefix: Share on
     
     credits_contributors: "Project contributors:"
     credits_maintainers: "Projects leaders & maintainers:"
