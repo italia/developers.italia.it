@@ -6,9 +6,9 @@ function checkImage(src, $el) {
   img.src = src;
 }
 
-$(document).ready(function() {
+function setDisplayLogos() {
   $("div[data-display-logo-id]").each(function() {
-    $this = $(this);
+    var $this = $(this);
 
     $this.addClass("display-logo-loading");
     const classes = $this.data('display-logo-classes');
@@ -19,4 +19,10 @@ $(document).ready(function() {
     $el.addClass(classes);
     checkImage(src, $el);
   });
+}
+
+$(document).ready(function() {
+  setDisplayLogos();
 });
+
+export { setDisplayLogos };
