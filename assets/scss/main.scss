@@ -240,6 +240,14 @@ body {
     top: 2px;
   }
 }
+
+// Smaller text on small mobile devices so that the header stays in one line
+.header--icon {
+  @include bootstrap.media-breakpoint-down(sm) {
+    font-size: 0.7rem;
+  }
+}
+
 .Header {
     &-language {
         .icon {
