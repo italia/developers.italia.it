@@ -240,6 +240,14 @@ body {
     top: 2px;
   }
 }
+
+// Smaller text on small mobile devices so that the header stays in one line
+.header--icon {
+  @include bootstrap.media-breakpoint-down(sm) {
+    font-size: 0.7rem;
+  }
+}
+
 .Header {
     &-language {
         .icon {
@@ -1033,6 +1041,21 @@ body {
 .simplelayout {
     &-main-image {
         background-color: #eee;
+        position: absolute;
+        width: 100%;
+        min-height: 405px;
+        display: grid;
+    }
+    &-main-image-container {
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        @media (min-width: 1600px) {
+            margin: 0 15%;
+        }
     }
     &-first-part {
         background-color: #FAFBFD;
@@ -1043,12 +1066,12 @@ body {
         padding-bottom: 6rem;
     }
     &-main-text {
-        position: relative;
-        margin-top: -3rem;
-        padding: 1rem;
-        background-color: #fff;
-        z-index: 10;
-        box-shadow: 0 10px 80px 0 rgba(90, 103, 114, 0.1);
+      position: relative;
+      margin-top: 13rem;
+      padding: 1rem;
+      background-color: #fff;
+      z-index: 10;
+      box-shadow: 0 10px 80px 0 rgba(90,103,114,.1);
         h1 {
             font-size: 2.5rem;
             color: #17324D;
@@ -1070,7 +1093,7 @@ body {
         }
         @include bootstrap.media-breakpoint-up(md) {
             padding: 4rem;
-            margin-top: -6rem;
+            margin-top: 18rem;
         }
         h2 {
             font-weight: 400;
@@ -1434,7 +1457,7 @@ body {
             margin-top: 5px;
             overflow: hidden;
             width: 100%;;
-            @include bootstrap.media-breakpoint-up(md) {    
+            @include bootstrap.media-breakpoint-up(md) {
                 height: 145px;
                 object-fit: cover;
                 box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
@@ -1565,7 +1588,7 @@ body {
         .icon-wrapper {
             display: inline-block;
             padding-left: 0.5rem;
-            padding-right: 0.3rem;
+            padding-right: 0.5rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             border-radius: 100%;

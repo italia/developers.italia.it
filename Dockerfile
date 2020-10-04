@@ -7,6 +7,11 @@ WORKDIR /usr/src/developers.italia.it
 
 USER root
 
+RUN apt-get update \
+    && apt-get install -y wait-for-it \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 USER ${RUNAS}
 
 # Copy useful files inside the workdir
