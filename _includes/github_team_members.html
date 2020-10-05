@@ -35,12 +35,12 @@
 		<div class="carousel-footer mt-auto d-flex">
 
 			<ol class="carousel-indicators align-self-center">
-				{% assign indicators = team_members.size | modulo: 3 %}
+        {% assign indicators = team_members.size | divided_by: 3.0 | ceil %}
 				{% assign checkIndicators = indicators | times: 3 %}
 
 				{% for item in (1..indicators) %}
 				<li data-target="#projectLeadersIndicator" data-slide-to="{{forloop.index0}}"
-					{% if forloop.first %}class="active" {%endif%}></li>
+					{% if forloop.first %} class="active" {% endif %}></li>
 				{% endfor %}
 				{% if checkIndicators < team_members.size  %}
 				<li data-target="#projectLeadersIndicator" data-slide-to="{{indicators}}"></li>
