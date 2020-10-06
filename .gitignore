@@ -3,6 +3,7 @@
 .env
 .idea
 .jekyll-metadata
+.jekyll-cache
 .sass-cache
 .bundle
 _data/github_members.yml
