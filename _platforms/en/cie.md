@@ -108,7 +108,7 @@ The CIE is not only an identity card, but it's also a technology that enables ne
 
  * Hotel checkin, without the need for making copies of the document.
 
-This will be made possible thanks to the identification features embedded in the microship, whose specifics are open and downloadable from this page.
+This will be made possible thanks to the identification features embedded in the microchip, whose specifics are open and downloadable from this page.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/cie"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411"><i class="it-comment" /> Chat on Slack (#cie)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
