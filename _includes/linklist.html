@@ -16,7 +16,7 @@
     {% if pathArray.size > 0 %}
     {% capture path_1 %}{{ pathArray[1] | remove: '.html' }}{% endcapture %}
     {% capture path_2 %}{{ pathArray[2] | remove: '.html' }}{% endcapture %}
-    {% if item.active_by_firstlevel contains path_1 or item.active_by_firstlevel contains path_2 %}
+    {% if item.active_by_firstlevel contains path_1 or path_2 != '' and item.active_by_firstlevel contains path_2 %}
     {% assign isActive = true %}
     {% endif %}
     {% endif %}
