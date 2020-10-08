@@ -989,7 +989,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   }
 
   var shortDescription = '';
-  if (description.shortDescription) {
+  if (description && description.shortDescription) {
     shortDescription = decodeHtmlEntity(description.shortDescription).length >= 100 ?
       decodeHtmlEntity(description.shortDescription).substr(0,100).concat('...') :
       decodeHtmlEntity(description.shortDescription);
