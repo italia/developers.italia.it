@@ -1528,6 +1528,10 @@ body {
             font-weight: 600;
             letter-spacing: 0;
             text-transform: uppercase;
+            position: absolute;
+            @media (max-width: 768px){
+              position: unset;
+            }
         }
     }
 }
