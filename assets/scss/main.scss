@@ -28,6 +28,10 @@ $pswp__assets-path: "~photoswipe/src/css/default-skin/";
 
 @import "highlight";
 
+body, html {
+  overflow-x: hidden;
+}
+
 a {
     text-decoration: none
 }
