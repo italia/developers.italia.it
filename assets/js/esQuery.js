@@ -26,8 +26,13 @@ $(document).ready(function () {
   var pageId = $('#searchPageId').attr('data');
 
   // listener for modal window search.
-  $('#search-form').on('click', function(){
+  $('#search-form').on('click', function(e){
+    e.preventDefault();
     var $inputText = $('#searchModal .autocomplete input');
+    // time for the input to show itself before triggering the autofocus      
+    setTimeout(() => {
+      $inputText.trigger('focus');      
+    }, 500);
 
     $inputText.on('input', executeAutoCompleteESQuery);
     $('#searchModal form a.btn-filter').on('click', function(event){
@@ -39,13 +44,13 @@ $(document).ready(function () {
 
       $('#searchModal form a.btn-filter.active').removeClass('active');
       $(event.target).addClass('active');
+
     });
 
   });
 
   // When close modal window search, clean input text.
   $('#searchModal .modal-header button').on('click', function(event){
-    $('#searchModal .modal-body form .autocomplete input').val('');
     $('#suggestions').text('').addClass('d-none');
     $('#search-buttons').removeClass('d-none');
   });
