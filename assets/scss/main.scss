@@ -1518,6 +1518,10 @@ body {
             font-weight: 600;
             letter-spacing: 0;
             text-transform: uppercase;
+
+            @include bootstrap.media-breakpoint-up(sm) {
+                position: unset;
+            }
         }
     }
 }
