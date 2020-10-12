@@ -1519,7 +1519,7 @@ body {
             letter-spacing: 0;
             text-transform: uppercase;
 
-            @include bootstrap.media-breakpoint-up(sm) {
+            @include bootstrap.media-breakpoint-down(sm) {
                 position: unset;
             }
         }
