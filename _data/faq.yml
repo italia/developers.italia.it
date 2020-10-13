@@ -115,8 +115,8 @@ it:
       href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa">
       linee guida su acquisizione e riuso di software per le pubbliche
       amministrazioni</a> indica il grado di attività svolta nell'ultimo arco
-      temporale su ogni repository indicizzato in catalogo. Una spiegazione approfondita dei parametri
-      utilizzati per effettuare il calcolo è presente in <a
+      temporale su ogni repository indicizzato in catalogo. Una spiegazione
+      approfondita dei parametri utilizzati per effettuare il calcolo è presente in <a
       href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndexItaliano.md">
       questa pagina</a>. Questo indice è calcolato ogni notte e, attualmente, la
       finestra temporale considerata è di 60 giorni.
@@ -128,13 +128,13 @@ en:
       for teaching or software for administrative purposes?
     answer: |
       Recipients of the provisions of Articles 68 and 69 of the CAD
-      are the public administrations referred to in art. 1, paragraph 2, of the legislative decree 
-      March 30, 2001, n. 165, in respect of the division of competence
-      of art. 117 of the Constitution; among these, there are the
+      are the public administrations referred to in art. 1, paragraph 2, of the
+      legislative decree March 30, 2001, n. 165, in respect of the division of
+      competence of art. 117 of the Constitution; among these, there are the
       institutes and schools of all levels and educational institutions.
       The combined provisions of Articles 68 and 69 of the CAD do not operate any
-      distinction about the type of purpose of a software. The object
-      of the obligation established by the above mentioned provisions is the software of
+      distinction about the type of purpose of a software. The object of the
+      obligation established by the above mentioned provisions is the software of
       ownership of public administration.
   item2:
     question: In which cases is the PA considered owner of a software?
@@ -143,9 +143,10 @@ en:
       its own specific indications every time:  
       <ul>
       <li>it commissioned the solution, through a procurement contract
-      or other negotiating circumstances, and the contract foresees the acquisition of all intellectual and industrial property rights
-      on the software developed on its client's behalf or in any case it does not attribute
-      such ownership by the contractor or third parties;</li>.
+      or other negotiating circumstances, and the contract foresees the acquisition
+      of all intellectual and industrial property rights
+      on the software developed on its client's behalf or in any case it does not
+      attribute such ownership by the contractor or third parties;</li>.
       <li>the software has been realized by internal resources of the administration.</li>
       </ul>
   item3:
@@ -160,13 +161,13 @@ en:
   item4:
     question: Can non-open source software owned by a PA be put to Reuse?
     answer: |
-      It is necessary to distinguish between software requested and specifically developed
-      for a Public Administration (or developed within it)
+      It is necessary to distinguish between software requested and specifically
+      developed for a Public Administration (or developed within it)
       and software of commercial nature of which an administration has instead
-      acquired a right of use license. Only the software belonging to the first category
-      is subject to art. 69 of the CAD on reuse: for such solutions
-      administrations must obligatorily acquire full ownership of the
-      source code and must proceed with its release in open source. Instead the commercial
+      acquired a right of use license. Only the software belonging to the first
+      category is subject to art. 69 of the CAD on reuse: for such solutions
+      administrations must obligatorily acquire full ownership of the source code
+      and must proceed with its release in open source. Instead the commercial
       software acquired by means of a use right license can not be put to reuse.
   item5:
     question: Which are the indications provided for the purposes of compliance
@@ -190,39 +191,37 @@ en:
       choice of an open license; in particular, if the release of the software
       refers to a modification of existing open source software (so
       taken for reuse by other administrations or owned by third parties)
-      the administration must use the same license with which the software has been
-      originally distributed, in order to facilitate its maximum
+      the administration must use the same license with which the software has
+      been originally distributed, in order to facilitate its maximum
       interoperability and reuse with other users of the same software.
   item7:
     Question: To which authorities can be reported the
       non-application by a PA of articles 68 and 69 of CAD?
     answer: |
-      According to art. 17, paragraph 1-quater is established by the AgID the Office
-      of the Digital Ombudsman who has the task of collecting
-      all reports of supposed violations of the Code
-      of the Digital Administration, or any other rule on the subject of
-      digitization and innovation, to guarantee the digital rights of the
-      citizens and businesses.
+      According to art. 17, paragraph 1-quater is established by the AgID the
+      Office of the Digital Ombudsman who has the task of collecting all reports
+      of supposed violations of the Code of the Digital Administration, or any
+      other rule on the subject of digitization and innovation, to guarantee
+      the digital rights of the citizens and businesses.
       Anyone can report supposed violations of CAD provisions,
       among which those ex art. 68 and 69, accessing the appropriate <a
       href="https://difensorecivicodigitale.gov.it/index.php?a=add">area
       dedicated</a> on AgID website.
   item8:
-    question: What fines could be imposed at a PA that
-      acquires solutions, without making a
-      technical and economic comparison?
+    question: What fines could be imposed at a PA that acquires solutions,
+      without making a technical and economic comparison?
     answer: |
-      The CAD does not provide direct fines; however, if a PA disregards
-      the provisions concerning the acquisition of software may arise
-      management and disciplinary responsibility profiles
-      without prejudice to any liability for damages treasury.
+      The CAD does not provide direct fines; however, if a PA disregards the
+      provisions concerning the acquisition of software may arise management
+      and disciplinary responsibility profiles without prejudice to any
+      liability for damages treasury.
   item9:
-    question: What fines could be imposed to a PA if it not
-      proceed to the release in open source of the software developed or commissioned by it?
+    question: What fines could be imposed to a PA if it not proceed to the release
+    in open source of the software developed or commissioned by it?
     answer: |
-      The CAD does not provide for direct fines; however, without prejudice to possible
-      profiles of managerial and disciplinary responsibility, the neglected
-      reuse release of software solutions prevents others
+      The CAD does not provide for direct fines; however, without prejudice to
+      possible profiles of managerial and disciplinary responsibility,
+      the neglected reuse release of software solutions prevents others
       administrations to proceed to the relative evaluation and acquisition in
       reuse, thus configuring a possible liability for tax damage.
   item10:
@@ -233,9 +232,9 @@ en:
       <a
       href="https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/software-acquisition/macro-phase-2-Analysis-of-reusable-PA-solutions-and-open-source-solutions.html#phase-2-2-assessment-of-reusable-solutions-for-the-pa">
       guidelines on the acquisition and reuse of software for the public sector
-      administrations</a> indicates the degree of activity carried out in the last time span
-      on each indexed repository in the catalog. An in-depth explanation of the parameters
-      used to make the calculation is present in <a
+      administrations</a> indicates the degree of activity carried out in the
+      last time span on each indexed repository in the catalog. An in-depth
+      explanation of the parameters used to make the calculation is present in <a
       href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndex.md">
       this page</a>. This index is calculated every night and, currently, the
       time window considered is 60 days.
