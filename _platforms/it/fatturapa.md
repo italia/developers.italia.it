@@ -1,6 +1,6 @@
 ---
 title: Fatturazione Elettronica
-subtitle: Tra privati e verso la Publica Amministrazione
+subtitle: Tra privati e verso la Pubblica Amministrazione
 logo: /assets/images/logo-fatturapa@2x.png
 payoff: La fatturazione elettronica verso lo Stato e tra privati
 description: >
