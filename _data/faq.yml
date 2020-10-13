@@ -236,7 +236,7 @@ en:
       administrations</a> indicates the degree of activity carried out in the last time span
       on each indexed repository in the catalog. An in-depth explanation of the parameters
       used to make the calculation is present in <a
-      href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndexItaliano.md">
+      href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndex.md">
       this page</a>. This index is calculated every night and, currently, the
       time window considered is 60 days.
       
