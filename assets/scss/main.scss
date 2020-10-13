@@ -382,10 +382,11 @@ body {
             @include bootstrap.media-breakpoint-up(md) {
                 font-size: 2rem;
             }
-            .Header-subtitle {
-                font-size: 1rem;
-                font-weight: 300;
-            }
+        }
+        .Header-subtitle {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 300;
         }
         .badge-pill {
             background-color: #004D99;
