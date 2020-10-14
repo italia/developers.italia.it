@@ -25,14 +25,14 @@ $(document).ready(function () {
   var getParams = parseSearchParameters(paramKeys);
   var pageId = $('#searchPageId').attr('data');
 
+  // when the search modal is shown the autofocus is triggered
+  $('#searchModal').on('shown.bs.modal', function () {
+    $('#searchModal .autocomplete input').trigger('focus')
+  });
+
   // listener for modal window search.
-  $('#search-form').on('click', function(e){
-    e.preventDefault();
+  $('#search-form').on('click', function(){
     var $inputText = $('#searchModal .autocomplete input');
-    // time for the input to show itself before triggering the autofocus      
-    setTimeout(() => {
-      $inputText.trigger('focus');      
-    }, 500);
 
     $inputText.on('input', executeAutoCompleteESQuery);
     $('#searchModal form a.btn-filter').on('click', function(event){
@@ -44,9 +44,7 @@ $(document).ready(function () {
 
       $('#searchModal form a.btn-filter.active').removeClass('active');
       $(event.target).addClass('active');
-
     });
-
   });
 
   // When close modal window search, clean input text.
