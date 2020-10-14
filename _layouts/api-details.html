@@ -26,4 +26,14 @@ lang: {{ site.lang }}
 
 {% assign swaggerProjects = filteredProjects | jsonify | escape %}
 
-{% include swagger.html swaggerUrl=page.openapi logo=page.contact.logo lang=active_lang l10n=l10n swaggerProjects=swaggerProjects %}
+{% unless page.comingsoon %}
+  {% include swagger.html swaggerUrl=page.openapi logo=page.contact.logo lang=active_lang l10n=l10n swaggerProjects=swaggerProjects %}
+{% else %}
+  <div class="container my-5">
+    <h1 class="d-inline-block">
+      {{ page.title }}
+      <span class="badge badge-pill badge-secondary align-top h5">{{ t.coming_soon }}</span>
+    </h1>
+    <h2 class="subtitle">{{ page.abstract }}</h2>
+  </div>
+{% endunless %}
