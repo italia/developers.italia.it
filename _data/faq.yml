@@ -195,7 +195,7 @@ en:
       been originally distributed, in order to facilitate its maximum
       interoperability and reuse with other users of the same software.
   item7:
-    Question: How can I report the non-application of articles 68 and 69 of the CAD?
+    question: How can I report the non-application of articles 68 and 69 of the CAD?
     answer: |
       According to art. 17, paragraph 1-quater is established by the AgID the
       Office of the Digital Ombudsman who has the task of collecting all reports
@@ -204,8 +204,8 @@ en:
       the digital rights of the citizens and businesses.
       Anyone can report supposed violations of CAD provisions,
       among which those ex art. 68 and 69, accessing the appropriate <a
-      href="https://difensorecivicodigitale.gov.it/index.php?a=add">area
-      dedicated</a> on AgID website.
+      href="https://difensorecivicodigitale.gov.it/index.php?a=add">dedicated
+      area</a>(in Italian) on the AgID website.
   item8:
     question: What fines could be imposed at a PA that acquires solutions,
       without making a technical and economic comparison?
