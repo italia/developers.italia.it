@@ -25,6 +25,11 @@ $(document).ready(function () {
   var getParams = parseSearchParameters(paramKeys);
   var pageId = $('#searchPageId').attr('data');
 
+  // when the search modal is shown the autofocus is triggered
+  $('#searchModal').on('shown.bs.modal', function () {
+    $('#searchModal .autocomplete input').trigger('focus')
+  });
+
   // listener for modal window search.
   $('#search-form').on('click', function(){
     var $inputText = $('#searchModal .autocomplete input');
@@ -40,12 +45,10 @@ $(document).ready(function () {
       $('#searchModal form a.btn-filter.active').removeClass('active');
       $(event.target).addClass('active');
     });
-
   });
 
   // When close modal window search, clean input text.
   $('#searchModal .modal-header button').on('click', function(event){
-    $('#searchModal .modal-body form .autocomplete input').val('');
     $('#suggestions').text('').addClass('d-none');
     $('#search-buttons').removeClass('d-none');
   });
