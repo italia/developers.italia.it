@@ -232,7 +232,7 @@ en:
       href="https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/software-acquisition/macro-phase-2-Analysis-of-reusable-PA-solutions-and-open-source-solutions.html#phase-2-2-assessment-of-reusable-solutions-for-the-pa">
       guidelines on the acquisition and reuse of software for public
       administrations</a> indicates the degree of activity carried out in the
-      last time span on each indexed repository in the catalog. An in-depth
+      last time span on each repository in the catalog. An in-depth
       explanation of the parameters used to make the calculation is present in <a
       href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndex.md">
       this page</a>. This index is calculated every night and, currently, the
