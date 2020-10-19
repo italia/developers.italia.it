@@ -15,10 +15,9 @@
 			<div class="carousel-item {% if forloop.first %}active{%endif%}">
 				<ul class="list-unstyled">
 					{% endif %}
-
 					<li class="d-flex project__leaders__item mb-3">
 						<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"><img width="50"
-								src="{{member.avatar_url}}&s=50"></a>
+								src="{{member.avatar_url}}&s=50" alt="{{member.name}}"></a>
 						<div class="ml-2 d-flex">
 							<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"
 								class="align-self-center">{{member.name | default: member.login}}</a>
