@@ -655,15 +655,15 @@ esDevelopersItaliaQuery.prototype.getSortQuery = function () {
 
   switch (value) {
     case 'az':
-      sort.push({
-        'name.raw': { 'order': 'asc' }
-      });
+      sort.push(
+        { 'publiccode.description.it.localizedName.keyword': { 'order': 'asc', unmapped_type: 'keyword' } },
+      );
       break;
 
     case 'za':
-      sort.push({
-        'name.raw': { 'order': 'desc' }
-      });
+      sort.push(
+        { 'publiccode.description.it.localizedName.keyword': { 'order': 'desc', unmapped_type: 'keyword' } },
+      );
       break;
 
     case 'vitality':
