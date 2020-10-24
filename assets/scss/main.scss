@@ -382,6 +382,9 @@ body {
             @include bootstrap.media-breakpoint-up(md) {
                 font-size: 2rem;
             }
+            @include bootstrap.media-breakpoint-down(sm) {
+                display: block;
+            }
         }
         .Header-subtitle {
             color: #fff;
@@ -429,6 +432,12 @@ body {
                     color: #fff;
                 }
             }
+        }
+    }
+    .form-group {
+        @include bootstrap.media-breakpoint-down(sm) {
+            display: block;
+            margin: auto;    
         }
     }
 }
@@ -2285,4 +2294,11 @@ body {
 // FAQ section
 .faq {
     width: 45%;
+}
+
+#header-search a {
+    @include bootstrap.media-breakpoint-down(md) {
+        display: block;
+        margin: auto;
+    }
 }
