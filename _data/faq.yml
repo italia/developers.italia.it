@@ -218,11 +218,12 @@ en:
     question: What fines could be imposed to a PA if it does not release
       in open source of the software developed or commissioned by it?
     answer: |
-      The CAD does not provide for direct fines; however, without prejudice to
-      possible profiles of managerial and disciplinary responsibility,
-      the neglected reuse release of software solutions prevents others
-      administrations to proceed to the relative evaluation and acquisition in
-      reuse, thus configuring a possible liability for tax damage.
+      The CAD does not provide direct fines; however, if a PA disregards the
+      provisions concerning the acquisition of software, management
+      and disciplinary responsibility profiles may arise, the failure to release
+      the software solutions for reuse prevents other administrations to proceed
+      with the relative evaluation and acquisition for reuse, thus configuring a
+      possible liability for damage to the treasury.
   item10:
     question: How is the displayed vitality index for each
       software calculated?
