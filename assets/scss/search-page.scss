@@ -109,10 +109,6 @@
       }
       .form-group {
         margin-top: 0;
-        @include bootstrap.media-breakpoint-down(md) {
-          display: block;
-          margin: auto;
-        }
       }
     }
   }
