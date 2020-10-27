@@ -69,7 +69,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-tagging (1.1.0)
       nuggets
-    jekyll-toc (0.14.0)
+    jekyll-toc (0.15.0)
       jekyll (>= 3.8)
       nokogiri (~> 1.10)
     jekyll-watch (2.2.1)
