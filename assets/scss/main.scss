@@ -368,6 +368,9 @@ body {
         @include bootstrap.media-breakpoint-up(md) {
             margin: 2rem 0;
         }
+        @include bootstrap.media-breakpoint-down(xs) {
+            margin-top: 1.5rem;
+        }
     }
     &-utils {
         margin-top: 0.5rem;
@@ -378,11 +381,11 @@ body {
             font-weight: 600;
             font-size: 1.6rem;
             letter-spacing: 0;
-            width: 3.5rem;
+            width: 100%;
             @include bootstrap.media-breakpoint-up(md) {
                 font-size: 2rem;
             }
-            @include bootstrap.media-breakpoint-down(sm) {
+            @include bootstrap.media-breakpoint-down(xs) {
                 display: block;
             }
         }
@@ -2297,7 +2300,7 @@ body {
 }
 
 #header-search a {
-    @include bootstrap.media-breakpoint-down(md) {
+    @include bootstrap.media-breakpoint-down(sm) {
         display: block;
         margin: auto;
     }
