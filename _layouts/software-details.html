@@ -31,7 +31,7 @@ layout: default
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
-        <img src="{{ logo }}" class="d-inline-block" />
+        <img alt="" src="{{ logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -128,17 +128,17 @@ layout: default
       <div class="drops-details">
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
-          <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
+          <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
             t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
         <div class="goto code">
-          <p><a href="{{ page.publiccode.url }}"> <img src="/assets/icons/software_icons/it-codice.svg">{{
+          <p><a href="{{ page.publiccode.url }}"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">{{
             t.software.goToCode }} &rarr;</a></p>
         </div>
         {% if page.publiccode.roadmap != null and page.publiccode.roadmap != "" %}
         <div class="goto road">
-          <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
+          <p><a href="{{ page.publiccode.roadmap }}"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">{{
             t.software.goToRoadmap }} &rarr;</a></p>
         </div>
         {% endif %}
@@ -693,7 +693,7 @@ layout: default
 
 
           <div class="img-container">
-            <a href="{{ relsw_url }}">
+            <a href="{{ relsw_url }}" title="{{ relsw_name }}">
               {% capture swClasses %} w-100 {% endcapture %}
               {% include display-logo.html
                 logo = relsw.publiccode.logo

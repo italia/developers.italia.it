@@ -23,7 +23,7 @@
               {{ site.partner_short }}
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -48,7 +48,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}"></a>
+            class="Header-hamb__icon" alt="Menu" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="{{ '/' | relative_url }}" tabindex="-1">

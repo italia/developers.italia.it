@@ -45,7 +45,7 @@ function esDevelopersItaliaManager(queryType, config, objectConfig, params) {
     'inputSelector': '',
     'totalSelector': '.results-number',
     'pagerSelector': '#paginator',
-    'sortSelector': '.sortingBy form select',
+    'sortSelector': '.sortingBy select',
     'sortMobileSelector': '#sortBy .modal-body a',
     'sortMobileModal': '#sortBy',
     'sortMobileTitle': {
@@ -333,7 +333,6 @@ esDevelopersItaliaManager.prototype.registerFiltersListeners = function () {
 
   // when change sort order, execute query.
   $(this.config['sortSelector']).on('change', function (event) {
-
     // update mobile sort selection.
     var $sortMobileActive = $(object.config['sortMobileSelector'] + '.active');
     $sortMobileActive.html(
@@ -517,7 +516,7 @@ function esDevelopersItaliaQuery(config, params) {
     'inputSelector': '',
     'totalSelector': '.results-number',
     'pagerSelector': '#paginator',
-    'sortSelector': '.sortingBy form select',
+    'sortSelector': '.sortingBy select',
     'totalText': {
       'it': 'risultati',
       'en': 'results'

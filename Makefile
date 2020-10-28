@@ -24,6 +24,7 @@ github-import: bundle-install
 
 test:
 	npm run lint
+	npm run a11y
 	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 
 local:
