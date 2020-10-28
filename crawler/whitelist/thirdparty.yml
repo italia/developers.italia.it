@@ -67,3 +67,7 @@
 - name: "PEC Parser"
   repos:
     - "https://github.com/biagioT/java-pec-parser"
+
+- name: Xades.NetCore
+  repos:
+    - "https://github.com/pgiacomo69/Xades.NetCore"
