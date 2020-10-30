@@ -7,15 +7,6 @@
   tags: []
   language: [it]
   slug: geodati
-- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/api.daf.teamdigitale.it.yaml
-  title: Data & Analytics Framework CKAN API
-  abstract: API per ricercare e visualizzare gli open data del Data & Analytics Framework in api.daf.teamdigitale.it
-  contact:
-    name: Team Digitale
-    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
-  tags: []
-  language: [it]
-  slug: daf-ckan
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/siopeplus.yaml
   title: SIOPE+
   abstract: Regole tecniche per il colloquio telematico di Amministrazioni pubbliche e Tesorieri con SIOPE+.
