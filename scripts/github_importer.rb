@@ -22,10 +22,10 @@ TECH_LIST = %w[
 ].sort.freeze
 
 # Import issues with at least one of these labels
-ONLY_WITH_LABEL = ['help wanted', 'Hacktoberfest'].freeze
+ONLY_WITH_LABEL = ['help wanted'].freeze
 
 # Show these labels in the UI, if present.
-ISSUE_TYPES = ['bug', 'enhancement', 'new project', 'Hacktoberfest'].freeze
+ISSUE_TYPES = ['bug', 'enhancement', 'new project'].freeze
 
 # Ignore these repos using the full_name (ie. 'organization/repo')
 BLACKLISTED_REPOS = [].freeze
