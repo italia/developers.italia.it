@@ -8,6 +8,8 @@ subtitle:
 see_also:
   - label: Pubblicazione di software
     url: /it/riuso/pubblicazione
+  - label: Dichiarazione di presa a riuso di software
+    url: /it/riuso/dichiarazione
 ---
 
 Quando si acquisisce software le Pubbliche Amministrazioni devono effettuare una valutazione comparativa secondo il processo descritto dalle [Linee Guida]({{ site.url_lineeguidariuso }}).
