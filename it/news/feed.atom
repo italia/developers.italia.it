@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-11-11T06:05:19+00:00</updated>
+  <updated>2020-11-11T13:00:58+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,66 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2020/11/11/terminato-hacktoberfest-2020</id>
+    <title>Hacktoberfest 2020, i traguardi raggiunti</title>
+    <updated>2020-11-11T09:00:00+00:00</updated>
+
+    <summary>Anche quest’anno Developers Italia ha partecipato all’evento internazionale dedicato ai progetti open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2020/11/11/terminato-hacktoberfest-2020">&lt;p&gt;Developers Italia non poteva mancare all’edizione 2020 dell’Hacktoberfest,
+iniziativa internazionale che ha lo scopo di favorire lo sviluppo di progetti
+software open source attraverso una serie di sfide. Durante il mese di ottobre,
+sviluppatori di tutto il mondo si sono confrontati su più di cento “problemi”
+aperti su vari repository contenuti all’interno dell’organizzazione
+&lt;a href=&quot;https://github.com/italia&quot;&gt;github.com/italia&lt;/a&gt;: dalla semplice traduzione di un
+testo, fino alla risoluzione di bug o alla definizione di nuove funzionalità chiave.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A tutti coloro che hanno partecipato e ci hanno aiutato: un ringraziamento
+speciale!&lt;/strong&gt; Ogni singolo contributo, dal messaggio in una Issue alla Pull
+Request contenente codice funzionante, è stato fondamentale per ottenere un
+ottimo risultato.&lt;/p&gt;
+
+&lt;p&gt;In questi giorni, infatti, &lt;strong&gt;27 veri e propri contributi, ovvero proposte di
+modifiche o integrazioni di software, sono stati consolidati all’interno dei
+nostri repository&lt;/strong&gt;. Inoltre, i responsabili di progetto stanno ancora
+revisionando 5 nuovi contributi che saranno consolidati nelle prossime
+settimane.&lt;/p&gt;
+
+&lt;p&gt;Questo evento è terminato ma &lt;strong&gt;le possibilità di interazione con i nostri
+progetti non finiscono qui&lt;/strong&gt;. Tutti i &lt;a href=&quot;https://developers.italia.it/it/piattaforme&quot;&gt;software, le librerie e i kit di
+sviluppo&lt;/a&gt; che permettono di
+interagire con le Piattaforme Abilitanti del Paese &lt;strong&gt;sono al 100% open source&lt;/strong&gt;
+ed è possibile migliorare insieme questi software con un approccio aperto
+e collaborativo.&lt;/p&gt;
+
+&lt;p&gt;Non solo. Nel &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo del software open
+source&lt;/a&gt;, è possibile trovare
+&lt;strong&gt;centinaia di soluzioni&lt;/strong&gt; open source di titolarità di Pubbliche
+Amministrazioni italiane o di singoli sviluppatori che vengono utilizzati
+giornalmente da molti Enti sul territorio: anche in questo caso è possibile
+dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;Vi aspettiamo, per maggiori approfondimenti sul nostro
+&lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt; e sul &lt;a href=&quot;https://forum.italia.it&quot;&gt;Forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2020-11-11T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="hacktoberfest" />
+    
+    <category term="community" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2020/10/01/developers-italia-hacktoberfest-2020</id>
     <title>Inizia l’Hacktoberfest 2020</title>
