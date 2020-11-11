@@ -23,10 +23,22 @@ pair-blocks:
           url: '/it/riuso/pubblicazione'
 ---
 
-Gli articoli [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art68.html) e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html) del Codice dell'Amministrazione Digitale disciplinano le modalità con cui una Pubblica Amministrazione può acquisire software e sanciscono l’obbligo di rilasciare con licenza aperta il software da essa sviluppato o commissionato.
+Gli articoli
+[68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html)
+e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art69.html)
+del Codice dell'Amministrazione Digitale disciplinano le modalità con cui una
+Pubblica Amministrazione può acquisire software e sanciscono l’obbligo di
+rilasciare con licenza aperta il software da essa sviluppato o commissionato.
 
-Le [linee guida per l'Acquisizione e il riuso di software per la Pubblica Amministrazione]({{ site.url_lineeguidariuso }}) emesse dall'*Agenzia per l'Italia Digitale* ([pubblicate](https://www.gazzettaufficiale.it/eli/id/2019/05/23/19A03233/sg) in Gazzetta Ufficiale) descrivono in dettaglio questo processo.
+Le [linee guida per l'Acquisizione e il riuso di software per la Pubblica
+Amministrazione]({{ site.url_lineeguidariuso }}) emesse dall'*Agenzia per
+l'Italia Digitale*
+([pubblicate](https://www.gazzettaufficiale.it/eli/id/2019/05/23/19A03233/sg)
+in Gazzetta Ufficiale) descrivono in dettaglio questo processo.
 
-Qui trovi le indicazioni operative per utilizzare software di altre amministrazioni e per pubblicare il software della tua amministrazione.
+Di seguito in questa pagina trovi le indicazioni operative per utilizzare
+software di altre amministrazioni e per pubblicare il software della tua
+amministrazione.
 
-Per chiarire ulteriori dubbi è anche possibile consultare la sezione [Domande Frequenti](/it/faq).
+Per chiarire ulteriori dubbi è anche possibile consultare la sezione [Domande
+Frequenti](/it/faq).
