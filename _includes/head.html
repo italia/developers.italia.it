@@ -38,6 +38,8 @@
   <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
   <meta name="theme-color" content="{{ site.theme_color }}">
+  
+  {% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
 </head>
 
 <body class="layout-{{ page.layout }}">
