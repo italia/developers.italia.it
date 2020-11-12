@@ -103,7 +103,6 @@ layout: default
       </div>
     </div>
     <div class="offset-md-1 col-md-4 ">
-      <p class="h4 text-uppercase">{{ t.software.technical_detail }}</p>
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
@@ -124,6 +123,9 @@ layout: default
               label=page.publiccode.developmentStatus %} </p>
           </div>
         </div>
+      </div>
+
+      <div class="drops-details">
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
           <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
@@ -138,6 +140,17 @@ layout: default
         <div class="goto road">
           <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
             t.software.goToRoadmap }} &rarr;</a></p>
+        </div>
+        {% endif %}
+
+        {% if active_lang == 'it' %}
+        <div class="goto">
+          <p>
+            <a href="/it/riuso/dichiarazione" onclick="localStorage.setItem('reuse-repo', '{{ page.publiccode.url }}'); return true">
+              <img alt="" src="/assets/icons/software_icons/it-check.svg">{{
+                t.software.declare_reuse }} &rarr;
+            </a>
+          </p>
         </div>
         {% endif %}
       </div>
