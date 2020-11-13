@@ -123,8 +123,8 @@ it:
     question: Come è possibile dichiarare il riuso di un software?
     answer:
       Per ogni soluzione presa a riuso è possibile effettuare una semplice
-      dichiarazione come previsto dal [Piano Triennale per l'Informatica nella Pubblica Amministrazione](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html).
+      dichiarazione come previsto dal <a href="https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html">Piano Triennale per l'Informatica nella Pubblica Amministrazione</a>.
       Per effettuare questa operazione è possibile seguire le indicazioni
-      riportate nella [pagina dedicata](https://developers.italia.it/it/riuso/dichiarazione).
+      riportate nella <a href="https://developers.italia.it/it/riuso/dichiarazione">pagina dedicata</a>.
 
 en:
