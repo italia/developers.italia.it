@@ -6,7 +6,7 @@ date:   2017-10-23 17:00:00 +0100
 tags: hackathon eventi sviluppatori
 categories: news
 author: Giovanni Bajo
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 redirect_from:
    - 

@@ -6,7 +6,7 @@ date: 2020-11-11 10:00:00 +0100
 tags: developers hacktoberfest community opensource
 categories: news
 author: Leonardo Favario
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 ref:
   en:

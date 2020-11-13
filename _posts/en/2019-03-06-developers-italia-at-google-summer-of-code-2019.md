@@ -6,7 +6,7 @@ date:   2019-03-07 12:00:00 +0100
 tags: developers daf api designers gsoc
 categories: news
 author: Leonardo Favario
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: en
 ref:
   it: /it/news/2019/03/07/developers-italia-al-google-summer-of-code-2019

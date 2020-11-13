@@ -6,7 +6,7 @@ date:   2019-10-11 12:00:00 +0100
 tags: developers call
 categories: news
 author: Andrea Biancini
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 ref:
   en: 
