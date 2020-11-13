@@ -8,7 +8,7 @@ subtitle:
 see_also:
   - label: Acquisizione di software
     url: /it/riuso/acquisizione
-  - label: Dichiarazione di presa a riuso di software
+  - label: Dichiarazione di riuso di software
     url: /it/riuso/dichiarazione
 ---
 
