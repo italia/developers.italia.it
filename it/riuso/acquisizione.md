@@ -8,7 +8,7 @@ subtitle:
 see_also:
   - label: Pubblicazione di software
     url: /it/riuso/pubblicazione
-  - label: Dichiarazione di presa a riuso di software
+  - label: Dichiarazione di riuso di software
     url: /it/riuso/dichiarazione
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Dichiarazione di presa a riuso di software
+title: Dichiarazione di riuso di software
 lang: it
 ref:
   en:
@@ -31,7 +31,7 @@ l'interazione.**
   variano in base all’esistenza o meno del software all’interno del catalogo.
 
   <h2>
-    Se il software è presente nel catalogo di Developers Italia
+    Se il software è presente nel catalogo
   </h2>
 </div>
 
@@ -115,7 +115,7 @@ l'interazione.**
 
 <div class="show-if-not-repo">
   <h2>
-    Se il software non è presente nel catalogo di Developers Italia
+    Se il software non è presente nel catalogo
   </h2>
 
   <div class="callout note mt-5">
