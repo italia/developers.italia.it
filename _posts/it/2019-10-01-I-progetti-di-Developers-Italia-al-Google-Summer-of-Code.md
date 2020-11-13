@@ -6,7 +6,7 @@ date:   2019-10-01 12:00:00 +0100
 tags: developers gsoc
 categories: news
 author: Francesco De Augustinis
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 ref:
   en: 

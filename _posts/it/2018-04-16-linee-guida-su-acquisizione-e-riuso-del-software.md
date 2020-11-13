@@ -6,7 +6,7 @@ date:   2018-04-16 10:00:00 +0100
 tags: developers software opensource
 categories: news
 author: Francesco De Augustinis
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 redirect_from:
    -
