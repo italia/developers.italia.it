@@ -30,7 +30,7 @@ ruphy:
       link: https://www.linkedin.com/in/riccardoiaconelli/
 alranel:
   name: Alessandro Ranellucci
-  desc: 
+  desc:
   pic: /assets/images/alranel.jpg
   role: Team Digitale
   status: admin
@@ -47,7 +47,7 @@ alranel:
 umbros:
   name: Umberto Rosini
   role: AGID
-  desc: 
+  desc:
   pic: /assets/images/umbros.jpg
   status: ex
   contacts:
@@ -63,7 +63,7 @@ umbros:
 carlo:
   name: Carlo Contavalli
   role: Team Digitale
-  desc: 
+  desc:
   pic: /assets/images/carlo.jpeg
   status: contributor
   contacts:
@@ -75,8 +75,8 @@ carlo:
       link: https://medium.com/@ccontavalli
 antony:
   name: Matteo Antony Mistretta
-  role: 
-  desc: 
+  role:
+  desc:
   pic: /assets/images/antony.jpg
   status: contributor
   contacts:
@@ -138,7 +138,7 @@ biancio:
   name: Andrea Biancini
   pic: /assets/images/biancio.png
   role: Team Digitale
-  status: contributor 
+  status: contributor
   contacts:
     github:
       name: github
@@ -149,3 +149,17 @@ biancio:
     linkedin:
       name: linkedin
       link: https://linkedin.com/in/bianciniandrea/
+
+bfabio:
+  name: Fabio Bonelli
+  desc:
+  pic: /assets/images/bfabio.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/bfabio
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/bfabio
