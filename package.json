@@ -25,6 +25,7 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "lint": "npx eslint _site/ --ext .json",
+        "a11y": "find _site -name '*.html' -exec grep -L 'http-equiv=\"refresh\"' {} \\; | xargs npx pa11y-ci",
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
     },
     "devDependencies": {
@@ -45,6 +46,7 @@
         "file-loader": "^6.0.0",
         "gh-pages": "^3.1.0",
         "mini-css-extract-plugin": "^0.11.0",
+        "pa11y-ci": "^2.4.0",
         "postcss": "^7.0.32",
         "postcss-import": "^12.0.1",
         "postcss-loader": "^3.0.0",

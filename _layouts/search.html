@@ -147,10 +147,10 @@ layout: default
         <div class="abstract-sorting row row-eq-height d-none d-md-flex">
           <div class="results-number col-md-6 d-flex"></div>
           <div class="sortingBy col-md-6">
-            <form class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end">
               <p>{{ t.software.sort_by }}</p>
               <div class="form-group">
-                <select class="form-control">
+                <select aria-label="sort-by" class="form-control">
                   <option value="relevance" class="active">{{ t.software.sort_by_relevance }}</option>
                   <option value="releasedate">{{ t.software.sort_by_release_date }}</option>
                   <option value="vitality">{{ t.software.sort_by_vitality }}</option>
@@ -158,7 +158,7 @@ layout: default
                   <!-- <option value="za">Z/A</option> -->
                 </select>
               </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="intro-empty"></div>

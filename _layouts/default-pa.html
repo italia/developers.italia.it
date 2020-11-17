@@ -25,30 +25,40 @@
   <div class="container">
     <div class="row">
       <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
+        {% if page.website %}
         <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
+        {% endif %}
           {% if page.emblem %}
           <img src="{{ page.emblem }}" alt="">
           {% endif %}
+        {% if page.website %}
         </a>
+        {% endif %}
       </div>
 
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
+          {% if page.website %}
           <a class="text-900" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
-            <!-- Nobody is ever going to provide a styledName... 
-            We could make this in the Jekyll template with a few heuristics, 
+          {% endif %}
+            <!-- Nobody is ever going to provide a styledName...
+            We could make this in the Jekyll template with a few heuristics,
             like stripping "Comune di", "Regione di", "Ministero del " etc. -->
             {% if page.styledName %}
             {{ page.styledName }}
             {% else %}
             {{ page.entityName }}
             {% endif %}
+          {% if page.website %}
           </a>
           <a class="text-primary" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
+          {% endif %}
             <span class="d-none d-lg-block Header-subtitle">
               {{ page.websiteText }}
             </span>
+          {% if page.website %}
           </a>
+          {% endif %}
         </h1>
       </div>
       <div class="Header-title col-12 col-md-3">

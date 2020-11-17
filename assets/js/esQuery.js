@@ -35,14 +35,14 @@ $(document).ready(function () {
     var $inputText = $('#searchModal .autocomplete input');
 
     $inputText.on('input', executeAutoCompleteESQuery);
-    $('#searchModal form a.btn-filter').on('click', function(event){
+    $('#searchModal a.btn-filter').on('click', function(event){
       event.preventDefault();
       $inputText.val(''); $('#suggestions').text('');
       if($(event.target).hasClass('active')) {
         return;
       }
 
-      $('#searchModal form a.btn-filter.active').removeClass('active');
+      $('#searchModal a.btn-filter.active').removeClass('active');
       $(event.target).addClass('active');
     });
   });
@@ -53,16 +53,14 @@ $(document).ready(function () {
     $('#search-buttons').removeClass('d-none');
   });
 
-  // listener on search form submit.
-  $('#searchModal form').on('submit', function(event){
-    // prevent form submit.
-    event.preventDefault();
-
-    // redirect to search page.
-    var path = '/' + language + '/search';
-    var queryType = "type=" + $('#searchModal form a.btn-filter.active').attr('data');
-    var queryString = "keyword=" + $('#searchModal .autocomplete input').val().trim().split(' ').join('+');
-    window.location = path + '?' + queryString + '&' + queryType;
+  $('#searchModal input').on('keyup', function(event){
+    if (event.key === 'Enter' || event.keyCode === 13) {
+      // redirect to search page.
+      var path = '/' + language + '/search';
+      var queryType = "type=" + $('#searchModal a.btn-filter.active').attr('data');
+      var queryString = "keyword=" + $('#searchModal .autocomplete input').val().trim().split(' ').join('+');
+      window.location = path + '?' + queryString + '&' + queryType;
+    }
   });
 
   if(typeof pageId != 'undefined') {
@@ -114,7 +112,7 @@ $(document).ready(function () {
   }
 
   function executeAutoCompleteESQuery(event) {
-    var queryType = $('#searchModal form a.btn-filter.active').attr('data');
+    var queryType = $('#searchModal a.btn-filter.active').attr('data');
     var esAutocompleteQuery;
     if (event.target.value.length > 0) {
       $('#suggestions').removeClass('d-none');

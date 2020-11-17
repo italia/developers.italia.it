@@ -71,42 +71,42 @@ var autocompleteQueryconfig = {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   },
   'platforms': {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   },
   'software_open': {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   },
   'reuse_software': {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   },
   'api': {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   },
   'administrations': {
     'elasticsearch_connection': {
       'host': elasticHost
     },
-    'inputSelector': 'form .autocomplete input',
+    'inputSelector': '.autocomplete input',
     'size': 9
   }
 };
