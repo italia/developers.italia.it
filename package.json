@@ -25,7 +25,7 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "lint": "npx eslint _site/ --ext .json",
-        "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
+        "deploy": "npx gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
     },
     "devDependencies": {
         "@babel/core": "^7.11.1",
