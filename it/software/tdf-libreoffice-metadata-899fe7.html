@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/tdf/libreoffice-metadata/master/icons/logo.svg?sanitize=true" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/tdf/libreoffice-metadata/master/icons/logo.svg?sanitize=true" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           LibreOffice
@@ -766,15 +764,15 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://help.libreoffice.org"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://help.libreoffice.org"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://git.libreoffice.org/core"> <img src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+          <p><a href="https://git.libreoffice.org/core"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
         <div class="goto road">
-          <p><a href="https://wiki.documentfoundation.org/ReleasePlan"><img src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+          <p><a href="https://wiki.documentfoundation.org/ReleasePlan"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
         </div>
         
 
@@ -1753,7 +1751,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/uni_ct-unict-easy-easy-uni_co_">
+            <a href="/it/software/uni_ct-unict-easy-easy-uni_co_" title="UNI.co. Easy">
               
               
 
@@ -1803,7 +1801,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/r_basili-regionebasilicata-sistemainformativocontabile">
+            <a href="/it/software/r_basili-regionebasilicata-sistemainformativocontabile" title="Sistema Informativo Contabile">
               
               
 
@@ -1853,7 +1851,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/agid-agid-pat">
+            <a href="/it/software/agid-agid-pat" title="PAT - Portale Amministrazione Trasparente">
               
               
 
@@ -1903,7 +1901,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/r_basili-regionebasilicata-sistemainformaticoconsolidamento">
+            <a href="/it/software/r_basili-regionebasilicata-sistemainformaticoconsolidamento" title="Sistema Informatico di Consolidamento">
               
               
 

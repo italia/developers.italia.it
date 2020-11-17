@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/opencontent.png" class="d-inline-block" />
+        <img alt="" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/opencontent.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           Comunweb
@@ -794,11 +792,11 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://comunweb-il-sito-comunale.readthedocs.io"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+          <p><a href="https://comunweb-il-sito-comunale.readthedocs.io"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://gitlab.com/comune-di-ala/comunweb"> <img src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://gitlab.com/comune-di-ala/comunweb"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
 
@@ -817,38 +815,38 @@
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb01.png" data-index="476"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb01.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb01.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb01.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb01.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb02.png" data-index="477"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb02.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb02.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb02.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb02.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb03.png" data-index="478"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb03.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb03.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb03.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb03.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb04.png" data-index="479"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb04.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb04.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb04.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb04.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb05.png" data-index="480"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb05.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb05.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb05.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb05.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb06.png" data-index="481"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb06.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb06.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb06.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb06.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -856,109 +854,109 @@
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb07.png" data-index="482"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb07.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb07.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb07.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb07.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb08.png" data-index="483"
         data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb08.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb08.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb08.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb08.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb09.png" data-index="484"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb09.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb09.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb09.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb09.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb10.png" data-index="485"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb10.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb10.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb10.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb10.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb11.png" data-index="486"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb11.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb11.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb11.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb11.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb12.png" data-index="487"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb12.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb12.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb12.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb12.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb13.png" data-index="488"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb13.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb13.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb13.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb13.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb14.png" data-index="489"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb14.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb14.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb14.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb14.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb15.png" data-index="490"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb15.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb15.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb15.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb15.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb16.png" data-index="491"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb16.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb16.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb16.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb16.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb17.png" data-index="492"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb17.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb17.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb17.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb17.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb18.png" data-index="493"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb18.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb18.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb18.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb18.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb19.png" data-index="494"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb19.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb19.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb19.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb19.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb20.png" data-index="495"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb20.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb20.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb20.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb20.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb21.png" data-index="496"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb21.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb21.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb21.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb21.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb22.png" data-index="497"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb22.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb22.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb22.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb22.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb23.png" data-index="498"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb23.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb23.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb23.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb23.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb24.png" data-index="499"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb24.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb24.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb24.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb24.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb25.png" data-index="500"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb25.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb25.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb25.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb25.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb26.png" data-index="501"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb26.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb26.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb26.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb26.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb27.png" data-index="502"
       data-size="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb27.pngxhttps://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb27.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb27.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comune-di-ala/comunweb/raw/master/images/comunweb27.png" alt="Screenshot" />
     </a>
     
     
@@ -1417,7 +1415,7 @@ Italian<br />
 
 
           <div class="img-container">
-            <a href="/en/software/c_l378-comunetrento-catalogo-dei-servizi">
+            <a href="/en/software/c_l378-comunetrento-catalogo-dei-servizi" title="Catalogo dei Servizi">
               
               
 
@@ -1467,7 +1465,7 @@ Italian<br />
 
 
           <div class="img-container">
-            <a href="/en/software/c_b354-comunedicagliari-componentiportale">
+            <a href="/en/software/c_b354-comunedicagliari-componentiportale" title="Comune di Cagliari">
               
               
 
@@ -1517,7 +1515,7 @@ Italian<br />
 
 
           <div class="img-container">
-            <a href="/en/software/opencontent-stanzadelcittadino-cf016d">
+            <a href="/en/software/opencontent-stanzadelcittadino-cf016d" title="La Stanza del Cittadino">
               
               
 
@@ -1567,7 +1565,7 @@ Italian<br />
 
 
           <div class="img-container">
-            <a href="/en/software/c_l378-comunetrento-sprint-ife">
+            <a href="/en/software/c_l378-comunetrento-sprint-ife" title="Interactive Front-End (IFE)">
               
               
 

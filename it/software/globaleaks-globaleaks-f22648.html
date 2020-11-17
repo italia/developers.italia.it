@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/brand/assets/globaleaks-icon-color.svg?sanitize=true" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/brand/assets/globaleaks-icon-color.svg?sanitize=true" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           GlobaLeaks
@@ -792,11 +790,11 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://docs.globaleaks.org/"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://docs.globaleaks.org/"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/globaleaks/GlobaLeaks"> <img src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+          <p><a href="https://github.com/globaleaks/GlobaLeaks"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
 
@@ -823,19 +821,19 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.png" data-index="250"
       data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/submission.png" data-index="251"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/submission.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/submission.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/submission.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/submission.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/receipt.png" data-index="252"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/receipt.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/receipt.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/receipt.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/receipt.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -843,31 +841,31 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/access.png" data-index="253"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/access.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/access.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/access.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/access.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/report.png" data-index="254"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/report.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/report.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/report.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/report.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/user/login.png" data-index="255"
       data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/user/login.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/user/login.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/user/login.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/user/login.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/reports.png" data-index="256"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/reports.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/reports.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/reports.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/reports.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/report.png" data-index="257"
         data-size="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/report.pngxhttps://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/report.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/report.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/recipient/report.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -1532,7 +1530,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/c_l378-comunetrento-sprint-aac">
+            <a href="/it/software/c_l378-comunetrento-sprint-aac" title="Authenticazione e Autorizzazione">
               
               
 
@@ -1582,7 +1580,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/agid-agid-pat">
+            <a href="/it/software/agid-agid-pat" title="PAT - Portale Amministrazione Trasparente">
               
               
 
@@ -1632,7 +1630,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/istsc_blps020006-italia-design-scuole-wordpress-theme">
+            <a href="/it/software/istsc_blps020006-italia-design-scuole-wordpress-theme" title="Design Scuole Italia">
               
               
 
@@ -1682,7 +1680,7 @@ Cinese (Taiwan)<br />
 
 
           <div class="img-container">
-            <a href="/it/software/link-it-govway-7218c1">
+            <a href="/it/software/link-it-govway-7218c1" title="GovWay">
               
               
 

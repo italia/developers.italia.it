@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -670,26 +668,25 @@
   <div class="container">
     <div class="row">
       <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
-        <a href="" target="_blank" rel="noopener noreferrer" tabindex="-1">
+        
           
-        </a>
+        
       </div>
 
       <div class="Header-title col-md-7 col-9 mr-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
-          <a class="text-900" href="" target="_blank" rel="noopener noreferrer">
-            <!-- Nobody is ever going to provide a styledName... 
-            We could make this in the Jekyll template with a few heuristics, 
+          
+            <!-- Nobody is ever going to provide a styledName...
+            We could make this in the Jekyll template with a few heuristics,
             like stripping "Comune di", "Regione di", "Ministero del " etc. -->
             
             Comune di Cagliari
             
-          </a>
-          <a class="text-primary" href="" target="_blank" rel="noopener noreferrer">
+          
             <span class="d-none d-lg-block Header-subtitle">
               
             </span>
-          </a>
+          
         </h1>
       </div>
       <div class="Header-title col-12 col-md-3">

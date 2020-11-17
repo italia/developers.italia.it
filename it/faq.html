@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -118,7 +118,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -324,7 +324,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -403,24 +403,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -690,7 +688,7 @@
       
       <div class="simplelayout-main-content my-2 my-md-5">
 <div id="collapseDiv1" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
       1. Gli artt. 68 e 69 del CAD si applicano alle scuole pubbliche per l'acquisizione ed il riuso di un programma informatico sia esso software per la didattica che software per scopi amministrativi?
     </button>
@@ -712,7 +710,7 @@ titolarità della pubblica amministrazione.
 </div>
 
 <div id="collapseDiv2" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
       2. In quali casi la PA è considerata titolare di un software?
     </button>
@@ -735,7 +733,7 @@ tale titolarità in capo all’appaltatore o a terzi;</li>
 </div>
 
 <div id="collapseDiv3" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
       3. Gli artt. 68 e 69 del CAD si applicano prima di ogni procurement di software?
     </button>
@@ -753,7 +751,7 @@ link</a>.
 </div>
 
 <div id="collapseDiv4" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
       4. Il software non open source di titolarità di una PA può essere messo a Riuso?
     </button>
@@ -775,7 +773,7 @@ a riuso.
 </div>
 
 <div id="collapseDiv5" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
       5. Quali indicazioni sono previste ai fini dell’adempimento dell’art. 69 relativamente alla scelta della licenza?
     </button>
@@ -794,7 +792,7 @@ risorsa</a>.
 </div>
 
 <div id="collapseDiv6" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
       6. E’ possibile nell’ambito del processo di Riuso di una soluzione applicare, in virtù del principio di compatibilità delle licenze, all’opera derivata una licenza diversa da quella apposta all’opera originaria?
     </button>
@@ -816,7 +814,7 @@ interoperabilità e riuso con altri utilizzatori del medesimo software.
 </div>
 
 <div id="collapseDiv7" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
       7. A quali organi/autorità competenti è possibile segnalare la mancata applicazione degli artt. 68 e 69 del CAD da parte di una PA?
     </button>
@@ -838,7 +836,7 @@ dedicata</a> presente sul sito dell’AgID
 </div>
 
 <div id="collapseDiv8" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
       8. Quali sanzioni potrebbero essere comminate ad una PA qualora acquisisca soluzioni, programmi informatici senza effettuare la valutazione comparativa di tipo tecnico ed economico?
     </button>
@@ -856,7 +854,7 @@ erariale.
 </div>
 
 <div id="collapseDiv9" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
       9. Quali sanzioni potrebbero essere comminate ad una PA qualora non proceda al rilascio in open source del software da essa sviluppato o commissionato?
     </button>
@@ -874,7 +872,7 @@ riuso, configurando così una possibile responsabilità per danno erariale.
 </div>
 
 <div id="collapseDiv10" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
       10. Come viene calcolato l'indice di vitalità visualizzato per ogni software?
     </button>
@@ -894,7 +892,7 @@ finestra temporale considerata è di 60 giorni.
 </div>
 
 <div id="collapseDiv11" class="collapse-div" role="tablist">
-  <div class="collapse-header" id="heading">
+  <div class="collapse-header">
     <button data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
       11. Come è possibile dichiarare il riuso di un software?
     </button>
@@ -922,7 +920,7 @@ finestra temporale considerata è di 60 giorni.
   <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
     <div class="d-md-flex align-items-center">
       <div class="position-relative">
-        <img src="/assets/images/join-window.svg" class="banner-joinus-window">
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
         <h2>Sei un programmatore, uno smanettone del codice o un nerd in erba?</h2>
         <h1>Unisciti alla nostra community!</h1>
       </div>

@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -795,15 +793,15 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://github.com/teamdigitale/daf-nteract/blob/daf-develop/pdnd-tutorials/pdnd-nteract-tutorial.md"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+          <p><a href="https://github.com/teamdigitale/daf-nteract/blob/daf-develop/pdnd-tutorials/pdnd-nteract-tutorial.md"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/teamdigitale/daf-nteract"> <img src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://github.com/teamdigitale/daf-nteract"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
         <div class="goto road">
-          <p><a href="https://github.com/teamdigitale/daf-nteract/projects/1"><img src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+          <p><a href="https://github.com/teamdigitale/daf-nteract/projects/1"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
         </div>
         
 
@@ -822,19 +820,19 @@
 
     <a class="tiled-item" href="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/login.png"  data-index="340"
        data-size="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/login.pngxhttps://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/login.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/login.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/login.png" alt="Screenshot" />
     </a>
     
 
     <a class="tiled-item" href="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/search.png"  data-index="341"
        data-size="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/search.pngxhttps://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/search.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/search.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/search.png" alt="Screenshot" />
     </a>
     
 
     <a class="tiled-item" href="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/results.png"  data-index="342"
        data-size="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/results.pngxhttps://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/results.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/results.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/teamdigitale/daf-nteract/dev/pdnd-tutorials/img/results.png" alt="Screenshot" />
     </a>
     
     
@@ -1167,7 +1165,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/pcm-teamdigitale-pdnd-open-notebooks">
+            <a href="/en/software/pcm-teamdigitale-pdnd-open-notebooks" title="PDND Open Notebooks">
               
               
 
@@ -1217,7 +1215,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/ghtmtt-dataplotly-529ce6">
+            <a href="/en/software/ghtmtt-dataplotly-529ce6" title="DataPlotly">
               
               
 
@@ -1267,7 +1265,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/knowagelabs-knowage-server-94e418">
+            <a href="/en/software/knowagelabs-knowage-server-94e418" title="Knowage Server">
               
               
 
@@ -1317,7 +1315,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/arlpa_to-arpapiemonte-openoise-meter">
+            <a href="/en/software/arlpa_to-arpapiemonte-openoise-meter" title="OpeNoise Meter - Android and iOS app">
               
               
 

@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/immuni-app/immuni/master/logo.png" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/immuni-app/immuni/master/logo.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           immuni
@@ -774,11 +772,11 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://github.com/immuni-app/immuni-documentation"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+          <p><a href="https://github.com/immuni-app/immuni-documentation"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/immuni-app/immuni"> <img src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://github.com/immuni-app/immuni"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
 
@@ -797,38 +795,38 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Welcome.png" data-index="543"
       data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Welcome.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Welcome.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Welcome.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Welcome.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/HowItWorks.png" data-index="544"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/HowItWorks.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/HowItWorks.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/HowItWorks.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/HowItWorks.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ProvinceSelection.png" data-index="545"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ProvinceSelection.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ProvinceSelection.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ProvinceSelection.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ProvinceSelection.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/AppStatus.png" data-index="546"
       data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/AppStatus.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/AppStatus.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/AppStatus.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/AppStatus.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/DataUpload.png" data-index="547"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/DataUpload.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/DataUpload.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/DataUpload.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/DataUpload.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ExposureNotificationAndSuggestions.png" data-index="548"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ExposureNotificationAndSuggestions.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ExposureNotificationAndSuggestions.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ExposureNotificationAndSuggestions.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/ExposureNotificationAndSuggestions.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -836,19 +834,19 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Permissions.png" data-index="549"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Permissions.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Permissions.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Permissions.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Permissions.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/RequiredUpdate.png" data-index="550"
         data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/RequiredUpdate.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/RequiredUpdate.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/RequiredUpdate.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/RequiredUpdate.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Settings.png" data-index="551"
       data-size="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Settings.pngxhttps://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Settings.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Settings.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/immuni-app/immuni/master/screenshots/Settings.png" alt="Screenshot" />
     </a>
     
     
@@ -1240,7 +1238,7 @@ English<br />
 
 
           <div class="img-container">
-            <a href="/en/software/arlpa_to-arpapiemonte-openoise-map">
+            <a href="/en/software/arlpa_to-arpapiemonte-openoise-map" title="Openoise Map - QGIS plugin">
               
               
 
@@ -1290,7 +1288,7 @@ English<br />
 
 
           <div class="img-container">
-            <a href="/en/software/agid-agid-wai-portal">
+            <a href="/en/software/agid-agid-wai-portal" title="Web Analytics Italia - Portale">
               
               
 
@@ -1340,7 +1338,7 @@ English<br />
 
 
           <div class="img-container">
-            <a href="/en/software/p_ve-cittametropolitanavenezia-desk-kitriuso-sigeo">
+            <a href="/en/software/p_ve-cittametropolitanavenezia-desk-kitriuso-sigeo" title="SIGEO">
               
               
 
@@ -1390,7 +1388,7 @@ English<br />
 
 
           <div class="img-container">
-            <a href="/en/software/ingv-ingv-hyp2000-ws">
+            <a href="/en/software/ingv-ingv-hyp2000-ws" title="HYP2000-WS">
               
               
 

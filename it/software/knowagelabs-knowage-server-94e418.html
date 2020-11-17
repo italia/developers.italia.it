@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/logo/logo.svg?sanitize=true" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/logo/logo.svg?sanitize=true" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           Knowage Server
@@ -804,15 +802,15 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://knowage-suite.readthedocs.io/"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://knowage-suite.readthedocs.io/"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/KnowageLabs/Knowage-Server.git"> <img src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+          <p><a href="https://github.com/KnowageLabs/Knowage-Server.git"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
         <div class="goto road">
-          <p><a href="https://github.com/KnowageLabs/Knowage-Server/blob/master/ROADMAP.md"><img src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+          <p><a href="https://github.com/KnowageLabs/Knowage-Server/blob/master/ROADMAP.md"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
         </div>
         
 
@@ -839,19 +837,19 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png" data-index="261"
       data-size="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.pngxhttps://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit2.jpg" data-index="262"
         data-size="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit2.jpgxhttps://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit2.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit2.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit2.jpg" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit.jpg" data-index="263"
         data-size="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit.jpgxhttps://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-cockpit.jpg" alt="Screenshot" />
       </a>
       
     </div>
@@ -859,12 +857,12 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-map.jpg" data-index="264"
         data-size="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-map.jpgxhttps://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-map.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-map.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-map.jpg" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-responsive2.jpg" data-index="265"
         data-size="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-responsive2.jpgxhttps://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-responsive2.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-responsive2.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-responsive2.jpg" alt="Screenshot" />
       </a>
       
     </div>
@@ -1334,7 +1332,7 @@ Spagnolo<br />
 
 
           <div class="img-container">
-            <a href="/it/software/r_piemon-yucca-sdp-yucca-sdp">
+            <a href="/it/software/r_piemon-yucca-sdp-yucca-sdp" title="Yucca Smart Data Platform">
               
               
 
@@ -1384,7 +1382,7 @@ Spagnolo<br />
 
 
           <div class="img-container">
-            <a href="/it/software/fastreports-fastreport-3f5842">
+            <a href="/it/software/fastreports-fastreport-3f5842" title="FastReport">
               
               
 
@@ -1434,7 +1432,7 @@ Spagnolo<br />
 
 
           <div class="img-container">
-            <a href="/it/software/ghtmtt-dataplotly-529ce6">
+            <a href="/it/software/ghtmtt-dataplotly-529ce6" title="DataPlotly">
               
               
 
@@ -1484,7 +1482,7 @@ Spagnolo<br />
 
 
           <div class="img-container">
-            <a href="/it/software/arlpa_to-arpapiemonte-openoise-meter">
+            <a href="/it/software/arlpa_to-arpapiemonte-openoise-meter" title="OpeNoise Meter - Android and iOS app">
               
               
 

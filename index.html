@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -118,7 +118,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -324,7 +324,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -403,24 +403,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -734,7 +732,7 @@
   <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
     <div class="d-md-flex align-items-center">
       <div class="position-relative">
-        <img src="/assets/images/join-window.svg" class="banner-joinus-window">
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
         <h2>Sei un programmatore, uno smanettone del codice o un nerd in erba?</h2>
         <h1>Unisciti alla nostra community!</h1>
       </div>
@@ -776,7 +774,7 @@
                     
                     <a title="CIE" href="/it/cie/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="CIE"
                             src="/assets/images/logo-cie@2x.png">
                     </a>
                     
@@ -799,7 +797,7 @@
                     
                     <a title="SPID" href="/it/spid/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="SPID"
                             src="/assets/images/logo-spid@2x.png">
                     </a>
                     
@@ -822,7 +820,7 @@
                     
                     <a title="pagoPA" href="/it/pagopa/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="pagoPA"
                             src="/assets/images/logo-pagopa@2x.png">
                     </a>
                     
@@ -845,7 +843,7 @@
                     
                     <a title="IndicePA" href="/it/indicepa/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="IndicePA"
                             src="/assets/images/logo-indicepa.png">
                     </a>
                     
@@ -882,6 +880,7 @@
 
 
 
+
 <section class="home-listing-items crop source- ">
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
@@ -904,7 +903,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="Provvedimenti Amministrativi" href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi" class="home-listing-item__imgwrapper w-100">
+                    <a title="PEC Parser" href="/it/software/biagiot-java-pec-parser-09abab" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -922,122 +921,8 @@
 
 
 <div
-  data-display-logo-id="sw-82dba1b26b3d605b9f2f9a32553e38f32d677862"
-  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
-  data-display-logo-classes=" home-listing-item__img w-100 "
->
-  <div
-    style="
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100% !important;
-      height: 150px;
-      background-image: url('/assets/images/placeholder-software-riuso.jpg');
-    "
-  ></div>
-</div>
-
-                    </a>
-                    
-
-                    <h1 class="home-listing-item__title ">
-                        <a title="Provvedimenti Amministrativi" href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi" class="color-inherit">Provvedimenti Amministrativi</a>
-                    </h1>
-                    <a title="Provvedimenti Amministrativi" class="home-listing-item__url" href="/it/software/r_basili-regionebasilicata-provvedimentiamministrativi">leggi di più
-                        &rarr;</a>
-
-                </article>
-            </div>
-            
-
-            
-
-            
-
-            
-
-            <div class="col-md ">
-                <article
-                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
-                    
-
-                    <a title="SIGEO" href="/it/software/p_ve-cittametropolitanavenezia-desk-kitriuso-sigeo" class="home-listing-item__imgwrapper w-100">
-                    
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div
-  data-display-logo-id="sw-3d181a440ddbd062ce06580eacfe161a993d1743"
-  data-display-logo-src="https://raw.githubusercontent.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SIGEO/master/logo_header2.fw_.png"
-  data-display-logo-classes=" home-listing-item__img w-100 "
->
-  <div
-    style="
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100% !important;
-      height: 150px;
-      background-image: url('/assets/images/placeholder-software-riuso.jpg');
-    "
-  ></div>
-</div>
-
-                    </a>
-                    
-
-                    <h1 class="home-listing-item__title ">
-                        <a title="SIGEO" href="/it/software/p_ve-cittametropolitanavenezia-desk-kitriuso-sigeo" class="color-inherit">SIGEO</a>
-                    </h1>
-                    <a title="SIGEO" class="home-listing-item__url" href="/it/software/p_ve-cittametropolitanavenezia-desk-kitriuso-sigeo">leggi di più
-                        &rarr;</a>
-
-                </article>
-            </div>
-            
-
-            
-
-            
-
-            
-
-            <div class="col-md ">
-                <article
-                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
-                    
-
-                    <a title="GlobaLeaks" href="/it/software/globaleaks-globaleaks-f22648" class="home-listing-item__imgwrapper w-100">
-                    
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div
-  data-display-logo-id="sw-f2264857c270998f59925b7b2eade00dbd2202f7"
-  data-display-logo-src="https://raw.githubusercontent.com/globaleaks/GlobaLeaks/main/documentation/images/whistleblower/home.png"
+  data-display-logo-id="sw-09abab5db6783e3d0ad10970f62b5004a83a9b7d"
+  data-display-logo-src="/assets/images/cover_software_opensource.png"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
   <div
@@ -1055,9 +940,9 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="GlobaLeaks" href="/it/software/globaleaks-globaleaks-f22648" class="color-inherit">GlobaLeaks</a>
+                        <a title="PEC Parser" href="/it/software/biagiot-java-pec-parser-09abab" class="color-inherit">PEC Parser</a>
                     </h1>
-                    <a title="GlobaLeaks" class="home-listing-item__url" href="/it/software/globaleaks-globaleaks-f22648">leggi di più
+                    <a title="PEC Parser" class="home-listing-item__url" href="/it/software/biagiot-java-pec-parser-09abab">leggi di più
                         &rarr;</a>
 
                 </article>
@@ -1075,7 +960,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="S4T-LR" href="/it/software/udsm_me-mdslab-s4t-lightning-rod" class="home-listing-item__imgwrapper w-100">
+                    <a title="Pubblicazione Bandi per CMS Plone" href="/it/software/r_emiro-regioneer-rer_bandi" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -1093,7 +978,64 @@
 
 
 <div
-  data-display-logo-id="sw-5e0138adbd6de4b8412bdd500c79a1d9bf905f9f"
+  data-display-logo-id="sw-b67dde93d5c5dc092f277cf34c8b1b4f0a8c4c9e"
+  data-display-logo-src="https://raw.githubusercontent.com/RegioneER/rer.bandi/master/docs/Bandi.JPG"
+  data-display-logo-classes=" home-listing-item__img w-100 "
+>
+  <div
+    style="
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% !important;
+      height: 150px;
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
+    "
+  ></div>
+</div>
+
+                    </a>
+                    
+
+                    <h1 class="home-listing-item__title ">
+                        <a title="Pubblicazione Bandi per CMS Plone" href="/it/software/r_emiro-regioneer-rer_bandi" class="color-inherit">Pubblicazione Bandi per CMS Plone</a>
+                    </h1>
+                    <a title="Pubblicazione Bandi per CMS Plone" class="home-listing-item__url" href="/it/software/r_emiro-regioneer-rer_bandi">leggi di più
+                        &rarr;</a>
+
+                </article>
+            </div>
+            
+
+            
+
+            
+
+            
+
+            <div class="col-md ">
+                <article
+                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
+                    
+
+                    <a title="SIGAS" href="/it/software/r_piemon-regione-piemonte-sigas" class="home-listing-item__imgwrapper w-100">
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  data-display-logo-id="sw-b725e7a92bbd820957e67704eebd11376b0057ff"
   data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
@@ -1112,9 +1054,66 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="S4T-LR" href="/it/software/udsm_me-mdslab-s4t-lightning-rod" class="color-inherit">S4T-LR</a>
+                        <a title="SIGAS" href="/it/software/r_piemon-regione-piemonte-sigas" class="color-inherit">SIGAS</a>
                     </h1>
-                    <a title="S4T-LR" class="home-listing-item__url" href="/it/software/udsm_me-mdslab-s4t-lightning-rod">leggi di più
+                    <a title="SIGAS" class="home-listing-item__url" href="/it/software/r_piemon-regione-piemonte-sigas">leggi di più
+                        &rarr;</a>
+
+                </article>
+            </div>
+            
+
+            
+
+            
+
+            
+
+            <div class="col-md ">
+                <article
+                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
+                    
+
+                    <a title="AVCP-Xml" href="/it/software/p_cr-provinciadicremona-avcp-xml" class="home-listing-item__imgwrapper w-100">
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div
+  data-display-logo-id="sw-98068c62e68da77928e4ad4dee1541c52cfcc1e1"
+  data-display-logo-src="https://raw.githubusercontent.com/provinciadicremona/AVCP-Xml/master/screenshots/home080.png"
+  data-display-logo-classes=" home-listing-item__img w-100 "
+>
+  <div
+    style="
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% !important;
+      height: 150px;
+      background-image: url('/assets/images/placeholder-software-riuso.jpg');
+    "
+  ></div>
+</div>
+
+                    </a>
+                    
+
+                    <h1 class="home-listing-item__title ">
+                        <a title="AVCP-Xml" href="/it/software/p_cr-provinciadicremona-avcp-xml" class="color-inherit">AVCP-Xml</a>
+                    </h1>
+                    <a title="AVCP-Xml" class="home-listing-item__url" href="/it/software/p_cr-provinciadicremona-avcp-xml">leggi di più
                         &rarr;</a>
 
                 </article>
@@ -2341,6 +2340,7 @@
     </div>
 
 </section>
+
 
 
 

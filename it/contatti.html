@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -118,7 +118,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -324,7 +324,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -403,24 +403,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -715,7 +713,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-person col-sm-6">
   <div class="credits-person-img">
-    <img src="/assets/images/alranel.jpg" class="img-fluid" />
+    <img src="/assets/images/alranel.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-person-info">
     <div class="credits-person-name">
@@ -780,7 +778,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-person col-sm-6">
   <div class="credits-person-img">
-    <img src="/assets/images/leo.jpg" class="img-fluid" />
+    <img src="/assets/images/leo.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-person-info">
     <div class="credits-person-name">
@@ -830,7 +828,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-person col-sm-6">
   <div class="credits-person-img">
-    <img src="/assets/images/ioggstream.jpg" class="img-fluid" />
+    <img src="/assets/images/ioggstream.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-person-info">
     <div class="credits-person-name">
@@ -889,7 +887,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-person col-sm-6">
   <div class="credits-person-img">
-    <img src="/assets/images/sebbalex.png" class="img-fluid" />
+    <img src="/assets/images/sebbalex.png" alt="" class="img-fluid" />
   </div>
   <div class="credits-person-info">
     <div class="credits-person-name">
@@ -950,7 +948,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-person col-sm-6">
   <div class="credits-person-img">
-    <img src="/assets/images/bfabio.jpg" class="img-fluid" />
+    <img src="/assets/images/bfabio.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-person-info">
     <div class="credits-person-name">
@@ -1006,7 +1004,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/rasky.jpeg" class="img-fluid" />
+    <img src="/assets/images/rasky.jpeg" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1032,7 +1030,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/ruphy.jpg" class="img-fluid" />
+    <img src="/assets/images/ruphy.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1060,7 +1058,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/umbros.jpg" class="img-fluid" />
+    <img src="/assets/images/umbros.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1111,7 +1109,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/carlo.jpeg" class="img-fluid" />
+    <img src="/assets/images/carlo.jpeg" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1137,7 +1135,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/antony.jpg" class="img-fluid" />
+    <img src="/assets/images/antony.jpg" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1169,7 +1167,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="credits-communityleader col-sm-4">
   <div class="credits-communityleader-img">
-    <img src="/assets/images/biancio.png" class="img-fluid" />
+    <img src="/assets/images/biancio.png" alt="" class="img-fluid" />
   </div>
   <div class="credits-communityleader-info">
     <div class="credits-communityleader-name">
@@ -1226,7 +1224,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/mccalv"><img src="https://avatars1.githubusercontent.com/u/1814818?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/mccalv"><img alt="mccalv" src="https://avatars1.githubusercontent.com/u/1814818?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1243,7 +1241,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/marcocipri"><img src="https://avatars3.githubusercontent.com/u/5989506?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/marcocipri"><img alt="marcocipri" src="https://avatars3.githubusercontent.com/u/5989506?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1274,7 +1272,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/andemaria"><img src="https://avatars0.githubusercontent.com/u/26910179?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/andemaria"><img alt="andemaria" src="https://avatars0.githubusercontent.com/u/26910179?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1291,7 +1289,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/aantetomaso"><img src="https://avatars1.githubusercontent.com/u/26916895?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/aantetomaso"><img alt="aantetomaso" src="https://avatars1.githubusercontent.com/u/26916895?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1308,7 +1306,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/fottavi"><img src="https://avatars2.githubusercontent.com/u/26923305?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/fottavi"><img alt="fottavi" src="https://avatars2.githubusercontent.com/u/26923305?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1325,7 +1323,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/valeriopaolini"><img src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/valeriopaolini"><img alt="valeriopaolini" src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1353,7 +1351,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/luciopileggi"><img src="https://avatars1.githubusercontent.com/u/265532?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/luciopileggi"><img alt="luciopileggi" src="https://avatars1.githubusercontent.com/u/265532?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1370,7 +1368,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/paolo-de-rosa"><img src="https://avatars2.githubusercontent.com/u/569002?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/paolo-de-rosa"><img alt="paolo-de-rosa" src="https://avatars2.githubusercontent.com/u/569002?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1398,7 +1396,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/giux78"><img src="https://avatars3.githubusercontent.com/u/2806256?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/giux78"><img alt="giux78" src="https://avatars3.githubusercontent.com/u/2806256?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1415,7 +1413,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/jenkin"><img src="https://avatars3.githubusercontent.com/u/426495?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/jenkin"><img alt="jenkin" src="https://avatars3.githubusercontent.com/u/426495?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1432,7 +1430,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/axcarlin"><img src="https://avatars3.githubusercontent.com/u/47884082?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/axcarlin"><img alt="axcarlin" src="https://avatars3.githubusercontent.com/u/47884082?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1449,7 +1447,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/gruggiero"><img src="https://avatars3.githubusercontent.com/u/667101?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/gruggiero"><img alt="gruggiero" src="https://avatars3.githubusercontent.com/u/667101?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1466,7 +1464,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/mariaclaudia"><img src="https://avatars2.githubusercontent.com/u/1733135?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/mariaclaudia"><img alt="mariaclaudia" src="https://avatars2.githubusercontent.com/u/1733135?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1494,7 +1492,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/gunzip"><img src="https://avatars2.githubusercontent.com/u/148224?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/gunzip"><img alt="gunzip" src="https://avatars2.githubusercontent.com/u/148224?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1511,7 +1509,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/francescozaia"><img src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/francescozaia"><img alt="francescozaia" src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1528,7 +1526,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/sbronzolo"><img src="https://avatars3.githubusercontent.com/u/24827270?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/sbronzolo"><img alt="sbronzolo" src="https://avatars3.githubusercontent.com/u/24827270?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1545,7 +1543,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/matteodesanti"><img src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/matteodesanti"><img alt="matteodesanti" src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1573,7 +1571,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/pdavide"><img src="https://avatars1.githubusercontent.com/u/9119858?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/pdavide"><img alt="pdavide" src="https://avatars1.githubusercontent.com/u/9119858?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1590,7 +1588,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/francescozaia"><img src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/francescozaia"><img alt="francescozaia" src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1607,7 +1605,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/sbronzolo"><img src="https://avatars3.githubusercontent.com/u/24827270?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/sbronzolo"><img alt="sbronzolo" src="https://avatars3.githubusercontent.com/u/24827270?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1624,7 +1622,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/mamatteo"><img src="https://avatars0.githubusercontent.com/u/13586012?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/mamatteo"><img alt="mamatteo" src="https://avatars0.githubusercontent.com/u/13586012?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1641,7 +1639,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/pauloxnet"><img src="https://avatars3.githubusercontent.com/u/521097?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/pauloxnet"><img alt="pauloxnet" src="https://avatars3.githubusercontent.com/u/521097?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1672,7 +1670,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/cloudify"><img src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/cloudify"><img alt="cloudify" src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1689,7 +1687,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/matteodesanti"><img src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/matteodesanti"><img alt="matteodesanti" src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1726,7 +1724,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/lucabonuccelli"><img src="https://avatars1.githubusercontent.com/u/29912328?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/lucabonuccelli"><img alt="lucabonuccelli" src="https://avatars1.githubusercontent.com/u/29912328?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1746,7 +1744,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/AntonioGiovanniSchiavone"><img src="https://avatars1.githubusercontent.com/u/3876198?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/AntonioGiovanniSchiavone"><img alt="AntonioGiovanniSchiavone" src="https://avatars1.githubusercontent.com/u/3876198?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1763,7 +1761,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/damikael"><img src="https://avatars0.githubusercontent.com/u/31276401?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/damikael"><img alt="damikael" src="https://avatars0.githubusercontent.com/u/31276401?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1780,7 +1778,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/valeriopaolini"><img src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/valeriopaolini"><img alt="valeriopaolini" src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1797,7 +1795,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/walter-arrighetti"><img src="https://avatars2.githubusercontent.com/u/1493024?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/walter-arrighetti"><img alt="walter-arrighetti" src="https://avatars2.githubusercontent.com/u/1493024?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1825,7 +1823,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/giorgialodi"><img src="https://avatars1.githubusercontent.com/u/24624577?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/giorgialodi"><img alt="giorgialodi" src="https://avatars1.githubusercontent.com/u/24624577?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1853,7 +1851,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/gammam"><img src="https://avatars0.githubusercontent.com/u/42178449?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/gammam"><img alt="gammam" src="https://avatars0.githubusercontent.com/u/42178449?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1870,7 +1868,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/cloudify"><img src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/cloudify"><img alt="cloudify" src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1887,7 +1885,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
     <div class="credits-communityleader col-sm-4">
         <div class="credits-communityleader-img">
-            <a href="https://github.com/giuseppevirgone"><img src="https://avatars2.githubusercontent.com/u/30597088?v=4&amp;s=50" class="img-fluid" /></a>
+            <a href="https://github.com/giuseppevirgone"><img alt="giuseppevirgone" src="https://avatars2.githubusercontent.com/u/30597088?v=4&amp;s=50" class="img-fluid" /></a>
         </div>
         <div class="credits-communityleader-info">
             <div class="credits-communityleader-name">
@@ -1906,133 +1904,133 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
 
 <div class="community-members">
     
-        <a href="https://github.com/DavidePastore"><img src="https://avatars2.githubusercontent.com/u/1949364?v=4&amp;s=50" /></a>
+        <a href="https://github.com/DavidePastore"><img alt="DavidePastore" src="https://avatars2.githubusercontent.com/u/1949364?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/HoochDeveloper"><img src="https://avatars1.githubusercontent.com/u/9978186?v=4&amp;s=50" /></a>
+        <a href="https://github.com/HoochDeveloper"><img alt="HoochDeveloper" src="https://avatars1.githubusercontent.com/u/9978186?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/Jecko-o"><img src="https://avatars3.githubusercontent.com/u/22814742?v=4&amp;s=50" /></a>
+        <a href="https://github.com/Jecko-o"><img alt="Jecko-o" src="https://avatars3.githubusercontent.com/u/22814742?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/Lorezz"><img src="https://avatars0.githubusercontent.com/u/1153066?v=4&amp;s=50" /></a>
+        <a href="https://github.com/Lorezz"><img alt="Lorezz" src="https://avatars0.githubusercontent.com/u/1153066?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/MatteCarra"><img src="https://avatars0.githubusercontent.com/u/11074527?v=4&amp;s=50" /></a>
+        <a href="https://github.com/MatteCarra"><img alt="MatteCarra" src="https://avatars0.githubusercontent.com/u/11074527?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/afilini"><img src="https://avatars2.githubusercontent.com/u/3058409?v=4&amp;s=50" /></a>
+        <a href="https://github.com/afilini"><img alt="afilini" src="https://avatars2.githubusercontent.com/u/3058409?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/aletundo"><img src="https://avatars3.githubusercontent.com/u/15201375?v=4&amp;s=50" /></a>
+        <a href="https://github.com/aletundo"><img alt="aletundo" src="https://avatars3.githubusercontent.com/u/15201375?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/alexghirelli"><img src="https://avatars3.githubusercontent.com/u/5411012?v=4&amp;s=50" /></a>
+        <a href="https://github.com/alexghirelli"><img alt="alexghirelli" src="https://avatars3.githubusercontent.com/u/5411012?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/alranel"><img src="https://avatars2.githubusercontent.com/u/594957?v=4&amp;s=50" /></a>
+        <a href="https://github.com/alranel"><img alt="alranel" src="https://avatars2.githubusercontent.com/u/594957?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/amusarra"><img src="https://avatars2.githubusercontent.com/u/708110?v=4&amp;s=50" /></a>
+        <a href="https://github.com/amusarra"><img alt="amusarra" src="https://avatars2.githubusercontent.com/u/708110?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/atorin"><img src="https://avatars1.githubusercontent.com/u/19559470?v=4&amp;s=50" /></a>
+        <a href="https://github.com/atorin"><img alt="atorin" src="https://avatars1.githubusercontent.com/u/19559470?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/aymen94"><img src="https://avatars3.githubusercontent.com/u/13963132?v=4&amp;s=50" /></a>
+        <a href="https://github.com/aymen94"><img alt="aymen94" src="https://avatars3.githubusercontent.com/u/13963132?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/bfabio"><img src="https://avatars2.githubusercontent.com/u/788293?v=4&amp;s=50" /></a>
+        <a href="https://github.com/bfabio"><img alt="bfabio" src="https://avatars2.githubusercontent.com/u/788293?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/biancini"><img src="https://avatars1.githubusercontent.com/u/1561585?v=4&amp;s=50" /></a>
+        <a href="https://github.com/biancini"><img alt="biancini" src="https://avatars1.githubusercontent.com/u/1561585?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/cicciodifranco"><img src="https://avatars0.githubusercontent.com/u/9107536?v=4&amp;s=50" /></a>
+        <a href="https://github.com/cicciodifranco"><img alt="cicciodifranco" src="https://avatars0.githubusercontent.com/u/9107536?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/cloudify"><img src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" /></a>
+        <a href="https://github.com/cloudify"><img alt="cloudify" src="https://avatars2.githubusercontent.com/u/48206?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/congiuluc"><img src="https://avatars3.githubusercontent.com/u/9011632?v=4&amp;s=50" /></a>
+        <a href="https://github.com/congiuluc"><img alt="congiuluc" src="https://avatars3.githubusercontent.com/u/9011632?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/damikael"><img src="https://avatars0.githubusercontent.com/u/31276401?v=4&amp;s=50" /></a>
+        <a href="https://github.com/damikael"><img alt="damikael" src="https://avatars0.githubusercontent.com/u/31276401?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/damjack"><img src="https://avatars0.githubusercontent.com/u/3234955?v=4&amp;s=50" /></a>
+        <a href="https://github.com/damjack"><img alt="damjack" src="https://avatars0.githubusercontent.com/u/3234955?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/danse"><img src="https://avatars2.githubusercontent.com/u/885935?v=4&amp;s=50" /></a>
+        <a href="https://github.com/danse"><img alt="danse" src="https://avatars2.githubusercontent.com/u/885935?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/davidlibrera"><img src="https://avatars3.githubusercontent.com/u/400256?v=4&amp;s=50" /></a>
+        <a href="https://github.com/davidlibrera"><img alt="davidlibrera" src="https://avatars3.githubusercontent.com/u/400256?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/dej611"><img src="https://avatars1.githubusercontent.com/u/924948?v=4&amp;s=50" /></a>
+        <a href="https://github.com/dej611"><img alt="dej611" src="https://avatars1.githubusercontent.com/u/924948?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/descovi"><img src="https://avatars1.githubusercontent.com/u/104249?v=4&amp;s=50" /></a>
+        <a href="https://github.com/descovi"><img alt="descovi" src="https://avatars1.githubusercontent.com/u/104249?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/dgbattisti"><img src="https://avatars0.githubusercontent.com/u/40858931?v=4&amp;s=50" /></a>
+        <a href="https://github.com/dgbattisti"><img alt="dgbattisti" src="https://avatars0.githubusercontent.com/u/40858931?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/ennioVisco"><img src="https://avatars1.githubusercontent.com/u/740025?v=4&amp;s=50" /></a>
+        <a href="https://github.com/ennioVisco"><img alt="ennioVisco" src="https://avatars1.githubusercontent.com/u/740025?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/federicadelia"><img src="https://avatars3.githubusercontent.com/u/1468940?v=4&amp;s=50" /></a>
+        <a href="https://github.com/federicadelia"><img alt="federicadelia" src="https://avatars3.githubusercontent.com/u/1468940?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/fmarco"><img src="https://avatars3.githubusercontent.com/u/7735024?v=4&amp;s=50" /></a>
+        <a href="https://github.com/fmarco"><img alt="fmarco" src="https://avatars3.githubusercontent.com/u/7735024?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/francesco-filicetti"><img src="https://avatars2.githubusercontent.com/u/28479069?v=4&amp;s=50" /></a>
+        <a href="https://github.com/francesco-filicetti"><img alt="francesco-filicetti" src="https://avatars2.githubusercontent.com/u/28479069?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/francescozaia"><img src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" /></a>
+        <a href="https://github.com/francescozaia"><img alt="francescozaia" src="https://avatars2.githubusercontent.com/u/481084?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/giux78"><img src="https://avatars3.githubusercontent.com/u/2806256?v=4&amp;s=50" /></a>
+        <a href="https://github.com/giux78"><img alt="giux78" src="https://avatars3.githubusercontent.com/u/2806256?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/gruggiero"><img src="https://avatars3.githubusercontent.com/u/667101?v=4&amp;s=50" /></a>
+        <a href="https://github.com/gruggiero"><img alt="gruggiero" src="https://avatars3.githubusercontent.com/u/667101?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/gunzip"><img src="https://avatars2.githubusercontent.com/u/148224?v=4&amp;s=50" /></a>
+        <a href="https://github.com/gunzip"><img alt="gunzip" src="https://avatars2.githubusercontent.com/u/148224?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/jenkin"><img src="https://avatars3.githubusercontent.com/u/426495?v=4&amp;s=50" /></a>
+        <a href="https://github.com/jenkin"><img alt="jenkin" src="https://avatars3.githubusercontent.com/u/426495?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/joeyates"><img src="https://avatars1.githubusercontent.com/u/137838?v=4&amp;s=50" /></a>
+        <a href="https://github.com/joeyates"><img alt="joeyates" src="https://avatars1.githubusercontent.com/u/137838?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/leptoquark"><img src="https://avatars1.githubusercontent.com/u/5127294?v=4&amp;s=50" /></a>
+        <a href="https://github.com/leptoquark"><img alt="leptoquark" src="https://avatars1.githubusercontent.com/u/5127294?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/libremente"><img src="https://avatars0.githubusercontent.com/u/25111463?v=4&amp;s=50" /></a>
+        <a href="https://github.com/libremente"><img alt="libremente" src="https://avatars0.githubusercontent.com/u/25111463?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/lilloraffa"><img src="https://avatars0.githubusercontent.com/u/7894625?v=4&amp;s=50" /></a>
+        <a href="https://github.com/lilloraffa"><img alt="lilloraffa" src="https://avatars0.githubusercontent.com/u/7894625?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/lorenzoba"><img src="https://avatars1.githubusercontent.com/u/18281360?v=4&amp;s=50" /></a>
+        <a href="https://github.com/lorenzoba"><img alt="lorenzoba" src="https://avatars1.githubusercontent.com/u/18281360?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/luciopileggi"><img src="https://avatars1.githubusercontent.com/u/265532?v=4&amp;s=50" /></a>
+        <a href="https://github.com/luciopileggi"><img alt="luciopileggi" src="https://avatars1.githubusercontent.com/u/265532?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/lussoluca"><img src="https://avatars1.githubusercontent.com/u/436670?v=4&amp;s=50" /></a>
+        <a href="https://github.com/lussoluca"><img alt="lussoluca" src="https://avatars1.githubusercontent.com/u/436670?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/marcoalbarelli"><img src="https://avatars3.githubusercontent.com/u/789508?v=4&amp;s=50" /></a>
+        <a href="https://github.com/marcoalbarelli"><img alt="marcoalbarelli" src="https://avatars3.githubusercontent.com/u/789508?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/marcogargano"><img src="https://avatars0.githubusercontent.com/u/3099816?v=4&amp;s=50" /></a>
+        <a href="https://github.com/marcogargano"><img alt="marcogargano" src="https://avatars0.githubusercontent.com/u/3099816?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/matteodesanti"><img src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" /></a>
+        <a href="https://github.com/matteodesanti"><img alt="matteodesanti" src="https://avatars3.githubusercontent.com/u/8171284?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/maurovitale"><img src="https://avatars0.githubusercontent.com/u/4927957?v=4&amp;s=50" /></a>
+        <a href="https://github.com/maurovitale"><img alt="maurovitale" src="https://avatars0.githubusercontent.com/u/4927957?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/mjhost"><img src="https://avatars0.githubusercontent.com/u/1660916?v=4&amp;s=50" /></a>
+        <a href="https://github.com/mjhost"><img alt="mjhost" src="https://avatars0.githubusercontent.com/u/1660916?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/nzambello"><img src="https://avatars2.githubusercontent.com/u/21101435?v=4&amp;s=50" /></a>
+        <a href="https://github.com/nzambello"><img alt="nzambello" src="https://avatars2.githubusercontent.com/u/21101435?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/paolo-de-rosa"><img src="https://avatars2.githubusercontent.com/u/569002?v=4&amp;s=50" /></a>
+        <a href="https://github.com/paolo-de-rosa"><img alt="paolo-de-rosa" src="https://avatars2.githubusercontent.com/u/569002?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/paoloromolini"><img src="https://avatars0.githubusercontent.com/u/12033921?v=4&amp;s=50" /></a>
+        <a href="https://github.com/paoloromolini"><img alt="paoloromolini" src="https://avatars0.githubusercontent.com/u/12033921?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/pdavide"><img src="https://avatars1.githubusercontent.com/u/9119858?v=4&amp;s=50" /></a>
+        <a href="https://github.com/pdavide"><img alt="pdavide" src="https://avatars1.githubusercontent.com/u/9119858?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/peppelinux"><img src="https://avatars1.githubusercontent.com/u/1297620?v=4&amp;s=50" /></a>
+        <a href="https://github.com/peppelinux"><img alt="peppelinux" src="https://avatars1.githubusercontent.com/u/1297620?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/pnicolli"><img src="https://avatars2.githubusercontent.com/u/14176608?v=4&amp;s=50" /></a>
+        <a href="https://github.com/pnicolli"><img alt="pnicolli" src="https://avatars2.githubusercontent.com/u/14176608?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/rasky"><img src="https://avatars3.githubusercontent.com/u/1014109?v=4&amp;s=50" /></a>
+        <a href="https://github.com/rasky"><img alt="rasky" src="https://avatars3.githubusercontent.com/u/1014109?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/ruphy"><img src="https://avatars2.githubusercontent.com/u/2030?v=4&amp;s=50" /></a>
+        <a href="https://github.com/ruphy"><img alt="ruphy" src="https://avatars2.githubusercontent.com/u/2030?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/salgio"><img src="https://avatars3.githubusercontent.com/u/32614646?v=4&amp;s=50" /></a>
+        <a href="https://github.com/salgio"><img alt="salgio" src="https://avatars3.githubusercontent.com/u/32614646?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/sanyamdogra"><img src="https://avatars1.githubusercontent.com/u/33497630?v=4&amp;s=50" /></a>
+        <a href="https://github.com/sanyamdogra"><img alt="sanyamdogra" src="https://avatars1.githubusercontent.com/u/33497630?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/sebbalex"><img src="https://avatars3.githubusercontent.com/u/11008116?v=4&amp;s=50" /></a>
+        <a href="https://github.com/sebbalex"><img alt="sebbalex" src="https://avatars3.githubusercontent.com/u/11008116?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/silviorelli"><img src="https://avatars3.githubusercontent.com/u/207363?v=4&amp;s=50" /></a>
+        <a href="https://github.com/silviorelli"><img alt="silviorelli" src="https://avatars3.githubusercontent.com/u/207363?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/sklivvz"><img src="https://avatars3.githubusercontent.com/u/750257?v=4&amp;s=50" /></a>
+        <a href="https://github.com/sklivvz"><img alt="sklivvz" src="https://avatars3.githubusercontent.com/u/750257?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/srescio"><img src="https://avatars2.githubusercontent.com/u/6099979?v=4&amp;s=50" /></a>
+        <a href="https://github.com/srescio"><img alt="srescio" src="https://avatars2.githubusercontent.com/u/6099979?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/taganaka"><img src="https://avatars3.githubusercontent.com/u/386629?v=4&amp;s=50" /></a>
+        <a href="https://github.com/taganaka"><img alt="taganaka" src="https://avatars3.githubusercontent.com/u/386629?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/umbros"><img src="https://avatars2.githubusercontent.com/u/4085151?v=4&amp;s=50" /></a>
+        <a href="https://github.com/umbros"><img alt="umbros" src="https://avatars2.githubusercontent.com/u/4085151?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/valeriopaolini"><img src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" /></a>
+        <a href="https://github.com/valeriopaolini"><img alt="valeriopaolini" src="https://avatars2.githubusercontent.com/u/729301?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/walter-arrighetti"><img src="https://avatars2.githubusercontent.com/u/1493024?v=4&amp;s=50" /></a>
+        <a href="https://github.com/walter-arrighetti"><img alt="walter-arrighetti" src="https://avatars2.githubusercontent.com/u/1493024?v=4&amp;s=50" /></a>
     
-        <a href="https://github.com/yakky"><img src="https://avatars0.githubusercontent.com/u/714711?v=4&amp;s=50" /></a>
+        <a href="https://github.com/yakky"><img alt="yakky" src="https://avatars0.githubusercontent.com/u/714711?v=4&amp;s=50" /></a>
     
 </div>
 
@@ -2111,7 +2109,7 @@ L’open source è un elemento chiave di Developers Italia, per incentivare la c
   <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
     <div class="d-md-flex align-items-center">
       <div class="position-relative">
-        <img src="/assets/images/join-window.svg" class="banner-joinus-window">
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
         <h2>Sei un programmatore, uno smanettone del codice o un nerd in erba?</h2>
         <h1>Unisciti alla nostra community!</h1>
       </div>

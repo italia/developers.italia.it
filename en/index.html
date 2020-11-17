@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -118,7 +118,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -324,7 +324,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -403,24 +403,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -734,7 +732,7 @@
   <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
     <div class="d-md-flex align-items-center">
       <div class="position-relative">
-        <img src="/assets/images/join-window.svg" class="banner-joinus-window">
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
         <h2>Are you a developer, a coder or a geek?</h2>
         <h1>Join our community!</h1>
       </div>
@@ -776,7 +774,7 @@
                     
                     <a title="CIE" href="/en/cie/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="CIE"
                             src="/assets/images/logo-cie@2x.png">
                     </a>
                     
@@ -799,7 +797,7 @@
                     
                     <a title="SPID" href="/en/spid/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="SPID"
                             src="/assets/images/logo-spid@2x.png">
                     </a>
                     
@@ -822,7 +820,7 @@
                     
                     <a title="pagoPA" href="/en/pagopa/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="pagoPA"
                             src="/assets/images/logo-pagopa@2x.png">
                     </a>
                     
@@ -845,7 +843,7 @@
                     
                     <a title="Docs Italia" href="/en/docs-italia/"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img"
+                        <img class="w-100 home-listing-item__img" alt="Docs Italia"
                             src="/assets/images/logo-docs-italia.png">
                     </a>
                     
@@ -882,6 +880,7 @@
 
 
 
+
 <section class="home-listing-items crop source- ">
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
@@ -904,7 +903,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="SIGAS" href="/en/software/r_piemon-regione-piemonte-sigas" class="home-listing-item__imgwrapper w-100">
+                    <a title="Divo" href="/en/software/c_d612-comunefi-divo" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -922,8 +921,8 @@
 
 
 <div
-  data-display-logo-id="sw-b725e7a92bbd820957e67704eebd11376b0057ff"
-  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
+  data-display-logo-id="sw-9c85c3c419e8ae7e47b01c32dbb5fefb17f1fd66"
+  data-display-logo-src="https://raw.githubusercontent.com/ComuneFI/divo/master/assets/images/cover/main-page.png"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
   <div
@@ -941,9 +940,9 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="SIGAS" href="/en/software/r_piemon-regione-piemonte-sigas" class="color-inherit">SIGAS</a>
+                        <a title="Divo" href="/en/software/c_d612-comunefi-divo" class="color-inherit">Divo</a>
                     </h1>
-                    <a title="SIGAS" class="home-listing-item__url" href="/en/software/r_piemon-regione-piemonte-sigas">read more
+                    <a title="Divo" class="home-listing-item__url" href="/en/software/c_d612-comunefi-divo">read more
                         &rarr;</a>
 
                 </article>
@@ -961,7 +960,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="Whistleblowing" href="/en/software/c_l736-comune_venezia-whistleblowing" class="home-listing-item__imgwrapper w-100">
+                    <a title="rer.newsletterdispatcher.flask" href="/en/software/r_emiro-regioneer-rer_newsletterdispatcher_flask" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -979,8 +978,8 @@
 
 
 <div
-  data-display-logo-id="sw-ffb5afd6ed77f376f094de1979c94872e7f1f48b"
-  data-display-logo-src="https://bitbucket.org/Comune_Venezia/whistleblowing/raw/master/images/homepage.png"
+  data-display-logo-id="sw-74f048c0874c81d3b6f8f4e0ef3577dbdb603559"
+  data-display-logo-src="https://raw.githubusercontent.com/RegioneER/rer.newsletterdispatcher.flask/master/rer-logo.png"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
   <div
@@ -998,9 +997,9 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="Whistleblowing" href="/en/software/c_l736-comune_venezia-whistleblowing" class="color-inherit">Whistleblowing</a>
+                        <a title="rer.newsletterdispatcher.flask" href="/en/software/r_emiro-regioneer-rer_newsletterdispatcher_flask" class="color-inherit">rer.newsletterdispatcher.flask</a>
                     </h1>
-                    <a title="Whistleblowing" class="home-listing-item__url" href="/en/software/c_l736-comune_venezia-whistleblowing">read more
+                    <a title="rer.newsletterdispatcher.flask" class="home-listing-item__url" href="/en/software/r_emiro-regioneer-rer_newsletterdispatcher_flask">read more
                         &rarr;</a>
 
                 </article>
@@ -1018,7 +1017,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="Web Analytics Italia - Portale" href="/en/software/agid-agid-wai-portal" class="home-listing-item__imgwrapper w-100">
+                    <a title="urlShortener" href="/en/software/unical-universitadellacalabria-urlshortener" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -1036,8 +1035,8 @@
 
 
 <div
-  data-display-logo-id="sw-72868590cca930a31354423b89eeeb148b460757"
-  data-display-logo-src="https://raw.githubusercontent.com/AgID/wai-portal/develop/resources/images/wai-screenshot.png"
+  data-display-logo-id="sw-1479d8f4f352ef0392afbd3778a1fb015907a851"
+  data-display-logo-src="https://raw.githubusercontent.com/UniversitaDellaCalabria/urlShortener/master/gallery/unical-1.png"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
   <div
@@ -1055,9 +1054,9 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="Web Analytics Italia - Portale" href="/en/software/agid-agid-wai-portal" class="color-inherit">Web Analytics Italia - Portale</a>
+                        <a title="urlShortener" href="/en/software/unical-universitadellacalabria-urlshortener" class="color-inherit">urlShortener</a>
                     </h1>
-                    <a title="Web Analytics Italia - Portale" class="home-listing-item__url" href="/en/software/agid-agid-wai-portal">read more
+                    <a title="urlShortener" class="home-listing-item__url" href="/en/software/unical-universitadellacalabria-urlshortener">read more
                         &rarr;</a>
 
                 </article>
@@ -1075,7 +1074,7 @@
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-3">
                     
 
-                    <a title="FINDOM" href="/en/software/r_piemon-regione-piemonte-findom" class="home-listing-item__imgwrapper w-100">
+                    <a title="rer.cookieconsent" href="/en/software/r_emiro-regioneer-rer_cookieconsent" class="home-listing-item__imgwrapper w-100">
                     
                     
 
@@ -1093,8 +1092,8 @@
 
 
 <div
-  data-display-logo-id="sw-9a0f2189be7c31790c6262d13d223755a8ae832e"
-  data-display-logo-src="/assets/images/placeholder-software-riuso.jpg"
+  data-display-logo-id="sw-9c5ca722f24b887bdfbe2cfe7c780c15a5a5b7e0"
+  data-display-logo-src="https://raw.githubusercontent.com/RegioneER/rer.cookieconsent/master/docs/images/rer.cookieconsent-0.1.0-01.png"
   data-display-logo-classes=" home-listing-item__img w-100 "
 >
   <div
@@ -1112,9 +1111,9 @@
                     
 
                     <h1 class="home-listing-item__title ">
-                        <a title="FINDOM" href="/en/software/r_piemon-regione-piemonte-findom" class="color-inherit">FINDOM</a>
+                        <a title="rer.cookieconsent" href="/en/software/r_emiro-regioneer-rer_cookieconsent" class="color-inherit">rer.cookieconsent</a>
                     </h1>
-                    <a title="FINDOM" class="home-listing-item__url" href="/en/software/r_piemon-regione-piemonte-findom">read more
+                    <a title="rer.cookieconsent" class="home-listing-item__url" href="/en/software/r_emiro-regioneer-rer_cookieconsent">read more
                         &rarr;</a>
 
                 </article>
@@ -2341,6 +2340,7 @@
     </div>
 
 </section>
+
 
 
 

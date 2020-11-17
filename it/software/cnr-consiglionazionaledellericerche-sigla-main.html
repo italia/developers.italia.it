@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/logo.png" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/logo.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           SIGLA
@@ -784,15 +782,15 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://consiglionazionaledellericerche.github.io/sigla-main"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://consiglionazionaledellericerche.github.io/sigla-main"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/consiglionazionaledellericerche/sigla-main"> <img src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+          <p><a href="https://github.com/consiglionazionaledellericerche/sigla-main"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
         <div class="goto road">
-          <p><a href="https://github.com/consiglionazionaledellericerche/sigla-main/projects/1"><img src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+          <p><a href="https://github.com/consiglionazionaledellericerche/sigla-main/projects/1"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
         </div>
         
 
@@ -819,38 +817,38 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/main.png" data-index="182"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/main.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/main.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/main.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/main.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home.png" data-index="183"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home_2.png" data-index="184"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home_2.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home_2.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home_2.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/home_2.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar.png" data-index="185"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_2.png" data-index="186"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_2.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_2.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_2.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_2.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_3.png" data-index="187"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_3.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_3.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_3.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/navbar_3.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -858,84 +856,84 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/toolbar.png" data-index="188"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/toolbar.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/toolbar.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/toolbar.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/toolbar.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/bookmark.png" data-index="189"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/bookmark.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/bookmark.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/bookmark.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/bookmark.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace.png" data-index="190"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_2.png" data-index="191"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_2.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_2.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_2.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_2.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_3.png" data-index="192"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_3.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_3.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_3.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/workspace_3.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map.png" data-index="193"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map_2.png" data-index="194"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map_2.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map_2.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map_2.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/map_2.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/search.png" data-index="195"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/search.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/search.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/search.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/search.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/message.png" data-index="196"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/message.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/message.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/message.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/message.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/calendar.png" data-index="197"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/calendar.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/calendar.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/calendar.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/calendar.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree.png" data-index="198"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree_search.png" data-index="199"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree_search.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree_search.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree_search.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/tree_search.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/validation.png" data-index="200"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/validation.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/validation.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/validation.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/validation.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print.png" data-index="201"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_2.png" data-index="202"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_2.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_2.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_2.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_2.png" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_3.png" data-index="203"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_3.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_3.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_3.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/sigla-main/master/docs/screenshot/print_3.png" alt="Screenshot" />
     </a>
     
     
@@ -1327,7 +1325,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/r_basili-regionebasilicata-sistemainformativocontabile">
+            <a href="/it/software/r_basili-regionebasilicata-sistemainformativocontabile" title="Sistema Informativo Contabile">
               
               
 
@@ -1377,7 +1375,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/fastreports-fastreport-3f5842">
+            <a href="/it/software/fastreports-fastreport-3f5842" title="FastReport">
               
               
 
@@ -1427,7 +1425,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/uni_ct-unict-easy-easy-uni_co_">
+            <a href="/it/software/uni_ct-unict-easy-easy-uni_co_" title="UNI.co. Easy">
               
               
 
@@ -1477,7 +1475,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/r_lombar-regionelombardia-open20">
+            <a href="/it/software/r_lombar-regionelombardia-open20" title="Open 2.0">
               
               
 

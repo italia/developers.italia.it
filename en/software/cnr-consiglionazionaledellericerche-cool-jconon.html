@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -679,7 +677,7 @@
       <div class="intro-name">
         
         
-        <img src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/cool-jconon-webapp-resources/src/main/resources/META-INF/img/logo-quadrato-en.png" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/cool-jconon-webapp-resources/src/main/resources/META-INF/img/logo-quadrato-en.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           E-Recruitment
@@ -774,15 +772,15 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon/tree/master/docs"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon/tree/master/docs"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon"> <img src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
         <div class="goto road">
-          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon/projects/1"><img src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+          <p><a href="https://github.com/consiglionazionaledellericerche/cool-jconon/projects/1"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
         </div>
         
 
@@ -801,38 +799,38 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/responsive_en.png" data-index="406"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/responsive_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/responsive_en.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/responsive_en.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/responsive_en.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/home_en.png" data-index="407"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/home_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/home_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/home_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/home_en.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/contactus_en.png" data-index="408"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/contactus_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/contactus_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/contactus_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/contactus_en.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/helpdesk_en.png" data-index="409"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/helpdesk_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/helpdesk_en.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/helpdesk_en.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/helpdesk_en.png" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/login_en.png" data-index="410"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/login_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/login_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/login_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/login_en.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/registration_en.png" data-index="411"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/registration_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/registration_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/registration_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/registration_en.png" alt="Screenshot" />
       </a>
       
     </div>
@@ -840,19 +838,19 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/groups_en.png" data-index="412"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/groups_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/groups_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/groups_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/groups_en.png" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/permission_en.png" data-index="413"
         data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/permission_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/permission_en.png">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/permission_en.png" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/permission_en.png" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/users_en.png" data-index="414"
       data-size="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/users_en.pngxhttps://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/users_en.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/users_en.png" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/consiglionazionaledellericerche/cool-jconon/master/docs/screenshot/users_en.png" alt="Screenshot" />
     </a>
     
     
@@ -1174,7 +1172,7 @@ The system is part of the e-government project of CNR, in coherence with the Adm
 
 
           <div class="img-container">
-            <a href="/en/software/c_a662-comunedibari-sue_suap">
+            <a href="/en/software/c_a662-comunedibari-sue_suap" title="SUE-SUAP">
               
               
 
@@ -1224,7 +1222,7 @@ The system is part of the e-government project of CNR, in coherence with the Adm
 
 
           <div class="img-container">
-            <a href="/en/software/azero-aziendazero-area">
+            <a href="/en/software/azero-aziendazero-area" title="Sistema di Autorizzazione e Accreditamento delle Strutture Sanitarie, Socio-Sanitarie e Sociali">
               
               
 
@@ -1274,7 +1272,7 @@ The system is part of the e-government project of CNR, in coherence with the Adm
 
 
           <div class="img-container">
-            <a href="/en/software/p_tn-provinciaautonomatrento-pitre">
+            <a href="/en/software/p_tn-provinciaautonomatrento-pitre" title="PiTre">
               
               
 
@@ -1324,7 +1322,7 @@ The system is part of the e-government project of CNR, in coherence with the Adm
 
 
           <div class="img-container">
-            <a href="/en/software/r_umbria-regioneumbria-vbg">
+            <a href="/en/software/r_umbria-regioneumbria-vbg" title="VBG (Virtual Business Gate)">
               
               
 

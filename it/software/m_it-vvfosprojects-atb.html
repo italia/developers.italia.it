@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -791,11 +789,11 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://github.com/vvfosprojects/atb"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://github.com/vvfosprojects/atb"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/vvfosprojects/atb"> <img src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+          <p><a href="https://github.com/vvfosprojects/atb"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
 
@@ -822,38 +820,38 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/loginPage.JPG" data-index="329"
       data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/loginPage.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/loginPage.JPG">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/loginPage.JPG" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/loginPage.JPG" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/doctorHomePage.JPG" data-index="330"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/doctorHomePage.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/doctorHomePage.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/doctorHomePage.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/doctorHomePage.JPG" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/positiveForm.JPG" data-index="331"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/positiveForm.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/positiveForm.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/positiveForm.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/positiveForm.JPG" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/suspectForm.JPG" data-index="332"
       data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/suspectForm.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/suspectForm.JPG">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/suspectForm.JPG" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/suspectForm.JPG" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/subjectList.JPG" data-index="333"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/subjectList.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/subjectList.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/subjectList.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/subjectList.JPG" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perType.JPG" data-index="334"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perType.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perType.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perType.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perType.JPG" alt="Screenshot" />
       </a>
       
     </div>
@@ -861,19 +859,19 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perGroup.JPG" data-index="335"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perGroup.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perGroup.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perGroup.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/basicStats_perGroup.JPG" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics1.JPG" data-index="336"
         data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics1.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics1.JPG">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics1.JPG" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics1.JPG" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics2.JPG" data-index="337"
       data-size="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics2.JPGxhttps://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics2.JPG">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics2.JPG" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/atb/master/docs/images/advancedStatistics2.JPG" alt="Screenshot" />
     </a>
     
     
@@ -1154,7 +1152,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/r_lombar-regionelombardia-open20">
+            <a href="/it/software/r_lombar-regionelombardia-open20" title="Open 2.0">
               
               
 
@@ -1204,7 +1202,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/usucb-uniurbit-uniconv">
+            <a href="/it/software/usucb-uniurbit-uniconv" title="UniConv">
               
               
 
@@ -1254,7 +1252,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/unical-universitadellacalabria-peo">
+            <a href="/it/software/unical-universitadellacalabria-peo" title="Procedura Elettronica Online">
               
               
 
@@ -1304,7 +1302,7 @@
 
 
           <div class="img-container">
-            <a href="/it/software/c_d969-comunedigenova-emergenze-pcge">
+            <a href="/it/software/c_d969-comunedigenova-emergenze-pcge" title="Nuovo Sistema Emergenze Protezione Civile">
               
               
 

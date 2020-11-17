@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Cerca Piattaforme, software o amministrazioni">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Cerca piattaforme, software o amministrazioni" aria-label="Cerca piattaforme, software o amministrazioni">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> Tutto </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Piattaforme</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source di terze parti</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Software a riuso</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Amministrazioni</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -665,17 +663,22 @@
     
 
 
+
+
+
 <div >
   <section class="postslisting postslisting--by-tag position-relative">
-  
+
   <div class="postslisting__header position-relative">
     <div class="postslisting__headerbkg "></div>
-    
+
     <div class="container pt-4 d-flex w-100">
-      <h1 ></h1>
+      
+      <h1>News</h1>
+      
       <div class="postslisting__filtertag ml-auto mb-2 d-flex flex-column flex-md-row">
-        <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags"> <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
-        <a href="./" title="" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">
+        <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags">Filtra per argomento <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
+        <a href="./" title="News" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">
           <span class="align-self-center">hacktoberfest</span>
           <svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-close"></use></svg>
         </a>
@@ -692,133 +695,133 @@
   
   
   <li class="list-inline-item">
-    <a href="//news/eventi" class="Pill small">
+    <a href="/it/news/eventi" class="Pill small">
         eventi 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/sviluppatori" class="Pill small">
+    <a href="/it/news/sviluppatori" class="Pill small">
         sviluppatori 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/roadmap" class="Pill small">
+    <a href="/it/news/roadmap" class="Pill small">
         roadmap 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/progetti" class="Pill small">
+    <a href="/it/news/progetti" class="Pill small">
         progetti 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/hackathon" class="Pill small">
+    <a href="/it/news/hackathon" class="Pill small">
         hackathon 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/developers" class="Pill small">
+    <a href="/it/news/developers" class="Pill small">
         developers 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/daf" class="Pill small">
+    <a href="/it/news/daf" class="Pill small">
         daf 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/gsoc" class="Pill small">
+    <a href="/it/news/gsoc" class="Pill small">
         gsoc 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/docsitalia" class="Pill small">
+    <a href="/it/news/docsitalia" class="Pill small">
         docsitalia 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/digitalweek" class="Pill small">
+    <a href="/it/news/digitalweek" class="Pill small">
         digitalweek 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/software" class="Pill small">
+    <a href="/it/news/software" class="Pill small">
         software 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/opensource" class="Pill small">
+    <a href="/it/news/opensource" class="Pill small">
         opensource 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/anpr" class="Pill small">
+    <a href="/it/news/anpr" class="Pill small">
         anpr 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/api" class="Pill small">
+    <a href="/it/news/api" class="Pill small">
         api 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/designers" class="Pill small">
+    <a href="/it/news/designers" class="Pill small">
         designers 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/community" class="Pill small">
+    <a href="/it/news/community" class="Pill small">
         community 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/call" class="Pill small">
+    <a href="/it/news/call" class="Pill small">
         call 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/cloud" class="Pill small">
+    <a href="/it/news/cloud" class="Pill small">
         cloud 
     </a>
   </li>
   
   
   <li class="list-inline-item">
-    <a href="//news/hacktoberfest" class="Pill small">
+    <a href="/it/news/hacktoberfest" class="Pill small">
         hacktoberfest 
     </a>
   </li>
@@ -856,21 +859,21 @@
   <div class="py-2 mt-auto d-flex w-100">
     
     <div class="newscard__author font-serif ">
-      <span> Leonardo Favario</span>
+      <span>di Leonardo Favario</span>
     </div>
     
     
   </div>
   
   <div class="newscard__more py-1 ">
-    <a href="/it/news/2020/11/11/terminato-hacktoberfest-2020"> &rarr;</a>
+    <a href="/it/news/2020/11/11/terminato-hacktoberfest-2020">leggi di più &rarr;</a>
   </div>
   
 
 </article>
             </div>
             
-            
+
         
             
 
@@ -895,21 +898,21 @@
   <div class="py-2 mt-auto d-flex w-100">
     
     <div class="newscard__author font-serif ">
-      <span> Leonardo Favario</span>
+      <span>di Leonardo Favario</span>
     </div>
     
     
   </div>
   
   <div class="newscard__more py-1 ">
-    <a href="/it/news/2020/10/01/developers-italia-hacktoberfest-2020"> &rarr;</a>
+    <a href="/it/news/2020/10/01/developers-italia-hacktoberfest-2020">leggi di più &rarr;</a>
   </div>
   
 
 </article>
             </div>
             
-            
+
         
             
 
@@ -934,14 +937,14 @@
   <div class="py-2 mt-auto d-flex w-100">
     
     <div class="newscard__author font-serif ">
-      <span> Leonardo Favario</span>
+      <span>di Leonardo Favario</span>
     </div>
     
     
   </div>
   
   <div class="newscard__more py-1 ">
-    <a href="/it/news/2019/11/14/terminato-hacktoberfest-tiriamo-le-somme"> &rarr;</a>
+    <a href="/it/news/2019/11/14/terminato-hacktoberfest-tiriamo-le-somme">leggi di più &rarr;</a>
   </div>
   
 
@@ -949,9 +952,9 @@
             </div>
             
                 <div class="w-100 d-none d-md-block postslisting__hr"></div>
-                
+
             
-            
+
         
         </div>
     </div>
@@ -965,13 +968,13 @@
   <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
     <div class="d-md-flex align-items-center">
       <div class="position-relative">
-        <img src="/assets/images/join-window.svg" class="banner-joinus-window">
-        <h2></h2>
-        <h1></h1>
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
+        <h2>Sei un programmatore, uno smanettone del codice o un nerd in erba?</h2>
+        <h1>Unisciti alla nostra community!</h1>
       </div>
       <div class="ml-auto">
         <a href="https://slack.developers.italia.it/" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">
-          
+          Vieni su Slack
           <svg class="icon">
             <use xlink:href="/assets/svg/sprite.svg#it-comment"></use>
           </svg>
@@ -981,9 +984,6 @@
 
   </div>
 </section>
-
-
-
 
 
   </div>

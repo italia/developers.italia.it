@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202011171631" rel="stylesheet">
+  <link href="/dist/main.css?202011171647" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -116,7 +116,7 @@
               Dipartimento per la Trasformazione Digitale
             </span>
           </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" data-activeid="slimDropdown" role="button"
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
             data-activate-element>
             <svg class="icon icon-white icon-sm">
               <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
@@ -310,7 +310,7 @@
     <div class="container d-flex align-items-center">
       <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" src="/assets/icons/hamburger-icon.svg"></a>
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
       </div>
       <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
         <a href="/" tabindex="-1">
@@ -389,24 +389,22 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form autocomplete="off" action="">
-            <div class="form-group">
-              <div class="autocomplete">
-                <svg class="icon icon-lg">
-                  <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-                </svg>
-                <input type="text" class="form-control" placeholder="Search Platforms, software or administrations">
-                <div id="suggestions" class="d-none"></div>
-              </div>
-              <div id="search-buttons">
-                <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-                <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-                <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-              </div>
+          <div class="form-group">
+            <div class="autocomplete">
+              <svg class="icon icon-lg">
+                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
+              </svg>
+              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
+              <div id="suggestions" class="d-none"></div>
             </div>
-          </form>
+            <div id="search-buttons">
+              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
+              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
+              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -791,11 +789,11 @@
       <div class="drops-details">
         
         <div class="goto doc">
-          <p><a href="https://github.com/vvfosprojects/sovvf/blob/master/README.md"><img src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+          <p><a href="https://github.com/vvfosprojects/sovvf/blob/master/README.md"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
         </div>
         
         <div class="goto code">
-          <p><a href="https://github.com/vvfosprojects/sovvf"> <img src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://github.com/vvfosprojects/sovvf"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
 
@@ -814,38 +812,38 @@
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard.jpg" data-index="442"
       data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard.jpg">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard.jpg" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard.jpg" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione-rapida.jpg" data-index="443"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione-rapida.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione-rapida.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione-rapida.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione-rapida.jpg" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta.jpg" data-index="444"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta.jpg" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/chiamata.jpg" data-index="445"
       data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/chiamata.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/chiamata.jpg">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/chiamata.jpg" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/chiamata.jpg" alt="Screenshot" />
     </a>
     
     <div class="tiled-items-container">
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta-mappa.jpg" data-index="446"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta-mappa.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta-mappa.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta-mappa.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-richiesta-mappa.jpg" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione.jpg" data-index="447"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/composizione.jpg" alt="Screenshot" />
       </a>
       
     </div>
@@ -853,24 +851,24 @@
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/meteo-marker.jpg" data-index="448"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/meteo-marker.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/meteo-marker.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/meteo-marker.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/meteo-marker.jpg" alt="Screenshot" />
       </a>
       
       <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/boxes.jpg" data-index="449"
         data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/boxes.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/boxes.jpg">
-        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/boxes.jpg" />
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/boxes.jpg" alt="Screenshot" />
       </a>
       
     </div>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-marker.jpg" data-index="450"
       data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-marker.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-marker.jpg">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-marker.jpg" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dettaglio-marker.jpg" alt="Screenshot" />
     </a>
     
     <a class="tiled-item" href="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard-solo-mappa.jpg" data-index="451"
       data-size="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard-solo-mappa.jpgxhttps://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard-solo-mappa.jpg">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard-solo-mappa.jpg" />
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/vvfosprojects/sovvf/master/doc/images/dashboard-solo-mappa.jpg" alt="Screenshot" />
     </a>
     
     
@@ -1177,7 +1175,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/m_it-vvfosprojects-vvfgeofleet">
+            <a href="/en/software/m_it-vvfosprojects-vvfgeofleet" title="geofleet">
               
               
 
@@ -1227,7 +1225,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/arlpa_to-arpapiemonte-openoise-meter">
+            <a href="/en/software/arlpa_to-arpapiemonte-openoise-meter" title="OpeNoise Meter - Android and iOS app">
               
               
 
@@ -1277,7 +1275,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/arlpa_to-arpapiemonte-openoise-map">
+            <a href="/en/software/arlpa_to-arpapiemonte-openoise-map" title="Openoise Map - QGIS plugin">
               
               
 
@@ -1327,7 +1325,7 @@
 
 
           <div class="img-container">
-            <a href="/en/software/agid-agid-wai-portal">
+            <a href="/en/software/agid-agid-wai-portal" title="Web Analytics Italia - Portale">
               
               
 
