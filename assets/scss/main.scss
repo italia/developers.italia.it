@@ -902,8 +902,10 @@ body {
         border-bottom: 1px solid rgba(69, 91, 113, 0.2);
     }
     .row {
-        margin-left: -1rem;
-        margin-right: -1rem;
+        @include bootstrap.media-breakpoint-up(sm) {
+          margin-left: -1rem;
+          margin-right: -1rem;
+        }
     }
     article {
         h1 {
