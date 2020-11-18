@@ -15,8 +15,8 @@ redirect_from:
 ---
 
 Ci siamo messi nei panni di una PA desiderosa di riutilizzare una soluzione
-disponibile a catalogo e abbiamo cercato di rendere più semplice il processo di
-dichiarazione di riuso.
+disponibile a [catalogo](https://developers.italia.it/it/software) e abbiamo
+cercato di rendere più semplice il processo di dichiarazione di riuso.
 
 ## Cosa è la dichiarazione?
 
