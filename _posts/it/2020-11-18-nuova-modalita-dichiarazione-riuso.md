@@ -28,7 +28,7 @@ quanto previsto dal [Piano Triennale per l’informatica nella Pubblica
 Amministrazione](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html).
 
 
-## Perchè è importante fare la dichiarazione?
+## Perché è importante fare la dichiarazione?
 
 L’operazione di dichiarazione permette di mettere al corrente l’Ente cedente
 di chi stia attualmente utilizzando un determinato prodotto e consentire uno
