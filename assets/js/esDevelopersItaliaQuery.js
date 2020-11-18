@@ -11,8 +11,8 @@ var DISE = {};
 // Categories of this search engine
 DISE.categories = {
   'unknown': {
-    'it': 'Misc',
-    'en': 'Misc'
+    'it': 'Pagina',
+    'en': 'Page'
   },
   'news': {
     'it': 'News',
@@ -1475,7 +1475,8 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataSoftware = fun
 esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = function (post) {
   var value = $(this.config['inputSelector']).val();
   var name = post.title;
-  var category = DISE.categories[post.type || 'unknown'];
+  const post_type = post.type || 'unknown';
+  var category = DISE.categories[post_type];
 
   value = value.trim().split(' ');
   for (var i = 0; i < value.length; i++) {
@@ -1486,7 +1487,7 @@ esDevelopersItaliaAutocompleteAllQuery.prototype.getSuggestionDataPost = functio
     'name': name,
     'language': this.config['language'],
     'category': category[this.config['language']].toUpperCase(),
-    'categoryClass': ['category', 'icon', 'icon-type-' + post.type].join(' '),
+    'categoryClass': ['category', 'icon', `icon-type-${post_type}`].join(' '),
     'path': post.url
   };
 };

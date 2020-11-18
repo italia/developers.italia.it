@@ -220,6 +220,10 @@ elasticsearch:
   custom_settings: _es_settings.yml
   custom_mappings: _es_mappings.yml
   ignore:
+    # Already indexed in the 'publiccodes' index.
     - /it/software/*
     - /en/software/*
-    - /it/bagnacavallo/
+
+    # Already indexed in the 'administrations' index.
+    - /it/pa/*
+    - /en/pa/*
