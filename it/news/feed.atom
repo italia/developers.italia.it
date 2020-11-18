@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-11-18T06:05:59+00:00</updated>
+  <updated>2020-11-18T15:17:33+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,94 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2020/11/18/nuova-modalita-dichiarazione-riuso</id>
+    <title>Dichiarazione di riuso, sempre più a portata di clic</title>
+    <updated>2020-11-18T09:00:00+00:00</updated>
+
+    <summary>Disponibili nuove e più semplici modalità di dichiarazione di riuso del software open source per la PA </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2020/11/18/nuova-modalita-dichiarazione-riuso">&lt;p&gt;Ci siamo messi nei panni di una PA desiderosa di riutilizzare una soluzione
+disponibile a &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo&lt;/a&gt; e abbiamo
+cercato di rendere più semplice il processo di dichiarazione di riuso.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-è-la-dichiarazione&quot;&gt;Cosa è la dichiarazione?&lt;/h2&gt;
+
+&lt;p&gt;La dichiarazione consiste nell’inserire il &lt;em&gt;nome&lt;/em&gt; e il &lt;em&gt;codice iPA&lt;/em&gt; del proprio
+Ente all’interno della lista delle PA che attualmente stanno utilizzando un
+dato software disponibile a catalogo. A partire da ottobre 2020 tutte le
+Pubbliche Amministrazioni devono effettuare questa dichiarazione, secondo
+quanto previsto dal &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html&quot;&gt;Piano Triennale per l’informatica nella Pubblica
+Amministrazione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;perché-è-importante-fare-la-dichiarazione&quot;&gt;Perché è importante fare la dichiarazione?&lt;/h2&gt;
+
+&lt;p&gt;L’operazione di dichiarazione permette di mettere al corrente l’Ente cedente
+di chi stia attualmente utilizzando un determinato prodotto e consentire uno
+scambio di informazioni che può &lt;strong&gt;portare alla creazione di una vera e propria
+community&lt;/strong&gt; intorno al codice open source in oggetto. Non solo, il processo di
+dichiarazione agevola il &lt;strong&gt;confronto anche con le altre amministrazioni&lt;/strong&gt; che
+nel tempo hanno adottato la soluzione e che a loro volta hanno apportato
+ulteriori migliorie.
+E ancora: un numero considerevole di utilizzatori dello stesso software è un
+buon indicatore che permette di garantire maggiore attenzione e cura della
+soluzione, anche da parte del Team di Developers Italia, &lt;strong&gt;a vantaggio di
+tutti&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;come-si-fa&quot;&gt;Come si fa?&lt;/h2&gt;
+
+&lt;p&gt;Se l’&lt;a href=&quot;https://developers.italia.it/it/riuso/pubblicazione&quot;&gt;inserimento di un software in
+catalogo&lt;/a&gt; prevede una
+serie di operazioni tecniche che possono coinvolgere anche il fornitore del
+prodotto, la dichiarazione del riuso è invece un’operazione molto più rapida
+che può essere effettuata direttamente da un incaricato dell’Ente pubblico.&lt;/p&gt;
+
+&lt;p&gt;La dichiarazione può essere effettuata in diversi modi.&lt;/p&gt;
+
+&lt;p&gt;Innanzitutto è importante sapere se il software in questione è presente
+all’interno del &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo di Developers
+Italia&lt;/a&gt; o meno.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nel caso in cui il software fosse presente&lt;/strong&gt;, per ogni scheda del catalogo
+è disponibile un link, denominato “&lt;em&gt;La mia amministrazione lo usa&lt;/em&gt;”, che
+conduce ad una pagina contenente le istruzioni valide per completare la
+dichiarazione.&lt;/p&gt;
+
+&lt;p&gt;Se, invece, &lt;strong&gt;il software non dovesse ancora essere presente all’interno
+del catalogo&lt;/strong&gt; è possibile utilizzare gli strumenti di community messi
+a disposizione da Developers Italia per segnalare il riuso. Questi sono
+ad esempio il canale #reuse all’interno dello Slack di Developers Italia
+oppure la sezione “Software Open Source per la PA e Riuso” all’interno
+del Forum. Qui è possibile iniziare una discussione e il Team di
+Developers Italia interverrà tempestivamente per concordare una
+soluzione.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Oggi in 663 casi le amministrazioni sono state virtuose utilizzando
+software open source e dichiarando il riuso di almeno una delle 159
+soluzioni disponibili a catalogo&lt;/strong&gt;. Queste ed altre informazioni sono
+sempre consultabili in tempo reale grazie alla
+&lt;a href=&quot;http://developers.italia.it/it/dashboard&quot;&gt;Dashboard&lt;/a&gt; dedicata.&lt;/p&gt;
+
+&lt;p&gt;Vuoi scoprire di più? Segui &lt;a href=&quot;https://developers.italia.it/it/riuso/dichiarazione&quot;&gt;le
+istruzioni&lt;/a&gt; passo per
+passo e consulta la &lt;a href=&quot;https://developers.italia.it/it/faq#collapseDiv11&quot;&gt;FAQ&lt;/a&gt;
+dedicata.&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2020-11-18T09:00:00+00:00</published>
+
+    
+    <category term="opensource" />
+    
+    <category term="riuso" />
+    
+    <category term="catalogo" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2020/11/11/terminato-hacktoberfest-2020</id>
     <title>Hacktoberfest 2020, i traguardi raggiunti</title>
