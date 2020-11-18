@@ -3,7 +3,7 @@ layout: post
 title: Dichiarazione di riuso, sempre più a portata di clic
 subtitle: Disponibili nuove e più semplici modalità di dichiarazione di riuso del software open source per la PA
 date:   2020-11-18 10:00:00 +0100
-tags: opensource, riuso, catalogo
+tags: opensource riuso catalogo
 categories: news
 author: Leonardo Favario
 image: /assets/icons/logo-it.png
