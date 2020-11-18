@@ -64,8 +64,10 @@ dichiarazione.
 Se, invece, **il software non dovesse ancora essere presente all’interno
 del catalogo** è possibile utilizzare gli strumenti di community messi
 a disposizione da Developers Italia per segnalare il riuso. Questi sono
-ad esempio il canale #reuse all’interno dello Slack di Developers Italia
-oppure la sezione “Software Open Source per la PA e Riuso” all’interno
+ad esempio il canale [#reuse](https://app.slack.com/client/T6C27AXE0/CJRSS5S9W)
+all’interno dello Slack di Developers Italia
+oppure la sezione [Software Open Source per la PA
+e Riuso](https://forum.italia.it/c/software-open-source-per-la-pa/49) all’interno
 del Forum. Qui è possibile iniziare una discussione e il Team di
 Developers Italia interverrà tempestivamente per concordare una
 soluzione.
