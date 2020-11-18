@@ -26,7 +26,7 @@ GEM
       ruby2_keywords
     ffi (1.13.1)
     forwardable-extended (2.6.0)
-    html-proofer (3.16.0)
+    html-proofer (3.17.0)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -103,7 +103,7 @@ GEM
     octokit (4.19.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
-    parallel (1.19.2)
+    parallel (1.20.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
