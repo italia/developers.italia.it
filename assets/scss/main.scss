@@ -2053,6 +2053,11 @@ body {
             content: url('/assets/images/icon-type-news--gray.svg');
         }
     }
+    &unknown{
+        &:before {
+            content: url('/assets/images/icon-type-unknown.svg');
+        }
+    }
 }
 
 .list-item-sorting *[class*='icon-type'] {
