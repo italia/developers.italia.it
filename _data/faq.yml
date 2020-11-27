@@ -123,7 +123,7 @@ it:
       
 en:
   item1:
-    question: Do articles 68 and 69 of the CAD apply to public schools for
+    question: Do articles 68 and 69 of the CAD (Digital Administration Code) apply to public schools for
       the acquisition and reuse of software, be it software
       for teaching or software for administrative purposes?
     answer: |
@@ -146,7 +146,7 @@ en:
       or other negotiating circumstances, and the contract foresees the acquisition
       of all intellectual and industrial property rights
       on the software developed on its client's behalf or in any case it does not
-      attribute such ownership by the contractor or third parties;</li>.
+      attribute such ownership by the contractor or third parties;</li>
       <li>the software has been realized by internal resources of the administration.</li>
       </ul>
   item3:
@@ -168,7 +168,7 @@ en:
       category is subject to art. 69 of the CAD on reuse: for such solutions
       administrations must obligatorily acquire full ownership of the source code
       and must proceed with its release in open source. Instead the commercial
-      software acquired by means of a use right license can not be put to reuse.
+      software acquired by means of a right of use license can not be put to reuse.
   item5:
     question: Which are the indications provided for the purposes of compliance
       of art. 69 regarding the choice of the license?
@@ -199,7 +199,7 @@ en:
     answer: |
       According to art. 17, paragraph 1-quater is established by the AgID the
       Office of the Digital Ombudsman who has the task of collecting all reports
-      of supposed violations of the Code of the Digital Administration, or any
+      of supposed violations of the Digital Administration Code, or any
       other rule on the subject of digitization and innovation, to guarantee
       the digital rights of the citizens and businesses.
       Anyone can report supposed violations of CAD provisions,
