@@ -26,7 +26,7 @@ GEM
       ruby2_keywords
     ffi (1.13.1)
     forwardable-extended (2.6.0)
-    html-proofer (3.17.2)
+    html-proofer (3.17.4)
       addressable (~> 2.3)
       mercenary (~> 0.3)
       nokogumbo (~> 2.0)
@@ -97,7 +97,7 @@ GEM
     netrc (0.11.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    nokogumbo (2.0.3)
+    nokogumbo (2.0.4)
       nokogiri (~> 1.8, >= 1.8.4)
     nuggets (1.6.0)
     octokit (4.19.0)
