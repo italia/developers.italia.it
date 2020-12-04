@@ -5,19 +5,19 @@
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.project_of }}</p>
         <div>
-          <a href="https://www.agid.gov.it/">
-            <img class="" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="AgID">
+          <a href="{{ site.owner_link }}">
+            <img src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+            <img src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.owner_full }}">
           </a>
         </div>
       </div>
       <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
-        <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/">
+        <a href="{{ site.partner_link }}">
           <div class="d-flex">
             <div class="d-flex">
-              <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
-              <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+              <img src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.partner_full }}">
             </div>
           </div>
         </a>
