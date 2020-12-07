@@ -2269,6 +2269,8 @@ body {
         background-color: white;
         box-shadow: 0 8px 24px 0 rgba(50,50,50,.15)!important;
         padding: 20px;
+        position: sticky;
+        top: 6.25rem;
 
         ul {
             list-style-type: none;
