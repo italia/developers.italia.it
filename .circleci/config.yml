@@ -47,7 +47,7 @@ references:
     add_ssh_keys:
       fingerprints:
         # gh-pages deployment key from circle-ci config
-        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+        - bc:f0:e1:00:46:32:34:02:03:de:04:32:15:9b:0e:13
 
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
