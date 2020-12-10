@@ -37,8 +37,7 @@ L’agenda completa del primo incontro previsto per venerdì 11 dicembre alle or
 [qui](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#ciclo-di-incontri).
 Sarà possibile seguire la diretta streaming al [seguente link](https://www.youtube.com/watch?v=d8seuHaaiDc&feature=youtu.be&ab_channel=DipartimentoperlaTrasformazioneDigitale).
 
-## Ma facciamo un passettino indietro. Cosa prevede il Decreto Legge
-“semplificazione e innovazione digitale”?
+### Ma facciamo un passettino indietro. Cosa prevede il Decreto Legge “semplificazione e innovazione digitale”?
 
 Il Decreto, convertito in legge dal Parlamento a settembre del 2020, impegna la
 Pubblica Amministrazione, nazionale e locale, ad una digitalizzazione rapida
@@ -59,7 +58,7 @@ dovranno](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/):
 * avviare i progetti di trasformazione digitale necessari per rendere disponibili
   i propri servizi sull’[App IO](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#IO).
 
-## Il ruolo di Developers Italia
+### Il ruolo di Developers Italia
 
 Nell’ottica di fornire un supporto diretto alla PA e a tutti i fornitori
 coinvolti in questa impegnativa avventura, Developers Italia mette
