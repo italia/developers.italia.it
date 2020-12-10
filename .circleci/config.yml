@@ -30,6 +30,30 @@ references:
         make bundle-install-deployment
         which rsync || sudo apt-get install rsync
 
+  save_cache_yarn: &save_cache_yarn
+    save_cache:
+      key: v1-node-modules-{{ checksum "package-lock.json" }}
+      paths:
+        - node_modules
+
+  save_cache_bundle: &save_cache_bundle
+    save_cache:
+      key: v1-bundle-{{ checksum "Gemfile.lock" }}
+      paths:
+        - /usr/local/bundle/ruby
+
+  restore_cache_yarn: &restore_cache_yarn
+    restore_cache:
+      keys:
+        - v1-node-modules-{{ checksum "package-lock.json" }}
+        - v1-node-modules-
+
+  restore_cache_bundle: &restore_cache_bundle
+    restore_cache:
+      keys:
+        - v1-bundle-{{ checksum "Gemfile.lock" }}
+        - v1-bundle-
+
   get_crawler_yml_files: &get_crawler_yml_files
     run:
       name: get-crawler-yml-files
@@ -77,7 +101,11 @@ jobs:
     <<: *env_vars_test
     steps:
       - checkout
+      - << : *restore_cache_yarn
+      - << : *restore_cache_bundle
       - << : *install_dependencies
+      - << : *save_cache_yarn
+      - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
       - << : *build_bundle_jekyll
@@ -88,7 +116,11 @@ jobs:
     <<: *env_vars_prod
     steps:
       - checkout
+      - << : *restore_cache_yarn
+      - << : *restore_cache_bundle
       - << : *install_dependencies
+      - << : *save_cache_yarn
+      - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
       - << : *build_bundle_jekyll
