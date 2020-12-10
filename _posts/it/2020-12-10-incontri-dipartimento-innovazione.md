@@ -34,7 +34,7 @@ soluzioni software e alle associazioni di categoria.
 
 L’agenda completa del primo incontro previsto per venerdì 11 dicembre alle ore
 14.30 dedicato alle guide operative alle piattaforme abilitanti è visibile
-[qui](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#ciclo-di-incontri).
+[qui](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#agenda-dellincontro).
 Sarà possibile seguire la diretta streaming al [seguente link](https://www.youtube.com/watch?v=d8seuHaaiDc&feature=youtu.be&ab_channel=DipartimentoperlaTrasformazioneDigitale).
 
 ### Ma facciamo un passettino indietro. Cosa prevede il Decreto Legge “semplificazione e innovazione digitale”?
