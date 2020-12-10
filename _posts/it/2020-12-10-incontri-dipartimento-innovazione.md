@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Semplificazione e innovazione: ciclo di incontri promossi dal Dipartimento per la Trasformazione Digitale
+title: Semplificazione e innovazione, ciclo di incontri promossi dal Dipartimento per la Trasformazione Digitale
 subtitle: Al via una serie di appuntamenti online promossi dal DTD per presentare le opportunità legate al percorso di digitalizzazione
 date:   2020-12-10 10:00:00 +0100
 tags: piattaforme sviluppatori eventi catalogo
