@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-12-10T13:26:43+00:00</updated>
+  <updated>2020-12-10T21:29:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,99 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2020/12/10/incontri-dipartimento-innovazione</id>
+    <title>Semplificazione e innovazione, ciclo di incontri promossi dal Dipartimento per la Trasformazione Digitale</title>
+    <updated>2020-12-10T09:00:00+00:00</updated>
+
+    <summary>Al via una serie di appuntamenti online promossi dal DTD per presentare le opportunità legate al percorso di digitalizzazione </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2020/12/10/incontri-dipartimento-innovazione">&lt;p&gt;Con il Decreto “semplificazione e innovazione digitale”, il &lt;strong&gt;processo di
+trasformazione digitale della Pubblica Amministrazione è entrato nel vivo&lt;/strong&gt;. La
+norma ha infatti fissato degli obiettivi importanti per sostenere lo sviluppo
+del sistema operativo del Paese.&lt;/p&gt;
+
+&lt;p&gt;Il 28 febbraio 2021 rappresenta una data significativa: sarà il momento in cui
+le amministrazioni saranno tenute ad accelerare lo sviluppo e la diffusione di
+soluzioni digitali per accedere ai servizi pubblici.&lt;/p&gt;
+
+&lt;p&gt;Per affiancare gli enti in questo processo, il Dipartimento per la
+Trasformazione Digitale ha organizzato un ciclo di incontri dal titolo
+“&lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#ciclo-di-incontri&quot;&gt;Semplificazione e Innovazione Digitale&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;p&gt;Si tratta di una serie di appuntamenti online, della durata di due ore
+ciascuno, rivolti a tutti i Responsabili per la Transizione al Digitale, al
+personale pubblico dei sistemi informativi, ai fornitori pubblici e privati di
+soluzioni software e alle associazioni di categoria.&lt;/p&gt;
+
+&lt;p&gt;L’agenda completa del primo incontro previsto per venerdì 11 dicembre alle ore
+14.30 dedicato alle guide operative alle piattaforme abilitanti è visibile
+&lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#agenda-dellincontro&quot;&gt;qui&lt;/a&gt;.
+Sarà possibile seguire la diretta streaming al &lt;a href=&quot;https://www.youtube.com/watch?v=d8seuHaaiDc&amp;amp;feature=youtu.be&amp;amp;ab_channel=DipartimentoperlaTrasformazioneDigitale&quot;&gt;seguente link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ma-facciamo-un-passettino-indietro-cosa-prevede-il-decreto-legge-semplificazione-e-innovazione-digitale&quot;&gt;Ma facciamo un passettino indietro. Cosa prevede il Decreto Legge “semplificazione e innovazione digitale”?&lt;/h3&gt;
+
+&lt;p&gt;Il Decreto, convertito in legge dal Parlamento a settembre del 2020, impegna la
+Pubblica Amministrazione, nazionale e locale, ad una digitalizzazione rapida
+dei servizi offerti. Tutto ruota intorno all’implementazione delle piattaforme
+abilitanti, strumenti standardizzati, testati e sicuri, che contribuiranno ad
+una transizione uniforme.&lt;/p&gt;
+
+&lt;p&gt;Il 28 febbraio 2021, come stabilito dal Decreto Legge “semplificazione
+e innovazione digitale”, è la data entro la quale le &lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/&quot;&gt;pubbliche amministrazioni
+dovranno&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;integrare nei propri sistemi informativi &lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#spid&quot;&gt;SPID (Sistema Pubblico di Identità
+Digitale)&lt;/a&gt;
+e CIE (Carta d’Identità Elettronica) come unico sistema di identificazione
+per l’accesso ai servizi digitali;&lt;/li&gt;
+  &lt;li&gt;integrare la piattaforma &lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#pagopa&quot;&gt;pagoPA&lt;/a&gt;
+nei sistemi di incasso per la riscossione delle proprie entrate;&lt;/li&gt;
+  &lt;li&gt;avviare i progetti di trasformazione digitale necessari per rendere disponibili
+i propri servizi sull’&lt;a href=&quot;https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#app-io&quot;&gt;App IO&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;il-ruolo-di-developers-italia&quot;&gt;Il ruolo di Developers Italia&lt;/h3&gt;
+
+&lt;p&gt;Nell’ottica di fornire un supporto diretto alla PA e a tutti i fornitori
+coinvolti in questa impegnativa avventura, Developers Italia mette
+a disposizione sul proprio portale degli sviluppatori una vasta gamma di
+soluzioni per agevolare le succitate operazioni di integrazione richieste.
+Infatti per ognuna delle piattaforme abilitanti è possibile trovare materiali
+o template pronti all’uso per efficientare il processo. Tutte le risorse sono
+completamente open source e molte delle soluzioni presenti sono frutto del
+lavoro in community di decine di privati cittadini che, mettendo a fattor
+comune gli sforzi, ogni giorno si prodigano per favorire il percorso di
+digitalizzazione del sistema Paese.&lt;/p&gt;
+
+&lt;p&gt;Scopri di più nella &lt;a href=&quot;https://developers.italia.it/it/piattaforme&quot;&gt;sezione dedicata&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inoltre,  è sempre possibile mettersi in contatto con il resto della community
+attraverso il canale di &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt; e il
+&lt;a href=&quot;https://forum.italia.it&quot;&gt;Forum&lt;/a&gt; che possono rappresentare importanti fonti di
+informazioni, consigli e soluzioni ai problemi.&lt;/p&gt;
+
+&lt;p&gt;Vuoi saperne di più? &lt;a href=&quot;https://developers.italia.it/it/come-partecipo&quot;&gt;Unisciti anche tu alla
+community&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2020-12-10T09:00:00+00:00</published>
+
+    
+    <category term="piattaforme" />
+    
+    <category term="sviluppatori" />
+    
+    <category term="eventi" />
+    
+    <category term="catalogo" />
+    
+
+    <author>
+      <name></name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2020/11/18/nuova-modalita-dichiarazione-riuso</id>
     <title>Dichiarazione di riuso, sempre più a portata di clic</title>
