@@ -50,7 +50,7 @@ e innovazione digitale”, è la data entro la quale le [pubbliche amministrazio
 dovranno](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/):
 
 * integrare nei propri sistemi informativi [SPID (Sistema Pubblico di Identità
-  Digitale)](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#spid/)
+  Digitale)](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#spid)
   e CIE (Carta d’Identità Elettronica) come unico sistema di identificazione
   per l’accesso ai servizi digitali;
 * integrare la piattaforma [pagoPA](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#pagopa)
