@@ -53,7 +53,7 @@ dovranno](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/):
   Digitale)](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#spid/)
   e CIE (Carta d’Identità Elettronica) come unico sistema di identificazione
   per l’accesso ai servizi digitali;
-* integrare la piattaforma [pagoPA](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#pagoPA)
+* integrare la piattaforma [pagoPA](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#pagopa)
   nei sistemi di incasso per la riscossione delle proprie entrate;
 * avviare i progetti di trasformazione digitale necessari per rendere disponibili
   i propri servizi sull’[App IO](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#IO).
