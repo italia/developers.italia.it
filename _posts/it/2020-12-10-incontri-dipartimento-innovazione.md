@@ -56,7 +56,7 @@ dovranno](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/):
 * integrare la piattaforma [pagoPA](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#pagopa)
   nei sistemi di incasso per la riscossione delle proprie entrate;
 * avviare i progetti di trasformazione digitale necessari per rendere disponibili
-  i propri servizi sull’[App IO](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#IO).
+  i propri servizi sull’[App IO](https://innovazione.gov.it/it/linee-guida-decreto-semplificazione/#app-io).
 
 ### Il ruolo di Developers Italia
 
