@@ -2,7 +2,7 @@
 layout: post
 title: Al via la survey per la community
 subtitle: Developers Italia si interroga, partendo dall’opinione dei membri della community
-date: 2020-15-10 10:00:00 +0100
+date: 2020-12-15 10:00:00 +0100
 tags: community sviluppatori developers designers
 categories: news
 author: Leonardo Favario
