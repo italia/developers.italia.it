@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202012141856" rel="stylesheet">
+  <link href="/dist/main.css?202012150606" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -683,9 +683,7 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Questo plugin per Limesurvey riscrive le URL nei link html inclusi nelle
-
-mail spedite tramite il software.
+            Questo plugin per Limesurvey riscrive le URL nei link html inclusi nelle mail spedite ai partecipanti
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -756,7 +754,7 @@ mail spedite tramite il software.
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 56%</p>
           
-          <div id="softwareChart" data-vitality='[56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,60,60,60,60,60,60,60,60,60,60,60]'>
+          <div id="softwareChart" data-vitality='[56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,60,60,60,60,60,60,60,60,60,60,60,60]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -1091,45 +1089,15 @@ Inglese<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
               <div class="font-serif page-detail__text">
-                <p>Questo plugin per Limesurvey, quando attivato tramite l’interfaccia di</p>
+                <p>Questo plugin per Limesurvey, quando attivato tramite l’interfaccia di attivazione dei plugin, si inserisce automaticamente nella funzione di generazione delle notifiche mail, corregge il testo html rimuovendo i link forgiati dall’amministratore di questionari, sostituendoli con una rappresentazione testuale.</p>
 
-<p>attivazione dei plugin,</p>
+<p>Il link, così composto, risulta chiaramente leggibile all’interno della mail html evitando frantendimenti anche involontari all’utilizzatore.</p>
 
-<p>si inserisce automaticamente nella funzione di generazione delle notifiche</p>
+<p>In questo modo è possibile evitare la presenza di link malevoli all’interno delle mail che vengono spedite tramite Limesurvey ai partecipanti dei questionari.</p>
 
-<p>mail,</p>
+<p>La correzione avviene anche decodificando e rimuovendo caratteri speciali unicode che potrebbero indurre il client a rappresentare erroneamente i testi e tag html.</p>
 
-<p>corregge il testo html rimuovendo i link forgiati dall’amministratore di</p>
-
-<p>questionari</p>
-
-<p>e sostituendoli con una rappresentazione testuale.</p>
-
-<p>Il link così composto risulta chiaramente leggibile all’interno della mail</p>
-
-<p>html.</p>
-
-<p>In questo modo è possibile evitare la presenza di link malevoli</p>
-
-<p>all’interno delle mail</p>
-
-<p>che vengono spedite tramite Limesurvey ai partecipanti dei questionari.</p>
-
-<p>La correzione avviene anche decodificando e rimuovendo caratteri speciali</p>
-
-<p>unicode</p>
-
-<p>che potrebbero indurre il client a rappresentare erroneamente i testi e</p>
-
-<p>tag html.</p>
-
-<p>Nel caso in cui sia impostata la spedizione di email in formato semplice</p>
-
-<p>“plain-text”,</p>
-
-<p>la funzionalità non agisce, mantenendo invariate le URL incluse nel testo</p>
-
-<p>dei messaggi.</p>
+<p>Nel caso in cui sia impostata la spedizione di email in formato semplice “plain-text”, la funzionalità non agisce, mantenendo invariate le URL incluse nel testo dei messaggi.</p>
 
               </div>
             </div>
