@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-12-15T08:36:29+00:00</updated>
+  <updated>2020-12-15T18:59:43+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,68 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2020/12/15/al-via-survey-community</id>
+    <title>Al via la survey per la community</title>
+    <updated>2020-12-15T09:00:00+00:00</updated>
+
+    <summary>Developers Italia si interroga, partendo dall’opinione dei membri della community </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2020/12/15/al-via-survey-community">&lt;p&gt;Sono passati tre anni dalla presentazione ufficiale della nostra community e,
+anche per rispondere sempre in maniera più adeguata ai bisogni di coloro che ne
+fanno parte, la piattaforma intende consolidare l’efficacia della propria
+azione di supporto. Una verifica in linea con i principi del design thinking
+e del miglioramento continuo dell’offerta di servizi grazie alla collaborazione
+con il team di &lt;a href=&quot;https://designers.italia.it&quot;&gt;Designers Italia&lt;/a&gt;, pensata per
+mettere alla prova quanto realizzato negli anni e per capire, con uno sguardo
+rivolto al futuro, le necessità delle PA di fronte alle sfide della
+trasformazione digitale.&lt;/p&gt;
+
+&lt;p&gt;Il piano di ricerca, ideato da Designers Italia, secondo quanto previsto dalle
+&lt;a href=&quot;https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/ricerche-qualitative.html&quot;&gt;Linee guida di design sulla user
+research&lt;/a&gt;,
+riguarderà l’esperienza d’uso e il grado di soddisfazione rispetto alle risorse
+fornite dai canali di Developers Italia e dai singoli strumenti per lo sviluppo
+e il riuso di soluzioni open source. L’obiettivo è conoscere meglio i soggetti
+che hanno creato o utilizzato le risorse messe a disposizione da Developers
+Italia, esplorare la community che collabora tramite il canale Slack e Forum
+Italia, e analizzare l’ecosistema di attori coinvolti nello sviluppo di servizi
+digitali per la PA.&lt;/p&gt;
+
+&lt;p&gt;Raccolta dati, survey e interviste saranno la base dalla quale ripartire, per
+verificare lo stato e i desideri della community di Developers Italia, ma
+soprattutto per strutturare, insieme, un’azione sempre più efficace. Maggiori
+approfondimenti sul protocollo di ricerca e gli strumenti utilizzati sono
+disponibili nell’&lt;a href=&quot;https://medium.com/designers-italia/lavori-in-corso-designers-italia-si-mette-in-gioco-e-riparte-dalla-ricerca-f52884752bd&quot;&gt;articolo Medium
+dedicato&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mettersi in gioco è il nostro modo per farsi trovare pronti.&lt;/p&gt;
+
+&lt;p&gt;Partecipa alla trasformazione digitale della PA, iscriviti
+a &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt; ed entra nei canali dedicati ai
+progetti e sul &lt;a href=&quot;https://forum.italia.it&quot;&gt;Forum&lt;/a&gt; per condividere la tua
+esperienza.&lt;/p&gt;
+
+&lt;p&gt;Survey e interviste sono realizzate nel rispetto della privacy.
+Parola di sviluppatore!&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2020-12-15T09:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="sviluppatori" />
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2020/12/10/incontri-dipartimento-innovazione</id>
     <title>Semplificazione e innovazione, ciclo di incontri promossi dal Dipartimento per la Trasformazione Digitale</title>
