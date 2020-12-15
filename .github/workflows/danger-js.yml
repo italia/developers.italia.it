@@ -1,7 +1,4 @@
-on:
-  pull_request:
-    branches:
-      - master
+on: [push, pull_request_target]
 
 name: Pull request to master
 jobs:
@@ -21,4 +18,5 @@ jobs:
       - name: Danger
         run: npx danger ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # developers-italia-bot's token with public_repo permissions.
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
