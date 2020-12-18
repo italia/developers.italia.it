@@ -25,7 +25,6 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "lint": "npx eslint _site/ --ext .json",
-        "a11y": "find _site -name '*.html' -exec grep -L 'http-equiv=\"refresh\"' {} \\; | xargs npx pa11y-ci",
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
     },
     "devDependencies": {
