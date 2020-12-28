@@ -71,3 +71,7 @@
 - name: Xades.NetCore
   repos:
     - "https://github.com/pgiacomo69/Xades.NetCore"
+
+- name: "RiscossioneConverter"
+  repos:
+    - "https://github.com/alessiolombardo/RiscossioneConverter"
