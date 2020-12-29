@@ -36,7 +36,7 @@ Tuttavia, tra le tante soluzioni presenti nel [Catalogo](http://developers.itali
 
 Siamo consci del fatto che i temi legati allo sviluppo e alla manutenzione del software possono risultare complessi e alle volte anche oscuri a chi non si occupa di programmazione. Allo stesso modo, lavorare con soggetti pubblici in un contesto composto di adempimenti normativi e stringenti regole tecniche può risultare sfidante per uno sviluppatore (o per un fornitore) abituato al mondo del privato.
 
-Questo elaborato vuole dunque essere un supporto operativo sia per l’amministratore pubblico che per il tecnico, offrendo ad entrambi uno sguardo più ampio per evidenziare i vantaggi di costruire un ecosistema open source vitale.
+Questo elaborato vuole dunque essere un supporto operativo sia per l’amministratore pubblico che per il tecnico, offrendo a entrambi uno sguardo più ampio per evidenziare i vantaggi di costruire un ecosistema open source vitale.
 
 ### Con quale spirito è stata stesa?
 
