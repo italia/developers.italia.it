@@ -41,5 +41,5 @@ gem 'tzinfo-data'
 gem 'searchyll', :git => 'https://github.com/italia/developers-italia-searchyll'
 
 # github_importer.rb dependencies
-gem "octokit", "~> 4.19"
+gem "octokit", "~> 4.20"
 gem "rest-client", "~> 2.1"
