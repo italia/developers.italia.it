@@ -26,7 +26,7 @@ La guida è frutto del lavoro di un anno delle esperienze del team di Developers
 
 ### Chi sono i protagonisti?
 
-I protagonisti sono le Pubbliche Amministrazioni, e le buone pratiche che abbiamo imparato insieme attraverso le nostre attività di supporto. Per questo motivo la guida è strutturata secondo capitoli specifici dedicati proprio ai diversi profili professionali che potrebbero averne bisogno: decisori pubblici, funzionari pubblici e sviluppatori di servizi pubblici. E’ proprio a questi ultimi che si rivolge il primo capitolo che pubblichiamo oggi.
+I protagonisti sono le Pubbliche Amministrazioni, e le buone pratiche che abbiamo imparato insieme attraverso le nostre attività di supporto. Per questo motivo la guida è strutturata secondo capitoli specifici dedicati proprio ai diversi profili professionali che potrebbero averne bisogno: decisori pubblici, funzionari pubblici e sviluppatori di servizi pubblici. È proprio a questi ultimi che si rivolge il primo capitolo che pubblichiamo oggi.
 
 ### Perché riteniamo sia utile?
 
