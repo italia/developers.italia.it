@@ -28,7 +28,6 @@ references:
       command: |
         make include-npm-deps
         make bundle-install-deployment
-        which rsync || sudo apt-get install rsync
         sudo apt-get install gawk
 
   save_cache_yarn: &save_cache_yarn
