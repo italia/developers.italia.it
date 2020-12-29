@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-12-29T11:35:51+00:00</updated>
+  <updated>2020-12-29T14:38:34+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,70 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2020/12/29/guida-sviluppo-gestione-software-libero</id>
+    <title>Disponibile la prima parte della “Guida allo sviluppo e gestione di software libero”</title>
+    <updated>2020-12-29T09:00:00+00:00</updated>
+
+    <summary>Un documento di supporto per guidare in modo semplice e pratico l’adozione e il mantenimento di soluzioni open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2020/12/29/guida-sviluppo-gestione-software-libero">&lt;p&gt;Developers Italia continua a impegnarsi per mettere a disposizione della community sempre nuovi strumenti e risorse che supportino il lavoro delle Pubbliche Amministrazioni e rendano più semplice il processo di adozione e mantenimento di soluzioni open source. Proprio con questo spirito oggi rilasciamo il primo capitolo della &lt;strong&gt;Guida allo sviluppo e gestione di software libero&lt;/strong&gt;. Con questo documento, rivolto a tecnici, amministratori, e decisori pubblici vogliamo aiutare tutti gli attori che ruotano intorno al software libero a comprendere e a realizzare appieno i vantaggi in termini di gestione, riduzione dei costi e miglioramento dei servizi di un corretto approccio open source. Tutto ciò accompagnato da indicazioni e consigli pratici per gestire e sviluppare correttamente il software in modo aperto. La guida contiene inoltre una raccolta di buone pratiche e riferimenti a risorse esterne utili per lo sviluppo di software più sicuro e di facile manutenzione.&lt;/p&gt;
+
+&lt;p&gt;A differenza delle Linee Guida ufficiali questa pubblicazione è scritta in forma di pillole operative per guidare le amministrazioni in modo semplice e pratico, e non ha carattere normativo.&lt;/p&gt;
+
+&lt;p&gt;La versione che pubblichiamo oggi, seppur revisionata e corretta, è solo una prima parte in forma di bozza: in perfetto stile “open source” la continueremo a sviluppare e migliorare collaborativamente e costantemente con i lettori e con tutti coloro che in futuro desidereranno offrire il loro contributo.&lt;/p&gt;
+
+&lt;h3 id=&quot;chi-lha-scritta&quot;&gt;Chi l’ha scritta?&lt;/h3&gt;
+
+&lt;p&gt;La guida è frutto del lavoro di un anno delle esperienze del team di Developers Italia, del &lt;a href=&quot;https://innovazione.gov.it/it/chi-siamo/dipartimento/&quot;&gt;Dipartimento della Trasformazione Digitale&lt;/a&gt;, per cristallizzare la conoscenza generata durante il lavoro di supporto alle Pubbliche Amministrazioni sia centrali che locali.&lt;/p&gt;
+
+&lt;h3 id=&quot;chi-sono-i-protagonisti&quot;&gt;Chi sono i protagonisti?&lt;/h3&gt;
+
+&lt;p&gt;I protagonisti sono le Pubbliche Amministrazioni, e le buone pratiche che abbiamo imparato insieme attraverso le nostre attività di supporto. Per questo motivo la guida è strutturata secondo capitoli specifici dedicati proprio ai diversi profili professionali che potrebbero averne bisogno: decisori pubblici, funzionari pubblici e sviluppatori di servizi pubblici. È proprio a questi ultimi che si rivolge il primo capitolo che pubblichiamo oggi.&lt;/p&gt;
+
+&lt;h3 id=&quot;perché-riteniamo-sia-utile&quot;&gt;Perché riteniamo sia utile?&lt;/h3&gt;
+
+&lt;p&gt;Il &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/index.html&quot;&gt;Codice dell’Amministrazione Digitale&lt;/a&gt; (CAD) impone l’utilizzo e lo sviluppo quasi esclusivo di software open source, e le &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html&quot;&gt;Linee Guida&lt;/a&gt; pubblicate da AGID dettagliano ulteriormente questi requisiti, traducendoli in indicazioni normative che cercano di essere quanto più possibili concrete.&lt;/p&gt;
+
+&lt;p&gt;Tuttavia, tra le tante soluzioni presenti nel &lt;a href=&quot;http://developers.italia.it/it/software&quot;&gt;Catalogo&lt;/a&gt; che abbiamo analizzato in questi mesi, ve ne sono alcune che presentano caratteristiche degne di nota, permettendo di semplificare la manutenzione delle soluzioni, diminuire i costi di gestione e di sviluppo, e migliorare la qualità del software. Sviluppare un software in open source è di per sé un vantaggio, ma siamo convinti che farlo correttamente permetta di ottenere dei benefici più importanti in termini di resilienza, risparmio, e velocità di risoluzione dei problemi.&lt;/p&gt;
+
+&lt;p&gt;Siamo consci del fatto che i temi legati allo sviluppo e alla manutenzione del software possono risultare complessi e alle volte anche oscuri a chi non si occupa di programmazione. Allo stesso modo, lavorare con soggetti pubblici in un contesto composto di adempimenti normativi e stringenti regole tecniche può risultare sfidante per uno sviluppatore (o per un fornitore) abituato al mondo del privato.&lt;/p&gt;
+
+&lt;p&gt;Questo elaborato vuole dunque essere un supporto operativo sia per l’amministratore pubblico che per il tecnico, offrendo a entrambi uno sguardo più ampio per evidenziare i vantaggi di costruire un ecosistema open source vitale.&lt;/p&gt;
+
+&lt;h3 id=&quot;con-quale-spirito-è-stata-stesa&quot;&gt;Con quale spirito è stata stesa?&lt;/h3&gt;
+
+&lt;p&gt;Lo abbiamo già detto, ma ci piace sottolinearlo nuovamente: il nostro intento è quello di supportare concretamente e operativamente le Pubbliche Amministrazioni a districarsi in un contesto nuovo e complesso, offrendo soluzioni pratiche apprese sul campo invece che liste di norme e adempimenti. Queste soluzioni sono studiate, appunto, per massimizzare la semplicità e l’efficacia in termini di creazione di ecosistemi aperti.&lt;/p&gt;
+
+&lt;p&gt;In altre parole, in questa guida abbiamo provato a fondere la nostra conoscenza in termini di open source con l’importante esperienza e i bisogni di un amministratore pubblico.&lt;/p&gt;
+
+&lt;h3 id=&quot;prossimi-passi&quot;&gt;Prossimi passi?&lt;/h3&gt;
+
+&lt;p&gt;Oggi pubblichiamo il capitolo dedicato agli sviluppatori, a cui seguiranno gli altri capitoli nei prossimi mesi.
+Ti chiediamo di leggere e aiutarci a evolvere il documento, solo così otterremo un risultato finale di sicura utilità. Se vorrai aiutarci ti ringraziamo fin da ora per il tuo tempo e i tuoi preziosi contributi.
+&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/v0.1/index.html&quot;&gt;Scopri la guida su Docs Italia&lt;/a&gt;, discutine con la community sul &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum&lt;/a&gt; o proponi direttamente miglioramenti su &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
+    <published>2020-12-29T09:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="sviluppatori" />
+    
+    <category term="developers" />
+    
+    <category term="riuso" />
+    
+    <category term="opensource" />
+    
+    <category term="software" />
+    
+
+    <author>
+      <name>Leonardo Favario</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2020/12/15/al-via-survey-community</id>
     <title>Al via la survey per la community</title>
