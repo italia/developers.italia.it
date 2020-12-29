@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2020-12-29T14:38:34+00:00</updated>
+  <updated>2020-12-29T14:55:43+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -54,7 +54,7 @@
 
 &lt;p&gt;Oggi pubblichiamo il capitolo dedicato agli sviluppatori, a cui seguiranno gli altri capitoli nei prossimi mesi.
 Ti chiediamo di leggere e aiutarci a evolvere il documento, solo così otterremo un risultato finale di sicura utilità. Se vorrai aiutarci ti ringraziamo fin da ora per il tuo tempo e i tuoi preziosi contributi.
-&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/v0.1/index.html&quot;&gt;Scopri la guida su Docs Italia&lt;/a&gt;, discutine con la community sul &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum&lt;/a&gt; o proponi direttamente miglioramenti su &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;Scopri la guida su Docs Italia&lt;/a&gt;, discutine con la community sul &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum&lt;/a&gt; o proponi direttamente miglioramenti su &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
     <published>2020-12-29T09:00:00+00:00</published>
