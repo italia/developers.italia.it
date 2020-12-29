@@ -1,4 +1,4 @@
-on: [push, pull_request_target]
+on: [pull_request_target]
 
 name: Pull request to master
 jobs:
