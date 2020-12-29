@@ -40,7 +40,7 @@ Questo elaborato vuole dunque essere un supporto operativo sia per l’amministr
 
 ### Con quale spirito è stata stesa?
 
-Lo abbiamo già detto, ma ci piace sottolinearlo nuovamente: il nostro intento è quello di supportare concretamente ed operativamente le Pubbliche Amministrazioni a districarsi in un contesto nuovo e complesso, offrendo soluzioni pratiche apprese sul campo invece che liste di norme ed adempimenti. Queste soluzioni sono studiate, appunto, per massimizzare la semplicità e l’efficacia in termini di creazione di ecosistemi aperti.
+Lo abbiamo già detto, ma ci piace sottolinearlo nuovamente: il nostro intento è quello di supportare concretamente e operativamente le Pubbliche Amministrazioni a districarsi in un contesto nuovo e complesso, offrendo soluzioni pratiche apprese sul campo invece che liste di norme e adempimenti. Queste soluzioni sono studiate, appunto, per massimizzare la semplicità e l’efficacia in termini di creazione di ecosistemi aperti.
 
 In altre parole, in questa guida abbiamo provato a fondere la nostra conoscenza in termini di open source con l’importante esperienza e i bisogni di un amministratore pubblico.
 
