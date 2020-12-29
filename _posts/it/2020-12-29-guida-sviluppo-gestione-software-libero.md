@@ -48,6 +48,6 @@ In altre parole, in questa guida abbiamo provato a fondere la nostra conoscenza 
 
 Oggi pubblichiamo il capitolo dedicato agli sviluppatori, a cui seguiranno gli altri capitoli nei prossimi mesi.
 Ti chiediamo di leggere e aiutarci a evolvere il documento, solo così otterremo un risultato finale di sicura utilità. Se vorrai aiutarci ti ringraziamo fin da ora per il tuo tempo e i tuoi preziosi contributi.
-[Scopri la guida su Docs Italia](https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/v0.1/index.html), discutine con la community sul [Forum](https://forum.italia.it/c/software-open-source-per-la-pa/49) o proponi direttamente miglioramenti su [GitHub](https://github.com/italia/guida-sviluppo-gestione-software-libero).
+[Scopri la guida su Docs Italia](https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html), discutine con la community sul [Forum](https://forum.italia.it/c/software-open-source-per-la-pa/49) o proponi direttamente miglioramenti su [GitHub](https://github.com/italia/guida-sviluppo-gestione-software-libero).
 
 Il Team Developers Italia
