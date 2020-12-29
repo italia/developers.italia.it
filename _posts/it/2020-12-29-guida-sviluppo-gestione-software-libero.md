@@ -28,13 +28,13 @@ La guida è frutto del lavoro di un anno delle esperienze del team di Developers
 
 I protagonisti sono le Pubbliche Amministrazioni, e le buone pratiche che abbiamo imparato insieme attraverso le nostre attività di supporto. Per questo motivo la guida è strutturata secondo capitoli specifici dedicati proprio ai diversi profili professionali che potrebbero averne bisogno: decisori pubblici, funzionari pubblici e sviluppatori di servizi pubblici. E’ proprio a questi ultimi che si rivolge il primo capitolo che pubblichiamo oggi.
 
-### Perchè riteniamo sia utile? 
+### Perchè riteniamo sia utile?
 
 Il [Codice dell’Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/index.html) (CAD) impone l’utilizzo e lo sviluppo quasi esclusivo di software open source, e le [Linee Guida](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html) pubblicate da AGID dettagliano ulteriormente questi requisiti, traducendoli in indicazioni normative che cercano di essere quanto più possibili concrete.
 
 Tuttavia, tra le tante soluzioni presenti nel [Catalogo](http://developers.italia.it/it/software) che abbiamo analizzato in questi mesi, ve ne sono alcune che presentano caratteristiche degne di nota, permettendo di semplificare la manutenzione delle soluzioni, diminuire i costi di gestione e di sviluppo, e migliorare la qualità del software. Sviluppare un software in open source è di per sé un vantaggio, ma siamo convinti che farlo correttamente permetta di ottenere dei benefici più importanti in termini di resilienza, risparmio, e velocità di risoluzione dei problemi.
 
-Siamo consci del fatto che i temi legati allo sviluppo e alla manutenzione del software possono risultare complessi e alle volte anche oscuri a chi non si occupa di programmazione. Allo stesso modo, lavorare con soggetti pubblici in un contesto composto di adempimenti normativi e stringenti regole tecniche può risultare sfidante per uno sviluppatore (o per un fornitore) abituato al mondo del privato. 
+Siamo consci del fatto che i temi legati allo sviluppo e alla manutenzione del software possono risultare complessi e alle volte anche oscuri a chi non si occupa di programmazione. Allo stesso modo, lavorare con soggetti pubblici in un contesto composto di adempimenti normativi e stringenti regole tecniche può risultare sfidante per uno sviluppatore (o per un fornitore) abituato al mondo del privato.
 
 Questo elaborato vuole dunque essere un supporto operativo sia per l’amministratore pubblico che per il tecnico, offrendo ad entrambi uno sguardo più ampio per evidenziare i vantaggi di costruire un ecosistema open source vitale.
 
@@ -44,12 +44,10 @@ Lo abbiamo già detto, ma ci piace sottolinearlo nuovamente: il nostro intento �
 
 In altre parole, in questa guida abbiamo provato a fondere la nostra conoscenza in termini di open source con l’importante esperienza e i bisogni di un amministratore pubblico.
 
-
 ### Prossimi passi?
 
 Oggi pubblichiamo il capitolo dedicato agli sviluppatori, a cui seguiranno gli altri capitoli nei prossimi mesi.
 Ti chiediamo di leggere ed aiutarci ad evolvere il documento, solo così otterremo un risultato finale di sicura utilità. Se vorrai aiutarci ti ringraziamo fin da ora per il tuo tempo e i tuoi preziosi contributi.
 [Scopri la guida su Docs Italia](https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/v0.1/index.html), discutine con la community sul [Forum](https://forum.italia.it/c/software-open-source-per-la-pa/49) o proponi direttamente miglioramenti su [GitHub](https://github.com/italia/guida-sviluppo-gestione-software-libero).
-
 
 Il Team Developers Italia
