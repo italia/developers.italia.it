@@ -28,7 +28,7 @@ La guida è frutto del lavoro di un anno delle esperienze del team di Developers
 
 I protagonisti sono le Pubbliche Amministrazioni, e le buone pratiche che abbiamo imparato insieme attraverso le nostre attività di supporto. Per questo motivo la guida è strutturata secondo capitoli specifici dedicati proprio ai diversi profili professionali che potrebbero averne bisogno: decisori pubblici, funzionari pubblici e sviluppatori di servizi pubblici. E’ proprio a questi ultimi che si rivolge il primo capitolo che pubblichiamo oggi.
 
-### Perchè riteniamo sia utile?
+### Perché riteniamo sia utile?
 
 Il [Codice dell’Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/index.html) (CAD) impone l’utilizzo e lo sviluppo quasi esclusivo di software open source, e le [Linee Guida](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html) pubblicate da AGID dettagliano ulteriormente questi requisiti, traducendoli in indicazioni normative che cercano di essere quanto più possibili concrete.
 
