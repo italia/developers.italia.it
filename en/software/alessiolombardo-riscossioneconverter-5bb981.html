@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202101030605" rel="stylesheet">
+  <link href="/dist/main.css?202101040605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -675,7 +675,7 @@
         
         <h1 class="d-inline-block">
           RiscossioneConverter
-          <span class="badge badge-pill badge-pill--sup badge-primary">1.0</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">1.1</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -684,9 +684,7 @@
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
             Convertitore per file a blocchi con tracciato record indicato negli
-
 Allegati 1/2 del Decreto 15/06/2015 del Ministero dell'Economia e delle
-
 Finanze
           </h3>
           <div class="my-3">
@@ -736,7 +734,7 @@ Finanze
           <p>Vitality:</p>
           <p class="score d-inline-block"> 46%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,52,68,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,52,68,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,56,46]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -766,6 +764,10 @@ Finanze
       </div>
 
       <div class="drops-details">
+        
+        <div class="goto doc">
+          <p><a href="https://github.com/alessiolombardo/RiscossioneConverter/blob/main/README.md"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+        </div>
         
         <div class="goto code">
           <p><a href="https://github.com/alessiolombardo/RiscossioneConverter"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
@@ -799,9 +801,13 @@ Finanze
           <div class="function-list">
             
             
-            <p> Converte da file a blocchi a file Excel </p>
+            <p> Converte da file a blocchi a file Excel, Excel 97-2003, ODS, XML e JSON </p>
             
             <p> Interfaccia semplice e minimale </p>
+            
+            <p> Massima Portabilità </p>
+            
+            <p> Documentazione API disponibile </p>
             
             
           </div>
@@ -846,7 +852,7 @@ Finanze
                 RiscossioneConverter
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">1.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">1.1</span>
                 
               </h2>
               <h2>
@@ -859,9 +865,9 @@ Finanze
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2020-12-28
+                  2021-01-03
                   
-                  (1.0)
+                  (1.1)
                   
                 </p>
               </div>
@@ -923,6 +929,8 @@ Finanze
                   <span class="label">Platforms</span>
                   
                       windows<br />
+                  
+                      linux<br />
                   
                 </p>
               </div>
@@ -1016,40 +1024,38 @@ Finanze
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
               <div class="font-serif page-detail__text">
-                <p>RiscossioneConverter consente di convertire in file Excel 97/2003 (.xls)
-un file a blocchi contenente record a lunghezza fissa secondo le
-specifiche degli <a href="https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2015-06-22&amp;atto.codiceRedazionale=15A04675&amp;elenco30giorni=false">Allegati 1/2 del Decreto 15/06/2015 del Ministero
-dell’Economia e delle
+                <p>RiscossioneConverter consente la conversione di un file a blocchi
+contenente record a lunghezza fissa secondo le specifiche degli <a href="https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2015-06-22&amp;atto.codiceRedazionale=15A04675&amp;elenco30giorni=false">Allegati
+1/2 del Decreto 15/06/2015 del Ministero dell’Economia e delle
 Finanze</a>
 inerente la trasmissione agli enti creditori delle quote annullate e di
 rimborso agli agenti della riscossione delle spese esecutive sostenute per
-i ruoli.</p>
+i ruoli. I formati di output supportati sono Excel (.xlsx), Excel 97-2003
+(.xls), OpenDocument Spreadsheet (.ods), XML e JSON.</p>
 
-<p>Interamente sviluppato in Java e con interfaccia grafica minimale
-disponibile in due versioni:</p>
+<p>Il software è interamente sviluppato in Java e con interfaccia grafica
+minimale disponibile in due versioni:</p>
 
 <ul>
   <li>
     <p>Swing: Testata su Windows XP (con JRE7), Windows 7 (con JRE8), Windows
-10 (con JDK15).</p>
+10 (con JDK15), Ubuntu 20.04 (con JDK11);</p>
   </li>
   <li>
-    <p>JavaFX: Testata su Windows 7 (con JRE8), Windows 10 (con JDK15). Windows
-XP non supportato. NOTA: Ove la libreria JavaFX non fosse già integrata
-nel JDK/JRE, specificarla avviando il jar con:</p>
-  </li>
-  <li>
-    <p>java –module-path <PERCORSO LIBRERIA="" JAVAFX="">
---add-modules=javafx.controls,javafx.fxml -jar <NOME JAR=""></NOME></PERCORSO></p>
+    <p>JavaFX: Testata su Windows 7 (con JRE8), Windows 10 (con JDK15), Ubuntu
+20.04 (con JDK11). Windows XP non supportato.</p>
   </li>
 </ul>
+
+<p>Gli output in formato .xls, .xlsx e .ods sono stati testati su Microsoft
+Excel 2013 e LibreOffice Calc 6.4.6.2.</p>
 
 <p>L’approccio di programmazione MVC consente facilmente di
 estrarre/modificare/sostituire il modello dei dati, il formato di output o
 l’interfaccia grafica.</p>
 
-<p>Se viene selezionato un file Excel non vuoto, i record convertiti vengono
-inseriti in coda, senza alterare i record precedenti.</p>
+<p>Se viene selezionato un file di output non vuoto, i record convertiti
+vengono inseriti in coda, senza alterare i record precedenti.</p>
 
               </div>
             </div>
