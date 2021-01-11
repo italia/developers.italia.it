@@ -13,21 +13,21 @@
     <a href="{{sw_url}}" class="d-block decoration-none ">
         {% if include.show_type %}
         {% if software.publiccode.it.riuso.codiceIPA != nil %}
-        <p class="icon-type-public-sw">SOFTWARE A RIUSO</p>
+        <p class="icon-type-software_reuse">SOFTWARE A RIUSO</p>
         {% else %}
-        <p class="icon-type-generic-sw">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
+        <p class="icon-type-software_reuse">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
         {% endif %}
         {% endif %}
 
         {% assign swClasses = "main-image" %}
-        {% include display-logo.html 
+        {% include display-logo.html
             logo = software.publiccode.logo
             id = software.id
             codiceIPA = software.publiccode.it.riuso.codiceIPA
-            screenshots = description.screenshots 
+            screenshots = description.screenshots
             classes = swClasses
         %}
-        
+
         <p class="name color-inherit">
             {{ sw_name }}
         </p>

@@ -12,14 +12,14 @@ pair-blocks:
       buttons:
         - label: Esplora
           class: btn btn-primary
-          url: '/it/search?type=reuse_software&page=0&sort=relevance'
+          url: '/it/search?type=software_reuse'
     - title: "Open source di terze parti"
       text: "Software open source di interesse per la Pubblica Amministrazione"
       # image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: Esplora
           class: btn btn-primary
-          url: '/it/search?type=software_open&page=0&sort=relevance'
+          url: '/it/search?type=software_open'
 ---
 
 Questo è il catalogo previsto dalle [Linee Guida per l'Acquisizione e il Riuso del Software](/it/riuso), che include le soluzioni messe a riuso dalla Pubblica Amministrazione ai sensi dell'art. 69 e il software open source di terze parti destinato alla PA.

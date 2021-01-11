@@ -141,8 +141,10 @@ it:
       goToPlatform: "Vai alla piattaforma"
 
     software:
-      software_open: Software open source di terze parti
-      reuse_software: Software a riuso
+      catalogue: Catalogo
+      searched_for: Hai cercato
+      software_open: Software open source
+      software_reuse: Software a riuso
       recent_software: Software più recenti
       active_software: Progetti più attivi
       pa_most_active: Amministrazioni più virtuose
@@ -207,7 +209,7 @@ it:
       additional_features: Funzionalità aggiuntive
       see_more: Vedi tutto
       others_info: Altre informazioni
-      software_type: tipologia software
+      type: Tipologia
       public_entities: Enti
       go_to_detail: vai al dettaglio
       view_all_photos: Guarda tutte le immagini
@@ -378,8 +380,10 @@ en:
       goToPlatform: "Go to platform"
 
     software:
+      catalogue: Catalogue
+      searched_for: You have searched for
       software_open: Software open source
-      reuse_software: Reuse software
+      software_reuse: Reuse software
       recent_software: Most recent software
       active_software: Most active projects
       pa_most_active: Most virtuous administration
@@ -445,7 +449,7 @@ en:
       additional_features: Additional features
       see_more: See all
       others_info: Others information
-      software_type: software type
+      type: Type
       public_entities: public entities
       go_to_detail: go to detail
       view_all_photos: View all the images

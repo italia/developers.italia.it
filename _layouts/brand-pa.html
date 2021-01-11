@@ -51,16 +51,16 @@ layout: default-pa
               {% if software.publiccode.it.riuso.codiceIPA != nil %}
               <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                 <a href="{{sw_url}}" class="d-block decoration-none ">
-                  
+
                   {% if software.publiccode.it.riuso.codiceIPA != nil %}
-                  <p class="icon-type-public-sw">{{ t.software.reuse_software | upcase }}</p>
+                  <p class="icon-type-software_reuse">{{ t.software.software_reuse | upcase }}</p>
                   {% else %}
-                  <p class="icon-type-generic-sw">{{ t.software.software_open | upcase }}</p>
+                  <p class="icon-type-software_open">{{ t.software.software_open | upcase }}</p>
                   {% endif %}
 
                   {% assign paClasses = "main-image" %}
-                  {% include display-logo.html 
-                    logo = software.publiccode.logo 
+                  {% include display-logo.html
+                    logo = software.publiccode.logo
                     id = software.id
                     codiceIPA = software.publiccode.it.riuso.codiceIPA
                     screenshots = description.screenshots
