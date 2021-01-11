@@ -18,5 +18,6 @@ import 'bootstrap-italia/src/js/plugins/custom-select.js'
 import './js/github-issues';
 
 import './js/swagger-custom';
+import './js/search.js';
 
-import './scss/main.scss'
+import './scss/main.scss';

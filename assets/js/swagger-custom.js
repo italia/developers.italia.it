@@ -51,9 +51,11 @@ if (process.env.NODE_ENV === "development") {
   document.body.appendChild(script);
 }
 
-SwaggerUI({
-  dom_id: "#swagger",
-  url: window.swaggerUrl,
-  plugins: [CustomLayoutPlugin],
-  layout: "CustomLayout"
-});
+if (document.getElementById('swagger')) {
+  SwaggerUI({
+    dom_id: "#swagger",
+    url: window.swaggerUrl,
+    plugins: [CustomLayoutPlugin],
+    layout: "CustomLayout"
+  });
+}

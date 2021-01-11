@@ -14,7 +14,8 @@
         "owl.carousel": "^2.3.4",
         "perfect-scrollbar": "^1.5.0",
         "photoswipe": "^4.1.3",
-        "react": "^16.13.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
         "select2": "^4.0.3",
         "swagger-ui": "^3.32.5"
     },
