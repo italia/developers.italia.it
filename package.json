@@ -10,7 +10,6 @@
         "handlebars": "^4.0.11",
         "handlebars-loader": "^1.7.1",
         "jquery": "^3.5.0",
-        "moment": "^2.27.0",
         "owl.carousel": "^2.3.4",
         "perfect-scrollbar": "^1.5.0",
         "photoswipe": "^4.1.3",
