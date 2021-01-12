@@ -2,8 +2,6 @@
 
 import 'bootstrap';
 
-import moment from 'moment';
-
 import 'datatables.net';
 
 import './js/esQuery';
