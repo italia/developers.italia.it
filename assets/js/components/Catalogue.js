@@ -23,11 +23,11 @@ export const Catalogue = () => {
   const sortBy = useSelector((state) => state.query.sortBy);
 
   const [catalogueData, setCatalogueData] = useState([]);
+  const [total, setTotal] = useState(null);
 
   useEffect(() => {
-    console.log('effect');
     const query = async () => {
-      const results = await search(searchType, {
+      const [results, total] = await search(searchType, {
         from: 0,
         filters: {
           categories: filterCategories,
@@ -36,9 +36,10 @@ export const Catalogue = () => {
         },
         searchValue,
         sortBy,
-        size: 350,
+        size: 12,
       });
       setCatalogueData(results);
+      setTotal(total);
     };
     query();
   }, [searchType, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy]);
@@ -50,7 +51,7 @@ export const Catalogue = () => {
       <div className="row">
         <CatalogueFilters />
         <div className="col-md-9">
-          <CatalogueSummary itemCount={catalogueData.length} />
+          <CatalogueSummary itemCount={total} />
           <CatalogueItems items={catalogueData} />
         </div>
       </div>

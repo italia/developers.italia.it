@@ -1,6 +1,26 @@
 export const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 export const SET_FILTERS_CATEGORIES = 'SET_FILTERS_CATEGORIES';
 export const SET_FILTERS_INTENDED_AUDIENCES = 'SET_FILTERS_INTENDED_AUDIENCES';
-export const SET_FILTERS_DEVELOPMENT_STATUTES = 'SET_FILTERS_DEVELOPMENT_STATUTES';
+export const SET_FILTERS_DEVELOPMENT_STATUSES = 'SET_FILTERS_DEVELOPMENT_STATUSES';
 export const SET_SORT_BY = 'SET_SORT_BY';
 export const SET_SEARCH_TYPE = 'SET_SEARCH_TYPE';
+
+export const setFilterCategories = (categories) => ({ type: SET_FILTERS_CATEGORIES, value: categories });
+export const setFilterDevelopmentStatuses = (statuses) => ({ type: SET_FILTERS_DEVELOPMENT_STATUSES, value: statuses });
+export const setFilterIntendedAudience = (intendedAudience) => ({
+  type: SET_FILTERS_DEVELOPMENT_STATUSES,
+  value: intendedAudience,
+});
+export const setSearchType = (searchType) => ({
+  type: SET_SEARCH_TYPE,
+  value: searchType,
+});
+export const setSortBy = (sortBy) => ({
+  type: SET_SORT_BY,
+  value: { field: sortBy },
+});
+
+export const setSearchValue = (searchValue) => ({
+  type: SET_SEARCH_VALUE,
+  value: searchValue,
+});

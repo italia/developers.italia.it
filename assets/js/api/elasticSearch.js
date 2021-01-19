@@ -170,5 +170,5 @@ const executeQuery = async ({ type, query, sort, from, size }) => {
     size,
   };
   const results = await client.search(params);
-  return results.hits.hits;
+  return [results.hits.hits, results.hits.total];
 };

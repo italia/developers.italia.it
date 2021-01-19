@@ -53,7 +53,6 @@ const useStyles = createUseStyles({
 
 export const CatalogueItem = ({ item }) => {
   const l10NLabels = getL10NLabels();
-  console.log(item);
   const classes = useStyles(item);
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3">

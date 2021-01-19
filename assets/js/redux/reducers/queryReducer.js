@@ -1,6 +1,6 @@
 import {
   SET_FILTERS_CATEGORIES,
-  SET_FILTERS_DEVELOPMENT_STATUTES,
+  SET_FILTERS_DEVELOPMENT_STATUSES,
   SET_FILTERS_INTENDED_AUDIENCES,
   SET_SEARCH_TYPE,
   SET_SEARCH_VALUE,
@@ -26,7 +26,7 @@ export default function (state = initialState, action) {
         ...state,
         filterCategories: action.value,
       };
-    case SET_FILTERS_DEVELOPMENT_STATUTES:
+    case SET_FILTERS_DEVELOPMENT_STATUSES:
       return {
         ...state,
         filterDevelopmentStatuses: action.value,

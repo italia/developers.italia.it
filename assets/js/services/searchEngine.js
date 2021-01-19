@@ -8,7 +8,6 @@ import {
   querySoftwareOpenSource,
   querySoftwareReuse,
 } from '../api/elasticSearch.js';
-import { getL10NLabels } from '../l10nUtils.js';
 
 // Initial state for the catalogue search
 const urlSearchParams = new URLSearchParams(window.location.search);
@@ -34,9 +33,9 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
     from,
     size,
   };
-  const results = await searchItems[type ?? ALL_CATALOGUE](params);
+  const [results, total] = await searchItems[type ?? ALL_CATALOGUE](params);
   const items = mapESResultsToItems(results);
-  return items;
+  return [items, total];
 };
 
 // TODO: make this switch more readable
