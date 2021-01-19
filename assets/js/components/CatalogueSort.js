@@ -1,19 +1,12 @@
-import React, { useCallback } from 'react';
-import { getL10NLabels } from '../utils/l10n.js';
+import React from 'react';
+import { l10NLabels } from '../utils/l10n.js';
 import { useDispatch } from 'react-redux';
 import { setSortBy } from '../redux/actions.js';
 import { initialSort } from '../utils/urlSearchParams.js';
 
 export const CatalogueSort = React.memo(() => {
+  console.log('CatalogueSort');
   const dispatch = useDispatch();
-  const handleChangeSorting = useCallback(
-    (e) => {
-      dispatch(setSortBy(e.target.value));
-    },
-    [dispatch]
-  );
-
-  const l10NLabels = getL10NLabels();
   return (
     <div className="col-md-6">
       <div className="d-flex justify-content-end align-items-center">
@@ -22,7 +15,7 @@ export const CatalogueSort = React.memo(() => {
           <select
             aria-label="sort-by"
             className="form-control"
-            onChange={handleChangeSorting}
+            onChange={(e) => dispatch(setSortBy(e.target.value))}
             defaultValue={initialSort}
           >
             <option value="relevance">{l10NLabels.software.sort_by_relevance}</option>

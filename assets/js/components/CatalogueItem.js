@@ -1,5 +1,5 @@
 import React from 'react';
-import { getL10NLabels } from '../utils/l10n.js';
+import { l10NLabels } from '../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -52,7 +52,6 @@ const useStyles = createUseStyles({
 });
 
 export const CatalogueItem = ({ item }) => {
-  const l10NLabels = getL10NLabels();
   const classes = useStyles(item);
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3">

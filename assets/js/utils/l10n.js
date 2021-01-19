@@ -11,7 +11,7 @@ import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 const lang = 'it';
 const l10n = yaml.load(l10nYml);
 
-export const getL10NLabels = () => l10n[lang]['t'];
+export const l10NLabels = l10n[lang]['t'];
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);

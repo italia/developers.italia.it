@@ -1,10 +1,5 @@
-import React from 'react';
-import {
-  getL10NLabels,
-  getSoftwareCategories,
-  getSoftwareDevelopmentStatuses,
-  getSoftwareScopes,
-} from '../utils/l10n.js';
+import React, { useMemo } from 'react';
+import { l10NLabels, getSoftwareCategories, getSoftwareDevelopmentStatuses, getSoftwareScopes } from '../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 import { useDispatch } from 'react-redux';
 import { setFilterCategories, setFilterDevelopmentStatuses, setFilterIntendedAudience } from '../redux/actions.js';
@@ -24,18 +19,13 @@ const defaultCategories = initialCategories.reduce((acc, filterValue) => {
   return acc;
 }, {});
 
+// N.B. In case of input props we should use useMemo and useCallback optimization
 export const CatalogueFilters = React.memo(() => {
   console.log('CatalogueFilters');
   const dispatch = useDispatch();
   const softwareCategories = getSoftwareCategories();
   const softwareScopes = getSoftwareScopes();
   const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
-  const l10NLabels = getL10NLabels();
-  const handleOnChangeFilterCategories = (values) => dispatch(setFilterCategories(getFiltersFromUserInput(values)));
-  const handleOnChangeFilterDevelopmentStatuses = (values) =>
-    dispatch(setFilterDevelopmentStatuses(getFiltersFromUserInput(values)));
-  const handleOnChangeFilterIntendedAudiences = (values) =>
-    dispatch(setFilterIntendedAudience(getFiltersFromUserInput(values)));
 
   return (
     <div className="col-md-3 d-none d-md-block">
@@ -44,17 +34,17 @@ export const CatalogueFilters = React.memo(() => {
         title={l10NLabels.software.categories}
         filters={softwareCategories}
         defaultValues={defaultCategories}
-        onChange={handleOnChangeFilterCategories}
+        onChange={(values) => dispatch(setFilterCategories(getFiltersFromUserInput(values)))}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.intended_audience}
         filters={softwareScopes}
-        onChange={handleOnChangeFilterIntendedAudiences}
+        onChange={(values) => dispatch(setFilterDevelopmentStatuses(getFiltersFromUserInput(values)))}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.development_status}
         filters={softwareDevelopmentStatuses}
-        onChange={handleOnChangeFilterDevelopmentStatuses}
+        onChange={(values) => dispatch(setFilterDevelopmentStatuses(getFiltersFromUserInput(values)))}
       />
     </div>
   );

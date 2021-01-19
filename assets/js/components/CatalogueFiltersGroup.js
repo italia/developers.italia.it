@@ -5,7 +5,7 @@ import { createUseStyles } from 'react-jss';
 const useStyles = createUseStyles({
   container: {
     composes: 'mt-5',
-    maxHeight: '500px',
+    maxHeight: '513px',
     overflow: 'scroll',
     paddingLeft: '2px',
   },
@@ -16,6 +16,9 @@ const useStyles = createUseStyles({
     marginRight: '8px',
   },
   label: {
+    paddingTop: '1px',
+    paddingBottom: '8px',
+    marginBottom: '0px',
     display: 'flex',
     textTransform: 'capitalize',
   },
@@ -30,10 +33,15 @@ const useStyles = createUseStyles({
 });
 
 export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues = {}, onChange }) => {
+  console.log('CatalogueFiltersGroup');
   const classes = useStyles();
   const { register, getValues } = useForm({
     defaultValues,
   });
+  const handleOnChangeFilter = () => {
+    const values = getValues();
+    onChange(values);
+  };
   return (
     <div className={classes.container}>
       <p className={classes.title}> {title} </p>
@@ -44,10 +52,7 @@ export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues
             type="checkbox"
             name={key}
             ref={register}
-            onChange={() => {
-              const values = getValues();
-              onChange(values);
-            }}
+            onChange={handleOnChangeFilter}
           />
           {value}
         </label>

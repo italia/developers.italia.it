@@ -5,15 +5,17 @@ import { CatalogueItems } from './CatalogueItems.js';
 import { CatalogueSummary } from './CatalogueSummary.js';
 import { useSelector } from 'react-redux';
 import { createUseStyles } from 'react-jss';
+import { CatalogueNoResults } from './CatalogueNoResults.js';
 
 const useStyle = createUseStyles({
   container: {
     composes: 'container',
-    marginTop: '5rem',
+    marginTop: '3.5rem',
   },
 });
 
 export const Catalogue = () => {
+  console.log('Catalogue');
   const classes = useStyle();
   const filterCategories = useSelector((state) => state.query.filterCategories);
   const filterDevelopmentStatuses = useSelector((state) => state.query.filterDevelopmentStatuses);
@@ -22,7 +24,7 @@ export const Catalogue = () => {
   const searchValue = useSelector((state) => state.query.searchValue);
   const sortBy = useSelector((state) => state.query.sortBy);
 
-  const [catalogueData, setCatalogueData] = useState([]);
+  const [catalogueData, setCatalogueData] = useState(null);
   const [total, setTotal] = useState(null);
 
   useEffect(() => {
@@ -44,15 +46,22 @@ export const Catalogue = () => {
     query();
   }, [searchType, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy]);
 
-  console.log('test');
+  // First mount, waiting for data
+  if (catalogueData === null) return <></>;
 
   return (
     <div className={classes.container}>
       <div className="row">
         <CatalogueFilters />
         <div className="col-md-9">
-          <CatalogueSummary itemCount={total} />
-          <CatalogueItems items={catalogueData} />
+          {catalogueData.length > 0 ? (
+            <>
+              <CatalogueSummary itemCount={total} />
+              <CatalogueItems items={catalogueData} />
+            </>
+          ) : (
+            <CatalogueNoResults />
+          )}
         </div>
       </div>
     </div>

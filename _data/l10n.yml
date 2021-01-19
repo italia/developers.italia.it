@@ -157,6 +157,9 @@ it:
       categories: Categorie
       intended_audience: Ambito di applicazione
       results: risultati
+      no_results: Ops! Nessun risultato trovato
+      retry_search: La ricerca non ha prodotto nessun risultato. Prova un'altra chiave di ricerca.
+      try_new_search: Prova una nuova ricerca
       variant_by: Variante di
       published_by: Pubblicato da
       software_maintained_by: Software mantenuto da
@@ -397,6 +400,9 @@ en:
       categories: Categories
       intended_audience: Intended Audience
       results: results
+      no_results: Ops! No results found
+      retry_search: The search did not match any results. Try searching other terms.
+      try_new_search: Try a new search
       variant_by: Variant of
       published_by: Published by
       software_maintained_by: Software maintained by

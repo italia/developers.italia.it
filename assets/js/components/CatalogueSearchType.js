@@ -1,6 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
-import { getL10NLabels } from '../utils/l10n.js';
+import { l10NLabels } from '../utils/l10n.js';
 import { PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchType } from '../redux/actions.js';
@@ -27,14 +27,18 @@ const useStyles = createUseStyles({
 });
 
 export const CatalogueSearchType = React.memo(() => {
+  console.log('CatalogueSearchType');
   const classes = useStyles();
   const searchType = useSelector((state) => state.query.searchType);
   const dispatch = useDispatch();
-  const l10NLabels = getL10NLabels();
   const softwareTypes = {
     [SOFTWARE_OPEN]: l10NLabels['software'][SOFTWARE_OPEN],
     [SOFTWARE_REUSE]: l10NLabels['software'][SOFTWARE_REUSE],
     [PLATFORM]: l10NLabels['software']['platforms'],
+  };
+  const handleOnChangeSearchType = (e) => {
+    const newSearchType = e.target.name === searchType ? null : e.target.name;
+    dispatch(setSearchType(newSearchType));
   };
   return (
     <div className={classes.container}>
@@ -46,10 +50,7 @@ export const CatalogueSearchType = React.memo(() => {
             checked={key === searchType}
             type="checkbox"
             name={key}
-            onChange={(e) => {
-              const newSearchType = e.target.name === searchType ? null : e.target.name;
-              dispatch(setSearchType(newSearchType));
-            }}
+            onChange={handleOnChangeSearchType}
           />
           {value}
         </label>
