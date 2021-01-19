@@ -1,28 +1,46 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { createUseStyles } from 'react-jss';
 
-export const CatalogueFiltersGroup = React.memo(({ filters, defaultValues = {}, onChange }) => {
+const useStyles = createUseStyles({
+  checkbox: {
+    flexShrink: 0,
+    width: '24px',
+    height: '24px',
+    marginRight: '8px',
+  },
+  label: {
+    display: 'flex',
+    textTransform: 'capitalize',
+  },
+  title: {
+    textTransform: 'uppercase',
+    fontWeight: '600',
+  },
+});
+
+export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues = {}, onChange }) => {
+  const classes = useStyles();
   const { register, getValues } = useForm({
     defaultValues,
   });
   return (
-    <div id={'list-type'}>
+    <div className="mt-5">
+      <p className={classes.title}> {title} </p>
       {Object.entries(filters).map(([key, value]) => (
-        <div key={key} className="form-check">
-          <label className="form-check-label">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              name={key}
-              ref={register}
-              onChange={() => {
-                const values = getValues();
-                onChange(values);
-              }}
-            />
-            <span> {value} </span>
-          </label>
-        </div>
+        <label key={key} className={classes.label}>
+          <input
+            className={classes.checkbox}
+            type="checkbox"
+            name={key}
+            ref={register}
+            onChange={() => {
+              const values = getValues();
+              onChange(values);
+            }}
+          />
+          {value}
+        </label>
       ))}
     </div>
   );

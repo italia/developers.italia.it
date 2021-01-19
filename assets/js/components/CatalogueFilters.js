@@ -69,48 +69,31 @@ export const CatalogueFilters = React.memo(() => {
 
   return (
     <div className="col-md-3 d-none d-md-block">
-      <div className="type">
-        <p className="head"> {l10NLabels.software.type} </p>
-        <div id={'list-type'}>
-          {
-            <CatalogueFiltersGroup
-              filters={softwareTypes}
-              defaultValues={initialSearchType ? { [initialSearchType]: true } : {}}
-              onChange={handleOnChangeSearchType}
-            />
-          }
-        </div>
-      </div>
-      <div className="arguments">
-        <p className="head">{l10NLabels.software.categories}</p>
-        <div id="list-tags">
-          <CatalogueFiltersGroup
-            filters={softwareCategories}
-            defaultValues={initialCategories.reduce((acc, filterValue) => {
-              acc[filterValue] = true;
-              return acc;
-            }, {})}
-            onChange={handleOnChangeFilterCategories}
-          />
-        </div>
-      </div>
-      <div className="scopes">
-        <p className="head">{l10NLabels.software.intended_audience}</p>
-        <div id="list-scopes">
-          {<CatalogueFiltersGroup filters={softwareScopes} onChange={handleOnChangeFilterIntendedAudiences} />}
-        </div>
-      </div>
-      <div className="status">
-        <p className="head">{l10NLabels.software.development_status}</p>
-        <div id="list-status">
-          {
-            <CatalogueFiltersGroup
-              filters={softwareDevelopmentStatuses}
-              onChange={handleOnChangeFilterDevelopmentStatuses}
-            />
-          }
-        </div>
-      </div>
+      <CatalogueFiltersGroup
+        title={l10NLabels.software.type}
+        filters={softwareTypes}
+        defaultValues={initialSearchType ? { [initialSearchType]: true } : {}}
+        onChange={handleOnChangeSearchType}
+      />
+      <CatalogueFiltersGroup
+        title={l10NLabels.software.categories}
+        filters={softwareCategories}
+        defaultValues={initialCategories.reduce((acc, filterValue) => {
+          acc[filterValue] = true;
+          return acc;
+        }, {})}
+        onChange={handleOnChangeFilterCategories}
+      />
+      <CatalogueFiltersGroup
+        title={l10NLabels.software.intended_audience}
+        filters={softwareScopes}
+        onChange={handleOnChangeFilterIntendedAudiences}
+      />
+      <CatalogueFiltersGroup
+        title={l10NLabels.software.development_status}
+        filters={softwareDevelopmentStatuses}
+        onChange={handleOnChangeFilterDevelopmentStatuses}
+      />
     </div>
   );
 });

@@ -184,6 +184,7 @@ it:
       contract_with: Contratto con
       last_release: Ultimo rilascio
       license: Licenza
+      platform: Piattaforma
       platforms: Piattaforme
       dependencies_list: Lista dipendenze
       dependencies_oss: OSS
@@ -424,6 +425,7 @@ en:
       contract_with: Contract with
       last_release: Last release
       license: License
+      platform: Platform
       platforms: Platforms
       dependencies_list: List of dependencies
       dependencies_oss: OSS

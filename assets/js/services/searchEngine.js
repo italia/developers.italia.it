@@ -125,7 +125,7 @@ const newsItem = (source) => ({
 const platformItem = (source) => {
   const description = cropString(source.description);
   return {
-    category: 'platforms',
+    category: 'platform',
     description,
     icon: `icon-type-platform`,
     logo: source.logo ?? '/assets/images/cover_piattaforme.png',
@@ -154,4 +154,4 @@ const pageItem = (source) => ({
   url: source.url,
 });
 
-const cropString = (value) => (value.length >= 100 ? value.substr(0, 100).concat('...') : value); // TODO: use css for this
+const cropString = (value) => (value.length >= 100 ? value.substr(0, 100).concat('...') : value);

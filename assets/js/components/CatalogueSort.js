@@ -20,10 +20,10 @@ export const CatalogueSort = React.memo(() => {
 
   const l10NLabels = getL10NLabels();
   return (
-    <div className="sortingBy col-md-6">
-      <div className="d-flex justify-content-end">
+    <div className="col-md-6">
+      <div className="d-flex justify-content-end align-items-center">
         <p>{l10NLabels.software.sort_by}</p>
-        <div className="form-group">
+        <div className="mb-3 ml-3">
           <select
             aria-label="sort-by"
             className="form-control"
