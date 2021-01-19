@@ -6,6 +6,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSearchType } from '../redux/actions.js';
 
 const useStyles = createUseStyles({
+  container: {
+    composes: 'mt-5',
+    paddingLeft: '2px',
+  },
   checkbox: {
     flexShrink: 0,
     width: '24px',
@@ -33,7 +37,7 @@ export const CatalogueSearchType = React.memo(() => {
     [PLATFORM]: l10NLabels['software']['platforms'],
   };
   return (
-    <div className="mt-5">
+    <div className={classes.container}>
       <p className={classes.title}> {l10NLabels.software.type} </p>
       {Object.entries(softwareTypes).map(([key, value]) => (
         <label key={key} className={classes.label}>

@@ -3,6 +3,12 @@ import { useForm } from 'react-hook-form';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
+  container: {
+    composes: 'mt-5',
+    maxHeight: '500px',
+    overflow: 'scroll',
+    paddingLeft: '2px',
+  },
   checkbox: {
     flexShrink: 0,
     width: '24px',
@@ -14,6 +20,10 @@ const useStyles = createUseStyles({
     textTransform: 'capitalize',
   },
   title: {
+    position: 'absolute',
+    backgroundColor: 'var(--white)',
+    width: '100%',
+    paddingBottom: '8px',
     textTransform: 'uppercase',
     fontWeight: '600',
   },
@@ -25,7 +35,7 @@ export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues
     defaultValues,
   });
   return (
-    <div className="mt-5">
+    <div className={classes.container}>
       <p className={classes.title}> {title} </p>
       {Object.entries(filters).map(([key, value]) => (
         <label key={key} className={classes.label}>
