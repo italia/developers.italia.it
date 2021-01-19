@@ -32,9 +32,9 @@ export const CatalogueSearchType = React.memo(() => {
   const searchType = useSelector((state) => state.query.searchType);
   const dispatch = useDispatch();
   const softwareTypes = {
+    [PLATFORM]: l10NLabels['software']['platforms'],
     [SOFTWARE_OPEN]: l10NLabels['software'][SOFTWARE_OPEN],
     [SOFTWARE_REUSE]: l10NLabels['software'][SOFTWARE_REUSE],
-    [PLATFORM]: l10NLabels['software']['platforms'],
   };
   const handleOnChangeSearchType = (e) => {
     const newSearchType = e.target.name === searchType ? null : e.target.name;

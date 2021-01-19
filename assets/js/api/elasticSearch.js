@@ -2,7 +2,8 @@ import elasticsearch from 'elasticsearch';
 import { buildFilter, buildSort } from './elasticSearchUtils.js';
 
 const client = new elasticsearch.Client({
-  host: 'https://elasticsearch.developers.italia.it',
+  // eslint-disable-next-line no-undef
+  host: process.env.ELASTICSEARCH_FRONTEND_URL,
 });
 
 const lang = 'it'; // TODO: i18n;

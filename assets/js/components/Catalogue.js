@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import { search } from '../services/searchEngine.js';
 import { CatalogueFilters } from './CatalogueFilters.js';
 import { CatalogueItems } from './CatalogueItems.js';
@@ -14,8 +14,19 @@ const useStyle = createUseStyles({
   },
 });
 
+const initial = {
+  results: null,
+  total: null,
+};
+
+const reducer = (state, action) => ({
+  results: action.results,
+  total: action.total,
+});
+
 export const Catalogue = () => {
   console.log('Catalogue');
+  const [{ results, total }, dispatch] = useReducer(reducer, initial);
   const classes = useStyle();
   const filterCategories = useSelector((state) => state.query.filterCategories);
   const filterDevelopmentStatuses = useSelector((state) => state.query.filterDevelopmentStatuses);
@@ -23,9 +34,6 @@ export const Catalogue = () => {
   const searchType = useSelector((state) => state.query.searchType);
   const searchValue = useSelector((state) => state.query.searchValue);
   const sortBy = useSelector((state) => state.query.sortBy);
-
-  const [catalogueData, setCatalogueData] = useState(null);
-  const [total, setTotal] = useState(null);
 
   useEffect(() => {
     const query = async () => {
@@ -40,24 +48,26 @@ export const Catalogue = () => {
         sortBy,
         size: 12,
       });
-      setCatalogueData(results);
-      setTotal(total);
+      dispatch({
+        results,
+        total,
+      });
     };
     query();
   }, [searchType, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy]);
 
   // First mount, waiting for data
-  if (catalogueData === null) return <></>;
+  if (results === null) return <></>;
 
   return (
     <div className={classes.container}>
       <div className="row">
         <CatalogueFilters />
         <div className="col-md-9">
-          {catalogueData.length > 0 ? (
+          {results.length > 0 ? (
             <>
               <CatalogueSummary itemCount={total} />
-              <CatalogueItems items={catalogueData} />
+              <CatalogueItems items={results} />
             </>
           ) : (
             <CatalogueNoResults />
