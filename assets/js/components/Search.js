@@ -6,7 +6,7 @@ import {
   SOFTWARE_OPEN,
   PLATFORM,
   ADMINISTRATION,
-} from '../constants.js';
+} from '../utils/constants.js';
 
 const lang = 'it';
 

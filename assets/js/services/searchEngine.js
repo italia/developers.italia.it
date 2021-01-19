@@ -1,4 +1,4 @@
-import { ADMINISTRATION, ALL_CATALOGUE, ALL_SITE, API, PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../constants.js';
+import { ADMINISTRATION, ALL_CATALOGUE, ALL_SITE, API, PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
 import {
   queryAdministration,
   queryAllCatalogue,

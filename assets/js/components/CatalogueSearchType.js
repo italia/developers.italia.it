@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { getL10NLabels } from '../utils/l10n.js';
-import { PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../constants.js';
+import { PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { setSearchType } from '../redux/actions.js';
 
