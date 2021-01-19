@@ -3,7 +3,7 @@ import { getL10NLabels } from '../l10nUtils.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { SET_SORT_BY } from '../redux/actions.js';
 
-export const CatalogueSort = () => {
+export const CatalogueSort = React.memo(() => {
   const sortCriteria = useSelector((state) => state.query.sortBy);
   const dispatch = useDispatch();
   const handleChangeSorting = useCallback(
@@ -39,4 +39,6 @@ export const CatalogueSort = () => {
       </div>
     </div>
   );
-};
+});
+
+CatalogueSort.displayName = 'CatalogueSort';

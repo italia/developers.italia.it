@@ -68,7 +68,7 @@ const mapESResultsToItems = (results) => {
 const administrationItem = (source) => {
   const language = 'it';
   return {
-    category: 'administration', // TODO: i18n
+    category: 'administration',
     description: '',
     icon: 'icon-type-administration',
     logo: '/assets/images/cover_amministrazioni.png',
@@ -79,7 +79,6 @@ const administrationItem = (source) => {
 
 const softwareItem = (source) => {
   const language = 'it'; // TODO i18n;
-  const l10n = getL10NLabels();
 
   const descriptionField =
     source.publiccode.description?.[language] ??
@@ -103,7 +102,7 @@ const softwareItem = (source) => {
   const url = `/${language}/software/${source.slug.toLowerCase()}`;
 
   return {
-    category: l10n.software[category],
+    category,
     description,
     icon,
     logo,
@@ -115,7 +114,7 @@ const softwareItem = (source) => {
 const getSoftwareCategory = (IPACode) => (IPACode ? SOFTWARE_REUSE : SOFTWARE_OPEN);
 
 const newsItem = (source) => ({
-  category: source.type,
+  category: 'news',
   description: cropString(source.subtitle),
   icon: 'icon-type-news',
   logo: source.image,
@@ -126,7 +125,7 @@ const newsItem = (source) => ({
 const platformItem = (source) => {
   const description = cropString(source.description);
   return {
-    category: source.type, // TODO: i18n
+    category: 'platforms',
     description,
     icon: `icon-type-platform`,
     logo: source.logo ?? '/assets/images/cover_piattaforme.png',
@@ -137,7 +136,7 @@ const platformItem = (source) => {
 
 const apiItem = (source) => {
   return {
-    category: source.type, // TODO: i18n
+    category: 'api',
     description: cropString(source.abstract),
     icon: `icon-type-api`,
     logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
@@ -147,7 +146,7 @@ const apiItem = (source) => {
 };
 
 const pageItem = (source) => ({
-  category: 'page', // TODO: i18n
+  category: 'page',
   description: cropString(source.text),
   icon: `icon-type-unknown`,
   logo: source.image ?? '/assets/icons/logo-it.png',

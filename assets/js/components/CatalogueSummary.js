@@ -3,7 +3,7 @@ import { getL10NLabels } from '../l10nUtils.js';
 import { CatalogueSort } from './CatalogueSort.js';
 import { useSelector } from 'react-redux';
 
-export const CatalogueSummary = React.memo(() => {
+export const CatalogueSummary = React.memo(({ itemCount }) => {
   console.log('CatalogueSummary');
   const l10NLabels = getL10NLabels();
   const searchValue = useSelector((state) => state.query.searchValue);
@@ -14,7 +14,9 @@ export const CatalogueSummary = React.memo(() => {
       </h1>
       <div className="abstract-sorting row row-eq-height d-none d-md-flex">
         <div className="results-number col-md-6 d-flex">
-          <p>1 {l10NLabels.software.results}</p>
+          <p>
+            {itemCount} {l10NLabels.software.results}
+          </p>
         </div>
         <CatalogueSort />
       </div>

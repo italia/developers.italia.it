@@ -41,7 +41,7 @@ export const Catalogue = () => {
       <div className="row">
         <CatalogueFilters />
         <div className="col-md-9">
-          <CatalogueSummary />
+          <CatalogueSummary itemCount={catalogueData.length} />
           <CatalogueItems items={catalogueData} />
         </div>
       </div>
