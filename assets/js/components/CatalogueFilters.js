@@ -4,12 +4,12 @@ import {
   getSoftwareCategories,
   getSoftwareDevelopmentStatuses,
   getSoftwareScopes,
-} from '../l10nUtils.js';
+} from '../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 import { useDispatch } from 'react-redux';
 import { setFilterCategories, setFilterDevelopmentStatuses, setFilterIntendedAudience } from '../redux/actions.js';
-import { initialCategories } from '../services/searchEngine.js';
 import { CatalogueSearchType } from './CatalogueSearchType.js';
+import { initialCategories } from '../utils/urlSearchParams.js';
 
 const getFiltersFromUserInput = (values) => {
   const filters = Object.entries(values).reduce((acc, [key, value]) => {

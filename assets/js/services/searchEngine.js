@@ -1,4 +1,4 @@
-import { ADMINISTRATION, ALL_SITE, ALL_CATALOGUE, API, PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../constants.js';
+import { ADMINISTRATION, ALL_CATALOGUE, ALL_SITE, API, PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../constants.js';
 import {
   queryAdministration,
   queryAllCatalogue,
@@ -6,15 +6,8 @@ import {
   queryApi,
   queryPlatform,
   querySoftwareOpenSource,
-  querySoftwareReuse,
+  querySoftwareReuse
 } from '../api/elasticSearch.js';
-
-// Initial state for the catalogue search
-const urlSearchParams = new URLSearchParams(window.location.search);
-export const initialSearchValue = urlSearchParams.get('keyword');
-export const initialSearchType = urlSearchParams.get('type');
-export const initialSort = urlSearchParams.get('sort');
-export const initialCategories = urlSearchParams.getAll('categories');
 
 export const search = async (type, { searchValue, filters = {}, sortBy = {}, from = 0, size = 12 } = {}) => {
   const searchItems = {

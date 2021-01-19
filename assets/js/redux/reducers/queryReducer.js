@@ -6,7 +6,7 @@ import {
   SET_SEARCH_VALUE,
   SET_SORT_BY,
 } from '../actions.js';
-import { initialCategories, initialSearchValue, initialSearchType, initialSort } from '../../services/searchEngine.js';
+import { initialCategories, initialSearchType, initialSearchValue, initialSort } from '../../utils/urlSearchParams.js';
 
 const initialState = {
   filterCategories: initialCategories,
@@ -16,8 +16,6 @@ const initialState = {
   searchValue: initialSearchValue,
   sortBy: initialSort ? { field: initialSort } : {},
 };
-
-console.log(initialState);
 
 export default function (state = initialState, action) {
   switch (action.type) {

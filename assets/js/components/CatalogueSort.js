@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
-import { getL10NLabels } from '../l10nUtils.js';
+import { getL10NLabels } from '../utils/l10n.js';
 import { useDispatch } from 'react-redux';
 import { setSortBy } from '../redux/actions.js';
-import { initialSort } from '../services/searchEngine.js';
+import { initialSort } from '../utils/urlSearchParams.js';
 
 export const CatalogueSort = React.memo(() => {
   const dispatch = useDispatch();

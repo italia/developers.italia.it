@@ -1,5 +1,5 @@
 import React from 'react';
-import { getL10NLabels } from '../l10nUtils.js';
+import { getL10NLabels } from '../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({

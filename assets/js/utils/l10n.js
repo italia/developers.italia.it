@@ -3,10 +3,10 @@
  * They work on the string catalogue used by jekyll
  */
 import yaml from 'js-yaml';
-import softwareCategoriesYml from '!raw-loader!../../_data/software_categories.yml';
-import developmentStatusYml from '!raw-loader!../../_data/development_status.yml';
-import softwareScopesYml from '!raw-loader!../../_data/crawler/software_scopes.yml';
-import l10nYml from '!raw-loader!../../_data/l10n.yml';
+import softwareCategoriesYml from '!raw-loader!../../../_data/software_categories.yml';
+import developmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
+import softwareScopesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
+import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 
 const lang = 'it';
 const l10n = yaml.load(l10nYml);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { getL10NLabels } from '../l10nUtils.js';
+import { getL10NLabels } from '../utils/l10n.js';
 import { CatalogueSort } from './CatalogueSort.js';
 import { useSelector } from 'react-redux';
 import { createUseStyles } from 'react-jss';
