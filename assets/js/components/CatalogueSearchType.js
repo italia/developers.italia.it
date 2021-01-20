@@ -31,11 +31,11 @@ export const CatalogueSearchType = React.memo(() => {
   const classes = useStyles();
   const searchType = useSelector((state) => state.query.searchType);
   const dispatch = useDispatch();
-  const softwareTypes = {
-    [PLATFORM]: l10NLabels['software']['platforms'],
-    [SOFTWARE_OPEN]: l10NLabels['software'][SOFTWARE_OPEN],
-    [SOFTWARE_REUSE]: l10NLabels['software'][SOFTWARE_REUSE],
-  };
+  const softwareTypes = [
+    [PLATFORM, l10NLabels['software']['platforms']],
+    [SOFTWARE_OPEN, l10NLabels['software'][SOFTWARE_OPEN]],
+    [SOFTWARE_REUSE, l10NLabels['software'][SOFTWARE_REUSE]],
+  ];
   const handleOnChangeSearchType = (e) => {
     const newSearchType = e.target.name === searchType ? null : e.target.name;
     dispatch(setSearchType(newSearchType));
@@ -43,7 +43,7 @@ export const CatalogueSearchType = React.memo(() => {
   return (
     <div className={classes.container}>
       <p className={classes.title}> {l10NLabels.software.type} </p>
-      {Object.entries(softwareTypes).map(([key, value]) => (
+      {softwareTypes.map(([key, value]) => (
         <label key={key} className={classes.label}>
           <input
             className={classes.checkbox}

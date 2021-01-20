@@ -16,25 +16,19 @@ export const l10NLabels = l10n[lang]['t'];
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
   // TODO: translation in italian
-  return softwareCategories.reduce((acc, value) => {
-    acc[value] = value.replace(/-/gi, ' ');
-    return acc;
-  }, {});
+  return softwareCategories.map((value) => [value, value.replace(/-/gi, ' ')]);
 };
 
 export const getSoftwareDevelopmentStatuses = () => {
   const softwareDevelopmentStatus = yaml.load(softwareDevelopmentStatusYml);
   return Object.entries(softwareDevelopmentStatus).reduce((acc, [key, value]) => {
-    acc[key] = value[lang];
+    acc.push([key, value[lang]]);
     return acc;
-  }, {});
+  }, []);
 };
 
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
   // TODO: translation in Italian
-  return softwareIntendedAudiences.reduce((acc, value) => {
-    acc[value] = value.replace(/-/gi, ' ');
-    return acc;
-  }, {});
+  return softwareIntendedAudiences.map((value) => [value, value.replace(/-/gi, ' ')]);
 };

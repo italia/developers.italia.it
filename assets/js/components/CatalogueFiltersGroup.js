@@ -47,7 +47,6 @@ const useStyles = createUseStyles({
 
 export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues = {}, onChange }) => {
   console.log('CatalogueFiltersGroup');
-  const filtersArray = Object.entries(filters);
   const [showAll, setShowAll] = useState(false);
   const container = useRef(null);
 
@@ -70,7 +69,7 @@ export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues
       <div className={classes.groupContainer} ref={container}>
         <div className={classes.title}>
           <p className="mb-0"> {title} </p>
-          {filtersArray.length > 10 && (
+          {filters.length > 10 && (
             <div role="button" onClick={handleToogleShowAll}>
               <svg className={classes.expandIcon}>
                 <use xlinkHref={`/assets/svg/sprite.svg#${showAll ? 'it-collapse' : 'it-expand'}`}></use>
@@ -79,7 +78,7 @@ export const CatalogueFiltersGroup = React.memo(({ title, filters, defaultValues
           )}
         </div>
         <div className={classes.filtersContainer}>
-          {filtersArray.map(([key, value]) => (
+          {filters.map(([key, value]) => (
             <label key={key} className={classes.label}>
               <input
                 className={classes.checkbox}
