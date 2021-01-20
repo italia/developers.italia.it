@@ -34,7 +34,7 @@ export const getSoftwareScopes = () => {
   const softwareScopes = yaml.load(softwareScopesYml);
   // TODO: translation in Italian
   return softwareScopes.reduce((acc, value) => {
-    acc[value] = value;
+    acc[value] = value.replace(/-/gi, ' ');
     return acc;
   }, {});
 };
