@@ -15,22 +15,23 @@ const useStyles = createUseStyles({
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100%',
     height: '150px',
-    width: '200px',
+    width: '100%',
     backgroundImage: (item) => `url(${item.logo})`,
   },
   icon: {
     composes: 'icon',
+    width: '100%',
     fontSize: '0.8rem',
     textTransform: 'uppercase',
   },
   title: {
-    composes: 'mt-2',
+    composes: 'pt-3 pt-md-0',
     color: 'var(--black)',
     fontSize: '1.2rem',
     fontWeight: 'bold',
     textDecoration: 'none',
     '&:hover': {
-      composes: 'decoration-none',
+      textDecoration: 'none',
     },
   },
   description: {
@@ -40,30 +41,34 @@ const useStyles = createUseStyles({
     fontWeight: '300',
     textDecoration: 'none',
     '&:hover': {
-      composes: 'decoration-none',
+      textDecoration: 'none',
     },
   },
   readMore: {
     textTransform: 'uppercase',
-    position: 'absolute',
-    bottom: '40px',
     fontWeight: '600',
+    marginTop: 'auto',
+    '&:hover': {
+      textDecoration: 'none',
+    },
   },
 });
 
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3">
+    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3 d-flex flex-column">
       <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
-      <article className="d-flex flex-column align-items-start mb-2 mb-md-5">
+      <div className="my-2 my-md-0">
         <a href={item.url} title={item.name} className={classes.link}>
           <div className={classes.logo}></div>
           <div className={classes.title}>{item.name}</div>
           <div className={classes.description}>{item.description}</div>
-          <div className={classes.readMore}>{l10NLabels.software.read_more} → </div>
         </a>
-      </article>
+      </div>
+      <a href={item.url} title={item.name} className={classes.readMore}>
+        {l10NLabels.software.read_more} →{' '}
+      </a>
     </div>
   );
 };
