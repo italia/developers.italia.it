@@ -1,5 +1,10 @@
 import React from 'react';
-import { l10NLabels, getSoftwareCategories, getSoftwareDevelopmentStatuses, getSoftwareScopes } from '../utils/l10n.js';
+import {
+  l10NLabels,
+  getSoftwareCategories,
+  getSoftwareDevelopmentStatuses,
+  getSoftwareIntendedAudiences,
+} from '../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 import { useDispatch } from 'react-redux';
 import { setFilterCategories, setFilterDevelopmentStatuses, setFilterIntendedAudience } from '../redux/actions.js';
@@ -24,7 +29,7 @@ export const CatalogueFilters = React.memo(() => {
   console.log('CatalogueFilters');
   const dispatch = useDispatch();
   const softwareCategories = getSoftwareCategories();
-  const softwareScopes = getSoftwareScopes();
+  const softwareIntendedAudiences = getSoftwareIntendedAudiences();
   const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
 
   return (
@@ -38,7 +43,7 @@ export const CatalogueFilters = React.memo(() => {
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.intended_audience}
-        filters={softwareScopes}
+        filters={softwareIntendedAudiences}
         onChange={(values) => dispatch(setFilterIntendedAudience(getFiltersFromUserInput(values)))}
       />
       <CatalogueFiltersGroup

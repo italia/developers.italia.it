@@ -4,8 +4,8 @@
  */
 import yaml from 'js-yaml';
 import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
-import developmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
-import softwareScopesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
+import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
+import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 
 const lang = 'it';
@@ -23,17 +23,17 @@ export const getSoftwareCategories = () => {
 };
 
 export const getSoftwareDevelopmentStatuses = () => {
-  const developmentStatus = yaml.load(developmentStatusYml);
-  return Object.entries(developmentStatus).reduce((acc, [key, value]) => {
+  const softwareDevelopmentStatus = yaml.load(softwareDevelopmentStatusYml);
+  return Object.entries(softwareDevelopmentStatus).reduce((acc, [key, value]) => {
     acc[key] = value[lang];
     return acc;
   }, {});
 };
 
-export const getSoftwareScopes = () => {
-  const softwareScopes = yaml.load(softwareScopesYml);
+export const getSoftwareIntendedAudiences = () => {
+  const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
   // TODO: translation in Italian
-  return softwareScopes.reduce((acc, value) => {
+  return softwareIntendedAudiences.reduce((acc, value) => {
     acc[value] = value.replace(/-/gi, ' ');
     return acc;
   }, {});
