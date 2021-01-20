@@ -10,7 +10,7 @@ const useStyle = createUseStyles({
   },
 });
 
-export const CatalogueSummary = React.memo(({ itemCount }) => {
+export const CatalogueSummary = React.memo(({ itemsCount }) => {
   console.log('CatalogueSummary');
   const classes = useStyle();
   const searchValue = useSelector((state) => state.query.searchValue);
@@ -21,7 +21,7 @@ export const CatalogueSummary = React.memo(({ itemCount }) => {
       </h1>
       <div className="border-bottom py-4 row row-eq-height d-none d-md-flex align-items-center">
         <div className="d-flex justify-content-start col-md-6">
-          <p className="font-weight-bold">{itemCount && `${itemCount} ${l10NLabels.software.results}`}</p>
+          <p className="font-weight-bold">{itemsCount && `${itemsCount} ${l10NLabels.software.results}`}</p>
         </div>
         <CatalogueSort />
       </div>

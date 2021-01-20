@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { l10NLabels, getSoftwareCategories, getSoftwareDevelopmentStatuses, getSoftwareScopes } from '../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 import { useDispatch } from 'react-redux';
@@ -28,7 +28,7 @@ export const CatalogueFilters = React.memo(() => {
   const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
 
   return (
-    <div className="col-md-3 d-none d-md-block">
+    <>
       <CatalogueSearchType />
       <CatalogueFiltersGroup
         title={l10NLabels.software.categories}
@@ -39,14 +39,14 @@ export const CatalogueFilters = React.memo(() => {
       <CatalogueFiltersGroup
         title={l10NLabels.software.intended_audience}
         filters={softwareScopes}
-        onChange={(values) => dispatch(setFilterDevelopmentStatuses(getFiltersFromUserInput(values)))}
+        onChange={(values) => dispatch(setFilterIntendedAudience(getFiltersFromUserInput(values)))}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.development_status}
         filters={softwareDevelopmentStatuses}
         onChange={(values) => dispatch(setFilterDevelopmentStatuses(getFiltersFromUserInput(values)))}
       />
-    </div>
+    </>
   );
 });
 
