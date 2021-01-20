@@ -3,7 +3,7 @@
  * They work on the string catalogue used by jekyll
  */
 import yaml from 'js-yaml';
-import softwareCategoriesYml from '!raw-loader!../../../_data/software_categories.yml';
+import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
 import developmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
 import softwareScopesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
@@ -15,8 +15,9 @@ export const l10NLabels = l10n[lang]['t'];
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
-  return Object.entries(softwareCategories).reduce((acc, [key, value]) => {
-    acc[key] = value['en']; // TODO: translation in Italian
+  // TODO: translation in italian
+  return softwareCategories.reduce((acc, value) => {
+    acc[value] = value.replace(/-/gi, ' ');
     return acc;
   }, {});
 };
