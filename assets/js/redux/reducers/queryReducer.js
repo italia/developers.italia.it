@@ -3,18 +3,18 @@ import {
   SET_FILTERS_DEVELOPMENT_STATUSES,
   SET_FILTERS_INTENDED_AUDIENCES,
   SET_FROM,
-  SET_SEARCH_TYPE,
   SET_SEARCH_VALUE,
   SET_SORT_BY,
+  SET_TYPE,
 } from '../actions.js';
-import { initialCategories, initialSearchType, initialSearchValue, initialSort } from '../../utils/urlSearchParams.js';
+import { initialCategories, initialType, initialSearchValue, initialSort } from '../../utils/urlSearchParams.js';
 
 const initialState = {
   filterCategories: initialCategories,
-  filterIntendedAudiences: [],
   filterDevelopmentStatuses: [],
+  filterIntendedAudiences: [],
   from: 0,
-  searchType: initialSearchType,
+  type: initialType,
   searchValue: initialSearchValue,
   sortBy: initialSort ? { field: initialSort } : {},
 };
@@ -44,10 +44,10 @@ export default function (state = initialState, action) {
         ...state,
         from: action.value,
       };
-    case SET_SEARCH_TYPE:
+    case SET_TYPE:
       return {
         ...state,
-        searchType: action.value,
+        type: action.value,
         from: 0,
       };
     case SET_SEARCH_VALUE:

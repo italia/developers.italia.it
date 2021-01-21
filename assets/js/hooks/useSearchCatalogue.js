@@ -42,7 +42,7 @@ export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
   const filterDevelopmentStatuses = useSelector((state) => state.query.filterDevelopmentStatuses);
   const filterIntendedAudiences = useSelector((state) => state.query.filterIntendedAudiences);
   const from = useSelector((state) => state.query.from);
-  const searchType = useSelector((state) => state.query.searchType);
+  const type = useSelector((state) => state.query.type);
   const searchValue = useSelector((state) => state.query.searchValue);
   const sortBy = useSelector((state) => state.query.sortBy);
 
@@ -55,7 +55,7 @@ export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
   useEffect(() => {
     const query = async () => {
       dispatch({ type: 'SET_IS_LOADING' });
-      const [results, total] = await search(searchType, {
+      const [results, total] = await search(type, {
         from,
         filters: {
           categories: filterCategories,
@@ -75,7 +75,7 @@ export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
       });
     };
     query();
-  }, [searchType, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy, from]);
+  }, [type, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy, from]);
 
   return [items, total, fetchMore];
 };

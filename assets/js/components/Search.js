@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { search } from '../services/searchEngine.js';
-import {
-  ALL_SITE,
-  SOFTWARE_REUSE,
-  SOFTWARE_OPEN,
-  PLATFORM,
-  ADMINISTRATION,
-} from '../utils/constants.js';
+import { ALL_SITE, SOFTWARE_REUSE, SOFTWARE_OPEN, PLATFORM, ADMINISTRATION } from '../utils/constants.js';
 
 const lang = 'it';
 
@@ -96,9 +90,7 @@ export const Search = () => {
                     <span className="icon icon-type-platform--gray"></span>piattaforme
                   </a>
                   <a
-                    className={`btn py-2 px-4 mb-2 btn-filter software_open ${
-                      type === SOFTWARE_OPEN ? 'active' : ''
-                    }`}
+                    className={`btn py-2 px-4 mb-2 btn-filter software_open ${type === SOFTWARE_OPEN ? 'active' : ''}`}
                     onClick={() => setType(SOFTWARE_OPEN)}
                   >
                     <span className="icon icon-type-software_open--gray"></span>open software

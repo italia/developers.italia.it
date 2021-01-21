@@ -1,24 +1,7 @@
-import { ADMINISTRATION, ALL_CATALOGUE, ALL_SITE, API, PLATFORM, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
-import {
-  queryAdministration,
-  queryAllCatalogue,
-  queryAllSite,
-  queryApi,
-  queryPlatform,
-  querySoftwareOpenSource,
-  querySoftwareReuse
-} from '../api/elasticSearch.js';
+import { ALL_SITE, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
+import { querySoftware, queryAllSite } from '../api/elasticSearch.js';
 
 export const search = async (type, { searchValue, filters = {}, sortBy = {}, from = 0, size = 12 } = {}) => {
-  const searchItems = {
-    [ADMINISTRATION]: queryAdministration,
-    [ALL_SITE]: queryAllSite,
-    [ALL_CATALOGUE]: queryAllCatalogue,
-    [API]: queryApi,
-    [PLATFORM]: queryPlatform,
-    [SOFTWARE_OPEN]: querySoftwareOpenSource,
-    [SOFTWARE_REUSE]: querySoftwareReuse,
-  };
   const params = {
     searchValue,
     filters,
@@ -26,7 +9,20 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
     from,
     size,
   };
-  const [results, total] = await searchItems[type ?? ALL_CATALOGUE](params);
+
+  let queryResults;
+  if (type === ALL_SITE) {
+    queryResults = await queryAllSite(params);
+  } else if (type === SOFTWARE_OPEN) {
+    queryResults = await querySoftware({ ...params, type: SOFTWARE_OPEN });
+  } else if (type === SOFTWARE_REUSE) {
+    queryResults = await querySoftware({ ...params, type: SOFTWARE_REUSE });
+  } else {
+    // Query all catalogue
+    queryResults = await querySoftware(params);
+  }
+
+  const [results, total] = queryResults;
   const items = mapESResultsToItems(results);
   return [items, total];
 };

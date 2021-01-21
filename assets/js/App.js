@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { Search } from './components/Search.js';
-import { Catalogue } from './components/Catalogue.js';
+import { Catalogue } from './components/Catalogue/Catalogue.js';
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
 

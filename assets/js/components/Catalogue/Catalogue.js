@@ -6,7 +6,7 @@ import { CatalogueView } from './CatalogueView.js';
 const useStyle = createUseStyles({
   container: {
     composes: 'container',
-    marginTop: '3.5rem',
+    marginTop: '2.5rem',
     marginBottom: '6rem',
   },
 });
@@ -18,10 +18,10 @@ export const Catalogue = () => {
   return (
     <div className={classes.container}>
       <div className="row">
-        <div className="col-md-3 d-flex flex-column">
+        <div className="col-lg-3 d-none d-lg-flex flex-column">
           <CatalogueFilters />
         </div>
-        <div className="col-md-9">
+        <div className="col-12 col-lg-9">
           <CatalogueView />
         </div>
       </div>

@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { CatalogueSummary } from './CatalogueSummary.js';
 import { CatalogueItems } from './CatalogueItems.js';
-import { useSearchCatalogue } from '../hooks/useSearchCatalogue.js';
-import { CatalogueNoResults } from './CatalogueNoResults.js';
+import { useSearchCatalogue } from '../../hooks/useSearchCatalogue.js';
 
 export const CatalogueView = React.memo(() => {
   console.log('CatalogueView');
@@ -34,15 +33,8 @@ export const CatalogueView = React.memo(() => {
 
   return (
     <>
-      {partialItems &&
-        (partialItems.length > 0 ? (
-          <>
-            <CatalogueSummary itemsCount={itemsCount} />
-            <CatalogueItems items={partialItems} />
-          </>
-        ) : (
-          <CatalogueNoResults />
-        ))}
+      <CatalogueSummary itemsCount={itemsCount} />
+      {partialItems !== null && <CatalogueItems items={partialItems} />}
       <div ref={infiniteScrollTrigger}></div>
     </>
   );

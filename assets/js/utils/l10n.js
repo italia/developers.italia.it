@@ -7,11 +7,17 @@ import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_c
 import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
 import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
+import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
 
 const lang = 'it';
 const l10n = yaml.load(l10nYml);
 
 export const l10NLabels = l10n[lang]['t'];
+
+export const softwareTypes = [
+  [SOFTWARE_OPEN, l10NLabels['software'][SOFTWARE_OPEN]],
+  [SOFTWARE_REUSE, l10NLabels['software'][SOFTWARE_REUSE]],
+];
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);

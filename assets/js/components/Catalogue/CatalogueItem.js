@@ -1,5 +1,5 @@
 import React from 'react';
-import { l10NLabels } from '../utils/l10n.js';
+import { l10NLabels } from '../../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -11,6 +11,7 @@ const useStyles = createUseStyles({
     },
   },
   logo: {
+    composes: 'mt-2',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: '100%',
@@ -29,6 +30,7 @@ const useStyles = createUseStyles({
     fontSize: '1.2rem',
     fontWeight: 'bold',
     textDecoration: 'none',
+    wordBreak: 'break-word',
     '&:hover': {
       textDecoration: 'none',
     },
@@ -56,7 +58,7 @@ const useStyles = createUseStyles({
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3 d-flex flex-column">
+    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
       <div>
         <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
       </div>
@@ -68,7 +70,7 @@ export const CatalogueItem = ({ item }) => {
         </a>
       </div>
       <a href={item.url} title={item.name} className={classes.readMore}>
-        {l10NLabels.software.read_more} →{' '}
+        {l10NLabels.software.read_more} →
       </a>
     </div>
   );

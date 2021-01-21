@@ -1,5 +1,6 @@
 import elasticsearch from 'elasticsearch';
 import { buildFilter, buildSort } from './elasticSearchUtils.js';
+import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
 
 const client = new elasticsearch.Client({
   // eslint-disable-next-line no-undef
@@ -8,18 +9,47 @@ const client = new elasticsearch.Client({
 
 const lang = 'it'; // TODO: i18n;
 
-export const queryAllCatalogue = async ({ searchValue, filters, sortBy, from, size }) => {
-  const results = await queryAll({ excludePosts: true, searchValue, filters, sortBy, from, size });
+export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
+  const must = [{ term: { _type: 'software' } }];
+  if (searchValue) {
+    must.push({
+      multi_match: {
+        query: searchValue,
+        fields: [
+          'publiccode.name^3',
+          `publiccode.description.${lang}.localizedName^3`,
+          `publiccode.description.${lang}.shortDescription^2`,
+          `publiccode.description.${lang}.longDescription`,
+        ],
+      },
+    });
+  }
+
+  if (type === SOFTWARE_REUSE) {
+    must.push({ exists: { field: 'publiccode.it.riuso.codiceIPA' } });
+  }
+
+  const must_not = [];
+
+  if (type === SOFTWARE_OPEN) {
+    must_not.push(
+      { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
+      { match: { 'publiccode.indendedAudience.unsupportedCountries': 'it' } }
+    );
+  }
+
+  const query = {
+    bool: {
+      filter: buildFilter(filters),
+      must,
+      must_not,
+    },
+  };
+  const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
   return results;
 };
 
 export const queryAllSite = async ({ searchValue, filters, sortBy, from, size }) => {
-  const results = await queryAll({ excludePosts: false, searchValue, filters, sortBy, from, size });
-  return results;
-};
-
-// TODO: excludePosts is bugged because filters also api. We need to fix and clean es queries
-const queryAll = async ({ excludePosts, searchValue, filters, sortBy, from, size }) => {
   const query = {
     bool: {
       filter: buildFilter(filters),
@@ -46,11 +76,7 @@ const queryAll = async ({ excludePosts, searchValue, filters, sortBy, from, size
             should: [
               {
                 bool: {
-                  must: [
-                    { term: { _type: 'post' } },
-                    excludePosts ? { terms: { type: ['platform'] } } : null,
-                    { term: { lang } },
-                  ],
+                  must: [{ term: { _type: 'post' } }, { term: { lang } }],
                 },
               },
               { term: { _type: 'software' } },
@@ -63,74 +89,6 @@ const queryAll = async ({ excludePosts, searchValue, filters, sortBy, from, size
   };
 
   const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
-  return results;
-};
-
-export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }) => {
-  const query = {
-    bool: {
-      filter: [...buildFilter(filters), { term: { type: 'platform' } }, { term: { lang } }],
-      must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
-    },
-  };
-  const results = await executeQuery({ type: 'post', query, sort: buildSort(sortBy), from, size });
-  return results;
-};
-
-export const querySoftwareReuse = async ({ searchValue, filters, sortBy, from, size }) => {
-  const query = {
-    bool: {
-      filter: buildFilter(filters),
-      must: [
-        searchValue
-          ? {
-              multi_match: {
-                query: searchValue,
-                fields: [
-                  'publiccode.name^3',
-                  `publiccode.description.${lang}.localizedName^3`,
-                  `publiccode.description.${lang}.shortDescription^2`,
-                  `publiccode.description.${lang}.longDescription`,
-                ],
-              },
-            }
-          : null,
-        { exists: { field: 'publiccode.it.riuso.codiceIPA' } }, // This is not a bug. It was not localised in the old search engine
-        { term: { _type: 'software' } },
-      ],
-    },
-  };
-  const results = await executeQuery({ type: 'software', query, sort: buildSort(sortBy), from, size });
-  return results;
-};
-
-export const querySoftwareOpenSource = async ({ searchValue, filters, sortBy, from, size }) => {
-  const query = {
-    bool: {
-      filter: buildFilter(filters),
-      must: searchValue
-        ? [
-            {
-              multi_match: {
-                query: searchValue,
-                fields: [
-                  'publiccode.name^3',
-                  `publiccode.description.${lang}.localizedName^3`,
-                  `publiccode.description.${lang}.shortDescription^2`,
-                  `publiccode.description.${lang}.longDescription`,
-                ],
-              },
-            },
-          ]
-        : [],
-      must_not: [
-        // This is not a bug. It was not localised in the old search engine
-        { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
-        { match: { 'publiccode.indendedAudience.unsupportedCountries': 'it' } },
-      ],
-    },
-  };
-  const results = await executeQuery({ type: 'software', query, sort: buildSort(sortBy), from, size });
   return results;
 };
 
@@ -148,6 +106,17 @@ export const queryAdministration = async ({ searchValue, filters, sortBy, from, 
   return results;
 };
 
+export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }) => {
+  const query = {
+    bool: {
+      filter: [...buildFilter(filters), { term: { type: 'platform' } }, { term: { lang } }],
+      must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
+    },
+  };
+  const results = await executeQuery({ type: 'post', query, sort: buildSort(sortBy), from, size });
+  return results;
+};
+
 export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => {
   const query = {
     bool: {
@@ -159,16 +128,21 @@ export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => 
   return results;
 };
 
-const executeQuery = async ({ type, query, sort, from, size }) => {
+// This is a quick solution to retain the returned items sorted during the execution of queries with pagination.
+// Without the preference param, the ui will get duplicated items.
+// The long term solution is a complete queries refactoring.
+const preference = new Date().getTime();
+
+const executeQuery = async ({ query, sort, from, size }) => {
   const params = {
     index: 'jekyll',
-    type,
     body: {
       query,
       sort,
     },
     from,
     size,
+    preference,
   };
   const results = await client.search(params);
   return [results.hits.hits, results.hits.total];
