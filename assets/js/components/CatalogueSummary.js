@@ -19,8 +19,8 @@ export const CatalogueSummary = React.memo(({ itemsCount }) => {
       <h1 className={classes.header}>
         {searchValue ? `${l10NLabels.software.searched_for} ${searchValue}` : l10NLabels.software.catalogue}
       </h1>
-      <div className="border-bottom py-4 row row-eq-height d-none d-md-flex align-items-center">
-        <div className="d-flex justify-content-start col-md-6">
+      <div className="border-bottom py-4 row align-items-center">
+        <div className="col-3">
           <p className="font-weight-bold">{itemsCount && `${itemsCount} ${l10NLabels.software.results}`}</p>
         </div>
         <CatalogueSort />

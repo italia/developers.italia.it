@@ -8,7 +8,7 @@ export const CatalogueSort = React.memo(() => {
   console.log('CatalogueSort');
   const dispatch = useDispatch();
   return (
-    <div className="col-md-6">
+    <div className="col-9">
       <div className="d-flex justify-content-end align-items-center">
         <p>{l10NLabels.software.sort_by}</p>
         <div className="mb-3 ml-3">

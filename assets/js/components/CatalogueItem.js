@@ -20,7 +20,6 @@ const useStyles = createUseStyles({
   },
   icon: {
     composes: 'icon',
-    width: '100%',
     fontSize: '0.8rem',
     textTransform: 'uppercase',
   },
@@ -58,7 +57,9 @@ export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3 d-flex flex-column">
-      <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
+      <div>
+        <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
+      </div>
       <div className="my-2 my-md-0">
         <a href={item.url} title={item.name} className={classes.link}>
           <div className={classes.logo}></div>

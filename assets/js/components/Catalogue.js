@@ -18,7 +18,7 @@ export const Catalogue = () => {
   return (
     <div className={classes.container}>
       <div className="row">
-        <div className="col-md-3 d-none d-md-block">
+        <div className="col-md-3 d-flex flex-column">
           <CatalogueFilters />
         </div>
         <div className="col-md-9">
