@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   l10NLabels,
   getSoftwareCategories,
@@ -7,14 +7,14 @@ import {
   softwareTypes,
 } from '../../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
-import { useDispatch } from 'react-redux';
+import { initialCategories, initialType } from '../../utils/urlSearchParams.js';
 import {
+  queryContextDispatch,
   setFilterCategories,
   setFilterDevelopmentStatuses,
   setFilterIntendedAudience,
   setType,
-} from '../../redux/actions.js';
-import { initialCategories, initialType } from '../../utils/urlSearchParams.js';
+} from '../../contexts/searchContext.js';
 
 const getFiltersFromUserInput = (values) => {
   const filters = Object.entries(values).reduce((acc, [key, value]) => {
@@ -34,10 +34,10 @@ const defaultTypes = initialType ? { [initialType]: true } : {};
 // N.B. In case of input props we should use useMemo and useCallback optimization
 export const CatalogueFilters = React.memo(() => {
   console.log('CatalogueFilters');
-  const dispatch = useDispatch();
   const softwareCategories = getSoftwareCategories();
   const softwareIntendedAudiences = getSoftwareIntendedAudiences();
   const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
+  const dispatch = useContext(queryContextDispatch);
 
   return (
     <>

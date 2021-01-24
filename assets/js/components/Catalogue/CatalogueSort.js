@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { l10NLabels } from '../../utils/l10n.js';
-import { useDispatch } from 'react-redux';
-import { setSortBy } from '../../redux/actions.js';
 import { initialSort } from '../../utils/urlSearchParams.js';
+import { queryContextDispatch, setSortBy } from '../../contexts/searchContext.js';
 
 export const CatalogueSort = React.memo(() => {
   console.log('CatalogueSort');
-  const dispatch = useDispatch();
+  const dispatch = useContext(queryContextDispatch);
   return (
     <div className="d-flex justify-content-end align-items-center">
       <label className="mb-0 pr-2">{l10NLabels.software.sort_by}</label>

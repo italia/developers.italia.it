@@ -1,9 +1,8 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
-import { setSearchValue } from '../../redux/actions.js';
 import { useForm } from 'react-hook-form';
 import { initialSearchValue } from '../../utils/urlSearchParams.js';
+import { queryContextDispatch, setSearchValue } from '../../contexts/searchContext.js';
 
 const useStyle = createUseStyles({
   icon: {
@@ -21,7 +20,7 @@ export const CatalogueSearchBar = React.memo(() => {
     },
   });
   const classes = useStyle();
-  const dispatch = useDispatch();
+  const dispatch = useContext(queryContextDispatch);
 
   return (
     <h2 className="d-flex align-items-center">

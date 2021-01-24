@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { l10NLabels } from '../../utils/l10n.js';
 import { CatalogueSort } from './CatalogueSort.js';
-import { useSelector } from 'react-redux';
 import { createUseStyles } from 'react-jss';
 import { CatalogueFilters } from './CatalogueFilters.js';
 import { CatalogueSearchBar } from './CatalogueSearchBar.js';
 import { CatalogueFiltersTitle } from './CatalogueFiltersTitle.js';
-import { setSearchValue } from '../../redux/actions.js';
+import { queryContextState } from '../../contexts/searchContext.js';
 
 const useStyle = createUseStyles({
   header: {
@@ -20,15 +19,12 @@ const useStyle = createUseStyles({
 
 export const CatalogueSummary = React.memo(({ itemsCount }) => {
   console.log('CatalogueSummary');
-  const filterCategories = useSelector((state) => state.query.filterCategories);
-  const filterDevelopmentStatuses = useSelector((state) => state.query.filterDevelopmentStatuses);
-  const filterIntendedAudiences = useSelector((state) => state.query.filterIntendedAudiences);
-  const searchType = useSelector((state) => state.query.type);
+  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(queryContextState);
   const [expandFilter, setExpandFilter] = useState(false);
   const classes = useStyle(expandFilter);
 
   let totalAppliedFilters = filterCategories.length + filterIntendedAudiences.length + filterDevelopmentStatuses.length;
-  if (searchType) {
+  if (type) {
     totalAppliedFilters++;
   }
 

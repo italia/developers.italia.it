@@ -1,7 +1,6 @@
-import { useEffect, useReducer, useCallback, useRef } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useContext, useEffect, useReducer, useCallback, useRef } from 'react';
 import { search } from '../services/searchEngine.js';
-import { setFrom } from '../redux/actions.js';
+import { queryContextDispatch, queryContextState, setFrom } from '../contexts/searchContext.js';
 
 const initial = {
   isLoading: false,
@@ -37,14 +36,16 @@ const reducer = (state, action) => {
 export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
   const [{ items, total, isLoading }, dispatch] = useReducer(reducer, initial);
   const size = useRef(pageSize);
-  const dispatchGlobal = useDispatch();
-  const filterCategories = useSelector((state) => state.query.filterCategories);
-  const filterDevelopmentStatuses = useSelector((state) => state.query.filterDevelopmentStatuses);
-  const filterIntendedAudiences = useSelector((state) => state.query.filterIntendedAudiences);
-  const from = useSelector((state) => state.query.from);
-  const type = useSelector((state) => state.query.type);
-  const searchValue = useSelector((state) => state.query.searchValue);
-  const sortBy = useSelector((state) => state.query.sortBy);
+  const dispatchGlobal = useContext(queryContextDispatch);
+  const {
+    filterCategories,
+    filterDevelopmentStatuses,
+    filterIntendedAudiences,
+    from,
+    type,
+    searchValue,
+    sortBy,
+  } = useContext(queryContextState);
 
   const fetchMore = useCallback(() => {
     if (!isLoading && from + size.current < total) {
