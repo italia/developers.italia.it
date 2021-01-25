@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SearchModal } from './SearchModal.js';
-import { SearchProvider } from '../contexts/searchContext.js';
-import { ALL_SITE } from '../utils/constants.js';
+import { SearchProvider } from '../../contexts/searchContext.js';
+import { ALL_SITE } from '../../utils/constants.js';
 
 export const Search = () => {
   const [openModal, setOpenModal] = useState(false);

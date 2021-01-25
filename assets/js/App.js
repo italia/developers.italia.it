@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { Search } from './components/Search.js';
+import { Search } from './components/Search/Search.js';
 import { CatalogueContainer } from './components/Catalogue/CatalogueContainer.js';
 
 export const App = () => {
