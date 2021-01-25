@@ -1,6 +1,6 @@
-import { useContext, useEffect, useReducer, useCallback, useRef } from 'react';
+import { useContext, useEffect, useReducer, useRef } from 'react';
 import { search } from '../services/searchEngine.js';
-import { queryContextDispatch, queryContextState, setFrom } from '../contexts/searchContext.js';
+import { searchContextDispatch, searchContextState, setFrom } from '../contexts/searchContext.js';
 
 const initial = {
   isLoading: false,
@@ -33,10 +33,10 @@ const reducer = (state, action) => {
   }
 };
 
-export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
+export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
   const [{ items, total, isLoading }, dispatch] = useReducer(reducer, initial);
   const size = useRef(pageSize);
-  const dispatchGlobal = useContext(queryContextDispatch);
+  const dispatchGlobal = useContext(searchContextDispatch);
   const {
     filterCategories,
     filterDevelopmentStatuses,
@@ -45,13 +45,13 @@ export const useSearchCatalogue = ({ pageSize } = { pageSize: 12 }) => {
     type,
     searchValue,
     sortBy,
-  } = useContext(queryContextState);
+  } = useContext(searchContextState);
 
-  const fetchMore = useCallback(() => {
+  const fetchMore = () => {
     if (!isLoading && from + size.current < total) {
       dispatchGlobal(setFrom(from + size.current));
     }
-  }, [from, isLoading, dispatchGlobal]);
+  };
 
   useEffect(() => {
     const query = async () => {

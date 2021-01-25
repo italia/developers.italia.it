@@ -9,7 +9,7 @@ import {
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 import { initialCategories, initialType } from '../../utils/urlSearchParams.js';
 import {
-  queryContextDispatch,
+  searchContextDispatch,
   setFilterCategories,
   setFilterDevelopmentStatuses,
   setFilterIntendedAudience,
@@ -31,13 +31,37 @@ const defaultCategories = initialCategories.reduce((acc, filterValue) => {
 
 const defaultTypes = initialType ? { [initialType]: true } : {};
 
-// N.B. In case of input props we should use useMemo and useCallback optimization
+const softwareCategories = getSoftwareCategories();
+const softwareIntendedAudiences = getSoftwareIntendedAudiences();
+const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
+
 export const CatalogueFilters = React.memo(() => {
   console.log('CatalogueFilters');
-  const softwareCategories = getSoftwareCategories();
-  const softwareIntendedAudiences = getSoftwareIntendedAudiences();
-  const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
-  const dispatch = useContext(queryContextDispatch);
+  const dispatch = useContext(searchContextDispatch);
+
+  const handleChangeOnTypes = (values) => {
+    const [type] = getFiltersFromUserInput(values);
+    if (type) {
+      dispatch(setType(type));
+    } else {
+      dispatch(setType(null));
+    }
+  };
+
+  const handleChangeOnCategories = (values) => {
+    const categories = getFiltersFromUserInput(values);
+    dispatch(setFilterCategories(categories));
+  };
+
+  const handleChangeOnIntendedAudiences = (values) => {
+    const intendedAudiences = getFiltersFromUserInput(values);
+    dispatch(setFilterIntendedAudience(intendedAudiences));
+  };
+
+  const handleChangeOnDevelopmentStatuses = (values) => {
+    const developmentStatuses = getFiltersFromUserInput(values);
+    dispatch(setFilterDevelopmentStatuses(developmentStatuses));
+  };
 
   return (
     <>
@@ -45,40 +69,24 @@ export const CatalogueFilters = React.memo(() => {
         title={l10NLabels.software.type}
         filters={softwareTypes}
         defaultValues={defaultTypes}
-        onChange={(values) => {
-          const [type] = getFiltersFromUserInput(values);
-          if (type) {
-            dispatch(setType(type));
-          } else {
-            dispatch(setType(null));
-          }
-        }}
+        onChange={handleChangeOnTypes}
         singleSelect={true}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.categories}
         filters={softwareCategories}
         defaultValues={defaultCategories}
-        onChange={(values) => {
-          const categories = getFiltersFromUserInput(values);
-          dispatch(setFilterCategories(categories));
-        }}
+        onChange={handleChangeOnCategories}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.intended_audience}
         filters={softwareIntendedAudiences}
-        onChange={(values) => {
-          const intendedAudiences = getFiltersFromUserInput(values);
-          dispatch(setFilterIntendedAudience(intendedAudiences));
-        }}
+        onChange={handleChangeOnIntendedAudiences}
       />
       <CatalogueFiltersGroup
         title={l10NLabels.software.development_status}
         filters={softwareDevelopmentStatuses}
-        onChange={(values) => {
-          const developmentStatuses = getFiltersFromUserInput(values);
-          dispatch(setFilterDevelopmentStatuses(developmentStatuses));
-        }}
+        onChange={handleChangeOnDevelopmentStatuses}
       />
     </>
   );

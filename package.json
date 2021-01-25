@@ -11,6 +11,7 @@
         "handlebars-loader": "^1.7.1",
         "jquery": "^3.5.0",
         "js-yaml": "^4.0.0",
+        "lodash.debounce": "^4.0.8",
         "owl.carousel": "^2.3.4",
         "perfect-scrollbar": "^1.5.0",
         "photoswipe": "^4.1.3",

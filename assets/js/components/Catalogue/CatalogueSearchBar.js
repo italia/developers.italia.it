@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
+import debounce from 'lodash.debounce';
 import { createUseStyles } from 'react-jss';
 import { useForm } from 'react-hook-form';
 import { initialSearchValue } from '../../utils/urlSearchParams.js';
-import { queryContextDispatch, setSearchValue } from '../../contexts/searchContext.js';
+import { searchContextDispatch, setSearchValue } from '../../contexts/searchContext.js';
+import { DEBOUNCE_SEARCH_MS } from '../../utils/constants.js';
 
 const useStyle = createUseStyles({
   icon: {
@@ -20,7 +22,11 @@ export const CatalogueSearchBar = React.memo(() => {
     },
   });
   const classes = useStyle();
-  const dispatch = useContext(queryContextDispatch);
+  const dispatch = useContext(searchContextDispatch);
+
+  const handleOnChangeSearchValue = debounce((e) => {
+    dispatch(setSearchValue(e.target.value));
+  }, DEBOUNCE_SEARCH_MS);
 
   return (
     <h2 className="d-flex align-items-center">
@@ -32,7 +38,7 @@ export const CatalogueSearchBar = React.memo(() => {
         className="primary-color h-auto"
         name="search"
         ref={register}
-        onChange={(e) => dispatch(setSearchValue(e.target.value))}
+        onChange={handleOnChangeSearchValue}
       />
     </h2>
   );

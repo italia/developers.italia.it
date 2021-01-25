@@ -9,7 +9,7 @@ import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/sof
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
 
-const lang = 'it';
+export const lang = window.lang;
 const l10n = yaml.load(l10nYml);
 
 export const l10NLabels = l10n[lang]['t'];

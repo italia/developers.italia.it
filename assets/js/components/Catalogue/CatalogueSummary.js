@@ -1,11 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { l10NLabels } from '../../utils/l10n.js';
 import { CatalogueSort } from './CatalogueSort.js';
 import { createUseStyles } from 'react-jss';
 import { CatalogueFilters } from './CatalogueFilters.js';
 import { CatalogueSearchBar } from './CatalogueSearchBar.js';
 import { CatalogueFiltersTitle } from './CatalogueFiltersTitle.js';
-import { queryContextState } from '../../contexts/searchContext.js';
 
 const useStyle = createUseStyles({
   header: {
@@ -17,16 +17,10 @@ const useStyle = createUseStyles({
   },
 });
 
-export const CatalogueSummary = React.memo(({ itemsCount }) => {
+export const CatalogueSummary = React.memo(({ itemsCount, totalAppliedFilters }) => {
   console.log('CatalogueSummary');
-  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(queryContextState);
   const [expandFilter, setExpandFilter] = useState(false);
   const classes = useStyle(expandFilter);
-
-  let totalAppliedFilters = filterCategories.length + filterIntendedAudiences.length + filterDevelopmentStatuses.length;
-  if (type) {
-    totalAppliedFilters++;
-  }
 
   const handleExpandFilter = () => setExpandFilter(!expandFilter);
 
@@ -41,9 +35,7 @@ export const CatalogueSummary = React.memo(({ itemsCount }) => {
       </div>
       <div className="row border-bottom">
         <div className="row col-12 py-3 px-2 align-items-center text-center">
-          <div className="col-3 font-weight-bold text-left">
-            {itemsCount !== null && `${itemsCount} ${l10NLabels.software.results}`}
-          </div>
+          <div className="col-3 font-weight-bold text-left">{`${itemsCount} ${l10NLabels.software.results}`}</div>
           <div className="col-2 d-lg-none">
             <CatalogueFiltersTitle
               title={l10NLabels.software.filters}
@@ -65,5 +57,10 @@ export const CatalogueSummary = React.memo(({ itemsCount }) => {
     </>
   );
 });
+
+CatalogueSummary.propTypes = {
+  itemsCount: PropTypes.number.isRequired,
+  totalAppliedFilters: PropTypes.number.isRequired,
+};
 
 CatalogueSummary.displayName = 'CatalogueSummary';

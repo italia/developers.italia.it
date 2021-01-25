@@ -1,18 +1,17 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { Search } from './components/Search.js';
-import { Catalogue } from './components/Catalogue/Catalogue.js';
+import { CatalogueContainer } from './components/Catalogue/CatalogueContainer.js';
 
-// TODO: refactor this with something like CustomElementConnector
 export const App = () => {
-  const searchElements = useRef([]);
-  const catalogueElements = useRef([]);
-  searchElements.current = Array.from(document.getElementsByTagName('search'));
-  catalogueElements.current = Array.from(document.getElementsByTagName('catalogue'));
+  const search = useRef([]);
+  const catalogue = useRef([]);
+  search.current = Array.from(document.getElementsByTagName('search'));
+  catalogue.current = Array.from(document.getElementsByTagName('catalogue'));
   return (
     <>
-      {searchElements.current.map((el, i) => ReactDOM.createPortal(<Search key={i} />, el))}
-      {catalogueElements.current.map((el, i) => ReactDOM.createPortal(<Catalogue key={i} />, el))}
+      {search.current[0] && ReactDOM.createPortal(<Search />, search.current[0])}
+      {catalogue.current[0] && ReactDOM.createPortal(<CatalogueContainer />, catalogue.current[0])}
     </>
   );
 };

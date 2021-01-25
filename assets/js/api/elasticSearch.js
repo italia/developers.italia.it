@@ -1,13 +1,12 @@
 import elasticsearch from 'elasticsearch';
 import { buildFilter, buildSort } from './elasticSearchUtils.js';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
+import { lang } from '../utils/l10n.js';
 
 const client = new elasticsearch.Client({
   // eslint-disable-next-line no-undef
   host: process.env.ELASTICSEARCH_FRONTEND_URL,
 });
-
-const lang = 'it'; // TODO: i18n;
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
   const must = [{ term: { _type: 'software' } }];

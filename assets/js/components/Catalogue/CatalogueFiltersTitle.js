@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -44,5 +45,12 @@ export const CatalogueFiltersTitle = React.memo(({ title, counter, showCollapsab
     </>
   );
 });
+
+CatalogueFiltersTitle.propTypes = {
+  title: PropTypes.string.isRequired,
+  counter: PropTypes.number.isRequired,
+  showCollapsableIcon: PropTypes.bool.isRequired,
+  onToogleExpandCollapse: PropTypes.func.isRequired,
+};
 
 CatalogueFiltersTitle.displayName = 'CatalogueFiltersTitle';

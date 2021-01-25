@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { CatalogueItem } from './CatalogueItem.js';
 import { CatalogueNoResults } from './CatalogueNoResults.js';
+import { searchItemProptypes } from '../../services/searchEngine.js';
 
 export const CatalogueItems = React.memo(({ items }) => {
   console.log('CatalogueItems');
@@ -15,5 +17,9 @@ export const CatalogueItems = React.memo(({ items }) => {
     </div>
   );
 });
+
+CatalogueItems.propTypes = {
+  items: PropTypes.arrayOf(searchItemProptypes),
+};
 
 CatalogueItems.displayName = 'CatalogueItems';

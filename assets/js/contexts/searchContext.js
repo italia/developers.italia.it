@@ -1,5 +1,6 @@
 import React from 'react';
-import { initialCategories, initialSearchValue, initialSort, initialType } from '../utils/urlSearchParams.js';
+import PropTypes from 'prop-types';
+import { ALL_SITE } from '../utils/constants.js';
 
 const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 const SET_FILTERS_CATEGORIES = 'SET_FILTERS_CATEGORIES';
@@ -9,20 +10,10 @@ const SET_FROM = 'SET_FROM';
 const SET_SORT_BY = 'SET_SORT_BY';
 const SET_TYPE = 'SET_TYPE';
 
-export const queryContextState = React.createContext(null);
-export const queryContextDispatch = React.createContext(null);
+export const searchContextState = React.createContext(null);
+export const searchContextDispatch = React.createContext(null);
 
-const initialState = {
-  filterCategories: initialCategories,
-  filterDevelopmentStatuses: [],
-  filterIntendedAudiences: [],
-  from: 0,
-  type: initialType,
-  searchValue: initialSearchValue,
-  sortBy: initialSort ? { field: initialSort } : {},
-};
-
-const queryReducer = (state, action) => {
+const searchReducer = (state, action) => {
   switch (action.type) {
     case SET_FILTERS_CATEGORIES:
       return {
@@ -70,13 +61,38 @@ const queryReducer = (state, action) => {
   }
 };
 
-export const SearchProvider = ({ children }) => {
-  const [state, dispatch] = React.useReducer(queryReducer, initialState);
+export const SearchProvider = ({
+  initialCategories = [],
+  initialType = ALL_SITE,
+  initialSearchValue = '',
+  initialSortBy = {},
+  children,
+}) => {
+  const [state, dispatch] = React.useReducer(searchReducer, {
+    filterCategories: initialCategories,
+    filterDevelopmentStatuses: [],
+    filterIntendedAudiences: [],
+    from: 0,
+    type: initialType,
+    searchValue: initialSearchValue,
+    sortBy: initialSortBy,
+  });
+
   return (
-    <queryContextState.Provider value={state}>
-      <queryContextDispatch.Provider value={dispatch}>{children}</queryContextDispatch.Provider>
-    </queryContextState.Provider>
+    <searchContextState.Provider value={state}>
+      <searchContextDispatch.Provider value={dispatch}>{children}</searchContextDispatch.Provider>
+    </searchContextState.Provider>
   );
+};
+
+SearchProvider.propTypes = {
+  initialCategories: PropTypes.arrayOf(PropTypes.string),
+  initialType: PropTypes.string,
+  initialSearchValue: PropTypes.string,
+  initialSortBy: PropTypes.shape({
+    field: PropTypes.string,
+  }),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export const setFilterCategories = (categories) => ({ type: SET_FILTERS_CATEGORIES, value: categories });

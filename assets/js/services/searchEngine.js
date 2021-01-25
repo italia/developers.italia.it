@@ -1,5 +1,23 @@
-import { ALL_SITE, SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
-import { querySoftware, queryAllSite } from '../api/elasticSearch.js';
+import {
+  ADMINISTRATION,
+  ALL_CATALOGUE,
+  ALL_SITE,
+  PLATFORM,
+  SOFTWARE_OPEN,
+  SOFTWARE_REUSE
+} from '../utils/constants.js';
+import { querySoftware, queryAllSite, queryPlatform, queryAdministration } from '../api/elasticSearch.js';
+import PropTypes from 'prop-types';
+
+export const searchItemProptypes = PropTypes.exact({
+  category: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+});
 
 export const search = async (type, { searchValue, filters = {}, sortBy = {}, from = 0, size = 12 } = {}) => {
   const params = {
@@ -17,9 +35,13 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
     queryResults = await querySoftware({ ...params, type: SOFTWARE_OPEN });
   } else if (type === SOFTWARE_REUSE) {
     queryResults = await querySoftware({ ...params, type: SOFTWARE_REUSE });
-  } else {
+  } else if (type === ALL_CATALOGUE) {
     // Query all catalogue
     queryResults = await querySoftware(params);
+  } else if (type === PLATFORM) {
+    queryResults = await queryPlatform(params);
+  } else if (type === ADMINISTRATION) {
+    queryResults = await queryAdministration(params);
   }
 
   const [results, total] = queryResults;

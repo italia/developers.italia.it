@@ -1,6 +1,7 @@
 import React from 'react';
 import { l10NLabels } from '../../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
+import { searchItemProptypes } from '../../services/searchEngine.js';
 
 const useStyles = createUseStyles({
   link: {
@@ -58,7 +59,7 @@ const useStyles = createUseStyles({
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
+    <article className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
       <div>
         <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
       </div>
@@ -72,6 +73,10 @@ export const CatalogueItem = ({ item }) => {
       <a href={item.url} title={item.name} className={classes.readMore}>
         {l10NLabels.software.read_more} →
       </a>
-    </div>
+    </article>
   );
+};
+
+CatalogueItem.propTypes = {
+  item: searchItemProptypes,
 };
