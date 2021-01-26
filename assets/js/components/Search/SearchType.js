@@ -47,8 +47,7 @@ const useStyles = createUseStyles({
 
 export const SearchType = React.memo(() => {
   console.log('SearchType');
-  const buttonBaseClasses = 'py-2 px-4 btn-default justify-content-center w-100';
-  const classes = useStyles(buttonBaseClasses);
+  const classes = useStyles();
   const { type } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);
 
