@@ -1,53 +1,49 @@
 import React, { useContext } from 'react';
-import debounce from 'lodash.debounce';
-import { DEBOUNCE_SEARCH_MS } from '../../utils/constants.js';
-import { lang } from '../../utils/l10n.js';
-import { searchContextDispatch, setSearchValue } from '../../contexts/searchContext.js';
+import { Modal, ModalBody } from 'design-react-kit';
 import { useSearchEngine } from '../../hooks/useSearchEngine.js';
-import { SearchModalType } from './SearchModalType.js';
+import { SearchType } from './SearchType.js';
 import { SearchItems } from './SearchItems.js';
+import { SearchBar } from './SearchBar.js';
+import { createUseStyles } from 'react-jss';
+import { l10NLabels, lang } from '../../utils/l10n.js';
+import { searchContextState } from '../../contexts/searchContext.js';
 
-export const SearchModal = () => {
+const useStyles = createUseStyles({
+  modalFullScreen: {
+    minWidth: '100% !important',
+    margin: '0 !important',
+  },
+  closeButton: {
+    composes: 'close',
+    fontSize: '3rem',
+    marginLeft: 'auto',
+  },
+});
+
+export const SearchModal = ({ onClose }) => {
   const [items] = useSearchEngine({ pageSize: 9 });
+  const classes = useStyles();
+  const { searchValue } = useContext(searchContextState);
   console.log('searchModal');
-  const dispatch = useContext(searchContextDispatch);
-
-  const handleSearch = debounce((e) => {
-    dispatch(setSearchValue(e.target.value));
-  }, DEBOUNCE_SEARCH_MS);
 
   return (
-    <div role="dialog" className="modal fade show d-block">
-      <div className="modal-dialog" role="document">
-        <div className="modal-content">
-          <div className="modal-header">
-            <div className="container">
-              <p className="h1 modal-title d-inline"> Title </p>
-              <span aria-hidden="true">&times;</span>
-            </div>
+    <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" toggle={onClose}>
+      <ModalBody className="mt-3" tag="div">
+        <div className="container">
+          <div className="row px-1 px-md-2">
+            <h1>{l10NLabels['search_form_label']}</h1>
+            <button className={classes.closeButton} onClick={onClose}>
+              ×
+            </button>
           </div>
-          <div className="modal-body">
-            <div className="container">
-              <div className="form-group">
-                <div className="autocomplete">
-                  <svg
-                    className="icon icon-lg"
-                    onClick={() => {
-                      location.href = `/${lang}/search?`;
-                    }}
-                  >
-                    <use xlinkHref="/assets/svg/sprite.svg#it-search"></use>
-                  </svg>
-                  <input type="text" className="form-control" onChange={handleSearch} />
-                </div>
-
-                <SearchModalType />
-                {items !== null && <SearchItems items={items} />}
-              </div>
-            </div>
-          </div>
+          <SearchBar />
+          <SearchType />
+          <h5 className="form-group text-uppercase">
+            <a href={`/${lang}/search?keyword=${searchValue}`}>{l10NLabels.search_form_catalogue}</a>
+          </h5>
+          {items !== null && <SearchItems items={items} />}
         </div>
-      </div>
-    </div>
+      </ModalBody>
+    </Modal>
   );
 };

@@ -11,8 +11,6 @@
 @import './errors';
 @import './_highlight';
 @import './perfect-scrollbar';
-@import './search-modal';
-@import './search-page';
 @import './_select2';
 @import './software-detail';
 @import './softwares';
@@ -2299,13 +2297,6 @@ body {
 // FAQ section
 .faq {
     width: 45%;
-}
-
-#header-search a {
-    @include bootstrap.media-breakpoint-down(sm) {
-        display: block;
-        margin: auto;
-    }
 }
 
 .circled-step {
