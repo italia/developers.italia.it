@@ -4,12 +4,13 @@ import { CatalogueItems } from './CatalogueItems.js';
 import { useSearchEngine } from '../../hooks/useSearchEngine.js';
 import { useInfiniteScroll } from '../../hooks/useInfiniteScroll.js';
 import { searchContextState } from '../../contexts/searchContext.js';
+import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../../utils/constants.js';
 
 export const Catalogue = React.memo(() => {
   console.log('Catalogue');
   const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(searchContextState);
   let totalAppliedFilters = filterCategories.length + filterIntendedAudiences.length + filterDevelopmentStatuses.length;
-  if (type) {
+  if ([SOFTWARE_OPEN, SOFTWARE_REUSE].includes(type)) {
     totalAppliedFilters++;
   }
 
