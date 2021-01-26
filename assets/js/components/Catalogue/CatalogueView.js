@@ -6,8 +6,8 @@ import { useInfiniteScroll } from '../../hooks/useInfiniteScroll.js';
 import { searchContextState } from '../../contexts/searchContext.js';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../../utils/constants.js';
 
-export const Catalogue = React.memo(() => {
-  console.log('Catalogue');
+export const CatalogueView = React.memo(() => {
+  console.log('CatalogueView');
   const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(searchContextState);
   let totalAppliedFilters = filterCategories.length + filterIntendedAudiences.length + filterDevelopmentStatuses.length;
   if ([SOFTWARE_OPEN, SOFTWARE_REUSE].includes(type)) {
@@ -31,4 +31,4 @@ export const Catalogue = React.memo(() => {
   );
 });
 
-Catalogue.displayName = 'Catalogue';
+CatalogueView.displayName = 'CatalogueView';

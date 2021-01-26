@@ -1,7 +1,7 @@
 import React from 'react';
 import { CatalogueFilters } from './CatalogueFilters.js';
 import { createUseStyles } from 'react-jss';
-import { Catalogue } from './Catalogue.js';
+import { CatalogueView } from './CatalogueView.js';
 import { SearchProvider } from '../../contexts/searchContext.js';
 import { initialCategories, initialSearchValue, initialSort, initialType } from '../../utils/urlSearchParams.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
@@ -33,7 +33,7 @@ export const CatalogueContainer = () => {
             <CatalogueFilters />
           </section>
           <section className="col-12 col-lg-9">
-            <Catalogue />
+            <CatalogueView />
           </section>
         </div>
       </article>
