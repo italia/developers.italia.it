@@ -33,7 +33,6 @@ const useStyles = createUseStyles({
 });
 
 export const SearchItem = ({ item }) => {
-  console.log('SearchItem');
   const classes = useStyles();
   const getIcon = () => {
     switch (item.category) {

@@ -9,7 +9,6 @@ const useStyles = createUseStyles({
 });
 
 export const CatalogueNoResults = React.memo(() => {
-  console.log('CatalogueNoResults');
   const classes = useStyles();
   return (
     <div className="text-center mt-4">

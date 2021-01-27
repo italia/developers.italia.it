@@ -16,7 +16,6 @@ const useStyles = createUseStyles({
 });
 
 export const SearchBar = React.memo(() => {
-  console.log('SearchBar');
   const classes = useStyles();
   const dispatch = useContext(searchContextDispatch);
   const handleSearch = debounce((e) => {

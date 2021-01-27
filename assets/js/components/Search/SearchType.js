@@ -46,7 +46,6 @@ const useStyles = createUseStyles({
 });
 
 export const SearchType = React.memo(() => {
-  console.log('SearchType');
   const classes = useStyles();
   const { type } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);

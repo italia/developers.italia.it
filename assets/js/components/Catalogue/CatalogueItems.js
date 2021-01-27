@@ -5,7 +5,6 @@ import { CatalogueNoResults } from './CatalogueNoResults.js';
 import { searchItemProptypes } from '../../services/searchEngine.js';
 
 export const CatalogueItems = React.memo(({ items }) => {
-  console.log('CatalogueItems');
   if (items.length === 0) return <CatalogueNoResults />;
   return (
     <div className="mt-sm-3 mt-md-5">

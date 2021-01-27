@@ -4,7 +4,6 @@ import { initialSort } from '../../utils/urlSearchParams.js';
 import { searchContextDispatch, setSortBy } from '../../contexts/searchContext.js';
 
 export const CatalogueSort = React.memo(() => {
-  console.log('CatalogueSort');
   const dispatch = useContext(searchContextDispatch);
   return (
     <div className="d-flex justify-content-end align-items-center">

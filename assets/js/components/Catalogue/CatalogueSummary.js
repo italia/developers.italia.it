@@ -18,7 +18,6 @@ const useStyle = createUseStyles({
 });
 
 export const CatalogueSummary = React.memo(({ itemsCount, totalAppliedFilters }) => {
-  console.log('CatalogueSummary');
   const [expandFilter, setExpandFilter] = useState(false);
   const classes = useStyle(expandFilter);
 

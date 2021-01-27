@@ -34,7 +34,6 @@ const useStyles = createUseStyles({
  */
 export const CatalogueFiltersGroup = React.memo(
   ({ title, filters, defaultValues = {}, onChange, singleSelect = false }) => {
-    console.log('CatalogueFiltersGroup');
     const [selectedFiltersCount, setSelectedFiltersCount] = useState(Object.keys(defaultValues).length);
     const [showAll, setShowAll] = useState(false);
 

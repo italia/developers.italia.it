@@ -24,7 +24,6 @@ export const SearchModal = ({ onClose }) => {
   const [items] = useSearchEngine({ pageSize: 9 });
   const classes = useStyles();
   const { searchValue } = useContext(searchContextState);
-  console.log('searchModal');
 
   return (
     <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" toggle={onClose}>

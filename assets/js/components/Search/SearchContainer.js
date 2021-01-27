@@ -22,7 +22,6 @@ const useStyles = createUseStyles({
 export const SearchContainer = () => {
   const classes = useStyles();
   const [isModalOpen, closeModal, openModal] = useModal();
-  console.log('Search');
 
   return (
     <SearchProvider initialType={ALL_SITE}>

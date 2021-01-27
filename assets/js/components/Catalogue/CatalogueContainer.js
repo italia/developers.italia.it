@@ -17,7 +17,6 @@ const useStyle = createUseStyles({
 const initialSortBy = initialSort ? { field: initialSort } : {};
 
 export const CatalogueContainer = () => {
-  console.log('CatalogueContainer');
   const classes = useStyle();
 
   return (

@@ -7,7 +7,6 @@ import { searchContextState } from '../../contexts/searchContext.js';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../../utils/constants.js';
 
 export const CatalogueView = React.memo(() => {
-  console.log('CatalogueView');
   const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(searchContextState);
   let totalAppliedFilters = filterCategories.length + filterIntendedAudiences.length + filterDevelopmentStatuses.length;
   if ([SOFTWARE_OPEN, SOFTWARE_REUSE].includes(type)) {

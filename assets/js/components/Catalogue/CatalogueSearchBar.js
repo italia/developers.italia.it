@@ -15,7 +15,6 @@ const useStyle = createUseStyles({
 });
 
 export const CatalogueSearchBar = React.memo(() => {
-  console.log('CatalogueSearchBar');
   const { register } = useForm({
     defaultValues: {
       search: initialSearchValue,

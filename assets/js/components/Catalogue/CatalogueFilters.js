@@ -36,7 +36,6 @@ const softwareIntendedAudiences = getSoftwareIntendedAudiences();
 const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
 
 export const CatalogueFilters = React.memo(() => {
-  console.log('CatalogueFilters');
   const dispatch = useContext(searchContextDispatch);
 
   const handleChangeOnTypes = (values) => {
