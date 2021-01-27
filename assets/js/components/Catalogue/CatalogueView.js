@@ -24,6 +24,7 @@ export const CatalogueView = React.memo(() => {
   return (
     <>
       {itemsCount !== null && <CatalogueSummary itemsCount={itemsCount} totalAppliedFilters={totalAppliedFilters} />}
+      <div className="mx-auto dropdown-divider"></div>
       {partialItems !== null && <CatalogueItems items={partialItems} />}
       <div ref={infiniteScrollTrigger}></div>
     </>

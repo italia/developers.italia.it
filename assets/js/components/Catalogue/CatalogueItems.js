@@ -7,12 +7,10 @@ import { searchItemProptypes } from '../../services/searchEngine.js';
 export const CatalogueItems = React.memo(({ items }) => {
   if (items.length === 0) return <CatalogueNoResults />;
   return (
-    <div className="mt-sm-3 mt-md-5">
-      <div className="row">
-        {items.map((r) => (
-          <CatalogueItem key={r.id} item={r} />
-        ))}
-      </div>
+    <div className="mt-sm-3 mt-md-5 row">
+      {items.map((r) => (
+        <CatalogueItem key={r.id} item={r} />
+      ))}
     </div>
   );
 });

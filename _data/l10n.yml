@@ -23,7 +23,7 @@ it:
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
     scrolltop_label: torna all'inizio dei contenuti
-    search_form_catalogue: Cerca in tutto il catalogo
+    search_form_catalogue: Cerca in tutto il catalogo software
     search_form_label: Cerca
     search_form_placeholder: Piattaforme, software o amministrazioni
     search_form_off: disattiva il form di ricerca
@@ -143,7 +143,7 @@ it:
       goToPlatform: "Vai alla piattaforma"
 
     software:
-      catalogue: Catalogo
+      catalogue: Catalogo software
       searched_for: Hai cercato
       software_open: Software open source
       software_reuse: Software a riuso
@@ -269,7 +269,7 @@ en:
     navigation_menu_esc: exit navigation
     page: page
     scrolltop_label: back to contents
-    search_form_catalogue: Search in the entire catalogue
+    search_form_catalogue: Search in the entire software catalogue
     search_form_label: Search
     search_form_placeholder: Platforms, software or administrations
     search_form_off: exit search form
@@ -390,7 +390,7 @@ en:
       goToPlatform: "Go to platform"
 
     software:
-      catalogue: Catalogue
+      catalogue: Software catalogue
       searched_for: You have searched for
       software_open: Software open source
       software_reuse: Reuse software

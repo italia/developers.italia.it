@@ -59,7 +59,7 @@ const useStyles = createUseStyles({
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <article className="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
+    <article className="col-sm-11 mx-auto col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
       <div>
         <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
       </div>
@@ -73,6 +73,7 @@ export const CatalogueItem = ({ item }) => {
       <a href={item.url} title={item.name} className={classes.readMore}>
         {l10NLabels.software.read_more} →
       </a>
+      <div className="dropdown-divider col-12 d-md-none"></div>
     </article>
   );
 };
