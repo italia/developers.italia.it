@@ -5,10 +5,10 @@ import { useForm } from 'react-hook-form';
 import { initialSearchValue } from '../../utils/urlSearchParams.js';
 import { searchContextDispatch, setSearchValue } from '../../contexts/searchContext.js';
 import { DEBOUNCE_SEARCH_MS } from '../../utils/constants.js';
+import { Icon } from 'design-react-kit';
 
 const useStyle = createUseStyles({
   icon: {
-    composes: 'icon icon-primary',
     minWidth: '40px',
     minHeight: '40px',
   },
@@ -29,9 +29,7 @@ export const CatalogueSearchBar = React.memo(() => {
 
   return (
     <h2 className="d-flex align-items-center">
-      <svg className={classes.icon}>
-        <use xlinkHref="/assets/svg/sprite.svg#it-search"></use>
-      </svg>
+      <Icon color="primary" className={classes.icon} icon="it-search" />
       <input
         type="text"
         className="primary-color h-auto"

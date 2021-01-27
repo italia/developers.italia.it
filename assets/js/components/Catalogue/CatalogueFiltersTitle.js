@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Icon, Badge } from 'design-react-kit';
 import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
@@ -14,9 +15,8 @@ const useStyles = createUseStyles({
     userSelect: 'none',
   },
   expandIcon: {
-    composes: 'icon icon-primary',
-    minWidth: '40px',
-    minHeight: '40px',
+    minWidth: '32px',
+    minHeight: '32px',
   },
 });
 
@@ -34,12 +34,14 @@ export const CatalogueFiltersTitle = React.memo(({ title, counter, showCollapsab
       <div className={classes.title} role="button" onClick={handleToogleShowAll}>
         <div className="d-flex align-items-center">
           <span>{title}</span>
-          {counter > 0 && <span className="ml-2 badge badge-primary">{counter}</span>}
+          {counter > 0 && (
+            <Badge className="ml-2" tag="span" pill color="primary">
+              {counter}
+            </Badge>
+          )}
         </div>
         {showCollapsableIcon && (
-          <svg className={classes.expandIcon}>
-            <use xlinkHref={`/assets/svg/sprite.svg#${expandIcon ? 'it-expand' : 'it-collapse'}`}></use>
-          </svg>
+          <Icon color="primary" icon={expandIcon ? 'it-expand' : 'it-collapse'} className={classes.expandIcon} />
         )}
       </div>
     </>
