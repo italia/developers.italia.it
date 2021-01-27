@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { Search } from './components/Search/Search.js';
+import { SearchContainer } from './components/Search/SearchContainer.js';
 import { CatalogueContainer } from './components/Catalogue/CatalogueContainer.js';
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
   catalogue.current = Array.from(document.getElementsByTagName('catalogue'));
   return (
     <>
-      {search.current[0] && ReactDOM.createPortal(<Search />, search.current[0])}
+      {search.current[0] && ReactDOM.createPortal(<SearchContainer />, search.current[0])}
       {catalogue.current[0] && ReactDOM.createPortal(<CatalogueContainer />, catalogue.current[0])}
     </>
   );

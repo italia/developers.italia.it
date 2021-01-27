@@ -19,7 +19,7 @@ const useStyles = createUseStyles({
   },
 });
 
-export const Search = () => {
+export const SearchContainer = () => {
   const classes = useStyles();
   const [isModalOpen, closeModal, openModal] = useModal();
   console.log('Search');
