@@ -1,0 +1,38 @@
+name: developers.italia ci
+
+on: [pull_request_target]
+
+jobs:
+  linters:
+    name: Linters
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 14.x
+
+      - run: npm ci
+
+      - name: Danger
+        run: npx danger ci
+        env:
+          # developers-italia-bot's token with public_repo permissions.
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+  test:
+    name: Test
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 14.x
+
+      - run: npm ci
+
+      - name: Test
+        run: npm run test
