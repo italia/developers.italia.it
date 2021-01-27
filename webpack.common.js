@@ -58,7 +58,6 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(m)?js$/, use: ["babel-loader"], exclude: /node_modules/ },
-      { test: /\.handlebars$/, loader: "handlebars-loader" },
       {
         // Handle .sass, .scss and .css files
         test: /\.(sa|sc|c)ss$/,
