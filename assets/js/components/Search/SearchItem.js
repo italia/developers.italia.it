@@ -38,7 +38,7 @@ export const SearchItem = ({ item }) => {
   const getIcon = () => {
     switch (item.category) {
       case SOFTWARE_OPEN:
-        return <div className={`${classes.iconWithFixedAlignment} icon-type-platform--gray`}></div>;
+        return <div className={`${classes.iconWithFixedAlignment} icon-type-software_open--gray`}></div>;
       case SOFTWARE_REUSE:
         return <div className={`${classes.iconWithFixedAlignment} icon-type-software_reuse--gray`}></div>;
       case PLATFORM:

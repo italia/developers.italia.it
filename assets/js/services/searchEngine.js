@@ -2,11 +2,12 @@ import {
   ADMINISTRATION,
   ALL_CATALOGUE,
   ALL_SITE,
+  API,
   PLATFORM,
   SOFTWARE_OPEN,
-  SOFTWARE_REUSE
+  SOFTWARE_REUSE,
 } from '../utils/constants.js';
-import { querySoftware, queryAllSite, queryPlatform, queryAdministration } from '../api/elasticSearch.js';
+import { querySoftware, queryAllSite, queryPlatform, queryAdministration, queryApi } from '../api/elasticSearch.js';
 import PropTypes from 'prop-types';
 
 export const searchItemProptypes = PropTypes.exact({
@@ -28,7 +29,7 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
     size,
   };
 
-  let queryResults;
+  let queryResults = [[], 0];
   if (type === ALL_SITE) {
     queryResults = await queryAllSite(params);
   } else if (type === SOFTWARE_OPEN) {
@@ -42,6 +43,8 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
     queryResults = await queryPlatform(params);
   } else if (type === ADMINISTRATION) {
     queryResults = await queryAdministration(params);
+  } else if (type === API) {
+    queryResults = await queryApi(params);
   }
 
   const [results, total] = queryResults;

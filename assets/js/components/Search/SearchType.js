@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Button, Icon } from 'design-react-kit';
-import { ALL_SITE, SOFTWARE_REUSE, SOFTWARE_OPEN, PLATFORM, ADMINISTRATION } from '../../utils/constants.js';
+import { ALL_SITE, SOFTWARE_REUSE, SOFTWARE_OPEN, PLATFORM, ADMINISTRATION, API } from '../../utils/constants.js';
 import { searchContextDispatch, searchContextState, setType } from '../../contexts/searchContext.js';
 import { createUseStyles } from 'react-jss';
 import { l10NLabels } from '../../utils/l10n.js';
@@ -120,6 +120,20 @@ export const SearchType = React.memo(() => {
           }}
         >
           <Icon icon="it-pa" /> {l10NLabels['software']['administrations']}
+        </Button>
+      </div>
+
+      <div className="d-block d-md-inline-block m-1">
+        <Button
+          className={type === API ? classes.buttonActiveType : classes.buttonInactiveType}
+          color="default"
+          icon={true}
+          tag="button"
+          onClick={() => {
+            dispatch(setType(API));
+          }}
+        >
+          <Icon icon="it-settings" /> Api
         </Button>
       </div>
     </div>
