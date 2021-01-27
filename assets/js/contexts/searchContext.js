@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { ALL_SITE } from '../utils/constants.js';
 
@@ -68,7 +68,7 @@ export const SearchProvider = ({
   initialSortBy = {},
   children,
 }) => {
-  const [state, dispatch] = React.useReducer(searchReducer, {
+  const [state, dispatch] = useReducer(searchReducer, {
     filterCategories: initialCategories,
     filterDevelopmentStatuses: [],
     filterIntendedAudiences: [],
