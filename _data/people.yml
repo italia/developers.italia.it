@@ -163,3 +163,19 @@ bfabio:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/bfabio
+astagi:
+  name: Andrea Stagi
+  desc:
+  pic: /assets/images/astagi.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/astagi
+    twitter:
+      name: twitter
+      link: https://twitter.com/4stagi
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/andreastagi/
