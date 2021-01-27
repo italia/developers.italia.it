@@ -24,13 +24,17 @@ export const SearchContainer = () => {
   const [isModalOpen, closeModal, openModal] = useModal();
 
   return (
-    <SearchProvider initialType={ALL_SITE}>
+    <>
       <div onClick={openModal} className="d-flex align-items-center pr-2" role="button">
         <span className="text-white mr-3 d-none d-lg-inline">{l10NLabels['search_form_label']}</span>
         <Icon className={classes.icon} icon="it-search"></Icon>
         <Icon className="d-inline d-lg-none" icon="it-search" color="white"></Icon>
       </div>
-      {isModalOpen && <SearchModal onClose={closeModal} />}
-    </SearchProvider>
+      {isModalOpen && (
+        <SearchProvider initialType={ALL_SITE}>
+          <SearchModal onClose={closeModal} />{' '}
+        </SearchProvider>
+      )}
+    </>
   );
 };
