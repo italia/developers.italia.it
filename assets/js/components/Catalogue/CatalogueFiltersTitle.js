@@ -31,7 +31,7 @@ export const CatalogueFiltersTitle = React.memo(({ title, counter, showCollapsab
 
   return (
     <>
-      <div className={classes.title} role="button" onClick={handleToogleShowAll}>
+      <div className={classes.title} role="button" onClick={handleToogleShowAll} data-testid="catalogue-filters-title">
         <div className="d-flex align-items-center">
           <span>{title}</span>
           {counter > 0 && (

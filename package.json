@@ -29,13 +29,16 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "lint": "npx eslint _site/ --ext .json",
-        "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
+        "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site",
+        "test": "jest"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
         "@babel/preset-env": "^7.12.11",
         "@babel/preset-react": "^7.12.10",
         "@commitlint/config-conventional": "^11.0.0",
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.3",
         "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",
         "commitlint": "^11.0.0",
@@ -52,6 +55,7 @@
         "eslint-plugin-react-hooks": "^4.2.0",
         "file-loader": "^6.0.0",
         "gh-pages": "^3.1.0",
+        "jest": "^26.6.3",
         "mini-css-extract-plugin": "^0.11.0",
         "pa11y-ci": "^2.4.0",
         "postcss": "^7.0.32",
