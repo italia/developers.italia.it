@@ -68,6 +68,34 @@ export const SearchType = React.memo(() => {
 
       <div className="d-block d-md-inline-block m-1">
         <Button
+          className={type === ADMINISTRATION ? classes.buttonActiveType : classes.buttonInactiveType}
+          color="default"
+          icon={true}
+          tag="button"
+          onClick={() => {
+            dispatch(setType(ADMINISTRATION));
+          }}
+        >
+          <Icon icon="it-pa" /> {l10NLabels['software']['administrations']}
+        </Button>
+      </div>
+
+      <div className="d-block d-md-inline-block m-1">
+        <Button
+          className={type === API ? classes.buttonActiveType : classes.buttonInactiveType}
+          color="default"
+          icon={true}
+          tag="button"
+          onClick={() => {
+            dispatch(setType(API));
+          }}
+        >
+          <Icon icon="it-settings" /> Api
+        </Button>
+      </div>
+
+      <div className="d-block d-md-inline-block m-1">
+        <Button
           className={type === PLATFORM ? classes.buttonActiveType : classes.buttonInactiveType}
           color="default"
           icon={true}
@@ -105,34 +133,6 @@ export const SearchType = React.memo(() => {
           }}
         >
           <span className={`icon-type-software_reuse--gray`}></span> {l10NLabels['software']['software_reuse']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === ADMINISTRATION ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(ADMINISTRATION));
-          }}
-        >
-          <Icon icon="it-pa" /> {l10NLabels['software']['administrations']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === API ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(API));
-          }}
-        >
-          <Icon icon="it-settings" /> Api
         </Button>
       </div>
     </div>
