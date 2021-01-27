@@ -73,7 +73,6 @@ export const CatalogueItem = ({ item }) => {
       <a href={item.url} title={item.name} className={classes.readMore}>
         {l10NLabels.software.read_more} →
       </a>
-      <div className="dropdown-divider col-12 d-md-none"></div>
     </article>
   );
 };

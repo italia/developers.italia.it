@@ -9,7 +9,10 @@ export const CatalogueItems = React.memo(({ items }) => {
   return (
     <div className="mt-sm-3 mt-md-5 row">
       {items.map((r) => (
-        <CatalogueItem key={r.id} item={r} />
+        <React.Fragment key={r.id}>
+          <CatalogueItem key={r.id} item={r} />
+          <div className="dropdown-divider col-12 d-md-none"></div>
+        </React.Fragment>
       ))}
     </div>
   );
