@@ -21,7 +21,6 @@ export const softwareTypes = [
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
-  // TODO: translation in italian
   return softwareCategories.map((value) => [value, value.replace(/-/gi, ' ')]);
 };
 
@@ -35,6 +34,5 @@ export const getSoftwareDevelopmentStatuses = () => {
 
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
-  // TODO: translation in Italian
   return softwareIntendedAudiences.map((value) => [value, value.replace(/-/gi, ' ')]);
 };
