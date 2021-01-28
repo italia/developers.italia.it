@@ -2,7 +2,7 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
 import { l10NLabels } from '../../utils/l10n.js';
-import { searchItemProptypes } from '../../services/searchEngine.js';
+import { searchItemProptypes } from '../../utils/proptypes.js';
 
 const useStyles = createUseStyles({
   link: {
@@ -59,7 +59,7 @@ const useStyles = createUseStyles({
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <article className="col-sm-11 mx-auto col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
+    <article className="col-sm-11 mx-auto col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column" data-testid={item.id}>
       <div>
         {/*<span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>*/}
         <Icon icon={item.icon} size="sm" className="mr-1" />

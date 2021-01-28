@@ -65,6 +65,7 @@ export const l10NLabels = {
     page: 'pagina',
     platform: 'Piattaforma',
     platforms: 'Piattaforme',
+    type: 'Tipologia',
   },
 };
 

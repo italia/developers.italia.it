@@ -1,4 +1,5 @@
-// jest and problems with babelrc https://github.com/facebook/jest/issues/6053#issuecomment-383632515
- module.exports = {
-   presets: ['@babel/preset-env', '@babel/preset-react'],
- };  
+// Target node is only for jest
+const presetEnv = process.env.NODE_ENV === 'test' ? ['@babel/preset-env', { targets: { node: 'current' } }] : '@babel/preset-env';
+module.exports = {
+  presets: [presetEnv, '@babel/preset-react'],
+};

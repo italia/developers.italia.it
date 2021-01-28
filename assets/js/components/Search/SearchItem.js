@@ -1,8 +1,8 @@
 import React from 'react';
 import { Icon } from 'design-react-kit';
-import { searchItemProptypes } from '../../services/searchEngine.js';
 import { createUseStyles } from 'react-jss';
 import { l10NLabels } from '../../utils/l10n.js';
+import { searchItemProptypes } from '../../utils/proptypes.js';
 
 const useStyles = createUseStyles({
   category: {

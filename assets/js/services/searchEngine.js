@@ -7,18 +7,7 @@ import {
   SOFTWARE_OPEN,
   SOFTWARE_REUSE,
 } from '../utils/constants.js';
-import { querySoftware, queryAllSite, queryPlatform, queryAdministration, queryApi } from '../api/elasticSearch.js';
-import PropTypes from 'prop-types';
-
-export const searchItemProptypes = PropTypes.exact({
-  category: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-});
+import { queryAdministration, queryAllSite, queryApi, queryPlatform, querySoftware } from '../api/elasticSearch.js';
 
 export const search = async (type, { searchValue, filters = {}, sortBy = {}, from = 0, size = 12 } = {}) => {
   const params = {

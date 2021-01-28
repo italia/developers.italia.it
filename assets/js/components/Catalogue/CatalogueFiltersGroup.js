@@ -76,6 +76,7 @@ export const CatalogueFiltersGroup = React.memo(
           {filters.map(([key, value]) => (
             <label role="button" key={key} className={classes.label}>
               <input
+                alt={value}
                 role="button"
                 className={classes.checkbox}
                 type="checkbox"
