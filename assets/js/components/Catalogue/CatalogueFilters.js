@@ -15,6 +15,7 @@ import {
   setFilterIntendedAudience,
   setType,
 } from '../../contexts/searchContext.js';
+import { ALL_CATALOGUE } from '../../utils/constants.js';
 
 const getFiltersFromUserInput = (values) => {
   const filters = Object.entries(values).reduce((acc, [key, value]) => {
@@ -43,7 +44,7 @@ export const CatalogueFilters = React.memo(() => {
     if (type) {
       dispatch(setType(type));
     } else {
-      dispatch(setType(null));
+      dispatch(setType(ALL_CATALOGUE));
     }
   };
 

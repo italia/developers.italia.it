@@ -53,9 +53,19 @@ layout: default-pa
                 <a href="{{sw_url}}" class="d-block decoration-none ">
 
                   {% if software.publiccode.it.riuso.codiceIPA != nil %}
-                  <p class="icon-type-software_reuse">{{ t.software.software_reuse | upcase }}</p>
+                  <div class='d-flex align-items-center mb-2'>
+                    <svg class="icon mr-2">
+                      <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+                    </svg>
+                    <div>{{ t.software.software_reuse | upcase}}</div>
+                  </div>
                   {% else %}
-                  <p class="icon-type-software_open">{{ t.software.software_open | upcase }}</p>
+                  <div class='d-flex align-items-center mb-2'>
+                    <svg class="icon mr-2">
+                      <use xlink:href="/assets/svg/sprite.svg#it-open-source"></use>
+                    </svg>
+                    <div>{{ t.software.software_open | upcase}}</div>
+                  </div>
                   {% endif %}
 
                   {% assign paClasses = "main-image" %}

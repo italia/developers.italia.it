@@ -13,9 +13,19 @@
     <a href="{{sw_url}}" class="d-block decoration-none ">
         {% if include.show_type %}
         {% if software.publiccode.it.riuso.codiceIPA != nil %}
-        <p class="icon-type-software_reuse">SOFTWARE A RIUSO</p>
+        <div class='d-flex align-items-center mb-2'>
+          <svg class="icon mr-2">
+            <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+          </svg>
+          <div>SOFTWARE A RIUSO</div>
+        </div>
         {% else %}
-        <p class="icon-type-software_reuse">SOFTWARE OPEN SOURCE DI TERZE PARTI</p>
+        <div class='d-flex align-items-center mb-2'>
+          <svg class="icon mr-2">
+            <use xlink:href="/assets/svg/sprite.svg#it-open-source"></use>
+          </svg>
+          <div>SOFTWARE OPEN SOURCE DI TERZE PARTI</div>
+        </div>
         {% endif %}
         {% endif %}
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { l10NLabels } from '../../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
+import { Icon } from 'design-react-kit';
+import { l10NLabels } from '../../utils/l10n.js';
 import { searchItemProptypes } from '../../services/searchEngine.js';
 
 const useStyles = createUseStyles({
@@ -20,8 +21,7 @@ const useStyles = createUseStyles({
     width: '100%',
     backgroundImage: (item) => `url(${item.logo})`,
   },
-  icon: {
-    composes: 'icon',
+  category: {
     fontSize: '0.8rem',
     textTransform: 'uppercase',
   },
@@ -61,7 +61,9 @@ export const CatalogueItem = ({ item }) => {
   return (
     <article className="col-sm-11 mx-auto col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
       <div>
-        <span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>
+        {/*<span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>*/}
+        <Icon icon={item.icon} size="sm" className="mr-1" />
+        <span className={classes.category}>{l10NLabels.software[item.category]}</span>
       </div>
       <div className="my-2 my-md-0">
         <a href={item.url} title={item.name} className={classes.link}>

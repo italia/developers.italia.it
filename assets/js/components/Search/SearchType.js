@@ -104,7 +104,7 @@ export const SearchType = React.memo(() => {
             dispatch(setType(PLATFORM));
           }}
         >
-          <span className={`icon-type-platform--gray`}></span> {l10NLabels['software']['platforms']}
+          <Icon icon="it-piattaforme" /> {l10NLabels['software']['platforms']}
         </Button>
       </div>
 
@@ -118,7 +118,7 @@ export const SearchType = React.memo(() => {
             dispatch(setType(SOFTWARE_OPEN));
           }}
         >
-          <span className={`icon-type-software_open--gray`}></span> {l10NLabels['software']['software_open']}
+          <Icon icon="it-open-source" /> {l10NLabels['software']['software_open']}
         </Button>
       </div>
 
@@ -132,7 +132,7 @@ export const SearchType = React.memo(() => {
             dispatch(setType(SOFTWARE_REUSE));
           }}
         >
-          <span className={`icon-type-software_reuse--gray`}></span> {l10NLabels['software']['software_reuse']}
+          <Icon icon="it-software" /> {l10NLabels['software']['software_reuse']}
         </Button>
       </div>
     </div>

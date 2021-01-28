@@ -83,7 +83,7 @@ const administrationItem = (source) => {
   return {
     category: 'administration',
     description: '',
-    icon: 'icon-type-administration',
+    icon: 'it-pa',
     logo: '/assets/images/cover_amministrazioni.png',
     name: source['it-riuso-codiceIPA-label'],
     url: `/${language}/pa/${source['it-riuso-codiceIPA']}`,
@@ -102,7 +102,7 @@ const softwareItem = (source) => {
   const name = descriptionField.localisedName ?? source.publiccode.name;
 
   const category = getSoftwareCategory(source.publiccode.it.riuso?.codiceIPA);
-  const icon = `icon-type-${category}`;
+  const icon = category === SOFTWARE_REUSE ? 'it-software' : 'it-open-source';
 
   const placeholder =
     category === SOFTWARE_REUSE
@@ -129,7 +129,7 @@ const getSoftwareCategory = (IPACode) => (IPACode ? SOFTWARE_REUSE : SOFTWARE_OP
 const newsItem = (source) => ({
   category: 'news',
   description: cropString(source.subtitle),
-  icon: 'icon-type-news',
+  icon: 'it-horn',
   logo: source.image,
   name: source.title,
   url: source.url,
@@ -140,7 +140,7 @@ const platformItem = (source) => {
   return {
     category: 'platform',
     description,
-    icon: `icon-type-platform`,
+    icon: 'it-piattaforme',
     logo: source.logo ?? '/assets/images/cover_piattaforme.png',
     name: source.title,
     url: source.url,
@@ -151,7 +151,7 @@ const apiItem = (source) => {
   return {
     category: 'api',
     description: cropString(source.abstract),
-    icon: `icon-type-api`,
+    icon: 'it-settings',
     logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
     name: source.title,
     url: source.url,
@@ -161,7 +161,7 @@ const apiItem = (source) => {
 const pageItem = (source) => ({
   category: 'page',
   description: cropString(source.text),
-  icon: `icon-type-unknown`,
+  icon: 'it-file',
   logo: source.image ?? '/assets/icons/logo-it.png',
   name: source.title,
   url: source.url,
