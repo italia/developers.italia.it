@@ -37,6 +37,7 @@
         "@babel/preset-env": "^7.12.11",
         "@babel/preset-react": "^7.12.10",
         "@commitlint/config-conventional": "^11.0.0",
+        "@testing-library/dom": "^7.29.4",
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.3",
         "autoprefixer": "^9.8.6",
