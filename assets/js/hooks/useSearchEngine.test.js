@@ -46,6 +46,7 @@ describe('useSearchEngine', () => {
   });
 
   it('returns items in batch using fetch more', async () => {
+    search.mockClear();
     search
       .mockReturnValueOnce([[{ id: 'foo', name: 'bar' }], 3])
       .mockReturnValueOnce([[{ id: 'software', name: 'libero' }], 3])
