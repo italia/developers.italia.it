@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { Modal, ModalBody } from 'design-react-kit';
 import { useSearchEngine } from '../../hooks/useSearchEngine.js';
 import { SearchType } from './SearchType.js';
@@ -45,4 +46,8 @@ export const SearchModal = ({ onClose }) => {
       </ModalBody>
     </Modal>
   );
+};
+
+SearchModal.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };

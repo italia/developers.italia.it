@@ -34,7 +34,7 @@ export const CatalogueFilters = React.memo(() => {
   const { filterCategories, type } = useContext(searchContextState);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const defaultTypes = useMemo(() => (type && type !== ALL_CATALOGUE ? { [type]: true } : {}), []);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   const defaultCategories = useMemo(
     () =>
       filterCategories.reduce((acc, filterValue) => {
@@ -43,6 +43,7 @@ export const CatalogueFilters = React.memo(() => {
       }, {}),
     []
   );
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   const handleChangeOnTypes = (values) => {
     const [type] = getFiltersFromUserInput(values);
