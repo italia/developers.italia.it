@@ -20,7 +20,7 @@ describe('CatalogueFiltersGroup', () => {
       />
     );
 
-    expect(screen.queryAllByAltText('libero')).toBeTruthy();
+    expect(screen.queryByAltText('libero')).toBeInTheDocument();
   });
 
   it('dispatches onChange function on click', () => {
@@ -55,13 +55,13 @@ describe('CatalogueFiltersGroup', () => {
       />
     );
 
-    expect(screen.queryByTestId('counter')).toBeNull();
+    expect(screen.queryByTestId('counter')).not.toBeInTheDocument();
     userEvent.click(screen.getByAltText('libero'));
     expect(screen.getByTestId('counter')).toHaveTextContent('1');
     userEvent.click(screen.getByAltText('source'));
     expect(screen.getByTestId('counter')).toHaveTextContent('2');
     userEvent.click(screen.getByAltText('libero'));
     userEvent.click(screen.getByAltText('source'));
-    expect(screen.queryByTestId('counter')).toBeNull();
+    expect(screen.queryByTestId('counter')).not.toBeInTheDocument();
   });
 });

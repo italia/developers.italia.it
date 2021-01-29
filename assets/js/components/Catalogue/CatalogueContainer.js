@@ -26,7 +26,7 @@ export const CatalogueContainer = () => {
       initialSortBy={initialSortBy}
       initialType={initialType ?? ALL_CATALOGUE}
     >
-      <article className={classes.container}>
+      <article className={classes.container} data-testid="catalogue-container">
         <div className="row">
           <section className="col-lg-3 d-none d-lg-flex flex-column">
             <CatalogueFilters />

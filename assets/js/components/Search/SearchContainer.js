@@ -32,7 +32,7 @@ export const SearchContainer = () => {
       </div>
       {isModalOpen && (
         <SearchProvider initialType={ALL_SITE}>
-          <SearchModal onClose={closeModal} />{' '}
+          <SearchModal onClose={closeModal} />
         </SearchProvider>
       )}
     </>
