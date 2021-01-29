@@ -59,9 +59,8 @@ const useStyles = createUseStyles({
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
   return (
-    <article className="col-sm-11 mx-auto col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column" data-testid={item.id}>
+    <article className="col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column" data-testid={item.id}>
       <div>
-        {/*<span className={`${classes.icon} ${item.icon}`}>{l10NLabels.software[item.category]}</span>*/}
         <Icon icon={item.icon} size="sm" className="mr-1" />
         <span className={classes.category}>{l10NLabels.software[item.category]}</span>
       </div>
