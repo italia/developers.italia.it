@@ -8,7 +8,6 @@ import { ALL_CATALOGUE } from '../../utils/constants.js';
 import { search } from '../../services/searchEngine.js';
 
 jest.mock('../../utils/l10n.js');
-jest.mock('../../hooks/useInfiniteScroll.js');
 jest.mock('../../services/searchEngine.js');
 
 describe('CatalogueView', () => {

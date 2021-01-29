@@ -144,6 +144,7 @@ it:
 
     software:
       catalogue: Catalogo software
+      load_more: Carica altri
       searched_for: Hai cercato
       software_open: Software open source
       software_reuse: Software a riuso
@@ -391,6 +392,7 @@ en:
 
     software:
       catalogue: Software catalogue
+      load_more: Load more
       searched_for: You have searched for
       software_open: Software open source
       software_reuse: Reuse software
