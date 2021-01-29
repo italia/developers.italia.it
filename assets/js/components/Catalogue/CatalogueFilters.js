@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useMemo } from 'react';
 import {
   l10NLabels,
   getSoftwareCategories,
@@ -7,9 +7,9 @@ import {
   softwareTypes,
 } from '../../utils/l10n.js';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
-import { initialCategories, initialType } from '../../utils/urlSearchParams.js';
 import {
   searchContextDispatch,
+  searchContextState,
   setFilterCategories,
   setFilterDevelopmentStatuses,
   setFilterIntendedAudience,
@@ -25,19 +25,24 @@ const getFiltersFromUserInput = (values) => {
   return filters;
 };
 
-const defaultCategories = initialCategories.reduce((acc, filterValue) => {
-  acc[filterValue] = true;
-  return acc;
-}, {});
-
-const defaultTypes = initialType ? { [initialType]: true } : {};
-
 const softwareCategories = getSoftwareCategories();
 const softwareIntendedAudiences = getSoftwareIntendedAudiences();
 const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
 
 export const CatalogueFilters = React.memo(() => {
   const dispatch = useContext(searchContextDispatch);
+  const { filterCategories, type } = useContext(searchContextState);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const defaultTypes = useMemo(() => (type && type !== ALL_CATALOGUE ? { [type]: true } : {}), []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const defaultCategories = useMemo(
+    () =>
+      filterCategories.reduce((acc, filterValue) => {
+        acc[filterValue] = true;
+        return acc;
+      }, {}),
+    []
+  );
 
   const handleChangeOnTypes = (values) => {
     const [type] = getFiltersFromUserInput(values);

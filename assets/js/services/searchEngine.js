@@ -41,8 +41,6 @@ export const search = async (type, { searchValue, filters = {}, sortBy = {}, fro
   return [items, total];
 };
 
-// TODO: icons name should be the ones in the svg sprite of bsi (https://github.com/italia/developers.italia.it/issues/671)
-
 const mapESResultsToItems = (results) => {
   return results.map((result) => {
     switch (result._type) {
