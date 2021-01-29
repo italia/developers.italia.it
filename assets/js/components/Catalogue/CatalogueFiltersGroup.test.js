@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
+import userEvent from '@testing-library/user-event';
 import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
 
 describe('CatalogueFiltersGroup', () => {
@@ -36,14 +37,7 @@ describe('CatalogueFiltersGroup', () => {
       />
     );
 
-    const inputEl = screen.getByAltText('libero');
-    fireEvent(
-      inputEl,
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByAltText('libero'));
     expect(onChange).toHaveBeenCalledTimes(1);
   });
 
@@ -62,36 +56,12 @@ describe('CatalogueFiltersGroup', () => {
     );
 
     expect(screen.queryByTestId('counter')).toBeNull();
-    fireEvent(
-      screen.getByAltText('libero'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByAltText('libero'));
     expect(screen.getByTestId('counter')).toHaveTextContent('1');
-    fireEvent(
-      screen.getByAltText('source'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByAltText('source'));
     expect(screen.getByTestId('counter')).toHaveTextContent('2');
-    fireEvent(
-      screen.getByAltText('libero'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
-    fireEvent(
-      screen.getByAltText('source'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByAltText('libero'));
+    userEvent.click(screen.getByAltText('source'));
     expect(screen.queryByTestId('counter')).toBeNull();
   });
 });

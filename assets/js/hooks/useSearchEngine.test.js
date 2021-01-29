@@ -1,6 +1,7 @@
 import React from 'react';
 import './useSearchEngine.js';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
 import { useSearchEngine } from './useSearchEngine.js';
 import { SearchProvider } from '../contexts/searchContext.js';
@@ -60,25 +61,13 @@ describe('useSearchEngine', () => {
     expect(screen.queryByTestId('software')).not.toBeInTheDocument();
     expect(screen.queryByTestId('test')).not.toBeInTheDocument();
 
-    fireEvent(
-      screen.getByTestId('fetch-more'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByTestId('fetch-more'));
 
     expect(await screen.findByTestId('software')).toHaveTextContent('libero');
     expect(await screen.queryByTestId('foo')).toBeInTheDocument();
     expect(await screen.queryByTestId('test')).not.toBeInTheDocument();
 
-    fireEvent(
-      screen.getByTestId('fetch-more'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByTestId('fetch-more'));
 
     expect(await screen.findByTestId('test')).toHaveTextContent('open source');
     expect(await screen.queryByTestId('foo')).toBeInTheDocument();
@@ -87,13 +76,7 @@ describe('useSearchEngine', () => {
     expect(search).toHaveBeenCalledTimes(3);
 
     // No more items...don't call search!
-    fireEvent(
-      screen.getByTestId('fetch-more'),
-      new MouseEvent('click', {
-        bubbles: true,
-        cancelable: true,
-      })
-    );
+    userEvent.click(screen.getByTestId('fetch-more'));
 
     expect(search).toHaveBeenCalledTimes(3);
   });

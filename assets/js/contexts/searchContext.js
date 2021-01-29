@@ -13,7 +13,7 @@ const SET_TYPE = 'SET_TYPE';
 export const searchContextState = React.createContext(null);
 export const searchContextDispatch = React.createContext(null);
 
-const searchReducer = (state, action) => {
+export const searchReducer = (state, action) => {
   switch (action.type) {
     case SET_FILTERS_CATEGORIES:
       return {
