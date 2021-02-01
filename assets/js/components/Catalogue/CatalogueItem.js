@@ -65,7 +65,7 @@ export const CatalogueItem = ({ item }) => {
         <span className={classes.category}>{l10NLabels.software[item.category]}</span>
       </div>
       <div className="my-2 my-md-0">
-        <a href={item.url} title={item.name} className={classes.link}>
+        <a href={item.url} title={item.name} className={classes.link} data-testid="item-anchor">
           <div className={classes.logo}></div>
           <div className={classes.title}>{item.name}</div>
           <div className={classes.description}>{item.description}</div>

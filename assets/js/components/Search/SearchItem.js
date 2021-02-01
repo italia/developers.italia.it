@@ -28,7 +28,7 @@ const useStyles = createUseStyles({
 export const SearchItem = ({ item }) => {
   const classes = useStyles();
   return (
-    <a className={classes.item} href={item.url}>
+    <a className={classes.item} href={item.url} data-testid={item.id}>
       <Icon className={classes.icon} icon={item.icon}></Icon>
       <div className="col">{item.name}</div>
       <div className={classes.category}>{l10NLabels.software[item.category] ?? item.category}</div>
