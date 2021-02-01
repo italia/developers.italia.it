@@ -27,7 +27,7 @@ export const SearchBar = React.memo(() => {
       <Input
         className={classes.searchBar}
         type="text"
-        placeholder={l10NLabels['search_form_placeholder']}
+        placeholder={l10NLabels.search_form_placeholder}
         onChange={handleSearch}
       />
     </div>

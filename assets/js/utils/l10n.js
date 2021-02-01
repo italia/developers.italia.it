@@ -15,8 +15,8 @@ const l10n = yaml.load(l10nYml);
 export const l10NLabels = l10n[lang]['t'];
 
 export const softwareTypes = [
-  [SOFTWARE_OPEN, l10NLabels['software'][SOFTWARE_OPEN]],
-  [SOFTWARE_REUSE, l10NLabels['software'][SOFTWARE_REUSE]],
+  [SOFTWARE_OPEN, l10NLabels.software[SOFTWARE_OPEN]],
+  [SOFTWARE_REUSE, l10NLabels.software[SOFTWARE_REUSE]],
 ];
 
 export const getSoftwareCategories = () => {
