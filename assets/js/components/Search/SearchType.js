@@ -45,96 +45,68 @@ const useStyles = createUseStyles({
   },
 });
 
+const buttons = [
+  {
+    dataTestid: 'search-type-all',
+    icon: 'it-search',
+    label: l10NLabels.all,
+    type: ALL_SITE,
+  },
+  {
+    dataTestid: 'search-type-administration',
+    icon: 'it-pa',
+    label: l10NLabels.software.administrations,
+    type: ADMINISTRATION,
+  },
+  {
+    dataTestid: 'search-type-api',
+    icon: 'it-settings',
+    label: 'Api',
+    type: API,
+  },
+  {
+    dataTestid: 'search-type-platform',
+    icon: 'it-piattaforme',
+    label: l10NLabels.software.platforms,
+    type: PLATFORM,
+  },
+  {
+    dataTestid: 'search-type-software_open',
+    icon: 'it-open-source',
+    label: l10NLabels.software.software_open,
+    type: SOFTWARE_OPEN,
+  },
+  {
+    dataTestid: 'search-type-software_reuse',
+    icon: 'it-software',
+    label: l10NLabels.software.software_reuse,
+    type: SOFTWARE_REUSE,
+  },
+];
+
 export const SearchType = React.memo(() => {
   const classes = useStyles();
   const { type } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);
 
   return (
-    <div className="form-group">
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === ALL_SITE ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(ALL_SITE));
-          }}
-        >
-          <Icon icon="it-search" /> {l10NLabels['all']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === ADMINISTRATION ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(ADMINISTRATION));
-          }}
-        >
-          <Icon icon="it-pa" /> {l10NLabels['software']['administrations']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === API ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(API));
-          }}
-        >
-          <Icon icon="it-settings" /> Api
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === PLATFORM ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(PLATFORM));
-          }}
-        >
-          <Icon icon="it-piattaforme" /> {l10NLabels['software']['platforms']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === SOFTWARE_OPEN ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(SOFTWARE_OPEN));
-          }}
-        >
-          <Icon icon="it-open-source" /> {l10NLabels['software']['software_open']}
-        </Button>
-      </div>
-
-      <div className="d-block d-md-inline-block m-1">
-        <Button
-          className={type === SOFTWARE_REUSE ? classes.buttonActiveType : classes.buttonInactiveType}
-          color="default"
-          icon={true}
-          tag="button"
-          onClick={() => {
-            dispatch(setType(SOFTWARE_REUSE));
-          }}
-        >
-          <Icon icon="it-software" /> {l10NLabels['software']['software_reuse']}
-        </Button>
-      </div>
+    <div className="form-group" data-testid="search-type-buttons">
+      {buttons.map((b) => (
+        <div key={b.dataTestid} className="d-block d-md-inline-block m-1">
+          <Button
+            className={type === b.type ? classes.buttonActiveType : classes.buttonInactiveType}
+            color="default"
+            icon={true}
+            tag="button"
+            onClick={() => {
+              dispatch(setType(b.type));
+            }}
+            data-testid={b.dataTestid}
+          >
+            <Icon icon={b.icon} /> {b.label}
+          </Button>
+        </div>
+      ))}
     </div>
   );
 });

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { SearchItem } from './SearchItem.js';
 import { createUseStyles } from 'react-jss';
 import { searchItemProptypes } from '../../utils/proptypes.js';
+import { l10NLabels } from '../../utils/l10n.js';
 
 const useStyles = createUseStyles({
   noResults: {
@@ -12,13 +13,21 @@ const useStyles = createUseStyles({
 
 export const SearchItems = React.memo(({ items }) => {
   const classes = useStyles();
-  const itemList =
-    items.length === 0 ? (
-      <h5 className={classes.noResults}>Nessun risultato trovato</h5>
-    ) : (
-      items.map((i) => <SearchItem key={i.id} item={i} />)
+  if (items.length === 0) {
+    return (
+      <div className="form-group" data-testid="search-modal-no-results">
+        <h5 className={classes.noResults}>{l10NLabels.software.no_results}</h5>
+      </div>
     );
-  return <div className="form-group">{itemList}</div>;
+  }
+
+  return (
+    <div className="form-group" data-testid="search-modal-items">
+      {items.map((i) => (
+        <SearchItem key={i.id} item={i} />
+      ))}
+    </div>
+  );
 });
 
 SearchItems.propTypes = {

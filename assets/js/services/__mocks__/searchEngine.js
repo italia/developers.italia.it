@@ -37,4 +37,38 @@ export const search = jest.fn(async (type) => {
       169,
     ];
   }
+
+  return [
+    [
+      {
+        category: 'news',
+        description: "6 incontri a giro per l'Italia, incontrando gli sviluppatori prima di Hack.Developers",
+        icon: 'it-horn',
+        logo: '/assets/icons/logo-it.png',
+        name: "Meetup su Hack.Developers, incontraci dall'11 al 19 Settembre",
+        url: '/it/news/2017/09/07/hack-developers-meetup',
+        id: 'KT0xXHcBQbdPK8qBwFgr',
+      },
+      {
+        category: 'platform',
+        description:
+          "Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su ...",
+        icon: 'it-piattaforme',
+        logo: '/assets/images/logo-anpr@2x.png',
+        name: 'ANPR',
+        url: '/it/anpr/',
+        id: 'K8gxXHcB1AD1KRLsx4Mb',
+      },
+      {
+        category: 'page',
+        description: '',
+        icon: 'it-file',
+        logo: '/assets/icons/logo-it.png',
+        name: '403 - Forbidden',
+        url: '/403.html',
+        id: 'OcgxXHcB1AD1KRLsx4Mb',
+      },
+    ],
+    50,
+  ];
 });

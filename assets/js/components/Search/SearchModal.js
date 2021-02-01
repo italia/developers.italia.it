@@ -27,12 +27,12 @@ export const SearchModal = ({ onClose }) => {
   const { searchValue } = useContext(searchContextState);
 
   return (
-    <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" toggle={onClose}>
+    <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" toggle={onClose} data-testid="search-modal">
       <ModalBody className="mt-3" tag="div">
         <div className="container">
           <div className="row px-1 px-md-2">
             <h1>{l10NLabels['search_form_label']}</h1>
-            <button className={classes.closeButton} onClick={onClose}>
+            <button className={classes.closeButton} onClick={onClose} data-testid="close-search-modal">
               ×
             </button>
           </div>
