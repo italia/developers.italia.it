@@ -65,10 +65,11 @@ export const searchReducer = (state, action) => {
 export const SearchProvider = ({
   initialCategories = [],
   initialDevelopmentStatuses = [],
+  initialFrom = 0,
   initialIntendedAudiences = [],
-  initialType = ALL_SITE,
   initialSearchValue = '',
   initialSortBy = RELEVANCE,
+  initialType = ALL_SITE,
   syncStateWithQueryString = false,
   children,
 }) => {
@@ -76,10 +77,10 @@ export const SearchProvider = ({
     filterCategories: initialCategories,
     filterDevelopmentStatuses: initialDevelopmentStatuses,
     filterIntendedAudiences: initialIntendedAudiences,
-    from: 0,
-    type: initialType,
+    from: initialFrom,
     searchValue: initialSearchValue,
     sortBy: initialSortBy,
+    type: initialType,
   });
 
   syncStateWithQueryString && serializeStateToQueryString(state);
@@ -94,10 +95,11 @@ export const SearchProvider = ({
 SearchProvider.propTypes = {
   initialCategories: PropTypes.arrayOf(PropTypes.string),
   initialDevelopmentStatuses: PropTypes.arrayOf(PropTypes.string),
+  initialFrom: PropTypes.number,
   initialIntendedAudiences: PropTypes.arrayOf(PropTypes.string),
-  initialType: PropTypes.string,
   initialSearchValue: PropTypes.string,
   initialSortBy: PropTypes.string,
+  initialType: PropTypes.string,
   syncStateWithQueryString: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
