@@ -1,3 +1,5 @@
+import { ALPHABETICAL, RELEASE_DATE, VITALITY } from '../utils/constants.js';
+
 export const buildFilter = (filters) => {
   let { intendedAudiences, categories, developmentStatuses } = filters;
   intendedAudiences = Array.isArray(intendedAudiences) ? intendedAudiences : [];
@@ -15,30 +17,27 @@ export const buildFilter = (filters) => {
 };
 
 export const buildSort = (sortBy) => {
-  const { field } = sortBy;
-  if (field === 'name') {
+  if (sortBy === ALPHABETICAL) {
     return [
       {
-        'publiccode.description.it.localizedName.keyword': { order: getOrder(sortBy), unmapped_type: 'keyword' },
+        'publiccode.description.it.localizedName.keyword': { order: 'asc', unmapped_type: 'keyword' },
       },
     ];
   }
-  if (field === 'vitality') {
+  if (sortBy === VITALITY) {
     return [
       {
-        vitalityScore: { order: getOrder(sortBy) },
+        vitalityScore: { order: 'desc' },
       },
     ];
   }
-  if (field === 'release_date') {
+  if (sortBy === RELEASE_DATE) {
     return [
       {
-        'publiccode.releaseDate': { order: getOrder(sortBy) },
+        'publiccode.releaseDate': { order: 'desc' },
       },
     ];
   }
 
   return [];
 };
-
-const getOrder = ({ asc }) => (asc ? 'asc' : 'desc');

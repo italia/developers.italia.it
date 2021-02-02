@@ -39,7 +39,7 @@ export const SearchModal = ({ onClose }) => {
           <SearchBar />
           <SearchType />
           <h5 className="form-group text-uppercase">
-            <a href={`/${lang}/search?keyword=${searchValue}`}>{l10NLabels.search_form_catalogue}</a>
+            <a href={`/${lang}/search?search_value=${searchValue}`}>{l10NLabels.search_form_catalogue}</a>
           </h5>
           {items !== null && <SearchItems items={items} />}
         </div>

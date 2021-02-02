@@ -1,6 +1,10 @@
 export const ADMINISTRATION = 'administration';
 export const ALL_SITE = 'all_site';
 export const ALL_CATALOGUE = 'all_catalogue';
+export const RELEVANCE = 'relevance';
+export const VITALITY = 'vitality';
+export const RELEASE_DATE = 'release_date';
+export const ALPHABETICAL = 'name';
 export const PLATFORM = 'platform';
 export const SOFTWARE_OPEN = 'software_open';
 export const SOFTWARE_REUSE = 'software_reuse';

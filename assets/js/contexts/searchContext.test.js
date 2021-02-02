@@ -35,7 +35,7 @@ const DummyUseContext = () => {
       <div data-testid="filter-categories">{filterCategories.join()}</div>
       <div data-testid="filter-development-statuses">{filterDevelopmentStatuses.join()}</div>
       <div data-testid="filter-intended-audiences">{filterIntendedAudiences.join()}</div>
-      <div data-testid="sort-by">{JSON.stringify(sortBy)}</div>
+      <div data-testid="sort-by">{sortBy}</div>
     </div>
   );
 };
@@ -47,7 +47,7 @@ describe('searchContext', () => {
         initialType={ALL_CATALOGUE}
         initialSearchValue="foo"
         initialCategories={['business', 'education']}
-        initialSortBy={{ field: 'last_release' }}
+        initialSortBy="last_release"
       >
         <DummyUseContext />
       </SearchProvider>
@@ -58,7 +58,7 @@ describe('searchContext', () => {
     expect(screen.getByTestId('filter-categories')).toHaveTextContent('business,education');
     expect(screen.getByTestId('filter-development-statuses')).toBeEmptyDOMElement();
     expect(screen.getByTestId('filter-intended-audiences')).toBeEmptyDOMElement();
-    expect(screen.getByTestId('sort-by')).toHaveTextContent(`{"field":"last_release"`);
+    expect(screen.getByTestId('sort-by')).toHaveTextContent('last_release');
   });
 });
 
@@ -72,7 +72,7 @@ describe('searchReducer', () => {
       from: 5,
       type: ALL_SITE,
       searchValue: 'app',
-      sortBy: { field: 'vitality' },
+      sortBy: 'vitality',
     };
   });
   it('dispatches new search value', () => {
@@ -120,7 +120,7 @@ describe('searchReducer', () => {
     expect(searchReducer(initialState, setSortBy('release_date'))).toEqual({
       ...initialState,
       from: 0,
-      sortBy: { field: 'release_date' },
+      sortBy: 'release_date',
     });
   });
 });

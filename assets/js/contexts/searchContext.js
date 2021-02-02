@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 import PropTypes from 'prop-types';
-import { ALL_SITE } from '../utils/constants.js';
+import { ALL_SITE, RELEVANCE } from '../utils/constants.js';
 import { serializeStateToQueryString } from '../utils/urlSearchParams.js';
 
 const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
@@ -68,7 +68,7 @@ export const SearchProvider = ({
   initialIntendedAudiences = [],
   initialType = ALL_SITE,
   initialSearchValue = '',
-  initialSortBy = {},
+  initialSortBy = RELEVANCE,
   syncStateWithQueryString = false,
   children,
 }) => {
@@ -97,9 +97,7 @@ SearchProvider.propTypes = {
   initialIntendedAudiences: PropTypes.arrayOf(PropTypes.string),
   initialType: PropTypes.string,
   initialSearchValue: PropTypes.string,
-  initialSortBy: PropTypes.shape({
-    field: PropTypes.string,
-  }),
+  initialSortBy: PropTypes.string,
   syncStateWithQueryString: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
@@ -116,7 +114,7 @@ export const setType = (type) => ({
 });
 export const setSortBy = (sortBy) => ({
   type: SET_SORT_BY,
-  value: { field: sortBy },
+  value: sortBy,
 });
 
 export const setFrom = (from) => ({

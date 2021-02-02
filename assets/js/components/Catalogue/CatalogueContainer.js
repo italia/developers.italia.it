@@ -8,10 +8,10 @@ import {
   initialDevelopmentStatuses,
   initialIntendedAudiences,
   initialSearchValue,
-  initialSort,
+  initialSortBy,
   initialType,
 } from '../../utils/urlSearchParams.js';
-import { ALL_CATALOGUE } from '../../utils/constants.js';
+import { ALL_CATALOGUE, RELEVANCE } from '../../utils/constants.js';
 
 const useStyle = createUseStyles({
   container: {
@@ -20,8 +20,6 @@ const useStyle = createUseStyles({
     marginBottom: '6rem',
   },
 });
-
-const initialSortBy = initialSort ? { field: initialSort } : {};
 
 export const CatalogueContainer = () => {
   const classes = useStyle();
@@ -32,7 +30,7 @@ export const CatalogueContainer = () => {
       initialDevelopmentStatuses={initialDevelopmentStatuses}
       initialIntendedAudiences={initialIntendedAudiences}
       initialSearchValue={initialSearchValue}
-      initialSortBy={initialSortBy}
+      initialSortBy={initialSortBy ?? RELEVANCE}
       initialType={initialType ?? ALL_CATALOGUE}
       syncStateWithQueryString={true}
     >

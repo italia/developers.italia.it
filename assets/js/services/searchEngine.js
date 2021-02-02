@@ -9,7 +9,7 @@ import {
 } from '../utils/constants.js';
 import { queryAdministration, queryAllSite, queryApi, queryPlatform, querySoftware } from '../api/elasticSearch.js';
 
-export const search = async (type, { searchValue, filters = {}, sortBy = {}, from = 0, size = 12 } = {}) => {
+export const search = async (type, { searchValue, filters = {}, sortBy = 'relevance', from = 0, size = 12 } = {}) => {
   const params = {
     searchValue,
     filters,
