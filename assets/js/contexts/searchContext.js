@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { ALL_SITE } from '../utils/constants.js';
+import { serializeStateToQueryString } from '../utils/urlSearchParams.js';
 
 const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 const SET_FILTERS_CATEGORIES = 'SET_FILTERS_CATEGORIES';
@@ -63,20 +64,25 @@ export const searchReducer = (state, action) => {
 
 export const SearchProvider = ({
   initialCategories = [],
+  initialDevelopmentStatuses = [],
+  initialIntendedAudiences = [],
   initialType = ALL_SITE,
   initialSearchValue = '',
   initialSortBy = {},
+  syncStateWithQueryString = false,
   children,
 }) => {
   const [state, dispatch] = useReducer(searchReducer, {
     filterCategories: initialCategories,
-    filterDevelopmentStatuses: [],
-    filterIntendedAudiences: [],
+    filterDevelopmentStatuses: initialDevelopmentStatuses,
+    filterIntendedAudiences: initialIntendedAudiences,
     from: 0,
     type: initialType,
     searchValue: initialSearchValue,
     sortBy: initialSortBy,
   });
+
+  syncStateWithQueryString && serializeStateToQueryString(state);
 
   return (
     <searchContextState.Provider value={state}>
@@ -87,11 +93,14 @@ export const SearchProvider = ({
 
 SearchProvider.propTypes = {
   initialCategories: PropTypes.arrayOf(PropTypes.string),
+  initialDevelopmentStatuses: PropTypes.arrayOf(PropTypes.string),
+  initialIntendedAudiences: PropTypes.arrayOf(PropTypes.string),
   initialType: PropTypes.string,
   initialSearchValue: PropTypes.string,
   initialSortBy: PropTypes.shape({
     field: PropTypes.string,
   }),
+  syncStateWithQueryString: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 

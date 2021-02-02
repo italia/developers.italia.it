@@ -3,7 +3,14 @@ import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 import { createUseStyles } from 'react-jss';
 import { CatalogueView } from './CatalogueView.js';
 import { SearchProvider } from '../../contexts/searchContext.js';
-import { initialCategories, initialSearchValue, initialSort, initialType } from '../../utils/urlSearchParams.js';
+import {
+  initialCategories,
+  initialDevelopmentStatuses,
+  initialIntendedAudiences,
+  initialSearchValue,
+  initialSort,
+  initialType,
+} from '../../utils/urlSearchParams.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
 
 const useStyle = createUseStyles({
@@ -22,9 +29,12 @@ export const CatalogueContainer = () => {
   return (
     <SearchProvider
       initialCategories={initialCategories}
+      initialDevelopmentStatuses={initialDevelopmentStatuses}
+      initialIntendedAudiences={initialIntendedAudiences}
       initialSearchValue={initialSearchValue}
       initialSortBy={initialSortBy}
       initialType={initialType ?? ALL_CATALOGUE}
+      syncStateWithQueryString={true}
     >
       <article className={classes.container} data-testid="catalogue-container">
         <div className="row">

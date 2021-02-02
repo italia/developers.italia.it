@@ -25,7 +25,7 @@ const softwareTypesFilter = [[ALL_CATALOGUE, l10NLabels.all], ...softwareTypes];
 
 export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const dispatch = useContext(searchContextDispatch);
-  const { filterCategories, type } = useContext(searchContextState);
+  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(searchContextState);
   const typesFilterName = `${prefixName}_type`;
   const categoriesFilterName = `${prefixName}_categories`;
   const intendedAudiencesFilterName = `${prefixName}_intended_audiences`;
@@ -41,6 +41,18 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const defaultCategories = useMemo(
     () => ({
       [categoriesFilterName]: filterCategories,
+    }),
+    []
+  );
+  const defaultDevelopmentStatuses = useMemo(
+    () => ({
+      [developmentStatusesFilterName]: filterDevelopmentStatuses,
+    }),
+    []
+  );
+  const defaultIntendedAudiences = useMemo(
+    () => ({
+      [intendedAudiencesFilterName]: filterIntendedAudiences,
     }),
     []
   );
@@ -75,12 +87,14 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
         title={l10NLabels.software.intended_audience}
         name={intendedAudiencesFilterName}
         filters={softwareIntendedAudiences}
+        defaultValues={defaultIntendedAudiences}
         onChange={handleChangeOnIntendedAudiences}
       />
       <CatalogueFilters
         title={l10NLabels.software.development_status}
         name={developmentStatusesFilterName}
         filters={softwareDevelopmentStatuses}
+        defaultValues={defaultDevelopmentStatuses}
         onChange={handleChangeOnDevelopmentStatuses}
       />
     </>
