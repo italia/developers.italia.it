@@ -3,13 +3,13 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import userEvent from '@testing-library/user-event';
-import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
+import { CatalogueFilters } from './CatalogueFilters.js';
 
-describe('CatalogueFiltersGroup', () => {
-  it('renders CatalogueFiltersGroup', () => {
+describe('CatalogueFilters', () => {
+  it('renders CatalogueFilters', () => {
     const onChange = jest.fn();
     render(
-      <CatalogueFiltersGroup
+      <CatalogueFilters
         title={'661'}
         onChange={onChange}
         filters={[
@@ -17,6 +17,7 @@ describe('CatalogueFiltersGroup', () => {
           ['open', 'source'],
           ['software', 'libero'],
         ]}
+        name="test"
       />
     );
 
@@ -26,7 +27,7 @@ describe('CatalogueFiltersGroup', () => {
   it('dispatches onChange function on click', () => {
     const onChange = jest.fn();
     render(
-      <CatalogueFiltersGroup
+      <CatalogueFilters
         title={'Software'}
         onChange={onChange}
         filters={[
@@ -34,6 +35,7 @@ describe('CatalogueFiltersGroup', () => {
           ['open', 'source'],
           ['software', 'libero'],
         ]}
+        name="test"
       />
     );
 
@@ -44,7 +46,7 @@ describe('CatalogueFiltersGroup', () => {
   it('updates internal counter on click', () => {
     const onChange = jest.fn();
     render(
-      <CatalogueFiltersGroup
+      <CatalogueFilters
         title={'Software'}
         onChange={onChange}
         filters={[
@@ -52,6 +54,7 @@ describe('CatalogueFiltersGroup', () => {
           ['open', 'source'],
           ['software', 'libero'],
         ]}
+        name="test"
       />
     );
 

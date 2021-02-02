@@ -1,101 +1,93 @@
-import React, { useContext, useMemo } from 'react';
-import {
-  l10NLabels,
-  getSoftwareCategories,
-  getSoftwareDevelopmentStatuses,
-  getSoftwareIntendedAudiences,
-  softwareTypes,
-} from '../../utils/l10n.js';
-import { CatalogueFiltersGroup } from './CatalogueFiltersGroup.js';
-import {
-  searchContextDispatch,
-  searchContextState,
-  setFilterCategories,
-  setFilterDevelopmentStatuses,
-  setFilterIntendedAudience,
-  setType,
-} from '../../contexts/searchContext.js';
-import { ALL_CATALOGUE } from '../../utils/constants.js';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import PropTypes from 'prop-types';
+import { createUseStyles } from 'react-jss';
+import { CatalogueFiltersTitle } from './CatalogueFiltersTitle.js';
 
-const getFiltersFromUserInput = (values) => {
-  const filters = Object.entries(values).reduce((acc, [key, value]) => {
-    if (value) acc.push(key);
-    return acc;
-  }, []);
-  return filters;
-};
+const useStyles = createUseStyles({
+  groupContainer: {
+    composes: 'mt-2',
+    maxHeight: (showAll) => (showAll ? '100%' : '200px'),
+    overflowY: 'hidden',
+    paddingLeft: '2px',
+    transition: 'max-height 0.5s',
+  },
+  checkbox: {
+    flexShrink: 0,
+    width: '24px',
+    height: '24px',
+    marginRight: '8px',
+  },
+  label: {
+    display: 'flex',
+    marginBottom: '0px',
+    paddingTop: '1px',
+    paddingBottom: '8px',
+    textTransform: 'capitalize',
+    userSelect: 'none',
+  },
+});
 
-const softwareCategories = getSoftwareCategories();
-const softwareIntendedAudiences = getSoftwareIntendedAudiences();
-const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
+export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, name }) => {
+  const [selectedFiltersCount, setSelectedFiltersCount] = useState(Object.values(defaultValues).flat().length);
+  const [showAll, setShowAll] = useState(false);
 
-export const CatalogueFilters = React.memo(() => {
-  const dispatch = useContext(searchContextDispatch);
-  const { filterCategories, type } = useContext(searchContextState);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const defaultTypes = useMemo(() => (type && type !== ALL_CATALOGUE ? { [type]: true } : {}), []);
-  /* eslint-disable react-hooks/exhaustive-deps */
-  const defaultCategories = useMemo(
-    () =>
-      filterCategories.reduce((acc, filterValue) => {
-        acc[filterValue] = true;
-        return acc;
-      }, {}),
-    []
-  );
-  /* eslint-enable react-hooks/exhaustive-deps */
+  const classes = useStyles(showAll);
+  const { register, getValues } = useForm({
+    defaultValues,
+  });
 
-  const handleChangeOnTypes = (values) => {
-    const [type] = getFiltersFromUserInput(values);
-    if (type) {
-      dispatch(setType(type));
-    } else {
-      dispatch(setType(ALL_CATALOGUE));
-    }
+  const updateCounter = () => {
+    const values = getValues();
+    setSelectedFiltersCount(Object.values(values).flat().length);
   };
 
-  const handleChangeOnCategories = (values) => {
-    const categories = getFiltersFromUserInput(values);
-    dispatch(setFilterCategories(categories));
+  const handleOnChangeFilter = () => {
+    updateCounter();
+    const values = getValues();
+    onChange(values[name]);
   };
 
-  const handleChangeOnIntendedAudiences = (values) => {
-    const intendedAudiences = getFiltersFromUserInput(values);
-    dispatch(setFilterIntendedAudience(intendedAudiences));
-  };
-
-  const handleChangeOnDevelopmentStatuses = (values) => {
-    const developmentStatuses = getFiltersFromUserInput(values);
-    dispatch(setFilterDevelopmentStatuses(developmentStatuses));
+  const toogleShowAll = () => {
+    setShowAll(!showAll);
   };
 
   return (
     <>
-      <CatalogueFiltersGroup
-        title={l10NLabels.software.type}
-        filters={softwareTypes}
-        defaultValues={defaultTypes}
-        onChange={handleChangeOnTypes}
-        singleSelect={true}
-      />
-      <CatalogueFiltersGroup
-        title={l10NLabels.software.categories}
-        filters={softwareCategories}
-        defaultValues={defaultCategories}
-        onChange={handleChangeOnCategories}
-      />
-      <CatalogueFiltersGroup
-        title={l10NLabels.software.intended_audience}
-        filters={softwareIntendedAudiences}
-        onChange={handleChangeOnIntendedAudiences}
-      />
-      <CatalogueFiltersGroup
-        title={l10NLabels.software.development_status}
-        filters={softwareDevelopmentStatuses}
-        onChange={handleChangeOnDevelopmentStatuses}
-      />
+      <div className={classes.groupContainer}>
+        <CatalogueFiltersTitle
+          title={title}
+          counter={selectedFiltersCount}
+          showCollapsableIcon={filters.length > 10}
+          onToogleExpandCollapse={toogleShowAll}
+        />
+        {filters.map(([key, value]) => (
+          <label role="button" key={key} className={classes.label}>
+            <input
+              alt={value}
+              role="button"
+              className={classes.checkbox}
+              type={radio ? 'radio' : 'checkbox'}
+              name={name}
+              value={key}
+              ref={register}
+              onChange={handleOnChangeFilter}
+            />
+            {value}
+          </label>
+        ))}
+      </div>
     </>
   );
 });
+
+CatalogueFilters.propTypes = {
+  defaultValues: PropTypes.object,
+  filters: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  radio: PropTypes.bool,
+  title: PropTypes.string.isRequired,
+};
 
 CatalogueFilters.displayName = 'CatalogueFilters';

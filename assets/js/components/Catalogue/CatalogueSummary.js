@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { l10NLabels } from '../../utils/l10n.js';
 import { CatalogueSort } from './CatalogueSort.js';
 import { createUseStyles } from 'react-jss';
-import { CatalogueFilters } from './CatalogueFilters.js';
+import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 import { CatalogueSearchBar } from './CatalogueSearchBar.js';
 import { CatalogueFiltersTitle } from './CatalogueFiltersTitle.js';
 
@@ -52,7 +52,7 @@ export const CatalogueSummary = React.memo(({ itemsCount, totalAppliedFilters })
         </div>
         <div className={classes.filters}>
           <div className="col-10 m-auto">
-            <CatalogueFilters />
+            <CatalogueFiltersContainer prefixName="mobile_view" />
           </div>
         </div>
       </div>

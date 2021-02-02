@@ -1,5 +1,5 @@
 import React from 'react';
-import { CatalogueFilters } from './CatalogueFilters.js';
+import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 import { createUseStyles } from 'react-jss';
 import { CatalogueView } from './CatalogueView.js';
 import { SearchProvider } from '../../contexts/searchContext.js';
@@ -29,7 +29,7 @@ export const CatalogueContainer = () => {
       <article className={classes.container} data-testid="catalogue-container">
         <div className="row">
           <section className="col-lg-3 d-none d-lg-flex flex-column">
-            <CatalogueFilters />
+            <CatalogueFiltersContainer prefixName="desktop_view" />
           </section>
           <section className="col-12 col-lg-9">
             <CatalogueView />
