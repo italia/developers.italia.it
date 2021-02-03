@@ -90,7 +90,7 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
         },
       });
 
-      reloadItemsUntilPage.current = false; // The "resume mode" is valid only fro one iteration. Starting from the next iteration the items fetching will return to act normally
+      reloadItemsUntilPage.current = false; // The "resume mode" is valid only for one iteration. Starting from the next iteration the items fetching will return to act normally
     };
     query();
   }, [type, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy, page]);
