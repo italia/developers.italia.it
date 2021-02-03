@@ -7,6 +7,7 @@ import {
   SOFTWARE_OPEN,
   SOFTWARE_REUSE,
 } from '../utils/constants.js';
+import { lang } from '../utils/l10n.js';
 import { queryAdministration, queryAllSite, queryApi, queryPlatform, querySoftware } from '../api/elasticSearch.js';
 
 export const search = async (type, { searchValue, filters = {}, sortBy = 'relevance', from = 0, size = 12 } = {}) => {
@@ -66,24 +67,19 @@ const mapESResultsToItems = (results) => {
 };
 
 const administrationItem = (source) => {
-  const language = 'it';
   return {
     category: 'administration',
     description: '',
     icon: 'it-pa',
     logo: '/assets/images/cover_amministrazioni.png',
     name: source['it-riuso-codiceIPA-label'],
-    url: `/${language}/pa/${source['it-riuso-codiceIPA']}`,
+    url: `/${lang}/pa/${source['it-riuso-codiceIPA']}`,
   };
 };
 
 const softwareItem = (source) => {
-  const language = 'it'; // TODO i18n;
-
   const descriptionField =
-    source.publiccode.description?.[language] ??
-    source.publiccode.description['en'] ??
-    source.publiccode.description['it'];
+    source.publiccode.description?.[lang] ?? source.publiccode.description['en'] ?? source.publiccode.description['it'];
   const description = cropString(descriptionField.shortDescription);
 
   const name = descriptionField.localisedName ?? source.publiccode.name;
@@ -99,7 +95,7 @@ const softwareItem = (source) => {
   // workaround for SVG logo/screens in Github #461
   if (/github/.test(logo) && /\.svg$/.test(logo)) logo += '?sanitize=true';
 
-  const url = `/${language}/software/${source.slug.toLowerCase()}`;
+  const url = `/${lang}/software/${source.slug.toLowerCase()}`;
 
   return {
     category,

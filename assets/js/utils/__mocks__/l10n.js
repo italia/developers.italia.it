@@ -73,3 +73,5 @@ export const softwareTypes = [
   ['software_open', 'Software open source'],
   ['software_reuse', 'Software a riuso'],
 ];
+
+export const lang = 'it';

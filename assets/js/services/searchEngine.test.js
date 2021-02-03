@@ -2,6 +2,7 @@ import { search } from './searchEngine.js';
 import { ALL_SITE, ADMINISTRATION, SOFTWARE_REUSE, SOFTWARE_OPEN, API, PLATFORM } from '../utils/constants.js';
 
 jest.mock('../api/elasticSearch.js');
+jest.mock('../utils/l10n.js');
 
 describe('searchEngine', () => {
   it('correctly models news item', async () => {
