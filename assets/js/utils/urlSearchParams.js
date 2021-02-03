@@ -1,7 +1,7 @@
 const urlSearchParams = new URLSearchParams(window.location.search);
 export const initialCategories = urlSearchParams.getAll('categories');
 export const initialDevelopmentStatuses = urlSearchParams.getAll('development_statuses');
-export const initialFrom = urlSearchParams.get('from');
+export const initialPage = urlSearchParams.get('page');
 export const initialIntendedAudiences = urlSearchParams.getAll('intended_audiences');
 export const initialSearchValue = urlSearchParams.get('search_value');
 export const initialSortBy = urlSearchParams.get('sort_by');
@@ -11,7 +11,7 @@ export const serializeStateToQueryString = ({
   filterCategories,
   filterDevelopmentStatuses,
   filterIntendedAudiences,
-  from,
+  page,
   type,
   searchValue,
   sortBy,
@@ -23,6 +23,6 @@ export const serializeStateToQueryString = ({
   urlSearchParams.set('type', type);
   urlSearchParams.set('sort_by', sortBy);
   searchValue && urlSearchParams.set('search_value', searchValue);
-  urlSearchParams.set('from', from);
+  urlSearchParams.set('page', page);
   history.pushState(null, null, '?' + urlSearchParams.toString());
 };

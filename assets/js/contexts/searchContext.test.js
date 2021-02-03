@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import {
   searchContextState,
   SearchProvider,
-  setFrom,
+  incrementPage,
   setType,
   setSearchValue,
   setFilterDevelopmentStatuses,
@@ -18,7 +18,7 @@ import { ALL_CATALOGUE, ADMINISTRATION, ALL_SITE } from '../utils/constants.js';
 
 const DummyUseContext = () => {
   const {
-    from,
+    page,
     type,
     searchValue,
     filterCategories,
@@ -29,7 +29,7 @@ const DummyUseContext = () => {
 
   return (
     <div>
-      <div data-testid="from">{from}</div>
+      <div data-testid="page">{page}</div>
       <div data-testid="type">{type}</div>
       <div data-testid="search-value">{searchValue}</div>
       <div data-testid="filter-categories">{filterCategories.join()}</div>
@@ -52,7 +52,7 @@ describe('searchContext', () => {
         <DummyUseContext />
       </SearchProvider>
     );
-    expect(screen.getByTestId('from')).toHaveTextContent('0');
+    expect(screen.getByTestId('page')).toHaveTextContent('0');
     expect(screen.getByTestId('type')).toHaveTextContent(ALL_CATALOGUE);
     expect(screen.getByTestId('search-value')).toHaveTextContent('foo');
     expect(screen.getByTestId('filter-categories')).toHaveTextContent('business,education');
@@ -69,7 +69,7 @@ describe('searchReducer', () => {
       filterCategories: ['john', 'doe'],
       filterDevelopmentStatuses: ['test'],
       filterIntendedAudiences: ['business', 'education'],
-      from: 5,
+      page: 5,
       type: ALL_SITE,
       searchValue: 'app',
       sortBy: 'vitality',
@@ -78,48 +78,48 @@ describe('searchReducer', () => {
   it('dispatches new search value', () => {
     expect(searchReducer(initialState, setSearchValue('foo'))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       searchValue: 'foo',
     });
   });
   it('dispatches new type', () => {
     expect(searchReducer(initialState, setType(ADMINISTRATION))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       type: ADMINISTRATION,
     });
   });
   it('dispatches new filter categories', () => {
     expect(searchReducer(initialState, setFilterCategories(['document', 'software']))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       filterCategories: ['document', 'software'],
     });
   });
   it('dispatches new development statuses', () => {
     expect(searchReducer(initialState, setFilterDevelopmentStatuses(['stable']))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       filterDevelopmentStatuses: ['stable'],
     });
   });
   it('dispatches new intended audiences', () => {
     expect(searchReducer(initialState, setFilterIntendedAudience(['john', 'doe']))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       filterIntendedAudiences: ['john', 'doe'],
     });
   });
-  it('dispatches new from', () => {
-    expect(searchReducer(initialState, setFrom(100))).toEqual({
+  it('dispatches new page', () => {
+    expect(searchReducer(initialState, incrementPage())).toEqual({
       ...initialState,
-      from: 100,
+      page: 6,
     });
   });
   it('dispatches new sort', () => {
     expect(searchReducer(initialState, setSortBy('release_date'))).toEqual({
       ...initialState,
-      from: 0,
+      page: 0,
       sortBy: 'release_date',
     });
   });

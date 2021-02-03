@@ -1,6 +1,6 @@
-import { useContext, useEffect, useMemo, useReducer, useRef } from 'react';
+import { useContext, useEffect, useReducer, useRef } from 'react';
 import { search } from '../services/searchEngine.js';
-import { searchContextDispatch, searchContextState, setFrom } from '../contexts/searchContext.js';
+import { searchContextDispatch, searchContextState, incrementPage } from '../contexts/searchContext.js';
 
 const ADD_ITEMS = 'ADD_ITEMS';
 const SET_ITEMS = 'SET_ITEMS';
@@ -37,9 +37,8 @@ const reducer = (state, action) => {
   }
 };
 
-// The resume mode is used by the infiniteScroll to resume the previous view when the user click on the browser back button
-const isResumeMode = (initialFrom) => {
-  return initialFrom !== null && initialFrom > 0;
+const areMoreItemsAvailable = (from, size, total) => {
+  return from + size < total;
 };
 
 export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
@@ -49,28 +48,30 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
     filterCategories,
     filterDevelopmentStatuses,
     filterIntendedAudiences,
-    from,
+    page,
     type,
     searchValue,
     sortBy,
   } = useContext(searchContextState);
-  const size = useRef(pageSize);
-  const previousFrom = useRef(from); // previousFrom > 0 means restart fetching document from previousFrom + pageSize
-  console.log(previousFrom.current);
+  // This feature is mainly used by the infiniteScroll to reload the previous items just after an user click on the browser back button
+  const reloadItemsUntilPage = useRef(page > 0 ? page : false);
+  // If we aren't in the "resume mode" the from is incremental
+  const from = reloadItemsUntilPage.current ? 0 : page * pageSize;
+  // If we aren't in the "resume mode" use the default page size
+  const size = reloadItemsUntilPage.current ? (reloadItemsUntilPage.current + 1) * pageSize : pageSize;
 
   const fetchMore = () => {
-    if (!isLoading && from + size.current < total) {
-      dispatchGlobal(setFrom(from + size.current));
+    if (!isLoading && areMoreItemsAvailable(from, size, total)) {
+      dispatchGlobal(incrementPage());
     }
   };
 
   useEffect(() => {
     const query = async () => {
       dispatch({ type: SET_IS_LOADING });
-      console.log('resume', isResumeMode(previousFrom.current));
 
       const [results, total] = await search(type, {
-        from: isResumeMode(previousFrom.current) ? 0 : from, // In resumeMode always start from zero
+        from,
         filters: {
           categories: filterCategories,
           developmentStatuses: filterDevelopmentStatuses,
@@ -78,21 +79,21 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
         },
         searchValue,
         sortBy,
-        size: isResumeMode(previousFrom.current) ? previousFrom.current + size.current : size.current, // In resumeMode load all the items until resumeFrom plus the items in the current page
+        size,
       });
 
       dispatch({
-        type: isResumeMode(previousFrom.current) ? SET_ITEMS : from > 0 ? ADD_ITEMS : SET_ITEMS,
+        type: from === 0 ? SET_ITEMS : ADD_ITEMS,
         value: {
           items: results,
           total,
         },
       });
 
-      previousFrom.current = null; // Invalidate resumeMode. Starting from the next iteration the items fetch will return to act normally
+      reloadItemsUntilPage.current = false; // The "resume mode" is valid only fro one iteration. Starting from the next iteration the items fetching will return to act normally
     };
     query();
-  }, [type, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy, from]);
+  }, [type, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy, page]);
 
   return [items, total, fetchMore];
 };

@@ -7,7 +7,7 @@ import {
   initialCategories,
   initialDevelopmentStatuses,
   initialIntendedAudiences,
-  initialFrom,
+  initialPage,
   initialSearchValue,
   initialSortBy,
   initialType,
@@ -29,7 +29,7 @@ export const CatalogueContainer = () => {
     <SearchProvider
       initialCategories={initialCategories}
       initialDevelopmentStatuses={initialDevelopmentStatuses}
-      initialFrom={Number(initialFrom) ?? 0}
+      initialPage={Number(initialPage)}
       initialIntendedAudiences={initialIntendedAudiences}
       initialSearchValue={initialSearchValue}
       initialSortBy={initialSortBy ?? RELEVANCE}
