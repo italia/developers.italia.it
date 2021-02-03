@@ -24,5 +24,5 @@ export const serializeStateToQueryString = ({
   urlSearchParams.set('sort_by', sortBy);
   searchValue && urlSearchParams.set('search_value', searchValue);
   urlSearchParams.set('page', page);
-  history.pushState(null, null, '?' + urlSearchParams.toString());
+  history.replaceState(null, null, '?' + urlSearchParams.toString());
 };
