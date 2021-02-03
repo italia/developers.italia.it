@@ -16,6 +16,7 @@ export const serializeStateToQueryString = ({
   searchValue,
   sortBy,
 }) => {
+  const hash = location.hash; // preserve hash if it is present
   const urlSearchParams = new URLSearchParams();
   filterCategories.forEach((f) => urlSearchParams.append('categories', f));
   filterDevelopmentStatuses.forEach((f) => urlSearchParams.append('development_statuses', f));
@@ -24,5 +25,5 @@ export const serializeStateToQueryString = ({
   urlSearchParams.set('sort_by', sortBy);
   searchValue && urlSearchParams.set('search_value', searchValue);
   urlSearchParams.set('page', page);
-  history.replaceState(null, null, '?' + urlSearchParams.toString());
+  history.replaceState(null, null, `?${urlSearchParams.toString()}${hash}`);
 };

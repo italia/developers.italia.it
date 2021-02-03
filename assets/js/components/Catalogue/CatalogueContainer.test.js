@@ -5,6 +5,7 @@ import { CatalogueContainer } from './CatalogueContainer.js';
 
 jest.mock('../../utils/l10n.js');
 jest.mock('../../services/searchEngine.js');
+jest.mock('../../hooks/useScrollIntoView.js');
 
 describe('CatalogueContainer', () => {
   it('renders the catalogue', async () => {

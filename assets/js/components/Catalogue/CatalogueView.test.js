@@ -9,6 +9,7 @@ import { search } from '../../services/searchEngine.js';
 
 jest.mock('../../utils/l10n.js');
 jest.mock('../../services/searchEngine.js');
+jest.mock('../../hooks/useScrollIntoView.js');
 
 describe('CatalogueView', () => {
   it('renders CatalogueView with items and grand total', async () => {

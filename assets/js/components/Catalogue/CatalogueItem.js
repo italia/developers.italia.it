@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
 import { l10NLabels } from '../../utils/l10n.js';
@@ -58,8 +58,14 @@ const useStyles = createUseStyles({
 
 export const CatalogueItem = ({ item }) => {
   const classes = useStyles(item);
+
   return (
-    <article className="col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column" data-testid={item.id}>
+    <article
+      className="col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column"
+      id={item.id}
+      data-testid={item.id}
+      data-class="catalogue-item"
+    >
       <div>
         <Icon icon={item.icon} size="sm" className="mr-1" />
         <span className={classes.category}>{l10NLabels.software[item.category]}</span>
