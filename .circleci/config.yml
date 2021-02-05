@@ -30,7 +30,7 @@ references:
         make bundle-install-deployment
         sudo apt-get update && sudo apt install gawk libxss1 libx11-xcb1
 
-  save_cache_yarn: &save_cache_yarn
+  save_cache_node_modules: &save_cache_node_modules
     save_cache:
       key: v1-node-modules-{{ checksum "package-lock.json" }}
       paths:
@@ -42,7 +42,7 @@ references:
       paths:
         - /home/circleci/project/vendor/ruby
 
-  restore_cache_yarn: &restore_cache_yarn
+  restore_cache_node_modules: &restore_cache_node_modules
     restore_cache:
       keys:
         - v1-node-modules-{{ checksum "package-lock.json" }}
@@ -101,10 +101,10 @@ jobs:
     <<: *env_vars_test
     steps:
       - checkout
-      - << : *restore_cache_yarn
+      - << : *restore_cache_node_modules
       - << : *restore_cache_bundle
       - << : *install_dependencies
-      - << : *save_cache_yarn
+      - << : *save_cache_node_modules
       - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
@@ -116,10 +116,10 @@ jobs:
     <<: *env_vars_prod
     steps:
       - checkout
-      - << : *restore_cache_yarn
+      - << : *restore_cache_node_modules
       - << : *restore_cache_bundle
       - << : *install_dependencies
-      - << : *save_cache_yarn
+      - << : *save_cache_node_modules
       - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
