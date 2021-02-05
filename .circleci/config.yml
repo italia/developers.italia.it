@@ -109,7 +109,6 @@ jobs:
       - << : *get_crawler_yml_files
       - run: make github-import
       - << : *build_bundle_jekyll
-      - << : *notify_on_failure
 
   build_and_deploy_gh_pages:
     <<: *load_image
