@@ -32,6 +32,7 @@ export const CatalogueSearchBar = React.memo(() => {
     <h2 className="d-flex align-items-center">
       <Icon color="primary" className={classes.icon} icon="it-search" />
       <input
+        autoFocus={true}
         placeholder={l10NLabels.search_form_label}
         type="text"
         className="primary-color h-auto"

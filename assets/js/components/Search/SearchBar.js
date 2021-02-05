@@ -25,6 +25,7 @@ export const SearchBar = React.memo(() => {
     <div className="d-flex align-items-center">
       <Icon color="primary" icon="it-search" className="icon-lg form-group" />
       <Input
+        autoFocus={true}
         className={classes.searchBar}
         type="text"
         placeholder={l10NLabels.search_form_placeholder}

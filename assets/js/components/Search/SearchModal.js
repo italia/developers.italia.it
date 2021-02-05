@@ -27,7 +27,14 @@ export const SearchModal = ({ onClose }) => {
   const { searchValue } = useContext(searchContextState);
 
   return (
-    <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" toggle={onClose} data-testid="search-modal">
+    <Modal
+      className={classes.modalFullScreen}
+      isOpen={true}
+      role="dialog"
+      toggle={onClose}
+      data-testid="search-modal"
+      autoFocus={false}
+    >
       <ModalBody className="mt-3" tag="div">
         <div className="container">
           <div className="row px-1 px-md-2">
