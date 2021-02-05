@@ -4,13 +4,10 @@ import { l10NLabels } from '../../utils/l10n.js';
 import { CatalogueSort } from './CatalogueSort.js';
 import { createUseStyles } from 'react-jss';
 import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
-import { CatalogueSearchBar } from './CatalogueSearchBar.js';
 import { CatalogueFiltersTitle } from './CatalogueFiltersTitle.js';
+import { CatalogueHeader } from './CatalogueHeader.js';
 
 const useStyle = createUseStyles({
-  header: {
-    fontSize: '3rem',
-  },
   filters: {
     composes: 'row col-12 mb-5 d-lg-none',
     display: (expandFilter) => (expandFilter ? 'block' : 'none'),
@@ -25,13 +22,7 @@ export const CatalogueSummary = React.memo(({ itemsCount, totalAppliedFilters })
 
   return (
     <>
-      <div className="text-center">
-        <h1 className={classes.header}>{l10NLabels.software.catalogue}</h1>
-        <div className="row"></div>
-        <div className="col-10 mx-auto text-center">
-          <CatalogueSearchBar />
-        </div>
-      </div>
+      <CatalogueHeader />
       <div className="row">
         <div className="row col-12 py-3 px-2 align-items-center text-center">
           <div
