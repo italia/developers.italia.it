@@ -38,9 +38,9 @@ references:
 
   save_cache_bundle: &save_cache_bundle
     save_cache:
-      key: v1-bundle-{{ checksum "Gemfile.lock" }}
+      key: v2-bundle-{{ checksum "Gemfile.lock" }}
       paths:
-        - /usr/local/bundle/ruby
+        - /home/circleci/project/vendor/ruby
 
   restore_cache_yarn: &restore_cache_yarn
     restore_cache:
@@ -51,8 +51,8 @@ references:
   restore_cache_bundle: &restore_cache_bundle
     restore_cache:
       keys:
-        - v1-bundle-{{ checksum "Gemfile.lock" }}
-        - v1-bundle-
+        - v2-bundle-{{ checksum "Gemfile.lock" }}
+        - v2-bundle-
 
   get_crawler_yml_files: &get_crawler_yml_files
     run:
