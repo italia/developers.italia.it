@@ -9,7 +9,7 @@ references:
 
   load_image: &load_image
     docker:
-      - image: circleci/ruby:2.6.0-node-browsers
+      - image: cimg/ruby:2.6.5-node
 
   env_vars_test: &env_vars_test
     environment:
@@ -28,7 +28,7 @@ references:
       command: |
         make include-npm-deps
         make bundle-install-deployment
-        sudo apt-get install gawk
+        sudo apt-get update && sudo apt install gawk libxss1 libx11-xcb1
 
   save_cache_yarn: &save_cache_yarn
     save_cache:
