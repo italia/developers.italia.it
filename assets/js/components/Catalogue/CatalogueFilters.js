@@ -28,16 +28,7 @@ const useStyles = createUseStyles({
   },
 });
 
-// TODO: when https://github.com/italia/developers.italia.it/issues/880 is fixed replace getCount with Object.values(filterValues).flat().length
-const getCount = (filterValues) => {
-  const [v] = Object.values(filterValues);
-  // checkbox are array of values
-  if (Array.isArray(v)) return v.length;
-  // radio button is a single string
-  if (typeof v === 'string') return 1;
-
-  return 0;
-};
+const getCount = (filterValues) => Object.values(filterValues).flat().length;
 
 export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, name }) => {
   const [selectedFiltersCount, setSelectedFiltersCount] = useState(getCount(defaultValues));
