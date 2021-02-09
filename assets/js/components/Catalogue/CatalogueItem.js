@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
+import { ImageWithPlaceholder } from '../ImageWithPlaceholder.js';
 import { l10NLabels } from '../../utils/l10n.js';
 import { searchItemProptypes } from '../../utils/proptypes.js';
 
@@ -12,14 +13,10 @@ const useStyles = createUseStyles({
       textDecoration: 'none',
     },
   },
-  logo: {
+  logoContainer: {
     composes: 'mt-2',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: '100%',
     height: '150px',
     width: '100%',
-    backgroundImage: (item) => `url(${item.logo})`,
   },
   category: {
     fontSize: '0.8rem',
@@ -57,7 +54,7 @@ const useStyles = createUseStyles({
 });
 
 export const CatalogueItem = ({ item }) => {
-  const classes = useStyles(item);
+  const classes = useStyles();
 
   return (
     <article
@@ -72,7 +69,9 @@ export const CatalogueItem = ({ item }) => {
       </div>
       <div className="my-2 my-md-0">
         <a href={item.url} title={item.name} className={classes.link} data-testid="item-anchor">
-          <div className={classes.logo}></div>
+          <div className={classes.logoContainer}>
+            <ImageWithPlaceholder placeholder={item.logoPlaceholder} alt="logo" img={item.logo} />
+          </div>
           <div className={classes.title}>{item.name}</div>
           <div className={classes.description}>{item.description}</div>
         </a>

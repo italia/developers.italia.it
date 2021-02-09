@@ -72,6 +72,7 @@ const administrationItem = (source) => {
     description: '',
     icon: 'it-pa',
     logo: '/assets/images/cover_amministrazioni.png',
+    logoPlaceholder: '/assets/images/cover_amministrazioni.png',
     name: source['it-riuso-codiceIPA-label'],
     url: `/${lang}/pa/${source['it-riuso-codiceIPA']}`,
   };
@@ -87,11 +88,11 @@ const softwareItem = (source) => {
   const category = getSoftwareCategory(source.publiccode.it.riuso?.codiceIPA);
   const icon = category === SOFTWARE_REUSE ? 'it-software' : 'it-open-source';
 
-  const placeholder =
+  const fallback =
     category === SOFTWARE_REUSE
       ? '/assets/images/cover_softwareriuso.png'
       : '/assets/images/cover_software_opensource.png';
-  let logo = descriptionField?.screenshots?.[0] ?? source.publiccode?.logo ?? placeholder;
+  let logo = descriptionField?.screenshots?.[0] ?? source.publiccode?.logo ?? fallback;
   // workaround for SVG logo/screens in Github #461
   if (/github/.test(logo) && /\.svg$/.test(logo)) logo += '?sanitize=true';
 
@@ -102,6 +103,7 @@ const softwareItem = (source) => {
     description,
     icon,
     logo,
+    logoPlaceholder: fallback,
     name,
     url,
   };
@@ -114,6 +116,7 @@ const newsItem = (source) => ({
   description: cropString(source.subtitle),
   icon: 'it-horn',
   logo: source.image,
+  logoPlaceholder: '/assets/icons/logo-it.png',
   name: source.title,
   url: source.url,
 });
@@ -125,6 +128,7 @@ const platformItem = (source) => {
     description,
     icon: 'it-piattaforme',
     logo: source.logo ?? '/assets/images/cover_piattaforme.png',
+    logoPlaceholder: '/assets/images/cover_piattaforme.png',
     name: source.title,
     url: source.url,
   };
@@ -136,6 +140,7 @@ const apiItem = (source) => {
     description: cropString(source.abstract),
     icon: 'it-settings',
     logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
+    logoPlaceholder: '/assets/images/cover_api.png',
     name: source.title,
     url: source.url,
   };
@@ -146,6 +151,7 @@ const pageItem = (source) => ({
   description: cropString(source.text),
   icon: 'it-file',
   logo: source.image ?? '/assets/icons/logo-it.png',
+  logoPlaceholder: '/assets/icons/logo-it.png',
   name: source.title,
   url: source.url,
 });
