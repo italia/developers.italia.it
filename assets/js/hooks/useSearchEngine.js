@@ -47,9 +47,7 @@ const reducer = (state, action) => {
   }
 };
 
-const areMoreItemsAvailable = (from, size, total) => {
-  return from + size < total;
-};
+const areMoreItemsAvailable = (from, size, total) => from + size < total;
 
 export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
   const [{ items, total, isLoading, errorMessage }, dispatch] = useReducer(reducer, initial);

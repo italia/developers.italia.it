@@ -1,31 +1,25 @@
-export const getSoftwareCategories = () => {
-  return [
-    ['mobile-payment', 'mobile payment'],
-    ['network-management', 'network management'],
-    ['office', 'office'],
-    ['online-booking', 'online booking'],
-    ['online-community', 'online community'],
-  ];
-};
+export const getSoftwareCategories = () => [
+  ['mobile-payment', 'mobile payment'],
+  ['network-management', 'network management'],
+  ['office', 'office'],
+  ['online-booking', 'online booking'],
+  ['online-community', 'online community'],
+];
 
-export const getSoftwareDevelopmentStatuses = () => {
-  return [
-    ['concept', 'concept'],
-    ['beta', 'beta'],
-    ['development', 'in sviluppo'],
-    ['stable', 'stabile'],
-  ];
-};
+export const getSoftwareDevelopmentStatuses = () => [
+  ['concept', 'concept'],
+  ['beta', 'beta'],
+  ['development', 'in sviluppo'],
+  ['stable', 'stabile'],
+];
 
-export const getSoftwareIntendedAudiences = () => {
-  return [
-    ['agriculture', 'agriculture'],
-    ['culture', 'culture'],
-    ['defence', 'defence'],
-    ['education', 'education'],
-    ['emergency-services', 'emergency services'],
-  ];
-};
+export const getSoftwareIntendedAudiences = () => [
+  ['agriculture', 'agriculture'],
+  ['culture', 'culture'],
+  ['defence', 'defence'],
+  ['education', 'education'],
+  ['emergency-services', 'emergency services'],
+];
 
 export const l10NLabels = {
   all: 'Tutto',

@@ -1,5 +1,7 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import { SOFTWARE_OPEN } from '../../utils/constants.js';
 
+// eslint-disable-next-line max-lines-per-function
 export const querySoftware = jest.fn(({ type }) => {
   if (type === SOFTWARE_OPEN) {
     return [
@@ -408,44 +410,42 @@ export const querySoftware = jest.fn(({ type }) => {
   ];
 });
 
-export const queryAllSite = jest.fn(() => {
-  return [
-    [
-      {
-        _index: 'jekyll-20210129060509',
-        _type: 'post',
-        _id: 'l72-THcB1AD1KRLs1zR8',
-        _score: 1.5479652,
-        _source: {
-          id: '/it/news/2017/05/25/pubblicata-roadmap-spid',
-          url: '/it/news/2017/05/25/pubblicata-roadmap-spid',
-          text:
-            ' Pubblicata la roadmap di SPID Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo Giovanni Bajo May 25, 2017 condividi su Twitter Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la roadmap di SPID. La abbiamo preparata in forma di bacheca di Trello. Contiamo di aggiornarla regolarmente via via che gli sviluppi procedono. Ovviamente le card che non sono già assegnate a qualcuno sono… libere :) Per le card in corso, pubblichiamo direttamente il link al repository GitHub dove si svolge lo sviluppo del task, in modo che chi vuole può dare un’occhiata e contribuire. Inoltre, a breve vorrei catalogare per ciascun repository le issue che sono più facili da svolgere per chi si avvicina al progetto, e filtrarle e pubblicarle live sul sito principale (developers.italia.it). La roadmap è lo strumento principe che ci consente di dichiarare apertamente quali sono i piani di sviluppo del progetto e quali sono le componenti dell’ecosistema software che pensiamo essere importanti. Ovviamente la roadmap è aperta a commenti e proposte da parte di tutti che valuteremo se accogliere nel piano ufficiale di sviluppo, cercando di canalizzare così le contribuzioni (fermo restando che se volete realizzare qualcosa anche fuori roadmap, non saremo certo noi a bloccarvi!). Penso sia la prima software roadmap della pubblica amministrazione in Italia, e tutti i viaggi cominciano con piccoli passi. Spero che ci sarà molto da camminare insieme :) argomenti roadmap progetti ',
-          draft: false,
-          categories: ['news'],
-          permalink: 'it/news/:year/:month/:day/:title',
-          lang: 'it',
-          type: 'news',
-          layout: 'post',
-          title: 'Pubblicata la roadmap di SPID',
-          subtitle:
-            'Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo',
-          date: '2017-05-25 16:00:00 +0000',
-          tags: ['roadmap', 'progetti'],
-          author: 'Giovanni Bajo',
-          image: '/assets/icons/logo-it.png',
-          locale: 'it',
-          redirect_from: ['/roadmap/progetti/2017/05/25/pubblicata-roadmap-spid.html'],
-          slug: 'pubblicata-roadmap-spid',
-          ext: '.md',
-          excerpt:
-            '<p>Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la <a href="https://trello.com/b/PHF0ErvK/spid-roadmap">roadmap di SPID</a>. La abbiamo preparata in forma di bacheca di Trello.</p>\n',
-        },
+export const queryAllSite = jest.fn(() => [
+  [
+    {
+      _index: 'jekyll-20210129060509',
+      _type: 'post',
+      _id: 'l72-THcB1AD1KRLs1zR8',
+      _score: 1.5479652,
+      _source: {
+        id: '/it/news/2017/05/25/pubblicata-roadmap-spid',
+        url: '/it/news/2017/05/25/pubblicata-roadmap-spid',
+        text:
+          ' Pubblicata la roadmap di SPID Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo Giovanni Bajo May 25, 2017 condividi su Twitter Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la roadmap di SPID. La abbiamo preparata in forma di bacheca di Trello. Contiamo di aggiornarla regolarmente via via che gli sviluppi procedono. Ovviamente le card che non sono già assegnate a qualcuno sono… libere :) Per le card in corso, pubblichiamo direttamente il link al repository GitHub dove si svolge lo sviluppo del task, in modo che chi vuole può dare un’occhiata e contribuire. Inoltre, a breve vorrei catalogare per ciascun repository le issue che sono più facili da svolgere per chi si avvicina al progetto, e filtrarle e pubblicarle live sul sito principale (developers.italia.it). La roadmap è lo strumento principe che ci consente di dichiarare apertamente quali sono i piani di sviluppo del progetto e quali sono le componenti dell’ecosistema software che pensiamo essere importanti. Ovviamente la roadmap è aperta a commenti e proposte da parte di tutti che valuteremo se accogliere nel piano ufficiale di sviluppo, cercando di canalizzare così le contribuzioni (fermo restando che se volete realizzare qualcosa anche fuori roadmap, non saremo certo noi a bloccarvi!). Penso sia la prima software roadmap della pubblica amministrazione in Italia, e tutti i viaggi cominciano con piccoli passi. Spero che ci sarà molto da camminare insieme :) argomenti roadmap progetti ',
+        draft: false,
+        categories: ['news'],
+        permalink: 'it/news/:year/:month/:day/:title',
+        lang: 'it',
+        type: 'news',
+        layout: 'post',
+        title: 'Pubblicata la roadmap di SPID',
+        subtitle:
+          'Esce la prima roadmap di progetto di Developers Italia, per seguire il progetto e partecipare allo sviluppo',
+        date: '2017-05-25 16:00:00 +0000',
+        tags: ['roadmap', 'progetti'],
+        author: 'Giovanni Bajo',
+        image: '/assets/icons/logo-it.png',
+        locale: 'it',
+        redirect_from: ['/roadmap/progetti/2017/05/25/pubblicata-roadmap-spid.html'],
+        slug: 'pubblicata-roadmap-spid',
+        ext: '.md',
+        excerpt:
+          '<p>Con molto piacere, questo è il link alla prima roadmap progettuale di Developers Italia: la <a href="https://trello.com/b/PHF0ErvK/spid-roadmap">roadmap di SPID</a>. La abbiamo preparata in forma di bacheca di Trello.</p>\n',
       },
-    ],
-    169,
-  ];
-});
+    },
+  ],
+  169,
+]);
 
 export const queryAdministration = jest.fn(() => [
   [
@@ -495,6 +495,7 @@ export const queryApi = jest.fn(() => [
   150,
 ]);
 
+// eslint-disable-next-line max-lines-per-function
 export const queryPlatform = jest.fn(() => [
   [
     {

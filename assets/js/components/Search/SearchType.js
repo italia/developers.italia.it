@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Button, Icon } from 'design-react-kit';
+import { createUseStyles } from 'react-jss';
 import { ALL_SITE, SOFTWARE_REUSE, SOFTWARE_OPEN, PLATFORM, ADMINISTRATION, API } from '../../utils/constants.js';
 import { searchContextDispatch, searchContextState, setType } from '../../contexts/searchContext.js';
-import { createUseStyles } from 'react-jss';
 import { l10NLabels } from '../../utils/l10n.js';
 
 const useStyles = createUseStyles({

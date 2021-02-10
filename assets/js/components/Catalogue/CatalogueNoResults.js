@@ -1,6 +1,6 @@
 import React from 'react';
-import { l10NLabels } from '../../utils/l10n.js';
 import { createUseStyles } from 'react-jss';
+import { l10NLabels } from '../../utils/l10n.js';
 
 const useStyles = createUseStyles({
   image: {

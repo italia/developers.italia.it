@@ -1,14 +1,14 @@
 import React, { useContext, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Modal, ModalBody } from 'design-react-kit';
-import { useSearchEngine } from '../../hooks/useSearchEngine.js';
-import { SearchType } from './SearchType.js';
-import { SearchItems } from './SearchItems.js';
 import { createUseStyles } from 'react-jss';
+import { useSearchEngine } from '../../hooks/useSearchEngine.js';
 import { l10NLabels, lang } from '../../utils/l10n.js';
 import { searchContextDispatch, searchContextState, setSearchValue } from '../../contexts/searchContext.js';
 import { SearchBar } from '../SearchBar.js';
 import { Error } from '../Error.js';
+import { SearchItems } from './SearchItems.js';
+import { SearchType } from './SearchType.js';
 
 const useStyles = createUseStyles({
   modalFullScreen: {

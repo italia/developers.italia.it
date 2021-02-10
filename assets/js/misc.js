@@ -1,31 +1,31 @@
 import $ from 'jquery';
 import PerfectScrollbar from 'perfect-scrollbar';
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 $(function () {
-
   if ($('.tiled-gallery').length > 0) {
     new PerfectScrollbar('.tiled-gallery', {
-      maxScrollbarLength: 24
+      maxScrollbarLength: 24,
     });
 
-    var initPhotoSwipeFromDOM = function (gallerySelector) {
+    const initPhotoSwipeFromDOM = function (gallerySelector) {
       // parse slide data (url, title, size ...) from DOM elements
       // (children of gallerySelector)
-      var parseThumbnailElements = function (el) {
-        var linkElements = el.getElementsByTagName('a');
-        var items = [];
+      const parseThumbnailElements = function (el) {
+        const linkElements = el.getElementsByTagName('a');
+        const items = [];
 
-        for (var i = 0; i < linkElements.length; i++) {
-          var imgElement = el.getElementsByTagName('img').item(i);
-          var linkEl = linkElements[i];
-          var size = linkEl.dataset.size.split('x');
+        for (let i = 0; i < linkElements.length; i++) {
+          const imgElement = el.getElementsByTagName('img').item(i);
+          const linkEl = linkElements[i];
+          const size = linkEl.dataset.size.split('x');
 
           // create slide object
-          var item = {
+          const item = {
             src: linkEl.getAttribute('href'),
             w: Number(size[0]) || imgElement.naturalWidth || 1980,
             h: Number(size[1]) || imgElement.naturalHeight || 1020,
-            msrc: linkEl.children[0].src
+            msrc: linkEl.children[0].src,
           };
 
           item.el = linkEl; // save link to element for getThumbBoundsFn
@@ -36,89 +36,84 @@ $(function () {
       };
 
       // triggers when user clicks on thumbnail
-      var onThumbnailsClick = function (e) {
+      const onThumbnailsClick = function (e) {
         e.preventDefault();
 
         // find root element of slide
-        var clickedListItem = e.target.parentNode;
+        const clickedListItem = e.target.parentNode;
 
-        if (clickedListItem.tagName !== 'A') return;
-        var clickedGallery = $(clickedListItem).closest('.tiled-gallery-inner')[0];
+        if (clickedListItem.tagName !== 'A') {
+          return;
+        }
+        const clickedGallery = $(clickedListItem).closest('.tiled-gallery-inner')[0];
 
-        var index = Number(clickedListItem.dataset.index);
+        const index = Number(clickedListItem.dataset.index);
 
         if (index >= 0) {
           openPhotoSwipe(index, clickedGallery);
         }
       };
 
-      var openPhotoSwipe = function (index, galleryElement) {
-        var pswpElement = document.querySelectorAll('.pswp')[0];
-        var gallery;
-        var options;
-        var items;
+      const openPhotoSwipe = function (index, galleryElement) {
+        const pswpElement = document.querySelectorAll('.pswp')[0];
+        const items = parseThumbnailElements(galleryElement);
 
-        items = parseThumbnailElements(galleryElement);
-
-        options = {
-          index: index,
-          getThumbBoundsFn: function (index) {
+        const options = {
+          index,
+          getThumbBoundsFn: (index) => {
             // See Options -> getThumbBoundsFn section of documentation for more info
-            var thumbnail = items[index].el.getElementsByTagName('img')[0]; // find thumbnail
-            var pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
-            var rect = thumbnail.getBoundingClientRect();
+            const thumbnail = items[index].el.getElementsByTagName('img')[0]; // find thumbnail
+            const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+            const rect = thumbnail.getBoundingClientRect();
 
             return {
               x: rect.left,
               y: rect.top + pageYScroll,
-              w: rect.width
+              w: rect.width,
             };
-          }
+          },
         };
 
         // Pass data to PhotoSwipe and initialize it
-        gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        // eslint-disable-next-line no-undef
+        const gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
       };
 
       // loop through all gallery elements and bind events
-      var galleryElements = document.querySelectorAll(gallerySelector);
+      const galleryElements = document.querySelectorAll(gallerySelector);
 
       galleryElements.forEach(function (galleryEl, i) {
         galleryEl.setAttribute('data-pswp-uid', i + 1);
         galleryEl.onclick = onThumbnailsClick;
 
-        //each gallery has an "all pics" button next to it
-        //adding a listener to show the gallery
-        let btnNextGallery = $(galleryEl)
-          .parent()
-          .parent()
-          .find('.tiled-gallery-btn');
-        if (btnNextGallery.length > 0)
-          btnNextGallery[0].addEventListener('click', e => {
-            openPhotoSwipe(0, galleryEl)
+        // each gallery has an "all pics" button next to it
+        // adding a listener to show the gallery
+        const btnNextGallery = $(galleryEl).parent().parent().find('.tiled-gallery-btn');
+        if (btnNextGallery.length > 0) {
+          btnNextGallery[0].addEventListener('click', () => {
+            openPhotoSwipe(0, galleryEl);
           });
+        }
 
-        //if empty gallery removing div and button
-        if($(galleryEl).find('img').length==0) {
+        // if empty gallery removing div and button
+        if ($(galleryEl).find('img').length === 0) {
           $(galleryEl).parent().remove();
           btnNextGallery.remove();
         }
       });
-
     };
 
-    ///Temporarily disabled on 2019-03-19 because it doesn't work properly.
+    // Temporarily disabled on 2019-03-19 because it doesn't work properly.
     initPhotoSwipeFromDOM('.tiled-gallery-inner');
 
-    var printPage = function () {
-      window.print()
+    const printPage = function () {
+      window.print();
     };
 
-    var printBtns = [].slice.call(document.getElementsByClassName('js-print-page'));
+    const printBtns = [].slice.call(document.getElementsByClassName('js-print-page'));
     printBtns.forEach(function (btn) {
-      btn.addEventListener('click', printPage)
-    })
+      btn.addEventListener('click', printPage);
+    });
   }
-
 });

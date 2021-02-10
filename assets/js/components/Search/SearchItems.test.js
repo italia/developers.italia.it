@@ -1,9 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { SearchItems } from './SearchItems.js';
 import { search } from '../../services/searchEngine.js';
 import { ALL_SITE } from '../../utils/constants.js';
+import { SearchItems } from './SearchItems.js';
 
 jest.mock('../../utils/l10n.js');
 jest.mock('../../services/searchEngine.js');

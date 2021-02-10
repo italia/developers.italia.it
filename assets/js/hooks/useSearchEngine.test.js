@@ -1,12 +1,13 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import React from 'react';
 import './useSearchEngine.js';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
-import { useSearchEngine } from './useSearchEngine.js';
 import { SearchProvider } from '../contexts/searchContext.js';
 import { ALL_CATALOGUE } from '../utils/constants.js';
 import { search } from '../services/searchEngine.js';
+import { useSearchEngine } from './useSearchEngine.js';
 
 jest.mock('../services/searchEngine.js');
 
@@ -20,7 +21,9 @@ const UseSearchEngineExample = () => {
       ))
     : [];
 
-  if (errorMessage) return 'ops...something went wrong';
+  if (errorMessage) {
+    return 'ops...something went wrong';
+  }
 
   return (
     <div>

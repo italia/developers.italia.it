@@ -3,7 +3,8 @@
     "browser": true,
     "es2020": true,
     "jest": true,
-    "commonjs": true
+    "commonjs": true,
+    "jquery": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -17,13 +18,44 @@
     "plugin:react/recommended",
     "prettier",
     "prettier/react",
-    "plugin:json/recommended"
+    "plugin:json/recommended",
+    "plugin:sonarjs/recommended"
   ],
-  "plugins": ["react", "prettier", "react-hooks"],
+  "plugins": ["import", "prettier", "react", "react-hooks", "sonarjs"],
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
+    "no-case-declarations": "off",
+    "no-inner-declarations": "off",
+    "prefer-const": "error",
+    "curly": "error",
+    "spaced-comment": ["error", "always", { "block": { "balanced": true } }],
+    "radix": "error",
+    "one-var": ["error", "never"],
+    "object-shorthand": "error",
+    "no-var": "error",
+    "no-param-reassign": "error",
+    "no-underscore-dangle": "error",
+    "no-undef-init": "error",
+    "no-throw-literal": "error",
+    "no-new-wrappers": "error",
+    "no-eval": "error",
+    "no-caller": "error",
+    "no-bitwise": "error",
+    "eqeqeq": ["error", "smart"],
+    "max-classes-per-file": ["error", 1],
+    "guard-for-in": "error",
+    "complexity": "error",
+    "arrow-body-style": "error",
+    "no-unused-expressions": "off",
+    "semi": "off",
+    "max-lines-per-function": ["error", 200],
+    "import/order": "error",
+    "sonarjs/no-duplicate-string": "error",
+    "sonarjs/cognitive-complexity": ["error", 19],
+    "sonarjs/no-small-switch": "error",
+    "sonarjs/no-inverted-boolean-check": "error"
   },
   "settings": {
     "react": {

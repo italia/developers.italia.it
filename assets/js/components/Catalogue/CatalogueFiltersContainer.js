@@ -7,7 +7,6 @@ import {
   getSoftwareIntendedAudiences,
   softwareTypes,
 } from '../../utils/l10n.js';
-import { CatalogueFilters } from './CatalogueFilters.js';
 import {
   searchContextDispatch,
   searchContextState,
@@ -17,6 +16,7 @@ import {
   setType,
 } from '../../contexts/searchContext.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
+import { CatalogueFilters } from './CatalogueFilters.js';
 
 const softwareCategories = getSoftwareCategories();
 const softwareIntendedAudiences = getSoftwareIntendedAudiences();

@@ -3,8 +3,8 @@ import debounce from 'lodash.debounce';
 import { createUseStyles } from 'react-jss';
 import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
-import { DEBOUNCE_SEARCH_MS } from '../utils/constants.js';
 import { Icon } from 'design-react-kit';
+import { DEBOUNCE_SEARCH_MS } from '../utils/constants.js';
 
 const useStyle = createUseStyles({
   icon: {
