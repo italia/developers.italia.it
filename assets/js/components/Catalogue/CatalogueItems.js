@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CatalogueItem } from './CatalogueItem.js';
-import { CatalogueNoResults } from './CatalogueNoResults.js';
 import { searchItemProptypes } from '../../utils/proptypes.js';
 import { useScrollIntoView } from '../../hooks/useScrollIntoView.js';
+import { CatalogueItem } from './CatalogueItem.js';
+import { CatalogueNoResults } from './CatalogueNoResults.js';
 
 export const CatalogueItems = React.memo(({ items }) => {
   useScrollIntoView({
@@ -11,7 +11,9 @@ export const CatalogueItems = React.memo(({ items }) => {
     focusElementId: location.hash?.substring(1),
   });
 
-  if (items.length === 0) return <CatalogueNoResults />;
+  if (items.length === 0) {
+    return <CatalogueNoResults />;
+  }
 
   const itemsList = items.map((r) => (
     <React.Fragment key={r.id}>

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SearchItem } from './SearchItem.js';
 import { createUseStyles } from 'react-jss';
 import { searchItemProptypes } from '../../utils/proptypes.js';
 import { l10NLabels } from '../../utils/l10n.js';
+import { SearchItem } from './SearchItem.js';
 
 const useStyles = createUseStyles({
   noResults: {

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Icon } from 'design-react-kit';
-import { SearchModal } from './SearchModal.js';
+import { createUseStyles } from 'react-jss';
 import { SearchProvider } from '../../contexts/searchContext.js';
 import { ALL_SITE } from '../../utils/constants.js';
 import { useModal } from '../../hooks/useModal.js';
 import { l10NLabels } from '../../utils/l10n.js';
-import { createUseStyles } from 'react-jss';
+import { SearchModal } from './SearchModal.js';
 
 const useStyles = createUseStyles({
   icon: {

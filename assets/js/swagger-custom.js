@@ -1,4 +1,3 @@
-import React from 'react';
 import SwaggerUI from 'swagger-ui';
 
 import CustomLayoutPlugin from './plugins/CustomLayoutPlugin';

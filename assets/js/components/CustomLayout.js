@@ -1,28 +1,19 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Hero from "./Hero";
-import Description from "./Description";
-import Authorize from "./Authorize";
+import Hero from './Hero';
+import Description from './Description';
+import Authorize from './Authorize';
 
-import "./CustomLayout.css";
-
-const isDev = () => process.env.NODE_ENV === "development";
+import './CustomLayout.css';
 
 // Create the layout component
 class CustomLayout extends React.Component {
   render() {
-    const {
-      specSelectors,
-      getComponent,
-      authActions,
-      authSelectors
-    } = this.props;
-
-    const { download } = window.l10n.swagger;
+    const { specSelectors, getComponent, authActions, authSelectors } = this.props;
 
     const isSpecEmpty = !specSelectors.specStr();
-    const isLoading = specSelectors.loadingStatus() === "loading";
-    const isFailed = specSelectors.loadingStatus() === "failed";
+    const isLoading = specSelectors.loadingStatus() === 'loading';
 
     if (isSpecEmpty) {
       let loadingMessage;
@@ -41,13 +32,13 @@ class CustomLayout extends React.Component {
 
     const securityDefinitions = specSelectors.securityDefinitions();
 
-    const Operations = getComponent("operations", true);
-    const Models = getComponent("Models", true);
+    const Operations = getComponent('operations', true);
+    const Models = getComponent('Models', true);
 
     return (
       <section className="custom-layout">
         <div className="container custom-layout--hero">
-          <Hero specSelectors={specSelectors} getComponent={getComponent} />
+          <Hero specSelectors={specSelectors} />
         </div>
 
         <section className="swagger-ui">
@@ -55,21 +46,14 @@ class CustomLayout extends React.Component {
             <div className="container">
               <div className="position-relative rounded shadow-lg bg-white p-5 custom-layout--description">
                 <div className="p-0">
-                  <Description
-                    specSelectors={specSelectors}
-                    getComponent={getComponent}
-                  />
+                  <Description specSelectors={specSelectors} getComponent={getComponent} />
                 </div>
               </div>
 
               <div>
                 {securityDefinitions ? (
                   <div className="pb-3">
-                    <Authorize
-                      getComponent={getComponent}
-                      authActions={authActions}
-                      authSelectors={authSelectors}
-                    />
+                    <Authorize getComponent={getComponent} authActions={authActions} authSelectors={authSelectors} />
                   </div>
                 ) : null}
               </div>
@@ -88,5 +72,12 @@ class CustomLayout extends React.Component {
     );
   }
 }
+
+CustomLayout.propTypes = {
+  authActions: PropTypes.object.isRequired,
+  authSelectors: PropTypes.object.isRequired,
+  getComponent: PropTypes.func.isRequired,
+  specSelectors: PropTypes.object.isRequired,
+};
 
 export default CustomLayout;

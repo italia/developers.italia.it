@@ -3,9 +3,9 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { SearchProvider } from '../../contexts/searchContext.js';
-import { CatalogueView } from './CatalogueView.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
 import { search } from '../../services/searchEngine.js';
+import { CatalogueView } from './CatalogueView.js';
 
 jest.mock('../../utils/l10n.js');
 jest.mock('../../services/searchEngine.js');

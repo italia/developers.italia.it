@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import { ALL_CATALOGUE } from '../../utils/constants.js';
 
 export const search = jest.fn(async (type) => {

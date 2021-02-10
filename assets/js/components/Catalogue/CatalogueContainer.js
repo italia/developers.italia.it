@@ -1,7 +1,5 @@
 import React from 'react';
-import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 import { createUseStyles } from 'react-jss';
-import { CatalogueView } from './CatalogueView.js';
 import { SearchProvider } from '../../contexts/searchContext.js';
 import {
   initialCategories,
@@ -13,6 +11,8 @@ import {
   initialType,
 } from '../../utils/urlSearchParams.js';
 import { ALL_CATALOGUE, RELEVANCE } from '../../utils/constants.js';
+import { CatalogueView } from './CatalogueView.js';
+import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 
 const useStyle = createUseStyles({
   container: {

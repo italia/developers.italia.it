@@ -3,11 +3,11 @@
  * They work on the string catalogue used by jekyll
  */
 import yaml from 'js-yaml';
+import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
 import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
 import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
 import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
-import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
 
 export const lang = window.lang;
 const l10n = yaml.load(l10nYml);

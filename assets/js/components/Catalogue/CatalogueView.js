@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { Button } from 'design-react-kit';
-import { CatalogueSummary } from './CatalogueSummary.js';
-import { CatalogueItems } from './CatalogueItems.js';
 import { Error } from '../Error.js';
 import { useSearchEngine } from '../../hooks/useSearchEngine.js';
 import { searchContextState } from '../../contexts/searchContext.js';
 import { l10NLabels } from '../../utils/l10n.js';
+import { CatalogueItems } from './CatalogueItems.js';
+import { CatalogueSummary } from './CatalogueSummary.js';
 
 export const CatalogueView = React.memo(() => {
   const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, type } = useContext(searchContextState);
@@ -17,7 +17,9 @@ export const CatalogueView = React.memo(() => {
   // partialItems: they are partial because we use pagination.
   const [errorMessage, partialItems, itemsCount, fetchMore] = useSearchEngine();
 
-  if (errorMessage) return <Error description={errorMessage} />;
+  if (errorMessage) {
+    return <Error description={errorMessage} />;
+  }
 
   return (
     <>

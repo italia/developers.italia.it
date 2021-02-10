@@ -10,6 +10,8 @@ import {
 import { lang } from '../utils/l10n.js';
 import { queryAdministration, queryAllSite, queryApi, queryPlatform, querySoftware } from '../api/elasticSearch.js';
 
+const LOGO_IT = '/assets/icons/logo-it.png';
+
 export const search = async (type, { searchValue, filters = {}, sortBy = 'relevance', from = 0, size = 12 } = {}) => {
   const params = {
     searchValue,
@@ -42,8 +44,9 @@ export const search = async (type, { searchValue, filters = {}, sortBy = 'releva
   return [items, total];
 };
 
-const mapESResultsToItems = (results) => {
-  return results.map((result) => {
+/* eslint-disable no-underscore-dangle */
+const mapESResultsToItems = (results) =>
+  results.map((result) => {
     switch (result._type) {
       case 'administration':
         return { ...administrationItem(result._source), id: result._id };
@@ -64,19 +67,17 @@ const mapESResultsToItems = (results) => {
         return { ...pageItem(result._source), id: result._id };
     }
   });
-};
+/* eslint-enable no-underscore-dangle */
 
-const administrationItem = (source) => {
-  return {
-    category: 'administration',
-    description: '',
-    icon: 'it-pa',
-    logo: '/assets/images/cover_amministrazioni.png',
-    logoPlaceholder: '/assets/images/cover_amministrazioni.png',
-    name: source['it-riuso-codiceIPA-label'],
-    url: `/${lang}/pa/${source['it-riuso-codiceIPA']}`,
-  };
-};
+const administrationItem = (source) => ({
+  category: 'administration',
+  description: '',
+  icon: 'it-pa',
+  logo: '/assets/images/cover_amministrazioni.png',
+  logoPlaceholder: '/assets/images/cover_amministrazioni.png',
+  name: source['it-riuso-codiceIPA-label'],
+  url: `/${lang}/pa/${source['it-riuso-codiceIPA']}`,
+});
 
 const softwareItem = (source) => {
   const descriptionField =
@@ -94,7 +95,9 @@ const softwareItem = (source) => {
       : '/assets/images/cover_software_opensource.png';
   let logo = descriptionField?.screenshots?.[0] ?? source.publiccode?.logo ?? fallback;
   // workaround for SVG logo/screens in Github #461
-  if (/github/.test(logo) && /\.svg$/.test(logo)) logo += '?sanitize=true';
+  if (/github/.test(logo) && /\.svg$/.test(logo)) {
+    logo += '?sanitize=true';
+  }
 
   const url = `/${lang}/software/${source.slug.toLowerCase()}`;
 
@@ -116,7 +119,7 @@ const newsItem = (source) => ({
   description: cropString(source.subtitle),
   icon: 'it-horn',
   logo: source.image,
-  logoPlaceholder: '/assets/icons/logo-it.png',
+  logoPlaceholder: LOGO_IT,
   name: source.title,
   url: source.url,
 });
@@ -134,24 +137,22 @@ const platformItem = (source) => {
   };
 };
 
-const apiItem = (source) => {
-  return {
-    category: 'api',
-    description: cropString(source.abstract),
-    icon: 'it-settings',
-    logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
-    logoPlaceholder: '/assets/images/cover_api.png',
-    name: source.title,
-    url: source.url,
-  };
-};
+const apiItem = (source) => ({
+  category: 'api',
+  description: cropString(source.abstract),
+  icon: 'it-settings',
+  logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
+  logoPlaceholder: '/assets/images/cover_api.png',
+  name: source.title,
+  url: source.url,
+});
 
 const pageItem = (source) => ({
   category: 'page',
   description: cropString(source.text),
   icon: 'it-file',
-  logo: source.image ?? '/assets/icons/logo-it.png',
-  logoPlaceholder: '/assets/icons/logo-it.png',
+  logo: source.image ?? LOGO_IT,
+  logoPlaceholder: LOGO_IT,
   name: source.title,
   url: source.url,
 });

@@ -1,7 +1,7 @@
 import elasticsearch from 'elasticsearch';
-import { buildFilter, buildSort } from './elasticSearchUtils.js';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from '../utils/constants.js';
 import { lang } from '../utils/l10n.js';
+import { buildFilter, buildSort } from './elasticSearchUtils.js';
 
 const client = new elasticsearch.Client({
   // eslint-disable-next-line no-undef
@@ -44,8 +44,7 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
       must_not,
     },
   };
-  const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
-  return results;
+  return await executeQuery({ query, sort: buildSort(sortBy), from, size });
 };
 
 export const queryAllSite = async ({ searchValue, filters, sortBy, from, size }) => {
@@ -61,6 +60,7 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
                   'publiccode.name^3',
                   'it-riuso-codiceIPA-label^3',
                   'title^3',
+                  // eslint-disable-next-line sonarjs/no-duplicate-string
                   'subtitle^2',
                   `publiccode.description.${lang}.localizedName^3`,
                   `publiccode.description.${lang}.shortDescription^2`,
@@ -87,8 +87,7 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
     },
   };
 
-  const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
-  return results;
+  return await executeQuery({ query, sort: buildSort(sortBy), from, size });
 };
 
 export const queryAdministration = async ({ searchValue, filters, sortBy, from, size }) => {
@@ -101,8 +100,7 @@ export const queryAdministration = async ({ searchValue, filters, sortBy, from, 
       ],
     },
   };
-  const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
-  return results;
+  return await executeQuery({ query, sort: buildSort(sortBy), from, size });
 };
 
 export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }) => {
@@ -112,8 +110,7 @@ export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }
       must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
     },
   };
-  const results = await executeQuery({ type: 'post', query, sort: buildSort(sortBy), from, size });
-  return results;
+  return await executeQuery({ type: 'post', query, sort: buildSort(sortBy), from, size });
 };
 
 export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => {
@@ -123,8 +120,7 @@ export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => 
       must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
     },
   };
-  const results = await executeQuery({ query, sort: buildSort(sortBy), from, size });
-  return results;
+  return await executeQuery({ query, sort: buildSort(sortBy), from, size });
 };
 
 // This is a quick solution to retain the returned items sorted during the execution of queries with pagination.
