@@ -12,6 +12,10 @@ jest.mock('../../services/searchEngine.js');
 jest.mock('../../hooks/useScrollIntoView.js');
 
 describe('CatalogueView', () => {
+  beforeEach(() => {
+    search.mockClear();
+  });
+
   it('renders CatalogueView with items and grand total', async () => {
     const [items, total] = await search(ALL_CATALOGUE);
     render(
@@ -34,6 +38,19 @@ describe('CatalogueView', () => {
     );
     expect(await screen.findByTestId('counter-summary')).toHaveTextContent('0');
     expect(await screen.findByTestId('catalogue-no-results')).toBeInTheDocument();
+    expect(screen.queryByTestId('catalogue-items')).not.toBeInTheDocument();
+  });
+
+  it('renders the Error component', async () => {
+    search.mockImplementation(() => {
+      throw new Error();
+    });
+    render(
+      <SearchProvider initialType={ALL_CATALOGUE}>
+        <CatalogueView />
+      </SearchProvider>
+    );
+    expect(await screen.findByTestId('error-something-went-wrong')).toBeInTheDocument();
     expect(screen.queryByTestId('catalogue-items')).not.toBeInTheDocument();
   });
 });

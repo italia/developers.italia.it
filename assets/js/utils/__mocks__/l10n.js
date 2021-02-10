@@ -67,6 +67,9 @@ export const l10NLabels = {
     platforms: 'Piattaforme',
     type: 'Tipologia',
   },
+  errors: {
+    something_went_wrong: 'Ops! Qualcosa è andato storto...',
+  },
 };
 
 export const softwareTypes = [

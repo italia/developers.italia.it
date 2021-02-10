@@ -5,9 +5,11 @@ import { searchContextDispatch, searchContextState, incrementPage } from '../con
 const ADD_ITEMS = 'ADD_ITEMS';
 const SET_ITEMS = 'SET_ITEMS';
 const SET_IS_LOADING = 'SET_IS_LOADING';
+const SET_ERROR = 'SET_ERROR';
 
 const initial = {
   isLoading: false,
+  hasError: false,
   items: null,
   total: null,
 };
@@ -35,6 +37,14 @@ const reducer = (state, action) => {
       isLoading: true,
     };
   }
+
+  if (action.type === SET_ERROR) {
+    return {
+      ...state,
+      isLoading: false,
+      hasError: true,
+    };
+  }
 };
 
 const areMoreItemsAvailable = (from, size, total) => {
@@ -42,7 +52,7 @@ const areMoreItemsAvailable = (from, size, total) => {
 };
 
 export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
-  const [{ items, total, isLoading }, dispatch] = useReducer(reducer, initial);
+  const [{ items, total, isLoading, hasError }, dispatch] = useReducer(reducer, initial);
   const dispatchGlobal = useContext(searchContextDispatch);
   const {
     filterCategories,
@@ -70,25 +80,31 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
     const query = async () => {
       dispatch({ type: SET_IS_LOADING });
 
-      const [results, total] = await search(type, {
-        from,
-        filters: {
-          categories: filterCategories,
-          developmentStatuses: filterDevelopmentStatuses,
-          intendedAudiences: filterIntendedAudiences,
-        },
-        searchValue,
-        sortBy,
-        size,
-      });
+      try {
+        const [results, total] = await search(type, {
+          from,
+          filters: {
+            categories: filterCategories,
+            developmentStatuses: filterDevelopmentStatuses,
+            intendedAudiences: filterIntendedAudiences,
+          },
+          searchValue,
+          sortBy,
+          size,
+        });
 
-      dispatch({
-        type: from === 0 ? SET_ITEMS : ADD_ITEMS,
-        value: {
-          items: results,
-          total,
-        },
-      });
+        dispatch({
+          type: from === 0 ? SET_ITEMS : ADD_ITEMS,
+          value: {
+            items: results,
+            total,
+          },
+        });
+      } catch (e) {
+        dispatch({
+          type: SET_ERROR,
+        });
+      }
 
       reloadItemsUntilPage.current = false; // The "resume mode" is valid only for one iteration. Starting from the next iteration the items fetching will return to act normally
     };
@@ -105,5 +121,5 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
     size,
   ]);
 
-  return [items, total, fetchMore];
+  return [hasError, items, total, fetchMore];
 };

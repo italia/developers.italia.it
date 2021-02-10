@@ -8,6 +8,7 @@ import { createUseStyles } from 'react-jss';
 import { l10NLabels, lang } from '../../utils/l10n.js';
 import { searchContextDispatch, searchContextState, setSearchValue } from '../../contexts/searchContext.js';
 import { SearchBar } from '../SearchBar.js';
+import { Error } from '../Error.js';
 
 const useStyles = createUseStyles({
   modalFullScreen: {
@@ -22,7 +23,7 @@ const useStyles = createUseStyles({
 });
 
 export const SearchModal = ({ onClose }) => {
-  const [items] = useSearchEngine({ pageSize: 9 });
+  const [hasError, items] = useSearchEngine({ pageSize: 9 });
   const classes = useStyles();
   const { searchValue } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);
@@ -50,10 +51,18 @@ export const SearchModal = ({ onClose }) => {
             <SearchBar onChange={handleSearch} placeholder={l10NLabels.search_form_placeholder} />
           </div>
           <SearchType />
-          <h5 className="form-group text-uppercase">
-            <a href={`/${lang}/search?search_value=${searchValue}`}>{l10NLabels.search_form_catalogue}</a>
-          </h5>
-          {items !== null && <SearchItems items={items} />}
+          {hasError ? (
+            <div className="m-4">
+              <Error />
+            </div>
+          ) : (
+            <>
+              <h5 className="form-group text-uppercase">
+                <a href={`/${lang}/search?search_value=${searchValue}`}>{l10NLabels.search_form_catalogue}</a>
+              </h5>
+              {items !== null && <SearchItems items={items} />}
+            </>
+          )}
         </div>
       </ModalBody>
     </Modal>

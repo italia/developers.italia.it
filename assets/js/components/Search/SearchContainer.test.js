@@ -45,4 +45,13 @@ describe('SearchContainer', () => {
     await screen.findByTestId('search-type-administration');
     expect(search).toHaveBeenCalledTimes(2);
   });
+
+  it('renders the Error component in the modal', async () => {
+    search.mockImplementation(() => {
+      throw new Error();
+    });
+    render(<SearchContainer />);
+    userEvent.click(await screen.findByTestId('search-button'));
+    expect(await screen.findByTestId('error-something-went-wrong')).toBeInTheDocument();
+  });
 });
