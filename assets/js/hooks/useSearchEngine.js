@@ -9,7 +9,7 @@ const SET_ERROR = 'SET_ERROR';
 
 const initial = {
   isLoading: false,
-  hasError: false,
+  errorMessage: null,
   items: null,
   total: null,
 };
@@ -42,7 +42,7 @@ const reducer = (state, action) => {
     return {
       ...state,
       isLoading: false,
-      hasError: true,
+      errorMessage: action.value.errorMessage,
     };
   }
 };
@@ -52,7 +52,7 @@ const areMoreItemsAvailable = (from, size, total) => {
 };
 
 export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
-  const [{ items, total, isLoading, hasError }, dispatch] = useReducer(reducer, initial);
+  const [{ items, total, isLoading, errorMessage }, dispatch] = useReducer(reducer, initial);
   const dispatchGlobal = useContext(searchContextDispatch);
   const {
     filterCategories,
@@ -103,6 +103,9 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
       } catch (e) {
         dispatch({
           type: SET_ERROR,
+          value: {
+            errorMessage: `(Elasticsearch) ${e?.message}`,
+          },
         });
       }
 
@@ -121,5 +124,5 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
     size,
   ]);
 
-  return [hasError, items, total, fetchMore];
+  return [errorMessage, items, total, fetchMore];
 };

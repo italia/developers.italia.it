@@ -15,9 +15,9 @@ export const CatalogueView = React.memo(() => {
   }
 
   // partialItems: they are partial because we use pagination.
-  const [hasError, partialItems, itemsCount, fetchMore] = useSearchEngine();
+  const [errorMessage, partialItems, itemsCount, fetchMore] = useSearchEngine();
 
-  if (hasError) return <Error />;
+  if (errorMessage) return <Error description={errorMessage} />;
 
   return (
     <>

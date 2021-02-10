@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
 });
 
 export const SearchModal = ({ onClose }) => {
-  const [hasError, items] = useSearchEngine({ pageSize: 9 });
+  const [errorMessage, items] = useSearchEngine({ pageSize: 9 });
   const classes = useStyles();
   const { searchValue } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);
@@ -51,9 +51,9 @@ export const SearchModal = ({ onClose }) => {
             <SearchBar onChange={handleSearch} placeholder={l10NLabels.search_form_placeholder} />
           </div>
           <SearchType />
-          {hasError ? (
+          {errorMessage ? (
             <div className="m-4">
-              <Error />
+              <Error description={errorMessage} />
             </div>
           ) : (
             <>
