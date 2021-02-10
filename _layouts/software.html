@@ -34,8 +34,8 @@ layout: default
 {% endif %}
 
 <div class="container page-softwares-list">
-  {% assign vitality_sw_url = "/" | append: active_lang | append: "/search?page=0&sort=vitality" | escape %}
-  {% assign recent_sw_url = "/" | append: active_lang | append: "/search?page=0&sort=releasedate" | escape %}
+  {% assign vitality_sw_url = "/" | append: active_lang | append: "/search?sort_by=vitality" | escape %}
+  {% assign recent_sw_url = "/" | append: active_lang | append: "/search?sort_by=release_date" | escape %}
 
   {% if recent_sw.size > 0 %}
   <div class="container list-item-sorting">
