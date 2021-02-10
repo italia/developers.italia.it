@@ -25,7 +25,7 @@
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+    "react-hooks/exhaustive-deps": "error", // Checks effect dependencies
     "no-case-declarations": "off",
     "no-inner-declarations": "off",
     "prefer-const": "error",
