@@ -1,4 +1,4 @@
-
+ 
 
 
 
@@ -42,7 +42,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202102100935" rel="stylesheet">
+  <link href="/dist/main.css?202102101007" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -55,7 +55,11 @@
   <meta name="application-name" content="Developers Italia">
   <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
   <meta name="theme-color" content="#0066cc">
-  
+
+  <script>
+    window.lang = "en";
+  </script>
+
    <script>
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -359,56 +363,7 @@
       </div>
       
       <div class="Header-search ml-4 mb-0" id="header-search">
-        
-
-<a id="search-form" data-toggle="modal" data-backdrop="false" data-target="#searchModal">
-  <div class="form-inline pr-2 pr-lg-0" role="search">
-    <div class="form-group position-relative">
-      <span class="text-white mr-3 d-none d-lg-inline">
-        Search
-      </span>
-      <svg class="icon">
-        <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-      </svg>
-    </div>
-  </div>
-</a>
-<div id="searchModal" role="dialog" class="modal fade">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="container">
-          <p class="h1 modal-title d-inline"> Search</p>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="form-group">
-            <div class="autocomplete">
-              <svg class="icon icon-lg">
-                <use xlink:href="/assets/svg/sprite.svg#it-search"></use>
-              </svg>
-              <input type="text" class="form-control" placeholder="Search platforms, software or administrations" aria-label="Search platforms, software or administrations">
-              <div id="suggestions" class="d-none"></div>
-            </div>
-            <div id="search-buttons">
-              <a class="btn py-2 px-4 mb-2 btn-filter all active" data="all"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-search"></use></svg> All </a>
-              <a class="btn py-2 px-4 mb-2 btn-filter platforms" data="platforms"><span class="icon icon-type-platform--gray"></span>Platforms</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter software_open" data="software_open"><span class="icon icon-type-generic-sw--gray"></span>Software open source</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter reuse_software" data="reuse_software"><span class="icon icon-type-public-sw--gray"></span>Reuse software</a>
-              <a class="btn py-2 px-4 mb-2 btn-filter administrations" data="administrations"><svg class="icon"><use xlink:href="/assets/svg/sprite.svg#it-pa"></use></svg>Administrations</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+        <custom-search></custom-search>
       </div>
       
 
@@ -695,7 +650,7 @@
     <!-- Header-navbar -->
 
   </div>
-  
+   
 
 
 
@@ -736,9 +691,14 @@
               
               <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                 <a href="/en/software/c_l736-comune_venezia-iris_frontend" class="d-block decoration-none ">
+
                   
-                  
-                  <p class="icon-type-public-sw">REUSE SOFTWARE</p>
+                  <div class='d-flex align-items-center mb-2'>
+                    <svg class="icon mr-2">
+                      <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+                    </svg>
+                    <div>REUSE SOFTWARE</div>
+                  </div>
                   
 
                   
@@ -790,9 +750,14 @@
               
               <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
                 <a href="/en/software/c_l736-comune_venezia-whistleblowing" class="d-block decoration-none ">
+
                   
-                  
-                  <p class="icon-type-public-sw">REUSE SOFTWARE</p>
+                  <div class='d-flex align-items-center mb-2'>
+                    <svg class="icon mr-2">
+                      <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+                    </svg>
+                    <div>REUSE SOFTWARE</div>
+                  </div>
                   
 
                   
