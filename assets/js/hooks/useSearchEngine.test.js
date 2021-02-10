@@ -11,7 +11,7 @@ import { search } from '../services/searchEngine.js';
 jest.mock('../services/searchEngine.js');
 
 const UseSearchEngineExample = () => {
-  const [partialItems, itemsCount, fetchMore] = useSearchEngine({ pageSize: 1 });
+  const [errorMessage, partialItems, itemsCount, fetchMore] = useSearchEngine({ pageSize: 1 });
   const items = partialItems
     ? partialItems.map((i) => (
         <div key={i.id} data-testid={i.id}>
@@ -19,6 +19,8 @@ const UseSearchEngineExample = () => {
         </div>
       ))
     : [];
+
+  if (errorMessage) return 'ops...something went wrong';
 
   return (
     <div>
