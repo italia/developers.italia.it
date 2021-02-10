@@ -966,7 +966,7 @@ esDevelopersItaliaQuery.prototype.renderSoftware = function (software) {
   var description = this.languageFallback(software.publiccode.description);
 
   const placeholder = (category_id == 'public-sw')
-    ? '/assets/images/cover_softwareriuso.png'
+    ? '/assets/images/software_riuso.png'
     : '/assets/images/cover_software_opensource.png';
 
   var screenshot;
