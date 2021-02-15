@@ -179,3 +179,19 @@ astagi:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/andreastagi/
+mfortini:
+  name: Matteo Fortini
+  desc:
+  pic: /assets/images/mfortini.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/mfortini
+    twitter:
+      name: twitter
+      link: https://twitter.com/matt_fortini
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/matteofortini/
