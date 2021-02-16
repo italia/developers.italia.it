@@ -1,6 +1,6 @@
 ---
 title: "Google Summer of Code: information for students"
-subtitle: Want to get involved with Google Summer of Code? Here are a few ideas
+subtitle: Want to get involved with Google Summer of Code? Here are a few ideas!
 lang: en 
 ref:
   it: /it/idee-gsoc
@@ -65,24 +65,32 @@ And, if possible, an *easy, medium or hard* rating of each project.
     </thead>
     <tbody>
         <tr role="row" class="odd" id="agave">
-            <td tabindex="0">Developers</td>
+            <td tabindex="0">API</td>
             <td>
-                <b>Agave CMS</b><br /> 
-                Agave is a free and open source static website generator. The Agave project is currently active and some major milestones have already been reached. As such, this GSoC project will be focused on consolidating the application in order to be considered production ready. Activities will span fullstack from the consolidation of the infrastructure technologies (i.e., prepare the easy deployment) to the templating side, where some work is needed in order to produce solid final templates.
+                <b>OSSA (Online Services Suggestion API)</b><br /> 
+                "<i>OSSA</i>" aims to reduce the time spent by users looking for desired online services.
+                The project aspires to develop a generic and configurable API, able to suggest online services available in a catalog. Suggestions should be based on user's data, users activities, etc. without sensitive-data.
+                "<i>OSSA</i>" should collect data only from completed Online Services usages, using these data for future predictions.
+                Multiple service providers have to be taken into account, each with its own set of online services, but only one multi-tenant identity provider.
+                No data should be stored in users' clients and all computation should be server side.
                 <br />
-                <b>Mentor:</b> Ask on the #design-dev channel on our slack once you start having a basic idea.
+                <b>Mentor:</b> Alessandro Atria. Ask on the #api channel on our slack once you start having a basic idea.
                 <br />
                 <b>Expected outcome:</b> 
-                On the infrastructure side, desired outcomes involve a robust, tested and production ready dockerized environment. For what concerns the templating end, the complete implementation of the Bootstrap Italia directives has to be achieved so that the websites created by using Agave end up being 100% compatible with the Italian design guidelines.
+                A working prototype with:
+                <ul>
+                    <li>a silly web user interface</li>
+                    <li>a set of restful methods</li>
+                    <li>an example of dataset</li>
+                    <li>at least three configurable Service Providers, everyone with four online services in catalog</li>
+                    <li>one or more Machine Learning models to compute predictions</li>
+                    <li>a training policy to periodically align Machine Learning models</li>
+                </ul>
                 <br />
                 <b>Required skills:</b>
-                <ul>
-                    <li> React</li>
-                    <li> Ruby on Rails </li>
-                    <li> Docker and CI/CD technologies </li>
-                </ul>
+                Machine/Deep Learning knowledge, Javascript, Sql/NoSql and at least one programming language suitable for AI.
             </td>
-            <td>Medium</td>
+            <td>Medium / Hard</td>
             <td><a href="https://app.slack.com/client/T6C27AXE0/C7VPAUVB3">#design-dev</a></td>
         </tr>
         <tr role="row" class="even" id="api1">
@@ -160,55 +168,27 @@ And, if possible, an *easy, medium or hard* rating of each project.
             <td><a href="https://app.slack.com/client/T6C27AXE0/C7VPAUVB3">#design-dev</a></td>
         </tr>
         <tr role="row" class="odd" id="des2">
-            <td tabindex="0">Design</td>
+            <td tabindex="0">Developers Italia</td>
             <td>
-                <b>A Wordpress theme for municipalities</b><br /> 
-                Create a Wordpress theme for municipalities based on the Italian design system.
-                The code will be crafted upon <a href="https://italia.github.io/bootstrap-italia/">Bootstrap Italia</a> in order to adhere to the <a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html">HTML templates</a> that are already provided by Designers Italia. Wordpress content types and taxonomy will be consistent with the guidelines available on the <a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">information architecture for municipalities</a> websites document.
-                The Designers Italia community already created two Wordpress themes:
-                <ul>
-                    <li> <a href="https://github.com/italia/design-wordpress-theme">https://github.com/italia/design-wordpress-theme</a></li>
-                    <li> <a href="https://github.com/italia/design-wordpress-theme-wt">https://github.com/italia/design-wordpress-theme-wt</a></li>
-                </ul>
-                These themes are built for general purpose public websites and they may not be entirely validated in terms of accessibility or fully up-to-date. Nevertheless, they can serve as a starting point for the municipalities theme.
+                <b>Content Readability Validator</b><br /> 
+                 This project aims to create a webapp that evaluates the readability of public administration contents (including the Gulpease index) and proposes changes on elements (lexical, syntactic, structural ...) that can be improved. The backend should be populated through a Machine Learning process and contain a knowledge base with data and rules used for checks and suggestions.
                 <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
+                <b>Mentor:</b> Saverio Pulizzi / Andrea Stagi
                 <br />
                 <b>Expected outcome:</b> 
-                A working Wordpress theme for municipalities based on the Italian design system and ready to be used by any municipality for their own website, with a clear documentation and licensing. The project outcome should aim to the quality of Designers Italia's <a href="https://github.com/italia/design-scuole-wordpress-theme">Wordpress theme for schools</a>.
+                    A robust, tested, user friendly and production ready dockerized webapp to evaluate readability of public administration contents.
                 <br />
                 <b>Required skills:</b>
                 <ul>
-                    <li> Design systems and web development</li>
-                    <li> Wordpress plugins and theming best-practices</li>
-                    <li> Understanding of information architecture</li>
+                    <li>React JS</li>
+                    <li>Python</li>
+                    <li>Machine Learning</li>
+                    <li>Docker </li>
+                    <li>CI/CD technologies</li>
                 </ul>
             </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C91K0K085/">#design-cms-themes</a></td>
-        </tr>
-        <tr role="row" class="even" id="des3">
-            <td tabindex="0">Design</td>
-            <td>
-                <b>A Drupal theme for municipalities</b><br /> 
-                Create a Drupal theme for municipalities based on the Italian design system.
-                The code will be crafted upon <a href="https://italia.github.io/bootstrap-italia/">Bootstrap Italia</a> in order to adhere to the <a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html">HTML templates</a> that are already provided by Designers Italia. Drupal content types and taxonomy will be consistent with the guidelines available on the <a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit#gid=212585064">information architecture for municipalities</a> websites document.
-                There is already a Drupal theme for general purpose public websites that can serve as a starting point for the municipalities theme:
-                <a href="https://www.drupal.org/project/bootstrap_italia">https://www.drupal.org/project/bootstrap_italia</a>.
-                <br />
-                <b>Mentor:</b> Designers or developers from the Designers Italia team.
-                <br />
-                <b>Expected outcome:</b> A working Drupal theme for municipalities based on the Italian design system and ready to be used by any municipality for their own website, with a clear documentation and licensing. The project outcome should aim to the quality of Designers Italia's <a href="https://github.com/italia/design-scuole-wordpress-theme">Wordpress theme for schools</a>.
-                <br />
-                <b>Required skills:</b>
-                <ul>
-                    <li> Design systems and web development</li>
-                    <li> Drupal plugins and theming best-practices</li>
-                    <li> Understanding of information architecture</li>
-                </ul>
-            </td>
-            <td>Medium</td>
-            <td><a href="https://developersitalia.slack.com/messages/C7VPAUVB3">#design-dev</a></td>
+            <td>Hard</td>
+            <td><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
         <tr role="row" class="even" id="general">
             <td tabindex="0">General</td>
