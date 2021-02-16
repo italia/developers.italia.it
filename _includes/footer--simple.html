@@ -40,7 +40,7 @@
 {% if jekyll.environment == "production" %}
 <script src="{{ '/dist/bundle.js' | relative_url }}"></script>
 {% else %}
-<script src="//localhost:8080/bundle.js"></script>
+<script src="/dist/bundle.js"></script>
 {% endif %}
 
 {% if jekyll.environment == 'production' and site.piwik %} {% include piwik.html %} {% endif %}
