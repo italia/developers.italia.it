@@ -28,7 +28,7 @@ Altri progetti degni di nota sviluppati da membri della community di Developers 
 
 Tutte le soluzioni citate sono accomunate dalla loro natura open source che garantisce la possibilità di consultare il codice sorgente e testare in modo indipendente le possibili integrazione per adattarle alle proprie esigenze.
 
-**Il lavoro della community continua.**
+### Il lavoro della community continua
 
 Hai già sviluppato un integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community ([Slack](https://app.slack.com/client/T6C27AXE0/C73R3UQE8) e [Forum Italia](https://forum.italia.it/c/software-open-source-per-la-pa/49)) per verificare l’eventuale inserimento all’interno dell’organizzazione [github.com/italia](https://github.com/italia). Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community. [Scopri come partecipare](https://developers.italia.it/it/come-partecipo)!
 
