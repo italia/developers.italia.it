@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-02-17T13:41:21+00:00</updated>
+  <updated>2021-02-17T14:19:27+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -21,7 +21,7 @@
 
     <summary>La community di Developers Italia a supporto delle PA </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2021/02/17/spid-cie-disponibili-nuove-risorse-opensource">&lt;p&gt;Entro il 28 febbraio 2021 tutte le amministrazioni locali e centrali dovranno integrare &lt;a href=&quot;https://developers.italia.it/it/spid&quot;&gt;SPID&lt;/a&gt; (Sistema Pubblico di Identità Digitale) e &lt;a href=&quot;https://developers.italia.it/it/cie&quot;&gt;CIE&lt;/a&gt; (Carta d’Identità Elettronica) come sistemi di autenticazione, uniformando di fatto l’accesso ai servizi pubblici digitali in tutto il Paese. 
-Un scadenza importante, quella prevista dal Decreto Legge “semplificazione e innovazione digitale”, che ha portato in questi mesi il team e la community di Developers Italia a impegnarsi su più fronti per supportare gli enti, effettuando numerosi rilasci di librerie e software applicativo.&lt;/p&gt;
+Una scadenza importante, quella prevista dal Decreto Legge “semplificazione e innovazione digitale”, che ha portato in questi mesi il team e la community di Developers Italia a impegnarsi su più fronti per supportare gli enti, effettuando numerosi rilasci di librerie e software applicativo.&lt;/p&gt;
 
 &lt;p&gt;Un esempio significativo è rappresentato dal &lt;a href=&quot;https://github.com/italia/spid-express&quot;&gt;middleware&lt;/a&gt; che permette una facile integrazione di SPID e CIE all’interno di architetture web basate sullo stack tecnologico &lt;strong&gt;Express&lt;/strong&gt;.&lt;/p&gt;
 
