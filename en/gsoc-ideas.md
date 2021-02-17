@@ -10,14 +10,14 @@ image: /assets/images/comelouso-temp-img.jpg
 
 ## Dear GSoC Student....
 
-first of all, welcome here! Developers Italia is very pleased to have you here. 
+first of all, welcome here! Developers Italia is very pleased to have you here.
 
-Below you will find a list of ideas contributed by the Developers Italia community. 
-They are intended as basic suggestions to stimulate your thinking process. You can use them as guidelines to make sure you come up with a great proposal, but feel free to expand and add your personal spin to it. 
+Below you will find a list of ideas contributed by the Developers Italia community.
+They are intended as basic suggestions to stimulate your thinking process. You can use them as guidelines to make sure you come up with a great proposal, but feel free to expand and add your personal spin to it.
 
 We're happy to discuss them further, of course. If you would like to submit a proposal based on these suggestions, you might want to contact the developers first and find out more about the specific suggestion you are looking at.
 
-**Important Note: Please remember that all Project Ideas for GSoC 2021 are meant to be ~175 hour projects, so don't add too many features to your proposal. We prefer small but manageable projects instead of proposals that try to include everything and will not be completed later in the summer.** 
+**Important Note: Please remember that all Project Ideas for GSoC 2021 are meant to be ~175 hour projects, so don't add too many features to your proposal. We prefer small but manageable projects instead of proposals that try to include everything and will not be completed later in the summer.**
 
 Keep a few more things in mind:
 
@@ -25,13 +25,13 @@ It's quite competitive to be accepted as a Google Summer Code student. Accepted 
 
 When writing your proposal or asking for help from the General Community of Developers Italia, don't assume that everyone here knows the ideas.
 
-If you do not have a specific contact, you can ask questions by joining our public [Slack](https://slack.developers.italia.it/). You can get an invitation by simply visiting the link above. If you don't know who your point of contact should be, don't be shy, there's a channel called [#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) for this one! You may see some Italian pop up from time to time (especially from guests), but we all speak English (and interact solely in it for anything related to code). Don't be afraid to ask any of your questions. 
+If you do not have a specific contact, you can ask questions by joining our public [Slack](https://slack.developers.italia.it/). You can get an invitation by simply visiting the link above. If you don't know who your point of contact should be, don't be shy, there's a channel called [#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) for this one! You may see some Italian pop up from time to time (especially from guests), but we all speak English (and interact solely in it for anything related to code). Don't be afraid to ask any of your questions.
 
 ヽ(•‿•)ノ
 
 ## Remember, this is just the start...
 
-Well-prepared proposals from able students have an excellent chance of being selected. We consider proposals for all skill levels, ranging from simple to insane, and everything in between. Introduce yourself, and we're going to help you plan one right for you. 
+Well-prepared proposals from able students have an excellent chance of being selected. We consider proposals for all skill levels, ranging from simple to insane, and everything in between. Introduce yourself, and we're going to help you plan one right for you.
 
 Remember that project descriptions are only initial ideas. You need to expand them with considerably more detail. Change the goals to suit your experience and interests.
 
@@ -54,7 +54,7 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 "<i>OSSA</i>" should collect data only from completed Online Services usages, using these data for future predictions.
                 Multiple service providers have to be taken into account, each with its own set of online services, but only one multi-tenant identity provider.
                 No data should be stored in users' clients and all computation should be server side.</p>
-                <p><b>Mentor:</b> Alessandro Atria. Ask on the #api channel on our slack once you start having a basic idea.</p>
+                <p><b>Mentor:</b> Alessandro Atria. Ask on the <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api channel</a> on our slack once you start having a basic idea.</p>
                 <p><b>Expected outcome:</b>
                 A working prototype with:
                 <ul>
@@ -79,7 +79,7 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 <p class="d-md-none"><b>Contact:</b> <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></p>
                 <p>The aim of this project is to work on the new <a href="https://tools.ietf.org/id/draft-polli-ratelimit-headers-01.html">rate-limit header fields for HTTP</a> internet draft. In practice, such novelty has to be implemented in the form of plugins inside world known products, such as traefik, nginx, envoy-proxy and 3scale. As such, it will also be important to interact with the already existing communities built around those tools to ensure the code gets merged.
                 </p>
-                <p><b>Mentor:</b> Ask on the #api channel on our slack once you start having a basic idea.</p>
+                <p><b>Mentor:</b> Ask on the <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api channel</a> on our slack once you start having a basic idea.</p>
                 <p><b>Expected outcome:</b>
                 Working plugins for traefik, nginx, envoy-proxy et al. implementing the rate-limit headers. The student should provide a working environment for testing the implementations.
                 </p>
@@ -108,7 +108,7 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 Students will study, install and setup opensource API gateways and reverse proxies like Kong, 3scale, Nginx, WSO2 ensuring that the exposed features are implemented in the more standard way.
                 Where those features require implementing plugins, filters or integration components, students should do it previously contacting the gateway communities. For the ratelimit part, they will interact with students working on <a href="#api1">proposal#2</a>.
                 </p>
-                <p><b>Mentor:</b> Ask on the #api channel on our slack once you start having a basic idea.</p>
+                <p><b>Mentor:</b> Ask on the <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api channel</a>on our slack once you start having a basic idea.</p>
                 <p><b>Expected outcome:</b>
                 The outcome is a docker-compose or helm chart providing a redundant setup of an API Gateway infrastructure, useful to expose APIs descibed by OAS3 specification files.
                 </p>
@@ -208,13 +208,13 @@ Remember that project descriptions are only initial ideas. You need to expand th
 
 ## For those already in the community
 
-If you've got more proposals, we'd love to add them here. Please contact Riccardo Iaconelli to insert your project. Alternatively, feel free to [open a pull request](https://github.com/italia/developers.italia.it) and add your project to it. 
+If you've got more proposals, we'd love to add them here. Please contact Riccardo Iaconelli to insert your project. Alternatively, feel free to [open a pull request](https://github.com/italia/developers.italia.it) and add your project to it.
 
 If you have more proposals, we'd love to add them here. Please contact Riccardo Iaconelli to insert your project. Alternatively, feel free to  and add your project.
 
 **Bear in mind that these tasks should be finished in 175 hours.**
 
-Each project in the Ideas list should include: 
+Each project in the Ideas list should include:
 
 1. a project title/description;
 2. more detailed description of the project (2-5 sentences);
