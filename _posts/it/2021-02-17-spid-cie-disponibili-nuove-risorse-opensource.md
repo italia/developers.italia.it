@@ -15,7 +15,7 @@ redirect_from:
 ---
 
 Entro il 28 febbraio 2021 tutte le amministrazioni locali e centrali dovranno integrare [SPID](https://developers.italia.it/it/spid) (Sistema Pubblico di Identità Digitale) e [CIE](https://developers.italia.it/it/cie) (Carta d’Identità Elettronica) come sistemi di autenticazione, uniformando di fatto l’accesso ai servizi pubblici digitali in tutto il Paese. 
-Un scadenza importante, quella prevista dal Decreto Legge “semplificazione e innovazione digitale”, che ha portato in questi mesi il team e la community di Developers Italia a impegnarsi su più fronti per supportare gli enti, effettuando numerosi rilasci di librerie e software applicativo. 
+Una scadenza importante, quella prevista dal Decreto Legge “semplificazione e innovazione digitale”, che ha portato in questi mesi il team e la community di Developers Italia a impegnarsi su più fronti per supportare gli enti, effettuando numerosi rilasci di librerie e software applicativo. 
 
 Un esempio significativo è rappresentato dal [middleware](https://github.com/italia/spid-express) che permette una facile integrazione di SPID e CIE all’interno di architetture web basate sullo stack tecnologico **Express**.
 
