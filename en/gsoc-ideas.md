@@ -10,46 +10,30 @@ image: /assets/images/comelouso-temp-img.jpg
 
 ## Dear GSoC Student....
 
-first of all, welcome! Developers Italia is glad to have you here.
+first of all, welcome here! Developers Italia is very pleased to have you here. 
 
-Below you will find a list of ideas were contributed by the Developers Italia community.
-They are meant as simple suggestions to sparkle a discussion. You can use them as guidelines to make sure you come up with a great proposal, but feel free to add your personal spin to them.
+Below you will find a list of ideas contributed by the Developers Italia community. 
+They are intended as basic suggestions to stimulate your thinking process. You can use them as guidelines to make sure you come up with a great proposal, but feel free to expand and add your personal spin to it. 
 
-Of course, we're happy to discuss them further. If you wish to submit a proposal based on these ideas, you may wish to contact the developers first and find out more about the particular
-suggestion you're looking at.
+We're happy to discuss them further, of course. If you would like to submit a proposal based on these suggestions, you might want to contact the developers first and find out more about the specific suggestion you are looking at.
 
-**Important Note: Please remember that all Project Ideas for GSoC 2021 are meant to be ~175 hour projects, so don't add too many features to your proposal. We prefer small but manageable projects than proposals that try to include everything and will later fall short in the summer.** 
+**Important Note: Please remember that all Project Ideas for GSoC 2021 are meant to be ~175 hour projects, so don't add too many features to your proposal. We prefer small but manageable projects instead of proposals that try to include everything and will not be completed later in the summer.** 
 
-A few additional notes that always apply:
+Keep a few more things in mind:
 
-Being accepted as a Google Summer of Code student is quite competitive.
-Accepted students typically have thoroughly researched the technologies of
-their proposed project and have been in frequent contact with potential
-mentors. Simply copying and pasting an idea here will not work. On the other
-hand, creating a completely new idea without first consulting potential mentors
-is unlikely to work out.
+It's quite competitive to be accepted as a Google Summer Code student. Accepted students have usually thoroughly researched the technologies of their proposed project and have been in frequent contact with potential mentors. Just copying and pasting an idea here is not going to work. On the other hand, creating a completely new idea without first consulting potential mentors is also unlikely to work.
 
-When writing your proposal or asking for help from the general community of
-Developers Italia don't assume everyone is familiar with the ideas here.
+When writing your proposal or asking for help from the General Community of Developers Italia, don't assume that everyone here knows the ideas.
 
-If there is no specific contact given you can ask questions on our
-[Slack](https://slack.developers.italia.it/). You can get an invite
-by simply visiting the above link. If you don't know who your point
-of contact should be, don't be shy, there is a channel called
-[#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) just for
-this! You might see some Italian pop up from time to time (coming especially from guests),
-but we all speak English (and interact solely in it for anything related to code). Don't be afraid to ask your questions. :-)
+If you do not have a specific contact, you can ask questions by joining our public [Slack](https://slack.developers.italia.it/). You can get an invitation by simply visiting the link above. If you don't know who your point of contact should be, don't be shy, there's a channel called [#welcome](https://developersitalia.slack.com/messages/C8U3ZSM5M) for this one! You may see some Italian pop up from time to time (especially from guests), but we all speak English (and interact solely in it for anything related to code). Don't be afraid to ask any of your questions. 
 
-## Open ideas
+ヽ(•‿•)ノ
 
-Well prepared proposals from capable students have an outstanding chance of
-getting selected. We consider proposals for all skill levels ranging from
-simple to crazy hard and everything in between. Introduce yourself, and we'll
-help you plan one right for you.
+## Remember, this is just the start...
 
-Remember that project descriptions are just initial ideas. You must expand with
-considerably more detail. Change the goals to fit your experience and
-interests.
+Well-prepared proposals from able students have an excellent chance of being selected. We consider proposals for all skill levels, ranging from simple to insane, and everything in between. Introduce yourself, and we're going to help you plan one right for you. 
+
+Remember that project descriptions are only initial ideas. You need to expand them with considerably more detail. Change the goals to suit your experience and interests.
 
 <table id="issues_table" class="table table-striped table-bordered" cellspacing="0" width="100%" role="grid" style="width: 100%;">
     <thead>
@@ -222,16 +206,20 @@ interests.
     </tbody>
 </table>
 
-## Dear community member
+## For those already in the community
 
-if you have more proposals, we'd love to add them here. Please get in touch with Riccardo Iaconelli, or alternatively open a pull request, and add your project.
+If you've got more proposals, we'd love to add them here. Please contact Riccardo Iaconelli to insert your project. Alternatively, feel free to [open a pull request](https://github.com/italia/developers.italia.it) and add your project to it. 
 
-Each project on the Ideas list should include:
+If you have more proposals, we'd love to add them here. Please contact Riccardo Iaconelli to insert your project. Alternatively, feel free to  and add your project.
+
+**Bear in mind that these tasks should be finished in 175 hours.**
+
+Each project in the Ideas list should include: 
+
 1. a project title/description;
 2. more detailed description of the project (2-5 sentences);
 3. expected outcomes;
 4. skills required/preferred;
 5. possible mentors.
 
-And, if possible, an *easy, medium or hard* rating of each project.
-
+And, if possible, an *easy, medium or hard* rating for each project.
