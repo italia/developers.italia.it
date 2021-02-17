@@ -2,7 +2,7 @@
 layout: post
 title:  SPID e CIE, disponibili nuove risorse open source 
 subtitle: La community di Developers Italia a supporto delle PA
-date: 2021-02-17 10:00:00 +0100
+date: 2021-02-17 08:00:00 +0100
 tags: community sviluppatori developers riuso opensource software
 categories: news
 author: Giuseppe De Marco
