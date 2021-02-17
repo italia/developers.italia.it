@@ -41,4 +41,4 @@ Ti aspettiamo!
 Il Team Developers Italia
 
 
-[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall/).
+[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall).
