@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-02-17T14:19:27+00:00</updated>
+  <updated>2021-02-17T15:34:48+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -36,7 +36,7 @@ Di fatto questo si basa su &lt;em&gt;keycloak&lt;/em&gt; come piattaforma di ges
 
 &lt;h3 id=&quot;il-lavoro-della-community-continua&quot;&gt;Il lavoro della community continua&lt;/h3&gt;
 
-&lt;p&gt;Hai già sviluppato un integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community (&lt;a href=&quot;https://app.slack.com/client/T6C27AXE0/C73R3UQE8&quot;&gt;Slack&lt;/a&gt; -registrati &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;qui&lt;/a&gt;- e &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum Italia&lt;/a&gt;) per verificare l’eventuale inserimento all’interno dell’organizzazione &lt;a href=&quot;https://github.com/italia&quot;&gt;github.com/italia&lt;/a&gt;. Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community. &lt;a href=&quot;https://developers.italia.it/it/come-partecipo&quot;&gt;Scopri come partecipare&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Hai già sviluppato un’integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community (&lt;a href=&quot;https://app.slack.com/client/T6C27AXE0/C73R3UQE8&quot;&gt;Slack&lt;/a&gt; -registrati &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;qui&lt;/a&gt;- e &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum Italia&lt;/a&gt;) per verificare l’eventuale inserimento all’interno dell’organizzazione &lt;a href=&quot;https://github.com/italia&quot;&gt;github.com/italia&lt;/a&gt;. Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community. &lt;a href=&quot;https://developers.italia.it/it/come-partecipo&quot;&gt;Scopri come partecipare&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;Il Team Developers Italia&lt;/p&gt;</content>
     <published>2021-02-17T07:00:00+00:00</published>
@@ -575,7 +575,7 @@ all’interno dei canali di &lt;a href=&quot;https://slack.developers.italia.it/
 
 &lt;p&gt;a mercoledì!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
     <published>2019-11-11T13:00:00+00:00</published>
 
     
@@ -615,7 +615,7 @@ Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10
 
 &lt;p&gt;A mercoledì!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
     <published>2019-10-28T11:00:00+00:00</published>
 
     
@@ -688,7 +688,7 @@ Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10
 
 &lt;p&gt;Ciao e vi aspettiamo mercoledì in call!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
     <published>2019-10-11T11:00:00+00:00</published>
 
     
@@ -783,7 +783,7 @@ Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10
 
 &lt;p&gt;Il Team Developers Italia&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall/&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href=&quot;https://developers.italia.it/it/info-privacy-communitycall&quot;&gt;Leggi l’informativa privacy per le Community Call di Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
     <published>2019-09-03T11:00:00+00:00</published>
 
     
