@@ -19,7 +19,7 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-pagoPA.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
-        - 
+        -
           type: hidden
           name: list
           value: 5
@@ -27,8 +27,6 @@ owners:
     - name: Presidenza del Consiglio dei Ministri
       url: http://www.governo.it/
 managers:
-    - name: Team per la Trasformazione Digitale
-      url: https://teamdigitale.governo.it/
     - name: SIA SpA
       url: https://www.sia.eu/
 resources:
@@ -36,19 +34,19 @@ resources:
       - title: Specifiche Attuative del Nodo dei Pagamenti-SPC
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/
-        desc: 
+        desc:
       - title: FAQ
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-docs-faq/
-        desc: 
+        desc:
       - title: Specifiche attuative dei codici identificativi di versamento, riversamento e rendicondazione
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-codici-docs/
-        desc: 
+        desc:
       - title: Linee guida pagamenti elettronici a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi
         icon: file
         url: https://docs.italia.it/italia/pagopa/lg-pagopa-docs/
-        desc: 
+        desc:
       - title: Guida tecnica avviso analogico
         icon: file
         url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/
