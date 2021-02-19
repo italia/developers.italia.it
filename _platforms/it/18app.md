@@ -35,12 +35,6 @@ resources:
         - title: SDK per .NET
           icon: github
           url: https://github.com/italia/18app-dotnet-sdk
-        - title: SDK per C++
-          icon: github
-          url: https://github.com/italia/18app-cpp-sdk
-        - title: SDK per Magento (TODO)
-          icon: github
-          url: https://github.com/italia/18app-magento-sdk
 ---
 
 ## Intro
