@@ -67,7 +67,7 @@ Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canal
 
 ## App nativa
 
-In Developers Italia è in corso lo sviluppo di una app nativa per 18app, che nella primavera 2019 diventerà la app ufficiale.
+In Developers Italia è in corso lo sviluppo una app nativa per 18app.
 
 - [Scheda nel catalogo del software](/it/software/m_bac-italia-18app)
 - [Repository GitHub](https://github.com/italia/18app)

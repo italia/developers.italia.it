@@ -55,7 +55,7 @@ These discussion channels are aimed at free discussion among developers; they ar
 
 ## Native app
 
-In Developers Italia a native mobile app for 18app is being developed. This app will become official in Q2 2019.
+In Developers Italia a native mobile app for 18app is being developed.
 
 - [More details in the software catalogue](/en/software/m_bac-italia-18app)
 - [GitHub repository](https://github.com/italia/18app)
