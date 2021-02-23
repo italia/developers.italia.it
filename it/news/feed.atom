@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-02-22T06:09:11+00:00</updated>
+  <updated>2021-02-23T17:46:11+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -27,7 +27,7 @@ Una scadenza importante, quella prevista dal Decreto Legge “semplificazione e 
 
 &lt;p&gt;Un’altra risorsa pubblicata è &lt;a href=&quot;https://github.com/italia/Satosa-Saml2Spid&quot;&gt;Satosa-Saml2SPID&lt;/a&gt;, un proxy di autenticazione compatibile con il Sistema Pubblico di Identità Digitale italiano. Nella fattispecie questa soluzione consente di abbattere i tempi di accreditamento per tutte le organizzazioni che già sfruttano &lt;strong&gt;SAML2&lt;/strong&gt; come protocollo di autenticazione. Satosa-Saml2SPID è un esempio di un software open source sviluppato originariamente all’interno della pubblica amministrazione italiana, l’&lt;a href=&quot;https://developers.italia.it/it/pa/unical&quot;&gt;Università della Calabria&lt;/a&gt;, con una potenziale ricaduta positiva per molti altri enti che stanno effettuando il percorso di trasformazione digitale.&lt;/p&gt;
 
-&lt;p&gt;Per gli enti che utilizzano il &lt;strong&gt;CMS Entando&lt;/strong&gt; è disponibile un &lt;a href=&quot;https://github.com/italia/spid-keycloak-entando&quot;&gt;modulo di integrazione con SPID&lt;/a&gt;.
+&lt;p&gt;Per gli enti che utilizzano &lt;strong&gt;Entando&lt;/strong&gt; è disponibile un &lt;a href=&quot;https://github.com/italia/spid-keycloak-entando&quot;&gt;modulo di integrazione con SPID&lt;/a&gt;.
 Di fatto questo si basa su &lt;em&gt;keycloak&lt;/em&gt; come piattaforma di gestione delle identità e il modulo pubblicato permette di configurarla facilmente per agevolare l’integrazione. Come per &lt;em&gt;Satosa-Saml2SPID&lt;/em&gt;, anche questa componente può essere usata in modalità standalone.&lt;/p&gt;
 
 &lt;p&gt;Altri progetti degni di nota sviluppati da membri della community di Developers Italia e recentemente pubblicati sono &lt;a href=&quot;https://github.com/italia/spid-aspnetcore&quot;&gt;AspNetCore Remote Authenticator for SPID&lt;/a&gt; e &lt;a href=&quot;https://github.com/italia/cie-aspnetcore&quot;&gt;AspNetCore Remote Authenticator for CIE&lt;/a&gt; che rappresentano strumenti semplici ed immediati per integrare rispettivamente SPID e CIE in web app sviluppate con &lt;strong&gt;AspNetCore MVC&lt;/strong&gt;. In questo caso un ringraziamento speciale del team è rivolto a Daniele Giallonardo per il suo contributo.&lt;/p&gt;
