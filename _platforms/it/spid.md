@@ -154,6 +154,10 @@ resources:
       url: https://github.com/italia/spid-testenv2
       icon: github
       desc: Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale
+    - title: Creazione certificati SAML2
+      url: https://github.com/italia/spid-compliant-certificates
+      icon: github
+      desc:  Tool per la creazione di certificati X.509 conformi all'Avviso SPID n.29 v3
 ---
 
 ## Intro
