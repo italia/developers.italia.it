@@ -100,10 +100,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-drupal-module
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Drupal (PHP)
-    - title: SDK per concrete5
-      icon: github
-      url: https://github.com/italia/spid-concrete5
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni concrete5 (PHP)
     - title: SDK per Perl
       icon: github
       url: https://github.com/italia/spid-perl
