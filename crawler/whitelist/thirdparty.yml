@@ -48,6 +48,7 @@
 - name: "KDE"
   repos:
     - "https://invent.kde.org/education/gcompris"
+    - "https://invent.kde.org/pim/mygnuhealth/"
 
 - name: "Opencontent"
   repos:
