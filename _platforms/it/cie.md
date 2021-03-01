@@ -28,6 +28,9 @@ resources:
     - title: Specifiche del microprocessore
       icon: file
       url: http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf
+    - title: Manuale Tecnico
+      icon: link
+      url: https://docs.italia.it/italia/cie/cie-manuale-tecnico-docs/
     - title: Manuale utente del middleware per Windows
       icon: file
       url: https://docs.italia.it/italia/cie/cie-middleware-windows-docs/
@@ -44,6 +47,11 @@ resources:
       icon: github
       url: https://github.com/italia/cie-middleware-linux
       desc: Il middleware consente di usare la carta come strumento di accesso per i servizi web.
+  - Risorse Grafiche:
+    - title: cie-graphics
+      icon: github
+      url: https://github.com/italia/cie-graphics
+      desc: Icone, loghi e grafiche CIE
   - SDK:
     - title: SDK per Android - Entra con CIE
       icon: github
@@ -89,6 +97,22 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-objc-sdk
       desc: Libreria Objective-C per leggere il Numero Identificativo Servizi
+    - title: SDK per Express.js
+      icon: github
+      url: https://github.com/italia/spid-express
+      desc: Libreria nativa per l'integrazione di CIE in applicazioni Node/Passport (Javascript)
+    - title: SDK per ASPnetCore
+      icon: github
+      url: https://github.com/italia/cie-aspnetcore
+      desc: AspNetCore Remote Authenticator for CIE3.0
+    - title: Libreria di .NET Core per leggere e validare il codice NIS
+      icon: github
+      url: https://github.com/italia/cie-nis-dotnetcore-sdk
+      desc: Libreria per leggere e validare il codice NIS da una CIE mediante .NET Core
+    - title: Libreria per smartphone iOS sviluppato in Swift che include le funzionalità di autenticazione di "Entra con CIE"
+      icon: github
+      url: https://github.com/italia/cieid-ios-sdk
+      desc: Utilizzando questo kit gli sviluppatori di applicazioni terze iOS possono integrare nella propria app l'autenticazione mediante la cartà d'identità elettronica (CIE 3.0).
 ---
 
 ## Intro
