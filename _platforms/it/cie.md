@@ -109,7 +109,7 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-dotnetcore-sdk
       desc: Libreria per leggere e validare il codice NIS da una CIE mediante .NET Core
-    - title: Libreria per smartphone iOS sviluppato in Swift che include le funzionalità di autenticazione di "Entra con CIE"
+    - title: Libreria per smartphone iOS sviluppata in Swift che include le funzionalità di autenticazione di "Entra con CIE"
       icon: github
       url: https://github.com/italia/cieid-ios-sdk
       desc: Utilizzando questo kit gli sviluppatori di applicazioni terze iOS possono integrare nella propria app l'autenticazione mediante la cartà d'identità elettronica (CIE 3.0).
