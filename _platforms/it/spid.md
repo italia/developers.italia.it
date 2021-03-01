@@ -56,6 +56,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-spring
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Java Spring
+    - title: Standalone SPID Proxy 
+      icon: github
+      url: https://github.com/italia/Satosa-Saml2Spid
+      desc: Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID
     - title: SDK per Ruby
       icon: github
       url: https://github.com/italia/spid-ruby
@@ -146,10 +150,10 @@ resources:
       url: https://github.com/italia/spid-testenv2
       icon: github
       desc: Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale
-    - title: Identity Provider di test
-      url: https://github.com/italia/spid-saml-check
+    - title: Creazione certificati SAML2
+      url: https://github.com/italia/spid-compliant-certificates
       icon: github
-      desc: Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale
+      desc:  Tool per la creazione di certificati X.509 conformi all'Avviso SPID n.29 v3
 ---
 
 ## Intro
@@ -159,7 +163,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti *Identity 
 
 **Vantaggi per il cittadino:**
 
-- Un'unica credenziale per tutti i siti pubblici (e privati), sicura e facile da ricordare
+- Un'unica credenziale per tutti i siti pubblici e privati, sicura e facile da ricordare
 - Il processo di riconoscimento e rilascio si effettua una volta sola e vale per sempre
 - SPID è gratuito
 
@@ -174,7 +178,7 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 
 ## Come diventare Service Provider
 
-1. Leggi la documentazione tecnica
+1. Leggi la documentazione tecnica.
 2. Usa e contribuisci ai componenti open source che trovi in Developers Italia.
 3. Usa l'[Identity Provider di test](https://github.com/italia/spid-testenv2) per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/).
@@ -186,13 +190,11 @@ SPID è basato sul protocollo SAML2, quindi l'integrazione può avvenire con mol
 - applicando al web server un middleware come Shibboleth;
 - aggiungendo un componente esterno di Identity Access Management.
 
-In aggiunta, è necessario integrare nel sito il bottone ufficiale "Entra con SPID", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una AuthnRequest che viene poi inviata all'Identity Provider attraverso un redirect del browser.
+In aggiunta, è necessario integrare nel sito il bottone ufficiale "[Entra con SPID](https://github.com/italia/spid-sp-access-button)", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una *AuthnRequest* che viene poi inviata all'Identity Provider attraverso un HTTP Redirect o POST del browser.
 
 Il Service Provider deve aggiornare periodicamente i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
 
-In aggiunta, è disponibile un [issue tracker pubblico](https://github.com/italia/spid/issues).
-
-**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi (vedi la [roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)).
+**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi.
