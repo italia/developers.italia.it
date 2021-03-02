@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: The open data of the Public Administration
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: The open data of the Public Administration
 description: >
     Dati.gov.it is the national list of the open data of the Italian Public Administrations.  It has been created with the aim to aggregate in a single portal most of the open data displayed by the various administrations both local and national.
@@ -29,9 +30,9 @@ Our aim is to evolve the current online portal of open data to a system that pro
 
 As with all the projects of Developers Italia, the portal of open data follows a development model based on a collaborative process  which is typical of the community of developers. The tools that we want to use to structure the development process are:
 
-  * A development roadmap agile and public 
+  * A development roadmap agile and public
   * Source code open from the start
-  * A public tracking system of the errors 
+  * A public tracking system of the errors
   * Clear documentation of the code and the API
 
 ## Documentation
@@ -47,7 +48,7 @@ Here you can find the actual source code based on DKAN (Drupal), and soon we wil
 
 [Repo GitHub for current dati.gov.it](https://github.com/FormezPA/dkan)
 
-While here you can find the repositories related to the evolution of dati.gov.it according to the architectural document: 
+While here you can find the repositories related to the evolution of dati.gov.it according to the architectural document:
 
 [Repo GitHub for evoution of dati.gov.it](https://github.com/italia/dati.gov.it)
 

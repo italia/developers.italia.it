@@ -2,6 +2,7 @@
 title: Docs Italia
 subtitle: Documenti pubblici, digitali
 logo: /assets/images/logo-docs-italia.png
+external_website: https://docs.italia.it
 payoff: Documenti pubblici, digitali
 description: "Docs Italia è lo strumento per la pubblicazione di documenti tecnici e amministrativi, che offre ai cittadini la possibilità di leggere e commentare in modo semplice ed accessibile."
 lang: it
@@ -24,7 +25,7 @@ Una prima versione del progetto Docs Italia è stata completata nel corso del 20
 
 **Roadmap**
 
-Queste sono le principali attività che stiamo ipotizzando per il prossimo futuro: 
+Queste sono le principali attività che stiamo ipotizzando per il prossimo futuro:
 
 * Potenziamento del motore di ricerca basato su **ElasticSearch** con filtri per popolarità, publisher, tag, progetti.
 * Completamento e documentazione delle **API** per ottenere dati e dettagli dei documenti.
@@ -48,7 +49,7 @@ Il codice sorgente di Docs Italia è diviso in alcuni repository a seconda del d
 - La [Piattaforma Docs Italia](https://github.com/italia/docs.italia.it), che come si può notare è un fork del progetto ReadTheDocs, scritto in Python con Django.
 - Gli [script Ansible](https://github.com/italia/docs-italia-deploy-scripts) per il deploy della piattaforma.
 
-### Convertitore 
+### Convertitore
 
 - L'app Django con il [convertitore web](https://github.com/italia/docs-italia-convertitore-web).
 - Dei [filtri per Pandoc](https://github.com/italia/docs-italia-pandoc-filters).
@@ -72,4 +73,4 @@ Un documento "speciale" è infatti la **Guida a Docs Italia**, che spiega come s
 
 All'interno del documento potrai trovare i riferimenti con cui entrare in contatto con i nostri tech writer, che potranno supportarti nella fase di iscrizione del tuo Ente e durante la scrittura o la conversione dei documenti.
 
-Informazioni di carattere più tecnico possono essere trovate ai file README dei singoli repository, e nella [Wiki del repository principale](https://github.com/italia/docs.italia.it/wiki). 
+Informazioni di carattere più tecnico possono essere trovate ai file README dei singoli repository, e nella [Wiki del repository principale](https://github.com/italia/docs.italia.it/wiki).

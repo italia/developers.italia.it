@@ -2,6 +2,7 @@
 title: pagoPA
 subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
+external_website: https://www.pagopa.gov.it
 payoff: Payment interface towards the Public Administration
 description: >
   A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
@@ -21,7 +22,7 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-pagoPA.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
-        - 
+        -
           type: hidden
           name: list
           value: 5
@@ -38,19 +39,19 @@ resources:
       - title: Tech specs of the Nodo dei Pagamenti-SPC
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/
-        desc: 
+        desc:
       - title: FAQ
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-docs-faq/
-        desc: 
+        desc:
       - title: Tech specs of the codes for payments
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-codici-docs/
-        desc: 
+        desc:
       - title: Guidelines for electronics payments to Public Administrations and managers of public services
         icon: file
         url: https://docs.italia.it/italia/pagopa/lg-pagopa-docs/
-        desc: 
+        desc:
       - title: Technical guide for the analog notice
         icon: file
         url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/

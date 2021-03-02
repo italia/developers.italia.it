@@ -2,6 +2,7 @@
 title: Fatturazione Elettronica
 subtitle: Tra privati e verso la Pubblica Amministrazione
 logo: /assets/images/logo-fatturapa@2x.png
+external_website: https://www.fatturapa.gov.it
 payoff: La fatturazione elettronica verso lo Stato e tra privati
 description: >
   Un formato XML per descrivere una fattura: scopri come integrarlo nei tuoi software gestionali.

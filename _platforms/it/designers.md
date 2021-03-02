@@ -2,6 +2,7 @@
 title: Designers Italia
 subtitle: Il Design System della Pubblica Amministrazione Italiana
 logo: /assets/images/logo-design@2x.png
+external_website: https://designers.italia.it
 payoff: Designers dalla parte dei cittadini
 description: "Designers Italia è il punto di riferimento per la progettazione dei servizi della Pubblica Amministrazione: linee guida, strumenti, un design system e una community di designer per favorire la collaborazione e promuovere il ruolo dello human-centered design nello sviluppo dei servizi pubblici."
 lang: it
@@ -62,7 +63,7 @@ Il kit basato su Bootstrap 4 è il punto di riferimento per lo sviluppo dei prog
 * [Repository GitHub](https://github.com/italia/bootstrap-italia)
 * [Esempio di template base da cui partire](https://italia.github.io/bootstrap-italia/docs/esempi/template-vuoto/)
 
-Bootstrap Italia è già utilizzato su alcuni progetti con successo, come il [prototipo del sito del Comune di Cagliari](https://italia.github.io/design-comuni-prototipi/) e il sito [Docs Italia](https://docs.italia.it/). 
+Bootstrap Italia è già utilizzato su alcuni progetti con successo, come il [prototipo del sito del Comune di Cagliari](https://italia.github.io/design-comuni-prototipi/) e il sito [Docs Italia](https://docs.italia.it/).
 
 Altri progetti, come i siti per le scuole e i temi per i principali CMS (Wordpress, Drupal, Joomla, Plone, Entando, ecc.) e generatori di siti statici (Hugo, Jekyll, ecc.), sono in fase di valutazione o pianificazione. L'unico attualmente disponibile, per quanto ancora in lavorazione, è il [Tema Wordpress](https://github.com/italia/design-wordpress-theme/).
 

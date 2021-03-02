@@ -2,6 +2,7 @@
 title: CIE
 subtitle: Carta d'Identità Elettronica
 logo: /assets/images/logo-cie@2x.png
+external_website: https://www.cartaidentita.interno.gov.it
 payoff: Carta d'Identità Elettronica
 description: >
   La nuova CIE è molto più che un documento d'identità: grazie al microprocessore RF può essere letta da dispositivi NFC (es. smartphone) e usata per accedere ai varchi o per creare connessioni sicure (TLS) verso i servizi in rete.

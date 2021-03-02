@@ -2,6 +2,7 @@
 title: SPID
 subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/logo-spid@2x.png
+external_website: https://www.spid.gov.it
 payoff: Sistema Pubblico di Identità Digitale
 description: >
   Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.
@@ -56,7 +57,7 @@ resources:
       icon: github
       url: https://github.com/italia/spid-spring
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Java Spring
-    - title: Standalone SPID Proxy 
+    - title: Standalone SPID Proxy
       icon: github
       url: https://github.com/italia/Satosa-Saml2Spid
       desc: Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID

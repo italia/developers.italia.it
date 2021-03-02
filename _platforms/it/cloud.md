@@ -2,8 +2,9 @@
 title: Cloud Italia
 subtitle: Il Cloud della Pubblica Amministrazione italiana
 logo: /assets/images/logo-cloud-italia.png
+external_website: https://cloud.italia.it
 payoff: Il Cloud della Pubblica Amministrazione italiana
-description: Cloud Italia è il punto di riferimento per lo sviluppo del Cloud nella Pubblica Amministrazione italiana. 
+description: Cloud Italia è il punto di riferimento per lo sviluppo del Cloud nella Pubblica Amministrazione italiana.
 
 redirect_from: /it/devops
 lang: it
@@ -31,11 +32,11 @@ resources:
     - title: Cloud Marketplace
       icon: link
       url: https://cloud.italia.it/marketplace/
-      desc: Il catalogo dei servizi Cloud per la PA qualificati da AgID. 
+      desc: Il catalogo dei servizi Cloud per la PA qualificati da AgID.
     - title: Come ottenere le qualificazioni Cloud
       icon: link
       url: https://cloud.italia.it/marketplace/info
-      desc: Istruzioni e puntatori per le procedure di qualificazione dei servizi cloud. 
+      desc: Istruzioni e puntatori per le procedure di qualificazione dei servizi cloud.
     - title: Servizi cloud SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/

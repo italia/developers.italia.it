@@ -2,6 +2,7 @@
 title: IndicePA
 subtitle: Indice della Pubblica Amministrazione
 logo: /assets/images/logo-indicepa.png
+external_website: https://indicepa.gov.it
 payoff: Indice degli indirizzi delle pubbliche amministrazioni e dei gestori di pubblici servizi
 description: Base dati di interesse nazionale ai sensi dell’articolo 57-bis comma 1 del Codice dell'Amministrazione Digitale.
 lang: it
@@ -39,7 +40,7 @@ L'Indice delle Pubbliche Amministrazioni (IPA) è una base dati pubblica aliment
 a norma di legge (CAD), dalle Pubbliche Amministrazioni e dai Gestori di Pubblici Servizi e finalizzata a rendere noti:
 * l’indirizzo di PEC dei Gestori di Pubblici Servizi e delle Aree Organizzative Omogenee (uffici di protocollo)
   delle Pubbliche Amministrazioni, per favorire lo scambio di documenti informatici attraverso canali ufficiali;
-* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi, 
+* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi,
   per il corretto recapito delle fatture elettroniche.
 
 L'IPA rappresenta pertanto un censimento delle Pubbliche Amministrazioni e dei Gestori di Pubblici Servizi, accessibile a

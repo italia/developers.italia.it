@@ -2,7 +2,7 @@
 title: 18app and Carta Docente
 subtitle: Bonus culture and education
 logo: /assets/images/logo-18app-cartadocente@2x.png
-external_website: https://www.google.it
+external_website: https://www.18app.italia.it
 payoff: The platform where to spend the culture and education's bonus
 description: >
   If you are a business owner and want to integrate with the platform for validating the coupons, here you can find documentation and SDKs.

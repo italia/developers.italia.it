@@ -2,6 +2,7 @@
 title: CIE
 subtitle: Electronic Identity Card
 logo: /assets/images/logo-cie@2x.png
+external_website: https://www.cartaidentita.interno.gov.it
 payoff: Electronic Identity Card
 description: >
   The new electronic identity card is more than a simple piece of plastic: thanks to it RF microprocessor it can be read by NFC devices (such as a smartphone) and used for granting access to facilities or for creating secure connections (TLS) to network services.

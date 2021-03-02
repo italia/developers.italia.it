@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: I dati aperti della pubblica amministrazione
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: I dati aperti della pubblica amministrazione
 description: >
   Dati.gov.it e’ il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l’obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.

@@ -1,6 +1,7 @@
 ---
 title: ANPR
 logo: /assets/images/logo-anpr@2x.png
+external_website: https://www.anpr.interno.it
 subtitle: Anagrafe Nazionale della Popolazione Residente
 payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.
@@ -19,11 +20,11 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     hidden-inputs:
-        - 
+        -
           type: hidden
           name: group
           value: 16
-        - 
+        -
           type: hidden
           name: list
           value: 3
@@ -31,16 +32,16 @@ newsletterdata:
         -
           name: campo3
           options:
-            - 
+            -
               value: Cittadino
               valueid: Cittadino
-            - 
+            -
               value: Comune
               valueid: Comune
-            - 
+            -
               value: Software House
               valueid: SW_House
-            - 
+            -
               value: Altro
               valueid: ""
 abilitante: true
@@ -55,7 +56,7 @@ resources:
         - title: Documentazione tecnica e tabelle di riferimento
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
-          desc: 
+          desc:
     - SDK:
         - title: Client Java di esempio
           icon: github

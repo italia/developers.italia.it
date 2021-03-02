@@ -2,6 +2,7 @@
 title: pagoPA
 subtitle: Nodo di pagamento verso la Pubblica Amministrazione
 logo: /assets/images/logo-pagopa@2x.png
+external_website: https://www.pagopa.gov.it
 payoff: Nodo dei Pagamenti verso la Pubblica Amministrazione
 description: Un unico nodo di pagamento, con un'unica interfaccia verso il cittadino, per pagare dai tributi alla gita scolastica dei figli con carte di credito, bonifici o anche via app.
 lang: it
@@ -19,7 +20,7 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-pagoPA.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     inputs:
-        - 
+        -
           type: hidden
           name: list
           value: 5
@@ -36,19 +37,19 @@ resources:
       - title: Specifiche Attuative del Nodo dei Pagamenti-SPC
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/
-        desc: 
+        desc:
       - title: FAQ
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-docs-faq/
-        desc: 
+        desc:
       - title: Specifiche attuative dei codici identificativi di versamento, riversamento e rendicondazione
         icon: file
         url: https://docs.italia.it/italia/pagopa/pagopa-codici-docs/
-        desc: 
+        desc:
       - title: Linee guida pagamenti elettronici a favore delle pubbliche amministrazioni e dei gestori di pubblici servizi
         icon: file
         url: https://docs.italia.it/italia/pagopa/lg-pagopa-docs/
-        desc: 
+        desc:
       - title: Guida tecnica avviso analogico
         icon: file
         url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/

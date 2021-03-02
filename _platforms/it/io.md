@@ -2,6 +2,7 @@
 title: IO
 subtitle: L'app dei servizi pubblici
 logo: /assets/images/logo-io@2x.png
+external_website: https://io.italia.it
 payoff: L'app dei servizi pubblici
 description: io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
 

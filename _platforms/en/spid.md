@@ -2,6 +2,7 @@
 title: SPID
 subtitle: Public System for Digital Identity
 logo: /assets/images/logo-spid@2x.png
+external_website: https://www.spid.gov.it
 payoff: Public System for Digital Identity
 description: >
     SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.

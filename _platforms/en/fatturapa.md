@@ -2,6 +2,7 @@
 title: E-Invoicing
 subtitle: Between private entities and towards the Public Administration
 logo: /assets/images/logo-fatturapa@2x.png
+external_website: https://www.fatturapa.gov.it
 payoff: Eletronic invoicing between private entities and towards the Public Administration
 description: >
   An XML format to describe without ambiguity an invoice: discover how to integrate it in your software.

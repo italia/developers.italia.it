@@ -2,6 +2,7 @@
 title: Docs Italia
 subtitle: Public documents, made digital
 logo: /assets/images/logo-docs-italia.png
+external_website: https://docs.italia.it
 payoff: Public documents, made digital
 description: "Docs Italia is the tool for publishing technical and legal documents, offering to citizens the ability to read and comment easily"
 lang: en
@@ -25,7 +26,7 @@ A first relase of Docs Italia was completed during 2018, and more features are s
 
 **Roadmap**
 
-These are the main tasks scheduled for the near future: 
+These are the main tasks scheduled for the near future:
 
 * Improvement of the search engine based on **ElasticSearch** by adding the ability to filter by popularity, publisher, tags, projects.
 * Finalization of the **API** for getting data and metadata of documents.
@@ -49,7 +50,7 @@ Il codice sorgente di Docs Italia è diviso in alcuni repository a seconda del d
 - The [Docs Italia platform](https://github.com/italia/docs.italia.it), a fork of ReadTheDocs, written in Python and Django.
 - The [Ansible scripts](https://github.com/italia/docs-italia-deploy-scripts) for deploying the platform.
 
-### Converter 
+### Converter
 
 - The Django app with the [web converter](https://github.com/italia/docs-italia-convertitore-web).
 - [Pandoc filters](https://github.com/italia/docs-italia-pandoc-filters).
@@ -73,4 +74,4 @@ A special document is the **Docs Italia Guide**, which explains how each public 
 
 In the document you'll find the contacts of our tech writers who can help you in setting up the platform for your organization and writing or converting documents.
 
-More technical information can be found in the README files of single repositories, and in the [main repository wiki](https://github.com/italia/docs.italia.it/wiki). 
+More technical information can be found in the README files of single repositories, and in the [main repository wiki](https://github.com/italia/docs.italia.it/wiki).

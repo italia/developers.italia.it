@@ -2,6 +2,7 @@
 title: NoiPA
 subtitle: Servizi per il personale delle Pubbliche Amministrazioni
 logo: /assets/images/logo-noipa.png
+external_website: https://noipa.mef.gov.it
 payoff: NoiPA, servizi PA a Persone PA
 description: NoiPA è la piattaforma realizzata dal Dipartimento dell'Amministrazione Generale del personale e dei servizi (DAG) del Ministero dell'Economia e delle Finanze (MEF) per la gestione del personale della PA. Il sistema lavora ogni giorno per essere al fianco delle Pubbliche Amministrazioni, seguendo passo dopo passo tutti gli aspetti legati alla gestione del personale.
 lang: it
@@ -64,10 +65,10 @@ Seguendo le linee guida dell’AgID, il nuovo NoiPA è strutturato usando il par
 oggetto di attenzione da parte delle Amministrazioni Pubbliche perché, migliorando l’efficienza operativa, consente il
 raggiungimento di significative economie di scala.
 
-Lo sviluppo del nuovo sistema ha fatto leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle 
-competenze acquisite attraverso la gestione di una parte rilevante del personale della PA, sulla pre-esistenza di sistemi 
-conoscitivi evoluti. La creazione di un sistema unico centralizzato di gestione del personale ha determinato una riduzione dei costi per 
-l’erogazione del servizio, anche grazie alle economie di scala generate dall’ampliamento del numero delle amministrazioni 
+Lo sviluppo del nuovo sistema ha fatto leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle
+competenze acquisite attraverso la gestione di una parte rilevante del personale della PA, sulla pre-esistenza di sistemi
+conoscitivi evoluti. La creazione di un sistema unico centralizzato di gestione del personale ha determinato una riduzione dei costi per
+l’erogazione del servizio, anche grazie alle economie di scala generate dall’ampliamento del numero delle amministrazioni
 servite.
 
 Il sistema è progettato intorno all’utente, garantendo una piena flessibilità e personalizzazione dell’operatività.
