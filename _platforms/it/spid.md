@@ -188,7 +188,7 @@ SPID è basato sul protocollo SAML2, quindi l'integrazione può avvenire con mol
 
 - integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in Developers Italia;
 - applicando al web server un middleware come Shibboleth;
-- aggiungendo un componente esterno di Identity Access Management.
+- aggiungendo un componente esterno di Identity Access Management come un Proxy Standalone.
 
 In aggiunta, è necessario integrare nel sito il bottone ufficiale "[Entra con SPID](https://github.com/italia/spid-sp-access-button)", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una *AuthnRequest* che viene poi inviata all'Identity Provider attraverso un HTTP Redirect o POST del browser.
 
@@ -197,4 +197,4 @@ Il Service Provider deve aggiornare periodicamente i metadati degli Identity Pro
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
 
-**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi.
+**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto informale e di aiuto integrativo per gli sviluppatori.
