@@ -114,6 +114,6 @@ all’indagine, offrendo il loro tempo e la loro disponibilità e speriamo, graz
 a quanto appreso, di poter concretizzare presto nuove attività a supporto della
 community.
 
-Non fai ancora parte della community di Developers Italia? Scopri come partecipare!
+Non fai ancora parte della community di Developers Italia? Scopri [come partecipare](https://developers.italia.it/it/come-partecipo)!
 
 Il Team Developers Italia
