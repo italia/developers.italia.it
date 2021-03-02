@@ -2,6 +2,7 @@
 title: 18app e Carta Docente
 subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
+external_website: https://www.google.it
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
   Se sei un esercente e vuoi integrarti con la piattaforma via API per validare i coupon, puoi trovare qui documentazione e SDK.

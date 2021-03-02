@@ -78,6 +78,8 @@ it:
     newsletter_text: Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) che ti aiuterà a rimanere in contatto con noi.
     newsletter_privacy: Accetto la
     newsletter_submit: Iscriviti
+    website: Sito web
+    go_to_website: Vai al sito web
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -326,6 +328,8 @@ en:
     newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     newsletter_privacy: Accetto la
     newsletter_submit: Subscribe
+    website: Website
+    go_to_website: Go to the website
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need

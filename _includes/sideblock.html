@@ -3,6 +3,11 @@
     {% if include.image %}
     <img alt="" src="{{ include.image }}" style="max-width: 100%; margin-bottom: 10px">
     {% endif %}
+    {% if include.external_website %}
+    <div class="mb-3">
+      <a href="{{ include.external_website }}" class="project__resources-itemtitle">{{ t.go_to_website }}</a>
+    </div>
+    {% endif %}
 
     {{ include.content }}
   </div>
