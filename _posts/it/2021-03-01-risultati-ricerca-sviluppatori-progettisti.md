@@ -43,7 +43,7 @@ In totale, nonostante il questionario fosse disponibile dal 15 al 29 dicembre,
 e quindi nel pieno delle festività natalizie, sono state raccolte 329 risposte.
 
 Riportiamo di seguiti i principali risultati emersi dalla ricerca e rimandiamo
-per maggiori approfondimenti all’[esaustivo articolo](https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76) di Designers Italia (da cui
+per maggiori approfondimenti all’[esaustivo articolo](https://medium.com/designers-italia/il-valore-della-community-per-designers-italia-e-developers-italia-bd486dff2a6d) di Designers Italia (da cui
 abbiamo tratto quanto segue), che ringraziamo per il prezioso aiuto e sostegno
 in questa attività di ricerca.
 
@@ -107,7 +107,7 @@ intraprendere azioni migliorative.
 
 Le informazioni rilevate sono ancora tante e di sicuro interesse, per questo,
 vi consigliamo nuovamente di approfondire leggendo l’[articolo di Designers
-Italia](https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76).
+Italia](https://medium.com/designers-italia/il-valore-della-community-per-designers-italia-e-developers-italia-bd486dff2a6d).
 
 Cogliamo questa occasione per ringraziare quanti hanno collaborato
 all’indagine, offrendo il loro tempo e la loro disponibilità e speriamo, grazie
