@@ -16,7 +16,7 @@ layout: platform
 
 OTELLO è la piattaforma dell'[Agenzia delle Dogane e dei Monopoli](https://www.agenziadoganemonopoli.gov.it/) che gestisce il processo che consente ai soggetti extra-UE di ottenere lo sgravio diretto o il rimborso dell'IVA sui beni acquistati sul territorio italiano.
 
-Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione delle cose per ottenere il visto doganale.
+Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione dei passaggi per ottenere il visto doganale.
 
 Dal *1° settembre 2018* è entrato in vigore un processo _full digital_ che prevede l'emissione elettronica della fattura tax free, con il caricamento immediato in OTELLO 2.0. Tale processo mette i dati automaticamente a disposizione dell'Agenzia dell'Entrate, e di conseguenza anche gli adempimenti della stessa Agenzia sono assolti automaticamente.
 
