@@ -15,7 +15,7 @@ redirect_from:
 ---
 
 Presentati i risultati della ricerca quali-quantitativa condotta con gli utenti
-di [Forum Italia](https://forum.italia.it) e dei [canali Slack](https://app.slack.com/client/T6C27AXE0#/) dedicati a progettisti e sviluppatori dei
+di [Forum Italia](https://forum.italia.it) e dei [canali Slack](https://slack.developers.italia.it) dedicati a progettisti e sviluppatori dei
 servizi pubblici digitali del sistema Paese. Lo avevamo anticipato qualche
 settimana fa [proprio su questo
 sito](https://developers.italia.it/it/news/2020/12/15/al-via-survey-community)
