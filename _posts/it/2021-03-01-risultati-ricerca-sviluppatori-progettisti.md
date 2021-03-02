@@ -15,7 +15,7 @@ redirect_from:
 ---
 
 Presentati i risultati della ricerca quali-quantitativa condotta con gli utenti
-di Forum Italia e dei canali Slack dedicati a progettisti e sviluppatori dei
+di [Forum Italia](https://forum.italia.it) e dei [canali Slack](https://app.slack.com/client/T6C27AXE0#/) dedicati a progettisti e sviluppatori dei
 servizi pubblici digitali del sistema Paese. Lo avevamo anticipato qualche
 settimana fa [proprio su questo
 sito](https://developers.italia.it/it/news/2020/12/15/al-via-survey-community)
@@ -26,12 +26,12 @@ più ampia.
 Si tratta di un’analisi realizzata insieme al team di [Designers
 Italia](https://designers.italia.it/) al fine di confermare l’efficacia delle
 iniziative messe in campo per intercettare, con uno sguardo rivolto al futuro,
-le necessità delle PA di fronte alle sfide della transizione digitale.
-In particolare ci interessava delineare la tipologia dei partecipanti delle
+le necessità delle PA di fronte alle sfide della **transizione digitale**.
+In particolare ci interessava delineare la **tipologia dei partecipanti** delle
 community di Designers Italia e Developers Italia ed elaborare le informazioni
-sulla percezione attuale delle piattaforme e dei servizi offerti al loro
-interno. Non solo: valutare l’attuale utilizzo e l’efficacia dei canali di
-comunicazione e partecipazione, comprendere i bisogni degli utenti per
+sulla **percezione attuale delle piattaforme e dei servizi offerti** al loro
+interno. Non solo: valutare l’attuale **utilizzo e l’efficacia dei canali di
+comunicazione** e partecipazione, **comprendere i bisogni degli utenti** per
 indirizzare al meglio investimenti e progettualità future e infine raccogliere
 informazioni sull’uso degli strumenti come i kit di Designers Italia, le Linee
 Guida, il [Catalogo del riuso](https://developers.italia.it/it/software)
@@ -43,7 +43,7 @@ In totale, nonostante il questionario fosse disponibile dal 15 al 29 dicembre,
 e quindi nel pieno delle festività natalizie, sono state raccolte 329 risposte.
 
 Riportiamo di seguiti i principali risultati emersi dalla ricerca e rimandiamo
-per maggiori approfondimenti all’esaustivo articolo di Designers Italia (da cui
+per maggiori approfondimenti all’[esaustivo articolo](https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76) di Designers Italia (da cui
 abbiamo tratto quanto segue), che ringraziamo per il prezioso aiuto e sostegno
 in questa attività di ricerca.
 
@@ -87,7 +87,7 @@ Grazie a tecniche di analisi e di clustering, è stato possibile individuare una
 serie di parole chiave utilizzate dai partecipanti per descrivere Designers
 Italia e Developers Italia, sia in termini progettuali sia qualitativi. Ad
 esempio le finalità di Developers Italia sono state indicate dai partecipanti
-in maniera molto precisa, e rispondono agli obiettivi di
+in maniera molto precisa, e rispondono agli obiettivi di:
 
 * diffondere buone pratiche di progettazione/sviluppo di servizi;
 * promuovere lo sviluppo e l’adozione di software open source all’interno della PA;
@@ -97,8 +97,8 @@ in maniera molto precisa, e rispondono agli obiettivi di
 * incrementare la trasparenza dell’azione amministrativa.
 
 Developers Italia è descritto inoltre come “un progetto ambizioso”, che
-favorisce le sinergie di più figure professionali, come la collaborazione tra
-designer e sviluppatori. “Trasparenza”, “innovazione”, “apertura” e “qualità”
+favorisce le sinergie di più figure professionali, come la **collaborazione tra
+designer e sviluppatori**. “Trasparenza”, “innovazione”, “apertura” e “qualità”
 sono le parole utilizzate maggiormente per delineare le sue peculiarità
 positive, mentre “confuso”, “ancora non consolidato” e “difficile da capire”
 sono gli attributi che ne denotano le aree dove migliorare.
@@ -106,8 +106,8 @@ Si tratta di elementi rilevanti che ci aiutano a definire verso quale direzione
 intraprendere azioni migliorative.
 
 Le informazioni rilevate sono ancora tante e di sicuro interesse, per questo,
-vi consigliamo nuovamente di approfondire leggendo l’articolo di Designers
-Italia.
+vi consigliamo nuovamente di approfondire leggendo l’[articolo di Designers
+Italia](https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76).
 
 Cogliamo questa occasione per ringraziare quanti hanno collaborato
 all’indagine, offrendo il loro tempo e la loro disponibilità e speriamo, grazie
