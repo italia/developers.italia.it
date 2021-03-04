@@ -30,7 +30,7 @@ Our aim is to evolve the current online portal of open data to a system that pro
 
 As with all the projects of Developers Italia, the portal of open data follows a development model based on a collaborative process  which is typical of the community of developers. The tools that we want to use to structure the development process are:
 
-  * A development roadmap agile and public
+  * A public development roadmap
   * Source code open from the start
   * A public tracking system of the errors
   * Clear documentation of the code and the API
@@ -64,4 +64,3 @@ We have already open a mailing list to debate about data and open data, so there
 [Issue tracking](https://github.com/italia/dati.gov.it/issues)
 
 [Development roadmap](https://github.com/italia/dati.gov.it/projects)
-
