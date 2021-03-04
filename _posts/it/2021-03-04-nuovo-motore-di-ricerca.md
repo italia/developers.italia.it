@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Obiettivo: miglioramento continuo
+title:  Obiettivo miglioramento continuo
 subtitle: Ottimizzato il motore di ricerca del sito di Developers Italia e del Catalogo del software della PA
 date: 2021-03-04 10:00:00 +0100
 tags: community sviluppo developers opensource software react
