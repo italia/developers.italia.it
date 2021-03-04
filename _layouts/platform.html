@@ -30,7 +30,7 @@ Still to-do:
         </div>
         <div class="project__actors row">
           {% if page.owners %}
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <span class="d-block">{{t.project_owner}}</span>
             <ul class="list-unstyled">
               {% for owner in page.owners %}
@@ -40,7 +40,7 @@ Still to-do:
           </div>
           {% endif %}
           {% if page.managers %}
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <span class="d-block">{{t.project_manager}}</span>
             <ul class="list-unstyled">
               {% for manager in page.managers %}
@@ -50,7 +50,7 @@ Still to-do:
           </div>
           {% endif %}
           {% if page.external_website %}
-          <div class="col-4">
+          <div class="col-12 col-lg-4 text-truncate">
             <span class="d-block">{{t.website}}</span>
             <a href="{{ page.external_website }}" target="_blank">{{ page.external_website }}</a>
           </div>
