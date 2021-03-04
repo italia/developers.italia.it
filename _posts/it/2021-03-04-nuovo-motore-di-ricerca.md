@@ -24,7 +24,7 @@ La nuova componente permette di ricercare tra i numerosi contenuti del sito
 suddivisi nelle seguenti categorie: [software
 a riuso](https://developers.italia.it/it/search?type=software_reuse), [software
 open source](https://developers.italia.it/it/search?type=software_open),
-[API](https://developers.italia.it/it/api) e [amministrazioni
+[API](https://developers.italia.it/it/api) e [Amministrazioni
 cedenti](https://developers.italia.it/it/pa). Operativamente è stato eseguito
 un refactoring del codice sorgente introducendo React.js in sostituzione ad un
 insieme di librerie di più difficile gestione e manutenzione. A ciò si aggiunge
