@@ -26,7 +26,7 @@ In vista di tale scadenza è già disponibile un ambiente di test che consente a
 
 ## Documentazione
 
-La documentazione tecnica per l'integrazione con OTELLO 2.0 e i riferimenti dell'ambiente di test sono disponibili nel [sito dell'Agenzia delle Dogane](https://www.agenziadoganemonopoli.gov.it/portale/o.t.e.l.l.o.-2.0).
+La documentazione tecnica per l'integrazione con OTELLO 2.0 e i riferimenti dell'ambiente di test sono disponibili nel [sito dell'Agenzia delle Dogane](https://www.adm.gov.it/portale/informazioni-tecniche3).
 
 ## Risorse
 
