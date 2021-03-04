@@ -2,7 +2,7 @@
   <div class="sideblock">
     {% if include.image %}
     <a href="{{ include.external_website }}" target="_blank">
-      <img alt="" src="{{ include.image }}" style="max-width: 100%; margin-bottom: 10px">
+      <img alt="{{t.go_to_website}} {{ include.external_website }}" src="{{ include.image }}" style="max-width: 100%; margin-bottom: 10px">
     </a>
     {% endif %}
 
