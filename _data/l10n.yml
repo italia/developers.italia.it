@@ -329,7 +329,7 @@ en:
     newsletter_privacy: Accetto la
     newsletter_submit: Subscribe
     website: Website
-    go_to_website: Go to the website
+    go_to_website: Go to website
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need
@@ -496,4 +496,3 @@ The ranges of every measure can be found in the [vitality-ranges.yml](https://gi
       page_not_found: Page not found!
       internal_error: Internal Server Error
       forbidden: Forbidden!
-
