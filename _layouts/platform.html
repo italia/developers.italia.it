@@ -34,7 +34,7 @@ Still to-do:
             <span class="d-block">{{t.project_owner}}</span>
             <ul class="list-unstyled">
               {% for owner in page.owners %}
-              <li><a href="{{owner.url}}">{{owner.name}}</a></li>
+              <li><a href="{{owner.url}}" target="_blank">{{owner.name}}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -44,7 +44,7 @@ Still to-do:
             <span class="d-block">{{t.project_manager}}</span>
             <ul class="list-unstyled">
               {% for manager in page.managers %}
-              <li><a href="{{manager.url}}">{{manager.name}}</a></li>
+              <li><a href="{{manager.url}}" target="_blank">{{manager.name}}</a></li>
               {% endfor %}
             </ul>
           </div>
