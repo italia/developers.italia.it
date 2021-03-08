@@ -42,9 +42,9 @@ resources:
 
 E-invoicing, which was initially only for the Public Administration, became mandatory for all invoices between private companies and entities since January 1st, 2019.
 
-Official documentation, including technical rules, is available in the official website of the [Italian Revenue Agency](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica).
+Official documentation, including technical rules, is available in the official website of the [Italian Revenue Agency](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica){:target="_blank"}.
 
 Developers Italia provides communication channels and collaboration tools for developers in order to help them integrate it in their software. The forum and the Slack channel are not official helpdesk channels because they are not monitored by the Revenue Agency or Sogei.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM"><i class="it-comment" /> Chat on Slack (#fatturapa)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Chat on Slack (#fatturapa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>

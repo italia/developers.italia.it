@@ -15,7 +15,7 @@ layout: platform
 
 ## Intro
 
-OTELLO è la piattaforma dell'[Agenzia delle Dogane e dei Monopoli](https://www.agenziadoganemonopoli.gov.it/) che gestisce il processo che consente ai soggetti extra-UE di ottenere lo sgravio diretto o il rimborso dell'IVA sui beni acquistati sul territorio italiano.
+OTELLO è la piattaforma dell'[Agenzia delle Dogane e dei Monopoli](https://www.agenziadoganemonopoli.gov.it/){:target="_blank"} che gestisce il processo che consente ai soggetti extra-UE di ottenere lo sgravio diretto o il rimborso dell'IVA sui beni acquistati sul territorio italiano.
 
 Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione delle cose per ottenere il visto doganale.
 
@@ -25,7 +25,7 @@ In vista di tale scadenza è già disponibile un ambiente di test che consente a
 
 ## Documentazione
 
-La documentazione tecnica per l'integrazione con OTELLO 2.0 e i riferimenti dell'ambiente di test sono disponibili nel [sito dell'Agenzia delle Dogane](https://www.agenziadoganemonopoli.gov.it/portale/o.t.e.l.l.o.-2.0).
+La documentazione tecnica per l'integrazione con OTELLO 2.0 e i riferimenti dell'ambiente di test sono disponibili nel [sito dell'Agenzia delle Dogane](https://www.agenziadoganemonopoli.gov.it/portale/o.t.e.l.l.o.-2.0){:target="_blank"}.
 
 ## Risorse
 

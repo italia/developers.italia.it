@@ -118,7 +118,7 @@ resources:
 
 ## Intro
 
-La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it)
+La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) versione 3.0 viene già **distribuita in oltre il 90% del territorio italiano** a chiunque chieda o rinnovi la carta d'identità.
 
 La CIE non è solo un documento d’identità, ma una tecnologia utile per la
@@ -144,8 +144,8 @@ Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
 e sicurezza contenute nel microprocessore, le cui specifiche sono
 aperte e disponibili anche in questa pagina.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/cie"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411"><i class="it-comment" /> Dialoga su Slack (#cie)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Dialoga su Slack (#cie)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
 
 ## Dati presenti sulla carta
 
@@ -156,6 +156,6 @@ La CIE contiene le seguenti informazioni, che sono accessibili secondo diverse m
 - **Dati accessibili con PIN:** certificato client
 - **Dati accessibili solo a forze dell’ordine:** impronte digitali
 
-Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing). Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
+Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
 
 ![](/assets/images/cie/cie_detail.png)

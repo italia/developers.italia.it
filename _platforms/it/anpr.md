@@ -1,7 +1,7 @@
 ---
 title: ANPR
 logo: /assets/images/logo-anpr@2x.png
-external_website: https://www.anpr.interno.it
+external_website: https://www.anpr.interno.it/portale/
 subtitle: Anagrafe Nazionale della Popolazione Residente
 payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.
@@ -68,7 +68,7 @@ resources:
 
 <!-- **Vuoi avere aggiornamenti su ANPR? Iscriviti alla [newsletter di ANPR](#newsletter).** -->
 
-[ANPR](https://anpr.interno.it/) è un progetto storico: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
+[ANPR](https://www.anpr.interno.it/portale/){:target="_blank"} è un progetto storico: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con ANPR, tutto cambia.
@@ -79,5 +79,5 @@ Ad oggi l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai softw
 
 Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un *issue tracker* e un forum dedicato alla discussione delle problematiche di integrazione.
 
-<a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><i class="it-github" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><i class="it-horn" /> Entra nel forum</a>

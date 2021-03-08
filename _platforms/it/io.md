@@ -33,8 +33,8 @@ Le API di comunicazione forniscono un unico canale che la Pubblica Amministrazio
 
 ### Documentazione e risorse
 
-* [Utilizzo delle API](https://developer.io.italia.it/openapi.html)
-* [Repository GitHub](https://github.com/pagopa/io-app)
-* [Come contribuire](https://github.com/pagopa/io/blob/master/CONTRIBUTING.it.md)
+* [Utilizzo delle API](https://developer.io.italia.it/openapi.html){:target="_blank"}
+* [Repository GitHub](https://github.com/pagopa/io-app){:target="_blank"}
+* [Come contribuire](https://github.com/pagopa/io/blob/master/CONTRIBUTING.it.md){:target="_blank"}
 
-Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X) sullo [Slack di Developers Italia](https://slack.developers.italia.it)
+Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X){:target="_blank"} sullo [Slack di Developers Italia](https://slack.developers.italia.it){:target="_blank"}

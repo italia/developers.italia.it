@@ -180,9 +180,9 @@ SPID can be integrated in the websites of the Public Administration, but also on
 ## How to become a Service Provider
 
 1. Read the technical docs and use the open source components you can find in Developers Italia.
-2. Use the [test Identity Provider](https://github.com/italia/spid-testenv2) for simulating the authentication process and verifying that your implementation is correct.
-3. Get in touch with other developers via [Slack](https://slack.developers.italia.it/).
-4. Follow the accreditation procedore described in the [AGID website](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid).
+2. Use the [test Identity Provider](https://github.com/italia/spid-testenv2){:target="_blank"} for simulating the authentication process and verifying that your implementation is correct.
+3. Get in touch with other developers via [Slack](https://slack.developers.italia.it/){:target="_blank"}.
+4. Follow the accreditation procedore described in the [AGID website](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
 
 SPID is based on the SAML2 protocol, thus the integration can be done in several ways:
 
@@ -194,9 +194,9 @@ In addition, the "Enter with SPID" official button must be included in the Servi
 
 The Service Provider must update the Identity Provider metadata whenever they are added, removed or when their certificates are updated. This update must be reflected in the "Enter with SPID" button too.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment" /> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
 
-In addition, a [public issue tracker](https://github.com/italia/spid/issues) is available.
+In addition, a [public issue tracker](https://github.com/italia/spid/issues){:target="_blank"} is available.
 
-**The Developers Italia community developed a large amount of open source components (SDK, examples of code) ready to use, and it also developed the test Identity Provider.** Anyone can contribute to the improvement of such components or to the development of new ones (see the [roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap)).
+**The Developers Italia community developed a large amount of open source components (SDK, examples of code) ready to use, and it also developed the test Identity Provider.** Anyone can contribute to the improvement of such components or to the development of new ones (see the [roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap){:target="_blank"}).
