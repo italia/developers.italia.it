@@ -9,11 +9,6 @@
             {% endif %}
             {% include set-tag.html tag=tag deactive=deactive %}
 
-
-            {% assign division5 = forloop.index | modulo:5 %}
-            {% if division5==0 %}
-            <div class="w-100"></div>
-            {% endif %}
             {% endfor %}
         </ul>
 
