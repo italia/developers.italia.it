@@ -69,16 +69,10 @@ resources:
 
 <!-- **Do you want to stay up-to-date? Subscribe to the ANPR [newsletter](#newsletter).** -->
 
-ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire
-national territory (in evey municipality), Italy will have finally a single centralised registry
-which will simplify all the interactions with the Public Administration.
-
-In the future we hope to provide more features like update your residency's address or download a
-Family Status Declaration straight from the website.
-
-This is only the beginning: did you ever asked yourself why you need to request certificates at the
+Did you ever asked yourself why you need to request certificates at the
 registry in your municipality? Simple: at today a single centralised registry where the public
-offices can access your information doesn't exists at all. With ANPR it will completely different.
+offices can access your information doesn't exists at all. With [ANPR](https://anpr.interno.it/) it will completely different: ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire national territory (in evey municipality), Italy will have finally a single centralised registry which will simplify all the interactions with the Public Administration.
+With ANPR we may provide more features in the future like update your residence address or download a Family Status Declaration straight from the website.
 
 At today the access to the ANPR is reserved only to the public administration and their software.
 So this section is dedicated to everyone is giving support to municipalities to migrate to ANPR and

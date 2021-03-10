@@ -67,10 +67,8 @@ resources:
 
 <!-- **Vuoi avere aggiornamenti su ANPR? Iscriviti alla [newsletter di ANPR](#newsletter).** -->
 
-[ANPR](https://anpr.interno.it/) è un progetto storico: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
-In futuro speriamo di potervi dare funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
-
-Ma questo è solo l'inizio: avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con ANPR, tutto cambia.
+Avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con [ANPR](https://anpr.interno.it/) tutto cambia: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
+Questo aprirà le porte a possibili nuove funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Ad oggi l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante.
 
