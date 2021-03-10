@@ -92,3 +92,4 @@ discuss all the problems on integrating ANPR.
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ"><i class="it-comment" /> Chat on Slack (#anpr)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>

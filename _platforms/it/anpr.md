@@ -19,11 +19,11 @@ newsletterdata:
     privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
     action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
     hidden-inputs:
-        - 
+        -
           type: hidden
           name: group
           value: 16
-        - 
+        -
           type: hidden
           name: list
           value: 3
@@ -31,16 +31,16 @@ newsletterdata:
         -
           name: campo3
           options:
-            - 
+            -
               value: Cittadino
               valueid: Cittadino
-            - 
+            -
               value: Comune
               valueid: Comune
-            - 
+            -
               value: Software House
               valueid: SW_House
-            - 
+            -
               value: Altro
               valueid: ""
 abilitante: true
@@ -55,7 +55,7 @@ resources:
         - title: Documentazione tecnica e tabelle di riferimento
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
-          desc: 
+          desc:
     - SDK:
         - title: Client Java di esempio
           icon: github
@@ -80,3 +80,4 @@ Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui 
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><i class="it-github" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ"><i class="it-comment" /> Dialoga su Slack (#anpr)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
