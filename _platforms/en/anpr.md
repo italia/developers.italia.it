@@ -58,7 +58,7 @@ resources:
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
           desc:
-    - SDK:
+    - Examples:
         - title: Example Java client
           icon: github
           url: https://github.com/italia/anpr-client-example
@@ -74,10 +74,23 @@ registry in your municipality? Simple: at today a single centralised registry wh
 offices can access your information doesn't exists at all. With [ANPR](https://anpr.interno.it/) it will completely different: ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire national territory (in evey municipality), Italy will have finally a single centralised registry which will simplify all the interactions with the Public Administration.
 With ANPR we may provide more features in the future like update your residence address or download a Family Status Declaration straight from the website.
 
+## Working with ANPR
+
 At today the access to the ANPR is reserved only to the public administration and their software.
 So this section is dedicated to everyone is giving support to municipalities to migrate to ANPR and
 is helping us to fulfill our vision. There's a lot of work to do and the contribution of the
 community is important.
+
+ANPR provides a test environment that municipalities can use to:
+
+- verify the software developed by the Municipality for the extraction of data from the municipal registry and their sending to ANPR (takeover test);
+- learn how the Web Application works (both WA and WA integrated);
+- verify the operation of their management system integrated with the services of ANPR (WS);
+- verify the alignment of their local service databases (integrated WA and WS).
+
+To work with ANPR, it's important to set up certificates with test credentials on first use. To obtain test credentials, please fill out the form at [https://anpr-test.bobuild.com/request](https://anpr-test.bobuild.com/request).
+
+For technical specifications, service documentation and the guide to the migration process for municipalities, please refer to the [Technical documentation and reference tables](https://docs.italia.it/italia/anpr/anpr/).
 
 ## Collaboration
 

@@ -56,7 +56,7 @@ resources:
           icon: file
           url: https://docs.italia.it/italia/anpr/anpr/
           desc:
-    - SDK:
+    - Esempi:
         - title: Client Java di esempio
           icon: github
           url: https://github.com/italia/anpr-client-example
@@ -70,7 +70,21 @@ resources:
 Avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con [ANPR](https://anpr.interno.it/) tutto cambia: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 Questo aprirà le porte a possibili nuove funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
 
-Ad oggi l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione. C'è ancora molto da fare e il contributo di tutti è importante.
+
+## Lavorare con ANPR
+
+Ad oggi l'accesso ad ANPR è riservato solo agli operatori anagrafici e ai software delle anagrafi comunali. Questa sezione è quindi dedicata a tutti coloro che stanno supportando i comuni nella fase di passaggio ad ANPR e ci stanno aiutando a realizzare questa visione.
+
+ANPR prevede un ambiente di test che i Comuni possono utilizzare per:
+
+- verificare il software sviluppato dal Comune per l’estrazione dei dati dall’anagrafe comunale e il loro invio ad ANPR (test del subentro);
+- apprendere le modalità di funzionamento della Web Application (WA e WA integrata);
+- verificare il funzionamento del proprio sistema gestionale integrato con i servizi di ANPR (WS);
+- verificare l’allineamento delle proprie basi dati locali di servizio (WA integrata e WS).
+
+Per lavorare con ANPR, è importante impostare, al primo utilizzo, i certificati con le credenziali di test. Per ottenere delle credenziali di test, si prega di compilare il modulo all'indirizzo [https://anpr-test.bobuild.com/request](https://anpr-test.bobuild.com/request).
+
+Per le specifiche tecniche la documentazioni dei servizi e la guida al processo di migrazione per i comuni si faccia riferimento alla [Documentazione tecnica e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/).
 
 ## Canali
 
