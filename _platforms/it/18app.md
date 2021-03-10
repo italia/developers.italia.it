@@ -45,17 +45,26 @@ viene assegnato un bonus economico (€500) a determinate categorie di persone
 spendere con specifici vincoli (in cultura e formazione) presso esercenti
 accreditati.
 
-I beneficiari si identificano tramite [SPID](/it/spid), e possono poi utilizzare una
-responsive web application (quindi anche da smartphone) per spendere il
+I beneficiari si identificano tramite [SPID](/it/spid), e possono poi utilizzare
+una responsive web application (quindi anche da smartphone) per spendere il
 proprio portafoglio virtuale creandosi dei buoni sconto (QRCode e codice
 alfanumerico), utilizzabili presso gli esercenti convenzionati, che rientrano
 in due categorie: esercenti fisici o esercenti online. L'esercente, verificato
 che il coupon è valido, effettua lo sconto per l'acquirente, e poi
 successivamente emette fattura verso lo Stato per recuperare l'importo scontato.
 
+## Validazione dei coupon
+
 Per validare un coupon, l'esercente può collegarsi via API al sistema di
 backend, effettuando quindi una integrazione con il proprio sistema di cassa,
-oppure manualmente tramite una semplice web form.
+oppure manualmente tramite una semplice web form. Per consumare il web service
+di verifica del voucher, ogni esercente dovrà essere
+dotato di un certificato di autenticazione da installare nel proprio client del
+servizio e da utilizzare nella chiamata SOAP per effettuare l’autenticazione in
+modalità SSL con certificato client. Per maggiori informazioni consulatre la
+[sezione dedicata nella Guida per gli esercenti](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
+
+## Contatti
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
@@ -67,7 +76,7 @@ Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canal
 
 ## App nativa
 
-In Developers Italia è in corso lo sviluppo una app nativa per 18app.
+In Developers Italia è in corso lo sviluppo di una app nativa per 18app.
 
 - [Scheda nel catalogo del software](/it/software/m_bac-italia-18app)
 - [Repository GitHub](https://github.com/italia/18app)

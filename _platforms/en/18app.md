@@ -43,7 +43,14 @@ resources:
 
 Users enter with their [SPID digital identity](/en/spid) into a web application that allows them to create coupons (identified by an alphanumeric code and a QR code) of arbitrary amounts, that can be later spent in the accredited stores, which can be either physical or online. At the payment stage, merchants verify that the supplied coupon is valid and subtract their value from the due amount. They will emit an invoice to the State in order to be reimbursed.
 
-In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software.
+## Validate a coupon
+
+In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software. Merchants must be
+equipped with an authentication certificate to be installed in your client of the
+service and use it in the SOAP call. For more information consult the
+[dedicated section in the Guide for merchants](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
+
+## Contacts
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
