@@ -4,7 +4,8 @@ subtitle: Il Cloud della Pubblica Amministrazione italiana
 logo: /assets/images/logo-cloud-italia.png
 payoff: Il Cloud della Pubblica Amministrazione italiana
 description: Cloud Italia è il punto di riferimento per lo sviluppo del Cloud nella Pubblica Amministrazione italiana.
-
+ref:
+  en: /en/cloud
 redirect_from: /it/devops
 lang: it
 order: 4

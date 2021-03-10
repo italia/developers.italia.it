@@ -4,7 +4,8 @@ subtitle: The Cloud of the Italian Public Administration
 logo: /assets/images/logo-cloud-italia.png
 payoff: The Cloud of the Italian Public Administration
 description: Cloud Italia is the main source for the development of cloud computing in the digital infrastructures of the Italian public sector.
-
+ref:
+  it: /it/cloud
 lang: en
 order: 4
 highlight: false
@@ -30,11 +31,11 @@ resources:
     - title: Cloud Marketplace
       icon: link
       url: https://cloud.italia.it/marketplace/
-      desc: Cloud services for the PA certified by AgID. 
+      desc: Cloud services for the PA certified by AgID.
     - title: Cloud certification how-to
       icon: link
       url: https://cloud.italia.it/marketplace/info
-      desc: AgID cloud services certification how-to and links. 
+      desc: AgID cloud services certification how-to and links.
     - title: SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
