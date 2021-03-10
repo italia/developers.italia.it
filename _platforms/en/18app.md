@@ -26,6 +26,9 @@ resources:
           url: https://docs.italia.it/italia/18app/18app-esercenti-docs/
           desc: Documentation for merchants who are interested in validating coupons via API
     - SDK:
+        - title: Python example
+          icon: github
+          url: https://github.com/italia/18app-python-example
         - title: SDK for Java
           icon: github
           url: https://github.com/italia/18app-java-sdk
