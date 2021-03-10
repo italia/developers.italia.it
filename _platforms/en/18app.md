@@ -53,7 +53,7 @@ equipped with an authentication certificate to be installed in your client of th
 service and use it in the SOAP call. For more information consult the
 [dedicated section in the Guide for merchants](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
 
-## Contacts
+## Collaboration
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>

@@ -67,7 +67,7 @@ servizio e da utilizzare nella chiamata SOAP per effettuare l’autenticazione i
 modalità SSL con certificato client. Per maggiori informazioni consulatre la
 [sezione dedicata nella Guida per gli esercenti](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
 
-## Contatti
+## Canali
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
