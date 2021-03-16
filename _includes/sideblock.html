@@ -4,7 +4,7 @@
     {% if include.external_website %}
     <a href="{{ include.external_website }}" target="_blank">
     {% endif %}
-      <img alt="{{t.go_to_website}} {{ include.external_website }}" src="{{ include.image }}" style="max-width: 100%; margin-bottom: 10px">
+      <img alt="{{ include.title }} {{t.website}}" src="{{ include.image }}" style="max-width: 100%; margin-bottom: 10px">
     {% if include.external_website %}
     </a>
     {% endif %}
