@@ -55,3 +55,9 @@ Le informazioni dell'IPA sono utilizzate ad esempio come riferimento dal Ministe
 l'individuazione delle Pubbliche Amministrazioni tenute all'applicazione del meccanismo della scissione dei pagamenti
 di cui all'articolo 17-ter del d.P.R. 26 ottobre 1972, n. 633 (Split-payment) e per l'alimentazione della Banca dati
 delle Amministrazioni pubbliche (BDAP) per il controllo e monitoraggio degli andamenti della finanza pubblica.
+
+## Web Service
+
+Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php).
+Occorre selezionare la voce del menu Richiedi Authorization ID e compilare la form dedicata.
+Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://www.indicepa.gov.it/documentale/n-webservices.php).
