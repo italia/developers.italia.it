@@ -6,6 +6,9 @@ payoff: Indice degli indirizzi delle pubbliche amministrazioni e dei gestori di 
 description: Base dati di interesse nazionale ai sensi dell’articolo 57-bis comma 1 del Codice dell'Amministrazione Digitale.
 lang: it
 order: 4
+owners:
+  - name: Agenzia per l'Italia Digitale
+    url: https://www.agid.gov.it/
 highlight: true
 comingsoon: false
 layout: platform
@@ -39,7 +42,7 @@ L'Indice delle Pubbliche Amministrazioni (IPA) è una base dati pubblica aliment
 a norma di legge (CAD), dalle Pubbliche Amministrazioni e dai Gestori di Pubblici Servizi e finalizzata a rendere noti:
 * l’indirizzo di PEC dei Gestori di Pubblici Servizi e delle Aree Organizzative Omogenee (uffici di protocollo)
   delle Pubbliche Amministrazioni, per favorire lo scambio di documenti informatici attraverso canali ufficiali;
-* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi, 
+* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi,
   per il corretto recapito delle fatture elettroniche.
 
 L'IPA rappresenta pertanto un censimento delle Pubbliche Amministrazioni e dei Gestori di Pubblici Servizi, accessibile a
