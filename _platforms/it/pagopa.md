@@ -86,5 +86,7 @@ Stiamo facendo evolvere il sistema in una ottica di mercato integrando canali di
 
 In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che è stata pesantemente rinnovata e resa molto più usabile per il cttadino (maggiori informazioni a questo proposito sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/)).
 
+## Canali
+
 <a class="btn btn-primary" href="https://forum.italia.it/c/pagopa"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0"><i class="it-comment" /> Dialoga su Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>

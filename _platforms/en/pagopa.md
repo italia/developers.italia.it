@@ -88,5 +88,7 @@ We're improving the system towards a market approach by integrating innovative p
 
 The most important work is about UI (User Interface) and UX (User Experience) which were heavily renewed made more usable for citizens (more information about this is available in [Designers Italia](https://designers.italia.it/progetti/pagopa/)).
 
+## Collaboration
+
 <a class="btn btn-primary" href="https://forum.italia.it/c/pagopa"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0"><i class="it-comment" /> Chat on Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
