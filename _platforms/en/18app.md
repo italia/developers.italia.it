@@ -20,11 +20,6 @@ managers:
     - name: Sogei
       url: http://www.sogei.it/
 resources:
-    - Documentation:
-        - title: Guide for merchants
-          icon: file
-          url: https://docs.italia.it/italia/18app/18app-esercenti-docs/
-          desc: Documentation for merchants who are interested in validating coupons via API
     - SDK:
         - title: Python example
           icon: github
@@ -50,8 +45,7 @@ Users enter with their [SPID digital identity](/en/spid) into a web application 
 
 In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software. Merchants must be
 equipped with an authentication certificate to be installed in your client of the
-service and use it in the SOAP call. For more information consult the
-[dedicated section in the Guide for merchants](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
+service and use it in the SOAP call.
 
 ## Collaboration
 
@@ -66,6 +60,4 @@ These discussion channels are aimed at free discussion among developers; they ar
 ## Native app
 
 In Developers Italia a native mobile app for 18app is being developed.
-
-- [More details in the software catalogue](/en/software/m_bac-italia-18app)
-- [GitHub repository](https://github.com/italia/18app)
+You can find more details in the [software catalogue](/en/software/m_bac-italia-18app).

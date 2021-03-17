@@ -20,11 +20,6 @@ managers:
     - name: Sogei
       url: http://www.sogei.it/
 resources:
-    - Documentazione:
-        - title: Guida per gli esercenti
-          icon: file
-          url: https://docs.italia.it/italia/18app/18app-esercenti-docs/
-          desc: Documentazione per gli esercenti interessati ad integrarsi con le API per la verifica dei coupon
     - SDK:
         - title: Esempio in Python
           icon: github
@@ -64,8 +59,7 @@ oppure manualmente tramite una semplice web form. Per consumare il web service
 di verifica del voucher, ogni esercente dovrà essere
 dotato di un certificato di autenticazione da installare nel proprio client del
 servizio e da utilizzare nella chiamata SOAP per effettuare l’autenticazione in
-modalità SSL con certificato client. Per maggiori informazioni consulatre la
-[sezione dedicata nella Guida per gli esercenti](https://docs.italia.it/italia/18app/18app-esercenti-docs/it/bozza/linee-guida-esercenti.html#allegato-1-specifica-ws-online).
+modalità SSL con certificato client.
 
 ## Canali
 
@@ -80,6 +74,4 @@ Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canal
 ## App nativa
 
 In Developers Italia è in corso lo sviluppo di una app nativa per 18app.
-
-- [Scheda nel catalogo del software](/it/software/m_bac-italia-18app)
-- [Repository GitHub](https://github.com/italia/18app)
+Puoi trovare maggiori dettagli nella [scheda del catalogo del software](/it/software/m_bac-italia-18app).
