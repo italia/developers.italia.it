@@ -3,8 +3,9 @@ title: Cloud Italia
 subtitle: Il Cloud della Pubblica Amministrazione italiana
 logo: /assets/images/logo-cloud-italia.png
 payoff: Il Cloud della Pubblica Amministrazione italiana
-description: Cloud Italia è il punto di riferimento per lo sviluppo del Cloud nella Pubblica Amministrazione italiana. 
-
+description: Cloud Italia è il punto di riferimento per lo sviluppo del Cloud nella Pubblica Amministrazione italiana.
+ref:
+  en: /en/cloud
 redirect_from: /it/devops
 lang: it
 order: 4
@@ -31,11 +32,11 @@ resources:
     - title: Cloud Marketplace
       icon: link
       url: https://cloud.italia.it/marketplace/
-      desc: Il catalogo dei servizi Cloud per la PA qualificati da AgID. 
+      desc: Il catalogo dei servizi Cloud per la PA qualificati da AgID.
     - title: Come ottenere le qualificazioni Cloud
       icon: link
       url: https://cloud.italia.it/marketplace/info
-      desc: Istruzioni e puntatori per le procedure di qualificazione dei servizi cloud. 
+      desc: Istruzioni e puntatori per le procedure di qualificazione dei servizi cloud.
     - title: Servizi cloud SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
@@ -67,5 +68,5 @@ Il [Piano Triennale per l’informatica nella Pubblica Amministrazione](https://
 E' possibile partecipare attivamente allo sviluppo del cloud nella Pubblica Amministrazione contribuendo con informazioni, opinioni e domande alle discussioni nel canale [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) su Slack e nella [sezione Data Center e Cloud su Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
 
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Chat on Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Dialoga su Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>

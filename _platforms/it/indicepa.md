@@ -6,6 +6,9 @@ payoff: Indice degli indirizzi delle pubbliche amministrazioni e dei gestori di 
 description: Base dati di interesse nazionale ai sensi dell’articolo 57-bis comma 1 del Codice dell'Amministrazione Digitale.
 lang: it
 order: 4
+owners:
+  - name: Agenzia per l'Italia Digitale
+    url: https://www.agid.gov.it/
 highlight: true
 comingsoon: false
 layout: platform
@@ -39,7 +42,7 @@ L'Indice delle Pubbliche Amministrazioni (IPA) è una base dati pubblica aliment
 a norma di legge (CAD), dalle Pubbliche Amministrazioni e dai Gestori di Pubblici Servizi e finalizzata a rendere noti:
 * l’indirizzo di PEC dei Gestori di Pubblici Servizi e delle Aree Organizzative Omogenee (uffici di protocollo)
   delle Pubbliche Amministrazioni, per favorire lo scambio di documenti informatici attraverso canali ufficiali;
-* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi, 
+* il codice univoco che identifica gli uffici delle Pubbliche Amministrazioni destinatari di fatture, necessario, quindi,
   per il corretto recapito delle fatture elettroniche.
 
 L'IPA rappresenta pertanto un censimento delle Pubbliche Amministrazioni e dei Gestori di Pubblici Servizi, accessibile a
@@ -52,3 +55,9 @@ Le informazioni dell'IPA sono utilizzate ad esempio come riferimento dal Ministe
 l'individuazione delle Pubbliche Amministrazioni tenute all'applicazione del meccanismo della scissione dei pagamenti
 di cui all'articolo 17-ter del d.P.R. 26 ottobre 1972, n. 633 (Split-payment) e per l'alimentazione della Banca dati
 delle Amministrazioni pubbliche (BDAP) per il controllo e monitoraggio degli andamenti della finanza pubblica.
+
+## Web Service
+
+Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php).
+Occorre selezionare la voce del menu Richiedi Authorization ID e compilare la form dedicata.
+Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://www.indicepa.gov.it/documentale/n-webservices.php).
