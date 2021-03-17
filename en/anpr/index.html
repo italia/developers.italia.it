@@ -30,13 +30,13 @@
 <meta property="og:url" content="https://developers.italia.it/en/anpr/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-17T15:08:19+00:00" />
+<meta property="article:published_time" content="2021-03-17T15:17:51+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="ANPR" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"A single centralised registry, accessible by an API, which holds the up-to-date information about address, civil state, etc.","dateModified":"2021-03-17T15:08:19+00:00","datePublished":"2021-03-17T15:08:19+00:00","headline":"ANPR","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/anpr/"},"url":"https://developers.italia.it/en/anpr/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"A single centralised registry, accessible by an API, which holds the up-to-date information about address, civil state, etc.","dateModified":"2021-03-17T15:17:51+00:00","datePublished":"2021-03-17T15:17:51+00:00","headline":"ANPR","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/anpr/"},"url":"https://developers.italia.it/en/anpr/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202103171508" rel="stylesheet">
+  <link href="/dist/main.css?202103171517" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -743,21 +743,30 @@
 
 <!-- **Do you want to stay up-to-date? Subscribe to the ANPR [newsletter](#newsletter).** -->
 
-<p>ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire
-national territory (in evey municipality), Italy will have finally a single centralised registry
-which will simplify all the interactions with the Public Administration.</p>
-
-<p>In the future we hope to provide more features like update your residency’s address or download a
-Family Status Declaration straight from the website.</p>
-
-<p>This is only the beginning: did you ever asked yourself why you need to request certificates at the
+<p>Did you ever asked yourself why you need to request certificates at the
 registry in your municipality? Simple: at today a single centralised registry where the public
-offices can access your information doesn’t exists at all. With ANPR it will completely different.</p>
+offices can access your information doesn’t exists at all. With <a href="https://anpr.interno.it/">ANPR</a> it will completely different: ANPR is a memorable project: instead of having more than 8,000 registries spread over the entire national territory (in evey municipality), Italy will have finally a single centralised registry which will simplify all the interactions with the Public Administration.
+With ANPR we may provide more features in the future like update your residence address or download a Family Status Declaration straight from the website.</p>
+
+<h2 id="working-with-anpr">Working with ANPR</h2>
 
 <p>At today the access to the ANPR is reserved only to the public administration and their software.
 So this section is dedicated to everyone is giving support to municipalities to migrate to ANPR and
 is helping us to fulfill our vision. There’s a lot of work to do and the contribution of the
 community is important.</p>
+
+<p>ANPR provides a test environment that municipalities can use to:</p>
+
+<ul>
+  <li>verify the software developed by the Municipality for the extraction of data from the municipal registry and their sending to ANPR (takeover test);</li>
+  <li>learn how the Web Application works (both WA and WA integrated);</li>
+  <li>verify the operation of their management system integrated with the services of ANPR (WS);</li>
+  <li>verify the alignment of their local service databases (integrated WA and WS).</li>
+</ul>
+
+<p>To work with ANPR, it’s important to set up certificates with test credentials on first use. To obtain test credentials, please fill out the form at <a href="https://anpr-test.bobuild.com/request">https://anpr-test.bobuild.com/request</a>.</p>
+
+<p>For technical specifications, service documentation and the guide to the migration process for municipalities, please refer to the <a href="https://docs.italia.it/italia/anpr/anpr/">Technical documentation and reference tables</a>.</p>
 
 <h2 id="collaboration">Collaboration</h2>
 
@@ -765,7 +774,8 @@ community is important.</p>
 discuss all the problems on integrating ANPR.</p>
 
 <p><a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a></p>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ"><i class="it-comment"></i> Chat on Slack (#anpr)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a></p>
 
 
       
@@ -787,7 +797,7 @@ discuss all the problems on integrating ANPR.</p>
                 <a class="nav-item nav-link " id="resourcegroup-2"
                     data-toggle="tab" href="#resourcecontent-2" role="tab"
                     aria-controls="resourcecontent-2"
-                    aria-selected="false">SDK</a>
+                    aria-selected="false">Examples</a>
                 
             </div>
         </nav>
@@ -857,11 +867,12 @@ discuss all the problems on integrating ANPR.</p>
     
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#intro">Intro</a></li>
+<li class="toc-entry toc-h2"><a href="#working-with-anpr">Working with ANPR</a></li>
 <li class="toc-entry toc-h2"><a href="#collaboration">Collaboration</a></li>
 </ul>
     
     <ul class="section-nav">
-      <li class="toc-entry toc-h2"><a href="#resources">Documentation, SDK</a></li>
+      <li class="toc-entry toc-h2"><a href="#resources">Documentation, Examples</a></li>
     </ul>
     
     
