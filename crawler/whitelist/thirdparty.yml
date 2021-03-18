@@ -80,3 +80,7 @@
 - name: "RiscossioneConverter"
   repos:
     - "https://github.com/alessiolombardo/RiscossioneConverter"
+
+- name: "WooCommerce Carta Docente"
+  repos:
+    - "https://github.com/ilGhera/wc-carta-docente"
