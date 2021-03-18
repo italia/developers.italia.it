@@ -81,6 +81,10 @@
   repos:
     - "https://github.com/alessiolombardo/RiscossioneConverter"
 
+- name: "WooCommerce 18app"
+  repos:
+    - "https://github.com/ilGhera/wc-18app"
+
 - name: "WooCommerce Carta Docente"
   repos:
     - "https://github.com/ilGhera/wc-carta-docente"
