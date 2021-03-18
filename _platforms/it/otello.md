@@ -16,7 +16,9 @@ layout: platform
 
 OTELLO è la piattaforma dell'[Agenzia delle Dogane e dei Monopoli](https://www.agenziadoganemonopoli.gov.it/){:target="_blank"} che gestisce il processo che consente ai soggetti extra-UE di ottenere lo sgravio diretto o il rimborso dell'IVA sui beni acquistati sul territorio italiano.
 
-<iframe title="Otello Tax free shopping – Italiano" src="https://www.youtube.com/embed/ejVjgkFUPxo" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="d-block mx-auto mb-2 mw-100" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=ejVjgkFUPxo" title="Guarda il video di Otello Tax free shopping in Italiano su YouTube" target="_blank">
+  <img alt="Anteprima Otello Tax free shopping video" src="/assets/images/otello/otello_video_play.png" class="d-block mx-auto mb-2 mw-100" />
+</a>
 
 Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione delle cose per ottenere il visto doganale.
 
