@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: I dati aperti della pubblica amministrazione
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: I dati aperti della pubblica amministrazione
 description: >
   Dati.gov.it e’ il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l’obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.
@@ -41,9 +42,9 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
 
 Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul documento architetturale, sia sulle linee guida tecniche per i cataloghi dati che includono la specifica DCAT-AP_IT:
 
-[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
+[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit){:target="_blank"}
 
-[Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/)
+[Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/){:target="_blank"}
 
 
 ## Codice sorgente
@@ -51,14 +52,14 @@ Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul docum
 Qui puoi trovare l'attuale codice sorgente basato su DKAN (Drupal), e a breve pubblicheremo un documento per aiutarti a
 creare l'ambiente di sviluppo per contribuire:
 
-[Repo GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan)
+[Repo GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan){:target="_blank"}
 
 
 Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da documento architetturale:
 
-[Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it)
+[Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it){:target="_blank"}
 
-[Nuovo frontend server](https://github.com/italia/dati-frontendserver)
+[Nuovo frontend server](https://github.com/italia/dati-frontendserver){:target="_blank"}
 
 
 ## Collaborazione
@@ -67,8 +68,8 @@ Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e open
 l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto
 un tracker pubblico su GitHub:
 
-[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data){:target="_blank"}
 
-[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues)
+[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues){:target="_blank"}
 
-[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects)
+[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects){:target="_blank"}

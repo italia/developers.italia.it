@@ -2,6 +2,7 @@
 title: OTELLO 2.0
 subtitle: "Online Tax Refund at Exit: Light Lane Optimization"
 logo: /assets/images/logo-otello2@2x.png
+external_website: https://www.adm.gov.it/portale/dogane/operatore/ecustoms-aida/progetti-aida/otello
 payoff: "Online Tax Refund at Exit: Light Lane Optimization"
 description: >
   OTELLO 2.0 digitalizza il processo per ottenere il “visto doganale” da apporre sulla fattura per avere diritto allo sgravio diretto o al rimborso successivo dell’IVA sui beni acquistati in Italia da soggetti extra-UE
