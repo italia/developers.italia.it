@@ -30,13 +30,13 @@
 <meta property="og:url" content="https://developers.italia.it/it/spid/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-03-23T10:39:40+00:00" />
+<meta property="article:published_time" content="2021-03-23T11:45:42+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SPID" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.","dateModified":"2021-03-23T10:39:40+00:00","datePublished":"2021-03-23T10:39:40+00:00","headline":"SPID","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/spid/"},"url":"https://developers.italia.it/it/spid/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.","dateModified":"2021-03-23T11:45:42+00:00","datePublished":"2021-03-23T11:45:42+00:00","headline":"SPID","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/spid/"},"url":"https://developers.italia.it/it/spid/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202103231039" rel="stylesheet">
+  <link href="/dist/main.css?202103231145" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -651,15 +651,21 @@
         </div>
         <div class="project__actors row">
           
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <span class="d-block">Titolare</span>
             <ul class="list-unstyled">
               
-              <li><a href="https://www.agid.gov.it/">Agenzia per l'Italia Digitale</a></li>
+              <li><a href="https://www.agid.gov.it/" target="_blank">Agenzia per l'Italia Digitale</a></li>
               
             </ul>
           </div>
           
+          
+          
+          <div class="col-12 col-lg-4 text-truncate">
+            <span class="d-block">Sito web</span>
+            <a href="https://www.spid.gov.it" target="_blank">https://www.spid.gov.it</a>
+          </div>
           
         </div>
       </div>
@@ -773,9 +779,9 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
 <ol>
   <li>Leggi la documentazione tecnica.</li>
   <li>Usa e contribuisci ai componenti open source che trovi in Developers Italia.</li>
-  <li>Usa l’<a href="https://github.com/italia/spid-testenv2">Identity Provider di test</a> per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.</li>
-  <li>Entra in contatto con gli altri sviluppatori in <a href="https://slack.developers.italia.it/">Slack</a>.</li>
-  <li>Segui la procedura di accreditamento <a href="https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid">descritta nel sito di AGID</a>.</li>
+  <li>Usa l’<a href="https://github.com/italia/spid-testenv2" target="_blank">Identity Provider di test</a> per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.</li>
+  <li>Entra in contatto con gli altri sviluppatori in <a href="https://slack.developers.italia.it/" target="_blank">Slack</a>.</li>
+  <li>Segui la procedura di accreditamento <a href="https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid" target="_blank">descritta nel sito di AGID</a>.</li>
 </ol>
 
 <p>SPID è basato sul protocollo SAML2, quindi l’integrazione può avvenire con molteplici soluzioni:</p>
@@ -786,12 +792,12 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
   <li>aggiungendo un componente esterno di Identity Access Management come ad esempio un Proxy.</li>
 </ul>
 
-<p>In aggiunta, è necessario integrare nel sito il bottone ufficiale “<a href="https://github.com/italia/spid-sp-access-button">Entra con SPID</a>”, che permette all’utente di selezionare il proprio Identity Provider. L’applicazione del Service Provider genera di conseguenza una <em>AuthnRequest</em> che viene poi inviata all’Identity Provider attraverso un HTTP Redirect o POST del browser.</p>
+<p>In aggiunta, è necessario integrare nel sito il bottone ufficiale “<a href="https://github.com/italia/spid-sp-access-button" target="_blank">Entra con SPID</a>”, che permette all’utente di selezionare il proprio Identity Provider. L’applicazione del Service Provider genera di conseguenza una <em>AuthnRequest</em> che viene poi inviata all’Identity Provider attraverso un HTTP Redirect o POST del browser.</p>
 
 <p>Il Service Provider deve aggiornare periodicamente i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone “Entra con SPID”.</p>
 
-<p><a class="btn btn-primary" href="https://forum.italia.it/c/spid"><i class="it-horn"></i> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8"><i class="it-comment"></i> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a></p>
+<p><a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn"></i> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment"></i> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a></p>
 
 <p><strong>La community di Developers Italia ha realizzato un’ampia gamma di componenti open source (SDK, esempi di codice) pronti per l’uso, ed inoltre ha sviluppato l’Identity Provider di test.</strong> Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto informale e di aiuto integrativo per gli sviluppatori.</p>
 
@@ -849,7 +855,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" class="d-block project__resources-itemtitle">Regole Tecniche consolidate</a>
+                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">Regole Tecniche consolidate</a>
                         <p>Le regole tecniche di SPID con applicati tutti gli avvisi e le correzioni ai refusi, consultabili comodamente su Docs Italia</p>
                     </li>
                     
@@ -861,7 +867,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://registry.spid.gov.it/identity-providers" class="d-block project__resources-itemtitle">Metadata degli Identity Provider</a>
+                        <a href="https://registry.spid.gov.it/identity-providers" target="_blank" class="d-block project__resources-itemtitle">Metadata degli Identity Provider</a>
                         <p>Metadata degli Identity Provider, che i Service Provider devono mantenere aggiornati</p>
                     </li>
                     
@@ -873,7 +879,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://www.agid.gov.it/it/piattaforme/spid" class="d-block project__resources-itemtitle">Modulistica, circolari e deliberazioni</a>
+                        <a href="https://www.agid.gov.it/it/piattaforme/spid" target="_blank" class="d-block project__resources-itemtitle">Modulistica, circolari e deliberazioni</a>
                         <p>Sito di AGID contenente la modulistica, i listini, le convenzioni e le deliberazioni che riguardano SPID</p>
                     </li>
                     
@@ -894,7 +900,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-aspnetcore" class="d-block project__resources-itemtitle">SDK per C#</a>
+                        <a href="https://github.com/italia/spid-aspnetcore" target="_blank" class="d-block project__resources-itemtitle">SDK per C#</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni C#</p>
                     </li>
                     
@@ -906,7 +912,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-dotnet-sdk" class="d-block project__resources-itemtitle">SDK per .NET</a>
+                        <a href="https://github.com/italia/spid-dotnet-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK per .NET</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni .NET</p>
                     </li>
                     
@@ -918,7 +924,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-django" class="d-block project__resources-itemtitle">SDK per Django</a>
+                        <a href="https://github.com/italia/spid-django" target="_blank" class="d-block project__resources-itemtitle">SDK per Django</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)</p>
                     </li>
                     
@@ -930,7 +936,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-express" class="d-block project__resources-itemtitle">SDK per Express.js</a>
+                        <a href="https://github.com/italia/spid-express" target="_blank" class="d-block project__resources-itemtitle">SDK per Express.js</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Javascript)</p>
                     </li>
                     
@@ -942,7 +948,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-spring" class="d-block project__resources-itemtitle">SDK per Spring</a>
+                        <a href="https://github.com/italia/spid-spring" target="_blank" class="d-block project__resources-itemtitle">SDK per Spring</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Java Spring</p>
                     </li>
                     
@@ -954,7 +960,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/Satosa-Saml2Spid" class="d-block project__resources-itemtitle">Standalone SPID Proxy</a>
+                        <a href="https://github.com/italia/Satosa-Saml2Spid" target="_blank" class="d-block project__resources-itemtitle">Standalone SPID Proxy</a>
                         <p>Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID</p>
                     </li>
                     
@@ -966,7 +972,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-ruby" class="d-block project__resources-itemtitle">SDK per Ruby</a>
+                        <a href="https://github.com/italia/spid-ruby" target="_blank" class="d-block project__resources-itemtitle">SDK per Ruby</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Ruby</p>
                     </li>
                     
@@ -978,7 +984,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-rails" class="d-block project__resources-itemtitle">SDK per Ruby on Rails</a>
+                        <a href="https://github.com/italia/spid-rails" target="_blank" class="d-block project__resources-itemtitle">SDK per Ruby on Rails</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Ruby on Rails</p>
                     </li>
                     
@@ -990,7 +996,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-sinatra" class="d-block project__resources-itemtitle">SDK per Sinatra</a>
+                        <a href="https://github.com/italia/spid-sinatra" target="_blank" class="d-block project__resources-itemtitle">SDK per Sinatra</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Sinatra (Ruby)</p>
                     </li>
                     
@@ -1002,7 +1008,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-android-sdk" class="d-block project__resources-itemtitle">SDK per Android</a>
+                        <a href="https://github.com/italia/spid-android-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK per Android</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni mobile Android (Java)</p>
                     </li>
                     
@@ -1014,7 +1020,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-ios-sdk" class="d-block project__resources-itemtitle">SDK per iOS</a>
+                        <a href="https://github.com/italia/spid-ios-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK per iOS</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni mobile iOS</p>
                     </li>
                     
@@ -1026,7 +1032,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-php-lib" class="d-block project__resources-itemtitle">SDK per PHP</a>
+                        <a href="https://github.com/italia/spid-php-lib" target="_blank" class="d-block project__resources-itemtitle">SDK per PHP</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni PHP</p>
                     </li>
                     
@@ -1038,7 +1044,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-php" class="d-block project__resources-itemtitle">SDK per PHP (basata su SimpleSAMLphp)</a>
+                        <a href="https://github.com/italia/spid-php" target="_blank" class="d-block project__resources-itemtitle">SDK per PHP (basata su SimpleSAMLphp)</a>
                         <p>Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp</p>
                     </li>
                     
@@ -1050,7 +1056,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-wordpress" class="d-block project__resources-itemtitle">SDK per Wordpress</a>
+                        <a href="https://github.com/italia/spid-wordpress" target="_blank" class="d-block project__resources-itemtitle">SDK per Wordpress</a>
                         <p>Plugin nativo per l'integrazione del login con SPID in siti Wordpress (PHP)</p>
                     </li>
                     
@@ -1062,7 +1068,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-laravel" class="d-block project__resources-itemtitle">SDK per Laravel</a>
+                        <a href="https://github.com/italia/spid-laravel" target="_blank" class="d-block project__resources-itemtitle">SDK per Laravel</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Laravel (PHP)</p>
                     </li>
                     
@@ -1074,7 +1080,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-symfony-bundle" class="d-block project__resources-itemtitle">SDK per Symfony</a>
+                        <a href="https://github.com/italia/spid-symfony-bundle" target="_blank" class="d-block project__resources-itemtitle">SDK per Symfony</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Symfony (PHP)</p>
                     </li>
                     
@@ -1086,7 +1092,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-drupal-module" class="d-block project__resources-itemtitle">SDK per Drupal</a>
+                        <a href="https://github.com/italia/spid-drupal-module" target="_blank" class="d-block project__resources-itemtitle">SDK per Drupal</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Drupal (PHP)</p>
                     </li>
                     
@@ -1098,7 +1104,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-perl" class="d-block project__resources-itemtitle">SDK per Perl</a>
+                        <a href="https://github.com/italia/spid-perl" target="_blank" class="d-block project__resources-itemtitle">SDK per Perl</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Perl</p>
                     </li>
                     
@@ -1110,7 +1116,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-perl-dancer2" class="d-block project__resources-itemtitle">SDK per Dancer2</a>
+                        <a href="https://github.com/italia/spid-perl-dancer2" target="_blank" class="d-block project__resources-itemtitle">SDK per Dancer2</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Dancer2 (Perl)</p>
                     </li>
                     
@@ -1122,7 +1128,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-go" class="d-block project__resources-itemtitle">SDK per Go</a>
+                        <a href="https://github.com/italia/spid-go" target="_blank" class="d-block project__resources-itemtitle">SDK per Go</a>
                         <p>Libreria nativa per l'integrazione di SPID in applicazioni Golang</p>
                     </li>
                     
@@ -1134,7 +1140,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-shibboleth-proxy-docker" class="d-block project__resources-itemtitle">Proxy con Shibboleth</a>
+                        <a href="https://github.com/italia/spid-shibboleth-proxy-docker" target="_blank" class="d-block project__resources-itemtitle">Proxy con Shibboleth</a>
                         <p>Immagine Docker per creare un proxy basato su Apache2 e Shibboleth</p>
                     </li>
                     
@@ -1146,7 +1152,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-ansible-shibboleth-example" class="d-block project__resources-itemtitle">Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible</a>
+                        <a href="https://github.com/italia/spid-ansible-shibboleth-example" target="_blank" class="d-block project__resources-itemtitle">Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible</a>
                         <p></p>
                     </li>
                     
@@ -1158,7 +1164,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-sp-sapspid" class="d-block project__resources-itemtitle">IAM in Python</a>
+                        <a href="https://github.com/italia/spid-sp-sapspid" target="_blank" class="d-block project__resources-itemtitle">IAM in Python</a>
                         <p>Applicativo di Identity Access Management compatibile con SPID sviluppato in Python</p>
                     </li>
                     
@@ -1179,7 +1185,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-sp-access-button" class="d-block project__resources-itemtitle">Bottone "Entra con SPID"</a>
+                        <a href="https://github.com/italia/spid-sp-access-button" target="_blank" class="d-block project__resources-itemtitle">Bottone "Entra con SPID"</a>
                         <p>Il bottone da inserire nel sito del Service Provider, con integrata la scelta dell'Identity Provider</p>
                     </li>
                     
@@ -1191,7 +1197,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-idp-login-layout" class="d-block project__resources-itemtitle">Interfacce grafiche per Identity Provider</a>
+                        <a href="https://github.com/italia/spid-idp-login-layout" target="_blank" class="d-block project__resources-itemtitle">Interfacce grafiche per Identity Provider</a>
                         <p>Modelli in HTML statico per le interfacce degli Identity Provider</p>
                     </li>
                     
@@ -1203,7 +1209,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-graphics" class="d-block project__resources-itemtitle">Icone, loghi e materiali grafici</a>
+                        <a href="https://github.com/italia/spid-graphics" target="_blank" class="d-block project__resources-itemtitle">Icone, loghi e materiali grafici</a>
                         <p>Questo repository contiene il logo di SPID, i loghi degli Identity Provider ed altri materiali grafici</p>
                     </li>
                     
@@ -1215,7 +1221,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-smart-button" class="d-block project__resources-itemtitle">Bottone "Entra con SPID" (versione smart)</a>
+                        <a href="https://github.com/italia/spid-smart-button" target="_blank" class="d-block project__resources-itemtitle">Bottone "Entra con SPID" (versione smart)</a>
                         <p>Nuova versione (non ancora ufficiale) del bottone "Entra con SPID", con integrata la scelta dell'Identity Provider</p>
                     </li>
                     
@@ -1236,7 +1242,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-testenv2" class="d-block project__resources-itemtitle">Identity Provider di test</a>
+                        <a href="https://github.com/italia/spid-testenv2" target="_blank" class="d-block project__resources-itemtitle">Identity Provider di test</a>
                         <p>Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale</p>
                     </li>
                     
@@ -1248,7 +1254,7 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-compliant-certificates" class="d-block project__resources-itemtitle">Creazione certificati SAML2</a>
+                        <a href="https://github.com/italia/spid-compliant-certificates" target="_blank" class="d-block project__resources-itemtitle">Creazione certificati SAML2</a>
                         <p>Tool per la creazione di certificati X.509 conformi all'Avviso SPID n.29 v3</p>
                     </li>
                     
@@ -1269,7 +1275,13 @@ Il cittadino può ottenere SPID tramite i Gestori di Identità (detti <em>Identi
     <div class="sideblock-wrapper col-md-3 d-none d-lg-block">
   <div class="sideblock">
     
-    <img alt="" src="/assets/images/logo-spid@2x.png" style="max-width: 100%; margin-bottom: 10px">
+    
+    <a href="https://www.spid.gov.it" target="_blank">
+    
+      <img alt="SPID Sito web" src="/assets/images/logo-spid@2x.png" style="max-width: 100%; margin-bottom: 10px">
+    
+    </a>
+    
     
 
     
