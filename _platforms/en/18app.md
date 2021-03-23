@@ -2,6 +2,7 @@
 title: 18app and Carta Docente
 subtitle: Bonus culture and education
 logo: /assets/images/logo-18app-cartadocente@2x.png
+external_website: https://www.18app.italia.it
 payoff: The platform where to spend the culture and education's bonus
 description: >
   If you are a business owner and want to integrate with the platform for validating the coupons, here you can find documentation and SDKs.
@@ -20,10 +21,14 @@ managers:
     - name: Sogei
       url: http://www.sogei.it/
 resources:
-    - SDK:
-        - title: Python example
+    - Software:
+        - title: Carta Docente WooCommerce plugin
           icon: github
-          url: https://github.com/italia/18app-python-example
+          url: /it/software//ilghera-wc-carta-docente-c00aa7
+        - title: 18app WooCommerce plugin
+          icon: github
+          url: /it/software/ilghera-wc-18app-86eb94
+    - SDK:
         - title: SDK for Java
           icon: github
           url: https://github.com/italia/18app-java-sdk
@@ -33,6 +38,10 @@ resources:
         - title: SDK for .NET
           icon: github
           url: https://github.com/italia/18app-dotnet-sdk
+    - Examples:
+        - title: Python example
+          icon: github
+          url: https://github.com/italia/18app-python-example
 ---
 
 ## Intro
@@ -49,15 +58,10 @@ service and use it in the SOAP call.
 
 ## Collaboration
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
 
 These discussion channels are aimed at free discussion among developers; they are not moderated by Sogei so no helpdesk is provided. Check the official websites in order to contact the official helpdesk:
 
-- [18app](https://www.18app.italia.it/)
-- [Carta Docente](https://cartadeldocente.istruzione.it/)
-
-## Native app
-
-In Developers Italia a native mobile app for 18app is being developed.
-You can find more details in the [software catalogue](/en/software/m_bac-italia-18app).
+- [18app](https://www.18app.italia.it/){:target="_blank"}
+- [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}

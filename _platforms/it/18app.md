@@ -2,6 +2,7 @@
 title: 18app e Carta Docente
 subtitle: Bonus cultura e formazione
 logo: /assets/images/logo-18app-cartadocente@2x.png
+external_website: https://www.18app.italia.it
 payoff: La piattaforma dove spendere i bonus cultura e formazione
 description: >
   Se sei un esercente e vuoi integrarti con la piattaforma via API per validare i coupon, puoi trovare qui documentazione e SDK.
@@ -20,10 +21,14 @@ managers:
     - name: Sogei
       url: http://www.sogei.it/
 resources:
+    - Software:
+        - title: Carta Docente WooCommerce plugin
+          icon: open-source
+          url: /it/software//ilghera-wc-carta-docente-c00aa7
+        - title: 18app WooCommerce plugin
+          icon: open-source
+          url: /it/software/ilghera-wc-18app-86eb94
     - SDK:
-        - title: Esempio in Python
-          icon: github
-          url: https://github.com/italia/18app-python-example
         - title: SDK per Java
           icon: github
           url: https://github.com/italia/18app-java-sdk
@@ -33,6 +38,10 @@ resources:
         - title: SDK per .NET
           icon: github
           url: https://github.com/italia/18app-dotnet-sdk
+    - Esempi:
+        - title: Esempio in Python
+          icon: github
+          url: https://github.com/italia/18app-python-example
 ---
 
 ## Intro
@@ -63,15 +72,10 @@ modalità SSL con certificato client.
 
 ## Canali
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
 
 Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza. Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
 
-- [18app](https://www.18app.italia.it/)
-- [Carta Docente](https://cartadeldocente.istruzione.it/)
-
-## App nativa
-
-In Developers Italia è in corso lo sviluppo di una app nativa per 18app.
-Puoi trovare maggiori dettagli nella [scheda del catalogo del software](/it/software/m_bac-italia-18app).
+- [18app](https://www.18app.italia.it/){:target="_blank"}
+- [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}

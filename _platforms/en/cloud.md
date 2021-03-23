@@ -2,9 +2,11 @@
 title: Cloud Italia
 subtitle: The Cloud of the Italian Public Administration
 logo: /assets/images/logo-cloud-italia.png
+external_website: https://cloud.italia.it
 payoff: The Cloud of the Italian Public Administration
 description: Cloud Italia is the main source for the development of cloud computing in the digital infrastructures of the Italian public sector.
-
+ref:
+  it: /it/cloud
 lang: en
 order: 4
 highlight: false
@@ -30,11 +32,11 @@ resources:
     - title: Cloud Marketplace
       icon: link
       url: https://cloud.italia.it/marketplace/
-      desc: Cloud services for the PA certified by AgID. 
+      desc: Cloud services for the PA certified by AgID.
     - title: Cloud certification how-to
       icon: link
       url: https://cloud.italia.it/marketplace/info
-      desc: AgID cloud services certification how-to and links. 
+      desc: AgID cloud services certification how-to and links.
     - title: SaaS
       icon: file
       url: https://cloud.italia.it/projects/cloud-italia-circolari/it/latest/circolari/SaaS/
@@ -56,12 +58,14 @@ resources:
 
 ## Intro
 
-The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ict.italia.it/en/) called for the elaboration of a national strategy for the adoption of cloud computing in the digital infrastructures of the Italian public sector. The strategy has been published on the dedicated website ([cloud.italia.it](https://cloud.italia.it)) where the documents and tools related to its implementation are presented: informative content, operating instructions and official communications, with legal advertisement value, as referred from AgID circulars.
+The [Three-Year Plan for ICT in Public Administration](https://pianotriennale-ict.italia.it/en/){:target="_blank"} called for the elaboration of a national strategy for the adoption of cloud computing in the digital infrastructures of the Italian public sector. The strategy has been published on the dedicated website ([cloud.italia.it](https://cloud.italia.it){:target="_blank"}) where the documents and tools related to its implementation are presented: informative content, operating instructions and official communications, with legal advertisement value, as referred from AgID circulars.
 
 ## How to contribute
 
-Active participation in the development of the cloud for the italian Public Administration is possible by contributing with opinions, questions and discussions in the [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R) channel on Slack and in the [Data Center e Cloud section on Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud).
+Active participation in the development of the cloud for the italian Public Administration is possible by contributing with opinions, questions and discussions in the [#cloud](https://developersitalia.slack.com/messages/C9TCMU07R){:target="_blank"} channel on Slack and in the [Data Center e Cloud section on Forum Italia](https://forum.italia.it/c/piano-triennale/data-center-e-cloud){:target="_blank"}.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R"><i class="it-comment" /> Chat on Slack (#cloud)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+## Collaboration
+
+<a class="btn btn-primary" href="https://forum.italia.it/c/piano-triennale/data-center-e-cloud" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9TCMU07R" target="_blank"><i class="it-comment" /> Chat on Slack (#cloud)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
 
