@@ -49,6 +49,11 @@ resources:
       url: https://sparql-noipa.mef.gov.it/sparql
       icon: file
       desc: Accedi all'applicativo Virtuoso SPARQL Query Editor, che ti permetterà di interrogare i Linked Open Data NOIPA e di scaricare i dati richiesti.
+  - Esempi:
+    - title: Python client di esempio
+      icon: github
+      url: https://github.com/italia/noipa-python-example
+      desc: Python client di esempio per dialogare con le API
 ---
 
 ## Intro
@@ -64,10 +69,10 @@ Seguendo le linee guida dell’AgID, il nuovo NoiPA è strutturato usando il par
 oggetto di attenzione da parte delle Amministrazioni Pubbliche perché, migliorando l’efficienza operativa, consente il
 raggiungimento di significative economie di scala.
 
-Lo sviluppo del nuovo sistema ha fatto leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle 
-competenze acquisite attraverso la gestione di una parte rilevante del personale della PA, sulla pre-esistenza di sistemi 
-conoscitivi evoluti. La creazione di un sistema unico centralizzato di gestione del personale ha determinato una riduzione dei costi per 
-l’erogazione del servizio, anche grazie alle economie di scala generate dall’ampliamento del numero delle amministrazioni 
+Lo sviluppo del nuovo sistema ha fatto leva sull’esperienza consolidata nell’ambito dei servizi di riferimento di NoiPA, sulle
+competenze acquisite attraverso la gestione di una parte rilevante del personale della PA, sulla pre-esistenza di sistemi
+conoscitivi evoluti. La creazione di un sistema unico centralizzato di gestione del personale ha determinato una riduzione dei costi per
+l’erogazione del servizio, anche grazie alle economie di scala generate dall’ampliamento del numero delle amministrazioni
 servite.
 
 Il sistema è progettato intorno all’utente, garantendo una piena flessibilità e personalizzazione dell’operatività.
@@ -75,6 +80,13 @@ Il sistema è progettato intorno all’utente, garantendo una piena flessibilit�
 NoiPA è sempre più aperto alla collaborazione con chi fa della ricerca e dell’innovazione il suo obiettivo.
 Se sei un ente di ricerca o una università interessata a collaborare con NoiPA per la realizzazione di progetti innovativi
 di livello nazionale e internazionale puoi collaborare con NoiPA.
+
+
+## Utilizzare le API
+
+I cittadini, le imprese e le pubbliche amministrazioni interessate ad utilizzare i dati utilizzando le API possono trovare alcuni esempi nella pagina [NoiPA Open Data del sito](https://sparql-noipa.mef.gov.it/sparql){:target="_blank"} dove è presente un editor e alcune query SPARQL preimpostate. Esiste anche un repository che implementa un [client Python di esempio](https://github.com/italia/noipa-python-example){:target="_blank"} che si appoggia su SPARQL per mostrare come interfacciarsi alle API.
+
+## Canali
 
 <a class="btn btn-primary" href="https://noipa.mef.gov.it/"><i class="it-pa" />Visita il portale NoiPA</a>
 <a class="btn btn-primary" href="https://www.cloudifynoipa.it"><i class="it-code-circle" />Conosci il programma Cloudify NoiPA</a>
