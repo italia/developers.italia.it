@@ -2,6 +2,7 @@
 title: pagoPA
 subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
+external_website: https://www.pagopa.gov.it
 payoff: Payment interface towards the Public Administration
 description: >
   A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
@@ -86,7 +87,7 @@ pagoPA allows citizens to choose the payment method among the available ones acc
 
 We're improving the system towards a market approach by integrating innovative payment methods and improving the user interface and system capabilities according to market standards.
 
-The most important work is about UI (User Interface) and UX (User Experience) which were heavily renewed made more usable for citizens (more information about this is available in [Designers Italia](https://designers.italia.it/progetti/pagopa/)).
+The most important work is about UI (User Interface) and UX (User Experience) which were heavily renewed made more usable for citizens (more information about this is available in [Designers Italia](https://designers.italia.it/progetti/pagopa/){:target="_blank"}).
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/pagopa"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0"><i class="it-comment" /> Chat on Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/pagopa" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0" target="_blank"><i class="it-comment" /> Chat on Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>

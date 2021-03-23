@@ -1,6 +1,7 @@
 ---
 title: ANPR
 logo: /assets/images/logo-anpr@2x.png
+external_website: https://www.anpr.interno.it/portale/
 subtitle: National Registry of Resident Population
 payoff: The registry becomes one and digital
 description: >
@@ -88,7 +89,7 @@ ANPR provides a test environment that municipalities can use to:
 - verify the operation of their management system integrated with the services of ANPR (WS);
 - verify the alignment of their local service databases (integrated WA and WS).
 
-To work with ANPR, it's important to set up certificates with test credentials on first use. To obtain test credentials, please fill out the form at [https://anpr-test.bobuild.com/request](https://anpr-test.bobuild.com/request).
+To work with ANPR it's important to set up certificates with test credentials on first use. To obtain test credentials, please fill out the form at [https://anpr-test.bobuild.com/request](https://anpr-test.bobuild.com/request).
 
 For technical specifications, service documentation and the guide to the migration process for municipalities, please refer to the [Technical documentation and reference tables](https://docs.italia.it/italia/anpr/anpr/).
 
@@ -97,6 +98,5 @@ For technical specifications, service documentation and the guide to the migrati
 We built some collaboration tools for you including an *issue tracker* and a forum dedicated to
 discuss all the problems on integrating ANPR.
 
-<a class="btn btn-primary" href="https://github.com/italia/anpr/issues"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ"><i class="it-comment" /> Chat on Slack (#anpr)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a><a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>

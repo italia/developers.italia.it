@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: The open data of the Public Administration
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: The open data of the Public Administration
 description: >
     Dati.gov.it is the national list of the open data of the Italian Public Administrations.  It has been created with the aim to aggregate in a single portal most of the open data displayed by the various administrations both local and national.
@@ -29,38 +30,37 @@ Our aim is to evolve the current online portal of open data to a system that pro
 
 As with all the projects of Developers Italia, the portal of open data follows a development model based on a collaborative process  which is typical of the community of developers. The tools that we want to use to structure the development process are:
 
-  * A development roadmap agile and public 
+  * A public development roadmap
   * Source code open from the start
-  * A public tracking system of the errors 
+  * A public tracking system of the errors
   * Clear documentation of the code and the API
 
 ## Documentation
 
 Waiting for a publication of a further documentation concerning the project, in the meantime here you can find the architectural document:
 
-[Architectural document for evolution of dati.gov.it (ITA)](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit)
+[Architectural document for evolution of dati.gov.it (ITA)](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit){:target="_blank"}
 
 
 ## Source code
 
 Here you can find the actual source code based on DKAN (Drupal), and soon we will publish a document to help you to create the development environment to contribute:
 
-[Repo GitHub for current dati.gov.it](https://github.com/FormezPA/dkan)
+[Repo GitHub for current dati.gov.it](https://github.com/FormezPA/dkan){:target="_blank"}
 
-While here you can find the repositories related to the evolution of dati.gov.it according to the architectural document: 
+While here you can find the repositories related to the evolution of dati.gov.it according to the architectural document:
 
-[Repo GitHub for evoution of dati.gov.it](https://github.com/italia/dati.gov.it)
+[Repo GitHub for evoution of dati.gov.it](https://github.com/italia/dati.gov.it){:target="_blank"}
 
-[New frontend server](https://github.com/italia/dati-frontendserver)
+[New frontend server](https://github.com/italia/dati-frontendserver){:target="_blank"}
 
 
 ## Collaboration
 
 We have already open a mailing list to debate about data and open data, so there you can find the archive of previous discussions and you can sign up to participate. In addition, we have also arranged a public tracker on GitHub:
 
-[Mailing-list OpenData & Analytics (ITA)](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data)
+[Mailing-list OpenData & Analytics (ITA)](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data){:target="_blank"}
 
-[Issue tracking](https://github.com/italia/dati.gov.it/issues)
+[Issue tracking](https://github.com/italia/dati.gov.it/issues){:target="_blank"}
 
-[Development roadmap](https://github.com/italia/dati.gov.it/projects)
-
+[Development roadmap](https://github.com/italia/dati.gov.it/projects){:target="_blank"}

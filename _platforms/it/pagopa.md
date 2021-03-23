@@ -2,6 +2,7 @@
 title: pagoPA
 subtitle: Nodo di pagamento verso la Pubblica Amministrazione
 logo: /assets/images/logo-pagopa@2x.png
+external_website: https://www.pagopa.gov.it
 payoff: Nodo dei Pagamenti verso la Pubblica Amministrazione
 description: Un unico nodo di pagamento, con un'unica interfaccia verso il cittadino, per pagare dai tributi alla gita scolastica dei figli con carte di credito, bonifici o anche via app.
 lang: it
@@ -84,7 +85,7 @@ Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i dive
 
 Stiamo facendo evolvere il sistema in una ottica di mercato integrando canali di pagamento innovativi ed evolvendo l’interfaccia utente e le funzionalità del sistema verso gli standard consolidati sul mercato.
 
-In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che è stata pesantemente rinnovata e resa molto più usabile per il cttadino (maggiori informazioni a questo proposito sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/)).
+In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che è stata pesantemente rinnovata e resa molto più usabile per il cttadino (maggiori informazioni a questo proposito sulla piattaforma [Designers Italia](https://designers.italia.it/progetti/pagopa/){:target="_blank"}).
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/pagopa"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0"><i class="it-comment" /> Dialoga su Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/pagopa" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0" target="_blank"><i class="it-comment" /> Dialoga su Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>

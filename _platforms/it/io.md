@@ -2,6 +2,7 @@
 title: IO
 subtitle: L'app dei servizi pubblici
 logo: /assets/images/logo-io@2x.png
+external_website: https://io.italia.it
 payoff: L'app dei servizi pubblici
 description: io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
 owners:
@@ -44,6 +45,12 @@ Per iniziare ad utilizzare le API occorre registrarsi al portale [IO Developer](
 L’API di gestione delle preferenze permetterà al cittadino di gestire in modo centralizzato tutte le informazioni associate al suo profilo di cittadino digitale. Queste informazioni rendono possibile creare servizi digitali personalizzati (canali di comunicazione, preferenza di lingua, impostazioni di privacy, ecc…).
 
 Le API di comunicazione forniscono un unico canale che la Pubblica Amministrazione può usare per inviare comunicazioni, avvisi e scadenze al cittadino. Questo sistema di comunicazione è a sua volta integrato con l’API di gestione delle preferenze, per permettere ai servizi di comunicare con i cittadini sulla base delle informazioni di preferenza.
+
+* [Utilizzo delle API](https://developer.io.italia.it/openapi.html){:target="_blank"}
+* [Repository GitHub](https://github.com/pagopa/io-app){:target="_blank"}
+* [Come contribuire](https://github.com/pagopa/io/blob/master/CONTRIBUTING.it.md){:target="_blank"}
+
+Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X){:target="_blank"} sullo [Slack di Developers Italia](https://slack.developers.italia.it){:target="_blank"}
 
 ## Canali
 

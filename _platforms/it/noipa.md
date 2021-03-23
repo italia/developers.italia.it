@@ -2,6 +2,7 @@
 title: NoiPA
 subtitle: Servizi per il personale delle Pubbliche Amministrazioni
 logo: /assets/images/logo-noipa.png
+external_website: https://noipa.mef.gov.it
 payoff: NoiPA, servizi PA a Persone PA
 description: NoiPA è la piattaforma realizzata dal Dipartimento dell'Amministrazione Generale del personale e dei servizi (DAG) del Ministero dell'Economia e delle Finanze (MEF) per la gestione del personale della PA. Il sistema lavora ogni giorno per essere al fianco delle Pubbliche Amministrazioni, seguendo passo dopo passo tutti gli aspetti legati alla gestione del personale.
 lang: it
@@ -88,6 +89,6 @@ I cittadini, le imprese e le pubbliche amministrazioni interessate ad utilizzare
 
 ## Canali
 
-<a class="btn btn-primary" href="https://noipa.mef.gov.it/"><i class="it-pa" />Visita il portale NoiPA</a>
-<a class="btn btn-primary" href="https://www.cloudifynoipa.it"><i class="it-code-circle" />Conosci il programma Cloudify NoiPA</a>
+<a class="btn btn-primary" href="https://noipa.mef.gov.it/" target="_blank"><i class="it-pa" />Visita il portale NoiPA</a>
+<a class="btn btn-primary" href="https://www.cloudifynoipa.it" target="_blank"><i class="it-code-circle" />Conosci il programma Cloudify NoiPA</a>
 
