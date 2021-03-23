@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: I dati aperti della pubblica amministrazione
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: I dati aperti della pubblica amministrazione
 description: >
   Dati.gov.it e’ il catalogo nazionale dei dati aperti delle pubbliche amministrazioni italiane. Nasce con l’obiettivo di aggregare in un unico portale la maggior parte dei dati aperti esposti dalle varie amministrazioni sia locali che nazionali.
@@ -24,18 +25,17 @@ socials:
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
 resources:
     - Documentazione:
-        - title: Documento d'architettura dell'evoluzione di dati.gov.it
-          icon: file
-          url: https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y
-        - title: Linee guida tecniche per i cataloghi dati
-          icon: file
-          url: https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/
-          desc: Linee guida tecniche per i cataloghi dati che includono la specifica DCAT-AP_IT
+        - title: Strumenti per gli Open Data
+          icon: link
+          url: https://www.dati.gov.it/fare-open-data/Strumenti-per-gli-Open-Data
+        - title: Come alimentare il Catalogo nazionale degli Open Data
+          icon: link
+          url: https://www.dati.gov.it/Come-alimentare-il-Catalogo-nazionale
     - Sorgente:
         - title: Repository dati.gov.it
           icon: github
-          url: https://github.com/FormezPA/dkan
-          desc: Codice sorgente GitHub dati.gov.it basato su DKAN (Drupal)
+          url: https://github.com/italia/ckan-it
+          desc: Codice sorgente GitHub dati.gov.it basato su CKAN
     - Esempi:
         - title: Python client di esempio
           icon: github

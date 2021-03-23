@@ -2,6 +2,7 @@
 title: dati.gov.it
 subtitle: The open data of the Public Administration
 logo: /assets/images/logo-dati.gov.it@2x.png
+external_website: https://www.dati.gov.it
 payoff: The open data of the Public Administration
 description: >
     Dati.gov.it is the national list of the open data of the Italian Public Administrations.  It has been created with the aim to aggregate in a single portal most of the open data displayed by the various administrations both local and national.
@@ -23,18 +24,17 @@ socials:
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
 resources:
     - Documentation:
-        - title: Architectural document for evolution of dati.gov.it
-          icon: file
-          url: https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y
-        - title: Technical guidelines for data catalogs
-          icon: file
-          url: https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/
-          desc: Technical guidelines for data catalogs including DCAT-AP_IT spec
+        - title: Open Data tools
+          icon: link
+          url: https://www.dati.gov.it/fare-open-data/Strumenti-per-gli-Open-Data
+        - title: How to feed the National Open Data Catalog
+          icon: link
+          url: https://www.dati.gov.it/Come-alimentare-il-Catalogo-nazionale
     - Source code:
         - title: dati.gov.it repository
           icon: github
-          url: https://github.com/FormezPA/dkan
-          desc: dati.gov.it source code based on DKAN (Drupal)
+          url: https://github.com/italia/ckan-it
+          desc: dati.gov.it source code based on CKAN
     - Examples:
         - title: Python client example
           icon: github
@@ -49,6 +49,7 @@ Our aim is to evolve the current online portal of open data to a system that pro
 As with all the projects of Developers Italia, the portal of open data follows a development model based on a collaborative process  which is typical of the community of developers. The tools that we want to use to structure the development process are:
 
   * A development roadmap agile and public
+  * A public development roadmap
   * Source code open from the start
   * A public tracking system of the errors
   * Clear documentation of the code and the API
@@ -59,9 +60,8 @@ Citizens, businesses and public administrations interested in using the metadata
 
 There is also a repository that implements a [sample Python client](https://github.com/italia/dati.gov.it-python-example){:target="_blank"} to show how to interface to the API.
 
-## Canali
+## Collaboration
 
 <a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data" target="_blank"><i class="it-horn" /> Mailing-list OpenData & Analytics</a>
 <a class="btn btn-primary" href="https://github.com/italia/dati.gov.it/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
-
