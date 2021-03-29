@@ -117,7 +117,7 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible
-  - Proxy
+  - Proxy:
     - title: IdentityPython SATOSA
       icon: github
       url: https://github.com/italia/Satosa-Saml2Spid
@@ -213,7 +213,11 @@ SPID è basato sul protocollo SAML2, per configurarlo è possibile scegliere una
 Il Service Provider deve aggiornare periodicamente i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
 I metadati degli Identity Provider sono disponibili presso lo [SPID registry](https://registry.spid.gov.it/).
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+## Come contribuire
 
 **La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice, IAM Proxy, tools) pronti per l'uso.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto, esempio e aiuto integrativo per gli sviluppatori.
+
+## Canali
+
+<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
