@@ -37,6 +37,14 @@ resources:
       icon: file
       desc: Sito di AGID contenente la modulistica, i listini, le convenzioni e le deliberazioni che riguardano SPID
   - SDK:
+    - title: SDK per PHP (basata su SimpleSAMLphp)
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp
+    - title: SDK per PHP
+      icon: github
+      url: https://github.com/italia/spid-php-lib
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
     - title: SDK per C#
       icon: github
       url: https://github.com/italia/spid-aspnetcore
@@ -57,10 +65,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-spring
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Java Spring
-    - title: Standalone SPID Proxy
-      icon: github
-      url: https://github.com/italia/Satosa-Saml2Spid
-      desc: Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID
     - title: SDK per Ruby
       icon: github
       url: https://github.com/italia/spid-ruby
@@ -81,14 +85,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-ios-sdk
       desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile iOS
-    - title: SDK per PHP
-      icon: github
-      url: https://github.com/italia/spid-php-lib
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
-    - title: SDK per PHP (basata su SimpleSAMLphp)
-      icon: github
-      url: https://github.com/italia/spid-php
-      desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp
     - title: SDK per Wordpress
       icon: github
       url: https://github.com/italia/spid-wordpress
@@ -117,14 +113,23 @@ resources:
       icon: github
       url: https://github.com/italia/spid-go
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Golang
-    - title: Proxy con Shibboleth
-      icon: github
-      url: https://github.com/italia/spid-shibboleth-proxy-docker
-      desc: Immagine Docker per creare un proxy basato su Apache2 e Shibboleth
     - title: Esempio con Shibboleth, Nginx e Ansible
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible
+  - Proxy:
+    - title: IdentityPython SATOSA
+      icon: github
+      url: https://github.com/italia/Satosa-Saml2Spid
+      desc: Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID
+    - title: Keycloak
+      icon: github
+      url: https://github.com/italia/spid-keycloak-entando
+      desc: Keycloak OIDC to SAML2 SPID Proxy
+    - title: Proxy con Shibboleth
+      icon: github
+      url: https://github.com/italia/spid-shibboleth-proxy-docker
+      desc: Immagine Docker per creare un proxy basato su Apache2 e Shibboleth
     - title: IAM in Python
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
@@ -147,14 +152,26 @@ resources:
       url: https://github.com/italia/spid-smart-button
       desc: Nuova versione (non ancora ufficiale) del bottone "Entra con SPID", con integrata la scelta dell'Identity Provider
   - Tool:
-    - title: Identity Provider di test
+    - title: Identity Provider dimostrativo
       url: https://github.com/italia/spid-testenv2
       icon: github
-      desc: Ambiente di test per verificare la rispondenza di un Service Provider alle regole tecniche, eseguibile anche in locale
+      desc: Ambiente di test eseguibile in locale
+    - title: Identity Provider per il collaudo tecnico
+      url: https://github.com/italia/spid-saml-check
+      icon: github
+      desc: Ambiente di test utilizzato da AgID per il collaudo degli SP in fase di onboarding, eseguibile in locale
     - title: Creazione certificati SAML2
       url: https://github.com/italia/spid-compliant-certificates
       icon: github
       desc:  Tool per la creazione di certificati X.509 conformi all'Avviso SPID n.29 v3
+    - title: SPID Metadata builder
+      url: https://github.com/italia/spid-metadata-builder
+      icon: github
+      desc:  Tool per la creazione dei metadati SPID di un SP
+    - title: SPID Metadata signer
+      url: https://github.com/italia/spid-metadata-signer
+      icon: github
+      desc:  Tool per la firma dei metadati SPID di un SP
 ---
 
 ## Intro
@@ -179,23 +196,28 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 
 ## Come diventare Service Provider
 
-1. Leggi la documentazione tecnica.
-2. Usa e contribuisci ai componenti open source che trovi in Developers Italia.
-3. Usa l'[Identity Provider di test](https://github.com/italia/spid-testenv2){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
+1. Leggi la [documentazione tecnica](https://docs.italia.it/italia/spid/spid-regole-tecniche){:target="_blank"}.
+2. Usa e contribuisci ai componenti open source che trovi in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"}.
+3. Usa un Identity Provider di test come [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} oppure [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/){:target="_blank"}.
 5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
 
-SPID è basato sul protocollo SAML2, quindi l'integrazione può avvenire con molteplici soluzioni:
+SPID è basato sul protocollo SAML2, per configurarlo è possibile scegliere una tra le molteplici soluzioni disponibili:
 
-- integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in Developers Italia;
-- applicando al web server un middleware come Shibboleth;
-- aggiungendo un componente esterno di Identity Access Management come ad esempio un Proxy.
+- integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"};
+- applicando al web server Apache un middleware come [Shibboleth Service Provider](https://github.com/italia/spid-sp-shibboleth){:target="_blank"};
+- aggiungendo un componente esterno di Identity Access Management come ad esempio un [Proxy](https://github.com/italia?q=spid+proxy&type=&language=&sort=){:target="_blank"}.
 
-In aggiunta, è necessario integrare nel sito il bottone ufficiale "[Entra con SPID](https://github.com/italia/spid-sp-access-button){:target="_blank"}", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una *AuthnRequest* che viene poi inviata all'Identity Provider attraverso un HTTP Redirect o POST del browser.
+È necessario inoltre integrare nel sito il bottone ufficiale "[Entra con SPID](https://github.com/italia/spid-sp-access-button){:target="_blank"}", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una *AuthnRequest* che viene poi inviata all'Identity Provider attraverso un HTTP Redirect o POST del browser.
 
 Il Service Provider deve aggiornare periodicamente i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
+I metadati degli Identity Provider sono disponibili presso lo [SPID registry](https://registry.spid.gov.it/){:target="_blank"}.
+
+## Come contribuire
+
+**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice, IAM Proxy, tools) pronti per l'uso.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto, esempio e aiuto integrativo per gli sviluppatori.
+
+## Canali
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
-
-**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice) pronti per l'uso, ed inoltre ha sviluppato l'Identity Provider di test.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto informale e di aiuto integrativo per gli sviluppatori.
