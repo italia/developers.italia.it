@@ -77,13 +77,13 @@ resources:
       icon: github
       url: https://github.com/italia/spid-sinatra
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Sinatra (Ruby)
-    - title: SDK per Android
+    - title: SDK per Android realizzata da INPS
       icon: github
-      url: https://github.com/italia/spid-android-sdk
+      url: https://github.com/INPS-it/SPIDlibraryAndroid
       desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile Android (Java)
-    - title: SDK per iOS
+    - title: SDK per iOS realizzata da INPS
       icon: github
-      url: https://github.com/italia/spid-ios-sdk
+      url: https://github.com/INPS-it/SPIDlibraryIOS
       desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile iOS
     - title: SDK per Wordpress
       icon: github
