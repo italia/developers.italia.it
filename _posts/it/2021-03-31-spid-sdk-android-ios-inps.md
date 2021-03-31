@@ -23,4 +23,4 @@ Un grazie sentito a Vincenzo Di Nicola, che guida il team di Innovazione Tecnolo
 
 **Il lavoro della community continua**
 
-Hai già sviluppato anche tu un’integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community (Slack - [registrati qui](http://slack.developers.italia.it/) - e [Forum Italia](https://forum.italia.it)) per verificare l’eventuale inserimento all’interno dei portali sviluppatori. Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community.
+Hai già sviluppato anche tu un’integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community (Slack - [registrati qui](https://slack.developers.italia.it/) - e [Forum Italia](https://forum.italia.it)) per verificare l’eventuale inserimento all’interno dei portali sviluppatori. Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community.
