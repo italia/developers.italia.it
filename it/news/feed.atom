@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-03-31T10:54:11+00:00</updated>
+  <updated>2021-03-31T12:59:25+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,46 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/03/31/spid-sdk-android-ios-inps</id>
+    <title>SPID sempre più facile da integrare sulle piattaforme mobili</title>
+    <updated>2021-03-31T09:00:00+00:00</updated>
+
+    <summary>Disponibili, grazie a Inps, nuove risorse per integrare il Sistema Pubblico di Identità Digitale </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/03/31/spid-sdk-android-ios-inps">&lt;p&gt;Da oggi aumentano le risorse disponibili per gli sviluppatori sul &lt;a href=&quot;https://developers.italia.it/it/spid/&quot;&gt;portale di Developers Italia riguardante il Sistema Pubblico di Autenticazione (SPID)&lt;/a&gt;, che si arricchisce, grazie a &lt;a href=&quot;https://www.inps.it/nuovoportaleinps/default.aspx&quot;&gt;Inps&lt;/a&gt;, di &lt;strong&gt;due nuove librerie&lt;/strong&gt; per l’integrazione sulle piattaforme mobile Android e iOS. Il contributo consentirà alla comunità di sviluppatori di integrare con maggiore semplicità SPID nelle diverse app mobile. Nello specifico si tratta di SDK (Software Development Kit), un insieme di strumenti e semilavorati per gli sviluppatori che consentono di semplificare il lavoro di integrazione di una nuova piattaforma. I codici sorgente dei progetti pubblicati da Inps sono disponibili &lt;a href=&quot;https://github.com/INPS-it&quot;&gt;sulla pagina GitHub dell’istituto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il team di Developers Italia è lieto che Inps abbia dichiarato che questo è solo il primo passo: il loro programma è di proseguire attivamente e in modo trasparente nei loro contributi open source, incoraggiandone l’uso. L’Inps ha infatti deciso di puntare sull’open source, incardinandolo nel proprio piano strategico ICT, allo scopo di far progredire il know-how, creare software più sicuro, e in generale facilitare una produzione di soluzioni digitali direttamente nel Paese, con maggiori tutele per le istituzioni e i cittadini.&lt;/p&gt;
+
+&lt;p&gt;Si tratta esattamente di quanto &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale/developers-italia-comunita-sviluppatori-servizi-pubblici-digitali-pubblica-amministrazione-57b0cfab4c00&quot;&gt;&lt;strong&gt;perseguito dal team di Developers Italia fin dalla sua nascita&lt;/strong&gt;&lt;/a&gt; per, usando le parole di Pasquale Tridico - Presidente dell’Inps, stimolare un &lt;strong&gt;meccanismo virtuoso di condivisione e collaborazione in cui le Pubbliche Amministrazioni generano risorse non solo per sé stesse, ma per tutte le altre amministrazioni e i privati&lt;/strong&gt;, arrivando infine a creare soluzioni più efficienti per il cittadino.&lt;/p&gt;
+
+&lt;p&gt;Un grazie sentito a Vincenzo Di Nicola, che guida il team di Innovazione Tecnologica e Trasformazione Digitale di Inps, e che ha promosso questa iniziativa, in collaborazione con la Direzione Tecnologia Informatica e Innovazione, diretta da Vincenzo Caridi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Il lavoro della community continua&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hai già sviluppato anche tu un’integrazione con SPID o CIE oppure ci stai lavorando? Parliamone insieme nei canali di community (Slack - &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;registrati qui&lt;/a&gt; - e &lt;a href=&quot;https://forum.italia.it&quot;&gt;Forum Italia&lt;/a&gt;) per verificare l’eventuale inserimento all’interno dei portali sviluppatori. Portando il tuo progetto in questa vetrina entrerai a far parte del gruppo di manutentori di Developers Italia e potrai ricevere feedback e soprattutto contributi da parte di tutta la community.&lt;/p&gt;</content>
+    <published>2021-03-31T09:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="sviluppo" />
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+    <category term="software" />
+    
+    <category term="inps" />
+    
+    <category term="spid" />
+    
+
+    <author>
+      <name>Riccardo Iaconelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/03/04/nuovo-motore-di-ricerca</id>
     <title>Obiettivo miglioramento continuo</title>
