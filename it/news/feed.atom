@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-03-31T12:59:25+00:00</updated>
+  <updated>2021-03-31T16:49:20+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -20,7 +20,7 @@
     <updated>2021-03-31T09:00:00+00:00</updated>
 
     <summary>Disponibili, grazie a Inps, nuove risorse per integrare il Sistema Pubblico di Identità Digitale </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2021/03/31/spid-sdk-android-ios-inps">&lt;p&gt;Da oggi aumentano le risorse disponibili per gli sviluppatori sul &lt;a href=&quot;https://developers.italia.it/it/spid/&quot;&gt;portale di Developers Italia riguardante il Sistema Pubblico di Autenticazione (SPID)&lt;/a&gt;, che si arricchisce, grazie a &lt;a href=&quot;https://www.inps.it/nuovoportaleinps/default.aspx&quot;&gt;Inps&lt;/a&gt;, di &lt;strong&gt;due nuove librerie&lt;/strong&gt; per l’integrazione sulle piattaforme mobile Android e iOS. Il contributo consentirà alla comunità di sviluppatori di integrare con maggiore semplicità SPID nelle diverse app mobile. Nello specifico si tratta di SDK (Software Development Kit), un insieme di strumenti e semilavorati per gli sviluppatori che consentono di semplificare il lavoro di integrazione di una nuova piattaforma. I codici sorgente dei progetti pubblicati da Inps sono disponibili &lt;a href=&quot;https://github.com/INPS-it&quot;&gt;sulla pagina GitHub dell’istituto&lt;/a&gt;.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/03/31/spid-sdk-android-ios-inps">&lt;p&gt;Da oggi aumentano le risorse disponibili per gli sviluppatori sul &lt;a href=&quot;https://developers.italia.it/it/spid/&quot;&gt;portale di Developers Italia riguardante il Sistema Pubblico di Identità Digitale (SPID)&lt;/a&gt;, che si arricchisce, grazie a &lt;a href=&quot;https://www.inps.it/nuovoportaleinps/default.aspx&quot;&gt;Inps&lt;/a&gt;, di &lt;strong&gt;due nuove librerie&lt;/strong&gt; per l’integrazione sulle piattaforme mobile Android e iOS. Il contributo consentirà alla comunità di sviluppatori di integrare con maggiore semplicità SPID nelle diverse app mobile. Nello specifico si tratta di SDK (Software Development Kit), un insieme di strumenti e semilavorati per gli sviluppatori che consentono di semplificare il lavoro di integrazione di una nuova piattaforma. I codici sorgente dei progetti pubblicati da Inps sono disponibili &lt;a href=&quot;https://github.com/INPS-it&quot;&gt;sulla pagina GitHub dell’istituto&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Il team di Developers Italia è lieto che Inps abbia dichiarato che questo è solo il primo passo: il loro programma è di proseguire attivamente e in modo trasparente nei loro contributi open source, incoraggiandone l’uso. L’Inps ha infatti deciso di puntare sull’open source, incardinandolo nel proprio piano strategico ICT, allo scopo di far progredire il know-how, creare software più sicuro, e in generale facilitare una produzione di soluzioni digitali direttamente nel Paese, con maggiori tutele per le istituzioni e i cittadini.&lt;/p&gt;
 
