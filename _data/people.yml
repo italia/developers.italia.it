@@ -195,3 +195,16 @@ mfortini:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/matteofortini/
+michela:
+  name: Michela Gabrieli
+  desc:
+  pic: /assets/images/michela.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    twitter:
+      name: twitter
+      link: https://twitter.com/michelagab
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/michela-gabrieli/
