@@ -113,7 +113,7 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
-  - Proxy
+  - Proxy:
     - title: IdentityPython SATOSA
       icon: github
       url: https://github.com/italia/Satosa-Saml2Spid
