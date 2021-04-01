@@ -25,15 +25,11 @@ owners:
 resources:
   - Documentation:
     - title: Technical rules (consolidated version)
-      url: https://docs.italia.it/italia/spid/spid-regole-tecniche/it/stabile/
+      url: https://docs.italia.it/italia/spid/spid-regole-tecniche
       icon: file
       desc: The SPID technical rules with all the fixes applied, in an easy to read version published on Docs Italia
-    - title: Roadmap SDK
-      url: https://trello.com/b/PHF0ErvK/spid-roadmap
-      icon: file
-      desc: State of the art of the SDKs for SPID developed and maintained by the Developers Italia community
     - title: Identity Providers metadata
-      url: https://github.com/italia/spid-registry-idp
+      url: https://registry.spid.gov.it/identity-providers
       icon: github
       desc: SAML Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date
     - title: Forms, regulation and documents
@@ -71,11 +67,11 @@ resources:
       desc: Native library for integrating SPID in Sinatra (Ruby) applications
     - title: SDK for Android
       icon: github
-      url: https://github.com/italia/spid-android-sdk
+      url: https://github.com/INPS-it/SPIDlibraryAndroid
       desc: Native library for integrating SPID in Android (Java) applications
     - title: SDK for iOS
       icon: github
-      url: https://github.com/italia/spid-ios-sdk
+      url: https://github.com/INPS-it/SPIDlibraryIOS
       desc: Native library for integrating SPID in iOS mobile applications
     - title: SDK for PHP
       icon: github
@@ -97,10 +93,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-drupal-module
       desc: Native library for integrating SPID in Drupal (PHP) applications
-    - title: SDK for concrete5
-      icon: github
-      url: https://github.com/italia/spid-concrete5
-      desc: Native library for integrating SPID in concrete5 (PHP) applications
     - title: SDK for PHP (based on SimpleSAMLphp)
       icon: github
       url: https://github.com/italia/spid-php
@@ -117,22 +109,27 @@ resources:
       icon: github
       url: https://github.com/italia/spid-go
       desc: Native library for integrating SPID in Golang applications
-    - title: Plugin for Limesurvey
-      icon: github
-      url: https://github.com/italia/spid-limesurvey-plugin
-      desc: Native plugin for integrating SPID in Limesurvey
-    - title: Shibboleth-based proxy
-      icon: github
-      url: https://github.com/italia/spid-shibboleth-proxy-docker
-      desc: Docker image for creating a proxy based on Apache2 and Shibboleth
     - title: Example based on Shibboleth, Nginx and Ansible
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
+  - Proxy
+    - title: IdentityPython SATOSA
+      icon: github
+      url: https://github.com/italia/Satosa-Saml2Spid
+      desc: Python Proxy with Docker image to enable traditional SAML2 SPs in SPID
+    - title: Keycloak
+      icon: github
+      url: https://github.com/italia/spid-keycloak-entando
+      desc: Keycloak OIDC to SAML2 SPID Proxy
+    - title: Proxy con Shibboleth
+      icon: github
+      url: https://github.com/italia/spid-shibboleth-proxy-docker
+      desc: Docker image that enables a IAM proxy, based on Apache2 and Shibboleth
     - title: IAM in Python
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
-      desc: SPID-compatible Identity Access Management application developed in Python
+      desc: SPID compatible Identity Access Management application developed in Python
   - Graphic resources:
     - title: "'Enter with SPID' button"
       icon: github
@@ -155,6 +152,22 @@ resources:
       url: https://github.com/italia/spid-testenv2
       icon: github
       desc: Test environment that can be used for troubleshooting a Service Provider implementation. It provides full validation against the official SPID rules and can be run as a local application too
+    - title: Identity Provider per il collaudo tecnico
+      url: https://github.com/italia/spid-saml-check
+      icon: github
+      desc: Test environment used by AgID for testing the SPs in the onboarding phase, which can be performed locally
+    - title: SAML2 certificate creation
+      url: https://github.com/italia/spid-compliant-certificates
+      icon: github
+      desc:  Tool for creating X.509 certificates compliant with SPID Notice n.29 v3
+    - title: SPID Metadata builder
+      url: https://github.com/italia/spid-metadata-builder
+      icon: github
+      desc:  Tool for creating SPID metadata of an SP
+    - title: SPID Metadata signer
+      url: https://github.com/italia/spid-metadata-signer
+      icon: github
+      desc:  SPID metadata signing tool for an SP
 ---
 
 ## Intro
@@ -179,24 +192,27 @@ SPID can be integrated in the websites of the Public Administration, but also on
 
 ## How to become a Service Provider
 
-1. Read the technical docs and use the open source components you can find in Developers Italia.
-2. Use the [test Identity Provider](https://github.com/italia/spid-testenv2){:target="_blank"} for simulating the authentication process and verifying that your implementation is correct.
-3. Get in touch with other developers via [Slack](https://slack.developers.italia.it/){:target="_blank"}.
-4. Follow the accreditation procedore described in the [AGID website](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+1. Read [tecnhical documentation](https://docs.italia.it/italia/spid/spid-regole-tecniche).
+2. Use and contribute to the open source components available in [Developers Italia](https://github.com/italia?q=spid).
+3. Use a test identity provider such as[spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} or [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} to simulate the authentication flow and verify that your implementation is correct.
+4. Get in touch with other developers at [Slack](https://slack.developers.italia.it/){:target="_blank"}.
+5. Follow the accreditation procedure [described here](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
 
 SPID is based on the SAML2 protocol, thus the integration can be done in several ways:
 
-- by integrating one of the Developers Italia SDKs directly in the application;
-- by applying a middleware (like Shibboleth) to the web server;
-- by adding an external Identity Access Management component.
+- by integrating one of the [Developers Italia](https://github.com/italia?q=spid) SDKs directly in the application;
+- by applying a middleware (like [Shibboleth Service Provider](https://github.com/italia/spid-sp-shibboleth)) to the web server;
+- by adding an external Identity Access Management component, like a [Proxy](https://github.com/italia?q=spid+proxy&type=&language=&sort=).
 
-In addition, the "Enter with SPID" official button must be included in the Service Provider website, that allows users to choose their Identity Provider. The application/middleware/IAM then generates an AuthnRequest that is later sent to the Identity Provider via a browser redirect.
+In addition, the [Enter with SPID](https://github.com/italia/spid-sp-access-button){:target="_blank"}" official button must be included in the Service Provider website, that allows users to choose their Identity Provider. The application/middleware/IAM then generates an AuthnRequest that is later sent to the Identity Provider via a browser redirect.
 
 The Service Provider must update the Identity Provider metadata whenever they are added, removed or when their certificates are updated. This update must be reflected in the "Enter with SPID" button too.
 
+## How to contribute
+
+**The Developers Italia community has created a wide range of ready-to-use open source components (SDK, code examples, IAM Proxy, tools).** Anyone can contribute to the improvement of existing components or help develop some new. It is important to keep in mind that the resources made available to the community are not intended as regulations but only as support, example and supplementary help for developers.
+
+## Get in touch
+
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
-
-In addition, a [public issue tracker](https://github.com/italia/spid/issues){:target="_blank"} is available.
-
-**The Developers Italia community developed a large amount of open source components (SDK, examples of code) ready to use, and it also developed the test Identity Provider.** Anyone can contribute to the improvement of such components or to the development of new ones (see the [roadmap](https://trello.com/b/PHF0ErvK/spid-roadmap){:target="_blank"}).
