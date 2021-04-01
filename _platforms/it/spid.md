@@ -117,7 +117,7 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible
-  - Proxy
+  - Proxy:
     - title: IdentityPython SATOSA
       icon: github
       url: https://github.com/italia/Satosa-Saml2Spid
@@ -196,24 +196,28 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 
 ## Come diventare Service Provider
 
-1. Leggi la [documentazione tecnica](https://docs.italia.it/italia/spid/spid-regole-tecniche).
-2. Usa e contribuisci ai componenti open source che trovi in [Developers Italia](https://github.com/italia?q=spid).
+1. Leggi la [documentazione tecnica](https://docs.italia.it/italia/spid/spid-regole-tecniche){:target="_blank"}.
+2. Usa e contribuisci ai componenti open source che trovi in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"}.
 3. Usa un Identity Provider di test come [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} oppure [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/){:target="_blank"}.
 5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
 
 SPID è basato sul protocollo SAML2, per configurarlo è possibile scegliere una tra le molteplici soluzioni disponibili:
 
-- integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in [Developers Italia](https://github.com/italia?q=spid);
-- applicando al web server Apache un middleware come [Shibboleth Service Provider](https://github.com/italia/spid-sp-shibboleth);
-- aggiungendo un componente esterno di Identity Access Management come ad esempio un [Proxy](https://github.com/italia?q=spid+proxy&type=&language=&sort=).
+- integrando direttamente nell'applicazione uno dei tanti SDK nativi presenti in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"};
+- applicando al web server Apache un middleware come [Shibboleth Service Provider](https://github.com/italia/spid-sp-shibboleth){:target="_blank"};
+- aggiungendo un componente esterno di Identity Access Management come ad esempio un [Proxy](https://github.com/italia?q=spid+proxy&type=&language=&sort=){:target="_blank"}.
 
 È necessario inoltre integrare nel sito il bottone ufficiale "[Entra con SPID](https://github.com/italia/spid-sp-access-button){:target="_blank"}", che permette all'utente di selezionare il proprio Identity Provider. L'applicazione del Service Provider genera di conseguenza una *AuthnRequest* che viene poi inviata all'Identity Provider attraverso un HTTP Redirect o POST del browser.
 
 Il Service Provider deve aggiornare periodicamente i metadati degli Identity Provider in caso di aggiunta, revoca, modifica o aggiornamento del certificato di uno di essi, e deve riportare tale modifica anche nel bottone "Entra con SPID".
-I metadati degli Identity Provider sono disponibili presso lo [SPID registry](https://registry.spid.gov.it/).
+I metadati degli Identity Provider sono disponibili presso lo [SPID registry](https://registry.spid.gov.it/){:target="_blank"}.
+
+## Come contribuire
+
+**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice, IAM Proxy, tools) pronti per l'uso.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto, esempio e aiuto integrativo per gli sviluppatori.
+
+## Canali
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
-
-**La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice, IAM Proxy, tools) pronti per l'uso.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto, esempio e aiuto integrativo per gli sviluppatori.
