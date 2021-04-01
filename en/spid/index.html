@@ -30,13 +30,13 @@
 <meta property="og:url" content="https://developers.italia.it/en/spid/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-04-01T11:23:10+00:00" />
+<meta property="article:published_time" content="2021-04-01T16:02:01+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SPID" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"description":"SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.","headline":"SPID","dateModified":"2021-04-01T11:23:10+00:00","datePublished":"2021-04-01T11:23:10+00:00","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/spid/"},"url":"https://developers.italia.it/en/spid/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"description":"SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.","headline":"SPID","dateModified":"2021-04-01T16:02:01+00:00","datePublished":"2021-04-01T16:02:01+00:00","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/spid/"},"url":"https://developers.italia.it/en/spid/","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -44,7 +44,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202104011123" rel="stylesheet">
+  <link href="/dist/main.css?202104011602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -777,30 +777,33 @@ Citizens can get SPID through a series of private companies under agreements (kn
 <h2 id="how-to-become-a-service-provider">How to become a Service Provider</h2>
 
 <ol>
-  <li>Read the technical docs and use the open source components you can find in Developers Italia.</li>
-  <li>Use the <a href="https://github.com/italia/spid-testenv2" target="_blank">test Identity Provider</a> for simulating the authentication process and verifying that your implementation is correct.</li>
-  <li>Get in touch with other developers via <a href="https://slack.developers.italia.it/" target="_blank">Slack</a>.</li>
-  <li>Follow the accreditation procedore described in the <a href="https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid" target="_blank">AGID website</a>.</li>
+  <li>Read <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche">tecnhical documentation</a>.</li>
+  <li>Use and contribute to the open source components available in <a href="https://github.com/italia?q=spid">Developers Italia</a>.</li>
+  <li>Use a test identity provider such as<a href="https://github.com/italia/spid-saml-check" target="_blank">spid-saml-check</a> or <a href="https://github.com/italia/spid-testenv2" target="_blank">spid-testenv2</a> to simulate the authentication flow and verify that your implementation is correct.</li>
+  <li>Get in touch with other developers at <a href="https://slack.developers.italia.it/" target="_blank">Slack</a>.</li>
+  <li>Follow the accreditation procedure <a href="https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid" target="_blank">described here</a>.</li>
 </ol>
 
 <p>SPID is based on the SAML2 protocol, thus the integration can be done in several ways:</p>
 
 <ul>
-  <li>by integrating one of the Developers Italia SDKs directly in the application;</li>
-  <li>by applying a middleware (like Shibboleth) to the web server;</li>
-  <li>by adding an external Identity Access Management component.</li>
+  <li>by integrating one of the <a href="https://github.com/italia?q=spid">Developers Italia</a> SDKs directly in the application;</li>
+  <li>by applying a middleware (like <a href="https://github.com/italia/spid-sp-shibboleth">Shibboleth Service Provider</a>) to the web server;</li>
+  <li>by adding an external Identity Access Management component, like a <a href="https://github.com/italia?q=spid+proxy&amp;type=&amp;language=&amp;sort=">Proxy</a>.</li>
 </ul>
 
-<p>In addition, the “Enter with SPID” official button must be included in the Service Provider website, that allows users to choose their Identity Provider. The application/middleware/IAM then generates an AuthnRequest that is later sent to the Identity Provider via a browser redirect.</p>
+<p>In addition, the <a href="https://github.com/italia/spid-sp-access-button" target="_blank">Enter with SPID</a>” official button must be included in the Service Provider website, that allows users to choose their Identity Provider. The application/middleware/IAM then generates an AuthnRequest that is later sent to the Identity Provider via a browser redirect.</p>
 
 <p>The Service Provider must update the Identity Provider metadata whenever they are added, removed or when their certificates are updated. This update must be reflected in the “Enter with SPID” button too.</p>
 
+<h2 id="how-to-contribute">How to contribute</h2>
+
+<p><strong>The Developers Italia community has created a wide range of ready-to-use open source components (SDK, code examples, IAM Proxy, tools).</strong> Anyone can contribute to the improvement of existing components or help develop some new. It is important to keep in mind that the resources made available to the community are not intended as regulations but only as support, example and supplementary help for developers.</p>
+
+<h2 id="get-in-touch">Get in touch</h2>
+
 <p><a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn"></i> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment"></i> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a></p>
-
-<p>In addition, a <a href="https://github.com/italia/spid/issues" target="_blank">public issue tracker</a> is available.</p>
-
-<p><strong>The Developers Italia community developed a large amount of open source components (SDK, examples of code) ready to use, and it also developed the test Identity Provider.</strong> Anyone can contribute to the improvement of such components or to the development of new ones (see the <a href="https://trello.com/b/PHF0ErvK/spid-roadmap" target="_blank">roadmap</a>).</p>
 
 
       
@@ -828,12 +831,18 @@ Citizens can get SPID through a series of private companies under agreements (kn
                 <a class="nav-item nav-link " id="resourcegroup-3"
                     data-toggle="tab" href="#resourcecontent-3" role="tab"
                     aria-controls="resourcecontent-3"
-                    aria-selected="false">Graphic resources</a>
+                    aria-selected="false">Proxy</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-4"
                     data-toggle="tab" href="#resourcecontent-4" role="tab"
                     aria-controls="resourcecontent-4"
+                    aria-selected="false">Graphic resources</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-5"
+                    data-toggle="tab" href="#resourcecontent-5" role="tab"
+                    aria-controls="resourcecontent-5"
                     aria-selected="false">Tools</a>
                 
             </div>
@@ -856,20 +865,8 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche/it/stabile/" target="_blank" class="d-block project__resources-itemtitle">Technical rules (consolidated version)</a>
+                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">Technical rules (consolidated version)</a>
                         <p>The SPID technical rules with all the fixes applied, in an easy to read version published on Docs Italia</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
-                           </svg>
-                        </span>
-                        
-                        <a href="https://trello.com/b/PHF0ErvK/spid-roadmap" target="_blank" class="d-block project__resources-itemtitle">Roadmap SDK</a>
-                        <p>State of the art of the SDKs for SPID developed and maintained by the Developers Italia community</p>
                     </li>
                     
                     <li>
@@ -880,7 +877,7 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-registry-idp" target="_blank" class="d-block project__resources-itemtitle">Identity Providers metadata</a>
+                        <a href="https://registry.spid.gov.it/identity-providers" target="_blank" class="d-block project__resources-itemtitle">Identity Providers metadata</a>
                         <p>SAML Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date</p>
                     </li>
                     
@@ -997,7 +994,7 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-android-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK for Android</a>
+                        <a href="https://github.com/INPS-it/SPIDlibraryAndroid" target="_blank" class="d-block project__resources-itemtitle">SDK for Android</a>
                         <p>Native library for integrating SPID in Android (Java) applications</p>
                     </li>
                     
@@ -1009,7 +1006,7 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-ios-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK for iOS</a>
+                        <a href="https://github.com/INPS-it/SPIDlibraryIOS" target="_blank" class="d-block project__resources-itemtitle">SDK for iOS</a>
                         <p>Native library for integrating SPID in iOS mobile applications</p>
                     </li>
                     
@@ -1081,18 +1078,6 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-concrete5" target="_blank" class="d-block project__resources-itemtitle">SDK for concrete5</a>
-                        <p>Native library for integrating SPID in concrete5 (PHP) applications</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
-                           </svg>
-                        </span>
-                        
                         <a href="https://github.com/italia/spid-php" target="_blank" class="d-block project__resources-itemtitle">SDK for PHP (based on SimpleSAMLphp)</a>
                         <p>Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp</p>
                     </li>
@@ -1141,32 +1126,53 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://github.com/italia/spid-limesurvey-plugin" target="_blank" class="d-block project__resources-itemtitle">Plugin for Limesurvey</a>
-                        <p>Native plugin for integrating SPID in Limesurvey</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
-                           </svg>
-                        </span>
-                        
-                        <a href="https://github.com/italia/spid-shibboleth-proxy-docker" target="_blank" class="d-block project__resources-itemtitle">Shibboleth-based proxy</a>
-                        <p>Docker image for creating a proxy based on Apache2 and Shibboleth</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
-                           </svg>
-                        </span>
-                        
                         <a href="https://github.com/italia/spid-ansible-shibboleth-example" target="_blank" class="d-block project__resources-itemtitle">Example of configuration of Shibboleth with Nginx via an Ansible playbook</a>
                         <p></p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-3"
+                role="tabpanel" aria-labelledby="resourcegroup-3">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/Satosa-Saml2Spid" target="_blank" class="d-block project__resources-itemtitle">IdentityPython SATOSA</a>
+                        <p>Python Proxy with Docker image to enable traditional SAML2 SPs in SPID</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-keycloak-entando" target="_blank" class="d-block project__resources-itemtitle">Keycloak</a>
+                        <p>Keycloak OIDC to SAML2 SPID Proxy</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-shibboleth-proxy-docker" target="_blank" class="d-block project__resources-itemtitle">Proxy con Shibboleth</a>
+                        <p>Docker image that enables a IAM proxy, based on Apache2 and Shibboleth</p>
                     </li>
                     
                     <li>
@@ -1178,15 +1184,15 @@ Citizens can get SPID through a series of private companies under agreements (kn
                         </span>
                         
                         <a href="https://github.com/italia/spid-sp-sapspid" target="_blank" class="d-block project__resources-itemtitle">IAM in Python</a>
-                        <p>SPID-compatible Identity Access Management application developed in Python</p>
+                        <p>SPID compatible Identity Access Management application developed in Python</p>
                     </li>
                     
                 </ul>
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-3"
-                role="tabpanel" aria-labelledby="resourcegroup-3">
+            <div class="tab-pane fade show " id="resourcecontent-4"
+                role="tabpanel" aria-labelledby="resourcegroup-4">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1242,8 +1248,8 @@ Citizens can get SPID through a series of private companies under agreements (kn
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-4"
-                role="tabpanel" aria-labelledby="resourcegroup-4">
+            <div class="tab-pane fade show " id="resourcecontent-5"
+                role="tabpanel" aria-labelledby="resourcegroup-5">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1257,6 +1263,54 @@ Citizens can get SPID through a series of private companies under agreements (kn
                         
                         <a href="https://github.com/italia/spid-testenv2" target="_blank" class="d-block project__resources-itemtitle">Test Identity Provider</a>
                         <p>Test environment that can be used for troubleshooting a Service Provider implementation. It provides full validation against the official SPID rules and can be run as a local application too</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-saml-check" target="_blank" class="d-block project__resources-itemtitle">Identity Provider per il collaudo tecnico</a>
+                        <p>Test environment used by AgID for testing the SPs in the onboarding phase, which can be performed locally</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-compliant-certificates" target="_blank" class="d-block project__resources-itemtitle">SAML2 certificate creation</a>
+                        <p>Tool for creating X.509 certificates compliant with SPID Notice n.29 v3</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-metadata-builder" target="_blank" class="d-block project__resources-itemtitle">SPID Metadata builder</a>
+                        <p>Tool for creating SPID metadata of an SP</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-metadata-signer" target="_blank" class="d-block project__resources-itemtitle">SPID Metadata signer</a>
+                        <p>SPID metadata signing tool for an SP</p>
                     </li>
                     
                 </ul>
@@ -1289,10 +1343,12 @@ Citizens can get SPID through a series of private companies under agreements (kn
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#intro">Intro</a></li>
 <li class="toc-entry toc-h2"><a href="#how-to-become-a-service-provider">How to become a Service Provider</a></li>
+<li class="toc-entry toc-h2"><a href="#how-to-contribute">How to contribute</a></li>
+<li class="toc-entry toc-h2"><a href="#get-in-touch">Get in touch</a></li>
 </ul>
     
     <ul class="section-nav">
-      <li class="toc-entry toc-h2"><a href="#resources">Documentation, SDK, Graphic resources, Tools</a></li>
+      <li class="toc-entry toc-h2"><a href="#resources">Documentation, SDK, Proxy, Graphic resources, Tools</a></li>
     </ul>
     
     
