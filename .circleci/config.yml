@@ -9,7 +9,7 @@ references:
 
   load_image: &load_image
     docker:
-      - image: circleci/ruby:2.6.0-node-browsers
+      - image: cimg/ruby:2.6.5-node
 
   env_vars_test: &env_vars_test
     environment:
@@ -28,7 +28,39 @@ references:
       command: |
         make include-npm-deps
         make bundle-install-deployment
-        which rsync || sudo apt-get install rsync
+        sudo apt-get update && sudo apt install gawk
+        # Browser dependencies for pa11y
+        sudo apt-get install -y \
+          wget gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 \
+          libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 \
+          libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 \
+          libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 \
+          libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates \
+          fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
+
+  save_cache_node_modules: &save_cache_node_modules
+    save_cache:
+      key: v1-node-modules-{{ checksum "package-lock.json" }}
+      paths:
+        - node_modules
+
+  save_cache_bundle: &save_cache_bundle
+    save_cache:
+      key: v2-bundle-{{ checksum "Gemfile.lock" }}
+      paths:
+        - /home/circleci/project/vendor/ruby
+
+  restore_cache_node_modules: &restore_cache_node_modules
+    restore_cache:
+      keys:
+        - v1-node-modules-{{ checksum "package-lock.json" }}
+        - v1-node-modules-
+
+  restore_cache_bundle: &restore_cache_bundle
+    restore_cache:
+      keys:
+        - v2-bundle-{{ checksum "Gemfile.lock" }}
+        - v2-bundle-
 
   get_crawler_yml_files: &get_crawler_yml_files
     run:
@@ -47,7 +79,7 @@ references:
     add_ssh_keys:
       fingerprints:
         # gh-pages deployment key from circle-ci config
-        - ef:89:bb:6b:43:11:55:29:e1:8f:10:f0:fd:c8:7f:58
+        - bc:f0:e1:00:46:32:34:02:03:de:04:32:15:9b:0e:13
 
   publish_changes_gh_pages: &publish_changes_gh_pages
     run:
@@ -77,18 +109,25 @@ jobs:
     <<: *env_vars_test
     steps:
       - checkout
+      - << : *restore_cache_node_modules
+      - << : *restore_cache_bundle
       - << : *install_dependencies
+      - << : *save_cache_node_modules
+      - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
       - << : *build_bundle_jekyll
-      - << : *notify_on_failure
 
   build_and_deploy_gh_pages:
     <<: *load_image
     <<: *env_vars_prod
     steps:
       - checkout
+      - << : *restore_cache_node_modules
+      - << : *restore_cache_bundle
       - << : *install_dependencies
+      - << : *save_cache_node_modules
+      - << : *save_cache_bundle
       - << : *get_crawler_yml_files
       - run: make github-import
       - << : *build_bundle_jekyll

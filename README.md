@@ -16,9 +16,7 @@
   <a href="https://circleci.com/gh/italia/developers.italia.it">
     <img alt="CircleCI" src="https://circleci.com/gh/italia/developers.italia.it.svg?style=shield">
   </a>
-  <a href="https://app.netlify.com/sites/developers-italia/deploys">
-    <img alt="Netlify" src="https://img.shields.io/netlify/92a97b26-4e6c-4408-9270-9603f951eccf">
-  </a>
+  <img src="https://vercelbadge.vercel.app/api/italia/developers.italia.it" alt="Vercel"/>
   <a href="https://github.com/italia/developers.italia.it/releases">
     <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
   </a>

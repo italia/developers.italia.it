@@ -2,6 +2,7 @@ it:
   code: ita
   name: italiano
   t:
+    all: Tutto
     active_lang: lingua attiva
     langs:
       show_all: Mostra tutte le lingue
@@ -22,7 +23,9 @@ it:
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
     scrolltop_label: torna all'inizio dei contenuti
+    search_form_catalogue: Cerca in tutto il catalogo software
     search_form_label: Cerca
+    search_form_placeholder: Piattaforme, software o amministrazioni
     search_form_off: disattiva il form di ricerca
     search_form_on: attiva il form di ricerca
     search_form_start: avvia la ricerca
@@ -71,9 +74,12 @@ it:
     home_news_title: News
     home_news_expand: per saperne di più
     home_tags: Cerca per categoria
+    home_tags_more: Altri filtri
     newsletter_text: Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) che ti aiuterà a rimanere in contatto con noi.
     newsletter_privacy: Accetto la
     newsletter_submit: Iscriviti
+    website: Sito web
+    go_to_website: Vai al sito web
 
     home_tools_title: Strumenti
     home_tools_subtitle: Ci appoggiamo a strumenti già esistenti e molto conosciuti per fornirti le informazioni, il codice e il supporto di cui hai bisogno
@@ -139,8 +145,11 @@ it:
       goToPlatform: "Vai alla piattaforma"
 
     software:
-      software_open: Software open source di terze parti
-      reuse_software: Software a riuso
+      catalogue: Catalogo software
+      load_more: Carica altri
+      searched_for: Hai cercato
+      software_open: Software open source
+      software_reuse: Software a riuso
       recent_software: Software più recenti
       active_software: Progetti più attivi
       pa_most_active: Amministrazioni più virtuose
@@ -153,17 +162,20 @@ it:
       categories: Categorie
       intended_audience: Ambito di applicazione
       results: risultati
+      no_results: Nessun risultato trovato
+      retry_search: La ricerca non ha prodotto nessun risultato. Prova un'altra chiave di ricerca.
+      try_new_search: Prova una nuova ricerca
       variant_by: Variante di
       published_by: Pubblicato da
       software_maintained_by: Software mantenuto da
       technical_contact: Contatto tecnico
       technical_contacts: Contatti tecnici
-      technical_detail: Dettagli tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
-      goToDocumentation: Vai alla documentazione
-      goToCode: Vai al codice
-      goToRoadmap: Vai alla roadmap
+      goToDocumentation: Documentazione
+      goToCode: Codice sorgente
+      goToRoadmap: Roadmap
+      declare_reuse: La mia amministrazione lo usa
       functionality: Funzionalità del software
       functionality_this_variant: Funzionalità
       functionality_other_variant: Funzionalità di altre varianti
@@ -180,6 +192,8 @@ it:
       contract_with: Contratto con
       last_release: Ultimo rilascio
       license: Licenza
+      page: pagina
+      platform: Piattaforma
       platforms: Piattaforme
       dependencies_list: Lista dipendenze
       dependencies_oss: OSS
@@ -205,7 +219,7 @@ it:
       additional_features: Funzionalità aggiuntive
       see_more: Vedi tutto
       others_info: Altre informazioni
-      software_type: tipologia software
+      type: Tipologia
       public_entities: Enti
       go_to_detail: vai al dettaglio
       view_all_photos: Guarda tutte le immagini
@@ -227,6 +241,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
     errors:
+      something_went_wrong: Ops! Qualcosa è andato storto...
       page_not_found: Pagina non trovata!
       internal_error: Errore interno
       forbidden: Accesso negato!
@@ -236,6 +251,7 @@ en:
   code: eng
   name: english
   t:
+    all: All
     active_lang: current language
     langs:
       show_all: Show all languages
@@ -255,8 +271,11 @@ en:
     lang_on_site: website in english
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
+    page: page
     scrolltop_label: back to contents
+    search_form_catalogue: Search in the entire software catalogue
     search_form_label: Search
+    search_form_placeholder: Platforms, software or administrations
     search_form_off: exit search form
     search_form_on: enter search form
     search_form_start: start searching
@@ -305,9 +324,12 @@ en:
     home_news_title: News
     home_news_expand: read more
     home_tags: Browse by tag
+    home_tags_more: More tags
     newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     newsletter_privacy: Accetto la
     newsletter_submit: Subscribe
+    website: Website
+    go_to_website: Go to website
 
     home_tools_title: Tools
     home_tools_subtitle: We use existing and well-known tools to give you all information, source code and support that you need
@@ -374,8 +396,11 @@ en:
       goToPlatform: "Go to platform"
 
     software:
+      catalogue: Software catalogue
+      load_more: Load more
+      searched_for: You have searched for
       software_open: Software open source
-      reuse_software: Reuse software
+      software_reuse: Reuse software
       recent_software: Most recent software
       active_software: Most active projects
       pa_most_active: Most virtuous administration
@@ -388,6 +413,9 @@ en:
       categories: Categories
       intended_audience: Intended Audience
       results: results
+      no_results: No results found
+      retry_search: The search did not match any results. Try searching other terms.
+      try_new_search: Try a new search
       variant_by: Variant of
       published_by: Published by
       software_maintained_by: Software maintained by
@@ -395,9 +423,10 @@ en:
       technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
-      goToDocumentation: Go to the documentation
-      goToCode: Go to the code
-      goToRoadmap: Go to the roadmap
+      goToDocumentation: Documentation
+      goToCode: Source code
+      goToRoadmap: Roadmap
+      declare_reuse: My Administration uses it
       functionality: Software functionality
       functionality_this_variant: Functionality of this variant
       functionality_other_variant: Functionality of others variants
@@ -415,6 +444,8 @@ en:
       contract_with: Contract with
       last_release: Last release
       license: License
+      page: page
+      platform: Platform
       platforms: Platforms
       dependencies_list: List of dependencies
       dependencies_oss: OSS
@@ -440,7 +471,7 @@ en:
       additional_features: Additional features
       see_more: See all
       others_info: Others information
-      software_type: software type
+      type: Type
       public_entities: public entities
       go_to_detail: go to detail
       view_all_photos: View all the images
@@ -461,7 +492,7 @@ The ranges of every measure can be found in the [vitality-ranges.yml](https://gi
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
     errors:
+      something_went_wrong: Oops, something went wrong...
       page_not_found: Page not found!
       internal_error: Internal Server Error
       forbidden: Forbidden!
-

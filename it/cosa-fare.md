@@ -7,9 +7,15 @@ ref:
 layout: github-issues
 ---
 
-Hai voglia di aiutare ma non sai da dove cominciare? Tutti gli sviluppi che facciamo sono su GitHub [@italia](https://github.com/italia "Italia su Github"), ma i progetti sono tanti e utilizzano tecnologie diverse. In questa pagina, raccogliamo tutte le issue aperte di tutti i progetti, e potrai quindi cercare un'attività con più facilità. Utilizza i filtri per orientarti più facilmente e trovare qualcosa a te più affine.
+Hai voglia di aiutare ma non sai da dove cominciare?
 
-<br/>
+Tutto lo sviluppo è su GitHub
+[@italia](https://github.com/italia "Italia su Github") e
+i progetti sono tanti, così come le tecnologie che usano.
+Questa pagina raccoglie le issue aperte marcate con
+<span class="badge badge-secondary">help wanted</span>
+per trovare quello che ti può interessare con più facilità.
 
 {:.u-textWeight-400 .u-margin-top-l }
+
 ## Le issue aperte

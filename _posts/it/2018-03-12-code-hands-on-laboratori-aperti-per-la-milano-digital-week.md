@@ -1,20 +1,20 @@
 ---
 layout: post
-title:  Code hands-on&#58; laboratori aperti con Developers Italia per la Milano Digital Week
+title:  "Code hands-on: laboratori aperti con Developers Italia per la Milano Digital Week"
 subtitle: Appuntamento il 16 marzo a Milano
 date:   2018-03-12 10:00:00 +0100
 tags: developers digitalweek
 categories: news
 author: Francesco De Augustinis
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 redirect_from:
-   - 
+   -
 ---
 
-In occasione della [Milano Digital Week](https://milanodigitalweek.com/), il 16 marzo 2018 si terrà “**Code hands-on: Laboratori aperti sui progetti di Developers Italia**”. 
+In occasione della [Milano Digital Week](https://milanodigitalweek.com/), il 16 marzo 2018 si terrà “**Code hands-on: Laboratori aperti sui progetti di Developers Italia**”.
 
-L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](https://www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/). 
+L'intero pomeriggio il [Team Digitale](https://teamdigitale.governo.it/), insieme a [Codemotion](https://codemotionworld.com/) e [Agid](https://www.agid.gov.it/), sarà a disposizione di tutti gli sviluppatori che vorranno approfondire gli strumenti tecnologici per sviluppare software per la Pubblica Amministrazione. Un'occasione da non perdere, per prendere confidenza con **le attività del Team** e i tanti progetti portati avanti dalla community di [Developers Italia](https://developers.italia.it/).
 
 ## Un laboratorio aperto a tutti
 
@@ -43,7 +43,7 @@ Ecco il programma della giornata:
 
 **h18:15** Inizio laboratorio Sviluppo Software con supporto del Team Digitale
 
-**20:00** Aperitivo 
+**20:00** Aperitivo
 
 Networking & Free Hacking fino alle **21:00**
 

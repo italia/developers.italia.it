@@ -37,14 +37,19 @@ layout: default
       <div class="container list-item-sorting">
         <div class="row row-eq-height">
         {% for pa in pa_list limit: 60 %}
-        
+
         {% assign pa_name = pa.entityName | default: pa.ipa %}
 
         {% assign pa_url = '/' | append: active_lang | append: '/' | append: page.ref.route | append: '/' | append: pa.ipa | downcase %}
           <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
             <a href="{{pa_url}}" class="d-block decoration-none ">
-              
-              <p class="icon-type-administration">{{ t.software.administrations | upcase}}</p>
+
+              <div class='d-flex align-items-center mb-2'>
+                  <svg class="icon mr-2">
+                    <use xlink:href="/assets/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                <div>{{ t.software.administrations | upcase}}</div>
+              </div>
 
               {% assign img_url = pa.emblem | default:'/assets/images/cover_amministrazioni.png' %}
               <div class="main-image"

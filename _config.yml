@@ -85,17 +85,16 @@ feed:
 # Custom vars
 theme_color: "#0066cc"
 css_theme: t-Pac
-owner_short: AgID
-owner_full: AgID
-owner_link: http://www.agid.gov.it
+owner_short: DTD
+owner_full: Dipartimento per la Trasformazione Digitale
+owner_link: https://innovazione.gov.it/dipartimento/
 logo: /assets/icons/logo-it.svg
-owner_logo: /assets/images/agid-logo-bb.svg
-partner_short: Dipartimento per la Trasformazione Digitale
-partner_full: Dipartimento per la Trasformazione Digitale
-partner_link: https://innovazione.gov.it/it/chi-siamo/dipartimento/
+owner_logo: /assets/icons/logo-mid-white.svg
+partner_short: AgID
+partner_link: https://www.agid.gov.it
 privacy_link: /it/privacy-policy
 gov_logo: /assets/images/governo.svg
-partner_logo: /assets/icons/logo-mid-white.svg
+partner_logo: /assets/images/agid-logo-bb.svg
 pill: ""
 url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/
 url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
@@ -221,6 +220,10 @@ elasticsearch:
   custom_settings: _es_settings.yml
   custom_mappings: _es_mappings.yml
   ignore:
+    # Already indexed in the 'publiccodes' index.
     - /it/software/*
     - /en/software/*
-    - /it/bagnacavallo/
+
+    # Already indexed in the 'administrations' index.
+    - /it/pa/*
+    - /en/pa/*

@@ -3,6 +3,8 @@ layout: default
 lang: it
 ---
 
+{% include setlang.html %}
+
 {% comment %}
   {% assign subnav = site.data[page.subnav] %}
   {% include linklist.html items=subnav dynamic=true %}
@@ -14,15 +16,20 @@ lang: it
 
 <div >
   <section class="postslisting postslisting--by-tag position-relative">
-  
+
   <div class="postslisting__header position-relative">
     <div class="postslisting__headerbkg "></div>
-    
+
     <div class="container pt-4 d-flex w-100">
-      <h1 >{{ t.news_title }}</h1>
+      {% if t.news_title %}
+      <h1>{{ t.news_title }}</h1>
+      {% endif %}
       <div class="postslisting__filtertag ml-auto mb-2 d-flex flex-column flex-md-row">
         <a href="#" class="align-self-center d-flex order-2 order-md-1 " data-activate-element data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span class="ml-3 it-collapse"></span></a>
-        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">{{ page.tag }} <span class="icon it-close"></span></a>
+        <a href="./" title="{{ t.news_title }}" class="align-self-center d-flex postslisting__seltag ml-3 ml-md-4 mt-2 mt-md-0 order-1 order-md-2">
+          <span class="align-self-center">{{ page.tag }}</span>
+          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-close"></use></svg>
+        </a>
       </div>
     </div>
     <div class="container postslisting__tags deactive" data-activatedby="filterTags">
@@ -58,9 +65,9 @@ lang: it
             </div>
             {% if division_by_3==0 %}
                 <div class="w-100 d-none d-md-block postslisting__hr"></div>
-                
+
             {% endif %}
-            
+
         {% endfor %}
         </div>
     </div>
@@ -70,6 +77,3 @@ lang: it
 </div>
 
 {% include banner-joinus.html %}
-
-
-

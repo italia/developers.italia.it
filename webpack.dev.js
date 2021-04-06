@@ -6,7 +6,9 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     headers: {
-      "Access-Control-Allow-Origin": "http://localhost:4000",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
     },
     contentBase: './dist',
 

@@ -6,7 +6,7 @@ date:   2019-09-03 12:00:00 +0100
 tags: developers community call
 categories: news
 author: Francesco De Augustinis
-image: /assets/icons/logo-it.svg
+image: /assets/icons/logo-it.png
 locale: it
 ref:
   en: 
@@ -41,4 +41,4 @@ Ti aspettiamo!
 Il Team Developers Italia
 
 
-[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall/).
+[Leggi l'informativa privacy per le Community Call di Developers Italia](https://developers.italia.it/it/info-privacy-communitycall).

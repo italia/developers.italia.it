@@ -1,7 +1,8 @@
 ---
 title: Fatturazione Elettronica
-subtitle: Tra privati e verso la Publica Amministrazione
+subtitle: Tra privati e verso la Pubblica Amministrazione
 logo: /assets/images/logo-fatturapa@2x.png
+external_website: https://www.fatturapa.gov.it
 payoff: La fatturazione elettronica verso lo Stato e tra privati
 description: >
   Un formato XML per descrivere una fattura: scopri come integrarlo nei tuoi software gestionali.
@@ -41,9 +42,9 @@ resources:
 
 La fatturazione elettronica, introdotta inizialmente per le fatture verso la Pubblica Amministrazione, è obbligatoria dal 1° gennaio 2019 anche per tutte le fatture tra privati.
 
-La documentazione ufficiale, incluse le regole tecniche, è reperibile nel sito ufficiale dell'[Agenzia delle Entrate](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica).
+La documentazione ufficiale, incluse le regole tecniche, è reperibile nel sito ufficiale dell'[Agenzia delle Entrate](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica){:target="_blank"}.
 
 Developers Italia fornisce canali di comunicazione e strumenti di collaborazione agli sviluppatori per agevolarli nell'integrazione dei propri software. Il forum e Slack non sono canali di assistenza poiché non sono presidiati dall'Agenzia delle Entrate o da Sogei.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM"><i class="it-comment" /> Dialoga su Slack (#fatturapa)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Dialoga su Slack (#fatturapa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>

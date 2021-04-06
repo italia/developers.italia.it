@@ -9,17 +9,12 @@
             {% endif %}
             {% include set-tag.html tag=tag deactive=deactive %}
 
-
-            {% assign division5 = forloop.index | modulo:5 %}
-            {% if division5==0 %}
-            <div class="w-100"></div>
-            {% endif %}
             {% endfor %}
         </ul>
 
         {% if site.data.crawler.software_categories.size > 15 %}
         <div class="text-center mb-2 mb-md-4">
-            <a href="#" id="moreTags" class="home-software-tags__extra">Altri filtri</a>
+            <a href="#" id="moreTags" class="btn btn-primary mx-auto">{{ t.home_tags_more }}</a>
         </div>
         {% endif %}
     </div>

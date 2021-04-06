@@ -8,6 +8,8 @@ subtitle:
 see_also:
   - label: Acquisizione di software
     url: /it/riuso/acquisizione
+  - label: Dichiarazione di riuso di software
+    url: /it/riuso/dichiarazione
 ---
 
 Quando una Pubblica Amministrazione italiana sviluppa o commissiona software è tenuta, ai sensi dell'[art. 69 del Codice dell'Amministrazione Digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo6_art69.html), a pubblicarlo in repertorio pubblico con licenza aperta al fine di consentirne il riuso da parte di altre amministrazioni.

@@ -11,8 +11,6 @@
 @import './errors';
 @import './_highlight';
 @import './perfect-scrollbar';
-@import './search-modal';
-@import './search-page';
 @import './_select2';
 @import './software-detail';
 @import './softwares';
@@ -240,6 +238,7 @@ body {
     top: 2px;
   }
 }
+
 .Header {
     &-language {
         .icon {
@@ -360,6 +359,9 @@ body {
         @include bootstrap.media-breakpoint-up(md) {
             margin: 2rem 0;
         }
+        @include bootstrap.media-breakpoint-down(xs) {
+            margin-top: 1.5rem;
+        }
     }
     &-utils {
         margin-top: 0.5rem;
@@ -370,14 +372,18 @@ body {
             font-weight: 600;
             font-size: 1.6rem;
             letter-spacing: 0;
-            width: 3.5rem;
+            width: 100%;
             @include bootstrap.media-breakpoint-up(md) {
                 font-size: 2rem;
             }
-            .Header-subtitle {
-                font-size: 1rem;
-                font-weight: 300;
+            @include bootstrap.media-breakpoint-down(xs) {
+                display: block;
             }
+        }
+        .Header-subtitle {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 300;
         }
         .badge-pill {
             background-color: #004D99;
@@ -420,6 +426,12 @@ body {
                     color: #fff;
                 }
             }
+        }
+    }
+    .form-group {
+        @include bootstrap.media-breakpoint-down(sm) {
+            display: block;
+            margin: auto;
         }
     }
 }
@@ -881,8 +893,10 @@ body {
         border-bottom: 1px solid rgba(69, 91, 113, 0.2);
     }
     .row {
-        margin-left: -1rem;
-        margin-right: -1rem;
+        @include bootstrap.media-breakpoint-up(sm) {
+          margin-left: -1rem;
+          margin-right: -1rem;
+        }
     }
     article {
         h1 {
@@ -943,17 +957,6 @@ body {
         margin: 1rem 0;
         @include bootstrap.media-breakpoint-up(md) {
             margin: 3.5rem 0;
-        }
-    }
-    &__extra {
-        font-weight: 600;
-        color: #fff;
-        background-color: #5C6F82;
-        padding: 0.3rem 1rem;
-        border-radius: 0.25rem;
-        &:hover {
-            color: #fff;
-            text-decoration: none;
         }
     }
     &__item {
@@ -1033,6 +1036,21 @@ body {
 .simplelayout {
     &-main-image {
         background-color: #eee;
+        position: absolute;
+        width: 100%;
+        min-height: 405px;
+        display: grid;
+    }
+    &-main-image-container {
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        @media (min-width: 1600px) {
+            margin: 0 15%;
+        }
     }
     &-first-part {
         background-color: #FAFBFD;
@@ -1043,12 +1061,12 @@ body {
         padding-bottom: 6rem;
     }
     &-main-text {
-        position: relative;
-        margin-top: -3rem;
-        padding: 1rem;
-        background-color: #fff;
-        z-index: 10;
-        box-shadow: 0 10px 80px 0 rgba(90, 103, 114, 0.1);
+      position: relative;
+      margin-top: 13rem;
+      padding: 1rem;
+      background-color: #fff;
+      z-index: 10;
+      box-shadow: 0 10px 80px 0 rgba(90,103,114,.1);
         h1 {
             font-size: 2.5rem;
             color: #17324D;
@@ -1070,7 +1088,7 @@ body {
         }
         @include bootstrap.media-breakpoint-up(md) {
             padding: 4rem;
-            margin-top: -6rem;
+            margin-top: 18rem;
         }
         h2 {
             font-weight: 400;
@@ -1434,7 +1452,7 @@ body {
             margin-top: 5px;
             overflow: hidden;
             width: 100%;;
-            @include bootstrap.media-breakpoint-up(md) {    
+            @include bootstrap.media-breakpoint-up(md) {
                 height: 145px;
                 object-fit: cover;
                 box-shadow: 0 10px 58px 0 rgba(90, 103, 114, 0.2);
@@ -1506,6 +1524,10 @@ body {
             font-weight: 600;
             letter-spacing: 0;
             text-transform: uppercase;
+
+            @include bootstrap.media-breakpoint-down(sm) {
+                position: unset;
+            }
         }
     }
 }
@@ -1565,7 +1587,7 @@ body {
         .icon-wrapper {
             display: inline-block;
             padding-left: 0.5rem;
-            padding-right: 0.3rem;
+            padding-right: 0.5rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             border-radius: 100%;
@@ -1771,6 +1793,7 @@ body {
         line-height: 1;
         text-transform: capitalize;
         font-weight: 600;
+        margin-bottom: 10px;
     }
 }
 
@@ -1957,89 +1980,6 @@ body {
     }
     [type="checkbox"]:not(:checked)+label::after {
         border-color: #fff;
-    }
-}
-
-*[class*='icon-type'] {
-    &:before {
-        color: #00264D;
-        content: '';
-        font-size: inherit;
-        line-height: 0;
-        top: 0.25rem;
-        margin-right: 0.5rem;
-        position: relative;
-    }
-}
-
-.icon-type- {
-    &api {
-        &:before {
-            content: url('/assets/images/icon-type-api.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-api--gray.svg');
-        }
-    }
-    &administration {
-        &:before {
-            content: url('/assets/images/icon-type-administrations.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-administrations--gray.svg');
-        }
-    }
-    &platform {
-        &:before {
-            content: url('/assets/images/icon-type-projects.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-projects--gray.svg');
-        }
-    }
-    &public-sw {
-        &:before {
-            content: url('/assets/images/icon-type-software-reuse.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-software-reuse--gray.svg');
-        }
-    }
-    &generic-sw {
-        &:before {
-            content: url('/assets/images/icon-type-software-open.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-software-open--gray.svg');
-        }
-    }
-    &news {
-        &:before {
-            content: url('/assets/images/icon-type-news.svg');
-        }
-        &--gray {
-            content: url('/assets/images/icon-type-news--gray.svg');
-        }
-    }
-}
-
-.list-item-sorting *[class*='icon-type'] {
-    font-size: 0.8rem;
-    color: #00264D;
-}
-
-#suggestions {
-    *[class*='icon-type'] {
-        &:before {
-            top: 0;
-        }
-    }
-    .results {
-        font-size: 1.25rem;
-    }
-    .results+span {
-        text-transform: uppercase;
-        margin-left: 1rem;
     }
 }
 
@@ -2239,6 +2179,8 @@ body {
         background-color: white;
         box-shadow: 0 8px 24px 0 rgba(50,50,50,.15)!important;
         padding: 20px;
+        position: sticky;
+        top: 6.25rem;
 
         ul {
             list-style-type: none;
@@ -2267,4 +2209,17 @@ body {
 // FAQ section
 .faq {
     width: 45%;
+}
+
+.circled-step {
+     background: $blue;
+     border-radius: 0.8em;
+     color: $white;
+     display: inline-block;
+     font-weight: bold;
+     font-size: 1.8rem;
+     line-height: 1.6em;
+     margin-right: 1rem;
+     text-align: center;
+     width: 1.6em;
 }

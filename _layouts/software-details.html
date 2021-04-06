@@ -31,7 +31,7 @@ layout: default
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
-        <img src="{{ logo }}" class="d-inline-block" />
+        <img alt="" src="{{ logo }}" class="d-inline-block" />
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -103,7 +103,6 @@ layout: default
       </div>
     </div>
     <div class="offset-md-1 col-md-4 ">
-      <p class="h4 text-uppercase">{{ t.software.technical_detail }}</p>
       <div class="drops-details">
         <div class="vitality-score">
           <p>{{ t.software.vitality }}:</p>
@@ -124,20 +123,34 @@ layout: default
               label=page.publiccode.developmentStatus %} </p>
           </div>
         </div>
+      </div>
+
+      <div class="drops-details">
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
-          <p><a href="{{ description.documentation }}"><img src="/assets/icons/software_icons/it-documentazione.svg">{{
+          <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
             t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
         <div class="goto code">
-          <p><a href="{{ page.publiccode.url }}"> <img src="/assets/icons/software_icons/it-codice.svg">{{
+          <p><a href="{{ page.publiccode.url }}"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">{{
             t.software.goToCode }} &rarr;</a></p>
         </div>
         {% if page.publiccode.roadmap != null and page.publiccode.roadmap != "" %}
         <div class="goto road">
-          <p><a href="{{ page.publiccode.roadmap }}"><img src="/assets/icons/software_icons/it-roadmap.svg">{{
+          <p><a href="{{ page.publiccode.roadmap }}"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">{{
             t.software.goToRoadmap }} &rarr;</a></p>
+        </div>
+        {% endif %}
+
+        {% if active_lang == 'it' %}
+        <div class="goto">
+          <p>
+            <a href="/it/riuso/dichiarazione" onclick="localStorage.setItem('reuse-repo', '{{ page.publiccode.url }}'); return true">
+              <img alt="" src="/assets/icons/software_icons/it-check.svg">{{
+                t.software.declare_reuse }} &rarr;
+            </a>
+          </p>
         </div>
         {% endif %}
       </div>
@@ -352,7 +365,7 @@ layout: default
   <div class="tags-relate text-center">
     <strong>{{ t.software.intended_audience | upcase }}</strong>
     {% for tag in page.publiccode.intendedAudience.scope limit: 10 %}
-    {% include set-tag.html tag=tag field="publiccode.intendedAudience.scope[0]" %}
+    {% include set-tag.html tag=tag field="intended_audiences" %}
     {% endfor %}
   </div>
 </div>
@@ -361,7 +374,7 @@ layout: default
   <div class="tags-relate text-center">
     <strong>{{ t.software.categories | upcase }}</strong>
     {% for tag in page.publiccode.categories limit: 3 %}
-    {% include set-tag.html tag=tag field="publiccode.categories[0]" %}
+    {% include set-tag.html tag=tag field="categories" %}
     {% endfor %}
   </div>
 </div>
@@ -680,7 +693,7 @@ layout: default
 
 
           <div class="img-container">
-            <a href="{{ relsw_url }}">
+            <a href="{{ relsw_url }}" title="{{ relsw_name }}">
               {% capture swClasses %} w-100 {% endcapture %}
               {% include display-logo.html
                 logo = relsw.publiccode.logo

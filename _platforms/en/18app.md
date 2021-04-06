@@ -2,6 +2,7 @@
 title: 18app and Carta Docente
 subtitle: Bonus culture and education
 logo: /assets/images/logo-18app-cartadocente@2x.png
+external_website: https://www.18app.italia.it
 payoff: The platform where to spend the culture and education's bonus
 description: >
   If you are a business owner and want to integrate with the platform for validating the coupons, here you can find documentation and SDKs.
@@ -51,17 +52,17 @@ Users enter with their [SPID digital identity](/en/spid) into a web application 
 
 In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Enter the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
 
 These discussion channels are aimed at free discussion among developers; they are not moderated by Sogei so no helpdesk is provided. Check the official websites in order to contact the official helpdesk:
 
-- [18app](https://www.18app.italia.it/)
-- [Carta Docente](https://cartadeldocente.istruzione.it/)
+- [18app](https://www.18app.italia.it/){:target="_blank"}
+- [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}
 
 ## Native app
 
 In Developers Italia a native mobile app for 18app is being developed. This app will become official in Q2 2019.
 
 - [More details in the software catalogue](/en/software/m_bac-italia-18app)
-- [GitHub repository](https://github.com/italia/18app)
+- [GitHub repository](https://github.com/italia/18app){:target="_blank"}

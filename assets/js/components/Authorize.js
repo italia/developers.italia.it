@@ -1,21 +1,22 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./Authorize.css";
+import './Authorize.css';
 
 export default class Authorize extends React.Component {
   onClick() {
-    let { authActions, authSelectors } = this.props;
-    let definitions = authSelectors.definitionsToAuthorize();
+    const { authActions, authSelectors } = this.props;
+    const definitions = authSelectors.definitionsToAuthorize();
 
     authActions.showDefinitions(definitions);
   }
 
   render() {
-    let { authSelectors, getComponent } = this.props;
+    const { authSelectors, getComponent } = this.props;
 
-    const AuthorizationPopup = getComponent("authorizationPopup", true);
-    let showPopup = !!authSelectors.shownDefinitions();
-    let isAuthorized = !!authSelectors.authorized().size;
+    const AuthorizationPopup = getComponent('authorizationPopup', true);
+    const showPopup = !!authSelectors.shownDefinitions();
+    const isAuthorized = !!authSelectors.authorized().size;
 
     const { authorize } = window.l10n.swagger;
 
@@ -24,12 +25,7 @@ export default class Authorize extends React.Component {
         <div className="toggles">
           <label htmlFor="swagger-authorize">
             {authorize}
-            <input
-              type="checkbox"
-              id="swagger-authorize"
-              onChange={this.onClick.bind(this)}
-              value={isAuthorized}
-            />
+            <input type="checkbox" id="swagger-authorize" onChange={this.onClick.bind(this)} value={isAuthorized} />
             <span className="lever" />
           </label>
         </div>
@@ -38,3 +34,9 @@ export default class Authorize extends React.Component {
     );
   }
 }
+
+Authorize.propTypes = {
+  authActions: PropTypes.object.isRequired,
+  authSelectors: PropTypes.object.isRequired,
+  getComponent: PropTypes.func.isRequired,
+};

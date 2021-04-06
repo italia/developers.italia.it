@@ -2,6 +2,7 @@
 title: CIE
 subtitle: Carta d'Identità Elettronica
 logo: /assets/images/logo-cie@2x.png
+external_website: https://www.cartaidentita.interno.gov.it
 payoff: Carta d'Identità Elettronica
 description: >
   La nuova CIE è molto più che un documento d'identità: grazie al microprocessore RF può essere letta da dispositivi NFC (es. smartphone) e usata per accedere ai varchi o per creare connessioni sicure (TLS) verso i servizi in rete.
@@ -28,6 +29,9 @@ resources:
     - title: Specifiche del microprocessore
       icon: file
       url: http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf
+    - title: Manuale Tecnico
+      icon: link
+      url: https://docs.italia.it/italia/cie/cie-manuale-tecnico-docs/
     - title: Manuale utente del middleware per Windows
       icon: file
       url: https://docs.italia.it/italia/cie/cie-middleware-windows-docs/
@@ -44,6 +48,11 @@ resources:
       icon: github
       url: https://github.com/italia/cie-middleware-linux
       desc: Il middleware consente di usare la carta come strumento di accesso per i servizi web.
+  - Risorse Grafiche:
+    - title: cie-graphics
+      icon: github
+      url: https://github.com/italia/cie-graphics
+      desc: Icone, loghi e grafiche CIE
   - SDK:
     - title: SDK per Android - Entra con CIE
       icon: github
@@ -89,11 +98,27 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-objc-sdk
       desc: Libreria Objective-C per leggere il Numero Identificativo Servizi
+    - title: SDK per Express.js
+      icon: github
+      url: https://github.com/italia/spid-express
+      desc: Libreria nativa per l'integrazione di CIE in applicazioni Node/Passport (Javascript)
+    - title: SDK per ASPnetCore
+      icon: github
+      url: https://github.com/italia/cie-aspnetcore
+      desc: AspNetCore Remote Authenticator for CIE3.0
+    - title: Libreria di .NET Core per leggere e validare il codice NIS
+      icon: github
+      url: https://github.com/italia/cie-nis-dotnetcore-sdk
+      desc: Libreria per leggere e validare il codice NIS da una CIE mediante .NET Core
+    - title: Libreria per smartphone iOS sviluppata in Swift che include le funzionalità di autenticazione di "Entra con CIE"
+      icon: github
+      url: https://github.com/italia/cieid-ios-sdk
+      desc: Utilizzando questo kit gli sviluppatori di applicazioni terze iOS possono integrare nella propria app l'autenticazione mediante la cartà d'identità elettronica (CIE 3.0).
 ---
 
 ## Intro
 
-La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it)
+La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) versione 3.0 viene già **distribuita in oltre il 90% del territorio italiano** a chiunque chieda o rinnovi la carta d'identità.
 
 La CIE non è solo un documento d’identità, ma una tecnologia utile per la
@@ -119,8 +144,8 @@ Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
 e sicurezza contenute nel microprocessore, le cui specifiche sono
 aperte e disponibili anche in questa pagina.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/cie"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411"><i class="it-comment" /> Dialoga su Slack (#cie)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Dialoga su Slack (#cie)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
 
 ## Dati presenti sulla carta
 
@@ -131,6 +156,6 @@ La CIE contiene le seguenti informazioni, che sono accessibili secondo diverse m
 - **Dati accessibili con PIN:** certificato client
 - **Dati accessibili solo a forze dell’ordine:** impronte digitali
 
-Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing). Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
+Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
 
 ![](/assets/images/cie/cie_detail.png)

@@ -1,36 +1,33 @@
 <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
   <div class="container">
-    <div class="row mt-4 mt-md-0">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
       <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.project_of }}</p>
         <div>
-          <a href="https://www.agid.gov.it/">
-            <img class="" src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="AgID">
+          <a href="{{ site.owner_link }}">
+            <img src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+            <img src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.owner_full }}">
           </a>
         </div>
       </div>
       <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
         <p class="d-block d-md-none mt-2 footer-collaboration-with small">
           {{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
-        <a href="https://innovazione.gov.it/it/chi-siamo/dipartimento/">
+        <a href="{{ site.partner_link }}">
           <div class="d-flex">
             <div class="d-flex">
-              <img class="" src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
-              <img class="" src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
-            </div>
-            <div class="px-2 border-white border-left footer-team-text text-white">
-              {{ site.partner_full | upcase }}
+              <img src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.partner_full }}">
             </div>
           </div>
         </a>
       </div>
-      <div class="footer-social text-right">
+      <div class="footer-social text-right px-3 px-md-0">
         {% include social-icons.html social_items=site.data.social follow_us_text=t.follow_us %}
       </div>
     </div>
 
-    <ul class="footer-links">
+    <ul class="footer-links px-2 px-md-0">
       {% for link in site.data.footer_links %}
       {% assign link_content = link[1].[active_lang] %}
       <li><a href="{{ link_content.url }}">{{ t[link_content.title ] | default: link_content.title | capitalize }}</a></li>
@@ -46,5 +43,4 @@
 <script src="//localhost:8080/bundle.js"></script>
 {% endif %}
 
-{% if jekyll.environment == 'production' and site.google_analytics %} {% include google-analytics.html %} {% endif %}
 {% if jekyll.environment == 'production' and site.piwik %} {% include piwik.html %} {% endif %}
