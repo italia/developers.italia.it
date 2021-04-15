@@ -2,7 +2,7 @@
 layout: post
 title: Disponibile la seconda parte della “Guida allo sviluppo e gestione di software libero”
 subtitle: Il nuovo capitolo dedicato agli amministratori pubblici per supportarli nella gestione e nel mantenimento di soluzioni open source
-date: 2021-04-13 10:00:00 +0100
+date: 2021-04-15 10:00:00 +0100
 tags: community sviluppo developers opensource guide pubblicazioni pa contenuto
 categories: news
 author: Riccardo Iaconelli
