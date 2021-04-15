@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-04-15T07:20:19+00:00</updated>
+  <updated>2021-04-15T14:15:49+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,48 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/04/15/pubblicata-seconda-parte-guida-software-libero</id>
+    <title>Disponibile la seconda parte della “Guida allo sviluppo e gestione di software libero”</title>
+    <updated>2021-04-15T09:00:00+00:00</updated>
+
+    <summary>Il nuovo capitolo dedicato agli amministratori pubblici per supportarli nella gestione e nel mantenimento di soluzioni open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/04/15/pubblicata-seconda-parte-guida-software-libero">&lt;p&gt;Developers Italia pubblica oggi il secondo capitolo della &lt;a href=&quot;/it/news/2020/12/29/guida-sviluppo-gestione-software-libero&quot;&gt;&lt;strong&gt;Guida allo sviluppo e gestione di software libero&lt;/strong&gt;&lt;/a&gt;. Il &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;documento&lt;/a&gt; si rivolge a tecnici, amministratori, e decisori pubblici e ha l’obiettivo di supportare tutti coloro che intendono adottare e offrire software libero a comprenderne e a realizzarne appieno i vantaggi in termini di gestione, riduzione dei costi e miglioramento dei servizi. Tutto ciò accompagnando il lettore con indicazioni e consigli pratici per gestire e sviluppare correttamente il software in modo aperto. La guida contiene anche una raccolta di buone pratiche e riferimenti a risorse esterne utili per lo sviluppo di software più sicuro e di facile manutenzione.&lt;/p&gt;
+
+&lt;p&gt;Dopo il &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/sviluppatori.html&quot;&gt;primo capitolo&lt;/a&gt;, dedicato agli sviluppatori, ciò che pubblichiamo oggi si rivolge ai responsabili delle amministrazioni pubbliche, ossia a coloro che nelle Pubbliche Amministrazioni gestiscono e curano il ciclo di vita dei progetti digitali, garantendone la sostenibilità e la manutenibilità nel tempo. Lo scopo è quello di guidare le amministrazioni in modo semplice e pratico nell’utilizzo degli strumenti tecnici necessari alla gestione del software, ottemperando agli adempimenti previsti dal CAD.&lt;/p&gt;
+
+&lt;p&gt;Il capitolo illustra come rilasciare un nuovo software open source, scegliendo una piattaforma per sviluppare e pubblicare il codice, come adottare la licenza migliore in base alla propria soluzione, come interagire con la community e come gestirne le segnalazioni di errori, di problemi di sicurezza e suggerimenti migliorativi.&lt;/p&gt;
+
+&lt;p&gt;Il nostro intento è quello di supportare concretamente ed operativamente le Pubbliche Amministrazioni a districarsi in un contesto nuovo e complesso, offrendo soluzioni pratiche apprese sul campo anziché mere liste di norme e adempimenti. Queste soluzioni sono studiate, appunto, per massimizzare la semplicità e l’efficacia in termini di creazione di ecosistemi aperti.&lt;/p&gt;
+
+&lt;p&gt;Anche la versione che pubblichiamo oggi sarà gestita in perfetto stile “open source”. Per questo chiediamo fin da ora ai lettori che desidereranno offrire il loro contributo, di mandarci i loro suggerimenti e le loro richieste, anche proponendo direttamente le modifiche sotto forma di &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;Pull Request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;Scopri la guida su Docs Italia&lt;/a&gt; e discutine con &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;la community su Forum Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2021-04-15T09:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="sviluppo" />
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+    <category term="guide" />
+    
+    <category term="pubblicazioni" />
+    
+    <category term="pa" />
+    
+    <category term="contenuto" />
+    
+
+    <author>
+      <name>Riccardo Iaconelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/03/31/spid-sdk-android-ios-inps</id>
     <title>SPID sempre più facile da integrare sulle piattaforme mobili</title>
