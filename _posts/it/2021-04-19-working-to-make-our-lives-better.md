@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working to make our lives better
-subtitle: Developers Italia tra i relatori all’evento internazionale di chiusura del programma ISA2
+subtitle: Developers Italia tra i relatori all’evento internazionale di chiusura del programma ISA²
 date: 2021-04-19 10:00:00 +0100
 tags: 
 categories: news
@@ -12,7 +12,7 @@ ref:
   en: /en/news/2021/04/19/working-to-make-our-lives-better
 ---
 
-Anche Developers Italia parteciperà all’evento internazionale “[Working to make our lives better](https://digitallpublic.eu/)” che si terrà online i prossimi 21, 22 e 23 aprile.
+Anche Developers Italia parteciperà all’evento internazionale “[Working to make our lives better](https://digitallpublic.eu/)” che si terrà online i prossimi 20, 21 e 22 aprile.
 
 Si tratta dell’evento conclusivo del programma europeo [ISA²](https://ec.europa.eu/isa2/isa2_en). L’iniziativa, gestita da DG DIGIT della Commissione Europea, sostiene lo sviluppo di soluzioni digitali che consentono alle pubbliche amministrazioni, alle imprese e ai cittadini in Europa di beneficiare di **servizi pubblici interoperabili transfrontalieri e intersettoriali**. Grazie alla collaborazione degli Stati membri, il programma ha contribuito a creare servizi pubblici condivisi per i cittadini, fornito soluzioni interoperabili gratuite alle aziende e collegato varie organizzazioni in diversi settori.
 

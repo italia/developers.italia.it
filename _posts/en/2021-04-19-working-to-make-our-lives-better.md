@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working to make our lives better
-subtitle: Developers Italia will participate to the ISA2 closing event
+subtitle: Developers Italia will participate to the ISA² closing event
 date:   2021-04-19 10:00:00 +0100
 tags: developers opensource 
 categories: news
@@ -14,12 +14,12 @@ redirect_from:
    - 
 ---
 
-Developers Italia will also participate in the international event "[Working to make our lives better](https://digitallpublic.eu/)" which will be held online on 21, 22 and 23 April.
+Developers Italia will also participate in the international event "[Working to make our lives better](https://digitallpublic.eu/)" which will be held online on the 20th, 21th and 22th of April.
 
 This is the final event of the European programme [ISA²](https://ec.europa.eu/isa2/isa2_en). The initiative, managed by the European Commission's DG DIGIT, supports the development of digital solutions that enable public administrations, businesses and citizens in Europe to benefit from **interoperable cross-border and cross-sector public services**. Thanks to the collaboration of Member States, the programme has helped to create shared public services for citizens, provided free interoperable solutions to businesses and connected various organisations in different sectors.
 
 The conference will be an opportunity to review successes in the digital transformation of public services across the EU and celebrate the next step in this journey by looking ahead to Europe's digital future and launching the new 'Digital Europe' programme.
 
-With over 1500 participants already registered, the event is organised in more than 30 sessions, and will provide an opportunity to take part in discussions on innovation and GovTech, interoperability, open source, smart cities, trust and security. It will host numerous European and international guests from institutions, Member States and industry, including Developers Italia, which will be present on Wednesday 21 April at 10.45 am in the session "[The role of open source in the public sector](https://digitallpublic.eu/agenda/)".
+With over 1500 participants already registered, the event is organised in more than 30 sessions, and will provide an opportunity to take part in discussions on innovation and GovTech, interoperability, open source, smart cities, trust and security. It will host numerous European and international guests from institutions, Member States and industry, including Developers Italia, which will be present on Wednesday 21th April at 10.45 am in the session "[The role of open source in the public sector](https://digitallpublic.eu/agenda/)".
 
 If you are interested you can attend the event by registering at the following [link](https://digitallpublic.app.swapcard.com/event/digitall-public/planning/UGxhbm5pbmdfMzUzNTA3).
