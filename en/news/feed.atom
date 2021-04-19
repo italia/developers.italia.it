@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://developers.italia.it/en/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-04-19T06:05:16+00:00</updated>
+  <updated>2021-04-19T13:03:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/en/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,34 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="en">
+    <id>https://developers.italia.it/en/news/2021/04/19/working-to-make-our-lives-better</id>
+    <title>Working to make our lives better</title>
+    <updated>2021-04-19T09:00:00+00:00</updated>
+
+    <summary>Developers Italia will participate to the ISA² closing event </summary>
+    <content type="html" xml:base="https://developers.italia.it/en/news/2021/04/19/working-to-make-our-lives-better">&lt;p&gt;Also Developers Italia will participate in the international event “&lt;a href=&quot;https://digitallpublic.eu/&quot;&gt;Working to make our lives better&lt;/a&gt;” which will be held online on the 20th, 21th and 22nd of April.&lt;/p&gt;
+
+&lt;p&gt;This is the final event of the &lt;a href=&quot;https://ec.europa.eu/isa2/isa2_en&quot;&gt;ISA²&lt;/a&gt; European programme. The initiative, managed by the European Commission’s DG DIGIT, supports the development of digital solutions that enable public administrations, businesses and citizens in Europe to benefit from &lt;strong&gt;interoperable cross-border and cross-sector public services&lt;/strong&gt;. Thanks to the collaboration of Member States, the programme has helped to create shared public services for citizens, provided free interoperable solutions to businesses and connected various organisations in different sectors.&lt;/p&gt;
+
+&lt;p&gt;The conference will be an opportunity to review successes in the digital transformation of public services across the EU and celebrate the next step in this journey by looking ahead to Europe’s digital future and launching the new ‘Digital Europe’ programme.&lt;/p&gt;
+
+&lt;p&gt;With over 1500 participants already registered, the event is organised in more than 30 sessions, and will provide an opportunity to take part in discussions on innovation and GovTech, interoperability, open source, smart cities, trust and security. It will host numerous European and international guests from institutions, Member States and industry, including Developers Italia, which will be present on Wednesday the 21st of April at 10.45 am in the session “&lt;a href=&quot;https://digitallpublic.eu/agenda/&quot;&gt;The role of open source in the public sector&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;p&gt;If you are interested you can attend the event by registering at the following &lt;a href=&quot;https://digitallpublic.app.swapcard.com/event/digitall-public/planning/UGxhbm5pbmdfMzUzNTA3&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2021-04-19T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="en">
     <id>https://developers.italia.it/en/news/2019/03/07/developers-italia-at-google-summer-of-code-2019</id>
     <title>Developers Italia at the Google Summer of Code 2019</title>

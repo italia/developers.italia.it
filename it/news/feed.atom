@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-04-19T06:05:16+00:00</updated>
+  <updated>2021-04-19T13:03:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,30 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/04/19/working-to-make-our-lives-better</id>
+    <title>Working to make our lives better</title>
+    <updated>2021-04-19T09:00:00+00:00</updated>
+
+    <summary>Developers Italia tra i relatori all’evento internazionale di chiusura del programma ISA² </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/04/19/working-to-make-our-lives-better">&lt;p&gt;Anche Developers Italia parteciperà all’evento internazionale “&lt;a href=&quot;https://digitallpublic.eu/&quot;&gt;Working to make our lives better&lt;/a&gt;” che si terrà online i prossimi 20, 21 e 22 aprile.&lt;/p&gt;
+
+&lt;p&gt;Si tratta dell’evento conclusivo del programma europeo &lt;a href=&quot;https://ec.europa.eu/isa2/isa2_en&quot;&gt;ISA²&lt;/a&gt;. L’iniziativa, gestita da DG DIGIT della Commissione Europea, sostiene lo sviluppo di soluzioni digitali che consentono alle pubbliche amministrazioni, alle imprese e ai cittadini in Europa di beneficiare di &lt;strong&gt;servizi pubblici interoperabili transfrontalieri e intersettoriali&lt;/strong&gt;. Grazie alla collaborazione degli Stati membri, il programma ha contribuito a creare servizi pubblici condivisi per i cittadini, fornito soluzioni interoperabili gratuite alle aziende e collegato varie organizzazioni in diversi settori.&lt;/p&gt;
+
+&lt;p&gt;Il convegno sarà l’occasione per analizzare i successi nella trasformazione digitale dei servizi pubblici in tutta l’UE e celebrare il prossimo passo di questo viaggio guardando al futuro digitale dell’Europa dando l’avvio al nuovo programma “Digital Europe”.&lt;/p&gt;
+
+&lt;p&gt;Con oltre 1500 partecipanti già registrati, l’evento è organizzato in più di 30 sessioni, e darà l’occasione di prendere parte a discussioni su innovazione e GovTech, interoperabilità, open source, città intelligenti, fiducia e sicurezza. Ospiterà numerosi ospiti europei e internazionali provenienti da istituzioni, Stati membri e mondo dell’industria, tra i quali anche Developers Italia, presente mercoledì 21 aprile alle 10.45 nella sessione “&lt;a href=&quot;https://digitallpublic.eu/agenda/&quot;&gt;The role of open source in the public sector&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;p&gt;Se sei interessato puoi partecipare all’evento registrandoti al seguente &lt;a href=&quot;https://digitallpublic.app.swapcard.com/event/digitall-public/planning/UGxhbm5pbmdfMzUzNTA3&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2021-04-19T09:00:00+00:00</published>
+
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/04/15/pubblicata-seconda-parte-guida-software-libero</id>
     <title>Disponibile la seconda parte della “Guida allo sviluppo e gestione di software libero”</title>
