@@ -16,7 +16,7 @@ redirect_from:
 
 Developers Italia will also participate in the international event "[Working to make our lives better](https://digitallpublic.eu/)" which will be held online on the 20th, 21th and 22th of April.
 
-This is the final event of the European programme [ISA²](https://ec.europa.eu/isa2/isa2_en). The initiative, managed by the European Commission's DG DIGIT, supports the development of digital solutions that enable public administrations, businesses and citizens in Europe to benefit from **interoperable cross-border and cross-sector public services**. Thanks to the collaboration of Member States, the programme has helped to create shared public services for citizens, provided free interoperable solutions to businesses and connected various organisations in different sectors.
+This is the final event of the [ISA²](https://ec.europa.eu/isa2/isa2_en) European programme. The initiative, managed by the European Commission's DG DIGIT, supports the development of digital solutions that enable public administrations, businesses and citizens in Europe to benefit from **interoperable cross-border and cross-sector public services**. Thanks to the collaboration of Member States, the programme has helped to create shared public services for citizens, provided free interoperable solutions to businesses and connected various organisations in different sectors.
 
 The conference will be an opportunity to review successes in the digital transformation of public services across the EU and celebrate the next step in this journey by looking ahead to Europe's digital future and launching the new 'Digital Europe' programme.
 
