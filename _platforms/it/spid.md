@@ -128,8 +128,8 @@ resources:
       desc: Keycloak OIDC to SAML2 SPID Proxy
     - title: Proxy con Shibboleth
       icon: github
-      url: https://github.com/italia/spid-shibboleth-proxy-docker
-      desc: Immagine Docker per creare un proxy basato su Apache2 e Shibboleth
+      url: https://github.com/robertogallea/spid-idp-proxy-shibboleth
+      desc: Shibboleth IDP con possibilità di delegare l'autenticazione ad un IDP SPID
     - title: IAM in Python
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
@@ -213,6 +213,7 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 3. Usa un Identity Provider di test come [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} oppure [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/){:target="_blank"}.
 5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+6. Se hai ulteriori domande o stai riscontrando problemi con la procedura di accreditamente consulta la pagina di servizio [SPID HelpDesk](https://helpdesk.spid.gov.it/index.php?a=add).
 
 SPID è basato sul protocollo SAML2, per configurarlo è possibile scegliere una tra le molteplici soluzioni disponibili:
 
