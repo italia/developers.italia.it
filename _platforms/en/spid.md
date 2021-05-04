@@ -168,6 +168,18 @@ resources:
       url: https://github.com/italia/spid-metadata-signer
       icon: github
       desc:  SPID metadata signing tool for an SP
+    - title: Firefox SAML Tracer plugin
+      url: https://addons.mozilla.org/en-US/firefox/addon/saml-tracer/
+      icon:
+      desc: A Firefox addon for viewing SAML and WS-Federation messages sent through the browser during single sign-on and single logout.
+    - title: Chrome SAML
+      url: https://chrome.google.com/webstore/detail/saml-chrome-panel/paijfdbeoenhembfhkhllainmocckace
+      icon:
+      desc: A Chromium extension for viewing SAML and WS-Federation messages sent through the browser during single sign-on and single logout.
+    - title: SAML Developer Tools
+      url: https://www.samltool.com
+      icon:
+      desc: Onelogin SAML2 tools
 ---
 
 ## Intro

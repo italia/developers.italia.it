@@ -34,6 +34,10 @@ COPY Gemfile .
 COPY Gemfile.lock .
 COPY LICENSE .
 COPY Makefile .
+COPY webpack.common.js .
+COPY webpack.dev.js .
+COPY webpack.prod.js .
+COPY babel.config.js .
 COPY package-lock.json .
 COPY package.json .
 

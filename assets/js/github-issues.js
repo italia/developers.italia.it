@@ -81,7 +81,7 @@ $(document).ready(function () {
         },
       },
     ],
-    initComplete: () => {
+    initComplete() {
       this.api()
         .column('project:name')
         .every(function () {
