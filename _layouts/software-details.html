@@ -691,25 +691,29 @@ layout: default
         <div class="col-12 relate">
           {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
+          {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
+            {% assign category = "software_reuse" %}
+            {% assign icon = "it-software" %}
+            {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
+          {% else %}
+            {% assign category = "software_open" %}
+            {% assign fallback = "it-open-source" %}
+            {% assign fallback = "/assets/images/cover_software_opensource.png" %}
+          {% endif %}
 
-          <div class="img-container">
-            <a href="{{ relsw_url }}" title="{{ relsw_name }}">
-              {% capture swClasses %} w-100 {% endcapture %}
-              {% include display-logo.html
-                logo = relsw.publiccode.logo
-                id = relsw.id
-                screenshots = relsw_description.screenshots
-                classes = swClasses
-                codiceIPA = relsw.publiccode.it.riuso.codiceIPA
-              %}
-            </a>
-          </div>
-          <div class="relate-body">
-            <p class="relate-title">
-              {{ relsw_name }}
-            </p>
-            <a href="{{ relsw_url }}" class="relate-link"> {{ t.software.read_more }} &rarr;</a>
-          </div>
+          {% assign first_screenshot = relsw_description.screenshots | first %}
+
+          <catalogue-item
+            class="w-100"
+            id="{{  relsw.id }}"
+            name="{{ relsw_name }}"
+            description="{{ relswdescription }}"
+            url="{{ relsw_url }}"
+            icon="{{ icon }}"
+            category="{{ category }}"
+            logo="{{ relsw.publiccode.logo | default: first_screenshot }}"
+            fallback="{{ fallback }}"
+          ></catalogue-item>
         </div>
         {% endfor %}
       </div>

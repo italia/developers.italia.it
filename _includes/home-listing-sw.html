@@ -28,29 +28,33 @@
             {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: item.slug | downcase %}
 
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
-                <article
-                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{% else %}px-3{% endif %}">
-                    {% if withimages == true %}
+              {% if withimages == true %}
 
-                    <a title="{{ sw_name }}" href="{{ sw_url }}" class="home-listing-item__imgwrapper w-100">
-                    {% capture homeClasses %} home-listing-item__img w-100 {% endcapture %}
-                    {% include display-logo.html
-                        logo = item.publiccode.logo
-                        id = item.id
-                        screenshots = description.screenshots
-                        classes = homeClasses
-                        codiceIPA = item.publiccode.it.riuso.codiceIPA
-                    %}
-                    </a>
-                    {% endif %}
+              {% if item.publiccode.it.riuso.codiceIPA != nil %}
+                {% assign category = "software_reuse" %}
+                {% assign icon = "it-software" %}
+                {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
+              {% else %}
+                {% assign category = "software_open" %}
+                {% assign fallback = "it-open-source" %}
+                {% assign fallback = "/assets/images/cover_software_opensource.png" %}
+              {% endif %}
 
-                    <h1 class="home-listing-item__title ">
-                        <a title="{{ sw_name }}" href="{{ sw_url }}" class="color-inherit">{{sw_name}}</a>
-                    </h1>
-                    <a title="{{ sw_name }}" class="home-listing-item__url" href="{{ sw_url }}">{{t.software.read_more}}
-                        &rarr;</a>
+              {% assign first_screenshot = description.screenshots | first %}
 
-                </article>
+              <catalogue-item
+                class="h-100"
+                id="{{  item.id }}"
+                name="{{ sw_name }}"
+                description="{{ description.shortDescription }}"
+                url="{{ sw_url }}"
+                icon="{{ icon }}"
+                category="{{ category }}"
+                logo="{{ item.publiccode.logo | default: first_screenshot }}"
+                fallback="{{ fallback }}"
+              ></catalogue-item>
+
+              {% endif %}
             </div>
             {% endfor %}
         </div>

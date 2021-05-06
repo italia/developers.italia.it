@@ -1,47 +1,39 @@
 {% include setlang.html %}
-
+<div class="row row-eq-height">
 {% for software in include.items %}
 
-{% assign description = software.publiccode.description[active_lang]
-        | default: software.publiccode.description.en
-        | default: software.publiccode.description.it %}
+  {% assign description = software.publiccode.description[active_lang]
+          | default: software.publiccode.description.en
+          | default: software.publiccode.description.it %}
 
-{% assign sw_name = description.localisedName | default: software.publiccode.name %}
+  {% assign sw_name = description.localisedName | default: software.publiccode.name %}
 
-<div class="col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
-    {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
-    <a href="{{sw_url}}" class="d-block decoration-none ">
-        {% if include.show_type %}
-        {% if software.publiccode.it.riuso.codiceIPA != nil %}
-        <div class='d-flex align-items-center mb-2'>
-          <svg class="icon mr-2">
-            <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
-          </svg>
-          <div>{{ t.software.software_reuse }}</div>
-        </div>
-        {% else %}
-        <div class='d-flex align-items-center mb-2'>
-          <svg class="icon mr-2">
-            <use xlink:href="/assets/svg/sprite.svg#it-open-source"></use>
-          </svg>
-          <div>{{ t.software.software_open }}</div>
-        </div>
-        {% endif %}
-        {% endif %}
+  {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
+  {% if software.publiccode.it.riuso.codiceIPA != nil %}
+    {% assign category = "software_reuse" %}
+    {% assign icon = "it-software" %}
+    {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
+  {% else %}
+    {% assign category = "software_open" %}
+    {% assign fallback = "it-open-source" %}
+    {% assign fallback = "/assets/images/cover_software_opensource.png" %}
+  {% endif %}
 
-        {% assign swClasses = "main-image" %}
-        {% include display-logo.html
-            logo = software.publiccode.logo
-            id = software.id
-            codiceIPA = software.publiccode.it.riuso.codiceIPA
-            screenshots = description.screenshots
-            classes = swClasses
-        %}
+  {% assign first_screenshot = description.screenshots | first %}
 
-        <p class="name color-inherit">
-            {{ sw_name }}
-        </p>
-        <span class="item-more"> {{ t.software.read_more }} &rarr;</span>
-    </a>
-</div>
+  <div class="col-md">
+    <catalogue-item
+      class="main-image"
+      id="{{ include.scope }}-{{  software.id }}"
+      name="{{ sw_name }}"
+      description="{{ description.shortDescription }}"
+      url="{{ sw_url }}"
+      icon="{{ icon }}"
+      category="{{ category }}"
+      logo="{{ software.publiccode.logo | default: first_screenshot }}"
+      fallback="{{ fallback }}"
+    ></catalogue-item>
+  </div>
 {% endfor %}
+
+</div>

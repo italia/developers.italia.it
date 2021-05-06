@@ -74,7 +74,7 @@ const administrationItem = (source) => ({
   description: '',
   icon: 'it-pa',
   logo: '/assets/images/cover_amministrazioni.png',
-  logoPlaceholder: '/assets/images/cover_amministrazioni.png',
+  fallback: '/assets/images/cover_amministrazioni.png',
   name: source['it-riuso-codiceIPA-label'],
   url: `/${lang}/pa/${source['it-riuso-codiceIPA']}`,
 });
@@ -106,7 +106,7 @@ const softwareItem = (source) => {
     description,
     icon,
     logo,
-    logoPlaceholder: fallback,
+    fallback,
     name,
     url,
   };
@@ -119,7 +119,7 @@ const newsItem = (source) => ({
   description: cropString(source.subtitle),
   icon: 'it-horn',
   logo: source.image,
-  logoPlaceholder: LOGO_IT,
+  fallback: LOGO_IT,
   name: source.title,
   url: source.url,
 });
@@ -131,7 +131,7 @@ const platformItem = (source) => {
     description,
     icon: 'it-piattaforme',
     logo: source.logo ?? '/assets/images/cover_piattaforme.png',
-    logoPlaceholder: '/assets/images/cover_piattaforme.png',
+    fallback: '/assets/images/cover_piattaforme.png',
     name: source.title,
     url: source.url,
   };
@@ -142,7 +142,7 @@ const apiItem = (source) => ({
   description: cropString(source.abstract),
   icon: 'it-settings',
   logo: source?.contact?.logo ?? '/assets/images/cover_api.png',
-  logoPlaceholder: '/assets/images/cover_api.png',
+  fallback: '/assets/images/cover_api.png',
   name: source.title,
   url: source.url,
 });
@@ -152,7 +152,7 @@ const pageItem = (source) => ({
   description: cropString(source.text),
   icon: 'it-file',
   logo: source.image ?? LOGO_IT,
-  logoPlaceholder: LOGO_IT,
+  fallback: LOGO_IT,
   name: source.title,
   url: source.url,
 });
