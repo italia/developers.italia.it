@@ -80,3 +80,15 @@
   tags: [data]
   language: [it]
   slug: istat-sdmx-rest
+- openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/ows01-agenzia-entrate.yaml
+  title: Cartografia Catastale WMS
+  abstract: >-
+    Servizio di consultazione della cartografia catastale WMS. Le informazioni
+    sono allineate con la banca dati cartografica del Catasto.
+  contact:
+    name: Agenzia delle Entrate
+    logo: https://telematici.agenziaentrate.gov.it/resources/img/AgenziaEntrate_logo_152.png
+  tags: [data]
+  language: [it]
+  slug: ade-cartografia-wms
+

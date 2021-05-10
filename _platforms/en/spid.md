@@ -124,8 +124,8 @@ resources:
       desc: Keycloak OIDC to SAML2 SPID Proxy
     - title: Proxy con Shibboleth
       icon: github
-      url: https://github.com/italia/spid-shibboleth-proxy-docker
-      desc: Docker image that enables a IAM proxy, based on Apache2 and Shibboleth
+      url: https://github.com/robertogallea/spid-idp-proxy-shibboleth
+      desc: SPID Proxy based on Shibboleth IDP and SP
     - title: IAM in Python
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
@@ -208,7 +208,8 @@ SPID can be integrated in the websites of the Public Administration, but also on
 2. Use and contribute to the open source components available in [Developers Italia](https://github.com/italia?q=spid).
 3. Use a test identity provider such as[spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} or [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} to simulate the authentication flow and verify that your implementation is correct.
 4. Get in touch with other developers at [Slack](https://slack.developers.italia.it/){:target="_blank"}.
-5. Follow the accreditation procedure [described here](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+5. Follow the onboarding procedure [described here](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+6. If you have any further questions or are having problems with onboarding procedure, please contact [SPID HelpDesk](mailto:spid.tech@agid.gov.it).
 
 SPID is based on the SAML2 protocol, thus the integration can be done in several ways:
 
