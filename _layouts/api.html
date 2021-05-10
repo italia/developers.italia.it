@@ -39,7 +39,7 @@ layout: default
             <article class="d-flex flex-column align-items-start h-100 mb-md-2 p-2 p-md-5">
               {% if api.contact.logo %}
               <figure>
-                <img class="w-100" alt="" src="{{api.contact.logo | relative_url}}">
+                <img alt="{{api.contact.name}}" src="{{api.contact.logo | relative_url}}">
               </figure>
               {% endif %}
               {% if api.comingsoon != true %}
