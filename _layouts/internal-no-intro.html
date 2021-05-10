@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+{% if page.alternate-blocks!=nil%}
+{% include alternate-blocks.html blocks=page.alternate-blocks %}
+{% endif %}
+{% if page.include-developers-newsletter %}
+{% include banner-newsletter.html newsletterdata=site.newsletterdata %}
+{% endif %}
+{% if page.pair-blocks!=nil%}
+{% include pair-blocks.html blocks=page.pair-blocks %}
+{% endif %}
+
+{% if page.include-discuss %}
+{% include banner-discuss.html %}
+{% endif %}
+
+{% include banner-joinus.html %}
