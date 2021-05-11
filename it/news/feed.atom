@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-05-11T06:06:03+00:00</updated>
+  <updated>2021-05-11T16:58:11+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -20,7 +20,9 @@
     <updated>2021-05-07T09:00:00+00:00</updated>
 
     <summary>Al via il ciclo di webinar dedicato agli RTD dei Comuni italiani </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2021/05/07/come-progettare-realizzare-sito-web-comune">&lt;p&gt;Rendere più semplice ed efficace il sito del proprio Comune, sulla base degli effettivi bisogni dei cittadini. E’ questo l’obiettivo del corso “Progettare e realizzare il sito web di un Comune”, una serie di incontri dedicati agli RTD e al personale dei relativi uffici in avvio il prossimo 18 maggio.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/05/07/come-progettare-realizzare-sito-web-comune">&lt;p&gt;🔴 11/05/2021 - Questa iniziativa formativa, rivolta ai Responsabili della transizione digitale e agli Uffici del Responsabile della transizione digitale dei Comuni, sta ricevendo un’ampia richiesta di partecipazione ai tre webinar del 18, 25 maggio e 8 giugno. Si ricorda che la partecipazione è aperta ai primi 100 iscritti che rientrano, per profilo professionale ed ente di riferimento, nel target indicato. Nonostante ciò, visto il carattere pilota e sperimentale di questa iniziativa, per chi non sarà inserito nella lista dei partecipanti di questa edizione, sarà presto disponibile la registrazione dei webinar, in vista di una nuova programmazione autunnale di sessioni formative mirate che andranno, seppur sempre con una adeguata selezione dei partecipanti, ad ampliare il target dei destinatari dell’azione formativa. 🔴&lt;/p&gt;
+
+&lt;p&gt;Rendere più semplice ed efficace il sito del proprio Comune, sulla base degli effettivi bisogni dei cittadini. E’ questo l’obiettivo del corso “Progettare e realizzare il sito web di un Comune”, una serie di incontri dedicati agli RTD e al personale dei relativi uffici in avvio il prossimo 18 maggio.&lt;/p&gt;
 
 &lt;p&gt;Organizzato dal Dipartimento per la trasformazione digitale, AgID e Formez PA, il ciclo di tre webinar riguarderà le risorse messe a disposizione da &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt; e &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; per la progettazione e lo sviluppo di siti istituzionali dedicati alle amministrazioni comunali.&lt;/p&gt;
 
