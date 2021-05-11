@@ -17,4 +17,4 @@ match($0, "/../(api|pa|software)/", m){
   }
 }
 { print }
-' | xargs npx pa11y-ci
+' | xargs npx --node-arg "--unhandled-rejections=strict" pa11y-ci
