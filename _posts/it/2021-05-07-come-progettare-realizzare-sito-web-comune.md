@@ -10,6 +10,8 @@ image: /assets/icons/logo-it.png
 locale: it
 ---
 
+🔴 11/05/2021 - Questa iniziativa formativa, rivolta ai Responsabili della transizione digitale e agli Uffici del Responsabile della transizione digitale dei Comuni, sta ricevendo un'ampia richiesta di partecipazione ai tre webinar del 18, 25 maggio e 8 giugno. Si ricorda che la partecipazione è aperta ai primi 100 iscritti che rientrano, per profilo professionale ed ente di riferimento, nel target indicato. Nonostante ciò, visto il carattere pilota e sperimentale di questa iniziativa, per chi non sarà inserito nella lista dei partecipanti di questa edizione, sarà presto disponibile la registrazione dei webinar, in vista di una nuova programmazione autunnale di sessioni formative mirate che andranno, seppur sempre con una adeguata selezione dei partecipanti, ad ampliare il target dei destinatari dell'azione formativa. 🔴
+
 Rendere più semplice ed efficace il sito del proprio Comune, sulla base degli effettivi bisogni dei cittadini. E’ questo l’obiettivo del corso “Progettare e realizzare il sito web di un Comune”, una serie di incontri dedicati agli RTD e al personale dei relativi uffici in avvio il prossimo 18 maggio.
 
 Organizzato dal Dipartimento per la trasformazione digitale, AgID e Formez PA, il ciclo di tre webinar riguarderà le risorse messe a disposizione da [Designers Italia](https://designers.italia.it/) e [Developers Italia](https://developers.italia.it/) per la progettazione e lo sviluppo di siti istituzionali dedicati alle amministrazioni comunali. 
