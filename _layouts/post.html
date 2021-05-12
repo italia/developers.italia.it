@@ -28,7 +28,7 @@ layout: default
   <div class="postarticle__content my-2 my-md-4 py-2 py-md-4">
     <div class="container d-flex justify-content-center pb-2">
       <div class="col-md-10 ">
-      
+
         <div class="d-flex py-4">
         {% if page.author %}
         <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="postarticle__author">
@@ -46,7 +46,7 @@ layout: default
           {{ content }}
       </div>
 
-      {% if active_lang=='it' %}
+      {% if page.tags.size > 0 and active_lang=='it' %}
         <hr class="pb-2 pb-md-5">
         {% include pills.html items=page.tags header=t.news_categories %}
       {% endif %}

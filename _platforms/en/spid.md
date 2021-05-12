@@ -120,7 +120,7 @@ resources:
       desc: Python Proxy with Docker image to enable traditional SAML2 SPs in SPID
     - title: Keycloak
       icon: github
-      url: https://github.com/italia/spid-keycloak-entando
+      url: https://github.com/italia/keycloak-spid-provider
       desc: Keycloak OIDC to SAML2 SPID Proxy
     - title: Proxy con Shibboleth
       icon: github
