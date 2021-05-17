@@ -9,13 +9,13 @@ author: Riccardo Iaconelli
 image: /assets/icons/logo-it.png
 locale: it
 ---
-Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. È questo l’obiettivo della **Settimana Aperta della Pubblica Amministrazione** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’Open Gov Week.
+Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. È questo l’obiettivo della **[Settimana Aperta della Pubblica Amministrazione](http://open.gov.it/2021/04/27/opengov-week-settimana-dellamministrazione-aperta-dal-17-al-21-maggio-a-livello-mondiale/)** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’[Open Gov Week](https://www.opengovweek.org/).
 
 L’evento consiste in cinque giornate (dal 17 al 21 maggio 2021) dedicate a sviluppare la cultura e la pratica della trasparenza, della partecipazione e dell’accountability sia nelle amministrazioni pubbliche che nella società.
 
 Riconoscendosi a pieno nello spirito che anima questa iniziativa collettiva, Developers Italia e Designers Italia intendono dare il proprio contributo facilitando coloro che desiderano **migliorare i servizi pubblici del Paese**.
 
-Rilasciamo quindi oggi la prima versione di **uno strumento web** che aiuti gli aspiranti contributori a migliorare, con azioni concrete, il software libero per la pubblica amministrazione, bene comune di tutto il Paese.
+Rilasciamo quindi oggi la prima versione di **[uno strumento web](https://come-partecipo.italia.it/)** che aiuti gli aspiranti contributori a migliorare, con azioni concrete, il software libero per la pubblica amministrazione, bene comune di tutto il Paese.
 
 Le azioni proposte, in pieno spirito open source, possono essere realizzate già oggi da tutti coloro che desiderano supportare la transizione digitale della Pubblica Amministrazione in ottica di apertura, trasparenza, qualità ed efficienza.
 
