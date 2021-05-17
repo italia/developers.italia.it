@@ -2,7 +2,7 @@
 layout: post
 title: Scopri come contribuire al miglioramento dei servizi pubblici digitali del Paese
 subtitle: Una nuova iniziativa di Developers Italia e Designers Italia per la Settimana Aperta della PA
-date: 2021-05-14 10:00:00 +0100
+date: 2021-05-17 10:00:00 +0100
 tags: ogp wizard designers community guida partecipazione
 categories: news
 author: Riccardo Iaconelli
