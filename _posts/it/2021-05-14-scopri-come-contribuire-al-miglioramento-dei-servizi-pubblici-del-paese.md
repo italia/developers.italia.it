@@ -15,7 +15,7 @@ L’evento consiste in cinque giornate (dal 17 al 21 maggio 2021) dedicate a svi
 
 Riconoscendosi a pieno nello spirito che anima questa iniziativa collettiva, Developers Italia e Designers Italia intendono dare il proprio contributo facilitando coloro che desiderano **migliorare i servizi pubblici del Paese**.
 
-Rilasciamo quindi oggi la prima versione di **uno strumento web **che aiuti gli aspiranti contributori a migliorare, con azioni concrete, il cuore del software libero per la pubblica amministrazione, bene comune di tutto il Paese.
+Rilasciamo quindi oggi la prima versione di **uno strumento web** che aiuti gli aspiranti contributori a migliorare, con azioni concrete, il software libero per la pubblica amministrazione, bene comune di tutto il Paese.
 
 Le azioni proposte, in pieno spirito open source, possono essere realizzate già oggi da tutti coloro che desiderano supportare la transizione digitale della Pubblica Amministrazione in ottica di apertura, trasparenza, qualità ed efficienza.
 
