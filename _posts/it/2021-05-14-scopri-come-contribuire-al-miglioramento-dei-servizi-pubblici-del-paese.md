@@ -9,7 +9,7 @@ author: Riccardo Iaconelli
 image: /assets/icons/logo-it.png
 locale: it
 ---
-Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. E’ questo l’obiettivo della **Settimana Aperta della Pubblica Amministrazione** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’Open Gov Week.
+Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. È questo l’obiettivo della **Settimana Aperta della Pubblica Amministrazione** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’Open Gov Week.
 
 L’evento consiste in cinque giornate (dal 17 al 21 maggio 2021) dedicate a sviluppare la cultura e la pratica della trasparenza, della partecipazione e dell’accountability sia nelle amministrazioni pubbliche che nella società.
 
