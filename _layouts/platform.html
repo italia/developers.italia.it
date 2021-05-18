@@ -55,6 +55,19 @@ Still to-do:
             <a href="{{ page.external_website }}" target="_blank">{{ page.external_website }}</a>
           </div>
           {% endif %}
+
+          {% assign page_name = "issues" %}
+          {% if active_lang == 'it' %}
+            {% assign page_name = "attivita" %}
+          {% endif %}
+
+          {% assign split = page.url | split: '/' %}
+          {% assign platform = split[2] %}
+
+          <div class="col-12 col-lg-4">
+            <span class="d-block">{{ t.project_issues }}</span>
+            <a href="/{{ active_lang }}/{{ page_name }}?platform={{ platform }}">{{ t.project_issues_go }} →</a>
+          </div>
         </div>
       </div>
       <div class="col-md-3">

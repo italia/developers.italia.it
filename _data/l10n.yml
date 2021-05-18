@@ -131,6 +131,8 @@ it:
     project_owner: Titolare
     project_manager: Gestore
     project_risorse: Risorse
+    project_issues: Attività aperte
+    project_issues_go: Vai alla pagina delle Attività
 
     swagger:
       download: "Scarica specifica"
@@ -382,6 +384,8 @@ en:
     project_owner: Owner
     project_manager: Manager
     project_risorse: Resources
+    project_issues: Open issues
+    project_issues_go: Go to Issues page
 
     swagger:
       download: "Download OpenAPI"
