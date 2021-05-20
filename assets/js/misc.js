@@ -47,7 +47,12 @@ $(function () {
         }
         const clickedGallery = $(clickedListItem).closest('.tiled-gallery-inner')[0];
 
-        const index = Number(clickedListItem.dataset.index);
+        let index = -1;
+        $('a.tiled-item').each((idx, item) => {
+          if (clickedListItem === item) {
+            index = idx;
+          }
+        });
 
         if (index >= 0) {
           openPhotoSwipe(index, clickedGallery);
