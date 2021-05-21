@@ -26,7 +26,7 @@
       class="main-image"
       id="{{ include.scope }}-{{  software.id }}"
       name="{{ sw_name }}"
-      description="{{ description.shortDescription }}"
+      description="{{ description.shortDescription | escape }}"
       url="{{ sw_url }}"
       icon="{{ icon }}"
       category="{{ category }}"

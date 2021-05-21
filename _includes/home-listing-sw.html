@@ -46,7 +46,7 @@
                 class="h-100"
                 id="{{  item.id }}"
                 name="{{ sw_name }}"
-                description="{{ description.shortDescription }}"
+                description="{{ description.shortDescription | escape }}"
                 url="{{ sw_url }}"
                 icon="{{ icon }}"
                 category="{{ category }}"
