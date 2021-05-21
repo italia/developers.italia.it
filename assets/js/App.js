@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { SearchContainer } from './components/Search/SearchContainer.js';
 import { CatalogueContainer } from './components/Catalogue/CatalogueContainer.js';
+import { PubliccodeBadge } from './components/PubliccodeBadge.js';
 import { CatalogueItem } from './components/Catalogue/CatalogueItem.js';
 import { MailingListSubscribe } from './components/MailingList/MailingListSubscribe.js';
 import { MailingListConfirmation } from './components/MailingList/MailingListConfirmation.js';
@@ -10,6 +11,7 @@ export const App = () => {
   const search = useRef(Array.from(document.getElementsByTagName('custom-search')));
   const catalogue = useRef(Array.from(document.getElementsByTagName('custom-catalogue')));
   const thumbnails = useRef(Array.from(document.getElementsByTagName('catalogue-item')));
+  const publiccodeBadge = useRef(Array.from(document.getElementsByTagName('publiccode-badge')));
   const mailingListSubscribe = useRef(Array.from(document.getElementsByTagName('mailing-list-subscribe')));
   const mailingListConfirmation = useRef(Array.from(document.getElementsByTagName('mailing-list-confirmation')));
 
@@ -32,6 +34,7 @@ export const App = () => {
       {thumbnails.current.map((t) => renderThumbnail(t))}
       {mailingListSubscribe.current.map((p) => renderCustomElement(p, MailingListSubscribe))}
       {mailingListConfirmation.current.map((p) => renderCustomElement(p, MailingListConfirmation))}
+      {publiccodeBadge.current.map((p) => renderCustomElement(p, PubliccodeBadge))}
     </>
   );
 };
