@@ -419,6 +419,13 @@ layout: default
                   {{ page.publiccode.maintenance.type }}
                 </p>
               </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Stato publiccode.yml</span>
+                  <publiccode-badge repo="{{ page.publiccode.url | escape }}"></publiccode-badge>
+                <p>
+              </div>
+
               {% if page.publiccode.maintenance.type == "contract" %}
               {% if page.publiccode.maintenance.contractors[0].name != nil %}
               <div class="col-sm-12 col-md">
