@@ -1,45 +1,44 @@
 <div class="tiled-gallery">
   <div class="tiled-gallery-inner">
-    {% assign tiledItemIndex = 0 %}
     {% assign onError = 'onerror="' | append: 'this.parentElement.parentElement.removeChild(this.parentElement);"' %}
     {% if include.screenshots.size <= 3 %} {% for item in include.screenshots %}
 
-    <a class="tiled-item" href="{{ item }}"  data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
        data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     {% elsif include.screenshots.size == 4 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
       {% endfor %}
     </div>
     {% for item in include.screenshots offset: 3 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     {% elsif include.screenshots.size == 5 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -47,7 +46,7 @@
     </div>
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -55,14 +54,14 @@
     </div>
     {% elsif include.screenshots.size == 6 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -70,28 +69,28 @@
     </div>
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
       {% endfor %}
     </div>
     {% for item in include.screenshots offset: 5 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     {% elsif include.screenshots.size == 7 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offeset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -99,28 +98,28 @@
     </div>
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
       {% endfor %}
     </div>
     {% for item in include.screenshots offset: 5 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     {% elsif include.screenshots.size == 8 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -128,7 +127,7 @@
     </div>
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -136,14 +135,14 @@
     </div>
     {% for item in include.screenshots
       limit: 1 offset: 5 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots offset: 6 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -151,14 +150,14 @@
     </div>
     {% elsif include.screenshots.size >= 9 %}
     {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -166,14 +165,14 @@
     </div>
     {% for item in include.screenshots
       limit: 1 offset: 3 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
     {% endfor %}
     <div class="tiled-items-container">
       {% for item in include.screenshots limit: 2 offset: 4 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -182,7 +181,7 @@
     <div class="tiled-items-container">
       {% for item in include.screenshots
         limit:2 offset: 6 %}
-      <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+      <a class="tiled-item" href="{{ item }}"
         data-size="{{ item| image.width }}x{{ item | image.height }}">
         <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
       </a>
@@ -190,7 +189,7 @@
     </div>
     {% for item in include.screenshots
       offset: 8 %}
-    <a class="tiled-item" href="{{ item }}" data-index="{% increment tiledItemIndex %}"
+    <a class="tiled-item" href="{{ item }}"
       data-size="{{ item| image.width }}x{{ item | image.height }}">
       <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
     </a>
