@@ -22,6 +22,7 @@ it:
     lang_on_site: sito in italiano
     navigation_menu_label: Menu di navigazione
     navigation_menu_esc: esci dalla navigazione
+    open_activities: "Attività aperte:"
     scrolltop_label: torna all'inizio dei contenuti
     search_form_catalogue: Cerca in tutto il catalogo software
     search_form_label: Cerca
@@ -273,6 +274,7 @@ en:
     lang_on_site: website in english
     navigation_menu_label: Navigation menu
     navigation_menu_esc: exit navigation
+    open_activities: "Open activities:"
     page: page
     scrolltop_label: back to contents
     search_form_catalogue: Search in the entire software catalogue
