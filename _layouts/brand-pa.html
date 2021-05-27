@@ -46,44 +46,20 @@ layout: default-pa
                 | default: software.publiccode.description.it %}
 
               {% assign sw_name = description.localisedName | default: software.publiccode.name %}
-
               {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
-              {% if software.publiccode.it.riuso.codiceIPA != nil %}
-              <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-                <a href="{{sw_url}}" class="d-block decoration-none ">
+              {% assign first_screenshot = description.screenshots | first %}
 
-                  {% if software.publiccode.it.riuso.codiceIPA != nil %}
-                  <div class='d-flex align-items-center mb-2'>
-                    <svg class="icon mr-2">
-                      <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
-                    </svg>
-                    <div>{{ t.software.software_reuse | upcase}}</div>
-                  </div>
-                  {% else %}
-                  <div class='d-flex align-items-center mb-2'>
-                    <svg class="icon mr-2">
-                      <use xlink:href="/assets/svg/sprite.svg#it-open-source"></use>
-                    </svg>
-                    <div>{{ t.software.software_open | upcase}}</div>
-                  </div>
-                  {% endif %}
-
-                  {% assign paClasses = "main-image" %}
-                  {% include display-logo.html
-                    logo = software.publiccode.logo
-                    id = software.id
-                    codiceIPA = software.publiccode.it.riuso.codiceIPA
-                    screenshots = description.screenshots
-                    classes = paClasses
-                  %}
-
-                  <p class="name color-inherit">
-                    {{ sw_name }}
-                  </p>
-                  <span class="item-more"> {{ t.pa.more_details }} &rarr;</span>
-                </a>
-              </div>
-              {% endif %}
+              <catalogue-item
+                class="col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column"
+                id="{{  software.id }}"
+                name="{{ sw_name }}"
+                description="{{ description.shortDescription | escape }}"
+                url="{{ sw_url }}"
+                icon="it-software"
+                category="software_reuse"
+                logo="{{ software.publiccode.logo | default: first_screenshot }}"
+                fallback="/assets/images/cover_softwareriuso.png"
+              ></catalogue-item>
               {% endfor %}
             </div>
           </div>
