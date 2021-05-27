@@ -58,7 +58,7 @@ layout: default-pa
                 icon="it-software"
                 category="software_reuse"
                 logo="{{ software.publiccode.logo | default: first_screenshot }}"
-                logoPlaceholder="/assets/images/cover_softwareriuso.png"
+                fallback="/assets/images/cover_softwareriuso.png"
               ></catalogue-item>
               {% endfor %}
             </div>
