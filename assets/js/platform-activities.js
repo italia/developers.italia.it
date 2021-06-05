@@ -10,6 +10,8 @@ if (platforms.length > 0) {
           let counter = parseInt(selected.innerHTML, 10);
           counter++;
           selected.innerHTML = `${counter}`;
+          document.getElementById(`projectslist__listing__activities-container-${data[i].project}`).style.visibility =
+            'visible';
         }
       }
     });
