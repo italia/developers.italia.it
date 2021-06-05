@@ -29,7 +29,15 @@ lang: it
                 {% assign platform_issues_id = split[2] %}
                 <figure class="projectslist__listing__figure">
                   <img class="main-image" src='{{platform.logo | relative_url}}' alt="{{platform.title}}"/>
-                  <span class="projectslist__listing__activities">{{t.open_activities}} <span id="projectslist-activity-counter-{{platform_issues_id}}" class="projectslist__listing__activities-counter">0</span></span>
+                  <div class="projectslist__listing__activities">
+                    <div class="projectslist__listing__activities-container" id="projectslist__listing__activities-container-{{platform_issues_id}}">
+                      <span class="projectslist__listing__activities-circle-container">
+                        <span class="projectslist__listing__activities-circle"></span>
+                      </span>
+                      <span>{{t.open_activities}} <span id="projectslist-activity-counter-{{platform_issues_id}}" class="projectslist__listing__activities-counter">0
+                      </span></span>
+                    </div>
+                  </div>
                 </figure>
                 {% endif %}
                 <h1 class="projectslist__listing__title text-break">{{platform.title}}</h1>
