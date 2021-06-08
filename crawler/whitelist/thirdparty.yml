@@ -69,6 +69,10 @@
   repos:
     - "https://github.com/ghtmtt/DataPlotly"
 
+- name: "vtenext"
+  repos:
+    - "https://github.com/VTECRM/vtenext"
+
 - name: "PEC Parser"
   repos:
     - "https://github.com/biagioT/java-pec-parser"
