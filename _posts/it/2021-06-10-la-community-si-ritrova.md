@@ -50,7 +50,8 @@ Le community call saranno principalmente rivolte a:
 Per i prossimi appuntamenti pensavamo di proporre temi inerenti le risorse messe
 a disposizione per le integrazioni di SPID e Carta d'Identità Elettonica (CIE),
 le soluzioni a riuso per i comuni, la possibilità di diventare un community
-maintainer ufficiale su Github Italia (come succede ad esempio con Bootstrap Italia).
+maintainer ufficiale su Github Italia (come succede ad esempio con
+[Bootstrap Italia](https://italia.github.io/bootstrap-italia/){:target="_blank"}).
 Ci piacerebbe però definire insieme a te un calendario, per cui se c’è qualche
 argomento che pensi possa essere di tuo interesse, e naturalmente di interesse
 per la community, scrivici su Slack nel canale
