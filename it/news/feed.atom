@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-06-10T10:48:14+00:00</updated>
+  <updated>2021-06-10T15:35:25+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,85 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/06/10/la-community-si-ritrova</id>
+    <title>La community si ritrova</title>
+    <updated>2021-06-10T07:00:00+00:00</updated>
+
+    <summary>Ripartono le community call, spazi di confronto e condivisione di idee </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/06/10/la-community-si-ritrova">&lt;p&gt;Condividere idee, scambiare buone pratiche, costruire sinergie e creare
+occasioni d’incontro: a partire da mercoledì 23 giugno, alle ore 15.30,
+riprendono le community call di &lt;a href=&quot;https://developers.italia.it&quot;&gt;Developers Italia&lt;/a&gt;
+e &lt;a href=&quot;https://designers.italia.it&quot;&gt;Designers Italia&lt;/a&gt;. Un momento di scambio pensato
+per tutti noi impegnati nella promozione della &lt;strong&gt;cultura dell’open source&lt;/strong&gt; e &lt;strong&gt;della
+progettazione dei servizi pubblici digitali&lt;/strong&gt; centrati sui bisogni dei cittadini,
+bene comune di tutto il Paese.&lt;/p&gt;
+
+&lt;p&gt;Il primo incontro è dedicato a
+&lt;a href=&quot;https://developers.italia.it/it/software/globaleaks-globaleaks-f22648&quot;&gt;GlobaLeaks&lt;/a&gt;,
+un software libero che permette a tutti di creare e mantenere una
+piattaforma di whistleblowing sicura. Usato in tutto il mondo in oltre 3000
+progetti, con casi d’uso che spaziano dalla compliance aziendale,
+all’anticorruzione nel settore pubblico e alla difesa dei diritti umani in
+contesti ad alto rischio.&lt;/p&gt;
+
+&lt;p&gt;Il format prevede momenti di discussione aperta uniti a delle brevi
+presentazioni frontali da parte di membri della community, per dare modo a tutti
+di raccontare la propria storia, e far crescere insieme la qualità della nostra
+community.&lt;/p&gt;
+
+&lt;p&gt;Le community call saranno principalmente rivolte a:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;sviluppatori, designer&lt;/strong&gt; e &lt;strong&gt;maintainer&lt;/strong&gt; della community,
+con incontri dedicati a condividere conoscenze, risorse ed esperienze nella
+progettazione e realizzazione di servizi e software pubblici e privati. Verrà
+dato spazio anche alle integrazioni con le piattaforme abilitanti, ai prossimi
+passi di queste iniziative e alla discussione di strumenti tecnici utili a
+svolgere il nostro lavoro.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;funzionari&lt;/strong&gt; e &lt;strong&gt;manager&lt;/strong&gt; di Pubbliche Amministrazioni, oltre che a
+&lt;strong&gt;fornitori&lt;/strong&gt; e &lt;strong&gt;maintainer di software open&lt;/strong&gt;, per trattare esperienze di riuso,
+best practice di sviluppo e manutenzione di software open in contesti pubblici,
+linee guida e modelli di design. Lo scopo è conoscere meglio le soluzioni
+disponibili nel &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;Catalogo del riuso&lt;/a&gt;,
+presentare il proprio lavoro, scambiarsi consigli nella progettazione dei servizi
+digitali, e incrementare l’accessibilità di tutte le soluzioni.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Per i prossimi appuntamenti pensavamo di proporre temi inerenti le risorse messe
+a disposizione per le integrazioni di SPID e Carta d’Identità Elettonica (CIE),
+le soluzioni a riuso per i comuni, la possibilità di diventare un community
+maintainer ufficiale su Github Italia (come succede ad esempio con
+&lt;a href=&quot;https://italia.github.io/bootstrap-italia/&quot; target=&quot;_blank&quot;&gt;Bootstrap Italia&lt;/a&gt;).
+Ci piacerebbe però definire insieme a te un calendario, per cui se c’è qualche
+argomento che pensi possa essere di tuo interesse, e naturalmente di interesse
+per la community, scrivici su Slack nel canale
+&lt;a href=&quot;https://developersitalia.slack.com/archives/C023MSRP03V&quot; target=&quot;_blank&quot;&gt;#community-call&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo il prossimo 23 giugno! Per partecipare al primo incontro, è
+sufficiente &lt;a href=&quot;https://mobilizon.it/events/14a8edaf-2af5-4bd1-a178-1420c71d7d61&quot; target=&quot;_blank&quot;&gt;registrarsi all’evento&lt;/a&gt;.
+A presto.&lt;/p&gt;
+
+&lt;p&gt;I team di Developers Italia e Designers Italia.&lt;/p&gt;</content>
+    <published>2021-06-10T07:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="call" />
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Matteo Vabanesi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/06/01/progettare-sviluppare-erogare-servizi-pubblici-digitali</id>
     <title>Progettare, sviluppare ed erogare servizi pubblici digitali</title>
