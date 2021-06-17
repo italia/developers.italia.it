@@ -52,6 +52,7 @@ layout: default
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
+      scope="recent"
       items=recent_sw
       show_type=false
       %}
@@ -73,6 +74,7 @@ layout: default
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
+      scope="most_active"
       items=active_sw
       show_type=false
       %}

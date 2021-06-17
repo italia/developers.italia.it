@@ -6,6 +6,7 @@ const useStyle = createUseStyles({
   placeholder: {
     height: '100%',
     width: '100%',
+    marginLeft: 0,
     objectFit: 'contain',
   },
   img: {
@@ -21,7 +22,7 @@ export const ImageWithPlaceholder = React.memo(({ img, placeholder, alt }) => {
   return (
     <>
       {!loaded && <img className={classes.placeholder} src={placeholder} alt={alt} />}
-      {<img className={classes.img} src={img} alt={alt} onLoad={() => setLoaded(true)} />}
+      {img && <img className={classes.img} src={img} alt={alt} onLoad={() => setLoaded(true)} />}
     </>
   );
 });

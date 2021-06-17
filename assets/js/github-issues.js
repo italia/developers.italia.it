@@ -82,6 +82,11 @@ $(document).ready(function () {
       },
     ],
     initComplete() {
+      // Get type from query param (useful to share links)
+      const urlParams = new URLSearchParams(window.location.search);
+      const typeParam = urlParams.get('type');
+      const platformParam = urlParams.get('platform');
+
       this.api()
         .column('project:name')
         .every(function () {
@@ -98,9 +103,11 @@ $(document).ready(function () {
             .sort()
             .each(function (d) {
               const title = d in projects_dictionary ? projects_dictionary[d] : d;
-              apps.push({ text: title, value: title });
+              apps.push({ text: title, value: d });
             });
           $github_projects_list.setOptionsToSelect(apps);
+          $github_projects_list_select.selectpicker('val', platformParam);
+          $github_projects_list_select.trigger('change', platformParam);
         });
       this.api()
         .column('language:name')
@@ -119,9 +126,6 @@ $(document).ready(function () {
         .column('type:name')
         .every(function () {
           const column = this;
-          // Get type from query param (useful to share links)
-          const urlParams = new URLSearchParams(window.location.search);
-          const typeParam = urlParams.get('type');
           column
             .data()
             .unique()
