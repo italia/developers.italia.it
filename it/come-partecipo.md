@@ -6,6 +6,16 @@ ref:
 layout: internal-no-intro
 include-discuss: true
 alternate-blocks:
+    - title: XXXXXXXXXXXXXXXXXX
+      text: |
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+      image: /assets/images/come-partecipo-wizard.svg
+      buttons:
+        - label: Come partecipo...
+          class: btn btn-primary
+          url: https://come-partecipo.italia.it
+
     - title: Contribuisci allo sviluppo
       text: |
         Chiunque può contribuire e diventare maintainer di SDK, documentazione,
@@ -43,7 +53,7 @@ pair-blocks:
         software open source di terze parti destinato al settore pubblico:
         aiutando i maintainer ad inserire un file `publiccode.yml` nei
         loro repositori permetterai al crawler di Developers Italia di scoprirli.
-      image: /assets/images/come-partecipo-1.svg
+      image: /assets/images/book.svg
       buttons:
         - label: Scopri di più
           class: btn btn-primary
