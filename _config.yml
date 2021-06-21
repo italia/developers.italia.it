@@ -27,6 +27,7 @@ twitter_username: developersITA
 github_username:  italia
 #piwik: teamdigitale
 google_analytics: UA-96140462-1
+webanalytics_italia: jg7pYvEqvM
 
 # Build settings
 markdown: kramdown
