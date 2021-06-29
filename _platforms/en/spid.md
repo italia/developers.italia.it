@@ -156,6 +156,10 @@ resources:
       url: https://github.com/italia/spid-saml-check
       icon: github
       desc: Test environment used by AgID for testing the SPs in the onboarding phase, which can be performed locally
+    - title: SPID Quality Assessment e CI
+      url: https://github.com/italia/spid-sp-test
+      icon: github
+      desc: spid-sp-test is a SAML2 SPID Service Provider validation tool that can be executed from the command line
     - title: SAML2 certificate creation
       url: https://github.com/italia/spid-compliant-certificates
       icon: github
