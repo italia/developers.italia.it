@@ -190,7 +190,9 @@ Per maggiori informazioni, puoi iniziare dalla pagina dei
 
 ## Canali
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/design" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/design" target="_blank"><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg>
+  Entra nel forum
+</a>
 
 Dialoga sullo [Slack di Developers Italia](https://slack.developers.italia.it/){:target="_blank"}:
 sono disponibili diversi canali che iniziano con "#design-", in particolare
