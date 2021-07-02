@@ -5,7 +5,7 @@ subtitle: Dopo aver scoperto insieme il software di whistleblowing GlobaLeaks, Ã
 date: 2021-07-02 15:00:00 +0200
 tags: community call developers designers opensource
 categories: news
-author: Michela Gabrieli
+author: Francesco Pognante
 image: /assets/icons/logo-it.png
 locale: it
 ---
