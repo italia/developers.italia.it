@@ -62,4 +62,4 @@ Scrivici su Slack nel canale [#community-call](https://developersitalia.slack.co
 
 Ti aspettiamo il prossimo [14 luglio](https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634){:target="_blank"}!
 
-I team di Developers Italia e Designers Italia.
+I team di Developers Italia e Designers Italia
