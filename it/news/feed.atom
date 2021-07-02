@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-07-02T08:19:57+00:00</updated>
+  <updated>2021-07-02T14:25:57+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,84 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/07/02/continuano-le-community-call</id>
+    <title>Continuano le community call</title>
+    <updated>2021-07-02T13:00:00+00:00</updated>
+
+    <summary>Dopo aver scoperto insieme il software di whistleblowing GlobaLeaks, è tempo di parlare di risorse per l’integrazione di SPID. </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/07/02/continuano-le-community-call">&lt;h2 id=&quot;verso-la-prossima-community-call&quot;&gt;Verso la prossima community call&lt;/h2&gt;
+
+&lt;p&gt;Le community call continuano: il prossimo appuntamento si terrà &lt;strong&gt;il 14 luglio
+alle ore 15.30&lt;/strong&gt; e sarà dedicato agli sviluppatori e alle esperienze di sviluppo
+di risorse (SDK) per l’integrazione del Sistema Pubblico di Identità Digitale
+nei servizi pubblici e privati. Lo scopo dell’incontro è conoscersi e condividere
+buone pratiche per superare insieme le problematiche più note dell’integrazione
+di &lt;strong&gt;SPID&lt;/strong&gt;.
+Interverranno i contributori, i manutentori e gli autori di alcune tra le più
+popolari SDK ad oggi disponibili su github italia.&lt;/p&gt;
+
+&lt;p&gt;Per partecipare
+&lt;a href=&quot;https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634&quot; target=&quot;_blank&quot;&gt;registrati all’evento&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-community-call-su-globaleaks-la-piattaforma-di-whistleblowing-open-source&quot;&gt;La community call su GlobaLeaks, la piattaforma di whistleblowing open source&lt;/h2&gt;
+
+&lt;p&gt;Lo scorso 23 giugno &lt;a href=&quot;https://developers.italia.it&quot;&gt;Developers Italia&lt;/a&gt;
+e &lt;a href=&quot;https://designers.italia.it/&quot; target=&quot;_blank&quot;&gt;Designers Italia&lt;/a&gt; hanno
+riavviato il ciclo di incontri dedicati alla community. L’obiettivo? Creare
+&lt;a href=&quot;https://developers.italia.it/it/news/2021/06/10/la-community-si-ritrova&quot;&gt;momenti di condivisione&lt;/a&gt;
+e collaborazione tra developers e designers della community, ma anche funzionari
+e manager di pubbliche amministrazioni.&lt;/p&gt;
+
+&lt;p&gt;Durante l’appuntamento è intervenuto Giovanni Pellerano, project leader di
+&lt;a href=&quot;https://developers.italia.it/it/software/globaleaks-globaleaks-f22648&quot; target=&quot;_blank&quot;&gt;GlobaLeaks&lt;/a&gt;,
+per raccontare la sua esperienza con questa interessante applicazione.
+Nella sua presentazione Giovanni ha prima introdotto brevemente la piattaforma -
+un software open source di whistleblowing – e si è poi soffermato sugli strumenti
+per la &lt;strong&gt;pubblicazione e sull’aderenza&lt;/strong&gt; della soluzione alle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html&quot; target=&quot;_blank&quot;&gt;linee guida su
+acquisizione e riuso&lt;/a&gt;
+e alle previsioni del Codice dell’Amministrazione Digitale.&lt;/p&gt;
+
+&lt;p&gt;I risultati? Grazie all’ottimo lavoro di pubblicazione secondo le buone
+pratiche descritte nella
+&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot; target=&quot;_blank&quot;&gt;Guida allo sviluppo e gestione di software libero&lt;/a&gt;,
+l’applicazione è disponibile a &lt;a href=&quot;https://developers.italia.it/it/software/globaleaks-globaleaks-f22648&quot;&gt;Catalogo&lt;/a&gt;
+e fornisce ad aziende, ONG ed enti pubblici uno spazio dove permettere a chiunque
+di inviare segnalazioni anonime - ad esempio su possibili casi di corruzione - in
+totale sicurezza e protezione.&lt;/p&gt;
+
+&lt;p&gt;Nell’ultima parte della community call, si è dato spazio alle domande e agli
+interventi dei partecipanti, che hanno arricchito la discussione con richieste
+e curiosità su casi d’uso di altre amministrazioni ed eventuali criticità.&lt;/p&gt;
+
+&lt;p&gt;Se non hai potuto seguirla e vuoi rivedere la community call,
+&lt;a href=&quot;https://www.youtube.com/watch?v=NoMUqVKK8Rc&quot; target=&quot;_blank&quot;&gt;guarda la registrazione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hai un argomento che ti interessa e vorresti discuterne con la community?
+Scrivici su Slack nel canale &lt;a href=&quot;https://developersitalia.slack.com/archives/C023MSRP03V&quot; target=&quot;_blank&quot;&gt;#community-call&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo il prossimo &lt;a href=&quot;https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634&quot; target=&quot;_blank&quot;&gt;14 luglio&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I team di Developers Italia e Designers Italia&lt;/p&gt;</content>
+    <published>2021-07-02T13:00:00+00:00</published>
+
+    
+    <category term="community" />
+    
+    <category term="call" />
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/06/10/la-community-si-ritrova</id>
     <title>La community si ritrova</title>
