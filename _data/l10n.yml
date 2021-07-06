@@ -231,6 +231,8 @@ it:
       technical_contacts: Contatti tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
+      goToLandingUrl: Sito web del progetto
+      goToLandingUrlAriaLabel: "Vai al sito del software (collegamento esterno)"
       goToDocumentation: Documentazione
       goToCode: Codice sorgente
       goToRoadmap: Roadmap
@@ -540,6 +542,8 @@ en:
       technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
+      goToLandingUrl: Project's website
+      goToLandingUrlAriaLabel: "Go to the software's site (external link)"
       goToDocumentation: Documentation
       goToCode: Source code
       goToRoadmap: Roadmap
