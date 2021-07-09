@@ -152,11 +152,7 @@ resources:
       url: https://github.com/italia/spid-smart-button
       desc: Nuova versione (non ancora ufficiale) del bottone "Entra con SPID", con integrata la scelta dell'Identity Provider
   - Tool:
-    - title: Identity Provider dimostrativo
-      url: https://github.com/italia/spid-testenv2
-      icon: github
-      desc: Ambiente di test eseguibile in locale
-    - title: Identity Provider per il collaudo tecnico
+    - title: SPID Identity Provider di Test
       url: https://github.com/italia/spid-saml-check
       icon: github
       desc: Ambiente di test utilizzato da AgID per il collaudo degli SP in fase di onboarding, eseguibile in locale
@@ -214,7 +210,7 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 
 1. Leggi la [documentazione tecnica](https://docs.italia.it/italia/spid/spid-regole-tecniche){:target="_blank"}.
 2. Usa e contribuisci ai componenti open source che trovi in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"}.
-3. Usa un Identity Provider di test come [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} oppure [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
+3. Usa l'Identity Provider di test [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/){:target="_blank"}.
 5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
 6. Se stai riscontrando problemi con la procedura di accreditamente contatta l'[HelpDesk AgID SPID](mailto:spid.tech@agid.gov.it).
