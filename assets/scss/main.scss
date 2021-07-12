@@ -1478,6 +1478,27 @@ body {
     }
 }
 
+@keyframes pulse-ring {
+  0% {
+    transform: scale(.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
+
 .projectslist {
     &__content {
         h1 {
@@ -1498,7 +1519,6 @@ body {
                 }
             }
             .main-image {
-                position: relative;
                 overflow: hidden;
                 width: 100%;;
                 @include bootstrap.media-breakpoint-up(md) {
@@ -1517,6 +1537,67 @@ body {
                 margin-top: 1rem;
                 letter-spacing: 0;
             }
+        }
+        &__activities {
+          @include bootstrap.media-breakpoint-up(md) {
+            right: -0.5rem;
+          }
+          margin: 0;
+          padding: 0.2rem;
+          text-align: right;
+          color: #0073e6;
+
+          &-container {
+            visibility: hidden;
+          }
+
+          &-circle-container {
+            position: relative;
+            padding: 0.5rem;
+            margin-right: 8px;
+          }
+
+          &-circle {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 5px;
+            height: 5px;
+
+            // &:before {
+            //   content: '';
+            //   position: relative;
+            //   display: block;
+            //   width: 300%;
+            //   height: 300%;
+            //   box-sizing: border-box;
+            //   margin-left: -100%;
+            //   margin-top: -100%;
+            //   border-radius: 45px;
+            //   background-color: #01a4e9;
+            //   animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+            // }
+
+            &:after {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #0073e6;
+              border-radius: 15px;
+              box-shadow: 0 0 8px rgba(0,0,0,.3);
+              // animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+            }
+          }
+
+        }
+        &__figure {
+          position: relative;
+          padding-bottom: 1rem;
         }
         &__url {
             position: absolute;
