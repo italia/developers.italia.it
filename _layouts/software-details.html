@@ -126,6 +126,20 @@ layout: default
       </div>
 
       <div class="drops-details">
+        {% if page.publiccode.landingURL != null and page.publiccode.landingURL != "" %}
+        <div class="goto">
+          <p>
+            <a
+              href="{{ page.publiccode.landingURL }}"
+              aria-label="{{ t.software.goToLandingUrlAriaLabel }}"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">{{ t.software.goToLandingUrl }} &rarr;</a>
+          </p>
+        </div>
+        {% endif %}
+
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
           <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
@@ -682,23 +696,22 @@ layout: default
   <div class="interestRelatedSoftwares">
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
-      <div class="owl-carousel col-10 offset-1 offset-sm-0 col-sm-12">
-        {% for relsw in page.relatedSoftwares %}
-        {% assign relsw_description = relsw.publiccode.description[active_lang]
-        | default: relsw.publiccode.description.en
-        | default: relsw.publiccode.description.it %}
-        {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
-        <div class="col-12 relate">
+        {% for relsw in page.relatedSoftwares limit: 4 %}
+        <div class="col-md-3 col-12">
+          {% assign relsw_description = relsw.publiccode.description[active_lang]
+          | default: relsw.publiccode.description.en
+          | default: relsw.publiccode.description.it %}
+          {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
           {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
           {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
-            {% assign category = "software_reuse" %}
-            {% assign icon = "it-software" %}
-            {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
+          {% assign category = "software_reuse" %}
+          {% assign icon = "it-software" %}
+          {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
           {% else %}
-            {% assign category = "software_open" %}
-            {% assign fallback = "it-open-source" %}
-            {% assign fallback = "/assets/images/cover_software_opensource.png" %}
+          {% assign category = "software_open" %}
+          {% assign fallback = "it-open-source" %}
+          {% assign fallback = "/assets/images/cover_software_opensource.png" %}
           {% endif %}
 
           {% assign first_screenshot = relsw_description.screenshots | first %}
@@ -713,10 +726,9 @@ layout: default
             category="{{ category }}"
             logo="{{ relsw.publiccode.logo | default: first_screenshot }}"
             fallback="{{ fallback }}"
-          ></catalogue-item>
+            ></catalogue-item>
         </div>
         {% endfor %}
-      </div>
     </div>
   </div>
 </div>
