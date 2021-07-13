@@ -126,6 +126,20 @@ layout: default
       </div>
 
       <div class="drops-details">
+        {% if page.publiccode.landingURL != null and page.publiccode.landingURL != "" %}
+        <div class="goto">
+          <p>
+            <a
+              href="{{ page.publiccode.landingURL }}"
+              aria-label="{{ t.software.goToLandingUrlAriaLabel }}"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">{{ t.software.goToLandingUrl }} &rarr;</a>
+          </p>
+        </div>
+        {% endif %}
+
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
           <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
