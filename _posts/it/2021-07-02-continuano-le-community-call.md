@@ -38,7 +38,7 @@ Durante l’appuntamento è intervenuto Giovanni Pellerano, project leader di
 per raccontare la sua esperienza con questa interessante applicazione.
 Nella sua presentazione Giovanni ha prima introdotto brevemente la piattaforma -
 un software open source di whistleblowing – e si è poi soffermato sugli strumenti
-per la **pubblicazione e sull’aderenza** della soluzione alle [linee guida su
+per la pubblicazione e sull’aderenza della soluzione alle [linee guida su
 acquisizione e riuso](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html){:target="_blank"}
 e alle previsioni del Codice dell’Amministrazione Digitale.
 
