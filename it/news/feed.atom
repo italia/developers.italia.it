@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-07-13T06:05:54+00:00</updated>
+  <updated>2021-07-13T09:15:59+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -48,7 +48,7 @@ e manager di pubbliche amministrazioni.&lt;/p&gt;
 per raccontare la sua esperienza con questa interessante applicazione.
 Nella sua presentazione Giovanni ha prima introdotto brevemente la piattaforma -
 un software open source di whistleblowing – e si è poi soffermato sugli strumenti
-per la &lt;strong&gt;pubblicazione e sull’aderenza&lt;/strong&gt; della soluzione alle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html&quot; target=&quot;_blank&quot;&gt;linee guida su
+per la pubblicazione e sull’aderenza della soluzione alle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html&quot; target=&quot;_blank&quot;&gt;linee guida su
 acquisizione e riuso&lt;/a&gt;
 e alle previsioni del Codice dell’Amministrazione Digitale.&lt;/p&gt;
 
