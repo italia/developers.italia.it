@@ -1,9 +1,9 @@
 ---
 layout: post
-title: WIP
-subtitle: WIP
+title: “Guida allo sviluppo e gestione di software libero”: disponibile il capitolo dedicato ai responsabili politici
+subtitle: Il nuovo capitolo in consultazione illustra ai decisori l’importanza di adottare soluzioni open source
 date: 2021-07-15 10:00:00 +0200
-tags: community call developers designers opensource
+tags: Developers, Open Source, Guide, Pubblica Amministrazione, Software Libero
 categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
