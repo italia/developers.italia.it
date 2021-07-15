@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Guida allo sviluppo e gestione di software libero”: disponibile il capitolo dedicato ai responsabili politici
+title: "“Guida allo sviluppo e gestione di software libero”: disponibile il capitolo dedicato ai responsabili politici"
 subtitle: Il nuovo capitolo in consultazione illustra ai decisori l’importanza di adottare soluzioni open source
 date: 2021-07-15 10:00:00 +0200
 tags: Developers Opensource Guide PA consultazione
