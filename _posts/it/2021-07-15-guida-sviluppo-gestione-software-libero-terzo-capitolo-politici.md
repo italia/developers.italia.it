@@ -20,9 +20,9 @@ Partendo da questo importante presupposto, il capitolo illustra quindi i **vanta
 
 ## Uno strumento utile per le politiche pubbliche sul software
 
-Una volta fatta luce su questi punti fondamentali, il capitolo spiega ai responsabili politici **cosa vuol dire gestisce un software open** nel suo ciclo di vita, come coinvolgere attori terzi, gestire la governance, e creare accordi che vadano a beneficio di tutti.
+Una volta fatta luce su questi punti fondamentali, il capitolo spiega ai responsabili politici **cosa vuol dire gestire un software open** nel suo ciclo di vita, come coinvolgere attori terzi, gestire la governance, e creare accordi che vadano a beneficio di tutti.
 
-Non meno importante, il capitolo contiene una serie di **azioni concrete** che i responsabili politici possono mettere in atto per implementare e gestire correttamente l’uso di soluzioni _open source_ nella sfera dei servizi pubblici e della vita pubblica.
+Non meno importante, il capitolo contiene una serie di **azioni concrete** che i responsabili politici possono mettere in atto per implementare e mantenere correttamente l’uso di soluzioni _open source_ nella sfera dei servizi pubblici e della vita pubblica.
 
 ## Approfondisci
 Sei un responsabile politico e vuoi saperne di più su come implementare l’uso di soluzioni _open source_? Oppure, lavori nel settore e vuoi informarti meglio?
