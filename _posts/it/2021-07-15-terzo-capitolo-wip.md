@@ -1,3 +1,15 @@
+---
+layout: post
+title: WIP
+subtitle: WIP
+date: 2021-07-15 10:00:00 +0200
+tags: community call developers designers opensource
+categories: news
+author: Francesco Pognante
+image: /assets/icons/logo-it.png
+locale: it
+---
+
 Developers Italia pubblica oggi un nuovo capitolo della [**Guida allo sviluppo e gestione di software libero**](https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html), il documento dedicato a tecnici, amministratori, e decisori pubblici che ha l’obiettivo di supportare la creazione e l'utilizzo di **software libero nella sfera pubblica** e realizzare appieno i vantaggi del modello di sviluppo aperto. La guida contiene indicazioni e consigli pratici su come gestire e sviluppare correttamente il software in modo aperto e una raccolta di buone pratiche e riferimenti a risorse esterne utili allo sviluppo di software sicuro e accessibile. **Il documento è in consultazione, quindi aperto a commenti e suggerimenti da parte di tutti.**
 Dopo il [capitolo dedicato agli sviluppatori](https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/sviluppatori.html), e quello [dedicato ai responsabili delle amministrazioni pubbliche](https://developers.italia.it/it/news/2021/04/15/pubblicata-seconda-parte-guida-software-libero), il capitolo in uscita oggi è rivolto ai **responsabili politici (FIXME link al capitolo)**, ovvero ai soggetti coinvolti nella **definizione delle politiche e delle regole** che vengono applicate nello sviluppo di servizi e soluzioni software per la pubblica amministrazione.
 
