@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-07-16T08:27:26+00:00</updated>
+  <updated>2021-07-16T08:52:22+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -91,9 +91,9 @@ e manager di pubbliche amministrazioni.&lt;/p&gt;
 &lt;a href=&quot;https://developers.italia.it/it/software/globaleaks-globaleaks-f22648&quot; target=&quot;_blank&quot;&gt;GlobaLeaks&lt;/a&gt;,
 per raccontare la sua esperienza con questa interessante applicazione.
 Nella sua presentazione Giovanni ha prima introdotto brevemente la piattaforma -
-un software open source di whistleblowing – e si è poi soffermato sugli strumenti
+un software open source di whistleblowing – e si è poi soffermato sugli &lt;strong&gt;strumenti
 per la pubblicazione e sull’aderenza della soluzione alle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html&quot; target=&quot;_blank&quot;&gt;linee guida su
-acquisizione e riuso&lt;/a&gt;
+acquisizione e riuso&lt;/a&gt;&lt;/strong&gt;
 e alle previsioni del Codice dell’Amministrazione Digitale.&lt;/p&gt;
 
 &lt;p&gt;I risultati? Grazie all’ottimo lavoro di pubblicazione secondo le buone
@@ -109,12 +109,12 @@ interventi dei partecipanti, che hanno arricchito la discussione con richieste
 e curiosità su casi d’uso di altre amministrazioni ed eventuali criticità.&lt;/p&gt;
 
 &lt;p&gt;Se non hai potuto seguirla e vuoi rivedere la community call,
-&lt;a href=&quot;https://www.youtube.com/watch?v=NoMUqVKK8Rc&quot; target=&quot;_blank&quot;&gt;guarda la registrazione&lt;/a&gt;.&lt;/p&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=NoMUqVKK8Rc&quot; target=&quot;_blank&quot;&gt;guarda la registrazione&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hai un argomento che ti interessa e vorresti discuterne con la community?
-Scrivici su Slack nel canale &lt;a href=&quot;https://developersitalia.slack.com/archives/C023MSRP03V&quot; target=&quot;_blank&quot;&gt;#community-call&lt;/a&gt;.&lt;/p&gt;
+&lt;strong&gt;Scrivici su Slack nel canale &lt;a href=&quot;https://developersitalia.slack.com/archives/C023MSRP03V&quot; target=&quot;_blank&quot;&gt;#community-call&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ti aspettiamo il prossimo &lt;a href=&quot;https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634&quot; target=&quot;_blank&quot;&gt;14 luglio&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;&lt;strong target=&quot;_blank&quot;&gt;Ti aspettiamo il prossimo &lt;a href=&quot;https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634&quot;&gt;14 luglio&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;
 
 &lt;p&gt;I team di Developers Italia e Designers Italia&lt;/p&gt;</content>
     <published>2021-07-02T13:00:00+00:00</published>
