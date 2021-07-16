@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-07-16T06:06:47+00:00</updated>
+  <updated>2021-07-16T08:27:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,50 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/07/15/guida-sviluppo-gestione-software-libero-terzo-capitolo-politici</id>
+    <title>“Guida allo sviluppo e gestione di software libero”: disponibile il capitolo dedicato ai responsabili politici</title>
+    <updated>2021-07-15T08:00:00+00:00</updated>
+
+    <summary>Il nuovo capitolo in consultazione illustra ai decisori l’importanza di adottare soluzioni open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/07/15/guida-sviluppo-gestione-software-libero-terzo-capitolo-politici">&lt;p&gt;Developers Italia pubblica oggi un nuovo capitolo della &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;&lt;strong&gt;Guida allo sviluppo e gestione di software libero&lt;/strong&gt;&lt;/a&gt;, il documento dedicato a tecnici, amministratori, e decisori pubblici che ha l’obiettivo di supportare la creazione e l’utilizzo di &lt;strong&gt;software libero nella sfera pubblica&lt;/strong&gt; e realizzare appieno i vantaggi del modello di sviluppo aperto. La guida contiene indicazioni e consigli pratici su come gestire e sviluppare correttamente il software in modo aperto e una raccolta di buone pratiche e riferimenti a risorse esterne utili allo sviluppo di software sicuro e accessibile. &lt;strong&gt;Il documento è in consultazione, quindi aperto a commenti e suggerimenti da parte di tutti.&lt;/strong&gt;
+Dopo il &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/sviluppatori.html&quot;&gt;capitolo dedicato agli sviluppatori&lt;/a&gt;, e quello &lt;a href=&quot;https://developers.italia.it/it/news/2021/04/15/pubblicata-seconda-parte-guida-software-libero&quot;&gt;dedicato ai responsabili delle amministrazioni pubbliche&lt;/a&gt;, il capitolo in uscita oggi è rivolto ai &lt;strong&gt;&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/responsabili-politici.html&quot;&gt;responsabili politici&lt;/a&gt;&lt;/strong&gt;, ovvero ai soggetti coinvolti nella &lt;strong&gt;definizione delle politiche e delle regole&lt;/strong&gt; che vengono applicate nello sviluppo di servizi e soluzioni software per la pubblica amministrazione.&lt;/p&gt;
+
+&lt;h2 id=&quot;perché-i-responsabili-politici&quot;&gt;Perché i responsabili politici?&lt;/h2&gt;
+&lt;p&gt;Le politiche pubbliche definite democraticamente, nella pratica, sono tradotte in norme, ovvero in “codice legale” che deve essere reso trasparente a tutte le cittadine e i cittadini. Idealmente, tali norme dovrebbero regolare, assieme ai vari aspetti della vita pubblica, anche il software che viene usato per erogare i servizi pubblici.
+Come prescritto nel Codice dell’Amministrazione Digitale, il software creato dalla pubblica amministrazione deve essere &lt;strong&gt;esclusivamente &lt;em&gt;open source&lt;/em&gt;&lt;/strong&gt;, in modo da costituire un bene comune di tutto il Paese, creare un ecosistema di riuso virtuoso che supporta l’economia del territorio e massimizzare l’impatto degli investimenti della Pubblica Amministrazione.
+Partendo da questo importante presupposto, il capitolo illustra quindi i &lt;strong&gt;vantaggi di gestire correttamente il software &lt;em&gt;open source&lt;/em&gt;&lt;/strong&gt;, nonché i suoi requisiti di trasparenza, responsabilità e verificabilità a chi si occupa di definire le norme.&lt;/p&gt;
+
+&lt;h2 id=&quot;uno-strumento-utile-per-le-politiche-pubbliche-sul-software&quot;&gt;Uno strumento utile per le politiche pubbliche sul software&lt;/h2&gt;
+
+&lt;p&gt;Una volta fatta luce su questi punti fondamentali, il capitolo spiega ai responsabili politici &lt;strong&gt;cosa vuol dire gestire un software open&lt;/strong&gt; nel suo ciclo di vita, come coinvolgere attori terzi, gestire la governance, e creare accordi che vadano a beneficio di tutti.&lt;/p&gt;
+
+&lt;p&gt;Non meno importante, il capitolo contiene una serie di &lt;strong&gt;azioni concrete&lt;/strong&gt; che i responsabili politici possono mettere in atto per implementare e mantenere correttamente l’uso di soluzioni &lt;em&gt;open source&lt;/em&gt; nella sfera dei servizi pubblici e della vita pubblica.&lt;/p&gt;
+
+&lt;h2 id=&quot;approfondisci&quot;&gt;Approfondisci&lt;/h2&gt;
+&lt;p&gt;Sei un responsabile politico e vuoi saperne di più su come implementare l’uso di soluzioni &lt;em&gt;open source&lt;/em&gt;? Oppure, lavori nel settore e vuoi informarti meglio?
+&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;Scopri la guida su Docs Italia&lt;/a&gt; e discutine con &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;la community su Forum Italia&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;contribuisci-alla-guida&quot;&gt;Contribuisci alla guida&lt;/h2&gt;
+&lt;p&gt;La guida stessa messa a disposizione da Developers Italia è, ovviamente, &lt;em&gt;open source&lt;/em&gt;. Se lo desideri, puoi quindi &lt;strong&gt;contribuire con suggerimenti e richieste&lt;/strong&gt;, anche in forma di &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;Pull Request&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2021-07-15T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+    <category term="guide" />
+    
+    <category term="pa" />
+    
+    <category term="consultazione" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/07/02/continuano-le-community-call</id>
     <title>Continuano le community call</title>
