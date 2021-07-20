@@ -511,33 +511,7 @@ layout: default
                 </p>
               </div>
               {% endif %}
-              <div class="col-6 col-md">
-                <p>
-                  <span class="label">{{ t.software.dependencies_list }}</span>
-                  {% if page.publiccode.dependsOn == nil or page.publiccode.dependsOn.size == 0 %}
-                  {{ t.software.dependencies_none }}
-                  {% else %}
-                      {% if page.publiccode.dependsOn.open.size > 0 %}
-                          <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
-                          {% for dep in page.publiccode.dependsOn.open %}
-                          {% include dependency.html dependency=dep %}<br />
-                          {% endfor %}
-                      {% endif %}
-                      {% if page.publiccode.dependsOn.proprietary.size > 0 %}
-                          <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
-                          {% for dep in page.publiccode.dependsOn.proprietary %}
-                          {% include dependency.html dependency=dep %}<br />
-                          {% endfor %}
-                      {% endif %}
-                      {% if page.publiccode.dependsOn.hardware.size > 0 %}
-                          <span class="badge badge-pill badge-secondary">Hardware</span><br />
-                          {% for dep in page.publiccode.dependsOn.hardware %}
-                          {% include dependency.html dependency=dep %}<br />
-                          {% endfor %}
-                      {% endif %}
-                   {% endif %}
-                </p>
-              </div>
+
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
@@ -608,6 +582,36 @@ layout: default
                   </a>
                   {% endif %}
                   {% endif %}
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">{{ t.software.dependencies_list }}</span>
+                  {% if page.publiccode.dependsOn == nil or page.publiccode.dependsOn.size == 0 %}
+                  {{ t.software.dependencies_none }}
+                  {% else %}
+                      {% if page.publiccode.dependsOn.open.size > 0 %}
+                          <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.open %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.proprietary.size > 0 %}
+                          <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
+                          {% for dep in page.publiccode.dependsOn.proprietary %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                      {% if page.publiccode.dependsOn.hardware.size > 0 %}
+                          <span class="badge badge-pill badge-secondary">Hardware</span><br />
+                          {% for dep in page.publiccode.dependsOn.hardware %}
+                          {% include dependency.html dependency=dep %}<br />
+                          {% endfor %}
+                      {% endif %}
+                   {% endif %}
                 </p>
               </div>
             </div>
@@ -696,38 +700,38 @@ layout: default
   <div class="interestRelatedSoftwares">
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
-        {% for relsw in page.relatedSoftwares limit: 4 %}
-        <div class="col-md-3 col-12">
-          {% assign relsw_description = relsw.publiccode.description[active_lang]
-          | default: relsw.publiccode.description.en
-          | default: relsw.publiccode.description.it %}
-          {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
-          {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
+        {% for relsw in page.relatedSoftwares limit 4 %}
+      <div class="col-md-3 col-12">
+        {% assign relsw_description = relsw.publiccode.description[active_lang]
+        | default: relsw.publiccode.description.en
+        | default: relsw.publiccode.description.it %}
+        {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
+        {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
-          {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
-          {% assign category = "software_reuse" %}
-          {% assign icon = "it-software" %}
-          {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
-          {% else %}
-          {% assign category = "software_open" %}
-          {% assign fallback = "it-open-source" %}
-          {% assign fallback = "/assets/images/cover_software_opensource.png" %}
-          {% endif %}
+        {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
+        {% assign category = "software_reuse" %}
+        {% assign icon = "it-software" %}
+        {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
+        {% else %}
+        {% assign category = "software_open" %}
+        {% assign fallback = "it-open-source" %}
+        {% assign fallback = "/assets/images/cover_software_opensource.png" %}
+        {% endif %}
 
-          {% assign first_screenshot = relsw_description.screenshots | first %}
+        {% assign first_screenshot = relsw_description.screenshots | first %}
 
-          <catalogue-item
-            class="w-100"
-            id="{{  relsw.id }}"
-            name="{{ relsw_name }}"
-            description="{{ relswdescription | escape }}"
-            url="{{ relsw_url }}"
-            icon="{{ icon }}"
-            category="{{ category }}"
-            logo="{{ relsw.publiccode.logo | default: first_screenshot }}"
-            fallback="{{ fallback }}"
-            ></catalogue-item>
-        </div>
+        <catalogue-item
+          class="w-100"
+          id="{{  relsw.id }}"
+          name="{{ relsw_name }}"
+          description="{{ relswdescription | escape }}"
+          url="{{ relsw_url }}"
+          icon="{{ icon }}"
+          category="{{ category }}"
+          logo="{{ relsw.publiccode.logo | default: first_screenshot }}"
+          fallback="{{ fallback }}"
+          ></catalogue-item>
+      </div>
         {% endfor %}
     </div>
   </div>
