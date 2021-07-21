@@ -92,3 +92,7 @@
 - name: "WooCommerce Carta Docente"
   repos:
     - "https://github.com/ilGhera/wc-carta-docente"
+
+- name: "Signalen"
+  repos:
+    - "https://github.com/Amsterdam/signals-frontend"
