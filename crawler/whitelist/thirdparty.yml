@@ -96,3 +96,7 @@
 - name: "Signalen"
   repos:
     - "https://github.com/Amsterdam/signals-frontend"
+
+- name: "TLSAssistant"
+  repos:
+    - "https://github.com/stfbk/tlsassistant"
