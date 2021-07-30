@@ -1,6 +1,6 @@
 
 layout: post
-title: "“Risorse per l’integrazione del Sistema Pubblico di Identità Digitale"
+title: "Risorse per l’integrazione del Sistema Pubblico di Identità Digitale"
 subtitle: Disponibile il video della community call del 14 luglio sullo sviluppo di SDK per l’integrazione di SPID
 date: 2021-07-30 10:30:00 +0200
 tags: developers opensource spid sdk
