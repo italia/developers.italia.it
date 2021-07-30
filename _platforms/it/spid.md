@@ -212,7 +212,7 @@ L'integrazione di SPID è consentita sia per i siti della Pubblica Amministrazio
 2. Usa e contribuisci ai componenti open source che trovi in [Developers Italia](https://github.com/italia?q=spid){:target="_blank"}.
 3. Usa l'Identity Provider di test [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} per simulare il flusso di autenticazione e verificare che la tua implementazione sia corretta.
 4. Entra in contatto con gli altri sviluppatori in [Slack](https://slack.developers.italia.it/){:target="_blank"}.
-5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+5. Segui la procedura di accreditamento [descritta nel sito di AGID](https://www.spid.gov.it/cos-e-spid/diventa-fornitore-di-servizi/){:target="_blank"}.
 6. Se stai riscontrando problemi con la procedura di accreditamente contatta l'[HelpDesk AgID SPID](mailto:spid.tech@agid.gov.it).
 
 SPID è basato sul protocollo SAML2, per configurarlo è possibile scegliere una tra le molteplici soluzioni disponibili:
