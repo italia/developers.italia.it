@@ -18,4 +18,4 @@ A concludere l’incontro, una sessione di domande e risposte come sempre ricca 
 
 Dopo la pausa estiva, la community si ritroverà il prossimo **22 settembre**. Per sapere il tema della prossima call **resta in contatto con la community su [Slack](https://developersitalia.slack.com/archives/C023MSRP03V){:target="_blank"}** e **segui [Developers Italia](https://twitter.com/developersITA){:target="_blank"} e [Designers Italia](https://twitter.com/DesignersITA){:target="_blank"}** anche su Twitter.
 
-Se vuoi rivedere la community call del 14 luglio, **[guarda la registrazione su YouTube](https://www.youtube.com/watch?v=NoMUqVKK8Rc){:target="_blank"}.** 
+Se vuoi rivedere la community call del 14 luglio, **[guarda la registrazione su YouTube](https://www.youtube.com/watch?v=dXB7Mr-i9tg&t=1s){:target="_blank"}.** 
