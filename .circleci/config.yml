@@ -64,7 +64,7 @@ references:
 
   download_data: &download_data
     run:
-      name: get-crawler-yml-files
+      name: download-data
       command: |
         make download-data
 
