@@ -700,7 +700,7 @@ layout: default
   <div class="interestRelatedSoftwares">
     <h2> {{ t.software.interest_related_softwares }} </h2>
     <div class="row">
-        {% for relsw in page.relatedSoftwares limit 4 %}
+        {% for relsw in page.relatedSoftwares limit: 4 %}
       <div class="col-md-3 col-12">
         {% assign relsw_description = relsw.publiccode.description[active_lang]
         | default: relsw.publiccode.description.en
