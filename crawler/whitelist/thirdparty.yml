@@ -93,6 +93,10 @@
   repos:
     - "https://github.com/ilGhera/wc-carta-docente"
 
+- name: "QField"
+  repos:
+    - "https://github.com/opengisch/QField"
+
 - name: "Signalen"
   repos:
     - "https://github.com/Amsterdam/signals-frontend"
