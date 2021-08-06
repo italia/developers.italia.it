@@ -100,5 +100,5 @@
     logo: /assets/images/api/logo-ministero-cultura.svg
   tags: [data]
   language: [it]
-  slug: mibact-data-sparql
+  slug: mic-data-sparql
 
