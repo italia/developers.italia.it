@@ -92,12 +92,12 @@
   language: [it]
   slug: ade-cartografia-wms
 - openapi: https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/swagger.yaml
-  title: SPARQL endpoint dati.beniculturali.it 
+  title: SPARQL endpoint dati.beniculturali.it
   abstract: >-
     Ricerca i beni culturali, i luoghi della cultura, gli archivi fotografici e altre informazioni sul patrimonio culturale italiano.
   contact:
     name: Ministero della Cultura
-    logo: https://media.beniculturali.it/mibac/files/6/MiC_logo_esteso_BLU.svg
+    logo: /assets/images/api/logo-ministero-cultura.svg
   tags: [data]
   language: [it]
   slug: mibact-data-sparql
