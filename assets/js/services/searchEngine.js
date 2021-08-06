@@ -47,22 +47,18 @@ export const search = async (type, { searchValue, filters = {}, sortBy = 'releva
 /* eslint-disable no-underscore-dangle */
 const mapESResultsToItems = (results) =>
   results.map((result) => {
-    switch (result._type) {
+    switch (result._source.type) {
       case 'administration':
         return { ...administrationItem(result._source), id: result._id };
       case 'software':
         return { ...softwareItem(result._source), id: result._id };
-      case 'post':
-        if (result._source.type === 'news') {
-          return { ...newsItem(result._source), id: result._id };
-        }
-        if (result._source.type === 'platform') {
-          return { ...platformItem(result._source), id: result._id };
-        }
-        if (result._source.type === 'api') {
-          return { ...apiItem(result._source), id: result._id };
-        }
-
+      case 'platform':
+        return { ...platformItem(result._source), id: result._id };
+      case 'api':
+        return { ...apiItem(result._source), id: result._id };
+      case 'news':
+        return { ...newsItem(result._source), id: result._id };
+      default:
         // The rest are pages (e.g /it/come-lo-uso.html)
         return { ...pageItem(result._source), id: result._id };
     }
