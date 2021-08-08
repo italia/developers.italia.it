@@ -150,3 +150,7 @@
 - name: "iDempiereItalia"
   repos:
     - "https://github.com/ERP-OpenSource-Italia/erpos_idempiere.it"
+
+- name: "GreenPass Turnstile"
+  repos:
+    - "https://github.com/zorbaproject/greenpass-turnstile"
