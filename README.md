@@ -55,14 +55,13 @@ Developers Italia is the reference point for the community of developers
 creating the next generation of digital public services in Italy.
 
 This repository contains the sources of the website.
-The website is developed using [Jekyll](https://jekyllrb.com/) and it's
-currently served through [GitHub pages](https://pages.github.com/).
+The website is developed using [Jekyll](https://jekyllrb.com/).
 
-A [CircleCI job](.circleci/config.yml) builds the sources and commits the
-resulting artifacts to GitHub, in the [gh-pages
-branch](https://github.com/italia/developers.italia.it/tree/gh-pages). The
-[same job](.circleci/config.yml) is also triggered every night to get the most
-updated data feeding the website.
+A [CircleCI job](.circleci/config.yml) builds the sources, getting some data from
+[developers.italia.it-data](https://github.com/italia/developers.italia.it-data),
+and commits the resulting artifacts to the [gh-pages
+branch](https://github.com/italia/developers.italia.it/tree/gh-pages).
+The job is also triggered every night to get the latest data.
 
 # Documentation
 
