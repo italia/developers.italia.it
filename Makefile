@@ -8,6 +8,12 @@ download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
 
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_tech_list.yml
+
+	wget -P _site/assets https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json
+
 bundle-setup:
 	gem install bundler:2.1.4
 	bundle config set path vendor/
@@ -17,10 +23,6 @@ bundle-install: bundle-setup
 
 bundle-install-deployment: bundle-setup
 	bundle install --deployment
-
-# Get issues (/assets/issues.js) and contributors (_data/github_*.yml) from GitHub
-github-import: bundle-install
-	bundle exec scripts/github_importer.rb
 
 test:
 	npm run lint

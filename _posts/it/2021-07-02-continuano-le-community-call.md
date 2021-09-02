@@ -37,9 +37,9 @@ Durante l’appuntamento è intervenuto Giovanni Pellerano, project leader di
 [GlobaLeaks](https://developers.italia.it/it/software/globaleaks-globaleaks-f22648){:target="_blank"},
 per raccontare la sua esperienza con questa interessante applicazione.
 Nella sua presentazione Giovanni ha prima introdotto brevemente la piattaforma -
-un software open source di whistleblowing – e si è poi soffermato sugli strumenti
-per la **pubblicazione e sull’aderenza** della soluzione alle [linee guida su
-acquisizione e riuso](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html){:target="_blank"}
+un software open source di whistleblowing – e si è poi soffermato sugli **strumenti
+per la pubblicazione e sull’aderenza della soluzione alle [linee guida su
+acquisizione e riuso](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/index.html){:target="_blank"}**
 e alle previsioni del Codice dell’Amministrazione Digitale.
 
 I risultati? Grazie all’ottimo lavoro di pubblicazione secondo le buone
@@ -55,11 +55,11 @@ interventi dei partecipanti, che hanno arricchito la discussione con richieste
 e curiosità su casi d’uso di altre amministrazioni ed eventuali criticità.
 
 Se non hai potuto seguirla e vuoi rivedere la community call,
-[guarda la registrazione](https://www.youtube.com/watch?v=NoMUqVKK8Rc){:target="_blank"}.
+**[guarda la registrazione](https://www.youtube.com/watch?v=NoMUqVKK8Rc){:target="_blank"}**.
 
 Hai un argomento che ti interessa e vorresti discuterne con la community?
-Scrivici su Slack nel canale [#community-call](https://developersitalia.slack.com/archives/C023MSRP03V){:target="_blank"}.
+**Scrivici su Slack nel canale [#community-call](https://developersitalia.slack.com/archives/C023MSRP03V){:target="_blank"}**.
 
-Ti aspettiamo il prossimo [14 luglio](https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634){:target="_blank"}!
+**Ti aspettiamo il prossimo [14 luglio](https://mobilizon.it/events/35514e5b-1346-4b89-8e45-9f1113906634)**{:target="_blank"}!
 
 I team di Developers Italia e Designers Italia
