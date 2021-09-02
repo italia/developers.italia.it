@@ -62,9 +62,9 @@ references:
         - v2-bundle-{{ checksum "Gemfile.lock" }}
         - v2-bundle-
 
-  get_crawler_yml_files: &get_crawler_yml_files
+  download_data: &download_data
     run:
-      name: get-crawler-yml-files
+      name: download-data
       command: |
         make download-data
 
@@ -114,8 +114,7 @@ jobs:
       - << : *install_dependencies
       - << : *save_cache_node_modules
       - << : *save_cache_bundle
-      - << : *get_crawler_yml_files
-      - run: make github-import
+      - << : *download_data
       - << : *build_bundle_jekyll
 
   build_and_deploy_gh_pages:
@@ -128,8 +127,7 @@ jobs:
       - << : *install_dependencies
       - << : *save_cache_node_modules
       - << : *save_cache_bundle
-      - << : *get_crawler_yml_files
-      - run: make github-import
+      - << : *download_data
       - << : *build_bundle_jekyll
       - << : *setup_ssh_gh_pages
       - << : *publish_changes_gh_pages

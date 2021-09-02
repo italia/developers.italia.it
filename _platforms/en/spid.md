@@ -148,14 +148,14 @@ resources:
       url: https://github.com/italia/spid-smart-button
       desc: New version (not yet official) of the 'Enter with SPID' button, that allows users to choose their Identity Provider
   - Tools:
-    - title: Test Identity Provider
-      url: https://github.com/italia/spid-testenv2
-      icon: github
-      desc: Test environment that can be used for troubleshooting a Service Provider implementation. It provides full validation against the official SPID rules and can be run as a local application too
-    - title: Identity Provider per il collaudo tecnico
+    - title: SPID test Identity Provider
       url: https://github.com/italia/spid-saml-check
       icon: github
       desc: Test environment used by AgID for testing the SPs in the onboarding phase, which can be performed locally
+    - title: SPID Quality Assessment e CI
+      url: https://github.com/italia/spid-sp-test
+      icon: github
+      desc: spid-sp-test is a SAML2 SPID Service Provider validation tool that can be executed from the command line
     - title: SAML2 certificate creation
       url: https://github.com/italia/spid-compliant-certificates
       icon: github
@@ -206,9 +206,9 @@ SPID can be integrated in the websites of the Public Administration, but also on
 
 1. Read [tecnhical documentation](https://docs.italia.it/italia/spid/spid-regole-tecniche).
 2. Use and contribute to the open source components available in [Developers Italia](https://github.com/italia?q=spid).
-3. Use a test identity provider such as[spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} or [spid-testenv2](https://github.com/italia/spid-testenv2){:target="_blank"} to simulate the authentication flow and verify that your implementation is correct.
+3. Use [spid-saml-check](https://github.com/italia/spid-saml-check){:target="_blank"} to simulate the authentication flow and verify that your implementation is correct.
 4. Get in touch with other developers at [Slack](https://slack.developers.italia.it/){:target="_blank"}.
-5. Follow the onboarding procedure [described here](https://www.spid.gov.it/come-diventare-fornitore-di-servizi-pubblici-e-privati-con-spid){:target="_blank"}.
+5. Follow the onboarding procedure [described here](https://www.spid.gov.it/en/what-is-spid/become-a-service-provider/){:target="_blank"}.
 6. If you have any further questions or are having problems with onboarding procedure, please contact [SPID HelpDesk](mailto:spid.tech@agid.gov.it).
 
 SPID is based on the SAML2 protocol, thus the integration can be done in several ways:

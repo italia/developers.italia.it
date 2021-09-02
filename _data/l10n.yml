@@ -1,6 +1,63 @@
 it:
   code: ita
   name: italiano
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mer
+    - gio
+    - ven
+    - sab
+    abbr_month_names:
+    -
+    - gen
+    - feb
+    - mar
+    - apr
+    - mag
+    - giu
+    - lug
+    - ago
+    - set
+    - ott
+    - nov
+    - dic
+    day_names:
+    - domenica
+    - lunedì
+    - martedì
+    - mercoledì
+    - giovedì
+    - venerdì
+    - sabato
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d %B %Y"
+      short: "%d %b"
+    month_names:
+    -
+    - gennaio
+    - febbraio
+    - marzo
+    - aprile
+    - maggio
+    - giugno
+    - luglio
+    - agosto
+    - settembre
+    - ottobre
+    - novembre
+    - dicembre
+  time:
+    am: am
+    formats:
+      default: "%a %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y %H:%M"
+      short: "%d %b %H:%M"
+      short_date: "%d %b %Y"
+    pm: pm
   t:
     all: Tutto
     active_lang: lingua attiva
@@ -175,6 +232,8 @@ it:
       technical_contacts: Contatti tecnici
       vitality: Vitalità
       development_status: Stato di sviluppo
+      goToLandingUrl: Sito web del progetto
+      goToLandingUrlAriaLabel: "Vai al sito del software (collegamento esterno)"
       goToDocumentation: Documentazione
       goToCode: Codice sorgente
       goToRoadmap: Roadmap
@@ -249,10 +308,66 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
       internal_error: Errore interno
       forbidden: Accesso negato!
 
-
 en:
   code: eng
   name: english
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+      short_date: "%b %d, %Y"
+    pm: pm
   t:
     all: All
     active_lang: current language
@@ -429,6 +544,8 @@ en:
       technical_contacts: Technical contacts
       technical_detail: Technical detail
       vitality: Vitality
+      goToLandingUrl: Project's website
+      goToLandingUrlAriaLabel: "Go to the software's site (external link)"
       goToDocumentation: Documentation
       goToCode: Source code
       goToRoadmap: Roadmap
