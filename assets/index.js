@@ -12,6 +12,7 @@ import 'bootstrap-select/js/bootstrap-select';
 import 'bootstrap-italia/src/js/plugins/select.js';
 import 'bootstrap-italia/src/js/plugins/custom-select.js';
 import './js/github-issues';
+import './js/platform-activities';
 
 import './js/swagger-custom';
 
