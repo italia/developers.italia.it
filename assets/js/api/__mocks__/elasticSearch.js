@@ -8,7 +8,7 @@ export const querySoftware = jest.fn(({ type }) => {
       [
         {
           _index: 'publiccodes',
-          _type: 'software',
+          _type: '_doc',
           _id: '3f58426d5729a9353962f782411737ec7fb9b220',
           _score: 1,
           _source: {
@@ -229,6 +229,7 @@ export const querySoftware = jest.fn(({ type }) => {
               'https://youtu.be/Js78gl_xAOU':
                 '<iframe width="200" height="113" src="https://www.youtube.com/embed/Js78gl_xAOU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
             },
+            type: 'software',
           },
         },
       ],
@@ -240,8 +241,8 @@ export const querySoftware = jest.fn(({ type }) => {
     [
       {
         _index: 'publiccodes',
-        _type: 'software',
         _id: '008bc17bec6f4b2feeca186d740183be7cfe6baf',
+        _type: '_doc',
         _score: 2,
         _source: {
           fileRawURL:
@@ -403,6 +404,7 @@ export const querySoftware = jest.fn(({ type }) => {
             60,
           ],
           oEmbedHTML: {},
+          type: 'software',
         },
       },
     ],
@@ -414,7 +416,7 @@ export const queryAllSite = jest.fn(() => [
   [
     {
       _index: 'jekyll-20210129060509',
-      _type: 'post',
+      _type: '_doc',
       _id: 'l72-THcB1AD1KRLs1zR8',
       _score: 1.5479652,
       _source: {
@@ -451,12 +453,13 @@ export const queryAdministration = jest.fn(() => [
   [
     {
       _index: 'administrations',
-      _type: 'administration',
+      _type: '_doc',
       _id: 'arpa',
       _score: 1,
       _source: {
         'it-riuso-codiceIPA-label': "Agenzia Regionale per la Prevenzione, l'Ambiente e l'Energia dell'Emilia Romagna",
         'it-riuso-codiceIPA': 'arpa',
+        type: 'administration',
       },
     },
   ],
@@ -467,7 +470,7 @@ export const queryApi = jest.fn(() => [
   [
     {
       _index: 'jekyll-20210129060509',
-      _type: 'post',
+      _type: '_doc',
       _id: 'djy-THcBQbdPK8qB5_Lp',
       _score: 0,
       _source: {
@@ -500,7 +503,7 @@ export const queryPlatform = jest.fn(() => [
   [
     {
       _index: 'jekyll-20210129060509',
-      _type: 'post',
+      _type: '_doc',
       _id: '_FK-THcB1A35Nb5M3m2V',
       _score: 3.2055624,
       _source: {
