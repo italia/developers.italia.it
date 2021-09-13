@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-09-13T06:05:41+00:00</updated>
+  <updated>2021-09-13T14:11:46+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,38 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/09/13/community-call-22-settembre</id>
+    <title>Community call: esperienze di riutilizzo dei modelli per siti web pubblici</title>
+    <updated>2021-09-13T09:00:00+00:00</updated>
+
+    <summary>Tornano gli appuntamenti mensili dedicati alla community </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/09/13/community-call-22-settembre">&lt;p&gt;Dopo la pausa estiva tornano le &lt;strong&gt;community call di Developers Italia e Designers Italia&lt;/strong&gt;: spazi di confronto pensati per condividere idee, scambiare buone pratiche, costruire sinergie e creare occasioni d’incontro.&lt;/p&gt;
+
+&lt;p&gt;Il prossimo appuntamento si terrà il &lt;strong&gt;22 settembre alle ore 15.30&lt;/strong&gt; e sarà dedicato al riutilizzo dei &lt;a href=&quot;https://designers.italia.it/#i-modelli&quot; target=&quot;_blank&quot;&gt;modelli&lt;/a&gt;, messi a disposizione da Designers Italia, in settori diversi da quelli per i quali sono stati pensati (&lt;a href=&quot;https://designers.italia.it/progetti/siti-web-comuni/&quot; target=&quot;_blank&quot;&gt;comuni&lt;/a&gt; e &lt;a href=&quot;https://designers.italia.it/progetti/siti-web-scuole/&quot; target=&quot;_blank&quot;&gt;scuole&lt;/a&gt;) come, per esempio, quello sanitario, per l’ideazione del sito web di un’azienda sanitaria, o universitario, per lo sviluppo di un sito di orientamento allo studente. I modelli sono risorse ideate per realizzare siti web e servizi di un’amministrazione: template pronti per l’utilizzo e un pacchetto di strumenti pensati per offrire agli utenti un’esperienza d’uso efficace e inclusiva. Durante l’incontro verranno presentati il contesto specifico di riutilizzo dei modelli, i vantaggi e le eventuali difficoltà incontrate, e come sono state superate.&lt;/p&gt;
+
+&lt;p&gt;L’appuntamento, pensato per &lt;strong&gt;designer&lt;/strong&gt; e &lt;strong&gt;developer&lt;/strong&gt; della community, ma anche per &lt;strong&gt;funzionarie&lt;/strong&gt;, &lt;strong&gt;funzionari&lt;/strong&gt; e &lt;strong&gt;manager&lt;/strong&gt; di PA, oltre che &lt;strong&gt;fornitori&lt;/strong&gt;, è dedicato a tutti coloro che intendono ri-utilizzare, adattare e personalizzare i modelli: ampio spazio verrà dato alle domande e alle curiosità dei partecipanti.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/27850328-1abf-417c-a90a-0166b4386570&quot;&gt;Registrati&lt;/a&gt; all’evento per partecipare. Ti aspettiamo il 22 settembre!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I Team di Developers Italia e Designers Italia&lt;/p&gt;</content>
+    <published>2021-09-13T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+    <category term="riuso" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/07/30/community-call-14-luglio</id>
     <title>Risorse per l’integrazione del Sistema Pubblico di Identità Digitale</title>
