@@ -18,11 +18,26 @@ export const buildFilter = (filters) => {
 
 export const buildSort = (sortBy) => {
   if (sortBy === ALPHABETICAL) {
-    return [
-      {
-        'publiccode.description.it.localizedName.keyword': { order: 'asc', unmapped_type: 'keyword' },
+    return {
+      _script: {
+        type: 'string',
+        order: 'asc',
+        script: {
+          lang: 'painless',
+          source: `
+             if (
+                 doc['publiccode.description.it.localisedName.keyword'].size() != 0
+                 && !doc['publiccode.description.it.localisedName.keyword'].empty
+                ) {
+               return doc['publiccode.description.it.localisedName.keyword'].value
+             }
+             else {
+               return doc['publiccode.name.keyword'].value
+             }
+           `,
+        },
       },
-    ];
+    };
   }
   if (sortBy === VITALITY) {
     return [
