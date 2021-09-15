@@ -13,7 +13,13 @@
   <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
 
   <title>
-    {{ page.publiccode.name | default: page.title | default: page.name | default: t.site_title | default: site.title |
+      {% comment %}The following code is valid for pages with publiccode data (i.e. software description pages) see https://github.com/italia/developers.italia.it/issues/1026 {% endcomment %}
+      {% assign description = page.publiccode.description[active_lang]
+      | default: page.publiccode.description.en
+      | default: page.publiccode.description.it %}
+
+      {% assign sw_name = description.localisedName | default: page.publiccode.name %}
+    {{ sw_name | default: page.title | default: page.name | default: t.site_title | default: site.title |
     escape }}
   </title>
 
