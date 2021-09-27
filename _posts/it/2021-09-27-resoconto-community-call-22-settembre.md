@@ -24,7 +24,7 @@ manager di  una società di Siena che lavora nel settore dello sviluppo software
 del design e comunicazione. Insieme al suo gruppo di lavoro, Giulio ha
 realizzato due portali per l'orientamento degli studenti
 ([orienta.unipv.it](https://orienta.unipv.it/){:target="_blank"} e
-[orientarsi.unisi.it](https://orientarsi.unisi.it/){:target="_blank"},
+[orientarsi.unisi.it](https://orientarsi.unisi.it/){:target="_blank"}),
 sottolineando come, nella sua esperienza, l’approccio collaborativo di co-design
 abbia portato a una migliore organizzazione. È poi intervenuto Andrea Manica, di
 [Apss](https://www.apss.tn.it/){:target="_blank"}, azienda provinciale per i
