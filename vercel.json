@@ -1,4 +1,7 @@
 {
   "name": "Developers Italia",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "github": {
+    "silent": true
+  }
 }
