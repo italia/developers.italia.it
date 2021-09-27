@@ -1,4 +1,5 @@
 import { ALPHABETICAL, RELEASE_DATE, VITALITY } from '../utils/constants.js';
+import { lang } from '../utils/l10n.js';
 
 export const buildFilter = (filters) => {
   let { intendedAudiences, categories, developmentStatuses } = filters;
@@ -26,10 +27,10 @@ export const buildSort = (sortBy) => {
           lang: 'painless',
           source: `
              if (
-                 doc['publiccode.description.it.localisedName.keyword'].size() != 0
-                 && !doc['publiccode.description.it.localisedName.keyword'].empty
+                 doc['publiccode.description.${lang}.localisedName.keyword'].size() != 0
+                 && !doc['publiccode.description.${lang}.localisedName.keyword'].empty
                 ) {
-               return doc['publiccode.description.it.localisedName.keyword'].value
+               return doc['publiccode.description.${lang}.localisedName.keyword'].value
              }
              else {
                return doc['publiccode.name.keyword'].value
