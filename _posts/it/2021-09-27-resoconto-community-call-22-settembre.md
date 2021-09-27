@@ -47,7 +47,7 @@ i modelli e kit in riuso, puoi interagire su
 [Slack](https://developersitalia.slack.com/archives/C023MSRP03V){:target="_blank"}
 e rimanere sempre sul pezzo, seguendo [Developers
 Italia](https://twitter.com/developersITA){:target="_blank"} e [Designers
-Italia](https://twitter.com/developersITA){:target="_blank"} anche su Twitter.
+Italia](https://twitter.com/DesignersITA){:target="_blank"} anche su Twitter.
 
 E ora, è già il momento di annunciare la prossima data: le community call
 tornano il **27 novembre**. Ti aspettiamo!
