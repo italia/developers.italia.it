@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-09-27T11:48:59+00:00</updated>
+  <updated>2021-09-27T13:49:23+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,70 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/09/27/resoconto-community-call-22-settembre</id>
+    <title>Community Call - il riutilizzo dei modelli di Designers Italia</title>
+    <updated>2021-09-27T08:00:00+00:00</updated>
+
+    <summary>Scopri di cosa abbiamo parlato durante la call del 22 settembre </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/09/27/resoconto-community-call-22-settembre">&lt;p&gt;Dopo la pausa estiva, sono ripartite le community call: il &lt;strong&gt;22 settembre&lt;/strong&gt;
+abbiamo parlato delle esperienze di riuso dei modelli e kit messi a disposizione
+da Designers Italia, in origine pensati per
+&lt;a href=&quot;https://designers.italia.it/modello/comuni/&quot; target=&quot;_blank&quot;&gt;comuni&lt;/a&gt; e
+&lt;a href=&quot;https://designers.italia.it/modello/scuole/&quot; target=&quot;_blank&quot;&gt;scuole&lt;/a&gt;, e in
+questo caso utilizzati anche in altri settori. Come sempre, un piacevole momento
+di confronto che ha riunito varie professionalità e background all’insegna
+dell’open source.&lt;/p&gt;
+
+&lt;p&gt;Tra i protagonisti dell’incontro abbiamo ascoltato Giulio Burroni, project
+manager di  una società di Siena che lavora nel settore dello sviluppo software,
+del design e comunicazione. Insieme al suo gruppo di lavoro, Giulio ha
+realizzato due portali per l’orientamento degli studenti
+(&lt;a href=&quot;https://orienta.unipv.it/&quot; target=&quot;_blank&quot;&gt;orienta.unipv.it&lt;/a&gt; e
+&lt;a href=&quot;https://orientarsi.unisi.it/&quot; target=&quot;_blank&quot;&gt;orientarsi.unisi.it&lt;/a&gt;),
+sottolineando come, nella sua esperienza, l’approccio collaborativo di co-design
+abbia portato a una migliore organizzazione. È poi intervenuto Andrea Manica, di
+&lt;a href=&quot;https://www.apss.tn.it/&quot; target=&quot;_blank&quot;&gt;Apss&lt;/a&gt;, azienda provinciale per i
+servizi sanitari di Trento, che ha raccontato la sua esperienza di utilizzo del
+modello per il settore sanitario e la migrazione di una grande quantità di dati
+sul nuovo portale dell’azienda. A seguire Leonardo Milan, studente di
+comunicazione dell’Università di Padova, ci ha raccontato come ha realizzato il
+nuovo sito per la sua parrocchia grazie all’ausilio del tema per la piattaforma
+Wordpress di &lt;a href=&quot;https://italia.github.io/bootstrap-italia/&quot; target=&quot;_blank&quot;&gt;Bootstrap
+Italia&lt;/a&gt;, grazie
+all’immediatezza e alla semplicità d’uso dei componenti del design system.&lt;/p&gt;
+
+&lt;p&gt;Non hai potuto seguire la call, ma ti piacerebbe approfondire? &lt;a href=&quot;https://www.youtube.com/watch?v=q0Uh_5SOCFA&quot; target=&quot;_blank&quot;&gt;Guarda il
+video&lt;/a&gt;
+dell’incontro sul canale YouTube del Dipartimento per la trasformazione
+digitale.&lt;/p&gt;
+
+&lt;p&gt;Se vuoi restare in contatto con la community e raccontare la tua esperienza con
+i modelli e kit in riuso, puoi interagire su
+&lt;a href=&quot;https://developersitalia.slack.com/archives/C023MSRP03V&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt;
+e rimanere sempre sul pezzo, seguendo &lt;a href=&quot;https://twitter.com/developersITA&quot; target=&quot;_blank&quot;&gt;Developers
+Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot; target=&quot;_blank&quot;&gt;Designers
+Italia&lt;/a&gt; anche su Twitter.&lt;/p&gt;
+
+&lt;p&gt;E ora, è già il momento di annunciare la prossima data: le community call
+tornano il &lt;strong&gt;27 ottobre&lt;/strong&gt;. Ti aspettiamo!&lt;/p&gt;</content>
+    <published>2021-09-27T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+    <category term="riuso" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/09/13/community-call-22-settembre</id>
     <title>Community call: esperienze di riutilizzo dei modelli per siti web pubblici</title>
