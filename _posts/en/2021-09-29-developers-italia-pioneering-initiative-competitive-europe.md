@@ -8,7 +8,7 @@ categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
 ref:
-  it: /it/news/2021/09/29/developers-italia-pioniera-europa-competitiva.md
+  it: /it/news/2021/09/29/developers-italia-pioniera-europa-competitiva
 locale: en
 ---
 
