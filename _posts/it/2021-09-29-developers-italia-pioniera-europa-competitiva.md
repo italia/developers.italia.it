@@ -8,7 +8,7 @@ categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
 ref:
-  en: /en/news/2021/29/09/developers-italia-al-google-summer-of-code-2019
+  en: /en/news/2021/29/09/developers-italia-pioneering-initiative-competitive-europe
 locale: it
 ---
 
