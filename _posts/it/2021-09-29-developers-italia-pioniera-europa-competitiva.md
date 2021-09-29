@@ -3,7 +3,7 @@ layout: post
 title: "Developers Italia: iniziativa pioniera per un’Europa digitale indipendente e competitiva"
 subtitle: Uno studio della Commissione Europea evidenzia l’impatto del software e hardware open source sull’economia dell’Unione
 date: 2021-09-29 10:00:00 +0200
-tags: developers designers opensource riuso
+tags: developers opensource UE
 categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
