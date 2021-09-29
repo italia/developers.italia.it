@@ -16,7 +16,7 @@ locale: it
 
 I dati parlano chiaro: secondo lo studio, nel 2018 le aziende situate nell’area EU hanno investito circa 1 miliardo di euro in software __open source__ (OSS), con un impatto sull’economia dell’eurozona stimato tra i 65 e 95 miliardi di euro. Inoltre un aumento del 10% sugli investimenti in OSS potrebbe contribuire alla nascita di oltre 600 nuove start-up in EU, generando un aumento di PIL di 100 miliardi di euro.
 
-Inoltre, grazie alla generazione di know-how e in generale all'aumento di competitività, lo studio stima che ogni euro investito in sviluppo open source genera un beneficio sul PIL di almeno quattro euro.
+In aggiunta, grazie alla generazione di know-how e in generale all'aumento di competitività, lo studio stima che ogni euro investito in sviluppo open source genera un beneficio sul PIL di almeno quattro euro.
 
 Alla luce di questi dati, lo studio contiene alcune raccomandazioni rivolte ai paesi europei per promuovere maggiormente l’open source sia a livello politico che economico. L’Italia non è rimasta a guardare: nel nostro paese, il **punto di riferimento per il software della Pubblica Amministrazione** è **Developers Italia,** grazie al quale le disposizioni del [Codice dell'Amministrazione Digitale](https://www.agid.gov.it/it/agenzia/strategia-quadro-normativo/codice-amministrazione-digitale) sull’open source trovano un supporto concreto.
 
@@ -24,4 +24,4 @@ Il ruolo di Developers Italia come cabina di regia strategica del software della
 
 Siamo orgogliosi di quanto fatto finora e auspichiamo un futuro sempre più “Open”.
 
-Leggi [l’articolo completo](https://innovazione.gov.it/notizie/articoli/il-valore-dell-open-source-per-un-europa-digitale-indipendente-e-competitiva/) sul sito del Dipartimento per la trasformazione digitale
+Leggi [l’articolo completo](https://innovazione.gov.it/notizie/articoli/il-valore-dell-open-source-per-un-europa-digitale-indipendente-e-competitiva/) sul sito del Dipartimento per la trasformazione digitale.
