@@ -8,7 +8,7 @@ categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
 ref:
-  en: /en/news/2021/29/09/developers-italia-pioneering-initiative-competitive-europe
+  en: /en/news/2021/09/29/developers-italia-pioneering-initiative-competitive-europe
 locale: it
 ---
 
