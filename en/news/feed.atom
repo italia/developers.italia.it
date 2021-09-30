@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://developers.italia.it/en/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-09-30T06:08:45+00:00</updated>
+  <updated>2021-09-30T08:25:15+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/en/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,42 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="en">
+    <id>https://developers.italia.it/en/news/2021/09/29/developers-italia-pioneering-initiative-competitive-europe</id>
+    <title>Developers Italia: pioneering initiative for an independent and competitive digital Europe</title>
+    <updated>2021-09-29T08:00:00+00:00</updated>
+
+    <summary>European Commission study highlights the impact of open source software and hardware on the EU economy </summary>
+    <content type="html" xml:base="https://developers.italia.it/en/news/2021/09/29/developers-italia-pioneering-initiative-competitive-europe">&lt;p&gt;&lt;strong&gt;Developers Italia&lt;/strong&gt; is one of the strategic initiatives for the promotion of open source public policies in Europe. A &lt;a href=&quot;https://digital-strategy.ec.europa.eu/en/library/study-about-impact-open-source-software-and-hardware-technological-independence-competitiveness-and&quot;&gt;European Commission study&lt;/a&gt;, published by &lt;a href=&quot;https://ec.europa.eu/info/departments/communications-networks-content-and-technology_en&quot;&gt;DG CONNECT&lt;/a&gt;, shows that open source plays a key role in European development. Using only open source software instead of proprietary software can foster the independence of the public sector in the EU, reducing costs and limiting the lock-in. Therefore, according to the Commission, &lt;strong&gt;open source is the key to a more autonomous and technologically sovereign European Union&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The figures speak volumes: according to the study, in 2018, companies located in the EU area invested around €1 billion in open source software (OSS), resulting in an impact on the eurozone economy estimated at between €65 and 95 billion. In addition, a 10% increase in OSS investment could contribute to the creation of more than 600 new start-ups in the EU, generating a GDP increase of €100 billion.&lt;/p&gt;
+
+&lt;p&gt;Moreover, due to the generation of know-how and increased competitiveness in general, the study estimates that every euro invested in open source development generates a GDP benefit of at least four euros.&lt;/p&gt;
+
+&lt;p&gt;In light of these data, the study contains recommendations for European countries to further promote open source both at a political and economic level. Italy has not stood idle: in our country, &lt;strong&gt;the point of reference for Public Administration software is Developers Italia&lt;/strong&gt;, thanks to which the provisions of the &lt;a href=&quot;https://www.agid.gov.it/it/agenzia/strategia-quadro-normativo/codice-amministrazione-digitale&quot;&gt;Digital Administration Code&lt;/a&gt; on open source find concrete support.&lt;/p&gt;
+
+&lt;p&gt;Developers Italia’s role as a strategic control room for Public Administration software will be central to ensuring quality and compliance with European best practices, including investment in open source, during the software selection or creation phases of projects under the PNRR.&lt;/p&gt;
+
+&lt;p&gt;We are proud of what we have done so far and look forward to an increasingly “Open” future.&lt;/p&gt;
+
+&lt;p&gt;Read &lt;a href=&quot;https://innovazione.gov.it/notizie/articoli/il-valore-dell-open-source-per-un-europa-digitale-indipendente-e-competitiva/&quot;&gt;the full article&lt;/a&gt; on the Department for digital transformation website.&lt;/p&gt;</content>
+    <published>2021-09-29T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+    <category term="riuso" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="en">
     <id>https://developers.italia.it/en/news/2021/04/19/working-to-make-our-lives-better</id>
     <title>Working to make our lives better</title>
