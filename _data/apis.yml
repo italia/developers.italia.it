@@ -101,4 +101,14 @@
   tags: [data]
   language: [it]
   slug: mic-data-sparql
+- openapi: https://raw.githubusercontent.com/APT-Servizi/openapi-ert/main/v1/api-spec.yaml
+  title: OpenData Emilia Romagna Turismo 
+  abstract: >-
+    Catalogo ufficiale degli open-data del turismo della regione Emilia-Romagna.
+  contact:
+    name: APT Servizi
+    logo: /assets/images/api/logo-ert-api.png
+  tags: [data, turismo]
+  language: [it, en]
+  slug: opendata-ert
 
