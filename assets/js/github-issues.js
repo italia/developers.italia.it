@@ -39,7 +39,7 @@ $(document).ready(function () {
       url: datatables_language_url[current_language],
     },
     ajax: {
-      url: '/assets/github_issues.json',
+      url: 'https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json',
       dataSrc: '',
     },
     order: [[0, 'desc']],
