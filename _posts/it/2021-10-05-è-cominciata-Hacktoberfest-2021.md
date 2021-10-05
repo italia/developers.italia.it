@@ -1,3 +1,4 @@
+---
 layout: post
 title: "É cominciata l'Hacktoberfest 2021"
 subtitle: Partecipa all’evento internazionale per favorire lo sviluppo di software open source. Developers Italia ci sarà
