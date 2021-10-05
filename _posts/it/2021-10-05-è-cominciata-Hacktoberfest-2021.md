@@ -8,6 +8,7 @@ categories: news
 author: Andrea Stagi
 image: /assets/icons/logo-it.png
 locale: it
+---
 
 Software aperto o… scherzetto? Anche quest’anno [Developers Italia](https://hacktoberfest.digitalocean.com/){:target="_blank"} parteciperà all’Hacktoberfest e, come sempre, la scelta è solo una: esserci! 
 
