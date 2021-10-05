@@ -12,7 +12,8 @@ download-data:
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_tech_list.yml
 
-	wget -P _site/assets https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json
+	# Check the github_issues.json file exists, we'll need it on the frontend once the site has build
+	curl -w %{http_code} -s -o /dev/null https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json | grep 200
 
 bundle-setup:
 	gem install bundler:2.1.4
