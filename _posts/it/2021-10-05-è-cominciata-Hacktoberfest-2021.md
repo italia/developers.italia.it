@@ -3,7 +3,7 @@ layout: post
 title: "É cominciata l'Hacktoberfest 2021"
 subtitle: Partecipa all’evento internazionale per favorire lo sviluppo di software open source. Developers Italia ci sarà
 date: 2021-10-05 10:00:00 +0200
-tags: developers opensource Hacktoberfest
+tags: developers opensource hacktoberfest
 categories: news
 author: Andrea Stagi
 image: /assets/icons/logo-it.png
