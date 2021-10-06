@@ -10,7 +10,7 @@ image: /assets/icons/logo-it.png
 locale: it
 ---
 
-Software aperto o… scherzetto? Anche quest’anno [Developers Italia](https://hacktoberfest.digitalocean.com/){:target="_blank"} parteciperà all’Hacktoberfest e, come sempre, la scelta è solo una: esserci! 
+Software aperto o… scherzetto? Anche quest’anno Developers Italia parteciperà all’[Hacktoberfest](https://hacktoberfest.digitalocean.com/){:target="_blank"} e, come sempre, la scelta è solo una: esserci! 
 
 L’iniziativa è giunta al suo ottavo anno e anche nel 2021 ospiterà i developers di tutto il globo e oltre, che potranno confrontarsi e divertirsi con una serie di sfide **lungo tutto il mese di ottobre**. I contributi degli utenti spazieranno su diversi livelli di complessità: dalla semplice traduzione di un testo, fino ad attività più stimolanti come la risoluzione di bug o alla definizione di nuove funzionalità chiave. I partecipanti dovranno trovare una soluzione per questi problemi e proporre del codice funzionante ai *maintainer* attraverso il sistema di *pull request*: impatto garantito! Dopo un’attenta revisione, **ogni contributo significativo sarà consolidato con il resto del codice e verrà fruito da moltissimi cittadini, PA e imprese** che giornalmente affrontano le sfide della digitalizzazione dei propri servizi.
 
