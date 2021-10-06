@@ -174,18 +174,18 @@ it:
     todo_page_filters: Filtra la lista
     todo_page_pick_option: Scegli una opzione
     todo_projects_dict:
-        bootstrap: Italia Design System
-        pianotriennale: Piano Triennale
-        anpr: ANPR (Anagrafe Nazionale)
-        spid: SPID (Identità Digitale)
-        lg: Linee Guida
-        website: Siti web
-        other: Altro
-        daf: Data & Analytics Framework
-        design: Italia Design System
-        cie: Carta d'Identità Elettronica
-        security: Security
-        18app: 18App
+      bootstrap: Italia Design System
+      pianotriennale: Piano Triennale
+      anpr: ANPR (Anagrafe Nazionale)
+      spid: SPID (Identità Digitale)
+      lg: Linee Guida
+      website: Siti web
+      other: Altro
+      daf: Data & Analytics Framework
+      design: Italia Design System
+      cie: Carta d'Identità Elettronica
+      security: Security
+      18app: 18App
     project_abilitante: Piattaforma abilitante
     project_owner: Titolare
     project_manager: Gestore
@@ -487,18 +487,18 @@ en:
     todo_page_filters: Filter the list
     todo_page_pick_option: Pick an option
     todo_projects_dict:
-        bootstrap: Italia Design System
-        pianotriennale: Three-year Plan
-        anpr: National Registry of Resident Population
-        spid: Public System for Digital Identity
-        lg: Guidelines
-        website: Web sites
-        other: Other
-        daf: Data & Analytics Framework
-        design: Italia Design System
-        cie: Italian Electronic Identity Card (CIE)
-        security: Security
-        18app: 18App
+      bootstrap: Italia Design System
+      pianotriennale: Three-year Plan
+      anpr: National Registry of Resident Population
+      spid: Public System for Digital Identity
+      lg: Guidelines
+      website: Web sites
+      other: Other
+      daf: Data & Analytics Framework
+      design: Italia Design System
+      cie: Italian Electronic Identity Card (CIE)
+      security: Security
+      18app: 18App
     project_abilitante: Enabling Platform
     project_owner: Owner
     project_manager: Manager
