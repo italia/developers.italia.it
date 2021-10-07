@@ -1,3 +1,5 @@
+import 'datatables.net';
+
 // eslint-disable-next-line sonarjs/cognitive-complexity
 $(document).ready(function () {
   const $section = $('section[data-projects-dictionary]');
