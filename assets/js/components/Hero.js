@@ -47,8 +47,8 @@ class Hero extends Component {
     return (
       <section className="swagger--hero">
         <div className="row">
-          <div className="col-lg-7">
-            <div className="mr-5">
+          <div className={project ? 'col-lg-7' : 'col-lg'}>
+            <div className={project ? 'mr-5' : 'mr-5 ml-5'}>
               <h1 className="display-1 mb-4">
                 {title}
                 <span className="badge badge-pill badge-primary swagger--hero-pill ml-2">{version}</span>
@@ -121,11 +121,11 @@ class Hero extends Component {
               </div>
             </div>
           </div>
-          <div className="col-lg">
-            {(() => {
-              if (project) {
-                const { id, title, description } = reference;
-                return (
+          {(() => {
+            if (project) {
+              const { id, title, description } = reference;
+              return (
+                <div className="col-lg">
                   <div className="card rounded border border-primary mt-5 swagger--hero--card">
                     <div className="card-body">
                       <div className="position-absolute text-uppercase swagger--hero--card-legend">{platform}</div>
@@ -144,10 +144,10 @@ class Hero extends Component {
                       </div>
                     </div>
                   </div>
-                );
-              }
-            })()}
-          </div>
+                </div>
+              );
+            }
+          })()}
         </div>
       </section>
     );
