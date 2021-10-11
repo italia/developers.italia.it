@@ -439,12 +439,21 @@ layout: default
                 <p>
                   <span class="label">{{ t.software.contract_with }}</span>
                   {% for contractor in page.publiccode.maintenance.contractors %}
-                    {% if contractor.website != nil and contractor.website != "" %}
-                    <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a> {{ t.software.until }} {{
-                    contractor.until}}
-                    {% else %}
-                    {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
+                    {% assign today_date = 'now' | date: '%s' %}
+                    {% assign contractor_date = contractor.until | date: '%s' %}
+                    {% if today_date > contractor_date %}
+                    <svg class="icon icon-sm icon-warning">
+                      <use xlink:href="/assets/svg/sprite.svg#it-warning-circle"></use>
+                    </svg>
                     {% endif %}
+                    <span class="align-middle">
+                      {% if contractor.website != nil and contractor.website != "" %}
+                      <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a>
+                      {{ t.software.until }} {{contractor.until}}
+                      {% else %}
+                      {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
+                      {% endif %}
+                    </span>
                   {% endfor %}
                 </p>
               </div>
