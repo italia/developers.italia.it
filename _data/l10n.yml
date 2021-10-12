@@ -106,9 +106,10 @@ it:
     news_filter: Filtra per argomento
     see_also: "Vedi anche:"
 
-    paginator_previous_page: pagina precedente
-    paginator_next_page: pagina successiva
+    paginator_previous_page: Pagina precedente
+    paginator_next_page: Pagina successiva
     paginator_page: pagina
+    paginator_of: di
 
     project_leader: Community leader
 
@@ -419,9 +420,10 @@ en:
     news_filter: Filter by topic
     see_also: "See also:"
 
-    paginator_previous_page: previous page
-    paginator_next_page: next page
+    paginator_previous_page: Previous page
+    paginator_next_page: Next page
     paginator_page: page
+    paginator_of: of
 
     project_leader: Community leaders
 

@@ -67,6 +67,7 @@ pagination:
   debug: true
   per_page: 20
   sort_reverse: true
+  title: ':title'
 
 # tag pages
 tag_page_layout: posts_by_tag
