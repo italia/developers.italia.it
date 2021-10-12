@@ -108,7 +108,7 @@ it:
 
     paginator_previous_page: Pagina precedente
     paginator_next_page: Pagina successiva
-    paginator_page: Pagina
+    paginator_page: pagina
     paginator_of: di
 
     project_leader: Community leader
@@ -421,7 +421,7 @@ en:
 
     paginator_previous_page: Previous page
     paginator_next_page: Next page
-    paginator_page: Page
+    paginator_page: page
     paginator_of: of
 
     project_leader: Community leaders
