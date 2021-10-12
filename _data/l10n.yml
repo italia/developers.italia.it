@@ -254,6 +254,7 @@ it:
       detailed_info: Informazioni di dettaglio
       maintainance_type: Tipo di manutenzione
       contract_with: Contratto con
+      contract_warning: Supporto software terminato
       last_release: Ultimo rilascio
       license: Licenza
       page: pagina
@@ -569,6 +570,7 @@ en:
       detailed_info: detailed information
       maintainance_type: Type of maintenance
       contract_with: Contract with
+      contract_warning: Software support ended
       last_release: Last release
       license: License
       page: page

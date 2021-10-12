@@ -54,10 +54,6 @@ resources:
       icon: settings
       url: https://github.com/italia/cie-cns-apache-docker
       desc: Docker image for exposing a web server with CIE or CNS based authentication
-    - title: IDEA (app Android)
-      icon: telephone
-      url: https://github.com/italia/cie-ideaapp
-      desc: Source code of the IDEA app for Android which allows to read and view card contents with a smartphone
     - title: SDK for .NET (MRTD)
       icon: github
       url: https://github.com/italia/cie-mrtd-dotnet-sdk
@@ -66,10 +62,6 @@ resources:
       icon: github
       url: https://github.com/italia/cie-mrtd-example-app
       desc: Example desktop application for reading MRTD/ICAO data using the .NET library
-    - title: Example web application (MRTD)
-      icon: github
-      url: https://github.com/italia/cie-mrtd-example-web
-      desc: Example web application for reading MRTD/ICAO data using the .NET library
     - title: SDK for Arduino (NIS)
       icon: github
       url: https://github.com/italia/cie-PN532
@@ -86,10 +78,6 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-java-sdk
       desc: Java library for reading the unique card number (NIS)
-    - title: SDK for Objective-C (NIS)
-      icon: github
-      url: https://github.com/italia/cie-nis-objc-sdk
-      desc: Objective-C library for reading the unique card number (NIS)
 ---
 
 ## Intro
