@@ -175,6 +175,7 @@ it:
     todo_page_filters: Filtra la lista
     todo_page_pick_option: Scegli una opzione
     todo_projects_dict:
+      api: API
       bootstrap: Italia Design System
       pianotriennale: Piano Triennale
       anpr: ANPR (Anagrafe Nazionale)
@@ -490,6 +491,7 @@ en:
     todo_page_filters: Filter the list
     todo_page_pick_option: Pick an option
     todo_projects_dict:
+      api: API
       bootstrap: Italia Design System
       pianotriennale: Three-year Plan
       anpr: National Registry of Resident Population

@@ -1,5 +1,20 @@
 import 'datatables.net';
 
+const project_prefix = [
+  'api-',
+  'bootstrap-',
+  'spid-',
+  '18app',
+  'anpr-',
+  'daf-',
+  'dati-',
+  'pianotriennale-',
+  'lg-',
+  'design-',
+  'security-',
+  'cie-',
+];
+
 // eslint-disable-next-line sonarjs/cognitive-complexity
 $(document).ready(function () {
   const $section = $('section[data-projects-dictionary]');
@@ -42,7 +57,27 @@ $(document).ready(function () {
     },
     ajax: {
       url: 'https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json',
-      dataSrc: '',
+      dataSrc: (data) => {
+        data.forEach((el) => {
+          let prefix = '';
+          for (let i = 0; i < project_prefix.length; i++) {
+            if (el.name.indexOf(project_prefix[i]) === 0) {
+              prefix = project_prefix[i].split('-')[0];
+              break;
+            }
+          }
+          if (prefix === '') {
+            const re = /.italia.it|\.gov.it|\.governo\.it/;
+            if (el.name.match(re)) {
+              prefix = 'website';
+            } else {
+              prefix = 'other';
+            }
+          }
+          el.project = prefix;
+        });
+        return data;
+      },
     },
     order: [[0, 'desc']],
     columns: [
@@ -94,20 +129,28 @@ $(document).ready(function () {
         .every(function () {
           const column = this;
           $github_projects_list_select.on('change', function () {
-            const val = $.fn.dataTable.util.escapeRegex($(this).val());
+            let val = $(this).val() === '' ? '' : projects_dictionary[$(this).val()];
+            val = val === undefined ? $(this).val() : $.fn.dataTable.util.escapeRegex(val);
             column.search(val ? val : '', true, false).draw();
           });
 
-          const apps = [];
+          const apps = {};
           column
             .data()
             .unique()
             .sort()
             .each(function (d) {
               const title = d in projects_dictionary ? projects_dictionary[d] : d;
-              apps.push({ text: title, value: d });
+              apps[title] = { text: title, value: d };
             });
-          $github_projects_list.setOptionsToSelect(apps);
+          const apps_keys = Object.keys(apps).sort((a, b) => a.localeCompare(b));
+          const apps_arr = [];
+          for (const key in apps_keys) {
+            if (Object.prototype.hasOwnProperty.call(apps, apps_keys[key])) {
+              apps_arr.push(apps[apps_keys[key]]);
+            }
+          }
+          $github_projects_list.setOptionsToSelect(apps_arr);
           $github_projects_list_select.selectpicker('val', platformParam);
           $github_projects_list_select.trigger('change', platformParam);
         });
