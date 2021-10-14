@@ -59,22 +59,22 @@ $(document).ready(function () {
       url: 'https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json',
       dataSrc: (data) => {
         data.forEach((el) => {
-          let prefix = '';
+          let project = '';
           for (let i = 0; i < project_prefix.length; i++) {
             if (el.name.indexOf(project_prefix[i]) === 0) {
-              prefix = project_prefix[i].split('-')[0];
+              project = project_prefix[i].split('-')[0];
               break;
             }
           }
-          if (prefix === '') {
+          if (project === '') {
             const re = /.italia.it|\.gov.it|\.governo\.it/;
             if (el.name.match(re)) {
-              prefix = 'website';
+              project = 'website';
             } else {
-              prefix = 'other';
+              project = 'other';
             }
           }
-          el.project = prefix;
+          el.project = project;
         });
         return data;
       },
