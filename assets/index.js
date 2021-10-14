@@ -2,8 +2,6 @@
 
 import 'bootstrap';
 
-import 'datatables.net';
-
 import './js/logos';
 import './js/main';
 import './js/misc';

@@ -106,9 +106,10 @@ it:
     news_filter: Filtra per argomento
     see_also: "Vedi anche:"
 
-    paginator_previous_page: pagina precedente
-    paginator_next_page: pagina successiva
+    paginator_previous_page: Pagina precedente
+    paginator_next_page: Pagina successiva
     paginator_page: pagina
+    paginator_of: di
 
     project_leader: Community leader
 
@@ -174,17 +175,19 @@ it:
     todo_page_filters: Filtra la lista
     todo_page_pick_option: Scegli una opzione
     todo_projects_dict:
-        pianotriennale: Piano Triennale
-        anpr: ANPR (Anagrafe Nazionale)
-        spid: SPID (Identità Digitale)
-        lg: Linee Guida
-        website: Siti web
-        other: Altro
-        daf: Data & Analytics Framework
-        design: Italia Design System
-        cie: Carta d'Identità Elettronica
-        security: Security
-        18app: 18App
+      api: API
+      bootstrap: Italia Design System
+      pianotriennale: Piano Triennale
+      anpr: ANPR (Anagrafe Nazionale)
+      spid: SPID (Identità Digitale)
+      lg: Linee Guida
+      website: Siti web
+      other: Altro
+      daf: Data & Analytics Framework
+      design: Italia Design System
+      cie: Carta d'Identità Elettronica
+      security: Security
+      18app: 18App
     project_abilitante: Piattaforma abilitante
     project_owner: Titolare
     project_manager: Gestore
@@ -252,6 +255,7 @@ it:
       detailed_info: Informazioni di dettaglio
       maintainance_type: Tipo di manutenzione
       contract_with: Contratto con
+      contract_warning: Supporto software terminato
       last_release: Ultimo rilascio
       license: Licenza
       page: pagina
@@ -417,9 +421,10 @@ en:
     news_filter: Filter by topic
     see_also: "See also:"
 
-    paginator_previous_page: previous page
-    paginator_next_page: next page
+    paginator_previous_page: Previous page
+    paginator_next_page: Next page
     paginator_page: page
+    paginator_of: of
 
     project_leader: Community leaders
 
@@ -486,17 +491,19 @@ en:
     todo_page_filters: Filter the list
     todo_page_pick_option: Pick an option
     todo_projects_dict:
-        pianotriennale: Three-year Plan
-        anpr: National Registry of Resident Population
-        spid: Public System for Digital Identity
-        lg: Guidelines
-        website: Web sites
-        other: Other
-        daf: Data & Analytics Framework
-        design: Italia Design System
-        cie: Italian Electronic Identity Card (CIE)
-        security: Security
-        18app: 18App
+      api: API
+      bootstrap: Italia Design System
+      pianotriennale: Three-year Plan
+      anpr: National Registry of Resident Population
+      spid: Public System for Digital Identity
+      lg: Guidelines
+      website: Web sites
+      other: Other
+      daf: Data & Analytics Framework
+      design: Italia Design System
+      cie: Italian Electronic Identity Card (CIE)
+      security: Security
+      18app: 18App
     project_abilitante: Enabling Platform
     project_owner: Owner
     project_manager: Manager
@@ -565,6 +572,7 @@ en:
       detailed_info: detailed information
       maintainance_type: Type of maintenance
       contract_with: Contract with
+      contract_warning: Software support ended
       last_release: Last release
       license: License
       page: page

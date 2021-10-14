@@ -19,7 +19,12 @@ layout: default
     <div class="postslisting__header ">
 
       <div class="container pt-4 d-flex w-100">
+        {% if paginator.total_pages > 1 %}
+        <h1>{{ page.title }} - {{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</h1>
+        {% else %}
         <h1>{{ page.title }}</h1>
+        {% endif %}
+        
         {% if active_lang=='it' %}
         <div class="postslisting__filtertag ml-auto d-flex">
         <a href="#" class="align-self-center d-flex" data-activate-element
@@ -89,6 +94,57 @@ layout: default
 
           {% endfor %}
         </div>
+        
+        {% if paginator.total_pages > 1 %}
+        {% assign division_by_page_size = paginator.total_posts | modulo:paginator.per_page %}
+        {% assign division_by_page_size = division_by_page_size | minus:2 %}
+        {% assign division_by_page_size = division_by_page_size | modulo:3 %}
+        {% if paginator.page == paginator.total_pages and division_by_page_size != 0 %}
+        <div class="w-100 d-none d-md-block postslisting__hr"></div>  
+        {% endif %}
+        <nav class="pagination-wrapper justify-content-center">
+          <ul class="pagination" aria-label="{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}">
+            <li
+              {% if paginator.page != 1 %}
+                class="page-item"
+              {% else %}
+                class="page-item disabled"
+              {% endif %}
+            >
+              <a class="page-link" href="{{ paginator.previous_page_path }}" 
+                {% if paginator.page == 1 %}
+                  tabindex="-1" aria-hidden="true"
+                {% endif %}
+              >
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-left"></use></svg>
+                <span class="sr-only">{{ t.paginator_previous_page }}</span>
+              </a>
+            </li>
+            <li class="page-item"><span class="page-link">{{ paginator.page }}</span></li>
+            <li class="page-item"><span class="page-link">/</span></li>
+            <li class="page-item"><span class="page-link">{{ paginator.total_pages }}</span></li>
+            <li class="page-item sr-only">
+              <a class="page-link" href="#" aria-current="page">{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</a>
+            </li>
+            <li
+              {% if paginator.page != paginator.total_pages %}
+                class="page-item"
+              {% else %}
+                class="page-item disabled"
+              {% endif %}
+            >
+              <a class="page-link" href="{{ paginator.next_page_path }}"
+                {% if paginator.page == paginator.total_pages %}
+                  tabindex="-1" aria-hidden="true"
+                {% endif %}
+              >
+                <span class="sr-only">{{ t.paginator_next_page }}</span>
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-right"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {% endif %}
       </div>
     </div>
 
