@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-10-15T06:07:15+00:00</updated>
+  <updated>2021-10-15T13:34:16+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,38 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/10/15/buone-api-per-buoni-servizi</id>
+    <title>Buone API per buoni servizi</title>
+    <updated>2021-10-15T12:00:00+00:00</updated>
+
+    <summary>Nella Community Call del 27 ottobre conosceremo l’esperienza di chi ha sviluppato servizi significativi in ambito pubblico basati su API </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/10/15/buone-api-per-buoni-servizi">&lt;p&gt;È tempo di segnare in agenda il prossimo appuntamento con la community. Il &lt;strong&gt;27 ottobre dalle ore 15.30 alle 17.00&lt;/strong&gt; la community di Designers Italia e Developers Italia si confronterà in merito a buoni &lt;strong&gt;esempi di servizi pubblici sviluppati attraverso API&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ti stai chiedendo che cosa sono le API? Le &lt;strong&gt;Application Programming Interface&lt;/strong&gt; sono interfacce per la programmazione di applicazioni che permettono di condividere dati e servizi in sicurezza e in modo efficiente tra realtà diverse, a vantaggio dell’utente finale. Abilitano quindi l’&lt;strong&gt;interoperabilità&lt;/strong&gt;, essenziale all’interno della Pubblica Amministrazione per facilitare lo scambio di informazioni e dati, evitando duplicazioni, nel rispetto del principio europeo “&lt;a href=&quot;https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Once+Only+Principle&quot; target=&quot;_blank&quot;&gt;Once only&lt;/a&gt;”. Per supportare questo processo virtuoso nasce “&lt;a href=&quot;https://medium.com/@Developers_Italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5&quot; target=&quot;_blank&quot;&gt;OpenAPI Checker&lt;/a&gt;”, uno strumento automatico open source che serve a correggere gli errori più diffusi nella fase di progettazione di un’API.&lt;/p&gt;
+
+&lt;p&gt;Il 27 ottobre avremo il piacere di conoscere e ascoltare l’esperienza di chi, sul campo, ha sviluppato servizi significativi basati su API nell’ambito della gestione del &lt;strong&gt;territorio&lt;/strong&gt;, della &lt;strong&gt;cultura&lt;/strong&gt; e del &lt;strong&gt;turismo&lt;/strong&gt; e che rispettano il &lt;a href=&quot;https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita&quot; target=&quot;_blank&quot;&gt;modello di interoperabilità&lt;/a&gt;, definito da Agid in collaborazione con il Dipartimento per la trasformazione digitale e Developers Italia.  Ma non solo: parleremo anche con chi ha progettato &lt;strong&gt;interi ecosistemi&lt;/strong&gt; a supporto di grandi eventi o servizi per la gestione dell’&lt;strong&gt;emergenza sanitaria&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;L’incontro si rivolge in particolare a &lt;strong&gt;sviluppatori e funzionari delle PA&lt;/strong&gt;, ai loro fornitori e in house, ma anche a RTD e responsabili dei Sistemi Informativi delle PA centrali e locali. In generale, a tutti coloro che sono coinvolti nella progettazione e realizzazione di servizi e software pubblici e privati interoperabili.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/6ec9dd7f-0786-468e-8c67-c336634a2825&quot; target=&quot;_blank&quot;&gt;Registrati all’evento&lt;/a&gt; per partecipare. Ti aspettiamo il 27 ottobre!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I Team di Developers Italia e Designers Italia&lt;/p&gt;</content>
+    <published>2021-10-15T12:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+    <category term="interoperabilita" />
+    
+
+    <author>
+      <name>Matteo Fortini</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/10/05/comincia-Hacktoberfest-2021</id>
     <title>Comincia l’Hacktoberfest 2021</title>
