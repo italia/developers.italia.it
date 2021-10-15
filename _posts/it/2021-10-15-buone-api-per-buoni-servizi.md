@@ -3,7 +3,7 @@ layout: post
 title: "Buone API per buoni servizi"
 subtitle: Nella Community Call del 27 ottobre conosceremo l’esperienza di chi ha sviluppato servizi significativi in ambito pubblico basati su API
 date: 2021-10-15 14:00:00 +0200
-tags: developers opensource interoperabilità
+tags: developers opensource interoperabilita
 categories: news
 author: Matteo Fortini
 image: /assets/icons/logo-it.png
