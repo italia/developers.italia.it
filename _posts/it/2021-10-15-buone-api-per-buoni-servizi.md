@@ -19,6 +19,4 @@ L’incontro si rivolge in particolare a **sviluppatori e funzionari delle PA**,
 
 **[Registrati all’evento](https://mobilizon.it/events/6ec9dd7f-0786-468e-8c67-c336634a2825){:target="_blank"} per partecipare. Ti aspettiamo il 27 ottobre!**
 
-
-
 I Team di Developers Italia e Designers Italia
