@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202110160606" rel="stylesheet">
+  <link href="/dist/main.css?202110170605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -705,9 +705,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitality:</p>
-          <p class="score d-inline-block"> 68%</p>
+          <p class="score d-inline-block"> 73%</p>
           
-          <div id="softwareChart" data-vitality='[68,68,68,68,68,74,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,78]'>
+          <div id="softwareChart" data-vitality='[73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,89,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73,73]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -777,21 +777,21 @@
     
      
 
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.png"
-       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/login.png" alt="Screenshot" />
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/login.png"
+       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/login.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/login.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/login.png" alt="Screenshot" />
     </a>
     
 
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/agreement.png"
-       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/agreement.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/agreement.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/agreement.png" alt="Screenshot" />
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/agreement.png"
+       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/agreement.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/agreement.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/agreement.png" alt="Screenshot" />
     </a>
     
 
-    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/validate_multi_sp.png"
-       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/validate_multi_sp.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/validate_multi_sp.png">
-      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/documentation/contents/validate_multi_sp.png" alt="Screenshot" />
+    <a class="tiled-item" href="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/validate_multi_sp.png"
+       data-size="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/validate_multi_sp.pngxhttps://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/validate_multi_sp.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/UniversitaDellaCalabria/uniAuth/master/docs/contents/validate_multi_sp.png" alt="Screenshot" />
     </a>
     
     
@@ -829,7 +829,7 @@
           <div class="function-list">
             
             
-            <p> HTTP-REDIRECT and POST bindings </p>
+            <p> HTTP-REDIRECT and POST SAML2 bindings </p>
             
             <p> ForceAuthn </p>
             
@@ -1108,14 +1108,8 @@ English<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
               <div class="font-serif page-detail__text">
-                <p>This Release implements a SAML2 IDP.</p>
-
-<p>An OIDC Provider on top of <a href="https://idpy.org/">IdentityPython</a> will be also available in the next releases.</p>
-
-<h2 id="saml2-features"><strong>SAML2 Features</strong></h2>
-
-<p>uniAuth, as a SAML2 IDP, is based on <a href="https://github.com/IdentityPython/pysaml2">pysaml2</a>. Features:</p>
-
+                
+<p>uniAuth is a SAML2 IDP and is based on <a href="https://github.com/IdentityPython/pysaml2">pysaml2</a>. Features:</p>
 <ul>
   <li>HTTP-REDIRECT and POST bindings (signed authn request must be in HTTP-POST binding);</li>
   <li>ForceAuthn;</li>
@@ -1145,15 +1139,14 @@ English<br />
   </li>
   <li>Configurable log rotation through uwsgi;</li>
   <li>Importable StoredPersistentID for each user, from migrations from another IDP;</li>
-  <li>An optional LDAP web manager with a configurable app (<code class="language-plaintext highlighter-rouge">ldap\_peoples</code>) through <code class="language-plaintext highlighter-rouge">django-ldap-academia-ou-manager &lt;https://github.com/peppelinux/django-ldap-academia-ou-manager&gt;</code>__;</li>
-  <li>Multiple LDAP sources through <code class="language-plaintext highlighter-rouge">pyMultiLDAP &lt;https://github.com/peppelinux/pyMultiLDAP&gt;</code>__;</li>
-  <li>Multifactor support, as originally available in djangosaml2idp;</li>
+  <li>An optional LDAP web manager with a configurable app (<code class="language-plaintext highlighter-rouge">ldap\_peoples</code>) through django-ldap-academia-ou-manager <a href="https://github.com/peppelinux/django-ldap-academia-ou-manager">https://github.com/peppelinux/django-ldap-academia-ou-manager</a>;</li>
+  <li>Multiple LDAP sources through pyMultiLDAP <a href="https://github.com/peppelinux/pyMultiLDAP">https://github.com/peppelinux/pyMultiLDAP</a>;</li>
   <li>Detailed logs.</li>
 </ul>
 
 <h2 id="characteristics"><strong>Characteristics</strong></h2>
 
-<p>uniAuth permit us to configure metadata store and federate new Service Providers directly from the Admin backend interface, via Web. See <a href="https://uniauth.readthedocs.io/en/latest/index.html">Official Documentation at readthedocs</a> for usage specifications and advanced topics.</p>
+<p>uniAuth allows to configure metadata store and federate new Service Providers directly from the Admin backend interface, via Web. See <a href="https://uniauth.readthedocs.io/en/latest/index.html">Official Documentation at readthedocs</a> for usage specifications and advanced topics.</p>
 
               </div>
             </div>
