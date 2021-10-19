@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-10-19T06:05:13+00:00</updated>
+  <updated>2021-10-19T08:19:13+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -19,7 +19,7 @@
     <title>Buone API per buoni servizi</title>
     <updated>2021-10-15T12:00:00+00:00</updated>
 
-    <summary>Nella Community Call del 27 ottobre conosceremo l’esperienza di chi ha sviluppato servizi significativi in ambito pubblico basati su API </summary>
+    <summary>Nella community call del 27 ottobre conosceremo l’esperienza di chi ha sviluppato servizi significativi in ambito pubblico basati su API </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2021/10/15/buone-api-per-buoni-servizi">&lt;p&gt;È tempo di segnare in agenda il prossimo appuntamento con la community. Il &lt;strong&gt;27 ottobre dalle ore 15.30 alle 17.00&lt;/strong&gt; la community di Designers Italia e Developers Italia si confronterà in merito a buoni &lt;strong&gt;esempi di servizi pubblici sviluppati attraverso API&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Ti stai chiedendo che cosa sono le API? Le &lt;strong&gt;Application Programming Interface&lt;/strong&gt; sono interfacce per la programmazione di applicazioni che permettono di condividere dati e servizi in sicurezza e in modo efficiente tra realtà diverse, a vantaggio dell’utente finale. Abilitano quindi l’&lt;strong&gt;interoperabilità&lt;/strong&gt;, essenziale all’interno della Pubblica Amministrazione per facilitare lo scambio di informazioni e dati, evitando duplicazioni, nel rispetto del principio europeo “&lt;a href=&quot;https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/Once+Only+Principle&quot; target=&quot;_blank&quot;&gt;Once only&lt;/a&gt;”. Per supportare questo processo virtuoso nasce “&lt;a href=&quot;https://medium.com/@Developers_Italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5&quot; target=&quot;_blank&quot;&gt;OpenAPI Checker&lt;/a&gt;”, uno strumento automatico open source che serve a correggere gli errori più diffusi nella fase di progettazione di un’API.&lt;/p&gt;
