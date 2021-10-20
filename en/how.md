@@ -1,6 +1,6 @@
 ---
-title: How to use it 
-lang: en 
+title: How to use it
+lang: en
 ref:
   it: /it/come-lo-uso
 layout: internal-simple
@@ -29,7 +29,7 @@ alternate-blocks:
           class: btn btn-primary
           url: '/en/software'
         - label: "Read more about reuse"
-          class: btn btn-outline-primary
+          class: btn btn-white btn-outline-primary
           url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
       text: "The API catalogue contains a collection of public services
