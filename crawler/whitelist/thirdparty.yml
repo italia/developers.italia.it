@@ -105,3 +105,7 @@
 - name: "TLSAssistant"
   repos:
     - "https://github.com/stfbk/tlsassistant"
+
+- name: "SmartPA - Document Classification"
+  repos:
+    - "https://github.com/EliaPiccoli/HLT-Project"
