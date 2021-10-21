@@ -1,4 +1,4 @@
-FROM circleci/ruby:2.6.0-node-browsers
+FROM cimg/ruby:2.6-browsers
 
 ENV PORT 4000
 ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
