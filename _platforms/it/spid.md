@@ -87,7 +87,7 @@ resources:
       desc: Libreria nativa per l'integrazione di SPID in applicazioni mobile iOS
     - title: SDK per Wordpress
       icon: github
-      url: https://github.com/italia/spid-wordpress
+      url: https://github.com/WPGov/wp-spid-italia
       desc: Plugin nativo per l'integrazione del login con SPID in siti Wordpress (PHP)
     - title: SDK per Laravel
       icon: github
