@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-10-27T12:25:40+00:00</updated>
+  <updated>2021-10-27T13:20:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -20,7 +20,7 @@
     <updated>2021-10-27T11:00:00+00:00</updated>
 
     <summary>Dopo l’esperienza pilota primaverile, torna con 4 nuovi incontri il ciclo di webinar dedicato alla progettazione e alla realizzazione del sito web di un Comune </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2021/10/27/progettare-realizzare-sito-web-comune-2-edizione">&lt;p&gt;Come progettare e realizzare il sito web di un Comune? Il Dipartimento per la trasformazione digitale, AgID e Formez PA organizzano, a partire da martedì 9 novembre, un corso di 4 webinar per conoscere e utilizzare le risorse messa a disposizione di Pubbliche amministrazioni e fornitori per progettare e realizzare il sito web di un Comune, grazie al &lt;a href=&quot;https://italia.github.io/design-comuni-prototipi/&quot; target=&quot;_blank&quot;&gt;modello dei siti web&lt;/a&gt; messo a disposizione da &lt;a href=&quot;https://designers.italia.it/&quot; target=&quot;_blank&quot;&gt;Designers Italia&lt;/a&gt; e alle soluzioni disponibili nel &lt;a href=&quot;https://developers.italia.it/it/software&quot; target=&quot;_blank&quot;&gt;Catalogo del software a riuso&lt;/a&gt; di &lt;a href=&quot;https://developers.italia.it/&quot; target=&quot;_blank&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/10/27/progettare-realizzare-sito-web-comune-2-edizione">&lt;p&gt;Come progettare e realizzare il sito web di un Comune? Il Dipartimento per la trasformazione digitale, AgID e Formez PA organizzano, a partire da martedì 9 novembre, un corso di 4 webinar per conoscere e utilizzare le risorse messe a disposizione di Pubbliche amministrazioni e fornitori per progettare e realizzare il sito web di un Comune, grazie al &lt;a href=&quot;https://italia.github.io/design-comuni-prototipi/&quot; target=&quot;_blank&quot;&gt;modello dei siti web&lt;/a&gt; messo a disposizione da &lt;a href=&quot;https://designers.italia.it/&quot; target=&quot;_blank&quot;&gt;Designers Italia&lt;/a&gt; e alle soluzioni disponibili nel &lt;a href=&quot;https://developers.italia.it/it/software&quot; target=&quot;_blank&quot;&gt;Catalogo del software a riuso&lt;/a&gt; di &lt;a href=&quot;https://developers.italia.it/&quot; target=&quot;_blank&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Il modello dei siti web per i Comuni propone uno &lt;strong&gt;standard&lt;/strong&gt; per tutte le amministrazioni comunali che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. Ciascun Comune può quindi partire da componenti testate e verificate con gli utenti, in modo da potersi concentrare sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.&lt;/p&gt;
 
