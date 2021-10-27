@@ -79,7 +79,7 @@ resources:
       desc: Native library for integrating SPID in PHP applications
     - title: SDK for Wordpress
       icon: github
-      url: https://github.com/italia/spid-wordpress
+      url: https://github.com/WPGov/wp-spid-italia
       desc: Native library for integrating SPID in Wordpress (PHP) applications
     - title: SDK for Laravel
       icon: github
