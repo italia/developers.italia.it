@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-10-27T09:30:41+00:00</updated>
+  <updated>2021-10-27T12:25:40+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,40 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/10/27/progettare-realizzare-sito-web-comune-2-edizione</id>
+    <title>Progettare e realizzare il sito web di un Comune - 2ᵃ edizione</title>
+    <updated>2021-10-27T11:00:00+00:00</updated>
+
+    <summary>Dopo l’esperienza pilota primaverile, torna con 4 nuovi incontri il ciclo di webinar dedicato alla progettazione e alla realizzazione del sito web di un Comune </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/10/27/progettare-realizzare-sito-web-comune-2-edizione">&lt;p&gt;Come progettare e realizzare il sito web di un Comune? Il Dipartimento per la trasformazione digitale, AgID e Formez PA organizzano, a partire da martedì 9 novembre, un corso di 4 webinar per conoscere e utilizzare le risorse messa a disposizione di Pubbliche amministrazioni e fornitori per progettare e realizzare il sito web di un Comune, grazie al &lt;a href=&quot;https://italia.github.io/design-comuni-prototipi/&quot; target=&quot;_blank&quot;&gt;modello dei siti web&lt;/a&gt; messo a disposizione da &lt;a href=&quot;https://designers.italia.it/&quot; target=&quot;_blank&quot;&gt;Designers Italia&lt;/a&gt; e alle soluzioni disponibili nel &lt;a href=&quot;https://developers.italia.it/it/software&quot; target=&quot;_blank&quot;&gt;Catalogo del software a riuso&lt;/a&gt; di &lt;a href=&quot;https://developers.italia.it/&quot; target=&quot;_blank&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il modello dei siti web per i Comuni propone uno &lt;strong&gt;standard&lt;/strong&gt; per tutte le amministrazioni comunali che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. Ciascun Comune può quindi partire da componenti testate e verificate con gli utenti, in modo da potersi concentrare sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.&lt;/p&gt;
+
+&lt;p&gt;Designers Italia mette inoltre a disposizione di Pubbliche Amministrazioni e fornitori una “&lt;a href=&quot;https://designers.italia.it/kit/&quot; target=&quot;_blank&quot;&gt;cassetta degli attrezzi&lt;/a&gt;” per &lt;strong&gt;progettare siti sempre più utili&lt;/strong&gt;, semplici da usare e inclusivi: si tratta di strumenti ideati per facilitare PA e fornitori nell’adozione di un approccio virtuoso alla trasformazione digitale.&lt;/p&gt;
+
+&lt;p&gt;In aggiunta, grazie allo sviluppo in modalità open source, è possibile riutilizzare quanto messo a disposizione sul Catalogo di Developers Italia per rendere semplice, sicura ed economica la realizzazione, l’adozione e la manutenzione della soluzione scelta lato software.&lt;/p&gt;
+
+&lt;p&gt;Il corso è rivolto principalmente a coloro che, nei Comuni, nelle in house e presso i loro fornitori, si occupano della realizzazione o dell’aggiornamento del sito web dell’ente. Le &lt;strong&gt;4 sessioni&lt;/strong&gt; on line, della durata di &lt;strong&gt;2 ore&lt;/strong&gt; ciascuna, sono previste nelle seguenti date: &lt;strong&gt;martedì 9 novembre&lt;/strong&gt;, &lt;strong&gt;martedì 16 novembre&lt;/strong&gt;, &lt;strong&gt;martedì 23 novembre&lt;/strong&gt; e &lt;strong&gt;martedì 30 novembre&lt;/strong&gt; sempre &lt;strong&gt;dalle ore 14.30 alle ore 16.30&lt;/strong&gt;. Non è possibile partecipare a un solo webinar.&lt;/p&gt;
+
+&lt;p&gt;Per partecipare, &lt;strong&gt;&lt;a href=&quot;http://eventipa.formez.it/node/328513&quot; target=&quot;_blank&quot;&gt;registrati all’iniziativa&lt;/a&gt;&lt;/strong&gt; sul sito Eventi PA. Ti aspettiamo!&lt;/p&gt;
+
+&lt;p&gt;Il Team di Developers Italia e Designers Italia&lt;/p&gt;</content>
+    <published>2021-10-27T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/10/15/buone-api-per-buoni-servizi</id>
     <title>Buone API per buoni servizi</title>
