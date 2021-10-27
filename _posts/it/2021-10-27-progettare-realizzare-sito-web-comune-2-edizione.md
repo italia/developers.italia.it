@@ -21,6 +21,4 @@ Il corso è rivolto principalmente a coloro che, nei Comuni, nelle in house e pr
 
 Per partecipare, **[registrati all’iniziativa](http://eventipa.formez.it/node/328513){:target="_blank"}** sul sito Eventi PA. Ti aspettiamo! 
 
-
-
 Il Team di Developers Italia e Designers Italia
