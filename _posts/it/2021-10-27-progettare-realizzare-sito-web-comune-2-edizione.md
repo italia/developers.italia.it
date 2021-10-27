@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Progettare e realizzare il sito web di un Comune - 2° edizione"
+title: "Progettare e realizzare il sito web di un Comune - 2ᵃ edizione"
 subtitle: Dopo l’esperienza pilota primaverile, torna con 4 nuovi incontri il ciclo di webinar dedicato alla progettazione e alla realizzazione del sito web di un Comune
 date: 2021-10-15 14:00:00 +0200
 tags: developers designers opensource
