@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202110271320" rel="stylesheet">
+  <link href="/dist/main.css?202110280605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -648,15 +648,16 @@
         
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">1.0.2</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">1.0.3</span>
         </h1>
         <div class="abstract-software">
           <h2>
-            PEC/Mail Parser
+            Mail/PEC Parser
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata (e messaggi di posta ordinaria)
+            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata
+(e messaggi di posta ordinaria)
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -715,7 +716,7 @@
           <p>Vitality:</p>
           <p class="score d-inline-block"> 65%</p>
           
-          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]'>
+          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,75,65]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -780,7 +781,8 @@
           <div class="function-list">
             
             
-            <p> Elaborazione di messaggi di posta elettronica certificata (PEC) </p>
+            <p> Elaborazione di messaggi di posta elettronica certificata (PEC) e
+ricevute </p>
             
             <p> Elaborazione di messaggi di posta elettronica ordinaria </p>
             
@@ -837,11 +839,11 @@
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">1.0.2</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">1.0.3</span>
                 
               </h2>
               <h2>
-                PEC/Mail Parser
+                Mail/PEC Parser
               </h2>
             </div>
           </div>
@@ -850,9 +852,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2020-09-24
+                  2021-10-27
                   
-                  (1.0.2)
+                  (1.0.3)
                   
                 </p>
               </div>
@@ -1008,13 +1010,16 @@
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
               <div class="font-serif page-detail__text">
-                <p>Libreria JAVA per l’elaborazione di messaggi di Posta Elettronica Certificata (e messaggi di posta ordinaria).</p>
+                <p>Libreria JAVA per l’elaborazione di messaggi di Posta Elettronica
+Certificata (e messaggi di posta ordinaria).</p>
 
 <p>​</p>
 
 <p><strong>Specifiche</strong>:</p>
 
-<p><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici mediante posta elettronica certificata</a>.</p>
+<p><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici
+mediante posta elettronica
+certificata</a>.</p>
 
 <p>​</p>
 
@@ -1022,42 +1027,74 @@
 
 <p>Standard:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MimeMessage mimeMessage = ...; Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);
 </code></pre></div></div>
 
-<p>Con proprietà custom per l’elaborazione del MimeMessage (nella modalità standard vengono utilizzate le properties di sistema: <em>System.getProperties()</em>):</p>
+<p>Con proprietà custom per l’elaborazione del <code class="language-plaintext highlighter-rouge">MimeMessage</code> (nella modalità
+default vengono utilizzate le proprietà di sistema:
+<code class="language-plaintext highlighter-rouge">System.getProperties()</code>):</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MimeMessage mimeMessage = ... ; Properties properties = ... ; Messaggio messaggio = PECMessageParser.getInstance(properties).parse(mimeMessage);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Properties properties = ... ;
+
+Messaggio messaggio = PECMessageParser.getInstance(properties).parse(mimeMessage);
 </code></pre></div></div>
 
-<p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un oggetto <em>javax.mail.internet.MimeMessage</em>, rappresentante un messaggio PEC:</p>
+<p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un
+oggetto
+<a href="https://javaee.github.io/javamail/docs/api/javax/mail/internet/class-use/MimeMessage.html"><code class="language-plaintext highlighter-rouge">javax.mail.internet.MimeMessage</code></a>,
+rappresentante un messaggio PEC:</p>
 
 <ul>
-  <li>Busta di trasporto (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/Busta.java">Busta</a>)</li>
-  <li>Eventuale messaggio di Posta Elettronica Certificata (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/PEC.java">PEC</a>)</li>
-  <li>Eventuale ricevuta (<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/RicevutaPEC.java">RicevutaPEC</a>)</li>
+  <li>
+    <p>Busta di trasporto
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/Busta.java">Busta</a>)</p>
+  </li>
+  <li>
+    <p>Eventuale messaggio di Posta Elettronica Certificata
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/PEC.java">PEC</a>)</p>
+  </li>
+  <li>
+    <p>Eventuale ricevuta
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/RicevutaPEC.java">RicevutaPEC</a>)</p>
+  </li>
 </ul>
 
-<p>Attraverso i metodi di utility offerti dalla classe <a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/util/MessageUtils.java">MessageUtils</a> è possibile risalire al tipo di messaggio:</p>
+<p>Attraverso i metodi di utility offerti dalla classe
+<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/util/MessageUtils.java">MessageUtils</a>
+è possibile risalire al tipo di messaggio:</p>
 
 <ul>
-  <li>PEC (<em>MessageUtils.isPec(…)</em>)</li>
-  <li>Ricevuta PEC (<em>MessageUtils.isRicevutaPEC(…)</em>)</li>
-  <li>Posta Ordinaria (<em>MessageUtils.isEmailNormale(…)</em>)</li>
+  <li>
+    <p>PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isPec(...)</code>)</p>
+  </li>
+  <li>
+    <p>Ricevuta PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isRicevutaPEC(...)</code>)</p>
+  </li>
+  <li>
+    <p>Posta Ordinaria (<code class="language-plaintext highlighter-rouge">MessageUtils.isEmailNormale(...)</code>)</p>
+  </li>
 </ul>
 
 <p>Il messaggio infatti viene elaborato anche se non PEC:</p>
 
 <ul>
-  <li>Messaggio ricevuto su una casella di Posta Elettronica Certificata: l’oggetto PEC conterrà le informazioni del messaggio normale in quanto comunque incapsulato in una busta</li>
-  <li>Messaggio ricevuto su una casella di posta ordinaria: in questo caso la Busta rappresenta il messaggio normale</li>
+  <li>
+    <p>Messaggio ricevuto su una casella di Posta Elettronica Certificata:
+l’oggetto PEC conterrà le informazioni del messaggio normale in quanto
+comunque incapsulato in una busta</p>
+  </li>
+  <li>
+    <p>Messaggio ricevuto su una casella di posta ordinaria: in questo caso la
+Busta rappresenta il messaggio normale</p>
+  </li>
 </ul>
 
 <p>​</p>
 
 <p><strong>Altro</strong></p>
 
-<p>La libreria supporta l’elaborazione di messaggi di posta ordinaria con codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
+<p>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
+codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
 
               </div>
             </div>
