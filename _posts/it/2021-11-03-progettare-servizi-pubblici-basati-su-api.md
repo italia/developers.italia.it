@@ -62,8 +62,8 @@ servizio di consultazione della **cartografia catastale**.
 In conclusione, come di consueto, uno spazio per le domande dei partecipanti
 ricco di spunti e riflessioni.
 
-Se vuoi approfondire, scarica la presentazione condivisa e [guarda il
-video](https://www.youtube.com/watch?v=aTBPk56SK3I){:target="_blank"}
+Se vuoi approfondire, [scarica la presentazione condivisa](https://developers.italia.it/assets/images/posts/2021-11-03/27102021_Community_Call_Developers_Italia.pdf)
+e [guarda il video](https://www.youtube.com/watch?v=aTBPk56SK3I){:target="_blank"}
 dell’incontro sul canale YouTube del Dipartimento per la trasformazione
 digitale.
 
