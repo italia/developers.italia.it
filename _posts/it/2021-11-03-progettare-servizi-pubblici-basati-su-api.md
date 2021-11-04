@@ -69,8 +69,8 @@ digitale.
 
 **Resta in contatto con la community**: raccontaci su
 [slack](https://app.slack.com/client/T6C27AXE0/CDKBYTG74){:target="_blank"}
-(#api), via mail (contatti@developers.italia.it) o su [Forum
-Italia (Piano Triennale - Interoperabilità)](https://forum.italia.it/c/piano-triennale/interoperabilita/12){:target="_blank"}
+(#api), via mail ([contatti@developers.italia.it](mailto:contatti@developers.italia.it))
+o su [Forum Italia (Piano Triennale - Interoperabilità)](https://forum.italia.it/c/piano-triennale/interoperabilita/12){:target="_blank"}
 altre API sviluppate secondo il modello di interoperabilità, per arricchire il
 catalogo di Developers Italia a beneficio di tutti!
 Oppure, segnalaci servizi basati su API che ritieni ad alto impatto per
