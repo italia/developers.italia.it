@@ -17,7 +17,7 @@ Al centro dell'incontro, che questa volta ha visto la partecipazione di **oltre
 100 sviluppatori e designers**, l’esperienza di chi, nel settore pubblico, ha
 sviluppato servizi significativi basati su API.
 
-Tra i protagonisti che sono intervenuti Roberto Polli, che segue il tema API ed
+Tra i protagonisti che sono intervenuti Roberto Polli, che segue il tema API e
 interoperabilità fin dagli albori del Team Digitale. Roberto ci ha presentato il
 [Verificatore per le API
 REST](https://medium.com/@Developers_Italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5){:target="_blank"},
@@ -43,7 +43,7 @@ di semplificare la gestione e il trasferimento delle informazioni ai vari punti
 di pubblicazione locali.
 
 Chiara Veninata (Ministero della Cultura), e Luigi Asprino (UniBo), hanno poi
-descritto il progetto ArCo, una API che permette di accedere ad una base di
+descritto il progetto ArCo, una API che permette di accedere a una base di
 conoscenza contenente informazioni su 2.6M di opere del Catalogo generale dei
 beni culturali Italiani.
 
