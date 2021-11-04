@@ -1,0 +1,924 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    Progettare servizi pubblici basati su API
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Progettare servizi pubblici basati su API" />
+<meta name="author" content="Francesco Pognante" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Mercoledì 27 ottobre si è tenuta la community call di Developers Italia e Designers Italia, l’appuntamento mensile volto a condividere conoscenze, risorse ed esperienze nella progettazione e realizzazione di servizi pubblici e privati." />
+<meta property="og:description" content="Mercoledì 27 ottobre si è tenuta la community call di Developers Italia e Designers Italia, l’appuntamento mensile volto a condividere conoscenze, risorse ed esperienze nella progettazione e realizzazione di servizi pubblici e privati." />
+<link rel="canonical" href="https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api" />
+<meta property="og:url" content="https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:image" content="https://developers.italia.it/assets/icons/logo-it.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-11-03T11:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://developers.italia.it/assets/icons/logo-it.png" />
+<meta property="twitter:title" content="Progettare servizi pubblici basati su API" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Francesco Pognante" />
+<script type="application/ld+json">
+{"description":"Mercoledì 27 ottobre si è tenuta la community call di Developers Italia e Designers Italia, l’appuntamento mensile volto a condividere conoscenze, risorse ed esperienze nella progettazione e realizzazione di servizi pubblici e privati.","@type":"BlogPosting","image":"https://developers.italia.it/assets/icons/logo-it.png","headline":"Progettare servizi pubblici basati su API","dateModified":"2021-11-03T11:00:00+00:00","datePublished":"2021-11-03T11:00:00+00:00","url":"https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api"},"author":{"@type":"Person","name":"Francesco Pognante"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Francesco Pognante"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202111041131" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-96140462-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+ 
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-post">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ITA</span>
+    <span class="sr-only">lingua attiva:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it"><span lang="it">italiano</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en"><span lang="en">english</span>
+        
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">Sviluppiamo i servizi pubblici, insieme</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/@Developers_Italia" title="medium">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Menu di navigazione</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+     
+
+
+
+
+<div >
+<article itemscope itemtype="http://schema.org/BlogPosting" class="postarticle">
+  <div class="postarticle__header d-flex align-items-center">
+    <div class="container py-4">
+      
+      <h1 itemprop="name headline" class="px-2 px-md-5 py-2 py-md-3" >Progettare servizi pubblici basati su API</h1>
+      
+      <h2 class="px-2 px-md-5 py-2 mt-md-2">Il racconto della Community call del 27 ottobre e le esperienze dei partecipanti</h2>
+      
+    </div>
+  </div>
+  <div class="postarticle__content my-2 my-md-4 py-2 py-md-4">
+    <div class="container d-flex justify-content-center pb-2">
+      <div class="col-md-10 ">
+
+        <div class="d-flex py-4">
+        
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="postarticle__author">
+          <span itemprop="name">Francesco Pognante</span>
+          <time datetime="2021-11-03T11:00:00+00:00" itemprop="datePublished" >
+              03 nov 2021</time>
+        </div>
+        
+        <div class="postarticle__socials ml-auto">
+          
+
+<span class="sr-only">condividi su</span>
+
+<ul class="list-inline">
+  
+    
+      
+      <li class="list-inline-item">
+        <a href="https://twitter.com/intent/tweet?url=https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api" class="icon-wrapper" title="Condividi su Twitter">
+          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-twitter"></use></svg>
+          <span class="sr-only">Twitter</span>
+        </a>
+      </li>
+      
+  
+    
+  
+</ul>
+
+        </div>
+      </div>
+
+      <div class="postarticle__text font-serif py-2 py-md-5">
+          <p><strong>Mercoledì 27 ottobre</strong> si è tenuta la community call di Developers Italia e
+Designers Italia, l’appuntamento mensile volto a condividere conoscenze, risorse
+ed esperienze nella progettazione e realizzazione di servizi pubblici e privati.</p>
+
+<p>Al centro dell’incontro, che questa volta ha visto la partecipazione di <strong>oltre
+100 sviluppatori e designers</strong>, l’esperienza di chi, nel settore pubblico, ha
+sviluppato servizi significativi basati su API.</p>
+
+<p>Tra i protagonisti che sono intervenuti Roberto Polli, che segue il tema API e
+interoperabilità fin dagli albori del Team Digitale. Roberto ci ha presentato il
+<a href="https://medium.com/@Developers_Italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5" target="_blank">Verificatore per le API
+REST</a>,
+uno strumento che supporta gli enti pubblici nell’adozione delle <a href="https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html" target="_blank">Linee guida
+sull’interoperabilità
+tecnica</a>,
+elaborate da Agid in collaborazione con il Dipartimento per la trasformazione
+digitale e Developers Italia.</p>
+
+<p>È poi intervenuto Emiliano Verga di Cefriel, coordinatore scientifico
+dell’Ecosistema Digitale E015 della <strong>Regione Lombardia</strong>. Si tratta di un
+ambiente digitale, originariamente nato in occasione di Expo 2015, basato su un
+insieme di regole e processi che favoriscono l’incontro tra domanda e offerta di
+API tra soggetti pubblici e privati in diversi settori: turismo, mobilità
+sostenibile, ambiente, sicurezza e sanità.</p>
+
+<p>A seguire Walter Manni, Celestina Paglia (Dipartimento di Web Strategies,
+Research &amp; Innovation dell’Azienda Promozione Turismo della Regione
+<strong>Emilia-Romagna</strong>) e Stefano Vena (Altrama s.r.l.) ci hanno parlato della
+realizzazione del servizio di condivisione di informazioni contenuto nel
+<strong>portale turistico della Regione</strong> tramite API. Uno strumento che ha consentito
+di semplificare la gestione e il trasferimento delle informazioni ai vari punti
+di pubblicazione locali.</p>
+
+<p>Chiara Veninata (Ministero della Cultura), e Luigi Asprino (UniBo), hanno poi
+descritto il progetto ArCo, una API che permette di accedere a una base di
+conoscenza contenente informazioni su 2.6M di opere del Catalogo generale dei
+beni culturali Italiani.</p>
+
+<p>Tra gli speaker anche Francesco Azzola, Technical Project Manager in Umbria
+Digitale, società in house della <strong>Regione Umbria</strong>, che ha realizzato una
+<strong>dashboard regionale per monitorare i casi Covid</strong> e le vaccinazioni
+somministrate. Ha inoltre elaborato una API pubblica per l’esposizione dei dati
+sulle infezioni registrate.</p>
+
+<p>Sono infine intervenuti Valentino Lauciani, tecnico informatico all’INGV -
+Istituto Nazionale di Geofisica e Vulcanologia, che ha implementato il servizio
+per l’accesso ai dati degli <strong>eventi sismici in Italia</strong> e nel mondo e Maurizio
+Ambrosanio (Agenzia delle entrate) e Umberto Principi, (Sogei), autore del
+servizio di consultazione della <strong>cartografia catastale</strong>.</p>
+
+<p>In conclusione, come di consueto, uno spazio per le domande dei partecipanti
+ricco di spunti e riflessioni.</p>
+
+<p>Se vuoi approfondire, <a href="/assets/images/posts/2021-11-03/27102021_Community_Call_Developers_Italia.pdf">scarica la presentazione condivisa</a>
+e <a href="https://www.youtube.com/watch?v=aTBPk56SK3I" target="_blank">guarda il video</a>
+dell’incontro sul canale YouTube del Dipartimento per la trasformazione
+digitale.</p>
+
+<p><strong>Resta in contatto con la community</strong>: raccontaci su
+<a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74" target="_blank">slack</a>
+(#api), via mail (<a href="mailto:contatti@developers.italia.it">contatti@developers.italia.it</a>)
+o su <a href="https://forum.italia.it/c/piano-triennale/interoperabilita/12" target="_blank">Forum Italia (Piano Triennale - Interoperabilità)</a>
+altre API sviluppate secondo il modello di interoperabilità, per arricchire il
+catalogo di Developers Italia a beneficio di tutti!
+Oppure, segnalaci servizi basati su API che ritieni ad alto impatto per
+il numero di enti o casi d’uso che potrebbero beneficiarne.</p>
+
+<p>È già il momento di annunciare la prossima data: <strong>le community call tornano il
+24 novembre</strong>. Ti aspettiamo!</p>
+
+<p>Il team di Developers Italia e Designers Italia</p>
+
+      </div>
+
+      
+        <hr class="pb-2 pb-md-5">
+        <section class="Pills">
+
+ 
+
+  <h1 class="text-center">argomenti</h1>
+
+<ul class="list-inline text-center">
+  
+  
+  <li class="list-inline-item">
+    <a href="/it/news/developers" class="Pill ">
+        developers 
+    </a>
+  </li>
+  
+  
+  <li class="list-inline-item">
+    <a href="/it/news/designers" class="Pill ">
+        designers 
+    </a>
+  </li>
+  
+  
+  <li class="list-inline-item">
+    <a href="/it/news/api" class="Pill ">
+        api 
+    </a>
+  </li>
+  
+</ul>
+</section>
+
+      
+
+      </div>
+    </div>
+
+  </div>
+
+</article>
+</div>
+
+
+<section class="banner-joinus pt-2 pb-2 pt-md-5 pb-md-5">
+  <div class="container bg-white mt-3 mt-md-5 mb-3 mb-md-5 p-4 p-md-5 p-4 p-md-5">
+    <div class="d-md-flex align-items-center">
+      <div class="position-relative">
+        <img src="/assets/images/join-window.svg" alt="" class="banner-joinus-window">
+        <h2>Sei un programmatore, uno smanettone del codice o un nerd in erba?</h2>
+        <h1>Unisciti alla nostra community!</h1>
+      </div>
+      <div class="ml-auto">
+        <a href="https://slack.developers.italia.it/" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">
+          Vieni su Slack
+          <svg class="icon">
+            <use xlink:href="/assets/svg/sprite.svg#it-comment"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  </div>
+</div>
+
+<a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">torna all'inizio dei contenuti</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Progetto di</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaborazione con</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/@Developers_Italia" title="medium">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/it/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali">Note legali</a></li>
+      
+      
+      <li><a href="/it/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>

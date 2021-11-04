@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-11-04T06:04:57+00:00</updated>
+  <updated>2021-11-04T11:31:17+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,98 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api</id>
+    <title>Progettare servizi pubblici basati su API</title>
+    <updated>2021-11-03T11:00:00+00:00</updated>
+
+    <summary>Il racconto della Community call del 27 ottobre e le esperienze dei partecipanti </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api">&lt;p&gt;&lt;strong&gt;Mercoledì 27 ottobre&lt;/strong&gt; si è tenuta la community call di Developers Italia e
+Designers Italia, l’appuntamento mensile volto a condividere conoscenze, risorse
+ed esperienze nella progettazione e realizzazione di servizi pubblici e privati.&lt;/p&gt;
+
+&lt;p&gt;Al centro dell’incontro, che questa volta ha visto la partecipazione di &lt;strong&gt;oltre
+100 sviluppatori e designers&lt;/strong&gt;, l’esperienza di chi, nel settore pubblico, ha
+sviluppato servizi significativi basati su API.&lt;/p&gt;
+
+&lt;p&gt;Tra i protagonisti che sono intervenuti Roberto Polli, che segue il tema API e
+interoperabilità fin dagli albori del Team Digitale. Roberto ci ha presentato il
+&lt;a href=&quot;https://medium.com/@Developers_Italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5&quot; target=&quot;_blank&quot;&gt;Verificatore per le API
+REST&lt;/a&gt;,
+uno strumento che supporta gli enti pubblici nell’adozione delle &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html&quot; target=&quot;_blank&quot;&gt;Linee guida
+sull’interoperabilità
+tecnica&lt;/a&gt;,
+elaborate da Agid in collaborazione con il Dipartimento per la trasformazione
+digitale e Developers Italia.&lt;/p&gt;
+
+&lt;p&gt;È poi intervenuto Emiliano Verga di Cefriel, coordinatore scientifico
+dell’Ecosistema Digitale E015 della &lt;strong&gt;Regione Lombardia&lt;/strong&gt;. Si tratta di un
+ambiente digitale, originariamente nato in occasione di Expo 2015, basato su un
+insieme di regole e processi che favoriscono l’incontro tra domanda e offerta di
+API tra soggetti pubblici e privati in diversi settori: turismo, mobilità
+sostenibile, ambiente, sicurezza e sanità.&lt;/p&gt;
+
+&lt;p&gt;A seguire Walter Manni, Celestina Paglia (Dipartimento di Web Strategies,
+Research &amp;amp; Innovation dell’Azienda Promozione Turismo della Regione
+&lt;strong&gt;Emilia-Romagna&lt;/strong&gt;) e Stefano Vena (Altrama s.r.l.) ci hanno parlato della
+realizzazione del servizio di condivisione di informazioni contenuto nel
+&lt;strong&gt;portale turistico della Regione&lt;/strong&gt; tramite API. Uno strumento che ha consentito
+di semplificare la gestione e il trasferimento delle informazioni ai vari punti
+di pubblicazione locali.&lt;/p&gt;
+
+&lt;p&gt;Chiara Veninata (Ministero della Cultura), e Luigi Asprino (UniBo), hanno poi
+descritto il progetto ArCo, una API che permette di accedere a una base di
+conoscenza contenente informazioni su 2.6M di opere del Catalogo generale dei
+beni culturali Italiani.&lt;/p&gt;
+
+&lt;p&gt;Tra gli speaker anche Francesco Azzola, Technical Project Manager in Umbria
+Digitale, società in house della &lt;strong&gt;Regione Umbria&lt;/strong&gt;, che ha realizzato una
+&lt;strong&gt;dashboard regionale per monitorare i casi Covid&lt;/strong&gt; e le vaccinazioni
+somministrate. Ha inoltre elaborato una API pubblica per l’esposizione dei dati
+sulle infezioni registrate.&lt;/p&gt;
+
+&lt;p&gt;Sono infine intervenuti Valentino Lauciani, tecnico informatico all’INGV -
+Istituto Nazionale di Geofisica e Vulcanologia, che ha implementato il servizio
+per l’accesso ai dati degli &lt;strong&gt;eventi sismici in Italia&lt;/strong&gt; e nel mondo e Maurizio
+Ambrosanio (Agenzia delle entrate) e Umberto Principi, (Sogei), autore del
+servizio di consultazione della &lt;strong&gt;cartografia catastale&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In conclusione, come di consueto, uno spazio per le domande dei partecipanti
+ricco di spunti e riflessioni.&lt;/p&gt;
+
+&lt;p&gt;Se vuoi approfondire, &lt;a href=&quot;/assets/images/posts/2021-11-03/27102021_Community_Call_Developers_Italia.pdf&quot;&gt;scarica la presentazione condivisa&lt;/a&gt;
+e &lt;a href=&quot;https://www.youtube.com/watch?v=aTBPk56SK3I&quot; target=&quot;_blank&quot;&gt;guarda il video&lt;/a&gt;
+dell’incontro sul canale YouTube del Dipartimento per la trasformazione
+digitale.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resta in contatto con la community&lt;/strong&gt;: raccontaci su
+&lt;a href=&quot;https://app.slack.com/client/T6C27AXE0/CDKBYTG74&quot; target=&quot;_blank&quot;&gt;slack&lt;/a&gt;
+(#api), via mail (&lt;a href=&quot;mailto:contatti@developers.italia.it&quot;&gt;contatti@developers.italia.it&lt;/a&gt;)
+o su &lt;a href=&quot;https://forum.italia.it/c/piano-triennale/interoperabilita/12&quot; target=&quot;_blank&quot;&gt;Forum Italia (Piano Triennale - Interoperabilità)&lt;/a&gt;
+altre API sviluppate secondo il modello di interoperabilità, per arricchire il
+catalogo di Developers Italia a beneficio di tutti!
+Oppure, segnalaci servizi basati su API che ritieni ad alto impatto per
+il numero di enti o casi d’uso che potrebbero beneficiarne.&lt;/p&gt;
+
+&lt;p&gt;È già il momento di annunciare la prossima data: &lt;strong&gt;le community call tornano il
+24 novembre&lt;/strong&gt;. Ti aspettiamo!&lt;/p&gt;
+
+&lt;p&gt;Il team di Developers Italia e Designers Italia&lt;/p&gt;</content>
+    <published>2021-11-03T11:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="api" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/10/27/progettare-realizzare-sito-web-comune-2-edizione</id>
     <title>Progettare e realizzare il sito web di un Comune - 2ᵃ edizione</title>
