@@ -3,7 +3,7 @@ layout: post
 title: "Hacktoberfest 2021: i risultati"
 subtitle: Developers Italia ha partecipato all’ottava edizione dell’evento internazionale sull’open source
 date: 2021-11-09 17:00:00 +0200
-tags: developers api opensource
+tags: hacktoberfest developers api opensource
 categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
