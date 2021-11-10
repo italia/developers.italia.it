@@ -17,6 +17,6 @@ Com’è andata la festa? Sono state  **[27 le issue risolte](https://github.com
 
 Nel nostro catalogo, inoltre, si possono trovare i [software a riuso](https://developers.italia.it/it/search?type=software_reuse&sort_by=relevance&page=0){:target="_blank"} e i [software open source](https://come-partecipo.italia.it/){:target="_blank"} di terze parti inseriti a catalogo dalle Pubbliche Amministrazioni italiane o da singoli sviluppatori per essere riutilizzati da altri Enti pubblici. Anche in questo caso è possibile dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.
  
-Ti aspettiamo, per maggiori approfondimenti sul nostro [Slack](http://developersitalia.slack.com){:target="_blank"} e su [Forum Italia](https://forum.italia.it/){:target="_blank"}.
+Ti aspettiamo, per maggiori approfondimenti sul nostro [Slack](https://developersitalia.slack.com){:target="_blank"} e su [Forum Italia](https://forum.italia.it/){:target="_blank"}.
  
 Il Team di Developers Italia
