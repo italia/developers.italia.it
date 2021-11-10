@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-11-10T06:05:42+00:00</updated>
+  <updated>2021-11-10T16:04:44+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,40 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/11/09/hacktoberfest-risultati</id>
+    <title>Hacktoberfest 2021: i risultati</title>
+    <updated>2021-11-09T15:00:00+00:00</updated>
+
+    <summary>Developers Italia ha partecipato all’ottava edizione dell’evento internazionale sull’open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/11/09/hacktoberfest-risultati">&lt;p&gt;Anche quest’anno abbiamo &lt;em&gt;hackerato&lt;/em&gt; ottobre! Developers Italia ha partecipato all’ottava edizione dell’&lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot; target=&quot;_blank&quot;&gt;Hacktoberfest&lt;/a&gt;, iniziativa internazionale volta a promuovere la comunità e lo sviluppo di software open source tramite una serie di sfide. Tra castagne, zucche di Halloween e foliage, gli sviluppatori di tutto il globo hanno affrontato più di cento “problemi” (issue) aperti su vari repository contenuti all’interno dell’organizzazione &lt;a href=&quot;https://github.com/italia&quot; target=&quot;_blank&quot;&gt;github.com/italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Com’è andata la festa? Sono state  &lt;strong target=&quot;_blank&quot;&gt;&lt;a href=&quot;https://github.com/search?q=label%3Ahacktoberfest+org%3Aitalia+updated%3A%3E2021-08-01+state%3Aclosed&amp;amp;type=Issues&amp;amp;ref=advsearch&amp;amp;l=&amp;amp;l=&quot;&gt;27 le issue risolte&lt;/a&gt;&lt;/strong&gt;: 10 di queste hanno migliorato il sito di &lt;a href=&quot;https://github.com/italia/developers.italia.it&quot; target=&quot;_blank&quot;&gt;Developers Italia&lt;/a&gt; con correzioni grafiche e ottimizzazioni al motore di ricerca del &lt;a href=&quot;https://developers.italia.it/it/search&quot; target=&quot;_blank&quot;&gt;Catalogo del software&lt;/a&gt;. Ben 17 hanno contribuito all’evoluzione del &lt;a href=&quot;https://github.com/italia/design-react-kit/&quot; target=&quot;_blank&quot;&gt;design-react-kit&lt;/a&gt;, con risoluzione di bug, ampliamento della documentazione e perfino aggiunta di nuovi componenti di UI. Un grande &lt;em&gt;thank you&lt;/em&gt; a tutti quelli che, da tutto il mondo, hanno partecipato, con un messaggio in una issue, un suggerimento o una Pull Request: ognuno ha contribuito alla causa a suo modo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vuoi continuare a divertirti e imparare a sviluppare in modo aperto con i progetti di Developers Italia?&lt;/strong&gt; Nessun problema, con noi la festa dura tutto l’anno: tutti i software, le librerie e i kit di sviluppo che permettono di interagire con le Piattaforme Abilitanti del Paese sono al 100% open source ed è possibile migliorare insieme questi software con un approccio aperto e collaborativo. Scopri come partecipare su &lt;a href=&quot;https://come-partecipo.italia.it/&quot; target=&quot;_blank&quot;&gt;https://come-partecipo.italia.it/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nel nostro catalogo, inoltre, si possono trovare i &lt;a href=&quot;https://developers.italia.it/it/search?type=software_reuse&amp;amp;sort_by=relevance&amp;amp;page=0&quot; target=&quot;_blank&quot;&gt;software a riuso&lt;/a&gt; e i &lt;a href=&quot;https://come-partecipo.italia.it/&quot; target=&quot;_blank&quot;&gt;software open source&lt;/a&gt; di terze parti inseriti a catalogo dalle Pubbliche Amministrazioni italiane o da singoli sviluppatori per essere riutilizzati da altri Enti pubblici. Anche in questo caso è possibile dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo, per maggiori approfondimenti sul nostro &lt;a href=&quot;https://developersitalia.slack.com&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt; e su &lt;a href=&quot;https://forum.italia.it/&quot; target=&quot;_blank&quot;&gt;Forum Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il Team di Developers Italia&lt;/p&gt;</content>
+    <published>2021-11-09T15:00:00+00:00</published>
+
+    
+    <category term="hacktoberfest" />
+    
+    <category term="developers" />
+    
+    <category term="api" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api</id>
     <title>Progettare servizi pubblici basati su API</title>
