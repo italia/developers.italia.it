@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-11-10T16:04:44+00:00</updated>
+  <updated>2021-11-10T17:12:45+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -26,7 +26,7 @@
 
 &lt;p&gt;&lt;strong&gt;Vuoi continuare a divertirti e imparare a sviluppare in modo aperto con i progetti di Developers Italia?&lt;/strong&gt; Nessun problema, con noi la festa dura tutto l’anno: tutti i software, le librerie e i kit di sviluppo che permettono di interagire con le Piattaforme Abilitanti del Paese sono al 100% open source ed è possibile migliorare insieme questi software con un approccio aperto e collaborativo. Scopri come partecipare su &lt;a href=&quot;https://come-partecipo.italia.it/&quot; target=&quot;_blank&quot;&gt;https://come-partecipo.italia.it/&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Nel nostro catalogo, inoltre, si possono trovare i &lt;a href=&quot;https://developers.italia.it/it/search?type=software_reuse&amp;amp;sort_by=relevance&amp;amp;page=0&quot; target=&quot;_blank&quot;&gt;software a riuso&lt;/a&gt; e i &lt;a href=&quot;https://come-partecipo.italia.it/&quot; target=&quot;_blank&quot;&gt;software open source&lt;/a&gt; di terze parti inseriti a catalogo dalle Pubbliche Amministrazioni italiane o da singoli sviluppatori per essere riutilizzati da altri Enti pubblici. Anche in questo caso è possibile dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.&lt;/p&gt;
+&lt;p&gt;Nel nostro catalogo, inoltre, si possono trovare i &lt;a href=&quot;https://developers.italia.it/it/search?type=software_reuse&amp;amp;sort_by=relevance&amp;amp;page=0&quot; target=&quot;_blank&quot;&gt;software a riuso&lt;/a&gt; e i &lt;a href=&quot;https://developers.italia.it/it/search?type=software_open&amp;amp;sort_by=relevance&amp;amp;page=0&quot; target=&quot;_blank&quot;&gt;software open source&lt;/a&gt; di terze parti inseriti a catalogo dalle Pubbliche Amministrazioni italiane o da singoli sviluppatori per essere riutilizzati da altri Enti pubblici. Anche in questo caso è possibile dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.&lt;/p&gt;
 
 &lt;p&gt;Ti aspettiamo, per maggiori approfondimenti sul nostro &lt;a href=&quot;https://developersitalia.slack.com&quot; target=&quot;_blank&quot;&gt;Slack&lt;/a&gt; e su &lt;a href=&quot;https://forum.italia.it/&quot; target=&quot;_blank&quot;&gt;Forum Italia&lt;/a&gt;.&lt;/p&gt;
 
