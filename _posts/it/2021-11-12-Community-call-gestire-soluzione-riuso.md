@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Community call: come si gestisce una soluzione a riuso"
+title: "Community call: come si gestisce una soluzione a riuso"
 subtitle: Le esperienze di riuso di due software a catalogo pubblicati dal Consiglio Nazionale delle Ricerche - CNR
 date: 2021-11-12 12:00:00 +0200
 tags: developers riuso opensource
