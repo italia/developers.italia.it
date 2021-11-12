@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-11-12T14:15:50+00:00</updated>
+  <updated>2021-11-12T18:05:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -24,7 +24,7 @@
 
 &lt;p&gt;ePAS è un sistema di &lt;strong&gt;rilevazione e gestione delle presenze del personale&lt;/strong&gt;, che permette, tra le altre cose, di inviare gli attestati di presenza del personale e gestire/validare i calendari di servizi di turno e reperibilità, timbrature dei badge e molto altro.&lt;/p&gt;
 
-&lt;p&gt;SIGLA, invece, &lt;strong&gt;gestisce la contabilità finanziaria e della rendicontazione economica ed analitica&lt;/strong&gt;, permettendo, ad esempio, la definizione della struttura organizzativa dell’ente, la realizzazione del piano dei conti finanziario ed economico e il bilancio di previsione decisionale/gestionale.&lt;/p&gt;
+&lt;p&gt;SIGLA, invece, &lt;strong&gt;gestisce la contabilità finanziaria e la rendicontazione economica ed analitica&lt;/strong&gt;, permettendo, ad esempio, la definizione della struttura organizzativa dell’ente, la realizzazione del piano dei conti finanziario ed economico e il bilancio di previsione decisionale/gestionale.&lt;/p&gt;
 
 &lt;p&gt;Durante l’incontro, Marco Spasiano (CNR), Cristian Lucchesi (CNR) e Ciro Salvio (Istituto Superiore di Sanità) ci illustreranno i casi di cessione e riuso di ePAS e SIGLA raccontando la loro storia, in qualità di &lt;strong&gt;autore e fruitori&lt;/strong&gt; dell’open source italiano. Una storia caratterizzata da comuni esigenze: le necessità iniziali, la scelta della soluzione da adottare, la sua configurazione e la sua messa in produzione.&lt;/p&gt;
 
