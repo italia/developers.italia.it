@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-11-12T06:08:01+00:00</updated>
+  <updated>2021-11-12T14:15:50+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,40 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/11/12/Community-call-gestire-soluzione-riuso</id>
+    <title>Community call: come si gestisce una soluzione a riuso</title>
+    <updated>2021-11-12T10:00:00+00:00</updated>
+
+    <summary>Le esperienze di riuso di due software a catalogo pubblicati dal Consiglio Nazionale delle Ricerche - CNR </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/11/12/Community-call-gestire-soluzione-riuso">&lt;p&gt;Dopo aver visto insieme esempi di &lt;a href=&quot;https://developers.italia.it/it/news/2021/11/03/progettare-servizi-pubblici-basati-su-api&quot; target=&quot;_blank&quot;&gt;servizi pubblici basati su API&lt;/a&gt; durante la community call di ottobre, il &lt;strong&gt;24 novembre  alle ore 15.30&lt;/strong&gt; scopriremo l’interessante esperienza di riuso di &lt;strong&gt;due soluzioni&lt;/strong&gt; messe a &lt;a href=&quot;https://developers.italia.it/it/software&quot; target=&quot;_blank&quot;&gt;Catalogo&lt;/a&gt; dal Consiglio Nazionale delle Ricerche (CNR): &lt;a href=&quot;https://developers.italia.it/it/software/cnr-consiglionazionaledellericerche-epas&quot; target=&quot;_blank&quot;&gt;ePAS&lt;/a&gt; (Electronic Personnel Attendance System) e &lt;a href=&quot;https://developers.italia.it/it/software/cnr-consiglionazionaledellericerche-sigla-main&quot; target=&quot;_blank&quot;&gt;SIGLA&lt;/a&gt; (Sistema informativo per la gestione delle linee di attività). Vediamo meglio di cosa si tratta.&lt;/p&gt;
+
+&lt;p&gt;ePAS è un sistema di &lt;strong&gt;rilevazione e gestione delle presenze del personale&lt;/strong&gt;, che permette, tra le altre cose, di inviare gli attestati di presenza del personale e gestire/validare i calendari di servizi di turno e reperibilità, timbrature dei badge e molto altro.&lt;/p&gt;
+
+&lt;p&gt;SIGLA, invece, &lt;strong&gt;gestisce la contabilità finanziaria e della rendicontazione economica ed analitica&lt;/strong&gt;, permettendo, ad esempio, la definizione della struttura organizzativa dell’ente, la realizzazione del piano dei conti finanziario ed economico e il bilancio di previsione decisionale/gestionale.&lt;/p&gt;
+
+&lt;p&gt;Durante l’incontro, Marco Spasiano (CNR), Cristian Lucchesi (CNR) e Ciro Salvio (Istituto Superiore di Sanità) ci illustreranno i casi di cessione e riuso di ePAS e SIGLA raccontando la loro storia, in qualità di &lt;strong&gt;autore e fruitori&lt;/strong&gt; dell’open source italiano. Una storia caratterizzata da comuni esigenze: le necessità iniziali, la scelta della soluzione da adottare, la sua configurazione e la sua messa in produzione.&lt;/p&gt;
+
+&lt;p&gt;La community call sarà incentrata in particolare sulle &lt;strong&gt;modalità di gestione delle soluzioni in riuso&lt;/strong&gt;: la conduzione dell’analisi comparativa, la scelta a catalogo delle soluzioni e la costruzione del rapporto con l’ente cedente. Infine verranno messi in luce i vantaggi di fare rete e, grazie alla partecipazione attiva, l’opportunità di costruire una comunità di confronto.&lt;/p&gt;
+
+&lt;p&gt;In chiusura, i partecipanti avranno spazio per soddisfare tutte le curiosità e dubbi in un momento Q&amp;amp;A.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/fdffc27c-2046-4719-bbf4-11282669cd6f&quot; target=&quot;_blank&quot;&gt;Registrati all’evento&lt;/a&gt; per partecipare. Ti aspettiamo il 24 novembre!&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2021-11-12T10:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="riuso" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/11/09/hacktoberfest-risultati</id>
     <title>Hacktoberfest 2021: i risultati</title>
