@@ -21,4 +21,4 @@ La community call sarà incentrata in particolare sulle **modalità di gestione 
 
 In chiusura, i partecipanti avranno spazio per soddisfare tutte le curiosità e dubbi in un momento Q&A.
 
-**[Registrati all'evento](https://mobilizon.it/events/fdffc27c-2046-4719-bbf4-11282669cd6f){:target="_blank"} per partecipare**. Ti aspettiamo il 24 novembre!**
+**[Registrati all'evento](https://mobilizon.it/events/fdffc27c-2046-4719-bbf4-11282669cd6f){:target="_blank"} per partecipare. Ti aspettiamo il 24 novembre!**
