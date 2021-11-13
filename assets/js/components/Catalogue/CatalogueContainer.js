@@ -10,7 +10,7 @@ import {
   initialSortBy,
   initialType,
 } from '../../utils/urlSearchParams.js';
-import { ALL_CATALOGUE, RELEVANCE } from '../../utils/constants.js';
+import { ALL_CATALOGUE, RELEVANCE, RELEASE_DATE } from '../../utils/constants.js';
 import { CatalogueView } from './CatalogueView.js';
 import { CatalogueFiltersContainer } from './CatalogueFiltersContainer.js';
 
@@ -25,6 +25,8 @@ const useStyle = createUseStyles({
 export const CatalogueContainer = () => {
   const classes = useStyle();
 
+  const defaultSortBy = initialSearchValue ? RELEVANCE : RELEASE_DATE;
+
   return (
     <SearchProvider
       initialCategories={initialCategories}
@@ -32,7 +34,7 @@ export const CatalogueContainer = () => {
       initialPage={Number(initialPage)}
       initialIntendedAudiences={initialIntendedAudiences}
       initialSearchValue={initialSearchValue}
-      initialSortBy={initialSortBy ?? RELEVANCE}
+      initialSortBy={initialSortBy ?? defaultSortBy}
       initialType={initialType ?? ALL_CATALOGUE}
       syncStateWithQueryString={true}
     >
