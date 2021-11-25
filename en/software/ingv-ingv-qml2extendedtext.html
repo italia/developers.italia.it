@@ -20,7 +20,7 @@
       
 
       
-    QuakeML to NonLinLoc PHS
+    QuakeML format to Extended text format
   </title>
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202111240606" rel="stylesheet">
+  <link href="/dist/main.css?202111250605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -650,8 +650,8 @@
         <img alt="" src="https://raw.githubusercontent.com/INGV/qml2extendedtext/main/images/ingv_logo_text_two_lines.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
-          QuakeML to NonLinLoc PHS
-          <span class="badge badge-pill badge-pill--sup badge-primary">v1.10.0</span>
+          QuakeML format to Extended text format
+          <span class="badge badge-pill badge-pill--sup badge-primary">v1.12.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -659,7 +659,7 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Docker image to convert FDSN-event QuakeML format to FDNS-event Text extended format.
+            Docker image to QuakeML format to Extended text format.
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -720,7 +720,7 @@
           <p>Vitality:</p>
           <p class="score d-inline-block"> 48%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,50,50,50,68,50,50,50,50,50,50,50,50,50,50,50,50,50,50,86,50]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,50,50,50,68,50,50,50,50,50,50,50,50,50,50,50,50,50,50,86,56,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -801,7 +801,7 @@
           <div class="function-list">
             
             
-            <p> Converter from FDSN-event QuakeML to FDSN-event Text format </p>
+            <p> Converter from QuakeML to Extended text format </p>
             
             
           </div>
@@ -860,10 +860,10 @@
             <p>detailed information </p>
             <div class="title">
               <h2 class="h1">
-                QuakeML to NonLinLoc PHS
+                QuakeML format to Extended text format
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">v1.10.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">v1.12.0</span>
                 
               </h2>
               <h2>
@@ -876,9 +876,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2021-11-23
+                  2021-11-24
                   
-                  (v1.10.0)
+                  (v1.12.0)
                   
                 </p>
               </div>
@@ -1016,10 +1016,8 @@
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
               <div class="font-serif page-detail__text">
-                <p>This project is developed to create a Docker image with a simple converter from FDSN-event QuakeML format to FDNS-event Text extended format.
-FDNS-event QuakeML format is a flexible, extensible and modular XML representation of seismological data which is intended to cover a broad range of fields of application in modern seismology. More info about QuakeML: https://quake.ethz.ch/quakeml/
-FDNS-event Text format is contains one event per line with common fields separated by vertical bar characters (ASCII decimal 124). Field entries cannot contain vertical bar characters. Lines beginning with a hash character (“#”: ASCII decimal 35) should be considered comment lines.
-This application extends the FDSN-event Text format adding more seismological informations.</p>
+                <p>This project is developed to create a Docker image used to parse a full QuakeML (xml) file or QuakeML webservice response containing information on hypocenter and related arrival times picks, to return an Extended text format. More informations about the Extended text output format could be found here: https://github.com/ingv/qml2extendedtext
+FDNS-event QuakeML format is a flexible, extensible and modular XML representation of seismological data which is intended to cover a broad range of fields of application in modern seismology. More info about QuakeML: https://quake.ethz.ch/quakeml/</p>
 
               </div>
             </div>
