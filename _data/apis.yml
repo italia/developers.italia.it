@@ -111,4 +111,15 @@
   tags: [data, turismo]
   language: [it, en]
   slug: opendata-ert
+- openapi: https://idrogeo.isprambiente.it/api
+  title: Idrogeo API 
+  abstract: >-
+    Consulta mappe, dati e indicatori sul dissesto idrogeologico in Italia.
+  contact:
+    name: ISPRA
+    logo: https://www.isprambiente.gov.it/it/archivio/notizie-e-novita-normative/notizie-ispra/2017/05/nota-ministero-dellambiente/@@images/cc88e735-4212-44de-818c-dde31a6597a9.jpeg
+  tags: [data, ambiente]
+  language: [it, en]
+  slug: ispra-idrogeo
+
 
