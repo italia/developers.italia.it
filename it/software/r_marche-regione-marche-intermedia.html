@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202111290606" rel="stylesheet">
+  <link href="/dist/main.css?202111300605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1041,56 +1041,33 @@
 gestione della fattura facilitando l’integrazione sia con i sistemi di
 protocollo che con i sistemi contabili degli enti, o inserendo dei
 controlli su specifici campi della fattura secondo logiche proprie di ogni
-ente, così diminuendo la gestione manuale della fatture</p>
-
-<p>In particolare è possibile configurare le varie fase del ciclo per la
-gestione delle fatture passive ed attive, come da schema seguente</p>
-
-<p><strong>Configurazione Ciclo Passivo</strong></p>
-
+ente, così diminuendo la gestione manuale della fatture
+In particolare è possibile configurare le varie fase del ciclo per la
+gestione delle fatture passive ed attive, come da schema seguente
+<strong>Configurazione Ciclo Passivo</strong></p>
 <ul>
-  <li>
-    <p>Ricezione verso Sistema di Protocollo: per la ricezione del file Fattura
+  <li>Ricezione verso Sistema di Protocollo: per la ricezione del file Fattura
 e delle notifiche, e l’indirizzamento verso il sistema di protocollo
-dell’ente;</p>
-  </li>
-  <li>
-    <p>Ricezione verso Sistema di Registrazione: per la ricezione del file
+dell’ente;</li>
+  <li>Ricezione verso Sistema di Registrazione: per la ricezione del file
 Fattura e delle notifiche, e l’indirizzamento verso il sistema
-gestionale/contabile dell’ente;</p>
-  </li>
-  <li>
-    <p>Invio Notifiche Esito Committente: per l’invio delle notifiche di esito
-committente di accettazione/rifiuto del file fattura;</p>
-  </li>
-  <li>
-    <p>Pre-Validazione Campi Opzionali: per definire specifici criteri di
+gestionale/contabile dell’ente;</li>
+  <li>Invio Notifiche Esito Committente: per l’invio delle notifiche di esito
+committente di accettazione/rifiuto del file fattura;</li>
+  <li>Pre-Validazione Campi Opzionali: per definire specifici criteri di
 scarto delle fatture, aggiuntivi a quelli già imposti da normativa
-nazionale;</p>
-  </li>
+nazionale;
+<strong>Configurazione Ciclo Attivo</strong></li>
+  <li>Invio Fatture: per l’invio delle fatture attive;</li>
+  <li>Ricezione Notifiche: per la ricezione delle Notifiche, e l’eventuale
+‘indirizzamento verso il sistema gestionale/contabile dell’ente.
+Per ogni fase invio/ricezione di fatture e notifiche è possibile scegliere
+tra i seguenti canali:
+a) Canale PEC: Sistema di posta elettronica certificata
+b) Canale FTP: Sistema di trasmissione dati tra terminali remoti basato su
+protocollo FTP
+c) Canale Web Service (WS): Sistema di integrazione tramite Web Services.</li>
 </ul>
-
-<p><strong>Configurazione Ciclo Attivo</strong></p>
-
-<ul>
-  <li>
-    <p>Invio Fatture: per l’invio delle fatture attive;</p>
-  </li>
-  <li>
-    <p>Ricezione Notifiche: per la ricezione delle Notifiche, e l’eventuale
-‘indirizzamento verso il sistema gestionale/contabile dell’ente.</p>
-  </li>
-</ul>
-
-<p>Per ogni fase invio/ricezione di fatture e notifiche è possibile scegliere
-tra i seguenti canali:</p>
-
-<p>a) Canale PEC: Sistema di posta elettronica certificata</p>
-
-<p>b) Canale FTP: Sistema di trasmissione dati tra terminali remoti basato su
-protocollo FTP</p>
-
-<p>c) Canale Web Service (WS): Sistema di integrazione tramite Web Services.</p>
 
               </div>
             </div>
