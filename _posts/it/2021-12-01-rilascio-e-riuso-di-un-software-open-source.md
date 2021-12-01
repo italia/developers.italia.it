@@ -19,4 +19,4 @@ In conclusione, è stato possibile approfondire alcuni aspetti tecnici di ePAS e
 
 Vuoi rivedere tutta la community call? **[Guarda il video](https://www.youtube.com/watch?v=Q6bCRei3UHU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL)** su YouTube. 
 
-Gli incontri della community si prendono una pausa e **tornano a gennaio**. Vuoi ricevere una mail con tutti i dettagli sul prossimo incontro? **[Compila l’apposito form](https://ec.europa.eu/eusurvey/runner/InfoDesDev)** e rimani sempre aggiornato sulle iniziative Developers Italia e Designers Italia.
+Gli incontri della community si prendono una pausa e **tornano a gennaio**. Vuoi ricevere una mail con tutti i dettagli sul prossimo incontro? **[Compila l’apposito form](https://ec.europa.eu/eusurvey/runner/InfoDesDev)** e ricevi aggiornamenti sulle iniziative Developers Italia e Designers Italia.
