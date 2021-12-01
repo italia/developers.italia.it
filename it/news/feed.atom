@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-12-01T06:04:48+00:00</updated>
+  <updated>2021-12-01T11:01:45+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,38 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/12/01/rilascio-e-riuso-di-un-software-open-source</id>
+    <title>Rilascio e riuso di un software open source - le esperienze del CNR e dell’ISS</title>
+    <updated>2021-12-01T07:00:00+00:00</updated>
+
+    <summary>Scopri tutto sulla community call del 24 novembre </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/12/01/rilascio-e-riuso-di-un-software-open-source">&lt;p&gt;Non hai potuto seguire la community call del 24 novembre? Niente paura, ecco una breve sintesi degli argomenti più importanti discussi durante l’evento.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Marco Spasiano&lt;/strong&gt; ci ha raccontato come il software open source del &lt;strong&gt;&lt;a href=&quot;https://developers.italia.it/it/pa/cnr.html&quot;&gt;CNR - Centro Nazionale delle Ricerche, attualmente presente Catalogo del software di Developers Italia&lt;/a&gt;&lt;/strong&gt;, viene mantenuto internamente e con contributi di terze parti e condiviso con il sistema paese. Marco ha illustrato i vantaggi della natura collaborativa alla base della realizzazione del software e del ciclo di vita di questo, l’esperienza di pubblicazione di un software a catalogo e tanti buoni consigli su come scegliere la soluzione giusta per le proprie esigenze. A seguire il suo collega &lt;strong&gt;Cristian Lucchesi&lt;/strong&gt; ha descritto le caratteristiche principali di &lt;a href=&quot;https://developers.italia.it/it/software/cnr-consiglionazionaledellericerche-epas&quot;&gt;ePAS&lt;/a&gt;, l’applicazione web per la gestione del personale, dedicando alcune importanti considerazioni sull’architettura e sui componenti del software, sui costi di migrazione ed integrazione e sull’affidabilità, sull’utilità e sul valore che questa piattaforma esprime all’interno della propria organizzazione.&lt;/p&gt;
+
+&lt;p&gt;Dalla fase di rilascio a quella di riuso: Cristian ha poi passato la parola a &lt;strong&gt;Ciro Salvo&lt;/strong&gt;, dell’&lt;strong&gt;Istituto Superiore di Sanità&lt;/strong&gt;, che ha raccontato l’esperienza di riuso di &lt;a href=&quot;https://developers.italia.it/it/software/cnr-consiglionazionaledellericerche-sigla-main&quot;&gt;SIGLA&lt;/a&gt;, supportata dalla comunità degli sviluppatori del CNR e diretta espressione della natura collaborativa e portatrice di valori utili.&lt;/p&gt;
+
+&lt;p&gt;In conclusione, è stato possibile approfondire alcuni aspetti tecnici di ePAS e si è infine parlato dell’utilità del software nel gestire il personale in tempo di pandemia.&lt;/p&gt;
+
+&lt;p&gt;Vuoi rivedere tutta la community call? &lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Q6bCRei3UHU&amp;amp;list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&quot;&gt;Guarda il video&lt;/a&gt;&lt;/strong&gt; su YouTube.&lt;/p&gt;
+
+&lt;p&gt;Gli incontri della community si prendono una pausa e &lt;strong&gt;tornano a gennaio&lt;/strong&gt;. Vuoi ricevere una mail con tutti i dettagli sul prossimo incontro? &lt;strong&gt;&lt;a href=&quot;https://ec.europa.eu/eusurvey/runner/InfoDesDev&quot;&gt;Compila l’apposito form&lt;/a&gt;&lt;/strong&gt; e ricevi aggiornamenti sulle iniziative Developers Italia e Designers Italia.&lt;/p&gt;</content>
+    <published>2021-12-01T07:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="riuso" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Giuseppe De Marco</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/11/12/Community-call-gestire-soluzione-riuso</id>
     <title>Community call: come si gestisce una soluzione a riuso</title>
