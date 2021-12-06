@@ -37,18 +37,22 @@ resources:
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
   - SDK:
-    - title: SDK for .NET
+    - title: SDK for PHP (based on SimpleSAMLphp)
       icon: github
-      url: https://github.com/italia/spid-dotnet-sdk
-      desc: Native library for integrating SPID in .NET applications
+      url: https://github.com/italia/spid-php
+      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp <br> <img src="https://img.shields.io/github/issues/italia/spid-php" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-php?style=social" />
     - title: SDK for Django
       icon: github
       url: https://github.com/italia/spid-django
-      desc: Native library for integrating SPID in Django (Python) applications
+      desc: Native library for integrating SPID in Django (Python) applications.<br> <img src="https://img.shields.io/github/issues/italia/spid-django" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-django?style=social" />
+    - title: SDK for ASP.NET core
+      icon: github
+      url: https://github.com/italia/spid-aspnetcore
+      desc: <img src="https://img.shields.io/github/issues/italia/spid-aspnetcore" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-aspnetcore?style=social" />
     - title: SDK for Express.js
       icon: github
       url: https://github.com/italia/spid-express
-      desc: Native library for integrating SPID in Node/Passport (Javascript) applications
+      desc: Native library for integrating SPID in Node/Passport (Javascript) applications <br> <img src="https://img.shields.io/github/issues/italia/spid-express" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Ako%2C%20response%3Ana-orange" /> <img src="https://img.shields.io/github/stars/italia/spid-express?style=social" />
     - title: SDK for Spring
       icon: github
       url: https://github.com/italia/spid-spring
@@ -57,6 +61,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-ruby
       desc: Native library for integrating SPID in Ruby applications
+    - title: SDK for .NET
+      icon: github
+      url: https://github.com/italia/spid-dotnet-sdk
+      desc: Native library for integrating SPID in .NET applications
     - title: SDK for Ruby on Rails
       icon: github
       url: https://github.com/italia/spid-rails
@@ -93,10 +101,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-drupal-module
       desc: Native library for integrating SPID in Drupal (PHP) applications
-    - title: SDK for PHP (based on SimpleSAMLphp)
-      icon: github
-      url: https://github.com/italia/spid-php
-      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp
     - title: SDK for Perl
       icon: github
       url: https://github.com/italia/spid-perl
