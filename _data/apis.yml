@@ -111,4 +111,14 @@
   tags: [data, turismo]
   language: [it, en]
   slug: opendata-ert
+- openapi: https://raw.githubusercontent.com/teamdigitale/dati-semantic-backend/main/src/main/resources/public/api-docs.yaml
+  title: National Data Catalog Vocabularies 
+  abstract: >-
+    Dati dei vocabolari controllati presenti nel Catalogo Nazionale Dati per l'interoperabilità semantica.
+  contact:
+    name: Team Digitale
+    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
+  tags: [data, semantica]
+  language: [it, en]
+  slug: dtd-ndc-lov
 
