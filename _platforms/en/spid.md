@@ -37,6 +37,10 @@ resources:
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
   - SDK:
+    - title: SDK for AspNetCore
+      icon: github
+      url: https://github.com/italia/spid-aspnetcore
+      desc: Native library for integrating SPID in .NET AspNetCore MVC applications
     - title: SDK for .NET
       icon: github
       url: https://github.com/italia/spid-dotnet-sdk
