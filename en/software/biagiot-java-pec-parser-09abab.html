@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202112171255" rel="stylesheet">
+  <link href="/dist/main.css?202112180605" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -646,9 +646,12 @@
     <div class="col-md-7">
       <div class="intro-name">
         
+        
+        <img alt="" src="https://raw.githubusercontent.com/biagioT/java-pec-parser/master/src/main/resources/logo.png" class="d-inline-block" />
+        
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">1.0.3</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">1.1.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -656,8 +659,8 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata
-(e messaggi di posta ordinaria)
+            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata(e
+messaggi di posta ordinaria)
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -679,6 +682,16 @@
 <li class="home-software-tags__item  ">
         <a
                 href="/en/search?categories=email-management">email management</a>
+</li>
+
+              
+              
+
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?categories=instant-messaging">instant messaging</a>
 </li>
 
               
@@ -716,7 +729,7 @@
           <p>Vitality:</p>
           <p class="score d-inline-block"> 65%</p>
           
-          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,75,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]'>
+          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,75,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,87,65]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -748,6 +761,10 @@
       <div class="drops-details">
         
 
+        
+        <div class="goto doc">
+          <p><a href="https://github.com/biagioT/java-pec-parser"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+        </div>
         
         <div class="goto code">
           <p><a href="https://github.com/biagioT/java-pec-parser"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
@@ -782,6 +799,7 @@
             
             
             <p> Elaborazione di messaggi di posta elettronica certificata (PEC) e
+
 ricevute </p>
             
             <p> Elaborazione di messaggi di posta elettronica ordinaria </p>
@@ -821,6 +839,16 @@ ricevute </p>
 </li>
 
     
+    
+
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?categories=instant-messaging">instant messaging</a>
+</li>
+
+    
   </div>
 </div>
 
@@ -839,7 +867,7 @@ ricevute </p>
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">1.0.3</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">1.1.0</span>
                 
               </h2>
               <h2>
@@ -852,9 +880,9 @@ ricevute </p>
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2021-10-27
+                  2021-12-17
                   
-                  (1.0.3)
+                  (1.1.0)
                   
                 </p>
               </div>
@@ -1015,34 +1043,48 @@ Certificata (e messaggi di posta ordinaria).</p>
 
 <p>​</p>
 
-<p><strong>Specifiche</strong>:</p>
+<p><strong>Utilizzo</strong>:</p>
 
-<p><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici
-mediante posta elettronica
-certificata</a>.</p>
+<p>++Parsing++:</p>
 
-<p>​</p>
+<p>La libreria offre tre metodi per il parsing di mail/PEC:</p>
 
-<p><strong>Esempio di utilizzo</strong>:</p>
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(MimeMessage mimeMessage)</code>  - elaborazione a partire da
+un oggetto
+<a href="https://javaee.github.io/javamail/docs/api/javax/mail/internet/class-use/MimeMessage.html">javax.mail.internet.MimeMessage</a></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(File emlFile)</code> - elaborazione a partire dal <em>File</em> EML</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream) </code>- elaborazione a partire
+dall’<em>InputStream</em> rappresentante l’EML</p>
+  </li>
+</ol>
 
-<p>Standard:</p>
+<p>++Istanza PECParser++:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Messaggio messaggio = PECMessageParser.getInstance().parse(mimeMessage);
-</code></pre></div></div>
+<p>E’ possibile creare una istanza di PECParser in due modi:</p>
 
-<p>Con proprietà custom per l’elaborazione del <code class="language-plaintext highlighter-rouge">MimeMessage</code> (nella modalità
-default vengono utilizzate le proprietà di sistema:
-<code class="language-plaintext highlighter-rouge">System.getProperties()</code>):</p>
+<ol>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">PECMessageParser getInstance(Properties properties)</code> - con delle
+proprietà personalizzate che concorreranno alla creazione e alla
+elaborazione del <em>MimeMessage</em></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">PECMessageParser getInstance()</code> - modalità default, vengono utilizzate
+le proprietà di sistema (<code class="language-plaintext highlighter-rouge">System.getProperties()</code>)</p>
+  </li>
+</ol>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Properties properties = ... ;
+<p>++Messaggio++:</p>
 
-Messaggio messaggio = PECMessageParser.getInstance(properties).parse(mimeMessage);
-</code></pre></div></div>
-
-<p>Tramite l’utilizzo della libreria è possibile estrarre, a partire da un
-oggetto
-<a href="https://javaee.github.io/javamail/docs/api/javax/mail/internet/class-use/MimeMessage.html"><code class="language-plaintext highlighter-rouge">javax.mail.internet.MimeMessage</code></a>,
-rappresentante un messaggio PEC:</p>
+<p>L’oggetto
+<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/it/tozzi/mail/pec/model/Messaggio.java">Messaggio</a>,
+risultato dell’elaborazione, conterrà:</p>
 
 <ul>
   <li>
@@ -1065,17 +1107,17 @@ rappresentante un messaggio PEC:</p>
 
 <ul>
   <li>
-    <p>PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isPec(...)</code>)</p>
+    <p>PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isPec(Messaggio messaggio)</code>)</p>
   </li>
   <li>
-    <p>Ricevuta PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isRicevutaPEC(...)</code>)</p>
+    <p>Ricevuta PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isRicevutaPEC(Messaggio messaggio)</code>)</p>
   </li>
   <li>
-    <p>Posta Ordinaria (<code class="language-plaintext highlighter-rouge">MessageUtils.isEmailNormale(...)</code>)</p>
+    <p>Posta Ordinaria (<code class="language-plaintext highlighter-rouge">MessageUtils.isEmailNormale(Messaggio messaggio)</code>)</p>
   </li>
 </ul>
 
-<p>Il messaggio infatti viene elaborato anche se non PEC:</p>
+<p>Il messaggio infatti viene elaborato anche se non PEC. In questo caso:</p>
 
 <ul>
   <li>
@@ -1093,8 +1135,34 @@ Busta rappresenta il messaggio normale</p>
 
 <p><strong>Altro</strong></p>
 
-<p>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
-codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
+<ul>
+  <li>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
+codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</li>
+</ul>
+
+<p>​</p>
+
+<p><strong>Requisiti</strong></p>
+
+<ul>
+  <li>
+    <p>Java 8 (o versioni successive)</p>
+  </li>
+  <li>
+    <p>Libreria OSS
+<a href="https://github.com/biagioT/java-uudecoder">java-uudecoder</a></p>
+  </li>
+</ul>
+
+<p>​</p>
+
+<p><strong>Specifiche AGID</strong></p>
+
+<ul>
+  <li><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici
+mediante posta elettronica
+certificata</a>.</li>
+</ul>
 
               </div>
             </div>
@@ -1166,14 +1234,14 @@ codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
 
         <catalogue-item
           class="w-100"
-          id="cf016d721e1b2b6b93a665e821f6e6b1a06420b2"
-          name="La Stanza del Cittadino"
+          id="54261ad3590385e7fe4706b635c36a231b1830b4"
+          name="rer.chatbot.client"
           description=""
-          url="/en/software/opencontent-stanzadelcittadino-cf016d"
+          url="/en/software/r_emiro-regioneer-rer_chatbot_client"
           icon="it-software"
-          category="software_open"
-          logo="https://gitlab.com/opencontent/stanzadelcittadino/raw/master/images/sdc001.jpg"
-          fallback="/assets/images/cover_software_opensource.png"
+          category="software_reuse"
+          logo=""
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         
@@ -1188,14 +1256,14 @@ codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</p>
 
         <catalogue-item
           class="w-100"
-          id="f48653a3ab51c30b5f3eac19b7e96bb7ec600c90"
-          name="vtenext"
+          id="3f5defcb4f3f6e027e93abb912e531fd9cb95200"
+          name="rer.subsites"
           description=""
-          url="/en/software/vtecrm-vtenext-f48653"
+          url="/en/software/r_emiro-regioneer-rer_subsites"
           icon="it-software"
-          category="software_open"
+          category="software_reuse"
           logo=""
-          fallback="/assets/images/cover_software_opensource.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         
