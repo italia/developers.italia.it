@@ -3,7 +3,7 @@ layout: post
 title: "2022, cominciano le prime sfide"
 subtitle: Al via l’aggiornamento del design system del Paese  
 date: 2021-12-23 09:00:00 +0200
-tags: developers designers PNRR designsystem
+tags: developers designers pnrr designsystem
 categories: news
 author: Michela Gabrieli
 image: /assets/images/posts/2021-12-23/buone-feste-it.png
