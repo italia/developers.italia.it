@@ -10,9 +10,9 @@ image: /assets/images/posts/2021-12-23/buone-feste-it.png
 locale: it
 ---
 
-Jingle bells! È tempo di auguri e di bilanci per Developers Italia e [Designers Italia](https://designers.italia.it/). L’anno appena trascorso ci ha visti impegnati a promuovere, spesso lontano dai riflettori, un **cambiamento culturale presso tutti gli stakeholder che contribuiscono alla trasformazione digitale della Pubblica Amministrazione**.
+Jingle bells! È tempo di auguri e di bilanci per Developers Italia e [Designers Italia](https://designers.italia.it/). L’anno appena trascorso ci ha visti impegnati a promuovere, spesso lontano dai riflettori, un **cambiamento culturale** presso tutti gli stakeholder che contribuiscono alla trasformazione digitale della Pubblica Amministrazione.
 Un percorso che ha coinvolto migliaia di esperte ed esperti in progettazione e sviluppo, insieme a funzionari della PA, grazie a community call, corsi di formazione e collaborazioni dirette sui nostri canali di lavoro ([Slack](https://slack.developers.italia.it), [Forum Italia](https://forum.italia.it) e [GitHub](https://github.com/italia)).
-Un'attività che continuerà e diventerà sempre più forte e visibile a partire dal 2022.
+Un'attività che continuerà e diventerà sempre più intensa a partire dal 2022.
 
 In questi giorni, infatti, **è in avvio una completa revisione del *design system* del Paese**, ovvero degli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione, così da renderli coerenti, familiari e fruibili da tutti i cittadini. Una revisione che, nella pratica, si tradurrà in schemi, regole e librerie visive e tecnologiche condivise.
 
