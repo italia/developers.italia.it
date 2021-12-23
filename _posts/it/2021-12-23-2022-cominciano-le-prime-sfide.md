@@ -15,7 +15,7 @@ Un percorso che ha coinvolto migliaia di esperte ed esperti in progettazione e s
 Un’attività che continuerà e diventerà sempre più intensa a partire dal 2022.
 ``
 
-In questi giorni, infatti, **è in avvio una completa revisione del *design system* del Paese**, ovvero degli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione, così da renderli coerenti, familiari e fruibili da tutti i cittadini. Una revisione che, nella pratica, si tradurrà in schemi, regole, librerie visive e tecnologiche condivise.
+In questi giorni, infatti, **è in avvio una completa revisione del *design system* del Paese**, ovvero degli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione, così da renderli coerenti, familiari e fruibili da tutti i cittadini. Una revisione che, nella pratica, si tradurrà in schemi, regole e librerie condivise.
 
 Si tratta di un’operazione ambiziosa, che prevede **l’ammodernamento in termini tecnologici e di accessibilità**, ma anche di visione e gestione, delle risorse messe a disposizione da Designers Italia e Developers Italia, in particolare i due kit di [progettazione](http://designers.italia.it/kit/progettazione-interfaccia/) e [sviluppo interfaccia](https://designers.italia.it/kit/sviluppo-interfaccia/), dei principali esempi di applicazione e dei [modelli standard di siti web per le PA](https://designers.italia.it/modelli/) (Comuni e scuole).
 
