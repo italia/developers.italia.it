@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2021-12-23T06:04:54+00:00</updated>
+  <updated>2021-12-23T10:02:23+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,44 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2021/12/23/2022-cominciano-le-prime-sfide</id>
+    <title>2022, cominciano le prime sfide</title>
+    <updated>2021-12-23T07:00:00+00:00</updated>
+
+    <summary>Al via l’aggiornamento del design system del Paese </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/12/23/2022-cominciano-le-prime-sfide">&lt;p&gt;Jingle bells! È tempo di auguri e di bilanci per Developers Italia e &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt;. L’anno appena trascorso ci ha visti impegnati a promuovere, spesso lontano dai riflettori, un &lt;strong&gt;cambiamento culturale presso tutti gli stakeholder che contribuiscono alla trasformazione digitale della Pubblica Amministrazione&lt;/strong&gt;. Un percorso che ha coinvolto migliaia di esperte ed esperti in sviluppo, progetto e pubblica amministrazione tramite community call, corsi formativi e collaborazioni dirette sui nostri canali di lavoro (&lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;, &lt;a href=&quot;https://forum.italia.it&quot;&gt;Forum Italia&lt;/a&gt; e &lt;a href=&quot;https://github.com/italia&quot;&gt;GitHub&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Un’attività che continuerà e diventerà sempre più forte e visibile a partire dal 2022. In questi giorni, infatti, è in avvio una &lt;strong&gt;completa revisione del &lt;em&gt;design system&lt;/em&gt; del Paese&lt;/strong&gt;, ovvero di quegli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione &lt;strong&gt;coerenti, familiari e fruibili per chiunque&lt;/strong&gt;. Nella pratica, schemi, regole e librerie visive e tecnologiche condivise.&lt;/p&gt;
+
+&lt;p&gt;Un’operazione ambiziosa, che prevede l’ammodernamento in termini &lt;strong&gt;tecnologici&lt;/strong&gt; e di &lt;strong&gt;accessibilità&lt;/strong&gt;, ma anche di &lt;strong&gt;visione&lt;/strong&gt; e &lt;strong&gt;gestione&lt;/strong&gt;, delle risorse messe a disposizione da Designers Italia e Developers Italia, in particolare i due kit di &lt;a href=&quot;http://designers.italia.it/kit/progettazione-interfaccia/&quot;&gt;progettazione&lt;/a&gt; e &lt;a href=&quot;https://designers.italia.it/kit/sviluppo-interfaccia/&quot;&gt;sviluppo&lt;/a&gt; interfaccia, dei principali esempi di applicazione e dei &lt;a href=&quot;https://designers.italia.it/modelli/&quot;&gt;modelli standard di siti web per le PA (Comuni e scuole)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tutto questo fa parte delle attività fondamentali alla realizzazione dell’&lt;strong&gt;investimento “&lt;a href=&quot;https://padigitale2026.gov.it/misure/#esp-serv-pubb&quot;&gt;Esperienza dei servizi pubblici&lt;/a&gt;” del Piano Nazionale di Ripresa e Resilienza&lt;/strong&gt;, la misura prevista per migliorare l’esperienza d’uso dei siti e servizi pubblici digitali per tutti gli utenti. Un’iniziativa concepita da un lato per colmare il divario digitale (digital divide) dei cittadini e, dall’altro, per offrire un’opportunità a tutte le PA, anche quelle con meno risorse, di automatizzare e riusare, chiavi in mano, soluzioni digitali efficaci e ben collaudate.&lt;/p&gt;
+
+&lt;p&gt;Per riuscire in questo sforzo, partiamo necessariamente dall’impegno profuso fino a oggi dalla community, che avrà un ruolo fondamentale nell’ideare, implementare e rendere efficace questa iniziativa. Grazie a un rinnovato design system e alla community che lo supporta, progettisti e sviluppatori che lavorano nella o per la PA potranno avere dei &lt;strong&gt;solidi punti di riferimento per creare il sito di un ente o il progetto di un servizio pubblico digitale&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per contribuire direttamente è possibile interagire nei &lt;a href=&quot;https://github.com/italia/bootstrap-italia/issues&quot;&gt;repository dedicati&lt;/a&gt; e nei vari canali a disposizione, in particolare su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt;. Nelle prossime settimane pubblicheremo un &lt;strong&gt;calendario dei lavori e di occasioni pubbliche dedicate&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Continua a seguirci e contribuisci anche tu al &lt;em&gt;design system&lt;/em&gt; del Paese, migliorando così la vita quotidiana di tutti coloro che usano un servizio pubblico online.&lt;/p&gt;
+
+&lt;p&gt;Il team di Developers e Designers Italia&lt;/p&gt;</content>
+    <published>2021-12-23T07:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="pnrr" />
+    
+    <category term="designsystem" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2021/12/01/rilascio-e-riuso-di-un-software-open-source</id>
     <title>Rilascio e riuso di un software open source - le esperienze del CNR e dell’ISS</title>
