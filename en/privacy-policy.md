@@ -6,32 +6,129 @@ ref:
 layout: internal-long
 ---
 
-In questa pagina si descrivono le modalità e le condizioni del trattamento dei dati personali degli utenti (di seguito, anche gli Utenti) che consultano e utilizzano il sito: [https://developers.italia.it](https://developers.italia.it) (di seguito, anche il Sito).
-L'informativa è resa ai sensi dell'art. 13 del D. Lgs. n. 196/2003 - Codice in materia di protezione dei dati personali a tutti gli Utenti che, interagendo con il Sito, forniscono al gestore dello stesso i propri dati personali.
-La validità dell’informativa contenuta nella presente pagina è limitata al solo Sito e non si estende ad altri siti web eventualmente consultabili mediante collegamento ipertestuale.
+[https://developers.italia.it](https://developers.italia.it) è gestito dalla Presidenza
+del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
 
-Il Titolare del trattamento per i dati raccolti attraverso il Sito è AgID - Agenzia per l'Italia Digitale, con sede in via Liszt 21 - 00144 Roma, indirizzo email [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it).
-Eventuali soggetti terzi ai quali i dati potrebbero essere comunicati per l’esecuzione di operazioni di trattamento connesse con le finalità specificate nella presente informativa, saranno preventivamente designati dal Titolare quali Responsabili del trattamento ai sensi dell’art. 29 del Codice in materia di protezione dei dati personali.
-I dati personali degli utenti diversi da quelli che l’utente pubblicherà direttamente sul sito nell’apposita area di discussione non formeranno oggetto di discussione.
+A norma degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) vogliamo fornirti
+un'informativa semplice e chiara su come trattiamo i dati personali che ci fornisci
+direttamente o di cui comunque potremo venire in possesso tramite contatto con il sito web
+https://developers.italia.it.
 
-Tutti i dati personali forniti attraverso il Sito saranno trattati in modo lecito e secondo correttezza al fine di fornire i servizi richiesti nonché di rispondere alle comunicazioni ed alle domande degli Utenti, sempre nel perseguimento degli scopi istituzionali dell’Agenzia così come previsti dalla Legge.
+## Titolare del trattamento
 
-I dati personali sono trattati con strumenti automatizzati per il tempo strettamente necessario a conseguire gli scopi per cui sono stati raccolti secondo quanto previsto dall’art. 11, lett. e) del Codice privacy. L’Agenzia adotta tutte le misure di sicurezza previste dal Codice privacy per proteggere i dati raccolti, al fine di scongiurare i rischi di perdita o furto dei dati, accessi non autorizzati, usi illeciti e non corretti.
-Gli Utenti possono esercitare in qualsiasi momento i diritti previsti dall’art. 7 del Codice privacy, al fine di ottenere la conferma dell'esistenza o meno dei loro dati personali e di conoscerne il contenuto e l'origine, verificarne l'esattezza o chiederne l'integrazione o l'aggiornamento, oppure la rettificazione. Ai sensi della medesima disposizione l’Utente potrà inoltre chiedere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, nonché opporsi in ogni caso, per motivi legittimi, al loro trattamento.
-Le richieste vanno inviate al seguente indirizzo: [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it). Attraverso il medesimo indirizzo, l’Utente potrà chiedere inoltre la lista aggiornata di tutti i Responsabili del trattamento nominati dal Titolare.
-La presente Privacy Policy è soggetta ad aggiornamenti; gli Utenti sono pertanto invitati a verificarne periodicamente il contenuto.
+Il Titolare del trattamento è la Presidenza del Consiglio dei Ministri - Dipartimento per
+la trasformazione digitale, con sede in Largo Pietro di Brazzà 86, 00186 Roma,
+contattabile ai seguenti recapiti:
 
-### Cookies policy
-I cookies sono piccoli file di testo che i siti visitati inviano al terminale dell'Utente, dove vengono memorizzati, per poi essere ritrasmessi agli stessi siti alla visita successiva.
-Il sito utilizza:
-- cookies analytics utilizzati per raccogliere informazioni, in forma aggregata, sul numero degli Utenti e su come gli stessi visitano il Sito. Il sito dell’Agenzia dell’Italia Digitale si avvale del servizio Google Analytics, la cui cookie policy può essere visionata a [questo link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage). Al fine di rispettare la privacy dei nostri utenti, il servizio è utilizzato con la modalità “\_anonymizeIp” che consente di mascherare gli indirizzi IP degli utenti che navigano sul sito internet: [maggiori informazioni sulla funzionalità](https://support.google.com/analytics/answer/2763052?hl=it). I dati sono raccolti all’unico fine di elaborare informazioni statistiche anonime sull’uso del Sito e per verificare il corretto funzionamento dello stesso.
-I cookies utilizzati dal Sito non consentono la raccolta di informazioni personali relative all’utente e si cancellano automaticamente con la chiusura del browser di navigazione.
-I dati di navigazione sono cancellati subito dopo la relativa elaborazione statistica e in ogni caso non vengono conservati per oltre 7 giorni dal momento della raccolta, salvo che la loro ulteriore conservazione non si renda necessaria per l’accertamento di reati.
-I cookies non sono utilizzati per attività di profilazione dell’Utente.
-L’Utente può scegliere di abilitare o disabilitare i cookies intervenendo sulle impostazioni del proprio browser di navigazione secondo le istruzioni rese disponibili dai relativi fornitori ai link di seguito indicati.
+* E-mail: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it);
+* PEC: [diptrasformazionedigitale@pec.governo.it](mailto:diptrasformazionedigitale@pec.governo.it).
 
-  - [Chrome](https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=en)
-  - [Firefox](https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie)
-  - [Safari](https://support.apple.com/en-us/HT201265)
-  - [Internet Explorer](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies)
-  - [Opera](https://blogs.opera.com/news/2015/08/how-to-manage-cookies-in-opera/)
+## Responsabile per la protezione dei dati
+
+Il Responsabile per la protezione dei dati - Data Protection Officer è contattabile ai
+seguenti recapiti:
+
+* E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it);
+* PEC: [USG@mailbox.governo.it](mailto:USG@mailbox.governo.it).
+
+## Come vengono trattati i tuoi dati personali - periodo di conservazione - base giuridica
+
+L'invio facoltativo, esplicito e volontario di messaggi
+agli indirizzi di contatto del sito, nonché i messaggi privati inviati dagli utenti ai
+relativi profili/pagine istituzionali sui social media (laddove questa possibilità sia
+prevista), comportano l'acquisizione dei dati di contatto del mittente, necessari a
+rispondere, nonché dei dati personali inclusi nelle comunicazioni.
+
+Tali dati saranno trattati dal Titolare, esclusivamente al fine di - e per il periodo strettamente
+necessario a - gestire le interazioni con l'utenza, nell'esecuzione dei propri compiti di
+interesse pubblico o comunque connessi all'esercizio dei propri pubblici poteri.
+
+## Chi potrà conoscere i dati personali
+
+I dati personali raccolti potranno essere oggetto di comunicazione a soggetti, interni
+o esterni alla Presidenza del Consiglio dei Ministri, nei confronti dei quali la
+comunicazione si configura come necessaria per il perseguimento delle finalità
+sopra specificate, compresi soggetti terzi che forniscono un servizio al Titolare,
+ad esempio per la fornitura di servizi tecnologici di questo portale, e che
+tratteranno detti dati personali in qualità di responsabili del trattamento ai sensi e per
+gli effetti di cui all’articolo 28 del GDPR.
+
+L’elenco dei responsabili del trattamento può essere richiesto al Titolare in qualsiasi momento,
+scrivendo a
+[segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it).
+
+## Trasferimento dei dati
+
+I dati potranno essere liberamente trasferiti fuori dal territorio nazionale a Paesi
+situati nell'Unione Europea.
+Per la fornitura di alcuni servizi tecnologici, il Titolare potrebbe avvalersi di
+soggetti ubicati al di fuori dell’Unione Europea. L'eventuale trasferimento dei dati in
+Paesi situati al di fuori dell'Unione Europea avverrà, in ogni caso, nel rispetto delle
+garanzie appropriate e opportune ai fini del trasferimento stesso, ai sensi della
+normativa applicabile.
+
+## Quali sono i tuoi diritti
+
+* **Diritto di accedere ai dati**: puoi ottenere conferma e informazioni sul trattamento.
+* **Diritto di rettifica**: puoi rettificare dati inesatti o integrarli.
+* **Diritto di cancellazione**: nei casi di legge, puoi chiedere l'oblio.
+* **Diritto di limitazione al trattamento**: nei casi di legge, puoi chiedere di limitare
+  il trattamento.
+* **Diritto di opporsi al trattamento**: per particolari motivi puoi opporti al trattamento
+  per l'esecuzione di un compito di interesse pubblico o connesso all'esercizio di pubblici poteri.
+* **Diritto alla portabilità dei dati**: non hai diritto alla portabilità dei tuoi dati
+  quando il trattamento è necessario per eseguire un compito di interesse pubblico o
+  nell’esercizio di funzioni pubbliche o adempiere a obblighi legali.
+
+Per maggiori informazioni o esercitare i tuoi diritti contatta il Titolare agli indirizzi
+sopra indicati. Se invece ritieni che il trattamento dei dati personali a te riferiti
+avvenga in violazione di quanto previsto dal GDPR, hai anche diritto di proporre reclamo,
+ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personali.
+
+## Cookie
+
+Questa sezione fornisce informazioni dettagliate sull'uso dei cookie, su come sono
+utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del decreto
+legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle
+“[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)”
+emanate dal Garante per la protezione dei dati personali con provvedimento
+del 10 giugno 2021.
+
+
+https://developers.italia.it utilizza cookie tecnici al fine di garantire il corretto
+funzionamento delle procedure e migliorare l'esperienza d'uso dei propri visitatori,
+il cui uso non è strumentale alla raccolta di dati personali identificativi
+dell'utente. Per questo motivo non abbiamo bisogno del tuo consenso per
+memorizzare i cookie.
+Utilizziamo anche i seguenti cookie analitici:
+* il servizio Google Analytics, la cui policy può essere visionata a
+  [questo link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
+  Al fine di rispettare la privacy degli utenti, il servizio è utilizzato con la modalità
+  “anonymizeIp” che consente di mascherare gli indirizzi IP degli utenti che navigano
+  sul sito ([maggiori informazioni sulla funzionalità](https://support.google.com/analytics/answer/2763052?hl=it)).
+  È possibile comunque effettuare l’[opt-out da Google Analytics](https://tools.google.com/dlpage/gaoptout?hl=en);
+* il servizio "Web Analytics Italia" (WAI) fornito da AGID che raccoglie dati
+  statistici anonimi mediante IP anonimizzato relativi alle visite del sito Internet
+  da parte degli utenti.
+
+Inoltre noi e i nostri fornitori ci asteniamo dal combinare questi cookie con altre
+elaborazioni né li trasmettiamo a terzi.
+Tali cookie vengono conservati per un periodo non superiore a 13 mesi dal momento della
+raccolta, salvo che la loro ulteriore conservazione non si renda necessaria per
+l’accertamento di reati. 
+
+## Come disabilitare i cookie (opt-out) sul proprio dispositivo
+
+La maggior parte dei browser accetta i cookie automaticamente, ma è possibile rifiutarli.
+Se non si desidera ricevere o memorizzare i cookie, si possono modificare le impostazioni
+di sicurezza del browser utilizzato, secondo le istruzioni rese disponibili dai
+relativi fornitori ai link di seguito indicati. Nel caso in cui si disabilitino tutti
+i cookie, il sito potrebbe non funzionare correttamente.
+ 
+* [Chrome](https://support.google.com/chrome/answer/95647)
+* [Firefox](https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox-desktop)
+* [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
+* [Edge](https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies)
+* [Opera](https://help.opera.com/en/latest/web-preferences/#cookies)
+
+*Ultimo aggiornamento: 28/12/2021*
