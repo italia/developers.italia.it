@@ -106,7 +106,6 @@ Utilizziamo anche i seguenti cookie analitici:
   Al fine di rispettare la privacy degli utenti, il servizio è utilizzato con la modalità
   “anonymizeIp” che consente di mascherare gli indirizzi IP degli utenti che navigano
   sul sito ([maggiori informazioni sulla funzionalità](https://support.google.com/analytics/answer/2763052?hl=it)).
-  È possibile comunque effettuare l’[opt-out da Google Analytics](https://tools.google.com/dlpage/gaoptout?hl=en);
 * il servizio "Web Analytics Italia" (WAI) fornito da AGID che raccoglie dati
   statistici anonimi mediante IP anonimizzato relativi alle visite del sito Internet
   da parte degli utenti.
@@ -115,7 +114,7 @@ Inoltre noi e i nostri fornitori ci asteniamo dal combinare questi cookie con al
 elaborazioni né li trasmettiamo a terzi.
 Tali cookie vengono conservati per un periodo non superiore a 13 mesi dal momento della
 raccolta, salvo che la loro ulteriore conservazione non si renda necessaria per
-l’accertamento di reati. 
+l’accertamento di reati.
 
 ## Come disabilitare i cookie (opt-out) sul proprio dispositivo
 
@@ -124,7 +123,7 @@ Se non si desidera ricevere o memorizzare i cookie, si possono modificare le imp
 di sicurezza del browser utilizzato, secondo le istruzioni rese disponibili dai
 relativi fornitori ai link di seguito indicati. Nel caso in cui si disabilitino tutti
 i cookie, il sito potrebbe non funzionare correttamente.
- 
+
 * [Chrome](https://support.google.com/chrome/answer/95647)
 * [Firefox](https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox-desktop)
 * [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
