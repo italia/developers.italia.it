@@ -109,3 +109,6 @@
 - name: "SmartPA - Document Classification"
   repos:
     - "https://github.com/EliaPiccoli/HLT-Project"
+- name: "PDFsam Basic"
+  repos:
+    - "https://github.com/torakiki/pdfsam"
