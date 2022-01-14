@@ -102,7 +102,7 @@
   language: [it]
   slug: mic-data-sparql
 - openapi: https://raw.githubusercontent.com/APT-Servizi/openapi-ert/main/v1/api-spec.yaml
-  title: OpenData Emilia Romagna Turismo 
+  title: OpenData Emilia Romagna Turismo
   abstract: >-
     Catalogo ufficiale degli open-data del turismo della regione Emilia-Romagna.
   contact:
@@ -111,4 +111,13 @@
   tags: [data, turismo]
   language: [it, en]
   slug: opendata-ert
-
+- openapi: https://idrogeo.isprambiente.it/api
+  title: Idrogeo API
+  abstract: >-
+    Consulta mappe, dati e indicatori sul dissesto idrogeologico in Italia.
+  contact:
+    name: ISPRA
+    logo: /assets/images/api/logo-ispra.jpg
+  tags: [data, ambiente]
+  language: [it, en]
+  slug: ispra-idrogeo
