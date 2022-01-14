@@ -45,10 +45,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-php-lib
       desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
-    - title: SDK per C#
+    - title: SDK per AspNetCore
       icon: github
       url: https://github.com/italia/spid-aspnetcore
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni C#
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET AspNetCore MVC 
     - title: SDK per .NET
       icon: github
       url: https://github.com/italia/spid-dotnet-sdk

@@ -208,3 +208,15 @@ michela:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/michela-gabrieli/
+peppelinux:
+  name: Giuseppe De Marco
+  pic: /assets/images/peppe.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    github:
+      name: github
+      link: https://github.com/peppelinux
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/giuseppe-de-marco-bb054245/

@@ -25,10 +25,10 @@ resources:
   - Documentazione:
     - title: Technical information about the card
       icon: link
-      url: http://www.cartaidentita.interno.gov.it/caratteristiche-del-documento/
+      url: https://www.cartaidentita.interno.gov.it/la-carta/caratteristiche-del-documento/
     - title: Microprocessor specs
       icon: file
-      url: http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf
+      url: https://www.cartaidentita.interno.gov.it/downloads/2021/03/cie_3.0_-_specifiche_chip.pdf
     - title: User manual for the Windows middleware
       icon: file
       url: https://docs.italia.it/italia/cie/cie-middleware-windows-docs/
