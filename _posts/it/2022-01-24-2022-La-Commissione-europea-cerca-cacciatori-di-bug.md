@@ -3,7 +3,7 @@ layout: post
 title: La Commissione europea cerca cacciatori di bug 
 subtitle: 200.000 euro messi a disposizione per rafforzare la sicurezza degli applicativi open source  
 date: 2022-01-24 09:00:00 +0200
-tags: developers bug EU opensource
+tags: developers opensource
 categories: news
 author: Francesco Pognante
 image: /assets/images/posts/2021-12-23/buone-feste-it.png
