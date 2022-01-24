@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-01-24T16:43:39+00:00</updated>
+  <updated>2022-01-24T17:18:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -22,7 +22,7 @@
     <summary>200.000 euro messi a disposizione per rafforzare la sicurezza degli applicativi open source </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2022/01/24/2022-La-Commissione-europea-cerca-cacciatori-di-bug">&lt;p&gt;Il 13 gennaio la piattaforma di bug bounty &lt;a href=&quot;https://www.intigriti.com/&quot;&gt;Intigriti&lt;/a&gt; ha lanciato una nuova caccia ai bug finanziata dalla Commissione europea. La Commissione, per mezzo del suo Open Source Programme Office (EC OSPO) ha messo a disposizione 200.000 euro per &lt;strong&gt;rafforzare la sicurezza dei software open source più usati nell’ambito dei servizi pubblici&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;I software in oggetto sono &lt;a href=&quot;https://developers.italia.it/it/software/tdf-libreoffice-metadata-899fe7&quot;&gt;LibreOffice&lt;/a&gt;, &lt;a href=&quot;https://joinup.ec.europa.eu/collection/justice-law-and-security/solution/leos-open-source-software-editing-legislation&quot;&gt;LEOS&lt;/a&gt;, &lt;a href=&quot;https://joinmastodon.org/&quot;&gt;Mastodon&lt;/a&gt;, &lt;a href=&quot;https://www.odoo.com/it_IT&quot;&gt;Odoo&lt;/a&gt; and &lt;a href=&quot;https://cryptpad.fr/&quot;&gt;CryptPad&lt;/a&gt;, largamente usati nell’Unione Europea per fornire servizi pubblici ai cittadini. Per chi riesca a scovare bug in una (o più) di queste piattaforme, a disposizione un premio che può arrivare &lt;strong&gt;fino a 5.000 euro&lt;/strong&gt;. In aggiunta, un &lt;strong&gt;bonus del 20%&lt;/strong&gt; per chi dopo aver trovato il bug, sistema anche il codice.&lt;/p&gt;
+&lt;p&gt;I software in oggetto sono &lt;a href=&quot;https://developers.italia.it/it/software/tdf-libreoffice-metadata-899fe7&quot;&gt;LibreOffice&lt;/a&gt;, &lt;a href=&quot;https://joinup.ec.europa.eu/collection/justice-law-and-security/solution/leos-open-source-software-editing-legislation&quot;&gt;LEOS&lt;/a&gt;, &lt;a href=&quot;https://joinmastodon.org/&quot;&gt;Mastodon&lt;/a&gt;, &lt;a href=&quot;https://www.odoo.com/it_IT&quot;&gt;Odoo&lt;/a&gt; e &lt;a href=&quot;https://cryptpad.fr/&quot;&gt;CryptPad&lt;/a&gt;, largamente usati nell’Unione Europea per fornire servizi pubblici ai cittadini. Per chi riesca a scovare bug in una (o più) di queste piattaforme, a disposizione un premio che può arrivare &lt;strong&gt;fino a 5.000 euro&lt;/strong&gt;. In aggiunta, un &lt;strong&gt;bonus del 20%&lt;/strong&gt; per chi dopo aver trovato il bug, sistema anche il codice.&lt;/p&gt;
 
 &lt;p&gt;Tra le potenziali vulnerabilità, i cacciatori di bug potranno concentrarsi su criticità che riguardano fughe di dati personali, horizontal/vertical privilege escalation e SQL injection. I premi più alti spetteranno a coloro che troveranno le vulnerabilità più importanti.&lt;/p&gt;
 
