@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Community Call: L’importanza di un design system per i servizi pubblici digitali"
+title: "Community call: L’importanza di un design system per i servizi pubblici digitali"
 subtitle: Quali le sfide da affrontare? Ne parliamo il 9 febbraio!
 date: 2022-01-25 12:00:00 +0200
 tags: developers designers designsystem
