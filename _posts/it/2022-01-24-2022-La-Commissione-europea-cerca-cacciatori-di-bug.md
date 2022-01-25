@@ -6,7 +6,7 @@ date: 2022-01-24 09:00:00 +0200
 tags: developers opensource
 categories: news
 author: Francesco Pognante
-image: /assets/images/posts/2021-12-23/buone-feste-it.png
+image: /assets/icons/logo-it.png
 locale: it
 ---
 Il 13 gennaio la piattaforma di bug bounty [Intigriti](https://www.intigriti.com/) ha lanciato una nuova caccia ai bug finanziata dalla Commissione europea. La Commissione, per mezzo del suo Open Source Programme Office (EC OSPO) ha messo a disposizione 200.000 euro per **rafforzare la sicurezza dei software open source più usati nell’ambito dei servizi pubblici**.
