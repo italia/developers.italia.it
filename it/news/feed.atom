@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-01-26T06:04:54+00:00</updated>
+  <updated>2022-01-26T10:37:00+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,50 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/01/25/Community-Call-importanza-design-system-servizi-pubblici%20digitali</id>
+    <title>Community call: L’importanza di un design system per i servizi pubblici digitali</title>
+    <updated>2022-01-25T10:00:00+00:00</updated>
+
+    <summary>Quali le sfide da affrontare? Ne parliamo il 9 febbraio! </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/01/25/Community-Call-importanza-design-system-servizi-pubblici-digitali">&lt;p&gt;Vi siete mai chiesti perché alcuni siti, per esempio i grandi e-commerce o il vostro sito preferito di streaming, sono incredibilmente facili da navigare, e ci fanno sentire a casa fin dal primo utilizzo?
+Ciò avviene perché tutte le grandi aziende digitali definiscono librerie,  componenti in uno stile unitario e regole condivise - il &lt;em&gt;design system&lt;/em&gt; -  in modo che questi semplici “mattoncini” possano essere ripetuti e assemblati, creando per gli utenti un’esperienza coerente e soddisfacente.&lt;/p&gt;
+
+&lt;p&gt;Non sarebbe bellissimo se ciò accadesse anche per tutti i siti e i servizi digitali della Pubblica Amministrazione?&lt;/p&gt;
+
+&lt;p&gt;Proprio per rispondere a questo quesito, a partire dallo scorso dicembre &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt; in collaborazione con Developers Italia ha avviato una revisione completa del design system del Paese, uno strumento utile a  creare siti e servizi coerenti, familiari e fruibili da tutti i cittadini. A breve sarà resa pubblica una roadmap di aggiornamento delle librerie dei componenti e dei &lt;a href=&quot;https://designers.italia.it/modelli/&quot;&gt;due modelli applicati&lt;/a&gt;, &lt;a href=&quot;https://designers.italia.it/modello/comuni/&quot;&gt;Comuni&lt;/a&gt; e &lt;a href=&quot;https://designers.italia.it/modello/scuole/&quot;&gt;scuole&lt;/a&gt;. Questa revisione affronta una serie di sfide peculiari, data la sua applicazione in ambito pubblico:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;il design system è messo a disposizione di una community che non hanno alcun vincolo stringente al suo impiego. Il suo utilizzo dunque è subordinato alla sua capacità di essere percepito come utile, pratico e conveniente da tutta la catena di portatori di interesse coinvolti nel processo di realizzazione di un servizio digitale pubblico (decisori, responsabili di processo, progettisti e sviluppatori che operano nella PA, presso i fornitori e nelle in house). Il prodotto design system deve far sì, dunque, che &lt;strong&gt;ciascuno di questi attori tragga valore&lt;/strong&gt; nell’usare questa soluzione piuttosto che usarne una diversa, o inventarne una nuova;&lt;/li&gt;
+  &lt;li&gt;il design system non è un oggetto statico. Dalle singole applicazioni specifiche possono emergere nuove soluzioni utili. Inoltre, molte librerie e progetti correlati non sono creati da uno sforzo centrale, ma da una community aperta che contribuisce al suo sviluppo. La complessità delle cerchie di questa community &lt;strong&gt;richiede un sistema chiaro di coordinamento&lt;/strong&gt; per la governance e l’aggiornamento del design system, in modo che queste soluzioni utili possano essere rimesse a sistema, al centro in un dialogo continuo;&lt;/li&gt;
+  &lt;li&gt;un design system pubblico non viene applicato da enti tutti uguali tra loro, ma da una serie di enti con le loro specificità, dimensione, ruolo e obiettivi. Diversamente dal privato, la coerenza delle interfacce &lt;strong&gt;deve lasciare un ampio spazio alla personalizzazione, rimanendo nel perimetro dell’usabilità, dell’accessibilità e del rispetto delle norme&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;appuntamento-al-9-febbraio&quot;&gt;Appuntamento al 9 febbraio&lt;/h2&gt;
+
+&lt;p&gt;Il prossimo appuntamento per la community si terrà il &lt;strong&gt;9 febbraio  alle ore 15.30&lt;/strong&gt; e sarà dedicato a queste sfide grazie al contributo di:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Daniele Tabellini&lt;/strong&gt;, UI/UX designer, Dipartimento per la Trasformazione Digitale, che coordinerà nei prossimi mesi il lavoro di aggiornamento del design system del Paese,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Marco Liberati&lt;/strong&gt;, il main contributor della libreria Design React Kit,&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Giacomo Grassi&lt;/strong&gt;, l’head of customer experience di INPS, che ha da poco affrontato la sua sfida nel lancio di Sirio, il design system dell’ente.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mobilizon.it/events/f4ac7468-41fd-473a-99a2-5219f637c62f&quot;&gt;Registrati all’evento&lt;/a&gt; per partecipare. Ti aspettiamo il 9 febbraio.&lt;/p&gt;</content>
+    <published>2022-01-25T10:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/01/24/2022-La-Commissione-europea-cerca-cacciatori-di-bug</id>
     <title>La Commissione europea cerca cacciatori di bug</title>
