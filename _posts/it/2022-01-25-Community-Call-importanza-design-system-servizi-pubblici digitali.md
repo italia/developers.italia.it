@@ -5,7 +5,7 @@ subtitle: Quali le sfide da affrontare? Ne parliamo il 9 febbraio!
 date: 2022-01-25 12:00:00 +0200
 tags: developers designers designsystem
 categories: news
-author: Michela Gabrieli
+author: Marco Maria Pedrazzo
 image: /assets/icons/logo-it.png
 locale: it
 ---
@@ -21,7 +21,7 @@ Proprio per rispondere a questo quesito, a partire dallo scorso dicembre [Design
 - il design system non è un oggetto statico. Dalle singole applicazioni specifiche possono emergere nuove soluzioni utili. Inoltre, molte librerie e progetti correlati non sono creati da uno sforzo centrale, ma da una community aperta che contribuisce al suo sviluppo. La complessità delle cerchie di questa community **richiede un sistema chiaro di coordinamento** per la governance e l’aggiornamento del design system, in modo che queste soluzioni utili possano essere rimesse a sistema, al centro in un dialogo continuo;
 - un design system pubblico non viene applicato da enti tutti uguali tra loro, ma da una serie di enti con le loro specificità, dimensione, ruolo e obiettivi. Diversamente dal privato, la coerenza delle interfacce **deve lasciare un ampio spazio alla personalizzazione, rimanendo nel perimetro dell’usabilità, dell’accessibilità e del rispetto delle norme**.
 
-## Appuntamento al 9 febbraio
+### Appuntamento al 9 febbraio
 
 Il prossimo appuntamento per la community si terrà il **9 febbraio  alle ore 15.30** e sarà dedicato a queste sfide grazie al contributo di: 
 - **Daniele Tabellini**, UI/UX designer, Dipartimento per la Trasformazione Digitale, che coordinerà nei prossimi mesi il lavoro di aggiornamento del design system del Paese,
