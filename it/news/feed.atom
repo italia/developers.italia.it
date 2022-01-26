@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-01-26T10:37:00+00:00</updated>
+  <updated>2022-01-26T16:55:45+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -33,7 +33,7 @@ Ciò avviene perché tutte le grandi aziende digitali definiscono librerie,  com
   &lt;li&gt;un design system pubblico non viene applicato da enti tutti uguali tra loro, ma da una serie di enti con le loro specificità, dimensione, ruolo e obiettivi. Diversamente dal privato, la coerenza delle interfacce &lt;strong&gt;deve lasciare un ampio spazio alla personalizzazione, rimanendo nel perimetro dell’usabilità, dell’accessibilità e del rispetto delle norme&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;appuntamento-al-9-febbraio&quot;&gt;Appuntamento al 9 febbraio&lt;/h2&gt;
+&lt;h3 id=&quot;appuntamento-al-9-febbraio&quot;&gt;Appuntamento al 9 febbraio&lt;/h3&gt;
 
 &lt;p&gt;Il prossimo appuntamento per la community si terrà il &lt;strong&gt;9 febbraio  alle ore 15.30&lt;/strong&gt; e sarà dedicato a queste sfide grazie al contributo di:&lt;/p&gt;
 &lt;ul&gt;
@@ -54,7 +54,7 @@ Ciò avviene perché tutte le grandi aziende digitali definiscono librerie,  com
     
 
     <author>
-      <name>Michela Gabrieli</name>
+      <name>Marco Maria Pedrazzo</name>
     </author>
   </entry>
   
