@@ -52,7 +52,7 @@
 
 - name: "Opencontent"
   repos:
-    - "https://gitlab.com/opencontent/stanzadelcittadino"
+    - "https://gitlab.com/opencontent/stanza-del-cittadino/core"
     - "https://gitlab.com/opencontent/opensegnalazioni"
     - "https://gitlab.com/opencontent/openagenda-translate"
     - "https://gitlab.com/opencontent/stanza-del-cittadino/pitre-soap-proxy"
