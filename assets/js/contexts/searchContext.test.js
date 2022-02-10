@@ -16,15 +16,8 @@ import {
 } from './searchContext.js';
 
 const DummyUseContext = () => {
-  const {
-    page,
-    type,
-    searchValue,
-    filterCategories,
-    filterDevelopmentStatuses,
-    filterIntendedAudiences,
-    sortBy,
-  } = useContext(searchContextState);
+  const { page, type, searchValue, filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, sortBy } =
+    useContext(searchContextState);
 
   return (
     <div>
