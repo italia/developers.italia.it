@@ -39,8 +39,7 @@ describe('searchEngine', () => {
       category: 'api',
       description: 'Soluzione di viaggio intermodale utilizzando il trasporto pubblico in Lombardia.',
       icon: 'it-settings',
-      logo:
-        'https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/muoversi2015.e015.servizirl.it.png',
+      logo: 'https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/muoversi2015.e015.servizirl.it.png',
       fallback: '/assets/images/cover_api.png',
       name: 'Muoversi in Lombardia',
       url: '/it/api/muoversi-in-lombardia.html',
