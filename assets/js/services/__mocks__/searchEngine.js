@@ -9,8 +9,7 @@ export const search = jest.fn(async (type) => {
           category: 'software_open',
           description: 'Suite open source completa per la moderna Business Analytics',
           icon: 'it-open-source',
-          logo:
-            'https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png',
+          logo: 'https://raw.githubusercontent.com/KnowageLabs/Knowage-Server/master/screenshots/knowage-covid-italy-regional.png',
           fallback: '/assets/images/cover_software_opensource.png',
           name: 'Knowage Server',
           url: '/it/software/knowagelabs-knowage-server-94e418',
