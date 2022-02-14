@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-02-14T06:05:15+00:00</updated>
+  <updated>2022-02-14T07:37:07+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/02/11/community-lab-strumenti</id>
+    <title>Community lab - gli strumenti per i servizi pubblici digitali</title>
+    <updated>2022-02-11T10:00:00+00:00</updated>
+
+    <summary>Dal 23 febbraio scopriamo gli strumenti utili per migliorare i servizi pubblici digitali. Si comincia da Git! </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/02/11/community-lab-strumenti">&lt;p&gt;Partono i &lt;strong&gt;community lab&lt;/strong&gt;, la nuova iniziativa per la community dedicata alla condivisione di conoscenze e soluzioni per migliorare i servizi pubblici digitali. I community lab sono dei nuovi laboratori online durante i quali impareremo a usare gli &lt;strong&gt;strumenti utili&lt;/strong&gt; a collaborare per &lt;strong&gt;realizzare servizi pubblici digitali efficienti&lt;/strong&gt;, usabili e accessibili. Un’idea che nasce dal suggerimento delle persone che hanno partecipato alle community call e ai &lt;a href=&quot;http://eventipa.formez.it/node/328513&quot;&gt;corsi formativi&lt;/a&gt; condotti lo scorso anno in collaborazione con Developers Italia, &lt;a href=&quot;https://www.agid.gov.it/&quot;&gt;Agid&lt;/a&gt; e &lt;a href=&quot;http://www.formez.it/&quot;&gt;Formez PA&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il primo dei 5 appuntamenti è previsto per il &lt;strong&gt;23 febbraio alle 15:30&lt;/strong&gt;. Parleremo dell’uso di &lt;strong&gt;Git&lt;/strong&gt;, lo strumento più usato di versionamento del software, e lo faremo raccontando una &lt;strong&gt;storia di riuso&lt;/strong&gt;, partendo dal progetto open source &lt;strong&gt;&lt;a href=&quot;https://github.com/consiglionazionaledellericerche/cool-jconon-template&quot;&gt;jconon-template&lt;/a&gt;&lt;/strong&gt;, il template HTML della piattaforma “&lt;strong&gt;&lt;a href=&quot;https://developers.italia.it/it/software/cnr-consiglionazionaledellericerche-cool-jconon.html&quot;&gt;Selezioni Online&lt;/a&gt;&lt;/strong&gt;” rilasciato nel catalogo di Developers Italia dal Consiglio nazionale delle ricerche.&lt;/p&gt;
+
+&lt;p&gt;A raccontare questa storia di riuso, dopo un’introduzione al tema di &lt;strong&gt;Marco Spasiano&lt;/strong&gt; (Consiglio nazionale delle ricerche), sarà &lt;strong&gt;Glauco Rampogna&lt;/strong&gt; (Comune di Preganziol). Glauco ci parlerà di quali sono le azioni richieste al fine di personalizzare un software e spiegherà come utilizzare Git per contribuire attivamente ad un progetto open source. L’incontro sarà quindi l’occasione per &lt;strong&gt;condividere i comandi fondamentali di Git&lt;/strong&gt;, scoprirne i benefici e conoscere quali innovazioni lo strumento introduce nel lavoro quotidiano di chi sviluppa.&lt;/p&gt;
+
+&lt;p&gt;L’appuntamento è per tutti coloro che non hanno mai usato Git, oppure che lo usano ormai da tempo ma che hanno voglia di confrontarsi, offrire consigli e condividere esperienze vissute, per una gestione agevole del ciclo di vita di un software, grazie a Git.&lt;/p&gt;
+
+&lt;p&gt;Per partecipare &lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/37087072-8f93-4b55-9d6f-960c584509a4&quot;&gt;registrati&lt;/a&gt; al primo community lab!&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2022-02-11T10:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="git" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/02/09/Riparte-survey-dedicata-alla-community</id>
     <title>Riparte la survey dedicata alla community</title>
