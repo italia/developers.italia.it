@@ -3,7 +3,7 @@ layout: post
 title: "Developers Italia, ridisegnare il sistema con il sistema"
 subtitle: A FOSDEM 2022, Riccardo Iaconelli ha raccontato il viaggio di Developers Italia dalla sua nascita fino a oggi 
 date: 2022-02-17 12:00:00 +0200
-tags: developers designers designsyste fosdem
+tags: developers designers designsystem fosdem
 categories: news
 author: Francesco Pognante
 image: /assets/icons/logo-it.png
