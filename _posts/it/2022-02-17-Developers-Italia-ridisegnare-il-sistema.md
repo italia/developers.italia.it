@@ -29,4 +29,4 @@ Ad attenderci molte altre sfide. Grazie al PNRR, la domanda di servizi online ef
 
 **Segui su Twitter [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA)**
 
-**Contatta il team di Developers Italia su [Slack](developersitalia.slack.com).**
+**Contatta il team di Developers Italia su [Slack](https://slack.developers.italia.it).**
