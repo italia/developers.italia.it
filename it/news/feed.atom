@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-02-18T06:05:38+00:00</updated>
+  <updated>2022-02-18T10:41:35+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,50 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/02/17/Developers-Italia-ridisegnare-il-sistema</id>
+    <title>Developers Italia, ridisegnare il sistema con il sistema</title>
+    <updated>2022-02-17T10:00:00+00:00</updated>
+
+    <summary>A FOSDEM 2022, Riccardo Iaconelli ha raccontato il viaggio di Developers Italia dalla sua nascita fino a oggi </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/02/17/Developers-Italia-ridisegnare-il-sistema">&lt;p&gt;Parafrasando da &lt;em&gt;Il Dottor Stranamore&lt;/em&gt;: come abbiamo imparato a smettere di preoccuparci e ad amare la Pubblica Amministrazione? Semplice, cercando di rendere l’Italia il paese più “hacker-friendly” del mondo.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;https://fosdem.org/2022/&quot;&gt;FOSDEM 2022&lt;/a&gt;, importante evento europeo sul software libero, Riccardo Iaconelli - responsabile del progetto - ha tenuto un &lt;strong&gt;video-discorso facendo il punto sui primi quattro anni di vita di Developers Italia e sulle lezioni che abbiamo imparato.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tutto è cominciato con il &lt;a href=&quot;https://teamdigitale.governo.it/&quot;&gt;Team per la trasformazione digitale&lt;/a&gt;, una vera e propria startup governativa fondata con l’obiettivo di &lt;a href=&quot;https://medium.com/team-per-la-trasformazione-digitale/nuovo-sistema-operativo-paese-competenze-tecnologiche-programmi-be0d71b3f84b&quot;&gt;“creare il sistema operativo del Paese”&lt;/a&gt;. Sotto la guida dell’allora Commissario Straordinario per l’Agenda Digitale Diego Piacentini, il Team ha dato vita a Developers Italia e &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt;, aventi il compito di diffondere una cultura della progettazione  e della programmazione dei servizi pubblici digitali del Paese.&lt;/p&gt;
+
+&lt;p&gt;Come spiega Riccardo, nel corso di quattro intensi anni Developers Italia e Designers Italia sono diventate &lt;strong&gt;community di riferimento per cittadini e professionisti che hanno scelto di contribuire attivamente a migliorare i servizi pubblici&lt;/strong&gt; mettendo a disposizione le proprie competenze: progettisti, &lt;strong&gt;hacker etici&lt;/strong&gt;, esperti di programmazione e sviluppo di servizi, ma anche esperti e funzionari della Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;h3 id=&quot;ridisegnare-il-sistema-con-il-sistema&quot;&gt;Ridisegnare il sistema con il sistema&lt;/h3&gt;
+
+&lt;p&gt;Cosa abbiamo imparato in questi quattro anni? Sembra banale ma non lo è: &lt;strong&gt;non solo sviluppo&lt;/strong&gt;! Per creare &lt;strong&gt;servizi pubblici online efficienti&lt;/strong&gt;, come è emerso nel corso di questi quattro anni, il lavoro di squadra è fondamentale, non si può ridisegnare un sistema… senza il sistema stesso. Occorre &lt;strong&gt;coinvolgere tutti gli attori in campo&lt;/strong&gt;. Nella pratica, questo vuol dire integrare nel processo non solo sviluppatori ma anche con designers, esperti di tecnologie come il Cloud, esperti di approvvigionamento e, non meno importante, decisori di politiche pubbliche.&lt;/p&gt;
+
+&lt;p&gt;Per fare questo abbiamo creato occasioni di dialogo e confronto, organizzando hackathon, &lt;a href=&quot;http://eventipa.formez.it/node/328513&quot;&gt;eventi formativi&lt;/a&gt;, &lt;a href=&quot;https://developers.italia.it/it/news/2021/06/10/la-community-si-ritrova&quot;&gt;community call&lt;/a&gt;, training, iniziative che continuano tutt’ora e si espanderanno presto con il nuovo format dei &lt;a href=&quot;https://developers.italia.it/it/news/2022/02/11/community-lab-strumenti&quot;&gt;community lab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ad attenderci molte altre sfide. Grazie al PNRR, la domanda di servizi online efficaci e accessibili continuerà ad aumentare e la community assumerà un ruolo sempre più centrale. Open source, open data, trasparenza e sicurezza sono le parole d’ordine, c’è tanto lavoro da fare e il contributo di tutti sarà fondamentale. In questo percorso, Developers Italia intende sempre più semplificare la vita di chi sviluppa e mantiene software e professionisti del settore per aiutarli a cogliere al meglio le opportunità che si presenteranno.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Guarda il &lt;a href=&quot;https://fosdem.org/2022/schedule/event/developers_italia/&quot;&gt;video-discorso&lt;/a&gt; (in inglese) di Riccardo Iaconelli presentato a FOSDEM 22&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Segui su Twitter &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Contatta il team di Developers Italia su &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2022-02-17T10:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+    <category term="fosdem" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/02/11/community-lab-strumenti</id>
     <title>Community lab - gli strumenti per i servizi pubblici digitali</title>
