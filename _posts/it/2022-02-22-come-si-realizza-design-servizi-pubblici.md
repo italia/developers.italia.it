@@ -25,7 +25,7 @@ Il tema del *design system* sarà protagonista nei mesi di marzo e aprile di due
 
 **[Guarda il video completo della Community call](https://www.youtube.com/watch?v=Q6bCRei3UHU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL)** sul canale YouTube del Dipartimento per la trasformazione digitale e scarica la presentazione.
 
-Per saperne di più **resta in contatto su [Slack](https://app.slack.com/client/T6C27AXE0)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) e [Designers Italia](https://twitter.com/developersITA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor).
+Per saperne di più **resta in contatto su [Slack](https://app.slack.com/client/T6C27AXE0)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/developersITA).
 
 
 
