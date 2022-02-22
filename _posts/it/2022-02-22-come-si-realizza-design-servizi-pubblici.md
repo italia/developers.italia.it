@@ -26,6 +26,4 @@ Il tema del *design system* sarà protagonista nei mesi di marzo e aprile di due
 
 Per saperne di più **resta in contatto su [Slack](https://app.slack.com/client/T6C27AXE0)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/developersITA).
 
-
-
 *Il team di Designers e Developer Italia*
