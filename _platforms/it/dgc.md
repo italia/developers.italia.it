@@ -5,7 +5,7 @@ logo: https://www.dgc.gov.it/web/img/logo-eu.png
 external_website: https://www.dgc.gov.it
 payoff: EU digital COVID certificate
 description: >
-  Una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità
+  Una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità.
 lang: it
 ref:
   en: /en/dgc
@@ -31,7 +31,7 @@ resources:
     - title: SDK per Kotlin (Android)
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-android
-      desc: Digital Covid Certificate SDK Kotlin per Android (linguaggio Kotlin)
+      desc: Digital Covid Certificate SDK Kotlin per Android (linguaggio Kotlin) sul quale si basa la app VerificaC19
     - title: SDK per iOS
       icon: github
       url: https://github.com/hrzucchetti/zconnect-verificaC19-sdk-ios
@@ -98,7 +98,7 @@ resources:
 
 ## Intro
 
-La Certificazione verde Covid-19 è una certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DCC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'APP nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla APP a tutela della privacy.
+La Certificazione verde Covid-19 è una certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DCC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'app nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla app a tutela della privacy.
 
 **La Certificazione attesta una delle seguenti condizioni:**
 
@@ -106,7 +106,7 @@ La Certificazione verde Covid-19 è una certificazione in formato digitale e sta
 - essere negativi al test antigenico rapido nelle ultime 48 ore o al test molecolare nelle ultime 72 ore
 - essere guariti dal COVID-19 negli ultimi sei mesi
 
-Il Regolamento europeo sulla  Certificazione è entrato in vigore il 1 luglio 2021 in tutti i Paesi dell’Unione e avrà durata di un anno.
+Il Regolamento europeo sulla  Certificazione è entrato in vigore il 1 luglio 2021 in tutti i Paesi dell’Unione Europea e avrà durata di un anno.
 
 L’Italia ha anticipato l’emissione della Certificazione verde COVID-19 al 17 giugno 2021 e ne ha esteso progressivamente l’utilizzo sul territorio nazionale.
 
@@ -120,9 +120,17 @@ Maggiori informazioni sono reperibili consultando il sito [https://www.dgc.gov.i
 
 ### Codice della piattaforma
 
-È possibile reperire il codice delle app di VerificaC19 per Android e iOS, il codice dei vari microservizi backend, i dati sulle certificazioni emesse e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). È possibile contribuire al codice aprendo una issue o una Pull Request per risolvere direttamente un problema.
+È possibile reperire il codice delle app di VerificaC19 per Android e iOS, del SDK ufficiale, dei vari microservizi backend, i dati sulle certificazioni emesse e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). È possibile contribuire al codice aprendo una issue o una Pull Request per risolvere direttamente un problema.
 
-### Proporre un nuovo SDK
+### Sviluppare e proporre un nuovo SDK
+
+Per sviluppare un nuovo SDK basato sul [SDK ufficiale VerificaC19](https://github.com/ministero-salute/it-dgc-verificac19-sdk-android) occorre:
+
+1. Verificare le ultime modifiche sviluppate per il SDK ufficiale VerificaC19 consultando il [CHANGELOG](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/blob/main/CHANGELOG.md).
+2. Consultare la [checklist ufficiale]() per implementare le funzionalità richieste nel SDK.
+3. Fare riferimento al [repository della documentazione](https://github.com/ministero-salute/it-dgc-documentation) per avere informazioni dettagliate sull'implementazione del flusso di verifica e della Digital Covid Certificate Revocation List (DRL).
+
+È possibile prendere spunto da uno dei SDK presenti nella [lista ufficiale di SDK](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) già aderenti alle specifiche tecniche e ai requisiti implementati dal Ministero della Salute all’interno dell’applicazione governativa VerificaC19.
 
 Per proporre l’inserimento di una nuova libreria/SDK nella lista è necessario seguire i seguenti passi:
 
@@ -140,4 +148,4 @@ Eventuali aggiornamenti futuri delle librerie saranno oggetto di successive valu
 ## Canali
 
 <a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#dcc-sdk)</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori SDK (#dcc-sdk)</a>
