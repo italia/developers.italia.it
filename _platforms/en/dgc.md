@@ -6,9 +6,9 @@ external_website: https://www.dgc.gov.it
 payoff: EU digital COVID certificate
 description: >
   Una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità
-lang: it
+lang: en
 ref:
-  en: /en/dgc
+  en: /it/dgc
 order: 2
 highlight: true
 comingsoon: false
