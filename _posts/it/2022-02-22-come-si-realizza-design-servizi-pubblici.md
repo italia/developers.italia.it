@@ -24,6 +24,6 @@ Il tema del *design system* sarà protagonista nei mesi di marzo e aprile di due
 
 **[Guarda il video completo della Community call](https://www.youtube.com/watch?v=Q6bCRei3UHU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL)** sul canale YouTube del Dipartimento per la trasformazione digitale e [scarica la presentazione](/assets/images/posts/2022-02-22/Importanza-di-un design-system-per-i-servizi-digitali.pdf).
 
-Per saperne di più **resta in contatto su [Slack](https://app.slack.com/client/T6C27AXE0)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
+Per saperne di più **resta in contatto su [Slack](https://slack.developers.italia.it)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
 
 *Il team di Designers e Developer Italia*
