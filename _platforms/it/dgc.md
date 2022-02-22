@@ -18,27 +18,15 @@ owners:
     - name: Ministero della Salute
       url: https://www.salute.gov.it/
 resources:
-  - Documentazione:
-    - title: Documentazione onboarding SDK
-      url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Documentazione SDK dettagliata
-      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Documentazione Digital Green Certificate Revocation List (DRL)
-      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Documentazione Tipologie di Verifica DGC (ScanMode)
-      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/SCANMODE.md
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Digital Green Certificate descrizione ad alto livello
-      url: https://github.com/ministero-salute/it-dgc-documentation
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+  - App VerificaC19:
+    - title: App VerificaC19 per Android
+      icon: github
+      url: https://github.com/ministero-salute/it-dgc-verificaC19-android
+      desc: Codice sorgente della app VerificaC19 per sistemi operativi Android
+    - title: App VerificaC19 per iOS
+      icon: github
+      url: https://github.com/ministero-salute/it-dgc-verificaC19-ios
+      desc: Codice sorgente della app VerificaC19 per sistemi operativi iOS
   - SDK:
     - title: SDK per Kotlin (Android)
       icon: github
@@ -68,6 +56,27 @@ resources:
       icon: github
       url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
       desc: Java Spring Digital Green Certificate SDK
+  - Documentazione:
+    - title: Documentazione onboarding SDK
+      url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione SDK dettagliata
+      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione Digital Green Certificate Revocation List (DRL)
+      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione Tipologie di Verifica DGC (ScanMode)
+      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/SCANMODE.md
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Digital Green Certificate descrizione ad alto livello
+      url: https://github.com/ministero-salute/it-dgc-documentation
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
   - Risorse esterne:
     - title: README SDK Android
       icon: github
@@ -116,7 +125,7 @@ Per proporre l’inserimento di una nuova libreria/SDK nella lista è necessario
 1. Andare su https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
 2. Scaricare dal presente repository il documento denominato [autoDichiarazione.odt](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/raw/main/autoDichiarazione.odt) e compilarlo.
 3. Inviare a **dgsi@postacert.sanita.it** l’autodichiarazione di cui al punto 1 opportunamente compilata e firmata digitalmente. Tale documento *non* dovrà essere incluso nel repository.
-4. Pubblicare il codice sorgente della propria soluzione all’interno di un repository di titolarità del richiedente secondo le modalità indicate nel [paragrafo dedicato](#requisiti-minimi).
+4. Pubblicare il codice sorgente della propria soluzione all’interno di un repository di titolarità del richiedente secondo le modalità indicate nel [paragrafo dedicato](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#requisiti-minimi).
 5. Aprire una [Pull Request](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/pulls) all'interno del repository, fare i check delle feature richieste nel corpo della Pull Request e inserire una nuova riga nella [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) inserendo le informazioni richieste.
 
 A questo punto inizierà una fase di validazione di quanto sottoposto per verificare l’effettiva rispondenza delle specifiche tecniche e dei requisiti minimi.
