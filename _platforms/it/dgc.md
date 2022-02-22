@@ -22,70 +22,66 @@ resources:
     - title: App VerificaC19 per Android
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificaC19-android
-      desc: Codice sorgente della app VerificaC19 per sistemi operativi Android
+      desc: Codice sorgente della app VerificaC19 per sistema operativo Android
     - title: App VerificaC19 per iOS
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificaC19-ios
-      desc: Codice sorgente della app VerificaC19 per sistemi operativi iOS
+      desc: Codice sorgente della app VerificaC19 per sistema operativo iOS
   - SDK:
     - title: SDK per Kotlin (Android)
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-android
-      desc: Digital Green Certificate SDK Kotlin (Android)
+      desc: Digital Covid Certificate SDK Kotlin per Android (linguaggio Kotlin)
     - title: SDK per iOS
       icon: github
       url: https://github.com/hrzucchetti/zconnect-verificaC19-sdk-ios
-      desc: ZConnectVerificaC19SDK - IOS native (swift)
+      desc: ZConnectVerificaC19 SDK per iOS native (linguaggio Swift)
     - title: SDK per .NET / .NET Framework
       icon: github
       url: https://github.com/DevTrevi/DgcReader
-      desc: DgcReader - .NET / .NET Framework
+      desc: DgcReader SDK per .NET / .NET Framework
     - title: SDK per Node.js
       icon: github
       url: https://github.com/italia/verificac19-sdk
-      desc: VerificaC19 SDK for Node.js
+      desc: VerificaC19 SDK per Node.js (linguaggio Javascript)
     - title: SDK per PHP
       icon: github
       url: https://github.com/herald-si/verificac19-sdk-php
-      desc: Digital Green Certificate SDK PHP
+      desc: Digital Covid Certificate SDK per PHP
     - title: SDK per C++
       icon: github
       url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
-      desc: Solari Digital Green Certificate SDK C++
+      desc: Solari Digital Covid Certificate SDK per C++
     - title: SDK per Java Spring
       icon: github
       url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
-      desc: Java Spring Digital Green Certificate SDK
+      desc: Digital Covid Certificate SDK per Java Spring Digital
   - Documentazione:
-    - title: Documentazione onboarding SDK
-      url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
+    - title: Digital Covid Certificate descrizione ad alto livello
+      url: https://github.com/ministero-salute/it-dgc-documentation
       icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Documentazione SDK dettagliata
-      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Documentazione Digital Green Certificate Revocation List (DRL)
-      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md
-      icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+      desc: Documentazione di alto livello del funzionamento del sistema DCC.
     - title: Documentazione Tipologie di Verifica DGC (ScanMode)
       url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/SCANMODE.md
       icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
-    - title: Digital Green Certificate descrizione ad alto livello
-      url: https://github.com/ministero-salute/it-dgc-documentation
+      desc: Documentazione dettagliata delle varie tipologie di verifica del DCC.
+    - title: Documentazione Digital Covid Certificate Revocation List (DRL)
+      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md
       icon: file
-      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+      desc: Documentazione dettagliata del funzionamento della Digital Covid Certificate Revocation List (DRL).
+    - title: Documentazione onboarding SDK
+      url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
+      icon: file
+      desc: Documentazione e regole per fare onboarding di eventuali SDK.
+    - title: Documentazione SDK Android dettagliata
+      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
+      icon: file
+      desc: Documentazione dettagliata del SDK VerificaC19 per Android.
   - Risorse esterne:
     - title: README SDK Android
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-android/blob/develop/README.md
-      desc: Digital Green Certificate Kotlin (Android) SDK
-    - title: Documentazione SDK Android
-      icon: github
-      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
-      desc: Documentazione SDK Android
+      desc: Digital Covid Certificate Kotlin (Android) SDK
     - title: EU Digital COVID Certificate (repository europeo)
       icon: github
       url: https://github.com/eu-digital-green-certificates/dgc-overview
@@ -102,7 +98,7 @@ resources:
 
 ## Intro
 
-La Certificazione verde Covid-19 è una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DGC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'APP nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla APP a tutela della privacy.
+La Certificazione verde Covid-19 è una certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DCC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'APP nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla APP a tutela della privacy.
 
 **La Certificazione attesta una delle seguenti condizioni:**
 
