@@ -102,8 +102,7 @@ resources:
 
 ## Intro
 
-È una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità.
-È una certificazione digitale e stampabile (cartacea), che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DGC del Ministero della Salute.
+La Certificazione verde Covid-19 è una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DGC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'APP nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla APP a tutela della privacy.
 
 **La Certificazione attesta una delle seguenti condizioni:**
 
@@ -115,14 +114,23 @@ Il Regolamento europeo sulla  Certificazione è entrato in vigore il 1 luglio 20
 
 L’Italia ha anticipato l’emissione della Certificazione verde COVID-19 al 17 giugno 2021 e ne ha esteso progressivamente l’utilizzo sul territorio nazionale.
 
+Dal 15 febbraio il green pass rafforzato (vaccinazione o guarigione) è esteso ai lavoratori pubblici e privati dai 50 anni di età, per l’accesso ai luoghi di lavoro. Si ricorda che dall’8 gennaio 2022 è in vigore l’obbligo vaccinale per tutti coloro che hanno compiuto 50 anni e più.
+
+I dati delle certificazioni emesse in Italia sono disponibili in formato CSV e JSON su [GitHub](https://github.com/ministero-salute/it-dgc-opendata/).
+
+Maggiori informazioni sono reperibili consultando il sito [https://www.dgc.gov.it](https://www.dgc.gov.it/).
 
 ## Come contribuire
 
-### Inserimento di una libreria nella lista
+### Codice della piattaforma
+
+È possibile reperire il codice delle app di VerificaC19 per Android e iOS, il codice dei vari microservizi backend, i dati sulle certificazioni emesse e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). È possibile contribuire al codice aprendo una issue o una Pull Request per risolvere direttamente un problema.
+
+### Proporre un nuovo SDK
 
 Per proporre l’inserimento di una nuova libreria/SDK nella lista è necessario seguire i seguenti passi:
 
-1. Andare su https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
+1. Andare sul repository [it-dgc-verificac19-sdk-onboarding](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding).
 2. Scaricare dal presente repository il documento denominato [autoDichiarazione.odt](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/raw/main/autoDichiarazione.odt) e compilarlo.
 3. Inviare a **dgsi@postacert.sanita.it** l’autodichiarazione di cui al punto 1 opportunamente compilata e firmata digitalmente. Tale documento *non* dovrà essere incluso nel repository.
 4. Pubblicare il codice sorgente della propria soluzione all’interno di un repository di titolarità del richiedente secondo le modalità indicate nel [paragrafo dedicato](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#requisiti-minimi).
@@ -131,7 +139,7 @@ Per proporre l’inserimento di una nuova libreria/SDK nella lista è necessario
 A questo punto inizierà una fase di validazione di quanto sottoposto per verificare l’effettiva rispondenza delle specifiche tecniche e dei requisiti minimi.
 In caso di esito positivo, la Pull Request verrà consolidata entro pochi giorni e apparirà all’interno della [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie).
 In caso di esito negativo, saranno fornite via email le opportune motivazioni ed eventuali suggerimenti per rendere la libreria aderente ai requisiti minimi.
-Eventuali aggiornamenti futuri delle librerie saranno oggetto di successive valutazioni che potrebbero portare alla rimozione della stessa dalla [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) ove non fossero rispettati i requisiti minimi.
+Eventuali aggiornamenti futuri delle librerie saranno oggetto di successive valutazioni che potrebbero portare alla rimozione della stessa dalla [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) laddove non fossero rispettati i requisiti minimi.
 
 ## Canali
 
