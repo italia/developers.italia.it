@@ -23,15 +23,27 @@ resources:
       url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding
       icon: file
       desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione SDK dettagliata
+      url: https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione Digital Green Certificate Revocation List (DRL)
+      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Documentazione Tipologie di Verifica DGC (ScanMode)
+      url: https://github.com/ministero-salute/it-dgc-documentation/blob/master/SCANMODE.md
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
+    - title: Digital Green Certificate descrizione ad alto livello
+      url: https://github.com/ministero-salute/it-dgc-documentation
+      icon: file
+      desc: Il presente repository contienere la documentazione e le regole per fare onboarding di eventuali SDK.
   - SDK:
     - title: SDK per Kotlin (Android)
       icon: github
       url: https://github.com/ministero-salute/it-dgc-verificac19-sdk-android
       desc: Digital Green Certificate SDK Kotlin (Android)
-    - title: SDK per PHP
-      icon: github
-      url: https://github.com/herald-si/verificac19-sdk-php
-      desc: Digital Green Certificate SDK PHP
     - title: SDK per iOS
       icon: github
       url: https://github.com/hrzucchetti/zconnect-verificaC19-sdk-ios
@@ -44,6 +56,18 @@ resources:
       icon: github
       url: https://github.com/italia/verificac19-sdk
       desc: VerificaC19 SDK for Node.js
+    - title: SDK per PHP
+      icon: github
+      url: https://github.com/herald-si/verificac19-sdk-php
+      desc: Digital Green Certificate SDK PHP
+    - title: SDK per C++
+      icon: github
+      url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
+      desc: Solari Digital Green Certificate SDK C++
+    - title: SDK per Java Spring
+      icon: github
+      url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
+      desc: Java Spring Digital Green Certificate SDK
   - Risorse esterne:
     - title: README SDK Android
       icon: github
