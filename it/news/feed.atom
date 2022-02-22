@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-02-22T06:05:04+00:00</updated>
+  <updated>2022-02-22T15:05:35+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,44 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/02/22/come-si-realizza-design-servizi-pubblici</id>
+    <title>Come si realizza un design system per i servizi pubblici, parola agli esperti</title>
+    <updated>2022-02-22T10:00:00+00:00</updated>
+
+    <summary>Pubblicato il video della Community call del 9 febbraio sull’importanza del design system </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/02/22/come-si-realizza-design-servizi-pubblici">&lt;p&gt;Grande successo per la Community call dello &lt;strong&gt;scorso 9 febbraio&lt;/strong&gt;, dedicata al &lt;em&gt;design system&lt;/em&gt; per i servizi pubblici digitali, con oltre &lt;strong&gt;150 partecipanti&lt;/strong&gt;. Abbiamo parlato dell’importanza del &lt;em&gt;design system&lt;/em&gt; per creare siti e servizi coerenti, familiari e fruibili da tutti i cittadini. Per farlo ci siamo affidati ad alcuni dei protagonisti di questo processo: Daniele Tabellini, Marco Liberati e Giacomo Grassi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Daniele Tabellini&lt;/strong&gt;, esperto di UI e UX del Dipartimento per la trasformazione digitale, ha spiegato l’importanza del &lt;em&gt;design system&lt;/em&gt; per il settore pubblico e le sfide che esso comporta. Ha poi introdotto le tre principali librerie che compongono il design system del paese: il &lt;a href=&quot;https://designers.italia.it/kit/&quot;&gt;kit UI&lt;/a&gt;, &lt;a href=&quot;https://italia.github.io/bootstrap-italia/&quot;&gt;Bootstrap Italia&lt;/a&gt; e il &lt;a href=&quot;https://github.com/italia/design-react-kit&quot;&gt;Design React Kit&lt;/a&gt;. L’obiettivo ambizioso, ha spiegato Daniele, è aggiornare la strategia e la gestione del sistema di design del Paese, coinvolgendo sia le PA che i fornitori. Daniele ha infine illustrato quelli che sono i prossimi passi necessari per portare avanti questo obiettivo e il &lt;a href=&quot;https://designers.italia.it/piano-attivita/&quot;&gt;piano attività&lt;/a&gt; di rilascio degli aggiornamenti.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Marco Liberati&lt;/strong&gt;, membro attivo della community, è poi intervenuto per raccontare lo stato del Kit React “design-react-kit”, che supporta chi sviluppa nell’implementazione di Bootstrap Italia. Marco ha prima illustrato le basi del kit e ne ha poi raccontato l’evoluzione delle varie versioni fino all’attuale 4.0.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giacomo Grassi&lt;/strong&gt;, &lt;em&gt;User Experience &amp;amp; Digital Process Director&lt;/em&gt; presso INPS, ha descritto la sua esperienza di creazione di un design system nel settore pubblico. Ha quindi spiegato le specifiche necessità per un ente pubblico di grande complessità, che offre oltre 450 servizi web. Ha sottolineato l’importanza di creare team di lavoro coesi, valorizzare le competenze interne preesistenti e coinvolgere anche i collaboratori esterni fin dal primo giorno di lavoro.&lt;/p&gt;
+
+&lt;p&gt;Durante gli ultimi 20 minuti della Community call, come sempre, i partecipanti hanno avuto uno spazio a disposizione per domande e curiosità.&lt;/p&gt;
+
+&lt;p&gt;Il tema del &lt;em&gt;design system&lt;/em&gt; sarà protagonista nei mesi di marzo e aprile di due &lt;strong&gt;community lab&lt;/strong&gt;, veri e propri laboratori: occasioni ideate per scoprire e imparare insieme gli strumenti utili a collaborare per migliorare i servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Q6bCRei3UHU&amp;amp;list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&quot;&gt;Guarda il video completo della Community call&lt;/a&gt;&lt;/strong&gt; sul canale YouTube del Dipartimento per la trasformazione digitale e &lt;a href=&quot;/assets/images/posts/2022-02-22/Importanza-di-un design-system-per-i-servizi-digitali.pdf&quot;&gt;scarica la presentazione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per saperne di più &lt;strong&gt;resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;&lt;/strong&gt;, continua a seguirci sui canali Twitter di &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Il team di Designers e Developer Italia&lt;/em&gt;&lt;/p&gt;</content>
+    <published>2022-02-22T10:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/02/17/Developers-Italia-ridisegnare-il-sistema</id>
     <title>Developers Italia, ridisegnare il sistema con il sistema</title>
