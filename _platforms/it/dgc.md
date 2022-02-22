@@ -127,9 +127,10 @@ Maggiori informazioni sono reperibili consultando il sito [https://www.dgc.gov.i
 Per sviluppare un nuovo SDK basato sul [SDK ufficiale VerificaC19](https://github.com/ministero-salute/it-dgc-verificac19-sdk-android) occorre:
 
 1. Verificare le ultime modifiche sviluppate per il SDK ufficiale VerificaC19 consultando il [CHANGELOG](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/blob/main/CHANGELOG.md).
-2. Consultare la [checklist ufficiale]() per implementare le funzionalità richieste nel SDK.
+2. Consultare la [checklist ufficiale](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/blob/main/CHECKLIST_SDK.md) per implementare le funzionalità richieste nel SDK.
 3. Fare riferimento al [repository della documentazione](https://github.com/ministero-salute/it-dgc-documentation) per avere informazioni dettagliate sull'implementazione del flusso di verifica e della Digital Covid Certificate Revocation List (DRL).
 
+Si raccomanda di utilizzare il repository [dgc-testdata](https://github.com/eu-digital-green-certificates/dgc-testdata) o parte di esso, che contiene testcase utili per controllare la correttezza delle librerie.
 È possibile prendere spunto da uno dei SDK presenti nella [lista ufficiale di SDK](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) già aderenti alle specifiche tecniche e ai requisiti implementati dal Ministero della Salute all’interno dell’applicazione governativa VerificaC19.
 
 Per proporre l’inserimento di una nuova libreria/SDK nella lista è necessario seguire i seguenti passi:
