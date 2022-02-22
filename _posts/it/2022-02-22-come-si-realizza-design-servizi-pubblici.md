@@ -10,7 +10,7 @@ image: /assets/icons/logo-it.png
 locale: it
 ---
 
-Grande successo per la Community call dello **scorso 9 febbraio**, dedicata al *design system* per i servizi pubblici digitali, con oltre **150 partecipanti**. Abbiamo parlato dell’importanza del *design system** per creare siti e servizi coerenti, familiari e fruibili da tutti i cittadini. Per farlo ci siamo affidati ad alcuni dei protagonisti di questo processo: Daniele Tabellini, Marco Liberati e Giacomo Grassi.
+Grande successo per la Community call dello **scorso 9 febbraio**, dedicata al *design system* per i servizi pubblici digitali, con oltre **150 partecipanti**. Abbiamo parlato dell’importanza del *design system* per creare siti e servizi coerenti, familiari e fruibili da tutti i cittadini. Per farlo ci siamo affidati ad alcuni dei protagonisti di questo processo: Daniele Tabellini, Marco Liberati e Giacomo Grassi.
 
 **Daniele Tabellini**, esperto di UI e UX del Dipartimento per la trasformazione digitale, ha spiegato l’importanza del *design system* per il settore pubblico e le sfide che esso comporta. Ha poi introdotto le tre principali librerie che compongono il design system del paese: il [kit UI](https://designers.italia.it/kit/), [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e il [Design React Kit](https://github.com/italia/design-react-kit). L’obiettivo ambizioso, ha spiegato Daniele, è aggiornare la strategia e la gestione del sistema di design del Paese, coinvolgendo sia le PA che i fornitori. Daniele ha infine illustrato quelli che sono i prossimi passi necessari per portare avanti questo obiettivo e il [piano attività](https://designers.italia.it/piano-attivita/) di rilascio degli aggiornamenti.
 
