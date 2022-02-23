@@ -6,9 +6,9 @@ external_website: https://www.dgc.gov.it
 payoff: EU digital COVID certificate
 description: >
   Lorem ipsum.
-lang: it
+lang: en
 ref:
-  en: /en/dgc
+  it: /it/dgc
 order: 2
 highlight: true
 comingsoon: false
