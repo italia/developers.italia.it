@@ -64,6 +64,7 @@ The Bootstrap 4 based kit is the reference point for the development of Public A
 
 * [Bootstrap Italia Documentation](https://italia.github.io/bootstrap-italia/){:target="_blank"}
 * [GitHub Repository](https://github.com/italia/bootstrap-italia){:target="_blank"}
+* [Bootstrap Italia Playground to start using Bootstrap Italia](https://github.com/italia/bootstrap-italia-playground){:target="_blank"};
 * [Example of a template to start with](https://italia.github.io/bootstrap-italia/docs/esempi/template-vuoto/){:target="_blank"}
 
 Bootstrap Italia is already used on some successful projects, such as the [prototype of the website of the Municipality of Cagliari](https://italia.github.io/design-comuni-prototipi/){:target="_blank"} and the [Docs Italia](https://docs.italia.it/){:target="_blank"} website.

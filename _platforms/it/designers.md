@@ -159,6 +159,7 @@ strumento già conosciuto e utilizzato, quale appunto [Bootstrap 4](https://getb
 
 * [Documentazione di Bootstrap Italia](https://italia.github.io/bootstrap-italia/){:target="_blank"};
 * [repository GitHub](https://github.com/italia/bootstrap-italia){:target="_blank"};
+* [Bootstrap Italia Playground per iniziare ad usare Bootstrap Italia](https://github.com/italia/bootstrap-italia-playground){:target="_blank"};
 * [esempio di template base da cui partire](https://italia.github.io/bootstrap-italia/docs/esempi/template-vuoto/){:target="_blank"}.
 
 **Contribuisci alla crescita del design system:** per segnalare un sito, una app
