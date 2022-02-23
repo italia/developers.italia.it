@@ -109,6 +109,7 @@ Il sito [designers.italia.it](https://designers.italia.it/){:target="_blank"} co
 * il collegamento alla piattaforma [Medium di Designers Italia](https://designers.italia.it/blog/){:target="_blank"}
   che ospita casi d'uso e applicazioni di successo del *design system* per la
   Pubblica Amministrazione.
+* il [piano attività aggiornato al 2022](https://designers.italia.it/piano-attivita/), contenente una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri.
 
 Il codice sorgente del sito si trova in un [repository GitHub](https://github.com/italia/designers.italia.it){:target="_blank"}
 aperto a ogni tipo di contributo.

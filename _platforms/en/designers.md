@@ -39,6 +39,7 @@ The site [designers.italia.it](https://designers.italia.it/){:target="_blank"} c
 * References to the current version of the [Design Guidelines](https://designers.italia.it/guide/){:target="_blank"}.
 * A series of [kits for the design of services of the Public Administration](https://designers.italia.it/kit/){:target="_blank"}.
 * The [blog](https://designers.italia.it/blog/){:target="_blank"} with use case of the kits.
+* The [activity plan updated to 2022](https://designers.italia.it/piano-attivita/), containing a roadmap of the activities and the main results achieved by the Designers Italia project, future actions and goals to achieve.
 
 The source code of the site itself is hosted in a [GitHub repository](https://github.com/italia/designers.italia.it){:target="_blank"} open to any kind of contribution.
 
