@@ -65,8 +65,10 @@ Still to-do:
           {% assign platform = split[2] %}
 
           <div class="col-12 col-lg-4">
+            {% unless page.hide_activities %}
             <span class="d-block">{{ t.project_issues }}</span>
             <a href="/{{ active_lang }}/{{ page_name }}?platform={{ platform }}">{{ t.project_issues_go }} →</a>
+            {% endunless %}
           </div>
         </div>
       </div>
