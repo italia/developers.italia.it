@@ -65,8 +65,10 @@ Still to-do:
           {% assign platform = split[2] %}
 
           <div class="col-12 col-lg-4">
+            {% if page.hide_activities != true %}
             <span class="d-block">{{ t.project_issues }}</span>
             <a href="/{{ active_lang }}/{{ page_name }}?platform={{ platform }}">{{ t.project_issues_go }} →</a>
+            {% endif %}
           </div>
         </div>
       </div>

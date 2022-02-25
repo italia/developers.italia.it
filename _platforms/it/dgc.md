@@ -12,6 +12,7 @@ highlight: true
 comingsoon: false
 abilitante: false
 layout: platform
+hide_activities: true
 owners:
     - name: Ministero della Salute
       url: https://www.salute.gov.it/
