@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Community Call: eGovernment Benchmark"
-subtitle: Dall’Europa, i criteri minimi di qualità dei servizi pubblici digitali: ne parliamo il 9 marzo
+subtitle: "Dall’Europa, i criteri minimi di qualità dei servizi pubblici digitali: ne parliamo il 9 marzo"
 date: 2022-02-25 12:00:00 +0200
 tags: developers designers egovernment
 categories: news
