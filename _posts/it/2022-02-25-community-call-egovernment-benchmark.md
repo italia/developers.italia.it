@@ -16,6 +16,10 @@ Nel farlo utilizza una [metodologia](https://op.europa.eu/it/publication-detail/
 
 Purtroppo l’Italia, nella classifica europea, si posiziona al di sotto della media dei paesi Ue e della media Europea allargata ai paesi partecipanti all’esercizio del Benchmark (EU27+) per le categorie di servizi misurati (life events) nel 2020. Perché questo succede? E quali sono le 10 azioni più semplici e più efficaci da cui partire per migliorare i servizi digitali e il posizionamento del nostro Paese? Quali soluzioni sono state messe in atto per affrontare questa sfida nel territorio? 
 
-Lo scopriremo il prossimo **9 marzo alle ore 15.30** attraverso la testimonianza dei nostri ospiti.
+Lo scopriremo il prossimo **9 marzo alle ore 15.30** attraverso la testimonianza dei nostri ospiti:
+
+- **Daniela Battisti**, Responsabile Relazioni internazionali, Dipartimento per la trasformazione digitale
+- **Dimitri Tartari**, Responsabile Agenda Digitale dell'Emilia-Romagna nel Gabinetto del Presidente e referente tecnico della Commissione Innovazione Tecnologica
+- **Luca De Pietro**, Direttore Strategia ICT, Agenda digitale e sistemi di comunicazione, Regione del Veneto
 
 **[Registrati all’evento](https://mobilizon.it/events/a2a10f4e-9f94-4a84-9b11-d8ed0c88144e)** per partecipare. Ti aspettiamo!
