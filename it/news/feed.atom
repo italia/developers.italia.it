@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-02-28T06:05:09+00:00</updated>
+  <updated>2022-02-28T10:12:34+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -26,7 +26,13 @@
 
 &lt;p&gt;Purtroppo l’Italia, nella classifica europea, si posiziona al di sotto della media dei paesi Ue e della media Europea allargata ai paesi partecipanti all’esercizio del Benchmark (EU27+) per le categorie di servizi misurati (life events) nel 2020. Perché questo succede? E quali sono le 10 azioni più semplici e più efficaci da cui partire per migliorare i servizi digitali e il posizionamento del nostro Paese? Quali soluzioni sono state messe in atto per affrontare questa sfida nel territorio?&lt;/p&gt;
 
-&lt;p&gt;Lo scopriremo il prossimo &lt;strong&gt;9 marzo alle ore 15.30&lt;/strong&gt; attraverso la testimonianza dei nostri ospiti.&lt;/p&gt;
+&lt;p&gt;Lo scopriremo il prossimo &lt;strong&gt;9 marzo alle ore 15.30&lt;/strong&gt; attraverso la testimonianza dei nostri ospiti:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Daniela Battisti&lt;/strong&gt;, Responsabile Relazioni internazionali, Dipartimento per la trasformazione digitale&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dimitri Tartari&lt;/strong&gt;, Responsabile Agenda Digitale dell’Emilia-Romagna nel Gabinetto del Presidente e referente tecnico della Commissione Innovazione Tecnologica&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Luca De Pietro&lt;/strong&gt;, Direttore Strategia ICT, Agenda digitale e sistemi di comunicazione, Regione del Veneto&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/a2a10f4e-9f94-4a84-9b11-d8ed0c88144e&quot;&gt;Registrati all’evento&lt;/a&gt;&lt;/strong&gt; per partecipare. Ti aspettiamo!&lt;/p&gt;</content>
     <published>2022-02-25T10:00:00+00:00</published>
