@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-02T09:39:00+00:00</updated>
+  <updated>2022-03-02T11:43:13+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -274,7 +274,7 @@ Un percorso che ha coinvolto migliaia di esperte ed esperti in progettazione e s
 Un’attività che continuerà e diventerà sempre più intensa a partire dal 2022.
 ``&lt;/p&gt;
 
-&lt;p&gt;In questi giorni, infatti, &lt;strong&gt;è in avvio una completa revisione del &lt;em&gt;design system&lt;/em&gt; del Paese&lt;/strong&gt;, ovvero degli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione, così da renderli coerenti, familiari e fruibili da tutti i cittadini. Una revisione che, nella pratica, si tradurrà in schemi, regole e librerie visive e tecnologiche condivise.&lt;/p&gt;
+&lt;p&gt;In questi giorni, infatti, &lt;strong&gt;è in avvio una completa revisione del &lt;em&gt;design system&lt;/em&gt; del Paese&lt;/strong&gt;, ovvero degli strumenti necessari alla realizzazione di siti e servizi digitali della Pubblica Amministrazione, così da renderli coerenti, familiari e fruibili da tutti i cittadini. Una revisione che, nella pratica, si tradurrà in schemi, regole e librerie condivise.&lt;/p&gt;
 
 &lt;p&gt;Si tratta di un’operazione ambiziosa, che prevede &lt;strong&gt;l’ammodernamento in termini tecnologici e di accessibilità&lt;/strong&gt;, ma anche di visione e gestione, delle risorse messe a disposizione da Designers Italia e Developers Italia, in particolare i due kit di &lt;a href=&quot;http://designers.italia.it/kit/progettazione-interfaccia/&quot;&gt;progettazione&lt;/a&gt; e &lt;a href=&quot;https://designers.italia.it/kit/sviluppo-interfaccia/&quot;&gt;sviluppo interfaccia&lt;/a&gt;, dei principali esempi di applicazione e dei &lt;a href=&quot;https://designers.italia.it/modelli/&quot;&gt;modelli standard di siti web per le PA&lt;/a&gt; (Comuni e scuole).&lt;/p&gt;
 
