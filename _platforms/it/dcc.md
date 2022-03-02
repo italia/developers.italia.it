@@ -1,11 +1,11 @@
 ---
-title: DGC
-subtitle: Certificazione verde Covid-19
+title: DCC
+subtitle: Certificazione verde COVID-19
 logo: https://www.dgc.gov.it/web/img/logo-eu.png
 external_website: https://www.dgc.gov.it
 payoff: EU digital COVID certificate
 description: >
-  Una Certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità.
+  Una Certificazione in formato digitale e stampabile, emessa dal Ministero della Salute, che contiene un QR Code per verificarne autenticità e validità.
 lang: it
 order: 2
 highlight: true
@@ -55,6 +55,19 @@ resources:
       icon: github
       url: https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux
       desc: Digital Covid Certificate SDK per Java Spring Digital
+  - Librerie di utility per DCC:
+    - title: DCC-Utils per Node.js
+      icon: github
+      url: https://github.com/ministero-salute/dcc-utils
+      desc: Libreria di utility per leggere e verificare la firma dei EU COVID-19 vaccine certificate in Node.js
+    - title: DCC-Utils per Python
+      icon: github
+      url: https://github.com/italia/dcc-utils
+      desc: Libreria di utility per leggere e verificare la firma dei EU COVID-19 vaccine certificate in Python
+    - title: VacDec
+      icon: github
+      url: https://github.com/HQJaTu/vacdec
+      desc: Script Python per la decodifica degli EU COVID-19 vaccine certificate
   - Documentazione:
     - title: Digital Covid Certificate descrizione ad alto livello
       url: https://github.com/ministero-salute/it-dgc-documentation
@@ -97,21 +110,16 @@ resources:
 
 ## Intro
 
-La Certificazione verde Covid-19 è una certificazione in formato digitale e stampabile, emessa dalla Piattaforma nazionale del Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. In Italia, viene emessa soltanto attraverso la Piattaforma nazionale DCC del Ministero della Salute. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'app nazionale VerificaC19. I dati personali del titolare della certificazione non vengono registrati dalla app a tutela della privacy.
+La Certificazione verde COVID-19 è una certificazione in formato digitale e stampabile, emessa dal Ministero della Salute, che contiene un codice a barre bidimensionale (QR Code) e un sigillo elettronico qualificato per verificarne autenticità e validità. L’autenticità e validità della certificazione sono verificate in Italia attraverso l'applicazione mobile ufficiale *VerificaC19*.
 
-**La Certificazione attesta una delle seguenti condizioni:**
+**La Certificazione viene rilasciata a seguito dei seguenti eventi clinici:**
 
-- aver fatto la vaccinazione anti COVID-19 (in Italia viene emessa dopo ogni dose di vaccino)
-- essere negativi al test antigenico rapido nelle ultime 48 ore o al test molecolare nelle ultime 72 ore
-- essere guariti dal COVID-19 negli ultimi sei mesi
+- vaccinazione anti COVID-19 (in Italia viene emessa dopo ogni dose di vaccino)
+- risultato negativo al test antigenico rapido nelle ultime 48 ore o al test molecolare nelle ultime 72 ore
+- guarigione dal COVID-19 negli ultimi sei mesi
+- esenzione dalla vaccinazione, certificato emesso a fronte di specifiche condizioni cliniche documentate.
 
-Il Regolamento europeo sulla  Certificazione è entrato in vigore il 1 luglio 2021 in tutti i Paesi dell’Unione Europea e avrà durata di un anno.
-
-L’Italia ha anticipato l’emissione della Certificazione verde COVID-19 al 17 giugno 2021 e ne ha esteso progressivamente l’utilizzo sul territorio nazionale.
-
-Dal 15 febbraio il green pass rafforzato (vaccinazione o guarigione) è esteso ai lavoratori pubblici e privati dai 50 anni di età, per l’accesso ai luoghi di lavoro. Si ricorda che dall’8 gennaio 2022 è in vigore l’obbligo vaccinale per tutti coloro che hanno compiuto 50 anni e più.
-
-I dati delle certificazioni emesse in Italia sono disponibili in formato CSV e JSON su [GitHub](https://github.com/ministero-salute/it-dgc-opendata/).
+I dati sulle certificazioni emesse in Italia sono disponibili in formato CSV e JSON su [GitHub](https://github.com/ministero-salute/it-dgc-opendata/).
 
 Maggiori informazioni sono reperibili consultando il sito [https://www.dgc.gov.it](https://www.dgc.gov.it/).
 
