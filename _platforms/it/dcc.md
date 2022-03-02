@@ -68,6 +68,10 @@ resources:
       icon: github
       url: https://github.com/HQJaTu/vacdec
       desc: Script Python per la decodifica degli EU COVID-19 vaccine certificate
+    - title: DGC per Rust
+      icon: github
+      url: https://github.com/rust-italia/dgc/
+      desc: Libreria di utility per leggere e verificare la firma dei EU COVID-19 vaccine certificate in Rust
   - Documentazione:
     - title: Digital Covid Certificate descrizione ad alto livello
       url: https://github.com/ministero-salute/it-dgc-documentation
