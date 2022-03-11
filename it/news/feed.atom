@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-11T06:05:00+00:00</updated>
+  <updated>2022-03-11T10:06:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/03/11/Community-lab-scopriamo-Bootstrap-Italia-2.0</id>
+    <title>Community lab: scopriamo Bootstrap Italia 2.0</title>
+    <updated>2022-03-11T08:00:00+00:00</updated>
+
+    <summary>Il 23 marzo parliamo di una delle risorse più importanti per il design system del Paese </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/03/11/Community-lab-scopriamo-Bootstrap-Italia-2.0">&lt;p&gt;Dopo aver scoperto &lt;a href=&quot;https://www.youtube.com/watch?v=2Ph4VSyi9lU&quot;&gt;l’uso di Git&lt;/a&gt;, nella seconda delle cinque puntate dei Community lab, parleremo di &lt;strong&gt;Bootstrap Italia 2.0&lt;/strong&gt;, una delle risorse del &lt;a href=&quot;https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/&quot;&gt;&lt;em&gt;design system&lt;/em&gt; del Paese&lt;/a&gt;, e della sua utilità per &lt;strong&gt;sviluppare le interfacce dei servizi pubblici digitali&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Come cambia il modo di sviluppare con le nuove tecnologie a disposizione? Quali sono le risorse e le componenti della soluzione e come si può contribuire ad aggiornarla? A queste e altre domande risponderà l’incontro del &lt;strong&gt;prossimo 23 marzo&lt;/strong&gt;, dedicato a coloro che si occupano di sviluppare interfacce di servizi digitali.&lt;/p&gt;
+
+&lt;p&gt;In particolare, durante l’incontro saranno presentate le novità introdotte dall’aggiornamento di Bootstrap Italia 2.0, basata su Bootstrap 5. Parleremo dell’importanza del tema &lt;strong&gt;accessibilità&lt;/strong&gt; nel nuovo aggiornamento e degli &lt;strong&gt;obiettivi temporali di rilascio&lt;/strong&gt;. Ma non solo: implementeremo dal vivo una piccola interfaccia con l’utilizzo di Bootstrap Italia 2.0 e scopriremo come &lt;strong&gt;contribuire attivamente al codice sorgente&lt;/strong&gt; con Git e GitHub.&lt;/p&gt;
+
+&lt;p&gt;In chiusura, come sempre, ampio spazio sarà dato alle domande da parte di tutti i partecipanti.&lt;/p&gt;
+
+&lt;p&gt;L’appuntamento è per il &lt;strong&gt;23 marzo&lt;/strong&gt; alle ore &lt;strong&gt;15.30&lt;/strong&gt;. Per partecipare &lt;a href=&quot;https://mobilizon.it/events/cd3370a7-46bf-4595-a8ff-c9e2e8d9172b&quot;&gt;registrati all’evento&lt;/a&gt;. Ti aspettiamo!&lt;/p&gt;</content>
+    <published>2022-03-11T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="bootstrap" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/02/25/community-call-egovernment-benchmark</id>
     <title>Community Call: eGovernment Benchmark</title>
