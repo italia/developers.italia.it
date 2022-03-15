@@ -7,6 +7,8 @@ tags: developers skd spid cie
 categories: news
 author: Giuseppe de Marco
 image: /assets/icons/logo-it.png
+ref:
+  en: /en/news/2022/03/15/work-is-starting-SDK-SPID-CIE
 locale: it
 ---
 
@@ -35,7 +37,7 @@ Ogni repository conterrà:
 - un progetto di esempio per scopi dimostrativi;
 - una immagine docker che utilizza il progetto di esempio;
 - una pipeline automatica di Continuous Integration (CI) con le unità di test;
-- una pipeline automatica di CI con il tool ufficiale di Quality Assessment utilizzato nelle procedure di collaudo SPID e CIE id;
+- una pipeline automatica di CI con il tool ufficiale di Quality Assessment utilizzato nelle procedure di collaudo SPID e CIE;
 - una copertura dei test sul codice non inferiore al 90%.
 
 Ci aspettiamo che gli SDK siano ultimati per metà aprile.
