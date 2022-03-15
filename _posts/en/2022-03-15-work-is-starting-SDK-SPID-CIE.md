@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Work begins on unified SPID and CIE OpenID Connect SDKs".
+title: "Work begins on unified SPID and CIE OpenID Connect SDKs."
 subtitle: "An important technological advancement that will make life easier for developers"
 date: 2022-03-15 10:00:00 +0200
 tags: developers sdk spid cie
@@ -8,7 +8,7 @@ categories: news
 author: Giuseppe de Marco
 image: /assets/icons/logo-it.png
 locale: en
--
+---
 
 Work is starting today on GitHub Italia on the creation of the OpenID Connect SDKs (Software Development Kit) dedicated to the Public Digital Identity System (SPID) and the Electronic Identity Card (CIE) for 5 programming languages!
 
