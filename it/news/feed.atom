@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-15T06:04:57+00:00</updated>
+  <updated>2022-03-15T12:22:51+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,74 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/03/15/iniziano-lavori-SDK-SPID-CIE</id>
+    <title>Iniziano i lavori per gli SDK OpenID Connect unificati di SPID e CIE </title>
+    <updated>2022-03-15T08:00:00+00:00</updated>
+
+    <summary>Un importante avanzamento tecnologico che semplificherà la vita degli sviluppatori </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/03/15/iniziano-lavori-SDK-SPID-CIE">&lt;p&gt;Iniziano oggi i lavori su GitHub Italia per la realizzazione degli SDK (Software Development Kit) OpenID Connect dedicati al Sistema Pubblico di identità digitale (SPID) e alla Carta d’Identità Elettronica (CIE) per ben 5 linguaggi di programmazione!&lt;/p&gt;
+
+&lt;h3 id=&quot;di-cosa-si-tratta&quot;&gt;Di cosa si tratta?&lt;/h3&gt;
+
+&lt;p&gt;Un avanzamento tecnologico molto importante che ci consente di avvicinare l’esperienza utente di SPID e CIE a quella dei sistemi Single Sign-On privati più popolari e semplificare l’integrazione da parte di sviluppatori e DevOps. Il passaggio verso OpenID Connect ci consente di creare una federazione di identità all’avanguardia e di partecipare a un ecosistema moderno e ricco di strumenti utili.&lt;/p&gt;
+
+&lt;p&gt;Ma la novità più importante è che CIE e SPID sono sempre più vicini: i due profili infatti vengono unificati in una unica implementazione, semplificando enormemente la vita degli sviluppatori.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-dettagli&quot;&gt;I dettagli&lt;/h3&gt;
+
+&lt;p&gt;Gli SDK SPID/CIE OIDC sono pubblicati su GitHub Italia e resi pubblici, con licenza open source, sotto forma di repository e applicazioni installabili. Si tratta di applicazioni di tipo OpenID Connect Relying-Party, realizzate in stretta osservanza delle &lt;a href=&quot;https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_openid_connect_in_spid.pdf&quot;&gt;Linee Guida OpenID&lt;/a&gt; Connect in SPID. Ognuna di queste verrà sviluppata per uno dei seguenti linguaggi di programmazione:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+  &lt;li&gt;Python (Django)&lt;/li&gt;
+  &lt;li&gt;Java (Spring)&lt;/li&gt;
+  &lt;li&gt;ASPnet Core&lt;/li&gt;
+  &lt;li&gt;Javascript (node.js)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ogni repository conterrà:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;l’applicazione installabile e riutilizzabile;&lt;/li&gt;
+  &lt;li&gt;una documentazione chiara, in lingua inglese, anche sotto forma di README, su come usare l’applicazione, eseguire le unità di test e contribuire al progetto;&lt;/li&gt;
+  &lt;li&gt;un progetto di esempio per scopi dimostrativi;&lt;/li&gt;
+  &lt;li&gt;una immagine docker che utilizza il progetto di esempio;&lt;/li&gt;
+  &lt;li&gt;una pipeline automatica di Continuous Integration (CI) con le unità di test;&lt;/li&gt;
+  &lt;li&gt;una pipeline automatica di CI con il tool ufficiale di Quality Assessment utilizzato nelle procedure di collaudo SPID e CIE id;&lt;/li&gt;
+  &lt;li&gt;una copertura dei test sul codice non inferiore al 90%.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ci aspettiamo che gli SDK siano ultimati per metà aprile.&lt;/p&gt;
+
+&lt;p&gt;Vuoi contribuire attivamente al lavoro in corso e aiutarci a testarlo? Vuoi proporre un nuovo SDK per il tuo linguaggio di programmazione preferito? Raggiungici sul canale #spid-openid di &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt; e apri issues e pull requests su:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-php&quot;&gt;https://github.com/italia/spid-cie-oidc-php&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-aspnetcore&quot;&gt;https://github.com/italia/spid-cie-oidc-aspnetcore&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-nodejs&quot;&gt;https://github.com/italia/spid-cie-oidc-nodejs&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-java&quot;&gt;https://github.com/italia/spid-cie-oidc-java&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-django&quot;&gt;https://github.com/italia/spid-cie-oidc-django&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ti aspettiamo!&lt;/p&gt;</content>
+    <published>2022-03-15T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="skd" />
+    
+    <category term="spid" />
+    
+    <category term="cie" />
+    
+
+    <author>
+      <name>Giuseppe de Marco</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/03/11/Community-lab-scopriamo-Bootstrap-Italia-2.0</id>
     <title>Community lab: scopriamo Bootstrap Italia 2.0</title>
