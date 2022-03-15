@@ -50,7 +50,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202203151804" rel="stylesheet">
+  <link href="/dist/main.css?202203151838" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -230,7 +230,13 @@
       <li class="active">
         <!-- pages generated with page_gen plugins  -->
         
-        <a href="/it"><span lang="it">italiano</span>
+
+        <!-- take ref from page when lang is not actual
+        otherwise taking from env
+         -->
+        
+
+        <a href="/it/news/2022/03/15/iniziano-lavori-SDK-SPID-CIE"><span lang="it">italiano</span>
         
         
         <svg class="icon icon-sm float-right">
@@ -243,7 +249,13 @@
       <li class="">
         <!-- pages generated with page_gen plugins  -->
         
-        <a href="/en"><span lang="en">english</span>
+
+        <!-- take ref from page when lang is not actual
+        otherwise taking from env
+         -->
+        
+
+        <a href="/en/news/2022/03/15/work-is-starting-SDK-SPID-CIE"><span lang="en">english</span>
         
         
         </a>
@@ -715,7 +727,7 @@
   <li>un progetto di esempio per scopi dimostrativi;</li>
   <li>una immagine docker che utilizza il progetto di esempio;</li>
   <li>una pipeline automatica di Continuous Integration (CI) con le unità di test;</li>
-  <li>una pipeline automatica di CI con il tool ufficiale di Quality Assessment utilizzato nelle procedure di collaudo SPID e CIE id;</li>
+  <li>una pipeline automatica di CI con il tool ufficiale di Quality Assessment utilizzato nelle procedure di collaudo SPID e CIE;</li>
   <li>una copertura dei test sul codice non inferiore al 90%.</li>
 </ul>
 
