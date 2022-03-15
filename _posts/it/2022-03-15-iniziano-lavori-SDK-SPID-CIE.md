@@ -8,7 +8,7 @@ categories: news
 author: Giuseppe de Marco
 image: /assets/icons/logo-it.png
 ref:
-  en: /en/news/2022/03/15/work-is-starting-SDK-SPID-CIE.md
+  en: /en/news/2022/03/15/work-is-starting-SDK-SPID-CIE
 locale: it
 ---
 
