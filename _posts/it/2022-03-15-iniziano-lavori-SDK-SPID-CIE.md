@@ -20,7 +20,7 @@ Ma la novità più importante è che CIE e SPID sono sempre più vicini: i due p
 
 ### I dettagli
 
-Gli SDK SPID/CIE OIDC sono pubblicati su Github Italia e resi pubblici, con licenza open source, sotto forma di repository e applicazioni installabili. Si tratta di applicazioni di tipo OpenID Connect Relying-Party, realizzate in stretta osservanza delle [Linee Guida OpenID](https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_openid_connect_in_spid.pdf) Connect in SPID. Ognuna di queste verrà sviluppata per uno dei seguenti linguaggi di programmazione:
+Gli SDK SPID/CIE OIDC sono pubblicati su GitHub Italia e resi pubblici, con licenza open source, sotto forma di repository e applicazioni installabili. Si tratta di applicazioni di tipo OpenID Connect Relying-Party, realizzate in stretta osservanza delle [Linee Guida OpenID](https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_openid_connect_in_spid.pdf) Connect in SPID. Ognuna di queste verrà sviluppata per uno dei seguenti linguaggi di programmazione:
 
 - PHP
 - Python (Django)
