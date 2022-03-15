@@ -10,7 +10,7 @@ image: /assets/icons/logo-it.png
 locale: it
 ---
 
-Iniziano oggi i lavori su Github Italia per la realizzazione degli SDK (Software Development Kit) OpenID Connect dedicati al Sistema Pubblico di identità digitale (SPID) e alla Carta d'Identità Elettronica (CIE) per ben 5 linguaggi di programmazione!
+Iniziano oggi i lavori su GitHub Italia per la realizzazione degli SDK (Software Development Kit) OpenID Connect dedicati al Sistema Pubblico di identità digitale (SPID) e alla Carta d'Identità Elettronica (CIE) per ben 5 linguaggi di programmazione!
 
 ### Di cosa si tratta? 
 
