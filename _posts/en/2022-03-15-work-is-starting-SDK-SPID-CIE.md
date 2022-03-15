@@ -14,7 +14,7 @@ Work is starting today on GitHub Italia on the creation of the OpenID Connect SD
 
 ### What is it all about? 
 
-A very important technological advancement that allows us to bring the user experience of SPID and CIE closer to that of the most popular private Single Sign-On systems and to simplify integration by developers and DevOps. The move to OpenID Connect allows us to create a state-of-the-art identity federation and participate in a modern ecosystem full of useful tools.
+Today marks the start of a significant technological advancement that allows us to align SPID and CIE's user experience with that of the most popular private Single Sign-On systems while also making integration easier for developers and DevOps. By switching to OpenID Connect, we will be able to build a cutting-edge identity federation and participate in a modern ecosystem brimming with useful tools.
 
 But the most important news is that CIE and SPID are getting closer: the two profiles are now merged into a single implementation, making life much easier for developers.
 
