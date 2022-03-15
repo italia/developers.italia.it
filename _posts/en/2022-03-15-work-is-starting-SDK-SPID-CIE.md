@@ -37,7 +37,7 @@ Each repository will contain
 - an example project for demonstration purposes;
 - a docker image using the example project;
 - an automatic Continuous Integration (CI) pipeline with the test units;
-- an automatic CI pipeline with the official Quality Assessment tool used in the SPID and CIE id testing procedures;
+- an automatic CI pipeline with the official Quality Assessment tool used in the SPID and CIE testing procedures;
 - a code test coverage of no less than 90%.
 
 We expect the SDKs to be finalised by mid-April.
