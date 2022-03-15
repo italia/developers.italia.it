@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://developers.italia.it/en/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-15T12:22:51+00:00</updated>
+  <updated>2022-03-15T18:04:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/en/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,74 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="en">
+    <id>https://developers.italia.it/en/news/2022/03/15/work-is-starting-SDK-SPID-CIE</id>
+    <title>Work begins on unified SPID and CIE OpenID Connect SDKs.</title>
+    <updated>2022-03-15T08:00:00+00:00</updated>
+
+    <summary>An important technological advancement that will make life easier for developers </summary>
+    <content type="html" xml:base="https://developers.italia.it/en/news/2022/03/15/work-is-starting-SDK-SPID-CIE">&lt;p&gt;Work is starting today on GitHub Italia on the creation of the OpenID Connect SDKs (Software Development Kit) dedicated to the Public Digital Identity System (SPID) and the Electronic Identity Card (CIE) for 5 programming languages!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-it-all-about&quot;&gt;What is it all about?&lt;/h3&gt;
+
+&lt;p&gt;Today marks the start of a significant technological advancement that allows us to align SPID and CIE’s user experience with that of the most popular private Single Sign-On systems while also making integration easier for developers and DevOps. By switching to OpenID Connect, we will be able to build a cutting-edge identity federation and participate in a modern ecosystem brimming with useful tools.&lt;/p&gt;
+
+&lt;p&gt;But the most important news is that CIE and SPID are getting closer: the two profiles are now merged into a single implementation, making life much easier for developers.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-details&quot;&gt;The details&lt;/h3&gt;
+
+&lt;p&gt;The SPID/CIE OIDC SDKs are published on GitHub Italia and made public, under an open source licence, in the form of repositories and installable applications. These are OpenID Connect Relying-Party applications, created in strict compliance with the &lt;a href=&quot;https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_openid_connect_in_spid.pdf&quot;&gt;OpenID Guidelines&lt;/a&gt; Connect in SPID. Each of these will be developed for one of the following programming languages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PHP&lt;/li&gt;
+  &lt;li&gt;Python (Django)&lt;/li&gt;
+  &lt;li&gt;Java (Spring)&lt;/li&gt;
+  &lt;li&gt;ASPnet Core&lt;/li&gt;
+  &lt;li&gt;Javascript (node.js)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each repository will contain&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the installable and reusable application;&lt;/li&gt;
+  &lt;li&gt;a clear documentation, in English language, also in the form of a README, on how to use the application, run the test units and contribute to the project;&lt;/li&gt;
+  &lt;li&gt;an example project for demonstration purposes;&lt;/li&gt;
+  &lt;li&gt;a docker image using the example project;&lt;/li&gt;
+  &lt;li&gt;an automatic Continuous Integration (CI) pipeline with the test units;&lt;/li&gt;
+  &lt;li&gt;an automatic CI pipeline with the official Quality Assessment tool used in the SPID and CIE testing procedures;&lt;/li&gt;
+  &lt;li&gt;a code test coverage of no less than 90%.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We expect the SDKs to be finalised by mid-April.&lt;/p&gt;
+
+&lt;p&gt;Would you like to actively contribute to the work in progress and help us test it? Would you like to propose a new SDK for your favourite programming language? Join us on the &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;#spid-openid channel&lt;/a&gt; and open issues and pull requests at:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-php&quot;&gt;https://github.com/italia/spid-cie-oidc-php&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-aspnetcore&quot;&gt;https://github.com/italia/spid-cie-oidc-aspnetcore&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-nodejs&quot;&gt;https://github.com/italia/spid-cie-oidc-nodejs&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-java&quot;&gt;https://github.com/italia/spid-cie-oidc-java&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/italia/spid-cie-oidc-django&quot;&gt;https://github.com/italia/spid-cie-oidc-django&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are waiting for you!&lt;/p&gt;</content>
+    <published>2022-03-15T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="sdk" />
+    
+    <category term="spid" />
+    
+    <category term="cie" />
+    
+
+    <author>
+      <name>Giuseppe de Marco</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="en">
     <id>https://developers.italia.it/en/news/2021/09/29/developers-italia-pioneering-initiative-competitive-europe</id>
     <title>Developers Italia: pioneering initiative for an independent and competitive digital Europe</title>
