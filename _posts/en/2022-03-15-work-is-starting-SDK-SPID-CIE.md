@@ -7,6 +7,8 @@ tags: developers sdk spid cie
 categories: news
 author: Giuseppe de Marco
 image: /assets/icons/logo-it.png
+ref:
+  it: /it/news/2022/03/15/iniziano-lavori-SDK-SPID-CIE
 locale: en
 ---
 
