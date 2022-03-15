@@ -42,7 +42,7 @@ Each repository will contain
 
 We expect the SDKs to be finalised by mid-April.
 
-Would you like to actively contribute to the work in progress and help us test it? Would you like to propose a new SDK for your favourite programming language? Join us on the #spid-openid channel of [Slack Developers](https://slack.developers.italia.it/) and open issues and pull requests at:
+Would you like to actively contribute to the work in progress and help us test it? Would you like to propose a new SDK for your favourite programming language? Join us on the [#spid-openid channel](https://slack.developers.italia.it/) and open issues and pull requests at:
 
 - **[https://github.com/italia/spid-cie-oidc-php](https://github.com/italia/spid-cie-oidc-php)**
 - **[https://github.com/italia/spid-cie-oidc-aspnetcore](https://github.com/italia/spid-cie-oidc-aspnetcore)**
