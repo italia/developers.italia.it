@@ -5,6 +5,12 @@
 
 ---
 
+# Special organization that can describe software outside
+# of it.
+- name: "_"
+  orgs:
+    - "https://github.com/italia-software"
+
 - name: "GlobaLeaks"
   repos:
     - "https://github.com/globaleaks/GlobaLeaks"
