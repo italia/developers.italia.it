@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-18T06:05:16+00:00</updated>
+  <updated>2022-03-18T16:31:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,40 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/03/18/come-eu-valuta-servizi-pubblici-digitali-egovernment-benchmark</id>
+    <title>Come l’Unione Europea valuta i servizi pubblici digitali: l’eGovernment Benchmark</title>
+    <updated>2022-03-18T08:00:00+00:00</updated>
+
+    <summary>Disponibile la registrazione della community call del 9 febbraio </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/03/18/come-eu-valuta-servizi-pubblici-digitali-egovernment-benchmark">&lt;p&gt;L’UE ha definito il decennio attuale il &lt;a href=&quot;https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age_it&quot;&gt;“decennio digitale” europeo&lt;/a&gt; e ha fissato una serie di parametri volti a misurare i progressi digitali dei Paesi membri. Lo scorso &lt;strong&gt;9 marzo&lt;/strong&gt;, durante la community call, abbiamo visto insieme il principale strumento che l’Unione usa per monitorare la qualità dei servizi pubblici digitali: l’&lt;em&gt;&lt;a href=&quot;https://www.capgemini.com/resources/egovernment-benchmark-2021/&quot;&gt;eGovernment Benchmark&lt;/a&gt;&lt;/em&gt;. Grazie al prezioso contributo dei nostri ospiti, inoltre, abbiamo scoperto come l’Italia può concretamente migliorare rispetto a tali parametri e progredire nella sua transizione digitale.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Daniela Battisti&lt;/strong&gt;, Responsabile delle relazioni internazionali nel Dipartimento per la trasformazione digitale, ha illustrato in breve gli strumenti con i quali la Commissione Europea monitora i progressi della trasformazione digitale dei Paesi membri, ovvero il &lt;a href=&quot;https://digital-strategy.ec.europa.eu/en/policies/desi&quot;&gt;DESI&lt;/a&gt; e l’&lt;em&gt;eGovernment Benchmark&lt;/em&gt;, nonché il ruolo dei &lt;em&gt;mystery shoppers&lt;/em&gt;, che hanno il compito di verificare i servizi pubblici di ogni Paese membro. Ha quindi spiegato quali sono gli obiettivi della Commissione nonché le ambizioni dell’Italia di entrare nel gruppo di testa europeo. Ha poi scomposto i vari indicatori e dimensioni dell’&lt;em&gt;eGovernment benchmark&lt;/em&gt;, mostrando come essi vengono misurati e valutati. In chiusura, ha illustrato una breve panoramica su come l’Italia può migliorare il suo posizionamento attraverso 10 accorgimenti, elaborati a partire dalla lista utilizzata dai &lt;em&gt;mystery shoppers&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dimitri Tartari&lt;/strong&gt;, Responsabile dell’Agenda Digitale dell’Emilia-Romagna nel Gabinetto del Presidente e referente tecnico della Commissione Innovazione Tecnologica, ha offerto il suo punto di vista sulla trasformazione digitale e i rispettivi indicatori europei da parte di un’amministrazione territoriale. Ha illustrato le criticità incontrate dalla Regione nel processo di transizione digitale e le azioni concrete messe in campo, come ad esempio l’adozione di un metodo di &lt;a href=&quot;https://digitale.regione.emilia-romagna.it/dati-e-pubblicazioni/pubblicazioni/2021/2021&quot;&gt;misurazione comune&lt;/a&gt; della qualità dei servizi online e la creazione di &lt;a href=&quot;https://digitale.regione.emilia-romagna.it/comtem&quot;&gt;comunità tematiche dedicate&lt;/a&gt;, formate da cittadini e imprese.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Luca De Pietro&lt;/strong&gt;, Direttore dell’unità organizzativa Strategia ICT e Agenda Digitale di Regione del Veneto, è poi intervenuto per raccontare le dinamiche virtuose della sua Regione, soffermandosi sui punti di forza, gli elementi critici nonché gli aspetti di comunicazione: una rete di comunicatori del Veneto per co-creare insieme agli operatori  campagne di comunicazione e avvicinare così i servizi alle persone.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=flnYdZR5-9w&quot;&gt;Guarda il video&lt;/a&gt; della community call su YouTube&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-03-18/090222_Community_Call_Designers_Italia.pdf&quot;&gt;Scarica la presentazione della community call&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://innovazione.gov.it/progetti/attivita-internazionali/#unione-europea&quot;&gt;Scopri di più&lt;/a&gt; sulla Strategia Digitale Europea e sui relativi indici di digitalizzazione sul sito del Dipartimento per la trasformazione digitale.&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2022-03-18T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="eu" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/03/15/iniziano-lavori-SDK-SPID-CIE</id>
     <title>Iniziano i lavori per gli SDK OpenID Connect unificati di SPID e CIE </title>
