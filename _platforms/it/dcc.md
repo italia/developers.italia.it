@@ -1,7 +1,7 @@
 ---
 title: DCC
 subtitle: Certificazione verde COVID-19
-logo: https://www.dgc.gov.it/web/img/logo-eu.png
+logo: /assets/images/logo-eu@2x.png
 external_website: https://www.dgc.gov.it
 payoff: EU digital COVID certificate
 description: >
