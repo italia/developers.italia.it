@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-25T06:05:17+00:00</updated>
+  <updated>2022-03-25T15:09:43+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/03/25/community-call-sinergia-universita-pa</id>
+    <title>Community call: la sinergia possibile tra Università e Pubbliche amministrazioni</title>
+    <updated>2022-03-25T08:00:00+00:00</updated>
+
+    <summary>Il 6 aprile scopri come le Università possono contribuire alla trasformazione dei servizi pubblici digitali </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/03/25/community-call-sinergia-universita-pa">&lt;p&gt;Suona la campanella, iniziano le lezioni di design per la Pubblica amministrazione. La collaborazione tra l’Università e il mondo della PA può portare a &lt;strong&gt;risultati sorprendenti&lt;/strong&gt;: grazie a un accordo tra il Dipartimento per la trasformazione digitale e l’Università IUAV di Venezia, ad esempio, gli studenti del “Corso di laurea magistrale in Design del prodotto, della comunicazione e degli interni” hanno realizzato un &lt;a href=&quot;https://designers.italia.it/progetti/atlante-della-trasformazione-digitale/&quot;&gt;Atlante della trasformazione digitale della PA&lt;/a&gt;, frutto di progetto di ricerca dedicato alla mappatura degli &lt;strong&gt;ecosistemi dei servizi pubblici&lt;/strong&gt;. Ed è proprio sulla base di risultati come questo che Designers Italia intende promuovere il design nell’ambito pubblico e per il pubblico.&lt;/p&gt;
+
+&lt;p&gt;In questo momento di forte spinta data dalla trasformazione digitale della PA, la &lt;strong&gt;collaborazione con le Università può portare a un nuovo scenario di progettazione&lt;/strong&gt;, radicato nei principi di un approccio progettuale sistemico e utente-centrico. Il mondo del design, infatti, può cogliere l’occasione di considerare norme e procedure nel paradigma fondante della disciplina, affiancando la prospettiva della tecnologia e dell’economia (tipica del settore privato) con l’opportunità etica e normativa (peculiare del settore pubblico), e il punto di vista dell’utente-cittadino con quello delle istituzioni.&lt;/p&gt;
+
+&lt;p&gt;Consapevole del valore generato sia per le amministrazioni pubbliche sia per gli studenti della disciplina, Designers Italia intende così invitare &lt;strong&gt;professori, ricercatori, tesisti, studenti a entrare a far parte della community&lt;/strong&gt; e ad avere un ruolo attivo nella disseminazione della cultura progettuale nel settore pubblico.&lt;/p&gt;
+
+&lt;p&gt;Appuntamento dunque alla &lt;strong&gt;community call&lt;/strong&gt; di mercoledì &lt;strong&gt;6 aprile&lt;/strong&gt;, dove torneremo tra i banchi per parlare dell’Atlante della trasformazione digitale della PA e dare visibilità ad altri &lt;strong&gt;esempi virtuosi di collaborazione tra Università ed enti pubblici&lt;/strong&gt; nell’ambito della progettazione per la Pubblica Amministrazione, con l’obiettivo di raccontare le iniziative intraprese, ispirare interlocutori e, secondo una logica aperta, ampliare la conoscenza e le risorse sul tema.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/a6349415-b43f-4b63-8c92-c06a647a1cc0&quot;&gt;Registrati all’evento per partecipare&lt;/a&gt;&lt;/strong&gt;. Ti aspettiamo il &lt;strong&gt;6 aprile alle 15.30&lt;/strong&gt;!&lt;/p&gt;</content>
+    <published>2022-03-25T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="universita" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/03/18/come-eu-valuta-servizi-pubblici-digitali-egovernment-benchmark</id>
     <title>Come l’Unione Europea valuta i servizi pubblici digitali: l’eGovernment Benchmark</title>
