@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Community call - Design: la sinergia possibile tra Università e Pubbliche amministrazioni"
+title: "Community call: la sinergia possibile tra Università e Pubbliche amministrazioni"
 subtitle: "Il 6 aprile scopri come le Università possono contribuire alla trasformazione dei servizi pubblici digitali"
 date: 2022-03-25 10:00:00 +0200
 tags: developers designers universita
