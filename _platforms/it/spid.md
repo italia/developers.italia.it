@@ -126,7 +126,7 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-nodejs
       desc: SPID/CIE OIDC Federation Relying Party per Node.js
-    - title: AspNetCore SDK
+    - title: SDK per AspNetCore (beta)
       icon: github
       url: https://github.com/italia/spid-cie-oidc-aspnetcore
       desc: SPID/CIE OIDC Federation SDK per AspNetCore
