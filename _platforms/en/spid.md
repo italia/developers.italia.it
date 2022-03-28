@@ -117,7 +117,7 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
-  - OpenID Connect SDK:
+  - OpenID Connect SDKs:
     - title: SDK for Python
       icon: github
       url: https://github.com/italia/spid-cie-oidc-django
