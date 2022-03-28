@@ -118,7 +118,7 @@ resources:
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
   - OpenID Connect SDKs:
-    - title: SDK for Python
+    - title: SDK for Python (Django)
       icon: github
       url: https://github.com/italia/spid-cie-oidc-django
       desc: SPID/CIE OIDC Federation is a suite of Django applications designed to make it easy to build an Openid Connect Federation.
