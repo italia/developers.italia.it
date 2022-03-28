@@ -122,7 +122,7 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-django
       desc: SPID/CIE OIDC Federation è una collezione di applicazioni Django disegnate per rendere facile costruire e testare una Federazione Openid Connect.
-    - title: Nodejs SDK 
+    - title: SDK per Node.js (beta)
       icon: github
       url: https://github.com/italia/spid-cie-oidc-nodejs
       desc: SPID/CIE OIDC Federation Relying Party per Node.js
