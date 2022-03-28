@@ -36,7 +36,7 @@ resources:
       url: https://www.agid.gov.it/it/piattaforme/spid
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
-  - SAML2 SDK:
+  - SAML2 SDKs:
     - title: SDK for AspNetCore
       icon: github
       url: https://github.com/italia/spid-aspnetcore
