@@ -130,7 +130,7 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-aspnetcore
       desc: SPID/CIE OIDC Federation SDK per AspNetCore
-    - title: PHP SDK
+    - title: SDK per PHP (beta)
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: SPID/CIE OIDC Federation Relying Party per PHP
