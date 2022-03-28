@@ -36,7 +36,7 @@ resources:
       url: https://www.agid.gov.it/it/piattaforme/spid
       icon: file
       desc: Sito di AGID contenente la modulistica, i listini, le convenzioni e le deliberazioni che riguardano SPID
-  - SAML2 SDK:
+  - SDK SAML2:
     - title: SDK per PHP (basata su SimpleSAMLphp)
       icon: github
       url: https://github.com/italia/spid-php
