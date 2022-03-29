@@ -3,7 +3,7 @@ layout: post
 title: "Accessibilità migliorata con Bootstrap Italia 1.6, verso il rilascio di 2.0"
 subtitle: "In occasione del community lab del 23 marzo, abbiamo presentato gli ultimi aggiornamenti della libreria alla base di siti e servizi della PA"
 date: 2022-03-29 10:00:00 +0200
-tags: developers designers Bootstrap agid
+tags: developers designers bootstrap agid
 categories: news
 author: Michela Gabrieli
 image: /assets/icons/logo-it.png
