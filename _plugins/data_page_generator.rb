@@ -1,6 +1,6 @@
 # coding: utf-8
 # Generate pages from individual records in yml files
-# (c) 2014-2016 Adolfo Villafiorita
+# (c) 2014-2020 Adolfo Villafiorita
 # Distributed under the conditions of the MIT License
 
 module Jekyll
@@ -26,80 +26,138 @@ module Jekyll
     #
     # - `index_files` specifies if we want to generate named folders (true) or not (false)
     # - `dir` is the default output directory
-    # - `data` is the data defined in `_data.yml` of the record for which we are generating a page
+    # - `page_data_prefix` is the prefix used to output the page data
+    # - `data` is the data of the record for which we are generating a page
     # - `name` is the key in `data` which determines the output filename
-    # - `title` is the key in `data` which determines the output title (if none, the one pointed by `name` will be used)
+    # - `name_expr` is an expression for generating the output filename
+    # - `title` is the key in `data` which determines the page title
+    # - `title_expr` is an expression for generating the page title
     # - `template` is the name of the template for generating the page
     # - `extension` is the extension for the generated file
-    # - `defaults` is an object with additional data values
-    def initialize(site, base, index_files, dir, data, name, title, template, extension, defaults = {})
+    def initialize(site, base, index_files, dir, page_data_prefix, data, name, name_expr, title, title_expr, template, extension, debug)
       @site = site
       @base = base
 
+      if debug
+        puts "debug (datapage-gen) Record read:"
+        puts ">> #{data}"
+
+        puts "debug (datapage-gen) Configuration variables:"
+        [:index_files, :dir, :page_data_prefix, :name, :name_expr, :title, :title_expr, :template, :extension].each do |variable|
+          puts ">> #{variable}: #{eval(variable.to_s)}"
+        end
+      end
+
       # @dir is the directory where we want to output the page
       # @name is the name of the page to generate
+      # @name_expr is an expression for generating the name of the page
       #
       # the value of these variables changes according to whether we
       # want to generate named folders or not
-      if data[name] == nil
-        puts "error (datapage_gen). empty value for field '#{name}' in record #{data}"
-      else
-        filename = sanitize_filename(data[name]).to_s
-
-        @dir = dir + (index_files ? "/" + filename + "/" : "")
-        @name = (index_files ? "index" : filename) + "." + extension.to_s
-
-        self.process(@name)
-        self.read_yaml(File.join(base, '_layouts'), template + ".html")
-
-        # original method to set page title to data[name]
-        # self.data['title'] = data[name]
-
-        if title
-          self.data['title'] = data[title]
-        elsif data['publiccode'] && data['publiccode']['name']
-          self.data['title'] = data['publiccode']['name'] + ' - ' + defaults['title_suffix']
-        else
-          self.data['title'] = data[name]
+      if name_expr
+        record = data
+        raw_filename = eval(name_expr)
+        if raw_filename == nil
+          puts "error (datapage-gen). name_expr '#{name_expr}' generated an empty value in record #{data}"
+          return
         end
+        puts "debug (datapage-gen). using name_expr: '#{raw_filename}' (sanitized) will be used as the filename" if debug
+      else
+        raw_filename = data[name]
+        if raw_filename == nil
+          puts "error (datapage-gen). empty value for field '#{name}' in record #{data}"
+          return
+        end
+        puts "debug (datapage-gen). using name field: '#{raw_filename}' (sanitized) will be used as the filename" if debug
+      end
 
-        self.data.merge!(defaults)
-        # add all the information defined in _data for the current record to the
-        # current page (so that we can access it with liquid tags)
+      if title_expr
+        record = data
+        raw_title = eval(title_expr)
+        if raw_title == nil
+          puts "error (datapage-gen). title_expr '#{title_expr}' generated an empty value in record #{data}"
+          return
+        end
+        puts "debug (datapage-gen). using title_expr: '#{raw_title}' will be used the page title" if debug
+      else
+        raw_title = data[title]
+        if raw_title == nil
+          raw_title = raw_filename # for backwards compatibility
+          puts "debug (datapage-gen). empty title field: falling back to filename for the page title" if debug
+        end
+          puts "debug (datapage-gen). will use '#{raw_title}' as the page title" if debug
+      end
+
+      filename = sanitize_filename(raw_filename).to_s
+
+      @dir = dir + (index_files ? "/" + filename + "/" : "")
+      @name = (index_files ? "index" : filename) + "." + extension.to_s
+
+      self.process(@name)
+
+      if @site.layouts[template].path.end_with? 'html'
+        @path = @site.layouts[template].path.dup
+      else
+        @path = File.join(@site.layouts[template].path, @site.layouts[template].name)
+      end
+
+      base_path = @site.layouts[template].path
+      base_path.slice! @site.layouts[template].name
+      self.read_yaml(base_path, @site.layouts[template].name)
+
+      self.data['title'] = raw_title
+
+      # add all the information defined in _data for the current record to the
+      # current page (so that we can access it with liquid tags)
+      if page_data_prefix
+        self.data[page_data_prefix] = data
+      else
+        if data.key?('name')
+          data['_name'] = data['name']
+        end
         self.data.merge!(data)
       end
+
     end
   end
 
-  class DataPagesGenerator < Generator
+  class JekyllDatapageGenerator < Generator
     safe true
 
-    # generate loops over _config.yml/page_gen invoking the DataPage
-    # constructor for each record for which we want to generate a page
+    # the function =generate= loops over the =_config.yml/page_gen=
+    # specification, determining what sets of pages have to be generated,
+    # reading the data for each set and invoking the =DataPage=
+    # constructor for each record found in the data
 
     def generate(site)
-      # page_gen_dirs determines whether we want to generate index pages
-      # (name/index.html) or standard files (name.html). This information
-      # is passed to the DataPage constructor, which sets the @dir variable
-      # as required by this directive
+      # page_gen-dirs is a global option which determines whether we want to
+      # generate index pages (name/index.html) or HTML files (name.html) for
+      # all sets
       index_files = site.config['page_gen-dirs'] == true
 
-      # data contains the specification of the data for which we want to generate
-      # the pages (look at the README file for its specification)
+      # data contains the specification of all the datasets for which we want
+      # to generate individual pages (look at the README file for its documentation)
       data = site.config['page_gen']
       if data
         data.each do |data_spec|
           index_files_for_this_data = data_spec['index_files'] != nil ? data_spec['index_files'] : index_files
-          template = data_spec['template'] || data_spec['data']
-          name = data_spec['name']
-          title = data_spec['title']
-          dir = data_spec['dir'] || data_spec['data']
-          extension = data_spec['extension'] || "html"
-
-          if site.layouts.key? template
-            # records is the list of records defined in _data.yml
-            # for which we want to generate different pages
+          template         = data_spec['template'] || data_spec['data']
+          name             = data_spec['name']
+          name_expr        = data_spec['name_expr']
+          title            = data_spec['title']
+          title_expr       = data_spec['title_expr']
+          dir              = data_spec['dir'] || data_spec['data']
+          extension        = data_spec['extension'] || "html"
+          page_data_prefix = data_spec['page_data_prefix']
+          debug            = data_spec['debug']
+          
+          if not site.layouts.key? template
+            puts "error (datapage-gen). could not find template #{template}. Skipping dataset #{name}."
+          else
+            # records is the list of records for which we want to generate
+            # individual pages
             records = nil
+
             data_spec['data'].split('.').each do |level|
               if records.nil?
                 records = site.data[level]
@@ -107,18 +165,21 @@ module Jekyll
                 records = records[level]
               end
             end
+            if (records.kind_of?(Hash))
+              records = records.values
+            end
 
             # apply filtering conditions:
             # - filter requires the name of a boolean field
-            # - filter_condition evals a ruby expression
-            records = records.select { |r| r[data_spec['filter']] } if data_spec['filter']
+            # - filter_condition evals a ruby expression which can use =record= as argument
+            records = records.select { |record| record[data_spec['filter']] } if data_spec['filter']
             records = records.select { |record| eval(data_spec['filter_condition']) } if data_spec['filter_condition']
 
+            # we now have the list of all records for which we want to generate individual pages
+            # iterate and call the constructor
             records.each do |record|
-              site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, name, title, template, extension, data_spec['defaults'])
+              site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, page_data_prefix, record, name, name_expr, title, title_expr, template, extension, debug)
             end
-          else
-            puts "error (datapage_gen). could not find template #{template}" if not site.layouts.key? template
           end
         end
       end
@@ -140,7 +201,7 @@ module Jekyll
     # Thus, if you use the `extension` feature of this plugin, you
     # need to generate the links by hand
     def datapage_url(input, dir)
-      extension = Jekyll.configuration({})['page_gen-dirs'] ? '/' : '.html'
+      extension = @context.registers[:site].config['page_gen-dirs'] ? '/' : '.html'
       "#{dir}/#{sanitize_filename(input)}#{extension}"
     end
   end
