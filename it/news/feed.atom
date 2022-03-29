@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-03-29T06:04:48+00:00</updated>
+  <updated>2022-03-29T16:05:27+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,43 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap</id>
+    <title>Accessibilità migliorata con Bootstrap Italia 1.6, verso il rilascio di 2.0</title>
+    <updated>2022-03-29T08:00:00+00:00</updated>
+
+    <summary>In occasione del community lab del 23 marzo, abbiamo presentato gli ultimi aggiornamenti della libreria alla base di siti e servizi della PA </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap">&lt;p&gt;Una nuova tappa importante per il design system del Paese e per i servizi pubblici digitali: mercoledì 23 marzo, in occasione del community lab, due esperti del Dipartimento per la trasformazione digitale, Andrea Stagi, open source project leader, e Daniele Tabellini, UI/UX Designer, hanno fatto il punto sugli sviluppi di &lt;strong&gt;Bootstrap Italia 2.0&lt;/strong&gt;, nuovo tema di Bootstrap 5, e presentato &lt;strong&gt;Bootstrap Italia 1.6&lt;/strong&gt;, l’ultimo rilascio basato sul tema di Bootstrap 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bootstrap Italia&lt;/strong&gt; è uno dei tasselli fondamentali del &lt;a href=&quot;https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/&quot;&gt;design system del Paese&lt;/a&gt;, e contribuisce a creare servizi e siti più coerenti, familiari e usabili per le persone.&lt;/p&gt;
+
+&lt;p&gt;Durante l’incontro, seguito da 150 persone, Andrea e Daniele hanno sottolineato che gran parte delle migliorie e funzionalità legate alla versione 1.6 si concentrano proprio sull’&lt;strong&gt;accessibilità&lt;/strong&gt;, e sono state implementate e validate grazie alla collaborazione con Agenzia per l’Italia Digitale (&lt;strong&gt;AgID&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Nello specifico, come illustrato nel &lt;em&gt;changelog&lt;/em&gt; (&lt;a href=&quot;https://github.com/italia/bootstrap-italia/releases/tag/v1.6.0&quot;&gt;note di rilascio&lt;/a&gt;), questa versione porta diversi cambiamenti su tutti i &lt;strong&gt;componenti interattivi principali&lt;/strong&gt;, come &lt;em&gt;form e header&lt;/em&gt;, e un aggiornamento sostanziale dei &lt;strong&gt;&lt;em&gt;carousel&lt;/em&gt;&lt;/strong&gt; con l’adozione del plug-in &lt;a href=&quot;https://splidejs.com/&quot;&gt;Splide&lt;/a&gt;, più facile da curare a livello di accessibilità. Queste modifiche sono anche propedeutiche al passaggio a &lt;strong&gt;Bootstrap Italia 2.0&lt;/strong&gt;, che vedrà un primo rilascio beta nella prima metà di aprile. Maggiori informazioni sui prossimi passi sono reperibili nel &lt;a href=&quot;https://designers.italia.it/piano-attivita/&quot;&gt;piano attività&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Bootstrap Italia 1.6 è disponibile partendo dalla sua &lt;a href=&quot;https://italia.github.io/bootstrap-italia&quot;&gt;documentazione&lt;/a&gt; o attraverso la sua &lt;a href=&quot;https://github.com/italia/bootstrap-italia/&quot;&gt;&lt;em&gt;repository&lt;/em&gt; GitHub&lt;/a&gt;, nella quale è possibile contribuire segnalando problemi e proponendo integrazioni. In attesa del consolidamento di Bootstrap Italia 2.0, il nostro invito è di &lt;strong&gt;aggiornare da subito a questa versione siti e servizi della Pubblica Amministrazione&lt;/strong&gt; che già utilizzano Bootstrap Italia per portare benefici significativi all’esperienza utente.
+Tutte le persone interessate a lasciare il segno nel design system del Paese possono contribuire allo sviluppo di Bootstrap Italia 2.0 sulla &lt;em&gt;repository&lt;/em&gt; &lt;a href=&quot;https://github.com/italia/bootstrap-italia-next&quot;&gt;GitHub di lavorazione&lt;/a&gt;, con l’obiettivo che i futuri progetti di siti e servizi della Pubblica Amministrazione utilizzino direttamente questa versione.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=dQVy8DLPJbY&quot;&gt;Guarda il video completo del community lab&lt;/a&gt;&lt;/strong&gt; sul canale YouTube del Dipartimento per la trasformazione digitale e &lt;a href=&quot;/assets/images/posts/2022-03-29/Community_lab.pdf&quot;&gt;scarica la presentazione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per saperne di più resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;, continua a seguirci sui canali Twitter di &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-03-29T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="bootstrap" />
+    
+    <category term="agid" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/03/25/community-call-sinergia-universita-pa</id>
     <title>Community call: la sinergia possibile tra Università e Pubbliche amministrazioni</title>
