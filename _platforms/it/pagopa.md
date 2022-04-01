@@ -14,16 +14,6 @@ comingsoon: false
 layout: platform
 github_team: pagopa
 abilitante: true
-newsletterdata:
-    text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su pagoPA."
-    placeholdertext: mario.rossi@dev.software.it
-    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-pagoPA.htm"
-    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
-    inputs:
-        -
-          type: hidden
-          name: list
-          value: 5
 owners:
     - name: Presidenza del Consiglio dei Ministri
       url: http://www.governo.it/

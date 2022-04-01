@@ -116,10 +116,6 @@ it:
     home_hero: Il punto di riferimento per il software della Pubblica Amministrazione
     home_hero_button: Scopri di più
     home_hero_buttonurl: '/it/come-lo-uso'
-    home_newsletter_title: Iscriviti alla Newsletter
-    home_newsletter_placeholder: indirizzo email
-    home_newsletter_button: Iscriviti
-    home_newsletter_footer: Non ti assilleremo con troppe email, parola di sviluppatori (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
     home_platforms_title: Piattaforme
     home_platforms_viewall: Vedi tutte
     home_platforms_viewallurl: '/it/piattaforme'
@@ -134,9 +130,7 @@ it:
     home_news_expand: per saperne di più
     home_tags: Cerca per categoria
     home_tags_more: Altri filtri
-    newsletter_text: Iscriviti alla newsletter per ricevere aggiornamenti e novità. È una mailing list a basso traffico (promesso!) che ti aiuterà a rimanere in contatto con noi.
-    newsletter_privacy: Accetto la
-    newsletter_submit: Iscriviti
+    newsletter_text: Anche noi lottiamo ogni giorno per l’obiettivo “Zero mail da leggere”. Promettiamo d’inviarti poche mail e di rispettare i tuoi dati
     website: Sito web
     go_to_website: Vai al sito web
 
@@ -431,10 +425,6 @@ en:
     home_hero: A community of developers who design and code Italian digital public services
     home_hero_button: Learn more
     home_hero_buttonurl: '/en/how'
-    home_newsletter_title: Subscribe to our Newsletter
-    home_newsletter_placeholder: email address
-    home_newsletter_button: Subscribe
-    home_newsletter_footer: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise (<a href="https://teamdigitale.governo.it/it/privacy-newsletter-designers-developers.htm">privacy policy</a>).
     home_platforms_title: Platforms
     home_platforms_viewall: View all
     home_platforms_viewallurl: '/en/platforms'
@@ -450,8 +440,6 @@ en:
     home_tags: Browse by tag
     home_tags_more: More tags
     newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
-    newsletter_privacy: Accetto la
-    newsletter_submit: Subscribe
     website: Website
     go_to_website: Go to website
 
