@@ -18,4 +18,4 @@ Consapevole del valore generato sia per le amministrazioni pubbliche sia per gli
 
 Appuntamento dunque alla **community call** di mercoledì **6 aprile**, dove torneremo tra i banchi per parlare dell’Atlante della trasformazione digitale della PA e dare visibilità ad altri **esempi virtuosi di collaborazione tra Università ed enti pubblici** nell’ambito della progettazione per la Pubblica Amministrazione, con l’obiettivo di raccontare le iniziative intraprese, ispirare interlocutori e, secondo una logica aperta, ampliare la conoscenza e le risorse sul tema.
 
-**[Registrati all’evento per partecipare](https://mobilizon.it/events/a6349415-b43f-4b63-8c92-c06a647a1cc0)**. Ti aspettiamo il **6 aprile alle 15.30**!
+**[Registrati all’evento per partecipare](https://mobilizon.it/events/a6349415-b43f-4b63-8c92-c06a647a1cc0)**. Ti aspettiamo il **6 aprile alle 15.30** [a questo indirizzo](https://blue.meet.garr.it/b/ric-h2n-rc5-lkj)!
