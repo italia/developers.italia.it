@@ -134,10 +134,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: SPID/CIE OIDC Federation Relying Party per PHP
-    - title: SDK per Java Spring
+    - title: SDK per Java
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
-      desc: Libreria nativa per integrare SPID e CIE OIDC in Java Spring
+      desc: Libreria nativa per integrare SPID e CIE OIDC in Java con example project in Spring
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github

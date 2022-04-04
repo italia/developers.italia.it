@@ -137,7 +137,7 @@ resources:
     - title: SDK for Spring
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
-      desc: Native library for integrating SPID and CIE OIDC in Java Spring applications
+      desc: Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github
