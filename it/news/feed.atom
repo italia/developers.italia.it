@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-04-05T06:05:10+00:00</updated>
+  <updated>2022-04-05T10:24:43+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,47 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/04/05/guida-software-libero</id>
+    <title>Guida allo sviluppo e gestione di software libero</title>
+    <updated>2022-04-05T08:00:00+00:00</updated>
+
+    <summary>Pubblicato il documento che insegna come utilizzare, sviluppare e gestire correttamente il software libero nella sfera pubblica </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/04/05/guida-software-libero">&lt;p&gt;Con l’ultimo aggiornamento, Developers Italia ha &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;pubblicato su Docs Italia&lt;/a&gt; la versione completa della &lt;strong&gt;Guida allo sviluppo e gestione di software libero&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La guida, realizzata da Developers Italia in collaborazione con la community, è una raccolta di buone pratiche utili a supportare le amministrazioni pubbliche nello sviluppo e gestione del software e delle politiche a esso connesse. È suddivisa in &lt;strong&gt;tre capitoli&lt;/strong&gt;, dedicati alle specifiche categorie professionali che lavorano con il software della PA: i responsabili e le responsabili politiche, le amministratrici e gli amministratori pubblici, gli sviluppatori e le sviluppatrici. Ciascun capitolo contiene indicazioni e consigli pratici su &lt;strong&gt;come gestire e sviluppare correttamente il software in modo aperto&lt;/strong&gt;, come adottarlo seguendo le buone pratiche e quali sono gli accorgimenti più importanti per il mondo pubblico.&lt;/p&gt;
+
+&lt;h3 id=&quot;perché-una-guida-per-il-software-libero&quot;&gt;Perché una guida per il software libero&lt;/h3&gt;
+
+&lt;p&gt;Il &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/index.html&quot;&gt;Codice dell’Amministrazione Digitale&lt;/a&gt; (CAD) impone alle pubbliche amministrazioni di &lt;strong&gt;adottare software libero ogni qual volta sia possibile&lt;/strong&gt;. L’eventuale non adozione deve essere adeguatamente motivata da un atto formale depositato e protocollato all’interno della «&lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/valutazione-comparativa.html&quot;&gt;valutazione comparativa&lt;/a&gt;».
+Lo scopo di questa guida è quindi aiutare le Pubbliche Amministrazioni italiane a rispettare questo requisito offrendo soluzioni pratiche apprese sul campo.&lt;/p&gt;
+
+&lt;h3 id=&quot;per-le-responsabili-politiche-e-i-responsabili-politici&quot;&gt;Per le responsabili politiche e i responsabili politici&lt;/h3&gt;
+
+&lt;p&gt;I soggetti coinvolti nella definizione delle politiche e delle regole applicate nello sviluppo di servizi e soluzioni software per la PA hanno la necessità di essere al corrente dei vantaggi e caratteristiche del software libero. Il &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/per-le-responsabili-politiche-e-i-responsabili-politici.html&quot;&gt;capitolo&lt;/a&gt; dedicato illustra come gestire correttamente il software libero, quali sono i suoi requisiti di trasparenza, responsabilità e verificabilità e come metterli in pratica.&lt;/p&gt;
+
+&lt;h3 id=&quot;per-le-amministratrici-e-gli-amministratori&quot;&gt;Per le amministratrici e gli amministratori&lt;/h3&gt;
+
+&lt;p&gt;Il lavoro di chi sviluppa software per la Pubblica Amministrazione ha un impatto diretto sulla qualità dei servizi offerti alla cittadinanza. La &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/per-chi-sviluppa-il-software.html&quot;&gt;sezione&lt;/a&gt; della guida dedicata a queste figure professionali mostra come preparare il codice a contributi esterni, come aiutare a diminuire il debito tecnico e come imparare a mantenere il codice sotto controllo di versione grazie a degli strumenti di test automatizzati, la nota &lt;a href=&quot;https://medium.com/@Developers_Italia/come-e-perch%C3%A9-automatizzare-il-controllo-qualit%C3%A0-nello-sviluppo-software-aab21cf72751&quot;&gt;Continuous Integration&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;per-contribuire&quot;&gt;Per contribuire&lt;/h3&gt;
+
+&lt;p&gt;La guida è disponibile e consultabile liberamente su &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero/it/stabile/index.html&quot;&gt;Docs Italia&lt;/a&gt;: qualsiasi contributo è benvenuto! Se vuoi parlarne, unisciti alla conversazione su &lt;a href=&quot;https://forum.italia.it/c/software-open-source-per-la-pa/49&quot;&gt;Forum Italia&lt;/a&gt; o invia i tuoi suggerimenti direttamente su &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il Team di Developers Italia&lt;/p&gt;</content>
+    <published>2022-04-05T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap</id>
     <title>Accessibilità migliorata con Bootstrap Italia 1.6, verso il rilascio di 2.0</title>
