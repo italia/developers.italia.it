@@ -34,13 +34,13 @@
 <meta property="og:url" content="https://developers.italia.it/en/spid/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-04-06T06:04:54+00:00" />
+<meta property="article:published_time" content="2022-04-06T08:33:09+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SPID" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"headline":"SPID","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/spid/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.","@type":"BlogPosting","url":"https://developers.italia.it/en/spid/","dateModified":"2022-04-06T06:04:54+00:00","datePublished":"2022-04-06T06:04:54+00:00","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"headline":"SPID","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/spid/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"SPID is the digital identity card for the citizens: a single credential system, with a verified identity, that can be integrated on public and private websites.","@type":"BlogPosting","url":"https://developers.italia.it/en/spid/","dateModified":"2022-04-06T08:33:09+00:00","datePublished":"2022-04-06T08:33:09+00:00","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,7 +48,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202204060604" rel="stylesheet">
+  <link href="/dist/main.css?202204060833" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -857,24 +857,30 @@ Citizens can get SPID through a series of private companies under agreements (kn
                 <a class="nav-item nav-link " id="resourcegroup-2"
                     data-toggle="tab" href="#resourcecontent-2" role="tab"
                     aria-controls="resourcecontent-2"
-                    aria-selected="false">SDK</a>
+                    aria-selected="false">SAML2 SDKs</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-3"
                     data-toggle="tab" href="#resourcecontent-3" role="tab"
                     aria-controls="resourcecontent-3"
-                    aria-selected="false">Proxy</a>
+                    aria-selected="false">OpenID Connect SDKs</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-4"
                     data-toggle="tab" href="#resourcecontent-4" role="tab"
                     aria-controls="resourcecontent-4"
-                    aria-selected="false">Graphic resources</a>
+                    aria-selected="false">Proxy</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-5"
                     data-toggle="tab" href="#resourcecontent-5" role="tab"
                     aria-controls="resourcecontent-5"
+                    aria-selected="false">Graphic resources</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-6"
+                    data-toggle="tab" href="#resourcecontent-6" role="tab"
+                    aria-controls="resourcecontent-6"
                     aria-selected="false">Tools</a>
                 
             </div>
@@ -897,8 +903,8 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
-                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">Technical rules (consolidated version)</a>
-                        <p>The SPID technical rules with all the fixes applied, in an easy to read version published on Docs Italia</p>
+                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">SAML2 Technical rules (consolidated version)</a>
+                        <p>The SPID SAML2 technical rules with all the fixes applied, in an easy to read version published on Docs Italia</p>
                     </li>
                     
                     <li>
@@ -910,7 +916,7 @@ Citizens can get SPID through a series of private companies under agreements (kn
                         </span>
                         
                         <a href="https://registry.spid.gov.it/identity-providers" target="_blank" class="d-block project__resources-itemtitle">Identity Providers metadata</a>
-                        <p>SAML Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date</p>
+                        <p>SAML2 Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date</p>
                     </li>
                     
                     <li>
@@ -1191,6 +1197,75 @@ Citizens can get SPID through a series of private companies under agreements (kn
                            </svg>
                         </span>
                         
+                        <a href="https://github.com/italia/spid-cie-oidc-django" target="_blank" class="d-block project__resources-itemtitle">SDK for Python (Django)</a>
+                        <p>SPID/CIE OIDC Federation is a suite of Django applications designed to make it easy to build an Openid Connect Federation.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-nodejs" target="_blank" class="d-block project__resources-itemtitle">SDK for Nodejs</a>
+                        <p>The SPID/CIE OIDC Federation Relying Party, written in Node.js</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-aspnetcore" target="_blank" class="d-block project__resources-itemtitle">SDK for AspNetCore</a>
+                        <p>SPID/CIE OIDC Federation SDK for AspNetCore</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-php" target="_blank" class="d-block project__resources-itemtitle">SDK for PHP</a>
+                        <p>SPID/CIE OIDC Federation Relying Party, for PHP</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-java" target="_blank" class="d-block project__resources-itemtitle">SDK for Spring</a>
+                        <p>Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-4"
+                role="tabpanel" aria-labelledby="resourcegroup-4">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
                         <a href="https://github.com/italia/Satosa-Saml2Spid" target="_blank" class="d-block project__resources-itemtitle">IdentityPython SATOSA</a>
                         <p>Python Proxy with Docker image to enable traditional SAML2 SPs in SPID</p>
                     </li>
@@ -1235,8 +1310,8 @@ Citizens can get SPID through a series of private companies under agreements (kn
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-4"
-                role="tabpanel" aria-labelledby="resourcegroup-4">
+            <div class="tab-pane fade show " id="resourcecontent-5"
+                role="tabpanel" aria-labelledby="resourcegroup-5">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1292,8 +1367,8 @@ Citizens can get SPID through a series of private companies under agreements (kn
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-5"
-                role="tabpanel" aria-labelledby="resourcegroup-5">
+            <div class="tab-pane fade show " id="resourcecontent-6"
+                role="tabpanel" aria-labelledby="resourcegroup-6">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1410,7 +1485,7 @@ Citizens can get SPID through a series of private companies under agreements (kn
 </ul>
     
     <ul class="section-nav">
-      <li class="toc-entry toc-h2"><a href="#resources">Documentation, SDK, Proxy, Graphic resources, Tools</a></li>
+      <li class="toc-entry toc-h2"><a href="#resources">Documentation, SAML2 SDKs, OpenID Connect SDKs, Proxy, Graphic resources, Tools</a></li>
     </ul>
     
     

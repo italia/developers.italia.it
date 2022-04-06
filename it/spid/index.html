@@ -34,13 +34,13 @@
 <meta property="og:url" content="https://developers.italia.it/it/spid/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-04-06T06:04:54+00:00" />
+<meta property="article:published_time" content="2022-04-06T08:33:09+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SPID" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"headline":"SPID","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/spid/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.","@type":"BlogPosting","url":"https://developers.italia.it/it/spid/","dateModified":"2022-04-06T06:04:54+00:00","datePublished":"2022-04-06T06:04:54+00:00","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"headline":"SPID","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/spid/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Lo SPID è una credenziale unica di accesso, con identità verificata, integrabile da siti pubblici e privati.","@type":"BlogPosting","url":"https://developers.italia.it/it/spid/","dateModified":"2022-04-06T08:33:09+00:00","datePublished":"2022-04-06T08:33:09+00:00","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,7 +48,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202204060604" rel="stylesheet">
+  <link href="/dist/main.css?202204060833" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -858,24 +858,30 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
                 <a class="nav-item nav-link " id="resourcegroup-2"
                     data-toggle="tab" href="#resourcecontent-2" role="tab"
                     aria-controls="resourcecontent-2"
-                    aria-selected="false">SDK</a>
+                    aria-selected="false">SDK SAML2</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-3"
                     data-toggle="tab" href="#resourcecontent-3" role="tab"
                     aria-controls="resourcecontent-3"
-                    aria-selected="false">Proxy</a>
+                    aria-selected="false">SDK OpenID Connect</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-4"
                     data-toggle="tab" href="#resourcecontent-4" role="tab"
                     aria-controls="resourcecontent-4"
-                    aria-selected="false">Risorse grafiche</a>
+                    aria-selected="false">Proxy</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-5"
                     data-toggle="tab" href="#resourcecontent-5" role="tab"
                     aria-controls="resourcecontent-5"
+                    aria-selected="false">Risorse grafiche</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-6"
+                    data-toggle="tab" href="#resourcecontent-6" role="tab"
+                    aria-controls="resourcecontent-6"
                     aria-selected="false">Tool</a>
                 
             </div>
@@ -898,7 +904,7 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
                            </svg>
                         </span>
                         
-                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">Regole Tecniche consolidate</a>
+                        <a href="https://docs.italia.it/italia/spid/spid-regole-tecniche" target="_blank" class="d-block project__resources-itemtitle">Regole Tecniche consolidate per SAML2</a>
                         <p>Le regole tecniche di SPID con applicati tutti gli avvisi e le correzioni ai refusi, consultabili comodamente su Docs Italia</p>
                     </li>
                     
@@ -910,8 +916,8 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
                            </svg>
                         </span>
                         
-                        <a href="https://registry.spid.gov.it/identity-providers" target="_blank" class="d-block project__resources-itemtitle">Metadata degli Identity Provider</a>
-                        <p>Metadata degli Identity Provider, che i Service Provider devono mantenere aggiornati</p>
+                        <a href="https://registry.spid.gov.it/identity-providers" target="_blank" class="d-block project__resources-itemtitle">SAML2 Metadata degli Identity Provider</a>
+                        <p>SAML2 Metadata degli Identity Provider, che i Service Provider devono mantenere aggiornati</p>
                     </li>
                     
                     <li>
@@ -1192,6 +1198,75 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
                            </svg>
                         </span>
                         
+                        <a href="https://github.com/italia/spid-cie-oidc-django" target="_blank" class="d-block project__resources-itemtitle">SDK per Python (Django)</a>
+                        <p>SPID/CIE OIDC Federation è una collezione di applicazioni Django disegnate per rendere facile costruire e testare una Federazione Openid Connect.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-nodejs" target="_blank" class="d-block project__resources-itemtitle">SDK per Node.js</a>
+                        <p>SPID/CIE OIDC Federation Relying Party per Node.js</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-aspnetcore" target="_blank" class="d-block project__resources-itemtitle">SDK per AspNetCore</a>
+                        <p>SPID/CIE OIDC Federation SDK per AspNetCore</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-php" target="_blank" class="d-block project__resources-itemtitle">SDK per PHP</a>
+                        <p>SPID/CIE OIDC Federation Relying Party per PHP</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/spid-cie-oidc-java" target="_blank" class="d-block project__resources-itemtitle">SDK per Java</a>
+                        <p>Libreria nativa per integrare SPID e CIE OIDC in Java con example project in Spring</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-4"
+                role="tabpanel" aria-labelledby="resourcegroup-4">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
                         <a href="https://github.com/italia/Satosa-Saml2Spid" target="_blank" class="d-block project__resources-itemtitle">IdentityPython SATOSA</a>
                         <p>Python Proxy con immagine Docker per abilitare dei SP SAML2 tradizionali in SPID</p>
                     </li>
@@ -1236,8 +1311,8 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-4"
-                role="tabpanel" aria-labelledby="resourcegroup-4">
+            <div class="tab-pane fade show " id="resourcecontent-5"
+                role="tabpanel" aria-labelledby="resourcegroup-5">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1293,8 +1368,8 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-5"
-                role="tabpanel" aria-labelledby="resourcegroup-5">
+            <div class="tab-pane fade show " id="resourcecontent-6"
+                role="tabpanel" aria-labelledby="resourcegroup-6">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -1411,7 +1486,7 @@ I metadati degli Identity Provider sono disponibili presso lo <a href="https://r
 </ul>
     
     <ul class="section-nav">
-      <li class="toc-entry toc-h2"><a href="#resources">Documentazione, SDK, Proxy, Risorse grafiche, Tool</a></li>
+      <li class="toc-entry toc-h2"><a href="#resources">Documentazione, SDK SAML2, SDK OpenID Connect, Proxy, Risorse grafiche, Tool</a></li>
     </ul>
     
     
