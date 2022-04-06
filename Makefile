@@ -39,5 +39,5 @@ jekyll-build:
 	NODE_ENV=production npm run build
 include-npm-deps:
 	npm ci
-build: | build-bundle-deployment include-npm-deps download-data jekyll-build
+build: | bundle-install-deployment include-npm-deps download-data jekyll-build
 build-test: | build test
