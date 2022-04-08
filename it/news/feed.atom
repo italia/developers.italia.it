@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-04-08T06:05:06+00:00</updated>
+  <updated>2022-04-08T11:29:08+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/04/08/community-lab-UI-Kit-introduzione-design-token</id>
+    <title>Community lab: il nuovo UI Kit e l’introduzione dei design token</title>
+    <updated>2022-04-08T08:00:00+00:00</updated>
+
+    <summary>Il design system del Paese si rinnova ulteriormente. Ne parliamo il 20 aprile nel terzo appuntamento dedicato a chi crea servizi digitali. </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/04/08/community-lab-UI-Kit-introduzione-design-token">&lt;p&gt;Terzo appuntamento con la serie di community lab dedicata al &lt;a href=&quot;https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/&quot;&gt;&lt;em&gt;design system&lt;/em&gt; del Paese&lt;/a&gt;, una delle risorse fondamentali per prototipare e progettare siti internet e servizi digitali semplici, usabili e accessibili. Dopo aver approfondito l’&lt;a href=&quot;https://www.youtube.com/watch?v=2Ph4VSyi9lU&amp;amp;t=5s&quot;&gt;uso di Git&lt;/a&gt; e di &lt;a href=&quot;https://www.youtube.com/watch?v=dQVy8DLPJbY&amp;amp;t=5s&quot;&gt;Bootstrap Italia 2.0&lt;/a&gt;, &lt;strong&gt;mercoledì 20 aprile&lt;/strong&gt; presenteremo la libreria di progettazione interfacce rinnovata (UI Kit) e racconteremo l’introduzione dei &lt;em&gt;design token&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stefania Guerra&lt;/strong&gt;, UX/UI designer al Dipartimento per la trasformazione digitale, presenterà il nuovo UI Kit, la libreria di componenti visivi alla base delle interfacce dei servizi pubblici. La libreria è stata totalmente riorganizzata e migrata a Figma, uno strumento di progettazione e prototipazione diventato lo standard nell’industria del design. Stefania ci mostrerà l’approccio e le funzionalità native derivanti dal passaggio a Figma e un esempio pratico d’uso in un progetto.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Francesco Improta&lt;/strong&gt;, UX/UI designer al Dipartimento per la trasformazione digitale, racconterà cosa sono i &lt;em&gt;design token&lt;/em&gt; e come possono favorire la collaborazione fra design e sviluppo, creando un vocabolario condiviso fra tutte le figure impegnate in un progetto. Francesco ci aiuterà a capire, inoltre, come questo approccio apre nuove possibilità di personalizzazione e uso di una libreria di componenti.&lt;/p&gt;
+
+&lt;p&gt;Come sempre, in coda all’incontro ci sarà anche uno spazio per fare domande e portare il proprio contributo.&lt;/p&gt;
+
+&lt;p&gt;L’appuntamento è per &lt;strong&gt;mercoledì 20 aprile alle 15:30&lt;/strong&gt;. &lt;a href=&quot;https://mobilizon.it/events/c87982c1-ee55-4991-adf1-c830ffe2e36b&quot;&gt;&lt;strong&gt;Registrati all’evento&lt;/strong&gt;&lt;/a&gt; per partecipare. Ti aspettiamo!&lt;/p&gt;</content>
+    <published>2022-04-08T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+
+    <author>
+      <name>Gianvito Fanelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/04/05/guida-software-libero</id>
     <title>Guida allo sviluppo e gestione di software libero</title>
