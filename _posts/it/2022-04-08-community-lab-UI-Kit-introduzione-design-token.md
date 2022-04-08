@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Community lab: il nuovo UI Kit e l’introduzione dei design token"
-subtitle: "Il *design system* del Paese si rinnova ulteriormente. Ne parliamo il 20 aprile nel terzo appuntamento dedicato a chi crea servizi digitali."
+subtitle: "Il design system del Paese si rinnova ulteriormente. Ne parliamo il 20 aprile nel terzo appuntamento dedicato a chi crea servizi digitali."
 date: 2022-04-08 10:00:00 +0200
 tags: developers designers designsystem 
 categories: news
