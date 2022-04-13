@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-04-13T06:05:09+00:00</updated>
+  <updated>2022-04-13T11:20:42+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,48 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/04/13/pa-universita-progettare-servizi-pubblici-insieme</id>
+    <title>PA e Università: progettare servizi pubblici, insieme</title>
+    <updated>2022-04-13T08:00:00+00:00</updated>
+
+    <summary>È disponibile la registrazione della community call del 6 aprile. Rivivila con noi </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/04/13/pa-universita-progettare-servizi-pubblici-insieme">&lt;p&gt;La community call dello scorso 6 aprile ha visto come protagonista assoluto il design dei servizi per la Pubblica Amministrazione e il ruolo virtuoso che può avere la collaborazione tra PA e Università.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gianni Sinni&lt;/strong&gt;, professore dell’Università Iuav di Venezia, ha mostrato un esempio recente di questa sinergia: l’&lt;a href=&quot;http://designers.italia.it/progetti/atlante-della-trasformazione-digitale/&quot;&gt;Atlante della trasformazione digitale della PA&lt;/a&gt;, realizzato nel corso del Laboratorio di design della comunicazione, proprio in collaborazione con il Dipartimento per la trasformazione digitale. Dopo il suo intervento, hanno preso la parola alcuni degli studenti che hanno realizzato l’Atlante. Tra loro, Enrico Pasqualetto si è soffermato sul capitolo dedicato ai “nodi” dell’assistenza socio-sanitaria, alla complessità dei servizi e agli archetipi di utenti dei servizi pubblici correlati.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Anna Meroni&lt;/strong&gt;, professoressa nel corso di Product Service System Design e vicepreside della Scuola del Design del Politecnico di Milano, ha poi illustrato alcune iniziative di formazione rivolte a studenti e ricercatori nell’ambito della Pubblica Amministrazione. Ha poi lasciato la parola a uno dei suoi studenti, Elia Mottemi, che ha raccontato il progetto di digitalizzazione di alcuni processi organizzativi di Croce Rossa Italiana, svolto in collaborazione con il Politecnico.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Toti di Dio&lt;/strong&gt;, professore dell’Università degli Studi di Palermo, ha ripercorso l’esperienza del &lt;a href=&quot;https://www.easyrights.eu/palermo-hackathon-2&quot;&gt;Palermo Hackathon&lt;/a&gt; organizzato da EasyRights a dicembre 2021. Il fine dell’iniziativa era realizzare uno spazio wiki per aiutare i migranti a cercare lavoro. Il team vincitore ha ripercorso il lavoro di ricerca e progettazione fatto per rendere l’architettura dell’informazione e l’interfaccia usabile e accessibile a un pubblico di persone straniere.&lt;/p&gt;
+
+&lt;p&gt;In chiusura, come sempre, un utile spazio di confronto per le domande del pubblico.&lt;/p&gt;
+
+&lt;h3 id=&quot;approfondisci&quot;&gt;Approfondisci&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Guarda il &lt;a href=&quot;https://www.youtube.com/watch?v=-3cQruMCBPg&quot;&gt;video completo della community call&lt;/a&gt;&lt;/strong&gt; sul canale YouTube del Dipartimento per la trasformazione digitale.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/images/posts/2022-04-13/Community_Call_Designers_Italia.pdf&quot;&gt;Scarica la presentazione della community call&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per saperne di più &lt;strong&gt;resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;&lt;/strong&gt;, continua a seguirci sui canali Twitter di &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il team di Designers e Developers Italia&lt;/p&gt;</content>
+    <published>2022-04-13T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+    <category term="servizipubblici" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/04/08/community-lab-UI-Kit-introduzione-design-token</id>
     <title>Community lab: il nuovo UI Kit e l’introduzione dei design token</title>
