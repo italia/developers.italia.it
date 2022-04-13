@@ -28,4 +28,4 @@ In chiusura, come sempre, un utile spazio di confronto per le domande del pubbli
 
 Per saperne di più **resta in contatto su [Slack](https://slack.developers.italia.it)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
 
-Il team di Designers e Developer Italia
+Il team di Designers e Developers Italia
