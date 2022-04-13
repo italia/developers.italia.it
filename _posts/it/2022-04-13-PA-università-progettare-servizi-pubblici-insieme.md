@@ -24,7 +24,7 @@ In chiusura, come sempre, un utile spazio di confronto per le domande del pubbli
 
 **Guarda il [video completo della community call](https://www.youtube.com/watch?v=-3cQruMCBPg)** sul canale YouTube del Dipartimento per la trasformazione digitale.
 
-Scarica la presentazione della community call.
+[Scarica la presentazione della community call](/assets/images/posts/2022-04-13/Community_Call_Designers_Italia.pdf).
 
 Per saperne di più **resta in contatto su [Slack](https://slack.developers.italia.it)**, continua a seguirci sui canali Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
 
