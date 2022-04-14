@@ -9,7 +9,7 @@ const client = new elasticsearch.Client({
 });
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
-  const must = [{ term: { type: 'software' } }];
+  const must = [{ term: { _type: 'software' } }];
   if (searchValue) {
     must.push({
       multi_match: {
@@ -75,17 +75,17 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
             should: [
               {
                 bool: {
-                  must: [{ term: { type: 'news' } }, { term: { lang } }],
+                  must: [{ term: { _type: 'news' } }, { term: { lang } }],
                 },
               },
               {
                 bool: {
-                  must: [{ term: { type: 'platform' } }, { term: { lang } }],
+                  must: [{ term: { _type: 'platform' } }, { term: { lang } }],
                 },
               },
-              { term: { type: 'platform' } },
-              { term: { type: 'software' } },
-              { term: { type: 'administration' } },
+              { term: { _type: 'platform' } },
+              { term: { _type: 'software' } },
+              { term: { _type: 'administration' } },
             ],
           },
         },
@@ -102,7 +102,7 @@ export const queryAdministration = async ({ searchValue, filters, sortBy, from, 
       filter: buildFilter(filters),
       must: [
         searchValue ? { multi_match: { query: searchValue, fields: ['it-riuso-codiceIPA-label'] } } : null,
-        { term: { type: 'administration' } },
+        { term: { _type: 'administration' } },
       ],
     },
   };
@@ -112,7 +112,7 @@ export const queryAdministration = async ({ searchValue, filters, sortBy, from, 
 export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }) => {
   const query = {
     bool: {
-      filter: [...buildFilter(filters), { term: { type: 'platform' } }, { term: { lang } }],
+      filter: [...buildFilter(filters), { term: { _type: 'platform' } }, { term: { lang } }],
       must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
     },
   };
@@ -122,7 +122,7 @@ export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }
 export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => {
   const query = {
     bool: {
-      filter: [...buildFilter(filters), { term: { type: 'api' } }, { term: { lang } }],
+      filter: [...buildFilter(filters), { term: { _type: 'api' } }, { term: { lang } }],
       must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
     },
   };
