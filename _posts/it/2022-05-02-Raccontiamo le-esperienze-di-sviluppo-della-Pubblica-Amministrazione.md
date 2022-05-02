@@ -26,6 +26,6 @@ Questo è solo l’inizio. Nel rispetto della filosofia *open* vogliamo usare il
 
 Visita il [nuovo blog di Developers Italia](https://medium.com/developers-italia/)
 
-Mandaci la tua idea scrivendo a contatti@developers.italia.it con una breve presentazione di cosa fai, per quale ente pubblico lavori e di quale esperienza di sviluppo intendi parlare.
+Mandaci la tua idea scrivendo a [contatti@developers.italia.it](mailto:contatti@developers.italia.it) con una breve presentazione di cosa fai, per quale ente pubblico lavori e di quale esperienza di sviluppo intendi parlare.
 
 Hai suggerimenti o idee? Ti ascoltiamo. 
