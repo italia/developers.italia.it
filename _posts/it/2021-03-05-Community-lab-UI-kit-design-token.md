@@ -20,6 +20,7 @@ Nella seconda parte dell’incontro, Francesco Improta si è soffermato sull'imp
 Come in ogni progetto di Designers Italia e Developers Italia, aspettiamo il fondamentale contributo della community.
 Se vuoi contribuire, puoi farlo seguendo e commentando pubblicamente i lavori in corso sul nuovo UI kit (attualmente alla versione 3.0.0-alpha.1), direttamente nello spazio in basso nella [pagina dedicata](https://www.figma.com/community/file/1098285931334972883) o in un punto esatto nel file. Oppure puoi [duplicare il file](https://www.figma.com/community/file/1098285931334972883) per provarlo e poi scriverci nel canale [#design-ui-kit](https://developersitalia.slack.com/archives/C9N62GX8E) di Slack.
 
-Ti ricordiamo che puoi rivedere il [video completo del community lab](https://www.youtube.com/watch?v=1UKjfSyox-k) sul canale YouTube del Dipartimento per la trasformazione digitale e scaricare la presentazione.
+Ti ricordiamo che puoi rivedere il [video completo del community lab](https://www.youtube.com/watch?v=1UKjfSyox-k)
+sul canale YouTube del Dipartimento per la trasformazione digitale e [scaricare la presentazione](/assets/images/posts/2022-05-03/200422_Community_lab.pdf).
 
 Per saperne di più resta in contatto su [Slack](https://slack.developers.italia.it/), continua a seguirci sui canali Twitter di [Designers Italia](https://twitter.com/DesignersITA) e [Developers Italia](https://twitter.com/developersITA).
