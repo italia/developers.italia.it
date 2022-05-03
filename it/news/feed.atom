@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-03T09:11:50+00:00</updated>
+  <updated>2022-05-03T15:06:14+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,44 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/05/03/Community-lab-UI-kit-design-token</id>
+    <title>Community lab: a che punto siamo con UI kit e design token?</title>
+    <updated>2022-05-03T08:00:00+00:00</updated>
+
+    <summary>Nell’appuntamento del 20 aprile, gli esperti di Designers Italia hanno mostrato gli sviluppi sulla migrazione dello UI kit a Figma e l’implementazione dei design token </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/05/03/Community-lab-UI-kit-design-token">&lt;p&gt;Continuano i lavori per il &lt;em&gt;design system&lt;/em&gt; del Paese, lo strumento che raggruppa i principi e le risorse per semplificare e rendere più facile, economica ed efficace la progettazione e lo sviluppo di servizi più semplici, accessibili, equi e inclusivi.&lt;/p&gt;
+
+&lt;p&gt;Nell’ultimo Community lab, il nostro appuntamento rivolto alle figure tecniche si occupano di trasformazione digitale della PA, Stefania Guerra, Francesco Improta e Daniele Tabellini, esperti di UI/UX design nel Dipartimento per la trasformazione digitale, hanno mostrato lo stato dei lavori su due fronti molto importanti: la &lt;strong&gt;migrazione a Figma dello UI kit&lt;/strong&gt;, la raccolta di componenti riutilizzabili per progettare interfacce, e l’&lt;strong&gt;implementazione dei design token&lt;/strong&gt;, uno strumento che facilita la collaborazione fra chi progetta e chi sviluppa.&lt;/p&gt;
+
+&lt;p&gt;Partiamo dalla prima novità. Secondo il &lt;a href=&quot;https://uxtools.co/survey-2021/&quot;&gt;Design Tools Survey 2021&lt;/a&gt;, Figma è oggi lo strumento più utilizzato dai designer nel mondo. Negli ultimi anni, Figma è diventato uno strumento indispensabile nel flusso di lavoro di designer e sviluppatori, grazie alle sue funzionalità avanzate di progettazione e collaborazione in tempo reale. Stefania Guerra ha raccontato quindi la necessità di &lt;strong&gt;migrare da Sketch a Figma&lt;/strong&gt; lo UI kit, riprogettando i componenti per sfruttare tutte le funzionalità native come &lt;em&gt;auto layout e variant&lt;/em&gt;. Mantenendo  l’approccio aperto alla progettazione che ha sempre contraddistinto Designers Italia, lo UI kit sarà utilizzabile anche su Sketch e Adobe XD, grazie a un’esportazione dedicata disponibile su GitHub.&lt;/p&gt;
+
+&lt;p&gt;Nella seconda parte dell’incontro, Francesco Improta si è soffermato sull’implementazione dei design token. I &lt;strong&gt;design token&lt;/strong&gt; sono &lt;em&gt;variabili che contengono tutte le informazioni alla base del *design system**, come colori, tipografia, spaziature, stili e animazioni. Provando a immaginarli, i *design token&lt;/em&gt; possono essere considerati come dei veri e propri mattoncini alla base delle interfacce. Il loro beneficio principale è quindi assicurare una maggiore coerenza nella progettazione e sviluppo di interfacce digitali. Oltre a migliorare la progettazione delle interfacce, i &lt;em&gt;design token&lt;/em&gt; hanno anche un impatto positivo per chi lavora al codice: permettono, infatti, di &lt;em&gt;sincronizzare lo UI kit con i componenti sviluppati&lt;/em&gt; favorendo la collaborazione fra le persone impegnate nella progettazione e nello sviluppo, creando un &lt;em&gt;linguaggio comune condiviso&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Come in ogni progetto di Designers Italia e Developers Italia, aspettiamo il fondamentale contributo della community.
+Se vuoi contribuire, puoi farlo seguendo e commentando pubblicamente i lavori in corso sul nuovo UI kit (attualmente alla versione 3.0.0-alpha.1), direttamente nello spazio in basso nella &lt;a href=&quot;https://www.figma.com/community/file/1098285931334972883&quot;&gt;pagina dedicata&lt;/a&gt; o in un punto esatto nel file. Oppure puoi &lt;a href=&quot;https://www.figma.com/community/file/1098285931334972883&quot;&gt;duplicare il file&lt;/a&gt; per provarlo e poi scriverci nel canale &lt;a href=&quot;https://developersitalia.slack.com/archives/C9N62GX8E&quot;&gt;#design-ui-kit&lt;/a&gt; di Slack.&lt;/p&gt;
+
+&lt;p&gt;Ti ricordiamo che puoi rivedere il &lt;a href=&quot;https://www.youtube.com/watch?v=1UKjfSyox-k&quot;&gt;video completo del community lab&lt;/a&gt;
+sul canale YouTube del Dipartimento per la trasformazione digitale e &lt;a href=&quot;/assets/images/posts/2022-05-03/200422_Community_lab.pdf&quot;&gt;scaricare la presentazione&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per saperne di più resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack&lt;/a&gt;, continua a seguirci sui canali Twitter di &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-05-03T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/05/02/raccontiamo-le-esperienze-di-sviluppo-della-pubblica-amministrazione</id>
     <title>Raccontiamo le esperienze di sviluppo della Pubblica Amministrazione</title>
