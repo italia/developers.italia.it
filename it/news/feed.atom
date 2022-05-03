@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-03T06:03:09+00:00</updated>
+  <updated>2022-05-03T09:11:50+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -24,19 +24,19 @@
 
 &lt;p&gt;Developers Italia intende sempre di più proporsi come la “voce” di chi lavora nello sviluppo software della Pubblica Amministrazione. Non solo per aiutare tutti coloro che lavorano nel campo ad accedere a strumenti aperti e usare soluzioni in riuso, ma anche per diffondere buone pratiche e raccontare le storie, i “dietro le quinte” di chi lavora sul codice di quei servizi che usiamo ogni giorno.&lt;/p&gt;
 
-&lt;p&gt;Per questo motivo nasce la &lt;strong&gt;&lt;a href=&quot;https://medium.com/developers-italia&quot;&gt;nuova pubblicazione&lt;/a&gt;&lt;/strong&gt; dedicata a chi lavora allo sviluppo di software che stanno alla base dei servizi pubblici digitali. Basata su Medium ma disponibile anche sulla piattaforma open source &lt;a href=&quot;https://noblogo.org/developers-italia/&quot;&gt;NoBlogo&lt;/a&gt;, la pubblicazione ospiterà i racconti di chi ha sviluppato e/o implementato siti web, servizi e applicazioni della Pubblica Amministrazione. Sarà uno spazio aperto a tutti coloro che vogliono raccontare una storia di sviluppo della e per la PA.&lt;/p&gt;
+&lt;p&gt;Per questo motivo nasce la &lt;strong&gt;&lt;a href=&quot;https://medium.com/developers-italia&quot;&gt;nuova pubblicazione&lt;/a&gt;&lt;/strong&gt; dedicata a chi lavora allo sviluppo di software che stanno alla base dei servizi pubblici digitali. Basata su Medium ma disponibile anche sulla piattaforma open source &lt;a href=&quot;https://noblogo.org/developers-italia/&quot;&gt;NoBlogo&lt;/a&gt;, la pubblicazione &lt;strong&gt;ospiterà i racconti di chi ha sviluppato e/o implementato siti web, servizi e applicazioni per la Pubblica Amministrazione&lt;/strong&gt;. Sarà uno spazio aperto a tutti coloro che vogliono raccontare una storia di sviluppo della e per la PA.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Vincenzo Di Nicola&lt;/strong&gt;, Responsabile della Struttura Tecnica per l’Innovazione Tecnologica e la Trasformazione Digitale all’INPS è il primo a contribuire con un contenuto dedicato: Vincenzo &lt;a href=&quot;https://medium.com/developers-italia/come-adattare-un-sistema-open-source-per-la-pa-il-caso-bugs-inps-it-4b4aac47be09&quot;&gt;ci racconta&lt;/a&gt; l’esperienza di &lt;a href=&quot;https://bugs.inps.it/&quot;&gt;bugs.inps.it&lt;/a&gt;, portandoci dentro al viaggio di creazione e adattamento di un sistema open source per la PA. Si tratta di un software di qualità realizzato per identificare e segnalare malfunzionamenti tecnici, al fine di migliorare la qualità dei servizi INPS. Un processo collaborativo che richiede il contributo di chi, pur non lavorando nella PA, ha le competenze tecniche per offrire indicazioni utili. Il servizio è stato realizzato grazie a una collaborazione tra INPS, Developers Italia e Taiga (progetto nato da Kaleidos, una startup spagnola), con l’implementazione di AlmavivA.&lt;/p&gt;
 
 &lt;h3 id=&quot;contribuisci&quot;&gt;Contribuisci&lt;/h3&gt;
 
-&lt;p&gt;Questo è solo l’inizio. Nel rispetto della filosofia &lt;em&gt;open&lt;/em&gt; vogliamo usare il nuovo blog come spazio dove dare voce e amplificare il lavoro di chiunque stia sviluppando un progetto open source per la PA particolarmente interessante o di valore. Stiamo cercando persone che fanno software e hanno voglia di parlarne. Ti va di salire a bordo?&lt;/p&gt;
+&lt;p&gt;Questo è solo l’inizio. Nel rispetto della filosofia &lt;em&gt;open&lt;/em&gt; vogliamo usare il nuovo blog come spazio dove dare voce e amplificare il lavoro di chiunque stia sviluppando un progetto open source per la PA particolarmente interessante o di valore. &lt;strong&gt;Stiamo cercando persone che fanno software e hanno voglia di parlarne&lt;/strong&gt;. &lt;strong&gt;Ti va di salire a bordo&lt;/strong&gt;?&lt;/p&gt;
 
 &lt;h3 id=&quot;cosa-puoi-fare&quot;&gt;Cosa puoi fare&lt;/h3&gt;
 
 &lt;p&gt;Visita il &lt;a href=&quot;https://medium.com/developers-italia/&quot;&gt;nuovo blog di Developers Italia&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Mandaci la tua idea scrivendo a &lt;a href=&quot;mailto:contatti@developers.italia.it&quot;&gt;contatti@developers.italia.it&lt;/a&gt; con una breve presentazione di cosa fai, per quale ente pubblico lavori e di quale esperienza di sviluppo intendi parlare.&lt;/p&gt;
+&lt;p&gt;Mandaci la tua idea scrivendo a &lt;a href=&quot;mailto:contatti@developers.italia.it&quot;&gt;contatti@developers.italia.it&lt;/a&gt; con una breve presentazione di cosa fai, per quale ente pubblico lavori e &lt;strong&gt;di quale esperienza di sviluppo intendi parlare&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hai suggerimenti o idee? Ti ascoltiamo.&lt;/p&gt;</content>
     <published>2022-05-02T08:00:00+00:00</published>
