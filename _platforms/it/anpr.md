@@ -14,36 +14,6 @@ highlight: false
 comingsoon: false
 layout: platform
 github_team: anpr
-newsletterdata:
-    text: "Iscriviti a questa newsletter se vuoi ricevere aggiornamenti e novità su ANPR: comuni migrati, nuovo materiale, curiosità."
-    placeholdertext: mario.rossi@dev.software.it
-    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
-    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
-    hidden-inputs:
-        -
-          type: hidden
-          name: group
-          value: 16
-        -
-          type: hidden
-          name: list
-          value: 3
-    selects:
-        -
-          name: campo3
-          options:
-            -
-              value: Cittadino
-              valueid: Cittadino
-            -
-              value: Comune
-              valueid: Comune
-            -
-              value: Software House
-              valueid: SW_House
-            -
-              value: Altro
-              valueid: ""
 abilitante: true
 owners:
     - name: Ministero dell'Interno
@@ -65,8 +35,6 @@ resources:
 ---
 
 ## Intro
-
-<!-- **Vuoi avere aggiornamenti su ANPR? Iscriviti alla [newsletter di ANPR](#newsletter).** -->
 
 Avete mai pensato perché dovete spesso chiedere dei certificati all'anagrafe? Semplice: ad oggi non esiste un'anagrafe unica centralizzata a cui gli enti pubblici possono rivolgersi per accedere alle informazioni senza doverle chiedere ogni volta ai cittadini. Con [ANPR](https://anpr.interno.it/) tutto cambia: invece di avere circa 8.000 anagrafi dislocate nel territorio (in ciascun comune), l'Italia avrà finalmente una anagrafe centrale unica, che semplificherà tutti gli adempimenti.
 Questo aprirà le porte a possibili nuove funzionalità come poter comunicare una variazione di domicilio direttamente da un sito web, comodamente dal vostro salotto, oppure di scaricare un certificato di stato di famiglia.
