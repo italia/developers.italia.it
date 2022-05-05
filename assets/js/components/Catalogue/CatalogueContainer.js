@@ -5,6 +5,9 @@ import {
   initialCategories,
   initialDevelopmentStatuses,
   initialIntendedAudiences,
+  initialPnrr,
+  initialPnrrTarget,
+  initialPnrrMeasure,
   initialPage,
   initialSearchValue,
   initialSortBy,
@@ -33,6 +36,9 @@ export const CatalogueContainer = () => {
       initialDevelopmentStatuses={initialDevelopmentStatuses}
       initialPage={Number(initialPage)}
       initialIntendedAudiences={initialIntendedAudiences}
+      initialPnrr={initialPnrr}
+      initialPnrrTarget={initialPnrrTarget}
+      initialPnrrMeasure={initialPnrrMeasure}
       initialSearchValue={initialSearchValue}
       initialSortBy={initialSortBy ?? defaultSortBy}
       initialType={initialType ?? ALL_CATALOGUE}
