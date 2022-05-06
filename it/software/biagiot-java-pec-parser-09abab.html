@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205050604" rel="stylesheet">
+  <link href="/dist/main.css?202205060603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -651,7 +651,7 @@
         
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">1.1.0</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">2.0.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -659,8 +659,8 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata(e
-messaggi di posta ordinaria)
+            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata
+(e messaggi di posta ordinaria)
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -729,7 +729,7 @@ messaggi di posta ordinaria)
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 65%</p>
           
-          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]'>
+          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,75,65]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -808,6 +808,7 @@ messaggi di posta ordinaria)
             
             <p> Elaborazione di messaggi di posta elettronica certificata (PEC) e
 
+
 ricevute </p>
             
             <p> Elaborazione di messaggi di posta elettronica ordinaria </p>
@@ -875,7 +876,7 @@ ricevute </p>
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">1.1.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">2.0.0</span>
                 
               </h2>
               <h2>
@@ -888,9 +889,9 @@ ricevute </p>
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2021-12-17
+                  2022-05-05
                   
-                  (1.1.0)
+                  (2.0.0)
                   
                 </p>
               </div>
@@ -1057,7 +1058,7 @@ Certificata (e messaggi di posta ordinaria).</p>
 
 <ol>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(MimeMessage mimeMessage)</code>  - elaborazione a partire da
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(MimeMessage mimeMessage)</code> - elaborazione a partire da
 un oggetto
 <a href="https://javaee.github.io/javamail/docs/api/javax/mail/internet/class-use/MimeMessage.html">javax.mail.internet.MimeMessage</a></p>
   </li>
@@ -1065,7 +1066,7 @@ un oggetto
     <p><code class="language-plaintext highlighter-rouge">Messaggio parse(File emlFile)</code> - elaborazione a partire dal <em>File</em> EML</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream) </code>- elaborazione a partire
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream)</code>- elaborazione a partire
 dall’<em>InputStream</em> rappresentante l’EML</p>
   </li>
 </ol>
@@ -1143,7 +1144,8 @@ Busta rappresenta il messaggio normale</p>
 
 <ul>
   <li>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
-codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</li>
+codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a> (vedi
+Requisiti).</li>
 </ul>
 
 <p>​</p>
@@ -1155,8 +1157,7 @@ codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a>.</li>
     <p>Java 8 (o versioni successive)</p>
   </li>
   <li>
-    <p>Libreria OSS
-<a href="https://github.com/biagioT/java-uudecoder">java-uudecoder</a></p>
+    <p>Libreria OSS <a href="https://github.com/biagioT/java-uudecoder">java-uudecoder</a></p>
   </li>
 </ul>
 
@@ -1184,6 +1185,28 @@ certificata</a>.</li>
   <div class="interestRelatedSoftwares">
     <h2> Altri software che potrebbero interessarti </h2>
     <div class="row">
+        
+      <div class="col-md-3 col-12">
+        
+        
+        
+
+        
+
+        
+
+        <catalogue-item
+          class="w-100"
+          id="54261ad3590385e7fe4706b635c36a231b1830b4"
+          name="rer.chatbot.client"
+          description=""
+          url="/it/software/r_emiro-regioneer-rer_chatbot_client"
+          icon="it-software"
+          category="software_reuse"
+          logo=""
+          fallback="/assets/images/cover_softwareriuso.png"
+          ></catalogue-item>
+      </div>
         
       <div class="col-md-3 col-12">
         
@@ -1240,32 +1263,10 @@ certificata</a>.</li>
 
         <catalogue-item
           class="w-100"
-          id="54261ad3590385e7fe4706b635c36a231b1830b4"
-          name="rer.chatbot.client"
+          id="fbee6c59ba03f1fc9e5a163431ab15f7dc7b09d8"
+          name="Notify"
           description=""
-          url="/it/software/r_emiro-regioneer-rer_chatbot_client"
-          icon="it-software"
-          category="software_reuse"
-          logo=""
-          fallback="/assets/images/cover_softwareriuso.png"
-          ></catalogue-item>
-      </div>
-        
-      <div class="col-md-3 col-12">
-        
-        
-        
-
-        
-
-        
-
-        <catalogue-item
-          class="w-100"
-          id="3f5defcb4f3f6e027e93abb912e531fd9cb95200"
-          name="rer.subsites"
-          description=""
-          url="/it/software/r_emiro-regioneer-rer_subsites"
+          url="/it/software/csi_piem-csipiemonte-notify"
           icon="it-software"
           category="software_reuse"
           logo=""
