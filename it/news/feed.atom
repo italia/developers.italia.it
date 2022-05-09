@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-09T06:02:43+00:00</updated>
+  <updated>2022-05-09T10:42:13+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,42 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto</id>
+    <title>Community call - raccontiamo le esperienze di sviluppo aperto per i servizi pubblici</title>
+    <updated>2022-05-06T08:00:00+00:00</updated>
+
+    <summary>Il 18 maggio scopri come designer, sviluppatori e cittadini possono contribuire a migliorare i servizi pubblici </summary>
+    <content type="html" xml:base="https://developers.italia.it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto.html">&lt;p&gt;In occasione della &lt;a href=&quot;https://www.opengovpartnership.org/events/open-gov-week-2022/&quot;&gt;Open Government Week&lt;/a&gt;, Developers Italia e Designers Italia dedicano la prossima Community call alle &lt;strong&gt;esperienze di progettazione e sviluppo aperto per i servizi pubblici&lt;/strong&gt;, approfondendo alcuni interessanti casi studio, per promuovere la partecipazione di designer, sviluppatori e cittadini al loro miglioramento.&lt;/p&gt;
+
+&lt;p&gt;Il primo ospite sarà Vincenzo Di Nicola, Responsabile per l’Innovazione Tecnologica e la Trasformazione Digitale di &lt;strong&gt;INPS&lt;/strong&gt;, che racconterà il sistema aperto di tracciamento dei bug &lt;a href=&quot;https://bugs.inps.it/&quot;&gt;bugs.inps.it&lt;/a&gt; al quale ha lavorato in prima persona e di cui ha parlato all’interno del &lt;a href=&quot;https://medium.com/developers-italia/come-adattare-un-sistema-open-source-per-la-pa-il-caso-bugs-inps-it-4b4aac47be09&quot;&gt;nuovo blog di Developers Italia&lt;/a&gt;. Il blog ospiterà i racconti di chi ha sviluppato e/o implementato siti web, servizi e applicazioni open source per la Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;p&gt;Vedremo poi come &lt;strong&gt;SOGEI&lt;/strong&gt;, grazie alla testimonianza di Matteo Franci, Release manager, ha accelerato l’adozione dell’&lt;strong&gt;Anagrafe Nazionale della Popolazione Residente (ANPR)&lt;/strong&gt;, aprendo la sua piattaforma di &lt;em&gt;ticketing&lt;/em&gt; a tutte le Pubbliche Amministrazioni. Questo ha permesso di risolvere più agevolmente i problemi, facilitare l’adesione dei comuni ad ANPR, e creare una rete di conoscenza condivisa e degli strumenti di auto-aiuto da parte della comunità.&lt;/p&gt;
+
+&lt;p&gt;Infine, Daniele Tabellini, UI-UX designer del Dipartimento per la trasformazione digitale, ci racconterà come &lt;strong&gt;Designers Italia e Developers Italia&lt;/strong&gt; hanno sviluppato &lt;a href=&quot;https://come-partecipo.italia.it/&quot;&gt;come-partecipo.italia.it&lt;/a&gt;, che indica gli strumenti di partecipazione disponibili e adeguati a chi vuole contribuire a migliorare, con azioni concrete, i servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;Tutti gli strumenti e gli approcci che vedremo durante l’incontro, in pieno spirito open source, possono essere utilizzati e replicati già oggi dalle persone che vogliono supportare la transizione digitale della PA, in un’ottica di apertura, trasparenza, qualità ed efficienza.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://mobilizon.it/events/3f8a9115-1a95-409f-b3d6-0735562f6118&quot;&gt;Registrati all’evento&lt;/a&gt; per partecipare&lt;/strong&gt;. Ti aspettiamo online il &lt;strong&gt;18 maggio alle 15.30!&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2022-05-06T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="inps" />
+    
+    <category term="opensource" />
+    
+    <category term="opengovernment" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/05/03/Community-lab-UI-kit-design-token</id>
     <title>Community lab: a che punto siamo con UI kit e design token?</title>
