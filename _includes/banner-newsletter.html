@@ -1,7 +1,7 @@
 {% include setlang.html %}
 {% assign newsletterdata = include.newsletterdata %}
 
-<section id="newsletter" class="banner-newsletter ">
+<section id="mailing-list" class="banner-newsletter ">
   <mailing-list-subscribe
     text="{{ t.newsletter_text | escape }}"
     args="{{ newsletterdata.args | jsonify | escape }}"
