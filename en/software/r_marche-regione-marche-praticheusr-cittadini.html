@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1077,7 +1077,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Le pagine rendono disponibili i dati relativi alle pratiche presentate presso gli Uffici di ricostruzione(Usr) in merito alle  Ordinanze:</p>
 <ul>
   <li>4-2016 (Danni lievi su immobili a prevalente destinazione d’uso abitativa o produttiva);</li>
@@ -1114,13 +1121,13 @@ I dati visualizzati vengono estratti dai workflow, dai DB e dai repository del s
 
         <catalogue-item
           class="w-100"
-          id="410a6e7a954adde36ffc8664d2a370876aa3230b"
-          name="OpenCity Italia - La Stanza del Cittadino"
+          id="cf016d721e1b2b6b93a665e821f6e6b1a06420b2"
+          name="La Stanza del Cittadino"
           description=""
-          url="/en/software/opencontent-stanza-del-cittadino-core-410a6e"
+          url="/en/software/opencontent-stanzadelcittadino-cf016d"
           icon=""
           category="software_open"
-          logo="https://gitlab.com/opencontent/stanza-del-cittadino/core/-/raw/master/images/sdc001.jpg"
+          logo="https://gitlab.com/opencontent/stanzadelcittadino/raw/master/images/sdc001.jpg"
           fallback="/assets/images/cover_software_opensource.png"
           ></catalogue-item>
       </div>
@@ -1136,13 +1143,13 @@ I dati visualizzati vengono estratti dai workflow, dai DB e dai repository del s
 
         <catalogue-item
           class="w-100"
-          id="cf016d721e1b2b6b93a665e821f6e6b1a06420b2"
-          name="La Stanza del Cittadino"
+          id="410a6e7a954adde36ffc8664d2a370876aa3230b"
+          name="OpenCity Italia - La Stanza del Cittadino"
           description=""
-          url="/en/software/opencontent-stanzadelcittadino-cf016d"
+          url="/en/software/opencontent-stanza-del-cittadino-core-410a6e"
           icon=""
           category="software_open"
-          logo="https://gitlab.com/opencontent/stanzadelcittadino/raw/master/images/sdc001.jpg"
+          logo="https://gitlab.com/opencontent/stanza-del-cittadino/core/-/raw/master/images/sdc001.jpg"
           fallback="/assets/images/cover_software_opensource.png"
           ></catalogue-item>
       </div>

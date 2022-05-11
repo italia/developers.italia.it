@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -985,7 +985,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>This library implements a declarative data model similar to Django models, that is designed to describe, validate, serialize and parse Italian Fattura Elettronica data.
 Only part of the specification is implemented, with more added as needs will arise. Anyone is welcome to implement the missing pieces they need and send a pull request: the idea is to have a good, free (as in freedom) library to make billing in Italy with Python easier for everyone.
 The library can generate various kinds of fatture that pass validation, and can parse all the example XML files distributed by fatturapa.gov.it</p>

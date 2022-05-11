@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1126,7 +1126,14 @@ German<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il sistema informativo per la Rete del Territorio (SIRTE) ha l’obiettivo di assicurare  il coordinamento dei percorsi di cura tra i diversi professionisti e la continuità dell’assistenza tra differenti livelli organizzativi, ottimizzando l’integrazione tra Ospedale e territorio.
 Il SIRTE gestisce i processi interni al percorso assistenziale, che si esplicano in un workflow che prevede l’accesso al sistema tramite un unico punto che, dopo una prima rilevazione del bisogno,  avvia la fase di valutazione del paziente, garantendo l’individuazione del corretto percorso  assistenziale (cure prestazionali, cure domiciliari integrate, cure in strutture residenziali),  la definizione del Piano Assistenziale Individuale (PAI) e la successiva erogazione dell’assistenza  con rivalutazioni periodiche fino alla conclusione della presa in carico.
 Il sistema prevede inoltre la possibilità di attivare percorsi trasversali, che consentono una visione  d’insieme di tutti i servizi disponibili ed erogati agli assistiti presi in carico  (es. trasporti programmati, Assistenza protesica, ecc.).

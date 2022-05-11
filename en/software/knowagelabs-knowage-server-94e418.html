@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1276,7 +1276,14 @@ Spanish<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Knowage è la suite open source per la business analytics moderna che affianca alle tradizionali capacità di business intelligence, strumenti agili che promuovono l’autonomia degli utenti business e funzionalità avanzate rivolte al segmento emergente dei data scientist. E’ quindi un prodotto per la piena valorizzazione del patrimonio dati aziendale, anche in relazione a sorgenti informative esterne ed eterogenee, cogliendo in pieno il significato del fenomeno dei big data. La suite Knowage è supportata dal Gruppo Engineering, uno dei principali players nel campo della digital transformation per il settore pubblico e privato, con oltre 12.000 professionisti e 65 sedi nel mondo.</p>
 
               </div>

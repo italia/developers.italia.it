@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1134,7 +1134,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><a href="https://fuss.bz.it"><strong>FUSS</strong></a> (<a href="https://fuss.bz.it"><strong>Free Upgrade for a digitally Sustainable School</strong></a>) è una distribuzione GNU/Linux basata su <a href="https://it.wikipedia.org/wiki/Debian">Debian</a> dedicata al mondo della scuola. Viene finanziata dalla <a href="http://www.provincia.bz.it/formazione-lingue/scuola-italiana/servizi-attivita/tecnologie-informatiche.asp">Direzione Istruzione e Formazione Italiana</a> della <a href="https://it.wikipedia.org/wiki/Provincia_Autonoma_di_Bolzano" title="Provincia Autonoma di Bolzano">Provincia Autonoma di Bolzano</a> ed è frutto del lavoro di numerosi collaboratori (comunità Debian, tecnici informatici, docenti, studenti) anche a titolo volontario. I destinatari sono tutte le scuole primarie e secondarie di primo e secondo grado nonché centri di formazione interessati ad avere una distribuzione completa lato client e server per la gestione della propria rete informatica.</p>
 
 <p>Per informazioni: <a href="https://fuss.bz.it">https://fuss.bz.it</a></p>

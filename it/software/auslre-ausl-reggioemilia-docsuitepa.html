@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1198,7 +1198,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>DocSuite è la soluzione per la gestione documentale, comprende le funzionalità per: - archivi e serie documentali, registri - protocollo e flussi documentali, - PEC, email e integrazione servizi di postalizzazione (PosteWeb, TNotice) - fascicoli e attività di workflow, procedimenti amministrativi e attività - Dossier, serie e aggregazioni archivistiche, volumi di fascicoli, piano di fascicolazione e scarto - scrivania delle attività, documenti e fascicoli - integrazione con firme digitali (dispositivi di firma,remote, remote automatiche, grafometriche) - flusso di formazione, firma, adozione, pubblicazione dei provvedimenti amministrativi (Delibere, Determinazioni, Disposizioni, Verbali, …) - flussi di pubblicazione sul sito amministrazione trasparente e flussi ANAC - flussi di gestione dell’accesso agli atti (FOIA) - integrazione con accesso SPID - conservazione digitale e versamento a conservatore accreditato</p>
 
               </div>
@@ -1271,13 +1278,13 @@
 
         <catalogue-item
           class="w-100"
-          id="0d68067f6b3a948a398dbdaa6c90f38f32d78d76"
-          name="SBNWeb-Open"
+          id="b365e3536123299a17d692e823d5fcd20ec09529"
+          name="OpenAgenda"
           description=""
-          url="/it/software/m_bac-istitutocentralecatalogounicobiblio-sbnweb-open"
+          url="/it/software/c_a116-comune-di-ala-openagenda"
           icon="it-software"
           category="software_reuse"
-          logo="https://raw.githubusercontent.com/IstitutoCentraleCatalogoUnicoBiblio/SBNWeb-Open/master/screenshots/sbn_web.png"
+          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
@@ -1293,13 +1300,13 @@
 
         <catalogue-item
           class="w-100"
-          id="b365e3536123299a17d692e823d5fcd20ec09529"
-          name="OpenAgenda"
+          id="0d68067f6b3a948a398dbdaa6c90f38f32d78d76"
+          name="SBNWeb-Open"
           description=""
-          url="/it/software/c_a116-comune-di-ala-openagenda"
+          url="/it/software/m_bac-istitutocentralecatalogounicobiblio-sbnweb-open"
           icon="it-software"
           category="software_reuse"
-          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
+          logo="https://raw.githubusercontent.com/IstitutoCentraleCatalogoUnicoBiblio/SBNWeb-Open/master/screenshots/sbn_web.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

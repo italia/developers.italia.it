@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1704,7 +1704,14 @@ Cinese (Taiwan)<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>LibreOffice is a powerful and free office suite, used by millions of  people around the world. Its clean interface and feature-rich tools help  you unleash your creativity and enhance your productivity. LibreOffice  includes several applications that make it the most versatile Free and  Open Source office suite on the market: Writer (word processing), Calc  (spreadsheets), Impress (presentations), Draw (vector graphics and  flowcharts), Base (databases), and Math (formula editing).</p>
 
 <p>LibreOffice is compatible with a wide range of document formats such as  Microsoft® Word (.doc, .docx), Excel (.xls, .xlsx), PowerPoint (.ppt,  .pptx) and Publisher. But LibreOffice goes much further with its native  support for a modern and open standard, the Open Document Format (ODF).  With LibreOffice, you have maximum control over your data and content –  and you can export your work in many different formats including PDF.</p>

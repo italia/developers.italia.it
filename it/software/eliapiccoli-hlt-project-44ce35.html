@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1089,7 +1089,14 @@ compliance with the Protocollo Informatico Italian law.
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>The focus of the project was to improve the document archiving process in compliance with the Protocollo Informatico Italian law. In fact, the user of public administration, in order to archive a protocol, has to fill various fields, in particular: needs to write a summary of the contents of the document (<em>Oggetto</em>), pick the correct document repository for the office (<em>Contenitore</em>) and then choose the correct class among many. The model will provide a <em>top 3/5 prediction</em> over the possible correct classes.</p>
 
               </div>

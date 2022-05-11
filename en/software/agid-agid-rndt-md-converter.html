@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1028,7 +1028,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><strong>RNDT metadata converter</strong> consente di interrogare un servizio <a href="https://www.ogc.org/standards/cat">CSW (Catalogue Service for the Web basato sullo standard OGC)</a> ed estrarre i metadati di dati e servizi territoriali trasformati da un profilo di metadati ad un altro, purchè basati entrambi sullo Standard ISO TS 19139.</p>
 
 <p>In Italia, dal profilo definito con il Decreto 10/11/2011 (e relative guide operative, coerenti con le linee guida INSPIRE v. 1.3) al nuovo profilo RNDT 2.0 (v. la <a href="https://geodati.gov.it/geoportale/images/struttura/documenti/Manuale-RNDT_2-guida-operativa-compilazione-metadati_v3.0.pdf">guida operativa</a>, coerente con le linee guida INSPIRE v. 2.0.1).</p>

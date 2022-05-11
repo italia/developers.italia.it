@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1107,7 +1107,14 @@ Spanish<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>With the DataPlotly plugin for QGIS the user can create fully customized and fully interactive D3 like charts withing QGIS itself. Currently 10 different charts are available (scatter plot, pie chart, bar plot, polar plot, boxplot, contour plot, density chart, histogram, polar chart, violin plot, ternary plot). The plugin is also available in the Layout and Report composer in  order to enrich the cartographic export as a dataviz like tool. Within
  the Layout and Report composer it is also available in Atlas mode.</p>
 

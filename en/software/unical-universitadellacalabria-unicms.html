@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1195,7 +1195,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>uniCMS is designed for both end users and developers where the developers can create their own customzied web applications (CMS) without starting one from scratch and end users without any development skills can setup a professional CMS platform without difficulty.
 uniCMS was created due to necessity of creation and design of a new protal for the University of Calabria. After evaluation of several options, University of Calabria having a strong in-house competitive and highly skilled technical team it was decided to opt for the development of a brand new CMS solution based on Django framework.
 The entire uniCMS project code is open sourced and therefore licensed under the Apache 2.0.</p>

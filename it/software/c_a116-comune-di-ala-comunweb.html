@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1377,7 +1377,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>E’ un modello di sito web avanzato, adatto a promuovere i contenuti di un ente locale in modalità multi-canale con un’esperienza utente molto gradevole. Il sistema accompagna i redattori nella gestione dei contenuti, rappresentati e strutturati secondo gli standard dell’informazione previsti dalle “Linee Guida di Design di siti e servizi della PA”; i dati vengono valorizzati anche attraverso gallerie fotografiche, calendari, mappe, grafici e motori di ricerca. Pensato per le redazioni distribuite: ogni funzionario interviene nel flusso di gestione in base alla propria competenza. I comuni che lo adottano ottengono un duplice beneficio: nuovi canali di dialogo con il cittadino e strumenti per gestire il processo di trasformazione digitale. Comunweb nasce dalla collaborazione tra Consorzio dei Comuni Trentini ed Team per la Trasformazione Digitale, volta a creare un modello unico di interazione digitale tra cittadini e comuni in Italia; il Comune di Ala è il primo tra questi.</p>
 
               </div>
@@ -1406,14 +1413,14 @@ Italiano<br />
 
         <catalogue-item
           class="w-100"
-          id="1b386fbde43692c8ac0bde123485531416481728"
-          name="FreePBX"
+          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
+          name="parlaConIO"
           description=""
-          url="/it/software/italia-software-freepbx-1b386f"
-          icon=""
-          category="software_open"
-          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
-          fallback="/assets/images/cover_software_opensource.png"
+          url="/it/software/c_h355-comunedirivoli-parlaconio"
+          icon="it-software"
+          category="software_reuse"
+          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         
@@ -1428,14 +1435,14 @@ Italiano<br />
 
         <catalogue-item
           class="w-100"
-          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
-          name="parlaConIO"
+          id="1b386fbde43692c8ac0bde123485531416481728"
+          name="FreePBX"
           description=""
-          url="/it/software/c_h355-comunedirivoli-parlaconio"
+          url="/it/software/italia-software-freepbx-1b386f"
           icon="it-software"
-          category="software_reuse"
-          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
-          fallback="/assets/images/cover_softwareriuso.png"
+          category="software_open"
+          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
+          fallback="/assets/images/cover_software_opensource.png"
           ></catalogue-item>
       </div>
         

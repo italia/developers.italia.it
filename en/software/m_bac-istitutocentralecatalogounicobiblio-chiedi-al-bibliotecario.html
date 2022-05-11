@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -954,7 +954,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>L’applicativo “Chiedi al bibliotecario” è un servizio di “reference” on line tramite il quale gli utenti possono richiedere informazioni ai bibliotecari o ad altri utenti per avere consigli o spiegazioni, per un orientamento nella ricerca bibliografica, sui servizi disponibili e sul materiale consultabile. L’applicativo prevede una parte di back end in cui è possibile l’inserimento/modifica di biblioteche, bibliotecari e utenti. Gli utenti devono iscriversi ed effettuare il login per poter utilizzare la funzione.</p>
 
               </div>

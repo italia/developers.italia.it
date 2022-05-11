@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1206,7 +1206,14 @@ German<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Favorisce una collaborazione trasparente tra l’Ente e il cittadino nella risoluzione di problematiche legate al territorio (mobilità, gestione del verde, decoro urbano, raccolta dei rifiuti, …). Il cittadino può inviare, anche da smartphone, segnalazioni, suggerimenti, reclami e può seguirne lo stato di avanzamento in tempo reale. Se l’informazione è pubblica, anche l’iter diventa completamente trasparente; questo aspetto rafforza notevolmente il rapporto di fiducia verso il cittadino e valorizza l’azione dell’amministrazione (OpenGovernment). L’applicazione supporta la gestione dei processi interni all’ente (workflow) e genera dei grafici interattivi (tempi medi di risoluzione del problema per tematica, numero di segnalazioni per zona) che possono essere resi pubblici dall’amministrazione</p>
 
               </div>
@@ -1235,13 +1242,13 @@ German<br />
 
         <catalogue-item
           class="w-100"
-          id="0d68067f6b3a948a398dbdaa6c90f38f32d78d76"
-          name="SBNWeb-Open"
+          id="b365e3536123299a17d692e823d5fcd20ec09529"
+          name="OpenAgenda"
           description=""
-          url="/en/software/m_bac-istitutocentralecatalogounicobiblio-sbnweb-open"
+          url="/en/software/c_a116-comune-di-ala-openagenda"
           icon="it-software"
           category="software_reuse"
-          logo="https://raw.githubusercontent.com/IstitutoCentraleCatalogoUnicoBiblio/SBNWeb-Open/master/screenshots/sbn_web.png"
+          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
@@ -1257,13 +1264,13 @@ German<br />
 
         <catalogue-item
           class="w-100"
-          id="b365e3536123299a17d692e823d5fcd20ec09529"
-          name="OpenAgenda"
+          id="0d68067f6b3a948a398dbdaa6c90f38f32d78d76"
+          name="SBNWeb-Open"
           description=""
-          url="/en/software/c_a116-comune-di-ala-openagenda"
+          url="/en/software/m_bac-istitutocentralecatalogounicobiblio-sbnweb-open"
           icon="it-software"
           category="software_reuse"
-          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
+          logo="https://raw.githubusercontent.com/IstitutoCentraleCatalogoUnicoBiblio/SBNWeb-Open/master/screenshots/sbn_web.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
@@ -1301,14 +1308,14 @@ German<br />
 
         <catalogue-item
           class="w-100"
-          id="1b386fbde43692c8ac0bde123485531416481728"
-          name="FreePBX"
+          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
+          name="parlaConIO"
           description=""
-          url="/en/software/italia-software-freepbx-1b386f"
+          url="/en/software/c_h355-comunedirivoli-parlaconio"
           icon="it-software"
-          category="software_open"
-          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
-          fallback="/assets/images/cover_software_opensource.png"
+          category="software_reuse"
+          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         

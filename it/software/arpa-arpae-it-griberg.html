@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -999,7 +999,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Griberg is a R+Shiny script which allows to plot the latest available meteorological data produced by Arpae Emilia Romagna in grib format.
 The script is just an example of how to retrieve the available data and visualize it.
 It can easily be modified. The scripts actually downloads the latest available grib data files from the official repository at: https://drive.google.com/drive/folders/0B7KLnPu6vjdPVGJKR3E4SEluU0U. In order to list the contents of the Gdrive folder a login it’s requested. To avoid it, oauth is implemented in the very first lines of code, but the secrets are omitted from this public release. You have to edit the following lines with your personal strings from Google:

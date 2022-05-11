@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1128,7 +1128,14 @@ Inglese<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>VerificaC19 è l’app ufficiale del governo italiano, sviluppata dal Ministero della Salute in collaborazione con il Ministero per l’ Innovazione tecnologica e la transizione digitale, il Ministero dell’ Economia e Finanza e il Commissario Straordinario per l’Emergenza COVID-19, per consentire agli operatori di verificare la validità e l’autenticità  dei Certificati Verdi COVID-19emessi dalla Piattaforma Nazionale DCC del  Ministero della Salute e dagli altri Stati membri dell’Unione Europea. L’app è stata sviluppata e rilasciata nel pieno rispetto della protezione dei dati personali dell’utente e della normativa vigente, in particolare il decreto-legge 22 aprile 2021, n. 52, nonché le specifiche tecniche europee approvate dalla rete eHealth per il COVID digitale dell’UE Certificato (ex Certificato Verde Digitale).
 L’app VerificaC19 consente agli operatori incaricati di verificare la validità delle certificazioni verdi COVID-19 e del “Certificati EU Digital COVID” leggendo il codice QR del certificato. L’app non memorizza né comunica a terzi le informazioni scansionate.  Quando viene utilizzata, l’app esegue la verifica in modalità offline, cioè senza invocare un servizio di sistema remoto. Per verificare l’autenticità del certificato l’app deve accedere al backend della piattaforma nazionale DCC almeno una volta al giorno,  collegato al gateway europeo, contenente tutte le chiavi pubbliche che firmano i “Certificati EU Digital COVID”.
 Il flusso di lavoro dell’app VerificationC19 è suddiviso nelle seguenti  fasi: - La persona che deve verificare la certificazione chiede all’utente di mostrare il codice QR del suo certificato - Utilizzando l’app, viene letto il codice QR e ne viene verificata  l’autenticità utilizzando la chiave pubblica che ha firmato il certificato - Una volta che le informazioni contenute nella Certificazione Verde  COVID-19 o il “Certificato EU Digital COVID” è stato decodificato,  l’app mostra le informazioni principali: - Nome, cognome e data di nascita del titolare del certificato - Codice indentificatore univoco del certificato - Validità del certificato - Il certificato viene verificato rispetto alle informazioni sulla data  decodificata e le norme italiane per le certificazioni verdi COVID-19. - L’incaricato procede al controllo visivo della corrispondenza dei dati  personali del titolare mostrati dall’app VerificaC19 e della carta d’identità del titolare del certificato.</p>

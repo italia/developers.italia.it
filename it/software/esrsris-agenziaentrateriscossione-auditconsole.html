@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1042,7 +1042,14 @@ Inglese<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Servizio attraverso il quale tutte le azioni svolte da operatori o processi su un’applicazione web (attualmente sull’applicazione DocWay) vengono tracciate e registrate all’interno di uno specifico database MongoDB.
 Il modulo di Audit traccia tutte le azioni svolte (attualmente su DocWay e sulla sua Access Control List) da parte degli utenti applicativi registrandole in un apposito archivio mongoDB, autonomo dall’archivio DocWay (o ACL), in modo da garantire l’integrità e  l’indipendenza dei dati registrati.
 I dati registrati dal modulo di Audit (messi a disposizione per la consultazione) garantiscono l’inalterabilità e la non modificabilità delle informazioni stesse e la  sicurezza contro manomissioni da parte di terzi.</p>

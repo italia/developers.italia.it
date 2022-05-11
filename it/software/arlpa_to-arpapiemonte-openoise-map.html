@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1037,7 +1037,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>OpeNoise Map è un plugin di QGIS per calcolare i livelli di rumore generati da sorgenti puntuali o stradali presso punti ricettori e edifici.
 Il plugin è in grado di calcolare per fissati ricettori puntuali e/o  edifici i livelli sonori generati da una sorgente sferica o da una sorgente stradale.  Sono implementati per l’emissione stradale i metodi NMPB-Routes-96 e CNOSSOS.
 Considerare le seguenti semplificazioni:  - la modellazione è in 2D;  - viene considerata la divergenza geometrica, l’assorbimento atmosferico e la diffrazione;  - le riflessioni non sono calcolate;  - il terrreno è considerato piatto.</p>

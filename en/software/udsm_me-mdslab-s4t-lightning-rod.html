@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1015,7 +1015,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Stack4Things è un framework per l’Internet of Things sviluppato dal Mobile and Distributed Systems Lab (MDSLab), un laboratorio del dipartimento di Ingegneria dell’Università di Messina. Stack4Things è un progetto open-source che aiuta a gestire le flotte di dispositivi IoT senza preoccuparsi della loro posizione fisica, della loro configurazione di rete, della tecnologia sottostante. Si tratta di una soluzione orizzontale orientata al Cloud (che può essere integrata con OpenStack) che fornisce la virtualizzazione, la personalizzazione e l’orchestrazione degli oggetti dell’internet degli oggetti. Stack4Things fornisce un’esperienza “out-of-the-box” su diversi dei più popolari sistemi embedded e mobili.</p>
 
 <p>Stack4Things coinvolge due componenti principali: il servizio IoTronic e la sonda Lightning-rod. IoTronic è il servizio Cloud-side che permette agli utenti di gestire le risorse dell’internet degli oggetti. Lightning-rod è la sonda IoT-side che funge da controparte IoTronic che collega il dispositivo al Cloud. Entrambi i componenti sono implementati in Node.js. Stack4things nella sua versione standalone è solo parzialmente integrato con OpenStack (può utilizzare il servizio Neutron come back-end per la gestione della rete). Questa versione è stata implementata principalmente per motivi di ricerca. Per la versione standalone è disponibile anche una bozza di dashboard Web.</p>
@@ -1062,14 +1069,14 @@
 
         <catalogue-item
           class="w-100"
-          id="1b386fbde43692c8ac0bde123485531416481728"
-          name="FreePBX"
+          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
+          name="parlaConIO"
           description=""
-          url="/en/software/italia-software-freepbx-1b386f"
-          icon=""
-          category="software_open"
-          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
-          fallback="/assets/images/cover_software_opensource.png"
+          url="/en/software/c_h355-comunedirivoli-parlaconio"
+          icon="it-software"
+          category="software_reuse"
+          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         
@@ -1084,14 +1091,14 @@
 
         <catalogue-item
           class="w-100"
-          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
-          name="parlaConIO"
+          id="1b386fbde43692c8ac0bde123485531416481728"
+          name="FreePBX"
           description=""
-          url="/en/software/c_h355-comunedirivoli-parlaconio"
+          url="/en/software/italia-software-freepbx-1b386f"
           icon="it-software"
-          category="software_reuse"
-          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
-          fallback="/assets/images/cover_softwareriuso.png"
+          category="software_open"
+          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
+          fallback="/assets/images/cover_software_opensource.png"
           ></catalogue-item>
       </div>
         

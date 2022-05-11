@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -651,7 +651,7 @@
         
         <h1 class="d-inline-block">
           SIGLA
-          <span class="badge badge-pill badge-pill--sup badge-primary">6.4.30</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">6.4.31</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -718,7 +718,7 @@
           <p>Vitality:</p>
           <p class="score d-inline-block"> 88%</p>
           
-          <div id="softwareChart" data-vitality='[85,100,100,85,85,100,85,85,97,85,85,85,97,85,85,97,85,85,97,85,85,85,85,97,85,85,85,85,85,85,85,85,85,100,85,85,85,85,85,85,85,85,85,85,100,85,100,100,91,85,85,85,100,85,91,85,85,85,85,85]'>
+          <div id="softwareChart" data-vitality='[85,100,100,85,85,100,85,85,97,85,85,85,97,85,85,97,85,85,97,85,85,85,85,97,85,85,85,85,85,85,85,85,85,100,85,85,85,85,85,85,85,85,85,85,100,85,100,100,91,85,85,85,100,85,91,85,85,97,85,85]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -1051,7 +1051,7 @@
                 SIGLA
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">6.4.30</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">6.4.31</span>
                 
               </h2>
               <h2>
@@ -1064,9 +1064,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2022-05-04
+                  2022-05-09
                   
-                  (6.4.30)
+                  (6.4.31)
                   
                 </p>
               </div>
@@ -1205,7 +1205,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <h2 id="introduzione"><strong>Introduzione</strong></h2>
 <p>Al fine di fornire elementi generali della Soluzione applicativa, evidenziamo informazioni di sintesi sul Sistema Contabile SIGLA,  di proprietà del CNR, che si occupa di processi amministrativi e contabili, di previsione, gestione e di rendicontazione.  Il Sistema si rivolge ad Enti pubblici, in particolare Enti di ricerca, che operano in regime di Contabilità Finanziaria,  con obbligo di adozione, a consuntivo o anche in parallelo, del sistema di contabilità basato su rilevazione dei fatti di gestione in termini economici,  patrimoniali ed analitici.</p>
 <h3 id="premessa"><strong>Premessa</strong></h3>

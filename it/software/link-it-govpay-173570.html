@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1108,7 +1108,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o spontanei, sia ad iniziativa Ente (modelli 1 e 2) che ad iniziativa PSP (modello 3) nonché alla loro riconciliazione in tesoreria. Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo Operativo” descritti dalle specifiche AgID utilizzabile dagli operatori per monitorare il corretto funzionamento della piattaforma e degli applicativi ad essa collegati oltre a fornire i report necessari ai servizi di supporto di primo e secondo livello. GovPay mette a disposizione una suite completa di API REST per l’integrazione degli applicativi esistenti (portali di pagamento, gestionali di posizioni debitorie, applicativi di contabilità, …). Le API coprono tutte le funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in attesa (APA) ed emissione dell’avviso di pagamento, fino alla riconciliazione contabile in tesoreria delle riscossioni effettuate. Le stesse operazioni sono comunque disponibili anche sul cruscotto di gestione per gli operatori, tramite compilazione di form o file upload di tracciati record. Di seguito le funzionalita fornite dal prodotto ed individuate dal <a href="https://www.pagopa.gov.it/it/pubbliche-amministrazioni/quadro-sinottico/">quadro sinottico dei servizi</a> al quale si rimanda per una descrizione piu’ estesa. ### Servizi minimi - Gestione Archivio Pagamenti in Attesa - Integrazione con e@bollo - Modelli di pagamento ### Servizi base - Profilazione personale EC con diversi ruoli e permessi - Rateizzazione - Attualizzazione del debito - Disponibilità della ricevuta telematica - Gestione Carrello multi beneficiario multi pagatore - Gestione del giornale degli eventi ### Servizi distintivi - Servizi di quadratura del flusso di pagamenti - Integrazione con piattaforma App IO - Riconciliazione ### Servizi a valore aggiunto - Messa a disposizione dei documenti scambiati con pagoPA (RT,RPT, flussi di rendicontazione) - Scarico flussi di rendicontazione - Invio esito pagamento - Possibilità invio PEC - Avvisatura massiva - Avvisatura singola - Codifica dati per analisi pagamenti - Fascicolo del cittadino - Interoperabilità con contabilità - Interoperabilità con gestionali - Integrabilità con altri front-end ### Servizi a valore aggiunto non individuati dal quadro sinottico - Possibilità di alimentare l’archivio dei pagamenti in attesa e ottenere i corrispondenti avvisi di pagamento tramite tracciati CSV - Servizio di notifica email degli avvisi di pagamento e delle ricevute - Supporto alla gestione di pagamenti spontanei - Integrazione nativa ad applicativi terzi: MyPIVOT, SECIM, HyperSIC (APKappa)</p>
 
               </div>

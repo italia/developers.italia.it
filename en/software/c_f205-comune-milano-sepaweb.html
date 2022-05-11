@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -986,7 +986,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Applicativo modulare per la gestione completa degli immobili di edilizia residenziale pubblica, comprendente le macro-funzionalità di gestione anagrafica del patrimonio, gestione anagrafica dei soggetti locatari, gestione anagrafica degli impianti tecnici (centrali termiche, antincendio, sollevamento acque, ecc.), gestione bandi (ex R.R. Lombardia 1/2004 e s.m.i.), gestione contratti di locazione per diverse tipologie contrattuali (L. 392/78, L. 431/98, L.R. Lombardia 16/2016, L.R. Lombardia 27/2009, Usi Diversi da Abitativo e loro s.m.i.), gestione partite contabili per ciascuna tipologia contrattuale, gestione dei consuntivi e conguagli annuali per voci di servizi e spesa, gestione di budget per capitoli di spesa, gestione contratti di ciclo passivo, gestione segnalazioni utente, gestione agenda appuntamenti utente a sportello, gestione del ciclo manutentivo ordinario e straordinario sugli immobili e gli impianti tecnici, emissione bollettazione, gestione incassi e incassi manuali, gestione del processo di censimento anagrafico dei locatari E.R.P., gestione archivio documentale cartaceo, gestione condomini misti e loro processi, esportazione dati a beneficio della Banca Dati regionale Lombardia in formato XML</p>
 
               </div>

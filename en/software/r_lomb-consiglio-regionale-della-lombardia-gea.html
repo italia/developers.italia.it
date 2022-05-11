@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1084,7 +1084,14 @@ Italian<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il sistema “gestione atti” è volto alla gestione di determinate categorie di atti : progetto di legge (PDL), progetto di atto amministrativo (PDA), parere (PAR), relazione (REL), petizione popolare (INP), documento generico (DOC), proposta di referendum (REF) elenco atti comunitari (EAC), MIS (missioni valutative), proposte di atto amministrativo di iniziativa dell’ufficio di Presidenza del Consiglio (PDA-UDP), atti di organizzazione interna (ORG). Gli atti sono di competenza del Servizio Commissioni, di ciascuna Commissione permanente e speciale, del Servizio Assemblea e del Comitato paritetico di Controllo. Gli uffici preposti a questi organi provvedono all’inserimento dei dati e degli atti di propria competenza. In via generale, per quanto concerne gli atti formali istruiti dalle Commissioni consiliari vengono inseriti i testi, la documentazione e i dati relativi a ciascuna fase dell’atto, dalla protocollazione dello stesso sino alla sua approvazione in Commissione (PAR , REL, INP) o in Aula consiliare (PDA, PDL, DOC, REF). Quanto inserito generalmente è visibile sul sito internet del Consiglio. In GEA è presente una sezione denominata EAC in cui sono pubblicati l’elenco degli atti comunitari inviati dalla Conferenza dei Presidenti delle Assemblee legislative unitamente alla nota di assegnazione alle Commissioni consiliari a firma del Presidente del Consiglio. In questa sezione non sono presenti flussi procedimentali . Questi atti non sono visibili sul sito internet del Consiglio. E’ inserita, altresì, una pagina dedicata all’inserimento di missioni valutative implementata dal Comitato Paritetico di Controllo e Valutazione. La pagina consente la creazione manuale di una scheda a cui gli utenti possono accedere mediante modalità di sola lettura.</p>
 
               </div>

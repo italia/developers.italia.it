@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1153,7 +1153,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>L’obiettivo principale di questo progetto, è quello di utilizzare le tecnologie oggi a disposizione per allertare immediatamente ed in automatico il  personale laico formato all’uso dei DAE, nel momento stesso della attivazione dei mezzi  di  soccorso da parte della   Centrale  Operativa  118,  riducendo   così  il  tempo  di  applicazione della defibrillazione delle vittime di ACR. L’app,  sviluppata dal Sistema 118 della Regione Emilia Romagna nell’ambito  di quanto stabilito dal Decreto del Ministero della Salute del 18 marzo 2011, è stata  quindi progettata  e  realizzata  al  fine  di  promuovere e rendere più efficiente  l’utilizzo dei  DAE  presenti  sul territorio da parte delle persone laiche abilitate  ( Firts responder - BLSD ). L’ app è completamente integrata con  le   CENTRALI OPERATIVE 118  della Regione Emilia Romagna e consente di allertare  gli utenti registrate,  che  si  trovano  nelle  vicinanze  dei  un evento  di Arresto Cardiaco ( ACR ), nel momento stesso in cui la Centrale Operativa 118 lo registra. Chi riceve l’allertamento può quindi rendersi disponibili ad intervenire per effettuare le manovre di rianimazione e per portare un DAE. L’app mostra sulla mappa i DAE censiti e disponibili, in funzione dell’orario di consultazione, ed  il luogo dell’evento su cui intervenire.  L’app  prevede  inoltre,  in  ottica  collaborativa,  la  possibilità di partecipare al sistema al censimento dei DAE presenti sul territorio con le funzioni : “segnala un nuovo DAE” e “segnala un problema”. Per ogni DAE, oltre alla ubicazione, è possibile  definire  la  disponibilità ( giorni, orari ) per  renderne più efficace la localizzazione in caso di  emergenza, ed  anche  gestire le informazioni relative alle scadenze  di  manutenzioni,  con  l’obiettivo futuro di rendere sempre più efficace il monitoraggio della presenza dei DAE sul territorio. Infine è possibile effettuare  una  chiamata telefonica al servizio 118, con  invio  automatico  delle  coordinate per una precisa localizzazione.   L’app  presenta  infine  una sezione documentale nelle quali  sono riportati link di interesse, FAQ, Procedure ecc. Per la corretta funzionalità dei  moduli  pubblicati occorre creare una infrastruttura “server”  che  possa  ospitare  la  componente database  e la  componente web server e  realizzare l’integrazione con il software delle Centrali  Operative 118.  In particolare,  l’oggetto  offerto  in riuso  è  un Sistema software modulare (Mobile Application e Web Application), composto da una componente in APP,  per l allertamento degli  utenti  registrati e  la  localizzazione  dei  dispositivi DAE - Defibrillatore  Automatico Esterno, e  da  una  componente  desktop  per  l’integrale gestione dei DAE  mappati (DAE Manager).  L’applicazione si  integra  al sistema  informatico  verticale della Centrale Operativa 118.
 L’oggetto è stato ideato e progettato dal Sistema 118 Emilia Romagna. La AUSL  Bologna è detentrice dei diritti di sfruttamento industriale (titolarità)  sul codice sorgente e rende disponibile il software alle Amministrazioni che intendono   integrarlo  nella propria realtà. Tale software andrà configurato ed  integrato in funzione della realtà organizzativa e tecnica.
 Il 118  Emilia  Romagna,  si  rende  disponibile  a  farsi  carico della  manutenzione correttiva ed  evolutiva  del  software,  intesa  come sviluppi  e  implementazioni di interesse comune alle amministrazioni riceventi, così da promuovere  economie di scala derivanti dall’impiego di una soluzione unica a livello nazionale. Nel contempo il 118 Emilia Romagna  intende  coordinare  la gestione  evolutiva del  software, intesa come sviluppi  ed  implementazioni personalizzate per le singole realtà, così da favorire e  mantenere l’uniformità funzionale del sistema nel rispetto delle diverse esigenze.</p>

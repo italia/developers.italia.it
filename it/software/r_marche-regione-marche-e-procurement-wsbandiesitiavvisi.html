@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1012,7 +1012,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il servizio espone i dati relativi ai bandi, esiti e avvisi in conformità alle specifiche del D.P.C.M. 26 aprile 2011 (Pubblicato nella Gazzetta Ufficiale del 1 agosto 2011, n. 177) “Pubblicazione nei siti informatici di atti e provvedimenti concernenti procedure ad evidenza pubblica o di bilanci, adottato ai sensi dell’articolo 32 della legge 18 giugno 2009, n. 69”.
 Inoltre il servizio espone i dati inviati ad ANAC per la Legge 190/2012 per l’anticorruzione, ed i contratti per appalti affidati secondo il DLgs 50/2016.
 Permette la generazione dei file XML dei feed RSS secondo lo standard del DPCM 26/04/2011.</p>

@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1119,7 +1119,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>La <a href="https://dataportal.daf.teamdigitale.it/">Piattaforma Digitale Nazionale dei Dati</a> (ex DAF) contiene migliaia di dataset rilasciati dalle pubbliche amministrazioni italiane con licenze open data. Il progetto <a href="https://github.com/teamdigitale/daf-nteract">PDND-nteract</a> integra le API della PDND all’interno della suite di analisi dati <a href="https://jupyter.org/">Jupyter</a> grazie al progetto open source <a href="https://nteract.io/">nteract</a> di cui è un’estensione. Questo repository contiene notebook di analisi liberamente consultabili e riutilizzabili grazie a una versione dockerizzata per la data science rilasciata dal progetto Jupyter. Ambienti di sviluppo supportati: <strong>Python3</strong>, <strong>R</strong> e <strong>Julia</strong>. Per approfondire lo stack tecnologico leggi <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/">qui</a>. Per scoprire il progetto PDND-nteract puoi cominciare da <a href="https://github.com/teamdigitale/daf-nteract">qui</a>.</p>
 
 <p>​</p>

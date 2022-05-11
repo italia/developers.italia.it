@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1073,7 +1073,14 @@ Catalan<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>WikiToLearn è un portale che si propone di creare libri di testo liberi, collaborativi e accessibili. La filosofia della piattaforma è riassunta nel motto “<em>Il sapere si accresce solo se condiviso</em>”. Su WikiToLearn l’insegnamento e l’apprendimento convergono nella stesura e nel perfezionamento cooperativo di note, appunti e libri di testo, organizzabili e ri-assemblabili secondo le esigenze specifiche degli utenti.</p>
 
 <p>WikiToLearn nasce inizialmente tra gli studenti per gli studenti, con l’obiettivo primario di creare una piattaforma che potesse essere utilizzata per studiarvi fin da subito, e dar vita ad un progetto che rispondesse alla necessità di apprendere nel modo migliore.</p>

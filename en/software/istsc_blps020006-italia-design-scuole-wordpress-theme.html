@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1047,7 +1047,14 @@ Italian<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>E’ basato sul modello di siti per le scuole italiane, creato nell’ambito del progetto <strong>Designers Italia del Team per la Trasformazione Digitale in seno alla  Presidenza del Consiglio dei Ministri</strong>, in accordo con il <strong>MIUR</strong>. Nel rispetto dell’autonomia scolastica e con l’obiettivo di creare un prodotto in grado di rispondere ai principali bisogni di tutte le scuole, lo abbiamo progettato dopo aver condotto decine di workshop e migliaia di interviste con insegnanti, personale tecnico amministrativo, genitori e studenti.</p>
 
 <p>Questo sito permette di capire com’è organizzata la scuola, quali percorsi di studio mette a disposizione e quali servizi di supporto alla didattica sono disponibili per la comunità scolastica. Si pone l’obiettivo di comunicare in modo chiaro e semplice l’identità di una scuola, riducendo il peso della burocrazia (naturalmente nel rispetto degli obblighi), dando spazio ai contenuti e alle persone e cercando di ricostruire anche on line l’atmosfera che caratterizza la vita di una scuola.</p>

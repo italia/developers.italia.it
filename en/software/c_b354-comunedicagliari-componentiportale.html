@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1248,7 +1248,14 @@ Italian<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il Comune di Cagliari a dicembre ha pubblicato il nuovo portale istituzionale, previsto all’interno del Piano Operativo Città Metropolitane 2014-2020 (Progetto CA1.1.1.a.3 – Asse 1). Il progetto del nuovo portale è inserito tra le azioni portate avanti dal Comune in tema di agenda digitale e in linea con il Piano triennale per l’informatica nella PA. Il Comune ha aderito a Designers Italia, il Design System della Pubblica Amministrazione Italiana di AGID e Team Digitale,contribuendo attivamente alla realizzazione dei kit e sta sperimentando il modello che propone uno standard per tutti i Comuni.
 Il sito è progettato partendo dal mobile e poi declinando il progetto in una versione desktop. La home page dà un assaggio dei diversi tipi di contenuti e una visione rapida della struttura del sito. Una organizzazione in quattro semplici sezioni: Amministrazione, Servizi ,  Novità,  Documenti e dati. Ripensata la struttura che organizza e classifica le informazioni. Un sistema di classificazione per argomenti (parole chiave che descrivono nel modo migliore la realtà e la vita di un Comune). I contenuti, raccolti in argomenti generano le pagine tematiche che li presenta.
 Il portale è realizzato in collaborazione con Entando: una piattaforma open source, basata su componenti, un set di moduli integrabili, riutilizzabili, personalizzabili e di funzionalità *enterprise-ready. In correlazione con il CMS è stato agganciato un potente motore di ricerca che usando la tassonomia del sito basata sui Tag, aiuta l’utente al meglio per muoversi all’interno del nuovo sito istituzionale, suggerendo di volta in volta i contenuti più appropriate secondo le scelte fatte.
@@ -1281,14 +1288,14 @@ Il Comune, fortemente orientato ad adottare le piattaforme abilitanti e a svilup
 
         <catalogue-item
           class="w-100"
-          id="1b386fbde43692c8ac0bde123485531416481728"
-          name="FreePBX"
+          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
+          name="parlaConIO"
           description=""
-          url="/en/software/italia-software-freepbx-1b386f"
-          icon=""
-          category="software_open"
-          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
-          fallback="/assets/images/cover_software_opensource.png"
+          url="/en/software/c_h355-comunedirivoli-parlaconio"
+          icon="it-software"
+          category="software_reuse"
+          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         
@@ -1303,14 +1310,14 @@ Il Comune, fortemente orientato ad adottare le piattaforme abilitanti e a svilup
 
         <catalogue-item
           class="w-100"
-          id="b6c955d8eb143a6a8472e0bd1eb59dae4985070a"
-          name="parlaConIO"
+          id="1b386fbde43692c8ac0bde123485531416481728"
+          name="FreePBX"
           description=""
-          url="/en/software/c_h355-comunedirivoli-parlaconio"
+          url="/en/software/italia-software-freepbx-1b386f"
           icon="it-software"
-          category="software_reuse"
-          logo="https://raw.githubusercontent.com/ComuneDiRivoli/parlaConIO/main/screenshots/Screenshot.png"
-          fallback="/assets/images/cover_softwareriuso.png"
+          category="software_open"
+          logo="https://wiki.freepbx.org/download/attachments/3211273/FPBX_SS_login.PNG"
+          fallback="/assets/images/cover_software_opensource.png"
           ></catalogue-item>
       </div>
         

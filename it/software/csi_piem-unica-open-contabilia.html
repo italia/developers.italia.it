@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1133,7 +1133,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <h3 id="sistema-informativo-amministrativo-contabile-per-gli-enti">Sistema Informativo Amministrativo Contabile per gli Enti</h3>
 <p>La contabilità finanziaria rileva informazioni atte a garantire un controllo preventivo, concomitante e consuntivo sul corretto utilizzo delle risorse e sul rispetto dei vincoli formulati in sede di previsione (logica autorizzatoria) oltre a garantire il mantenimento di condizioni di equilibrio finanziario (pareggio di bilancio). A tal riguardo è possibile distinguere tre distinte fasi: la fase di previsione, di gestione e di rendicontazione. La fase di previsione ha il compito di trasporre gli indirizzi degli organi politici in previsioni di spesa ed entrata mantenendo saldo il vincolo di equilibrio di bilancio; si contraddistingue per il carattere autorizzatorio in quanto determina i limiti agli impegni di spesa per l’esercizio successivo.  La fase di gestione è caratterizzata dalla rilevazione contabile dei fatti amministrativi (la cosiddetta “gestione del bilancio”), rilevazione che risulta normata e strettamente vincolata dall’iter da seguirsi per il pagamento delle spese e la riscossione delle entrate (fasi dell’entrata e della spesa). La rendicontazione ha la finalità di rappresentare i risultati della gestione; si tratta di una rilevazione consuntiva che mette a sistema i risultati ottenuti durante la fase di gestione e ne permette il confronto con le indicazioni derivanti dalla fase preventiva.</p>
 

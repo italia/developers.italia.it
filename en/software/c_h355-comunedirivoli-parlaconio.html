@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1074,7 +1074,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il software parlaConIO comprende degli script Python per <strong>inviare messaggi verso l’app IO a partire da dati contenuti in file CSV</strong>, tipicamente estratti dai software gestionali in uso presso le amministrazioni. Gli script funzionano da riga di comando e dovrebbero essere indipendenti dal sistema operativo in uso (Windows, Linux). Le operazioni di composizione e invio dei messaggi sono tracciate e memorizzate su log e file di report in formato testo o json. E’ incluso anche uno script per la verifica dell’invio di un lotto (=blocco di messaggi ottenuti a partire da un file CSV con i dati).</p>
 
               </div>
@@ -1169,14 +1176,14 @@
 
         <catalogue-item
           class="w-100"
-          id="410a6e7a954adde36ffc8664d2a370876aa3230b"
-          name="OpenCity Italia - La Stanza del Cittadino"
+          id="b365e3536123299a17d692e823d5fcd20ec09529"
+          name="OpenAgenda"
           description=""
-          url="/en/software/opencontent-stanza-del-cittadino-core-410a6e"
+          url="/en/software/c_a116-comune-di-ala-openagenda"
           icon="it-software"
-          category="software_open"
-          logo="https://gitlab.com/opencontent/stanza-del-cittadino/core/-/raw/master/images/sdc001.jpg"
-          fallback="/assets/images/cover_software_opensource.png"
+          category="software_reuse"
+          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         

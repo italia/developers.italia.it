@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1104,7 +1104,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>TECHNICAL SPECIFICATIONS: - Real-time A-weighted sound pressure level measurement - Minimum and maximum level - Third octave and FFT analysis - Data saving in text file - Calibration
 TERM OF USE This app is not intended for professional use, it does not necessarily guarantee an accurate noise measurement. Since each device has a different response to noise, a comparison with a professional noise level meter  in the measurement dynamic range is required. The utilization of the app requires adequate technical knowledge and skill;  an extemporary measurement might not be correct.</p>
 

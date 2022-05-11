@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1013,7 +1013,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>The <em>xmlschema</em> library is an implementation of <a href="http://www.w3.org/2001/XMLSchema">XML Schema</a> for Python (supports Python 3.5+).</p>
 
 <p>This library arises from the needs of a solid Python layer for processing XML Schema based files for <a href="http://www.max-centre.eu/">MaX (Materials design at the Exascale)</a>  European project. A significant problem is the encoding and the decoding of the XML data files produced by different simulation software. Another important requirement is the XML data validation, in order to put the produced data under control. The lack of a suitable alternative for Python in the schema-based decoding of XML data has led to build this library. Obviously this library can be useful for other cases related to XML Schema based processing, not only for the original scope.</p>

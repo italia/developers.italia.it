@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -4485,7 +4485,14 @@ zh_TW<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><a href="https://www.globaleaks.org/">GlobaLeaks</a> is free, open souce software enabling anyone to easily set up and maintain a secure whistleblowing platform. Thanks to GlobaLeaks even non-technical people are be able to setup their own anonymous whistleblowing project. Designed to be user-friendly the software is customizable up to own needs and protects the whistleblower’s privacy and submissions. GlobaLeaks targets <a href="https://www.globaleaks.org/usecases/">many use cases</a> and therefore it has been designed as a framework. Designed with flexibility in mind and translated in <a href="https://www.transifex.com/otf/globaleaks">more than 90 languages</a> GlobaLeaks is nowadays adopted worldwide by more than 4000 projects. The vast range of adopters includes independent media, activists, public agencies, corporations and more.</p>
 
               </div>

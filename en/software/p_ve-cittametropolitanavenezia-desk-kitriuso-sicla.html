@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1037,7 +1037,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Applicativo che fa parte del progetto DeSK (DEcision support System and Knowledge territoriale)   al quale hanno collaborato città Metropolitana di Milano, Città Metropolitana di Genova,  Provincia di Taranto e Città Metropolitana di Venezia con il supporto tecnico dell’azienda Corvallis S.p.A. Il progetto nasce come riuso di quanto sviluppato  da Città Metropolitana di Milano in precedente esperienza.  Consta di un insieme di applicativi finalizzati alla concertazione e all’arricchimento dell’informazione e della conoscenza territoriale.
  S.I.C.L.A. (Sistema Concertativo Limiti Amministrativi) è un esempio di
  strumento concertativo realizzato da</p>
@@ -1150,13 +1157,13 @@
 
         <catalogue-item
           class="w-100"
-          id="0d68067f6b3a948a398dbdaa6c90f38f32d78d76"
-          name="SBNWeb-Open"
+          id="b365e3536123299a17d692e823d5fcd20ec09529"
+          name="OpenAgenda"
           description=""
-          url="/en/software/m_bac-istitutocentralecatalogounicobiblio-sbnweb-open"
+          url="/en/software/c_a116-comune-di-ala-openagenda"
           icon="it-software"
           category="software_reuse"
-          logo="https://raw.githubusercontent.com/IstitutoCentraleCatalogoUnicoBiblio/SBNWeb-Open/master/screenshots/sbn_web.png"
+          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

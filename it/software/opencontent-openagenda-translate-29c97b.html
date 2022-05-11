@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1024,7 +1024,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>OpenAgenda Translate si propone di offrire un servizio per la traduzione automatica dei contenuti degli eventi all’interno di un’archivio OpenAgenda grazie al supporto di Amazon Translate. La traduzione può essere personalizzata definendo alcuni parametri di configurazione quali i contenuti da tradurre, l’insieme delle lingue in cui tradurre, il massimo numero di eventi da tradurre oppure la data oltre alla quale effettuare la traduzione.</p>
 
 <p>Le lingue di default in cui gli eventi verranno tradotti sono Tedesco, Arabo, Turco, Spagnolo, Russo, Polacco, Francese, Portoghese, Olandese e Cinese (Semplificato).</p>

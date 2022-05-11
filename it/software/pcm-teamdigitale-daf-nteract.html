@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1117,7 +1117,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>La <a href="https://dataportal.daf.teamdigitale.it/">Piattaforma Digitale Nazionale dei Dati</a> (ex DAF) contiene migliaia di dataset rilasciati dalle pubbliche amministrazioni italiane con licenze open data. La piattaforma espone delle <a href="https://docs.italia.it/italia/daf/daf-dataportal-it-docs/it/bozza/dataportal-privato/api.html">API</a> (Application Programming Interface) con cui è possibile cercare e scaricare i dati di interesse direttamente da un software di terze parti. Il progetto <a href="https://github.com/teamdigitale/daf-nteract">PDND-nteract</a> integra le API della PDND all’interno della suite di analisi dati <a href="https://jupyter.org/">Jupyter</a> grazie al progetto open source <a href="https://nteract.io/">nteract</a> di cui è un’estensione. L’utente può cercare, analizzare, visualizzare ed eventualmente salvare i dati di interesse all’interno del proprio notebook (Julia, Python, R), oltre che condividerli con la comunità<a href="https://github.com/teamdigitale/pdnd-open-notebooks"> direttamente su Github</a>.</p>
 
               </div>

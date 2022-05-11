@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1090,7 +1090,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>NOTIFY é una piattaforma di notifica messaggi utente dispiegata che abilita le comunicazioni delle pubbliche amministrazioni locali verso i cittadini (o in generale gli utenti finali del sistema PA). La piattaforma favorisce l’interazione su canalità tradizionali quali  email, sms e di nuova generazione ad esempio push-notification su Mobile  App ed il sistema <a href="https://teamdigitale.github.io/digital-citizenship/introduzione.html">IO Italia</a>.</p>
 
 <p>La piattaforma si articola nelle seguenti componenti che sono state progettate per consentire un’esperienza d’uso ottimizzata per i servizi applicativi che aderiscono a NOTIFY:</p>

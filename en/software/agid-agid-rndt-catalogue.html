@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1029,7 +1029,14 @@ Italian<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><strong>Catalogo metadati RNDT</strong> è una soluzione per la gestione, la pubblicazione e la ricerca dei metadati dei dati territoriali e relativi servizi secondo il <a href="https://github.com/AgID/rndt-guidance">profilo italiano RNDT</a> coerente con le regole <a href="https://inspire.ec.europa.eu/">INSPIRE</a>.</p>
 
 <p>La soluzione è basata su <a href="https://github.com/Esri/geoportal-server/wiki/What-is-a-geoportal-and-the-geoportal-server">ESRI Geoportal Server</a> v. 1.2.7, alla quale sono state comunque apportate diverse modifiche (alcune incluse nella versione 1.2.9) e personalizzazioni per garantire la conformità alle regole RNDT e INSPIRE.</p>

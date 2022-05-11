@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1116,7 +1116,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Nivola è una piattaforma open source che semplifica l’utilizzo dei servizi cloud da parte della pubblica amministrazione. La piattaforma Nivola è realizzata dal CSI Piemonte utilizzando i progetti pubblicati e mette a disposizione potenza di calcolo, storage, rete, database e molto altro. Il risultato è quello di offrire a ogni amministrazione la completa autonomia nella creazione del proprio sistema informativo e nella migrazione delle applicazioni, in assoluta sicurezza. Attualmente la piattaforma è usata da diverse Pubbliche Amministrazioni italiane.</p>
 
               </div>

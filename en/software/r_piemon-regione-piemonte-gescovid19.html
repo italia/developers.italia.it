@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1093,7 +1093,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>La piattaforma GESCOVID19 è composta da un gruppo di applicazioni create per gestire in tempo reale i processi di richiesta tamponi e di consultazione del relativo esito,  la presa in carico dei pazienti in ospedale, le loro dimissioni e i trasferimenti a domicilio o in altre strutture per il post-ricovero,  divulgare le segnalazioni in arrivo da MMG/PLS, gestire le acquisizioni straordinarie di personale, gestire il ciclo di approvvigionamento di servizi e presidi medici,  tenere sotto controllo lo stato di occupazione dei letti suddivisi, per ogni struttura, tra terapia intensiva, sub-intensiva e ordinaria,  nonché la consultazione dei casi positivi da parte dei sindaci, Prefettura e forze dell’ordine.  Un sistema gestionale completo e flessibile, realizzato dal CSI Piemonte con soluzioni tecnologiche open source in cui le informazioni sono fruibili facilmente anche  in mobilità e con dispositivi diversi.</p>
 
               </div>

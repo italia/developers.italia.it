@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1098,7 +1098,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>PCA is a software aimed at gathering applications for public competitions. The software is designed not to require applicant strong authentication. Submitted applications are keyed by the applicant’s Italian fiscal code. Fiscal code duplications are allowed by the software, since otherwise an applicant might be unable to submit when her/his fiscal code has been stolen by another fake applicant. It is up to the backoffice users to fix fiscal code duplications. On application submission, the applicant receives a PIN, which allows her/him to possibly update her/his application later on. In case the PIN gets lost, the applicant can submit new applications from scratch. Also in this case, a fiscal code duplication occurs and must be fixed. Applications are never deleted. In case of application update, the old version is marked logically deleted. All actions are logged, even fiscal code matches. The software has been designed to tolerate an high load from the users and can store an ideally unlimited number of applications. The software is composed of a backend (based on Asp.Net WebApi2), a frontend GUI (dedicated to applicants) and a backoffice GUI (dedicated to backoffice users). The frontend is based on Angular6 framework and Material design. The backoffice is based on Angular6 framework and Bootstrap v4. The system is compliant with security by-design and by-default enforced by GDPR regulation. The backoffice GUI is protected through a token-based JWT authentication. Real-time statistics on submitted application are available from the backoffice. Implementation of a Denial of Service (DoS) reaction mechanism is planned (basically based on IP client identity). The reaction enforces a binary exponential backoff delay on every request coming from a DoS IP address.</p>
 
               </div>
@@ -1115,28 +1122,6 @@
   <div class="interestRelatedSoftwares">
     <h2> Altri software che potrebbero interessarti </h2>
     <div class="row">
-        
-      <div class="col-md-3 col-12">
-        
-        
-        
-
-        
-
-        
-
-        <catalogue-item
-          class="w-100"
-          id="1c4f36e22e1e640337f8b72e355aa5d85f3835d1"
-          name="WSBandiEsitiAvvisi"
-          description=""
-          url="/it/software/r_marche-regione-marche-e-procurement-wsbandiesitiavvisi"
-          icon="it-software"
-          category="software_reuse"
-          logo=""
-          fallback="/assets/images/cover_softwareriuso.png"
-          ></catalogue-item>
-      </div>
         
       <div class="col-md-3 col-12">
         
@@ -1197,6 +1182,28 @@
           name="BANDEU"
           description=""
           url="/it/software/r_marche-regione-marche-e-procurement-bandeu"
+          icon="it-software"
+          category="software_reuse"
+          logo=""
+          fallback="/assets/images/cover_softwareriuso.png"
+          ></catalogue-item>
+      </div>
+        
+      <div class="col-md-3 col-12">
+        
+        
+        
+
+        
+
+        
+
+        <catalogue-item
+          class="w-100"
+          id="efb7bd198db3a0c770bc434a0507f29955432b6b"
+          name="VigilanzaComunicazioni"
+          description=""
+          url="/it/software/r_marche-regione-marche-e-procurement-vigilanzacomunicazioni"
           icon="it-software"
           category="software_reuse"
           logo=""

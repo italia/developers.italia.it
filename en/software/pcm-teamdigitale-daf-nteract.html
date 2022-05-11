@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1109,7 +1109,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>This is a branched (daf-*) fork of <a href="https://nteract.io/">nteract</a>, a <a href="https://reactjs.org/">React</a> user interface on top of <a href="https://jupyter.org/">Jupyter</a> server. We have developed an integration of the API from <a href="https://dataportal.daf.teamdigitale.it/">PDND - DAF</a> (Piattaforma Digitale Nazionale Dati, formerly Data &amp; Analytics Framework) for simplyfing the access to Italian public data inside notebook for data analysis. We are developing a set of UI components integrated into a set of the official API to <strong>read</strong>, <strong>save</strong> and **update **data into PDND. User can search for datasets from PDND load into a dataframe and starting working on it. The tool is very powerful and flexible and can be an easy way to start working on public dataset from italian administrations, making simple analysis and reports.</p>
 
               </div>

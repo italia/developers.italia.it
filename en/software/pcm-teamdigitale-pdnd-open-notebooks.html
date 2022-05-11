@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1111,7 +1111,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><a href="https://github.com/teamdigitale/daf-nteract">PDND-nteract</a> is a customisation of <a href="https://nteract.io/">nteract</a> that allows users registered into the <a href="https://dataportal.daf.teamdigitale.it/">PDND</a> to search and load datasets into the notebook from about 7000 italians public datasets. This repo contains a set of notebooks devoloped using <a href="https://github.com/teamdigitale/daf-nteract">pdnd-nteract</a> on top of a <a href="https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook">datascience docker image</a> provided by <a href="https://jupyter.org/">jupyter project</a>. The image contains a ready to use datascience environment with the most used datascience libraries for <strong>python3</strong>, <strong>R</strong>, and <strong>Julia</strong>. If you want to deepen about the set of libraries you can read <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/">this</a>. If you want to know more about the project you can start from <a href="https://github.com/teamdigitale/daf-nteract">here</a>.</p>
 
               </div>

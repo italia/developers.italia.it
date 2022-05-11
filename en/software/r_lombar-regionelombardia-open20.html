@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1102,7 +1102,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p><strong>Open 2.0</strong> è un software open source, messo a disposizione da Regione
 Lombardia per la creazione di piattaforme complesse e strumenti
 collaborativi; lo strumento ideale per affrontare in maniera efficiente le
@@ -1139,13 +1146,35 @@ e rispondere alle sfide strategiche di crescita e competitività.</p>
 
         <catalogue-item
           class="w-100"
-          id="e89ac5676fee0554e81a777fdd53d4d97f9681db"
-          name="MiPiace"
+          id="cf016d721e1b2b6b93a665e821f6e6b1a06420b2"
+          name="La Stanza del Cittadino"
           description=""
-          url="/en/software/m_it-vvfosprojects-mipiace"
+          url="/en/software/opencontent-stanzadelcittadino-cf016d"
+          icon=""
+          category="software_open"
+          logo="https://gitlab.com/opencontent/stanzadelcittadino/raw/master/images/sdc001.jpg"
+          fallback="/assets/images/cover_software_opensource.png"
+          ></catalogue-item>
+      </div>
+        
+      <div class="col-md-3 col-12">
+        
+        
+        
+
+        
+
+        
+
+        <catalogue-item
+          class="w-100"
+          id="f2ad0f5720314b3ab1219e580cbe0716a7f5c2a4"
+          name="Limesurvey Antiphishing Plugin"
+          description=""
+          url="/en/software/r_emiro-regioneer-lsrerantiphishing"
           icon="it-software"
           category="software_reuse"
-          logo="https://raw.githubusercontent.com/vvfosprojects/mipiace/master/docs/images/mainScreen.JPG"
+          logo=""
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
@@ -1183,35 +1212,13 @@ e rispondere alle sfide strategiche di crescita e competitività.</p>
 
         <catalogue-item
           class="w-100"
-          id="cf016d721e1b2b6b93a665e821f6e6b1a06420b2"
-          name="La Stanza del Cittadino"
+          id="e89ac5676fee0554e81a777fdd53d4d97f9681db"
+          name="MiPiace"
           description=""
-          url="/en/software/opencontent-stanzadelcittadino-cf016d"
-          icon="it-software"
-          category="software_open"
-          logo="https://gitlab.com/opencontent/stanzadelcittadino/raw/master/images/sdc001.jpg"
-          fallback="/assets/images/cover_software_opensource.png"
-          ></catalogue-item>
-      </div>
-        
-      <div class="col-md-3 col-12">
-        
-        
-        
-
-        
-
-        
-
-        <catalogue-item
-          class="w-100"
-          id="f2ad0f5720314b3ab1219e580cbe0716a7f5c2a4"
-          name="Limesurvey Antiphishing Plugin"
-          description=""
-          url="/en/software/r_emiro-regioneer-lsrerantiphishing"
+          url="/en/software/m_it-vvfosprojects-mipiace"
           icon="it-software"
           category="software_reuse"
-          logo=""
+          logo="https://raw.githubusercontent.com/vvfosprojects/mipiace/master/docs/images/mainScreen.JPG"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

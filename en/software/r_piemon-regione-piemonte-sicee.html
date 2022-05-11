@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1083,7 +1083,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il SIPEE gestisce l’elenco regionale dei soggetti abilitati al rilascio dell’Attestato di Prestazione Energetica (APE), i dati inseriti negli APE e la raccolta degli attestati trasmessi dai professionisti. Le principali funzionalità sono:  - <strong>Funzionalità per i certificatori</strong>: iscrizione all’elenco regionale dei certificatori; pagamento dell’onere annuale per l’iscrizione; prenotazione e acquisto codici APE; compilazione online e trasmissione APE; - <strong>Funzionalità per i notai e i cittadini</strong>: ricerche sull’elenco dei certificatori regionali; ricerche di Attestati trasmessi al SIPEE; - <strong>Funzionalità per enti e soggetti formativi</strong>: gestione informazioni enti e soggetti formativi; gestione corsi e partecipanti;</p>
 
               </div>

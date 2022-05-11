@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -716,7 +716,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 68%</p>
           
-          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69]'>
+          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -1041,7 +1041,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>S.I.SO/SIgeSS (Sistema Informativo SOciale) è una piattaforma digitale a supporto degli adempimenti di accoglienza, raccolta del fabbisogno, gestione anagrafiche, produzione PAI/interventi, erogazione, rendicontazione sulle voci dei fondi e di altri (REI e Reddito di cittadinanza con rapporti ARPAL/ANPAL, L.26/2019) per i servizi sociali Comuni nel modello singolo Ente o Ambito territoriale. In questo il sistema è rivolto agli uffici perle fasi di contatto e presa in carico del cittadino, favorendo modelli uniformi di servizio fino a livello regionale e in grado di interoperare attraverso automatismi di servizio con Gli Enti esterni interessati. I servizi, oltre alla gestione sopra indicata intervengono quale supporto ai comuni nella gestione delle UVM e nelle problematiche inerenti il SOcio-sanitario regionale.</p>
 
               </div>
@@ -1136,13 +1143,13 @@
 
         <catalogue-item
           class="w-100"
-          id="4e43db93677575b12b38b13a7c66e688f05f042a"
-          name="Proma-Property Management"
+          id="c1ae4cc8ad7b2f4b0290f34cb28c10b045962d6c"
+          name="Med.Plan."
           description=""
-          url="/it/software/umcn-unionemontanacatrianerone-proma"
+          url="/it/software/ispra_rm-isprambiente-medplan"
           icon="it-software"
           category="software_reuse"
-          logo=""
+          logo="https://raw.githubusercontent.com/isprambiente/medplan/master/doc/screen-1.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

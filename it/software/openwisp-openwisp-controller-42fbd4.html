@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1003,7 +1003,14 @@ Inglese<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>OpenWISP is a software platform designed to ease and automate the management of networks, with a special focus on wireless networks, mainly used in public wifi, mesh networks, community networks and IoT scenarios.
 OpenWISP 2, launched in December 2016, is the new generation of the software which is gradually replacing OpenWISP 1 and aims to build an ecosystem of applications and tools that make it easy for developers to build custom networking applications in order to bring innovation in the network infrastructure of communities that most need it.</p>
 

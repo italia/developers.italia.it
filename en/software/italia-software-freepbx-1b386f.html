@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1048,7 +1048,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>FreePBX è un frontend di Asterisk che permette una configurazione e una
 gestione professionale di un centralino IP. Attraverso l’installazione di
 Asterisk e di telefoni voip, ma anche soltanto utilizzando software
@@ -1156,14 +1163,14 @@ e analisi del traffico.</p>
 
         <catalogue-item
           class="w-100"
-          id="410a6e7a954adde36ffc8664d2a370876aa3230b"
-          name="OpenCity Italia - La Stanza del Cittadino"
+          id="b365e3536123299a17d692e823d5fcd20ec09529"
+          name="OpenAgenda"
           description=""
-          url="/en/software/opencontent-stanza-del-cittadino-core-410a6e"
+          url="/en/software/c_a116-comune-di-ala-openagenda"
           icon="it-software"
-          category="software_open"
-          logo="https://gitlab.com/opencontent/stanza-del-cittadino/core/-/raw/master/images/sdc001.jpg"
-          fallback="/assets/images/cover_software_opensource.png"
+          category="software_reuse"
+          logo="https://gitlab.com/comune-di-ala/openagenda/raw/master/screenshots/Solo-gli-eventi-di-interesse-per-il-cittadino-i-filtri_imagefullwide.png"
+          fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>
         

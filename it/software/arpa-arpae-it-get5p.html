@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -988,7 +988,14 @@ Inglese<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>A collection of functions to download, filter and preview the latest ESA Copernicus 5p files produced for a specific location of the world. get5p {get5p}	 Get a specific S5p product Description The functions works after get5plist() function, it retrives a specific S5P product and allows to save it
 Usage get5p(month, year, number, id, fn) Arguments month	 Desired month in mm format (April would be “04”, December would be “12”)
 year	 Desired year in yyyy format (“2020” not “20”)

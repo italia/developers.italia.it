@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1014,7 +1014,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>GeneWeb è la backbone su cui sono implementate le applicazioni “verticali” di backoffice.
 Comprende una serie di strutture dati generali (archivio utenti, enti, imprese, ecc.) e di interfacce (trova, lista, scheda, operazioni CRUD, ecc.) comuni a tutte le applicazioni di backoffice.
 Mette a disposizione le funzionalità generali di configurazione del software (menu di amministrazione).
@@ -1035,28 +1042,6 @@ Comprende le funzioanlità denominate “Generatore modelli” e “Modelli pred
   <div class="interestRelatedSoftwares">
     <h2> Other software that may interest you </h2>
     <div class="row">
-        
-      <div class="col-md-3 col-12">
-        
-        
-        
-
-        
-
-        
-
-        <catalogue-item
-          class="w-100"
-          id="1c4f36e22e1e640337f8b72e355aa5d85f3835d1"
-          name="WSBandiEsitiAvvisi"
-          description=""
-          url="/en/software/r_marche-regione-marche-e-procurement-wsbandiesitiavvisi"
-          icon="it-software"
-          category="software_reuse"
-          logo=""
-          fallback="/assets/images/cover_softwareriuso.png"
-          ></catalogue-item>
-      </div>
         
       <div class="col-md-3 col-12">
         
@@ -1117,6 +1102,28 @@ Comprende le funzioanlità denominate “Generatore modelli” e “Modelli pred
           name="VigilanzaComunicazioni"
           description=""
           url="/en/software/r_marche-regione-marche-e-procurement-vigilanzacomunicazioni"
+          icon="it-software"
+          category="software_reuse"
+          logo=""
+          fallback="/assets/images/cover_softwareriuso.png"
+          ></catalogue-item>
+      </div>
+        
+      <div class="col-md-3 col-12">
+        
+        
+        
+
+        
+
+        
+
+        <catalogue-item
+          class="w-100"
+          id="81bcafc74f8a1846a7c1819ff933af8123d7ea99"
+          name="appalti-rest"
+          description=""
+          url="/en/software/r_marche-regione-marche-e-procurement-appalti-rest"
           icon="it-software"
           category="software_reuse"
           logo=""

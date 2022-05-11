@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1022,7 +1022,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>MSA (Mail Storage Agent) è il software che si occupa dell’archiviazione di messaggi di posta elettronica sul sistema documentale e di protocollo informatico DocWay. Gestisce sia caselle di posta elettronica standard che caselle PEC. Gestisce inoltre l’archiviazione di documenti di protocollo pervenuti tramite interoperabilità tra pubbliche amministrazioni. I protocolli supportati sono IMAP e POP.</p>
 
 <p>La sua primaria funzione è quella di monitorare le caselle mail e PEC aziendali e di realizzare una registrazione automatica delle mail e degli allegati digitali, ai fini di una corretta formazione dell’Archivio documentale, secondo modelli definibili dall’utente.</p>

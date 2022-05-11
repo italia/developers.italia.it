@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1151,7 +1151,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Immuni is a technological solution that centres on <strong>an iOS and Android smartphone app.</strong> It helps us to fight the COVID-19 pandemic by notifying users at risk of carrying the virus as early as possible—<strong>even when they are asymptomatic.</strong> These users can then isolate themselves to avoid infecting others, and seek medical advice.</p>
 
 <p>Immuni’s design and development are based on five main principles: <strong>utility, accuracy, scalability, transparency,</strong> and <strong>privacy.</strong></p>

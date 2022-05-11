@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1079,7 +1079,14 @@ English<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Questo <strong>plugin per Matomo</strong> aggiunge una nuova <em>dimensione</em> ai <em>report</em> e <strong>permette di conteggiare le visite provenienti dalla intranet.</strong></p>
 
 <p>La rappresentazione avviene per mezzo di un nuovo <em>widget</em> che elenca la provenienza delle <em>visite</em>, suddivise in WWW per internet e Intranet per le sotto reti.</p>

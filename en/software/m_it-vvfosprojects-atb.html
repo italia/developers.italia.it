@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1088,7 +1088,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>L’applicativo ATB consente il tracciamento dei soggetti coinvolti nell’emergenza COVID-19. Consente alle sedi territoriali di operare un tracciamento continuo dei soggetti che hanno contratto il virus, di aggiornarne costantemente la situazione del contagio, di indicare il luogo della degenza. Consente altresì di gestire il personale in regime di sorveglianza preventiva. I dati inseriti sono acquisiti in una base dati centralizzata e utilizzati per fornire indicatori precisi sulle consistenze numeriche del personale coinvolto, valutare le assenze (anche suddivise per qualifica) fare proiezioni sui tempi di rientro, verificare la qualità del dato, rilevare eventuali ritardi nell’inserimento dei dati. Un potente sistema di business-intelligence è affiancato all’applicativo al fine di produrre reportistica esaustiva ed aggiornata.</p>
 
               </div>

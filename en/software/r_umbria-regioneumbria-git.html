@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1093,7 +1093,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>La piattaforma di servizi GIT consente l’acquisizione e l’utilizzo di informazioni provenienti da ogni fonte informativa interna ed esterna al Comune, attraverso servizi di scheduling, di consultazione, di analisi e elaborazione, configurabili per tipologia di interesse dei singoli settori dell’Ente. I Servizi sono progettati per supportare in modo autonomo i procedimenti degli uffici o per interoperare con sistemi gestionali di interesse. L’accesso autonomo all’informazione è assicurato da interfacce di consultazione alfanumerica libera, cartografica integrata, per fascicolo del bene o del soggetto, per interrogazione massiva sulle banche dati attraverso catologhi di interrogazioni o ambiente di datamining. Ambiti di applicazione della soluzione al momento sperimentati: fiscalità, edilizia e urbanistica/SIT, welfare e servizi alla persona, sicurezza e polizia, commercio, anagrafe popolazione, lotta evasione, catasto.</p>
 
               </div>
@@ -1188,13 +1195,13 @@
 
         <catalogue-item
           class="w-100"
-          id="4e43db93677575b12b38b13a7c66e688f05f042a"
-          name="Proma-Property Management"
+          id="c1ae4cc8ad7b2f4b0290f34cb28c10b045962d6c"
+          name="Med.Plan."
           description=""
-          url="/en/software/umcn-unionemontanacatrianerone-proma"
+          url="/en/software/ispra_rm-isprambiente-medplan"
           icon="it-software"
           category="software_reuse"
-          logo=""
+          logo="https://raw.githubusercontent.com/isprambiente/medplan/master/doc/screen-1.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

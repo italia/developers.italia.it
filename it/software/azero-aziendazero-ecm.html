@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1028,7 +1028,14 @@ Italiano<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Il Sistema per l’Educazione Continua in Medicina (ECM) è disciplinato dall’Accordo Stato-Regioni del 19 Aprile 2012, “Nuovo sistema di Formazione Continua in Medicina”, (rep. 101/CSR). Il suo obiettivo è quello di monitorare e controllare l’aggiornamento professionale degli operatori della sanità; viene diretto e coordinato a livello regionale dai Centri Regionali di Riferimento per l’ECM; integrati a loro volta con il Sistema ECM Nazionale, che si occupa di fornire linee guida e indirizzi comuni. Il software ideato dalla 3D Informatica è in grado di fornire tutte le funzionalità necessarie per la gestione delle attività complesse svolte dagli attori che interagiscono con il sistema, ovvero la Segreteria regionale ECM, i Provider, i Professionisti, gli Ordini, i Collegi e le Associazioni Professionali.</p>
 
               </div>

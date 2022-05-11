@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -707,7 +707,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 81%</p>
           
-          <div id="softwareChart" data-vitality='[81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,87,87,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81]'>
+          <div id="softwareChart" data-vitality='[81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,87,87,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,87]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -995,7 +995,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Semantic Turkey is a RDF service platform for Knowledge Management and Acquisition realized by the <a href="http://art.uniroma2.it/">ART Research Group</a> at the University of Rome, Tor Vergata</p>
 
 <p>Built on top of existing core technologies for RDF, such as <a href="http://rdf4j.org/">RDF4J</a> and <a href="http://art.uniroma2.it/coda/">CODA</a> and existing frameworks (<a href="https://www.osgi.org/">OSGi</a> and <a href="https://spring.io/">Spring</a>) for service development and publication, Semantic Tukey offers a whole set of services for powering up applications oriented at RDF Data Management and Acquisition.</p>

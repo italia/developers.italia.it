@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1010,7 +1010,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>The development presented in this project is aimed towards providing a simple web interface to show the products of the USGS ShakeMap v.4 software (http://usgs.github.io/shakemap/sm4_index.html). 
 The web interface renders the standard products provided by ShakeMap dynamically (using leafelet https://github.com/Leaflet/Leaflet) and statically (standard shakemaps).
 The apperance of the web portal is easily configurable by replacing the logo and banners. The software can be installed both laptops and on server computers.

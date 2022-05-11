@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1018,7 +1018,14 @@
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>This project is developed to create a Docker image used to parse a full QuakeML (xml) file or QuakeML webservice response containing information on hypocenter and related arrival times picks, to return an Extended text format. More informations about the Extended text output format could be found here: https://github.com/ingv/qml2extendedtext
 FDNS-event QuakeML format is a flexible, extensible and modular XML representation of seismological data which is intended to cover a broad range of fields of application in modern seismology. More info about QuakeML: https://quake.ethz.ch/quakeml/</p>
 

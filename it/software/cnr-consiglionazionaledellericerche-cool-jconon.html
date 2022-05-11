@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202205111517" rel="stylesheet">
+  <link href="/dist/main.css?202205111620" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1222,7 +1222,14 @@ Inglese<br />
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
-              <div class="font-serif page-detail__text">
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
                 <p>Selezioni on-line permette di gestire l’iter concorsuale di un bando pubblico in tutte le sue fasi, partendo dalla redazione del bando di concorso alla sua pubblicazione, alla raccolta delle candidature e infine ai lavori della Commissione.
 Il sistema si basa su un repository documentale attraverso lo standard <a href="https://en.wikipedia.org/wiki/Content_Management_Interoperability_Services">CMIS</a>, ed è organizzato in cartelle e documenti corredate da metadati specifici e da permessi appositi. Il Bando di concorso è una cartella della base documentale, la quale contiene documenti (Bando di Concorso, Provvedimento di nomina della Commissione, Atti di Concorsi, ecc…) e cartelle che rappresentano le Candidature che a loro volta contegono documenti(Curriculum, Documento di Riconoscimento, Convocazioni, Comunicazioni, Esclusioni ecc.).La piattaforma è pienamente rispondente al DL 44/2021, in quanto è possibile la configurazione dei titoli e delle esperienze da richiedere in fase di sottomissione della candidatura, inoltre è facilmente integrabile con sistemi per lo svolgimento di prove scritte.</p>
 
