@@ -58,6 +58,8 @@ e-commerce:
   en: e-commerce
 e-signature:
   en: e-signature
+educational-content:
+  en: educational-content
 email-management:
   en: email management
 email-marketing:
@@ -192,6 +194,8 @@ web-collaboration:
   en: web collaboration
 web-conferencing:
   en: web conferencing
+whistleblowing:
+  en: whistleblowing
 website-builder:
   en: website builder
 workflow-management:
