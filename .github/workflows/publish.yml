@@ -41,3 +41,6 @@ jobs:
           npm run deploy -- --dotfiles -m "Automated deployment: ${GITHUB_SHA} [ci skip]"
         env:
            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+           ELASTICSEARCH_PASS: ${{ secrets.ELASTICSEARCH_PASS }}
+           ELASTICSEARCH_USER: ${{ secrets.ELASTICSEARCH_USER }}
+           ELASTICSEARCH_URL: "https://elasticsearch.developers.italia.it"
