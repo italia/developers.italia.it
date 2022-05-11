@@ -1,5 +1,4 @@
-{% assign labels = site.data.software_categories[include.tag] %}
-{% assign label = labels[active_lang] | default: labels.en | default: include.tag %}
+{% assign label = site.data.l10n[active_lang].t.publiccode.categories.[include.tag] | default: include.tag %}
 {% assign field = include.field | default: "categories" %}
 
 <li class="home-software-tags__item  {% if include.deactive %}deactive{% endif %}">
