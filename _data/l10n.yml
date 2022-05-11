@@ -296,7 +296,109 @@ it:
 
 
 I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml)."
-
+    publiccode:
+      categories:
+        accounting: accounting
+        agile-project-management: agile project management
+        applicant-tracking: applicant tracking
+        application-development: application development
+        appointment-scheduling: appointment scheduling
+        backup: backup
+        billing-and-invoicing: billing and invoicing
+        blog: blog
+        budgeting: budgeting
+        business-intelligence: business intelligence
+        business-process-management: business process management
+        cad: CAD
+        call-center-management: call center management
+        cloud-management: cloud management
+        collaboration: collaboration
+        communications: communications
+        compliance-management: compliance management
+        contact-management: contact management
+        content-management: content management
+        crm: CRM
+        customer-service-and-support: customer service and support
+        data-analytics: data analytics
+        data-collection: data collection
+        data-visualization: data visualization
+        digital-asset-management: digital asset management
+        digital-citizenship: digital citizenship
+        document-management: document management
+        donor-management: donor management
+        e-commerce: e-commerce
+        e-signature: e-signature
+        educational-content: educational-content
+        email-management: email management
+        email-marketing: email marketing
+        employee-management: employee management
+        enterprise-project-management: enterprise project management
+        enterprise-social-networking: enterprise social networking
+        erp: ERP
+        event-management: event management
+        facility-management: facility management
+        feedback-and-reviews-management: feedback and reviews management
+        financial-reporting: financial reporting
+        fleet-management: fleet management
+        fundraising: fundraising
+        gamification: gamification
+        geographic-information-systems: geographic information systems
+        grant-management: grant management
+        graphic-design: graphic design
+        help-desk: help desk
+        hr: HR
+        ide: IDE
+        identity-management: identity management
+        instant-messaging: instant messaging
+        inventory-management: inventory management
+        it-asset-management: IT asset management
+        it-development: IT development
+        it-management: IT management
+        it-security: IT security
+        it-service-management: IT service management
+        knowledge-management: knowledge management
+        learning-management-system: learning management system
+        marketing: marketing
+        mind-mapping: mind mapping
+        mobile-marketing: mobile marketing
+        mobile-payment: mobile payment
+        network-management: network management
+        office: office
+        online-booking: online booking
+        online-community: online community
+        payment-gateway: payment gateway
+        payroll: payroll
+        predictive-analysis: predictive analysis
+        procurement: procurement
+        productivity-suite: productivity suite
+        project-collaboration: project collaboration
+        project-management: project management
+        property-management: property management
+        real-estate-management: real estate management
+        remote-support: remote support
+        resource-management: resource management
+        sales-management: sales management
+        seo: SEO
+        service-desk: service desk
+        social-media-management: social media management
+        survey: survey
+        talent-management: talent management
+        task-management: task management
+        taxes-management: taxes management
+        test-management: test management
+        time-management: time management
+        time-tracking: time tracking
+        translation: translation
+        video-conferencing: video conferencing
+        video-editing: video editing
+        visitor-management: visitor management
+        voip: VoIP
+        warehouse-management: warehouse management
+        web-collaboration: web collaboration
+        web-conferencing: web conferencing
+        whistleblowing: whistleblowing
+        website-builder: website builder
+        workflow-management: workflow management
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
@@ -607,6 +709,109 @@ en:
 
 
 The ranges of every measure can be found in the [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml) file."
+    publiccode:
+      categories:
+        accounting: accounting
+        agile-project-management: agile project management
+        applicant-tracking: applicant tracking
+        application-development: application development
+        appointment-scheduling: appointment scheduling
+        backup: backup
+        billing-and-invoicing: billing and invoicing
+        blog: blog
+        budgeting: budgeting
+        business-intelligence: business intelligence
+        business-process-management: business process management
+        cad: CAD
+        call-center-management: call center management
+        cloud-management: cloud management
+        collaboration: collaboration
+        communications: communications
+        compliance-management: compliance management
+        contact-management: contact management
+        content-management: content management
+        crm: CRM
+        customer-service-and-support: customer service and support
+        data-analytics: data analytics
+        data-collection: data collection
+        data-visualization: data visualization
+        digital-asset-management: digital asset management
+        digital-citizenship: digital citizenship
+        document-management: document management
+        donor-management: donor management
+        e-commerce: e-commerce
+        e-signature: e-signature
+        educational-content: educational-content
+        email-management: email management
+        email-marketing: email marketing
+        employee-management: employee management
+        enterprise-project-management: enterprise project management
+        enterprise-social-networking: enterprise social networking
+        erp: ERP
+        event-management: event management
+        facility-management: facility management
+        feedback-and-reviews-management: feedback and reviews management
+        financial-reporting: financial reporting
+        fleet-management: fleet management
+        fundraising: fundraising
+        gamification: gamification
+        geographic-information-systems: geographic information systems
+        grant-management: grant management
+        graphic-design: graphic design
+        help-desk: help desk
+        hr: HR
+        ide: IDE
+        identity-management: identity management
+        instant-messaging: instant messaging
+        inventory-management: inventory management
+        it-asset-management: IT asset management
+        it-development: IT development
+        it-management: IT management
+        it-security: IT security
+        it-service-management: IT service management
+        knowledge-management: knowledge management
+        learning-management-system: learning management system
+        marketing: marketing
+        mind-mapping: mind mapping
+        mobile-marketing: mobile marketing
+        mobile-payment: mobile payment
+        network-management: network management
+        office: office
+        online-booking: online booking
+        online-community: online community
+        payment-gateway: payment gateway
+        payroll: payroll
+        predictive-analysis: predictive analysis
+        procurement: procurement
+        productivity-suite: productivity suite
+        project-collaboration: project collaboration
+        project-management: project management
+        property-management: property management
+        real-estate-management: real estate management
+        remote-support: remote support
+        resource-management: resource management
+        sales-management: sales management
+        seo: SEO
+        service-desk: service desk
+        social-media-management: social media management
+        survey: survey
+        talent-management: talent management
+        task-management: task management
+        taxes-management: taxes management
+        test-management: test management
+        time-management: time management
+        time-tracking: time tracking
+        translation: translation
+        video-conferencing: video conferencing
+        video-editing: video editing
+        visitor-management: visitor management
+        voip: VoIP
+        warehouse-management: warehouse management
+        web-collaboration: web collaboration
+        web-conferencing: web conferencing
+        whistleblowing: whistleblowing
+        website-builder: website builder
+        workflow-management: workflow management
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
