@@ -4,7 +4,6 @@ download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/software-open-source.yml -O _data/crawler/software-open-source.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/software-riuso.yml -O _data/crawler/software-riuso.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
 
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
