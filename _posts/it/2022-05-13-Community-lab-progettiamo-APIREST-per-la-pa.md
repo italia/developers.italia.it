@@ -3,7 +3,7 @@ layout: post
 title: "Community lab: progettiamo API REST per la Pubblica Amministrazione"
 subtitle: "Il 25 maggio alle 15:30 parliamo di interoperabilità, OpenAPI e sicurezza"
 date: 2022-05-13 10:00:00 +0200
-tags: developers designers interoperabilità API opensource
+tags: developers designers interoperabilità api opensource
 categories: news
 author: Michela Gabrieli
 image: /assets/icons/logo-it.png
