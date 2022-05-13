@@ -5,7 +5,7 @@ subtitle: "Il 25 maggio alle 15:30 parliamo di interoperabilità, OpenAPI e sicu
 date: 2022-05-13 10:00:00 +0200
 tags: developers designers interoperabilita api opensource
 categories: news
-author: Michela Gabrieli
+author: Gianvito Fanelli
 image: /assets/icons/logo-it.png
 locale: it
 ---
