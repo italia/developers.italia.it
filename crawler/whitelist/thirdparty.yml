@@ -118,3 +118,7 @@
 - name: "PDFsam Basic"
   repos:
     - "https://github.com/torakiki/pdfsam"
+
+- name: "DXC Technology"
+  repos:
+    - "https://github.com/dxc-technology/DXC-Industrialized-AI-Starter"
