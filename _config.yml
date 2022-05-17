@@ -109,6 +109,8 @@ newsletterdata:
    args:
      # Sendportal workspace id
      workspace_id: 1
+     # Des+Dev tag in Sendportal
+     tag_id: 7
 
 collections:
    platforms:
