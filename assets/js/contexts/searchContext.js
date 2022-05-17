@@ -147,10 +147,6 @@ export const setFilterIntendedAudience = (intendedAudience) => ({
   value: intendedAudience,
 });
 
-// export const setFilterPnrr = (pnrr) => ({ type: SET_FILTERS_PNRR, value: pnrr });
-// export const setFilterPnrrTarget = (target) => ({ type: SET_FILTERS_PNRR_TARGET, value: target });
-// export const setFilterPnrrMeasure = (measure) => ({ type: SET_FILTERS_PNRR_MEASURE, value: measure });
-
 export const setType = (type) => ({
   type: SET_TYPE,
   value: type,
