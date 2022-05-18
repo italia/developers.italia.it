@@ -1,10 +1,10 @@
 ---
-title: Software
-subtitle: Il catalogo del software open source a disposizione della Pubblica Amministrazione.
+title: PNRR - PA Digitale 2026
+subtitle:
 lang: it
 ref:
-  en: /en/software
-layout: software
+  en: /en/reuse
+layout: internal-simple
 pair-blocks:
     - title: "PNRR<br>PA Digitale 2026"
       text: "Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA Digitale 2026"
@@ -12,7 +12,7 @@ pair-blocks:
       buttons:
         - label: Esplora
           class: btn btn-primary
-          url: '/it/pnrr'
+          url: '/it/search?pnrr=1'
     - title: "Software a riuso"
       text: "Soluzioni e programmi informatici messi a riuso dalla Pubblica Amministrazione"
       # image: /assets/images/come-lo-uso-2.svg
@@ -29,9 +29,12 @@ pair-blocks:
           url: '/it/search?type=software_open'
 ---
 
-Questo è il catalogo previsto dalle [Linee Guida per l'Acquisizione e il Riuso del Software](/it/riuso), che include le soluzioni messe a riuso dalla Pubblica Amministrazione ai sensi dell'art. 69 e il software open source di terze parti destinato alla PA.
-
-<a href="/it/riuso" class="btn btn-white btn-outline-primary mr-10 ml-auto mt-3">Maggiori informazioni</a>
-<a href="/it/faq" class="btn btn-primary mr-10 ml-auto mt-3 faq">FAQ</a>
-
-Sezione PNRR
+* [Tutti i software PNRR](/it/search?pnrr=1)
+* Beneficiari
+  * [PNRR Beneficiari: Comuni](/it/search?pnrr=1&pnrr_target=Comuni)
+  * [PNRR Beneficiari: Scuole](/it/search?pnrr=1&pnrr_target=Scuole)
+* Misure
+  * [PNRR Misura: 1.2](/it/search?pnrr=1&pnrr_measure=1.2)
+  * [PNRR Misura: 1.4.1](/it/search?pnrr=1&pnrr_measure=1.4.1)
+  * [PNRR Misura: 1.4.2](/it/search?pnrr=1&pnrr_measure=1.4.2)
+  * [PNRR Misura: 1.4.3](/it/search?pnrr=1&pnrr_measure=1.4.3)
