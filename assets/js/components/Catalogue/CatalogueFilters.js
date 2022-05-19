@@ -57,7 +57,7 @@ export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}
         <CatalogueFiltersTitle
           title={title}
           counter={selectedFiltersCount}
-          showCollapsableIcon={filters.length > 10}
+          showCollapsableIcon={filters.length > 5}
           onToogleExpandCollapse={toogleShowAll}
         />
         {filters.map(([key, value]) => (
