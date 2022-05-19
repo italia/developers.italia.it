@@ -13,7 +13,7 @@ Quarto appuntamento con il nostro Community lab. Dopo aver parlato di [UI Kit e 
 
 Mercoledì 25 maggio, insieme a **Matteo Fortini** e **Roberto Polli**, esperti di interoperabilità del Dipartimento per la trasformazione digitale, approfondiremo la progettazione di API secondo il paradigma **REST**, usando un approccio contract-first e sfruttando gli strumenti previsti dal [modello d'interoperabilità](http://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita), [OpenAPI 3.0](https://swagger.io/specification/) e [OAS Checker](https://italia.github.io/api-oas-checker/).
 
-Come progettare delle interfacce *machine to machine*? Come descrivere un servizio digitale usando OpenAPI? Quali sono i punti critici in termini di sicurezza? Matteo e Roberto risponderanno a queste domande mostrando esempi pratici: durante l'incontro, infatti, **implementeremo dal vivo un'API** e vedremo **come contribuire attivamente al codice sorgente con Git e GitHub**.
+Come progettare delle interfacce *machine to machine*? Come descrivere un servizio digitale usando OpenAPI? Quali sono i punti critici in termini di sicurezza? Matteo e Roberto risponderanno a queste domande mostrando esempi pratici: durante l'incontro, infatti, **implementeremo dal vivo un'API REST** conforme al Modello di interoperabilità.
 
 Alla fine, ci sarà anche il consueto spazio per fare domande.
 
