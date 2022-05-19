@@ -88,7 +88,7 @@ ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personal
 ## Mailing list
 
 Le comunicazioni relative alle iniziative di Developers Italia e Designers
-italia sono distribuite, in automatico e gratuitamente, a quanti fanno
+Italia sono distribuite, in automatico e gratuitamente, a quanti fanno
 richiesta di riceverle compilando il form.
 
 L'indirizzo mail fornito è utilizzato al solo fine di fornirti il servizio
