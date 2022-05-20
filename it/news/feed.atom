@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-20T06:02:58+00:00</updated>
+  <updated>2022-05-20T10:57:38+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,41 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/05/20/sviluppo-open-source-migliorare-servizi-pubblici</id>
+    <title>Sviluppo open source: migliorare i servizi pubblici grazie ad un approccio collaborativo</title>
+    <updated>2022-05-20T08:00:00+00:00</updated>
+
+    <summary>La registrazione della community call del 18 maggio è ora disponibile. Leggi la notizia e guarda il video </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/05/20/sviluppo-open-source-migliorare-servizi-pubblici">&lt;p&gt;La community si è riunita il 18 maggio per parlare di come lo sviluppo &lt;em&gt;open source&lt;/em&gt; possa contribuire a rendere i servizi pubblici più aperti e di conseguenza migliorare l’esperienza degli utenti. Per far ciò abbiamo invitato chi ha lavorato a progetti virtuosi di servizi pubblici online, Vincenzo Di Nicola (INPS), Matteo Franci (SOGEI) e Daniele Tabellini (Dipartimento per la trasformazione digitale, nel team di Designers Italia). Parole chiave dell’incontro? &lt;strong&gt;Collaborazione, condivisione e partecipazione&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vincenzo Di Nicola&lt;/strong&gt;, che ha da poco contribuito al &lt;a href=&quot;https://medium.com/developers-italia&quot;&gt;nuovo blog di Developers Italia&lt;/a&gt;, ha spiegato perché &lt;em&gt;“United we stand, divided we fall”&lt;/em&gt;, ovvero: nella pubblica amministrazione, l’unione - e la collaborazione - fa la forza. Collaborazione che ha permesso il concretizzarsi del portale per la segnalazione tecnica di bugs &lt;a href=&quot;http://bugs.inps.it&quot;&gt;bugs.inps.it&lt;/a&gt;, la pubblicazione di Sirio - nuovo &lt;em&gt;design system&lt;/em&gt; dell’ente - nonché la messa a disposizione per gli utenti del codice sorgente di alcune librerie INPS. Secondo Vincenzo, a essere &lt;em&gt;open&lt;/em&gt; non deve essere solo il software ma anche l’approccio ai progetti.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Matteo Franci&lt;/strong&gt; ha poi condiviso la sua esperienza con il progetto ANPR di SOGEI, mettendo in luce gli strumenti collaborativi e la loro importanza nel favorire una comunicazione veloce tra i principali attori coinvolti nel progetto. Ha quindi illustrato l’utilità di GitHub per azioni come l’&lt;em&gt;issue tracking&lt;/em&gt;, il &lt;em&gt;changelog&lt;/em&gt; e la creazione di avvisi e spiegato quali sono i processi sottostanti utilizzati.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Daniele Tabellini&lt;/strong&gt; ha presentato “un piccolo passo per l’uomo ma un importante passo per la community”: l’aggiornamento di &lt;a href=&quot;https://come-partecipo.italia.it&quot;&gt;come-partecipo.italia.it&lt;/a&gt; con nuovi percorsi per partecipare all’aggiornamento del design system del Paese e dell’importanza di creare una cultura aperta: &lt;em&gt;open source&lt;/em&gt; sì ma anche &lt;em&gt;open data&lt;/em&gt;, &lt;em&gt;open design&lt;/em&gt;, apertura alla partecipazione e ai suggerimenti.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=cWUzfFVB7lY&quot;&gt;Guarda il video&lt;/a&gt;&lt;/strong&gt; della community call&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-05-20/18_05_22_Community_Call.pdf&quot;&gt;Scarica la presentazione&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Partecipare fa la differenza: resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack&lt;/a&gt; e continua a seguirci sui canali Twitter di Developers Italia e Designers Italia.&lt;/p&gt;</content>
+    <published>2022-05-20T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/05/13/Community-lab-progettiamo-APIREST-per-la-pa</id>
     <title>Community lab: progettiamo API REST per la Pubblica Amministrazione</title>
