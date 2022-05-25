@@ -6,8 +6,8 @@ ref:
 layout: internal-long
 ---
 
-The Presidency of the Council of Ministers - Department for transformation
-digital, based in Largo Pietro di Brazzà 86, 00186 Rome, has created
+The Presidency of the Council of Ministers - Department for digital
+transformation, based in Largo Pietro di Brazzà 86, 00187 Rome, has created
 this site with the aim of contributing to the growth and coordination of
 a community interested in the development of functional code
 of public administration online services.
