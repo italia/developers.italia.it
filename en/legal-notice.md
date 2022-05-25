@@ -77,19 +77,17 @@ allowed.
 
 Where social media allows it, posts, comments or audio / video material will be removed by the staff in case of:
 
-* have inappropriate language and / or a threatening, violent tone,
-  vulgar or disrespectful;
-* present illegal content or incitement to carry out illegal activities;
-* have content that is offensive, deceptive, alarmist, or in violation of
-  rights of third parties;
-* disclose personal data and information or information that may cause damage or harm
+* inappropriate language and / or a threatening, violent,
+  vulgar or disrespectful tone;
+* illegal content or incitement to carry out illegal activities;
+* offensive, deceptive, alarmist content or in violation of rights of third parties;
+* disclosure of personal data or information that may cause damage or harm
   the reputation of third parties;
-* contain obscene, pornographic or child pornography content, or
-  such as to offend the sensitivity of users;
-* have a discriminatory content based on gender, race, ethnicity, language, creed
+* obscene, pornographic or child pornography content, or content that offend the sensitivity of users;
+* discriminatory content based on gender, race, ethnicity, language, creed
   religious, political opinions, sexual orientation, age, conditions
   personal and social;
-* promote or support illegal activities, which infringe copyright or rights
+* promotion or support of illegal activities, that infringe copyright or rights
   of third parties.
 
 For those who repeatedly violate these conditions, those contained in the
