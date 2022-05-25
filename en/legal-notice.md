@@ -62,8 +62,8 @@ within its profiles, constantly monitored, in the various social media networks,
 
 * Everyone is asked to express their opinion with fairness, measure and respect.
 * In social media, everyone is responsible for the content they post and for
-  opinions it expresses. In any case, insults, vulgarity, offenses will not be tolerated,
-  threats and, in general, discriminatory, violent or defamatory attitudes.
+  opinions it expresses. In any case, insults, vulgarity, offenses, abuse,
+  threats and, in general, discriminatory, violent or defamatory attitudes will not be tolerated.
 * The published contents must always respect the privacy of people.
   References to facts or details without public relevance should be avoided e
   that harm the personal sphere of third parties.
