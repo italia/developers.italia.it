@@ -17,8 +17,8 @@ the needs of public administration's online services.
 In application of the open by default principle pursuant to Article 52 of
 legislative decree 7 March 2005, n. 82 (CAD) and unless otherwise
 specified (including embedded third party content), data, documents and
-the information published on the site are licensed
-[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it).
+the information published on the site are
+[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it) licensed.
 
 Users are therefore free to share (reproduce, distribute,
 communicate to the public, exhibit in public, represent, perform and act
