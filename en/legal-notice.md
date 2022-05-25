@@ -75,8 +75,7 @@ allowed.
 * No form of advertising, spam or promotion of private interests or illegal activities will be tolerated.
 * Content that violate copyright or non-authorized use of trademark is not allowed
 
-In any case, where social media allows it, they will be removed by the staff
-all posts, comments or audio / video materials that:
+Where social media allows it, posts, comments or audio / video material will be removed by the staff in case of:
 
 * have inappropriate language and / or a threatening, violent tone,
   vulgar or disrespectful;
