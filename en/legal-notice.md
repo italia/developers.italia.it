@@ -72,8 +72,7 @@ within its profiles, constantly monitored, in the various social media networks,
 allowed.
 * Each discussion is linked to a specific theme: to all participants it is
   required to respect it.
-* No form of advertising, spam or promotion of interests will be tolerated
-  private or illegal activities.
+* No form of advertising, spam or promotion of private interests or illegal activities will be tolerated.
 * Contents that violate copyright or non-use are not allowed
   authorized trademark.
 
