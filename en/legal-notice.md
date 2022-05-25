@@ -65,8 +65,8 @@ within its profiles, constantly monitored, in the various social media networks,
   opinions it expresses. In any case, insults, vulgarity, offenses, abuse,
   threats and, in general, discriminatory, violent or defamatory attitudes will not be tolerated.
 * The published contents must always respect the privacy of people.
-  References to facts or details without public relevance should be avoided e
-  that harm the personal sphere of third parties.
+  References to facts or details without public relevance and
+  that harm the personal sphere of third parties should be avoided.
 * The interest of the topics with respect to the activities of the Presidency of the
   Council of Ministers is an essential requirement: it is not possible in any
   how to use these spaces for purposes other than institutional ones.
