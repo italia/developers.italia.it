@@ -68,8 +68,8 @@ within its profiles, constantly monitored, in the various social media networks,
   References to facts or details without public relevance and
   that harm the personal sphere of third parties should be avoided.
 * The interest of the topics with respect to the activities of the Presidency of the
-  Council of Ministers is an essential requirement: it is not possible in any
-  how to use these spaces for purposes other than institutional ones.
+  Council of Ministers is an essential requirement: using these spaces for purposes other than institutional ones is not
+allowed.
 * Each discussion is linked to a specific theme: to all participants it is
   required to respect it.
 * No form of advertising, spam or promotion of interests will be tolerated
