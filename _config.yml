@@ -100,12 +100,17 @@ pill: ""
 url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/
 url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
 newsletterdata:
-    placeholdertext: mario.rossi@devsoftware.it
-    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
-    hidden-inputs:
-        -
-          name: list
-          value: 1
+   options:
+   # You can add extra custom fields to the newsletter registration form
+   # extra_fields:
+   #   subscriberType:
+   #     'Pubblica amministrazione': 1
+   #     'Studente': 2
+   args:
+     # Sendportal workspace id
+     workspace_id: 1
+     # Des+Dev tag in Sendportal
+     tag_id: 7
 
 collections:
    platforms:

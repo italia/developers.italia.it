@@ -24,19 +24,19 @@ owners:
       url: https://www.agid.gov.it/
 resources:
   - Documentation:
-    - title: Technical rules (consolidated version)
+    - title: SAML2 Technical rules (consolidated version)
       url: https://docs.italia.it/italia/spid/spid-regole-tecniche
       icon: file
-      desc: The SPID technical rules with all the fixes applied, in an easy to read version published on Docs Italia
+      desc: The SPID SAML2 technical rules with all the fixes applied, in an easy to read version published on Docs Italia
     - title: Identity Providers metadata
       url: https://registry.spid.gov.it/identity-providers
       icon: github
-      desc: SAML Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date
+      desc: SAML2 Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date
     - title: Forms, regulation and documents
       url: https://www.agid.gov.it/it/piattaforme/spid
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
-  - SDK:
+  - SAML2 SDKs:
     - title: SDK for AspNetCore
       icon: github
       url: https://github.com/italia/spid-aspnetcore
@@ -117,6 +117,27 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
+  - OpenID Connect SDKs:
+    - title: SDK for Python (Django)
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-django
+      desc: SPID/CIE OIDC Federation is a suite of Django applications designed to make it easy to build an Openid Connect Federation.
+    - title: SDK for Nodejs
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-nodejs
+      desc: The SPID/CIE OIDC Federation Relying Party, written in Node.js
+    - title: SDK for AspNetCore
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-aspnetcore
+      desc: SPID/CIE OIDC Federation SDK for AspNetCore
+    - title: SDK for PHP
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: SPID/CIE OIDC Federation Relying Party, for PHP
+    - title: SDK for Spring
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-java
+      desc: Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github

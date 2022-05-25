@@ -16,36 +16,6 @@ highlight: false
 comingsoon: false
 layout: platform
 github_team: anpr
-newsletterdata:
-    text: "Subscribe to this newsletter if you want to receive news about ANPR: migration updates, new documentation, facts."
-    placeholdertext: john.smith@dev.software.it
-    privacy_policy: "https://teamdigitale.governo.it/it/privacy-newsletter-anpr.htm"
-    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
-    hidden-inputs:
-        -
-          type: hidden
-          name: group
-          value: 16
-        -
-          type: hidden
-          name: list
-          value: 3
-    selects:
-        -
-          name: campo3
-          options:
-            -
-              value: Cittadino
-              valueid: Cittadino
-            -
-              value: Comune
-              valueid: Comune
-            -
-              value: Software House
-              valueid: SW_House
-            -
-              value: Other
-              valueid: ""
 abilitante: true
 owners:
     - name: Ministry of the Interior
@@ -67,8 +37,6 @@ resources:
 ---
 
 ## Intro
-
-<!-- **Do you want to stay up-to-date? Subscribe to the ANPR [newsletter](#newsletter).** -->
 
 Did you ever asked yourself why you need to request certificates at the
 registry in your municipality? Simple: at today a single centralised registry where the public

@@ -4,9 +4,9 @@
  */
 import yaml from 'js-yaml';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
-import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
+import softwareCategoriesYml from '!raw-loader!../../../_data/publiccode_categories.yml';
 import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
-import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
+import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/publiccode_scopes.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 
 export const lang = window.lang;

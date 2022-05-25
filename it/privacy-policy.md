@@ -12,12 +12,12 @@ del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
 A norma degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) vogliamo fornirti
 un'informativa semplice e chiara su come trattiamo i dati personali che ci fornisci
 direttamente o di cui comunque potremo venire in possesso tramite contatto con il sito web
-https://developers.italia.it.
+<https://developers.italia.it>.
 
 ## Titolare del trattamento
 
 Il Titolare del trattamento è la Presidenza del Consiglio dei Ministri - Dipartimento per
-la trasformazione digitale, con sede in Largo Pietro di Brazzà 86, 00186 Roma,
+la trasformazione digitale, con sede in Largo Pietro di Brazzà 86, 00187 Roma,
 contattabile ai seguenti recapiti:
 
 * E-mail: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it);
@@ -29,7 +29,7 @@ Il Responsabile per la protezione dei dati - Data Protection Officer è contatta
 seguenti recapiti:
 
 * E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it);
-* PEC: [USG@mailbox.governo.it](mailto:USG@mailbox.governo.it).
+* PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it).
 
 ## Come vengono trattati i tuoi dati personali - periodo di conservazione - base giuridica
 
@@ -85,6 +85,22 @@ sopra indicati. Se invece ritieni che il trattamento dei dati personali a te rif
 avvenga in violazione di quanto previsto dal GDPR, hai anche diritto di proporre reclamo,
 ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personali.
 
+## Mailing list
+
+Le comunicazioni relative alle iniziative di Developers Italia e Designers
+Italia sono distribuite, in automatico e gratuitamente, a quanti fanno
+richiesta di riceverle compilando il form.
+
+L'indirizzo mail fornito è utilizzato al solo fine di fornirti il servizio
+richiesto e, per tale ragione, sarà conservato esclusivamente per il periodo in
+cui lo stesso è attivo. La base giuridica di tale trattamento è da rinvenirsi
+nei compiti istituzionali volti a favorire la conoscenza delle iniziative del
+Dipartimento per la Trasformazione Digitale.
+
+Per non ricevere più l'aggiornamento puoi in ogni momento richiedere la
+cancellazione dal servizio selezionando l'apposito pulsante all'interno della
+comunicazione ricevuta oppure scrivendoci agli indirizzi sopra riportati.
+
 ## Cookie
 
 Questa sezione fornisce informazioni dettagliate sull'uso dei cookie, su come sono
@@ -94,13 +110,13 @@ legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle
 emanate dal Garante per la protezione dei dati personali con provvedimento
 del 10 giugno 2021.
 
-
-https://developers.italia.it utilizza cookie tecnici al fine di garantire il corretto
+<https://developers.italia.it> utilizza cookie tecnici al fine di garantire il corretto
 funzionamento delle procedure e migliorare l'esperienza d'uso dei propri visitatori,
 il cui uso non è strumentale alla raccolta di dati personali identificativi
 dell'utente. Per questo motivo non abbiamo bisogno del tuo consenso per
 memorizzare i cookie.
 Utilizziamo anche i seguenti cookie analitici:
+
 * il servizio Google Analytics, la cui policy può essere visionata a
   [questo link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
   Al fine di rispettare la privacy degli utenti, il servizio è utilizzato con la modalità

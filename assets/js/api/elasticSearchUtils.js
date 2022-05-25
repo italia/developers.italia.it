@@ -3,10 +3,12 @@ import { lang } from '../utils/l10n.js';
 
 export const buildFilter = (filters) => {
   let { intendedAudiences, categories, developmentStatuses } = filters;
+  const { pnrr, pnrrTarget, pnrrMeasure } = filters;
+
   intendedAudiences = Array.isArray(intendedAudiences) ? intendedAudiences : [];
   categories = Array.isArray(categories) ? categories : [];
   developmentStatuses = Array.isArray(developmentStatuses) ? developmentStatuses : [];
-  return [
+  const ret = [
     ...intendedAudiences.map((filterValue) => ({
       term: { 'publiccode.intendedAudience.scope': filterValue },
     })),
@@ -15,6 +17,25 @@ export const buildFilter = (filters) => {
       term: { 'publiccode.developmentStatus': filterValue },
     })),
   ];
+
+  if (pnrr) {
+    // Not a keyword because we want match "PNRR/Beneficiari" or "PNRR/Misure" even if
+    // the feature "PNRR" is not in the publiccode.yml file.
+    ret.push({ term: { [`publiccode.description.${lang}.features`]: 'pnrr' } });
+  }
+
+  if (pnrrTarget !== null) {
+    // We want exact match here and case sensitivity because PNRR features are basically
+    // tags we came up with to mark certain type of software (the ones that help Public administrations
+    // with the PNRR - https://www.governo.it/sites/governo.it/files/PNRR.pdf) - hence the
+    // keyword search.
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTarget}` } });
+  }
+  if (pnrrMeasure !== null) {
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasure}` } });
+  }
+
+  return ret;
 };
 
 export const buildSort = (sortBy) => {

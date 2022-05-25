@@ -22,34 +22,14 @@ layout: default
             <h1>{{news.title}}</h1>
             <a href="{{news.url}}" title="{{news.title}}">{{t.software.read_more}} &rarr;</a>
           </div>
-          <!--
-          <div class="homelayout__first__newsletter mt-2 mt-md-5">
-            <h2 class="mt-5 mt-md-3">Newsletter</h2>
-            <form action="{{newsletterdata.action}}" method="post" target="_blank">
 
-              <div class="form-row align-items-center">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text bg-white input-icon it-mail"></span>
-                  </div>
-                  <label for="email" class="sr-only">{{t.home_newsletter_placeholder }}</label>
-                  <input type="text" required id="newsletter" name="email" class="form-control bg-white input-email"
-                    placeholder="{{t.home_newsletter_placeholder }}">
-                  {% for input in newsletterdata.hidden-inputs %}
-                  <input type="hidden" name="{{input.name}}" value="{{input.value}}">
-                  {% endfor %}
-                  <div class="input-group-append">
-                    <button type="submit" class="input-group-text bg-primary input-submit">{{ t.home_newsletter_button
-                      }}</button>
-                  </div>
-                </div>
-                <p class="mt-2 mt-md-4 primary-color-a11">{{t.home_newsletter_footer}}</p>
-              </div>
-            </form>
-          </div>
-          -->
+          <mailing-list-subscribe
+            text="{{ t.newsletter_text | escape }}"
+            args="{{ newsletterdata.args | jsonify | escape }}"
+            privacy="{{ site.data.footer_links.privacy[active_lang].url }}#mailing-list"
+            lang="{{ active_lang }}"
+          ></mailing-list-subscribe>
         </div>
-
       </article>
     </div>
   </div>

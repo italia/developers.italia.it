@@ -93,11 +93,9 @@ Still to-do:
       {% include platform-resources.html %}
       {% endif %}
 
-      {% comment %}
       {% if page.newsletterdata %}
       {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
       {% endif %}
-      {% endcomment %}
     </div>
 
     {% capture toc %}
@@ -107,13 +105,11 @@ Still to-do:
       <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>
     </ul>
     {% endif %}
-    {% comment %}
     {% if page.newsletterdata %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#newsletter">Newsletter</a></li>
     </ul>
     {% endif %}
-    {% endcomment %}
     {% endcapture %}
     {% include sideblock.html image=page.logo content=toc external_website=page.external_website title=page.title %}
 
