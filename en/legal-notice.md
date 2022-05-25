@@ -39,8 +39,8 @@ correctness of the information contained in the sites indicated.
 
 ## Social media policy
 
-The Presidency of the Council of Ministers - Department for transformation
-digital uses social media for institutional purposes, to increase the
+The Presidency of the Council of Ministers - Department for digital transformation
+ uses social media for institutional purposes, to increase the
 transparency and knowledge of its activities: it informs, communicates, listens and
 publishes institutional content.
 
