@@ -48,7 +48,7 @@ The published contents include images, videos, press releases,
 service information, news relating to the activities of the Department as well as
 opportunities for citizen involvement and participation.
 
-Through its social channels, the Department can share and relaunch
+Through its social channels, the Department can share
 contents and messages of public interest and usefulness published by other users.
 Where published directly by the Department, all contents are
 released according to the licensed open by default principle
