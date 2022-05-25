@@ -49,7 +49,7 @@ service information, news relating to the activities of the Department as well a
 opportunities for citizen involvement and participation.
 
 Through its social channels, the Department can share
-contents and messages of public interest and usefulness published by other users.
+contents and messages of public interest published by other users.
 Where published directly by the Department, all contents are
 released according to the licensed open by default principle
 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it).
