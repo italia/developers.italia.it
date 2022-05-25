@@ -73,8 +73,7 @@ allowed.
 * Each discussion is linked to a specific theme: to all participants it is
   required to respect it.
 * No form of advertising, spam or promotion of private interests or illegal activities will be tolerated.
-* Contents that violate copyright or non-use are not allowed
-  authorized trademark.
+* Content that violate copyright or non-authorized use of trademark is not allowed
 
 In any case, where social media allows it, they will be removed by the staff
 all posts, comments or audio / video materials that:
