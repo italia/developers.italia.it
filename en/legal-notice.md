@@ -29,7 +29,7 @@ additional.
 
 ## Links to external sites and embedded content
 
-Links to external third party sites, indicated on this site, as well as i
+Links to external third party sites, indicated on this site, as well as
 embedded third party content is provided as a simple service to users.
 The indication of links to external third party sites or the inclusion of
 embedded content of third parties does not imply on the part of the Presidency of the
