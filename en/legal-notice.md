@@ -58,8 +58,7 @@ We treat your personal data as provided in the privacy policy of this
 site.
 
 The Department is committed to managing spaces for communication and dialogue
-within their profiles, constantly monitored, in the various social networks
-media, asking its users to respect some simple rules:
+within its profiles, constantly monitored, in the various social media networks, asking its users to respect some simple rules:
 
 * Everyone is asked to express their opinion with fairness, measure and respect.
 * In social media, everyone is responsible for the content they post and for
