@@ -90,9 +90,7 @@ Where social media allows it, posts, comments or audio / video material will be 
 * promotion or support of illegal activities, that infringe copyright or rights
   of third parties.
 
-For those who repeatedly violate these conditions, those contained in the
-policy of the tools adopted or in any case endangers the security of
-systems, the Department reserves the right to use the ban or block
-(when possible after a first warning) to prevent further interventions,
-and to report the user to the managers of the platform and possibly to the
+Department reserves the right to use the ban or block users who repeatedly
+violate these conditions (when possible after a first warning),
+and to report the user to the social media platform and possibly to the
 police.
