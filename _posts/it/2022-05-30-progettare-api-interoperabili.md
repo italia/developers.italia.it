@@ -17,9 +17,7 @@ Roberto ha strutturato il suo laboratorio come un vero e proprio workshop pratic
 Tra i principali punti toccati: il processo e gli strumenti di progettazione, le modalità di documentazione.
 
 Progettare API, ha spiegato il relatore, consiste in una **mappatura** su chi, che cosa, come e perché, effettuata tramite degli appositi *canvas* che definiscono il servizio e i suoi casi d'uso, individuano risorse e azioni secondo un approccio REST e descrivendo risorse ed azioni in OpenAPI.
-Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi illustrato come **descrivere API** nel dettaglio, usando i **metadati**: l’uso dei #/tags per raggruppare le varie operazioni e l’associazione con i "Goal" presenti nel canvas.
-/assets/images/posts/2022-05-30
-Si è poi passati all’**autenticazione**, vedendo insieme esempi di schemi delle risorse, fino ad arrivare alle **API Operations**, per testare il funzionamento del servizio. E infine… i compiti a casa!
+Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi illustrato come **descrivere API** nel dettaglio, usando i **metadati**: l’uso dei #/tags per raggruppare le varie operazioni e l’associazione con i "Goal" presenti nel canvas. Si è poi passati all’**autenticazione**, vedendo insieme esempi di schemi delle risorse, fino ad arrivare alle **API Operations**, per testare il funzionamento del servizio. E infine… i compiti a casa!
 
 Se vuoi rivedere il laboratorio o hai perso la diretta, **[guarda la registrazione](https://www.youtube.com/watch?v=D-3t8h1E9yE)**.
 
