@@ -12,7 +12,7 @@ locale: it
 
 API interoperabili e dove trovarle. Anzi, come progettarle. Lo ha spiegato bene **Roberto Polli**, *API Expert* del Dipartimento per la trasformazione digitale, durante il **Community lab del 25 maggio**. In questo articolo, una breve sintesi di com’è andata per chi non ha potuto partecipare o vuole rinfrescarsi la memoria.
 
-Roberto ha strutturato il suo laboratorio come un vero e proprio workshop pratico, su come progettare **API interoperabili** e usare [API OAS Checker](https://italia.github.io/api-oas-checker/) per adeguarle alle Linee Guida Agid su [API](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/) e [Sicurezza](https://docs.italia.it/AgID/documenti-in-consultazione/lg-sicurezza-interoperabilita-docs). Ha creato ad hoc un **caso di studio ipotetico**: una API che permette alle persone di **localizzare i defibrillatori** sul territorio nazionale e agli enti di gestirne l'elenco.
+Roberto ha strutturato il suo laboratorio come un vero e proprio workshop pratico, su come progettare **API interoperabili** e usare [API OAS Checker](https://italia.github.io/api-oas-checker/) per adeguarle alle Linee Guida AgID su [API](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/) e [Sicurezza](https://docs.italia.it/AgID/documenti-in-consultazione/lg-sicurezza-interoperabilita-docs). Ha creato ad hoc un **caso di studio ipotetico**: una API che permette alle persone di **localizzare i defibrillatori** sul territorio nazionale e agli enti di gestirne l'elenco.
 
 Tra i principali punti toccati: il processo e gli strumenti di progettazione, le modalità di documentazione.
 
