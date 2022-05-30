@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-30T10:12:58+00:00</updated>
+  <updated>2022-05-30T11:08:46+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -27,9 +27,7 @@
 &lt;p&gt;Tra i principali punti toccati: il processo e gli strumenti di progettazione, le modalità di documentazione.&lt;/p&gt;
 
 &lt;p&gt;Progettare API, ha spiegato il relatore, consiste in una &lt;strong&gt;mappatura&lt;/strong&gt; su chi, che cosa, come e perché, effettuata tramite degli appositi &lt;em&gt;canvas&lt;/em&gt; che definiscono il servizio e i suoi casi d’uso, individuano risorse e azioni secondo un approccio REST e descrivendo risorse ed azioni in OpenAPI.
-Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi illustrato come &lt;strong&gt;descrivere API&lt;/strong&gt; nel dettaglio, usando i &lt;strong&gt;metadati&lt;/strong&gt;: l’uso dei #/tags per raggruppare le varie operazioni e l’associazione con i “Goal” presenti nel canvas.
-/assets/images/posts/2022-05-30
-Si è poi passati all’&lt;strong&gt;autenticazione&lt;/strong&gt;, vedendo insieme esempi di schemi delle risorse, fino ad arrivare alle &lt;strong&gt;API Operations&lt;/strong&gt;, per testare il funzionamento del servizio. E infine… i compiti a casa!&lt;/p&gt;
+Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi illustrato come &lt;strong&gt;descrivere API&lt;/strong&gt; nel dettaglio, usando i &lt;strong&gt;metadati&lt;/strong&gt;: l’uso dei #/tags per raggruppare le varie operazioni e l’associazione con i “Goal” presenti nel canvas. Si è poi passati all’&lt;strong&gt;autenticazione&lt;/strong&gt;, vedendo insieme esempi di schemi delle risorse, fino ad arrivare alle &lt;strong&gt;API Operations&lt;/strong&gt;, per testare il funzionamento del servizio. E infine… i compiti a casa!&lt;/p&gt;
 
 &lt;p&gt;Se vuoi rivedere il laboratorio o hai perso la diretta, &lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=D-3t8h1E9yE&quot;&gt;guarda la registrazione&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
