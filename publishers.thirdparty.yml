@@ -146,3 +146,7 @@
 - name: "Spunta"
   repos:
     - "https://gitlab.com/madbob/spunta"
+
+- name: "iDempiereItalia"
+  repos:
+    - "https://github.com/ERP-OpenSource-Italia/erpos_idempiere.it"
