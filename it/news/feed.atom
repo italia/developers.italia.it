@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-30T06:02:45+00:00</updated>
+  <updated>2022-05-30T10:12:58+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,45 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili</id>
+    <title>Progettare API interoperabili conformi alle linee guida AgID</title>
+    <updated>2022-05-30T08:00:00+00:00</updated>
+
+    <summary>Guarda la registrazione del Community lab del 25 maggio e scopri uno strumento indispensabile per i servizi pubblici digitali </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili">&lt;p&gt;API interoperabili e dove trovarle. Anzi, come progettarle. Lo ha spiegato bene &lt;strong&gt;Roberto Polli&lt;/strong&gt;, &lt;em&gt;API Expert&lt;/em&gt; del Dipartimento per la trasformazione digitale, durante il &lt;strong&gt;Community lab del 25 maggio&lt;/strong&gt;. In questo articolo, una breve sintesi di com’è andata per chi non ha potuto partecipare o vuole rinfrescarsi la memoria.&lt;/p&gt;
+
+&lt;p&gt;Roberto ha strutturato il suo laboratorio come un vero e proprio workshop pratico, su come progettare &lt;strong&gt;API interoperabili&lt;/strong&gt; e usare &lt;a href=&quot;https://italia.github.io/api-oas-checker/&quot;&gt;API OAS Checker&lt;/a&gt; per adeguarle alle Linee Guida AgID su &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/&quot;&gt;API&lt;/a&gt; e &lt;a href=&quot;https://docs.italia.it/AgID/documenti-in-consultazione/lg-sicurezza-interoperabilita-docs&quot;&gt;Sicurezza&lt;/a&gt;. Ha creato ad hoc un &lt;strong&gt;caso di studio ipotetico&lt;/strong&gt;: una API che permette alle persone di &lt;strong&gt;localizzare i defibrillatori&lt;/strong&gt; sul territorio nazionale e agli enti di gestirne l’elenco.&lt;/p&gt;
+
+&lt;p&gt;Tra i principali punti toccati: il processo e gli strumenti di progettazione, le modalità di documentazione.&lt;/p&gt;
+
+&lt;p&gt;Progettare API, ha spiegato il relatore, consiste in una &lt;strong&gt;mappatura&lt;/strong&gt; su chi, che cosa, come e perché, effettuata tramite degli appositi &lt;em&gt;canvas&lt;/em&gt; che definiscono il servizio e i suoi casi d’uso, individuano risorse e azioni secondo un approccio REST e descrivendo risorse ed azioni in OpenAPI.
+Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi illustrato come &lt;strong&gt;descrivere API&lt;/strong&gt; nel dettaglio, usando i &lt;strong&gt;metadati&lt;/strong&gt;: l’uso dei #/tags per raggruppare le varie operazioni e l’associazione con i “Goal” presenti nel canvas.
+/assets/images/posts/2022-05-30
+Si è poi passati all’&lt;strong&gt;autenticazione&lt;/strong&gt;, vedendo insieme esempi di schemi delle risorse, fino ad arrivare alle &lt;strong&gt;API Operations&lt;/strong&gt;, per testare il funzionamento del servizio. E infine… i compiti a casa!&lt;/p&gt;
+
+&lt;p&gt;Se vuoi rivedere il laboratorio o hai perso la diretta, &lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=D-3t8h1E9yE&quot;&gt;guarda la registrazione&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per accedere a tutti i materiali visti insieme, &lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-05-30/CommunityLab-2022-05-25.pdf&quot;&gt;scarica la presentazione (PDF)&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ti è piaciuto questo community lab? Resta in contatto su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt; nel canale #api, iscriviti alla nostra &lt;a href=&quot;https://developers.italia.it/it/contatti#mailing-list&quot;&gt;mailing list&lt;/a&gt; e continua a seguirci sugli account Twitter di &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-05-30T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="api" />
+    
+    <category term="interoperabilita" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/05/20/sviluppo-open-source-migliorare-servizi-pubblici</id>
     <title>Sviluppo open source: migliorare i servizi pubblici grazie ad un approccio collaborativo</title>
