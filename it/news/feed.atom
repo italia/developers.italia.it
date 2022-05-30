@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-30T11:08:46+00:00</updated>
+  <updated>2022-05-30T14:07:21+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -121,12 +121,12 @@ Roberto si è soffermato su ognuno dei singoli aspetti sopra citati e ha poi ill
   </entry>
   
   <entry xml:lang="it">
-    <id>https://developers.italia.it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto</id>
+    <id>https://developers.italia.it/it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto</id>
     <title>Community call - raccontiamo le esperienze di sviluppo aperto per i servizi pubblici</title>
     <updated>2022-05-06T08:00:00+00:00</updated>
 
     <summary>Il 18 maggio scopri come designer, sviluppatori e cittadini possono contribuire a migliorare i servizi pubblici </summary>
-    <content type="html" xml:base="https://developers.italia.it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto.html">&lt;p&gt;In occasione della &lt;a href=&quot;https://www.opengovpartnership.org/events/open-gov-week-2022/&quot;&gt;Open Government Week&lt;/a&gt;, Developers Italia e Designers Italia dedicano la prossima Community call alle &lt;strong&gt;esperienze di progettazione e sviluppo aperto per i servizi pubblici&lt;/strong&gt;, approfondendo alcuni interessanti casi studio, per promuovere la partecipazione di designer, sviluppatori e cittadini al loro miglioramento.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/05/06/community-call-raccontiamo-esperienze-sviluppo-aperto">&lt;p&gt;In occasione della &lt;a href=&quot;https://www.opengovpartnership.org/events/open-gov-week-2022/&quot;&gt;Open Government Week&lt;/a&gt;, Developers Italia e Designers Italia dedicano la prossima Community call alle &lt;strong&gt;esperienze di progettazione e sviluppo aperto per i servizi pubblici&lt;/strong&gt;, approfondendo alcuni interessanti casi studio, per promuovere la partecipazione di designer, sviluppatori e cittadini al loro miglioramento.&lt;/p&gt;
 
 &lt;p&gt;Il primo ospite sarà Vincenzo Di Nicola, Responsabile per l’Innovazione Tecnologica e la Trasformazione Digitale di &lt;strong&gt;INPS&lt;/strong&gt;, che racconterà il sistema aperto di tracciamento dei bug &lt;a href=&quot;https://bugs.inps.it/&quot;&gt;bugs.inps.it&lt;/a&gt; al quale ha lavorato in prima persona e di cui ha parlato all’interno del &lt;a href=&quot;https://medium.com/developers-italia/come-adattare-un-sistema-open-source-per-la-pa-il-caso-bugs-inps-it-4b4aac47be09&quot;&gt;nuovo blog di Developers Italia&lt;/a&gt;. Il blog ospiterà i racconti di chi ha sviluppato e/o implementato siti web, servizi e applicazioni open source per la Pubblica Amministrazione.&lt;/p&gt;
 
