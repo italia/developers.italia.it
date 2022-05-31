@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-05-31T06:03:00+00:00</updated>
+  <updated>2022-05-31T15:26:13+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,60 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/05/31/vieni-a-forum-pa</id>
+    <title>Vieni a trovarci a Forum PA 2022</title>
+    <updated>2022-05-31T08:00:00+00:00</updated>
+
+    <summary>Scopri le nostre ultime iniziative all’Auditorium della Tecnica a Roma, dal 14 al 17 giugno. É possibile partecipare anche online </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/05/31/vieni-a-forum-pa">&lt;p&gt;Dopo due anni, &lt;a href=&quot;https://www.forumpa.it/forum-pa-2022-il-paese-che-riparte/&quot;&gt;Forum PA&lt;/a&gt; torna in presenza all’Auditorium della Tecnica a Roma con una fitta programmazione di eventi e incontri per parlare di PNRR, investimenti e riforme e, soprattutto, d’innovazione della Pubblica Amministrazione. Noi di Designers Italia e Developers Italia ci saremo per raccontare &lt;strong&gt;le nostre ultime iniziative&lt;/strong&gt; e portare la prospettiva della trasformazione digitale fatta mettendo le persone al centro.&lt;/p&gt;
+
+&lt;p&gt;Ecco dove e quando potrai trovarci.&lt;/p&gt;
+
+&lt;h3 id=&quot;gli-eventi&quot;&gt;Gli eventi&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Mercoledì 15 giugno, dalle 10:30 alle 11:30&lt;/strong&gt;, Daniele Tabellini parlerà di accessibilità nei servizi pubblici digitali insieme ad AGID (&lt;a href=&quot;https://www.forumpa.it/manifestazioni/forum-pa-2022/accessibilita-dei-servizi-pubblici-monitoraggio-ed-evoluzione/&quot;&gt;vai alla scheda dell’evento&lt;/a&gt;), soffermandosi in particolare sull’aggiornamento del design system del Paese.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Giovedì 16 giugno, dalle 15:30 alle 16:30&lt;/strong&gt;, presenteremo le nuove risorse pratiche messe a disposizione per i Comuni e i passaggi chiave per realizzare siti web e servizi digitali semplici, accessibili, equi e inclusivi nell’evento &lt;strong&gt;“Servizi a misura di cittadino: le nuove risorse pratiche di Designers Italia per i Comuni”&lt;/strong&gt; (&lt;a href=&quot;https://www.forumpa.it/manifestazioni/forum-pa-2022/servizi-a-misura-di-cittadino-le-nuove-risorse-pratiche-di-designers-italia-per-i-comuni/&quot;&gt;vai alla scheda dell’evento&lt;/a&gt;) assieme a Marco Maria Pedrazzo e Matteo Vabanesi.&lt;/p&gt;
+
+&lt;p&gt;Sempre lo stesso giorno, dalle 17 alle 18:30, Marco Maria Pedrazzo parteciperà all’incontro organizzato da Forum PA &lt;strong&gt;“Servizi, piattaforme, intelligenza artificiale: strumenti e modelli per una nuova cittadinanza digitale”&lt;/strong&gt; (&lt;a href=&quot;https://www.forumpa.it/manifestazioni/forum-pa-2022/servizi-piattaforme-intelligenza-artificiale-strumenti-e-modelli-per-una-nuova-cittadinanza-digitale/&quot;&gt;vai alla scheda dell’evento&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;appuntamenti-allo-stand&quot;&gt;Appuntamenti allo stand&lt;/h3&gt;
+&lt;p&gt;Oltre agli eventi, ci sarà anche la possibilità di venirci a trovare nello stand del Dipartimento per la trasformazione digitale, al secondo piano dell’Auditorium. Saremo lì per rispondere alle vostre domande e, attraverso una serie di appuntamenti, permettere alle amministrazioni locali e agli addetti ai lavori di dialogare con noi su specifici argomenti.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14 giugno&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;15:00 - 16:00: Catalogo del riuso, con Matteo Fortini&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;15 giugno&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;12:00 - 13:00: Design dei servizi pubblici, con Federico Giaimo&lt;/li&gt;
+  &lt;li&gt;14:30 - 15:30: Design system del Paese e l’attenzione all’accessibilità, con Daniele Tabellini&lt;/li&gt;
+  &lt;li&gt;16:00 - 17:00: Esperienza del cittadino nei servizi pubblici - avviso 1.4.1, con Matteo Vabanesi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;16 giugno&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;11:00 - 12:00: Esperienza del cittadino nei servizi pubblici - avviso 1.4.1, con Matteo Vabanesi&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A questo punto, non ci resta che darti appuntamento dal 14 al 17 giugno a Roma, o online. Per maggiori informazioni e per iscriverti, vai sul &lt;a href=&quot;https://www.forumpa.it/manifestazioni/forum-pa-2022/&quot;&gt;sito ufficiale di Forum PA 2022&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-05-31T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="forumpa" />
+    
+
+    <author>
+      <name>Gianvito Fanelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili</id>
     <title>Progettare API interoperabili conformi alle linee guida AgID</title>
