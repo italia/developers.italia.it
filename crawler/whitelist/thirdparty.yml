@@ -125,3 +125,7 @@
     - "https://github.com/DXC-Technology-Italy/batman"
     - "https://github.com/DXC-Technology-Italy/softwareregistry"
     - "https://github.com/DXC-Technology-Italy/crowdspin"
+
+- name: "SPID React button"
+  repos:
+    - "https://github.com/dej611/spid-react-button"
