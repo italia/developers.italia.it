@@ -1,7 +1,7 @@
 ---
 title: FSE
 subtitle: Fascicolo Sanitario Elettronico
-logo: /assets/images/cover_softwareriuso@2x.png
+logo: /assets/images/FSE_EXT.png
 external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
@@ -18,24 +18,47 @@ owners:
       url: https://www.salute.gov.it/
 resources:
   - SDK:
-    - title: SDK
+    - title: Client validazione e pubblicazione Gateway
       icon: github
       url: https://github.com/ministero-salute/
-      desc: SDK per integrazione Gateway
+      desc: SDK per integrazione Gateway.
+    - title: Schematron
+      icon: github
+      url: https://github.com/ministero-salute/
+      desc: Schematron utilizzabili per la validazione dei documenti CDA2.
   - Documentazione:
     - title: Linee guida Architetturali
       url: https://github.com/ministero-salute/fse-documentation
       icon: file
       desc: Documentazione di alto livello del funzionamento dell'architettura.
-    - title: Specifiche Gateway servizio di validazione CDA2
+    - title: Specifiche di integrazione servizio di validazione CDA2
       url: https://github.com/ministero-salute/fse-documentation
       icon: file
-      desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2.
+      desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.
+  - Validazione Integrazioni:
+    - title: Processo di validazione Gateway
+      url: https://github.com/ministero-salute/fse-documentation
+      icon: file
+      desc: Documentazione contenente il processo di validazione delle integrazioni con il Gateway.
+    - title: Processo di validazione EDS
+      url: https://github.com/ministero-salute/fse-documentation
+      icon: file
+      desc: Documentazione contenente il processo di validazione delle integrazioni con il EDS.
   - Swagger:
-    - title: Swagger servizio di validazione CDA2
+    - title: Swagger validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/fse/
-      desc: Swagger Gateway servizio di validazione CDA2
+      desc: Swagger Gateway servizio di validazione CDA2.
+  - Risorse esterne
+    - title: Standard documentale
+      icon: link
+      url: http://www.hl7italia.it/hl7italia_D7/node/275
+      desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
+    - title: Specifiche tecniche Agid
+      icon: link
+      url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
+      desc: Link al sito AgID, riferimento specifiche tecniche.
+
 ---
 
 ## Intro 
@@ -53,7 +76,7 @@ A tale fine:
 - Semplificare e uniformare l’accesso e l’uso dei servizi del SSN per cittadini e operatori sanitari
 - Integrare e condividere dati clinici tra professionisti e strutture sanitarie 
 - Supportare una sempre maggiore qualità e personalizzazione delle cure 
--Creare servizi di monitoraggio e analisi dei dati a supporto dell’azione degli organi di governo del SSN
+- Creare servizi di monitoraggio e analisi dei dati a supporto dell’azione degli organi di governo del SSN
 
 **Contenuti:**
 - Dati identificativi ed amministrativi (inclusi dati su prenotazioni, libretto sanitario, ecc)
@@ -88,9 +111,14 @@ A tale fine:
 
 ### Codice della piattaforma
 
-È possibile reperire il codice della piattaforma e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). È possibile contribuire al codice aprendo una issue o una Pull Request per risolvere direttamente un problema.
+È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). 
+
+### Aiutaci a migliorare
+
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell'utilizzo della piattaforma attraverso[il canale Issue tracker](https://github.com/ministero-salute/fse/issues).
 
 ## Canali
 
+<a class="btn btn-primary" href="https://github.com/ministero-salute/fse/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori SDK (#dcc-sdk)</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori SDK (#FSE)</a>
