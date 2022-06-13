@@ -32,7 +32,7 @@ resources:
       icon: file
       desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2.
   - Swagger:
-    - title: Swagger validazione CDA2
+    - title: Swagger servizio di validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/fse/
       desc: Swagger Gateway servizio di validazione CDA2
