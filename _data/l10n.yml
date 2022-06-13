@@ -130,7 +130,7 @@ it:
     home_news_expand: per saperne di più
     home_tags: Cerca per categoria
     home_tags_more: Altri filtri
-    newsletter_text: Anche noi lottiamo ogni giorno per l’obiettivo “Zero mail da leggere”. Promettiamo d’inviarti poche mail e di rispettare i tuoi dati
+    newsletter_text: Ti aggiorneremo sulle iniziative di Developers Italia e Designers Italia. Promettiamo d’inviarti poche mail e di rispettare i tuoi dati
     website: Sito web
     go_to_website: Vai al sito web
 
@@ -541,7 +541,7 @@ en:
     home_news_expand: read more
     home_tags: Browse by tag
     home_tags_more: More tags
-    newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
+    newsletter_text: We'll keep you posted on Developers Italia e Designers Italia. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     website: Website
     go_to_website: Go to website
 
