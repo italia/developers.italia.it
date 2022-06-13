@@ -2,7 +2,7 @@
 title: FSE
 subtitle: Fascicolo Sanitario Elettronico
 logo: /assets/images/cover_softwareriuso@2x.png
-external_website: https://www.salute.gov.it/
+external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
   Il nuovo FSE è l’ecosistema digitale che realizza servizi evoluti basati sul dato atomico per cittadini e operatori sanitari.
@@ -32,10 +32,10 @@ resources:
       icon: file
       desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2.
   - Swagger:
-    - title: Swagger Gateway servizio di validazione CDA2
+    - title: Swagger servizio di validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/fse/
-      desc: Digital Covid Certificate Kotlin (Android) SDK
+      desc: Swagger Gateway servizio di validazione CDA2
 ---
 
 ## Intro 
