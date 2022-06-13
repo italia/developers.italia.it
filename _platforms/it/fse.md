@@ -1,7 +1,7 @@
 ---
 title: FSE
 subtitle: Fascicolo Sanitario Elettronico
-logo: /assets/images/FSE_EXT.png
+logo: /assets/images/cover_softwareriuso@2x.png
 external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
