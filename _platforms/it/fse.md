@@ -14,8 +14,8 @@ abilitante: false
 layout: platform
 hide_activities: true
 owners:
-    - name: Ministero della Salute
-      url: https://www.salute.gov.it/
+  - name: Ministero della Salute
+    url: https://www.salute.gov.it/
 resources:
   - SDK:
     - title: Client validazione e pubblicazione Gateway
@@ -49,7 +49,7 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/fse/
       desc: Swagger Gateway servizio di validazione CDA2.
-  - Risorse esterne
+  - Risorse esterne:
     - title: Standard documentale
       icon: link
       url: http://www.hl7italia.it/hl7italia_D7/node/275
@@ -58,7 +58,6 @@ resources:
       icon: link
       url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
       desc: Link al sito AgID, riferimento specifiche tecniche.
-
 ---
 
 ## Intro 
