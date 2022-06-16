@@ -129,3 +129,7 @@
 - name: "SPID React button"
   repos:
     - "https://github.com/dej611/spid-react-button"
+
+- name: "Tiledesk"
+  repos:
+    - "https://github.com/Tiledesk/tiledesk-deployment"
