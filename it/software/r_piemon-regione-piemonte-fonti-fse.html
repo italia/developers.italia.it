@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202206150603" rel="stylesheet">
+  <link href="/dist/main.css?202206160602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -646,6 +646,9 @@
     <div class="col-md-7">
       <div class="intro-name">
         
+        
+        <img alt="" src="https://raw.githubusercontent.com/regione-piemonte/fonti-fse/master/FONTIFSE.png" class="d-inline-block" />
+        
         <h1 class="d-inline-block">
           Fonti del Fascicolo Sanitario Elettronico
           <span class="badge badge-pill badge-pill--sup badge-primary">13.0.0</span>
@@ -656,7 +659,8 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Fonti del FSE realizza un sistema software che presenta i sistemi che alimentano il FSE e le tipologie di documenti che vengono indicizzati.
+            Fonti del FSE realizza un sistema software che presenta i sistemi che
+alimentano il FSE e le tipologie di documenti che vengono indicizzati.
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -715,7 +719,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 47%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,50,54,54,54,54,54,54,54]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,50,54,54,54,54,54,54,54,54]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -780,6 +784,31 @@
 </div>
 
 
+<div class="tiled-gallery">
+  <div class="tiled-gallery-inner">
+    
+     
+
+    <a class="tiled-item" href="https://raw.githubusercontent.com/regione-piemonte/fonti-fse/master/FONTIFSE.png"
+       data-size="https://raw.githubusercontent.com/regione-piemonte/fonti-fse/master/FONTIFSE.pngxhttps://raw.githubusercontent.com/regione-piemonte/fonti-fse/master/FONTIFSE.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/regione-piemonte/fonti-fse/master/FONTIFSE.png" alt="Screenshot" />
+    </a>
+    
+    
+
+    
+
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-link tiled-gallery-btn" type="button">
+    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="/assets/icons/camera.png">&nbsp;
+    Guarda tutte le immagini
+  </button>
+</div>
+
+
 <hr class="divider mb-0">
 
 <div class=" container-fluid ">
@@ -801,9 +830,27 @@
             
             
             <p> E&#39; una pwa che presenta i sistemi che alimentano il FSE fruendo di
+
 servizi json/rest </p>
             
             
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Usata da 1
+              
+              amministrazioni
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Regione Piemonte </p>
+              
+            </div>
           </div>
           
         </div>
@@ -1046,29 +1093,37 @@ servizi json/rest </p>
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Il prodotto <strong>Fonti del FSE</strong>   realizza un sistema software che presenta
-in una pwa (progressive web application) i sistemi che alimentano il FSE
-(Fascicolo Sanitario Elettronico della Regione Piemonte) e le tipologie di
-documenti che vengono indicizzati. Il sistema comprende:</p>
+                <p>Il prodotto <strong>Fonti del FSE</strong>   realizza un sistema software che presenta</p>
+
+<p>in una pwa (progressive web application) i sistemi che alimentano il FSE</p>
+
+<p>(Fascicolo Sanitario Elettronico della Regione Piemonte) e le tipologie di</p>
+
+<p>documenti che vengono indicizzati. Il sistema comprende:</p>
 
 <ul>
-  <li>
-    <p>una PWA che presenta le informazioni in due modalità di visualizzazione:
-<em>tabellare</em> e a <em>scheda per dispositivi mobile</em></p>
-  </li>
-  <li>
-    <p>i servizi web che leggono le informazioni dal database per renderle
-disponibili in JSON/REST alla PWA</p>
-  </li>
-  <li>
-    <p>un database che memorizza le informazioni</p>
-  </li>
+  <li>una PWA che presenta le informazioni in due modalità di visualizzazione:</li>
 </ul>
 
-<p>Per visualizzare il sistema in esercizio nel <a href="https://www.salutepiemonte.it/">Portale dei servizi sanitari
-online della Regione Piemonte </a> si può
-consultare la pagina cliccando
-<a href="https://www.salutepiemonte.it/servizi/fonti-fascicolo-sanitario-elettronico">qui</a></p>
+<p><em>tabellare</em> e a <em>scheda per dispositivi mobile</em></p>
+
+<ul>
+  <li>i servizi web che leggono le informazioni dal database per renderle</li>
+</ul>
+
+<p>disponibili in JSON/REST alla PWA</p>
+
+<ul>
+  <li>un database che memorizza le informazioni</li>
+</ul>
+
+<p>Per visualizzare il sistema in esercizio nel [Portale dei servizi sanitari</p>
+
+<p>online della Regione Piemonte ](https://www.salutepiemonte.it/) si può</p>
+
+<p>consultare la pagina cliccando</p>
+
+<p><a href="https://www.salutepiemonte.it/servizi/fonti-fascicolo-sanitario-elettronico">qui</a></p>
 
               </div>
             </div>
@@ -1102,7 +1157,7 @@ consultare la pagina cliccando
           url="/it/software/r_piemon-regione-piemonte-deleghe"
           icon="it-software"
           category="software_reuse"
-          logo=""
+          logo="https://raw.githubusercontent.com/regione-piemonte/deleghe/master/DELEGHE.png"
           fallback="/assets/images/cover_softwareriuso.png"
           ></catalogue-item>
       </div>

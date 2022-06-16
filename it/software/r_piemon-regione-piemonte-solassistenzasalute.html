@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202206150603" rel="stylesheet">
+  <link href="/dist/main.css?202206160602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -646,6 +646,9 @@
     <div class="col-md-7">
       <div class="intro-name">
         
+        
+        <img alt="" src="https://raw.githubusercontent.com/regione-piemonte/SOLAssistenzaSalute/master/SOLASSISTENZA.png" class="d-inline-block" />
+        
         <h1 class="d-inline-block">
           SOL Assistenza
           <span class="badge badge-pill badge-pill--sup badge-primary">1.0.0</span>
@@ -657,6 +660,7 @@
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
             Servizio on line per inoltro richieste di assistenza sui servizi on
+
 linedella Salute rivolti ai cittadini Piemontesi
           </h3>
           <div class="my-3">
@@ -716,7 +720,7 @@ linedella Salute rivolti ai cittadini Piemontesi
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 46%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -747,6 +751,18 @@ linedella Salute rivolti ai cittadini Piemontesi
 
       <div class="drops-details">
         
+        <div class="goto">
+          <p>
+            <a
+              href="https://github.com/regione-piemonte/deleghe.git"
+              aria-label="Vai al sito del software (collegamento esterno)"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Sito web del progetto &rarr;</a>
+          </p>
+        </div>
+        
 
         
         <div class="goto code">
@@ -766,6 +782,31 @@ linedella Salute rivolti ai cittadini Piemontesi
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="tiled-gallery">
+  <div class="tiled-gallery-inner">
+    
+     
+
+    <a class="tiled-item" href="https://raw.githubusercontent.com/regione-piemonte/SOLAssistenzaSalute/master/SOLASSISTENZA.png"
+       data-size="https://raw.githubusercontent.com/regione-piemonte/SOLAssistenzaSalute/master/SOLASSISTENZA.pngxhttps://raw.githubusercontent.com/regione-piemonte/SOLAssistenzaSalute/master/SOLASSISTENZA.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/regione-piemonte/SOLAssistenzaSalute/master/SOLASSISTENZA.png" alt="Screenshot" />
+    </a>
+    
+    
+
+    
+
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-link tiled-gallery-btn" type="button">
+    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="/assets/icons/camera.png">&nbsp;
+    Guarda tutte le immagini
+  </button>
 </div>
 
 
@@ -796,6 +837,23 @@ linedella Salute rivolti ai cittadini Piemontesi
             
           </div>
           
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Usata da 1
+              
+              amministrazioni
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Regione PIemonte </p>
+              
+            </div>
+          </div>
+          
         </div>
       </div>
       
@@ -806,23 +864,14 @@ linedella Salute rivolti ai cittadini Piemontesi
 
 <div class="container">
   <div class="tags-relate text-center">
-    <strong>CATEGORIE</strong>
+    <strong>AMBITO DI APPLICAZIONE</strong>
     
     
 
 
 <li class="home-software-tags__item  ">
         <a
-                href="/it/search?categories=crm">CRM</a>
-</li>
-
-    
-    
-
-
-<li class="home-software-tags__item  ">
-        <a
-                href="/it/search?categories=customer-service-and-support">customer service and support</a>
+                href="/it/search?intended_audiences=healthcare">healthcare</a>
 </li>
 
     
@@ -975,8 +1024,34 @@ linedella Salute rivolti ai cittadini Piemontesi
                 <p>
                   <span class="label">Lista dipendenze</span>
                   
-                  Nessuna
-                  
+                      
+                      
+                          <span class="badge badge-pill badge-danger">Proprietaria</span><br />
+                          
+                          
+
+
+    Apache httpd 
+
+<br />
+                          
+                          
+
+
+    PostgreSQL 
+
+<br />
+                          
+                          
+
+
+    RedHat JBoss EAP 
+
+<br />
+                          
+                      
+                      
+                   
                 </p>
               </div>
             </div>
@@ -1004,10 +1079,13 @@ linedella Salute rivolti ai cittadini Piemontesi
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Il sistema consente di realizzare un servizio di richiesta di assistenza
-on line rivolto ai cittadini piemontesi per inoltrare richieste di
-assistenza relative ai servizi on line della Salute pubblicati sul portale
-Salute Piemonte.</p>
+                <p>Il sistema consente di realizzare un servizio di richiesta di assistenza</p>
+
+<p>on line rivolto ai cittadini piemontesi per inoltrare richieste di</p>
+
+<p>assistenza relative ai servizi on line della Salute pubblicati sul portale</p>
+
+<p>Salute Piemonte.</p>
 
 <p>Il sistema è realizzato tramite l’integrazione dei seguenti prodotti:</p>
 
@@ -1016,9 +1094,13 @@ Salute Piemonte.</p>
     <p>SANSOL https://github.com/regione-piemonte/sansol</p>
   </li>
   <li>
-    <p>APISAN - componente APISANASSISTENZA
-(https://github.com/regione-piemonte/apisan/tree/master/apisanassistenza)</p>
+    <p>APISAN - componente APISANASSISTENZA</p>
   </li>
+</ul>
+
+<p>(https://github.com/regione-piemonte/apisan/tree/master/apisanassistenza)</p>
+
+<ul>
   <li>
     <p>TAYLOR (https://github.com/csipiemonte/Taylor)</p>
   </li>
