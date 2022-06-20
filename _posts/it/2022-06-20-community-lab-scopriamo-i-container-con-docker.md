@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Community lab: scopriamo i container con Docker "
-subtitle: "Scopri le nostre ultime iniziative all’Auditorium della Tecnica a Roma, dal 14 al 17 giugno. É possibile partecipare anche online"
+subtitle: "Il prossimo 29 giugno non mancare all’ultimo appuntamento della stagione"
 date: 2022-06-20 16:00:00 +0200
 tags: developers designers container docker
 categories: news
