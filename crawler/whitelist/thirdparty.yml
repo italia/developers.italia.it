@@ -133,3 +133,7 @@
 - name: "Tiledesk"
   repos:
     - "https://github.com/Tiledesk/tiledesk-deployment"
+    
+- name: "Trasporti Lecce"
+  repos:
+    - "https://github.com/piersoft/trasportilecceeu"
