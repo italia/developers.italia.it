@@ -16,4 +16,4 @@ Dopo aver parlato, nello scorso incontro, della [progettazione di API REST per l
 
 Come sempre, in chiusura risponderemo alle domande dei partecipanti per arricchire la conversazione.  
 
-Ti aspettiamo online mercoledì 29 giugno alle ore 15.30. Per partecipare **[registrati all’evento](https://mobilizon.it/events/a3a660e6-ce1c-4080-8888-490c2ecd03f5)**.
+Ti aspettiamo online **mercoledì 29 giugno alle ore 15.30**. Per partecipare **[registrati all’evento](https://mobilizon.it/events/a3a660e6-ce1c-4080-8888-490c2ecd03f5)**.
