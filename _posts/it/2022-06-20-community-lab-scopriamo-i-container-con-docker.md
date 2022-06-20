@@ -3,7 +3,7 @@ layout: post
 title: "Community lab: scopriamo i container con Docker "
 subtitle: "Scopri le nostre ultime iniziative all’Auditorium della Tecnica a Roma, dal 14 al 17 giugno. É possibile partecipare anche online"
 date: 2022-06-20 16:00:00 +0200
-tags: developers designers forumpa
+tags: developers designers container docker
 categories: news
 author: Michela Gabrieli
 image: /assets/icons/logo-it.png
