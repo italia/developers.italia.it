@@ -12,7 +12,7 @@ locale: it
 
 L’ultimo appuntamento dei community lab sarà dedicato a tutti coloro che si occupano di sviluppo software nella o per la Pubblica Amministrazione, presso enti, in-house o fornitori.
 
-Dopo aver parlato, nello scorso incontro, della [progettazione di API REST per la PA](https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili), il prossimo **29 giugno alle 15.30**, scopriremo **cosa sono i container e come iniziare a usare Docker** per facilitare la vita a chi contribuisce e mette in produzione servizi digitali. Quali sono i vantaggi? E quali i possibili problemi che si possono incontrare? Ne discuteremo assieme a **Fabio Bonelli**, Software Engineer al Dipartimento per la trasformazione digitale. Faremo un esempio dell’uso di Docker sul campo, con un'applicazione demo, utilizzando container già pronti o creandone di nuovi, personalizzati per le nostre esigenze.
+Dopo aver parlato, nello scorso incontro, della [progettazione di API REST per la PA](https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili), il prossimo **29 giugno alle 15.30**, scopriremo **cosa sono i container e come iniziare a usare Docker** per facilitare la vita a chi contribuisce e mette in produzione servizi digitali. Quali sono i vantaggi? E quali i possibili problemi che si possono incontrare? Ne discuteremo assieme a **Fabio Bonelli**, software engineer al Dipartimento per la trasformazione digitale. Faremo un esempio dell’uso di Docker sul campo, con un'applicazione demo, utilizzando container già pronti o creandone di nuovi, personalizzati per le nostre esigenze.
 
 Come sempre, in chiusura risponderemo alle domande dei partecipanti per arricchire la conversazione.  
 
