@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-06-21T06:02:47+00:00</updated>
+  <updated>2022-06-21T15:56:48+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -22,7 +22,7 @@
     <summary>Il prossimo 29 giugno non mancare all’ultimo appuntamento della stagione </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2022/06/20/community-lab-scopriamo-i-container-con-docker">&lt;p&gt;L’ultimo appuntamento dei community lab sarà dedicato a tutti coloro che si occupano di sviluppo software nella o per la Pubblica Amministrazione, presso enti, in-house o fornitori.&lt;/p&gt;
 
-&lt;p&gt;Dopo aver parlato, nello scorso incontro, della &lt;a href=&quot;https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili&quot;&gt;progettazione di API REST per la PA&lt;/a&gt;, il prossimo &lt;strong&gt;29 giugno alle 15.30&lt;/strong&gt;, scopriremo &lt;strong&gt;cosa sono i container e come iniziare a usare Docker&lt;/strong&gt; per facilitare la vita a chi contribuisce e mette in produzione servizi digitali. Quali sono i vantaggi? E quali i possibili problemi che si possono incontrare? Ne discuteremo assieme a &lt;strong&gt;Fabio Bonelli&lt;/strong&gt;, Software Engineer al Dipartimento per la trasformazione digitale. Faremo un esempio dell’uso di Docker sul campo, con un’applicazione demo, utilizzando container già pronti o creandone di nuovi, personalizzati per le nostre esigenze.&lt;/p&gt;
+&lt;p&gt;Dopo aver parlato, nello scorso incontro, della &lt;a href=&quot;https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili&quot;&gt;progettazione di API REST per la PA&lt;/a&gt;, il prossimo &lt;strong&gt;29 giugno alle 15.30&lt;/strong&gt;, scopriremo &lt;strong&gt;cosa sono i container e come iniziare a usare Docker&lt;/strong&gt; per facilitare la vita a chi contribuisce e mette in produzione servizi digitali. Quali sono i vantaggi? E quali i possibili problemi che si possono incontrare? Ne discuteremo assieme a &lt;strong&gt;Fabio Bonelli&lt;/strong&gt;, software engineer al Dipartimento per la trasformazione digitale. Faremo un esempio dell’uso di Docker sul campo, con un’applicazione demo, utilizzando container già pronti o creandone di nuovi, personalizzati per le nostre esigenze.&lt;/p&gt;
 
 &lt;p&gt;Come sempre, in chiusura risponderemo alle domande dei partecipanti per arricchire la conversazione.&lt;/p&gt;
 
