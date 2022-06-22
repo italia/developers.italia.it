@@ -8,7 +8,7 @@ const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 const SET_FILTERS_CATEGORIES = 'SET_FILTERS_CATEGORIES';
 const SET_FILTERS_INTENDED_AUDIENCES = 'SET_FILTERS_INTENDED_AUDIENCES';
 const SET_FILTERS_DEVELOPMENT_STATUSES = 'SET_FILTERS_DEVELOPMENT_STATUSES';
-const SET_FILTERS_PNRR = 'SET_FILTERS_DEVELOPMENT_STATUSES';
+const SET_FILTERS_PNRR = 'SET_FILTERS_PNRR';
 const SET_FILTERS_PNRR_TARGET = 'SET_FILTERS_DEVELOPMENT_TARGET';
 const SET_FILTERS_PNRR_MEASURE = 'SET_FILTERS_DEVELOPMENT_MEASURE';
 const SET_SORT_BY = 'SET_SORT_BY';
@@ -110,6 +110,7 @@ export const SearchProvider = ({
     type: initialType,
   });
 
+  console.log("State",state);
   syncStateWithQueryString && serializeStateToQueryString(state);
 
   return (
@@ -146,6 +147,7 @@ export const setFilterIntendedAudience = (intendedAudience) => ({
   type: SET_FILTERS_INTENDED_AUDIENCES,
   value: intendedAudience,
 });
+export const setFilterPNRR = (PNRR) => ({ type: SET_FILTERS_PNRR, value: PNRR });
 export const setFilterPNRRTargets = (targets) => ({ type: SET_FILTERS_PNRR_TARGET, value: targets });
 export const setFilterPNRRMeasures = (measures) => ({ type: SET_FILTERS_PNRR_MEASURE, value: measures });
 

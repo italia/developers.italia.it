@@ -25,6 +25,7 @@ export const serializeStateToQueryString = ({
   const hash = location.hash; // preserve hash if it is present
   const urlSearchParams = new URLSearchParams();
   filterCategories.forEach((f) => urlSearchParams.append('categories', f));
+  console.log(filterDevelopmentStatuses);
   filterDevelopmentStatuses.forEach((f) => urlSearchParams.append('development_statuses', f));
   filterIntendedAudiences.forEach((f) => urlSearchParams.append('intended_audiences', f));
 

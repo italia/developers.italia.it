@@ -6,13 +6,6 @@ ref:
   en: /en/software
 layout: software
 pair-blocks:
-    - title: "PNRR<br>PA Digitale 2026"
-      text: "Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA Digitale 2026"
-      # image: /assets/images/come-lo-uso-2.svg
-      buttons:
-        - label: Esplora
-          class: btn btn-primary
-          url: '/it/pnrr'
     - title: "Software a riuso"
       text: "Soluzioni e programmi informatici messi a riuso dalla Pubblica Amministrazione"
       # image: /assets/images/come-lo-uso-2.svg

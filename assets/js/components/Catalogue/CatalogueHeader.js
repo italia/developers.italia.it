@@ -27,7 +27,6 @@ export const CatalogueHeader = React.memo(() => {
   return (
     <div className="text-center">
       <h1 className={classes.header}>{l10NLabels.software.catalogue}</h1>
-      <div className="row"><h2 className="col-10 text-center mx-auto mb-3">{ initialPnrr?"(PNRR)":"" }</h2></div>
       <div className="col-10 mx-auto text-center mb-3">
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
       </div>

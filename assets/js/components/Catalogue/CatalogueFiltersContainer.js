@@ -6,6 +6,7 @@ import {
   getSoftwareDevelopmentStatuses,
   getSoftwareIntendedAudiences,
   softwareTypes,
+  softwarePNRR,
   getSoftwarePNRRTargets,
   getSoftwarePNRRMeasures,
 } from '../../utils/l10n.js';
@@ -16,6 +17,7 @@ import {
   setFilterDevelopmentStatuses,
   setFilterIntendedAudience,
   setType,
+  setFilterPNRR,
   setFilterPNRRTargets,
   setFilterPNRRMeasures,
 } from '../../contexts/searchContext.js';
@@ -34,11 +36,13 @@ const softwarePNRRMeasures = getSoftwarePNRRMeasures();
 
 export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const dispatch = useContext(searchContextDispatch);
-  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, filterPNRRTargets, filterPNRRMeasures, type } = useContext(searchContextState);
+  console.log( useContext(searchContextState));
+  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, filterPNRR, filterPNRRTargets, filterPNRRMeasures, type } = useContext(searchContextState);
   const typesFilterName = `${prefixName}_type`;
   const categoriesFilterName = `${prefixName}_categories`;
   const intendedAudiencesFilterName = `${prefixName}_intended_audiences`;
   const developmentStatusesFilterName = `${prefixName}_development_statuses`;
+  const PNRRFilterName = `${prefixName}_PNRR`;
   const PNRRTargetsFilterName = `${prefixName}_PNRR_targets`;
   const PNRRMeasuresFilterName = `${prefixName}_PNRR_measures`;
 
@@ -67,6 +71,12 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
     }),
     []
   );
+  const defaultPNRR = useMemo(
+    () => ({
+      [PNRRFilterName]: filterPNRR,
+    }),
+    []
+  );
   const defaultPNRRTargets = useMemo(
     () => ({
       [PNRRTargetsFilterName]: filterPNRRTargets,
@@ -89,6 +99,8 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
 
   const handleChangeOnDevelopmentStatuses = (values) => dispatch(setFilterDevelopmentStatuses(values));
 
+  const handleChangeOnPNRR = (value) => dispatch(setFilterPNRR(value));
+
   const handleChangeOnPNRRTargets = (value) => dispatch(setFilterPNRRTargets(value));
 
   const handleChangeOnPNRRMeasures = (value) => dispatch(setFilterPNRRMeasures(value));
@@ -96,6 +108,13 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
     if (initialPnrr) {
         return (
             <>
+            <CatalogueFilters
+            title="PNRR"
+            name="PNRR"
+            filters={softwarePNRR}
+            defaultValues={defaultPNRR}
+            onChange={handleChangeOnPNRR}
+            />
             <CatalogueFilters
             title="PNRR Beneficiari"
             name={PNRRTargetsFilterName}
@@ -132,6 +151,13 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
     } else {
         return (
             <>
+            <CatalogueFilters
+            title="PNRR"
+            name="PNRR"
+            filters={softwarePNRR}
+            defaultValues={defaultPNRR}
+            onChange={handleChangeOnPNRR}
+            />
             <CatalogueFilters
             title={l10NLabels.software.type}
             name={typesFilterName}
