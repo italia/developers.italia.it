@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202206220603" rel="stylesheet">
+  <link href="/dist/main.css?202206230602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -646,17 +646,21 @@
     <div class="col-md-7">
       <div class="intro-name">
         
+        
+        <img alt="" src="https://raw.githubusercontent.com/regione-campania/GISA/master/GisaLOGO.png" class="d-inline-block" />
+        
         <h1 class="d-inline-block">
           GISA Campania
           <span class="badge badge-pill badge-pill--sup badge-primary"></span>
         </h1>
         <div class="abstract-software">
           <h2>
-            
+            GISA
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            
+            Ecosistema software regionale per Sanità Veterinaria e Sicurezza
+Alimentare e Prevenzione luoghi di lavoro
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -707,9 +711,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitality:</p>
-          <p class="score d-inline-block"> 48%</p>
+          <p class="score d-inline-block"> 49%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,58,46,100,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,58,46,100,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,62,50,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -740,10 +744,22 @@
 
       <div class="drops-details">
         
+        <div class="goto">
+          <p>
+            <a
+              href="https://github.com/regione-campania/GISA.git"
+              aria-label="Go to the software's site (external link)"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Project's website &rarr;</a>
+          </p>
+        </div>
+        
 
         
         <div class="goto code">
-          <p><a href="https://github.com/regione-campania/GISA.git"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+          <p><a href="https://github.com/regione-campania/GISA"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
         </div>
         
 
@@ -774,7 +790,48 @@
           <div class="function-list">
             
             
+            <p> - GISA CONTROLLI UFFICIALI - AUTOVALUTAZIONE - ANAGRAFE - MATRIX -
+
+REPORTISTICA - SICUREZZA LAVORO </p>
             
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Used by 11
+              
+              administrations
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Regione Campania </p>
+              
+              <p> Regione Valle D&#39;Aosta </p>
+              
+              <p> IZSM Portici </p>
+              
+              <p> ARPAC </p>
+              
+              <p> ASL NA1 Centro </p>
+              
+              <p> ASL NA2 Nord </p>
+              
+              <p> ASL NA3 Sud </p>
+              
+              <p> ASL AV </p>
+              
+              <p> ASL BN </p>
+              
+              <p> ASL CE </p>
+              
+              <p> ASL SA </p>
+              
+            </div>
           </div>
           
         </div>
@@ -835,7 +892,7 @@
                 
               </h2>
               <h2>
-                
+                GISA
               </h2>
             </div>
           </div>
@@ -991,8 +1048,27 @@
                 <p>
                   <span class="label">List of dependencies</span>
                   
-                  None
-                  
+                      
+                          <span class="badge badge-pill badge-primary">OSS</span><br />
+                          
+                          
+
+
+    Apache Tomcat 
+
+<br />
+                          
+                          
+
+
+    PostgreSQL 
+
+<br />
+                          
+                      
+                      
+                      
+                   
                 </p>
               </div>
             </div>
@@ -1007,20 +1083,6 @@
             <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
               
               
-
-              <div class="other-detail">
-                <p><span class="label">Supported languages</span>
-                  
-                
-                
-
-Italian<br />
-
-                
-                
-                </p>
-              </div>
-              
               
               
             </div>
@@ -1034,7 +1096,138 @@ Italian<br />
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                
+                <p>L’Ecosistema GISA è composto da diversi componenti tra cui</p>
+<ul>
+  <li>Autenticazione tramite SPID/CIE</li>
+  <li>Gestione Integrata Notifiche Sanitarie: modulo di gestione
+  delle pratiche di registrazione/riconoscimento degli OSA (Operatore del
+  Settore Alimentare) provenienti dai SUAP con possibilità di alimentazione
+  tramite cooperazione applicativa.</li>
+  <li>MATRIX: modulo di gestione della programmazione a livello
+  regionale, con il Documento di programmazione Annuale Regionale
+  (DPAR), e a livello territoriale, con il Documento di programmazione
+  Annuale Territoriale (DPAT). Esso consente di stimare il fabbisogno
+  delle risorse umane necessarie a compiere le attività programmate.</li>
+  <li>Gestione Controlli Ufficiali: registrazione di tutti i dati
+  relativi ai controlli ufficiali (tipo AUDIT, Ispezioni Semplici, Ispezioni
+  in Sorveglianza), comprese le non conformità riscontrate, sanzioni
+  amministrative applicate con generazione Avvisi di Pagamento PagoPA,
+  sequestri, notizie di reato, follow up, ecc… con stampa della
+  documentazione ufficiale precompilata (verbale ispezione, verbali di
+  campionamenti, ecc…).</li>
+  <li>Gestione Allerte Alimentari: Registrazione di tutti i dati
+  relativi ai controlli ufficiali effettuati per il sistema europeo RASFF
+  (Rapid Alert System Food and Feed).</li>
+  <li>Registro Trasgressori e Gestione degli illeciti
+  amministrativi e delle Ordinanze regionali in
+  cooperazione applicativa con PagoPA.</li>
+  <li>Reportistica Avanzata: cruscotto per la rendicontazione
+  delle attività programmate con possibilità di verificare il lavoro svolto
+  dalle singole strutture territoriali afferenti ai Dipartimenti di
+  Prevenzione delle AA.SS.LL.</li>
+  <li>Macellazioni: modulo di gestione dei dati relativi alle
+  singole sedute di macellazione (controllo documentale, visita Ante
+  Mortem, visita Post Mortem, libero consumo, ecc…) con possibilità di
+  stampa di documentazione ufficiale (Registro macellazione, articolo 17,
+  modello 10, ecc…).</li>
+  <li>Cooperazione Applicativa tra ecosistema GISA e Sistemi
+  Nazionali per scambio dati su
+    <ul>
+      <li>dati OSM</li>
+      <li>dati checklist BA</li>
+      <li>dati scorta farmaci</li>
+      <li>dati anagrafe animali da compagnia</li>
+      <li>dati checklist biosicurezza</li>
+      <li>dati checklist farmaco-sorveglianza</li>
+      <li>anagrafiche SINTESIS</li>
+      <li>anagrafiche Allevamenti</li>
+    </ul>
+  </li>
+  <li>Sistema di Autovalutazione del rischio
+ è un modulo software che consente a imprese e operatori del settore alimentare
+ e/o veterinari di migliorare la conduzione della propria attività, sia
+ nelle modalità decisionali che gestionali, acquisendo consapevolezza dei
+ punti di forza e di debolezza relativi alla/e propria/e attività. In
+ particolare, consente di individuare e valutare il proprio livello di
+ rischio rispondendo alle domande di una check list che fa parte del
+ Sistema Ufficiale di Valutazione del Rischio delle imprese e che è
+ utilizzata durante i controlli ufficiali delle AA.SS.LL. con riferimento
+ alla propria linea di attività. L’accesso come ospite all’Autovalutazione
+ può essere utile a coloro che hanno intenzione di avvicinarsi alle linee
+ di attività del settore alimentare e/o veterinari e che desiderano
+ conoscere le check list che verranno utilizzate dagli ispettori per i
+ controlli.</li>
+  <li>Veterinary Activity Management (VAM): Sistema per la
+ gestione delle principali funzionalità relative ad ospedali e ambulatori
+ veterinari pubblici della Regione Campania e di tutte le attività
+ prestazionali effettuate su animali d’affezione e sinantropi. Il sistema
+ gestisce il percorso clinico e chirurgico di ogni animale (cane, gatto e
+ sinantropo) e in particolare
+    <ul>
+      <li>Accettazione</li>
+      <li>Trasferimenti</li>
+      <li>Cartelle cliniche</li>
+      <li>Fascicoli sanitari</li>
+      <li>Registro tumori animali</li>
+      <li>Interazione con la Banca Dati Regionale dell’Anagrafe cani, gatti e furetti.</li>
+      <li>Anagrafe Animali da compagnia (cani, gatti e furetti):
+che consente di verificare la registrazione nell’Anagrafe regionale di un’animale da compagnia identificato con microchip (transponder);
+e di gestire le informazioni anagrafiche degli animali e dei loro proprietari/detentori e le relative registrazioni.</li>
+    </ul>
+  </li>
+  <li>BDA-R
+ Banca dati apistica regionale integrata in cooperazione applicativa con la Banca dati apistica Nazionale BDA-N.</li>
+  <li>Sicurezza e prevenzione sui luoghi di lavoro: componente per
+ la gestione delle notifiche relative ai cantieri e alle imprese in ambito della sicurezza sui luoghi di lavoro.
+L’intero ecosistema prevede diverse tipologie di utenti che possono essere
+schematizzati nelle seguenti macrocategorie
+    <ul>
+      <li>Utenti istituzionali Regionali</li>
+      <li>Utenti istituzionali afferenti ai Dipartimenti di Prevenzione delle AA.SS.LL.</li>
+      <li>Utenti istituzionali non appartenenti alle AA.SS.LL. come Forze dell’ordine, Esercito, Università, CRIUV, ecc</li>
+      <li>Utenti liberi professionisti: Veterinari Liberi Professionisti o delegati apicoltori, ecc</li>
+      <li>Utenti imprenditori: apicoltori, trasportatori, ecc…</li>
+      <li>Privati cittadini: utenti che accedono alla componente di Autovalutazione.
+Più precisamente le tipologie di utenti che possono registrarsi in GISA
+sono le seguenti</li>
+      <li>ASL</li>
+      <li>Regione</li>
+      <li>Centri Riferimento Regionali</li>
+      <li>IZSM</li>
+      <li>ARPAC</li>
+      <li>Osservatori Regionali</li>
+      <li>Forze dell’Ordine (Polizia stradale, Polizia municipale, Carabinieri, NAS, NAC, ICQ, Guardia forestale)</li>
+      <li>Esercito</li>
+      <li>Guardie Zoofile Prefettizie</li>
+      <li>Guardie Zoofile Regionali</li>
+      <li>Gestori Acque di rete</li>
+      <li>Apicoltore Autoconsumo</li>
+      <li>Apicoltore Commerciale</li>
+      <li>Delegato Apicoltore / Associazione</li>
+      <li>Gestore Trasporti</li>
+      <li>Gestore Distributori (erogatori cibi e bevande)</li>
+      <li>Medico Veterinario libero professionista</li>
+      <li>Operatore Settore Alimentare per autovalutazione</li>
+      <li>Direttore Sanitario Canile 
+​I Responsabili dei cantieri non necessitano della registrazione
+all’ecosistema GISA e possono inoltrare la notifica 
+accedendo con SPID/CIE.             <br />
+Il totale stimato degli attuali utilizzatori è di circa 11.000 utenti
+(peraltro in continua crescita) distribuiti variamente sui
+sottosistemi. Nell’estate 2022 saranno presenti in G.I.S.A. anche le
+tipologie di utenti della prevenzione e sicurezza sui luoghi di lavoro 
+di seguito elencati</li>
+      <li>Profilo Notificatore</li>
+      <li>Profilo Ispettore SIML</li>
+      <li>Profilo Ispettore SPSAL</li>
+      <li>Profilo Direttore SIML</li>
+      <li>Profilo Direttore SPSAL</li>
+      <li>Profilo Regione</li>
+      <li>Profilo Ispettore UPG</li>
+      <li>Profilo Ispettore non UPG</li>
+    </ul>
+  </li>
+</ul>
 
               </div>
             </div>
