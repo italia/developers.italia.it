@@ -51,3 +51,18 @@ I software open source di terze parti, ovvero non messi a riuso dalla Pubblica A
 1. compilare ed includere il file `publiccode.yml` nel repositorio (lasciando vuoto il campo `codiceIPA`);
 2. aggiungere l'URL del repositorio nella [lista](https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml) aprendo una pull request su GitHub.
 
+## Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA Digitale 2026
+
+Gli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR) di PA Digitale 2026 prevedono l'utilizzo di soluzioni informatiche per il miglioramento della Pubblica Amministrazione. Nella ricerca di soluzioni che possano
+concorrere al raggiungimento dei requisiti che discendono dall'adesione agli avvisi di PA Digitale 2026 finanziati con il PNRR, il Codice dell'Amministrazione Digitale (Artt. 68 e 69) prevede di effettuare una _valutazione comparativa_ che dia priorità,
+nell'ordine, al software a riuso ed open source di terze parti. Al fine di facilitare questa ricerca, Developers Italia vuole promuovere, su base volontaria e autocertificata, i software a riuso ed open source utili agli scopi elencati in precedenza.
+
+### Come indicare la possibilità di un software di essere utile agli obiettivi PNRR
+
+All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserire i tag:
+
+* `PNRR` per indicare che il software appartiene alla categoria
+* `PNRR/Beneficiari/{NOME BENEFICIARIO}` per indicare che il software può avere come beneficiari quelli indicati. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Beneficiari/Scuole`
+* `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Misura/1.2`
+
+
