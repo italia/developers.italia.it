@@ -36,7 +36,6 @@ const softwarePNRRMeasures = getSoftwarePNRRMeasures();
 
 export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const dispatch = useContext(searchContextDispatch);
-  console.log( useContext(searchContextState));
   const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, filterPNRR, filterPNRRTargets, filterPNRRMeasures, type } = useContext(searchContextState);
   const typesFilterName = `${prefixName}_type`;
   const categoriesFilterName = `${prefixName}_categories`;
