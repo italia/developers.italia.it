@@ -28,8 +28,8 @@ const softwareCategories = getSoftwareCategories();
 const softwareIntendedAudiences = getSoftwareIntendedAudiences();
 const softwareDevelopmentStatuses = getSoftwareDevelopmentStatuses();
 const softwareTypesFilter = [[ALL_CATALOGUE, l10NLabels.all], ...softwareTypes];
-const softwarePNRRTargets = getSoftwarePNRRTargets();
 const softwarePNRRMeasures = getSoftwarePNRRMeasures();
+const softwarePNRRTargets = getSoftwarePNRRTargets();
 
 export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const dispatch = useContext(searchContextDispatch);

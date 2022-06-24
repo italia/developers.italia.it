@@ -21,6 +21,19 @@ export const getSoftwareIntendedAudiences = () => [
   ['emergency-services', 'emergency services'],
 ];
 
+export const getSoftwarePNRRMeasures = () => [
+  ['1.4.1', 'Abilitazione e facilitazione migrazione al Cloud'],
+  ['1.4.2', 'Esperienza dei servizi pubblici'],
+];
+
+export const getSoftwarePNRRTargets = () => [
+  ['Comuni', 'Comuni'],
+  ['Scuole', 'Scuole'],
+  ['ASL', 'ASL'],
+];
+
+export const softwarePNRR = [['1', 'PNRR']];
+
 export const l10NLabels = {
   all: 'Tutto',
   search_form_catalogue: 'Cerca in tutto il catalogo software',
