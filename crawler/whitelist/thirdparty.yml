@@ -133,7 +133,11 @@
 - name: "Tiledesk"
   repos:
     - "https://github.com/Tiledesk/tiledesk-deployment"
-    
+
+- name: "SmartMonit"
+  repos:
+    - "https://gitlab.paadvice.com/opensource/smartmonit"
+
 - name: "Trasporti Lecce"
   repos:
     - "https://github.com/piersoft/trasportilecceeu"
