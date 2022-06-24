@@ -49,7 +49,7 @@ export const getSoftwarePNRRTargets = () => {
 export const getSoftwarePNRRMeasures = () => {
   const PNRRMeasures = yaml.load(softwarePNRRMeasuresYml);
   return Object.entries(PNRRMeasures).reduce((acc, [key, value]) => {
-    acc.push([key, key + ' - ' + value]);
+    acc.push([key, `${key}-${value}`]);
     return acc;
   }, []);
 };
