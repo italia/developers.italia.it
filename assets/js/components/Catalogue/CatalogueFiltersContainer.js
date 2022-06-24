@@ -129,14 +129,14 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
       {filterPNRR && (
         <>
           <CatalogueFilters
-            title="PNRR Beneficiari"
+            title={l10NLabels.software.pnrr_targets}
             name={PNRRTargetsFilterName}
             filters={softwarePNRRTargets}
             defaultValues={defaultPNRRTargets}
             onChange={handleChangeOnPNRRTargets}
           />
           <CatalogueFilters
-            title="PNRR Misure"
+            title={l10NLabels.software.pnrr_measures}
             name={PNRRMeasuresFilterName}
             filters={softwarePNRRMeasures}
             defaultValues={defaultPNRRMeasures}

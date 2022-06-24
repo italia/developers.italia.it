@@ -39,7 +39,7 @@ export const getSoftwareIntendedAudiences = () => {
   return softwareIntendedAudiences.map((value) => [value, value.replace(/-/gi, ' ')]);
 };
 
-export const softwarePNRR = [['1', 'PNRR']];
+export const softwarePNRR = [['1', l10NLabels.software.pnrr]];
 
 export const getSoftwarePNRRTargets = () => {
   const PNRRTargets = yaml.load(softwarePNRRTargetsYml);

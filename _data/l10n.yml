@@ -221,6 +221,9 @@ it:
       sort_by_alphabetic: Alfabetico
       categories: Categorie
       intended_audience: Ambito di applicazione
+      pnrr: Software utile al Piano Nazionale di Ripresa e Resilienza (PNRR)
+      pnrr_targets: Beneficiari PNRR
+      pnrr_measures: Misure PNRR
       results: risultati
       no_results: Nessun risultato trovato
       retry_search: La ricerca non ha prodotto nessun risultato. Prova un'altra chiave di ricerca.
@@ -633,6 +636,9 @@ en:
       filters: Filters
       categories: Categories
       intended_audience: Intended Audience
+      pnrr: Software for the Italian Recovery and Resilience Plan (PNRR, RRP)
+      pnrr_targets: PNRR targets
+      pnrr_measures: PNRR measures
       results: results
       no_results: No results found
       retry_search: The search did not match any results. Try searching other terms.
