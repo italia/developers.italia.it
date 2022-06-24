@@ -28,7 +28,10 @@ const useStyles = createUseStyles({
   },
 });
 
-const getCount = (filterValues) => Object.values(filterValues).flat().length;
+const getCount = (filterValues) =>
+  Object.values(filterValues)
+    .flat()
+    .filter((v) => v).length;
 
 export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, name }) => {
   const [selectedFiltersCount, setSelectedFiltersCount] = useState(getCount(defaultValues));
