@@ -26,5 +26,3 @@ Questo è il catalogo previsto dalle [Linee Guida per l'Acquisizione e il Riuso 
 
 <a href="/it/riuso" class="btn btn-white btn-outline-primary mr-10 ml-auto mt-3">Maggiori informazioni</a>
 <a href="/it/faq" class="btn btn-primary mr-10 ml-auto mt-3 faq">FAQ</a>
-
-Sezione PNRR

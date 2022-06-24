@@ -142,9 +142,11 @@ it:
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
     banner_joinus_action: Vieni su Slack
-    banner_PNRR_h2: Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA Digitale 2026
+    banner_PNRR_h2: |
+      Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
+      e Resilienza (PNRR) di <a href="https://padigitale2026.gov.it">PA Digitale 2026</a>
     banner_PNRR_h1: Software PNRR
-    banner_PNRR_action: Vedi il catalogo PNRR
+    banner_PNRR_action: Vedi il software utile al PNRR
     how_to_use: Come lo uso
 
     status_maintainer: maintainer
@@ -560,7 +562,9 @@ en:
     banner_joinus_h1: Join our community!
     banner_joinus_action: Chat on Slack now
     how_to_use: How do I use it
-
+    banner_PNRR_h2: Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA Digitale 2026
+    banner_PNRR_h1: Software PNRR
+    banner_PNRR_action: Vedi il catalogo PNRR
     status_member_of_board: member of board
     status_maintainer: maintainer
 

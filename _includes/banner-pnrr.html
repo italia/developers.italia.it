@@ -1,0 +1,26 @@
+{% assign extraclass = include.extraclass | default:'' %}
+<section class="banner-joinus {{extraclass}}">
+  <div class="container bg-white mt-3 mt-md-5 p-4 p-md-5 p-md-5">
+    <div class="align-items-center">
+      <div class="position-relative">
+        <img
+         src="{{'/assets/images/pa-digitale-2026.svg' | relative_url}}"
+         alt=""
+         height="100"
+         aria-hidden="true"
+         class="banner-joinus-window d-none d-md-inline"
+        >
+        <h1>{{t.banner_PNRR_h1}}</h1>
+        <p class="font-serif alternateblock__text">{{t.banner_PNRR_h2}}</p>
+      </div>
+      <div class="ml-auto">
+        <a href="/it/search?pnrr=1" class="btn btn-primary pl-5 pr-5 mt-1 mt-md-4">
+          {{t.banner_PNRR_action}}
+          <svg class="icon">
+            <use xlink:href="/assets/svg/sprite.svg#it-funnel"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
