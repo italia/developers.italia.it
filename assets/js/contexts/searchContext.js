@@ -110,7 +110,6 @@ export const SearchProvider = ({
     type: initialType,
   });
 
-  console.log("State",state);
   syncStateWithQueryString && serializeStateToQueryString(state);
 
   return (
