@@ -22,10 +22,8 @@ import {
   setFilterPNRRMeasures,
 } from '../../contexts/searchContext.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
+import { initialPnrr } from '../../utils/urlSearchParams.js';
 import { CatalogueFilters } from './CatalogueFilters.js';
-import {
-  initialPnrr,
-} from '../../utils/urlSearchParams.js';
 
 const softwareCategories = getSoftwareCategories();
 const softwareIntendedAudiences = getSoftwareIntendedAudiences();
@@ -36,7 +34,15 @@ const softwarePNRRMeasures = getSoftwarePNRRMeasures();
 
 export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const dispatch = useContext(searchContextDispatch);
-  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, filterPNRR, filterPNRRTargets, filterPNRRMeasures, type } = useContext(searchContextState);
+  const {
+    filterCategories,
+    filterDevelopmentStatuses,
+    filterIntendedAudiences,
+    filterPNRR,
+    filterPNRRTargets,
+    filterPNRRMeasures,
+    type,
+  } = useContext(searchContextState);
   const typesFilterName = `${prefixName}_type`;
   const categoriesFilterName = `${prefixName}_categories`;
   const intendedAudiencesFilterName = `${prefixName}_intended_audiences`;
@@ -104,91 +110,91 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
 
   const handleChangeOnPNRRMeasures = (value) => dispatch(setFilterPNRRMeasures(value));
 
-    if (initialPnrr) {
-        return (
-            <>
-            <CatalogueFilters
-            title="PNRR"
-            name="PNRR"
-            filters={softwarePNRR}
-            defaultValues={defaultPNRR}
-            onChange={handleChangeOnPNRR}
-            />
-            <CatalogueFilters
-            title="PNRR Beneficiari"
-            name={PNRRTargetsFilterName}
-            filters={softwarePNRRTargets}
-            defaultValues={defaultPNRRTargets}
-            onChange={handleChangeOnPNRRTargets}
-            radio={true}
-            />
-            <CatalogueFilters
-            title="PNRR Misure"
-            name={PNRRMeasuresFilterName}
-            filters={softwarePNRRMeasures}
-            defaultValues={defaultPNRRMeasures}
-            onChange={handleChangeOnPNRRMeasures}
-            radio={true}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.type}
-            name={typesFilterName}
-            filters={softwareTypesFilter}
-            defaultValues={defaultTypes}
-            onChange={handleChangeOnTypes}
-            radio={true}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.development_status}
-            name={developmentStatusesFilterName}
-            filters={softwareDevelopmentStatuses}
-            defaultValues={defaultDevelopmentStatuses}
-            onChange={handleChangeOnDevelopmentStatuses}
-            />
-            </>
-        );
-    } else {
-        return (
-            <>
-            <CatalogueFilters
-            title="PNRR"
-            name="PNRR"
-            filters={softwarePNRR}
-            defaultValues={defaultPNRR}
-            onChange={handleChangeOnPNRR}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.type}
-            name={typesFilterName}
-            filters={softwareTypesFilter}
-            defaultValues={defaultTypes}
-            onChange={handleChangeOnTypes}
-            radio={true}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.categories}
-            name={categoriesFilterName}
-            filters={softwareCategories}
-            defaultValues={defaultCategories}
-            onChange={handleChangeOnCategories}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.intended_audience}
-            name={intendedAudiencesFilterName}
-            filters={softwareIntendedAudiences}
-            defaultValues={defaultIntendedAudiences}
-            onChange={handleChangeOnIntendedAudiences}
-            />
-            <CatalogueFilters
-            title={l10NLabels.software.development_status}
-            name={developmentStatusesFilterName}
-            filters={softwareDevelopmentStatuses}
-            defaultValues={defaultDevelopmentStatuses}
-            onChange={handleChangeOnDevelopmentStatuses}
-            />
-            </>
-        );
-    }
+  if (initialPnrr) {
+    return (
+      <>
+        <CatalogueFilters
+          title="PNRR"
+          name="PNRR"
+          filters={softwarePNRR}
+          defaultValues={defaultPNRR}
+          onChange={handleChangeOnPNRR}
+        />
+        <CatalogueFilters
+          title="PNRR Beneficiari"
+          name={PNRRTargetsFilterName}
+          filters={softwarePNRRTargets}
+          defaultValues={defaultPNRRTargets}
+          onChange={handleChangeOnPNRRTargets}
+          radio={true}
+        />
+        <CatalogueFilters
+          title="PNRR Misure"
+          name={PNRRMeasuresFilterName}
+          filters={softwarePNRRMeasures}
+          defaultValues={defaultPNRRMeasures}
+          onChange={handleChangeOnPNRRMeasures}
+          radio={true}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.type}
+          name={typesFilterName}
+          filters={softwareTypesFilter}
+          defaultValues={defaultTypes}
+          onChange={handleChangeOnTypes}
+          radio={true}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.development_status}
+          name={developmentStatusesFilterName}
+          filters={softwareDevelopmentStatuses}
+          defaultValues={defaultDevelopmentStatuses}
+          onChange={handleChangeOnDevelopmentStatuses}
+        />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <CatalogueFilters
+          title="PNRR"
+          name="PNRR"
+          filters={softwarePNRR}
+          defaultValues={defaultPNRR}
+          onChange={handleChangeOnPNRR}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.type}
+          name={typesFilterName}
+          filters={softwareTypesFilter}
+          defaultValues={defaultTypes}
+          onChange={handleChangeOnTypes}
+          radio={true}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.categories}
+          name={categoriesFilterName}
+          filters={softwareCategories}
+          defaultValues={defaultCategories}
+          onChange={handleChangeOnCategories}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.intended_audience}
+          name={intendedAudiencesFilterName}
+          filters={softwareIntendedAudiences}
+          defaultValues={defaultIntendedAudiences}
+          onChange={handleChangeOnIntendedAudiences}
+        />
+        <CatalogueFilters
+          title={l10NLabels.software.development_status}
+          name={developmentStatusesFilterName}
+          filters={softwareDevelopmentStatuses}
+          defaultValues={defaultDevelopmentStatuses}
+          onChange={handleChangeOnDevelopmentStatuses}
+        />
+      </>
+    );
+  }
 });
 
 CatalogueFiltersContainer.propTypes = {

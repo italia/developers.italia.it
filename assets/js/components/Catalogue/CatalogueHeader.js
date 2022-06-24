@@ -3,9 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { l10NLabels } from '../../utils/l10n.js';
 import { SearchBar } from '../SearchBar.js';
 import { searchContextDispatch, searchContextState, setSearchValue } from '../../contexts/searchContext.js';
-import {
-  initialPnrr,
-} from '../../utils/urlSearchParams.js';
+import { initialPnrr } from '../../utils/urlSearchParams.js';
 
 const useStyles = createUseStyles({
   header: {
@@ -22,7 +20,6 @@ export const CatalogueHeader = React.memo(() => {
   const dispatch = useContext(searchContextDispatch);
 
   const handleSearch = useCallback((value) => dispatch(setSearchValue(value)), [dispatch]);
-
 
   return (
     <div className="text-center">
