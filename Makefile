@@ -12,7 +12,6 @@ download-data:
 
 bundle-setup:
 	gem install bundler:2.1.4
-	bundle config set path vendor/
 
 bundle-install: bundle-setup
 	bundle install
@@ -27,6 +26,7 @@ test:
 	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 
 local:
+	bundle config set path vendor/
 	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
 
 jekyll-build:
