@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-06-27T14:11:25+00:00</updated>
+  <updated>2022-06-27T14:34:53+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -15,12 +15,12 @@
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
   <entry xml:lang="it">
-    <id>https://developers.italia.it/it/news/2022/06/27/siti-scolastici-semplici-efficaci-grazie-modello-designers.italia</id>
+    <id>https://developers.italia.it/it/news/2022/06/27/siti-scolastici-semplici-efficaci-grazie-modello-designers-italia</id>
     <title>Siti scolastici sempre più semplici e accessibili grazie al modello aggiornato di Designers Italia</title>
     <updated>2022-06-27T14:00:00+00:00</updated>
 
     <summary>Pubblicate tutte le risorse operative per realizzare con facilità esperienze digitali semplici e moderne per la comunità scolastica </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2022/06/27/siti-scolastici-semplici-efficaci-grazie-modello-designers.italia">&lt;p&gt;Come creare siti web scolastici che rispondono ai bisogni delle persone e che siano dotati di interfacce accessibili e semplici da navigare? Con l’aggiornamento del &lt;a href=&quot;https://designers.italia.it/modello/scuole/&quot;&gt;modello disponibile su Designers Italia&lt;/a&gt;, la Scuola italiana ha uno strumento in più per raggiungere questo obiettivo, avvantaggiandosi anche dei fondi del Piano Nazionale di Ripresa e Resilienza disponibili attraverso un &lt;a href=&quot;https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA&quot;&gt;nuovo Avviso&lt;/a&gt; sulla piattaforma &lt;a href=&quot;http://padigitale2026.gov.it/&quot;&gt;PA digitale 2026&lt;/a&gt;&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/06/27/siti-scolastici-semplici-efficaci-grazie-modello-designers-italia">&lt;p&gt;Come creare siti web scolastici che rispondono ai bisogni delle persone e che siano dotati di interfacce accessibili e semplici da navigare? Con l’aggiornamento del &lt;a href=&quot;https://designers.italia.it/modello/scuole/&quot;&gt;modello disponibile su Designers Italia&lt;/a&gt;, la Scuola italiana ha uno strumento in più per raggiungere questo obiettivo, avvantaggiandosi anche dei fondi del Piano Nazionale di Ripresa e Resilienza disponibili attraverso un &lt;a href=&quot;https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA&quot;&gt;nuovo Avviso&lt;/a&gt; sulla piattaforma &lt;a href=&quot;http://padigitale2026.gov.it/&quot;&gt;PA digitale 2026&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Adottando il modello, &lt;strong&gt;studenti, genitori e tutta la comunità scolastica&lt;/strong&gt; potranno quindi trovare con facilità tutte le informazioni di cui hanno bisogno.&lt;/p&gt;
 
