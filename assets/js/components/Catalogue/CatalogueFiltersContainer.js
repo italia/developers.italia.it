@@ -125,6 +125,7 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
         filters={softwarePNRR}
         defaultValues={defaultPNRR}
         onChange={handleChangeOnPNRR}
+        capitalize={false}
       />
       {filterPNRR && (
         <>
@@ -134,6 +135,7 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
             filters={softwarePNRRTargets}
             defaultValues={defaultPNRRTargets}
             onChange={handleChangeOnPNRRTargets}
+            capitalize={false}
           />
           <CatalogueFilters
             title={l10NLabels.software.pnrr_measures}
@@ -141,6 +143,7 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
             filters={softwarePNRRMeasures}
             defaultValues={defaultPNRRMeasures}
             onChange={handleChangeOnPNRRMeasures}
+            capitalize={false}
           />
         </>
       )}

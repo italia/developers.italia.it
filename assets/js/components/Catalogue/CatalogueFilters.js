@@ -23,7 +23,6 @@ const useStyles = createUseStyles({
     marginBottom: '0px',
     paddingTop: '1px',
     paddingBottom: '8px',
-    textTransform: 'capitalize',
     userSelect: 'none',
   },
 });
@@ -33,7 +32,7 @@ const getCount = (filterValues) =>
     .flat()
     .filter((v) => v).length;
 
-export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, name }) => {
+export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, capitalize = true, name }) => {
   const [selectedFiltersCount, setSelectedFiltersCount] = useState(getCount(defaultValues));
   const [showAll, setShowAll] = useState(false);
 
@@ -64,7 +63,7 @@ export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}
           onToogleExpandCollapse={toogleShowAll}
         />
         {filters.map(([key, value]) => (
-          <label role="button" key={key} className={classes.label}>
+          <label role="button" key={key} className={classes.label} style={{textTransform: capitalize?"capitalize":""}}>
             <input
               alt={value}
               role="button"
@@ -89,6 +88,7 @@ CatalogueFilters.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   radio: PropTypes.bool,
+  capitalize: PropTypes.bool,
   title: PropTypes.string.isRequired,
 };
 
