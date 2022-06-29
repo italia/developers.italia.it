@@ -51,14 +51,17 @@ I software open source di terze parti, ovvero non messi a riuso dalla Pubblica A
 1. compilare ed includere il file `publiccode.yml` nel repositorio (lasciando vuoto il campo `codiceIPA`);
 2. aggiungere l'URL del repositorio nella [lista](https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml) aprendo una pull request su GitHub.
 
-## PNRR: soluzioni a Catalogo che possono contribuire al raggiungimento degli obiettivi
+## PNRR: soluzioni a Catalogo
 
-Nella ricerca di soluzioni che possano concorrere al raggiungimento dei requisiti che discendono dall'adesione agli Avvisi di [PA Digitale 2026](https://padigitale2026.gov.it/)
-finanziati con i fondi del PNRR, il Codice dell'Amministrazione Digitale (Artt. 68 e 69) prevede di effettuare una _valutazione comparativa_ che dia priorità,
+Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
+    e in particolare quelli previsti dalla Missione 1, in capo al Dipartimento per la trasformazione digitale, 
+    abbiamo implementato alcuni percorsi di ricerca tematici che agevolino le Pubbliche Amministrazioni a 
+    reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/).
+Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
+Codice dell'Amministrazione Digitale (Artt. 68 e 69) effettuano una _valutazione comparativa_ che dia priorità,
 nell'ordine, al software a riuso ed open source di terze parti. 
-Nell'ottica di contribuire fattivamente al raggiungimento degli obiettivi del PNRR, e in particolare quelli previsti dalla Missione 1 in capo al Dipartimento per la trasformazione digitale,
-    Developers Italia intende promuovere, su base volontaria e autocertificata, soluzioni idonee. Per autocertificare la propria soluzione è necessario
-    seguire le istruzioni di seguito riportate.
+Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file `publiccode.yml`, utilizzato
+per la pubblicazione delle schede di presentazione del Catalogo. Per autocertificare la propria soluzione è necessario seguire le istruzioni di seguito riportate.
 
 ### Istruzioni
 
@@ -68,6 +71,6 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
 * `PNRR/Beneficiari/{NOME BENEFICIARIO}` per indicare che il software può avere come beneficiari quelli indicati. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Beneficiari/Scuole`
 * `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Misura/1.2`
 
-Il Catalogo presenta una nuova voce di ricerca che permette di utilizzare la "modalità PNRR", che permetterà di filtrare le soluzioni per ciascuno dei tre elementi sopra riportati.
+Il Catalogo presenta quindi [una nuova voce di ricerca "PNRR"](/it/search?pnrr=1), che permette di filtrare le soluzioni per ciascuno dei tre elementi sopra riportati.
 
 
