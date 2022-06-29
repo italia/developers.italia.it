@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-06-29T06:03:13+00:00</updated>
+  <updated>2022-06-29T15:05:34+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,39 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/06/29/guida-sviluppo-software-libero-documento-continuo-miglioramento</id>
+    <title>Guida allo sviluppo e gestione di software libero: un documento in continuo miglioramento</title>
+    <updated>2022-06-29T12:00:00+00:00</updated>
+
+    <summary>Un ringraziamento a tutti coloro che hanno contribuito con suggerimenti e precisazioni </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/06/29/guida-sviluppo-software-libero-documento-continuo-miglioramento">&lt;p&gt;La &lt;strong&gt;Guida allo sviluppo e gestione del software libero&lt;/strong&gt;, &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero&quot;&gt;pubblicata su Docs Italia&lt;/a&gt;, è un &lt;strong&gt;documento basato sui contributi della community e in continuo miglioramento&lt;/strong&gt;, nel pieno rispetto della filosofia Open Source di cui Developers Italia si fa portavoce. Si tratta di una raccolta di buone pratiche utili a supportare le amministrazioni pubbliche nello sviluppo e gestione del software e delle politiche a esso connesse.&lt;/p&gt;
+
+&lt;p&gt;Dopo aver &lt;a href=&quot;https://developers.italia.it/it/news/2022/04/05/guida-software-libero&quot;&gt;dato annuncio&lt;/a&gt; della prima pubblicazione, abbiamo ricevuto &lt;strong&gt;diversi suggerimenti e proposte di miglioramenti&lt;/strong&gt; da parte della community ed esperti del settore, che ci hanno dato modo di arricchire i contenuti della guida e di correggere alcune imprecisioni.&lt;br /&gt;
+I membri della community che hanno suggerito migliorie ci hanno aiutato per esempio a rendere il linguaggio meno ostico per non addetti ai lavori, ad essere più attenti e coerenti nell’uso del genere e a chiarire alcune scelte lessicali (ad esempio definendo le sottili differenze che esistono tra i termini software libero, open source e sviluppo aperto).&lt;/p&gt;
+
+&lt;p&gt;Vogliamo quindi fare un &lt;strong&gt;ringraziamento collettivo a tutti coloro che hanno dedicato del tempo&lt;/strong&gt; e messo le loro competenze al servizio di questo importante documento pubblico che speriamo possa essere utile a tutti coloro che si occupano dello sviluppo e della gestione del software nella PA e per la PA.&lt;/p&gt;
+
+&lt;p&gt;Soddisfatti dei miglioramenti apportati alla guida, siamo consapevoli del fatto che &lt;strong&gt;non si tratta (e probabilmente non si tratterà mai) di una pubblicazione definitiva, ma di un documento in continua evoluzione&lt;/strong&gt;, che potrà essere costantemente integrato e migliorato grazie al contributo di tutti. Del resto la logica del software libero, e più in generale del governo aperto, prevede esattamente questo: la possibilità di intervenire in modo costruttivo da parte di chi possiede le competenze necessarie.&lt;/p&gt;
+
+&lt;h3 id=&quot;vuoi-contribuire-alla-guida&quot;&gt;Vuoi contribuire alla guida?&lt;/h3&gt;
+
+&lt;p&gt;Come già detto, la guida è in continua evoluzione e i contributi sono sempre benvenuti. Accettiamo anche nuovi capitoli o nuovi allegati relativi a nuovi strumenti o nuove tecniche di gestione del software libero. Per chi volesse inviare segnalazioni e proposte, è possibile e preferibile &lt;a href=&quot;https://github.com/italia/guida-sviluppo-gestione-software-libero&quot;&gt;inviare una pull request su GitHub&lt;/a&gt; con i propri cambiamenti, perché siano più facilmente integrati, o in alternativa aprire una issue spiegando cosa si vorrebbe aggiungere o cambiare. L’ultima versione della guida sarà sempre disponibile a &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero&quot;&gt;questo link&lt;/a&gt;, dal quale si accede anche alle versioni precedenti.&lt;/p&gt;</content>
+    <published>2022-06-29T12:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="softwarelibero" />
+    
+
+    <author>
+      <name>Riccardo Iaconelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/06/27/siti-scolastici-semplici-efficaci-grazie-modello-designers-italia</id>
     <title>Siti scolastici sempre più semplici e accessibili grazie al modello aggiornato di Designers Italia</title>
