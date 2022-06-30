@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Come l’Unione Europea valuta i servizi pubblici digitali: l’eGovernment Benchmark"
-subtitle: "Disponibile la registrazione della community call del 9 febbraio"
+subtitle: "Disponibile la registrazione della community call del 9 marzo"
 date: 2022-03-18 10:00:00 +0200
 tags: developers designers eu
 categories: news
