@@ -9,8 +9,8 @@ const SET_FILTERS_CATEGORIES = 'SET_FILTERS_CATEGORIES';
 const SET_FILTERS_INTENDED_AUDIENCES = 'SET_FILTERS_INTENDED_AUDIENCES';
 const SET_FILTERS_DEVELOPMENT_STATUSES = 'SET_FILTERS_DEVELOPMENT_STATUSES';
 const SET_FILTERS_PNRR = 'SET_FILTERS_PNRR';
-const SET_FILTERS_PNRR_TARGET = 'SET_FILTERS_DEVELOPMENT_TARGET';
-const SET_FILTERS_PNRR_MEASURE = 'SET_FILTERS_DEVELOPMENT_MEASURE';
+const SET_FILTERS_PNRR_TARGET = 'SET_FILTERS_PNRR_TARGET';
+const SET_FILTERS_PNRR_MEASURE = 'SET_FILTERS_PNRR_MEASURE';
 const SET_SORT_BY = 'SET_SORT_BY';
 const SET_TYPE = 'SET_TYPE';
 
@@ -89,8 +89,8 @@ export const SearchProvider = ({
   initialPage = 0,
   initialIntendedAudiences = [],
   initialPNRR = false,
-  initialPNRRTargets = [],
-  initialPNRRMeasures = [],
+  initialPNRRTargets = 'Tutti',
+  initialPNRRMeasures = 'Tutte',
   initialSearchValue = '',
   initialSortBy = RELEVANCE,
   initialType = ALL_SITE,
@@ -126,8 +126,8 @@ SearchProvider.propTypes = {
   initialIntendedAudiences: PropTypes.arrayOf(PropTypes.string),
 
   initialPNRR: PropTypes.bool,
-  initialPNRRTargets: PropTypes.arrayOf(PropTypes.string),
-  initialPNRRMeasures: PropTypes.arrayOf(PropTypes.string),
+  initialPNRRTargets: PropTypes.string,
+  initialPNRRMeasures: PropTypes.string,
 
   initialSearchValue: PropTypes.string,
   initialSortBy: PropTypes.string,

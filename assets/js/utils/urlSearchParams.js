@@ -4,8 +4,8 @@ export const initialDevelopmentStatuses = urlSearchParams.getAll('development_st
 export const initialPage = urlSearchParams.get('page');
 export const initialIntendedAudiences = urlSearchParams.getAll('intended_audiences');
 export const initialPNRR = urlSearchParams.has('pnrr');
-export const initialPNRRTarget = urlSearchParams.getAll('pnrr_target');
-export const initialPNRRMeasure = urlSearchParams.getAll('pnrr_measure');
+export const initialPNRRTarget = urlSearchParams.get('pnrr_target');
+export const initialPNRRMeasure = urlSearchParams.get('pnrr_measure');
 export const initialSearchValue = urlSearchParams.get('search_value');
 export const initialSortBy = urlSearchParams.get('sort_by');
 export const initialType = urlSearchParams.get('type');
@@ -32,8 +32,8 @@ export const serializeStateToQueryString = ({
     urlSearchParams.append('pnrr', '1');
   }
 
-  filterPNRRTargets.forEach((t) => urlSearchParams.append('pnrr_target', t));
-  filterPNRRMeasures.forEach((m) => urlSearchParams.append('pnrr_measure', m));
+  filterPNRRTargets != "Tutti" && urlSearchParams.set('pnrr_target',filterPNRRTargets);
+  filterPNRRMeasures != "Tutte" && urlSearchParams.set('pnrr_measure', filterPNRRMeasures);
 
   urlSearchParams.set('type', type);
   urlSearchParams.set('sort_by', sortBy);

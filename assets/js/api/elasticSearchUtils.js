@@ -18,17 +18,19 @@ export const buildFilter = (filters) => {
     // tags we came up with to mark certain type of software (the ones that help Public administrations
     // with the PNRR - https://www.governo.it/sites/governo.it/files/PNRR.pdf) - hence the
     // keyword search.
-    ...pnrrTargets.map((target) => ({
-      term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${target}` },
-    })),
-    ...pnrrMeasures.map((measure) => ({
-      term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${measure}` },
-    })),
 
     ...developmentStatuses.map((filterValue) => ({
       term: { 'publiccode.developmentStatus': filterValue },
     })),
   ];
+
+  if (pnrrTargets && pnrrTargets != "Tutti") {
+    ret.push ({term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTargets}` }});
+  }
+
+  if (pnrrMeasures && pnrrMeasures != "Tutte") {
+    ret.push( {term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasures}` }});
+  }
 
   if (pnrr) {
     // Not a keyword because we want match "PNRR/Beneficiari" or "PNRR/Misure" even if
