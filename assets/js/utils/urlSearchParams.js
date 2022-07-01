@@ -32,8 +32,8 @@ export const serializeStateToQueryString = ({
     urlSearchParams.append('pnrr', '1');
   }
 
-  filterPNRRTargets != "Tutti" && urlSearchParams.set('pnrr_target',filterPNRRTargets);
-  filterPNRRMeasures != "Tutte" && urlSearchParams.set('pnrr_measure', filterPNRRMeasures);
+  filterPNRRTargets != 'Tutti' && urlSearchParams.set('pnrr_target', filterPNRRTargets);
+  filterPNRRMeasures != 'Tutte' && urlSearchParams.set('pnrr_measure', filterPNRRMeasures);
 
   urlSearchParams.set('type', type);
   urlSearchParams.set('sort_by', sortBy);

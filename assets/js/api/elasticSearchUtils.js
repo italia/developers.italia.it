@@ -24,12 +24,12 @@ export const buildFilter = (filters) => {
     })),
   ];
 
-  if (pnrrTargets && pnrrTargets != "Tutti") {
-    ret.push ({term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTargets}` }});
+  if (pnrrTargets && pnrrTargets != 'Tutti') {
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTargets}` } });
   }
 
-  if (pnrrMeasures && pnrrMeasures != "Tutte") {
-    ret.push( {term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasures}` }});
+  if (pnrrMeasures && pnrrMeasures != 'Tutte') {
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasures}` } });
   }
 
   if (pnrr) {

@@ -106,8 +106,8 @@ export const CatalogueFiltersContainer = React.memo(({ prefixName }) => {
   const handleChangeOnPNRR = (value) => {
     /* Reset all PNRR filters, if the main PNRR search is disabled */
     if (!value) {
-      dispatch(setFilterPNRRTargets(""));
-      dispatch(setFilterPNRRMeasures(""));
+      dispatch(setFilterPNRRTargets(''));
+      dispatch(setFilterPNRRMeasures(''));
     }
 
     dispatch(setFilterPNRR(value));
