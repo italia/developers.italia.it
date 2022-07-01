@@ -24,11 +24,11 @@ export const buildFilter = (filters) => {
     })),
   ];
 
-  if (pnrrTargets && pnrrTargets != 'Tutti') {
+  if (pnrrTargets && pnrrTargets !== 'Tutti') {
     ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTargets}` } });
   }
 
-  if (pnrrMeasures && pnrrMeasures != 'Tutte') {
+  if (pnrrMeasures && pnrrMeasures !== 'Tutte') {
     ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasures}` } });
   }
 
