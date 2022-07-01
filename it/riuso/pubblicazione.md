@@ -71,6 +71,17 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
 * `PNRR/Beneficiari/{NOME BENEFICIARIO}` per indicare che il software può avere come beneficiari quelli indicati. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Beneficiari/Scuole`
 * `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Misura/1.2`
 
+Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file `publiccode.yml` si può inserire:
+
+
+    description:
+      it:
+        features:
+          - PNRR
+          - PNRR/Misura/1.4.1
+          - PNRR/Beneficiari/Comuni
+
+
 Il Catalogo presenta quindi [una nuova voce di ricerca "PNRR"](/it/search?pnrr=1), che permette di filtrare le soluzioni per ciascuno dei tre elementi sopra riportati.
 
 
