@@ -1,14 +1,14 @@
 ---
 title: IO
-subtitle: L'app dei servizi pubblici
+subtitle: The app of the public services
 logo: /assets/images/logo-io@2x.png
 external_website: https://io.italia.it
-payoff: L'app dei servizi pubblici
-description: io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
+payoff: The app of the public services
+description: io is the app of the Italian Government that will allow to all the citizens to use the national and local public services from their own smartphone in a simple, modern and secure way.
 owners:
     - name: PagoPA S.p.A.
       url: https://www.pagopa.gov.it/
-lang: it
+lang: en
 order: 4
 highlight: true
 comingsoon: false
@@ -16,43 +16,43 @@ layout: platform
 github_team: io
 resources:
     - Documentazione:
-        - title: Utilizzo delle API
+        - title: Use of the API
           icon: file
           url: https://developer.io.italia.it/openapi.html
-          desc: Documentazione per integrarsi con le API di IO
+          desc: Documentation to integrate with the IO API
     - Codice sorgente:
-        - title: Sorgente App IO
+        - title: IO App Source Code
           icon: github
           url: https://github.com/pagopa/io-app
-          desc: Codice sorgente della app IO
+          desc: Source Code of the IO app.
 ---
 
 ## Intro
 
-io è l’applicazione del Governo italiano che permetterà a tutti i cittadini di usare servizi pubblici nazionali e locali dal proprio smartphone in maniera semplice, moderna e sicura.
-È un progetto Open Source che crescerà di giorno in giorno, coinvolgendo enti e servizi diversi.
+io is the app of the Italian Government that will allow all the citizens to use the national and local public services from their own smartphone in a simple, modern and secure way.
+It's an Open Source project that will grow day to day, involving different entities and services.
 
-io mira ad agevolare la relazione tra i cittadini e la Pubblica Amministrazione (PA) attraverso la creazione di una piattaforma di componenti riutilizzabili in grado di rendere i servizi digitali più efficaci e migliorare la comunicazione tra i cittadini e la PA.
+io aims to facilitate the relationship between citizens and the Public Administration (PA) through the creation of a platform of reusable components capable of making digital services more effective and improve communication between citizens and the PA.
 
-I componenti vengono riutilizzati dalle amministrazioni che erogano servizi digitali al fine di garantire un’esperienza utente coerente nonché risparmiare sull’effort richiesto da un’implementazione tout-court di tali tecnologie trasversali.
+The components are reused by the administrations that provide digital services in order to ensure a consistent user experience as well as save on the effort required by a tout-court implementation of these transversal technologies.
 
-L’obiettivo è quello di fornire un modo più semplice e familiare da parte della Pubblica Amministrazione di comunicare con i cittadini, notificare atti, ricordare scadenze, condividere informazioni e documenti attraverso un’interfaccia costruita sul cittadino.
+The goal is to provide a simpler and more familiar way for the Public Administration to communicate with citizens, notify deeds, remember deadlines, share information and documents through an interface built on the citizen.
 
 ## Utilizzare le API
 
-Per iniziare ad utilizzare le API occorre registrarsi al portale [IO Developer](https://developer.io.italia.it/){:target="_blank"}. Dopo la fase di registrazione, devi fare clic sul pulsante "iscriviti all'API di cittadinanza digitale" per ricevere la chiave API che utilizzerai per autenticare le chiamate API. Riceverai anche un'e-mail con ulteriori istruzioni, incluso un codice fiscale falso che potrai utilizzare per inviare un messaggio di prova. Per maggiori informazioni si rimanda alla [documentazione sull' utilizzo delle API](https://developer.io.italia.it/openapi.html){:target="_blank"}
+To begin using the API you need to register on the [IO Developer](https://developer.io.italia.it/){:target="_blank"} portal. After the registration phase, you need to click on the "sign up for the digital citizenship API" button to receive the API key you will use to authenticate API calls. You will also receive an email with further instructions, including a fake fiscal code that you can use to send a test message. For more information, please refer to the [documentation to the use of the APIs](https://developer.io.italia.it/openapi.html){:target="_blank"}
 
-L’API di gestione delle preferenze permetterà al cittadino di gestire in modo centralizzato tutte le informazioni associate al suo profilo di cittadino digitale. Queste informazioni rendono possibile creare servizi digitali personalizzati (canali di comunicazione, preferenza di lingua, impostazioni di privacy, ecc…).
+The preferences management API will allow citizens to centrally manage all the information associated with their digital citizen profile. These information makes it possible to create personalized digital services (communication channels, language preference, privacy settings, etc...).
 
-Le API di comunicazione forniscono un unico canale che la Pubblica Amministrazione può usare per inviare comunicazioni, avvisi e scadenze al cittadino. Questo sistema di comunicazione è a sua volta integrato con l’API di gestione delle preferenze, per permettere ai servizi di comunicare con i cittadini sulla base delle informazioni di preferenza.
+The communication APIs provide a single channel that the Public Administration can use to send communications, notices and deadlines to the citizen. This communication system is in turn integrated with the preferences management API, to allow services to communicate with citizens on the basis of preference information.
 
-* [Utilizzo delle API](https://developer.io.italia.it/openapi.html){:target="_blank"}
-* [Repository GitHub](https://github.com/pagopa/io-app){:target="_blank"}
-* [Come contribuire](https://github.com/pagopa/io/blob/master/CONTRIBUTING.it.md){:target="_blank"}
+* [Use of the APIs](https://developer.io.italia.it/openapi.html){:target="_blank"}
+* [GitHub Repository](https://github.com/pagopa/io-app){:target="_blank"}
+* [How to contribute](https://github.com/pagopa/io/blob/master/CONTRIBUTING.it.md){:target="_blank"}
 
-Per gli sviluppatori è aperto il canale [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X){:target="_blank"} sullo [Slack di Developers Italia](https://slack.developers.italia.it){:target="_blank"}
+The [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X){:target="_blank"} channel is open for developers on [Developers Italia's Slack](https://slack.developers.italia.it){:target="_blank"}
 
 ## Canali
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/progetto-io/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/CJCJU0U3V" target="_blank"><i class="it-comment" /> Dialoga su Slack (#io-pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/progetto-io/" target="_blank"><i class="it-horn" /> Join the forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/CJCJU0U3V" target="_blank"><i class="it-comment" /> Chat on Slack (#io-pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(register on Slack)</small></a>
