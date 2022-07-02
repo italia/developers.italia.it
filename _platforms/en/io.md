@@ -15,12 +15,12 @@ comingsoon: false
 layout: platform
 github_team: io
 resources:
-    - Documentazione:
+    - Documentation:
         - title: Use of the API
           icon: file
           url: https://developer.io.italia.it/openapi.html
           desc: Documentation to integrate with the IO API
-    - Codice sorgente:
+    - Source Code:
         - title: IO App Source Code
           icon: github
           url: https://github.com/pagopa/io-app
@@ -38,7 +38,7 @@ The components are reused by the administrations that provide digital services i
 
 The goal is to provide a simpler and more familiar way for the Public Administration to communicate with citizens, notify deeds, remember deadlines, share information and documents through an interface built on the citizen.
 
-## Utilizzare le API
+## Using the APIs
 
 To begin using the API you need to register on the [IO Developer](https://developer.io.italia.it/){:target="_blank"} portal. After the registration phase, you need to click on the "sign up for the digital citizenship API" button to receive the API key you will use to authenticate API calls. You will also receive an email with further instructions, including a fake fiscal code that you can use to send a test message. For more information, please refer to the [documentation to the use of the APIs](https://developer.io.italia.it/openapi.html){:target="_blank"}
 
@@ -52,7 +52,7 @@ The communication APIs provide a single channel that the Public Administration c
 
 The [#io-devel](https://developersitalia.slack.com/messages/CA70BM37X){:target="_blank"} channel is open for developers on [Developers Italia's Slack](https://slack.developers.italia.it){:target="_blank"}
 
-## Canali
+## Channels
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/progetto-io/" target="_blank"><i class="it-horn" /> Join the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/archives/CJCJU0U3V" target="_blank"><i class="it-comment" /> Chat on Slack (#io-pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(register on Slack)</small></a>
