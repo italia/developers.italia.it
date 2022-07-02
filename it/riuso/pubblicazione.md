@@ -54,9 +54,10 @@ I software open source di terze parti, ovvero non messi a riuso dalla Pubblica A
 ## PNRR: soluzioni a Catalogo
 
 Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
-    e in particolare quelli previsti dalla Missione 1, in capo al Dipartimento per la trasformazione digitale, 
-    abbiamo implementato alcuni percorsi di ricerca tematici che agevolino le Pubbliche Amministrazioni a 
-    reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/).
+e in particolare quelli previsti dalla Missione 1, in capo al Dipartimento per la trasformazione digitale, 
+abbiamo implementato alcuni percorsi di ricerca tematici che agevolino le Pubbliche Amministrazioni a 
+reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/).
+
 Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
 Codice dell'Amministrazione Digitale (Artt. 68 e 69) effettuano una _valutazione comparativa_ che dia priorità,
 nell'ordine, al software a riuso ed open source di terze parti. 
