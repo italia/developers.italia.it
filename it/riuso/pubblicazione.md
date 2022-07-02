@@ -60,7 +60,8 @@ reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da 
 
 Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
 Codice dell'Amministrazione Digitale (Artt. 68 e 69) effettuano una _valutazione comparativa_ che dia priorità,
-nell'ordine, al software a riuso ed open source di terze parti. 
+nell'ordine, al software a riuso ed open source di terze parti.
+
 Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file `publiccode.yml`, utilizzato
 per la pubblicazione delle schede di presentazione del Catalogo. Per autocertificare la propria soluzione è necessario seguire le istruzioni di seguito riportate.
 
