@@ -73,6 +73,17 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
 * "`PNRR/Beneficiari/{NOME BENEFICIARIO}`" per indicare che il software può avere come beneficiari quelli indicati. Questo valore può essere ripetuto tante volte quanto necessario.
 
   Esempio: "`PNRR/Beneficiari/Scuole`"
+  
+  I possibili nomi di beneficiari sono:
+    - "`Comuni`"
+    - "`Scuole`"
+    - "`ASL`"
+    - "`Enti Regionali`"
+    - "`Università`"
+    - "`PA Centrali`"
+    - "`Province`"
+    - "`Istituti di ricerca e AFAM`"
+    - "`Altri enti`"
 * `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. (Questo valore può essere ripetuto tante volte quanto necessario).
   
   Esempio: "`PNRR/Misura/1.2`"
