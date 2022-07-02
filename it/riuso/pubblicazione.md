@@ -70,7 +70,9 @@ per la pubblicazione delle schede di presentazione del Catalogo. Per autocertifi
 All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserire i tag:
 
 * "`PNRR`" per indicare che il software appartiene alla categoria
-* `PNRR/Beneficiari/{NOME BENEFICIARIO}` per indicare che il software può avere come beneficiari quelli indicati. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Beneficiari/Scuole`
+* "`PNRR/Beneficiari/{NOME BENEFICIARIO}`" per indicare che il software può avere come beneficiari quelli indicati. Questo valore può essere ripetuto tante volte quanto necessario.
+
+  Esempio: "`PNRR/Beneficiari/Scuole`"
 * `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. (Questo valore può essere ripetuto tante volte quanto necessario). Esempio: `PNRR/Misura/1.2`
 
 Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file `publiccode.yml` si può inserire:
