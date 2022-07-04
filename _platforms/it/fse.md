@@ -62,62 +62,54 @@ resources:
 
 ## Intro 
 
-Il nuovo FSE è l’ecosistema digitale che realizza servizi evoluti basati sul dato atomico. 
-A tale fine:
-- raccoglie i dati e documenti prodotti dalle strutture sanitarie pubbliche e private accreditate e non accreditate 
-- consente ai cittadini di accedere ai propri dati e documenti 
-- abilita i professionisti sanitari ad accedere ai dati e documenti dei cittadini
-- mette a disposizione degli Enti di ricerca una fonte dati utile per le finalità di ricerca in ambito medico e biomedico
-- permette alle Direzioni Sanitarie regionali di svolgere le proprie funzioni di prevenzione e di governo
-- consente al Ministero della Salute di avere dati utili per finalità di prevenzione, sorveglianza epidemiologica e governo.
+Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può tracciare e consultare tutta la storia della propria vita sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.
 
 **Obiettivi:**
-- Semplificare e uniformare l’accesso e l’uso dei servizi del SSN per cittadini e operatori sanitari
-- Integrare e condividere dati clinici tra professionisti e strutture sanitarie 
-- Supportare una sempre maggiore qualità e personalizzazione delle cure 
-- Creare servizi di monitoraggio e analisi dei dati a supporto dell’azione degli organi di governo del SSN
+Il Piano Nazionale di Rilancio e Resilienza (PNRR), Missione 6 Componente 2, promuove il potenziamento del Fascicolo Sanitario Elettronico (FSE) nella sua versione 2.0 al fine di garantirne la **diffusione, l’omogeneità e l’accessibilità su tutto il territorio nazionale** da parte degli assistiti e operatori sanitari.
 
-**Contenuti:**
-- Dati identificativi ed amministrativi (inclusi dati su prenotazioni, libretto sanitario, ecc)
-- Dati clinici (e documenti strutturati che li contengano (dove previsti nella prima fase di attuazione) acquisiti nelle attività di prevenzione, diagnosi e cura condotte dai professionisti sanitari sugli assistiti:
-	- Dati del Profilo Sanitario Sintetico (Patient Summary)
-	- Dati di refertazione per ogni branca
-	- Dati clinici derivanti da episodi di ricovero
-	- Dati di emergenza-urgenza (118, pronto soccorso)
-	- Dati provenienti da Cartelle Cliniche
-	- Dati del Dossier Farmaceutico
-	- Dati di vaccinazione
-	- Dati acquisiti durante campagne di screening
-	- Dati delle prescrizioni elettroniche, gestite da Sistema TS (tramite il SAC ed i SAR)
-	- Ogni altro dato clinico prodotto dai professionisti sanitari durante le attività di prevenzione, diagnosi e cura che sarà definito e standardizzato a livello nazionale in itinere
-- Dati clinici e vitali acquisiti da servizi di Telemedicina
-- Imaging
-- Patient Generated Health Data
+Secondo le Linee guida di attuazione il FSE dovrà diventare:
+il punto unico ed esclusivo di accesso per tutti i cittadini ai servizi del SSN, indipendentemente dalla regione di appartenenza; 
+un ecosistema di servizi basati sui dati per i professionisti sanitari per la diagnosi e cura dei propri assistiti e per una assistenza sempre più personalizzata sul paziente;
+uno strumento per le strutture ed istituzioni sanitarie che potranno utilizzare le informazioni cliniche per effettuare analisi di dati clinici e migliorare l'erogazione dei servizi sanitari.
 
-**Formato dei dati:**
-- HL7 FHIR
-- DICOM per le immagini diagnostiche, e DICOM-SR per i dati loro associati
 
-**Formato dei documenti:**
-- PDF/A, con HL7 CDA2 iniettato, firmato in PaDES
+Affinché ciò avvenga è necessario che l’infrastruttura tecnologica evolva per:
+rendere FSE omogeneo sul territorio nazionale per dati contenuti, servizi offerti, semplicità di utilizzo/interfaccia e portabilità;
+assicurare che i documenti che alimentano il FSE siano effettivamente prodotti secondo gli standard nazionali;
+rendere più efficace l’interoperabilità tra fascicoli regionali; 
+realizzare una effettiva gestione del dato da affiancare a quella del documento;
+garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
 
-**Architettura**
-- Adozione di un modello che garantisca servizi uniformi su tutto il paese favorendo la standardizzazione dei processi di interoperabilità all’interno delle regioni e a livello nazionale
-- Utilizzo del profilo IHE XDS.b per garantire l’interoperabilità dei documenti
-- Utilizzo dello standard HL7 FHIR per la fruizione dei dati sanitari
+![](/assets/images/fse/arch.png)
 
-## Come contribuire
 
-### Codice della piattaforma
+Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e centrali che interoperano tra loro e con altri sistemi secondo modelli di interoperabilità standard [(ModI definito da AgID)](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/01_Pattern%20interazione/01_introduzione.html).
 
-È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull'[organizzazione GitHub del Ministero della Salute](https://github.com/ministero-salute). 
+![](/assets/images/fse/FSE2.png)
 
-### Aiutaci a migliorare
+Per consentire una gestione più efficace del dato vengono introdotti due nuovi elementi infrastrutturali:
+**il Gateway**, che ha il compito di verificare la coerenza nell’applicazione degli standard, sia per dati che per documenti, 
+**l’Ecosistema Dati Sanitari (EDS)** che raccoglie, gestisce e rende fruibile il dato mediante servizi REST.  L’EDS, mediante servizi di sottoscrizione e sincronizzazione può alimentare repository regionali con i dati di pertinenza delle regioni nelle modalità indicate dalla norma. L’EDS infine realizza le funzionalità di monitoraggio di alimentazione e di utilizzo del sistema FSE da parte del cittadino e degli operatori sanitari.
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell'utilizzo della piattaforma attraverso[il canale Issue tracker](https://github.com/ministero-salute/fse/issues).
+**Standard per dati e documenti**
+Le Linee guida di attuazione del Fascicolo Sanitario elettronico prevedono che nel FSE 2.0 confluiscano:
+dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle strutture e archiviati nel Data Repository Centrale (e opzionalmente presso data repository locali)
+documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
+Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/hl7it_publications).
+
+Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0dV5dJFiTj9ZaTrZXPSzn-hfuA/edit#heading=h.30j0zll) fornisce maggiori dettagli sull’architettura del Fascicolo 2.0 e sulle interazioni tra gli elementi che la compongono. Il documento [Piattaforma di telemedicina ed Ecosistema FSE]( https://docs.google.com/document/d/10JPeUUiGEKIbLBt0uMrqJYgJLR7M7eAj/edit#heading=h.gjdgxs ) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
+
+
+## Codice della piattaforma
+
+È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute] ( https://github.com/ministero-salute/it-fse-landing).
+
+## Aiutaci a migliorare
+
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker] (https://github.com/ministero-salute/it-fse/issues).
 
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/fse/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori SDK (#FSE)</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
