@@ -2,7 +2,7 @@
 layout: post
 title: "Verso un’Europa digitale più autonoma e sovrana"
 subtitle: "Pubblicata la prima relazione del gruppo di lavoro sui digital commons. Il Dipartimento per la trasformazione digitale partecipa con Developers Italia nel team italiano"
-date: 2022-06-29 14:00:00 +0200
+date: 2022-07-01 18:00:00 +0200
 tags: developers designers opensource digitalcommons
 categories: news
 author: Francesco Pognante
