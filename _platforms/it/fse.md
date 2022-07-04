@@ -97,16 +97,16 @@ dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle st
 documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
 Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/hl7it_publications).
 
-Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0dV5dJFiTj9ZaTrZXPSzn-hfuA/edit#heading=h.30j0zll) fornisce maggiori dettagli sull’architettura del Fascicolo 2.0 e sulle interazioni tra gli elementi che la compongono. Il documento [Piattaforma di telemedicina ed Ecosistema FSE]( https://docs.google.com/document/d/10JPeUUiGEKIbLBt0uMrqJYgJLR7M7eAj/edit#heading=h.gjdgxs ) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
+Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0dV5dJFiTj9ZaTrZXPSzn-hfuA/edit#heading=h.30j0zll) fornisce maggiori dettagli sull’architettura del Fascicolo 2.0 e sulle interazioni tra gli elementi che la compongono. Il documento [Piattaforma di telemedicina ed Ecosistema FSE](https://docs.google.com/document/d/10JPeUUiGEKIbLBt0uMrqJYgJLR7M7eAj/edit#heading=h.gjdgxs) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
 
 
 ## Codice della piattaforma
 
-È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute] ( https://github.com/ministero-salute/it-fse-landing).
+È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute](https://github.com/ministero-salute/it-fse-landing).
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker] (https://github.com/ministero-salute/it-fse/issues).
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker](https://github.com/ministero-salute/it-fse/issues).
 
 ## Canali
 
