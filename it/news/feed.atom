@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-07-04T06:03:08+00:00</updated>
+  <updated>2022-07-04T09:54:51+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,50 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/07/01/verso-europa-digitale-sovrana-autonoma</id>
+    <title>Verso un’Europa digitale più autonoma e sovrana</title>
+    <updated>2022-07-01T16:00:00+00:00</updated>
+
+    <summary>Pubblicata la prima relazione del gruppo di lavoro sui digital commons. Il Dipartimento per la trasformazione digitale partecipa con Developers Italia nel team italiano </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/07/01/verso-europa-digitale-sovrana-autonoma">&lt;p&gt;I componenti del Gruppo di lavoro sui &lt;em&gt;digital commons&lt;/em&gt; (&lt;a href=&quot;https://www.diplomatie.gouv.fr/IMG/pdf/declaration_of_the_presidency_european_initiative_for_digital_commons_cle894d85.pdf&quot;&gt;task force on digital commons&lt;/a&gt;), si sono riuniti in occasione dell’Assemblea Digitale che si è tenuta a &lt;strong&gt;Tolosa il 21 e 22 giugno&lt;/strong&gt;, sotto la guida della Presidenza di turno francese del Consiglio dell’Ue. In occasione dell’evento, è stato presentata &lt;strong&gt;la prima relazione&lt;/strong&gt;, disponibile in rete in lingua inglese: &lt;a href=&quot;https://www.diplomatie.gouv.fr/IMG/pdf/report_of_the_european_working_team_on_digital_commons_digital_assembly_june_2022_wnetherlands_cle843dbf.pdf&quot;&gt;Towards a sovereign digital infrastructure of commons (PDF)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;La Presidenza francese ha costituito il Gruppo di lavoro nel febbraio 2022 nell’ambito della conferenza &lt;a href=&quot;https://presidence-francaise.consilium.europa.eu/en/news/the-building-europe-s-digital-sovereignty-conference/&quot;&gt;“Building Europe’s Digital Sovereignty”&lt;/a&gt;, con il fine di creare un incubatore europeo sui digital commons, promuovere opportunità di finanziamento dedicate e fornire assistenza agli Stati Membri sulle tematiche connesse. L’iniziativa ha il fine ultimo di contribuire efficacemente allo sviluppo e &lt;strong&gt;mettere a frutto il potenziale dei &lt;em&gt;digital commons&lt;/em&gt; e dell’&lt;em&gt;open source&lt;/em&gt;&lt;/strong&gt;. Il Dipartimento per la trasformazione digitale porta l’esperienza di Developers Italia nel team italiano che ha lavorato al rapporto, composto dal Dipartimento per la trasformazione digitale, Ministero dello Sviluppo Economico e Ministero degli affari esteri e della cooperazione internazionale.&lt;/p&gt;
+
+&lt;p&gt;I &lt;em&gt;digital commons&lt;/em&gt; sono degli asset digitali prodotti da una comunità secondo regole condivise, come ad esempio Wikipedia e GNU/Linux. Essi sono definiti commons in quanto mettono a disposizione di tutti risorse collettive, con il fine ultimo di essere un patrimonio a disposizione dell’umanità. Possono essere copiati e migliorati da tutti, senza limitazione e si propongono come alternative alle risorse proprietarie delle grandi multinazionali del digitale. I digital commons rappresentano dunque &lt;strong&gt;una leva essenziale per affermare e rafforzare l’indipendenza dell’Unione Europea&lt;/strong&gt; e dei suoi membri dal punto di vista tecnologico ed economico, fornendole strumenti di avanguardia per affrontare le sfide digitali. Inoltre, come stabilito dallo &lt;a href=&quot;https://innovazione.gov.it/notizie/articoli/il-valore-dell-open-source-per-un-europa-digitale-indipendente-e-competitiva/&quot;&gt;studio della Commissione Europea del Settembre 2021&lt;/a&gt;, un investimento importante dell’Unione Europea in queste tecnologie può essere un volano per l’economia del nostro continente.&lt;/p&gt;
+
+&lt;p&gt;La relazione sui &lt;em&gt;digital commons&lt;/em&gt; è il primo risultato del lavoro dei 19 paesi che compongono il Gruppo di lavoro: Germania, Belgio, Croazia, Danimarca, Spagna, Estonia, Finlandia, Irlanda, Italia, Lettonia, Lussemburgo, Malta, Paesi Bassi, Polonia, Portogallo, Repubblica Ceca, Slovenia, Svizzera, e la Commissione europea. Presenta una serie di raccomandazioni in materia di &lt;em&gt;digital commons&lt;/em&gt; e &lt;em&gt;open source&lt;/em&gt;, proposte alla Commissione come primo passo in vista di azioni politiche direttamente indirizzate alla creazione di un robusto ecosistema open source europeo. Tra queste: la creazione di uno sportello unico dedicato ai finanziamenti e aiuti pubblici in materia, la creazione di una fondazione europea per i &lt;em&gt;digital commons&lt;/em&gt; e l’adozione del principio “digital common first” all’interno delle Pubbliche Amministrazioni. L’applicazione del principio permetterà di accordare una preferenza legale al software &lt;em&gt;open&lt;/em&gt; e adottare i principi open source e open data nello sviluppo di nuovi sistemi.&lt;/p&gt;
+
+&lt;h3 id=&quot;scopri-di-più-e-partecipa&quot;&gt;Scopri di più e partecipa&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.diplomatie.gouv.fr/IMG/pdf/report_of_the_european_working_team_on_digital_commons_digital_assembly_june_2022_wnetherlands_cle843dbf.pdf&quot;&gt;Scarica la relazione&lt;/a&gt; (disponibile in PDF solo in lingua inglese).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Vai sul sito del &lt;a href=&quot;https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/diplomatie-numerique/actualites-et-evenements/article/le-rapport-sur-les-communs-numeriques-un-levier-essentiel-pour-la-souverainete&quot;&gt;Governo francese&lt;/a&gt; (solo in lingua francese)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Partecipa alla discussione su &lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum Italia&lt;/a&gt; o su &lt;a href=&quot;https://slack.developers.italia.it&quot;&gt;Slack&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content>
+    <published>2022-07-01T16:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="opensource" />
+    
+    <category term="digitalcommons" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/06/29/guida-sviluppo-software-libero-documento-continuo-miglioramento</id>
     <title>Guida allo sviluppo e gestione di software libero: un documento in continuo miglioramento</title>
