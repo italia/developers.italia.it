@@ -23,4 +23,4 @@ La relazione sui *digital commons* è il primo risultato del lavoro dei 19 paesi
 
 - Vai sul sito del [Governo francese](https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/diplomatie-numerique/actualites-et-evenements/article/le-rapport-sur-les-communs-numeriques-un-levier-essentiel-pour-la-souverainete) (solo in lingua francese)
 
-- Partecipa alla discussione su [Forum Italia](https://forum.italia.it/t/benvenuti-nel-forum-di-developers-italia/8) o su [Slack](https://developersitalia.slack.com/ssb/redirect)
+- Partecipa alla discussione su [Forum Italia](https://forum.italia.it/) o su [Slack](https://slack.developers.italia.it)
