@@ -144,9 +144,9 @@ it:
     banner_joinus_action: Vieni su Slack
     banner_PNRR_h2: |
       Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
-      e Resilienza (PNRR) di <a href="https://padigitale2026.gov.it">PA Digitale 2026</a>
-    banner_PNRR_h1: Software PNRR
-    banner_PNRR_action: Vedi il software utile al PNRR
+      e Resilienza (PNRR) e agli avvisi di <a href="https://padigitale2026.gov.it">PA Digitale 2026</a>
+    banner_PNRR_h1: Selezione dedicata al PNRR
+    banner_PNRR_action: Vedi una selezione dedicata al PNRR
     how_to_use: Come lo uso
 
     status_maintainer: maintainer
@@ -208,6 +208,8 @@ it:
 
     software:
       catalogue: Catalogo software
+      cataloguePNRR: Selezione dedicata al PNRR
+      cataloguePNRRdisclaimer: Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate, secondo quanto dichiarato da chi lo mette a disposizione. <a href="/it/come-partecipo">Scopri di più</a> su come partecipare
       load_more: Carica altri
       searched_for: Hai cercato
       software_open: Software open source
@@ -625,6 +627,8 @@ en:
 
     software:
       catalogue: Software catalogue
+      cataloguePNRR: PNRR selection
+      cataloguePNRRdisclaimer: This software may help to fulfil the PNRR measures' objectives. This possibility is declared by the maintainer. <a href="/en/how-to-participate">Find out more</a> on how to participate
       load_more: Load more
       searched_for: You have searched for
       software_open: Open source software
