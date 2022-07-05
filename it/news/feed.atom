@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-07-05T06:02:44+00:00</updated>
+  <updated>2022-07-05T10:19:02+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -629,7 +629,7 @@ Tutte le persone interessate a lasciare il segno nel design system del Paese pos
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=flnYdZR5-9w&quot;&gt;Guarda il video&lt;/a&gt; della community call su YouTube&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-03-18/090222_Community_Call_Designers_Italia.pdf&quot;&gt;Scarica la presentazione della community call&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-03-18/090322_Community_Call.pdf&quot;&gt;Scarica la presentazione della community call&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://innovazione.gov.it/progetti/attivita-internazionali/#unione-europea&quot;&gt;Scopri di più&lt;/a&gt; sulla Strategia Digitale Europea e sui relativi indici di digitalizzazione sul sito del Dipartimento per la trasformazione digitale.&lt;/strong&gt;&lt;/p&gt;</content>
     <published>2022-03-18T08:00:00+00:00</published>
