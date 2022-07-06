@@ -100,6 +100,6 @@ Per esempio, per dichiarare che un software può essere utile per rispondere all
           - PNRR/Misura/1.4.1
           - PNRR/Beneficiari/Comuni
 
-Il Catalogo presenta quindi [una nuova voce di ricerca "PNRR"](/it/search?pnrr=1), che permette di filtrare le soluzioni per ciascuno dei tre elementi sopra riportati.
+Il Catalogo presenta [un filtro di ricerca "PNRR"](/it/search?pnrr=1), che permette di trovare le soluzioni per ciascuno dei tre elementi sopra riportati.
 
 
