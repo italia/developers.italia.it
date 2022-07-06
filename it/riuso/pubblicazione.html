@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202207061616" rel="stylesheet">
+  <link href="/dist/main.css?202207061622" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -692,6 +692,66 @@
   <li>compilare ed includere il file <code class="language-plaintext highlighter-rouge">publiccode.yml</code> nel repositorio (lasciando vuoto il campo <code class="language-plaintext highlighter-rouge">codiceIPA</code>);</li>
   <li>aggiungere l’URL del repositorio nella <a href="https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml">lista</a> aprendo una pull request su GitHub.</li>
 </ol>
+
+<h2 id="pnrr-soluzioni-a-catalogo">PNRR: soluzioni a Catalogo</h2>
+
+<p>Nell’ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
+e in particolare quelli previsti dalla Missione 1, Componente 1 in capo al Dipartimento per la trasformazione digitale, 
+abbiamo implementato alcuni percorsi di ricerca tematici, che agevolino le Pubbliche Amministrazioni a 
+reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da <a href="https://padigitale2026.gov.it/">PA Digitale 2026</a>.</p>
+
+<p>Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
+Codice dell’Amministrazione Digitale (Artt. <a href="https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html">68</a> 
+e <a href="https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html">69</a> effettuando una <strong>valutazione comparativa</strong> che dia priorità,
+nell’ordine, al software a riuso ed open source di terze parti.</p>
+
+<p>Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file <code class="language-plaintext highlighter-rouge">publiccode.yml</code>, utilizzato
+per la pubblicazione delle schede di presentazione del Catalogo.</p>
+
+<p>Per autocertificare la propria soluzione è necessario seguire le istruzioni di seguito riportate.</p>
+
+<h3 id="istruzioni">Istruzioni</h3>
+
+<p>All’interno del file <code class="language-plaintext highlighter-rouge">publiccode.yml</code>, nel campo <code class="language-plaintext highlighter-rouge">features</code> si chiede di inserire i seguenti tag:</p>
+
+<ul>
+  <li>“<code class="language-plaintext highlighter-rouge">PNRR</code>” per indicare che il software appartiene alla categoria</li>
+  <li>
+    <p>“<code class="language-plaintext highlighter-rouge">PNRR/Beneficiari/{NOME BENEFICIARIO}</code>” per indicare che il software può avere come beneficiari quelli indicati. Questo valore può essere ripetuto tante volte quanto necessario.</p>
+
+    <p>Esempio: “<code class="language-plaintext highlighter-rouge">PNRR/Beneficiari/Scuole</code>”</p>
+
+    <p>I possibili nomi di beneficiari sono:</p>
+    <ul>
+      <li>“<code class="language-plaintext highlighter-rouge">Comuni</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Scuole</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">ASL</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Enti Regionali</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Università</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">PA Centrali</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Province</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Istituti di ricerca e AFAM</code>”</li>
+      <li>“<code class="language-plaintext highlighter-rouge">Altri enti</code>”</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">PNRR/Misura/{NUMERO MISURA}</code> per indicare che il software può essere utile per rispondere alla misura numero <code class="language-plaintext highlighter-rouge">{NUMERO MISURA}</code>. Questo valore può essere ripetuto tante volte quanto necessario.</p>
+
+    <p>Esempio: “<code class="language-plaintext highlighter-rouge">PNRR/Misura/1.2</code>”</p>
+  </li>
+</ul>
+
+<p>Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file <code class="language-plaintext highlighter-rouge">publiccode.yml</code> si può inserire:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>description:
+  it:
+    features:
+      - PNRR
+      - PNRR/Misura/1.4.1
+      - PNRR/Beneficiari/Comuni
+</code></pre></div></div>
+
+<p>Il Catalogo presenta <a href="/it/search?pnrr=1">un filtro di ricerca “PNRR”</a>, che permette di trovare le soluzioni per ciascuno dei tre elementi sopra riportati.</p>
 
 
             </div>
