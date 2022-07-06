@@ -142,6 +142,11 @@ it:
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
     banner_joinus_action: Vieni su Slack
+    banner_PNRR_h2: |
+      Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
+      e Resilienza (PNRR) e agli avvisi pubblicati da <a href="https://padigitale2026.gov.it">PA digitale 2026</a>
+    banner_PNRR_h1: Selezione dedicata al PNRR
+    banner_PNRR_action: Vedi una selezione dedicata al PNRR
     how_to_use: Come lo uso
 
     status_maintainer: maintainer
@@ -203,6 +208,8 @@ it:
 
     software:
       catalogue: Catalogo software
+      cataloguePNRR: Selezione dedicata al PNRR
+      cataloguePNRRdisclaimer: Soluzioni rispondenti ai requisiti indicati negli avvisi di [PA Digitale 2026](https://padigitale2026.gov.it/), dichiarate su base volontaria e autocertificata. <a href="/it/come-partecipo#pnrr-soluzioni-a-catalogo">Scopri di più</a>.
       load_more: Carica altri
       searched_for: Hai cercato
       software_open: Software open source
@@ -218,6 +225,9 @@ it:
       sort_by_alphabetic: Alfabetico
       categories: Categorie
       intended_audience: Ambito di applicazione
+      pnrr: Software utile al Piano Nazionale di Ripresa e Resilienza (PNRR)
+      pnrr_targets: Beneficiari PNRR
+      pnrr_measures: Misure PNRR
       results: risultati
       no_results: Nessun risultato trovato
       retry_search: La ricerca non ha prodotto nessun risultato. Prova un'altra chiave di ricerca.
@@ -554,7 +564,9 @@ en:
     banner_joinus_h1: Join our community!
     banner_joinus_action: Chat on Slack now
     how_to_use: How do I use it
-
+    banner_PNRR_h2: Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA digitale 2026
+    banner_PNRR_h1: Software PNRR
+    banner_PNRR_action: Vedi il catalogo PNRR
     status_member_of_board: member of board
     status_maintainer: maintainer
 
@@ -615,6 +627,8 @@ en:
 
     software:
       catalogue: Software catalogue
+      cataloguePNRR: PNRR selection
+      cataloguePNRRdisclaimer: This software may help to fulfil the PNRR measures' objectives. This possibility is declared by the maintainer. <a href="/en/how-to-participate">Find out more</a> on how to participate
       load_more: Load more
       searched_for: You have searched for
       software_open: Open source software
@@ -630,6 +644,9 @@ en:
       filters: Filters
       categories: Categories
       intended_audience: Intended Audience
+      pnrr: Software for the Italian Recovery and Resilience Plan (PNRR, RRP)
+      pnrr_targets: PNRR targets
+      pnrr_measures: PNRR measures
       results: results
       no_results: No results found
       retry_search: The search did not match any results. Try searching other terms.

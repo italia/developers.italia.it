@@ -3,7 +3,7 @@ import { lang } from '../utils/l10n.js';
 
 export const buildFilter = (filters) => {
   let { intendedAudiences, categories, developmentStatuses } = filters;
-  const { pnrr, pnrrTarget, pnrrMeasure } = filters;
+  const { pnrr, pnrrTargets, pnrrMeasures } = filters;
 
   intendedAudiences = Array.isArray(intendedAudiences) ? intendedAudiences : [];
   categories = Array.isArray(categories) ? categories : [];
@@ -13,26 +13,29 @@ export const buildFilter = (filters) => {
       term: { 'publiccode.intendedAudience.scope': filterValue },
     })),
     ...categories.map((filterValue) => ({ term: { 'publiccode.categories': filterValue } })),
+
+    // We want exact match here and case sensitivity because PNRR features are basically
+    // tags we came up with to mark certain type of software (the ones that help Public administrations
+    // with the PNRR - https://www.governo.it/sites/governo.it/files/PNRR.pdf) - hence the
+    // keyword search.
+
     ...developmentStatuses.map((filterValue) => ({
       term: { 'publiccode.developmentStatus': filterValue },
     })),
   ];
 
+  if (pnrrTargets && pnrrTargets !== 'Tutti') {
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTargets}` } });
+  }
+
+  if (pnrrMeasures && pnrrMeasures !== 'Tutte') {
+    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasures}` } });
+  }
+
   if (pnrr) {
     // Not a keyword because we want match "PNRR/Beneficiari" or "PNRR/Misure" even if
     // the feature "PNRR" is not in the publiccode.yml file.
     ret.push({ term: { [`publiccode.description.${lang}.features`]: 'pnrr' } });
-  }
-
-  if (pnrrTarget !== null) {
-    // We want exact match here and case sensitivity because PNRR features are basically
-    // tags we came up with to mark certain type of software (the ones that help Public administrations
-    // with the PNRR - https://www.governo.it/sites/governo.it/files/PNRR.pdf) - hence the
-    // keyword search.
-    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Beneficiari/${pnrrTarget}` } });
-  }
-  if (pnrrMeasure !== null) {
-    ret.push({ term: { [`publiccode.description.${lang}.features.keyword`]: `PNRR/Misura/${pnrrMeasure}` } });
   }
 
   return ret;
