@@ -22,9 +22,20 @@ export const CatalogueHeader = React.memo(() => {
 
   return (
     <div className="text-center">
-      { filterPNRR?<h1 className={classes.header}>{l10NLabels.software.cataloguePNRR}</h1>:<h1 className={classes.header}>{l10NLabels.software.catalogue}</h1> }
-      { filterPNRR && <div className="col-10 mx-auto text-center mb-3"><i>Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate,
-          secondo quanto dichiarato da chi lo mette a disposizione. <a href="/it/come-partecipo">Scopri di più</a> su come partecipare</i></div>}
+      {filterPNRR ? (
+        <h1 className={classes.header}>{l10NLabels.software.cataloguePNRR}</h1>
+      ) : (
+        <h1 className={classes.header}>{l10NLabels.software.catalogue}</h1>
+      )}
+      {filterPNRR && (
+        <div className="col-10 mx-auto text-center mb-3">
+          <i>
+            Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate, secondo quanto
+            dichiarato da chi lo mette a disposizione. <a href="/it/come-partecipo">Scopri di più</a> su come
+            partecipare
+          </i>
+        </div>
+      )}
 
       <div className="col-10 mx-auto text-center mb-3">
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
