@@ -19,6 +19,6 @@ L’incontro si è chiuso con le domande dei partecipanti e con una call to acti
 
 I community lab per questa stagione terminano qui, ci prendiamo una meritata vacanza. Ma è solo un arrivederci, ci rivediamo dopo l’estate!
 
-Nel frattempo, [guarda la registrazione](https://www.youtube.com/watch?v=SwbP7DA9eR0) di questo lab e [scarica la presentazione in PDF](/assets/images/posts/2022-07-07/290622_Community_lab.pdf).
+Nel frattempo, **[guarda la registrazione](https://www.youtube.com/watch?v=SwbP7DA9eR0)** di questo lab e **[scarica la presentazione in PDF](/assets/images/posts/2022-07-07/290622_Community_lab.pdf)**.
 
 Per ricevere i prossimi aggiornamenti resta in contatto con noi su [Slack Developers](https://slack.developers.italia.it/), iscriviti alla nostra [mailing list](https://unisciti.developers.italia.it) e continua a seguirci sugli account Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
