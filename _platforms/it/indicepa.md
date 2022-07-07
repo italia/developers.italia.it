@@ -59,6 +59,6 @@ delle Amministrazioni pubbliche (BDAP) per il controllo e monitoraggio degli and
 
 ## Web Service
 
-Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php).
+Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/ipa-portale/dati-statistiche/web-service/richiedi-authorization-id).
 Occorre selezionare la voce del menu Richiedi Authorization ID e compilare la form dedicata.
-Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://www.indicepa.gov.it/documentale/n-webservices.php).
+Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://indicepa.gov.it/ipa-portale/documenti).
