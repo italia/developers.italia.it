@@ -25,7 +25,7 @@ resources:
       desc: Documentazione alla piattaforma. La documentazione include sia documenti utente che documentazione più tecnica per l'utlizzo dei webservices e l'integrazione da linguaggio di programmazione con la piattaforma.
   - Consulta i dati:
     - title: Open Data
-      url: https://indicepa.gov.it/ipa-dati/
+      url: https://indicepa.gov.it/ipa-dati
       icon: file
       desc: Accesso ai dati della piattaforma in formato Open Data. L'iPA aderisce alla filosofia dell'open data e avvia un percorso basato sull'accesso ai dati pubblici senza restrizioni. I dati sono organizzati in formati elettronici standard e aperti, accessibili qui.
     - title: Web Services
