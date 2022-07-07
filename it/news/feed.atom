@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-07-07T06:02:52+00:00</updated>
+  <updated>2022-07-07T09:00:35+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,40 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/07/07/perche-container-sono-strumenti-utili-sviluppo-servizi.pubblici</id>
+    <title>Perché i container sono strumenti utili nello sviluppo di servizi pubblici digitali</title>
+    <updated>2022-07-07T06:00:00+00:00</updated>
+
+    <summary>Scopri tutto sul Community lab del 29 giugno: leggi la sintesi e guarda il video </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/07/07/perche-container-sono-strumenti-utili-sviluppo-servizi.pubblici">&lt;p&gt;Il 29 giugno si è tenuto l’ultimo appuntamento stagionale con &lt;a href=&quot;https://innovazione.gov.it/notizie/articoli/developers-italia-e-designers-italia-le-persone-al-centro-della-community/&quot;&gt;i nostri laboratori sui servizi pubblici digitali&lt;/a&gt;. Abbiamo chiuso in bellezza, grazie al prezioso intervento di Fabio Bonelli, software engineer del Dipartimento per la trasformazione digitale.&lt;/p&gt;
+
+&lt;p&gt;Fabio ha illustrato i vantaggi dei container per lo sviluppo nell’ambito dei servizi pubblici, che contribuiscono a ridurre i problemi dati dalle differenze di ambienti, stanno alla base dei processi di &lt;em&gt;Continuous Integration e testing&lt;/em&gt; e godono di un grande ecosistema in continua evoluzione.&lt;/p&gt;
+
+&lt;p&gt;Come da tradizione nei nostri lab, Fabio ci ha portato velocemente dalla teoria alla pratica mostrandoci una demo di un container, usando lo strumento Docker e visualizzandone le principali caratteristiche. Insieme a lui, abbiamo usato un container già pronto, ne abbiamo creato uno nuovo e abbiamo infine combinato assieme più container.&lt;/p&gt;
+
+&lt;p&gt;L’incontro si è chiuso con le domande dei partecipanti e con una call to action per tutti: Installa Docker o Podman e… sperimenta: &lt;a href=&quot;https://github.com/bfabio/containers&quot;&gt;https://github.com/bfabio/containers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I community lab per questa stagione terminano qui, ci prendiamo una meritata vacanza. Ma è solo un arrivederci, ci rivediamo dopo l’estate!&lt;/p&gt;
+
+&lt;p&gt;Nel frattempo, &lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=SwbP7DA9eR0&quot;&gt;guarda la registrazione&lt;/a&gt;&lt;/strong&gt; di questo lab e &lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2022-07-07/290622_Community_lab.pdf&quot;&gt;scarica la presentazione in PDF&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per ricevere i prossimi aggiornamenti resta in contatto con noi su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt;, iscriviti alla nostra &lt;a href=&quot;https://unisciti.developers.italia.it&quot;&gt;mailing list&lt;/a&gt; e continua a seguirci sugli account Twitter di &lt;a href=&quot;https://twitter.com/developersITA&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://twitter.com/DesignersITA&quot;&gt;Designers Italia&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-07-07T06:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="container" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/07/01/verso-europa-digitale-sovrana-autonoma</id>
     <title>Verso un’Europa digitale più autonoma e sovrana</title>
