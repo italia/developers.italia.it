@@ -21,4 +21,4 @@ I community lab per questa stagione terminano qui, ci prendiamo una meritata vac
 
 Nel frattempo, [guarda la registrazione](https://www.youtube.com/watch?v=SwbP7DA9eR0) di questo lab e scarica la presentazione in PDF.
 
-Per ricevere i prossimi aggiornamenti resta in contatto con noi su [Slack Developers](https://slack.developers.italia.it/)-, iscriviti alla nostra [mailing list](https://www.google.com/url?q=https://unisciti.developers.italia.it&sa=D&source=docs&ust=1657178342195309&usg=AOvVaw0nzfBX6MfvZfFSrdDIEyLU) e continua a seguirci sugli account Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
+Per ricevere i prossimi aggiornamenti resta in contatto con noi su [Slack Developers](https://slack.developers.italia.it/)-, iscriviti alla nostra [mailing list](https://unisciti.developers.italia.it) e continua a seguirci sugli account Twitter di [Developers Italia](https://twitter.com/developersITA) e [Designers Italia](https://twitter.com/DesignersITA).
