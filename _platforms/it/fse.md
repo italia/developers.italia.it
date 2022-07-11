@@ -102,11 +102,11 @@ Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0d
 
 ## Codice della piattaforma
 
-È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute] ( https://github.com/ministero-salute/it-fse-landing).
+È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute](https://github.com/ministero-salute/it-fse-landing).
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker] (https://github.com/ministero-salute/it-fse/issues).
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker] ([https://github.com/ministero-salute/it-fse-support/issues](https://github.com/ministero-salute/it-fse-support/issues).
 
 ## Canali
 
