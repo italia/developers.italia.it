@@ -31,8 +31,8 @@ export const CatalogueHeader = React.memo(() => {
         <div className="col-10 mx-auto text-center mb-3">
           <i>
             Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate, secondo quanto
-            dichiarato da chi lo mette a disposizione. <a href="/it/come-partecipo">Scopri di più</a> su come
-            partecipare
+            dichiarato da chi lo mette a disposizione.{' '}
+            <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo">Scopri di più</a>.
           </i>
         </div>
       )}
