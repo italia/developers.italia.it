@@ -209,7 +209,6 @@ it:
     software:
       catalogue: Catalogo software
       cataloguePNRR: Selezione dedicata al PNRR
-      cataloguePNRRdisclaimer: Soluzioni rispondenti ai requisiti indicati negli avvisi di [PA Digitale 2026](https://padigitale2026.gov.it/), dichiarate su base volontaria e autocertificata. <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo">Scopri di più</a>.
       load_more: Carica altri
       searched_for: Hai cercato
       software_open: Software open source
