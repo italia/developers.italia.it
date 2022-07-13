@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202207121403" rel="stylesheet">
+  <link href="/dist/main.css?202207130603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -698,7 +698,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 81%</p>
           
-          <div id="softwareChart" data-vitality='[81,87,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,91,81,81,81,81,81,81,81,81,91,81,81,81,81]'>
+          <div id="softwareChart" data-vitality='[87,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,81,91,81,81,81,81,81,81,81,81,91,81,81,81,81,81]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -791,25 +791,25 @@
           <div class="function-list">
             
             
-            <p> Implementazione delle specifiche di interconnessione a pagoPA </p>
+            <p> PNRR </p>
             
-            <p> Supporto completo dei modelli di pagamento ad iniziativa Ente o PSP </p>
+            <p> PNRR/Misura/1.1.4 </p>
             
-            <p> Stampa degli Avvisi di Pagamento pagoPA anche per pagamenti rateizzati o in forma ridotta </p>
+            <p> PNRR/Beneficiari/Comuni </p>
             
-            <p> Notifica email per Avvisi di Pagamento pagoPA, Ricevute di Pagamento e promemoria di scadenza </p>
+            <p> PNRR/Beneficiari/Scuole </p>
             
-            <p> Integrazione al Backend IO per l&#39;avvisatura digitale </p>
+            <p> PNRR/Beneficiari/ASL </p>
             
-            <p> Cruscotto di monitoraggio (Tavolo Operativo) conforme ai requisiti pagoPA </p>
+            <p> PNRR/Beneficiari/Enti Regionali </p>
             
-            <p> Servizi REST di pagamento e consultazione della posizione debitoria </p>
+            <p> PNRR/Beneficiari/Università </p>
             
-            <p> Servizi REST di gestione pendenze per l&#39;integrazione di gestionali posizioni debitorie </p>
+            <p> PNRR/Beneficiari/PA Centrali </p>
             
-            <p> Servizi REST di riconciliazione pagamenti per l&#39;integrazione di verticali di contabilità </p>
+            <p> PNRR/Beneficiari/Province </p>
             
-            <p> Profilazione degli operatori di cruscotto </p>
+            <p> PNRR/Beneficiari/Istituti di ricerca e AFAM </p>
             
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -819,6 +819,33 @@
               </a>
             </p>
             <div class="collapse" id="otherFeature">
+              
+              <p> PNRR/Beneficiari/Altri enti </p>
+              
+              <p> Implementazione delle specifiche di interconnessione a pagoPA </p>
+              
+              <p> Supporto completo dei modelli di pagamento ad iniziativa Ente o PSP </p>
+              
+              <p> Stampa degli Avvisi di Pagamento pagoPA anche per pagamenti rateizzati o
+in forma ridotta </p>
+              
+              <p> Notifica email per Avvisi di Pagamento pagoPA, Ricevute di Pagamento e
+promemoria di scadenza </p>
+              
+              <p> Integrazione al Backend IO per l&#39;avvisatura digitale </p>
+              
+              <p> Cruscotto di monitoraggio (Tavolo Operativo) conforme ai requisiti
+pagoPA </p>
+              
+              <p> Servizi REST di pagamento e consultazione della posizione debitoria </p>
+              
+              <p> Servizi REST di gestione pendenze per l&#39;integrazione di gestionali
+posizioni debitorie </p>
+              
+              <p> Servizi REST di riconciliazione pagamenti per l&#39;integrazione di
+verticali di contabilità </p>
+              
+              <p> Profilazione degli operatori di cruscotto </p>
               
               <p> Plugin di integrazione ad applicativi di terze parti </p>
               
@@ -1101,7 +1128,137 @@ Italiano<br />
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o spontanei, sia ad iniziativa Ente (modelli 1 e 2) che ad iniziativa PSP (modello 3) nonché alla loro riconciliazione in tesoreria. Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo Operativo” descritti dalle specifiche AgID utilizzabile dagli operatori per monitorare il corretto funzionamento della piattaforma e degli applicativi ad essa collegati oltre a fornire i report necessari ai servizi di supporto di primo e secondo livello. GovPay mette a disposizione una suite completa di API REST per l’integrazione degli applicativi esistenti (portali di pagamento, gestionali di posizioni debitorie, applicativi di contabilità, …). Le API coprono tutte le funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in attesa (APA) ed emissione dell’avviso di pagamento, fino alla riconciliazione contabile in tesoreria delle riscossioni effettuate. Le stesse operazioni sono comunque disponibili anche sul cruscotto di gestione per gli operatori, tramite compilazione di form o file upload di tracciati record. Di seguito le funzionalita fornite dal prodotto ed individuate dal <a href="https://www.pagopa.gov.it/it/pubbliche-amministrazioni/quadro-sinottico/">quadro sinottico dei servizi</a> al quale si rimanda per una descrizione piu’ estesa. ### Servizi minimi - Gestione Archivio Pagamenti in Attesa - Integrazione con e@bollo - Modelli di pagamento ### Servizi base - Profilazione personale EC con diversi ruoli e permessi - Rateizzazione - Attualizzazione del debito - Disponibilità della ricevuta telematica - Gestione Carrello multi beneficiario multi pagatore - Gestione del giornale degli eventi ### Servizi distintivi - Servizi di quadratura del flusso di pagamenti - Integrazione con piattaforma App IO - Riconciliazione ### Servizi a valore aggiunto - Messa a disposizione dei documenti scambiati con pagoPA (RT,RPT, flussi di rendicontazione) - Scarico flussi di rendicontazione - Invio esito pagamento - Possibilità invio PEC - Avvisatura massiva - Avvisatura singola - Codifica dati per analisi pagamenti - Fascicolo del cittadino - Interoperabilità con contabilità - Interoperabilità con gestionali - Integrabilità con altri front-end ### Servizi a valore aggiunto non individuati dal quadro sinottico - Possibilità di alimentare l’archivio dei pagamenti in attesa e ottenere i corrispondenti avvisi di pagamento tramite tracciati CSV - Servizio di notifica email degli avvisi di pagamento e delle ricevute - Supporto alla gestione di pagamenti spontanei - Integrazione nativa ad applicativi terzi: MyPIVOT, SECIM, HyperSIC (APKappa)</p>
+                <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per
+l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o
+spontanei, sia ad iniziativa Ente che ad iniziativa PSP nonché alla loro
+riconciliazione in tesoreria.</p>
+
+<p>Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo
+Operativo” descritti dalle specifiche PagoPA utilizzabile dagli operatori
+per monitorare il corretto funzionamento della piattaforma e degli
+applicativi ad essa collegati oltre a fornire i report necessari ai
+servizi di supporto di primo e secondo livello. GovPay mette a
+disposizione una suite completa di API REST per l’integrazione degli
+applicativi esistenti (portali di pagamento, gestionali di posizioni
+debitorie, applicativi di contabilità, …). Le API coprono tutte le
+funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di
+vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in
+attesa (APA) ed emissione dell’avviso di pagamento, fino alla
+riconciliazione contabile in tesoreria delle riscossioni effettuate. Le
+stesse operazioni sono comunque disponibili anche sul cruscotto di
+gestione per gli operatori, tramite compilazione di form o file upload di
+tracciati record.</p>
+
+<p>Di seguito le funzionalita fornite dal prodotto ed individuate dal <a href="https://www.pagopa.gov.it/it/pubbliche-amministrazioni/quadro-sinottico/">quadro
+sinottico dei
+servizi</a>
+al quale si rimanda per una descrizione più estesa.</p>
+
+<p><strong>Servizi minimi</strong></p>
+
+<ul>
+  <li>
+    <p>Gestione Archivio Pagamenti in Attesa</p>
+  </li>
+  <li>
+    <p>Integrazione con e@bollo</p>
+  </li>
+  <li>
+    <p>Modelli di pagamento</p>
+  </li>
+</ul>
+
+<p><strong>Servizi base</strong></p>
+
+<ul>
+  <li>
+    <p>Profilazione personale EC con diversi ruoli e permessi</p>
+  </li>
+  <li>
+    <p>Rateizzazione</p>
+  </li>
+  <li>
+    <p>Attualizzazione del debito</p>
+  </li>
+  <li>
+    <p>Disponibilità della ricevuta telematica</p>
+  </li>
+  <li>
+    <p>Gestione Carrello multi beneficiario multi pagatore</p>
+  </li>
+  <li>
+    <p>Gestione del giornale degli eventi</p>
+  </li>
+</ul>
+
+<p><strong>Servizi distintivi</strong></p>
+
+<ul>
+  <li>
+    <p>Servizi di quadratura del flusso di pagamenti</p>
+  </li>
+  <li>
+    <p>Integrazione con piattaforma App IO</p>
+  </li>
+  <li>
+    <p>Riconciliazione</p>
+  </li>
+</ul>
+
+<p><strong>Servizi a valore aggiunto</strong></p>
+
+<ul>
+  <li>
+    <p>Messa a disposizione dei documenti scambiati con pagoPA (RT,RPT, flussi
+di rendicontazione)</p>
+  </li>
+  <li>
+    <p>Scarico flussi di rendicontazione</p>
+  </li>
+  <li>
+    <p>Invio esito pagamento</p>
+  </li>
+  <li>
+    <p>Possibilità invio PEC</p>
+  </li>
+  <li>
+    <p>Avvisatura massiva</p>
+  </li>
+  <li>
+    <p>Avvisatura singola</p>
+  </li>
+  <li>
+    <p>Codifica dati per analisi pagamenti</p>
+  </li>
+  <li>
+    <p>Fascicolo del cittadino</p>
+  </li>
+  <li>
+    <p>Interoperabilità con contabilità</p>
+  </li>
+  <li>
+    <p>Interoperabilità con gestionali</p>
+  </li>
+  <li>
+    <p>Integrabilità con altri front-end</p>
+  </li>
+</ul>
+
+<p><strong>Servizi a valore aggiunto non individuati dal quadro sinottico</strong></p>
+
+<ul>
+  <li>
+    <p>Possibilità di alimentare l’archivio dei pagamenti in attesa e ottenere
+i corrispondenti avvisi di pagamento tramite tracciati CSV</p>
+  </li>
+  <li>
+    <p>Servizio di notifica email degli avvisi di pagamento e delle ricevute</p>
+  </li>
+  <li>
+    <p>Integrazione nativa ad applicativi terzi: MyPIVOT, SECIM, HyperSIC
+(APKappa)</p>
+  </li>
+</ul>
 
               </div>
             </div>
