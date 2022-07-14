@@ -56,11 +56,12 @@ I software open source di terze parti, ovvero non messi a riuso dalla Pubblica A
 Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
 e in particolare quelli previsti dalla Missione 1, Componente 1 in capo al Dipartimento per la trasformazione digitale, 
 abbiamo implementato alcuni percorsi di ricerca tematici, che agevolino le Pubbliche Amministrazioni a 
-reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/).
+reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/){:target="_blank" rel="noopener noreferrer"}.
 
 Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
-Codice dell'Amministrazione Digitale (Artt. [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html) 
-e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html)) effettuando una **valutazione comparativa** che dia priorità,
+
+Codice dell'Amministrazione Digitale (Artt. [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html){:target="_blank" rel="noopener noreferrer"} 
+e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html){:target="_blank" rel="noopener noreferrer"}) effettuando una **valutazione comparativa** che dia priorità,
 nell'ordine, al software a riuso ed open source di terze parti. 
 
 Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file `publiccode.yml`, utilizzato
