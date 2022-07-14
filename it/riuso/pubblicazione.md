@@ -25,7 +25,8 @@ Il processo in sintesi:
 
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a>
+<a class="btn btn-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Registrati su Slack </a>
 
 
 ## publiccode.yml
