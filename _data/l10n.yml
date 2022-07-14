@@ -144,7 +144,7 @@ it:
     banner_joinus_action: Vieni su Slack
     banner_PNRR_h2: |
       Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
-      e Resilienza (PNRR) e agli avvisi pubblicati da <a href="https://padigitale2026.gov.it">PA digitale 2026</a>
+      e Resilienza (PNRR) e agli avvisi pubblicati da <a href="https://padigitale2026.gov.it" target="_blank" rel="noopener noreferrer">PA digitale 2026</a>
     banner_PNRR_h1: Selezione dedicata al PNRR
     banner_PNRR_action: Vedi una selezione dedicata al PNRR
     how_to_use: Come lo uso
