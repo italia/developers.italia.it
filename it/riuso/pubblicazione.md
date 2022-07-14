@@ -92,6 +92,22 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
   
   Esempio: "`PNRR/Misura/1.2`"
 
+  Le possibili misure sono:
+    - `1.1` (Infrastrutture digitali)
+    - `1.2` (Abilitazione e facilitazione migrazione al Cloud)
+    - `1.3.1` (Piattaforma Digitale Nazionale Dati)
+    - `1.3.2` (Sportello Digitale Unico)
+    - `1.4.1` (Esperienza del Cittadino nei servizi pubblici)
+    - `1.4.2` (Accessibilità)
+    - `1.4.3` (Adozione pagoPA e app IO)
+    - `1.4.4` (Adozione identità digitale)
+    - `1.4.5` (Digitalizzazione degli avvisi pubblici)
+    - `1.4.6` (MaaS)
+    - `1.5` (Cybersecurity)
+    - `1.6` (Digitalizzazione grandi amministrazioni centrali)
+    - `1.7.1` (Servizio civile digitale)
+    - `1.7.2` (Centri di facilitazione digitale)
+
 Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file `publiccode.yml` si può inserire:
 
     description:
