@@ -102,7 +102,7 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
     - `1.4.3` (Adozione pagoPA e app IO)
     - `1.4.4` (Adozione identità digitale)
     - `1.4.5` (Digitalizzazione degli avvisi pubblici)
-    - `1.4.6` (MaaS)
+    - `1.4.6` (MaaS - Mobility as a service)
     - `1.5` (Cybersecurity)
     - `1.6` (Digitalizzazione grandi amministrazioni centrali)
     - `1.7.1` (Servizio civile digitale)
