@@ -93,20 +93,20 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
   Esempio: "`PNRR/Misura/1.2`"
 
   Le possibili misure sono:
-    - `1.1` (Infrastrutture digitali)
-    - `1.2` (Abilitazione e facilitazione migrazione al Cloud)
-    - `1.3.1` (Piattaforma Digitale Nazionale Dati)
-    - `1.3.2` (Sportello Digitale Unico)
-    - `1.4.1` (Esperienza del Cittadino nei servizi pubblici)
-    - `1.4.2` (Accessibilità)
-    - `1.4.3` (Adozione pagoPA e app IO)
-    - `1.4.4` (Adozione identità digitale)
-    - `1.4.5` (Digitalizzazione degli avvisi pubblici)
-    - `1.4.6` (MaaS - Mobility as a service)
-    - `1.5` (Cybersecurity)
-    - `1.6` (Digitalizzazione grandi amministrazioni centrali)
-    - `1.7.1` (Servizio civile digitale)
-    - `1.7.2` (Centri di facilitazione digitale)
+    - "`1.1`" per Infrastrutture digitali
+    - "`1.2`" per Abilitazione e facilitazione migrazione al Cloud
+    - "`1.3.1`" per Piattaforma Digitale Nazionale Dati
+    - "`1.3.2`" per Sportello Digitale Unico
+    - "`1.4.1`" per Esperienza del Cittadino nei servizi pubblici
+    - "`1.4.2`" per Accessibilità
+    - "`1.4.3`" per Adozione pagoPA e app IO
+    - "`1.4.4`" per Adozione identità digitale
+    - "`1.4.5`" per Digitalizzazione degli avvisi pubblici
+    - "`1.4.6`" per MaaS - Mobility as a service
+    - "`1.5`" per Cybersecurity
+    - "`1.6`" per Digitalizzazione grandi amministrazioni centrali
+    - "`1.7.1`" per Servizio civile digitale
+    - "`1.7.2`" per Centri di facilitazione digitale
 
 Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file `publiccode.yml` si può inserire:
 
@@ -114,9 +114,7 @@ Per esempio, per dichiarare che un software può essere utile per rispondere all
       it:
         features:
           - PNRR
-          - PNRR/Misura/1.4.1
           - PNRR/Beneficiari/Comuni
+          - PNRR/Misura/1.4.1
 
 Il Catalogo presenta [un filtro di ricerca "PNRR"](/it/search?pnrr=1), che permette di trovare le soluzioni per ciascuno dei tre elementi sopra riportati.
-
-
