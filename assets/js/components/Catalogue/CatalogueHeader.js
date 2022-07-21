@@ -35,7 +35,7 @@ export const CatalogueHeader = React.memo(() => {
               secondo quanto dichiarato da chi lo mette a disposizione.
               <br />
               Developers Italia non manutiene direttamente, né garantisce che il software sia sufficiente a rispondere
-              alle previsioni del PNRR
+              alle previsioni del PNRR.
             </b>{' '}
             <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo" target="_blank" rel="noopener noreferrer">
               Scopri di più
@@ -47,6 +47,10 @@ export const CatalogueHeader = React.memo(() => {
 
       <div className="col-10 mx-auto text-center mb-3">
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
+      </div>
+
+      <div className="text-center">
+          <i>Developers Italia garantisce che i software del catalogo sono open source, ma non fornisce supporto o manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni.<br />Le informazioni presenti nelle schede sono fornite da chi pubblica il software.</i>
       </div>
     </div>
   );
