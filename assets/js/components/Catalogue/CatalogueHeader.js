@@ -50,7 +50,12 @@ export const CatalogueHeader = React.memo(() => {
       </div>
 
       <div className="text-center">
-          <i>Developers Italia garantisce che i software del catalogo sono open source, ma non fornisce supporto o manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni.<br />Le informazioni presenti nelle schede sono fornite da chi pubblica il software.</i>
+        <i>
+          Developers Italia garantisce che i software del catalogo sono open source, ma non fornisce supporto o
+          manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni.
+          <br />
+          Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
+        </i>
       </div>
     </div>
   );
