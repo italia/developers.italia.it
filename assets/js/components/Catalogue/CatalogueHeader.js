@@ -31,7 +31,7 @@ export const CatalogueHeader = React.memo(() => {
         <div className="col-10 mx-auto text-center mb-3">
           <i>
             Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate, <b>secondo quanto
-            dichiarato da chi lo mette a disposizione.<br>Developers Italia non manutiene direttamente, né garantisce che il software sia sufficiente a
+            dichiarato da chi lo mette a disposizione.<br />Developers Italia non manutiene direttamente, né garantisce che il software sia sufficiente a
             rispondere alle previsioni del PNRR</b>{' '}
             <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo" target="_blank" rel="noopener noreferrer">
               Scopri di più
