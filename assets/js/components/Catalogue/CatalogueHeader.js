@@ -32,7 +32,7 @@ export const CatalogueHeader = React.memo(() => {
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
       </div>
 
-      <div className="text-left">
+      <div style={{ maxWidth: '75ch', margin: '0 auto' }}>
         Garantiamo che i software del catalogo siano open source, ma non forniamo supporto o manutenzione, né
         assicuriamo che rispondano a specifiche esigenze delle pubbliche amministrazioni.
         <br />
