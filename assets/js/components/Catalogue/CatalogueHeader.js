@@ -27,35 +27,16 @@ export const CatalogueHeader = React.memo(() => {
       ) : (
         <h1 className={classes.header}>{l10NLabels.software.catalogue}</h1>
       )}
-      {filterPNRR && (
-        <div className="col-10 mx-auto text-center mb-3">
-          <i>
-            Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate,{' '}
-            <b>
-              secondo quanto dichiarato da chi lo mette a disposizione.
-              <br />
-              Developers Italia non manutiene direttamente, né garantisce che il software sia sufficiente a rispondere
-              alle previsioni del PNRR.
-            </b>{' '}
-            <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo" target="_blank" rel="noopener noreferrer">
-              Scopri di più
-            </a>
-            .
-          </i>
-        </div>
-      )}
 
       <div className="col-10 mx-auto text-center mb-3">
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
       </div>
 
       <div className="alert alert-info text-left" role="alert">
-        <i>
-          Garantiamo che i software del catalogo sono open source, ma non forniamo supporto o manutenzione, né
-          assicuriamo che rispondano a specifiche esigenze delle pubbliche amministrazioni.
-          <br />
-          Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
-        </i>
+        Garantiamo che i software del catalogo siano open source, ma non forniamo supporto o manutenzione, né
+        assicuriamo che rispondano a specifiche esigenze delle pubbliche amministrazioni.
+        <br />
+        Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
       </div>
     </div>
   );
