@@ -17,47 +17,45 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
-  - SDK:
-    - title: Client validazione e pubblicazione Gateway
+  -Supporto Sviluppo:
+    - title: Pagina di supporto github
       icon: github
-      url: https://github.com/ministero-salute/
-      desc: SDK per integrazione Gateway.
+      url: https://github.com/ministero-salute/it-fse-support
+      desc: Supporto integrazione Gateway.
     - title: Schematron
       icon: github
-      url: https://github.com/ministero-salute/
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/schematron
       desc: Schematron utilizzabili per la validazione dei documenti CDA2.
+   - title: OpenAPI validazione CDA2
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
+      desc: OpenAPI Gateway servizio di validazione CDA2.
   - Documentazione:
-    - title: Linee guida Architetturali
-      url: https://github.com/ministero-salute/fse-documentation
+    - title: Linee guida per l'attuazione FSE 2.0
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
       icon: file
-      desc: Documentazione di alto livello del funzionamento dell'architettura.
+      desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
+     - title: Aggirnamento contenuti FSE 2.0 previsti nei primi 12 mesi
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
+      icon: file
+      desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
     - title: Specifiche di integrazione servizio di validazione CDA2
-      url: https://github.com/ministero-salute/fse-documentation
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway
       icon: file
       desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.
-  - Validazione Integrazioni:
-    - title: Processo di validazione Gateway
-      url: https://github.com/ministero-salute/fse-documentation
-      icon: file
-      desc: Documentazione contenente il processo di validazione delle integrazioni con il Gateway.
-    - title: Processo di validazione EDS
-      url: https://github.com/ministero-salute/fse-documentation
-      icon: file
-      desc: Documentazione contenente il processo di validazione delle integrazioni con il EDS.
-  - Swagger:
-    - title: Swagger validazione CDA2
-      icon: github
-      url: https://github.com/ministero-salute/fse/
-      desc: Swagger Gateway servizio di validazione CDA2.
-  - Risorse esterne:
-    - title: Standard documentale
+   - title: Specifiche di interoperabilità AgID
       icon: link
-      url: http://www.hl7italia.it/hl7italia_D7/node/275
+      url: http://www.hl7italia.it/hl7italia_D7/node/2359
       desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
-    - title: Specifiche tecniche Agid
+    - title: Specifiche tecniche AgID
       icon: link
       url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
       desc: Link al sito AgID, riferimento specifiche tecniche.
+  - Validazione Integrazioni:
+    - title: Processo di validazione Gateway ed EDS
+      url: #
+      icon: file
+      desc: Verrà predisposta una sezione a supporto della procedura di validazione.
 ---
 
 ## Intro 
@@ -79,8 +77,6 @@ assicurare che i documenti che alimentano il FSE siano effettivamente prodotti s
 rendere più efficace l’interoperabilità tra fascicoli regionali; 
 realizzare una effettiva gestione del dato da affiancare a quella del documento;
 garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
-
-![](/assets/images/fse/arch.png)
 
 
 Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e centrali che interoperano tra loro e con altri sistemi secondo modelli di interoperabilità standard [(ModI definito da AgID)](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/01_Pattern%20interazione/01_introduzione.html).
@@ -106,10 +102,10 @@ Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0d
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker] ([https://github.com/ministero-salute/it-fse-support/issues](https://github.com/ministero-salute/it-fse-support/issues).
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker](https://github.com/ministero-salute/it-fse-support/issues).
 
 ## Canali
 
-<a class="btn btn-primary" href="https://github.com/ministero-salute/fse/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
+<a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
