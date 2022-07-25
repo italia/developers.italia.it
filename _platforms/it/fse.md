@@ -35,7 +35,7 @@ resources:
       url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
       icon: file
       desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
-    - title: Aggirnamento contenuti FSE 2.0 previsti nei primi 12 mesi
+    - title: Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi
       url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg
       icon: file
       desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
