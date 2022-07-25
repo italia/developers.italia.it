@@ -17,7 +17,7 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
-  -Supporto Sviluppo:
+  - Supporto Sviluppo:
     - title: Pagina di supporto github
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
@@ -26,7 +26,7 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/schematron
       desc: Schematron utilizzabili per la validazione dei documenti CDA2.
-   - title: OpenAPI validazione CDA2
+    - title: OpenAPI validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
       desc: OpenAPI Gateway servizio di validazione CDA2.
@@ -35,7 +35,7 @@ resources:
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
       icon: file
       desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
-     - title: Aggirnamento contenuti FSE 2.0 previsti nei primi 12 mesi
+    - title: Aggirnamento contenuti FSE 2.0 previsti nei primi 12 mesi
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
       icon: file
       desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
@@ -43,7 +43,7 @@ resources:
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway
       icon: file
       desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.
-   - title: Specifiche di interoperabilità AgID
+    - title: Specifiche di interoperabilità AgID
       icon: link
       url: http://www.hl7italia.it/hl7italia_D7/node/2359
       desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
