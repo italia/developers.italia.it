@@ -140,4 +140,4 @@ i cookie, il sito potrebbe non funzionare correttamente.
 * [Edge](https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies)
 * [Opera](https://help.opera.com/en/latest/web-preferences/#cookies)
 
-*Ultimo aggiornamento: 28/12/2021*
+*Ultimo aggiornamento: 12/07/2021*
