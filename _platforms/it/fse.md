@@ -17,7 +17,7 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
-  -Supporto Sviluppo:
+  - Supporto Sviluppo:
     - title: Pagina di supporto github
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
