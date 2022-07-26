@@ -107,4 +107,4 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
