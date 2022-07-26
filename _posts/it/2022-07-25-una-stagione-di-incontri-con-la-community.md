@@ -27,7 +27,7 @@ COMMUNITY CALL
 - Design: la sinergia possibile tra Università e Pubbliche amministrazioni ([6 aprile](https://developers.italia.it/it/news/2022/04/13/pa-universita-progettare-servizi-pubblici-insieme))
 - Esperienze di sviluppo aperto per i servizi pubblici ([18 maggio](https://developers.italia.it/it/news/2022/05/20/sviluppo-open-source-migliorare-servizi-pubblici))
 
-COMMUNITY LAB
+## Community lab
 
 - L’uso di Git ([23 febbraio](https://www.youtube.com/watch?v=2Ph4VSyi9lU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=9))
 - Bootstrap Italia 2.0 ([23 marzo](https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap))
