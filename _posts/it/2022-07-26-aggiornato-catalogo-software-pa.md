@@ -47,7 +47,7 @@ Nella ricerca di soluzioni che possano concorrere a raggiungere questo obiettivo
 
 Per agevolare questo compito all'interno dei progetti finanziati dal PNRR, Developers Italia ha individuato **alcune informazioni che possono essere inserite nel file publiccode.yml**, su base volontaria e autocertificata. Il file è utilizzato per la pubblicazione delle [schede di presentazione](https://developers.italia.it/it/search?type=software_reuse&sort_by=release_date&page=0) del [catalogo del riuso](https://developers.italia.it/it/software).
 
-È bene sottolineare che Developers Italia garantisce che i software del catalogo sono open source, ma non fornisce supporto o manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni. Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
+È bene sottolineare che Developers Italia garantisce che i software del catalogo siano open source, ma non fornisce supporto o manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni. Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
 
 ## Maggiori informazioni 
 
