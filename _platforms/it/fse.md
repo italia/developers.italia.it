@@ -32,18 +32,18 @@ resources:
       desc: OpenAPI Gateway servizio di validazione CDA2.
   - Documentazione:
     - title: Linee guida per l'attuazione FSE 2.0
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
+      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
       icon: file
       desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
-    - title: Aggirnamento contenuti FSE 2.0 previsti nei primi 12 mesi
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/decreti
+    - title: Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi
+      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg
       icon: file
       desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
     - title: Specifiche di integrazione servizio di validazione CDA2
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway
       icon: file
       desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.
-    - title: Specifiche di interoperabilità AgID
+    - title: Specifiche HL7 CDA2
       icon: link
       url: http://www.hl7italia.it/hl7italia_D7/node/2359
       desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
@@ -107,5 +107,4 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
