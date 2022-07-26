@@ -29,7 +29,7 @@ COMMUNITY CALL
 
 COMMUNITY LAB
 
-- L’uso di Git ([23 febbraio](https://www.youtube.com/watch?v=2Ph4VSyi9lU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=9&t=2s))
+- L’uso di Git ([23 febbraio](https://www.youtube.com/watch?v=2Ph4VSyi9lU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=9))
 - Bootstrap Italia 2.0 ([23 marzo](https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap))
 - Il nuovo UI Kit e l’introduzione dei design token ([20 aprile](https://developers.italia.it/it/news/2022/05/03/Community-lab-UI-kit-design-token))
 - Progettiamo API REST per la Pubblica Amministrazione ([25 maggio](https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili))
