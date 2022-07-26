@@ -10,7 +10,7 @@ image: /assets/icons/logo-it.png
 locale: it
 ---
 
-Altri mille di questi partecipanti! Si, perchè sono stati oltre mille le persone che hanno partecipato alla ricca stagione di eventi e occasioni di confronto organizzate da [Developers Italia](https://developers.italia.it/) e [Designers Italia](https://designers.italia.it/). In nove puntate abbiamo discusso assieme di design system del Paese, di sviluppo aperto per i servizi pubblici, eGovernment Benchmark, ma anche di strumenti e risorse pratiche, come Git, Bootstrap Italia 2.0, UI Kit, progettazione di API REST e l’uso container.
+Altri mille di questi partecipanti! Si, perché sono state oltre mille le persone che hanno partecipato alla ricca stagione di eventi e occasioni di confronto organizzate da [Developers Italia](https://developers.italia.it/) e [Designers Italia](https://designers.italia.it/). In nove puntate abbiamo discusso assieme di design system del Paese, di sviluppo aperto per i servizi pubblici, eGovernment Benchmark, ma anche di strumenti e risorse pratiche, come Git, Bootstrap Italia 2.0, UI Kit, progettazione di API REST e l’uso container.
 
 Durante queste occasioni abbiamo condiviso conoscenze, soluzioni e strumenti per migliorare i servizi pubblici digitali con i membri della community, favorendo l’incontro tra tecnici, designer, fornitori e funzionari pubblici. In sostanza, tra tutti coloro che in qualche modo partecipano alla creazione e al mantenimento di servizi pubblici digitali.
 
