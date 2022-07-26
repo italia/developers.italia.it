@@ -52,30 +52,3 @@ Per agevolare questo compito all'interno dei progetti finanziati dal PNRR, Devel
 ## Maggiori informazioni 
 
 Se hai un software in riuso pubblicato sul catalogo di Developers Italia o intendi pubblicarlo, hai quindi la possibilità di **autocertificare la tua soluzione**. Scopri nella [pagina dedicata](https://developers.italia.it/it/riuso/pubblicazione#istruzioni) quali informazioni devi inserire nel file publiccode.yml e come farlo. Hai bisogno di più informazioni? Scrivici su Slack di Developers Italia nel canale [#reuse](https://developersitalia.slack.com/archives/CJRSS5S9W).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
