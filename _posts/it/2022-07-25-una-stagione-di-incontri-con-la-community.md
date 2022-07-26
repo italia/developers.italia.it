@@ -21,7 +21,7 @@ Per rivivere la stagione che ci lasciamo alle spalle e recuperare qualche puntat
 ### Tutti gli eventi
 
 
-COMMUNITY CALL
+## Community call
 - L’importanza di un design system per i servizi pubblici digitali ([9 febbraio](https://developers.italia.it/it/news/2022/02/22/come-si-realizza-design-servizi-pubblici))
 - eGovernment Benchmark: dall’Europa, i criteri minimi di qualità dei servizi pubblici digitali ([9 marzo](https://developers.italia.it/it/news/2022/03/18/come-eu-valuta-servizi-pubblici-digitali-egovernment-benchmark))
 - Design: la sinergia possibile tra Università e Pubbliche amministrazioni ([6 aprile](https://developers.italia.it/it/news/2022/04/13/pa-universita-progettare-servizi-pubblici-insieme))
