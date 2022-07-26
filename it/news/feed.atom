@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-07-26T06:03:36+00:00</updated>
+  <updated>2022-07-26T07:43:05+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,58 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/07/25/una-stagione-di-incontri-con-la-community</id>
+    <title>Una stagione di incontri con la community</title>
+    <updated>2022-07-25T06:00:00+00:00</updated>
+
+    <summary>Community call e community lab dedicate ai servizi pubblici digitali: facciamo un bilancio insieme. </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/07/25/una-stagione-di-incontri-con-la-community">&lt;p&gt;Altri mille di questi partecipanti! Si, perché sono state oltre mille le persone che hanno partecipato alla ricca stagione di eventi e occasioni di confronto organizzate da &lt;a href=&quot;https://developers.italia.it/&quot;&gt;Developers Italia&lt;/a&gt; e &lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt;. In nove puntate abbiamo discusso assieme di design system del Paese, di sviluppo aperto per i servizi pubblici, eGovernment Benchmark, ma anche di strumenti e risorse pratiche, come Git, Bootstrap Italia 2.0, UI Kit, progettazione di API REST e l’uso container.&lt;/p&gt;
+
+&lt;p&gt;Durante queste occasioni abbiamo condiviso conoscenze, soluzioni e strumenti per migliorare i servizi pubblici digitali con i membri della community, favorendo l’incontro tra tecnici, designer, fornitori e funzionari pubblici. In sostanza, tra tutti coloro che in qualche modo partecipano alla creazione e al mantenimento di servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;Tutto questo non sarebbe stato possibile senza la community di oltre 20.000 persone presenti sui canali &lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum Italia&lt;/a&gt; e &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt; composta da quanti si occupano di sviluppo, design, project management nelle PA, in house e aziende fornitrici. Un ringraziamento va quindi dedicato a loro, a chi ha partecipato agli eventi, ma anche a chi è intervenuto con un commento o un messaggio su Slack, a chi ha inviato una pull request su GitHub e a chi ha in qualche modo contribuito a far crescere a mantenere attiva questa comunità.&lt;/p&gt;
+
+&lt;p&gt;Per rivivere la stagione che ci lasciamo alle spalle e recuperare qualche puntata persa, si possono rivedere i video dei community lab e delle community call sulla &lt;a href=&quot;https://www.youtube.com/playlist?list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&quot;&gt;playlist “community”&lt;/a&gt; del canale YouTube del Dipartimento per la trasformazione digitale.&lt;/p&gt;
+
+&lt;h3 id=&quot;tutti-gli-eventi&quot;&gt;Tutti gli eventi&lt;/h3&gt;
+
+&lt;h4 id=&quot;community-call&quot;&gt;Community call&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;L’importanza di un design system per i servizi pubblici digitali (&lt;a href=&quot;https://developers.italia.it/it/news/2022/02/22/come-si-realizza-design-servizi-pubblici&quot;&gt;9 febbraio&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;eGovernment Benchmark: dall’Europa, i criteri minimi di qualità dei servizi pubblici digitali (&lt;a href=&quot;https://developers.italia.it/it/news/2022/03/18/come-eu-valuta-servizi-pubblici-digitali-egovernment-benchmark&quot;&gt;9 marzo&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Design: la sinergia possibile tra Università e Pubbliche amministrazioni (&lt;a href=&quot;https://developers.italia.it/it/news/2022/04/13/pa-universita-progettare-servizi-pubblici-insieme&quot;&gt;6 aprile&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Esperienze di sviluppo aperto per i servizi pubblici (&lt;a href=&quot;https://developers.italia.it/it/news/2022/05/20/sviluppo-open-source-migliorare-servizi-pubblici&quot;&gt;18 maggio&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;community-lab&quot;&gt;Community lab&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;L’uso di Git (&lt;a href=&quot;https://www.youtube.com/watch?v=2Ph4VSyi9lU&amp;amp;list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&amp;amp;index=9&quot;&gt;23 febbraio&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Bootstrap Italia 2.0 (&lt;a href=&quot;https://developers.italia.it/it/news/2022/03/29/accessibilita-migliorata-con-bootstrap&quot;&gt;23 marzo&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Il nuovo UI Kit e l’introduzione dei design token (&lt;a href=&quot;https://developers.italia.it/it/news/2022/05/03/Community-lab-UI-kit-design-token&quot;&gt;20 aprile&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Progettiamo API REST per la Pubblica Amministrazione (&lt;a href=&quot;https://developers.italia.it/it/news/2022/05/30/progettare-api-interoperabili&quot;&gt;25 maggio&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Scopriamo i container con Docker (&lt;a href=&quot;https://developers.italia.it/it/news/2022/07/07/perche-container-sono-strumenti-utili-sviluppo-servizi.pubblici&quot;&gt;29 giugno&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Siete pronti per la prossima stagione? Per ricevere tutti gli aggiornamenti, iscriviti alla mailing list di &lt;a href=&quot;https://unisciti.developers.italia.it&quot;&gt;Developers Italia&lt;/a&gt; o &lt;a href=&quot;https://unisciti.designers.italia.it&quot;&gt;Designers Italia&lt;/a&gt;&lt;/p&gt;</content>
+    <published>2022-07-25T06:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="communitycall" />
+    
+    <category term="communitylab" />
+    
+
+    <author>
+      <name>Francesco Pognante</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/07/07/perche-container-sono-strumenti-utili-sviluppo-servizi.pubblici</id>
     <title>Perché i container sono strumenti utili nello sviluppo di servizi pubblici digitali</title>
