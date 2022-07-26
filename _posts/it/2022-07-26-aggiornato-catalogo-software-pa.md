@@ -2,7 +2,7 @@
 layout: post
 title: "PNRR: aggiornato il catalogo del software della PA"
 subtitle: "Nuove opportunità per evidenziare e trovare soluzioni software in riuso utili al rispetto dei requisiti degli avvisi di PA digitale 2026."
-date: 2022-07-26 08:00:00 +0200
+date: 2022-07-27 08:00:00 +0200
 tags: developers designers catalogodelriuso
 categories: news
 author: Michela Gabrieli
