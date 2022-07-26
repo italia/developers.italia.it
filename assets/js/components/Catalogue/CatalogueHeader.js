@@ -29,10 +29,7 @@ export const CatalogueHeader = React.memo(() => {
       )}
 
       <div style={{ maxWidth: '75ch', margin: '0 auto' }}>
-        Garantiamo che i software del catalogo siano open source, ma non forniamo supporto o manutenzione, né
-        assicuriamo che rispondano a specifiche esigenze delle pubbliche amministrazioni.
-        <br />
-        Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
+        <a href="/it/faq#collapseDiv12">Garanzie sui contenuti</a>
       </div>
 
       <div className="col-10 mx-auto text-center mb-3">
