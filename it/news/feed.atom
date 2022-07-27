@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-07-27T06:07:04+00:00</updated>
+  <updated>2022-07-27T06:23:17+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,74 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/07/27/aggiornato-catalogo-software-pa</id>
+    <title>PNRR: aggiornato il catalogo del software della PA</title>
+    <updated>2022-07-27T06:00:00+00:00</updated>
+
+    <summary>Nuove opportunità per evidenziare e trovare soluzioni software in riuso utili al rispetto dei requisiti degli avvisi di PA digitale 2026. </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/07/27/aggiornato-catalogo-software-pa">&lt;p&gt;Da oggi, il &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo del software della PA&lt;/a&gt;, ospitato sul sito di Developers Italia, presenta un &lt;a href=&quot;https://developers.italia.it/it/search?pnrr=1&quot;&gt;nuovo filtro di ricerca&lt;/a&gt;, che permette di trovare più agevolmente soluzioni (autocertificate) che concorrono a rispettare i &lt;strong&gt;requisiti&lt;/strong&gt; indicati negli avvisi del Piano Nazionale di Ripresa e Resilienza (PNRR) pubblicati su &lt;a href=&quot;https://padigitale2026.gov.it/&quot;&gt;PA Digitale 2026&lt;/a&gt;. Grazie a questo aggiornamento sarà possibile selezionare la soluzione più idonea per ciascuna &lt;strong&gt;Misura del PNRR di Missione 1&lt;/strong&gt;, &lt;strong&gt;Componente 1&lt;/strong&gt; o per tipologia di &lt;strong&gt;enti beneficiari&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;le-misure-del-pnrr&quot;&gt;Le misure del PNRR&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Misura 1.1: Infrastrutture digitali&lt;/li&gt;
+  &lt;li&gt;Misura 1.2: Abilitazione e facilitazione migrazione al Cloud&lt;/li&gt;
+  &lt;li&gt;Misura 1.3.1 PDND: Piattaforma Digitale Nazionale Dati&lt;/li&gt;
+  &lt;li&gt;Misura 1.3.2: Sportello Digitale Unico&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.1: Esperienza del Cittadino nei servizi pubblici&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.2: Accessibilità&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.3: Adozione PagoPA e app IO&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.4: Adozione identità digitale&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.5: Digitalizzazione degli avvisi pubblici&lt;/li&gt;
+  &lt;li&gt;Misura 1.4.6: MaaS - Mobility as a Service&lt;/li&gt;
+  &lt;li&gt;Misura 1.5: Cybersecurity&lt;/li&gt;
+  &lt;li&gt;Misura 1.6: Digitalizzazione grandi amministrazioni centrali&lt;/li&gt;
+  &lt;li&gt;Misura 1.7.1: Servizio civile digitale&lt;/li&gt;
+  &lt;li&gt;Misura 1.7.2: Centri di facilitazione digitale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;enti-beneficiari&quot;&gt;Enti beneficiari&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comuni&lt;/li&gt;
+  &lt;li&gt;Scuole&lt;/li&gt;
+  &lt;li&gt;Asl&lt;/li&gt;
+  &lt;li&gt;Enti regionali&lt;/li&gt;
+  &lt;li&gt;Università&lt;/li&gt;
+  &lt;li&gt;PA centrali&lt;/li&gt;
+  &lt;li&gt;Province&lt;/li&gt;
+  &lt;li&gt;Istituti di ricerca e AFAM&lt;/li&gt;
+  &lt;li&gt;Altri enti&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;laggiornamento-del-catalogo&quot;&gt;L’aggiornamento del catalogo&lt;/h2&gt;
+
+&lt;p&gt;Developers Italia, in quanto progetto del Dipartimento per la trasformazione digitale e AGID, contribuisce, infatti, alla &lt;strong&gt;Missione 1, Componente 1 del PNRR&lt;/strong&gt;, che ha l’obiettivo di trasformare in profondità la Pubblica Amministrazione attraverso una strategia centrata sulla digitalizzazione. 
+Nella ricerca di soluzioni che possano concorrere a raggiungere questo obiettivo, va rispettato quanto previsto dal Codice dell’Amministrazione Digitale (Artt. &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html&quot;&gt;68&lt;/a&gt; e &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html&quot;&gt;69&lt;/a&gt;), effettuando una &lt;strong&gt;valutazione comparativa&lt;/strong&gt; che deve valutare i software disponibili secondo criteri tecnico economici, dando priorità a quelli a riuso od open source (che si possono trovare nel catalogo di Developers Italia) e motivando una loro eventuale esclusione a favore di soluzioni proprietarie.&lt;/p&gt;
+
+&lt;p&gt;Per agevolare questo compito all’interno dei progetti finanziati dal PNRR, Developers Italia ha individuato &lt;strong&gt;alcune informazioni che possono essere inserite nel catalogo grazie al file descrittivo &lt;a href=&quot;https://yml.publiccode.tools&quot;&gt;publiccode.yml&lt;/a&gt;&lt;/strong&gt;, su base volontaria e autocertificata. Il file è utilizzato per la pubblicazione delle &lt;a href=&quot;https://developers.italia.it/it/search?type=software_reuse&amp;amp;sort_by=release_date&amp;amp;page=0&quot;&gt;schede di presentazione&lt;/a&gt; del &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo del riuso&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;È bene sottolineare che Developers Italia garantisce che i software del catalogo siano open source, ma non fornisce supporto o manutenzione, né assicura che rispondano a specifiche esigenze delle pubbliche amministrazioni. Le informazioni presenti nelle schede sono fornite da chi pubblica il software.&lt;/p&gt;
+
+&lt;h2 id=&quot;maggiori-informazioni&quot;&gt;Maggiori informazioni&lt;/h2&gt;
+
+&lt;p&gt;Se hai un software in riuso pubblicato sul catalogo di Developers Italia o intendi pubblicarlo, hai quindi la possibilità di &lt;strong&gt;autocertificare la tua soluzione&lt;/strong&gt;. Scopri nella &lt;a href=&quot;https://developers.italia.it/it/riuso/pubblicazione#istruzioni&quot;&gt;pagina dedicata&lt;/a&gt; quali informazioni devi inserire nel file publiccode.yml e come farlo. Hai bisogno di più informazioni? Scrivici su Slack di Developers Italia nel canale &lt;a href=&quot;https://developersitalia.slack.com/archives/CJRSS5S9W&quot;&gt;#reuse&lt;/a&gt;.&lt;/p&gt;</content>
+    <published>2022-07-27T06:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="catalogodelriuso" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/07/25/una-stagione-di-incontri-con-la-community</id>
     <title>Una stagione di incontri con la community</title>
