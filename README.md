@@ -12,10 +12,6 @@
 
  <!-- Badges -->
 <div align="center">
-  <!-- CircleCI-->
-  <a href="https://circleci.com/gh/italia/developers.italia.it">
-    <img alt="CircleCI" src="https://circleci.com/gh/italia/developers.italia.it.svg?style=shield">
-  </a>
   <img src="https://vercelbadge.vercel.app/api/italia/developers.italia.it" alt="Vercel"/>
   <a href="https://github.com/italia/developers.italia.it/releases">
     <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
