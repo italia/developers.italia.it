@@ -53,15 +53,6 @@
   tags: []
   language: [it]
   slug: aree-protette-lombardia
-- openapi: https://raw.githubusercontent.com/teamdigitale/anpr-dashboard-server/master/openapi/anpr-dashboard.yaml
-  title: ANPR Dashboard API
-  abstract: Informazioni sullo stato della migrazione ad ANPR.
-  contact:
-    name: Team Digitale
-    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
-  tags: []
-  language: [it]
-  slug: anpr-dashboard
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/covid19-regione.umbria.it.yaml
   title: API sui dati del COVID-19 della Regione Umbria
   abstract: Dati sull'emergenza COVID-19 della Regione Umbria
