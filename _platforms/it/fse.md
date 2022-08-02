@@ -1,11 +1,11 @@
 ---
 title: FSE
-subtitle: Fascicolo Sanitario Elettronico
+subtitle: Fascicolo Sanitario Elettronico 2.0
 logo: /assets/images/FSE_EXT.png
 external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
-  Il nuovo FSE è l’ecosistema digitale che realizza servizi evoluti basati sul dato atomico per cittadini e operatori sanitari.
+  Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su socumenti e dati per cittadini e operatori sanitari.
 lang: it
 order: 2
 highlight: true
@@ -58,7 +58,7 @@ resources:
       desc: Verrà predisposta una sezione a supporto della procedura di validazione.
 ---
 
-## Intro 
+## Intro
 
 Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può tracciare e consultare tutta la storia della propria vita sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.
 
@@ -98,13 +98,16 @@ Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0d
 
 ## Codice della piattaforma
 
-È possibile reperire il codice pubblico della piattaforma e la documentazione direttamente sull’organizzazione [GitHub del Ministero della Salute](https://github.com/ministero-salute/it-fse-landing).
+Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open  FLOSS (Free and Open Source Software) raggiunta una prima release stabile. Il codice è pubblicato su [GitHub del Ministero](https://github.com/ministero-salute/it-fse-landing) della Salute.
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il canale Issue tracker](https://github.com/ministero-salute/it-fse-support/issues).
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso il [canale Issue tracker](https://github.com/ministero-salute/it-fse-support/issues) ed il [canale slack #fse](https://developersitalia.slack.com/archives/C03RDT88FSM) su Developers Italia.
 
+## Prima fase di sperimentazione
+
+E' prevista una prima fase di sperimentazione che coinvolge un numero progressivo di Regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. A seguito dell'invio da parte delle Regioni de CSR alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it) verrà emesso certificato di autenticazione e consentito l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori (#FSE)</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" /> Canale Slack (#fse)</a>
