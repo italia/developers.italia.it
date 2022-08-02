@@ -62,7 +62,7 @@ resources:
 
 Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può tracciare e consultare tutta la storia della propria vita sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.
 
-**Obiettivi:**
+#### Obiettivi
 Il Piano Nazionale di Rilancio e Resilienza (PNRR), Missione 6 Componente 2, promuove il potenziamento del Fascicolo Sanitario Elettronico (FSE) nella sua versione 2.0 al fine di garantirne la **diffusione, l’omogeneità e l’accessibilità su tutto il territorio nazionale** da parte degli assistiti e operatori sanitari.
 
 Secondo le Linee guida di attuazione il FSE dovrà diventare:
@@ -78,7 +78,7 @@ rendere più efficace l’interoperabilità tra fascicoli regionali;
 realizzare una effettiva gestione del dato da affiancare a quella del documento;
 garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
 
-
+#### Architettura
 Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e centrali che interoperano tra loro e con altri sistemi secondo modelli di interoperabilità standard [(ModI definito da AgID)](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/01_Pattern%20interazione/01_introduzione.html).
 
 ![](/assets/images/fse/FSE2.png)
@@ -87,7 +87,7 @@ Per consentire una gestione più efficace del dato vengono introdotti due nuovi 
 **il Gateway**, che ha il compito di verificare la coerenza nell’applicazione degli standard, sia per dati che per documenti, 
 **l’Ecosistema Dati Sanitari (EDS)** che raccoglie, gestisce e rende fruibile il dato mediante servizi REST.  L’EDS, mediante servizi di sottoscrizione e sincronizzazione può alimentare repository regionali con i dati di pertinenza delle regioni nelle modalità indicate dalla norma. L’EDS infine realizza le funzionalità di monitoraggio di alimentazione e di utilizzo del sistema FSE da parte del cittadino e degli operatori sanitari.
 
-**Standard per dati e documenti**
+#### Standard per dati e documenti
 Le Linee guida di attuazione del Fascicolo Sanitario elettronico prevedono che nel FSE 2.0 confluiscano:
 dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle strutture e archiviati nel Data Repository Centrale (e opzionalmente presso data repository locali)
 documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
