@@ -5,7 +5,7 @@ logo: /assets/images/FSE_EXT.png
 external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
-  Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su socumenti e dati per cittadini e operatori sanitari.
+  Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.
 lang: it
 order: 2
 highlight: true
@@ -22,10 +22,10 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
       desc: Supporto integrazione Gateway.
-    - title: Schematron
+    - title: Schematron e xsd
       icon: github
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/schematron
-      desc: Schematron utilizzabili per la validazione dei documenti CDA2.
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/validazione
+      desc: Schematron e xsd utilizzabili per la validazione dei documenti CDA2.
     - title: OpenAPI validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
@@ -52,31 +52,31 @@ resources:
       url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
       desc: Link al sito AgID, riferimento specifiche tecniche.
   - Validazione Integrazioni:
-    - title: Processo di validazione Gateway ed EDS
+    - title: Processo di validazione integrazione Gateway
       url: #
       icon: file
-      desc: Verrà predisposta una sezione a supporto della procedura di validazione.
+      desc: Verrà predisposta una sezione a supporto della procedura di validazione dei sistemi produttori che accedono al gateway.
 ---
 
 ## Intro
 
-Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può tracciare e consultare tutta la storia della propria vita sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.
+Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può raccogliere e consultare tutta la propria storia sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.
 
 #### Obiettivi
-Il Piano Nazionale di Rilancio e Resilienza (PNRR), Missione 6 Componente 2, promuove il potenziamento del Fascicolo Sanitario Elettronico (FSE) nella sua versione 2.0 al fine di garantirne la **diffusione, l’omogeneità e l’accessibilità su tutto il territorio nazionale** da parte degli assistiti e operatori sanitari.
+Il Piano Nazionale di Ripresa e Resilienza (PNRR), Missione 6 Componente 2, promuove il potenziamento del Fascicolo Sanitario Elettronico (FSE) nella sua versione 2.0 al fine di garantirne la **diffusione, l’omogeneità e l’accessibilità su tutto il territorio nazionale** da parte degli assistiti e operatori sanitari.
 
 Secondo le Linee guida di attuazione il FSE dovrà diventare:
-il punto unico ed esclusivo di accesso per tutti i cittadini ai servizi del SSN, indipendentemente dalla regione di appartenenza; 
-un ecosistema di servizi basati sui dati per i professionisti sanitari per la diagnosi e cura dei propri assistiti e per una assistenza sempre più personalizzata sul paziente;
-uno strumento per le strutture ed istituzioni sanitarie che potranno utilizzare le informazioni cliniche per effettuare analisi di dati clinici e migliorare l'erogazione dei servizi sanitari.
+- il punto di accesso per tutti i cittadini ai servizi del SSN, indipendentemente dalla regione di appartenenza;
+- un ecosistema di servizi basati sui dati e documenti per i professionisti sanitari per la diagnosi e cura dei propri assistiti consentendo una assistenza sempre più personalizzata;
+- uno strumento di prevenzione per le strutture ed istituzioni sanitarie.
 
 
 Affinché ciò avvenga è necessario che l’infrastruttura tecnologica evolva per:
-rendere FSE omogeneo sul territorio nazionale per dati contenuti, servizi offerti, semplicità di utilizzo/interfaccia e portabilità;
-assicurare che i documenti che alimentano il FSE siano effettivamente prodotti secondo gli standard nazionali;
-rendere più efficace l’interoperabilità tra fascicoli regionali; 
-realizzare una effettiva gestione del dato da affiancare a quella del documento;
-garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
+- rendere FSE omogeneo sul territorio nazionale per dati contenuti, servizi offerti, semplicità di utilizzo/interfaccia e portabilità;
+- assicurare che i documenti che alimentano il FSE siano effettivamente prodotti secondo gli standard nazionali;
+- rendere più efficace l’interoperabilità tra fascicoli regionali; 
+- realizzare una effettiva gestione del dato da affiancare a quella del documento;
+- garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
 
 #### Architettura
 Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e centrali che interoperano tra loro e con altri sistemi secondo modelli di interoperabilità standard [(ModI definito da AgID)](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/01_Pattern%20interazione/01_introduzione.html).
@@ -98,7 +98,7 @@ Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0d
 
 ## Codice della piattaforma
 
-Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open  FLOSS (Free and Open Source Software) raggiunta una prima release stabile. Il codice è pubblicato su [GitHub del Ministero](https://github.com/ministero-salute/it-fse-landing) della Salute.
+Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open  FLOSS (Free and Open Source Software) raggiunta una prima release stabile. Il codice sarà pubblicato su [GitHub del Ministero](https://github.com/ministero-salute/it-fse-landing) della Salute.
 
 ## Aiutaci a migliorare
 
@@ -106,7 +106,7 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 
 ## Prima fase di sperimentazione
 
-E' prevista una prima fase di sperimentazione che coinvolge un numero progressivo di Regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. A seguito dell'invio da parte delle Regioni de CSR alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it) verrà emesso certificato di autenticazione e consentito l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
+E' prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" /> Issue tracker</a>
