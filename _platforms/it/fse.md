@@ -91,9 +91,9 @@ Per consentire una gestione più efficace del dato vengono introdotti due nuovi 
 Le Linee guida di attuazione del Fascicolo Sanitario elettronico prevedono che nel FSE 2.0 confluiscano:
 dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle strutture e archiviati nel Data Repository Centrale (e opzionalmente presso data repository locali)
 documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
-Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/hl7it_publications).
+Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/node/2359).
 
-Il documento [Architettura FSE 2.0](https://docs.google.com/document/d/1-JD75i0dV5dJFiTj9ZaTrZXPSzn-hfuA/edit#heading=h.30j0zll) fornisce maggiori dettagli sull’architettura del Fascicolo 2.0 e sulle interazioni tra gli elementi che la compongono. Il documento [Piattaforma di telemedicina ed Ecosistema FSE]( https://docs.google.com/document/d/10JPeUUiGEKIbLBt0uMrqJYgJLR7M7eAj/edit#heading=h.gjdgxs ) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
+ Il documento [Piattaforma di telemedicina ed Ecosistema FSE](#) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
 
 
 ## Codice della piattaforma
