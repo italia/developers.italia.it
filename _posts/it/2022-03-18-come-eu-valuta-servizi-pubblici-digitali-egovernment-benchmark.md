@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Come l’Unione Europea valuta i servizi pubblici digitali: l’eGovernment Benchmark"
-subtitle: "Disponibile la registrazione della community call del 9 febbraio"
+subtitle: "Disponibile la registrazione della community call del 9 marzo"
 date: 2022-03-18 10:00:00 +0200
 tags: developers designers eu
 categories: news
@@ -20,6 +20,6 @@ L’UE ha definito il decennio attuale il ["decennio digitale" europeo](https://
 
 **[Guarda il video](https://www.youtube.com/watch?v=flnYdZR5-9w) della community call su YouTube**
 
-**[Scarica la presentazione della community call](/assets/images/posts/2022-03-18/090222_Community_Call_Designers_Italia.pdf)**
+**[Scarica la presentazione della community call](/assets/images/posts/2022-03-18/090322_Community_Call.pdf)**
 
 **[Scopri di più](https://innovazione.gov.it/progetti/attivita-internazionali/#unione-europea) sulla Strategia Digitale Europea e sui relativi indici di digitalizzazione sul sito del Dipartimento per la trasformazione digitale.**

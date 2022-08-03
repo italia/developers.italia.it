@@ -29,7 +29,7 @@ Il Responsabile per la protezione dei dati - Data Protection Officer è contatta
 seguenti recapiti:
 
 * E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it);
-* PEC: [USG@mailbox.governo.it](mailto:USG@mailbox.governo.it).
+* PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it).
 
 ## Come vengono trattati i tuoi dati personali - periodo di conservazione - base giuridica
 
@@ -88,7 +88,7 @@ ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personal
 ## Mailing list
 
 Le comunicazioni relative alle iniziative di Developers Italia e Designers
-italia sono distribuite, in automatico e gratuitamente, a quanti fanno
+Italia sono distribuite, in automatico e gratuitamente, a quanti fanno
 richiesta di riceverle compilando il form.
 
 L'indirizzo mail fornito è utilizzato al solo fine di fornirti il servizio
@@ -115,16 +115,10 @@ funzionamento delle procedure e migliorare l'esperienza d'uso dei propri visitat
 il cui uso non è strumentale alla raccolta di dati personali identificativi
 dell'utente. Per questo motivo non abbiamo bisogno del tuo consenso per
 memorizzare i cookie.
-Utilizziamo anche i seguenti cookie analitici:
 
-* il servizio Google Analytics, la cui policy può essere visionata a
-  [questo link](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage).
-  Al fine di rispettare la privacy degli utenti, il servizio è utilizzato con la modalità
-  “anonymizeIp” che consente di mascherare gli indirizzi IP degli utenti che navigano
-  sul sito ([maggiori informazioni sulla funzionalità](https://support.google.com/analytics/answer/2763052?hl=it)).
-* il servizio "Web Analytics Italia" (WAI) fornito da AGID che raccoglie dati
-  statistici anonimi mediante IP anonimizzato relativi alle visite del sito Internet
-  da parte degli utenti.
+Utilizziamo anche i cookie analitici del servizio "Web Analytics Italia" (WAI)
+fornito da AGID che raccoglie dati statistici anonimi mediante IP anonimizzato
+relativi alle visite del sito Internet da parte degli utenti.
 
 Inoltre noi e i nostri fornitori ci asteniamo dal combinare questi cookie con altre
 elaborazioni né li trasmettiamo a terzi.

@@ -9,6 +9,8 @@ owners:
     - name: PagoPA S.p.A.
       url: https://www.pagopa.gov.it/
 lang: it
+ref:
+  en: /en/io
 order: 4
 highlight: true
 comingsoon: false

@@ -25,7 +25,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: developersITA
 github_username:  italia
-google_analytics: UA-96140462-1
 webanalytics_italia: jg7pYvEqvM
 
 # Build settings
@@ -109,6 +108,8 @@ newsletterdata:
    args:
      # Sendportal workspace id
      workspace_id: 1
+     # Des+Dev tag in Sendportal
+     tag_id: 7
 
 collections:
    platforms:

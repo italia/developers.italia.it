@@ -87,7 +87,6 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
             <h1 className="mb-2 mb-md-4" name="newsletter">
               {t('header')}
             </h1>
-            <p className="banner-newsletter__text white-text mb-2 mb-md-4 w-100 mw-md-50">{t('title')}</p>
             {Object.entries(queryArgs).map(([argName, argValue], i) => (
               <input type="hidden" name={argName} value={argValue} key={i} />
             ))}

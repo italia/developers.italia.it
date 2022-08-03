@@ -130,7 +130,7 @@ it:
     home_news_expand: per saperne di più
     home_tags: Cerca per categoria
     home_tags_more: Altri filtri
-    newsletter_text: Anche noi lottiamo ogni giorno per l’obiettivo “Zero mail da leggere”. Promettiamo d’inviarti poche mail e di rispettare i tuoi dati
+    newsletter_text: Ti aggiorneremo sulle iniziative di Developers Italia e Designers Italia. Promettiamo d’inviarti poche mail e di rispettare i tuoi dati
     website: Sito web
     go_to_website: Vai al sito web
 
@@ -142,6 +142,11 @@ it:
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
     banner_joinus_action: Vieni su Slack
+    banner_PNRR_h2: |
+      Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
+      e Resilienza (PNRR) e agli avvisi pubblicati da <a href="https://padigitale2026.gov.it" target="_blank" rel="noopener noreferrer">PA digitale 2026</a>
+    banner_PNRR_h1: Selezione dedicata al PNRR
+    banner_PNRR_action: Vedi una selezione dedicata al PNRR
     how_to_use: Come lo uso
 
     status_maintainer: maintainer
@@ -203,6 +208,7 @@ it:
 
     software:
       catalogue: Catalogo software
+      cataloguePNRR: Selezione dedicata al PNRR
       load_more: Carica altri
       searched_for: Hai cercato
       software_open: Software open source
@@ -218,6 +224,9 @@ it:
       sort_by_alphabetic: Alfabetico
       categories: Categorie
       intended_audience: Ambito di applicazione
+      pnrr: Software utile al Piano Nazionale di Ripresa e Resilienza (PNRR)
+      pnrr_targets: Beneficiari PNRR
+      pnrr_measures: Misure PNRR
       results: risultati
       no_results: Nessun risultato trovato
       retry_search: La ricerca non ha prodotto nessun risultato. Prova un'altra chiave di ricerca.
@@ -296,7 +305,109 @@ it:
 
 
 I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml)."
-
+    publiccode:
+      categories:
+        accounting: accounting
+        agile-project-management: agile project management
+        applicant-tracking: applicant tracking
+        application-development: application development
+        appointment-scheduling: appointment scheduling
+        backup: backup
+        billing-and-invoicing: billing and invoicing
+        blog: blog
+        budgeting: budgeting
+        business-intelligence: business intelligence
+        business-process-management: business process management
+        cad: CAD
+        call-center-management: call center management
+        cloud-management: cloud management
+        collaboration: collaboration
+        communications: communications
+        compliance-management: compliance management
+        contact-management: contact management
+        content-management: content management
+        crm: CRM
+        customer-service-and-support: customer service and support
+        data-analytics: data analytics
+        data-collection: data collection
+        data-visualization: data visualization
+        digital-asset-management: digital asset management
+        digital-citizenship: digital citizenship
+        document-management: document management
+        donor-management: donor management
+        e-commerce: e-commerce
+        e-signature: e-signature
+        educational-content: educational-content
+        email-management: email management
+        email-marketing: email marketing
+        employee-management: employee management
+        enterprise-project-management: enterprise project management
+        enterprise-social-networking: enterprise social networking
+        erp: ERP
+        event-management: event management
+        facility-management: facility management
+        feedback-and-reviews-management: feedback and reviews management
+        financial-reporting: financial reporting
+        fleet-management: fleet management
+        fundraising: fundraising
+        gamification: gamification
+        geographic-information-systems: geographic information systems
+        grant-management: grant management
+        graphic-design: graphic design
+        help-desk: help desk
+        hr: HR
+        ide: IDE
+        identity-management: identity management
+        instant-messaging: instant messaging
+        inventory-management: inventory management
+        it-asset-management: IT asset management
+        it-development: IT development
+        it-management: IT management
+        it-security: IT security
+        it-service-management: IT service management
+        knowledge-management: knowledge management
+        learning-management-system: learning management system
+        marketing: marketing
+        mind-mapping: mind mapping
+        mobile-marketing: mobile marketing
+        mobile-payment: mobile payment
+        network-management: network management
+        office: office
+        online-booking: online booking
+        online-community: online community
+        payment-gateway: payment gateway
+        payroll: payroll
+        predictive-analysis: predictive analysis
+        procurement: procurement
+        productivity-suite: productivity suite
+        project-collaboration: project collaboration
+        project-management: project management
+        property-management: property management
+        real-estate-management: real estate management
+        remote-support: remote support
+        resource-management: resource management
+        sales-management: sales management
+        seo: SEO
+        service-desk: service desk
+        social-media-management: social media management
+        survey: survey
+        talent-management: talent management
+        task-management: task management
+        taxes-management: taxes management
+        test-management: test management
+        time-management: time management
+        time-tracking: time tracking
+        translation: translation
+        video-conferencing: video conferencing
+        video-editing: video editing
+        visitor-management: visitor management
+        voip: VoIP
+        warehouse-management: warehouse management
+        web-collaboration: web collaboration
+        web-conferencing: web conferencing
+        whistleblowing: whistleblowing
+        website-builder: website builder
+        workflow-management: workflow management
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
@@ -439,7 +550,7 @@ en:
     home_news_expand: read more
     home_tags: Browse by tag
     home_tags_more: More tags
-    newsletter_text: Stay in touch to be informed. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
+    newsletter_text: We'll keep you posted on Developers Italia e Designers Italia. We're not going to overflow you with too many e-mails; it's a dev-to-dev promise.
     website: Website
     go_to_website: Go to website
 
@@ -452,7 +563,9 @@ en:
     banner_joinus_h1: Join our community!
     banner_joinus_action: Chat on Slack now
     how_to_use: How do I use it
-
+    banner_PNRR_h2: Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA digitale 2026
+    banner_PNRR_h1: Software PNRR
+    banner_PNRR_action: Vedi il catalogo PNRR
     status_member_of_board: member of board
     status_maintainer: maintainer
 
@@ -513,6 +626,8 @@ en:
 
     software:
       catalogue: Software catalogue
+      cataloguePNRR: PNRR selection
+      cataloguePNRRdisclaimer: This software may help to fulfil the PNRR measures' objectives. This possibility is declared by the maintainer. <a href="/en/how-to-participate">Find out more</a> on how to participate
       load_more: Load more
       searched_for: You have searched for
       software_open: Open source software
@@ -528,6 +643,9 @@ en:
       filters: Filters
       categories: Categories
       intended_audience: Intended Audience
+      pnrr: Software for the Italian Recovery and Resilience Plan (PNRR, RRP)
+      pnrr_targets: PNRR targets
+      pnrr_measures: PNRR measures
       results: results
       no_results: No results found
       retry_search: The search did not match any results. Try searching other terms.
@@ -607,6 +725,109 @@ en:
 
 
 The ranges of every measure can be found in the [vitality-ranges.yml](https://github.com/italia/developers-italia-backend/blob/master/crawler/vitality-ranges.yml) file."
+    publiccode:
+      categories:
+        accounting: accounting
+        agile-project-management: agile project management
+        applicant-tracking: applicant tracking
+        application-development: application development
+        appointment-scheduling: appointment scheduling
+        backup: backup
+        billing-and-invoicing: billing and invoicing
+        blog: blog
+        budgeting: budgeting
+        business-intelligence: business intelligence
+        business-process-management: business process management
+        cad: CAD
+        call-center-management: call center management
+        cloud-management: cloud management
+        collaboration: collaboration
+        communications: communications
+        compliance-management: compliance management
+        contact-management: contact management
+        content-management: content management
+        crm: CRM
+        customer-service-and-support: customer service and support
+        data-analytics: data analytics
+        data-collection: data collection
+        data-visualization: data visualization
+        digital-asset-management: digital asset management
+        digital-citizenship: digital citizenship
+        document-management: document management
+        donor-management: donor management
+        e-commerce: e-commerce
+        e-signature: e-signature
+        educational-content: educational-content
+        email-management: email management
+        email-marketing: email marketing
+        employee-management: employee management
+        enterprise-project-management: enterprise project management
+        enterprise-social-networking: enterprise social networking
+        erp: ERP
+        event-management: event management
+        facility-management: facility management
+        feedback-and-reviews-management: feedback and reviews management
+        financial-reporting: financial reporting
+        fleet-management: fleet management
+        fundraising: fundraising
+        gamification: gamification
+        geographic-information-systems: geographic information systems
+        grant-management: grant management
+        graphic-design: graphic design
+        help-desk: help desk
+        hr: HR
+        ide: IDE
+        identity-management: identity management
+        instant-messaging: instant messaging
+        inventory-management: inventory management
+        it-asset-management: IT asset management
+        it-development: IT development
+        it-management: IT management
+        it-security: IT security
+        it-service-management: IT service management
+        knowledge-management: knowledge management
+        learning-management-system: learning management system
+        marketing: marketing
+        mind-mapping: mind mapping
+        mobile-marketing: mobile marketing
+        mobile-payment: mobile payment
+        network-management: network management
+        office: office
+        online-booking: online booking
+        online-community: online community
+        payment-gateway: payment gateway
+        payroll: payroll
+        predictive-analysis: predictive analysis
+        procurement: procurement
+        productivity-suite: productivity suite
+        project-collaboration: project collaboration
+        project-management: project management
+        property-management: property management
+        real-estate-management: real estate management
+        remote-support: remote support
+        resource-management: resource management
+        sales-management: sales management
+        seo: SEO
+        service-desk: service desk
+        social-media-management: social media management
+        survey: survey
+        talent-management: talent management
+        task-management: task management
+        taxes-management: taxes management
+        test-management: test management
+        time-management: time management
+        time-tracking: time tracking
+        translation: translation
+        video-conferencing: video conferencing
+        video-editing: video editing
+        visitor-management: visitor management
+        voip: VoIP
+        warehouse-management: warehouse management
+        web-collaboration: web collaboration
+        web-conferencing: web conferencing
+        whistleblowing: whistleblowing
+        website-builder: website builder
+        workflow-management: workflow management
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more

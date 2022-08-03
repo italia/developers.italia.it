@@ -25,7 +25,8 @@ Il processo in sintesi:
 
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a> <a href="https://slack.developers.italia.it/"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a>
+<a class="btn btn-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Registrati su Slack </a>
 
 
 ## publiccode.yml
@@ -51,3 +52,69 @@ I software open source di terze parti, ovvero non messi a riuso dalla Pubblica A
 1. compilare ed includere il file `publiccode.yml` nel repositorio (lasciando vuoto il campo `codiceIPA`);
 2. aggiungere l'URL del repositorio nella [lista](https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml) aprendo una pull request su GitHub.
 
+## PNRR: soluzioni a Catalogo
+
+Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
+e in particolare quelli previsti dalla Missione 1, Componente 1 in capo al Dipartimento per la trasformazione digitale, 
+abbiamo implementato alcuni percorsi di ricerca tematici, che agevolino le Pubbliche Amministrazioni a 
+reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/){:target="_blank" rel="noopener noreferrer"}.
+
+Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
+Codice dell'Amministrazione Digitale (Artt. [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html){:target="_blank" rel="noopener noreferrer"} 
+e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html){:target="_blank" rel="noopener noreferrer"}) effettuando una **valutazione comparativa** che dia priorità,
+nell'ordine, al software a riuso ed open source di terze parti. 
+
+Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file `publiccode.yml`, utilizzato
+per la pubblicazione delle schede di presentazione del Catalogo.
+
+Per autocertificare la propria soluzione è necessario seguire le istruzioni di seguito riportate.
+
+### Istruzioni
+
+All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserire i seguenti tag:
+
+* "`PNRR`" per indicare che il software appartiene alla categoria
+* "`PNRR/Beneficiari/{NOME BENEFICIARIO}`" per indicare che il software può avere come beneficiari quelli indicati. Questo valore può essere ripetuto tante volte quanto necessario.
+
+  Esempio: "`PNRR/Beneficiari/Scuole`"
+  
+  I possibili nomi di beneficiari sono:
+    - "`Comuni`"
+    - "`Scuole`"
+    - "`ASL`"
+    - "`Enti Regionali`"
+    - "`Università`"
+    - "`PA Centrali`"
+    - "`Province`"
+    - "`Istituti di ricerca e AFAM`"
+    - "`Altri enti`"
+* `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. Questo valore può essere ripetuto tante volte quanto necessario.
+  
+  Esempio: "`PNRR/Misura/1.2`"
+
+  Le possibili misure sono:
+    - "`1.1`" per Infrastrutture digitali
+    - "`1.2`" per Abilitazione e facilitazione migrazione al Cloud
+    - "`1.3.1`" per Piattaforma Digitale Nazionale Dati
+    - "`1.3.2`" per Sportello Digitale Unico
+    - "`1.4.1`" per Esperienza del Cittadino nei servizi pubblici
+    - "`1.4.2`" per Accessibilità
+    - "`1.4.3`" per Adozione pagoPA e app IO
+    - "`1.4.4`" per Adozione identità digitale
+    - "`1.4.5`" per Digitalizzazione degli avvisi pubblici
+    - "`1.4.6`" per MaaS - Mobility as a service
+    - "`1.5`" per Cybersecurity
+    - "`1.6`" per Digitalizzazione grandi amministrazioni centrali
+    - "`1.7.1`" per Servizio civile digitale
+    - "`1.7.2`" per Centri di facilitazione digitale
+
+Per esempio, per dichiarare che un software può essere utile per rispondere alla misura 1.4.1 con beneficiari i comuni, nel file `publiccode.yml` si può inserire:
+
+    description:
+      it:
+        features:
+          - PNRR
+          - PNRR/Beneficiari/Comuni
+          - PNRR/Misura/1.4.1
+
+Il Catalogo presenta [un filtro di ricerca "PNRR"](/it/search?pnrr=1), che permette di trovare le soluzioni per ciascuno dei tre elementi sopra riportati.

@@ -7,7 +7,7 @@ layout: internal-long
 ---
 
 La Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione
-digitale, con sede in Largo Pietro di Brazzà 86, 00186 Roma, ha realizzato
+digitale, con sede in Largo Pietro di Brazzà 86, 00187 Roma, ha realizzato
 questo sito con lo scopo di contribuire alla crescita e al coordinamento di
 una community interessata allo sviluppo di codice strumentale al funzionamento
 dei servizi online della pubblica amministrazione.

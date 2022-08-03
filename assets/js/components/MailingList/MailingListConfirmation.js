@@ -6,7 +6,8 @@ const messages = {
     loading: 'Iscrizione in corso...',
     placeholder: 'indirizzo email',
     errorText: 'Qualcosa è andato storto 😔 Riprova più tardi',
-    successText: "L'iscrizione è andata a buon fine, riceverai aggiornamenti sulle nostre iniziative!",
+    successText:
+      "L'iscrizione è andata a buon fine, riceverai aggiornamenti sulle iniziative di Developers Italia e Designers Italia!",
   },
   en: {
     loading: 'Subscribing...',

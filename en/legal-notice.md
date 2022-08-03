@@ -6,99 +6,91 @@ ref:
 layout: internal-long
 ---
 
-La Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione
-digitale, con sede in Largo Pietro di Brazzà 86, 00186 Roma, ha realizzato
-questo sito con lo scopo di contribuire alla crescita e al coordinamento di
-una community interessata allo sviluppo di codice strumentale al funzionamento
-dei servizi online della pubblica amministrazione.
+The Presidency of the Council of Ministers - Department for digital
+transformation, based in Largo Pietro di Brazzà 86, 00187 Rome, has created
+this site with the aim of contributing to the growth and coordination of
+a community interested in the development of code instrumental to
+the needs of public administration's online services.
 
-## Licenza dei contenuti
+## Content License
 
-In applicazione del principio open by default ai sensi dell’articolo 52 del
-decreto legislativo 7 marzo 2005, n. 82 (CAD) e salvo dove diversamente
-specificato (compresi i contenuti incorporati di terzi), i dati, i documenti e
-le informazioni pubblicati sul sito sono rilasciati con licenza
-[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it).
+In application of the open by default principle pursuant to Article 52 of
+legislative decree 7 March 2005, n. 82 (CAD) and unless otherwise
+specified (including embedded third party content), data, documents and
+the information published on the site are
+[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it) licensed.
 
-Gli utenti sono quindi liberi di condividere (riprodurre, distribuire,
-comunicare al pubblico, esporre in pubblico, rappresentare, eseguire e recitare
-questo materiale con qualsiasi mezzo e formato) e modificare (trasformare il
-materiale e utilizzarlo per opere derivate) per qualsiasi fine, anche
-commerciale con il solo onere di attribuzione, senza apporre restrizioni
-aggiuntive.
+Users are therefore free to share (reproduce, distribute,
+communicate to the public, exhibit in public, represent, perform and act
+this material in any medium and format) and modify (transform the
+material and use it for derivative works) for any purpose, too
+commercial with the sole charge of attribution, without placing restrictions
+additional.
 
-## Collegamenti a siti esterni e contenuti incorporati
+## Links to external sites and embedded content
 
-I collegamenti a siti esterni di terzi, indicati nel presente sito, nonché i
-contenuti incorporati di terzi sono forniti come semplice servizio agli utenti.
-L’indicazione dei collegamenti a siti esterni di terzi o l’inserimento di
-contenuti incorporati di terzi non implica da parte della Presidenza del
-Consiglio dei Ministri alcun tipo di approvazione o condivisione di
-responsabilità in relazione alla legittimità, alla completezza e alla
-correttezza delle informazioni contenute nei siti indicati.
+Links to external third party sites, indicated on this site, as well as
+embedded third party content is provided as a simple service to users.
+Links to external third party sites or the inclusion of
+embedded content of third parties does not imply on the part of the Presidency of the
+Cabinet of any kind of approval or sharing of
+liability in relation to legitimacy, completeness and
+correctness of the information contained in the sites indicated.
 
 ## Social media policy
 
-La Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione
-digitale utilizza i social media per finalità istituzionali, per accrescere la
-trasparenza e la conoscenza delle proprie attività: informa, comunica, ascolta e
-pubblica contenuti di carattere istituzionale.
+The Presidency of the Council of Ministers - Department for digital transformation
+ uses social media for institutional purposes, to increase the
+transparency and knowledge of its activities: it informs, communicates, listens and
+publishes institutional content.
 
-I contenuti pubblicati comprendono immagini, video, comunicati stampa,
-informazioni di servizio, notizie relative all’attività del Dipartimento nonché
-opportunità di coinvolgimento e partecipazione dei cittadini.
+The published contents include images, videos, press releases,
+service information, news relating to the activities of the Department as well as
+opportunities for citizen involvement and participation.
 
-Attraverso i propri canali social, il Dipartimento può condividere e rilanciare
-contenuti e messaggi di pubblico interesse e utilità pubblicate da altri utenti.
-Laddove pubblicati direttamente dal Dipartimento, tutti i contenuti sono
-rilasciati secondo il principio di open by default con licenza
+Through its social channels, the Department can share
+contents and messages of public interest published by other users.
+Where published directly by the Department, all contents are
+released according to the licensed open by default principle
 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode.it).
 
-Trattiamo i tuoi dati personali come previsto nella privacy policy di questo
-sito.
+We treat your personal data as provided in the privacy policy of this
+site.
 
-Il Dipartimento si impegna a gestire spazi di comunicazione e dialogo
-all’interno dei propri profili, costantemente monitorati, nei diversi social
-media, chiedendo ai propri utenti il rispetto di alcune semplici regole:
+The Department is committed to managing spaces for communication and dialogue
+within its profiles, constantly monitored, in the various social media networks, asking its users to respect some simple rules:
 
-* A tutti si chiede di esporre la propria opinione con correttezza, misura e rispetto.
-* Nei social media ognuno è responsabile dei contenuti che pubblica e delle
-  opinioni che esprime. Non saranno comunque tollerati insulti, volgarità, offese,
-  minacce e, in generale, atteggiamenti discriminatori, violenti o diffamatori.
-* I contenuti pubblicati devono rispettare sempre la privacy delle persone.
-  Vanno evitati riferimenti a fatti o a dettagli privi di rilevanza pubblica e
-  che ledano la sfera personale di terzi.
-* L’interesse degli argomenti rispetto alle attività della Presidenza del
-  Consiglio dei Ministri è un requisito essenziale: non è possibile in alcun
-  modo utilizzare questi spazi per scopi diversi da quelli istituzionali.
-* Ogni discussione è legata a un tema specifico: a tutti i partecipanti è
-  richiesto di rispettarlo.
-* Non sarà tollerata alcuna forma di pubblicità, spam o promozione di interessi
-  privati o di attività illegali.
-* Non sono ammessi contenuti che violino il diritto d’autore né l’utilizzo non
-  autorizzato di marchi registrati.
+* Everyone is asked to express their opinion with fairness, measure and respect.
+* In social media, everyone is responsible for the content they post and for
+  opinions it expresses. In any case, insults, vulgarity, offenses, abuse,
+  threats and, in general, discriminatory, violent or defamatory attitudes will not be tolerated.
+* The published contents must always respect the privacy of people.
+  References to facts or details without public relevance and
+  that harm the personal sphere of third parties should be avoided.
+* The interest of the topics with respect to the activities of the Presidency of the
+  Council of Ministers is an essential requirement: using these spaces for purposes other than institutional ones is not
+allowed.
+* Each discussion is linked to a specific theme: to all participants it is
+  required to respect it.
+* No form of advertising, spam or promotion of private interests or illegal activities will be tolerated.
+* Content that violate copyright or non-authorized use of trademark is not allowed
 
-In ogni caso, ove il social media lo permetta, saranno rimossi dallo staff
-tutti i post, i commenti o i materiali audio/video che:
+Where social media allows it, posts, comments or audio / video material will be removed by the staff in case of:
 
-* presentano un linguaggio inappropriato e/o un tono minaccioso, violento,
-  volgare o irrispettoso;
-* presentano contenuti illeciti o di incitamento a compiere attività illecite;
-* hanno contenuti offensivi, ingannevoli, allarmistici, o in violazione di
-  diritti di terzi;
-* divulgano dati e informazioni personali o che possono cagionare danni o ledere
-  la reputazione di terzi;
-* presentano contenuti a contenuto osceno, pornografico o pedopornografico, o
-  tale da offendere la sensibilità degli utenti;
-* hanno un contenuto discriminatorio per genere, razza, etnia, lingua, credo
-  religioso, opinioni politiche, orientamento sessuale, età, condizioni
-  personali e sociali;
-* promuovono o sostengono attività illegali, che violano il copyright o diritti
-  di terzi.
+* inappropriate language and / or a threatening, violent,
+  vulgar or disrespectful tone;
+* illegal content or incitement to carry out illegal activities;
+* offensive, deceptive, alarmist content or in violation of rights of third parties;
+* disclosure of personal data or information that may cause damage or harm
+  the reputation of third parties;
+* obscene, pornographic or child pornography content, or content that offend the sensitivity of users;
+* discriminatory content based on gender, race, ethnicity, language, creed
+  religious, political opinions, sexual orientation, age, conditions
+  personal and social;
+* promotion or support of illegal activities, that infringe copyright or rights
+  of third parties.
 
-Per chi dovesse violare ripetutamente queste condizioni, quelle contenute nelle
-policy degli strumenti adottati o comunque mette a rischio la sicurezza dei
-sistemi, il Dipartimento si riserva il diritto di usare il ban o il blocco
-(quando possibile dopo un primo avvertimento) per impedire ulteriori interventi,
-e di segnalare l’utente ai responsabili della piattaforma ed eventualmente alle
-forze dell’ordine.
+Department reserves the right to use the ban or block users who repeatedly
+violate these conditions (when possible after a first warning),
+and to report the user to the social media platform and possibly to the
+police.

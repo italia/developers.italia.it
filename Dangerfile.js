@@ -3,7 +3,7 @@ const configConventional = require('@commitlint/config-conventional');
 
 (async () => {
   const commitlintConfig = {
-    severity: 'fail'
+    severity: 'warn',
   };
   await commitlint(configConventional.rules, commitlintConfig);
 })();

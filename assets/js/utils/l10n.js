@@ -4,9 +4,11 @@
  */
 import yaml from 'js-yaml';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
-import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
+import softwareCategoriesYml from '!raw-loader!../../../_data/publiccode_categories.yml';
 import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
-import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
+import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/publiccode_scopes.yml';
+import softwarePNRRTargetsYml from '!raw-loader!../../../_data/pnrr_targets.yml';
+import softwarePNRRMeasuresYml from '!raw-loader!../../../_data/pnrr_measures.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 
 export const lang = window.lang;
@@ -35,4 +37,23 @@ export const getSoftwareDevelopmentStatuses = () => {
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
   return softwareIntendedAudiences.map((value) => [value, value.replace(/-/gi, ' ')]);
+};
+
+export const softwarePNRR = [['1', l10NLabels.software.pnrr]];
+
+export const getSoftwarePNRRTargets = () => {
+  const PNRRTargets = yaml.load(softwarePNRRTargetsYml);
+  return PNRRTargets.map((value) => [value, value.replace(/-/gi, ' ')]);
+};
+
+export const getSoftwarePNRRMeasures = () => {
+  const PNRRMeasures = yaml.load(softwarePNRRMeasuresYml);
+  return Object.entries(PNRRMeasures).reduce((acc, [key, value]) => {
+    if (value) {
+      acc.push([key, `${key}-${value}`]);
+    } else {
+      acc.push([key, `${key}`]);
+    }
+    return acc;
+  }, []);
 };

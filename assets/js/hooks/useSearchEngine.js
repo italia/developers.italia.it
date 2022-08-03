@@ -52,8 +52,18 @@ const areMoreItemsAvailable = (from, size, total) => from + size < total;
 export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
   const [{ items, total, isLoading, errorMessage }, dispatch] = useReducer(reducer, initial);
   const dispatchGlobal = useContext(searchContextDispatch);
-  const { filterCategories, filterDevelopmentStatuses, filterIntendedAudiences, page, type, searchValue, sortBy } =
-    useContext(searchContextState);
+  const {
+    filterCategories,
+    filterDevelopmentStatuses,
+    filterIntendedAudiences,
+    filterPNRR,
+    filterPNRRTargets,
+    filterPNRRMeasures,
+    page,
+    type,
+    searchValue,
+    sortBy,
+  } = useContext(searchContextState);
   // This feature is mainly used by the infiniteScroll to reload the previous items just after an user click on the browser back button
   const reloadItemsUntilPage = useRef(page > 0 ? page : false);
   // If we aren't in the "resume mode" the from is incremental
@@ -78,6 +88,9 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
             categories: filterCategories,
             developmentStatuses: filterDevelopmentStatuses,
             intendedAudiences: filterIntendedAudiences,
+            pnrr: filterPNRR,
+            pnrrTargets: filterPNRRTargets,
+            pnrrMeasures: filterPNRRMeasures,
           },
           searchValue,
           sortBy,
@@ -109,6 +122,9 @@ export const useSearchEngine = ({ pageSize } = { pageSize: 12 }) => {
     filterCategories,
     filterDevelopmentStatuses,
     filterIntendedAudiences,
+    filterPNRR,
+    filterPNRRTargets,
+    filterPNRRMeasures,
     sortBy,
     page,
     from,
