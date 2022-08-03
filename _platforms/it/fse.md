@@ -18,7 +18,7 @@ owners:
     url: https://www.salute.gov.it/
 resources:
   - Supporto Sviluppo:
-    - title: Pagina di supporto github
+    - title: Repository su GitHub con materiale di supporto
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
       desc: Supporto integrazione Gateway.
