@@ -18,7 +18,7 @@ owners:
     url: https://www.salute.gov.it/
 resources:
   - Integrazione con il Gateway:
-    - title: Strumenti utili per interazione Gateway
+    - title: Strumenti utili per integrazione Gateway
       icon: github
       url: https://github.com/ministero-salute/it-fse-gtw-tools
       desc: Utilities per generazione JWT e iniezione CDA nel PDF
