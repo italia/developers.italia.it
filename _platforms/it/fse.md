@@ -105,7 +105,7 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 
 ## Prima fase di sperimentazione
 
-E' prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
+È prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
 
 ## Canali
 
