@@ -17,6 +17,19 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
+  - Risorse per lo sviluppo:
+    - title: Repository su GitHub con materiale di supporto
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support
+      desc: Supporto integrazione Gateway.
+    - title: Schematron e xsd
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/validazione
+      desc: Schematron e xsd utilizzabili per la validazione dei documenti CDA2.
+    - title: OpenAPI validazione CDA2
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
+      desc: OpenAPI Gateway servizio di validazione CDA2.
   - Documentazione:
     - title: Linee guida per l'attuazione FSE 2.0
       url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
@@ -38,19 +51,6 @@ resources:
       icon: link
       url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
       desc: Link al sito AgID, riferimento specifiche tecniche.
-  - Risorse esterne:
-    - title: Repository su GitHub con materiale di supporto
-      icon: github
-      url: https://github.com/ministero-salute/it-fse-support
-      desc: Supporto integrazione Gateway.
-    - title: Schematron e xsd
-      icon: github
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/validazione
-      desc: Schematron e xsd utilizzabili per la validazione dei documenti CDA2.
-    - title: OpenAPI validazione CDA2
-      icon: github
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
-      desc: OpenAPI Gateway servizio di validazione CDA2.
 ---
 
 ## Intro
