@@ -101,7 +101,7 @@ Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà ri
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso il [il sistema di issue su GitHub](https://github.com/ministero-salute/it-fse-support/issues) o il [canale slack #fse](https://developersitalia.slack.com/archives/C03RDT88FSM) su Developers Italia.
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso [il sistema di issue su GitHub](https://github.com/ministero-salute/it-fse-support/issues) o il [canale slack #fse](https://developersitalia.slack.com/archives/C03RDT88FSM) su Developers Italia.
 
 ## Prima fase di sperimentazione
 
