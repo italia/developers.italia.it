@@ -17,8 +17,12 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
-  - Risorse per lo sviluppo:
-    - title: Repository su GitHub con materiale di supporto
+  - Integrazione con il Gateway:
+    - title: Strumenti utili per interazione Gateway
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-gtw-tools
+      desc: Utilities per generazione JWT e iniezione CDA nel PDF
+    - title: Repository meta su GitHub con materiale di supporto
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
       desc: Supporto integrazione Gateway.
@@ -26,10 +30,10 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/validazione
       desc: Schematron e xsd utilizzabili per la validazione dei documenti CDA2.
-    - title: OpenAPI validazione CDA2
+    - title: OpenAPI per il servizio di validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
-      desc: OpenAPI Gateway servizio di validazione CDA2.
+      desc: OpenAPI del Gateway servizio di validazione CDA2.
   - Documentazione:
     - title: Linee guida per l'attuazione FSE 2.0
       url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
@@ -88,20 +92,21 @@ dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle st
 documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
 Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/node/2359).
 
- Il documento [Piattaforma di telemedicina ed Ecosistema FSE](#) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
+ Il documento [Piattaforma di telemedicina ed Ecosistema FSE](https://github.com/ministero-salute/it-fse-support/tree/main/doc/telemedicina) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
 
 
 ## Codice della piattaforma
 
-Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open  FLOSS (Free and Open Source Software) raggiunta una prima release stabile. Il codice sarà pubblicato su [GitHub del Ministero](https://github.com/ministero-salute/it-fse-landing) della Salute.
+Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open source raggiunta una prima release stabile. Il codice sarà pubblicato dal Ministero della Salute non appena disponibile.
 
 ## Aiutaci a migliorare
 
-Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso il [canale Issue tracker](https://github.com/ministero-salute/it-fse-support/issues) ed il [canale slack #fse](https://developersitalia.slack.com/archives/C03RDT88FSM) su Developers Italia.
+Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso il [il sistema di issue su GitHub](https://github.com/ministero-salute/it-fse-support/issues) o il [canale slack #fse](https://developersitalia.slack.com/archives/C03RDT88FSM) su Developers Italia.
 
 ## Prima fase di sperimentazione
 
 E' prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
+
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" />Richiesta di supporto tramite GitHub</a>
