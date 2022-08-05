@@ -1,0 +1,1047 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    FSE
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="FSE" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari." />
+<meta property="og:description" content="Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari." />
+<link rel="canonical" href="https://developers.italia.it/it/fse/" />
+<meta property="og:url" content="https://developers.italia.it/it/fse/" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-05T11:31:10+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="FSE" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"description":"Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.","@type":"BlogPosting","url":"https://developers.italia.it/it/fse/","headline":"FSE","dateModified":"2022-08-05T11:31:10+00:00","datePublished":"2022-08-05T11:31:10+00:00","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/fse/"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202208051131" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-platform">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ITA</span>
+    <span class="sr-only">lingua attiva:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it"><span lang="it">italiano</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en"><span lang="en">english</span>
+        
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">Sviluppiamo i servizi pubblici, insieme</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Menu di navigazione</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/api" class="Linklist-link "  >
+        
+        API
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+    
+
+ 
+
+<div class="project__first-part">
+  <div class="container">
+    <div class="d-flex">
+      
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="project__header">
+          <h1 class="d-inline h1">FSE</h1>
+          <h2 class="d-inline h1">Fascicolo Sanitario Elettronico 2.0</h2>
+          
+          <p class="lead pt-3 pb-3 project__desc">
+            Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.
+
+          </p>
+          
+        </div>
+        <div class="project__actors row">
+          
+          <div class="col-12 col-lg-4">
+            <span class="d-block">Titolare</span>
+            <ul class="list-unstyled">
+              
+              <li><a href="https://www.salute.gov.it/" target="_blank">Ministero della Salute</a></li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="col-12 col-lg-4 text-truncate">
+            <span class="d-block">Sito web</span>
+            <a href="https://www.fascicolosanitario.gov.it" target="_blank">https://www.fascicolosanitario.gov.it</a>
+          </div>
+          
+
+          
+          
+
+          
+          
+
+          <div class="col-12 col-lg-4">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        
+
+      </div>
+    </div>
+    <div class="project__heroback">
+      FSE
+    </div>
+  </div>
+</div>
+
+<section class="project__content with-resources">
+  <div class="container d-flex justify-content-center">
+
+    <div class="project__maincontent col-md-10">
+      <h2 id="intro">Intro</h2>
+
+<p>Il Fascicolo Sanitario Elettronico (FSE) è lo strumento attraverso il quale il cittadino può raccogliere e consultare tutta la propria storia sanitaria, condividendola in maniera sicura ed efficiente con gli operatori sanitari.</p>
+
+<h4 id="obiettivi">Obiettivi</h4>
+<p>Il Piano Nazionale di Ripresa e Resilienza (PNRR), Missione 6 Componente 2, promuove il potenziamento del Fascicolo Sanitario Elettronico (FSE) nella sua versione 2.0 al fine di garantirne la <strong>diffusione, l’omogeneità e l’accessibilità su tutto il territorio nazionale</strong> da parte degli assistiti e operatori sanitari.</p>
+
+<p>Secondo le Linee guida di attuazione il FSE dovrà diventare:</p>
+<ul>
+  <li>il punto di accesso per tutti i cittadini ai servizi del SSN, indipendentemente dalla regione di appartenenza;</li>
+  <li>un ecosistema di servizi basati sui dati e documenti per i professionisti sanitari per la diagnosi e cura dei propri assistiti consentendo una assistenza sempre più personalizzata;</li>
+  <li>uno strumento di prevenzione per le strutture ed istituzioni sanitarie.</li>
+</ul>
+
+<p>Affinché ciò avvenga è necessario che l’infrastruttura tecnologica evolva per:</p>
+<ul>
+  <li>rendere FSE omogeneo sul territorio nazionale per dati contenuti, servizi offerti, semplicità di utilizzo/interfaccia e portabilità;</li>
+  <li>assicurare che i documenti che alimentano il FSE siano effettivamente prodotti secondo gli standard nazionali;</li>
+  <li>rendere più efficace l’interoperabilità tra fascicoli regionali;</li>
+  <li>realizzare una effettiva gestione del dato da affiancare a quella del documento;</li>
+  <li>garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).</li>
+</ul>
+
+<h4 id="architettura">Architettura</h4>
+<p>Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e centrali che interoperano tra loro e con altri sistemi secondo modelli di interoperabilità standard <a href="https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/01_Pattern%20interazione/01_introduzione.html">(ModI definito da AgID)</a>.</p>
+
+<p><img src="/assets/images/fse/FSE2.png" alt="" /></p>
+
+<p>Per consentire una gestione più efficace del dato vengono introdotti due nuovi elementi infrastrutturali:
+<strong>il Gateway</strong>, che ha il compito di verificare la coerenza nell’applicazione degli standard, sia per dati che per documenti, 
+<strong>l’Ecosistema Dati Sanitari (EDS)</strong> che raccoglie, gestisce e rende fruibile il dato mediante servizi REST.  L’EDS, mediante servizi di sottoscrizione e sincronizzazione può alimentare repository regionali con i dati di pertinenza delle regioni nelle modalità indicate dalla norma. L’EDS infine realizza le funzionalità di monitoraggio di alimentazione e di utilizzo del sistema FSE da parte del cittadino e degli operatori sanitari.</p>
+
+<h4 id="standard-per-dati-e-documenti">Standard per dati e documenti</h4>
+<p>Le Linee guida di attuazione del Fascicolo Sanitario elettronico prevedono che nel FSE 2.0 confluiscano:
+dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle strutture e archiviati nel Data Repository Centrale (e opzionalmente presso data repository locali)
+documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
+Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il <a href="http://www.hl7italia.it/hl7italia_D7/node/2359">sito ufficiale di HL7 Italia</a>.</p>
+
+<p>Il documento <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/telemedicina">Piattaforma di telemedicina ed Ecosistema FSE</a> fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.</p>
+
+<h2 id="codice-della-piattaforma">Codice della piattaforma</h2>
+
+<p>Il codice sorgente del Gateway e dell’EDS (Ecosistema Dati Sanitari) verrà rilasciato con licenza open source raggiunta una prima release stabile. Il codice sarà pubblicato dal Ministero della Salute non appena disponibile.</p>
+
+<h2 id="aiutaci-a-migliorare">Aiutaci a migliorare</h2>
+
+<p>Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscontrato nell’utilizzo della piattaforma attraverso <a href="https://github.com/ministero-salute/it-fse-support/issues">il sistema di issue su GitHub</a> o il <a href="https://developersitalia.slack.com/archives/C03RDT88FSM">canale slack #fse</a> su Developers Italia.</p>
+
+<h2 id="prima-fase-di-sperimentazione">Prima fase di sperimentazione</h2>
+
+<p>È prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto <a href="mailto:fse_support@sogei.it">fse_support@sogei.it</a>, verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l’accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.</p>
+
+<h2 id="canali">Canali</h2>
+
+<p><a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn"></i>Richiesta di supporto tramite GitHub</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment"></i> Canale Slack (#fse)</a></p>
+
+
+      
+      <h2>Risorse</h2>
+      <section id="resources" class="project__resources">
+    <!--<h1 class="text-center" >Risorse</h1>-->
+    <div class="container pb-md-4">
+
+        <nav>
+            <div class="nav nav-tabs nav-fill project__resources-header" id="project-resources" role="tablist">
+                
+                
+                <a class="nav-item nav-link active" id="resourcegroup-1"
+                    data-toggle="tab" href="#resourcecontent-1" role="tab"
+                    aria-controls="resourcecontent-1"
+                    aria-selected="true">Integrazione con il Gateway</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-2"
+                    data-toggle="tab" href="#resourcecontent-2" role="tab"
+                    aria-controls="resourcecontent-2"
+                    aria-selected="false">Documentazione</a>
+                
+            </div>
+        </nav>
+
+
+        <div class="tab-content project__resources-contents" id="project-resources-contents">
+            
+            
+            <div class="tab-pane fade show active" id="resourcecontent-1"
+                role="tabpanel" aria-labelledby="resourcegroup-1">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-gtw-tools" target="_blank" class="d-block project__resources-itemtitle">Strumenti utili per integrazione Gateway</a>
+                        <p>Utilities per generazione JWT e iniezione CDA nel PDF</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support" target="_blank" class="d-block project__resources-itemtitle">Repository meta su GitHub con materiale di supporto</a>
+                        <p>Supporto integrazione Gateway.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/validazione" target="_blank" class="d-block project__resources-itemtitle">Schematron e xsd</a>
+                        <p>Schematron e xsd utilizzabili per la validazione dei documenti CDA2.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway" target="_blank" class="d-block project__resources-itemtitle">OpenAPI per il servizio di validazione CDA2</a>
+                        <p>OpenAPI del Gateway servizio di validazione CDA2.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-2"
+                role="tabpanel" aria-labelledby="resourcegroup-2">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg" target="_blank" class="d-block project__resources-itemtitle">Linee guida per l'attuazione FSE 2.0</a>
+                        <p>Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg" target="_blank" class="d-block project__resources-itemtitle">Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi</a>
+                        <p>Decreto contenuti pubblicato in Gazzetta Ufficiale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway" target="_blank" class="d-block project__resources-itemtitle">Specifiche di integrazione servizio di validazione CDA2</a>
+                        <p>Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="http://www.hl7italia.it/hl7italia_D7/node/2359" target="_blank" class="d-block project__resources-itemtitle">Specifiche HL7 CDA2</a>
+                        <p>Link al sito Hl7 Italia con riferimento allo standard documentale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici" target="_blank" class="d-block project__resources-itemtitle">Specifiche tecniche AgID</a>
+                        <p>Link al sito AgID, riferimento specifiche tecniche.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+      
+
+      
+    </div>
+
+    
+    <div class="sideblock-wrapper col-md-3 d-none d-lg-block">
+  <div class="sideblock">
+    
+    
+    <a href="https://www.fascicolosanitario.gov.it" target="_blank">
+    
+      <img alt="FSE Sito web" src="/assets/images/FSE_EXT.png" style="max-width: 100%; margin-bottom: 10px">
+    
+    </a>
+    
+    
+
+    
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#intro">Intro</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#obiettivi">Obiettivi</a></li>
+<li class="toc-entry toc-h4"><a href="#architettura">Architettura</a></li>
+<li class="toc-entry toc-h4"><a href="#standard-per-dati-e-documenti">Standard per dati e documenti</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#codice-della-piattaforma">Codice della piattaforma</a></li>
+<li class="toc-entry toc-h2"><a href="#aiutaci-a-migliorare">Aiutaci a migliorare</a></li>
+<li class="toc-entry toc-h2"><a href="#prima-fase-di-sperimentazione">Prima fase di sperimentazione</a></li>
+<li class="toc-entry toc-h2"><a href="#canali">Canali</a></li>
+</ul>
+    
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#resources">Integrazione con il Gateway, Documentazione</a></li>
+    </ul>
+    
+    
+    
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+<a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">torna all'inizio dei contenuti</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Progetto di</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaborazione con</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/it/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali">Note legali</a></li>
+      
+      
+      <li><a href="/it/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
