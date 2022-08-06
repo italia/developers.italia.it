@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202208051131" rel="stylesheet">
+  <link href="/dist/main.css?202208060602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -705,7 +705,7 @@ webApp di backoffice per gli operatori sanitari della Regione Piemonte.
           <p>Vitality:</p>
           <p class="score d-inline-block"> 50%</p>
           
-          <div id="softwareChart" data-vitality='[46,46,46,46,46,46,82,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]'>
+          <div id="softwareChart" data-vitality='[46,46,46,46,46,82,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -739,7 +739,7 @@ webApp di backoffice per gli operatori sanitari della Regione Piemonte.
         <div class="goto">
           <p>
             <a
-              href="https://github.com/regione-piemonte/deleghe.git"
+              href="https://github.com/regione-piemonte/scerev.git"
               aria-label="Go to the software's site (external link)"
               rel="noopener noreferrer"
               target="_blank"
@@ -806,6 +806,14 @@ webApp di backoffice per gli operatori sanitari della Regione Piemonte.
           
           <div class="function-list">
             
+            
+            <p> PNRR </p>
+            
+            <p> PNRR/Beneficiari/ASL </p>
+            
+            <p> PNRR/Beneficiari/Enti Regionali </p>
+            
+            <p> PNRR/Misura/1.4.1 </p>
             
             <p> Le API REST permettono al cittadino di scegliere o revocare il medico
 MMG o il pediatra. </p>
@@ -1073,55 +1081,37 @@ scelta medico e pediatra. </p>
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Le API REST (fruite tramite SANSOL / APISANSCEREV) permettono al cittadino</p>
+                <p>Le API REST (fruite tramite SANSOL / APISANSCEREV) permettono al cittadino
+di scegliere o revocare il Medico di Medicina Generale e il Pediatra senza
+recarsi alla ASL. È possibile scegliere il nuovo medico all’interno di un
+determinato ambito territoriale in base al proprio domicilio.</p>
 
-<p>di scegliere o revocare il Medico di Medicina Generale e il Pediatra senza</p>
+<p>La webApp permette all’operatore di back office di analizzare le richieste
+di scelta medico e pediatra relative a domande di assistenza temporanea e
+illimitata relative a particolari situazioni di domicilio in Piemonte, di
+soggiorno in Italia e di deroga per le quali è necessaria la valutazione
+dei dati e degli eventuali allegati inseriti dagli assistiti.</p>
 
-<p>recarsi alla ASL. È possibile scegliere il nuovo medico all’interno di un</p>
+<p>Gli assistiti che presentano domanda possono essere cittadini italiani o
+stranieri (comunitari o non comunitari).</p>
 
-<p>determinato ambito territoriale in base al proprio domicilio.</p>
+<p>Nei casi di richiesta del pediatra la domanda viene presentata dal
+genitore/tutore del minore.</p>
 
-<p>La webApp permette all’operatore di back office di analizzare le richieste</p>
+<p>L’operatore di back office ha la possibilità di ricercare, utilizzando
+specifici filtri, e di consultare nel dettaglio le domande compilate dagli
+assistiti via web. In base ai contenuti inseriti, l’operatore ha la
+possibilità di accettare la domanda, di richiedere eventuali rettifiche
+e/o integrazioni relative agli allegati forniti ed eventualmente di
+respingere la domanda qualora i dati inseriti non siano compatibili o
+congruenti con la richiesta effettuata.</p>
 
-<p>di scelta medico e pediatra relative a domande di assistenza temporanea e</p>
+<p>Il servizio propone l’impostazione di alcuni parametri che possono essere
+confermati o modificati dall’operatore di sportello.</p>
 
-<p>illimitata relative a particolari situazioni di domicilio in Piemonte, di</p>
-
-<p>soggiorno in Italia e di deroga per le quali è necessaria la valutazione</p>
-
-<p>dei dati e degli eventuali allegati inseriti dagli assistiti.</p>
-
-<p>Gli assistiti che presentano domanda possono essere cittadini italiani o</p>
-
-<p>stranieri (comunitari o non comunitari).</p>
-
-<p>Nei casi di richiesta del pediatra la domanda viene presentata dal</p>
-
-<p>genitore/tutore del minore.</p>
-
-<p>L’operatore di back office ha la possibilità di ricercare, utilizzando</p>
-
-<p>specifici filtri, e di consultare nel dettaglio le domande compilate dagli</p>
-
-<p>assistiti via web. In base ai contenuti inseriti, l’operatore ha la</p>
-
-<p>possibilità di accettare la domanda, di richiedere eventuali rettifiche</p>
-
-<p>e/o integrazioni relative agli allegati forniti ed eventualmente di</p>
-
-<p>respingere la domanda qualora i dati inseriti non siano compatibili o</p>
-
-<p>congruenti con la richiesta effettuata.</p>
-
-<p>Il servizio propone l’impostazione di alcuni parametri che possono essere</p>
-
-<p>confermati o modificati dall’operatore di sportello.</p>
-
-<p>Il servizio aggiorna in automatico tutti i dati dell’assistito e dei</p>
-
-<p>medici (precedente e attuale) presenti nell’Archivio Unico Regionale degli</p>
-
-<p>Assistiti (AURA).</p>
+<p>Il servizio aggiorna in automatico tutti i dati dell’assistito e dei
+medici (precedente e attuale) presenti nell’Archivio Unico Regionale degli
+Assistiti (AURA).</p>
 
               </div>
             </div>
