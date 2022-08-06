@@ -22,7 +22,7 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-gtw-tools
       desc: Utilities per generazione JWT e iniezione CDA nel PDF
-    - title: Repository meta su GitHub con materiale di supporto
+    - title: Repository GitHub con materiale di supporto
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
       desc: Supporto integrazione Gateway.
