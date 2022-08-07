@@ -142,3 +142,7 @@
 - name: "Trasporti Lecce"
   repos:
     - "https://github.com/piersoft/trasportilecceeu"
+
+- name: "Spunta"
+  repos:
+    - "https://gitlab.com/madbob/spunta"
