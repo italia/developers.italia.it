@@ -116,7 +116,7 @@ it:
       amministrazioni</a> indica il grado di attività svolta nell'ultimo arco
       temporale su ogni repository indicizzato in catalogo. Una spiegazione approfondita dei parametri
       utilizzati per effettuare il calcolo è presente in <a
-      href="https://github.com/italia/developers-italia-backend/blob/master/docs/vitalityIndexItaliano.md">
+      href="https://github.com/italia/publiccode-crawler/blob/main/docs/vitalityIndexItaliano.md">
       questa pagina</a>. Questo indice è calcolato ogni notte e, attualmente, la
       finestra temporale considerata è di 60 giorni.
   item11:
