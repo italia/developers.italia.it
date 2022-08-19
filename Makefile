@@ -14,9 +14,11 @@ bundle-setup:
 	gem install bundler:2.1.4
 
 bundle-install: bundle-setup
+	bundle config set path vendor/
 	bundle install
 
 bundle-install-deployment: bundle-setup
+	bundle config set path vendor/
 	bundle install --deployment
 
 test:
