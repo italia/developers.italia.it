@@ -103,28 +103,23 @@ comunicazione ricevuta oppure scrivendoci agli indirizzi sopra riportati.
 
 ## Cookie
 
-Questa sezione fornisce informazioni dettagliate sull'uso dei cookie, su come sono
-utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del decreto
-legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle
+Questa sezione fornisce informazioni dettagliate sull’uso dei cookie, su come
+sono utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del
+decreto legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle
 “[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)”
-emanate dal Garante per la protezione dei dati personali con provvedimento
-del 10 giugno 2021.
+emanate dal Garante per la protezione dei dati personali con provvedimento del
+10 giugno 2021.
 
-<https://developers.italia.it> utilizza cookie tecnici al fine di garantire il corretto
-funzionamento delle procedure e migliorare l'esperienza d'uso dei propri visitatori,
-il cui uso non è strumentale alla raccolta di dati personali identificativi
-dell'utente. Per questo motivo non abbiamo bisogno del tuo consenso per
-memorizzare i cookie.
-
-Utilizziamo anche i cookie analitici del servizio "Web Analytics Italia" (WAI)
-fornito da AGID che raccoglie dati statistici anonimi mediante IP anonimizzato
-relativi alle visite del sito Internet da parte degli utenti.
-
-Inoltre noi e i nostri fornitori ci asteniamo dal combinare questi cookie con altre
-elaborazioni né li trasmettiamo a terzi.
-Tali cookie vengono conservati per un periodo non superiore a 13 mesi dal momento della
-raccolta, salvo che la loro ulteriore conservazione non si renda necessaria per
-l’accertamento di reati.
+Il sito non utilizza cookie per la profilazione degli utenti, ma soltanto cookie
+tecnici al fine di garantire il corretto funzionamento delle procedure e
+migliorare l’esperienza d’uso dei propri visitatori, il cui uso non è
+strumentale alla raccolta di dati personali identificativi dell’utente, nonché
+cookie analitici volti alla raccolta di informazioni, in forma aggregata, sul
+numero degli utenti e su come gli stessi visitano il sito. In particolare,
+utilizziamo il servizio Web Analytics Italia fornito da AGID che prevede
+l'anonimizzazione dell'indirizzo IP dell' utente; per maggiori
+informazioni sulle funzionalità di WAI si rimanda alle
+[domande frequenti di AGID](https://webanalytics.italia.it/faq).
 
 ## Come disabilitare i cookie (opt-out) sul proprio dispositivo
 
@@ -140,4 +135,4 @@ i cookie, il sito potrebbe non funzionare correttamente.
 * [Edge](https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies)
 * [Opera](https://help.opera.com/en/latest/web-preferences/#cookies)
 
-*Ultimo aggiornamento: 12/07/2022*
+*Ultimo aggiornamento: 13/09/2022*
