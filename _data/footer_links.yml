@@ -12,3 +12,10 @@ legal:
   en:
     title: footer_link_legal_notes
     url: '/en/legal-notice'
+dashboard:
+  it:
+    title: dashboard
+    url: '/it/dashboard'
+  en:
+    title: dashboard
+    url: '/en/dashboard'
