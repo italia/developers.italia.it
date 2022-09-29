@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   elasticsearch:
-    image: italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
+    image: docker.io/italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
     ports:
       - 9200:9200
     networks:
@@ -30,10 +30,10 @@ services:
     # folders which content changes through a build:
     # assets, _data, node_modules, vendor
     volumes:
-      - .:/usr/src/developers.italia.it
-      - /usr/src/developers.italia.it/_data/crawler
-      - /usr/src/developers.italia.it/node_modules
-      - /usr/src/developers.italia.it/vendor
+      - .:/usr/src/developers.italia.it:Z
+      - /usr/src/developers.italia.it/_data/crawler:Z
+      - /usr/src/developers.italia.it/node_modules:Z
+      - /usr/src/developers.italia.it/vendor:Z
     depends_on:
       - elasticsearch
     command: ["wait-for-it", "elasticsearch:9200", "--timeout=60", "--", "make", "local"]
