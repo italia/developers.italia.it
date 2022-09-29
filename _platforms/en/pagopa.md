@@ -4,9 +4,7 @@ subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
 external_website: https://www.pagopa.gov.it
 payoff: Payment interface towards the Public Administration
-description: >
-  A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
-  even via an app.
+description: pagoPA is the digital platform that enables payments to the public administration, in a transparent and intuitive way.
 lang: en
 ref:
   it: /it/pagopa
@@ -14,70 +12,26 @@ order: 3
 highlight: true
 comingsoon: false
 layout: platform
-github_team: pagopa
 abilitante: true
 owners:
-    - name: Presidenza del Consiglio dei Ministri
-      url: http://www.governo.it/
-managers:
-    - name: SIA SpA
-      url: https://www.sia.eu/
+    - name: PagoPA S.p.A.
+      url: http://www.pagopa.it/
 resources:
     - Documentation:
-      - title: Tech specs of the Nodo dei Pagamenti-SPC
-        icon: file
-        url: https://docs.italia.it/italia/pagopa/pagopa-specifichepagamenti-docs/
+      - title: Documentation for Public Administrations
+        icon: link
+        url: https://www.pagopa.gov.it/it/pubbliche-amministrazioni/documentazione/
         desc:
-      - title: FAQ
-        icon: file
-        url: https://docs.italia.it/italia/pagopa/pagopa-docs-faq/
+      - title: Documentation for PSPs
+        icon: link
+        url: https://www.pagopa.gov.it/it/prestatori-servizi-di-pagamento/documentazione/
         desc:
-      - title: Tech specs of the codes for payments
-        icon: file
-        url: https://docs.italia.it/italia/pagopa/pagopa-codici-docs/
-        desc:
-      - title: Guidelines for electronics payments to Public Administrations and managers of public services
-        icon: file
-        url: https://docs.italia.it/italia/pagopa/lg-pagopa-docs/
-        desc:
-      - title: Technical guide for the analog notice
-        icon: file
-        url: http://pagopa-avvisoanalogico.readthedocs.io/it/latest/
-      - title: Survey for Municipalities
-        icon: pencil
-        url: https://docs.google.com/forms/d/e/1FAIpQLScPXF6InyTF_vDVdGg_MphgWpVUf1DfViYKgG0ZBFe40TTgbQ/viewform
-        desc: Survey to complete for notifying the state of completion about pagoPA and deployment roadmaps of the services
-    - SDK:
-      - title: Example iOS app
-        icon: github
-        url: https://github.com/italia/pagopa-ios-example
-        desc: Mobile application for iOS, including the SDK
-      - title: Example Android app
-        icon: github
-        url: https://github.com/italia/pagopa-android-example
-        desc: Mobile application for Android, including the SDK
-      - title: SDK for Ruby
-        icon: github
-        url: https://github.com/italia/pagopa-soap-ruby
-        desc: Ruby library for accessing the SOAP API
 ---
 
 ## Intro
 
-pagoPA is the payment interface for the Public Administration. It's a platform that connects citizens with the Public Administration and the Payment Service Processors (PSP) in order to enable secure and simple payments.
+pagoPA is an electronic payments system created to make any payment to the Public Administration easier, safer and more transparent. The platform enables citizens and businesses to make payments to public bodies in a standardized way, both online and offline, through participating Payment Service Providers (PSPs).
 
-The integration of pagoPA represents a big advantage for public entities because payments get accredited in real time, thus citizens can instantly get a receipt with full legal value.
+pagoPA provides citizens with a reliable, efficient and personalized payment experience by allowing them to choose from multiple payment channels and instruments according to their habits, having complete visibility of the cost of the service in total transparency. In addition, pagoPA automatically updates the amount due and ensures with immediacy that the entity has correctly received the payment.
 
-pagoPA allows citizens to choose the payment method among the available ones according to their needs and digital skills::
-
-- credit card
-- direct bank account charge
-- postal account
-- innovative payment methods available on the market
-
-We're improving the system towards a market approach by integrating innovative payment methods and improving the user interface and system capabilities according to market standards.
-
-The most important work is about UI (User Interface) and UX (User Experience) which were heavily renewed made more usable for citizens (more information about this is available in [Designers Italia](https://designers.italia.it/progetti/pagopa/){:target="_blank"}).
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/pagopa" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C8HC6FVE0" target="_blank"><i class="it-comment" /> Chat on Slack (#pagopa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+pagoPA enables public administrations to collect money centrally and efficiently, offering automatic reporting and reconciliation systems with significant savings in resources, time and costs and ensuring better service to citizens.
