@@ -19,11 +19,11 @@ owners:
 resources:
     - Documentazione:
       - title: Documentazione per gli enti
-        icon: file
+        icon: link
         url: https://www.pagopa.gov.it/it/pubbliche-amministrazioni/documentazione/
         desc:
       - title: Documentazione per i PSP
-        icon: file
+        icon: link
         url: https://www.pagopa.gov.it/it/prestatori-servizi-di-pagamento/documentazione/
         desc:
 ---

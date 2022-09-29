@@ -18,7 +18,7 @@ layout: platform
 resources:
     - Documentation:
         - title: How to integrate and collaborate
-          icon: url
+          icon: link
           url: https://io.italia.it/sviluppatori/
           desc:
     - Source Code:

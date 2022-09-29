@@ -18,7 +18,7 @@ layout: platform
 resources:
     - Documentazione:
         - title: Come integrarsi e contribuire al progetto
-          icon: url
+          icon: link
           url: https://io.italia.it/sviluppatori/
           desc:
     - Codice sorgente:
