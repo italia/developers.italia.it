@@ -4,9 +4,7 @@ subtitle: Payment interface towards the Public Administration
 logo: /assets/images/logo-pagopa@2x.png
 external_website: https://www.pagopa.gov.it
 payoff: Payment interface towards the Public Administration
-description: >
-  A single way, with a single interface to the citizen, to pay with credit card, bank transfers or
-  even via an app.
+description: pagoPA is the digital platform that enables payments to the public administration, in a transparent and intuitive way.
 lang: en
 ref:
   it: /it/pagopa
