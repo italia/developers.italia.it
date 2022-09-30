@@ -6,11 +6,11 @@ date: 2022-09-30 16:30:00 +0200
 tags: developers designers hacktoberfest
 categories: news
 author: Fabio Bonelli
-image: /assets/posts/2022-09-30/hacktoberfest-banner.png
+image: /assets/images/posts/2022-09-30/hacktoberfest-banner.png
 locale: it
 ---
 
-![Hacktoberfest logo](/assets/posts/2022-09-30/hacktoberfest-banner.png)
+![Hacktoberfest logo](/assets/images/posts/2022-09-30/hacktoberfest-banner.png)
 
 Anche quest’anno Developers Italia parteciperà
 all’[Hacktoberfest](https://hacktoberfest.digitalocean.com/), l’iniziativa che
