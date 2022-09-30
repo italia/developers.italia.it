@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-09-30T06:24:09+00:00</updated>
+  <updated>2022-09-30T15:09:26+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,76 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/09/30/al-via-hacktoberfest-2022</id>
+    <title>Al via Hacktoberfest 2022</title>
+    <updated>2022-09-30T14:30:00+00:00</updated>
+
+    <summary>Partecipa all’evento con noi e aiutaci nello sviluppo di software open source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/09/30/al-via-hacktoberfest-2022">&lt;p&gt;Anche quest’anno Developers Italia parteciperà
+all’&lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt;, l’iniziativa che
+ospiterà persone di tutto il mondo interessate all’open source, che potranno
+confrontarsi e divertirsi con una serie di sfide durante tutto il mese di
+ottobre, indipendentemente dal loro livello di esperienza. I contributi possono
+essere diversi: dalla semplice traduzione di un testo o dalla scrittura di
+documentazione, fino alla risoluzione di bug o alla definizione di nuove
+funzionalità. I partecipanti dovranno trovare una soluzione per questi problemi
+e proporre la propria modifica ai &lt;em&gt;maintainer&lt;/em&gt; attraverso il sistema di &lt;em&gt;pull
+request&lt;/em&gt;. Dopo un’attenta revisione, ogni contributo significativo sarà
+consolidato con il resto del codice e verrà fruito da cittadini, PA e imprese
+che giornalmente affrontano le sfide della digitalizzazione dei propri servizi.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-cosa-puoi-contribuire&quot;&gt;A cosa puoi contribuire?&lt;/h2&gt;
+
+&lt;p&gt;Nel corso del mese sarà possibile contribuire ai progetti software ospitati
+all’interno di &lt;a href=&quot;https://github.com/italia&quot;&gt;https://github.com/italia&lt;/a&gt; e
+&lt;a href=&quot;https://github.com/teamdigitale&quot;&gt;https://github.com/teamdigitale&lt;/a&gt;. Questo
+permetterà di supportare lo sviluppo dei servizi pubblici digitali e, di
+conseguenza, di migliorare il rapporto tra cittadini e Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;p&gt;I progetti presenti riguardano da vicino tematiche come SPID, Carta d’Identità
+Elettronica, OpenAPI - come ad esempio
+&lt;a href=&quot;https://github.com/italia/api-oas-checker/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest&quot;&gt;il validatore di API&lt;/a&gt; -,
+il sito developers.italia.it e ad attività legate al mondo dello sviluppo
+front end, come nel caso dei repository di
+&lt;a href=&quot;https://designers.italia.it/&quot;&gt;Designers Italia&lt;/a&gt; dove potrete
+mettervi alla prova con Bootstrap e React.&lt;/p&gt;
+
+&lt;p&gt;Vuoi dare il tuo contributo?&lt;/p&gt;
+
+&lt;p&gt;Scopri l’elenco di tutte le issue valide per questa iniziativa nella &lt;strong&gt;&lt;a href=&quot;https://developers.italia.it/it/cosa-fare?type=Hacktoberfest&quot;&gt;pagina
+cosa fare&lt;/a&gt;&lt;/strong&gt; che
+sarà aggiornata nel corso dell’evento.&lt;/p&gt;
+
+&lt;p&gt;Parlane con i &lt;em&gt;maintainer&lt;/em&gt; dei software sul nostro
+&lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack&lt;/a&gt; o sul
+&lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum&lt;/a&gt; e vai sul &lt;a href=&quot;https://hacktoberfest.com/&quot;&gt;sito
+ufficiale&lt;/a&gt; dell’Hacktoberfest per registrarti
+all’evento.&lt;/p&gt;
+
+&lt;p&gt;E non dimenticare che per contribuire al miglioramento dei servizi pubblici
+digitali del Paese hai tempo tutto l’anno! Vai sul sito
+&lt;a href=&quot;https://come-partecipo.italia.it/&quot;&gt;come-partecipo.italia.it&lt;/a&gt; per scoprire cosa
+puoi fare.&lt;/p&gt;
+
+&lt;p&gt;Ti aspettiamo!&lt;/p&gt;
+
+&lt;p&gt;Il Team di Developers Italia&lt;/p&gt;</content>
+    <published>2022-09-30T14:30:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="hacktoberfest" />
+    
+
+    <author>
+      <name>Fabio Bonelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/07/27/aggiornato-catalogo-software-pa</id>
     <title>PNRR: aggiornato il catalogo del software della PA</title>
