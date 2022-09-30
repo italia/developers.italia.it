@@ -10,8 +10,6 @@ image: /assets/images/posts/2022-09-30/hacktoberfest-banner.png
 locale: it
 ---
 
-![Hacktoberfest logo](/assets/images/posts/2022-09-30/hacktoberfest-banner.png)
-
 Anche quest’anno Developers Italia parteciperà
 all’[Hacktoberfest](https://hacktoberfest.digitalocean.com/), l’iniziativa che
 ospiterà persone di tutto il mondo interessate all’open source, che potranno
