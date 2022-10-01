@@ -34,6 +34,10 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
       desc: OpenAPI del Gateway servizio di validazione CDA2.
+    - title: FAQ
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/faq
+      desc: Domande frequenti.
   - Documentazione:
     - title: Linee guida per l'attuazione FSE 2.0
       url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
