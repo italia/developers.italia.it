@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202210050611" rel="stylesheet">
+  <link href="/dist/main.css?202210060606" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -634,12 +634,12 @@
         </h1>
         <div class="abstract-software">
           <h2>
-            Fotointerpretazioni aree agricole
+            Aggiornamento GIS del SIAP
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Il sistema permette la fotointerpretazione delle ortofoto del territorio.
-
+            Il sistema permette l'aggiornamento del GIS del SIAP (Sistema Informativo
+Agricolo Piemontese)
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -764,26 +764,26 @@
             
             <p> Autenticazione e profilazione utente </p>
             
-            <p> Selezione di una particella in base agli identificativi catastali </p>
-            
-            <p> Eliminazione logica di una particella </p>
-            
-            <p> Attribuzione del codice di uso del suolo al poligono del suolo </p>
-            
             <p> Accesso alla lista di lavorazione </p>
             
-            <p> Registrazione dell’associazione tra oggetto modificato e utente che ha
-fatto la modifica </p>
+            <p> Visualizzazione dei suoli proposti dal richiedente </p>
+            
+            <p> Attribuzione del codice di uso del suolo al poligono del suolo </p>
             
             <p> Storicizzazione dati di suoli e particelle e possibilità di editare
 anche i dati storicizzati </p>
             
-            <p> Scarico di un report di particelle </p>
+            <p> Visualizzazione e archiviazione immagini georiferite e documentazione
+caricata dal richiedente </p>
             
-            <p> Archiviazione e conservazione delle immagini georiferite, con
-possibilità di ricerca </p>
+            <p> Selezione di una particella in base agli identificativi catastali </p>
             
-            <p> Ottimizzazione della gestione dei poligoni disgiunti </p>
+            <p> Eliminazione logica di una particella </p>
+            
+            <p> Registrazione dell’associazione tra oggetto modificato e utente che ha
+fatto la modifica </p>
+            
+            <p> Controllo della correttezza formale delle geometrie </p>
             
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -793,6 +793,8 @@ possibilità di ricerca </p>
               </a>
             </p>
             <div class="collapse" id="otherFeature">
+              
+              <p> Ottimizzazione della gestione dei poligoni disgiunti </p>
               
               <p> Funzionalità di &quot;undo&quot; per annullare modifiche su geometrie o
 georeferenziazione su un&#39;immagine </p>
@@ -863,7 +865,7 @@ georeferenziazione su un&#39;immagine </p>
                 
               </h2>
               <h2>
-                Fotointerpretazioni aree agricole
+                Aggiornamento GIS del SIAP
               </h2>
             </div>
           </div>
@@ -1058,7 +1060,14 @@ georeferenziazione su un&#39;immagine </p>
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Il sistema permette la fotointerpretazione delle ortofoto del territorio
+                <p>Il sistema permette la fotointerpretazione del territorio a seguito di
+richiesta di un utente che presenta un’istanza di lavorazione, corredata
+da un poligono di uso del suolo richiesto ed, eventualmente, di foto
+georiferite e di altra documentazione a supporto, nei casi previsti.
+Esiste anche la possibilità di aggiornare lo strato catastale del GIS del
+SIAP, cessando logicamente le particelle cessate e disegnando le nuove
+particelle con il supporto dei CXF dell’Agenzia delle Entrate e della
+documentazione caricata dal richiedente. L’attività viene effettuata
 mediante un plugin per il software QGIS (QGISAGRIPLG), supportato da
 un’API per la gestione dell’autenticazione utente, della profilazione
 utente e dell’accesso alla base dati (AGRIAPI).</p>
