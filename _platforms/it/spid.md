@@ -57,6 +57,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-django
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)
+    - title: SDK per NodeJS (Express.js/Passport)
+      icon: github
+      url: https://github.com/random42/passport-spid
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Typescript/Javascript)
     - title: SDK per Express.js
       icon: github
       url: https://github.com/italia/spid-express
