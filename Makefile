@@ -11,7 +11,7 @@ download-data:
 	curl -w %{http_code} -s -o /dev/null https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json | grep 200
 
 bundle-setup:
-	gem install bundler:2.1.4
+	gem install bundler:2.3.24
 
 bundle-install: bundle-setup
 	bundle install
