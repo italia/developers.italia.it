@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202210191055" rel="stylesheet">
+  <link href="/dist/main.css?202210200608" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -628,6 +628,9 @@
     <div class="col-md-7">
       <div class="intro-name">
         
+        
+        <img alt="" src="https://raw.githubusercontent.com/CSTSistemiSUD/GeoCity/master/logo.png" class="d-inline-block" />
+        
         <h1 class="d-inline-block">
           GeoCity
           <span class="badge badge-pill badge-pill--sup badge-primary"></span>
@@ -638,7 +641,8 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Piattaforma Cartografica HUB unificata per la gestione del territorio
+            Piattaforma Cartografica HUB unificata per la gestione del territorio e
+inside
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -678,9 +682,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitalità:</p>
-          <p class="score d-inline-block"> 50%</p>
+          <p class="score d-inline-block"> 51%</p>
           
-          <div id="softwareChart" data-vitality='[56,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50]'>
+          <div id="softwareChart" data-vitality='[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,62,50,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -753,12 +757,17 @@
           <div class="function-list">
             
             
-            <p> Catastali cartografici e alfanumerici, analisi dei vincoli di una 
-particella, stampe pdf </p>
-            
-            <p> PNRR </p>
+            <p> Catastali cartografici e alfanumerici, analisi dei vincoli di una particella, stampe pdf </p>
             
             <p> PNRR/Misura/1.4.1 </p>
+            
+            <p> PNRR/Misura/1.4.2 </p>
+            
+            <p> PNRR/Misura/1.4.3 </p>
+            
+            <p> PNRR/Misura/1.4.4 </p>
+            
+            <p> PNRR/Misura/1.4.5 </p>
             
             <p> PNRR/Misura/1.6 </p>
             
@@ -1026,32 +1035,90 @@ Italiano<br />
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Piattaforma Cartografica HUB unificata per la gestione del territorio</p>
+                <h2 id="piattaforma-cartografica-hub-unificata-per-la-gestione-del-territorio-e-inside"><strong>Piattaforma Cartografica HUB unificata per la gestione del territorio e inside</strong></h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  - Nello specifico la piattaforma permette la navigazione cartografica di tutti gli elementi che l'Amministrazione
+<p>GeoCity è una web application sviluppata con tecnologia ESRI in ambiente
+ArcGIS Server per Windows Server (Microsoft), per l’elaborazione di
+informazioni plano/cartografiche residenti in un unico DB SQL.
+L’istallazione di GeoCity è versatile e si adatta alle esigenze del
+cliente, garantendo sempre i massimi livelli di sicurezza ed affidabilità.
+L’istallazione “tipo” è in Cloud. Sono configurati due server dedicati
+alle funzioni di Application Server e DB Server.</p>
 
-    vorrà rappresentare ed integrare connessi ai diversi iter amministrativi dell'Ente
-</code></pre></div></div>
+<h3 id="base-dati"><strong>Base Dati</strong></h3>
 
-<ul>
-  <li>
-    <p>Catastali cartografici e alfanumerici, analisi dei vincoli di una 
-particella, stampe pdf</p>
+<p>In fase di allestimento dell’ambiente funzionale, deve essere svolto il
+censimento dei dati plano/cartografici in possesso del Cliente. Per i dati
+vettoriali si procederà ad un’attività di bonifica e georeferenziazione;
+valutazione a parte andrà riservata ad elaborati cartacei di cui si dovrà
+valutare la validità e l’eventuale vettorializzazione o utilizzo in
+modalità raster (rappresentazioni storiche)</p>
 
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- PNRR
+<h3 id="gdpr"><strong>GDPR</strong></h3>
 
-- PNRR/Misura/1.4.1
+<p>Qualunque informazione cartografica fornita da fonti esterne, sarà
+“servita” dalla web application GeoCity, garantendo il rispetto delle più
+stringenti direttive e normative GDPR; nessun dato strategico elaborato
+dalla piattaforma sarà reso disponibile al di fuori dei server nemmeno per
+analisi statistiche.</p>
 
-- PNRR/Misura/1.6
+<h3 id="geocity"><strong>GeoCity</strong></h3>
 
-- PNRR/Beneficiari/Comuni
+<p>Caratteristica strategica del modulo GeoCity risiede nella sua intrinseca
+capacità, in quanto sviluppato con tecnologia GIS, di gestire elementi
+plano/cartografici come oggetti di un DB SQL. Questo ci permette di
+connettere trasversalmente TUTTE le informazioni presenti nella banca dati
+assegnando ad esse, dinamicamente, il valore aggiunto della collocazione
+spaziale, quindi dell’edificio, reparto, ufficio, non solo quel dato sarà
+generato e gestito, ma interrogando il target avremo risposte su tutti i
+procedimenti legati a quello spazio. GeoCity è accessibile da qualunque
+periferica con le opportune credenziali che abilitano il livello di
+operatività. La condivisione del medesimo data base consentirà di far
+“affiorare” l’interfaccia di gestione plano/cartografica nelle diverse
+procedure di gestione e dei diversi workflow; la planimetria dell’azienda,
+la particella catastale, il segmento di strada consortile sono fonte di
+informazioni amministrative gestionali ed aggregatori di progetti,
+pratiche amministrative, interconnessioni con altri enti per rendere
+univoche ed evidenti sovrapposizioni nella gestione dello
+spazio/territorio.</p>
 
-- PNRR/Beneficiari/Altri enti
+<h3 id="profili-autorizzativi"><strong>Profili autorizzativi</strong></h3>
 
-- PNRR/Beneficiari/ASL
-</code></pre></div>    </div>
-  </li>
-</ul>
+<p>L’accesso al portale cartografico sarà regolato da opportuni profili
+autorizzativi; la caratterizzazione dei profili consente alle diverse
+“famiglie” di utenti di accedere, da qualunque periferica (pc fisso e/o
+tablet e mobile), a diverse informazioni e procedure. Una interfaccia di
+amministrazione consente di assegnare agli utenti sia la tipologia dei
+dati che possono interrogare sia le modalità di accesso al dato
+(lettura/modifica).</p>
+
+<h3 id="funzione-amministratore"><strong>Funzione Amministratore</strong></h3>
+
+<p>La funzione Amministratore, assegnata ad una o più utenze, ha la
+responsabilità di gestire esclusive funzioni a. Abilitazione e profilatura
+delle utenze, con l’assegnazione di privilegi dedicati; b. Attivazione e
+gestione della funzionalità, integrata in piattaforma, che consente di
+gestire ed aggiornare i fogli catastali e le informazioni censuarie,
+provenienti dall’Agenzia del Territorio importandoli all’interno del DB di
+PITer. La gestione integrata delle informazioni del Catasto accelera ed
+integra la ricerca e la visualizzazione di particelle e delle relative
+informazioni tracciate all’interno delle diverse procedure dell’Ente</p>
+
+<h3 id="funzionalità-utente"><strong>Funzionalità utente</strong></h3>
+
+<p>Gli utenti sono abilitati dal/dagli Amministratori e in ambiente
+cartografico, utilizzano le funzionalità di navigazione e di contesto per
+consentire una fluida fruizione dei dati con un’attenzione alla
+navigazione da postazione fissa e mobile c. Zoom e PAN; d. Legenda
+contestuale (i livelli informativi si popolano a secondo delle selezioni e
+dello zoom); e. Differenti cartografie di BASE, monocromatica,
+OpenStreetMap®, fotografica, per una semplice contestualizzazione delle
+informazioni gestite; f. Funzione di ricerca su informazioni alfanumeriche
+con zoom ed evidenza g. Funzione per la ricerca dei dati censuari nei dati
+dell’Agenzia del Territorio h. L’attivazione di die specifiche aree di
+ricerca, consente di selezionare (ON/Off) tutti i livelli VINCOLI presenti
+nella banca dati cartografica e relazionarli alle diverse informazioni di
+BASE per una completa ed immediata leggibilità delle informazioni.</p>
 
               </div>
             </div>
