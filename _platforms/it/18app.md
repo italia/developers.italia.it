@@ -65,7 +65,7 @@ backend, effettuando quindi una integrazione con il proprio sistema di cassa,
 oppure manualmente tramite una semplice web form.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+<a class="btn btn-outline-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a class="btn btn-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
 
 Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza. Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
 

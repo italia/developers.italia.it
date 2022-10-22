@@ -64,4 +64,4 @@ Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui 
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ" target="_blank"><i class="it-comment" /> Dialoga su Slack (#anpr)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ" target="_blank"><i class="it-comment" /> Dialoga su Slack (#anpr)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
