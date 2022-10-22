@@ -257,4 +257,4 @@ The Service Provider must update the Identity Provider metadata whenever they ar
 ## Get in touch
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>

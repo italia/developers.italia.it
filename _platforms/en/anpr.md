@@ -67,4 +67,4 @@ We built some collaboration tools for you including an *issue tracker* and a for
 discuss all the problems on integrating ANPR.
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a><a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a><a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
