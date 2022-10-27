@@ -115,4 +115,4 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" />Richiesta di supporto tramite GitHub</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" />Canale Slack (#fse)</a>
-<a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment" />Registrati su Slack</span></a>
+<a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" />Registrati su Slack</a>
