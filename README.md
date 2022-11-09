@@ -53,7 +53,7 @@ creating the next generation of digital public services in Italy.
 This repository contains the sources of the website.
 The website is developed using [Jekyll](https://jekyllrb.com/).
 
-A [CircleCI job](.circleci/config.yml) builds the sources, getting some data from
+A [GitHub action job](.github/workflows/publish.yml) builds the sources, getting some data from
 [developers.italia.it-data](https://github.com/italia/developers.italia.it-data),
 and commits the resulting artifacts to the [gh-pages
 branch](https://github.com/italia/developers.italia.it/tree/gh-pages).
