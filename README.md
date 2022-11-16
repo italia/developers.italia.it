@@ -130,7 +130,7 @@ a look at our [contributing guidelines](CONTRIBUTING.md).
 
 # License
 
-Copyright (c) 2018-2020 - Presidenza del Consiglio dei Ministri
+Copyright© 2018-presente - Presidenza del Consiglio dei Ministri
 
 The source code is released under the BSD license (SPDX code: `BSD-3-Clause`)
 and it's distributed with this license since May 30th 2018.
