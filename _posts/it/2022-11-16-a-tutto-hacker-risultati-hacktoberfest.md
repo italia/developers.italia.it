@@ -9,7 +9,7 @@ author: Fabio Bonelli
 image: /assets/images/posts/2022-09-30/hacktoberfest-banner.png
 locale: it
 ---
-Come ormai di consueto, abbiamo passato un ottobre 2022 a tutto hacker: Developers Italia ha partecipato alla nona edizione di [Hacktoberfest](https://hacktoberfest.digitalocean.com/), uno degli appuntamenti più riconosciuti nella **comunità di sviluppo open source**, dove sviluppatori dai percorsi professionali più diversi hanno collaborato alla risoluzione dei “problemi” aperti su vari *repository* contenuti nell’organizzazione [https://github.com/italia](https://github.com/italia/)
+Come ormai di consueto, abbiamo passato un ottobre 2022 a tutto hacker: Developers Italia ha partecipato alla nona edizione di [Hacktoberfest](https://hacktoberfest.digitalocean.com/), uno degli appuntamenti più riconosciuti nella **comunità di sviluppo open source**, dove sviluppatori dai percorsi professionali più diversi hanno collaborato alla risoluzione dei “problemi” aperti su vari *repository* contenuti nell’organizzazione [https://github.com/italia](https://github.com/italia/).
 
 Sono state [dieci le issue risolte](https://github.com/search?q=label%3Ahacktoberfest+org%3Aitalia+updated%3A%3E2022-08-01+state%3Aclosed&type=Issues&ref=advsearch&l=&l=) quest'anno, e **un ringraziamento** va comunque, oltre ai *contributor*, anche **a tutti quelli che hanno partecipato**, anche solo con un messaggio o un suggerimento: **collaborazione e condivisione** sono alla base della filosofia *open source* e ogni apporto aumenta il valore dei progetti curati da Developers Italia.
 
