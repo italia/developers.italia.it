@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-11-16T06:03:01+00:00</updated>
+  <updated>2022-11-16T16:11:15+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,34 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/11/16/a-tutto-hacker-risultati-hacktoberfest</id>
+    <title>A tutto hacker: ecco i risultati dell’Hacktoberfest</title>
+    <updated>2022-11-16T14:30:00+00:00</updated>
+
+    <summary>Anche quest’anno Developers Italia ha partecipato al noto appuntamento internazionale </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/11/16/a-tutto-hacker-risultati-hacktoberfest">&lt;p&gt;Come ormai di consueto, abbiamo passato un ottobre 2022 a tutto hacker: Developers Italia ha partecipato alla nona edizione di &lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktoberfest&lt;/a&gt;, uno degli appuntamenti più riconosciuti nella &lt;strong&gt;comunità di sviluppo open source&lt;/strong&gt;, dove sviluppatori dai percorsi professionali più diversi hanno collaborato alla risoluzione dei “problemi” aperti su vari &lt;em&gt;repository&lt;/em&gt; contenuti nell’organizzazione &lt;a href=&quot;https://github.com/italia/&quot;&gt;https://github.com/italia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sono state &lt;a href=&quot;https://github.com/search?q=label%3Ahacktoberfest+org%3Aitalia+updated%3A%3E2022-08-01+state%3Aclosed&amp;amp;type=Issues&amp;amp;ref=advsearch&amp;amp;l=&amp;amp;l=&quot;&gt;dieci le issue risolte&lt;/a&gt; quest’anno, e &lt;strong&gt;un ringraziamento&lt;/strong&gt; va comunque, oltre ai &lt;em&gt;contributor&lt;/em&gt;, anche &lt;strong&gt;a tutti quelli che hanno partecipato&lt;/strong&gt;, anche solo con un messaggio o un suggerimento: &lt;strong&gt;collaborazione e condivisione&lt;/strong&gt; sono alla base della filosofia &lt;em&gt;open source&lt;/em&gt; e ogni apporto aumenta il valore dei progetti curati da Developers Italia.&lt;/p&gt;
+
+&lt;p&gt;Tutti i software, le librerie e i kit di sviluppo alla base delle Piattaforme Abilitanti utilizzate in Italia sono infatti al 100% open source, ed &lt;strong&gt;è possibile continuare a contribuire anche al di fuori di singoli eventi&lt;/strong&gt;. Scopri come partecipare su &lt;a href=&quot;https://come-partecipo.italia.it/&quot;&gt;https://come-partecipo.italia.it/&lt;/a&gt;. Nel &lt;a href=&quot;https://developers.italia.it/it/search&quot;&gt;Catalogo&lt;/a&gt; è inoltre possibile trovare software messi a disposizione dalle pubbliche amministrazioni o da singoli sviluppatori: &lt;strong&gt;collabora e migliora insieme a noi i servizi pubblici digitali presenti nel Catalogo&lt;/strong&gt;. Ti aspettiamo, per maggiori approfondimenti puoi trovarci sul nostro &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack&lt;/a&gt; e su &lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il Team di Developers Italia&lt;/p&gt;</content>
+    <published>2022-11-16T14:30:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="hacktoberfest" />
+    
+
+    <author>
+      <name>Fabio Bonelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/09/30/al-via-hacktoberfest-2022</id>
     <title>Al via Hacktoberfest 2022</title>
