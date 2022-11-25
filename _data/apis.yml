@@ -1,3 +1,12 @@
+- openapi: https://raw.githubusercontent.com/italia/developers-italia-api/main/developers-italia.oas.yaml
+  title: Catalogo del software pubblico - developers.italia.it
+  abstract: API del Catalogo del software pubblico in Developers Italia (beta)
+  contact:
+    name: Developers Italia
+    logo: /assets/icons/logo-it-blue.svg
+  tags: []
+  language: [it]
+  slug: developers-italia
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml
   title: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
