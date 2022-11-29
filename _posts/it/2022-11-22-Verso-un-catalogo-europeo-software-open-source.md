@@ -6,7 +6,7 @@ date: 2022-11-29 16:00:00 +0200
 tags: developers catalogo "open source" 
 categories: news
 author: Fabio Bonelli
-image: XXXXX 
+image:  
 locale: it
 ---
 Condividere soluzioni, migliorare la qualità dei servizi, risparmiare tempo e risorse: venerdì 2 dicembre Developers Italia partecipa a [Open source workshops for computing & sustainability](https://swforum.eu/events/open-source-workshops-computing-sustainability), appuntamento organizzato, a Bruxelles, dalla Commissione Europea in collaborazione con SWForum.eu, forum europeo della comunità di ricerca sul software. 
