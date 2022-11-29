@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-11-29T06:02:51+00:00</updated>
+  <updated>2022-11-29T19:28:09+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,43 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2022/11/29/verso-un-catalogo-europeo-software-open-source</id>
+    <title>Verso un Catalogo europeo dei software open source</title>
+    <updated>2022-11-29T14:00:00+00:00</updated>
+
+    <summary>Developers Italia partecipa a Open source workshops for computing &amp; sustainability </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/11/29/verso-un-catalogo-europeo-software-open-source">&lt;p&gt;Condividere soluzioni, migliorare la qualità dei servizi, risparmiare tempo e risorse: venerdì 2 dicembre Developers Italia partecipa a &lt;a href=&quot;https://swforum.eu/events/open-source-workshops-computing-sustainability&quot;&gt;Open source workshops for computing &amp;amp; sustainability&lt;/a&gt;, appuntamento organizzato, a Bruxelles, dalla Commissione Europea in collaborazione con SWForum.eu, forum europeo della comunità di ricerca sul software.&lt;/p&gt;
+
+&lt;p&gt;Al centro dell’intervento c’è il &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;Catalogo del riuso&lt;/a&gt;, la piattaforma che riunisce il software open source della Pubblica Amministrazione italiana, che verrà presentato nel corso di un &lt;a href=&quot;https://swforum.eu/OSS-applications-catalogue&quot;&gt;workshop dedicato a condividere simili esperienze a livello europeo&lt;/a&gt;, con l’obiettivo di creare un &lt;strong&gt;Catalogo europeo di applicazioni&lt;/strong&gt;. Un traguardo che permetterà alle PA di risparmiare fondi pubblici e assicurarsi il rispetto dei migliori standard EU nella realizzazione di servizi.&lt;/p&gt;
+
+&lt;p&gt;Grazie al progetto &lt;a href=&quot;https://joinup.ec.europa.eu/collection/fosseps/about&quot;&gt;Free and open source software solutions for European public services&lt;/a&gt; (FOSSEPS), l’Open Source Program Office della Commissione europea punta infatti a realizzare una prima versione del Catalogo europeo entro la fine del 2023. Nel gruppo di lavoro, il team di Developers Italia è attivamente coinvolto nella condivisione di esperienze e buone pratiche, anche a partire da quanto realizzato per il &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/publiccodeyml&quot;&gt;progetto publiccode.yml&lt;/a&gt;, &lt;strong&gt;il formato di metadatazione ideato per i repository software della Pubblica Amministrazione&lt;/strong&gt; e già in uso in diversi Paesi europei.&lt;/p&gt;
+
+&lt;p&gt;Sei uno sviluppatore e vuoi contribuire al Catalogo? Guarda e invia i tuoi contributi (&lt;em&gt;pull request&lt;/em&gt;) sui nostri repository:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/publiccodeyml/publiccode.yml&quot;&gt;https://github.com/publiccodeyml/publiccode.yml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/italia/publiccode-ui&quot;&gt;https://github.com/italia/publiccode-ui&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/italia/publiccode-crawler&quot;&gt;https://github.com/italia/publiccode-crawler&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/italia/developers-italia-api&quot;&gt;https://github.com/italia/developers-italia-api&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Un altro passo avanti per &lt;strong&gt;rendere il software europeo un bene comune&lt;/strong&gt; a servizio della crescita economica e della sovranità digitale.&lt;/p&gt;</content>
+    <published>2022-11-29T14:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="catalogo" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Fabio Bonelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2022/11/16/a-tutto-hacker-risultati-hacktoberfest</id>
     <title>A tutto hacker: ecco i risultati dell’Hacktoberfest</title>
