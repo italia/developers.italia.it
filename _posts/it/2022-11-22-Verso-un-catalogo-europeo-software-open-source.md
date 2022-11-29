@@ -17,9 +17,9 @@ Grazie al progetto [Free and open source software solutions for European public 
 
 Sei uno sviluppatore e vuoi contribuire al Catalogo? Guarda e invia i tuoi contributi (*pull request*) sui nostri repository: 
 
-* https://github.com/publiccodeyml/publiccode.yml 
-* https://github.com/italia/publiccode-ui 
-* https://github.com/italia/publiccode-crawler
-* https://github.com/italia/developers-italia-api 
+* [https://github.com/publiccodeyml/publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) 
+* [https://github.com/italia/publiccode-ui](https://github.com/italia/publiccode-ui) 
+* [https://github.com/italia/publiccode-crawler](https://github.com/italia/publiccode-crawler)
+* [https://github.com/italia/developers-italia-api](https://github.com/italia/developers-italia-api) 
 
 Un altro passo avanti per **rendere il software europeo un bene comune** a servizio della crescita economica e della sovranità digitale.
