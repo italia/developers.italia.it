@@ -3,7 +3,7 @@ layout: post
 title: "Verso un Catalogo europeo dei software open source"
 subtitle: "Developers Italia partecipa a Open source workshops for computing & sustainability"
 date: 2022-11-29 16:00:00 +0200
-tags: developers catalogo "open source" 
+tags: developers catalogo opensource"
 categories: news
 author: Fabio Bonelli
 image:  
