@@ -220,3 +220,13 @@ peppelinux:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/giuseppe-de-marco-bb054245/
+matteov:
+  name: Matteo Vabanesi
+  desc:
+  pic: /assets/images/matteov.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/matteo-vabanesi-666017153/
