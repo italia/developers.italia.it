@@ -17,7 +17,32 @@ owners:
   - name: Ministero della Salute
     url: https://www.salute.gov.it/
 resources:
-  - Integrazione con il Gateway:
+  - Documentazione:
+    - title: Linee guida per l'attuazione FSE 2.0
+      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
+      icon: file
+      desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
+    - title: Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi
+      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg
+      icon: file
+      desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
+    - title: Specifiche di integrazione servizi Gateway FSE 2.0
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway
+      icon: file
+      desc: Specifiche di integrazione servizi Gateway FSE 2.0
+    - title: Modello middleware regionale
+      url: #todo
+      icon: github
+      desc: Definizione dei principi per la conformità dei middleware regionali con FSE 2.0.
+    - title: Specifiche HL7 CDA2
+      icon: link
+      url: http://www.hl7italia.it/hl7italia_D7/node/2359
+      desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
+    - title: Specifiche tecniche AgID
+      icon: link
+      url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
+      desc: Link al sito AgID, riferimento specifiche tecniche.
+  - FAQ & Utility:
     - title: Strumenti utili per integrazione Gateway
       icon: github
       url: https://github.com/ministero-salute/it-fse-gtw-tools
@@ -38,27 +63,19 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/faq
       desc: Domande frequenti.
-  - Documentazione:
-    - title: Linee guida per l'attuazione FSE 2.0
-      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg
-      icon: file
-      desc: Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.
-    - title: Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi
-      url: https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg
-      icon: file
-      desc: Decreto contenuti pubblicato in Gazzetta Ufficiale.
-    - title: Specifiche di integrazione servizio di validazione CDA2
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway
-      icon: file
-      desc: Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.
-    - title: Specifiche HL7 CDA2
+  - Accreditamento:
+    - title: Modulo di richiesta accreditamento
       icon: link
-      url: http://www.hl7italia.it/hl7italia_D7/node/2359
-      desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
-    - title: Specifiche tecniche AgID
-      icon: link
-      url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
-      desc: Link al sito AgID, riferimento specifiche tecniche.
+      url: https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo
+      desc: Modulo di richiesta accreditamento
+    - title: Documento processo di accreditamento
+      icon: github
+      url: #todo
+      dec: Documento descrittivo del processo di accreditamento
+    - title: Piano dei test
+      icon: github
+      url: #todo
+      dec: Lista dei test da eseguire per l'accreditamento
 ---
 
 ## Intro
@@ -110,6 +127,25 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 ## Prima fase di sperimentazione
 
 È prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
+
+## Fase di accreditamento
+
+Per poter integrarsi con il Gateway FSE 2.0 in produzione è necessario completare la procedura di accreditamento.
+
+
+Il processo complessivo di adeguamento e messa in produzione dell’applicativo è composto dalle seguenti fasi:
+* **fase 1**: accreditamento dell’applicativo software:  
+  * viene eseguito presso gli ambienti di test del fornitore al quale vengono rilasciati i certificati di test per accedere al gateway di pre-produzione; tali certificati vengono usati per l’accreditamento di tutti gli applicativi software del medesimo fornitore oggetto di accreditamento;
+  * ha l’obiettivo di verificare la conformità con le specifiche nazionali;
+* **fase 2**:  verifica tecnica dell'impianto in azienda: 
+  * viene eseguito, a discrezione della Regione/Azienda, presso gli ambienti di test dell’azienda/regione;
+  * ha come obiettivo quello di verificare la conformità con le specifiche nazionali, regionali e di integrazione; 
+* **fase 3**:  deployment e monitoraggio in produzione:  
+  * viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);
+  * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
+
+Per la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "modulo di richiesta accreditamento" fornendo le informazioni richieste.
+Eseguito il "piano di test" per l'accreditamento si invieranno i risultati come indicato nel documento "processo di accreditamento".
 
 ## Canali
 
