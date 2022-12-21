@@ -70,9 +70,9 @@ resources:
       desc: Modulo di richiesta accreditamento
     - title: Documento processo di accreditamento
       icon: github
-      url: #todo
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/accreditamento
       dec: Documento descrittivo del processo di accreditamento
-    - title: Piano dei test
+    - title: Piano dei test (a breve)
       icon: github
       url: #todo
       dec: Lista dei test da eseguire per l'accreditamento
@@ -130,7 +130,7 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 
 ## Fase di accreditamento
 
-Per poter integrarsi con il Gateway FSE 2.0 in produzione è necessario completare la procedura di accreditamento.
+Per avviare l'integrazione in produzione con il Gateway FSE 2.0, è necessario completare la procedura di accreditamento.
 
 
 Il processo complessivo di adeguamento e messa in produzione dell’applicativo è composto dalle seguenti fasi:
@@ -144,8 +144,8 @@ Il processo complessivo di adeguamento e messa in produzione dell’applicativo 
   * viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
-Per la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "modulo di richiesta accreditamento" fornendo le informazioni richieste.
-Eseguito il "piano di test" per l'accreditamento si invieranno i risultati come indicato nel documento "processo di accreditamento".
+Per la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
+Eseguito il "piano di test" di accreditamento si invieranno i risultati come indicato nel documento "[processo di accreditamento](https://github.com/ministero-salute/it-fse-support/tree/main/doc/accreditamento)".
 
 ## Canali
 
