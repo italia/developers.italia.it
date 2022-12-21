@@ -13,6 +13,6 @@ Jingle bells! A disposizione un nuovo canale social: da oggi Developers Italia �
 
 Mastodon è un software di *microblogging* open source che non richiede registrazione per la consultazione e non profila i suoi utenti. Fa parte del **Fediverso**, una rete di istanze (nodi della rete) decentralizzate ma, allo stesso tempo, connesse fra loro, che permettono di interagire scegliendo dove registrarsi. Nel Fediverso, Developers Italia pubblica anche i propri articoli di approfondimento su [noblogo.org](https://noblogo.org/developers-italia/). 
 
-**Segui Developers Italia su Mastodon**, ci puoi trovare al profilo [@developersITA@mastodon.uno](https://mastodon.uno/@developersITA@mastodon.uno).
+**Segui Developers Italia su Mastodon**, ci puoi trovare al profilo [@developersITA@mastodon.uno](https://mastodon.uno/@developersITA).
 
 Ti aspettiamo, e con l’occasione… buone feste!
