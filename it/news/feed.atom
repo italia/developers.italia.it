@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2022-12-27T06:02:49+00:00</updated>
+  <updated>2022-12-27T13:17:47+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -30,11 +30,11 @@
     <published>2022-12-21T11:00:00+00:00</published>
 
     
-    <category term="Developers" />
+    <category term="developers" />
     
-    <category term="Mastodon" />
+    <category term="mastodon" />
     
-    <category term="Fediverso" />
+    <category term="fediverso" />
     
     <category term="opensource" />
     
