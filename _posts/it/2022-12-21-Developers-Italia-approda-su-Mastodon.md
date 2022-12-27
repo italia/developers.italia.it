@@ -3,7 +3,7 @@ layout: post
 title: "Developers Italia approda su Mastodon"
 subtitle: "Una nuova finestra social si affianca a Twitter"
 date: 2022-12-21 13:00:00 +0200
-tags: Developers Mastodon Fediverso opensource
+tags: developers mastodon fediverso opensource
 categories: news
 author: Matteo Fortini
 image:  
