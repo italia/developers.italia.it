@@ -34,13 +34,13 @@
 <meta property="og:url" content="https://developers.italia.it/it/fse/" />
 <meta property="og:site_name" content="Developers Italia" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-28T06:02:29+00:00" />
+<meta property="article:published_time" content="2022-12-28T15:58:44+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="FSE" />
 <meta name="twitter:site" content="@developersITA" />
 <meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
 <script type="application/ld+json">
-{"headline":"FSE","dateModified":"2022-12-28T06:02:29+00:00","datePublished":"2022-12-28T06:02:29+00:00","description":"Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/fse/"},"@type":"BlogPosting","url":"https://developers.italia.it/it/fse/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
+{"headline":"FSE","dateModified":"2022-12-28T15:58:44+00:00","datePublished":"2022-12-28T15:58:44+00:00","description":"Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/fse/"},"@type":"BlogPosting","url":"https://developers.italia.it/it/fse/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,7 +48,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202212280602" rel="stylesheet">
+  <link href="/dist/main.css?202212281558" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -746,6 +746,35 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
 
 <p>È prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto <a href="mailto:fse_support@sogei.it">fse_support@sogei.it</a>, verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l’accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.</p>
 
+<h2 id="fase-di-accreditamento">Fase di accreditamento</h2>
+
+<p>Per avviare l’integrazione in produzione con il Gateway FSE 2.0, è necessario completare la procedura di accreditamento.</p>
+
+<p>Il processo complessivo di adeguamento e messa in produzione dell’applicativo è composto dalle seguenti fasi:</p>
+<ul>
+  <li><strong>fase 1</strong>: accreditamento dell’applicativo software:
+    <ul>
+      <li>viene eseguito presso gli ambienti di test del fornitore al quale vengono rilasciati i certificati di test per accedere al gateway di pre-produzione; tali certificati vengono usati per l’accreditamento di tutti gli applicativi software del medesimo fornitore oggetto di accreditamento;</li>
+      <li>ha l’obiettivo di verificare la conformità con le specifiche nazionali;</li>
+    </ul>
+  </li>
+  <li><strong>fase 2</strong>:  verifica tecnica dell’impianto in azienda:
+    <ul>
+      <li>viene eseguito, a discrezione della Regione/Azienda, presso gli ambienti di test dell’azienda/regione;</li>
+      <li>ha come obiettivo quello di verificare la conformità con le specifiche nazionali, regionali e di integrazione;</li>
+    </ul>
+  </li>
+  <li><strong>fase 3</strong>:  deployment e monitoraggio in produzione:
+    <ul>
+      <li>viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);</li>
+      <li>ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Per la <strong>fase 1</strong> una volta completati i test autonomi sul software è necessario compilare il “<a href="https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo">modulo di richiesta accreditamento</a>” fornendo le informazioni richieste.
+Eseguito il “<a href="https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case">piano di test</a>” di accreditamento si invieranno i risultati come indicato nel repository “<a href="https://github.com/ministero-salute/it-fse-accreditamento">it-fse-accreditamento</a>”.</p>
+
 <h2 id="canali">Canali</h2>
 
 <p><a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn"></i>Richiesta di supporto tramite GitHub</a>
@@ -766,13 +795,19 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
                 <a class="nav-item nav-link active" id="resourcegroup-1"
                     data-toggle="tab" href="#resourcecontent-1" role="tab"
                     aria-controls="resourcecontent-1"
-                    aria-selected="true">Integrazione con il Gateway</a>
+                    aria-selected="true">Documentazione</a>
                 
                 
                 <a class="nav-item nav-link " id="resourcegroup-2"
                     data-toggle="tab" href="#resourcecontent-2" role="tab"
                     aria-controls="resourcecontent-2"
-                    aria-selected="false">Documentazione</a>
+                    aria-selected="false">FAQ & Utility</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-3"
+                    data-toggle="tab" href="#resourcecontent-3" role="tab"
+                    aria-controls="resourcecontent-3"
+                    aria-selected="false">Accreditamento</a>
                 
             </div>
         </nav>
@@ -783,6 +818,87 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
             
             <div class="tab-pane fade show active" id="resourcecontent-1"
                 role="tabpanel" aria-labelledby="resourcegroup-1">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg" target="_blank" class="d-block project__resources-itemtitle">Linee guida per l'attuazione FSE 2.0</a>
+                        <p>Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg" target="_blank" class="d-block project__resources-itemtitle">Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi</a>
+                        <p>Decreto contenuti pubblicato in Gazzetta Ufficiale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway" target="_blank" class="d-block project__resources-itemtitle">Specifiche di integrazione servizi Gateway FSE 2.0</a>
+                        <p>Specifiche di integrazione servizi Gateway FSE 2.0</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/middleware-regionale" target="_blank" class="d-block project__resources-itemtitle">Modello middleware regionale</a>
+                        <p>Definizione dei principi per la conformità dei middleware regionali con FSE 2.0.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="http://www.hl7italia.it/hl7italia_D7/node/2359" target="_blank" class="d-block project__resources-itemtitle">Specifiche HL7 CDA2</a>
+                        <p>Link al sito Hl7 Italia con riferimento allo standard documentale.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici" target="_blank" class="d-block project__resources-itemtitle">Specifiche tecniche AgID</a>
+                        <p>Link al sito AgID, riferimento specifiche tecniche.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-2"
+                role="tabpanel" aria-labelledby="resourcegroup-2">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -850,8 +966,8 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
             </div>
             
             
-            <div class="tab-pane fade show " id="resourcecontent-2"
-                role="tabpanel" aria-labelledby="resourcegroup-2">
+            <div class="tab-pane fade show " id="resourcecontent-3"
+                role="tabpanel" aria-labelledby="resourcegroup-3">
                 <ul class="list-unstyled project__resources-list">
                     
                     
@@ -859,60 +975,48 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
                         
                         <span class="project__resources-icon">
                            <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
-                           </svg>
-                        </span>
-                        
-                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03961/sg" target="_blank" class="d-block project__resources-itemtitle">Linee guida per l'attuazione FSE 2.0</a>
-                        <p>Documentazione di alto livello del funzionamento dell'architettura pubblicate in Gazzetta Ufficiale.</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
-                           </svg>
-                        </span>
-                        
-                        <a href="https://www.gazzettaufficiale.it/eli/id/2022/07/11/22A03960/sg" target="_blank" class="d-block project__resources-itemtitle">Aggiornamento contenuti FSE 2.0 previsti nei primi 12 mesi</a>
-                        <p>Decreto contenuti pubblicato in Gazzetta Ufficiale.</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
-                           </svg>
-                        </span>
-                        
-                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/integrazione-gateway" target="_blank" class="d-block project__resources-itemtitle">Specifiche di integrazione servizio di validazione CDA2</a>
-                        <p>Documentazione dettagliata relativa alle specifiche di integrazione del servizio di validazione CDA2 esposto dal Gateway.</p>
-                    </li>
-                    
-                    <li>
-                        
-                        <span class="project__resources-icon">
-                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
                              <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
                            </svg>
                         </span>
                         
-                        <a href="http://www.hl7italia.it/hl7italia_D7/node/2359" target="_blank" class="d-block project__resources-itemtitle">Specifiche HL7 CDA2</a>
-                        <p>Link al sito Hl7 Italia con riferimento allo standard documentale.</p>
+                        <a href="https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo" target="_blank" class="d-block project__resources-itemtitle">Modulo di richiesta accreditamento</a>
+                        <p>Modulo di richiesta accreditamento</p>
                     </li>
                     
                     <li>
                         
                         <span class="project__resources-icon">
                            <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
-                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
                            </svg>
                         </span>
                         
-                        <a href="https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici" target="_blank" class="d-block project__resources-itemtitle">Specifiche tecniche AgID</a>
-                        <p>Link al sito AgID, riferimento specifiche tecniche.</p>
+                        <a href="https://github.com/ministero-salute/it-fse-support/tree/main/doc/accreditamento" target="_blank" class="d-block project__resources-itemtitle">Documento processo di accreditamento</a>
+                        <p>Documento descrittivo del processo di accreditamento</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case" target="_blank" class="d-block project__resources-itemtitle">Piano dei test</a>
+                        <p>Lista dei test da eseguire per l'accreditamento</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-fse-accreditamento" target="_blank" class="d-block project__resources-itemtitle">Processo di accreditamento</a>
+                        <p>Repository con documentazione per l'accreditamento</p>
                     </li>
                     
                 </ul>
@@ -953,11 +1057,12 @@ Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali son
 <li class="toc-entry toc-h2"><a href="#codice-della-piattaforma">Codice della piattaforma</a></li>
 <li class="toc-entry toc-h2"><a href="#aiutaci-a-migliorare">Aiutaci a migliorare</a></li>
 <li class="toc-entry toc-h2"><a href="#prima-fase-di-sperimentazione">Prima fase di sperimentazione</a></li>
+<li class="toc-entry toc-h2"><a href="#fase-di-accreditamento">Fase di accreditamento</a></li>
 <li class="toc-entry toc-h2"><a href="#canali">Canali</a></li>
 </ul>
     
     <ul class="section-nav">
-      <li class="toc-entry toc-h2"><a href="#resources">Integrazione con il Gateway, Documentazione</a></li>
+      <li class="toc-entry toc-h2"><a href="#resources">Documentazione, FAQ & Utility, Accreditamento</a></li>
     </ul>
     
     
