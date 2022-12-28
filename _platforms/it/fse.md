@@ -31,7 +31,7 @@ resources:
       icon: file
       desc: Specifiche di integrazione servizi Gateway FSE 2.0
     - title: Modello middleware regionale
-      url: #todo
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/middleware-regionale
       icon: github
       desc: Definizione dei principi per la conformità dei middleware regionali con FSE 2.0.
     - title: Specifiche HL7 CDA2
@@ -71,11 +71,15 @@ resources:
     - title: Documento processo di accreditamento
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/accreditamento
-      dec: Documento descrittivo del processo di accreditamento
-    - title: Piano dei test (a breve)
+      desc: Documento descrittivo del processo di accreditamento
+    - title: Piano dei test
       icon: github
-      url: #todo
-      dec: Lista dei test da eseguire per l'accreditamento
+      url: https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case
+      desc: Lista dei test da eseguire per l'accreditamento
+    - title: Processo di accreditamento
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-accreditamento
+      desc: Repository con documentazione per l'accreditamento
 ---
 
 ## Intro
@@ -145,7 +149,7 @@ Il processo complessivo di adeguamento e messa in produzione dell’applicativo 
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
 Per la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
-Eseguito il "piano di test" di accreditamento si invieranno i risultati come indicato nel documento "[processo di accreditamento](https://github.com/ministero-salute/it-fse-support/tree/main/doc/accreditamento)".
+Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
 
 ## Canali
 
