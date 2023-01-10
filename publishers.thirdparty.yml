@@ -154,3 +154,7 @@
 - name: "GreenPass Turnstile"
   repos:
     - "https://github.com/zorbaproject/greenpass-turnstile"
+
+- name: "Mindicity"
+  repos:
+    - "https://gitlab-di.mindicity.it/mindicity/core/ui/mindicity.core.ui.app"
