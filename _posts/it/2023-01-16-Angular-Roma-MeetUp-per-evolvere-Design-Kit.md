@@ -18,6 +18,6 @@ L’incontro avrà luogo **lunedì 30 gennaio alle ore 18:30**, presso i locali 
 Per rimanere aggiornato sugli eventi della community di Angular Roma:
 
 Twitter: [https://twitter.com/AngularRome](https://twitter.com/AngularRome)
-Sito: [https://community.codemotion.com/angular-roma](https://community.codemotion.com/angular-roma) 
+* Sito: [https://community.codemotion.com/angular-roma](https://community.codemotion.com/angular-roma) 
 
 Ti aspettiamo!
