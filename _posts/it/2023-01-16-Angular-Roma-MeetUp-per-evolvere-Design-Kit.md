@@ -3,7 +3,7 @@ layout: post
 title: "Angular Roma, un MeetUp per evolvere il Design Kit"
 subtitle: "Lunedì 30 gennaio, alle 18:30, l’incontro organizzato dalla community presso @Spacesworks"
 date: 2023-01-16 15:00:00 +0200
-tags: Developers Angular DesignSystem 
+tags: developers angular designsystem 
 categories: news
 author: Matteo Vabanesi
 image:  
