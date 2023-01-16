@@ -15,7 +15,7 @@ Oltre a toccare argomenti chiave, quali le **nuove tecnologie**, l’**accessibi
 
 L’incontro avrà luogo **lunedì 30 gennaio alle ore 18:30**, presso i locali di Spaces a Roma, in Viale Luca Gaurico, Laurentina 91/93. **Per partecipare** è necessario [iscriversi con Eventbrite](https://www.eventbrite.it/e/biglietti-angular-roma-meetup-spacesworks-492397473097). L’evento sarà comunque trasmesso in **streaming** (il link non è al momento disponibile). Per tutti i presenti, a conclusione della giornata, non mancherà un momento conviviale.
 
-Per rimanere aggiornato sugli eventi della community di Angular Roma::
+Per rimanere aggiornato sugli eventi della community di Angular Roma:
 Twitter: [https://twitter.com/AngularRome](https://twitter.com/AngularRome)
 Sito: [https://community.codemotion.com/angular-roma](https://community.codemotion.com/angular-roma) 
 
