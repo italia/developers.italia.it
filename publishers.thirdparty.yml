@@ -158,3 +158,7 @@
 - name: "Mindicity"
   repos:
     - "https://gitlab-di.mindicity.it/mindicity/core/ui/mindicity.core.ui.app"
+    
+- name: "io-Comune: il tema di Plone per la Pubblica Amministrazione"
+  repos:
+    - "https://github.com/italia/design-comuni-plone-theme"
