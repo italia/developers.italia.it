@@ -142,6 +142,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
       desc: Libreria nativa per integrare SPID e CIE OIDC in Java con example project in Spring
+    - title: Nimbus Java SDK
+      icon: github
+      url: https://bitbucket.org/connect2id/oauth-2.0-sdk-with-openid-connect-extensions/
+      desc: Libreria Java per lo sviluppo di entità OAuth2 e OpenID Connect con pieno supporto di OIDC Federation.
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github
