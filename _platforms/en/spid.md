@@ -122,23 +122,23 @@ resources:
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
   - OpenID Connect SDKs:
-    - title: SDK for Python (Django)
+    - title: SDK for Python (Django) with examples
       icon: github
       url: https://github.com/italia/spid-cie-oidc-django
       desc: SPID/CIE OIDC Federation is a suite of Django applications designed to make it easy to build an Openid Connect Federation.
-    - title: SDK for Nodejs
+    - title: SDK for Nodejs with examples
       icon: github
       url: https://github.com/italia/spid-cie-oidc-nodejs
       desc: The SPID/CIE OIDC Federation Relying Party, written in Node.js
-    - title: SDK for AspNetCore
+    - title: SDK for AspNetCore with examples
       icon: github
       url: https://github.com/italia/spid-cie-oidc-aspnetcore
       desc: SPID/CIE OIDC Federation SDK for AspNetCore
-    - title: SDK for PHP
+    - title: SDK for PHP with examples
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: SPID/CIE OIDC Federation Relying Party, for PHP
-    - title: SDK for Spring
+    - title: SDK for Java with examples
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
       desc: Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring
