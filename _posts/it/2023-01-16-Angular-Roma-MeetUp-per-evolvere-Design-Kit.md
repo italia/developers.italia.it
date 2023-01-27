@@ -13,7 +13,7 @@ Developers Italia partecipa al MeetUp organizzato dalla community di Angular Rom
 
 Oltre a toccare argomenti chiave, quali le **nuove tecnologie**, l’**accessibilità** e soprattutto le migliorie ai **componenti dell’Angular Design Kit**, il MeetUp sarà anche l'occasione per condividere l’avanzamento lavori sull’intero **Design system del Paese**, l’insieme di risorse e indicazioni per realizzare siti e servizi pubblici di qualità, efficienti e inclusivi.
 
-L’incontro avrà luogo **lunedì 30 gennaio alle ore 18:30**, presso i locali di Spaces a Roma, in Viale Luca Gaurico, Laurentina 91/93. **Per partecipare** è necessario [iscriversi con Eventbrite](https://www.eventbrite.it/e/biglietti-angular-roma-meetup-spacesworks-492397473097). L’evento sarà comunque trasmesso in **streaming** (il link non è al momento disponibile). Per tutti i presenti, a conclusione della giornata, non mancherà un momento conviviale.
+L’incontro avrà luogo **lunedì 30 gennaio alle ore 18:30**, presso i locali di Spaces a Roma, in Viale Luca Gaurico, Laurentina 91/93. **Per partecipare** è necessario [iscriversi con Eventbrite](https://www.eventbrite.it/e/biglietti-angular-roma-meetup-spacesworks-492397473097). L’evento sarà comunque trasmesso in **streaming** su [LinkedIn](https://t.co/g1vRE49RYH) e [Youtube](https://www.youtube.com/watch?v=asGk-mYU-zM&ab_channel=AngularRome). Per tutti i presenti, a conclusione della giornata, non mancherà un momento conviviale.
 
 Per rimanere aggiornato sugli eventi della community di Angular Roma:
 
