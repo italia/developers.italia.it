@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-01-27T06:02:31+00:00</updated>
+  <updated>2023-01-27T09:55:25+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -24,7 +24,7 @@
 
 &lt;p&gt;Oltre a toccare argomenti chiave, quali le &lt;strong&gt;nuove tecnologie&lt;/strong&gt;, l’&lt;strong&gt;accessibilità&lt;/strong&gt; e soprattutto le migliorie ai &lt;strong&gt;componenti dell’Angular Design Kit&lt;/strong&gt;, il MeetUp sarà anche l’occasione per condividere l’avanzamento lavori sull’intero &lt;strong&gt;Design system del Paese&lt;/strong&gt;, l’insieme di risorse e indicazioni per realizzare siti e servizi pubblici di qualità, efficienti e inclusivi.&lt;/p&gt;
 
-&lt;p&gt;L’incontro avrà luogo &lt;strong&gt;lunedì 30 gennaio alle ore 18:30&lt;/strong&gt;, presso i locali di Spaces a Roma, in Viale Luca Gaurico, Laurentina 91/93. &lt;strong&gt;Per partecipare&lt;/strong&gt; è necessario &lt;a href=&quot;https://www.eventbrite.it/e/biglietti-angular-roma-meetup-spacesworks-492397473097&quot;&gt;iscriversi con Eventbrite&lt;/a&gt;. L’evento sarà comunque trasmesso in &lt;strong&gt;streaming&lt;/strong&gt; (il link non è al momento disponibile). Per tutti i presenti, a conclusione della giornata, non mancherà un momento conviviale.&lt;/p&gt;
+&lt;p&gt;L’incontro avrà luogo &lt;strong&gt;lunedì 30 gennaio alle ore 18:30&lt;/strong&gt;, presso i locali di Spaces a Roma, in Viale Luca Gaurico, Laurentina 91/93. &lt;strong&gt;Per partecipare&lt;/strong&gt; è necessario &lt;a href=&quot;https://www.eventbrite.it/e/biglietti-angular-roma-meetup-spacesworks-492397473097&quot;&gt;iscriversi con Eventbrite&lt;/a&gt;. L’evento sarà comunque trasmesso in &lt;strong&gt;streaming&lt;/strong&gt; su &lt;a href=&quot;https://www.linkedin.com/video/event/urn:li:ugcPost:7024424794154491906/&quot;&gt;LinkedIn&lt;/a&gt; e &lt;a href=&quot;https://www.youtube.com/watch?v=asGk-mYU-zM&amp;amp;ab_channel=AngularRome&quot;&gt;Youtube&lt;/a&gt;. Per tutti i presenti, a conclusione della giornata, non mancherà un momento conviviale.&lt;/p&gt;
 
 &lt;p&gt;Per rimanere aggiornato sugli eventi della community di Angular Roma:&lt;/p&gt;
 
