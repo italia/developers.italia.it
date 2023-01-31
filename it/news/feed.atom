@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-01-29T06:02:37+00:00</updated>
+  <updated>2023-01-31T18:34:05+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,41 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/01/31/online-registrazione-meetup-angular-roma</id>
+    <title>Online la registrazione del MeetUp Angular Roma</title>
+    <updated>2023-01-31T16:00:00+00:00</updated>
+
+    <summary>Scopri come partecipare all'evoluzione del Design Kit e del Design system del Paese </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/01/31/online-registrazione-meetup-angular-roma">&lt;p&gt;Ha riscosso grande interesse il MeetUp organizzato, lunedì 30 gennaio, dalla &lt;strong&gt;community di Angular Roma&lt;/strong&gt; presso i locali di Spaces, zona Eur Laurentina. Circa un centinaio di partecipanti ha seguito, &lt;strong&gt;in presenza e online&lt;/strong&gt;, l’incontro dedicato a fare il punto sull’aggiornamento del &lt;a href=&quot;https://github.com/italia/design-angular-kit&quot;&gt;Design Kit Angular&lt;/a&gt; nell’evoluzione a Bootstrap Italia 2.0.&lt;/p&gt;
+
+&lt;p&gt;Il primo MeetUp del 2023 ha visto tra i relatori &lt;strong&gt;Andrea Stagi&lt;/strong&gt;, Open Source Project Leader per il Dipartimento per la trasformazione digitale, e &lt;strong&gt;Cristian Borelli&lt;/strong&gt;, certificatore Angular e maintainer della libreria italia/design-angular-kit, che sono entrati nel dettaglio delle migliorie ai componenti dell’Angular Design Kit e hanno condiviso con i partecipanti lo stato dell’arte sulle lavorazioni del Design system del Paese.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;registrazione dell’incontro&lt;/strong&gt; è disponibile online sul &lt;a href=&quot;https://www.youtube.com/live/asGk-mYU-zM?feature=share&quot;&gt;canale YouTube della community Angular Rome&lt;/a&gt;, mentre su SlideShare è possibile trovare &lt;a href=&quot;https://www.slideshare.net/AndreaStagi3/angular-kit-e-design-system-del-paese-meetup-ngrome-30-gennaio-2023&quot;&gt;i contenuti presentati dai relatori&lt;/a&gt; nel corso dei loro interventi.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Partecipare all’evoluzione del Kit Angular e allo sviluppo del Design system del Paese è semplice&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;prova a utilizzare &lt;a href=&quot;https://github.com/italia/bootstrap-italia/&quot;&gt;Bootstrap Italia 2&lt;/a&gt; e il &lt;a href=&quot;https://github.com/italia/design-angular-kit&quot;&gt;Design Kit Angular&lt;/a&gt; nei prossimi giorni, mentre si avvicina la data del suo rilascio ufficiale;&lt;/li&gt;
+  &lt;li&gt;segnala &lt;em&gt;issue&lt;/em&gt; oppure apri PR dedicate all’intero kit o su parti specifiche per aiutarci a migliorarlo, sia lato codice sia lato documentazione;&lt;/li&gt;
+  &lt;li&gt;segui gli aggiornamenti &lt;a href=&quot;http://slack.developers.italia.it&quot;&gt;sui nostri canali&lt;/a&gt; per conoscere le future implementazioni.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ogni suggerimento è prezioso, ti aspettiamo.&lt;/p&gt;</content>
+    <published>2023-01-31T16:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="angular" />
+    
+    <category term="designsystem" />
+    
+
+    <author>
+      <name>Matteo Vabanesi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/01/16/Angular-Roma-MeetUp-per-evolvere-Design-Kit</id>
     <title>Angular Roma, un MeetUp per evolvere il Design Kit</title>
