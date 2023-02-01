@@ -130,15 +130,15 @@ Segnalaci le proposte di miglioramento e/o le eventuali anomalie che hai riscont
 
 ## Prima fase di sperimentazione
 
-È prevista una prima fase di sperimentazione che coinvolge un numero progressivo di regioni che possono candidarsi in raccordo con il Gruppo di coordinamento del tavolo FSE. Le regioni inviano 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione che progressivamente verranno realizzati.
+Si è conclusa la prima fase di sperimentazione che ha coinvolto le  regioni che si erano candidate in raccordo con il Gruppo di coordinamento del tavolo FSE.
 
-## Fase di accreditamento
+## Fase di accreditamento (convalida)
 
+Per accreditamento si intende il processo di verifica tecnica  di aderenza alle specifiche tecniche riportate nelle LLGG FSE e relativi documenti tecnici operativi pubblicati su repository GitHub del Ministero della Salute che è necessario completare prima di avviare l’integrazione in produzione con il Gateway FSE 2.0. Tale processo viene definito da test case messi a disposizione dei produttori di applicativi. In tale accezione  per accreditamento (convalida) dell’applicativo software (fase 1) si intende il superamento dei test case riguardanti i servizi oggetto di adeguamento. Ne consegue che non è previsto il rilascio di alcuna certificazione del software.
 Per avviare l'integrazione in produzione con il Gateway FSE 2.0, è necessario completare la procedura di accreditamento.
 
-
 Il processo complessivo di adeguamento e messa in produzione dell’applicativo è composto dalle seguenti fasi:
-* **fase 1**: accreditamento dell’applicativo software:  
+* **fase 1**: accreditamento (convalida) dell’applicativo software:  
   * viene eseguito presso gli ambienti di test del fornitore al quale vengono rilasciati i certificati di test per accedere al gateway di pre-produzione; tali certificati vengono usati per l’accreditamento di tutti gli applicativi software del medesimo fornitore oggetto di accreditamento;
   * ha l’obiettivo di verificare la conformità con le specifiche nazionali;
 * **fase 2**:  verifica tecnica dell'impianto in azienda: 
@@ -148,7 +148,7 @@ Il processo complessivo di adeguamento e messa in produzione dell’applicativo 
   * viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
-Per la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
+Per procedere con la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
 Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
 
 ## Canali
