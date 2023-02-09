@@ -1,11 +1,10 @@
 ---
-title: FSE
-subtitle: Fascicolo Sanitario Elettronico 2.0
+title: Fascicolo Sanitario Elettronico 2.0
 logo: /assets/images/FSE_EXT.png
 external_website: https://www.fascicolosanitario.gov.it
 payoff: Fascicolo sanitario elettronico
 description: >
-  Il nuovo sistema FSE è l’ecosistema digitale che realizza servizi evoluti basati su documenti e dati per cittadini e operatori sanitari.
+  Un nuovo ecosistema digitale, basato su dati e documenti, per offrire prestazioni di qualità a favore di cittadini e operatori sanitari
 lang: it
 order: 2
 highlight: true
@@ -149,6 +148,9 @@ Il processo complessivo di adeguamento e messa in produzione dell’applicativo 
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
 Per procedere con la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
+
+Per poter accedere ai servizi è necessario avere 2 certificati x509. Per il loro ottenimento è necessario inviare 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione.
+
 Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
 
 ## Canali
