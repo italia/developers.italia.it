@@ -304,7 +304,7 @@ it:
         * **Longevity**: l'età del progetto.
 
 
-I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/publiccode-crawler/blob/main/crawler/vitality-ranges.yml)."
+I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/publiccode-crawler/blob/main/vitality-ranges.yml)."
     publiccode:
       categories:
         accounting: accounting
@@ -724,7 +724,7 @@ en:
         * **Longevity**: the age of the project.
 
 
-The ranges of every measure can be found in the [vitality-ranges.yml](https://github.com/italia/publiccode-crawler/blob/main/crawler/vitality-ranges.yml) file."
+The ranges of every measure can be found in the [vitality-ranges.yml](https://github.com/italia/publiccode-crawler/blob/main/vitality-ranges.yml) file."
     publiccode:
       categories:
         accounting: accounting
