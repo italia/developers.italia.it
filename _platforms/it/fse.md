@@ -80,6 +80,10 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-accreditamento
       desc: Repository con documentazione per l'accreditamento
+    - title: Gestione fase transitoria
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-support/tree/main/doc/transitorio
+      desc: Descrizione gestione avvio in fase transitoria
 ---
 
 ## Intro
@@ -153,6 +157,11 @@ Per procedere con la **fase 1** una volta completati i test autonomi sul softwar
 Per poter accedere ai servizi è necessario avere 2 certificati x509. Per il loro ottenimento è necessario inviare 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione.
 
 Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
+
+## Gestione fase transitoria avvio in produzione
+
+Per fase *transitoria* si intende la modalità di avvio in produzione dei software già adeguati ai nuovi standard documentali, prima della messa in linea del Gateway.
+Questa fase è descritta nel documento "[Transitorio](https://github.com/ministero-salute/it-fse-support/tree/main/doc/transitorio)".
 
 ## Canali
 
