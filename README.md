@@ -99,7 +99,7 @@ docker-compose up --build
 
 ## Makefile
 
-Both the [CircleCI build](.circleci/config.yml) and the [Docker
+Both the [build](.github/workflows/publish.yml) and the [Docker
 files](docker-compose.yml) leverage a [Makefile](Makefile), facilitating the
 execution of more complex routines.
 You can have a look at the [Makefile](Makefile) to know more about the exact
