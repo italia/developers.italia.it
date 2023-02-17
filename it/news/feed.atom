@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-02-17T08:48:12+00:00</updated>
+  <updated>2023-02-17T09:12:51+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -22,13 +22,13 @@
     <summary>Disponibile la registrazione della community call organizzata da Frictionless Data </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2023/02/17/metadati-come-standard-di-qualita">&lt;p&gt;Un unico metadato per tutti i dataset a disposizione. Anche se non è ancora disponibile uno standard per descrivere contemporaneamente i dati e i loro cataloghi di pubblicazione, l’&lt;strong&gt;importanza della metadatazione&lt;/strong&gt; è stata al centro della &lt;em&gt;community call&lt;/em&gt; organizzata, lo scorso 26 gennaio, da &lt;a href=&quot;https://frictionlessdata.io&quot;&gt;Frictionless Data&lt;/a&gt;, il &lt;em&gt;framework open source&lt;/em&gt; pensato per &lt;strong&gt;togliere attrito dal lavoro sui dati&lt;/strong&gt;. Un’occasione per ribadire la centralità degli &lt;em&gt;open data&lt;/em&gt; in Europa e fare il punto sulla &lt;strong&gt;filiera di pubblicazione dei dati aperti&lt;/strong&gt; adottata dalla Pubblica Amministrazione italiana ed europea.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Guarda la registrazione dell’intervento&lt;/strong&gt; (lingua inglese) su &lt;a href=&quot;https://www.youtube.com/watch?v=sHHRT5ptqbg&amp;amp;t=746s&quot;&gt;Youtube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sHHRT5ptqbg&amp;amp;t=746s&quot;&gt;Guarda la registrazione dell’intervento&lt;/a&gt;&lt;/strong&gt; (lingua inglese) su Youtube.&lt;/p&gt;
 
 &lt;p&gt;I dati aperti sono fondamentali per &lt;strong&gt;garantire trasparenza e responsabilità&lt;/strong&gt;, capire il presente e promuovere un’economia dei dati. Sono però i metadati che abilitano la pubblicazione dei dataset nei cataloghi nazionali ed europei. Ad esempio, i dati sui fondi del PNRR e sul Registro nazionale della popolazione (ANPR) sono stati pubblicati dal Dipartimento su Github con lo &lt;strong&gt;standard italiano DCAT_AP-IT&lt;/strong&gt;, un formato obbligatorio per entrare nei cataloghi della UE e utile per comprendere contenuti, temi e licenze. Allo stesso tempo, sono stati inseriti &lt;strong&gt;metadati Frictionless&lt;/strong&gt; per descrivere attributi, tipologie di dati e vincoli nel loro utilizzo, informazioni necessarie all’utilizzo dei dati e al controllo della loro qualità.&lt;/p&gt;
 
 &lt;p&gt;DCAT_AP-IT e Frictionless &lt;strong&gt;non sono standard alternativi, ma complementari&lt;/strong&gt;. Arrivare a un’evoluzione che permetta di inserire tutte le informazioni in un unico contenitore consentirebbe di semplificare la pubblicazione dei dati sia per la loro catalogazione, che per la loro descrizione e qualità. Al momento si tratta ancora di &lt;strong&gt;un lavoro in itinere&lt;/strong&gt;, puoi seguire gli aggiornamenti &lt;a href=&quot;http://slack.developers.italia.it/&quot;&gt;sui nostri canali Slack&lt;/a&gt; oppure contribuire alla &lt;a href=&quot;https://github.com/frictionlessdata/frictionlessdata.io/issues/551&quot;&gt;issue aperta su Github&lt;/a&gt;. Ti aspettiamo.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2023-02-17/Frictionless-Data-e-DCAT.pdf&quot;&gt;Consulta le slide dell’intervento&lt;/a&gt;&lt;/strong&gt; (lingua inglese): Frictionless data e DCAT_AP-IT&lt;/p&gt;</content>
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2023-02-17/Frictionless-Data-e-DCAT.pdf&quot;&gt;Consulta le slide dell’intervento&lt;/a&gt;&lt;/strong&gt; (lingua inglese)&lt;/p&gt;</content>
     <published>2023-02-17T07:00:00+00:00</published>
 
     
