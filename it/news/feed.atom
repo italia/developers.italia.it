@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-02-17T09:12:51+00:00</updated>
+  <updated>2023-02-17T11:00:22+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -20,7 +20,7 @@
     <updated>2023-02-17T07:00:00+00:00</updated>
 
     <summary>Disponibile la registrazione della community call organizzata da Frictionless Data </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2023/02/17/metadati-come-standard-di-qualita">&lt;p&gt;Un unico metadato per tutti i dataset a disposizione. Anche se non è ancora disponibile uno standard per descrivere contemporaneamente i dati e i loro cataloghi di pubblicazione, l’&lt;strong&gt;importanza della metadatazione&lt;/strong&gt; è stata al centro della &lt;em&gt;community call&lt;/em&gt; organizzata, lo scorso 26 gennaio, da &lt;a href=&quot;https://frictionlessdata.io&quot;&gt;Frictionless Data&lt;/a&gt;, il &lt;em&gt;framework open source&lt;/em&gt; pensato per &lt;strong&gt;togliere attrito dal lavoro sui dati&lt;/strong&gt;. Un’occasione per ribadire la centralità degli &lt;em&gt;open data&lt;/em&gt; in Europa e fare il punto sulla &lt;strong&gt;filiera di pubblicazione dei dati aperti&lt;/strong&gt; adottata dalla Pubblica Amministrazione italiana ed europea.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/02/17/metadati-come-standard-di-qualita">&lt;p&gt;Un unico metadato per tutti i dataset a disposizione. Anche se non è ancora disponibile uno standard per descrivere contemporaneamente i dati e i loro cataloghi di pubblicazione, l’&lt;strong&gt;importanza della metadatazione&lt;/strong&gt; è stata al centro della &lt;em&gt;&lt;a href=&quot;https://frictionlessdata.io/blog/2023/02/06/community-call/&quot;&gt;community call&lt;/a&gt;&lt;/em&gt; organizzata, lo scorso 26 gennaio, da &lt;a href=&quot;https://frictionlessdata.io&quot;&gt;Frictionless Data&lt;/a&gt;, il &lt;em&gt;framework open source&lt;/em&gt; pensato per &lt;strong&gt;togliere attrito dal lavoro sui dati&lt;/strong&gt;. Un’occasione per ribadire la centralità degli &lt;em&gt;open data&lt;/em&gt; in Europa e fare il punto sulla &lt;strong&gt;filiera di pubblicazione dei dati aperti&lt;/strong&gt; adottata dalla Pubblica Amministrazione italiana ed europea.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=sHHRT5ptqbg&amp;amp;t=746s&quot;&gt;Guarda la registrazione dell’intervento&lt;/a&gt;&lt;/strong&gt; (lingua inglese) su Youtube.&lt;/p&gt;
 
