@@ -9,7 +9,7 @@ author: Matteo Fortini
 image:
 locale: it
 ---
-Un unico metadato per tutti i dataset a disposizione. Anche se non è ancora disponibile uno standard per descrivere contemporaneamente i dati e i loro cataloghi di pubblicazione, l’**importanza della metadatazione** è stata al centro della *community call* organizzata, lo scorso 26 gennaio, da [Frictionless Data](https://frictionlessdata.io), il *framework open source* pensato per **togliere attrito dal lavoro sui dati**. Un’occasione per ribadire la centralità degli *open data* in Europa e fare il punto sulla **filiera di pubblicazione dei dati aperti** adottata dalla Pubblica Amministrazione italiana ed europea.
+Un unico metadato per tutti i dataset a disposizione. Anche se non è ancora disponibile uno standard per descrivere contemporaneamente i dati e i loro cataloghi di pubblicazione, l’**importanza della metadatazione** è stata al centro della *[community call](https://frictionlessdata.io/blog/2023/02/06/community-call/)* organizzata, lo scorso 26 gennaio, da [Frictionless Data](https://frictionlessdata.io), il *framework open source* pensato per **togliere attrito dal lavoro sui dati**. Un’occasione per ribadire la centralità degli *open data* in Europa e fare il punto sulla **filiera di pubblicazione dei dati aperti** adottata dalla Pubblica Amministrazione italiana ed europea.
 
 **[Guarda la registrazione dell’intervento](https://www.youtube.com/watch?v=sHHRT5ptqbg&t=746s)** (lingua inglese) su Youtube.
 
