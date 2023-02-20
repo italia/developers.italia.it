@@ -3,7 +3,7 @@
     "version": "2.4.0",
     "license": "BSD-3-Clause",
     "dependencies": {
-        "bootstrap-italia": "^1.5.1",
+        "bootstrap-italia": "^1.6",
         "chart.js": "^2.9.4",
         "datatables.net-dt": "^1.10.19",
         "design-react-kit": "^3.3.3",
