@@ -307,107 +307,107 @@ it:
 I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](https://github.com/italia/publiccode-crawler/blob/main/vitality-ranges.yml)."
     publiccode:
       categories:
-        accounting: accounting
-        agile-project-management: agile project management
-        applicant-tracking: applicant tracking
-        application-development: application development
-        appointment-scheduling: appointment scheduling
+        accounting: contabilità
+        agile-project-management: gestione agile di progetti
+        applicant-tracking: monitoraggio candidati
+        application-development: sviluppo applicazioni
+        appointment-scheduling: programmazione appuntamenti
         backup: backup
-        billing-and-invoicing: billing and invoicing
+        billing-and-invoicing: fatturazione e scontrini
         blog: blog
-        budgeting: budgeting
+        budgeting: bilancio
         business-intelligence: business intelligence
-        business-process-management: business process management
+        business-process-management: gestione processi aziendali
         cad: CAD
-        call-center-management: call center management
-        cloud-management: cloud management
-        collaboration: collaboration
-        communications: communications
-        compliance-management: compliance management
-        contact-management: contact management
-        content-management: content management
+        call-center-management: gestione call center
+        cloud-management: gestione cloud
+        collaboration: collaborazione
+        communications: comunicazioni
+        compliance-management: gestione conformità
+        contact-management: gestione contatti
+        content-management: gestione contenuti
         crm: CRM
-        customer-service-and-support: customer service and support
-        data-analytics: data analytics
-        data-collection: data collection
-        data-visualization: data visualization
-        digital-asset-management: digital asset management
-        digital-citizenship: digital citizenship
-        document-management: document management
-        donor-management: donor management
+        customer-service-and-support: servizio e supporto clienti
+        data-analytics: analisi dati
+        data-collection: raccolta dati
+        data-visualization: visualizzazione dati
+        digital-asset-management: gestione risorse digitali
+        digital-citizenship: cittadinanza digitale
+        document-management: gestione documenti
+        donor-management: gestione donatori
         e-commerce: e-commerce
         e-signature: e-signature
-        educational-content: educational-content
-        email-management: email management
-        email-marketing: email marketing
-        employee-management: employee management
-        enterprise-project-management: enterprise project management
-        enterprise-social-networking: enterprise social networking
+        educational-content: contenuti educativi
+        email-management: gestione email
+        email-marketing: marketing via email
+        employee-management: gestione dipendenti
+        enterprise-project-management: gestione progetti d'impresa
+        enterprise-social-networking: rete sociale d'impresa
         erp: ERP
-        event-management: event management
-        facility-management: facility management
-        feedback-and-reviews-management: feedback and reviews management
-        financial-reporting: financial reporting
-        fleet-management: fleet management
-        fundraising: fundraising
-        gamification: gamification
-        geographic-information-systems: geographic information systems
-        grant-management: grant management
+        event-management: gestione eventi
+        facility-management: gestione impianti
+        feedback-and-reviews-management: gestione feedback e recensioni
+        financial-reporting: report finanziari
+        fleet-management: gestione autoveicoli
+        fundraising: raccolta fondi
+        gamification: ludicizzazione
+        geographic-information-systems: sistemi informativi geografici
+        grant-management: gestione sovvenzioni
         graphic-design: graphic design
-        help-desk: help desk
+        help-desk: sportello assistenza
         hr: HR
         ide: IDE
-        identity-management: identity management
-        instant-messaging: instant messaging
-        inventory-management: inventory management
-        it-asset-management: IT asset management
-        it-development: IT development
-        it-management: IT management
-        it-security: IT security
-        it-service-management: IT service management
-        knowledge-management: knowledge management
-        learning-management-system: learning management system
+        identity-management: gestione delle identità
+        instant-messaging: messaggistica istantanea
+        inventory-management: gestione inventario
+        it-asset-management: gestione risorse informatiche
+        it-development: sviluppo informatico
+        it-management: gestione tecnologie informatiche
+        it-security: sicurezza informatica
+        it-service-management: gestione servizi informatici
+        knowledge-management: gestione conoscenza
+        learning-management-system: sistemi di gestione dell'apprendimento
         marketing: marketing
-        mind-mapping: mind mapping
-        mobile-marketing: mobile marketing
-        mobile-payment: mobile payment
-        network-management: network management
-        office: office
-        online-booking: online booking
-        online-community: online community
-        payment-gateway: payment gateway
-        payroll: payroll
-        predictive-analysis: predictive analysis
-        procurement: procurement
-        productivity-suite: productivity suite
-        project-collaboration: project collaboration
-        project-management: project management
-        property-management: property management
-        real-estate-management: real estate management
-        remote-support: remote support
-        resource-management: resource management
-        sales-management: sales management
+        mind-mapping: mappe mentali
+        mobile-marketing: marketing mobile
+        mobile-payment: pagamenti tramite cellulare
+        network-management: gestione rete
+        office: ufficio
+        online-booking: prenotazioni online
+        online-community: community online
+        payment-gateway: gateway pagamenti
+        payroll: libro paga
+        predictive-analysis: analisi predittive
+        procurement: approvvigionamento
+        productivity-suite: suite di produttività
+        project-collaboration: collaborazioni su progetti
+        project-management: gestione progetti
+        property-management: gestione proprietà
+        real-estate-management: gestione immobiliare
+        remote-support: supporto remoto
+        resource-management: gestione risorse
+        sales-management: gestione vendite
         seo: SEO
-        service-desk: service desk
-        social-media-management: social media management
-        survey: survey
-        talent-management: talent management
-        task-management: task management
-        taxes-management: taxes management
-        test-management: test management
-        time-management: time management
-        time-tracking: time tracking
-        translation: translation
-        video-conferencing: video conferencing
-        video-editing: video editing
-        visitor-management: visitor management
+        service-desk: sportello assistenza servizi
+        social-media-management: gestione social media
+        survey: sondaggi
+        talent-management: gestione talenti
+        task-management: gestione incarichi
+        taxes-management: gestione tasse
+        test-management: gestione test
+        time-management: gestione del tempo
+        time-tracking: monitoraggio del tempo
+        translation: traduzioni
+        video-conferencing: videoconferenze
+        video-editing: montaggio video
+        visitor-management: gestione visitatori
         voip: VoIP
-        warehouse-management: warehouse management
-        web-collaboration: web collaboration
-        web-conferencing: web conferencing
+        warehouse-management: gestione magazzino
+        web-collaboration: collaborazioni web
+        web-conferencing: conferenze web
         whistleblowing: whistleblowing
-        website-builder: website builder
-        workflow-management: workflow management
+        website-builder: creatori di siti
+        workflow-management: gestione flusso di lavoro
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
