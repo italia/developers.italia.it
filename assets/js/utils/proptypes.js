@@ -6,7 +6,7 @@ export const searchItemProptypes = PropTypes.exact({
   icon: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
-  logoPlaceholder: PropTypes.string.isRequired,
+  fallback: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
 });

@@ -38,7 +38,7 @@ Queste sono le principali attività che stiamo ipotizzando per il prossimo futur
 Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
 
 <a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
 
 ## Codice sorgente
 

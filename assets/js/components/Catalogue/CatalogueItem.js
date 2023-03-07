@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
     },
   },
   logoContainer: {
-    composes: 'mt-2',
+    composes: 'my-3',
     height: '150px',
     width: '100%',
   },
@@ -47,36 +47,38 @@ const useStyles = createUseStyles({
     textTransform: 'uppercase',
     fontWeight: '600',
     marginTop: 'auto',
+    marginBottom: '2rem',
     '&:hover': {
       textDecoration: 'none',
     },
   },
 });
 
-export const CatalogueItem = ({ item }) => {
+// eslint-disable-next-line react/prop-types
+export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback }) => {
   const classes = useStyles();
 
   return (
     <article
-      className="col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column"
-      id={item.id}
-      data-testid={item.id}
+      id={id}
+      className="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-10"
+      data-testid={id}
       data-class="catalogue-item"
     >
       <div>
-        <Icon icon={item.icon} size="sm" className="mr-1" />
-        <span className={classes.category}>{l10NLabels.software[item.category]}</span>
+        <Icon icon={icon} size="sm" className="mr-1" />
+        <span className={classes.category}>{l10NLabels.software[category]}</span>
       </div>
-      <div className="my-2 my-md-0">
-        <a href={item.url} title={item.name} className={classes.link} data-testid="item-anchor">
+      <div className="my-2 my-md-0 w-100">
+        <a href={url} title={name} className={classes.link} data-testid="item-anchor">
           <div className={classes.logoContainer}>
-            <ImageWithPlaceholder placeholder={item.logoPlaceholder} alt="logo" img={item.logo} />
+            <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
           </div>
-          <div className={classes.title}>{item.name}</div>
-          <div className={classes.description}>{item.description}</div>
+          <div className={classes.title}>{name}</div>
+          <div className={classes.description}>{description}</div>
         </a>
       </div>
-      <a href={item.url} title={item.name} className={classes.readMore}>
+      <a href={url} title={name} className={classes.readMore}>
         {l10NLabels.software.read_more} →
       </a>
     </article>
@@ -84,5 +86,5 @@ export const CatalogueItem = ({ item }) => {
 };
 
 CatalogueItem.propTypes = {
-  item: searchItemProptypes,
+  searchItemProptypes,
 };

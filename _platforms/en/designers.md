@@ -39,6 +39,7 @@ The site [designers.italia.it](https://designers.italia.it/){:target="_blank"} c
 * References to the current version of the [Design Guidelines](https://designers.italia.it/guide/){:target="_blank"}.
 * A series of [kits for the design of services of the Public Administration](https://designers.italia.it/kit/){:target="_blank"}.
 * The [blog](https://designers.italia.it/blog/){:target="_blank"} with use case of the kits.
+* The [activity plan updated to 2022](https://designers.italia.it/piano-attivita/), containing a roadmap of the activities and the main results achieved by the Designers Italia project, future actions and goals to achieve.
 
 The source code of the site itself is hosted in a [GitHub repository](https://github.com/italia/designers.italia.it){:target="_blank"} open to any kind of contribution.
 
@@ -64,6 +65,7 @@ The Bootstrap 4 based kit is the reference point for the development of Public A
 
 * [Bootstrap Italia Documentation](https://italia.github.io/bootstrap-italia/){:target="_blank"}
 * [GitHub Repository](https://github.com/italia/bootstrap-italia){:target="_blank"}
+* [Bootstrap Italia Playground to start using Bootstrap Italia](https://github.com/italia/bootstrap-italia-playground){:target="_blank"};
 * [Example of a template to start with](https://italia.github.io/bootstrap-italia/docs/esempi/template-vuoto/){:target="_blank"}
 
 Bootstrap Italia is already used on some successful projects, such as the [prototype of the website of the Municipality of Cagliari](https://italia.github.io/design-comuni-prototipi/){:target="_blank"} and the [Docs Italia](https://docs.italia.it/){:target="_blank"} website.

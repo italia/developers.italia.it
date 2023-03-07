@@ -2,25 +2,22 @@
 download-data:
 	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
 	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_categories.yml -O _data/crawler/software_categories.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software-open-source.yml -O _data/crawler/software-open-source.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software-riuso.yml -O _data/crawler/software-riuso.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
+
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
+	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_tech_list.yml
+
+	# Check the github_issues.json file exists, we'll need it on the frontend once the site has build
+	curl -w %{http_code} -s -o /dev/null https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json | grep 200
 
 bundle-setup:
-	gem install bundler:2.1.4
-	bundle config set path vendor/
+	gem install bundler:2.3.24
 
 bundle-install: bundle-setup
 	bundle install
 
 bundle-install-deployment: bundle-setup
 	bundle install --deployment
-
-# Get issues (/assets/issues.js) and contributors (_data/github_*.yml) from GitHub
-github-import: bundle-install
-	bundle exec scripts/github_importer.rb
 
 test:
 	npm run lint
@@ -29,6 +26,7 @@ test:
 	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 
 local:
+	bundle config set path vendor/
 	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
 
 jekyll-build:
@@ -36,5 +34,5 @@ jekyll-build:
 	NODE_ENV=production npm run build
 include-npm-deps:
 	npm ci
-build: | build-bundle-deployment include-npm-deps download-data jekyll-build
+build: | bundle-install-deployment include-npm-deps download-data jekyll-build
 build-test: | build test

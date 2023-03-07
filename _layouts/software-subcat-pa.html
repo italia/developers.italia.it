@@ -14,7 +14,7 @@ layout: default
 
 {% endcomment %}
 
-{% assign pa_list = site.data.crawler.amministrazioni %}
+{% assign pa_list = site.data.crawler.amministrazioni | sort: "entityName" %}
 
 {% assign root = '/' | append: active_lang | append: '/software-open-source' %}
 <div class="container-fluid  d-block d-md-none">

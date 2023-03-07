@@ -29,6 +29,8 @@ layout: default
   </div>
 </div>
 
+{% include banner-pnrr.html extraclass="overflow-x-hidden pt-3 px-4" %}
+
 {% if page.pair-blocks!=nil%}
 {% include sw-pair-blocks.html blocks=page.pair-blocks %}
 {% endif %}
@@ -52,6 +54,7 @@ layout: default
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
+      scope="recent"
       items=recent_sw
       show_type=false
       %}
@@ -73,6 +76,7 @@ layout: default
     </div>
     <div class="row row-eq-height">
       {% include software-listing.html
+      scope="most_active"
       items=active_sw
       show_type=false
       %}

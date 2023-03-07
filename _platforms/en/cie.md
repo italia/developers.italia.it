@@ -25,10 +25,10 @@ resources:
   - Documentazione:
     - title: Technical information about the card
       icon: link
-      url: http://www.cartaidentita.interno.gov.it/caratteristiche-del-documento/
+      url: https://www.cartaidentita.interno.gov.it/la-carta/caratteristiche-del-documento/
     - title: Microprocessor specs
       icon: file
-      url: http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf
+      url: https://www.cartaidentita.interno.gov.it/downloads/2021/03/cie_3.0_-_specifiche_chip.pdf
     - title: User manual for the Windows middleware
       icon: file
       url: https://docs.italia.it/italia/cie/cie-middleware-windows-docs/
@@ -54,10 +54,6 @@ resources:
       icon: settings
       url: https://github.com/italia/cie-cns-apache-docker
       desc: Docker image for exposing a web server with CIE or CNS based authentication
-    - title: IDEA (app Android)
-      icon: telephone
-      url: https://github.com/italia/cie-ideaapp
-      desc: Source code of the IDEA app for Android which allows to read and view card contents with a smartphone
     - title: SDK for .NET (MRTD)
       icon: github
       url: https://github.com/italia/cie-mrtd-dotnet-sdk
@@ -66,10 +62,6 @@ resources:
       icon: github
       url: https://github.com/italia/cie-mrtd-example-app
       desc: Example desktop application for reading MRTD/ICAO data using the .NET library
-    - title: Example web application (MRTD)
-      icon: github
-      url: https://github.com/italia/cie-mrtd-example-web
-      desc: Example web application for reading MRTD/ICAO data using the .NET library
     - title: SDK for Arduino (NIS)
       icon: github
       url: https://github.com/italia/cie-PN532
@@ -86,10 +78,6 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-java-sdk
       desc: Java library for reading the unique card number (NIS)
-    - title: SDK for Objective-C (NIS)
-      icon: github
-      url: https://github.com/italia/cie-nis-objc-sdk
-      desc: Objective-C library for reading the unique card number (NIS)
 ---
 
 ## Intro
@@ -112,7 +100,7 @@ The CIE is not only an identity card, but it's also a technology that enables ne
 This will be made possible thanks to the identification features embedded in the microchip, whose specifics are open and downloadable from this page.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
 
 ## Information provided by the card
 

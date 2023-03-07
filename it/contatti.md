@@ -7,7 +7,7 @@ ref:
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /it/chi-siamo
-include-developers-newsletter: false
+include-developers-newsletter: true
 pair-blocks:
     - title: "Lavora con noi"
       text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/) del sito del Ministero per l'innovazione tecnologica e la digitalizzazione."

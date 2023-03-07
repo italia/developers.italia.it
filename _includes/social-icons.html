@@ -8,10 +8,14 @@
     </a>
   </li>
   {% for item in include.social_items %}
+  {% assign icon = "/assets/svg/sprite.svg#it-" | append: item[0] %}
+  {% if item[1].icon %}
+  {% assign icon = item[1].icon %}
+  {% endif %}
   <li class="list-inline-item">
-    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}">
+    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me">
       <svg class="icon icon-white">
-        <use xlink:href="/assets/svg/sprite.svg#it-{{ item[0] }}"></use>
+        <use xlink:href="{{ icon }}"></use>
       </svg>
     </a>
   </li>

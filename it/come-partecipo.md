@@ -42,7 +42,7 @@ pair-blocks:
         rilasciato in open source dalla Pubblica Amministrazione, o
         software open source di terze parti destinato al settore pubblico:
         aiutando i maintainer ad inserire un file `publiccode.yml` nei
-        loro repositori permetterai al crawler di Developers Italia di scoprirli."
+        loro repositori permetterai al crawler di Developers Italia di scoprirli.
       image: /assets/images/come-partecipo-1.svg
       buttons:
         - label: Scopri di più

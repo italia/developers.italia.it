@@ -17,7 +17,9 @@ export const CatalogueItems = React.memo(({ items }) => {
 
   const itemsList = items.map((r) => (
     <React.Fragment key={r.id}>
-      <CatalogueItem key={r.id} item={r} />
+      <div className="mx-auto col-sm-11 col-md-6 col-lg-4 col-xl-3 p-3 d-flex flex-column">
+        <CatalogueItem key={r.id} {...r} />
+      </div>
       <div className="dropdown-divider col-12 d-md-none"></div>
     </React.Fragment>
   ));

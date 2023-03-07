@@ -9,7 +9,7 @@ const client = new elasticsearch.Client({
 });
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
-  const must = [{ term: { _type: 'software' } }];
+  const must = [{ term: { type: 'software' } }];
   if (searchValue) {
     must.push({
       multi_match: {
@@ -19,6 +19,7 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
           `publiccode.description.${lang}.localizedName^3`,
           `publiccode.description.${lang}.shortDescription^2`,
           `publiccode.description.${lang}.longDescription`,
+          `publiccode.description.${lang}.features`,
         ],
       },
     });
@@ -65,6 +66,7 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
                   `publiccode.description.${lang}.localizedName^3`,
                   `publiccode.description.${lang}.shortDescription^2`,
                   `publiccode.description.${lang}.longDescription`,
+                  `publiccode.description.${lang}.features`,
                   'html',
                 ],
               },
@@ -75,11 +77,17 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
             should: [
               {
                 bool: {
-                  must: [{ term: { _type: 'post' } }, { term: { lang } }],
+                  must: [{ term: { type: 'news' } }, { term: { lang } }],
                 },
               },
-              { term: { _type: 'software' } },
-              { term: { _type: 'administration' } },
+              {
+                bool: {
+                  must: [{ term: { type: 'platform' } }, { term: { lang } }],
+                },
+              },
+              { term: { type: 'platform' } },
+              { term: { type: 'software' } },
+              { term: { type: 'administration' } },
             ],
           },
         },
@@ -96,7 +104,7 @@ export const queryAdministration = async ({ searchValue, filters, sortBy, from, 
       filter: buildFilter(filters),
       must: [
         searchValue ? { multi_match: { query: searchValue, fields: ['it-riuso-codiceIPA-label'] } } : null,
-        { term: { _type: 'administration' } },
+        { term: { type: 'administration' } },
       ],
     },
   };
@@ -110,7 +118,7 @@ export const queryPlatform = async ({ searchValue, filters, sortBy, from, size }
       must: searchValue ? [{ multi_match: { query: searchValue, fields: ['title^3', 'subtitle^2', 'html'] } }] : [],
     },
   };
-  return await executeQuery({ type: 'post', query, sort: buildSort(sortBy), from, size });
+  return await executeQuery({ query, sort: buildSort(sortBy), from, size });
 };
 
 export const queryApi = async ({ searchValue, filters, sortBy, from, size }) => {
@@ -140,5 +148,5 @@ const executeQuery = async ({ query, sort, from, size }) => {
     preference,
   };
   const results = await client.search(params);
-  return [results.hits.hits, results.hits.total];
+  return [results.hits.hits, results.hits.total.value];
 };

@@ -20,20 +20,20 @@ resources:
       icon: file
       desc: Pagina di accesso della piattaforma.
     - title: Documentazione
-      url: https://indicepa.gov.it/documentale/n-documentazione.php
+      url: https://indicepa.gov.it/ipa-portale/documenti
       icon: file
       desc: Documentazione alla piattaforma. La documentazione include sia documenti utente che documentazione più tecnica per l'utlizzo dei webservices e l'integrazione da linguaggio di programmazione con la piattaforma.
   - Consulta i dati:
     - title: Open Data
-      url: https://www.indicepa.gov.it/documentale/n-opendata.php
+      url: https://indicepa.gov.it/ipa-dati
       icon: file
       desc: Accesso ai dati della piattaforma in formato Open Data. L'iPA aderisce alla filosofia dell'open data e avvia un percorso basato sull'accesso ai dati pubblici senza restrizioni. I dati sono organizzati in formati elettronici standard e aperti, accessibili qui.
     - title: Web Services
-      url: https://www.indicepa.gov.it/documentale/n-webservices.php
+      url: https://indicepa.gov.it/ipa-portale/dati-statistiche/web-service
       icon: file
       desc: Accesso ai dati tramite web services. I web services pubblicati su iPA ti consentono di fruire in modalità applicativa di alcuni contenuti presenti sul sito. A questo link è possibile trovare la documentazione e le procedure per accedere ai servizi web della piattaforma.
     - title: Protocollo LDAP
-      url: https://www.indicepa.gov.it/documentale/n-gestioneutenti-ldap.php
+      url: https://indicepa.gov.it/ipa-portale/dati-statistiche/protocollo-ldap
       icon: file
       desc: Accesso ai dati tramite protocollo LDAP. A questo link sono disponibili le guide e i processi per ottenere l'accesso ai dati della piattaforma tramite LDAP.
 ---
@@ -59,6 +59,6 @@ delle Amministrazioni pubbliche (BDAP) per il controllo e monitoraggio degli and
 
 ## Web Service
 
-Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/registr-user-ws/n-ws-registrazione-form1.php).
+Per utilizzare i Web Services è necessario chiedere una specifica autorizzazione (Authorization ID) tramite [il form di richiesta Authorization ID](https://www.indicepa.gov.it/ipa-portale/dati-statistiche/web-service/richiedi-authorization-id).
 Occorre selezionare la voce del menu Richiedi Authorization ID e compilare la form dedicata.
-Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://www.indicepa.gov.it/documentale/n-webservices.php).
+Per qualsiasi informazione sull'utilizzo dei Web Service si rimanda alla [documentazione](https://indicepa.gov.it/ipa-portale/documenti).

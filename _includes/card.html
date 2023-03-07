@@ -2,7 +2,7 @@
   <div class="d-flex newscard__top py-2 ">
     {% if include.date %}
     <time datetime="{{ include.date | date_to_xmlschema }}" class="ml-auto">
-      {{ include.date | date: "%b %-d, %Y" }}
+      {{ include.date | localize: active_lang, ":short_date" }}
     </time>
     {% endif %}
   </div>

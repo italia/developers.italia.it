@@ -1,3 +1,12 @@
+- openapi: https://raw.githubusercontent.com/italia/developers-italia-api/main/developers-italia.oas.yaml
+  title: Catalogo del software pubblico - developers.italia.it
+  abstract: API del Catalogo del software pubblico in Developers Italia (beta)
+  contact:
+    name: Developers Italia
+    logo: /assets/icons/logo-it-blue.svg
+  tags: []
+  language: [it]
+  slug: developers-italia
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml
   title: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
@@ -53,15 +62,6 @@
   tags: []
   language: [it]
   slug: aree-protette-lombardia
-- openapi: https://raw.githubusercontent.com/teamdigitale/anpr-dashboard-server/master/openapi/anpr-dashboard.yaml
-  title: ANPR Dashboard API
-  abstract: Informazioni sullo stato della migrazione ad ANPR.
-  contact:
-    name: Team Digitale
-    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
-  tags: []
-  language: [it]
-  slug: anpr-dashboard
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/covid19-regione.umbria.it.yaml
   title: API sui dati del COVID-19 della Regione Umbria
   abstract: Dati sull'emergenza COVID-19 della Regione Umbria
@@ -91,4 +91,33 @@
   tags: [data]
   language: [it]
   slug: ade-cartografia-wms
-
+- openapi: https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/swagger.yaml
+  title: SPARQL endpoint dati.beniculturali.it
+  abstract: >-
+    Ricerca i beni culturali, i luoghi della cultura, gli archivi fotografici e altre informazioni sul patrimonio culturale italiano.
+  contact:
+    name: Ministero della Cultura
+    logo: /assets/images/api/logo-ministero-cultura.svg
+  tags: [data]
+  language: [it]
+  slug: mic-data-sparql
+- openapi: https://raw.githubusercontent.com/APT-Servizi/openapi-ert/main/v1/api-spec.yaml
+  title: OpenData Emilia Romagna Turismo
+  abstract: >-
+    Catalogo ufficiale degli open-data del turismo della regione Emilia-Romagna.
+  contact:
+    name: APT Servizi
+    logo: /assets/images/api/logo-ert-api.png
+  tags: [data, turismo]
+  language: [it, en]
+  slug: opendata-ert
+- openapi: https://idrogeo.isprambiente.it/api
+  title: Idrogeo API
+  abstract: >-
+    Consulta mappe, dati e indicatori sul dissesto idrogeologico in Italia.
+  contact:
+    name: ISPRA
+    logo: /assets/images/api/logo-ispra.jpg
+  tags: [data, ambiente]
+  language: [it, en]
+  slug: ispra-idrogeo

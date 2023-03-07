@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="409.86432"
+   height="342.34381"
+   viewBox="0 0 409.86432 342.34381"
+   version="1.1"
+   id="svg77"
+   sodipodi:docname="banner-newsletter-image2.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview79"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.495183"
+     inkscape:cx="6.3537371"
+     inkscape:cy="188.60567"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Page-1" />
+  <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Group 47</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs7">
+    <polygon
+       id="path-1"
+       points="203.54273,9.9386099e-05 203.54273,202.72379 0.023852664,202.72379 0.023852664,9.9386099e-05 " />
+  </defs>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     transform="translate(30.892353,-17.57392)">
+    <g
+       id="Group-47"
+       transform="translate(-20)">
+      <g
+         id="Group-3-Copy"
+         transform="rotate(-10,576.44056,-35.235843)">
+        <mask
+           id="mask-2"
+           fill="#ffffff">
+          <use
+             xlink:href="#path-1"
+             id="use18"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </mask>
+        <g
+           id="Clip-2" />
+        <path
+           d="M 200.36238,202.74764 H 3.1803552 C 1.424004,202.74764 0,201.32364 0,199.56729 V 75.533435 L 99.863152,0.63607103 c 1.130618,-0.84796219 2.685808,-0.84796219 3.816428,0 L 203.54273,75.533435 V 199.56729 c 0,1.75635 -1.424,3.18035 -3.18035,3.18035"
+           id="Fill-1"
+           fill="#66a5e3"
+           mask="url(#mask-2)" />
+      </g>
+      <g
+         id="g267"
+         transform="translate(30.389256,50.307386)">
+        <g
+           id="Group-52"
+           transform="rotate(10,-431.19964,1261.2788)"
+           fill-rule="nonzero">
+          <g
+             id="email">
+            <path
+               d="M 131.17016,0.21060771 H 4.2064711 c -2.2678773,0 -4.18474173,1.79618289 -4.20613680205,4.06372589 C 1.1143265e-4,4.285254 22.562827,24.701276 67.688483,65.522399 L 135.37697,4.3231411 c -0.0221,-2.3163505 -1.93893,-4.11253339 -4.20681,-4.11253339 z"
+               id="Shape"
+               fill="#2079d4" />
+            <path
+               d="m 70.109635,52.862535 c -1.437146,1.069085 -3.405493,1.069085 -4.84264,0 L 60.430372,49.265489 C 44.640902,54.811731 33.598677,60.190243 27.303699,65.401027 21.008721,70.61181 13.602601,80.504251 5.0853405,95.07835 H 130.29162 C 122.85997,79.919122 116.07648,69.800216 109.94117,64.72163 103.80586,59.643045 92.140889,54.490998 74.946258,49.265489 Z"
+               id="path10"
+               fill="#66a5e3" />
+            <path
+               d="M 6.6859591e-4,4.3234754 0,4.3231411 V 89.993009 c 0,2.808437 2.2769034,5.085341 5.0853405,5.085341 L 60.430372,49.265489 Z"
+               id="path12"
+               fill="#8ebeed" />
+            <path
+               d="M 74.946258,49.265489 130.29162,95.07835 c 2.80844,0 5.08535,-2.276904 5.08535,-5.085341 V 4.3231411 Z"
+               id="path14"
+               fill="#8ebeed" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="Group-29-Copy"
+         transform="matrix(-0.98480775,-0.17364818,-0.17364818,0.98480775,195.48536,113.52724)"
+         opacity="0.2"
+         stroke="#ffffff"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="5">
+        <path
+           d="M 1.0721666,1.8390713 H 41.415474"
+           id="path55" />
+        <path
+           d="M 1.7920945,19.294412 H 60.003711"
+           id="path57" />
+        <path
+           d="M 1.5765606,34.553953 H 20.20267"
+           id="path59" />
+      </g>
+      <circle
+         id="Oval-8"
+         stroke="#65dde0"
+         stroke-width="3"
+         cx="22.601542"
+         cy="96.881752"
+         r="4.5" />
+      <polygon
+         id="Oval-8-Copy"
+         stroke="#65dde0"
+         stroke-width="3"
+         points="368.48603,221.24497 370.48603,223.24497 372.48603,221.24497 370.48603,219.24497 "
+         transform="translate(12.38613)" />
+      <g
+         id="Group-46"
+         transform="rotate(10,-1229.1868,298.03774)"
+         stroke="#0073e6"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="3">
+        <path
+           d="M 0.40909091,0.40909091 8.6925505,8.6925505"
+           id="Line-6" />
+        <path
+           d="M 0.40909091,0.40909091 8.6925505,8.6925505"
+           id="path65"
+           transform="matrix(-1,0,0,1,9,0)" />
+      </g>
+      <g
+         id="Group-46-Copy"
+         transform="rotate(12,-1118.9882,1941.9627)"
+         stroke="#f7f9fa"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="3">
+        <path
+           d="M 0.31782429,0.31782429 6.7532756,6.7532756"
+           id="path68" />
+        <path
+           d="M 0.31782429,0.31782429 6.7532756,6.7532756"
+           id="path70"
+           transform="matrix(-1,0,0,1,6.992134,0)" />
+      </g>
+      <circle
+         id="Oval-9"
+         fill="#004080"
+         cx="341.0585"
+         cy="176.57446"
+         r="4.7979512" />
+      <circle
+         id="Oval-9-Copy"
+         fill="#004080"
+         cx="271.99741"
+         cy="88.065948"
+         r="4.6539545" />
+    </g>
+    <g
+       id="g215"
+       transform="translate(143.23123,-144.16714)">
+      <g
+         id="Group-50"
+         transform="rotate(-10,689.81884,1415.4622)">
+        <g
+           id="g196"
+           inkscape:label="g196">
+          <path
+             d="m 39.428253,103.23501 v 32.62863 c 0,12.5457 -8.672096,19.27128 -19.271273,19.27128 h -0.258039 c -10.5991773,0 -19.27127301,-8.6721 -19.27127301,-19.27128 V 108.5289 c 4.559e-4,-2.92368 2.37067071,-5.29389 5.29343411,-5.29389 z"
+             id="Fill-4"
+             fill="#ffffff"
+             opacity="0.4" />
+          <path
+             d="m 97.955218,312.5655 171.390742,5.46481 -9.0103,-233.075629 c -0.4459,-11.534247 -12.25212,-21.335851 -26.23652,-21.781746 -0.60462,-0.01928 -0.85692,-0.01741 -1.10997,-0.01954 L 73.277078,59.123383 c 0.137159,0.06632 14.982929,2.64955 15.667816,20.365994 z"
+             id="Fill-5"
+             fill="#f7f9fa"
+             style="stroke-width:0.882029"
+             sodipodi:nodetypes="cccsccsc" />
+          <path
+             d="m 233.77795,0.32495319 c -0.26372,0 -0.52125,0.0118315 -0.78497,0.0174655 v -0.0174655 h 0.78497"
+             id="Fill-8"
+             fill="#d0bdaa" />
+          <path
+             d="m 233.77795,0.31876254 c -0.26372,0 -0.52125,0.0118315 -0.78497,0.0174655 v -0.0174655 h 0.78497"
+             id="Fill-26"
+             fill="#d0bdaa" />
+          <path
+             d="M 110.73107,121.88814 H 225.01692"
+             id="Line-3"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <path
+             d="M 110.73107,141.60254 H 225.01692"
+             id="Line-3-Copy"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <path
+             d="M 110.73107,161.31693 H 225.01692"
+             id="Line-3-Copy-2"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <path
+             d="m 184.67158,186.38334 h 40.54876"
+             id="Line-3-Copy-3"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <path
+             d="m 184.67158,206.09773 h 40.54876"
+             id="Line-3-Copy-4"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <path
+             d="m 184.67158,225.81211 h 40.54876"
+             id="Line-3-Copy-5"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             stroke-linecap="square" />
+          <rect
+             id="Rectangle-17"
+             stroke="#0066cc"
+             stroke-width="5.42702"
+             x="110.50726"
+             y="186.73872"
+             width="51.526966"
+             height="39.764729" />
+        </g>
+      </g>
+      <g
+         id="Group-11-Copy"
+         transform="rotate(-10,1750.4195,931.95178)">
+        <path
+           d="m 0,0 v 124.03385 c 0,1.75635 1.424004,3.18036 3.1803552,3.18036 H 200.36238 c 0.76765,0 1.47131,-0.27192 2.02071,-0.72473 L 0,0"
+           id="path40"
+           fill="#8ebeed" />
+        <path
+           d="m 1.159637,126.48948 c 0.5494064,0.45281 1.2530599,0.72473 2.0207182,0.72473 H 200.36238 c 1.75635,0 3.18035,-1.42401 3.18035,-3.18036 V 0 L 1.159637,126.48948"
+           id="Fill-10"
+           fill="#3787d6" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata349">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Group 47</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

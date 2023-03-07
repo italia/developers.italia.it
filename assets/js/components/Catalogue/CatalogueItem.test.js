@@ -11,7 +11,7 @@ jest.mock('../../services/searchEngine.js');
 describe('CatalogueItem', () => {
   it('renders a catalogue item', async () => {
     const [items] = await search(ALL_CATALOGUE);
-    render(<CatalogueItem item={items[0]} />);
+    render(<CatalogueItem {...items[0]} />);
     expect(screen.queryByTestId(items[0].id)).toBeInTheDocument();
     expect(screen.queryByTestId('item-anchor')).toHaveAttribute('href', items[0].url);
   });

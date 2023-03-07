@@ -47,4 +47,4 @@ Official documentation, including technical rules, is available in the official 
 Developers Italia provides communication channels and collaboration tools for developers in order to help them integrate it in their software. The forum and the Slack channel are not official helpdesk channels because they are not monitored by the Revenue Agency or Sogei.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Chat on Slack (#fatturapa)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Chat on Slack (#fatturapa)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
