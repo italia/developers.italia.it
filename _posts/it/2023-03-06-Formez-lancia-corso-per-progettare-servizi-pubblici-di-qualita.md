@@ -25,7 +25,7 @@ I moduli offrono contenuti da fruire autonomamente (lezioni multimediali, video 
 
 Il primo dei quattro **webinar**, dedicato alle [Linee guida di design per i siti internet e i servizi digitali della PA](https://prossima.designers.italia.it/norme-e-riferimenti/linee-guida-di-design/), e all'introduzione dell'intero percorso didattico, si terrà **venerdì 24 marzo 2023 dalle ore 12.00 alle 13.00**.  
 
-**Iscrizioni**
+### Iscrizioni
 Le iscrizioni al corso, soggette ad approvazione da parte di Formez, possono essere effettuate in maniera autonoma sul [sito EventiPA](http://eventipa.formez.it/node/405873) e richiedono la registrazione al sistema di autenticazione [DFPAuth](https://auth.formez.eu/). 
 
 **Le iscrizioni chiuderanno martedì 20 marzo 2023**. 
