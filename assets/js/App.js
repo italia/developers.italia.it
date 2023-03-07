@@ -10,8 +10,8 @@ import { MailingListConfirmation } from './components/MailingList/MailingListCon
 export const App = () => {
   const search = useRef(Array.from(document.getElementsByTagName('custom-search')));
   const catalogue = useRef(Array.from(document.getElementsByTagName('custom-catalogue')));
-  const thumbnails = useRef(Array.from(document.getElementsByTagName('catalogue-item')));
   const publiccodeBadge = useRef(Array.from(document.getElementsByTagName('publiccode-badge')));
+  const thumbnails = useRef(Array.from(document.getElementsByTagName('catalogue-item')));
   const mailingListSubscribe = useRef(Array.from(document.getElementsByTagName('mailing-list-subscribe')));
   const mailingListConfirmation = useRef(Array.from(document.getElementsByTagName('mailing-list-confirmation')));
 
