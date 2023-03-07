@@ -3,7 +3,7 @@ layout: post
 title: "Formez lancia un corso per progettare e realizzare servizi pubblici di qualità"
 subtitle: "Aperte le iscrizioni online, per partecipare c'è tempo fino al 20 marzo"
 date: 2023-03-06 16:00:00 +0200
-tags: developers formez servizipubblici riuso interoperabilità ospensource
+tags: developers formez servizipubblici riuso interoperabilita opensource
 categories: news
 author: Matteo Vabanesi
 image:
