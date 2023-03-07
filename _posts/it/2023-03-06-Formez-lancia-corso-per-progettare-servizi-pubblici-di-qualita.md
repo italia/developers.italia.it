@@ -13,7 +13,7 @@ Aperte le iscrizioni per il corso online **“Qualità dei servizi digitali”**
 
 Accogliendo le principali indicazioni previste dalla normativa nazionale ed europea, il corso illustra gli aspetti e le caratteristiche che i servizi digitali delle PA dovrebbero avere per essere considerati di qualità: **semplici da usare, equi, inclusivi e progettati a partire dai bisogni reali delle persone**. L’iniziativa fornisce una cornice teorica di riferimento e mostra i principali strumenti operativi per la progettazione di servizi digitali disponibili su Designers Italia, oltre che approfondire **fattori chiave come l'interoperabilità**, il riuso del software e l'open source.
 
-**Il programma**
+### Il programma
 Il corso, tenuto interamente online su piattaforma *e-learning*, è diviso in **4 moduli**:
 
 * **Modulo 1 - I servizi digitali: ecosistemi di scambi tra cittadini e PA**: tratta la e la normativa dei servizi pubblici digitali.
