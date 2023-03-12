@@ -408,6 +408,31 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         whistleblowing: whistleblowing
         website-builder: creatori di siti
         workflow-management: gestione flusso di lavoro
+      scopes:
+        agriculture: agricoltura
+        culture: cultura
+        defence: difesa
+        education: educazione
+        emergency-services: servizi di emergenza
+        employment: occupazione
+        energy: energia
+        environment: ambiente
+        finance-and-economic-development: sviluppo finanziario ed economico
+        foreign-affairs: affari esteri
+        government: governo
+        healthcare: assistenza sanitaria
+        infrastructures: infrastrutture
+        justice: giustizia
+        local-authorities: autorità locali
+        manufacturing: produzione
+        research: ricerca
+        science-and-technology: scienza e tecnologia
+        security: sicurezza
+        society: società
+        sport: sport
+        tourism: turismo
+        transportation: trasporti
+        welfare: benessere
     pa:
       top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
       more_details: Esplora
@@ -563,16 +588,16 @@ en:
     banner_joinus_h1: Join our community!
     banner_joinus_action: Chat on Slack now
     how_to_use: How do I use it
-    banner_PNRR_h2: Soluzioni e programmi informatici che possono contribuire al raggiungimento degli obiettivi del PNRR di PA digitale 2026
+    banner_PNRR_h2: Solutions and softwares that can contribute to the achievement of PNRR objectives by PA digitale 2026
     banner_PNRR_h1: Software PNRR
-    banner_PNRR_action: Vedi il catalogo PNRR
+    banner_PNRR_action: See PNRR catalogue
     status_member_of_board: member of board
     status_maintainer: maintainer
 
     in_collaboration_with: In collaboration with
     project_of: Project of
 
-    header_link_trasformazione: Piano Triennale
+    header_link_trasformazione: Three-year Plan
     header_link_developers: Developers
     header_link_design: Designers
     header_link_forum: Forum
@@ -620,7 +645,7 @@ en:
       channel: "Contact"
       tos: "Terms of service"
       authorize: "Authorize"
-      goToCard: Vai alla scheda
+      goToCard: Go to card
       platform: "Reference platform"
       goToPlatform: "Go to platform"
 
@@ -828,6 +853,31 @@ The ranges of every measure can be found in the [vitality-ranges.yml](https://gi
         whistleblowing: whistleblowing
         website-builder: website builder
         workflow-management: workflow management
+      scopes:
+        agriculture: agriculture
+        culture: culture
+        defence: defence
+        education: education
+        emergency-services: emergency services
+        employment: employment
+        energy: energy
+        environment: environment
+        finance-and-economic-development: finance and economic development
+        foreign-affairs: foreign affairs
+        government: government
+        healthcare: healthcare
+        infrastructures: infrastructures
+        justice: justice
+        local-authorities: local authorities
+        manufacturing: manufacturing
+        research: research
+        science-and-technology: science and technology
+        security: security
+        society: society
+        sport: sport
+        tourism: tourism
+        transportation: transportation
+        welfare: welfare
     pa:
       top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
       more_details: Read more
