@@ -24,7 +24,7 @@ export const softwareTypes = [
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
   return Object.entries(softwareCategories).reduce((acc, [key, value]) => {
-    acc.push([key, l10NLabels.publiccode.categories[value]]);
+    acc.push([value, l10NLabels.publiccode.categories[value]]);
     return acc.sort((a, b) => a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1);
   }, [])
 };
@@ -40,7 +40,7 @@ export const getSoftwareDevelopmentStatuses = () => {
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
   return Object.entries(softwareIntendedAudiences).reduce((acc, [key, value]) => {
-    acc.push([key, l10NLabels.publiccode.scopes[value]]);
+    acc.push([value, l10NLabels.publiccode.scopes[value]]);
     return acc.sort((a, b) => a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1);
   }, [])
 };
