@@ -313,7 +313,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         application-development: sviluppo applicazioni
         appointment-scheduling: programmazione appuntamenti
         backup: backup
-        billing-and-invoicing: fatturazione e scontrini
+        billing-and-invoicing: fatturazione
         blog: blog
         budgeting: bilancio
         business-intelligence: business intelligence
@@ -326,7 +326,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         compliance-management: gestione conformità
         contact-management: gestione contatti
         content-management: gestione contenuti
-        crm: CRM
+        crm: CRM (Customer Relationship Management)
         customer-service-and-support: servizio e supporto clienti
         data-analytics: analisi dati
         data-collection: raccolta dati
@@ -343,7 +343,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         employee-management: gestione dipendenti
         enterprise-project-management: gestione progetti d'impresa
         enterprise-social-networking: rete sociale d'impresa
-        erp: ERP
+        erp: ERP (Enterprise Resource Planning)
         event-management: gestione eventi
         facility-management: gestione impianti
         feedback-and-reviews-management: gestione feedback e recensioni
@@ -355,8 +355,8 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         grant-management: gestione sovvenzioni
         graphic-design: graphic design
         help-desk: sportello assistenza
-        hr: HR
-        ide: IDE
+        hr: risorse umane
+        ide: IDE (Integrated Development Environment)
         identity-management: gestione delle identità
         instant-messaging: messaggistica istantanea
         inventory-management: gestione inventario
@@ -412,7 +412,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         agriculture: agricoltura
         culture: cultura
         defence: difesa
-        education: educazione
+        education: istruzione
         emergency-services: servizi di emergenza
         employment: occupazione
         energy: energia
@@ -424,7 +424,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         infrastructures: infrastrutture
         justice: giustizia
         local-authorities: autorità locali
-        manufacturing: produzione
+        manufacturing: manifattura
         research: ricerca
         science-and-technology: scienza e tecnologia
         security: sicurezza
