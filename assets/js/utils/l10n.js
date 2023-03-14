@@ -23,10 +23,10 @@ export const softwareTypes = [
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
-  return Object.entries(softwareCategories).reduce((acc, [_key, value]) => {
-    acc.push([value, l10NLabels.publiccode.categories[value]]);
-    return acc.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
-  }, []);
+  const categoriesMap = Object.values(softwareCategories).map((value) => {
+    return [value, l10NLabels.publiccode.categories[value]];
+  });
+  return categoriesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
 };
 
 export const getSoftwareDevelopmentStatuses = () => {
@@ -39,10 +39,10 @@ export const getSoftwareDevelopmentStatuses = () => {
 
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
-  return Object.entries(softwareIntendedAudiences).reduce((acc, [_key, value]) => {
-    acc.push([value, l10NLabels.publiccode.scopes[value]]);
-    return acc.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
-  }, []);
+  const audiencesMap = Object.values(softwareIntendedAudiences).map((value) => {
+    return [value, l10NLabels.publiccode.scopes[value]];
+  });
+  return audiencesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
 };
 
 export const softwarePNRR = [['1', l10NLabels.software.pnrr]];
