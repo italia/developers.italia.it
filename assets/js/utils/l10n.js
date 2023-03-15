@@ -23,9 +23,7 @@ export const softwareTypes = [
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
-  const categoriesMap = Object.values(softwareCategories).map((value) => {
-    return [value, l10NLabels.publiccode.categories[value]];
-  });
+  const categoriesMap = Object.values(softwareCategories).map((value) => ([value, l10NLabels.publiccode.categories[value]]));
   return categoriesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
 };
 
@@ -39,9 +37,7 @@ export const getSoftwareDevelopmentStatuses = () => {
 
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
-  const audiencesMap = Object.values(softwareIntendedAudiences).map((value) => {
-    return [value, l10NLabels.publiccode.scopes[value]];
-  });
+  const audiencesMap = Object.values(softwareIntendedAudiences).map((value) => ([value, l10NLabels.publiccode.scopes[value]]));
   return audiencesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
 };
 
