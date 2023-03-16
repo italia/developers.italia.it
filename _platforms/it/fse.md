@@ -87,7 +87,7 @@ resources:
     - title: Lista dei software convalidati
       icon: github
       url: https://github.com/ministero-salute/it-fse-accreditati/tree/main/RESULTS
-      desc: Lista aggiornata dei software che hanno superato la validazione
+      desc: Lista aggiornata dei software che hanno superato la Fase 1
 ---
 
 ## Intro
