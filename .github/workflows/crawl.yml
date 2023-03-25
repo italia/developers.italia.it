@@ -1,3 +1,5 @@
+name: 🔭 publiccode.yml crawl 🔭
+
 on:
   workflow_dispatch:
   schedule:
