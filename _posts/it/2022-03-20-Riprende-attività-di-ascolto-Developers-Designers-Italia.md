@@ -2,7 +2,7 @@
 layout: post
 title: "Raccontaci cosa ne pensi di Developers Italia e Designers Italia"
 subtitle: "Anche quest’anno riprende l’attività di ascolto verso le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione"
-date: 2023-03-2o 16:00:00 +0200
+date: 2023-03-20 16:00:00 +0200
 tags: developers designers community
 categories: news
 author: Michela Gabrieli
