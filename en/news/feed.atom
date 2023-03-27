@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://developers.italia.it/en/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-03-26T06:03:00+00:00</updated>
+  <updated>2023-03-27T06:02:56+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/en/news/feed.atom" rel="self" type="application/atom+xml"/>
