@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-03-29T06:03:10+00:00</updated>
+  <updated>2023-03-29T07:04:03+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/03/29/Riprende-attivit%C3%A0-di-ascolto-Developers-Designers-Italia</id>
+    <title>Raccontaci cosa ne pensi di Developers Italia e Designers Italia</title>
+    <updated>2023-03-29T06:00:00+00:00</updated>
+
+    <summary>Anche quest’anno riprende l’attività di ascolto verso le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/03/29/Riprende-attivit%C3%A0-di-ascolto-Developers-Designers-Italia">&lt;p&gt;Developers Italia e Designers Italia rilanciano il &lt;strong&gt;questionario&lt;/strong&gt; per comprendere meglio l’esperienza delle persone con gli strumenti e le risorse messe a disposizione sui propri siti e canali di comunicazione.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Il 2022 è stato un anno di conferma per la nostra community&lt;/strong&gt;, segnando un interesse crescente sui temi della progettazione con le persone al centro per Pubblica Amministrazione, fornitori e società in house. Le persone registrate sono aumentate del 16%, da 19 mila a quasi 22 mila, e più di mille persone hanno preso parte alle community call e ai community lab dedicati alla progettazione e sviluppo di servizi pubblici digitali.&lt;/p&gt;
+
+&lt;p&gt;Ora è di nuovo il momento di ascoltare la voce della community, per raccogliere feedback sul lavoro svolto e &lt;strong&gt;individuare nuove necessità per il futuro&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il questionario sarà aperto &lt;strong&gt;fino al 7 aprile&lt;/strong&gt;. Aspettiamo la tua opinione!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://ec.europa.eu/eusurvey/runner/questionarioDESIDEVI2023_News&quot;&gt;Compila il questionario&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2023-03-29T06:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="community" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/03/21/Codemodio-WS-Fest-Guida-galattica-per-maintainer</id>
     <title>Codemotion Workshop Fest: appuntamento con la Guida intergalattica per Maintainer</title>
