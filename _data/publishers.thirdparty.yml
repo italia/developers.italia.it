@@ -166,3 +166,7 @@
 - name: "OpenCity Labs"
   repos:
     - "https://gitlab.com/opencity-labs/sito-istituzionale/cms"
+    
+- name: "MeO: Gestione Albi Ordini Professionali dei Medici Chirurghi e degli Odontoiatri"
+  repos:
+    - "https://github.com/latraccia/meo"
