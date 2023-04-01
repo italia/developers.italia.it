@@ -69,4 +69,4 @@ public sector, can be included in the Developers Italia catalogue. As such, it i
 necessary to:
 
 1. fill and include a `publiccode.yml` file in the repository (leaving the `codiceIPA` key empty);
-2. include the repository URL [in the list](https://github.com/italia/publiccode-crawler/blob/legacy/publishers.thirdparty.yml) by opening a pull request on GitHub.
+2. include the repository URL [in the list](https://github.com/italia/developers.italia.it/blob/HEAD/_data/publishers.thirdparty.yml) by opening a pull request on GitHub.
