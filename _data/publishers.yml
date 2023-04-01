@@ -1,0 +1,51 @@
+# This is a list of organizations to crawl.
+
+---
+
+- name: "Presidenza del Consiglio dei Ministri"
+  id: "pcm"
+  orgs:
+    - "https://github.com/teamdigitale"
+    - "https://github.com/pagopa"
+  repos:
+    - "https://github.com/italia/agavecms"
+    - "https://github.com/italia/dati-ckan-docker"
+    - "https://github.com/italia/design-wordpress-theme"
+    - "https://github.com/italia/publiccode-editor"
+    - "https://github.com/italia/design-comuni-pagine-statiche"
+    - "https://github.com/italia/form-pa"
+    - "https://github.com/italia/api-oas-checker"
+    - "https://github.com/immuni-app/immuni"
+    - "https://github.com/italia/bootstrap-italia"
+
+- name: "Ministero per i Beni e le Attività Culturali"
+  id: "m_bac"
+  repos:
+    - "https://github.com/italia/18app"
+  orgs:
+    - "https://github.com/IstitutoCentraleCatalogoUnicoBiblio"
+
+- name: "Ministero degli Interni"
+  id: "m_it"
+  orgs:
+    - "https://github.com/vvfosprojects"
+
+- name: "Agenzia Regionale per la Protezione dell'Ambiente del Piemonte"
+  id: "arlpa_to"
+  orgs:
+    - "https://github.com/Arpapiemonte"
+
+- name: "Liceo Scientifico - Giorgio Dal Piaz"
+  id: "istsc_blps020006"
+  repos:
+    - "https://github.com/italia/design-scuole-wordpress-theme"
+
+- name: "Ministero della Salute"
+  id: "m_sa"
+  orgs:
+    - "https://github.com/ministero-salute"
+
+- name: "Istituto di Istruzione Superiore - Michele Giua"
+  id: "istsc_catf04000p"
+  repos:
+    - "https://github.com/trinko/giuaschool"
