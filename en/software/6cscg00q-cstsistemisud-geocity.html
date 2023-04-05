@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202304040602" rel="stylesheet">
+  <link href="/dist/main.css?202304050602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -697,7 +697,7 @@
           <p>Vitality:</p>
           <p class="score d-inline-block"> 54%</p>
           
-          <div id="softwareChart" data-vitality='[54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,60,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54]'>
+          <div id="softwareChart" data-vitality='[54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,60,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -1069,92 +1069,152 @@ alle funzioni di Presentation, Application e Database.</p>
   <li>CTRLGest MPF (Monitoraggio Progetti e Finanziamenti)</li>
   <li>Protezione civile</li>
   <li>Reti e sottoservizi</li>
-  <li>Portale del cittadino (Misura 1.4.1 PNRR)</li>
-</ul>
-
-<h3 id="base-dati"><strong>Base Dati</strong></h3>
-
-<p>In fase di allestimento dell’ambiente funzionale, deve essere svolto il
-censimento dei dati plano/cartografici in possesso del Cliente. Per i dati
-vettoriali si procederà ad un’attività di bonifica e georeferenziazione;
-valutazione a parte andrà riservata ad elaborati cartacei di cui si dovrà
-valutare la validità e l’eventuale vettorializzazione o utilizzo in
-modalità raster (rappresentazioni storiche)</p>
-
-<h3 id="gdpr"><strong>GDPR</strong></h3>
-
-<p>Qualunque informazione cartografica fornita da fonti esterne, sarà
-“servita” dalla web application GeoCity, garantendo il rispetto delle più
-stringenti direttive e normative GDPR; nessun dato strategico elaborato
-dalla piattaforma sarà reso disponibile al di fuori dei server nemmeno per
-analisi statistiche.</p>
-
-<h3 id="geocity"><strong>GeoCity</strong></h3>
-
-<p>Caratteristica strategica del modulo GeoCity risiede nella sua intrinseca
-capacità, in quanto sviluppato con tecnologia GIS, di gestire elementi
-plano/cartografici come oggetti di un DB SQL. Questo ci permette di
-connettere trasversalmente TUTTE le informazioni presenti nella banca dati
-assegnando ad esse, dinamicamente, il valore aggiunto della collocazione
-spaziale, quindi dell’edificio, reparto, ufficio, non solo quel dato sarà
-generato e gestito, ma interrogando il target avremo risposte su tutti i
-procedimenti legati a quello spazio. GeoCity è accessibile da qualunque
-periferica con le opportune credenziali che abilitano il livello di
-operatività. La condivisione del medesimo data base consentirà di far
-“affiorare” l’interfaccia di gestione plano/cartografica nelle diverse
-procedure di gestione e dei diversi workflow; la planimetria dell’azienda,
-la particella catastale, il segmento di strada consortile sono fonte di
+  <li>Portale del cittadino (Misura 1.4.1 PNRR)
+In fase di allestimento dell’ambiente funzionale, deve essere svolto il censimento dei dati
+plano/cartografici in possesso del Cliente. Per i dati vettoriali si
+procederà ad un’attività di bonifica e georeferenziazione; valutazione a
+parte andrà riservata ad elaborati cartacei di cui si dovrà valutare la
+validità e l’eventuale vettorializzazione o utilizzo in modalità raster
+(rappresentazioni storiche)Qualunque informazione cartografica fornita da
+fonti esterne, sarà “servita” dalla web application GeoCity, garantendo il
+rispetto delle più stringenti direttive e normative GDPR; nessun dato
+strategico elaborato dalla piattaforma sarà reso disponibile al di fuori
+dei server nemmeno per analisi statistiche.Caratteristica strategica del
+modulo GeoCity risiede nella sua intrinseca capacità, in quanto sviluppato
+con tecnologia GIS, di gestire elementi plano/cartografici come oggetti di
+un DB SQL. Questo ci permette di connettere trasversalmente TUTTE le
+informazioni presenti nella banca dati assegnando ad esse, dinamicamente,
+il valore aggiunto della collocazione spaziale, quindi dell’edificio,
+reparto, ufficio, non solo quel dato sarà generato e gestito, ma
+interrogando il target avremo risposte su tutti i procedimenti legati a
+quello spazio. GeoCity è accessibile da qualunque periferica con le
+opportune credenziali che abilitano il livello di operatività. La
+condivisione del medesimo data base consentirà di far “affiorare”
+l’interfaccia di gestione plano/cartografica nelle diverse procedure di
+gestione e dei diversi workflow; la planimetria dell’azienda, la
+particella catastale, il segmento di strada consortile sono fonte di
 informazioni amministrative gestionali ed aggregatori di progetti,
 pratiche amministrative, interconnessioni con altri enti per rendere
 univoche ed evidenti sovrapposizioni nella gestione dello
-spazio/territorio.</p>
-
-<h3 id="profili-autorizzativi"><strong>Profili autorizzativi</strong></h3>
-
-<p>L’accesso al portale cartografico sarà regolato da opportuni profili
-autorizzativi; la caratterizzazione dei profili consente alle diverse
-“famiglie” di utenti di accedere, da qualunque periferica (pc fisso e/o
-tablet e mobile), a diverse informazioni e procedure. Una interfaccia di
-amministrazione consente di assegnare agli utenti sia la tipologia dei
-dati che possono interrogare sia le modalità di accesso al dato
-(lettura/modifica).</p>
-
-<h3 id="funzione-amministratore"><strong>Funzione Amministratore</strong></h3>
-
-<p>La funzione Amministratore, assegnata ad una o più utenze, ha la
-responsabilità di gestire esclusive funzioni a. Abilitazione e profilatura
-delle utenze, con l’assegnazione di privilegi dedicati; b. Attivazione e
-gestione della funzionalità, integrata in piattaforma, che consente di
-gestire ed aggiornare i fogli catastali e le informazioni censuarie,
-provenienti dall’Agenzia del Territorio importandoli all’interno del DB di
-GeoCity. La gestione integrata delle informazioni del Catasto accelera ed
-integra la ricerca e la visualizzazione di particelle e delle relative
-informazioni tracciate all’interno delle diverse procedure dell’Ente</p>
-
-<h3 id="funzionalità-utente"><strong>Funzionalità utente</strong></h3>
-
-<p>Gli utenti sono abilitati dal/dagli Amministratori e in ambiente
-cartografico, utilizzano le funzionalità di navigazione e di contesto per
-consentire una fluida fruizione dei dati con un’attenzione alla
-navigazione da postazione fissa e mobile</p>
-<ul>
-  <li>Zoom e PAN</li>
-  <li>Legenda contestuale (i livelli informativi si popolano a secondo delle selezioni e
-dello zoom)</li>
-  <li>Differenti cartografie di BASE, monocromatica, OpenStreetMap®, fotografica, 
-  per una semplice contestualizzazione delle informazioni gestite</li>
-  <li>Funzione di ricerca su informazioni alfanumeriche con zoom ed evidenza</li>
-  <li>Funzione per la ricerca dei dati censuari nei dati dell’Agenzia del Territorio</li>
-  <li>L’attivazione di specifiche aree di ricerca, consente di selezionare
-(ON/Off) tutti i livelli VINCOLI presenti nella banca dati cartografica e 
-relazionarli alle diverse informazioni di BASE per una completa ed 
-immediata leggibilità delle informazioni.
-L’architettura funzionale di GeoCity, consente l’utilizzo per la
-realizzazione del sito istituzionale corredato dalle funzionalità di
-portale e conforme con le misura 1.4.1 “Esperienza del Cittadino nei
-servizi pubblici”. Il sito verrà redatto rispetto alle norme tecniche AgiD
-di cui al seguente link https:/designers.italia.it/.</li>
+spazio/territorio.L’accesso al portale cartografico sarà regolato da
+opportuni profili autorizzativi; la caratterizzazione dei profili consente
+alle diverse “famiglie” di utenti di accedere, da qualunque periferica (pc
+fisso e/o tablet e mobile), a diverse informazioni e procedure. Una
+interfaccia di amministrazione consente di assegnare agli utenti sia la
+tipologia dei dati che possono interrogare sia le modalità di accesso al
+dato (lettura/modifica).La funzione Amministratore, assegnata ad una o più
+utenze, ha la responsabilità di gestire esclusive funzioni a. Abilitazione
+e profilatura delle utenze, con l’assegnazione di privilegi dedicati; b.
+Attivazione e gestione della funzionalità, integrata in piattaforma, che
+consente di gestire ed aggiornare i fogli catastali e le informazioni
+censuarie, provenienti dall’Agenzia del Territorio importandoli
+all’interno del DB di GeoCity. La gestione integrata delle informazioni
+del Catasto accelera ed integra la ricerca e la visualizzazione di
+particelle e delle relative informazioni tracciate all’interno delle
+diverse procedure dell’EnteGli utenti sono abilitati dal/dagli
+Amministratori e in ambiente cartografico, utilizzano le funzionalità di
+navigazione e di contesto per consentire una fluida fruizione dei dati con
+un’attenzione alla navigazione da postazione fissa e mobile</li>
 </ul>
+
+<h3 id="sito-comunale-geocity"><strong>Sito Comunale GeoCity</strong></h3>
+
+<p>Il modello standard del sito comunale GeoCity, è stato sviluppato in
+conformità del “<em><strong>progetto Designers Italia</strong></em>”, definito dalle linee
+guida Agid (Agenzia per l’Italia Digitale) e DTD “<em><strong>Dipartimento della
+Trasformazione Digitale</strong></em>.</p>
+
+<p>In particolare sono state sintetizzate cinque tipologie di flussi di
+servizio ricorrenti, attraverso servizi per il cittadino per natura molto
+eterogenei tra loro, cioè pattern ripetibili di moduli e schermate che
+costituiscono l’interfaccia di fruizione del servizio digitale per il
+cittadino.</p>
+
+<p>sono stati **definiti **:</p>
+
+<p>una Lista di servizi digitali per il cittadino contestuali ad eventi della
+e i professionisti;</p>
+
+<p>Cinque tipologie di flussi di interfaccia, ricorrenti rispetto
+all’erogazione di servizi digitali per il cittadino;</p>
+
+<p>Flussi, servizi per il cittadino e procedure corrispondenti sono stati
+scelti considerando il vantaggio apportato sia direttamente al cittadino
+che all’amministrazione.</p>
+
+<p>L’implementazione di tali servizi al cittadino, facilitata dalle tipologie
+di flussi di interfaccia, consente il raggiungimento <em>“__<strong>di Linee Guida
+a livello nazionale</strong></em>” e anticipa standard europei.</p>
+
+<h1 id="implementazione-di-sito-comunale">Implementazione di sito comunale</h1>
+
+<p>Il modello di sito comunale, messo a disposizione all’indirizzo
+[<a href="https://designers.italia.it/modello/comuni/">https:/designers.italia.it/modello/comuni/</a>]
+, è stato adottato nel progetto .</p>
+
+<p>comprende due strumenti fondamentali :</p>
+
+<p>● l’architettura dell’informazione del sito comunale</p>
+
+<p>● i template html del sito comunale.</p>
+
+<h2 id="larchitettura-dellinformazione-del-sito-comunale">L’architettura dell’informazione del sito comunale:</h2>
+
+<p>L’architettura dell’informazione del sito comunale definisce e organizza
+le informazioni contenute all’interno del sito di un Comune.</p>
+
+<p>L’architettura contiene indicazioni sulla gerarchia delle pagine di primo
+e secondo livello, sui content type, sui sistemi di navigazione e sulle
+tassonomie per tutte le aree del sito di un Comune.</p>
+
+<p>L’architettura non contiene una descrizione dettagliata delle
+caratteristiche dei singoli servizi digitali di un Comune, ma una
+struttura standard di presentazione di un servizio digitale per il
+cittadino (scheda servizio) fino alla sua parte informativa.</p>
+
+<h2 id="i-template-html-del-sito-comunale">I template html del sito comunale</h2>
+
+<p>Il modello di sito comunale è stato tradotto in una serie di template HTML
+già pronti all’uso e validati in termini di accessibilità e conformità
+alle linee guida emanate ai sensi del CAD, in cui ogni Comune può inserire
+i propri contenuti.  , sia in caso di adesione al Pacchetto cittadino
+informato, sia in caso di adesione al Pacchetto cittadino attivo.:</p>
+
+<h2 id="raggiungimento-dellobiettivo-di-conformità-al-modello-sito-comunale">Raggiungimento dell’obiettivo di conformità al modello sito comunale</h2>
+
+<p>Al termine del processo di rilascio del sito comunale, l’ente dovrà
+attestare la conformità alle seguenti caratteristiche, che rappresentano
+ai fini di questo avviso la conformità del sito comunale realizzato al
+modello fornito, pubblicato al seguente link :</p>
+
+<p>https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q000017NZMCQA4#allegati</p>
+
+<p>Allegato 2</p>
+
+<h1 id="servizi-digitali-per-il-cittadino-oggetto-di-realizzazione">Servizi digitali per il cittadino oggetto di realizzazione</h1>
+
+<h2 id="lista-dei-servizi">Lista dei servizi</h2>
+
+<p>Per facilitare la comprensione del livello di granularità degli obiettivi
+di questo avviso, per quanto riguarda i servizi digitali per il cittadino
+è necessario specificare i diversi livelli di dettaglio cui questo
+documento fa riferimento, che collegano da un lato i bisogni del
+cittadino, dall’altra i livelli di granularità di categorie della
+classificazione dei servizi per le amministrazioni (definita a partire dal
+TUEL e dalle attività di ricerca, in conformità con l’avviso 1.2) e le
+procedure amministrative:</p>
+
+<p>Tutti i servizi  previsti dalla misura 1.4.1 “Esperienza del Cittadino nei
+Servizi Pubblici “ sono stati  realizzati ad eccezione di quelli vincolati
+alle funzionalità di Back-End strutturati (es. Pagamento Tributi)</p>
+
+<h1 id="tipologie-di-flussi-di-interfaccia-al-cittadino">Tipologie di flussi di interfaccia al cittadino</h1>
+
+<p>Sebbene i contenuti dei diversi processi necessari ad erogare i servizi
+per il cittadino siano diversi, i passaggi che il cittadino deve fare per
+avviare un’istanza saranno  simili. La creazione di interfacce coerenti e
+ricorrenti permette al cittadino una più facile fruizione dei servizi
+digitali stessi.</p>
 
               </div>
             </div>
