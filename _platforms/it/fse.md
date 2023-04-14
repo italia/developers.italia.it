@@ -162,6 +162,12 @@ Per poter accedere ai servizi è necessario avere 2 certificati x509. Per il lor
 
 Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
 
+**N.B**
+
+**Il processo di accreditamento (convalida) dei software per il servizio di pubblicazione è posticipato, al momento la priorità è data al processo di accreditamento legato all’adeguamento dei CDA2 alle nuove specifiche.  
+Si ricorda che sono comunque disponibili i test case di pubblicazione ed è sempre possibile utilizzare i servizi dell’istanza del gateway in pre-produzione per test interni in ottica accreditamento.  
+L’avvio dell’accreditamento (convalida) dei software per il servizio di pubblicazione sarà comunicato in seguito.**
+
 ## Gestione fase transitoria avvio in produzione
 
 Per fase *transitoria* si intende la modalità di avvio in produzione dei software già adeguati ai nuovi standard documentali, prima della messa in linea del Gateway.
