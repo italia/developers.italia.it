@@ -170,3 +170,8 @@
 - name: "MeO: Gestione Albi Ordini Professionali dei Medici Chirurghi e degli Odontoiatri"
   repos:
     - "https://github.com/latraccia/meo"
+        
+- name: "WSO2"
+  repos:
+    - "https://github.com/wso2/developers-italia-metadata/tree/main/APIM"
+    - "https://github.com/wso2/developers-italia-metadata/tree/main/IS"
