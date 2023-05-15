@@ -1,7 +1,7 @@
 ---
 title: PDND
 subtitle: Piattaforma Digitale Nazionale Dati
-logo: /assets/images/
+logo: /assets/images/logo-pdnd@2x.png
 external_website: https://selfcare.pagopa.it/auth/login?onSuccess=/onboarding/prod-interop
 payoff: Piattaforma Digitale Nazionale Dati
 description: >
