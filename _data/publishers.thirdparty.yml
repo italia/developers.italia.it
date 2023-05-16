@@ -170,3 +170,7 @@
 - name: "MeO: Gestione Albi Ordini Professionali dei Medici Chirurghi e degli Odontoiatri"
   repos:
     - "https://github.com/latraccia/meo"
+
+- name: "Studio Amica - Contributo Locazioni 1.0"
+  repos:
+    - "https://github.com/studioamica/ContributoLocazioni1.0"
