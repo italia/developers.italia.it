@@ -46,7 +46,7 @@ resources:
       desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
   - Archivio:
     - title: (2019) Using OpenAPI to standardize the Italian API ecosystem - slide (en)
-      url: https://drive.google.com/file/d/1Z8jcHuzvpXAJS7bG4BvNVTRLVRGbQasW/view?usp=share_link
+      url: /assets/images/pdnd/pycon-2019-api.pdf
       icon: file
       desc: Presentazione dello storico di API e Interoperabilità nel contesto italiano
     - title: (2020) Using OpenAPI to standardize the Italian API ecosystem - video (en)
@@ -54,7 +54,7 @@ resources:
       icon: video
       desc: Video dello storico di API e Interoperabilità nel contesto italiano
     - title: (2022) Design secure APIs - slide (en)
-      url: https://drive.google.com/file/d/1w4CyZAPFapZfZNGA9WbGkUIilzTaKghu/view?usp=share_link
+      url: /assets/images/pdnd/2022-apisecure-design-secure-apis.pdf
       icon: file
       desc: Presentazione utile per lo sviluppo di API
     - title: (2022) Videointervista e demo di API OAS Checker/Validatore sintattico - video (en)
@@ -62,7 +62,7 @@ resources:
       icon: video
       desc: Video intervista sul Validatore sintattico
     - title: (2022) Community lab su API design e API canvas - slide
-      url: https://drive.google.com/file/d/17FYZZMXapnGdnNCxzugTb7ztC2EPP3em/view?usp=share_link
+      url: /assets/images/pdnd/250522_Community_lab.pdf
       icon: file
       desc: Presentazione utile per lo sviluppo di API interoperabili nel rispetto delle Linee guida Agid
     - title: (2022) Community lab su API design e API canvas - video
@@ -70,7 +70,7 @@ resources:
       icon: video
       desc: Video utile per lo sviluppo di API interoperabili nel rispetto delle Linee guida Agid
     - title: (2022) Self-explaining APIs - slide (en)
-      url: https://drive.google.com/file/d/1HeCmiU9wWSViwiiU2Yz1BzbihYdGZfoZ/view?usp=share_link
+      url: /assets/images/pdnd/europython-2022-self-explaining-api-semantic-schema.pdf
       icon: file
       desc: Presentazione che racconta l'approccio semantico alla progettazione di API interoperabili
 
