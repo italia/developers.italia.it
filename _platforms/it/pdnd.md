@@ -17,7 +17,7 @@ owners:
       url: https://innovazione.gov.it
 managers:
     - name: Pago PA
-    - url: https://pagopa.it
+      url: https://pagopa.it
 resources_hide_title: true
 resources:
   - Documentazione:
