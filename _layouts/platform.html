@@ -89,7 +89,9 @@ Still to-do:
       {{ content }}
 
       {% if page.resources %}
-      <h2>{{t.project_risorse}}</h2>
+        {% unless page.resources_hide_title %}
+          <h2>{{t.project_risorse}}</h2>
+        {% endunless %}
       {% include platform-resources.html %}
       {% endif %}
 
