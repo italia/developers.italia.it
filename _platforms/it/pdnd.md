@@ -5,7 +5,7 @@ logo: /assets/images/logo-pdnd@2x.png
 external_website: https://selfcare.pagopa.it/auth/login?onSuccess=/onboarding/prod-interop
 payoff: Piattaforma Digitale Nazionale Dati
 description: >
-  Abilita l'interoperabilità dei sistemi informativi degli Enti e dei gestori di servizi pubblici
+  Abilita l'interoperabilità dei sistemi informativi degli enti e dei gestori di servizi pubblici
 lang: it
 highlight: true
 comingsoon: false
@@ -86,7 +86,7 @@ sicurezza  delle informazioni**. Fornisce un insieme di regole condivise per
 istruttoria, riducendo oneri e procedure amministrative.
 
 PDND, inoltre, mette a disposizione il **Catalogo API**, che espone tutti gli
-e-service pubblicati dagli Enti e tramite cui è possibile effettuare la
+e-service pubblicati dagli enti e tramite cui è possibile effettuare la
 richiesta di fruizione dati e successivamente integrare i propri servizi per i
 cittadini.
 
@@ -106,7 +106,7 @@ La piattaforma offre numerosi vantaggi agli utenti:
 * I **tecnici sviluppatori**, che implementano e gestiscono il ciclo di vita degli
   e-service di un’amministrazione, possono fare integrazioni standard grazie
   alla piattaforma
-* I **responsabili della protezione dei dati** degli enti aderenti possono accedere
+* I **responsabili della protezione dei dati** degli Enti aderenti possono accedere
   a documenti amministrativi standard e garantire un processo uniforme per
   tutti gli enti
 * **Imprese** e **cittadini** possono veder realizzato il principio del once-only,
@@ -115,11 +115,11 @@ La piattaforma offre numerosi vantaggi agli utenti:
 ### Cosa trovi su PDND
 
 * L’elenco dei soggetti aderenti a PDND
-* Il catalogo degli e-service dei quali si può fare richiesta di fruizione agli Enti
+* Il catalogo degli e-service dei quali si può fare richiesta di fruizione agli enti
 * Gli attributi necessari per poter accedere ai singoli e-service
 * Le finalità per cui vengono inoltrate le richieste di fruizione
 * Il meccanismo di rilascio dei token
-* Le chiavi pubbliche (NEW*)
+* Le chiavi pubbliche
 
 ### Come puoi aderire
 
@@ -127,34 +127,34 @@ La piattaforma offre numerosi vantaggi agli utenti:
 e:
 
 * Effettua il login con SPID
-* Seleziona il tuo Ente e controlla i dati precompilati da IPA
+* Seleziona il tuo ente e controlla i dati precompilati da IPA
 * Indica il legale rappresentante
 * Indica gli amministratori per la piattaforma PDND
 * Ricevi la PEC e carica l’accordo di adesione firmato
 
 ## Come funziona
 
-1. L’Erogatore pubblica un e-service sul catalogo
+1. L’Erogatore **pubblica un e-service** sul catalogo
 
    [Consulta il videotutorial](https://www.youtube.com/watch?v=1v3v68SbXjw&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=5)
 
-2. Il Fruitore accede al catalogo e inoltra richiesta di fruizione per e-service
+2. Il Fruitore **accede al catalogo e inoltra richiesta** di fruizione per e-service
 
    [Consulta il videotutorial](https://www.youtube.com/watch?v=zmyQIQHAo_0&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=7)
 
-3. L’Erogatore attiva richiesta di fruizione per e-service
+3. L’Erogatore **attiva richiesta** di fruizione per e-service
 
    [Consulta il videotutorial](https://www.youtube.com/watch?v=2O81jdLHpgQ&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=8)
 
-4. Il Fruitore crea le finalità con stima di carico per e-service
+4. Il Fruitore **crea le finalità con stima di carico** per e-service
 
    [Consulta il videotutorial](https://www.youtube.com/watch?v=bCHRgeBJucI&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=9)
 
-5. Il Fruitore carica una chiave pubblica e ottiene un voucher
+5. Il Fruitore **carica una chiave pubblica e ottiene un voucher**
 
    [Consulta il videotutorial](https://www.youtube.com/watch?v=q6zuJ2wn8vM&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=11)
 
-6. Il Fruitore completa l’integrazione e accede al dato dell’erogatore
+6. Il Fruitore **Completa l’integrazione e accede al dato** dell’Erogatore
 
 ## Canali
 
