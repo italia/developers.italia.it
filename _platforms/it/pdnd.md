@@ -2,7 +2,7 @@
 title: PDND
 subtitle: Piattaforma Digitale Nazionale Dati
 logo: /assets/images/logo-pdnd@2x.png
-external_website: https://selfcare.pagopa.it/auth/login?onSuccess=/onboarding/prod-interop
+external_website: https://selfcare.pagopa.it
 payoff: Piattaforma Digitale Nazionale Dati
 description: >
   Abilita l'interoperabilità dei sistemi informativi degli enti e dei gestori di servizi pubblici
