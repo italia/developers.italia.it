@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-05-19T09:17:48+00:00</updated>
+  <updated>2023-05-19T15:40:14+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,32 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/05/19/ecosistema%20-interoperabilita</id>
+    <title>Tutto quello che avreste voluto sapere sull’ecosistema interoperabilità</title>
+    <updated>2023-05-19T09:00:00+00:00</updated>
+
+    <summary>Una nuova sezione del sito di Developers Italia a supporto dello scambio dati tra amministrazioni </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/05/19/ecosistema-interoperabilita">&lt;p&gt;Da oggi scambiare dati e informazioni è più semplice: grazie alla &lt;a href=&quot;https://next.developers.italia.it/it/interoperabilita/&quot;&gt;nuova sezione pubblicata sul sito di Developers Italia&lt;/a&gt;, per la prima volta vengono presentate in maniera unitaria tutte le componenti dell’&lt;strong&gt;ecosistema interoperabilità&lt;/strong&gt;. Una &lt;em&gt;landing&lt;/em&gt; dove gli elementi che concorrono a definire l’esperienza di utenti, funzionari e sviluppatori sono messi in relazione, restituendo una &lt;strong&gt;visione d’insieme&lt;/strong&gt; e l’accesso alle singole risorse.&lt;/p&gt;
+
+&lt;p&gt;L’ecosistema interoperabilità &lt;strong&gt;si compone della Piattaforma Digitale Nazionale Dati (PDND), del Catalogo API e di Schema&lt;/strong&gt;, il catalogo nazionale della semantica dei dati (NDC, National Data Catalog). La sezione presenta inoltre i &lt;strong&gt;riferimenti tecnici e normativi&lt;/strong&gt; per integrare e realizzare API interoperabili, a partire dalle Linee guida emanate da Agid e dal Validatore sintattico che ne garantisce la correttezza formale.&lt;/p&gt;
+
+&lt;p&gt;Insieme alla nuova landing, è stata aggiornata anche &lt;a href=&quot;https://developers.italia.it/it/pdnd/#resources&quot;&gt;la pagina di presentazione della piattaforma PDND&lt;/a&gt;, dove è possibile trovare anche una serie di &lt;strong&gt;tutorial video&lt;/strong&gt; che ne illustrano il funzionamento. Entrambe le pagine forniscono, infine, anche l’accesso a canali di supporto, ai link diretti per interagire con la community dei developers e ai contatti ufficiali di assistenza di tutti i tasselli dell’ecosistema.&lt;/p&gt;</content>
+    <published>2023-05-19T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="interoperabilita" />
+    
+    <category term="api" />
+    
+
+    <author>
+      <name>Matteo Vabanesi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/03/29/Riprende-attivit%C3%A0-di-ascolto-Developers-Designers-Italia</id>
     <title>Raccontaci cosa ne pensi di Developers Italia e Designers Italia</title>
