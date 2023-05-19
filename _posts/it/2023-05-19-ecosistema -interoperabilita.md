@@ -3,7 +3,7 @@ layout: post
 title: "Tutto quello che avreste voluto sapere sull’ecosistema interoperabilità"
 subtitle: "Una nuova sezione del sito di Developers Italia a supporto dello scambio dati tra amministrazioni"
 date: 2023-05-19 11:00:00 +0200
-tags: developers interoperabilità API 
+tags: developers interoperabilita api 
 categories: news
 author: Matteo Vabanesi
 image:
