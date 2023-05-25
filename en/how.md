@@ -32,15 +32,15 @@ alternate-blocks:
           class: btn btn-white btn-outline-primary
           url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
-      text: "The API catalogue contains a collection of public services
-      accessible throughout interoperability, together with the relative documentation
-      and the OpenAPI descriptions, in order to allow building modern digital
-      public services."
+      text: |
+        You will find all the information, resources, and available channels on how to integrate the
+        services of public administrations through APIs in the pages dedicated to Interoperability
+        and the National Digital Data Platform (PDND),
       image: /assets/images/come-lo-uso-3.svg
       buttons:
-        - label: "Discover public APIs"
+        - label: Discover the Interoperability ecosystem
           class: btn btn-primary
-          url: '/en/api'
+          url: 'https://next.developers.italia.it/it/interoperabilita'
     - title: "I want to publish my Administration software as open source"
       text: "All the administrations are required by law to release inside
       Developers Italia the software they commissioned. The
