@@ -123,7 +123,7 @@ it:
     home_software_captionurl: '/it/riuso'
     home_software_viewall: Vedi tutti
     home_software_viewallurl: '/it/software'
-    home_api_title: API
+    home_api_title: Esempi di API REST a disposizione di chi sviluppa software
     home_api_viewall: Vedi tutte
     home_api_viewallurl: '/it/api'
     home_news_title: News
@@ -568,7 +568,7 @@ en:
     home_software_captionurl: '/en/reuse'
     home_software_viewall: View all
     home_software_viewallurl: '/en/software'
-    home_api_title: API
+    home_api_title: REST API examples for software developers
     home_api_viewall: View all
     home_api_viewallurl: '/en/api'
     home_news_title: News
