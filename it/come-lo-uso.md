@@ -24,12 +24,15 @@ alternate-blocks:
           class: btn btn-white btn-outline-primary
           url: '/it/riuso'
     - title: "Voglio integrarmi con un servizio pubblico tramite API"
-      text: "Il catalogo delle API contiene la raccolta dei servizi pubblici accessibili mediante interoperabilità, con la relativa documentazione e le descrizioni OpenAPI, per permetterti di costruire servizi pubblici digitali moderni."
+      text: |
+        Nelle pagine dedicate a Interoperabilità e Piattaforma Digitale Nazionale Dati (PDND)
+        troverai tutte le informazioni, le risorse e i canali disponibili su come integrare i
+        servizi delle pubbliche amministrazioni tramite API.
       image: /assets/images/come-lo-uso-3.svg
       buttons:
-        - label: "Scopri le API pubbliche"
+        - label: Scopri l’ecosistema Interoperabilità
           class: btn btn-primary
-          url: '/it/api'
+          url: 'https://next.developers.italia.it/it/interoperabilita'
     - title: "Voglio pubblicare il software della mia Amministrazione in open source"
       text: "Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato. Le [Linee Guida](/it/riuso/pubblicazione) spiegano dettagliatamente il processo ed includono degli allegati tecnici che le amministrazioni possono includere nei contratti con i propri fornitori al fine di accertarsi di adempiere all'obbligo in modo corretto e di seguire le best practice dell'open source."
       image: /assets/images/come-lo-uso-4.svg

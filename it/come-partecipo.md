@@ -35,7 +35,6 @@ alternate-blocks:
         - label: Esplora il catalogo
           class: btn btn-primary
           url: '/it/software'
-pair-blocks:
     - title: Aggiungi software pubblico al catalogo
       text: |
         Aiutaci a popolare il [catalogo](/it/software) scoprendo software
@@ -48,17 +47,4 @@ pair-blocks:
         - label: Scopri di più
           class: btn btn-primary
           url: '/it/riuso/pubblicazione'
-    - title: Segnala nuove API disponibili
-      text: |
-        Molti servizi pubblici espongono interfacce di interoperabilità.
-        Il [catalogo API](/it/api) di Developers Italia ha l'obiettivo di censirle
-        tutte ed offrirle agli sviluppatori che vogliano immaginare nuovi
-        servizi integrati.
-        Se sei a conoscenza di API non ancora censite, o la stai creando tu stesso,
-        inviaci una segnalazione!
-      image: /assets/images/come-partecipo-2.svg
-      buttons:
-        - label: Segnala un'API
-          class: btn btn-primary
-          url: '/it/contatti'
 ---
