@@ -36,7 +36,6 @@ alternate-blocks:
         - label: Explore the catalogue
           class: btn btn-primary
           url: '/en/software'
-pair-blocks:
     - title: "Add public code to the catalogue"
       text: "Help populate the [catalogue](/en/software) finding software
       released as open source by Public Administrations, or third party open

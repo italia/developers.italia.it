@@ -35,7 +35,6 @@ alternate-blocks:
         - label: Esplora il catalogo
           class: btn btn-primary
           url: '/it/software'
-pair-blocks:
     - title: Aggiungi software pubblico al catalogo
       text: |
         Aiutaci a popolare il [catalogo](/it/software) scoprendo software
