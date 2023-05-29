@@ -163,6 +163,14 @@ resources:
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
       desc: SPID compatible Identity Access Management application developed in Python
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
   - Graphic resources:
     - title: "'Enter with SPID' button"
       icon: github

@@ -78,6 +78,24 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-java-sdk
       desc: Java library for reading the unique card number (NIS)
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+  - SDK OIDC:
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
+  - Proxy:
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
 ---
 
 ## Intro
