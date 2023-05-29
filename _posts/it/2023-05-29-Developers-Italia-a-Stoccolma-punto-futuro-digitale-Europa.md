@@ -5,7 +5,7 @@ subtitle: "Publiccode.yml, verso uno standard europeo nella condivisione softwar
 date: 2023-05-29 16:00:00 +0200
 tags: developers opensource riuso catalogo europa
 categories: news
-author: Fabio Bonelli
+author: Matteo Vabanesi
 image:
 locale: it
 ---
