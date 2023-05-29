@@ -15,4 +15,4 @@ Tra i vari momenti in cartellone, Fabio Bonelli, _software engineer_ del team di
 
 Durante il workshop, Fabio ha presentato la struttura del Catalogo italiano, mentre Jonas ha illustrato quella del Catalogo svedese ([offentligkod.se](https://offentligkod.se/)), discutendo su possibili punti di incontro e sul riuso dei formati per creare una base comune. Un ulteriore contributo al dibattito europeo sul ruolo dell'open source nel settore pubblico, per **condividere l’innovazione digitale fra tutti i Paesi europei**.
 
-Per approfondire, consulta le slide dell'intervento sul Catalogo italiano e quelle sul Catalogo svedese
+Per approfondire, consulta le slide dell'intervento sul Catalogo italiano e quelle sul [Catalogo svedese](https://gitlab.com/open-data-knowledge-sharing/katalogen/-/blob/master/docs/offentligkod-workshop-20230418-v1.pdf)
