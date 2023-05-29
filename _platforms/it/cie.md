@@ -102,6 +102,24 @@ resources:
       icon: github
       url: https://github.com/italia/cieid-ios-sdk
       desc: Utilizzando questo kit gli sviluppatori di applicazioni terze iOS possono integrare nella propria app l'autenticazione mediante la cartà d'identità elettronica (CIE 3.0).
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML basato su SDK per PHP spid-php
+  - SDK OIDC:
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
+  - Proxy:
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML basato su SDK per PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
 ---
 
 ## Intro
