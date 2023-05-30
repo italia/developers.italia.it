@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-05-30T06:03:10+00:00</updated>
+  <updated>2023-05-30T06:13:23+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,38 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/05/29/developers-italia-a-stoccolma-punto-futuro-digitale-europa</id>
+    <title>Developers Italia a Stoccolma per fare il punto sul futuro digitale dell’Europa</title>
+    <updated>2023-05-29T14:00:00+00:00</updated>
+
+    <summary>Publiccode.yml, verso uno standard europeo nella condivisione software </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/05/29/developers-italia-a-stoccolma-punto-futuro-digitale-europa">&lt;p&gt;Per un’Europa digitale, sovrana e competitiva: lo scorso aprile Developers Italia ha partecipato a una conferenza, a Stoccolma, in Svezia, sull’&lt;strong&gt;importanza delle tecnologie open source&lt;/strong&gt; per il futuro digitale condiviso dell’Europa. Un appuntamento, organizzato da OpenForum Europe, la Swedish Internet Foundation, NOSAD, Open Source Sweden, Red Hat e la Foundation for Public Code, che ha visto la partecipazione dei principali attori europei del settore.&lt;/p&gt;
+
+&lt;p&gt;Tra i vari momenti in cartellone, Fabio Bonelli, &lt;em&gt;software engineer&lt;/em&gt; del team di Developers Italia, e Jonas Södergren, membro di &lt;a href=&quot;https://nosad.se/&quot;&gt;NOSAD&lt;/a&gt;, la rete di collaborazione sulle risorse digitali del governo svedese, hanno tenuto il workshop “A European Open Source Catalogue for the Public Sector”, un’intervento che ha esplorato la &lt;strong&gt;necessità di un catalogo di applicazioni open source a livello europeo&lt;/strong&gt; per le amministrazioni pubbliche oltre che di strumenti e standard comuni per costruirlo, come &lt;em&gt;publiccode.yml&lt;/em&gt;. Un vantaggio in termini di efficienza e impiego delle risorse, che permette di evitare il problema del continuo ricorso alla ricostruzione di applicazioni nei vari paesi dell’UE, processo sia dispersivo sia costoso.&lt;/p&gt;
+
+&lt;p&gt;Durante il workshop, Fabio ha presentato la struttura del Catalogo italiano, mentre Jonas ha illustrato quella del Catalogo svedese (&lt;a href=&quot;https://offentligkod.se/&quot;&gt;offentligkod.se&lt;/a&gt;), discutendo su possibili punti di incontro e sul riuso dei formati per creare una base comune. Un ulteriore contributo al dibattito europeo sul ruolo dell’open source nel settore pubblico, per &lt;strong&gt;condividere l’innovazione digitale fra tutti i Paesi europei&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per approfondire, consulta le slide dell’intervento sul &lt;strong&gt;&lt;a href=&quot;/assets/images/posts/2023-05-29/italian-software-catalog.pdf&quot;&gt;Catalogo italiano&lt;/a&gt;&lt;/strong&gt; e quelle sul &lt;strong&gt;&lt;a href=&quot;https://gitlab.com/open-data-knowledge-sharing/katalogen/-/blob/master/docs/offentligkod-workshop-20230418-v1.pdf&quot;&gt;Catalogo svedese&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</content>
+    <published>2023-05-29T14:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+    <category term="riuso" />
+    
+    <category term="catalogo" />
+    
+    <category term="europa" />
+    
+
+    <author>
+      <name>Matteo Vabanesi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/05/19/ecosistema%20-interoperabilita</id>
     <title>Tutto quello che avreste voluto sapere sull’ecosistema interoperabilità</title>
