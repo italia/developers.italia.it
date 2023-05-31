@@ -23,6 +23,24 @@ socials:
     name: youtube
     icon: youtube
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
+resources:
+    - Documentazione:
+        - title: Strumenti per gli Open Data
+          icon: link
+          url: https://www.dati.gov.it/fare-open-data/Strumenti-per-gli-Open-Data
+        - title: Come alimentare il Catalogo nazionale degli Open Data
+          icon: link
+          url: https://www.dati.gov.it/Come-alimentare-il-Catalogo-nazionale
+    - Sorgente:
+        - title: Repository dati.gov.it
+          icon: github
+          url: https://github.com/italia/ckan-it
+          desc: Codice sorgente GitHub dati.gov.it basato su CKAN
+    - Esempi:
+        - title: Python client di esempio
+          icon: github
+          url: https://github.com/italia/dati.gov.it-python-example
+          desc: Client di esempio per interfacciarsi con le API di dati.gov.it
 ---
 
 ## Intro
@@ -37,39 +55,18 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
  * Un sistema di tracciamento degli errori pubblico
  * Documentazione del codice e delle API chiaro
 
+## Utilizzare le API
 
-## Documentazione
+I cittadini, le imprese e le pubbliche amministrazioni interessate ad utilizzare i metadati del catalogo nazionale utilizzando le API possono trovare tutte le informazioni nella [pagina dedicata agli sviluppatori del sito](https://www.dati.gov.it/sviluppatori){:target="_blank"}.
 
-Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul documento architetturale, sia sulle linee guida tecniche per i cataloghi dati che includono la specifica DCAT-AP_IT:
+Esiste anche un repository che implementa un [client Python di esempio](https://github.com/italia/dati.gov.it-python-example){:target="_blank"} per mostrare come interfacciarsi alle API.
 
-[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit){:target="_blank"}
-
-[Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/){:target="_blank"}
-
-
-## Codice sorgente
-
-Qui puoi trovare l'attuale codice sorgente basato su DKAN (Drupal), e a breve pubblicheremo un documento per aiutarti a
-creare l'ambiente di sviluppo per contribuire:
-
-[Repo GitHub attuale dati.gov.it](https://github.com/FormezPA/dkan){:target="_blank"}
-
-
-Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da documento architetturale:
-
-[Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it){:target="_blank"}
-
-[Nuovo frontend server](https://github.com/italia/dati-frontendserver){:target="_blank"}
-
-
-## Collaborazione
+## Canali
 
 Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
 l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto
-un tracker pubblico su GitHub:
+un issue tracker pubblico su GitHub
 
-[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data){:target="_blank"}
-
-[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues){:target="_blank"}
-
-[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects){:target="_blank"}
+<a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
+<a class="btn btn-primary" href="https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data" target="_blank"><i class="it-horn" /> Mailing-list OpenData & Analytics</a>
+<a class="btn btn-primary" href="https://github.com/italia/dati.gov.it/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
