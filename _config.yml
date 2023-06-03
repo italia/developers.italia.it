@@ -172,7 +172,7 @@ page_gen:
 
   - index_files: false
     name: slug
-    data: crawler.softwares
+    data: crawler.software
     template: software-details
     defaults:
       lang: it
@@ -182,7 +182,7 @@ page_gen:
 
   - index_files: false
     name: slug
-    data: crawler.softwares
+    data: crawler.software
     template: software-details
     defaults:
       lang: en

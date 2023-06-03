@@ -1,6 +1,6 @@
 .PHONY: build deploy
 download-data:
-	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
+	npm run get-software
 	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
 
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
