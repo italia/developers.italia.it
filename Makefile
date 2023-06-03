@@ -1,7 +1,7 @@
 .PHONY: build deploy
 download-data:
-	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
+	npm run get-software
+	npm run get-publishers
 
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
@@ -34,6 +34,16 @@ local:
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 	NODE_ENV=production npm run build
+
+	@if [ -z "$${ELASTICSEARCH_PASS}" ]; then \
+	    echo "Skipping Elasticsearch update: ELASTICSEARCH_PASS is not set."; \
+	else \
+	    curl -H 'Content-Type: application/json' \
+	         -H "Authorization: Basic $$(printf %s:%s "elastic" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         --data-binary @elasticseach.bulk.json \
+	         -XPOST "https://elasticsearch.developers.italia.it/_bulk?pretty"; \
+	fi
+
 include-npm-deps:
 	npm ci --legacy-peer-deps
 build: | bundle-install-deployment include-npm-deps download-data jekyll-build

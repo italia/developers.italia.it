@@ -171,8 +171,8 @@ page_gen:
     #filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: it
@@ -181,8 +181,8 @@ page_gen:
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: en
@@ -221,7 +221,7 @@ elasticsearch:
   url: ENV_ELASTICSEARCH_URL
   number_of_shards: 5
   number_of_replicas: 1
-  index_name: "jekyll"
+  index_name: "developers_italia_it"
   default_type: "_doc"
   custom_settings: _es_settings.yml
   custom_mappings: _es_mappings.yml
