@@ -174,3 +174,7 @@
 - name: "Studio Amica - Contributo Locazioni 1.0"
   repos:
     - "https://github.com/studioamica/ContributoLocazioni1.0"
+
+- name: "Gzoom"
+  repos:
+    - "https://bitbucket.org/mapsgroupID/maps-gzoom"
