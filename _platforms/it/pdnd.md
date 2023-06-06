@@ -37,7 +37,7 @@ resources:
     - title: Specifiche API per le Università
       url: https://github.com/italia/api-padigitale2026-misura1.3.1-uni-afam
       icon: github
-      desc: Specifiche API relative alla misura 1.3.1 per l’avviso Università ed AFAM
+      desc: Specifiche API relative alla misura 1.3.1 per l’avviso Università e AFAM
   - Strumenti:
     - title: Validatore sintattico
       url: https://italia.github.io/api-oas-checker/
