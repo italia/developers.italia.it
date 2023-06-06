@@ -25,7 +25,7 @@ const url = 'https://api.developers.italia.it/v1/software';
 async function run() {
   const data = await fetchData(url);
 
-  fs.writeFileSync('_data/software.yml', yaml.dump(data));
+  fs.writeFileSync('_data/crawler/software.yml', yaml.dump(data));
 }
 
 run();

@@ -88,7 +88,6 @@ module Jekyll
       # the pages (look at the README file for its specification)
       data = site.config['page_gen']
       if data
-        puts data.inspect
         data.each do |data_spec|
           index_files_for_this_data = data_spec['index_files'] != nil ? data_spec['index_files'] : index_files
           template = data_spec['template'] || data_spec['data']
