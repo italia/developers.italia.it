@@ -35,7 +35,7 @@ resources:
       icon: github
       desc: Esempio di implementazione di un’API
     - title: Specifiche API relative alla misura 1.3.1 per l'avviso dedicato alle Università di PA digitale 2026
-      url: https://github.com/italia/api-padigitale2026-misura1.3.1-universita
+      url: https://github.com/italia/api-padigitale2026-misura1.3.1-uni-afam
       icon: github
       desc: Esempio di implementazione di un’API
   - Strumenti:
