@@ -2,6 +2,8 @@ const fs = require('fs');
 const axios = require('axios');
 const yaml = require('js-yaml');
 
+const addSlug = (software) => ({ ...software, slug: software.id });
+
 async function fetchData(url, pageSize = 100) {
   let afterCursor = '';
   let allData = [];
@@ -16,6 +18,10 @@ async function fetchData(url, pageSize = 100) {
     allData = allData.concat(response.data.data);
     afterCursor = response.data.links.next ? response.data.links.next.split('page[after]=')[1] : '';
   } while (afterCursor);
+
+  allData.forEach((software, i) => {
+    allData[i] = addSlug(software);
+  });
 
   return allData;
 }
