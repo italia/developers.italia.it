@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-06-14T06:03:05+00:00</updated>
+  <updated>2023-06-14T06:54:13+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,30 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/06/13/disponibile-video-workshop-guida-intergalattica-per-maintainer</id>
+    <title>Disponibile il video del workshop Guida intergalattica per Maintainer</title>
+    <updated>2023-06-13T12:00:00+00:00</updated>
+
+    <summary>Guarda la registrazione dell’evento tenutosi al Codemotion Workshop Fest 2023 </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/06/13/disponibile-video-workshop-guida-intergalattica-per-maintainer">&lt;p&gt;È finalmente online il video del &lt;em&gt;workshop&lt;/em&gt; completo “Guida intergalattica per Maintainer: come mantenere un progetto Open Source”, l’evento condotto da Andrea Stagi, &lt;em&gt;Open source project leader&lt;/em&gt; del Dipartimento per la Trasformazione Digitale, in occasione del &lt;strong&gt;Codemotion Workshop Fest 2023&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tra gli argomenti trattati, la &lt;strong&gt;gestione di un progetto &lt;em&gt;open source&lt;/em&gt;&lt;/strong&gt; a partire dalle basi e dalla piattaforma principale GitHub con i suoi tool di gestione dei progetti, oltre che a temi relativi alle licenze software, alle linee guida di contribuzione e al codice di condotta nei progetti (&lt;em&gt;code of conduct&lt;/em&gt;). Non sono mancati, inoltre, i &lt;strong&gt;riferimenti alla programmazione&lt;/strong&gt;, in particolare alle style guide per lo sviluppo, alla creazione e il setup delle pipeline di CI/CD, testing, coverage e la creazione di automatismi.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://talks.codemotion.com/guida-intergalattica-per-maintainer-come?playlist=codemotion-workshop-fest---2023&quot;&gt;Guarda il filmato sul sito di Codemotion&lt;/a&gt;&lt;/p&gt;</content>
+    <published>2023-06-13T12:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Matteo Vabanesi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/05/29/developers-italia-a-stoccolma-punto-futuro-digitale-europa</id>
     <title>Developers Italia a Stoccolma per fare il punto sul futuro digitale dell’Europa</title>
