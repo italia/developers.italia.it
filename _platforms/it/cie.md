@@ -162,6 +162,6 @@ La CIE contiene le seguenti informazioni, che sono accessibili secondo diverse m
 - **Dati accessibili con PIN:** certificato client
 - **Dati accessibili solo a forze dell’ordine:** impronte digitali
 
-Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
+Per maggiori dettagli consultare [questa tabella](/assets/files/CIE-SDK-overview.ods){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
 
 ![](/assets/images/cie/cie_detail.png)

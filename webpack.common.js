@@ -46,6 +46,7 @@ module.exports = {
       patterns: [
         { from: "assets/images", to: "../assets/images" },
         { from: "assets/icons", to: "../assets/icons" },
+        { from: "assets/files", to: "../assets/files" },
         { from: "node_modules/bootstrap-italia/dist/svg/sprite.svg", to: "../assets/svg/" },
       ],
     }),

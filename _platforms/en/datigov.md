@@ -39,7 +39,7 @@ As with all the projects of Developers Italia, the portal of open data follows a
 
 Waiting for a publication of a further documentation concerning the project, in the meantime here you can find the architectural document:
 
-[Architectural document for evolution of dati.gov.it (ITA)](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit){:target="_blank"}
+[Architectural document for evolution of dati.gov.it (ITA)](/assets/files/Architettura-Opendata.gov.it.odt){:target="_blank"}
 
 
 ## Source code
