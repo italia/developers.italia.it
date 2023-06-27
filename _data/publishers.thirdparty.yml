@@ -174,3 +174,7 @@
 - name: "Studio Amica - Contributo Locazioni 1.0"
   repos:
     - "https://github.com/studioamica/ContributoLocazioni1.0"
+    
+- name: "inPA (iOS)"
+  repos:
+    - "https://github.com/alex-sandri/inpa-ios"
