@@ -42,7 +42,7 @@ Come per tutti i progetti di Developers Italia, il portale dei dati aperti segue
 
 Qui puoi trovare la documentazione tecnica attualmente disponibile sia sul documento architetturale, sia sulle linee guida tecniche per i cataloghi dati che includono la specifica DCAT-AP_IT:
 
-[Documento d'architettura dell'evoluzione di dati.gov.it](https://docs.google.com/document/d/1dCfbpwmkl-U2kreykRY8YXJct6GOe-r_3qjism5wI2Y/edit){:target="_blank"}
+[Documento d'architettura dell'evoluzione di dati.gov.it](/assets/files/Architettura-Opendata.gov.it.odt){:target="_blank"}
 
 [Le linee guida tecniche per i cataloghi dati](https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/){:target="_blank"}
 

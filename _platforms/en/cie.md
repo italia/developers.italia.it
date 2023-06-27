@@ -129,6 +129,6 @@ The CIE contains the following information, accessible in different ways and acc
 - **Data accessible by typing the PIN (provided separately):** TLS client certificate
 - **Data accessible only by law enforcement:** fingerprints
 
-For more details check [this table](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Open source resources (SDK, examples) listed in this page allow to read the above data in custom applications.
+For more details check [this table](/assets/files/CIE-SDK-overview.ods){:target="_blank"}. Open source resources (SDK, examples) listed in this page allow to read the above data in custom applications.
 
 ![](/assets/images/cie/cie_detail.png)

@@ -25,6 +25,19 @@ resources:
       url: https://docs.pagopa.it/interoperabilita-1/
       icon: link
       desc: Manuale della piattaforma PDND che comprende videotutorial
+    - title: Linee guida modello interoperabilità (ModI)
+      url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
+      icon: file
+      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
+  - Implementazioni:
+    - title: Esempio di API
+      url: https://github.com/italia/developers-italia-api
+      icon: github
+      desc: Esempio di implementazione di un’API
+    - title: Specifiche API per le Università
+      url: https://github.com/italia/api-padigitale2026-misura1.3.1-uni-afam
+      icon: github
+      desc: Specifiche API relative alla misura 1.3.1 per l’avviso Università e AFAM
   - Strumenti:
     - title: Validatore sintattico
       url: https://italia.github.io/api-oas-checker/
@@ -34,16 +47,6 @@ resources:
       url: https://medium.com/developers-italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5
       icon: link
       desc: Articolo di presentazione del Validatore sintattico
-  - Esempi:
-    - title: Esempio di API
-      url: https://github.com/italia/developers-italia-api
-      icon: github
-      desc: Esempio di implementazione di un’API
-  - Normativa:
-    - title: Linee guida modello interoperabilità (ModI)
-      url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
-      icon: file
-      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
   - Archivio:
     - title: (2019) Using OpenAPI to standardize the Italian API ecosystem - slide (en)
       url: /assets/images/pdnd/pycon-2019-api.pdf
@@ -182,4 +185,3 @@ Italia, puoi trovare supporto tecnico.
 
 Nell’**Archivio** puoi consultare materiale utile a ricostruire la storia di
 come è nata la PDND.
-
