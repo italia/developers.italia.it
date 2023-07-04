@@ -178,3 +178,7 @@
 - name: "inPA (iOS)"
   repos:
     - "https://github.com/alex-sandri/inpa-ios"
+
+- name: "Gzoom"
+  repos:
+    - "https://bitbucket.org/mapsgroupID/maps-gzoom"
