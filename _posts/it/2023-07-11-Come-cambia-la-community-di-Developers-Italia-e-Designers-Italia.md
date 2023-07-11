@@ -9,7 +9,7 @@ author: Michela Gabrieli
 image:
 locale: it
 ---
-Come cambia anno dopo anno la community di Developers Italia e Designers Italia e come cambiano le conoscenze e competenze delle persone che collaborano ai progetti di trasformazione digitale delle Pubblica Amministrazione? Per comprendere questi elementi ogni anno - dal 2021 - **realizziamo un questionario per monitorare i progetti Developers Italia e Designers Italia** e la percezione delle risorse messe a disposizione. 
+Come cambia anno dopo anno la community di Developers Italia e Designers Italia e come cambiano le conoscenze e competenze delle persone che collaborano ai progetti di trasformazione digitale delle Pubblica Amministrazione? Per comprendere questi elementi ogni anno - dal 2021 - **realizziamo un questionario per monitorare i progetti Developers Italia e Designers Italia** e la percezione delle risorse messe a disposizione.
 
 ## Scopo e caratteristiche della ricerca 
 
