@@ -39,4 +39,4 @@ Lo strumento principale più utilizzato di Developers Italia è il Catalogo soft
 
 Ringraziamo tutte le persone che hanno scelto di contribuire a questa indagine dedicando il proprio tempo per permetterci di migliorare Developers Italia e Designers Italia. Nelle prossime settimane, inizieremo a ricontattare le persone che ci hanno dato la disponibilità a farsi intervistare per approfondire dal punto di vista qualitativo i temi del questionario. 
 
-Nel frattempo, potete scaricare [il report completo dell’indagine]([...](https://designers.italia.it/files/resources/Risultati-Questionario-Online-2023_Designers-Italia_Developers-Italia.pdf)https://designers.italia.it/files/resources/Risultati-Questionario-Online-2023_Designers-Italia_Developers-Italia.pdf)
+Nel frattempo, potete scaricare [il report completo dell’indagine]((https://designers.italia.it/files/resources/Risultati-Questionario-Online-2023_Designers-Italia_Developers-Italia.pdf)https://designers.italia.it/files/resources/Risultati-Questionario-Online-2023_Designers-Italia_Developers-Italia.pdf)
