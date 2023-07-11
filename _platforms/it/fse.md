@@ -51,10 +51,14 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-support
       desc: Supporto integrazione Gateway.
-    - title: Schematron e xsd
+    - title: Schematron
       icon: github
-      url: https://github.com/ministero-salute/it-fse-support/tree/main/validazione
-      desc: Schematron e xsd utilizzabili per la validazione dei documenti CDA2.
+      url: https://github.com/ministero-salute/it-fse-catalogs/tree/main/schematron
+      desc: Schematron utilizzabili per la validazione dei documenti CDA2.
+    - title: Xsd
+      icon: github
+      url: https://github.com/ministero-salute/it-fse-catalogs/tree/main/schema
+      desc: Xsd utilizzabili per la validazione dei documenti CDA2.
     - title: OpenAPI per il servizio di validazione CDA2
       icon: github
       url: https://github.com/ministero-salute/it-fse-support/tree/main/openapi/gateway
