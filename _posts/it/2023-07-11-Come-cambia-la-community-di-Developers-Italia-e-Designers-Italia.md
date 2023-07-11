@@ -23,15 +23,15 @@ Le persone che hanno risposto al questionario sono state 336, in aumento rispett
 
 ## Cosa abbiamo imparato 
 
-**Una community eterogenea**
+### Una community eterogenea
 
-La comunità è distribuita da un punto di vista geografico, di genere (68% maschi, 30% donne, 2% altro/senza risposta) e di età (la media delle persone rispondenti è di 46 anni in linea con quella nazionale). Uno spaccato che ben rappresenta il nostro Paese, con le donne sono in crescita dell’8,9% rispetto al 2022.
+La comunità è distribuita da un punto di vista geografico, di genere (68% maschi, 30% donne, 2% altro/senza risposta) e di età (la media delle persone rispondenti è di 46 anni in linea con quella nazionale). Uno spaccato che ben rappresenta il nostro Paese, con le donne in crescita dell’8,9% rispetto al 2022.
 
-**Developers Italia e Designers Italia sono conosciuti**
+### Developers Italia e Designers Italia sono conosciuti
 
 La larga maggioranza di chi ha risposto (85%) afferma di conoscere sia Designers Italia che Developers Italia. I **canali di comunicazione** valutati più favorevolmente sono rispettivamente il sito web di Designers Italia (l’88% lo considera molto utile o utile), quello di Developers Italia (80%), GitHub (il 70%) e Docs Italia (il 70%). Per quanto riguarda Designers Italia aumentano le persone che conoscono il progetto da più di 5 anni, (31,2%, +7,6% rispetto al 2022) ma anche quelle che si sono aggiunte nell’ultimo anno (15,6%, +6,5% rispetto al 2022). 
 
-**Le risorse aiutano a lavorare meglio** 
+### Le risorse aiutano a lavorare meglio
 
 Lo strumento principale più utilizzato di Developers Italia è il Catalogo software. Gli strumenti più utilizzati tra quelli messi a disposizione di Designers Italia sono rispettivamente le Linee guida, seguite dai Kit e le risorse per progettare e dal Manuale operativo di design. La larga maggioranza delle persone rispondenti (74%) ha dichiarato che **gli strumenti utilizzati hanno migliorato il proprio lavoro** molto (34%) o abbastanza (40%), mentre il 60% ha affermato che gli strumenti hanno favorito la collaborazione con altre persone dello stesso ufficio o di altri uffici.  
 
@@ -39,4 +39,4 @@ Lo strumento principale più utilizzato di Developers Italia è il Catalogo soft
 
 Ringraziamo tutte le persone che hanno scelto di contribuire a questa indagine dedicando il proprio tempo per permetterci di migliorare Developers Italia e Designers Italia. Nelle prossime settimane, inizieremo a ricontattare le persone che ci hanno dato la disponibilità a farsi intervistare per approfondire dal punto di vista qualitativo i temi del questionario. 
 
-Nel frattempo, potete scaricare [il report completo dell’indagine](https://governoit.sharepoint.com/sites/DTD-prjDesignersItalia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDTD%2DprjDesignersItalia%2FShared%20Documents%2F2%2E%20Ricerca%20e%20sviluppo%20%28community%2Dinternal%29%2FQuestionari%20community%2FQuestionario%20community%202023%2F04%2E%20Report%2FRisultati%20questionario%20quali%2Dquantitativo%20Designers%20Italia%20e%20Developers%20Italia%5F02%5F2023%5Fversione%20per%20news%2Epdf&parent=%2Fsites%2FDTD%2DprjDesignersItalia%2FShared%20Documents%2F2%2E%20Ricerca%20e%20sviluppo%20%28community%2Dinternal%29%2FQuestionari%20community%2FQuestionario%20community%202023%2F04%2E%20Report&p=true&ga=1) 
+Nel frattempo, potete scaricare [il report completo dell’indagine](...)
