@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-07-11T06:03:21+00:00</updated>
+  <updated>2023-07-11T19:47:27+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,58 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/07/11/come-cambia-la-community-di-developers-italia-e-designers-italia</id>
+    <title>Come è cambiata la community di Developers Italia e Designers Italia?</title>
+    <updated>2023-07-11T08:00:00+00:00</updated>
+
+    <summary>Ecco i primi risultati dell’indagine condotta negli scorsi mesi  </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/07/11/come-cambia-la-community-di-developers-italia-e-designers-italia">&lt;p&gt;Come cambia anno dopo anno la community di Developers Italia e Designers Italia e come cambiano le conoscenze e competenze delle persone che collaborano ai progetti di trasformazione digitale delle Pubblica Amministrazione? Per comprendere questi elementi ogni anno - dal 2021 - &lt;strong&gt;realizziamo un questionario per monitorare i progetti Developers Italia e Designers Italia&lt;/strong&gt; e la percezione delle risorse messe a disposizione.&lt;/p&gt;
+
+&lt;h2 id=&quot;scopo-e-caratteristiche-della-ricerca&quot;&gt;Scopo e caratteristiche della ricerca&lt;/h2&gt;
+
+&lt;p&gt;Per realizzare l’indagine, abbiamo utilizzato  le risorse per progettare disponibili pubblicamente sul nostro sito. Per prima cosa, abbiamo definito il profilo delle persone partecipanti all’indagine e le modalità più efficaci per distribuire il questionario. Poi abbiamo definito gli obiettivi del questionario: indagare il grado di conoscenza e la percezione dei progetti, l’utilità dei canali di comunicazione e il livello di partecipazione attiva ai progetti.&lt;/p&gt;
+
+&lt;p&gt;Rispetto al 2022, &lt;strong&gt;quest’anno abbiamo aggiunto delle domande sull’uso delle risorse che Developers Italia e Designers Italia mettono a disposizione&lt;/strong&gt; e come queste abbiano migliorato il processo di lavoro e favorito la collaborazione fra persone impegnate nella trasformazione digitale della Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;h2 id=&quot;chi-ha-risposto-allindagine&quot;&gt;Chi ha risposto all’indagine?&lt;/h2&gt;
+
+&lt;p&gt;Le persone che hanno risposto al questionario sono state 336, in aumento rispetto alle 178 dell’anno precedente (+189%) e in linea con quelle del 2021 (329, +2%). &lt;strong&gt;La community cresce soprattutto tra le persone dipendenti della PA&lt;/strong&gt; (46,1% delle persone rispondenti, +10,7% rispetto al 2022) e tra dipendenti delle aziende di fornitura o consulenza (19,6% delle persone rispondenti). Inoltre, il campione di dipendenti pubblici è risultato essere rappresentativo delle diverse tipologie di persone che lavorano nella Pubblica Amministrazione.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-abbiamo-imparato&quot;&gt;Cosa abbiamo imparato&lt;/h2&gt;
+
+&lt;h3 id=&quot;una-community-eterogenea&quot;&gt;Una community eterogenea&lt;/h3&gt;
+
+&lt;p&gt;La comunità è distribuita da un punto di vista geografico, di genere (68% maschi, 30% donne, 2% altro/senza risposta) e di età (la media delle persone rispondenti è di 46 anni in linea con quella nazionale). Uno spaccato che ben rappresenta il nostro Paese, con le donne in crescita dell’8,9% rispetto al 2022.&lt;/p&gt;
+
+&lt;h3 id=&quot;developers-italia-e-designers-italia-sono-conosciuti&quot;&gt;Developers Italia e Designers Italia sono conosciuti&lt;/h3&gt;
+
+&lt;p&gt;La larga maggioranza di chi ha risposto (85%) afferma di conoscere sia Designers Italia che Developers Italia. I &lt;strong&gt;canali di comunicazione&lt;/strong&gt; valutati più favorevolmente sono rispettivamente il sito web di Designers Italia (l’88% lo considera molto utile o utile), quello di Developers Italia (80%), GitHub (il 70%) e Docs Italia (il 70%). Per quanto riguarda Designers Italia aumentano le persone che conoscono il progetto da più di 5 anni, (31,2%, +7,6% rispetto al 2022) ma anche quelle che si sono aggiunte nell’ultimo anno (15,6%, +6,5% rispetto al 2022).&lt;/p&gt;
+
+&lt;h3 id=&quot;le-risorse-aiutano-a-lavorare-meglio&quot;&gt;Le risorse aiutano a lavorare meglio&lt;/h3&gt;
+
+&lt;p&gt;Lo strumento principale più utilizzato di Developers Italia è il Catalogo software. Gli strumenti più utilizzati tra quelli messi a disposizione di Designers Italia sono rispettivamente le Linee guida, seguite dai Kit e le risorse per progettare e dal Manuale operativo di design. La larga maggioranza delle persone rispondenti (74%) ha dichiarato che &lt;strong&gt;gli strumenti utilizzati hanno migliorato il proprio lavoro&lt;/strong&gt; molto (34%) o abbastanza (40%), mentre il 60% ha affermato che gli strumenti hanno favorito la collaborazione con altre persone dello stesso ufficio o di altri uffici.&lt;/p&gt;
+
+&lt;h2 id=&quot;report&quot;&gt;Report&lt;/h2&gt;
+
+&lt;p&gt;Ringraziamo tutte le persone che hanno scelto di contribuire a questa indagine dedicando il proprio tempo per permetterci di migliorare Developers Italia e Designers Italia. Nelle prossime settimane, inizieremo a ricontattare le persone che ci hanno dato la disponibilità a farsi intervistare per approfondire dal punto di vista qualitativo i temi del questionario.&lt;/p&gt;
+
+&lt;p&gt;Nel frattempo, potete scaricare &lt;strong&gt;&lt;a href=&quot;https://designers.italia.it/files/resources/Risultati-Questionario-Online-2023_Designers-Italia_Developers-Italia.pdf&quot;&gt;il report completo dell’indagine&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</content>
+    <published>2023-07-11T08:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="community" />
+    
+
+    <author>
+      <name>Michela Gabrieli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/06/13/disponibile-video-workshop-guida-intergalattica-per-maintainer</id>
     <title>Disponibile il video del workshop Guida intergalattica per Maintainer</title>
