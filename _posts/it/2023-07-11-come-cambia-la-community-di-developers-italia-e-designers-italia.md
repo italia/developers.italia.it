@@ -9,11 +9,11 @@ author: Michela Gabrieli
 image:
 locale: it
 ---
-Come cambia anno dopo anno la community di Developers Italia e Designers Italia e come cambiano le conoscenze e competenze delle persone che collaborano ai progetti di trasformazione digitale delle Pubblica Amministrazione? Per comprendere questi elementi ogni anno - dal 2021 - **realizziamo un questionario per monitorare i progetti Developers Italia e Designers Italia** e la percezione delle risorse messe a disposizione.
+Come cambia anno dopo anno la community di Developers Italia e Designers Italia e come cambiano le conoscenze e competenze delle persone che collaborano ai progetti di trasformazione digitale della Pubblica Amministrazione? Per comprendere questi elementi ogni anno - dal 2021 - **realizziamo un questionario per monitorare i progetti Developers Italia e Designers Italia** e la percezione delle risorse messe a disposizione.
 
 ## Scopo e caratteristiche della ricerca 
 
-Per realizzare l’indagine, abbiamo utilizzato  le risorse per progettare disponibili pubblicamente sul nostro sito. Per prima cosa, abbiamo definito il profilo delle persone partecipanti all’indagine e le modalità più efficaci per distribuire il questionario. Poi abbiamo definito gli obiettivi del questionario: indagare il grado di conoscenza e la percezione dei progetti, l’utilità dei canali di comunicazione e il livello di partecipazione attiva ai progetti. 
+Per realizzare l’indagine, abbiamo utilizzato le [risorse per progettare](https://designers.italia.it/risorse-per-progettare/comprendere/questionario-online/) disponibili sul sito di Designers Italia. Per prima cosa, abbiamo definito il profilo delle persone partecipanti all’indagine e le modalità più efficaci per distribuire il questionario. Poi abbiamo definito gli obiettivi del questionario: indagare il grado di conoscenza e la percezione dei progetti, l’utilità dei canali di comunicazione e il livello di partecipazione attiva ai progetti. 
 
 Rispetto al 2022, **quest’anno abbiamo aggiunto delle domande sull’uso delle risorse che Developers Italia e Designers Italia mettono a disposizione** e come queste abbiano migliorato il processo di lavoro e favorito la collaborazione fra persone impegnate nella trasformazione digitale della Pubblica Amministrazione. 
 
