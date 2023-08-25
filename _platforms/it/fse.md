@@ -40,7 +40,7 @@ resources:
       desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
     - title: Specifiche tecniche AgID
       icon: link
-      url: https://www.fascicolosanitario.gov.it/it/linee-guida-manuali-documenti-tecnici
+      url: https://www.fascicolosanitario.gov.it/linee-guida-manuali-documenti-tecnici
       desc: Link al sito AgID, riferimento specifiche tecniche.
   - FAQ & Utility:
     - title: Strumenti utili per integrazione Gateway
