@@ -11,19 +11,18 @@ jobs:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
 
     steps:
-      - uses: actions/checkout@master
-
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@master
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: 14.x
+          node-version: 16
+
       - name: Setup ruby env
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '2.6'
           bundler-cache: true
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
 
       - run: make download-data
       - run: make jekyll-build
