@@ -29,7 +29,7 @@ test:
 
 local:
 	bundle config set path vendor/
-	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
+	npx webpack-dev-server --config webpack.dev.js --color --progress --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
 
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build

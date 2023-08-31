@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  // mode: 'none',
   entry: "./assets/index.js",
 
   // Path and filename of your result bundle.
@@ -18,10 +19,17 @@ module.exports = {
     alias: {
       jquery: require.resolve("jquery"),
     },
+    fallback: {
+      // util is needed by elasticsearch
+      util: require.resolve("util"),
+    },
   },
   plugins: [
     // Provide global symbols for legacy plugins.
     new webpack.ProvidePlugin({
+      // process is needed by util
+      process: "process/browser",
+
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
@@ -32,12 +40,11 @@ module.exports = {
       PerfectScrollbar: "perfect-scrollbar",
     }),
 
-    // Pass down environment variables to process.env.
-    //
-    // If a variable is set, its value takes precedence over
-    // the default value defined here.
-    new webpack.EnvironmentPlugin({
-      ELASTICSEARCH_FRONTEND_URL: "https://elasticsearch.developers.italia.it",
+    // Pass down environment variables to be replaced in the bundle
+    new webpack.DefinePlugin({
+      'ELASTICSEARCH_FRONTEND_URL': JSON.stringify(
+        process.env.ELASTICSEARCH_FRONTEND_URL || "https://elasticsearch.developers.italia.it"
+      ),
     }),
 
     // Just copy images and icons we reference directly in the HTML, we
@@ -80,26 +87,12 @@ module.exports = {
       {
         // Load images
         test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              outputPath: "images",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
       {
         // Load fonts
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              outputPath: "fonts/",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
     ],
   },
