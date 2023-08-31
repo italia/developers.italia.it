@@ -20,8 +20,9 @@ module.exports = {
       jquery: require.resolve("jquery"),
     },
     fallback: {
-      // util is needed by elasticsearch
+      // needed by elasticsearch
       util: require.resolve("util"),
+      querystring: require.resolve("querystring-es3"),
     },
   },
   plugins: [
