@@ -5,7 +5,7 @@ import { buildFilter, buildSort } from './elasticSearchUtils.js';
 
 const client = new elasticsearch.Client({
   // eslint-disable-next-line no-undef
-  host: process.env.ELASTICSEARCH_FRONTEND_URL,
+  host: ELASTICSEARCH_FRONTEND_URL,
 });
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
