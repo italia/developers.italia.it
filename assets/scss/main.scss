@@ -26,6 +26,8 @@ $pswp__assets-path: "~photoswipe/src/css/default-skin/";
 
 @import "highlight";
 
+@import './swagger-ui-overrides';
+
 a {
     text-decoration: none
 }
