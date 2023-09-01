@@ -56,7 +56,7 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 No data should be stored in users' clients and all computation should be server side.</p>
                 <p><b>Mentor:</b> Alessandro Atria. Ask on the <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api channel</a> on our slack once you start having a basic idea.</p>
                 <p><b>Expected outcome:</b>
-                A working prototype with:
+                A working prototype with:</p>
                 <ul>
                     <li>a silly web user interface</li>
                     <li>a set of restful methods</li>
@@ -65,7 +65,6 @@ Remember that project descriptions are only initial ideas. You need to expand th
                     <li>one or more Machine Learning models to compute predictions</li>
                     <li>a training policy to periodically align Machine Learning models</li>
                 </ul>
-                </p>
                 <p><b>Required skills:</b>
                 Machine/Deep Learning knowledge, Javascript, Sql/NoSql and at least one programming language suitable for AI.</p>
             </td>
@@ -83,13 +82,12 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 <p><b>Expected outcome:</b>
                 Working plugins for traefik, nginx, envoy-proxy et al. implementing the rate-limit headers. The student should provide a working environment for testing the implementations.
                 </p>
-                <p><b>Required skills:</b>
+                <p><b>Required skills:</b></p>
                 <ul>
                     <li> Golang, JS, Python, Java, C depending on the target platform</li>
                     <li> Basic Linux knowledge</li>
                     <li> Docker and CI/CD related technologies</li>
                 </ul>
-                </p>
             </td>
             <td class="d-none d-md-table-cell"><a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></td>
         </tr>
@@ -99,12 +97,13 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 <p><b>Project:</b> API</p>
                 <p><b>Difficulty:</b> Hard</p>
                 <p class="d-md-none"><b>Contact:</b> <a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></p>
-                <p>This project aims at setting up full fledged API Gateways capable of supporting a set of interoperability technologies like:
+                <p>This project aims at setting up full fledged API Gateways capable of supporting a set of interoperability technologies like:</p>
                 <ul>
                     <li> exposing APIs via  OpenAPI3 specifications;</li>
                     <li> returning  RateLimit header fields;</li>
                     <li> return errors conformant to RFC7807 (Problem Details for HTTP APIs).</li>
                 </ul>
+                <p>
                 Students will study, install and setup opensource API gateways and reverse proxies like Kong, 3scale, Nginx, WSO2 ensuring that the exposed features are implemented in the more standard way.
                 Where those features require implementing plugins, filters or integration components, students should do it previously contacting the gateway communities. For the ratelimit part, they will interact with students working on <a href="#api1">proposal#2</a>.
                 </p>
@@ -112,14 +111,13 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 <p><b>Expected outcome:</b>
                 The outcome is a docker-compose or helm chart providing a redundant setup of an API Gateway infrastructure, useful to expose APIs descibed by OAS3 specification files.
                 </p>
-                <p><b>Required skills:</b>
+                <p><b>Required skills:</b></p>
                 <ul>
                     <li> Docker and CI/CD related technologies</li>
                     <li> HTTP protocol</li>
                     <li> Python, Java, C depending on the target platforms. </li>
                     <li> Optional: Kubernetes </li>
                 </ul>
-                </p>
             </td>
             <td class="d-none d-md-table-cell"><a href="https://app.slack.com/client/T6C27AXE0/CDKBYTG74">#api</a></td>
         </tr>
@@ -134,19 +132,17 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 <p><b>Mentor:</b> Designers or developers from the Designers Italia team.</p>
                 <p><b>Expected outcome:</b>
                 A new stable version of the <a href="https://github.com/italia/design-react-kit/">Design React Kit</a>, implementing most of the components from Bootstrap Italia, and a Gatsby template that is easy to use and fully compliant with accessibility rules.
-                This project can be used as a solid starting point:
+                This project can be used as a solid starting point:</p>
                 <ul>
                     <li> <a href="https://github.com/italia/design-italia-gatsby-starterkit">Design Italia Gatsby Starter Kit</a> (additional details can be found on its thread on Forum Italia).</li>
                 </ul>
-                </p>
                 <p>
-                <b>Required skills:</b>
+                <b>Required skills:</b></p>
                 <ul>
                     <li> Design systems</li>
                     <li> Javascript/ES/React</li>
                     <li> Basic understanding of StorybookJS and GatsbyJS</li>
                 </ul>
-                </p>
             </td>
             <td class="d-none d-md-table-cell"><a href="https://app.slack.com/client/T6C27AXE0/C7VPAUVB3">#design-dev</a></td>
         </tr>
@@ -163,7 +159,7 @@ Remember that project descriptions are only initial ideas. You need to expand th
                     A robust, tested, user friendly and production ready dockerized webapp to evaluate readability of public administration contents.
                 </p>
                 <p>
-                <b>Required skills:</b>
+                <b>Required skills:</b></p>
                 <ul>
                     <li>React JS</li>
                     <li>Python</li>
@@ -171,7 +167,6 @@ Remember that project descriptions are only initial ideas. You need to expand th
                     <li>Docker </li>
                     <li>CI/CD technologies</li>
                 </ul>
-                </p>
             </td>
             <td class="d-none d-md-table-cell"><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
@@ -195,11 +190,10 @@ Remember that project descriptions are only initial ideas. You need to expand th
                 href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a>.
                 </p>
                 <p><b>Expected outcome:</b> To be discussed with your mentor...</p>
-                <p><b>Required skills:</b>
+                <p><b>Required skills:</b></p>
                 <ul>
                     <li> Up to you :-)</li>
                 </ul>
-                </p>
             </td>
             <td class="d-none d-md-table-cell"><a href="https://developersitalia.slack.com/messages/C8U3ZSM5M">#welcome</a></td>
         </tr>
