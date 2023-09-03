@@ -59,7 +59,7 @@ it:
       href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/riuso-software/licenze-aperte-e-scelta-di-una-licenza.html">questa
       risorsa</a>.
   item6:
-    question: E’ possibile nell’ambito del processo di Riuso di una soluzione
+    question: È possibile nell’ambito del processo di Riuso di una soluzione
       applicare, in virtù del principio di compatibilità delle licenze, all’opera
       derivata una licenza diversa da quella apposta all’opera originaria?
     answer: |
@@ -121,10 +121,15 @@ it:
       finestra temporale considerata è di 60 giorni.
   item11:
     question: Come è possibile dichiarare il riuso di un software?
-    answer:
+    answer: |
       Per ogni soluzione presa a riuso è possibile effettuare una semplice
       dichiarazione come previsto dal <a href="https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html">Piano Triennale per l'Informatica nella Pubblica Amministrazione</a>.
       Per effettuare questa operazione è possibile seguire le indicazioni
       riportate nella <a href="https://developers.italia.it/it/riuso/dichiarazione">pagina dedicata</a>.
+  item12: 
+    question: Quali garanzie offre il Catalogo di Developers Italia?
+    answer: |
+      Garantiamo che i software del Catalogo siano open source, ma non forniamo supporto o manutenzione, né assicuriamo che rispondano a specifiche esigenze delle pubbliche amministrazioni.
+      Le informazioni presenti nelle schede sono fornite da chi pubblica il software.
 
 en:

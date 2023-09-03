@@ -27,18 +27,10 @@ export const CatalogueHeader = React.memo(() => {
       ) : (
         <h1 className={classes.header}>{l10NLabels.software.catalogue}</h1>
       )}
-      {filterPNRR && (
-        <div className="col-10 mx-auto text-center mb-3">
-          <i>
-            Questo software può concorrere al raggiungimento degli obiettivi delle misure indicate, secondo quanto
-            dichiarato da chi lo mette a disposizione.{' '}
-            <a href="/it/riuso/pubblicazione#pnrr-soluzioni-a-catalogo" target="_blank" rel="noopener noreferrer">
-              Scopri di più
-            </a>
-            .
-          </i>
-        </div>
-      )}
+
+      <div style={{ maxWidth: '75ch', margin: '0 auto' }}>
+        <a href="/it/faq#collapseDiv12">Garanzie sui contenuti</a>
+      </div>
 
       <div className="col-10 mx-auto text-center mb-3">
         <SearchBar onChange={handleSearch} defaultValue={searchValue} placeholder={l10NLabels.search_form_label} />
