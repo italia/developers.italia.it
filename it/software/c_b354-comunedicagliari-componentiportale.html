@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202309150603" rel="stylesheet">
+  <link href="/dist/main.css?202309160603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -644,7 +644,7 @@
         
         <h1 class="d-inline-block">
           Comune di Cagliari
-          <span class="badge badge-pill badge-pill--sup badge-primary">5.3.0</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">7.2.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -892,23 +892,23 @@
             
             <p> Motore di REST API </p>
             
-            <p> Cloud deployment </p>
+            <p> Cloud deployment &amp; Supporto nativo per Kubernetes </p>
+            
+            <p> Caching </p>
+            
+            <p> Livello di astrazione dei dati </p>
+            
+            <p> Strumenti di Pro-code (CLI, interfaccia a riga di comando, generatore di componenti, costruttore di Packaged Business Capabilities) </p>
             
             <p> Gestione di contenuti e asset (documenti, file multimediali, immagini) </p>
             
-            <p> Versioning dei contenuti </p>
+            <p> Versioning e schedulazione dei contenuti </p>
             
             <p> Classificazione dei contenuti (tassonomia e navigazione a faccette) </p>
             
             <p> Contenuti georeferenziati </p>
             
             <p> Ottimizzazione per i motori di ricerca (SEO) </p>
-            
-            <p> Controllo degli accessi basato su Ruoli-Gruppi </p>
-            
-            <p> Autenticazione centralizzata </p>
-            
-            <p> Registrazione utenti </p>
             
             <p>
               <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -919,6 +919,14 @@
             </p>
             <div class="collapse" id="otherFeature">
               
+              <p> Controllo degli accessi basato su Ruoli-Gruppi </p>
+              
+              <p> Gestione dell&#39;identità tramite Keycloak </p>
+              
+              <p> Compatibilità con i protocolli standard (OpenID Connect, OAuth 2.0 e SAML 2.0) Single Sign On e Social Login </p>
+              
+              <p> Modelli UI/UX basati su tecnologia RESTful </p>
+              
               <p> Supporto per Responsive Design </p>
               
               <p> Supporto multilingue </p>
@@ -926,8 +934,6 @@
               <p> Conformità al modello di design previsto dalle Linee Guida di Design di siti e servizi della PA </p>
               
               <p> Conformità agli standard dell&#39;informazione previsti dalle Linee Guida di Design di siti della PA </p>
-              
-              <p> Interfaccia web dinamica </p>
               
               <p> Modelli UI/UX basati su tecnologia RESTful </p>
               
@@ -940,7 +946,7 @@
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
-              Usata da 3
+              Usata da 6
               
               amministrazioni
               
@@ -954,6 +960,12 @@
               <p> Comune di Buggerru (SU) </p>
               
               <p> Città Metropolitana di Cagliari </p>
+              
+              <p> Comune di Quartu Sant&#39;Elena (CA) </p>
+              
+              <p> Comune di Messina </p>
+              
+              <p> Comune di Arbus (VS) </p>
               
             </div>
           </div>
@@ -1024,7 +1036,7 @@
                 Comune di Cagliari
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">5.3.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">7.2.0</span>
                 
               </h2>
               <h2>
@@ -1037,9 +1049,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2020-07-07
+                  2023-09-12
                   
-                  (5.3.0)
+                  (7.2.0)
                   
                 </p>
               </div>
@@ -1092,7 +1104,7 @@
               <div class="col-6 col-md">
                 <p>
                   <span class="label">Licenza</span>
-                  LGPL-2.1-only
+                  LGPL-3.0
                 </p>
               </div>
               
@@ -1213,7 +1225,7 @@
                           
 
 
-    Ant (Opzionale)
+    NodeJs (Opzionale)
 
 <br />
                           
@@ -1262,11 +1274,22 @@ Italiano<br />
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Il Comune di Cagliari a dicembre ha pubblicato il nuovo portale istituzionale, previsto all’interno del Piano Operativo Città Metropolitane 2014-2020 (Progetto CA1.1.1.a.3 – Asse 1). Il progetto del nuovo portale è inserito tra le azioni portate avanti dal Comune in tema di agenda digitale e in linea con il Piano triennale per l’informatica nella PA. Il Comune ha aderito a Designers Italia, il Design System della Pubblica Amministrazione Italiana di AGID e Team Digitale,contribuendo attivamente alla realizzazione dei kit e sta sperimentando il modello che propone uno standard per tutti i Comuni.
-Il sito è progettato partendo dal mobile e poi declinando il progetto in una versione desktop. La home page dà un assaggio dei diversi tipi di contenuti e una visione rapida della struttura del sito. Una organizzazione in quattro semplici sezioni: Amministrazione, Servizi ,  Novità,  Documenti e dati. Ripensata la struttura che organizza e classifica le informazioni. Un sistema di classificazione per argomenti (parole chiave che descrivono nel modo migliore la realtà e la vita di un Comune). I contenuti, raccolti in argomenti generano le pagine tematiche che li presenta.
-Il portale è realizzato in collaborazione con Entando: una piattaforma open source, basata su componenti, un set di moduli integrabili, riutilizzabili, personalizzabili e di funzionalità *enterprise-ready. In correlazione con il CMS è stato agganciato un potente motore di ricerca che usando la tassonomia del sito basata sui Tag, aiuta l’utente al meglio per muoversi all’interno del nuovo sito istituzionale, suggerendo di volta in volta i contenuti più appropriate secondo le scelte fatte.
-Nella progettazione sono stati realizzati dei componenti per metterli a disposizione gratuitamente di tutti gli altri Comuni italiani secondo il paradigma del riuso software previsto dall’art.69 del Codice dell’Amministrazione Digitale, con la possibilità di essere personalizzati da ogni amministrazione.
-Il Comune, fortemente orientato ad adottare le piattaforme abilitanti e a sviluppare nuovi servizi digitali,vorrebbe condividere le esperienze con tutti coloro che sono interessati a rendere più semplice ed efficace il proprio sito, evidenziando contestualmente quanto siano importanti i percorsi di collaborazione e condivisione di un modello che ha valenza nazionale. Su questi temi è molto utile un continuo confronto che arricchisca l’esperienza attuale e per migliorare quanto finora fatto con l’aiuto di tutti, per garantire una visione strategica e condivisa sui servizi al cittadino e sui nuovi scenari offerti dalle tecnologie dell’informazione e della comunicazione.</p>
+                
+<p>Il Comune di Cagliari ha pubblicato, a dicembre 2019,  il nuovo portale istituzionale previsto all’interno del Piano Operativo Città Metropolitane 2014-2020 (Progetto CA1.1.1.a.3 – Asse 1).</p>
+
+<p>Il progetto del nuovo portale è stato inserito tra le azioni portate avanti dal Comune in tema di agenda digitale e in linea con il Piano triennale per l’informatica nella PA. 
+    Il Comune ha aderito a Designers Italia, il Design System della Pubblica Amministrazione Italiana di AGID e Team Digitale, contribuendo attivamente alla realizzazione dei kit ed alla sperimentazione di un modello che proponga uno standard per tutti i Comuni.</p>
+
+<p>Il sito è stato progettato per essere
+    visualizzato su dispositivi mobili e successivamente adattato per la versione desktop. L’homepage offre un’anteprima dei diversi tipi di contenuto ed una panoramica della struttura del sito.</p>
+
+<p>L’ architettura che organizza e classifica le informazioni è stata ripensata, suddividendo il sito in quattro sezioni: Amministrazione, Servizi, Novità, Documenti e dati. Inoltre, è presente un sistema di classificazione per argomenti, basato su parole chiave che descrivono nel modo migliore la realtà e la vita di un Comune. I contenuti sono organizzati in argomenti ed ospitati all’interno di pagine tematiche.</p>
+
+<p>Il portale è realizzato in collaborazione con Entando: una piattaforma open source (Application Composition Platform) che fornisce tutti gli strumenti e le tecnologie necessarie per costruire moderne applicazioni componibili, cloud-native e scalabili. Il portale beneficia di un potente motore di ricerca che, usando la tassonomia basata sui Tag, aiuta l’utente al meglio per muoversi all’interno del nuovo sito istituzionale, suggerendo di volta in volta i contenuti più appropriati in base alle scelte fatte.</p>
+
+<p>Durante la progettazione, sono stati creati dei componenti che possono essere utilizzati gratuitamente da tutti i Comuni italiani, in linea con il paradigma del riuso software previsto dall’art. 69 del Codice dell’Amministrazione Digitale. Inoltre, ogni amministrazione ha la possibilità di personalizzare questi componenti a proprio piacimento. Con cadenza regolare il catalogo dei componenti a riuso viene arricchito con nuove funzionalità.</p>
+
+<p>Il Comune, fortemente orientato ad adottare le piattaforme abilitanti e a sviluppare nuovi servizi digitali, è a disposizione per condividere le esperienze con tutti coloro che sono interessati a rendere più semplice ed efficace il proprio sito, evidenziando contestualmente quanto siano importanti i percorsi di collaborazione e condivisione di un modello che ha valenza nazionale. Su questi temi è molto utile un continuo confronto che arricchisca l’esperienza attuale e contribuisca a migliorare quanto finora fatto con l’aiuto di tutti, per garantire una visione strategica e condivisa sui servizi al cittadino e sui nuovi scenari offerti dalle tecnologie dell’informazione e della comunicazione.</p>
 
               </div>
             </div>
