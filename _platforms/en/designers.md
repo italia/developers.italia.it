@@ -43,7 +43,7 @@ The site [designers.italia.it](https://designers.italia.it/){:target="_blank"} c
 * The [blog](https://medium.com/designers-italia) with use cases of the above tools and articles from the community.
 * The [activity plan](https://designers.italia.it/piano-attivita/), containing a roadmap of the activities and the main results by the Designers Italia project, future actions and goals to be achieved.
 
-The source code of the site itself is hosted in a [GitHub repository](https://github.com/italia/designers.italia.it){:target="_blank"} open to any kind of contribution.
+The source code of the site itself is hosted in a [GitHub repository](https://github.com/italia/designers.italia.it){:target="_blank"}, open to any type of contribution.
 
 # Design system
 
