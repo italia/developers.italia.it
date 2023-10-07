@@ -41,7 +41,7 @@ The site [designers.italia.it](https://designers.italia.it/){:target="_blank"} c
 * A [design system](https://designers.italia.it/design-system/){:target="_blank"} including foundations, components, patterns and showcase.
 * A series of [kits for the design of services of the Public Administration](https://designers.italia.it/kit/){:target="_blank"}.
 * The [blog](https://medium.com/designers-italia) with use cases of the above tools and articles from the community.
-* The [activity plan](https://designers.italia.it/piano-attivita/), containing a roadmap of the activities and the main results by the Designers Italia project, future actions and goals to achieve.
+* The [activity plan](https://designers.italia.it/piano-attivita/), containing a roadmap of the activities and the main results by the Designers Italia project, future actions and goals to be achieved.
 
 The source code of the site itself is hosted in a [GitHub repository](https://github.com/italia/designers.italia.it){:target="_blank"} open to any kind of contribution.
 
