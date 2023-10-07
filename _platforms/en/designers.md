@@ -47,7 +47,7 @@ The source code of the site itself is hosted in a [GitHub repository](https://gi
 
 # Design system
 
-Since 2022, a unique and coherent desing system has been established by building on and evolving the different kits listed below.
+Since 2022, a unique and coherent desing system has been established by building on and evolving the different kits listed below:
 
 * Introduction to the current version of the [Design System](https://designers.italia.it/design-system/){:target="_blank"}.
 * Kickstart [guide](https://designers.italia.it/design-system/come-iniziare/).
