@@ -36,7 +36,7 @@ The goal is to provide kits - documents, guides, or software - that can save tim
 
 The site [designers.italia.it](https://designers.italia.it/){:target="_blank"} contains:
 
-* References to the current version of the [Design Guidelines](https://designers.italia.it/guide/){:target="_blank"}.
+* References to the current version of the [Design guidelines](https://designers.italia.it/guide/){:target="_blank"}.
 * [Design templates for websites and services](https://designers.italia.it/guide/](https://designers.italia.it/modelli/){:target="_blank"} of public entities such as municipalities and schools.
 * A [design system](https://designers.italia.it/design-system/){:target="_blank"} including foundations, components, patterns and showcase.
 * A series of [kits for the design of services of the Public Administration](https://designers.italia.it/kit/){:target="_blank"}.
