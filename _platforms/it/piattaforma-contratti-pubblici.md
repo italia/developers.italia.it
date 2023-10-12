@@ -4,7 +4,7 @@ logo: /assets/images/logo-piattaforma-contratti-pubblici.png
 external_website: https://www.anticorruzione.it
 payoff: Piattaforma dei Contratti Pubblici
 description: >
-  Portale unico per l’interoperabilità dell’ecosistema nazionale di approvvigionamento digitale
+  Portale unico per l’interoperabilità dell’Ecosistema Nazionale di approvvigionamento digitale
 lang: it
 highlight: true
 comingsoon: false
@@ -36,7 +36,7 @@ resources:
       url: https://developers.italia.it/it/pdnd/
       icon: link
       desc: >
-        Informazioni sulla piattaforma PDND, su come aderire e su come utilizzarla
+        Informazioni sulla PDND, su come aderire e su come utilizzarla
 
   - Per la Pubblica Amministrazione e la Cittadinanza:
     - title: Open Data e API di Accesso ai Dati Pubblici - ANAC
@@ -63,9 +63,9 @@ che, in adempimento alle previsioni del Codice dei Contratti Pubblici,
 consentono la realizzazione dell’Ecosistema Nazionale di approvvigionamento
 digitale (art. 22) ed abilitano:
 
-* L’accesso alla Banca Dati Nazionale dei Contratti Pubblici (BDNCP, art 23)
-* L’accesso al Fascicolo Virtuale dell’Operatore Economico (FVOE, art. 24)
-* La pubblicità legale degli atti (art. 27)
+* l’accesso alla Banca Dati Nazionale dei Contratti Pubblici (BDNCP, art 23);
+* l’accesso al Fascicolo Virtuale dell’Operatore Economico (FVOE, art. 24);
+* la pubblicità legale degli atti (art. 27).
 
 Di seguito si riporta un diagramma illustrativo dell’Ecosistema:
 
@@ -73,14 +73,14 @@ Di seguito si riporta un diagramma illustrativo dell’Ecosistema:
 
 Il sistema della Piattaforma dei Contratti Pubblici:
 
-* Raccoglie dati e informazioni provenienti dalle Stazioni Appaltanti e dagli
+* raccoglie dati e informazioni provenienti dalle Stazioni Appaltanti e dagli
   Operatori Economici relativi all’intero ciclo di vita del Contratto Pubblico e
-  li conferisce alla Banca Dati Nazionale Contratti Pubblici (BDNCP)
-* Consente la verifica dei requisiti di partecipazione degli Operatori Economici
-  in ogni fase del Contratto Pubblico
-* Esegue la pubblicazione con valore legale a livello europeo e nazionale dei
-  bandi e degli avvisi
-* Mette a disposizione tutti i dati raccolti ai soggetti interessati, anche in
+  li conferisce alla Banca Dati Nazionale Contratti Pubblici (BDNCP);
+* consente la verifica dei requisiti di partecipazione degli Operatori Economici
+  in ogni fase del Contratto Pubblico;
+* esegue la pubblicazione con valore legale a livello europeo e nazionale dei
+  bandi e degli avvisi;
+* mette a disposizione tutti i dati raccolti ai soggetti interessati, anche in
   forma pubblica, attraverso la realizzazione di Interfacce di analisi dati,
   OpenData e API di accesso.
 
@@ -94,15 +94,15 @@ per consentire alle Stazioni Appaltanti la pubblicazione a livello europeo
 
 **Le Stazioni Appaltanti** e gli enti concedenti di cui all’art. 1 comma 1 lett. a)
 e b) dell’Allegato I.1 al Codice dei contratti pubblici (di seguito Stazioni
-Appaltanti)
+Appaltanti):
 
-* Per l’assegnazione del CIG a ogni procedura di affidamento, ivi compresi i
-  singoli lotti di gara, ove previsti, indipendentemente dall’importo
-* Per la pubblicazione degli avvisi di preinformazione, del bando di gara e
-  degli avvisi di post informazione
-* Per la comunicazione alla BDNCP dei dati sull’esecuzione dei contratti.
-* Per la verifica del possesso e del mantenimento dei requisiti di
-  partecipazione degli Operatori Economici
+* per l’assegnazione del CIG a ogni procedura di affidamento, ivi compresi i
+  singoli lotti di gara, ove previsti, indipendentemente dall’importo;
+* per la pubblicazione degli avvisi di preinformazione, del bando di gara e
+  degli avvisi di post informazione;
+* per la comunicazione alla BDNCP dei dati sull’esecuzione dei contratti.
+* per la verifica del possesso e del mantenimento dei requisiti di
+  partecipazione degli Operatori Economici.
 
 Le Stazioni Appaltanti gestiscono tutte le fasi del ciclo di vita del contratto
 utilizzando esclusivamente Piattaforme di approvvigionamento digitali
@@ -112,17 +112,17 @@ Per poter operare in interoperabilità le Stazioni Appaltanti devono infatti
 dotarsi di una o più piattaforme digitali certificate (art. 25).
 
 La Piattaforma dei Contratti Pubblici eroga i suoi servizi sottoforma di API e
-utilizza la piattaforma PDND per documentarne e autorizzarne la fruizione e
-l’accesso.
+utilizza la Piattaforma Digitate Nazionale Dati (PDND) per documentarne e
+autorizzarne la fruizione e l’accesso.
 
 <br />
 
 **Gli Operatori Economici** di cui all’art. 1 comma 1 lett. l) dell’Allegato I.1
-al Codice dei contratti pubblici
+al Codice dei contratti pubblici:
 
-* Per la consultazione e l’aggiornamento del proprio Fascicolo Virtuale
-* Per la verifica del possesso dei requisiti di partecipazione alle gare
-* Per la consultazione dei bandi e degli avvisi pubblici
+* per la consultazione e l’aggiornamento del proprio Fascicolo Virtuale;
+* per la verifica del possesso dei requisiti di partecipazione alle gare;
+* per la consultazione dei bandi e degli avvisi pubblici.
 
 L’accesso per gli Operatori Economici avverrà attraverso interfaccia web, che
 sarà resa disponibile dal 1°gennaio 2024 nella sezione servizi del portale ANAC.
@@ -162,37 +162,37 @@ sistema di monitoraggio.
 Nella definizione della tipologia di scheda e del contenuto informativo sono
 state seguite le seguenti direttrici:
 
-* Il set informativo non estende i dati già precedentemente acquisiti da ANAC, se
+* il set informativo non estende i dati già precedentemente acquisiti da ANAC, se
   non per quanto riguarda le informazioni ulteriori necessarie per la redazione
   dei formulari della Gazzetta Ufficiale della Comunità Europea (eForms) e
   dell’European Standard Procurement Document (l’ESPD) o Documento di Gara Unico
-  Europeo (DGUE)
-* Le schede ove necessario possono contenere eForm e/o ESPD. In questo caso i due
-  oggetti sono completi e autoconsistenti
-* Il formato dati è JSON, tuttavia eForm e ESPD contenuti nella scheda mantengono
+  Europeo (DGUE);
+* le schede ove necessario possono contenere eForm e/o ESPD. In questo caso i due
+  oggetti sono completi e autoconsistenti;
+* ll formato dati è JSON, tuttavia eForm e ESPD contenuti nella scheda mantengono
   il loro formato nativo (XML) con le annesse regole di correttezza sintattica e
-  semantica definite dallo standard
-* Le informazioni contenute nelle eForm e ESPD non sono ripetute nella scheda (a
- meno delle ridondanze tra i due modelli).
-* In generale il volume delle informazioni richieste è crescente all'aumentare
+  semantica definite dallo standard;
+* le informazioni contenute nelle eForm e ESPD non sono ripetute nella scheda (a
+ meno delle ridondanze tra i due modelli);
+* in generale il volume delle informazioni richieste è crescente all'aumentare
   dell’importo dell’affidamento, secondo le soglie indicate di seguito:
-  * Fino a 5.000 euro
-  * Da 5.000 euro, fino alla soglia europea
-  * Oltre la soglia europea
+  * fino a 5.000 euro;
+  * da 5.000 euro, fino alla soglia europea;
+  * oltre la soglia europea.
   Esistono altresì schede specifiche per particolari tipologie di contratto.
-* La definizione delle schede segue l’approccio adottato in sede europea per la
+* la definizione delle schede segue l’approccio adottato in sede europea per la
   definizione delle eForm e privilegia la creazione di una serie di schede ad hoc
-  per le varie fasi di ciascuna tipologia di affidamento
-* Per la definizione del modello dati e delle regole sintattiche-semantiche, ANAC
+  per le varie fasi di ciascuna tipologia di affidamento;
+* per la definizione del modello dati e delle regole sintattiche-semantiche, ANAC
   ha deciso di abbandonare la redazione di documenti in linguaggio naturale in
-  favore dell’uso linguaggi formali di alto livello
-  * Per la rappresentazione del modello dati e delle regole sintattiche è utilizzato
+  favore dell’uso linguaggi formali di alto livello:
+  * per la rappresentazione del modello dati e delle regole sintattiche è utilizzato
     lo standard OpenAPI 3.0 come indicato dalle Linee Guida del Modello
-    d'Interoperabilità
-  * Per la rappresentazione delle regole semantiche e di congruità è utilizzata la
+    d'Interoperabilità;
+  * per la rappresentazione delle regole semantiche e di congruità è utilizzata la
     notazione DMN (Decision Model and Notation) e il linguaggio FEEL (Friendly
-    Enough Expression Language)
-  * Per gli oggetti eForm ed ESPD che possono essere contenuti all’interno delle
+    Enough Expression Language);
+  * per gli oggetti eForm ed ESPD che possono essere contenuti all’interno delle
     schede, vengono applicate le regole di correttezza previste dai rispettivi
     modelli. È comunque possibile che le regole ANAC definiscano criteri più
     restrittivi di quelli previsti dallo standard europeo.
@@ -216,16 +216,16 @@ Successivamente, i Gestori di piattaforma possono ricercare nel catalogo PDND
 gli e-service ANAC abilitanti la gestione del ciclo di vita dei Contratti
 Pubblici (PCP) e procedere, per ciascuno di essi, con:
 
-* la richiesta di fruizione tramite la Piattaforma PDND
-* la configurazione degli elementi necessari alla fruizione sulla Piattaforma PDND
+* la richiesta di fruizione tramite la Piattaforma PDND;
+* la configurazione degli elementi necessari alla fruizione sulla Piattaforma PDND;
 * la configurazione dei propri sistemi per accedere attraverso i metodi di
-autenticazione resi disponibili da PDND
+autenticazione resi disponibili da PDND.
 
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/anticorruzione/npa/issues" target="_blank" ><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg>
-  Vai a GitHub
+  Vai alle issue
 </a>
 
 Utilizza il canale GitHub dedicato per esplorare le specifiche tecniche, aprire
-una issue o una segnalazione.
+una issue (segnalazioni).
