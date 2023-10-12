@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-10-12T06:03:08+00:00</updated>
+  <updated>2023-10-12T13:51:15+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,36 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/10/12/hacktoberfest-2023</id>
+    <title>Hacktoberfest 2023</title>
+    <updated>2023-10-12T13:00:00+00:00</updated>
+
+    <summary>Dai il tuo contributo all'Open Source </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/10/12/hacktoberfest-2023">&lt;p&gt;Developers Italia parteciperà anche quest’anno all’evento &lt;a href=&quot;https://hacktoberfest.com/&quot;&gt;Hacktoberfest&lt;/a&gt;, un’occasione globale che raduna &lt;strong&gt;appassionati di open source da tutto il mondo&lt;/strong&gt;. Durante l’intero mese di ottobre, gli interessati, a prescindere dal livello di esperienza, avranno l’opportunità di confrontarsi e divertirsi partecipando a diverse sfide.&lt;/p&gt;
+
+&lt;p&gt;Gli ambiti di contributo sono molteplici, spaziando dalla traduzione di testi alla stesura di documentazione, dalla risoluzione di bug alla definizione di nuove funzionalità. I partecipanti saranno chiamati a &lt;strong&gt;proporre soluzioni e modifiche attraverso il sistema di pull request&lt;/strong&gt;, con l’obiettivo di consolidare contributi significativi con il codice esistente. Una volta accuratamente revisionati, tali contributi saranno integrati e fruibili da cittadini, Pubblica Amministrazione e imprese impegnate nella digitalizzazione dei propri servizi.&lt;/p&gt;
+
+&lt;p&gt;Sono molteplici le opportunità di contributo offerte da Developers Italia, che ospita progetti software su GitHub in &lt;a href=&quot;https://github.com/italia&quot;&gt;https://github.com/italia&lt;/a&gt;. Questa iniziativa mira a sostenere lo &lt;strong&gt;sviluppo dei servizi pubblici digitali&lt;/strong&gt;, promuovendo un miglioramento nei rapporti tra cittadini e Pubblica Amministrazione. I progetti riguardano infatti tematiche come SPID, publiccode.yml, OpenAPI (come il validatore di API), il sito e le API di Developers Italia, le attività legate allo sviluppo front-end nei repository di Designers Italia, con sfide che coinvolgono Bootstrap e React.&lt;/p&gt;
+
+&lt;p&gt;Per coloro che desiderano contribuire, è possibile consultare &lt;strong&gt;l’elenco di tutte le issue valide per l’evento&lt;/strong&gt; sulla &lt;a href=&quot;https://developers.italia.it/it/cosa-fare?type=Hacktoberfest&quot;&gt;pagina cosa fare&lt;/a&gt;, che sarà regolarmente aggiornata nel corso dell’iniziativa. Si invita a discutere con i maintainer dei software su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack di Developers Italia&lt;/a&gt; o su &lt;a href=&quot;https://forum.italia.it/&quot;&gt;Forum Italia&lt;/a&gt; e a registrarsi all’evento sul &lt;a href=&quot;https://hacktoberfest.com/&quot;&gt;sito ufficiale di Hacktoberfest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ricordiamo che l’impegno nel contribuire al miglioramento dei servizi pubblici digitali del Paese è aperto tutto l’anno. Il Team di Developers Italia ti aspetta. Unisciti a questa avvincente iniziativa di sviluppo open source!&lt;/p&gt;</content>
+    <published>2023-10-12T13:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="community" />
+    
+    <category term="opensource" />
+    
+
+    <author>
+      <name>Andrea Stagi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/07/11/come-cambia-la-community-di-developers-italia-e-designers-italia</id>
     <title>Come è cambiata la community di Developers Italia e Designers Italia?</title>
