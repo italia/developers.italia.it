@@ -228,4 +228,4 @@ autenticazione resi disponibili da PDND.
 </a>
 
 Utilizza il canale GitHub dedicato per esplorare le specifiche tecniche, aprire
-una issue (segnalazioni).
+una issue (segnalazione).
