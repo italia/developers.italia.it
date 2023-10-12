@@ -85,7 +85,7 @@ Il sistema della Piattaforma dei Contratti Pubblici:
   OpenData e API di accesso.
 
 La Piattaforma dei Contratti Pubblici sostituisce i servizi precedentemente
-erogati dai servizi Simog, smartCIG, FVOE 1.0, dalla 5a Serie Speciale -
+forniti dai servizi Simog, smartCIG, FVOE 1.0, dalla 5a Serie Speciale -
 Contratti Pubblici della Gazzetta Ufficiale, ed offre le ulteriori funzionalità
 per consentire alle Stazioni Appaltanti la pubblicazione a livello europeo
 (TED).
@@ -111,7 +111,7 @@ ai servizi offerti dalla Piattaforma dei Contratti Pubblici di ANAC.
 Per poter operare in interoperabilità le Stazioni Appaltanti devono infatti
 dotarsi di una o più piattaforme digitali certificate (art. 25).
 
-La Piattaforma dei Contratti Pubblici eroga i suoi servizi sottoforma di API e
+La Piattaforma dei Contratti Pubblici fornisce i suoi servizi sottoforma di API e
 utilizza la Piattaforma Digitate Nazionale Dati (PDND) per documentarne e
 autorizzarne la fruizione e l’accesso.
 
@@ -139,7 +139,7 @@ I dati della BDNCP sono resi disponibili alle Pubbliche Amministrazioni
 interessate per l’accesso ai dati strutturati sui Contratti Pubblici mantenuti
 dalla BDNCP.
 
-L’accesso per la Pubblica Amministrazione avviene attraverso i servizi erogati
+L’accesso per la Pubblica Amministrazione avviene attraverso i servizi forniti
 tramite la Piattaforma Digitale Nazionale Dati (PDND) e pubblicati per la
 trasparenza sul portale dell’ANAC, attraverso il quale la collettività può
 fruire dei servizi di analisi self- service BI, OpenData e API disponibili sul
@@ -147,11 +147,11 @@ fruire dei servizi di analisi self- service BI, OpenData e API disponibili sul
 
 ## Architettura dei servizi
 
-I servizi sono organizzati in modo da seguire la successione delle fasi del
+I servizi sono organizzati seguendo la successione delle fasi del
 ciclo di vita digitale dei Contratti Pubblici.
 
 All’interno di ogni fase sono individuate delle azioni che possono essere
-eseguite dagli utenti, o eventi significativi ai fini del monitoraggio di un
+eseguite dagli utenti, o gli eventi significativi ai fini del monitoraggio di un
 contratto.
 
 Il modello dati della Piattaforma dei Contratti Pubblici organizza le
