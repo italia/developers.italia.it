@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v3
       - run: publiccode-crawler crawl
         env:
-          CRAWLER_DATADIR: /tmp/data
           API_BASEURL: "https://api.developers.italia.it/v1"
           API_BEARER_TOKEN: ${{ secrets.API_BEARER_TOKEN }}
 
