@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-10-20T06:03:22+00:00</updated>
+  <updated>2023-10-20T10:42:10+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,74 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2023/10/20/premio-osor-2023-publiccode-yml-tra-i-progetti-finalisti</id>
+    <title>Premio OSOR 2023: publiccode.yml tra i progetti finalisti </title>
+    <updated>2023-10-20T09:00:00+00:00</updated>
+
+    <summary>Un importante riconoscimento dall’Europa  </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/10/20/premio-osor-2023-publiccode-yml-tra-i-progetti-finalisti">&lt;p&gt;&lt;strong&gt;publiccode.yml&lt;/strong&gt;, &lt;a href=&quot;https://github.com/publiccodeyml/publiccode.yml&quot;&gt;lo standard semplice e aperto ideato da Developers
+Italia&lt;/a&gt; per &lt;a href=&quot;https://medium.com/developers-italia/come-e-perch%C3%A9-automatizzare-il-controllo-qualit%C3%A0-nello-sviluppo-software-aab21cf72751&quot;&gt;documentare
+i software e catalogarli secondo caratteristiche e
+licenze&lt;/a&gt;,
+è tra i 6 progetti finalisti dell’&lt;strong&gt;EU Public Services Open Source Achievement
+Awards.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Si tratta dell’iniziativa promossa Osservatorio Open Source (OSOR) della
+Commissione europea per &lt;strong&gt;riconoscere e presentare le eccellenze nel campo delle
+soluzioni e iniziative open source&lt;/strong&gt; sviluppate da o per le pubbliche
+amministrazioni in Europa. L’iniziativa rappresenta &lt;strong&gt;un riconoscimento
+significativo per l’impegno e l’innovazione nel settore dell’open source&lt;/strong&gt; nelle
+pubbliche amministrazioni europee, evidenziando soluzioni che contribuiscono
+all’avanzamento tecnologico e alla collaborazione aperta.&lt;/p&gt;
+
+&lt;p&gt;Dopo attente valutazioni basate sui criteri di selezione, sono state considerate
+ammissibili 92 voci provenienti da 20 Paesi, suddivise in 66 soluzioni e 26
+iniziative.&lt;/p&gt;
+
+&lt;p&gt;Un team di valutazione, composto da due membri del team OSOR e tre esperti della
+Commissione europea, ha selezionato quindi i 22 migliori candidati per la fase
+successiva del concorso.&lt;/p&gt;
+
+&lt;p&gt;Infine, il 6 ottobre  la giuria  ha nominato i &lt;strong&gt;6 progetti&lt;/strong&gt; finalisti prendendo
+in considerazione fattori come l’obiettivo, la determinazione a superare le sfide,
+il contributo alla promozione della democrazia, la trasparenza e la
+partecipazione attiva dei cittadini alla creazione di infrastrutture digitali al
+servizio dei costituenti, l’impatto sulle loro comunità, l’uso efficace delle
+risorse pubbliche e l’approccio alla risoluzione dei problemi.&lt;/p&gt;
+
+&lt;p&gt;La premiazione finale avverrà il &lt;strong&gt;21 novembre a Bruxelles&lt;/strong&gt; durante l’evento “&lt;strong&gt;&lt;a href=&quot;https://osorturns15.eu/&quot;&gt;OSOR
+Turns 15: From Pioneering to Mainstreaming Open Technologies in Public
+Services&lt;/a&gt;&lt;/strong&gt;” in occasione del quindicesimo anniversario
+dell’Osservatorio Open Source della Commissione europea.&lt;/p&gt;
+
+&lt;h3 id=&quot;come-contribuire&quot;&gt;Come contribuire&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Fino al 26 ottobre&lt;/strong&gt; chiunque può votare per il miglior progetto dopo aver
+effettuato l’accesso a Joinup tramite EU Login. Il voto pubblico è aperto: &lt;strong&gt;&lt;a href=&quot;https://joinup.ec.europa.eu/collection/open-source-observatory-osor/osor-community-award-2023-voting&quot;&gt;puoi
+esprimere quindi il tuo voto per la soluzione
+preferita&lt;/a&gt;&lt;/strong&gt;
+e  contribuire così alla scelta del vincitore del premio OSOR
+Community!&lt;/p&gt;</content>
+    <published>2023-10-20T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="community" />
+    
+    <category term="opensource" />
+    
+    <category term="eu" />
+    
+    <category term="osor" />
+    
+
+    <author>
+      <name>Fabio Bonelli</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/10/12/hacktoberfest-2023</id>
     <title>Hacktoberfest 2023</title>
