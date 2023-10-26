@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-10-26T06:03:29+00:00</updated>
+  <updated>2023-10-26T10:56:11+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -57,7 +57,7 @@ dell’Osservatorio Open Source della Commissione europea.&lt;/p&gt;
 
 &lt;h3 id=&quot;come-contribuire&quot;&gt;Come contribuire&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Fino al 26 ottobre&lt;/strong&gt; chiunque può votare per il miglior progetto dopo aver
+&lt;p&gt;&lt;strong&gt;Fino al 30 ottobre&lt;/strong&gt; chiunque può votare per il miglior progetto dopo aver
 effettuato l’accesso a Joinup tramite EU Login. Il voto pubblico è aperto: &lt;strong&gt;&lt;a href=&quot;https://joinup.ec.europa.eu/collection/open-source-observatory-osor/osor-community-award-2023-voting&quot;&gt;puoi
 esprimere quindi il tuo voto per la soluzione
 preferita&lt;/a&gt;&lt;/strong&gt;
