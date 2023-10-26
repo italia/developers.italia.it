@@ -48,7 +48,7 @@ dell'Osservatorio Open Source della Commissione europea.
 
 ### Come contribuire
 
-**Fino al 26 ottobre** chiunque può votare per il miglior progetto dopo aver
+**Fino al 30 ottobre** chiunque può votare per il miglior progetto dopo aver
 effettuato l'accesso a Joinup tramite EU Login. Il voto pubblico è aperto: **[puoi
 esprimere quindi il tuo voto per la soluzione
 preferita](https://joinup.ec.europa.eu/collection/open-source-observatory-osor/osor-community-award-2023-voting)**
