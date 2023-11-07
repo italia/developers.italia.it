@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202311060603" rel="stylesheet">
+  <link href="/dist/main.css?202311070602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -703,7 +703,7 @@ spagnola di democrazia partecipativa.
           <p>Vitality:</p>
           <p class="score d-inline-block"> 69%</p>
           
-          <div id="softwareChart" data-vitality='[69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,75,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69]'>
+          <div id="softwareChart" data-vitality='[69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,75,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -726,7 +726,7 @@ spagnola di democrazia partecipativa.
             <p>Development status: 
 
 
-<span class="status"> beta </span> 
+<span class="status"> stable </span> 
  </p>
           </div>
         </div>
@@ -805,7 +805,7 @@ spagnola di democrazia partecipativa.
           <div id="usedBy">
             <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
-              Used by 1
+              Used by 2
               
               administrations
               
@@ -815,6 +815,8 @@ spagnola di democrazia partecipativa.
             <div class="collapse" id="by-amministration">
               
               <p> Regione Emilia-Romagna </p>
+              
+              <p> Regione Sardegna </p>
               
             </div>
           </div>
@@ -947,18 +949,16 @@ spagnola di democrazia partecipativa.
                   
                   
                   
-                  
-                  
-                  
-                  
-                  
-                  
                       
                       
                       <a href="/en/spid" class="enabling_platforms">
                         SPID
                       </a>
                       
+                      
+                      <a href="/en/cie" class="enabling_platforms">
+                        CIE
+                      </a>
                       
                       
                       
@@ -1008,7 +1008,7 @@ spagnola di democrazia partecipativa.
                           
 
 
-    spid-rails 
+    Decidim-pua 
 
 <br />
                           
@@ -1065,20 +1065,22 @@ aspetti:</p>
 
 <ul>
   <li>
-    <p>Utilizzo del<a href="https://www.spid.gov.it/"> ++Sistema Pubblico di Identità Digitale
-(SPID)++</a> attraverso il middleware open source<a href="https://github.com/italia/spid-rails">
-++SPID-Rails++</a> ;</p>
+    <p>Utilizzo del[ ++Sistema Pubblico di Identità Digitale (Spid),
+della Carta di Identità Elettronica (CIE)
+e della Carta Nazionale dei Servizi (CNS) attraverso il Punto Unico d’Accesso (PUA) ++]
+con l’apposito middleware open source [https://github.com/dipartimentofunzionepubblica/decidim-module-pua];</p>
   </li>
   <li>
     <p>Aspetto grafico ridefinito via SCSS;</p>
   </li>
   <li>
-    <p>Modifiche sul profilo dell’utente per soddisfare le indicazioni del GDPR
-;</p>
+    <p>Modifiche sul profilo dell’utente per soddisfare le indicazioni del GDPR con l’apposito modulo open-source
+[https://github.com/dipartimentofunzionepubblica/decidim-module-privacy];</p>
   </li>
   <li>
-    <p>Integrazione del modulo community<a href="https://github.com/mainio/decidim-module-term_customizer">
-++Term-Customizer++</a>;</p>
+    <p>Integrazione di moduli community:
+<a href="https://github.com/mainio/decidim-module-term_customizer">++Term-Customizer++</a>;
+<a href="https://github.com/Platoniq/decidim-module-decidim_awesome">++Decidim-Awesome++</a>;</p>
   </li>
   <li>
     <p>Installazione in modalità multi-tenant.</p>
