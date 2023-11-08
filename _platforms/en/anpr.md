@@ -1,7 +1,7 @@
 ---
 title: ANPR
 logo: /assets/images/logo-anpr@2x.png
-external_website: https://www.anpr.interno.it/portale/
+external_website: https://anagrafenazionale.interno.it
 subtitle: National Registry of Resident Population
 payoff: The registry becomes one and digital
 description: >
