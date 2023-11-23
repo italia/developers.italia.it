@@ -116,7 +116,7 @@ Since 2022, a unique and coherent desing system has been established by building
 
 The UI Kit is a set of **ready-made visual components** to build the interface of a site or an app, following the guidelines for the digital services of the Public Administration, national and international best practices.
 
-The kit, built in Figma, is defined in **open and collaborative way on Github**, together with the designers community. Figma releases are versioned in Sketch to maintain compatibility with open file formats. It isand defined in an open and collaborative way on GitHub, together with the designers community. The UI Kit is the reference point for patterns and components to be implemented with the web development kits listed below.
+The kit, built in Figma, is defined in **open and collaborative way on Github**, together with the designers community. Figma releases are versioned in Sketch to maintain compatibility with open file formats. It is defined in an open and collaborative way on GitHub, together with the designers community. The UI Kit is the reference point for patterns and components to be implemented with the web development kits listed below.
 
 * [Introduction to the UI Kit](https://designers.italia.it/design-system/come-iniziare/per-designer/){:target="_blank"}
 * [UI Kit components and patterns](https://www.figma.com/community/file/1105848677422572920/ui-kit-italia-v3-1-0){:target="_blank"}
