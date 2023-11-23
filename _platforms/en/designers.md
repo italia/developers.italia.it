@@ -128,7 +128,7 @@ For questions and discussions about the UI Kit, on [Developers Italia Slack](htt
 
 ## Web Development Kit
 
-The [Web Development Kits](https://designers.italia.it/kit/web-development-kit/){:target="_blank"} are a set of tools for the front end development of websites and web applications. They are HTML, CSS and Javascript libraries that allow you to create sites that comply with the Design Guidelines and code the provisions of the UI Kit. As of today, the most stable, updated and mature web development kit is Bootstrap Italia, based on the open-source library Bootstrap 4. They all have been included as part of the design system since 2022. 
+The [Web Development Kits](https://designers.italia.it/kit/web-development-kit/){:target="_blank"} are a set of tools for the front end development of websites and web applications. They are HTML, CSS and Javascript libraries that allow you to create sites that comply with the design guidelines and code the provisions of the UI Kit. As of today, the most stable, updated and mature web development kit is Bootstrap Italia, based on the open-source library Bootstrap 4. They all have been included as part of the design system since 2022. 
 
 ### Bootstrap Italia
 
