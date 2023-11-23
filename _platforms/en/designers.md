@@ -22,7 +22,64 @@ socials:
     name: medium
     icon: medium
     link: //medium.com/designers-italia
-
+resources:
+  - The Design System for the Italian Public Administration:
+    - title: The Design System for the Italian Public Administration
+      desc: Resources and guidelines to build high quality, efficient and accessible websites and digital services
+      url: https://designers.italia.it/design-system/
+      icon: designers-italia
+    - title: Primer
+      desc: "From the first step to design with the UI kit in Figma and Sketch and development libraries."
+      icon: designers-italia
+      url: https://designers.italia.it/design-system/come-iniziare/
+    - title: UI kit
+      url: https://github.com/italia/design-ui-kit
+      desc: "Available in Figma and Sketch conversion"
+      icon: github
+    - title: Figma UI Kit preview
+      desc: If you want to see all components before using it
+      url: https://www.figma.com/community/file/1105848677422572920/ui-kit-italia-v3-2-0
+      icon: pencil
+    - title: Repository Bootstrap Italia
+      desc: "The Bootstrap Italia library is the easier and safest to way to build modern, inclusive and easy to maintein public interfaces."
+      url: https://github.com/italia/bootstrap-italia/
+      icon: github
+    - title: Repository React Design Kit
+      desc: "A set of open-source React components, based on the UI Kit and the Bootstrap Italia library"
+      url: https://github.com/italia/design-react-kit
+      icon: github
+    - title: Repository Angular Design Kit
+      desc: "A set of open-source Angular components, based on the UI Kit and the Bootstrap Italia library"
+      url: https://github.com/italia/design-angular-kit
+      icon: github
+  - Municipality website and digital services templates:
+    - title: The municipality website and digital services templates on Designers Italia
+      desc: "Free and open templates for information architecture, layouts and interfaces, CMS and documentation"
+      url: https://designers.italia.it/modelli/comuni/
+      icon: designers-italia
+    - title: HTML templates for municipality website and digital services
+      url: https://github.com/italia/design-comuni-pagine-statiche
+      icon: github
+    - title: Project repository for municipality website and digital services
+      url: https://github.com/italia/design-comuni-prototipi
+      icon: github
+    - title: Project documentation for Municipality website and digital services
+      url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      icon: file
+  - School websites templates:
+    - title: The School website templates on Designers Italia
+      desc: "Free and open templates for information architecture, layouts and interfaces"
+      url: https://designers.italia.it/kit/scuole/
+      icon: designers-italia
+    - title: The Wordpress theme for schools
+      url: https://github.com/italia/design-scuole-wordpress-theme
+      icon: github
+    - title: HTML templates for school websites
+      url: https://github.com/italia/design-scuole-pagine-statiche/
+      icon: github
+    - title: Project documentation for schools
+      url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/
+      icon: file
 
 redirect_from:
   - /en/design
@@ -57,7 +114,9 @@ Since 2022, a unique and coherent desing system has been established by building
 
 ## UI kit
 
-The UI Kit is a set of ready-made visual components to build the interface of a site or an app, following the guidelines for the digital services of the Public Administration. The kit is built with Sketch and defined in an open and collaborative way on GitHub, together with the designers community. The UI Kit is the reference point for UI components and patterns. It has been included as part of the design system since 2022. 
+The UI Kit is a set of **ready-made visual components** to build the interface of a site or an app, following the guidelines for the digital services of the Public Administration, national and international best practices.
+
+The kit, built in Figma, is defined in **open and collaborative way on Github**, together with the designers community. Figma releases are versioned in Sketch to maintain compatibility with open file formats. It isand defined in an open and collaborative way on GitHub, together with the designers community. The UI Kit is the reference point for patterns and components to be implemented with the web development kits listed below.
 
 * [Introduction to the UI Kit](https://designers.italia.it/design-system/come-iniziare/per-designer/){:target="_blank"}
 * [UI Kit components and patterns](https://www.figma.com/community/file/1105848677422572920/ui-kit-italia-v3-1-0){:target="_blank"}
@@ -80,11 +139,7 @@ The Bootstrap 4 based kit is the reference point for the development of Public A
 * [Bootstrap Italia Playground to start using Bootstrap Italia](https://github.com/italia/bootstrap-italia-playground){:target="_blank"};
 * [Example of a template to start with](https://italia.github.io/bootstrap-italia/docs/esempi/template-vuoto/){:target="_blank"}
 
-Bootstrap Italia is already used on some successful projects, such as the [prototype of the website of the Municipality of Cagliari](https://italia.github.io/design-comuni-prototipi/){:target="_blank"} and the [Docs Italia](https://docs.italia.it/){:target="_blank"} website.
-
-Other projects, such as sites for schools, themes for the main CMS (Wordpress, Drupal, Joomla, Plone, Entando, etc.) and generators of static sites (Hugo, Jekyll, etc.), are under evaluation or planning. The only one currently available, still under construction, is the [Wordpress Theme](https://github.com/italia/design-wordpress-theme/){:target="_blank"}.
-
-To report a site, an app or a theme created with Bootstrap Italia, [you can open an issue](https://github.com/italia/bootstrap-italia/issues){:target="_blank"} on the Bootstrap Italia repository or [write a post on the forum](https://forum.italia.it/c/design/esempi-linee-guida){:target="_blank"}!
+**Contribute to the design system's growth** by reporting a site, an app or a theme created with Bootstrap Italia. [You can open an issue](https://github.com/italia/bootstrap-italia/issues){:target="_blank"} on the Bootstrap Italia repository or [write a post on the forum](https://forum.italia.it/c/design/esempi-linee-guida){:target="_blank"}!
 
 ### Design React Kit
 
@@ -100,11 +155,9 @@ The project aims to build a set of components and a common presentation layer ba
 * [Design Angular Kit Documentation](https://italia.github.io/design-angular-kit/){:target="_blank"}
 * [GitHub Repository](https://github.com/italia/design-angular-kit){:target="_blank"}
 
-The contributions on the kits are very important, so if you think you can help with feedback, useful information, bug reports or code, please help!
+The contributions on the kits are very important and welcome. Discover [how to contribute](https://designers.italia.it/design-system/come-contribuire/){:target="_blank"} with your feedbacks, useful information, bug reports or code.
 
-For questions and discussions on the Web Development Kits, you can refer to the channel [#design-devel](https://developersitalia.slack.com/messages/C7VPAUVB3/){:target="_blank"}.
-
-### Web Toolkit
+## Deprecated kits
 
 The Web Toolkit was the first project meant to help the creation of websites for the PA: it is already used by many websites, especially some municipalities and ministries. The feedback received on the use of the Web Toolkit by organizations and suppliers contributed to the definition and creation of the Bootstrap Italia reference kit first, and the Desisgn System later.
 
