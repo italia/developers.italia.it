@@ -159,7 +159,7 @@ The contributions on the kits are very important and welcome. Discover [how to c
 
 ## Deprecated kits
 
-The Web Toolkit was the first project meant to help the creation of websites for the PA: it is already used by many websites, especially some municipalities and ministries. The feedback received on the use of the Web Toolkit by organizations and suppliers contributed to the definition and creation of the Bootstrap Italia reference kit first, and the Desisgn System later.
+The Web Toolkit was the first project meant to help the creation of websites for the PA: it is already used by many websites, especially some municipalities and ministries. The feedback received on the use of the Web Toolkit by organizations and suppliers contributed to the definition and creation of the Bootstrap Italia reference kit first, and the design system later.
 
 For this reason, the Web Toolkit is no longer the subject of significant updates since 2017.
 
