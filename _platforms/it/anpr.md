@@ -1,7 +1,7 @@
 ---
 title: ANPR
 logo: /assets/images/logo-anpr@2x.png
-external_website: https://www.anpr.interno.it/portale/
+external_website: https://anagrafenazionale.interno.it
 subtitle: Anagrafe Nazionale della Popolazione Residente
 payoff: L'anagrafe diventa unica e digitale
 description: Un'unica anagrafe centrale, raggiungibile anche via API, che mantiene le informazioni aggiornate su residenza, stato di famiglia, e molto altro.

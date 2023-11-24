@@ -166,6 +166,15 @@ For this reason, the Web Toolkit is no longer the subject of significant updates
 * [Web Toolkit Documentation](https://italia.github.io/design-web-toolkit/){:target="_blank"}
 * [GitHub Repository](https://github.com/italia/design-web-toolkit){:target="_blank"}
 
+### Web Toolkit
+
+The Web Toolkit was the first project meant to help the creation of websites for the PA: it is already used by many websites, especially some municipalities and ministries. The feedback received on the use of the Web Toolkit by organizations and suppliers contributed to the definition and creation of the Bootstrap Italia reference kit first, and the Desisgn System later.
+
+For this reason, the Web Toolkit is no longer the subject of significant updates since 2017.
+
+* [Web Toolkit Documentation](https://italia.github.io/design-web-toolkit/){:target="_blank"}
+* [GitHub Repository](https://github.com/italia/design-web-toolkit){:target="_blank"}
+
 ## Other useful design kits
 
 Web development is only part of the service processing cycle according to the Design Guidelines. Designers Italia provides kits covering the entire design cycle of a service, from research to information architecture, passing through tests with users. For more information, you can start from the [Kit page on the Designers Italia website](https://designers.italia.it/kit/){:target="_blank"}.
