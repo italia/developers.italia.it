@@ -89,7 +89,7 @@ redirect_from:
 
 In questa pagina presentiamo il *design system* realizzato per la Pubblica Amministrazione italiana e gli strumenti di Designers Italia a disposizione degli sviluppatori.
 
-L’obiettivo è aiutare la Pubblica Amministrazione a risparmiare tempo e risorse, grazie a una **serie di strumenti per la progettazione e lo sviluppo di siti e servizi pubblici digitali** a misura di cittadino, che possano essere allo stesso tempo moderni, efficaci, inclusivi e facilmente manutenibili. Alcuni di questi progetti sono già attivi, altri sono visionabili nel [piano attività (https://designers.italia.it/community/piano-attivita/){:target="_blank"}. Per rimanere aggiornato con l'evoluzione dei progetti e gli eventi della community, ti raccomandiamo di registrarti alla newsletter di [Designers Italia](https://designers.italia.it/#iscrivitiNewsletter){:target="_blank"}
+L’obiettivo è aiutare la Pubblica Amministrazione a risparmiare tempo e risorse, grazie a una **serie di strumenti per la progettazione e lo sviluppo di siti e servizi pubblici digitali** a misura di cittadino, che possano essere allo stesso tempo moderni, efficaci, inclusivi e facilmente manutenibili. Alcuni di questi progetti sono già attivi, altri sono visionabili nel [piano attività](https://designers.italia.it/community/piano-attivita/){:target="_blank"}. Per rimanere aggiornato con l'evoluzione dei progetti e gli eventi della community, ti raccomandiamo di registrarti alla newsletter di [Designers Italia](https://designers.italia.it/#iscrivitiNewsletter){:target="_blank"}
 
 Il sito [designers.italia.it](https://designers.italia.it/){:target="_blank"} contiene:
 
