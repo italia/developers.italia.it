@@ -3,7 +3,7 @@ title: Designers Italia
 subtitle: Il design system della Pubblica Amministrazione italiana
 logo: /assets/images/logo-design@2x.png
 external_website: https://designers.italia.it
-payoff: Per semplificare la vita dei cittadini
+payoff: Per semplificare la vita delle persone
 description: "Designers Italia è il punto di riferimento per la progettazione dei servizi pubblici digitali: guide, strumenti, un design system e una community per facilitare processi di design centrati sui bisogni delle persone"
 lang: it
 ref:
