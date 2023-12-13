@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202312120603" rel="stylesheet">
+  <link href="/dist/main.css?202312130603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -655,7 +655,7 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Web Service built on top of hypoinverse, a software used to Locate earthquakes.
+            Web Service specifically designed to expose seismic localization software "hyp2000" and magnitude calculation software "PyML" through APIs
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -714,7 +714,7 @@
           <p>Vitalità:</p>
           <p class="score d-inline-block"> 57%</p>
           
-          <div id="softwareChart" data-vitality='[56,56,56,68,56,56,68,56,56,56,56,68,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,74,62,56,56,56,56,56,56,56]'>
+          <div id="softwareChart" data-vitality='[56,56,68,56,56,68,56,56,56,56,68,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,56,74,68,56,56,56,56,56,56,56,56]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -803,7 +803,7 @@
           <div class="function-list">
             
             
-            <p> Web Service built on top of hypoinverse </p>
+            <p> Web Service built on top of hyp2000 and pyml </p>
             
             <p> Software used to locate earthquakes and determine magnitudes in a local or regional seismic network </p>
             
@@ -1026,10 +1026,10 @@
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Hypoinverse is software used to Locate earthquakes and determine magnitudes in a local or regional seismic network.
-More info aboute Hypoinverse, here: https://www.usgs.gov/software/hypoinverse-earthquake-location
-At INGV we build stand-alone Docker to deploy “hyp2000” (https://github.com/ingv/hyp2000) and on top of that was buit a Web Service; It gets in input a JSON file with phases and amplitudes.  For each station name, It searches the metadata (like Lat and Long) on the FDSN-StationXML Web Services around the world.
-The output could be in a standard format like ARC and PRT or in JSON.</p>
+                <p>Apollo is a Web Service developed using Laravel, specifically designed to expose seismic localization software “hyp2000” and magnitude calculation software “PyML” through APIs.  It receives an input JSON file (one for each service, ‘hyp2000’ and ‘PyML’) containing phases and amplitudes. For each seismic station name it queries metadata, such as latitude and longitude, from the FDSN-StationXML Web Services globally.
+The key features of Apollo are its OpenAPI-based development, JSON communication, containerization, and open-source nature.
+More info aboute “hyp2000”, here: https://github.com/ingv/hyp2000
+More info aboute “PyML”, here: https://github.com/ingv/pyml</p>
 
               </div>
             </div>
