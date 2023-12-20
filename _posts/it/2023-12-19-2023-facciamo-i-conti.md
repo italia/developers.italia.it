@@ -6,7 +6,7 @@ date: 2023-12-19 11:00:00 +0200
 tags: developers community opensource partecipazione
 categories: news
 author: Michela Gabrieli
-image: https://developers.italia.it/assets/images/posts/2023-12-19/osor-award-developers-2023.jpg
+image: /assets/images/posts/2023-12-19/osor-award-developers-2023.jpg
 locale: it
 ---
 
@@ -15,8 +15,6 @@ Un anno ricco di sfide e opportunità: il 2023 si è rivelato un periodo
 importante per la nostra comunità e le nostre iniziative. Hai perso qualche
 aggiornamento? In questa news ripercorriamo insieme i temi chiave e le attività
 a cui ci siamo dedicati.
-
-![OSOR Award - Finalisti 2023](/assets/images/posts/2023-12-19/osor-award-developers-2023.jpg)
 
 ### Catalogo del riuso
 
