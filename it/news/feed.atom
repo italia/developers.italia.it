@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2023-12-21T06:02:54+00:00</updated>
+  <updated>2023-12-21T13:29:28+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -90,7 +90,7 @@ che, sfruttando le potenzialità della semantica dei dati, permette la
 realizzazione di API per la condivisione di informazioni tramite PDND.&lt;/p&gt;
 
 &lt;p&gt;L’accesso alle risorse del catalogo è libero, ma un uso più frequente è
-prevedibile dal parte degli sviluppatori e i ricercatori di enti pubblici e
+prevedibile da parte degli sviluppatori e i ricercatori di enti pubblici e
 privati. I principali contributori al catalogo sono gli enti pubblici che stanno
 investendo in servizi digitali da esporre nella PDND e che potrebbero
 beneficiare del riuso di risorse semantiche già esistenti. Attualmente sul
