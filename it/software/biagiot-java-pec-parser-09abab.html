@@ -46,7 +46,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202402260602" rel="stylesheet">
+  <link href="/dist/main.css?202402270602" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -647,18 +647,16 @@
         
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">3.0.1</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">3.0.2</span>
         </h1>
         <div class="abstract-software">
           <h2>
-            Mail/PEC Parser
+            PEC/Mail Parser
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Libreria per l'elaborazione di messaggi di Posta Elettronica Certificata
-
-
-(e messaggi di posta ordinaria)
+            Utility per l'elaborazione di messaggi di Posta Elettronica Certificata (e
+messaggi di posta ordinaria)
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -677,16 +675,7 @@
 
 <li class="home-software-tags__item  ">
         <a
-                href="/it/search?categories=email-management">gestione email</a>
-</li>
-
-              
-              
-
-
-<li class="home-software-tags__item  ">
-        <a
-                href="/it/search?categories=instant-messaging">messaggistica istantanea</a>
+                href="/it/search?categories=contact-management">gestione contatti</a>
 </li>
 
               
@@ -722,9 +711,9 @@
       <div class="drops-details">
         <div class="vitality-score">
           <p>Vitalità:</p>
-          <p class="score d-inline-block"> 65%</p>
+          <p class="score d-inline-block"> 66%</p>
           
-          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65]'>
+          <div id="softwareChart" data-vitality='[65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,75,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69,69]'>
             <canvas id="vitalityChart"></canvas>
           </div>
           
@@ -754,6 +743,18 @@
       </div>
 
       <div class="drops-details">
+        
+        <div class="goto">
+          <p>
+            <a
+              href="https://github.com/biagioT/java-pec-parser"
+              aria-label="Vai al sito del software (collegamento esterno)"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Sito web del progetto &rarr;</a>
+          </p>
+        </div>
         
 
         
@@ -801,10 +802,8 @@
           <div class="function-list">
             
             
-            <p> Elaborazione di messaggi di posta elettronica certificata (PEC) e
-ricevute </p>
-            
-            <p> Elaborazione di messaggi di posta elettronica ordinaria </p>
+            <p> Elaborazione di messaggi di posta elettronica certificata PEC, ricevute
+PEC e posta ordinaria. </p>
             
             
           </div>
@@ -835,16 +834,7 @@ ricevute </p>
 
 <li class="home-software-tags__item  ">
         <a
-                href="/it/search?categories=email-management">gestione email</a>
-</li>
-
-    
-    
-
-
-<li class="home-software-tags__item  ">
-        <a
-                href="/it/search?categories=instant-messaging">messaggistica istantanea</a>
+                href="/it/search?categories=contact-management">gestione contatti</a>
 </li>
 
     
@@ -866,11 +856,11 @@ ricevute </p>
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">3.0.1</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">3.0.2</span>
                 
               </h2>
               <h2>
-                Mail/PEC Parser
+                PEC/Mail Parser
               </h2>
             </div>
           </div>
@@ -879,9 +869,9 @@ ricevute </p>
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2022-06-17
+                  2024-02-04
                   
-                  (3.0.1)
+                  (3.0.2)
                   
                 </p>
               </div>
@@ -1003,20 +993,8 @@ ricevute </p>
                 <p>
                   <span class="label">Lista dipendenze</span>
                   
-                      
-                          <span class="badge badge-pill badge-primary">OSS</span><br />
-                          
-                          
-
-
-    Java 
-
-<br />
-                          
-                      
-                      
-                      
-                   
+                  Nessuna
+                  
                 </p>
               </div>
             </div>
@@ -1044,26 +1022,12 @@ ricevute </p>
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Libreria JAVA per l’elaborazione di messaggi di Posta Elettronica
-Certificata (e messaggi di posta ordinaria).</p>
+                <h3 id="utilizzo">Utilizzo</h3>
 
-<p>​</p>
-
-<p><strong>Utilizzo</strong>:</p>
-
-<p>++Dipendenza Maven++:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;dependency&gt;
-</code></pre></div></div>
-<groupId>app.tozzi.mail</groupId>
-<artifactId>pec-parser</artifactId>
-<version>3.0.1</version>
-<p>&lt;/dependency&gt;</p>
-
-<p>++Parsing++:</p>
+<h5 id="parsing">Parsing</h5>
 
 <p>La libreria offre tre metodi della classe
-<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/parser/PECMessageParser.java">PECMessageParser</a>
+<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/parser/PECMessageParser.java">++PECMessageParser++</a>
 per il parsing di mail/PEC:</p>
 
 <ol>
@@ -1076,14 +1040,14 @@ un oggetto <em>javax.mail.internet.MimeMessage</em></p>
 <em>java.io.File</em> , ovvero il file EML</p>
   </li>
   <li>
-    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream)</code>- elaborazione a partire
-dall’oggetto <em>java.io.InputStream</em> rappresentante lo stream EML</p>
+    <p><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream)</code> - elaborazione a partire
+dall’oggetto_java.io.InputStream_ rappresentante lo stream EML</p>
   </li>
 </ol>
 
-<p>++Istanza PECParser++:</p>
+<h5 id="istanza-pecparser">Istanza PECParser</h5>
 
-<p>E’ possibile creare una istanza di PECParser in due modi:</p>
+<p>E’ possibile creare una istanza di PECMessageParser in due modi:</p>
 
 <ol>
   <li>
@@ -1093,33 +1057,33 @@ elaborazione del <em>MimeMessage</em></p>
   </li>
   <li>
     <p><code class="language-plaintext highlighter-rouge">PECMessageParser getInstance()</code> - modalità default, vengono utilizzate
-le proprietà di sistema (<code class="language-plaintext highlighter-rouge">System.getProperties()</code>)</p>
+le proprietà di sistema (<em>System.getProperties()</em>)</p>
   </li>
 </ol>
 
-<p>++Messaggio++:</p>
+<h5 id="messaggio">Messaggio</h5>
 
 <p>L’oggetto
-<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Messaggio.java">Messaggio</a>,
+<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Messaggio.java">++Messaggio++</a>,
 risultato dell’elaborazione, conterrà:</p>
 
 <ul>
   <li>
     <p>Busta di trasporto
-(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Busta.java">Busta</a>)</p>
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Busta.java">++Busta++</a>)</p>
   </li>
   <li>
     <p>Eventuale messaggio di Posta Elettronica Certificata
-(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/PEC.java">PEC</a>)</p>
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/PEC.java">++PEC++</a>)</p>
   </li>
   <li>
     <p>Eventuale ricevuta
-(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/RicevutaPEC.java">RicevutaPEC</a>)</p>
+(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/RicevutaPEC.java">++RicevutaPEC++</a>)</p>
   </li>
 </ul>
 
 <p>Attraverso i metodi di utility offerti dalla classe
-<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/util/MessageUtils.java">MessageUtils</a>
+<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/util/MessageUtils.java">++MessageUtils++</a>
 è possibile risalire al tipo di messaggio:</p>
 
 <ul>
@@ -1134,7 +1098,7 @@ risultato dell’elaborazione, conterrà:</p>
   </li>
 </ul>
 
-<p>Il messaggio infatti viene elaborato anche se non PEC. In questo caso:</p>
+<p>Il messaggio infatti viene elaborato anche se non PEC:</p>
 
 <ul>
   <li>
@@ -1148,32 +1112,32 @@ caso l’oggetto <code class="language-plaintext highlighter-rouge">Busta</code>
   </li>
 </ul>
 
-<p>​</p>
-
-<p><strong>Altro</strong></p>
-
-<ul>
-  <li>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
-codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUEncode</a> (vedi
-Requisiti).</li>
-</ul>
-
-<p>​</p>
-
-<p><strong>Requisiti</strong></p>
+<h3 id="requisiti">Requisiti</h3>
 
 <ul>
   <li>Java 8 (o versioni successive)</li>
 </ul>
 
-<p>​</p>
-
-<p><strong>Specifiche AGID</strong></p>
+<h3 id="altro">Altro</h3>
 
 <ul>
-  <li><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">Regole tecniche del servizio di trasmissione di documenti informatici
-mediante posta elettronica
-certificata</a>.</li>
+  <li>
+    <p>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
+codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">++UUencode++</a></p>
+  </li>
+  <li>
+    <p>La libreria è disponibile nel <a href="https://developers.italia.it/it/software/biagiot-java-pec-parser-09abab">++catalogo Open Source di terze parti di
+Developers
+Italia++</a>.</p>
+  </li>
+</ul>
+
+<h3 id="specifiche">Specifiche</h3>
+
+<ul>
+  <li>Regole tecniche del servizio di trasmissione di documenti informatici
+mediante posta elettronica certificata:
+<a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">++pec_regole_tecniche_dm_2-nov-2005.pdf++</a></li>
 </ul>
 
               </div>
