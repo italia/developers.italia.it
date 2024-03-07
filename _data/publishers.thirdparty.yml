@@ -180,3 +180,7 @@
 - name: "Gzoom"
   repos:
     - "https://bitbucket.org/mapsgroupID/maps-gzoom"
+
+- name: "Interfacer"
+  repos:
+    - "https://github.com/interfacerproject/interfacer-docs"
