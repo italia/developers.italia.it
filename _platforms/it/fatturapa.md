@@ -17,7 +17,7 @@ owners:
       url: https://www.agenziaentrate.gov.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
   - SDK:
     - title: SDK per PHP

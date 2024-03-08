@@ -17,7 +17,7 @@ github_team: cie
 abilitante: true
 owners:
     - name: Ministry of the Interior
-      url: http://www.interno.gov.it/
+      url: https://www.interno.gov.it/
 managers:
     - name: Istituto Poligrafico e Zecca dello Stato
       url: https://www.ipzs.it/
@@ -100,7 +100,7 @@ resources:
 
 ## Intro
 
-The [Electronic Identity Card](http://www.cartaidentita.interno.gov.it){:target="_blank"}
+The [Electronic Identity Card](https://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) version 3.0 is already **distributed in more than 90% of the Italian territory** to citizens who ask for a new identity card or renew an expired/lost one.
 
 The CIE is not only an identity card, but it's also a technology that enables new digital services for citizens, that can be used also via smartphones and tablets, thanks to the **NFC microchip**. Every Italian citizen, in a few years, will carry a unique and secure NFC token in their pockets. This will enable several applications:

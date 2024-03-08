@@ -16,10 +16,10 @@ layout: platform
 github_team: 18app
 owners:
     - name: Ministero per i Beni e le Attività Culturali
-      url: http://www.beniculturali.it/
+      url: https://www.beniculturali.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
     - Documentazione:
         - title: Guida per gli esercenti
