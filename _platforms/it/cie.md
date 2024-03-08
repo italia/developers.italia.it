@@ -124,7 +124,7 @@ resources:
 
 ## Intro
 
-La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it){:target="_blank"}
+La [Carta d'Identità Elettronica](https://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) versione 3.0 viene già **distribuita in oltre il 90% del territorio italiano** a chiunque chieda o rinnovi la carta d'identità.
 
 La CIE non è solo un documento d’identità, ma una tecnologia utile per la

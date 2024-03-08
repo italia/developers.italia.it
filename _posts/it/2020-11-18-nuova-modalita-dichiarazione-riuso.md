@@ -77,7 +77,7 @@ soluzione.
 software open source e dichiarando il riuso di almeno una delle 159
 soluzioni disponibili a catalogo**. Queste ed altre informazioni sono
 sempre consultabili in tempo reale grazie alla
-[Dashboard](http://developers.italia.it/it/dashboard) dedicata.
+[Dashboard](https://developers.italia.it/it/dashboard) dedicata.
 
 Vuoi scoprire di più? Segui [le
 istruzioni](https://developers.italia.it/it/riuso/dichiarazione) passo per

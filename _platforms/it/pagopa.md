@@ -15,7 +15,7 @@ layout: platform
 abilitante: true
 owners:
     - name: PagoPA S.p.A.
-      url: http://www.pagopa.it/
+      url: https://www.pagopa.it/
 resources:
     - Documentazione:
       - title: Documentazione per gli enti

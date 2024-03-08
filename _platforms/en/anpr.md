@@ -19,10 +19,10 @@ github_team: anpr
 abilitante: true
 owners:
     - name: Ministry of the Interior
-      url: http://www.interno.gov.it/
+      url: https://www.interno.gov.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
     - Documentation:
         - title: Technical documentation and reference tables
