@@ -107,7 +107,7 @@ roberto:
   desc:
   pic: /assets/images/ioggstream.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -200,7 +200,7 @@ michela:
   desc:
   pic: /assets/images/michela.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     twitter:
       name: twitter
