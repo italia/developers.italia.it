@@ -11,7 +11,7 @@ download-data:
 	curl -w %{http_code} -s -o /dev/null https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json | grep 200
 
 bundle-setup:
-	gem install bundler:2.3.24
+	gem install bundler:2.5.4
 
 bundle-install: bundle-setup
 	bundle config set path vendor/
@@ -25,7 +25,7 @@ test:
 	npm run lint
 	npm run test
 	scripts/pa11y.sh
-	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+	bundle exec htmlproofer ./_site --allow-missing-href --ignore-missing-alt --only-4xx --no-enforce-https --disable-external
 
 local:
 	bundle config set path vendor/
@@ -35,6 +35,6 @@ jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 	NODE_ENV=production npm run build
 include-npm-deps:
-	npm ci
+	npm ci --legacy-peer-deps
 build: | bundle-install-deployment include-npm-deps download-data jekyll-build
 build-test: | build test
