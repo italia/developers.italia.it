@@ -51,10 +51,18 @@ layout: default
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
-              {% for tag in page.popularCategories limit: 3 %}
-              {% include set-tag.html tag=tag %}
+              {% assign deactive = false %}
+              {% for tag in page.publiccode.categories %}
+                {% if forloop.index > 5 %}
+                  {% assign deactive = true %}
+                {% endif %}
+
+                {% include set-tag.html tag=tag deactive=deactive %}
               {% endfor %}
             </ul>
+            {% if page.publiccode.categories.size > 5 %}
+            <a href="#" id="moreTags">{{ t.software.show_all }}...</a>
+            {% endif %}
           </div>
           <div class="row legal-main-info">
             <div class="col-sm">
