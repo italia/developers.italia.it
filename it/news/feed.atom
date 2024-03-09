@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2024-03-09T06:02:48+00:00</updated>
+  <updated>2024-03-09T12:18:48+00:00</updated>
 
-  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
   <link href="https://developers.italia.it/" rel="alternate" type="text/html"/>
   <subtitle>Sviluppiamo i servizi pubblici, insieme</subtitle>
@@ -260,7 +260,7 @@ Community!&lt;/p&gt;</content>
     <title>Hacktoberfest 2023</title>
     <updated>2023-10-12T13:00:00+00:00</updated>
 
-    <summary>Dai il tuo contributo all'Open Source </summary>
+    <summary>Dai il tuo contributo all&apos;Open Source </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2023/10/12/hacktoberfest-2023">&lt;p&gt;Developers Italia parteciperà anche quest’anno all’evento &lt;a href=&quot;https://hacktoberfest.com/&quot;&gt;Hacktoberfest&lt;/a&gt;, un’occasione globale che raduna &lt;strong&gt;appassionati di open source da tutto il mondo&lt;/strong&gt;. Durante l’intero mese di ottobre, gli interessati, a prescindere dal livello di esperienza, avranno l’opportunità di confrontarsi e divertirsi partecipando a diverse sfide.&lt;/p&gt;
 
 &lt;p&gt;Gli ambiti di contributo sono molteplici, spaziando dalla traduzione di testi alla stesura di documentazione, dalla risoluzione di bug alla definizione di nuove funzionalità. I partecipanti saranno chiamati a &lt;strong&gt;proporre soluzioni e modifiche attraverso il sistema di pull request&lt;/strong&gt;, con l’obiettivo di consolidare contributi significativi con il codice esistente. Una volta accuratamente revisionati, tali contributi saranno integrati e fruibili da cittadini, Pubblica Amministrazione e imprese impegnate nella digitalizzazione dei propri servizi.&lt;/p&gt;
@@ -512,7 +512,7 @@ Community!&lt;/p&gt;</content>
     <title>Formez lancia un corso per progettare e realizzare servizi pubblici di qualità</title>
     <updated>2023-03-06T14:00:00+00:00</updated>
 
-    <summary>Aperte le iscrizioni online, per partecipare c'è tempo fino al 20 marzo </summary>
+    <summary>Aperte le iscrizioni online, per partecipare c&apos;è tempo fino al 20 marzo </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2023/03/06/Formez-lancia-corso-per-progettare-servizi-pubblici-di-qualita">&lt;p&gt;Aperte le iscrizioni per il corso online &lt;strong&gt;“Qualità dei servizi digitali”&lt;/strong&gt;, un’iniziativa dedicata a tutte le persone interessate ad &lt;strong&gt;accrescere la conoscenza e la consapevolezza sulla qualità dei servizi digitali nella Pubblica Amministrazione (PA)&lt;/strong&gt;. Il corso, organizzato da Formez e promosso dal Dipartimento della funzione pubblica, è pensato in particolare per i dipendenti della PA.&lt;/p&gt;
 
 &lt;p&gt;Accogliendo le principali indicazioni previste dalla normativa nazionale ed europea, il corso illustra gli aspetti e le caratteristiche che i servizi digitali delle PA dovrebbero avere per essere considerati di qualità: &lt;strong&gt;semplici da usare, equi, inclusivi e progettati a partire dai bisogni reali delle persone&lt;/strong&gt;. L’iniziativa fornisce una cornice teorica di riferimento e mostra i principali strumenti operativi per la progettazione di servizi digitali disponibili su Designers Italia, oltre che approfondire &lt;strong&gt;fattori chiave come l’interoperabilità&lt;/strong&gt;, il riuso del software e l’open source.&lt;/p&gt;
@@ -597,7 +597,7 @@ Community!&lt;/p&gt;</content>
     <title>Online la registrazione del MeetUp Angular Roma</title>
     <updated>2023-01-31T16:00:00+00:00</updated>
 
-    <summary>Scopri come partecipare all'evoluzione del Design Kit e del Design system del Paese </summary>
+    <summary>Scopri come partecipare all&apos;evoluzione del Design Kit e del Design system del Paese </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2023/01/31/online-registrazione-meetup-angular-roma">&lt;p&gt;Ha riscosso grande interesse il MeetUp organizzato, lunedì 30 gennaio, dalla &lt;strong&gt;community di Angular Roma&lt;/strong&gt; presso i locali di Spaces, zona Eur Laurentina. Circa un centinaio di partecipanti ha seguito, &lt;strong&gt;in presenza e online&lt;/strong&gt;, l’incontro dedicato a fare il punto sull’aggiornamento del &lt;a href=&quot;https://github.com/italia/design-angular-kit&quot;&gt;Design Kit Angular&lt;/a&gt; nell’evoluzione a Bootstrap Italia 2.0.&lt;/p&gt;
 
 &lt;p&gt;Il primo MeetUp del 2023 ha visto tra i relatori &lt;strong&gt;Andrea Stagi&lt;/strong&gt;, Open Source Project Leader per il Dipartimento per la trasformazione digitale, e &lt;strong&gt;Cristian Borelli&lt;/strong&gt;, certificatore Angular e maintainer della libreria italia/design-angular-kit, che sono entrati nel dettaglio delle migliorie ai componenti dell’Angular Design Kit e hanno condiviso con i partecipanti lo stato dell’arte sulle lavorazioni del Design system del Paese.&lt;/p&gt;
@@ -3487,7 +3487,7 @@ dare una mano agli sviluppatori per migliorare i servizi pubblici digitali.&lt;/
     <title>Inizia l’Hacktoberfest 2020</title>
     <updated>2020-10-01T09:00:00+00:00</updated>
 
-    <summary>Anche quest'anno Developers Italia partecipa all’evento internazionale per favorire lo sviluppo di software open source </summary>
+    <summary>Anche quest&apos;anno Developers Italia partecipa all’evento internazionale per favorire lo sviluppo di software open source </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2020/10/01/developers-italia-hacktoberfest-2020">&lt;p&gt;Dopo il &lt;a href=&quot;https://developers.italia.it/it/news/2019/11/14/terminato-hacktoberfest-tiriamo-le-somme&quot;&gt;successo dello scorso
 anno&lt;/a&gt;,
 che ha visto il contributo di decine di sviluppatori open source, Developers
@@ -3905,7 +3905,7 @@ Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10
     <title>Un ambiente di test aperto a tutti per ANPR</title>
     <updated>2018-05-23T09:00:00+00:00</updated>
 
-    <summary>Da oggi chiunque può sviluppare dei client che si interfacciano all'anagrafe nazionale </summary>
+    <summary>Da oggi chiunque può sviluppare dei client che si interfacciano all&apos;anagrafe nazionale </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2018/05/23/un-ambiente-di-test-aperto-a-tutti-per-anpr">&lt;p&gt;Abbiamo rilasciato &lt;strong&gt;il codice e le credenziali&lt;/strong&gt; per poter accedere all’ambiente di test dell’Anagrafe nazionale della popolazione residente (&lt;a href=&quot;https://teamdigitale.governo.it/it/projects/anpr.htm&quot;&gt;ANPR&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Si tratta di un passaggio molto importante per lo sviluppo dell’&lt;strong&gt;anagrafe nazionale&lt;/strong&gt;, perché permette a qualsiasi sviluppatore di lavorare più liberamente all’integrazione con ANPR, anche senza disporre delle credenziali di un comune.&lt;/p&gt;
@@ -4030,7 +4030,7 @@ Dopo aver discusso &lt;a href=&quot;https://developers.italia.it/it/news/2019/10
     <title>Consultazione pubblica sulle linee guida per lo sviluppo e l’acquisizione del software</title>
     <updated>2018-04-05T16:00:00+00:00</updated>
 
-    <summary>Pubblicate in consultazione le linee guida in attuazione dell'art. 68 e 69 del CAD </summary>
+    <summary>Pubblicate in consultazione le linee guida in attuazione dell&apos;art. 68 e 69 del CAD </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2018/04/05/linee-guida-in-consultazione">&lt;p&gt;Ciao a tutti!
 Inizia oggi (fino al 5 Maggio 2018) la consultazione sulle &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/&quot;&gt;Linee Guida sul Riuso e Acquisizione del Software nelle Pubbliche Amministrazioni&lt;/a&gt; che coprono due temi:&lt;/p&gt;
 
@@ -4375,7 +4375,7 @@ Un grazie speciale da parte dell’organizzazione va anche a tutti i membri degl
     <title>Meetup su Hack.Developers, incontraci dall’11 al 19 Settembre</title>
     <updated>2017-09-07T16:00:00+00:00</updated>
 
-    <summary>6 incontri a giro per l'Italia, incontrando gli sviluppatori prima di Hack.Developers </summary>
+    <summary>6 incontri a giro per l&apos;Italia, incontrando gli sviluppatori prima di Hack.Developers </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2017/09/07/hack-developers-meetup">&lt;p&gt;Ciao a tutti,&lt;/p&gt;
 
 &lt;p&gt;come già comunicato, il 7 e l’8 ottobre 2017 si terrà &lt;a href=&quot;https://hack.developers.italia.it&quot;&gt;Hack.Developers&lt;/a&gt;, il più grande code sprint mai realizzato in Italia, organizzato dal &lt;a href=&quot;https://teamdigitale.governo.it&quot;&gt;Team per la Trasformazione Digitale&lt;/a&gt;, in collaborazione con &lt;a href=&quot;https://www.codemotionworld.com&quot;&gt;Codemotion&lt;/a&gt;. Un evento che coinvolgerà &lt;strong&gt;20 città in contemporanea&lt;/strong&gt; e circa &lt;strong&gt;80 community tech e di sviluppatori&lt;/strong&gt; su tutto il territorio nazionale.&lt;/p&gt;
