@@ -184,3 +184,7 @@
 - name: "Interfacer"
   repos:
     - "https://github.com/interfacerproject/interfacer-docs"
+
+- name: "Accert"
+  repos:
+    - "https://github.com/andrea1388/Accert"
