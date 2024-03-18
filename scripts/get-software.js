@@ -21,6 +21,7 @@ async function fetchData(url, pageSize = 100) {
 
   allData.forEach((software, i) => {
     allData[i] = addSlug(software);
+    console.log(software.slug);
   });
 
   return allData;
