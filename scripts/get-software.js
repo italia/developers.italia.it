@@ -1,8 +1,19 @@
 const fs = require('fs');
 const axios = require('axios');
 const yaml = require('js-yaml');
+const { addAbortSignal } = require('stream');
+const { normalize } = require('path');
+
+const normalizeUrl = (url) => url.toLowerCase().replace(/.git$/, '');
 
 const addSlug = (software) => ({ ...software, slug: software.id });
+const addAliases = (software) => {
+  const aliases = [normalizeUrl(software.url), ...software.aliases.map(a => normalizeUrl(a))];
+
+  const uniqNames = [...new Set(aliases.map(a => a.replace('https://', '')))];
+
+  return { ...software, alias_pages: uniqNames }
+}
 
 async function fetchData(url, pageSize = 100) {
   let afterCursor = '';
@@ -19,12 +30,7 @@ async function fetchData(url, pageSize = 100) {
     afterCursor = response.data.links.next ? response.data.links.next.split('page[after]=')[1] : '';
   } while (afterCursor);
 
-  allData.forEach((software, i) => {
-    allData[i] = addSlug(software);
-    console.log(software.slug);
-  });
-
-  return allData;
+  return allData.map(software => addAliases(addSlug(software)));
 }
 
 const url = 'https://api.developers.italia.it/v1/software';

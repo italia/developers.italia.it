@@ -14,7 +14,7 @@ module Jekyll
       return name.tr(
   "ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÑñÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
   "AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
-).downcase.strip.gsub(' ', '-').gsub(/[^\w.-]/, '')
+).downcase.strip.gsub(' ', '-').gsub(/[^\w.-\/]/, '')
     end
   end
 
@@ -41,33 +41,29 @@ module Jekyll
       #
       # the value of these variables changes according to whether we
       # want to generate named folders or not
-      if data[name] == nil
-        puts "error (datapage_gen). empty value for field '#{name}' in record #{data}"
+      filename = sanitize_filename(data[name] || name).to_s
+
+      @dir = dir + (index_files ? "/" + filename + "/" : "")
+      @name = (index_files ? "index" : filename) + "." + extension.to_s
+
+      self.process(@name)
+      self.read_yaml(File.join(base, '_layouts'), template + ".html")
+
+      # original method to set page title to data[name]
+      # self.data['title'] = data[name]
+
+      if title
+        self.data['title'] = data[title]
+      elsif data['publiccode'] && data['publiccode']['name']
+        self.data['title'] = data['publiccode']['name'] + ' - ' + defaults['title_suffix']
       else
-        filename = sanitize_filename(data[name]).to_s
-
-        @dir = dir + (index_files ? "/" + filename + "/" : "")
-        @name = (index_files ? "index" : filename) + "." + extension.to_s
-
-        self.process(@name)
-        self.read_yaml(File.join(base, '_layouts'), template + ".html")
-
-        # original method to set page title to data[name]
-        # self.data['title'] = data[name]
-
-        if title
-          self.data['title'] = data[title]
-        elsif data['publiccode'] && data['publiccode']['name']
-          self.data['title'] = data['publiccode']['name'] + ' - ' + defaults['title_suffix']
-        else
-          self.data['title'] = data[name]
-        end
-
-        self.data.merge!(defaults)
-        # add all the information defined in _data for the current record to the
-        # current page (so that we can access it with liquid tags)
-        self.data.merge!(data)
+        self.data['title'] = data[name] || name
       end
+
+      self.data.merge!(defaults)
+      # add all the information defined in _data for the current record to the
+      # current page (so that we can access it with liquid tags)
+      self.data.merge!(data)
     end
   end
 
@@ -116,6 +112,11 @@ module Jekyll
 
             records.each do |record|
               site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, name, title, template, extension, data_spec['defaults'])
+
+              record['alias_pages'].each do |alias_page|
+                puts(alias_page)
+                site.pages << DataPage.new(site, site.source, index_files_for_this_data, dir, record, alias_page, title, template, extension, data_spec['defaults'])
+              end if record['alias_pages']
             end
           else
             puts "error (datapage_gen). could not find template #{template}" if not site.layouts.key? template
