@@ -35,6 +35,7 @@
     },
     "scripts": {
         "get-software": "node scripts/get-software.js",
+        "get-publishers": "node scripts/get-publishers.js",
         "build": "webpack --config webpack.prod.js",
         "lint": "eslint _site/ --ext .json && eslint assets/ --ext .js",
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site",
