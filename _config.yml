@@ -171,8 +171,8 @@ page_gen:
     #filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: it
@@ -181,8 +181,8 @@ page_gen:
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: en
