@@ -14,6 +14,11 @@ const addAliases = (software) => {
 
   return { ...software, alias_pages: uniqNames }
 }
+const addPubliccodeDict = (software) => {
+  const publiccode = yaml.load(software.publiccodeYml);
+
+  return { ...software, publiccode }
+}
 
 async function fetchData(url, pageSize = 100) {
   let afterCursor = '';
@@ -30,7 +35,10 @@ async function fetchData(url, pageSize = 100) {
     afterCursor = response.data.links.next ? response.data.links.next.split('page[after]=')[1] : '';
   } while (afterCursor);
 
-  return allData.map(software => addAliases(addSlug(software)));
+  return allData
+    .map(software => addAliases(addSlug(software)))
+    .map(software => addSlug(software))
+    .map(software => addPubliccodeDict(software));
 }
 
 const url = 'https://api.developers.italia.it/v1/software';
