@@ -150,7 +150,7 @@ a completare il processo.
       <use xlink:href="/assets/svg/sprite.svg#it-comment"></use>
     </svg> Dialoga su Slack (#reuse)
   </a>
-  <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-white">
+  <a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-primary">
       <use xlink:href="/assets/svg/sprite.svg#it-comment"></use>
     </svg> Registrati su Slack</a>
 <p>
