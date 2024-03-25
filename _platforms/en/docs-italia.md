@@ -39,7 +39,8 @@ These are the main tasks scheduled for the near future:
 If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
 
 <a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Source code
 

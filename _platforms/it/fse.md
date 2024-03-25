@@ -180,5 +180,5 @@ Questa fase è descritta nel documento "[Transitorio](https://github.com/ministe
 ## Canali
 
 <a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" />Richiesta di supporto tramite GitHub</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" />Canale Slack (#fse)</a>
-<a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank">Registrati su Slack</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" />Dialoga su Slack (#fse)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
