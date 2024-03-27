@@ -28,7 +28,11 @@ resources:
     - title: Linee guida modello interoperabilità (ModI)
       url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
       icon: file
-      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
+      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità    
+    - title: Guida alla pubblicazione di e-service per WaaS
+      url: https://github.com/INPS-it/WaaS.Comuni/blob/main/003%20-%20Guida%20Comuni/Guida.md
+      icon: link
+      desc: Guida di INPS per supportare i comuni nella pubblicazione di e-service "Welfare as a Service", che alimentano il SIUSS
   - Implementazioni:
     - title: Esempio di API
       url: https://github.com/italia/developers-italia-api
