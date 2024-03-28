@@ -31,7 +31,7 @@ resources:
       desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità    
     - title: Guida alla pubblicazione di e-service per WaaS
       url: https://github.com/INPS-it/WaaS.Comuni/blob/main/003%20-%20Guida%20Comuni/Guida.md
-      icon: link
+      icon: github
       desc: Guida di INPS per supportare i comuni nella pubblicazione di e-service "Welfare as a Service", che alimentano il SIUSS
   - Implementazioni:
     - title: Esempio di API
