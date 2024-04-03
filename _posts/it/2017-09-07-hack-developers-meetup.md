@@ -19,11 +19,11 @@ In vista di questo evento, il nostro Team sarà presente nelle principali città
 
 Ecco gli appuntamenti dei meetup e i link per registrarsi:
 
- * Milano - 11 settembre, presso Mikamai/LinkMe Srl <br/> [Registrati a Milano](http://bit.ly/2gPNLbe)
- * Napoli - 12 settembre, presso Hub Banco di Napoli - Intesa Sanpaolo <br/> [Registrati a Napoli](http://bit.ly/2w2NuDS)
- * Torino - 14 settembre, presso Toolbox Coworking <br/> [Registrati a Torino](http://bit.ly/2iZ9caB)
- * Firenze 15 settembre, presso Impact Hub <br/> [Registrati a Firenze](http://bit.ly/2vI9eda)
- * Bari 18 settembre, presso Impact Hub <br/> [Registrati a Bari](http://bit.ly/2gBXL4k)
- * Roma 19 settembre, presso LUISS ENLABS <br/> [Registrati a Roma](http://bit.ly/2wCn67A)
+ * Milano - 11 settembre, presso Mikamai/LinkMe Srl <br/> [Registrati a Milano](https://bit.ly/2gPNLbe)
+ * Napoli - 12 settembre, presso Hub Banco di Napoli - Intesa Sanpaolo <br/> [Registrati a Napoli](https://bit.ly/2w2NuDS)
+ * Torino - 14 settembre, presso Toolbox Coworking <br/> [Registrati a Torino](https://bit.ly/2iZ9caB)
+ * Firenze 15 settembre, presso Impact Hub <br/> [Registrati a Firenze](https://bit.ly/2vI9eda)
+ * Bari 18 settembre, presso Impact Hub <br/> [Registrati a Bari](https://bit.ly/2gBXL4k)
+ * Roma 19 settembre, presso LUISS ENLABS <br/> [Registrati a Roma](https://bit.ly/2wCn67A)
 
 Vi aspettiamo!

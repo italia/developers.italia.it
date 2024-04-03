@@ -6,7 +6,7 @@ date: 2023-12-19 11:00:00 +0200
 tags: developers community opensource partecipazione
 categories: news
 author: Michela Gabrieli
-image:
+image: /assets/images/posts/2023-12-19/osor-award-developers-2023.jpg
 locale: it
 ---
 
@@ -81,7 +81,7 @@ che, sfruttando le potenzialità della semantica dei dati, permette la
 realizzazione di API per la condivisione di informazioni tramite PDND.
 
 L’accesso alle risorse del catalogo è libero, ma un uso più frequente è
-prevedibile dal parte degli sviluppatori e i ricercatori di enti pubblici e
+prevedibile da parte degli sviluppatori e i ricercatori di enti pubblici e
 privati. I principali contributori al catalogo sono gli enti pubblici che stanno
 investendo in servizi digitali da esporre nella PDND e che potrebbero
 beneficiare del riuso di risorse semantiche già esistenti. Attualmente sul

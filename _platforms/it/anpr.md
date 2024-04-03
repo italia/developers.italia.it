@@ -17,10 +17,10 @@ github_team: anpr
 abilitante: true
 owners:
     - name: Ministero dell'Interno
-      url: http://www.interno.gov.it/
+      url: https://www.interno.gov.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
     - Documentazione:
         - title: Documentazione tecnica e tabelle di riferimento
@@ -83,4 +83,5 @@ integrazione.
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ" target="_blank"><i class="it-comment" /> Dialoga su Slack (#anpr)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ" target="_blank"><i class="it-comment" /> Dialoga su Slack (#anpr)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>

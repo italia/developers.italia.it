@@ -16,10 +16,10 @@ layout: platform
 github_team: 18app
 owners:
     - name: Ministero per i Beni e le Attività Culturali
-      url: http://www.beniculturali.it/
+      url: https://www.beniculturali.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
     - Documentazione:
         - title: Guida per gli esercenti
@@ -65,7 +65,8 @@ backend, effettuando quindi una integrazione con il proprio sistema di cassa,
 oppure manualmente tramite una semplice web form.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-outline-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a> <a class="btn btn-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
 
 Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza. Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
 

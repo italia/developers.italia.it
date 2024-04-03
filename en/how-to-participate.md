@@ -20,10 +20,10 @@ alternate-blocks:
           class: btn btn-primary
           url: '/en/platforms'
         - label: Explore GitHub Italia
-          class: btn btn-outline-primary
+          class: btn btn-white btn-outline-primary
           url: 'https://github.com/italia'
         - label: Chat on Slack
-          class: btn btn-outline-primary
+          class: btn btn-white btn-outline-primary
           url: 'https://slack.developers.italia.it/'
     - title: "Participate to the public software development"
       text: "The Developers Italia catalogue includes the open source software

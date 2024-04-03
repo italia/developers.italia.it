@@ -9,15 +9,15 @@ jobs:
       ELASTICSEARCH_URL: "" # Disable searchyll for test.
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Setup ruby env
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7'
+          ruby-version: '3.2'
           bundler-cache: true
 
       - run: sudo apt-get update && sudo apt-get install -y
@@ -30,11 +30,7 @@ jobs:
                lsb-release xdg-utils
 
       - run: npm ci --legacy-peer-deps
-      - run: npm run test
 
       - run: make download-data
       - run: make jekyll-build
-      - run: npm run lint
-
-      - run: scripts/pa11y.sh
-      - run: bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+      - run: make test

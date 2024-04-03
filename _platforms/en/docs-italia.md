@@ -20,7 +20,7 @@ github_team: docs-italia
 
 Docs Italia simplifies the publishing process: documents use a version control system as data source, encouraging collaborative editing and allowing the community to perform analysis and comparisons between different versions.
 
-The generation tool behind Docs Italia is [Sphinx](http://www.sphinx-doc.org/en/master/#){:target="_blank"}, which supports several markup languages among which _RestructuredText_ and _MarkDown_. We're working for improving the platform according to the needs detected during the first test year: the document converter, the publishing flow and search/browsing tools. We use [Pandoc](https://pandoc.org/){:target="_blank"} for converting documents from the most used formats, like `.docx` and `.odt`.
+The generation tool behind Docs Italia is [Sphinx](https://www.sphinx-doc.org/en/master/#){:target="_blank"}, which supports several markup languages among which _RestructuredText_ and _MarkDown_. We're working for improving the platform according to the needs detected during the first test year: the document converter, the publishing flow and search/browsing tools. We use [Pandoc](https://pandoc.org/){:target="_blank"} for converting documents from the most used formats, like `.docx` and `.odt`.
 
 A first relase of Docs Italia was completed during 2018, and more features are scheduled for the next months. he platform is based on the well known open source project [ReadTheDocs](https://readthedocs.org/){:target="_blank"}, which serves as a basis for secure identity management of organizations and editors.
 
@@ -39,7 +39,8 @@ These are the main tasks scheduled for the near future:
 If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
 
 <a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Source code
 

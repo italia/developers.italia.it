@@ -92,13 +92,11 @@
   repos:
     - "https://github.com/alessiolombardo/RiscossioneConverter"
 
-- name: "WooCommerce 18app"
-  repos:
-    - "https://github.com/ilGhera/wc-18app"
-
-- name: "WooCommerce Carta Docente"
+- name: "WooCommerce plugins"
   repos:
     - "https://github.com/ilGhera/wc-carta-docente"
+    - "https://github.com/ilGhera/wc-18app"
+    - "https://github.com/ilGhera/wc-carte-cultura"
 
 - name: "QField"
   repos:
@@ -182,3 +180,11 @@
 - name: "Gzoom"
   repos:
     - "https://bitbucket.org/mapsgroupID/maps-gzoom"
+
+- name: "Interfacer"
+  repos:
+    - "https://github.com/interfacerproject/interfacer-docs"
+
+- name: "Accert"
+  repos:
+    - "https://github.com/andrea1388/Accert"

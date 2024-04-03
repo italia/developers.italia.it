@@ -18,6 +18,6 @@ La **registrazione dell’incontro** è disponibile online sul [canale YouTube d
 **Partecipare all’evoluzione del Kit Angular e allo sviluppo del Design system del Paese è semplice**: 
 * prova a utilizzare [Bootstrap Italia 2](https://github.com/italia/bootstrap-italia/) e il [Design Kit Angular](https://github.com/italia/design-angular-kit) nei prossimi giorni, mentre si avvicina la data del suo rilascio ufficiale;
 * segnala *issue* oppure apri PR dedicate all’intero kit o su parti specifiche per aiutarci a migliorarlo, sia lato codice sia lato documentazione;
-* segui gli aggiornamenti [sui nostri canali](http://slack.developers.italia.it) per conoscere le future implementazioni.
+* segui gli aggiornamenti [sui nostri canali](https://slack.developers.italia.it) per conoscere le future implementazioni.
 
 Ogni suggerimento è prezioso, ti aspettiamo.

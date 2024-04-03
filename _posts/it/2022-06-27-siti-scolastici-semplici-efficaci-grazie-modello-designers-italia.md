@@ -9,7 +9,7 @@ author: Michela Gabrieli
 image: /assets/icons/logo-it.png
 locale: it
 ---
-Come creare siti web scolastici che rispondono ai bisogni delle persone e che siano dotati di interfacce accessibili e semplici da navigare? Con l’aggiornamento del [modello disponibile su Designers Italia](https://designers.italia.it/modello/scuole/), la Scuola italiana ha uno strumento in più per raggiungere questo obiettivo, avvantaggiandosi anche dei fondi del Piano Nazionale di Ripresa e Resilienza disponibili attraverso un [nuovo Avviso](https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA) sulla piattaforma [PA digitale 2026](http://padigitale2026.gov.it/)
+Come creare siti web scolastici che rispondono ai bisogni delle persone e che siano dotati di interfacce accessibili e semplici da navigare? Con l’aggiornamento del [modello disponibile su Designers Italia](https://designers.italia.it/modello/scuole/), la Scuola italiana ha uno strumento in più per raggiungere questo obiettivo, avvantaggiandosi anche dei fondi del Piano Nazionale di Ripresa e Resilienza disponibili attraverso un [nuovo Avviso](https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA) sulla piattaforma [PA digitale 2026](https://padigitale2026.gov.it/)
 
 Adottando il modello, **studenti, genitori e tutta la comunità scolastica** potranno quindi trovare con facilità tutte le informazioni di cui hanno bisogno.
 

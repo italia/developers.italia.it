@@ -16,7 +16,7 @@ layout: platform
 resources:
   - Documentazione:
     - title: Home page
-      url: http://indicepa.gov.it
+      url: https://indicepa.gov.it
       icon: file
       desc: Pagina di accesso della piattaforma.
     - title: Documentazione

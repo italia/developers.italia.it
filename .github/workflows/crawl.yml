@@ -10,7 +10,7 @@ jobs:
     container:
       image: italia/publiccode-crawler:latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: publiccode-crawler crawl
         env:
           API_BASEURL: "https://api.developers.italia.it/v1"
