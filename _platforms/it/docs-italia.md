@@ -19,7 +19,7 @@ github_team: docs-italia
 
 Docs Italia semplifica drasticamente il processo di pubblicazione. I documenti utilizzano un version control system come sorgente dei dati, favorendo una scrittura collaborativa e aprendo possibilità di analisi, visualizzazione e confronto tra versioni da parte della comunità.
 
-Lo strumento di generazione dei documenti su Docs Italia è [Sphinx](http://www.sphinx-doc.org/en/master/#){:target="_blank"}, fornendo supporto a vari linguaggi tra cui _RestructuredText_ e _MarkDown_. Stiamo lavorando per potenziare tutti gli aspetti della piattaforma sulla base delle esigenze emerse in questo primo anno di sperimentazione: il convertitore di documenti, il flusso di pubblicazione e le funzioni di ricerca e di navigazione. Utilizziamo [Pandoc](https://pandoc.org/){:target="_blank"} per la conversione dei documenti dai formati più diffusi, quali `.docx` o `.odt`.
+Lo strumento di generazione dei documenti su Docs Italia è [Sphinx](https://www.sphinx-doc.org/en/master/#){:target="_blank"}, fornendo supporto a vari linguaggi tra cui _RestructuredText_ e _MarkDown_. Stiamo lavorando per potenziare tutti gli aspetti della piattaforma sulla base delle esigenze emerse in questo primo anno di sperimentazione: il convertitore di documenti, il flusso di pubblicazione e le funzioni di ricerca e di navigazione. Utilizziamo [Pandoc](https://pandoc.org/){:target="_blank"} per la conversione dei documenti dai formati più diffusi, quali `.docx` o `.odt`.
 
 Una prima versione del progetto Docs Italia è stata completata nel corso del 2018, e molte nuove funzionalità sono previste nel corso dei prossimi mesi. La piattaforma è basata su un progetto open-source molto conosciuto, [ReadTheDocs](https://readthedocs.org/){:target="_blank"}, che ha fornito le fondamenta per una gestione sicura delle identità delle amministrazioni e dei redattori dei documenti gestiti dalla piattaforma.
 
@@ -38,7 +38,8 @@ Queste sono le principali attività che stiamo ipotizzando per il prossimo futur
 Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
 
 <a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">Registrati su Slack</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
 
 ## Codice sorgente
 

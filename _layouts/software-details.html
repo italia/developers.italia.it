@@ -51,10 +51,18 @@ layout: default
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
-              {% for tag in page.popularCategories limit: 3 %}
-              {% include set-tag.html tag=tag %}
+              {% assign deactive = false %}
+              {% for tag in page.publiccode.categories %}
+                {% if forloop.index > 5 %}
+                  {% assign deactive = true %}
+                {% endif %}
+
+                {% include set-tag.html tag=tag deactive=deactive %}
               {% endfor %}
             </ul>
+            {% if page.publiccode.categories.size > 5 %}
+            <a href="#" id="moreTags">{{ t.software.show_all }}...</a>
+            {% endif %}
           </div>
           <div class="row legal-main-info">
             <div class="col-sm">
@@ -74,7 +82,7 @@ layout: default
               <p><span class="label">{{ t.software.software_maintained_by }} </span>
                 {% for contractor in page.publiccode.maintenance.contractors %}
                     {% if contractor.website != nil and contractor.website != "" %}
-                        <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                        <a href="{{ contractor.website }}" data-proofer-ignore>{{ contractor.name }}</a>
                     {% else %}
                         {{ contractor.name}}
                     {% endif %}
@@ -134,6 +142,7 @@ layout: default
               aria-label="{{ t.software.goToLandingUrlAriaLabel }}"
               rel="noopener noreferrer"
               target="_blank"
+              data-proofer-ignore
             >
               <img alt="" src="/assets/icons/software_icons/it-link.svg">{{ t.software.goToLandingUrl }} &rarr;</a>
           </p>
@@ -142,7 +151,7 @@ layout: default
 
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
-          <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
+          <p><a href="{{ description.documentation }}" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
             t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
@@ -449,7 +458,7 @@ layout: default
                     {% endif %}
                     <span class="align-middle">
                       {% if contractor.website != nil and contractor.website != "" %}
-                      <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a>
+                      <a href="{{ contractor.website }}" class="until" data-proofer-ignore>{{ contractor.name }}</a>
                       {{ t.software.until }} {{contractor.until}}
                       {% else %}
                       {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
@@ -692,7 +701,7 @@ layout: default
               {% if description.apiDocumentation != nil and description.apiDocumentation != "" %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.api_documentation }}</span>
-                  <a href="{{ description.apiDocumentation }}">{{ sw_name }} API</a>
+                  <a href="{{ description.apiDocumentation }}" data-proofer-ignore>{{ sw_name }} API</a>
                 </p>
               </div>
               {% endif %}

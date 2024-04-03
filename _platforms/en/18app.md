@@ -16,10 +16,10 @@ layout: platform
 github_team: 18app
 owners:
     - name: Ministry of Cultural Heritage and Activities
-      url: http://www.beniculturali.it/
+      url: https://www.beniculturali.it/
 managers:
     - name: Sogei
-      url: http://www.sogei.it/
+      url: https://www.sogei.it/
 resources:
     - Documentation:
         - title: Guide for merchants

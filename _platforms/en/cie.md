@@ -17,7 +17,7 @@ github_team: cie
 abilitante: true
 owners:
     - name: Ministry of the Interior
-      url: http://www.interno.gov.it/
+      url: https://www.interno.gov.it/
 managers:
     - name: Istituto Poligrafico e Zecca dello Stato
       url: https://www.ipzs.it/
@@ -100,7 +100,7 @@ resources:
 
 ## Intro
 
-The [Electronic Identity Card](http://www.cartaidentita.interno.gov.it){:target="_blank"}
+The [Electronic Identity Card](https://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) version 3.0 is already **distributed in more than 90% of the Italian territory** to citizens who ask for a new identity card or renew an expired/lost one.
 
 The CIE is not only an identity card, but it's also a technology that enables new digital services for citizens, that can be used also via smartphones and tablets, thanks to the **NFC microchip**. Every Italian citizen, in a few years, will carry a unique and secure NFC token in their pockets. This will enable several applications:
@@ -118,7 +118,8 @@ The CIE is not only an identity card, but it's also a technology that enables ne
 This will be made possible thanks to the identification features embedded in the microchip, whose specifics are open and downloadable from this page.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a> <a class="btn btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><span class="it-comment">(sign up)</span></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Information provided by the card
 
