@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2024-04-03T06:03:04+00:00</updated>
+  <updated>2024-04-03T09:45:00+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -14,6 +14,50 @@
   <author>
     <name>Dipartimento per la Trasformazione Digitale e AgID</name>
   </author>
+  <entry xml:lang="it">
+    <id>https://developers.italia.it/it/news/2024/04/03/design-system-italia-si-aggiorna-con-le-nuove-versioni-dei-kit-react-e-angular</id>
+    <title>Design system .italia si aggiorna con le nuove versioni dei kit React e Angular</title>
+    <updated>2024-04-03T09:00:00+00:00</updated>
+
+    <summary>Le nuove versioni stabili dei due kit di sviluppo offrono componenti già sviluppati, pronti a essere utilizzati per creare le interfacce digitali dei servizi pubblici </summary>
+    <content type="html" xml:base="https://developers.italia.it/it/news/2024/04/03/design-system-italia-si-aggiorna-con-le-nuove-versioni-dei-kit-react-e-angular">&lt;p&gt;Dopo alcuni mesi di lavorazione che hanno coinvolto la community, sono state rilasciate le nuove versioni stabili del &lt;strong&gt;Design React Kit (v5.0.1)&lt;/strong&gt; e del &lt;strong&gt;Design Angular Kit (v1.0.1)&lt;/strong&gt; basate sull’ultima versione di &lt;strong&gt;Bootstrap Italia&lt;/strong&gt;. Entrambi i kit implementano i principali componenti di Bootstrap Italia per i framework di sviluppo React e Angular, velocizzando il processo di sviluppo delle applicazioni che utilizzano il &lt;strong&gt;Design system .italia&lt;/strong&gt;, &lt;a href=&quot;https://designers.italia.it/community/notizie/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta/&quot;&gt;recentemente aggiornato&lt;/a&gt;. Infatti, l’utilizzo dei kit consente di utilizzare componenti pronti all’uso perché il codice è già scritto, accessibili ed usabili, consentendo alla Pubblica Amministrazione di risparmiare tempo e risorse economiche.&lt;/p&gt;
+
+&lt;p&gt;L’uscita di questi kit è stata frutto di un intenso lavoro fatto insieme alla community che ringraziamo per tutte le segnalazioni e i contributi fatti. In particolare, ci teniamo a ringraziare chi maggiormente si è speso per questi progetti: Antonino Bonanno e il suo gruppo di lavoro, Sabatino Galasso e il suo gruppo di lavoro, Matteo Avesani, Marco Liberati, Federico Turbino, Cristian Borrelli, Alessio Napolitano. Estendiamo i nostri ringraziamenti a tutte le persone che hanno contributo, anche con una semplice segnalazione o con l’apertura di una singola issue.&lt;/p&gt;
+
+&lt;h3 id=&quot;da-dove-partire&quot;&gt;Da dove partire&lt;/h3&gt;
+
+&lt;p&gt;Per facilitare i team di sviluppo nei primi passi con i kit sono, inoltre, disponibili &lt;strong&gt;due progetti “playground”&lt;/strong&gt; (uno per il kit React e uno per il kit Angular), che mostrano alcuni componenti base e permettono di approfondire le interazioni tra i componenti e l’utilizzo della libreria in un progetto reale.&lt;/p&gt;
+
+&lt;h3 id=&quot;prossimi-passi&quot;&gt;Prossimi passi&lt;/h3&gt;
+
+&lt;p&gt;Abbiamo già pianificato, per entrambi i kit, lo sviluppo di alcuni componenti mancanti, gli aggiornamenti di alcune dipendenze e fasi di test, che porteranno nelle prossime settimane anche all’aggiornamento dello status di queste risorse nelle schede componenti della documentazione del Design system .italia. Invitiamo tutta la community ad adottare queste nuove versioni e testarle per fornirci feedback e segnalare bug.&lt;/p&gt;
+
+&lt;h3 id=&quot;esplora-i-kit&quot;&gt;Esplora i kit&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://designers.italia.it/design-system/come-iniziare/per-sviluppatori/&quot;&gt;Scopri come iniziare a usare il Design system .italia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/italia/design-react-kit/&quot;&gt;Vai al repository del kit React&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/italia/design-angular-kit/&quot;&gt;Vai al repository del kit Angular&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <published>2024-04-03T09:00:00+00:00</published>
+
+    
+    <category term="developers" />
+    
+    <category term="designers" />
+    
+    <category term="designsystem" />
+    
+    <category term="opensource" />
+    
+    <category term="partecipazione" />
+    
+
+    <author>
+      <name>Andrea Stagi</name>
+    </author>
+  </entry>
+  
   <entry xml:lang="it">
     <id>https://developers.italia.it/it/news/2023/12/19/2023-facciamo-i-conti</id>
     <title>2023: facciamo i conti!</title>
