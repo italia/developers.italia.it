@@ -188,3 +188,6 @@
 - name: "Accert"
   repos:
     - "https://github.com/andrea1388/Accert"
+- name: "Profesia"
+  repos:
+    - "https://github.com/profesiait/wemodi"
