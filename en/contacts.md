@@ -1,6 +1,6 @@
 ---
-title: Contacts 
-subtitle: 
+title: Contacts
+subtitle:
 lang: en
 ref:
   it: /it/contatti
@@ -12,11 +12,11 @@ pair-blocks:
     - title: "Work with us"
       text: "You may find the open positions (when they are available) in the
       section [Work with
-      us](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/)
+      us (in Italian)](https://innovazione.gov.it/argomenti/lavora-con-noi/)
       of the Digital Transformation Department website."
       image: /assets/images/contatti-lavora.svg
       buttons:
-        - label: Open Positions 
+        - label: Open Positions
           class: btn btn-primary
           url: 'https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/'
     - title: "Send feedback"
@@ -25,7 +25,7 @@ pair-blocks:
       If you want to file a bug related to this website, you can open an issue on [GitHub](https://github.com/italia/developers.italia.it)."
       image: /assets/images/contatti-bug.svg
       buttons:
-        - label: Join the forum  
+        - label: Join the forum
           class: btn btn-primary
           url: 'https://forum.italia.it/'
 ---
@@ -45,7 +45,7 @@ collaboration, reuse and continuous improvement.
 
 Further information about the project goals may be found in the [launch Medium post](https://medium.com/team-per-la-trasformazione-digitale/developers-italia-comunita-sviluppatori-servizi-pubblici-digitali-pubblica-amministrazione-57b0cfab4c00).
 
-### Contacts 
+### Contacts
 
 We are reachable via [Slack](https://slack.developers.italia.it/) or through the [contatti@developers.italia.it](mailto:contatti@developers.italia.it) address.
 

@@ -1,6 +1,6 @@
 ---
 title: Contatti
-subtitle: 
+subtitle:
 lang: it
 ref:
   en: /en/contacts
@@ -10,7 +10,7 @@ redirect_from: /it/chi-siamo
 include-developers-newsletter: true
 pair-blocks:
     - title: "Lavora con noi"
-      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/) del sito del Ministero per l'innovazione tecnologica e la digitalizzazione."
+      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/argomenti/lavora-con-noi/) del sito del Dipartimento per la trasformazione digitale."
       image: /assets/images/contatti-lavora.svg
       buttons:
         - label: Posizioni aperte
