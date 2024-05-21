@@ -36,7 +36,7 @@ resources:
       desc: Definizione dei principi per la conformità dei middleware regionali con FSE 2.0.
     - title: Specifiche HL7 CDA2
       icon: link
-      url: http://www.hl7italia.it/hl7italia_D7/node/2359
+      url: https://www.hl7.it/realm-italiano/
       desc: Link al sito Hl7 Italia con riferimento allo standard documentale.
     - title: Specifiche tecniche AgID
       icon: link
@@ -127,7 +127,7 @@ Per consentire una gestione più efficace del dato vengono introdotti due nuovi 
 Le Linee guida di attuazione del Fascicolo Sanitario elettronico prevedono che nel FSE 2.0 confluiscano:
 dati in formato HL7 FHIR, direttamente acquisiti dai sistemi produttori delle strutture e archiviati nel Data Repository Centrale (e opzionalmente presso data repository locali)
 documenti, in formato HL7 CDA2 iniettati in PDF firmati, prodotti a valle della validazione dai sistemi produttori e archiviati nei repository documentali delle strutture sanitarie stesse (dislocati a livello regionale o aziendale).
-Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](http://www.hl7italia.it/hl7italia_D7/node/2359).
+Stabiliscono inoltre l’elenco dei documenti dei primi 12 mesi, per i quali sono state aggiornate le guide implementative CDA2 e reperibili presso il [sito ufficiale di HL7 Italia](https://www.hl7.it/realm-italiano/).
 
  Il documento [Piattaforma di telemedicina ed Ecosistema FSE](https://github.com/ministero-salute/it-fse-support/tree/main/doc/telemedicina) fornisce maggiori dettagli su come il Gateway FSE e l’Ecosistema Dati Sanitari interoperano con le piattaforme di Telemedicina.
 
