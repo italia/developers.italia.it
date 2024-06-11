@@ -113,19 +113,6 @@ layout: default
     <div class="offset-md-1 col-md-4 ">
       <div class="drops-details">
         <div class="vitality-score">
-          <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
-          {% if page.vitalityDataChart != nil %}
-          <div id="softwareChart" data-vitality='{{page.vitalityDataChart | reverse | jsonify}}'>
-            <canvas id="vitalityChart"></canvas>
-          </div>
-          {% endif %}
-          <div class="info-block d-inline-block">
-            <span class="info-block__icon">i</span>
-            <div class="info-block__msg font-serif">
-              {{t.software.tooltip | markdownify}}
-            </div>
-          </div>
           <div class="status-developement">
             <p>{{ t.software.development_status }}: {% include software_development_status.html
               label=page.publiccode.developmentStatus %} </p>
@@ -313,9 +300,6 @@ layout: default
                 {% endfor %}
               </p>
               -->
-              <p><span class="label">{{ t.software.vitality }}:
-                  {{ variant_sw.vitalityScore }}%</span>
-              </p>
             </div>
             {% endfor %}
           </div>
