@@ -283,7 +283,7 @@ layout: default
           </a>
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
-            {% assign variant_sw = site.data.crawler.softwares | where: "id", variant.id | first %}
+            {% assign variant_sw = site.data.crawler.software | where: "id", variant.id | first %}
             {% assign variant_description = variant.publiccode.description[active_lang]
 
             | default: variant.publiccode.description.en

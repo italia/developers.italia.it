@@ -138,7 +138,7 @@ const preference = new Date().getTime();
 
 const executeQuery = async ({ query, sort, from, size }) => {
   const params = {
-    index: 'jekyll',
+    index: 'developers_italia_it',
     body: {
       query,
       sort,

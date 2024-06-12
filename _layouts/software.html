@@ -11,8 +11,8 @@ layout: default
 {% include linklist.html items=subnav dynamic=true %}
 {% endcomment %}
 
-{% assign recent_sw   = site.data.crawler.softwares | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
-{% assign efficient_pas   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
+{% assign recent_sw = site.data.crawler.software | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
+{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
 
 <div class="container">
   <div class="intro mt-5">

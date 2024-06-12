@@ -3,6 +3,7 @@
     "version": "2.4.0",
     "license": "BSD-3-Clause",
     "dependencies": {
+        "axios": "^1.4.0",
         "bootstrap-italia": "^1.5.1",
         "chart.js": "^2.9.4",
         "datatables.net-dt": "^1.10.19",
@@ -33,6 +34,8 @@
         "url": "git://github.com/italia/developers.italia.it"
     },
     "scripts": {
+        "get-software": "node scripts/get-software.js",
+        "get-publishers": "node scripts/get-publishers.js",
         "build": "webpack --config webpack.prod.js",
         "lint": "eslint _site/ --ext .json && eslint assets/ --ext .js",
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site",
