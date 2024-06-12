@@ -99,7 +99,11 @@ async function run() {
     })
   });
 
-  fs.writeFileSync('_data/crawler/software.yml', yaml.dump(data));
+  // Remove the "url" key as it's used by Jekyll to hold the generated page's URL
+  // and Searchyll uses it to compare against when the ignore: options are set in _config.yml.
+  const jekyll = data.map(({ url, ...rest }) => rest)
+
+  fs.writeFileSync('_data/crawler/software.yml', yaml.dump(jekyll));
 }
 
 run();
