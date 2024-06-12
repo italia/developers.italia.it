@@ -1,0 +1,1434 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    Comune di Cagliari
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Comune di Cagliari - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/it/software/gitlab.com/comunedicagliari/componentiportale.html" />
+<meta property="og:url" content="https://developers.italia.it/it/software/gitlab.com/comunedicagliari/componentiportale.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Comune di Cagliari - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Sviluppiamo i servizi pubblici, insieme","headline":"Comune di Cagliari - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/it/software/gitlab.com/comunedicagliari/componentiportale.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202406121443" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-default">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ITA</span>
+    <span class="sr-only">lingua attiva:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it/software/gitlab.com/comunedicagliari/componentiportale.html"><span lang="it">italiano</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en/software/gitlab.com/comunedicagliari/componentiportale.html"><span lang="en">english</span>
+        
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">Sviluppiamo i servizi pubblici, insieme</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Menu di navigazione</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        <h1 class="d-inline-block">
+          Comune di Cagliari
+          <span class="badge badge-pill badge-pill--sup badge-primary">7.2.0</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            Portale istituzionale
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            Un modello per i siti web dei comuni
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=content-management">gestione contenuti</a>
+</li>
+
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=communications">comunicazioni</a>
+</li>
+
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=digital-citizenship">cittadinanza digitale</a>
+</li>
+
+              
+            </ul>
+            
+          </div>
+          <div class="row legal-main-info">
+            <div class="col-sm">
+              <p><span class="label">Pubblicato da </span>
+                
+                <a href="/it/pa/c_b354">
+                Comune di Cagliari (CA)
+                </a>
+                
+              </p>
+            </div>
+            
+
+            
+            <div class="col-sm">
+              <p><span class="label">Contatto tecnico </span>
+                
+                    
+                    <a href="mailto:riccardo.castrignano@comune.cagliari.it">Riccardo Castrignanò</a>
+                    
+                    +39 070 6776420
+                
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <div class="drops-details">
+        <div class="vitality-score">
+          <div class="status-developement">
+            <p>Stato di sviluppo: 
+
+
+<span class="status"> stabile </span> 
+ </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drops-details">
+        
+        <div class="goto">
+          <p>
+            <a
+              href="https://gitlab.com/comunedicagliari/componentiportale"
+              aria-label="Vai al sito del software (collegamento esterno)"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-proofer-ignore
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Sito web del progetto &rarr;</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="goto doc">
+          <p><a href="https://manuale-entando.readthedocs.io/it/latest/" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+        </div>
+        
+        <div class="goto code">
+          <p><a href="https://gitlab.com/comunedicagliari/componentiportale"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+        </div>
+        
+
+        
+        <div class="goto">
+          <p>
+            <a href="/it/riuso/dichiarazione" onclick="localStorage.setItem('reuse-repo', 'https://gitlab.com/comunedicagliari/componentiportale'); return true">
+              <img alt="" src="/assets/icons/software_icons/it-check.svg">La mia amministrazione lo usa &rarr;
+            </a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="tiled-gallery">
+  <div class="tiled-gallery-inner">
+    
+    
+    
+    <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune01.jpg"
+      data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune01.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune01.jpg">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune01.jpg" alt="Screenshot" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune02.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune02.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune02.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune02.jpg" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune03.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune03.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune03.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune03.jpg" alt="Screenshot" />
+      </a>
+      
+    </div>
+    
+    <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune04.jpg"
+      data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune04.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune04.jpg">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune04.jpg" alt="Screenshot" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune05.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune05.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune05.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune05.jpg" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune06.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune06.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune06.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune06.jpg" alt="Screenshot" />
+      </a>
+      
+    </div>
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune07.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune07.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune07.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune07.jpg" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune08.jpg"
+        data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune08.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune08.jpg">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune08.jpg" alt="Screenshot" />
+      </a>
+      
+    </div>
+    
+    <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune09.jpg"
+      data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune09.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune09.jpg">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune09.jpg" alt="Screenshot" />
+    </a>
+    
+    <a class="tiled-item" href="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune10.jpg"
+      data-size="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune10.jpgxhttps://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune10.jpg">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://gitlab.com/comunedicagliari/componentiportale/-/raw/HEAD/images/portalecomune10.jpg" alt="Screenshot" />
+    </a>
+    
+    
+
+    
+
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-link tiled-gallery-btn" type="button">
+    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="/assets/icons/camera.png">&nbsp;
+    Guarda tutte le immagini
+  </button>
+</div>
+
+
+<hr class="divider mb-0">
+
+<div class=" container-fluid ">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Funzionalità del software </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> Motore di REST API </p>
+            
+            <p> Cloud deployment &amp; Supporto nativo per Kubernetes </p>
+            
+            <p> Caching </p>
+            
+            <p> Livello di astrazione dei dati </p>
+            
+            <p> Strumenti di Pro-code (CLI, interfaccia a riga di comando, generatore di componenti, costruttore di Packaged Business Capabilities) </p>
+            
+            <p> Gestione di contenuti e asset (documenti, file multimediali, immagini) </p>
+            
+            <p> Versioning e schedulazione dei contenuti </p>
+            
+            <p> Classificazione dei contenuti (tassonomia e navigazione a faccette) </p>
+            
+            <p> Contenuti georeferenziati </p>
+            
+            <p> Ottimizzazione per i motori di ricerca (SEO) </p>
+            
+            <p>
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature" class="count">Mostra tutto
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              
+              <p> Controllo degli accessi basato su Ruoli-Gruppi </p>
+              
+              <p> Gestione dell&#39;identità tramite Keycloak </p>
+              
+              <p> Compatibilità con i protocolli standard (OpenID Connect, OAuth 2.0 e SAML 2.0) Single Sign On e Social Login </p>
+              
+              <p> Modelli UI/UX basati su tecnologia RESTful </p>
+              
+              <p> Supporto per Responsive Design </p>
+              
+              <p> Supporto multilingue </p>
+              
+              <p> Conformità al modello di design previsto dalle Linee Guida di Design di siti e servizi della PA </p>
+              
+              <p> Conformità agli standard dell&#39;informazione previsti dalle Linee Guida di Design di siti della PA </p>
+              
+              <p> Modelli UI/UX basati su tecnologia RESTful </p>
+              
+              <p> Approccio mobile first, grazie agli standard HTML5 e CSS3 </p>
+              
+            </div>
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Usata da 6
+              
+              amministrazioni
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Comune di Cagliari (CA) </p>
+              
+              <p> Comune di Buggerru (SU) </p>
+              
+              <p> Città Metropolitana di Cagliari </p>
+              
+              <p> Comune di Quartu Sant&#39;Elena (CA) </p>
+              
+              <p> Comune di Messina </p>
+              
+              <p> Comune di Arbus (VS) </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>AMBITO DI APPLICAZIONE</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?intended_audiences=local-authorities">local-authorities</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?intended_audiences=culture">culture</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?intended_audiences=tourism">tourism</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?intended_audiences=government">government</a>
+</li>
+
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>Informazioni di dettaglio </p>
+            <div class="title">
+              <h2 class="h1">
+                Comune di Cagliari
+                
+                <span
+                  class="badge badge-pill badge-pill--sup badge-primary">7.2.0</span>
+                
+              </h2>
+              <h2>
+                Portale istituzionale
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Ultimo rilascio</span>
+                  2023-09-12
+                  
+                  (7.2.0)
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Tipo di manutenzione</span>
+                  internal
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
+          
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                
+                Contatto tecnico
+                
+              </span>
+            </p>
+            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              
+              Contatto tecnico
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                
+                <div class="col-md">
+                  <p>
+                    
+                    <a href="mailto:riccardo.castrignano@comune.cagliari.it">Riccardo Castrignanò</a>
+                    
+                    +39 070 6776420
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Licenza</span>
+                  LGPL-3.0
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme</span>
+                  
+                      web<br />
+                  
+                </p>
+              </div>
+              
+
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme abilitanti</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  Nessuna
+                  
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Conformità</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    GDPR
+                  
+                  
+                  <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/" class="enabling_platforms">
+                    Linee Guida Design
+                  </a>
+                  
+                  
+                  <a href="https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict" class="enabling_platforms">
+                    Misure Minime Sicurezza
+                  </a>
+                  
+                  
+                  <a href="https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html" class="enabling_platforms">
+                    Modello Interoperabilità
+                  </a>
+                  
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Lista dipendenze</span>
+                  
+                      
+                          <span class="badge badge-pill badge-primary">OSS</span><br />
+                          
+                          
+
+
+    Maven 
+
+<br />
+                          
+                          
+
+
+    Java 
+
+<br />
+                          
+                          
+
+
+    Entando (Opzionale)
+
+<br />
+                          
+                          
+
+
+    PostgreSQL (Opzionale)
+
+<br />
+                          
+                          
+
+
+    Tomcat (Opzionale)
+
+<br />
+                          
+                          
+
+
+    npm (Opzionale)
+
+<br />
+                          
+                          
+
+
+    NodeJs (Opzionale)
+
+<br />
+                          
+                      
+                      
+                      
+                   
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Altre informazioni
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+
+              <div class="other-detail">
+                <p><span class="label">Lingue supportate</span>
+                  
+                
+                
+
+Italiano<br />
+
+                
+                
+                </p>
+              </div>
+              
+              
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Descrizione estesa</p>
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
+                
+<p>Il Comune di Cagliari ha pubblicato, a dicembre 2019,  il nuovo portale istituzionale previsto all’interno del Piano Operativo Città Metropolitane 2014-2020 (Progetto CA1.1.1.a.3 – Asse 1).</p>
+
+<p>Il progetto del nuovo portale è stato inserito tra le azioni portate avanti dal Comune in tema di agenda digitale e in linea con il Piano triennale per l’informatica nella PA. 
+    Il Comune ha aderito a Designers Italia, il Design System della Pubblica Amministrazione Italiana di AGID e Team Digitale, contribuendo attivamente alla realizzazione dei kit ed alla sperimentazione di un modello che proponga uno standard per tutti i Comuni.</p>
+
+<p>Il sito è stato progettato per essere
+    visualizzato su dispositivi mobili e successivamente adattato per la versione desktop. L’homepage offre un’anteprima dei diversi tipi di contenuto ed una panoramica della struttura del sito.</p>
+
+<p>L’ architettura che organizza e classifica le informazioni è stata ripensata, suddividendo il sito in quattro sezioni: Amministrazione, Servizi, Novità, Documenti e dati. Inoltre, è presente un sistema di classificazione per argomenti, basato su parole chiave che descrivono nel modo migliore la realtà e la vita di un Comune. I contenuti sono organizzati in argomenti ed ospitati all’interno di pagine tematiche.</p>
+
+<p>Il portale è realizzato in collaborazione con Entando: una piattaforma open source (Application Composition Platform) che fornisce tutti gli strumenti e le tecnologie necessarie per costruire moderne applicazioni componibili, cloud-native e scalabili. Il portale beneficia di un potente motore di ricerca che, usando la tassonomia basata sui Tag, aiuta l’utente al meglio per muoversi all’interno del nuovo sito istituzionale, suggerendo di volta in volta i contenuti più appropriati in base alle scelte fatte.</p>
+
+<p>Durante la progettazione, sono stati creati dei componenti che possono essere utilizzati gratuitamente da tutti i Comuni italiani, in linea con il paradigma del riuso software previsto dall’art. 69 del Codice dell’Amministrazione Digitale. Inoltre, ogni amministrazione ha la possibilità di personalizzare questi componenti a proprio piacimento. Con cadenza regolare il catalogo dei componenti a riuso viene arricchito con nuove funzionalità.</p>
+
+<p>Il Comune, fortemente orientato ad adottare le piattaforme abilitanti e a sviluppare nuovi servizi digitali, è a disposizione per condividere le esperienze con tutti coloro che sono interessati a rendere più semplice ed efficace il proprio sito, evidenziando contestualmente quanto siano importanti i percorsi di collaborazione e condivisione di un modello che ha valenza nazionale. Su questi temi è molto utile un continuo confronto che arricchisca l’esperienza attuale e contribuisca a migliorare quanto finora fatto con l’aiuto di tutti, per garantire una visione strategica e condivisa sui servizi al cittadino e sui nuovi scenari offerti dalle tecnologie dell’informazione e della comunicazione.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">torna all'inizio dei contenuti</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Progetto di</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaborazione con</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/it/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali">Note legali</a></li>
+      
+      
+      <li><a href="/it/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>

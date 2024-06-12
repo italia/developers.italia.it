@@ -1,0 +1,4664 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    GlobaLeaks
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="GlobaLeaks - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/en/software/github.com/globaleaks/globaleaks.html" />
+<meta property="og:url" content="https://developers.italia.it/en/software/github.com/globaleaks/globaleaks.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GlobaLeaks - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Sviluppiamo i servizi pubblici, insieme","headline":"GlobaLeaks - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/en/software/github.com/globaleaks/globaleaks.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202406121443" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "en";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-default">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accept</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Three-year Plan</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Communities</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Tools</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ENG</span>
+    <span class="sr-only">current language:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it/software/github.com/globaleaks/globaleaks.html"><span lang="it">italiano</span>
+        
+        
+        </a>
+      </li>
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en/software/github.com/globaleaks/globaleaks.html"><span lang="en">english</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Three-year Plan</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Communities</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Tools</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">We develop public services, together</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Follow us</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/en/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Navigation menu</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/platforms" class="Linklist-link "  >
+        
+        Platforms
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/en/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperability
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/how" class="Linklist-link "  >
+        
+        How to use it
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/get-involved" class="Linklist-link "  >
+        
+        Get involved
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/contacts" class="Linklist-link "  >
+        
+        Contacts
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/platforms" class="Linklist-link "  >
+        
+        Platforms
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/en/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperability
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/how" class="Linklist-link "  >
+        
+        How to use it
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/get-involved" class="Linklist-link "  >
+        
+        Get involved
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/en/contacts" class="Linklist-link "  >
+        
+        Contacts
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        
+        <img alt="" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/brand/assets/globaleaks-icon-color.svg?sanitize=true" class="d-inline-block" />
+        
+        <h1 class="d-inline-block">
+          GlobaLeaks
+          <span class="badge badge-pill badge-pill--sup badge-primary">4.15.5</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            Whistleblowing Software
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            GlobaLeaks is free, open source software enabling anyone to easily set up and maintain a secure whistleblowing platform
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?categories=whistleblowing">whistleblowing</a>
+</li>
+
+              
+            </ul>
+            
+          </div>
+          <div class="row legal-main-info">
+            <div class="col-sm">
+              <p><span class="label">Published by </span>
+                
+                GlobaLeaks
+                
+              </p>
+            </div>
+            
+
+            
+            <div class="col-sm">
+              <p><span class="label">Technical contact </span>
+                
+                    
+                    <a href="mailto:giovanni.pellerano@globaleaks.org">Giovanni Pellerano</a>
+                    
+                    +390287186005
+                
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <div class="drops-details">
+        <div class="vitality-score">
+          <div class="status-developement">
+            <p>Development status: 
+
+
+<span class="status"> stable </span> 
+ </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drops-details">
+        
+        <div class="goto">
+          <p>
+            <a
+              href="https://www.globaleaks.org/"
+              aria-label="Go to the software's site (external link)"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-proofer-ignore
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Project's website &rarr;</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="goto doc">
+          <p><a href="https://docs.globaleaks.org/" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentation &rarr;</a></p>
+        </div>
+        
+        <div class="goto code">
+          <p><a href="https://github.com/globaleaks/GlobaLeaks"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+        </div>
+        
+        <div class="goto road">
+          <p><a href="https://docs.globaleaks.org/en/main/roadmap/"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="tiled-gallery">
+  <div class="tiled-gallery-inner">
+    
+    
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/home.png"
+      data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/home.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/home.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/home.png" alt="Screenshot" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/submission.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/submission.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/submission.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/submission.png" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/receipt.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/receipt.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/receipt.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/receipt.png" alt="Screenshot" />
+      </a>
+      
+    </div>
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/access.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/access.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/access.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/access.png" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/report.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/report.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/report.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/whistleblower/report.png" alt="Screenshot" />
+      </a>
+      
+    </div>
+    
+    <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/user/login.png"
+      data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/user/login.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/user/login.png">
+      <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/user/login.png" alt="Screenshot" />
+    </a>
+    
+    <div class="tiled-items-container">
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/reports.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/reports.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/reports.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/reports.png" alt="Screenshot" />
+      </a>
+      
+      <a class="tiled-item" href="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/report.png"
+        data-size="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/report.pngxhttps://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/report.png">
+        <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://raw.githubusercontent.com/globaleaks/globaleaks/HEAD/documentation/images/recipient/report.png" alt="Screenshot" />
+      </a>
+      
+    </div>
+    
+
+    
+
+  </div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-link tiled-gallery-btn" type="button">
+    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="/assets/icons/camera.png">&nbsp;
+    View all the images
+  </button>
+</div>
+
+
+<hr class="divider mb-0">
+
+<div class=" container-fluid ">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Software functionality </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> PNRR </p>
+            
+            <p> PNRR/Beneficiari/Altri enti </p>
+            
+            <p> PNRR/Beneficiari/ASL </p>
+            
+            <p> PNRR/Beneficiari/Comuni </p>
+            
+            <p> PNRR/Beneficiari/Enti Regionali </p>
+            
+            <p> PNRR/Beneficiari/Istituti di ricerca e AFAM </p>
+            
+            <p> PNRR/Beneficiari/PA Centrali </p>
+            
+            <p> PNRR/Beneficiari/Province </p>
+            
+            <p> PNRR/Beneficiari/Scuole </p>
+            
+            <p> PNRR/Beneficiari/Università </p>
+            
+            <p>
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature" class="count">Show all
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              
+              <p> PNRR/Misura/1.1 </p>
+              
+              <p> PNRR/Misura/1.4.1 </p>
+              
+              <p> PNRR/Misura/1.6 </p>
+              
+              <p> Multi-user system with customizable user roles (whistleblower, recipient, administrator) </p>
+              
+              <p> Entirely manageable from a web administration interface </p>
+              
+              <p> Support for more than 90 languages with Right-to-Left (RTL) </p>
+              
+              <p> Receive reports from whistleblower through structured multi-step questionnaire </p>
+              
+              <p> Let whistleblowers decide if and when to confidentially declare their identity </p>
+              
+              <p> Exchange multimedia files with whistleblower </p>
+              
+              <p> Secure management of files&#39; access and visualization </p>
+              
+              <p> Chat with whistleblower to discuss the report </p>
+              
+              <p> Unique 16-digit receipt for the whistleblower to log back in anonymously </p>
+              
+              <p> Simple recipient interface for receiving and analyzing reports </p>
+              
+              <p> Support for the categorization of the reports with labels </p>
+              
+              <p> Support for the user search of reports </p>
+              
+              <p> Support for assigning and creating case management statuses </p>
+              
+              <p> Customizable look and feel (logo, colour, styles, font, text) </p>
+              
+              <p> Define multiple reporting channels/contexts (e.g. per-topic, per-department) </p>
+              
+              <p> Create and manage multiple whistleblowing site (e.g for subsidiaries or third party clients) </p>
+              
+              <p> Advanced questionnaire builder </p>
+              
+              <p> Whistleblowing system statistics </p>
+              
+              <p> Designed in adherence with ISO 37002:2021 and EU Directive 2019/1937 </p>
+              
+              <p> Bidirectional anonymous communication (comments/messages) </p>
+              
+              <p> Customizable case management workflow (statuses/sub-statuses) </p>
+              
+              <p> Whistleblower identity conditional reporting workflow </p>
+              
+              <p> Manage conflict of interest in the reporting workflow </p>
+              
+              <p> Custodian functionality to authorize access to whistleblower identity </p>
+              
+              <p> GDPR privacy by design and by default </p>
+              
+              <p> GDPR configurable data retention policies </p>
+              
+              <p> GDPR compliant subscriber module for new users of SaaS services </p>
+              
+              <p> No logs of IP addresses </p>
+              
+              <p> Audit log </p>
+              
+              <p> Integratable with existing enterprise case management platform </p>
+              
+              <p> Free Software OSI Approved AGPL 3.0 License </p>
+              
+              <p> Designed in adherence with `ISO 27001:2022 </p>
+              
+              <p> Full data encryption of data and metadata exchanged via the platform </p>
+              
+              <p> Digital anonymity support with Tor integration </p>
+              
+              <p> Built-in HTTPS support with TLS 1.3 standard (SSLabs A+ rating) </p>
+              
+              <p> Automatic free digital certificate enrollment (Let’s Encrypt) </p>
+              
+              <p> Multiple penetration tests with full public reports </p>
+              
+              <p> Conform to industry standards and best practices for application security (OWASP) </p>
+              
+              <p> Two-Factor authentication (2FA) support compliant to standard TOTP RFC 6238 </p>
+              
+              <p> Integrated network sandboxing with iptables </p>
+              
+              <p> Integrated application sandboxing with AppArmor </p>
+              
+              <p> Complete protection against automated submissions (spam prevention) </p>
+              
+              <p> Subject to continuous peer-review and periodic security audits </p>
+              
+              <p> PGP support for encrypted email notifications and encrypted file downloads </p>
+              
+              <p> Does not leave traces on browser cache </p>
+              
+              <p> Multi-site support enabling to run multiple virtual site on the same setup </p>
+              
+              <p> Responsive user interfaces built with Boostrap CSS framework </p>
+              
+              <p> Built-in Accessibility Support with WAI-ARIA compliance </p>
+              
+              <p> Automated Software Quality Measurement and Continuous Integration Testing </p>
+              
+              <p> Long-Term Support plan (LTS) </p>
+              
+              <p> Built with lightweight framework technologies (AngularJS and Python Twisted) </p>
+              
+              <p> Integrated SQLite database </p>
+              
+              <p> Automatic setup of Tor Onion Services Version 3 </p>
+              
+              <p> Support for self-service signup for whistleblowing SaaS service setup </p>
+              
+              <p> Support for Linux operating system (Debian/Ubuntu) </p>
+              
+              <p> Deb Packaging with repository for update/upgrades </p>
+              
+              <p> Full self-contained application </p>
+              
+              <p> Easy integration of the platform with existing websites and intranets </p>
+              
+              <p> REST API </p>
+              
+            </div>
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Used by 1405
+              
+              administrations
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> ANAC - Autorità Nazionale Anticorruzione </p>
+              
+              <p> Ministero della Difesa </p>
+              
+              <p> Ministero della Giustizia </p>
+              
+              <p> A.s.l. Napoli 1 Centro </p>
+              
+              <p> Abbanoa </p>
+              
+              <p> Abc Latina </p>
+              
+              <p> Aca Spa </p>
+              
+              <p> Acer Ferrara </p>
+              
+              <p> Acer Forlì Cesena </p>
+              
+              <p> Acer Rimini </p>
+              
+              <p> Aci </p>
+              
+              <p> Acimmagine S.r.l </p>
+              
+              <p> Acimmagine Srl </p>
+              
+              <p> Acqualatina Spa </p>
+              
+              <p> Acque Veronesi Scarl </p>
+              
+              <p> Acquedotto Pugliese </p>
+              
+              <p> Adisu Puglia </p>
+              
+              <p> Adisu – Agenzia Per Il Diritto Allo Studio Dell’umbria </p>
+              
+              <p> Adsp Mar Tirreno Centro Settentrionale </p>
+              
+              <p> Aeb Spa </p>
+              
+              <p> Aemme Linea Ambiente Srl </p>
+              
+              <p> Aemme Linea Distribuzione Srl </p>
+              
+              <p> Agec – Azienda Gestione Edifici Comunali Verona </p>
+              
+              <p> Agecontrol S.p.a. </p>
+              
+              <p> Agecontrol Spa </p>
+              
+              <p> Agenzia Della Mobilità Piemontese </p>
+              
+              <p> Agenzia Di Controllo Del Sistema Socio Sanitario Lombardo </p>
+              
+              <p> Agenzia In Liguria – Agenzia Regionale Di Promozione Turistica </p>
+              
+              <p> Agenzia Per L&#39;italia Digitale (Agid) </p>
+              
+              <p> Agenzia Regionale Di Sanità Toscana </p>
+              
+              <p> Agris Sardegna – Agenzia Regionale Per La Ricerca In Agricoltura </p>
+              
+              <p> Aifa Agenzia Italiana Del Farmaco </p>
+              
+              <p> Aimag Spa </p>
+              
+              <p> Air Mobilità Avellino </p>
+              
+              <p> Ales Spa </p>
+              
+              <p> Alfa Liguria </p>
+              
+              <p> Aliseo – Agenzia Ligure Per Gli Studenti E L’orientamento </p>
+              
+              <p> Ama Rozzano Spa </p>
+              
+              <p> Ambito Territoriale Social N.3 Ausl Br/1 </p>
+              
+              <p> Amga Legnano Spa </p>
+              
+              <p> Amgas Srl </p>
+              
+              <p> Amicobus Cascina Srl </p>
+              
+              <p> Amiu Genova Spa </p>
+              
+              <p> Amos </p>
+              
+              <p> Amsa Srl </p>
+              
+              <p> Amt Spa – Azienda Mobilità E Trasporti Verona </p>
+              
+              <p> Amtab – Azienda Mobilità E Trasporti Bari S.p.a. </p>
+              
+              <p> Anpal Servizi Spa </p>
+              
+              <p> Ansf - Agenzia Nazionale Per La Sicurezza Delle Ferrovie </p>
+              
+              <p> Antica Scuola Dei Battuti </p>
+              
+              <p> Anvur </p>
+              
+              <p> Aou Careggi </p>
+              
+              <p> Aou Ordine Mauriziano Torino </p>
+              
+              <p> Aou San Luigi Gonzaga Di Orbassano </p>
+              
+              <p> Apt Basilicata </p>
+              
+              <p> Apt Servizi Srl </p>
+              
+              <p> Arca Puglia Centrale </p>
+              
+              <p> Arcea </p>
+              
+              <p> Area Azienda Regionale Per L’edilizia Abitativa </p>
+              
+              <p> Arechi Multiservice Spa </p>
+              
+              <p> Aress Puglia </p>
+              
+              <p> Areus Azienda Regionale Emergenza Urgenza Sardegna </p>
+              
+              <p> Arexpo </p>
+              
+              <p> Arezzo Casa Spa </p>
+              
+              <p> Arezzo Multiservizi Srl </p>
+              
+              <p> Arnas Civico Di Cristina Benfratelli </p>
+              
+              <p> Arnas Garibaldi </p>
+              
+              <p> Arpa Agenzia Regionale Per La Protezione Dell’ambiente Friuli Venezia Giulia </p>
+              
+              <p> Art-er Attrattività Ricerca Territorio </p>
+              
+              <p> Asfmc Bresso </p>
+              
+              <p> Asia Azienda Speciale Per L&#39;igiene Ambientale </p>
+              
+              <p> Asips Caserta </p>
+              
+              <p> Asis Trento </p>
+              
+              <p> Asl 1 Abruzzo </p>
+              
+              <p> Asl 1 Liguria – Imperiese </p>
+              
+              <p> Asl 2 Liguria – Savonese </p>
+              
+              <p> Asl 3 Liguria – Genovese </p>
+              
+              <p> Asl 4 Liguria – Chiavarese </p>
+              
+              <p> Asl 4 Teramo </p>
+              
+              <p> Asl 4 Torino </p>
+              
+              <p> Asl Bari </p>
+              
+              <p> Asl Barletta – Andria – Trani </p>
+              
+              <p> Asl Biella </p>
+              
+              <p> Asl Napoli 3 Sud </p>
+              
+              <p> Asl Torino 3 </p>
+              
+              <p> Asl Torino 5 </p>
+              
+              <p> Asl Verbano Cusio Ossola </p>
+              
+              <p> Asl Vercelli </p>
+              
+              <p> Asm Codogno </p>
+              
+              <p> Asm Costruire Insieme </p>
+              
+              <p> Asm Terni Spa </p>
+              
+              <p> Asp Basso Lodigiano </p>
+              
+              <p> Asp Crotone </p>
+              
+              <p> Asp Del Delta Ferrarese </p>
+              
+              <p> Asp Piccolomini-sereni </p>
+              
+              <p> Aspal – Agenzia Sarda Per Le Politiche Del Lavoro </p>
+              
+              <p> Aspo Spa </p>
+              
+              <p> Associazione Oasi Maria Ss. Onlus </p>
+              
+              <p> Asst Bergamo Est </p>
+              
+              <p> Asst Grande Ospedale Metropolitano Niguarda </p>
+              
+              <p> Asst Monza </p>
+              
+              <p> Asst Valle Olona </p>
+              
+              <p> Astea Spa </p>
+              
+              <p> Atap S.p.a. </p>
+              
+              <p> Atc Piemonte Centrale </p>
+              
+              <p> Ater Belluno </p>
+              
+              <p> Ater Gorizia </p>
+              
+              <p> Ater Matera </p>
+              
+              <p> Ater Pordenone </p>
+              
+              <p> Ater Potenza </p>
+              
+              <p> Ater Teramo </p>
+              
+              <p> Ater Treviso </p>
+              
+              <p> Ater Udine </p>
+              
+              <p> Ater Umbria </p>
+              
+              <p> Atm Azienda Trasporti Di Messina </p>
+              
+              <p> Ats Milano Città Metropolitana </p>
+              
+              <p> Ats Pavia </p>
+              
+              <p> Ats Sardegna </p>
+              
+              <p> Ats Val Padana </p>
+              
+              <p> Autorità Di Bacino Laghi Garda E Idro </p>
+              
+              <p> Autorità Di Sistema Portuale Del Mar Ligure Orientale </p>
+              
+              <p> Autorità Di Sistema Portuale Del Mare Di Sardegna </p>
+              
+              <p> Autorità Di Sistema Portuale Del Mare Di Sicilia Occidentale </p>
+              
+              <p> Autorità Nazionale Anticorruzione (Anac) </p>
+              
+              <p> Autorità Per Le Garanzie Nelle Comunicazioni (Agcom) </p>
+              
+              <p> Autorità Portuale Del Levante / Mar Adriatico Meridionale </p>
+              
+              <p> Autoservizi Irpini Spa </p>
+              
+              <p> Autostazione Di Bologna Srl </p>
+              
+              <p> Avvocatura Dello Stato </p>
+              
+              <p> Azienda Farmaceutica Municipalizzata Follonica </p>
+              
+              <p> Azienda Metropolitana Trasporti Catania Spa </p>
+              
+              <p> Azienda Ospedaliera Di Padova </p>
+              
+              <p> Azienda Ospedaliera Di Perugia </p>
+              
+              <p> Azienda Ospedaliera Ospedali Riuniti Marche Nord </p>
+              
+              <p> Azienda Ospedaliera Per L’emergenza Cannizzaro </p>
+              
+              <p> Azienda Ospedaliera Policlinico Universitario “g. Martino” </p>
+              
+              <p> Azienda Ospedaliera S. Croce E Carle Di Cuneo </p>
+              
+              <p> Azienda Ospedaliera San Giovanni Moscati </p>
+              
+              <p> Azienda Ospedaliera San Pio </p>
+              
+              <p> Azienda Ospedaliera Sant’anna E San Sebastiano Di Caserta </p>
+              
+              <p> Azienda Ospedaliera Ss. Antonio E Biagio E Cesare Arrigo Alessandria </p>
+              
+              <p> Azienda Ospedaliero-universitaria Consorziale Policlinico Bari </p>
+              
+              <p> Azienda Ospedaliero-universitaria Ospedali Riuniti Di Foggia </p>
+              
+              <p> Azienda Ospedaliero-universitaria Policlinico Vittorio Emanuele Di Catania </p>
+              
+              <p> Azienda Ospedaliero-universitaria San Giovanni Di Dio E Ruggi D’aragona – Salerno </p>
+              
+              <p> Azienda Per Il Diritto Agli Studi Universitari Di Chieti </p>
+              
+              <p> Azienda Pisana Edilizia Sociale </p>
+              
+              <p> Azienda Provinciale Per I Servizi Sanitari Trento </p>
+              
+              <p> Azienda Pubblici Servizi Aosta Spa </p>
+              
+              <p> Azienda Sanitaria Provinciale Di Catania </p>
+              
+              <p> Azienda Sanitaria Provinciale Di Palermo </p>
+              
+              <p> Azienda Sanitaria Provinciale Di Ragusa </p>
+              
+              <p> Azienda Sanitaria Provinciale Di Siracusa </p>
+              
+              <p> Azienda Sanitaria Universitaria Friuli Centrale </p>
+              
+              <p> Azienda Servizi Sociali Di Bolzano </p>
+              
+              <p> Azienda Siciliana Trasporti </p>
+              
+              <p> Azienda Sociale Castano </p>
+              
+              <p> Azienda Sociale Del Legnanese (So.le) </p>
+              
+              <p> Azienda Socio Sanitaria Territoriale (A.s.s.t.) Melegnano E Della Martesana </p>
+              
+              <p> Azienda Socio Sanitaria Territoriale (Asst) Dei Sette Laghi Varese </p>
+              
+              <p> Azienda Socio-sanitaria Territoriale Di Pavia </p>
+              
+              <p> Azienda Speciale Consortile Medio Olona </p>
+              
+              <p> Azienda Speciale Farmacie Comunali Peschiera </p>
+              
+              <p> Azienda Speciale Pluriservizi Di Magnago </p>
+              
+              <p> Azienda Speciale Servizi Sanitari Vergiate </p>
+              
+              <p> Azienda Specializzata Settore Multiservizi Spa </p>
+              
+              <p> Azienda Territoriale Energia E Servizi </p>
+              
+              <p> Azienda Trasporti Pubblici Nuoro </p>
+              
+              <p> Azienda Ulss 08 Berica </p>
+              
+              <p> Azienda Ulss 09 Scaligera </p>
+              
+              <p> Azienda-ospedaliero Universitaria Di Sassari </p>
+              
+              <p> Bari Multiservizi S.p.a. </p>
+              
+              <p> Bim Del Chiese </p>
+              
+              <p> Bmti - Borsa Merci Telematica Italiana </p>
+              
+              <p> Bologna Welcome Srl </p>
+              
+              <p> Brescia Infrastrutture Srl </p>
+              
+              <p> Brianzacque Srl </p>
+              
+              <p> Brindisi Multiservizi </p>
+              
+              <p> C.i.a.s.s. – Consorzio Isola Di Ariano Servizi Sociali </p>
+              
+              <p> Cadf Spa </p>
+              
+              <p> Caltaqua S.p.a. </p>
+              
+              <p> Camera Arbitrale Di Milano </p>
+              
+              <p> Camera Di Commercio - Teramo </p>
+              
+              <p> Camera Di Commercio Avellino </p>
+              
+              <p> Camera Di Commercio Bari </p>
+              
+              <p> Camera Di Commercio Benevento </p>
+              
+              <p> Camera Di Commercio Bologna </p>
+              
+              <p> Camera Di Commercio Caserta </p>
+              
+              <p> Camera Di Commercio Catanzaro </p>
+              
+              <p> Camera Di Commercio Firenze </p>
+              
+              <p> Camera Di Commercio Maremma E Tirreno </p>
+              
+              <p> Camera Di Commercio Milano Lodi Monza Brianza </p>
+              
+              <p> Camera Di Commercio Pisa </p>
+              
+              <p> Camera Di Commercio Vibo Valentia </p>
+              
+              <p> Camvo Spa </p>
+              
+              <p> Casa Atc Servizi Srl </p>
+              
+              <p> Casa Di Cura Policlinico Abano Terme </p>
+              
+              <p> Casa Di Riposo Cartigliano </p>
+              
+              <p> Casinò Di Sanremo S.p.a. </p>
+              
+              <p> Casinò Sanremo S.p.a. </p>
+              
+              <p> Castiglione 2014 Azienda Speciale </p>
+              
+              <p> Castiglione Olona Servizi </p>
+              
+              <p> Cciaa - L&#39;aquila </p>
+              
+              <p> Cciaa Roma </p>
+              
+              <p> Cemambiente Spa </p>
+              
+              <p> Centro Agro Alimentare Di Napoli Scpa </p>
+              
+              <p> Centro Formativo Provinciale Giuseppe Zanardelli </p>
+              
+              <p> Centro Marche Acqua </p>
+              
+              <p> Centro Studi Delle Camere Di Commercio Guglielmo Tagliacarne </p>
+              
+              <p> Cep Spa </p>
+              
+              <p> Cira Centro Italiano Ricerche Aerospaziali </p>
+              
+              <p> Ciss Borgomanero </p>
+              
+              <p> Cisterna Ambiente Spa </p>
+              
+              <p> Città Metropolitana Di Catania </p>
+              
+              <p> Città Metropolitana Di Firenze </p>
+              
+              <p> Città Metropolitana Di Palermo </p>
+              
+              <p> Cogeser S.p.a. </p>
+              
+              <p> Cogeser Spa </p>
+              
+              <p> Cogesi Scrl </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Ancona </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Lecco </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Milano </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Rimini </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Roma </p>
+              
+              <p> Collegio Geometri E Geometri Laureati Della Provincia Di Varese </p>
+              
+              <p> Collegio Geometri Provincia Di Trento </p>
+              
+              <p> Collegio Nazionale Dei Periti Agrari E Dei Periti Agrari Laureati </p>
+              
+              <p> Collegio Nazionale Guide Alpine Italiane </p>
+              
+              <p> Collegio Provinciale Geometri E Geometri Laureati Di Fermo </p>
+              
+              <p> Collegio Regionale Veneto Guide Alpine </p>
+              
+              <p> Comando Vigili Del Fuoco Di Latina </p>
+              
+              <p> Commissario Ricostruzione Genova </p>
+              
+              <p> Comune Di Abano Terme </p>
+              
+              <p> Comune Di Aci Bonaccorsi </p>
+              
+              <p> Comune Di Acqui Terme </p>
+              
+              <p> Comune Di Agliana </p>
+              
+              <p> Comune Di Agna </p>
+              
+              <p> Comune Di Agordo </p>
+              
+              <p> Comune Di Agropoli </p>
+              
+              <p> Comune Di Airola </p>
+              
+              <p> Comune Di Albavilla </p>
+              
+              <p> Comune Di Albiano </p>
+              
+              <p> Comune Di Albignasego </p>
+              
+              <p> Comune Di Albino </p>
+              
+              <p> Comune Di Aldeno </p>
+              
+              <p> Comune Di Alessandria </p>
+              
+              <p> Comune Di Alessano </p>
+              
+              <p> Comune Di Alfianello </p>
+              
+              <p> Comune Di Alghero </p>
+              
+              <p> Comune Di Alia </p>
+              
+              <p> Comune Di Almenno San Salvatore </p>
+              
+              <p> Comune Di Alpago </p>
+              
+              <p> Comune Di Altamura </p>
+              
+              <p> Comune Di Altavalle </p>
+              
+              <p> Comune Di Altivole </p>
+              
+              <p> Comune Di Altopiano Della Vigolana </p>
+              
+              <p> Comune Di Alvignano </p>
+              
+              <p> Comune Di Alà Dei Sardi </p>
+              
+              <p> Comune Di Amblar-don </p>
+              
+              <p> Comune Di Ancona </p>
+              
+              <p> Comune Di Andalo </p>
+              
+              <p> Comune Di Andria </p>
+              
+              <p> Comune Di Angera </p>
+              
+              <p> Comune Di Anzio </p>
+              
+              <p> Comune Di Aprilia </p>
+              
+              <p> Comune Di Arcade </p>
+              
+              <p> Comune Di Arco </p>
+              
+              <p> Comune Di Arcugnano </p>
+              
+              <p> Comune Di Arese </p>
+              
+              <p> Comune Di Arezzo </p>
+              
+              <p> Comune Di Argelato </p>
+              
+              <p> Comune Di Arluno </p>
+              
+              <p> Comune Di Arona </p>
+              
+              <p> Comune Di Arre </p>
+              
+              <p> Comune Di Arrone </p>
+              
+              <p> Comune Di Arsiero </p>
+              
+              <p> Comune Di Arsiè </p>
+              
+              <p> Comune Di Arzana </p>
+              
+              <p> Comune Di Ascoli Piceno </p>
+              
+              <p> Comune Di Asolo </p>
+              
+              <p> Comune Di Assisi </p>
+              
+              <p> Comune Di Asti </p>
+              
+              <p> Comune Di Atina </p>
+              
+              <p> Comune Di Augusta </p>
+              
+              <p> Comune Di Austis </p>
+              
+              <p> Comune Di Avezzano </p>
+              
+              <p> Comune Di Avio </p>
+              
+              <p> Comune Di Bacolicomune Di Bacoli </p>
+              
+              <p> Comune Di Bagnatica </p>
+              
+              <p> Comune Di Bagnolo In Piano </p>
+              
+              <p> Comune Di Bagolino </p>
+              
+              <p> Comune Di Baiso </p>
+              
+              <p> Comune Di Barasso </p>
+              
+              <p> Comune Di Barberino Tavarnelle </p>
+              
+              <p> Comune Di Baressa </p>
+              
+              <p> Comune Di Barghe </p>
+              
+              <p> Comune Di Bari Sardo </p>
+              
+              <p> Comune Di Bariano </p>
+              
+              <p> Comune Di Barzio </p>
+              
+              <p> Comune Di Baselga Di Piné </p>
+              
+              <p> Comune Di Battaglia Terme </p>
+              
+              <p> Comune Di Battipaglia </p>
+              
+              <p> Comune Di Bedonia </p>
+              
+              <p> Comune Di Bellino </p>
+              
+              <p> Comune Di Belluno </p>
+              
+              <p> Comune Di Belmonte Mezzagno </p>
+              
+              <p> Comune Di Benevento </p>
+              
+              <p> Comune Di Bentivoglio </p>
+              
+              <p> Comune Di Besenello </p>
+              
+              <p> Comune Di Bessude </p>
+              
+              <p> Comune Di Biassono </p>
+              
+              <p> Comune Di Bieno </p>
+              
+              <p> Comune Di Bione </p>
+              
+              <p> Comune Di Bisenti </p>
+              
+              <p> Comune Di Bitti </p>
+              
+              <p> Comune Di Boara Pisani </p>
+              
+              <p> Comune Di Bocenago </p>
+              
+              <p> Comune Di Bodio Lomnago </p>
+              
+              <p> Comune Di Bollate </p>
+              
+              <p> Comune Di Bolzano Vicentino </p>
+              
+              <p> Comune Di Bonate Sotto </p>
+              
+              <p> Comune Di Bonnanaro </p>
+              
+              <p> Comune Di Bonorva </p>
+              
+              <p> Comune Di Borgo Chiave </p>
+              
+              <p> Comune Di Borgo Chiese </p>
+              
+              <p> Comune Di Borgo Lares </p>
+              
+              <p> Comune Di Borgo Valbelluna </p>
+              
+              <p> Comune Di Borgo Virgilio </p>
+              
+              <p> Comune Di Borso Del Grappa </p>
+              
+              <p> Comune Di Bosco Chiesanuova </p>
+              
+              <p> Comune Di Botticino </p>
+              
+              <p> Comune Di Bovezzo </p>
+              
+              <p> Comune Di Bovolone </p>
+              
+              <p> Comune Di Bra </p>
+              
+              <p> Comune Di Brebbia </p>
+              
+              <p> Comune Di Breda Di Piave </p>
+              
+              <p> Comune Di Bregnano </p>
+              
+              <p> Comune Di Brembate </p>
+              
+              <p> Comune Di Brembate Di Sopra </p>
+              
+              <p> Comune Di Bresso </p>
+              
+              <p> Comune Di Brindisi </p>
+              
+              <p> Comune Di Brindisi Montagna </p>
+              
+              <p> Comune Di Brivio </p>
+              
+              <p> Comune Di Broni </p>
+              
+              <p> Comune Di Brugnera </p>
+              
+              <p> Comune Di Brunello </p>
+              
+              <p> Comune Di Bucine </p>
+              
+              <p> Comune Di Busca </p>
+              
+              <p> Comune Di Bussolengo </p>
+              
+              <p> Comune Di Cadelbosco Di Sopra </p>
+              
+              <p> Comune Di Caderzone Terme </p>
+              
+              <p> Comune Di Calatabiano </p>
+              
+              <p> Comune Di Calcinato </p>
+              
+              <p> Comune Di Calcio </p>
+              
+              <p> Comune Di Calco </p>
+              
+              <p> Comune Di Caldes </p>
+              
+              <p> Comune Di Caldiero </p>
+              
+              <p> Comune Di Caldogno </p>
+              
+              <p> Comune Di Calenzano </p>
+              
+              <p> Comune Di Calimera </p>
+              
+              <p> Comune Di Calliano </p>
+              
+              <p> Comune Di Caltanissetta </p>
+              
+              <p> Comune Di Calto </p>
+              
+              <p> Comune Di Calusco D’adda </p>
+              
+              <p> Comune Di Calvi Dell’umbria </p>
+              
+              <p> Comune Di Campobasso </p>
+              
+              <p> Comune Di Campobello Di Licata </p>
+              
+              <p> Comune Di Canal San Bovo </p>
+              
+              <p> Comune Di Canaro </p>
+              
+              <p> Comune Di Canazei </p>
+              
+              <p> Comune Di Canneto Sull’oglio </p>
+              
+              <p> Comune Di Cantagallo </p>
+              
+              <p> Comune Di Canzo </p>
+              
+              <p> Comune Di Capannori </p>
+              
+              <p> Comune Di Capraia E Limite </p>
+              
+              <p> Comune Di Capralba </p>
+              
+              <p> Comune Di Caprie </p>
+              
+              <p> Comune Di Capurso </p>
+              
+              <p> Comune Di Carbonera </p>
+              
+              <p> Comune Di Carbonia </p>
+              
+              <p> Comune Di Carosino </p>
+              
+              <p> Comune Di Carpignano Salentino </p>
+              
+              <p> Comune Di Carpinone </p>
+              
+              <p> Comune Di Carrara </p>
+              
+              <p> Comune Di Carsoli </p>
+              
+              <p> Comune Di Carzano </p>
+              
+              <p> Comune Di Casalborgone </p>
+              
+              <p> Comune Di Casale Cremasco Vidolasco </p>
+              
+              <p> Comune Di Casale Litta </p>
+              
+              <p> Comune Di Casale Marittimo </p>
+              
+              <p> Comune Di Casale Sul Sile </p>
+              
+              <p> Comune Di Casaleone </p>
+              
+              <p> Comune Di Casaletto Spartano </p>
+              
+              <p> Comune Di Casalgrande </p>
+              
+              <p> Comune Di Casaluce </p>
+              
+              <p> Comune Di Casarile </p>
+              
+              <p> Comune Di Casatenovo </p>
+              
+              <p> Comune Di Casnate Con Bernate </p>
+              
+              <p> Comune Di Casnigo </p>
+              
+              <p> Comune Di Casole D’elsa </p>
+              
+              <p> Comune Di Casoli </p>
+              
+              <p> Comune Di Castagnaro </p>
+              
+              <p> Comune Di Castel D’ario </p>
+              
+              <p> Comune Di Castel D’azzano </p>
+              
+              <p> Comune Di Castel Frentano </p>
+              
+              <p> Comune Di Castel Ivano </p>
+              
+              <p> Comune Di Castel Maggiore </p>
+              
+              <p> Comune Di Castelcucco </p>
+              
+              <p> Comune Di Castelgomberto </p>
+              
+              <p> Comune Di Castellana Grotte </p>
+              
+              <p> Comune Di Castellanza </p>
+              
+              <p> Comune Di Castellarano </p>
+              
+              <p> Comune Di Castelli </p>
+              
+              <p> Comune Di Castello D’argile </p>
+              
+              <p> Comune Di Castello Molina Di Fiemme </p>
+              
+              <p> Comune Di Castelmassa </p>
+              
+              <p> Comune Di Castelnovo Di Sotto </p>
+              
+              <p> Comune Di Castelnuovo </p>
+              
+              <p> Comune Di Castelnuovo Di Porto </p>
+              
+              <p> Comune Di Castelnuovo Di Val Di Cecina </p>
+              
+              <p> Comune Di Castiadas </p>
+              
+              <p> Comune Di Castiglion Fibocchi </p>
+              
+              <p> Comune Di Casto </p>
+              
+              <p> Comune Di Castropignano </p>
+              
+              <p> Comune Di Cavalese </p>
+              
+              <p> Comune Di Cavasso Nuovo </p>
+              
+              <p> Comune Di Cavedago </p>
+              
+              <p> Comune Di Cavedine </p>
+              
+              <p> Comune Di Cavizzana </p>
+              
+              <p> Comune Di Cavour </p>
+              
+              <p> Comune Di Cecina </p>
+              
+              <p> Comune Di Cellere </p>
+              
+              <p> Comune Di Cerea </p>
+              
+              <p> Comune Di Cerignola </p>
+              
+              <p> Comune Di Cernobbio </p>
+              
+              <p> Comune Di Cernusco Sul Naviglio </p>
+              
+              <p> Comune Di Cerrina Monferrato </p>
+              
+              <p> Comune Di Cerro Maggiore </p>
+              
+              <p> Comune Di Cerro Veronese </p>
+              
+              <p> Comune Di Cervarese Santa Croce </p>
+              
+              <p> Comune Di Cervinara </p>
+              
+              <p> Comune Di Cesiomaggiore </p>
+              
+              <p> Comune Di Chiavari </p>
+              
+              <p> Comune Di Chies D’alpago </p>
+              
+              <p> Comune Di Chioggia </p>
+              
+              <p> Comune Di Chiusa Sclafani </p>
+              
+              <p> Comune Di Chiusi </p>
+              
+              <p> Comune Di Chivasso </p>
+              
+              <p> Comune Di Ciampino </p>
+              
+              <p> Comune Di Cigliano </p>
+              
+              <p> Comune Di Cimadolmo </p>
+              
+              <p> Comune Di Cimone </p>
+              
+              <p> Comune Di Cinisello Balsamo </p>
+              
+              <p> Comune Di Cinte Tesino </p>
+              
+              <p> Comune Di Ciserano </p>
+              
+              <p> Comune Di Cittadella </p>
+              
+              <p> Comune Di Città Di Castello </p>
+              
+              <p> Comune Di Civezzano </p>
+              
+              <p> Comune Di Civitavecchia </p>
+              
+              <p> Comune Di Cles </p>
+              
+              <p> Comune Di Clusone </p>
+              
+              <p> Comune Di Codrongianos </p>
+              
+              <p> Comune Di Colico </p>
+              
+              <p> Comune Di Colle D’anchise </p>
+              
+              <p> Comune Di Colle Umberto </p>
+              
+              <p> Comune Di Colle Val D’elsa </p>
+              
+              <p> Comune Di Collebeato </p>
+              
+              <p> Comune Di Colleferro </p>
+              
+              <p> Comune Di Collesalvetti </p>
+              
+              <p> Comune Di Cologno Monzese </p>
+              
+              <p> Comune Di Colognola Ai Colli </p>
+              
+              <p> Comune Di Comacchio </p>
+              
+              <p> Comune Di Comano Terme </p>
+              
+              <p> Comune Di Commezzadura </p>
+              
+              <p> Comune Di Cona </p>
+              
+              <p> Comune Di Conegliano </p>
+              
+              <p> Comune Di Contà </p>
+              
+              <p> Comune Di Copparo </p>
+              
+              <p> Comune Di Corato </p>
+              
+              <p> Comune Di Corbetta </p>
+              
+              <p> Comune Di Corbola </p>
+              
+              <p> Comune Di Cori </p>
+              
+              <p> Comune Di Cornaredo </p>
+              
+              <p> Comune Di Cornuda </p>
+              
+              <p> Comune Di Corsico </p>
+              
+              <p> Comune Di Corte Franca </p>
+              
+              <p> Comune Di Cortina D’ampezzo </p>
+              
+              <p> Comune Di Cossoine </p>
+              
+              <p> Comune Di Costa Di Mezzate </p>
+              
+              <p> Comune Di Costa Volpino </p>
+              
+              <p> Comune Di Costigliole Saluzzo </p>
+              
+              <p> Comune Di Cremenaga </p>
+              
+              <p> Comune Di Crespadoro </p>
+              
+              <p> Comune Di Cuggiono </p>
+              
+              <p> Comune Di Cuglieri </p>
+              
+              <p> Comune Di Curno </p>
+              
+              <p> Comune Di Curti </p>
+              
+              <p> Comune Di Cusano Milanino </p>
+              
+              <p> Comune Di Dambel </p>
+              
+              <p> Comune Di Daverio </p>
+              
+              <p> Comune Di Delianuova </p>
+              
+              <p> Comune Di Denno </p>
+              
+              <p> Comune Di Dimaro Folgarida </p>
+              
+              <p> Comune Di Dolianova </p>
+              
+              <p> Comune Di Drena </p>
+              
+              <p> Comune Di Dro </p>
+              
+              <p> Comune Di Dueville </p>
+              
+              <p> Comune Di Este </p>
+              
+              <p> Comune Di Fabbriche Di Vergemoli </p>
+              
+              <p> Comune Di Fabriano </p>
+              
+              <p> Comune Di Faggiano </p>
+              
+              <p> Comune Di Fai Della Paganella </p>
+              
+              <p> Comune Di Falconara Marittima </p>
+              
+              <p> Comune Di Farnese </p>
+              
+              <p> Comune Di Ferentillo </p>
+              
+              <p> Comune Di Fiesse </p>
+              
+              <p> Comune Di Figline E Incisa Valdarno </p>
+              
+              <p> Comune Di Finale Emilia </p>
+              
+              <p> Comune Di Foligno </p>
+              
+              <p> Comune Di Follina </p>
+              
+              <p> Comune Di Fonni </p>
+              
+              <p> Comune Di Fontanelle </p>
+              
+              <p> Comune Di Fontaniva </p>
+              
+              <p> Comune Di Formello </p>
+              
+              <p> Comune Di Forte Dei Marmi </p>
+              
+              <p> Comune Di Fossalto </p>
+              
+              <p> Comune Di Fragagnano </p>
+              
+              <p> Comune Di Francavilla Fontana </p>
+              
+              <p> Comune Di Fratta Polesine </p>
+              
+              <p> Comune Di Frattamaggiore </p>
+              
+              <p> Comune Di Frosinone </p>
+              
+              <p> Comune Di Fucecchio </p>
+              
+              <p> Comune Di Fumane </p>
+              
+              <p> Comune Di Gaggiano </p>
+              
+              <p> Comune Di Galatro </p>
+              
+              <p> Comune Di Galbiate </p>
+              
+              <p> Comune Di Gallicano </p>
+              
+              <p> Comune Di Galliera </p>
+              
+              <p> Comune Di Gallio </p>
+              
+              <p> Comune Di Galtelli </p>
+              
+              <p> Comune Di Gandino </p>
+              
+              <p> Comune Di Garbagnate Milanese </p>
+              
+              <p> Comune Di Gardone Val Trompia </p>
+              
+              <p> Comune Di Garniga Terme </p>
+              
+              <p> Comune Di Gavardo </p>
+              
+              <p> Comune Di Gazoldo Degli Ippoliti </p>
+              
+              <p> Comune Di Gazzada Schianno </p>
+              
+              <p> Comune Di Gazzaniga </p>
+              
+              <p> Comune Di Gemona Del Friuli </p>
+              
+              <p> Comune Di Genazzano </p>
+              
+              <p> Comune Di Genzano Di Roma </p>
+              
+              <p> Comune Di Giacciano Con Baruchella </p>
+              
+              <p> Comune Di Giavera Del Montello </p>
+              
+              <p> Comune Di Girasole </p>
+              
+              <p> Comune Di Giustino </p>
+              
+              <p> Comune Di Gonnosfanadiga </p>
+              
+              <p> Comune Di Gonnosno’ </p>
+              
+              <p> Comune Di Gonnostramatza </p>
+              
+              <p> Comune Di Gonzaga </p>
+              
+              <p> Comune Di Gorizia </p>
+              
+              <p> Comune Di Gorla Minore </p>
+              
+              <p> Comune Di Gosaldo </p>
+              
+              <p> Comune Di Gradoli </p>
+              
+              <p> Comune Di Gravina In Puglia </p>
+              
+              <p> Comune Di Grezzana </p>
+              
+              <p> Comune Di Grigno </p>
+              
+              <p> Comune Di Grottaferrata </p>
+              
+              <p> Comune Di Gualdo Tadino </p>
+              
+              <p> Comune Di Guardistallo </p>
+              
+              <p> Comune Di Guarene </p>
+              
+              <p> Comune Di Guasila </p>
+              
+              <p> Comune Di Idro </p>
+              
+              <p> Comune Di Iglesias </p>
+              
+              <p> Comune Di Imer </p>
+              
+              <p> Comune Di Impruneta </p>
+              
+              <p> Comune Di Introbio </p>
+              
+              <p> Comune Di Inzago </p>
+              
+              <p> Comune Di Irgoli </p>
+              
+              <p> Comune Di Ischitella </p>
+              
+              <p> Comune Di Iseo </p>
+              
+              <p> Comune Di Isera </p>
+              
+              <p> Comune Di Isnello </p>
+              
+              <p> Comune Di Isola Rizza </p>
+              
+              <p> Comune Di Ispica </p>
+              
+              <p> Comune Di Istrana </p>
+              
+              <p> Comune Di Ittireddu </p>
+              
+              <p> Comune Di Jerago Con Orago </p>
+              
+              <p> Comune Di Jerzu </p>
+              
+              <p> Comune Di Lallio </p>
+              
+              <p> Comune Di Lamezia Terme </p>
+              
+              <p> Comune Di Lanusei </p>
+              
+              <p> Comune Di Latera </p>
+              
+              <p> Comune Di Lauria </p>
+              
+              <p> Comune Di Lavagna </p>
+              
+              <p> Comune Di Lavagno </p>
+              
+              <p> Comune Di Lavenone </p>
+              
+              <p> Comune Di Legnago </p>
+              
+              <p> Comune Di Lei </p>
+              
+              <p> Comune Di Lentate Sul Seveso </p>
+              
+              <p> Comune Di Lequile </p>
+              
+              <p> Comune Di Levico Terme </p>
+              
+              <p> Comune Di Liberi </p>
+              
+              <p> Comune Di Lignano Sabbiadoro </p>
+              
+              <p> Comune Di Limana </p>
+              
+              <p> Comune Di Limbiate </p>
+              
+              <p> Comune Di Loculi </p>
+              
+              <p> Comune Di Lodi </p>
+              
+              <p> Comune Di Loiano </p>
+              
+              <p> Comune Di Lona Lases </p>
+              
+              <p> Comune Di Lonate Pozzolo </p>
+              
+              <p> Comune Di Loreto </p>
+              
+              <p> Comune Di Lunano </p>
+              
+              <p> Comune Di Luras </p>
+              
+              <p> Comune Di Lurate Caccivio </p>
+              
+              <p> Comune Di Lusciano </p>
+              
+              <p> Comune Di Luvinate </p>
+              
+              <p> Comune Di Macchia D’isernia </p>
+              
+              <p> Comune Di Macerata Campania </p>
+              
+              <p> Comune Di Madruzzo </p>
+              
+              <p> Comune Di Magenta </p>
+              
+              <p> Comune Di Magomadas </p>
+              
+              <p> Comune Di Magreglio </p>
+              
+              <p> Comune Di Malgrate </p>
+              
+              <p> Comune Di Malè </p>
+              
+              <p> Comune Di Mandello Del Lario </p>
+              
+              <p> Comune Di Manerba Del Garda </p>
+              
+              <p> Comune Di Mansuè </p>
+              
+              <p> Comune Di Mapello </p>
+              
+              <p> Comune Di Marano Principato </p>
+              
+              <p> Comune Di Marano Vicentino </p>
+              
+              <p> Comune Di Mariana Mantovana </p>
+              
+              <p> Comune Di Mariano Comense </p>
+              
+              <p> Comune Di Mariglianella </p>
+              
+              <p> Comune Di Marino </p>
+              
+              <p> Comune Di Marostica </p>
+              
+              <p> Comune Di Marsaglia </p>
+              
+              <p> Comune Di Marsala </p>
+              
+              <p> Comune Di Marsico Nuovo </p>
+              
+              <p> Comune Di Martina Franca </p>
+              
+              <p> Comune Di Martinengo </p>
+              
+              <p> Comune Di Martinsicuro </p>
+              
+              <p> Comune Di Maruggio </p>
+              
+              <p> Comune Di Masainas </p>
+              
+              <p> Comune Di Maser </p>
+              
+              <p> Comune Di Masi Torello </p>
+              
+              <p> Comune Di Massa Di Somma </p>
+              
+              <p> Comune Di Massafra </p>
+              
+              <p> Comune Di Matera </p>
+              
+              <p> Comune Di Mazzè </p>
+              
+              <p> Comune Di Meda </p>
+              
+              <p> Comune Di Meduna Di Livenza </p>
+              
+              <p> Comune Di Melle </p>
+              
+              <p> Comune Di Mesagne </p>
+              
+              <p> Comune Di Mezzana </p>
+              
+              <p> Comune Di Mezzano </p>
+              
+              <p> Comune Di Mezzocorona </p>
+              
+              <p> Comune Di Mezzolombardo </p>
+              
+              <p> Comune Di Milano </p>
+              
+              <p> Comune Di Milazzo </p>
+              
+              <p> Comune Di Milzano </p>
+              
+              <p> Comune Di Minucciano </p>
+              
+              <p> Comune Di Mirabella Eclano </p>
+              
+              <p> Comune Di Misterbianco </p>
+              
+              <p> Comune Di Modolo </p>
+              
+              <p> Comune Di Moena </p>
+              
+              <p> Comune Di Mogoro </p>
+              
+              <p> Comune Di Molfetta </p>
+              
+              <p> Comune Di Molochio </p>
+              
+              <p> Comune Di Molveno </p>
+              
+              <p> Comune Di Mondovì </p>
+              
+              <p> Comune Di Mondragone </p>
+              
+              <p> Comune Di Moneglia </p>
+              
+              <p> Comune Di Monfumo </p>
+              
+              <p> Comune Di Monghidoro </p>
+              
+              <p> Comune Di Montaquila </p>
+              
+              <p> Comune Di Monte Argentario </p>
+              
+              <p> Comune Di Montebelluna </p>
+              
+              <p> Comune Di Montecarlo </p>
+              
+              <p> Comune Di Montecatini Val Di Cecina </p>
+              
+              <p> Comune Di Montecchia Di Crosara </p>
+              
+              <p> Comune Di Montecorvino Pugliano </p>
+              
+              <p> Comune Di Monteforte D’alpone </p>
+              
+              <p> Comune Di Montegaldella </p>
+              
+              <p> Comune Di Montello </p>
+              
+              <p> Comune Di Montemurlo </p>
+              
+              <p> Comune Di Monteroni Di Lecce </p>
+              
+              <p> Comune Di Montevarchi </p>
+              
+              <p> Comune Di Monticello Conte Otto </p>
+              
+              <p> Comune Di Montorfano </p>
+              
+              <p> Comune Di Montresta </p>
+              
+              <p> Comune Di Monza </p>
+              
+              <p> Comune Di Morcone </p>
+              
+              <p> Comune Di Moretta </p>
+              
+              <p> Comune Di Mori </p>
+              
+              <p> Comune Di Mornago </p>
+              
+              <p> Comune Di Motta Sant’anastasia </p>
+              
+              <p> Comune Di Mottola </p>
+              
+              <p> Comune Di Mozzanica </p>
+              
+              <p> Comune Di Mozzo </p>
+              
+              <p> Comune Di Muros </p>
+              
+              <p> Comune Di Muscoline </p>
+              
+              <p> Comune Di Nago-torbole </p>
+              
+              <p> Comune Di Nave </p>
+              
+              <p> Comune Di Nembro </p>
+              
+              <p> Comune Di Nettuno </p>
+              
+              <p> Comune Di Nichelino </p>
+              
+              <p> Comune Di Nogarole Rocca </p>
+              
+              <p> Comune Di Nomi </p>
+              
+              <p> Comune Di Novaledo </p>
+              
+              <p> Comune Di Nove </p>
+              
+              <p> Comune Di Novella </p>
+              
+              <p> Comune Di Novi Ligure </p>
+              
+              <p> Comune Di Nuoro </p>
+              
+              <p> Comune Di Oderzo </p>
+              
+              <p> Comune Di Oggiona Con Santo Stefano </p>
+              
+              <p> Comune Di Olbia </p>
+              
+              <p> Comune Di Oliena </p>
+              
+              <p> Comune Di Olmedo </p>
+              
+              <p> Comune Di Olzai </p>
+              
+              <p> Comune Di Ome </p>
+              
+              <p> Comune Di Onano </p>
+              
+              <p> Comune Di Onifai </p>
+              
+              <p> Comune Di Opera </p>
+              
+              <p> Comune Di Oppeano </p>
+              
+              <p> Comune Di Orciano Pisano </p>
+              
+              <p> Comune Di Orgiano </p>
+              
+              <p> Comune Di Orio Al Serio </p>
+              
+              <p> Comune Di Orio Litta </p>
+              
+              <p> Comune Di Oristano </p>
+              
+              <p> Comune Di Ornago </p>
+              
+              <p> Comune Di Orosei </p>
+              
+              <p> Comune Di Ortona </p>
+              
+              <p> Comune Di Ospedaletto </p>
+              
+              <p> Comune Di Ospitale Di Cadore </p>
+              
+              <p> Comune Di Ossana </p>
+              
+              <p> Comune Di Ostiano </p>
+              
+              <p> Comune Di Otricoli </p>
+              
+              <p> Comune Di Ottana </p>
+              
+              <p> Comune Di Ottaviano </p>
+              
+              <p> Comune Di Ovaro </p>
+              
+              <p> Comune Di Ovodda </p>
+              
+              <p> Comune Di Ozzano Dell’emilia </p>
+              
+              <p> Comune Di Paceco </p>
+              
+              <p> Comune Di Padria </p>
+              
+              <p> Comune Di Padula </p>
+              
+              <p> Comune Di Pagazzano </p>
+              
+              <p> Comune Di Paglieta </p>
+              
+              <p> Comune Di Paladina </p>
+              
+              <p> Comune Di Palagiano </p>
+              
+              <p> Comune Di Palau </p>
+              
+              <p> Comune Di Palazzolo Sull’oglio </p>
+              
+              <p> Comune Di Palestrina </p>
+              
+              <p> Comune Di Palmi </p>
+              
+              <p> Comune Di Panchià </p>
+              
+              <p> Comune Di Pantigliate </p>
+              
+              <p> Comune Di Partinico </p>
+              
+              <p> Comune Di Pasiano Di Pordenone </p>
+              
+              <p> Comune Di Pauli Arbarei </p>
+              
+              <p> Comune Di Pavia </p>
+              
+              <p> Comune Di Pecetto Torinese </p>
+              
+              <p> Comune Di Pedavena </p>
+              
+              <p> Comune Di Peio </p>
+              
+              <p> Comune Di Pellizzano </p>
+              
+              <p> Comune Di Pelugo </p>
+              
+              <p> Comune Di Perdasdefogu </p>
+              
+              <p> Comune Di Pergine Valsugana </p>
+              
+              <p> Comune Di Pernumia </p>
+              
+              <p> Comune Di Pero </p>
+              
+              <p> Comune Di Perugia </p>
+              
+              <p> Comune Di Pesche </p>
+              
+              <p> Comune Di Peschiera Borromeo </p>
+              
+              <p> Comune Di Pescolanciano </p>
+              
+              <p> Comune Di Petilia Policastro </p>
+              
+              <p> Comune Di Petruro Irpino </p>
+              
+              <p> Comune Di Piacenza </p>
+              
+              <p> Comune Di Piandimeleto </p>
+              
+              <p> Comune Di Pianezze </p>
+              
+              <p> Comune Di Piasco </p>
+              
+              <p> Comune Di Pietradefusi </p>
+              
+              <p> Comune Di Pieve Di Bono-prezzo </p>
+              
+              <p> Comune Di Pieve Di Cento </p>
+              
+              <p> Comune Di Pieve Tesino </p>
+              
+              <p> Comune Di Pimentel </p>
+              
+              <p> Comune Di Pinasca </p>
+              
+              <p> Comune Di Pinzolo </p>
+              
+              <p> Comune Di Pisa </p>
+              
+              <p> Comune Di Pisciotta </p>
+              
+              <p> Comune Di Pitigliano </p>
+              
+              <p> Comune Di Piubega </p>
+              
+              <p> Comune Di Pogliano Milanese </p>
+              
+              <p> Comune Di Polla </p>
+              
+              <p> Comune Di Pompei </p>
+              
+              <p> Comune Di Ponsacco </p>
+              
+              <p> Comune Di Ponte Lambro </p>
+              
+              <p> Comune Di Ponte Nelle Alpi </p>
+              
+              <p> Comune Di Ponte San Pietro </p>
+              
+              <p> Comune Di Ponteranica </p>
+              
+              <p> Comune Di Ponti Sul Mincio </p>
+              
+              <p> Comune Di Pontirolo Nuovo </p>
+              
+              <p> Comune Di Ponzano Veneto </p>
+              
+              <p> Comune Di Porcari </p>
+              
+              <p> Comune Di Porcia </p>
+              
+              <p> Comune Di Porte Di Rendena </p>
+              
+              <p> Comune Di Porto Ceresio </p>
+              
+              <p> Comune Di Porto Torres </p>
+              
+              <p> Comune Di Porto Viro </p>
+              
+              <p> Comune Di Potenza Picena </p>
+              
+              <p> Comune Di Povegliano </p>
+              
+              <p> Comune Di Povegliano Veronese </p>
+              
+              <p> Comune Di Pozzo D’adda </p>
+              
+              <p> Comune Di Prarostino </p>
+              
+              <p> Comune Di Prata Di Pordenone </p>
+              
+              <p> Comune Di Predaia </p>
+              
+              <p> Comune Di Predazzo </p>
+              
+              <p> Comune Di Premolo </p>
+              
+              <p> Comune Di Presenzano </p>
+              
+              <p> Comune Di Pressana </p>
+              
+              <p> Comune Di Prevalle </p>
+              
+              <p> Comune Di Primiero San Martino Di Castrozza </p>
+              
+              <p> Comune Di Proceno </p>
+              
+              <p> Comune Di Provaglio D’iseo </p>
+              
+              <p> Comune Di Provaglio Valsabbia </p>
+              
+              <p> Comune Di Quartucciu </p>
+              
+              <p> Comune Di Rabbi </p>
+              
+              <p> Comune Di Randazzo </p>
+              
+              <p> Comune Di Ravascletto </p>
+              
+              <p> Comune Di Raveo </p>
+              
+              <p> Comune Di Resana </p>
+              
+              <p> Comune Di Rezzato </p>
+              
+              <p> Comune Di Rho </p>
+              
+              <p> Comune Di Riva Del Garda </p>
+              
+              <p> Comune Di Rizziconi </p>
+              
+              <p> Comune Di Rocca Pietore </p>
+              
+              <p> Comune Di Roccapalumba </p>
+              
+              <p> Comune Di Roccapiemonte </p>
+              
+              <p> Comune Di Romana </p>
+              
+              <p> Comune Di Romano Canavese </p>
+              
+              <p> Comune Di Romano Di Lombardia </p>
+              
+              <p> Comune Di Roncadelle </p>
+              
+              <p> Comune Di Roncegno Terme </p>
+              
+              <p> Comune Di Ronchi Valsugana </p>
+              
+              <p> Comune Di Ronco All’adige </p>
+              
+              <p> Comune Di Roncola </p>
+              
+              <p> Comune Di Rondissone </p>
+              
+              <p> Comune Di Ronzo-chienis </p>
+              
+              <p> Comune Di Rosignano Marittimo </p>
+              
+              <p> Comune Di Rosolina </p>
+              
+              <p> Comune Di Rovereto </p>
+              
+              <p> Comune Di Roverè Veronese </p>
+              
+              <p> Comune Di Rovescala </p>
+              
+              <p> Comune Di Rovigo </p>
+              
+              <p> Comune Di Rozzano </p>
+              
+              <p> Comune Di Rubiana </p>
+              
+              <p> Comune Di Rubiera </p>
+              
+              <p> Comune Di S. Pietro Vernotico </p>
+              
+              <p> Comune Di Saccolongo </p>
+              
+              <p> Comune Di Sacile </p>
+              
+              <p> Comune Di Sadali </p>
+              
+              <p> Comune Di Sagron Mils </p>
+              
+              <p> Comune Di Salara </p>
+              
+              <p> Comune Di Salizzole </p>
+              
+              <p> Comune Di Saluzzo </p>
+              
+              <p> Comune Di Samassi </p>
+              
+              <p> Comune Di San Bellino </p>
+              
+              <p> Comune Di San Bonifacio </p>
+              
+              <p> Comune Di San Casciano In Val Di Pesa </p>
+              
+              <p> Comune Di San Dorligo Della Valle </p>
+              
+              <p> Comune Di San Giorgio A Cremano </p>
+              
+              <p> Comune Di San Giorgio Di Piano </p>
+              
+              <p> Comune Di San Giorgio In Bosco </p>
+              
+              <p> Comune Di San Giorgio Ionico </p>
+              
+              <p> Comune Di San Giorgio Morgeto </p>
+              
+              <p> Comune Di San Giovanni Ilarione </p>
+              
+              <p> Comune Di San Giovanni Lupatoto </p>
+              
+              <p> Comune Di San Giovanni Rotondo </p>
+              
+              <p> Comune Di San Giovanni Suergiu </p>
+              
+              <p> Comune Di San Giovanni Valdarno </p>
+              
+              <p> Comune Di San Gregorio Nelle Alpi </p>
+              
+              <p> Comune Di San Lorenzo Dorsino </p>
+              
+              <p> Comune Di San Martino Al Tagliamento </p>
+              
+              <p> Comune Di San Martino Dall’argine </p>
+              
+              <p> Comune Di San Marzano Di San Giuseppe </p>
+              
+              <p> Comune Di San Mauro La Bruca </p>
+              
+              <p> Comune Di San Michele All&#39;adige </p>
+              
+              <p> Comune Di San Pietro Di Morubio </p>
+              
+              <p> Comune Di San Pietro In Casale </p>
+              
+              <p> Comune Di San Pietro Viminario </p>
+              
+              <p> Comune Di San Polo Di Piave </p>
+              
+              <p> Comune Di San Rufo </p>
+              
+              <p> Comune Di San Stino Di Livenza </p>
+              
+              <p> Comune Di San Vito Al Tagliamento </p>
+              
+              <p> Comune Di San Vittore Olona </p>
+              
+              <p> Comune Di Sandrigo </p>
+              
+              <p> Comune Di Sanremo </p>
+              
+              <p> Comune Di Santa Fiora </p>
+              
+              <p> Comune Di Santa Giustina </p>
+              
+              <p> Comune Di Santa Lucia Di Piave </p>
+              
+              <p> Comune Di Santa Margherita Ligure </p>
+              
+              <p> Comune Di Santa Maria Capua Vetere </p>
+              
+              <p> Comune Di Santo Stefano D’aveto </p>
+              
+              <p> Comune Di Santo Stefano Ticino </p>
+              
+              <p> Comune Di Sant’arsenio </p>
+              
+              <p> Comune Di Sant’elena </p>
+              
+              <p> Comune Di Sanza </p>
+              
+              <p> Comune Di Sanzeno </p>
+              
+              <p> Comune Di Sarcedo </p>
+              
+              <p> Comune Di Sarconi </p>
+              
+              <p> Comune Di Sardara </p>
+              
+              <p> Comune Di Sarno </p>
+              
+              <p> Comune Di Sarule </p>
+              
+              <p> Comune Di Sarzana </p>
+              
+              <p> Comune Di Sassano </p>
+              
+              <p> Comune Di Sassocorvaro Auditore </p>
+              
+              <p> Comune Di Savignone </p>
+              
+              <p> Comune Di Scandiano </p>
+              
+              <p> Comune Di Scorrano </p>
+              
+              <p> Comune Di Sedico </p>
+              
+              <p> Comune Di Sedriano </p>
+              
+              <p> Comune Di Segonzano </p>
+              
+              <p> Comune Di Segrate </p>
+              
+              <p> Comune Di Segusino </p>
+              
+              <p> Comune Di Selargius </p>
+              
+              <p> Comune Di Sella Giudicarie </p>
+              
+              <p> Comune Di Seniga </p>
+              
+              <p> Comune Di Senigallia </p>
+              
+              <p> Comune Di Senna Lodigiana </p>
+              
+              <p> Comune Di Sennori </p>
+              
+              <p> Comune Di Seregno </p>
+              
+              <p> Comune Di Seren Del Grappa </p>
+              
+              <p> Comune Di Serle </p>
+              
+              <p> Comune Di Serramanna </p>
+              
+              <p> Comune Di Sesto Calende </p>
+              
+              <p> Comune Di Sesto Fiorentino </p>
+              
+              <p> Comune Di Sestu </p>
+              
+              <p> Comune Di Settimo Milanese </p>
+              
+              <p> Comune Di Siena </p>
+              
+              <p> Comune Di Silea </p>
+              
+              <p> Comune Di Siligo </p>
+              
+              <p> Comune Di Sillano Giuncugnano </p>
+              
+              <p> Comune Di Sinnai </p>
+              
+              <p> Comune Di Sirtori </p>
+              
+              <p> Comune Di Solferino </p>
+              
+              <p> Comune Di Sondrio </p>
+              
+              <p> Comune Di Soresina </p>
+              
+              <p> Comune Di Sorgono </p>
+              
+              <p> Comune Di Sorgà </p>
+              
+              <p> Comune Di Sospirolo </p>
+              
+              <p> Comune Di Sossano </p>
+              
+              <p> Comune Di Sovizzo </p>
+              
+              <p> Comune Di Specchia </p>
+              
+              <p> Comune Di Spiazzo </p>
+              
+              <p> Comune Di Spoltore </p>
+              
+              <p> Comune Di Spormaggiore </p>
+              
+              <p> Comune Di Spresiano </p>
+              
+              <p> Comune Di Stanghella </p>
+              
+              <p> Comune Di Statte </p>
+              
+              <p> Comune Di Stazzona </p>
+              
+              <p> Comune Di Stenico </p>
+              
+              <p> Comune Di Sternatia </p>
+              
+              <p> Comune Di Stezzano </p>
+              
+              <p> Comune Di Strembo </p>
+              
+              <p> Comune Di Sulmona </p>
+              
+              <p> Comune Di Supersano </p>
+              
+              <p> Comune Di Surano </p>
+              
+              <p> Comune Di Susa </p>
+              
+              <p> Comune Di Susegana </p>
+              
+              <p> Comune Di Tambre </p>
+              
+              <p> Comune Di Tarantasca </p>
+              
+              <p> Comune Di Taranto </p>
+              
+              <p> Comune Di Taurianova </p>
+              
+              <p> Comune Di Tavazzano Con Villavesco </p>
+              
+              <p> Comune Di Teglio </p>
+              
+              <p> Comune Di Teglio Veneto </p>
+              
+              <p> Comune Di Telve </p>
+              
+              <p> Comune Di Telve Di Sopra </p>
+              
+              <p> Comune Di Tempio Pausania </p>
+              
+              <p> Comune Di Terlizzi </p>
+              
+              <p> Comune Di Ternate </p>
+              
+              <p> Comune Di Terracina </p>
+              
+              <p> Comune Di Terrassa Padovana </p>
+              
+              <p> Comune Di Tertenia </p>
+              
+              <p> Comune Di Tesero </p>
+              
+              <p> Comune Di Tignale </p>
+              
+              <p> Comune Di Tinnura </p>
+              
+              <p> Comune Di Tione Di Trento </p>
+              
+              <p> Comune Di Ton </p>
+              
+              <p> Comune Di Torcegno </p>
+              
+              <p> Comune Di Torella Dei Lombardi </p>
+              
+              <p> Comune Di Torino </p>
+              
+              <p> Comune Di Toritto </p>
+              
+              <p> Comune Di Torralba </p>
+              
+              <p> Comune Di Torre Annunziata </p>
+              
+              <p> Comune Di Tortolì </p>
+              
+              <p> Comune Di Toscolano Maderno </p>
+              
+              <p> Comune Di Toscolano Maderno​ </p>
+              
+              <p> Comune Di Trana </p>
+              
+              <p> Comune Di Trani </p>
+              
+              <p> Comune Di Travedona Monate </p>
+              
+              <p> Comune Di Tre Ville </p>
+              
+              <p> Comune Di Trecenta </p>
+              
+              <p> Comune Di Trento </p>
+              
+              <p> Comune Di Tresignana </p>
+              
+              <p> Comune Di Tresivio </p>
+              
+              <p> Comune Di Tresnuraghes </p>
+              
+              <p> Comune Di Treviglio </p>
+              
+              <p> Comune Di Trevignano </p>
+              
+              <p> Comune Di Treviso </p>
+              
+              <p> Comune Di Trezzano Sul Naviglio </p>
+              
+              <p> Comune Di Tribano </p>
+              
+              <p> Comune Di Triei </p>
+              
+              <p> Comune Di Trissino </p>
+              
+              <p> Comune Di Turbigo </p>
+              
+              <p> Comune Di Turi </p>
+              
+              <p> Comune Di Turri </p>
+              
+              <p> Comune Di Ulassai </p>
+              
+              <p> Comune Di Uri </p>
+              
+              <p> Comune Di Urzulei </p>
+              
+              <p> Comune Di Usini </p>
+              
+              <p> Comune Di Vaiano </p>
+              
+              <p> Comune Di Val Brembilla </p>
+              
+              <p> Comune Di Val Liona </p>
+              
+              <p> Comune Di Valdaone </p>
+              
+              <p> Comune Di Valdobbiadene </p>
+              
+              <p> Comune Di Valentano </p>
+              
+              <p> Comune Di Vallarsa </p>
+              
+              <p> Comune Di Vallelaghi </p>
+              
+              <p> Comune Di Vallio Terme </p>
+              
+              <p> Comune Di Valmadrera </p>
+              
+              <p> Comune Di Valmala </p>
+              
+              <p> Comune Di Vanzaghello </p>
+              
+              <p> Comune Di Varazze </p>
+              
+              <p> Comune Di Varese </p>
+              
+              <p> Comune Di Velletri </p>
+              
+              <p> Comune Di Venasca </p>
+              
+              <p> Comune Di Verbania </p>
+              
+              <p> Comune Di Verdellino </p>
+              
+              <p> Comune Di Verdello </p>
+              
+              <p> Comune Di Vermezzo Con Zelo </p>
+              
+              <p> Comune Di Vermiglio </p>
+              
+              <p> Comune Di Vernate </p>
+              
+              <p> Comune Di Vernio </p>
+              
+              <p> Comune Di Verona </p>
+              
+              <p> Comune Di Verucchio </p>
+              
+              <p> Comune Di Vestone </p>
+              
+              <p> Comune Di Viagrande </p>
+              
+              <p> Comune Di Viano </p>
+              
+              <p> Comune Di Viareggio </p>
+              
+              <p> Comune Di Vicenza </p>
+              
+              <p> Comune Di Viganò </p>
+              
+              <p> Comune Di Vignale Monferrato </p>
+              
+              <p> Comune Di Vigodarzere </p>
+              
+              <p> Comune Di Villa Santina </p>
+              
+              <p> Comune Di Villabate </p>
+              
+              <p> Comune Di Villacidro </p>
+              
+              <p> Comune Di Villafalletto </p>
+              
+              <p> Comune Di Villanova Biellese </p>
+              
+              <p> Comune Di Villaputzu </p>
+              
+              <p> Comune Di Villaricca </p>
+              
+              <p> Comune Di Villasalto </p>
+              
+              <p> Comune Di Villasimius </p>
+              
+              <p> Comune Di Ville D&#39;anaunia </p>
+              
+              <p> Comune Di Vimercate </p>
+              
+              <p> Comune Di Vimodrone </p>
+              
+              <p> Comune Di Vittorio Veneto </p>
+              
+              <p> Comune Di Vittuone </p>
+              
+              <p> Comune Di Vobarno </p>
+              
+              <p> Comune Di Voghera </p>
+              
+              <p> Comune Di Volano </p>
+              
+              <p> Comune Di Volpago Del Montello </p>
+              
+              <p> Comune Di Voltago Agordino </p>
+              
+              <p> Comune Di Zenson Di Piave </p>
+              
+              <p> Comune Di Zevio </p>
+              
+              <p> Comune Di Ziano Di Fiemme </p>
+              
+              <p> Comune Di Zibido San Giacomo </p>
+              
+              <p> Comune General De Fascia </p>
+              
+              <p> Comune Ville Di Fiemme </p>
+              
+              <p> Comunità Alto Garda E Ledro </p>
+              
+              <p> Comunità Della Val Di Non </p>
+              
+              <p> Comunità Della Vallagarina </p>
+              
+              <p> Comunità Della Valle Di Cembra </p>
+              
+              <p> Comunità Della Valle Di Sole </p>
+              
+              <p> Comunità Delle Giudicarie </p>
+              
+              <p> Comunità Di Montagna Del Gemonese </p>
+              
+              <p> Comunità Di Primiero </p>
+              
+              <p> Comunità Montana Alta Irpinia </p>
+              
+              <p> Comunità Montana Alta Tuscia Laziale </p>
+              
+              <p> Comunità Montana Alto Sangro Altopiano Delle Cinque Miglia </p>
+              
+              <p> Comunità Montana Del Piambello </p>
+              
+              <p> Comunità Montana Di Valle Sabbia </p>
+              
+              <p> Comunità Montana Valle Seriana </p>
+              
+              <p> Comunità Montana Valli Del Lario E Del Ceresio </p>
+              
+              <p> Comunità Montana Vallo Di Diano </p>
+              
+              <p> Comunità Montana Valtellina Di Sondrio </p>
+              
+              <p> Comunità Riviera Friulana </p>
+              
+              <p> Comunità Rotaliana - Königsberg </p>
+              
+              <p> Comunità Territoriale Della Val Di Fiemme </p>
+              
+              <p> Comunità Valle Dei Laghi </p>
+              
+              <p> Comunità Valsugana E Tesino </p>
+              
+              <p> Comunitą Alta Valsugana E Bersntol </p>
+              
+              <p> Conser Vco Spa </p>
+              
+              <p> Conservatorio Di Musica Di Vicenza Arrigo Pedrollo </p>
+              
+              <p> Consiglio Della Provincia Autonoma Di Trento </p>
+              
+              <p> Consiglio Regionale Abruzzo </p>
+              
+              <p> Consiglio Regionale Della Calabria </p>
+              
+              <p> Consiglio Regionale Delle Marche </p>
+              
+              <p> Consorzio Acquedottistico Marsicano Spa </p>
+              
+              <p> Consorzio Bim Del Chiese </p>
+              
+              <p> Consorzio Bonifica Ticino Villoresi </p>
+              
+              <p> Consorzio Brescia Mercati </p>
+              
+              <p> Consorzio Chierese Per I Servizi </p>
+              
+              <p> Consorzio Cimiteriale Tra I Comuni Di Frattamaggiore, Grumo Nevano E Frattaminore </p>
+              
+              <p> Consorzio Costa Smeralda </p>
+              
+              <p> Consorzio Dei Comuni Trentini </p>
+              
+              <p> Consorzio Dell’adda </p>
+              
+              <p> Consorzio Di Bonifica Del Nord Sardegna </p>
+              
+              <p> Consorzio Di Bonifica Della Sardegna Centrale </p>
+              
+              <p> Consorzio Di Bonifica Della Sardegna Meridionale </p>
+              
+              <p> Consorzio Di Bonifica Dell’oristanese </p>
+              
+              <p> Consorzio Industriale Provinciale Sassari </p>
+              
+              <p> Consorzio Interuniversitario Nazionale Per La Scienza E Tecnologia Dei Materiali </p>
+              
+              <p> Consorzio Italbiotec </p>
+              
+              <p> Consorzio Parco Alto Milanese </p>
+              
+              <p> Consorzio Per I Servizi Territoriali Del Noce </p>
+              
+              <p> Consorzio Servizi Ecologia Ed Ambiente C.s.e.a. </p>
+              
+              <p> Consorzio Universitario Piceno </p>
+              
+              <p> Consorzio Zona Industriale E Porto Fluviale Di Padova </p>
+              
+              <p> Cordar Spa Biella Servizi </p>
+              
+              <p> Corte Dei Conti </p>
+              
+              <p> Csbno </p>
+              
+              <p> Ctp – Compagnia Trasporti Pubblici Di Napoli </p>
+              
+              <p> Dintec – Consorzio Per L’innovazione Tecnologica </p>
+              
+              <p> Dsu Toscana – Agenzia Regionale Per Il Diritto Allo Studio Universitario Della Toscana </p>
+              
+              <p> Edilizia Provinciale Grossetana Spa </p>
+              
+              <p> Edisu – Ente Per Il Diritto Allo Studio Universitario Del Piemonte </p>
+              
+              <p> Energie Per La Città Spa </p>
+              
+              <p> Ente Di Decentramento Regionale Di Pordenone </p>
+              
+              <p> Ente Di Decentramento Regionale Di Trieste </p>
+              
+              <p> Ente Nazionale Risi </p>
+              
+              <p> Ente Ospedaliero Ospedali Galliera </p>
+              
+              <p> Ente Parco Nazionale Arcipelago Toscano </p>
+              
+              <p> Environment Park Pa </p>
+              
+              <p> Equitalia Giustizia S.p.a. </p>
+              
+              <p> Erdis Marche </p>
+              
+              <p> Erp Lucca Srl </p>
+              
+              <p> Esu-ardsu Di Venezia </p>
+              
+              <p> Etra Spa </p>
+              
+              <p> Eurolavoro Afol Ovest Milano </p>
+              
+              <p> F.i.l. Formazione Innovazione Lavoro Srl </p>
+              
+              <p> Fasc – Fondo Agenti Corrieri E Spedizionieri </p>
+              
+              <p> Fil Formazione Innovazione Lavoro Srl </p>
+              
+              <p> Film Commission Torino Piemonte </p>
+              
+              <p> Filse Spa </p>
+              
+              <p> Finaosta Spa – Finanziaria Regionale Valle D’aosta </p>
+              
+              <p> Fiumicino Tributi </p>
+              
+              <p> Fondazione Bruno Kessler </p>
+              
+              <p> Fondazione Carnevale Di Viareggio </p>
+              
+              <p> Fondazione Clément Fillietroz – Osservatorio Astronomico Della Valle D’aosta </p>
+              
+              <p> Fondazione Festival Pucciniano </p>
+              
+              <p> Fondazione Montagna Sicura – Montagne Sûre </p>
+              
+              <p> Fondazione Regionale Per La Ricerca Biomedica </p>
+              
+              <p> Fondazione Scuola Apm </p>
+              
+              <p> Fondazione Scuola Dei Beni E Delle Attività Culturali </p>
+              
+              <p> Fondazione Teatro Comunale E Auditorium Bolzano </p>
+              
+              <p> Forma.temp </p>
+              
+              <p> Formaper </p>
+              
+              <p> Friuli Venezia Giulia Strade Spa </p>
+              
+              <p> Gal Sole Grano Terra </p>
+              
+              <p> Geal Spa </p>
+              
+              <p> Geasc Gestione Aziendale Servizi Comunali </p>
+              
+              <p> Ges Geo Energy Service Spa </p>
+              
+              <p> Grotte Di Castellana Srl </p>
+              
+              <p> Gruppo Sace </p>
+              
+              <p> Hermes Servizi Metropolitani </p>
+              
+              <p> I.u.s.s. – Scuola Universitaria Superiore – Pavia </p>
+              
+              <p> Iacp (Istituto Autonomo Case Popolari) Caltanissetta </p>
+              
+              <p> Ic Outsourcing </p>
+              
+              <p> Ice Agenzia Per La Promozione All’estero E L’internazionalizzazione Delle Imprese </p>
+              
+              <p> Igea Spa </p>
+              
+              <p> Infrastrutture Venete Srl </p>
+              
+              <p> Innovhub Stazioni Sperimentali Per L’industria </p>
+              
+              <p> Insiel </p>
+              
+              <p> Insieme Per Il Sociale </p>
+              
+              <p> Institut Agricole Regional (Iar) Aosta </p>
+              
+              <p> Ipav Istituzioni Pubbliche Di Assistenza Veneziane </p>
+              
+              <p> Ipi Santa Maria Della Pietà </p>
+              
+              <p> Irccs Centro Neurolesi Bonino Pulejo </p>
+              
+              <p> Irccs De Bellis Ente Ospedaliero Specializzato In Gastroenterologia </p>
+              
+              <p> Irccs Gaslini </p>
+              
+              <p> Irfis Finsicilia </p>
+              
+              <p> Irfis Finsicilla </p>
+              
+              <p> Irpet Istituto Regionale Per La Programmazione Economica Della Toscana </p>
+              
+              <p> Irsap Istituto Regionale Sviluppo Attività Produttive </p>
+              
+              <p> Isin – Ispettorato Nazionale Per La Sicurezza Nucleare E La Radioprotezione </p>
+              
+              <p> Isnart </p>
+              
+              <p> Istituti Raggruppati A.p.s.p. Pistoia </p>
+              
+              <p> Istituto Autonomo Delle Case Popolari Della Provincia Di Palermo </p>
+              
+              <p> Istituto Bon Bozzolla </p>
+              
+              <p> Istituto Cesana Malanotti </p>
+              
+              <p> Istituto Trentino Per L’edilizia Abitativa Spa (Itea Spa) </p>
+              
+              <p> Istituto Tumori Giovanni Paolo Ii – I.r.c.c.s Di Bari </p>
+              
+              <p> Istituto Zooprofilattico Sperimentale Abruzzo E Molise Caporale </p>
+              
+              <p> Istituto Zooprofilattico Sperimentale Della Sardegna </p>
+              
+              <p> Istituto Zooprofilattico Sperimentale Delle Venezie </p>
+              
+              <p> Istituto Zooprofilattico Sperimentale Sicilia </p>
+              
+              <p> Lario Reti Holding S.p.a. </p>
+              
+              <p> Libero Consorzio Comunale Di Caltanissetta </p>
+              
+              <p> Lido Del Garda Immobiliare Srl </p>
+              
+              <p> Ligurcapital Spa </p>
+              
+              <p> Liguria Patrimonio Srl </p>
+              
+              <p> Lucca Crea Srl </p>
+              
+              <p> Lucca Holding Spa </p>
+              
+              <p> Lucca Riscossioni E Servizi </p>
+              
+              <p> Massa Tributi E Riscossioni </p>
+              
+              <p> Mefop Spa </p>
+              
+              <p> Messinaservizi Bene Comune </p>
+              
+              <p> Metro Srl </p>
+              
+              <p> Ministero Dela Giustistia </p>
+              
+              <p> Ministero Politiche Agricole Alimentari E Forestali (Mipaaf) </p>
+              
+              <p> Mipaaf – Ministero Politiche Agricole Alimentari E Forestali </p>
+              
+              <p> Mobilità Versilia – Mover Spa </p>
+              
+              <p> Montecatone Rehabilitation Institute Spa </p>
+              
+              <p> Monteriggioni Ad 1213 Srl </p>
+              
+              <p> Nord Milano Ambiente </p>
+              
+              <p> Nuove Acque </p>
+              
+              <p> O.p.s. Organizzazione Progetti E Servizi Chieti Spa </p>
+              
+              <p> Ordine Architetti P.p.e C. Della Provincia Di Ferrara </p>
+              
+              <p> Ordine Architetti P.p.e C. Della Provincia Di Forlì E Cesena </p>
+              
+              <p> Ordine Degli Assistenti Sociali Della Valle D’aosta </p>
+              
+              <p> Ordine Degli Avvocati Di Cuneo </p>
+              
+              <p> Ordine Degli Avvocati Di Sondrio </p>
+              
+              <p> Ordine Degli Ingegneri Provincia Di Fermo </p>
+              
+              <p> Ordine Degli Ingegneri Provincia Di Matera </p>
+              
+              <p> Ordine Degli Ingegneri Provincia Di Pesaro E Urbino </p>
+              
+              <p> Ordine Degli Ingegneri Provincia Di Rimini </p>
+              
+              <p> Ordine Degli Psicologi Emilia Romagna </p>
+              
+              <p> Ordine Degli Psicologi Lazio </p>
+              
+              <p> Ordine Dei Dottori Commercialisti E Degli Esperti Contabili Di Ancona </p>
+              
+              <p> Ordine Dei Dottori Commercialisti E Degli Esperti Contabili Di Aosta </p>
+              
+              <p> Ordine Dei Dottori Commercialisti E Degli Esperti Contabili Di Monza E Brianza </p>
+              
+              <p> Ordine Dei Dottori Commercialisti E Degli Esperti Contabili Di Rimini </p>
+              
+              <p> Ordine Dei Farmacisti Della Val D’aosta </p>
+              
+              <p> Ordine Dei Farmacisti Provincia Di Vicenza </p>
+              
+              <p> Ordine Dei Geologi Della Valle D’aosta </p>
+              
+              <p> Ordine Delle Professioni Infermieristiche Di Como </p>
+              
+              <p> Ordine Delle Professioni Infermieristiche Di Latina </p>
+              
+              <p> Ordine Dottori Commercialisti Esperti Contabili Pesaro E Urbino </p>
+              
+              <p> Ordine Medici Chirurghi E  Odontoiatri Di Lecco </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Brescia </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Cuneo </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Firenze </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Padova </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Pavia </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Reggio Calabria </p>
+              
+              <p> Ordine Medici Chirurghi E Odontoiatri Di Venezia </p>
+              
+              <p> Ordine Medici Veterinari Provincia Di Nuoro </p>
+              
+              <p> Ordine Professioni Infermieristiche Forlì E Cesena </p>
+              
+              <p> Ordine Psicologi Marche </p>
+              
+              <p> Ospedale Maggiore Novara </p>
+              
+              <p> Ospedale Policlinico San Martino </p>
+              
+              <p> Parcam Srl </p>
+              
+              <p> Parco Nazionale Arcipelago Di La Maddalena </p>
+              
+              <p> Parco Nazionale Delle Cinque Terre </p>
+              
+              <p> Parco Nazionale D’abruzzo Lazio E Molise </p>
+              
+              <p> Parma Gestione Entrate Spa </p>
+              
+              <p> Pavia Acque </p>
+              
+              <p> Pensplan Centrum S.p.a. </p>
+              
+              <p> Pietrasanta Sviluppo Spa </p>
+              
+              <p> Politecnico Di Bari </p>
+              
+              <p> Politecnico Di Torino </p>
+              
+              <p> Port Security Piombino </p>
+              
+              <p> Porto Conte Ricerche </p>
+              
+              <p> Progetto Santa Margherita </p>
+              
+              <p> Promos Italia Scrl </p>
+              
+              <p> Proservice Spa </p>
+              
+              <p> Provincia Del Verbano Cusio Ossola </p>
+              
+              <p> Provincia Della Spezia </p>
+              
+              <p> Provincia Dell’aquila </p>
+              
+              <p> Provincia Di Avellino </p>
+              
+              <p> Provincia Di Barletta-andria-trani </p>
+              
+              <p> Provincia Di Belluno </p>
+              
+              <p> Provincia Di Chieti </p>
+              
+              <p> Provincia Di Cosenza </p>
+              
+              <p> Provincia Di Crotone </p>
+              
+              <p> Provincia Di Isernia </p>
+              
+              <p> Provincia Di Livorno </p>
+              
+              <p> Provincia Di Mantova </p>
+              
+              <p> Provincia Di Massa Carrara </p>
+              
+              <p> Provincia Di Modena </p>
+              
+              <p> Provincia Di Nuoro </p>
+              
+              <p> Provincia Di Parma </p>
+              
+              <p> Provincia Di Pistoia </p>
+              
+              <p> Provincia Di Potenza </p>
+              
+              <p> Provincia Di Reggio Emilia </p>
+              
+              <p> Provincia Di Rieti </p>
+              
+              <p> Provincia Di Rovigo </p>
+              
+              <p> Provincia Di Taranto </p>
+              
+              <p> Provincia Di Trento </p>
+              
+              <p> Provincia Di Trento – Dipartimento Istruzione </p>
+              
+              <p> Provincia Di Varese </p>
+              
+              <p> Provincia Di Vicenza </p>
+              
+              <p> Ptp Science Park Scarl </p>
+              
+              <p> Publicasa Spa </p>
+              
+              <p> Regione Autonoma Trentino-alto Adige / Südtirol </p>
+              
+              <p> Regione Friuli Venezia Giulia </p>
+              
+              <p> Regione Sardegna </p>
+              
+              <p> S.e.fi. Srl </p>
+              
+              <p> Sace S.p.a </p>
+              
+              <p> Salerno Energia Distribuzione Spa </p>
+              
+              <p> San Giovanni Servizi S.r.l. </p>
+              
+              <p> Sanitaservice Policlinico Bari Srl </p>
+              
+              <p> Sap Alpignano </p>
+              
+              <p> Sardegna Foreste (Forestas) </p>
+              
+              <p> Sardegna Ricerche </p>
+              
+              <p> Scapigliato Srl </p>
+              
+              <p> Scuola Normale Superiore </p>
+              
+              <p> Secoval Srl </p>
+              
+              <p> Servizi Ambiente Energia Valle Sabbia Srl </p>
+              
+              <p> Seus Scpa </p>
+              
+              <p> Sgs Malè Srl </p>
+              
+              <p> Sidra Spa </p>
+              
+              <p> Sistema Ambiente Spa </p>
+              
+              <p> Sistema Sosta E Mobilità S.p.a. </p>
+              
+              <p> Societe Infrastructure Valdotaines Srl </p>
+              
+              <p> Società Degli Interporti Siciliani Spa </p>
+              
+              <p> Società Della Salute Amiata Senese E Val D&#39;orcia - Valdichiana Senese </p>
+              
+              <p> Società Entrate Pisa Spa </p>
+              
+              <p> Società Informatica Territoriale Belluno </p>
+              
+              <p> Società Italiana Servizi Spa </p>
+              
+              <p> Società Per Cornigliano Spa </p>
+              
+              <p> Soelia Spa </p>
+              
+              <p> Sogesid </p>
+              
+              <p> Sotacarbo Società Tecnologie Avanzate Carbone Spa </p>
+              
+              <p> Spim Spa </p>
+              
+              <p> Srm – Reti E Mobilità Srl </p>
+              
+              <p> Stazione Zoologica Anton Dohrn </p>
+              
+              <p> Strada Dei Parchi S.p.a. </p>
+              
+              <p> Sviluppo Toscana Spa </p>
+              
+              <p> Te.am. Teramo Ambiente S.p.a. </p>
+              
+              <p> Teatro Pubblico Pugliese </p>
+              
+              <p> Tecnopolis Parco Scientifico E Tecnologico </p>
+              
+              <p> Tennacola Spa </p>
+              
+              <p> Trentino Digitale S.p.a. </p>
+              
+              <p> Trentino Mobilità Spa </p>
+              
+              <p> Trentino Riscossioni Spa </p>
+              
+              <p> Trentino Sviluppo Spa </p>
+              
+              <p> Ufficio D’ambito Di Pavia </p>
+              
+              <p> Ulss 01 Dolomiti </p>
+              
+              <p> Ulss 03 Serenissima </p>
+              
+              <p> Ulss 04 Veneto Orientale </p>
+              
+              <p> Ulss 05 Polesana </p>
+              
+              <p> Ulss 07 Pedemontana </p>
+              
+              <p> Umbria Digitale Scarl </p>
+              
+              <p> Umbria Salute E Servizi Scarl </p>
+              
+              <p> Unione Collinare Canavesana </p>
+              
+              <p> Unione Comuni Del Sarrabus </p>
+              
+              <p> Unione Comuni Del Villanova </p>
+              
+              <p> Unione Comuni Della Romagna Forlivese </p>
+              
+              <p> Unione Comuni Modenesi Area Nord </p>
+              
+              <p> Unione Dei Comuni Circondario Empolese Valdelsa </p>
+              
+              <p> Unione Dei Comuni Del Pratomagno </p>
+              
+              <p> Unione Dei Comuni Della Val Di Bisenzio </p>
+              
+              <p> Unione Dei Comuni Della Valle Del Pardu E Dei Tacchi Ogliastra Meridionale </p>
+              
+              <p> Unione Dei Comuni Della Valtenesi </p>
+              
+              <p> Unione Dei Comuni Destra Adige </p>
+              
+              <p> Unione Dei Comuni I Nuraghi Di Monte Idda E Fanaris </p>
+              
+              <p> Unione Dei Comuni Pratiarcati </p>
+              
+              <p> Unione Dei Comuni Savena Idice </p>
+              
+              <p> Unione Dei Comuni Terre E Fiumi </p>
+              
+              <p> Unione Delle Torri </p>
+              
+              <p> Unione Di Comuni Alta Marmilla </p>
+              
+              <p> Unione Di Comuni Del Basso Feltrino – Sette Ville </p>
+              
+              <p> Unione Di Comuni Della Planargia </p>
+              
+              <p> Unione Di Comuni Lombarda Lonate Pozzolo E Di Ferno </p>
+              
+              <p> Unione Di Comuni Terre Del Serio </p>
+              
+              <p> Unione Montana Alpago </p>
+              
+              <p> Unione Montana Cadore Longaronese Zoldo </p>
+              
+              <p> Unione Montana Marosticense </p>
+              
+              <p> Unione Montana Val Belluna </p>
+              
+              <p> Unione Reno Galliera </p>
+              
+              <p> Unione Terra Di Mezzo </p>
+              
+              <p> Unione Tresinaro Secchia </p>
+              
+              <p> Uniontrasporti </p>
+              
+              <p> Università Degli Studi Del Salento </p>
+              
+              <p> Università Degli Studi Del Sannio </p>
+              
+              <p> Università Degli Studi Della Basilicata </p>
+              
+              <p> Università Degli Studi Della Campania &quot;Luigi Vanvitelli&quot; </p>
+              
+              <p> Università Degli Studi Di Bergamo </p>
+              
+              <p> Università Degli Studi Di Ferrara </p>
+              
+              <p> Università Degli Studi Di Genova </p>
+              
+              <p> Università Degli Studi Di Napoli L’orientale </p>
+              
+              <p> Università Degli Studi Di Padova </p>
+              
+              <p> Università Degli Studi Di Parma </p>
+              
+              <p> Università Degli Studi Di Pavia </p>
+              
+              <p> Università Degli Studi Di Perugia </p>
+              
+              <p> Università Degli Studi Di Roma Tre </p>
+              
+              <p> Università Degli Studi G. D&#39;annunzio </p>
+              
+              <p> Università Della Valle D’aosta </p>
+              
+              <p> Usl Umbria N.2 Terni </p>
+              
+              <p> Valisannio – Azienda Speciale Della Camera Di Commercio Di Benevento </p>
+              
+              <p> Valle Sabbia Solidale </p>
+              
+              <p> Veneto Acque Spa </p>
+              
+              <p> Veneto Film Commission </p>
+              
+              <p> Venezia Spiagge S.p.a. </p>
+              
+              <p> Vi.abilità </p>
+              
+              <p> Villaservice Spa </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>INTENDED AUDIENCE</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=agriculture">agriculture</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=culture">culture</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=defence">defence</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=education">education</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=emergency-services">emergency-services</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=employment">employment</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=energy">energy</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=environment">environment</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=finance-and-economic-development">finance-and-economic-development</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?intended_audiences=foreign-affairs">foreign-affairs</a>
+</li>
+
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>detailed information </p>
+            <div class="title">
+              <h2 class="h1">
+                GlobaLeaks
+                
+                <span
+                  class="badge badge-pill badge-pill--sup badge-primary">4.15.5</span>
+                
+              </h2>
+              <h2>
+                Whistleblowing Software
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Last release</span>
+                  2024-06-01
+                  
+                  (4.15.5)
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Type of maintenance</span>
+                  community
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
+          
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                
+                Technical contact
+                
+              </span>
+            </p>
+            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              
+              Technical contact
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                
+                <div class="col-md">
+                  <p>
+                    
+                    <a href="mailto:giovanni.pellerano@globaleaks.org">Giovanni Pellerano</a>
+                    
+                    +390287186005
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">License</span>
+                  AGPL-3.0
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Platforms</span>
+                  
+                      web<br />
+                  
+                      windows<br />
+                  
+                      mac<br />
+                  
+                      linux<br />
+                  
+                      ios<br />
+                  
+                      android<br />
+                  
+                </p>
+              </div>
+              
+
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Enabling platforms</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  None
+                  
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Compliance</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    GDPR
+                  
+                  
+                  <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/" class="enabling_platforms">
+                    Design Guidelines
+                  </a>
+                  
+                  
+                  <a href="https://www.agid.gov.it/index.php/en/security/Minimum-ICT-security-measures-for-public-administrations" class="enabling_platforms">
+                    Security Guidelines
+                  </a>
+                  
+                  
+                  <a href="https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/" class="enabling_platforms">
+                    Interoperability Model
+                  </a>
+                  
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">List of dependencies</span>
+                  
+                  None
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Others information
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+
+              <div class="other-detail">
+                <p><span class="label">Supported languages</span>
+                  
+                  
+                  
+
+Amharic<br />
+
+                  
+                  
+
+Arabic<br />
+
+                  
+                  
+
+Azerbaijani<br />
+
+                  
+                  
+
+Bashkir<br />
+
+                  
+                  
+
+Belarusian<br />
+
+                  
+                  
+
+Bulgarian<br />
+
+                  
+                  
+
+Bangla<br />
+
+                  
+                  
+
+Tibetan<br />
+
+                  
+                  
+
+Bosnian<br />
+
+                  
+                  
+
+Catalan<br />
+
+                  
+                </p>
+                <p>
+                  <a data-toggle="collapse" href="#otherLanguage"
+                    role="button" aria-expanded="false"
+                    class="count" aria-controls="otherLanguage">
+                    Show all languages
+                    <span class="or it-expand"></span>
+                    <span class="and it-collapse"></span>
+                  </a>
+                </p>
+                <div class="collapse" id="otherLanguage">
+                  
+                  
+
+ce<br />
+
+                  
+                  
+
+crh<br />
+
+                  
+                  
+
+Czech<br />
+
+                  
+                  
+
+Danish<br />
+
+                  
+                  
+
+German<br />
+
+                  
+                  
+
+Divehi<br />
+
+                  
+                  
+
+Greek<br />
+
+                  
+                  
+
+English<br />
+
+                  
+                  
+
+Spanish<br />
+
+                  
+                  
+
+Estonian<br />
+
+                  
+                  
+
+Basque<br />
+
+                  
+                  
+
+Persian<br />
+
+                  
+                  
+
+fa_AF<br />
+
+                  
+                  
+
+Finnish<br />
+
+                  
+                  
+
+French<br />
+
+                  
+                  
+
+Galician<br />
+
+                  
+                  
+
+Hebrew<br />
+
+                  
+                  
+
+hr_HR<br />
+
+                  
+                  
+
+hu_HU<br />
+
+                  
+                  
+
+Indonesian<br />
+
+                  
+                  
+
+Italian<br />
+
+                  
+                  
+
+Japanese<br />
+
+                  
+                  
+
+Georgian<br />
+
+                  
+                  
+
+Kazakh<br />
+
+                  
+                  
+
+Khmer<br />
+
+                  
+                  
+
+Korean<br />
+
+                  
+                  
+
+Lao<br />
+
+                  
+                  
+
+Lithuanian<br />
+
+                  
+                  
+
+Malagasy<br />
+
+                  
+                  
+
+Macedonian<br />
+
+                  
+                  
+
+Malay<br />
+
+                  
+                  
+
+Burmese<br />
+
+                  
+                  
+
+nb_NO<br />
+
+                  
+                  
+
+Dutch<br />
+
+                  
+                  
+
+Polish<br />
+
+                  
+                  
+
+Pashto<br />
+
+                  
+                  
+
+pt_BR<br />
+
+                  
+                  
+
+pt_PT<br />
+
+                  
+                  
+
+Romanian<br />
+
+                  
+                  
+
+Russian<br />
+
+                  
+                  
+
+Slovak<br />
+
+                  
+                  
+
+sl_SI<br />
+
+                  
+                  
+
+Albanian<br />
+
+                  
+                  
+
+sr-ME<br />
+
+                  
+                  
+
+sr-RS<br />
+
+                  
+                  
+
+Serbian (Montenegro)<br />
+
+                  
+                  
+
+Serbian (Serbia)<br />
+
+                  
+                  
+
+Swedish<br />
+
+                  
+                  
+
+Swahili<br />
+
+                  
+                  
+
+Tamil<br />
+
+                  
+                  
+
+Tajik<br />
+
+                  
+                  
+
+Thai<br />
+
+                  
+                  
+
+Turkmen<br />
+
+                  
+                  
+
+Turkish<br />
+
+                  
+                  
+
+Tatar<br />
+
+                  
+                  
+
+Uyghur<br />
+
+                  
+                  
+
+Ukrainian<br />
+
+                  
+                  
+
+Urdu<br />
+
+                  
+                  
+
+Vietnamese<br />
+
+                  
+                  
+
+zh_CN<br />
+
+                  
+                  
+
+zh_HK<br />
+
+                  
+                  
+
+zh_TW<br />
+
+                  
+                </div>
+
+                
+                </p>
+              </div>
+              
+              
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Extended description</p>
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
+                <p><a href="https://www.globaleaks.org/">GlobaLeaks</a> is free, open souce software enabling anyone to easily set up and maintain a secure whistleblowing platform. Thanks to GlobaLeaks even non-technical people are be able to setup their own anonymous whistleblowing project. Designed to be user-friendly the software is customizable up to own needs and protects the whistleblower’s privacy and submissions. GlobaLeaks targets <a href="https://www.globaleaks.org/usecases/">many use cases</a> and therefore it has been designed as a framework. Designed with flexibility in mind and translated in <a href="https://www.transifex.com/otf/globaleaks">more than 90 languages</a> GlobaLeaks is nowadays adopted worldwide by more than 10000 projects. The vast range of adopters includes independent media, activists, public agencies, corporations and more.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<a href="#" title="back to contents" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">back to contents</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Project of</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaboration with</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Follow us</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/en/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/en/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/en/legal-notice">Terms and conditions</a></li>
+      
+      
+      <li><a href="/en/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>

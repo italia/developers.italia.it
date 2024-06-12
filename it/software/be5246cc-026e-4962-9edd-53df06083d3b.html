@@ -1,0 +1,1409 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    GovPay
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="GovPay - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/it/software/be5246cc-026e-4962-9edd-53df06083d3b.html" />
+<meta property="og:url" content="https://developers.italia.it/it/software/be5246cc-026e-4962-9edd-53df06083d3b.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="GovPay - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Sviluppiamo i servizi pubblici, insieme","headline":"GovPay - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/it/software/be5246cc-026e-4962-9edd-53df06083d3b.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202406121443" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-default">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ITA</span>
+    <span class="sr-only">lingua attiva:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it/software/be5246cc-026e-4962-9edd-53df06083d3b.html"><span lang="it">italiano</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en/software/be5246cc-026e-4962-9edd-53df06083d3b.html"><span lang="en">english</span>
+        
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">Sviluppiamo i servizi pubblici, insieme</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Menu di navigazione</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        
+        <img alt="" src="https://raw.githubusercontent.com/link-it/govpay/master/docs/_images/gpay_logo_catalogoriuso.png" class="d-inline-block" />
+        
+        <h1 class="d-inline-block">
+          GovPay
+          <span class="badge badge-pill badge-pill--sup badge-primary">3.7.6</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            Gateway di integrazione a pagoPA
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            Gateway di integrazione alla piattaforma di pagamento pagoPA.
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=payment-gateway">gateway pagamenti</a>
+</li>
+
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=taxes-management">gestione tasse</a>
+</li>
+
+              
+            </ul>
+            
+          </div>
+          <div class="row legal-main-info">
+            <div class="col-sm">
+              <p><span class="label">Pubblicato da </span>
+                
+                Link.it s.r.l.
+                
+              </p>
+            </div>
+            
+
+            
+            <div class="col-sm">
+              <p><span class="label">Contatto tecnico </span>
+                
+                    
+                    <a href="mailto:nardi@link.it">Lorenzo Nardi</a>
+                    
+                    +39050504639
+                
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <div class="drops-details">
+        <div class="vitality-score">
+          <div class="status-developement">
+            <p>Stato di sviluppo: 
+
+
+<span class="status"> stabile </span> 
+ </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drops-details">
+        
+        <div class="goto">
+          <p>
+            <a
+              href="https://github.com/link-it/govpay"
+              aria-label="Vai al sito del software (collegamento esterno)"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-proofer-ignore
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Sito web del progetto &rarr;</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="goto doc">
+          <p><a href="https://govpay.readthedocs.io/it/latest/" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+        </div>
+        
+        <div class="goto code">
+          <p><a href="https://github.com/link-it/govpay"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+        </div>
+        
+        <div class="goto road">
+          <p><a href="https://github.com/link-it/govpay/milestones"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+        </div>
+        
+
+        
+        <div class="goto">
+          <p>
+            <a href="/it/riuso/dichiarazione" onclick="localStorage.setItem('reuse-repo', 'https://github.com/link-it/govpay'); return true">
+              <img alt="" src="/assets/icons/software_icons/it-check.svg">La mia amministrazione lo usa &rarr;
+            </a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<hr class="divider mb-0">
+
+<div class=" container-fluid ">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Funzionalità del software </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> PNRR </p>
+            
+            <p> PNRR/Misura/1.4.3 </p>
+            
+            <p> PNRR/Beneficiari/Comuni </p>
+            
+            <p> PNRR/Beneficiari/Scuole </p>
+            
+            <p> PNRR/Beneficiari/ASL </p>
+            
+            <p> PNRR/Beneficiari/Enti Regionali </p>
+            
+            <p> PNRR/Beneficiari/Università </p>
+            
+            <p> PNRR/Beneficiari/PA Centrali </p>
+            
+            <p> PNRR/Beneficiari/Province </p>
+            
+            <p> PNRR/Beneficiari/Istituti di ricerca e AFAM </p>
+            
+            <p>
+              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature" class="count">Mostra tutto
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              
+              <p> PNRR/Beneficiari/Altri enti </p>
+              
+              <p> Implementazione delle specifiche di interconnessione a pagoPA </p>
+              
+              <p> Supporto completo dei modelli di pagamento ad iniziativa Ente o PSP </p>
+              
+              <p> Stampa degli Avvisi di Pagamento pagoPA anche per pagamenti rateizzati o
+in forma ridotta </p>
+              
+              <p> Notifica email per Avvisi di Pagamento pagoPA, Ricevute di Pagamento e
+promemoria di scadenza </p>
+              
+              <p> Integrazione al Backend IO per l&#39;avvisatura digitale </p>
+              
+              <p> Cruscotto di monitoraggio (Tavolo Operativo) conforme ai requisiti
+pagoPA </p>
+              
+              <p> Servizi REST di pagamento e consultazione della posizione debitoria </p>
+              
+              <p> Servizi REST di gestione pendenze per l&#39;integrazione di gestionali
+posizioni debitorie </p>
+              
+              <p> Servizi REST di riconciliazione pagamenti per l&#39;integrazione di
+verticali di contabilità </p>
+              
+              <p> Profilazione degli operatori di cruscotto </p>
+              
+              <p> Plugin di integrazione ad applicativi di terze parti </p>
+              
+            </div>
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Usata da 4
+              
+              amministrazioni
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> CNR - Consiglio Nazionale delle Ricerche </p>
+              
+              <p> ISS - Istituto Superiore della Sanità </p>
+              
+              <p> MIC - Ministero della Cultura </p>
+              
+              <p> MISE - Ministero dello Sviluppo Economico </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>AMBITO DI APPLICAZIONE</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?intended_audiences=government">government</a>
+</li>
+
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>Informazioni di dettaglio </p>
+            <div class="title">
+              <h2 class="h1">
+                GovPay
+                
+                <span
+                  class="badge badge-pill badge-pill--sup badge-primary">3.7.6</span>
+                
+              </h2>
+              <h2>
+                Gateway di integrazione a pagoPA
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Ultimo rilascio</span>
+                  2024-02-18
+                  
+                  (3.7.6)
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Tipo di manutenzione</span>
+                  community
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
+          
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                
+                Contatto tecnico
+                
+              </span>
+            </p>
+            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              
+              Contatto tecnico
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                
+                <div class="col-md">
+                  <p>
+                    
+                    <a href="mailto:nardi@link.it">Lorenzo Nardi</a>
+                    
+                    +39050504639
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Licenza</span>
+                  GPL-3.0-or-later
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme</span>
+                  
+                      web<br />
+                  
+                </p>
+              </div>
+              
+
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme abilitanti</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                      
+                      <a href="/it/pagopa" class="enabling_platforms">
+                        pagoPA
+                      </a>
+                      
+                      
+                      <a href="/it/spid" class="enabling_platforms">
+                        SPID
+                      </a>
+                      
+                      
+                      
+                      
+                   
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Conformità</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    GDPR
+                  
+                  
+                  <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/" class="enabling_platforms">
+                    Linee Guida Design
+                  </a>
+                  
+                  
+                  <a href="https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict" class="enabling_platforms">
+                    Misure Minime Sicurezza
+                  </a>
+                  
+                  
+                  <a href="https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/index.html" class="enabling_platforms">
+                    Modello Interoperabilità
+                  </a>
+                  
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Lista dipendenze</span>
+                  
+                      
+                          <span class="badge badge-pill badge-primary">OSS</span><br />
+                          
+                          
+
+
+    Java 
+
+<br />
+                          
+                      
+                      
+                      
+                   
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Altre informazioni
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+
+              <div class="other-detail">
+                <p><span class="label">Lingue supportate</span>
+                  
+                
+                
+
+Italiano<br />
+
+                
+                
+                </p>
+              </div>
+              
+              
+              
+              <div class="other-detail">
+                <p><span class="label">Documentazione API</span>
+                  <a href="https://govpay.readthedocs.io/it/latest/integrazione/api/index.html" data-proofer-ignore>GovPay API</a>
+                </p>
+              </div>
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Descrizione estesa</p>
+              <!--
+                Use data-proofer-ignore to make html-proofer ignore this section for now:
+                it comes from external publiccode.yml files so there might be broken links
+                out of our control making our CI pipeline fail.
+
+                TODO: find a better solution
+              -->
+              <div class="font-serif page-detail__text" data-proofer-ignore>
+                <p>La piattaforma GovPay soddisfa i requisiti richiesti dalla normativa per
+l’adesione a pagoPA necessari alla realizzazione di pagamenti, dovuti o
+spontanei, sia ad iniziativa Ente che ad iniziativa PSP nonché alla loro
+riconciliazione in tesoreria.</p>
+
+<p>Fornisce un cruscotto di gestione che implementa i servizi di “Tavolo
+Operativo” descritti dalle specifiche PagoPA utilizzabile dagli operatori
+per monitorare il corretto funzionamento della piattaforma e degli
+applicativi ad essa collegati oltre a fornire i report necessari ai
+servizi di supporto di primo e secondo livello. GovPay mette a
+disposizione una suite completa di API REST per l’integrazione degli
+applicativi esistenti (portali di pagamento, gestionali di posizioni
+debitorie, applicativi di contabilità, …). Le API coprono tutte le
+funzionalità del prodotto, permettendo di automatizzare l’intero ciclo di
+vita del pagamento, dall’alimentazione dell’archivio dei pagamenti in
+attesa (APA) ed emissione dell’avviso di pagamento, fino alla
+riconciliazione contabile in tesoreria delle riscossioni effettuate. Le
+stesse operazioni sono comunque disponibili anche sul cruscotto di
+gestione per gli operatori, tramite compilazione di form o file upload di
+tracciati record.</p>
+
+<p>Di seguito le funzionalita fornite dal prodotto ed individuate dal <a href="https://www.pagopa.gov.it/it/pubbliche-amministrazioni/quadro-sinottico/">quadro
+sinottico dei
+servizi</a>
+al quale si rimanda per una descrizione più estesa.</p>
+
+<p><strong>Servizi minimi</strong></p>
+
+<ul>
+  <li>
+    <p>Gestione Archivio Pagamenti in Attesa</p>
+  </li>
+  <li>
+    <p>Integrazione con e@bollo</p>
+  </li>
+  <li>
+    <p>Modelli di pagamento</p>
+  </li>
+</ul>
+
+<p><strong>Servizi base</strong></p>
+
+<ul>
+  <li>
+    <p>Profilazione personale EC con diversi ruoli e permessi</p>
+  </li>
+  <li>
+    <p>Rateizzazione</p>
+  </li>
+  <li>
+    <p>Attualizzazione del debito</p>
+  </li>
+  <li>
+    <p>Disponibilità della ricevuta telematica</p>
+  </li>
+  <li>
+    <p>Gestione Carrello multi beneficiario multi pagatore</p>
+  </li>
+  <li>
+    <p>Gestione del giornale degli eventi</p>
+  </li>
+</ul>
+
+<p><strong>Servizi distintivi</strong></p>
+
+<ul>
+  <li>
+    <p>Servizi di quadratura del flusso di pagamenti</p>
+  </li>
+  <li>
+    <p>Integrazione con piattaforma App IO</p>
+  </li>
+  <li>
+    <p>Riconciliazione</p>
+  </li>
+</ul>
+
+<p><strong>Servizi a valore aggiunto</strong></p>
+
+<ul>
+  <li>
+    <p>Messa a disposizione dei documenti scambiati con pagoPA (RT,RPT, flussi
+di rendicontazione)</p>
+  </li>
+  <li>
+    <p>Scarico flussi di rendicontazione</p>
+  </li>
+  <li>
+    <p>Invio esito pagamento</p>
+  </li>
+  <li>
+    <p>Possibilità invio PEC</p>
+  </li>
+  <li>
+    <p>Avvisatura massiva</p>
+  </li>
+  <li>
+    <p>Avvisatura singola</p>
+  </li>
+  <li>
+    <p>Codifica dati per analisi pagamenti</p>
+  </li>
+  <li>
+    <p>Fascicolo del cittadino</p>
+  </li>
+  <li>
+    <p>Interoperabilità con contabilità</p>
+  </li>
+  <li>
+    <p>Interoperabilità con gestionali</p>
+  </li>
+  <li>
+    <p>Integrabilità con altri front-end</p>
+  </li>
+</ul>
+
+<p><strong>Servizi a valore aggiunto non individuati dal quadro sinottico</strong></p>
+
+<ul>
+  <li>
+    <p>Possibilità di alimentare l’archivio dei pagamenti in attesa e ottenere
+i corrispondenti avvisi di pagamento tramite tracciati CSV</p>
+  </li>
+  <li>
+    <p>Servizio di notifica email degli avvisi di pagamento e delle ricevute</p>
+  </li>
+  <li>
+    <p>Integrazione nativa ad applicativi terzi: MyPIVOT, SECIM, HyperSIC
+(APKappa)</p>
+  </li>
+</ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">torna all'inizio dei contenuti</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Progetto di</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaborazione con</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/it/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali">Note legali</a></li>
+      
+      
+      <li><a href="/it/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
