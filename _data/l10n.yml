@@ -207,6 +207,7 @@ it:
       goToPlatform: "Vai alla piattaforma"
 
     software:
+      disclaimerDevelopers: <a href="/it/faq#collapseDiv12">Garanzie sui contenuti</a>
       catalogue: Catalogo software
       cataloguePNRR: Selezione dedicata al PNRR
       load_more: Carica altri
