@@ -28,7 +28,11 @@ resources:
     - title: Linee guida modello interoperabilità (ModI)
       url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
       icon: file
-      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità    
+      desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
+    - title: Regole per il controllo automatico di specifiche OpenAPI secondo il ModI
+      url: https://github.com/italia/api-oas-checker-rules
+      icon: github
+      desc: Istruzioni per verificare automaticamente che le interfacce Open API degli e-service da pubblicare su PDND rispettino le principali regole del ModI
     - title: Guida alla pubblicazione di e-service per WaaS
       url: https://github.com/INPS-it/WaaS.Comuni/blob/main/003%20-%20Guida%20Comuni/Guida.md
       icon: github
@@ -43,14 +47,10 @@ resources:
       icon: github
       desc: Specifiche API relative alla misura 1.3.1 per l’avviso Università e AFAM
   - Strumenti:
-    - title: Validatore sintattico
+    - title: API OAS Checker
       url: https://italia.github.io/api-oas-checker/
       icon: software
       desc: Analizza le specifiche OpenAPI di un’API REST e individua eventuali difformità rispetto alle regole tecniche Agid
-    - title: Validatore sintattico - articolo Medium
-      url: https://medium.com/developers-italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5
-      icon: link
-      desc: Articolo di presentazione del Validatore sintattico
   - Archivio:
     - title: (2019) Using OpenAPI to standardize the Italian API ecosystem - slide (en)
       url: /assets/images/pdnd/pycon-2019-api.pdf
@@ -80,6 +80,10 @@ resources:
       url: /assets/images/pdnd/europython-2022-self-explaining-api-semantic-schema.pdf
       icon: file
       desc: Presentazione che racconta l'approccio semantico alla progettazione di API interoperabili
+    - title: Validatore sintattico - articolo Medium
+      url: https://medium.com/developers-italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5
+      icon: link
+      desc: Articolo di presentazione del Validatore sintattico      
 
 ---
 
