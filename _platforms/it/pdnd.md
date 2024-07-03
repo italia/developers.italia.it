@@ -29,8 +29,8 @@ resources:
       url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
       icon: file
       desc: Indicazioni, standard e tecnologie da rispettare per permettere l'interoperabilità
-    - title: Regole per il controllo automatico di specifiche OpenAPI secondo il ModI
-      url: https://github.com/italia/api-oas-checker-rules
+    - title: Guida all'utilizzo delle regole per il controllo automatico di specifiche OpenAPI secondo il ModI
+      url: https://github.com/italia/api-oas-checker-rules/blob/main/docs/guida_validazione.md
       icon: github
       desc: Istruzioni per verificare automaticamente che le interfacce Open API degli e-service da pubblicare su PDND rispettino le principali regole del ModI
     - title: Guida alla pubblicazione di e-service per WaaS
@@ -51,6 +51,10 @@ resources:
       url: https://italia.github.io/api-oas-checker/
       icon: software
       desc: Analizza le specifiche OpenAPI di un’API REST e individua eventuali difformità rispetto alle regole tecniche Agid
+    - title: Regole per il controllo automatico di specifiche OpenAPI secondo il ModI
+      url: https://github.com/italia/api-oas-checker-rules
+      icon: github
+      desc: Regole Spectral per verificare automaticamente che le interfacce Open API degli e-service da pubblicare su PDND rispettino le principali regole del ModI
   - Archivio:
     - title: (2019) Using OpenAPI to standardize the Italian API ecosystem - slide (en)
       url: /assets/images/pdnd/pycon-2019-api.pdf
