@@ -41,7 +41,7 @@ jekyll-build:
 	    curl --fail \
            -H 'Content-Type: application/json' \
 	         -H "Authorization: Basic $$(printf %s:%s "elastic" "$${ELASTICSEARCH_PASS}" | base64)" \
-	         --data-binary @elasticseach.bulk \
+	         --data-binary @elasticsearch.bulk \
 	         -XPOST "https://elasticsearch.developers.italia.it/_bulk?pretty"; \
 	fi
 
