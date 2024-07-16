@@ -38,9 +38,10 @@ jekyll-build:
 	@if [ -z "$${ELASTICSEARCH_PASS}" ]; then \
 	    echo "Skipping Elasticsearch update: ELASTICSEARCH_PASS is not set."; \
 	else \
-	    curl -H 'Content-Type: application/json' \
+	    curl --fail \
+           -H 'Content-Type: application/json' \
 	         -H "Authorization: Basic $$(printf %s:%s "elastic" "$${ELASTICSEARCH_PASS}" | base64)" \
-	         --data-binary @elasticseach.bulk.json \
+	         --data-binary @elasticseach.bulk \
 	         -XPOST "https://elasticsearch.developers.italia.it/_bulk?pretty"; \
 	fi
 
