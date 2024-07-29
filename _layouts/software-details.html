@@ -65,17 +65,26 @@ layout: default
             {% endif %}
           </div>
           <div class="row legal-main-info">
+            {% if page.publiccode.legal.mainCopyrightOwner %}
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
+                {{ page.publiccode.legal.mainCopyrightOwner }}
+              </p>
+            </div>
+            {% endif %}
+            {% if page.publiccode.legal.repoOwner %}
+            <div class="col-sm">
+              <p><span class="label">Gestito da</span>
                 {% if page.publiccode.it.riuso.codiceIPA %}
                 <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {{ page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {{ page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
+            {% endif %}
             {% if page.publiccode.maintenance.type == "contract" %}
             {% if page.publiccode.maintenance.contractors.size > 0 %}
             <div class="col-sm">

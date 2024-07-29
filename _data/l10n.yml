@@ -434,7 +434,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         transportation: trasporti
         welfare: benessere
     pa:
-      top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
+      top_right_text:
       more_details: Esplora
     errors:
       something_went_wrong: Ops! Qualcosa è andato storto...
@@ -879,7 +879,7 @@ The ranges of every measure can be found in the [vitality-ranges.yml](https://gi
         transportation: transportation
         welfare: welfare
     pa:
-      top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
+      top_right_text:
       more_details: Read more
     errors:
       something_went_wrong: Oops, something went wrong...
