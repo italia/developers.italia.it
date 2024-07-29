@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import PropTypes from 'prop-types';
 
 import { Spinner } from './Spinner';
@@ -10,46 +9,30 @@ const stateClass = {
   'error': 'danger',
 };
 
-const useStyle = createUseStyles({
-  placeholder: {
-    height: '100%',
-    width: '100%',
-    marginLeft: 0,
-    objectFit: 'contain',
-  },
-  badge: {
-    // extend: 'placeholder',
-    display: (publiccodeState) => (publiccodeState !== 'loading' ? 'block' : 'none'),
-  },
-});
-
-export const PubliccodeBadge = React.memo(({ repo }) => {
+export const PubliccodeBadge = React.memo(({ id }) => {
   const [publiccodeState, setPubliccodeState] = useState('loading');
-
-  const classes = useStyle(publiccodeState)
 
   useEffect(async () => {
     const res = await fetch(logUrl);
 
     if (res.status >= 200 || res.status <= 299) {
       const data = await res.json();
-      const good = data.find(entry => entry?.message?.includes('activity index in the last'));
+      const good = data.data[0]?.message.includes('GOOD publiccode.yml');
 
       setPubliccodeState(good ? 'good' : 'error');
     } else {
       setPubliccodeState('error');
     }
-  });
+  }, [logUrl]);
 
-  const repoPath = repo.replaceAll(/^(.+):\/\/|.git$/ig, '');
-  const logUrl = `https://crawler.developers.italia.it/${repoPath}/log.json`
+  const logUrl = `https://api.developers.italia.it/v1/software/${id}/logs`
 
   return (
     <>
       <div className="lead">
+        {publiccodeState === 'loading' && <Spinner />}
         <span className={`badge badge-${stateClass[publiccodeState]}`}>
-          {publiccodeState === 'loading' && <Spinner />}
-          {publiccodeState !== 'loading' && publiccodeState }
+          {publiccodeState !== 'loading' && publiccodeState}
         </span>
       </div>
 
@@ -57,16 +40,16 @@ export const PubliccodeBadge = React.memo(({ repo }) => {
         className="x-small"
         href={logUrl}
         target="_blank"
-        aria-label="Log file of the latest publiccode.yml crawling"
+        aria-label="Log results of the latest publiccode.yml crawling"
       >
-        (JSON log)
+        (log)
       </a>
     </>
   );
 });
 
 PubliccodeBadge.propTypes = {
-  repo: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 PubliccodeBadge.displayName = 'PubliccodeBadge';
