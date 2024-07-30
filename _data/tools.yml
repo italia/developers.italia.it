@@ -7,12 +7,12 @@ it:
     alt: Logo Forum Italia
     img: /assets/images/tools/Forum_Logo.svg
   -
-    title: Slack
-    subtitle: "**Dialoga e collabora in tempo reale** con i maintainer e gli altri sviluppatori sullo Slack di Developers Italia."
+    title: Slack e Matrix
+    subtitle: "**Dialoga e collabora in tempo reale** con i maintainer e gli altri sviluppatori sullo Slack e il server Matrix di Developers Italia."
     icon: comment
     url: https://slack.developers.italia.it/
-    alt: Logo Slack
-    img: /assets/images/tools/Slack_Logo.svg
+    alt: Logo Slack e Matrix
+    img: /assets/images/tools/Slack_Matrix.svg
   -
     title: Codice sorgente
     subtitle: "In **github.com/italia** sviluppiamo (insieme) gli SDK e gli esempi di supporto delle piattaforme nazionali."
@@ -36,11 +36,11 @@ en:
     url: https://forum.italia.it
     img: /assets/images/tools/Forum_Logo.svg
   -
-    title: Slack
-    subtitle: "**Chat and collaborate in real time** with the maintainers and the other developers in the Slack of Developers Italia."
+    title: Slack and Matrix
+    subtitle: "**Chat and collaborate in real time** with the maintainers and the other developers in the Slack and Matrix server of Developers Italia."
     icon: comment
     url: https://slack.developers.italia.it/
-    img: /assets/images/tools/Slack_Logo.svg
+    img: /assets/images/tools/Slack_Matrix.svg
   -
     title: Source Code
     subtitle: "In **github.com/italia** we develop (together) SDKs and examples for national platforms."
