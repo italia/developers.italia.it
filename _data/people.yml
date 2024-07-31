@@ -155,7 +155,7 @@ bfabio:
   desc:
   pic: /assets/images/bfabio.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
