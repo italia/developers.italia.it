@@ -12,9 +12,9 @@ body:
       required: true
 - type: checkboxes
   attributes:
-    label: Il software NON è di titolarita di una Pubblica Amministrazione
+    label: Il software NON è di titolarità di una Pubblica Amministrazione
     description: |
-      Con questa issue possono essere aggiunti solo software open source di terze. Se il software è di titolarita di una Pubblica Amministrazione usa [https://onboarding.developers.italia.it](https://onboarding.developers.italia.it)
+      Con questa issue possono essere aggiunti solo software open source di terze. Se il software è di titolarità di una Pubblica Amministrazione usa [https://onboarding.developers.italia.it](https://onboarding.developers.italia.it)
     options:
     - label: Confermo
       required: true
