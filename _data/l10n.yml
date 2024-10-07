@@ -190,6 +190,7 @@ it:
     project_abilitante: Piattaforma abilitante
     project_owner: Titolare
     project_manager: Gestore
+    project_collab: Canali
     project_risorse: Risorse
     project_issues: Attività aperte
     project_issues_go: Vai alla pagina delle Attività
@@ -633,6 +634,7 @@ en:
     project_abilitante: Enabling Platform
     project_owner: Owner
     project_manager: Manager
+    project_collab: Collaboration
     project_risorse: Resources
     project_issues: Open issues
     project_issues_go: Go to Issues page
