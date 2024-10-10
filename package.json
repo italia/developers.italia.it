@@ -4,7 +4,7 @@
     "license": "BSD-3-Clause",
     "dependencies": {
         "axios": "^1.7.7",
-        "bootstrap-italia": "^1.5.1",
+        "bootstrap-italia": "^1.6.4",
         "chart.js": "^2.9.4",
         "datatables.net-dt": "^1.10.19",
         "design-react-kit": "^3.3.3",
