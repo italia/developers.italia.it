@@ -27,7 +27,7 @@
         "react-hook-form": "^6.14.2",
         "react-jss": "^10.5.0",
         "select2": "^4.0.3",
-        "swagger-ui": "^5.4.2",
+        "swagger-ui": "^5.17.14",
         "url-loader": "^4.1.1",
         "util": "^0.12.5"
     },
