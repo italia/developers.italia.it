@@ -36,7 +36,7 @@ layout: default
 
       <div class="container list-item-sorting">
         <div class="row row-eq-height">
-        {% for pa in pa_list limit: 60 %}
+        {% for pa in pa_list %}
 
         {% assign pa_name = pa.entityName | default: pa.ipa %}
 
