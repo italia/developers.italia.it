@@ -20,7 +20,7 @@ Durante quel weekend tutte le tech community italiane e gli sviluppatori potrann
 
 All'hackathon si può partecipare in due modi:
 
- * [iscrivendosi come partecipante](http://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&id=32376a094a)
+ * [iscrivendosi come partecipante](https://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&id=32376a094a)
 
 oppure
 

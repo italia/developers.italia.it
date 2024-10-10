@@ -12,14 +12,6 @@
 
  <!-- Badges -->
 <div align="center">
-  <!-- CircleCI-->
-  <a href="https://circleci.com/gh/italia/developers.italia.it">
-    <img alt="CircleCI" src="https://circleci.com/gh/italia/developers.italia.it.svg?style=shield">
-  </a>
-  <img src="https://vercelbadge.vercel.app/api/italia/developers.italia.it" alt="Vercel"/>
-  <a href="https://github.com/italia/developers.italia.it/releases">
-    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
-  </a>
   <a href="LICENSE.md">
     <img alt="LICENSE" src="https://img.shields.io/github/license/italia/developers.italia.it">
   </a>
@@ -57,7 +49,7 @@ creating the next generation of digital public services in Italy.
 This repository contains the sources of the website.
 The website is developed using [Jekyll](https://jekyllrb.com/).
 
-A [CircleCI job](.circleci/config.yml) builds the sources, getting some data from
+A [GitHub action job](.github/workflows/publish.yml) builds the sources, getting some data from
 [developers.italia.it-data](https://github.com/italia/developers.italia.it-data),
 and commits the resulting artifacts to the [gh-pages
 branch](https://github.com/italia/developers.italia.it/tree/gh-pages).
@@ -103,7 +95,7 @@ docker-compose up --build
 
 ## Makefile
 
-Both the [CircleCI build](.circleci/config.yml) and the [Docker
+Both the [build](.github/workflows/publish.yml) and the [Docker
 files](docker-compose.yml) leverage a [Makefile](Makefile), facilitating the
 execution of more complex routines.
 You can have a look at the [Makefile](Makefile) to know more about the exact
@@ -134,7 +126,7 @@ a look at our [contributing guidelines](CONTRIBUTING.md).
 
 # License
 
-Copyright (c) 2018-2020 - Presidenza del Consiglio dei Ministri
+Copyright© 2018-present - Presidenza del Consiglio dei Ministri
 
 The source code is released under the BSD license (SPDX code: `BSD-3-Clause`)
 and it's distributed with this license since May 30th 2018.

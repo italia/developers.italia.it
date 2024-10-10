@@ -1,4 +1,4 @@
-FROM cimg/ruby:2.6-browsers
+FROM docker.io/cimg/ruby:3.2-browsers
 
 ENV PORT 4000
 ENV NOKOGIRI_USE_SYSTEM_LIBRARIES true
@@ -25,6 +25,7 @@ COPY _posts _posts
 COPY assets assets
 COPY en en
 COPY it it
+COPY scripts scripts
 COPY 403.html .
 COPY 404.html .
 COPY 500.html .

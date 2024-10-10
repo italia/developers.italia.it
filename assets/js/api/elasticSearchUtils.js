@@ -12,7 +12,7 @@ export const buildFilter = (filters) => {
     ...intendedAudiences.map((filterValue) => ({
       term: { 'publiccode.intendedAudience.scope': filterValue },
     })),
-    ...categories.map((filterValue) => ({ term: { 'publiccode.categories': filterValue } })),
+    ...categories.map((filterValue) => ({ term: { 'publiccode.categories.keyword': filterValue } })),
 
     // We want exact match here and case sensitivity because PNRR features are basically
     // tags we came up with to mark certain type of software (the ones that help Public administrations

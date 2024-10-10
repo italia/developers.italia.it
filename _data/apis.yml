@@ -1,3 +1,12 @@
+- openapi: https://raw.githubusercontent.com/italia/developers-italia-api/main/developers-italia.oas.yaml
+  title: Catalogo del software pubblico - developers.italia.it
+  abstract: API del Catalogo del software pubblico in Developers Italia (beta)
+  contact:
+    name: Developers Italia
+    logo: /assets/icons/logo-it-blue.svg
+  tags: []
+  language: [it]
+  slug: developers-italia
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/geodati.gov.it.yaml
   title: Repertorio Nazionale dei Dati Territoriali - geodati.gov.it
   abstract: Interfaccia REST verso il repertorio nazionale dei dati territoriali.
@@ -53,15 +62,6 @@
   tags: []
   language: [it]
   slug: aree-protette-lombardia
-- openapi: https://raw.githubusercontent.com/teamdigitale/anpr-dashboard-server/master/openapi/anpr-dashboard.yaml
-  title: ANPR Dashboard API
-  abstract: Informazioni sullo stato della migrazione ad ANPR.
-  contact:
-    name: Team Digitale
-    logo: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/img/api.daf.teamdigitale.it.png
-  tags: []
-  language: [it]
-  slug: anpr-dashboard
 - openapi: https://raw.githubusercontent.com/teamdigitale/api-openapi-samples/master/external-apis/covid19-regione.umbria.it.yaml
   title: API sui dati del COVID-19 della Regione Umbria
   abstract: Dati sull'emergenza COVID-19 della Regione Umbria

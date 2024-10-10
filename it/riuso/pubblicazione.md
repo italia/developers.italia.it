@@ -26,7 +26,7 @@ Il processo in sintesi:
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Entra nel forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a>
-<a class="btn btn-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Registrati su Slack </a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Registrati su Slack </a>
 
 
 ## publiccode.yml
@@ -50,19 +50,19 @@ La pubblicazione nel catalogo, così come il recepimento degli aggiornamenti, è
 I software open source di terze parti, ovvero non messi a riuso dalla Pubblica Amministrazione ma di potenziale interesse per il settore pubblico, possono essere inclusi nel catalogo di Developers Italia. È necessario a tal fine:
 
 1. compilare ed includere il file `publiccode.yml` nel repositorio (lasciando vuoto il campo `codiceIPA`);
-2. aggiungere l'URL del repositorio nella [lista](https://github.com/italia/developers-italia-backend/blob/master/crawler/whitelist/thirdparty.yml) aprendo una pull request su GitHub.
+2. aprire una nuova issue sul repository del Catalogo tramite [questa pagina](https://github.com/italia/developers.italia.it/issues/new?assignees=&labels=&projects=&template=add_new_software.yaml).
 
 ## PNRR: soluzioni a Catalogo
 
-Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR), 
-e in particolare quelli previsti dalla Missione 1, Componente 1 in capo al Dipartimento per la trasformazione digitale, 
-abbiamo implementato alcuni percorsi di ricerca tematici, che agevolino le Pubbliche Amministrazioni a 
+Nell'ottica di contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa e Resilienza (PNRR),
+e in particolare quelli previsti dalla Missione 1, Componente 1 in capo al Dipartimento per la trasformazione digitale,
+abbiamo implementato alcuni percorsi di ricerca tematici, che agevolino le Pubbliche Amministrazioni a
 reperire soluzioni rispondenti ai requisiti indicati negli avvisi pubblicati da [PA Digitale 2026](https://padigitale2026.gov.it/){:target="_blank" rel="noopener noreferrer"}.
 
-Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal 
-Codice dell'Amministrazione Digitale (Artt. [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html){:target="_blank" rel="noopener noreferrer"} 
+Nella ricerca di soluzioni che possano concorrere al raggiungimento di tali requisiti, va rispettato quanto previsto dal
+Codice dell'Amministrazione Digitale (Artt. [68](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html){:target="_blank" rel="noopener noreferrer"}
 e [69](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html){:target="_blank" rel="noopener noreferrer"}) effettuando una **valutazione comparativa** che dia priorità,
-nell'ordine, al software a riuso ed open source di terze parti. 
+nell'ordine, al software a riuso ed open source di terze parti.
 
 Per agevolare la ricerca di soluzioni idonee abbiamo individuato alcune informazioni che possono essere inserite, su base volontaria e autocertificata, nel file `publiccode.yml`, utilizzato
 per la pubblicazione delle schede di presentazione del Catalogo.
@@ -77,7 +77,7 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
 * "`PNRR/Beneficiari/{NOME BENEFICIARIO}`" per indicare che il software può avere come beneficiari quelli indicati. Questo valore può essere ripetuto tante volte quanto necessario.
 
   Esempio: "`PNRR/Beneficiari/Scuole`"
-  
+
   I possibili nomi di beneficiari sono:
     - "`Comuni`"
     - "`Scuole`"
@@ -89,7 +89,7 @@ All'interno del file `publiccode.yml`, nel campo `features` si chiede di inserir
     - "`Istituti di ricerca e AFAM`"
     - "`Altri enti`"
 * `PNRR/Misura/{NUMERO MISURA}` per indicare che il software può essere utile per rispondere alla misura numero `{NUMERO MISURA}`. Questo valore può essere ripetuto tante volte quanto necessario.
-  
+
   Esempio: "`PNRR/Misura/1.2`"
 
   Le possibili misure sono:

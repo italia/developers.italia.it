@@ -10,11 +10,15 @@ module.exports = merge(common, {
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
     },
-    contentBase: './dist',
+    static: {
+      directory: './dist',
+    },
 
     // Write files from CopyWebpackPlugin to disk even in
     // development mode.
     // We need this because they are referenced in the HTML.
-    writeToDisk: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
   },
 });

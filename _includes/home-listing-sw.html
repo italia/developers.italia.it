@@ -1,7 +1,7 @@
 {% include setlang.html %}
 
 {% assign limititems = include.limit | default: 4 %}
-{% assign items = site.data.crawler.softwares | sample: 4 %}
+{% assign items = site.data.crawler.software | sample: 4 %}
 
 {% assign title = include.title %}
 {% assign captiontitle = include.captiontitle %}

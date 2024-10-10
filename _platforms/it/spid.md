@@ -57,6 +57,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-django
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)
+    - title: SDK per NodeJS (Express.js/Passport)
+      icon: github
+      url: https://github.com/random42/passport-spid
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Typescript/Javascript)
     - title: SDK per Express.js
       icon: github
       url: https://github.com/italia/spid-express
@@ -118,26 +122,30 @@ resources:
       icon: github
       title: Esempio di configurazione di Shibboleth con Nginx tramite un playbook Ansible
   - SDK OpenID Connect:
-    - title: SDK per Python (Django)
+    - title: SDK per Python (Django) con esempi pratici
       icon: github
       url: https://github.com/italia/spid-cie-oidc-django
       desc: SPID/CIE OIDC Federation è una collezione di applicazioni Django disegnate per rendere facile costruire e testare una Federazione Openid Connect.
-    - title: SDK per Node.js
+    - title: SDK per Node.js con esempi pratici
       icon: github
       url: https://github.com/italia/spid-cie-oidc-nodejs
       desc: SPID/CIE OIDC Federation Relying Party per Node.js
-    - title: SDK per AspNetCore
+    - title: SDK per AspNetCore con esempi pratici
       icon: github
       url: https://github.com/italia/spid-cie-oidc-aspnetcore
       desc: SPID/CIE OIDC Federation SDK per AspNetCore
-    - title: SDK per PHP
+    - title: SDK per PHP con esempi pratici
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: SPID/CIE OIDC Federation Relying Party per PHP
-    - title: SDK per Java
+    - title: SDK per Java con esempi pratici
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
       desc: Libreria nativa per integrare SPID e CIE OIDC in Java con example project in Spring
+    - title: Nimbus Java SDK
+      icon: github
+      url: https://bitbucket.org/connect2id/oauth-2.0-sdk-with-openid-connect-extensions/
+      desc: Libreria Java per lo sviluppo di entità OAuth2 e OpenID Connect con pieno supporto di OIDC Federation.
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github
@@ -155,6 +163,14 @@ resources:
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
       desc: Applicativo di Identity Access Management compatibile con SPID sviluppato in Python
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML basato su SDK per PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
   - Risorse grafiche:
     - title: Bottone "Entra con SPID"
       icon: github
@@ -254,4 +270,5 @@ I metadati degli Identity Provider sono disponibili presso lo [SPID registry](ht
 ## Canali
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>

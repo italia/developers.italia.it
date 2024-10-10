@@ -6,6 +6,8 @@ external_website: https://indicepa.gov.it
 payoff: Indice degli indirizzi delle pubbliche amministrazioni e dei gestori di pubblici servizi
 description: Base dati di interesse nazionale ai sensi dell’articolo 57-bis comma 1 del Codice dell'Amministrazione Digitale.
 lang: it
+ref:
+  en: /en/indicepa
 order: 4
 owners:
   - name: Agenzia per l'Italia Digitale
@@ -16,7 +18,7 @@ layout: platform
 resources:
   - Documentazione:
     - title: Home page
-      url: http://indicepa.gov.it
+      url: https://indicepa.gov.it
       icon: file
       desc: Pagina di accesso della piattaforma.
     - title: Documentazione

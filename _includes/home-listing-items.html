@@ -23,22 +23,21 @@
                 <article
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
                     {% if withimages==true %}
-                    <a title="{{item.name | default:item.title}}" href="{{itemUrl}}"
+                    <a title="{{item.title}}" href="{{itemUrl}}"
                         class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img" alt="{{ item.name | default:item.title }}"
-                            src="{{item.img | default: item.logo | default:'http://placehold.it/272x176'}}">
+                        <img class="w-100 home-listing-item__img" alt="{{item.title}}"
+                            src="{{item.img | default: item.logo | default:'https://placehold.it/272x176'}}">
                     </a>
                     {% endif %}
                     <h1 class="home-listing-item__title ">
-                        <a title="{{item.name | default:item.title}}" href="{{itemUrl}}"
-                            class="color-inherit">{{item.name | default:item.title}}</a>
+                        <a title="{{item.title}}" href="{{itemUrl}}"
+                            class="color-inherit">{{item.title}}</a>
                     </h1>
                     {% if itemdescription %}
                     <p>{{item[itemdescription]}}</p>
                     {% endif %}
-                    <a title="{{item.name | default:item.title}}" class="home-listing-item__url"
+                    <a title="{{item.title}}" class="home-listing-item__url"
                         href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
-
                 </article>
             </div>
             {% endfor %}

@@ -56,30 +56,47 @@ layout: default
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
-              {% for tag in page.popularCategories limit: 3 %}
-              {% include set-tag.html tag=tag %}
+              {% assign deactive = false %}
+              {% for tag in page.publiccode.categories %}
+                {% if forloop.index > 5 %}
+                  {% assign deactive = true %}
+                {% endif %}
+
+                {% include set-tag.html tag=tag deactive=deactive %}
               {% endfor %}
             </ul>
+            {% if page.publiccode.categories.size > 5 %}
+            <a href="#" id="moreTags">{{ t.software.show_all }}...</a>
+            {% endif %}
           </div>
           <div class="row legal-main-info">
+            {% if page.publiccode.legal.mainCopyrightOwner %}
             <div class="col-sm">
               <p><span class="label">{{ t.software.published_by }} </span>
+                {{ page.publiccode.legal.mainCopyrightOwner }}
+              </p>
+            </div>
+            {% endif %}
+            {% if page.publiccode.legal.repoOwner %}
+            <div class="col-sm">
+              <p><span class="label">Gestito da</span>
                 {% if page.publiccode.it.riuso.codiceIPA %}
                 <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {{ page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.legal.repoOwner | default: page['it-riuso-codiceIPA-label'] }}
+                {{ page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
+            {% endif %}
             {% if page.publiccode.maintenance.type == "contract" %}
             {% if page.publiccode.maintenance.contractors.size > 0 %}
             <div class="col-sm">
               <p><span class="label">{{ t.software.software_maintained_by }} </span>
                 {% for contractor in page.publiccode.maintenance.contractors %}
                     {% if contractor.website != nil and contractor.website != "" %}
-                        <a href="{{ contractor.website }}">{{ contractor.name }}</a>
+                        <a href="{{ contractor.website }}" data-proofer-ignore>{{ contractor.name }}</a>
                     {% else %}
                         {{ contractor.name}}
                     {% endif %}
@@ -110,19 +127,6 @@ layout: default
     <div class="offset-md-1 col-md-4 ">
       <div class="drops-details">
         <div class="vitality-score">
-          <p>{{ t.software.vitality }}:</p>
-          <p class="score d-inline-block"> {{ page.vitalityScore }}%</p>
-          {% if page.vitalityDataChart != nil %}
-          <div id="softwareChart" data-vitality='{{page.vitalityDataChart | reverse | jsonify}}'>
-            <canvas id="vitalityChart"></canvas>
-          </div>
-          {% endif %}
-          <div class="info-block d-inline-block">
-            <span class="info-block__icon">i</span>
-            <div class="info-block__msg font-serif">
-              {{t.software.tooltip | markdownify}}
-            </div>
-          </div>
           <div class="status-developement">
             <p>{{ t.software.development_status }}: {% include software_development_status.html
               label=page.publiccode.developmentStatus %} </p>
@@ -139,6 +143,7 @@ layout: default
               aria-label="{{ t.software.goToLandingUrlAriaLabel }}"
               rel="noopener noreferrer"
               target="_blank"
+              data-proofer-ignore
             >
               <img alt="" src="/assets/icons/software_icons/it-link.svg">{{ t.software.goToLandingUrl }} &rarr;</a>
           </p>
@@ -147,7 +152,7 @@ layout: default
 
         {% if description.documentation != null and description.documentation != "" %}
         <div class="goto doc">
-          <p><a href="{{ description.documentation }}"><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
+          <p><a href="{{ description.documentation }}" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">{{
             t.software.goToDocumentation }} &rarr;</a></p>
         </div>
         {% endif %}
@@ -292,7 +297,7 @@ layout: default
           </a>
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
-            {% assign variant_sw = site.data.crawler.softwares | where: "id", variant.id | first %}
+            {% assign variant_sw = site.data.crawler.software | where: "id", variant.id | first %}
             {% assign variant_description = variant.publiccode.description[active_lang]
 
             | default: variant.publiccode.description.en
@@ -309,9 +314,6 @@ layout: default
                 {% endfor %}
               </p>
               -->
-              <p><span class="label">{{ t.software.vitality }}:
-                  {{ variant_sw.vitalityScore }}%</span>
-              </p>
             </div>
             {% endfor %}
           </div>
@@ -438,6 +440,13 @@ layout: default
                   {{ page.publiccode.maintenance.type }}
                 </p>
               </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Stato publiccode.yml</span>
+                  <publiccode-badge id="{{ page.id }}"></publiccode-badge>
+                <p>
+              </div>
+
               {% if page.publiccode.maintenance.type == "contract" %}
               {% if page.publiccode.maintenance.contractors[0].name != nil %}
               <div class="col-sm-12 col-md">
@@ -454,7 +463,7 @@ layout: default
                     {% endif %}
                     <span class="align-middle">
                       {% if contractor.website != nil and contractor.website != "" %}
-                      <a href="{{ contractor.website }}" class="until">{{ contractor.name }}</a>
+                      <a href="{{ contractor.website }}" class="until" data-proofer-ignore>{{ contractor.name }}</a>
                       {{ t.software.until }} {{contractor.until}}
                       {% else %}
                       {{ contractor.name }} {{ t.software.until }} {{contractor.until}}
@@ -697,7 +706,7 @@ layout: default
               {% if description.apiDocumentation != nil and description.apiDocumentation != "" %}
               <div class="other-detail">
                 <p><span class="label">{{ t.software.api_documentation }}</span>
-                  <a href="{{ description.apiDocumentation }}">{{ sw_name }} API</a>
+                  <a href="{{ description.apiDocumentation }}" data-proofer-ignore>{{ sw_name }} API</a>
                 </p>
               </div>
               {% endif %}

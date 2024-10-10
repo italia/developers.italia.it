@@ -33,7 +33,7 @@ alranel:
   desc:
   pic: /assets/images/alranel.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -94,7 +94,7 @@ leo:
   desc:
   pic: /assets/images/leo.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -107,7 +107,7 @@ roberto:
   desc:
   pic: /assets/images/ioggstream.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -123,7 +123,7 @@ sebbalex:
   desc:
   pic: /assets/images/sebbalex.png
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -155,7 +155,7 @@ bfabio:
   desc:
   pic: /assets/images/bfabio.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -200,7 +200,7 @@ michela:
   desc:
   pic: /assets/images/michela.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     twitter:
       name: twitter
@@ -220,3 +220,23 @@ peppelinux:
     linkedin:
       name: linkedin
       link: https://www.linkedin.com/in/giuseppe-de-marco-bb054245/
+matteov:
+  name: Matteo Vabanesi
+  desc:
+  pic: /assets/images/matteov.jpg
+  role: Team Digitale
+  status: admin
+  contacts:
+    linkedin:
+      name: linkedin
+      link: https://www.linkedin.com/in/matteo-vabanesi-666017153/
+paolo:
+  name: Paolo de Rosa
+  desc:
+  pic: /assets/images/paolo-de-rosa.jpg
+  role: Team Digitale
+  status: ex
+  contacts:
+    github:
+      name: github
+      link: https://github.com/paolo-de-rosa

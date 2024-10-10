@@ -1,8 +1,9 @@
 on:
   schedule:
     - cron: '0 6 * * *'
+  workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   publish:
@@ -11,19 +12,18 @@ jobs:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
 
     steps:
-      - uses: actions/checkout@master
-
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@master
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14.x
+          node-version: 20
+
       - name: Setup ruby env
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6'
+          ruby-version: '3.2'
           bundler-cache: true
 
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
 
       - run: make download-data
       - run: make jekyll-build

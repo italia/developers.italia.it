@@ -17,7 +17,7 @@ github_team: cie
 abilitante: true
 owners:
     - name: Ministry of the Interior
-      url: http://www.interno.gov.it/
+      url: https://www.interno.gov.it/
 managers:
     - name: Istituto Poligrafico e Zecca dello Stato
       url: https://www.ipzs.it/
@@ -78,11 +78,29 @@ resources:
       icon: github
       url: https://github.com/italia/cie-nis-java-sdk
       desc: Java library for reading the unique card number (NIS)
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+  - SDK OIDC:
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
+  - Proxy:
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
 ---
 
 ## Intro
 
-The [Electronic Identity Card](http://www.cartaidentita.interno.gov.it){:target="_blank"}
+The [Electronic Identity Card](https://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) version 3.0 is already **distributed in more than 90% of the Italian territory** to citizens who ask for a new identity card or renew an expired/lost one.
 
 The CIE is not only an identity card, but it's also a technology that enables new digital services for citizens, that can be used also via smartphones and tablets, thanks to the **NFC microchip**. Every Italian citizen, in a few years, will carry a unique and secure NFC token in their pockets. This will enable several applications:
@@ -100,7 +118,8 @@ The CIE is not only an identity card, but it's also a technology that enables ne
 This will be made possible thanks to the identification features embedded in the microchip, whose specifics are open and downloadable from this page.
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Information provided by the card
 
@@ -111,6 +130,6 @@ The CIE contains the following information, accessible in different ways and acc
 - **Data accessible by typing the PIN (provided separately):** TLS client certificate
 - **Data accessible only by law enforcement:** fingerprints
 
-For more details check [this table](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Open source resources (SDK, examples) listed in this page allow to read the above data in custom applications.
+For more details check [this table](/assets/files/CIE-SDK-overview.ods){:target="_blank"}. Open source resources (SDK, examples) listed in this page allow to read the above data in custom applications.
 
 ![](/assets/images/cie/cie_detail.png)

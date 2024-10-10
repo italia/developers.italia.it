@@ -39,7 +39,7 @@ That's great and always appreciated! :sunglasses:
 
 2. Follow our [conventions regarding commits](#commit-messages) for your commit message
 
-3. Open a Pull request against `master`.
+3. Open a Pull request against `main`.
    Blank PRs have a template you can follow where you can tick a checklist.
    When each one of the step is done, please insert an `x` in between the `[ ]`
    to mark it as ready.
@@ -70,8 +70,8 @@ If a commit fixes an issue, please
 
 This repository adopts a simplified branch management system as follows:
 
-* `master` is stable and gets deployed automatically. Never push directly to it;
-* feature or fix branches are derived directly from master.
+* `main` is stable and gets deployed automatically. Never push directly to it;
+* feature or fix branches are derived directly from `main`.
 
 ### Releases
 

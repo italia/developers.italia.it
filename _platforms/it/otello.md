@@ -7,6 +7,8 @@ payoff: "Online Tax Refund at Exit: Light Lane Optimization"
 description: >
   OTELLO 2.0 digitalizza il processo per ottenere il “visto doganale” da apporre sulla fattura per avere diritto allo sgravio diretto o al rimborso successivo dell’IVA sui beni acquistati in Italia da soggetti extra-UE
 lang: it
+ref:
+  en: /en/otello
 order: 3
 highlight: false
 comingsoon: true
@@ -21,7 +23,7 @@ OTELLO è la piattaforma dell'[Agenzia delle Dogane e dei Monopoli](https://www.
   <img alt="Anteprima Otello Tax free shopping video" src="/assets/images/otello/otello_video_play.png" class="d-block mx-auto mb-2 mw-100" />
 </a>
 
-Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione delle cose per ottenere il visto doganale.
+Il processo di digitalizzazione con OTELLO è iniziato nel 2015, con immediati benefici: maggiore efficienza ed efficacia nei controlli, emersione di fenomeni fraudolenti, riduzione dei passaggi per ottenere il visto doganale.
 
 Dal *1° settembre 2018* è entrato in vigore un processo _full digital_ che prevede l'emissione elettronica della fattura tax free, con il caricamento immediato in OTELLO 2.0. Tale processo mette i dati automaticamente a disposizione dell'Agenzia dell'Entrate, e di conseguenza anche gli adempimenti della stessa Agenzia sono assolti automaticamente.
 
