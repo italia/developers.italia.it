@@ -10,5 +10,6 @@ module.exports = {
     '!assets/js/swagger-custom.js',
   ],
   coverageReporters: ['text'],
+  testEnvironment: 'jsdom',
   setupFiles: ['<rootDir>/assets/js/setup-tests.js'],
 };
