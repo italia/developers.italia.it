@@ -1,0 +1,33 @@
+{% assign collab_links = site.data.collab_links[active_lang] %}
+
+<section id="collab" class="project__collab">
+  <p class="pb-3">
+    {{ page.collab.description }}
+  </p>
+  <div class="d-flex flex-wrap justify-content-start">
+    {% for link in page.collab.links %}
+      {% if link.title %}
+        {% assign link_title = link.title %}
+        {% assign link_icon = link.icon | default: "" %}
+        {% assign link_secondary = link.secondary | default: false %}
+      {% else %}
+        {% assign collab_link = collab_links | where: "name", link.name | first %}
+        {% if collab_link %}
+          {% assign link_title = collab_link.title %}
+          {% assign link_icon = collab_link.icon | default: "" %}
+          {% assign link_secondary = collab_link.secondary | default: false %}
+        {% endif %}
+      {% endif %}
+      <a class="btn {% if link_secondary %}btn-white btn-outline-primary{% else %}btn-primary{% endif %} mr-2 mb-2 d-flex align-items-center" href="{{ link.url }}" target="_blank">
+        {% if link_icon != "" %}
+        <span class="project__collab-icon mr-1">
+          <svg class="icon {% if link_secondary %}icon-primary{% else %}icon-white{% endif %}">
+            <use xlink:href="/assets/svg/sprite.svg#{{ link_icon }}"></use>
+          </svg>
+        </span>
+        {% endif %}
+        {{ link_title }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
