@@ -1,0 +1,43 @@
+name: Aggiungi un software al Catalogo
+description: Per aggiungere un nuovo software open source di terze parti al Catalogo di Developers Italia
+labels: []
+body:
+- type: checkboxes
+  attributes:
+    label: Il software è rilevante per la Pubblica Amministrazione italiana
+    description: |
+      I software open source di terze parti di potenziale interesse per il settore pubblico, possono essere inclusi nel catalogo di Developers Italia.
+    options:
+    - label: Confermo
+      required: true
+- type: checkboxes
+  attributes:
+    label: Il software NON è di titolarità di una Pubblica Amministrazione
+    description: |
+      Con questa issue possono essere aggiunti solo software open source di terze. Se il software è di titolarità di una Pubblica Amministrazione usa [https://onboarding.developers.italia.it](https://onboarding.developers.italia.it)
+    options:
+    - label: Confermo
+      required: true
+- type: checkboxes
+  attributes:
+    label: Il repository contiene un file publiccode.yml valido
+    description: |
+      Il repository deve contenere un file publiccode.yml valido per poter essere aggiunto nel Catalogo, vedi [https://yml.publiccode.tools](https://yml.publiccode.tools)
+    options:
+    - label: Confermo
+      required: true
+- type: input
+  id: url
+  attributes:
+    label: URL
+    description: URL del repository del software
+    placeholder: es. https://github.com/myuser/mysoftware
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Ulteriori informazioni
+    description: |
+      Eventuali informazioni aggiuntive, puoi spiegare qui il contesto del software e perché ritieni debba essere aggiunto al Catalogo 
+  validations:
+    required: false

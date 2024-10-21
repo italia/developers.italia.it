@@ -12,10 +12,6 @@
 
  <!-- Badges -->
 <div align="center">
-  <img src="https://vercelbadge.vercel.app/api/italia/developers.italia.it" alt="Vercel"/>
-  <a href="https://github.com/italia/developers.italia.it/releases">
-    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/italia/developers.italia.it">
-  </a>
   <a href="LICENSE.md">
     <img alt="LICENSE" src="https://img.shields.io/github/license/italia/developers.italia.it">
   </a>

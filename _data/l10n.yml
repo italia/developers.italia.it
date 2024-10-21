@@ -141,7 +141,7 @@ it:
     credits_maintainers: Mantainer
     banner_joinus_h2: Sei un programmatore, uno smanettone del codice o un nerd in erba?
     banner_joinus_h1: Unisciti alla nostra community!
-    banner_joinus_action: Vieni su Slack
+    banner_joinus_action: Vieni su Slack e Matrix
     banner_PNRR_h2: |
       Soluzioni e programmi che possono contribuire al raggiungimento degli obiettivi del Piano Nazionale di Ripresa
       e Resilienza (PNRR) e agli avvisi pubblicati da <a href="https://padigitale2026.gov.it" target="_blank" rel="noopener noreferrer">PA digitale 2026</a>
@@ -434,7 +434,7 @@ I range di ogni misura possono essere trovati nel file [vitality-ranges.yml](htt
         transportation: trasporti
         welfare: benessere
     pa:
-      top_right_text: Questa pagina elenca il software di cui l'ente è titolare e che è stato pubblicato con licenza aperta ai sensi dell'art. 69 del Codice dell'Amministrazione Digitale.
+      top_right_text:
       more_details: Esplora
     errors:
       something_went_wrong: Ops! Qualcosa è andato storto...
@@ -586,7 +586,7 @@ en:
     credits_maintainers: "Projects leaders & maintainers:"
     banner_joinus_h2: Are you a developer, a coder or a geek?
     banner_joinus_h1: Join our community!
-    banner_joinus_action: Chat on Slack now
+    banner_joinus_action: Chat on Slack and Matrix now
     how_to_use: How do I use it
     banner_PNRR_h2: Solutions and softwares that can contribute to the achievement of PNRR objectives by PA digitale 2026
     banner_PNRR_h1: Software PNRR
@@ -879,7 +879,7 @@ The ranges of every measure can be found in the [vitality-ranges.yml](https://gi
         transportation: transportation
         welfare: welfare
     pa:
-      top_right_text: This page lists the software solutions owned by this public entity and released under an open license according to art. 69 of the Italian Digital Administration Code.
+      top_right_text:
       more_details: Read more
     errors:
       something_went_wrong: Oops, something went wrong...
