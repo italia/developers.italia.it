@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202411150603" rel="stylesheet">
+  <link href="/dist/main.css?202411160603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -644,11 +644,11 @@
       <div class="intro-name">
         
         
-        <img alt="" src="https://raw.githubusercontent.com/biagioT/java-pec-parser/master/src/main/resources/logo.png" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/biagioT/java-pec-parser/main/logo.png" class="d-inline-block" />
         
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">4.0.0</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">5.0.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -656,9 +656,8 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Utility per l'elaborazione di messaggi di Posta Elettronica Certificata (e
-
-messaggi di posta ordinaria)
+            Elaborazione di messaggi di posta elettronica certificata PEC, ricevute
+PEC e posta ordinaria.
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -682,7 +681,7 @@ messaggi di posta ordinaria)
 
 <li class="home-software-tags__item  ">
         <a
-                href="/en/search?categories=contact-management">contact management</a>
+                href="/en/search?categories=email-management">email management</a>
 </li>
 
               
@@ -690,6 +689,12 @@ messaggi di posta ordinaria)
             
           </div>
           <div class="row legal-main-info">
+            
+            <div class="col-sm">
+              <p><span class="label">Published by </span>
+                Biagio Placido Tozzi
+              </p>
+            </div>
             
             
             <div class="col-sm">
@@ -785,8 +790,7 @@ messaggi di posta ordinaria)
             
             
             <p> Elaborazione di messaggi di posta elettronica certificata PEC, ricevute
-
-PEC e posta ordinaria. </p>
+PEC e posta ordinaria </p>
             
             
           </div>
@@ -817,7 +821,7 @@ PEC e posta ordinaria. </p>
 
 <li class="home-software-tags__item  ">
         <a
-                href="/en/search?categories=contact-management">contact management</a>
+                href="/en/search?categories=email-management">email management</a>
 </li>
 
     
@@ -839,7 +843,7 @@ PEC e posta ordinaria. </p>
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">4.0.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">5.0.0</span>
                 
               </h2>
               <h2>
@@ -852,9 +856,9 @@ PEC e posta ordinaria. </p>
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2024-05-25
+                  2024-11-15
                   
-                  (4.0.0)
+                  (5.0.0)
                   
                 </p>
               </div>
@@ -999,7 +1003,32 @@ PEC e posta ordinaria. </p>
             <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
               
               
+
+              <div class="other-detail">
+                <p><span class="label">Supported languages</span>
+                  
+                
+                
+
+Italian<br />
+
+                
+                
+
+English<br />
+
+                
+                
+                </p>
+              </div>
               
+              
+              
+              <div class="other-detail">
+                <p><span class="label">Api documentation</span>
+                  <a href="https://github.com/biagioT/java-pec-parser" data-proofer-ignore>PEC Parser API</a>
+                </p>
+              </div>
               
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
@@ -1012,143 +1041,108 @@ PEC e posta ordinaria. </p>
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <h3 id="utilizzo">Utilizzo</h3>
+                <p>**PEC/Mail Parser</p>
 
-<h5 id="parsing">Parsing</h5>
+<p>**Libreria utility per l’elaborazione di messaggi di <a href="https://www.agid.gov.it/it/piattaforme/posta-elettronica-certificata">Posta Elettronica
+Certificata</a>
+(PEC) e messaggi di posta ordinaria.</p>
 
-<p>La libreria offre tre metodi della classe</p>
+<p>**Dipendenza progetto</p>
 
-<p><a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/parser/PECMessageParser.java">++PECMessageParser++</a></p>
+<p>**Attenzione: le versioni precedenti alla 5.0.0 sono state rilasciato con
+groupId `app.tozzi.mail`</p>
 
-<p>per il parsing di mail/PEC:</p>
+<p><em>Maven</em></p>
 
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">Messaggio parse(MimeMessage mimeMessage)</code> - elaborazione a partire da</li>
-</ol>
+<p><code class="language-plaintext highlighter-rouge">&lt;dependency&gt;
+    &lt;groupId&gt;app.tozzi&lt;/groupId&gt;
+    &lt;artifactId&gt;pec-parser&lt;/artifactId&gt;
+    &lt;version&gt;5.0.0&lt;/version&gt;
+&lt;/dependency&gt;</code></p>
 
-<p>un oggetto <em>javax.mail.internet.MimeMessage</em></p>
+<p><em>Gradle</em></p>
 
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">Messaggio parse(File emlFile)</code> - elaborazione a partire da un oggetto</li>
-</ol>
+<p>`implementation ‘app.tozzi:pec-parser:5.0.0</p>
 
-<p><em>java.io.File</em> , ovvero il file EML</p>
+<p>`</p>
 
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">Messaggio parse(InputStream emlInputStream)</code> - elaborazione a partire</li>
-</ol>
-
-<p>dall’oggetto_java.io.InputStream_ rappresentante lo stream EML</p>
-
-<h5 id="istanza-pecparser">Istanza PECParser</h5>
-
-<p>E’ possibile creare una istanza di PECMessageParser in due modi:</p>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">PECMessageParser getInstance(Properties properties)</code> - con delle</li>
-</ol>
-
-<p>proprietà personalizzate che concorreranno alla creazione e alla</p>
-
-<p>elaborazione del <em>MimeMessage</em></p>
-
-<ol>
-  <li><code class="language-plaintext highlighter-rouge">PECMessageParser getInstance()</code> - modalità default, vengono utilizzate</li>
-</ol>
-
-<p>le proprietà di sistema (<em>System.getProperties()</em>)</p>
-
-<h5 id="messaggio">Messaggio</h5>
-
-<p>L’oggetto</p>
-
-<p><a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Messaggio.java">++Messaggio++</a>,</p>
-
-<p>risultato dell’elaborazione, conterrà:</p>
+<p><strong>Requisiti</strong></p>
 
 <ul>
-  <li>Busta di trasporto</li>
+  <li></li>
+  <li></li>
 </ul>
 
-<p>(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/Busta.java">++Busta++</a>)</p>
+<p>​</p>
 
-<ul>
-  <li>Eventuale messaggio di Posta Elettronica Certificata</li>
-</ul>
+<p><strong>Utilizzo</strong></p>
 
-<p>(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/PEC.java">++PEC++</a>)</p>
+<p>++1. Istanza di MailParser</p>
 
-<ul>
-  <li>Eventuale ricevuta</li>
-</ul>
-
-<p>(<a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/model/RicevutaPEC.java">++RicevutaPEC++</a>)</p>
-
-<p>Attraverso i metodi di utility offerti dalla classe</p>
-
-<p><a href="https://github.com/biagioT/java-pec-parser/blob/master/src/main/java/app/tozzi/mail/pec/util/MessageUtils.java">++MessageUtils++</a></p>
-
-<p>è possibile risalire al tipo di messaggio:</p>
+<p>++Attraverso uno dei seguenti metodi:</p>
 
 <ul>
   <li>
-    <p>PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isPec(Messaggio messaggio)</code>)</p>
+    <p><code class="language-plaintext highlighter-rouge">MailParser.getInstance()</code></p>
   </li>
   <li>
-    <p>Ricevuta PEC (<code class="language-plaintext highlighter-rouge">MessageUtils.isRicevutaPEC(Messaggio messaggio)</code>)</p>
+    <p><code class="language-plaintext highlighter-rouge">MailParser.getInstance(Properties properties)</code></p>
   </li>
   <li>
-    <p>Posta Ordinaria (<code class="language-plaintext highlighter-rouge">MessageUtils.isEmailNormale(Messaggio messaggio)</code>)</p>
+    <p><code class="language-plaintext highlighter-rouge">MailParser.getInstance(Properties properties, boolean extractAllHeaders)</code></p>
   </li>
 </ul>
 
-<p>Il messaggio infatti viene elaborato anche se non PEC:</p>
+<p>++2. Parsing</p>
+
+<p>++Attraverso uno dei seguenti metodi:</p>
 
 <ul>
-  <li>Se la mail viene ricevuta su una casella di Posta Elettronica</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(MimeMessage mimeMessage)</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(File eml)</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(InputStream inputStream)</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(MimeMessage mimeMessage)</code></p>
+  </li>
 </ul>
 
-<p>Certificata: l’oggetto <code class="language-plaintext highlighter-rouge">PEC</code> conterrà le informazioni del messaggio</p>
+<p>++3. ParsedEntity</p>
 
-<p>normale in quanto comunque incapsulato in una busta.</p>
+<p>++Può essere di tipo:</p>
 
 <ul>
-  <li>Se la mail viene ricevuta su una casella di posta ordinaria: in questo</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">PEC</code>: se il messaggio rappresenta una PEC</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">PECReceipt</code>: se il messaggio rappresenta una ricevuta PEC</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Mail</code>: se il messaggio rappresenta una semplice mail di
+posta ordinaria</p>
+  </li>
 </ul>
 
-<p>caso l’oggetto <code class="language-plaintext highlighter-rouge">Busta</code> rappresenta il messaggio normale</p>
-
-<h3 id="requisiti">Requisiti</h3>
+<p><strong>Altro</strong></p>
 
 <ul>
-  <li>Java 8 (o versioni successive)</li>
+  <li>La libreria supporta l’elaborazione di messaggi di posta ordinaria con
+codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">UUencode</a></li>
 </ul>
 
-<h3 id="altro">Altro</h3>
+<p><strong>Specifiche</strong></p>
 
 <ul>
-  <li>La libreria supporta l’elaborazione di messaggi di posta ordinaria con</li>
+  <li>Regole tecniche del servizio di trasmissione di documenti informatici
+mediante posta elettronica certificata: 
+<a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">pec_regole_tecniche_dm_2-nov-2005.pdf</a></li>
 </ul>
-
-<p>codifica <a href="https://en.wikipedia.org/wiki/Uuencoding">++UUencode++</a></p>
-
-<ul>
-  <li>La libreria è disponibile nel [++catalogo Open Source di terze parti di</li>
-</ul>
-
-<p>Developers</p>
-
-<p>Italia++](https://developers.italia.it/it/software/biagiot-java-pec-parser-09abab).</p>
-
-<h3 id="specifiche">Specifiche</h3>
-
-<ul>
-  <li>Regole tecniche del servizio di trasmissione di documenti informatici</li>
-</ul>
-
-<p>mediante posta elettronica certificata:</p>
-
-<p><a href="https://www.agid.gov.it/sites/default/files/repository_files/leggi_decreti_direttive/pec_regole_tecniche_dm_2-nov-2005.pdf">++pec_regole_tecniche_dm_2-nov-2005.pdf++</a></p>
 
               </div>
             </div>
