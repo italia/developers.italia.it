@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202411160603" rel="stylesheet">
+  <link href="/dist/main.css?202411170603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -648,7 +648,7 @@
         
         <h1 class="d-inline-block">
           PEC Parser
-          <span class="badge badge-pill badge-pill--sup badge-primary">5.0.0</span>
+          <span class="badge badge-pill badge-pill--sup badge-primary">5.0.1</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -843,7 +843,7 @@ PEC e posta ordinaria </p>
                 PEC Parser
                 
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">5.0.0</span>
+                  class="badge badge-pill badge-pill--sup badge-primary">5.0.1</span>
                 
               </h2>
               <h2>
@@ -856,9 +856,9 @@ PEC e posta ordinaria </p>
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Last release</span>
-                  2024-11-15
+                  2024-11-16
                   
-                  (5.0.0)
+                  (5.0.1)
                   
                 </p>
               </div>
@@ -1041,45 +1041,53 @@ English<br />
                 TODO: find a better solution
               -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>**PEC/Mail Parser</p>
+                <p><strong>PEC/Mail Parser</strong></p>
 
-<p>**Libreria utility per l’elaborazione di messaggi di <a href="https://www.agid.gov.it/it/piattaforme/posta-elettronica-certificata">Posta Elettronica
+<p>Libreria utility per l’elaborazione di messaggi di <a href="https://www.agid.gov.it/it/piattaforme/posta-elettronica-certificata">Posta Elettronica
 Certificata</a>
 (PEC) e messaggi di posta ordinaria.</p>
 
-<p>**Dipendenza progetto</p>
-
-<p>**Attenzione: le versioni precedenti alla 5.0.0 sono state rilasciato con
+<p><strong>Dipendenza progetto</strong>
+Attenzione: le versioni precedenti alla 5.0.0 sono state rilasciato con
 groupId `app.tozzi.mail`</p>
 
 <p><em>Maven</em></p>
 
-<p><code class="language-plaintext highlighter-rouge">&lt;dependency&gt;
-    &lt;groupId&gt;app.tozzi&lt;/groupId&gt;
-    &lt;artifactId&gt;pec-parser&lt;/artifactId&gt;
-    &lt;version&gt;5.0.0&lt;/version&gt;
-&lt;/dependency&gt;</code></p>
+<p>`<dependency></dependency></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;groupId&gt;app.tozzi&lt;/groupId&gt;
+
+&lt;artifactId&gt;pec-parser&lt;/artifactId&gt;
+
+&lt;version&gt;5.0.0&lt;/version&gt;
+</code></pre></div></div>
+
+<p>&lt;/dependency&gt;`</p>
 
 <p><em>Gradle</em></p>
 
-<p>`implementation ‘app.tozzi:pec-parser:5.0.0</p>
-
-<p>`</p>
+<p><code class="language-plaintext highlighter-rouge">implementation 'app.tozzi:pec-parser:5.0.0</code></p>
 
 <p><strong>Requisiti</strong></p>
 
 <ul>
-  <li></li>
-  <li></li>
+  <li>
+    <p>v0.0.1 - v4.0.0: Java 8</p>
+  </li>
+  <li>
+    <p>v5.0.0 - latest: Java 17</p>
+  </li>
 </ul>
 
 <p>​</p>
 
 <p><strong>Utilizzo</strong></p>
 
-<p>++1. Istanza di MailParser</p>
+<ol>
+  <li>Istanza di MailParser</li>
+</ol>
 
-<p>++Attraverso uno dei seguenti metodi:</p>
+<p>Attraverso uno dei seguenti metodi:</p>
 
 <ul>
   <li>
@@ -1091,11 +1099,16 @@ groupId `app.tozzi.mail`</p>
   <li>
     <p><code class="language-plaintext highlighter-rouge">MailParser.getInstance(Properties properties, boolean extractAllHeaders)</code></p>
   </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">MailParser.getInstance(boolean extractAllHeaders)</code></p>
+  </li>
 </ul>
 
-<p>++2. Parsing</p>
+<ol>
+  <li>Parsing</li>
+</ol>
 
-<p>++Attraverso uno dei seguenti metodi:</p>
+<p>Attraverso uno dei seguenti metodi:</p>
 
 <ul>
   <li>
@@ -1107,14 +1120,13 @@ groupId `app.tozzi.mail`</p>
   <li>
     <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(InputStream inputStream)</code></p>
   </li>
-  <li>
-    <p><code class="language-plaintext highlighter-rouge">ParsedEntity parse(MimeMessage mimeMessage)</code></p>
-  </li>
 </ul>
 
-<p>++3. ParsedEntity</p>
+<ol>
+  <li>ParsedEntity</li>
+</ol>
 
-<p>++Può essere di tipo:</p>
+<p>Può essere di tipo:</p>
 
 <ul>
   <li>
