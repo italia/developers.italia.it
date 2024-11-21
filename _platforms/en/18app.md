@@ -21,11 +21,13 @@ managers:
     - name: Sogei
       url: https://www.sogei.it/
 resources:
-    - Documentation:
-        - title: Guide for merchants
-          icon: file
-          url: https://docs.italia.it/italia/18app/18app-esercenti-docs/
-          desc: Documentation for merchants who are interested in validating coupons via API
+    - Software:
+        - title: Carta Docente WooCommerce plugin
+          icon: github
+          url: /it/software//ilghera-wc-carta-docente-c00aa7
+        - title: 18app WooCommerce plugin
+          icon: github
+          url: /it/software/ilghera-wc-18app-86eb94
     - SDK:
         - title: SDK for Java
           icon: github
@@ -36,12 +38,10 @@ resources:
         - title: SDK for .NET
           icon: github
           url: https://github.com/italia/18app-dotnet-sdk
-        - title: SDK for C++
+    - Examples:
+        - title: Python example
           icon: github
-          url: https://github.com/italia/18app-cpp-sdk
-        - title: SDK for Magento (TODO)
-          icon: github
-          url: https://github.com/italia/18app-magento-sdk
+          url: https://github.com/italia/18app-python-example
 ---
 
 ## Intro
@@ -50,7 +50,13 @@ resources:
 
 Users enter with their [SPID digital identity](/en/spid) into a web application that allows them to create coupons (identified by an alphanumeric code and a QR code) of arbitrary amounts, that can be later spent in the accredited stores, which can be either physical or online. At the payment stage, merchants verify that the supplied coupon is valid and subtract their value from the due amount. They will emit an invoice to the State in order to be reimbursed.
 
-In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software.
+## Validate a coupon
+
+In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software. Merchants must be
+equipped with an authentication certificate to be installed in your client of the
+service and use it in the SOAP call.
+
+## Collaboration
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
@@ -59,10 +65,3 @@ These discussion channels are aimed at free discussion among developers; they ar
 
 - [18app](https://www.18app.italia.it/){:target="_blank"}
 - [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}
-
-## Native app
-
-In Developers Italia a native mobile app for 18app is being developed. This app will become official in Q2 2019.
-
-- [More details in the software catalogue](/en/software/m_bac-italia-18app)
-- [GitHub repository](https://github.com/italia/18app){:target="_blank"}
