@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202411280603" rel="stylesheet">
+  <link href="/dist/main.css?202411290603" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -1048,16 +1048,21 @@ Certificata</a>
 (PEC) e messaggi di posta ordinaria.</p>
 
 <p><strong>Dipendenza progetto</strong>
-Attenzione: le versioni precedenti alla 5.0.0 sono state rilasciato con
+Attenzione: le versioni precedenti alla 5.0.0 sono state rilasciate con
 groupId `app.tozzi.mail`</p>
 
 <p><em>Maven</em></p>
 
-<p><code class="language-plaintext highlighter-rouge">&lt;dependency&gt;
-    &lt;groupId&gt;app.tozzi&lt;/groupId&gt;
-    &lt;artifactId&gt;pec-parser&lt;/artifactId&gt;
-    &lt;version&gt;5.0.2&lt;/version&gt;
-&lt;/dependency&gt;</code></p>
+<p>`<dependency></dependency></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;groupId&gt;app.tozzi&lt;/groupId&gt;
+
+&lt;artifactId&gt;pec-parser&lt;/artifactId&gt;
+
+&lt;version&gt;5.0.2&lt;/version&gt;
+</code></pre></div></div>
+
+<p>&lt;/dependency&gt;`</p>
 
 <p><em>Gradle</em></p>
 
@@ -1074,12 +1079,11 @@ groupId `app.tozzi.mail`</p>
   </li>
 </ul>
 
-<p>​</p>
-
 <p><strong>Utilizzo</strong></p>
 
-<p>Istanza di MailParser
-Attraverso uno dei seguenti metodi:</p>
+<p>Istanza di MailParser</p>
+
+<p>Attraverso uno dei seguenti metodi:</p>
 
 <ul>
   <li>
@@ -1096,8 +1100,9 @@ Attraverso uno dei seguenti metodi:</p>
   </li>
 </ul>
 
-<p>Parsing
-Attraverso uno dei seguenti metodi:</p>
+<p>Parsing:</p>
+
+<p>Attraverso uno dei seguenti metodi:</p>
 
 <ul>
   <li>
@@ -1111,8 +1116,9 @@ Attraverso uno dei seguenti metodi:</p>
   </li>
 </ul>
 
-<p>ParsedEntity
-Può essere di tipo:</p>
+<p>ParsedEntity:</p>
+
+<p>Può essere di tipo:</p>
 
 <ul>
   <li>
