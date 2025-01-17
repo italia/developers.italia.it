@@ -101,7 +101,8 @@ sintassi, per aumentare la qualità dei dati che vengono scambiati.
 Gli strumenti che Schema mette a disposizione per poter accedere alle risorse semantiche del catalogo e per validarle. La 
 validazione riguarda sia la descrizione o metadatazione generale delle risorse semantiche sia la struttura nel caso degli schemi 
 di API. Gli strumenti a disposizione sono:
-* Il validatore dei metadati delle risorse semantiche, per validare la metadatazione generale descrittiva delle risorse semantiche da publicare nel catalogo;
+* Il validatore dei metadati delle risorse semantiche, per validare la metadatazione generale descrittiva delle risorse semantiche
+  da publicare nel catalogo;
 * L’editor degli schemi di dati, per strutturare al meglio degli schemi dati confermi a una semantica condivisa;
 * Lo SPARQL endpoint, per interrogare i contenuti delle ontologie e dei vocabolari controllati del catalogo.
 
@@ -110,7 +111,8 @@ di API. Gli strumenti a disposizione sono:
 
 Il catalogo si basa su un sistema federato di risorse semantiche, pubblicate dagli enti contributori, e raccolte con un processo 
 di *harvesting*. I contributori modellano le loro risorse semantiche e le pubblicano in repository pubblici seguendo delle regole 
-condivise nella Guida dedicata. Il catalogo può essere ampliato con nuove risorse, aumentando così le possibilità di riuso delle risorse semantiche, utili ad esempio nello sviluppo degli e-service erogati dalle PA tramite la 
+condivise nella Guida dedicata. Il catalogo può essere ampliato con nuove risorse, aumentando così le possibilità di riuso delle 
+risorse semantiche, utili ad esempio nello sviluppo degli e-service erogati dalle PA tramite la 
 [Piattaforma Digitale Nazionale Dati](https://developers.italia.it/it/pdnd/) e favorendo la diffusione dell'interoperabilità semantica.
 
 Prima di proporre nuove risorse semantiche, è buona pratica esplorare le risorse già presenti nel catalogo tramite il portale 
@@ -119,15 +121,21 @@ bisogno di rappresentare una nuova entità e/o proprietà, il Contributore può 
 rispondere alle proprie esigenze di modellazione oppure considerare l'opportunità di definire/aggiornare entità e/o proprietà a 
 livello nazionale (cfr. [Linee Guida sull’interoperabilità tecnica delle Pubbliche Amministrazioni](https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_interoperabilit_tecnica_pa.pdf)).
 
-Ulteriori dettagli sono resi disponibili nella [Guida al Catalogo nazionale della semantica dei dati](https://teamdigitale.github.io/dati-semantic-guida-ndc-docs/index.html).
+Ulteriori dettagli sono resi disponibili nella 
+[Guida al Catalogo nazionale della semantica dei dati](https://teamdigitale.github.io/dati-semantic-guida-ndc-docs/index.html).
 
 Passi principali da seguire per contribuire al catalogo.
-1.	Il **Contributore conduce un’analisi** delle risorse da creare, oppure delle possibili proposte di modifica da effettuare per risorse già pubblicate sul catalogo. 
-2.	I **Contributori creano (se non già presente) un proprio repository** dove pubblicare le risorse semantiche da raccogliere. Successivamente, inviano una richiesta di attivazione del processo di harvesting a info@schema.gov.it e seguono le istruzioni contenute nel capitolo “Come contribuire” della guida per **registrare il proprio repository sul Catalogo**.
-3.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a info@schema.gov.it;
-4.	Il processo *“harvester”*, avviato periodicamente, **estrae i dati contenuti nei repository configurati come sorgenti, e li memorizza su server** a supporto della ricerca, esplorazione e fruizione del Catalogo attraverso il portale schema.gov.it.
-5.	Dopo la loro adesione iniziale al catalogo, i Contributori possono **espandere continuamente il proprio insieme di risorse semantiche**.
-6.	Il portale [schema.gov.it](schema.gov.it) facilita l'accesso alle risorse semantiche pubblicate mediante **funzionalità di ricerca testuale, filtri preimpostati e visualizzatori** integrati nelle schede degli asset semantici.
+1.	Il **Contributore conduce un’analisi** delle risorse da creare, oppure delle possibili proposte di modifica da effettuare per
+    risorse già pubblicate sul catalogo. 
+3.	I **Contributori creano (se non già presente) un proprio repository** dove pubblicare le risorse semantiche da raccogliere.
+    Successivamente, inviano una richiesta di attivazione del processo di harvesting a info@schema.gov.it e seguono le istruzioni
+  	contenute nel capitolo “Come contribuire” della guida per **registrare il proprio repository sul Catalogo**.
+5.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a info@schema.gov.it;
+6.	Il processo *“harvester”*, avviato periodicamente, **estrae i dati contenuti nei repository configurati come sorgenti, e li
+    memorizza su server** a supporto della ricerca, esplorazione e fruizione del Catalogo attraverso il portale schema.gov.it.
+8.	Dopo la loro adesione iniziale al catalogo, i Contributori possono **espandere continuamente il proprio insieme di risorse semantiche**.
+9.	Il portale [schema.gov.it](schema.gov.it) facilita l'accesso alle risorse semantiche pubblicate mediante
+    **funzionalità di ricerca testuale, filtri preimpostati e visualizzatori** integrati nelle schede degli asset semantici.
 
 
 ## Come usare le risorse semantiche per sviluppare API
