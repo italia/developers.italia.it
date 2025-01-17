@@ -128,9 +128,9 @@ Passi principali da seguire per contribuire al catalogo.
 1.	Il **Contributore conduce un’analisi** delle risorse da creare, oppure delle possibili proposte di modifica da effettuare per
     risorse già pubblicate sul catalogo. 
 3.	I **Contributori creano (se non già presente) un proprio repository** dove pubblicare le risorse semantiche da raccogliere.
-    Successivamente, inviano una richiesta di attivazione del processo di harvesting a info@schema.gov.it e seguono le istruzioni
+    Successivamente, inviano una richiesta di attivazione del processo di harvesting a [info@schema.gov.it](mailto:info@schema.gov.it) e seguono le istruzioni
   	contenute nel capitolo “Come contribuire” della guida per **registrare il proprio repository sul Catalogo**.
-5.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a info@schema.gov.it;
+5.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a [info@schema.gov.it](mailto:info@schema.gov.it);
 6.	Il processo *“harvester”*, avviato periodicamente, **estrae i dati contenuti nei repository configurati come sorgenti, e li
     memorizza su server** a supporto della ricerca, esplorazione e fruizione del Catalogo attraverso il portale schema.gov.it.
 8.	Dopo la loro adesione iniziale al catalogo, i Contributori possono **espandere continuamente il proprio insieme di risorse semantiche**.
@@ -156,7 +156,7 @@ infine renderli disponibili sul catalogo anche in esercizio.
 ## Canali
 
 Per qualsiasi domanda, richiesta di assistenza o chiarimento riguardo al catalogo, puoi contattare direttamente gli 
-amministratori all'indirizzo: info@schema.gov.it
+amministratori all'indirizzo [info@schema.gov.it](mailto:info@schema.gov.it).
 
 Per tutte le altre problematiche di natura tecnica , se trovi errori o bug, oppure proposte di miglioramento apri una issue su github. 
 
