@@ -70,7 +70,7 @@ Il catalogo e i suoi strumenti sono a servizio degli enti e dei privati che scam
 Digitale Nazionale Dati (PDND) per garantire che sia il formato che il significato delle informazioni scambiate siano 
 perfettamente preservati e compresi durante gli scambi tra le parti.
 Gli utenti del catalogo sono:
-*	**Contributori**, ovvero Pubbliche amministrazioni interessate a modellare e pubblicare su schema.gov.it le proprie risorse 
+*	**Contributori**, ovvero Pubbliche amministrazioni interessate a modellare e pubblicare su [schema.gov.it](https://schema.gov.it) le proprie risorse 
 semantiche mantenendone titolarità e responsabilità di contenuto, e riusando, dove possibile, i concetti già presenti a 
 catalogo. 
 *	**Sviluppatori di API/e-services** che siano interoperabili sia semanticamente che sintatticamente.
@@ -116,7 +116,7 @@ risorse semantiche, utili ad esempio nello sviluppo degli e-service erogati dall
 [Piattaforma Digitale Nazionale Dati](https://developers.italia.it/it/pdnd/) e favorendo la diffusione dell'interoperabilità semantica.
 
 Prima di proporre nuove risorse semantiche, è buona pratica esplorare le risorse già presenti nel catalogo tramite il portale 
-schema.gov.it. Ricercando per categoria se il dominio delle risorse che il Contributore vuole modellare è già presente, ma c'è 
+[schema.gov.it](https://schema.gov.it). Ricercando per categoria se il dominio delle risorse che il Contributore vuole modellare è già presente, ma c'è 
 bisogno di rappresentare una nuova entità e/o proprietà, il Contributore può valutare di estendere le risorse esistenti per 
 rispondere alle proprie esigenze di modellazione oppure considerare l'opportunità di definire/aggiornare entità e/o proprietà a 
 livello nazionale (cfr. [Linee Guida sull’interoperabilità tecnica delle Pubbliche Amministrazioni](https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_interoperabilit_tecnica_pa.pdf)).
@@ -127,14 +127,14 @@ Ulteriori dettagli sono resi disponibili nella
 Passi principali da seguire per contribuire al catalogo.
 1.	Il **Contributore conduce un’analisi** delle risorse da creare, oppure delle possibili proposte di modifica da effettuare per
     risorse già pubblicate sul catalogo. 
-3.	I **Contributori creano (se non già presente) un proprio repository** dove pubblicare le risorse semantiche da raccogliere.
+2.	I **Contributori creano (se non già presente) un proprio repository** dove pubblicare le risorse semantiche da raccogliere.
     Successivamente, inviano una richiesta di attivazione del processo di harvesting a [info@schema.gov.it](mailto:info@schema.gov.it) e seguono le istruzioni
   	contenute nel capitolo “Come contribuire” della guida per **registrare il proprio repository sul Catalogo**.
-5.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a [info@schema.gov.it](mailto:info@schema.gov.it);
-6.	Il processo *“harvester”*, avviato periodicamente, **estrae i dati contenuti nei repository configurati come sorgenti, e li
-    memorizza su server** a supporto della ricerca, esplorazione e fruizione del Catalogo attraverso il portale schema.gov.it.
-8.	Dopo la loro adesione iniziale al catalogo, i Contributori possono **espandere continuamente il proprio insieme di risorse semantiche**.
-9.	Il portale [schema.gov.it](schema.gov.it) facilita l'accesso alle risorse semantiche pubblicate mediante
+3.	In alternativa, i Contributori possono richiedere “***semantic stewardship***” ad Istat, inviando una mail a [info@schema.gov.it](mailto:info@schema.gov.it);
+4.	Il processo *“harvester”*, avviato periodicamente, **estrae i dati contenuti nei repository configurati come sorgenti, e li
+    memorizza su server** a supporto della ricerca, esplorazione e fruizione del Catalogo attraverso il portale [schema.gov.it](https://schema.gov.it).
+5.	Dopo la loro adesione iniziale al catalogo, i Contributori possono **espandere continuamente il proprio insieme di risorse semantiche**.
+6.	Il portale [schema.gov.it](https://schema.gov.it) facilita l'accesso alle risorse semantiche pubblicate mediante
     **funzionalità di ricerca testuale, filtri preimpostati e visualizzatori** integrati nelle schede degli asset semantici.
 
 
