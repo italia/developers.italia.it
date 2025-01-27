@@ -37,42 +37,35 @@
     </div>
   </div>
 
-  <div class="Header-navbar ">
-    <div class="container d-flex align-items-center">
-      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
-        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
-            class="Header-hamb__icon" alt="Menu" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}"></a>
-      </div>
-      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
-        <a href="{{ '/' | relative_url }}" tabindex="-1">
-          <img src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
-        </a>
-      </div>
-
-      <div class="Header-title mr-auto">
-        <h1 class="Header-titleLink">
-          <a href="{{ '/' | relative_url }}">{{ t.site_title | default: site.title | escape }}
-            {% if site.pill != "" and site.pill != nil %}
-            <span class="badge badge-pill badge-primary primary-bg-a7 d-none d-sm-inline-block">{{ site.pill }}</span>{%
-            endif %}
-          </a>
-          <span class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
-        </h1>
-      </div>
-
-      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
-        <div class="Header-social ">
-          {% include social-icons.html social_items=site.data.social follow_us_text=t.follow_us %}
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper ">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper"><a href="{{ '/' | relative_url }}"><img
+                    src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="" class="icon">
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">{{ t.site_title | default: site.title | escape }}</div>
+                  </div>
+                </a></div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex"><span>{{ t.follow_us | capitalize }}</span>
+                  {% include social-icons.html social_items=site.data.social %}
+                </div>
+                <div class="it-search-wrapper">
+                  <custom-search></custom-search>
+                  <!-- <a aria-current="page" class="search-link rounded-icon"
+                    aria-label="Cerca nel sito" href="/ricerca/"><svg role="img" class="icon">
+                      <use href="/svg/sprites.svg#it-search"></use>
+                    </svg>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {% if include.hasSearch %}
-      <div class="Header-search ml-4 mb-0" id="header-search">
-        <custom-search></custom-search>
-      </div>
-      {% endif %}
-
     </div>
   </div>
-  <!-- Header-navbar -->
-
 </header>
