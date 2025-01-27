@@ -75,9 +75,8 @@ export const CatalogueFilters = React.memo(
                 role="button"
                 className={classes.checkbox}
                 type={radio ? 'radio' : 'checkbox'}
-                name={name}
                 value={key}
-                ref={register}
+                {...register(name)}
                 onChange={handleOnChangeFilter}
               />
               {value}

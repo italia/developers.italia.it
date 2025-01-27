@@ -42,8 +42,7 @@ export const SearchBar = React.memo(({ defaultValue = '', placeholder = '', onCh
         placeholder={placeholder}
         type="text"
         className={classes.searchBar}
-        name="search"
-        ref={register}
+        {...register('search')}
         onChange={handleOnChangeSearchValue}
       />
     </h2>
