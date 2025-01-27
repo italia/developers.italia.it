@@ -66,6 +66,16 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.m?js/,
+        type: "javascript/auto",
+      },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
+      },
       { test: /\.(m)?js$/, use: ["babel-loader"], exclude: /node_modules/ },
       {
         // Handle .sass, .scss and .css files
