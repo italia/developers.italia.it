@@ -1,45 +1,46 @@
 {% if site.data.l10n.size > 1 %}
-<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
-  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
-   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="">{{ site.data.l10n[active_lang].code | upcase }}</span>
-    <span class="sr-only">{{ t.active_lang }}:</span>
-    <svg class="icon icon-white icon-sm">
+<div class="nav-item dropdown">
+  <a href="#" id="languagesDropButton" role="button" class="nav-link dropdown-toggle"
+   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="visually-hidden">{{ t.active_lang }}:</span>
+    <span>{{ site.data.l10n[active_lang].code | upcase }}</span>
+    <svg class="icon d-none d-lg-block">
       <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
     </svg>
   </a>
+  <div class="dropdown-menu p-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-list-wrapper">
+          <ul id="languages" class="link-list" aria-labelledby="languagesDropButton" >
+              {% for lang in site.data.l10n %}
+              <li class="dropdown-item list-item {% if lang[0]==active_lang %}active{%endif%}">
+                <!-- pages generated with page_gen plugins  -->
+                {% if page.url contains "/software/" or  page.url contains "/api/" or  page.url contains "/pa/" %}
+                <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                {% elsif page.ref %}
 
-  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
-      {% for lang in site.data.l10n %}
-      <li class="{% if lang[0]==active_lang %}active{%endif%}">
-        <!-- pages generated with page_gen plugins  -->
-        {% if page.url contains "/software/" or  page.url contains "/api/" or  page.url contains "/pa/" %}
-        <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
-        {% elsif page.ref %}
+                <!-- take ref from page when lang is not actual
+                otherwise taking from env
+                -->
+                {% if page.ref[lang.first] %}
+                {% assign newUrl = page.ref[lang.first] %}
+                {% else %}
+                {% assign newUrl = page.url %}
+                {% endif %}
 
-        <!-- take ref from page when lang is not actual
-        otherwise taking from env
-         -->
-        {% if page.ref[lang.first] %}
-        {% assign newUrl = page.ref[lang.first] %}
-        {% else %}
-        {% assign newUrl = page.url %}
-        {% endif %}
-
-        <a href="{{ newUrl }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
-        {% else %}
-        <a href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
-        {%endif%}
-        {% if lang[0]==active_lang %}
-        <svg class="icon icon-sm float-right">
-          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
-        </svg>
-        {%endif%}
-        </a>
-      </li>
-      {% endfor %}
-  </ul>
-
+                <a href="{{ newUrl }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                {% else %}
+                <a href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                {%endif%}
+                </a>
+              </li>
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endif %}
