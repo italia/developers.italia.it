@@ -46,6 +46,6 @@ jekyll-build:
 	fi
 
 include-npm-deps:
-	npm ci --legacy-peer-deps
+	npm i
 build: | bundle-install-deployment include-npm-deps download-data jekyll-build
 build-test: | build test
