@@ -1,8 +1,8 @@
-<span class="text-white mr-3 float-left">{{ include.follow_us_text | capitalize }}</span>
-<ul class="follow-us-icons d-inline-block list-inline mb-0">
-  <li class="list-inline-item">
-    <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed">
-      <svg class="icon icon-white">
+<ul>
+  <li>
+    <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon">
         <use xlink:href="/assets/icons/feed.svg#rss"></use>
       </svg>
     </a>
@@ -12,9 +12,10 @@
   {% if item[1].icon %}
   {% assign icon = item[1].icon %}
   {% endif %}
-  <li class="list-inline-item">
-    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me">
-      <svg class="icon icon-white">
+  <li>
+    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me"  aria-label="{{ item[1].name }}" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon">
         <use xlink:href="{{ icon }}"></use>
       </svg>
     </a>
