@@ -37,6 +37,7 @@
         "url": "git://github.com/italia/developers.italia.it"
     },
     "scripts": {
+        "start" : "npx webpack-dev-server --config webpack.dev.js --color --progress --host 0.0.0.0",
         "get-software": "node scripts/get-software.js",
         "get-publishers": "node scripts/get-publishers.js",
         "build": "webpack --config webpack.prod.js",
