@@ -1,4 +1,52 @@
-<footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+<footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="{{ site.owner_link }}">
+                <img src="{{ site.gov_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="">
+                <img src="{{ site.owner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.owner_full }}">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="{{ site.partner_link }}">
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <img src="{{ site.partner_logo | d('//placehold.it/75x80?text=placeholder') }}" alt="{{ site.partner_full }}">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <h4>{{ t.follow_us | capitalize }}</h4>
+            <div class="pb-2">
+              {% include social-icons.html social_items=site.data.social follow_us_text=t.follow_us %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        {% for link in site.data.footer_links %}
+        {% assign link_content = link[1].[active_lang] %}
+        <li class="list-inline-item"><a href="{{ link_content.url }}">{{ t[link_content.title ] | default: link_content.title | capitalize }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!-- <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
   <div class="container">
     <div class="row mt-4 mt-md-0 justify-content-lg-between">
       <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
@@ -35,7 +83,7 @@
     </ul>
   </div>
 
-</footer>
+</footer> -->
 
 {% if jekyll.environment == "production" %}
 <script src="{{ '/dist/bundle.js' | relative_url }}"></script>

@@ -1,5 +1,5 @@
-<ul>
-  <li>
+<ul class="list-inline text-left social">
+  <li class="list-inline-item">
     <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
     rel="noreferrer">
       <svg role="img" class="icon">
@@ -12,7 +12,7 @@
   {% if item[1].icon %}
   {% assign icon = item[1].icon %}
   {% endif %}
-  <li>
+  <li class="list-inline-item">
     <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me"  aria-label="{{ item[1].name }}" target="_blank"
     rel="noreferrer">
       <svg role="img" class="icon">
