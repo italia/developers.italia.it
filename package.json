@@ -29,6 +29,7 @@
         "react-jss": "^10.10.0",
         "select2": "^4.0.3",
         "swagger-ui": "^5.18.2",
+        "url": "^0.11.4",
         "url-loader": "^4.1.1",
         "util": "^0.12.5"
     },
@@ -37,7 +38,7 @@
         "url": "git://github.com/italia/developers.italia.it"
     },
     "scripts": {
-        "start" : "npx webpack-dev-server --config webpack.dev.js --color --progress --host 0.0.0.0",
+        "start": "npx webpack-dev-server --config webpack.dev.js --color --progress --host 0.0.0.0",
         "get-software": "node scripts/get-software.js",
         "get-publishers": "node scripts/get-publishers.js",
         "build": "webpack --config webpack.prod.js",
