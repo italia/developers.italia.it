@@ -1,43 +1,39 @@
 {% assign network_links = site.data.network_links %}
 
 <header class="primary-bg">
-  <div class="Header-banner primary-bg-a7 position-relative">
-    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
-      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
-
-        <div class="d-flex align-items-center">
-          <a href="{{ site.owner_link }}" class="py-2 d-inline-block">
-            <span class="d-inline-block d-md-none d-lg-none white-color">
-              {{ site.owner_short }}
-            </span>
-            <span class="d-none d-md-inline-block white-color">
-              {{ site.owner_full }}
-            </span>
-          </a>
-          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
-          <a href="{{ site.partner_link }}" class="py-2 d-inline-block">
-            <span class="d-inline-block white-color">
-              {{ site.partner_short }}
-            </span>
-          </a>
-          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
-            data-activate-element>
-            <svg class="icon icon-white icon-sm">
-              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
-            </svg>
-          </a>
+  <div class="it-header-slim-wrapper">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <div class="navbar-brand d-none d-lg-block"><span><a target="_blank" class="me-2"
+                  href="{{ site.owner_link }}" rel="noreferrer">{{ site.owner_full }}</a>+<a target="_blank"
+                  class="ms-2" href="{{ site.partner_link }}t" rel="noreferrer">{{ site.partner_short }}</a></span>
+            </div>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <div class="d-flex align-items-center">
+                  <div class="navbar-brand d-lg-none"><span><a target="_blank" class="p-2" href="{{ site.owner_link }}"
+                        rel="noreferrer">{{ site.owner_short }}</a> <!-- -->+<!-- -->
+                      <a target="_blank" class="p-2" href="{{ site.partner_link }}" rel="noreferrer">{{
+                        site.partner_shrt }}</a></span></div><a class="it-opener d-lg-none p-2 collapsed" href="#menuC2"
+                    role="button" aria-expanded="false" aria-controls="menuC2" data-focus-mouse="false"><span
+                      class="visually-hidden">Apri/chiudi menu
+                      secondario</span><svg role="img" class="icon">
+                      <use href="/assets/svg/sprites.svg#it-expand"></use>
+                    </svg></a>
+                </div>
+                <div class="link-list-wrapper collapse" id="menuC2">
+                  {% include network-links-menu.html class='link-list' %}
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              {% include lang_switch.html %}
+            </div>
+          </div>
         </div>
-
-        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex'
-           liclass='list-inline-item m-0 py-2 px-3 d-flex align-items-center' %}
-
-        {% include lang_switch.html %}
       </div>
-    </div>
-    <div
-      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
-      data-activatedby="slimDropdown">
-      {% include network-links-menu.html class='Header-external--mobile container' %}
     </div>
   </div>
 
@@ -58,10 +54,9 @@
           <a href="{{ '/' | relative_url }}">{{ t.site_title | default: site.title | escape }}
             {% if site.pill != "" and site.pill != nil %}
             <span class="badge badge-pill badge-primary primary-bg-a7 d-none d-sm-inline-block">{{ site.pill }}</span>{%
-                endif %}
+            endif %}
           </a>
-          <span
-              class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
+          <span class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
         </h1>
       </div>
 
