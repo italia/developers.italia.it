@@ -112,7 +112,7 @@ $(document).ready(function () {
         render: (data) => {
           let labelist = '';
           data.forEach(function (item) {
-            labelist = labelist + "<span class='badge badge-secondary mr-1' >" + item + ' </span>';
+            labelist = labelist + "<span class='badge badge-secondary me-1' >" + item + ' </span>';
           });
           return labelist;
         },

@@ -174,7 +174,7 @@ Per maggiori informazioni, puoi iniziare dalla pagina dei [kit sul sito di Desig
 
 # Canali
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/design" target="_blank"><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprites.svg#it-horn"></use></svg>
+<a class="btn btn-primary" href="https://forum.italia.it/c/design" target="_blank"><svg class="icon icon-white p-1 me-1"><use xlink:href="/assets/svg/sprites.svg#it-horn"></use></svg>
   Entra nel forum
 </a>
 
