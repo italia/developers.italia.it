@@ -10,9 +10,9 @@ import { SearchModal } from './SearchModal.js';
 const useStyles = createUseStyles({
   icon: {
     composes: 'd-none d-lg-inline',
-    backgroundColor: 'var(--white)',
+    backgroundColor: 'var(--bs-white)',
     borderRadius: '100%',
-    fill: 'var(--primary)',
+    fill: 'var(--bs-primary)',
     height: '2.6rem',
     padding: '0.8rem',
     width: '2.6rem',
@@ -27,7 +27,7 @@ export const SearchContainer = () => {
     <>
       <div onClick={openModal} className="d-flex align-items-center pe-2" role="button" data-testid="search-button">
         <span className="text-white me-3 d-none d-lg-inline">{l10NLabels.search_form_label}</span>
-        <Icon className={classes.icon} icon="it-search" color="light"></Icon>
+        <Icon className={classes.icon} icon="it-search" color="primary"></Icon>
         <Icon className="d-inline d-lg-none" icon="it-search" color="light"></Icon>
       </div>
       {isModalOpen && (
