@@ -66,7 +66,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
       data-class="catalogue-item"
     >
       <div>
-        <Icon icon={icon} size="sm" className="mr-1" />
+        <Icon icon={icon} size="sm" className="me-1" />
         <span className={classes.category}>{l10NLabels.software[category]}</span>
       </div>
       <div className="my-2 my-md-0 w-100">

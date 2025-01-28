@@ -139,7 +139,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
 
             <div className="row mw-md-50">
               {text}
-              <a target="_blank" rel="noreferrer" className="text-white font-weight-bold" href={privacy}>
+              <a target="_blank" rel="noreferrer" className="text-white fw-bold" href={privacy}>
                 ({t('privacyText')})
               </a>
             </div>

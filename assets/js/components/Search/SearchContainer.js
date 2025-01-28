@@ -25,8 +25,8 @@ export const SearchContainer = () => {
 
   return (
     <>
-      <div onClick={openModal} className="d-flex align-items-center pr-2" role="button" data-testid="search-button">
-        <span className="text-white mr-3 d-none d-lg-inline">{l10NLabels.search_form_label}</span>
+      <div onClick={openModal} className="d-flex align-items-center pe-2" role="button" data-testid="search-button">
+        <span className="text-white me-3 d-none d-lg-inline">{l10NLabels.search_form_label}</span>
         <Icon className={classes.icon} icon="it-search" color="light"></Icon>
         <Icon className="d-inline d-lg-none" icon="it-search" color="light"></Icon>
       </div>
