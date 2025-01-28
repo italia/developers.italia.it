@@ -106,7 +106,7 @@ Appaltanti):
 
 Le Stazioni Appaltanti gestiscono tutte le fasi del ciclo di vita del contratto
 utilizzando esclusivamente Piattaforme di approvvigionamento digitali
-certificate, che accedono in [interoperabilità](https://next.developers.italia.it/it/interoperabilita)
+certificate, che accedono in [interoperabilità](/it/interoperabilita)
 ai servizi offerti dalla Piattaforma dei Contratti Pubblici di ANAC.
 Per poter operare in interoperabilità le Stazioni Appaltanti devono infatti
 dotarsi di una o più piattaforme digitali certificate (art. 25).
