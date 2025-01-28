@@ -1,0 +1,1156 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    Schema
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Schema" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Il catalogo delle risorse semantiche condivise per l’interoperabilità" />
+<meta property="og:description" content="Il catalogo delle risorse semantiche condivise per l’interoperabilità" />
+<link rel="canonical" href="https://developers.italia.it/it/schema/" />
+<meta property="og:url" content="https://developers.italia.it/it/schema/" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-28T08:11:29+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Schema" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"dateModified":"2025-01-28T08:11:29+00:00","datePublished":"2025-01-28T08:11:29+00:00","description":"Il catalogo delle risorse semantiche condivise per l’interoperabilità","headline":"Schema","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/it/schema/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/it/schema/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202501280811" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'jg7pYvEqvM']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-platform">
+
+
+
+<div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary mr-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div>
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="primary-bg">
+  <div class="Header-banner primary-bg-a7 position-relative">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+      <div class="Header-owner__institutions container d-flex flex-row px-4 px-md-0">
+
+        <div class="d-flex align-items-center">
+          <a href="https://innovazione.gov.it/dipartimento/" class="py-2 d-inline-block">
+            <span class="d-inline-block d-md-none d-lg-none white-color">
+              DTD
+            </span>
+            <span class="d-none d-md-inline-block white-color">
+              Dipartimento per la Trasformazione Digitale
+            </span>
+          </a>
+          <span class="white-color py-2 d-inline-block">&nbsp;+&nbsp;</span>
+          <a href="https://www.agid.gov.it" class="py-2 d-inline-block">
+            <span class="d-inline-block white-color">
+              AgID
+            </span>
+          </a>
+          <a href="#" class="d-inline-block d-lg-none py-2 text-white" aria-label="External links" data-activeid="slimDropdown" role="button"
+            data-activate-element>
+            <svg class="icon icon-white icon-sm">
+              <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+        </div>
+
+        
+
+
+
+
+<ul class="list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex">
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class="list-inline-item m-0 py-2 px-3 d-flex align-items-center delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+
+        
+<div class="Header-lang_switch dropdown d-inline ml-auto ml-lg-0">
+  <a href="#" id="languagesDropButton" role="button" class="Header-language d-flex align-items-center text-white py-2 pl-0 pl-md-3"
+   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="">ITA</span>
+    <span class="sr-only">lingua attiva:</span>
+    <svg class="icon icon-white icon-sm">
+      <use xlink:href="/assets/svg/sprite.svg#it-expand"></use>
+    </svg>
+  </a>
+
+  <ul id="languages" class="dropdown-menu list-unstyled" aria-labelledby="languagesDropButton" >
+      
+      <li class="active">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/it"><span lang="it">italiano</span>
+        
+        
+        <svg class="icon icon-sm float-right">
+          <use xlink:href="/assets/svg/sprite.svg#it-check"></use>
+        </svg>
+        
+        </a>
+      </li>
+      
+      <li class="">
+        <!-- pages generated with page_gen plugins  -->
+        
+        <a href="/en"><span lang="en">english</span>
+        
+        
+        </a>
+      </li>
+      
+  </ul>
+
+</div>
+
+
+
+      </div>
+    </div>
+    <div
+      class="deactive Header-external-wrapper d-block d-lg-none primary-bg-a7  position-absolute primary-bg-a7 w-100 h-100vh z-10"
+      data-activatedby="slimDropdown">
+      
+
+
+
+
+<ul class="Header-external--mobile container">
+    
+    
+    <li class=" delimiter first-delimiter" >
+        
+        <a target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>Le community</span>
+        
+    </li>
+    
+    
+    <li class=" current " >
+        
+        <a target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li class=" label " >
+        
+        <span>GLi strumenti</span>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li class="  " >
+        
+        <a target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li class=" delimiter " >
+        
+        <a target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar ">
+    <div class="container d-flex align-items-center">
+      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+        <a href="#" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu"><img
+            class="Header-hamb__icon" alt="Menu" src="/assets/icons/hamburger-icon.svg"></a>
+      </div>
+      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+        <a href="/" tabindex="-1">
+          <img src="/assets/icons/logo-it.svg" alt="">
+        </a>
+      </div>
+
+      <div class="Header-title mr-auto">
+        <h1 class="Header-titleLink">
+          <a href="/">Developers Italia
+            
+          </a>
+          <span
+              class="d-none d-lg-block Header-subtitle">Sviluppiamo i servizi pubblici, insieme</span>
+        </h1>
+      </div>
+
+      <div class="Header-utils mr-2 mr-md-4 d-none d-lg-block">
+        <div class="Header-social ">
+          <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+        </div>
+      </div>
+      
+      <div class="Header-search ml-4 mb-0" id="header-search">
+        <custom-search></custom-search>
+      </div>
+      
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+</header>
+
+    <section class="primary-bg" id="menu">
+	<h2 class="sr-only">Menu di navigazione</h2>
+  <div class="container">
+    <nav>
+			
+      
+
+
+  <ul
+    class="Linklist Linklist--padded-top d-none d-lg-flex flex-row list-unstyled Treeview Treeview--default js-Treeview">
+    
+    
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+      <div class="Offcanvas-menu d-flex deactive" data-activatedby="offcanvasMenu">
+        <div class="Offcanvas-menu__inner">
+          <div class="Offcanvas-menu__header d-flex">
+          <a href="/" tabindex="-1">
+            <img src="/assets/icons/logo-it-blue.svg" class="Offcanvas-menu__logo" alt="Developers Italia">
+          </a>
+          <a href="/" class="Offcanvas-menu__title">Developers Italia</a>
+          </div>
+        
+
+
+<ul>
+  
+    
+    
+    
+    
+    <li class=" active">
+
+      
+
+      <a href="/it/piattaforme" class="Linklist-link "  >
+        
+        Piattaforme
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/software" class="Linklist-link "  >
+        
+        Software
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="https://next.developers.italia.it/it/interoperabilita" class="Linklist-link "  >
+        
+        Interoperabilità
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-lo-uso" class="Linklist-link "  >
+        
+        Come lo uso
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/come-partecipo" class="Linklist-link "  >
+        
+        Come partecipo
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/news" class="Linklist-link "  >
+        
+        News
+        
+      </a>
+      
+    </li>
+    
+    
+    
+    <li class=" ">
+
+      
+
+      <a href="/it/contatti" class="Linklist-link "  >
+        
+        Contatti
+        
+      </a>
+      
+    </li>
+    
+
+  </ul>
+
+        </div>
+        <div class="Offcanvas-menu__extra" data-activate-element data-activate-noscroll="true" data-activeid="offcanvasMenu" >
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+    
+    
+
+ 
+
+<div class="project__first-part">
+  <div class="container">
+    <div class="d-flex">
+      
+      <h6 class="mb-2 mb-md-4">Piattaforma abilitante</h6>
+      
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="project__header">
+          <h1 class="d-inline h1">Schema</h1>
+          
+          
+          <p class="lead pt-3 pb-3 project__desc">
+            Il catalogo delle risorse semantiche condivise per l'interoperabilità
+
+          </p>
+          
+        </div>
+        <div class="project__actors row">
+          
+          <div class="col-12 col-lg-4">
+            <span class="d-block">Titolare</span>
+            <ul class="list-unstyled">
+              
+              <li><a href="https://innovazione.gov.it" target="_blank">Dipartimento per la trasformazione digitale</a></li>
+              
+            </ul>
+          </div>
+          
+          
+          <div class="col-12 col-lg-4">
+            <span class="d-block">Gestore</span>
+            <ul class="list-unstyled">
+              
+              <li><a href="https://www.istat.it/" target="_blank">ISTAT</a></li>
+              
+            </ul>
+          </div>
+          
+          
+          <div class="col-12 col-lg-4 text-truncate">
+            <span class="d-block">Sito web</span>
+            <a href="https://schema.gov.it" target="_blank">https://schema.gov.it</a>
+          </div>
+          
+
+          
+          
+
+          
+          
+
+          <div class="col-12 col-lg-4">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        
+
+      </div>
+    </div>
+    <div class="project__heroback">
+      Schema
+    </div>
+  </div>
+</div>
+
+<section class="project__content with-resources">
+  <div class="container d-flex justify-content-center">
+
+    <div class="project__maincontent col-md-10">
+      <h2 id="cosè-e-quali-vantaggi-offre">Cos’è e quali vantaggi offre</h2>
+
+<p><strong>Schema</strong> è il catalogo nazionale delle risorse semantiche condivise per l’interoperabilità, che 
+agevola la ricerca e il riuso di risorse semantiche e che permette di supportare anche lo sviluppo 
+di API semanticamente e sintatticamente interoperabili attraverso la ricerca, l’utilizzo e il riuso 
+di risorse semantiche.</p>
+
+<p>Il catalogo e i suoi strumenti sono a servizio degli enti e dei privati che scambiano dati e 
+informazioni tramite la Piattaforma 
+Digitale Nazionale Dati (PDND) per garantire che sia il formato che il significato delle informazioni 
+scambiate siano 
+perfettamente preservati e compresi durante gli scambi tra le parti.</p>
+
+<p>Il catalogo e i suoi strumenti sono a servizio degli enti e dei privati che scambiano dati e 
+informazioni tramite la Piattaforma 
+Digitale Nazionale Dati (PDND) per garantire che sia il formato che il significato delle informazioni 
+scambiate siano 
+perfettamente preservati e compresi durante gli scambi tra le parti.
+Gli utenti del catalogo sono:</p>
+<ul>
+  <li>I <strong>Contributori</strong>, ovvero Pubbliche amministrazioni interessate a modellare e pubblicare sul 
+catalogo le proprie risorse 
+semantiche mantenendone titolarità e responsabilità di contenuto, e riusando, dove possibile, i 
+concetti già presenti a catalogo.</li>
+  <li>Gli <strong>Sviluppatori di API/e-services</strong> che siano interoperabili sia semanticamente che 
+sintatticamente.</li>
+  <li>I <strong>Ricercatori</strong> interessati a riusare i concetti del Catalogo nelle proprie rappresentazioni 
+semantiche.</li>
+</ul>
+
+<p>La semantica assicura che sia il formato che il significato delle informazioni scambiate siano 
+perfettamente preservati e compresi durante gli scambi tra le parti. 
+Per integrare informazioni da fonti diverse, queste devono essere comprensibili.
+In particolare, nello sviluppo di servizi pubblici digitali complessi può succedere di integrare fonti 
+dati con formati diversi, il che può comportare una complessità elevata. Di conseguenza i servizi 
+digitali erogati risulterebbero più soggetti ad errori, con conseguenze anche nel trattamento dei 
+dati. Interviene quindi la semantica che abilita e semplifica la fruizione dei dati scambiati.</p>
+
+<p>Se sei nuovo nel mondo della semantica dei dati, e hai bisogno di un’introduzione generale sul tema, fai riferimento al 
+documento <a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/">Introduzione alla semantica dei dati e del Web Semantico</a>.</p>
+
+<h3 id="cosa-trovi-su-schema">Cosa trovi su Schema</h3>
+
+<p>Nel catalogo si possono trovare:</p>
+<ul>
+  <li><strong>Ontologie</strong>: Rappresentazioni formali e condivise delle entità e delle loro relazioni per domini 
+applicativi di interesse.
+ Le ontologie sono utilizzate per rappresentare le conoscenze in un dominio specifico in modo 
+ strutturato e con relazioni 
+ definite, ad esempio per facilitare l’interpretazione e la comprensione dei dati dalle macchine in 
+ modo più intelligente;</li>
+  <li><strong>Vocabolari controllati</strong>: Liste, tassonomie e tesauri usati per organizzare termini di riferimento 
+per diversi domini 
+applicativi, sono utilizzati in diversi contesti per facilitare l’organizzazione e la ricerca di 
+informazioni.</li>
+  <li><strong>Schemi di API</strong>: Descrizione di dati scambiati tra sistemi diversi, usata per definirne la 
+serializzazione e validarne la 
+sintassi, per aumentare la qualità dei dati che vengono scambiati.</li>
+</ul>
+
+<p>Schema mette a disposizione una serie di strumenti per poter accedere alle risorse semantiche del 
+catalogo e per validarle. La validazione riguarda sia la descrizione o metadatazione delle risorse 
+semantiche, sia la struttura nel caso degli schemi di API.</p>
+
+<p>Gli strumenti a disposizione sono:</p>
+<ul>
+  <li>Il <a href="https://schema.gov.it/validatore_metadati">validatore dei metadati</a> delle risorse semantiche, 
+per validare la metadatazione generale descrittiva delle risorse semantiche da pubblicare nel catalogo;</li>
+  <li>L’<a href="https://italia.github.io/schema-editor/latest/">editor degli schemi di dati</a>, per strutturare al 
+meglio degli schemi dati confermi a una semantica condivisa;</li>
+  <li>Lo <a href="https://schema.gov.it/sparql">SPARQL endpoint</a>, per interrogare i contenuti delle ontologie e 
+dei vocabolari controllati del catalogo.</li>
+</ul>
+
+<h3 id="come-contribuire-al-catalogo">Come contribuire al Catalogo</h3>
+
+<p>Il catalogo si basa su un sistema federato di risorse semantiche, pubblicate dagli enti contributori, 
+e raccolte con un processo di harvesting. I contributori modellano le loro risorse semantiche e le 
+pubblicano in repository pubblici seguendo le regole condivise nella Guida dedicata. Il catalogo può 
+essere ampliato con nuove risorse, aumentando così le possibilità di riuso, utili ad esempio nello 
+sviluppo degli e-service erogati dalle PA tramite la 
+<a href="https://developers.italia.it/it/pdnd/">Piattaforma Digitale Nazionale Dati</a>
+e favorendo la diffusione delle pratiche di interoperabilità semantica.</p>
+
+<p>Prima di proporre nuove risorse semantiche, è buona pratica esplorare le risorse già presenti nel 
+catalogo tramite il catalogo schema.gov.it. Ricercando per categoria, se il dominio delle risorse che 
+il Contributore vuole modellare è già presente, ma c’è bisogno di rappresentare una nuova entità e/o 
+proprietà, il Contributore può valutare di estendere le risorse esistenti per rispondere alle proprie 
+esigenze di modellazione oppure considerare l’opportunità di definire/aggiornare entità e/o proprietà 
+rilevanti a livello nazionale (cfr. <a href="https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_interoperabilit_tecnica_pa.pdf">Linee Guida sull’interoperabilità tecnica delle Pubbliche Amministrazioni</a>).</p>
+
+<p>Ulteriori dettagli sono resi disponibili nella 
+<a href="https://teamdigitale.github.io/dati-semantic-guida-ndc-docs/index.html">Guida al Catalogo nazionale della semantica dei dati</a>.</p>
+
+<p>Passi principali da seguire per contribuire al catalogo.</p>
+<ol>
+  <li>Il <strong>Contributore</strong> analizza le risorse da creare, oppure delle possibili proposte di modifica da 
+effettuare alle risorse già pubblicate sul catalogo.</li>
+  <li>I <strong>Contributori</strong> creano un proprio <em>repository</em> (se non ne hanno uno) dove pubblicare le 
+risorse semantiche da raccogliere. Successivamente, inviano una richiesta di <em>onboarding</em> a catalogo 
+con una mail a <a href="mailto:info@schema.gov.it">info@schema.gov.it</a> e seguono le istruzioni contenute nel 
+<a href="https://teamdigitale.github.io/dati-semantic-guida-ndc-docs/docs/come-contribuire.html">capitolo “Come contribuire”</a>.
+della guida per registrare il proprio repository sul Catalogo.</li>
+  <li>In alternativa, i Contributori possono richiedere una consulenza di <strong>“semantic stewardship”</strong> ad 
+Istat, sempre inviando una mail a <a href="mailto:info@schema.gov.it">info@schema.gov.it</a>.</li>
+  <li>Il processo di <em>“harvesting”</em>, avviato periodicamente, <strong>estrae i dati contenuti nei repository 
+configurati come sorgenti, e li memorizza su server</strong>. Dopo la loro adesione iniziale al catalogo, i 
+Contributori possono espandere continuamente il proprio insieme di risorse semantiche.</li>
+  <li>Il catalogo schema.gov.it facilita l’accesso alle risorse semantiche pubblicate mediante 
+<strong>funzionalità di ricerca testuale, filtri preimpostati e visualizzatori</strong> integrati nelle schede 
+delle risorse semantiche.</li>
+</ol>
+
+<h2 id="come-usare-le-risorse-semantiche-per-sviluppare-api">Come usare le risorse semantiche per sviluppare API</h2>
+
+<p>Suggerimenti per <strong>Sviluppatori</strong> che vogliono creare API semanticamente interoperabili:</p>
+<ol>
+  <li>Lo sviluppatore può effettuare la ricerca sul portale del catalogo ed individuare le risorse che 
+possono essere utili allo sviluppo dell’applicazione.</li>
+  <li>Consultare e riutilizzare ontologie, vocabolari controllati e schemi dati.</li>
+  <li>Utilizzare l’<a href="https://italia.github.io/schema-editor/latest/">editor degli schemi dati</a> che 
+interrogando le risorse semantiche di Schema, consente di creare uno schema API personalizzato e 
+conforme allo standard OpenAPI, adattandolo alle specifiche esigenze e garantendo una perfetta 
+integrazione con le risorse esistenti a catalogo.</li>
+  <li>Controllare che le API siano corrette dal punto di vista sintattico con l’aiuto del 
+<a href="https://italia.github.io/api-oas-checker/">validatore OAS Checker</a> durante le fasi di sviluppo.</li>
+  <li>Se applicabile pubblicare gli e-service, composti da una o più API, in ambiente di collaudo della 
+PDND, effettuare i test e infine renderli disponibili sul catalogo PDND in esercizio.</li>
+</ol>
+
+<h2 id="canali">Canali</h2>
+
+<p>Per qualsiasi domanda, richiesta di assistenza o chiarimento riguardo al catalogo, puoi contattare 
+direttamente gli amministratori all’indirizzo <a href="mailto:info@schema.gov.it">info@schema.gov.it</a>.</p>
+
+<p>Per tutte le altre problematiche di natura tecnica, se trovi errori o bug, oppure proposte di 
+miglioramento apri una issue su github.</p>
+
+<p><a class="btn btn-primary" href="https://github.com/teamdigitale/dati-semantic-frontend/issues" target="_blank"><i class="it-horn"></i> Apri una issue su GitHub</a></p>
+
+
+      
+        
+          <h2>Risorse</h2>
+        
+      <section id="resources" class="project__resources">
+    <!--<h1 class="text-center" >Risorse</h1>-->
+    <div class="container pb-md-4">
+
+        <nav>
+            <div class="nav nav-tabs nav-fill project__resources-header" id="project-resources" role="tablist">
+                
+                
+                <a class="nav-item nav-link active" id="resourcegroup-1"
+                    data-toggle="tab" href="#resourcecontent-1" role="tab"
+                    aria-controls="resourcecontent-1"
+                    aria-selected="true">Documentazione</a>
+                
+                
+                <a class="nav-item nav-link " id="resourcegroup-2"
+                    data-toggle="tab" href="#resourcecontent-2" role="tab"
+                    aria-controls="resourcecontent-2"
+                    aria-selected="false">Strumenti</a>
+                
+            </div>
+        </nav>
+
+
+        <div class="tab-content project__resources-contents" id="project-resources-contents">
+            
+            
+            <div class="tab-pane fade show active" id="resourcecontent-1"
+                role="tabpanel" aria-labelledby="resourcegroup-1">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://teamdigitale.github.io/dati-semantic-guida-ndc-docs/index.html" target="_blank" class="d-block project__resources-itemtitle">Guida al Catalogo nazionale della semantica dei dati</a>
+                        <p>Guida pratica per chi vuole contribuire o fruire delle risorse semantiche presenti nel catalogo.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-link"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/" target="_blank" class="d-block project__resources-itemtitle">Introduzione alla semantica dei dati e del Web Semantico</a>
+                        <p>Guida sulla semantica dei dati nel Web come intesa dal Web Semantico.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.agid.gov.it/sites/default/files/repository_files/linee_guida_interoperabilit_tecnica_pa.pdf" target="_blank" class="d-block project__resources-itemtitle">Linee guida sull'interoperabilità tecnica delle pubbliche amministrazioni</a>
+                        <p>Definiscono che comunicazione tra soggetti DEVE utilizzare modelli dati condivisi.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.agid.gov.it/sites/default/files/repository_files/documentazione_trasparenza/cdc-spc-gdl6-interoperabilitasemopendata_v2.0_0.pdf" target="_blank" class="d-block project__resources-itemtitle">Linee guida per l'interoperabilità semantica attraverso i linked open data</a>
+                        <p>Definiscono l'importanza dell'adozione del modello Linked Open Data per abilitare lo sviluppo di una effettiva interoperabilità semantica tra PA.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://ec.europa.eu/isa2/sites/default/files/eif_brochure_final.pdf" target="_blank" class="d-block project__resources-itemtitle">European Interoperability framework</a>
+                        <p>Definisce il ruolo che la semantica assume nella collaborazione e nell'interscambio di informazioni.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-2"
+                role="tabpanel" aria-labelledby="resourcegroup-2">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://schema.gov.it/validatore_metadati" target="_blank" class="d-block project__resources-itemtitle">Validatore metadati</a>
+                        <p>Il validatore dei metadati delle risorse semantiche, per validare la metadatazione generale descrittiva delle risorse semantiche da pubblicare nel catalogo.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://italia.github.io/schema-editor/latest/" target="_blank" class="d-block project__resources-itemtitle">Schema editor</a>
+                        <p>L'editor degli schemi di dati, per strutturare al meglio degli schemi dati conformi a una semantica condivisa.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprite.svg#it-software"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://schema.gov.it/sparql" target="_blank" class="d-block project__resources-itemtitle">SPARQL Endpoint di schema.gov.it</a>
+                        <p>Lo SPARQL endpoint, per interrogare i contenuti delle ontologie e dei vocabolari controllati del catalogo.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+      
+
+      
+    </div>
+
+    
+    <div class="sideblock-wrapper col-md-3 d-none d-lg-block">
+  <div class="sideblock">
+    
+    
+    <a href="https://schema.gov.it" target="_blank">
+    
+      <img alt="Schema Sito web" src="/assets/images/logo_schema.png" style="max-width: 100%; margin-bottom: 10px">
+    
+    </a>
+    
+    
+
+    
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#cosè-e-quali-vantaggi-offre">Cos’è e quali vantaggi offre</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cosa-trovi-su-schema">Cosa trovi su Schema</a></li>
+<li class="toc-entry toc-h3"><a href="#come-contribuire-al-catalogo">Come contribuire al Catalogo</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#come-usare-le-risorse-semantiche-per-sviluppare-api">Come usare le risorse semantiche per sviluppare API</a></li>
+<li class="toc-entry toc-h2"><a href="#canali">Canali</a></li>
+</ul>
+    
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#resources">Documentazione, Strumenti</a></li>
+    </ul>
+    
+    
+    
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+<a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
+  <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+  <span class="sr-only">torna all'inizio dei contenuti</span>
+</a>
+
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="footer pt-2 pt-md-5 pb-2 pb-md-5">
+  <div class="container">
+    <div class="row mt-4 mt-md-0 justify-content-lg-between">
+      <div class="footer-collaboration col-md-5 col-lg-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          Progetto di</p>
+        <div>
+          <a href="https://innovazione.gov.it/dipartimento/">
+            <img src="/assets/images/governo.svg" alt="">
+            <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+          </a>
+        </div>
+      </div>
+      <div class="footer-team align-items-center col-md-4 py-2 px-3 p-md-0">
+        <p class="d-block d-md-none mt-2 footer-collaboration-with small">
+          In collaborazione con</p>
+        <a href="https://www.agid.gov.it">
+          <div class="d-flex">
+            <div class="d-flex">
+              <img src="/assets/images/agid-logo-bb.svg" alt="">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="footer-social text-right px-3 px-md-0">
+        <span class="text-white mr-3 float-left">Seguici su</span>
+<ul class="follow-us-icons d-inline-block list-inline mb-0">
+  <li class="list-inline-item">
+    <a class="icon feed" href="/it/news/feed.atom" title="feed">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/icons/mastodon.svg#mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me">
+      <svg class="icon icon-white">
+        <use xlink:href="/assets/svg/sprite.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </div>
+
+    <ul class="footer-links px-2 px-md-0">
+      
+      
+      <li><a href="/it/privacy-policy">Privacy policy</a></li>
+      
+      
+      <li><a href="/it/note-legali">Note legali</a></li>
+      
+      
+      <li><a href="/it/dashboard">Dashboard</a></li>
+      
+    </ul>
+  </div>
+
+</footer>
+
+
+<script src="/dist/bundle.js"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
