@@ -2,17 +2,18 @@
     <!--<h1 class="text-center" >{{t.project_risorse}}</h1>-->
     <div class="container pb-md-4">
 
-        <nav>
-            <div class="nav nav-tabs nav-fill project__resources-header" id="project-resources" role="tablist">
-                {% for resourcegroup in page.resources %}
-                {% assign resourceitem = resourcegroup | first %}
-                <a class="nav-item nav-link {% if forloop.first %}active{%endif%}" id="resourcegroup-{{forloop.index}}"
-                    data-toggle="tab" href="#resourcecontent-{{forloop.index}}" role="tab"
+        <ul class="nav nav-tabs" id="project-resources" role="tablist">
+            {% for resourcegroup in page.resources %}
+            {% assign resourceitem = resourcegroup | first %}
+            <li class="nav-item">
+                <a class="nav-link {% if forloop.first %}active{%endif%}" id="resourcegroup-{{forloop.index}}"
+                    data-bs-toggle="tab" href="#resourcecontent-{{forloop.index}}" role="tab"
                     aria-controls="resourcecontent-{{forloop.index}}"
-                    aria-selected="{% if forloop.first %}true{%else%}false{%endif%}">{{resourceitem[0]}}</a>
-                {% endfor %}
-            </div>
-        </nav>
+                    aria-selected="{% if forloop.first %}true{%else%}false{%endif%}">{{resourceitem[0]}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
 
 
         <div class="tab-content project__resources-contents" id="project-resources-contents">
