@@ -8,6 +8,7 @@ import { searchItemProptypes } from '../../utils/proptypes.js';
 const useStyles = createUseStyles({
   link: {
     display: 'block',
+    color: '#17324d',
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'none',
