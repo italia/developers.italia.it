@@ -10,7 +10,7 @@
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="list-inline-item">
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" class="icon-wrapper" title="{{ t.share_msg | capitalize }} {{ t.on_ }} {{ social[0] | capitalize }}">
-          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-{{ social[0] }}"></use></svg>
+          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-{{ social[0] }}"></use></svg>
           <span class="sr-only">{{ social[1].name | capitalize }}</span>
         </a>
       </li>

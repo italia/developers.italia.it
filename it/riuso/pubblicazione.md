@@ -24,17 +24,17 @@ Il processo in sintesi:
 - Nel repositorio deve essere incluso il file `publiccode.yml` che ne descrive le caratteristiche e consente di popolare il [catalogo del software di Developers Italia](/it/software).
 
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Registrati su Slack </a>
+<a class="btn btn-primary" href="https://forum.italia.it/c/software-open-source-per-la-pa"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprites.svg#it-horn"></use></svg> Entra nel forum</a>
+<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CJRSS5S9W"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprites.svg#it-comment"></use></svg> Dialoga su Slack (#reuse)</a>
+<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-comment"></use></svg> Registrati su Slack </a>
 
 
 ## publiccode.yml
 
 Tutti i repositori di software pubblico devono contenere un file denominato `publiccode.yml` che contiene tutte le informazioni utili al popolamento del [catalogo](/it/software) di Developers Italia. publiccode.yml è uno standard nato in Italia ma in corso di adozione internazionale.
 
-<a class="btn btn-white btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml/it/master/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-file"></use></svg> Specifiche formato publiccode.yml</a>
-<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-pencil"></use></svg>Editor/validatore</a>
+<a class="btn btn-white btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/publiccodeyml/it/master/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-file"></use></svg> Specifiche formato publiccode.yml</a>
+<a class="btn btn-primary" href="https://publiccode-editor.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprites.svg#it-pencil"></use></svg>Editor/validatore</a>
 
 ## Pubblicazione nel catalogo
 
@@ -42,8 +42,8 @@ La pubblicazione nel catalogo, così come il recepimento degli aggiornamenti, è
 
 **Nota bene:** per consentire al catalogo di Developers Italia di trovare i propri repositori, ciascuna amministrazione deve eseguire un'**operazione una tantum per dichiarare lo strumento di code hosting** da essa prescelto per pubblicare tutti i propri progetti (ad es. la propria organizzazione GitHub). Si vedano le [linee guida](https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/attachments/allegato-a-guida-alla-pubblicazione-open-source-di-software-realizzato-per-la-pa.html#individuazione-dello-strumento-di-code-hosting) per maggiori dettagli.
 
-<a class="btn btn-white btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-file"></use></svg> Regolamento del catalogo software</a>
-<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprite.svg#it-plus-circle"></use></svg> Modulo per dichiarare lo strumento di code hosting</a>
+<a class="btn btn-white btn-outline-primary" href="https://docs.italia.it/italia/developers-italia/policy-inserimento-catalogo-docs/it/stabile/"><svg class="icon icon-sm icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-file"></use></svg> Regolamento del catalogo software</a>
+<a class="btn btn-primary" href="https://onboarding.developers.italia.it/"><svg class="icon icon-sm icon-white"><use xlink:href="/assets/svg/sprites.svg#it-plus-circle"></use></svg> Modulo per dichiarare lo strumento di code hosting</a>
 
 ## Software open source di terze parti
 
