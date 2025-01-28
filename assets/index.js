@@ -1,6 +1,6 @@
 // This is Webpack's entrypoint.
 
-import 'bootstrap';
+import 'bootstrap-italia';
 
 import './js/logos';
 import './js/main';

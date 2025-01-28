@@ -207,7 +207,7 @@ layout: default
             <p> {{ feature | escape}} </p>
             {% endfor %}
             <p>
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+              <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
                 aria-controls="otherFeature" class="count">{{t.software.show_all }}
                 <span class="or it-expand"></span>
                 <span class="and it-collapse"></span>
@@ -227,7 +227,7 @@ layout: default
           {% endif %}
           {% if page.publiccode.usedBy.size > 0 %}
           <div id="usedBy">
-            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
@@ -258,7 +258,7 @@ layout: default
           {% for feature in oldFeatures limit: 10 %}
           <p> {{ feature | escape}} </p>
           {% endfor %}
-          <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+          <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
             aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
             <span class="or it-expand"></span>
@@ -279,7 +279,7 @@ layout: default
           {% endif %}
         </div>
         <div id="oldVariant">
-          <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
+          <a data-bs-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
             class="count">
             {{ page.oldVariant | size }}
             {% if page.oldVariant.size > 1 %}
@@ -331,7 +331,7 @@ layout: default
             <p> {{ feature | escape }} </p>
             {% endfor %}
             <p>
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+              <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
                 aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
                 <span class="or it-expand"></span>
@@ -351,7 +351,7 @@ layout: default
           </div>
           {% if page.publiccode.usedBy.size != nil %}
           <div id="usedBy">
-            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
@@ -483,7 +483,7 @@ layout: default
                 {% endif %}
               </span>
             </p>
-            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
               aria-controls="maintenanceContact" class="d-block d-md-none controls">
               {% if page.publiccode.maintenance.contacts.size == 1 %}
               {{ t.software.technical_contact }}
@@ -641,7 +641,7 @@ layout: default
             </div>
           </div>
           <div class="main row">
-            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
               aria-controls="mainOthersInfo" class="d-block d-md-none controls">
               {{ t.software.others_info }}
               <span class="or it-expand"></span>
@@ -667,7 +667,7 @@ layout: default
                   {% endfor %}
                 </p>
                 <p>
-                  <a data-toggle="collapse" href="#otherLanguage"
+                  <a data-bs-toggle="collapse" href="#otherLanguage"
                     role="button" aria-expanded="false"
                     class="count" aria-controls="otherLanguage">
                     {{ t.langs.show_all }}
