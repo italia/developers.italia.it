@@ -26,11 +26,11 @@ layout: default
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://www.interop.pagopa.it">Piattaforma Digitale Nazionale Dati (PDND)<svg
                             class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
                 <p><a href="https://www.agid.gov.it/it/dati/basi-dati-interesse-nazionale">Basi Dati di Interesse
                         Nazionale <br> (BDIN)<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
@@ -42,11 +42,11 @@ layout: default
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/">Introduzione
                         alla semantica dei dati<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
                 <p><a href="https://developers.italia.it/it/pdnd">Risorse</a></p>
                 <p><a href="https://schema.gov.it">Schema<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
@@ -58,11 +58,11 @@ layout: default
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://italia.github.io/api-oas-checker/">API OAS checker<svg
                             class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
                 <p><a href="https://github.com/italia/api-oas-checker-rules">Regole per il controllo automatico di
                         specifiche OpenAPI<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
@@ -74,7 +74,7 @@ layout: default
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://www.interop.pagopa.it/catalogo">Catalogo API<svg
                             class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/sprite.svg#it-external-link"></use>
+                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
                         </svg></a></p>
             </div>
         </div>
@@ -99,7 +99,76 @@ layout: default
                     supportare lo sviluppo di API semanticamente e sintatticamente interoperabili.</p><a
                     href="https://schema.gov.it" class="btn btn-white btn-outline-primary mb-4">Scopri di più</a>
             </div>
-            <div class="col-md-6 mt-4"><img width="100%" src="/assets/graph.svg" alt=""></div>
+            <div class="col-md-6 mt-4"><img width="100%" src="https://next.developers.italia.it/assets/graph.svg" alt=""></div>
+        </div>
+    </div>
+</section>
+<section class="background-color-1 pb-5">
+    <div class="container mt-5 pt-5">
+        <h3 class="mb-5">I vantaggi</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-2"><img src="https://next.developers.italia.it/assets/smile.svg" alt="" class="img-fluid"></div>
+                    <div class="col-8">
+                        <h4>Persone fisiche e imprese</h4>
+                        <p>Semplificazione dei servizi offerti a persone fisiche e imprese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-2"><img src="https://next.developers.italia.it/assets/building.svg" alt="" class="img-fluid"></div>
+                    <div class="col-8">
+                        <h4>Ente</h4>
+                        <p>Facilitazione e sicurezza dello scambio dati tramite la standardizzazione del processo per enti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-2"><img src="https://next.developers.italia.it/assets/developer.svg" alt="" class="img-fluid"></div>
+                    <div class="col-8">
+                        <h4>Developer</h4>
+                        <p>Integrazione degli e-service attraverso gli standard offerti dalla Piattaforma Digitale Nazionale Dati (PDND)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-2"><img src="https://next.developers.italia.it/assets/happy-privacy.svg" alt="" class="img-fluid"></div>
+                    <div class="col-8">
+                        <h4>Responsabile per la protezione dei dati (RPD)</h4>
+                        <p>Standardizzazione del processo per tutti coloro che aderiscono e riutilizzo di quanto messo a disposizione dagli altri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container pb-5 mb-2">
+    <div class="row">
+        <div class="col-12 col-md-6 pr-5 mt-5 pt-3">
+            <h3>Linee guida modello interoperabilità (ModI)</h3>
+            <p>Individuano le tecnologie e gli standard che le Pubbliche Amministrazioni devono considerare durante la realizzazione dei propri sistemi informatici, al fine di permettere l’interoperabilità.</p>
+            <a href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
+                Consulta le linee guida
+                <svg class="icon icon-sm align-top external-link-icon">
+                    <use href="/assets/svg/sprites.svg#it-external-link"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 mt-5 pt-3">
+            <h3>Esempi di API</h3>
+            <p>Una selezione di API REST italiane a disposizione di chi sviluppa software.</p>
+            <a href="https://developers.italia.it/it/api">
+                Consulta gli esempi di API
+                <svg class="icon icon-sm align-top external-link-icon">
+                    <use href="/assets/svg/sprites.svg#it-external-link"></use>
+                </svg>
+            </a>
         </div>
     </div>
 </section>
