@@ -1,48 +1,8 @@
 import React, { useContext } from 'react';
 import { Button, Icon } from 'design-react-kit';
-import { createUseStyles } from 'react-jss';
 import { ALL_SITE, SOFTWARE_REUSE, SOFTWARE_OPEN, PLATFORM, ADMINISTRATION, API } from '../../utils/constants.js';
 import { searchContextDispatch, searchContextState, setType } from '../../contexts/searchContext.js';
 import { l10NLabels } from '../../utils/l10n.js';
-
-const useStyles = createUseStyles({
-  icon: {
-    marginRight: '8px',
-    minWidth: '32px',
-    minHeight: '32px',
-  },
-  baseButton: {
-    textTransform: 'capitalize',
-    justifyContent: 'center',
-    padding: '8px 24px',
-    width: '100%',
-  },
-  buttonInactiveType: {
-    composes: 'btn-outline-primary btn-icon btn-me',
-    extend: 'baseButton',
-    '& span': {
-      composes: 'icon-primary',
-      extend: 'icon',
-    },
-    '& svg': {
-      extend: 'icon',
-      fill: '#var(--bs-primary)',
-    },
-  },
-  buttonActiveType: {
-    composes: 'btn-primary btn-icon btn-me',
-    extend: 'baseButton',
-    '& span': {
-      extend: 'icon',
-      filter: 'invert(100%) brightness(200%)',
-    },
-    '& svg': {
-      composes: 'icon-primary',
-      extend: 'icon',
-      fill: 'var(--bs-white)',
-    },
-  },
-});
 
 const buttons = [
   {
@@ -84,7 +44,6 @@ const buttons = [
 ];
 
 export const SearchType = React.memo(() => {
-  const classes = useStyles();
   const { type } = useContext(searchContextState);
   const dispatch = useContext(searchContextDispatch);
 
@@ -93,16 +52,17 @@ export const SearchType = React.memo(() => {
       {buttons.map((b) => (
         <div key={b.dataTestid} className="d-block d-md-inline-block m-1">
           <Button
-            className={type === b.type ? classes.buttonActiveType : classes.buttonInactiveType}
-            color="default"
-            icon={true}
-            tag="button"
+            className="me-2"
+            color='primary'
+            outline={type !== b.type}
+            icon
+            size="lg"
             onClick={() => {
               dispatch(setType(b.type));
             }}
             data-testid={b.dataTestid}
           >
-            <Icon icon={b.icon} /> {b.label}
+            <Icon icon={b.icon} color={type === b.type ? 'white' : 'primary'}/> <span>{b.label.toUpperCase()}</span>
           </Button>
         </div>
       ))}

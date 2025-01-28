@@ -33,7 +33,7 @@ export const SearchModal = ({ onClose }) => {
       data-testid="search-modal"
       autoFocus={false}
     >
-      <ModalHeader id='esempio1' toggle={onClose}>
+      <ModalHeader id='esempio1' toggle={onClose} className={'mx-md-5'}>
         <div className="row px-1 px-md-2">
           <h1>{l10NLabels['search_form_label']}</h1>
         </div>      
