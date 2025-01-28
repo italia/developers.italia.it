@@ -18,29 +18,28 @@ const useStyles = createUseStyles({
     width: '100%',
   },
   buttonInactiveType: {
-    composes: 'btn-default',
+    composes: 'btn-outline-primary btn-icon btn-me',
     extend: 'baseButton',
-    background: 'var(--white)',
-    border: '1px solid #656566',
-    color: '#656566',
     '& span': {
+      composes: 'icon-primary',
       extend: 'icon',
     },
     '& svg': {
       extend: 'icon',
-      fill: '#656566',
+      fill: '#var(--bs-primary)',
     },
   },
   buttonActiveType: {
-    composes: 'btn-primary',
+    composes: 'btn-primary btn-icon btn-me',
     extend: 'baseButton',
     '& span': {
       extend: 'icon',
       filter: 'invert(100%) brightness(200%)',
     },
     '& svg': {
+      composes: 'icon-primary',
       extend: 'icon',
-      fill: 'var(--white)',
+      fill: 'var(--bs-white)',
     },
   },
 });
