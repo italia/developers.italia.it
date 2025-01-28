@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { Modal, ModalBody } from 'design-react-kit';
+import { Modal, ModalBody, ModalHeader } from 'design-react-kit';
 import { createUseStyles } from 'react-jss';
 import { useSearchEngine } from '../../hooks/useSearchEngine.js';
 import { l10NLabels, lang } from '../../utils/l10n.js';
@@ -14,12 +14,7 @@ const useStyles = createUseStyles({
   modalFullScreen: {
     minWidth: '100% !important',
     margin: '0 !important',
-  },
-  closeButton: {
-    composes: 'close',
-    fontSize: '3rem',
-    marginLeft: 'auto',
-  },
+  }
 });
 
 export const SearchModal = ({ onClose }) => {
@@ -35,18 +30,16 @@ export const SearchModal = ({ onClose }) => {
       className={classes.modalFullScreen}
       isOpen={true}
       role="dialog"
-      toggle={onClose}
       data-testid="search-modal"
       autoFocus={false}
     >
+      <ModalHeader id='esempio1' toggle={onClose}>
+        <div className="row px-1 px-md-2">
+          <h1>{l10NLabels['search_form_label']}</h1>
+        </div>      
+      </ModalHeader>
       <ModalBody className="mt-3" tag="div">
         <div className="container">
-          <div className="row px-1 px-md-2">
-            <h1>{l10NLabels['search_form_label']}</h1>
-            <button className={classes.closeButton} onClick={onClose} data-testid="close-search-modal">
-              ×
-            </button>
-          </div>
           <div className="mb-5">
             <SearchBar onChange={handleSearch} placeholder={l10NLabels.search_form_placeholder} />
           </div>
