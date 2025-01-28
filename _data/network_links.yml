@@ -5,7 +5,7 @@ trasformazione_digitale:
 developers:
   title: header_link_developers
   url: 'https://developers.italia.it/'
-  class: current
+  class: active
 design:
   title: header_link_design
   url: 'https://designers.italia.it'
