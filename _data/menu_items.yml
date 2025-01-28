@@ -11,7 +11,7 @@ it:
       - 'riuso'
   - title: Interoperabilità
     url: '/it/interoperabilita'
-    active_by_firstlevel: 'api'
+    active_by_firstlevel: 'interoperabilita'
   - title: Come lo uso
     url: '/it/come-lo-uso'
     active_by_firstlevel: 'come-lo-uso'
