@@ -223,7 +223,7 @@ autenticazione resi disponibili da PDND.
 
 ## Canali
 
-<a class="btn btn-primary" href="https://github.com/anticorruzione/npa/issues" target="_blank" ><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg>
+<a class="btn btn-primary" href="https://github.com/anticorruzione/npa/issues" target="_blank" ><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprites.svg#it-github"></use></svg>
   Vai alle issue
 </a>
 
