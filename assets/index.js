@@ -1,6 +1,7 @@
 // This is Webpack's entrypoint.
 
 import { BackToTop, Dropdown, Tab, Collapse } from 'bootstrap-italia';
+import { createRoot } from 'react-dom/client';
 
 import './js/logos';
 import './js/main';
@@ -38,7 +39,7 @@ for (const element of collapseElements) {
 
 // Init React components
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
