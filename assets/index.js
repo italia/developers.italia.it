@@ -1,7 +1,6 @@
 // This is Webpack's entrypoint.
 
 import { BackToTop, Dropdown, Tab, Collapse } from 'bootstrap-italia';
-import { createRoot } from 'react-dom/client';
 
 import './js/logos';
 import './js/main';
@@ -15,7 +14,8 @@ import './js/swagger-custom';
 import './scss/main.scss';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import { NotificationManager } from 'design-react-kit';
 import { App } from './js/App.js';
 
 // Init Bootstrap Italia JS
@@ -42,6 +42,7 @@ for (const element of collapseElements) {
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NotificationManager></NotificationManager>
     <App />
   </React.StrictMode>
 );
