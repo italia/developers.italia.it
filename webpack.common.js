@@ -3,6 +3,8 @@ const webpack = require("webpack");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const DisableTreeShakingForChunk = require('disable-tree-shaking-for-chunk-plugin')
+
 
 module.exports = {
   // mode: 'none',
@@ -26,6 +28,9 @@ module.exports = {
     },
   },
   plugins: [
+    new DisableTreeShakingForChunk({
+      test: 'bootstrap-italia'
+    }),
     // Provide global symbols for legacy plugins.
     new webpack.ProvidePlugin({
       // process is needed by util
