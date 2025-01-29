@@ -67,7 +67,6 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
       notify(t('buttonText'), t('errorText'), {
         dismissable: true,
         state: 'error',
-        duration: 60000,
         style: { zIndex: 5 },
       });
 
@@ -78,7 +77,6 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
     notify(t('buttonText'), t('successText'), {
       dismissable: true,
       state: 'success',
-      duration: 60000,
       style: { zIndex: 5 },
     });
   };
