@@ -14,7 +14,7 @@ const useStyles = createUseStyles({
   modalFullScreen: {
     minWidth: '100% !important',
     margin: '0 !important',
-  }
+  },
 });
 
 export const SearchModal = ({ onClose }) => {
@@ -26,17 +26,11 @@ export const SearchModal = ({ onClose }) => {
   const handleSearch = useCallback((value) => dispatch(setSearchValue(value)), [dispatch]);
 
   return (
-    <Modal
-      className={classes.modalFullScreen}
-      isOpen={true}
-      role="dialog"
-      data-testid="search-modal"
-      autoFocus={false}
-    >
-      <ModalHeader id='esempio1' toggle={onClose} className={'mx-md-5'}>
+    <Modal className={classes.modalFullScreen} isOpen={true} role="dialog" data-testid="search-modal" autoFocus={false}>
+      <ModalHeader id="esempio1" toggle={onClose} className={'mx-md-5'}>
         <div className="row px-1 px-md-2">
           <h1>{l10NLabels['search_form_label']}</h1>
-        </div>      
+        </div>
       </ModalHeader>
       <ModalBody className="mt-3" tag="div">
         <div className="container">
