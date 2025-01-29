@@ -166,25 +166,13 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
         <form onSubmit={onSubmit}>
           <div className="form-group">
             <div className="input-group">
-              <label htmlFor="email">
-                {t('placeholder')}
-              </label>
-              <input
-                type="email"
-                required
-                id="newsletter"
-                name="email"
-                className="form-control"
-              />
+              <label htmlFor="email">{t('placeholder')}</label>
+              <input type="email" required id="newsletter" name="email" className="form-control" />
               {Object.entries(queryArgs).map(([argName, argValue], i) => (
                 <input type="hidden" name={argName} value={argValue} key={i} />
               ))}
               <div className="input-group-append">
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  disabled={state === StateClass.LOADING}
-                >
+                <button type="submit" className="btn btn-primary" disabled={state === StateClass.LOADING}>
                   {state === StateClass.LOADING ? (
                     <>
                       <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />

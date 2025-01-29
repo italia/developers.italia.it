@@ -43,6 +43,7 @@
         "get-publishers": "node scripts/get-publishers.js",
         "build": "webpack --config webpack.prod.js",
         "lint": "eslint _site/ --ext .json && eslint assets/ --ext .js",
+        "lint:fix": "eslint _site/ --ext .json --fix && eslint assets/ --ext .js --fix",
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site",
         "test": "jest"
     },

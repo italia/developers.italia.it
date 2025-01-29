@@ -53,7 +53,7 @@ export const SearchType = React.memo(() => {
         <div key={b.dataTestid} className="d-block d-md-inline-block m-1">
           <Button
             className="me-2"
-            color='primary'
+            color="primary"
             outline={type !== b.type}
             icon
             size="lg"
@@ -62,7 +62,7 @@ export const SearchType = React.memo(() => {
             }}
             data-testid={b.dataTestid}
           >
-            <Icon icon={b.icon} color={type === b.type ? 'white' : 'primary'}/> <span>{b.label.toUpperCase()}</span>
+            <Icon icon={b.icon} color={type === b.type ? 'white' : 'primary'} /> <span>{b.label.toUpperCase()}</span>
           </Button>
         </div>
       ))}
