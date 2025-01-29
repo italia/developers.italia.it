@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { search } from '../../services/searchEngine.js';
 import { ALL_CATALOGUE } from '../../utils/constants.js';
 import { CatalogueItem } from './CatalogueItem.js';
