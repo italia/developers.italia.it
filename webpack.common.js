@@ -28,9 +28,6 @@ module.exports = {
     },
   },
   plugins: [
-    new DisableTreeShakingForChunk({
-      test: 'bootstrap-italia'
-    }),
     // Provide global symbols for legacy plugins.
     new webpack.ProvidePlugin({
       // process is needed by util
@@ -67,6 +64,9 @@ module.exports = {
     // Generate an output CSS file instead of using style injection with Javascript,
     // to minimize the chance of FOUC.
     new MiniCssExtractPlugin(),
+    new DisableTreeShakingForChunk({
+      test: 'bootstrap-italia'
+    }),
   ],
 
   module: {
