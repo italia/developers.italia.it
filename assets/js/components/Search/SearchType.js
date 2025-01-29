@@ -62,7 +62,8 @@ export const SearchType = React.memo(() => {
             }}
             data-testid={b.dataTestid}
           >
-            <Icon icon={b.icon} color={type === b.type ? 'white' : 'primary'} /> <span>{b.label ? b.label.toUpperCase() : ''}</span>
+            <Icon icon={b.icon} color={type === b.type ? 'white' : 'primary'} />{' '}
+            <span>{b.label ? b.label.toUpperCase() : ''}</span>
           </Button>
         </div>
       ))}
