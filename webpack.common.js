@@ -3,7 +3,6 @@ const webpack = require("webpack");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const DisableTreeShakingForChunk = require('disable-tree-shaking-for-chunk-plugin')
 
 
 module.exports = {
@@ -63,10 +62,7 @@ module.exports = {
 
     // Generate an output CSS file instead of using style injection with Javascript,
     // to minimize the chance of FOUC.
-    new MiniCssExtractPlugin(),
-    new DisableTreeShakingForChunk({
-      test: 'bootstrap-italia'
-    }),
+    new MiniCssExtractPlugin()
   ],
 
   module: {
