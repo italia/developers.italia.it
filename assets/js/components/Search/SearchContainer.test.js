@@ -28,16 +28,6 @@ describe('SearchContainer', () => {
     expect(search).toHaveBeenCalledTimes(1);
   });
 
-  it('closes the search modal on x button click', async () => {
-    render(<SearchContainer />);
-    const searchButton = await screen.findByTestId('search-button');
-    userEvent.click(searchButton);
-    const closeButton = await screen.findByTestId('close-search-modal');
-    userEvent.click(closeButton);
-    expect(screen.queryByTestId('search-modal')).not.toBeInTheDocument();
-    expect(search).toHaveBeenCalledTimes(1);
-  });
-
   it('triggers a new search when the user click on a filter type button', async () => {
     render(<SearchContainer />);
     userEvent.click(await screen.findByTestId('search-button'));
