@@ -20,7 +20,29 @@
             {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug | downcase %}
             {% endif %}
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
-                <article
+                <div class="card-wrapper">
+                    <div class="card card-img no-after">
+                        <div class="img-responsive-wrapper">
+                            <div class="img-responsive">
+                                <figure class="img-wrapper">
+                                    <img src="{{item.img | default: item.logo | default:'https://placehold.it/272x176'}}"
+                                        title="titolo immagine" alt="descrizione immagine">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title h5 "><a title="{{item.title}}" href="{{itemUrl}}"
+                                class="color-inherit">{{item.title}}</a></h3>
+                            <a class="read-more" href="#">
+                                <span class="text">{{t.software.read_more}}</span>
+                                <svg class="icon">
+                                    <use href="/assets/svg/sprites.svg#it-arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <article
                     class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
                     {% if withimages==true %}
                     <a title="{{item.title}}" href="{{itemUrl}}"
@@ -38,7 +60,7 @@
                     {% endif %}
                     <a title="{{item.title}}" class="home-listing-item__url"
                         href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
-                </article>
+                </article> -->
             </div>
             {% endfor %}
         </div>
