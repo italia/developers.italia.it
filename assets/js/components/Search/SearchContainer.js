@@ -26,9 +26,20 @@ export const SearchContainer = () => {
   return (
     <>
       <div onClick={openModal} className="d-flex align-items-center pe-2" role="button" data-testid="search-button">
-        <span className="text-white me-3 d-none d-lg-inline">{l10NLabels.search_form_label}</span>
-        <Icon className={classes.icon} icon="it-search" color="primary"></Icon>
-        <Icon className="d-inline d-lg-none" icon="it-search" color="light"></Icon>
+        <Icon
+          className={classes.icon}
+          icon="it-search"
+          size="lg"
+          color="primary"
+          title={l10NLabels.search_form_label}
+        ></Icon>
+        <Icon
+          className="d-inline d-lg-none"
+          icon="it-search"
+          size="lg"
+          color="light"
+          title={l10NLabels.search_form_label}
+        ></Icon>
       </div>
       {isModalOpen && (
         <SearchProvider initialType={ALL_SITE}>

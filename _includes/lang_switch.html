@@ -8,16 +8,16 @@
       <use xlink:href="/assets/svg/sprites.svg#it-expand"></use>
     </svg>
   </a>
-  <div class="dropdown-menu p-0">
+  <div class="dropdown-menu">
     <div class="row">
       <div class="col-12">
         <div class="link-list-wrapper">
           <ul id="languages" class="link-list" aria-labelledby="languagesDropButton" >
               {% for lang in site.data.l10n %}
-              <li class="dropdown-item list-item {% if lang[0]==active_lang %}active{%endif%}">
+              <li>
                 <!-- pages generated with page_gen plugins  -->
                 {% if page.url contains "/software/" or  page.url contains "/api/" or  page.url contains "/pa/" %}
-                <a href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                <a  class="dropdown-item list-item {% if lang[0]==active_lang %}active{%endif%}" href="{{ page.url | replace_first: active_lang, lang.first }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
                 {% elsif page.ref %}
 
                 <!-- take ref from page when lang is not actual
@@ -29,9 +29,9 @@
                 {% assign newUrl = page.url %}
                 {% endif %}
 
-                <a href="{{ newUrl }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                <a  class="dropdown-item list-item {% if lang[0]==active_lang %}active{%endif%}" href="{{ newUrl }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
                 {% else %}
-                <a href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
+                <a  class="dropdown-item list-item {% if lang[0]==active_lang %}active{%endif%}" href="{{ '/' | append: lang[0] | relative_url }}"><span lang="{{ lang[0] }}">{{ lang[1].name }}</span>
                 {%endif%}
                 </a>
               </li>

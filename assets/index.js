@@ -1,6 +1,6 @@
 // This is Webpack's entrypoint.
 
-import { BackToTop, Dropdown, Tab, Collapse } from 'bootstrap-italia';
+import { BackToTop, Dropdown, Tab, Collapse, HeaderSticky } from 'bootstrap-italia';
 
 import './js/logos';
 import './js/main';
@@ -21,6 +21,7 @@ import { App } from './js/App.js';
 // Init Bootstrap Italia JS
 
 BackToTop.getOrCreateInstance(document.getElementsByClassName('back-to-top')[0]);
+HeaderSticky.getOrCreateInstance(document.querySelector("[data-bs-toggle='sticky']"));
 
 const dropdownElements = document.querySelectorAll("[data-bs-toggle='dropdown']");
 for (const element of dropdownElements) {

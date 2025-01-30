@@ -429,42 +429,6 @@ body {
     }
 }
 
-#languages {
-    background-color: #fff;
-    padding: 0.5rem;
-    margin: 0;
-    border-radius: 0.2rem;
-    -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.35);
-    z-index: 100;
-    li {
-        padding: 0.5rem;
-        border-bottom: 1px solid $gray-100;
-        a {
-            color: $link-color;
-            text-transform: capitalize;
-            font-weight: 400;
-        }
-        &.active a {
-            font-weight: 800;
-        }
-    }
-    li:last-child {
-        border-bottom: none;
-    }
-    @include media-breakpoint-down(md) {
-        position: fixed !important;
-        z-index: 1001 !important;
-        top: calc(50% - 80px) !important;
-        left: calc(50% - 80px) !important;
-        transform: none !important;
-        &:before {
-            display: none;
-        }
-    }
-}
-
 .Linklist {
     &--padded-top {
         padding-top: 0.4rem;
