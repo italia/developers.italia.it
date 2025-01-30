@@ -117,13 +117,13 @@ layout: default
                 {% endif %}
               >
                 <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-left"></use></svg>
-                <span class="sr-only">{{ t.paginator_previous_page }}</span>
+                <span class="visually-hidden">{{ t.paginator_previous_page }}</span>
               </a>
             </li>
             <li class="page-item"><span class="page-link">{{ paginator.page }}</span></li>
             <li class="page-item"><span class="page-link">/</span></li>
             <li class="page-item"><span class="page-link">{{ paginator.total_pages }}</span></li>
-            <li class="page-item sr-only">
+            <li class="page-item visually-hidden">
               <a class="page-link" href="#" aria-current="page">{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</a>
             </li>
             <li
@@ -138,7 +138,7 @@ layout: default
                   tabindex="-1" aria-hidden="true"
                 {% endif %}
               >
-                <span class="sr-only">{{ t.paginator_next_page }}</span>
+                <span class="visually-hidden">{{ t.paginator_next_page }}</span>
                 <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-right"></use></svg>
               </a>
             </li>

@@ -115,7 +115,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
                     {state === StateClass.LOADING ? (
                       <>
                         <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
-                        <span className="sr-only">{t('loading')}</span>
+                        <span className="visually-hidden">{t('loading')}</span>
                       </>
                     ) : (
                       t('buttonText')
@@ -179,7 +179,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
                 {state === StateClass.LOADING ? (
                   <>
                     <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
-                    <span className="sr-only">{t('loading')}</span>
+                    <span className="visually-hidden">{t('loading')}</span>
                   </>
                 ) : (
                   t('buttonText')
