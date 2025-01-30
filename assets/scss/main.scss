@@ -2260,3 +2260,18 @@ body {
      text-align: center;
      width: 1.6em;
 }
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.card a.read-more {
+    bottom: 12px;
+}
+
+.card-wrapper {
+    min-height: 400px;
+}
