@@ -1,29 +1,22 @@
 {% assign network_links = site.data.network_links %}
 
-<header class="primary-bg">
+<header class="it-header-wrapper it-header-sticky shadow" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
   <div class="it-header-slim-wrapper">
     <div class="container-xxl">
       <div class="row">
         <div class="col-12">
           <div class="it-header-slim-wrapper-content">
-            <div class="navbar-brand d-none d-lg-block"><span><a target="_blank" class="me-2"
-                  href="{{ site.owner_link }}" rel="noreferrer">{{ site.owner_full }}</a>+<a target="_blank"
-                  class="ms-2" href="{{ site.partner_link }}t" rel="noreferrer">{{ site.partner_short }}</a></span>
+            <div class="navbar-brand d-none d-lg-block">
+              <a target="_blank" href="{{ site.owner_link }}" rel="noreferrer">{{ site.owner_full }}</a> + <a target="_blank" href="{{ site.partner_link }}t"
+                rel="noreferrer">{{ site.partner_short }}</a>
             </div>
             <div class="nav-mobile">
               <nav aria-label="Navigazione secondaria">
-                <div class="d-flex align-items-center">
-                  <div class="navbar-brand d-lg-none"><span><a target="_blank" class="p-2" href="{{ site.owner_link }}"
-                        rel="noreferrer">{{ site.owner_short }}</a> <!-- -->+<!-- -->
-                      <a target="_blank" class="p-2" href="{{ site.partner_link }}" rel="noreferrer">{{
-                        site.partner_short }}</a></span></div><a class="it-opener d-lg-none p-2 collapsed" href="#menuC2" data-bs-toggle="collapse"
-                    role="button" aria-expanded="false" aria-controls="menuC2" data-focus-mouse="false"><span
-                      class="visually-hidden">Apri/chiudi menu
-                      secondario</span><svg role="img" class="icon">
-                      <use href="/assets/svg/sprites.svg#it-expand"></use>
-                    </svg></a>
-                </div>
-                <div class="link-list-wrapper collapse" id="menuC2">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>{{ site.owner_short }} + {{ site.partner_short }}</span>
+                  <svg class="icon" aria-hidden="true"><use href="/assets/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC1">
                   {% include network-links-menu.html class='link-list' %}
                 </div>
               </nav>
@@ -43,27 +36,94 @@
         <div class="row">
           <div class="col-12">
             <div class="it-header-center-content-wrapper">
-              <div class="it-brand-wrapper"><a href="{{ '/' | relative_url }}"><img
-                    src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="" class="icon">
+              <div class="it-brand-wrapper">
+                <a href="{{ '/' | relative_url }}">
+                  <svg class="icon icon-white" aria-hidden="true">
+                    <use href="/assets/svg/sprites.svg#it-designers-italia"></use>
+                  </svg>
+                  <!-- <img
+                    src="{{ site.logo | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt=""
+                    class="icon"> -->
                   <div class="it-brand-text">
                     <div class="it-brand-title">{{ t.site_title | default: site.title | escape }}</div>
-                    <span class="d-none d-lg-block Header-subtitle">{{ t.site_subtitle | default: site.subtitle | escape }}</span>
+                    <div class="it-brand-tagline d-none d-md-block">
+                      {{ t.site_subtitle | default: site.subtitle | escape}}
+                    </div>
                   </div>
-                </a></div>
+                </a>
+              </div>
               <div class="it-right-zone">
-                <div class="it-socials d-none d-md-flex"><span>{{ t.follow_us | capitalize }}</span>
+                <div class="it-socials d-none d-md-flex">
+                  <span>{{ t.follow_us | capitalize }}</span>
                   {% include social-icons.html social_items=site.data.social %}
                 </div>
                 <div class="it-search-wrapper">
                   <custom-search></custom-search>
-                  <!-- <a aria-current="page" class="search-link rounded-icon"
-                    aria-label="Cerca nel sito" href="/ricerca/"><svg role="img" class="icon">
-                      <use href="/svg/sprites.svg#it-search"></use>
-                    </svg>
-                  </a> -->
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper" id="header-nav-wrapper">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon">
+                  <use href="/assets/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" style="display: none;">
+                <div class="overlay" style="display: none;"></div>
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/assets/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="menu-wrapper">
+                  <ul class="navbar-nav">
+                    {% assign items = include.menu_items[active_lang] %}
+                    {% assign navurl = page.url | remove: 'index.html' %}
+                    {% for item in items %}
+                    {% assign isActive = false %}
+                    {% if item.active_by_layout == page.layout or item.active_by_layout contains page.layout %}
+                    {% assign isActive = true %}
+                    {% elsif item.active_by_firstlevel %}
+                    {% assign pathArray = page.url | split:'/' %}
+                    {% if pathArray.size > 0 %}
+                    {% capture path_1 %}{{ pathArray[1] | remove: '.html' }}{% endcapture %}
+                    {% capture path_2 %}{{ pathArray[2] | remove: '.html' }}{% endcapture %}
+                    {% if item.active_by_firstlevel contains path_1 or path_2 != '' and item.active_by_firstlevel contains path_2 %}
+                    {% assign isActive = true %}
+                    {% endif %}
+                    {% endif %}
+                    {% elsif page.url == item.url %}
+                    {% assign isActive = true %}
+                    {% endif %}
+                    <li class="nav-item {% if isActive%}active{%endif%}">
+                      {% if item.url == "#" or item.url contains '//' %}
+                      {% assign _url = item.url %}
+                      {% else %}
+                      {% assign _url = item.url | relative_url %}
+                      {% endif %}
+                      <a class="nav-link {% if isActive%}active{%endif%}" href="{{ _url }}" aria-current="page">
+                        <span>        {{ item.markup_pre }}
+                          {{ t[item.title] | default: item.title }}
+                          {{ item.markup_post }}</span>
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
