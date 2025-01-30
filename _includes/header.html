@@ -1,6 +1,6 @@
 {% assign network_links = site.data.network_links %}
 
-<header class="it-header-wrapper it-header-sticky shadow" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
+<header class="it-header-wrapper it-header-sticky shadow" data-bs-position-type="fixed" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
   <div class="it-header-slim-wrapper">
     <div class="container-xxl">
       <div class="row">
@@ -87,10 +87,10 @@
                     </svg>
                   </button>
                 </div>
-                <div class="menu-wrapper">
+                {% assign items = include.menu_items[active_lang] %}
+                {% assign navurl = page.url | remove: 'index.html' %}
+                <div class="menu-wrapper justify-content-lg-between">
                   <ul class="navbar-nav">
-                    {% assign items = include.menu_items[active_lang] %}
-                    {% assign navurl = page.url | remove: 'index.html' %}
                     {% for item in items %}
                     {% assign isActive = false %}
                     {% if item.active_by_layout == page.layout or item.active_by_layout contains page.layout %}
