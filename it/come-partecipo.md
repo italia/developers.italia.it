@@ -20,7 +20,7 @@ alternate-blocks:
       buttons:
         - label: Contribuisci
           class: btn btn-primary
-          url: '/it/cosa-fare'
+          url: 'https://github.com/orgs/italia/projects/49'
 
     - title: Esplora e migliora il software delle Pubbliche Amministrazioni
       text: |
