@@ -74,8 +74,8 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
         <span className={classes.category}>{l10NLabels.software[category]}</span>
       </div>
       <CardBody>
-        <CardTitle tag="h6">{name}</CardTitle>
-        <CardText className="line-clamp">{description}</CardText>
+        <CardTitle className="line-clamp-2" tag="h6">{name}</CardTitle>
+        <CardText className="line-clamp-3">{description}</CardText>
         <CardReadMore
           href={url}
           text={l10NLabels.software.read_more}

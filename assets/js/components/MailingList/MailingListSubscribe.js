@@ -5,9 +5,9 @@ import { Input, Button, Icon, notify } from 'design-react-kit';
 const messages = {
   it: {
     header: 'Le nostre iniziative, direttamente nella tua mail',
-    title: 'Lasciaci la tua email e ti aggiorneremo sulle nostre prossime iniziative',
+    title: 'Iscriviti alla mailing list! Lasciaci la tua email e ti aggiorneremo sulle nostre prossime iniziative',
     loading: 'Caricamento...',
-    buttonText: 'Iscriviti alla mailing list',
+    buttonText: 'Iscriviti',
     placeholder: 'indirizzo email',
     errorText: 'Qualcosa è andato storto 😔 Riprova più tardi',
     successText: 'Ti abbiamo mandato un’email, segui il collegamento per confermare la tua iscrizione',
@@ -15,9 +15,9 @@ const messages = {
   },
   en: {
     header: 'Our initiatives, right in your email',
-    title: 'Leave us your email address and we’ll keep you posted',
+    title: 'Subscribe to the mailing list! Leave us your email address and we’ll keep you posted',
     loading: 'Loading...',
-    buttonText: 'Subscribe to the mailing list',
+    buttonText: 'Subscribe',
     placeholder: 'email address',
     errorText: 'Something went wrong 😔 Please try again later',
     successText: 'We sent you an email, follow the link to confirm your subscription',
