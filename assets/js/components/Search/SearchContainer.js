@@ -36,7 +36,6 @@ export const SearchContainer = () => {
         <Icon
           className="d-inline d-lg-none"
           icon="it-search"
-          size="lg"
           color="light"
           title={l10NLabels.search_form_label}
         ></Icon>
