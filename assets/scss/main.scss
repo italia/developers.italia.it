@@ -2261,7 +2261,14 @@ body {
      width: 1.6em;
 }
 
-.line-clamp {
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
@@ -2270,10 +2277,6 @@ body {
 
 .card a.read-more {
     bottom: 12px;
-}
-
-.card-wrapper {
-    min-height: 400px;
 }
 
 .background-color-1 {
