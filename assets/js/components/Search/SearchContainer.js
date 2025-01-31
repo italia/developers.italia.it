@@ -33,12 +33,7 @@ export const SearchContainer = () => {
           color="primary"
           title={l10NLabels.search_form_label}
         ></Icon>
-        <Icon
-          className="d-inline d-lg-none"
-          icon="it-search"
-          color="light"
-          title={l10NLabels.search_form_label}
-        ></Icon>
+        <Icon className="d-inline d-lg-none" icon="it-search" color="light" title={l10NLabels.search_form_label}></Icon>
       </div>
       {isModalOpen && (
         <SearchProvider initialType={ALL_SITE}>

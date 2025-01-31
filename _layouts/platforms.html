@@ -22,12 +22,20 @@ lang: it
         <div class="row row-eq-height">
           {% for platform in platforms %}
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3">
-            <div class="card-wrapper shadow">
+            <catalogue-item
+              class="h-100 d-flex"
+              name="{{ platform.title }}"
+              description="{{ platform.subtitle | escape }}"
+              url="{{ platform.url }}"
+              logo="{{ platform.logo | relative_url | default:'/assets/images/cover_softwareriuso.png' }}"
+              fallback="/assets/images/cover_softwareriuso.png"
+            ></catalogue-item>
+            <!-- <div class="card-wrapper shadow">
               <div class="card card-img no-after">
                   <div class="img-responsive-wrapper">
                       <div class="img-responsive">
                           <figure class="img-wrapper">
-                              <img src="{{platform.logo | relative_url | default: item.logo | default:'https://placehold.it/272x176'}}"
+                              <img src="{{platform.logo | relative_url | default:'/assets/images/cover_softwareriuso.png'}}"
                                   title="{{platform.title}} logo" alt="{{platform.title}} logo">
                           </figure>
                       </div>
@@ -44,7 +52,7 @@ lang: it
                       </a>
                   </div>
               </div>
-            </div>
+            </div> -->
           </div>
           {% endfor %}
         </div>
