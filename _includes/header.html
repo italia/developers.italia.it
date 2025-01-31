@@ -87,11 +87,17 @@
                     </svg>
                   </button>
                 </div>
-                {% assign items = include.menu_items[active_lang] %}
+                {% assign menu_items = include.menu_items[active_lang] %}
                 {% assign navurl = page.url | remove: 'index.html' %}
+                {% assign group_left = menu_items | slice: 0, 3 %}
+                {% assign group_right = menu_items | slice: 3, 6 %}
+                {% assign groups = "" | split: ',' %}
+                {% assign groups = groups | push: group_left %}
+                {% assign groups = groups | push: group_right  %}
                 <div class="menu-wrapper justify-content-lg-between">
+                  {% for group in groups %}
                   <ul class="navbar-nav">
-                    {% for item in items %}
+                    {% for item in group %}
                     {% assign isActive = false %}
                     {% if item.active_by_layout == page.layout or item.active_by_layout contains page.layout %}
                     {% assign isActive = true %}
@@ -121,6 +127,7 @@
                     </li>
                     {% endfor %}
                   </ul>
+                  {% endfor %}
                 </div>
               </div>
             </nav>
