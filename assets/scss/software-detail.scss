@@ -1,10 +1,10 @@
-@use 'bootstrap';
+
 
 .page-software-detail {
     margin-top: 5rem;
 
     .intro {
-        @include bootstrap.media-breakpoint-down(sm) {
+        @include media-breakpoint-down(sm) {
             padding-left: 1em;
         }
     }
@@ -57,13 +57,13 @@
             }
         }
 
-        @include bootstrap.media-breakpoint-down(sm) {
+        @include media-breakpoint-down(sm) {
             margin-bottom: 3em;
         }
     }
 
     .drops-details {
-        @include bootstrap.media-breakpoint-up(sm) {
+        @include media-breakpoint-up(sm) {
             border-left: 0.5em solid #e8f1fa;
             padding-left: 2em;
             margin-top: 2em;
@@ -184,14 +184,14 @@ hr {
             letter-spacing: 1.11px;
             line-height: 20px;
 
-            @include bootstrap.media-breakpoint-down(sm) {
+            @include media-breakpoint-down(sm) {
                 border-left: 6px solid $primary;
                 padding-left: 1em;
                 margin-left: 6px;
             }
         }
 
-        @include bootstrap.media-breakpoint-down(sm) {
+        @include media-breakpoint-down(sm) {
             margin-left: -12px;
             margin-right: -12px;
         }
@@ -220,13 +220,13 @@ hr {
             }
         }
 
-        @include bootstrap.media-breakpoint-up(sm) {
+        @include media-breakpoint-up(sm) {
             border-left: 0.2em solid #e8f1fa;
             padding-left: 2em;
             margin-top: 2em;
         }
 
-        @include bootstrap.media-breakpoint-down(sm) {
+        @include media-breakpoint-down(sm) {
             padding-left: 2em;
         }
     }
@@ -243,19 +243,19 @@ hr {
             background-color: #8ebeed;
             min-height: 350px;
 
-            @include bootstrap.media-breakpoint-up(sm) {
+            @include media-breakpoint-up(sm) {
                 min-height: 500px;
             }
 
-            @include bootstrap.media-breakpoint-up(md) {
+            @include media-breakpoint-up(md) {
                 min-height: 350px;
             }
 
-            @include bootstrap.media-breakpoint-up(lg) {
+            @include media-breakpoint-up(lg) {
                 min-height: 500px;
             }
 
-            @include bootstrap.media-breakpoint-up(xl) {
+            @include media-breakpoint-up(xl) {
                 min-height: 700px;
             }
         }
@@ -296,7 +296,7 @@ hr {
         }
     }
 
-    @include bootstrap.media-breakpoint-down(sm) {
+    @include media-breakpoint-down(sm) {
         padding-left: 2em;
     }
 }
@@ -340,7 +340,7 @@ hr {
         }
     }
 
-    @include bootstrap.media-breakpoint-down(sm) {
+    @include media-breakpoint-down(sm) {
         padding-left: 2em;
     }
 }
@@ -413,7 +413,7 @@ hr {
         #ffffff 100%);
 
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    @include bootstrap.media-breakpoint-down(md) {
+    @include media-breakpoint-down(md) {
         background: -moz-linear-gradient(top,
             #1e5799 10%,
             #ffffff 10%,
@@ -445,13 +445,13 @@ hr {
                 border-top: 110px solid #1e5799;
                 border-left: 110px solid #eee;
 
-                @include bootstrap.media-breakpoint-down(md) {
+                @include media-breakpoint-down(md) {
                     border-top: 50px solid #1e5799;
                     border-left: 50px solid #eee;
                 }
             }
 
-            @include bootstrap.media-breakpoint-down(md) {
+            @include media-breakpoint-down(md) {
                 padding-top: 50px;
             }
         }
@@ -532,7 +532,7 @@ hr {
     }
 
     #maintenanceContact {
-        @include bootstrap.media-breakpoint-up(md) {
+        @include media-breakpoint-up(md) {
             &.collapse {
                 &.dont-collapse-md {
                     display: block;
@@ -586,7 +586,7 @@ hr {
         }
 
         #mainOthersInfo {
-            @include bootstrap.media-breakpoint-up(md) {
+            @include media-breakpoint-up(md) {
                 &.collapse {
                     &.dont-collapse-md {
                         display: block;
@@ -636,7 +636,7 @@ hr {
         }
 
         .page-detail {
-            @include bootstrap.media-breakpoint-down(md) {
+            @include media-breakpoint-down(md) {
                 border-top: 1px solid #dee2e6;
                 padding-top: 2em;
             }
@@ -646,7 +646,7 @@ hr {
             }
         }
 
-        @include bootstrap.media-breakpoint-down(md) {
+        @include media-breakpoint-down(md) {
             padding-top: 2em;
         }
     }

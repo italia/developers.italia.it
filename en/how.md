@@ -40,7 +40,7 @@ alternate-blocks:
       buttons:
         - label: Discover the Interoperability ecosystem
           class: btn btn-primary
-          url: 'https://next.developers.italia.it/it/interoperabilita'
+          url: '/it/interoperabilita'
     - title: "I want to publish my Administration software as open source"
       text: "All the administrations are required by law to release inside
       Developers Italia the software they commissioned. The

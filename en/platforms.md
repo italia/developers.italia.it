@@ -18,6 +18,6 @@ which administer the platforms but they are maintained by the Developers Italia
 community: everyone can participate in the construction of a wealth of common
 resources (SDK, documentation, tools).
 
-<a href="/en/to-do" class="btn btn-primary mt-2">Contribute!</a>
+<a href="https://github.com/orgs/italia/projects/49" class="btn btn-primary mt-2">Contribute!</a>
 
 

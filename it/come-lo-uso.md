@@ -32,7 +32,7 @@ alternate-blocks:
       buttons:
         - label: Scopri l’ecosistema Interoperabilità
           class: btn btn-primary
-          url: 'https://next.developers.italia.it/it/interoperabilita'
+          url: '/it/interoperabilita'
     - title: "Voglio pubblicare il software della mia Amministrazione in open source"
       text: "Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato. Le [Linee Guida](/it/riuso/pubblicazione) spiegano dettagliatamente il processo ed includono degli allegati tecnici che le amministrazioni possono includere nei contratti con i propri fornitori al fine di accertarsi di adempiere all'obbligo in modo corretto e di seguire le best practice dell'open source."
       image: /assets/images/come-lo-uso-4.svg

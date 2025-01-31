@@ -1,5 +1,3 @@
-@use "bootstrap";
-
 .footer {
     background-color: #00264D;
     color: #fff;
@@ -7,7 +5,7 @@
       img {
         height: 2.5rem;
         margin-right: 0.5rem;
-        @include bootstrap.media-breakpoint-up(lg) {
+        @include media-breakpoint-up(lg) {
           height: 3rem;
         }
       }
@@ -20,7 +18,7 @@
     &-collaboration {
       img {
         height: 2.5rem;
-        @include bootstrap.media-breakpoint-up(lg) {
+        @include media-breakpoint-up(lg) {
           height: 3rem;
         }
       }

@@ -17,7 +17,7 @@ ruphy:
   name: Riccardo Iaconelli
   pic: /assets/images/ruphy.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     github:
       name: github
@@ -225,7 +225,7 @@ matteov:
   desc:
   pic: /assets/images/matteov.jpg
   role: Team Digitale
-  status: admin
+  status: ex
   contacts:
     linkedin:
       name: linkedin

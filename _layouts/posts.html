@@ -26,10 +26,10 @@ layout: default
         {% endif %}
         
         {% if active_lang=='it' %}
-        <div class="postslisting__filtertag ml-auto d-flex">
+        <div class="postslisting__filtertag ms-auto d-flex">
         <a href="#" class="align-self-center d-flex" data-activate-element
-            data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span
-              class="ml-3 it-collapse"></span></a>
+            data-activeid="filterTags">{{ t.news_filter }} <span class="ms-3 it-expand"></span><span
+              class="ms-3 it-collapse"></span></a>
 
         </div>
         {% endif %}
@@ -116,14 +116,14 @@ layout: default
                   tabindex="-1" aria-hidden="true"
                 {% endif %}
               >
-                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-left"></use></svg>
-                <span class="sr-only">{{ t.paginator_previous_page }}</span>
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-left"></use></svg>
+                <span class="visually-hidden">{{ t.paginator_previous_page }}</span>
               </a>
             </li>
             <li class="page-item"><span class="page-link">{{ paginator.page }}</span></li>
             <li class="page-item"><span class="page-link">/</span></li>
             <li class="page-item"><span class="page-link">{{ paginator.total_pages }}</span></li>
-            <li class="page-item sr-only">
+            <li class="page-item visually-hidden">
               <a class="page-link" href="#" aria-current="page">{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</a>
             </li>
             <li
@@ -138,8 +138,8 @@ layout: default
                   tabindex="-1" aria-hidden="true"
                 {% endif %}
               >
-                <span class="sr-only">{{ t.paginator_next_page }}</span>
-                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-right"></use></svg>
+                <span class="visually-hidden">{{ t.paginator_next_page }}</span>
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-right"></use></svg>
               </a>
             </li>
           </ul>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { ALL_CATALOGUE, ADMINISTRATION, ALL_SITE } from '../utils/constants.js';
 import {
   searchContextState,
