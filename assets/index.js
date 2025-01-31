@@ -21,7 +21,9 @@ import { App } from './js/App.js';
 // Init Bootstrap Italia JS
 
 BackToTop.getOrCreateInstance(document.getElementsByClassName('back-to-top')[0]);
-HeaderSticky.getOrCreateInstance(document.querySelector("[data-bs-toggle='sticky']"));
+
+const headerSticky = document.querySelector("[data-bs-toggle='sticky']");
+HeaderSticky.getOrCreateInstance(headerSticky);
 
 const dropdownElements = document.querySelectorAll("[data-bs-toggle='dropdown']");
 for (const element of dropdownElements) {
@@ -37,6 +39,16 @@ const collapseElements = document.querySelectorAll("[data-bs-toggle='collapse']"
 for (const element of collapseElements) {
   Collapse.getOrCreateInstance(element);
 }
+
+// Ugly fix to make search working on sticky menu
+headerSticky.addEventListener('on.bs.sticky', () => {
+  setTimeout(() => {
+    const searchWrapperEls = document.querySelectorAll('.it-search-wrapper');
+    searchWrapperEls[searchWrapperEls.length - 1].onclick = () => {
+      document.querySelectorAll('custom-search > div')[0].click();
+    };
+  }, 100);
+});
 
 // Init React components
 
