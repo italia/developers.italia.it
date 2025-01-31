@@ -67,7 +67,7 @@
   abstract: Dati sull'emergenza COVID-19 della Regione Umbria
   contact:
     name: Regione Umbria
-    logo: https://raw.githubusercontent.com/RegioneUmbria/ecosistema-openapi/master/icon.png
+    logo: https://www.regione.umbria.it/image/company_logo?img_id=11466&t=1738233068877
   tags: []
   language: [it]
   slug: covid19-umbria

@@ -1522,20 +1522,6 @@ body {
             width: 5px;
             height: 5px;
 
-            // &:before {
-            //   content: '';
-            //   position: relative;
-            //   display: block;
-            //   width: 300%;
-            //   height: 300%;
-            //   box-sizing: border-box;
-            //   margin-left: -100%;
-            //   margin-top: -100%;
-            //   border-radius: 45px;
-            //   background-color: #01a4e9;
-            //   animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-            // }
-
             &:after {
               content: '';
               position: absolute;
@@ -1865,7 +1851,6 @@ body {
         }
         &:before {
             content: '';
-            position: absolute;
             width: 200vw;
             left: -50vw;
             top: 0;
