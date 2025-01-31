@@ -20,30 +20,14 @@
             {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug | downcase %}
             {% endif %}
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
-                <div class="card-wrapper shadow">
-                    <div class="card card-img no-after">
-                        {% if withimages==true %}
-                        <div class="img-responsive-wrapper">
-                            <div class="img-responsive">
-                                <figure class="img-wrapper">
-                                    <img src="{{item.img | default: item.logo | default:'https://placehold.it/272x176'}}"
-                                        title="{{item.title}} logo" alt="{{item.title}} logo">
-                                </figure>
-                            </div>
-                        </div>
-                        {% endif %}
-                        <div class="card-body">
-                            <h3 class="card-title h5 "><a title="{{item.title}}" href="{{itemUrl}}"
-                                class="color-inherit">{{item.title}}</a></h3>
-                            <a class="read-more" href="{{itemUrl}}">
-                                <span class="text">{{t.software.read_more}}</span>
-                                <svg class="icon">
-                                    <use href="/assets/svg/sprites.svg#it-arrow-right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <catalogue-item
+                    class="h-100 d-flex"
+                    name="{{ item.title }}"
+                    description="{{ item[itemdescription] }}"
+                    url="{{ itemUrl }}"
+                    logo="{{ item.img | default: item.logo | default:'/assets/images/cover_softwareriuso.png' }}"
+                    fallback="/assets/images/cover_softwareriuso.png"
+                ></catalogue-item>
             </div>
             {% endfor %}
         </div>

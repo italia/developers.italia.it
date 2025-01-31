@@ -69,10 +69,12 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
           </figure>
         </div>
       </div>
-      <div>
-        <Icon icon={icon} size="sm" className="me-1" />
-        <span className={classes.category}>{l10NLabels.software[category]}</span>
-      </div>
+      {icon && (
+        <div>
+          <Icon icon={icon} size="sm" className="me-1" />
+          <span className={classes.category}>{l10NLabels.software[category]}</span>
+        </div>
+      )}
       <CardBody>
         <CardTitle className="line-clamp-2" tag="h6">
           {name}
