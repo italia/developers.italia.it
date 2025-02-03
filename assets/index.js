@@ -23,7 +23,7 @@ import { App } from './js/App.js';
 BackToTop.getOrCreateInstance(document.getElementsByClassName('back-to-top')[0]);
 
 const navBarCollapsibleButton = document.querySelector("[data-bs-toggle='navbarcollapsible']");
-NavBarCollapsible.getOrCreateInstance(navBarCollapsibleButton);
+NavBarCollapsible.getOrCreateInstance(document.querySelector(navBarCollapsibleButton.dataset.bsTarget));
 
 const headerSticky = document.querySelector("[data-bs-toggle='sticky']");
 HeaderSticky.getOrCreateInstance(headerSticky);
