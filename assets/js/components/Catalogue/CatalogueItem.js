@@ -61,36 +61,34 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   const classes = useStyles();
 
   return (
-    <a href={url} className="d-flex w-100">
-      <Card className="card-img no-after shadow" data-testid={id}>
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
-              <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
-            </figure>
-          </div>
+    <Card className="card-img no-after shadow" data-testid={id}>
+      <div className="img-responsive-wrapper">
+        <div className="img-responsive">
+          <figure className="img-wrapper">
+            <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
+          </figure>
         </div>
-        {icon && (
-          <div>
-            <Icon icon={icon} size="sm" className="me-1" />
-            <span className={classes.category}>{l10NLabels.software[category]}</span>
-          </div>
-        )}
-        <CardBody>
-          <CardTitle className="line-clamp-2" tag="h6">
-            {name}
-          </CardTitle>
-          <CardText className="line-clamp-3">{description}</CardText>
-          <CardReadMore
-            href={url}
-            text={l10NLabels.software.read_more}
-            title={l10NLabels.software.read_more}
-            iconName="it-arrow-right"
-            data-testid="item-anchor"
-          />
-        </CardBody>
-      </Card>
-    </a>
+      </div>
+      {icon && (
+        <div>
+          <Icon icon={icon} size="sm" className="me-1" />
+          <span className={classes.category}>{l10NLabels.software[category]}</span>
+        </div>
+      )}
+      <CardBody>
+        <CardTitle className="line-clamp-2" tag="h6">
+          {name}
+        </CardTitle>
+        <CardText className="line-clamp-3">{description}</CardText>
+        <CardReadMore
+          href={url}
+          text={l10NLabels.software.read_more}
+          title={l10NLabels.software.read_more}
+          iconName="it-arrow-right"
+          data-testid="item-anchor"
+        />
+      </CardBody>
+    </Card>
   );
 };
 
