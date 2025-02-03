@@ -70,7 +70,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
         </div>
       </div>
       {icon && (
-        <div class="m-1">
+        <div className="m-1">
           <Icon icon={icon} size="sm" className="me-1" />
           <span className={classes.category}>{l10NLabels.software[category]}</span>
         </div>
