@@ -48,7 +48,7 @@ class Hero extends Component {
       <section className="swagger--hero">
         <div className="row">
           <div className={project ? 'col-lg-7' : 'col-lg'}>
-            <div className={project ? 'mr-5' : 'mr-5 ms-5'}>
+            <div className='mr-5'>
               <h1 className="display-1 mb-4">
                 {title}
                 <span className="badge badge-pill badge-primary swagger--hero-pill ms-2">{version}</span>
