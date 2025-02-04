@@ -27,6 +27,7 @@
                     url="{{ itemUrl }}"
                     logo="{{ item.img | default: item.logo | default:'/assets/images/cover_softwareriuso.png' }}"
                     fallback="/assets/images/cover_softwareriuso.png"
+                    {% if withimages != true %}simple="true"{%endif%}
                 ></catalogue-item>
             </div>
             {% endfor %}

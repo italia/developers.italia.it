@@ -57,39 +57,59 @@ const useStyles = createUseStyles({
 });
 
 // eslint-disable-next-line react/prop-types
-export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback }) => {
+export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback, simple = false }) => {
   const classes = useStyles();
-
-  return (
-    <Card className="card-img no-after shadow" data-testid={id}>
-      <div className="img-responsive-wrapper">
-        <div className="img-responsive">
-          <figure className="img-wrapper">
-            <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
-          </figure>
+  console.log(simple);
+  if (!simple) {
+    return (
+      <Card className="card-img no-after shadow" data-testid={id}>
+        <div className="img-responsive-wrapper">
+          <div className="img-responsive">
+            <figure className="img-wrapper">
+              <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
+            </figure>
+          </div>
         </div>
-      </div>
-      {icon && (
-        <div className="m-1">
-          <Icon icon={icon} size="sm" className="me-1" />
-          <span className={classes.category}>{l10NLabels.software[category]}</span>
-        </div>
-      )}
-      <CardBody>
-        <CardTitle className="line-clamp-2" tag="h6">
-          {name}
-        </CardTitle>
-        <CardText className="line-clamp-3">{description}</CardText>
-        <CardReadMore
-          href={url}
-          text={l10NLabels.software.read_more}
-          title={l10NLabels.software.read_more}
-          iconName="it-arrow-right"
-          data-testid="item-anchor"
-        />
-      </CardBody>
-    </Card>
-  );
+        {icon && (
+          <div className="m-1">
+            <Icon icon={icon} size="sm" className="me-1" />
+            <span className={classes.category}>{l10NLabels.software[category]}</span>
+          </div>
+        )}
+        <CardBody>
+          <CardTitle className="line-clamp-2" tag="h6">
+            {name}
+          </CardTitle>
+          <CardText className="line-clamp-3">{description}</CardText>
+          <CardReadMore
+            href={url}
+            text={l10NLabels.software.read_more}
+            title={l10NLabels.software.read_more}
+            iconName="it-arrow-right"
+            data-testid="item-anchor"
+          />
+        </CardBody>
+      </Card>
+    );
+  } else {
+    return (
+      <Card className="shadow" data-testid={id}>
+        <CardBody>
+          <CardTitle className="line-clamp-2" tag="h6">
+            {name}
+          </CardTitle>
+          <CardText className="line-clamp-3">{description}</CardText>
+          <CardReadMore
+            href={url}
+            text={l10NLabels.software.read_more}
+            title={l10NLabels.software.read_more}
+            iconName="it-arrow-right"
+            data-testid="item-anchor"
+          />
+        </CardBody>
+      </Card>
+    );
+  }
 };
 
 CatalogueItem.propTypes = {
