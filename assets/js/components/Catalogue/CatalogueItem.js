@@ -59,7 +59,6 @@ const useStyles = createUseStyles({
 // eslint-disable-next-line react/prop-types
 export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback, simple = false }) => {
   const classes = useStyles();
-  console.log(simple);
   if (!simple) {
     return (
       <Card className="card-img no-after shadow" data-testid={id}>
