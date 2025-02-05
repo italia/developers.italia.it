@@ -52,7 +52,7 @@ export const SearchType = React.memo(() => {
       {buttons.map((b) => (
         <div key={b.dataTestid} className="d-block d-md-inline-block m-1">
           <Button
-            className="me-2"
+            className="me-2 w-100"
             color="primary"
             outline={type !== b.type}
             icon

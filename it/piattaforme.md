@@ -13,4 +13,4 @@ Questa pagina è il punto di ingresso per gli sviluppatori interessati ad integr
 
 Le risorse qui elencate sono gestite d'intesa con gli Enti gestori delle piattaforme ma sono mantenute dalla community di Developers Italia: tutti possono partecipare alla costruzione di un patrimonio di risorse comuni (SDK, documentazione, strumenti).
 
-<a href="https://github.com/orgs/italia/projects/49" class="btn btn-primary mt-2">Contribuisci!</a>
+<a href="https://github.com/orgs/italia/projects/49" class="btn btn-primary mt-2 w-100">Contribuisci!</a>
