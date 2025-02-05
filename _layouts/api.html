@@ -19,15 +19,12 @@ layout: default
 
 
 <div class="apilist">
-  <div class="container">
+  <div class="container mt-5">
     <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
       <h1>{{ page.title }}</h1>
       <div class="row mb-2 mb-md-4">
         <div class="col-md-6">
           <h2 class="subtitle">{{ page.subtitle }}</h2>
-        </div>
-        <div class="col-md-5 offset-md-1 py-2 py-md-2 my-2 my-md-0 apilist__disclaimer">
-          {{ content }}
         </div>
       </div>
       <div class="apilist__listing">
@@ -57,7 +54,7 @@ layout: default
               {% if api.comingsoon != true %}
               <a class="apilist__listing__url mt-auto" href="{{url}}">{{t.software.read_more}} &rarr;</a>
               {% else %}
-              <span class="badge badge-pill badge-secondary apilist__listing__soon mx-0">{{ t.coming_soon }}</span>
+              <span class="badge rounded-pill bg-secondary apilist__listing__soon mx-0">{{ t.coming_soon }}</span>
               {%endif%}
             </article>
           </div>

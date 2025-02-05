@@ -4,7 +4,7 @@
 {% assign pa_name = pa.name | default: 'no name specified' %}
 {% assign pa_full = site.data.crawler.amministrazioni | where: "ipa", pa_name | first %}
 
-<div class="col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
+<div class="pa-item col-sm col-md-{{ include.width | default: 3 }} item mb-2 mb-md-5 p-2 p-md-3">
     {% assign pa_url = '/' | append: active_lang | append: '/pa/' | append: pa.name | downcase %}
     <a href="{{pa_url}}" class="d-block decoration-none ">
         {% assign img_url = pa_full.emblem | default:'/assets/images/cover_amministrazioni.png' %}

@@ -2,7 +2,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { SearchProvider } from '../../contexts/searchContext.js';
 import { ALL_SITE } from '../../utils/constants.js';
 import { SearchType } from './SearchType.js';
@@ -18,7 +18,7 @@ describe('SearchType', () => {
     );
     expect(await screen.findByTestId('search-type-buttons')).toBeInTheDocument();
     expect(await screen.findByTestId('search-type-all')).toHaveClass('btn-primary');
-    expect(await screen.findByTestId('search-type-administration')).toHaveClass('btn-default');
+    expect(await screen.findByTestId('search-type-administration')).toHaveClass('btn');
   });
 
   it('changes the active filter type on click', async () => {
@@ -30,6 +30,6 @@ describe('SearchType', () => {
     const administrationTypeButton = await screen.findByTestId('search-type-administration');
     userEvent.click(administrationTypeButton);
     expect(await screen.findByTestId('search-type-administration')).toHaveClass('btn-primary');
-    expect(await screen.findByTestId('search-type-all')).toHaveClass('btn-default');
+    expect(await screen.findByTestId('search-type-all')).toHaveClass('btn');
   });
 });

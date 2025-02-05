@@ -9,4 +9,5 @@ export const searchItemProptypes = PropTypes.exact({
   fallback: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  simple: PropTypes.bool,
 });

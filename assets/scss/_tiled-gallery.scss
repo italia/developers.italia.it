@@ -1,4 +1,4 @@
-@use 'bootstrap';
+
 
 .tiled-gallery {
   margin: {
@@ -80,18 +80,18 @@
 .tiled-items-container {
   display: flex;
 
-  @include bootstrap.media-breakpoint-up(md) {
+  @include media-breakpoint-up(md) {
     flex-direction: column;
   }
 
   .tiled-item {
-    @include bootstrap.media-breakpoint-up(md) {
+    @include media-breakpoint-up(md) {
       height: calc(50% - .25rem);
       margin-bottom: .5rem;
     }
 
     img {
-      @include bootstrap.media-breakpoint-up(md) {
+      @include media-breakpoint-up(md) {
         height: 100%;
         max-width: 370px;
       }

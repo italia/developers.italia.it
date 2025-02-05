@@ -14,7 +14,7 @@ pair-blocks:
       image: /assets/images/contatti-lavora.svg
       buttons:
         - label: Posizioni aperte
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: 'https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/'
     - title: "Invia un feedback"
       text: "Vuoi proporre idee oppure dare un feedback sulla community? C'è un'apposita sezione nel [forum](https://forum.italia.it/c/community-feedback).<br>
@@ -22,7 +22,7 @@ pair-blocks:
       image: /assets/images/contatti-bug.svg
       buttons:
         - label: Entra nel forum
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: 'https://forum.italia.it/'
 ---
 

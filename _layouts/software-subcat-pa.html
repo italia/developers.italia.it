@@ -42,24 +42,15 @@ layout: default
 
         {% assign pa_url = '/' | append: active_lang | append: '/' | append: page.ref.route | append: '/' | append: pa.ipa | downcase %}
           <div class="col-sm col-md-4 item mb-2 mb-md-3 p-2 p-md-3">
-            <a href="{{pa_url}}" class="d-block decoration-none ">
-
-              <div class='d-flex align-items-center mb-2'>
-                  <svg class="icon mr-2">
-                    <use xlink:href="/assets/svg/sprite.svg#it-pa"></use>
-                  </svg>
-                <div>{{ t.software.administrations | upcase}}</div>
-              </div>
-
-              {% assign img_url = pa.emblem | default:'/assets/images/cover_amministrazioni.png' %}
-              <div class="main-image"
-                style=" background: url({{ img_url }}) no-repeat top center;">
-              </div>
-              <p class="name color-inherit">
-                {{ pa_name }}
-              </p>
-              <span class="item-more"> {{ t.pa.more_details }} &rarr;</span>
-            </a>
+            <catalogue-item
+                class="h-100 d-flex"
+                name="{{ pa_name }}"
+                url="{{ pa_url }}"
+                icon="it-pa"
+                category="administration"
+                logo="{{ item.img }}"
+                fallback="/assets/images/cover_amministrazioni.png"
+            ></catalogue-item>
           </div>
           {% endfor %}
         </div>

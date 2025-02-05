@@ -9,7 +9,7 @@ author: Matteo Vabanesi
 image:
 locale: it
 ---
-Da oggi scambiare dati e informazioni è più semplice: grazie alla [nuova sezione pubblicata sul sito di Developers Italia](https://next.developers.italia.it/it/interoperabilita/), per la prima volta vengono presentate in maniera unitaria tutte le componenti dell’**ecosistema interoperabilità**. Una _landing_ dove gli elementi che concorrono a definire l’esperienza di utenti, funzionari e sviluppatori sono messi in relazione, restituendo una **visione d’insieme** e l’accesso alle singole risorse.
+Da oggi scambiare dati e informazioni è più semplice: grazie alla [nuova sezione pubblicata sul sito di Developers Italia](/it/interoperabilita/), per la prima volta vengono presentate in maniera unitaria tutte le componenti dell’**ecosistema interoperabilità**. Una _landing_ dove gli elementi che concorrono a definire l’esperienza di utenti, funzionari e sviluppatori sono messi in relazione, restituendo una **visione d’insieme** e l’accesso alle singole risorse.
 
 L’ecosistema interoperabilità **si compone della Piattaforma Digitale Nazionale Dati (PDND), del Catalogo API e di Schema**, il catalogo nazionale della semantica dei dati (NDC, National Data Catalog). La sezione presenta inoltre i **riferimenti tecnici e normativi** per integrare e realizzare API interoperabili, a partire dalle Linee guida emanate da Agid e dal Validatore sintattico che ne garantisce la correttezza formale.
 
