@@ -105,7 +105,7 @@ class Hero extends Component {
                 <a
                   href={servers && servers.size && servers.first().get('url')}
                   role="button"
-                  className="btn btn-white btn-outline-primary"
+                  className="btn  btn-outline-primary"
                   onClick={(e) => {
                     e.preventDefault();
                     try {

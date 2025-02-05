@@ -87,17 +87,17 @@ layout: default
                 <p>Garantisce lo scambio di informazioni tramite API, verificando l‘autenticazione e i livelli di
                     autorizzazione dei soggetti abilitati, affinché avvenga in modo semplice e sicuro.</p><a
                     href="https://developers.italia.it/it/pdnd"
-                    class="btn btn-white btn-outline-primary mb-4">Scopri di più</a>
+                    class="btn  btn-outline-primary mb-4">Scopri di più</a>
                 <h3 class="h5 mt-4">Catalogo API</h3>
                 <p>Rende disponibili le API pubblicate su PDND agli Enti aderenti, permettendo loro di valutare come
                     integrarle efficacemente con i propri servizi, facendoli diventare ancora più funzionali per
                     l’utente.</p><a href="https://www.interop.pagopa.it/catalogo"
-                    class="btn btn-white btn-outline-primary mb-4">Scopri di più</a>
+                    class="btn  btn-outline-primary mb-4">Scopri di più</a>
                 <h3 class="h5 mt-4">Schema</h3>
                 <p>Altrimenti conosciuto come National Data Catalog (NDC) è il catalogo nazionale della semantica
                     dei dati che permette di ricercare e utilizzare risorse già standardizzate e condivise per
                     supportare lo sviluppo di API semanticamente e sintatticamente interoperabili.</p><a
-                    href="https://schema.gov.it" class="btn btn-white btn-outline-primary mb-4">Scopri di più</a>
+                    href="https://schema.gov.it" class="btn  btn-outline-primary mb-4">Scopri di più</a>
             </div>
             <div class="col-md-6 mt-4"><img width="100%" src="https://next.developers.italia.it/assets/graph.svg" alt=""></div>
         </div>

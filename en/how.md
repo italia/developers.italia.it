@@ -29,7 +29,7 @@ alternate-blocks:
           class: btn btn-primary
           url: '/en/software'
         - label: "Read more about reuse"
-          class: btn btn-white btn-outline-primary
+          class: btn  btn-outline-primary
           url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
       text: |
