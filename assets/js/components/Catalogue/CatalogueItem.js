@@ -76,7 +76,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
           </div>
         )}
         <CardBody>
-          <CardTitle className="line-clamp-2" tag="h6">
+          <CardTitle className="h6 line-clamp-2" tag="p">
             {name}
           </CardTitle>
           <CardText className="line-clamp-3">{description}</CardText>
@@ -94,7 +94,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
     return (
       <Card className="shadow" data-testid={id}>
         <CardBody>
-          <CardTitle className="line-clamp-2" tag="h6">
+          <CardTitle className="h6 line-clamp-2" tag="p">
             {name}
           </CardTitle>
           <CardText className="line-clamp-3">{description}</CardText>
