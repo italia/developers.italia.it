@@ -103,6 +103,8 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
               <div className="form-group mw-md-50 mb-2 mb-md-4">
                 <i className="it-mail"></i>
                 <Input
+                  iconLeft={<Icon aria-hidden icon="it-mail" size="sm" />}
+                  hasIconLeft
                   required
                   type="email"
                   name="email"
@@ -110,18 +112,16 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
                   className="form-control"
                   placeholder={t('placeholder')}
                 />
-                <div className="my-2 my-md-4">
-                  <Button color="primary" size="lg" disabled={state === StateClass.LOADING}>
-                    {state === StateClass.LOADING ? (
-                      <>
-                        <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
-                        <span className="visually-hidden">{t('loading')}</span>
-                      </>
-                    ) : (
-                      t('buttonText')
-                    )}
-                  </Button>
-                </div>
+                <Button color="primary" size="lg" disabled={state === StateClass.LOADING} className="w-100 mt-2">
+                  {state === StateClass.LOADING ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+                      <span className="visually-hidden">{t('loading')}</span>
+                    </>
+                  ) : (
+                    t('buttonText')
+                  )}
+                </Button>
               </div>
               <div className="row mw-md-50">
                 <div className="col-md ">
@@ -142,7 +142,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
               </div>
             </div>
 
-            <div className="row mw-md-50">
+            <div className="row mw-md-50 px-3">
               {text}
               <a target="_blank" rel="noreferrer" className="text-white fw-bold" href={privacy}>
                 ({t('privacyText')})
