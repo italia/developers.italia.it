@@ -10,12 +10,12 @@ layout: default
   <div class="container">
     <div class="row d-flex align-items-stretch ">
       <article class="col-md-6 homelayout__first__sx d-flex  align-items-center px-3 ps-md-0 pe-md-3">
-        <div class="d-block homelayout__first__hero p-5">
+        <div class="d-block homelayout__first__hero px-3 pe-md-5 ps-md-3">
           <h1>{{ t.home_hero }}</h1>
           <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary w-100">{{t.home_hero_button}}</a>
         </div>
       </article>
-      <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-3 pe-md-0 ps-md-3">
+      <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-4 pe-md-0 ps-md-3">
         <div class="d-block ps-md-5">
           <div class="homelayout__first__latnews">
             <h2>{{t.home_news_title}}</h2>
@@ -35,7 +35,7 @@ layout: default
   </div>
 
 </section>
-{% include banner-joinus.html extraclass="pt-2 pt-md-5 pb-2 pb-md-0" %}
+{% include banner-joinus.html extraclass="pt-2 pb-2 pt-md-5 pb-md-5" %}
 
 {% assign items = site.platforms | where: "lang", active_lang | where: "highlight", true | sort: "order"  %}
 {% include home-listing-items.html
