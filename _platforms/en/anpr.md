@@ -78,4 +78,4 @@ a forum dedicated to discuss all the problems on integrating ANPR.
 
 <a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-github"></use></svg> Issue tracker</a>
 <a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-horn"></use></svg> Enter the forum</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-comment"></use></svg> Sign up on Slack</a>
+<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-comment"></use></svg> Sign up on Slack</a>

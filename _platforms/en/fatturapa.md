@@ -48,4 +48,4 @@ Developers Italia provides communication channels and collaboration tools for de
 
 <a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa" target="_blank"><i class="it-horn" /> Enter the forum</a>
 <a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Chat on Slack (#fatturapa)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
+<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>

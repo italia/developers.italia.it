@@ -24,5 +24,5 @@ pair-blocks:
 
 This is the catalogue envisaged by the [Guidelines for Software Acquisition and Reuse](/en/reuse), which includes the solutions put into reuse by the Public Administration in accordance with the art. 69 and the third party open source software meant for PAs.
 
-<a href="/en/reuse" class="btn btn-white btn-outline-primary me-10 ms-auto mt-3">More information</a>
+<a href="/en/reuse" class="btn  btn-outline-primary me-10 ms-auto mt-3">More information</a>
 <a href="/en/faq" class="btn btn-primary me-10 ms-auto mt-3 faq">FAQ</a>

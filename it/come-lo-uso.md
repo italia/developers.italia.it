@@ -21,7 +21,7 @@ alternate-blocks:
           class: btn btn-primary
           url: '/it/software'
         - label: "Leggi di più sul riuso"
-          class: btn btn-white btn-outline-primary
+          class: btn  btn-outline-primary
           url: '/it/riuso'
     - title: "Voglio integrarmi con un servizio pubblico tramite API"
       text: |
