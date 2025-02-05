@@ -54,6 +54,5 @@ root.render(
   </React.StrictMode>
 );
 
-import './js/main';
 import './js/misc';
 import './js/swagger-custom';
