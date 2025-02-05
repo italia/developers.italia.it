@@ -195,7 +195,11 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
           />
 
           <p className="mt-2 mt-md-4 primary-color-a11">
-            {text} (<a href={privacy}>{t('privacyText')}</a>)
+            {text} (
+            <a href={privacy} className="text-black fw-bold">
+              {t('privacyText')}
+            </a>
+            )
           </p>
         </form>
       </div>
