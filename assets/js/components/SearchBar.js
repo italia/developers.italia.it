@@ -13,7 +13,6 @@ const useStyle = createUseStyles({
   },
   searchBar: {
     color: 'var(--primary) !important',
-    fontSize: '3rem',
     height: 'auto !important',
     width: '100%',
     padding: '.375rem .75rem !important',

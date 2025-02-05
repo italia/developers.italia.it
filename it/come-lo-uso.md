@@ -11,17 +11,17 @@ alternate-blocks:
       image: /assets/images/come-lo-uso-1.svg
       buttons:
         - label: "Scopri le piattaforme abilitanti"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/it/piattaforme'
     - title: "Voglio cercare software già in uso in altre Amministrazioni"
       text: "Il motore di ricerca di Developers Italia permette di trovare tutto il software messo a riuso da altre Amministrazioni e il software open source creato da terze parti per la Pubblica Amministrazione."
       image: /assets/images/come-lo-uso-2.svg
       buttons:
         - label: "Scopri il software pubblico"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/it/software'
         - label: "Leggi di più sul riuso"
-          class: btn  btn-outline-primary
+          class: btn btn-outline-primary w-100
           url: '/it/riuso'
     - title: "Voglio integrarmi con un servizio pubblico tramite API"
       text: |
@@ -31,14 +31,14 @@ alternate-blocks:
       image: /assets/images/come-lo-uso-3.svg
       buttons:
         - label: Scopri l’ecosistema Interoperabilità
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/it/interoperabilita'
     - title: "Voglio pubblicare il software della mia Amministrazione in open source"
       text: "Tutte le amministrazioni hanno l'obbligo per legge di pubblicare in Developers Italia il software da loro commissionato. Le [Linee Guida](/it/riuso/pubblicazione) spiegano dettagliatamente il processo ed includono degli allegati tecnici che le amministrazioni possono includere nei contratti con i propri fornitori al fine di accertarsi di adempiere all'obbligo in modo corretto e di seguire le best practice dell'open source."
       image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: "Scopri di più"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: "/it/riuso/pubblicazione"
 ---
 
