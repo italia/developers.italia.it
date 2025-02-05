@@ -149,66 +149,66 @@ defaults:
       lang: "en"
       type: news
 
-# page_gen:
-#   - index_files: false
-#     name: slug
-#     data: apis
-#     template: api-details
-#     defaults:
-#       lang: it
-#       type: api
-#     dir: it/api
-#     #filter_condition: "record['language'].include? 'it'"
+page_gen:
+  - index_files: false
+    name: slug
+    data: apis
+    template: api-details
+    defaults:
+      lang: it
+      type: api
+    dir: it/api
+    #filter_condition: "record['language'].include? 'it'"
 
-#   - index_files: false
-#     name: slug
-#     data: apis
-#     template: api-details
-#     defaults:
-#       lang: en
-#       type: api
-#     dir: en/api
-#     #filter_condition: "record['language'].include? 'en'"
+  - index_files: false
+    name: slug
+    data: apis
+    template: api-details
+    defaults:
+      lang: en
+      type: api
+    dir: en/api
+    #filter_condition: "record['language'].include? 'en'"
 
-#   - index_files: false
-#     name: id
-#     data: crawler.software
-#     template: software-details
-#     defaults:
-#       lang: it
-#       title_suffix: 'Developers Italia'
-#     dir: it/software
-#     # filter_condition: "record['language'].include? 'it'"
+  - index_files: false
+    name: id
+    data: crawler.software
+    template: software-details
+    defaults:
+      lang: it
+      title_suffix: 'Developers Italia'
+    dir: it/software
+    # filter_condition: "record['language'].include? 'it'"
 
-#   - index_files: false
-#     name: id
-#     data: crawler.software
-#     template: software-details
-#     defaults:
-#       lang: en
-#       title_suffix: 'Developers Italia'
-#     dir: en/software
-#     # filter_condition: "record['language'].include? 'en'"
+  - index_files: false
+    name: id
+    data: crawler.software
+    template: software-details
+    defaults:
+      lang: en
+      title_suffix: 'Developers Italia'
+    dir: en/software
+    # filter_condition: "record['language'].include? 'en'"
 
-#   - index_files: false
-#     name: ipa
-#     title: entityName
-#     data: crawler.amministrazioni
-#     template: brand-pa
-#     defaults:
-#       lang: it
-#     dir: it/pa
-#     # filter_condition: "record['language'].include? 'it'"
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: it
+    dir: it/pa
+    # filter_condition: "record['language'].include? 'it'"
 
-#   - index_files: false
-#     name: ipa
-#     title: entityName
-#     data: crawler.amministrazioni
-#     template: brand-pa
-#     defaults:
-#       lang: en
-#     dir: en/pa
-#     # filter_condition: "record['language'].include? 'it'"
+  - index_files: false
+    name: ipa
+    title: entityName
+    data: crawler.amministrazioni
+    template: brand-pa
+    defaults:
+      lang: en
+    dir: en/pa
+    # filter_condition: "record['language'].include? 'it'"
 
 sass:
     load_paths:
