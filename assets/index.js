@@ -2,15 +2,6 @@
 
 import { BackToTop, Dropdown, Tab, Collapse, HeaderSticky, NavBarCollapsible } from 'bootstrap-italia';
 
-import './js/logos';
-import './js/main';
-import './js/misc';
-
-import './js/github-issues';
-import './js/platform-activities';
-
-import './js/swagger-custom';
-
 import './scss/main.scss';
 
 import React from 'react';
@@ -62,3 +53,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+import './js/main';
+import './js/misc';
+import './js/swagger-custom';
