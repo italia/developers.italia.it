@@ -99,7 +99,7 @@ layout: default
                     supportare lo sviluppo di API semanticamente e sintatticamente interoperabili.</p><a
                     href="https://schema.gov.it" class="btn  btn-outline-primary mb-4">Scopri di più</a>
             </div>
-            <div class="col-md-6 mt-4"><img width="100%" src="https://next.developers.italia.it/assets/graph.svg" alt=""></div>
+            <div class="col-md-6 mt-4"><img width="100%" src="/assets/images/graph.svg" alt=""></div>
         </div>
     </div>
 </section>
@@ -109,7 +109,7 @@ layout: default
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-2"><img src="https://next.developers.italia.it/assets/smile.svg" alt="" class="img-fluid"></div>
+                    <div class="col-2"><img src="/assets/images/smile.svg" alt="" class="img-fluid"></div>
                     <div class="col-8">
                         <h4>Persone fisiche e imprese</h4>
                         <p>Semplificazione dei servizi offerti a persone fisiche e imprese</p>
@@ -118,7 +118,7 @@ layout: default
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-2"><img src="https://next.developers.italia.it/assets/building.svg" alt="" class="img-fluid"></div>
+                    <div class="col-2"><img src="/assets/images/building.svg" alt="" class="img-fluid"></div>
                     <div class="col-8">
                         <h4>Ente</h4>
                         <p>Facilitazione e sicurezza dello scambio dati tramite la standardizzazione del processo per enti</p>
@@ -129,7 +129,7 @@ layout: default
         <div class="row mt-4">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-2"><img src="https://next.developers.italia.it/assets/developer.svg" alt="" class="img-fluid"></div>
+                    <div class="col-2"><img src="/assets/images/developer.svg" alt="" class="img-fluid"></div>
                     <div class="col-8">
                         <h4>Developer</h4>
                         <p>Integrazione degli e-service attraverso gli standard offerti dalla Piattaforma Digitale Nazionale Dati (PDND)</p>
@@ -138,7 +138,7 @@ layout: default
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-2"><img src="https://next.developers.italia.it/assets/happy-privacy.svg" alt="" class="img-fluid"></div>
+                    <div class="col-2"><img src="/assets/images/happy-privacy.svg" alt="" class="img-fluid"></div>
                     <div class="col-8">
                         <h4>Responsabile per la protezione dei dati (RPD)</h4>
                         <p>Standardizzazione del processo per tutti coloro che aderiscono e riutilizzo di quanto messo a disposizione dagli altri</p>
