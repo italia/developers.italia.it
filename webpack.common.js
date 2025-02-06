@@ -31,15 +31,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       // process is needed by util
       process: "process/browser",
-
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-
-      PhotoSwipe: "photoswipe",
-      PhotoSwipeUI_Default: "photoswipe/src/js/ui/photoswipe-ui-default.js",
-
-      PerfectScrollbar: "perfect-scrollbar",
     }),
 
     // Pass down environment variables to be replaced in the bundle
