@@ -180,9 +180,8 @@ layout: default
 {% if description.screenshots.size > 0 or description.videos > 0 %}
 {% include tiled-gallery.html screenshots=description.screenshots videos=description.videos oembed=page.oEmbedHTML %}
 {% endif %}
-<hr class="divider mb-0">
 
-<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
+<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %} mt-4">
   <div class="functionality">
     {% if page.oldVariant.size != nil %}
     <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
