@@ -4,17 +4,29 @@
         <ul class="home-software-tags__list list-inline text-center">
             {% assign deactive = false %}
             {% for tag in site.data.publiccode_categories %}
-            {% if forloop.index > 15 %}
-            {% assign deactive = true %}
+            {% if forloop.index <= 15 %}
+            {% include set-tag.html tag=tag deactive=false %}
             {% endif %}
-            {% include set-tag.html tag=tag deactive=deactive %}
+            {% endfor %}
+        </ul>
 
+        <ul class="home-software-tags__list list-inline text-center collapse" id="collapseTags">
+            {% assign deactive = false %}
+            {% for tag in site.data.publiccode_categories %}
+            {% if forloop.index > 15 %}            
+            {% include set-tag.html tag=tag deactive=false %}
+            {% endif %}
             {% endfor %}
         </ul>
 
         {% if site.data.publiccode_categories.size > 15 %}
         <div class="text-center mb-2 mb-md-4">
-            <a id="moreTags" class="btn btn-primary mx-auto w-50">{{ t.home_tags_more }}</a>
+            <button type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseTags" 
+                aria-expanded="false" 
+                aria-controls="collapseTags" 
+                class="btn btn-outline-primary mx-auto w-50 collapsed">{{ t.home_tags_more }}</a>
         </div>
         {% endif %}
     </div>
