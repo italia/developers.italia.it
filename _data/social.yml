@@ -1,6 +1,8 @@
+github:
+  name: github
+  link: https://github.com/italia
 mastodon:
   name: mastodon
-  icon: /assets/icons/mastodon.svg#mastodon
   link: https://mastodon.uno/@developersITA
 twitter:
   name: twitter

@@ -18,7 +18,7 @@ layout: default
     <div class="postslisting__headerbkg "></div>
     <div class="postslisting__header ">
 
-      <div class="container pt-4 d-flex w-100">
+      <div class="container pt-4 d-flex w-100 align-items-center">
         {% if paginator.total_pages > 1 %}
         <h1>{{ page.title }} - {{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</h1>
         {% else %}
@@ -26,15 +26,19 @@ layout: default
         {% endif %}
         
         {% if active_lang=='it' %}
-        <div class="postslisting__filtertag ml-auto d-flex">
-        <a href="#" class="align-self-center d-flex" data-activate-element
-            data-activeid="filterTags">{{ t.news_filter }} <span class="ml-3 it-expand"></span><span
-              class="ml-3 it-collapse"></span></a>
+        <div class="postslisting__filtertag ms-auto d-flex">
+        <button type="button" 
+          class="btn w-100 collapsed d-flex" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#collapseTags" 
+          aria-expanded="false" 
+          aria-controls="collapseTags" >{{ t.news_filter }}
+        </button>
 
         </div>
         {% endif %}
       </div>
-      <div class="container postslisting__tags deactive" data-activatedby="filterTags">
+      <div class="container postslisting__tags collapse" id="collapseTags">
         {% capture categories %}
         {% for category in site.tags %}{{ category[0] }}:{% endfor %}
         {% endcapture %}
@@ -116,14 +120,14 @@ layout: default
                   tabindex="-1" aria-hidden="true"
                 {% endif %}
               >
-                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-left"></use></svg>
-                <span class="sr-only">{{ t.paginator_previous_page }}</span>
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-left"></use></svg>
+                <span class="visually-hidden">{{ t.paginator_previous_page }}</span>
               </a>
             </li>
             <li class="page-item"><span class="page-link">{{ paginator.page }}</span></li>
             <li class="page-item"><span class="page-link">/</span></li>
             <li class="page-item"><span class="page-link">{{ paginator.total_pages }}</span></li>
-            <li class="page-item sr-only">
+            <li class="page-item visually-hidden">
               <a class="page-link" href="#" aria-current="page">{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}</a>
             </li>
             <li
@@ -138,8 +142,8 @@ layout: default
                   tabindex="-1" aria-hidden="true"
                 {% endif %}
               >
-                <span class="sr-only">{{ t.paginator_next_page }}</span>
-                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-chevron-right"></use></svg>
+                <span class="visually-hidden">{{ t.paginator_next_page }}</span>
+                <svg class="icon icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-chevron-right"></use></svg>
               </a>
             </li>
           </ul>

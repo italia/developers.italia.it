@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Input, Button, Icon, notify } from 'design-react-kit';
 
 const messages = {
   it: {
     header: 'Le nostre iniziative, direttamente nella tua mail',
-    title: 'Lasciaci la tua email e ti aggiorneremo sulle nostre prossime iniziative',
+    title: 'Iscriviti alla mailing list! Lasciaci la tua email e ti aggiorneremo sulle nostre prossime iniziative',
     loading: 'Caricamento...',
-    buttonText: 'Iscriviti alla mailing list',
+    buttonText: 'Iscriviti',
     placeholder: 'indirizzo email',
     errorText: 'Qualcosa è andato storto 😔 Riprova più tardi',
     successText: 'Ti abbiamo mandato un’email, segui il collegamento per confermare la tua iscrizione',
@@ -14,9 +15,9 @@ const messages = {
   },
   en: {
     header: 'Our initiatives, right in your email',
-    title: 'Leave us your email address and we’ll keep you posted',
+    title: 'Subscribe to the mailing list! Leave us your email address and we’ll keep you posted',
     loading: 'Loading...',
-    buttonText: 'Subscribe to the mailing list',
+    buttonText: 'Subscribe',
     placeholder: 'email address',
     errorText: 'Something went wrong 😔 Please try again later',
     successText: 'We sent you an email, follow the link to confirm your subscription',
@@ -33,7 +34,6 @@ const StateClass = Object.freeze({
 
 export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': extraFields, privacy, lang, type }) => {
   const [state, setState] = useState(StateClass.START);
-  const [message, setMessage] = useState('');
 
   const t = (key) => messages[lang][key];
 
@@ -63,13 +63,22 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
     } catch (e) {
       setState(StateClass.ERROR);
       console.error(`Mailing list subscribe error: ${e}`);
-      setMessage(t('errorText'));
+
+      notify(t('buttonText'), t('errorText'), {
+        dismissable: true,
+        state: 'error',
+        style: { zIndex: 5 },
+      });
 
       return;
     }
 
     setState(StateClass.SUCCESS);
-    setMessage(t('successText'));
+    notify(t('buttonText'), t('successText'), {
+      dismissable: true,
+      state: 'success',
+      style: { zIndex: 5 },
+    });
   };
 
   const queryArgs = JSON.parse(args);
@@ -93,7 +102,9 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
             <div className="py-1 py-md-2">
               <div className="form-group mw-md-50 mb-2 mb-md-4">
                 <i className="it-mail"></i>
-                <input
+                <Input
+                  iconLeft={<Icon aria-hidden icon="it-mail" size="sm" />}
+                  hasIconLeft
                   required
                   type="email"
                   name="email"
@@ -101,22 +112,16 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
                   className="form-control"
                   placeholder={t('placeholder')}
                 />
-                <div className="my-2 my-md-4">
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-lg banner-newsletter__submit"
-                    disabled={state === StateClass.LOADING}
-                  >
-                    {state === StateClass.LOADING ? (
-                      <>
-                        <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
-                        <span className="sr-only">{t('loading')}</span>
-                      </>
-                    ) : (
-                      t('buttonText')
-                    )}
-                  </button>
-                </div>
+                <Button color="primary" size="lg" disabled={state === StateClass.LOADING} className="w-100 mt-2">
+                  {state === StateClass.LOADING ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+                      <span className="visually-hidden">{t('loading')}</span>
+                    </>
+                  ) : (
+                    t('buttonText')
+                  )}
+                </Button>
               </div>
               <div className="row mw-md-50">
                 <div className="col-md ">
@@ -137,18 +142,11 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
               </div>
             </div>
 
-            <div className="row mw-md-50">
+            <div className="row mw-md-50 px-3">
               {text}
-              <a target="_blank" rel="noreferrer" className="text-white font-weight-bold" href={privacy}>
+              <a target="_blank" rel="noreferrer" className="text-white fw-bold" href={privacy}>
                 ({t('privacyText')})
               </a>
-            </div>
-            <div
-              className={`alert alert-${state.className} form-row position-absolute`}
-              style={{ visibility: state === StateClass.SUCCESS || state === StateClass.ERROR ? 'visible' : 'hidden' }}
-              role="alert"
-            >
-              {message}
             </div>
           </form>
         </div>
@@ -164,53 +162,45 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
         </p>
 
         <form onSubmit={onSubmit}>
-          <div className="form-row align-items-center">
+          <div className="form-group">
             <div className="input-group">
-              <div className="input-group-prepend">
-                <span className="input-group-text bg-white input-icon it-mail"></span>
-              </div>
-              <label htmlFor="email" className="sr-only">
-                {t('placeholder')}
-              </label>
-              <input
-                type="email"
-                required
-                id="newsletter"
-                name="email"
-                className="form-control bg-white input-email"
-                placeholder={t('placeholder')}
-              />
               {Object.entries(queryArgs).map(([argName, argValue], i) => (
                 <input type="hidden" name={argName} value={argValue} key={i} />
               ))}
-              <div className="input-group-append">
-                <button
-                  type="submit"
-                  className="input-group-text bg-primary input-submit"
-                  disabled={state === StateClass.LOADING}
-                >
-                  {state === StateClass.LOADING ? (
-                    <>
-                      <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
-                      <span className="sr-only">{t('loading')}</span>
-                    </>
-                  ) : (
-                    t('buttonText')
-                  )}
-                </button>
-              </div>
             </div>
-            <p className="mt-2 mt-md-4 primary-color-a11">
-              {text} (<a href={privacy}>{t('privacyText')}</a>)
-            </p>
           </div>
-          <div
-            className={`alert alert-${state.className} form-row position-absolute`}
-            style={{ visibility: state === StateClass.SUCCESS || state === StateClass.ERROR ? 'visible' : 'hidden' }}
-            role="alert"
-          >
-            {message}
-          </div>
+
+          <Input
+            hasIconLeft
+            iconLeft={<Icon aria-hidden icon="it-mail" size="sm" />}
+            hasButtonRight
+            buttonRight={
+              <Button color="primary" disabled={state === StateClass.LOADING}>
+                {state === StateClass.LOADING ? (
+                  <>
+                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+                    <span className="visually-hidden">{t('loading')}</span>
+                  </>
+                ) : (
+                  t('buttonText')
+                )}
+              </Button>
+            }
+            type="email"
+            required
+            id="newsletter"
+            name="email"
+            className="form-control"
+            label={t('placeholder')}
+          />
+
+          <p className="mt-2 mt-md-4 primary-color-a11">
+            {text} (
+            <a href={privacy} className="text-black fw-bold">
+              {t('privacyText')}
+            </a>
+            )
+          </p>
         </form>
       </div>
     </>

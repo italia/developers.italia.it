@@ -3,10 +3,10 @@
 
 <section class="banner-joinus overflow-x-hidden">
     <div class="container">
-        <div class="card-deck">
+        <div class="row">
             {% for block in blocks %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-            <div class="col-sm my-3 my-md-5 px-3">
+            <div class="col-sm mb-3 {% if blocks.last != block %}mt-3{% else %}mb-5{% endif %} my-md-5 px-3">
                 <div class="card h-100">
                       {% if block.image %}
                       <div class="mb-auto text-center py-4 px-3" >
@@ -22,7 +22,7 @@
                           {% if block.buttons != nil%}
                               <div class="px-2 px-md-4 text-center">
                                   {% for button in block.buttons %}
-                                      <a href="{{button.url | escape }}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
+                                      <a href="{{button.url | escape }}" class="{{button.class}} me-3 mt-2">{{button.label}}</a>
                                   {% endfor %}
                               </div>
                           {% endif %}

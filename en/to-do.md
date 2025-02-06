@@ -4,16 +4,9 @@ subtitle: Open issues in the Developers Italia repositories
 lang: en
 ref:
   it: /it/cosa-fare
-layout: github-issues
+layout: default
 ---
 
-Do you want to help us but you don't know what to do?
+## We are redirecting you to GitHub..
 
-Here's a list of issues from our GitHub organization
-[@italia](https://github.com/italia "Italia on Github")
-with the <span class="badge badge-secondary">help wanted</span> label.
-You can use the filters to find what activity could suit you best!
-
-{:.u-textWeight-400 .u-margin-top-l }
-
-## Open issues
+<meta http-equiv="refresh" content="0; URL='https://github.com/orgs/italia/projects/49'">

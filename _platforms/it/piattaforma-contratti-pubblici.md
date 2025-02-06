@@ -106,7 +106,7 @@ Appaltanti):
 
 Le Stazioni Appaltanti gestiscono tutte le fasi del ciclo di vita del contratto
 utilizzando esclusivamente Piattaforme di approvvigionamento digitali
-certificate, che accedono in [interoperabilità](https://next.developers.italia.it/it/interoperabilita)
+certificate, che accedono in [interoperabilità](/it/interoperabilita)
 ai servizi offerti dalla Piattaforma dei Contratti Pubblici di ANAC.
 Per poter operare in interoperabilità le Stazioni Appaltanti devono infatti
 dotarsi di una o più piattaforme digitali certificate (art. 25).
@@ -223,7 +223,7 @@ autenticazione resi disponibili da PDND.
 
 ## Canali
 
-<a class="btn btn-primary" href="https://github.com/anticorruzione/npa/issues" target="_blank" ><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg>
+<a class="btn btn-primary" href="https://github.com/anticorruzione/npa/issues" target="_blank" ><svg class="icon icon-white p-1 me-1"><use xlink:href="/assets/svg/sprites.svg#it-github"></use></svg>
   Vai alle issue
 </a>
 

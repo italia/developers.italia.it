@@ -3,7 +3,7 @@ import React from 'react';
 import './useSearchEngine.js';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { SearchProvider } from '../contexts/searchContext.js';
 import { ALL_CATALOGUE } from '../utils/constants.js';
 import { search } from '../services/searchEngine.js';
