@@ -48,10 +48,10 @@ class Hero extends Component {
       <section className="swagger--hero">
         <div className="row">
           <div className={project ? 'col-lg-7' : 'col-lg'}>
-            <div className={project ? 'mr-5' : 'mr-5 ml-5'}>
+            <div className="mr-5">
               <h1 className="display-1 mb-4">
                 {title}
-                <span className="badge badge-pill badge-primary swagger--hero-pill ml-2">{version}</span>
+                <span className="badge badge-pill badge-primary swagger--hero-pill ms-2">{version}</span>
               </h1>
               <section className="mb-5">
                 <div className="row">
@@ -96,7 +96,7 @@ class Hero extends Component {
                 <a
                   href={window.swaggerUrl}
                   role="button"
-                  className="btn btn-primary mr-3"
+                  className="btn btn-primary me-3"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -105,7 +105,7 @@ class Hero extends Component {
                 <a
                   href={servers && servers.size && servers.first().get('url')}
                   role="button"
-                  className="btn btn-white btn-outline-primary"
+                  className="btn  btn-outline-primary"
                   onClick={(e) => {
                     e.preventDefault();
                     try {
@@ -138,7 +138,7 @@ class Hero extends Component {
                       <div>
                         {/* eslint-disable-next-line no-undef */}
                         <a className="text-uppercase swagger--hero--card-platform-link" href={`/${lang}/${id}`}>
-                          <img className="mr-2" src={platformIcon} alt={goToPlatform} />
+                          <img className="me-2" src={platformIcon} alt={goToPlatform} />
                           {goToPlatform} →
                         </a>
                       </div>

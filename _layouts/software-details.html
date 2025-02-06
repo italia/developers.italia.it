@@ -180,9 +180,8 @@ layout: default
 {% if description.screenshots.size > 0 or description.videos > 0 %}
 {% include tiled-gallery.html screenshots=description.screenshots videos=description.videos oembed=page.oEmbedHTML %}
 {% endif %}
-<hr class="divider mb-0">
 
-<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %}">
+<div class="{% if page.oldVariant.size != nil %}container{% else %} container-fluid {% endif %} mt-4">
   <div class="functionality">
     {% if page.oldVariant.size != nil %}
     <h2 class="mt-2 mt-md-5"> {{ t.software.functionality }} </h2>
@@ -207,7 +206,7 @@ layout: default
             <p> {{ feature | escape}} </p>
             {% endfor %}
             <p>
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+              <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
                 aria-controls="otherFeature" class="count">{{t.software.show_all }}
                 <span class="or it-expand"></span>
                 <span class="and it-collapse"></span>
@@ -227,7 +226,7 @@ layout: default
           {% endif %}
           {% if page.publiccode.usedBy.size > 0 %}
           <div id="usedBy">
-            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
@@ -258,7 +257,7 @@ layout: default
           {% for feature in oldFeatures limit: 10 %}
           <p> {{ feature | escape}} </p>
           {% endfor %}
-          <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+          <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
             aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
             <span class="or it-expand"></span>
@@ -279,7 +278,7 @@ layout: default
           {% endif %}
         </div>
         <div id="oldVariant">
-          <a data-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
+          <a data-bs-toggle="collapse" href="#listVariant" role="button" aria-expanded="false" aria-controls="listVariant"
             class="count">
             {{ page.oldVariant | size }}
             {% if page.oldVariant.size > 1 %}
@@ -331,7 +330,7 @@ layout: default
             <p> {{ feature | escape }} </p>
             {% endfor %}
             <p>
-              <a data-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+              <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
                 aria-controls="otherFeature" class="count">{{
                 t.software.show_all }}
                 <span class="or it-expand"></span>
@@ -351,7 +350,7 @@ layout: default
           </div>
           {% if page.publiccode.usedBy.size != nil %}
           <div id="usedBy">
-            <a data-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
               aria-controls="by-amministration" class="count">
               {{ t.software.used_by}} {{ page.publiccode.usedBy | size }}
               {% if page.publiccode.usedBy.size >= 1 %}
@@ -453,7 +452,7 @@ layout: default
                     {% if today_date > contractor_date %}
                     <svg class="icon icon-sm icon-warning" role="img" aria-labelledby="software-support-ended">
                       <title id="software-support-ended">{{ t.software.contract_warning }}</title>
-                      <use xlink:href="/assets/svg/sprite.svg#it-warning-circle"></use>
+                      <use xlink:href="/assets/svg/sprites.svg#it-warning-circle"></use>
                     </svg>
                     {% endif %}
                     <span class="align-middle">
@@ -483,7 +482,7 @@ layout: default
                 {% endif %}
               </span>
             </p>
-            <a data-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
               aria-controls="maintenanceContact" class="d-block d-md-none controls">
               {% if page.publiccode.maintenance.contacts.size == 1 %}
               {{ t.software.technical_contact }}
@@ -641,7 +640,7 @@ layout: default
             </div>
           </div>
           <div class="main row">
-            <a data-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+            <a data-bs-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
               aria-controls="mainOthersInfo" class="d-block d-md-none controls">
               {{ t.software.others_info }}
               <span class="or it-expand"></span>
@@ -667,7 +666,7 @@ layout: default
                   {% endfor %}
                 </p>
                 <p>
-                  <a data-toggle="collapse" href="#otherLanguage"
+                  <a data-bs-toggle="collapse" href="#otherLanguage"
                     role="button" aria-expanded="false"
                     class="count" aria-controls="otherLanguage">
                     {{ t.langs.show_all }}
@@ -708,13 +707,6 @@ layout: default
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
-              <!--
-                Use data-proofer-ignore to make html-proofer ignore this section for now:
-                it comes from external publiccode.yml files so there might be broken links
-                out of our control making our CI pipeline fail.
-
-                TODO: find a better solution
-              -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
                 {{ description.longDescription | markdownify }}
               </div>
@@ -745,7 +737,7 @@ layout: default
         {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
         {% else %}
         {% assign category = "software_open" %}
-        {% assign fallback = "it-open-source" %}
+        {% assign icon = "it-open-source" %}
         {% assign fallback = "/assets/images/cover_software_opensource.png" %}
         {% endif %}
 
@@ -768,5 +760,3 @@ layout: default
   </div>
 </div>
 {% endif %}
-
-{% include photoswipe-ui.html %}

@@ -18,9 +18,15 @@ alternate-blocks:
 
       image: /assets/images/come-partecipo-3.svg
       buttons:
-        - label: Contribuisci
-          class: btn btn-primary
-          url: '/it/cosa-fare'
+        - label: Esplora GitHub Italia
+          class: btn btn-primary w-100
+          url: 'https://github.com/italia'
+        - label: Contribuisci!
+          class: btn btn-outline-primary w-100
+          url: 'https://github.com/orgs/italia/projects/49'
+        - label: Contattaci su Slack e Matrix
+          class: btn btn-outline-primary w-100
+          url: 'https://slack.developers.italia.it/'
 
     - title: Esplora e migliora il software delle Pubbliche Amministrazioni
       text: |
@@ -33,7 +39,7 @@ alternate-blocks:
       image: /assets/images/come-partecipo-4.svg
       buttons:
         - label: Esplora il catalogo
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/it/software'
     - title: Aggiungi software pubblico al catalogo
       text: |
@@ -45,6 +51,6 @@ alternate-blocks:
       image: /assets/images/come-partecipo-1.svg
       buttons:
         - label: Scopri di più
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/it/riuso/pubblicazione'
 ---

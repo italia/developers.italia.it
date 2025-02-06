@@ -10,8 +10,9 @@ it:
       - 'software'
       - 'riuso'
   - title: Interoperabilità
-    url: 'https://next.developers.italia.it/it/interoperabilita'
-    active_by_firstlevel: 'api'
+    url: '/it/interoperabilita'
+    active_by_firstlevel: 
+      - 'interoperabilita'
   - title: Come lo uso
     url: '/it/come-lo-uso'
     active_by_firstlevel: 'come-lo-uso'
@@ -37,7 +38,7 @@ en:
       - 'software'
       - 'reuse'
   - title: Interoperability
-    url: 'https://next.developers.italia.it/it/interoperabilita'
+    url: '/it/interoperabilita'
     active_by_firstlevel: 'api'
   - title: How to use it
     url: '/en/how'

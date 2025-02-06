@@ -27,7 +27,7 @@
           </a>
         </div>
 
-        {% include network-links-menu.html class='list-inline mt-0 mb-0 ml-auto Header-external d-none d-lg-flex'
+        {% include network-links-menu.html class='list-inline mt-0 mb-0 ms-auto Header-external d-none d-lg-flex'
            liclass='list-inline-item m-0 py-2 px-3 d-flex align-items-center'  %}
 
         {% include lang_switch.html %}
@@ -41,18 +41,18 @@
 
   <div class="Header-navbar Header-navbar--pa">
     <div class="container d-flex align-items-center">
-      <div class="Header-hamb ml-3 mr-3 d-block d-lg-none">
+      <div class="Header-hamb ms-3 me-3 d-block d-lg-none">
         <a href="#" data-activate-element data-activeid="offcanvasMenu">
           <img class="Header-hamb__icon" alt="Menu" src="{{'/assets/icons/hamburger-icon.svg' | relative_url}}">
         </a>
       </div>
-      <div class="Header-logo mr-2 mr-md-3" aria-hidden="true">
+      <div class="Header-logo me-2 me-md-3" aria-hidden="true">
         <a href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
           <img src="{{ page.publicAuthority.emblem }}" alt="">
         </a>
       </div>
 
-      <div class="Header-title mr-auto">
+      <div class="Header-title me-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
           <a class="text-900" href="{{ page.publicAuthority.website }}" target="_blank" rel="noopener noreferrer">
             {{ page.publicAuthority.styledName }}

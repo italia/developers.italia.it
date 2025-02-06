@@ -12,7 +12,7 @@ layout: default
 {% endcomment %}
 
 {% assign recent_sw = site.data.crawler.software | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
-{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
+{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 3 %}
 
 <div class="container">
   <div class="intro mt-5">
@@ -28,7 +28,7 @@ layout: default
   </div>
 </div>
 
-{% include banner-pnrr.html extraclass="overflow-x-hidden pt-3 px-4" %}
+{% include banner-pnrr.html extraclass="overflow-x-hidden pt-5" %}
 
 {% if page.pair-blocks!=nil%}
 {% include sw-pair-blocks.html blocks=page.pair-blocks %}
@@ -73,7 +73,7 @@ layout: default
           &rarr;</a>
       </div>
     </div>
-    <div class="row row-eq-height">
+    <div class="row row-eq-height justify-content-around">
       {% include pa-listing.html
       items=efficient_pas
       show_type=false

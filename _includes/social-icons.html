@@ -1,20 +1,21 @@
-<span class="text-white mr-3 float-left">{{ include.follow_us_text | capitalize }}</span>
-<ul class="follow-us-icons d-inline-block list-inline mb-0">
+<ul class="list-inline text-start social">
   <li class="list-inline-item">
-    <a class="icon feed" href="/{{ active_lang }}/news/feed.atom" title="feed">
-      <svg class="icon icon-white">
-        <use xlink:href="/assets/icons/feed.svg#rss"></use>
+    <a class="icon" href="/{{ active_lang }}/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
       </svg>
     </a>
   </li>
   {% for item in include.social_items %}
-  {% assign icon = "/assets/svg/sprite.svg#it-" | append: item[0] %}
+  {% assign icon = "/assets/svg/sprites.svg#it-" | append: item[0] %}
   {% if item[1].icon %}
   {% assign icon = item[1].icon %}
   {% endif %}
   <li class="list-inline-item">
-    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me">
-      <svg class="icon icon-white">
+    <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me"  aria-label="{{ item[1].name }}" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
         <use xlink:href="{{ icon }}"></use>
       </svg>
     </a>

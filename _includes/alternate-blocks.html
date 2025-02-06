@@ -26,7 +26,7 @@
                 {% if block.buttons!=nil%}
                     <div class="mt-2 mt-md-4 mb-2 {% if thecycle == 'even' %}text-md-right{% endif %}">
                         {% for button in block.buttons %}
-                            <a href="{{button.url}}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
+                            <a href="{{button.url}}" class="{{button.class}} me-3 mt-2">{{button.label}}</a>
                         {% endfor %}
                     </div>
                 {% endif %}

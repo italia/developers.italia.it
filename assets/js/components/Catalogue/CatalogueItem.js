@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
+import { Card, CardBody, CardTitle, CardReadMore, CardText } from 'design-react-kit';
 import { ImageWithPlaceholder } from '../ImageWithPlaceholder.js';
 import { l10NLabels } from '../../utils/l10n.js';
 import { searchItemProptypes } from '../../utils/proptypes.js';
@@ -8,6 +9,7 @@ import { searchItemProptypes } from '../../utils/proptypes.js';
 const useStyles = createUseStyles({
   link: {
     display: 'block',
+    color: '#17324d',
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'none',
@@ -55,34 +57,58 @@ const useStyles = createUseStyles({
 });
 
 // eslint-disable-next-line react/prop-types
-export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback }) => {
+export const CatalogueItem = ({ id, name, description, url, icon, category, logo, fallback, simple = false }) => {
   const classes = useStyles();
-
-  return (
-    <article
-      id={id}
-      className="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 px-10"
-      data-testid={id}
-      data-class="catalogue-item"
-    >
-      <div>
-        <Icon icon={icon} size="sm" className="mr-1" />
-        <span className={classes.category}>{l10NLabels.software[category]}</span>
-      </div>
-      <div className="my-2 my-md-0 w-100">
-        <a href={url} title={name} className={classes.link} data-testid="item-anchor">
-          <div className={classes.logoContainer}>
-            <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
+  if (!simple) {
+    return (
+      <Card className="card-img no-after shadow" data-testid={id}>
+        <div className="img-responsive-wrapper">
+          <div className="img-responsive">
+            <figure className="img-wrapper">
+              <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
+            </figure>
           </div>
-          <div className={classes.title}>{name}</div>
-          <div className={classes.description}>{description}</div>
-        </a>
-      </div>
-      <a href={url} title={name} className={classes.readMore}>
-        {l10NLabels.software.read_more} →
-      </a>
-    </article>
-  );
+        </div>
+        {icon && (
+          <div className="m-1">
+            <Icon icon={icon} size="sm" className="me-1" />
+            <span className={classes.category}>{l10NLabels.software[category]}</span>
+          </div>
+        )}
+        <CardBody>
+          <CardTitle className="h6 line-clamp-2" tag="p">
+            {name}
+          </CardTitle>
+          <CardText className="line-clamp-3">{description}</CardText>
+          <CardReadMore
+            href={url}
+            text={l10NLabels.software.read_more}
+            title={l10NLabels.software.read_more}
+            iconName="it-arrow-right"
+            data-testid="item-anchor"
+          />
+        </CardBody>
+      </Card>
+    );
+  } else {
+    return (
+      <Card className="shadow" data-testid={id}>
+        <CardBody>
+          <CardTitle className="h6 line-clamp-2" tag="p">
+            {name}
+          </CardTitle>
+          <CardText className="line-clamp-3">{description}</CardText>
+          <CardReadMore
+            href={url}
+            text={l10NLabels.software.read_more}
+            title={l10NLabels.software.read_more}
+            iconName="it-arrow-right"
+            data-testid="item-anchor"
+          />
+        </CardBody>
+      </Card>
+    );
+  }
 };
 
 CatalogueItem.propTypes = {

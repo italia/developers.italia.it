@@ -13,7 +13,6 @@ const useStyle = createUseStyles({
   },
   searchBar: {
     color: 'var(--primary) !important',
-    fontSize: '3rem',
     height: 'auto !important',
     width: '100%',
     padding: '.375rem .75rem !important',
@@ -35,15 +34,14 @@ export const SearchBar = React.memo(({ defaultValue = '', placeholder = '', onCh
 
   return (
     <h2 className="d-flex align-items-center mb-0">
-      <Icon color="primary" icon="it-search" className="icon-lg mb-0" />
+      <Icon color="primary" icon="it-search" className="icon-lg mb-0 d-none d-lg-block" />
       <input
         data-testid="search-bar"
         autoFocus={true}
         placeholder={placeholder}
         type="text"
         className={classes.searchBar}
-        name="search"
-        ref={register}
+        {...register('search')}
         onChange={handleOnChangeSearchValue}
       />
     </h2>

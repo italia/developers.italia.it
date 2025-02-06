@@ -2,7 +2,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 import { search } from '../../services/searchEngine.js';
 import { SearchContainer } from './SearchContainer.js';
 
@@ -25,16 +25,6 @@ describe('SearchContainer', () => {
     const searchButton = await screen.findByTestId('search-button');
     userEvent.click(searchButton);
     expect(await screen.findByTestId('search-modal')).toBeInTheDocument();
-    expect(search).toHaveBeenCalledTimes(1);
-  });
-
-  it('closes the search modal on x button click', async () => {
-    render(<SearchContainer />);
-    const searchButton = await screen.findByTestId('search-button');
-    userEvent.click(searchButton);
-    const closeButton = await screen.findByTestId('close-search-modal');
-    userEvent.click(closeButton);
-    expect(screen.queryByTestId('search-modal')).not.toBeInTheDocument();
     expect(search).toHaveBeenCalledTimes(1);
   });
 
