@@ -32,6 +32,17 @@ resources:
           icon: github
           url: https://github.com/italia/anpr-client-example
           desc: Client per il test della connessione ad ANPR
+collab:
+  description: Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un issue tracker e un forum dedicato alla discussione delle problematiche di integrazione.
+  links:
+  - name: issue_tracker
+    url: "https://github.com/italia/anpr/issues"
+  - name: forum
+    url: "https://forum.italia.it/c/anpr"
+  - title: "Dialoga su Slack (#anpr)"
+    url: https://developersitalia.slack.com/archives/C7A8NS7RQ
+  - name: "sign_up_slack"
+    url: "https://slack.developers.italia.it/"
 ---
 
 ## Intro
@@ -72,16 +83,5 @@ salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Per le specifiche tecniche la documentazioni dei servizi e la guida al processo
 di migrazione per i comuni si faccia riferimento alla [Documentazione tecnica
-e tabelle di
+e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/){:target="_blank"}
 riferimento](https://docs.italia.it/italia/anpr/anpr/){:target="_blank"}
-
-## Canali
-
-Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui
-un *issue tracker* e un forum dedicato alla discussione delle problematiche di
-integrazione.
-
-<a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><i class="it-github" /> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C7A8NS7RQ" target="_blank"><i class="it-comment" /> Dialoga su Slack (#anpr)</a>
-<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
