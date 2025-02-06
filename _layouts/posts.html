@@ -27,14 +27,18 @@ layout: default
         
         {% if active_lang=='it' %}
         <div class="postslisting__filtertag ms-auto d-flex">
-        <a href="#" class="align-self-center d-flex" data-activate-element
-            data-activeid="filterTags">{{ t.news_filter }} <span class="ms-3 it-expand"></span><span
-              class="ms-3 it-collapse"></span></a>
+        <button type="button" 
+          class="btn w-100 collapsed d-flex" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#collapseTags" 
+          aria-expanded="false" 
+          aria-controls="collapseTags" >{{ t.news_filter }}
+        </button>
 
         </div>
         {% endif %}
       </div>
-      <div class="container postslisting__tags deactive" data-activatedby="filterTags">
+      <div class="container postslisting__tags collapse" id="collapseTags">
         {% capture categories %}
         {% for category in site.tags %}{{ category[0] }}:{% endfor %}
         {% endcapture %}
