@@ -17,9 +17,6 @@ module.exports = {
   },
 
   resolve: {
-    alias: {
-      jquery: require.resolve("jquery"),
-    },
     fallback: {
       // needed by elasticsearch
       util: require.resolve("util"),
