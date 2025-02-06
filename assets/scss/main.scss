@@ -1,26 +1,14 @@
 @import '~bootstrap-italia/src/scss/bootstrap-italia';
 
-@import 'datatables.net-dt/css/jquery.dataTables.css';
-
 @import './_administration-software';
 @import './administrations';
 @import './errors';
 @import './_highlight';
-@import './perfect-scrollbar';
-@import './_select2';
 @import './software-detail';
 @import './softwares';
-@import './_tiled-gallery';
 @import './footer';
 
 @import './fonts-bootstrap-italia';
-
-$pswp__assets-path: "~photoswipe/src/css/default-skin/";
-@import '~photoswipe/src/css/main';
-@import '~photoswipe/src/css/default-skin/default-skin';
-
-@import "highlight";
-
 @import './swagger-ui-overrides';
 
 a {
@@ -2106,90 +2094,6 @@ body {
   #github_languages_list, #github_projects_list_select {
     width: 100%;
   }
-//   #issues_table_wrapper {
-//     margin-right: 20px;
-
-//     .paginate_button {
-//       a {
-//       text-decoration: none !important;
-//       color: #06D !important;
-//       }
-
-//     }
-//     .paginate_button:hover {
-//       background: transparent !important;
-//       color: inherit !important;
-//       border: 1px solid transparent;
-//     }
-//     thead th, table.dataTable.no-footer {
-//       border-bottom: 2px solid #bbb;
-//     }
-//     tbody tr {
-//       background-color: transparent !important;
-//     }
-//     #issues_table_ellipsis:after {
-//       content: '• • •';
-//     }
-
-
-//     table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > td.sorting:after {
-//       display: none !important;
-//     }
-//     table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:after, table.dataTable thead > tr > th.sorting_desc:after, table.dataTable thead > tr > td.sorting:after,
-//     table.dataTable thead > tr > td.sorting_asc:after, table.dataTable thead > tr > td.sorting_desc:after {
-//       display: none !important;
-//     }
-
-//     #issues_table_filter {
-//       color: #444e57;
-//       input {
-//       border: 1px solid #ccc !important;
-//       }
-//     }
-//   }
-
-//   #issues_table td, #issues_table th {
-//     border: 1px solid #999;
-//     padding: 4px;
-//   }
-
-//   #github_filter {
-//     .select2-container {
-//       width: 100% !important;
-//       display: block;
-//     }
-//     #github_types_list {
-//       span {
-//         display: block;
-//         margin-bottom: 10px;
-//         input {
-//           margin-right: 4px;}
-//       }
-//       *[class^='issue-'] {
-//         position: relative;
-//         top: 0.5em;
-//         margin-right: 0.5em;
-//         margin-left: 0.5em;
-//       }
-//     }
-
-//     #issues_table_clear {
-//       box-shadow: none;
-//       width: 100%;
-//       text-transform: none;
-//       border: none;
-//     }
-//   }
-
-
-//   @media screen and (max-width: 767px) {
-//     #issues_table_wrapper {
-//       .paginate_button {
-//         display: block;
-//         float: left;
-//       }
-//     }
-//   }
 
   /* SIDEBLOCK */
   .sideblock-wrapper {
