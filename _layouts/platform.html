@@ -90,6 +90,11 @@ Still to-do:
     <div class="project__maincontent col-12 col-md-10">
       {{ content }}
 
+      {% if page.collab %}
+        <h2>{{t.project_collab}}</h2>
+        {% include platform-collab.html %}
+      {% endif %}
+
       {% if page.resources %}
         {% unless page.resources_hide_title %}
           <h2>{{t.project_risorse}}</h2>
