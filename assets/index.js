@@ -1,6 +1,6 @@
 // This is Webpack's entrypoint.
 
-import { BackToTop, Dropdown, Tab, Collapse, HeaderSticky, NavBarCollapsible } from 'bootstrap-italia';
+import { BackToTop, Dropdown, Tab, Collapse, HeaderSticky, NavBarCollapsible, CarouselBI } from 'bootstrap-italia';
 
 import './scss/main.scss';
 
@@ -12,6 +12,11 @@ import { App } from './js/App.js';
 // Init Bootstrap Italia JS
 
 BackToTop.getOrCreateInstance(document.getElementsByClassName('back-to-top')[0]);
+
+const carouselItems = [].slice.call(document.querySelectorAll('.splide'));
+carouselItems.map((element) => {
+  new CarouselBI(element);
+});
 
 const navBarCollapsibleButton = document.querySelector("[data-bs-toggle='navbarcollapsible']");
 NavBarCollapsible.getOrCreateInstance(document.querySelector(navBarCollapsibleButton.dataset.bsTarget));

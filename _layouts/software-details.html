@@ -708,13 +708,6 @@ layout: default
             </div>
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">{{ t.software.extende_description }}</p>
-              <!--
-                Use data-proofer-ignore to make html-proofer ignore this section for now:
-                it comes from external publiccode.yml files so there might be broken links
-                out of our control making our CI pipeline fail.
-
-                TODO: find a better solution
-              -->
               <div class="font-serif page-detail__text" data-proofer-ignore>
                 {{ description.longDescription | markdownify }}
               </div>
