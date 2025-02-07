@@ -32,7 +32,7 @@ export const SearchModal = ({ onClose }) => {
           <h1>{l10NLabels['search_form_label']}</h1>
         </div>
       </ModalHeader>
-      <ModalBody className="mt-3" tag="div">
+      <ModalBody className="mt-3 p-0" tag="div">
         <div className="container">
           <div className="mb-5">
             <SearchBar onChange={handleSearch} placeholder={l10NLabels.search_form_placeholder} />
