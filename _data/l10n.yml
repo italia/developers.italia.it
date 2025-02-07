@@ -245,6 +245,7 @@ it:
       goToCode: Codice sorgente
       goToRoadmap: Roadmap
       declare_reuse: La mia amministrazione lo usa
+      maximize_image: Visualizza a schermo intero
       functionality: Funzionalità del software
       functionality_this_variant: Funzionalità
       functionality_other_variant: Funzionalità di altre varianti
@@ -690,6 +691,7 @@ en:
       goToCode: Source code
       goToRoadmap: Roadmap
       declare_reuse: My Administration uses it
+      maximize_image: Display image in original size
       functionality: Software functionality
       functionality_this_variant: Functionality of this variant
       functionality_other_variant: Functionality of others variants
