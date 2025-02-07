@@ -17,6 +17,9 @@ const useStyle = createUseStyles({
     width: '100%',
     padding: '.375rem .75rem !important',
     marginBottom: 0,
+    '@media (max-width: 720px)': {
+      fontSize: '5vw',
+    },
   },
 });
 
