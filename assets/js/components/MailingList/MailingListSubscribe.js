@@ -103,7 +103,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
               <div className="form-group mw-md-50 mb-2 mb-md-4">
                 <i className="it-mail"></i>
                 <Input
-                  iconLeft={<Icon aria-hidden icon="it-mail" size="sm" />}
+                  iconLeft={<Icon aria-hidden icon="it-mail" size="sm" color="primary" />}
                   hasIconLeft
                   required
                   type="email"
