@@ -20,16 +20,16 @@ Il Titolare del trattamento è la Presidenza del Consiglio dei Ministri - Dipart
 la trasformazione digitale, con sede in Largo Pietro di Brazzà 86, 00187 Roma,
 contattabile ai seguenti recapiti:
 
-* E-mail: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it);
-* PEC: [diptrasformazionedigitale@pec.governo.it](mailto:diptrasformazionedigitale@pec.governo.it).
+* E-mail: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it)
+* PEC: [diptrasformazionedigitale@pec.governo.it](mailto:diptrasformazionedigitale@pec.governo.it)
 
 ## Responsabile per la protezione dei dati
 
 Il Responsabile per la protezione dei dati - Data Protection Officer è contattabile ai
 seguenti recapiti:
 
-* E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it);
-* PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it).
+* E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it)
+* PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it)
 
 ## Come vengono trattati i tuoi dati personali - periodo di conservazione - base giuridica
 
@@ -106,7 +106,7 @@ comunicazione ricevuta oppure scrivendoci agli indirizzi sopra riportati.
 Questa sezione fornisce informazioni dettagliate sull’uso dei cookie, su come
 sono utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del
 decreto legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle
-“[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)”
+"[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)"
 emanate dal Garante per la protezione dei dati personali con provvedimento del
 10 giugno 2021.
 
