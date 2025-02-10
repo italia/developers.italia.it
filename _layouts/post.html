@@ -29,10 +29,10 @@ layout: default
     <div class="container d-flex justify-content-center pb-2">
       <div class="col-md-10 ">
 
-        <div class="d-flex py-4 align-items-center">
+      <div class="row py-4 align-items-center">
         {% if page.author %}
         {% assign p = site.data.people[page.nickname] %}
-        <div class="d-flex align-items-center" style="gap: 1rem;">
+        <div class="col-12 col-md-8 d-flex align-items-center" style="gap: 1rem;">
           <div class="avatar avatar-primary size-xl">
             {% if p %}
             <img src="{{p.pic}}" alt="" class="img-fluid">
@@ -47,7 +47,7 @@ layout: default
           </div>
         </div>
         {% endif %}
-        <div class="postarticle__socials ms-auto">
+        <div class="col-12 col-md-4 postarticle__socials text-end mt-3">
           {% include share.html notext=true %}
         </div>
       </div>
