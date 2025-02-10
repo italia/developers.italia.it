@@ -36,7 +36,7 @@ Maggiori informazioni sugli obiettivi del progetto si possono leggere nel [post 
 
 ### Contatti
 
-Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizzo [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
+Siamo reperibili via [Slack e Matrix](https://slack.developers.italia.it/) o all'indirizzo [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
 
 ### Responsabili
 

@@ -47,7 +47,7 @@ Further information about the project goals may be found in the [launch Medium p
 
 ### Contacts
 
-We are reachable via [Slack](https://slack.developers.italia.it/) or through the [contatti@developers.italia.it](mailto:contatti@developers.italia.it) address.
+We are reachable via [Slack and Matrix](https://slack.developers.italia.it/) or through the [contatti@developers.italia.it](mailto:contatti@developers.italia.it) address.
 
 ### Team
 
