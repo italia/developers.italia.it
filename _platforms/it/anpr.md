@@ -82,5 +82,4 @@ salotto, oppure di scaricare un certificato di stato di famiglia.
 
 Per le specifiche tecniche la documentazioni dei servizi e la guida al processo
 di migrazione per i comuni si faccia riferimento alla [Documentazione tecnica
-e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/){:target="_blank"}
-riferimento](https://docs.italia.it/italia/anpr/anpr/){:target="_blank"}
+e tabelle di riferimento](https://docs.italia.it/italia/anpr/anpr/){:target="_blank"}.

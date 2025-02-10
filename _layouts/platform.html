@@ -109,6 +109,11 @@ Still to-do:
 
     {% capture toc %}
     {% toc %}
+    {% if page.collab %}
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#collab">{{ t.project_collab }}</a></li>
+    </ul>
+    {% endif %}
     {% if page.resources %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>
