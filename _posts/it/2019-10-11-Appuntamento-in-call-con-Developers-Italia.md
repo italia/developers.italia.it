@@ -6,10 +6,11 @@ date:   2019-10-11 12:00:00 +0100
 tags: developers call
 categories: news
 author: Andrea Biancini
+nickname: biancio
 image: /assets/icons/logo-it.png
 locale: it
 ref:
-  en: 
+  en:
 redirect_from:
    -
 ---
@@ -23,7 +24,7 @@ Durante la scorsa call, abbiamo avviato alcune interessanti discussioni su **com
 Nella prossima call, come sempre, avremo modo di ricevere uno stimolo dal racconto di alcuni membri della nostra community. In particolare:
 
  - **Roberto Polli**, del Team per la Trasformazione Digitale, ci racconterà la sua esperienza in tema di [API ed interoperabilità](https://teamdigitale.governo.it/it/projects/api.htm);
- - **Valentino Lauciani** ci presenterà l’esperienza in merito dell’Istituto Nazionale di Geofisica e Vulcanologia. 
+ - **Valentino Lauciani** ci presenterà l’esperienza in merito dell’Istituto Nazionale di Geofisica e Vulcanologia.
 
 Dopo gli interventi avremo modo di intavolare una discussione in cui vi daremo spazio per poter parlare e confrontarvi sulle esperienze che state avendo, e aiutarci a capire come possiamo proseguire insieme.
 

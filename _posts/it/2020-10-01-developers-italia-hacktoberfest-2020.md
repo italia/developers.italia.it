@@ -6,6 +6,7 @@ date:   2020-10-01 10:00:00 +0100
 tags: developers hacktoberfest community
 categories: news
 author: Leonardo Favario
+nickname: leo
 image: /assets/icons/logo-it.png
 locale: it
 ref:
@@ -24,7 +25,7 @@ L’iniziativa ha lo scopo di favorire la crescita di progetti di software liber
 attraverso una serie di sfide da completare a ottobre. Nel corso del mese sarà
 quindi possibile contribuire anche ai progetti software ospitati all’interno
 delle organizzazioni Github [/italia](https://github.com/italia)
-e [/teamdigitale](https://github.com/teamdigitale). 
+e [/teamdigitale](https://github.com/teamdigitale).
 Sarà l’occasione per chiunque di dare il proprio contributo allo sviluppo dei
 servizi pubblici digitali, e quindi al miglioramento del rapporto tra cittadini
 e Pubblica amministrazione.

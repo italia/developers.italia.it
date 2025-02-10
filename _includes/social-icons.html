@@ -12,6 +12,7 @@
   {% if item[1].icon %}
   {% assign icon = item[1].icon %}
   {% endif %}
+  {% if item[1].link %}
   <li class="list-inline-item">
     <a class="icon" href="{{ item[1].link }}" title="{{ item[1].name }}" rel="me"  aria-label="{{ item[1].name }}" target="_blank"
     rel="noreferrer">
@@ -20,5 +21,6 @@
       </svg>
     </a>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>

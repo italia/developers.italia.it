@@ -6,6 +6,7 @@ date: 2022-02-22 12:00:00 +0200
 tags: developers designers designsystem
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---

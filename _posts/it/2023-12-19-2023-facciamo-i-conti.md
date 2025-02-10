@@ -6,6 +6,7 @@ date: 2023-12-19 11:00:00 +0200
 tags: developers community opensource partecipazione
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/images/posts/2023-12-19/osor-award-developers-2023.jpg
 locale: it
 ---

@@ -3,15 +3,16 @@ layout: post
 title: Working to make our lives better
 subtitle: Developers Italia will participate to the ISA² closing event
 date:   2021-04-19 10:00:00 +0100
-tags: developers opensource 
+tags: developers opensource
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: en
 ref:
   it: /it/news/2021/04/19/working-to-make-our-lives-better
 redirect_from:
-   - 
+   -
 ---
 
 Also Developers Italia will participate in the international event "[Working to make our lives better](https://digitallpublic.eu/)" which will be held online on the 20th, 21th and 22nd of April.

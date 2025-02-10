@@ -6,6 +6,7 @@ date: 2021-06-10 09:00:00 +0200
 tags: community call developers designers opensource
 categories: news
 author: Matteo Vabanesi
+nickname: matteov
 image: /assets/icons/logo-it.png
 locale: it
 ---

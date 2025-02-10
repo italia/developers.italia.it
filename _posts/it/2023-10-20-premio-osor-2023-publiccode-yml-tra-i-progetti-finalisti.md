@@ -6,6 +6,7 @@ date: 2023-10-20 11:00:00 +0200
 tags: developers community opensource eu osor
 categories: news
 author: Fabio Bonelli
+nickname: bfabio
 image:
 locale: it
 ---

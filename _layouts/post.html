@@ -29,12 +29,22 @@ layout: default
     <div class="container d-flex justify-content-center pb-2">
       <div class="col-md-10 ">
 
-        <div class="d-flex py-4">
+        <div class="d-flex py-4 align-items-center">
         {% if page.author %}
-        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="postarticle__author">
-          <span itemprop="name">{{ page.author }}</span>
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" >
-              {{ page.date | localize: active_lang, ':short_date' }}</time>
+        {% assign p = site.data.people[page.nickname] %}
+        <div class="d-flex align-items-center" style="gap: 1rem;">
+          <div class="avatar avatar-primary size-xl">
+            {% if p %}
+            <img src="{{p.pic}}" alt="" class="img-fluid">
+            {% else %}
+            <p aria-hidden="true">{{ page.author| slice: 0 }}</p>
+            {% endif %}
+          </div>
+          <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="postarticle__author">
+            <span itemprop="name">{{ page.author }}</span>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" >
+                {{ page.date | localize: active_lang, ':short_date' }}</time>
+          </div>
         </div>
         {% endif %}
         <div class="postarticle__socials ms-auto">

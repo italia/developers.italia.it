@@ -24,14 +24,14 @@ layout: default
         {% else %}
         <h1>{{ page.title }}</h1>
         {% endif %}
-        
+
         {% if active_lang=='it' %}
         <div class="postslisting__filtertag ms-auto d-flex">
-        <button type="button" 
-          class="btn w-100 collapsed d-flex" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#collapseTags" 
-          aria-expanded="false" 
+        <button type="button"
+          class="btn w-100 collapsed d-flex"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTags"
+          aria-expanded="false"
           aria-controls="collapseTags" >{{ t.news_filter }}
         </button>
 
@@ -60,6 +60,7 @@ layout: default
             date=post.date
             cta=post.cta
             author=post.author
+            nickname=post.nickname
             title=post.title
             link=post.url
             text=post.subtitle
@@ -81,6 +82,7 @@ layout: default
             {% include card.html
                 date=post.date
                 author=post.author
+                nickname=post.nickname
                 title=post.title
                 link=post.url
                 text=post.subtitle
@@ -98,13 +100,13 @@ layout: default
 
           {% endfor %}
         </div>
-        
+
         {% if paginator.total_pages > 1 %}
         {% assign division_by_page_size = paginator.total_posts | modulo:paginator.per_page %}
         {% assign division_by_page_size = division_by_page_size | minus:2 %}
         {% assign division_by_page_size = division_by_page_size | modulo:3 %}
         {% if paginator.page == paginator.total_pages and division_by_page_size != 0 %}
-        <div class="w-100 d-none d-md-block postslisting__hr"></div>  
+        <div class="w-100 d-none d-md-block postslisting__hr"></div>
         {% endif %}
         <nav class="pagination-wrapper justify-content-center">
           <ul class="pagination" aria-label="{{ t.paginator_page }} {{ paginator.page }} {{t.paginator_of}} {{ paginator.total_pages }}">
@@ -115,7 +117,7 @@ layout: default
                 class="page-item disabled"
               {% endif %}
             >
-              <a class="page-link" href="{{ paginator.previous_page_path }}" 
+              <a class="page-link" href="{{ paginator.previous_page_path }}"
                 {% if paginator.page == 1 %}
                   tabindex="-1" aria-hidden="true"
                 {% endif %}

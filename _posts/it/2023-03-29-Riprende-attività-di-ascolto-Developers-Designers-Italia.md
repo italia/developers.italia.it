@@ -6,10 +6,11 @@ date: 2023-03-29 08:00:00 +0200
 tags: developers designers community
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image:
 locale: it
 ---
-Developers Italia e Designers Italia rilanciano il **questionario** per comprendere meglio l’esperienza delle persone con gli strumenti e le risorse messe a disposizione sui propri siti e canali di comunicazione. 
+Developers Italia e Designers Italia rilanciano il **questionario** per comprendere meglio l’esperienza delle persone con gli strumenti e le risorse messe a disposizione sui propri siti e canali di comunicazione.
 
 **Il 2022 è stato un anno di conferma per la nostra community**, segnando un interesse crescente sui temi della progettazione con le persone al centro per Pubblica Amministrazione, fornitori e società in house. Le persone registrate sono aumentate del 16%, da 19 mila a quasi 22 mila, e più di mille persone hanno preso parte alle community call e ai community lab dedicati alla progettazione e sviluppo di servizi pubblici digitali.
 
