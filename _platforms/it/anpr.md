@@ -40,9 +40,8 @@ collab:
   - name: forum
     url: "https://forum.italia.it/c/anpr"
   - title: "Dialoga su Slack (#anpr)"
+    icon: it-slack
     url: https://developersitalia.slack.com/archives/C7A8NS7RQ
-  - name: "sign_up_slack"
-    url: "https://slack.developers.italia.it/"
 ---
 
 ## Intro
