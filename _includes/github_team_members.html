@@ -1,55 +1,24 @@
-{% if page.github_team%}
+{% if page.github_team %}
 {% assign team = site.data.github_teams | where: "slug", page.github_team %}
 {% assign team_members = team.first.members %}
 
 {% if team_members.size > 0 %}
-<div class="project__leaders">
+<div class="project__leaders mt-md-0 mt-4">
 	<h6 class="mb-3">{{  t.project_leader }} </h6>
-	<div id="projectLeadersIndicator"
-		class="carousel slide d-flex flex-column {% if team_members.size < 3 %}no-height{%endif%}" data-ride="carousel">
-		<div class="carousel-inner">
-			{% for member in team_members %}
-			{% assign division3index0 = forloop.index0 | modulo:3 %}
-			{% assign division3 = forloop.index | modulo:3 %}
-			{% if division3index0==0 or forloop.first %}
-			<div class="carousel-item {% if forloop.first %}active{%endif%}">
-				<ul class="list-unstyled">
-					{% endif %}
-					<li class="d-flex project__leaders__item mb-3">
-						<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"><img width="50"
-								src="{{member.avatar_url}}&s=50" alt="{ {member.login }}"></a>
-						<div class="ms-2 d-flex">
-							<a href="{{member.html_url}}" title="{{member.login}}" target="_blank"
-								class="align-self-center">{{member.name | default: member.login}}</a>
-						</div>
-					</li>
-
-					{% if division3==0 or forloop.last %}
-				</ul>
-			</div>
-			{% endif %}
-			{% endfor %}
-		</div>
-		{% if team_members.size > 3 %}
-		<div class="carousel-footer mt-auto d-flex">
-
-			<ol class="carousel-indicators align-self-center">
-        {% assign indicators = team_members.size | divided_by: 3.0 | ceil %}
-				{% assign checkIndicators = indicators | times: 3 %}
-
-				{% for item in (1..indicators) %}
-				<li data-target="#projectLeadersIndicator" data-slide-to="{{forloop.index0}}"
-					{% if forloop.first %} class="active" {% endif %}></li>
-				{% endfor %}
-				{% if checkIndicators < team_members.size  %}
-				<li data-target="#projectLeadersIndicator" data-slide-to="{{indicators}}"></li>
-				{% endif %}
-			</ol>
-		</div>
-		{% endif %}
-
+	<div id="projectLeadersIndicator">
+    <ul class="list-unstyled">
+      {% for member in team_members %}
+      <li class="d-flex project__leaders__item mb-3">
+        <a href="{{ member.html_url }}" title="{{ member.login }}" target="_blank"><img width="50"
+            src="{{ member.avatar_url }}&s=50" alt="{{ member.login }}"></a>
+        <div class="ms-2 d-flex">
+          <a href="{{ member.html_url }}" title="{{ member.login }}" target="_blank"
+            class="align-self-center">{{ member.name | default: member.login }}</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
 	</div>
-
 </div>
 {% endif %}
 {% endif %}
