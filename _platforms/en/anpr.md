@@ -41,8 +41,9 @@ collab:
     url: "https://github.com/italia/anpr/issues"
   - name: forum
     url: "https://forum.italia.it/c/anpr"
-  - name: "sign_up_slack"
-    url: "https://slack.developers.italia.it/"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C7A8NS7RQ
 ---
 
 ## Intro

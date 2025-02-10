@@ -92,6 +92,14 @@ resources:
       icon: github
       url: https://github.com/ministero-salute/it-fse-accreditati/tree/main/RESULTS
       desc: Lista aggiornata dei software che hanno superato la Fase 1
+collab:
+  description:
+  links:
+  - name: issue_tracker
+    url: "https://github.com/ministero-salute/it-fse-support/issues"
+  - title: "Dialoga su Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C03RDT88FSM
 ---
 
 ## Intro
@@ -110,7 +118,7 @@ Secondo le Linee guida di attuazione il FSE dovrà diventare:
 Affinché ciò avvenga è necessario che l’infrastruttura tecnologica evolva per:
 - rendere FSE omogeneo sul territorio nazionale per dati contenuti, servizi offerti, semplicità di utilizzo/interfaccia e portabilità;
 - assicurare che i documenti che alimentano il FSE siano effettivamente prodotti secondo gli standard nazionali;
-- rendere più efficace l’interoperabilità tra fascicoli regionali; 
+- rendere più efficace l’interoperabilità tra fascicoli regionali;
 - realizzare una effettiva gestione del dato da affiancare a quella del documento;
 - garantire che i dati del FSE possano valere anche ai fini secondari (ricerca e governo).
 
@@ -120,7 +128,7 @@ Il FSE 2.0 è una infrastruttura distribuita che comprende elementi regionali e 
 ![](/assets/images/fse/FSE2.png)
 
 Per consentire una gestione più efficace del dato vengono introdotti due nuovi elementi infrastrutturali:
-**il Gateway**, che ha il compito di verificare la coerenza nell’applicazione degli standard, sia per dati che per documenti, 
+**il Gateway**, che ha il compito di verificare la coerenza nell’applicazione degli standard, sia per dati che per documenti,
 **l’Ecosistema Dati Sanitari (EDS)** che raccoglie, gestisce e rende fruibile il dato mediante servizi REST.  L’EDS, mediante servizi di sottoscrizione e sincronizzazione può alimentare repository regionali con i dati di pertinenza delle regioni nelle modalità indicate dalla norma. L’EDS infine realizza le funzionalità di monitoraggio di alimentazione e di utilizzo del sistema FSE da parte del cittadino e degli operatori sanitari.
 
 #### Standard per dati e documenti
@@ -150,13 +158,13 @@ Per accreditamento si intende il processo di verifica tecnica  di aderenza alle 
 Per avviare l'integrazione in produzione con il Gateway FSE 2.0, è necessario completare la procedura di accreditamento.
 
 Il processo complessivo di adeguamento e messa in produzione dell’applicativo è composto dalle seguenti fasi:
-* **fase 1**: accreditamento (convalida) dell’applicativo software:  
+* **fase 1**: accreditamento (convalida) dell’applicativo software:
   * viene eseguito presso gli ambienti di test del fornitore al quale vengono rilasciati i certificati di test per accedere al gateway di pre-produzione; tali certificati vengono usati per l’accreditamento di tutti gli applicativi software del medesimo fornitore oggetto di accreditamento;
   * ha l’obiettivo di verificare la conformità con le specifiche nazionali;
-* **fase 2**:  verifica tecnica dell'impianto in azienda: 
+* **fase 2**:  verifica tecnica dell'impianto in azienda:
   * viene eseguito, a discrezione della Regione/Azienda, presso gli ambienti di test dell’azienda/regione;
-  * ha come obiettivo quello di verificare la conformità con le specifiche nazionali, regionali e di integrazione; 
-* **fase 3**:  deployment e monitoraggio in produzione:  
+  * ha come obiettivo quello di verificare la conformità con le specifiche nazionali, regionali e di integrazione;
+* **fase 3**:  deployment e monitoraggio in produzione:
   * viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
@@ -166,19 +174,11 @@ Per poter accedere ai servizi è necessario avere 2 certificati x509. Per il lor
 
 Eseguito il "[piano di test](https://github.com/ministero-salute/it-fse-accreditamento/tree/main/Test%20Case)" di accreditamento si invieranno i risultati come indicato nel repository "[it-fse-accreditamento](https://github.com/ministero-salute/it-fse-accreditamento)".
 
-**N.B**
-
-**Il processo di accreditamento (convalida) dei software per il servizio di pubblicazione è posticipato, al momento la priorità è data al processo di accreditamento legato all’adeguamento dei CDA2 alle nuove specifiche.  
-Si ricorda che sono comunque disponibili i test case di pubblicazione ed è sempre possibile utilizzare i servizi dell’istanza del gateway in pre-produzione per test interni in ottica accreditamento.  
+**Il processo di accreditamento (convalida) dei software per il servizio di pubblicazione è posticipato, al momento la priorità è data al processo di accreditamento legato all’adeguamento dei CDA2 alle nuove specifiche.
+Si ricorda che sono comunque disponibili i test case di pubblicazione ed è sempre possibile utilizzare i servizi dell’istanza del gateway in pre-produzione per test interni in ottica accreditamento.
 L’avvio dell’accreditamento (convalida) dei software per il servizio di pubblicazione sarà comunicato in seguito.**
 
 ## Gestione fase transitoria avvio in produzione
 
 Per fase *transitoria* si intende la modalità di avvio in produzione dei software già adeguati ai nuovi standard documentali, prima della messa in linea del Gateway.
 Questa fase è descritta nel documento "[Transitorio](https://github.com/ministero-salute/it-fse-support/tree/main/doc/transitorio)".
-
-## Canali
-
-<a class="btn btn-primary" href="https://github.com/ministero-salute/it-fse-support/issues" target="_blank"><i class="it-horn" />Richiesta di supporto tramite GitHub</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C03RDT88FSM" target="_blank"><i class="it-comment" />Dialoga su Slack (#fse)</a>
-<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>

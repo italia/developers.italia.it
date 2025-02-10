@@ -3,6 +3,8 @@ title: Interoperabilità
 subtitle: Interoperabilità
 lang: it
 layout: default
+ref:
+  en: /en/interoperability
 ---
 
 <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
@@ -24,14 +26,9 @@ layout: default
                         crearne di innovativi</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://www.interop.pagopa.it">Piattaforma Digitale Nazionale Dati (PDND)<svg
-                            class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                <p><a href="https://www.interop.pagopa.it">Piattaforma Digitale Nazionale Dati (PDND)</a></p>
                 <p><a href="https://www.agid.gov.it/it/dati/basi-dati-interesse-nazionale">Basi Dati di Interesse
-                        Nazionale <br> (BDIN)<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                        Nazionale <br> (BDIN)</a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -41,13 +38,9 @@ layout: default
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/">Introduzione
-                        alla semantica dei dati<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                        alla semantica dei dati</a></p>
                 <p><a href="https://developers.italia.it/it/pdnd">Risorse</a></p>
-                <p><a href="https://schema.gov.it">Schema<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                <p><a href="https://schema.gov.it">Schema</a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -56,14 +49,9 @@ layout: default
                         OAS checker durante le fasi di sviluppo</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://italia.github.io/api-oas-checker/">API OAS checker<svg
-                            class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                <p><a href="https://italia.github.io/api-oas-checker/">API OAS checker</a></p>
                 <p><a href="https://github.com/italia/api-oas-checker-rules">Regole per il controllo automatico di
-                        specifiche OpenAPI<svg class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                        specifiche OpenAPI</a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -72,10 +60,7 @@ layout: default
                         test e rendili disponibili sul catalogo anche in esercizio</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://www.interop.pagopa.it/catalogo">Catalogo API<svg
-                            class="icon icon-sm align-top external-link-icon">
-                            <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                        </svg></a></p>
+                <p><a href="https://www.interop.pagopa.it/catalogo">Catalogo API</a></p>
             </div>
         </div>
         <h3 class="mt-5">Gli strumenti</h3>
@@ -155,9 +140,6 @@ layout: default
             <p>Individuano le tecnologie e gli standard che le Pubbliche Amministrazioni devono considerare durante la realizzazione dei propri sistemi informatici, al fine di permettere l’interoperabilità.</p>
             <a href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
                 Consulta le linee guida
-                <svg class="icon icon-sm align-top external-link-icon">
-                    <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                </svg>
             </a>
         </div>
         <div class="col-12 col-md-6 mt-5 pt-3">
@@ -165,9 +147,6 @@ layout: default
             <p>Una selezione di API REST italiane a disposizione di chi sviluppa software.</p>
             <a href="https://developers.italia.it/it/api">
                 Consulta gli esempi di API
-                <svg class="icon icon-sm align-top external-link-icon">
-                    <use href="/assets/svg/sprites.svg#it-external-link"></use>
-                </svg>
             </a>
         </div>
     </div>

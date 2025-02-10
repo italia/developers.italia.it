@@ -39,7 +39,7 @@ collab:
     url: "https://github.com/italia/anpr/issues"
   - name: forum
     url: "https://forum.italia.it/c/anpr"
-  - title: "Dialoga su Slack (#anpr)"
+  - title: "Dialoga su Slack"
     icon: it-slack
     url: https://developersitalia.slack.com/archives/C7A8NS7RQ
 ---

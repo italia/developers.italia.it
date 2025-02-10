@@ -12,6 +12,14 @@ highlight: true
 order: 5
 layout: platform
 github_team: docs-italia
+collab:
+  description: If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
+  links:
+  - name: forum
+    url: "https://forum.italia.it/"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9T4ELD4G
 ---
 
 ## Intro
@@ -35,12 +43,6 @@ These are the main tasks scheduled for the near future:
 * Simplifcation of the onboarding process and the administration/publishing backoffice.
 * Improvement of the **infrastructure** and log handling, and improvement of disaster recovery strategy.
 * Whitelabel features for organizations: we want to enable organizations to customize their page and use their own domains as well as embed contents from Docs Italia in their website.
-
-If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
-
-<a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a>
-<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Source code
 
@@ -67,7 +69,7 @@ Each document visible on [Docs Italia](https://docs.italia.it/){:target="_blank"
 
 ## Documentation
 
-Documentation for Docs Italia is published in Docs Italia itself! ;-)
+Documentation for Docs Italia is published in Docs Italia itself!
 
 A special document is the **Docs Italia Guide**, which explains how each public organization can create its account and publish a document. If you want to publish contents on Docs Italia you can start here:
 

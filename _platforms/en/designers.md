@@ -23,7 +23,7 @@ socials:
     icon: medium
     link: //medium.com/designers-italia
 resources:
-  - The Design System for the Italian Public Administration:
+  - Design System:
     - title: The Design System for the Italian Public Administration
       desc: Resources and guidelines to build high quality, efficient and accessible websites and digital services
       url: https://designers.italia.it/design-system/
@@ -52,7 +52,7 @@ resources:
       desc: "A set of open-source Angular components, based on the UI Kit and the Bootstrap Italia library"
       url: https://github.com/italia/design-angular-kit
       icon: github
-  - Municipality website and digital services templates:
+  - Municipality websites:
     - title: The municipality website and digital services templates on Designers Italia
       desc: "Free and open templates for information architecture, layouts and interfaces, CMS and documentation"
       url: https://designers.italia.it/modelli/comuni/
@@ -66,7 +66,7 @@ resources:
     - title: Project documentation for Municipality website and digital services
       url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
       icon: file
-  - School websites templates:
+  - School websites:
     - title: The School website templates on Designers Italia
       desc: "Free and open templates for information architecture, layouts and interfaces"
       url: https://designers.italia.it/kit/scuole/
@@ -80,7 +80,14 @@ resources:
     - title: Project documentation for schools
       url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/
       icon: file
-
+collab:
+  description:
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/anpr"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9N62GX8E
 redirect_from:
   - /en/design
 ---
@@ -124,11 +131,9 @@ The kit, built in Figma, is defined in **open and collaborative way on Github**,
 
 Many Public Administration projects are using the UI Kit to define their own interfaces, including templates for [sites of the municipalities](https://github.com/italia/design-comuni-prototipi){:target="_blank"} and [sites of schools](https://github.com/italia/design-scuole-prototipi){:target="_blank"}.
 
-For questions and discussions about the UI Kit, on [Developers Italia Slack](https://slack.developers.italia.it/){:target="_blank"}, you can refer to the channel [#design-system-ui-kit](https://developersitalia.slack.com/archives/C9N62GX8E) {:target="_blank"}.
-
 ## Web Development Kit
 
-The [Web Development Kits](https://designers.italia.it/kit/web-development-kit/){:target="_blank"} are a set of tools for the front end development of websites and web applications. They are HTML, CSS and Javascript libraries that allow you to create sites that comply with the design guidelines and code the provisions of the UI Kit. As of today, the most stable, updated and mature web development kit is Bootstrap Italia, based on the open-source library Bootstrap 4. They all have been included as part of the design system since 2022. 
+The [Web Development Kits](https://designers.italia.it/kit/web-development-kit/){:target="_blank"} are a set of tools for the front end development of websites and web applications. They are HTML, CSS and Javascript libraries that allow you to create sites that comply with the design guidelines and code the provisions of the UI Kit. As of today, the most stable, updated and mature web development kit is Bootstrap Italia, based on the open-source library Bootstrap 4. They all have been included as part of the design system since 2022.
 
 ### Bootstrap Italia
 
