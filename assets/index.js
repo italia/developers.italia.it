@@ -1,6 +1,15 @@
 // This is Webpack's entrypoint.
 
-import { BackToTop, Dropdown, Tab, Collapse, HeaderSticky, NavBarCollapsible, CarouselBI } from 'bootstrap-italia';
+import {
+  BackToTop,
+  Dropdown,
+  Tab,
+  Collapse,
+  HeaderSticky,
+  NavBarCollapsible,
+  CarouselBI,
+  Notification,
+} from 'bootstrap-italia';
 
 import './scss/main.scss';
 
@@ -48,6 +57,13 @@ headerSticky.addEventListener('on.bs.sticky', () => {
     };
   }, 100);
 });
+
+window.fireNotification = function (text, notificationId) {
+  event.preventDefault();
+  event.stopPropagation();
+  navigator.clipboard.writeText(text);
+  new Notification(document.getElementById(notificationId)).show();
+};
 
 // Init React components
 
