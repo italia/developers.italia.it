@@ -27,7 +27,7 @@
     {% if include.author %}
     {% assign p = site.data.people[include.nickname] %}
     <div class="d-flex align-items-center" style="gap: 1rem;">
-      <div class="avatar avatar-primary size-lg">
+      <div class="avatar avatar-primary size-lg outline-border">
         {% if p %}
         <img src="{{p.pic}}" alt="" class="img-fluid">
         {% else %}
