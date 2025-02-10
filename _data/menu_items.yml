@@ -11,7 +11,7 @@ it:
       - 'riuso'
   - title: Interoperabilità
     url: '/it/interoperabilita'
-    active_by_firstlevel: 
+    active_by_firstlevel:
       - 'interoperabilita'
   - title: Come lo uso
     url: '/it/come-lo-uso'
@@ -38,8 +38,8 @@ en:
       - 'software'
       - 'reuse'
   - title: Interoperability
-    url: '/it/interoperabilita'
-    active_by_firstlevel: 'api'
+    url: '/en/interoperability'
+    active_by_firstlevel: 'interoperability'
   - title: How to use it
     url: '/en/how'
     active_by_firstlevel: 'how'

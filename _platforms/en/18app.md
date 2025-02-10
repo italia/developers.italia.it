@@ -42,6 +42,14 @@ resources:
         - title: SDK for Magento (TODO)
           icon: github
           url: https://github.com/italia/18app-magento-sdk
+collab:
+  description: These discussion channels are aimed at free discussion among developers; they are not moderated by Sogei so no helpdesk is provided.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/18app-carta-docente"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/messages/C7AAA10PN
 ---
 
 ## Intro
@@ -52,10 +60,7 @@ Users enter with their [SPID digital identity](/en/spid) into a web application 
 
 In order to validate a coupon, merchants can use a simple web form or can leverage an API in order to build an integration directly from their payment software.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Chat on Slack (#18app)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
-
-These discussion channels are aimed at free discussion among developers; they are not moderated by Sogei so no helpdesk is provided. Check the official websites in order to contact the official helpdesk:
+Check the official websites in order to contact the official helpdesk:
 
 - [18app](https://www.18app.italia.it/){:target="_blank"}
 - [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}

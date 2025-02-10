@@ -22,6 +22,17 @@ socials:
     name: youtube
     icon: youtube
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
+collab:
+  description: We have already open a mailing list to debate about data and open data, so there you can find the archive of previous discussions and you can sign up to participate.
+  links:
+  - name: issue_tracker
+    url: "https://github.com/italia/dati.gov.it/issues"
+  - name: roadmap
+    icon: it-github
+    url: "https://github.com/italia/dati.gov.it/projects"
+  - title: "Mailing-list"
+    icon: it-mail
+    url: https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data
 ---
 
 ## Intro
@@ -53,14 +64,3 @@ While here you can find the repositories related to the evolution of dati.gov.it
 [Repo GitHub for evoution of dati.gov.it](https://github.com/italia/dati.gov.it){:target="_blank"}
 
 [New frontend server](https://github.com/italia/dati-frontendserver){:target="_blank"}
-
-
-## Collaboration
-
-We have already open a mailing list to debate about data and open data, so there you can find the archive of previous discussions and you can sign up to participate. In addition, we have also arranged a public tracker on GitHub:
-
-[Mailing-list OpenData & Analytics (ITA)](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data){:target="_blank"}
-
-[Issue tracking](https://github.com/italia/dati.gov.it/issues){:target="_blank"}
-
-[Development roadmap](https://github.com/italia/dati.gov.it/projects){:target="_blank"}

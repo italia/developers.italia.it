@@ -48,7 +48,7 @@ resources:
     - title: SDK per AspNetCore
       icon: github
       url: https://github.com/italia/spid-aspnetcore
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET AspNetCore MVC 
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET AspNetCore MVC
     - title: SDK per .NET
       icon: github
       url: https://github.com/italia/spid-dotnet-sdk
@@ -221,6 +221,14 @@ resources:
       url: https://www.samltool.com
       icon:
       desc: Onelogin SAML2 tools
+collab:
+  description:
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/spid"
+  - title: "Dialoga su Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/messages/C73R3UQE8
 ---
 
 ## Intro
@@ -267,8 +275,3 @@ I metadati degli Identity Provider sono disponibili presso lo [SPID registry](ht
 
 **La community di Developers Italia ha realizzato un'ampia gamma di componenti open source (SDK, esempi di codice, IAM Proxy, tools) pronti per l'uso.** Chiunque può contribuire al miglioramento dei componenti esistenti o aiutare a svilupparne di nuovi. È importante tenere presente che le risorse messe a disposizione della community non sono da intendersi come normative ma solo come supporto, esempio e aiuto integrativo per gli sviluppatori.
 
-## Canali
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Dialoga su Slack (#spid)</a>
-<a class="btn  btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>

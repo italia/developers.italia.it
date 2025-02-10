@@ -51,6 +51,15 @@ resources:
       url: https://sparql-noipa.mef.gov.it/sparql
       icon: file
       desc: Access the Virtuoso SPARQL Query Editor application, which will allow you to query the NOIPA Linked Open Data and download the required data.
+collab:
+  description:
+  links:
+  - title: "NoiPA portal"
+    icon: it-external-link
+    url: https://noipa.mef.gov.it/
+  - title: "Cloudify NoiPA"
+    icon: it-external-link
+    url: https://www.cloudifynoipa.it
 ---
 
 ## Intro
@@ -76,7 +85,3 @@ The system is designed around the user ensuring full flexibility and customizati
 NoiPA is open to collaboration with those who make research and innovation their goal.
 If you are a research institution or a university interested in collaborating with NoiPA for the realization of
 innovative projects nationally and internationally you can collaborate with NoiPA.
-
-<a class="btn btn-primary" href="https://noipa.mef.gov.it/"><i class="it-pa" />Visit NoiPA portal</a>
-<a class="btn btn-primary" href="https://www.cloudifynoipa.it"><i class="it-code-circle" />Learn more about Cloudify NoiPA</a>
-
