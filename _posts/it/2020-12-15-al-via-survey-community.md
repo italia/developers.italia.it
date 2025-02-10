@@ -6,6 +6,7 @@ date: 2020-12-15 10:00:00 +0100
 tags: community sviluppatori developers designers
 categories: news
 author: Leonardo Favario
+nickname: leo
 image: /assets/icons/logo-it.png
 locale: it
 ref:

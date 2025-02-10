@@ -16,4 +16,9 @@
       </li>
       {% endif %}
   {% endfor %}
+  <li class="list-inline-item">
+    <a onclick="navigator.clipboard.writeText('{{ shareurl }}')"  class="icon-wrapper">
+      <svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-copy"></use></svg>
+    </a>
+  </li>
 </ul>

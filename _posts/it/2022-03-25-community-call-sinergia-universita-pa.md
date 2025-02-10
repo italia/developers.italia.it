@@ -6,6 +6,7 @@ date: 2022-03-25 10:00:00 +0200
 tags: developers designers universita
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---

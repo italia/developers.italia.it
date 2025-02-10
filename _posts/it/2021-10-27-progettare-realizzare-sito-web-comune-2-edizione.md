@@ -6,6 +6,7 @@ date: 2021-10-27 13:00:00 +0200
 tags: developers designers opensource
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---
@@ -15,10 +16,10 @@ Il modello dei siti web per i Comuni propone uno **standard** per tutte le ammin
 
 Designers Italia mette inoltre a disposizione di Pubbliche Amministrazioni e fornitori una “[cassetta degli attrezzi](https://designers.italia.it/kit/){:target="_blank"}” per **progettare siti sempre più utili**, semplici da usare e inclusivi: si tratta di strumenti ideati per facilitare PA e fornitori nell’adozione di un approccio virtuoso alla trasformazione digitale.
 
-In aggiunta, grazie allo sviluppo in modalità open source, è possibile riutilizzare quanto messo a disposizione sul Catalogo di Developers Italia per rendere semplice, sicura ed economica la realizzazione, l’adozione e la manutenzione della soluzione scelta lato software. 
+In aggiunta, grazie allo sviluppo in modalità open source, è possibile riutilizzare quanto messo a disposizione sul Catalogo di Developers Italia per rendere semplice, sicura ed economica la realizzazione, l’adozione e la manutenzione della soluzione scelta lato software.
 
 Il corso è rivolto principalmente a coloro che, nei Comuni, nelle in house e presso i loro fornitori, si occupano della realizzazione o dell'aggiornamento del sito web dell’ente. Le **4 sessioni** on line, della durata di **2 ore** ciascuna, sono previste nelle seguenti date: **martedì 9 novembre**, **martedì 16 novembre**, **martedì 23 novembre** e **martedì 30 novembre** sempre **dalle ore 14.30 alle ore 16.30**. Non è possibile partecipare a un solo webinar.
 
-Per partecipare, **[registrati all’iniziativa](http://eventipa.formez.it/node/328513){:target="_blank"}** sul sito Eventi PA. Ti aspettiamo! 
+Per partecipare, **[registrati all’iniziativa](http://eventipa.formez.it/node/328513){:target="_blank"}** sul sito Eventi PA. Ti aspettiamo!
 
 Il Team di Developers Italia e Designers Italia

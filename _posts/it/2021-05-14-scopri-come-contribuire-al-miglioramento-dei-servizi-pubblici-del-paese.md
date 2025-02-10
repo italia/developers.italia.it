@@ -6,6 +6,7 @@ date: 2021-05-17 10:00:00 +0100
 tags: ogp wizard designers community guida partecipazione
 categories: news
 author: Riccardo Iaconelli
+nickname: ruphy
 image: /assets/icons/logo-it.png
 locale: it
 ---

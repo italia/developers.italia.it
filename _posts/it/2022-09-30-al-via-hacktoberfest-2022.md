@@ -6,6 +6,7 @@ date: 2022-09-30 16:30:00 +0200
 tags: developers designers hacktoberfest
 categories: news
 author: Fabio Bonelli
+nickname: bfabio
 image: /assets/images/posts/2022-09-30/hacktoberfest-banner.png
 locale: it
 ---

@@ -6,6 +6,7 @@ date: 2022-05-03 10:00:00 +0200
 tags: developers designers designsystem opensource
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---

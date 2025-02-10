@@ -25,8 +25,18 @@
   </main>
   <div class="py-2 mt-auto d-flex w-100">
     {% if include.author %}
-    <div class="newscard__author font-serif ">
-      <span>{{ t.by }} {{ include.author }}</span>
+    {% assign p = site.data.people[include.nickname] %}
+    <div class="d-flex align-items-center" style="gap: 1rem;">
+      <div class="avatar avatar-primary size-lg">
+        {% if p %}
+        <img src="{{p.pic}}" alt="" class="img-fluid">
+        {% else %}
+        <p aria-hidden="true">{{ include.author| slice: 0 }}</p>
+        {% endif %}
+      </div>
+      <div class="newscard__author font-serif ">
+        <span>{{ t.by }} {{ include.author }}</span>
+      </div>
     </div>
     {% endif %}
     {% if include.cta %}
