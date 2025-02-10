@@ -78,7 +78,7 @@ layout: default
           {% for post in paginator.posts offset:2 %}
           {% assign division_by_3 = forloop.index | modulo:3 %}
 
-          <div class="col-md-4">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
             {% include card.html
                 date=post.date
                 author=post.author
