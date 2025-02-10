@@ -5,7 +5,7 @@ subtitle: Al via una serie di appuntamenti online promossi dal DTD per presentar
 date:   2020-12-10 10:00:00 +0100
 tags: piattaforme sviluppatori eventi catalogo
 categories: news
-author:
+author: Team Developers Italia
 image: /assets/icons/logo-it.png
 locale: it
 ref:
