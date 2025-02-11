@@ -7,18 +7,35 @@ layout: internal-no-intro
 image: /assets/images/comepartecipo-temp-img.jpg
 include-discuss: true
 alternate-blocks:
-    - title: "Contribute to the enabling platforms"
-      text: "Everyone can contribute and become maintainer of SDKs, documentation, code examples. Did you develop new integrations, libraries and connectors for languages or technologies that are not yet in the community? Contact us in order to bring them to Developers Italia. Do you want to talk to other developers and improve the existing resources? Contact them on GitHub or Slack."
+    - title: Contribute
+      text: |
+        Do you want to help but don't know where to start?
+
+        All the development is hosted on GitHub [@italia](https://github.com/italia "Italia on Github")
+        where you can find our projects, as well as technologies they use.
+
+        To easily find what you are interested in, click on "Contribute!" button
+        and find out all the open issues waiting for contribution.
+
+      image: /assets/images/bug.svg
+      buttons:
+        - label: Contribute!
+          class: btn btn-primary w-100
+          url: 'https://github.com/orgs/italia/projects/49'
+        - label: Explore GitHub Italia
+          class: btn btn-outline-primary w-100
+          url: 'https://github.com/italia'
+
+    - title: Contact us
+      text: |
+        Have you developed new integrations, libraries or connectors for languages ​​or
+        technologies that are not currently present? Contact us to bring them to Developers
+        Italia and get in touch in real time with other developers!
+
       image: /assets/images/come-partecipo-3.svg
       buttons:
-        - label: Explore GitHub Italia
+        - label: Contact us on Slack and Matrix
           class: btn btn-primary w-100
-          url: 'https://github.com/italia'
-        - label: Contribute!
-          class: btn btn-outline-primary w-100
-          url: 'https://github.com/orgs/italia/projects/49'
-        - label: Chat on Slack and Matrix
-          class: btn btn-outline-primary w-100
           url: 'https://slack.developers.italia.it/'
     - title: "Participate in development of public software"
       text: "The catalogue of Developers Italia includes the open source software used or released by the Public Administration. Everyone can contribute: find bugs and security issues, or propose improvements and new features. Public digital services can now benefit from your contribution too."
