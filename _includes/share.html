@@ -17,8 +17,13 @@
       {% endif %}
   {% endfor %}
   <li class="list-inline-item">
-    <a onclick="navigator.clipboard.writeText('{{ shareurl }}')"  class="icon-wrapper">
+    <a href="#" onclick="fireNotification('{{ shareurl }}', 'shareNotification')" title="{{t.clipboard_copy}}" class="icon-wrapper">
       <svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-copy"></use></svg>
     </a>
   </li>
 </ul>
+<div class="notification bottom-fix with-icon success fade" data-bs-timeout="5000"  role="alert" aria-labelledby="not1e-title" id="shareNotification">
+  <h5 id="not1e-title" class="h5 ">
+    <svg class="icon"><use href="/assets/svg/sprites.svg#it-check-circle"></use></svg>{{t.clipboard_copied}}
+  </h5>
+</div>

@@ -63,6 +63,8 @@ it:
     active_lang: lingua attiva
     langs:
       show_all: Mostra tutte le lingue
+    clipboard_copy: Copia negli appunti
+    clipboard_copied: Copiato negli appunti
     cookiebar_accept: Accetto
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
     cookiebar_privacy_policy: Privacy policy
@@ -509,6 +511,8 @@ en:
     active_lang: current language
     langs:
       show_all: Show all languages
+    clipboard_copy: Copy to clipboard
+    clipboard_copied: Copied to clipboard
     cookiebar_accept: Accept
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
     cookiebar_privacy_policy: Privacy policy
