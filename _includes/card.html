@@ -18,7 +18,7 @@
     <span class="badge badge-secondary">{{ t.coming_soon }}</span>
     {% endif %}
   </h1>
-  <main class="font-serif">
+  <main class="font-sans-serif">
     {% if include.text != '' %}
     {{ include.text }}
     {% endif %}
@@ -34,7 +34,7 @@
         <p aria-hidden="true">{{ include.author| slice: 0 }}</p>
         {% endif %}
       </div>
-      <div class="newscard__author font-serif ">
+      <div class="newscard__author font-sans-serif ">
         <span>{{ t.by }} {{ include.author }}</span>
       </div>
     </div>
