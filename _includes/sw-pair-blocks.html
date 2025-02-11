@@ -17,7 +17,7 @@
                       <div class="card-body d-flex flex-column">
                           <h1 class="text-center px-2 px-md-4 mt-auto">{{block.title}}</h1>
                           {% if block.text != nil%}
-                          <div class="flex-fill font-serif mt-1 mb-1 alternateblock__text text-center px-2 px-md-4">{{block.text | markdownify }}</div>
+                          <div class="flex-fill font-sans-serif mt-1 mb-1 alternateblock__text text-center px-2 px-md-4">{{block.text | markdownify }}</div>
                           {% endif %}
                           {% if block.buttons != nil%}
                               <div class="px-2 px-md-4 text-center">
