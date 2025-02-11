@@ -46,7 +46,8 @@
 </footer>
 
 {% if jekyll.environment == "production" %}
-<script src="{{ '/dist/bundle.js' | relative_url }}"></script>
+{% assign bundlePath = '/dist/bundle.js?' | append: buildTime  %}
+<script src="{{ bundlePath | relative_url }}"></script>
 {% else %}
 <script src="//localhost:8080/bundle.js"></script>
 {% endif %}
