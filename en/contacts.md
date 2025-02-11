@@ -51,12 +51,16 @@ We are reachable via [Slack and Matrix](https://slack.developers.italia.it/) or 
 
 ### Team
 
+<div class="row">
 {% include people.html status='admin' %}
+</div>
 
 ### Former Team Members & Contributors
 
+<div class="row">
 {% include people.html status='ex' %}
 {% include people.html status='contributor' %}
+</div>
 
 ### Community Leaders
 
