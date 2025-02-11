@@ -40,12 +40,16 @@ Siamo reperibili via [Slack e Matrix](https://slack.developers.italia.it/) o all
 
 ### Responsabili
 
+<div class="row">
 {% include people.html status='admin' %}
+</div>
 
 ### Hanno collaborato
 
+<div class="row">
 {% include people.html status='ex' %}
 {% include people.html status='contributor' %}
+</div>
 
 ### Community Leaders
 
