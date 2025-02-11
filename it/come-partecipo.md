@@ -13,7 +13,7 @@ alternate-blocks:
         Tutto lo sviluppo è su GitHub [@italia](https://github.com/italia "Italia su Github")
         e i progetti sono tanti, così come le tecnologie che utilizzano.
 
-        Per trovare quello che ti può interessare con più facilità clicca su "Contribuisci!",
+        Per trovare quello che ti può interessare con più facilità, clicca su "Contribuisci!",
         troverai una tabella che raccoglie le issue aperte alle quali puoi contribuire.
 
       image: /assets/images/bug.svg
