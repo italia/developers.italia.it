@@ -34,7 +34,7 @@ alternate-blocks:
 
       image: /assets/images/come-partecipo-3.svg
       buttons:
-        - label: Contattaci su Slack e Matrix
+        - label: Contact us on Slack and Matrix
           class: btn btn-primary w-100
           url: 'https://slack.developers.italia.it/'
     - title: "Participate to the public software development"
