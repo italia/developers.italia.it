@@ -51,7 +51,7 @@ class Hero extends Component {
             <div className="mr-5">
               <h1 className="display-1 mb-4">
                 {title}
-                <span className="badge badge-pill badge-primary swagger--hero-pill ms-2">{version}</span>
+                <span className="badge badge-pill bg-primary swagger--hero-pill ms-2">{version}</span>
               </h1>
               <section className="mb-5">
                 <div className="row">

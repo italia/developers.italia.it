@@ -34,7 +34,7 @@ export const PubliccodeBadge = React.memo(({ id }) => {
     <>
       <div className="lead">
         {publiccodeState === 'loading' && <Spinner />}
-        <span className={`badge badge-${stateClass[publiccodeState]}`}>
+        <span className={`badge ${stateClass[publiccodeState]}`}>
           {publiccodeState !== 'loading' && publiccodeState}
         </span>
       </div>
