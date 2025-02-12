@@ -95,9 +95,9 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
             <img src="/assets/images/banner-newsletter-image.svg" alt={t('imageNewsletter')} />
           </div>
           <form className="col-sm-10" onSubmit={onSubmit}>
-            <h1 className="mb-2 mb-md-4" name="newsletter">
+            <h2 className="h1 mb-2 mb-md-4" name="newsletter">
               {t('header')}
-            </h1>
+            </h2>
             {Object.entries(queryArgs).map(([argName, argValue], i) => (
               <input type="hidden" name={argName} value={argValue} key={i} />
             ))}
