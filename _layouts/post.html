@@ -35,7 +35,7 @@ layout: default
         <div class="col-12 col-md-8 d-flex align-items-center" style="gap: 1rem;">
           <div class="avatar avatar-primary size-xl outline-border">
             {% if p %}
-            <img src="{{p.pic}}" alt="" class="img-fluid">
+            <img src="{{p.pic}}" alt="{{ t.profile_image }} {{ p.name }}" class="img-fluid">
             {% else %}
             <p aria-hidden="true">{{ page.author| slice: 0 }}</p>
             {% endif %}

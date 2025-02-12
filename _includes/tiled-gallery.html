@@ -10,7 +10,7 @@
               <div class="img-responsive-wrapper">
                 <div class="img-responsive shadow">
                   <div class="img-wrapper">
-                    <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" title="Screenshot" />
+                    <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot {{t.image}} {{forloop.index}}" title="Screenshot {{forloop.index}}" />
                   </div>
                 </div>
               </div>

@@ -1,3 +1,5 @@
+{% include setlang.html %}
+
 {% if include.person.first == nil %}
 {% assign p = site.data.people[include.person] %}
 {% else %}
@@ -14,7 +16,7 @@
 
 <div class="credits-{{ personclass }} {{ colclass }}">
   <div class="credits-{{ personclass }}-img">
-    <img src="{{ p.pic }}" alt="" class="img-fluid">
+    <img src="{{ p.pic }}" alt="{{ t.profile_image }} {{ p.name }}" class="img-fluid">
   </div>
   <div class="credits-{{ personclass }}-info">
     <div class="credits-{{ personclass }}-name">

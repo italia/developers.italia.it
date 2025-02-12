@@ -7,6 +7,7 @@ const messages = {
     header: 'Le nostre iniziative, direttamente nella tua mail',
     title: 'Iscriviti alla mailing list! Lasciaci la tua email e ti aggiorneremo sulle nostre prossime iniziative',
     loading: 'Caricamento...',
+    imageNewsletter: 'Immagine di una newsletter',
     buttonText: 'Iscriviti',
     placeholder: 'indirizzo email',
     errorText: 'Qualcosa è andato storto 😔 Riprova più tardi',
@@ -17,6 +18,7 @@ const messages = {
     header: 'Our initiatives, right in your email',
     title: 'Subscribe to the mailing list! Leave us your email address and we’ll keep you posted',
     loading: 'Loading...',
+    imageNewsletter: 'Newsletter image',
     buttonText: 'Subscribe',
     placeholder: 'email address',
     errorText: 'Something went wrong 😔 Please try again later',
@@ -90,7 +92,7 @@ export const MailingListSubscribe = React.memo(({ text, args, 'extra-fields': ex
       <>
         <div className="banner-newsletter__inner container d-flex justify-content-center position-relative">
           <div className="banner-newsletter__bkg">
-            <img src="/assets/images/banner-newsletter-image.svg" />
+            <img src="/assets/images/banner-newsletter-image.svg" alt={t('imageNewsletter')} />
           </div>
           <form className="col-sm-10" onSubmit={onSubmit}>
             <h1 className="mb-2 mb-md-4" name="newsletter">
