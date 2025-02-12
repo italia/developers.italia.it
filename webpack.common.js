@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+
 module.exports = {
   // mode: 'none',
   entry: "./assets/index.js",
@@ -16,9 +17,6 @@ module.exports = {
   },
 
   resolve: {
-    alias: {
-      jquery: require.resolve("jquery"),
-    },
     fallback: {
       // needed by elasticsearch
       util: require.resolve("util"),
@@ -30,15 +28,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       // process is needed by util
       process: "process/browser",
-
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-
-      PhotoSwipe: "photoswipe",
-      PhotoSwipeUI_Default: "photoswipe/src/js/ui/photoswipe-ui-default.js",
-
-      PerfectScrollbar: "perfect-scrollbar",
     }),
 
     // Pass down environment variables to be replaced in the bundle
@@ -55,17 +44,27 @@ module.exports = {
         { from: "assets/images", to: "../assets/images" },
         { from: "assets/icons", to: "../assets/icons" },
         { from: "assets/files", to: "../assets/files" },
-        { from: "node_modules/bootstrap-italia/dist/svg/sprite.svg", to: "../assets/svg/" },
+        { from: "node_modules/bootstrap-italia/dist/svg/sprites.svg", to: "../assets/svg/" },
       ],
     }),
 
     // Generate an output CSS file instead of using style injection with Javascript,
     // to minimize the chance of FOUC.
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin()
   ],
 
   module: {
     rules: [
+      {
+        test: /\.m?js/,
+        type: "javascript/auto",
+      },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
+      },
       { test: /\.(m)?js$/, use: ["babel-loader"], exclude: /node_modules/ },
       {
         // Handle .sass, .scss and .css files

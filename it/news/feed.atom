@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it">
   <id>https://developers.italia.it/it/news/feed.atom</id>
   <title>Developers Italia</title>
-  <updated>2025-02-12T06:03:43+00:00</updated>
+  <updated>2025-02-12T16:39:33+00:00</updated>
 
   <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
   <link href="https://developers.italia.it/it/news/feed.atom" rel="self" type="application/atom+xml"/>
@@ -478,7 +478,7 @@ Community!&lt;/p&gt;</content>
     <updated>2023-05-19T09:00:00+00:00</updated>
 
     <summary>Una nuova sezione del sito di Developers Italia a supporto dello scambio dati tra amministrazioni </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2023/05/19/ecosistema-interoperabilita">&lt;p&gt;Da oggi scambiare dati e informazioni è più semplice: grazie alla &lt;a href=&quot;https://next.developers.italia.it/it/interoperabilita/&quot;&gt;nuova sezione pubblicata sul sito di Developers Italia&lt;/a&gt;, per la prima volta vengono presentate in maniera unitaria tutte le componenti dell’&lt;strong&gt;ecosistema interoperabilità&lt;/strong&gt;. Una &lt;em&gt;landing&lt;/em&gt; dove gli elementi che concorrono a definire l’esperienza di utenti, funzionari e sviluppatori sono messi in relazione, restituendo una &lt;strong&gt;visione d’insieme&lt;/strong&gt; e l’accesso alle singole risorse.&lt;/p&gt;
+    <content type="html" xml:base="https://developers.italia.it/it/news/2023/05/19/ecosistema-interoperabilita">&lt;p&gt;Da oggi scambiare dati e informazioni è più semplice: grazie alla &lt;a href=&quot;/it/interoperabilita/&quot;&gt;nuova sezione pubblicata sul sito di Developers Italia&lt;/a&gt;, per la prima volta vengono presentate in maniera unitaria tutte le componenti dell’&lt;strong&gt;ecosistema interoperabilità&lt;/strong&gt;. Una &lt;em&gt;landing&lt;/em&gt; dove gli elementi che concorrono a definire l’esperienza di utenti, funzionari e sviluppatori sono messi in relazione, restituendo una &lt;strong&gt;visione d’insieme&lt;/strong&gt; e l’accesso alle singole risorse.&lt;/p&gt;
 
 &lt;p&gt;L’ecosistema interoperabilità &lt;strong&gt;si compone della Piattaforma Digitale Nazionale Dati (PDND), del Catalogo API e di Schema&lt;/strong&gt;, il catalogo nazionale della semantica dei dati (NDC, National Data Catalog). La sezione presenta inoltre i &lt;strong&gt;riferimenti tecnici e normativi&lt;/strong&gt; per integrare e realizzare API interoperabili, a partire dalle Linee guida emanate da Agid e dal Validatore sintattico che ne garantisce la correttezza formale.&lt;/p&gt;
 
@@ -949,7 +949,7 @@ puoi fare.&lt;/p&gt;
 
 &lt;h2 id=&quot;laggiornamento-del-catalogo&quot;&gt;L’aggiornamento del catalogo&lt;/h2&gt;
 
-&lt;p&gt;Developers Italia, in quanto progetto del Dipartimento per la trasformazione digitale e AGID, contribuisce, infatti, alla &lt;strong&gt;Missione 1, Componente 1 del PNRR&lt;/strong&gt;, che ha l’obiettivo di trasformare in profondità la Pubblica Amministrazione attraverso una strategia centrata sulla digitalizzazione. 
+&lt;p&gt;Developers Italia, in quanto progetto del Dipartimento per la trasformazione digitale e AGID, contribuisce, infatti, alla &lt;strong&gt;Missione 1, Componente 1 del PNRR&lt;/strong&gt;, che ha l’obiettivo di trasformare in profondità la Pubblica Amministrazione attraverso una strategia centrata sulla digitalizzazione.
 Nella ricerca di soluzioni che possano concorrere a raggiungere questo obiettivo, va rispettato quanto previsto dal Codice dell’Amministrazione Digitale (Artt. &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_68.html&quot;&gt;68&lt;/a&gt; e &lt;a href=&quot;https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_VI-articolo_69.html&quot;&gt;69&lt;/a&gt;), effettuando una &lt;strong&gt;valutazione comparativa&lt;/strong&gt; che deve valutare i software disponibili secondo criteri tecnico economici, dando priorità a quelli a riuso od open source (che si possono trovare nel catalogo di Developers Italia) e motivando una loro eventuale esclusione a favore di soluzioni proprietarie.&lt;/p&gt;
 
 &lt;p&gt;Per agevolare questo compito all’interno dei progetti finanziati dal PNRR, Developers Italia ha individuato &lt;strong&gt;alcune informazioni che possono essere inserite nel catalogo grazie al file descrittivo &lt;a href=&quot;https://yml.publiccode.tools&quot;&gt;publiccode.yml&lt;/a&gt;&lt;/strong&gt;, su base volontaria e autocertificata. Il file è utilizzato per la pubblicazione delle &lt;a href=&quot;https://developers.italia.it/it/search?type=software_reuse&amp;amp;sort_by=release_date&amp;amp;page=0&quot;&gt;schede di presentazione&lt;/a&gt; del &lt;a href=&quot;https://developers.italia.it/it/software&quot;&gt;catalogo del riuso&lt;/a&gt;.&lt;/p&gt;
@@ -1112,7 +1112,7 @@ Nella ricerca di soluzioni che possano concorrere a raggiungere questo obiettivo
     <summary>Un ringraziamento a tutti coloro che hanno contribuito con suggerimenti e precisazioni </summary>
     <content type="html" xml:base="https://developers.italia.it/it/news/2022/06/29/guida-sviluppo-software-libero-documento-continuo-miglioramento">&lt;p&gt;La &lt;strong&gt;Guida allo sviluppo e gestione del software libero&lt;/strong&gt;, &lt;a href=&quot;https://docs.italia.it/italia/developers-italia/guida-sviluppo-gestione-software-libero&quot;&gt;pubblicata su Docs Italia&lt;/a&gt;, è un &lt;strong&gt;documento basato sui contributi della community e in continuo miglioramento&lt;/strong&gt;, nel pieno rispetto della filosofia Open Source di cui Developers Italia si fa portavoce. Si tratta di una raccolta di buone pratiche utili a supportare le amministrazioni pubbliche nello sviluppo e gestione del software e delle politiche a esso connesse.&lt;/p&gt;
 
-&lt;p&gt;Dopo aver &lt;a href=&quot;https://developers.italia.it/it/news/2022/04/05/guida-software-libero&quot;&gt;dato annuncio&lt;/a&gt; della prima pubblicazione, abbiamo ricevuto &lt;strong&gt;diversi suggerimenti e proposte di miglioramenti&lt;/strong&gt; da parte della community ed esperti del settore, che ci hanno dato modo di arricchire i contenuti della guida e di correggere alcune imprecisioni.&lt;br /&gt;
+&lt;p&gt;Dopo aver &lt;a href=&quot;https://developers.italia.it/it/news/2022/04/05/guida-software-libero&quot;&gt;dato annuncio&lt;/a&gt; della prima pubblicazione, abbiamo ricevuto &lt;strong&gt;diversi suggerimenti e proposte di miglioramenti&lt;/strong&gt; da parte della community ed esperti del settore, che ci hanno dato modo di arricchire i contenuti della guida e di correggere alcune imprecisioni.
 I membri della community che hanno suggerito migliorie ci hanno aiutato per esempio a rendere il linguaggio meno ostico per non addetti ai lavori, ad essere più attenti e coerenti nell’uso del genere e a chiarire alcune scelte lessicali (ad esempio definendo le sottili differenze che esistono tra i termini software libero, open source e sviluppo aperto).&lt;/p&gt;
 
 &lt;p&gt;Vogliamo quindi fare un &lt;strong&gt;ringraziamento collettivo a tutti coloro che hanno dedicato del tempo&lt;/strong&gt; e messo le loro competenze al servizio di questo importante documento pubblico che speriamo possa essere utile a tutti coloro che si occupano dello sviluppo e della gestione del software nella PA e per la PA.&lt;/p&gt;
@@ -1945,7 +1945,7 @@ Tutte le persone interessate a lasciare il segno nel design system del Paese pos
     <updated>2022-02-09T10:00:00+00:00</updated>
 
     <summary>Prosegue l’attività di ascolto promossa da Designers Italia verso progettisti, sviluppatori e funzionari della PA </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2022/02/09/Riparte-survey-dedicata-alla-community">&lt;p&gt;Nell’ultimo anno la partecipazione ai canali della nostra community, dove le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione e del settore si confrontano quotidianamente, è cresciuta, passando da 15.000 utenti registrati a 19.000, segnando quindi un &lt;strong&gt;aumento del 25%&lt;/strong&gt;. Un risultato importante, al quale si aggiunge l’interesse dimostrato da oltre 1.000 professionisti alle iniziative di formazione, proposte nel corso del 2021, dedicate alla progettazione e allo sviluppo dei servizi pubblici digitali. Segnali positivi che dimostrano come PA, fornitori e società in house siano sempre più interessati e attenti ai temi trattati e alle modalità di confronto. 
+    <content type="html" xml:base="https://developers.italia.it/it/news/2022/02/09/Riparte-survey-dedicata-alla-community">&lt;p&gt;Nell’ultimo anno la partecipazione ai canali della nostra community, dove le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione e del settore si confrontano quotidianamente, è cresciuta, passando da 15.000 utenti registrati a 19.000, segnando quindi un &lt;strong&gt;aumento del 25%&lt;/strong&gt;. Un risultato importante, al quale si aggiunge l’interesse dimostrato da oltre 1.000 professionisti alle iniziative di formazione, proposte nel corso del 2021, dedicate alla progettazione e allo sviluppo dei servizi pubblici digitali. Segnali positivi che dimostrano come PA, fornitori e società in house siano sempre più interessati e attenti ai temi trattati e alle modalità di confronto.
 Per questo motivo, a un anno dalla &lt;a href=&quot;https://medium.com/designers-italia/il-valore-della-community-per-designers-italia-e-developers-italia-bd486dff2a6d&quot;&gt;precedente indagine&lt;/a&gt;, ci sembra doveroso metterci nuovamente in ascolto, per comprendere al meglio come Developers Italia sia percepita, l’uso e l’esperienza degli strumenti messi a disposizione e le aspettative future.&lt;/p&gt;
 
 &lt;p&gt;Ci interessa la tua opinione! Aiutaci compilando, se ancora non l’hai fatto, &lt;strong&gt;il nostro &lt;a href=&quot;https://ec.europa.eu/eusurvey/runner/communitysurvey2022_news&quot;&gt;questionario&lt;/a&gt;&lt;/strong&gt;, disponibile online &lt;strong&gt;fino al 24 febbraio&lt;/strong&gt;. La tua collaborazione è per noi preziosa.&lt;/p&gt;</content>
@@ -2061,7 +2061,7 @@ Un’attività che continuerà e diventerà sempre più intensa a partire dal 20
 
 &lt;p&gt;Per contribuire direttamente è possibile interagire nei &lt;a href=&quot;https://github.com/italia/bootstrap-italia/issues&quot;&gt;repository dedicati&lt;/a&gt; e nei vari canali a disposizione, in particolare su &lt;a href=&quot;https://slack.developers.italia.it/&quot;&gt;Slack Developers&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Nelle prossime settimane pubblicheremo un &lt;strong&gt;calendario dei lavori e di occasioni pubbliche dedicate&lt;/strong&gt;. 
+&lt;p&gt;Nelle prossime settimane pubblicheremo un &lt;strong&gt;calendario dei lavori e di occasioni pubbliche dedicate&lt;/strong&gt;.
 Continua a seguirci e &lt;strong&gt;contribuisci anche tu&lt;/strong&gt; al &lt;em&gt;design system&lt;/em&gt; del Paese, migliorando così la vita quotidiana delle persone che usano un servizio pubblico online.&lt;/p&gt;</content>
     <published>2021-12-23T07:00:00+00:00</published>
 
@@ -3152,7 +3152,7 @@ community.&lt;/p&gt;
     <updated>2021-02-17T07:00:00+00:00</updated>
 
     <summary>La community di Developers Italia a supporto delle PA </summary>
-    <content type="html" xml:base="https://developers.italia.it/it/news/2021/02/17/spid-cie-disponibili-nuove-risorse-opensource">&lt;p&gt;Entro il 28 febbraio 2021 tutte le amministrazioni locali e centrali dovranno integrare &lt;a href=&quot;https://developers.italia.it/it/spid&quot;&gt;SPID&lt;/a&gt; (Sistema Pubblico di Identità Digitale) e &lt;a href=&quot;https://developers.italia.it/it/cie&quot;&gt;CIE&lt;/a&gt; (Carta d’Identità Elettronica) come sistemi di autenticazione, uniformando di fatto l’accesso ai servizi pubblici digitali in tutto il Paese. 
+    <content type="html" xml:base="https://developers.italia.it/it/news/2021/02/17/spid-cie-disponibili-nuove-risorse-opensource">&lt;p&gt;Entro il 28 febbraio 2021 tutte le amministrazioni locali e centrali dovranno integrare &lt;a href=&quot;https://developers.italia.it/it/spid&quot;&gt;SPID&lt;/a&gt; (Sistema Pubblico di Identità Digitale) e &lt;a href=&quot;https://developers.italia.it/it/cie&quot;&gt;CIE&lt;/a&gt; (Carta d’Identità Elettronica) come sistemi di autenticazione, uniformando di fatto l’accesso ai servizi pubblici digitali in tutto il Paese.
 Una scadenza importante, quella prevista dal Decreto Legge “semplificazione e innovazione digitale”, che ha portato in questi mesi il team e la community di Developers Italia a impegnarsi su più fronti per supportare gli enti, effettuando numerosi rilasci di librerie e software applicativo.&lt;/p&gt;
 
 &lt;p&gt;Un esempio significativo è rappresentato dal &lt;a href=&quot;https://github.com/italia/spid-express&quot;&gt;middleware&lt;/a&gt; che permette una facile integrazione di SPID e CIE all’interno di architetture web basate sullo stack tecnologico &lt;strong&gt;Express&lt;/strong&gt;.&lt;/p&gt;
@@ -3407,7 +3407,7 @@ community&lt;/a&gt;!&lt;/p&gt;
     
 
     <author>
-      <name></name>
+      <name>Team Developers Italia</name>
     </author>
   </entry>
   
@@ -3577,7 +3577,7 @@ dell’&lt;a href=&quot;https://hacktoberfest.digitalocean.com/&quot;&gt;Hacktob
 attraverso una serie di sfide da completare a ottobre. Nel corso del mese sarà
 quindi possibile contribuire anche ai progetti software ospitati all’interno
 delle organizzazioni Github &lt;a href=&quot;https://github.com/italia&quot;&gt;/italia&lt;/a&gt;
-e &lt;a href=&quot;https://github.com/teamdigitale&quot;&gt;/teamdigitale&lt;/a&gt;. 
+e &lt;a href=&quot;https://github.com/teamdigitale&quot;&gt;/teamdigitale&lt;/a&gt;.
 Sarà l’occasione per chiunque di dare il proprio contributo allo sviluppo dei
 servizi pubblici digitali, e quindi al miglioramento del rapporto tra cittadini
 e Pubblica amministrazione.&lt;/p&gt;
