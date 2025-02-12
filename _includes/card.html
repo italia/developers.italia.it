@@ -13,11 +13,11 @@
     </a>
   </figure>
   {% endif %}
-  <h1 class="pe-0 pe-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
+  <h2 class="h1 pe-0 pe-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
     {% if include.comingsoon %}
     <span class="badge bg-secondary">{{ t.coming_soon }}</span>
     {% endif %}
-  </h1>
+  </h2>
   <main class="font-sans-serif">
     {% if include.text != '' %}
     {{ include.text }}

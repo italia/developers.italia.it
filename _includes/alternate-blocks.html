@@ -19,7 +19,7 @@
                 {%capture coldim %}col{% endcapture %}
             {% endif %}
             <div class="{{coldim}} {{colorder[1]}}" >
-                <h1 {% if thecycle == 'even' %}class="text-md-right"{% endif %}>{{block.title}}</h1>
+                <h2 class="h1 {% if thecycle == 'even' %}text-md-right{% endif %}">{{block.title}}</h2>
                 {% if block.text!=nil%}
                     <div class="font-sans-serif mt-md-3 mb-md-3 alternateblock__text {% if thecycle == 'even' %}text-md-right{% endif %}">{{block.text | markdownify }}</div>
                 {% endif %}
