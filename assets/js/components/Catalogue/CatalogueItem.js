@@ -65,7 +65,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
         <div className="img-responsive-wrapper">
           <div className="img-responsive">
             <figure className="img-wrapper">
-              <ImageWithPlaceholder placeholder={fallback} alt="logo" img={logo} />
+              <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
             </figure>
           </div>
         </div>
@@ -83,7 +83,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
           <CardReadMore
             href={url}
             text={l10NLabels.software.read_more}
-            title={l10NLabels.software.read_more}
+            title={name + l10NLabels.software.read_more}
             iconName="it-arrow-right"
             data-testid="item-anchor"
           />
@@ -101,7 +101,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
           <CardReadMore
             href={url}
             text={l10NLabels.software.read_more}
-            title={l10NLabels.software.read_more}
+            title={name + l10NLabels.software.read_more}
             iconName="it-arrow-right"
             data-testid="item-anchor"
           />

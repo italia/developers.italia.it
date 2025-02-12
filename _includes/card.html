@@ -29,7 +29,7 @@
     <div class="d-flex align-items-center" style="gap: 1rem;">
       <div class="avatar avatar-primary size-lg outline-border">
         {% if p %}
-        <img src="{{p.pic}}" alt="" class="img-fluid">
+        <img src="{{p.pic}}" alt="{{ t.profile_image }} {{ p.name }}" class="img-fluid">
         {% else %}
         <p aria-hidden="true">{{ include.author| slice: 0 }}</p>
         {% endif %}

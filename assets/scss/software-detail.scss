@@ -41,7 +41,7 @@
 
             .legal-main-info {
                 .label {
-                    color: gray;
+                    color: $primary;
                     @extend .d-block;
                 }
 
@@ -329,7 +329,7 @@ hr {
             margin-bottom: 2em;
 
             p {
-                color: gray;
+                color: $primary;
 
                 .label {
                     font-weight: 600;
@@ -488,7 +488,7 @@ hr {
 
         p {
             .label {
-                color: gray;
+                color: $primary;
                 @extend .d-block;
             }
 
@@ -622,7 +622,7 @@ hr {
 
             p {
                 .label {
-                    color: gray;
+                    color: $primary;
                     @extend .d-block;
                 }
 
