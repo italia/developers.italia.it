@@ -35,7 +35,7 @@ layout: default
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
-          <span class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
+          <span class="badge badge-pill badge-pill--sup bg-primary">{{ page.publiccode.softwareVersion }}</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -409,7 +409,7 @@ layout: default
                 {{ sw_name | escape }}
                 {% if page.publiccode.softwareVersion %}
                 <span
-                  class="badge badge-pill badge-pill--sup badge-primary">{{ page.publiccode.softwareVersion }}</span>
+                  class="badge badge-pill badge-pill--sup bg-primary">{{ page.publiccode.softwareVersion }}</span>
                 {% endif %}
               </h2>
               <h2>
@@ -617,19 +617,19 @@ layout: default
                   {{ t.software.dependencies_none }}
                   {% else %}
                       {% if page.publiccode.dependsOn.open.size > 0 %}
-                          <span class="badge badge-pill badge-primary">{{ t.software.dependencies_oss }}</span><br />
+                          <span class="badge badge-pill bg-primary">{{ t.software.dependencies_oss }}</span><br />
                           {% for dep in page.publiccode.dependsOn.open %}
                           {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
                       {% endif %}
                       {% if page.publiccode.dependsOn.proprietary.size > 0 %}
-                          <span class="badge badge-pill badge-danger">{{ t.software.dependencies_proprietary }}</span><br />
+                          <span class="badge badge-pill bg-danger">{{ t.software.dependencies_proprietary }}</span><br />
                           {% for dep in page.publiccode.dependsOn.proprietary %}
                           {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
                       {% endif %}
                       {% if page.publiccode.dependsOn.hardware.size > 0 %}
-                          <span class="badge badge-pill badge-secondary">Hardware</span><br />
+                          <span class="badge badge-pill bg-secondary">Hardware</span><br />
                           {% for dep in page.publiccode.dependsOn.hardware %}
                           {% include dependency.html dependency=dep %}<br />
                           {% endfor %}
