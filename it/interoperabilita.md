@@ -9,14 +9,14 @@ ref:
 
 <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
     <div class="container">
-        <h2>Cos’è l'ecosistema Interoperabilità</h2>
+        <h1>Cos’è l'ecosistema Interoperabilità</h1>
         <div class="row mt-5 mb-4">
             <div class="col-md-6">
                 <p class="lead h3">Abilita l’accesso semplice e sicuro alle informazioni di tutte le Pubbliche
                     Amministrazioni.</p>
             </div>
         </div>
-        <h3 class="mt-5">Come funziona</h3>
+        <h2 class="mt-5">Come funziona</h2>
         <div class="row mt-5">
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -63,7 +63,7 @@ ref:
                 <p><a href="https://www.interop.pagopa.it/catalogo">Catalogo API</a></p>
             </div>
         </div>
-        <h3 class="mt-5">Gli strumenti</h3>
+        <h2 class="mt-5">Gli strumenti</h2>
         <div class="row">
             <div class="col-md-6 mt-3">
                 <p class="pb-2">Scopri i principali strumenti che supportano l’interoperabilità di dati tra gli enti

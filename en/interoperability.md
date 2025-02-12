@@ -8,13 +8,13 @@ ref:
 ---
 <section class="apilist__content mt-2 mt-md-5 pt-2 pt-md-4 pb-2">
   <div class="container">
-      <h2>What is the Interoperability Ecosystem?</h2>
+      <h1>What is the Interoperability Ecosystem?</h1>
       <div class="row mt-5 mb-4">
           <div class="col-md-6">
               <p class="lead h3">It enables easy and secure access to information from all Public Administrations.</p>
           </div>
       </div>
-      <h3 class="mt-5">How It Works</h3>
+      <h2 class="mt-5">How It Works</h2>
       <div class="row mt-5">
           <div class="col-md-3 border-right px-3">
               <div class="content-section">
@@ -54,7 +54,7 @@ ref:
               <p><a href="https://www.interop.pagopa.it/catalogo">API Catalog</a></p>
           </div>
       </div>
-      <h3 class="mt-5">The Tools</h3>
+      <h2 class="mt-5">The Tools</h2>
       <div class="row">
           <div class="col-md-6 mt-3">
               <p class="pb-2">Discover the key tools that support data interoperability among Public Administration entities, benefiting citizens and businesses.</p>
