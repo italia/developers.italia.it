@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { Spinner } from './Spinner';
 
 const stateClass = {
-  loading: 'secondary',
-  good: 'success',
-  error: 'danger',
+  loading: 'bg-secondary',
+  good: 'bg-success',
+  error: 'bg-danger',
 };
 
 export const PubliccodeBadge = React.memo(({ id }) => {
