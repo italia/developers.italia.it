@@ -59,7 +59,7 @@ export const CatalogueFilters = React.memo(
         <div className={classes.groupContainer}>
           <CatalogueFiltersTitle
             title={title}
-            counter={selectedFiltersCount}
+            counter={radio ? 0 : selectedFiltersCount}
             showCollapsableIcon={filters.length > 5}
             onToogleExpandCollapse={toogleShowAll}
           />
