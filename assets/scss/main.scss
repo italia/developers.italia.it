@@ -2175,3 +2175,10 @@ body {
   border: 2px solid white;
   outline: 2px solid $primary;
 }
+
+.splide__arrows {
+  display: none !important;
+  @include media-breakpoint-up(lg) {
+    display: flex !important;
+  }
+}
