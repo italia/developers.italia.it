@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: developersITA
 github_username:  italia
-webanalytics_italia: jg7pYvEqvM
+webanalytics_italia: 1375
 
 # Build settings
 markdown: kramdown
