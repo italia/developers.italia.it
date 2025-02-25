@@ -1,6 +1,10 @@
 name: Aggiungi un software al Catalogo
 description: Per aggiungere un nuovo software open source di terze parti al Catalogo di Developers Italia
-labels: []
+labels:
+  - new-software
+assignees:
+  - tensor5
+  - lorezz
 body:
 - type: checkboxes
   attributes:

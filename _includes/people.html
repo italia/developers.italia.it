@@ -1,7 +1,5 @@
-<div class="row">
-    {% for person in site.data.people %}
-    {% if person[1].status == include.status %}
-    {% include person.html person=person %}
-    {% endif %}
-    {% endfor %}
-</div>
+{% for person in site.data.people %}
+{% if person[1].status == include.status %}
+{% include person.html person=person %}
+{% endif %}
+{% endfor %}

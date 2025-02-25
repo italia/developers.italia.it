@@ -10,5 +10,14 @@ module.exports = {
     '!assets/js/swagger-custom.js',
   ],
   coverageReporters: ['text'],
+  testEnvironment: 'jsdom',
   setupFiles: ['<rootDir>/assets/js/setup-tests.js'],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  moduleDirectories: [
+    'node_modules',
+    'assets/js'
+  ],
+  moduleNameMapper: {
+    "^design-react-kit$": "<rootDir>/node_modules/design-react-kit"
+  }
 };

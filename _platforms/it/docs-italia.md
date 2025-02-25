@@ -11,6 +11,14 @@ ref:
 highlight: false
 layout: platform
 github_team: docs-italia
+collab:
+  description: Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
+  links:
+  - name: forum
+    url: "https://forum.italia.it/"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9T4ELD4G
 ---
 
 ## Intro
@@ -34,12 +42,6 @@ Queste sono le principali attività che stiamo ipotizzando per il prossimo futur
 * Semplificazione del processo di onboarding e del backoffice di amministrazione/pubblicazione.
 * Consolidamento dell'**infrastruttura** e della gestione dei log, miglioramento delle strategie per il ripristino in caso di incidenti.
 * Gestione degli Enti in modalità "whitelabel": vogliamo dare la possibilità ad ogni Ente presente su Docs Italia di personalizzare la propria pagina ed usare **domini esterni con URL personalizzati** e fornire la possibilità di **includere contenuti** di Docs Italia sul proprio sito.
-
-Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
-
-<a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
 
 ## Codice sorgente
 
@@ -66,7 +68,7 @@ Ogni documento visibile su [Docs Italia](https://docs.italia.it/){:target="_blan
 
 ## Documentazione
 
-La documentazione di Docs Italia è ovviamente pubblicata su Docs Italia stesso! ;-)
+La documentazione di Docs Italia è ovviamente pubblicata su Docs Italia stesso!
 
 Un documento "speciale" è infatti la **Guida a Docs Italia**, che spiega come sia possibile per qualsiasi Ente pubblico creare un'utenza da redattore e pubblicare un documento. Se vuoi aggiungere un documento su Docs Italia, puoi sicuramente partire da qui:
 

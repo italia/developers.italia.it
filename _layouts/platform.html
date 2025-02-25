@@ -87,8 +87,13 @@ Still to-do:
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
   <div class="container d-flex justify-content-center">
 
-    <div class="project__maincontent col-md-10">
+    <div class="project__maincontent col-12 col-md-10">
       {{ content }}
+
+      {% if page.collab %}
+        <h2>{{t.project_collab}}</h2>
+        {% include platform-collab.html %}
+      {% endif %}
 
       {% if page.resources %}
         {% unless page.resources_hide_title %}
@@ -104,6 +109,11 @@ Still to-do:
 
     {% capture toc %}
     {% toc %}
+    {% if page.collab %}
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#collab">{{ t.project_collab }}</a></li>
+    </ul>
+    {% endif %}
     {% if page.resources %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>

@@ -96,6 +96,15 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
+
+collab:
+  description: We built some collaboration tools for you including an issue tracker and a forum dedicated to discuss all the problems.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/cie"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C75U26411
 ---
 
 ## Intro
@@ -116,10 +125,6 @@ The CIE is not only an identity card, but it's also a technology that enables ne
  * Hotel checkin, without the need for making copies of the document.
 
 This will be made possible thanks to the identification features embedded in the microchip, whose specifics are open and downloadable from this page.
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Chat on Slack (#cie)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>
 
 ## Information provided by the card
 

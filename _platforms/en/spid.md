@@ -142,7 +142,7 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-java
       desc: Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring
-    - title: Nimbus Java SDK 
+    - title: Nimbus Java SDK
       icon: github
       url: https://bitbucket.org/connect2id/oauth-2.0-sdk-with-openid-connect-extensions/
       desc: Comprehensive Java library for developing OAuth 2.0 and OpenID Connect with full support of OIDC Federation.
@@ -221,6 +221,14 @@ resources:
       url: https://www.samltool.com
       icon:
       desc: Onelogin SAML2 tools
+collab:
+  description:
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/spid"
+  - title: "Dialoga su Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/messages/C73R3UQE8
 ---
 
 ## Intro
@@ -265,9 +273,3 @@ The Service Provider must update the Identity Provider metadata whenever they ar
 ## How to contribute
 
 **The Developers Italia community has created a wide range of ready-to-use open source components (SDK, code examples, IAM Proxy, tools).** Anyone can contribute to the improvement of existing components or help develop some new. It is important to keep in mind that the resources made available to the community are not intended as regulations but only as support, example and supplementary help for developers.
-
-## Get in touch
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Sign up on Slack</a>

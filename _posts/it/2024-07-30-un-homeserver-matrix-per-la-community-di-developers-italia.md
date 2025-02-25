@@ -6,6 +6,7 @@ date: 2024-07-30 09:00:00 +0200
 tags: developers community matrix
 categories: news
 author: Matteo Vabanesi
+nickname: matteov
 image:
 locale: it
 ---

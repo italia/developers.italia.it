@@ -8,9 +8,9 @@
 <section class="home-listing-items source-{{include.source}} {{include.additionalclass}}">
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
-            <h1>{{title}}</h1>
+            <h2 class="h1">{{title}}</h2>
             {% if captiontitle!=nil%}
-            <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
+            <a href="{{captionurl}}" class="ms-auto more">{{captiontitle}} &rarr;</a>
             {% endif %}
         </div>
         <div class="row row-eq-height">
@@ -20,31 +20,21 @@
             {% assign itemUrl = '/' | append: active_lang | append: '/api/' | append: item.slug | downcase %}
             {% endif %}
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
-                <article
-                    class="d-flex flex-column align-items-start h-100 mb-4 mb-sm-0 {% if withimages!=true %}withshadow px-4{%else%}px-3{%endif%} ">
-                    {% if withimages==true %}
-                    <a title="{{item.title}}" href="{{itemUrl}}"
-                        class="home-listing-item__imgwrapper">
-                        <img class="w-100 home-listing-item__img" alt="{{item.title}}"
-                            src="{{item.img | default: item.logo | default:'https://placehold.it/272x176'}}">
-                    </a>
-                    {% endif %}
-                    <h1 class="home-listing-item__title ">
-                        <a title="{{item.title}}" href="{{itemUrl}}"
-                            class="color-inherit">{{item.title}}</a>
-                    </h1>
-                    {% if itemdescription %}
-                    <p>{{item[itemdescription]}}</p>
-                    {% endif %}
-                    <a title="{{item.title}}" class="home-listing-item__url"
-                        href="{{itemUrl}}">{{t.software.read_more}} &rarr;</a>
-                </article>
+                <catalogue-item
+                    class="h-100 d-flex"
+                    name="{{ item.title }}"
+                    description="{{ item[itemdescription] }}"
+                    url="{{ itemUrl }}"
+                    logo="{{ item.img | default: item.logo | default:'/assets/images/cover_softwareriuso.png' }}"
+                    fallback="/assets/images/cover_softwareriuso.png"
+                    {% if withimages != true %}simple="true"{%endif%}
+                ></catalogue-item>
             </div>
             {% endfor %}
         </div>
         {% if include.viewalltitle %}
-        <div class="row pb-3 mt-3 mb-3 mt-md-5">
-            <a class="btn btn-primary mx-auto" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
+        <div class="text-center mb-2 mb-md-4 pb-3 mt-3 mb-3 mt-md-5">
+            <a class="btn btn-primary mx-auto w-50" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
         </div>
         {% endif %}
 

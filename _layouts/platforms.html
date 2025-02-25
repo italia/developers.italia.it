@@ -22,29 +22,14 @@ lang: it
         <div class="row row-eq-height">
           {% for platform in platforms %}
           <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 p-2 p-md-3">
-            <article class="d-flex flex-column align-items-start mb-2 mb-md-5">
-              <a href="{{platform.url}}" title="{{platform.title}}" class="d-block decoration-none ">
-                {% if platform.logo %}
-                {% assign split = platform.id| split: '/' %}
-                {% assign platform_issues_id = split[2] %}
-                <figure class="projectslist__listing__figure">
-                  <img class="main-image" src='{{platform.logo | relative_url}}' alt="{{platform.title}}"/>
-                  <div class="projectslist__listing__activities">
-                    <div class="projectslist__listing__activities-container" id="projectslist__listing__activities-container-{{platform_issues_id}}">
-                      <span class="projectslist__listing__activities-circle-container">
-                        <span class="projectslist__listing__activities-circle"></span>
-                      </span>
-                      <span>{{t.open_activities}} <span id="projectslist-activity-counter-{{platform_issues_id}}" class="projectslist__listing__activities-counter">0
-                      </span></span>
-                    </div>
-                  </div>
-                </figure>
-                {% endif %}
-                <h1 class="projectslist__listing__title text-break">{{platform.title}}</h1>
-                <p class="text-secondary">{{platform.subtitle}}</p>
-                <span class="projectslist__listing__url">{{t.software.read_more}} &rarr;</span>
-              </a>
-            </article>
+            <catalogue-item
+              class="h-100 d-flex"
+              name="{{ platform.title }}"
+              description="{{ platform.subtitle | escape }}"
+              url="{{ platform.url }}"
+              logo="{{ platform.logo | relative_url | default:'/assets/images/cover_softwareriuso.png' }}"
+              fallback="/assets/images/cover_softwareriuso.png"
+            ></catalogue-item>
           </div>
           {% endfor %}
         </div>

@@ -6,6 +6,7 @@ date: 2018-04-05 17:00:00 +0100
 tags: developers daf gsoc
 categories: news
 author: Riccardo Iaconelli
+nickname: ruphy
 image: /assets/icons/logo-it.png
 locale: it
 redirect_from:

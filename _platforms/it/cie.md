@@ -120,6 +120,14 @@ resources:
       icon: github
       url: https://github.com/italia/spid-cie-oidc-php
       desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
+collab:
+  description: Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un issue tracker e un forum dedicato alla discussione delle problematiche di integrazione.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/cie"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C75U26411
 ---
 
 ## Intro
@@ -149,10 +157,6 @@ che è anche un token NFC unico e sicuro, è facile immaginare numerose applicaz
 Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
 e sicurezza contenute nel microprocessore, le cui specifiche sono
 aperte e disponibili anche in questa pagina.
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Dialoga su Slack (#cie)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
 
 ## Dati presenti sulla carta
 

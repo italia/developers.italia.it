@@ -1,213 +1,37 @@
-<div class="tiled-gallery">
-  <div class="tiled-gallery-inner">
-    {% assign onError = 'onerror="' | append: 'this.parentElement.parentElement.removeChild(this.parentElement);"' %}
-    {% if include.screenshots.size <= 3 %} {% for item in include.screenshots %}
-
-    <a class="tiled-item" href="{{ item }}"
-       data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    {% elsif include.screenshots.size == 4 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols-arrow-visible splide mx-0 mx-lg-5" data-bs-carousel-splide>
+  {% assign onError = 'onerror="' | append: 'this.parentElement.parentElement.removeChild(this.parentElement);"' %}
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for item in include.screenshots %}
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot {{t.image}} {{forloop.index}}" title="Screenshot {{forloop.index}}" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="{{ item | img_url: 'medium'  }}" target="_blank">
+                  <span class="text">{{t.software.maximize_image }}</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
       {% endfor %}
-    </div>
-    {% for item in include.screenshots offset: 3 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    {% elsif include.screenshots.size == 5 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% elsif include.screenshots.size == 6 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% for item in include.screenshots offset: 5 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    {% elsif include.screenshots.size == 7 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offeset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% for item in include.screenshots offset: 5 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    {% elsif include.screenshots.size == 8 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 3 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% for item in include.screenshots
-      limit: 1 offset: 5 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots offset: 6 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% elsif include.screenshots.size >= 9 %}
-    {% for item in include.screenshots limit: 1 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 1 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% for item in include.screenshots
-      limit: 1 offset: 3 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    <div class="tiled-items-container">
-      {% for item in include.screenshots limit: 2 offset: 4 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    <div class="tiled-items-container">
-      {% for item in include.screenshots
-        limit:2 offset: 6 %}
-      <a class="tiled-item" href="{{ item }}"
-        data-size="{{ item| image.width }}x{{ item | image.height }}">
-        <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-      </a>
-      {% endfor %}
-    </div>
-    {% for item in include.screenshots
-      offset: 8 %}
-    <a class="tiled-item" href="{{ item }}"
-      data-size="{{ item| image.width }}x{{ item | image.height }}">
-      <img {{ onError }} src="{{ item | img_url: 'medium'  }}" alt="Screenshot" />
-    </a>
-    {% endfor %}
-    {% endif %}
-
-    {% if include.videos != nil %}
-    {% for url in include.videos %}
-    {{ oembed[url] }}
-    {% endfor %}
-    {% endif %}
-
+    </ul>
   </div>
 </div>
 
-<div class="text-center">
-  <button class="btn btn-link tiled-gallery-btn" type="button">
-    <img {{ onError }} src="/assets/icons/camera.png">&nbsp;
-    {{ t.software.view_all_photos }}
-  </button>
-</div>
+{% if include.videos != nil %}
+{% for url in include.videos %}
+{{ oembed[url] }}
+{% endfor %}
+{% endif %}
+

@@ -6,6 +6,7 @@ date: 2021-11-12 12:00:00 +0200
 tags: developers riuso opensource
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---
@@ -14,7 +15,7 @@ Dopo aver visto insieme esempi di [servizi pubblici basati su API](https://devel
 ePAS è un sistema di **rilevazione e gestione delle presenze del personale**, che permette, tra le altre cose, di inviare gli attestati di presenza del personale e gestire/validare i calendari di servizi di turno e reperibilità, timbrature dei badge e molto altro.
 
 SIGLA, invece, **gestisce la contabilità finanziaria e la rendicontazione economica ed analitica**, permettendo, ad esempio, la definizione della struttura organizzativa dell'ente, la realizzazione del piano dei conti finanziario ed economico e il bilancio di previsione decisionale/gestionale.
- 
+
 Durante l’incontro, Marco Spasiano (CNR), Cristian Lucchesi (CNR) e Ciro Salvio (Istituto Superiore di Sanità) ci illustreranno i casi di cessione e riuso di ePAS e SIGLA raccontando la loro storia, in qualità di **autore e fruitori** dell’open source italiano. Una storia caratterizzata da comuni esigenze: le necessità iniziali, la scelta della soluzione da adottare, la sua configurazione e la sua messa in produzione.
 
 La community call sarà incentrata in particolare sulle **modalità di gestione delle soluzioni in riuso**: la conduzione dell’analisi comparativa, la scelta a catalogo delle soluzioni e la costruzione del rapporto con l’ente cedente. Infine verranno messi in luce i vantaggi di fare rete e, grazie alla partecipazione attiva, l’opportunità di costruire una comunità di confronto.

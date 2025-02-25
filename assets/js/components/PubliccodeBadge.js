@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { Spinner } from './Spinner';
 
 const stateClass = {
-  loading: 'secondary',
-  good: 'success',
-  error: 'danger',
+  loading: 'bg-secondary',
+  good: 'bg-success',
+  error: 'bg-danger',
 };
 
 export const PubliccodeBadge = React.memo(({ id }) => {
@@ -34,7 +34,7 @@ export const PubliccodeBadge = React.memo(({ id }) => {
     <>
       <div className="lead">
         {publiccodeState === 'loading' && <Spinner />}
-        <span className={`badge badge-${stateClass[publiccodeState]}`}>
+        <span className={`badge ${stateClass[publiccodeState]}`}>
           {publiccodeState !== 'loading' && publiccodeState}
         </span>
       </div>

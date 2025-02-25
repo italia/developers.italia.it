@@ -80,7 +80,14 @@ resources:
     - title: Documentazione del progetto sito web per le scuole
       url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/
       icon: file
-
+collab:
+  description:
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/design"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9N62GX8E
 redirect_from:
   - /it/design
 ---
@@ -124,8 +131,6 @@ Il kit è costruito con Figma e **definito in maniera aperta e collaborativa su 
 
 Sono sempre più in crescita le Pubblica Amministrazioni che stanno utilizzando lo UI kit per definire le proprie interfacce. In partiocolare, il design system del Paese è utilizzato nei modelli per i [siti e servizi dei Comuni](https://designers.italia.it/modelli/comuni/){:target="_blank"} e per i [siti delle scuole](https://designers.italia.it/modelli/scuole/){:target="_blank"}, delle [aziende sanitarie locali (ASL)](https://designers.italia.it/modelli/aziende-sanitarie-locali/){:target="_blank"} e dei [musei civici](https://designers.italia.it/modelli/musei-civici/){:target="_blank"}.
 
-Per domande e discussioni sullo UI Kit, sullo [Slack di Developers Italia](https://slack.developers.italia.it/){:target="_blank"} è disponibile e aperto a tutti il canale #design-system-ui-kit.
-
 ## Web Development Kit
 
 I [Web Development Kit](https://designers.italia.it/kit/web-development-kit/){:target="_blank"} sono un insieme di strumenti per lo sviluppo front end di siti e applicazioni web. Sono librerie HTML, CSS e Javascript che permettono di **realizzare siti conformi alle Linee Guida di Design** e realizzano in codice quanto previsto dallo UI kit. Allo stato attuale, il kit per lo sviluppo web più stabile, aggiornato e maturo è Bootstrap Italia, basato sulla libreria *open source* Bootstrap 5. Tutte le librerie sono state incluse come parte del design system del paese a partire dal 2022.
@@ -155,7 +160,7 @@ il progetto ha come obiettivo quello di costruire un set di componenti ed un lay
 * [Design Angular Kit Documentation](https://italia.github.io/design-angular-kit/){:target="_blank"}
 * [GitHub Repository](https://github.com/italia/design-angular-kit){:target="_blank"}
 
-Ogni contributo a questi kit è benvenuto ed importante, anche se piccolo. [Scopri come contribuire](https://designers.italia.it/design-system/come-contribuire/) {:target="_blank"}con feedback, informazioni utili, segnalazioni di bug. 
+Ogni contributo a questi kit è benvenuto ed importante, anche se piccolo. [Scopri come contribuire](https://designers.italia.it/design-system/come-contribuire/) {:target="_blank"}con feedback, informazioni utili, segnalazioni di bug.
 
 ## Kit deprecati
 
@@ -172,16 +177,3 @@ La realizzazione dell'interfaccia e dello sviluppo web sono soltanto una parte d
 
 Per maggiori informazioni, puoi iniziare dalla pagina dei [kit sul sito di Designers Italia](https://designers.italia.it/kit/){:target="_blank"}.
 
-# Canali
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/design" target="_blank"><svg class="icon icon-white p-1 mr-1"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg>
-  Entra nel forum
-</a>
-
-Dialoga sullo [Slack di Developers Italia](https://slack.developers.italia.it/){:target="_blank"}:
-sono disponibili diversi canali che iniziano con "#design-", in particolare
-segnaliamo: [#design-service](https://developersitalia.slack.com/messages/C9HKFKU9J/){:target="_blank"},
-[#design-ui-kit](https://developersitalia.slack.com/archives/C9N62GX8E),
-[#design-dev](https://developersitalia.slack.com/archives/C7VPAUVB3),
-[#design-siti-dei-comuni](https://developersitalia.slack.com/archives/CME9AD8NN)
-e [#design-siti-scuole](https://developersitalia.slack.com/archives/CQ7J0KANT).

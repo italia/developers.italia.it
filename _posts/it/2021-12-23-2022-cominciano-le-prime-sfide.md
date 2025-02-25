@@ -6,6 +6,7 @@ date: 2021-12-23 09:00:00 +0200
 tags: developers designers pnrr designsystem
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/images/posts/2021-12-23/buone-feste-it.png
 locale: it
 ---
@@ -25,5 +26,5 @@ Per riuscire in questo sforzo, partiamo necessariamente dall’impegno profuso f
 
 Per contribuire direttamente è possibile interagire nei [repository dedicati](https://github.com/italia/bootstrap-italia/issues) e nei vari canali a disposizione, in particolare su [Slack Developers](https://slack.developers.italia.it/).
 
-Nelle prossime settimane pubblicheremo un **calendario dei lavori e di occasioni pubbliche dedicate**. 
+Nelle prossime settimane pubblicheremo un **calendario dei lavori e di occasioni pubbliche dedicate**.
 Continua a seguirci e **contribuisci anche tu** al *design system* del Paese, migliorando così la vita quotidiana delle persone che usano un servizio pubblico online.

@@ -63,9 +63,13 @@ it:
     active_lang: lingua attiva
     langs:
       show_all: Mostra tutte le lingue
+    clipboard_copy: Copia negli appunti
+    clipboard_copied: Copiato negli appunti
     cookiebar_accept: Accetto
     cookiebar_msg: Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
     cookiebar_privacy_policy: Privacy policy
+    image: Immagine
+    profile_image: Immagine di profilo
     faq:
       empty: Attualmente non ci sono Domande Frequenti visualizzabili
     follow_us: seguici su
@@ -190,6 +194,7 @@ it:
     project_abilitante: Piattaforma abilitante
     project_owner: Titolare
     project_manager: Gestore
+    project_collab: Canali
     project_risorse: Risorse
     project_issues: Attività aperte
     project_issues_go: Vai alla pagina delle Attività
@@ -244,6 +249,7 @@ it:
       goToCode: Codice sorgente
       goToRoadmap: Roadmap
       declare_reuse: La mia amministrazione lo usa
+      maximize_image: Visualizza a schermo intero
       functionality: Funzionalità del software
       functionality_this_variant: Funzionalità
       functionality_other_variant: Funzionalità di altre varianti
@@ -507,9 +513,13 @@ en:
     active_lang: current language
     langs:
       show_all: Show all languages
+    clipboard_copy: Copy to clipboard
+    clipboard_copied: Copied to clipboard
     cookiebar_accept: Accept
     cookiebar_msg: We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.
     cookiebar_privacy_policy: Privacy policy
+    image: Image
+    profile_image: Profile image
     faq:
       empty: Currently there are no Frequently Asked Questions to display
     follow_us: follow us
@@ -633,6 +643,7 @@ en:
     project_abilitante: Enabling Platform
     project_owner: Owner
     project_manager: Manager
+    project_collab: Collaboration
     project_risorse: Resources
     project_issues: Open issues
     project_issues_go: Go to Issues page
@@ -652,7 +663,7 @@ en:
     software:
       catalogue: Software catalogue
       cataloguePNRR: PNRR selection
-      cataloguePNRRdisclaimer: This software may help to fulfil the PNRR measures' objectives. This possibility is declared by the maintainer. <a href="/en/how-to-participate">Find out more</a> on how to participate
+      cataloguePNRRdisclaimer: This software may help to fulfil the PNRR measures' objectives. This possibility is declared by the maintainer. <a href="/en/get-involved">Find out more</a> on how to participate
       load_more: Load more
       searched_for: You have searched for
       software_open: Open source software
@@ -688,6 +699,7 @@ en:
       goToCode: Source code
       goToRoadmap: Roadmap
       declare_reuse: My Administration uses it
+      maximize_image: Display image in original size
       functionality: Software functionality
       functionality_this_variant: Functionality of this variant
       functionality_other_variant: Functionality of others variants

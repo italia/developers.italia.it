@@ -42,6 +42,14 @@ resources:
         - title: SDK per Magento (TODO)
           icon: github
           url: https://github.com/italia/18app-magento-sdk
+collab:
+  description: Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/18app-carta-docente"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/messages/C7AAA10PN
 ---
 
 ## Intro
@@ -64,11 +72,7 @@ Per validare un coupon, l'esercente può collegarsi via API al sistema di
 backend, effettuando quindi una integrazione con il proprio sistema di cassa,
 oppure manualmente tramite una semplice web form.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/18app-carta-docente" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C7AAA10PN" target="_blank"><i class="it-comment" /> Dialoga su Slack (#18app)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
-
-Questi spazi di discussione non sono presidiati da Sogei pertanto non sono canali di assistenza. Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
+Per i recapiti di assistenza e maggiori informazioni puoi consultare i siti delle iniziative:
 
 - [18app](https://www.18app.italia.it/){:target="_blank"}
 - [Carta Docente](https://cartadeldocente.istruzione.it/){:target="_blank"}

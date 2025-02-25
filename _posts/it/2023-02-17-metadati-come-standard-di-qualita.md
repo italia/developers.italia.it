@@ -6,6 +6,7 @@ date: 2023-02-17 09:00:00 +0200
 tags: developers opendata data dataeconomy transparenza
 categories: news
 author: Matteo Fortini
+nickname: mfortini
 image:
 locale: it
 ---

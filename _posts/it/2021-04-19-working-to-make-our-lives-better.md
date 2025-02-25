@@ -3,9 +3,10 @@ layout: post
 title: Working to make our lives better
 subtitle: Developers Italia tra i relatori all’evento internazionale di chiusura del programma ISA²
 date: 2021-04-19 10:00:00 +0100
-tags: 
+tags:
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ref:

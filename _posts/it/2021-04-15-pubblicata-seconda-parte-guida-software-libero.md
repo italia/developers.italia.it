@@ -6,6 +6,7 @@ date: 2021-04-15 10:00:00 +0100
 tags: community sviluppo developers opensource guide pubblicazioni pa contenuto
 categories: news
 author: Riccardo Iaconelli
+nickname: ruphy
 image: /assets/icons/logo-it.png
 locale: it
 ---

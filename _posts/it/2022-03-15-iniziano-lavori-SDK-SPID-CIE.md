@@ -6,6 +6,7 @@ date: 2022-03-15 10:00:00 +0200
 tags: developers skd spid cie
 categories: news
 author: Giuseppe de Marco
+nickname: peppelinux
 image: /assets/icons/logo-it.png
 ref:
   en: /en/news/2022/03/15/work-is-starting-SDK-SPID-CIE
@@ -14,7 +15,7 @@ locale: it
 
 Iniziano oggi i lavori su GitHub Italia per la realizzazione degli SDK (Software Development Kit) OpenID Connect dedicati al Sistema Pubblico di identità digitale (SPID) e alla Carta d'Identità Elettronica (CIE) per ben 5 linguaggi di programmazione!
 
-### Di cosa si tratta? 
+### Di cosa si tratta?
 
 Un avanzamento tecnologico molto importante che ci consente di avvicinare l'esperienza utente di SPID e CIE a quella dei sistemi Single Sign-On privati più popolari e semplificare l'integrazione da parte di sviluppatori e DevOps. Il passaggio verso OpenID Connect ci consente di creare una federazione di identità all’avanguardia e di partecipare a un ecosistema moderno e ricco di strumenti utili.
 

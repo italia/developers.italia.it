@@ -6,6 +6,7 @@ date: 2020-12-29 10:00:00 +0100
 tags: community sviluppatori developers riuso opensource software
 categories: news
 author: Leonardo Favario
+nickname: leo
 image: /assets/icons/logo-it.png
 locale: it
 ref:
@@ -15,9 +16,9 @@ redirect_from:
 ---
 
 Developers Italia continua a impegnarsi per mettere a disposizione della community sempre nuovi strumenti e risorse che supportino il lavoro delle Pubbliche Amministrazioni e rendano più semplice il processo di adozione e mantenimento di soluzioni open source. Proprio con questo spirito oggi rilasciamo il primo capitolo della **Guida allo sviluppo e gestione di software libero**. Con questo documento, rivolto a tecnici, amministratori, e decisori pubblici vogliamo aiutare tutti gli attori che ruotano intorno al software libero a comprendere e a realizzare appieno i vantaggi in termini di gestione, riduzione dei costi e miglioramento dei servizi di un corretto approccio open source. Tutto ciò accompagnato da indicazioni e consigli pratici per gestire e sviluppare correttamente il software in modo aperto. La guida contiene inoltre una raccolta di buone pratiche e riferimenti a risorse esterne utili per lo sviluppo di software più sicuro e di facile manutenzione.
- 
+
 A differenza delle Linee Guida ufficiali questa pubblicazione è scritta in forma di pillole operative per guidare le amministrazioni in modo semplice e pratico, e non ha carattere normativo.
- 
+
 La versione che pubblichiamo oggi, seppur revisionata e corretta, è solo una prima parte in forma di bozza: in perfetto stile “open source” la continueremo a sviluppare e migliorare collaborativamente e costantemente con i lettori e con tutti coloro che in futuro desidereranno offrire il loro contributo.
 
 ### Chi l’ha scritta?

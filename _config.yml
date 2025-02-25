@@ -25,7 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: developersITA
 github_username:  italia
-webanalytics_italia: jg7pYvEqvM
+webanalytics_italia: 1375
 
 # Build settings
 markdown: kramdown
@@ -91,6 +91,7 @@ owner_link: https://innovazione.gov.it/dipartimento/
 logo: /assets/icons/logo-it.svg
 owner_logo: /assets/icons/logo-mid-white.svg
 partner_short: AgID
+partner_full: Agenzia per l'Italia Digitale
 partner_link: https://www.agid.gov.it
 privacy_link: /it/privacy-policy
 gov_logo: /assets/images/governo.svg

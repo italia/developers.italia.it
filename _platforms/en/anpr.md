@@ -34,6 +34,16 @@ resources:
           icon: github
           url: https://github.com/italia/anpr-client-example
           desc: Client for testing the connection with ANPR
+collab:
+  description: We built some collaboration tools for you including an issue tracker and a forum dedicated to discuss all the problems on integrating ANPR.
+  links:
+  - name: issue_tracker
+    url: "https://github.com/italia/anpr/issues"
+  - name: forum
+    url: "https://forum.italia.it/c/anpr"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C7A8NS7RQ
 ---
 
 ## Intro
@@ -70,12 +80,3 @@ ANPR provides a test environment that municipalities can use to:
 For technical specifications, service documentation and the guide to the
 migration process for municipalities, please refer to the [Technical
 documentation and reference tables](https://docs.italia.it/italia/anpr/anpr/).
-
-## Collaboration
-
-We built some collaboration tools for you including an *issue tracker* and
-a forum dedicated to discuss all the problems on integrating ANPR.
-
-<a class="btn btn-primary" href="https://github.com/italia/anpr/issues" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-github"></use></svg> Issue tracker</a>
-<a class="btn btn-primary" href="https://forum.italia.it/c/anpr" target="_blank"><svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-horn"></use></svg> Enter the forum</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><svg class="icon icon-primary"><use xlink:href="/assets/svg/sprite.svg#it-comment"></use></svg> Sign up on Slack</a>

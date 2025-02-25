@@ -11,9 +11,9 @@
 <section class="home-listing-items crop source-{{include.source}} {{include.additionalclass}}">
     <div class="container">
         <div class="d-flex align-items-baseline titlewrapper mb-3 mb-md-5">
-            <h1>{{title}}</h1>
+            <h2 class="h1">{{title}}</h2>
             {% if captiontitle!=nil%}
-            <a href="{{captionurl}}" class="ml-auto more">{{captiontitle}} &rarr;</a>
+            <a href="{{captionurl}}" class="ms-auto more">{{captiontitle}} &rarr;</a>
             {% endif %}
         </div>
         <div class="row row-eq-height">
@@ -36,14 +36,14 @@
                 {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
               {% else %}
                 {% assign category = "software_open" %}
-                {% assign fallback = "it-open-source" %}
+                {% assign icon = "it-open-source" %}
                 {% assign fallback = "/assets/images/cover_software_opensource.png" %}
               {% endif %}
 
               {% assign first_screenshot = description.screenshots | first %}
 
               <catalogue-item
-                class="h-100"
+                class="h-100 d-flex"
                 id="{{  item.id }}"
                 name="{{ sw_name }}"
                 description="{{ description.shortDescription | escape }}"
@@ -59,8 +59,8 @@
             {% endfor %}
         </div>
         {% if include.viewalltitle %}
-        <div class="row pb-3 mt-3 mb-3 mt-md-5">
-            <a class="btn btn-primary mx-auto" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
+        <div class="text-center mb-2 mb-md-4 pb-3 mt-3 mb-3 mt-md-5">
+            <a class="btn btn-primary mx-auto w-50" href="{{include.viewallurl}}">{{include.viewalltitle}}</a>
         </div>
         {% endif %}
 

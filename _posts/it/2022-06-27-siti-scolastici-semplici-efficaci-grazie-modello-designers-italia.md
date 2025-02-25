@@ -6,6 +6,7 @@ date: 2022-06-27 16:00:00 +0200
 tags: developers designers scuola
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ---

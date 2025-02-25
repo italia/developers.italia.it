@@ -23,6 +23,17 @@ socials:
     name: youtube
     icon: youtube
     link: //www.youtube.com/channel/UCHsqR2YhxeKgFT4rAKVcAAQ
+collab:
+  description: Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e opendata dove puoi trovare là l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto un tracker pubblico su GitHub.
+  links:
+  - name: issue_tracker
+    url: "https://github.com/italia/dati.gov.it/issues"
+  - name: roadmap
+    icon: it-github
+    url: "https://github.com/italia/dati.gov.it/projects"
+  - title: "Mailing-list"
+    icon: it-mail
+    url: https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data
 ---
 
 ## Intro
@@ -60,16 +71,3 @@ Qui invece trovi i repositori relativi all'evoluzione di dati.gov.it come da doc
 [Repo GitHub evoluzione dati.gov.it](https://github.com/italia/dati.gov.it){:target="_blank"}
 
 [Nuovo frontend server](https://github.com/italia/dati-frontendserver){:target="_blank"}
-
-
-## Collaborazione
-
-Abbiamo aperto già da tempo una mailing-list per trattare i temi di dati e opendata, per cui puoi trovare là
-l'archivio delle precedenti discussioni e iscriverti per partecipare. Inoltre, abbiamo anche predisposto
-un tracker pubblico su GitHub:
-
-[Mailing-list OpenData & Analytics](https://groups.google.com/a/teamdigitale.governo.it/forum/#!forum/data){:target="_blank"}
-
-[Issue tracking del progetto](https://github.com/italia/dati.gov.it/issues){:target="_blank"}
-
-[Pianificazione dello sviluppo](https://github.com/italia/dati.gov.it/projects){:target="_blank"}

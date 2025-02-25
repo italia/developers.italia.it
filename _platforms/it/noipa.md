@@ -57,6 +57,15 @@ resources:
       icon: github
       url: https://github.com/italia/noipa-python-example
       desc: Python client di esempio per dialogare con le API
+collab:
+  description:
+  links:
+  - title: "Visita il portale NoiPA"
+    icon: it-external-link
+    url: https://noipa.mef.gov.it/
+  - title: "Programma Cloudify NoiPA"
+    icon: it-external-link
+    url: https://www.cloudifynoipa.it
 ---
 
 ## Intro
@@ -88,9 +97,3 @@ di livello nazionale e internazionale puoi collaborare con NoiPA.
 ## Utilizzare le API
 
 I cittadini, le imprese e le pubbliche amministrazioni interessate ad utilizzare i dati utilizzando le API possono trovare alcuni esempi nella pagina [NoiPA Open Data del sito](https://sparql-noipa.mef.gov.it/sparql){:target="_blank"} dove è presente un editor e alcune query SPARQL preimpostate. Esiste anche un repository che implementa un [client Python di esempio](https://github.com/italia/noipa-python-example){:target="_blank"} che si appoggia su SPARQL per mostrare come interfacciarsi alle API.
-
-## Canali
-
-<a class="btn btn-primary" href="https://noipa.mef.gov.it/" target="_blank"><i class="it-pa" />Visita il portale NoiPA</a>
-<a class="btn btn-primary" href="https://www.cloudifynoipa.it" target="_blank"><i class="it-code-circle" />Conosci il programma Cloudify NoiPA</a>
-

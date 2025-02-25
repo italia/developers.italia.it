@@ -1,6 +1,6 @@
 {% assign notext = include.notext  %}
 {% if notext %}
-<span class="sr-only">{{ t.share_msg }} {{ t.on_ }}</span>
+<span class="visually-hidden">{{ t.share_msg }} {{ t.on_ }}</span>
 {% else %}
 <p class="u-margin-r-bottom u-textWeight-300">{{ t.share_msg }} {{ t.on_ }}</p>
 {% endif %}
@@ -10,10 +10,20 @@
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="list-inline-item">
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" class="icon-wrapper" title="{{ t.share_msg | capitalize }} {{ t.on_ }} {{ social[0] | capitalize }}">
-          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprite.svg#it-{{ social[0] }}"></use></svg>
-          <span class="sr-only">{{ social[1].name | capitalize }}</span>
+          <svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-{{ social[0] }}"></use></svg>
+          <span class="visually-hidden">{{ social[1].name | capitalize }}</span>
         </a>
       </li>
       {% endif %}
   {% endfor %}
+  <li class="list-inline-item">
+    <a href="#" onclick="fireNotification('{{ shareurl }}', 'shareNotification')" title="{{t.clipboard_copy}}" class="icon-wrapper">
+      <svg class="icon icon-white"><use xlink:href="/assets/svg/sprites.svg#it-copy"></use></svg>
+    </a>
+  </li>
 </ul>
+<div class="notification bottom-fix with-icon success fade" data-bs-timeout="5000"  role="alert" aria-labelledby="not1e-title" id="shareNotification">
+  <h5 id="not1e-title" class="h5 ">
+    <svg class="icon"><use href="/assets/svg/sprites.svg#it-check-circle"></use></svg>{{t.clipboard_copied}}
+  </h5>
+</div>

@@ -156,8 +156,3 @@ A questo punto inizierà una fase di validazione di quanto sottoposto per verifi
 In caso di esito positivo, la Pull Request verrà consolidata entro pochi giorni e apparirà all’interno della [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie).
 In caso di esito negativo, saranno fornite via email le opportune motivazioni ed eventuali suggerimenti per rendere la libreria aderente ai requisiti minimi.
 Eventuali aggiornamenti futuri delle librerie saranno oggetto di successive valutazioni che potrebbero portare alla rimozione della stessa dalla [lista](https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie) laddove non fossero rispettati i requisiti minimi.
-
-## Canali
-
-<a class="btn btn-primary" href="https://forum.italia.it" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/archives/C030BJEGEN8" target="_blank"><i class="it-comment" /> Canale Slack sviluppatori SDK (#dcc-sdk)</a>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
@@ -38,28 +38,28 @@ export const CatalogueFilters = React.memo(
     const [showAll, setShowAll] = useState(false);
 
     const classes = useStyles(showAll);
-    const { register, getValues } = useForm({
+    const { register, watch } = useForm({
       defaultValues,
     });
-
-    const updateCounter = () => setSelectedFiltersCount(getCount(getValues()));
-
-    const handleOnChangeFilter = () => {
-      updateCounter();
-      const values = getValues();
-      onChange(values[name]);
-    };
 
     const toogleShowAll = () => {
       setShowAll(!showAll);
     };
+
+    useEffect(() => {
+      const subscription = watch((value, { name }) => {
+        setSelectedFiltersCount(getCount(value[name]));
+        onChange(value[name]);
+      });
+      return () => subscription.unsubscribe();
+    }, [name, watch, setSelectedFiltersCount, onChange]);
 
     return (
       <>
         <div className={classes.groupContainer}>
           <CatalogueFiltersTitle
             title={title}
-            counter={selectedFiltersCount}
+            counter={radio ? 0 : selectedFiltersCount}
             showCollapsableIcon={filters.length > 5}
             onToogleExpandCollapse={toogleShowAll}
           />
@@ -75,10 +75,8 @@ export const CatalogueFilters = React.memo(
                 role="button"
                 className={classes.checkbox}
                 type={radio ? 'radio' : 'checkbox'}
-                name={name}
                 value={key}
-                ref={register}
-                onChange={handleOnChangeFilter}
+                {...register(name)}
               />
               {value}
             </label>

@@ -36,6 +36,14 @@ resources:
       icon: github
       url: https://github.com/italia/fatturapa-testsdi
       desc: Applicazione PHP non ufficiale (mantenuta dalla community) che simula un Sistema di Interscambio per provare le implementazioni client
+collab:
+  description: Developers Italia fornisce canali di comunicazione e strumenti di collaborazione agli sviluppatori per agevolarli nell'integrazione dei propri software. Il forum e Slack non sono canali di assistenza poiché non sono presidiati dall'Agenzia delle Entrate o da Sogei.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/fattura-pa"
+  - title: "Dialoga su Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/CB7434RDM
 ---
 
 ## Intro
@@ -43,9 +51,3 @@ resources:
 La fatturazione elettronica, introdotta inizialmente per le fatture verso la Pubblica Amministrazione, è obbligatoria dal 1° gennaio 2019 anche per tutte le fatture tra privati.
 
 La documentazione ufficiale, incluse le regole tecniche, è reperibile nel sito ufficiale dell'[Agenzia delle Entrate](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica){:target="_blank"}.
-
-Developers Italia fornisce canali di comunicazione e strumenti di collaborazione agli sviluppatori per agevolarli nell'integrazione dei propri software. Il forum e Slack non sono canali di assistenza poiché non sono presidiati dall'Agenzia delle Entrate o da Sogei.
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/fattura-pa" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/CB7434RDM" target="_blank"><i class="it-comment" /> Dialoga su Slack (#fatturapa)</a>
-<a class="btn btn-white btn-outline-primary" href="https://slack.developers.italia.it/" target="_blank"><i class="it-comment" /> Registrati su Slack</a>
