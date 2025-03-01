@@ -1,0 +1,956 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    Whistleblowing
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Whistleblowing - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/en/software/github.com/comune-milano/whistleblowing.html" />
+<meta property="og:url" content="https://developers.italia.it/en/software/github.com/comune-milano/whistleblowing.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Whistleblowing - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Sviluppiamo i servizi pubblici, insieme","headline":"Whistleblowing - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/en/software/github.com/comune-milano/whistleblowing.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202503010602" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "en";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1375']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-default">
+
+
+
+<!-- <div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary me-2">Accept</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div> -->
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="it-header-wrapper it-header-sticky shadow" data-bs-position-type="fixed" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
+  <div class="it-header-slim-wrapper">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <div class="navbar-brand d-none d-lg-block">
+              <a target="_blank" href="https://innovazione.gov.it/dipartimento/" rel="noreferrer">Dipartimento per la Trasformazione Digitale</a> + <a target="_blank" href="https://www.agid.gov.itt"
+                rel="noreferrer">AgID</a>
+            </div>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>DTD + AgID</span>
+                  <svg class="icon" aria-hidden="true"><use href="/assets/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC1">
+                  
+
+
+
+
+<ul class="link-list">
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://pianotriennale-ict.italia.it">Three-year Plan</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="active list-item" target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              
+<div class="nav-item dropdown">
+  <a href="#" id="languagesDropButton" role="button" class="nav-link dropdown-toggle"
+   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="visually-hidden">current language:</span>
+    <span>ENG</span>
+    <svg class="icon d-none d-lg-block">
+      <use xlink:href="/assets/svg/sprites.svg#it-expand"></use>
+    </svg>
+  </a>
+  <div class="dropdown-menu">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-list-wrapper">
+          <ul id="languages" class="link-list" aria-labelledby="languagesDropButton" >
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item " href="/it/software/github.com/comune-milano/whistleblowing.html"><span lang="it">Italiano</span>
+                
+                </a>
+              </li>
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item active" href="/en/software/github.com/comune-milano/whistleblowing.html"><span lang="en">English</span>
+                
+                </a>
+              </li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper ">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/">
+                  <svg class="icon icon-white" aria-hidden="true">
+                    <use href="/assets/svg/sprites.svg#it-designers-italia"></use>
+                  </svg>
+                  <!-- <img
+                    src="/assets/icons/logo-it.svg" alt=""
+                    class="icon"> -->
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">Developers Italia</div>
+                    <div class="it-brand-tagline d-none d-md-block">
+                      We develop public services, together
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us</span>
+                  <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/en/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+                </div>
+                <div class="it-search-wrapper">
+                  <custom-search></custom-search>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper" id="header-nav-wrapper">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon">
+                  <use href="/assets/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" style="display: none;">
+                <div class="overlay" style="display: none;"></div>
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/assets/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="menu-wrapper justify-content-lg-between">
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/platforms" aria-current="page">
+                        <span>        
+                          Platforms
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item active">
+                      
+                      <a class="nav-link active" href="/en/software" aria-current="page">
+                        <span>        
+                          Software
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/interoperability" aria-current="page">
+                        <span>        
+                          Interoperability
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/how" aria-current="page">
+                        <span>        
+                          How to use it
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/get-involved" aria-current="page">
+                        <span>        
+                          Get involved
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/news" aria-current="page">
+                        <span>        
+                          News
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/contacts" aria-current="page">
+                        <span>        
+                          Contacts
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    
+    
+     
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        <h1 class="d-inline-block">
+          Whistleblowing
+          <span class="badge badge-pill badge-pill--sup bg-primary"></span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            Whistleblowing è un applicativo per la gestione sicura e anonima delle segnalazioni di illeciti.
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?categories=whistleblowing">whistleblowing</a>
+</li>
+
+              
+            </ul>
+            
+          </div>
+          <div class="row legal-main-info">
+            
+            
+            
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <div class="drops-details">
+        <div class="vitality-score">
+          <div class="status-developement">
+            <p>Development status: 
+
+
+<span class="status"> development </span> 
+ </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drops-details">
+        
+
+        
+        <div class="goto code">
+          <p><a href="https://github.com/Comune-Milano/Whistleblowing"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Source code &rarr;</a></p>
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class=" container-fluid  mt-4">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Software functionality </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> Segnalazioni anonime e protette – Permette agli utenti di inviare         segnalazioni in modo anonimo, garantendo la riservatezza delle informazioni. </p>
+            
+            <p> Gestione delle segnalazioni – Dashboard per la gestione avanzata delle         segnalazioni con assegnazione, tracciamento dello stato e notifiche. </p>
+            
+            <p> Cifratura e sicurezza dei dati – Protezione avanzata delle segnalazioni tramite crittografia end-to-end e conformità alle normative GDPR. </p>
+            
+            <p> Workflow personalizzabile – Configurazione dei flussi di lavoro per adattarsi alle esigenze dell’ente o dell’azienda. </p>
+            
+            <p> Accesso multi-ruolo – Differenti livelli di accesso per segnalanti, revisori e amministratori con gestione permessi. </p>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>CATEGORIES</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/en/search?categories=whistleblowing">whistleblowing</a>
+</li>
+
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>detailed information </p>
+            <div class="title">
+              <h2 class="h1">
+                Whistleblowing
+                
+              </h2>
+              <h2>
+                
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Last release</span>
+                  
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Type of maintenance</span>
+                  none
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Stato publiccode.yml</span>
+                  <publiccode-badge id="64de0e71-9eb4-4428-8244-f439fe2f4cab"></publiccode-badge>
+                <p>
+              </div>
+
+              
+            </div>
+          </div>
+
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">License</span>
+                  AGPL-3.0-only
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Platforms</span>
+                  
+                      web<br />
+                  
+                </p>
+              </div>
+              
+
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Enabling platforms</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  None
+                  
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Compliance</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  None
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">List of dependencies</span>
+                  
+                  None
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-bs-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Others information
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+
+              <div class="other-detail">
+                <p><span class="label">Supported languages</span>
+                  
+                  
+                  
+
+Italian<br />
+
+                  
+                  
+
+English<br />
+
+                  
+                  
+
+Arabic<br />
+
+                  
+                  
+
+Armenian<br />
+
+                  
+                  
+
+German<br />
+
+                  
+                  
+
+Spanish<br />
+
+                  
+                  
+
+Portuguese<br />
+
+                  
+                  
+
+French<br />
+
+                  
+                  
+
+Russian<br />
+
+                  
+                  
+
+Dutch<br />
+
+                  
+                </p>
+                <p>
+                  <a data-bs-toggle="collapse" href="#otherLanguage"
+                    role="button" aria-expanded="false"
+                    class="count" aria-controls="otherLanguage">
+                    Show all languages
+                    <span class="or it-expand"></span>
+                    <span class="and it-collapse"></span>
+                  </a>
+                </p>
+                <div class="collapse" id="otherLanguage">
+                  
+                  
+
+Greek<br />
+
+                  
+                </div>
+
+                
+                </p>
+              </div>
+              
+              
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Extended description</p>
+              <div class="font-serif page-detail__text" data-proofer-ignore>
+                <p>Whistleblowing è un’applicazione progettata per consentire la segnalazione sicura e anonima di illeciti, garantendo la protezione dei segnalanti e la riservatezza delle informazioni. La piattaforma offre una gestione avanzata delle segnalazioni, con workflow personalizzabili, accesso multi-ruolo e notifiche automatiche. Grazie alla crittografia end-to-end e alla conformità con le normative GDPR e le direttive europee in materia di whistleblowing, l’applicativo assicura elevati standard di sicurezza e trasparenza. Ideale per enti pubblici, aziende e organizzazioni che vogliono promuovere un ambiente etico e conforme alla normativa.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+<a href="#" aria-label="back to contents" data-bs-toggle="backtotop" class="back-to-top shadow">
+  <svg class="icon icon-light"><use href="/assets/svg/sprites.svg#it-arrow-up"></use></svg>
+</a>
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://innovazione.gov.it/dipartimento/" title="Dipartimento per la Trasformazione Digitale">
+                <img src="/assets/images/governo.svg" alt="Logo Governo Italiano">
+                <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://www.agid.gov.it" title="Agenzia per l'Italia Digitale">
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <img src="/assets/images/agid-logo-bb.svg" alt="Agenzia per l'Italia Digitale">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pt-3 d-flex align-items-center">
+            <div class="it-socials d-flex" style="gap: 1rem;">
+              <span>Follow us</span>
+              <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/en/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        
+        <li class="list-inline-item"><a href="/en/privacy-policy">Privacy policy</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/en/legal-notice">Terms and conditions</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/en/dashboard">Dashboard</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="/dist/bundle.js?202503010602"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
