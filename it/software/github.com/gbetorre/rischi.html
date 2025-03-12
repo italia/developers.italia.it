@@ -1,0 +1,1600 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="it" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="it" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="it" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    ROL-RMS: Rischi On Line-Risk Mapping Software
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="ROL-RMS - Developers Italia" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="it" />
+<meta name="description" content="Sviluppiamo i servizi pubblici, insieme" />
+<meta property="og:description" content="Sviluppiamo i servizi pubblici, insieme" />
+<link rel="canonical" href="https://developers.italia.it/it/software/github.com/gbetorre/rischi.html" />
+<meta property="og:url" content="https://developers.italia.it/it/software/github.com/gbetorre/rischi.html" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ROL-RMS - Developers Italia" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"description":"Sviluppiamo i servizi pubblici, insieme","headline":"ROL-RMS - Developers Italia","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/it/software/github.com/gbetorre/rischi.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202503120603" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "it";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1375']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-default">
+
+
+
+<!-- <div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary me-2">Accetto</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div> -->
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="it-header-wrapper it-header-sticky shadow" data-bs-position-type="fixed" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
+  <div class="it-header-slim-wrapper">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <div class="navbar-brand d-none d-lg-block">
+              <a target="_blank" href="https://innovazione.gov.it/dipartimento/" rel="noreferrer">Dipartimento per la Trasformazione Digitale</a> + <a target="_blank" href="https://www.agid.gov.itt"
+                rel="noreferrer">AgID</a>
+            </div>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>DTD + AgID</span>
+                  <svg class="icon" aria-hidden="true"><use href="/assets/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC1">
+                  
+
+
+
+
+<ul class="link-list">
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://pianotriennale-ict.italia.it">Piano Triennale</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="active list-item" target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              
+<div class="nav-item dropdown">
+  <a href="#" id="languagesDropButton" role="button" class="nav-link dropdown-toggle"
+   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="visually-hidden">lingua attiva:</span>
+    <span>ITA</span>
+    <svg class="icon d-none d-lg-block">
+      <use xlink:href="/assets/svg/sprites.svg#it-expand"></use>
+    </svg>
+  </a>
+  <div class="dropdown-menu">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-list-wrapper">
+          <ul id="languages" class="link-list" aria-labelledby="languagesDropButton" >
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item active" href="/it/software/github.com/gbetorre/rischi.html"><span lang="it">Italiano</span>
+                
+                </a>
+              </li>
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item " href="/en/software/github.com/gbetorre/rischi.html"><span lang="en">English</span>
+                
+                </a>
+              </li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper ">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/">
+                  <svg class="icon icon-white" aria-hidden="true">
+                    <use href="/assets/svg/sprites.svg#it-designers-italia"></use>
+                  </svg>
+                  <!-- <img
+                    src="/assets/icons/logo-it.svg" alt=""
+                    class="icon"> -->
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">Developers Italia</div>
+                    <div class="it-brand-tagline d-none d-md-block">
+                      Sviluppiamo i servizi pubblici, insieme
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Seguici su</span>
+                  <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/it/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+                </div>
+                <div class="it-search-wrapper">
+                  <custom-search></custom-search>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper" id="header-nav-wrapper">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon">
+                  <use href="/assets/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" style="display: none;">
+                <div class="overlay" style="display: none;"></div>
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/assets/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="menu-wrapper justify-content-lg-between">
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/piattaforme" aria-current="page">
+                        <span>        
+                          Piattaforme
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item active">
+                      
+                      <a class="nav-link active" href="/it/software" aria-current="page">
+                        <span>        
+                          Software
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/interoperabilita" aria-current="page">
+                        <span>        
+                          Interoperabilità
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/come-lo-uso" aria-current="page">
+                        <span>        
+                          Come lo uso
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/come-partecipo" aria-current="page">
+                        <span>        
+                          Come partecipo
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/news" aria-current="page">
+                        <span>        
+                          News
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/it/contatti" aria-current="page">
+                        <span>        
+                          Contatti
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    
+    
+     
+
+
+
+
+
+
+
+
+
+
+<div class="container page-software-detail">
+  <div class="row intro">
+    <div class="col-md-7">
+      <div class="intro-name">
+        
+        
+        <img alt="" src="https://github.com/gbetorre/rischi/blob/main/rol/images/logo.png" class="d-inline-block" />
+        
+        <h1 class="d-inline-block">
+          ROL-RMS: Rischi On Line-Risk Mapping Software
+          <span class="badge badge-pill badge-pill--sup bg-primary">2.1.7</span>
+        </h1>
+        <div class="abstract-software">
+          <h2>
+            Applicazione Web
+            
+          </h2>
+          <h3 class="color-content font-serif my-2 my-md-4">
+            ROL-RMS: Applicazione Web per la mappatura, la mitigazione e il monitoraggio dei rischi corruttivi cui sono esposti i processi organizzativi delle PA
+          </h3>
+          <div class="my-3">
+            <ul class="home-software-tags__list list-inline">
+              
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=workflow-management">gestione flusso di lavoro</a>
+</li>
+
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=web-collaboration">collaborazioni web</a>
+</li>
+
+              
+                
+
+                
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=business-process-management">gestione processi aziendali</a>
+</li>
+
+              
+            </ul>
+            
+          </div>
+          <div class="row legal-main-info">
+            
+            <div class="col-sm">
+              <p><span class="label">Pubblicato da </span>
+                Giovanroberto Torre
+              </p>
+            </div>
+            
+            
+            <div class="col-sm">
+              <p><span class="label">Gestito da</span>
+                
+                <a href="/it/pa/uni_vr">
+                Giovanroberto Torre
+                </a>
+                
+              </p>
+            </div>
+            
+            
+
+            
+            <div class="col-sm">
+              <p><span class="label">Contatto tecnico </span>
+                
+                    
+                    <a href="mailto:gianroberto.torre@gmail.com">Giovanroberto Torre</a>
+                    
+                    +398028506
+                
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-1 col-md-4 ">
+      <div class="drops-details">
+        <div class="vitality-score">
+          <div class="status-developement">
+            <p>Stato di sviluppo: 
+
+
+<span class="status"> in sviluppo </span> 
+ </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="drops-details">
+        
+        <div class="goto">
+          <p>
+            <a
+              href="https://github.com/gbetorre/rischi/blob/main/rol/index.html"
+              aria-label="Vai al sito del software (collegamento esterno)"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-proofer-ignore
+            >
+              <img alt="" src="/assets/icons/software_icons/it-link.svg">Sito web del progetto &rarr;</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="goto doc">
+          <p><a href="https://github.com/gbetorre/rischi/blob/main/README.it.md" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+        </div>
+        
+        <div class="goto code">
+          <p><a href="https://github.com/gbetorre/rischi"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
+        </div>
+        
+        <div class="goto road">
+          <p><a href="https://github.com/gbetorre/rischi/blob/main/README.it.md#roadmap"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+        </div>
+        
+
+        
+        <div class="goto">
+          <p>
+            <a href="/it/riuso/dichiarazione" onclick="localStorage.setItem('reuse-repo', 'https://github.com/gbetorre/rischi'); return true">
+              <img alt="" src="/assets/icons/software_icons/it-check.svg">La mia amministrazione lo usa &rarr;
+            </a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols-arrow-visible splide mx-0 mx-lg-5" data-bs-carousel-splide>
+  
+  <div class="splide__track">
+    <ul class="splide__list">
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/landing2.0.png" alt="Screenshot Immagine 1" title="Screenshot 1" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/landing2.0.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-pxi.png" alt="Screenshot Immagine 2" title="Screenshot 2" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-pxi.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-synthesis-measures.png" alt="Screenshot Immagine 3" title="Screenshot 3" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-synthesis-measures.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-synthesis-pxi.png" alt="Screenshot Immagine 4" title="Screenshot 4" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/dashboard-synthesis-pxi.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-indicator.png" alt="Screenshot Immagine 5" title="Screenshot 5" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-indicator.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-measure.png" alt="Screenshot Immagine 6" title="Screenshot 6" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-measure.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-measure2.png" alt="Screenshot Immagine 7" title="Screenshot 7" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/form-measure2.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/indicator-sample01.png" alt="Screenshot Immagine 8" title="Screenshot 8" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/indicator-sample01.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/list-measures.png" alt="Screenshot Immagine 9" title="Screenshot 9" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/list-measures.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/list-monitored-measures.png" alt="Screenshot Immagine 10" title="Screenshot 10" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/list-monitored-measures.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/nav-pro.png" alt="Screenshot Immagine 11" title="Screenshot 11" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/nav-pro.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img no-after shadow">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive shadow">
+                  <div class="img-wrapper">
+                    <img onerror="this.parentElement.parentElement.removeChild(this.parentElement);" src="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/questions-domains.png" alt="Screenshot Immagine 12" title="Screenshot 12" />
+                  </div>
+                </div>
+              </div>
+              <div class="card-body px-4 px-md-4">
+                <a class="read-more" href="https://github.com/gbetorre/rischi/blob/main/web/img/screenshot/questions-domains.png" target="_blank">
+                  <span class="text">Visualizza a schermo intero</span>
+                  <svg class="icon icon-lg"><use href="/assets/svg/sprites.svg#it-maximize"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+<div class=" container-fluid  mt-4">
+  <div class="functionality">
+    
+    <div class="row  first ">
+      
+      <div class="col-md-6 software-ill"></div>
+      
+      
+
+      <!-- Funzionalità sw when single block with side img-->
+      <div class="col-md-6 variant">
+        <div class="mx-md-4 px-md-4 my-2 my-md-4">
+          
+          <h2> Funzionalità del software </h2>
+          
+          <div class="function-list">
+            
+            
+            <p> Rappresentazione dinamica di strutture organizzative e processi mappati </p>
+            
+            <p> Rappresentazione dinamica dei dettagli di ogni processo organizzativo
+(fasi, soggetti, rischi...) </p>
+            
+            <p> Rappresentazione dinamica dei livelli di rischio corruttivo (indici PxI) cui ogni processo mappato risulta esposto </p>
+            
+            <p> Rappresentazione dinamica di come i livelli di rischio corruttivo PxI dei processi si ridurrebbero se venissero applicate una serie di misure di mitigazione </p>
+            
+            <p> Rappresentazione dinamica di come i livelli di rischio corruttivo PxI dei processi si sono effettivamente ridotti a seguito dell&#39;applicazione delle misure, certificata tramite un workflow di monitoraggio </p>
+            
+            <p> Calcolo automatico dei livelli di rischio corruttivo di ogni processo basato sulle risposte a un questionario rivolto al personale che eroga il processo stesso </p>
+            
+            <p> Suggerimento circa le misure di mitigazione che è opportuno applicare a ogni dato processo (algoritmo basato sull&#39;associazione n-aria RISCHIO-PROCESSO-FATTORE ABILITANTE-TIPOLOGIA MISURA) </p>
+            
+            <p> Cruscotti di monitoraggio e misurazione delle azioni applicate al fine di ridurre il rischio corruttivo </p>
+            
+            <p> Funzioni di navigazione e ricerca, report, grafici e tabelle riepilogative </p>
+            
+            
+          </div>
+          
+          <div id="usedBy">
+            <a data-bs-toggle="collapse" href="#by-amministration" role="button" aria-expanded="false"
+              aria-controls="by-amministration" class="count">
+              Usata da 1
+              
+              amministrazioni
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div class="collapse" id="by-amministration">
+              
+              <p> Alberto Maria Arena Agostino </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tags-relate text-center">
+    <strong>CATEGORIE</strong>
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=workflow-management">gestione flusso di lavoro</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=web-collaboration">collaborazioni web</a>
+</li>
+
+    
+    
+
+
+<li class="home-software-tags__item  ">
+        <a
+                href="/it/search?categories=business-process-management">gestione processi aziendali</a>
+</li>
+
+    
+  </div>
+</div>
+
+
+<div class="detail-sheet">
+  <div class="container sheet">
+    <div class="top">
+    </div>
+    <div class="content-sheet">
+      <div class="row justify-content-center ">
+        <div class="col-10 col-sm-10">
+          <div class="heading-title">
+            <p>Informazioni di dettaglio </p>
+            <div class="title">
+              <h2 class="h1">
+                ROL-RMS: Rischi On Line-Risk Mapping Software
+                
+                <span
+                  class="badge badge-pill badge-pill--sup bg-primary">2.1.7</span>
+                
+              </h2>
+              <h2>
+                Applicazione Web
+              </h2>
+            </div>
+          </div>
+          <div class="heading-maintenance">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-2">
+                <p>
+                  <span class="label">Ultimo rilascio</span>
+                  2025-02-05
+                  
+                  (2.1.7)
+                  
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Tipo di manutenzione</span>
+                  internal
+                </p>
+              </div>
+              <div class="col-7 col-sm-7 col-md-3">
+                <p>
+                  <span class="label">Stato publiccode.yml</span>
+                  <publiccode-badge id="e87a5c40-7c1c-4723-b7c4-d495dacfb50a"></publiccode-badge>
+                <p>
+              </div>
+
+              
+            </div>
+          </div>
+
+          
+          <div class="heading-maintenance-contact">
+            <p class="d-none d-md-block">
+              <span class="label">
+                
+                Contatto tecnico
+                
+              </span>
+            </p>
+            <a data-bs-toggle="collapse" href="#maintenanceContact" role="button" aria-expanded="false"
+              aria-controls="maintenanceContact" class="d-block d-md-none controls">
+              
+              Contatto tecnico
+              
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="maintenanceContact" class="collapse dont-collapse-md">
+              <div class="row">
+                
+                <div class="col-md">
+                  <p>
+                    
+                    <a href="mailto:gianroberto.torre@gmail.com">Giovanroberto Torre</a>
+                    
+                    +398028506
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="heading-legal-dependencies">
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Licenza</span>
+                  GPL-2.0-or-later
+                </p>
+              </div>
+              
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme</span>
+                  
+                      web<br />
+                  
+                </p>
+              </div>
+              
+
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Piattaforme abilitanti</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  Nessuna
+                  
+                </p>
+              </div>
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Conformità</span>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/" class="enabling_platforms">
+                    Linee Guida Design
+                  </a>
+                  
+                  
+                  <a href="https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict" class="enabling_platforms">
+                    Misure Minime Sicurezza
+                  </a>
+                  
+                  
+                  
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6 col-md">
+                <p>
+                  <span class="label">Lista dipendenze</span>
+                  
+                  Nessuna
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main row">
+            <a data-bs-toggle="collapse" href="#mainOthersInfo" role="button" aria-expanded="false"
+              aria-controls="mainOthersInfo" class="d-block d-md-none controls">
+              Altre informazioni
+              <span class="or it-expand"></span>
+              <span class="and it-collapse"></span>
+            </a>
+            <div id="mainOthersInfo" class="collapse col-md-3 dont-collapse-md">
+              
+              
+
+              <div class="other-detail">
+                <p><span class="label">Lingue supportate</span>
+                  
+                
+                
+
+Italiano<br />
+
+                
+                
+                </p>
+              </div>
+              
+              
+              
+            </div>
+            <div class="col-md-8 col-offset-md-1 page-detail">
+              <p class="title">Descrizione estesa</p>
+              <div class="font-serif page-detail__text" data-proofer-ignore>
+                <h2 id="introduzione">Introduzione</h2>
+
+<p>L’applicazione web per la mappatura dei rischi corruttivi <code class="language-plaintext highlighter-rouge">ROL-RMS</code> serve
+ad aiutare Enti, Pubbliche Amministrazioni, aziende partecipate – e
+chiunque sia interessato a monitorare e gestire il rischio corruttivo –
+<strong>a quantificare automaticamente i rischi corruttivi</strong> cui i loro processi
+organizzativi sono esposti e ad indirizzare questi soggetti a mettere in
+atto <strong>le contromisure adeguate</strong>.</p>
+
+<p>Il workflow generale è suddiviso in 4 distinti step, o filoni di lavoro:</p>
+
+<ol>
+  <li>
+    <p>Step 1: caricamento di strutture e processi</p>
+  </li>
+  <li>
+    <p>Step 2: calcolo del rischio corruttivo di ogni processo</p>
+  </li>
+  <li>
+    <p>Step 3: scelta delle misure di mitigazione da applicare ad ogni
+processo</p>
+  </li>
+  <li>
+    <p>Step 4: monitoraggio al fine di verificare se le misure previste sono
+state applicate.</p>
+  </li>
+</ol>
+
+<p>Questi 4 step si svolgono entro un flusso sincrono; sono pensati, ovvero,
+per essere portati a compimento in sequenza, non in parallelo. Ad esempio,
+non si può passare allo Step 2 se non è stato completato lo Step 1; né si
+può passare allo Step 3 se non è stato completato lo Step 2; e cosí via.</p>
+
+<p>Questa modalità “lineare” guida gli attori nel processo di mappatura e
+gestione e permette di gestire in modo semplificato la complessità del
+dominio.</p>
+
+<p>Alla fine del 4° Step, sarà stata realizzata una rilevazione completa del
+calcolo, del trattamento e del monitoraggio dei livelli di rischio
+corruttivo in organizzazione - il tutto documentato e certificato
+attraverso specifici report, anche scaricabili.</p>
+
+<p>A questo punto, si può iterare il processo, procedendo con una nuova
+rilevazione; il sistema è predisposto, infatti, per la storicizzazione.</p>
+
+<h2 id="soggetti-coinvolti">Soggetti coinvolti</h2>
+
+<p>I soggetti interessati dall’uso del software, ovvero gli attori coinvolti,
+sono i seguenti:</p>
+
+<ul>
+  <li>
+    <p>L’esperto, o l’ufficio, anticorruzione e trasparenza</p>
+  </li>
+  <li>
+    <p>I responsabili e gli operatori degli uffici dell’organizzazione presa in
+esame</p>
+  </li>
+  <li>
+    <p>Il software engineer</p>
+  </li>
+</ul>
+
+<p>​</p>
+
+<h2 id="funzionamento">Funzionamento</h2>
+
+<h3 id="step-1-individuazione-del-contesto-mappatura-organizzativa">Step 1: Individuazione del contesto (mappatura organizzativa)</h3>
+
+<p>In una prima fase viene effettuato il caricamento delle strutture
+organizzative (organigramma) e quello dei processi organizzativi che
+vengono prodotti dalle strutture stesse.</p>
+
+<p>Il software prevede apposite funzionalità di navigazione nell’albero dei
+macroprocessi ed in quello dell’organigramma in modo da verificare
+rapidamente che la mappatura corrisponda a quanto effettivamente presente
+nell’organizzazione.</p>
+
+<p>Inoltre, per ogni processo viene fornita una pagina di dettaglio
+contenente tutte le informazioni aggregate che riguardano il processo
+stesso, tra cui: gli input, le fasi, gli output, i rischi ed i fattori
+abilitanti.</p>
+
+<p>Mentre l’articolazione di processi e strutture è specifica di ogni
+organizzazione e quindi deve essere preparata e caricata ogni volta che il
+software viene deployato in una nuova organizzazione, vi sono alcuni
+“dizionari” che sono predefiniti e forniti, già pronti, in _bundle _col
+software: il registro dei rischi, quello delle misure di mitigazione, il
+dizionario dei quesiti, quello dei fattori abilitanti, ed altri ancora.</p>
+
+<h3 id="step-2-calcolo-del-rischio-interviste-e-indicatori-di-rischio">Step 2: Calcolo del rischio (interviste e indicatori di rischio)</h3>
+
+<p>Consultando la mappatura dei processi, effettuata nello Step 1, l’ufficio
+anticorruzione diviene in grado di consultare un **elenco **delle
+strutture organizzative coinvolte nell’erogazione dei relativi processi.</p>
+
+<p>A quel punto, è possibile quindi rivolgere una serie di **quesiti **a
+responsabili ed operatori ubicati presso tali strutture, in merito ai
+processi prodotti dalle strutture stesse.</p>
+
+<p>Attraverso l’analisi delle risposte a tali quesiti, l’applicazione
+permette di ottenere, automaticamente, una serie di <strong>indici **relativi a
+specifici rischi corruttivi cui risultano esposti i processi organizzativi
+presidiati dalle strutture stesse: in pratica, sulle risposte il software
+applica specifici algoritmi che permettono di individuare il livello del
+**PxI **(livello di rischio **Probabilità x Impatto</strong>)** **di ogni
+processo esaminato.</p>
+
+<p>Ogni quesito, infatti, è collegato ad uno o piú specifici rischi
+corruttivi; perciò, in funzione della risposta data dal personale
+intervistato, l’applicazione calcola il livello di rischio cui il processo
+esaminato risulta esposto.</p>
+
+<p>La batteria di quesiti è ampia (piú di 150) ma la decisione circa quali
+quesiti somministrare può essere stabilita di volta in volta
+dall’intervistatore, nel senso che tutti i quesiti sono facoltativi e vi
+sono quesiti piú generici, che probabilmente ha senso rivolgere in ogni
+intervista, e quesiti piú specifici, che ha senso somministrare soltanto
+se si sta prendendo in esame processi molto peculiari.</p>
+
+<h3 id="step-3-trattamento-del-rischio-misure-di-mitigazione---stima">Step 3: Trattamento del rischio (misure di mitigazione - stima)</h3>
+
+<p>Tramite gli Step 1 e 2 si ottiene dunque un rapporto complessivo sul
+livello di rischio cui ogni processo organizzativo censito risulta
+esposto.</p>
+
+<p>Aver realizzato questa mappatura costituisce un buon punto di partenza per
+poter stabilire quali misure di mitigazione/prevenzione del rischio
+corruttivo è opportuno applicare ai rischi stessi. Questa è la fase 3,
+ovvero <strong>la fase di individuazione delle misure di mitigazione atte a
+ridurre il valore del rischio.</strong></p>
+
+<p>Si è accennato, in precedenza, al fatto che un registro delle misure di
+mitigazione viene fornito nativamente dal software.</p>
+
+<p>Quali misure, però, scegliere esattamente, tra le varie misure possibili?
+Ovvero: come individuare le misure migliori per ogni rischio di ogni dato
+processo?</p>
+
+<p>Anche qui viene in aiuto il sistema ROL-RMS:</p>
+
+<blockquote>
+  <p><strong>uno dei vantaggi offerti dal software, su questo versante, è il fatto che il sistema stesso suggerisce quali misure applicare a ciascun rischio nel contesto di ciascun processo.</strong></p>
+</blockquote>
+
+<p>Le misure di mitigazione, infatti, tramite la loro tipologia, hanno
+un’associazione con il fattore abilitante e questa relazione rende
+possibile individuare il contesto di applicazione delle misure stesse in
+funzione del rischio e del processo.</p>
+
+<p>Una volta applicate le misure, è possibile verificare come variano i
+livelli di rischio attraverso la consultazione di appositi cruscotti, che
+mettono a confronto il PxI prima e dopo l’applicazione delle misure.</p>
+
+<h3 id="step-4-certificazione-del-rischio-misure-di-mitigazione--">Step 4: Certificazione del rischio (misure di mitigazione -</h3>
+<p>monitoraggio)</p>
+
+<p>Il fatto di prevedere, o suggerire, che una misura venga applicata ad un
+processo non implica però, automaticamente, che essa venga effettivamente
+applicata!</p>
+
+<p>La fase di assegnazione delle misure - cioè lo Step 3 - permette di
+ottenere quindi soltanto una <em>stima</em> della riduzione del rischio <em>se</em> le
+misure proposte vengono applicate (può essere un grande <em>SE</em>). La fase di
+monitoraggio, che conclude il ciclo di gestione del rischio corruttivo,
+consiste nel verificare se le misure proposte sono poi state
+effettivamente applicate.</p>
+
+<p>Lo Step 4 permette di stabilire effettivamente quali misure sono state
+applicate e quindi permette di calcolare il valore reale del livello di
+rischio, ovvero il valore effettivo e finale del rischio per ogni processo
+considerato alla fine del ciclo di valutazione (rilevazione).</p>
+
+<blockquote>
+  <p><strong>Il software offre anche specifici strumenti analitici per verificare in che misura è cambiato il livello di rischio non solo in funzione dell’applicazione ipotetica, ma anche di quella effettiva delle misure di mitigazione.</strong></p>
+</blockquote>
+
+<p>​</p>
+
+<h2 id="ruoli-dei-soggetti">Ruoli dei soggetti</h2>
+
+<p>Ogni soggetto ha un compito specifico:</p>
+
+<ul>
+  <li>
+    <p>L’esperto di anticorruzione, con l’aiuto del software, effettua il
+calcolo del rischio (Step 2), stabilisce quali misure di mitigazione
+applicare ai processi piú a rischio (Step 3) e ne cura il monitoraggio
+(Step 4).</p>
+  </li>
+  <li>
+    <p>Il personale degli uffici che sovrintendono i processi rispondono alle
+domande (Step 2) e forniscono i valori raccolti nel monitoraggio (Step 4).</p>
+  </li>
+  <li>
+    <p>Il software engineer cura la fase di mappatura dei processi (Step 1) e
+coadiuva gli altri soggetti attraverso tutto il workflow (tutti gli Step).</p>
+  </li>
+</ul>
+
+<p>​</p>
+
+<h2 id="conclusioni">Conclusioni</h2>
+
+<p>Tra le varie funzioni attualmente implementate nel software ROL-RMS,
+notiamo in particolare 3 <em>facilities</em>, che possono agevolare notevolmente
+il lavoro dell’ufficio trasparenza e anticorruzione interno all’ente che
+adotti la soluzione ROL-RMS:</p>
+
+<ul>
+  <li>
+    <p>il calcolo automatico del rischio esistente;</p>
+  </li>
+  <li>
+    <p>il suggerimento automatico circa le misure di mitigazione da applicare
+al rischio esistente;</p>
+  </li>
+  <li>
+    <p>la produzione di report comparativi per consultare l’andamento dei
+livelli di rischio in funzione delle misure in ipotesi e di quelle
+applicate.</p>
+  </li>
+</ul>
+
+<p>Allo stato attuale (versione di riferimento: <code class="language-plaintext highlighter-rouge">2.1.1, dicembre 2024</code>) il
+software è già pronto per essere adattato, con un minimo adeguamento, a
+qualunque realtà organizzativa che voglia effettuare un’analisi
+dettagliata dei rischi corruttivi cui i processi erogati
+dall’organizzazione stessa sono esposti.</p>
+
+<h3 id="customizzazione">Customizzazione</h3>
+
+<p>È anche possibile stimare, con relativa precisione, quanto tempo è
+necessario per customizzare il software in funzione di una specifica
+realtà organizzativa. Infatti, acquisite:</p>
+
+<ul>
+  <li>
+    <p>le dimensioni dell’organizzazione (in particolare, il numero di livelli
+dell’organigramma ed il numero assoluto di strutture da mappare)</p>
+  </li>
+  <li>
+    <p>il numero di livelli e la numerosità dei processi prodotti
+dall’organizzazione stessa,</p>
+  </li>
+</ul>
+
+<p>diventa possibile effettuare una stima relativamente accurata del tempo
+necessario affinché sia possibile iniziare la campagna di interviste e,
+conseguentemente, ottenere i risultati dei vari indicatori di rischio e
+del giudizio sintetico P x I.</p>
+
+<h3 id="storicizzazione">Storicizzazione</h3>
+
+<p>Ogni rilevazione successiva potrà essere messa a confronto con la
+precedente attraverso specifici cruscotti multirilevazione, che
+permetteranno di analizzare i delta e i trend relativi ai processi e ai
+relativi rischi corruttivi, da una rilevazione all’altra, in modo che sia
+alla fine possibile, per l’organizzazione, effettuare una valutazione
+delle variazioni dei livelli di rischio attraverso gli anni.</p>
+
+<p>​</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</div>
+
+<a href="#" aria-label="torna all'inizio dei contenuti" data-bs-toggle="backtotop" class="back-to-top shadow">
+  <svg class="icon icon-light"><use href="/assets/svg/sprites.svg#it-arrow-up"></use></svg>
+</a>
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://innovazione.gov.it/dipartimento/" title="Dipartimento per la Trasformazione Digitale">
+                <img src="/assets/images/governo.svg" alt="Logo Governo Italiano">
+                <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://www.agid.gov.it" title="Agenzia per l'Italia Digitale">
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <img src="/assets/images/agid-logo-bb.svg" alt="Agenzia per l'Italia Digitale">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pt-3 d-flex align-items-center">
+            <div class="it-socials d-flex" style="gap: 1rem;">
+              <span>Seguici su</span>
+              <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/it/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        
+        <li class="list-inline-item"><a href="/it/privacy-policy">Privacy policy</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/it/note-legali">Note legali</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/it/dashboard">Dashboard</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="/dist/bundle.js?202503120603"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
