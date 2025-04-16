@@ -125,7 +125,15 @@ const softwareItem = (source) => {
 
   const name = descriptionField?.localisedName ?? source.publiccode.name;
 
-  const category = getSoftwareCategory(source.publiccode.it.riuso?.codiceIPA);
+  // Create a default empty object for 'it' if it doesn't exist
+  // This ensures source.publiccode.it will never be undefined
+  if (source.publiccode && !source.publiccode.it) {
+    source.publiccode.it = {};
+  }
+
+  // Handle safely accessing nested properties that might not exist
+  const ipaCode = source.publiccode?.it?.riuso?.codiceIPA;
+  const category = getSoftwareCategory(ipaCode);
   const icon = category === SOFTWARE_REUSE ? 'it-software' : 'it-open-source';
 
   const fallback =
