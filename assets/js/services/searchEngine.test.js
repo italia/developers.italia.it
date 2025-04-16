@@ -4,7 +4,40 @@ import { search } from './searchEngine.js';
 jest.mock('../api/elasticSearch.js');
 jest.mock('../utils/l10n.js');
 
-describe('searchEngine', () => {
+// Extract duplicated strings as constants
+const SHORT_DESC_IT = 'Descrizione breve in italiano';
+const SHORT_DESC_IT_VARIANT = 'Descrizione breve in italiano (IT)';
+const SHORT_DESC_EN = 'Short description in English';
+
+// Helper function to create mock API response
+const createMockApiResponse = (source) => {
+  const mockApi = jest.spyOn(require('../api/elasticSearch.js'), 'querySoftware');
+  mockApi.mockResolvedValue([
+    [
+      {
+        _id: 'test-id',
+        _source: {
+          type: 'software',
+          slug: 'test-slug',
+          publiccode: source.publiccode,
+        },
+      },
+    ],
+    1,
+  ]);
+  return mockApi;
+};
+
+// Helper to test language handling
+const testLanguageHandling = async (source, expectedDescription) => {
+  const mockApi = createMockApiResponse(source);
+  const [items] = await search(SOFTWARE_OPEN);
+  expect(items[0].description).toEqual(expectedDescription);
+  mockApi.mockRestore();
+};
+
+// Basic item modeling tests
+describe('searchEngine item modeling', () => {
   it('correctly models news item', async () => {
     const news = {
       category: 'news',
@@ -97,118 +130,97 @@ describe('searchEngine', () => {
     const [items] = await search(PLATFORM);
     expect(items[0]).toEqual(platform);
   });
+});
 
-  describe('language handling', () => {
-    const testGetDescriptionField = async (source, expectedDescription) => {
-      const mockApi = jest.spyOn(require('../api/elasticSearch.js'), 'querySoftware');
-      mockApi.mockResolvedValue([
-        [
-          {
-            _id: 'test-id',
-            _source: {
-              type: 'software',
-              slug: 'test-slug',
-              publiccode: source.publiccode,
-            },
+// Language handling tests
+describe('searchEngine language handling', () => {
+  it('handles standard language code (it)', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        description: {
+          it: {
+            shortDescription: SHORT_DESC_IT,
+            localisedName: 'Nome Localizzato',
           },
-        ],
-        1,
-      ]);
-
-      const [items] = await search(SOFTWARE_OPEN);
-      expect(items[0].description).toEqual(expectedDescription);
-
-      mockApi.mockRestore();
+        },
+      },
     };
 
-    it('handles standard language code (it)', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          description: {
-            it: {
-              shortDescription: 'Descrizione breve in italiano',
-              localisedName: 'Nome Localizzato',
-            },
+    await testLanguageHandling(source, SHORT_DESC_IT);
+  });
+
+  it('handles language variants (it-IT)', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        description: {
+          'it-IT': {
+            shortDescription: SHORT_DESC_IT_VARIANT,
+            localisedName: 'Nome Localizzato',
           },
         },
-      };
+      },
+    };
 
-      await testGetDescriptionField(source, 'Descrizione breve in italiano');
-    });
+    await testLanguageHandling(source, SHORT_DESC_IT_VARIANT);
+  });
 
-    it('handles language variants (it-IT)', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          description: {
-            'it-IT': {
-              shortDescription: 'Descrizione breve in italiano (IT)',
-              localisedName: 'Nome Localizzato',
-            },
+  it('falls back to English when current language is not available', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        description: {
+          en: {
+            shortDescription: SHORT_DESC_EN,
+            localisedName: 'Localized Name',
+          },
+          fr: {
+            shortDescription: 'Description courte en français',
+            localisedName: 'Nom Localisé',
           },
         },
-      };
+      },
+    };
 
-      await testGetDescriptionField(source, 'Descrizione breve in italiano (IT)');
-    });
+    await testLanguageHandling(source, SHORT_DESC_EN);
+  });
 
-    it('falls back to English when current language is not available', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          description: {
-            en: {
-              shortDescription: 'Short description in English',
-              localisedName: 'Localized Name',
-            },
-            fr: {
-              shortDescription: 'Description courte en français',
-              localisedName: 'Nom Localisé',
-            },
+  it('uses any available language when no preferred languages are available', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        description: {
+          fr: {
+            shortDescription: 'Description courte en français',
+            localisedName: 'Nom Localisé',
           },
         },
-      };
+      },
+    };
 
-      await testGetDescriptionField(source, 'Short description in English');
-    });
+    await testLanguageHandling(source, 'Description courte en français');
+  });
 
-    it('uses any available language when no preferred languages are available', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          description: {
-            fr: {
-              shortDescription: 'Description courte en français',
-              localisedName: 'Nom Localisé',
-            },
-          },
-        },
-      };
+  it('handles missing description gracefully', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        // No description field
+      },
+    };
 
-      await testGetDescriptionField(source, 'Description courte en français');
-    });
+    await testLanguageHandling(source, '');
+  });
 
-    it('handles missing description gracefully', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          // No description field
-        },
-      };
+  it('handles empty description object gracefully', async () => {
+    const source = {
+      publiccode: {
+        name: 'Test Software',
+        description: {},
+      },
+    };
 
-      await testGetDescriptionField(source, '');
-    });
-
-    it('handles empty description object gracefully', async () => {
-      const source = {
-        publiccode: {
-          name: 'Test Software',
-          description: {},
-        },
-      };
-
-      await testGetDescriptionField(source, '');
-    });
+    await testLanguageHandling(source, '');
   });
 });
