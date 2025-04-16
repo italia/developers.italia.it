@@ -35,7 +35,7 @@ function getDescriptionField(source, currentLang) {
 
   // 2. Look for variants (e.g. it-IT when currentLang is 'it')
   const baseLang = currentLang.split('-')[0];
-  const variants = descKeys.filter(key => key.startsWith(baseLang + '-'));
+  const variants = descKeys.filter((key) => key.startsWith(baseLang + '-'));
 
   if (variants.length > 0) {
     return descriptions[variants[0]];
@@ -121,9 +121,7 @@ const softwareItem = (source) => {
   const descriptionField = getDescriptionField(source, lang);
 
   // Handle case where no description is available
-  const description = descriptionField?.shortDescription
-    ? cropString(descriptionField.shortDescription)
-    : '';
+  const description = descriptionField?.shortDescription ? cropString(descriptionField.shortDescription) : '';
 
   const name = descriptionField?.localisedName ?? source.publiccode.name;
 

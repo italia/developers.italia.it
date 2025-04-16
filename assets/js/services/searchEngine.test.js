@@ -108,11 +108,11 @@ describe('searchEngine', () => {
             _source: {
               type: 'software',
               slug: 'test-slug',
-              publiccode: source.publiccode
-            }
-          }
+              publiccode: source.publiccode,
+            },
+          },
         ],
-        1
+        1,
       ]);
 
       const [items] = await search(SOFTWARE_OPEN);
@@ -128,10 +128,10 @@ describe('searchEngine', () => {
           description: {
             it: {
               shortDescription: 'Descrizione breve in italiano',
-              localisedName: 'Nome Localizzato'
-            }
-          }
-        }
+              localisedName: 'Nome Localizzato',
+            },
+          },
+        },
       };
 
       await testGetDescriptionField(source, 'Descrizione breve in italiano');
@@ -144,10 +144,10 @@ describe('searchEngine', () => {
           description: {
             'it-IT': {
               shortDescription: 'Descrizione breve in italiano (IT)',
-              localisedName: 'Nome Localizzato'
-            }
-          }
-        }
+              localisedName: 'Nome Localizzato',
+            },
+          },
+        },
       };
 
       await testGetDescriptionField(source, 'Descrizione breve in italiano (IT)');
@@ -160,14 +160,14 @@ describe('searchEngine', () => {
           description: {
             en: {
               shortDescription: 'Short description in English',
-              localisedName: 'Localized Name'
+              localisedName: 'Localized Name',
             },
             fr: {
               shortDescription: 'Description courte en français',
-              localisedName: 'Nom Localisé'
-            }
-          }
-        }
+              localisedName: 'Nom Localisé',
+            },
+          },
+        },
       };
 
       await testGetDescriptionField(source, 'Short description in English');
@@ -180,10 +180,10 @@ describe('searchEngine', () => {
           description: {
             fr: {
               shortDescription: 'Description courte en français',
-              localisedName: 'Nom Localisé'
-            }
-          }
-        }
+              localisedName: 'Nom Localisé',
+            },
+          },
+        },
       };
 
       await testGetDescriptionField(source, 'Description courte en français');
@@ -194,7 +194,7 @@ describe('searchEngine', () => {
         publiccode: {
           name: 'Test Software',
           // No description field
-        }
+        },
       };
 
       await testGetDescriptionField(source, '');
@@ -204,8 +204,8 @@ describe('searchEngine', () => {
       const source = {
         publiccode: {
           name: 'Test Software',
-          description: {}
-        }
+          description: {},
+        },
       };
 
       await testGetDescriptionField(source, '');
