@@ -20,6 +20,7 @@ describe('searchEngine', () => {
     const [items] = await search(ALL_SITE);
     expect(items[0]).toEqual(news);
   });
+
   it('correctly models administration item', async () => {
     const administration = {
       category: 'administration',
@@ -34,6 +35,7 @@ describe('searchEngine', () => {
     const [items] = await search(ADMINISTRATION);
     expect(items[0]).toEqual(administration);
   });
+
   it('correctly models api item', async () => {
     const api = {
       category: 'api',
@@ -48,6 +50,7 @@ describe('searchEngine', () => {
     const [items] = await search(API);
     expect(items[0]).toEqual(api);
   });
+
   it('correctly models software open', async () => {
     const softwareOpen = {
       category: 'software_open',
@@ -62,6 +65,7 @@ describe('searchEngine', () => {
     const [items] = await search(SOFTWARE_OPEN);
     expect(items[0]).toEqual(softwareOpen);
   });
+
   it('correctly models software reuse', async () => {
     const softwareReuse = {
       category: 'software_reuse',
@@ -77,6 +81,7 @@ describe('searchEngine', () => {
     const [items] = await search(SOFTWARE_REUSE);
     expect(items[0]).toEqual(softwareReuse);
   });
+
   it('correctly models platform', async () => {
     const platform = {
       category: 'platform',
@@ -91,5 +96,119 @@ describe('searchEngine', () => {
     };
     const [items] = await search(PLATFORM);
     expect(items[0]).toEqual(platform);
+  });
+
+  describe('language handling', () => {
+    const testGetDescriptionField = async (source, expectedDescription) => {
+      const mockApi = jest.spyOn(require('../api/elasticSearch.js'), 'querySoftware');
+      mockApi.mockResolvedValue([
+        [
+          {
+            _id: 'test-id',
+            _source: {
+              type: 'software',
+              slug: 'test-slug',
+              publiccode: source.publiccode
+            }
+          }
+        ],
+        1
+      ]);
+
+      const [items] = await search(SOFTWARE_OPEN);
+      expect(items[0].description).toEqual(expectedDescription);
+
+      mockApi.mockRestore();
+    };
+
+    it('handles standard language code (it)', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          description: {
+            it: {
+              shortDescription: 'Descrizione breve in italiano',
+              localisedName: 'Nome Localizzato'
+            }
+          }
+        }
+      };
+
+      await testGetDescriptionField(source, 'Descrizione breve in italiano');
+    });
+
+    it('handles language variants (it-IT)', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          description: {
+            'it-IT': {
+              shortDescription: 'Descrizione breve in italiano (IT)',
+              localisedName: 'Nome Localizzato'
+            }
+          }
+        }
+      };
+
+      await testGetDescriptionField(source, 'Descrizione breve in italiano (IT)');
+    });
+
+    it('falls back to English when current language is not available', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          description: {
+            en: {
+              shortDescription: 'Short description in English',
+              localisedName: 'Localized Name'
+            },
+            fr: {
+              shortDescription: 'Description courte en français',
+              localisedName: 'Nom Localisé'
+            }
+          }
+        }
+      };
+
+      await testGetDescriptionField(source, 'Short description in English');
+    });
+
+    it('uses any available language when no preferred languages are available', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          description: {
+            fr: {
+              shortDescription: 'Description courte en français',
+              localisedName: 'Nom Localisé'
+            }
+          }
+        }
+      };
+
+      await testGetDescriptionField(source, 'Description courte en français');
+    });
+
+    it('handles missing description gracefully', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          // No description field
+        }
+      };
+
+      await testGetDescriptionField(source, '');
+    });
+
+    it('handles empty description object gracefully', async () => {
+      const source = {
+        publiccode: {
+          name: 'Test Software',
+          description: {}
+        }
+      };
+
+      await testGetDescriptionField(source, '');
+    });
   });
 });

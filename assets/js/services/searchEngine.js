@@ -12,6 +12,48 @@ import { queryAdministration, queryAllSite, queryApi, queryPlatform, querySoftwa
 
 const LOGO_IT = '/assets/icons/logo-it.png';
 
+/**
+ * Helper function to find the appropriate language description
+ * according to IETF BCP 47 standards, handling variants like it-IT
+ */
+function getDescriptionField(source, currentLang) {
+  if (!source.publiccode?.description) {
+    return null;
+  }
+
+  const descriptions = source.publiccode.description;
+  const descKeys = Object.keys(descriptions);
+
+  if (descKeys.length === 0) {
+    return null;
+  }
+
+  // 1. Exact match
+  if (descriptions[currentLang]) {
+    return descriptions[currentLang];
+  }
+
+  // 2. Look for variants (e.g. it-IT when currentLang is 'it')
+  const baseLang = currentLang.split('-')[0];
+  const variants = descKeys.filter(key => key.startsWith(baseLang + '-'));
+
+  if (variants.length > 0) {
+    return descriptions[variants[0]];
+  }
+
+  // 3. Fallback to preferred languages
+  if (descriptions['en']) {
+    return descriptions['en'];
+  }
+
+  if (descriptions['it']) {
+    return descriptions['it'];
+  }
+
+  // 4. Last resort: take the first available description
+  return descriptions[descKeys[0]];
+}
+
 export const search = async (type, { searchValue, filters = {}, sortBy = 'relevance', from = 0, size = 12 } = {}) => {
   const params = {
     searchValue,
@@ -76,11 +118,14 @@ const administrationItem = (source) => ({
 });
 
 const softwareItem = (source) => {
-  const descriptionField =
-    source.publiccode.description?.[lang] ?? source.publiccode.description['en'] ?? source.publiccode.description['it'];
-  const description = cropString(descriptionField.shortDescription);
+  const descriptionField = getDescriptionField(source, lang);
 
-  const name = descriptionField.localisedName ?? source.publiccode.name;
+  // Handle case where no description is available
+  const description = descriptionField?.shortDescription
+    ? cropString(descriptionField.shortDescription)
+    : '';
+
+  const name = descriptionField?.localisedName ?? source.publiccode.name;
 
   const category = getSoftwareCategory(source.publiccode.it.riuso?.codiceIPA);
   const icon = category === SOFTWARE_REUSE ? 'it-software' : 'it-open-source';
@@ -153,4 +198,9 @@ const pageItem = (source) => ({
   url: source.url,
 });
 
-const cropString = (value) => (value.length >= 100 ? value.substr(0, 100).concat('...') : value);
+const cropString = (value) => {
+  if (!value || typeof value !== 'string') {
+    return '';
+  }
+  return value.length >= 100 ? value.substr(0, 100).concat('...') : value;
+};
