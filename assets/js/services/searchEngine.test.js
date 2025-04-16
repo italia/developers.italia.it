@@ -8,6 +8,11 @@ jest.mock('../utils/l10n.js');
 const SHORT_DESC_IT = 'Descrizione breve in italiano';
 const SHORT_DESC_IT_VARIANT = 'Descrizione breve in italiano (IT)';
 const SHORT_DESC_EN = 'Short description in English';
+const SHORT_DESC_FR = 'Description courte en français';
+const NAME_IT = 'Nome Localizzato';
+const NAME_FR = 'Nom Localisé';
+const NAME_EN = 'Localized Name';
+const TEST_SOFTWARE = 'Test Software';
 
 // Helper function to create mock API response
 const createMockApiResponse = (source) => {
@@ -137,11 +142,11 @@ describe('searchEngine language handling', () => {
   it('handles standard language code (it)', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         description: {
           it: {
             shortDescription: SHORT_DESC_IT,
-            localisedName: 'Nome Localizzato',
+            localisedName: NAME_IT,
           },
         },
       },
@@ -153,11 +158,11 @@ describe('searchEngine language handling', () => {
   it('handles language variants (it-IT)', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         description: {
           'it-IT': {
             shortDescription: SHORT_DESC_IT_VARIANT,
-            localisedName: 'Nome Localizzato',
+            localisedName: NAME_IT,
           },
         },
       },
@@ -169,15 +174,15 @@ describe('searchEngine language handling', () => {
   it('falls back to English when current language is not available', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         description: {
           en: {
             shortDescription: SHORT_DESC_EN,
-            localisedName: 'Localized Name',
+            localisedName: NAME_EN,
           },
           fr: {
-            shortDescription: 'Description courte en français',
-            localisedName: 'Nom Localisé',
+            shortDescription: SHORT_DESC_FR,
+            localisedName: NAME_FR,
           },
         },
       },
@@ -189,23 +194,23 @@ describe('searchEngine language handling', () => {
   it('uses any available language when no preferred languages are available', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         description: {
           fr: {
-            shortDescription: 'Description courte en français',
-            localisedName: 'Nom Localisé',
+            shortDescription: SHORT_DESC_FR,
+            localisedName: NAME_FR,
           },
         },
       },
     };
 
-    await testLanguageHandling(source, 'Description courte en français');
+    await testLanguageHandling(source, SHORT_DESC_FR);
   });
 
   it('handles missing description gracefully', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         // No description field
       },
     };
@@ -216,7 +221,7 @@ describe('searchEngine language handling', () => {
   it('handles empty description object gracefully', async () => {
     const source = {
       publiccode: {
-        name: 'Test Software',
+        name: TEST_SOFTWARE,
         description: {},
       },
     };
