@@ -3,7 +3,7 @@
     "version": "2.4.0",
     "license": "BSD-3-Clause",
     "dependencies": {
-        "axios": "^1.7.7",
+        "axios": "^1.9.0",
         "bootstrap-italia": "^2.13.4",
         "design-react-kit": "^5.6.0",
         "dompurify": "^3.2.4",
