@@ -1,7 +1,10 @@
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const yaml = require('js-yaml');
+
+const ASSETS_HOST = "assets.developers.italia.it";
 
 const normalizeRepoUrl = (url) => url.toLowerCase().replace(/.git$/, '');
 const absoluteUrl = (url, repo) => {
@@ -20,6 +23,17 @@ const absoluteUrl = (url, repo) => {
       // GitLab
       return `${repoUrl.protocol}//${repoUrl.hostname}` + path.join(repoUrl.pathname, '-/raw/HEAD', url)
   }
+};
+
+const assetsImage = (url) => {
+  if (!url) {
+    return url;
+  }
+
+  const hash = crypto.createHash('sha1').update(url, 'utf8').digest('hex');
+  const ext = path.extname(url);
+
+  return `https://${ASSETS_HOST}/${hash.slice(0, 2)}/${hash.slice(2)}${ext}`;
 };
 
 const addSlug = (software) => ({ ...software, slug: software.id });
@@ -58,7 +72,7 @@ function toElasticSearchBulkFile(software, filename) {
   software
     .map(software => addSlug(software))
     .map(software => addPubliccodeDict(software))
-    .map(software => ({ ...software, publiccode: { ...software.publiccode, logo: absoluteUrl(software.publiccode.logo, software.url) } }))
+    .map(software => ({ ...software, publiccode: { ...software.publiccode, logo: assetsImage(absoluteUrl(software.publiccode.logo, software.url)) } }))
     .forEach(s => {
       const metadata = {
         'index': {
@@ -90,18 +104,18 @@ async function run() {
     .map(software => addAliases(addSlug(software)))
     .map(software => addSlug(software))
     .map(software => addPubliccodeDict(software))
-    .map(software => ({ ...software, publiccode: { ...software.publiccode, logo: absoluteUrl(software.publiccode.logo, software.url) } }));
+    .map(software => ({ ...software, publiccode: { ...software.publiccode, logo: assetsImage(absoluteUrl(software.publiccode.logo, software.url)) } }));
 
   data.forEach(software => {
-    Object.keys(software.publiccode.description).forEach(lang => {
+    Object.keys(software.publiccode.description).forEach((lang) => {
       const desc = software.publiccode.description[lang];
-      software.publiccode.description[lang].screenshots = desc.screenshots?.map(ss => absoluteUrl(ss, software.url));
-    })
+      software.publiccode.description[lang].screenshots = desc.screenshots?.map((ss) => assetsImage(absoluteUrl(ss, software.url)));
+    });
   });
 
   // Remove the "url" key as it's used by Jekyll to hold the generated page's URL
   // and Searchyll uses it to compare against when the ignore: options are set in _config.yml.
-  const jekyll = data.map(({ url, ...rest }) => rest)
+  const jekyll = data.map(({ url, ...rest }) => rest);
 
   fs.writeFileSync('_data/crawler/software.yml', yaml.dump(jekyll));
 }
