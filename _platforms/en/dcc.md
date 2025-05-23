@@ -72,7 +72,7 @@ resources:
       icon: github
       url: https://github.com/rust-italia/dgc/
       desc: Utility library to read and verify the signature of the EU COVID-19 vaccine certificate in Rust
-  - Documentazione:
+  - Documentation:
     - title: Digital Covid Certificate - High-level description
       url: https://github.com/ministero-salute/it-dgc-documentation
       icon: file
