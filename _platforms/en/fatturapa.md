@@ -41,13 +41,13 @@ collab:
   links:
   - name: forum
     url: "https://forum.italia.it/c/fattura-pa"
-  - title: "Dialoga su Slack"
+  - title: "Slack"
     icon: it-slack
     url: https://developersitalia.slack.com/archives/CB7434RDM
 ---
 
 ## Intro
 
-E-invoicing, which was initially only for the Public Administration, became mandatory for all invoices between private companies and entities since January 1st, 2019.
+E-invoicing, which was initially meant only for the Public Administration, became mandatory for all invoices between private companies and entities since January 1st, 2019.
 
 Official documentation, including technical rules, is available in the official website of the [Italian Revenue Agency](https://www.agenziaentrate.gov.it/wps/content/nsilib/nsi/aree+tematiche/fatturazione+elettronica){:target="_blank"}.
