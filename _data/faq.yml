@@ -59,7 +59,7 @@ it:
       href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/riuso-software/licenze-aperte-e-scelta-di-una-licenza.html">questa
       risorsa</a>.
   item6:
-    question: È possibile nell’ambito del processo di Riuso di una soluzione
+    question: È possibile nell’ambito del processo di riuso di una soluzione
       applicare, in virtù del principio di compatibilità delle licenze, all’opera
       derivata una licenza diversa da quella apposta all’opera originaria?
     answer: |
@@ -121,10 +121,139 @@ it:
       finestra temporale considerata è di 60 giorni.
   item11:
     question: Come è possibile dichiarare il riuso di un software?
-    answer:
+    answer: |
       Per ogni soluzione presa a riuso è possibile effettuare una semplice
       dichiarazione come previsto dal <a href="https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html">Piano Triennale per l'Informatica nella Pubblica Amministrazione</a>.
       Per effettuare questa operazione è possibile seguire le indicazioni
       riportate nella <a href="https://developers.italia.it/it/riuso/dichiarazione">pagina dedicata</a>.
 
 en:
+  item1:
+    question: Do articles 68 and 69 of the CAD (Digital Administration Code) apply to public schools for the
+      acquisition and reuse of software, whether for teaching or amministrative
+      purposes?
+    answer: |
+      The subjects to which the provisions of articles 68 and 69 of the CAD
+      apply are the public administrations referred to in Article 1, paragraph
+      2, of Legislative Decree No. 165 of 30 March 2001, in compliance with
+      the division of powers referred to in Article 117 of the Constitution;
+      among these, we find the institutes and schools of all levels and
+      educational institutions. The combined provisions of articles 68 and 69
+      of the CAD do not make any distinction regarding the type of purpose of a
+      software. The object of the obligation imposed by the aforementioned
+      provisions is the software owned by the public administration.
+  item2:
+    question: In which cases is a Public Administration considered owner of a
+      software?
+    answer: |
+      The administration must be considered the owner of a software developed
+      on its specific indications whenever:
+      <ul>
+      <li>it commissioned the solution, through a contract or other negotiation
+      agreement, and the contract provides the acquisition of all intellectual
+      and industrial property rights on the software developed on its behalf or
+      in any case does not attribute such ownership to the contractor or third
+      parties;</li>
+      <li>the software was developed by internal resources of the administration.</li>
+      </ul>
+  item3:
+    question: Do articles 68 and 69 of the CAD (Digital Administration Code) apply before any software procurement?
+    answer: |
+      Articles 68 and 69 of the CAD apply in any case of acquisition by
+      public administrations of solutions, software programs or parts of it
+      regardless of the type of procedure.
+      For further information regarding the CAD, please refer to <a
+      href="https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html">
+      this link</a>.
+  item4:
+    question: Can non-open source software owned by a Public Administration be
+      reused?
+    answer: |
+      It is necessary to distinguish between software specifically developed at
+      the request of the Public Administration (or developed internally) and
+      commercial software for which an administration has acquired a license to
+      use. Only the software belonging to the first category is subject to
+      Article 69 of the CAD regarding reuse: for such solutions, the
+      administrations must mandatorily acquire full ownership of the source code
+      and must proceed with the release in open source. The commercial software
+      acquired through a usage license cannot be reused.
+  item5:
+    question: What indications are provided for the fulfillment of article 69
+      regarding the choice of license?
+    answer: |
+      The "Guidelines for the acquisition and reuse of software for public
+      administrations", adopted by AgID in conformity with articles 68 and 69
+      of the CAD, provide that the choice of license by a Public Administration
+      be made by choosing a license among those certified by Open Source
+      Initiatives. For further information regarding the licenses, please refer
+      to <a href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/riuso-software/licenze-aperte-e-scelta-di-una-licenza.html">
+      this resource</a>.
+  item6:
+    question: Is it possible to apply, within the context of the reuse process of a
+      solution, a different license to the derivative work than the one applied
+      to the original work, in virtue of the principle of compatibility of
+      licenses?
+    answer: |
+      The "Guidelines for the acquisition and reuse of software for public
+      administrations", adopted by AgID in conformity with articles 68 and 69
+      of the CAD, define, in paragraph 3.5.3, the decision tree for the choice
+      of an open license; in particular, if the release of the software refers
+      to a modification of existing open source software (therefore taken from
+      reuse by other administrations or owned by third parties), the
+      administration will use the same license with which the software was
+      originally distributed, to favor its maximum interoperability and reuse
+      with other users of the same software.
+  item7:
+    question: To which competent authorities can the failure to apply articles
+      68 and 69 of the CAD (Digital Administration Code) by a Public Administration be reported?
+    answer: |
+      Pursuant to Article 17, paragraph 1-quater, the Office of the Digital
+      Ombudsman is established at AgID, which is responsible for collecting all
+      reports regarding alleged violations of the Code of Digital
+      Administration, or any other regulation regarding digitization and
+      innovation, to guarantee the digital rights of citizens and businesses.
+      Anyone can report alleged violations of the provisions of the CAD,
+      including those under articles 68 and 69, by accessing the <a
+      href="https://www.agid.gov.it/en/form/difensore-civico-digitale">dedicated
+      area</a> on the AgID website.
+  item8:
+    question: What sanctions could be imposed on a Public Administration if it acquires
+      solutions or software programs without carrying out a comparative
+      evaluation of a technical and economic nature?
+    answer: |
+      The CAD does not provide for direct sanctions; however, if a Public
+      Administration disregards the provisions concerning the methods of
+      acquiring software, profiles of managerial and disciplinary liability
+      could arise, without prejudice to any liability for damage to public
+      funds.
+  item9:
+    question: What sanctions could be imposed on a Public Administration if it does not
+      proceed with the release in open source of the software developed or
+      commissioned by it?
+    answer: |
+      The CAD does not provide for direct sanctions; however, without
+      prejudice to any profiles of managerial and disciplinary liability, the
+      failure to release for reuse of software solutions prevents other
+      administrations from proceeding with the related evaluation and
+      acquisition for reuse, thus configuring a possible liability for damage
+      to public funds.
+  item10:
+    question: How is the vitality index displayed for each software calculated?
+    answer: |
+      The vitality index, as provided by the <a
+      href="https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/acquisizione-software/macro-fase-2-analisi-delle-soluzioni-a-riuso-delle-pa-e-delle-soluzioni-open-source.html#fase-2-2-valutazione-soluzioni-riusabili-per-la-pa">
+      guidelines for the acquisition and reuse of software for public
+      administrations</a>, indicates the degree of activity carried out in the
+      last time frame on each repository indexed in the catalog. A detailed
+      explanation of the parameters used to calculate the index is present in
+      <a href="https://github.com/italia/publiccode-crawler/blob/main/docs/vitalityIndex.md">
+      this page</a>. This index is calculated every night and, currently, the
+      time window considered is 60 days.
+  item11:
+    question: How can the reuse of a software be declared?
+    answer: |
+      For each solution taken for reuse, a simple declaration can be made as
+      provided by the <a href="https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2020-2022/capitolo-1-servizi/cosa-devono-fare-le-pa.html">Three-Year
+      Plan for IT in Public Administration</a>. To carry out this operation,
+      you can follow the instructions provided in the <a
+      href="https://developers.italia.it/it/riuso/dichiarazione">dedicated page</a>.
