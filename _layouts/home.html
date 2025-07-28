@@ -33,8 +33,9 @@ layout: default
       </article>
     </div>
   </div>
-
 </section>
+
+{% include banner-survey.html %}
 {% include banner-joinus.html extraclass="pt-2 pb-2 pt-md-5 pb-md-5" %}
 
 {% assign items = site.platforms | where: "lang", active_lang | where: "highlight", true | sort: "order"  %}
