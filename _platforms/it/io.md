@@ -2,7 +2,7 @@
 title: IO
 subtitle: L'app dei servizi pubblici
 logo: /assets/images/logo-io@2x.png
-external_website: https://io.italia.it
+external_website: https://ioapp.it
 payoff: L'app dei servizi pubblici
 description: Un unico punto di accesso per interagire in modo semplice e sicuro con i servizi pubblici locali e nazionali, direttamente dal tuo smartphone.
 owners:
@@ -19,7 +19,7 @@ resources:
     - Documentazione:
         - title: Come integrarsi e contribuire al progetto
           icon: link
-          url: https://io.italia.it/sviluppatori/
+          url: https://ioapp.it/sviluppatori/
           desc:
     - Codice sorgente:
         - title: Codice sorgente
