@@ -2182,3 +2182,67 @@ body {
     display: flex !important;
   }
 }
+
+// Banner Survey
+.banner-survey {
+  background-color: #BFDFFF;
+  min-height: 316px;
+
+  h2 {
+    color: rgba(23, 50, 77, 0.9);
+    font-size: 2.5rem;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 3rem;
+      white-space: nowrap;
+    }
+  }
+
+  p {
+    color: rgba(23, 50, 77, 0.9);
+  }
+
+  &__title-wrapper {
+    width: 60%;
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    height: 570px;
+    width: 570px;
+    bottom: 25%;
+    left: 1%;
+    border-radius: 50%;
+    background-color: rgba(0, 51, 102, 1);
+
+    @include media-breakpoint-up(md) {
+      left: 45%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 640px;
+      height: 640px;
+      left: 65%;
+      top: -90%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 80%;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 165px;
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 292px;
+    }
+  }
+}
