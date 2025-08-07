@@ -41,9 +41,17 @@ layout: default-pa
           <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel" aria-labelledby="pills-tab1a-tab">
             <div class="row row-eq-height">
               {% for software in generic_sw limit: 60 %}
-              {% assign description = software.publiccode.description[active_lang]
-                | default: software.publiccode.description.en
-                | default: software.publiccode.description.it %}
+              {% assign description = software.publiccode.description[active_lang] %}
+              {% unless description %}
+                {% for lang_key in software.publiccode.description %}
+                  {% assign lang_base = lang_key[0] | split: '-' | first %}
+                  {% if lang_base == active_lang %}
+                    {% assign description = lang_key[1] %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endunless %}
+              {% assign description = description | default: software.publiccode.description.en | default: software.publiccode.description.it %}
 
               {% assign sw_name = description.localisedName | default: software.publiccode.name %}
               {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
