@@ -4,9 +4,17 @@ layout: default
 
 {% include setlang.html %}
 
-{% assign description = page.publiccode.description[active_lang]
-| default: page.publiccode.description.en
-| default: page.publiccode.description.it %}
+{% assign description = page.publiccode.description[active_lang] %}
+{% unless description %}
+  {% for lang_key in page.publiccode.description %}
+    {% assign lang_base = lang_key[0] | split: '-' | first %}
+    {% if lang_base == active_lang %}
+      {% assign description = lang_key[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endunless %}
+{% assign description = description | default: page.publiccode.description.en | default: page.publiccode.description.it %}
 
 {% assign sw_name = description.localisedName | default: page.publiccode.name %}
 
@@ -292,10 +300,17 @@ layout: default
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
             {% assign variant_sw = site.data.crawler.software | where: "id", variant.id | first %}
-            {% assign variant_description = variant.publiccode.description[active_lang]
-
-            | default: variant.publiccode.description.en
-            | default: variant.publiccode.description.it %}
+            {% assign variant_description = variant.publiccode.description[active_lang] %}
+            {% unless variant_description %}
+              {% for lang_key in variant.publiccode.description %}
+                {% assign lang_base = lang_key[0] | split: '-' | first %}
+                {% if lang_base == active_lang %}
+                  {% assign variant_description = lang_key[1] %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endunless %}
+            {% assign variant_description = variant_description | default: variant.publiccode.description.en | default: variant.publiccode.description.it %}
             <div class="variantDetail">
               <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}">
               {{ variant.publiccode.name }}
@@ -725,9 +740,17 @@ layout: default
     <div class="row">
         {% for relsw in page.relatedSoftwares limit: 4 %}
       <div class="col-md-3 col-12">
-        {% assign relsw_description = relsw.publiccode.description[active_lang]
-        | default: relsw.publiccode.description.en
-        | default: relsw.publiccode.description.it %}
+        {% assign relsw_description = relsw.publiccode.description[active_lang] %}
+        {% unless relsw_description %}
+          {% for lang_key in relsw.publiccode.description %}
+            {% assign lang_base = lang_key[0] | split: '-' | first %}
+            {% if lang_base == active_lang %}
+              {% assign relsw_description = lang_key[1] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+        {% assign relsw_description = relsw_description | default: relsw.publiccode.description.en | default: relsw.publiccode.description.it %}
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
         {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
@@ -747,7 +770,7 @@ layout: default
           class="w-100"
           id="{{  relsw.id }}"
           name="{{ relsw_name }}"
-          description="{{ relswdescription | escape }}"
+          description="{{ relsw_description.shortDescription | escape }}"
           url="{{ relsw_url }}"
           icon="{{ icon }}"
           category="{{ category }}"
