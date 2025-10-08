@@ -45,7 +45,7 @@ resources:
       icon: software
       desc: Il validatore dei metadati delle risorse semantiche, per validare la metadatazione generale descrittiva delle risorse semantiche da pubblicare nel catalogo.
     - title: Schema editor
-      url: https://italia.github.io/schema-editor/latest/
+      url: https://teamdigitale.github.io/dati-semantic-schema-editor/latest/
       icon: github
       desc: L'editor degli schemi di dati, per strutturare al meglio degli schemi dati conformi a una semantica condivisa.
     - title: SPARQL Endpoint di schema.gov.it
