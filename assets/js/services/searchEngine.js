@@ -126,9 +126,9 @@ const softwareItem = (source) => {
   const name = descriptionField?.localisedName ?? source.publiccode.name;
 
   // Create a default empty object for 'it' if it doesn't exist
-  // This ensures source.publiccode.it will never be undefined
-  if (source.publiccode && !source.publiccode.it) {
-    source.publiccode.it = {};
+  // This ensures source.publiccode.IT will never be undefined
+  if (source.publiccode && !source.publiccode.IT) {
+    source.publiccode.IT = {};
   }
 
   // Handle safely accessing nested properties that might not exist

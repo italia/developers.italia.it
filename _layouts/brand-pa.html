@@ -13,7 +13,7 @@ layout: default-pa
 {% include linklist.html items=subnav dynamic=true %}
 {% endcomment %}
 
-{% assign generic_sw = site.data.crawler.software | where_exp: "item", "item.publiccode.it.riuso.codiceIPA == page.ipa" | nested_sort_natural: "publiccode.name" | slice: 0, 60 %}
+{% assign generic_sw = site.data.crawler.software | where_exp: "item", "item.publiccode.IT.riuso.codiceIPA == page.ipa" | nested_sort_natural: "publiccode.name" | slice: 0, 60 %}
 
 {% assign root = '/' | append: active_lang  %}
 

@@ -26,15 +26,15 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
   }
 
   if (type === SOFTWARE_REUSE) {
-    must.push({ exists: { field: 'publiccode.it.riuso.codiceIPA' } });
+    must.push({ exists: { field: 'publiccode.IT.riuso.codiceIPA' } });
   }
 
   const must_not = [];
 
   if (type === SOFTWARE_OPEN) {
     must_not.push(
-      { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
-      { match: { 'publiccode.indendedAudience.unsupportedCountries': 'it' } }
+      { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
+      { match: { 'publiccode.indendedAudience.unsupportedCountries': 'IT' } }
     );
   }
 
