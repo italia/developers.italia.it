@@ -83,12 +83,12 @@ layout: default
             {% if page.publiccode.legal.repoOwner %}
             <div class="col-sm">
               <p><span class="label">Gestito da</span>
-                {% if page.publiccode.IT.riuso.codiceIPA %}
+                {% if page.publiccode.organisation.uri || page.publiccode.IT.riuso.codiceIPA || page.publiccode.it.riuso.codiceIPA %}
                 <a href="/{{ active_lang }}/pa/{{ page.publiccode.IT.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name || page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name || page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
@@ -548,7 +548,7 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% assign p = page.publiccode.IT.piattaforme %}
+                  {% assign p = page.publiccode.it?.piattaforme || page.publiccode.IT.piattaforme %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -590,7 +590,7 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.compliance }}</span>
-                  {% assign p = page.publiccode.IT.conforme %}
+                  {% assign p = page.publiccode.it?.piattaforme || page.publiccode.IT.conforme %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -754,7 +754,7 @@ layout: default
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
         {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
-        {% if relsw.publiccode.IT.riuso.codiceIPA != nil %}
+        {% if relsw.publiccode.organisation.uri || relsw.publiccode.IT.riuso.codiceIPA || relsw.publiccode.it.riuso.codiceIPA %}
         {% assign category = "software_reuse" %}
         {% assign icon = "it-software" %}
         {% assign fallback = "/assets/images/cover_softwareriuso.png" %}

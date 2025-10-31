@@ -12,7 +12,7 @@ layout: default
 {% endcomment %}
 
 {% assign recent_sw = site.data.crawler.software | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
-{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.IT.riuso.codiceIPA != nil" | group_by: "publiccode.IT.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 3 %}
+{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.organisation.uri || item.publiccode.IT.riuso.codiceIPA || item.publiccode.it.riuso.codiceIPA" | group_by: "publiccode.IT.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 3 %}
 
 <div class="container">
   <div class="intro mt-5">
