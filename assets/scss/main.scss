@@ -2185,11 +2185,11 @@ body {
 
 // Banner Survey
 .banner-survey {
-  background-color: #BFDFFF;
+  background-color: #001009;
   min-height: 316px;
 
   h2 {
-    color: rgba(23, 50, 77, 0.9);
+    color: #F6F8F1;
     font-size: 2.5rem;
 
     @include media-breakpoint-up(xl) {
@@ -2198,8 +2198,13 @@ body {
     }
   }
 
+  .accent {
+    color: #F5A01A;
+    text-transform: uppercase;
+  }
+
   p {
-    color: rgba(23, 50, 77, 0.9);
+    color: #F6F8F1;
   }
 
   &__title-wrapper {
