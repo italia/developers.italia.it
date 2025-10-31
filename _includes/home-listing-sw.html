@@ -30,7 +30,7 @@
             <div class="col-md {% if withimages!=true %}px-3{%endif%}">
               {% if withimages == true %}
 
-              {% if item.publiccode.organisation.uri || item.publiccode.IT.riuso.codiceIPA || item.publiccode.it.riuso.codiceIPA %}
+              {% if item.publiccode.organisation.uri or item.publiccode.IT.riuso.codiceIPA or item.publiccode.it.riuso.codiceIPA %}
                 {% assign category = "software_reuse" %}
                 {% assign icon = "it-software" %}
                 {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
