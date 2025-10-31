@@ -10,7 +10,7 @@ const client = new elasticsearch.Client({
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
   const must = [{ term: { type: 'software' } }];
-  let should = []
+  const should = []
   if (searchValue) {
     must.push({
       multi_match: {
@@ -48,7 +48,10 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
   const query = {
     bool: {
       filter: buildFilter(filters),
-      must,
+      must: [
+        { bool: { should } },
+        ...must 
+      ],
       must_not,
       should
     },
