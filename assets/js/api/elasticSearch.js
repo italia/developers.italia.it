@@ -10,6 +10,7 @@ const client = new elasticsearch.Client({
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
   const must = [{ term: { type: 'software' } }];
+  const should = []
   if (searchValue) {
     must.push({
       multi_match: {
@@ -26,14 +27,20 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
   }
 
   if (type === SOFTWARE_REUSE) {
-    must.push({ exists: { field: 'publiccode.IT.riuso.codiceIPA' } });
+    should.push(
+      { exists: { field: 'publiccode.organisation.uri' } },
+      { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
+      { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
+    );
   }
 
   const must_not = [];
 
   if (type === SOFTWARE_OPEN) {
     must_not.push(
+      { exists: { field: 'publiccode.organisation.uri' } },
       { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
+      { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
       { match: { 'publiccode.indendedAudience.unsupportedCountries': 'IT' } }
     );
   }
@@ -41,8 +48,12 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
   const query = {
     bool: {
       filter: buildFilter(filters),
-      must,
+      must: [
+        { bool: { should } },
+        ...must 
+      ],
       must_not,
+      should
     },
   };
   return await executeQuery({ query, sort: buildSort(sortBy), from, size });

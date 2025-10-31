@@ -132,7 +132,9 @@ const softwareItem = (source) => {
   }
 
   // Handle safely accessing nested properties that might not exist
-  const ipaCode = source.publiccode?.it?.riuso?.codiceIPA;
+  const ipaCode = source.publiccode?.organisation?.uri
+    || source.publiccode?.IT?.riuso?.codiceIPA
+    || source.publiccode?.it?.riuso?.codiceIPA;
   const category = getSoftwareCategory(ipaCode);
   const icon = category === SOFTWARE_REUSE ? 'it-software' : 'it-open-source';
 
