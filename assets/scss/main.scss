@@ -2220,23 +2220,38 @@ body {
     height: 570px;
     width: 570px;
     bottom: 25%;
-    left: 1%;
-    border-radius: 50%;
-    background-color: rgba(0, 51, 102, 1);
+    left: 0%;
+    background-image: url("https://www.canada.ca/content/dam/tbs-sct/images/digital-government/g7_gov_ai/gov_ai_1920x360.png");
+    background-size: 150% 100%;
+
+    --mask: linear-gradient(to bottom,
+        rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
+        rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+    ) 100% 50% / 100% 100% repeat-x;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 
     @include media-breakpoint-up(md) {
-      left: 45%;
+      left: 0%;
     }
 
     @include media-breakpoint-up(lg) {
-      width: 640px;
+      width: 1080px;
       height: 640px;
-      left: 65%;
+      left: 0%;
       top: -90%;
+      --mask: linear-gradient(to left,
+          rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
+          rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+      ) 100% 50% / 100% 100% repeat-x;
+
+      -webkit-mask: var(--mask);
+      mask: var(--mask);
     }
 
     @include media-breakpoint-up(xl) {
-      left: 80%;
+      left: 0%;
     }
   }
 
