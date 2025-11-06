@@ -10,7 +10,7 @@ const client = new elasticsearch.Client({
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
   const must = [{ term: { type: 'software' } }];
-  const should = []
+  const should = [];
   if (searchValue) {
     must.push({
       multi_match: {
@@ -31,7 +31,7 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
     should.push(
       { exists: { field: 'publiccode.organisation.uri' } },
       { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
-      { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
+      { exists: { field: 'publiccode.it.riuso.codiceIPA' } }
     );
   }
 
@@ -49,12 +49,9 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
   const query = {
     bool: {
       filter: buildFilter(filters),
-      must: [
-        { bool: { should } },
-        ...must 
-      ],
+      must: [{ bool: { should } }, ...must],
       must_not,
-      should
+      should,
     },
   };
   return await executeQuery({ query, sort: buildSort(sortBy), from, size });
