@@ -548,7 +548,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% assign p = page.publiccode.it?.piattaforme or page.publiccode.IT.piattaforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.piattaforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.piattaforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -590,7 +594,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.compliance }}</span>
-                  {% assign p = page.publiccode.it?.piattaforme or page.publiccode.IT.conforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.conforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.conforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}

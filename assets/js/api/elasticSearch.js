@@ -15,6 +15,7 @@ export const querySoftware = async ({ type, searchValue, filters, sortBy, from, 
     must.push({
       multi_match: {
         query: searchValue,
+        type: 'phrase_prefix',
         fields: [
           'publiccode.name^3',
           `publiccode.description.${lang}.localizedName^3`,
