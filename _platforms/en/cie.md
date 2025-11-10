@@ -22,7 +22,7 @@ managers:
     - name: Istituto Poligrafico e Zecca dello Stato
       url: https://www.ipzs.it/
 resources:
-  - Documentazione:
+  - Documentation:
     - title: Technical information about the card
       icon: link
       url: https://www.cartaidentita.interno.gov.it/la-carta/caratteristiche-del-documento/

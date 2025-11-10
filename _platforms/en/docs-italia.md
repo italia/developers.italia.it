@@ -59,7 +59,7 @@ Il codice sorgente di Docs Italia è diviso in alcuni repository a seconda del d
 - [Pandoc filters](https://github.com/italia/docs-italia-pandoc-filters){:target="_blank"}.
 - [Commands for converting documents](https://github.com/italia/docs-italia-comandi-conversione){:target="_blank"} with Pandoc (in Haskell).
 
-### Documet
+### Document
 
 - A [starter kit](https://github.com/italia/docs-italia-starter-kit){:target="_blank"} containing files for publishing new documents.
 - The [Sphinx theme](https://github.com/italia/docs-italia-theme){:target="_blank"} which is applied by default to documents.
