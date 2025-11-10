@@ -1,0 +1,1139 @@
+ 
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  <title>
+      
+      
+
+      
+    DCC
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="DCC" />
+<meta name="author" content="Dipartimento per la Trasformazione Digitale e AgID" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A digital and printable certificate, issued by the Italian Health Ministry, which contains a QR Code to verify its authenticity and validity." />
+<meta property="og:description" content="A digital and printable certificate, issued by the Italian Health Ministry, which contains a QR Code to verify its authenticity and validity." />
+<link rel="canonical" href="https://developers.italia.it/en/dcc/" />
+<meta property="og:url" content="https://developers.italia.it/en/dcc/" />
+<meta property="og:site_name" content="Developers Italia" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-11-10T10:12:15+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="DCC" />
+<meta name="twitter:site" content="@developersITA" />
+<meta name="twitter:creator" content="@Dipartimento per la Trasformazione Digitale e AgID" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Dipartimento per la Trasformazione Digitale e AgID"},"dateModified":"2025-11-10T10:12:15+00:00","datePublished":"2025-11-10T10:12:15+00:00","description":"A digital and printable certificate, issued by the Italian Health Ministry, which contains a QR Code to verify its authenticity and validity.","headline":"DCC","mainEntityOfPage":{"@type":"WebPage","@id":"https://developers.italia.it/en/dcc/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://developers.italia.it/assets/icons/logo-it.svg"},"name":"Dipartimento per la Trasformazione Digitale e AgID"},"url":"https://developers.italia.it/en/dcc/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (it)" href="/it/news/feed.atom">
+  <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
+
+  
+  <link href="/dist/main.css?202511101012" rel="stylesheet">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Developers Italia">
+  <meta name="application-name" content="Developers Italia">
+  <meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#0066cc">
+
+  <script>
+    window.lang = "en";
+  </script>
+
+   <script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1375']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+ 
+</head>
+
+<body class="layout-platform">
+
+
+
+<!-- <div class="cookiebar px-4 py-2 hide white-color primary-bg-b6" aria-hidden="true">
+  <p class="text-white">We are using cookies to provide statistics that help us give you the best experience of our site. By continuing to use the site you are agreeing to our use of cookies.<br>
+  </p>
+  <p>
+    <button data-accept="cookiebar" class="btn btn-primary me-2">Accept</button>
+    <a href="/it/privacy-policy" class="btn btn-outline-secondary">Privacy policy</a>
+  </p>
+</div> -->
+
+<div class="u-background-95">
+  <div id="main" class="u-layout-wide u-layoutCenter">
+    
+
+<header class="it-header-wrapper it-header-sticky shadow" data-bs-position-type="fixed" data-bs-toggle="sticky" data-bs-target="#header-nav-wrapper" data-bs-sticky-class-name="is-sticky">
+  <div class="it-header-slim-wrapper">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <div class="navbar-brand d-none d-lg-block">
+              <a target="_blank" href="https://innovazione.gov.it/dipartimento/" rel="noreferrer">Dipartimento per la Trasformazione Digitale</a> + <a target="_blank" href="https://www.agid.gov.itt"
+                rel="noreferrer">AgID</a>
+            </div>
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>DTD + AgID</span>
+                  <svg class="icon" aria-hidden="true"><use href="/assets/svg/sprites.svg#it-expand"></use></svg>
+                </a>
+                <div class="link-list-wrapper collapse" id="menuC1">
+                  
+
+
+
+
+<ul class="link-list">
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://pianotriennale-ict.italia.it">Three-year Plan</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="active list-item" target="_blank" href="https://developers.italia.it/">Developers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://designers.italia.it">Designers</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://forum.italia.it/">Forum</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class=" list-item" target="_blank" href="https://docs.italia.it/">Docs</a>
+        
+    </li>
+    
+    
+    <li>
+        
+        <a class="delimiter list-item" target="_blank" href="https://github.com/italia/">GitHub</a>
+        
+    </li>
+    
+
+</ul>
+
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              
+<div class="nav-item dropdown">
+  <a href="#" id="languagesDropButton" role="button" class="nav-link dropdown-toggle"
+   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="visually-hidden">current language:</span>
+    <span>ENG</span>
+    <svg class="icon d-none d-lg-block">
+      <use xlink:href="/assets/svg/sprites.svg#it-expand"></use>
+    </svg>
+  </a>
+  <div class="dropdown-menu">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-list-wrapper">
+          <ul id="languages" class="link-list" aria-labelledby="languagesDropButton" >
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item " href="/it"><span lang="it">Italiano</span>
+                
+                </a>
+              </li>
+              
+              <li>
+                <!-- pages generated with page_gen plugins  -->
+                
+                <a  class="dropdown-item list-item active" href="/en"><span lang="en">English</span>
+                
+                </a>
+              </li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="it-nav-wrapper">
+    <div class="it-header-center-wrapper ">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <div class="it-header-center-content-wrapper">
+              <div class="it-brand-wrapper">
+                <a href="/">
+                  <svg class="icon icon-white" aria-hidden="true">
+                    <use href="/assets/svg/sprites.svg#it-designers-italia"></use>
+                  </svg>
+                  <!-- <img
+                    src="/assets/icons/logo-it.svg" alt=""
+                    class="icon"> -->
+                  <div class="it-brand-text">
+                    <div class="it-brand-title">Developers Italia</div>
+                    <div class="it-brand-tagline d-none d-md-block">
+                      We develop public services, together
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="it-right-zone">
+                <div class="it-socials d-none d-md-flex">
+                  <span>Follow us</span>
+                  <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/en/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+                </div>
+                <div class="it-search-wrapper">
+                  <custom-search></custom-search>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="it-header-navbar-wrapper" id="header-nav-wrapper">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon">
+                  <use href="/assets/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" style="display: none;">
+                <div class="overlay" style="display: none;"></div>
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/assets/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <div class="menu-wrapper justify-content-lg-between">
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item active">
+                      
+                      <a class="nav-link active" href="/en/platforms" aria-current="page">
+                        <span>        
+                          Platforms
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/software" aria-current="page">
+                        <span>        
+                          Software
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/interoperability" aria-current="page">
+                        <span>        
+                          Interoperability
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                  <ul class="navbar-nav">
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/how" aria-current="page">
+                        <span>        
+                          How to use it
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/get-involved" aria-current="page">
+                        <span>        
+                          Get involved
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/news" aria-current="page">
+                        <span>        
+                          News
+                          </span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item ">
+                      
+                      <a class="nav-link " href="/en/contacts" aria-current="page">
+                        <span>        
+                          Contacts
+                          </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    
+    
+    
+
+ 
+
+<div class="project__first-part">
+  <div class="container">
+    <div class="d-flex">
+      
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="project__header">
+          <h1 class="d-inline h1">DCC</h1>
+          
+          <h2 class="d-inline h1">COVID-19 Green certificate</h2>
+          
+          
+          <p class="lead pt-3 pb-3 project__desc">
+            A digital and printable certificate, issued by the Italian Health Ministry, which contains a QR Code to verify its authenticity and validity.
+
+          </p>
+          
+        </div>
+        <div class="project__actors row">
+          
+          <div class="col-12 col-lg-4">
+            <span class="d-block">Owner</span>
+            <ul class="list-unstyled">
+              
+              <li><a href="https://www.salute.gov.it/" target="_blank">Ministero della Salute</a></li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="col-12 col-lg-4 text-truncate">
+            <span class="d-block">Website</span>
+            <a href="https://www.dgc.gov.it" target="_blank">https://www.dgc.gov.it</a>
+          </div>
+          
+
+          
+          
+
+          
+          
+
+          <div class="col-12 col-lg-4">
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        
+
+      </div>
+    </div>
+    <div class="project__heroback">
+      DCC
+    </div>
+  </div>
+</div>
+
+<section class="project__content with-resources">
+  <div class="container d-flex justify-content-center">
+
+    <div class="project__maincontent col-12 col-md-10">
+      <h2 id="intro">Intro</h2>
+
+<p>The COVID-19 green certificate is a digital and printable certificate, issued by the Italian Health Ministry, which contains a bi-dimensional barcode (QR Code) and an electronic seal qualified to verify its authenticity and validity. The authenticity and validity of the certificate are verified in Italy thanks to the official mobile app <em>VerificaC19</em>.</p>
+
+<p><strong>The certificate is released as a result of a:</strong></p>
+
+<ul>
+  <li>COVID-19 vaccination (in Italy it is released after every vaccine dose);</li>
+  <li>negative result to a rapid antigen test in the last 48 hours or to a molecular test in the last 72 hours;</li>
+  <li>recovery from COVID-19 in the last six months;</li>
+  <li>vaccination exemption, certified and issued as a result of specific and documented clinical conditions.</li>
+</ul>
+
+<p>Data on certificates issued in Italy are available in CSV and JSON format on <a href="https://github.com/ministero-salute/it-dgc-opendata/">GitHub</a>.</p>
+
+<p>Additional info are available at <a href="https://www.dgc.gov.it/">https://www.dgc.gov.it</a>.</p>
+
+<h2 id="how-to-contribute">How to contribute</h2>
+
+<h3 id="platform-code">Platform code</h3>
+
+<p>It is possible the find the official source code of the Android and iOS VerificaC19 app, of the official SDK, of the various backend microservices, and the data on the issued certificates and documentation directly on the <a href="https://github.com/ministero-salute">Italian Health Ministry Organization on Github</a>. It is possible to contribute to the code by opening an issue or a Pull Request to directly solve a problem.</p>
+
+<h3 id="developing-and-proposing-a-new-sdk">Developing and proposing a new SDK</h3>
+
+<p>To develope a new SDK based on the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-android">official VerificaC19 SDK</a>, it is necessary to:</p>
+
+<ol>
+  <li>Check the last edits developed for the official VerificaC19 SDK on the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/blob/main/CHANGELOG.md">CHANGELOG</a>.</li>
+  <li>Check the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/blob/main/CHECKLIST_SDK.md">official checklist</a> to implement the functionalities requested in the SDK.</li>
+  <li>Refer to the <a href="https://github.com/ministero-salute/it-dgc-documentation">documentation repository</a> to have detailed information on the implementation of the verification flow and of the Digital Covid Certificate Revocation List (DRL).</li>
+</ol>
+
+<p>It is recommended to use the <a href="https://github.com/eu-digital-green-certificates/dgc-testdata">dgc-testdata</a> repository or part of it, which contains useful testcases to check the correctness of the libraries.
+It is possible to take inspiration from one of the SDKs available in the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie">official SDK list</a> already following the technical specifics and the requirements implemented by the Italian Health Ministry inside the VerificaC19 government app.</p>
+
+<p>To propose the insertion of a new library/SDK into the list, it is necessary to follow the following steps:</p>
+<ol>
+  <li>Go on the repository <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding">it-dgc-verificac19-sdk-onboarding</a>.</li>
+  <li>Download from the repository the document named <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/raw/main/autoDichiarazione.odt">autoDichiarazione.odt</a> and fill it.</li>
+  <li>Send the filled and digitally-signed document to <strong>dgsi@postacert.sanita.it</strong>. This document <em>must not</em> be included into the repository.</li>
+  <li>Publish the source code of your solution inside a repository owned by you accordingly with the requirements indicated in <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#requisiti-minimi">this dedicated paragraph</a>.</li>
+  <li>Open a <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/pulls">Pull Request</a> inside the repository, check all the features requested in the body of the Pull Request and add a new line in the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie">list</a> inserting the required informations.</li>
+</ol>
+
+<p>At this point, a validation phase will start, during which all technical and minimal requirements will be checked.
+In case of positive outcome, the Pull Request will be approved within a few days and will appear inside the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie">list</a>.
+In case of negative outcome, appropriate reasons will be provided by email among with eventual suggestions to adapt the library.
+Any further update to the library will be subject to evaluations which may lead to its removal from the <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding/#lista-librerie">lista</a>, in case the minimum requirements are no longer met.</p>
+
+
+      
+
+      
+        
+          <h2>Resources</h2>
+        
+      <section id="resources" class="project__resources">
+    <!--<h1 class="text-center" >Resources</h1>-->
+    <div class="container pb-md-4">
+
+        <ul class="nav nav-tabs" id="project-resources" role="tablist">
+            
+            
+            <li class="nav-item">
+                <a class="nav-link active" id="resourcegroup-1"
+                    data-bs-toggle="tab" href="#resourcecontent-1" role="tab"
+                    aria-controls="resourcecontent-1"
+                    aria-selected="true">VerificaC19 App
+                </a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a class="nav-link " id="resourcegroup-2"
+                    data-bs-toggle="tab" href="#resourcecontent-2" role="tab"
+                    aria-controls="resourcecontent-2"
+                    aria-selected="false">SDK
+                </a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a class="nav-link " id="resourcegroup-3"
+                    data-bs-toggle="tab" href="#resourcecontent-3" role="tab"
+                    aria-controls="resourcecontent-3"
+                    aria-selected="false">Utility libraries for DCC
+                </a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a class="nav-link " id="resourcegroup-4"
+                    data-bs-toggle="tab" href="#resourcecontent-4" role="tab"
+                    aria-controls="resourcecontent-4"
+                    aria-selected="false">Documentation
+                </a>
+            </li>
+            
+            
+            <li class="nav-item">
+                <a class="nav-link " id="resourcegroup-5"
+                    data-bs-toggle="tab" href="#resourcecontent-5" role="tab"
+                    aria-controls="resourcecontent-5"
+                    aria-selected="false">External sources
+                </a>
+            </li>
+            
+        </ul>
+
+
+        <div class="tab-content project__resources-contents" id="project-resources-contents">
+            
+            
+            <div class="tab-pane fade show active" id="resourcecontent-1"
+                role="tabpanel" aria-labelledby="resourcegroup-1">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-verificaC19-android" target="_blank" class="d-block project__resources-itemtitle">VerificaC19 App for Android</a>
+                        <p>Source code of the VerificaC19 app for Android</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-verificaC19-ios" target="_blank" class="d-block project__resources-itemtitle">VerificaC19 App for iOS</a>
+                        <p>Source code of the VerificaC19 app for iOS</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-2"
+                role="tabpanel" aria-labelledby="resourcegroup-2">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-android" target="_blank" class="d-block project__resources-itemtitle">SDK for Kotlin (Android)</a>
+                        <p>Digital Covid Certificate SDK Kotlin for Android (Kotlin) on which the VerificaC19 app is based</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/hrzucchetti/zconnect-verificaC19-sdk-ios" target="_blank" class="d-block project__resources-itemtitle">SDK for iOS</a>
+                        <p>ZConnectVerificaC19 SDK for native iOS (Swift)</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/DevTrevi/DgcReader" target="_blank" class="d-block project__resources-itemtitle">SDK for .NET / .NET Framework</a>
+                        <p>DgcReader SDK for .NET / .NET Framework</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/verificac19-sdk" target="_blank" class="d-block project__resources-itemtitle">SDK for Node.js</a>
+                        <p>VerificaC19 SDK for Node.js (Javascript)</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/herald-si/verificac19-sdk-php" target="_blank" class="d-block project__resources-itemtitle">SDK for PHP</a>
+                        <p>Digital Covid Certificate SDK for PHP</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux" target="_blank" class="d-block project__resources-itemtitle">SDK for C++</a>
+                        <p>Solari Digital Covid Certificate SDK for C++</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/solari-sviluppo-prodotti/sol-verificaC19-sdk-cpp-linux" target="_blank" class="d-block project__resources-itemtitle">SDK for Java Spring</a>
+                        <p>Digital Covid Certificate SDK for Java Spring Digital</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-3"
+                role="tabpanel" aria-labelledby="resourcegroup-3">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/dcc-utils" target="_blank" class="d-block project__resources-itemtitle">DCC-Utils for Node.js</a>
+                        <p>Utility library to read and verify the signature of the EU COVID-19 vaccine certificate in Node.js</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/italia/dcc-utils" target="_blank" class="d-block project__resources-itemtitle">DCC-Utils for Python</a>
+                        <p>Utility library to read and verify the signature of the EU COVID-19 vaccine certificate in Python</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/HQJaTu/vacdec" target="_blank" class="d-block project__resources-itemtitle">VacDec</a>
+                        <p>Python script to decode the EU COVID-19 vaccine certificate</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/rust-italia/dgc/" target="_blank" class="d-block project__resources-itemtitle">DGC for Rust</a>
+                        <p>Utility library to read and verify the signature of the EU COVID-19 vaccine certificate in Rust</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-4"
+                role="tabpanel" aria-labelledby="resourcegroup-4">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-documentation" target="_blank" class="d-block project__resources-itemtitle">Digital Covid Certificate - High-level description</a>
+                        <p>High-level documentation on the DCC system.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-documentation/blob/master/SCANMODE.md" target="_blank" class="d-block project__resources-itemtitle">Documentation on the types of DGC Checks (ScanMode)</a>
+                        <p>Detailed documentation of the various types of DCC checks.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-documentation/blob/master/DRL.md" target="_blank" class="d-block project__resources-itemtitle">Documentation on the Digital Covid Certificate Revocation List (DRL)</a>
+                        <p>Detailed documentation on the operation of the Digital Covid Certificate Revocation List (DRL).</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-onboarding" target="_blank" class="d-block project__resources-itemtitle">Onboarding SDK documentation</a>
+                        <p>Documentation and rules to onboard potential SDKs.</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-file"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://ministero-salute.github.io/it-dgc-verificac19-sdk-android/documentation/" target="_blank" class="d-block project__resources-itemtitle">Detailed SDK Android documentation</a>
+                        <p>Detailed documentation on the VerificaC19 SDK for Android.</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            <div class="tab-pane fade show " id="resourcecontent-5"
+                role="tabpanel" aria-labelledby="resourcegroup-5">
+                <ul class="list-unstyled project__resources-list">
+                    
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/ministero-salute/it-dgc-verificac19-sdk-android/blob/develop/README.md" target="_blank" class="d-block project__resources-itemtitle">README SDK Android</a>
+                        <p>Digital Covid Certificate Kotlin (Android) SDK</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://github.com/eu-digital-green-certificates/dgc-overview" target="_blank" class="d-block project__resources-itemtitle">EU Digital COVID Certificate (european repository)</a>
+                        <p>EU Digital COVID Certificate (european repository)</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.governo.it/sites/governo.it/files/DPCM_12_ottobre.pdf" target="_blank" class="d-block project__resources-itemtitle">DPCM 12 October 2021</a>
+                        <p>DPCM 12 October 2021</p>
+                    </li>
+                    
+                    <li>
+                        
+                        <span class="project__resources-icon">
+                           <svg class="icon icon-white bg-primary rounded-circle d-inline p-1 align-top">
+                             <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+                           </svg>
+                        </span>
+                        
+                        <a href="https://www.governo.it/sites/governo.it/files/Dpcm_12_ottobre_ALLEGATO_H.pdf" target="_blank" class="d-block project__resources-itemtitle">Annex H DPCM 12 Ottobre 2021</a>
+                        <p>Annex H DPCM 12 Ottobre 2021</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+      
+
+      
+    </div>
+
+    
+    <div class="sideblock-wrapper col-md-3 d-none d-lg-block">
+  <div class="sideblock">
+    
+    
+    <a href="https://www.dgc.gov.it" target="_blank">
+    
+      <img alt="DCC Website" src="/assets/images/logo-eu@2x.png" style="max-width: 100%; margin-bottom: 10px">
+    
+    </a>
+    
+    
+
+    
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#intro">Intro</a></li>
+<li class="toc-entry toc-h2"><a href="#how-to-contribute">How to contribute</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#platform-code">Platform code</a></li>
+<li class="toc-entry toc-h3"><a href="#developing-and-proposing-a-new-sdk">Developing and proposing a new SDK</a></li>
+</ul>
+</li>
+</ul>
+    
+    
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#resources">VerificaC19 App, SDK, Utility libraries for DCC, Documentation, External sources</a></li>
+    </ul>
+    
+    
+    
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+<a href="#" aria-label="back to contents" data-bs-toggle="backtotop" class="back-to-top shadow">
+  <svg class="icon icon-light"><use href="/assets/svg/sprites.svg#it-arrow-up"></use></svg>
+</a>
+
+<div id="root"></div> <!-- React mount point -->
+
+<div class="u-background-95">
+  <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-hiddenPrint">
+    <footer class="it-footer">
+  <div class="it-footer-main">
+    <div class="container">
+      <section>
+        <div class="row clearfix">
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://innovazione.gov.it/dipartimento/" title="Dipartimento per la Trasformazione Digitale">
+                <img src="/assets/images/governo.svg" alt="Logo Governo Italiano">
+                <img src="/assets/icons/logo-mid-white.svg" alt="Dipartimento per la Trasformazione Digitale">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pb-2">
+            <div class="it-brand-wrapper footer-collaboration">
+              <a href="https://www.agid.gov.it" title="Agenzia per l'Italia Digitale">
+                <div class="d-flex">
+                  <div class="d-flex">
+                    <img src="/assets/images/agid-logo-bb.svg" alt="Agenzia per l'Italia Digitale">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 pt-3 d-flex align-items-center">
+            <div class="it-socials d-flex" style="gap: 1rem;">
+              <span>Follow us</span>
+              <ul class="list-inline text-start social">
+  <li class="list-inline-item">
+    <a class="icon" href="/en/news/feed.atom" title="feed"  aria-label="Feed" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-rss"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://github.com/italia" title="github" rel="me"  aria-label="github" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-github"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://mastodon.uno/@developersITA" title="mastodon" rel="me"  aria-label="mastodon" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-mastodon"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://twitter.com/developersITA" title="twitter" rel="me"  aria-label="twitter" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-twitter"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  <li class="list-inline-item">
+    <a class="icon" href="https://medium.com/developers-italia" title="medium" rel="me"  aria-label="medium" target="_blank"
+    rel="noreferrer">
+      <svg role="img" class="icon icon-white icon-sm align-top">
+        <use xlink:href="/assets/svg/sprites.svg#it-medium"></use>
+      </svg>
+    </a>
+  </li>
+  
+  
+  
+  
+  
+  
+</ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="it-footer-small-prints clearfix">
+    <div class="container">
+      <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
+      <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        
+        
+        <li class="list-inline-item"><a href="/en/privacy-policy">Privacy policy</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/en/legal-notice">Terms and conditions</a></li>
+        
+        
+        <li class="list-inline-item"><a href="/en/dashboard">Dashboard</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="/dist/bundle.js?202511101012"></script>
+
+
+  </div>
+</div>
+</body>
+</html>
