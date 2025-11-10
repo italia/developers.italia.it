@@ -39,7 +39,9 @@ layout: default
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
+        {% if logo != "" and logo != nil %}
         <img alt="" src="{{ logo }}" class="d-inline-block" />
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -83,12 +85,12 @@ layout: default
             {% if page.publiccode.legal.repoOwner %}
             <div class="col-sm">
               <p><span class="label">Gestito da</span>
-                {% if page.publiccode.it.riuso.codiceIPA %}
-                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.legal.repoOwner }}
+                {% if page.publiccode.organisation.uri or page.publiccode.IT.riuso.codiceIPA or page.publiccode.it.riuso.codiceIPA %}
+                <a href="/{{ active_lang }}/pa/{{ page.publiccode.IT.riuso.codiceIPA | downcase }}">
+                {{ page.publiccode.organisation.name or page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name or page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
@@ -548,7 +550,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% assign p = page.publiccode.it.piattaforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.piattaforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.piattaforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -590,7 +596,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.compliance }}</span>
-                  {% assign p = page.publiccode.it.conforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.conforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.conforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -754,7 +764,7 @@ layout: default
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
         {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
-        {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
+        {% if relsw.publiccode.organisation.uri or relsw.publiccode.IT.riuso.codiceIPA or relsw.publiccode.it.riuso.codiceIPA %}
         {% assign category = "software_reuse" %}
         {% assign icon = "it-software" %}
         {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
