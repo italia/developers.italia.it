@@ -39,7 +39,9 @@ layout: default
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
+        {% if logo != "" and logo != nil %}
         <img alt="" src="{{ logo }}" class="d-inline-block" />
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
