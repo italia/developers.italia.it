@@ -4,7 +4,7 @@ subtitle: "Online Tax Refund at Exit: Light Lane Optimization"
 logo: /assets/images/logo-otello2@2x.png
 payoff: "Online Tax Refund at Exit: Light Lane Optimization"
 description: >
-  OTELLO 2.0 digitizes the process to obtain the "customs visa" to be affixed to the invoice to be entitled to direct relief or subsequent refund of VAT on goods purchased in Italy from non-EU entities
+  OTELLO 2.0 digitizes the process to obtain the "customs visa" to be affixed to the invoice to be entitled to direct relief or subsequent refund of VAT on goods purchased in Italy from non-EU entities.
 lang: en
 ref:
   it: /it/otello
@@ -17,6 +17,10 @@ layout: platform
 ## Intro
 
 OTELLO is the platform of the [Agenzia delle Dogane e dei Monopoli](https://www.agenziadoganemonopoli.gov.it/) which manages the process that allows non-EU subjects to obtain direct relief or refund of VAT on goods purchased on the Italian territory.
+
+<a href="https://youtu.be/f_W0d41Q9-Y?si=btySs2LxAiaWpdn2" title="Watch the video of Otello Tax free shopping in English on YouTube" target="_blank">
+  <img alt="Preview Otello Tax free shopping video" src="/assets/images/otello/otello_video_play.png" class="d-block mx-auto mb-2 mw-100" />
+</a>
 
 The digitization process of OTELLO began in 2015 with immediate benefits: greater efficiency and effectiveness in controls, the emergence of fraudulent phenomena, reduction of steps to obtain a customs visa.
 

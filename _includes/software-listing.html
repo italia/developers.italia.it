@@ -9,7 +9,7 @@
   {% assign sw_name = description.localisedName | default: software.publiccode.name %}
 
   {% assign sw_url = '/' | append: active_lang | append: '/software/' | append: software.slug | downcase %}
-  {% if software.publiccode.it.riuso.codiceIPA != nil %}
+  {% if software.publiccode.organisation.uri or software.publiccode.IT.riuso.codiceIPA or software.publiccode.it.riuso.codiceIPA %}
     {% assign category = "software_reuse" %}
     {% assign icon = "it-software" %}
     {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
