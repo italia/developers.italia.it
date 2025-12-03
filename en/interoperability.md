@@ -63,7 +63,7 @@ ref:
               <a href="https://developers.italia.it/it/pdnd" class="btn btn-outline-primary w-100 mb-4">Learn More</a>
               <h3 class="h5 mt-4">API Catalog</h3>
               <p>Makes APIs published on PDND available to participating entities, allowing them to evaluate and integrate them effectively into their services.</p>
-              <a href="https://www.interop.pagopa.it/catalogo" class="btn btn-outline-primary w-100 mb-4">Learn More</a>
+              <a href="https://api.gov.it/en/" class="btn btn-outline-primary w-100 mb-4">Learn More</a>
               <h3 class="h5 mt-4">Schema</h3>
               <p>Also known as the National Data Catalog (NDC), it is the national semantic data catalog that allows searching and utilizing standardized resources to support the development of semantically and syntactically interoperable APIs.</p>
               <a href="https://schema.gov.it" class="btn btn-outline-primary w-100 mb-4">Learn More</a>
