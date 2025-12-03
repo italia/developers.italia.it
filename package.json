@@ -20,7 +20,7 @@
         "react-dom": "^18.3.1",
         "react-hook-form": "^7.54.2",
         "react-jss": "^10.10.0",
-        "swagger-ui": "^5.18.2",
+        "swagger-ui": "^5.30.3",
         "url": "^0.11.4",
         "url-loader": "^4.1.1",
         "util": "^0.12.5"
