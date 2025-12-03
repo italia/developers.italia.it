@@ -60,7 +60,7 @@ ref:
                         test e rendili disponibili sul catalogo anche in esercizio</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://www.interop.pagopa.it/catalogo">Catalogo API</a></p>
+                <p><a href="https://api.gov.it/it/catalogo">Catalogo API</a></p>
             </div>
         </div>
         <h2 class="mt-5">Gli strumenti</h2>
