@@ -87,7 +87,7 @@ resources:
     - title: Validatore sintattico - articolo Medium
       url: https://medium.com/developers-italia/openapi-checker-il-verificatore-delle-interfacce-digitali-api-1d50b978c8c5
       icon: link
-      desc: Articolo di presentazione del Validatore sintattico      
+      desc: Articolo di presentazione del Validatore sintattico
 
 ---
 
@@ -106,7 +106,7 @@ richiesta di fruizione dati e successivamente integrare i propri servizi per i
 cittadini.
 
 La finalità della piattaforma è la totale interoperabilità dei dataset e dei
-servizi chiave tra le PA centrali e locali, che consentirà di **realizzare il
+servizi chiave tra le PA centrali e locali, che consente di **realizzare il
 principio "once-only"** (la PA non deve chiedere a cittadini e imprese dati che
 già possiede) e di **valorizzare il capitale informativo** delle pubbliche
 amministrazioni.
@@ -127,49 +127,15 @@ La piattaforma offre numerosi vantaggi agli utenti:
 * **Imprese** e **cittadini** possono veder realizzato il principio del once-only,
   evitando di dover fornire informazioni già comunicate in precedenza alla PA
 
-### Cosa trovi su PDND
+## Scopri come aderire
 
-* L’elenco dei soggetti aderenti a PDND
-* Il catalogo degli e-service dei quali si può fare richiesta di fruizione agli enti
-* Gli attributi necessari per poter accedere ai singoli e-service
-* Le finalità per cui vengono inoltrate le richieste di fruizione
-* Il meccanismo di rilascio dei token
-* Le chiavi pubbliche
+[Accedi al link](https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita)
 
-### Come puoi aderire
 
-[Accedi a PDND](https://docs.pagopa.it/interoperabilita-1/manuale-operativo/guida-alladesione)
-e:
+## Scopri come funziona
 
-* Effettua il login con SPID
-* Seleziona il tuo ente e controlla i dati precompilati da IPA
-* Indica il legale rappresentante
-* Indica gli amministratori per la piattaforma PDND
-* Ricevi la PEC e carica l’accordo di adesione firmato
+[Accedi al link](https://developer.pagopa.it/pdnd-interoperabilita/overview)
 
-## Come funziona
-
-1. L’Erogatore **pubblica un e-service** sul catalogo
-
-   [Consulta il videotutorial](https://www.youtube.com/watch?v=1v3v68SbXjw&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=5)
-
-2. Il Fruitore **accede al catalogo e inoltra richiesta** di fruizione per e-service
-
-   [Consulta il videotutorial](https://www.youtube.com/watch?v=zmyQIQHAo_0&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=7)
-
-3. L’Erogatore **attiva richiesta** di fruizione per e-service
-
-   [Consulta il videotutorial](https://www.youtube.com/watch?v=2O81jdLHpgQ&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=8)
-
-4. Il Fruitore **crea le finalità con stima di carico** per e-service
-
-   [Consulta il videotutorial](https://www.youtube.com/watch?v=bCHRgeBJucI&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=9)
-
-5. Il Fruitore **carica una chiave pubblica e ottiene un voucher**
-
-   [Consulta il videotutorial](https://www.youtube.com/watch?v=q6zuJ2wn8vM&list=PLZcD-ZoVxFzi1f2-taSdg7a3d2UQse3_Q&index=11)
-
-6. Il Fruitore **Completa l’integrazione e accede al dato** dell’Erogatore
 
 ## Canali
 
@@ -180,7 +146,7 @@ Per tutte le altre problematiche di natura tecnica, come
 errori legati allo stacco del voucher (token JWT) oppure proposte di
 miglioramento, puoi utilizzare l’apposita repository Github.
 
-<a class="btn btn-primary" href="https://github.com/pagopa/pdnd-interop-frontend/issues" target="_blank"><i class="it-horn" /> Apri una issue su GitHub</a>
+<a class="btn btn-primary" href="https://github.com/pagopa/pdnd-interop-frontend/issues" target="_blank"><i class="it-horn"> Apri una issue su GitHub</a>
 
 ## Risorse
 
