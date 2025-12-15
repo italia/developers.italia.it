@@ -1,12 +1,12 @@
 services:
-  elasticsearch:
-    image: docker.io/italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
-    environment:
-      - cluster.routing.allocation.disk.threshold_enabled=false
-    ports:
-      - 9200:9200
-    networks:
-      - overlay
+  # elasticsearch:
+  #   image: docker.io/italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
+  #   environment:
+  #     - cluster.routing.allocation.disk.threshold_enabled=false
+  #   ports:
+  #     - 9200:9200
+  #   networks:
+  #     - overlay
 
   devita_website:
     image: italia/developers.italia.it
@@ -33,9 +33,9 @@ services:
       - /usr/src/developers.italia.it/_data/crawler
       - /usr/src/developers.italia.it/node_modules
       - /usr/src/developers.italia.it/vendor
-    depends_on:
-      - elasticsearch
-    command: ["wait-for-it", "elasticsearch:9200", "--timeout=60", "--", "make", "local"]
+    # depends_on:
+    #   - elasticsearch
+    command: ["make", "local"]
     networks:
       - overlay
 

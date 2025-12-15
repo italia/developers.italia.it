@@ -133,11 +133,11 @@ La piattaforma offre numerosi vantaggi agli utenti:
 
 ## Scopri come funziona
 
-<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank">Accedi al link</a>
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank">Scopri come funziona</a>
 
 ## Scopri come aderire
 
-<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank">Accedi al link</a>
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank">Scopri come aderire</a>
 
 ## Canali
 
