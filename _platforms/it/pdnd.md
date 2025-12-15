@@ -24,7 +24,7 @@ resources:
     - title: Manuale operativo PDND
       url: https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita
       icon: link
-      desc: Manuale della piattaforma PDND
+      desc: Manuale operativo della piattaforma PDND
     - title: Linee guida modello interoperabilità (ModI)
       url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
       icon: file
@@ -133,13 +133,11 @@ La piattaforma offre numerosi vantaggi agli utenti:
 
 ## Scopri come aderire
 
-[Accedi al link](https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita)
-
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank"><i class="it-horn"> Accedi al link</a>
 
 ## Scopri come funziona
 
-[Accedi al link](https://developer.pagopa.it/pdnd-interoperabilita/overview)
-
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank"><i class="it-horn"> Accedi al link</a>
 
 ## Canali
 
