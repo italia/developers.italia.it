@@ -135,7 +135,7 @@ ref:
             <h3>Linee guida modello interoperabilità (ModI)</h3>
             <p>Individuano le tecnologie e gli standard che le Pubbliche Amministrazioni devono considerare durante la realizzazione dei propri sistemi informatici, al fine di permettere l’interoperabilità.</p>
             <a target="_blank" rel="noopener noreferrer" href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
-                Consulta le linee guida <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><
+                Consulta le linee guida <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg>
             </a>
         </div>
         <div class="col-12 col-md-6 mt-5 pt-3">
