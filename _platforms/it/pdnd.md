@@ -133,11 +133,11 @@ La piattaforma offre numerosi vantaggi agli utenti:
 
 ## Scopri come aderire
 
-<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank"><i class="it-horn"> Accedi al link</a>
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank">Accedi al link</a>
 
 ## Scopri come funziona
 
-<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank"><i class="it-horn"> Accedi al link</a>
+<a class="btn btn-primary" href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank">Accedi al link</a>
 
 ## Canali
 
@@ -148,7 +148,7 @@ Per tutte le altre problematiche di natura tecnica, come
 errori legati allo stacco del voucher (token JWT) oppure proposte di
 miglioramento, puoi utilizzare l’apposita repository Github.
 
-<a class="btn btn-primary" href="https://github.com/pagopa/pdnd-interop-frontend/issues" target="_blank"><i class="it-horn"> Apri una issue su GitHub</a>
+<a class="btn btn-primary" href="https://github.com/pagopa/pdnd-interop-frontend/issues" target="_blank"><i class="it-horn"></i> Apri una issue su GitHub</a>
 
 ## Risorse
 
