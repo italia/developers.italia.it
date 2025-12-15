@@ -22,9 +22,9 @@ resources_hide_title: true
 resources:
   - Documentazione:
     - title: Manuale operativo PDND
-      url: https://docs.pagopa.it/interoperabilita-1/
+      url: https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita
       icon: link
-      desc: Manuale della piattaforma PDND che comprende videotutorial
+      desc: Manuale della piattaforma PDND
     - title: Linee guida modello interoperabilità (ModI)
       url: https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita
       icon: file
@@ -37,6 +37,10 @@ resources:
       url: https://github.com/INPS-it/WaaS.Comuni/blob/main/003%20-%20Guida%20Comuni/Guida.md
       icon: github
       desc: Guida di INPS per supportare i comuni nella pubblicazione di e-service "Welfare as a Service", che alimentano il SIUSS
+    - title: Guida alla nomenclatura degli e-service PDND
+      url: https://italia.github.io/pdnd-guida-nomenclatura-eservice/
+      icon: github
+      desc: Buone pratiche perla nomenclatura e la descrizione degli e-service
   - Implementazioni:
     - title: Esempio di API
       url: https://github.com/italia/developers-italia-api
