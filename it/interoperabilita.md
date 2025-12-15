@@ -24,8 +24,8 @@ ref:
                     <p>Scopri le API disponibili a catalogo e lasciati ispirare dagli esempi pratici per integrarle nei servizi del tuo ente o per crearne di nuovi. Aderisci poi alla Piattaforma Digitale Nazionale Dati (PDND) per richiederne l’accesso.</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://api.gov.it" target="_blank" rel="noopener noreferrer">Catalogo pubblico delle API <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
-                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg> <br>(PDND)</a></p>
+                <p><a href="https://api.gov.it" target="_blank" rel="noopener noreferrer">Catalogo pubblico delle API <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg> <br>(PDND)</a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -35,9 +35,9 @@ ref:
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
                 <p><a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/" target="_blank" rel="noopener noreferrer">Introduzione
-                        alla semantica dei dati <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                        alla semantica dei dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
                 <p><a href="https://developers.italia.it/it/pdnd">Risorse</a></p>
-                <p><a href="https://schema.gov.it" target="_blank" rel="noopener noreferrer">Schema <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://schema.gov.it" target="_blank" rel="noopener noreferrer">Schema <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -46,10 +46,10 @@ ref:
                         OAS checker durante le fasi di sviluppo</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://italia.github.io/api-oas-checker/" target="_blank" rel="noopener noreferrer">API OAS checker <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://italia.github.io/api-oas-checker/" target="_blank" rel="noopener noreferrer">API OAS checker <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
                 <p><a href="https://github.com/italia/api-oas-checker-rules" target="_blank" rel="noopener noreferrer">Regole per il controllo automatico di
-                        specifiche OpenAPI <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
-                <p><a href="https://teamdigitale.github.io/dati-semantic-schema-editor/" target="_blank" rel="noopener noreferrer">Schema Editor <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                        specifiche OpenAPI <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://teamdigitale.github.io/dati-semantic-schema-editor/" target="_blank" rel="noopener noreferrer">Schema Editor <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -58,7 +58,7 @@ ref:
                         test e rendili disponibili sul catalogo anche in esercizio</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><br>(PDND)</a></p>
+                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><br>(PDND)</a></p>
             </div>
         </div>
         <h2 class="mt-5">Gli strumenti</h2>
@@ -135,7 +135,7 @@ ref:
             <h3>Linee guida modello interoperabilità (ModI)</h3>
             <p>Individuano le tecnologie e gli standard che le Pubbliche Amministrazioni devono considerare durante la realizzazione dei propri sistemi informatici, al fine di permettere l’interoperabilità.</p>
             <a target="_blank" rel="noopener noreferrer" href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
-                Consulta le linee guida <svg class="icon"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><
+                Consulta le linee guida <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><
             </a>
         </div>
         <div class="col-12 col-md-6 mt-5 pt-3">
