@@ -131,7 +131,7 @@ La piattaforma offre numerosi vantaggi agli utenti:
 * **Imprese** e **cittadini** possono veder realizzato il principio del once-only,
   evitando di dover fornire informazioni già comunicate in precedenza alla PA
 
-Scopri <a href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank">come funziona</a> e <a href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank">come aderire</a> alla piattaforma.
+Scopri <b><a href="https://developer.pagopa.it/pdnd-interoperabilita/overview" target="_blank">come funziona</a></b> e <b><a href="https://developer.pagopa.it/pdnd-interoperabilita/guides/manuale-operativo-pdnd-interoperabilita" target="_blank">come aderire</a></b> alla piattaforma.
 
 ## Canali
 
