@@ -21,14 +21,11 @@ ref:
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
                     <h4 class="h6">1. RICERCA</h4>
-                    <p>Dopo aver aderito alla Piattaforma Digitale Nazionale Dati (PDND), scopri le API disponibili
-                        e quali veicolano dati di interesse nazionale e valuta come integrarle nei servizi o come
-                        crearne di innovativi</p>
+                    <p>Scopri le API disponibili a catalogo e lasciati ispirare dagli esempi pratici per integrarle nei servizi del tuo ente o per crearne di nuovi. Aderisci poi alla Piattaforma Digitale Nazionale Dati (PDND) per richiederne l’accesso.</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://www.interop.pagopa.it">Piattaforma Digitale Nazionale Dati (PDND)</a></p>
-                <p><a href="https://www.agid.gov.it/it/dati/basi-dati-interesse-nazionale">Basi Dati di Interesse
-                        Nazionale <br> (BDIN)</a></p>
+                <p><a href="https://api.gov.it" target="_blank" rel="noopener noreferrer">Catalogo pubblico delle API <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg> <br>(PDND)</a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -37,10 +34,10 @@ ref:
                         ontologie, vocabolari controllati e schemi dati</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/">Introduzione
-                        alla semantica dei dati</a></p>
+                <p><a href="https://teamdigitale.github.io/dati-semantic-doc-introduzione-semantica/" target="_blank" rel="noopener noreferrer">Introduzione
+                        alla semantica dei dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
                 <p><a href="https://developers.italia.it/it/pdnd">Risorse</a></p>
-                <p><a href="https://schema.gov.it">Schema</a></p>
+                <p><a href="https://schema.gov.it" target="_blank" rel="noopener noreferrer">Schema <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -49,9 +46,10 @@ ref:
                         OAS checker durante le fasi di sviluppo</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://italia.github.io/api-oas-checker/">API OAS checker</a></p>
-                <p><a href="https://github.com/italia/api-oas-checker-rules">Regole per il controllo automatico di
-                        specifiche OpenAPI</a></p>
+                <p><a href="https://italia.github.io/api-oas-checker/" target="_blank" rel="noopener noreferrer">API OAS checker <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://github.com/italia/api-oas-checker-rules" target="_blank" rel="noopener noreferrer">Regole per il controllo automatico di
+                        specifiche OpenAPI <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
+                <p><a href="https://teamdigitale.github.io/dati-semantic-schema-editor/" target="_blank" rel="noopener noreferrer">Schema Editor <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg></a></p>
             </div>
             <div class="col-md-3 border-right px-3">
                 <div class="content-section">
@@ -60,7 +58,7 @@ ref:
                         test e rendili disponibili sul catalogo anche in esercizio</p>
                 </div>
                 <h5 class="h6">Strumenti correlati</h5>
-                <p><a href="https://api.gov.it/it/catalogo">Catalogo API</a></p>
+                <p><a href="https://www.interop.pagopa.it" target="_blank" rel="noopener noreferrer">Piattaforma Digitale Nazionale Dati <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg><br>(PDND)</a></p>
             </div>
         </div>
         <h2 class="mt-5">Gli strumenti</h2>
@@ -71,12 +69,10 @@ ref:
                 <h3 class="h5 mt-4">Piattaforma Digitale Nazionale Dati (PDND)</h3>
                 <p>Garantisce lo scambio di informazioni tramite API, verificando l‘autenticazione e i livelli di
                     autorizzazione dei soggetti abilitati, affinché avvenga in modo semplice e sicuro.</p><a
-                    href="https://developers.italia.it/it/pdnd"
+                    href="https://www.interop.pagopa.it/"
                     class="btn btn-outline-primary w-100 mb-4">Scopri di più</a>
                 <h3 class="h5 mt-4">Catalogo API</h3>
-                <p>Rende disponibili le API pubblicate su PDND agli Enti aderenti, permettendo loro di valutare come
-                    integrarle efficacemente con i propri servizi, facendoli diventare ancora più funzionali per
-                    l’utente.</p><a href="https://www.interop.pagopa.it/catalogo"
+                <p>Offre visibilità agli e-service pubblicati su PDND dagli enti aderenti, fornendo esempi pratici da replicare per diverse categorie di fruitori</p><a href="https://api.gov.it/"
                     class="btn btn-outline-primary w-100 mb-4">Scopri di più</a>
                 <h3 class="h5 mt-4">Schema</h3>
                 <p>Altrimenti conosciuto come National Data Catalog (NDC) è il catalogo nazionale della semantica
@@ -138,8 +134,8 @@ ref:
         <div class="col-12 col-md-6 pr-5 mt-5 pt-3">
             <h3>Linee guida modello interoperabilità (ModI)</h3>
             <p>Individuano le tecnologie e gli standard che le Pubbliche Amministrazioni devono considerare durante la realizzazione dei propri sistemi informatici, al fine di permettere l’interoperabilità.</p>
-            <a href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
-                Consulta le linee guida
+            <a target="_blank" rel="noopener noreferrer" href="https://www.agid.gov.it/it/infrastrutture/sistema-pubblico-connettivita/il-nuovo-modello-interoperabilita">
+                Consulta le linee guida <svg class="icon icon-xs icon-primary"><use xlink:href="/assets/svg/sprites.svg#it-external-link"></use></svg>
             </a>
         </div>
         <div class="col-12 col-md-6 mt-5 pt-3">
