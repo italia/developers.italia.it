@@ -30,7 +30,8 @@ jobs:
         env:
            ELASTICSEARCH_PASS: ${{ secrets.ELASTICSEARCH_PASS }}
            ELASTICSEARCH_USER: ${{ secrets.ELASTICSEARCH_USER }}
-           ELASTICSEARCH_URL: "https://elasticsearch.developers.italia.it"
+           ELASTICSEARCH_URL: ${{ vars.ELASTICSEARCH_URL }}
+           ELASTICSEARCH_FRONTEND_URL: ${{ vars.ELASTICSEARCH_FRONTEND_URL }}
 
       - run: cp -r .well-known _site/
 
