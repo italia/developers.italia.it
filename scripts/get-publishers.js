@@ -26,7 +26,7 @@ function toElasticSearchBulkFile(data, filename) {
     .forEach(publisher => {
       const metadata = {
         'index': {
-          '_index': 'publishers',
+          '_index': 'developers_italia_it',
           '_id': publisher.id,
         }
       }
