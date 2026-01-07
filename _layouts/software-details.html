@@ -87,10 +87,10 @@ layout: default
               <p><span class="label">Gestito da</span>
                 {% if page.publiccode.organisation.uri or page.publiccode.IT.riuso.codiceIPA or page.publiccode.it.riuso.codiceIPA %}
                 <a href="/{{ active_lang }}/pa/{{ page.publiccode.IT.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.organisation.name or page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name | default: page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.organisation.name or page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name | default: page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
