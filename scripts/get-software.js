@@ -62,7 +62,7 @@ function toElasticSearchBulkFile(software, filename) {
     .forEach(s => {
       const metadata = {
         'index': {
-          '_index': 'software',
+          '_index': 'developers_italia_it',
           '_id': s.id,
         }
       }
