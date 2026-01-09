@@ -43,6 +43,10 @@ jekyll-build:
 	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
 	         --data-binary @elasticsearch.bulk \
 	         -XPOST "$${ELASTICSEARCH_URL}/_bulk?pretty"; \
+	    echo "Refreshing index..."; \
+	    curl --fail \
+	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         -XPOST "$${ELASTICSEARCH_URL}/developers_italia_it/_refresh"; \
 	fi
 
 include-npm-deps:
