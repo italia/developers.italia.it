@@ -3,7 +3,7 @@ title: IndicePA
 subtitle: Index of the Public Administration (IPA)
 logo: /assets/images/logo-indicepa.png
 payoff: Index of addresses of public administrations and managers of public services
-description: Database of national interest pursuant to Article 57-bis paragraph 1 of the Codice dell'Amministrazione Digitale.
+description: Database of national interest pursuant to Article 57-bis paragraph 1 of the CAD (Digital Administration Code).
 lang: en
 ref:
   it: /it/indicepa
@@ -16,7 +16,7 @@ resources:
     - title: Home page
       url: https://indicepa.gov.it
       icon: file
-      desc: Index page of the platform
+      desc: Index page of the platform.
     - title: Documentation
       url: https://indicepa.gov.it/documentale/n-documentazione.php
       icon: file

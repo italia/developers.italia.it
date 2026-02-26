@@ -4,9 +4,17 @@ layout: default
 
 {% include setlang.html %}
 
-{% assign description = page.publiccode.description[active_lang]
-| default: page.publiccode.description.en
-| default: page.publiccode.description.it %}
+{% assign description = page.publiccode.description[active_lang] %}
+{% unless description %}
+  {% for lang_key in page.publiccode.description %}
+    {% assign lang_base = lang_key[0] | split: '-' | first %}
+    {% if lang_base == active_lang %}
+      {% assign description = lang_key[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endunless %}
+{% assign description = description | default: page.publiccode.description.en | default: page.publiccode.description.it %}
 
 {% assign sw_name = description.localisedName | default: page.publiccode.name %}
 
@@ -31,7 +39,9 @@ layout: default
         {% else %}
         {% assign logo = page.publiccode.logo %}
         {% endif %}
+        {% if logo != "" and logo != nil %}
         <img alt="" src="{{ logo }}" class="d-inline-block" />
+        {% endif %}
         {% endif %}
         <h1 class="d-inline-block">
           {{ sw_name }}
@@ -75,12 +85,12 @@ layout: default
             {% if page.publiccode.legal.repoOwner %}
             <div class="col-sm">
               <p><span class="label">Gestito da</span>
-                {% if page.publiccode.it.riuso.codiceIPA %}
-                <a href="/{{ active_lang }}/pa/{{ page.publiccode.it.riuso.codiceIPA | downcase }}">
-                {{ page.publiccode.legal.repoOwner }}
+                {% if page.publiccode.organisation.uri or page.publiccode.IT.riuso.codiceIPA or page.publiccode.it.riuso.codiceIPA %}
+                <a href="/{{ active_lang }}/pa/{{ page.publiccode.IT.riuso.codiceIPA | downcase }}">
+                {{ page.publiccode.organisation.name | default: page.publiccode.legal.repoOwner }}
                 </a>
                 {% else %}
-                {{ page.publiccode.legal.repoOwner }}
+                {{ page.publiccode.organisation.name | default: page.publiccode.legal.repoOwner }}
                 {% endif %}
               </p>
             </div>
@@ -292,10 +302,17 @@ layout: default
           <div class="collapse" id="listVariant">
             {% for variant in page.oldVariant %}
             {% assign variant_sw = site.data.crawler.software | where: "id", variant.id | first %}
-            {% assign variant_description = variant.publiccode.description[active_lang]
-
-            | default: variant.publiccode.description.en
-            | default: variant.publiccode.description.it %}
+            {% assign variant_description = variant.publiccode.description[active_lang] %}
+            {% unless variant_description %}
+              {% for lang_key in variant.publiccode.description %}
+                {% assign lang_base = lang_key[0] | split: '-' | first %}
+                {% if lang_base == active_lang %}
+                  {% assign variant_description = lang_key[1] %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endunless %}
+            {% assign variant_description = variant_description | default: variant.publiccode.description.en | default: variant.publiccode.description.it %}
             <div class="variantDetail">
               <a href="/{{active_lang}}/software/{{ variant.slug | downcase }}">
               {{ variant.publiccode.name }}
@@ -533,7 +550,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.enabling_platforms }}</span>
-                  {% assign p = page.publiccode.it.piattaforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.piattaforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.piattaforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -575,7 +596,11 @@ layout: default
               <div class="col-6 col-md">
                 <p>
                   <span class="label">{{ t.software.compliance }}</span>
-                  {% assign p = page.publiccode.it.conforme %}
+                  {% if page.publiccode.it %}
+                    {% assign p = page.publiccode.it.conforme %}
+                  {% else %}
+                    {% assign p = page.publiccode.IT.conforme %}
+                  {% endif %}
                   {% assign all_false = true %}
                   {% for key in p %}
                   {% if key.last == true %}
@@ -725,13 +750,21 @@ layout: default
     <div class="row">
         {% for relsw in page.relatedSoftwares limit: 4 %}
       <div class="col-md-3 col-12">
-        {% assign relsw_description = relsw.publiccode.description[active_lang]
-        | default: relsw.publiccode.description.en
-        | default: relsw.publiccode.description.it %}
+        {% assign relsw_description = relsw.publiccode.description[active_lang] %}
+        {% unless relsw_description %}
+          {% for lang_key in relsw.publiccode.description %}
+            {% assign lang_base = lang_key[0] | split: '-' | first %}
+            {% if lang_base == active_lang %}
+              {% assign relsw_description = lang_key[1] %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+        {% assign relsw_description = relsw_description | default: relsw.publiccode.description.en | default: relsw.publiccode.description.it %}
         {% assign relsw_name = relsw_description.localisedName | default: relsw.publiccode.name %}
         {% assign relsw_url = '/' | append: active_lang | append: '/software/' | append: relsw.slug | downcase %}
 
-        {% if relsw.publiccode.it.riuso.codiceIPA != nil %}
+        {% if relsw.publiccode.organisation.uri or relsw.publiccode.IT.riuso.codiceIPA or relsw.publiccode.it.riuso.codiceIPA %}
         {% assign category = "software_reuse" %}
         {% assign icon = "it-software" %}
         {% assign fallback = "/assets/images/cover_softwareriuso.png" %}
@@ -747,7 +780,7 @@ layout: default
           class="w-100"
           id="{{  relsw.id }}"
           name="{{ relsw_name }}"
-          description="{{ relswdescription | escape }}"
+          description="{{ relsw_description.shortDescription | escape }}"
           url="{{ relsw_url }}"
           icon="{{ icon }}"
           category="{{ category }}"

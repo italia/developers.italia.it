@@ -33,7 +33,7 @@ module.exports = {
     // Pass down environment variables to be replaced in the bundle
     new webpack.DefinePlugin({
       'ELASTICSEARCH_FRONTEND_URL': JSON.stringify(
-        process.env.ELASTICSEARCH_FRONTEND_URL || "https://elasticsearch.developers.italia.it"
+        process.env.ELASTICSEARCH_FRONTEND_URL
       ),
     }),
 

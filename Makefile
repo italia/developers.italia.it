@@ -40,9 +40,13 @@ jekyll-build:
 	else \
 	    curl --fail \
            -H 'Content-Type: application/json' \
-	         -H "Authorization: Basic $$(printf %s:%s "elastic" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
 	         --data-binary @elasticsearch.bulk \
-	         -XPOST "https://elasticsearch.developers.italia.it/_bulk?pretty"; \
+	         -XPOST "$${ELASTICSEARCH_URL}/_bulk?pretty"; \
+	    echo "Refreshing index..."; \
+	    curl --fail \
+	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         -XPOST "$${ELASTICSEARCH_URL}/developers_italia_it/_refresh"; \
 	fi
 
 include-npm-deps:

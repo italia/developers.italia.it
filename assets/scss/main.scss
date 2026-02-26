@@ -2182,3 +2182,85 @@ body {
     display: flex !important;
   }
 }
+
+// Banner Survey
+.banner-survey {
+  background-color: #0059B3;
+  min-height: 316px;
+
+  h2 {
+    color: #F6F8F1;
+    font-size: 2.5rem;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 3rem;
+      white-space: nowrap;
+    }
+  }
+
+  .accent {
+    color: #F6F8F1;
+  }
+
+  p {
+    color: #F6F8F1;
+  }
+
+  &__title-wrapper {
+    width: 60%;
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+  }
+
+  &__shape {
+    position: absolute;
+    height: 570px;
+    width: 570px;
+    bottom: 25%;
+    background-image: url("https://www.canada.ca/content/dam/tbs-sct/images/digital-government/g7_gov_ai/gov_ai_1920x360.png");
+    background-size: 150% 100%;
+
+    --mask: linear-gradient(to bottom,
+        rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
+        rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+    ) 100% 50% / 100% 100% repeat-x;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+    @include media-breakpoint-up(md) {
+      left: 0%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 1080px;
+      height: 640px;
+      left: 0%;
+      top: -90%;
+      --mask: linear-gradient(to left,
+          rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 40%,
+          rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+      ) 100% 50% / 100% 100% repeat-x;
+
+      -webkit-mask: var(--mask);
+      mask: var(--mask);
+    }
+
+    @include media-breakpoint-up(xl) {
+      left: 0%;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 165px;
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 25rem;
+    }
+  }
+}

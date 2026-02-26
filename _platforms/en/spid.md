@@ -226,7 +226,7 @@ collab:
   links:
   - name: forum
     url: "https://forum.italia.it/c/spid"
-  - title: "Dialoga su Slack"
+  - title: "Slack"
     icon: it-slack
     url: https://developersitalia.slack.com/messages/C73R3UQE8
 ---
@@ -234,20 +234,20 @@ collab:
 ## Intro
 
 SPID (Public System for Digital Identity) is the solution that allows the Italian citizens to access all online services of the Public Administration with a single Digital Identity (username and password) that can be used from computers, tablets and smartphones.
-Citizens can get SPID through a series of private companies under agreements (known as *Identity Providers*); once the verification procedure is completed (which certifies the identity of the applicant), you are released a set of credentials that can be used on all the websites (called *Service Providers*).
+Citizens can get SPID through a series of private companies under agreements (known as *Identity Providers*); once the verification procedure is completed (which certifies the identity of the applicant), they are released a set of credentials that can be used on all the websites (called *Service Providers*).
 
 **Advantages for citizens:**
 
-- A single set of credentials for all public websites (and private websites too), secure and easy to remember
-- The verification process, after which the credentials are released, needs to be done only once
-- SPID is free
+- A single set of credentials for all public websites (and private websites too), secure and easy to remember.
+- The verification process, after which the credentials are released, needs to be done only once.
+- SPID is free.
 
 **Advantages for Service Providers:**
 
-- Secure and certified identification of users
-- No need to handle custom registration/verification processes, thus reduced costs
-- Qualified attributes (birth date/place, gender, e-mail, phone etc.)
-- Other attributes already populated by users (home address etc.)
+- Secure and certified identification of users.
+- No need to handle custom registration/verification processes, thus reduced costs.
+- Qualified attributes (birth date/place, gender, e-mail, phone etc.).
+- Other attributes already populated by users (home address etc.).
 
 SPID can be integrated in the websites of the Public Administration, but also on private websites. In the first case the service is free, while for privates fees are applied. There are several advantages for including SPID in private websites: banks and insurance companies, for instance, can easily recognize users who want to open an account just by accepting their SPID login, without any additional verification process.
 
