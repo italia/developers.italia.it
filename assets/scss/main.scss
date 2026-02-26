@@ -2185,7 +2185,7 @@ body {
 
 // Banner Survey
 .banner-survey {
-  background-color: #001009;
+  background-color: #0059B3;
   min-height: 316px;
 
   h2 {
@@ -2199,8 +2199,7 @@ body {
   }
 
   .accent {
-    color: #F5A01A;
-    text-transform: uppercase;
+    color: #F6F8F1;
   }
 
   p {
@@ -2261,7 +2260,7 @@ body {
     z-index: 1;
 
     @include media-breakpoint-up(lg) {
-      max-width: 292px;
+      max-width: 25rem;
     }
   }
 }
