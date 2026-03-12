@@ -70,7 +70,7 @@ resources:
   - Accreditamento:
     - title: Modulo di richiesta accreditamento
       icon: link
-      url: https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo
+      url: https://ec.europa.eu/eusurvey/runner/FSE-2-validazione
       desc: Modulo di richiesta accreditamento
     - title: Documento processo di accreditamento
       icon: github
