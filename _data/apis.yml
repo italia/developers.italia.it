@@ -1,6 +1,6 @@
-- openapi: https://raw.githubusercontent.com/italia/developers-italia-api/main/developers-italia.oas.yaml
+- openapi: https://raw.githubusercontent.com/italia/developers-italia-api/refs/heads/main/software-catalog-api.oas.yaml
   title: Catalogo del software pubblico - developers.italia.it
-  abstract: API del Catalogo del software pubblico in Developers Italia (beta)
+  abstract: API del Catalogo del software pubblico in Developers Italia
   contact:
     name: Developers Italia
     logo: /assets/icons/logo-it-blue.svg
