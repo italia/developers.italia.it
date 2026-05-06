@@ -5,7 +5,6 @@ layout: default
 {% include setlang.html %}
 {% assign news = site.posts | where: 'locale', active_lang | sort: 'date' | reverse | first %}
 {% assign newsletterdata = site.newsletterdata %}
-{% include banner-survey.html %}
 
 <section class="homelayout__first">
   <div class="container">
