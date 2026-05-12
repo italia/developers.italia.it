@@ -40,15 +40,15 @@ resources:
     - title: SDK for PHP (based on SimpleSAMLphp)
       icon: github
       url: https://github.com/italia/spid-php
-      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp <br> <img src="https://img.shields.io/github/issues/italia/spid-php" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-php?style=social" />
+      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp
     - title: SDK for Django
       icon: github
       url: https://github.com/italia/spid-django
-      desc: Native library for integrating SPID in Django (Python) applications.<br> <img src="https://img.shields.io/github/issues/italia/spid-django" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-django?style=social" />
+      desc: Native library for integrating SPID in Django (Python) applications.
     - title: SDK for ASP.NET core
       icon: github
       url: https://github.com/italia/spid-aspnetcore
-      desc: <img src="https://img.shields.io/github/issues/italia/spid-aspnetcore" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-aspnetcore?style=social" />
+      desc: Native library for integrating SPID in ASP.NET
     - title: SDK for NodeJS (Express.js/Passport)
       icon: github
       url: https://github.com/random42/passport-spid
@@ -56,7 +56,7 @@ resources:
     - title: SDK for Express.js
       icon: github
       url: https://github.com/italia/spid-express
-      desc: Native library for integrating SPID in Node/Passport (Javascript) applications <br> <img src="https://img.shields.io/github/issues/italia/spid-express" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Ako%2C%20response%3Ana-orange" /> <img src="https://img.shields.io/github/stars/italia/spid-express?style=social" />
+      desc: Native library for integrating SPID in Node/Passport (Javascript) applications
     - title: SDK for Spring
       icon: github
       url: https://github.com/italia/spid-spring

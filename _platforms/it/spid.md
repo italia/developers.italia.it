@@ -40,19 +40,19 @@ resources:
     - title: SDK per PHP (basata su SimpleSAMLphp)
       icon: github
       url: https://github.com/italia/spid-php
-      desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp <br> <img src="https://img.shields.io/github/issues/italia/spid-php" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-php?style=social" />
+      desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp
     - title: SDK per Django
       icon: github
       url: https://github.com/italia/spid-django
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)<br> <img src="https://img.shields.io/github/issues/italia/spid-django" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-ok-blue" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" />  <img src="https://img.shields.io/github/stars/italia/spid-django?style=social" />
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)
     - title: SDK per ASP.NET core
       icon: github
       url: https://github.com/italia/spid-aspnetcore
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni ASP.NET core <br> <img src="https://img.shields.io/github/issues/italia/spid-aspnetcore" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-aspnetcore?style=social" />
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni ASP.NET core
     - title: SDK per Express.js
       icon: github
       url: https://github.com/italia/spid-express
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Javascript) <br> <img src="https://img.shields.io/github/issues/italia/spid-express" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Ako%2C%20response%3Ana-orange" /> <img src="https://img.shields.io/github/stars/italia/spid-express?style=social" />
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Javascript)
     - title: SDK per PHP
       icon: github
       url: https://github.com/italia/spid-php-lib
