@@ -26,7 +26,7 @@ describe('CatalogueView', () => {
     for (const i of items) {
       expect(await screen.findByTestId(i.id)).toBeInTheDocument();
     }
-    expect(await screen.findByTestId('counter-summary')).toHaveTextContent('169 risultati');
+    expect(await screen.findByTestId('counter-summary')).toHaveTextContent(total + ' risultati');
   });
 
   it('renders CatalogueView with no items and grand total equal to zero', async () => {
