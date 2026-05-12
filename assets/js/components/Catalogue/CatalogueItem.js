@@ -62,7 +62,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   if (!simple) {
     return (
       <div data-testid={id}>
-        <Card className="it-card-image rounded shadow-sm border">
+        <Card className="it-card-image rounded shadow-sm">
           <div className="it-card-image-wrapper">
             <div className="ratio ratio-16x9">
               <figure className="figure img-full">
