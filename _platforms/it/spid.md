@@ -41,22 +41,26 @@ resources:
       icon: github
       url: https://github.com/italia/spid-php
       desc: Script per l'integrazione di SPID in applicazioni PHP attraverso l'installazione guidata di SimpleSAMLphp
-    - title: SDK per PHP
-      icon: github
-      url: https://github.com/italia/spid-php-lib
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
-    - title: SDK per AspNetCore
-      icon: github
-      url: https://github.com/italia/spid-aspnetcore
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET AspNetCore MVC
-    - title: SDK per .NET
-      icon: github
-      url: https://github.com/italia/spid-dotnet-sdk
-      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET
     - title: SDK per Django
       icon: github
       url: https://github.com/italia/spid-django
       desc: Libreria nativa per l'integrazione di SPID in applicazioni Django (Python)
+    - title: SDK per ASP.NET core
+      icon: github
+      url: https://github.com/italia/spid-aspnetcore
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni ASP.NET core
+    - title: SDK per Express.js
+      icon: github
+      url: https://github.com/italia/spid-express
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni Node/Passport (Javascript)
+    - title: SDK per PHP
+      icon: github
+      url: https://github.com/italia/spid-php-lib
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni PHP
+    - title: SDK per .NET
+      icon: github
+      url: https://github.com/italia/spid-dotnet-sdk
+      desc: Libreria nativa per l'integrazione di SPID in applicazioni .NET
     - title: SDK per NodeJS (Express.js/Passport)
       icon: github
       url: https://github.com/random42/passport-spid
