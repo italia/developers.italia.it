@@ -61,34 +61,36 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   const classes = useStyles();
   if (!simple) {
     return (
-      <Card className="card-img no-after shadow" data-testid={id}>
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
-              <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
-            </figure>
+      <div data-testid={id}>
+        <Card className="card-img no-after shadow">
+          <div className="img-responsive-wrapper">
+            <div className="img-responsive">
+              <figure className="img-wrapper">
+                <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
+              </figure>
+            </div>
           </div>
-        </div>
-        {icon && (
-          <div className="m-1">
-            <Icon icon={icon} size="sm" className="me-1" />
-            <span className={classes.category}>{l10NLabels.software[category]}</span>
-          </div>
-        )}
-        <CardBody>
-          <CardTitle className="h6 line-clamp-2" tag="p">
-            {name}
-          </CardTitle>
-          <CardText className="line-clamp-3">{description}</CardText>
-          <CardReadMore
-            href={url}
-            text={l10NLabels.software.read_more}
-            title={name + l10NLabels.software.read_more}
-            iconName="it-arrow-right"
-            data-testid="item-anchor"
-          />
-        </CardBody>
-      </Card>
+          {icon && (
+            <div className="m-1">
+              <Icon icon={icon} size="sm" className="me-1" />
+              <span className={classes.category}>{l10NLabels.software[category]}</span>
+            </div>
+          )}
+          <CardBody>
+            <CardTitle className="h6 line-clamp-2" tag="p">
+              {name}
+            </CardTitle>
+            <CardText className="line-clamp-3">{description}</CardText>
+            <CardReadMore
+              href={url}
+              text={l10NLabels.software.read_more}
+              title={name + l10NLabels.software.read_more}
+              iconName="it-arrow-right"
+              data-testid="item-anchor"
+            />
+          </CardBody>
+        </Card>
+      </div>
     );
   } else {
     return (
