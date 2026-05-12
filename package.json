@@ -3,6 +3,7 @@
     "version": "2.4.0",
     "license": "BSD-3-Clause",
     "dependencies": {
+        "@braintree/sanitize-url": "^7.1.2",
         "axios": "^1.16.0",
         "bootstrap-italia": "^2.13.4",
         "design-react-kit": "^5.6.0",
