@@ -5,7 +5,7 @@
     "dependencies": {
         "@braintree/sanitize-url": "^7.1.2",
         "axios": "^1.16.0",
-        "bootstrap-italia": "^2.13.4",
+        "bootstrap-italia": "^2.18.1",
         "design-react-kit": "^5.6.0",
         "dompurify": "^3.4.2",
         "elasticsearch": "^15.0.0",
