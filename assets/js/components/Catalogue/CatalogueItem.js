@@ -95,8 +95,8 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   } else {
     return (
       <Card image rounded fullHeight shadow="sm" data-testid={id}>
+        <h3 className="it-card-title h6">{name}</h3>
         <div className="it-card-body">
-          <h3 className="it-card-title h6">{name}</h3>
           <p className="it-card-text">{description}</p>
         </div>
         <footer className="it-card-related it-card-footer">
