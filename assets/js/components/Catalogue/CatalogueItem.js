@@ -62,10 +62,10 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   if (!simple) {
     return (
       <div data-testid={id}>
-        <Card className="card-img no-after shadow">
-          <div className="img-responsive-wrapper">
-            <div className="img-responsive">
-              <figure className="img-wrapper">
+        <Card className="it-card-image rounded shadow-sm border">
+          <div className="it-card-image-wrapper">
+            <div className="ratio ratio-16x9">
+              <figure className="figure img-full">
                 <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
               </figure>
             </div>
@@ -77,7 +77,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
             </div>
           )}
           <CardBody>
-            <CardTitle className="h6 line-clamp-2" tag="p">
+            <CardTitle className="h6 line-clamp-2 it-card-title" tag="p">
               {name}
             </CardTitle>
             <CardText className="line-clamp-3">{description}</CardText>
