@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
-import { Card, CardBody, CardTitle, CardReadMore, CardText } from 'design-react-kit';
+import { Card, CardReadMore } from 'design-react-kit';
 import { ImageWithPlaceholder } from '../ImageWithPlaceholder.js';
 import { l10NLabels } from '../../utils/l10n.js';
 import { searchItemProptypes } from '../../utils/proptypes.js';
@@ -62,7 +62,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   if (!simple) {
     return (
       <div data-testid={id}>
-        <Card className="it-card-image rounded shadow-sm">
+        <Card image rounded shadow="sm">
           <div className="it-card-image-wrapper">
             <div className="ratio ratio-16x9">
               <figure className="figure img-full">
@@ -76,11 +76,12 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
               <span className={classes.category}>{l10NLabels.software[category]}</span>
             </div>
           )}
-          <CardBody>
-            <CardTitle className="h6 line-clamp-2 it-card-title" tag="p">
-              {name}
-            </CardTitle>
-            <CardText className="line-clamp-3">{description}</CardText>
+          <h3 className="it-card-title ">
+            {name}
+          </h3>
+          <div className="it-card-body">
+
+            <p className="it-card-text">{description}</p>
             <CardReadMore
               href={url}
               text={l10NLabels.software.read_more}
@@ -88,18 +89,18 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
               iconName="it-arrow-right"
               data-testid="item-anchor"
             />
-          </CardBody>
+          </div>
         </Card>
       </div>
     );
   } else {
     return (
-      <Card className="shadow" data-testid={id}>
-        <CardBody>
-          <CardTitle className="h6 line-clamp-2" tag="p">
+      <Card image rounded shadow="sm" data-testid={id}>
+        <div className="it-card-body">
+          <h3 className="it-card-title ">
             {name}
-          </CardTitle>
-          <CardText className="line-clamp-3">{description}</CardText>
+          </h3>
+          <p className="it-card-text">{description}</p>
           <CardReadMore
             href={url}
             text={l10NLabels.software.read_more}
@@ -107,7 +108,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
             iconName="it-arrow-right"
             data-testid="item-anchor"
           />
-        </CardBody>
+        </div>
       </Card>
     );
   }
