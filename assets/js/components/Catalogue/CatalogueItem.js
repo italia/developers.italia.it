@@ -61,7 +61,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   const classes = useStyles();
   if (!simple) {
     return (
-      <div data-testid={id}>
+      <div data-testid={id} style={{width: '100%'}}>
         <Card image rounded fullHeight shadow="sm">
           <div className="it-card-image-wrapper">
             <div className="ratio ratio-16x9">
