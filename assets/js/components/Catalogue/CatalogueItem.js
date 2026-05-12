@@ -80,7 +80,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
           <div className="it-card-body">
             <p className="it-card-text">{description}</p>
           </div>
-          <footer className="it-card-related it-card-footer">
+          <footer className="it-card-related it-card-footer justify-content-start">
             <CardReadMore
               href={url}
               text={l10NLabels.software.read_more}
@@ -99,7 +99,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
         <div className="it-card-body">
           <p className="it-card-text">{description}</p>
         </div>
-        <footer className="it-card-related it-card-footer">
+        <footer className="it-card-related it-card-footer justify-content-start">
           <CardReadMore
             href={url}
             text={l10NLabels.software.read_more}
