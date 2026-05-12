@@ -37,18 +37,18 @@ resources:
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
   - SAML2 SDKs:
-    - title: SDK for AspNetCore
+    - title: SDK for PHP (based on SimpleSAMLphp)
       icon: github
-      url: https://github.com/italia/spid-aspnetcore
-      desc: Native library for integrating SPID in .NET AspNetCore MVC applications
-    - title: SDK for .NET
-      icon: github
-      url: https://github.com/italia/spid-dotnet-sdk
-      desc: Native library for integrating SPID in .NET applications
+      url: https://github.com/italia/spid-php
+      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp
     - title: SDK for Django
       icon: github
       url: https://github.com/italia/spid-django
-      desc: Native library for integrating SPID in Django (Python) applications
+      desc: Native library for integrating SPID in Django (Python) applications.
+    - title: SDK for ASP.NET core
+      icon: github
+      url: https://github.com/italia/spid-aspnetcore
+      desc: Native library for integrating SPID in ASP.NET
     - title: SDK for NodeJS (Express.js/Passport)
       icon: github
       url: https://github.com/random42/passport-spid
@@ -65,6 +65,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-ruby
       desc: Native library for integrating SPID in Ruby applications
+    - title: SDK for .NET
+      icon: github
+      url: https://github.com/italia/spid-dotnet-sdk
+      desc: Native library for integrating SPID in .NET applications
     - title: SDK for Ruby on Rails
       icon: github
       url: https://github.com/italia/spid-rails
@@ -101,10 +105,6 @@ resources:
       icon: github
       url: https://github.com/italia/spid-drupal-module
       desc: Native library for integrating SPID in Drupal (PHP) applications
-    - title: SDK for PHP (based on SimpleSAMLphp)
-      icon: github
-      url: https://github.com/italia/spid-php
-      desc: Script for integrating SPID in PHP applications through a guided installer of SimpleSAMLphp
     - title: SDK for Perl
       icon: github
       url: https://github.com/italia/spid-perl

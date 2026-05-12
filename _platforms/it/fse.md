@@ -70,7 +70,7 @@ resources:
   - Accreditamento:
     - title: Modulo di richiesta accreditamento
       icon: link
-      url: https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo
+      url: https://ec.europa.eu/eusurvey/runner/FSE-2-validazione
       desc: Modulo di richiesta accreditamento
     - title: Documento processo di accreditamento
       icon: github
@@ -168,7 +168,7 @@ Il processo complessivo di adeguamento e messa in produzione dell’applicativo 
   * viene eseguito in ambiente di produzione presso regioni e/o aziende (grace period);
   * ha come obiettivo la verifica, mediante monitoraggio puntuale, della correttezza del rollout fino a quando l’impianto non raggiunge la percentuale di fault concordata.
 
-Per procedere con la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)" fornendo le informazioni richieste.
+Per procedere con la **fase 1** una volta completati i test autonomi sul software è necessario compilare il "[modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-2-validazione)" fornendo le informazioni richieste.
 
 Per poter accedere ai servizi è necessario avere 2 certificati x509. Per il loro ottenimento è necessario inviare 2 CSR, una per il certificato di autenticazione e una per il certificato di firma, alla casella di progetto [fse_support@sogei.it](mailto:fse_support@sogei.it), verranno emessi da Sogei i certificati di autenticazione e firma che consentiranno  l'accesso ai servizi della piattaforma di pre produzione.
 
