@@ -76,7 +76,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
               <span className={classes.category}>{l10NLabels.software[category]}</span>
             </div>
           )}
-          <h3 className="it-card-title ">
+          <h3 className="it-card-title h6">
             {name}
           </h3>
           <div className="it-card-body">
@@ -97,7 +97,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
     return (
       <Card image rounded shadow="sm" data-testid={id}>
         <div className="it-card-body">
-          <h3 className="it-card-title ">
+          <h3 className="it-card-title h6">
             {name}
           </h3>
           <p className="it-card-text">{description}</p>
