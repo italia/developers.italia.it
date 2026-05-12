@@ -61,7 +61,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   const classes = useStyles();
   if (!simple) {
     return (
-      <div data-testid={id} style={{width: '100%'}}>
+      <div data-testid={id} style={{ width: '100%' }}>
         <Card image rounded fullHeight shadow="sm">
           <div className="it-card-image-wrapper">
             <div className="ratio ratio-16x9">
@@ -76,11 +76,8 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
               <span className={classes.category}>{l10NLabels.software[category]}</span>
             </div>
           )}
-          <h3 className="it-card-title h6">
-            {name}
-          </h3>
+          <h3 className="it-card-title h6">{name}</h3>
           <div className="it-card-body">
-
             <p className="it-card-text">{description}</p>
             <CardReadMore
               href={url}
@@ -97,9 +94,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
     return (
       <Card image rounded fullHeight shadow="sm" data-testid={id}>
         <div className="it-card-body">
-          <h3 className="it-card-title h6">
-            {name}
-          </h3>
+          <h3 className="it-card-title h6">{name}</h3>
           <p className="it-card-text">{description}</p>
           <CardReadMore
             href={url}
