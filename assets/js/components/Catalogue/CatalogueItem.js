@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Icon } from 'design-react-kit';
-import { Card, CardBody, CardTitle, CardReadMore, CardText } from 'design-react-kit';
+import { Card, CardReadMore } from 'design-react-kit';
 import { ImageWithPlaceholder } from '../ImageWithPlaceholder.js';
 import { l10NLabels } from '../../utils/l10n.js';
 import { searchItemProptypes } from '../../utils/proptypes.js';
@@ -61,43 +61,45 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   const classes = useStyles();
   if (!simple) {
     return (
-      <Card className="card-img no-after shadow" data-testid={id}>
-        <div className="img-responsive-wrapper">
-          <div className="img-responsive">
-            <figure className="img-wrapper">
-              <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
-            </figure>
+      <div data-testid={id} style={{ width: '100%', height: '100%' }}>
+        <Card image rounded fullHeight shadow="sm">
+          <div className="it-card-image-wrapper">
+            <div className="ratio ratio-16x9">
+              <figure className="figure img-full">
+                <ImageWithPlaceholder placeholder={fallback} alt={'Logo ' + name} img={logo} />
+              </figure>
+            </div>
           </div>
-        </div>
-        {icon && (
-          <div className="m-1">
-            <Icon icon={icon} size="sm" className="me-1" />
-            <span className={classes.category}>{l10NLabels.software[category]}</span>
+          {icon && (
+            <div className="m-1">
+              <Icon icon={icon} size="sm" className="me-1" />
+              <span className={classes.category}>{l10NLabels.software[category]}</span>
+            </div>
+          )}
+          <h3 className="it-card-title h6">{name}</h3>
+          <div className="it-card-body">
+            <p className="it-card-text">{description}</p>
           </div>
-        )}
-        <CardBody>
-          <CardTitle className="h6 line-clamp-2" tag="p">
-            {name}
-          </CardTitle>
-          <CardText className="line-clamp-3">{description}</CardText>
-          <CardReadMore
-            href={url}
-            text={l10NLabels.software.read_more}
-            title={name + l10NLabels.software.read_more}
-            iconName="it-arrow-right"
-            data-testid="item-anchor"
-          />
-        </CardBody>
-      </Card>
+          <footer className="it-card-related it-card-footer justify-content-start">
+            <CardReadMore
+              href={url}
+              text={l10NLabels.software.read_more}
+              title={name + l10NLabels.software.read_more}
+              iconName="it-arrow-right"
+              data-testid="item-anchor"
+            />
+          </footer>
+        </Card>
+      </div>
     );
   } else {
     return (
-      <Card className="shadow" data-testid={id}>
-        <CardBody>
-          <CardTitle className="h6 line-clamp-2" tag="p">
-            {name}
-          </CardTitle>
-          <CardText className="line-clamp-3">{description}</CardText>
+      <Card image rounded fullHeight shadow="sm" data-testid={id}>
+        <h3 className="it-card-title h6">{name}</h3>
+        <div className="it-card-body">
+          <p className="it-card-text">{description}</p>
+        </div>
+        <footer className="it-card-related it-card-footer justify-content-start">
           <CardReadMore
             href={url}
             text={l10NLabels.software.read_more}
@@ -105,7 +107,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
             iconName="it-arrow-right"
             data-testid="item-anchor"
           />
-        </CardBody>
+        </footer>
       </Card>
     );
   }
