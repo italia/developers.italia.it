@@ -81,7 +81,14 @@ module.exports = {
           // Autoprefixer and minifying
           "postcss-loader",
           // SASS to CSS
-          "sass-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                includePaths: ["node_modules"],
+              },
+            },
+          },
         ],
       },
       {

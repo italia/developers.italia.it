@@ -1236,3 +1236,5 @@
 {"it-riuso-codiceIPA-label":"Comune di Montelupo Fiorentino","it-riuso-codiceIPA":"c_f551","type":"administration"}
 {"index":{"_index":"developers_italia_it","_id":"1738cdb5-b0ef-4bf9-a65e-1d884c5b5d01"}}
 {"it-riuso-codiceIPA-label":"Consorzio Universitario Piceno","it-riuso-codiceIPA":"co_unap","type":"administration"}
+{"index":{"_index":"developers_italia_it","_id":"1f31f225-bd6c-456b-8214-4816df918e40"}}
+{"it-riuso-codiceIPA-label":"Provincia di Pescara","it-riuso-codiceIPA":"p_pe","type":"administration"}
