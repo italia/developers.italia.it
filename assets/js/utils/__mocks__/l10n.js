@@ -73,6 +73,8 @@ export const l10NLabels = {
     platform: 'Piattaforma',
     platforms: 'Piattaforme',
     type: 'Tipologia',
+    read_more: 'Scopri di più',
+    load_more: 'Carica altro',
   },
   errors: {
     something_went_wrong: 'Ops! Qualcosa è andato storto...',
