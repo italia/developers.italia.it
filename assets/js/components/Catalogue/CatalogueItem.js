@@ -62,7 +62,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
   if (!simple) {
     return (
       <div data-testid={id}>
-        <Card image rounded shadow="sm">
+        <Card image rounded fullHeight shadow="sm">
           <div className="it-card-image-wrapper">
             <div className="ratio ratio-16x9">
               <figure className="figure img-full">
@@ -95,7 +95,7 @@ export const CatalogueItem = ({ id, name, description, url, icon, category, logo
     );
   } else {
     return (
-      <Card image rounded shadow="sm" data-testid={id}>
+      <Card image rounded fullHeight shadow="sm" data-testid={id}>
         <div className="it-card-body">
           <h3 className="it-card-title h6">
             {name}
