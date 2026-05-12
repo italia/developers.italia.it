@@ -25,8 +25,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://developers.italia.it"
 twitter_username: developersITA
 github_username:  italia
-google_analytics: UA-96140462-1
-webanalytics_italia: jg7pYvEqvM
+webanalytics_italia: 1375
 
 # Build settings
 markdown: kramdown
@@ -92,6 +91,7 @@ owner_link: https://innovazione.gov.it/dipartimento/
 logo: /assets/icons/logo-it.svg
 owner_logo: /assets/icons/logo-mid-white.svg
 partner_short: AgID
+partner_full: Agenzia per l'Italia Digitale
 partner_link: https://www.agid.gov.it
 privacy_link: /it/privacy-policy
 gov_logo: /assets/images/governo.svg
@@ -100,12 +100,17 @@ pill: ""
 url_lineeguidariuso: https://docs.italia.it/italia/developers-italia/lg-acquisizione-e-riuso-software-per-pa-docs/it/stabile/
 url_lineeguidariuso_en: https://docs.italia.it/italia/developers-italia/gl-acquisition-and-reuse-software-for-pa-docs/en/stabile/
 newsletterdata:
-    placeholdertext: mario.rossi@devsoftware.it
-    action: "https://a0x0b4.emailsp.com/frontend/subscribe.aspx"
-    hidden-inputs:
-        -
-          name: list
-          value: 1
+   options:
+   # You can add extra custom fields to the newsletter registration form
+   # extra_fields:
+   #   subscriberType:
+   #     'Pubblica amministrazione': 1
+   #     'Studente': 2
+   args:
+     # Sendportal workspace id
+     workspace_id: 1
+     # Des+Dev tag in Sendportal
+     tag_id: 7
 
 collections:
    platforms:
@@ -167,8 +172,8 @@ page_gen:
     #filter_condition: "record['language'].include? 'en'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: it
@@ -177,8 +182,8 @@ page_gen:
     # filter_condition: "record['language'].include? 'it'"
 
   - index_files: false
-    name: slug
-    data: crawler.softwares
+    name: id
+    data: crawler.software
     template: software-details
     defaults:
       lang: en
@@ -217,7 +222,7 @@ elasticsearch:
   url: ENV_ELASTICSEARCH_URL
   number_of_shards: 5
   number_of_replicas: 1
-  index_name: "jekyll"
+  index_name: "developers_italia_it"
   default_type: "_doc"
   custom_settings: _es_settings.yml
   custom_mappings: _es_mappings.yml

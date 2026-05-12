@@ -5,43 +5,53 @@ import { buildFilter, buildSort } from './elasticSearchUtils.js';
 
 const client = new elasticsearch.Client({
   // eslint-disable-next-line no-undef
-  host: process.env.ELASTICSEARCH_FRONTEND_URL,
+  host: ELASTICSEARCH_FRONTEND_URL,
 });
 
 export const querySoftware = async ({ type, searchValue, filters, sortBy, from, size }) => {
   const must = [{ term: { type: 'software' } }];
+  const should = [];
   if (searchValue) {
     must.push({
       multi_match: {
         query: searchValue,
+        type: 'phrase_prefix',
         fields: [
           'publiccode.name^3',
           `publiccode.description.${lang}.localizedName^3`,
           `publiccode.description.${lang}.shortDescription^2`,
           `publiccode.description.${lang}.longDescription`,
+          `publiccode.description.${lang}.features`,
         ],
       },
     });
   }
 
   if (type === SOFTWARE_REUSE) {
-    must.push({ exists: { field: 'publiccode.it.riuso.codiceIPA' } });
+    should.push(
+      { exists: { field: 'publiccode.organisation.uri' } },
+      { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
+      { exists: { field: 'publiccode.it.riuso.codiceIPA' } }
+    );
   }
 
   const must_not = [];
 
   if (type === SOFTWARE_OPEN) {
     must_not.push(
+      { exists: { field: 'publiccode.organisation.uri' } },
+      { exists: { field: 'publiccode.IT.riuso.codiceIPA' } },
       { exists: { field: 'publiccode.it.riuso.codiceIPA' } },
-      { match: { 'publiccode.indendedAudience.unsupportedCountries': 'it' } }
+      { match: { 'publiccode.indendedAudience.unsupportedCountries': 'IT' } }
     );
   }
 
   const query = {
     bool: {
       filter: buildFilter(filters),
-      must,
+      must: [{ bool: { should } }, ...must],
       must_not,
+      should,
     },
   };
   return await executeQuery({ query, sort: buildSort(sortBy), from, size });
@@ -65,6 +75,7 @@ export const queryAllSite = async ({ searchValue, filters, sortBy, from, size })
                   `publiccode.description.${lang}.localizedName^3`,
                   `publiccode.description.${lang}.shortDescription^2`,
                   `publiccode.description.${lang}.longDescription`,
+                  `publiccode.description.${lang}.features`,
                   'html',
                 ],
               },
@@ -136,7 +147,7 @@ const preference = new Date().getTime();
 
 const executeQuery = async ({ query, sort, from, size }) => {
   const params = {
-    index: 'jekyll',
+    index: 'developers_italia_it',
     body: {
       query,
       sort,

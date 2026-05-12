@@ -12,7 +12,7 @@ const useStyles = createUseStyles({
     fontSize: '0.9rem',
   },
   item: {
-    composes: 'row no-gutters align-items-center',
+    composes: 'd-flex align-items-center',
     fontSize: '1.2rem',
     fontWeight: '500',
     color: '#656566',

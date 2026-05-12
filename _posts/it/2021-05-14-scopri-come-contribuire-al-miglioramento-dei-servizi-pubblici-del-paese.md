@@ -6,10 +6,11 @@ date: 2021-05-17 10:00:00 +0100
 tags: ogp wizard designers community guida partecipazione
 categories: news
 author: Riccardo Iaconelli
+nickname: ruphy
 image: /assets/icons/logo-it.png
 locale: it
 ---
-Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. È questo l’obiettivo della **[Settimana Aperta della Pubblica Amministrazione](http://open.gov.it/2021/04/27/opengov-week-settimana-dellamministrazione-aperta-dal-17-al-21-maggio-a-livello-mondiale/)** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’[Open Gov Week](https://www.opengovweek.org/).
+Chiamare a raccolta tutte le persone che a vario titolo e nelle modalità più diverse si impegnano o si vogliono impegnare a rendere la pubblica amministrazione italiana un luogo più aperto al confronto, più trasparente per i cittadini e più aperto all’innovazione. È questo l’obiettivo della **[Settimana Aperta della Pubblica Amministrazione](https://open.gov.it/2021/04/27/opengov-week-settimana-dellamministrazione-aperta-dal-17-al-21-maggio-a-livello-mondiale/)** (SAA), iniziativa promossa e coordinata dal Dipartimento della Funzione Pubblica nell’ambito della partecipazione italiana all’[Open Gov Week](https://www.opengovweek.org/).
 
 L’evento consiste in cinque giornate (dal 17 al 21 maggio 2021) dedicate a sviluppare la cultura e la pratica della trasparenza, della partecipazione e dell’accountability sia nelle amministrazioni pubbliche che nella società.
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import PropTypes from 'prop-types';
 import { createUseStyles } from 'react-jss';
@@ -23,62 +23,69 @@ const useStyles = createUseStyles({
     marginBottom: '0px',
     paddingTop: '1px',
     paddingBottom: '8px',
-    textTransform: 'capitalize',
     userSelect: 'none',
   },
 });
 
-const getCount = (filterValues) => Object.values(filterValues).flat().length;
+const getCount = (filterValues) =>
+  Object.values(filterValues)
+    .flat()
+    .filter((v) => v).length;
 
-export const CatalogueFilters = React.memo(({ title, filters, defaultValues = {}, onChange, radio = false, name }) => {
-  const [selectedFiltersCount, setSelectedFiltersCount] = useState(getCount(defaultValues));
-  const [showAll, setShowAll] = useState(false);
+export const CatalogueFilters = React.memo(
+  ({ title, filters, defaultValues = {}, onChange, radio = false, capitalize = true, name }) => {
+    const [selectedFiltersCount, setSelectedFiltersCount] = useState(getCount(defaultValues));
+    const [showAll, setShowAll] = useState(false);
 
-  const classes = useStyles(showAll);
-  const { register, getValues } = useForm({
-    defaultValues,
-  });
+    const classes = useStyles(showAll);
+    const { register, watch } = useForm({
+      defaultValues,
+    });
 
-  const updateCounter = () => setSelectedFiltersCount(getCount(getValues()));
+    const toogleShowAll = () => {
+      setShowAll(!showAll);
+    };
 
-  const handleOnChangeFilter = () => {
-    updateCounter();
-    const values = getValues();
-    onChange(values[name]);
-  };
+    useEffect(() => {
+      const subscription = watch((value, { name }) => {
+        setSelectedFiltersCount(getCount(value[name]));
+        onChange(value[name]);
+      });
+      return () => subscription.unsubscribe();
+    }, [name, watch, setSelectedFiltersCount, onChange]);
 
-  const toogleShowAll = () => {
-    setShowAll(!showAll);
-  };
-
-  return (
-    <>
-      <div className={classes.groupContainer}>
-        <CatalogueFiltersTitle
-          title={title}
-          counter={selectedFiltersCount}
-          showCollapsableIcon={filters.length > 10}
-          onToogleExpandCollapse={toogleShowAll}
-        />
-        {filters.map(([key, value]) => (
-          <label role="button" key={key} className={classes.label}>
-            <input
-              alt={value}
+    return (
+      <>
+        <div className={classes.groupContainer}>
+          <CatalogueFiltersTitle
+            title={title}
+            counter={radio ? 0 : selectedFiltersCount}
+            showCollapsableIcon={filters.length > 5}
+            onToogleExpandCollapse={toogleShowAll}
+          />
+          {filters.map(([key, value]) => (
+            <label
               role="button"
-              className={classes.checkbox}
-              type={radio ? 'radio' : 'checkbox'}
-              name={name}
-              value={key}
-              ref={register}
-              onChange={handleOnChangeFilter}
-            />
-            {value}
-          </label>
-        ))}
-      </div>
-    </>
-  );
-});
+              key={key}
+              className={classes.label}
+              style={{ textTransform: capitalize ? 'capitalize' : '' }}
+            >
+              <input
+                alt={value}
+                role="button"
+                className={classes.checkbox}
+                type={radio ? 'radio' : 'checkbox'}
+                value={key}
+                {...register(name)}
+              />
+              {value}
+            </label>
+          ))}
+        </div>
+      </>
+    );
+  }
+);
 
 CatalogueFilters.propTypes = {
   defaultValues: PropTypes.object,
@@ -86,6 +93,7 @@ CatalogueFilters.propTypes = {
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   radio: PropTypes.bool,
+  capitalize: PropTypes.bool,
   title: PropTypes.string.isRequired,
 };
 

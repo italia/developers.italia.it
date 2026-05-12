@@ -1,7 +1,7 @@
 <article class="newscard {{include.classes}} {% if include.flat != true %}newscard--w-shadow{% endif %}">
   <div class="d-flex newscard__top py-2 ">
     {% if include.date %}
-    <time datetime="{{ include.date | date_to_xmlschema }}" class="ml-auto">
+    <time datetime="{{ include.date | date_to_xmlschema }}" class="ms-auto">
       {{ include.date | localize: active_lang, ":short_date" }}
     </time>
     {% endif %}
@@ -13,24 +13,34 @@
     </a>
   </figure>
   {% endif %}
-  <h1 class="pr-0 pr-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
+  <h2 class="h1 pe-0 pe-md-2"><a href="{{ include.link }}">{{ include.title }}</a>
     {% if include.comingsoon %}
-    <span class="badge badge-secondary">{{ t.coming_soon }}</span>
+    <span class="badge bg-secondary">{{ t.coming_soon }}</span>
     {% endif %}
-  </h1>
-  <main class="font-serif">
+  </h2>
+  <main class="font-sans-serif">
     {% if include.text != '' %}
     {{ include.text }}
     {% endif %}
   </main>
   <div class="py-2 mt-auto d-flex w-100">
     {% if include.author %}
-    <div class="newscard__author font-serif ">
-      <span>{{ t.by }} {{ include.author }}</span>
+    {% assign p = site.data.people[include.nickname] %}
+    <div class="d-flex align-items-center" style="gap: 1rem;">
+      <div class="avatar avatar-primary size-lg outline-border">
+        {% if p %}
+        <img src="{{p.pic}}" alt="{{ t.profile_image }} {{ p.name }}" class="img-fluid">
+        {% else %}
+        <p aria-hidden="true">{{ include.author| slice: 0 }}</p>
+        {% endif %}
+      </div>
+      <div class="newscard__author font-sans-serif ">
+        <span>{{ t.by }} {{ include.author }}</span>
+      </div>
     </div>
     {% endif %}
     {% if include.cta %}
-    <div class="newscard__cta ml-auto ">
+    <div class="newscard__cta ms-auto ">
       <a href="{{include.cta.url}}" title="{{include.cta.label}}">{{include.cta.label}}</a>
     </div>
     {% endif %}

@@ -6,6 +6,7 @@ date: 2021-03-31 10:00:00 +0100
 tags: community sviluppo developers opensource software inps spid
 categories: news
 author: Riccardo Iaconelli
+nickname: ruphy
 image: /assets/icons/logo-it.png
 locale: it
 ref:

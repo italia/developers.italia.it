@@ -1,0 +1,48 @@
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      - run: npm ci --legacy-peer-deps
+
+      - run: make download-data
+      - run: make jekyll-build
+        env:
+           ELASTICSEARCH_PASS: ${{ secrets.ELASTICSEARCH_PASS }}
+           ELASTICSEARCH_USER: ${{ secrets.ELASTICSEARCH_USER }}
+           ELASTICSEARCH_URL: ${{ vars.ELASTICSEARCH_URL }}
+           ELASTICSEARCH_FRONTEND_URL: ${{ vars.ELASTICSEARCH_FRONTEND_URL }}
+
+      - run: cp -r .well-known _site/
+
+        # Make GitHub skip its Jekyll support and serve all the files
+        # we built with our own Jekyll. This includes dotfiles.
+      - run: touch _site/.nojekyll
+
+      - run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+
+          echo developers.italia.it > _site/CNAME
+          npm run deploy -- --dotfiles -m "Automated deployment: ${GITHUB_SHA} [ci skip]"
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

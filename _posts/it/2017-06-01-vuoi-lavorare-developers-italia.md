@@ -6,6 +6,7 @@ date:   2017-06-01 17:00:00 +0100
 tags: progetti sviluppatori
 categories: news
 author: Giovanni Bajo
+nickname: rasky
 image: /assets/icons/logo-it.png
 locale: it
 redirect_from:

@@ -17,19 +17,23 @@
 
   <div class="container">
     <div class="row">
-      <div class="Header-logo col-1 col-md-1 m-auto" aria-hidden="true">
+      <div class="Header-logo d-none d-md-block col-1 col-md-1 m-auto" aria-hidden="true">
         {% if page.website %}
         <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" tabindex="-1">
         {% endif %}
           {% if page.emblem %}
           <img src="{{ page.emblem }}" alt="">
+          {% else %}
+          <svg class="icon icon-xl">
+            <use xlink:href="/assets/svg/sprites.svg#it-pa"></use>
+          </svg>
           {% endif %}
         {% if page.website %}
         </a>
         {% endif %}
       </div>
 
-      <div class="Header-title col-md-7 col-9 mr-auto">
+      <div class="Header-title col-md-7 col-9 me-auto">
         <h1 class="Header-titleLink Header-titleLink--pa">
           {% if page.website %}
           <a class="text-900" href="{{ page.website }}" target="_blank" rel="noopener noreferrer">

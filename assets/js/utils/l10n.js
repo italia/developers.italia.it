@@ -4,9 +4,11 @@
  */
 import yaml from 'js-yaml';
 import { SOFTWARE_OPEN, SOFTWARE_REUSE } from './constants.js';
-import softwareCategoriesYml from '!raw-loader!../../../_data/crawler/software_categories.yml';
+import softwareCategoriesYml from '!raw-loader!../../../_data/publiccode_categories.yml';
 import softwareDevelopmentStatusYml from '!raw-loader!../../../_data/development_status.yml';
-import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/crawler/software_scopes.yml';
+import softwareIntendedAudiencesYml from '!raw-loader!../../../_data/publiccode_scopes.yml';
+import softwarePNRRTargetsYml from '!raw-loader!../../../_data/pnrr_targets.yml';
+import softwarePNRRMeasuresYml from '!raw-loader!../../../_data/pnrr_measures.yml';
 import l10nYml from '!raw-loader!../../../_data/l10n.yml';
 
 export const lang = window.lang;
@@ -21,18 +23,45 @@ export const softwareTypes = [
 
 export const getSoftwareCategories = () => {
   const softwareCategories = yaml.load(softwareCategoriesYml);
-  return softwareCategories.map((value) => [value, value.replace(/-/gi, ' ')]);
+  const categoriesMap = Object.values(softwareCategories).map((value) => [
+    value,
+    l10NLabels.publiccode.categories[value],
+  ]);
+  return categoriesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
 };
 
 export const getSoftwareDevelopmentStatuses = () => {
   const softwareDevelopmentStatus = yaml.load(softwareDevelopmentStatusYml);
   return Object.entries(softwareDevelopmentStatus).reduce((acc, [key, value]) => {
     acc.push([key, value[lang]]);
-    return acc;
+    return acc.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
   }, []);
 };
 
 export const getSoftwareIntendedAudiences = () => {
   const softwareIntendedAudiences = yaml.load(softwareIntendedAudiencesYml);
-  return softwareIntendedAudiences.map((value) => [value, value.replace(/-/gi, ' ')]);
+  const audiencesMap = Object.values(softwareIntendedAudiences).map((value) => [
+    value,
+    l10NLabels.publiccode.scopes[value],
+  ]);
+  return audiencesMap.sort((a, b) => (a[1].toLowerCase() > b[1].toLowerCase() ? 1 : -1));
+};
+
+export const softwarePNRR = [['1', l10NLabels.software.pnrr]];
+
+export const getSoftwarePNRRTargets = () => {
+  const PNRRTargets = yaml.load(softwarePNRRTargetsYml);
+  return PNRRTargets.map((value) => [value, value.replace(/-/gi, ' ')]);
+};
+
+export const getSoftwarePNRRMeasures = () => {
+  const PNRRMeasures = yaml.load(softwarePNRRMeasuresYml);
+  return Object.entries(PNRRMeasures).reduce((acc, [key, value]) => {
+    if (value) {
+      acc.push([key, `${key}-${value}`]);
+    } else {
+      acc.push([key, `${key}`]);
+    }
+    return acc;
+  }, []);
 };

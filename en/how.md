@@ -1,6 +1,6 @@
 ---
-title: How to use it 
-lang: en 
+title: How to use it
+lang: en
 ref:
   it: /it/come-lo-uso
 layout: internal-simple
@@ -15,7 +15,7 @@ alternate-blocks:
       image: /assets/images/come-lo-uso-1.svg
       buttons:
         - label: "Discover the enabling platforms"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/en/platforms'
     - title: "I want to search some software already used by other
       Administrations"
@@ -26,21 +26,21 @@ alternate-blocks:
       image: /assets/images/come-lo-uso-2.svg
       buttons:
         - label: "Discover public software"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: '/en/software'
         - label: "Read more about reuse"
-          class: btn btn-outline-primary
+          class: btn btn-outline-primary w-100
           url: '/en/reuse'
     - title: "I want to integrate with a public service through APIs"
-      text: "The API catalogue contains a collection of public services
-      accessible throughout interoperability, together with the relative documentation
-      and the OpenAPI descriptions, in order to allow building modern digital
-      public services."
+      text: |
+        You will find all the information, resources, and available channels on how to integrate the
+        services of public administrations through APIs in the pages dedicated to Interoperability
+        and the National Digital Data Platform (PDND),
       image: /assets/images/come-lo-uso-3.svg
       buttons:
-        - label: "Discover public APIs"
-          class: btn btn-primary
-          url: '/en/api'
+        - label: Discover the Interoperability ecosystem
+          class: btn btn-primary w-100
+          url: '/it/interoperabilita'
     - title: "I want to publish my Administration software as open source"
       text: "All the administrations are required by law to release inside
       Developers Italia the software they commissioned. The
@@ -51,7 +51,7 @@ alternate-blocks:
       image: /assets/images/come-lo-uso-4.svg
       buttons:
         - label: "Discover more"
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: "/en/reuse/publication"
 ---
 

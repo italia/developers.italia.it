@@ -6,9 +6,9 @@
 <ul class="{{class}}">
     {% for item in network_links %}
     {% assign link = item | last%}
-    <li class="{{liclass}} {{link.class}} {% if forloop.first %}first-delimiter{%endif%}" >
+    <li>
         {% if link.url %}
-        <a target="_blank" href="{{link.url}}">{{t[link.title]}}</a>
+        <a class="{{link.class}} list-item" target="_blank" href="{{link.url}}">{{t[link.title]}}</a>
         {% else %}
         <span>{{t[link.title]}}</span>
         {% endif %}

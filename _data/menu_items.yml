@@ -9,9 +9,10 @@ it:
     active_by_firstlevel:
       - 'software'
       - 'riuso'
-  - title: API
-    url: '/it/api'
-    active_by_firstlevel: 'api'
+  - title: Interoperabilità
+    url: '/it/interoperabilita'
+    active_by_firstlevel:
+      - 'interoperabilita'
   - title: Come lo uso
     url: '/it/come-lo-uso'
     active_by_firstlevel: 'come-lo-uso'
@@ -36,9 +37,9 @@ en:
     active_by_firstlevel:
       - 'software'
       - 'reuse'
-  - title: API
-    url: '/en/api'
-    active_by_firstlevel: 'api'
+  - title: Interoperability
+    url: '/en/interoperability'
+    active_by_firstlevel: 'interoperability'
   - title: How to use it
     url: '/en/how'
     active_by_firstlevel: 'how'

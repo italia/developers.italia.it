@@ -6,6 +6,7 @@ date: 2021-03-01 10:00:00 +0100
 tags: community sviluppatori developers opensource software designers
 categories: news
 author: Michela Gabrieli
+nickname: michela
 image: /assets/icons/logo-it.png
 locale: it
 ref:

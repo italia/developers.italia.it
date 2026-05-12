@@ -7,17 +7,13 @@
 {% else %}
 {% assign counter = 1 %}
 {% for item in list %}
-<div id="collapseDiv{{ counter }}" class="collapse-div" role="tablist">
-  <div class="collapse-header">
-    <button data-toggle="collapse" data-target="#collapse{{ counter }}" aria-expanded="false" aria-controls="collapse{{ counter }}">
-      {{ counter }}. {{ item[1].question }}
-    </button>
-  </div>
-  <div id="collapse{{ counter }}" class="collapse" role="tabpanel" aria-labelledby="heading{{ counter }}">
-    <div class="collapse-body">
-      {{ item[1].answer }}
-    </div>
-  </div>
+<div>
+  <h3 id="{{ counter }}">
+    <a href="#{{counter}}">{{ item[1].question }}</a>
+  </h3>
+  <p class="pb-3">
+    {{ item[1].answer }}
+  </p>
 </div>
 {% capture counter %}{{ counter | plus: 1 }}{% endcapture %}
 {% endfor %}

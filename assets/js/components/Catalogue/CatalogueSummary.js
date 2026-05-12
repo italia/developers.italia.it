@@ -26,7 +26,7 @@ export const CatalogueSummary = React.memo(({ itemsCount, totalAppliedFilters })
       <div className="row">
         <div className="row col-12 py-3 px-2 align-items-center text-center">
           <div
-            className="col-3 font-weight-bold text-left"
+            className="col-3 fw-bold text-start"
             data-testid="counter-summary"
           >{`${itemsCount} ${l10NLabels.software.results}`}</div>
           <div className="col-3 col-md-2 d-lg-none">

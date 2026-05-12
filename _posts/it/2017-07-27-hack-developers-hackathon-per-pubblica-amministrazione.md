@@ -6,6 +6,7 @@ date:   2017-07-27 17:00:00 +0100
 tags: hackathon eventi sviluppatori
 categories: news
 author: Giovanni Bajo
+nickname: rasky
 image: /assets/icons/logo-it.png
 locale: it
 redirect_from:
@@ -20,7 +21,7 @@ Durante quel weekend tutte le tech community italiane e gli sviluppatori potrann
 
 All'hackathon si può partecipare in due modi:
 
- * [iscrivendosi come partecipante](http://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&id=32376a094a)
+ * [iscrivendosi come partecipante](https://codemotion.us2.list-manage.com/subscribe?u=a31186bb93e8a168030b2c424&id=32376a094a)
 
 oppure
 

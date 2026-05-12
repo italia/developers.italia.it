@@ -1,0 +1,25 @@
+it:
+  - name: "issue_tracker"
+    title: "Issue Tracker"
+    icon: "it-github"
+    
+  - name: "forum"
+    title: "Entra nel forum"
+    icon: "it-horn"
+    
+  - name: "sign_up_slack"
+    title: "Registrati su Slack"
+    secondary: true
+
+en:
+  - name: "issue_tracker"
+    title: "Issue Tracker"
+    icon: "it-github"
+    
+  - name: "forum"
+    title: "Enter the forum"
+    icon: "it-horn"
+    
+  - name: "sign_up_slack"
+    title: "Register on Slack"
+    secondary: true

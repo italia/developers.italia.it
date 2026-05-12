@@ -35,8 +35,8 @@ export const CatalogueFiltersTitle = React.memo(({ title, counter, showCollapsab
         <div className="d-flex align-items-center">
           <span>{title}</span>
           {counter > 0 && (
-            <Badge className="ml-2" tag="span" pill color="primary" data-testid="counter">
-              {counter}
+            <Badge className="ms-2" tag="span" pill color="primary">
+              <span data-testid="counter">{counter}</span>
             </Badge>
           )}
         </div>

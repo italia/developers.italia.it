@@ -6,6 +6,7 @@ date:   2017-11-08 10:00:00 +0100
 tags: hackathon eventi sviluppatori
 categories: news
 author: Giovanni Bajo
+nickname: rasky
 image: /assets/icons/logo-it.png
 locale: it
 redirect_from:

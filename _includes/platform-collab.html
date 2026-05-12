@@ -1,0 +1,35 @@
+{% assign collab_links = site.data.collab_links[active_lang] %}
+{% assign linksLen = page.collab.links | size %}
+{% assign colSize = 12 | divided_by: linksLen %}
+
+<section id="collab" class="project__collab">
+  <p class="pb-3">
+    {{ page.collab.description }}
+  </p>
+  <div class="row">
+    {% for link in page.collab.links %}
+      {% if link.title %}
+        {% assign link_title = link.title %}
+        {% assign link_icon = link.icon | default: "" %}
+        {% assign link_secondary = link.secondary | default: false %}
+      {% else %}
+        {% assign collab_link = collab_links | where: "name", link.name | first %}
+        {% if collab_link %}
+          {% assign link_title = collab_link.title %}
+          {% assign link_icon = collab_link.icon | default: "" %}
+          {% assign link_secondary = collab_link.secondary | default: false %}
+        {% endif %}
+      {% endif %}
+      <div class="col-12 col-md-{{colSize}}">
+        <a class="btn btn-lg btn-icon {% if link_secondary %}btn-white btn-outline-primary{% else %}btn-primary{% endif %} mr-2 mb-2 d-flex align-items-center" href="{{ link.url }}" target="_blank">
+          <span>{{ link_title }}</span>
+          {% if link_icon != "" %}
+          <svg class="icon ms-1 {% if link_secondary %}icon-primary{% else %}icon-white{% endif %}">
+            <use xlink:href="/assets/svg/sprites.svg#{{ link_icon }}"></use>
+          </svg>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

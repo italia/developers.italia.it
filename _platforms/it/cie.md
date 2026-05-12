@@ -25,10 +25,10 @@ resources:
   - Documentazione:
     - title: Caratteristiche tecniche della carta
       icon: link
-      url: http://www.cartaidentita.interno.gov.it/caratteristiche-del-documento/
+      url: https://www.cartaidentita.interno.gov.it/la-carta/caratteristiche-del-documento/
     - title: Specifiche del microprocessore
       icon: file
-      url: http://www.cartaidentita.interno.gov.it/wp-content/uploads/2016/07/cie_3.0_-_specifiche_chip.pdf
+      url: https://www.cartaidentita.interno.gov.it/downloads/2021/03/cie_3.0_-_specifiche_chip.pdf
     - title: Manuale Tecnico
       icon: link
       url: https://docs.italia.it/italia/cie/cie-manuale-tecnico-docs/
@@ -102,11 +102,37 @@ resources:
       icon: github
       url: https://github.com/italia/cieid-ios-sdk
       desc: Utilizzando questo kit gli sviluppatori di applicazioni terze iOS possono integrare nella propria app l'autenticazione mediante la cartà d'identità elettronica (CIE 3.0).
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML basato su SDK per PHP spid-php
+  - SDK OIDC:
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
+  - Proxy:
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML basato su SDK per PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC basato su SDK per PHP spid-cie-oidc-php
+collab:
+  description: Abbiamo creato degli strumenti di collaborazione a vostra disposizione, tra cui un issue tracker e un forum dedicato alla discussione delle problematiche di integrazione.
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/cie"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C75U26411
 ---
 
 ## Intro
 
-La [Carta d'Identità Elettronica](http://www.cartaidentita.interno.gov.it){:target="_blank"}
+La [Carta d'Identità Elettronica](https://www.cartaidentita.interno.gov.it){:target="_blank"}
 (CIE) versione 3.0 viene già **distribuita in oltre il 90% del territorio italiano** a chiunque chieda o rinnovi la carta d'identità.
 
 La CIE non è solo un documento d’identità, ma una tecnologia utile per la
@@ -132,9 +158,6 @@ Tutto ciò verrà reso possibile grazie alle funzionalità di identificazione
 e sicurezza contenute nel microprocessore, le cui specifiche sono
 aperte e disponibili anche in questa pagina.
 
-<a class="btn btn-primary" href="https://forum.italia.it/c/cie" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C75U26411" target="_blank"><i class="it-comment" /> Dialoga su Slack (#cie)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
-
 ## Dati presenti sulla carta
 
 La CIE contiene le seguenti informazioni, che sono accessibili secondo diverse modalità e livelli di protezione:
@@ -144,6 +167,6 @@ La CIE contiene le seguenti informazioni, che sono accessibili secondo diverse m
 - **Dati accessibili con PIN:** certificato client
 - **Dati accessibili solo a forze dell’ordine:** impronte digitali
 
-Per maggiori dettagli consultare [questa tabella](https://docs.google.com/spreadsheets/d/1mYQsAFIJ_TKLW3raaq0tZWpG8nr9dU4SpoJzH2SAHxM/edit?usp=sharing){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
+Per maggiori dettagli consultare [questa tabella](/assets/files/CIE-SDK-overview.ods){:target="_blank"}. Le risorse open source (SDK, esempi) presenti in questa pagina consentono di integrare la lettura di queste informazioni nelle proprie applicazioni.
 
 ![](/assets/images/cie/cie_detail.png)

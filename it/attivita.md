@@ -13,7 +13,7 @@ Tutto lo sviluppo è su GitHub
 [@italia](https://github.com/italia "Italia su Github") e
 i progetti sono tanti, così come le tecnologie che usano.
 Questa pagina raccoglie le attività aperte marcate con
-<span class="badge badge-secondary">help wanted</span>
+<span class="badge bg-secondary">help wanted</span>
 per trovare quello che ti può interessare con più facilità.
 
 {:.u-textWeight-400 .u-margin-top-l }

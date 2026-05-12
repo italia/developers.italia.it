@@ -11,6 +11,14 @@ ref:
 highlight: false
 layout: platform
 github_team: docs-italia
+collab:
+  description: Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
+  links:
+  - name: forum
+    url: "https://forum.italia.it/"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9T4ELD4G
 ---
 
 ## Intro
@@ -19,7 +27,7 @@ github_team: docs-italia
 
 Docs Italia semplifica drasticamente il processo di pubblicazione. I documenti utilizzano un version control system come sorgente dei dati, favorendo una scrittura collaborativa e aprendo possibilità di analisi, visualizzazione e confronto tra versioni da parte della comunità.
 
-Lo strumento di generazione dei documenti su Docs Italia è [Sphinx](http://www.sphinx-doc.org/en/master/#){:target="_blank"}, fornendo supporto a vari linguaggi tra cui _RestructuredText_ e _MarkDown_. Stiamo lavorando per potenziare tutti gli aspetti della piattaforma sulla base delle esigenze emerse in questo primo anno di sperimentazione: il convertitore di documenti, il flusso di pubblicazione e le funzioni di ricerca e di navigazione. Utilizziamo [Pandoc](https://pandoc.org/){:target="_blank"} per la conversione dei documenti dai formati più diffusi, quali `.docx` o `.odt`.
+Lo strumento di generazione dei documenti su Docs Italia è [Sphinx](https://www.sphinx-doc.org/en/master/#){:target="_blank"}, fornendo supporto a vari linguaggi tra cui _RestructuredText_ e _MarkDown_. Stiamo lavorando per potenziare tutti gli aspetti della piattaforma sulla base delle esigenze emerse in questo primo anno di sperimentazione: il convertitore di documenti, il flusso di pubblicazione e le funzioni di ricerca e di navigazione. Utilizziamo [Pandoc](https://pandoc.org/){:target="_blank"} per la conversione dei documenti dai formati più diffusi, quali `.docx` o `.odt`.
 
 Una prima versione del progetto Docs Italia è stata completata nel corso del 2018, e molte nuove funzionalità sono previste nel corso dei prossimi mesi. La piattaforma è basata su un progetto open-source molto conosciuto, [ReadTheDocs](https://readthedocs.org/){:target="_blank"}, che ha fornito le fondamenta per una gestione sicura delle identità delle amministrazioni e dei redattori dei documenti gestiti dalla piattaforma.
 
@@ -34,11 +42,6 @@ Queste sono le principali attività che stiamo ipotizzando per il prossimo futur
 * Semplificazione del processo di onboarding e del backoffice di amministrazione/pubblicazione.
 * Consolidamento dell'**infrastruttura** e della gestione dei log, miglioramento delle strategie per il ripristino in caso di incidenti.
 * Gestione degli Enti in modalità "whitelabel": vogliamo dare la possibilità ad ogni Ente presente su Docs Italia di personalizzare la propria pagina ed usare **domini esterni con URL personalizzati** e fornire la possibilità di **includere contenuti** di Docs Italia sul proprio sito.
-
-Se hai delle idee per il progetto, o pensi di poter dare una mano su tematiche descritte nella roadmap, contattaci nel forum o su Slack. Chiunque può contribuire!
-
-<a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Entra nel forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Dialoga su Slack (#docs-italia)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(registrati su Slack)</small></a>
 
 ## Codice sorgente
 
@@ -65,7 +68,7 @@ Ogni documento visibile su [Docs Italia](https://docs.italia.it/){:target="_blan
 
 ## Documentazione
 
-La documentazione di Docs Italia è ovviamente pubblicata su Docs Italia stesso! ;-)
+La documentazione di Docs Italia è ovviamente pubblicata su Docs Italia stesso!
 
 Un documento "speciale" è infatti la **Guida a Docs Italia**, che spiega come sia possibile per qualsiasi Ente pubblico creare un'utenza da redattore e pubblicare un documento. Se vuoi aggiungere un documento su Docs Italia, puoi sicuramente partire da qui:
 

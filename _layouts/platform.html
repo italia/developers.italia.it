@@ -21,7 +21,9 @@ Still to-do:
       <div class="col-md-9">
         <div class="project__header">
           <h1 class="d-inline h1">{{ page.title }}</h1>
+          {% if page.subtitle %}
           <h2 class="d-inline h1">{{ page.subtitle }}</h2>
+          {% endif %}
           {% if page.description %}
           <p class="lead pt-3 pb-3 project__desc">
             {{page.description}}
@@ -65,8 +67,10 @@ Still to-do:
           {% assign platform = split[2] %}
 
           <div class="col-12 col-lg-4">
+            {% unless page.hide_activities %}
             <span class="d-block">{{ t.project_issues }}</span>
             <a href="/{{ active_lang }}/{{ page_name }}?platform={{ platform }}">{{ t.project_issues_go }} →</a>
+            {% endunless %}
           </div>
         </div>
       </div>
@@ -83,35 +87,43 @@ Still to-do:
 <section class="project__content {% if page.resources %}with-resources{%endif%}">
   <div class="container d-flex justify-content-center">
 
-    <div class="project__maincontent col-md-10">
+    <div class="project__maincontent col-12 col-md-10">
       {{ content }}
 
+      {% if page.collab %}
+        <h2>{{t.project_collab}}</h2>
+        {% include platform-collab.html %}
+      {% endif %}
+
       {% if page.resources %}
-      <h2>{{t.project_risorse}}</h2>
+        {% unless page.resources_hide_title %}
+          <h2>{{t.project_risorse}}</h2>
+        {% endunless %}
       {% include platform-resources.html %}
       {% endif %}
 
-      {% comment %}
       {% if page.newsletterdata %}
       {% include banner-newsletter.html newsletterdata=page.newsletterdata %}
       {% endif %}
-      {% endcomment %}
     </div>
 
     {% capture toc %}
     {% toc %}
+    {% if page.collab %}
+    <ul class="section-nav">
+      <li class="toc-entry toc-h2"><a href="#collab">{{ t.project_collab }}</a></li>
+    </ul>
+    {% endif %}
     {% if page.resources %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#resources">{{ page.resources | objects_keys | join: ", " }}</a></li>
     </ul>
     {% endif %}
-    {% comment %}
     {% if page.newsletterdata %}
     <ul class="section-nav">
       <li class="toc-entry toc-h2"><a href="#newsletter">Newsletter</a></li>
     </ul>
     {% endif %}
-    {% endcomment %}
     {% endcapture %}
     {% include sideblock.html image=page.logo content=toc external_website=page.external_website title=page.title %}
 

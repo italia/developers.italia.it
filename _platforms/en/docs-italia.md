@@ -12,6 +12,14 @@ highlight: true
 order: 5
 layout: platform
 github_team: docs-italia
+collab:
+  description: If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
+  links:
+  - name: forum
+    url: "https://forum.italia.it/"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/archives/C9T4ELD4G
 ---
 
 ## Intro
@@ -20,7 +28,7 @@ github_team: docs-italia
 
 Docs Italia simplifies the publishing process: documents use a version control system as data source, encouraging collaborative editing and allowing the community to perform analysis and comparisons between different versions.
 
-The generation tool behind Docs Italia is [Sphinx](http://www.sphinx-doc.org/en/master/#){:target="_blank"}, which supports several markup languages among which _RestructuredText_ and _MarkDown_. We're working for improving the platform according to the needs detected during the first test year: the document converter, the publishing flow and search/browsing tools. We use [Pandoc](https://pandoc.org/){:target="_blank"} for converting documents from the most used formats, like `.docx` and `.odt`.
+The generation tool behind Docs Italia is [Sphinx](https://www.sphinx-doc.org/en/master/#){:target="_blank"}, which supports several markup languages among which _RestructuredText_ and _MarkDown_. We're working for improving the platform according to the needs detected during the first test year: the document converter, the publishing flow and search/browsing tools. We use [Pandoc](https://pandoc.org/){:target="_blank"} for converting documents from the most used formats, like `.docx` and `.odt`.
 
 A first relase of Docs Italia was completed during 2018, and more features are scheduled for the next months. he platform is based on the well known open source project [ReadTheDocs](https://readthedocs.org/){:target="_blank"}, which serves as a basis for secure identity management of organizations and editors.
 
@@ -35,11 +43,6 @@ These are the main tasks scheduled for the near future:
 * Simplifcation of the onboarding process and the administration/publishing backoffice.
 * Improvement of the **infrastructure** and log handling, and improvement of disaster recovery strategy.
 * Whitelabel features for organizations: we want to enable organizations to customize their page and use their own domains as well as embed contents from Docs Italia in their website.
-
-If you have ideas for this project, or you think you can help about these features, contact us in the forum or in Slack. Everyone can contribute!
-
-<a class="btn btn-primary" href="https://forum.italia.it/" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C9T4ELD4G" target="_blank"><i class="it-comment" /> Chat on Slack (#docs-italia)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>
 
 ## Source code
 
@@ -56,7 +59,7 @@ Il codice sorgente di Docs Italia è diviso in alcuni repository a seconda del d
 - [Pandoc filters](https://github.com/italia/docs-italia-pandoc-filters){:target="_blank"}.
 - [Commands for converting documents](https://github.com/italia/docs-italia-comandi-conversione){:target="_blank"} with Pandoc (in Haskell).
 
-### Documet
+### Document
 
 - A [starter kit](https://github.com/italia/docs-italia-starter-kit){:target="_blank"} containing files for publishing new documents.
 - The [Sphinx theme](https://github.com/italia/docs-italia-theme){:target="_blank"} which is applied by default to documents.
@@ -66,7 +69,7 @@ Each document visible on [Docs Italia](https://docs.italia.it/){:target="_blank"
 
 ## Documentation
 
-Documentation for Docs Italia is published in Docs Italia itself! ;-)
+Documentation for Docs Italia is published in Docs Italia itself!
 
 A special document is the **Docs Italia Guide**, which explains how each public organization can create its account and publish a document. If you want to publish contents on Docs Italia you can start here:
 

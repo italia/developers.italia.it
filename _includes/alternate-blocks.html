@@ -10,7 +10,7 @@
 <section class="alternateblock">
     <div class="container position-relative py-2 py-md-4">
         <div class="row d-flex align-items-center px-4 px-md-0 py-2 py-md-5">
-            
+
             {% if block.image %}
             <div class="{{coldim}} {{colorder[0]}} text-center py-3 py-md-0" >
                 <img src="{{block.image | relative_url}}" alt="{{block.title}}" class="img-fluid">
@@ -19,26 +19,26 @@
                 {%capture coldim %}col{% endcapture %}
             {% endif %}
             <div class="{{coldim}} {{colorder[1]}}" >
-                <h1 {% if thecycle == 'even' %}class="text-md-right"{% endif %}>{{block.title}}</h1>
+                <h2 class="h1 {% if thecycle == 'even' %}text-md-right{% endif %}">{{block.title}}</h2>
                 {% if block.text!=nil%}
-                    <div class="font-serif mt-md-3 mb-md-3 alternateblock__text {% if thecycle == 'even' %}text-md-right{% endif %}">{{block.text | markdownify }}</div>                    
+                    <div class="font-sans-serif mt-md-3 mb-md-3 alternateblock__text {% if thecycle == 'even' %}text-md-right{% endif %}">{{block.text | markdownify }}</div>
                 {% endif %}
                 {% if block.buttons!=nil%}
                     <div class="mt-2 mt-md-4 mb-2 {% if thecycle == 'even' %}text-md-right{% endif %}">
                         {% for button in block.buttons %}
-                            <a href="{{button.url}}" class="{{button.class}} mr-3 mt-2">{{button.label}}</a>
+                            <a href="{{button.url}}" class="{{button.class}} me-3 mt-2">{{button.label}}</a>
                         {% endfor %}
                     </div>
                 {% endif %}
             </div>
         </div>
-        
+
         <div class="vertical-line d-none d-md-block"></div>
         <div class="vertical-line left-25 d-none d-md-block"></div>
         <div class="vertical-line left-50 d-none d-md-block"></div>
         <div class="vertical-line left-75 d-none d-md-block"></div>
         <div class="vertical-line left-100 d-none d-md-block"></div>
-        
+
     </div>
 </section>
 {% endfor %}

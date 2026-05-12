@@ -24,19 +24,19 @@ owners:
       url: https://www.agid.gov.it/
 resources:
   - Documentation:
-    - title: Technical rules (consolidated version)
+    - title: SAML2 Technical rules (consolidated version)
       url: https://docs.italia.it/italia/spid/spid-regole-tecniche
       icon: file
-      desc: The SPID technical rules with all the fixes applied, in an easy to read version published on Docs Italia
+      desc: The SPID SAML2 technical rules with all the fixes applied, in an easy to read version published on Docs Italia
     - title: Identity Providers metadata
       url: https://registry.spid.gov.it/identity-providers
       icon: github
-      desc: SAML Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date
+      desc: SAML2 Metadata of the SPID Identity Providers. Service Providers are required to keep metadata up-to-date
     - title: Forms, regulation and documents
       url: https://www.agid.gov.it/it/piattaforme/spid
       icon: file
       desc: The AGID website contains forms, pricing, regulation and other documents about SPID
-  - SDK:
+  - SAML2 SDKs:
     - title: SDK for PHP (based on SimpleSAMLphp)
       icon: github
       url: https://github.com/italia/spid-php
@@ -49,6 +49,10 @@ resources:
       icon: github
       url: https://github.com/italia/spid-aspnetcore
       desc: <img src="https://img.shields.io/github/issues/italia/spid-aspnetcore" /> <img src="https://img.shields.io/badge/example%20project-ok-green" /> <img src="https://img.shields.io/badge/spid%20button-na-red" /> <img src="https://img.shields.io/badge/spid%20qa-metadata%3Aok%2C%20authnrequest%3Aok%2C%20response%3Aok-blue" /> <img src="https://img.shields.io/github/stars/italia/spid-aspnetcore?style=social" />
+    - title: SDK for NodeJS (Express.js/Passport)
+      icon: github
+      url: https://github.com/random42/passport-spid
+      desc: Native library for integrating SPID in Node/Passport (Typescript/Javascript) applications
     - title: SDK for Express.js
       icon: github
       url: https://github.com/italia/spid-express
@@ -87,7 +91,7 @@ resources:
       desc: Native library for integrating SPID in PHP applications
     - title: SDK for Wordpress
       icon: github
-      url: https://github.com/italia/spid-wordpress
+      url: https://github.com/WPGov/wp-spid-italia
       desc: Native library for integrating SPID in Wordpress (PHP) applications
     - title: SDK for Laravel
       icon: github
@@ -117,6 +121,31 @@ resources:
       url: https://github.com/italia/spid-ansible-shibboleth-example
       icon: github
       title: Example of configuration of Shibboleth with Nginx via an Ansible playbook
+  - OpenID Connect SDKs:
+    - title: SDK for Python (Django) with examples
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-django
+      desc: SPID/CIE OIDC Federation is a suite of Django applications designed to make it easy to build an Openid Connect Federation.
+    - title: SDK for Nodejs with examples
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-nodejs
+      desc: The SPID/CIE OIDC Federation Relying Party, written in Node.js
+    - title: SDK for AspNetCore with examples
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-aspnetcore
+      desc: SPID/CIE OIDC Federation SDK for AspNetCore
+    - title: SDK for PHP with examples
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: SPID/CIE OIDC Federation Relying Party, for PHP
+    - title: SDK for Java with examples
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-java
+      desc: Native library for integrating SPID and CIE OIDC in Java with an example project written in Spring
+    - title: Nimbus Java SDK
+      icon: github
+      url: https://bitbucket.org/connect2id/oauth-2.0-sdk-with-openid-connect-extensions/
+      desc: Comprehensive Java library for developing OAuth 2.0 and OpenID Connect with full support of OIDC Federation.
   - Proxy:
     - title: IdentityPython SATOSA
       icon: github
@@ -134,6 +163,14 @@ resources:
       url: https://github.com/italia/spid-sp-sapspid
       icon: github
       desc: SPID compatible Identity Access Management application developed in Python
+    - title: spid-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-php
+      desc: Proxy SPID/CIE SAML based on SDK for PHP spid-php
+    - title: spid-cie-oidc-php Proxy
+      icon: github
+      url: https://github.com/italia/spid-cie-oidc-php
+      desc: Proxy SPID/CIE OIDC based on SDK for PHP spid-cie-oidc-php
   - Graphic resources:
     - title: "'Enter with SPID' button"
       icon: github
@@ -184,25 +221,33 @@ resources:
       url: https://www.samltool.com
       icon:
       desc: Onelogin SAML2 tools
+collab:
+  description:
+  links:
+  - name: forum
+    url: "https://forum.italia.it/c/spid"
+  - title: "Slack"
+    icon: it-slack
+    url: https://developersitalia.slack.com/messages/C73R3UQE8
 ---
 
 ## Intro
 
 SPID (Public System for Digital Identity) is the solution that allows the Italian citizens to access all online services of the Public Administration with a single Digital Identity (username and password) that can be used from computers, tablets and smartphones.
-Citizens can get SPID through a series of private companies under agreements (known as *Identity Providers*); once the verification procedure is completed (which certifies the identity of the applicant), you are released a set of credentials that can be used on all the websites (called *Service Providers*).
+Citizens can get SPID through a series of private companies under agreements (known as *Identity Providers*); once the verification procedure is completed (which certifies the identity of the applicant), they are released a set of credentials that can be used on all the websites (called *Service Providers*).
 
 **Advantages for citizens:**
 
-- A single set of credentials for all public websites (and private websites too), secure and easy to remember
-- The verification process, after which the credentials are released, needs to be done only once
-- SPID is free
+- A single set of credentials for all public websites (and private websites too), secure and easy to remember.
+- The verification process, after which the credentials are released, needs to be done only once.
+- SPID is free.
 
 **Advantages for Service Providers:**
 
-- Secure and certified identification of users
-- No need to handle custom registration/verification processes, thus reduced costs
-- Qualified attributes (birth date/place, gender, e-mail, phone etc.)
-- Other attributes already populated by users (home address etc.)
+- Secure and certified identification of users.
+- No need to handle custom registration/verification processes, thus reduced costs.
+- Qualified attributes (birth date/place, gender, e-mail, phone etc.).
+- Other attributes already populated by users (home address etc.).
 
 SPID can be integrated in the websites of the Public Administration, but also on private websites. In the first case the service is free, while for privates fees are applied. There are several advantages for including SPID in private websites: banks and insurance companies, for instance, can easily recognize users who want to open an account just by accepting their SPID login, without any additional verification process.
 
@@ -228,8 +273,3 @@ The Service Provider must update the Identity Provider metadata whenever they ar
 ## How to contribute
 
 **The Developers Italia community has created a wide range of ready-to-use open source components (SDK, code examples, IAM Proxy, tools).** Anyone can contribute to the improvement of existing components or help develop some new. It is important to keep in mind that the resources made available to the community are not intended as regulations but only as support, example and supplementary help for developers.
-
-## Get in touch
-
-<a class="btn btn-primary" href="https://forum.italia.it/c/spid" target="_blank"><i class="it-horn" /> Enter the forum</a>
-<a class="btn btn-primary" href="https://developersitalia.slack.com/messages/C73R3UQE8" target="_blank"><i class="it-comment" /> Chat on Slack (#spid)</a> <a href="https://slack.developers.italia.it/" target="_blank"><small>(sign up)</small></a>

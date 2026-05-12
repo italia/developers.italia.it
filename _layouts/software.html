@@ -11,9 +11,8 @@ layout: default
 {% include linklist.html items=subnav dynamic=true %}
 {% endcomment %}
 
-{% assign recent_sw   = site.data.crawler.softwares | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
-{% assign active_sw   = site.data.crawler.softwares | sort: "vitalityScore" | reverse | slice: 0, 4 %}
-{% assign efficient_pas   = site.data.crawler.softwares | where_exp: "item", "item.publiccode.it.riuso.codiceIPA != nil" | group_by: "publiccode.it.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 4 %}
+{% assign recent_sw = site.data.crawler.software | sort: "publiccode.releaseDate" | reverse | slice: 0, 4 %}
+{% assign efficient_pas = site.data.crawler.software | where_exp: "item", "item.publiccode.IT.riuso.codiceIPA != nil" | group_by: "publiccode.IT.riuso.codiceIPA" | sort: "size" | reverse | slice: 0, 3 %}
 
 <div class="container">
   <div class="intro mt-5">
@@ -28,6 +27,8 @@ layout: default
     </div>
   </div>
 </div>
+
+{% include banner-pnrr.html extraclass="overflow-x-hidden pt-5" %}
 
 {% if page.pair-blocks!=nil%}
 {% include sw-pair-blocks.html blocks=page.pair-blocks %}
@@ -60,28 +61,6 @@ layout: default
   </div>
   {% endif %}
 
-  {% if active_sw.size > 0 %}
-  <div class="container list-item-sorting">
-    <div class="software_macro_category_title row">
-      <div class="col-md-9">
-        <h2>{{ t.software.active_software }}</h2>
-      </div>
-
-      <div class="col-md-3 how">
-        <a href="{{ vitality_sw_url }}">{{ t.software.show_all }}
-          &rarr;</a>
-      </div>
-    </div>
-    <div class="row row-eq-height">
-      {% include software-listing.html
-      scope="most_active"
-      items=active_sw
-      show_type=false
-      %}
-    </div>
-  </div>
-  {% endif %}
-
   {% if efficient_pas.size > 0 %}
   <div class="container list-item-sorting">
     <div class="software_macro_category_title row">
@@ -94,7 +73,7 @@ layout: default
           &rarr;</a>
       </div>
     </div>
-    <div class="row row-eq-height">
+    <div class="row row-eq-height justify-content-around">
       {% include pa-listing.html
       items=efficient_pas
       show_type=false

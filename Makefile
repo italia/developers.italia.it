@@ -1,12 +1,7 @@
 .PHONY: build deploy
 download-data:
-	wget --max-redirect 0 https://crawler.developers.italia.it/softwares.yml -O _data/crawler/softwares.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/amministrazioni.yml -O _data/crawler/amministrazioni.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_categories.yml -O _data/crawler/software_categories.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software-open-source.yml -O _data/crawler/software-open-source.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software-riuso.yml -O _data/crawler/software-riuso.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_scopes.yml -O _data/crawler/software_scopes.yml
-	wget --max-redirect 0 https://crawler.developers.italia.it/software_tags.yml -O _data/crawler/software_tags.yml
+	npm run get-software
+	npm run get-publishers
 
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_members.yml
 	wget -P _data https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_teams.yml
@@ -16,28 +11,45 @@ download-data:
 	curl -w %{http_code} -s -o /dev/null https://raw.githubusercontent.com/italia/developers.italia.it-data/main/github_issues.json | grep 200
 
 bundle-setup:
-	gem install bundler:2.1.4
-	bundle config set path vendor/
+	gem install bundler:2.5.4
 
 bundle-install: bundle-setup
+	bundle config set path vendor/
 	bundle install
 
 bundle-install-deployment: bundle-setup
+	bundle config set path vendor/
 	bundle install --deployment
 
 test:
 	npm run lint
 	npm run test
 	scripts/pa11y.sh
-	bundle exec htmlproofer ./_site --assume-extension --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
+	bundle exec htmlproofer ./_site --allow-missing-href --ignore-missing-alt --only-4xx --no-enforce-https --disable-external
 
 local:
-	npx webpack-dev-server --config webpack.dev.js --color --progress -d --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
+	bundle config set path vendor/
+	npx webpack-dev-server --config webpack.dev.js --color --progress --host 0.0.0.0 | bundle exec jekyll serve --livereload --incremental --host=0.0.0.0 --trace
 
 jekyll-build:
 	JEKYLL_ENV=production bundle exec jekyll build
 	NODE_ENV=production npm run build
+
+	@if [ -z "$${ELASTICSEARCH_PASS}" ]; then \
+	    echo "Skipping Elasticsearch update: ELASTICSEARCH_PASS is not set."; \
+	else \
+	    curl --fail \
+           -H 'Content-Type: application/json' \
+	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         --data-binary @elasticsearch.bulk \
+	         -XPOST "$${ELASTICSEARCH_URL}/_bulk?pretty"; \
+	    echo "Refreshing index..."; \
+	    curl --fail \
+	         -H "Authorization: Basic $$(printf %s:%s "$${ELASTICSEARCH_USER}" "$${ELASTICSEARCH_PASS}" | base64)" \
+	         -XPOST "$${ELASTICSEARCH_URL}/developers_italia_it/_refresh"; \
+	fi
+
 include-npm-deps:
-	npm ci
-build: | build-bundle-deployment include-npm-deps download-data jekyll-build
+	npm i
+build: | bundle-install-deployment include-npm-deps download-data jekyll-build
 build-test: | build test

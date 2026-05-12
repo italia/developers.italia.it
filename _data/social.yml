@@ -1,7 +1,16 @@
+github:
+  name: github
+  link: https://github.com/italia
+mastodon:
+  name: mastodon
+  link: https://mastodon.uno/@developersITA
 twitter:
   name: twitter
   link: https://twitter.com/developersITA
   sharelink: https://twitter.com/intent/tweet?url=<url>
 medium:
   name: medium
-  link: https://medium.com/@Developers_Italia
+  link: https://medium.com/developers-italia
+linkedin:
+  name: linkedin
+  sharelink: https://www.linkedin.com/sharing/share-offsite/?url=<url>

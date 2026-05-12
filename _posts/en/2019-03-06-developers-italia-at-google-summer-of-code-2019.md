@@ -6,6 +6,7 @@ date:   2019-03-07 12:00:00 +0100
 tags: developers daf api designers gsoc
 categories: news
 author: Leonardo Favario
+nickname: leo
 image: /assets/icons/logo-it.png
 locale: en
 ref:
@@ -21,7 +22,7 @@ promoted by Google**, students from all over the world will be able to
 contribute to the open source projects of the Developers
 Italia team supported by a group of mentors.
 
-## Google Summer of Code, what is it about 
+## Google Summer of Code, what is it about
 
 **Google Summer of Code** is not an internship but, instead, it is a summer
 program dedicated to university students from all over the world. The program allows
@@ -41,7 +42,7 @@ lives!
 **Read more:** [Requirements to get accepted in the
 program](https://summerofcode.withgoogle.com/get-started/)
 
-## How to participate 
+## How to participate
 
 
 Thanks to the GSoC program, the last year two students, Lorenzo Soligo and

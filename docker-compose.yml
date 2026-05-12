@@ -1,9 +1,8 @@
-version: '3.3'
-
 services:
-
   elasticsearch:
-    image: italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
+    image: docker.io/italia/publiccode-tools-elasticsearch:ceb40894eaa142c8aec55c8dbcc9df038ec491e1
+    environment:
+      - cluster.routing.allocation.disk.threshold_enabled=false
     ports:
       - 9200:9200
     networks:

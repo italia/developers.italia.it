@@ -1,20 +1,20 @@
 ---
 title: Contatti
-subtitle: 
+subtitle:
 lang: it
 ref:
   en: /en/contacts
 layout: internal-simple
 image: /assets/images/chisiamo-img.jpg
 redirect_from: /it/chi-siamo
-include-developers-newsletter: false
+include-developers-newsletter: true
 pair-blocks:
     - title: "Lavora con noi"
-      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/) del sito del Ministero per l'innovazione tecnologica e la digitalizzazione."
+      text: "Puoi trovare tutte le eventuali posizioni aperte nella sezione [Lavora con noi](https://innovazione.gov.it/argomenti/lavora-con-noi/) del sito del Dipartimento per la trasformazione digitale."
       image: /assets/images/contatti-lavora.svg
       buttons:
         - label: Posizioni aperte
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: 'https://innovazione.gov.it/it/amministrazione-trasparente/selezione-del-personale/reclutamento-del-personale/lavora-con-noi/'
     - title: "Invia un feedback"
       text: "Vuoi proporre idee oppure dare un feedback sulla community? C'è un'apposita sezione nel [forum](https://forum.italia.it/c/community-feedback).<br>
@@ -22,7 +22,7 @@ pair-blocks:
       image: /assets/images/contatti-bug.svg
       buttons:
         - label: Entra nel forum
-          class: btn btn-primary
+          class: btn btn-primary w-100
           url: 'https://forum.italia.it/'
 ---
 
@@ -36,16 +36,20 @@ Maggiori informazioni sugli obiettivi del progetto si possono leggere nel [post 
 
 ### Contatti
 
-Siamo reperibili via [Slack](https://slack.developers.italia.it/) o all'indirizzo [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
+Siamo reperibili via [Slack e Matrix](https://slack.developers.italia.it/) o all'indirizzo [contatti@developers.italia.it](mailto:contatti@developers.italia.it).
 
 ### Responsabili
 
+<div class="row">
 {% include people.html status='admin' %}
+</div>
 
 ### Hanno collaborato
 
+<div class="row">
 {% include people.html status='ex' %}
 {% include people.html status='contributor' %}
+</div>
 
 ### Community Leaders
 
