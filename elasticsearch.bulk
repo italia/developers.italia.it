@@ -1240,3 +1240,5 @@
 {"it-riuso-codiceIPA-label":"Provincia di Pescara","it-riuso-codiceIPA":"p_pe","type":"administration"}
 {"index":{"_index":"developers_italia_it","_id":"f6f162d5-cb6e-48b1-a94c-52d3bebb4843"}}
 {"it-riuso-codiceIPA-label":"Comune di Castagneto Carducci","it-riuso-codiceIPA":"c_c044","type":"administration"}
+{"index":{"_index":"developers_italia_it","_id":"a48cce1a-36ac-4cf3-832a-ecf3e0baaa9f"}}
+{"it-riuso-codiceIPA-label":"Comune di Montesilvano","it-riuso-codiceIPA":"c_f646","type":"administration"}
