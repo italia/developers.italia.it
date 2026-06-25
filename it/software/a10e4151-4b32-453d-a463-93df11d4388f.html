@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202606240708" rel="stylesheet">
+  <link href="/dist/main.css?202606250708" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -473,20 +473,21 @@
         
         
         
-        <img alt="" src="https://raw.githubusercontent.com/openwisp/openwisp-controller/HEAD/openwisp.org.svg?sanitize=true" class="d-inline-block" />
+        <img alt="" src="https://raw.githubusercontent.com/openwisp/openwisp-controller/HEAD/openwisp-logo-black.svg?sanitize=true" class="d-inline-block" />
         
         
         <h1 class="d-inline-block">
           OpenWISP Controller
-          <span class="badge badge-pill badge-pill--sup bg-primary">1.0.0</span>
+          <span class="badge badge-pill badge-pill--sup bg-primary">1.2.3</span>
         </h1>
         <div class="abstract-software">
           <h2>
-            Network Management System
+            
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            A Hackable Network Management System for the 21st Century
+            Leveraging Linux OpenWrt, OpenWISP is an open-source solution for efficient IT network deployment, monitoring & management.
+
           </h3>
           <div class="my-3">
             <ul class="home-software-tags__list list-inline">
@@ -514,14 +515,6 @@
               </p>
             </div>
             
-            
-            <div class="col-sm">
-              <p><span class="label">Gestito da</span>
-                
-                OpenWISP
-                
-              </p>
-            </div>
             
             
 
@@ -559,7 +552,7 @@
 
         
         <div class="goto doc">
-          <p><a href="http://openwisp.io/docs/" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
+          <p><a href="https://openwisp.io/docs/stable/controller/" data-proofer-ignore><img alt="" src="/assets/icons/software_icons/it-documentazione.svg">Documentazione &rarr;</a></p>
         </div>
         
         <div class="goto code">
@@ -601,12 +594,40 @@
           <div class="function-list">
             
             
-            <p> Network Management &amp; Automation </p>
+            <p> Centralized network device configuration management </p>
             
-            <p> Special focus on wireless networks (public wifi, mesh networks, community networks, IoT) </p>
+            <p> Automated device adoption and provisioning </p>
             
-            <p> Allows to build custom applications </p>
+            <p> Reusable configuration templates, variables, device groups and template tags </p>
             
+            <p> Web interface and REST API for network automation </p>
+            
+            <p> Pull and push configuration updates over HTTP and SSH </p>
+            
+            <p> Management VPN provisioning with OpenVPN, WireGuard, VXLAN over WireGuard and ZeroTier </p>
+            
+            <p> X.509 certificate authority and certificate management </p>
+            
+            <p> SSH and SNMP connection backends with extensible protocol support </p>
+            
+            <p> Remote shell command execution </p>
+            
+            <p> Geographic device data and estimated location </p>
+            
+            <p>
+              <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
+                aria-controls="otherFeature" class="count">Mostra tutto
+                <span class="or it-expand"></span>
+                <span class="and it-collapse"></span>
+              </a>
+            </p>
+            <div class="collapse" id="otherFeature">
+              
+              <p> Optional subnet and IP address auto-provisioning </p>
+              
+              <p> Integration with the broader OpenWISP network management ecosystem </p>
+              
+            </div>
             
           </div>
           
@@ -649,11 +670,11 @@
                 OpenWISP Controller
                 
                 <span
-                  class="badge badge-pill badge-pill--sup bg-primary">1.0.0</span>
+                  class="badge badge-pill badge-pill--sup bg-primary">1.2.3</span>
                 
               </h2>
               <h2>
-                Network Management System
+                
               </h2>
             </div>
           </div>
@@ -662,16 +683,16 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2022-04-29
+                  2026-04-09
                   
-                  (1.0.0)
+                  (1.2.3)
                   
                 </p>
               </div>
               <div class="col-7 col-sm-7 col-md-3">
                 <p>
                   <span class="label">Tipo di manutenzione</span>
-                  community
+                  internal
                 </p>
               </div>
               <div class="col-7 col-sm-7 col-md-3">
@@ -741,7 +762,7 @@
                 <p>
                   <span class="label">Piattaforme</span>
                   
-                      linux<br />
+                      web<br />
                   
                 </p>
               </div>
@@ -750,16 +771,6 @@
               <div class="col-6 col-md">
                 <p>
                   <span class="label">Piattaforme abilitanti</span>
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
                   
                   
                   
@@ -822,8 +833,9 @@ Inglese<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>OpenWISP is a software platform designed to ease and automate the management of networks, with a special focus on wireless networks, mainly used in public wifi, mesh networks, community networks and IoT scenarios.
-OpenWISP 2, launched in December 2016, is the new generation of the software which is gradually replacing OpenWISP 1 and aims to build an ecosystem of applications and tools that make it easy for developers to build custom networking applications in order to bring innovation in the network infrastructure of communities that most need it.</p>
+                <p>OpenWISP Controller is the OpenWISP module for automating the configuration and lifecycle management of network devices, especially OpenWrt based routers and access points. It provides a web interface and REST APIs for device adoption, provisioning, configuration templates, variables, device groups, HTTP resources and push operations.
+It also automates management VPN provisioning and PKI workflows, including OpenVPN, WireGuard, VXLAN over WireGuard, ZeroTier, X.509 certificate authorities and certificates. The controller can connect to devices with SSH and SNMP, execute shell commands, track geographic location, allocate subnets and IP addresses through the optional subnet division app, and integrate with other OpenWISP modules for monitoring, firmware upgrades, topology, IPAM, notifications and RADIUS.
+Most production deployments are installed through Ansible OpenWISP or Docker OpenWISP. See the <a href="https://openwisp.io/docs/stable/user/quickstart.html">OpenWISP Quick Start Guide</a> for the recommended installation path. <a href="https://openwisp.org/commercial-support/">Commercial support</a> is available for organizations that need professional assistance with deployment, operation and maintenance.</p>
 
               </div>
             </div>
@@ -969,7 +981,7 @@ OpenWISP 2, launched in December 2016, is the new generation of the software whi
 
 
 
-<script src="/dist/bundle.js?202606240708"></script>
+<script src="/dist/bundle.js?202606250708"></script>
 
 
   </div>
