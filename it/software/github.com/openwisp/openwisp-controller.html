@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202606250708" rel="stylesheet">
+  <link href="/dist/main.css?202606260715" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -453,11 +453,6 @@
 
 
 
-  
-    
-    
-  
-
 
 
 
@@ -486,7 +481,7 @@
             
           </h2>
           <h3 class="color-content font-serif my-2 my-md-4">
-            Leveraging Linux OpenWrt, OpenWISP is an open-source solution for efficient IT network deployment, monitoring & management.
+            Soluzione open source basata su OpenWrt per distribuire, configurare e gestire reti IT in modo efficiente.
 
           </h3>
           <div class="my-3">
@@ -559,6 +554,10 @@
           <p><a href="https://github.com/openwisp/openwisp-controller"> <img alt="" src="/assets/icons/software_icons/it-codice.svg">Codice sorgente &rarr;</a></p>
         </div>
         
+        <div class="goto road">
+          <p><a href="https://openwisp.io/docs/dev/general/roadmap-2030.html"><img alt="" src="/assets/icons/software_icons/it-roadmap.svg">Roadmap &rarr;</a></p>
+        </div>
+        
 
         
         <div class="goto">
@@ -594,25 +593,25 @@
           <div class="function-list">
             
             
-            <p> Centralized network device configuration management </p>
+            <p> Gestione centralizzata della configurazione dei dispositivi di rete </p>
             
-            <p> Automated device adoption and provisioning </p>
+            <p> Adozione e provisioning automatizzati dei dispositivi </p>
             
-            <p> Reusable configuration templates, variables, device groups and template tags </p>
+            <p> Template di configurazione, variabili, gruppi di dispositivi e tag riutilizzabili </p>
             
-            <p> Web interface and REST API for network automation </p>
+            <p> Interfaccia web e API REST per l&#39;automazione di rete </p>
             
-            <p> Pull and push configuration updates over HTTP and SSH </p>
+            <p> Aggiornamenti di configurazione pull e push tramite HTTP e SSH </p>
             
-            <p> Management VPN provisioning with OpenVPN, WireGuard, VXLAN over WireGuard and ZeroTier </p>
+            <p> Provisioning di VPN di gestione con OpenVPN, WireGuard, VXLAN su WireGuard e ZeroTier </p>
             
-            <p> X.509 certificate authority and certificate management </p>
+            <p> Gestione di autorità di certificazione e certificati X.509 </p>
             
-            <p> SSH and SNMP connection backends with extensible protocol support </p>
+            <p> Backend di connessione SSH e SNMP con supporto per protocolli estensibili </p>
             
-            <p> Remote shell command execution </p>
+            <p> Esecuzione remota di comandi shell </p>
             
-            <p> Geographic device data and estimated location </p>
+            <p> Dati geografici dei dispositivi e posizione stimata </p>
             
             <p>
               <a data-bs-toggle="collapse" href="#otherFeature" role="button" aria-expanded="false"
@@ -623,9 +622,9 @@
             </p>
             <div class="collapse" id="otherFeature">
               
-              <p> Optional subnet and IP address auto-provisioning </p>
+              <p> Provisioning opzionale di subnet e indirizzi IP </p>
               
-              <p> Integration with the broader OpenWISP network management ecosystem </p>
+              <p> Integrazione con l&#39;ecosistema OpenWISP per la gestione delle reti </p>
               
             </div>
             
@@ -797,8 +796,76 @@
                 <p>
                   <span class="label">Lista dipendenze</span>
                   
-                  Nessuna
-                  
+                      
+                          <span class="badge badge-pill bg-primary">OSS</span><br />
+                          
+                          
+
+
+    Python 
+
+<br />
+                          
+                          
+
+
+    Django 
+
+<br />
+                          
+                          
+
+
+    OpenSSL 
+
+<br />
+                          
+                          
+
+
+    Redis 
+
+<br />
+                          
+                          
+
+
+    PostgreSQL (Opzionale)
+
+<br />
+                          
+                          
+
+
+    PostGIS (Opzionale)
+
+<br />
+                          
+                          
+
+
+    GDAL 
+
+<br />
+                          
+                          
+
+
+    GEOS 
+
+<br />
+                          
+                          
+
+
+    PROJ 
+
+<br />
+                          
+                      
+                      
+                      
+                   
                 </p>
               </div>
             </div>
@@ -824,6 +891,11 @@ Inglese<br />
 
                 
                 
+
+Italiano<br />
+
+                
+                
                 </p>
               </div>
               
@@ -833,9 +905,9 @@ Inglese<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Descrizione estesa</p>
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>OpenWISP Controller is the OpenWISP module for automating the configuration and lifecycle management of network devices, especially OpenWrt based routers and access points. It provides a web interface and REST APIs for device adoption, provisioning, configuration templates, variables, device groups, HTTP resources and push operations.
-It also automates management VPN provisioning and PKI workflows, including OpenVPN, WireGuard, VXLAN over WireGuard, ZeroTier, X.509 certificate authorities and certificates. The controller can connect to devices with SSH and SNMP, execute shell commands, track geographic location, allocate subnets and IP addresses through the optional subnet division app, and integrate with other OpenWISP modules for monitoring, firmware upgrades, topology, IPAM, notifications and RADIUS.
-Most production deployments are installed through Ansible OpenWISP or Docker OpenWISP. See the <a href="https://openwisp.io/docs/stable/user/quickstart.html">OpenWISP Quick Start Guide</a> for the recommended installation path. <a href="https://openwisp.org/commercial-support/">Commercial support</a> is available for organizations that need professional assistance with deployment, operation and maintenance.</p>
+                <p>OpenWISP Controller è il modulo OpenWISP per automatizzare la configurazione e la gestione del ciclo di vita dei dispositivi di rete, in particolare router e access point basati su OpenWrt. Fornisce un’interfaccia web e API REST per adozione dei dispositivi, provisioning, template di configurazione, variabili, gruppi di dispositivi, risorse HTTP e operazioni push.
+Automatizza inoltre il provisioning di VPN di gestione e i flussi PKI, inclusi OpenVPN, WireGuard, VXLAN su WireGuard, ZeroTier, autorità di certificazione X.509 e certificati. Il controller può connettersi ai dispositivi tramite SSH e SNMP, eseguire comandi shell, gestire dati geografici, allocare subnet e indirizzi IP tramite l’app opzionale di suddivisione delle subnet e integrarsi con altri moduli OpenWISP per monitoraggio, aggiornamenti firmware, topologia, IPAM, notifiche e RADIUS.
+La maggior parte delle installazioni in produzione viene distribuita con Ansible OpenWISP o Docker OpenWISP. Consulta la <a href="https://openwisp.io/docs/stable/user/quickstart.html">guida rapida di OpenWISP</a> per il percorso di installazione consigliato. È disponibile <a href="https://openwisp.org/commercial-support/">supporto commerciale</a> per le organizzazioni che necessitano di assistenza professionale per distribuzione, esercizio e manutenzione.</p>
 
               </div>
             </div>
@@ -981,7 +1053,7 @@ Most production deployments are installed through Ansible OpenWISP or Docker Ope
 
 
 
-<script src="/dist/bundle.js?202606250708"></script>
+<script src="/dist/bundle.js?202606260715"></script>
 
 
   </div>
