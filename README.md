@@ -23,7 +23,7 @@
       Website
     </a>
     <span> | </span>
-    <a href="https://developers.italia.it/en/software">
+    <a href="https://catalogo-software.developers.italia.it">
       Reuse Catalog
     </a>
     <span> | </span>
@@ -35,11 +35,17 @@
       Contributing
     </a>
     <span> | </span>
-    <a href="https://slack.developers.italia.it">
-      Meet us on Slack
-    </a>
   </h3>
 </div>
+
+# ⚠️ New repositories available ⚠️
+
+## We're going to deprecate and archive this repository.
+
+Please open issues, requests and discussions in our new repositories. 
+
+- For anything related to the website [here](https://github.com/italia/developers-italia-website)
+- For anything related to our software catalog [here](https://github.com/italia/catalogo-software)
 
 # Description
 
