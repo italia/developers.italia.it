@@ -221,7 +221,13 @@ sass:
 elasticsearch:
   url: ENV_ELASTICSEARCH_URL
   number_of_shards: 5
-  number_of_replicas: 1
+  # 0 e non 1: il cluster OpenSearch di destinazione ha un solo nodo, quindi una
+  # replica non puo' essere allocata da nessuna parte. A ogni build veniva creato
+  # un indice nuovo con 5 shard replicati, cioe' 5 shard UNASSIGNED permanenti,
+  # e il cluster restava in stato yellow con l'alert OpenSearchClusterYellow
+  # acceso. Il valore esplicito qui batte l'index template zz-single-node-default
+  # gia' presente sul cluster, che infatti non aveva effetto.
+  number_of_replicas: 0
   index_name: "developers_italia_it"
   default_type: "_doc"
   custom_settings: _es_settings.yml
