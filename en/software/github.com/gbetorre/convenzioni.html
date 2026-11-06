@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202611051346" rel="stylesheet">
+  <link href="/dist/main.css?202611061330" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -944,7 +944,9 @@ Italian<br />
             <div class="col-md-8 col-offset-md-1 page-detail">
               <p class="title">Extended description</p>
               <div class="font-serif page-detail__text" data-proofer-ignore>
-                <p>Il software gestionale delle convenzioni (COL-GECO, ovvero Convenzioni On Line-Gestione Convenzioni) 
+                <h2 id="presentazione">Presentazione</h2>
+
+<p>Il software gestionale delle convenzioni (COL-GECO, ovvero Convenzioni On Line-Gestione Convenzioni) 
 è un software modulare che nasce dall’esigenza, interna alla Pubblica Amministrazione, di tracciare 
 accordi e convenzioni intercorrenti tra soggetti esterni e la PA stessa, 
 sia allo scopo di redigere un registro organizzato e sempre aggiornato, 
@@ -952,47 +954,74 @@ sia al fine di ottenere uno scadenzario atto a informare e notificare
 circa le prossime convenzioni in scadenza e in grado di erogare riepiloghi mensili 
 e fornire remind riguardo le scadenze imminenti.</p>
 
+<h2 id="storia">Storia</h2>
+
+<p>Originariamente, la richiesta di sviluppare un software ad-hoc è partita 
+dall’esigenza degli uffici, che non trovavano sufficiente appoggiarsi 
+ad uno strumento predefinito, in quanto, per tracciare le scadenze
+delle convenzioni gestite e attivare meccanismi di alert riguardo
+le operazioni da mettere in atto per effettuare i rinnovi delle convenzioni
+esistenti, già utilizzavano tipicamente, oltre a calendari e applicazioni, 
+anche le cartelle Excel.</p>
+
+<p>Tuttavia, un software come COL-GECO rappresenta invece un hub unico in cui, 
+una volta inserite le informazioni relative alle convenzioni, 
+tutto il workflow procede di conseguenza e senza necessità di ulteriore 
+intervento da parte degli operatori, che ricevono progressivamente
+le informazioni necessarie man mano che il tempo passa e le <em>deadline</em>
+si avvicinano.</p>
+
+<h2 id="oggetto-di-studio">Oggetto di studio</h2>
+
 <p>Attualmente, l’oggetto del software è la gestione delle convenzioni, 
 ma il software stesso è concepito con la mission di estendere progressivamente 
-il dominio agli altri oggetti di contratto e accordo con la PA.</p>
+il dominio agli altri oggetti di contratto e accordo con la PA (ad
+esempio: incarichi, accordi, collegi direttivi, società partecipate, etc.).</p>
+
+<h2 id="modularità">Modularità</h2>
 
 <p>Il software è progettato in maniera modulare, allo scopo di essere adattabile 
-a qualunque amministrazione che sia interessata a dotarsi di uno scadenzario Open Source.
-Inoltre, le modalità tramite cui il software avvisa circa scadenze e riepiloga le attività, possono estendersi a varie modalità:
+a qualunque amministrazione che sia interessata a dotarsi di uno scadenzario Open Source.</p>
+
+<p>Inoltre, le modalità tramite cui il software avvisa circa scadenze 
+e riepiloga le attività, possono estendersi a varie modalità:
     - e-mail
     - calendario condiviso
     - notifiche push
-    - riepiloghi periodici creati in automatico in percorsi condivisi
-    - anche scaricabili on-demand in base all’input dell’utente</p>
+    - riepiloghi periodici creati in automatico in percorsi condivisi…
+    - …anche scaricabili on-demand in base all’input dell’utente.</p>
 
-<p>Originariamente, la richiesta di sviluppare un software ad-hoc è partita 
-proprio dall’esigenza degli uffici, che non trovavano sufficiente appoggiarsi 
-ad uno strumento predefinito, in quanto già utilizzavano tipicamente, 
-oltre a calendari e applicazioni, anche le cartelle Excel per gestire le convenzioni.
-Un software come COL-GECO rappresenta invece un hub unico in cui, 
-una volta inserite le informazioni relative alle convenzioni, 
-tutto il workflow procede di conseguenza e senza necessità di ulteriore intervento 
-da parte degli operatori.</p>
+<h2 id="riuso">Riuso</h2>
 
-<p>Il software COL-GECO è sviluppato in Open Source per permettere a chiunque 
-di poterne usufruire e godere degli aggiornamenti futuri, se piace, 
-senza necessità di pagare abbonamenti o stipulare contratti.
-Inoltre, è stato specificamente disegnato per essere il più semplice ed intuitivo possibile, 
-ed il suo uso può essere appreso in una singola sessione.</p>
+<p>Il software COL-GECO è sviluppato in Open Source e ciò permette a 
+chiunque sia interessato di poterne usufruire a volontà e godere anche 
+degli aggiornamenti futuri, se piace.</p>
 
-<p>Gli strumenti gratuiti e ben realizzati sono generalmente sviluppati da aziende americane 
-e i dati personali e delle amministrazioni in essi caricati non sono ben tracciati e controllati, 
-avendo possibili risvolti negativi in termini di privacy e trattamento dei dati personali. 
-Nel software bisogna caricare i dati personali della pianta organica dell’ateneo 
-o della amministrazione in generale e questi dati potrebbero essere trattati 
-non in conformità con le normative europee.</p>
+<p>Inoltre, è stato specificamente disegnato per essere il più semplice ed 
+intuitivo possibile, ed il suo uso può essere appreso in una singola sessione.</p>
 
-<p>Il software COL-GECO offre invece una tutela aggiuntiva rispetto al trattamento dei dati personali.</p>
+<p>Naturalmente, esistono attualmente strumenti gratuiti e ben realizzati 
+che però sono generalmente sviluppati da aziende americane, dunque 
+i dati personali e delle amministrazioni in essi caricati non sono 
+ben tracciati e controllati; l’adozione di tali strumenti ha dunque 
+possibili risvolti negativi in termini di privacy e trattamento 
+dei dati personali.</p>
+
+<p>Ad esempio, i dati personali della pianta organica dell’ateneo 
+o della amministrazione in generale potrebbero non essere trattati 
+in conformità con le normative europee.</p>
+
+<p>Il software COL-GECO offre invece, da questo punto di vista, una tutela 
+aggiuntiva, perché è pensato per essere installato in locale, senza
+inviare quindi dati in cloud.</p>
+
+<h2 id="conclusioni">Conclusioni</h2>
 
 <p>Il software COL-GECO può essere scaricato e provato senza impegno alcuno 
-e se ne può creare un’istanza al fine di verificare se l’interfaccia e le funzionalità 
-sono in linea con quanto richiesto e con quanto ci si aspetta ai fini della gestione ottimale 
-delle convenzioni e degli altri elementi affini.</p>
+e se ne può creare un’istanza al fine di verificare se l’interfaccia 
+e le funzionalità sono in linea con quanto richiesto e con quanto 
+ci si aspetta ai fini della gestione ottimale delle convenzioni 
+e degli altri elementi affini.</p>
 
 <p>L’estrema modularità e la semplicità di uso sono obiettivi che, a dispetto del risultato, 
 sono spesso ardui da realizzare e richiedono uno sforzo continuo da parte dello sviluppatore.</p>
@@ -1141,7 +1170,7 @@ sono spesso ardui da realizzare e richiedono uno sforzo continuo da parte dello 
 
 
 
-<script src="/dist/bundle.js?202611051346"></script>
+<script src="/dist/bundle.js?202611061330"></script>
 
 
   </div>
