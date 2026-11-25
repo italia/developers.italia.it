@@ -47,7 +47,7 @@
   <link rel="alternate" type="application/atom+xml" title="Developers Italia (en)" href="/en/news/feed.atom">
 
   
-  <link href="/dist/main.css?202611241646" rel="stylesheet">
+  <link href="/dist/main.css?202611251633" rel="stylesheet">
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
@@ -468,7 +468,7 @@
         
         <h1 class="d-inline-block">
           GovPay Interaction Layer
-          <span class="badge badge-pill badge-pill--sup bg-primary">1.11.3</span>
+          <span class="badge badge-pill badge-pill--sup bg-primary">1.13.0</span>
         </h1>
         <div class="abstract-software">
           <h2>
@@ -680,9 +680,15 @@
               
               <p> Deploy containerizzato pronto all&#39;uso tramite Docker Compose e Portainer (GHCR) </p>
               
-              <p> Immagini firmate (cosign) con SBOM e attestazioni di provenienza verificabili al deploy </p>
+              <p> Immagini firmate (cosign) con SBOM e attestazioni di provenienza, firme verificate di default prima di ogni avvio </p>
               
               <p> Container applicativi eseguiti come utente non privilegiato su filesystem in sola lettura </p>
+              
+              <p> Aggiornamenti sicuri con backup automatico del database prima delle migrazioni, avvio bloccato su migrazione fallita e verifica dello stack dopo il deploy </p>
+              
+              <p> Frontoffice accessibile (WCAG 2.1 AA verificato con axe-core su desktop, mobile e navigazione da tastiera) </p>
+              
+              <p> Header di sicurezza HTTP con Content-Security-Policy, cookie di sessione protetti e scansione DAST OWASP ZAP in CI </p>
               
             </div>
             
@@ -746,7 +752,7 @@
                 GovPay Interaction Layer
                 
                 <span
-                  class="badge badge-pill badge-pill--sup bg-primary">1.11.3</span>
+                  class="badge badge-pill badge-pill--sup bg-primary">1.13.0</span>
                 
               </h2>
               <h2>
@@ -759,9 +765,9 @@
               <div class="col-5 col-sm-5 col-md-2">
                 <p>
                   <span class="label">Ultimo rilascio</span>
-                  2026-11-22
+                  2026-11-24
                   
-                  (1.11.3)
+                  (1.13.0)
                   
                 </p>
               </div>
@@ -1089,7 +1095,7 @@ Spagnolo<br />
 
 
 
-<script src="/dist/bundle.js?202611241646"></script>
+<script src="/dist/bundle.js?202611251633"></script>
 
 
   </div>
